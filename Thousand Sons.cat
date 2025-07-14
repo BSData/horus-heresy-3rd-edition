@@ -31,46 +31,39 @@
                 </modifier>
               </modifiers>
             </profile>
+            <profile name="Arch-Sorcerer" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="51f0-b740-485f-b2eb">
+              <characteristics>
+                <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233">Magnus has multiple Prosperine Arcana</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Battle of the Wills" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="7f8d-1bd8-04c5-9d8f">
+              <characteristics>
+                <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233">Gambit wip</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Bulky (5)" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="bf03-2c5f-19f3-7d68">
+              <characteristics>
+                <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233">Bulky Description</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Eternal Warrior (2)" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="8bd1-b8c8-5727-18ee">
+              <characteristics>
+                <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233">Eternal Warrior Description</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Shrouded  (6+)" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="9441-5956-984f-3204">
+              <characteristics>
+                <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233">Shrouded  Description</characteristic>
+              </characteristics>
+            </profile>
           </profiles>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2af9-ec59-7c80-da96-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2af9-ec59-7c80-da96-max" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Thousand Sons" id="b1a2-c50b-f874-7bb0" hidden="false" type="profile" targetId="05fd-adb6-f72a-7cf0"/>
-            <infoLink name="[Allegiance]" id="e927-6898-26ab-5472" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
-            <infoLink name="Master of the Legion" id="dae8-2a32-755c-1592" hidden="false" type="profile" targetId="6cd2-96be-b703-6d57"/>
-            <infoLink name="Shrouded (X)" id="4b52-2c48-f8c2-11d2" hidden="false" type="rule" targetId="ade8-06c1-0e51-c6fd">
-              <modifiers>
-                <modifier type="set" value="Shrouded (6+)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Eternal Warrior (X)" id="6245-5e43-2f8c-1c66" hidden="false" type="rule" targetId="9ab8-85f1-3f3a-b350">
-              <modifiers>
-                <modifier type="set" value="Eternal Warrior (2)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Psyker" id="0d1a-e136-0f44-ef67" hidden="false" type="profile" targetId="0d5a-bf3a-7b46-785a"/>
-            <infoLink name="Bulky (X)" id="0890-26ae-10cf-4d58" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
-              <modifiers>
-                <modifier type="set" value="Bulky (5)" field="name"/>
-              </modifiers>
-            </infoLink>
+            <infoLink name="Sire of the Thousand Sons" id="b1a2-c50b-f874-7bb0" hidden="false" type="profile" targetId="05fd-adb6-f72a-7cf0"/>
           </infoLinks>
-          <rules>
-            <rule name="Sire of the Thousand Sons" id="2201-890a-9c1b-c89b" hidden="false" publicationId="e54c-7040-0f35-d85d">
-              <description>If a Model with this Special Rule is part of an Army, then the Controlling Player may apply the following additional Special Rules to all Auxiliary, Apex and Primary Detachments that have the same Faction Trait as the Model with this Special Rule:
-If four or more Troops Battlefield Role Slots in the Primary Detachment of this Army are filled with Units which have a Prosperine Arcana, then all Force Organisation Slots with the Troops Battlefield Role in the Primary Detachment are considered Prime Slots.
-Furthermore, if a Model with this Special Rule is part of an Army, then the following Special Rules are granted to all Models with the Thousand Sons Trait in the same Army:
-Until the end of the first Battle Turn of the Battle, whenever the Controlling Player of a Model with this Special Rule makes a Manifestation Check for a Unit that only includes Models with the Thousand Sons Trait, they may roll three Dice and select any two to determine the result.</description>
-            </rule>
-            <rule name="Battle of the Wills" id="a7c6-09ce-8881-2a00" hidden="false" publicationId="e54c-7040-0f35-d85d">
-              <description>Gambit wip</description>
-            </rule>
-            <rule name="Arch-Sorcerer" id="448e-b708-152c-a6ea" hidden="false" publicationId="e54c-7040-0f35-d85d">
-              <description>Magnus has multiple Prosperine Arcana</description>
-            </rule>
-          </rules>
           <entryLinks>
             <entryLink import="true" name="Raptora" hidden="false" id="c692-088a-f175-c4dc" type="selectionEntry" targetId="7b1f-851d-700e-46d8">
               <constraints>
@@ -184,10 +177,11 @@ Until the end of the first Battle Turn of the Battle, whenever the Controlling P
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink name="Assault" id="d2f9-1d96-1bb5-85d4" hidden="false" type="profile" targetId="b496-e6f0-9775-770f"/>
-                <infoLink name="Psychic" id="0a0c-9723-738e-3010" hidden="false" type="profile" targetId="ac6d-a93d-8189-cd2d"/>
-              </infoLinks>
+              <rules>
+                <rule name="Assault" id="e900-05ee-39e8-5b65" hidden="false">
+                  <description>Assault Description</description>
+                </rule>
+              </rules>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="The Blade of Ahn-nunurta" hidden="false" id="0788-7155-cc1c-cc74">
               <constraints>
@@ -208,9 +202,17 @@ Until the end of the first Battle Turn of the Battle, whenever the Controlling P
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Psychic" id="79db-8b5f-f7c7-7fec" hidden="false" type="profile" targetId="ac6d-a93d-8189-cd2d"/>
-                <infoLink name="Force (X)" id="a3a3-5443-704e-d27f" hidden="false" type="rule" targetId="25cd-60d0-a0a4-6b18"/>
+                <infoLink name="Force (X)" id="a3a3-5443-704e-d27f" hidden="false" type="rule" targetId="25cd-60d0-a0a4-6b18">
+                  <modifiers>
+                    <modifier type="set" value="Force (D)" field="name"/>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
+              <rules>
+                <rule name="Psychic" id="b061-b092-ab1c-6d28" hidden="false">
+                  <description>Psychic Description</description>
+                </rule>
+              </rules>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -261,7 +263,7 @@ Until the end of the first Battle Turn of the Battle, whenever the Controlling P
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8b0-f65d-1de8-7ffc-max" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Thousand Sons" id="fe39-8a97-781c-c555" hidden="false" type="profile" targetId="05fd-adb6-f72a-7cf0"/>
+            <infoLink name="Sire of the Thousand Sons" id="fe39-8a97-781c-c555" hidden="false" type="profile" targetId="05fd-adb6-f72a-7cf0"/>
           </infoLinks>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="185"/>
@@ -318,9 +320,12 @@ Until the end of the first Battle Turn of the Battle, whenever the Controlling P
       </costs>
       <infoLinks>
         <infoLink name="Crushing Force" id="9cc6-86e2-c31a-c7d3" hidden="false" type="profile" targetId="1ed0-4146-2fc3-a5a0"/>
-        <infoLink name="Psychic" id="d23f-272d-d1b2-f348" hidden="false" type="profile" targetId="ac6d-a93d-8189-cd2d"/>
         <infoLink name="Armourbane" id="ec8e-a317-c0e3-eaa4" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
-        <infoLink name="Force (X)" id="8020-afab-f4b6-5546" hidden="false" type="rule" targetId="25cd-60d0-a0a4-6b18"/>
+        <infoLink name="Force (X)" id="8020-afab-f4b6-5546" hidden="false" type="rule" targetId="25cd-60d0-a0a4-6b18">
+          <modifiers>
+            <modifier type="set" value="Force (D)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <profiles>
         <profile name="Kine Shield" typeId="d59e-df4b-630f-f185" typeName="Psychic Reaction" hidden="false" id="1acc-f57c-04af-b54a">
@@ -335,6 +340,9 @@ Until the end of the first Battle Turn of the Battle, whenever the Controlling P
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink targetId="b148-3740-2c66-0b53" id="7494-0ac9-68c3-847a" primary="false" name="Raptora"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
@@ -424,5 +432,6 @@ Until the end of the first Battle Turn of the Battle, whenever the Controlling P
     <categoryEntry name="Thousand Sons" id="7c3f-93c7-d5b9-89e3" hidden="false"/>
     <categoryEntry name="Psyker" id="9254-b1e9-98b2-6101" hidden="false"/>
     <categoryEntry name="Master of the Legion" id="e3cd-7a38-34d7-9cbf" hidden="false"/>
+    <categoryEntry name="Raptora" id="b148-3740-2c66-0b53" hidden="false"/>
   </categoryEntries>
 </catalogue>
