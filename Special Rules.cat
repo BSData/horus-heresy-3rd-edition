@@ -1,71 +1,146 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="106b-693b-99f2-00c3" name="Special Rules" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue library="true" id="106b-693b-99f2-00c3" name="Special Rules" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedRules>
     <rule name="Interdiction Cadres" id="a752-1dc3-403e-9336" hidden="false"/>
     <rule name="Concealed Positions" id="3595-4991-0833-7b8b" hidden="false"/>
-    <rule name="Expendable (X)" id="c4d4-e053-9564-540b" hidden="false"/>
-    <rule name="Shred (X)" id="d01e-f96b-b5c1-8fb1" hidden="false"/>
+    <rule name="Expendable (X)" id="c4d4-e053-9564-540b" hidden="false">
+      <alias>Expendable</alias>
+    </rule>
+    <rule name="Shred (X)" id="d01e-f96b-b5c1-8fb1" hidden="false">
+      <alias>Shred</alias>
+    </rule>
     <rule name="Battlefield Coordinators" id="35dd-79de-75f5-f2c8" hidden="false"/>
-    <rule name="Support Unit (X)" id="313f-7ed6-3833-e97c" hidden="false"/>
-    <rule name="Breaching (X)" id="b094-0b64-eb57-aed6" hidden="false"/>
+    <rule name="Support Unit (X)" id="313f-7ed6-3833-e97c" hidden="false">
+      <alias>Support Unit</alias>
+    </rule>
+    <rule name="Breaching (X)" id="b094-0b64-eb57-aed6" hidden="false">
+      <alias>Breaching</alias>
+    </rule>
     <rule name="Heavy (X)" id="bc30-3b33-2683-01a2" hidden="false">
       <description>Weapons with the Heavy (X) Special Rule gain +1 to a Characteristic when Stationary.
 
 When making a Shooting Attack with a Weapon that has the Heavy (X) Special Rule, a modifier of +1 is added to a Characteristic if the Model with that Weapon is part of a Unit that remained Stationary in the Controlling Player’s previous Movement Phase. If the Characteristic listed is AP, then instead it improves the AP by one Step. The value of X in the specific variant of the Heavy (X) Special Rule determines which Characteristic gains the +1 modifier.</description>
+      <alias>Heavy</alias>
     </rule>
-    <rule name="Ordnance (X)" id="b6b3-909a-b78a-3dbf" hidden="false"/>
-    <rule name="Blast (X)" id="8687-05f8-7034-412c" hidden="false"/>
+    <rule name="Ordnance (X)" id="b6b3-909a-b78a-3dbf" hidden="false">
+      <alias>Ordnance</alias>
+    </rule>
+    <rule name="Blast (X)" id="8687-05f8-7034-412c" hidden="false">
+      <alias>Blast</alias>
+    </rule>
     <rule name="Template" id="7df2-9e88-3285-cf6a" hidden="false"/>
     <rule name="Deep Strike" id="0553-d06b-52b9-34db" hidden="false"/>
-    <rule name="Overload (X)" id="1d3a-d1e2-871a-63ae" hidden="false"/>
-    <rule name="Melta (X)" id="8ef6-917e-93da-43c3" hidden="false"/>
+    <rule name="Overload (X)" id="1d3a-d1e2-871a-63ae" hidden="false">
+      <alias>Overload</alias>
+    </rule>
+    <rule name="Melta (X)" id="8ef6-917e-93da-43c3" hidden="false">
+      <alias>Melta</alias>
+    </rule>
     <rule name="Duellist&apos;s Edge (X)" id="94bc-c69f-99b6-8ba0" hidden="false">
       <description>A Weapon with the Duellist’s Edge (X) Special Rule grants a bonus to Focus Rolls in Challenges.
 
 
 In Step 3 of the Challenge Sub-Phase, the Focus Step, if a Player has declared that the Model under their control will use a Weapon with the Duellist’s Edge (X) Special Rule or has the Duellist’s Edge (X) Special Rule, then that Player gains a bonus equal to the value of X on the Focus Roll.</description>
+      <alias>Duellist&apos;s Edge</alias>
     </rule>
-    <rule name="Impact (X)" id="6ead-c31c-ab09-2f8c" hidden="false"/>
-    <rule name="Critical Hit (X)" id="fe5a-a52a-468f-3f88" hidden="false"/>
-    <rule name="Barrage (X)" id="85f5-3a91-69f4-c3b7" hidden="false"/>
-    <rule name="Reaping Blow (X)" id="951f-eee4-02b7-b014" hidden="false"/>
-    <rule name="Bulky (X)" id="50ad-a9a5-1f1d-9a25" hidden="false"/>
+    <rule name="Impact (X)" id="6ead-c31c-ab09-2f8c" hidden="false">
+      <alias>Impact</alias>
+    </rule>
+    <rule name="Critical Hit (X)" id="fe5a-a52a-468f-3f88" hidden="false">
+      <alias>Critical Hit</alias>
+    </rule>
+    <rule name="Barrage (X)" id="85f5-3a91-69f4-c3b7" hidden="false">
+      <alias>Barrage</alias>
+    </rule>
+    <rule name="Reaping Blow (X)" id="951f-eee4-02b7-b014" hidden="false">
+      <alias>Reaping Blow</alias>
+    </rule>
+    <rule name="Bulky (X)" id="50ad-a9a5-1f1d-9a25" hidden="false">
+      <alias>Bulky</alias>
+    </rule>
     <rule name="Implacable Advance" id="3898-aafb-35e0-141b" hidden="false"/>
     <rule name="Slow and Purposeful" id="6a8e-e508-abc9-cb3e" hidden="false"/>
-    <rule name="Explodes (X)" id="da5b-b871-20da-3e70" hidden="false"/>
-    <rule name="Pinning (X)" id="88b6-6493-e4d7-1805" hidden="false"/>
-    <rule name="Shock (X)" id="c6fd-28d0-3f80-672c" hidden="false"/>
-    <rule name="Stun (X)" id="c7c1-bbc9-f852-6f71" hidden="false"/>
-    <rule name="Panic (X)" id="82a7-f471-3fda-6ca1" hidden="false"/>
-    <rule name="Poisoned (X)" id="076f-2c91-c58b-71b3" hidden="false"/>
-    <rule name="Armourbane" id="36ee-4c54-bced-a696" hidden="false"/>
+    <rule name="Explodes (X)" id="da5b-b871-20da-3e70" hidden="false">
+      <alias>Explodes</alias>
+    </rule>
+    <rule name="Pinning (X)" id="88b6-6493-e4d7-1805" hidden="false">
+      <alias>Pinning</alias>
+    </rule>
+    <rule name="Shock (X)" id="c6fd-28d0-3f80-672c" hidden="false">
+      <alias>Shock</alias>
+    </rule>
+    <rule name="Stun (X)" id="c7c1-bbc9-f852-6f71" hidden="false">
+      <alias>Stun</alias>
+    </rule>
+    <rule name="Panic (X)" id="82a7-f471-3fda-6ca1" hidden="false">
+      <alias>Panic</alias>
+    </rule>
+    <rule name="Poisoned (X)" id="076f-2c91-c58b-71b3" hidden="false">
+      <alias>Poisoned</alias>
+    </rule>
+    <rule name="Armourbane" id="36ee-4c54-bced-a696" hidden="false">
+      <description/>
+    </rule>
     <rule name="Pistol" id="2bf6-55c8-6810-a71c" hidden="false"/>
     <rule name="Skyfire" id="8ff3-b6fe-c75b-1d52" hidden="false"/>
-    <rule name="Limited (X)" id="fe57-5bea-a3de-1e60" hidden="false"/>
+    <rule name="Limited (X)" id="fe57-5bea-a3de-1e60" hidden="false">
+      <alias>Limited</alias>
+    </rule>
     <rule name="Rapid Tracking" id="a3ed-1776-3252-db23" hidden="false"/>
-    <rule name="Suppressive (X)" id="001f-53f3-4d87-4b43" hidden="false"/>
-    <rule name="Precision (X)" id="4fbd-e0bc-8f72-6e3f" hidden="false"/>
+    <rule name="Suppressive (X)" id="001f-53f3-4d87-4b43" hidden="false">
+      <alias>Suppressive</alias>
+    </rule>
+    <rule name="Precision (X)" id="4fbd-e0bc-8f72-6e3f" hidden="false">
+      <alias>Precision</alias>
+    </rule>
     <rule name="Shot Selector" id="1adf-7dde-c1ec-ce70" hidden="false"/>
     <rule name="Combi" id="26a0-aaea-5b18-4de6" hidden="false"/>
-    <rule name="Deflagrate (X)" id="f4a0-f206-0dba-7d81" hidden="false"/>
-    <rule name="Phage (X)" id="3e26-d357-69d6-1341" hidden="false"/>
-    <rule name="Rending (X)" id="167f-2a64-6e61-505b" hidden="false"/>
+    <rule name="Deflagrate (X)" id="f4a0-f206-0dba-7d81" hidden="false">
+      <alias>Deflagrate</alias>
+    </rule>
+    <rule name="Phage (X)" id="3e26-d357-69d6-1341" hidden="false">
+      <alias>Phage</alias>
+    </rule>
+    <rule name="Rending (X)" id="167f-2a64-6e61-505b" hidden="false">
+      <alias>Rending</alias>
+    </rule>
     <rule name="Detonation" id="7349-9e80-c051-c22f" hidden="false"/>
-    <rule name="Force (X)" id="25cd-60d0-a0a4-6b18" hidden="false"/>
-    <rule name="Officer of the Line (X)" id="7779-47c8-99a8-b935" hidden="false"/>
+    <rule name="Force (X)" id="25cd-60d0-a0a4-6b18" hidden="false" publicationId="7d63-5df4-c656-52de">
+      <description>A Weapon with this Special Rule may double a Characteristic with a Willpower Check, but may suffer Perils of the Warp.</description>
+      <alias>Force</alias>
+    </rule>
+    <rule name="Officer of the Line (X)" id="7779-47c8-99a8-b935" hidden="false">
+      <alias>Officer of the Line</alias>
+    </rule>
     <rule name="Light Transport" id="d451-f7f3-fc8f-db23" hidden="false"/>
-    <rule name="Auto-Repair (X)" id="3973-ed50-1482-ff4a" hidden="false"/>
+    <rule name="Auto-Repair (X)" id="3973-ed50-1482-ff4a" hidden="false">
+      <alias>Auto-Repair</alias>
+    </rule>
     <rule name="Mobile Command Vehicle" id="799f-1773-d0ae-d423" hidden="false"/>
     <rule name="Anathemata Discipline" id="f260-e43b-e300-79a6" hidden="false"/>
-    <rule name="Fear (X)" id="0ebc-0c92-2209-6393" hidden="false"/>
+    <rule name="Fear (X)" id="0ebc-0c92-2209-6393" hidden="false">
+      <alias>Fear</alias>
+    </rule>
     <rule name="Never Back Down" id="91a6-7f61-0c0b-a236" hidden="false"/>
     <rule name="Master of Descent" id="b04c-3f1f-9fac-cd25" hidden="false"/>
     <rule name="Tip of the Spear" id="96e2-c6ab-8084-c1d2" hidden="false"/>
     <rule name="Master of Auxilia" id="da1d-168c-c688-80cb" hidden="false"/>
-    <rule name="Feel No Pain (X)" id="89b5-7320-db15-fd60" hidden="false"/>
-    <rule name="Battlesmith (X)" id="c3db-d17c-fd46-eb01" hidden="false"/>
+    <rule name="Feel No Pain (X)" id="89b5-7320-db15-fd60" hidden="false">
+      <alias>Feel No Pain</alias>
+    </rule>
+    <rule name="Battlesmith (X)" id="c3db-d17c-fd46-eb01" hidden="false">
+      <alias>Battlesmith</alias>
+    </rule>
     <rule name="Master of Automata" id="3ad7-36d0-16cc-4995" hidden="false"/>
-    <rule name="Infiltrate (X)" id="f330-254e-1a98-798a" hidden="false"/>
+    <rule name="Infiltrate (X)" id="f330-254e-1a98-798a" hidden="false">
+      <alias>Infiltrate</alias>
+    </rule>
+    <rule name="Shrouded (X)" id="ade8-06c1-0e51-c6fd" hidden="false">
+      <alias>Shrouded</alias>
+    </rule>
+    <rule name="Eternal Warrior (X)" id="9ab8-85f1-3f3a-b350" hidden="false">
+      <alias>Eternal Warrior</alias>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Telepathy" hidden="false" id="e09e-1438-3205-2a57"/>
