@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="true" id="1b2d-2038-39a7-f387" name="Psychic" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorName="Arkangelmark5" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
-    <profileType name="Psychic Power" id="9dfb-2fa3-00e7-8cfd" hidden="false">
+    <profileType name="Psychic Power" id="9dfb-2fa3-00e7-8cfd" hidden="false" sortIndex="18">
       <characteristicTypes>
         <characteristicType name="Phase" id="981f-bb86-6a74-9b20"/>
         <characteristicType name="Trigger" id="1be9-f118-1cf3-357e"/>
@@ -11,29 +11,7 @@
         <characteristicType name="Process" id="3804-b2cf-9f1a-4ff0"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Psychic Weapon (Melee)" id="6207-f4ec-b82f-7b7a" hidden="false">
-      <characteristicTypes>
-        <characteristicType name="IM" id="4fca-89b5-66fa-e0b0"/>
-        <characteristicType name="AM" id="c053-48f7-3175-0b2b"/>
-        <characteristicType name="SM" id="782d-8fbe-eda9-5430"/>
-        <characteristicType name="AP" id="1e30-69b1-2da3-a2be"/>
-        <characteristicType name="D" id="301c-6dda-8a7c-a9f0"/>
-        <characteristicType name="Special Rules" id="5c53-779f-2332-f1e8"/>
-        <characteristicType name="Traits" id="3027-7241-01df-a1ae"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType name="Psychic Weapon (Ranged)" id="3643-6e7e-0c46-3a64" hidden="false">
-      <characteristicTypes>
-        <characteristicType name="R" id="7713-6437-42b2-d7b7"/>
-        <characteristicType name="FP" id="2d4e-e059-4e97-15cc"/>
-        <characteristicType name="RS" id="c869-8018-16f8-71d7"/>
-        <characteristicType name="AP" id="7c05-10c6-5a9d-8f74"/>
-        <characteristicType name="D" id="b47c-a2f0-34a4-9e13"/>
-        <characteristicType name="Special Rules" id="104d-0ffb-75a3-5407"/>
-        <characteristicType name="Traits" id="57b2-458b-3272-b396"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType name="Psychic Reaction" id="d59e-df4b-630f-f185" hidden="false">
+    <profileType name="Psychic Reaction" id="d59e-df4b-630f-f185" hidden="false" sortIndex="17">
       <characteristicTypes>
         <characteristicType name="Phase" id="c8a8-29f2-605b-5969"/>
         <characteristicType name="Trigger" id="4e6b-ebca-53df-fcf7"/>
@@ -48,15 +26,15 @@
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Biomancy" hidden="false" id="7f0b-3a53-fbba-de05">
       <profiles>
-        <profile name="Biomatic Slam" typeId="6207-f4ec-b82f-7b7a" typeName="Psychic Weapon (Melee)" hidden="false" id="c5df-010a-1bdd-85c7">
+        <profile name="Biomatic Slam" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="c5df-010a-1bdd-85c7">
           <characteristics>
-            <characteristic name="IM" typeId="4fca-89b5-66fa-e0b0">-3</characteristic>
-            <characteristic name="AM" typeId="c053-48f7-3175-0b2b">1</characteristic>
-            <characteristic name="SM" typeId="782d-8fbe-eda9-5430">12</characteristic>
-            <characteristic name="AP" typeId="1e30-69b1-2da3-a2be">2</characteristic>
-            <characteristic name="D" typeId="301c-6dda-8a7c-a9f0">2</characteristic>
-            <characteristic name="Special Rules" typeId="5c53-779f-2332-f1e8">Armourbane, Psychic</characteristic>
-            <characteristic name="Traits" typeId="3027-7241-01df-a1ae">Melee, Psychic</characteristic>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">-3</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">1</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">12</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Armourbane, Force (D)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Melee, Psychic</characteristic>
           </characteristics>
         </profile>
         <profile name="Biomantic Rage" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="fe7f-a6ad-b858-a3a0">
@@ -74,31 +52,44 @@ Volley Attack.</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Biomancer" id="57c9-40b7-e7aa-3817" hidden="false" type="profile" targetId="e78c-8051-4731-8009"/>
+        <infoLink name="Force (X)" id="9854-0918-be0b-33c9" hidden="false" type="rule" targetId="25cd-60d0-a0a4-6b18">
+          <modifiers>
+            <modifier type="set" value="Force (D)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Armourbane" id="c811-b2a2-d066-a7d9" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+        <infoLink name="Impact (X)" id="7cb6-7869-da43-daa4" hidden="false" type="rule" targetId="6ead-c31c-ab09-2f8c">
+          <modifiers>
+            <modifier type="set" value="Impact (S)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="5339-4a3d-9631-18a4" id="090e-ac4f-0447-d1ac" primary="false" name="Biomancer"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Pyromancy" hidden="false" id="b8f6-c7cb-3596-fb48">
       <profiles>
-        <profile name="Wildfire" typeId="3643-6e7e-0c46-3a64" typeName="Psychic Weapon (Ranged)" hidden="false" id="32c6-600a-1d16-18c2">
+        <profile name="Wildfire" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="32c6-600a-1d16-18c2">
           <characteristics>
-            <characteristic name="R" typeId="7713-6437-42b2-d7b7">12</characteristic>
-            <characteristic name="FP" typeId="2d4e-e059-4e97-15cc">1</characteristic>
-            <characteristic name="RS" typeId="c869-8018-16f8-71d7">4</characteristic>
-            <characteristic name="AP" typeId="7c05-10c6-5a9d-8f74">4</characteristic>
-            <characteristic name="D" typeId="b47c-a2f0-34a4-9e13">1</characteristic>
-            <characteristic name="Special Rules" typeId="104d-0ffb-75a3-5407">Panic (1), Blast (5&quot;), Force (S)</characteristic>
-            <characteristic name="Traits" typeId="57b2-458b-3272-b396">Ranged, Psychic</characteristic>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">12</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">4</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Panic (1), Blast (5&quot;), Force (S)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Ranged, Psychic</characteristic>
           </characteristics>
         </profile>
-        <profile name="Conflagration" typeId="6207-f4ec-b82f-7b7a" typeName="Psychic Weapon (Melee)" hidden="false" id="345e-6b0d-03c7-1e44">
+        <profile name="Conflagration" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="345e-6b0d-03c7-1e44">
           <characteristics>
-            <characteristic name="IM" typeId="4fca-89b5-66fa-e0b0">-1</characteristic>
-            <characteristic name="AM" typeId="c053-48f7-3175-0b2b">6+D3</characteristic>
-            <characteristic name="SM" typeId="782d-8fbe-eda9-5430">5</characteristic>
-            <characteristic name="AP" typeId="1e30-69b1-2da3-a2be">4</characteristic>
-            <characteristic name="D" typeId="301c-6dda-8a7c-a9f0">1</characteristic>
-            <characteristic name="Special Rules" typeId="5c53-779f-2332-f1e8">Deflagrate (5)</characteristic>
-            <characteristic name="Traits" typeId="3027-7241-01df-a1ae">Melee, Psychic</characteristic>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">-1</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">6+D3</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">5</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">4</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Deflagrate (5)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Melee, Psychic</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -123,7 +114,15 @@ Volley Attack.</characteristic>
             <modifier type="set" value="Deflagrate (5)" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Explodes (X)" id="cc44-7188-d687-4b02" hidden="false" type="rule" targetId="da5b-b871-20da-3e70">
+          <modifiers>
+            <modifier type="set" value="Explodes (4+)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="5cb9-c07e-dc73-733f" id="a66b-5d7a-ea1e-d51f" primary="false" name="Pyromancer"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Telekinesis" hidden="false" id="3a5d-8574-6913-d83c">
       <profiles>
@@ -142,12 +141,120 @@ Volley Attack.</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Shrouded (X)" id="4b78-c61b-cc54-a252" hidden="false" type="rule" targetId="ade8-06c1-0e51-c6fd"/>
+        <infoLink name="Shrouded (X)" id="4b78-c61b-cc54-a252" hidden="false" type="rule" targetId="ade8-06c1-0e51-c6fd">
+          <modifiers>
+            <modifier type="set" value="Shrouded (4+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="693c-964f-9dd6-9963" id="33d4-52f5-c7b4-3e79" primary="false" name="Telekine"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Divination" hidden="false" id="5f50-43e2-30a1-01c8">
+      <categoryLinks>
+        <categoryLink targetId="c457-4d05-c6b9-9a82" id="8a91-cafe-9f3e-1fcc" primary="false" name="Diviner"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Every Strike Forseen" typeId="df8e-835f-fa09-50cc" typeName="Gambit" hidden="false" id="aae8-6c9f-73f3-9cb3">
+          <characteristics>
+            <characteristic name="Description" typeId="dd3f-b398-bc17-e4ac"/>
+          </characteristics>
+        </profile>
+        <profile name="Foresight&apos;s Blessing" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="58c6-f57d-ec06-9c39">
+          <characteristics>
+            <characteristic name="Phase" typeId="981f-bb86-6a74-9b20"/>
+            <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e"/>
+            <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86"/>
+            <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770"/>
+            <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4"/>
+            <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Duellist&apos;s Edge (X)" id="023a-032c-20c6-2f15" hidden="false" type="rule" targetId="94bc-c69f-99b6-8ba0">
+          <modifiers>
+            <modifier type="set" value="Duellist&apos;s Edge (2)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Divination" hidden="false" id="5f50-43e2-30a1-01c8"/>
-    <selectionEntry type="upgrade" import="true" name="Telepathy" hidden="false" id="13c2-f899-efef-20cb"/>
-    <selectionEntry type="upgrade" import="true" name="Thaumaturgy" hidden="false" id="15a9-e44f-2393-0d6a"/>
+    <selectionEntry type="upgrade" import="true" name="Telepathy" hidden="false" id="13c2-f899-efef-20cb">
+      <categoryLinks>
+        <categoryLink targetId="d269-d26a-cac1-c953" id="e865-1b7d-b71b-0faa" primary="false" name="Telepath"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Fear (X)" id="501c-85e4-dbb9-0998" hidden="false" type="rule" targetId="0ebc-0c92-2209-6393">
+          <modifiers>
+            <modifier type="set" value="Fear (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Stun (X)" id="4abb-215d-857d-43a2" hidden="false" type="rule" targetId="c7c1-bbc9-f852-6f71">
+          <modifiers>
+            <modifier type="set" value="Stun (-)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="Mind-Burst" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="8ac2-c2e3-73c6-0984">
+          <characteristics>
+            <characteristic name="Phase" typeId="981f-bb86-6a74-9b20"/>
+            <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e"/>
+            <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86"/>
+            <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770"/>
+            <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4"/>
+            <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0"/>
+          </characteristics>
+        </profile>
+        <profile name="Cursed Whispers" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="0bb5-a147-4251-fde0">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">12</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">2D6</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">3</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">-</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Stun (-)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Ranged, Psychic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Thaumaturgy" hidden="false" id="15a9-e44f-2393-0d6a">
+      <categoryLinks>
+        <categoryLink targetId="689b-c1f1-9d47-fd2d" id="a534-fb59-7a98-0651" primary="false" name="Thaumaturge"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Hatred (X)" id="83ab-9ef8-dbb6-cc6f" hidden="false" type="rule" targetId="d756-75b2-3c31-b2b9">
+          <modifiers>
+            <modifier type="set" value="Hatred (Psyker)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="Resurrection" typeId="d59e-df4b-630f-f185" typeName="Psychic Reaction" hidden="false" id="9f18-3d26-5c15-0b24">
+          <characteristics>
+            <characteristic name="Phase" typeId="c8a8-29f2-605b-5969"/>
+            <characteristic name="Trigger" typeId="4e6b-ebca-53df-fcf7"/>
+            <characteristic name="Cost" typeId="f25a-9ced-eb9b-4587"/>
+            <characteristic name="Focus" typeId="0b45-591a-ee11-488e"/>
+            <characteristic name="Target" typeId="cf1d-e201-caac-3d45"/>
+            <characteristic name="Duration" typeId="daae-40ac-68e2-fa78"/>
+            <characteristic name="Process" typeId="8d43-934e-e511-0cfd"/>
+          </characteristics>
+        </profile>
+        <profile name="Tranquility" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="cfb2-5d69-b138-0097">
+          <characteristics>
+            <characteristic name="Phase" typeId="981f-bb86-6a74-9b20"/>
+            <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e"/>
+            <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86"/>
+            <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770"/>
+            <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4"/>
+            <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Special Rules" id="c361-7259-1878-a576" targetId="106b-693b-99f2-00c3"/>
@@ -166,4 +273,12 @@ Volley Attack.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
+  <categoryEntries>
+    <categoryEntry name="Biomancer" id="5339-4a3d-9631-18a4" hidden="false"/>
+    <categoryEntry name="Pyromancer" id="5cb9-c07e-dc73-733f" hidden="false"/>
+    <categoryEntry name="Telekine" id="693c-964f-9dd6-9963" hidden="false"/>
+    <categoryEntry name="Diviner" id="c457-4d05-c6b9-9a82" hidden="false"/>
+    <categoryEntry name="Telepath" id="d269-d26a-cac1-c953" hidden="false"/>
+    <categoryEntry name="Thaumaturge" id="689b-c1f1-9d47-fd2d" hidden="false"/>
+  </categoryEntries>
 </catalogue>
