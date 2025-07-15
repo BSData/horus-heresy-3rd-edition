@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="df17-7a05-0826-6e22" name="Traits" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="1" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue library="true" id="df17-7a05-0826-6e22" name="Traits" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="2" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedProfiles>
     <profile name="Master of the Legion" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="6cd2-96be-b703-6d57">
       <characteristics>
@@ -141,4 +141,117 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <categoryEntries>
+    <categoryEntry name="Master of the Legion" id="e3cd-7a38-34d7-9cbf" hidden="false"/>
+    <categoryEntry name="Traitor" id="d251-944b-3c3b-0579" hidden="false"/>
+    <categoryEntry name="[Legiones Astartes]" id="f676-84ff-fcd2-6c41" hidden="false">
+      <modifiers>
+        <modifier type="set" value="Dark Angels" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Emperor&apos;s Children" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="9a22-d01f-ab5c-ec07" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Iron Warriors" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="21c0-18db-03dd-ae07" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="White Scars" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f7b4-2531-0962-1379" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Space Wolves" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d995-cb33-be41-ecf8" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Imperial Fists" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d186-cffc-0950-f632" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Night Lords" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="486f-b32a-ac87-73dd" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Blood Angels" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9cff-ac34-56ca-260f" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Iron Hands" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="736e-3967-e72b-e3ac" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="World Eaters" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a956-190d-3b47-6258" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Ultramarines" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="656a-07b6-d4fd-57af" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Death Guard" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="be98-aa9d-64ef-f62c" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Thousand Sons" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Sons of Horus" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ac06-fcec-b634-5bd9" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Word Bearers" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4935-1832-63f7-91aa" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Salamanders" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f148-a6e4-5a8c-3aeb" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Raven Guard" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="340c-1d4f-1f31-fb70" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Alpha Legion" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="8813-5298-c368-ee16" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Psyker" id="9254-b1e9-98b2-6101" hidden="false"/>
+    <categoryEntry name="[Allegiance]" id="cbf3-b3ce-1dc0-8ca3" hidden="false">
+      <modifiers>
+        <modifier type="set" value="Loyalist" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Traitor" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+  </categoryEntries>
 </catalogue>
