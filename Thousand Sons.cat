@@ -1456,52 +1456,71 @@ The &apos;Khenetai&apos; Trait</description>
           <categoryLinks>
             <categoryLink targetId="7c3f-93c7-d5b9-89e3" id="b31b-b982-7799-3fd1" primary="false" name="Thousand Sons"/>
             <categoryLink targetId="cbf3-b3ce-1dc0-8ca3" id="3e35-d52a-7870-a627" primary="false" name="[Allegiance]"/>
+            <categoryLink targetId="9254-b1e9-98b2-6101" id="0a1a-eff5-f5d0-7e14" primary="false" name="Psyker"/>
+            <categoryLink targetId="49fc-361e-9168-c460" id="9fce-92ba-a067-886e" primary="false" name="Smokescreen"/>
           </categoryLinks>
           <profiles>
-            <profile name="Castellax-Achea" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="6fa6-595e-0d36-f4bc" publicationId="e54c-7040-0f35-d85d">
+            <profile name="Contemptor-Osiron Dreadnought" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="6fa6-595e-0d36-f4bc" publicationId="e54c-7040-0f35-d85d">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Automata</characteristic>
-                <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
-                <characteristic name="WS" typeId="253c-d694-4695-c89e">3</characteristic>
-                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">3</characteristic>
-                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">6</characteristic>
-                <characteristic name="T" typeId="3120-8275-e537-ecd2">6</characteristic>
-                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">4</characteristic>
-                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">3</characteristic>
-                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Walker</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">8</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">7</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">7</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">6</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">4</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">4</characteristic>
                 <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">12</characteristic>
                 <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">10</characteristic>
-                <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">8</characteristic>
                 <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">5</characteristic>
-                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df" position="0">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
-            <profile name="Castellax-Achea" typeId="9d66-ed77-3c90-a25b" typeName="Special Rules" hidden="false" id="640f-a027-2f27-d492">
+            <profile name="Contemptor-Osiron Dreadnought" typeId="9d66-ed77-3c90-a25b" typeName="Special Rules" hidden="false" id="640f-a027-2f27-d492">
               <characteristics>
-                <characteristic name="Description" typeId="ee6a-0563-dbb9-272a">Bulky (4), Explodes (6+), Psychic Conduit, Implacable Advance, Firestorm, Firing Protocols (3)</characteristic>
+                <characteristic name="Description" typeId="ee6a-0563-dbb9-272a">Bulky (4), Explodes (5+), Implacable Advance</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="Bolter" hidden="false" id="c89a-9ea6-8797-289e" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="2">
+            <entryLink import="true" name="Prosperine Arcana" hidden="false" id="0b7a-75be-7b1b-b353" type="selectionEntryGroup" targetId="9649-e1fd-53ca-9ee9" sortIndex="6"/>
+            <entryLink import="true" name="Havoc launcher" hidden="false" id="cbbe-c095-8970-d4d0" type="selectionEntry" targetId="0295-e35d-2ed6-f28a" sortIndex="4">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="68a3-a235-ab41-4fab-min" includeChildSelections="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="68a3-a235-ab41-4fab-max" includeChildSelections="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c699-5cbe-26aa-b09a" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a899-c926-a8d3-4eb9" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Psychic Disciplines" hidden="false" id="783f-f135-2097-823d" type="selectionEntryGroup" targetId="92bc-8632-a062-ee7d" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b406-d41c-75e3-090d" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0eab-1e16-90bd-6dd5" includeChildSelections="false"/>
               </constraints>
             </entryLink>
           </entryLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Achea force claws " hidden="false" id="9b5d-00d1-3be9-1580" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Gravis force blade" hidden="false" id="9b5d-00d1-3be9-1580" sortIndex="1">
               <profiles>
-                <profile name="Achea force claws" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="9d69-997f-7ad1-2026">
+                <profile name="Gravis force blade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="9d69-997f-7ad1-2026">
                   <characteristics>
                     <characteristic name="IM" typeId="6eec-4093-f946-1014">1</characteristic>
                     <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
-                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+1</characteristic>
-                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
                     <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
-                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+)</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Force (D), Reaping Blow (2)</characteristic>
                     <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Psychic</characteristic>
                   </characteristics>
                 </profile>
@@ -1511,19 +1530,19 @@ The &apos;Khenetai&apos; Trait</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1561-d960-d153-73c6-max" includeChildSelections="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Breaching (X)" id="6e17-9f5f-6093-891a" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+                <infoLink name="Force (X)" id="6e17-9f5f-6093-891a" hidden="false" type="rule" targetId="25cd-60d0-a0a4-6b18">
                   <modifiers>
-                    <modifier type="set" value="Breaching (5+)" field="name"/>
+                    <modifier type="set" value="Force (D)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Reaping Blow (X)" id="61bf-694c-e6e3-27b8" hidden="false" type="rule" targetId="951f-eee4-02b7-b014">
+                  <modifiers>
+                    <modifier type="set" value="Reaping Blow (2)" field="name"/>
                   </modifiers>
                 </infoLink>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
-          <rules>
-            <rule name="Psychic Conduit" id="e246-e17a-0ecb-c84d" hidden="false">
-              <description/>
-            </rule>
-          </rules>
           <infoLinks>
             <infoLink name="Walker Unit Type" id="1367-e18d-ca46-4b30" hidden="false" type="rule" targetId="a4d9-6b9e-822f-d40b"/>
             <infoLink name="Bulky (X)" id="5280-6306-8e72-9695" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
@@ -1532,90 +1551,85 @@ The &apos;Khenetai&apos; Trait</description>
               </modifiers>
             </infoLink>
             <infoLink name="Implacable Advance" id="ac29-182f-caa2-db41" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
-            <infoLink name="Firing Protocols (X)" id="5e64-1275-4007-988d" hidden="false" type="rule" targetId="37d8-cc87-fa2b-04dc">
-              <modifiers>
-                <modifier type="set" value="Firing Protocols (3)" field="name"/>
-              </modifiers>
-            </infoLink>
             <infoLink name="Explodes (X)" id="b324-bf5f-0161-56ae" hidden="false" type="rule" targetId="da5b-b871-20da-3e70">
               <modifiers>
-                <modifier type="set" value="Explodes (6+)" field="name"/>
+                <modifier type="set" value="Explodes (5+)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Firestorm" id="7792-457f-8f40-77ca" hidden="false" type="rule" targetId="e02b-509b-96a7-aaad"/>
           </infoLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Castellax-Achea Heavy Weapon" id="56fb-fb67-24c9-b350" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Asphyx bolt cannon" hidden="false" id="9d5f-32bd-3fc2-6f2e" defaultAmount="1" sortIndex="1">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="49f1-8b82-9937-fdeb" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="735b-c0a0-d484-1c84" includeChildSelections="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Asphyx bolt cannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="b5b8-1356-a54d-25cc">
-                      <characteristics>
-                        <characteristic name="R" typeId="cdb0-8654-6840-1037">24</characteristic>
-                        <characteristic name="FP" typeId="5037-1f27-1790-e355">4</characteristic>
-                        <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">5</characteristic>
-                        <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
-                        <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
-                        <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd"> Rending (4+)
-
-</characteristic>
-                        <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Psychic, Assault</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Rending (X)" id="238a-3f4c-e134-6976" hidden="false" type="rule" targetId="167f-2a64-6e61-505b">
-                      <modifiers>
-                        <modifier type="set" value="Rending (4+)" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name=" æther-fire cannon" hidden="false" id="328d-a990-c032-1ced" sortIndex="2">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="be72-521e-9392-b942" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="918f-abce-793f-6ad1" includeChildSelections="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name=" æther-fire cannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="972c-1ba6-cd6d-0701">
-                      <characteristics>
-                        <characteristic name="R" typeId="cdb0-8654-6840-1037">24</characteristic>
-                        <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
-                        <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
-                        <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
-                        <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
-                        <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Blast (3&quot;), Breaching (6+)</characteristic>
-                        <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Psychic, Assault</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Blast (X)" id="a0e6-66b9-a578-9ce3" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
-                      <modifiers>
-                        <modifier type="set" value="Blast (3&quot;)" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                    <infoLink name="Breaching (X)" id="1455-8c91-ed3b-b118" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
-                      <modifiers>
-                        <modifier type="set" value="Breaching (6+)" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+            <selectionEntryGroup name="Gravis Bolt cannon" id="56fb-fb67-24c9-b350" hidden="false" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d80-3f02-179f-d67c-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d80-3f02-179f-d67c-max" includeChildSelections="false"/>
               </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Gravis bolt cannon" hidden="false" id="84d1-f74c-bca4-73a4" type="selectionEntry" targetId="50d5-02d3-0be6-9143" defaultAmount="1" sortIndex="1"/>
+                <entryLink import="true" name="Twin lascannon" hidden="false" id="0848-b4dc-d22f-6218" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a" defaultAmount="" sortIndex="8">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Gravis autocannon" hidden="false" id="74d6-1b7e-4929-cda3" type="selectionEntry" targetId="4e51-460b-4f29-8257" defaultAmount="" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Gravis plasma cannon" hidden="false" id="0bcb-80fc-9d81-608c" type="selectionEntry" targetId="e457-5209-91f7-734f" defaultAmount="" sortIndex="4">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Conversion beam cannon" hidden="false" id="7229-7267-ed7b-1477" type="selectionEntry" targetId="e650-5178-1a9b-696e" defaultAmount="" sortIndex="5">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin volkite culverin" hidden="false" id="1dfc-2043-f666-e963" type="selectionEntry" targetId="65a5-f5bd-1ecb-0c22" defaultAmount="" sortIndex="6">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Kheres assault cannon" hidden="false" id="bfc8-2906-4017-fcd4" type="selectionEntry" targetId="11a5-70a9-9b14-10d3" defaultAmount="" sortIndex="7">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Gravis melta cannon" hidden="false" id="6824-6f26-92b3-5924" type="selectionEntry" targetId="5a5a-1d32-2fcd-e5e3" defaultAmount="" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Combi Bolter" id="c849-1153-1e0c-a902" hidden="false" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5071-51db-2d43-2228-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5071-51db-2d43-2228-max" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Combi-bolter" hidden="false" id="e88c-c5e8-7b58-cb68" type="selectionEntry" targetId="042d-9e60-db9e-c147" defaultAmount="1" sortIndex="1"/>
+                <entryLink import="true" name="Plasma blaster" hidden="false" id="eefa-4f35-89c5-33c1" type="selectionEntry" targetId="3787-3dca-b6c9-f9e3" defaultAmount="" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Graviton gun" hidden="false" id="5f0a-6b58-4446-85b8" type="selectionEntry" targetId="4a06-c55e-a06f-bd0c" defaultAmount="" sortIndex="4">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Meltagun" hidden="false" id="f9ce-e922-1007-6e88" type="selectionEntry" targetId="b1e1-e164-5877-6734" defaultAmount="" sortIndex="5">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="336e-977f-c9b9-331e" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" defaultAmount="" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
@@ -1659,6 +1673,13 @@ The &apos;Khenetai&apos; Trait</description>
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df" position="0">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
             <profile name="Castellax-Achea" typeId="9d66-ed77-3c90-a25b" typeName="Special Rules" hidden="false" id="7bc8-4a76-1bbe-a3ec">
               <characteristics>
@@ -1823,7 +1844,7 @@ The &apos;Khenetai&apos; Trait</description>
     <catalogueLink type="catalogue" name="Psychic" id="0c9e-bf57-21df-b03e" targetId="1b2d-2038-39a7-f387" importRootEntries="true"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Prosperine Arcana" id="9649-e1fd-53ca-9ee9" hidden="false" publicationId="e54c-7040-0f35-d85d">
+    <selectionEntryGroup name="Prosperine Arcana" id="9649-e1fd-53ca-9ee9" hidden="false" publicationId="e54c-7040-0f35-d85d" collapsible="true">
       <entryLinks>
         <entryLink import="true" name="Athanaean" hidden="false" id="7f89-b45a-ace2-f598" type="selectionEntry" targetId="b82f-e92e-222b-37e0">
           <costs>
@@ -1960,7 +1981,7 @@ The &apos;Khenetai&apos; Trait</description>
     </entryLink>
     <entryLink import="true" name="Contemptor-Osiron Dreadnought" hidden="false" id="1ee2-34ab-cb0e-3b25" type="selectionEntry" targetId="6580-3281-36a9-564a">
       <categoryLinks>
-        <categoryLink targetId="2499-7239-685f-8465" id="f52b-f1b9-b782-5431" primary="false" name="War-engine"/>
+        <categoryLink targetId="2499-7239-685f-8465" id="f52b-f1b9-b782-5431" primary="true" name="War-engine"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
