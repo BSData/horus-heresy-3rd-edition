@@ -4159,5 +4159,6 @@
     <rule name="Paragon Unit Type" id="d1a6-a8d5-b852-8ca3" hidden="false"/>
     <rule name="Command Unit Sub-type" id="7b6d-2e0d-8659-252d" hidden="false"/>
     <rule name="Unique Unit Sub-type" id="13b4-e4fd-1a81-99b3" hidden="false"/>
+    <rule name="Automata Unit Type" id="c80a-c334-e888-5763" hidden="false"/>
   </sharedRules>
 </gameSystem>
