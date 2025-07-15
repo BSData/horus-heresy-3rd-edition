@@ -63,7 +63,7 @@
               </modifiers>
             </infoLink>
             <infoLink name="Unique Unit Sub-type" id="e52b-e70b-c65a-f6c5" hidden="false" type="rule" targetId="13b4-e4fd-1a81-99b3"/>
-            <infoLink name="Paragon Unit Sub-type" id="5941-daf8-2dbd-9579" hidden="false" type="rule" targetId="7b6d-2e0d-8659-252d"/>
+            <infoLink name="Paragon Unit Type" id="5941-daf8-2dbd-9579" hidden="false" type="rule" targetId="d1a6-a8d5-b852-8ca3"/>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Raptora" hidden="false" id="c692-088a-f175-c4dc" type="selectionEntry" targetId="7b1f-851d-700e-46d8" sortIndex="7">
@@ -397,7 +397,7 @@
           </categoryLinks>
           <infoLinks>
             <infoLink name="Unique Unit Sub-type" id="43db-b7f5-ebc5-7236" hidden="false" type="rule" targetId="13b4-e4fd-1a81-99b3"/>
-            <infoLink name="Command Unit Sub-type" id="f5d8-23f3-fcd7-24d4" hidden="false" type="rule" targetId="8662-29c9-1fcb-391a"/>
+            <infoLink name="Command Unit Sub-type" id="f5d8-23f3-fcd7-24d4" hidden="false" type="rule" targetId="7b6d-2e0d-8659-252d"/>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Frag grenades" hidden="false" id="5f60-bcfd-300a-97d8" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
@@ -685,7 +685,7 @@
           </rules>
           <infoLinks>
             <infoLink name="Unique Unit Sub-type" id="617d-f677-f3cf-26a8" hidden="false" type="rule" targetId="13b4-e4fd-1a81-99b3"/>
-            <infoLink name="Command Unit Sub-type" id="75a8-3d31-d245-c1a7" hidden="false" type="rule" targetId="8662-29c9-1fcb-391a"/>
+            <infoLink name="Command Unit Sub-type" id="75a8-3d31-d245-c1a7" hidden="false" type="rule" targetId="7b6d-2e0d-8659-252d"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -825,7 +825,7 @@ Immovable Force (Telekinesis Discipline)</description>
                 <modifier type="set" value="Pinning (2)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Command Unit Sub-type" id="6f95-5e56-3d52-49fb" hidden="false" type="rule" targetId="8662-29c9-1fcb-391a"/>
+            <infoLink name="Command Unit Sub-type" id="6f95-5e56-3d52-49fb" hidden="false" type="rule" targetId="7b6d-2e0d-8659-252d"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Prosperine Spirestave" hidden="false" id="d0ea-1c9c-779e-f0c7" sortIndex="2">
@@ -932,7 +932,7 @@ Immovable Force (Telekinesis Discipline)</description>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5234-07a7-260b-7333" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Heavy Weapons" hidden="false" id="1491-4661-4ea0-71ca" type="selectionEntryGroup" targetId="a337-e1c1-1db1-ee00"/>
+                <entryLink import="true" name="Sehkmet Heavy Weapons" hidden="false" id="1491-4661-4ea0-71ca" type="selectionEntryGroup" targetId="a337-e1c1-1db1-ee00"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6613-ffaa-fa8e-f6fc-min" includeChildSelections="false"/>
@@ -1042,7 +1042,7 @@ Immovable Force (Telekinesis Discipline)</description>
           <profiles>
             <profile name="Sekhmet" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="77df-bf66-7cd6-cc08" publicationId="e54c-7040-0f35-d85d">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b"> Infantry (Heavy)</characteristic>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Heavy)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -1083,7 +1083,7 @@ Immovable Force (Telekinesis Discipline)</description>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8acc-2aec-3cc8-70b9" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Heavy Weapons" hidden="false" id="a715-dea6-fc8b-1037" type="selectionEntryGroup" targetId="a337-e1c1-1db1-ee00"/>
+                <entryLink import="true" name="Sehkmet Heavy Weapons" hidden="false" id="a715-dea6-fc8b-1037" type="selectionEntryGroup" targetId="a337-e1c1-1db1-ee00"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="16ad-d5df-a99c-aba4-min" includeChildSelections="false"/>
@@ -1221,14 +1221,34 @@ Immovable Force (Telekinesis Discipline)</description>
             <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
             <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
             <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+)</characteristic>
-            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Psychic
-
-</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Psychic</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Breaching (X)" id="97e2-7b8a-ed2d-4e36" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Paired Achea pattern force sword" hidden="false" id="3a16-3c8d-bb61-705b">
+      <profiles>
+        <profile name="Paired Achea pattern force sword" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="f922-8ed8-f5f2-6e1f">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">1</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">+1</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+1</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Psychic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="c566-ad10-6e89-acf1" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
           <modifiers>
             <modifier type="set" value="Breaching (5+)" field="name"/>
           </modifiers>
@@ -1408,4 +1428,7 @@ Immovable Force (Telekinesis Discipline)</description>
       <description>Until the end of the first Battle Turn of the Battle, whenever the Controlling Player of a Model with this Special Rule makes a Manifestation Check for a Unit that only includes Models with the Thousand Sons Trait, they may roll three Dice and select any two to determine the result.</description>
     </rule>
   </sharedRules>
+  <forceEntries>
+    <forceEntry name="Crusade Force Organization Chart" id="9863-e315-c4d7-2078" hidden="false" childForcesLabel="Auxillary and Apex Detachments"/>
+  </forceEntries>
 </catalogue>
