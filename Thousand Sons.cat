@@ -1028,6 +1028,11 @@ Immovable Force (Telekinesis Discipline)</description>
           <infoLinks>
             <infoLink name="Sergeant Unit Sub-type" id="ecf8-da50-7fa0-3bcb" hidden="false" type="rule" targetId="de7e-d90d-ffb6-c740"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink targetId="f676-84ff-fcd2-6c41" id="5c35-3837-6927-2f7f" primary="false" name="[Legiones Astartes]"/>
+            <categoryLink targetId="cbf3-b3ce-1dc0-8ca3" id="f386-9c87-be45-ec88" primary="false" name="[Allegiance]"/>
+            <categoryLink targetId="9254-b1e9-98b2-6101" id="6ccf-1e07-6d4a-1363" primary="false" name="Psyker"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Sekhmet" hidden="false" id="cc44-6a6f-b9c7-c772" sortIndex="2">
           <constraints>
@@ -1176,6 +1181,11 @@ Immovable Force (Telekinesis Discipline)</description>
               </costs>
             </entryLink>
           </entryLinks>
+          <categoryLinks>
+            <categoryLink targetId="cbf3-b3ce-1dc0-8ca3" id="b640-0b96-cdc2-dab8" primary="false" name="[Allegiance]"/>
+            <categoryLink targetId="f676-84ff-fcd2-6c41" id="b771-aa62-34d1-b25c" primary="false" name="[Legiones Astartes]"/>
+            <categoryLink targetId="9254-b1e9-98b2-6101" id="832e-924b-da84-1eb2" primary="false" name="Psyker"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -1205,11 +1215,6 @@ Immovable Force (Telekinesis Discipline)</description>
         <infoLink name="Slow and Purposeful" id="5f87-c024-1696-2050" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e"/>
         <infoLink name="Heavy Unit Sub-type" id="60a9-5514-8de0-2c13" hidden="false" type="rule" targetId="7d35-4d6f-c4fe-4aac"/>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="cbf3-b3ce-1dc0-8ca3" id="82f2-e8f7-6904-9009" primary="false" name="[Allegiance]"/>
-        <categoryLink targetId="f676-84ff-fcd2-6c41" id="0b07-9d2e-acc7-d3be" primary="false" name="[Legiones Astartes]"/>
-        <categoryLink targetId="9254-b1e9-98b2-6101" id="91ae-3ec6-627d-b5be" primary="false" name="Psyker"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Achea pattern force sword" hidden="false" id="936c-e098-1e3b-ca96">
       <profiles>
@@ -1254,6 +1259,188 @@ Immovable Force (Telekinesis Discipline)</description>
           </modifiers>
         </infoLink>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Khenetai Occult Cabal" hidden="false" id="3f0f-9a7b-bd90-8fd3">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Khenetai Blademaster" hidden="false" id="b811-45c5-f560-eea7" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b45-56f6-9744-0b68" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3304-5d1e-da75-f0bf" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Khenetai Blademaster" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="32d8-c9e1-5d0b-f0c4" publicationId="e54c-7040-0f35-d85d">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant, Heavy)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">2</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">4</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">8</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df" position="0">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Khenetai Blademaster Ranged Weapon" id="33ff-36ed-8eda-ad60" hidden="false" collapsible="true" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="0e26-8941-40d3-a1b0" type="selectionEntry" targetId="2942-f783-d627-33c5" defaultAmount="1" sortIndex="1"/>
+                <entryLink import="true" name="Legion Pistols" hidden="false" id="a02a-8987-7570-ce4c" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" flatten="true" sortIndex="2"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c7a-d4fd-aa8a-2f23-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c7a-d4fd-aa8a-2f23-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Paired Achea pattern force sword" hidden="false" id="6291-b630-717f-593d" type="selectionEntry" targetId="3a16-3c8d-bb61-705b" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f6c5-7fbc-8f9f-d9ff-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6c5-7fbc-8f9f-d9ff-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Sergeant Unit Sub-type" id="74fc-d45c-e7ea-cde4" hidden="false" type="rule" targetId="de7e-d90d-ffb6-c740"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink targetId="9254-b1e9-98b2-6101" id="99ca-cf33-b1c4-150d" primary="false" name="Psyker"/>
+            <categoryLink targetId="f676-84ff-fcd2-6c41" id="f0f0-d4be-8958-dfbe" primary="false" name="[Legiones Astartes]"/>
+            <categoryLink targetId="cbf3-b3ce-1dc0-8ca3" id="c4bd-c030-5668-3e84" primary="false" name="[Allegiance]"/>
+            <categoryLink targetId="6101-2133-e9a7-0ea9" id="b2c4-5ef9-3a03-892a" primary="false" name="Khenetai"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Khenetai Blade" hidden="false" id="5ffc-2d00-d1b9-73e8" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="ce13-92ba-f893-1b03" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="d6b0-1f34-add7-f81e" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="24"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Khenetai Blade" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="21cd-7a54-9083-f94c" publicationId="e54c-7040-0f35-d85d">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Heavy)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">2</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">4</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">8</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df" position="0">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Paired Achea pattern force sword" hidden="false" id="7033-0294-ed11-3b96" type="selectionEntry" targetId="3a16-3c8d-bb61-705b" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b44b-111e-6601-be85-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b44b-111e-6601-be85-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="497d-8cba-0a70-a080" type="selectionEntry" targetId="2942-f783-d627-33c5" defaultAmount="1" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b3af-91e3-8083-0ed6-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3af-91e3-8083-0ed6-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink targetId="9254-b1e9-98b2-6101" id="65dd-a9e3-214c-8158" primary="false" name="Psyker"/>
+            <categoryLink targetId="f676-84ff-fcd2-6c41" id="6535-94bf-2564-21d6" primary="false" name="[Legiones Astartes]"/>
+            <categoryLink targetId="cbf3-b3ce-1dc0-8ca3" id="9cbc-0a03-e51d-d5ec" primary="false" name="[Allegiance]"/>
+            <categoryLink targetId="6101-2133-e9a7-0ea9" id="5d2d-0df9-028a-9f9f" primary="false" name="Khenetai"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="49"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Mindsong of Blades" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="1ce6-9c4b-b2a4-fb7b">
+          <characteristics>
+            <characteristic name="Summary" typeId="981f-bb86-6a74-9b20"/>
+            <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e"/>
+            <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86"/>
+            <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770"/>
+            <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4"/>
+            <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0"/>
+          </characteristics>
+        </profile>
+        <profile name="Khenetai Occult Cabal" typeId="9d66-ed77-3c90-a25b" typeName="Special Rules" hidden="false" id="d398-92cf-482b-7f75">
+          <characteristics>
+            <characteristic name="Description" typeId="ee6a-0563-dbb9-272a">Warriors of the Khenetai</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bladeweaving" typeId="d59e-df4b-630f-f185" typeName="Psychic Reaction" hidden="false" id="8efd-a0ab-75fb-c62a">
+          <characteristics>
+            <characteristic name="Summary" typeId="c8a8-29f2-605b-5969"/>
+            <characteristic name="Trigger" typeId="4e6b-ebca-53df-fcf7"/>
+            <characteristic name="Cost" typeId="f25a-9ced-eb9b-4587"/>
+            <characteristic name="Focus" typeId="0b45-591a-ee11-488e"/>
+            <characteristic name="Target" typeId="cf1d-e201-caac-3d45"/>
+            <characteristic name="Duration" typeId="daae-40ac-68e2-fa78"/>
+            <characteristic name="Process" typeId="8d43-934e-e511-0cfd"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Warriors of the Khenetai" id="7acf-2d6c-3c39-9ea8" hidden="false">
+          <description>A Unit that includes Models with this Special Rule cannot have a Prosperine Arcana selected for it. Instead, they have the Khenetai Prosperine Arcana. This follows all the Rules for Prosperine Arcana as described on page220.
+All Models in a Unit with the Khenetai Prosperine Arcana gains the following benefits:
+The Bladeweaving Psychic Reaction
+The Mindsong of Blades Psychic Power
+The &apos;Khenetai&apos; Trait</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink import="true" name="Frag grenades" hidden="false" id="10da-3443-fb32-03d9" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="54e4-add4-2700-9f51" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbaf-d96a-a2bc-8d85" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak grenades" hidden="false" id="36fa-8880-42b8-5c62" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bbf6-2d4b-4a60-dfb9" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7089-a253-4bc5-daad" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
@@ -1391,6 +1578,11 @@ Immovable Force (Telekinesis Discipline)</description>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="c2a7-8ca0-c3a8-885a" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Khenetai Occult Cabal" hidden="false" id="0e9e-1fd6-40aa-5236" type="selectionEntry" targetId="3f0f-9a7b-bd90-8fd3">
+      <categoryLinks>
+        <categoryLink targetId="5d5e-958f-e388-50b5" id="380b-5461-7600-b26a" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <categoryEntries>
     <categoryEntry name="Thousand Sons" id="7c3f-93c7-d5b9-89e3" hidden="false">
@@ -1412,6 +1604,7 @@ Immovable Force (Telekinesis Discipline)</description>
     <categoryEntry name="Pavoni" id="1ffd-75cd-4550-fe8f" hidden="false"/>
     <categoryEntry name="Corvidae" id="195c-d66b-8b86-c5ad" hidden="false"/>
     <categoryEntry name="Athanaen" id="b582-64ed-5b52-23cb" hidden="false"/>
+    <categoryEntry name="Khenetai" id="6101-2133-e9a7-0ea9" hidden="false"/>
   </categoryEntries>
   <profileTypes>
     <profileType name="Special Rules" id="9d66-ed77-3c90-a25b" hidden="false" sortIndex="9">
