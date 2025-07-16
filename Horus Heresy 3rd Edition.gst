@@ -4044,6 +4044,11 @@
         <characteristicType name="Description" id="dd3f-b398-bc17-e4ac"/>
       </characteristicTypes>
     </profileType>
+    <profileType name="Special Rules" id="9d66-ed77-3c90-a25b" hidden="false" sortIndex="9">
+      <characteristicTypes>
+        <characteristicType name="Description" id="ee6a-0563-dbb9-272a"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Prime Benefit" id="93f7-d7db-d7f0-2146" hidden="false">
