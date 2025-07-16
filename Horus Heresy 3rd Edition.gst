@@ -206,11 +206,11 @@
     <categoryEntry name="Prime War-engine" id="9699-67c9-2c0b-e64b" hidden="false"/>
     <categoryEntry name="Prime Support" id="1c79-ecdf-9a64-84c9" hidden="false"/>
     <categoryEntry name="Prime Transport" id="fc27-1a48-84ae-aa7b" hidden="false"/>
-    <categoryEntry name="Prime Heavy assault" id="1e95-35f0-1353-ffa1" hidden="false"/>
-    <categoryEntry name="Prime Heavy transport" id="abff-3686-c39a-9a24" hidden="false"/>
+    <categoryEntry name="Prime Heavy Assault" id="1e95-35f0-1353-ffa1" hidden="false"/>
+    <categoryEntry name="Prime Heavy Transport" id="abff-3686-c39a-9a24" hidden="false"/>
     <categoryEntry name="Prime Armour" id="4460-7bc1-4d80-aecb" hidden="false"/>
     <categoryEntry name="Prime Recon" id="6348-ecd0-714d-042a" hidden="false"/>
-    <categoryEntry name="Prime Fast attack" id="c291-144b-3da6-37ed" hidden="false"/>
+    <categoryEntry name="Prime Fast Attack" id="c291-144b-3da6-37ed" hidden="false"/>
     <categoryEntry name="Vehicle Model Type" id="aa5a-c9fd-1eb1-7a45" hidden="false"/>
     <categoryEntry name="Rapid Sub-Type" id="a5c6-b359-cecb-e0b1" hidden="false"/>
     <categoryEntry name="Unstoppable Sub-Type" id="5555-f37e-8ad0-20c0" hidden="false">
@@ -4810,7 +4810,11 @@ Please don&apos;t submit bug reports for any of these things</description>
     </profileType>
     <profileType name="Reaction" id="c14c-ecfd-ea65-58c9" hidden="false" sortIndex="14">
       <characteristicTypes>
-        <characteristicType name="Description" id="5d02-0e54-0f6a-0f0b"/>
+        <characteristicType name="Summary" id="5d02-0e54-0f6a-0f0b"/>
+        <characteristicType name="Trigger" id="02e4-3f90-3125-f8b4"/>
+        <characteristicType name="Cost" id="954a-972f-5c94-2ede"/>
+        <characteristicType name="Target" id="e102-8fdd-9cd4-c0f9"/>
+        <characteristicType name="Process" id="57cf-1c68-a020-2529"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Vehicle" id="2a80-eec8-a736-2fe3" hidden="false" sortIndex="2">

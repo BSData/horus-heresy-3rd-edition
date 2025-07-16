@@ -11432,7 +11432,31 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Legion Prime Benefits" id="d3a2-e7f2-9da7-fd3c" hidden="false" sortIndex="11">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Interdiction Cadres" hidden="false" id="ef90-dc9f-fc38-6b5d">
+        <selectionEntry type="upgrade" import="true" name="Interdiction Cadres" hidden="false" id="ef90-dc9f-fc38-6b5d"/>
+        <selectionEntry type="upgrade" import="true" name="Sagyar Mazan" hidden="true" id="3e87-9001-c142-6487">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f7b4-2531-0962-1379" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="f4d8-927b-6ccf-8bf7" primary="false" name="White Scars"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Expendable (X)" id="0053-8fbf-c306-ddd8" hidden="false" type="rule" targetId="c4d4-e053-9564-540b">
+              <modifiers>
+                <modifier type="set" value="Expendable (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Prime Unit" id="4ba7-3137-87b5-10e5" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Prime" hidden="false" id="3296-8d29-cb29-8f6f">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f02e-fdea-3bdf-3270"/>
           </constraints>
