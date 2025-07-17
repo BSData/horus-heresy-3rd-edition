@@ -4050,7 +4050,7 @@
         <characteristicType name="INV" id="a951-a772-7ce0-0b64"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Ranged Weapon" id="c591-09ed-3e6f-eb2b" hidden="false" sortIndex="10">
+    <profileType name="Ranged Weapon" id="c591-09ed-3e6f-eb2b" hidden="false" sortIndex="11">
       <characteristicTypes>
         <characteristicType name="R" id="cdb0-8654-6840-1037"/>
         <characteristicType name="FP" id="5037-1f27-1790-e355"/>
@@ -4061,7 +4061,7 @@
         <characteristicType name="Traits" id="1247-79d2-6cc1-8a03"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Melee Weapon" id="3587-6dcd-005c-c263" hidden="false" sortIndex="11">
+    <profileType name="Melee Weapon" id="3587-6dcd-005c-c263" hidden="false" sortIndex="12">
       <characteristicTypes>
         <characteristicType name="IM" id="6eec-4093-f946-1014"/>
         <characteristicType name="AM" id="03d0-6094-84f0-e27e"/>
@@ -4072,7 +4072,7 @@
         <characteristicType name="Traits" id="76e3-c188-bc65-3467"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Reaction" id="c14c-ecfd-ea65-58c9" hidden="false" sortIndex="14">
+    <profileType name="Reaction" id="c14c-ecfd-ea65-58c9" hidden="false" sortIndex="15">
       <characteristicTypes>
         <characteristicType name="Description" id="5d02-0e54-0f6a-0f0b"/>
       </characteristicTypes>
@@ -4089,13 +4089,13 @@
         <characteristicType name="Transport Capacity" id="a82e-858c-9aa9-2b43"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Wargear" id="5ec5-e0c3-1701-6f16" hidden="false" sortIndex="12">
+    <profileType name="Wargear" id="5ec5-e0c3-1701-6f16" hidden="false" sortIndex="13">
       <characteristicTypes>
         <characteristicType name="Summary" id="8e7d-a0ae-fd85-983c"/>
         <characteristicType name="Description" id="9944-2f6d-d61b-03b5"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Warlord Trait" id="958f-cc14-b252-7179" hidden="false" sortIndex="13">
+    <profileType name="Warlord Trait" id="958f-cc14-b252-7179" hidden="false" sortIndex="14">
       <characteristicTypes>
         <characteristicType name="Description" id="8086-8fe7-1456-e180"/>
       </characteristicTypes>
@@ -4107,7 +4107,7 @@
         <characteristicType name="Effect" id="bbd3-5482-ed3a-a3b3"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Traits" id="d5a9-9164-1e30-7a35" hidden="false" sortIndex="9">
+    <profileType name="Traits" id="d5a9-9164-1e30-7a35" hidden="false" sortIndex="10">
       <characteristicTypes>
         <characteristicType name="Description" id="d5eb-0b8b-0f26-6233"/>
       </characteristicTypes>
@@ -4163,6 +4163,16 @@
         <characteristicType name="Exposed Armour" id="4a56-a48e-e6db-05b4"/>
         <characteristicType name="HP" id="5f7d-4f9b-8d00-8dd7"/>
         <characteristicType name="Transport Capacity" id="7df3-dabd-eed0-50bf"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Gambit" id="df8e-835f-fa09-50cc" hidden="false" sortIndex="18">
+      <characteristicTypes>
+        <characteristicType name="Description" id="dd3f-b398-bc17-e4ac"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Special Rules" id="9d66-ed77-3c90-a25b" hidden="false" sortIndex="9">
+      <characteristicTypes>
+        <characteristicType name="Description" id="ee6a-0563-dbb9-272a"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -4277,6 +4287,9 @@
     <rule name="Vehicle Unit Type" id="3fc1-3428-792e-2703" hidden="false"/>
     <rule name="Heavy Unit Sub-type" id="7d35-4d6f-c4fe-4aac" hidden="false"/>
     <rule name="Sergeant Unit Sub-type" id="de7e-d90d-ffb6-c740" hidden="false"/>
+    <rule name="Paragon Unit Type" id="d1a6-a8d5-b852-8ca3" hidden="false"/>
     <rule name="Command Unit Sub-type" id="7b6d-2e0d-8659-252d" hidden="false"/>
+    <rule name="Unique Unit Sub-type" id="13b4-e4fd-1a81-99b3" hidden="false"/>
+    <rule name="Automata Unit Type" id="c80a-c334-e888-5763" hidden="false"/>
   </sharedRules>
 </gameSystem>
