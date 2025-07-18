@@ -819,6 +819,13 @@ Until the end of the first Battle Turn of the Battle, whenever the Controlling P
               <characteristics>
                 <characteristic name="Description" typeId="ee6a-0563-dbb9-272a">Prosperine Sorcery</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="append" value="Sire of the Thousand Sons" field="ee6a-0563-dbb9-272a" join=", ">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf2e-fa27-23ce-7502" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
             <profile name="Biomantic Slam" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="4148-d052-395b-e838">
               <characteristics>
@@ -1287,6 +1294,13 @@ Immovable Force (Telekinesis Discipline)</description>
           <characteristics>
             <characteristic name="Description" typeId="ee6a-0563-dbb9-272a">Bulky (2), Implacable Advance, Slow and Purposeful, Vanguard (3)</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="append" value="Sire of the Thousand Sons" field="ee6a-0563-dbb9-272a" join=", ">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf2e-fa27-23ce-7502" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -1497,6 +1511,13 @@ Immovable Force (Telekinesis Discipline)</description>
           <characteristics>
             <characteristic name="Description" typeId="ee6a-0563-dbb9-272a">Warriors of the Khenetai</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="append" value="Sire of the Thousand Sons" field="ee6a-0563-dbb9-272a" join=", ">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf2e-fa27-23ce-7502" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="Bladeweaving" typeId="d59e-df4b-630f-f185" typeName="Psychic Reaction" hidden="false" id="8efd-a0ab-75fb-c62a">
           <characteristics>
@@ -1588,6 +1609,13 @@ The &apos;Khenetai&apos; Trait</description>
               <characteristics>
                 <characteristic name="Description" typeId="ee6a-0563-dbb9-272a">Bulky (4), Explodes (5+), Implacable Advance</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="append" value="Sire of the Thousand Sons" field="ee6a-0563-dbb9-272a" join=", ">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf2e-fa27-23ce-7502" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <entryLinks>
@@ -1783,6 +1811,13 @@ The &apos;Khenetai&apos; Trait</description>
               <characteristics>
                 <characteristic name="Description" typeId="ee6a-0563-dbb9-272a">Bulky (4), Explodes (6+), Psychic Conduit, Implacable Advance, Firestorm, Firing Protocols (3)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="append" value="Sire of the Thousand Sons" field="ee6a-0563-dbb9-272a" join=", ">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf2e-fa27-23ce-7502" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <entryLinks>
@@ -1996,7 +2031,7 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
         <infoLink name=" Prosperine Arcana" id="d0e9-6d17-a432-1aa2" hidden="false" type="rule" targetId="4af2-be40-b027-468a"/>
       </infoLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Sehkmet Heavy Weapons" id="a337-e1c1-1db1-ee00" hidden="false" collective="true">
+    <selectionEntryGroup name="Heavy Weapons" id="a337-e1c1-1db1-ee00" hidden="false" collective="true">
       <constraints>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7b36-12da-ed73-5556" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="c5a4-8dfe-5b4c-eef2" shared="true" id="8621-6de5-19c2-511a" includeChildSelections="true" includeChildForces="true"/>
@@ -2118,9 +2153,8 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
       <description>Until the end of the first Battle Turn of the Battle, whenever the Controlling Player of a Model with this Special Rule makes a Manifestation Check for a Unit that only includes Models with the Thousand Sons Trait, they may roll three Dice and select any two to determine the result.</description>
     </rule>
     <rule name="Prosperine Arcana" id="4af2-be40-b027-468a" hidden="false">
-      <description>If a Model Manifesting a Psychic Power, Psychic Weapon or Psychic Reaction gained from a Prosperine Arcana suffers the effects of Perils ofthe Warp, do not roll on the Perils of the Warp table. Instead, the Unit suffers D3 wounds, each with an AP of 2 and a Damage of1 which ignore all Cover Saves and Damage Mitigation Rolls.
+      <description>If a Model Manifesting a Psychic Power, Psychic Weapon or Psychic Reaction gained from a Prosperine Arcana suffers the effects of Perils of the Warp, do not roll on the Perils of the Warp table. Instead, the Unit suffers D3 wounds, each with an AP of 2 and a Damage of1 which ignore all Cover Saves and Damage Mitigation Rolls.
 Invulnerable Saves may be taken against these wounds as normal and these wounds are allocated as if they were inflicted by a Shooting Attack.
-
 
 If a Unit that has a Prosperine Arcana is granted a Psychic Weapon, only one Model in that Unit may use that Psychic Weapon each time that Unit is selected to make attacks as part of a Shooting Attack or a Combat.</description>
     </rule>
