@@ -38,7 +38,7 @@
             </profile>
             <profile name="Magnus the Red" typeId="9d66-ed77-3c90-a25b" typeName="Special Rules" hidden="false" id="ecac-6bfb-1820-e65e">
               <characteristics>
-                <characteristic name="Description" typeId="ee6a-0563-dbb9-272a">Sire of the Thousand Sons, Bulky (5), Arch-Sorcerer, Shrouded (6+), Battle of the Wills, Eternal Warrior (2)</characteristic>
+                <characteristic name="Description" typeId="ee6a-0563-dbb9-272a">Sire of the Thousand Sons (Magnus), Bulky (5), Arch-Sorcerer, Shrouded (6+), Battle of the Wills, Eternal Warrior (2)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -231,7 +231,7 @@
             </selectionEntry>
           </selectionEntries>
           <rules>
-            <rule name="Sire of the Thousand Sons" id="296d-f17f-b0bf-27f7" hidden="false">
+            <rule name="Sire of the Thousand Sons (Magnus)" id="296d-f17f-b0bf-27f7" hidden="false">
               <description>If a Model with this Special Rule is part of an Army, then the Controlling Player may apply the following additional Special Rules to all Auxiliary, Apex and Primary Detachments that have the same Faction Trait as the Model with this Special Rule:
 If four or more Troops Battlefield Role Slots in the Primary Detachment of this Army are filled with Units which have a Prosperine Arcana, then all Force Organisation Slots with the Troops Battlefield Role in the Primary Detachment are considered Prime Slots.
 Furthermore, if a Model with this Special Rule is part of an Army, then the following Special Rules are granted to all Models with the Thousand Sons Trait in the same Army:
@@ -293,6 +293,13 @@ Until the end of the first Battle Turn of the Battle, whenever the Controlling P
               <characteristics>
                 <characteristic name="Description" typeId="ee6a-0563-dbb9-272a">Arch-Magister of the Corvidae</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="append" value="Sire of the Thousand Sons" field="ee6a-0563-dbb9-272a" join=", ">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf2e-fa27-23ce-7502" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <constraints>
@@ -659,6 +666,13 @@ Until the end of the first Battle Turn of the Battle, whenever the Controlling P
               <characteristics>
                 <characteristic name="Description" typeId="ee6a-0563-dbb9-272a">Infiltrate (9), Magister of Dust</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="append" value="Sire of the Thousand Sons" field="ee6a-0563-dbb9-272a" join=", ">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf2e-fa27-23ce-7502" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <entryLinks>
@@ -2082,7 +2096,7 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf2e-fa27-23ce-7502" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf2e-fa27-23ce-7502" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2103,7 +2117,7 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
     <rule name="Sire of the Thousand Sons" id="eeb4-4067-9bb3-abc2" hidden="false" publicationId="e54c-7040-0f35-d85d">
       <description>Until the end of the first Battle Turn of the Battle, whenever the Controlling Player of a Model with this Special Rule makes a Manifestation Check for a Unit that only includes Models with the Thousand Sons Trait, they may roll three Dice and select any two to determine the result.</description>
     </rule>
-    <rule name=" Prosperine Arcana" id="4af2-be40-b027-468a" hidden="false">
+    <rule name="Prosperine Arcana" id="4af2-be40-b027-468a" hidden="false">
       <description>If a Model Manifesting a Psychic Power, Psychic Weapon or Psychic Reaction gained from a Prosperine Arcana suffers the effects of Perils ofthe Warp, do not roll on the Perils of the Warp table. Instead, the Unit suffers D3 wounds, each with an AP of 2 and a Damage of1 which ignore all Cover Saves and Damage Mitigation Rolls.
 Invulnerable Saves may be taken against these wounds as normal and these wounds are allocated as if they were inflicted by a Shooting Attack.
 
