@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -2572,6 +2572,38 @@
             </modifier>
           </modifiers>
         </forceEntry>
+        <forceEntry name="Auxiliary - Primacy Wing" id="b86b-981d-9aab-5675" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9a22-d01f-ab5c-ec07" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9a22-d01f-ab5c-ec07" shared="true"/>
+                  </conditions>
+                  <comment>EC</comment>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Retinue" hidden="false" id="0519-2a37-5f9e-72de" targetId="a38e-50ff-310f-f19e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bf4-b937-d2e5-6e26"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Elites" hidden="false" id="2eae-b50c-fba3-2fad" targetId="5d5e-958f-e388-50b5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0961-9ba3-d9db-ae70"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Fast Attack" hidden="false" id="9a30-4f70-50fa-2200" targetId="cf96-8891-3f9a-8921">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1941-e677-3709-8d3d"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+        </forceEntry>
       </forceEntries>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="dae8-8a74-0984-6332" includeChildSelections="false"/>
@@ -3948,6 +3980,38 @@
               <comment>Visible to all factions</comment>
             </modifier>
           </modifiers>
+        </forceEntry>
+        <forceEntry name="Auxiliary - Primacy Wing" id="523a-f6b1-5daf-ecb9" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9a22-d01f-ab5c-ec07" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9a22-d01f-ab5c-ec07" shared="true"/>
+                  </conditions>
+                  <comment>EC</comment>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Retinue" hidden="false" id="f74a-93c0-6ba8-8c9a" targetId="a38e-50ff-310f-f19e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e0a-8634-21c1-d103"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Elites" hidden="false" id="7753-2aca-82e2-1c98" targetId="5d5e-958f-e388-50b5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de1b-7ca2-67e9-daa1"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Fast Attack" hidden="false" id="d089-c415-39b6-dd55" targetId="cf96-8891-3f9a-8921">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2390-2f80-7f49-e06b"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
         </forceEntry>
       </forceEntries>
     </forceEntry>
