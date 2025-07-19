@@ -2,7 +2,6 @@
 <catalogue library="true" id="a159-1624-dbac-7af8" name="Mech Library" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
     <rule name="Aegis of Pain" id="2cfa-42a7-e9c8-6000" hidden="false"/>
-    <rule name="Armour-Breaker (X)" id="0123-7b92-9681-133a" hidden="false"/>
     <rule name="Battle Meditation" id="853e-e83f-4e01-5609" hidden="false"/>
     <rule name="Compact" id="af84-8623-a6f4-ecdb" hidden="false"/>
     <rule name="Comptroller (X)" id="4f9a-f2b3-093e-da11" hidden="false"/>
@@ -26,9 +25,6 @@
     <selectionEntry type="upgrade" import="true" name="Lightning cannon" hidden="false" id="fae1-04cd-0971-ee22"/>
     <selectionEntry type="upgrade" import="true" name="Twin archaeotech pistols" hidden="false" id="e4a5-b85a-1a93-6368"/>
     <selectionEntry type="upgrade" import="true" name="Twin rotor cannon" hidden="false" id="8346-d5be-e159-326d"/>
-    <selectionEntry type="upgrade" import="true" name="Kytan gatling cannon" hidden="false" id="71e3-f615-5939-3b75"/>
-    <selectionEntry type="upgrade" import="true" name="Scorpion cannon" hidden="false" id="218b-c73d-a80f-edcc"/>
-    <selectionEntry type="upgrade" import="true" name="Butcher cannon" hidden="false" id="37b3-749b-806a-7e34"/>
     <selectionEntry type="upgrade" import="true" name="Twin maxima bolters" hidden="false" id="73ca-3919-fc33-5415"/>
     <selectionEntry type="upgrade" import="true" name="Mauler bolt cannon" hidden="false" id="ec2c-185f-3e9e-7ccd"/>
     <selectionEntry type="upgrade" import="true" name="Twin mauler bolt cannon" hidden="false" id="f55e-5279-ca20-3a9b"/>
@@ -52,9 +48,6 @@
     <selectionEntry type="upgrade" import="true" name="Karacnos mortar battery" hidden="false" id="df6d-6b6e-feb8-e5f5"/>
     <selectionEntry type="upgrade" import="true" name="Volkite incinerator" hidden="false" id="7d55-4e92-9772-9a5f"/>
     <selectionEntry type="upgrade" import="true" name="Volkite veuglaire" hidden="false" id="fd48-6c5b-4ac5-2a8f"/>
-    <selectionEntry type="upgrade" import="true" name="Despoiler cannon" hidden="false" id="0b35-e33f-27b3-6b21"/>
-    <selectionEntry type="upgrade" import="true" name="Twin hellmaw cannon" hidden="false" id="712c-593f-399e-3901"/>
-    <selectionEntry type="upgrade" import="true" name="Soulburner petard" hidden="false" id="ada3-c040-b291-882e"/>
     <selectionEntry type="upgrade" import="true" name="Impaler harpoon" hidden="false" id="ad3b-9e14-43f4-6bb3"/>
     <selectionEntry type="upgrade" import="true" name="Graviton ram" hidden="false" id="ff87-51ad-f64f-85a9"/>
     <selectionEntry type="upgrade" import="true" name="Scyllax combat array" hidden="false" id="6668-e7b9-b720-e5a9" collective="false"/>
@@ -65,14 +58,33 @@
     <selectionEntry type="upgrade" import="true" name="Dendrite talons" hidden="false" id="5a33-b483-64cb-9853"/>
     <selectionEntry type="upgrade" import="true" name="Paired Gyges siege claws" hidden="false" id="9406-f4d1-d2ac-c664"/>
     <selectionEntry type="upgrade" import="true" name="Gyges siege claws" hidden="false" id="8026-777a-5e74-7952"/>
-    <selectionEntry type="upgrade" import="true" name="Decimator claw" hidden="false" id="4558-5a9c-fa1b-e27c"/>
     <selectionEntry type="upgrade" import="true" name="Slaughterer blades" hidden="false" id="a0b4-c592-01f4-c5a7"/>
-    <selectionEntry type="upgrade" import="true" name="Hellcrusher claws" hidden="false" id="c415-d66d-47b9-cf29"/>
-    <selectionEntry type="upgrade" import="true" name="The Vodian Sceptre" hidden="false" id="9c53-20f4-b5da-59df"/>
-    <selectionEntry type="upgrade" import="true" name="Scorian talons" hidden="false" id="801c-fb69-20cf-4a09"/>
     <selectionEntry type="upgrade" import="true" name="Servo-harness" hidden="false" id="a71c-d284-cb63-869e"/>
     <selectionEntry type="upgrade" import="true" name="Pair of Ursarax fists" hidden="false" id="2283-f91c-ed2b-72ab"/>
     <selectionEntry type="upgrade" import="true" name="Lightning gun w/Chain Bayonet" hidden="false" id="bd7e-0109-83d2-ca59"/>
+    <selectionEntry type="upgrade" import="true" name="Decimator claw" hidden="false" id="711e-da62-be5d-72b5">
+      <profiles>
+        <profile name="Decimator claw" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="825e-6bbe-65eb-5d32">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+), Armourbane)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="dd8b-c59f-4868-e6ac" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Armourbane" id="74de-47b7-2758-17c3" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Cybertheurgist" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="e4bc-7baa-05c4-6945">
@@ -137,5 +149,9 @@
     <categoryEntry name="Malagra" id="eba5-3e47-aa06-65fe" hidden="false"/>
     <categoryEntry name="Macrotek" id="1ec3-1433-658a-f04e" hidden="false"/>
     <categoryEntry name="Heterodoxists" id="a660-a2a5-eef3-2fbc" hidden="false"/>
+    <categoryEntry name="Malefic" id="4ce3-259e-52e5-94bd" hidden="false"/>
   </categoryEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Special Rules" id="02c6-8592-a435-b590" targetId="106b-693b-99f2-00c3"/>
+  </catalogueLinks>
 </catalogue>
