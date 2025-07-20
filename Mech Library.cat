@@ -1,24 +1,139 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="true" id="a159-1624-dbac-7af8" name="Mech Library" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
-    <rule name="Aegis of Pain" id="2cfa-42a7-e9c8-6000" hidden="false"/>
-    <rule name="Battle Meditation" id="853e-e83f-4e01-5609" hidden="false"/>
-    <rule name="Compact" id="af84-8623-a6f4-ecdb" hidden="false"/>
-    <rule name="Comptroller (X)" id="4f9a-f2b3-093e-da11" hidden="false"/>
-    <rule name="Command Throne" id="7de3-19ab-bd3b-cf37" hidden="false"/>
-    <rule name="Limited Autonomy" id="0127-9c75-45c7-9b42" hidden="false"/>
-    <rule name="Master of Machines" id="9470-0220-efcc-1c3d" hidden="false"/>
-    <rule name="Phased Refractor Shields" id="a3a3-a3e8-da13-56c1" hidden="false"/>
-    <rule name="Repair Automata" id="1394-90c6-4f63-e2ed" hidden="false"/>
-    <rule name="Rite of Pure Thought" id="b587-c418-b46f-e5f8" hidden="false"/>
-    <rule name="Shock Ram" id="7581-8ef0-5cd9-4b0e" hidden="false"/>
+    <rule name="Aegis of Pain" id="2cfa-42a7-e9c8-6000" hidden="false">
+      <description>I Unit made up of Models with the Reductor Trait gain bonuses when they have Cybertheurgic Statuses.
+
+
+All Models in a Unit composed entirely of Models with this Special Rule and the Reductor Trait gain the Fear (1) Special Rule while any model in the Unit that includes any Models with this Special Rule already has any variant of the Fear (X) Special Rule, then this Special Rule has no effect and does not stack with or otherwise improve any existing variant of the Fear (X) Special Rule that any Model in the Unit has.</description>
+    </rule>
+    <rule name="Battle Meditation" id="853e-e83f-4e01-5609" hidden="false">
+      <description>A Model with this Special Rule gains bonuses when engaged in a Challenge.
+
+
+A Model with this Special Rule gains the Feel No Pain (6+) Special Rule when engaged in a Challenge. If the enemy Model in the same Challenge has a Weapon Skill Characteristic equal to or greater than that of the Model with this Special Rule then the Model with this Special Rule instead gains the Feel No Pain (5+) Special Rule. If the Model with this Special Rule already has a variant of the Feel No Pain (X) Special Rule then this Special Rule has no effect and does not stack with or improve the existing variant of the Feel No Pain (X) Special Rule.</description>
+    </rule>
+    <rule name="Compact" id="af84-8623-a6f4-ecdb" hidden="false">
+      <description>A Model with this Special Rule may Embark or Disembark from a Transport, even if its Type would normally stop it from doing so.
+
+
+A Model with this Special Rule may Embark and Disembark from a Model with the Transport Sub-Type as though it had the Infantry Type. This does not replace its existing Type or grant it any other benefits of the Infantry Type, nor allow it to interact with other Rules or Special Rules that target or affect the Infantry Type.</description>
+    </rule>
+    <rule name="Comptroller (X)" id="4f9a-f2b3-093e-da11" hidden="false">
+      <description>If a Model with this Special Rule is part of a Unit then it can score more Victory Points for holding an Objective.
+
+
+The number of Victory Points scored when a Unit that includes a Model with this Special Rule controls an Objective is increased by the value of X attached to this variant of the Special Rule. This Special Rule has no effect and no bonus Victory Points are scored if any of the following are true:
+
+
+• The Unit controlling the Objective includes any Models with a different Faction to that or the Model with this Special Rule.
+• The majority of Models in the Unit controlling the Objective have the Command, Specialist or Champion Sub-Types.
+
+
+If Models with multiple variants of this Special Rule are part of the same Unit, then the values of X do not stack and only the highest value is used.</description>
+    </rule>
+    <rule name="Command Throne" id="7de3-19ab-bd3b-cf37" hidden="false">
+      <description>A Model with this Special Rule can reduce the costs of Reactions declared by the Controlling Player.
+
+
+If a Reaction is declared for a Unit that includes a majority of Models with any variant of the Mechanicum Trait, then the Controlling Player of the Reacting Unit may choose to make an Intelligence Check for any one Friendly Model with this Special Rule that is on the Battlefrield - referred to here as the &apos;Commanding Model&apos;. The following modifiers are applied to the Commanding Model&apos;s Intelligence Check:
+
+
+• If the Reacting Unit is not in Line of Sight of the Commanding Model, modify the result of the Check by +4.
+• If all Models in the Reacting Unit are more then 12&quot; from the Commanding Model modify the result of the Check by +2.
+• If the Reacting Unit includes a nuncio-vox or command vox relay then modify the result of the check by -1.
+
+
+If the Check is Successful then the Reaction declared has its cost reduced by 1 (to a minimum of 0). If the Check is failed then the Unit that includes the Commanding Model suffers Cybertheurgic Feedback.
+
+
+Once a reaction has had its cost reduced due the the effects of this Special Rule no further rolls may be made by any Models with this Special Rule to reduce the cost of any further Reactions made in the same Player Turn.</description>
+    </rule>
+    <rule name="Limited Autonomy" id="0127-9c75-45c7-9b42" hidden="false">
+      <description>Models with this Special Rule need a commander to move or attack.
+
+
+A Unit that includes any Models with this Special Rule that does not also include a Model with the Command Sub-Type or Sergeant Sub-Type, may not move in the Movement Phase, making Shooting Attacks in the Shooting Phase or Charge in the Assault Phase - but fights as normal if charged or part of an ongoing Combat.</description>
+    </rule>
+    <rule name="Master of Machines" id="9470-0220-efcc-1c3d" hidden="false">
+      <description>A Model with this Special Rule can join Units of Automata.
+
+
+A Model with this Special Rule may join a Friendly Unit that includes Models with the Automata Type.</description>
+    </rule>
+    <rule name="Phased Refractor Shields" id="a3a3-a3e8-da13-56c1" hidden="false">
+      <description>A Model with this Special Rule improves their Invulnerable Save against Shooting Attacks.
+
+
+When the Controlling Player of a Model with this Special Rule chooses to make an Invulnerable Save for that Model against a wound generated by a Shooting Attack, that Invulnerable Save is improved by one step. For example, a Model with a 6+ Invulnerable Save Characteristic and this Special Rule that makes an Invulnerable saving throw against a wound inflicted by a Shooting Attack would have its Invulnerable Save Characteristic improved to a 5+ for that roll.</description>
+    </rule>
+    <rule name="Repair Automata" id="1394-90c6-4f63-e2ed" hidden="false">
+      <description>A Unit that includes Models with this Special Rule may attempt to repair certain Models as if it was a single Model with the Battlesmith (X) Special Rule.
+
+
+A Unit that includes one of more Models with this Special Rule may be used to activate the Battlesmith (X) Special Rule as if it was a single Model with that Special Rule. When activating the Battlesmith (X) Special Rule for a Unit that includes one of more Models with the Repair Automata Special Rule, select one Model in the Unit with the Repair Automata Special Rule to be the Acting Model and determine the value of X for this use of the Battlesmith (X) Special Rule based on the number of Models in the Unit with the Repair Automata Special Rule using the table below:
+
+
+Number of Models = Value of X
+1-4 = 1
+5-8 = 2
+9-12 = 3</description>
+    </rule>
+    <rule name="Rite of Pure Thought" id="b587-c418-b46f-e5f8" hidden="false">
+      <description>A Model with this Special Rule may not make Reactions of Volley Attacks and suffers other limitations.
+
+
+A Model with this Special Rule may never make Reactions of any kind, make Volley Attacks or select any options other than Hold, Fall Back or Consolidate in the Resolution Sub-Phase. A Unit composed of a majority of Models with this Special Rule does not take Leadership Checks due to Models lost to a Shooting Attack, but does still make Checks due to the Panic (X) Special Rule. Furthermore, when Locked in Combat, no Combat Resolution Points are scored by any Player when a Model with this Special Rule is Removed as a Casualty.</description>
+    </rule>
+    <rule name="Shock Ram" id="7581-8ef0-5cd9-4b0e" hidden="false">
+      <description>A Vehicle with this Special Rule inflicts more damage when it moves thought enemy Units.
+
+
+When the Model with this Special Rule and the Vehicle Type moves through an enemy Unit, the number of Hits inflicted is increased from D6 to D6+3. Furthermore, if the Reactive Player declares a Death or Glory Reacting with a Vehicle that has this Special Rule as the target, then the Vehicle with this Special Rule gains a 6+ Invulnerable save against all Hits inflicted as part of that Reaction.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Corposant stave" hidden="false" id="38c9-56fb-0a27-4b1a"/>
-    <selectionEntry type="upgrade" import="true" name="Machinator array" hidden="false" id="4453-7c1d-15ff-f22c"/>
+    <selectionEntry type="upgrade" import="true" name="Machinator array" hidden="false" id="4453-7c1d-15ff-f22c">
+      <profiles>
+        <profile name="Machinator array" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="054c-7251-9bfa-c116">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">A Model with a machinator array can use the Battlesmith (X) Special Rule twice in the same Turn.</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">Each time the Controlling Player of a Model with a machinator array chooses to make use of the Battlesmith (X) Special Rule for that Model, it may be used twice - with each usage of the Special Rule targeting the same or different target Units as chosen by the Controlling Player and may apply different effects (all targets chosen must be valid targets). If a player chooses to apply the effects of a Machinator Array and makes two Battlesmith actions then neither of those actions may be modified by the effects of a servo-arm and use only the base value of the Model&apos;s Battlesmith (X) Special Rule to determine their effect.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e8e-dddf-c369-64ca"/>
+      </constraints>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Maxima bolter" hidden="false" id="350a-3713-d175-ab09"/>
-    <selectionEntry type="upgrade" import="true" name="Rad furnace" hidden="false" id="e269-7996-f41f-b892"/>
-    <selectionEntry type="upgrade" import="true" name="Flare Shield" hidden="false" id="988f-36eb-7aa2-9ef4"/>
+    <selectionEntry type="upgrade" import="true" name="Rad furnace" hidden="false" id="e269-7996-f41f-b892">
+      <profiles>
+        <profile name="Rad furnace" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="0c55-0abd-a85c-9e0b">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">A Model with a rad Furnace reduces the enemy&apos;s Toughness while Locked in Combat</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">Any model, friendly or enemy, that is part of a Combat that includes one of more Models with a rad furnace must reduce its Toughness Characteristic by 1 while a part of that Combat in the Fight Sub-Phase. This reduction is not cumulative with the effects of the Phase (X) Special Rule. Models with a rad furnace, the Automata Type or Cybernetica Trait are unaffected and do not reduce their Toughness Characteristic. Additionally, a Unit that is composed of a majority of Models with rad furnaces does not reduce any Characteristics due to the effects of the Phase (X) Special Rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec7f-b557-491a-4c2a"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Flare Shield" hidden="false" id="988f-36eb-7aa2-9ef4">
+      <profiles>
+        <profile name="Flare Shield" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="3767-71da-81e4-3cae">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">Attacks which hit a Model with a flare shield gain no benefit from the Armourbane Special Rule.</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">When Making Armour Penetration Tests against a Model with a flare shield, no Weapon may make use of the Armourbane Special Rules.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26e1-4cfc-5563-5d14"/>
+      </constraints>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lightning gun" hidden="false" id="9b86-e05d-8ce5-ab8b"/>
     <selectionEntry type="upgrade" import="true" name="Arc blaster" hidden="false" id="e8bd-5972-dafc-783e"/>
     <selectionEntry type="upgrade" import="true" name="Lightning lock" hidden="false" id="d22a-d9bc-ed06-1a7f"/>
