@@ -852,17 +852,37 @@
             </entryLink>
           </entryLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Scyllax combat array" hidden="false" id="6668-e7b9-b720-e5a9" collective="false" sortIndex="4">
+          <profiles>
+            <profile name="Scyllax combat array" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="38cc-880d-ecaa-9a36">
+              <characteristics>
+                <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+                <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+                <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+                <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+                <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+)</characteristic>
+                <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Breaching (X)" id="d2ac-ec56-858f-d701" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+              <modifiers>
+                <modifier type="set" value="Breaching (5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38ef-3886-8e77-37bb"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6484-309c-763f-8f69"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Rad furnace" hidden="false" id="695e-1dd4-98e1-ad3e" type="selectionEntry" targetId="e269-7996-f41f-b892" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cb21-c81c-a732-d428"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Scyllax combat array" hidden="false" id="8297-c25f-8d54-41fc" type="selectionEntry" targetId="6668-e7b9-b720-e5a9" sortIndex="4">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38ef-3886-8e77-37bb"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6484-309c-763f-8f69"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Mechanicum - Sub-faction" hidden="false" id="3f36-ef37-6adb-409e" type="selectionEntryGroup" targetId="ce61-2d74-5519-70bf" sortIndex="2"/>
@@ -1194,18 +1214,39 @@
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Domitar fists" hidden="false" id="d399-d1a3-0440-dbb8" sortIndex="4">
+          <profiles>
+            <profile name="Domitar fists" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="148f-4600-4d27-5121">
+              <characteristics>
+                <characteristic name="IM" typeId="6eec-4093-f946-1014">-1</characteristic>
+                <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+1</characteristic>
+                <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+                <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+                <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+), Armourbane</characteristic>
+                <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Armourbane" id="d236-571f-42eb-d253" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+            <infoLink name="Breaching (X)" id="2146-177a-e93b-09e6" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+              <modifiers>
+                <modifier type="set" value="Breaching (5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3be4-b3c5-4e66-9edd"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f62-c9e0-004d-2dff"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Cyclone missile launcher" hidden="false" id="c037-028a-8ad1-ecf1" type="selectionEntry" targetId="b341-159d-9dfb-ff31" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a3b-bc37-0ae2-36ac"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d3e-2c72-7b8d-2978"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Domitar fists" hidden="false" id="ca14-2e1a-d52c-d15d" type="selectionEntry" targetId="d399-d1a3-0440-dbb8" sortIndex="4">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3be4-b3c5-4e66-9edd"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f62-c9e0-004d-2dff"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Graviton hammers" hidden="false" id="998d-5c50-fafa-b052" type="selectionEntry" targetId="39bd-daf2-8118-1611" sortIndex="3">
@@ -2079,22 +2120,55 @@
           </costs>
           <selectionEntryGroups>
             <selectionEntryGroup name="Claws or Fists:" id="0fde-8c73-929e-6366" hidden="false" defaultSelectionEntryId="310e-efba-0331-5e65">
-              <entryLinks>
-                <entryLink import="true" name="Pair of Ursarax claws" hidden="false" id="310e-efba-0331-5e65" type="selectionEntry" targetId="76ae-765a-63ec-2a3b" sortIndex="1">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f255-2156-137b-442d"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Pair of Ursarax fists" hidden="false" id="e790-45d6-587e-339f" type="selectionEntry" targetId="2283-f91c-ed2b-72ab" sortIndex="2">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84a4-28a0-8267-586d"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9cc-62b1-6ee9-cb4a"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aed2-6e44-718c-5348"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Pair of Ursarax claws" hidden="false" id="76ae-765a-63ec-2a3b" sortIndex="1">
+                  <profiles>
+                    <profile name="Pair of Ursarax claws" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="6019-95c6-e43f-c81f">
+                      <characteristics>
+                        <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+                        <characteristic name="AM" typeId="03d0-6094-84f0-e27e">+3</characteristic>
+                        <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+                        <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+                        <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+                        <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+)</characteristic>
+                        <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Breaching (X)" id="8990-d10b-d231-8e1e" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+                      <modifiers>
+                        <modifier type="set" value="Breaching (6+)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f255-2156-137b-442d"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Pair of Ursarax fists" hidden="false" id="2283-f91c-ed2b-72ab">
+                  <profiles>
+                    <profile name="Pair of Ursarax fists" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="72a5-dace-c6be-bd9c">
+                      <characteristics>
+                        <characteristic name="IM" typeId="6eec-4093-f946-1014">-2</characteristic>
+                        <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                        <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
+                        <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+                        <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+                        <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">-</characteristic>
+                        <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d23-0df2-6ae0-ca10"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <selectionEntries>
@@ -2505,12 +2579,12 @@
                   <entryLinks>
                     <entryLink import="true" name="Volkite veuglaire" hidden="false" id="eb2c-7500-298e-6f94" type="selectionEntry" targetId="fd48-6c5b-4ac5-2a8f" sortIndex="2">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="083f-db6b-e9b1-0abd"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="083f-db6b-e9b1-0abd"/>
                       </constraints>
                     </entryLink>
                     <entryLink import="true" name="Lightning lock" hidden="false" id="3d25-f09c-4211-6988" type="selectionEntry" targetId="d22a-d9bc-ed06-1a7f" sortIndex="3">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b37-d8d9-f794-702d"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2b37-d8d9-f794-702d"/>
                       </constraints>
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
@@ -2518,18 +2592,10 @@
                     </entryLink>
                     <entryLink import="true" name="Graviton pulsar" hidden="false" id="7be6-c0ad-6975-64a7" type="selectionEntry" targetId="bc2f-0d66-62c3-9494" sortIndex="4">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2563-140c-8343-7eec"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2563-140c-8343-7eec"/>
                       </constraints>
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Moirax conversion beamer" hidden="false" id="f3b8-7a41-8424-a35d" type="selectionEntry" targetId="63bc-df52-e94e-6acf" sortIndex="5">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b94e-fb13-dea5-ab1b"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                       </costs>
                     </entryLink>
                   </entryLinks>
@@ -2552,6 +2618,68 @@
                           </constraints>
                         </entryLink>
                       </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Moirax conversion beamer" hidden="false" id="63bc-df52-e94e-6acf" sortIndex="5">
+                      <profiles>
+                        <profile name="2) Moirax conversion beamer &lt;15" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="5dc7-e30a-81a3-994b">
+                          <characteristics>
+                            <characteristic name="R" typeId="cdb0-8654-6840-1037">&lt;15</characteristic>
+                            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+                            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+                            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+                            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+                            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (RS), Blast (3&quot;), Suppressive (1)</characteristic>
+                            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Conversion</characteristic>
+                          </characteristics>
+                        </profile>
+                        <profile name="1) Moirax conversion beamer 15-30" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="7924-445d-0b5a-2ea7">
+                          <characteristics>
+                            <characteristic name="R" typeId="cdb0-8654-6840-1037">15-30</characteristic>
+                            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+                            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">7</characteristic>
+                            <characteristic name="AP" typeId="7a23-0248-2b94-5951">3</characteristic>
+                            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
+                            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (RS), Blast (3&quot;), Suppressive (1)</characteristic>
+                            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Conversion</characteristic>
+                          </characteristics>
+                        </profile>
+                        <profile name="3) Moirax conversion beamer &gt;30-45" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="6ea2-6cb6-2e09-234d">
+                          <characteristics>
+                            <characteristic name="R" typeId="cdb0-8654-6840-1037">&gt;30-45</characteristic>
+                            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+                            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">8</characteristic>
+                            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+                            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">3</characteristic>
+                            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (RS), Blast (3&quot;), Suppressive (1)</characteristic>
+                            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Conversion</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Blast (X)" id="1aeb-6a6b-5cd6-86f1" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+                          <modifiers>
+                            <modifier type="set" value="Blast (3&quot;)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                        <infoLink name="Heavy (X)" id="6c15-218b-b947-11f6" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
+                          <modifiers>
+                            <modifier type="set" value="Heavy (RS)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                        <infoLink name="Suppressive (X)" id="90c6-356a-b09a-1798" hidden="false" type="rule" targetId="001f-53f3-4d87-4b43">
+                          <modifiers>
+                            <modifier type="set" value="Suppressive (1)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                      </infoLinks>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b94e-fb13-dea5-ab1b"/>
+                      </constraints>
                     </selectionEntry>
                   </selectionEntries>
                   <constraints>
@@ -3250,6 +3378,86 @@
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Vultarax missile-launcher" hidden="false" id="19db-9500-b308-5593" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Vultarax missile-launcher - Airburst" hidden="false" id="ea3b-b3ce-b2b6-54ed">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="67c5-b036-d2cc-c2ed"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="790c-f84a-f5c6-3305"/>
+              </constraints>
+              <profiles>
+                <profile name="Vultarax missile-launcher - Airburst" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="247d-86a9-e8e9-8084">
+                  <characteristics>
+                    <characteristic name="R" typeId="cdb0-8654-6840-1037">36</characteristic>
+                    <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+                    <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+                    <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+                    <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Blast (5&quot;), Phage (T), Panic (0)</characteristic>
+                    <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Rad</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Panic (X)" id="3b4e-4173-2b43-2a59" hidden="false" type="rule" targetId="82a7-f471-3fda-6ca1">
+                  <modifiers>
+                    <modifier type="set" value="Panic (0)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Phage (X)" id="ba18-5fa3-0abb-b409" hidden="false" type="rule" targetId="3e26-d357-69d6-1341">
+                  <modifiers>
+                    <modifier type="set" value="Phage (T)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Blast (X)" id="3715-676b-0d6b-5149" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+                  <modifiers>
+                    <modifier type="set" value="Blast (5&quot;)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Vultarax missile-launcher - Shaped Charge" hidden="false" id="f885-a412-8a12-7712">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe07-9471-69cb-bc0f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b515-d162-cef9-f410"/>
+              </constraints>
+              <profiles>
+                <profile name="Vultarax missile-launcher - Shaped Charge" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="3d78-0a17-a25c-66dc">
+                  <characteristics>
+                    <characteristic name="R" typeId="cdb0-8654-6840-1037">36</characteristic>
+                    <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
+                    <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">10</characteristic>
+                    <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+                    <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
+                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Phage (T), Panic (0), Shock (Stunned)</characteristic>
+                    <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Rad</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Phage (X)" id="e813-72fd-4823-36d1" hidden="false" type="rule" targetId="3e26-d357-69d6-1341">
+                  <modifiers>
+                    <modifier type="set" value="Phage (T)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Panic (X)" id="5c19-3204-5c14-e6da" hidden="false" type="rule" targetId="82a7-f471-3fda-6ca1">
+                  <modifiers>
+                    <modifier type="set" value="Panic (0)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Shock (X)" id="726d-4321-db84-e865" hidden="false" type="rule" targetId="c6fd-28d0-3f80-672c">
+                  <modifiers>
+                    <modifier type="set" value="Shock (Stunned)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="775e-a8ef-ebe4-46f7"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="328d-8198-26c6-1aa5"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Arc blaster" hidden="false" id="5c61-5177-9588-c7cb" type="selectionEntry" targetId="e8bd-5972-dafc-783e" sortIndex="3">
@@ -3262,12 +3470,6 @@
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d2a7-76a6-cf0a-fa22"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="973b-73bf-1043-d082"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Vultarax missile-launcher" hidden="false" id="9a5a-6903-299d-fba5" type="selectionEntry" targetId="19db-9500-b308-5593" sortIndex="3">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="775e-a8ef-ebe4-46f7"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="328d-8198-26c6-1aa5"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Cybernetica" hidden="false" id="2406-9718-d72d-0348" type="selectionEntry" targetId="403d-7806-215e-7676" sortIndex="2">
@@ -3346,37 +3548,38 @@
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
-          <entryLinks>
-            <entryLink import="true" name="Impaler harpoon" hidden="false" id="889a-5652-2f7c-5ac7" type="selectionEntry" targetId="ad3b-9e14-43f4-6bb3" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Impaler harpoon" hidden="false" id="ad3b-9e14-43f4-6bb3" sortIndex="1">
               <profiles>
-                <profile name="Impaler harpoon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="2325-6e3d-d9f4-42ae">
+                <profile name="Impaler harpoon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="8875-5015-ae38-1be4">
                   <characteristics>
                     <characteristic name="R" typeId="cdb0-8654-6840-1037">12</characteristic>
                     <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
                     <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
                     <characteristic name="AP" typeId="7a23-0248-2b94-5951">3</characteristic>
                     <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
-                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Phage (I)</characteristic>
-                    <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03"/>
+                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Phage (T)</characteristic>
+                    <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Assault</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="709a-21b7-0b4d-5636"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="469d-5834-f1a2-cbb1"/>
-              </constraints>
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-              </costs>
               <infoLinks>
-                <infoLink name="Phage (X)" id="6566-4e9f-eedd-cb99" hidden="false" type="rule" targetId="3e26-d357-69d6-1341">
+                <infoLink name="Phage (X)" id="a1a5-0060-61c2-af4b" hidden="false" type="rule" targetId="3e26-d357-69d6-1341">
                   <modifiers>
-                    <modifier type="set" value="Phage (I)" field="name"/>
+                    <modifier type="set" value="Phage (T)" field="name"/>
                   </modifiers>
                 </infoLink>
               </infoLinks>
-            </entryLink>
-          </entryLinks>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dee-8c4d-599e-5978"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
