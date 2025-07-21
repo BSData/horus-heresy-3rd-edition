@@ -3114,6 +3114,7 @@
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="235d-7853-7eef-9afb" primary="false" name="Transport Model Sub-Type"/>
+        <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="ba1e-699b-7a6e-9008" primary="false" name="Vehicle Model Type"/>
       </categoryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="200"/>
@@ -3778,6 +3779,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="1ec3-1433-658a-f04e" id="3987-e395-3463-dc15" primary="false" name="Macrotek"/>
+        <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="ac42-ef6d-9d82-9b1c" primary="false" name="Vehicle Model Type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Karacnos " hidden="false" id="bd29-af9c-378e-28dd" sortIndex="1">
@@ -3871,6 +3873,8 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="1ec3-1433-658a-f04e" id="aa56-7257-07dd-ca02" primary="false" name="Macrotek"/>
+        <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="63de-dd25-a7a5-44fd" primary="false" name="Vehicle Model Type"/>
+        <categoryLink targetId="a5c6-b359-cecb-e0b1" id="0aa8-bbed-a7d5-e5db" primary="false" name="Rapid Sub-Type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Krios" hidden="false" id="3044-7727-3906-2385" sortIndex="1">
@@ -4187,6 +4191,8 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="1ec3-1433-658a-f04e" id="ac8c-1673-9e62-24e3" primary="false" name="Macrotek"/>
+        <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="d9b6-5586-bf5b-e2d9" primary="false" name="Vehicle Model Type"/>
+        <categoryLink targetId="a5c6-b359-cecb-e0b1" id="7116-83d9-5f81-4c2e" primary="false" name="Rapid Sub-Type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Krios" hidden="false" id="4684-1eb3-81a9-48ba" sortIndex="1">
@@ -4309,6 +4315,7 @@
         <categoryLink targetId="4ce3-259e-52e5-94bd" id="e6ac-30e5-c161-9e6b" primary="false" name="Malefic"/>
         <categoryLink targetId="5833-5e86-26bc-0916" id="eafc-bfec-a91f-c96c" primary="false" name="Automata Model Type"/>
         <categoryLink targetId="1e7d-9066-28d2-97a0" id="0544-a818-955b-41d2" primary="false" name="Heavy Model Sub-Type"/>
+        <categoryLink targetId="5555-f37e-8ad0-20c0" id="0303-a6f5-164f-58c1" primary="false" name="Unstoppable Sub-Type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Brass Scorpion" hidden="false" id="675a-e8fa-d577-5f59" sortIndex="1">
@@ -4637,9 +4644,6 @@
 
 While a Model with this Special Rule is engaged in a Challenge, its Controlling Player may select the following Gambit:</description>
             </rule>
-            <rule name="Gambit: Liquifractor Onslaught" id="ff9f-db46-eaff-887b" hidden="false">
-              <description>If this Gambit is selected, then the Controlling Player must roll an additional Dice in the Focus Step and discard the Dice with the highest result before determining the total. However, in the Strike Step the Model for which this Gambit was selected may make a Shooting Attack with the Profile listed below before either Model makes any attacks (the Shooting Attack must target the other Model in the Challenge, with all wounds inflicted allocated to that Model, and is automatically in Line of Sight and counts as a Range of 1).</description>
-            </rule>
           </rules>
           <profiles>
             <profile name="Liquifractor" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="b5c7-edff-89c7-0639">
@@ -4651,6 +4655,12 @@ While a Model with this Special Rule is engaged in a Challenge, its Controlling 
                 <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
                 <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Phage (T &amp; S), Poisoned (2+), Breaching (4+)</characteristic>
                 <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Gambit: Liquifractor Onslaught" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="80c3-d8e0-1ddd-35a1">
+              <characteristics>
+                <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows Draykavac to attack first with the Liquifractor.</characteristic>
+                <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">If this Gambit is selected, then the Controlling Player must roll an additional Dice in the Focus Step and discard the Dice with the highest result before determining the total. However, in the Strike Step the Model for which this Gambit was selected may make a Shooting Attack with the Profile listed below before either Model makes any attacks (the Shooting Attack must target the other Model in the Challenge, with all wounds inflicted allocated to that Model, and is automatically in Line of Sight and counts as a Range of 1).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4842,6 +4852,7 @@ If the check is successful, then the Model with this Special Rule is immediately
         <categoryLink targetId="3252-003d-1181-0f99" id="9cfc-c2ac-b59b-4983" primary="false" name="Archimandrite"/>
         <categoryLink targetId="4ce3-259e-52e5-94bd" id="456a-b33a-92c3-d638" primary="false" name="Malefic"/>
         <categoryLink targetId="5833-5e86-26bc-0916" id="ea06-f6cc-6be4-117f" primary="false" name="Automata Model Type"/>
+        <categoryLink targetId="5555-f37e-8ad0-20c0" id="cbb7-86a5-22d2-c43c" primary="false" name="Unstoppable Sub-Type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Kytan" hidden="false" id="31e1-e321-9549-de41" sortIndex="1">
@@ -5514,13 +5525,6 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Gambit: The Myrmidon&apos;s Path" hidden="false" id="255c-90ef-e8c0-4f1d" sortIndex="4">
-          <rules>
-            <rule name="Gambit: The Myrmidon&apos;s Path" id="77ba-6394-5cde-26a3" hidden="false">
-              <description>When selecting a Gambit, the Controlling Player of a Model with the Myrmidax Trait can select The Myrmidon&apos;s Path instead of any others available to that Model.
-
-If this Gambit is selected, then the Controlling Player must roll an additional Dice in the Focus Step and discard the Dice with the highest result before determining the total. However, in the Strike Step, the Model for which this Gambit was selected may make a Shooting Attack with a single Ranged Weapon that does not have the Blast (X), Template or Barrage Special Rules before either Model makes any attacks. This shooting Attack must target the other Model in the Challenge, with all the wounds inflicted allocated to that Model. For the purpose of making this Shooting Attack, the other Model in the Challenge is always considered to be within Line of Sight and at a range of 1&quot; from the attacking Model.</description>
-            </rule>
-          </rules>
           <costs>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
@@ -5536,19 +5540,16 @@ If this Gambit is selected, then the Controlling Player must roll an additional 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8588-2e06-e4e9-4072"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c723-d8fd-db81-cc1f"/>
           </constraints>
+          <profiles>
+            <profile name="Gambit: The Myrmidon&apos;s Path" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="5065-fdbb-ee5b-7d6a">
+              <characteristics>
+                <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">When selecting a Gambit, the Controlling Player of a Model with the Myrmidax Trait can select The Myrmidon&apos;s Path instead of any others available to that Model.</characteristic>
+                <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">If this Gambit is selected, then the Controlling Player must roll an additional Dice in the Focus Step and discard the Dice with the highest result before determining the total. However, in the Strike Step, the Model for which this Gambit was selected may make a Shooting Attack with a single Ranged Weapon that does not have the Blast (X), Template or Barrage Special Rules before either Model makes any attacks. This shooting Attack must target the other Model in the Challenge, with all the wounds inflicted allocated to that Model. For the purpose of making this Shooting Attack, the other Model in the Challenge is always considered to be within Line of Sight and at a range of 1&quot; from the attacking Model.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Gambit: Power of the Machine Spirit" hidden="false" id="cc6a-f383-7d27-7c27" sortIndex="5">
-          <rules>
-            <rule name="Gambit: Power of the Machine Spirit" id="24d8-64b0-918b-41d9" hidden="false">
-              <description>When selecting a Gambit, the Controlling Player of a Model with the Malagra Trait can select the Power of the Machine Spirit instead of any other available to that Model.
-
-This Gambit may only be selected for a Model with the Malagra Trait. If this Gambit is selected, then the Controlling Player must make an Intelligence Check for the Model for which this Gambit was selected, before the Focus Roll is made for this Challenge. If the Intelligence check is successful then the Controlling Player may use the value of X on the variant of the Battlesmith (X) Special Rule that the Model under their control has to modify one or more of the following Characteristics of that Model.
-• Weaponskill
-• Strength
-• Attacks
-• Initiative</description>
-            </rule>
-          </rules>
           <costs>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
@@ -5564,6 +5565,18 @@ This Gambit may only be selected for a Model with the Malagra Trait. If this Gam
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a28a-b7df-8168-8c27"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d5b-9811-901a-8c6f"/>
           </constraints>
+          <profiles>
+            <profile name="Gambit: Power of the Machine Spirit" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="eda0-465c-3595-e5d7">
+              <characteristics>
+                <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">When selecting a Gambit, the Controlling Player of a Model with the Malagra Trait can select the Power of the Machine Spirit instead of any other available to that Model.</characteristic>
+                <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">This Gambit may only be selected for a Model with the Malagra Trait. If this Gambit is selected, then the Controlling Player must make an Intelligence Check for the Model for which this Gambit was selected, before the Focus Roll is made for this Challenge. If the Intelligence check is successful then the Controlling Player may use the value of X on the variant of the Battlesmith (X) Special Rule that the Model under their control has to modify one or more of the following Characteristics of that Model.
+• Weapon Skill
+• Strength
+• Attacks
+• Initiative</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Prime Advantage: Prime Conveyor" hidden="false" id="5e61-75cf-5a52-a94d" sortIndex="6">
           <rules>
@@ -5857,132 +5870,4 @@ This Gambit may only be selected for a Model with the Malagra Trait. If this Gam
       </categoryLinks>
     </entryLink>
   </entryLinks>
-  <forceEntries>
-    <forceEntry name="Apex - The Hearth of Power" id="0594-4b9b-675b-f633" hidden="false" sortIndex="3">
-      <categoryLinks>
-        <categoryLink name="Retinue" hidden="false" id="c224-b95f-a73a-ea18" targetId="a38e-50ff-310f-f19e">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="15ee-6d6c-95a1-c556" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Troops" hidden="false" id="6193-d328-43af-a157" targetId="88e6-d373-4152-0dd8">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="432d-8f1f-69e5-ae1a" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Prime Troops" hidden="false" id="d328-63f2-eacd-6993" targetId="c3f9-a7f3-984b-3fda">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="4f87-3280-8817-9aa0" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Prime Retinue" hidden="false" id="f067-4ed1-baca-a150" targetId="c66b-ef39-b20f-725b">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="01b3-450e-6e90-b041" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-    </forceEntry>
-    <forceEntry name="Apex - Command Maniple (Needs Prime Support/War-Engine)" id="dbe3-9946-d4de-dc73" hidden="false" sortIndex="4">
-      <categoryLinks>
-        <categoryLink name="Elites" hidden="false" id="0ed6-de35-f804-23a7" targetId="5d5e-958f-e388-50b5">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8b8e-2c6e-7930-733e" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Prime Elites" hidden="false" id="3c7c-3630-9acc-562b" targetId="276f-7a07-a56c-affd">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e97e-ebbe-716f-69c7" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Support" hidden="false" id="bbf6-da5f-87f7-a428" targetId="345f-9ba6-9b02-ed5c">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="68f2-1777-ac43-88ed" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="War-engine" hidden="false" id="08d9-03ab-a94f-20fa" targetId="2499-7239-685f-8465">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="487b-d91d-5d23-8bd7" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-    </forceEntry>
-    <forceEntry name="Apex - The Host of Destruction" id="1db9-6dc0-7da5-e517" hidden="false" sortIndex="6">
-      <categoryLinks>
-        <categoryLink name="Elites" hidden="false" id="81bd-4c80-78a2-86cc" targetId="5d5e-958f-e388-50b5">
-          <constraints>
-            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="ab72-b6c7-109a-0093" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Prime Elites" hidden="false" id="3170-c475-414a-5306" targetId="276f-7a07-a56c-affd">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f3db-6a01-37c5-5b27" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-    </forceEntry>
-    <forceEntry name="Apex - Crux of Judgement" id="4f19-3023-0077-1049" hidden="false" sortIndex="7">
-      <categoryLinks>
-        <categoryLink name="Command" hidden="false" id="7023-93dc-4fda-c76a" targetId="6dbf-654a-f06f-2d69">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="83c4-a1e7-c38c-e164" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-    </forceEntry>
-    <forceEntry name="Apex - Iron Phalanx (Needs Prime Armour/Heavy Transport)" id="a782-7985-325b-1840" hidden="false" sortIndex="8">
-      <categoryLinks>
-        <categoryLink name="Armour" hidden="false" id="08ab-b51f-53b5-8bdb" targetId="643a-1012-bd51-6537">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="5cb2-b22a-d3cc-30d5" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Heavy Transport" hidden="false" id="9ad9-6704-b303-061b" targetId="52d0-8b78-439e-18e5">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="aa4b-9edd-69b6-8369" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-    </forceEntry>
-    <forceEntry name="Apex - Thallax Command Cohort (Needs Prime Support)" id="7f03-c1a3-d883-8a98" hidden="false" sortIndex="9">
-      <categoryLinks>
-        <categoryLink name="Support" hidden="false" id="46b3-d841-3b96-79d0" targetId="345f-9ba6-9b02-ed5c">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="a92e-fe8c-1f4f-78c2" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-    </forceEntry>
-    <forceEntry name="Apex - The Panoply of Cruelty (Needs Prime Heavy Assault)" id="d5e2-3162-f591-6a81" hidden="false" sortIndex="5">
-      <categoryLinks>
-        <categoryLink name="Heavy Assault" hidden="false" id="b6ee-4b0b-f3f4-d9f4" targetId="3235-bd79-e9b1-60fa">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="9bb1-6117-1074-8829" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-    </forceEntry>
-    <forceEntry name="Auxiliary - Tagmata Cohort" id="59b8-2183-4bab-b91c" hidden="false" sortIndex="1">
-      <categoryLinks>
-        <categoryLink name="Support" hidden="false" id="aaf9-4c82-2830-47b6" targetId="345f-9ba6-9b02-ed5c">
-          <constraints>
-            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="ec08-2ba4-b38c-8746" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-    </forceEntry>
-    <forceEntry name="Auxiliary - Apprentice Cadre" id="6e73-e03d-9ae7-fd33" hidden="false" sortIndex="2">
-      <categoryLinks>
-        <categoryLink name="Troops" hidden="false" id="b964-d2eb-562c-17b1" targetId="88e6-d373-4152-0dd8">
-          <constraints>
-            <constraint type="max" value="4" field="selections" scope="force" shared="true" id="d17a-1b20-7ed3-f6b9" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Prime Troops" hidden="false" id="a9b4-9c31-01ac-0c8b" targetId="c3f9-a7f3-984b-3fda">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b649-61e8-62cb-a4b0" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-    </forceEntry>
-  </forceEntries>
 </catalogue>
