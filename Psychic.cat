@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="1b2d-2038-39a7-f387" name="Psychic" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorName="Arkangelmark5" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <profileTypes>
+    <profileType name="Psychic Power" id="9dfb-2fa3-00e7-8cfd" hidden="false" sortIndex="17">
+      <characteristicTypes>
+        <characteristicType name="Summary" id="981f-bb86-6a74-9b20"/>
+        <characteristicType name="Trigger" id="1be9-f118-1cf3-357e"/>
+        <characteristicType name="Focus" id="3f2d-f6e7-e6d3-1f86"/>
+        <characteristicType name="Target" id="2ba0-fbf8-ed6c-3770"/>
+        <characteristicType name="Duration" id="d7d5-5b31-5b37-66c4"/>
+        <characteristicType name="Process" id="3804-b2cf-9f1a-4ff0"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Psychic Reaction" id="d59e-df4b-630f-f185" hidden="false" sortIndex="16">
+      <characteristicTypes>
+        <characteristicType name="Summary" id="c8a8-29f2-605b-5969"/>
+        <characteristicType name="Trigger" id="4e6b-ebca-53df-fcf7"/>
+        <characteristicType name="Cost" id="f25a-9ced-eb9b-4587"/>
+        <characteristicType name="Focus" id="0b45-591a-ee11-488e"/>
+        <characteristicType name="Target" id="cf1d-e201-caac-3d45"/>
+        <characteristicType name="Duration" id="daae-40ac-68e2-fa78"/>
+        <characteristicType name="Process" id="8d43-934e-e511-0cfd"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Biomancy" hidden="false" id="7f0b-3a53-fbba-de05">
+      <profiles>
+        <profile name="Biomantic Slam" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="c5df-010a-1bdd-85c7">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">-3</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">1</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">12</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Armourbane, Force (D)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Melee, Psychic</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Biomantic Rage" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="fe7f-a6ad-b858-a3a0">
+          <characteristics>
+            <characteristic name="Summary" typeId="981f-bb86-6a74-9b20">This Power is used in the Charge Sub-Phase to add a bonus to a Unit&apos;s Strength and Toughness.</characteristic>
+            <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e">The Active Player may choose to Manifest the Biomantic Rage Psychic Power in the Charge Sub-Phase, at Step 4 of the Charge process before any Unit makes a
+Volley Attack.</characteristic>
+            <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86">The Focus of the Power must be a Model with the Biomancer Trait under the Active Player&apos;s control, and must be either part of the Unit making a Charge or within 18&quot; and with Line of Sight to one or more Models in that Unit.</characteristic>
+            <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770">The Target Unit must be the Unit currently selected and in the process of making a Charge.</characteristic>
+            <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4">If successfully Manifested, the effects of this Psychic Power last until the end of the current Assault Phase.</characteristic>
+            <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0">1. Once the Focus and Target Unit have been decided, make a Manifestation Check.
+2. If the Manifestation Check is successful, then no Volley Attack may be made for the Target Unit, but all Models in the Target Unit gain a bonus of +2 to their Strength and Toughness Characteristics.
+3. If the Manifestation Check fails then there is no further effect.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Force (X)" id="9854-0918-be0b-33c9" hidden="false" type="rule" targetId="25cd-60d0-a0a4-6b18">
+          <modifiers>
+            <modifier type="set" value="Force (D)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Armourbane" id="c811-b2a2-d066-a7d9" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+        <infoLink name="Impact (X)" id="7cb6-7869-da43-daa4" hidden="false" type="rule" targetId="6ead-c31c-ab09-2f8c">
+          <modifiers>
+            <modifier type="set" value="Impact (S)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="5339-4a3d-9631-18a4" id="090e-ac4f-0447-d1ac" primary="false" name="Biomancer"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pyromancy" hidden="false" id="b8f6-c7cb-3596-fb48">
+      <profiles>
+        <profile name="Wildfire" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="32c6-600a-1d16-18c2">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">12</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">4</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Panic (1), Blast (5&quot;), Force (S)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Ranged, Psychic</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Conflagration" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="345e-6b0d-03c7-1e44">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">-1</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">6+D3</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">5</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">4</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Deflagrate (5)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Melee, Psychic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Force (X)" id="9c3e-2a39-e64c-153e" hidden="false" type="rule" targetId="25cd-60d0-a0a4-6b18">
+          <modifiers>
+            <modifier type="set" value="Force (S)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Panic (X)" id="61c3-5cb5-1a06-ce3b" hidden="false" type="rule" targetId="82a7-f471-3fda-6ca1">
+          <modifiers>
+            <modifier type="set" value="Panic (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Blast (X)" id="0184-d9b5-57fe-9804" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+          <modifiers>
+            <modifier type="set" value="Blast (5&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deflagrate (X)" id="7e75-d499-4a86-ef40" hidden="false" type="rule" targetId="f4a0-f206-0dba-7d81">
+          <modifiers>
+            <modifier type="set" value="Deflagrate (5)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Explodes (X)" id="cc44-7188-d687-4b02" hidden="false" type="rule" targetId="da5b-b871-20da-3e70">
+          <modifiers>
+            <modifier type="set" value="Explodes (4+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="5cb9-c07e-dc73-733f" id="a66b-5d7a-ea1e-d51f" primary="false" name="Pyromancer"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Telekinesis" hidden="false" id="3a5d-8574-6913-d83c">
+      <profiles>
+        <profile name="Force Barrier" typeId="d59e-df4b-630f-f185" typeName="Psychic Reaction" hidden="false" id="c553-3874-e6b9-a098">
+          <characteristics>
+            <characteristic name="Summary" typeId="c8a8-29f2-605b-5969">This Power can be used in either the Shooting or Assault Phase and grants a Shrouded Damage Mitigation Test.</characteristic>
+            <characteristic name="Trigger" typeId="4e6b-ebca-53df-fcf7">The Reactive Player may choose to declare a Force Barrier Psychic Reaction in either the Assault Phase, at the start of Step 4 of the Charge Process, or in the Shooting Phase, at the start of Step 3 of a Shooting Attack made by the Active Player.</characteristic>
+            <characteristic name="Cost" typeId="f25a-9ced-eb9b-4587">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Force Barrier Psychic Reaction - this cost paid as soon as the declaration is made.</characteristic>
+            <characteristic name="Focus" typeId="0b45-591a-ee11-488e">The Focus of this Psychic Reaction must be a Model with the Telekine Trait under the Reactive Player&apos;s control, and must be a part of the Unit targeted by the Charge or Shooting Attack that triggers this Psychic Reaction.</characteristic>
+            <characteristic name="Target" typeId="cf1d-e201-caac-3d45">The Target Unit must be the Unit that is the target of the Shooting Attack or Charge that triggered the Reaction.</characteristic>
+            <characteristic name="Duration" typeId="daae-40ac-68e2-fa78">If successfully Manifested, the effects of this Psychic Reaction last until the end of the Sub-Phase in which it was declared.</characteristic>
+            <characteristic name="Process" typeId="8d43-934e-e511-0cfd">1. Once the Focus and Target Unit have been decided, make a Manifestation Check.
+2. If the Manifestation Check is successful, then all Models in the Target Unit gain a 3+ Shrouded Damage Mitigation Test against any wounds inflicted during a Volley or Shooting Attack.
+3. If the Manifestation Check fails then there is no further effect.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Immovable Force" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="31de-4d17-0779-5524">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">18</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">3</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Pinning (2), Force (FP)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Ranged, Psychic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pinning (X)" id="4b78-c61b-cc54-a252" hidden="false" type="rule" targetId="88b6-6493-e4d7-1805">
+          <modifiers>
+            <modifier type="set" value="Pinning (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Force (X)" id="ae6c-d145-4f75-7407" hidden="false" type="rule" targetId="25cd-60d0-a0a4-6b18">
+          <modifiers>
+            <modifier type="set" value="Force (FP)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shrouded (X)" id="8d85-32cf-2618-55c2" hidden="false" type="rule" targetId="ade8-06c1-0e51-c6fd">
+          <modifiers>
+            <modifier type="set" value="Shrouded (4+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="693c-964f-9dd6-9963" id="33d4-52f5-c7b4-3e79" primary="false" name="Telekine"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Divination" hidden="false" id="5f50-43e2-30a1-01c8">
+      <categoryLinks>
+        <categoryLink targetId="c457-4d05-c6b9-9a82" id="8a91-cafe-9f3e-1fcc" primary="false" name="Diviner"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Every Strike Forseen" typeId="df8e-835f-fa09-50cc" typeName="Gambit" hidden="false" id="aae8-6c9f-73f3-9cb3">
+          <characteristics>
+            <characteristic name="Description" typeId="dd3f-b398-bc17-e4ac">If this Gambit is selected, the Controlling Player must make a Willpower Check for the Model using this Gambit. If the Check is successful then in the Strike Step of the Challenge any Hit Tests made for this Model are successful on a result of 2+ regardless of the Weapon Skill Characteristics of the Models involved in the Challenge. If the Willpower Check is not successful then Hit Tests are made as normal, Note that this Willpower Check cannot inflict Perils of the Warp.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Foresight&apos;s Blessing" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="58c6-f57d-ec06-9c39">
+          <characteristics>
+            <characteristic name="Summary" typeId="981f-bb86-6a74-9b20">This Power is used as part of a Shooting Attack to grant a Unit the Precision (5+) Special Rule.</characteristic>
+            <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e">The Active Player may choose to Manifest the Foresight&apos;s Blessing Psychic Power in the Shooting Phase, at Step 4 of any Shooting Attack made by the Active Player.</characteristic>
+            <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86"> The Focus of the Power must be a Model with the Diviner Trait under the Active Player&apos;s control, and must be either part of the Unit making the Shooting Attack or within 18&quot; and with Line of Sight to one or more Models in that Unit.</characteristic>
+            <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770">The Target Unit must be the Unit currently selected and in the process of making a Shooting Attack.</characteristic>
+            <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4"> If successfully Manifested, the effects of this Psychic Power last until the end of the Shooting Attack being resolved.</characteristic>
+            <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0">1. Once the Focus and Target Unit have been decided, make a Manifestation Check.
+2. If the Manifestation Check is successful, then all Models in the Target Unit gain the Precision (5+) Special Rule.
+3. If the Manifestation Check fails then there is no further effect.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Duellist&apos;s Edge (X)" id="023a-032c-20c6-2f15" hidden="false" type="rule" targetId="94bc-c69f-99b6-8ba0">
+          <modifiers>
+            <modifier type="set" value="Duellist&apos;s Edge (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Telepathy" hidden="false" id="13c2-f899-efef-20cb">
+      <categoryLinks>
+        <categoryLink targetId="d269-d26a-cac1-c953" id="e865-1b7d-b71b-0faa" primary="false" name="Telepath"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Fear (X)" id="501c-85e4-dbb9-0998" hidden="false" type="rule" targetId="0ebc-0c92-2209-6393">
+          <modifiers>
+            <modifier type="set" value="Fear (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Stun (X)" id="4abb-215d-857d-43a2" hidden="false" type="rule" targetId="c7c1-bbc9-f852-6f71">
+          <modifiers>
+            <modifier type="set" value="Stun (-)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="Mind-Burst" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="8ac2-c2e3-73c6-0984">
+          <characteristics>
+            <characteristic name="Summary" typeId="981f-bb86-6a74-9b20">This Power is used in the Movement Phase and can force the target to Fall Back or become Routed.</characteristic>
+            <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e">The Active Player may choose to Manifest the Mind-burst Psychic Power in the Movement Phase, when selecting a Unit under their control that includes at least one Model with the Telepath Trait to move and before any move is made for that Unit.</characteristic>
+            <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86">The Focus of the Power must be a Model with the Telepath Trait that is part of the Unit that was selected to move.</characteristic>
+            <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770">The Target Unit must be a Unit under the control of the Reactive Player with at least one Model within 18&quot; of the Focus and with Line of Sight to the Focus. The target may not be a Unit that is Locked in Combat or otherwise ineligible to be the target of a Shooting Attack and may not include any Models with the Vehicle Type.</characteristic>
+            <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4">If successfully Manifested, the effects of this Psychic Power are resolved immediately.</characteristic>
+            <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0">1. Once the Focus and Target Unit have been decided, make a Manifestation Check. 
+2. If the Manifestation Check is successful, then all Statuses are removed from all Models in the Target Unit, and then the Target Unit must immediately make a Fall Back Move. Once that Fall Back Move has been resolved, a Leadership Check must be made for the Target Unit by its Controlling Player, this Check may not be modified by any effect or Special Rule. If the Leadership Check is successful, then there is no further effect, if it is unsuccessful then all Models in the Target Unit gain the Routed Status.
+3. If the Manifestation Check fails then there is no further effect to the Target Unit.
+4. Regardless of whether the Manifestation Check succeeds or fails, the Unit that includes the Focus of this Psychic Power may not make a move or Rush in this Movement Phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cursed Whispers" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="0bb5-a147-4251-fde0">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">12</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">2D6</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">3</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">-</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Stun (-)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Ranged, Psychic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Thaumaturgy" hidden="false" id="15a9-e44f-2393-0d6a">
+      <categoryLinks>
+        <categoryLink targetId="689b-c1f1-9d47-fd2d" id="a534-fb59-7a98-0651" primary="false" name="Thaumaturge"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Hatred (X)" id="83ab-9ef8-dbb6-cc6f" hidden="false" type="rule" targetId="d756-75b2-3c31-b2b9">
+          <modifiers>
+            <modifier type="set" value="Hatred (Psyker)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="Resurrection" typeId="d59e-df4b-630f-f185" typeName="Psychic Reaction" hidden="false" id="9f18-3d26-5c15-0b24">
+          <characteristics>
+            <characteristic name="Summary" typeId="c8a8-29f2-605b-5969">This Power can be used in the Shooting Phase and can return a single Casualty to the Unit with all Wounds restored.</characteristic>
+            <characteristic name="Trigger" typeId="4e6b-ebca-53df-fcf7">The Reactive Player may choose to declare a Resurrection Psychic Reaction in the Shooting Phase, at the start of Step 11 of any Shooting Attack made by the Active Player.</characteristic>
+            <characteristic name="Cost" typeId="f25a-9ced-eb9b-4587">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Resurrection Psychic Reaction - this cost paid as soon as the declaration is made.</characteristic>
+            <characteristic name="Focus" typeId="0b45-591a-ee11-488e">The Focus of this Psychic Reaction must be a Model with the Thaumaturge Trait and under the Reactive Player&apos;s Control, and must be a part of the Unit targeted by the Shooting Attack that triggers this Psychic Reaction.</characteristic>
+            <characteristic name="Target" typeId="cf1d-e201-caac-3d45">The Target Unit must be the Unit that is the target of the Shooting Attack that triggered the Reaction.</characteristic>
+            <characteristic name="Duration" typeId="daae-40ac-68e2-fa78">If successfully Manifested, the effects of this Psychic Reaction are resolved immediately.</characteristic>
+            <characteristic name="Process" typeId="8d43-934e-e511-0cfd">1. Once the Focus and Target Unit have been decided, make a Manifestation Check.
+2.If the Manifestation Check is successful then, before any Models in the Target Unit are Removed as Casualties, the Controlling Player of the Target Unit must select one Model being Removed as a Casualty and roll a Dice. If the Dice roll for the chosen Model is equal to or higher than a &apos;4&apos;, then that Model is not Removed as a Casualty and is returned to play in Unit Coherency with its Unit and with its Wounds Characteristic set to its Base Value, as listed on that Model&apos;s profile. This Psychic Reaction has no effect on Models that do not have a Wounds Characteristic and if the result of the Manifestation Check causes Perils of the Warp, then this instance of Perils of the Warp is resolved after any Models are returned to the Unit.
+3.If the Manifestation Check fails then there is no further effect.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Tranquility" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="cfb2-5d69-b138-0097">
+          <characteristics>
+            <characteristic name="Summary" typeId="981f-bb86-6a74-9b20">This Power is used in the Start Phase and makes it harder for the Target Unit to use Psychic Powers, Psychic Reactions or to attack with Psychic Weapons.</characteristic>
+            <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e">The Active Player may choose to Manifest the Tranquillity Psychic Power in the Effects Sub-Phase of the Start Phase.</characteristic>
+            <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86">The Focus of the Power must be a Model with the Thaumaturge Trait and must be controlled by the Active Player.</characteristic>
+            <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770">The Target Unit must be a Unit under the control of the Reactive Player with at least one Model within 18&quot; of the Focus and with Line of Sight to the Focus. The Target Unit must include at least one Model with the Psyker Trait.</characteristic>
+            <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4">If successfully Manifested, the effects of this Psychic Power last until the start of the Active Player&apos;s next Turn as the Active Player.</characteristic>
+            <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0">1. Once the Focus and Target Unit have been decided, make a Manifestation Check.
+2. If the Manifestation Check is successful, then all Models in the Target Unit suffer a penalty of -2 to their Willpower Characteristic when attempting to Manifest any Psychic Power or Psychic Reaction. If
+any Model in the Target Unit makes attacks with a Weapon that has the Psychic Trait, then the Strength Characteristic of all Hits inflicted is reduced by 1. 
+3. If the Manifestation Check fails then there is no further effect.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Special Rules" id="c361-7259-1878-a576" targetId="106b-693b-99f2-00c3"/>
+    <catalogueLink type="catalogue" name="Traits" id="ce5a-0aad-0f34-ef52" targetId="df17-7a05-0826-6e22"/>
+    <catalogueLink type="catalogue" name="Weapons" id="5dcf-e2bf-9fd5-b867" targetId="a22d-4dd0-c59d-57d3"/>
+  </catalogueLinks>
+  <categoryEntries>
+    <categoryEntry name="Biomancer" id="5339-4a3d-9631-18a4" hidden="false"/>
+    <categoryEntry name="Pyromancer" id="5cb9-c07e-dc73-733f" hidden="false"/>
+    <categoryEntry name="Telekine" id="693c-964f-9dd6-9963" hidden="false"/>
+    <categoryEntry name="Diviner" id="c457-4d05-c6b9-9a82" hidden="false"/>
+    <categoryEntry name="Telepath" id="d269-d26a-cac1-c953" hidden="false"/>
+    <categoryEntry name="Thaumaturge" id="689b-c1f1-9d47-fd2d" hidden="false"/>
+  </categoryEntries>
+</catalogue>

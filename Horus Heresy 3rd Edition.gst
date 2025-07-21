@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -56,16 +56,142 @@
     <categoryEntry name="War-engine" id="2499-7239-685f-8465" hidden="false"/>
     <categoryEntry name="Warlord" id="22ee-7208-4089-b005" hidden="false"/>
     <categoryEntry name="Free Power Weapon" id="647c-faca-3c98-c203" hidden="true"/>
-    <categoryEntry name="Command Model Sub-type" id="9871-cb62-5283-2216" hidden="false"/>
-    <categoryEntry name="Unique Model Sub-Type" id="b980-187b-2b17-d635" hidden="false"/>
-    <categoryEntry name="Champion Model Sub-Type" id="5a95-e564-96b2-8dc9" hidden="false"/>
-    <categoryEntry name="Specialist Model Sub-Type" id="af7d-af64-6b7d-da9d" hidden="false"/>
-    <categoryEntry name="Sergeant Model Sub-Type" id="8045-89a4-76d4-fcef" hidden="false"/>
-    <categoryEntry name="Heavy Model Sub-Type" id="1e7d-9066-28d2-97a0" hidden="false"/>
-    <categoryEntry name="Light Model Sub-Type" id="f4ba-00e5-3d2e-eaac" hidden="false"/>
-    <categoryEntry name="Skirmish Model Sub-Type" id="d2d6-5a84-672b-2833" hidden="false"/>
-    <categoryEntry name="Antigrav Model Sub-Type" id="c504-9dfa-35d3-c98f" hidden="false"/>
-    <categoryEntry name="Transport Model Sub-Type" id="2e6d-36f6-eeca-8e0c" hidden="false"/>
+    <categoryEntry name="Command Model Sub-type" id="9871-cb62-5283-2216" hidden="false">
+      <rules>
+        <rule name="Command Sub-Type" id="2126-084e-d5d1-9cca" hidden="false">
+          <description>The following Rules apply to all Models with the Command Sub-Type:
+- A Model with the Command Sub-Type may join and leave Units (see page 180).
+- A Model with the Command Sub-Type may Issue and Accept Challenges (see the Rules for Challenges on page 256).
+- The Controlling Player of a Unit that includes on or more Models with the Command Sub-Type may use the Characteristics of one of those Models to resolve any Characteristics Checks made for that Unit.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Unique Model Sub-Type" id="b980-187b-2b17-d635" hidden="false">
+      <rules>
+        <rule name="Unique Sub-Type" id="b7cc-6abd-53c9-09c3" hidden="false" publicationId="7d63-5df4-c656-52de" page="176">
+          <description>The following Rules apply to all Models with the Unique Sub-Type:
+- An Army may not include more than a single instance of a given Model with this Sub-Type.
+- A Model with the Unique Sub-Type or a Unit composed entirely of Models with the Unique Sub-Type may not have any options other than those included on its Army List Profile selected for them.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Champion Model Sub-Type" id="5a95-e564-96b2-8dc9" hidden="false">
+      <rules>
+        <rule name="Champion Sub-Type" id="489d-a88d-0153-d5af" hidden="false" publicationId="7d63-5df4-c656-52de" page="176">
+          <description>The following Rules apply to all Models with the Champion Sub-Type:
+- A model with the Champion Sub-Type may Issue and Accept Challenges (see the Rules for Challenges on page 256).</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Specialist Model Sub-Type" id="af7d-af64-6b7d-da9d" hidden="false">
+      <rules>
+        <rule name="Specialist Sub-Type" id="8bee-6db5-247e-3634" hidden="false" publicationId="7d63-5df4-c656-52de" page="177">
+          <description>The following Rules apply to all Models with the Specialist Sub-Type:
+- A Model with the Specialist Sub-Type may join and leave Units (see page 180).</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Sergeant Model Sub-Type" id="8045-89a4-76d4-fcef" hidden="false">
+      <rules>
+        <rule name="Sergeant Sub-Type" id="3888-5604-8695-720e" hidden="false" publicationId="7d63-5df4-c656-52de" page="177">
+          <description>The following Rules apply to all Models with the Sergeant Sub-Type:
+- The Controlling Player of a Unit that includes one or more Models with the Sergeant Sub-Type may use the Characteristics of one of those Models to resolve any Characteristic Check made for that Unit.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Heavy Model Sub-Type" id="1e7d-9066-28d2-97a0" hidden="false">
+      <rules>
+        <rule name="Heavy Sub-Type" id="c625-7b16-7ceb-d4cb" hidden="false" publicationId="7d63-5df4-c656-52de" page="177">
+          <description>The following Rules apply to all Models with the Heavy Sub-Type:
+- A Unit that includes only Models with the Heavy Sub-Type gains a bonus of +1 to its Cool Characteristics for Checks to avoid gaining Tactical Statuses.
+- A Unit that includes any Models with the Heavy Sub-Type may not Rush.
+- A Unit that includes any Models with the Heavy Sub-Type only uses its Movement Characteristic to determine how far it moves as part of a Set-up Move, not Movement and Initiative totalled.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Light Model Sub-Type" id="f4ba-00e5-3d2e-eaac" hidden="false">
+      <rules>
+        <rule name="Light Sub-Type" id="f7b0-5312-7f4e-96c4" hidden="false" publicationId="7d63-5df4-c656-52de" page="177">
+          <description>The following Rules apply to all Models with the Light Sub-Type:
+- A Unit that includes only Models with the Light Sub-Type gain a +2 modifier to its Initiative when determining how far that Unit may Rush (this bonus stacks with other bonuses to Rush distance).
+- A Unit that includes only Models with the Light Sub-Type may make Shooting Attacks after having Rushed, but makes all such Shooting Attacks as Snap Shots. Models or Weapons that cannot attack as Snap Shots may not make attacks.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Skirmish Model Sub-Type" id="d2d6-5a84-672b-2833" hidden="false">
+      <rules>
+        <rule name="Skirmish Sub-Type" id="8745-f111-ed89-1357" hidden="false" publicationId="7d63-5df4-c656-52de" page="178">
+          <description>The following Rules apply to all Models with the Skirmish Sub-Type:
+- A Unit that includes only Models with the Skirmish Sub-Type has a Unit Coherency range of 3&quot; rather than 2&quot;.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Antigrav Model Sub-Type" id="c504-9dfa-35d3-c98f" hidden="false">
+      <rules>
+        <rule name="Antigrav Sub-Type" id="6568-dcd0-c748-2d3b" hidden="false" publicationId="7d63-5df4-c656-52de" page="178">
+          <description>The following Rules apply to all Models with the Antigrav Sub-Type:
+- A Unit that includes only Models with the Antigrav Sub-Type may ignore the effects of any and all Terrain it passes over during movement, including passing over Impassable Terrain without penalty or restriction. However, such Units may not begin or end their movement in Impassable Terrain, and if beginning or ending their movement in Dangerous Terrain must take Dangerous Terrain Tests as normal.
+- A Unit that includes only Models with the Antigrav Sub-Type may ignore both friendly and enemy Models and Units when Moving. However,, when moving over a friendly Unit all Models with the Antigrav Sub-Type must end their move at least 1&quot; away from all models that are not part of the same Unit, or if moving over an enemy Unit, must end their move at least 1&quot; away from any enemy Model.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Transport Model Sub-Type" id="2e6d-36f6-eeca-8e0c" hidden="false">
+      <rules>
+        <rule name="Transport Sub-Type" id="5227-a434-167a-12ba" hidden="false" publicationId="7d63-5df4-c656-52de" page="178">
+          <description>All Models with the Transport Sub-Type are bound by a set of Rules regarding how they operate:
+- All Models with the Transport Sub-Type have a Transport Capacity Characteristic, which determines the maximum number of Models that can Embark upon it - one Model per point of Transport Capacity, unless another Rule states otherwise.
+- Only Models with the Infantry or Paragon Type may Embark or Disembark upon a Model with the Transport Sub-Type.
+- A Unit may only Embark on a Model with the Transport Sub-Type if all Models in the Embarking Unit have the same Faction as the Model with the Transport Sub-Type.
+- A Model with the Transport Sub-Type may only have a single Unit Embarked upon it at any one time (Models with the Specialist Sub-Type, Command Sub-Type, or Paragon Type that have joined a Unit are considered part of that Unit and may Embark alongside it).
+- A Unit may not be partially Embarked on a Model with the Transport Sub-Type - either all Models or no Models in a Unit may be Embarked on a given Model.
+- If a Model with the Transport Sub-Type has a Unit Embarked upon it, the Embarked Unit is not considered part of the same Unit. The two remain separate Units for all purposes.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Infantry Model Type" id="594d-fa82-13cb-a345" hidden="false" publicationId="7d63-5df4-c656-52de" page="174">
+      <rules>
+        <rule name="Infantry Type" id="6740-4d5b-fca0-ba1f" hidden="false" publicationId="7d63-5df4-c656-52de" page="174">
+          <description>Infantry is the most basic Type, and is applied to most Models in the game. A Model with the Infantry Type uses the Core Rules without modification, gaining neither benefit nor penalty. Models with the Infantry Type may Embark and Disembark upon Models with the Transport Sub-Type.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Cavalry Model Type" id="a073-2d4a-5bed-123e" hidden="false" publicationId="7d63-5df4-c656-52de" page="174">
+      <rules>
+        <rule name="Cavalry Type" id="f051-0d1e-c7c2-c92e" hidden="false" publicationId="7d63-5df4-c656-52de" page="174">
+          <description>The following Rules apply to all Models with the Cavalry Types:
+- When making a Fall Back Move for a Model with the Cavalry Type, that Model moves a distance equal to the Initiative Characteristic of the Model plus the total of two Dice (IE: 2D6) rolled and added together.
+- Models with the Cavalry Type may not make use of any Cover Save granted by Terrain Features or Areas of Terrain.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Walker Model Type" id="38d4-d720-8009-acd3" hidden="false" page="174" publicationId="7d63-5df4-c656-52de">
+      <rules>
+        <rule name="Walker Type" id="55d4-fd0c-cbdb-a25a" hidden="false" publicationId="7d63-5df4-c656-52de" page="174">
+          <description>The following Rules apply to all Models with the Walker Type:
+- When targeting a Unit that includes any Models with the Walker Type, the effects of the Poisoned (X) Special Rule only trigger a Wound Test with a result of a &apos;6&apos; before modifiers are applied, regardless of the value of X for that variant of the Special Rule.
+- A Model with the Walker Type may attack with all Weapons they have in each Shooting Attack they make, including as part of a Reaction. Note that this does not allow Weapons that do not have the Assault Trait to be used to attack as part of a Volley Attack.
+- In Step 1 of the Resolution Sub-Phase, when deciding how many Models a Player controls in a Combat, a Model with the Walker Type counts as a number of Models equal to that Model&apos;s Base Wounds Value.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Paragon Model Type" id="7799-e1d6-762b-700b" hidden="false" publicationId="7d63-5df4-c656-52de" page="175">
+      <rules>
+        <rule name="Paragon Type" id="3abd-0aed-12ad-8b4f" hidden="false" publicationId="7d63-5df4-c656-52de" page="175">
+          <description>The following Rules apply to all Models with the Paragon Type:
+- Any Hits inflicted by a Model with the Paragon Type, as part of either Shooting Attacks or in close combat are allocated by the attacking Model&apos;s Controlling Player and not the Controlling Player of the Target Unit.
+- Models with the Paragon Type may join an leave a Unit that includes Models with the Infantry Type, and Models with the Infantry Type may join and leave a Unit that includes one or more Models with the Paragon Type.
+- Models with the Paragon Type may Embark and Disembark upon Models with the Transport Sub-Type.
+- A Model with the Paragon Type may Issue and Accept Challenges (see Rules for Challenges on page 256).
+- The Controlling Player of a Unit that include one or more Models with the Paragon Type may use the Characteristics of one of those Models to resolve any Characteristic Checks made for that Unit.
+- In Step 1 of the Resolution Sub-Phase, when deciding how many Models a Player controls in a Combat, a Model with the Paragon Type counts as a number of Models equal to that Model&apos;s Base Wounds Value.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Automata Model Type" id="5833-5e86-26bc-0916" hidden="false" publicationId="7d63-5df4-c656-52de" page="175">
+      <rules>
+        <rule name="New Rule" id="a7d3-aaa8-8179-33d1" hidden="false"/>
+      </rules>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Auxillary and Apex Detachments" sortIndex="1">
