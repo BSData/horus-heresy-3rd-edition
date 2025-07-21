@@ -56,11 +56,13 @@
               <modifiers>
                 <modifier type="set" value="Eternal Warrior (2)" field="name"/>
               </modifiers>
+              <comment>2</comment>
             </infoLink>
             <infoLink name="Shrouded (X)" id="ef7b-2e11-bd7e-f001" hidden="false" type="rule" targetId="ade8-06c1-0e51-c6fd">
               <modifiers>
                 <modifier type="set" value="Shrouded (6+)" field="name"/>
               </modifiers>
+              <comment>6+</comment>
             </infoLink>
             <infoLink name="Unique Unit Sub-type" id="e52b-e70b-c65a-f6c5" hidden="false" type="rule" targetId="13b4-e4fd-1a81-99b3"/>
             <infoLink name="Paragon Unit Type" id="5941-daf8-2dbd-9579" hidden="false" type="rule" targetId="d1a6-a8d5-b852-8ca3"/>
@@ -365,12 +367,12 @@ Until the end of the first Battle Turn of the Battle, whenever the Controlling P
               <profiles>
                 <profile name="The Corvidaen Sceptre" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="3c6d-bff2-5443-646e">
                   <characteristics>
-                    <characteristic name="IM" typeId="6eec-4093-f946-1014"/>
-                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e"/>
-                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280"/>
-                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8"/>
-                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7"/>
-                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e"/>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">+1</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+1</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Force (D), Critical Hit (6+)</characteristic>
                     <characteristic name="Traits" typeId="76e3-c188-bc65-3467"/>
                   </characteristics>
                 </profile>
@@ -379,6 +381,20 @@ Until the end of the first Battle Turn of the Battle, whenever the Controlling P
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="86ca-be38-783c-2803-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86ca-be38-783c-2803-max" includeChildSelections="false"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="Force (X)" id="7901-f0b0-a05b-a7eb" hidden="false" type="rule" targetId="25cd-60d0-a0a4-6b18">
+                  <modifiers>
+                    <modifier type="set" value="Force (D)" field="name"/>
+                  </modifiers>
+                  <comment>D</comment>
+                </infoLink>
+                <infoLink name="Critical Hit (X)" id="112a-8bd0-8890-b331" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
+                  <modifiers>
+                    <modifier type="set" value="Critical Hit (6+)" field="name"/>
+                  </modifiers>
+                  <comment>6+</comment>
+                </infoLink>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <rules>
@@ -442,6 +458,7 @@ Until the end of the first Battle Turn of the Battle, whenever the Controlling P
           <modifiers>
             <modifier type="set" value="Panic (1)" field="name"/>
           </modifiers>
+          <comment>1</comment>
         </infoLink>
       </infoLinks>
     </selectionEntry>
@@ -519,6 +536,7 @@ Until the end of the first Battle Turn of the Battle, whenever the Controlling P
           <modifiers>
             <modifier type="set" value="Poisoned (2+)" field="name"/>
           </modifiers>
+          <comment>2+</comment>
         </infoLink>
       </infoLinks>
     </selectionEntry>
@@ -557,12 +575,14 @@ Until the end of the first Battle Turn of the Battle, whenever the Controlling P
           <modifiers>
             <modifier type="set" value="Critical Hit (6+)" field="name"/>
           </modifiers>
+          <comment>6+</comment>
         </infoLink>
         <infoLink name="Armourbane" id="7607-482d-dfc3-30ce" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
         <infoLink name="Breaching (X)" id="39cf-e4fc-ae67-5ff1" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
           <modifiers>
             <modifier type="set" value="Breaching (5+)" field="name"/>
           </modifiers>
+          <comment>5+</comment>
         </infoLink>
       </infoLinks>
       <categoryLinks>
@@ -585,11 +605,13 @@ Until the end of the first Battle Turn of the Battle, whenever the Controlling P
           <modifiers>
             <modifier type="set" value="Shrouded (4+)" field="name"/>
           </modifiers>
+          <comment>4+</comment>
         </infoLink>
         <infoLink name="Force (X)" id="8e60-794f-7de5-e952" hidden="false" type="rule" targetId="25cd-60d0-a0a4-6b18">
           <modifiers>
             <modifier type="set" value="Force (D)" field="name"/>
           </modifiers>
+          <comment>D</comment>
         </infoLink>
       </infoLinks>
       <profiles>
@@ -662,7 +684,7 @@ Until the end of the first Battle Turn of the Battle, whenever the Controlling P
                 </modifier>
               </modifiers>
             </profile>
-            <profile name="Magistus Amon" typeId="9d66-ed77-3c90-a25b" typeName="Special Rules" hidden="false" id="c8c1-c72a-c131-8081">
+            <profile name="Magistus Amon" typeId="9d66-ed77-3c90-a25b" hidden="false" id="c8c1-c72a-c131-8081">
               <characteristics>
                 <characteristic name="Unit Special Rules" typeId="ee6a-0563-dbb9-272a">Infiltrate (9), Magister of Dust</characteristic>
               </characteristics>
@@ -736,26 +758,31 @@ Until the end of the first Battle Turn of the Battle, whenever the Controlling P
                   <modifiers>
                     <modifier type="set" value="Poisoned (5+)" field="name"/>
                   </modifiers>
+                  <comment>5+</comment>
                 </infoLink>
                 <infoLink name="Poisoned (X)" id="f52b-39fd-0fdd-513d" hidden="false" type="rule" targetId="076f-2c91-c58b-71b3">
                   <modifiers>
                     <modifier type="set" value="Poisoned (2+)" field="name"/>
                   </modifiers>
+                  <comment>2+</comment>
                 </infoLink>
                 <infoLink name="Breaching (X)" id="60ac-2eec-1c74-d091" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
                   <modifiers>
                     <modifier type="set" value="Breaching (5+)" field="name"/>
                   </modifiers>
+                  <comment>5+</comment>
                 </infoLink>
                 <infoLink name="Stun (X)" id="384e-3bd2-fe85-e305" hidden="false" type="rule" targetId="c7c1-bbc9-f852-6f71">
                   <modifiers>
                     <modifier type="set" value="Stun (3)" field="name"/>
                   </modifiers>
+                  <comment>3+</comment>
                 </infoLink>
                 <infoLink name="Limited (X)" id="4f5f-4958-d32d-bbb3" hidden="false" type="rule" targetId="fe57-5bea-a3de-1e60">
                   <modifiers>
                     <modifier type="set" value="Limited (1)" field="name"/>
                   </modifiers>
+                  <comment>1</comment>
                 </infoLink>
               </infoLinks>
             </selectionEntry>
@@ -896,31 +923,37 @@ Immovable Force (Telekinesis Discipline)</description>
               <modifiers>
                 <modifier type="set" value="Blast (5&quot;)" field="name"/>
               </modifiers>
+              <comment>5&quot;</comment>
             </infoLink>
             <infoLink name="Force (X)" id="3f96-64c2-02b3-cb18" hidden="false" type="rule" targetId="25cd-60d0-a0a4-6b18">
               <modifiers>
                 <modifier type="set" value="Force (D)" field="name"/>
               </modifiers>
+              <comment>D</comment>
             </infoLink>
             <infoLink name="Force (X)" id="88c2-91fc-317a-17de" hidden="false" type="rule" targetId="25cd-60d0-a0a4-6b18">
               <modifiers>
                 <modifier type="set" value="Force (S)" field="name"/>
               </modifiers>
+              <comment>S</comment>
             </infoLink>
             <infoLink name="Force (X)" id="cf6c-69ca-36a0-2a96" hidden="false" type="rule" targetId="25cd-60d0-a0a4-6b18">
               <modifiers>
                 <modifier type="set" value="Force (FP)" field="name"/>
               </modifiers>
+              <comment>FP</comment>
             </infoLink>
             <infoLink name="Panic (X)" id="19c7-4583-d3d6-ab69" hidden="false" type="rule" targetId="82a7-f471-3fda-6ca1">
               <modifiers>
                 <modifier type="set" value="Panic (1)" field="name"/>
               </modifiers>
+              <comment>1</comment>
             </infoLink>
             <infoLink name="Pinning (X)" id="c4c1-25ab-e551-2d4e" hidden="false" type="rule" targetId="88b6-6493-e4d7-1805">
               <modifiers>
                 <modifier type="set" value="Pinning (2)" field="name"/>
               </modifiers>
+              <comment>2</comment>
             </infoLink>
             <infoLink name="Command Unit Sub-type" id="6f95-5e56-3d52-49fb" hidden="false" type="rule" targetId="7b6d-2e0d-8659-252d"/>
             <infoLink name="Infantry Unit Type" id="a089-98b1-21fd-0546" hidden="false" type="rule" targetId="d518-ea26-a708-e6a1"/>
@@ -1315,12 +1348,14 @@ Immovable Force (Telekinesis Discipline)</description>
           <modifiers>
             <modifier type="set" value="Vanguard (3)" field="name"/>
           </modifiers>
+          <comment>3</comment>
         </infoLink>
         <infoLink name="Implacable Advance" id="dfbf-a18c-9cec-fe90" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
         <infoLink name="Bulky (X)" id="4f00-689e-2ab5-e7d4" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
           <modifiers>
             <modifier type="set" value="Bulky (2)" field="name"/>
           </modifiers>
+          <comment>2</comment>
         </infoLink>
         <infoLink name="Slow and Purposeful" id="5f87-c024-1696-2050" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e"/>
         <infoLink name="Heavy Unit Sub-type" id="60a9-5514-8de0-2c13" hidden="false" type="rule" targetId="7d35-4d6f-c4fe-4aac"/>
@@ -1346,6 +1381,7 @@ Immovable Force (Telekinesis Discipline)</description>
           <modifiers>
             <modifier type="set" value="Breaching (5+)" field="name"/>
           </modifiers>
+          <comment>5</comment>
         </infoLink>
       </infoLinks>
     </selectionEntry>
@@ -1368,6 +1404,7 @@ Immovable Force (Telekinesis Discipline)</description>
           <modifiers>
             <modifier type="set" value="Breaching (5+)" field="name"/>
           </modifiers>
+          <comment>5+</comment>
         </infoLink>
       </infoLinks>
     </selectionEntry>
@@ -1545,6 +1582,7 @@ Immovable Force (Telekinesis Discipline)</description>
           <modifiers>
             <modifier type="set" value="Precision (5+)" field="name"/>
           </modifiers>
+          <comment>5+</comment>
         </infoLink>
         <infoLink name="Infantry Unit Type" id="f13b-1fb9-418e-4f71" hidden="false" type="rule" targetId="d518-ea26-a708-e6a1"/>
       </infoLinks>
@@ -1667,11 +1705,13 @@ The &apos;Khenetai&apos; Trait</description>
                   <modifiers>
                     <modifier type="set" value="Force (D)" field="name"/>
                   </modifiers>
+                  <comment>D</comment>
                 </infoLink>
                 <infoLink name="Reaping Blow (X)" id="61bf-694c-e6e3-27b8" hidden="false" type="rule" targetId="951f-eee4-02b7-b014">
                   <modifiers>
                     <modifier type="set" value="Reaping Blow (2)" field="name"/>
                   </modifiers>
+                  <comment>2</comment>
                 </infoLink>
               </infoLinks>
             </selectionEntry>
@@ -1682,12 +1722,14 @@ The &apos;Khenetai&apos; Trait</description>
               <modifiers>
                 <modifier type="set" value="Bulky (4)" field="name"/>
               </modifiers>
+              <comment>4</comment>
             </infoLink>
             <infoLink name="Implacable Advance" id="ac29-182f-caa2-db41" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
             <infoLink name="Explodes (X)" id="b324-bf5f-0161-56ae" hidden="false" type="rule" targetId="da5b-b871-20da-3e70">
               <modifiers>
                 <modifier type="set" value="Explodes (5+)" field="name"/>
               </modifiers>
+              <comment>5+</comment>
             </infoLink>
           </infoLinks>
           <selectionEntryGroups>
@@ -1859,6 +1901,7 @@ The &apos;Khenetai&apos; Trait</description>
                   <modifiers>
                     <modifier type="set" value="Breaching (5+)" field="name"/>
                   </modifiers>
+                  <comment>5</comment>
                 </infoLink>
               </infoLinks>
             </selectionEntry>
@@ -1878,17 +1921,20 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
               <modifiers>
                 <modifier type="set" value="Bulky (4)" field="name"/>
               </modifiers>
+              <comment>4</comment>
             </infoLink>
             <infoLink name="Implacable Advance" id="06bd-5d9f-5b61-9ccf" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
             <infoLink name="Firing Protocols (X)" id="d33b-e1aa-4204-32d0" hidden="false" type="rule" targetId="37d8-cc87-fa2b-04dc">
               <modifiers>
                 <modifier type="set" value="Firing Protocols (3)" field="name"/>
               </modifiers>
+              <comment>3</comment>
             </infoLink>
             <infoLink name="Explodes (X)" id="7737-8ad0-b2d1-0d08" hidden="false" type="rule" targetId="da5b-b871-20da-3e70">
               <modifiers>
                 <modifier type="set" value="Explodes (6+)" field="name"/>
               </modifiers>
+              <comment>6+</comment>
             </infoLink>
             <infoLink name="Firestorm" id="7af1-0e2b-1e82-5ba2" hidden="false" type="rule" targetId="e02b-509b-96a7-aaad"/>
           </infoLinks>
@@ -1918,6 +1964,7 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
                       <modifiers>
                         <modifier type="set" value="Rending (4+)" field="name"/>
                       </modifiers>
+                      <comment>4+</comment>
                     </infoLink>
                   </infoLinks>
                 </selectionEntry>
@@ -1944,11 +1991,13 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
                       <modifiers>
                         <modifier type="set" value="Blast (3&quot;)" field="name"/>
                       </modifiers>
+                      <comment>3&quot;</comment>
                     </infoLink>
                     <infoLink name="Breaching (X)" id="c152-fd93-1d5a-4896" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
                       <modifiers>
                         <modifier type="set" value="Breaching (6+)" field="name"/>
                       </modifiers>
+                      <comment>6+</comment>
                     </infoLink>
                   </infoLinks>
                   <costs>
