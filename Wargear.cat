@@ -77,5 +77,44 @@
     <selectionEntry type="upgrade" import="true" name="Narthecium" hidden="false" id="a7bb-ae7f-3ef2-90d1"/>
     <selectionEntry type="upgrade" import="true" name="Icon of Allegiance" hidden="false" id="b808-6eaa-6396-6ce3"/>
     <selectionEntry type="upgrade" import="true" name="Command vox relay" hidden="false" id="2012-4b76-43b0-c7dd"/>
+    <selectionEntry type="upgrade" import="true" name="Flare Shield" hidden="false" id="988f-36eb-7aa2-9ef4">
+      <profiles>
+        <profile name="Flare Shield" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="3767-71da-81e4-3cae">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">Attacks which hit a Model with a flare shield gain no benefit from the Armourbane Special Rule.</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">When Making Armour Penetration Tests against a Model with a flare shield, no Weapon may make use of the Armourbane Special Rules.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26e1-4cfc-5563-5d14"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Machinator array" hidden="false" id="4453-7c1d-15ff-f22c">
+      <profiles>
+        <profile name="Machinator array" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="054c-7251-9bfa-c116">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">A Model with a machinator array can use the Battlesmith (X) Special Rule twice in the same Turn.</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">Each time the Controlling Player of a Model with a machinator array chooses to make use of the Battlesmith (X) Special Rule for that Model, it may be used twice - with each usage of the Special Rule targeting the same or different target Units as chosen by the Controlling Player and may apply different effects (all targets chosen must be valid targets). If a player chooses to apply the effects of a Machinator Array and makes two Battlesmith actions then neither of those actions may be modified by the effects of a servo-arm and use only the base value of the Model&apos;s Battlesmith (X) Special Rule to determine their effect.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e8e-dddf-c369-64ca"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rad furnace" hidden="false" id="e269-7996-f41f-b892">
+      <profiles>
+        <profile name="Rad furnace" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="0c55-0abd-a85c-9e0b">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">A Model with a rad Furnace reduces the enemy&apos;s Toughness while Locked in Combat</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">Any model, friendly or enemy, that is part of a Combat that includes one of more Models with a rad furnace must reduce its Toughness Characteristic by 1 while a part of that Combat in the Fight Sub-Phase. This reduction is not cumulative with the effects of the Phase (X) Special Rule. Models with a rad furnace, the Automata Type or Cybernetica Trait are unaffected and do not reduce their Toughness Characteristic. Additionally, a Unit that is composed of a majority of Models with rad furnaces does not reduce any Characteristics due to the effects of the Phase (X) Special Rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec7f-b557-491a-4c2a"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
