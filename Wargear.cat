@@ -166,8 +166,27 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Corvid Pattern Jump Pack" hidden="false" id="3f94-3ed7-02ee-0c1b">
+      <profiles>
+        <profile name="Corvid Pattern Jump Pack" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="b9db-db51-f6b8-1ee3">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c"/>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">A Model with a Corvid Pattern Jump Pack has their Movement Characteristic set to 14 and replaces any instance of the Bulky (X) Special Rule with Bulky (3). Each time a Dangerous Terrain test is made for a Model with a Corvid Pattern Jump Pack, that Test is automatically passed.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9b70-28b7-db50-8336" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61a8-09af-e753-34fd" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Bulky (X)" id="e4a7-82e5-8cd5-6c21" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+          <modifiers>
+            <modifier type="set" value="Bulky (3)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <comment>Bulky (3) Included</comment>
+    </selectionEntry>
   </sharedSelectionEntries>
-  <catalogueLinks>
-    <catalogueLink type="catalogue" name="New Catalogue (link)" id="981e-1f37-f2b7-2183" targetId="106b-693b-99f2-00c3"/>
-  </catalogueLinks>
 </catalogue>
