@@ -323,12 +323,13 @@
         </entryLink>
         <entryLink import="true" name="Mechanicum - Sub-faction" hidden="false" id="f00f-c9df-b87d-58d3" type="selectionEntryGroup" targetId="ce61-2d74-5519-70bf" sortIndex="2"/>
         <entryLink import="true" name="Arcana Benefice:" hidden="false" id="57e7-d51f-4686-3ed9" type="selectionEntry" targetId="f7b9-dc9c-2c8b-0c92" sortIndex="12"/>
+        <entryLink import="true" name="Heterodoxist" hidden="false" id="bbf2-5f32-e42a-faa1" type="selectionEntry" targetId="7a1e-e035-4b60-0b35" sortIndex="3"/>
         <entryLink import="true" name="Theurgika Maximas" hidden="false" id="dcdf-892f-dfd4-6509" type="selectionEntry" targetId="aba1-9c44-dd47-d77d" sortIndex="7">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Heterodoxist" hidden="false" id="bbf2-5f32-e42a-faa1" type="selectionEntry" targetId="7a1e-e035-4b60-0b35" sortIndex="3"/>
+        <entryLink import="true" name="Special Assignment" hidden="false" id="adf5-e9c0-1a49-82df" type="selectionEntry" targetId="c857-47bd-6a4f-fcf8" sortIndex="14"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="c7ec-ff15-15fb-fcc7" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -449,6 +450,18 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set-primary" value="6dbf-654a-f06f-2d69" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" value="d9a6-9b5f-b18a-4d63" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Archmagos on Abeyant" hidden="false" id="6512-b1e9-975b-184b" sortIndex="2">
       <infoLinks>
@@ -584,6 +597,7 @@
           </costs>
         </entryLink>
         <entryLink import="true" name="Heterodoxist" hidden="false" id="d774-6881-ee14-02d1" type="selectionEntry" targetId="7a1e-e035-4b60-0b35" sortIndex="3"/>
+        <entryLink import="true" name="Special Assignment" hidden="false" id="db3e-4fee-b298-2e11" type="selectionEntry" targetId="c857-47bd-6a4f-fcf8" sortIndex="14"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="9871-cb62-5283-2216" id="64a5-22ff-daf6-921c" primary="false" name="Command Model Sub-type"/>
@@ -642,6 +656,18 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set-primary" value="6dbf-654a-f06f-2d69" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" value="d9a6-9b5f-b18a-4d63" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Magos" hidden="false" id="0ccf-5e81-b051-6db9" sortIndex="3">
       <infoLinks>
@@ -754,6 +780,11 @@
         <entryLink import="true" name="Mechanicum - Sub-faction" hidden="false" id="40b6-5935-2a4f-f5eb" type="selectionEntryGroup" targetId="ce61-2d74-5519-70bf" sortIndex="2"/>
         <entryLink import="true" name="Arcana Benefice:" hidden="false" id="b23a-3936-6431-374e" type="selectionEntry" targetId="f7b9-dc9c-2c8b-0c92" sortIndex="10"/>
         <entryLink import="true" name="Heterodoxist" hidden="false" id="3584-b2ee-6065-d0ed" type="selectionEntry" targetId="7a1e-e035-4b60-0b35" sortIndex="3"/>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="2da5-37c0-d6e3-ea11" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="12">
+          <categoryLinks>
+            <categoryLink targetId="c85c-2963-658f-1bb9" id="02fa-c675-6dc8-0bac" primary="false" name="Prime Command"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="594d-fa82-13cb-a345" id="0654-92ae-5e92-ef4d" primary="false" name="Infantry Model Type"/>
@@ -909,6 +940,11 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Mechanicum - Sub-faction" hidden="false" id="3f36-ef37-6adb-409e" type="selectionEntryGroup" targetId="ce61-2d74-5519-70bf" sortIndex="2"/>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="b908-cc3a-f91b-c9f0" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="5">
+          <categoryLinks>
+            <categoryLink targetId="c66b-ef39-b20f-725b" id="391d-45b4-1d0a-1a82" primary="false" name="Prime Retinue"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="5833-5e86-26bc-0916" id="1895-6200-3feb-50e9" primary="false" name="Automata Model Type"/>
@@ -1021,7 +1057,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="424d-0fa5-59fb-10f9"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Frag grenades" hidden="false" id="1541-4af4-3753-3ef4" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="10">
+        <entryLink import="true" name="Frag grenades" hidden="false" id="1541-4af4-3753-3ef4" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="11">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="060e-e021-2185-410f"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74f4-5ad9-e78f-b9ee"/>
@@ -1033,7 +1069,12 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eebe-cf90-f6a8-ad13"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Arcana Benefice:" hidden="false" id="4d1e-0afa-099f-7e20" type="selectionEntry" targetId="f7b9-dc9c-2c8b-0c92"/>
+        <entryLink import="true" name="Arcana Benefice:" hidden="false" id="4d1e-0afa-099f-7e20" type="selectionEntry" targetId="f7b9-dc9c-2c8b-0c92" sortIndex="10"/>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="c339-6218-8921-c0a2" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="12">
+          <categoryLinks>
+            <categoryLink name="Prime Command" hidden="false" id="bf84-2553-0ed8-7402" targetId="c85c-2963-658f-1bb9" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Arcuitor" hidden="false" id="6441-1541-3a3f-0d94" sortIndex="1">
@@ -1130,6 +1171,11 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Mechanicum - Sub-faction" hidden="false" id="fee7-bc64-5422-4317" type="selectionEntryGroup" targetId="ce61-2d74-5519-70bf" sortIndex="2"/>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="ea94-751e-0d74-6c95" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="4">
+          <categoryLinks>
+            <categoryLink name="Prime Retinue" hidden="false" id="ba4e-75ed-8c34-5b19" targetId="c66b-ef39-b20f-725b" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="5833-5e86-26bc-0916" id="2665-75d8-dcf8-d7b9" primary="false" name="Automata Model Type"/>
@@ -1314,6 +1360,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9a6-99d2-8506-3515"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="f7bd-69d0-8993-bd24" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="5">
+          <categoryLinks>
+            <categoryLink targetId="276f-7a07-a56c-affd" id="2899-8d9f-b5b4-cda2" primary="false" name="Prime Elites"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Magos on Abeyant" hidden="false" id="0836-d574-9d22-307f" sortIndex="4">
@@ -1441,6 +1492,11 @@
         <entryLink import="true" name="Mechanicum - Sub-faction" hidden="false" id="1f26-8829-0310-fcff" type="selectionEntryGroup" targetId="ce61-2d74-5519-70bf" sortIndex="2"/>
         <entryLink import="true" name="Arcana Benefice:" hidden="false" id="ae59-b0fb-2120-a6e1" type="selectionEntry" targetId="f7b9-dc9c-2c8b-0c92" sortIndex="10"/>
         <entryLink import="true" name="Heterodoxist" hidden="false" id="69e6-5473-8108-c999" type="selectionEntry" targetId="7a1e-e035-4b60-0b35" sortIndex="3"/>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="16b6-a516-622c-62a0" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="12">
+          <categoryLinks>
+            <categoryLink name="Prime Command" hidden="false" id="9bb0-f6fb-49ee-45d6" targetId="c85c-2963-658f-1bb9" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="130"/>
@@ -1693,6 +1749,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee0e-70a3-fb77-f7c3"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="74b8-4066-d2f5-3681" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="6">
+          <categoryLinks>
+            <categoryLink name="Prime Elites" hidden="false" id="609f-e4e9-27d3-b4fe" targetId="276f-7a07-a56c-affd" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Myrmidon Destructor Host" hidden="false" id="229c-7b38-1dac-de3e" sortIndex="10">
@@ -1897,6 +1958,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c7d-9105-64ce-e8fa"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="a4ff-d32c-f0ff-2482" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="6">
+          <categoryLinks>
+            <categoryLink name="Prime Elites" hidden="false" id="981c-a676-615e-55bd" targetId="276f-7a07-a56c-affd" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tech-Thrall Covenant" hidden="false" id="6369-b3b1-0ce1-64f8" sortIndex="14">
@@ -1965,6 +2031,11 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a3f-6f16-96d3-657f"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af53-938d-664b-72cf"/>
           </constraints>
+        </entryLink>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="df59-054b-7567-e7c1" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="4">
+          <categoryLinks>
+            <categoryLink targetId="1c79-ecdf-9a64-84c9" id="d86b-f4d1-58f6-c4af" primary="false" name="Prime Support"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -2126,6 +2197,11 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c241-4f28-54f4-b887"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e74-a7bf-d90a-d62b"/>
           </constraints>
+        </entryLink>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="2add-3992-0734-9159" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="3">
+          <categoryLinks>
+            <categoryLink targetId="1e95-35f0-1353-ffa1" id="1c5c-5df8-16c8-f3e9" primary="false" name="Prime Heavy assault"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -2297,6 +2373,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a858-d236-117c-bac8"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="bd36-4cf3-185d-54b6" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="5">
+          <categoryLinks>
+            <categoryLink name="Prime Heavy assault" hidden="false" id="de01-7672-2f0a-577d" targetId="1e95-35f0-1353-ffa1" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tech-Priest" hidden="false" id="bc86-4606-7fce-1866" sortIndex="13">
@@ -2395,6 +2476,11 @@
         <entryLink import="true" name="Mechanicum - Sub-faction" hidden="false" id="884b-f6af-9a40-7ff1" type="selectionEntryGroup" targetId="ce61-2d74-5519-70bf" sortIndex="2"/>
         <entryLink import="true" name="Arcana Benefice:" hidden="false" id="68f5-a35d-51e6-3b32" type="selectionEntry" targetId="f7b9-dc9c-2c8b-0c92" sortIndex="8"/>
         <entryLink import="true" name="Heterodoxist" hidden="false" id="0f57-500a-c9a3-4a36" type="selectionEntry" targetId="7a1e-e035-4b60-0b35" sortIndex="3"/>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="4944-5f01-5980-a80d" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="10">
+          <categoryLinks>
+            <categoryLink targetId="c3f9-a7f3-984b-3fda" id="63dc-bdf6-2168-522d" primary="false" name="Prime Troops"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="594d-fa82-13cb-a345" id="a641-4210-7d72-6f03" primary="false" name="Infantry Model Type"/>
@@ -2597,6 +2683,11 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="30ae-f7e9-61ab-b768"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5252-5933-f57d-44e0"/>
           </constraints>
+        </entryLink>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="175f-df59-3cbe-ce59" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="5">
+          <categoryLinks>
+            <categoryLink name="Prime Support" hidden="false" id="7195-ab74-5005-9fd1" targetId="1c79-ecdf-9a64-84c9" primary="false"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -2816,6 +2907,11 @@
       </costs>
       <entryLinks>
         <entryLink import="true" name="Mechanicum - Sub-faction" hidden="false" id="d1c2-ce59-a6f4-9191" type="selectionEntryGroup" targetId="ce61-2d74-5519-70bf" sortIndex="2"/>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="898b-4591-1759-52e9" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="3">
+          <categoryLinks>
+            <categoryLink name="Prime War-engine" hidden="false" id="30e9-80a8-e99d-ecbc" targetId="9699-67c9-2c0b-e64b" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -2958,6 +3054,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d504-8497-5718-4c25"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="f87b-760f-5b44-e00c" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="6">
+          <categoryLinks>
+            <categoryLink targetId="9699-67c9-2c0b-e64b" id="5c33-0c96-8cec-6f89" primary="false" name="Prime War-engine"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Cavas or Calix:" id="07a5-b643-1588-1cee" hidden="false" defaultSelectionEntryId="b0c4-16a4-19e9-d90f" sortIndex="2">
@@ -3094,6 +3195,11 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Mechanicum - Sub-faction" hidden="false" id="6516-bee0-56b2-0965" type="selectionEntryGroup" targetId="ce61-2d74-5519-70bf" sortIndex="2"/>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="4113-df1a-1b6a-8edd" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="8">
+          <categoryLinks>
+            <categoryLink targetId="abff-3686-c39a-9a24" id="cc39-027e-2bb4-7fdd" primary="false" name="Prime Heavy transport"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="May take upto two Hull (Front) Mounted hunter killer missiles" id="5e61-e451-b2bb-c0b6" hidden="false" sortIndex="3">
@@ -3304,6 +3410,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b362-7434-2002-3d72"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="89c3-e386-201c-227b" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="4">
+          <categoryLinks>
+            <categoryLink name="Prime Support" hidden="false" id="3484-895c-3ae2-ea46" targetId="1c79-ecdf-9a64-84c9" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Vorax Attack Maniple" hidden="false" id="de2e-f9b5-abe6-b8b5" sortIndex="20">
@@ -3431,6 +3542,11 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9e1a-e766-345a-763c"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1b0-c36b-896a-98aa"/>
           </constraints>
+        </entryLink>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="440a-bcbb-f6ae-54ab" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="5">
+          <categoryLinks>
+            <categoryLink targetId="6348-ecd0-714d-042a" id="538b-eb82-fbad-79c4" primary="false" name="Prime Recon"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -3602,6 +3718,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a46b-96e8-6f15-1046"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="6d2f-5545-0f2d-c5d1" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="5">
+          <categoryLinks>
+            <categoryLink targetId="c291-144b-3da6-37ed" id="5a08-9b7e-d149-439d" primary="false" name="Prime Fast attack"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="100"/>
@@ -3757,6 +3878,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="720d-7c8b-2f39-d145"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="8a53-b7f2-7e82-040c" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="4">
+          <categoryLinks>
+            <categoryLink name="Prime Heavy assault" hidden="false" id="ad04-eda4-279d-9fae" targetId="1e95-35f0-1353-ffa1" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Karacnos Assault Tank" hidden="false" id="ce4c-753d-aaf1-b4ab" sortIndex="22">
@@ -3858,6 +3984,11 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f229-289d-21a2-1082"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bcb9-3c5d-3995-352b"/>
           </constraints>
+        </entryLink>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="1be1-f186-85bb-52a0" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="7">
+          <categoryLinks>
+            <categoryLink targetId="4460-7bc1-4d80-aecb" id="be60-83c2-3422-4fdb" primary="false" name="Prime Armour"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <costs>
@@ -3973,6 +4104,11 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="173e-01b3-a43f-0826"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fc5-5c7b-3b14-1f31"/>
           </constraints>
+        </entryLink>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="dce4-45ed-862f-7b33" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="5">
+          <categoryLinks>
+            <categoryLink name="Prime Armour" hidden="false" id="e050-0108-c2d0-3fa9" targetId="4460-7bc1-4d80-aecb" primary="false"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -4182,6 +4318,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cde7-d157-0722-e982"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="cd3f-f7e0-af84-2110" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="5">
+          <categoryLinks>
+            <categoryLink name="Prime Elites" hidden="false" id="b1c3-838a-6e9e-8d98" targetId="276f-7a07-a56c-affd" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Krios Venator" hidden="false" id="b444-b85f-85f8-e6f3" sortIndex="24">
@@ -4243,6 +4384,11 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b63a-0e99-4ae2-81a9"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6494-97d1-a0b3-0763"/>
           </constraints>
+        </entryLink>
+        <entryLink import="true" name="Prime Benefits (Mech)" hidden="false" id="8f56-c7ae-4144-abd5" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="5">
+          <categoryLinks>
+            <categoryLink name="Prime Armour" hidden="false" id="f58b-1639-7ad7-b09c" targetId="4460-7bc1-4d80-aecb" primary="false"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
@@ -5471,7 +5617,7 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2354-26ab-2504-1591"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Prime Advantage: Paragon of Metal" hidden="false" id="e6ba-320e-f91f-d533" sortIndex="2">
+        <selectionEntry type="upgrade" import="true" name="Paragon of Metal" hidden="false" id="e6ba-320e-f91f-d533" sortIndex="2">
           <rules>
             <rule name="Prime Advantage: Paragon of Metal" id="f6ee-76a1-2d72-319f" hidden="false">
               <description>This Prime Advantage may only be selected for a Unit composed entirely of Models with both the Automata Type and the Cybernetica Trait. One Model in the Unit for which this Prime Advantage is selected, chosen by the Controlling Player, has its Base Leadership, Intelligence and Willpower modified by +4 each, its base Initiative and Weapon Skill modified by +1 each, and gains the Sergeant Sub-type. The Model that gains these benefits is also counted as a Tech-priest with the Cybernetica Trait for the purposes of The Deus Machina Arcana Benefice only.</description>
@@ -5498,7 +5644,7 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1a2-5187-5c85-53b4"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Prime Advantage: Prime Specimens" hidden="false" id="a533-4a75-9434-4595" sortIndex="3">
+        <selectionEntry type="upgrade" import="true" name="Prime Specimens" hidden="false" id="a533-4a75-9434-4595" sortIndex="3">
           <rules>
             <rule name="Prime Advantage: Prime Specimens" id="8672-1149-d4dd-98a5" hidden="false">
               <description>This Prime Advantage may only be selected for a Unit composed entirely of Models with both the Infantry Type and the Lacrymaerta Trait. All Models in a Unit for which this Prime Advantage is selected have the Base Value of their Strength Characteristic modified by +2 and the Base Value of their Wounds Characteristic modified by +1.</description>
@@ -5524,7 +5670,7 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7158-e5a0-3f85-8513"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Gambit: The Myrmidon&apos;s Path" hidden="false" id="255c-90ef-e8c0-4f1d" sortIndex="4">
+        <selectionEntry type="upgrade" import="true" name="The Myrmidon&apos;s Path" hidden="false" id="255c-90ef-e8c0-4f1d" sortIndex="4">
           <costs>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
@@ -5538,7 +5684,6 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
           </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8588-2e06-e4e9-4072"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c723-d8fd-db81-cc1f"/>
           </constraints>
           <profiles>
             <profile name="Gambit: The Myrmidon&apos;s Path" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="5065-fdbb-ee5b-7d6a">
@@ -5549,7 +5694,7 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Gambit: Power of the Machine Spirit" hidden="false" id="cc6a-f383-7d27-7c27" sortIndex="5">
+        <selectionEntry type="upgrade" import="true" name="Power of the Machine Spirit" hidden="false" id="cc6a-f383-7d27-7c27" sortIndex="5">
           <costs>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
@@ -5578,7 +5723,7 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Prime Advantage: Prime Conveyor" hidden="false" id="5e61-75cf-5a52-a94d" sortIndex="6">
+        <selectionEntry type="upgrade" import="true" name="Prime Conveyor" hidden="false" id="5e61-75cf-5a52-a94d" sortIndex="6">
           <rules>
             <rule name="Prime Advantage: Prime Conveyor" id="07b4-609b-79da-9e49" hidden="false">
               <description>This Prime Advantage may only be selected for a Unit composed of a single Model with the Vehicle Type that does not also have the Super-heavy Sub-Type. A Model for which this Prime Advantage is selected gains a bonus of +1 to its Front and Side Armour Values, to a maximum of 14, +2 to its Hull Points Characterisic. If the Unit selected includes any Models with the Transport Sub-Type, then the Transport Capacity of those Models is also modified by +2.</description>
@@ -5591,9 +5736,10 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
-                <conditionGroup type="and">
+                <conditionGroup type="or">
                   <conditions>
                     <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="1ec3-1433-658a-f04e" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="aa5a-c9fd-1eb1-7a45" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -5603,7 +5749,7 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ee5-9e74-c551-25e8"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Prime Advantage: Thallaxi Principe" hidden="false" id="a3af-b73f-4a1b-efd1" sortIndex="7">
+        <selectionEntry type="upgrade" import="true" name="Thallaxi Principe" hidden="false" id="a3af-b73f-4a1b-efd1" sortIndex="7">
           <rules>
             <rule name="Prime Advantage: Thallaxi Principe" id="fb5f-5a19-5d9c-6215" hidden="false">
               <description>This Prime Advantage may only be selected for a Thallax Cohort Unit. All Models in a Unit with this Prime Advantage increase the Base Value of the Invulnerable Save Characteristic to 5+ and increase the Base Value of their Leadership Characteristic by +1</description>
@@ -5616,9 +5762,10 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
-                <conditionGroup type="and">
+                <conditionGroup type="or">
                   <conditions>
                     <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="e76a-e22d-9fc4-dc1f" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="a4ad-1b49-0303-59b3" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -5636,14 +5783,68 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         <selectionEntry type="upgrade" import="true" name="Cybernetica" hidden="false" id="403d-7806-215e-7676"/>
         <selectionEntry type="upgrade" import="true" name="Lacrymaerta" hidden="false" id="0d7c-dc0a-3942-b4eb"/>
         <selectionEntry type="upgrade" import="true" name="Macrotek" hidden="false" id="67af-3519-2c95-6da0"/>
-        <selectionEntry type="upgrade" import="true" name="Malagra" hidden="false" id="7560-ba42-5273-27fd"/>
-        <selectionEntry type="upgrade" import="true" name="Myrmidax" hidden="false" id="20af-27a5-9296-e90f"/>
+        <selectionEntry type="upgrade" import="true" name="Malagra" hidden="false" id="7560-ba42-5273-27fd">
+          <infoLinks>
+            <infoLink name="Gambit: Power of the Machine Spirit" id="7037-2744-00ca-2735" hidden="false" type="profile" targetId="eda0-465c-3595-e5d7">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="9871-cb62-5283-2216" shared="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Myrmidax" hidden="false" id="20af-27a5-9296-e90f">
+          <infoLinks>
+            <infoLink name="Gambit: The Myrmidon&apos;s Path" id="ea14-3c82-6d00-7e60" hidden="false" type="profile" targetId="5065-fdbb-ee5b-7d6a">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="9871-cb62-5283-2216" shared="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Reductor" hidden="false" id="3f59-64f9-43da-d43e"/>
       </selectionEntries>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1708-2524-e5b2-543e"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8095-8611-6afd-3a8f"/>
       </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Prime Benefits (Mech)" id="4ae1-f3b2-e1c8-165f" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Prime Advantage: Paragon of Metal" hidden="false" id="c6a6-47b0-4926-dd94" type="selectionEntry" targetId="e6ba-320e-f91f-d533" sortIndex="6"/>
+        <entryLink import="true" name="Prime Advantage: Prime Specimens" hidden="false" id="3d61-54d8-f3e6-c097" type="selectionEntry" targetId="a533-4a75-9434-4595" sortIndex="7"/>
+        <entryLink import="true" name="Prime Advantage: Prime Conveyor" hidden="false" id="8855-4255-3c14-bc68" type="selectionEntry" targetId="5e61-75cf-5a52-a94d" sortIndex="8"/>
+        <entryLink import="true" name="Prime Advantage: Thallaxi Principe" hidden="false" id="6c45-965d-4aef-3d33" type="selectionEntry" targetId="a3af-b73f-4a1b-efd1" sortIndex="9"/>
+        <entryLink import="true" name="Combat Veterans" hidden="false" id="521d-139d-0ad1-0943" type="selectionEntry" targetId="8cf8-9be5-91d6-c96d" sortIndex="2"/>
+        <entryLink import="true" name="Master Sergeant" hidden="false" id="3f78-e5d6-b285-dcb1" type="selectionEntry" targetId="2c90-1d52-7075-59d3" sortIndex="1"/>
+        <entryLink import="true" name="Paragon of Battle" hidden="false" id="8b45-ddb4-143a-0ab0" type="selectionEntry" targetId="20cb-4eec-0844-8a97" sortIndex="3">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="9871-cb62-5283-2216" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Logistical Benefit" hidden="false" id="3cbc-73cd-2206-f8a9" type="selectionEntryGroup" targetId="52ae-1a80-a764-d4fd" sortIndex="5"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <entryLinks>

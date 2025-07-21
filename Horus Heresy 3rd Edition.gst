@@ -34,6 +34,11 @@
             <repeat value="1" repeats="1" field="selections" scope="roster" childId="901a-6b71-7a29-4597" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
+        <modifier type="decrement" value="1" field="fa1e-96ba-db0c-d111">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Command" id="6dbf-654a-f06f-2d69" hidden="false"/>
@@ -4562,23 +4567,26 @@
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Common Prime Benefits" id="93f7-d7db-d7f0-2146" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Combat Veterans" hidden="false" id="8cf8-9be5-91d6-c96d">
+        <selectionEntry type="upgrade" import="true" name="Combat Veterans" hidden="false" id="8cf8-9be5-91d6-c96d" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c80-9611-b710-0ca4" includeChildSelections="false"/>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3b6f-8c9d-27b5-9f5d" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Special Assignment" hidden="false" id="c857-47bd-6a4f-fcf8">
+        <selectionEntry type="upgrade" import="true" name="Special Assignment" hidden="false" id="c857-47bd-6a4f-fcf8" sortIndex="4">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b7d-6d09-95fd-18ae" includeChildSelections="false"/>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="97a9-ea67-739b-69bd" includeChildSelections="false"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink targetId="c85c-2963-658f-1bb9" id="c1dc-0919-397c-4986" primary="false" name="Prime Command"/>
+          </categoryLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Master Sergeant" hidden="false" id="2c90-1d52-7075-59d3"/>
-        <selectionEntry type="upgrade" import="true" name="Paragon of Battle" hidden="false" id="20cb-4eec-0844-8a97"/>
+        <selectionEntry type="upgrade" import="true" name="Master Sergeant" hidden="false" id="2c90-1d52-7075-59d3" sortIndex="1"/>
+        <selectionEntry type="upgrade" import="true" name="Paragon of Battle" hidden="false" id="20cb-4eec-0844-8a97" sortIndex="3"/>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Logistical Benefit" id="52ae-1a80-a764-d4fd" hidden="false">
+        <selectionEntryGroup name="Logistical Benefit" id="52ae-1a80-a764-d4fd" hidden="false" sortIndex="5">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="LB - Armour" hidden="false" id="d5b0-22dc-909e-415e" sortIndex="9">
               <constraints>
