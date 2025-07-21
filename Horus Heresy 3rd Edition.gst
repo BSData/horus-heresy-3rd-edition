@@ -4167,7 +4167,7 @@
     </profileType>
   </profileTypes>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Prime Benefit" id="93f7-d7db-d7f0-2146" hidden="false">
+    <selectionEntryGroup name="Common Prime Benefits" id="93f7-d7db-d7f0-2146" hidden="false">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Combat Veterans" hidden="false" id="8cf8-9be5-91d6-c96d">
           <constraints>
@@ -4181,6 +4181,8 @@
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="97a9-ea67-739b-69bd" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Master Sergeant" hidden="false" id="2c90-1d52-7075-59d3"/>
+        <selectionEntry type="upgrade" import="true" name="Paragon of Battle" hidden="false" id="20cb-4eec-0844-8a97"/>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Logistical Benefit" id="52ae-1a80-a764-d4fd" hidden="false">
