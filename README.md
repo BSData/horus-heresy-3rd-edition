@@ -32,6 +32,16 @@ For example:
 - The Sergeant is a Mandatory Model and thus costs 0pts
 - The remaining 37pts is placed on the unit itself
 
+# 2: Stylistic Choices
+## 2.1 Options within SSEGs
+Options within SSEGs should always be ordered in the same order they appear in any official publication
+## 2.2 Options alongside SSGEs
+If a unit has an option alongside an SSEG, eg "May take a Volkite Charger or an item from the Legion Combi-weapons List" then non-SSEG items must always appear first in the group, above SSEGs, sorted by pts value in ascending order
+## 2.3 Capitalisation
+Copy what is printed in the books.
+- If the book has something as Upper Upper, eg "Legion Officer Wargear" then capitalise every word.
+- If the book does not capitalise something, eg "Any model may exchange their *bolter*..." then it does not need to be capitalised unless it is the first owrd in a string/sentence/label.
+
 ## BSData Overview ##
 
 __What's this?__
