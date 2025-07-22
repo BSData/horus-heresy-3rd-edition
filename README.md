@@ -42,23 +42,21 @@ Copy what is printed in the books.
 - If the book has something as Upper Upper, eg "Legion Officer Wargear" then capitalise every word.
 - If the book does not capitalise something, eg "Any model may exchange their *bolter*..." then it does not need to be capitalised unless it is the first owrd in a string/sentence/label.
 
-## BSData Overview ##
-
-__What's this?__
-
-BSData organisation created this project. It's a GitHub repository of datafiles.
-Maintained by community, in no way endorsed by BattleScribe or any other company/publisher. If you want
-to develop - cool! We need you! Take a look at [our homepage][BSData.net]
-
-__Okay, nice project. Is it actually working?__ _I just want those files..._
-
-Yeah! We have it hosted on AppSpot. Take a look: [BattleScribe Data on Appspot][]
-
-__I found a bug!__ / *I have another request*
-
-Great, thank you! Please [Report a bug][bug report] - you can also suggest enhancements and raise other issues there.
-
-## Links ##
+# 3: Default Inclusions on Units
+## 3.1: Astartes Units
+All Astartes units should have the following Traits at the root level of the unit (Add Link -> Profile -> Search for them):
+- \[Allegiance]
+- \[Legiones Astartes]
+## Mechanicum Units
+All Mechanicum units should have the following Traits at the root level of the unit (Add Link -> Profile -> Search for them):
+- \[Allegiance]
+## Solar Auxilia Units
+All Auxilia units should have the following Traits at the root level of the unit (Add Link -> Profile -> Search for them):
+- \[Allegiance]
+-  Solar Auxilia
+## Questoris Household Units
+All Auxilia units should have the following Traits at the root level of the unit (Add Link -> Profile -> Search for them):
+- \[Allegiance]
 
 * [BSData organization homepage][BSData.net]
 * [BattleScribe app homepage](https://www.battlescribe.net/)
