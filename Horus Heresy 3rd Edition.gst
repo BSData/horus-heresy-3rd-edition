@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -190,6 +190,27 @@
     <categoryEntry name="Automata Model Type" id="5833-5e86-26bc-0916" hidden="false" publicationId="7d63-5df4-c656-52de" page="175">
       <rules>
         <rule name="New Rule" id="a7d3-aaa8-8179-33d1" hidden="false"/>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Prime War-engine" id="9699-67c9-2c0b-e64b" hidden="false"/>
+    <categoryEntry name="Prime Support" id="1c79-ecdf-9a64-84c9" hidden="false"/>
+    <categoryEntry name="Prime Transport" id="fc27-1a48-84ae-aa7b" hidden="false"/>
+    <categoryEntry name="Prime Heavy assault" id="1e95-35f0-1353-ffa1" hidden="false"/>
+    <categoryEntry name="Prime Heavy transport" id="abff-3686-c39a-9a24" hidden="false"/>
+    <categoryEntry name="Prime Armour" id="4460-7bc1-4d80-aecb" hidden="false"/>
+    <categoryEntry name="Prime Recon" id="6348-ecd0-714d-042a" hidden="false"/>
+    <categoryEntry name="Prime Fast attack" id="c291-144b-3da6-37ed" hidden="false"/>
+    <categoryEntry name="Vehicle Model Type" id="aa5a-c9fd-1eb1-7a45" hidden="false"/>
+    <categoryEntry name="Rapid Sub-Type" id="a5c6-b359-cecb-e0b1" hidden="false"/>
+    <categoryEntry name="Unstoppable Sub-Type" id="5555-f37e-8ad0-20c0" hidden="false">
+      <rules>
+        <rule name="Unstoppable Sub-Type" id="263f-be63-a120-1f2f" hidden="false">
+          <description>The following Rules apply to all Models with the Unstoppable Sub-Type:
+• A Unit comprised entirely of Models with this Sub-Type is never Locked in Combat, and during the Movement Phase may move normally even if there is an enemy Model in Base Contact with it. Enemy Models in Base Contact with such a Model in the Assault Phase may attack it as thought they were Locked in Combat and engaged with it.
+• A Model with this Sub-Type may move through enemy Models if it began the Movement Phase in Base Contact with one or move enemy Models - but may not end a move in the Movement Phase in Base Contact with an enemy Model.
+• A Model with this Sub-Type may never Embark on a Model with the Transport Sub-Type, even if another Special Rule would allow it to do so.
+• While there are one or more enemy Models in Base Contact with a Model with this Sub-Type, the Model with this Sub-Type may not make Shooting Attacks, even though it does not count as being Locked in Combat.</description>
+        </rule>
       </rules>
     </categoryEntry>
   </categoryEntries>
@@ -2572,6 +2593,340 @@
             </modifier>
           </modifiers>
         </forceEntry>
+        <forceEntry name="Auxiliary - Tagmata Cohort" id="59b8-2183-4bab-b91c" hidden="true" sortIndex="13">
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="aaf9-4c82-2830-47b6" targetId="345f-9ba6-9b02-ed5c">
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="force" shared="true" id="ec08-2ba4-b38c-8746" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                      </conditions>
+                      <comment>Mechanicum</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Mechanicum only</comment>
+            </modifier>
+          </modifiers>
+        </forceEntry>
+        <forceEntry name="Auxiliary - Apprentice Cadre" id="6e73-e03d-9ae7-fd33" hidden="true" sortIndex="14">
+          <categoryLinks>
+            <categoryLink name="Troops" hidden="false" id="b964-d2eb-562c-17b1" targetId="88e6-d373-4152-0dd8">
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="force" shared="true" id="d17a-1b20-7ed3-f6b9" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Troops" hidden="false" id="a9b4-9c31-01ac-0c8b" targetId="c3f9-a7f3-984b-3fda">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b649-61e8-62cb-a4b0" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                      </conditions>
+                      <comment>Mechanicum</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Mechanicum only</comment>
+            </modifier>
+          </modifiers>
+        </forceEntry>
+        <forceEntry name="Apex - The Hearth of Power" id="0594-4b9b-675b-f633" hidden="true" sortIndex="15">
+          <categoryLinks>
+            <categoryLink name="Retinue" hidden="false" id="c224-b95f-a73a-ea18" targetId="a38e-50ff-310f-f19e">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="force" shared="true" id="15ee-6d6c-95a1-c556" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Troops" hidden="false" id="6193-d328-43af-a157" targetId="88e6-d373-4152-0dd8">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="force" shared="true" id="432d-8f1f-69e5-ae1a" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Troops" hidden="false" id="d328-63f2-eacd-6993" targetId="c3f9-a7f3-984b-3fda">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="force" shared="true" id="4f87-3280-8817-9aa0" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Retinue" hidden="false" id="f067-4ed1-baca-a150" targetId="c66b-ef39-b20f-725b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="01b3-450e-6e90-b041" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                      </conditions>
+                      <comment>Mechanicum</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Mechanicum only</comment>
+            </modifier>
+          </modifiers>
+        </forceEntry>
+        <forceEntry name="Apex - Command Maniple" id="dbe3-9946-d4de-dc73" hidden="true" sortIndex="16">
+          <categoryLinks>
+            <categoryLink name="Elites" hidden="false" id="0ed6-de35-f804-23a7" targetId="5d5e-958f-e388-50b5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8b8e-2c6e-7930-733e" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Elites" hidden="false" id="3c7c-3630-9acc-562b" targetId="276f-7a07-a56c-affd">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e97e-ebbe-716f-69c7" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Support" hidden="false" id="bbf6-da5f-87f7-a428" targetId="345f-9ba6-9b02-ed5c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="68f2-1777-ac43-88ed" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="War-engine" hidden="false" id="08d9-03ab-a94f-20fa" targetId="2499-7239-685f-8465">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="487b-d91d-5d23-8bd7" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Support" hidden="false" id="90ba-7fdf-aa67-9877" targetId="1c79-ecdf-9a64-84c9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="a8ec-422f-f6b1-8c29" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime War-engine" hidden="false" id="4a65-58fd-eaab-5227" targetId="9699-67c9-2c0b-e64b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="af49-4137-108e-9410" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                      </conditions>
+                      <comment>Mechanicum</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Mechanicum only</comment>
+            </modifier>
+          </modifiers>
+        </forceEntry>
+        <forceEntry name="Apex - The Panoply of Cruelty" id="d5e2-3162-f591-6a81" hidden="true" sortIndex="17">
+          <categoryLinks>
+            <categoryLink name="Heavy Assault" hidden="false" id="b6ee-4b0b-f3f4-d9f4" targetId="3235-bd79-e9b1-60fa">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="force" shared="true" id="9bb1-6117-1074-8829" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Heavy assault" hidden="false" id="7858-baba-5c90-c845" targetId="1e95-35f0-1353-ffa1">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="force" shared="true" id="b327-c9e2-cbd8-c6dd" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                      </conditions>
+                      <comment>Mechanicum</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Mechanicum only</comment>
+            </modifier>
+          </modifiers>
+        </forceEntry>
+        <forceEntry name="Apex - The Host of Destruction" id="1db9-6dc0-7da5-e517" hidden="true" sortIndex="18">
+          <categoryLinks>
+            <categoryLink name="Elites" hidden="false" id="81bd-4c80-78a2-86cc" targetId="5d5e-958f-e388-50b5">
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="force" shared="true" id="ab72-b6c7-109a-0093" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Elites" hidden="false" id="3170-c475-414a-5306" targetId="276f-7a07-a56c-affd">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f3db-6a01-37c5-5b27" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                      </conditions>
+                      <comment>Mechanicum</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Mechanicum only</comment>
+            </modifier>
+          </modifiers>
+        </forceEntry>
+        <forceEntry name="Apex - Crux of Judgement" id="4f19-3023-0077-1049" hidden="true" sortIndex="19">
+          <categoryLinks>
+            <categoryLink name="Command" hidden="false" id="7023-93dc-4fda-c76a" targetId="6dbf-654a-f06f-2d69">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="force" shared="true" id="83c4-a1e7-c38c-e164" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                      </conditions>
+                      <comment>Mechanicum</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Mechanicum only</comment>
+            </modifier>
+          </modifiers>
+        </forceEntry>
+        <forceEntry name="Apex - Iron Phalanx (Needs Prime Armour/Heavy Transport)" id="a782-7985-325b-1840" hidden="true" sortIndex="20">
+          <categoryLinks>
+            <categoryLink name="Armour" hidden="false" id="08ab-b51f-53b5-8bdb" targetId="643a-1012-bd51-6537">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="force" shared="true" id="5cb2-b22a-d3cc-30d5" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Heavy Transport" hidden="false" id="9ad9-6704-b303-061b" targetId="52d0-8b78-439e-18e5">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="force" shared="true" id="aa4b-9edd-69b6-8369" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Armour" hidden="false" id="12a3-bb11-5f11-b088" targetId="4460-7bc1-4d80-aecb">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="force" shared="true" id="30c6-efe4-2c42-4de1" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Heavy transport" hidden="false" id="43ad-eb3c-ec25-e7f6" targetId="abff-3686-c39a-9a24">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="force" shared="true" id="e480-9bfa-a46f-c224" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                      </conditions>
+                      <comment>Mechanicum</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Mechanicum only</comment>
+            </modifier>
+          </modifiers>
+        </forceEntry>
+        <forceEntry name="Apex - Thallax Command Cohort (Needs Prime Support)" id="7f03-c1a3-d883-8a98" hidden="true" sortIndex="21">
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="46b3-d841-3b96-79d0" targetId="345f-9ba6-9b02-ed5c">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="force" shared="true" id="a92e-fe8c-1f4f-78c2" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Support" hidden="false" id="3db6-b6bc-0e38-f2ca" targetId="1c79-ecdf-9a64-84c9">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="force" shared="true" id="eec6-e569-ed5c-2fb5" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                      </conditions>
+                      <comment>Mechanicum</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Mechanicum only</comment>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                      </conditions>
+                      <comment>Mechanicum</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Mechanicum only</comment>
+            </modifier>
+          </modifiers>
+        </forceEntry>
       </forceEntries>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="dae8-8a74-0984-6332" includeChildSelections="false"/>
@@ -3949,6 +4304,29 @@
             </modifier>
           </modifiers>
         </forceEntry>
+        <forceEntry name="Auxiliary - Tagmata Cohort" id="86c3-d6c6-5808-f7de" hidden="false" sortIndex="9">
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="184a-f7ba-9e0b-0344" targetId="345f-9ba6-9b02-ed5c">
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="force" shared="true" id="2c94-594a-7495-8c7c" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+        </forceEntry>
+        <forceEntry name="Auxiliary - Apprentice Cadre" id="8298-6fba-36bb-3c13" hidden="false" sortIndex="10">
+          <categoryLinks>
+            <categoryLink name="Troops" hidden="false" id="3125-3815-2d65-6083" targetId="88e6-d373-4152-0dd8">
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="force" shared="true" id="1563-cfca-ec18-b863" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Troops" hidden="false" id="1f28-33ad-3ff7-a318" targetId="c3f9-a7f3-984b-3fda">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f373-8abc-11b3-fd79" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+        </forceEntry>
       </forceEntries>
     </forceEntry>
     <forceEntry name="Lord of War Detachment" id="b7a1-629f-9d60-c2a9" hidden="false" sortIndex="3">
@@ -4165,6 +4543,21 @@
         <characteristicType name="Transport Capacity" id="7df3-dabd-eed0-50bf"/>
       </characteristicTypes>
     </profileType>
+    <profileType name="Gambit:" id="9b5f-da4e-5739-cbcf" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Summary" id="98f3-41cf-e3be-2ae7"/>
+        <characteristicType name="Description" id="2d7d-b1d9-dead-605a"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Cybertheurgic Rite:" id="230a-eef9-447d-6623" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Difficulty:" id="0c1a-8118-86ae-28a7"/>
+        <characteristicType name="Range:" id="b98e-e5fa-6a28-2efe"/>
+        <characteristicType name="Restrictions:" id="d3e5-69ce-a8d9-97db"/>
+        <characteristicType name="Effect:" id="dae4-c869-d27c-9025"/>
+        <characteristicType name="Duration:" id="7c83-ff4d-0f5a-55b3"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Common Prime Benefits" id="93f7-d7db-d7f0-2146" hidden="false">
@@ -4281,4 +4674,12 @@
     <rule name="Sergeant Unit Sub-type" id="de7e-d90d-ffb6-c740" hidden="false"/>
     <rule name="Command Unit Sub-type" id="7b6d-2e0d-8659-252d" hidden="false"/>
   </sharedRules>
+  <sharedProfiles>
+    <profile name="New Profile" typeId="e7bb-e864-2195-b3f7" typeName="Cybertheurgic Rite" hidden="false" id="bd82-19b9-0923-5da2">
+      <characteristics>
+        <characteristic name="Difficulty:" typeId="86d3-2d27-fd61-d020"/>
+        <characteristic name="Range:" typeId="af46-4595-7eda-1c84"/>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </gameSystem>
