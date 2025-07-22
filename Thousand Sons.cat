@@ -37,11 +37,6 @@
                 <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">While this Model is engaged in a Challenge, the Controlling Player gains a positive modifier to their Focus Roll equal to Magnus the Red&apos;s Base Willpower Characteristic minus the Base Willpower Characteristic of the opposing Model in the Challenge.</characteristic>
               </characteristics>
             </profile>
-            <profile name="Magnus the Red" typeId="9d66-ed77-3c90-a25b" typeName="Special Rules" hidden="false" id="ecac-6bfb-1820-e65e">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="1f0a-9756-0d8f-47e3">Sire of the Thousand Sons (Magnus), Bulky (5), Arch-Sorcerer, Shrouded (6+), Battle of the Wills, Eternal Warrior (2)</characteristic>
-              </characteristics>
-            </profile>
           </profiles>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2af9-ec59-7c80-da96-min" includeChildSelections="false"/>
@@ -289,18 +284,6 @@ Until the end of the first Battle Turn of the Battle, whenever the Controlling P
                 <modifier type="increment" value="1" field="f714-1726-37d3-44df" position="0">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </profile>
-            <profile name="Ahzek Ahriman" typeId="9d66-ed77-3c90-a25b" typeName="Special Rules" hidden="false" id="633e-f70c-91a0-c59a">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="1f0a-9756-0d8f-47e3">Arch-Magister of the Corvidae</characteristic>
-              </characteristics>
-              <modifiers>
-                <modifier type="append" value="Sire of the Thousand Sons" field="name" join=", ">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf2e-fa27-23ce-7502" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -690,18 +673,6 @@ Until the end of the first Battle Turn of the Battle, whenever the Controlling P
                 </modifier>
               </modifiers>
             </profile>
-            <profile name="Magistus Amon" typeId="9d66-ed77-3c90-a25b" hidden="false" id="c8c1-c72a-c131-8081" typeName="Special Rules">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="1f0a-9756-0d8f-47e3">Infiltrate (9), Magister of Dust</characteristic>
-              </characteristics>
-              <modifiers>
-                <modifier type="append" value="Sire of the Thousand Sons" field="1f0a-9756-0d8f-47e3" join=", ">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf2e-fa27-23ce-7502" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </profile>
           </profiles>
           <entryLinks>
             <entryLink import="true" name="Frag grenades" hidden="false" id="c9fc-8121-fe24-5e63" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="2">
@@ -849,18 +820,6 @@ Until the end of the first Battle Turn of the Battle, whenever the Controlling P
                 <modifier type="increment" value="1" field="f714-1726-37d3-44df" position="0">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </profile>
-            <profile name="Prosperine Sorcerer" typeId="9d66-ed77-3c90-a25b" typeName="Special Rules" hidden="false" id="e1b0-b6bf-f8c3-c2da">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="1f0a-9756-0d8f-47e3">Prosperine Sorcery</characteristic>
-              </characteristics>
-              <modifiers>
-                <modifier type="append" value="Sire of the Thousand Sons" field="1f0a-9756-0d8f-47e3" join=", ">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf2e-fa27-23ce-7502" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1335,20 +1294,6 @@ Immovable Force (Telekinesis Discipline)</description>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
-      <profiles>
-        <profile name="Sekhmet Terminator Cabal" typeId="9d66-ed77-3c90-a25b" typeName="Special Rules" hidden="false" id="9f6d-65cf-8469-5710">
-          <characteristics>
-            <characteristic name="Special Rules" typeId="1f0a-9756-0d8f-47e3">Bulky (2), Implacable Advance, Slow and Purposeful, Vanguard (3)</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="append" value="Sire of the Thousand Sons" field="1f0a-9756-0d8f-47e3" join=", ">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf2e-fa27-23ce-7502" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink name="Vanguard (X)" id="f510-ca3c-6e0d-ea71" hidden="false" type="rule" targetId="530f-b733-993c-ec84">
           <modifiers>
@@ -1556,18 +1501,6 @@ Immovable Force (Telekinesis Discipline)</description>
 3. If the Manifestation Check fails then there is no further effect.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Khenetai Occult Cabal" typeId="9d66-ed77-3c90-a25b" typeName="Special Rules" hidden="false" id="d398-92cf-482b-7f75">
-          <characteristics>
-            <characteristic name="Special Rules" typeId="1f0a-9756-0d8f-47e3">Warriors of the Khenetai</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="append" value="Sire of the Thousand Sons" field="1f0a-9756-0d8f-47e3" join=", ">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf2e-fa27-23ce-7502" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
         <profile name="Bladeweaving" typeId="d59e-df4b-630f-f185" typeName="Psychic Reaction" hidden="false" id="8efd-a0ab-75fb-c62a">
           <characteristics>
             <characteristic name="Summary" typeId="c8a8-29f2-605b-5969">This Psychic Reaction allows the Unit to gain an Invulnerable Save against Volley and Melee Attacks.</characteristic>
@@ -1650,18 +1583,6 @@ The &apos;Khenetai&apos; Trait</description>
                 <modifier type="increment" value="1" field="f714-1726-37d3-44df" position="0">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </profile>
-            <profile name="Contemptor-Osiron Dreadnought" typeId="9d66-ed77-3c90-a25b" typeName="Special Rules" hidden="false" id="640f-a027-2f27-d492">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="1f0a-9756-0d8f-47e3">Bulky (4), Explodes (5+), Implacable Advance</characteristic>
-              </characteristics>
-              <modifiers>
-                <modifier type="append" value="Sire of the Thousand Sons" field="1f0a-9756-0d8f-47e3" join=", ">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf2e-fa27-23ce-7502" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1857,18 +1778,6 @@ The &apos;Khenetai&apos; Trait</description>
                 <modifier type="increment" value="1" field="f714-1726-37d3-44df" position="0">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </profile>
-            <profile name="Castellax-Achea" typeId="9d66-ed77-3c90-a25b" typeName="Special Rules" hidden="false" id="7bc8-4a76-1bbe-a3ec">
-              <characteristics>
-                <characteristic name="Special Rules" typeId="1f0a-9756-0d8f-47e3">Bulky (4), Explodes (6+), Psychic Conduit, Implacable Advance, Firestorm, Firing Protocols (3)</characteristic>
-              </characteristics>
-              <modifiers>
-                <modifier type="append" value="Sire of the Thousand Sons" field="1f0a-9756-0d8f-47e3" join=", ">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="cf2e-fa27-23ce-7502" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2211,11 +2120,4 @@ If a Unit that has a Prosperine Arcana is granted a Psychic Weapon, only one Mo
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="9863-e315-c4d7-2078" hidden="false" childForcesLabel="Auxillary and Apex Detachments"/>
   </forceEntries>
-  <profileTypes>
-    <profileType name="Special Rules" id="9d66-ed77-3c90-a25b" hidden="false" sortIndex="9">
-      <characteristicTypes>
-        <characteristicType name="Special Rules" id="1f0a-9756-0d8f-47e3"/>
-      </characteristicTypes>
-    </profileType>
-  </profileTypes>
 </catalogue>
