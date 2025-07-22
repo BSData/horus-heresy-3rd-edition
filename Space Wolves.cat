@@ -9,7 +9,7 @@
     <catalogueLink type="catalogue" name="Weapons" id="0caa-5ca3-55e2-d571" importRootEntries="false" targetId="a22d-4dd0-c59d-57d3"/>
   </catalogueLinks>
   <sharedSelectionEntries>
-    <selectionEntry type="unit" import="true" name="Leman Russ" hidden="false" id="e308-c9ee-3be5-0f71">
+    <selectionEntry type="unit" import="true" name="Leman Russ" hidden="false" id="e308-c9ee-3be5-0f71" publicationId="b905-0414-1057-bb34" page="168-169">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Leman Russ" hidden="false" id="228b-6ba2-b03f-cdc8">
           <profiles>
@@ -50,7 +50,7 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Deathsworn Pack" hidden="false" id="cb82-a73f-b30f-c30f">
+    <selectionEntry type="unit" import="true" name="Deathsworn Pack" hidden="false" id="cb82-a73f-b30f-c30f" publicationId="b905-0414-1057-bb34" page="176">
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="6046-671e-4f32-16f7" primary="true" name="Heavy Assault"/>
       </categoryLinks>
@@ -65,6 +65,45 @@
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="Power axe" hidden="false" id="8ffe-0ed3-44a1-1bf4" type="selectionEntry" targetId="4861-b77a-620c-f0d6" sortIndex="">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a1e-72d6-23c2-c9ae"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17b8-0781-e64c-d2d9"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="195a-174b-6ed2-de71" type="selectionEntry" targetId="2942-f783-d627-33c5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a21-5d10-63b9-0a49"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92d3-1760-9ce9-9938"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Frag grenades" hidden="false" id="7b2a-ff06-9eb7-6e96" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1fa8-94d9-8229-016c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31cb-c878-a9f5-d90d"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Krak grenades" hidden="false" id="bafc-0571-7dba-5725" type="selectionEntry" targetId="0c9b-a32b-87e2-fc3e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="13f7-292f-4b0b-8606"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9086-ca0d-3fa9-2301"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ymira class statis bombs" hidden="false" id="6c39-ba8a-922d-1f89">
+              <rules>
+                <rule name="Ymira class stasis bombs" id="b242-983e-0849-d555" hidden="false">
+                  <description>When the Target Unit of an enemy Charge Move is not already Locked in Combat and includes at least one Model with Ymira class stasis bombs, then any Charge Roll made is determined by rolling 2D6 and discarding the highest result instead of the lowest result. </description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d1dc-344d-930e-7fe0"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="471e-170e-bc16-a582"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -72,8 +111,45 @@
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <rules>
+        <rule name="The Dreams of the Death Wolf" id="2426-7053-7aa7-e784" hidden="false">
+          <description>During Initiative Step 1 of any Combat that includes one or more Models with this Special Rule, the Controlling Player may make one additional attack for each Model with this Special Rule that has been Removed as a Casualty during any preceding Initiative Steps of that Combat. These attacks can target any enemy Unit in that Combat and use the following profile. </description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="Deathsworn Pack" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="9632-b977-8572-c46d">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+            <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+            <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
+            <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+            <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+            <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+            <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">2</characteristic>
+            <characteristic name="I" typeId="af9d-7db8-dc95-71c1">4</characteristic>
+            <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+            <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">8</characteristic>
+            <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">7</characteristic>
+            <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+            <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+            <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+            <characteristic name="INV" typeId="a951-a772-7ce0-0b64"/>
+          </characteristics>
+        </profile>
+        <profile name="Dreams of the Death Wolf" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="643d-a7d1-1d3a-403a">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">1</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">1</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+1</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467"/>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Geigor Fell-Hand" hidden="false" id="8280-b241-c837-f3ca">
+    <selectionEntry type="unit" import="true" name="Geigor Fell-Hand" hidden="false" id="8280-b241-c837-f3ca" publicationId="b905-0414-1057-bb34" page="171">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="40e0-83d0-d68c-8a92" primary="true" name="Command"/>
       </categoryLinks>
@@ -82,8 +158,98 @@
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Bolter" hidden="false" id="407a-88e1-248a-4228" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f832-4b41-596b-9d40"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f52-b8fa-eb1a-d4e6"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Bolt pistol" hidden="false" id="3535-2d2b-68e6-ce4a" type="selectionEntry" targetId="2942-f783-d627-33c5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5544-7035-abf9-878a"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53d7-e16a-ea24-50a5"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Frag grenades" hidden="false" id="6bf5-de0f-7997-b084" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a977-ec2f-eade-370d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16a9-df73-4ba4-8730"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak grenades" hidden="false" id="052f-86da-15d0-e6c1" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="93d4-78ee-3ba8-9cdd"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf15-7409-f9e9-fc3d"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="The Fell-hand" hidden="false" id="9aa8-2840-1cf4-5d8d">
+          <profiles>
+            <profile name="The Fell-hand" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="f282-70ae-2e22-c214">
+              <characteristics>
+                <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+                <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+                <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+                <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+                <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (4+), Shred(5+)</characteristic>
+                <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Breaching (X)" id="1479-0213-3780-b744" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+              <comment>4</comment>
+              <modifiers>
+                <modifier type="set" value="Breaching (4+)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6074-13e3-48d0-cc88"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f416-4908-9941-3079"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Geigor Fell-Hand" hidden="false" id="bf8e-a6ed-a23f-8a2d">
+          <profiles>
+            <profile name="Geigor Fell-Hand" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="d005-ae99-9b77-3dab">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Unique, Command)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">3</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">4</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">10</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">9</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">8</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82c8-98b4-a12a-e999"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0c8-5568-3286-8fab"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Officer of the Line (X)" id="b89f-4074-20d4-ee91" hidden="false" type="rule" targetId="7779-47c8-99a8-b935">
+          <modifiers>
+            <modifier type="set" value="Officer of the Line (2)" field="name"/>
+          </modifiers>
+          <comment>2</comment>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Grey Slayer Pack" hidden="false" id="9a43-13b5-bd92-d8be">
+    <selectionEntry type="unit" import="true" name="Grey Slayer Pack" hidden="false" id="9a43-13b5-bd92-d8be" publicationId="b905-0414-1057-bb34" page="177">
       <categoryLinks>
         <categoryLink targetId="88e6-d373-4152-0dd8" id="e020-ad87-c442-be7c" primary="true" name="Troops"/>
       </categoryLinks>
@@ -112,7 +278,7 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Hvarl Red-Blade" hidden="false" id="a681-0e72-a7fa-7bdd">
+    <selectionEntry type="unit" import="true" name="Hvarl Red-Blade" hidden="false" id="a681-0e72-a7fa-7bdd" publicationId="b905-0414-1057-bb34" page="170">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="8f82-96f2-73e6-ae4e" primary="true" name="Command"/>
       </categoryLinks>
@@ -122,7 +288,7 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Varagyr Wolf Guard Terminators" hidden="false" id="efd1-c611-841f-0cbb">
+    <selectionEntry type="unit" import="true" name="Varagyr Wolf Guard Terminators" hidden="false" id="efd1-c611-841f-0cbb" publicationId="b905-0414-1057-bb34" page="175">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Thegn" hidden="false" id="e34d-2033-1311-7500" sortIndex="1">
           <constraints>
@@ -148,7 +314,7 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Wolf-kin of Russ" hidden="false" id="ce16-cc72-704a-bd2d">
+    <selectionEntry type="unit" import="true" name="Wolf-kin of Russ" hidden="false" id="ce16-cc72-704a-bd2d" publicationId="b905-0414-1057-bb34" page="174">
       <categoryLinks>
         <categoryLink targetId="a38e-50ff-310f-f19e" id="8049-9237-783c-5193" primary="true" name="Retinue"/>
       </categoryLinks>
@@ -172,7 +338,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Caster of Runes" hidden="false" id="0fe3-fde9-4086-e3ab">
+    <selectionEntry type="unit" import="true" name="Caster of Runes" hidden="false" id="0fe3-fde9-4086-e3ab" publicationId="b905-0414-1057-bb34" page="172">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="23be-aeb9-eb69-41c9" primary="true" name="Command"/>
       </categoryLinks>
