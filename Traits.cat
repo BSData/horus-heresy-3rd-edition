@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="df17-7a05-0826-6e22" name="Traits" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="1" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue library="true" id="df17-7a05-0826-6e22" name="Traits" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="2" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedProfiles>
     <profile name="Master of the Legion" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="6cd2-96be-b703-6d57">
       <characteristics>
@@ -141,4 +141,139 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <categoryEntries>
+    <categoryEntry name="Master of the Legion" id="e3cd-7a38-34d7-9cbf" hidden="false"/>
+    <categoryEntry name="Traitor" id="d251-944b-3c3b-0579" hidden="false"/>
+    <categoryEntry name="Psyker" id="9254-b1e9-98b2-6101" hidden="false"/>
+    <categoryEntry name="Smokescreen" id="49fc-361e-9168-c460" hidden="false"/>
+    <categoryEntry name="Dark Angels" id="9776-4805-2e0b-1f0f" hidden="false"/>
+    <categoryEntry name="Loyalist" id="4381-ed35-c3fa-a225" hidden="false"/>
+    <categoryEntry name="Thousand Sons" id="7c3f-93c7-d5b9-89e3" hidden="false"/>
+    <categoryEntry name="Alpha Legion" id="a114-fe5b-0a4f-632e" hidden="false"/>
+    <categoryEntry name="Raven Guard" id="4346-67d5-360d-89fa" hidden="false"/>
+    <categoryEntry name="Emperor&apos;s Children" id="a364-a983-c2b2-cbc7" hidden="false"/>
+    <categoryEntry name="Iron Warriors" id="b5d8-c965-7970-673f" hidden="false"/>
+    <categoryEntry name="White Scars" id="ad95-5dc4-7b15-8ff3" hidden="false"/>
+    <categoryEntry name="Space Wolves" id="f804-d214-a195-58e7" hidden="false"/>
+    <categoryEntry name="Imperial Fists" id="450e-112d-a64a-ef6e" hidden="false"/>
+    <categoryEntry name="Night Lords" id="9c9d-4e53-09d5-8748" hidden="false"/>
+    <categoryEntry name="Blood Angels" id="53b2-d251-a827-8e73" hidden="false"/>
+    <categoryEntry name="Iron Hands" id="3db6-86ea-fd61-340b" hidden="false"/>
+    <categoryEntry name="World Eaters" id="48b7-17a8-eaf4-d6c2" hidden="false"/>
+    <categoryEntry name="Ultramarines" id="7fcf-5885-0a4d-ee31" hidden="false"/>
+    <categoryEntry name="Death Guard" id="2399-482f-47f3-add5" hidden="false"/>
+    <categoryEntry name="Sons of Horus" id="3b0c-6e3a-f5cd-02cd" hidden="false"/>
+    <categoryEntry name="Word Bearers" id="2aba-8953-ea2f-ce59" hidden="false"/>
+    <categoryEntry name="Salamanders" id="f6fe-18f5-7b4d-b57a" hidden="false"/>
+  </categoryEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Allegiance Traits" id="edd3-9763-97ca-0323" hidden="false">
+      <modifiers>
+        <modifier type="add" value="d251-944b-3c3b-0579" field="category" scope="parent">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="4381-ed35-c3fa-a225" field="category" scope="parent">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Legiones Astartes Trait" id="3014-5f25-bc3b-4675" hidden="false">
+      <modifiers>
+        <modifier type="add" value="9776-4805-2e0b-1f0f" field="category" scope="parent">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="a364-a983-c2b2-cbc7" field="category" scope="parent">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="9a22-d01f-ab5c-ec07" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="b5d8-c965-7970-673f" field="category" scope="parent">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="21c0-18db-03dd-ae07" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="ad95-5dc4-7b15-8ff3" field="category" scope="parent">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f7b4-2531-0962-1379" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="f804-d214-a195-58e7" field="category" scope="parent">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d995-cb33-be41-ecf8" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="450e-112d-a64a-ef6e" field="category" scope="parent">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d186-cffc-0950-f632" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9c9d-4e53-09d5-8748" field="category" scope="parent">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="486f-b32a-ac87-73dd" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="53b2-d251-a827-8e73" field="category" scope="parent">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9cff-ac34-56ca-260f" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="3db6-86ea-fd61-340b" field="category" scope="parent">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="736e-3967-e72b-e3ac" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="48b7-17a8-eaf4-d6c2" field="category" scope="parent">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a956-190d-3b47-6258" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="7fcf-5885-0a4d-ee31" field="category" scope="parent">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="656a-07b6-d4fd-57af" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="2399-482f-47f3-add5" field="category" scope="parent">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="be98-aa9d-64ef-f62c" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="7c3f-93c7-d5b9-89e3" field="category" scope="parent">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="3b0c-6e3a-f5cd-02cd" field="category" scope="parent">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ac06-fcec-b634-5bd9" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="2aba-8953-ea2f-ce59" field="category" scope="parent">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4935-1832-63f7-91aa" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="f6fe-18f5-7b4d-b57a" field="category" scope="parent">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f148-a6e4-5a8c-3aeb" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="4346-67d5-360d-89fa" field="category" scope="parent">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="340c-1d4f-1f31-fb70" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="a114-fe5b-0a4f-632e" field="category" scope="parent">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="8813-5298-c368-ee16" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
