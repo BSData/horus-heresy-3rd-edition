@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="106b-693b-99f2-00c3" name="Special Rules" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue library="true" id="106b-693b-99f2-00c3" name="Special Rules" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedRules>
     <rule name="Interdiction Cadres" id="a752-1dc3-403e-9336" hidden="false"/>
     <rule name="Concealed Positions" id="3595-4991-0833-7b8b" hidden="false"/>
@@ -118,6 +118,10 @@ A model with the Shrouded (X) Special Rule gains a Shrouded Damage Mitigation Te
     <rule name="Vanguard (X)" id="530f-b733-993c-ec84" hidden="false" publicationId="7d63-5df4-c656-52de" page="339">
       <comment>Needs Rule</comment>
     </rule>
+    <rule name="The Angels of Death" id="f604-7cda-4525-0d09" hidden="false">
+      <description>&quot;Negative modifiers to Dark Angels&apos; Leadership, Willpower, Cool and Intelligence are limited.&quot;
+Models with this Special Rule may never have their Leadership Characteristic modified to less than 6. Additionally, any variant of Fear (X) Special Rule may only reduce the Leadership, Willpower, Cool and Intelligence Characteristics of any Model with this Special Rule by a maximum of 1, regardless of the value of X.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Telepathy" hidden="false" id="e09e-1438-3205-2a57"/>
@@ -126,6 +130,58 @@ A model with the Shrouded (X) Special Rule gains a Shrouded Damage Mitigation Te
     <selectionEntry type="upgrade" import="true" name="Divination" hidden="false" id="9934-8bea-0a00-2ec8"/>
     <selectionEntry type="upgrade" import="true" name="Biomancy" hidden="false" id="d821-8e11-a0be-8327"/>
     <selectionEntry type="upgrade" import="true" name="Thaumaturgy" hidden="false" id="6822-29f6-efad-7b57"/>
+    <selectionEntry type="upgrade" import="true" name="Slayers of Kings" hidden="false" id="32fe-1a99-ae15-a361">
+      <rules>
+        <rule name="Slayers of Kings" id="09f5-92c0-fc8e-3ebb" hidden="false">
+          <description>Whilst part of a Unit that is Locked in Combat with an enemy Unit that includes at least one Model with a Weapon Skill Characteristic of 6 or higher, the Attack Characteristic of Models with the Order Exemplars Special Rule may be set to 1. If this option is used then the Terranic greatswords those Models have gain the Critical Hit (6+) Special Rule until the Combat ends.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Critical Hit (X)" id="f459-3a17-5eb4-39ce" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
+          <modifiers>
+            <modifier type="set" value="Critical Hit (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reaper of Hosts" hidden="false" id="cd87-6660-eb6c-4018">
+      <rules>
+        <rule name="Reaper of Hosts" id="8e19-493a-bab5-954f" hidden="false">
+          <description>Whilst part of a Unit that is Locked in Combat with one or more enemy Units that outnumbers it, then all Models in that Unit with the Order Exemplars Special Rule modify their Attacks Characteristic by +1.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Icons of Resolve" hidden="false" id="9668-1816-b303-ff2e">
+      <rules>
+        <rule name="Icons of Resolve" id="4105-eea1-1100-7749" hidden="false">
+          <description>When part of a Unit that is successfully Charged by an enemy Unit, Models with the Order Exemplars Special Rule set their Leadership Characteristic to 10 for the duration of the current Assault Phase.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hunters of Beasts" hidden="false" id="003f-48f7-083b-a3ec">
+      <rules>
+        <rule name="Hunters of Beasts" id="c86b-81f5-a469-2e6b" hidden="false">
+          <description>Whilst part of a Unit that is Locked in Combat with an enemy Unit that includes one or more Models with Toughness Characteristic of 6 or higher, the Damage Characteristic of Wounds caused by a Model with this Special Rule is modified by +1.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Breakers of Witches" hidden="false" id="f83e-f70a-eacf-d7ce">
+      <rules>
+        <rule name="Breakers of Witches" id="5650-367d-f241-0d46" hidden="false">
+          <description>Whilst part of a Unit that is Locked in Combat with an enemy Unit that has one or more Models with the Malefic Sub-Type or Psyker Trait, Hit and Wound Tests made for Models with the Order Exemplars Special Rule in that Combat are modified by +1.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Augurs of Weakness" hidden="false" id="c9dd-37ce-79b7-82d5">
+      <rules>
+        <rule name="Augurs of Weakness" id="d9d3-8f20-bd8d-fe6d" hidden="false">
+          <description>When making attacks targeting a Unit that includes one or more Models with the Vehicle Type, Models with the Order Exemplars Special rule gain the Armourbane Special Rule.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Armourbane" id="b242-4f35-cf8a-598f" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Psychic Disciplines" id="92bc-8632-a062-ee7d" hidden="false">
@@ -136,6 +192,16 @@ A model with the Shrouded (X) Special Rule gains a Shrouded Damage Mitigation Te
         <entryLink import="true" name="Divination" hidden="false" id="ef98-e21c-9ed5-b73d" type="selectionEntry" targetId="9934-8bea-0a00-2ec8" sortIndex="4"/>
         <entryLink import="true" name="Thaumaturgy" hidden="false" id="4baf-fedd-c963-32d5" type="selectionEntry" targetId="6822-29f6-efad-7b57" sortIndex="5"/>
         <entryLink import="true" name="Telepathy" hidden="false" id="8247-4933-421b-e36b" type="selectionEntry" targetId="e09e-1438-3205-2a57" sortIndex="6"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Orders of the Hekatonystika" id="7c64-34d1-69a3-fdba" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Augurs of Weakness" hidden="false" id="3d11-fb2b-09b3-8d74" type="selectionEntry" targetId="c9dd-37ce-79b7-82d5"/>
+        <entryLink import="true" name="Breakers of Witches" hidden="false" id="de08-a03a-70ad-14e8" type="selectionEntry" targetId="f83e-f70a-eacf-d7ce"/>
+        <entryLink import="true" name="Hunters of Beasts" hidden="false" id="d9c4-0c82-1175-c021" type="selectionEntry" targetId="003f-48f7-083b-a3ec"/>
+        <entryLink import="true" name="Icons of Resolve" hidden="false" id="d042-7d7d-1838-5611" type="selectionEntry" targetId="9668-1816-b303-ff2e"/>
+        <entryLink import="true" name="Reaper of Hosts" hidden="false" id="ede2-3fda-862d-97f9" type="selectionEntry" targetId="cd87-6660-eb6c-4018"/>
+        <entryLink import="true" name="Slayers of Kings" hidden="false" id="e463-6792-b256-e1cf" type="selectionEntry" targetId="32fe-1a99-ae15-a361"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
