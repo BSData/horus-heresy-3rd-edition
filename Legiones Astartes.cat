@@ -1031,7 +1031,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Prime Benefit" hidden="true" id="49e7-26e0-0869-3992" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146">
+        <entryLink import="true" name="Common Prime Benefits" hidden="true" id="49e7-26e0-0869-3992" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -1197,7 +1197,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Prime Benefit" hidden="true" id="990d-1bdf-024e-efe3" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146">
+        <entryLink import="true" name="Common Prime Benefits" hidden="true" id="990d-1bdf-024e-efe3" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -1258,7 +1258,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Prime Benefit" hidden="true" id="1a0f-600a-8d0d-590e" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146">
+        <entryLink import="true" name="Common Prime Benefits" hidden="true" id="1a0f-600a-8d0d-590e" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -1461,7 +1461,7 @@
                 <selectionEntryGroup name="May exchange bolt pistol for:" id="15a8-78ec-6f96-3f4b" hidden="false" defaultSelectionEntryId="d6ef-e031-d18f-df93">
                   <entryLinks>
                     <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="eecc-9503-8f77-4859" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="3"/>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="d6ef-e031-d18f-df93" type="selectionEntry" targetId="2942-f783-d627-33c5" defaultAmount="" sortIndex="1"/>
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="d6ef-e031-d18f-df93" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1"/>
                     <entryLink import="true" name="Legion Pistols" hidden="false" id="1674-bc5e-f4c3-7f0b" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" sortIndex="2"/>
                   </entryLinks>
                   <constraints>
@@ -3294,7 +3294,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38a7-e3a8-b681-94ee" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Phosphex bomb" hidden="false" id="4c05-adc6-93c2-d4ad" type="selectionEntry" targetId="5ad2-c3b4-f5eb-5b10">
+        <entryLink import="true" name="Phosphex bombs" hidden="false" id="4c05-adc6-93c2-d4ad" type="selectionEntry" targetId="5ad2-c3b4-f5eb-5b10">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ff1-9adf-8597-754c" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8dc-3981-5331-3ce9" includeChildSelections="false"/>
@@ -3541,7 +3541,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Prime Benefit" hidden="true" id="7bf8-37c3-bb2a-ead2" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146">
+        <entryLink import="true" name="Common Prime Benefits" hidden="true" id="7bf8-37c3-bb2a-ead2" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -3830,7 +3830,7 @@
             </selectionEntryGroup>
             <selectionEntryGroup name="May exchange power lash for:" id="9df3-5bdc-e080-9033" hidden="false" sortIndex="1" defaultSelectionEntryId="cea8-d31e-b534-c092">
               <entryLinks>
-                <entryLink import="true" name="Power Lash" hidden="false" id="cea8-d31e-b534-c092" type="selectionEntry" targetId="2198-1efb-d4ef-5907"/>
+                <entryLink import="true" name="Power lash" hidden="false" id="cea8-d31e-b534-c092" type="selectionEntry" targetId="2198-1efb-d4ef-5907"/>
                 <entryLink import="true" name="Power maul" hidden="false" id="6f62-d6ea-d786-55f2" type="selectionEntry" targetId="c4fa-659d-bf4b-bad1"/>
               </entryLinks>
               <constraints>
@@ -4248,9 +4248,14 @@
           </costs>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="23ee-bc64-aea6-5272" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="23ee-bc64-aea6-5272" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="83b4-239a-806b-33e5" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -4466,7 +4471,7 @@
     <selectionEntryGroup name="Prime Benefits" id="a396-b846-c263-6767" hidden="false">
       <entryLinks>
         <entryLink import="true" name="Legion Prime Benefits" hidden="false" id="305a-ba33-df73-b67d" type="selectionEntryGroup" targetId="d3a2-e7f2-9da7-fd3c" sortIndex="2" flatten="false"/>
-        <entryLink import="true" name="Common Prime Benefit" hidden="false" id="c115-438b-4395-1eb7" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" sortIndex="1" flatten="false"/>
+        <entryLink import="true" name="Common Prime Benefits" hidden="false" id="c115-438b-4395-1eb7" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" sortIndex="1" flatten="false"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Prime Unit" id="4ba7-3137-87b5-10e5" hidden="false">
