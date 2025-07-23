@@ -57,9 +57,7 @@ All Auxilia units should have the following Traits at the root level of the unit
 ## Questoris Household Units
 All Auxilia units should have the following Traits at the root level of the unit (Add Link -> Profile -> Search for them):
 - \[Allegiance]
-
-* [BSData organization homepage][BSData.net]
-* [BattleScribe app homepage](https://www.battlescribe.net/)
+---
 
 [BSData.net]: https://www.bsdata.net/
 [bug report]: https://github.com/BSData/TemplateDataRepo/issues/new/choose
