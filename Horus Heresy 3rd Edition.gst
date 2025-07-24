@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -224,9 +224,12 @@
       </rules>
     </categoryEntry>
     <categoryEntry name="Crux Magisterium" id="9501-add0-621d-f40f" hidden="true"/>
+    <categoryEntry name="Super-heavy Model Sub-Type" id="4d42-b711-7946-8e15" hidden="false"/>
+    <categoryEntry name="Flyer Model Sub-Type" id="42a3-02e9-e0e4-8292" hidden="false"/>
+    <categoryEntry name="Stable Model Sub-Type" id="3753-39e1-22c2-531b" hidden="false"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Auxillary and Apex Detachments" sortIndex="1">
+    <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
       <forceEntries>
         <forceEntry name="Crusade Primary Detachment" id="8f12-c30a-6c20-6296" hidden="true" sortIndex="1">
           <categoryLinks>
@@ -2932,9 +2935,9 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry name="Allied Detachment" id="256b-b8a8-017a-75e9" hidden="false" childForcesLabel="Auxillary Detachments" sortIndex="2">
+    <forceEntry name="Allied Detachment" id="256b-b8a8-017a-75e9" hidden="false" childForcesLabel="Detachments" sortIndex="2">
       <forceEntries>
-        <forceEntry name="Allied Detachment " id="7469-bbd2-a2ad-f8a8" hidden="false" childForcesLabel="Auxillary Detachments" sortIndex="1">
+        <forceEntry name="Allied Detachment " id="7469-bbd2-a2ad-f8a8" hidden="false" childForcesLabel="Detachments" sortIndex="1">
           <categoryLinks>
             <categoryLink name="Command" hidden="false" id="772e-aee9-2bf8-b30d" targetId="6dbf-654a-f06f-2d69">
               <modifiers>
@@ -4383,6 +4386,23 @@
         <categoryLink name="Allegiance" hidden="false" id="5a4a-744e-eecc-1e4a" targetId="c408-52f1-b632-4c82" primary="true"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Getting Started - Add the crusade primary detachment from the detachments section." hidden="false" id="8343-6431-55a2-fa6e" defaultAmount="1"/>
+    <selectionEntry type="upgrade" import="true" name="DON&apos;T SUBMIT BUGS FOR NOT IMPLEMENTED FUNCTIONALITY. See export for list." hidden="false" id="cd4a-d335-2d3a-91e0" defaultAmount="1">
+      <rules>
+        <rule name="Things that aren&apos;t implemented" id="10ac-cafa-6c21-0fa3" hidden="false">
+          <description>Knights
+Solar Aux
+A lot of detachment validation beyond the basic ones.
+Legion primes and legion wargear.
+
+
+A ton of other small stuff.
+
+
+Please don&apos;t submit bug reports for any of these things</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </selectionEntries>
   <publications>
     <publication name="Horus Heresy - 3rd Edition Core Rulebook" id="7d63-5df4-c656-52de" hidden="false" shortName="CRB 3.0" publisher="Horus Heresy - 3rd Edition Core Rulebook"/>
@@ -4457,6 +4477,7 @@
         <characteristicType name="Rear Armour" id="ec84-1f5d-1bb3-6826"/>
         <characteristicType name="HP" id="8735-4497-1f8a-4dda"/>
         <characteristicType name="Transport Capacity" id="a82e-858c-9aa9-2b43"/>
+        <characteristicType name="Access Points" id="ffe7-e997-ea4e-6c2d"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Wargear" id="5ec5-e0c3-1701-6f16" hidden="false" sortIndex="12">
