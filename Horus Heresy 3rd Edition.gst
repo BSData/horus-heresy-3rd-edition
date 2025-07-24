@@ -1,51 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
-    <categoryEntry name="Apex Detachment" id="6b46-02bb-c8aa-142d" hidden="false">
-      <constraints>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="false" id="0069-099b-d384-922d" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="44aa-91db-d160-0ff8" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="0069-099b-d384-922d">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="d9a6-9b5f-b18a-4d63" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
+    <categoryEntry name="Apex Detachment" id="6b46-02bb-c8aa-142d" hidden="false"/>
     <categoryEntry name="Armour" id="643a-1012-bd51-6537" hidden="false"/>
     <categoryEntry name="Asset" id="b720-ea51-7339-6a08" hidden="false"/>
-    <categoryEntry name="Auxiliary Detachment" id="1a65-8b23-419b-b30f" hidden="false">
-      <constraints>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="false" id="fa1e-96ba-db0c-d111" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="1b13-33c3-0725-f7bc" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
-      <modifiers>
-        <modifier type="increment" value="1" field="fa1e-96ba-db0c-d111">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="roster" childId="6dbf-654a-f06f-2d69" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-          </repeats>
-        </modifier>
-        <modifier type="increment" value="2" field="fa1e-96ba-db0c-d111">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="roster" childId="901a-6b71-7a29-4597" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" value="1" field="fa1e-96ba-db0c-d111">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="decrement" value="1" field="fa1e-96ba-db0c-d111">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="roster" childId="9501-add0-621d-f40f" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
+    <categoryEntry name="Auxiliary Detachment" id="1a65-8b23-419b-b30f" hidden="false"/>
     <categoryEntry name="Command" id="6dbf-654a-f06f-2d69" hidden="false"/>
     <categoryEntry name="Elites" id="5d5e-958f-e388-50b5" hidden="false"/>
     <categoryEntry name="Fast Attack" id="cf96-8891-3f9a-8921" hidden="false"/>
@@ -225,6 +186,8 @@
       </rules>
     </categoryEntry>
     <categoryEntry name="Crux Magisterium" id="9501-add0-621d-f40f" hidden="true"/>
+    <categoryEntry name="+1 Apex from High Command" id="8a97-1585-93e7-c561" hidden="true"/>
+    <categoryEntry name="+1 Auxiliary from High Command" id="ff44-f49f-732b-c3a7" hidden="true"/>
     <categoryEntry name="Required Fulgrim Transformed" id="634b-596b-118f-80b6" hidden="true"/>
     <categoryEntry name="Super-heavy Model Sub-Type" id="4d42-b711-7946-8e15" hidden="false"/>
     <categoryEntry name="Flyer Model Sub-Type" id="42a3-02e9-e0e4-8292" hidden="false"/>
@@ -696,12 +659,7 @@
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="5f94-2b1f-582e-f027"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Allegiance" hidden="false" id="3647-97cd-a513-4d92" targetId="c408-52f1-b632-4c82">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b7f5-8b0e-594a-3339" includeChildSelections="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a42c-da22-e392-2511" includeChildSelections="true"/>
-              </constraints>
-            </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="f2b2-3139-7b13-6c80" targetId="1a65-8b23-419b-b30f" type="categoryEntry"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -894,6 +852,7 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c86b-d088-efd3-0e86"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="7ce0-f95c-8fee-df61" targetId="1a65-8b23-419b-b30f"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -1081,6 +1040,7 @@
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="55ad-034f-09fb-344b"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="a56d-c59f-397f-c1eb" targetId="1a65-8b23-419b-b30f"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -1268,6 +1228,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aaae-9981-1e16-13b2"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="b245-2dca-7278-f7a1" targetId="1a65-8b23-419b-b30f"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -1455,6 +1416,7 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="56c4-65a1-7083-3041"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="ed74-5a30-58f6-3a94" targetId="1a65-8b23-419b-b30f"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -1642,6 +1604,7 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5279-0e0a-763f-7aec"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="fb62-562a-78b2-f800" targetId="1a65-8b23-419b-b30f"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -1829,6 +1792,7 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9723-874b-5bbf-14cc"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="f026-67a5-0d0e-ee8d" targetId="1a65-8b23-419b-b30f"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -2005,12 +1969,6 @@
         </forceEntry>
         <forceEntry name="Apex - Combat Retinue" id="7203-426e-7a82-0b01" hidden="true" sortIndex="10">
           <categoryLinks>
-            <categoryLink name="Allegiance" hidden="false" id="ac9d-14be-abdf-b9ad" targetId="c408-52f1-b632-4c82">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a56f-407f-0565-bb2a" includeChildSelections="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ac8-5d55-e40b-9fac" includeChildSelections="true"/>
-              </constraints>
-            </categoryLink>
             <categoryLink name="Retinue" hidden="false" id="0761-8543-24a4-858a" targetId="a38e-50ff-310f-f19e">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e8a2-a21b-9d22-be15"/>
@@ -2028,6 +1986,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1305-aaaf-1d68-85d3" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Apex Detachment" hidden="false" id="9b24-8662-0565-34a0" targetId="6b46-02bb-c8aa-142d" type="categoryEntry"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -2215,12 +2174,6 @@
         </forceEntry>
         <forceEntry name="Apex - Officer Cadre" id="90b7-c0fa-a9e1-6765" hidden="true" sortIndex="11">
           <categoryLinks>
-            <categoryLink name="Allegiance" hidden="false" id="a008-e16b-5d34-1944" targetId="c408-52f1-b632-4c82">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c51c-e6c4-3ecd-407b" includeChildSelections="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2338-a887-1c67-4ef5" includeChildSelections="true"/>
-              </constraints>
-            </categoryLink>
             <categoryLink name="Command" hidden="false" id="20c6-18b6-f008-4b8c" targetId="6dbf-654a-f06f-2d69">
               <modifiers>
                 <modifier type="set" value="1" field="0e7d-00b4-6245-c674">
@@ -2238,6 +2191,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56e0-120e-2643-933d" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Apex Detachment" hidden="false" id="bb23-9795-e5fe-fc4f" targetId="6b46-02bb-c8aa-142d"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -2420,12 +2374,6 @@
         </forceEntry>
         <forceEntry name="Apex - Army Vanguard" id="0690-c05e-c301-f595" hidden="true" sortIndex="12">
           <categoryLinks>
-            <categoryLink name="Allegiance" hidden="false" id="3852-fd3b-58c3-8ae4" targetId="c408-52f1-b632-4c82">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="93ae-c470-49f4-8a82" includeChildSelections="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a826-ce9b-00b2-16fe" includeChildSelections="true"/>
-              </constraints>
-            </categoryLink>
             <categoryLink name="Elites" hidden="false" id="cc06-a172-8590-e553" targetId="5d5e-958f-e388-50b5">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e065-2759-3736-b41b"/>
@@ -2443,6 +2391,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="369b-315b-551d-2eeb" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Apex Detachment" hidden="false" id="8950-5774-cc6a-db66" targetId="6b46-02bb-c8aa-142d"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -3142,6 +3091,9 @@
       </forceEntries>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="dae8-8a74-0984-6332" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="7842-421d-37b3-8ed4"/>
+        <constraint type="max" value="0" field="3e8e-05ee-be52-12d6" scope="self" shared="false" id="0ab6-91a0-792e-4068" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="0" field="159d-855c-533d-f592" scope="self" shared="false" id="22e2-3454-8828-04e6" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink name="Allegiance" hidden="false" id="a1c5-83d9-7485-0c6d" targetId="c408-52f1-b632-4c82">
@@ -3157,6 +3109,39 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <modifiers>
+        <modifier type="decrement" value="1" field="0ab6-91a0-792e-4068">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" value="1" field="0ab6-91a0-792e-4068">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="9501-add0-621d-f40f" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="0ab6-91a0-792e-4068">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="6dbf-654a-f06f-2d69" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="2" field="0ab6-91a0-792e-4068">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="901a-6b71-7a29-4597" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" value="1" field="0ab6-91a0-792e-4068">
+          <comment>Subtract 1 to add 2. Or we could just add 1</comment>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="901a-6b71-7a29-4597" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="22e2-3454-8828-04e6">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="8a97-1585-93e7-c561" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
     </forceEntry>
     <forceEntry name="Allied Detachment" id="256b-b8a8-017a-75e9" hidden="false" childForcesLabel="Detachments" sortIndex="2">
       <forceEntries>
@@ -4692,34 +4677,6 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23e4-9237-6afd-776c" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1233-3e93-8e2e-bca5" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="add" value="1a65-8b23-419b-b30f" field="category">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cc51-fdce-8a34-dbcf" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2965-5682-3cbc-8b47" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4a2f-ac9e-195e-77cf" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bd1f-82a0-abd4-cd56" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="edf5-6891-81d8-6309" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c9a5-3069-920b-32f1" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c444-8242-d3fc-b5b0" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="add" value="6b46-02bb-c8aa-142d" field="category">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7203-426e-7a82-0b01" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="90b7-c0fa-a9e1-6765" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0690-c05e-c301-f595" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink name="Allegiance" hidden="false" id="5a4a-744e-eecc-1e4a" targetId="c408-52f1-b632-4c82" primary="true"/>
       </categoryLinks>
@@ -4756,6 +4713,37 @@ Please don&apos;t submit bug reports for any of these things</description>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b79e-e467-7f12-4fae" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Auxilary Detachment" hidden="false" id="f96f-02f1-599b-9fc5">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachments" typeId="3e8e-05ee-be52-12d6" value="1"/>
+      </costs>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f7a9-f3c7-c7bc-b376-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7a9-f3c7-c7bc-b376-max" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Auxiliary Detachment" hidden="false" id="7f95-db86-dc1b-a60b" targetId="1a65-8b23-419b-b30f" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Apex Detachment" hidden="false" id="8fb8-af35-3a6d-c27e">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachments" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
+      </costs>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="afc0-b089-54c4-4a13-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afc0-b089-54c4-4a13-max" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Apex Detachment" hidden="false" id="bf3e-2861-1eb5-3a48" targetId="6b46-02bb-c8aa-142d" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
   </selectionEntries>
   <publications>
     <publication name="Horus Heresy - 3rd Edition Core Rulebook" id="7d63-5df4-c656-52de" hidden="false" shortName="CRB 3.0" publisher="Horus Heresy - 3rd Edition Core Rulebook"/>
@@ -4772,6 +4760,8 @@ Please don&apos;t submit bug reports for any of these things</description>
     <costType name="Point(s)" id="9893-c379-920b-8982" defaultCostLimit="-1"/>
     <costType name="Asset Point(s)" id="57e3-1031-7d4d-5ae3" defaultCostLimit="-1" hidden="true"/>
     <costType name="Reaction Point(s)" id="c9ba-097e-c47f-ecc2" defaultCostLimit="-1" hidden="true"/>
+    <costType name="Auxilary Detachment(s)" id="3e8e-05ee-be52-12d6" defaultCostLimit="-1" hidden="false"/>
+    <costType name="Apex Detachment(s)" id="159d-855c-533d-f592" defaultCostLimit="-1"/>
   </costTypes>
   <profileTypes>
     <profileType name="Profile" id="a76f-8e23-8c3e-166d" hidden="false" sortIndex="1">
@@ -5130,6 +5120,38 @@ Please don&apos;t submit bug reports for any of these things</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="358b-c4f7-9bf0-406b"/>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="881f-5dbe-10fd-ec48"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="High Command Detachment Choice" hidden="false" id="31c4-c9d1-fdba-4b21" publicationId="7d63-5df4-c656-52de" page="280">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="High Command Detachment Choice" id="969e-8b5b-1410-cfc6" hidden="false" publicationId="7d63-5df4-c656-52de" page="280">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b065-5f7d-781c-9ac3-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b065-5f7d-781c-9ac3-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="One Apex Detachment" hidden="false" id="0889-888b-e3fe-1d5b" defaultAmount="1" publicationId="7d63-5df4-c656-52de" page="280">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b9c-073f-d1cd-a405" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink name="+1 Apex from High Command" hidden="false" id="1c95-9290-e696-b447" targetId="8a97-1585-93e7-c561" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="One Auxiliary Detachment" hidden="false" id="4ad5-105a-9b10-57dd" defaultAmount="" publicationId="7d63-5df4-c656-52de" page="280">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0d5-0859-d4c3-84ac" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink name="+1 Auxiliary from High Command" hidden="false" id="55d6-f46a-077c-dc61" targetId="ff44-f49f-732b-c3a7" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98f0-4cab-2f85-12db-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98f0-4cab-2f85-12db-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
