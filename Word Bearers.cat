@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="4935-1832-63f7-91aa" name="                        XVII - Word Bearers" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="1" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="4935-1832-63f7-91aa" name="                        XVII - Word Bearers" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="2" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="Arkangelmark5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Lorgar Aurelian" hidden="false" id="a763-c205-9fe6-46c1">
       <selectionEntries>
@@ -28,11 +28,19 @@
             </profile>
           </profiles>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e69-5bd7-e3bd-c568" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06f1-6c39-6864-9d4c" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9436-6195-142d-1a44-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9436-6195-142d-1a44-max" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Burning Lore" hidden="false" id="5e68-1411-2656-464f">
+      <modifiers>
+        <modifier type="add" value="9254-b1e9-98b2-6101" field="category" scope="parent"/>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Anathemata" hidden="false" id="459a-952b-9ed3-e948" type="selectionEntry" targetId="091a-56c9-7eba-9fa7"/>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
@@ -42,5 +50,11 @@
     <catalogueLink type="catalogue" name="Weapons" id="3a57-4a09-c746-a1b4" targetId="a22d-4dd0-c59d-57d3"/>
     <catalogueLink type="catalogue" name="Special Rules" id="49b9-dcde-7a96-b668" targetId="106b-693b-99f2-00c3"/>
     <catalogueLink type="catalogue" name="Wargear" id="e58d-6917-bbb1-fbc9" targetId="fcc7-4319-bb04-2c25"/>
+    <catalogueLink type="catalogue" name="Psychic" id="be0b-47af-7f19-3fba" targetId="1b2d-2038-39a7-f387" importRootEntries="false"/>
   </catalogueLinks>
+  <sharedRules>
+    <rule name="Burning Lore" id="b80b-792f-03c9-612b" hidden="false">
+      <description>Any Model with the High Command Battlefield Role and Word Bearers Trait may be given the Psyker Trait and the Anathemata Psychic Discipline (see page 35) for +40 Points per Model.</description>
+    </rule>
+  </sharedRules>
 </catalogue>

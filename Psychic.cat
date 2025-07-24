@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="1b2d-2038-39a7-f387" name="Psychic" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="2" revision="2" battleScribeVersion="2.03" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorName="Arkangelmark5" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="1b2d-2038-39a7-f387" name="Psychic" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorName="Arkangelmark5" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType name="Psychic Power" id="9dfb-2fa3-00e7-8cfd" hidden="false" sortIndex="17">
       <characteristicTypes>
@@ -300,6 +300,79 @@ any Model in the Target Unit makes attacks with a Weapon that has the Psychic T
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Anathemata" hidden="false" id="091a-56c9-7eba-9fa7">
+      <categoryLinks>
+        <categoryLink targetId="8e24-2d8b-26e7-d7aa" id="cd69-9900-1c45-f5f8" primary="false" name="Anathemata"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Force (X)" id="4673-5c9b-5d09-1ced" hidden="false" type="rule" targetId="25cd-60d0-a0a4-6b18">
+          <comment>D</comment>
+          <modifiers>
+            <modifier type="set" value="Force (D)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Fear (X)" id="e527-e21b-2fb5-33e7" hidden="false" type="rule" targetId="0ebc-0c92-2209-6393">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="set" value="Fear (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shred (X)" id="47a9-832b-6480-1c2e" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
+          <comment>5+</comment>
+          <modifiers>
+            <modifier type="set" value="Shred (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="Void Darts" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="feab-af5c-9bcb-c78b">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">18</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">D6</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">5</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Shred (5+), Force (D)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Psychic</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Breach the Veil" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="df1f-6c24-1762-56ee">
+          <characteristics>
+            <characteristic name="Summary" typeId="981f-bb86-6a74-9b20"/>
+            <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e">The Active Player may choose to Manifest the Breach the Veil Psychic Power at the start of the Reserves Sub-Phase of their Movement Phase.</characteristic>
+            <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86"/>
+            <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770"/>
+            <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4"/>
+            <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4381-ed35-c3fa-a225" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Seal the Veil " typeId="d59e-df4b-630f-f185" typeName="Psychic Reaction" hidden="false" id="5850-1a7e-994d-a86e">
+          <characteristics>
+            <characteristic name="Summary" typeId="c8a8-29f2-605b-5969"/>
+            <characteristic name="Trigger" typeId="4e6b-ebca-53df-fcf7">The Reactive Player may choose to declare a Seal the Veil Psychic Reaction at the start of Step 3 of theCharge Procedure for a Charge declared by the Active Player for a Unit which includes any Models with the Malefic Sub-Type.</characteristic>
+            <characteristic name="Cost" typeId="f25a-9ced-eb9b-4587">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Seal the Veil Psychic Reaction, this cost paid as soon as the declaration is made.</characteristic>
+            <characteristic name="Focus" typeId="0b45-591a-ee11-488e">The Focus of this Psychic Reaction must be a Model with the Anathemata Trait and under the Reactive Player&apos;s Control, and must be a part of the Unit targeted by the Charge that triggers this Psychic Reaction.</characteristic>
+            <characteristic name="Target" typeId="cf1d-e201-caac-3d45">The Target Unit must be the Unit that is making the Charge that triggered the Reaction.</characteristic>
+            <characteristic name="Duration" typeId="daae-40ac-68e2-fa78"/>
+            <characteristic name="Process" typeId="8d43-934e-e511-0cfd"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Special Rules" id="c361-7259-1878-a576" targetId="106b-693b-99f2-00c3"/>
@@ -313,5 +386,6 @@ any Model in the Target Unit makes attacks with a Weapon that has the Psychic T
     <categoryEntry name="Diviner" id="c457-4d05-c6b9-9a82" hidden="false"/>
     <categoryEntry name="Telepath" id="d269-d26a-cac1-c953" hidden="false"/>
     <categoryEntry name="Thaumaturge" id="689b-c1f1-9d47-fd2d" hidden="false"/>
+    <categoryEntry name="Anathemata" id="8e24-2d8b-26e7-d7aa" hidden="false"/>
   </categoryEntries>
 </catalogue>
