@@ -719,24 +719,6 @@
                 </infoLink>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Burning Lore" hidden="false" id="5e46-9e40-a8e4-8784">
-              <modifiers>
-                <modifier type="add" value="9254-b1e9-98b2-6101" field="category" scope="parent"/>
-              </modifiers>
-              <entryLinks>
-                <entryLink import="true" name="Anathemata" hidden="false" id="c2b0-75dc-d0c9-21da" type="selectionEntry" targetId="091a-56c9-7eba-9fa7">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="03b4-d136-ad5a-fede" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6cc8-7dac-fb83-31a5" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="40"/>
-                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Anakatis Kul" hidden="false" id="af65-170e-74d9-8e53" sortIndex="2">
@@ -852,6 +834,143 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gal Vorbak" hidden="false" id="bb3e-f926-23ec-c561">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Dark Brethren" hidden="false" id="4895-ef9f-062c-0e7c">
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="d837-f10c-eb3a-abb7" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="f8a4-3043-5874-f6fc" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="50"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Bolter" hidden="false" id="f1f5-1cb1-4a36-c35f" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82a2-62f7-947b-5465-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82a2-62f7-947b-5465-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Frag grenades" hidden="false" id="ffde-df34-aa34-0dc3" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c7ee-6f15-bcfb-b387" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="338c-102f-8363-1f17" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Krak grenades" hidden="false" id="d9c7-4611-fc5c-3e69" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d877-0436-1992-b915" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dada-6fe3-9638-0b7b" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <profiles>
+            <profile name="Dark Brethren" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="1ebb-5bc6-410c-5e26">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Malefic)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">8</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">5</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">5</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">3</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">9</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="d251-944b-3c3b-0579" id="5495-6790-8bb0-98ad" primary="false" name="Traitor"/>
+            <categoryLink targetId="2aba-8953-ea2f-ce59" id="5059-f58d-a3a7-33dd" primary="false" name="Word Bearers"/>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="ef9d-2d1f-7e96-0504" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="2de1-ddd6-ebb4-10df" id="2570-6023-4abf-be1a" primary="false" name="Malefic"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Tainted Talons" hidden="false" id="f75d-72d3-79c2-ba3b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dbc1-92c0-0b60-9b7a-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbc1-92c0-0b60-9b7a-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Tainted Talons" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="a100-88a6-6152-95a7">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">1</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+), Shred (6+), Phage (S)</characteristic>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Psychic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Phage (X)" id="f9f7-2988-daad-27f3" hidden="false" type="rule" targetId="3e26-d357-69d6-1341">
+                  <modifiers>
+                    <modifier type="set" value="Phage (S)" field="name"/>
+                  </modifiers>
+                  <comment>S</comment>
+                </infoLink>
+                <infoLink name="Shred (X)" id="acb6-08ab-0ee8-b61c" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
+                  <modifiers>
+                    <modifier type="set" value="Shred (6+)" field="name"/>
+                  </modifiers>
+                  <comment>6+</comment>
+                </infoLink>
+                <infoLink name="Breaching (X)" id="a51b-d8d8-21f5-b8f8" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+                  <modifiers>
+                    <modifier type="set" value="Breaching (6+)" field="name"/>
+                  </modifiers>
+                  <comment>6+</comment>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Bulky (X)" id="a1fb-29e1-fe42-9f31" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+              <modifiers>
+                <modifier type="set" value="Bulky (2)" field="name"/>
+              </modifiers>
+              <comment>2</comment>
+            </infoLink>
+            <infoLink name="Vanguard (X)" id="74af-1210-a548-66d2" hidden="false" type="rule" targetId="530f-b733-993c-ec84">
+              <modifiers>
+                <modifier type="set" value="Vanguard (3)" field="name"/>
+              </modifiers>
+              <comment>3</comment>
+            </infoLink>
+            <infoLink name="Fear (X)" id="d8aa-9d1c-6196-a547" hidden="false" type="rule" targetId="0ebc-0c92-2209-6393">
+              <modifiers>
+                <modifier type="set" value="Fear (1)" field="name"/>
+              </modifiers>
+              <comment>1</comment>
+            </infoLink>
+            <infoLink name="Implacable Advance" id="1f9f-ab9a-52f2-1e17" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
+            <infoLink name="Feel No Pain (X)" id="9ea7-2b1e-907c-fb85" hidden="false" type="rule" targetId="89b5-7320-db15-fd60">
+              <modifiers>
+                <modifier type="set" value="Feel No Pain (5+)" field="name"/>
+              </modifiers>
+              <comment>5+</comment>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="21bf-a185-39e4-3a85" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
@@ -881,9 +1000,9 @@
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="c016-b1d7-705e-e0fa" primary="true" name="High Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Zardu Layak" hidden="false" id="d374-0470-7755-e9b7" type="selectionEntry" targetId="dab8-484b-f682-a29d">
+    <entryLink import="true" name="Gal Vorbak" hidden="false" id="d374-0470-7755-e9b7" type="selectionEntry" targetId="bb3e-f926-23ec-c561">
       <categoryLinks>
-        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="1d37-851f-029d-09d3" primary="true" name="High Command"/>
+        <categoryLink targetId="5d5e-958f-e388-50b5" id="4df1-64b7-5ad0-06a1" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Erebus" hidden="false" id="abf5-e9e8-7a90-2e2f" type="selectionEntry" targetId="f075-69f8-c356-a63a">
@@ -894,6 +1013,11 @@
     <entryLink import="true" name="Kor Phaeron " hidden="false" id="b77c-5d9b-e8f0-fdfd" type="selectionEntry" targetId="81d5-3d0d-6447-d52b">
       <categoryLinks>
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="797a-b93e-9f42-b310" primary="true" name="High Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Zardu Layak" hidden="false" id="634b-4492-dc6f-d829" type="selectionEntry" targetId="dab8-484b-f682-a29d">
+      <categoryLinks>
+        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="6265-49a9-3edd-0a41" primary="true" name="High Command"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
