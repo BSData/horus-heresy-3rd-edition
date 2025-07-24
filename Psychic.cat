@@ -323,6 +323,8 @@ any Model in the Target Unit makes attacks with a Weapon that has the Psychic T
             <modifier type="set" value="Shred (5+)" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Seal the Veil " id="0c3b-5aaf-063d-fb64" hidden="false" type="profile" targetId="e590-9996-7a9e-e74a"/>
+        <infoLink name="Breach the Veil" id="47cb-3dbd-757b-d5f7" hidden="false" type="profile" targetId="0e6b-31ce-26ee-f05e"/>
       </infoLinks>
       <profiles>
         <profile name="Void Darts" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="feab-af5c-9bcb-c78b">
@@ -335,41 +337,6 @@ any Model in the Target Unit makes attacks with a Weapon that has the Psychic T
             <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Shred (5+), Force (D)</characteristic>
             <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Psychic</characteristic>
           </characteristics>
-        </profile>
-        <profile name="Breach the Veil" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="df1f-6c24-1762-56ee">
-          <characteristics>
-            <characteristic name="Summary" typeId="981f-bb86-6a74-9b20"/>
-            <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e">The Active Player may choose to Manifest the Breach the Veil Psychic Power at the start of the Reserves Sub-Phase of their Movement Phase.</characteristic>
-            <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86"/>
-            <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770"/>
-            <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4"/>
-            <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0"/>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4381-ed35-c3fa-a225" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-        <profile name="Seal the Veil " typeId="d59e-df4b-630f-f185" typeName="Psychic Reaction" hidden="false" id="5850-1a7e-994d-a86e">
-          <characteristics>
-            <characteristic name="Summary" typeId="c8a8-29f2-605b-5969"/>
-            <characteristic name="Trigger" typeId="4e6b-ebca-53df-fcf7">The Reactive Player may choose to declare a Seal the Veil Psychic Reaction at the start of Step 3 of theCharge Procedure for a Charge declared by the Active Player for a Unit which includes any Models with the Malefic Sub-Type.</characteristic>
-            <characteristic name="Cost" typeId="f25a-9ced-eb9b-4587">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Seal the Veil Psychic Reaction, this cost paid as soon as the declaration is made.</characteristic>
-            <characteristic name="Focus" typeId="0b45-591a-ee11-488e">The Focus of this Psychic Reaction must be a Model with the Anathemata Trait and under the Reactive Player&apos;s Control, and must be a part of the Unit targeted by the Charge that triggers this Psychic Reaction.</characteristic>
-            <characteristic name="Target" typeId="cf1d-e201-caac-3d45">The Target Unit must be the Unit that is making the Charge that triggered the Reaction.</characteristic>
-            <characteristic name="Duration" typeId="daae-40ac-68e2-fa78"/>
-            <characteristic name="Process" typeId="8d43-934e-e511-0cfd"/>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
     </selectionEntry>
@@ -388,4 +355,41 @@ any Model in the Target Unit makes attacks with a Weapon that has the Psychic T
     <categoryEntry name="Thaumaturge" id="689b-c1f1-9d47-fd2d" hidden="false"/>
     <categoryEntry name="Anathemata" id="8e24-2d8b-26e7-d7aa" hidden="false"/>
   </categoryEntries>
+  <sharedProfiles>
+    <profile name="Breach the Veil" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="0e6b-31ce-26ee-f05e">
+      <characteristics>
+        <characteristic name="Summary" typeId="981f-bb86-6a74-9b20"/>
+        <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e">The Active Player may choose to Manifest the Breach the Veil Psychic Power at the start of the Reserves Sub-Phase of their Movement Phase.</characteristic>
+        <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86"/>
+        <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770"/>
+        <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4"/>
+        <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0"/>
+      </characteristics>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4381-ed35-c3fa-a225" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </profile>
+    <profile name="Seal the Veil " typeId="d59e-df4b-630f-f185" typeName="Psychic Reaction" hidden="false" id="e590-9996-7a9e-e74a">
+      <characteristics>
+        <characteristic name="Summary" typeId="c8a8-29f2-605b-5969"/>
+        <characteristic name="Trigger" typeId="4e6b-ebca-53df-fcf7">The Reactive Player may choose to declare a Seal the Veil Psychic Reaction at the start of Step 3 of theCharge Procedure for a Charge declared by the Active Player for a Unit which includes any Models with the Malefic Sub-Type.</characteristic>
+        <characteristic name="Cost" typeId="f25a-9ced-eb9b-4587">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Seal the Veil Psychic Reaction, this cost paid as soon as the declaration is made.</characteristic>
+        <characteristic name="Focus" typeId="0b45-591a-ee11-488e">The Focus of this Psychic Reaction must be a Model with the Anathemata Trait and under the Reactive Player&apos;s Control, and must be a part of the Unit targeted by the Charge that triggers this Psychic Reaction.</characteristic>
+        <characteristic name="Target" typeId="cf1d-e201-caac-3d45">The Target Unit must be the Unit that is making the Charge that triggered the Reaction.</characteristic>
+        <characteristic name="Duration" typeId="daae-40ac-68e2-fa78"/>
+        <characteristic name="Process" typeId="8d43-934e-e511-0cfd"/>
+      </characteristics>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </profile>
+  </sharedProfiles>
 </catalogue>
