@@ -179,6 +179,11 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="40"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kor Phaeron " hidden="false" id="81d5-3d0d-6447-d52b">
       <selectionEntries>
@@ -186,7 +191,7 @@
           <profiles>
             <profile name="Kor Phaeron " typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="25c6-0801-572c-bec7">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Paragon (Unique)</characteristic>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Unique, Command)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -233,7 +238,6 @@
           <categoryLinks>
             <categoryLink targetId="b980-187b-2b17-d635" id="03e8-e62e-962b-8c90" primary="false" name="Unique Model Sub-Type"/>
             <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="e42e-995f-3f52-6637" primary="false" name="Master of the Legion"/>
-            <categoryLink targetId="9254-b1e9-98b2-6101" id="3b67-12d1-8d7c-a18f" primary="false" name="Psyker"/>
             <categoryLink targetId="2aba-8953-ea2f-ce59" id="32da-85ec-50ba-57fb" primary="false" name="Word Bearers"/>
             <categoryLink targetId="d251-944b-3c3b-0579" id="6a6e-d24e-ad5b-ca7f" primary="false" name="Traitor"/>
             <categoryLink targetId="594d-fa82-13cb-a345" id="fdf7-0191-68dd-8105" primary="false" name="Infantry Model Type"/>
@@ -245,6 +249,14 @@
             </rule>
             <rule name="Jealous Command" id="ee29-139a-6af2-f75d" hidden="false"/>
           </rules>
+          <entryLinks>
+            <entryLink import="true" name="Burning Lore" hidden="false" id="8402-950e-ca6a-7438" type="selectionEntry" targetId="5e68-1411-2656-464f" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4e23-8cf7-6d14-a897" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26fe-a6c8-9f62-bf0a" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Patriarch’s Claws" hidden="false" id="0f3c-87c6-b43b-aaaf" sortIndex="1">
               <constraints>
@@ -311,6 +323,134 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Erebus" hidden="false" id="f075-69f8-c356-a63a">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Erebus" hidden="false" id="ff4b-26d3-f350-d063">
+          <profiles>
+            <profile name="Erebus" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="4621-1f18-e3f9-ef71">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Unique, Command)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">3</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">10</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">10</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">9</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="b980-187b-2b17-d635" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="b980-187b-2b17-d635" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e7dd-2c48-f639-363e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68c7-9b4a-c251-1c04" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Unwavering Conviction" id="6bca-f09a-0426-381e" hidden="false" type="rule" targetId="fe99-0874-2c10-cba5"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink targetId="b980-187b-2b17-d635" id="d7a2-13a2-58af-e8ba" primary="false" name="Unique Model Sub-Type"/>
+            <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="7633-3ad9-5e4f-d356" primary="false" name="Master of the Legion"/>
+            <categoryLink targetId="9254-b1e9-98b2-6101" id="e2c7-cd79-3b58-a9b1" primary="false" name="Psyker"/>
+            <categoryLink targetId="2aba-8953-ea2f-ce59" id="908f-c171-a17d-78ae" primary="false" name="Word Bearers"/>
+            <categoryLink targetId="d251-944b-3c3b-0579" id="9e88-89f9-5e5b-4087" primary="false" name="Traitor"/>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="c215-a0de-9052-c680" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="9871-cb62-5283-2216" id="2a12-78e5-a0e1-a518" primary="false" name="Command Model Sub-type"/>
+          </categoryLinks>
+          <rules>
+            <rule name="Lord of the Blessed" id="ee53-dde6-9800-a3b9" hidden="false">
+              <description>A Model with this Special Rule can join Units with the Malefic Sub-Type as if it had that Sub-Type and while part of such a Unit, is treated as having that Sub-Type. </description>
+            </rule>
+            <rule name="Harbinger of Chaos" id="6f98-3b19-41a2-58ae" hidden="false"/>
+          </rules>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Crux Malifica " hidden="false" id="9af4-f982-d4b0-390b" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a97b-f41f-04fd-8473" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc3c-d9ec-cd19-e586" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Crux Malifica " typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="a179-a540-f854-2471">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">1</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+3</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Phage (S) </characteristic>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power, Psychic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Phage (X)" id="48c9-5fad-7edd-ff58" hidden="false" type="rule" targetId="3e26-d357-69d6-1341">
+                  <modifiers>
+                    <modifier type="set" value="Phage (S)" field="name"/>
+                  </modifiers>
+                  <comment>S</comment>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Plasma pistol" hidden="false" id="b139-d24c-a652-c247" type="selectionEntry" targetId="659f-d52e-1515-2912" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c6a-3038-2e3b-8b9a-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c6a-3038-2e3b-8b9a-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Frag grenades" hidden="false" id="0740-b489-1680-bd56" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d160-a83d-ecbd-cdc4" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b28-1bdd-8eaf-74ab" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Krak grenades" hidden="false" id="ef40-dc91-c1dc-150d" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e16a-8f3e-fc2e-275b" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2456-5505-2f91-2244" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Anathemata" hidden="false" id="a780-8a42-352c-a1e5" type="selectionEntry" targetId="091a-56c9-7eba-9fa7" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="03a4-80e1-bf76-5eda" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e779-8289-b4fd-d0ea" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="165"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="21bf-a185-39e4-3a85" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
@@ -335,9 +475,14 @@
         <categoryLink targetId="22ee-7208-4089-b005" id="7c94-e383-da06-d875" primary="true" name="Warlord"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Kor Phaeron " hidden="false" id="cc58-0f99-610e-0426" type="selectionEntry" targetId="81d5-3d0d-6447-d52b">
+    <entryLink import="true" name="Erebus" hidden="false" id="cc58-0f99-610e-0426" type="selectionEntry" targetId="f075-69f8-c356-a63a">
       <categoryLinks>
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="c016-b1d7-705e-e0fa" primary="true" name="High Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Kor Phaeron " hidden="false" id="d374-0470-7755-e9b7" type="selectionEntry" targetId="81d5-3d0d-6447-d52b">
+      <categoryLinks>
+        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="1d37-851f-029d-09d3" primary="true" name="High Command"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
