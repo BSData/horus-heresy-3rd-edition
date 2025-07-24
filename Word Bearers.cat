@@ -7,7 +7,7 @@
           <profiles>
             <profile name="Lorgar Aurelian" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="0360-2b75-07bc-4c7b">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b"/>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Paragon (Unique) </characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93"/>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e"/>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b"/>
@@ -22,8 +22,6 @@
                 <characteristic name="IN" typeId="29c5-925d-5b1d-1e77"/>
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b"/>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64"/>
-                <characteristic name="Special Rules" typeId="2cda-2fb9-4239-cbcb"/>
-                <characteristic name="Traits" typeId="6a9a-2af3-00c4-d134"/>
               </characteristics>
             </profile>
           </profiles>
@@ -31,15 +29,158 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9436-6195-142d-1a44-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9436-6195-142d-1a44-max" includeChildSelections="false"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Unwavering Conviction" id="dc56-a492-bfdd-6289" hidden="false" type="rule" targetId="fe99-0874-2c10-cba5"/>
+            <infoLink name="Eternal Warrior (X)" id="6076-d928-7f11-d176" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
+              <modifiers>
+                <modifier type="set" value="Eternal Warrior (2)" field="name"/>
+              </modifiers>
+              <comment>2</comment>
+            </infoLink>
+            <infoLink name="Bulky (X)" id="e41e-97a6-b82d-e130" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+              <modifiers>
+                <modifier type="set" value="Bulky (4)" field="name"/>
+              </modifiers>
+              <comment>4</comment>
+            </infoLink>
+            <infoLink name="Hatred (X)" id="c72d-a844-6912-2c0e" hidden="false" type="rule" targetId="0612-95d5-46ae-c5ee">
+              <modifiers>
+                <modifier type="set" value="Hatred (Loyalist)" field="name"/>
+              </modifiers>
+              <comment>Loyalist</comment>
+            </infoLink>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink targetId="7799-e1d6-762b-700b" id="0c46-5b15-4ddf-b858" primary="false" name="Paragon Model Type"/>
+            <categoryLink targetId="b980-187b-2b17-d635" id="cc1a-9a09-5737-4674" primary="false" name="Unique Model Sub-Type"/>
+            <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="2162-cf83-67ba-61ec" primary="false" name="Master of the Legion"/>
+            <categoryLink targetId="9254-b1e9-98b2-6101" id="0b94-9059-490c-17f5" primary="false" name="Psyker"/>
+            <categoryLink targetId="2aba-8953-ea2f-ce59" id="648e-636b-7753-fd79" primary="false" name="Word Bearers"/>
+            <categoryLink targetId="d251-944b-3c3b-0579" id="f628-1e25-d1a4-723c" primary="false" name="Traitor"/>
+          </categoryLinks>
+          <rules>
+            <rule name="The Power of the Word" id="3f98-81ce-1608-51fc" hidden="false">
+              <description>A Model with this Special Rule can join Units with the Malefic Sub-Type as if it had that Sub-Type and while part of such a Unit, is treated as having that Sub-Type</description>
+            </rule>
+            <rule name="Sire of the Word Bearers" id="25e7-a4a9-887a-d8ed" hidden="false">
+              <description>
+</description>
+            </rule>
+          </rules>
+          <entryLinks>
+            <entryLink import="true" name="Anathemata" hidden="false" id="0395-0f54-79c8-2cd3" type="selectionEntry" targetId="091a-56c9-7eba-9fa7" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98ea-6887-df55-58a3-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98ea-6887-df55-58a3-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Frag grenades" hidden="false" id="be37-7be9-13a3-cc39" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ac3e-e7fc-f6b9-3752-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac3e-e7fc-f6b9-3752-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="lluminarum" hidden="false" id="21df-7b16-dcb8-4d08" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ff3-490c-fb8e-d278-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ff3-490c-fb8e-d278-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="lluminarum" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="d47f-4659-56d6-55bb">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">1</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">3</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Critical Hit (5+), Phage (S), Reaping Blow (2) </characteristic>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Critical Hit (X)" id="2321-dd2e-f9d4-cb45" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
+                  <modifiers>
+                    <modifier type="set" value="Critical Hit (5+)" field="name"/>
+                  </modifiers>
+                  <comment>5+</comment>
+                </infoLink>
+                <infoLink name="Phage (X)" id="622e-e805-8add-a7c4" hidden="false" type="rule" targetId="3e26-d357-69d6-1341">
+                  <modifiers>
+                    <modifier type="set" value="Phage (S)" field="name"/>
+                  </modifiers>
+                  <comment>S</comment>
+                </infoLink>
+                <infoLink name="Reaping Blow (X)" id="7ecf-4305-6595-9583" hidden="false" type="rule" targetId="951f-eee4-02b7-b014">
+                  <modifiers>
+                    <modifier type="set" value="Reaping Blow (2)" field="name"/>
+                  </modifiers>
+                  <comment>2</comment>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Devotion" hidden="false" id="bbba-7053-95c1-e3c0" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8575-b4bc-137b-3852-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8575-b4bc-137b-3852-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Devotion" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="123e-a362-40cb-1d1f">
+                  <characteristics>
+                    <characteristic name="R" typeId="cdb0-8654-6840-1037">12</characteristic>
+                    <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+                    <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">8</characteristic>
+                    <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+                    <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
+                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Shock (Pinned), Pinning (0) </characteristic>
+                    <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Graviton, Assault</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Shock (X)" id="250e-a8c8-5fdf-8fca" hidden="false" type="rule" targetId="c6fd-28d0-3f80-672c">
+                  <modifiers>
+                    <modifier type="set" value="Shock (Pinned)" field="name"/>
+                  </modifiers>
+                  <comment>Pinned</comment>
+                </infoLink>
+                <infoLink name="Pinning (X)" id="d46f-b255-261d-93ca" hidden="false" type="rule" targetId="88b6-6493-e4d7-1805">
+                  <modifiers>
+                    <modifier type="set" value="Pinning (0)" field="name"/>
+                  </modifiers>
+                  <comment>0</comment>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="445"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Burning Lore" hidden="false" id="5e68-1411-2656-464f">
       <modifiers>
         <modifier type="add" value="9254-b1e9-98b2-6101" field="category" scope="parent"/>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Anathemata" hidden="false" id="459a-952b-9ed3-e948" type="selectionEntry" targetId="091a-56c9-7eba-9fa7"/>
+        <entryLink import="true" name="Anathemata" hidden="false" id="459a-952b-9ed3-e948" type="selectionEntry" targetId="091a-56c9-7eba-9fa7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d7b5-fc96-a81c-4641-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7b5-fc96-a81c-4641-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -56,5 +197,15 @@
     <rule name="Burning Lore" id="b80b-792f-03c9-612b" hidden="false">
       <description>Any Model with the High Command Battlefield Role and Word Bearers Trait may be given the Psyker Trait and the Anathemata Psychic Discipline (see page 35) for +40 Points per Model.</description>
     </rule>
+    <rule name="Unwavering Conviction" id="fe99-0874-2c10-cba5" hidden="false">
+      <alias>When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, score 1 Combat Resolution point if any friendly Models in that Combat have the Word Bearers Trait. </alias>
+    </rule>
   </sharedRules>
+  <entryLinks>
+    <entryLink import="true" name="Lorgar Aurelian" hidden="false" id="3f74-fcee-ebe7-6daf" type="selectionEntry" targetId="a763-c205-9fe6-46c1">
+      <categoryLinks>
+        <categoryLink targetId="22ee-7208-4089-b005" id="7c94-e383-da06-d875" primary="true" name="Warlord"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
 </catalogue>
