@@ -6488,7 +6488,58 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Contemptor Dreadnought" hidden="false" id="3337-0b90-6ead-cba1" sortIndex="41"/>
     <selectionEntry type="unit" import="true" name="Termite" hidden="false" id="29c3-0b90-216c-b071" sortIndex="47"/>
-    <selectionEntry type="unit" import="true" name="Drop Pod" hidden="false" id="2eb3-783d-8dde-733b" sortIndex="46"/>
+    <selectionEntry type="unit" import="true" name="Drop Pod" hidden="false" id="2eb3-783d-8dde-733b" sortIndex="46">
+      <entryLinks>
+        <entryLink import="true" name="Combi-bolter" hidden="false" id="b26a-8580-ed44-e2e7" type="selectionEntry" targetId="042d-9e60-db9e-c147">
+          <comment>Pintle Mounted</comment>
+          <modifiers>
+            <modifier type="set" value="Pintle Mounted combi-bolter" field="name"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b32-6db7-b174-14a3" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d345-a2d0-aef9-3e87" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Drop Pod" hidden="false" id="c2da-f5af-1955-4c42">
+          <profiles>
+            <profile name="Drop Pod" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="301f-4e7f-80be-4d07">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Transport)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">-</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">2</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">12</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">12</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">12</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">10</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82f1-9433-e3f4-028d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7a7-ed13-994a-a686" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle Model Type" hidden="false" id="82d8-7375-b7b8-8cb8" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
+            <categoryLink name="Transport Model Sub-Type" hidden="false" id="dc1d-909f-f8c0-d191" targetId="2e6d-36f6-eeca-8e0c" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="a419-9af9-c050-1efa" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="6819-a23d-513d-8875" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Impact Reactive Doors" id="1417-5e5e-0cef-b02f" hidden="false" type="rule" targetId="a919-02f3-60f7-ab99"/>
+        <infoLink name="Light Transport" id="8566-4149-6ac5-a708" hidden="false" type="rule" targetId="d451-f7f3-fc8f-db23"/>
+        <infoLink name="Orbital Assault Vehicle" id="ab0a-cdb7-5b39-b029" hidden="false" type="rule" targetId="d3d7-2241-0ce5-f2b6"/>
+      </infoLinks>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="50"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Land Raider Carrier" hidden="false" id="e0b3-3d67-1299-1eb7" sortIndex="48"/>
     <selectionEntry type="unit" import="true" name="Dreadnought Drop Pod" hidden="false" id="e004-bc89-4e2f-c59d" sortIndex="50"/>
     <selectionEntry type="unit" import="true" name="Kharybdis Assault Claw" hidden="false" id="ed0b-f07b-ed2f-b510" sortIndex="52"/>
