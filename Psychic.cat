@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="true" id="1b2d-2038-39a7-f387" name="Psychic" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorName="Arkangelmark5" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
-    <profileType name="Psychic Power" id="9dfb-2fa3-00e7-8cfd" hidden="false" sortIndex="17">
+    <profileType name="Psychic Power" id="9dfb-2fa3-00e7-8cfd" hidden="false" sortIndex="18">
       <characteristicTypes>
         <characteristicType name="Summary" id="981f-bb86-6a74-9b20"/>
         <characteristicType name="Trigger" id="1be9-f118-1cf3-357e"/>
@@ -11,7 +11,7 @@
         <characteristicType name="Process" id="3804-b2cf-9f1a-4ff0"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Psychic Reaction" id="d59e-df4b-630f-f185" hidden="false" sortIndex="16">
+    <profileType name="Psychic Reaction" id="d59e-df4b-630f-f185" hidden="false" sortIndex="17">
       <characteristicTypes>
         <characteristicType name="Summary" id="c8a8-29f2-605b-5969"/>
         <characteristicType name="Trigger" id="4e6b-ebca-53df-fcf7"/>
@@ -22,19 +22,41 @@
         <characteristicType name="Process" id="8d43-934e-e511-0cfd"/>
       </characteristicTypes>
     </profileType>
+    <profileType name="Psychic Ranged Weapon" id="7d31-7144-3b28-c850" hidden="false" sortIndex="12">
+      <characteristicTypes>
+        <characteristicType name="R" id="6d86-f7c6-c184-8bf4"/>
+        <characteristicType name="FP" id="99a5-a4b9-8862-5092"/>
+        <characteristicType name="RS" id="ff4a-ab25-1be8-4545"/>
+        <characteristicType name="AP" id="c8d6-d2ec-1344-07e3"/>
+        <characteristicType name="D" id="e840-f63c-5bc4-27b3"/>
+        <characteristicType name="Special Rules" id="e87b-e7a3-5562-a456"/>
+        <characteristicType name="Traits" id="a229-21ce-4177-c4b1"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Psychic Melee Weapon" id="f553-2eab-e909-ee56" hidden="false" sortIndex="13">
+      <characteristicTypes>
+        <characteristicType name="IM" id="079b-2c1c-979b-1fe0"/>
+        <characteristicType name="AM" id="c6d4-d31f-a563-78f8"/>
+        <characteristicType name="SM" id="562d-ec0b-83ee-541c"/>
+        <characteristicType name="AP" id="46ac-d3d4-36f0-6a1e"/>
+        <characteristicType name="D" id="cca6-168c-5576-e0ee"/>
+        <characteristicType name="Special Rules" id="0da4-845e-b008-2d17"/>
+        <characteristicType name="Traits" id="dbf5-ab06-5eb4-7d00"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Biomancy" hidden="false" id="7f0b-3a53-fbba-de05">
       <profiles>
-        <profile name="Biomantic Slam" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="c5df-010a-1bdd-85c7">
+        <profile name="Biomantic Slam" typeId="f553-2eab-e909-ee56" typeName="Psychic Melee Weapon" hidden="false" id="c5df-010a-1bdd-85c7">
           <characteristics>
-            <characteristic name="IM" typeId="6eec-4093-f946-1014">-3</characteristic>
-            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">1</characteristic>
-            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">12</characteristic>
-            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
-            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
-            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Armourbane, Force (D)</characteristic>
-            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Melee, Psychic</characteristic>
+            <characteristic name="IM" typeId="079b-2c1c-979b-1fe0">-3</characteristic>
+            <characteristic name="AM" typeId="c6d4-d31f-a563-78f8">1</characteristic>
+            <characteristic name="SM" typeId="562d-ec0b-83ee-541c">12</characteristic>
+            <characteristic name="AP" typeId="46ac-d3d4-36f0-6a1e">2</characteristic>
+            <characteristic name="D" typeId="cca6-168c-5576-e0ee">2</characteristic>
+            <characteristic name="Special Rules" typeId="0da4-845e-b008-2d17">Armourbane, Force (D)</characteristic>
+            <characteristic name="Traits" typeId="dbf5-ab06-5eb4-7d00">Melee, Psychic</characteristic>
           </characteristics>
         </profile>
         <profile name="Biomantic Rage" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="fe7f-a6ad-b858-a3a0">
@@ -72,26 +94,26 @@ Volley Attack.</characteristic>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Pyromancy" hidden="false" id="b8f6-c7cb-3596-fb48">
       <profiles>
-        <profile name="Wildfire" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="32c6-600a-1d16-18c2">
+        <profile name="Wildfire" typeId="7d31-7144-3b28-c850" typeName="Psychic Ranged Weapon" hidden="false" id="32c6-600a-1d16-18c2">
           <characteristics>
-            <characteristic name="R" typeId="cdb0-8654-6840-1037">12</characteristic>
-            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
-            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">4</characteristic>
-            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
-            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
-            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Panic (1), Blast (5&quot;), Force (S)</characteristic>
-            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Ranged, Psychic</characteristic>
+            <characteristic name="R" typeId="6d86-f7c6-c184-8bf4">12</characteristic>
+            <characteristic name="FP" typeId="99a5-a4b9-8862-5092">1</characteristic>
+            <characteristic name="RS" typeId="ff4a-ab25-1be8-4545">4</characteristic>
+            <characteristic name="AP" typeId="c8d6-d2ec-1344-07e3">4</characteristic>
+            <characteristic name="D" typeId="e840-f63c-5bc4-27b3">1</characteristic>
+            <characteristic name="Special Rules" typeId="e87b-e7a3-5562-a456">Panic (1), Blast (5&quot;), Force (S)</characteristic>
+            <characteristic name="Traits" typeId="a229-21ce-4177-c4b1">Ranged, Psychic</characteristic>
           </characteristics>
         </profile>
-        <profile name="Conflagration" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="345e-6b0d-03c7-1e44">
+        <profile name="Conflagration" typeId="f553-2eab-e909-ee56" typeName="Psychic Melee Weapon" hidden="false" id="345e-6b0d-03c7-1e44">
           <characteristics>
-            <characteristic name="IM" typeId="6eec-4093-f946-1014">-1</characteristic>
-            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">6+D3</characteristic>
-            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">5</characteristic>
-            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">4</characteristic>
-            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
-            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Deflagrate (5)</characteristic>
-            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Melee, Psychic</characteristic>
+            <characteristic name="IM" typeId="079b-2c1c-979b-1fe0">-1</characteristic>
+            <characteristic name="AM" typeId="c6d4-d31f-a563-78f8">6+D3</characteristic>
+            <characteristic name="SM" typeId="562d-ec0b-83ee-541c">5</characteristic>
+            <characteristic name="AP" typeId="46ac-d3d4-36f0-6a1e">4</characteristic>
+            <characteristic name="D" typeId="cca6-168c-5576-e0ee">1</characteristic>
+            <characteristic name="Special Rules" typeId="0da4-845e-b008-2d17">Deflagrate (5)</characteristic>
+            <characteristic name="Traits" typeId="dbf5-ab06-5eb4-7d00">Melee, Psychic</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -146,15 +168,15 @@ Volley Attack.</characteristic>
 3. If the Manifestation Check fails then there is no further effect.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Immovable Force" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="31de-4d17-0779-5524">
+        <profile name="Immovable Force" typeId="7d31-7144-3b28-c850" typeName="Psychic Ranged Weapon" hidden="false" id="31de-4d17-0779-5524">
           <characteristics>
-            <characteristic name="R" typeId="cdb0-8654-6840-1037">18</characteristic>
-            <characteristic name="FP" typeId="5037-1f27-1790-e355">3</characteristic>
-            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
-            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
-            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
-            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Pinning (2), Force (FP)</characteristic>
-            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Ranged, Psychic</characteristic>
+            <characteristic name="R" typeId="6d86-f7c6-c184-8bf4">18</characteristic>
+            <characteristic name="FP" typeId="99a5-a4b9-8862-5092">3</characteristic>
+            <characteristic name="RS" typeId="ff4a-ab25-1be8-4545">6</characteristic>
+            <characteristic name="AP" typeId="c8d6-d2ec-1344-07e3">4</characteristic>
+            <characteristic name="D" typeId="e840-f63c-5bc4-27b3">1</characteristic>
+            <characteristic name="Special Rules" typeId="e87b-e7a3-5562-a456">Pinning (2), Force (FP)</characteristic>
+            <characteristic name="Traits" typeId="a229-21ce-4177-c4b1">Ranged, Psychic</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -246,15 +268,15 @@ Volley Attack.</characteristic>
 4. Regardless of whether the Manifestation Check succeeds or fails, the Unit that includes the Focus of this Psychic Power may not make a move or Rush in this Movement Phase.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Cursed Whispers" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="0bb5-a147-4251-fde0">
+        <profile name="Cursed Whispers" typeId="7d31-7144-3b28-c850" typeName="Psychic Ranged Weapon" hidden="false" id="0bb5-a147-4251-fde0">
           <characteristics>
-            <characteristic name="R" typeId="cdb0-8654-6840-1037">12</characteristic>
-            <characteristic name="FP" typeId="5037-1f27-1790-e355">2D6</characteristic>
-            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">3</characteristic>
-            <characteristic name="AP" typeId="7a23-0248-2b94-5951">-</characteristic>
-            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
-            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Stun (-)</characteristic>
-            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Ranged, Psychic</characteristic>
+            <characteristic name="R" typeId="6d86-f7c6-c184-8bf4">12</characteristic>
+            <characteristic name="FP" typeId="99a5-a4b9-8862-5092">2D6</characteristic>
+            <characteristic name="RS" typeId="ff4a-ab25-1be8-4545">3</characteristic>
+            <characteristic name="AP" typeId="c8d6-d2ec-1344-07e3">-</characteristic>
+            <characteristic name="D" typeId="e840-f63c-5bc4-27b3">1</characteristic>
+            <characteristic name="Special Rules" typeId="e87b-e7a3-5562-a456">Stun (-)</characteristic>
+            <characteristic name="Traits" typeId="a229-21ce-4177-c4b1">Ranged, Psychic</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -327,15 +349,15 @@ any Model in the Target Unit makes attacks with a Weapon that has the Psychic T
         <infoLink name="Breach the Veil" id="47cb-3dbd-757b-d5f7" hidden="false" type="profile" targetId="0e6b-31ce-26ee-f05e"/>
       </infoLinks>
       <profiles>
-        <profile name="Void Darts" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="feab-af5c-9bcb-c78b">
+        <profile name="Void Darts" typeId="7d31-7144-3b28-c850" typeName="Psychic Ranged Weapon" hidden="false" id="feab-af5c-9bcb-c78b">
           <characteristics>
-            <characteristic name="R" typeId="cdb0-8654-6840-1037">18</characteristic>
-            <characteristic name="FP" typeId="5037-1f27-1790-e355">D6</characteristic>
-            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">5</characteristic>
-            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
-            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
-            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Shred (5+), Force (D)</characteristic>
-            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Psychic</characteristic>
+            <characteristic name="R" typeId="6d86-f7c6-c184-8bf4">18</characteristic>
+            <characteristic name="FP" typeId="99a5-a4b9-8862-5092">D6</characteristic>
+            <characteristic name="RS" typeId="ff4a-ab25-1be8-4545">5</characteristic>
+            <characteristic name="AP" typeId="c8d6-d2ec-1344-07e3">4</characteristic>
+            <characteristic name="D" typeId="e840-f63c-5bc4-27b3">1</characteristic>
+            <characteristic name="Special Rules" typeId="e87b-e7a3-5562-a456">Shred (5+), Force (D)</characteristic>
+            <characteristic name="Traits" typeId="a229-21ce-4177-c4b1">Psychic</characteristic>
           </characteristics>
         </profile>
       </profiles>

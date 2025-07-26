@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -4449,7 +4449,7 @@
         <characteristicType name="Traits" id="76e3-c188-bc65-3467"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Reaction" id="c14c-ecfd-ea65-58c9" hidden="false" sortIndex="14">
+    <profileType name="Reaction" id="c14c-ecfd-ea65-58c9" hidden="false" sortIndex="16">
       <characteristicTypes>
         <characteristicType name="Description" id="5d02-0e54-0f6a-0f0b"/>
       </characteristicTypes>
@@ -4466,13 +4466,13 @@
         <characteristicType name="Transport Capacity" id="a82e-858c-9aa9-2b43"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Wargear" id="5ec5-e0c3-1701-6f16" hidden="false" sortIndex="12">
+    <profileType name="Wargear" id="5ec5-e0c3-1701-6f16" hidden="false" sortIndex="14">
       <characteristicTypes>
         <characteristicType name="Summary" id="8e7d-a0ae-fd85-983c"/>
         <characteristicType name="Description" id="9944-2f6d-d61b-03b5"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Warlord Trait" id="958f-cc14-b252-7179" hidden="false" sortIndex="13">
+    <profileType name="Warlord Trait" id="958f-cc14-b252-7179" hidden="false" sortIndex="15">
       <characteristicTypes>
         <characteristicType name="Description" id="8086-8fe7-1456-e180"/>
       </characteristicTypes>
@@ -4542,13 +4542,13 @@
         <characteristicType name="Transport Capacity" id="7df3-dabd-eed0-50bf"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Gambit:" id="9b5f-da4e-5739-cbcf" hidden="false">
+    <profileType name="Gambit:" id="9b5f-da4e-5739-cbcf" hidden="false" sortIndex="19">
       <characteristicTypes>
         <characteristicType name="Summary" id="98f3-41cf-e3be-2ae7"/>
         <characteristicType name="Description" id="2d7d-b1d9-dead-605a"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Cybertheurgic Rite:" id="230a-eef9-447d-6623" hidden="false">
+    <profileType name="Cybertheurgic Rite:" id="230a-eef9-447d-6623" hidden="false" sortIndex="20">
       <characteristicTypes>
         <characteristicType name="Difficulty:" id="0c1a-8118-86ae-28a7"/>
         <characteristicType name="Range:" id="b98e-e5fa-6a28-2efe"/>

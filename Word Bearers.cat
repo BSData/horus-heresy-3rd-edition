@@ -380,7 +380,7 @@
           </categoryLinks>
           <rules>
             <rule name="Lord of the Blessed" id="ee53-dde6-9800-a3b9" hidden="false">
-              <description>A Model with this Special Rule can join Units with the Malefic Sub-Type as if it had that Sub-Type and while part of such a Unit, is treated as having that Sub-Type. </description>
+              <description>A Model with this Special Rule can join Units with the Malefic Sub-Type as if it had that Sub-Type and while part of such a Unit, is treated as having that Sub-Type.</description>
             </rule>
             <rule name="Harbinger of Chaos" id="6f98-3b19-41a2-58ae" hidden="false"/>
           </rules>
@@ -398,7 +398,7 @@
                     <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+3</characteristic>
                     <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
                     <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
-                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Phage (S) </characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Phage (S)</characteristic>
                     <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power, Psychic</characteristic>
                   </characteristics>
                 </profile>
@@ -688,7 +688,7 @@
               </constraints>
               <rules>
                 <rule name="The Panoply of Flame" id="328f-f751-232c-7b3d" hidden="false">
-                  <description>When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, score 1 Combat Resolution point for the Unit that includes a Mode] with the Panoply of Flame. </description>
+                  <description>When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, score 1 Combat Resolution point for the Unit that includes a Mode] with the Panoply of Flame.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -756,11 +756,12 @@
               </modifiers>
               <comment>6+</comment>
             </infoLink>
+            <infoLink name="Unwavering Conviction" id="224b-d569-aa2b-c4f9" hidden="false" type="rule" targetId="fe99-0874-2c10-cba5"/>
           </infoLinks>
           <profiles>
             <profile name="Anakatis Kul" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="1234-497a-328a-cc7b">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Malefic) </characteristic>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Malefic)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">8</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -798,7 +799,7 @@
                     <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
                     <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
                     <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
-                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+), Phage (S) </characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+), Phage (S)</characteristic>
                     <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Psychic</characteristic>
                   </characteristics>
                 </profile>
@@ -971,7 +972,185 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Mhara Gal Dreadnought" hidden="false" id="87ac-c2df-6bd9-33e3"/>
+    <selectionEntry type="unit" import="true" name="Mhara Gal Dreadnought" hidden="false" id="87ac-c2df-6bd9-33e3">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Mhara Gal Dreadnought" hidden="false" id="145f-a707-eb27-8a65">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="89f6-bb43-b453-4e1f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89f6-bb43-b453-4e1f-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Mhara Gal Dreadnought" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="4a1a-7544-14ee-33a7">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Walker (Malefic)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">8</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">7</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">7</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">7</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">4</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">4</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">12</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">10</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">8</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">5</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="2de1-ddd6-ebb4-10df" id="348a-3929-42da-4b1d" primary="false" name="Malefic"/>
+            <categoryLink targetId="38d4-d720-8009-acd3" id="22fd-fc6b-0b8a-a3f9" primary="false" name="Walker Model Type"/>
+            <categoryLink targetId="d251-944b-3c3b-0579" id="2064-8678-66a0-6024" primary="false" name="Traitor"/>
+            <categoryLink targetId="2aba-8953-ea2f-ce59" id="8dd5-3594-43f1-218f" primary="false" name="Word Bearers"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Bulky (X)" id="309b-9999-0aa3-f80f" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+              <modifiers>
+                <modifier type="set" value="Bulky (5)" field="name"/>
+              </modifiers>
+              <comment>5</comment>
+            </infoLink>
+            <infoLink name="Explodes (X)" id="0b95-31d2-2b6b-31a2" hidden="false" type="rule" targetId="da5b-b871-20da-3e70">
+              <modifiers>
+                <modifier type="set" value="Explodes (5+)" field="name"/>
+              </modifiers>
+              <comment>5+</comment>
+            </infoLink>
+            <infoLink name="Fear (X)" id="738f-991b-e3a5-17c7" hidden="false" type="rule" targetId="0ebc-0c92-2209-6393">
+              <modifiers>
+                <modifier type="set" value="Fear (1)" field="name"/>
+              </modifiers>
+              <comment>1</comment>
+            </infoLink>
+            <infoLink name="Implacable Advance" id="b03f-aa97-ee45-341c" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
+            <infoLink name="Unwavering Conviction" id="62ff-e859-f9ac-3761" hidden="false" type="rule" targetId="fe99-0874-2c10-cba5"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Burning Warpfire" hidden="false" id="3b25-470e-8405-bd10" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="02c9-0c49-6b9e-15cf-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02c9-0c49-6b9e-15cf-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Burning Warpfire" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="0b15-ee47-7284-ce39">
+                  <characteristics>
+                    <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
+                    <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+                    <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">5</characteristic>
+                    <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+                    <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Panic (2), Breaching (4+), Shred (6+)</characteristic>
+                    <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Plasma</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Panic (X)" id="1fc5-cd7b-ca5c-5c9b" hidden="false" type="rule" targetId="82a7-f471-3fda-6ca1">
+                  <modifiers>
+                    <modifier type="set" value="Panic (2)" field="name"/>
+                  </modifiers>
+                  <comment>2</comment>
+                </infoLink>
+                <infoLink name="Breaching (X)" id="cc6a-cd8a-785a-781c" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+                  <modifiers>
+                    <modifier type="set" value="Breaching (4+)" field="name"/>
+                  </modifiers>
+                  <comment>4+</comment>
+                </infoLink>
+                <infoLink name="Shred (X)" id="1536-b790-c681-6290" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
+                  <modifiers>
+                    <modifier type="set" value="Shred (6+)" field="name"/>
+                  </modifiers>
+                  <comment>6+</comment>
+                </infoLink>
+                <infoLink name="Template" id="7097-e85e-3069-bb21" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a">
+                  <comment>3&quot;</comment>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Warpfire Cannon" hidden="false" id="c0b1-473e-cb46-3079" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3061-44af-023e-cdac-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3061-44af-023e-cdac-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Warpfire Cannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="e274-fed6-3ccc-2b04">
+                  <characteristics>
+                    <characteristic name="R" typeId="cdb0-8654-6840-1037">36</characteristic>
+                    <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+                    <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+                    <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+                    <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
+                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (RS), Blast (3&quot;), Breaching (4+), Shred (6+)</characteristic>
+                    <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Plasma</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Heavy (X)" id="9b6b-0100-bbe2-283f" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
+                  <modifiers>
+                    <modifier type="set" value="Heavy (RS)" field="name"/>
+                  </modifiers>
+                  <comment>RS</comment>
+                </infoLink>
+                <infoLink name="Breaching (X)" id="1012-8ea7-6219-3b09" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+                  <modifiers>
+                    <modifier type="set" value="Breaching (4+)" field="name"/>
+                  </modifiers>
+                  <comment>4+</comment>
+                </infoLink>
+                <infoLink name="Shred (X)" id="9c49-5e3e-8c90-4458" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
+                  <modifiers>
+                    <modifier type="set" value="Shred (6+)" field="name"/>
+                  </modifiers>
+                  <comment>6+</comment>
+                </infoLink>
+                <infoLink name="Blast (X)" id="9d5f-1c8f-47b8-9543" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+                  <modifiers>
+                    <modifier type="set" value="Blast (3&quot;)" field="name"/>
+                  </modifiers>
+                  <comment>3&quot;</comment>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tainted Claw" hidden="false" id="b689-68d4-32e4-695c" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="067e-a97d-bbb6-9e01-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="067e-a97d-bbb6-9e01-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Tainted Claw" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="948e-f9b6-ad83-0a55">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">1</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+3</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">3</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e"/>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power, Psychic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="210"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ashen Circle" hidden="false" id="9290-f8f4-ff78-b09c"/>
   </sharedSelectionEntries>
   <catalogueLinks>
@@ -984,11 +1163,25 @@
     <catalogueLink type="catalogue" name="Psychic" id="be0b-47af-7f19-3fba" targetId="1b2d-2038-39a7-f387" importRootEntries="false"/>
   </catalogueLinks>
   <sharedRules>
-    <rule name="Burning Lore" id="b80b-792f-03c9-612b" hidden="false">
+    <rule name="Burning Lore" id="b80b-792f-03c9-612b" hidden="true">
       <description>Any Model with the High Command Battlefield Role and Word Bearers Trait may be given the Psyker Trait and the Anathemata Psychic Discipline (see page 35) for +40 Points per Model.</description>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4935-1832-63f7-91aa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
-    <rule name="Unwavering Conviction" id="fe99-0874-2c10-cba5" hidden="false">
+    <rule name="Unwavering Conviction" id="fe99-0874-2c10-cba5" hidden="true">
       <alias>When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, score 1 Combat Resolution point if any friendly Models in that Combat have the Word Bearers Trait.</alias>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4935-1832-63f7-91aa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
   </sharedRules>
   <entryLinks>
@@ -1029,7 +1222,7 @@
     </entryLink>
     <entryLink import="true" name="Mhara Gal Dreadnought" hidden="false" id="9003-7fc9-5a92-81a4" type="selectionEntry" targetId="87ac-c2df-6bd9-33e3">
       <categoryLinks>
-        <categoryLink targetId="3235-bd79-e9b1-60fa" id="516f-face-ac26-9cd2" primary="true" name="Heavy Assault"/>
+        <categoryLink targetId="2499-7239-685f-8465" id="c0e0-eb4e-9a6e-1737" primary="true" name="War-engine"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
