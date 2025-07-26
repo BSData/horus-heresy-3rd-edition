@@ -7902,7 +7902,88 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Sicaran Venator" hidden="false" id="1c8f-840b-c42f-338b" sortIndex="66"/>
+    <selectionEntry type="unit" import="true" name="Sicaran Venator" hidden="false" id="1c8f-840b-c42f-338b" sortIndex="66">
+      <entryLinks>
+        <entryLink import="true" name="Heavy bolter" hidden="false" id="c057-fed1-8e5f-18c8" type="selectionEntry" targetId="bc40-b14a-978e-0232">
+          <modifiers>
+            <modifier type="prepend" value="Turret Mounted" field="name"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5325-e402-3673-0ac3" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16c8-68ff-757e-89d0" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Neutron beam laser" hidden="false" id="3afe-1863-a80f-9f04" type="selectionEntry" targetId="81f3-6879-257e-6552">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4a9b-4a29-e845-db2e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4683-0798-3c3a-1ca6" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Sicaran Venator" hidden="false" id="2160-13fe-8b81-b06a">
+          <profiles>
+            <profile name="Sicaran Venator" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="86cb-2a1e-b0d8-5007">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">14</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">13</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">12</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">12</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">6</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Vehicle Model Type" hidden="false" id="a648-6acb-091c-39ab" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d06-4339-9b75-9881" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2daa-dc5f-4a44-6bfb" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="e6d3-38cf-6652-5eb5" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Legion Sponson Weapons" hidden="false" id="e840-b379-26d9-60ad" type="selectionEntryGroup" targetId="df25-ac22-5bbd-0e44" sortIndex="3"/>
+            <entryLink import="true" name="Legion Pintle Weapons" hidden="false" id="77d8-8b02-19a7-144a" type="selectionEntryGroup" targetId="d625-37d6-d83a-0de3" sortIndex="4"/>
+            <entryLink import="true" name="Searchlight" hidden="false" id="b566-e8b9-8127-1aea" type="selectionEntry" targetId="5a85-bf28-f790-7bf0" sortIndex="6">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8fe3-e1ee-4349-1955" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hunter-killer missile" hidden="false" id="fa50-1e6e-9d63-d589" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" sortIndex="5">
+              <modifiers>
+                <modifier type="set" value="Turret Mounted hunter-killer missile" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79a7-7255-792a-0fc0" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="3cb3-7cf7-8ca9-bdf6" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="96f3-d0cf-4831-333c" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Smokescreen" id="5f16-602f-93a0-0544" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
+        <infoLink name="Explodes (X)" id="603e-ec6f-69ff-3b18" hidden="false" type="rule" targetId="da5b-b871-20da-3e70">
+          <comment>5+</comment>
+          <modifiers>
+            <modifier type="set" value="Explodes (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kratos Battle Tank" hidden="false" id="e3f2-ff0d-f190-ecfd" sortIndex="67"/>
     <selectionEntry type="unit" import="true" name="Vindicator Siege Tank" hidden="false" id="5cb0-777c-bc90-f31a" sortIndex="68"/>
     <selectionEntry type="unit" import="true" name="Scorpius Missile Tank" hidden="false" id="4e75-6c81-f3ac-33f1" sortIndex="69"/>
