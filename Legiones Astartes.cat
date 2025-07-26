@@ -7441,7 +7441,7 @@
       <infoLinks>
         <infoLink name="[Allegiance]" id="075e-8210-6a9d-5ba9" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="edf6-3afa-a7ff-04e0" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
-        <infoLink name="Smokescreen" id="c9e1-02bd-cbab-f74c" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
+        <infoLink name="Interceptor" id="2c68-0f8a-c7c2-8765" hidden="false" type="profile" targetId="eb97-548b-dc3a-38a7"/>
       </infoLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="120"/>
@@ -7449,7 +7449,109 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Storm Eagle" hidden="false" id="0816-621f-d49d-558c" sortIndex="59"/>
+    <selectionEntry type="unit" import="true" name="Storm Eagle" hidden="false" id="0816-621f-d49d-558c" sortIndex="59">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Storm Eagle" hidden="false" id="9c5f-24f9-2ae7-20ab">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f64b-ce87-0f21-c4fe" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb6a-1aac-e6e1-80e9" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Storm Eagle" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="d777-b946-eb06-f8fd">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Stable, Transport, Flyer)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">18</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">12</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">12</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">12</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">6</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">16</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Vengeance launcher" hidden="false" id="f01c-40d8-5123-c2bf" type="selectionEntry" targetId="c575-11c1-0b4d-b01e">
+          <modifiers>
+            <modifier type="prepend" value="Centreline Mounted" field="name"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1041-7504-c708-30e9" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3666-ebcd-8b81-0abf" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="c769-9147-ecb4-e46a" hidden="false" sortIndex="1">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Nose" id="43c5-6af3-713a-52ba" hidden="false" sortIndex="1" defaultSelectionEntryId="9a7b-c9aa-1447-5f5f">
+              <entryLinks>
+                <entryLink import="true" name="Twin heavy bolter" hidden="false" id="9a7b-c9aa-1447-5f5f" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75" sortIndex="1">
+                  <modifiers>
+                    <modifier type="prepend" value="Centreline Mounted" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Twin multi-melta" hidden="false" id="8e95-40d4-4888-d8d1" type="selectionEntry" targetId="0e76-d08b-904e-c8fd" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="prepend" value="Centreline Mounted" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Cyclone missile launcher" hidden="false" id="2eea-96c9-1241-dc2f" type="selectionEntry" targetId="b341-159d-9dfb-ff31" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="prepend" value="Centreline Mounted" field="name"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38a5-f5a7-c36f-6d97" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82e2-a665-a00c-2429" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Wing Mounts" id="bc55-e09e-398f-0ff2" hidden="false" sortIndex="2" defaultSelectionEntryId="aa16-32a2-2c91-2392">
+              <entryLinks>
+                <entryLink import="true" name="Hellstrike missile" hidden="false" id="aa16-32a2-2c91-2392" type="selectionEntry" targetId="f5a3-87a2-b39d-735c" sortIndex="2">
+                  <modifiers>
+                    <modifier type="prepend" value="Four Centreline Mounted" field="name"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Tempest rocket" hidden="false" id="61da-4bea-477e-dc0d" type="selectionEntry" targetId="211b-5ea9-63ac-d161" sortIndex="1">
+                  <modifiers>
+                    <modifier type="prepend" value="Four Centreline Mounted" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Twin lascannon" hidden="false" id="5df5-188d-1df1-e02a" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a" sortIndex="3">
+                  <modifiers>
+                    <modifier type="prepend" value="Two Centreline Mounted" field="name"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f47c-4400-7d49-09dd" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4e7-6a35-a97c-6443" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="820d-81db-e3eb-db09" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="80ae-ba35-19f8-bcfb" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fire Raptor" hidden="false" id="3b08-d24a-c741-8daa" sortIndex="60"/>
     <selectionEntry type="unit" import="true" name="Javelin Squadron" hidden="false" id="50f3-fca2-49ab-6de4" sortIndex="62">
       <selectionEntries>
