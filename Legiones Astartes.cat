@@ -7683,6 +7683,119 @@
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Predator" hidden="false" id="99bb-2f78-0840-c5ba">
+          <profiles>
+            <profile name="Predator" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="3e05-3bdc-7328-c224">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">12</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">13</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">12</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">10</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">5</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dae6-ded1-3c67-8dcb" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0940-4de2-2d6c-afae" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle Model Type" hidden="false" id="13fd-6d01-b8d0-9bbe" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="b85f-2a19-7abe-8d03" hidden="false" sortIndex="1">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Turret" id="612e-a7f1-4854-b6e2" hidden="false" sortIndex="2" defaultSelectionEntryId="6483-4b11-920b-31c1">
+              <entryLinks>
+                <entryLink import="true" name="Predator cannon" hidden="false" id="6483-4b11-920b-31c1" type="selectionEntry" targetId="4c10-e3e7-244a-cf23" sortIndex="1"/>
+                <entryLink import="true" name="Flamestorm cannon" hidden="false" id="bb3f-c559-5869-b4d6" type="selectionEntry" targetId="35d1-1196-aa98-c6fb" sortIndex="2"/>
+                <entryLink import="true" name="Executioner plasma destroyer" hidden="false" id="c0a3-c540-371a-8865" type="selectionEntry" targetId="7cb4-a7cc-cada-1190" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Heavy conversion beam cannon" hidden="false" id="142c-501c-b242-8938" type="selectionEntry" targetId="4c0a-e911-ab85-2286" sortIndex="4">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Magna-melta cannon" hidden="false" id="a1f8-033d-b4a9-dca4" type="selectionEntry" targetId="cd2b-e3dd-e31b-73f9" sortIndex="5">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Graviton cannon" hidden="false" id="08c8-c259-5696-ec7a" type="selectionEntry" targetId="68b3-66f9-a283-1259" sortIndex="6">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Volkite macro saker" hidden="false" id="52cd-82ab-937e-9f4a" type="selectionEntry" targetId="7416-5aa2-b1b8-9cbf" sortIndex="7">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Neutron blaster" hidden="false" id="426f-1251-412c-6bbe" type="selectionEntry" targetId="c232-60af-a0dc-7786" sortIndex="8">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin lascannon" hidden="false" id="3ef7-5843-df1d-e31c" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a" sortIndex="9">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="52f3-c0ba-e47e-e3df" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="932d-1614-71f9-711b" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Legion Sponson Weapons" hidden="false" id="c840-0225-c795-02fa" type="selectionEntryGroup" targetId="df25-ac22-5bbd-0e44" sortIndex="3"/>
+            <entryLink import="true" name="Legion Pintle Weapons" hidden="false" id="4f11-d246-e0fa-42e8" type="selectionEntryGroup" targetId="d625-37d6-d83a-0de3" sortIndex="4"/>
+            <entryLink import="true" name="Dozer blade" hidden="false" id="bcfc-81f2-d60a-bfd0" type="selectionEntry" targetId="496e-da18-2afa-b99c" sortIndex="7">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a6f-3ad2-9b06-4b9a" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Searchlight" hidden="false" id="aaf3-06e9-4801-cbd1" type="selectionEntry" targetId="5a85-bf28-f790-7bf0" sortIndex="6">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c17-6a62-6a03-7e97" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hunter-killer missile" hidden="false" id="e5f2-b531-e8b6-1e8b" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" sortIndex="5">
+              <modifiers>
+                <modifier type="set" value="Turret Mounted hunter-killer missile" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6022-d9aa-5da4-17ff" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Legiones Decurion" hidden="false" id="37a0-b852-9643-e794" type="selectionEntryGroup" targetId="6dcf-12ac-0f05-f158" sortIndex="1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="5065-8efd-60cd-97f2" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="e67e-99d7-ecd9-6f4f" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Smokescreen" id="2c2c-09e8-bb89-e63e" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Land Speeder Squadron" hidden="false" id="7ebb-cdb2-017e-7c51" sortIndex="63"/>
     <selectionEntry type="unit" import="true" name="Sicaran" hidden="false" id="4d65-cef9-42c6-dd2c" sortIndex="65"/>
