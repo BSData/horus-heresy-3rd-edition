@@ -1532,25 +1532,24 @@
           <profiles>
             <profile name="Fellblade Super-Heavy Tank" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="1149-0d9a-dfd2-0f82">
               <characteristics>
-                <characteristic name="M" typeId="f35b-a37a-888f-0a22">10</characteristic>
-                <characteristic name="BS" typeId="c7ff-b51a-f4f2-e043">4</characteristic>
-                <characteristic name="Front" typeId="616f-6b7d-beed-e322">14</characteristic>
-                <characteristic name="Side" typeId="15c1-81ce-169d-f3b6">13</characteristic>
-                <characteristic name="Rear" typeId="43c8-91f7-de7a-af89">12</characteristic>
-                <characteristic name="HP" typeId="9f6c-f494-dc7b-3c0b">18</characteristic>
-                <characteristic name="Transport Capacity" typeId="61fa-aed8-491f-0edb">-</characteristic>
-                <characteristic typeId="9c0c-83c3-e5de-6cfd" name="New Characteristic Type"/>
-                <characteristic typeId="827f-9ce2-2118-e134" name="Type"/>
-                <characteristic typeId="d624-72fe-0205-4443" name="M"/>
-                <characteristic typeId="a17e-8e7d-d21f-c138" name="BS"/>
-                <characteristic typeId="6536-e73d-4a74-c675" name="Front Armour"/>
-                <characteristic typeId="f03a-18a7-8586-273d" name="Side Armour"/>
-                <characteristic typeId="ec84-1f5d-1bb3-6826" name="Rear Armour"/>
-                <characteristic typeId="8735-4497-1f8a-4dda" name="HP"/>
-                <characteristic typeId="a82e-858c-9aa9-2b43" name="Transport Capacity"/>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Super-heavy)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">10</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">14</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">13</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">12</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">18</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ca4b-9478-14b5-8009" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce56-ae94-4b7d-8a3b" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle Model Type" hidden="false" id="cf8a-1b56-4f8a-d388" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -1558,6 +1557,58 @@
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="afa2-25fe-1f35-d707" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Legion Pintle Weapons" hidden="false" id="98cd-e5ff-aa19-d747" type="selectionEntryGroup" targetId="d625-37d6-d83a-0de3" sortIndex="3"/>
+            <entryLink import="true" name="Hunter-killer missile" hidden="false" id="8414-e87c-b631-afc6" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" sortIndex="4">
+              <modifiers>
+                <modifier type="set" value="Hull (Front) hunter-killer missile" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4197-67fb-3ba2-49bc" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Searchlight" hidden="false" id="53d7-db6b-bad8-8ee5" type="selectionEntry" targetId="5a85-bf28-f790-7bf0" sortIndex="5">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e6e-12b0-5df6-9232" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Legion Super-heavy Sponsons" hidden="false" id="4bef-b599-ae5e-0763" type="selectionEntryGroup" targetId="4a4d-04c6-ba1f-f6f2" sortIndex="2"/>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Hull (Front) Weapons" id="5795-b469-ae8e-5f17" hidden="false" sortIndex="1" defaultSelectionEntryId="4520-fe0a-1373-5752">
+              <entryLinks>
+                <entryLink import="true" name="Twin heavy bolter" hidden="false" id="4520-fe0a-1373-5752" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75" sortIndex="1">
+                  <modifiers>
+                    <modifier type="prepend" value="Hull (Front)" field="name" join=" "/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Twin heavy flamer" hidden="false" id="9e10-7ecc-0049-797e" type="selectionEntry" targetId="f797-93eb-d6fe-586a" sortIndex="2">
+                  <modifiers>
+                    <modifier type="prepend" value="Hull (Front)" field="name" join=" "/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ca2-a8f9-5914-466b" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c839-95e3-fcf2-8170" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="e103-ce2c-2264-7d24" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="a91d-b4d6-903c-f0fe" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Smokescreen" id="fed2-23d1-9f49-53c3" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Praetorian Command Squad" hidden="false" id="0056-047c-b1f4-2555" sortIndex="19">
       <selectionEntries>
@@ -8617,7 +8668,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Options" id="561f-c2cf-0d03-d0dd" hidden="false">
+        <selectionEntryGroup name="Options" id="561f-c2cf-0d03-d0dd" hidden="false" sortIndex="1">
           <entryLinks>
             <entryLink import="true" name="Legion Pintle Weapons" hidden="false" id="8e69-3781-cfbb-5efe" type="selectionEntryGroup" targetId="d625-37d6-d83a-0de3" sortIndex="2"/>
             <entryLink import="true" name="Legion Sponson Weapons" hidden="false" id="24d6-d135-1443-312c" type="selectionEntryGroup" targetId="df25-ac22-5bbd-0e44" sortIndex="1">
@@ -8703,7 +8754,7 @@
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Options" id="c0da-faba-282b-e64d" hidden="false">
+        <selectionEntryGroup name="Options" id="c0da-faba-282b-e64d" hidden="false" sortIndex="1">
           <entryLinks>
             <entryLink import="true" name="Legion Pintle Weapons" hidden="false" id="0594-c2a0-ba99-274d" type="selectionEntryGroup" targetId="d625-37d6-d83a-0de3" sortIndex="2"/>
             <entryLink import="true" name="Hunter-killer missile" hidden="false" id="297a-a01f-eae1-0b34" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" sortIndex="3">
