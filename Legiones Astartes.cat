@@ -7551,8 +7551,105 @@
         <infoLink name="[Allegiance]" id="820d-81db-e3eb-db09" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="80ae-ba35-19f8-bcfb" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="200"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Fire Raptor" hidden="false" id="3b08-d24a-c741-8daa" sortIndex="60"/>
+    <selectionEntry type="unit" import="true" name="Fire Raptor" hidden="false" id="3b08-d24a-c741-8daa" sortIndex="60">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Fire Raptor" hidden="false" id="13c3-cdf0-e858-c728">
+          <profiles>
+            <profile name="Fire Raptor" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="4e72-7900-e1f2-802b">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Flyer, Stable)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">18</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">12</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">12</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">12</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">6</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d8e3-9535-2b53-07cd" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7b2-4c67-0107-bcfe" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle Model Type" hidden="false" id="17bc-2d6b-9a75-4891" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
+            <categoryLink type="category" name="Flyer Model Sub-Type" hidden="false" id="dc09-d9d5-5a2e-ca29" targetId="42a3-02e9-e0e4-8292" primary="false"/>
+            <categoryLink type="category" name="Stable Model Sub-Type" hidden="false" id="e914-297e-2359-51b8" targetId="3753-39e1-22c2-531b" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Twin avenger bolt cannon" hidden="false" id="7f93-9997-96af-e2ce" type="selectionEntry" targetId="82bb-5456-f6c4-8334">
+          <modifiers>
+            <modifier type="prepend" value="Centreline Mounted" field="name"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="ff36-bb59-b5c3-fdea" hidden="false" sortIndex="1">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Sponsons" id="3413-da10-517b-d76d" hidden="false" defaultSelectionEntryId="785e-d41a-2b0b-e9dd" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Gravis heavy bolter battery" hidden="false" id="785e-d41a-2b0b-e9dd" type="selectionEntry" targetId="5c0e-33c5-afb1-fed5" sortIndex="1">
+                  <modifiers>
+                    <modifier type="set" value="Two Sponson Mounted Gravis heavy bolter batteries" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Gravis autocannon battery" hidden="false" id="1808-e737-a7aa-b891" type="selectionEntry" targetId="681a-80de-dee4-dfc6" sortIndex="2">
+                  <modifiers>
+                    <modifier type="set" value="Two Sponson Mounted Gravis autocannon batteries" field="name"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="16ef-6d7c-f301-364f" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="558f-41c3-7a8e-538f" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Missiles" id="e12f-9234-f28d-875c" hidden="false" sortIndex="2" defaultSelectionEntryId="64a4-6569-559e-eea2">
+              <entryLinks>
+                <entryLink import="true" name="Tempest rocket" hidden="false" id="64a4-6569-559e-eea2" type="selectionEntry" targetId="211b-5ea9-63ac-d161" sortIndex="1">
+                  <modifiers>
+                    <modifier type="set" value="Four Centreline Mounted Tempest rockets" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Hellstrike missile" hidden="false" id="9b57-7535-f9ff-cf37" type="selectionEntry" targetId="f5a3-87a2-b39d-735c" sortIndex="2">
+                  <modifiers>
+                    <modifier type="set" value="Four Centreline Mounted Hellstrike missiles" field="name"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="980b-6adc-08b6-8e50" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ed6-d9a5-de5b-992d" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="ddd9-44db-9971-97cc" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="d1e1-b728-a8b7-4c6c" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+      </infoLinks>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="220"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Javelin Squadron" hidden="false" id="50f3-fca2-49ab-6de4" sortIndex="62">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Javelin Speeder" hidden="false" id="bcab-d669-63bc-66fd">
