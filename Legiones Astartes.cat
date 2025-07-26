@@ -8130,7 +8130,100 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Vindicator Siege Tank" hidden="false" id="5cb0-777c-bc90-f31a" sortIndex="68"/>
+    <selectionEntry type="unit" import="true" name="Vindicator Siege Tank" hidden="false" id="5cb0-777c-bc90-f31a" sortIndex="68">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="fbd0-ae95-99c9-34cb" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Hunter-killer missile" hidden="false" id="fb7e-3a13-4eb9-eec1" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" sortIndex="3">
+              <modifiers>
+                <modifier type="set" value="Hull (Front) hunter-killer missile" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="465c-7085-09b0-addd" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Searchlight" hidden="false" id="3cbf-e3b9-93b3-f5ae" type="selectionEntry" targetId="5a85-bf28-f790-7bf0" sortIndex="4">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5386-af3d-2c39-9bad" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Dozer blade" hidden="false" id="fa45-a07e-af8a-d95a" type="selectionEntry" targetId="496e-da18-2afa-b99c" sortIndex="5">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3726-91fe-c339-8ae7" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Legion Pintle Weapons" hidden="false" id="d958-ce41-dbd1-9962" type="selectionEntryGroup" targetId="d625-37d6-d83a-0de3" sortIndex="2"/>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Main gun" id="67c6-81be-a42f-397b" hidden="false" defaultSelectionEntryId="5ccc-9f40-dd83-797f" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Demolisher cannon" hidden="false" id="5ccc-9f40-dd83-797f" type="selectionEntry" targetId="4514-8e18-77b4-a141" sortIndex="1"/>
+                <entryLink import="true" name="Magna laser destroyer" hidden="false" id="d218-73e4-0b5e-87d4" type="selectionEntry" targetId="53de-594e-f5d6-c442" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="af96-4b2b-980d-edae" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed5e-f6b7-96dd-51d3" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Combi-bolter" hidden="false" id="ce83-f9ac-4100-827a" type="selectionEntry" targetId="042d-9e60-db9e-c147">
+          <modifiers>
+            <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Vindicator Siege Tank" hidden="false" id="bdb7-f9bf-ad88-7bc8">
+          <categoryLinks>
+            <categoryLink name="Vehicle Model Type" hidden="false" id="98cc-1ebd-74d0-46af" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Vindicator Siege Tank" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="c7a5-d9df-f3b7-a753">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">10</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">13</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">13</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">10</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">6</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8d90-1485-bdea-6287" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2be1-6c6c-3b78-a005" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="20af-c857-b26b-88ff" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="5479-6f2d-752d-4f1c" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Smokescreen" id="a3f4-7c98-8cb5-dfb5" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
+      </infoLinks>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="140"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Scorpius Missile Tank" hidden="false" id="4e75-6c81-f3ac-33f1" sortIndex="69"/>
     <selectionEntry type="unit" import="true" name="Arquitor Bombard" hidden="false" id="e6e4-964a-5852-9c07" sortIndex="70"/>
     <selectionEntry type="unit" import="true" name="Cerberus Heavy Tank Destroyer" hidden="false" id="a7a8-9dd5-69b2-a598" sortIndex="71"/>
