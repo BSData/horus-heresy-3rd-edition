@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="3" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="4" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <profiles>
@@ -6323,7 +6323,54 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Apothecary" hidden="false" id="b7fe-ba65-00d2-57f0" sortIndex="37"/>
     <selectionEntry type="unit" import="true" name="Techmarine" hidden="false" id="6cac-d5d2-dda7-ea8f" sortIndex="38"/>
-    <selectionEntry type="unit" import="true" name="Deathstorm Drop Pod" hidden="false" id="84cd-c790-5886-8814" sortIndex="39"/>
+    <selectionEntry type="unit" import="true" name="Deathstorm Drop Pod" hidden="false" id="84cd-c790-5886-8814" sortIndex="39">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Deathstorm Drop Pod" hidden="false" id="3fa0-4271-8af0-0e03">
+          <profiles>
+            <profile name="Deathstorm Drop Pod" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="5f61-9550-e27d-0815">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">-</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">2</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">12</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">12</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">12</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef7d-0e21-28d2-aff6" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f637-a931-b995-b28f" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle Model Type" hidden="false" id="aa15-542f-301d-59f4" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Deathstorm missile launcher" hidden="false" id="dc06-2cf1-61e7-7f8f" type="selectionEntry" targetId="a774-5009-7e45-c9bf">
+          <comment>Turret Mounted</comment>
+          <modifiers>
+            <modifier type="set" value="Turret Mounted Deathstorm missile launcher" field="name"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ed6-9ed8-b6d4-2dee" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ec0-152a-a797-d57f" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="fac8-dc40-b34d-d740" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="3abb-6b0f-ac07-5abf" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Impact Reactive Doors" id="73bb-6528-2373-5372" hidden="false" type="rule" targetId="ba5d-a783-2256-afe3"/>
+        <infoLink name="Orbital Assault Vehicle" id="1b26-411e-f035-3d97" hidden="false" type="rule" targetId="ef39-ccc2-44a6-d075"/>
+      </infoLinks>
+      <rules>
+        <rule name="Deathstorm" id="1284-c2a7-0b6c-0dc1" hidden="false"/>
+      </rules>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Contemptor Dreadnought" hidden="false" id="3337-0b90-6ead-cba1" sortIndex="41"/>
     <selectionEntry type="unit" import="true" name="Termite" hidden="false" id="29c3-0b90-216c-b071" sortIndex="47"/>
     <selectionEntry type="unit" import="true" name="Drop Pod" hidden="false" id="2eb3-783d-8dde-733b" sortIndex="46"/>
