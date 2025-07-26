@@ -7099,7 +7099,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sabre" hidden="false" id="e62b-3d98-8678-1f97" sortIndex="54">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Options" id="bba1-cf76-021b-5bcd" hidden="false">
+        <selectionEntryGroup name="Options" id="bba1-cf76-021b-5bcd" hidden="false" sortIndex="">
           <selectionEntryGroups>
             <selectionEntryGroup name="Centreline Mounted" id="905a-78eb-7b40-528a" hidden="false" defaultSelectionEntryId="b938-c4be-7bef-3bbd" sortIndex="1">
               <entryLinks>
@@ -7196,7 +7196,119 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Land Raider Explorator" hidden="false" id="5794-faa2-b2c8-ef0a" sortIndex="56"/>
+    <selectionEntry type="unit" import="true" name="Land Raider Explorator" hidden="false" id="5794-faa2-b2c8-ef0a" sortIndex="56">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="4c26-7bf3-20cf-c104" hidden="false" sortIndex="1">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Hull (Front) Weapon" id="67cc-f88b-e09a-f4cf" hidden="false" defaultSelectionEntryId="none" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Twin heavy bolter" hidden="false" id="b5c0-a3d2-d73d-7ef2" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin heavy flamer" hidden="false" id="c2ee-1bf1-7ef7-d511" type="selectionEntry" targetId="f797-93eb-d6fe-586a" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin lascannon" hidden="false" id="ff7f-a92c-85ce-42ea" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a" sortIndex="1">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="68af-9460-6b33-209b" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a678-1522-5b82-38a8" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Hunter-killer missile" hidden="false" id="190a-5c47-48e0-cb48" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" sortIndex="3">
+              <modifiers>
+                <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86ef-59fb-c746-78fe" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Searchlight" hidden="false" id="3c45-47ed-4dd6-c3ae" type="selectionEntry" targetId="5a85-bf28-f790-7bf0" sortIndex="4">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca2e-ef74-df6c-4992" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Legion Pintle Weapons" hidden="false" id="d9cd-b9e6-5cca-4ca0" type="selectionEntryGroup" targetId="d625-37d6-d83a-0de3" sortIndex="2"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Dozer blade" hidden="false" id="93b3-2d6e-b4bf-e7ae" type="selectionEntry" targetId="496e-da18-2afa-b99c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef75-e0e7-9aaa-12ad" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8120-db30-2d1e-6190" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Twin lascannon" hidden="false" id="c992-30fe-1192-724c" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="584c-b108-4b1f-1f89" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a653-9cf6-3867-95d5" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="prepend" value="Two Sponson Mounted" field="name"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Land Raider Explorator" hidden="false" id="131c-d297-7115-48f4">
+          <profiles>
+            <profile name="Land Raider Explorator" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="f5f1-967b-07e2-2dfa">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Transport)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">10</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">14</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">14</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">14</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">8</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="063c-8671-7b96-e193" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a27-8edb-591d-4cbe" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle Model Type" hidden="false" id="f5dd-d5f3-ddb8-b6dc" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
+            <categoryLink name="Transport Model Sub-Type" hidden="false" id="ad18-7b75-fe29-4a19" targetId="2e6d-36f6-eeca-8e0c" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="11b9-10ed-753f-4bd5" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="6ebe-9d98-c707-ce4d" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Smokescreen" id="6b0b-cf0c-1bb8-0a64" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
+        <infoLink name="Assault Vehicle" id="b1ce-d78a-866f-e59c" hidden="false" type="rule" targetId="150c-16e6-1212-9f75"/>
+        <infoLink name="Auto-Repair (X)" id="3b5a-6483-2f57-0707" hidden="false" type="rule" targetId="3973-ed50-1482-ff4a">
+          <comment>5+</comment>
+          <modifiers>
+            <modifier type="set" value="Auto-Repair (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="220"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tarantula Battery" hidden="false" id="4ee0-7aae-5319-599f" sortIndex="57"/>
     <selectionEntry type="unit" import="true" name="Scimitar Jetbike Squadron" hidden="false" id="aa3c-45cc-2dfb-a98e" sortIndex="61"/>
     <selectionEntry type="unit" import="true" name="Xiphon Interceptor" hidden="false" id="06a4-3ae8-c5d2-aa1d" sortIndex="58"/>
