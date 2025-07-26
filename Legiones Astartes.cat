@@ -6809,7 +6809,54 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Kharybdis Assault Claw" hidden="false" id="ed0b-f07b-ed2f-b510" sortIndex="52"/>
+    <selectionEntry type="unit" import="true" name="Kharybdis Assault Claw" hidden="false" id="ed0b-f07b-ed2f-b510" sortIndex="52">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Kharybdis Assault Claw" hidden="false" id="2a79-56e7-eb3f-85de">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ad2-ba5c-f044-dd6e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="184a-8974-60e4-c655" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Kharybdis Assault Claw" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="2123-757e-fda2-0134">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Flyer, Transport)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">14</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">12</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">12</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">12</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">8</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">22</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Vehicle Model Type" hidden="false" id="6f3b-0de3-6302-6584" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
+            <categoryLink name="Transport Model Sub-Type" hidden="false" id="38ec-6422-9328-05ff" targetId="2e6d-36f6-eeca-8e0c" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Kharybdis missile launcher" hidden="false" id="2023-49ca-0e60-7a69" type="selectionEntry" targetId="a6fd-3d58-c22e-1887">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="393f-fb28-cc0f-c234" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="591d-a072-878e-5362" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="b4fb-b604-772d-009b" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="fb71-d751-eacf-e63e" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+      </infoLinks>
+      <rules>
+        <rule name="Heavy Drop Transport" id="43c7-618a-cdc9-ef2c" hidden="false"/>
+      </rules>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="235"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dreadclaw Drop Pod" hidden="false" id="2438-805f-7a19-3295" sortIndex="51">
       <selectionEntries>
         <selectionEntry type="unit" import="true" name="Dreadclaw Drop Pod" hidden="false" id="eb28-a342-ded6-61fa">
