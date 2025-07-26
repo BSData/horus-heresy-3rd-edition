@@ -1335,34 +1335,66 @@
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Araknae Quad Accelerator Platform" hidden="false" id="acef-2a3d-3434-7583" sortIndex="40">
-      <profiles>
-        <profile name="Araknae Quad Accelerator Platform" typeId="a76f-8e23-8c3e-166d" typeName="Unit" hidden="false" id="34ef-34a3-fc00-227b">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b"/>
-            <characteristic name="M" typeId="a106-a779-d272-5e93"/>
-            <characteristic name="WS" typeId="253c-d694-4695-c89e"/>
-            <characteristic name="BS" typeId="0cd5-b269-e3bc-028b"/>
-            <characteristic name="S" typeId="498f-dce1-59fd-d8d7"/>
-            <characteristic name="T" typeId="3120-8275-e537-ecd2"/>
-            <characteristic name="W" typeId="f5cc-79a3-d302-cc1d"/>
-            <characteristic name="I" typeId="af9d-7db8-dc95-71c1"/>
-            <characteristic name="A" typeId="024e-bdb1-7982-25a0"/>
-            <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6"/>
-            <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f"/>
-            <characteristic name="WP" typeId="f714-1726-37d3-44df"/>
-            <characteristic name="IN" typeId="29c5-925d-5b1d-1e77"/>
-            <characteristic name="SAV" typeId="03bd-4ecb-351d-143b"/>
-            <characteristic name="INV" typeId="a951-a772-7ce0-0b64"/>
-            <characteristic name="Special Rules" typeId="2cda-2fb9-4239-cbcb"/>
-            <characteristic name="Traits" typeId="6a9a-2af3-00c4-d134"/>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="125"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Araknae Quad Accelerator Platform" hidden="false" id="9a6a-2e41-13a1-c9b3">
+          <profiles>
+            <profile name="Araknae Quad Accelerator Platform" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="6cd5-ee99-2851-a7a3">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">-</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">12</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">12</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">12</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">5</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aad5-9948-b278-8f26" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bff-a133-1557-b6cf" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle Model Type" hidden="false" id="e53a-94ee-10b7-a96a" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Atomantic Pavise" hidden="false" id="6ae4-c54d-a5f2-fea6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4020-8c71-5f57-ab8d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f07-3d44-2136-cf7a" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Atomantic Pavise" id="91b4-b389-9460-54a9" hidden="false"/>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Quad accelerator autocannon" hidden="false" id="e239-524c-c83c-ed06" type="selectionEntry" targetId="dda7-91e5-90a0-cc4f">
+          <comment>Turret mounted</comment>
+          <modifiers>
+            <modifier type="set" value="Turret Mounted Quad accelerator autocannon" field="name"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="dcfc-b32f-da78-edb7" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="5f58-1ffb-bc1f-f3f6" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Explodes (X)" id="0000-7ebe-799d-89f6" hidden="false" type="rule" targetId="da5b-b871-20da-3e70">
+          <comment>4+</comment>
+          <modifiers>
+            <modifier type="set" value="Explodes (4+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <rules>
+        <rule name="Gun Emplacement" id="b6af-fdc0-dd26-2470" hidden="false"/>
+      </rules>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Saturnine Dreadnought" hidden="false" id="b26e-1244-2dbc-2b6d" sortIndex="44">
       <selectionEntries>
@@ -6364,12 +6396,17 @@
       <infoLinks>
         <infoLink name="[Allegiance]" id="fac8-dc40-b34d-d740" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="3abb-6b0f-ac07-5abf" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
-        <infoLink name="Impact Reactive Doors" id="73bb-6528-2373-5372" hidden="false" type="rule" targetId="ba5d-a783-2256-afe3"/>
-        <infoLink name="Orbital Assault Vehicle" id="1b26-411e-f035-3d97" hidden="false" type="rule" targetId="ef39-ccc2-44a6-d075"/>
+        <infoLink name="Impact Reactive Doors" id="73bb-6528-2373-5372" hidden="false" type="rule" targetId="a919-02f3-60f7-ab99"/>
+        <infoLink name="Orbital Assault Vehicle" id="1b26-411e-f035-3d97" hidden="false" type="rule" targetId="d3d7-2241-0ce5-f2b6"/>
       </infoLinks>
       <rules>
         <rule name="Deathstorm" id="1284-c2a7-0b6c-0dc1" hidden="false"/>
       </rules>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="90"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Contemptor Dreadnought" hidden="false" id="3337-0b90-6ead-cba1" sortIndex="41"/>
     <selectionEntry type="unit" import="true" name="Termite" hidden="false" id="29c3-0b90-216c-b071" sortIndex="47"/>
