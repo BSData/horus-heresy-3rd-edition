@@ -8866,9 +8866,305 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Thunderhawk Gunship" hidden="false" id="d1dc-6a65-136b-7d33" sortIndex="76"/>
-    <selectionEntry type="unit" import="true" name="Mastodon Super-Heavy Assault Transport" hidden="false" id="d29b-64ce-e91e-75fa" sortIndex="78"/>
-    <selectionEntry type="unit" import="true" name="Sokar Stormbird" hidden="false" id="c2de-41c2-f4fa-996c" sortIndex="77"/>
+    <selectionEntry type="unit" import="true" name="Thunderhawk Gunship" hidden="false" id="d1dc-6a65-136b-7d33" sortIndex="76">
+      <entryLinks>
+        <entryLink import="true" name="Hellstrike missile" hidden="false" id="7668-9d2e-534f-965c" type="selectionEntry" targetId="f5a3-87a2-b39d-735c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f546-4f12-fd57-4414" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed7b-d112-7b49-6f4d" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="prepend" value="Six Centreline Mounted" field="name"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Lascannon" hidden="false" id="3121-440e-c262-699b" type="selectionEntry" targetId="b6d5-4be2-c37e-2197">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2112-891d-6c19-8fbb" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bce-04c4-0e2a-1024" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="prepend" value="Two hull (Front) Mounted" field="name"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Turbo-laser destructor" hidden="false" id="65bd-4e36-a19c-00e3" type="selectionEntry" targetId="aa70-7846-5273-0e2f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="47aa-aa89-6544-6dc9" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e34d-ff3b-a2a4-d03f" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="prepend" value="Centreline Mounted" field="name"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Twin heavy bolter" hidden="false" id="0ba9-0f3d-4c30-2c66" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1759-1a2a-8068-6642" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aca3-2389-210c-2450" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="prepend" value="Two Turret Mounted" field="name"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Twin heavy bolter" hidden="false" id="fd33-1215-a70f-8a09" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0043-112a-64ca-0f88" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbcc-3aa5-9137-d87c" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="prepend" value="Two Sponson Mounted" field="name"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Thunderhawk Gunship" hidden="false" id="4e82-77b7-0e74-9b30">
+          <profiles>
+            <profile name="Thunderhawk Gunship" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="87c2-48c6-931c-949f">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Transport, Super-heavy, Flyer)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">18</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">13</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">13</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">13</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">18</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">32</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="af8d-0902-9d1c-2bd2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9590-a699-006a-00eb" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle Model Type" hidden="false" id="340a-4600-e452-d8ef" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
+            <categoryLink name="Transport Model Sub-Type" hidden="false" id="ef1c-213c-dab0-fe2e" targetId="2e6d-36f6-eeca-8e0c" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="5436-7686-ab3f-a189" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="1a4e-8a06-41fd-1e60" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Smokescreen" id="37f9-a88f-394e-cf46" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
+      </infoLinks>
+      <rules>
+        <rule name="Thunderhawk Transport Bay" id="a0f0-4c33-3a37-bd28" hidden="false"/>
+      </rules>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="685"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mastodon Super-Heavy Assault Transport" hidden="false" id="d29b-64ce-e91e-75fa" sortIndex="78">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="7f22-6894-7375-119f" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Legion Sponson Weapons" hidden="false" id="8d57-a26a-b172-7097" type="selectionEntryGroup" targetId="df25-ac22-5bbd-0e44" sortIndex="1">
+              <modifiers>
+                <modifier type="set" value="Sponsons #1" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Legion Sponson Weapons" hidden="false" id="bbda-45c7-09c2-24cd" type="selectionEntryGroup" targetId="df25-ac22-5bbd-0e44" sortIndex="2">
+              <modifiers>
+                <modifier type="set" value="Sponsons #2" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Hunter-killer missile" hidden="false" id="a1e8-2fea-3e49-30bb" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" sortIndex="3">
+              <modifiers>
+                <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0495-2f28-9827-0b04" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Searchlight" hidden="false" id="fd71-7cb5-957e-7a57" type="selectionEntry" targetId="5a85-bf28-f790-7bf0" sortIndex="4">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa74-b437-cb95-3a9d" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Mastodon Super-Heavy Assault Transport" hidden="false" id="73a0-8059-8a7c-67f9">
+          <categoryLinks>
+            <categoryLink name="Vehicle Model Type" hidden="false" id="10d8-0e1c-47b8-6066" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
+            <categoryLink name="Transport Model Sub-Type" hidden="false" id="4c00-8c64-31dd-a57a" targetId="2e6d-36f6-eeca-8e0c" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Mastodon Super-Heavy Assault Transport" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="fbf1-bb0b-d02e-a5fb">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Transport, Super-heavy)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">10</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">14</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">14</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">14</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">20</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">42</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7aa6-f4f7-3f1c-e623" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="004c-a459-c853-c513" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="a067-19cc-3f2a-0dcf" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="0bf6-f345-b17f-cebc" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Smokescreen" id="f2fe-9f62-1bf1-b9f3" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
+      </infoLinks>
+      <rules>
+        <rule name="Mastodon Transport Bay" id="e072-e4f5-b964-a208" hidden="false"/>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Sokar Stormbird" hidden="false" id="c2de-41c2-f4fa-996c" sortIndex="77">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="6914-4acf-1945-3f73" hidden="false" sortIndex="1">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Hull (Left)" id="d832-5f66-f189-5c6a" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Twin lascannon" hidden="false" id="1590-79a1-617f-af18" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a" sortIndex="1" defaultAmount="2">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cae2-f7ad-433f-b7e3" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="prepend" value="Hull (Left) Mounted" field="name"/>
+                  </modifiers>
+                  <comment>Hull (Left)</comment>
+                </entryLink>
+                <entryLink import="true" name="Gravis heavy bolter battery" hidden="false" id="601f-00fb-1d0f-ebfd" type="selectionEntry" targetId="5c0e-33c5-afb1-fed5" sortIndex="2">
+                  <modifiers>
+                    <modifier type="prepend" value="Hull (Left) Mounted" field="name"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="df23-dea6-42b9-4e20" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="22da-6468-9839-9529" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f80f-ab41-0e9e-73c0" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Hull (Right)" id="f6eb-b419-7033-f945" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Twin lascannon" hidden="false" id="7c56-2250-7a45-0082" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a" sortIndex="1" defaultAmount="2">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="843e-89f7-28ad-be66" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="prepend" value="Hull (Right) Mounted" field="name"/>
+                  </modifiers>
+                  <comment>Hull (Left)</comment>
+                </entryLink>
+                <entryLink import="true" name="Gravis heavy bolter battery" hidden="false" id="4c85-ea75-7a83-5f1b" type="selectionEntry" targetId="5c0e-33c5-afb1-fed5" sortIndex="2">
+                  <modifiers>
+                    <modifier type="prepend" value="Hull (Right) Mounted" field="name"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="333f-512d-38f4-d862" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="16fe-0cb0-fe42-d02b" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="29cb-8864-52b5-227b" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Hellstrike missile" hidden="false" id="3074-4e39-05c0-ce6d" type="selectionEntry" targetId="f5a3-87a2-b39d-735c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fca6-bbe3-44c5-86a1" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e3b-7ab1-e8a9-26cf" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="prepend" value="Six Centreline Mounted" field="name"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Turbo-laser destructor" hidden="false" id="a54d-8361-ced6-395a" type="selectionEntry" targetId="aa70-7846-5273-0e2f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="40a8-cdf8-a67d-0137" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61fa-a1be-c655-f996" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="prepend" value="Centreline Mounted" field="name"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Twin heavy bolter" hidden="false" id="47d7-5bea-e799-18e1" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e727-f242-3c31-158c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eec9-6f67-6f01-09cb" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="prepend" value="Two Turret Mounted" field="name"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Twin heavy bolter" hidden="false" id="e5a7-8160-90d7-a488" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="94e4-b23b-46ab-1bf7" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fd4-6da1-3ca6-7035" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="prepend" value="Hull (Rear) Mounted" field="name"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Sokar Stormbird" hidden="false" id="9e64-8126-c0c7-9af9">
+          <profiles>
+            <profile name="Sokar Stormbird" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="4466-5bc3-82b2-3b1e">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Transport, Super-heavy, Flyer)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">16</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">14</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">14</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">14</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">22</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">52</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="082f-864e-b648-376d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8222-fe92-2e45-8a56" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle Model Type" hidden="false" id="5519-46ae-7f97-2183" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
+            <categoryLink name="Transport Model Sub-Type" hidden="false" id="12a9-5dee-a37b-90c6" targetId="2e6d-36f6-eeca-8e0c" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="c01d-04b5-9a3c-7139" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="bafe-7947-8490-4822" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Void Shields (X)" id="246a-9fe7-e12f-8d24" hidden="false" type="rule" targetId="86e9-04a5-e7d9-0253">
+          <comment>2</comment>
+          <modifiers>
+            <modifier type="set" value="Void Shields (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <rules>
+        <rule name="Stormbird Transport Bay" id="f5b1-633c-7aff-b319" hidden="false"/>
+      </rules>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="850"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Master of Descent" hidden="false" id="4b59-1e3b-022d-c253">
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="115"/>
