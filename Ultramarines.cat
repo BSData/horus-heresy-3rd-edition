@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="656a-07b6-d4fd-57af" name="                        XIII - Ultramarines" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="1" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="656a-07b6-d4fd-57af" name="                        XIII - Ultramarines" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="2" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Roboute Guilliman" hidden="false" id="8b5a-f212-1993-60bb">
       <selectionEntries>
@@ -33,6 +33,38 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Legatine Axe" hidden="false" id="09d3-f895-42de-143d">
+      <profiles>
+        <profile name="Legatine Axe" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="0236-7b74-0569-4cc0" publicationId="b905-0414-1057-bb34" page="245">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+1</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (4+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="f97e-bc4c-c972-461c" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (4+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Argyrum pattern boarding shield" hidden="false" id="037b-c5b5-d24f-b624">
+      <profiles>
+        <profile name="Argyrum pattern boarding shield" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="7b9f-560a-20a4-9f48" publicationId="b905-0414-1057-bb34" page="245">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">This Wargear provides an enhanced save against attacks made in close combat</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">A model with a Argyrum pattern boarding shiled has a 5+ Invulnerable Save, increasing to a 4+ Invulnerable Save against Wounds inflicted by Melee Weapons. In addition, it gains the Shield Trait and the Heavy Sub-Type.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
