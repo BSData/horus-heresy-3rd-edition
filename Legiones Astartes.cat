@@ -7580,8 +7580,6 @@
           </constraints>
           <categoryLinks>
             <categoryLink name="Vehicle Model Type" hidden="false" id="17bc-2d6b-9a75-4891" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
-            <categoryLink type="category" name="Flyer Model Sub-Type" hidden="false" id="dc09-d9d5-5a2e-ca29" targetId="42a3-02e9-e0e4-8292" primary="false"/>
-            <categoryLink type="category" name="Stable Model Sub-Type" hidden="false" id="e914-297e-2359-51b8" targetId="3753-39e1-22c2-531b" primary="false"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -8115,7 +8113,6 @@
           </constraints>
           <categoryLinks>
             <categoryLink name="Vehicle Model Type" hidden="false" id="2018-0762-1133-6bbf" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
-            <categoryLink type="category" name="Stable Model Sub-Type" hidden="false" id="a959-55af-e5fa-f267" targetId="3753-39e1-22c2-531b" primary="false"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -8224,7 +8221,102 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Scorpius Missile Tank" hidden="false" id="4e75-6c81-f3ac-33f1" sortIndex="69"/>
+    <selectionEntry type="unit" import="true" name="Scorpius Missile Tank" hidden="false" id="4e75-6c81-f3ac-33f1" sortIndex="69">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="5260-5b98-5dcf-03e3" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Legion Pintle Weapons" hidden="false" id="2dac-275d-8af0-e453" type="selectionEntryGroup" targetId="d625-37d6-d83a-0de3" sortIndex="4">
+              <entryLinks>
+                <entryLink import="true" name="Bolter" hidden="false" id="56eb-ccd8-e768-4c78" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" defaultAmount="1">
+                  <modifiers>
+                    <modifier type="set" value="Pintle Mounted bolter" field="name"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Dozer blade" hidden="false" id="2165-6a0f-b9d8-5554" type="selectionEntry" targetId="496e-da18-2afa-b99c" sortIndex="7">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e595-2c8e-abda-16dc" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Searchlight" hidden="false" id="6aa9-4749-21ef-b5fa" type="selectionEntry" targetId="5a85-bf28-f790-7bf0" sortIndex="6">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4b5-8cc4-3f73-17c6" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hunter-killer missile" hidden="false" id="4e8a-91f4-e09e-1c3e" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" sortIndex="5">
+              <modifiers>
+                <modifier type="set" value="Hull (Front) Mounted hunter-killer missile" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0964-3dc5-ff68-e192" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Bolter" hidden="false" id="c55a-a506-c0df-3d16" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e">
+          <modifiers>
+            <modifier type="set" value="Pintle Mounted bolter" field="name"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bebb-4318-5899-8a1f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0874-46b1-2385-4a67" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Scorpius missile launcher" hidden="false" id="4cc7-9ee1-81c4-bcd1" type="selectionEntry" targetId="b706-15fa-601e-78b9">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6242-dd4f-328c-a01b" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="daa1-1df5-74ea-7000" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Scorpius Missile Tank" hidden="false" id="7d53-68e0-4a8c-4cda">
+          <profiles>
+            <profile name="Scorpius Missile Tank" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="d011-9280-334a-33f0">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">12</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">12</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">11</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">10</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">5</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d239-0171-e27a-a0e9" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1943-8252-5dc1-8701" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle Model Type" hidden="false" id="3e8e-26dc-728f-415e" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="838f-5cf6-c908-f571" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="2c29-a899-e31a-0b01" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Smokescreen" id="ca77-8274-3569-f159" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
+      </infoLinks>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="120"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Arquitor Bombard" hidden="false" id="e6e4-964a-5852-9c07" sortIndex="70"/>
     <selectionEntry type="unit" import="true" name="Cerberus Heavy Tank Destroyer" hidden="false" id="a7a8-9dd5-69b2-a598" sortIndex="71"/>
     <selectionEntry type="unit" import="true" name="Typhon Heavy Siege Tank" hidden="false" id="b3e6-be98-5b83-87b4" sortIndex="72"/>
