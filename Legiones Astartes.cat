@@ -8317,7 +8317,184 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Arquitor Bombard" hidden="false" id="e6e4-964a-5852-9c07" sortIndex="70"/>
+    <selectionEntry type="unit" import="true" name="Arquitor Bombard" hidden="false" id="e6e4-964a-5852-9c07" sortIndex="70">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="11cb-d8b8-7d55-7651" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Legion Pintle Weapons" hidden="false" id="a2d6-4357-93a5-8047" type="selectionEntryGroup" targetId="d625-37d6-d83a-0de3" sortIndex="3"/>
+            <entryLink import="true" name="Hunter-killer missile" hidden="false" id="6108-5adc-4ea9-30a8" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" sortIndex="4">
+              <modifiers>
+                <modifier type="set" value="Hull (Front) hunter-killer missile" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9b4-b447-ed6d-b802" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Searchlight" hidden="false" id="7725-9377-1262-f4f0" type="selectionEntry" targetId="5a85-bf28-f790-7bf0" sortIndex="5">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49cc-f1f4-fc81-0aa5" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Legion Sponson Weapons" hidden="false" id="daf3-88cb-a911-575f" type="selectionEntryGroup" targetId="df25-ac22-5bbd-0e44" flatten="true" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Autocannon" hidden="false" id="d825-1814-8686-618e" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <comment>Two Sponson Mounted</comment>
+                  <modifiers>
+                    <modifier type="set" value="Two Sponson Mounted autocannon" field="name"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Main weapon" id="83ba-fd71-0cd0-7f97" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Morbus bombard" hidden="false" id="e8e7-4cc2-8fb8-d50f" type="selectionEntry" targetId="1729-5940-4e73-a27f">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Phosphex shells" hidden="true" id="42a5-a6ce-ca95-9229">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c02a-b327-12f2-6c99" includeChildSelections="false"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="8128-2ba6-b677-eb81" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <profiles>
+                        <profile name="Morbus bombard (Phosphex shell)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="true" id="8de8-8512-b75b-e4d3">
+                          <characteristics>
+                            <characteristic name="R" typeId="cdb0-8654-6840-1037">24</characteristic>
+                            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+                            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">5</characteristic>
+                            <characteristic name="AP" typeId="7a23-0248-2b94-5951">3</characteristic>
+                            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+                            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Blast (5&quot;), Barrage (1), Poisoned (3+), Panic (3), Breaching (5+)</characteristic>
+                            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Phosphex</characteristic>
+                          </characteristics>
+                          <modifiers>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8128-2ba6-b677-eb81" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Barrage (X)" id="1ea5-ac43-07b3-5591" hidden="true" type="rule" targetId="85f5-3a91-69f4-c3b7">
+                          <modifiers>
+                            <modifier type="set" value="Barrage (1) (Phosphex shell)" field="name"/>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8128-2ba6-b677-eb81" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                          <comment>1 (Phosphex shell)</comment>
+                        </infoLink>
+                        <infoLink name="Breaching (X)" id="fcf9-2d18-cf3d-c2d8" hidden="true" type="rule" targetId="b094-0b64-eb57-aed6">
+                          <modifiers>
+                            <modifier type="set" value="Breaching (5+) (Phosphex shell)" field="name"/>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8128-2ba6-b677-eb81" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                          <comment>5+ (Phosphex shell)</comment>
+                        </infoLink>
+                        <infoLink name="Panic (X)" id="deff-7607-cd87-0024" hidden="true" type="rule" targetId="82a7-f471-3fda-6ca1">
+                          <comment>3 (Phosphex shell)</comment>
+                          <modifiers>
+                            <modifier type="set" value="Panic (3) (Phosphex shell)" field="name"/>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8128-2ba6-b677-eb81" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </infoLink>
+                        <infoLink name="Poisoned (X)" id="d78d-0e43-7fd3-1938" hidden="true" type="rule" targetId="076f-2c91-c58b-71b3">
+                          <comment>3+ (Phosphex shell)</comment>
+                          <modifiers>
+                            <modifier type="set" value="Poisoned (3+) (Phosphex shell)" field="name"/>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8128-2ba6-b677-eb81" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </infoLink>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                </entryLink>
+                <entryLink import="true" name="Graviton-charge cannon" hidden="false" id="2c9f-1dcf-a21f-4076" type="selectionEntry" targetId="1e1b-822c-790c-46b0">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Spicula rocket system" hidden="false" id="5da6-5aa8-0369-5f6c" type="selectionEntry" targetId="091a-bb9b-8f2e-edc1">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="91c6-665d-9a9d-0736" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b90-a920-da11-b778" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Arquitor Bombard" hidden="false" id="b39e-881a-ad40-c1b3">
+          <profiles>
+            <profile name="Arquitor Bombard" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="b735-9ffe-6c91-b540">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">8</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">13</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">12</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">10</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">6</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b0f6-0bc7-611c-3790" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d82d-b8bd-325d-975b" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle Model Type" hidden="false" id="7702-6006-de23-a87a" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="156e-d05c-0b73-3739" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="51c7-fa67-52f1-67da" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Smokescreen" id="6fe8-313b-7906-c837" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Cerberus Heavy Tank Destroyer" hidden="false" id="a7a8-9dd5-69b2-a598" sortIndex="71"/>
     <selectionEntry type="unit" import="true" name="Typhon Heavy Siege Tank" hidden="false" id="b3e6-be98-5b83-87b4" sortIndex="72"/>
     <selectionEntry type="unit" import="true" name="Glaive Super-Heavy Special Weapons Tank" hidden="false" id="7d7b-1430-d550-9fe6" sortIndex="73"/>
