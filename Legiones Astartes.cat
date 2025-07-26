@@ -7989,7 +7989,147 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Kratos Battle Tank" hidden="false" id="e3f2-ff0d-f190-ecfd" sortIndex="67"/>
+    <selectionEntry type="unit" import="true" name="Kratos Assault Tank" hidden="false" id="e3f2-ff0d-f190-ecfd" sortIndex="67">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="4403-97c6-d514-a408" hidden="false" sortIndex="1">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Turret" id="92a4-193b-73fe-8ffb" hidden="false" sortIndex="2" defaultSelectionEntryId="2559-bb09-0ab4-b9b6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f079-caad-6f52-0e46" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="168d-c342-aaa8-48c5" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Kratos battle cannon" hidden="false" id="2559-bb09-0ab4-b9b6" type="selectionEntry" targetId="04f4-aa6a-ee27-15c1" sortIndex="1"/>
+                <entryLink import="true" name="Volkite cardanelle" hidden="false" id="7ab0-99e8-c095-ea87" type="selectionEntry" targetId="800b-fe83-5935-eee3" sortIndex="2"/>
+                <entryLink import="true" name="Melta blast-gun" hidden="false" id="0330-0308-3d20-1d29" type="selectionEntry" targetId="bd90-7986-8459-1fcc" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Hull (Front, Right) and Hull (Front, Left)" id="b326-bbda-9e72-0b20" hidden="false" sortIndex="3" defaultSelectionEntryId="1c38-e1f5-4125-0aa8">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b619-253e-0f1a-a00c" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc66-0dd6-0e58-22f2" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="1c38-e1f5-4125-0aa8" type="selectionEntry" targetId="bc40-b14a-978e-0232" sortIndex="1"/>
+                <entryLink import="true" name="Volkite caliver" hidden="false" id="0f1d-65a1-0dcb-3931" type="selectionEntry" targetId="a042-1a69-9052-c59a" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Autocannon" hidden="false" id="cdc9-af49-22ba-63fd" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Lascannon" hidden="false" id="68b5-65c6-870e-4766" type="selectionEntry" targetId="b6d5-4be2-c37e-2197" sortIndex="4">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Legion Sponson Weapons" hidden="false" id="e3b6-b7b7-2448-ca57" type="selectionEntryGroup" targetId="df25-ac22-5bbd-0e44" sortIndex="4"/>
+            <entryLink import="true" name="Hunter-killer missile" hidden="false" id="4b4d-a67d-a63f-555c" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" sortIndex="6">
+              <modifiers>
+                <modifier type="set" value="Turret Mounted hunter-killer missile" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11fa-0ed7-f1aa-2dde" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Searchlight" hidden="false" id="cdc0-160c-9260-e832" type="selectionEntry" targetId="5a85-bf28-f790-7bf0" sortIndex="7">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9ab-af82-bb7b-b711" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Legion Pintle Weapons" hidden="false" id="2445-fd32-8e4b-dde4" type="selectionEntryGroup" targetId="d625-37d6-d83a-0de3" sortIndex="5"/>
+            <entryLink import="true" name="Legiones Decurion" hidden="false" id="47d7-cfa0-0a9e-e915" type="selectionEntryGroup" targetId="6dcf-12ac-0f05-f158" sortIndex="1"/>
+            <entryLink import="true" name="Dozer blade" hidden="false" id="5536-500f-9dd2-340c" type="selectionEntry" targetId="496e-da18-2afa-b99c" sortIndex="8">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba24-dace-90e6-991c" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Autocannon" hidden="false" id="7c7f-e369-1fa5-d1de" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba2e-8763-5953-2b0b" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc7a-932d-279a-11f1" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="prepend" value="Co-axial" field="name"/>
+            <modifier type="append" value="(Kratos battle cannon)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="04f4-aa6a-ee27-15c1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Volkite cardanelle)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="800b-fe83-5935-eee3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="(Melta blast-gun)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="bd90-7986-8459-1fcc" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Kratos Assault Tank" hidden="false" id="5274-fb35-9b76-fa63">
+          <profiles>
+            <profile name="Kratos Assault Tank" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="6184-d104-3191-5758">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Stable)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">8</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">14</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">14</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">14</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">10</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2bf4-dbf4-1b26-3384" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab51-6793-6798-4af1" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle Model Type" hidden="false" id="2018-0762-1133-6bbf" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
+            <categoryLink type="category" name="Stable Model Sub-Type" hidden="false" id="a959-55af-e5fa-f267" targetId="3753-39e1-22c2-531b" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="6079-ade9-88f1-23fd" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="899a-64bb-873a-7e3b" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Smokescreen" id="955c-203d-c840-f75b" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
+      </infoLinks>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="280"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Vindicator Siege Tank" hidden="false" id="5cb0-777c-bc90-f31a" sortIndex="68"/>
     <selectionEntry type="unit" import="true" name="Scorpius Missile Tank" hidden="false" id="4e75-6c81-f3ac-33f1" sortIndex="69"/>
     <selectionEntry type="unit" import="true" name="Arquitor Bombard" hidden="false" id="e6e4-964a-5852-9c07" sortIndex="70"/>
