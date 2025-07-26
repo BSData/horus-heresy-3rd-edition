@@ -122,19 +122,6 @@ A Unit which contains any Models with a Misericordia may have the Blade of Merc
       </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Arae-shrike" hidden="false" id="76f5-a747-71df-6d54">
-      <profiles>
-        <profile name="Arae-shrike" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="1e68-f5d7-45a4-fffc">
-          <characteristics>
-            <characteristic name="R" typeId="cdb0-8654-6840-1037"/>
-            <characteristic name="FP" typeId="5037-1f27-1790-e355"/>
-            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63"/>
-            <characteristic name="AP" typeId="7a23-0248-2b94-5951"/>
-            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291"/>
-            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd"/>
-            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03"/>
-          </characteristics>
-        </profile>
-      </profiles>
       <rules>
         <rule name="Arae-shrike" id="44b1-d759-938b-4117" hidden="false">
           <description>A Model with an arae-shrike gains the Deep Strike Special Rule and confers it to any Unit it joins, and can apply a penalty to Enemy Reserve Tests.
@@ -189,6 +176,52 @@ The first time in a Battle Turn a Model with an eclipse shield suffers a Penetr
 In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model within Line of Sight and 8&quot; of a Model with a magisterium vexilla would score Victory Points for Controlling or Contesting an Objective, it must first make a Leadership Check. If this Check is failed, that Unit may only score 1 Victory Point for Controlling or Contesting the Objective in that Victory Sub-Phase, regardless of other Special Rules like Line (X) or Comptroller (X). If the Check is successful there is no further effect.</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Adrathic devastator" hidden="false" id="b12f-541e-cd09-2dbb">
+      <profiles>
+        <profile name="Adrathic devastator" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="6581-6252-f0f1-31ad">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">18</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">4</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Rending (5+)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Disintegrator</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rending (X)" id="21c9-fa4f-20d0-a1be" hidden="false" type="rule" targetId="167f-2a64-6e61-505b">
+          <comment>5+</comment>
+          <modifiers>
+            <modifier type="set" value="Rending (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Adrathic combi-destructor" hidden="false" id="23c3-e2cd-750a-85ec">
+      <profiles>
+        <profile name="Adrathic combi-destructor" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="8271-e711-a336-fb13">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">12</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">5</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Rending (6+)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Disintegrator</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rending (X)" id="0285-a67c-564e-e8ff" hidden="false" type="rule" targetId="167f-2a64-6e61-505b">
+          <comment>6+</comment>
+          <modifiers>
+            <modifier type="set" value="Rending (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
