@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="656a-07b6-d4fd-57af" name="                        XIII - Ultramarines" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="1" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="656a-07b6-d4fd-57af" name="                        XIII - Ultramarines" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="2" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
-    <selectionEntry type="unit" import="true" name="Roboute Guilliman" hidden="false" id="8b5a-f212-1993-60bb">
+    <selectionEntry type="unit" import="true" name="Roboute Guilliman" hidden="false" id="8b5a-f212-1993-60bb" publicationId="b905-0414-1057-bb34" page="248">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Roboute Guilliman" hidden="false" id="8566-b4ed-c381-cbd8">
+        <selectionEntry type="model" import="true" name="Roboute Guilliman" hidden="false" id="8566-b4ed-c381-cbd8" page="248" publicationId="b905-0414-1057-bb34">
           <profiles>
-            <profile name="Roboute Guilliman" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="8007-b6e5-9a58-92cf">
+            <profile name="Roboute Guilliman" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="8007-b6e5-9a58-92cf" page="248" publicationId="b905-0414-1057-bb34">
               <characteristics>
                 <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b"/>
                 <characteristic name="M" typeId="a106-a779-d272-5e93"/>
@@ -33,6 +33,209 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="4650"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Legatine Axe" hidden="false" id="09d3-f895-42de-143d">
+      <profiles>
+        <profile name="Legatine Axe" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="0236-7b74-0569-4cc0" publicationId="b905-0414-1057-bb34" page="245">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+1</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (4+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="f97e-bc4c-c972-461c" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (4+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Argyrum pattern boarding shield" hidden="false" id="037b-c5b5-d24f-b624">
+      <profiles>
+        <profile name="Argyrum pattern boarding shield" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="7b9f-560a-20a4-9f48" publicationId="b905-0414-1057-bb34" page="245">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">This Wargear provides an enhanced save against attacks made in close combat</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">A model with a Argyrum pattern boarding shiled has a 5+ Invulnerable Save, increasing to a 4+ Invulnerable Save against Wounds inflicted by Melee Weapons. In addition, it gains the Shield Trait and the Heavy Sub-Type.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Reman Ventanus" hidden="false" id="997b-95c4-dc66-a5f8">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="175"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Reman Ventanus" hidden="false" id="fc80-c47b-edb8-7a30">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6384-6fb3-4789-edc3-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6384-6fb3-4789-edc3-max" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Officer of the Line (2)" hidden="false" id="674f-3b0b-ac23-ebec" targetId="901a-6b71-7a29-4597" primary="false"/>
+            <categoryLink name="Infantry Model Type" hidden="false" id="0842-744e-ef5d-710f" targetId="594d-fa82-13cb-a345" primary="false"/>
+            <categoryLink name="Unique Model Sub-Type" hidden="false" id="2967-c23a-f510-9e9d" targetId="b980-187b-2b17-d635" primary="false"/>
+            <categoryLink name="Command Model Sub-type" hidden="false" id="a2bd-47b8-2c3e-d60b" targetId="9871-cb62-5283-2216" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Invictus Suzerain Squad" hidden="false" id="3a11-d72b-2f04-cc62">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Suzerain" hidden="false" id="0530-7b19-9a92-6a6e">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="2f96-d4a7-8e26-6962" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="dd2e-821c-4798-464d" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="New Group" id="6fd8-dd70-1476-5da1" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="2 in 5 may exchange their bolt pistol for:" id="ded0-8c97-e606-3a66" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Plasma pistol" hidden="false" id="8f8f-373c-7483-17c4" type="selectionEntry" targetId="659f-d52e-1515-2912"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="dfc2-41b3-398e-bbb6" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="2" field="dfc2-41b3-398e-bbb6">
+                      <repeats>
+                        <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="8ee1-9e0f-7848-f9f9" type="selectionEntry" targetId="2942-f783-d627-33c5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6db1-ca02-7733-af76-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6db1-ca02-7733-af76-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Praetorian Breacher Squad" hidden="false" id="f115-4466-aa86-b446">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Praetorian Primus" hidden="false" id="d8da-2e7b-77ac-dc40" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d1a-2b4e-3601-c9d2-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d1a-2b4e-3601-c9d2-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="May exchange power sword for:" id="f9fb-05c7-3726-6a27" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Power sword" hidden="false" id="59a0-004d-96e5-7473" type="selectionEntry" targetId="59a9-57c1-fff9-ca75" defaultAmount="1" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a48b-9a0d-f544-9ae5-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a48b-9a0d-f544-9ae5-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Power fist" hidden="false" id="50fe-63bd-7552-498a" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f15a-8d3e-4747-d375-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f15a-8d3e-4747-d375-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Legatine Axe" hidden="false" id="d050-6dc1-297f-223b" type="selectionEntry" targetId="09d3-f895-42de-143d" sortIndex="3">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7cc1-d295-2b56-eb6c-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cc1-d295-2b56-eb6c-max" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7899-30db-8daf-d955" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c442-198a-540e-d6b6" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="May exchange bolt pistol for:" id="e571-6efe-edf2-f7d3" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="845c-0643-12ab-ac32" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a6b3-0bd1-16b2-1583-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6b3-0bd1-16b2-1583-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Plasma pistol" hidden="false" id="3efc-3257-aafb-b982" type="selectionEntry" targetId="659f-d52e-1515-2912" sortIndex="2">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a856-e83d-bd0e-1865-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a856-e83d-bd0e-1865-max" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Praetorian" hidden="false" id="ee11-4138-eeda-58f7" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="c132-e9fe-1fbd-aea3" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="5e83-8bb7-2821-ce45" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="18"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Legion Equipment" hidden="false" id="afd5-b9a3-286c-7fa0" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acbd-9824-4c99-b74a" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="365c-77a0-d638-2167" includeChildSelections="true"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Vexilla" hidden="false" id="053a-1aaa-7251-dd23" type="selectionEntry" targetId="dfcd-0669-ad43-28aa">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d050-759c-f75a-73e8" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="72e9-56a1-afc4-5c2b" includeChildSelections="true"/>
+              </constraints>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="43"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
@@ -43,4 +246,26 @@
     <catalogueLink type="catalogue" name="Special Rules" id="cde5-16e0-991a-92c1" targetId="106b-693b-99f2-00c3"/>
     <catalogueLink type="catalogue" name="Traits" id="1571-2c74-dc8e-7e0f" targetId="df17-7a05-0826-6e22"/>
   </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Roboute Guilliman" hidden="false" id="5a54-9d3a-c0a8-dac8" targetId="8b5a-f212-1993-60bb" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Warlord" hidden="false" id="9f79-d19c-049e-f6d3" targetId="22ee-7208-4089-b005" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Reman Ventanus" hidden="false" id="200b-4e53-cc72-f9a1" targetId="997b-95c4-dc66-a5f8" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Command" hidden="false" id="3a63-5c40-4637-9682" targetId="6dbf-654a-f06f-2d69" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Invictus Suzerain Squad" hidden="false" id="ff65-1f4a-ab24-12ef" targetId="3a11-d72b-2f04-cc62" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="1fda-785b-0c4c-4aa3" targetId="5d5e-958f-e388-50b5" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Praetorian Breacher Squad" hidden="false" id="b0f9-fbe4-6e4f-f630" targetId="f115-4466-aa86-b446" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Heavy Assault" hidden="false" id="2be2-40e8-ab05-fb31" targetId="3235-bd79-e9b1-60fa" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
 </catalogue>
