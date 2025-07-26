@@ -202,6 +202,7 @@
         <rule name="New Rule" id="a7d3-aaa8-8179-33d1" hidden="false"/>
       </rules>
     </categoryEntry>
+    <categoryEntry name="Prime High Command" id="3568-ad75-b452-3137" hidden="false"/>
     <categoryEntry name="Prime War-engine" id="9699-67c9-2c0b-e64b" hidden="false"/>
     <categoryEntry name="Prime Support" id="1c79-ecdf-9a64-84c9" hidden="false"/>
     <categoryEntry name="Prime Transport" id="fc27-1a48-84ae-aa7b" hidden="false"/>
@@ -227,6 +228,7 @@
     <categoryEntry name="Super-heavy Model Sub-Type" id="4d42-b711-7946-8e15" hidden="false"/>
     <categoryEntry name="Flyer Model Sub-Type" id="42a3-02e9-e0e4-8292" hidden="false"/>
     <categoryEntry name="Stable Model Sub-Type" id="3753-39e1-22c2-531b" hidden="false"/>
+    <categoryEntry name="Required Fulgrim Transformed" id="634b-596b-118f-80b6" hidden="true"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -492,9 +494,13 @@
           </constraints>
           <modifiers>
             <modifier type="set" value="1" field="63d0-2300-c551-7797">
-              <conditions>
-                <condition type="atLeast" value="3000" field="9893-c379-920b-8982" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="3000" field="9893-c379-920b-8982" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -2607,6 +2613,38 @@
             </modifier>
           </modifiers>
         </forceEntry>
+        <forceEntry name="Auxiliary - Primacy Wing" id="b86b-981d-9aab-5675" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9a22-d01f-ab5c-ec07" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9a22-d01f-ab5c-ec07" shared="true"/>
+                  </conditions>
+                  <comment>EC</comment>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Retinue" hidden="false" id="0519-2a37-5f9e-72de" targetId="a38e-50ff-310f-f19e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bf4-b937-d2e5-6e26"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Elites" hidden="false" id="2eae-b50c-fba3-2fad" targetId="5d5e-958f-e388-50b5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0961-9ba3-d9db-ae70"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Fast Attack" hidden="false" id="9a30-4f70-50fa-2200" targetId="cf96-8891-3f9a-8921">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1941-e677-3709-8d3d"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+        </forceEntry>
         <forceEntry name="Auxiliary - Tagmata Cohort" id="59b8-2183-4bab-b91c" hidden="true" sortIndex="13">
           <categoryLinks>
             <categoryLink name="Support" hidden="false" id="aaf9-4c82-2830-47b6" targetId="345f-9ba6-9b02-ed5c">
@@ -4318,6 +4356,38 @@
             <categoryLink name="Prime Troops" hidden="false" id="1f28-33ad-3ff7-a318" targetId="c3f9-a7f3-984b-3fda">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f373-8abc-11b3-fd79" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+        </forceEntry>
+        <forceEntry name="Auxiliary - Primacy Wing" id="523a-f6b1-5daf-ecb9" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9a22-d01f-ab5c-ec07" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9a22-d01f-ab5c-ec07" shared="true"/>
+                  </conditions>
+                  <comment>EC</comment>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Retinue" hidden="false" id="f74a-93c0-6ba8-8c9a" targetId="a38e-50ff-310f-f19e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e0a-8634-21c1-d103"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Elites" hidden="false" id="7753-2aca-82e2-1c98" targetId="5d5e-958f-e388-50b5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de1b-7ca2-67e9-daa1"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Fast Attack" hidden="false" id="d089-c415-39b6-dd55" targetId="cf96-8891-3f9a-8921">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2390-2f80-7f49-e06b"/>
               </constraints>
             </categoryLink>
           </categoryLinks>
