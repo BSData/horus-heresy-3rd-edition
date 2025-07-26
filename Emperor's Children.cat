@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9a22-d01f-ab5c-ec07" name="                         III - Emperor&apos;s Children" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="1" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9a22-d01f-ab5c-ec07" name="                         III - Emperor&apos;s Children" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="2" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="2589-ec0f-809a-8660" targetId="9b32-f350-6aa9-9c09" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Assets" id="a2a4-0123-e538-6ae9" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
@@ -11,27 +11,25 @@
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Fulgrim" hidden="false" id="9ba1-40c2-edd5-8bd7">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Fulgrim" hidden="false" id="fa55-d42f-2879-39c0">
+        <selectionEntry type="model" import="true" name="Fulgrim" hidden="false" id="fa55-d42f-2879-39c0" publicationId="e54c-7040-0f35-d85d" page="130">
           <profiles>
-            <profile name="Fulgrim" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="290f-c8dd-0607-3ed5">
+            <profile name="Fulgrim" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="290f-c8dd-0607-3ed5" publicationId="e54c-7040-0f35-d85d" page="130">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b"/>
-                <characteristic name="M" typeId="a106-a779-d272-5e93"/>
-                <characteristic name="WS" typeId="253c-d694-4695-c89e"/>
-                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b"/>
-                <characteristic name="S" typeId="498f-dce1-59fd-d8d7"/>
-                <characteristic name="T" typeId="3120-8275-e537-ecd2"/>
-                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d"/>
-                <characteristic name="I" typeId="af9d-7db8-dc95-71c1"/>
-                <characteristic name="A" typeId="024e-bdb1-7982-25a0"/>
-                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6"/>
-                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f"/>
-                <characteristic name="WP" typeId="f714-1726-37d3-44df"/>
-                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77"/>
-                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b"/>
-                <characteristic name="INV" typeId="a951-a772-7ce0-0b64"/>
-                <characteristic name="Special Rules" typeId="2cda-2fb9-4239-cbcb"/>
-                <characteristic name="Traits" typeId="6a9a-2af3-00c4-d134"/>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Paragon (Unique)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">8</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">8</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">6</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">6</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">6</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">6</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">8</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">6</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">12</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">10</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">10</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">10</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -39,8 +37,478 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3998-25bd-b98f-b86f" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6a2-82ce-f44c-3b7c" includeChildSelections="false"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Laeran Blade" hidden="false" id="8d9c-5c90-e656-aa10" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7495-b57c-8052-9d7c-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7495-b57c-8052-9d7c-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Laeran Blade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="ccd6-4890-ee68-d712" page="131" publicationId="e54c-7040-0f35-d85d">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">1</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Duelist&apos;s Edge (1)</characteristic>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Firebrand" hidden="false" id="f5b9-b00c-10dc-c07c" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b196-79fc-21e7-452c-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b196-79fc-21e7-452c-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Firebrand" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="800c-6e09-2626-1d81" publicationId="e54c-7040-0f35-d85d" page="131">
+                  <characteristics>
+                    <characteristic name="R" typeId="cdb0-8654-6840-1037">15</characteristic>
+                    <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
+                    <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+                    <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+                    <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Shred (5+), Deflagrate (6)</characteristic>
+                    <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Volkite, Assault</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Warlord" hidden="false" id="757c-5d2c-372e-454a" targetId="22ee-7208-4089-b005" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="425"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Fulgrim Transfigured" hidden="false" id="7db2-c826-ebc5-1918">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Fulgrim Transfigured" hidden="false" id="ae04-00e7-ac08-94ce" publicationId="e54c-7040-0f35-d85d" page="132">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c48-e681-70aa-3daa-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c48-e681-70aa-3daa-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Fulgrim Transfigured" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="74cf-1e4d-e191-dc5c" publicationId="e54c-7040-0f35-d85d" page="132">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Paragon (Unique, Antigrav, Malefic)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">14</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">8</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">6</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">7</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">7</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">7</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">8</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">7</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">12</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">10</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">12</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">8</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="600"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Warlord" hidden="false" id="7004-b039-27fb-a405" targetId="22ee-7208-4089-b005" primary="true"/>
+        <categoryLink name="Required Fulgrim Transformed" hidden="false" id="b5a8-bde1-7cdb-1ec4" targetId="634b-596b-118f-80b6" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Lord Commander Eidolon" hidden="false" id="fee3-dc10-99d3-37aa" page="134" publicationId="e54c-7040-0f35-d85d">
+      <categoryLinks>
+        <categoryLink name="High Command" hidden="false" id="9e8d-d1f0-0e9b-0468" targetId="d9a6-9b5f-b18a-4d63" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="215"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Captain Lucius" hidden="false" id="2621-860f-a513-e11e" publicationId="e54c-7040-0f35-d85d" page="135">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="215"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Command" hidden="false" id="da00-c0d0-9204-f125" targetId="6dbf-654a-f06f-2d69" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Sonic shriekers" hidden="false" id="0ceb-677a-17a6-9abb" type="selectionEntry" targetId="5ec5-2a18-42d2-2e54">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ca2-c979-1638-8870" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Saul Tarvitz" hidden="false" id="fb9a-2484-6aee-fa59" page="136" publicationId="e54c-7040-0f35-d85d">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="215"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Command" hidden="false" id="a7c9-486c-5c45-3c9e" targetId="6dbf-654a-f06f-2d69" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Phoenix Terminator Squad" hidden="false" id="e547-ac83-3328-4d31" publicationId="e54c-7040-0f35-d85d" page="137">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Phoenix Champion" hidden="false" id="7048-88a4-1773-bf6a" sortIndex="1" publicationId="e54c-7040-0f35-d85d" page="137" defaultAmount="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c80f-3130-eb54-d636-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c80f-3130-eb54-d636-max" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Phoenix Terminator" hidden="false" id="98e4-4290-bc76-63b1" sortIndex="2" publicationId="e54c-7040-0f35-d85d" page="137" defaultAmount="4">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="35"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="ab8f-6eb7-a27a-60a4" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="34cc-7396-2eea-8776" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="60"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Retinue" hidden="false" id="4ea4-3a9f-2e06-4f74" targetId="a38e-50ff-310f-f19e" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink targetId="ab39-af3b-58c2-8d9b" id="5f26-d958-57a4-33ec" type="selectionEntryGroup" name="Surgical Augments (All models in a Traitor unit may be given the same):" hidden="false"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Palatine Blade Squad" hidden="false" id="8f1b-e5a5-5607-612c" publicationId="e54c-7040-0f35-d85d" page="138">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="53"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Palatine Prefector" hidden="false" id="bacc-a740-b0ed-2d55" sortIndex="1" publicationId="e54c-7040-0f35-d85d" page="138">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="01a9-34fb-e59f-1b71-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01a9-34fb-e59f-1b71-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="May exchange bolt pistol for:" id="56e1-0d25-4567-4551" hidden="false" defaultSelectionEntryId="d6ef-e031-d18f-df93" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="9c6c-54b7-d943-d989" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1"/>
+                <entryLink import="true" name="Legion Pistols" hidden="false" id="98d8-4b0b-7d57-8be2" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" sortIndex="2"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cd9-6672-f804-3102" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5489-3c9a-5c52-90fc" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="May exchange Palantine blade for:" id="ba2d-8783-66d8-183b" hidden="false" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Palatine blade" hidden="false" id="841a-f81a-904e-fd14" page="138" publicationId="e54c-7040-0f35-d85d" sortIndex="1">
+                  <profiles>
+                    <profile name="Palatine blade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="0b84-e66a-3df7-3838" publicationId="e54c-7040-0f35-d85d" page="138">
+                      <characteristics>
+                        <characteristic name="IM" typeId="6eec-4093-f946-1014">1</characteristic>
+                        <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                        <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+3</characteristic>
+                        <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+                        <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+                        <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+), Duellist&apos;s Edge (1)</characteristic>
+                        <characteristic name="Traits" typeId="76e3-c188-bc65-3467">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Breaching (X)" id="6a88-0c32-d7e7-72ac" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+                      <modifiers>
+                        <modifier type="set" value="Breaching (5+)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Duellist&apos;s Edge (X)" id="8c37-8f60-fe2a-dbbe" hidden="false" type="rule" targetId="94bc-c69f-99b6-8ba0">
+                      <modifiers>
+                        <modifier type="set" value="Duellist&apos;s Edge (1)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Phoenix power spear" hidden="false" id="5259-1445-0cc3-5d39" type="selectionEntry" targetId="c057-3eb7-ae01-58c4" sortIndex="2">
+                  <infoLinks>
+                    <infoLink name="Breaching (X)" id="37ba-dfca-8469-e085" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+                      <modifiers>
+                        <modifier type="set" value="Breaching (6+)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Impact (X)" id="a7d2-bd4c-e2d1-c8e7" hidden="false" type="rule" targetId="6ead-c31c-ab09-2f8c">
+                      <modifiers>
+                        <modifier type="set" value="Impact (D)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a75-e0e3-3e37-b129"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ef4-69cf-0f64-13ce" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Palatine Warrior" hidden="false" id="34df-3bf1-75f0-8ee0" sortIndex="2" page="138" publicationId="e54c-7040-0f35-d85d" defaultAmount="4">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="28"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="5eeb-6970-e329-22da" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="a65e-65a5-8e3c-7dc3" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="May exchange Palantine blade for:" id="ba2d-8783-66d8-183b" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Phoenix power spear" hidden="false" id="c751-6c1b-906f-8ffa" type="selectionEntry" targetId="c057-3eb7-ae01-58c4" sortIndex="2"/>
+                <entryLink import="true" name="Palatine blade" hidden="false" id="f7d3-21b1-5afa-662d" type="selectionEntry" targetId="841a-f81a-904e-fd14" sortIndex="1"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="37b2-29a9-07f3-c3af" targetId="5d5e-958f-e388-50b5" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Surgical Augments (All models in a Traitor unit may be given the same):" hidden="false" id="c9dc-ebe1-fd50-c5d0" targetId="ab39-af3b-58c2-8d9b" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Kakophoni Squad" hidden="false" id="4ac4-b32a-6840-a91e" publicationId="e54c-7040-0f35-d85d" page="139">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="50"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Orchestrator" hidden="false" id="7a3f-6183-5b33-2a91" sortIndex="1" publicationId="e54c-7040-0f35-d85d" page="139">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4af7-05ff-3afb-2be7-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4af7-05ff-3afb-2be7-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Chora" hidden="false" id="d66a-a50b-2dc9-756a" sortIndex="2" page="139" publicationId="e54c-7040-0f35-d85d" defaultAmount="4">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="c6b1-e546-80cc-1c09" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="56b5-4f85-0ffa-af37" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink name="Support" hidden="false" id="d226-7cc3-313a-628b" targetId="345f-9ba6-9b02-ed5c" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sonic shriekers" hidden="false" id="5ec5-2a18-42d2-2e54" publicationId="e54c-7040-0f35-d85d" page="125">
+      <profiles>
+        <profile name="Sonic shriekers" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="22ea-8d00-14e9-1d8d" publicationId="e54c-7040-0f35-d85d" page="125">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c"/>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">When a Unit that includes any Models with sonic shriekers makes a Charge Move, the Target Unit of that Charge cannot be selected to make Reactions until the Charge Procedure has been completed.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sonic lance" hidden="false" id="a2c1-8ba9-566a-a282" publicationId="e54c-7040-0f35-d85d" page="125">
+      <profiles>
+        <profile name="Sonic lance" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="7e51-8e64-dac9-610e" publicationId="e54c-7040-0f35-d85d" page="125">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">2</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">5</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Breaching (6+)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Sonic, Assault</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Template" id="4846-dd76-5790-64b5" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a"/>
+        <infoLink name="Breaching (X)" id="819a-1e68-3f0d-8126" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Phoenix power spear" hidden="false" id="c057-3eb7-ae01-58c4" page="125" publicationId="e54c-7040-0f35-d85d">
+      <profiles>
+        <profile name="Phoenix power spear" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="81c6-a991-a802-0483" publicationId="e54c-7040-0f35-d85d" page="125">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">+1</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+1</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Impact (D), Breaching (6+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Captain Lucius" hidden="false" id="79f7-e68d-59dd-0a4c" targetId="2621-860f-a513-e11e" type="selectionEntry"/>
+    <entryLink import="true" name="Fulgrim" hidden="false" id="0d09-afed-def4-7636" targetId="9ba1-40c2-edd5-8bd7" type="selectionEntry"/>
+    <entryLink import="true" name="Fulgrim Transfigured" hidden="false" id="5ca1-8cac-0ae6-8cc7" targetId="7db2-c826-ebc5-1918" type="selectionEntry"/>
+    <entryLink import="true" name="Kakophoni Squad" hidden="false" id="facc-ac40-1968-b4c4" targetId="4ac4-b32a-6840-a91e" type="selectionEntry"/>
+    <entryLink import="true" name="Lord Commander Eidolon" hidden="false" id="48da-d56e-093f-ba1e" targetId="fee3-dc10-99d3-37aa" type="selectionEntry"/>
+    <entryLink import="true" name="Palatine Blade Squad" hidden="false" id="9c35-909c-10a6-5453" targetId="8f1b-e5a5-5607-612c" type="selectionEntry"/>
+    <entryLink import="true" name="Phoenix Terminator Squad" hidden="false" id="22c5-0e0c-1c32-9a41" targetId="e547-ac83-3328-4d31" type="selectionEntry"/>
+    <entryLink import="true" name="Saul Tarvitz" hidden="false" id="2d9d-d95d-5f43-4d05" targetId="fb9a-2484-6aee-fa59" type="selectionEntry"/>
+  </entryLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Surgical Augments" id="bcb8-3151-6aff-5203" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Sonic shriekers" hidden="false" id="e4fa-77f7-9dab-c889" type="selectionEntry" targetId="5ec5-2a18-42d2-2e54" sortIndex="1">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c21d-d702-f17e-d0f3" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Sonic lance" hidden="false" id="3633-16f9-0e91-59fa" type="selectionEntry" targetId="a2c1-8ba9-566a-a282" sortIndex="2">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="355d-b139-24bb-6623" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6a1-e360-9321-01cf" includeChildSelections="false"/>
+      </constraints>
+      <comment>Character version</comment>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Surgical Augments (All models in a Traitor unit may be given the same):" id="ab39-af3b-58c2-8d9b" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Sonic shriekers" hidden="false" id="5315-fbff-23e3-e045" type="selectionEntry" targetId="5ec5-2a18-42d2-2e54" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8344-6b97-8bb6-58cf" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="5" field="9893-c379-920b-8982">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Sonic lance" hidden="false" id="6aa3-3c98-6079-3bcc" type="selectionEntry" targetId="a2c1-8ba9-566a-a282" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="278b-9a5b-443d-c850" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="5" field="9893-c379-920b-8982">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee0a-6fa3-eb69-ceb7" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65e9-a0bb-7c52-8722" includeChildSelections="false"/>
+      </constraints>
+      <comment>Unit Version</comment>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Emperor&apos;s Children Rite of War" id="67f2-6d7f-9c35-9774" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Legiones Astartes Emperor&apos;s Children" hidden="false" id="6666-33b0-8206-5094"/>
+        <selectionEntry type="upgrade" import="true" name="Legiones Hereticus Emperor&apos;s Children" hidden="false" id="51f4-9244-2a1c-2d7e"/>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <forceEntries>
+    <forceEntry name="Brotherhood of the Phoenix (Replaces Warlord)" id="cca7-b054-62dc-bec9" hidden="false">
+      <modifiers>
+        <modifier type="set" value="1" field="2421-aa0b-4f10-6f1a">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="3000" field="9893-c379-920b-8982" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="equalTo" value="0" field="forces" scope="roster" childId="50c3-ba24-7471-3d32" shared="true" includeChildForces="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="2421-aa0b-4f10-6f1a"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Warlord" hidden="false" id="bd95-5e15-7c67-ef6f" targetId="22ee-7208-4089-b005">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a37-327e-1bb4-ea06"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="High Command" hidden="false" id="bf51-67b2-508d-9da5" targetId="d9a6-9b5f-b18a-4d63">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0200-27dc-e18c-d233"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Command" hidden="false" id="bf8f-46f9-e063-b882" targetId="6dbf-654a-f06f-2d69">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c90-2190-26d4-7ca7"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Prime High Command" hidden="false" id="2172-df90-08a5-8cd6" targetId="3568-ad75-b452-3137">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21d4-ea05-fb4b-6f4a"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Required Fulgrim Transformed" hidden="false" id="f7e7-7865-9d3d-f136" targetId="634b-596b-118f-80b6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9fa-db73-f6f7-c9ae-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9fa-db73-f6f7-c9ae-max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
 </catalogue>
