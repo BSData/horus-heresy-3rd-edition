@@ -1,7 +1,195 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="acc1-f897-a117-9b4a" name="Talons of the Emperor" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="1" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="acc1-f897-a117-9b4a" name="Talons of the Emperor" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="2" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="Arkangelmark5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
-    <selectionEntry type="unit" import="true" name="Constantin Valdor" hidden="false" id="9cbb-0abc-5c93-2afd"/>
+    <selectionEntry type="unit" import="true" name="Constantin Valdor" hidden="false" id="9cbb-0abc-5c93-2afd">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Constantin Valdor" hidden="false" id="21e8-524a-2f12-1d95">
+          <categoryLinks>
+            <categoryLink targetId="4381-ed35-c3fa-a225" id="88b1-2692-a563-e1e3" primary="false" name="Loyalist"/>
+            <categoryLink targetId="4cd3-a77c-8292-253e" id="0a18-50d7-4a88-10aa" primary="false" name="Legio Custodes"/>
+            <categoryLink targetId="3497-c0cf-db97-64b7" id="a259-b7a9-7a6b-fb08" primary="false" name="Golden Exemplar"/>
+            <categoryLink targetId="7799-e1d6-762b-700b" id="3a4f-d4cc-4742-6de9" primary="false" name="Paragon Model Type"/>
+            <categoryLink targetId="b980-187b-2b17-d635" id="5a65-9a40-3318-7ea0" primary="false" name="Unique Model Sub-Type"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Constantin Valdor" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="7651-dd1b-abd8-d756">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Paragon (Unique)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">8</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">7</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">6</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">5</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">5</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">6</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">6</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">6</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">12</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">10</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">10</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">10</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="The Apollonian Spear" hidden="false" id="e2e2-1410-4d12-f139" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="67d1-067a-3aed-a228-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67d1-067a-3aed-a228-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="The Apollonian Spear" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="70a0-484a-c0ac-2ade">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014"/>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e"/>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280"/>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8"/>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7"/>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e"/>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467"/>
+                  </characteristics>
+                </profile>
+                <profile name="The Apollonian Spear" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="2c4e-df2d-91cc-efa5">
+                  <characteristics>
+                    <characteristic name="R" typeId="cdb0-8654-6840-1037"/>
+                    <characteristic name="FP" typeId="5037-1f27-1790-e355"/>
+                    <characteristic name="RS" typeId="b9da-ee13-79f9-fa63"/>
+                    <characteristic name="AP" typeId="7a23-0248-2b94-5951"/>
+                    <characteristic name="D" typeId="88c3-1ca5-7dc1-f291"/>
+                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd"/>
+                    <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Arae-shrike" hidden="false" id="d318-61e0-365c-24f0" type="selectionEntry" targetId="76f5-a747-71df-6d54" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="091b-734d-c10e-58c7-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="091b-734d-c10e-58c7-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Misericordia" hidden="false" id="5859-e8d6-33f8-6797" type="selectionEntry" targetId="e15c-465c-8a7a-7e34" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ab52-abeb-22ad-ae05-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab52-abeb-22ad-ae05-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="184b-99f1-2d66-24d2-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="184b-99f1-2d66-24d2-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Misericordia" hidden="false" id="e15c-465c-8a7a-7e34">
+      <profiles>
+        <profile name="The Blade of Mercy" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="d789-df35-288c-f6d0">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">1</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">1</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">*</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Precision (2+), Breaching (5+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="The Blade of Mercy" id="6eda-8fed-5137-a2ef" hidden="false">
+          <description>The Controlling Player selects a single Model in this Unit which has a Misericordia to resolve Steps 4-10 of the Resolving an Initiative Step sequence with, targeting one enemy Unit from the selected Combat which has had the Fall Back aftermath option selected for it. Attacks made as part of this aftermath option are resolved using the following profile:
+
+
+*This Melee Weapon’s Damage Characteristic is equal to the number of Models with a Misericordia in the Unit for which this aftermath option has been selected</description>
+        </rule>
+        <rule name="Misericordia" id="fa69-e27e-64ed-da4f" hidden="false">
+          <description>A Unit containing any Models with a Misericordia may select a unique aftermath option in which it makes a special attack against an enemy Unit from the same Combat.
+
+
+A Unit which contains any Models with a Misericordia may have the Blade of Mercy aftermath option selected for it in Step 4 of the Resolution Sub-Phase of the Assault Phase for any Combat in which that Unit has won or drawn the Combat.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Arae-shrike" hidden="false" id="76f5-a747-71df-6d54">
+      <profiles>
+        <profile name="Arae-shrike" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="1e68-f5d7-45a4-fffc">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037"/>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355"/>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63"/>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951"/>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291"/>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd"/>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Arae-shrike" id="44b1-d759-938b-4117" hidden="false">
+          <description>A Model with an arae-shrike gains the Deep Strike Special Rule and confers it to any Unit it joins, and can apply a penalty to Enemy Reserve Tests.
+
+
+A Model with an arae-shrike gains the Deep Strike Special Rule, and if it joins a Unit entirely composed of Models with the Legio Custodes Trait in Reserves, all Models in that Unit also gain the Deep Strike Special Rule.
+
+In addition, in the Effects Sub-Phase of the End Phase of their Player Turn, the Controlling Player of a Model with an arae-shrike which is on the Battlefield can make an Intelligence Check for that Model. If that Check is successful, then the opposing Player must apply a -1 modifier to the result of the first Reserves Test they make in the Reserves Sub-Phase of the subsequent Player Turn. 
+Any Reserves Test may only be modified by a single arae-shrike in this manner.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="f4ab-6112-94d4-62e3" hidden="false" type="rule" targetId="0553-d06b-52b9-34db"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Eclipse Shield" hidden="false" id="dfba-51d7-a4cd-a1fe">
+      <rules>
+        <rule name="Eclipse Shield" id="e1cc-5a7b-dc15-b450" hidden="false">
+          <description>Eclipse shields grant a 5+ Shrouded Damage Mitigation Roll against Shooting Attacks once a Model suffers a Penetrating Hit.
+
+
+The first time in a Battle Turn a Model with an eclipse shield suffers a Penetrating Hit, it gains a 5+ Shrouded Damage Mitigation Roll against all subsequent Shooting Attacks until it is returned to Aerial Reserves.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Shrouded (X)" id="e5c4-12e6-7596-430a" hidden="false" type="rule" targetId="c7e7-3bad-3de0-d6cc">
+          <modifiers>
+            <modifier type="set" value="Shrouded (5+)" field="name"/>
+          </modifiers>
+          <comment>5+</comment>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Praesidium Shield" hidden="false" id="7148-e1ac-796f-b6f8">
+      <modifiers>
+        <modifier type="add" value="901a-6b71-7a29-4597" field="category" scope="parent">
+          <comment>Shield</comment>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Praesidium shield" id="db46-10f6-09f0-a753" hidden="false">
+          <description>A model with a Praesidium shield gains a 5+ Invulnerable Save and the Shield Trait.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Magisterium Vexilla" hidden="false" id="7796-115e-75a1-e686">
+      <rules>
+        <rule name="Magisterium Vexilla" id="5166-cdbb-7243-6f49" hidden="false">
+          <description>Units within 8&quot; of a Model with a magisterium vexilla must pass a Leadership Check when scoring an Objective or only a single Victory Point is scored.
+
+
+In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model within Line of Sight and 8&quot; of a Model with a magisterium vexilla would score Victory Points for Controlling or Contesting an Objective, it must first make a Leadership Check. If this Check is failed, that Unit may only score 1 Victory Point for Controlling or Contesting the Objective in that Victory Sub-Phase, regardless of other Special Rules like Line (X) or Comptroller (X). If the Check is successful there is no further effect.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="a7ae-76e9-e4bf-5759" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
@@ -10,4 +198,16 @@
     <catalogueLink type="catalogue" name="Wargear" id="a34b-36eb-a760-25a2" targetId="fcc7-4319-bb04-2c25"/>
     <catalogueLink type="catalogue" name="Traits" id="7271-ea78-f26a-04f4" targetId="df17-7a05-0826-6e22"/>
   </catalogueLinks>
+  <sharedRules>
+    <rule name="Only In Death" id="707b-6c1b-2067-1150" hidden="false">
+      <description>Whenever a Model with this Special Rule would gain the Routed Tactical Status in the Make Panic Checks Step of the Resolution Sub-Phase of the Assault Phase, that Model instead gains the Stunned Tactical Status, unless there are any Models without this Special Rule in the same Unit as that Model. Additionally, a Unit which only contains Models with this Special Rule may never have the Disengage or Fall Back aftermath options selected for it, unless it is entirely composed of Models which also have the Antigrav Sub-Type, in which case it may still have the Disengage aftermath option selected for it.</description>
+    </rule>
+  </sharedRules>
+  <entryLinks>
+    <entryLink import="true" name="Constantin Valdor" hidden="false" id="51d9-79c4-2fa4-c2d4" type="selectionEntry" targetId="9cbb-0abc-5c93-2afd">
+      <categoryLinks>
+        <categoryLink targetId="22ee-7208-4089-b005" id="94c4-fd43-e2d0-2741" primary="true" name="Warlord"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
 </catalogue>
