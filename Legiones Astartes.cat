@@ -8791,7 +8791,81 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Falchion Super-Heavy Tank Destroyer" hidden="false" id="af99-c4c6-cde2-2ee1" sortIndex="75"/>
+    <selectionEntry type="unit" import="true" name="Falchion Super-Heavy Tank Destroyer" hidden="false" id="af99-c4c6-cde2-2ee1" sortIndex="75">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="63bf-5d7a-29b6-f4f6" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Legion Pintle Weapons" hidden="false" id="fb98-87fd-d5f1-2970" type="selectionEntryGroup" targetId="d625-37d6-d83a-0de3" sortIndex="2"/>
+            <entryLink import="true" name="Hunter-killer missile" hidden="false" id="9147-3080-4570-8944" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" sortIndex="3">
+              <modifiers>
+                <modifier type="set" value="Hull (Front) hunter-killer missile" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6662-7d19-1626-e960" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Searchlight" hidden="false" id="8cf4-a56b-b1e7-dacf" type="selectionEntry" targetId="5a85-bf28-f790-7bf0" sortIndex="4">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf66-6be0-5cf9-5feb" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Legion Super-heavy Sponsons" hidden="false" id="f458-7551-e154-6bad" type="selectionEntryGroup" targetId="4a4d-04c6-ba1f-f6f2" sortIndex="1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Falchion Super-Heavy Tank Destroyer" hidden="false" id="4340-eef5-4169-c22a">
+          <profiles>
+            <profile name="Falchion Super-Heavy Tank Destroyer" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="d383-994f-c54b-5027">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Super-heavy)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">10</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">14</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">13</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">12</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">18</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d5c-208c-7779-6cd9" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8b5-9dd1-f0a9-97eb" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle Model Type" hidden="false" id="a0bf-f6d5-6cdd-a058" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Neutron wave cannon" hidden="false" id="ce92-81a7-fa21-9a8d" type="selectionEntry" targetId="1eba-7bf7-2cef-541f">
+          <modifiers>
+            <modifier type="set" value="Centreline Mounted neutron wave cannon" field="name"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c526-7aa7-a597-26ea" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a651-40ef-df9e-1115" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="1a33-c15a-3480-9370" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="f954-2d8c-a716-67d4" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Smokescreen" id="ff1a-c88e-1df3-2730" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
+      </infoLinks>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="650"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Thunderhawk Gunship" hidden="false" id="d1dc-6a65-136b-7d33" sortIndex="76"/>
     <selectionEntry type="unit" import="true" name="Mastodon Super-Heavy Assault Transport" hidden="false" id="d29b-64ce-e91e-75fa" sortIndex="78"/>
     <selectionEntry type="unit" import="true" name="Sokar Stormbird" hidden="false" id="c2de-41c2-f4fa-996c" sortIndex="77"/>
