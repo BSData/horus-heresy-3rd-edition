@@ -7309,7 +7309,89 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Tarantula Battery" hidden="false" id="4ee0-7aae-5319-599f" sortIndex="57"/>
+    <selectionEntry type="unit" import="true" name="Tarantula Battery" hidden="false" id="4ee0-7aae-5319-599f" sortIndex="57">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Tarantula Sentry Gun" hidden="false" id="dc5b-c4ce-262a-0818">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d4ba-f3a5-8778-6379" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="56e7-64eb-c220-22ab" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Tarantula Sentry Gun" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="5f4e-654c-e9a6-1eed">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">-</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">10</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">10</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">10</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">2</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="45"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="6a24-ba42-a436-9e6d" hidden="false" defaultSelectionEntryId="6902-6ed0-1a78-d0f5" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Twin heavy bolter" hidden="false" id="6902-6ed0-1a78-d0f5" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75" sortIndex="1">
+              <modifiers>
+                <modifier type="prepend" value="Turret Mounted" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Twin volkite culverin" hidden="false" id="de72-4826-def0-9974" type="selectionEntry" targetId="65a5-f5bd-1ecb-0c22" sortIndex="3">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Twin lascannon" hidden="false" id="9e9a-3a95-cad3-50f4" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a" sortIndex="2">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Sentry melta array" hidden="false" id="5bbb-5c6d-1428-be15" type="selectionEntry" targetId="31e3-04f7-7ed9-44f6" sortIndex="4">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Hyperios missile launcher" hidden="false" id="4450-e6b0-8ee3-8559" type="selectionEntry" targetId="a4e2-e284-30e1-f05a" sortIndex="5">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Orias frag missile" hidden="false" id="9cdd-f16d-d7ce-d9c9" type="selectionEntry" targetId="ed11-42af-1450-5e8b" sortIndex="6">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e274-442e-8bb3-00c4" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec92-6813-ab3a-52d8" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Infiltrate (X)" id="c128-c05e-ecbd-30c4" hidden="false" type="rule" targetId="f330-254e-1a98-798a">
+          <modifiers>
+            <modifier type="set" value="Infiltrate (9)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Expendable (X)" id="7ddb-2e52-6125-5a95" hidden="false" type="rule" targetId="c4d4-e053-9564-540b">
+          <modifiers>
+            <modifier type="set" value="Expendable (3)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Independent Sentries" id="4c1c-6fec-5c87-5b24" hidden="false" type="rule" targetId="7444-aeba-2958-ee0d"/>
+        <infoLink name="Automated Fire Protocols" id="0ef3-da11-a93a-0375" hidden="false" type="rule" targetId="bbf2-c529-d30b-b6b1"/>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Scimitar Jetbike Squadron" hidden="false" id="aa3c-45cc-2dfb-a98e" sortIndex="61"/>
     <selectionEntry type="unit" import="true" name="Xiphon Interceptor" hidden="false" id="06a4-3ae8-c5d2-aa1d" sortIndex="58"/>
     <selectionEntry type="unit" import="true" name="Storm Eagle" hidden="false" id="0816-621f-d49d-558c" sortIndex="59"/>
