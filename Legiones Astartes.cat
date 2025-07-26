@@ -6487,7 +6487,79 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Contemptor Dreadnought" hidden="false" id="3337-0b90-6ead-cba1" sortIndex="41"/>
-    <selectionEntry type="unit" import="true" name="Termite" hidden="false" id="29c3-0b90-216c-b071" sortIndex="47"/>
+    <selectionEntry type="unit" import="true" name="Termite" hidden="false" id="29c3-0b90-216c-b071" sortIndex="47">
+      <entryLinks>
+        <entryLink import="true" name="Melta cutters" hidden="false" id="05d5-4441-e785-bda0" type="selectionEntry" targetId="030a-72a9-a2b0-e92b">
+          <modifiers>
+            <modifier type="prepend" value="Centreline Mounted" field="name"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Termite" hidden="false" id="6a97-d360-ee79-1091">
+          <profiles>
+            <profile name="Termite" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="9ddd-2feb-eb49-a01c">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Transport)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">6</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">12</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">12</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">10</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">5</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b8ac-03b5-4120-1b85" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84a0-f0c1-4217-c4b1" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Pintle Weapons" id="0ed3-be9e-097c-0d08" hidden="false" defaultSelectionEntryId="504d-f53b-2f7f-49c4">
+          <entryLinks>
+            <entryLink import="true" name="Combi-bolter" hidden="false" id="504d-f53b-2f7f-49c4" type="selectionEntry" targetId="042d-9e60-db9e-c147" sortIndex="1">
+              <modifiers>
+                <modifier type="prepend" value="Two Pintle Mounted" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Volkite charger" hidden="false" id="b0bd-11a9-46eb-2ae1" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="2">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+              <modifiers>
+                <modifier type="prepend" value="Two Pintle Mounted" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Heavy flamer" hidden="false" id="b582-b1bc-f410-6ebf" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="3">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <modifiers>
+                <modifier type="prepend" value="Two Pintle Mounted" field="name"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="760e-84b4-8d49-0315" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b56-213a-ae41-a3d9" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="996e-fda6-b66e-4e10" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="78dc-5d87-1c7a-9960" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Deep Strike" id="52ae-69fb-9725-440f" hidden="false" type="rule" targetId="0553-d06b-52b9-34db"/>
+        <infoLink name="Light Transport" id="5ceb-4bb3-6b3a-d4fa" hidden="false" type="rule" targetId="d451-f7f3-fc8f-db23"/>
+      </infoLinks>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="80"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Drop Pod" hidden="false" id="2eb3-783d-8dde-733b" sortIndex="46">
       <entryLinks>
         <entryLink import="true" name="Combi-bolter" hidden="false" id="b26a-8580-ed44-e2e7" type="selectionEntry" targetId="042d-9e60-db9e-c147">
