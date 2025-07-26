@@ -8495,7 +8495,85 @@
         <infoLink name="Smokescreen" id="6fe8-313b-7906-c837" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Cerberus Heavy Tank Destroyer" hidden="false" id="a7a8-9dd5-69b2-a598" sortIndex="71"/>
+    <selectionEntry type="unit" import="true" name="Cerberus Heavy Tank Destroyer" hidden="false" id="a7a8-9dd5-69b2-a598" sortIndex="71">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="0031-ce0e-002d-7174" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Legion Pintle Weapons" hidden="false" id="5a6a-560a-a790-c85a" type="selectionEntryGroup" targetId="d625-37d6-d83a-0de3" sortIndex="2"/>
+            <entryLink import="true" name="Legion Sponson Weapons" hidden="false" id="a960-6879-85c5-edcf" type="selectionEntryGroup" targetId="df25-ac22-5bbd-0e44" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0ec-c7b1-9f02-7824" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6cbb-0dd3-8362-46ad" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hunter-killer missile" hidden="false" id="9e2b-f6aa-ffe7-15f5" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" sortIndex="3">
+              <modifiers>
+                <modifier type="set" value="Hull (Front) hunter-killer missile" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7862-a1a3-7f92-db32" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Searchlight" hidden="false" id="7498-eed3-6e65-c756" type="selectionEntry" targetId="5a85-bf28-f790-7bf0" sortIndex="4">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="040a-5f0a-dd12-c0f6" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Cerberus Heavy Tank Destroyer" hidden="false" id="7d81-bf88-f3eb-3f87">
+          <profiles>
+            <profile name="Cerberus Heavy Tank Destroyer" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="e7da-fd8f-5088-39c2">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Super-Heavy)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">10</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">14</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">14</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">13</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">12</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="80fa-20e1-7a82-02b3" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed4e-74dd-7c05-f111" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Vehicle Model Type" hidden="false" id="7850-985b-470b-4f18" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
+            <categoryLink type="category" name="Super-heavy Model Sub-Type" hidden="false" id="ac69-e291-b657-7dd0" targetId="4d42-b711-7946-8e15" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Neutron laser battery" hidden="false" id="4bd8-f660-4031-f541" type="selectionEntry" targetId="e1fa-b0b7-240a-df13">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="71b5-3d52-a67a-1d0a" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0b8-87f5-18b0-b368" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="cb5a-08f6-eea6-134d" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="3805-d643-5297-fb5f" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Smokescreen" id="3c6c-7ba7-f86e-6727" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
+        <infoLink name="Explodes (X)" id="468f-12c7-17d7-a2ea" hidden="false" type="rule" targetId="da5b-b871-20da-3e70">
+          <comment>4+</comment>
+          <modifiers>
+            <modifier type="set" value="Explodes (4+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Typhon Heavy Siege Tank" hidden="false" id="b3e6-be98-5b83-87b4" sortIndex="72"/>
     <selectionEntry type="unit" import="true" name="Glaive Super-Heavy Special Weapons Tank" hidden="false" id="7d7b-1430-d550-9fe6" sortIndex="73"/>
     <selectionEntry type="unit" import="true" name="Falchion Super-Heavy Tank Destroyer" hidden="false" id="af99-c4c6-cde2-2ee1" sortIndex="75"/>
