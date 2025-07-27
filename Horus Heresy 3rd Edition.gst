@@ -3303,8 +3303,22 @@ Please don&apos;t submit bug reports for any of these things</description>
     <costType name="Point(s)" id="9893-c379-920b-8982" defaultCostLimit="-1"/>
     <costType name="Asset Point(s)" id="57e3-1031-7d4d-5ae3" defaultCostLimit="-1" hidden="true"/>
     <costType name="Reaction Point(s)" id="c9ba-097e-c47f-ecc2" defaultCostLimit="-1" hidden="true"/>
-    <costType name="Auxilary Detachment(s)" id="3e8e-05ee-be52-12d6" defaultCostLimit="-1" hidden="false"/>
-    <costType name="Apex Detachment(s)" id="159d-855c-533d-f592" defaultCostLimit="-1"/>
+    <costType name="Auxilary Detachment(s)" id="3e8e-05ee-be52-12d6" defaultCostLimit="-1" hidden="true">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <comment>Hidden from new list screen, but displays count</comment>
+        </modifier>
+      </modifiers>
+      <comment>Hidden from new list screen, but displays count</comment>
+    </costType>
+    <costType name="Apex Detachment(s)" id="159d-855c-533d-f592" defaultCostLimit="-1" hidden="true">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <comment>Hidden from new list screen, but displays count</comment>
+        </modifier>
+      </modifiers>
+      <comment>Hidden from new list screen, but displays count</comment>
+    </costType>
   </costTypes>
   <profileTypes>
     <profileType name="Profile" id="a76f-8e23-8c3e-166d" hidden="false" sortIndex="1">
