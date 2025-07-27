@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -2977,7 +2977,7 @@
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink name="Optae Only" hidden="false" id="cc04-ac5c-f2c5-8c7a" targetId="ee42-a241-c364-489d" type="categoryEntry">
+            <categoryLink name="Command - Optae Only" hidden="false" id="cc04-ac5c-f2c5-8c7a" targetId="ee42-a241-c364-489d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5b4-12a7-164c-df56"/>
               </constraints>
@@ -3004,6 +3004,39 @@
             </categoryLink>
           </categoryLinks>
         </forceEntry>
+        <forceEntry name="Auxiliary - Bloodied Claw" id="0fd0-ecec-ad7c-3d20" hidden="true">
+          <categoryLinks>
+            <categoryLink name="Prime Troops" hidden="false" id="b722-0207-6e0b-4101" targetId="c3f9-a7f3-984b-3fda">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b43c-5ccd-be1d-ac11"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Troops" hidden="false" id="3012-f0c2-09f6-6227" targetId="88e6-d373-4152-0dd8">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bd7-0ed6-7439-b130"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Heavy Assault" hidden="false" id="7068-9d67-38ba-494c" targetId="3235-bd79-e9b1-60fa">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fbd3-8387-a664-b926"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d995-cb33-be41-ecf8" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="d995-cb33-be41-ecf8" shared="true"/>
+                  </conditions>
+                  <comment>Space Wolves</comment>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <comment>Space Wolves Only</comment>
+        </forceEntry>
       </forceEntries>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="dae8-8a74-0984-6332" includeChildSelections="false"/>
@@ -3015,7 +3048,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af1a-23f1-0ac4-5b33" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Open Beta Release" hidden="false" id="565d-57fb-6ccc-9598" targetId="c5ac-45c2-a8a9-e32c" type="categoryEntry">
+        <categoryLink name="Open Beta Release" hidden="false" id="565d-57fb-6ccc-9598" targetId="c5ac-45c2-a8a9-e32c">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f595-8e0d-c936-7de8" includeChildSelections="true"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3cd4-1efc-c9a1-b1ef" includeChildSelections="true"/>
@@ -3025,7 +3058,7 @@
     </forceEntry>
     <forceEntry name="Allied Detachment" id="256b-b8a8-017a-75e9" hidden="false" childForcesLabel="Detachments" sortIndex="2">
       <forceEntries>
-        <forceEntry name="Allied Detachment " id="7469-bbd2-a2ad-f8a8" hidden="false" childForcesLabel="" sortIndex="1">
+        <forceEntry name="Allied Detachment " id="7469-bbd2-a2ad-f8a8" hidden="false" sortIndex="1">
           <categoryLinks>
             <categoryLink name="Command" hidden="false" id="772e-aee9-2bf8-b30d" targetId="6dbf-654a-f06f-2d69">
               <modifiers>
