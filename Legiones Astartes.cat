@@ -7962,8 +7962,8 @@
             <modifier type="prepend" value="Turret Mounted" field="name"/>
           </modifiers>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5325-e402-3673-0ac3" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16c8-68ff-757e-89d0" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="5325-e402-3673-0ac3" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="16c8-68ff-757e-89d0" includeChildSelections="false"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Neutron beam laser" hidden="false" id="3afe-1863-a80f-9f04" type="selectionEntry" targetId="81f3-6879-257e-6552">
@@ -8325,8 +8325,8 @@
             <modifier type="set" value="Pintle Mounted bolter" field="name"/>
           </modifiers>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bebb-4318-5899-8a1f" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0874-46b1-2385-4a67" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="0874-46b1-2385-4a67-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0874-46b1-2385-4a67-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Scorpius missile launcher" hidden="false" id="4cc7-9ee1-81c4-bcd1" type="selectionEntry" targetId="b706-15fa-601e-78b9">
@@ -8413,7 +8413,7 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="Main weapon" id="83ba-fd71-0cd0-7f97" hidden="false" sortIndex="1">
               <entryLinks>
-                <entryLink import="true" name="Morbus bombard" hidden="false" id="e8e7-4cc2-8fb8-d50f" type="selectionEntry" targetId="1729-5940-4e73-a27f">
+                <entryLink import="true" name="Morbus bombard" hidden="false" id="e8e7-4cc2-8fb8-d50f" type="selectionEntry" targetId="1729-5940-4e73-a27f" defaultAmount="1" sortIndex="1">
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Phosphex shells" hidden="true" id="42a5-a6ce-ca95-9229">
                       <costs>
@@ -8500,12 +8500,12 @@
                     </selectionEntry>
                   </selectionEntries>
                 </entryLink>
-                <entryLink import="true" name="Graviton-charge cannon" hidden="false" id="2c9f-1dcf-a21f-4076" type="selectionEntry" targetId="1e1b-822c-790c-46b0">
+                <entryLink import="true" name="Graviton-charge cannon" hidden="false" id="2c9f-1dcf-a21f-4076" type="selectionEntry" targetId="1e1b-822c-790c-46b0" sortIndex="2">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Spicula rocket system" hidden="false" id="5da6-5aa8-0369-5f6c" type="selectionEntry" targetId="091a-bb9b-8f2e-edc1">
+                <entryLink import="true" name="Spicula rocket system" hidden="false" id="5da6-5aa8-0369-5f6c" type="selectionEntry" targetId="091a-bb9b-8f2e-edc1" sortIndex="3">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
                   </costs>
@@ -9029,6 +9029,11 @@
       <rules>
         <rule name="Mastodon Transport Bay" id="e072-e4f5-b964-a208" hidden="false"/>
       </rules>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="600"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sokar Stormbird" hidden="false" id="c2de-41c2-f4fa-996c" sortIndex="77">
       <selectionEntryGroups>
@@ -9758,7 +9763,7 @@
         <categoryLink targetId="643a-1012-bd51-6537" id="61f3-2319-8ed7-66b0" primary="true" name="Armour"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Kratos Battle Tank" hidden="false" id="82d0-fe0d-f087-3fff" type="selectionEntry" targetId="e3f2-ff0d-f190-ecfd" sortIndex="67">
+    <entryLink import="true" name="Kratos Assault Tank" hidden="false" id="82d0-fe0d-f087-3fff" type="selectionEntry" targetId="e3f2-ff0d-f190-ecfd" sortIndex="67">
       <categoryLinks>
         <categoryLink targetId="643a-1012-bd51-6537" id="2bc7-1d88-d455-0a91" primary="true" name="Armour"/>
       </categoryLinks>
@@ -10164,6 +10169,10 @@
           </modifiers>
         </entryLink>
       </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="6e63-e036-d6b5-da9e-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6e63-e036-d6b5-da9e-max" includeChildSelections="false"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Legion Pintle Weapons" id="d625-37d6-d83a-0de3" hidden="false" sortIndex="10" collapsible="true">
       <entryLinks>
@@ -10249,6 +10258,9 @@
           </costs>
         </entryLink>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e462-2a64-e0ee-ecd9"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Legion Prime Benefits" id="d3a2-e7f2-9da7-fd3c" hidden="false" sortIndex="11">
       <selectionEntries>
