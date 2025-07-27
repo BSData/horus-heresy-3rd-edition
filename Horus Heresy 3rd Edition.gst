@@ -264,6 +264,56 @@
                 </modifier>
               </modifiers>
             </categoryLink>
+            <categoryLink name="Prime High Command" hidden="false" id="e6c0-2c5a-7024-9a63" targetId="3568-ad75-b452-3137" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e697-7cd6-6b5c-34b0"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Retinue" hidden="false" id="38af-0c16-5059-f9ee" targetId="c66b-ef39-b20f-725b" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1058-2725-be15-65de"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Elites" hidden="false" id="e8af-1428-4524-7f7f" targetId="276f-7a07-a56c-affd" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8944-d7a9-7f41-b439"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime War-engine" hidden="false" id="c9bf-ac13-2c53-6bf9" targetId="9699-67c9-2c0b-e64b" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0db5-e2e0-c621-8eb4"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Transport" hidden="false" id="e484-b61e-568a-0422" targetId="fc27-1a48-84ae-aa7b" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f8b5-0625-043c-395f"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Heavy Assault" hidden="false" id="3aa7-4fcd-efb7-92e5" targetId="1e95-35f0-1353-ffa1" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="80e4-45f4-1066-1956"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Heavy Transport" hidden="false" id="b17f-453a-684d-d659" targetId="abff-3686-c39a-9a24" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4ea0-5d1a-cb76-ab21"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Armour" hidden="false" id="d162-4e79-32f9-d8d5" targetId="4460-7bc1-4d80-aecb" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="837d-a261-e1f1-298d"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Recon" hidden="false" id="bb63-4450-2c9e-149e" targetId="6348-ecd0-714d-042a" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8433-df4c-b79a-eeac"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Fast Attack" hidden="false" id="b700-0f38-d4e6-baef" targetId="c291-144b-3da6-37ed" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e99d-174b-f587-5bc8"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="5611-db49-9e64-44c6-min" includeChildSelections="true"/>
