@@ -214,13 +214,6 @@
               </constraints>
             </categoryLink>
             <categoryLink name="Command" hidden="false" id="dd70-4fb9-3253-7740" targetId="6dbf-654a-f06f-2d69">
-              <modifiers>
-                <modifier type="set" value="2" field="d4ca-596a-5b48-948e">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="c85c-2963-658f-1bb9" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d4ca-596a-5b48-948e"/>
               </constraints>
@@ -229,13 +222,6 @@
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="330d-223d-3e3c-b96d"/>
               </constraints>
-              <modifiers>
-                <modifier type="set" value="3" field="330d-223d-3e3c-b96d">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="c3f9-a7f3-984b-3fda" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </categoryLink>
             <categoryLink name="Prime Troops" hidden="false" id="7f2f-617f-ebff-25e0" targetId="c3f9-a7f3-984b-3fda">
               <constraints>
@@ -254,12 +240,12 @@
             </categoryLink>
             <categoryLink name="Armour" hidden="false" id="feaa-cea2-4a2c-9197" targetId="643a-1012-bd51-6537">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7b1-2dc9-f443-8300"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c7b1-2dc9-f443-8300"/>
               </constraints>
               <modifiers>
-                <modifier type="set" value="true" field="hidden">
+                <modifier type="increment" value="1" field="c7b1-2dc9-f443-8300">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
