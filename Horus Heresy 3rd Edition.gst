@@ -410,6 +410,11 @@
                 </modifier>
               </modifiers>
             </categoryLink>
+            <categoryLink name="Prime Support" hidden="false" id="8576-289d-a79d-9474" targetId="1c79-ecdf-9a64-84c9">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c3da-ddeb-9e0c-3049"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="5611-db49-9e64-44c6-min" includeChildSelections="true"/>
@@ -3458,7 +3463,7 @@
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Prime Support" hidden="false" id="49b4-b894-e6d8-af42" targetId="1c79-ecdf-9a64-84c9" type="categoryEntry">
+        <categoryLink name="Prime Support" hidden="false" id="49b4-b894-e6d8-af42" targetId="1c79-ecdf-9a64-84c9">
           <constraints>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1783-b3f0-7d7a-d749"/>
           </constraints>
