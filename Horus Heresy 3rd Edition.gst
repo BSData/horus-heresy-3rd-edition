@@ -3429,18 +3429,6 @@
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c294-af3c-e4dc-16d7"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Support" hidden="false" id="f918-28d7-513c-18f7" targetId="345f-9ba6-9b02-ed5c">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f5ae-b989-5401-b890"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="1" field="f5ae-b989-5401-b890">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
         <categoryLink name="Troops" hidden="false" id="2f02-fcde-0d64-2296" targetId="88e6-d373-4152-0dd8">
           <constraints>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b6e4-94a1-aec6-efc6"/>
@@ -3456,6 +3444,23 @@
         <categoryLink name="Prime Troops" hidden="false" id="36ee-e6d1-438a-959e" targetId="c3f9-a7f3-984b-3fda">
           <constraints>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="484f-83e5-e875-0c25" includeChildSelections="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Support" hidden="false" id="f918-28d7-513c-18f7" targetId="345f-9ba6-9b02-ed5c">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f5ae-b989-5401-b890"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="f5ae-b989-5401-b890">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Prime Support" hidden="false" id="49b4-b894-e6d8-af42" targetId="1c79-ecdf-9a64-84c9" type="categoryEntry">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1783-b3f0-7d7a-d749"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Transport" hidden="false" id="e143-b007-3b76-ca7c" targetId="d162-4711-5d60-0a48">
