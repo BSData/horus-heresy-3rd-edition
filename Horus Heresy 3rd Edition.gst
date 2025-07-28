@@ -1014,6 +1014,16 @@
               </constraints>
             </categoryLink>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="7ce0-f95c-8fee-df61" targetId="1a65-8b23-419b-b30f"/>
+            <categoryLink name="Prime Troops" hidden="false" id="613d-dad1-4746-5c74" targetId="c3f9-a7f3-984b-3fda">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9c86-e88f-16b7-b9b8" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Support" hidden="false" id="f727-21dc-75ae-6e99" targetId="1c79-ecdf-9a64-84c9">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="98f8-8860-4dd3-58d7"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -1202,6 +1212,11 @@
               </constraints>
             </categoryLink>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="a56d-c59f-397f-c1eb" targetId="1a65-8b23-419b-b30f"/>
+            <categoryLink name="Prime Armour" hidden="false" id="c38b-2801-da19-2cd1" targetId="4460-7bc1-4d80-aecb">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0b7c-566a-8311-703d"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -1390,6 +1405,11 @@
               </constraints>
             </categoryLink>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="b245-2dca-7278-f7a1" targetId="1a65-8b23-419b-b30f"/>
+            <categoryLink name="Prime War-engine" hidden="false" id="beec-b88f-6137-23e5" targetId="9699-67c9-2c0b-e64b">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1fe7-5114-3d7d-e501"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -1578,6 +1598,11 @@
               </constraints>
             </categoryLink>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="ed74-5a30-58f6-3a94" targetId="1a65-8b23-419b-b30f"/>
+            <categoryLink name="Prime Recon" hidden="false" id="cc09-a724-add5-8dce" targetId="6348-ecd0-714d-042a">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f4fd-d341-0f65-784b"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -1766,6 +1791,11 @@
               </constraints>
             </categoryLink>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="fb62-562a-78b2-f800" targetId="1a65-8b23-419b-b30f"/>
+            <categoryLink name="Prime Heavy Assault" hidden="false" id="e69d-01d0-1f83-768c" targetId="1e95-35f0-1353-ffa1">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0dc3-2e75-42a7-ef00"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -1954,6 +1984,11 @@
               </constraints>
             </categoryLink>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="f026-67a5-0d0e-ee8d" targetId="1a65-8b23-419b-b30f"/>
+            <categoryLink name="Prime Fast Attack" hidden="false" id="9713-0512-a699-1e8e" targetId="c291-144b-3da6-37ed">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0764-c4bb-2d59-a5d0"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
