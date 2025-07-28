@@ -177,22 +177,24 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
       <categoryLinks>
         <categoryLink targetId="7799-e1d6-762b-700b" id="11ba-ed9f-37fd-10e4" primary="false" name="Paragon Model Type"/>
         <categoryLink targetId="b980-187b-2b17-d635" id="f6d5-6d4d-95b9-d574" primary="false" name="Unique Model Sub-Type"/>
+        <categoryLink targetId="b7c9-7d2d-fb56-5486" id="5891-40c7-e5b2-3c51" primary="false" name="The Hammer of Olympia Unlock"/>
+        <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="d3a5-7e83-41dc-2a27" primary="false" name="Master of the Legion"/>
       </categoryLinks>
       <profiles>
         <profile name="The Breaker" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="be3f-8d26-fcae-7561" page="151" publicationId="e54c-7040-0f35-d85d">
           <characteristics>
-            <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Reaction allows a friendly Unit to make a Shooting Attack targeting a Model that Perturabo is in a Challenge with.
+            <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows a friendly Unit to make a Shooting Attack targeting a Model that Perturabo is in a Challenge with.
 
-While a Model with this special rule is in a Challenge, its Controlling Player can select the following Gambit:</characteristic>
-            <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">The Breaker: This Gambit can only be selected during the first Face-Off Step of a Challenge. If this Gambit is selected, this Model does not make attacks during the subsequent Strike Step. Instead, this Model&apos;s Controlling Player can select a single friendly Unit composed of Models with the Iron Warriors Trait that is within 12&quot; of any enemy Model in that Combat and not Locked in Combat and make a Shooting Attack with that Unit. All such attacks are resolved as Snap Shots with the exception that Weapons with the Blast (X) Special Rule or the Template Range Characteristic may not be used, and wounds from this Shooting Attack can only be allocated to the enemy Model in the Challenge.
-</characteristic>
+While a Model with this special rule is in a Challenge, its Controlling Player can select the following Gambit:
+(FAQ v1.0 UPDATED)</characteristic>
+            <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">The Breaker: This Gambit can only be selected during the first Face-Off Step of a Challenge. If this Gambit is selected, this Model does not make attacks during the subsequent Strike Step. Instead, this Model&apos;s Controlling Player can select a single friendly Unit composed of Models with the Iron Warriors Trait that is within 12&quot; of any enemy Model in that Combat and not Locked in Combat and make a Shooting Attack with that Unit. All such attacks are resolved as Snap Shots with the exception that Weapons with the Blast (X) Special Rule or the Template Range Characteristic may not be used, and wounds from this Shooting Attack can only be allocated to the enemy Model in the Challenge.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11a8-74b2-6483-a4ce"/>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bc6c-926b-7a35-1543" includeChildSelections="true"/>
-        <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="5d4c-08e5-bc38-795c" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5d4c-08e5-bc38-795c" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Gambit: Spiteful Demise" hidden="false" id="7068-2e23-fa7b-2891">
@@ -227,7 +229,8 @@ While a Model with this special rule is in a Challenge, its Controlling Player c
     <selectionEntry type="upgrade" import="true" name="Legion Tactica: IW" hidden="false" id="c4ef-5251-66c7-1059" publicationId="e54c-7040-0f35-d85d">
       <rules>
         <rule name="The Bitter End" id="cd26-01e1-0284-9fc9" hidden="false" publicationId="e54c-7040-0f35-d85d" page="148">
-          <description>If the Controlling Player is making a Leadership Check or Cool Check for a Unit that includes a majority of Models with this Special Rule, they may ignore negative modifiers applied by the Panic (X), Pinning (X), Stun (X) or Suppressive (X) Special Rules.</description>
+          <description>If the Controlling Player is making a Leadership Check or Cool Check for a Unit that includes a majority of Models with this Special Rule, they may ignore negative modifiers applied by the Panic (X), Pinning (X), Stun (X) or Suppressive (X) Special Rules.
+</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -318,6 +321,8 @@ While a Model with this special rule is in a Challenge, its Controlling Player c
         <categoryLink targetId="9871-cb62-5283-2216" id="99be-5492-90e1-7a40" primary="false" name="Command Model Sub-type"/>
         <categoryLink targetId="1e7d-9066-28d2-97a0" id="cbe3-42c2-ee1a-2e76" primary="false" name="Heavy Model Sub-Type"/>
         <categoryLink targetId="594d-fa82-13cb-a345" id="8e23-cb53-15e3-4c6c" primary="false" name="Infantry Model Type"/>
+        <categoryLink targetId="b7c9-7d2d-fb56-5486" id="745b-2ea0-4b87-3549" primary="false" name="The Hammer of Olympia Unlock"/>
+        <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="ef80-aafb-6740-c1a5" primary="false" name="Master of the Legion"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Implacable Advance" id="43cd-3836-c930-ea8e" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
@@ -720,126 +725,37 @@ Only a Model with the Iron Warriors Trait and the Paragon Type or Command Sub-Ty
       <characteristics>
         <characteristic name="Description" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reacting Unit to make an improved Shooting Attack in the manner of Return Fire.
 
-
 Trigger: One per battle, the Reactive Player may decalre the Bitter Fury Advanced Rection in the Shooting Phase, during Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player, that Targets a Unit which only includes Models with the Iron Warriors Trait.
-
 
 Cost: The Reactive Player must spend 1 point of their Reaction Allotment to declare a Bitter Fury Advanced Reaction, this cost paid as soon as the declaration is made.
 
-
 Target: The Target Unit is always the Unit whose Shooting Attack triggered the Reaction. The Reacting Unit is always the Unit that was the target of the Shooting Attack that triggered the Reaction.
-
 
 Process.
 1. Once the Bitter Fury Advanced Reaction has been declared, the Active Player must resolve all remaining Steps of the Shooting Attack process as normal, up to the start of Step 11.
-2. Before resolving Step 11, the Reactive Player makes a Shooting Attack with the Reacting Unit (including with any Models that have been reduced to 0 Wounds) targetting only the Target Unit. While making this Shooting Attack, Weapons selected for it have their Firepower Characteristic modified by +1 and gain the Overload (1) Special Rule. If that Weapon already has the Overload (1) Special Rule, improve the value of X on that Special Rule by +1.
-3. Once the Shooting Attack made as part of this Reaction has been completely resolved, including removing any Casualties, the Active Player must then finish resolving Step 11 of the original Shooting Attack that triggered the Reaction.</characteristic>
+2. Before resolving Step 11, the Reactive Player makes a Shooting Attack with the Reacting Unit (including with any Models that have been reduced to 0 Wounds) targeting only the Target Unit. While making this Shooting Attack, Weapons selected for it have their Firepower Characteristic modified by +1 and gain the Overload (1) Special Rule. If that Weapon already has the Overload (1) Special Rule, modify the value of X on that Special Rule by +1.
+3. Once the Shooting Attack made as part of this Reaction has been completely resolved, including removing any Casualties, the Active Player must then finish resolving Step 11 of the original Shooting Attack that triggered the Reaction.
+(FAQ v1.0 UPDATED)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
-  <forceEntries>
-    <forceEntry name="Auxiliary - The Ironfire Cohort" id="5bc5-5224-c751-d437" hidden="true">
-      <categoryLinks>
-        <categoryLink name="Support" hidden="false" id="3f2d-d215-c312-9e0c" targetId="345f-9ba6-9b02-ed5c">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c365-9f8c-a155-0fb3"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Armour" hidden="false" id="2c39-7871-5384-b101" targetId="643a-1012-bd51-6537">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8e95-747d-01c5-d9a0"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="1" field="8e95-747d-01c5-d9a0">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="e6e4-964a-5852-9c07" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="8e95-747d-01c5-d9a0">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="force" childId="e6e4-964a-5852-9c07" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-        <categoryLink name="Prime Armour" hidden="false" id="e9c8-da1a-160f-75a0" targetId="4460-7bc1-4d80-aecb">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb4d-fa03-139c-092e"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="21c0-18db-03dd-ae07" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="21c0-18db-03dd-ae07" shared="true"/>
-              </conditions>
-              <comment>IW</comment>
-            </conditionGroup>
-          </conditionGroups>
-          <comment>Visible to all factions</comment>
-        </modifier>
-      </modifiers>
-    </forceEntry>
-    <forceEntry name="Apex - The Hammer of Olympia" id="1d3d-a6b8-94d8-443b" hidden="true">
-      <categoryLinks>
-        <categoryLink name="Heavy Assault" hidden="false" id="9912-8b9a-4ece-70b8" targetId="3235-bd79-e9b1-60fa">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5284-e882-a1ce-63f5"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Prime Heavy assault" hidden="false" id="a84e-041a-13e5-dd83" targetId="1e95-35f0-1353-ffa1">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3059-d2bb-adc3-57e8"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Heavy Transport" hidden="false" id="b289-3a10-b731-51e7" targetId="52d0-8b78-439e-18e5">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c45f-34de-69ae-e4a5"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Troops" hidden="false" id="7921-fd7f-14e3-5ca8" targetId="88e6-d373-4152-0dd8">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1f39-39e0-a458-a03d"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Prime Troops" hidden="false" id="d156-ffd9-8563-528f" targetId="c3f9-a7f3-984b-3fda">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0c9-c956-ddbb-abb4"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="21c0-18db-03dd-ae07" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="21c0-18db-03dd-ae07" shared="true"/>
-              </conditions>
-              <comment>IW</comment>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="2ff4-482b-a2b2-f853" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="5e76-088c-91c5-2d4d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-          <comment>Visible to all factions</comment>
-        </modifier>
-      </modifiers>
-    </forceEntry>
-  </forceEntries>
   <entryLinks>
     <entryLink import="true" name="Perturabo" hidden="false" id="06e0-8a81-4a75-4787" type="selectionEntry" targetId="2ff4-482b-a2b2-f853" sortIndex="1">
       <categoryLinks>
         <categoryLink targetId="22ee-7208-4089-b005" id="69c3-cff4-ac1b-8d54" primary="true" name="Warlord"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Warsmith" hidden="false" id="b201-c904-7a3d-efdc" type="selectionEntry" targetId="5e76-088c-91c5-2d4d" sortIndex="2">
       <categoryLinks>
