@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="7" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -2815,7 +2815,7 @@
                 <constraint type="max" value="3" field="selections" scope="force" shared="true" id="9bb1-6117-1074-8829" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Prime Heavy assault" hidden="false" id="7858-baba-5c90-c845" targetId="1e95-35f0-1353-ffa1">
+            <categoryLink name="Prime Heavy Assault" hidden="false" id="7858-baba-5c90-c845" targetId="1e95-35f0-1353-ffa1">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="force" shared="true" id="b327-c9e2-cbd8-c6dd" includeChildSelections="true"/>
               </constraints>
@@ -2916,7 +2916,7 @@
                 <constraint type="max" value="3" field="selections" scope="force" shared="true" id="30c6-efe4-2c42-4de1" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Prime Heavy transport" hidden="false" id="43ad-eb3c-ec25-e7f6" targetId="abff-3686-c39a-9a24">
+            <categoryLink name="Prime Heavy Transport" hidden="false" id="43ad-eb3c-ec25-e7f6" targetId="abff-3686-c39a-9a24">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="force" shared="true" id="e480-9bfa-a46f-c224" includeChildSelections="true"/>
               </constraints>
@@ -2977,7 +2977,7 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5284-e882-a1ce-63f5"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Prime Heavy assault" hidden="false" id="a84e-041a-13e5-dd83" targetId="1e95-35f0-1353-ffa1">
+            <categoryLink name="Prime Heavy Assault" hidden="false" id="a84e-041a-13e5-dd83" targetId="1e95-35f0-1353-ffa1">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3059-d2bb-adc3-57e8"/>
               </constraints>
@@ -3112,7 +3112,7 @@
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink name="Optae Only" hidden="false" id="cc04-ac5c-f2c5-8c7a" targetId="ee42-a241-c364-489d" type="categoryEntry">
+            <categoryLink name="Command - Optae Only" hidden="false" id="cc04-ac5c-f2c5-8c7a" targetId="ee42-a241-c364-489d">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5b4-12a7-164c-df56"/>
               </constraints>
@@ -3150,7 +3150,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af1a-23f1-0ac4-5b33" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Open Beta Release" hidden="false" id="565d-57fb-6ccc-9598" targetId="c5ac-45c2-a8a9-e32c" type="categoryEntry">
+        <categoryLink name="Open Beta Release" hidden="false" id="565d-57fb-6ccc-9598" targetId="c5ac-45c2-a8a9-e32c">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f595-8e0d-c936-7de8" includeChildSelections="true"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3cd4-1efc-c9a1-b1ef" includeChildSelections="true"/>
@@ -3160,7 +3160,7 @@
     </forceEntry>
     <forceEntry name="Allied Detachment" id="256b-b8a8-017a-75e9" hidden="false" childForcesLabel="Detachments" sortIndex="2">
       <forceEntries>
-        <forceEntry name="Allied Detachment " id="7469-bbd2-a2ad-f8a8" hidden="false" childForcesLabel="" sortIndex="1">
+        <forceEntry name="Allied Detachment " id="7469-bbd2-a2ad-f8a8" hidden="false" sortIndex="1">
           <categoryLinks>
             <categoryLink name="Command" hidden="false" id="772e-aee9-2bf8-b30d" targetId="6dbf-654a-f06f-2d69">
               <modifiers>
@@ -5039,7 +5039,15 @@ Please don&apos;t submit bug reports for any of these things</description>
     <selectionEntryGroup name="Allegiance" id="9fa8-cbae-ef5e-4b7c" hidden="false">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Loyalist" hidden="false" id="e1e1-a344-d3e2-0b91"/>
-        <selectionEntry type="upgrade" import="true" name="Traitor" hidden="false" id="597e-83d8-32e1-8eaa"/>
+        <selectionEntry type="upgrade" import="true" name="Traitor" hidden="false" id="597e-83d8-32e1-8eaa">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true" includeChildForces="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
       </selectionEntries>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2516-7312-a1b5-52fd" includeChildSelections="false"/>
