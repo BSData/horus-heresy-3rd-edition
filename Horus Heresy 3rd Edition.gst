@@ -612,6 +612,16 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0408-8c76-39b5-8309"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Prime Retinue" hidden="false" id="48e7-5f91-e5e9-dace" targetId="c66b-ef39-b20f-725b">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1551-c5e2-06dc-036c"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Heavy Transport" hidden="false" id="4ee7-8bbc-0f36-c8de" targetId="abff-3686-c39a-9a24">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c609-8191-c142-bb33"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <constraints>
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="63d0-2300-c551-7797" includeChildSelections="false"/>
