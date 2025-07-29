@@ -3715,20 +3715,8 @@
             </categoryLink>
             <categoryLink name="Armour" hidden="false" id="2c39-7871-5384-b101" targetId="643a-1012-bd51-6537">
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8e95-747d-01c5-d9a0"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8e95-747d-01c5-d9a0"/>
               </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="8e95-747d-01c5-d9a0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e6e4-964a-5852-9c07" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="8e95-747d-01c5-d9a0">
-                  <conditions>
-                    <condition type="equalTo" value="2" field="selections" scope="force" childId="e6e4-964a-5852-9c07" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </categoryLink>
             <categoryLink name="Prime Armour" hidden="false" id="e9c8-da1a-160f-75a0" targetId="4460-7bc1-4d80-aecb">
               <constraints>
@@ -4100,15 +4088,6 @@
           </categoryLinks>
         </forceEntry>
       </forceEntries>
-      <forceEntryLinks>
-        <forceEntryLink name="Auxiliary - Armoured Fist" id="76af-d532-e112-ff57" hidden="false" targetId="cc51-fdce-8a34-dbcf" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Tactical Support" id="54c6-81f4-7126-dd91" hidden="false" targetId="2965-5682-3cbc-8b47" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Armoured Support" id="fdbd-49bd-6f7c-d052" hidden="false" targetId="4a2f-ac9e-195e-77cf" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Heavy Support" id="42ce-6cce-94d2-2cde" hidden="false" targetId="bd1f-82a0-abd4-cd56" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Combat Pioneer" id="24dd-2954-d377-e2b9" hidden="false" targetId="edf5-6891-81d8-6309" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Shock Assault" id="90c4-0f1d-4e55-79ee" hidden="false" targetId="c9a5-3069-920b-32f1" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - First Strike" id="4c21-1d24-6a77-3187" hidden="false" targetId="c444-8242-d3fc-b5b0" type="forceEntry"/>
-      </forceEntryLinks>
       <modifiers>
         <modifier type="decrement" value="1" field="4823-b27b-f750-5a63">
           <conditions>
