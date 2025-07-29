@@ -390,6 +390,19 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
           <categoryLinks>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="4c04-61f5-cd29-fca6" primary="false" name="Sergeant Model Sub-Type"/>
           </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="May replace it&apos;s chainsword with:" id="f240-8d6d-eac6-f708" hidden="false" defaultSelectionEntryId="7e42-c96c-86e3-8b8b">
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="fdd9-2e37-2f94-8d1b" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1"/>
+                <entryLink import="true" name="Chainglave" hidden="false" id="becf-34fc-0b4a-a0a5" type="selectionEntry" targetId="fabe-1fd4-0f6f-fb52" sortIndex="2"/>
+                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="374b-ce5c-299d-f8fc" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="3"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ea9-b042-5ce9-4f82"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85ae-5388-d501-82c3"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Night Raptor" hidden="false" id="2cf7-d782-bfc5-d3cf" sortIndex="2">
           <profiles>
@@ -422,6 +435,19 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Any Model in this Unit may replace it&apos;s chainsword with:" id="1cee-1725-3357-5f9b" hidden="false" defaultSelectionEntryId="7e42-c96c-86e3-8b8b">
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="7e42-c96c-86e3-8b8b" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1"/>
+                <entryLink import="true" name="Chainglave" hidden="false" id="5ce9-746c-c445-5232" type="selectionEntry" targetId="fabe-1fd4-0f6f-fb52" sortIndex="2"/>
+                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="3d28-6bc0-05dc-e307" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="3"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ede7-4f0e-eb35-d023"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc05-5b32-e0da-da10"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -457,31 +483,6 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
         <infoLink name="[Allegiance]" id="13b1-1418-bf95-f4ba" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="9271-a1f4-6c84-ad96" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Any Model in this Unit may replace it&apos;s chainsword with:" id="1cee-1725-3357-5f9b" hidden="false" defaultSelectionEntryId="7e42-c96c-86e3-8b8b">
-          <entryLinks>
-            <entryLink import="true" name="Chainsword" hidden="false" id="7e42-c96c-86e3-8b8b" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1"/>
-            <entryLink import="true" name="Chainglave" hidden="false" id="5ce9-746c-c445-5232" type="selectionEntry" targetId="fabe-1fd4-0f6f-fb52" sortIndex="2"/>
-            <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="3d28-6bc0-05dc-e307" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="3"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ede7-4f0e-eb35-d023"/>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bc05-5b32-e0da-da10"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="1" field="ede7-4f0e-eb35-d023">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="2090-3883-5cff-e344" childId="model" shared="true" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" value="1" field="bc05-5b32-e0da-da10">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="2090-3883-5cff-e344" childId="model" shared="true" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="cf96-8891-3f9a-8921" id="82e8-2052-961a-92cb" primary="true" name="Fast Attack"/>
         <categoryLink targetId="594d-fa82-13cb-a345" id="0aad-668a-4e7c-bbd0" primary="false" name="Infantry Model Type"/>
@@ -493,7 +494,25 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="98eb-ce8f-31db-69ca" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="98eb-ce8f-31db-69ca" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="6"/>
+        <entryLink import="true" name="Bolt pistol" hidden="false" id="eaa3-dc90-90d6-677d" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c825-9787-9f54-6d8b"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74ca-4f09-8fa0-e1fd"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Frag grenades" hidden="false" id="c233-47bd-46b3-5754" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e127-0cc5-670d-5a75"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7403-1b4c-794a-d543"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak grenades" hidden="false" id="8c10-923b-361d-f30b" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1100-f8fc-b74e-d495"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b97-4651-e6a8-f0d3"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chainglave" hidden="false" id="fabe-1fd4-0f6f-fb52">
@@ -552,9 +571,10 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee41-6deb-bd56-87dd"/>
           </constraints>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="18"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
           <selectionEntryGroups>
             <selectionEntryGroup name="Exchange chainsword for:" id="7dfc-9eac-d171-f2ed" hidden="false" defaultSelectionEntryId="db65-7241-cf9c-6c47">
@@ -650,52 +670,64 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
             </profile>
           </profiles>
           <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="aa63-d47e-14be-dc3b"/>
-            <constraint type="max" value="14" field="selections" scope="parent" shared="true" id="aee7-7bd0-b760-1a7c"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="aee7-7bd0-b760-1a7c"/>
+            <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="dc8b-e90c-c9ee-32c4"/>
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup name="Any model may replace it&apos;s chainsword with:" id="c4c3-7672-a986-4a93" hidden="false" defaultSelectionEntryId="2603-56d0-6187-0b52">
               <entryLinks>
-                <entryLink import="true" name="Chainsword" hidden="false" id="2603-56d0-6187-0b52" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1"/>
-                <entryLink import="true" name="Bolter" hidden="false" id="3c3e-f10e-bed4-b898" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="2"/>
+                <entryLink import="true" name="Chainsword" hidden="false" id="2603-56d0-6187-0b52" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39e3-29de-ae11-ea60"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Bolter" hidden="false" id="3c3e-f10e-bed4-b898" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4263-1501-3afb-8ccd"/>
+                  </constraints>
+                </entryLink>
                 <entryLink import="true" name="Volkite charger" hidden="false" id="f82a-1384-c91b-e816" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="5">
                   <modifiers>
                     <modifier type="set" value="2" field="9893-c379-920b-8982"/>
                   </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed38-4f04-6ad1-9509"/>
+                  </constraints>
                 </entryLink>
                 <entryLink import="true" name="Rotor cannon" hidden="false" id="320a-d657-cbbe-0cb9" type="selectionEntry" targetId="05bf-af5e-be67-36a2" sortIndex="6">
                   <modifiers>
                     <modifier type="set" value="5" field="9893-c379-920b-8982"/>
                   </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17ca-30a1-4f7c-ea5e"/>
+                  </constraints>
                 </entryLink>
                 <entryLink import="true" name="Flamer" hidden="false" id="1ce0-fab8-3f54-9724" type="selectionEntry" targetId="9a45-35cd-3806-2303" sortIndex="5">
                   <modifiers>
                     <modifier type="set" value="5" field="9893-c379-920b-8982"/>
                   </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d9d-60df-9288-ffef"/>
+                  </constraints>
                 </entryLink>
-                <entryLink import="true" name="Chainaxe" hidden="false" id="8cf4-09c5-fdac-126b" type="selectionEntry" targetId="31a4-f8de-de6d-1fd9" sortIndex="7"/>
+                <entryLink import="true" name="Chainaxe" hidden="false" id="8cf4-09c5-fdac-126b" type="selectionEntry" targetId="31a4-f8de-de6d-1fd9" sortIndex="7">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0d8-4d1a-ed9c-814f"/>
+                  </constraints>
+                </entryLink>
                 <entryLink import="true" name="Chainglave" hidden="false" id="4131-2a79-2dc2-68d3" type="selectionEntry" targetId="fabe-1fd4-0f6f-fb52" sortIndex="8">
                   <modifiers>
                     <modifier type="set" value="5" field="9893-c379-920b-8982"/>
                   </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8183-50c9-2161-d6a1"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="-1" field="selections" scope="parent" shared="true" id="f81d-6003-24bd-0286"/>
-                <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="d0c9-7417-6379-c867"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f761-8707-1ee9-835d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e1d-12ea-47e8-a0aa"/>
               </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="d0c9-7417-6379-c867">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="d1bc-17f7-b3d7-ca84" childId="any" shared="true" roundUp="false"/>
-                  </repeats>
-                </modifier>
-                <modifier type="increment" value="1" field="f81d-6003-24bd-0286">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="d1bc-17f7-b3d7-ca84" childId="any" shared="true" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Bolter w/ bayonet" hidden="false" id="0dbd-c0be-5698-6fdf" sortIndex="3">
                   <entryLinks>
@@ -712,6 +744,9 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb93-f831-f7c4-db5f"/>
+                  </constraints>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Bolter w/ chain bayonet" hidden="false" id="f76c-94b6-76fb-0843" sortIndex="4">
                   <entryLinks>
@@ -728,10 +763,34 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ceeb-6dfd-e6e8-55c9"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Option" id="4dfa-6376-a9ca-04e4" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Vexilla" hidden="false" id="2c21-599f-ef2c-9f55" type="selectionEntry" targetId="dfcd-0669-ad43-28aa">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fe98-70d6-0b64-f6b1"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a63f-247c-2f01-23fd"/>
+                    <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="e55c-9a13-d62b-d1c5" includeChildSelections="true"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb9d-2bd5-97f3-89da"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="18"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -769,13 +828,25 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Vexilla" hidden="false" id="2c21-599f-ef2c-9f55" type="selectionEntry" targetId="dfcd-0669-ad43-28aa">
+        <entryLink import="true" name="Prime Unit" hidden="false" id="cd32-9cd7-7a10-cbd7" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="4"/>
+        <entryLink import="true" name="Bolt pistol" hidden="false" id="ef89-9725-5f50-63b7" type="selectionEntry" targetId="2942-f783-d627-33c5">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fe98-70d6-0b64-f6b1"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a63f-247c-2f01-23fd"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1642-0dbc-6778-db80"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fefc-1215-4cb0-a921"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="cd32-9cd7-7a10-cbd7" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2"/>
+        <entryLink import="true" name="Frag grenades" hidden="false" id="2c3f-f75d-cee5-5542" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1cfa-87b8-5944-4800"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15cc-1e66-7726-7bee"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak grenades" hidden="false" id="f92d-9221-c22c-2509" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="57d0-fc7d-35f7-d5c6"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6546-e47d-e4ba-3d61"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sevatar" hidden="false" id="b970-48ad-c8ff-86ca">
