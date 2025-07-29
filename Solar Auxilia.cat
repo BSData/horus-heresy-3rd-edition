@@ -3639,7 +3639,7 @@
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="d5c4-6294-3dea-efd4" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
-        <infoLink name="Light Transport" id="a398-14e9-2af6-17b5" hidden="false" type="rule" targetId="d451-f7f3-fc8f-db23"/>
+        <infoLink name="Legio Armsmen" id="a398-14e9-2af6-17b5" hidden="false" type="rule" targetId="d451-f7f3-fc8f-db23"/>
       </infoLinks>
       <profiles>
         <profile name="Solar Auxilia" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="64fc-f037-b3e8-5d98">
@@ -3683,7 +3683,7 @@
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
-        <infoLink name="Light Transport" id="17d1-c390-1206-336e" hidden="false" type="rule" targetId="d451-f7f3-fc8f-db23"/>
+        <infoLink name="Legio Armsmen" id="17d1-c390-1206-336e" hidden="false" type="rule" targetId="d451-f7f3-fc8f-db23"/>
         <infoLink name="[Allegiance]" id="1ac1-50ce-f2d8-5b47" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
       </infoLinks>
       <entryLinks>
@@ -5542,22 +5542,22 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
     </selectionEntryGroup>
     <selectionEntryGroup name="Auxilia Hull Weapons" id="9a19-6f6d-abea-d053" hidden="false" defaultSelectionEntryId="1888-42bd-6055-9169">
       <entryLinks>
-        <entryLink import="true" name="Heavy bolter" hidden="false" id="1888-42bd-6055-9169" type="selectionEntry" targetId="bc40-b14a-978e-0232">
+        <entryLink import="true" name="Heavy bolter" hidden="false" id="1888-42bd-6055-9169" type="selectionEntry" targetId="bc40-b14a-978e-0232" sortIndex="1" defaultAmount="1">
           <modifiers>
             <modifier type="set" value="Hull Mounted (Front) heavy bolter" field="name"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Heavy flamer" hidden="false" id="168c-a947-c426-7e58" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86">
+        <entryLink import="true" name="Heavy flamer" hidden="false" id="168c-a947-c426-7e58" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="2">
           <modifiers>
             <modifier type="set" value="Hull Mounted (Front) heavy flamer" field="name"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Multi-laser" hidden="false" id="9819-d41e-92f6-fa6c" type="selectionEntry" targetId="247d-a71c-d493-790b">
+        <entryLink import="true" name="Multi-laser" hidden="false" id="9819-d41e-92f6-fa6c" type="selectionEntry" targetId="247d-a71c-d493-790b" sortIndex="3">
           <modifiers>
             <modifier type="set" value="Hull Mounted (Front) multi-laser" field="name"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Autocannon" hidden="false" id="d319-49f2-20de-c824" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93">
+        <entryLink import="true" name="Autocannon" hidden="false" id="d319-49f2-20de-c824" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93" sortIndex="4">
           <modifiers>
             <modifier type="set" value="Hull Mounted (Front) autocannon" field="name"/>
           </modifiers>
@@ -5565,7 +5565,7 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Lascannon" hidden="false" id="37bd-0733-4b20-eb83" type="selectionEntry" targetId="b6d5-4be2-c37e-2197">
+        <entryLink import="true" name="Lascannon" hidden="false" id="37bd-0733-4b20-eb83" type="selectionEntry" targetId="b6d5-4be2-c37e-2197" sortIndex="5">
           <modifiers>
             <modifier type="set" value="Hull Mounted (Front) lascannon" field="name"/>
           </modifiers>
@@ -5689,156 +5689,4 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
     <entryLink import="true" name="Stormhammer Super-Heavy Assault Tank" hidden="false" id="16e9-26b5-8011-0c88" type="selectionEntry" targetId="6c9f-9379-6ce7-5a2d"/>
     <entryLink import="true" name="Artillery Command Section" hidden="false" id="bc95-1e0a-9db8-7517" type="selectionEntry" targetId="4986-b408-cbfe-2d2f"/>
   </entryLinks>
-  <forceEntries>
-    <forceEntry name="Auxiliary Detachment - Veletaris Tercio" id="e1a1-2699-4681-47ab" hidden="true">
-      <categoryLinks>
-        <categoryLink name="Prime Elites" hidden="false" id="a875-dae8-de74-dfe4" targetId="276f-7a07-a56c-affd">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cdc-fc44-fe03-f97d"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Elites" hidden="false" id="998e-7ea3-b716-9ae4" targetId="5d5e-958f-e388-50b5">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3705-3489-5318-793a"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Support" hidden="false" id="0fda-8123-feae-9342" targetId="345f-9ba6-9b02-ed5c">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab1e-36b5-697e-34e3"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Heavy Transport" hidden="false" id="ec9b-9d16-995a-d239" targetId="52d0-8b78-439e-18e5">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2526-9a96-beb3-4ab2"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7851-69ac-f701-034e" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7851-69ac-f701-034e" shared="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f9dd-33e0-0f03-6a62" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-              <comment>Solar Auxilia</comment>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </forceEntry>
-    <forceEntry name="Auxiliary Detachment - Infantry Tercio" id="243b-4ffd-9808-11d8" hidden="true">
-      <categoryLinks>
-        <categoryLink name="Prime Troops" hidden="false" id="6f1e-54be-753a-3ddf" targetId="c3f9-a7f3-984b-3fda">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9f6-ed6e-3b97-2c59"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Troops" hidden="false" id="a5ca-8d0c-d999-6477" targetId="88e6-d373-4152-0dd8">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b47-a597-d110-0bf2"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Recon" hidden="false" id="3a1c-fa26-069f-c3d8" targetId="2b65-a3f2-620a-dc58">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="534a-9ba4-2f19-8264"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Heavy Transport" hidden="false" id="4991-dbdd-de66-efec" targetId="52d0-8b78-439e-18e5">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f14e-211d-bc5a-8067"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7851-69ac-f701-034e" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7851-69ac-f701-034e" shared="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d536-ea44-8569-15fb" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-              <comment>Solar Auxilia</comment>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </forceEntry>
-    <forceEntry name="Auxiliary Detachment - Artillery Tercio" id="371d-e9ef-7bf9-47de" hidden="true">
-      <categoryLinks>
-        <categoryLink name="Support" hidden="false" id="0dd8-e083-c8d5-f6cc" targetId="345f-9ba6-9b02-ed5c">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3a15-2aaa-7be7-b63e"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7851-69ac-f701-034e" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7851-69ac-f701-034e" shared="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="bc95-1e0a-9db8-7517" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-              <comment>Solar Auxilia</comment>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </forceEntry>
-    <forceEntry name="Auxiliary Detachment - Scout Tercio" id="551a-23a1-7758-2688" hidden="true">
-      <categoryLinks>
-        <categoryLink name="Recon" hidden="false" id="c03a-18b4-2893-0f8b" targetId="2b65-a3f2-620a-dc58">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a2d1-1899-30ed-b88f"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="War-engine" hidden="false" id="3e94-ab56-d9c7-7cfe" targetId="2499-7239-685f-8465">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="744f-12da-093f-e8db"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7851-69ac-f701-034e" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7851-69ac-f701-034e" shared="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="95e2-9c56-ae1c-923b" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-              <comment>Solar Auxilia</comment>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </forceEntry>
-    <forceEntry name="Auxiliary Detachment - Armour Tercio" id="6aff-b91d-02bb-7461" hidden="true">
-      <categoryLinks>
-        <categoryLink name="Armour" hidden="false" id="f360-c3d4-9443-eb28" targetId="643a-1012-bd51-6537">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e63e-7101-ee0c-825b"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7851-69ac-f701-034e" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7851-69ac-f701-034e" shared="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="10aa-c775-8ed3-387b" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-              <comment>Solar Auxilia</comment>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </forceEntry>
-  </forceEntries>
 </catalogue>
