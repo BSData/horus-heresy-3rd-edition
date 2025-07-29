@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="1" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="2" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Anacharis Scoria" hidden="false" id="10f5-dae8-f081-d82f" sortIndex="29">
       <infoLinks>
@@ -5885,44 +5885,7 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         <entryLink import="true" name="Prime Specimens" hidden="false" id="3d61-54d8-f3e6-c097" type="selectionEntry" targetId="a533-4a75-9434-4595" sortIndex="7"/>
         <entryLink import="true" name="Prime Conveyor" hidden="false" id="8855-4255-3c14-bc68" type="selectionEntry" targetId="5e61-75cf-5a52-a94d" sortIndex="8"/>
         <entryLink import="true" name="Thallaxi Principe" hidden="false" id="6c45-965d-4aef-3d33" type="selectionEntry" targetId="a3af-b73f-4a1b-efd1" sortIndex="9"/>
-        <entryLink import="true" name="Combat Veterans" hidden="false" id="521d-139d-0ad1-0943" type="selectionEntry" targetId="8cf8-9be5-91d6-c96d" sortIndex="2">
-          <modifiers>
-            <modifier type="set" value="1" field="3b6f-8c9d-27b5-9f5d">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0594-4b9b-675b-f633" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bc86-4606-7fce-1866" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Master Sergeant" hidden="false" id="3f78-e5d6-b285-dcb1" type="selectionEntry" targetId="2c90-1d52-7075-59d3" sortIndex="1">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0594-4b9b-675b-f633" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bc86-4606-7fce-1866" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Paragon of Battle" hidden="false" id="8b45-ddb4-143a-0ab0" type="selectionEntry" targetId="20cb-4eec-0844-8a97" sortIndex="3">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="9871-cb62-5283-2216" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Logistical Benefit" hidden="false" id="3cbc-73cd-2206-f8a9" type="selectionEntryGroup" targetId="52ae-1a80-a764-d4fd" sortIndex="5"/>
+        <entryLink import="true" name="Common Prime Benefits" hidden="false" id="4b45-404f-dec7-194d" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true" sortIndex="1"/>
       </entryLinks>
       <constraints>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b90f-06f9-942e-4930"/>
