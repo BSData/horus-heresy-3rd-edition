@@ -158,6 +158,10 @@ Furthermore, if a Model with this Special Rule is part of an Army, then once per
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dff5-0b48-9001-c96a" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0a1-1f71-54ff-462f" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Misericordia" hidden="false" id="e15c-465c-8a7a-7e34">
       <profiles>
@@ -444,7 +448,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Twin Lastrum bolt cannon" hidden="false" id="41e7-8ad3-5676-e8fc">
       <profiles>
-        <profile name="Lastrum bolt cannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="9471-2301-e460-8357">
+        <profile name="Twin Lastrum bolt cannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="9471-2301-e460-8357">
           <characteristics>
             <characteristic name="R" typeId="cdb0-8654-6840-1037">36</characteristic>
             <characteristic name="FP" typeId="5037-1f27-1790-e355">6</characteristic>
@@ -2310,6 +2314,75 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Coronus Grav-Carrier" hidden="false" id="40df-cbd0-f144-ccdb">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Coronus Grav-Carrier" hidden="false" id="ef87-bcb1-e115-a16b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea61-01ed-226a-84be-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea61-01ed-226a-84be-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Coronus Grav-Carrier" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="9747-ac9b-fc02-9021">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Antigrav, Transport)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">12</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">5</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">13</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">13</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">11</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">8</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">12</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">Rear Facing</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="5252-8134-02ca-58ab" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="c504-9dfa-35d3-c98f" id="4fb9-56cc-7f64-9143" primary="false" name="Antigrav Model Sub-Type"/>
+            <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="7f18-1443-6336-042b" primary="false" name="Transport Model Sub-Type"/>
+            <categoryLink targetId="4381-ed35-c3fa-a225" id="1c83-f424-3ab4-592c" primary="false" name="Loyalist"/>
+            <categoryLink targetId="b212-4a7f-ac9f-ba01" id="2e0e-b18b-1d82-c6f6" primary="false" name="Legio Custodes"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Twin Lastrum bolt cannon" hidden="false" id="872b-3c4b-0556-2c11" type="selectionEntry" targetId="41e7-8ad3-5676-e8fc" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3eb4-fefe-980b-7089-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3eb4-fefe-980b-7089-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Twin Arachnus blaze cannon" hidden="false" id="d677-1a43-2b35-b7f2" type="selectionEntry" targetId="0a09-48e6-5e80-519d" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b1cb-b039-fddc-a47e-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1cb-b039-fddc-a47e-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Deep Strike" id="715a-9e3e-f746-3c2b" hidden="false" type="rule" targetId="0553-d06b-52b9-34db"/>
+            <infoLink name="Assault Vehicle" id="06c3-2ddf-7dac-771d" hidden="false" type="rule" targetId="150c-16e6-1212-9f75"/>
+            <infoLink name="Auto-Repair (X)" id="1921-6ae1-3217-3197" hidden="false" type="rule" targetId="3973-ed50-1482-ff4a">
+              <modifiers>
+                <modifier type="set" value="Auto-Repair (3+)" field="name"/>
+              </modifiers>
+              <comment>3+</comment>
+            </infoLink>
+            <infoLink name="Explodes (X)" id="1ddf-524e-88db-2a41" hidden="false" type="rule" targetId="da5b-b871-20da-3e70">
+              <modifiers>
+                <modifier type="set" value="Explodes (6+)" field="name"/>
+              </modifiers>
+              <comment>6+</comment>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="180"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="a7ae-76e9-e4bf-5759" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
@@ -2358,9 +2431,9 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
         <categoryLink targetId="88e6-d373-4152-0dd8" id="17f9-c009-0ca2-11f1" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Sentinel Guard Sodality" hidden="false" id="2a34-6b03-52f0-4452" type="selectionEntry" targetId="29e3-59e0-53e7-a5db">
+    <entryLink import="true" name="Coronus Grav-Carrier" hidden="false" id="2a34-6b03-52f0-4452" type="selectionEntry" targetId="40df-cbd0-f144-ccdb">
       <categoryLinks>
-        <categoryLink targetId="88e6-d373-4152-0dd8" id="1cba-31c5-b4ac-fd0a" primary="true" name="Troops"/>
+        <categoryLink targetId="52d0-8b78-439e-18e5" id="9af0-a692-1d1d-780b" primary="true" name="Heavy Transport"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Shield Captain" hidden="false" id="0a02-950d-607b-a0d8" type="selectionEntry" targetId="ead9-2ff9-9301-8c60">
@@ -2376,6 +2449,11 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
     <entryLink import="true" name="Telemon Heavy Dreadnought" hidden="false" id="e720-ffae-db69-0009" type="selectionEntry" targetId="6132-aa94-be29-dedb">
       <categoryLinks>
         <categoryLink targetId="2499-7239-685f-8465" id="ee36-e334-2c90-12a6" primary="true" name="War-engine"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Sentinel Guard Sodality" hidden="false" id="f8a6-6f52-19ae-8a01" type="selectionEntry" targetId="29e3-59e0-53e7-a5db">
+      <categoryLinks>
+        <categoryLink targetId="88e6-d373-4152-0dd8" id="9329-499e-ab76-5234" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
