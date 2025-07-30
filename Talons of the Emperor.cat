@@ -1593,7 +1593,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="c49a-53d8-db87-f605" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its infernus firepike exchange for:" id="3032-cc0f-e88e-a5fd" hidden="false" defaultSelectionEntryId="538c-67f5-2109-e6ee" sortIndex="2">
+            <selectionEntryGroup name="This Model may have its infernus firepike exchange for:" id="3032-cc0f-e88e-a5fd" hidden="false" defaultSelectionEntryId="38f2-f082-bbaa-e1c1" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3dfa-b3b7-525a-fb35" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49ed-cfd2-e44e-706f" includeChildSelections="false"/>
@@ -1608,7 +1608,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
                 <entryLink import="true" name="Lastrum storm bolter" hidden="false" id="5d13-ce47-82b8-4546" type="selectionEntry" targetId="afa7-9c59-6614-dee6" sortIndex="2"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have its  Solarite power talon exchange for:" id="36ef-9bda-9e4e-c641" hidden="false" defaultSelectionEntryId="c698-8866-789c-ec46" sortIndex="1">
+            <selectionEntryGroup name="This Model may have its  Solarite power talon exchange for:" id="36ef-9bda-9e4e-c641" hidden="false" defaultSelectionEntryId="9bb2-824f-acdd-c9f9" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="68b3-162e-9d15-7cc6" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b99-844c-6fba-708c" includeChildSelections="false"/>
@@ -1624,14 +1624,19 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Misericordia" hidden="false" id="ae8b-921c-bbff-22a0" type="selectionEntry" targetId="e15c-465c-8a7a-7e34" sortIndex="3"/>
+            <entryLink import="true" name="Misericordia" hidden="false" id="ae8b-921c-bbff-22a0" type="selectionEntry" targetId="e15c-465c-8a7a-7e34" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ec4-be0e-e5e4-a066-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ec4-be0e-e5e4-a066-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <infoLinks>
             <infoLink name="Bulky (X)" id="5e0d-edaf-986b-32f4" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
               <modifiers>
-                <modifier type="set" value="Bulky (2)" field="name"/>
+                <modifier type="set" value="Bulky (3)" field="name"/>
               </modifiers>
-              <comment>2</comment>
+              <comment>3</comment>
             </infoLink>
             <infoLink name="Eternal Warrior (X)" id="3912-a7b3-b6c4-1830" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
               <modifiers>
@@ -1647,6 +1652,129 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
             </infoLink>
             <infoLink name="Implacable Advance" id="60af-88b6-8945-648f" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
           </infoLinks>
+          <profiles>
+            <profile name="Aquilon Terminator" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="f90d-62ca-95d1-7a3f">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Heavy)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">5</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">6</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">3</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">10</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">10</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">8</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">8</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Custodian Guard Sodality" hidden="false" id="3125-22d7-c723-2737">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Custodian Guard" hidden="false" id="6263-4531-5c57-39fd">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="55db-2069-35a1-1fdf" includeChildSelections="false"/>
+            <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="ca7a-da42-160d-45b6" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="85"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="4381-ed35-c3fa-a225" id="f2b7-c51c-803a-80ff" primary="false" name="Loyalist"/>
+            <categoryLink targetId="b212-4a7f-ac9f-ba01" id="d082-b4a8-ad27-42a0" primary="false" name="Legio Custodes"/>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="2205-c3a5-76e7-29a4" primary="false" name="Infantry Model Type"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="This Model may have its guardian spear exchanged for:" id="1701-3ddc-0359-efcd" hidden="false" defaultSelectionEntryId="9bb2-824f-acdd-c9f9" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="36cb-738f-8497-7241" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2911-fc8a-ce71-5b92" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Pyrithite spear" hidden="false" id="3ee5-3775-46c1-7757" type="selectionEntry" targetId="faf5-156a-102d-5074" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Guardian spear" hidden="false" id="249f-00c0-cfcb-22b6" type="selectionEntry" targetId="f11a-9969-7f94-2ea8" sortIndex="1"/>
+                <entryLink import="true" name="Adrasite spear" hidden="false" id="404a-c663-6085-1f79" type="selectionEntry" targetId="e494-975f-f50d-86b3" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Magisterium Vexilla" hidden="false" id="9a72-c204-d37d-68a7" type="selectionEntry" targetId="7796-115e-75a1-e686" sortIndex="4">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ad84-665d-3e1d-6cd4" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="3125-22d7-c723-2737" shared="true" id="beec-b0b4-9953-3853" includeChildSelections="true"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Misericordia" hidden="false" id="ac35-2762-500a-662c" type="selectionEntry" targetId="e15c-465c-8a7a-7e34" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eee4-ea66-f439-6c96-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eee4-ea66-f439-6c96-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Bulky (X)" id="e2be-acfb-92e6-91cf" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+              <modifiers>
+                <modifier type="set" value="Bulky (2)" field="name"/>
+              </modifiers>
+              <comment>2</comment>
+            </infoLink>
+            <infoLink name="Eternal Warrior (X)" id="70bd-18b6-8534-7066" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
+              <modifiers>
+                <modifier type="set" value="Eternal Warrior (1)" field="name"/>
+              </modifiers>
+              <comment>1</comment>
+            </infoLink>
+            <infoLink name="Vanguard (X)" id="131a-087c-3f19-f31a" hidden="false" type="rule" targetId="530f-b733-993c-ec84">
+              <modifiers>
+                <modifier type="set" value="Vanguard (2)" field="name"/>
+              </modifiers>
+              <comment>2</comment>
+            </infoLink>
+            <infoLink name="Lightning Blows" id="3710-a0bf-ff4c-2480" hidden="false" type="rule" targetId="9f68-a519-8e29-cb44"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Custodian Guard" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="67d0-1fb6-0f01-9ca9">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">8</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">5</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">5</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">2</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">10</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">10</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">8</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">8</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1678,9 +1806,19 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="55a6-e3fd-1d77-8cbf" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Tribune" hidden="false" id="5b24-1da2-cbc3-b016" type="selectionEntry" targetId="2aca-4d81-bede-c87f">
+    <entryLink import="true" name="Custodian Guard Sodality" hidden="false" id="5b24-1da2-cbc3-b016" type="selectionEntry" targetId="3125-22d7-c723-2737">
       <categoryLinks>
-        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="1464-090a-36bb-74c7" primary="true" name="High Command"/>
+        <categoryLink targetId="88e6-d373-4152-0dd8" id="6988-938a-eaa3-5d63" primary="true" name="Troops"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Tribune" hidden="false" id="1ddf-c3e7-5d7b-5f16" type="selectionEntry" targetId="2aca-4d81-bede-c87f">
+      <categoryLinks>
+        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="7d64-2ec6-a796-9c30" primary="true" name="High Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Aquilon Terminator Sodality" hidden="false" id="9edc-373c-2335-1536" type="selectionEntry" targetId="656a-8563-512a-01bd">
+      <categoryLinks>
+        <categoryLink targetId="3235-bd79-e9b1-60fa" id="e7cd-19e5-9296-013c" primary="true" name="Heavy Assault"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
