@@ -151,6 +151,13 @@ Furthermore, if a Model with this Special Rule is part of an Army, then once per
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="400"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Misericordia" hidden="false" id="e15c-465c-8a7a-7e34">
       <profiles>
@@ -1370,27 +1377,6 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
                   </costs>
                 </entryLink>
               </entryLinks>
-              <infoLinks>
-                <infoLink name="Bulky (X)" id="af0e-32f4-f4cd-1621" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
-                  <modifiers>
-                    <modifier type="set" value="Bulky (2)" field="name"/>
-                  </modifiers>
-                  <comment>2</comment>
-                </infoLink>
-                <infoLink name="Eternal Warrior (X)" id="1693-0fc3-93f1-9f94" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
-                  <modifiers>
-                    <modifier type="set" value="Eternal Warrior (2)" field="name"/>
-                  </modifiers>
-                  <comment>2</comment>
-                </infoLink>
-                <infoLink name="Vanguard (X)" id="132f-7851-d21a-897b" hidden="false" type="rule" targetId="530f-b733-993c-ec84">
-                  <modifiers>
-                    <modifier type="set" value="Vanguard (3)" field="name"/>
-                  </modifiers>
-                  <comment>3</comment>
-                </infoLink>
-                <infoLink name="Lightning Blows" id="efb4-74ee-037b-e969" hidden="false" type="rule" targetId="0703-4db2-06a5-b293"/>
-              </infoLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a1ab-7f84-cd64-add1" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6647-3814-0649-0c12" includeChildSelections="false"/>
@@ -1408,6 +1394,151 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
               </constraints>
             </entryLink>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Bulky (X)" id="8f27-dde8-aead-087d" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+              <modifiers>
+                <modifier type="set" value="Bulky (2)" field="name"/>
+              </modifiers>
+              <comment>2</comment>
+            </infoLink>
+            <infoLink name="Eternal Warrior (X)" id="bce3-034e-a438-f7e9" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
+              <modifiers>
+                <modifier type="set" value="Eternal Warrior (2)" field="name"/>
+              </modifiers>
+              <comment>2</comment>
+            </infoLink>
+            <infoLink name="Vanguard (X)" id="82e6-c35d-ab66-fd70" hidden="false" type="rule" targetId="530f-b733-993c-ec84">
+              <modifiers>
+                <modifier type="set" value="Vanguard (3)" field="name"/>
+              </modifiers>
+              <comment>3</comment>
+            </infoLink>
+            <infoLink name="Lightning Blows" id="457c-9d05-b81e-9165" hidden="false" type="rule" targetId="9f68-a519-8e29-cb44"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="250"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Shield Captain" hidden="false" id="ead9-2ff9-9301-8c60">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Shield Captain" hidden="false" id="38a6-4b0b-0b3a-c32e" publicationId="09c6-1c1d-03a7-9556" page="6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1bba-c165-0f7e-92f6" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="025c-ac98-dfc8-05b9" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Shield Captain" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="99ca-46e9-d753-65e9">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">8</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">6</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">5</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">5</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">5</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">4</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">10</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">10</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">9</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">9</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="6bc3-f3ca-f807-b09c" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="6dbf-654a-f06f-2d69" id="4173-bcc7-6ea6-41fd" primary="false" name="Command"/>
+            <categoryLink targetId="b212-4a7f-ac9f-ba01" id="37f1-f29a-d9a0-0295" primary="false" name="Legio Custodes"/>
+            <categoryLink targetId="4381-ed35-c3fa-a225" id="52b7-b98a-8766-bd93" primary="false" name="Loyalist"/>
+            <categoryLink targetId="6da5-a1b8-41c0-b6fc" id="e75b-b4e1-6342-3115" primary="false" name="Golden Exemplar"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="This Model may have its sentinel warblade exchanged for:" id="4693-7e69-046d-336b" hidden="false" defaultSelectionEntryId="c340-8bf5-7b61-fbea" sortIndex="1" collapsible="true">
+              <entryLinks>
+                <entryLink import="true" name="Pyrithite spear" hidden="false" id="20a0-9e29-cc0c-9ec5" type="selectionEntry" targetId="faf5-156a-102d-5074" sortIndex="4">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Sentinel warblade" hidden="false" id="7987-9ab4-3ace-4245" type="selectionEntry" targetId="e50e-bfd0-7701-9a40" sortIndex="1"/>
+                <entryLink import="true" name="Paragon blade" hidden="false" id="07b0-c82c-fe47-9705" type="selectionEntry" targetId="1881-a2b5-fc58-4270" sortIndex="5"/>
+                <entryLink import="true" name="Paragon spear" hidden="false" id="fc22-9731-0767-075d" type="selectionEntry" targetId="2198-40e9-0a3f-00fd" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Adrasite spear" hidden="false" id="8591-fe63-0c01-0763" type="selectionEntry" targetId="e494-975f-f50d-86b3" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="847c-79e3-3830-add7" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb25-4f41-b313-1edb" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Arae-shrike" hidden="false" id="e177-c1a9-4db7-ef28" type="selectionEntry" targetId="76f5-a747-71df-6d54" sortIndex="2">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="50"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0dcd-e9e7-e3fe-e385" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6fc-c244-1d0f-51c0" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Praesidium Shield" hidden="false" id="d5d8-a379-0584-008f" type="selectionEntry" targetId="7148-e1ac-796f-b6f8" sortIndex="2">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="998a-caa9-859c-c421" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0242-f3da-e1d7-ff1a" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Officer of the Line (X)" id="ae07-2055-eaaa-2189" hidden="false" type="rule" targetId="7779-47c8-99a8-b935">
+              <modifiers>
+                <modifier type="set" value="Officer of the Line (2)" field="name"/>
+              </modifiers>
+              <comment>2</comment>
+            </infoLink>
+            <infoLink name="Eternal Warrior (X)" id="cd65-f9f5-1553-490b" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
+              <modifiers>
+                <modifier type="set" value="Eternal Warrior (1)" field="name"/>
+              </modifiers>
+              <comment>1</comment>
+            </infoLink>
+            <infoLink name="Lightning Blows" id="4169-ae04-b750-2bf0" hidden="false" type="rule" targetId="9f68-a519-8e29-cb44"/>
+            <infoLink name="Vanguard (X)" id="83a0-2b98-e870-b369" hidden="false" type="rule" targetId="530f-b733-993c-ec84">
+              <modifiers>
+                <modifier type="set" value="Vanguard (3)" field="name"/>
+              </modifiers>
+              <comment>3</comment>
+            </infoLink>
+            <infoLink name="Bulky (X)" id="8217-c042-895f-8e52" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+              <modifiers>
+                <modifier type="set" value="Bulky (2)" field="name"/>
+              </modifiers>
+              <comment>2</comment>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
@@ -1439,12 +1570,6 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
     <rule name="Master of the Golden Legion" id="e26b-8a00-4b2f-112a" hidden="false">
       <description>If a Model with this Special Rule is part of an Army, then the Fear (1) Special Rule is granted to all Models with the Legio Custodes Trait and the Infantry, Cavalry, Walker or Paragon Type in the same Army until the end of the first Battle Turn.</description>
     </rule>
-    <rule name="Lightning Blows" id="0703-4db2-06a5-b293" hidden="false">
-      <description>On a successful Charge, a Model with the Lightning Blows Special Rule temporarily gains the Critical Hit (6+) Special Rule on its Melee Weapons. 
-
-
-If a Unit that includes any Models with the Lightning Blows Special Rule makes a successful Charge, then until the end of that Assault Phase, all Models with the Lightning Blows Special Rule in that Unit gain the Critical Hit (6+) Special Rule on any Melee Weapons they have.</description>
-    </rule>
   </sharedRules>
   <entryLinks>
     <entryLink import="true" name="Constantin Valdor" hidden="false" id="51d9-79c4-2fa4-c2d4" type="selectionEntry" targetId="9cbb-0abc-5c93-2afd">
@@ -1452,9 +1577,14 @@ If a Unit that includes any Models with the Lightning Blows Special Rule makes 
         <categoryLink targetId="22ee-7208-4089-b005" id="94c4-fd43-e2d0-2741" primary="true" name="Warlord"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Tribune" hidden="false" id="7757-19f4-e0e2-7a46" type="selectionEntry" targetId="2aca-4d81-bede-c87f">
+    <entryLink import="true" name="Shield Captain" hidden="false" id="7757-19f4-e0e2-7a46" type="selectionEntry" targetId="ead9-2ff9-9301-8c60">
       <categoryLinks>
-        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="5cb0-65a2-462b-39d4" primary="true" name="High Command"/>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="55a6-e3fd-1d77-8cbf" primary="true" name="Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Tribune" hidden="false" id="5b24-1da2-cbc3-b016" type="selectionEntry" targetId="2aca-4d81-bede-c87f">
+      <categoryLinks>
+        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="1464-090a-36bb-74c7" primary="true" name="High Command"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
