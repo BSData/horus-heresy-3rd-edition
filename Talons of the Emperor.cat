@@ -2160,6 +2160,156 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Telemon Heavy Dreadnought" hidden="false" id="6132-aa94-be29-dedb">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Telemon Heavy Dreadnought" hidden="false" id="4682-d412-c23a-8f48">
+          <profiles>
+            <profile name="Telemon Heavy Dreadnought" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="7413-d8d7-14f5-a509">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Walker</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">9</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">8</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">8</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">3</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">12</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">10</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">9</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">3</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="38d4-d720-8009-acd3" id="e83b-0113-077b-bcc8" primary="false" name="Walker Model Type"/>
+            <categoryLink targetId="4381-ed35-c3fa-a225" id="5139-996c-cc44-7f38" primary="false" name="Loyalist"/>
+            <categoryLink targetId="49fc-361e-9168-c460" id="f922-d540-ae60-56cf" primary="false" name="Smokescreen"/>
+            <categoryLink targetId="b212-4a7f-ac9f-ba01" id="8881-984b-b897-96c4" primary="false" name="Legio Custodes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Bulky (X)" id="d71e-6abf-d50e-2f9f" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+              <modifiers>
+                <modifier type="set" value="Bulky (8)" field="name"/>
+              </modifiers>
+              <comment>8</comment>
+            </infoLink>
+            <infoLink name="Eternal Warrior (X)" id="f716-b2b3-80e2-81f2" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
+              <modifiers>
+                <modifier type="set" value="Eternal Warrior (1)" field="name"/>
+              </modifiers>
+              <comment>1</comment>
+            </infoLink>
+            <infoLink name="Implacable Advance" id="7ccb-08f1-08f1-8153" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
+            <infoLink name="Explodes (X)" id="a4ec-5daf-f525-5804" hidden="false" type="rule" targetId="da5b-b871-20da-3e70">
+              <modifiers>
+                <modifier type="set" value="Explodes (5+)" field="name"/>
+              </modifiers>
+              <comment>5+</comment>
+            </infoLink>
+            <infoLink name="Vanguard (X)" id="eba3-2674-8bc7-da9a" hidden="false" type="rule" targetId="530f-b733-993c-ec84">
+              <modifiers>
+                <modifier type="set" value="Vanguard (2)" field="name"/>
+              </modifiers>
+              <comment>2</comment>
+            </infoLink>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Spiculus missile launcher" hidden="false" id="9407-d48e-903a-0f9e" type="selectionEntry" targetId="e0ca-34e6-eb83-1845" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b2af-61d7-5a18-6a75-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2af-61d7-5a18-6a75-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee65-2849-5f40-a186-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee65-2849-5f40-a186-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Or Paired Telemon caestus and two proteus plasma projector" hidden="false" id="2665-af85-1c5d-b981" sortIndex="3">
+              <entryLinks>
+                <entryLink import="true" name="Proteus plasma projector" hidden="false" id="8fa7-9804-c4a2-3421" type="selectionEntry" targetId="1dde-e1b2-6899-314f">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6d8c-cd6e-d760-ac82-min" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6d8c-cd6e-d760-ac82-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Paired Telemon caestus" hidden="false" id="295a-8af3-250f-3b24" type="selectionEntry" targetId="4685-46ef-fb97-9f66">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b48b-df0f-1357-4c23-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b48b-df0f-1357-4c23-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ba44-afd1-28fc-fa70" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a762-10d1-51b0-6ce8" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="a762-10d1-51b0-6ce8">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="e720-ffae-db69-0009" childId="0980-35ef-20c3-dcbc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="This Model must have two options from the following list:" id="0980-35ef-20c3-dcbc" hidden="false" defaultSelectionEntryId="none" sortIndex="2" collapsible="true">
+              <entryLinks>
+                <entryLink import="true" name="Arachnus storm cannon" hidden="false" id="2deb-9a2a-48be-4f3d" type="selectionEntry" targetId="45de-bc45-6cd8-fd54"/>
+                <entryLink import="true" name="Iliastus accelerator culverin" hidden="false" id="b0d5-22bc-d53d-d6e5" type="selectionEntry" targetId="6621-ec29-60aa-7e96"/>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Telemon caestus and one proteus plasma projector" hidden="false" id="62c3-404e-3011-1441">
+                  <entryLinks>
+                    <entryLink import="true" name="Proteus plasma projector" hidden="false" id="cc49-d9d8-fac8-956f" type="selectionEntry" targetId="1dde-e1b2-6899-314f">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b02-f5bf-27e4-8e27-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b02-f5bf-27e4-8e27-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Telemon caestus" hidden="false" id="a6f2-6815-dd0a-1f36" type="selectionEntry" targetId="f4de-682d-a00c-3b30">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba29-663f-9e28-31ad-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba29-663f-9e28-31ad-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="40a5-2ddc-0120-fb9e" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9602-b03c-07b3-6825" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="40a5-2ddc-0120-fb9e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="e720-ffae-db69-0009" childId="2665-af85-1c5d-b981" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="9602-b03c-07b3-6825">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="e720-ffae-db69-0009" childId="2665-af85-1c5d-b981" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="360"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="a7ae-76e9-e4bf-5759" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
@@ -2221,6 +2371,11 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
     <entryLink import="true" name="Contemptor-Achillus Dreadnought" hidden="false" id="7ebb-7407-af23-97b6" type="selectionEntry" targetId="350c-637d-71de-9760">
       <categoryLinks>
         <categoryLink targetId="2499-7239-685f-8465" id="a78e-c8f5-c098-0cb8" primary="true" name="War-engine"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Telemon Heavy Dreadnought" hidden="false" id="e720-ffae-db69-0009" type="selectionEntry" targetId="6132-aa94-be29-dedb">
+      <categoryLinks>
+        <categoryLink targetId="2499-7239-685f-8465" id="ee36-e334-2c90-12a6" primary="true" name="War-engine"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
