@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="106b-693b-99f2-00c3" name="Special Rules" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue library="true" id="106b-693b-99f2-00c3" name="Special Rules" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedRules>
     <rule name="Interdiction Cadres" id="a752-1dc3-403e-9336" hidden="false"/>
     <rule name="Concealed Positions" id="3595-4991-0833-7b8b" hidden="false"/>
@@ -39,10 +39,8 @@ When making a Shooting Attack with a Weapon that has the Ordnance (X) Special Ru
       <description>&quot;Attacks made with the Blast (X) Special Rule use a Blast Marker to determine how many Hits are caused.&quot;
 When making attacks with a Weapon that has the Blast (X) Special Rule, before any Hit Tests are made, a Blast Marker must first be placed to determine how many Hits may be inflicted by the attack. The Player making the attack must place the Blast Marker indicated in brackets as part of the Special Rule so that the hole in the middle is entirely over the base of any one model in the Target Unit. Once the blast Marker has been placed, the Player making the attack must make a Hit Test for the attack, and each Model from the Target Unit that is fully or partially under the Blast Marker will suffer 1 Hit if the Hit Test is successful.
 
-
 *Hits on Other Units*
 If any Models form Units other than the Target Unit are fully or partially covered by the Blast Marker, then a new Fire Group must be created for those Hits and set to one side. Continue resolving the Shooting Attack on the original Target Unit, and once that Shooting Attack has been completely resolved begin a new Shooting Attack to resolve those additional Fire Groups generated for Units other than the original Target Unit.
-
 
 If the Hit Test is unsuccessful then no Hits are inflicted and the Player making the attack must make a Scatter Roll for the Blast Marker (see the Rules for Scatter in the Warhammer: The Horus Heresy - Age of Darkness Rulebook). Once a Scatter Roll has been made for the Blast Marker and it has been moved, one Hit is inflicted on a Unit for each Model from that Unit that is wholly or partially covered by the Blast Marker.</description>
     </rule>
@@ -114,7 +112,6 @@ A Critical Hit automatically inflicts a wound without any dice being rolled, cou
     <rule name="Barrage (X)" id="85f5-3a91-69f4-c3b7" hidden="false" page="293" publicationId="b905-0414-1057-bb34">
       <description>&quot;A Weapon with this Special Rule may be used to attack Target Units out of Line of Sight.&quot;
 If a Unit for which a Shooting attack is made includes any Models with one or more Weapons with this Special Rule, then in Step 2 of the Shooting Attack process they may ignore the restriction on requiring Line of Sight to a Target Unit. If a Player uses this Special Rule to declare a Shooting Attack on a Unit that the attacking Unit cannot draw a Line of Sight to, then in Step 3 of the Shooting Attack process that Player may only declare attacks with Weapons that have this Special Rule.
-
 
 If a Weapon with this Special Rule and the Blast (X) Special Rule is used to attack a Unit without a Line of Sight to that Unit, then no Hit Test is made and an Indirect Scatter Roll must be made for the Blast Marker placed as part of the attack. If such a Weapon makes more than a single attack then a separate Indirect Scatter Roll is made for each attack. When making an Indirect Scatter Roll for such an attack, the number of Dice rolled alongside the Scatter Dice is determined by the value of X for the Weapon with the Barrage (X) Special Rule, the value of these Dice is then totalled to find the distance the attack Scatters.</description>
     </rule>
@@ -238,24 +235,42 @@ When selected to be used as part of a Combat or Shooting Attack, a Willpower Che
       <description>&quot;Models with this Special Rule allow more Auxiliary Detachments to be included in an Army.&quot;
 If a Model with this Special Rule is selected to fill a Command Slot in any Detachment in the Crusade Force Organization Chart, then the Controlling Player may select a number of Auxiliary Detachments equal to the value of X in the specific variant of this Special Rule instead of just one.</description>
     </rule>
-    <rule name="Legio Armsmen" id="d451-f7f3-fc8f-db23" hidden="false" publicationId="5a4b-8b0e-caa6-c7ed" page="98">
-      <description>&quot;Models with this Special Rule gain benefits when fighting alongside a friendly Titan.&quot;
-A Unit composed entirely of Models with this Special Rule ignore all penalties applied by the Titan War Horn (X) Special Rule. Furthermore, while a friendly Titan is on the battlefield, all Models with this Special Rule add a modifier of a +1 to their Leadership Characteristic. However, whenever a friendly Titan is Removed as a Casualty or otherwise destroyed then all Units that include nay Models with this Special Rule must make an immediate Panic Check.</description>
+    <rule name="Light Transport" id="d451-f7f3-fc8f-db23" hidden="false" publicationId="7d63-5df4-c656-52de" page="332">
+      <description>&quot;Models with this Special Rule cannot carry Models with the Bulky (X) Special Rule.&quot;
+Models that have any variant of the of the Bulky (X) Special Rule may not Embark on a Model that has this Special Rule.</description>
     </rule>
     <rule name="Auto-Repair (X)" id="3973-ed50-1482-ff4a" hidden="false" publicationId="b905-0414-1057-bb34" page="293">
       <description>&quot;A Model with this Special Rule has a bonus to Repair Tests to remove Statuses.&quot;
 If the Active Player makes a Repair Test in the Statuses Sub-Phase of the End Phase for a Model with the Vehicle Type with this Special Rule, they ignore the usual Target Number of 6. Instead, the value of X attached to the variant of this Special Rule is used as the Target Number for that Repair Test. For example, a Model with the Auto-repair (4+) Special Rule would pass any Repair Tests made for it on the result of a 4 or higher.</description>
     </rule>
-    <rule name="Mobile Command Vehicle" id="799f-1773-d0ae-d423" hidden="false"/>
-    <rule name="Anathemata Discipline" id="f260-e43b-e300-79a6" hidden="false"/>
+    <rule name="Mobile Command Vehicle" id="799f-1773-d0ae-d423" hidden="false">
+      <description>&quot;A Model with this Special Rule can use some Characteristics of Embarked Models instead of its own.&quot;
+When a Model with this Special Rule is required to make a Characteristic Check, the Controlling Player can use the required Characteristic for that Check from the Profile of one Model Embarked within this Model instead.</description>
+    </rule>
+    <rule name="Anathemata Discipline" id="f260-e43b-e300-79a6" hidden="false" page="35" publicationId="e54c-7040-0f35-d85d">
+      <description>A Model with the Anathemata Discipline gains the following benefits:
+
+
+• The Fear (1) Special Rule.
+• The Void Darts Psychic Weapon.
+• If the Model has the Loyalist Trait, it can use the Seal the Veil Psychic Reaction.
+• If the Model has the Traitor Trait, it can use the Breach the Veil Psychic Power.
+• The ‘Anathemata’ Trait.</description>
+    </rule>
     <rule name="Fear (X)" id="0ebc-0c92-2209-6393" hidden="false" page="298" publicationId="b905-0414-1057-bb34">
       <description>&quot;Models near an enemy Model with the Fear (X) Special Rule must reduce their Advanced Characteristics.&quot;
 When any Model from a Unit is within 12&quot; of an enemy Model with the Fear (X) Special Rule, all Models in that Unit must reduce their Leadership, Willpower, Cool, and Intelligence Characteristics by the value of X. This negative modifier is removed as soon as no Models in a given Unit are within 12&quot; of any Model with the Fear (X) Special Rule. If a Unit would be affected by multiple instances of the Fear (X) Special Rule, the value of X is not stacked and instead the single highest value is used as a negative modifier.</description>
     </rule>
-    <rule name="Never Back Down" id="91a6-7f61-0c0b-a236" hidden="false"/>
+    <rule name="Never Back Down" id="91a6-7f61-0c0b-a236" hidden="false">
+      <description>&quot;A Model with this Special Rule must take part in a Challenge if able.&quot;
+During the Challenge Sub-Phase, if a Model with this Special Rule is eligible, it must be declared as the Challenger or to accept a Challenge. If more than one Model with this Special Rule is eligible to be the Challenger or to accept a Challenge, the Controlling Player may select which one will be declared as the Challenger or to accept a Challenge.</description>
+    </rule>
     <rule name="Master of Descent" id="b04c-3f1f-9fac-cd25" hidden="false"/>
     <rule name="Tip of the Spear" id="96e2-c6ab-8084-c1d2" hidden="false"/>
-    <rule name="Master of Auxilia" id="da1d-168c-c688-80cb" hidden="false"/>
+    <rule name="Master of Auxilia" id="da1d-168c-c688-80cb" hidden="false">
+      <description>&quot;Overseers can join some Allied Units without penalty to some Characteristics.&quot;
+If a Model with this Special Rule joins a Unit with the Solar Auxilia Trait, the Leadership and Cool Characteristics of Models in that Unit are not reduced as a results of this, but may be modified by other rules as normal.</description>
+    </rule>
     <rule name="Feel No Pain (X)" id="89b5-7320-db15-fd60" hidden="false" page="299" publicationId="b905-0414-1057-bb34">
       <description>&quot;Feel No Pain (X) is a Damage Mitigation Test that may be taken in addition to a Saving Throw.&quot;
 A Model with the Feel No Pain (X) Special Rule gains a Feel No Pain Damage Mitigation Test that may be used in Step 9 of the Shooting Attack process or Step 8 of the Initiative Step of the Fight Sub-Phase process to discard wounds allocated to the Model. A Damage Mitigation Test may be made after and in addition to a Saving Throw. The Target Number for a Feel No Pain Damage Mitigation Test is the value of X attached to the specific variant of the Special Rule.</description>
@@ -276,9 +291,9 @@ If the Check is failed there is no further effect, but if the Check is passed th
 
 Activating the Battlesmith (X) Special Rule does not limit the Acting Model or the Target Model when moving or attacking in the same Turn.&quot;</description>
     </rule>
-    <rule name="Macro-Auspex" id="3ad7-36d0-16cc-4995" hidden="false" page="99" publicationId="5a4b-8b0e-caa6-c7ed">
-      <description>&quot;When not attacking Titans, Knights or Super-heavies, a weapon with this Special Rule must make Snap Shots.&quot;
-If the target of a Shooting Attack is not a Unit entirely compassed of Models with the Titan, Knight, or Super-heavy Sub-Type or other Models with a Base Wounds Characteristic of 10 or more, then all attacks made for a Weapon with this Special Rule must be made as Snap Shots.</description>
+    <rule name="Master of Automata" id="3ad7-36d0-16cc-4995" hidden="false" page="37" publicationId="e54c-7040-0f35-d85d">
+      <description>This Special Rule allows a Praevian to be accompanied by a Unit of Battle-Automata.
+When a Model with this Special Rule is included in a Detachment, one additional Force Organization Slot is added to that Detachment. This Slot can only be filled with one Castellax Battle Maniple or Castellax Destructor Maniple Unit selected from Liber Mechanicum. When such a Unit is included in this way, its Cybernetica Trait is replaced with &apos;Bonded Automata&apos;, and this Unit can be included even thought it does not have the same Faction Trait as the other Units in that Detachment. In addition, a Model with this Special Rule may join a Friendly Unit that includes Models with the Automata Type. If a Model with this Special Rule joins a Unit with the Automata Type, the Leadership and Cool Characteristics of Models in that Unit are not reduced as a results of this, but may be modified by other rules as normal.</description>
     </rule>
     <rule name="Infiltrate (X)" id="f330-254e-1a98-798a" hidden="false" page="301" publicationId="b905-0414-1057-bb34">
       <description>&quot;Models with the Infiltrate (X) Special Rule can deploy outside of their Deployment Zone.&quot; 
@@ -295,7 +310,9 @@ If a Unit that Controls an Objective includes a majority of Models with the Line
 
 Furthermore, the value of X is added to the Tactical Strength of the Model that has that Special Rule to determine its ability to Control Objectives (see Core Missions in the Warhammer: The Horus Heresy – Age of Darkness Rulebook).</description>
     </rule>
-    <rule name="Fury of the Legion" id="b49c-d074-165e-ce1b" hidden="false"/>
+    <rule name="Fury of the Legion" id="b49c-d074-165e-ce1b" hidden="false" page="59" publicationId="e54c-7040-0f35-d85d">
+      <description>When a Model with this Special Rule makes a Shooting Attack with a bolter, the bolter gains the Heavy (FP) Special Rule until that Shooting Attack is fully resolved.</description>
+    </rule>
     <rule name="Armour-Breaker (X)" id="3009-9bbb-a8f6-1b47" hidden="false" publicationId="5a4b-8b0e-caa6-c7ed" page="93">
       <description>&quot;Attacks made with the Armour-breaker (x) Special Rule can sometimes inflict an extra point of Damage.&quot;
 When any Armour Penetration Test is made for an Attack or Model with Armour-breaker (X) Special Rule, and it results in a Penetrating Hit - roll a Dice. If the result of that Dice roll is equal to or greater than the value of X attached to this variant of the Armour-breaker (X) Special Rule, then the Damage Characteristic of that Penetrating Hit is increased by 1. Note that the armour-breaker (X) Special Rule may only be triggered by an Armour Penetration Test and has no effect when making a Wound Test.</description>
@@ -394,28 +411,15 @@ If Models with multiple variants of this Special Rule are part of the same Unit,
       <description>&quot;A Unit containing any Models with the Psyker Trait or Malefic Sub-Type which suffers a wound from a Weapon with this Special Rule also suffers Perils of the Warp.&quot;
 If a Shooting Attack made for a Weapon or Model with this Special Rule inflicts one or more wounds on a Target Unit which contains any Models with the Psyker Trait or Malefic Sub-Type, regardless of whether any Damage is inflicted, that Target Unit suffers the Warp Rupture result on the Perils of the Warp Table at the end of Step 9 of that Shooting Attack.</description>
     </rule>
-    <rule name="New Rule" id="4f26-7d6e-aa15-d1a4" hidden="false"/>
-    <rule name="Implacable Advance" id="093a-9f5f-7da8-8007" hidden="false" publicationId="b905-0414-1057-bb34" page="301">
-      <description>&quot;Models with this Special Rule can make Volley Attacks with other Weapons.&quot;
-The Controlling Player of a Model with this Special Rule treats all Ranged Weapons such a Model has that do not have any variant of the Heavy (X) Special Rule or Ordnance (X) Special Rule as having the Assault Trait.</description>
-    </rule>
-    <rule name="Infiltrate (X)" id="1771-7bde-7eb2-c2e8" hidden="false" page="301" publicationId="b905-0414-1057-bb34">
-      <description>&quot;Models with the Infiltrate (X) Special Rule can deploy outside of their Deployment Zone.&quot; 
-At the start of a Mission, when deploying Units, the Controlling Player of a Unit that is composed entirely of Models with the Infiltrate (X) Special Rule may choose to deploy that Unit outside of that Player’s Deployment Zone. That Unit may be deployed anywhere that is either in the Controlling Player’s Deployment Zone or outside of the Opposing Player’s Deployment Zone and is at least a number of inches equal to the highest value of X attached to any variant of the Infiltrate (X) Special Rule in that Unit away from any Enemy Model.
-
-
-
-Units deployed using the Infiltrate (X) Special Rule are deployed at the same time as other Units under a Player’s control, unless the specific Rules of a given Mission state otherwise. The Infiltrate (X) Special Rule only has an effect when deploying Units before the start of the First Turn of a Battle, and Units deploying on the Battlefield after the First Turn has begun gain no benefit from this Special Rule. A Unit that is deployed outside of the Controlling Player’s Deployment Zone by means of this Special Rule may not have a Charge declared for in the Firs Battle Turn.</description>
+    <rule name="Mastodon Transport Bay" id="4f26-7d6e-aa15-d1a4" hidden="false">
+      <description>&quot;A Mastodon Super-heavy Assault Transport can transport larger Models as well as Infantry.&quot;
+Models of any Type other than Vehicle may Embark on a Model with this Special Rule, however only 4 Models may be Embarked that do not have the Infantry or Paragon Type, and such a Model may not have any variant of the Bulky (X) Special Rule where the value of X is greater than 6.</description>
     </rule>
     <rule name="Legio Armsmen" id="2f9d-aa76-f8e2-48b0" hidden="false" publicationId="5a4b-8b0e-caa6-c7ed" page="98">
       <description>&quot;Models with this Special Rule gain benefits when fighting alongside a friendly Titan.&quot;
 A Unit composed entirely of Models with this Special Rule ignore all penalties applied by the Titan War Horn (X) Special Rule. Furthermore, while a friendly Titan is on the battlefield, all Models with this Special Rule add a modifier of a +1 to their Leadership Characteristic. However, whenever a friendly Titan is Removed as a Casualty or otherwise destroyed then all Units that include nay Models with this Special Rule must make an immediate Panic Check.</description>
     </rule>
     <rule name="Macro-Auspex" id="8120-65ac-c2d4-a555" hidden="false" page="99" publicationId="5a4b-8b0e-caa6-c7ed">
-      <description>&quot;When not attacking Titans, Knights or Super-heavies, a weapon with this Special Rule must make Snap Shots.&quot;
-If the target of a Shooting Attack is not a Unit entirely compassed of Models with the Titan, Knight, or Super-heavy Sub-Type or other Models with a Base Wounds Characteristic of 10 or more, then all attacks made for a Weapon with this Special Rule must be made as Snap Shots.</description>
-    </rule>
-    <rule name="Macro-Auspex" id="1552-64fb-3069-ccf4" hidden="false" page="99" publicationId="5a4b-8b0e-caa6-c7ed">
       <description>&quot;When not attacking Titans, Knights or Super-heavies, a weapon with this Special Rule must make Snap Shots.&quot;
 If the target of a Shooting Attack is not a Unit entirely compassed of Models with the Titan, Knight, or Super-heavy Sub-Type or other Models with a Base Wounds Characteristic of 10 or more, then all attacks made for a Weapon with this Special Rule must be made as Snap Shots.</description>
     </rule>
@@ -502,6 +506,55 @@ Additionally, a Model with this Special Rule is considered to have the Psyker Tr
     <rule name="Lightning Blows" id="9f68-a519-8e29-cb44" hidden="false" publicationId="09c6-1c1d-03a7-9556" page="58">
       <description>&quot;On a successful Charge, a Model with the Lightning Blows Special Rule temporarily gains the Critical Hit (6+) Special Rule on its Melee Weapons.&quot;
 If a Unit that includes any Models with the Lightning Blows Special Rule makes a successful Charge, then until the end of that Assault Phase, all Models with the Lightning Blows Special Rule in that Unit gain the Critical Hit (6+) Special Rule on any Melee Weapons they have.</description>
+    </rule>
+    <rule name="Rapier Crew" id="6745-08ce-be63-3a62" hidden="false">
+      <description>&quot;The Characteristics of different Models with this Special Rule are used in different situations.&quot;
+Each time Wound Tests are made for a Fire Group that targets a Unit that includes any Models with this Special Rule, if any Rapier Carrier Models are in this Unit, the Toughness Characteristic of the Rapier Carriers is treated as being the majority. If any wounds are generated by these Wound Tests, the Target Model selected must be a Rapier Carrier Model if possible.
+
+
+Each time Wound Tests are made for a Strike Group targeting this Unit, the Toughness Characteristic of the Legionary Models is treated as being the majority. If any wounds are generated by these Wound Tests, the Target Model selected must be a Legionary Model, if possible.
+
+
+If at any point there are only Rapier Carrier Models remaining in this Unit, those Models are immediately Removed as Casualties.</description>
+    </rule>
+    <rule name="Deathstorm" id="a89e-9755-0c6e-80db" hidden="false">
+      <description>&quot;This Model makes a Shooting Attack when it is Deployed on the Battlefield.&quot;
+When a Model with this Special Rule is deployed, any doors on the Model must be opened to their full extent. Then, this Model makes up to five Shooting Attacks as if it were the Shootng Phase. Each Shooting Attack must target a different Unit. After resolving these Shooting Attacks, this Model&apos;s Deathstorm missile launcher cannot be used to make Shooting Attacks again during this Battle.</description>
+    </rule>
+    <rule name="Gun Emplacement" id="c573-facf-1a23-cfdd" hidden="false">
+      <description>&quot;A Model with this Special Rule has special restrictions that apply when ranges are measured to and from it.&quot;
+The hull of a Model with this Special Rule is only considered to be the central turret. The outriggers that form the gun carriage are ignored for all purposes.</description>
+    </rule>
+    <rule name="Stormbird Transport Bay" id="76fd-c251-18b0-054f" hidden="false">
+      <description>&quot;A Sokar Stormbird can transport larger Models, including one Rhino, as well as infantry.&quot;
+Models of any Type may Embark on a Model with this Special Rule, however only 2 Models may be Embarked that do not have the Infantry or Paragon Type, and such a Model may not have any variant of the Bulky (X) Special Rule where the value of X is greater than 6. In addition, one Rhino Model may be Embarked and is treated as having the Bulky (12) Special Rule for the purposes of Transport Capacity.</description>
+    </rule>
+    <rule name="Thunderhawk Transport Bay" id="4f9e-65d3-552c-e1be" hidden="false">
+      <description>&quot;A Thunderhawk Gunship can transport larger Models as well as Infantry.&quot;
+Models of any Type other than Vehicle may Embark on a Model with this Special Rule, however only 2 Models may be Embarked that do not have the Infantry or Paragon Type, and such a Model may not have any variant of the Bulky (X) Special Rule where the value of X is greater than 6.</description>
+    </rule>
+    <rule name="Automated Fire Protocols" id="c8a8-bc60-1a6a-d418" hidden="false">
+      <description>&quot;A Model with this Special Rule may not make Shooting Attacks except as part of a Reaction.&quot;
+A Model with this Special Rule may not be selected to make a Shooting Attack during the Controlling Player&apos;s Shooting Phase and may only make the Overwatch Reaction and the Intercept and Automated Fire</description>
+    </rule>
+    <rule name="Independent Sentries" id="1b49-d769-702d-ff79" hidden="false">
+      <description>&quot;Tarantulas are deployed and operate individually.&quot;
+Although included in an army as a Unit that includes multiple Models, each Model with this Special Rule is considered to be a separate Unit for all other purposes, including Deployment and the scoring of Victory Points.</description>
+    </rule>
+    <rule name="Heavy Drop Transport" id="aabf-caf3-8c57-5bbe" hidden="false">
+      <description>&quot;Kharybdis can transport large Units to the Battlefield.&quot;
+Instead of one of the Units that would normally be eligible to Embark within a Model with this Special Rule, one Model with the Walker Type can instead be Embarked upon it. The Embarked Model cannot have the Bulky (X) Special Rule with a value of greater than Bulky (7).</description>
+    </rule>
+    <rule name="Drop Transport" id="ad3b-84cf-3450-cf19" hidden="false">
+      <description>&quot;Dreadclaws can transport a variety of Units to the Battlefield.&quot;
+Instead of one of the Units that would normally be eligible to Embark within a Model with this Special Rule, one Model with the Walker Type can instead be Embarked upon it. The Embarked Model cannot have the Bulky (X) Special Rule with a value of greater than Bulky (6).</description>
+    </rule>
+    <rule name="Dreadnought Transport" id="ef04-738f-379a-6491" hidden="false">
+      <description>&quot;Dreadnought Drop Pods transport dreadnoughts to the Battlefield.&quot;
+Only one Model may be Embarked on a Model with this Special Rule, and the Embarking Model must have the Walker Type. The Embarked Model cannot have the Bulky (X) Special Rule with a value of greater than Bulky (7).</description>
+    </rule>
+    <rule name="Wraiths" id="84fd-366e-517d-e228" hidden="false">
+      <description>After the Controlling Player makes a Rush Move with a Unit that includes only Models with this Special Rule, they may also choose to make a Willpower Check for that Unit. If the Willpower Check is successful, any Charges targeting the selected Unit in the Assault Phase of the following Player Turn are Disordered. If the Willpower Check is failed, the selected Unit instead gains the Stunned Tactical Status.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
