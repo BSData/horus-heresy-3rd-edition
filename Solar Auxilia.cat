@@ -2849,13 +2849,16 @@
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c02-8c77-f191-9cc4"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="492f-359a-0b8d-d34e"/>
                       </constraints>
+                      <modifiers>
+                        <modifier type="set" value="1" field="9893-c379-920b-8982"/>
+                      </modifiers>
                     </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="866a-557f-71e2-38b2"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Lasrifle w/ Charger" hidden="false" id="3a31-6343-7835-d1fe" sortIndex="3">
+                <selectionEntry type="upgrade" import="true" name="Lasrifle w/ Blast-charger" hidden="false" id="3a31-6343-7835-d1fe" sortIndex="3">
                   <entryLinks>
                     <entryLink import="true" name="Lasrifle" hidden="false" id="e605-19f2-a29a-9362" type="selectionEntry" targetId="40e8-fcb7-9e0e-1582">
                       <constraints>
@@ -2868,6 +2871,9 @@
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a78e-042e-b51e-7a58"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3775-508f-f045-b6b0"/>
                       </constraints>
+                      <modifiers>
+                        <modifier type="set" value="1" field="9893-c379-920b-8982"/>
+                      </modifiers>
                     </entryLink>
                   </entryLinks>
                   <constraints>
@@ -2887,12 +2893,18 @@
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a3aa-568c-3922-76cf"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2848-9ad0-3f45-e2f7"/>
                       </constraints>
+                      <modifiers>
+                        <modifier type="set" value="1" field="9893-c379-920b-8982"/>
+                      </modifiers>
                     </entryLink>
                     <entryLink import="true" name="Blast charger" hidden="false" id="c319-a954-b680-5e3b" type="selectionEntry" targetId="df2d-2052-ff9a-0d43">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d06-192b-ce8e-ed2d"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bc9-5c18-331a-12e2"/>
                       </constraints>
+                      <modifiers>
+                        <modifier type="set" value="1" field="9893-c379-920b-8982"/>
+                      </modifiers>
                     </entryLink>
                   </entryLinks>
                   <constraints>
@@ -3577,10 +3589,10 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Arvus Lighter" hidden="false" id="b42c-4380-99ba-1a9e">
       <categoryLinks>
-        <categoryLink targetId="cf96-8891-3f9a-8921" id="c8dc-644a-41a5-8c15" primary="true" name="Fast Attack"/>
         <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="900f-759b-d8f2-8114" primary="false" name="Vehicle Model Type"/>
         <categoryLink targetId="42a3-02e9-e0e4-8292" id="479e-f931-6924-b38f" primary="false" name="Flyer Model Sub-Type"/>
         <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="5a94-1731-4f29-26ec" primary="false" name="Transport Model Sub-Type"/>
+        <categoryLink targetId="d162-4711-5d60-0a48" id="e9cb-954d-aaec-6025" primary="true" name="Transport"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Arvus Lighter" hidden="false" id="2abb-a00b-e2a0-12c1" sortIndex="1">
@@ -4526,9 +4538,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9899-f732-2409-990b"/>
           </constraints>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="240"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="205"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5088,9 +5102,11 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ac4-df63-f6d1-1d01"/>
           </constraints>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="225"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="190"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5697,7 +5713,7 @@ Leadership Check.</characteristic>
                 <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reacting Unit to make a Shooting Attack targeting an enemy Unit that performs a Disengage or Fall Back aftermath option in the Assault Phase.</characteristic>
                 <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Butchers Due Advanced Reaction in the Resolution Sub-Phase of the Active Player&apos;s Assault Phase, when an enemy Unit moves as part of a Disengage or Fall Back aftermath option. The Reacting Unit must have at least one Model with Line of Sight to this enemy Unit once it has completed its movement, and must be a Unit under the Reactive Players control entirely composed of Models with the Solar Auxilia Trait which is not Locked in Combat.</characteristic>
                 <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare the Butcher&apos;s Due Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
-                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9"> The Target Unit is always the Unit whose movement triggered the Advanced Reaction.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose movement triggered the Advanced Reaction.</characteristic>
                 <characteristic name="Process" typeId="57cf-1c68-a020-2529">Once the Butcher&apos;s Due Advanced Reaction has been declared. the Reactive Player makes a Shooting Atack with the Reacting Unit, tarting only the Target Unit.</characteristic>
               </characteristics>
             </profile>
@@ -5730,7 +5746,7 @@ original Shooting Attack that triggered the Reaction.</characteristic>
                 <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Psy-shock Advanced Reaction in the Shooting Phase, at the end of Step 11 of the Shooting Attack sequence of any Shooting Attack made by the Active Player which triggers a Panic Check due to the number of Models Removed
 as Casualties.</characteristic>
                 <characteristic name="Cost" typeId="954a-972f-5c94-2ede">he Reactive Player must spend 1 point of their Reaction Allotment to declare a Psy-shock Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
-                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9"> For a Psy-shock Advanced Reaction, the Target Unit is always the Unit whose Shooting Attack triggered the Advanced Reaction. The Reacting Unit is always the Unit that was the target of the Shooting Attack. This Unit must be entirely composed of Models with the Infantry Type and the Solar Auxilia Trait without the Bulky (X) Special Rule.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For a Psy-shock Advanced Reaction, the Target Unit is always the Unit whose Shooting Attack triggered the Advanced Reaction. The Reacting Unit is always the Unit that was the target of the Shooting Attack. This Unit must be entirely composed of Models with the Infantry Type and the Solar Auxilia Trait without the Bulky (X) Special Rule.</characteristic>
                 <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once the cost has been paid, the Reacting Unit immediately suffers the Warp Rupture result on the Perils of the Warp Table.
 
 
@@ -5774,7 +5790,7 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back M
                 <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reactive Player to make attacks with a Unit when its last Model is Removed as a Casualty while Locked in Combat.</characteristic>
                 <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare an Undying Fanaticism Advanced Reaction in step 8 of the Resolving an Initiative Step sequence of the Active Player&apos;s Assault Phase, when the final Model in a Unit under the Reactive Player&apos;s control entirely composed of Models with the Infantry Type and the Solar Auxilia Trait is Removed as a Casualty.</characteristic>
                 <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare an Undying Fanaticism Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
-                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9"> For an Undying Fanaticism Advanced Reaction, the Reacting Model is always the final Model Removed as a Casualty and set to one side from a Unit under the Reactive Player&apos;s Control which contains only Models with the Infantry Type and Solar Auxilia Trait.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For an Undying Fanaticism Advanced Reaction, the Reacting Model is always the final Model Removed as a Casualty and set to one side from a Unit under the Reactive Player&apos;s Control which contains only Models with the Infantry Type and Solar Auxilia Trait.</characteristic>
                 <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once the cost has been paid, the Reactive Player selects one Weapon the Reacting Model has to make attacks with.
 
 
