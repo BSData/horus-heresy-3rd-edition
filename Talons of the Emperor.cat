@@ -370,7 +370,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Aflame" id="a7d0-6146-8c00-9383" hidden="false" type="rule" targetId="ed7b-9ec4-770e-1ae3">
+        <infoLink name="Aflame (X)" id="a7d0-6146-8c00-9383" hidden="false" type="rule" targetId="fdc7-d2a1-338f-df11">
           <modifiers>
             <modifier type="set" value="Aflame (2)" field="name"/>
           </modifiers>
@@ -2928,7 +2928,6 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
     <rule name="Only In Death" id="707b-6c1b-2067-1150" hidden="false">
       <description>Whenever a Model with this Special Rule would gain the Routed Tactical Status in the Make Panic Checks Step of the Resolution Sub-Phase of the Assault Phase, that Model instead gains the Stunned Tactical Status, unless there are any Models without this Special Rule in the same Unit as that Model. Additionally, a Unit which only contains Models with this Special Rule may never have the Disengage or Fall Back aftermath options selected for it, unless it is entirely composed of Models which also have the Antigrav Sub-Type, in which case it may still have the Disengage aftermath option selected for it.</description>
     </rule>
-    <rule name="Aflame" id="ed7b-9ec4-770e-1ae3" hidden="false"/>
     <rule name="Master of the Golden Legion" id="e26b-8a00-4b2f-112a" hidden="false">
       <description>If a Model with this Special Rule is part of an Army, then the Fear (1) Special Rule is granted to all Models with the Legio Custodes Trait and the Infantry, Cavalry, Walker or Paragon Type in the same Army until the end of the first Battle Turn.</description>
     </rule>
@@ -3022,35 +3021,6 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
       </categoryLinks>
     </entryLink>
   </entryLinks>
-  <categoryEntries>
-    <categoryEntry name="Golden Exemplar" id="6da5-a1b8-41c0-b6fc" hidden="false"/>
-    <categoryEntry name="Legio Custodes" id="b212-4a7f-ac9f-ba01" hidden="false">
-      <infoLinks>
-        <infoLink name="Fear (X)" id="73ac-e55f-e75e-50d9" hidden="true" type="rule" targetId="0ebc-0c92-2209-6393">
-          <modifiers>
-            <modifier type="set" value="Fear (1)" field="name"/>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9cbb-0abc-5c93-2afd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <comment>1</comment>
-        </infoLink>
-        <infoLink name="Master of the Golden Legion" id="bec4-f6ec-bb19-ec99" hidden="true" type="rule" targetId="e26b-8a00-4b2f-112a">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9cbb-0abc-5c93-2afd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <comment>1</comment>
-        </infoLink>
-        <infoLink name="Only In Death" id="2964-14cc-89c8-b44d" hidden="false" type="rule" targetId="707b-6c1b-2067-1150"/>
-      </infoLinks>
-    </categoryEntry>
-  </categoryEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Prime Benefits" id="6f4b-388a-b001-abde" hidden="false">
       <selectionEntries>
