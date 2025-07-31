@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="df17-7a05-0826-6e22" name="Traits" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="3" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue library="true" id="df17-7a05-0826-6e22" name="Traits" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="4" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedProfiles>
     <profile name="Master of the Legion" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="6cd2-96be-b703-6d57">
       <characteristics>
@@ -176,9 +176,33 @@
     <categoryEntry name="Word Bearers" id="2aba-8953-ea2f-ce59" hidden="false"/>
     <categoryEntry name="Salamanders" id="f6fe-18f5-7b4d-b57a" hidden="false"/>
     <categoryEntry name="Shield" id="26c6-e05c-0f72-7852" hidden="false"/>
-    <categoryEntry name="Legio Custodes" id="4cd3-a77c-8292-253e" hidden="false"/>
-    <categoryEntry name="Golden Exemplar" id="3497-c0cf-db97-64b7" hidden="false"/>
-    <categoryEntry name="Shield" id="26c6-e05c-0f72-7852" hidden="false"/>
+    <categoryEntry name="Legio Custodes" id="b212-4a7f-ac9f-ba01" hidden="false">
+      <infoLinks>
+        <infoLink name="Fear (X)" id="73ac-e55f-e75e-50d9" hidden="true" type="rule" targetId="0ebc-0c92-2209-6393">
+          <modifiers>
+            <modifier type="set" value="Fear (1)" field="name"/>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9cbb-0abc-5c93-2afd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>1</comment>
+        </infoLink>
+        <infoLink name="Master of the Golden Legion" id="bec4-f6ec-bb19-ec99" hidden="true" type="rule" targetId="e26b-8a00-4b2f-112a">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9cbb-0abc-5c93-2afd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>1</comment>
+        </infoLink>
+        <infoLink name="Only In Death" id="2964-14cc-89c8-b44d" hidden="false" type="rule" targetId="707b-6c1b-2067-1150"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry name="Golden Exemplar" id="6da5-a1b8-41c0-b6fc" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Allegiance Traits" id="edd3-9763-97ca-0323" hidden="false">
