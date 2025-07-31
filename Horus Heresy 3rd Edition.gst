@@ -3336,7 +3336,7 @@
             </modifier>
           </modifiers>
         </forceEntry>
-        <forceEntry name="Auxiliary - Primacy Wing" id="b86b-981d-9aab-5675" hidden="true">
+        <forceEntry name="Auxiliary - Primacy Wing" id="b86b-981d-9aab-5675" hidden="true" sortIndex="25">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -3366,7 +3366,9 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1941-e677-3709-8d3d"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="e4d7-bb42-395a-0309" targetId="1a65-8b23-419b-b30f"/>
           </categoryLinks>
+          <comment>EC Only</comment>
         </forceEntry>
         <forceEntry name="Auxiliary - Tagmata Cohort" id="59b8-2183-4bab-b91c" hidden="true" sortIndex="13">
           <categoryLinks>
@@ -3375,6 +3377,7 @@
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="ec08-2ba4-b38c-8746" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="4396-a118-d91e-7a80" targetId="1a65-8b23-419b-b30f"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -3394,6 +3397,7 @@
               <comment>Mechanicum only</comment>
             </modifier>
           </modifiers>
+          <comment>Mechanicum only</comment>
         </forceEntry>
         <forceEntry name="Auxiliary - Apprentice Cadre" id="6e73-e03d-9ae7-fd33" hidden="true" sortIndex="14">
           <categoryLinks>
@@ -3407,6 +3411,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b649-61e8-62cb-a4b0" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="19ff-5e45-8c20-36b3" targetId="1a65-8b23-419b-b30f"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -3426,6 +3431,7 @@
               <comment>Mechanicum only</comment>
             </modifier>
           </modifiers>
+          <comment>Mechanicum only</comment>
         </forceEntry>
         <forceEntry name="Apex - The Hearth of Power" id="0594-4b9b-675b-f633" hidden="true" sortIndex="15">
           <categoryLinks>
@@ -3449,6 +3455,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01b3-450e-6e90-b041" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Apex Detachment" hidden="false" id="bcef-974a-de97-c3d7" targetId="6b46-02bb-c8aa-142d" type="categoryEntry"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -3468,6 +3475,7 @@
               <comment>Mechanicum only</comment>
             </modifier>
           </modifiers>
+          <comment>Mechanicum only</comment>
         </forceEntry>
         <forceEntry name="Apex - Command Maniple" id="dbe3-9946-d4de-dc73" hidden="true" sortIndex="16">
           <categoryLinks>
@@ -3520,6 +3528,7 @@
               <comment>Mechanicum only</comment>
             </modifier>
           </modifiers>
+          <comment>Mechanicum only</comment>
         </forceEntry>
         <forceEntry name="Apex - The Panoply of Cruelty" id="d5e2-3162-f591-6a81" hidden="true" sortIndex="17">
           <categoryLinks>
@@ -3533,6 +3542,7 @@
                 <constraint type="max" value="3" field="selections" scope="force" shared="true" id="b327-c9e2-cbd8-c6dd" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Apex Detachment" hidden="false" id="585c-4143-adee-6533" targetId="6b46-02bb-c8aa-142d"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -3552,6 +3562,7 @@
               <comment>Mechanicum only</comment>
             </modifier>
           </modifiers>
+          <comment>Mechanicum only</comment>
         </forceEntry>
         <forceEntry name="Apex - The Host of Destruction" id="1db9-6dc0-7da5-e517" hidden="true" sortIndex="18">
           <categoryLinks>
@@ -3565,6 +3576,7 @@
                 <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f3db-6a01-37c5-5b27" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Apex Detachment" hidden="false" id="c6bd-0dcb-53e1-5654" targetId="6b46-02bb-c8aa-142d"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -3584,6 +3596,7 @@
               <comment>Mechanicum only</comment>
             </modifier>
           </modifiers>
+          <comment>Mechanicum only</comment>
         </forceEntry>
         <forceEntry name="Apex - Crux of Judgement" id="4f19-3023-0077-1049" hidden="true" sortIndex="19">
           <categoryLinks>
@@ -3592,6 +3605,7 @@
                 <constraint type="max" value="3" field="selections" scope="force" shared="true" id="83c4-a1e7-c38c-e164" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Apex Detachment" hidden="false" id="ba0d-dd1d-7a6e-b90b" targetId="6b46-02bb-c8aa-142d"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -3611,6 +3625,7 @@
               <comment>Mechanicum only</comment>
             </modifier>
           </modifiers>
+          <comment>Mechanicum only</comment>
         </forceEntry>
         <forceEntry name="Apex - Iron Phalanx" id="a782-7985-325b-1840" hidden="true" sortIndex="20">
           <categoryLinks>
@@ -3634,6 +3649,7 @@
                 <constraint type="max" value="3" field="selections" scope="force" shared="true" id="e480-9bfa-a46f-c224" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Apex Detachment" hidden="false" id="b994-409d-271c-f7ab" targetId="6b46-02bb-c8aa-142d"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -3650,6 +3666,7 @@
               <comment>Mechanicum only</comment>
             </modifier>
           </modifiers>
+          <comment>Mechanicum only</comment>
         </forceEntry>
         <forceEntry name="Apex - Thallax Command Cohort" id="7f03-c1a3-d883-8a98" hidden="true" sortIndex="21">
           <categoryLinks>
@@ -3663,6 +3680,7 @@
                 <constraint type="max" value="3" field="selections" scope="force" shared="true" id="eec6-e569-ed5c-2fb5" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Apex Detachment" hidden="false" id="2097-8356-96ea-7100" targetId="6b46-02bb-c8aa-142d"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -3682,6 +3700,7 @@
               <comment>Mechanicum only</comment>
             </modifier>
           </modifiers>
+          <comment>Mechanicum only</comment>
         </forceEntry>
         <forceEntry name="Apex - The Hammer of Olympia" id="1d3d-a6b8-94d8-443b" hidden="true" sortIndex="23">
           <categoryLinks>
@@ -3710,6 +3729,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0c9-c956-ddbb-abb4"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Apex Detachment" hidden="false" id="1482-f3fe-58dd-e575" targetId="6b46-02bb-c8aa-142d"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -3726,8 +3746,9 @@
               <comment>IW Only</comment>
             </modifier>
           </modifiers>
+          <comment>IW Only</comment>
         </forceEntry>
-        <forceEntry name="Auxiliary - The Ironfire Cohort" id="5bc5-5224-c751-d437" hidden="true" sortIndex="15">
+        <forceEntry name="Auxiliary - The Ironfire Cohort" id="5bc5-5224-c751-d437" hidden="true" sortIndex="24">
           <categoryLinks>
             <categoryLink name="Support" hidden="false" id="3f2d-d215-c312-9e0c" targetId="345f-9ba6-9b02-ed5c">
               <constraints>
@@ -3744,6 +3765,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb4d-fa03-139c-092e"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="4769-6a17-b205-fb4a" targetId="1a65-8b23-419b-b30f"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -3759,8 +3781,9 @@
               <comment>IW Only</comment>
             </modifier>
           </modifiers>
+          <comment>IW Only</comment>
         </forceEntry>
-        <forceEntry name="Auxiliary - Reaping Host" id="3b60-24c1-dccc-23db" hidden="true">
+        <forceEntry name="Auxiliary - Reaping Host" id="3b60-24c1-dccc-23db" hidden="true" sortIndex="27">
           <categoryLinks>
             <categoryLink name="Support" hidden="false" id="b9b8-674c-86a5-00c7" targetId="345f-9ba6-9b02-ed5c">
               <constraints>
@@ -3782,6 +3805,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8a1-5314-2017-a0be"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="515c-a4b9-bad0-df67" targetId="1a65-8b23-419b-b30f"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -3794,9 +3818,10 @@
                   <comment>IW</comment>
                 </conditionGroup>
               </conditionGroups>
-              <comment>IW Only</comment>
+              <comment>DG Only</comment>
             </modifier>
           </modifiers>
+          <comment>DG Only</comment>
         </forceEntry>
         <forceEntry name="Auxiliary - Primus Demi-Company" id="1da1-f220-0bad-5f78" hidden="true">
           <modifiers>
@@ -3838,7 +3863,9 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b6a-83d5-ce04-e8ee"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="79d4-74fa-cc87-03a5" targetId="1a65-8b23-419b-b30f"/>
           </categoryLinks>
+          <comment>UM Only</comment>
         </forceEntry>
         <forceEntry name="Auxiliary Detachment - Veletaris Tercio" id="e1a1-2699-4681-47ab" hidden="true">
           <categoryLinks>
@@ -4043,6 +4070,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <comment>SA Only</comment>
         </forceEntry>
         <forceEntry name="Auxiliary Detachment - Armour Tercio" id="6aff-b91d-02bb-7461" hidden="true">
           <categoryLinks>
@@ -4066,6 +4094,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <comment>SA Only</comment>
         </forceEntry>
         <forceEntry name="Auxiliary Detachment - Artillery Tercio" id="371d-e9ef-7bf9-47de" hidden="true">
           <categoryLinks>
@@ -4089,6 +4118,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <comment>SA Only</comment>
         </forceEntry>
         <forceEntry name="Auxiliary Detachment - Infantry Tercio" id="243b-4ffd-9808-11d8" hidden="true">
           <categoryLinks>
@@ -4294,6 +4324,7 @@
               <comment>Solar Auxilia</comment>
             </modifier>
           </modifiers>
+          <comment>SA Only</comment>
         </forceEntry>
         <forceEntry name="Auxiliary Detachment - Scout Tercio" id="551a-23a1-7758-2688" hidden="true">
           <categoryLinks>
@@ -4322,6 +4353,7 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <comment>SA Only</comment>
         </forceEntry>
       </forceEntries>
       <constraints>
