@@ -144,13 +144,6 @@ Furthermore, if a Model with this Special Rule is part of an Army, then once per
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildForces="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="400"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -1445,10 +1438,17 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="ab9d-37ed-6b02-1cf9" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="a1fc-7519-cd5f-60ff" type="selectionEntryGroup" targetId="6f4b-388a-b001-abde"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Shield Captain" hidden="false" id="ead9-2ff9-9301-8c60">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Shield Captain" hidden="false" id="38a6-4b0b-0b3a-c32e" publicationId="09c6-1c1d-03a7-9556" page="6">
+        <selectionEntry type="model" import="true" name="Shield Captain" hidden="false" id="38a6-4b0b-0b3a-c32e" publicationId="09c6-1c1d-03a7-9556" page="6" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1bba-c165-0f7e-92f6" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="025c-ac98-dfc8-05b9" includeChildSelections="false"/>
@@ -1563,18 +1563,18 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildForces="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="250"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="80b8-1334-4923-0d36" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="4c53-2d28-633f-7795" type="selectionEntryGroup" targetId="6f4b-388a-b001-abde"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Aquilon Terminator Sodality" hidden="false" id="656a-8563-512a-01bd">
       <selectionEntries>
@@ -1682,7 +1682,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Custodian Guard Sodality" hidden="false" id="3125-22d7-c723-2737">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Custodian Guard" hidden="false" id="6263-4531-5c57-39fd">
+        <selectionEntry type="model" import="true" name="Custodian Guard" hidden="false" id="6263-4531-5c57-39fd" sortIndex="2">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="55db-2069-35a1-1fdf" includeChildSelections="false"/>
             <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="ca7a-da42-160d-45b6" includeChildSelections="false"/>
@@ -1781,10 +1781,17 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
           </profiles>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="6b72-0dd8-c238-f6a1" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="4e1b-fbb2-929e-1a3a" type="selectionEntryGroup" targetId="6f4b-388a-b001-abde"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sagittarum Guard Sodality" hidden="false" id="80ef-8ed2-2cc2-262f">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Sagittarum Guard" hidden="false" id="7dec-12e1-4c29-4756">
+        <selectionEntry type="model" import="true" name="Sagittarum Guard" hidden="false" id="7dec-12e1-4c29-4756" sortIndex="2">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="0d0c-9d1f-7951-a5bd" includeChildSelections="false"/>
             <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="b5fc-52bb-5f57-fa12" includeChildSelections="false"/>
@@ -1872,10 +1879,17 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
           </profiles>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="29be-c9ac-7bab-9378" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="ff69-4cad-12a0-776a" type="selectionEntryGroup" targetId="6f4b-388a-b001-abde"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sentinel Guard Sodality" hidden="false" id="29e3-59e0-53e7-a5db">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Sentinel Guard" hidden="false" id="f516-c585-c15f-8357">
+        <selectionEntry type="model" import="true" name="Sentinel Guard" hidden="false" id="f516-c585-c15f-8357" sortIndex="2">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="6e2c-e032-97ea-c1d6" includeChildSelections="false"/>
             <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="cb9a-eb25-4971-4649" includeChildSelections="false"/>
@@ -1970,6 +1984,13 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
           </profiles>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="69d2-86b7-bb27-84ae" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="8cd8-d3d9-eb1c-1b04" type="selectionEntryGroup" targetId="6f4b-388a-b001-abde"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Contemptor-Achillus Dreadnought" hidden="false" id="350c-637d-71de-9760">
       <selectionEntries>
@@ -2411,10 +2432,10 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="3e6f-9e49-ad37-8f1b" primary="false" name="Antigrav Model Sub-Type"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its Kinetic destroyer and Tarsus buckler exchanged for:" id="ce0f-55fd-e9b8-d7cd" hidden="false" defaultSelectionEntryId="9bb2-824f-acdd-c9f9" sortIndex="1">
+            <selectionEntryGroup name="This Model may have its Kinetic destroyer and Tarsus buckler exchanged for:" id="ce0f-55fd-e9b8-d7cd" hidden="false" defaultSelectionEntryId="b011-6be3-4d1d-9826" sortIndex="1">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8d8a-33a2-b179-cdab" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a117-6039-89f8-29e9" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0863-cffe-7691-63c9" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a634-2774-ae77-92b1" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Venatari lance" hidden="false" id="ec1a-335c-c414-be48" type="selectionEntry" targetId="eaa3-83c1-501a-d615"/>
@@ -2422,7 +2443,12 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Kinetic destroyer and Tarsus buckler" hidden="false" id="b011-6be3-4d1d-9826">
                   <entryLinks>
-                    <entryLink import="true" name="Kinetic destroyer" hidden="false" id="e81f-ee16-5ce2-77b0" type="selectionEntry" targetId="2f8b-e409-6a0c-896f"/>
+                    <entryLink import="true" name="Kinetic destroyer" hidden="false" id="e81f-ee16-5ce2-77b0" type="selectionEntry" targetId="2f8b-e409-6a0c-896f">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b998-89df-8526-311e-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b998-89df-8526-311e-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Tarsus buckler" hidden="false" id="0389-7e59-b2b4-d4bf">
@@ -2431,6 +2457,10 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
                           <description>The Ranged Strength of attacks made as part of a Volley Attack or Overwatch Reaction are modified by -1 when resolving Wound Tests against a Unit that includes one or more Models with a tarsus buckler.</description>
                         </rule>
                       </rules>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f754-aefc-1828-f9a1-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f754-aefc-1828-f9a1-max" includeChildSelections="false"/>
+                      </constraints>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntry>
@@ -2492,13 +2522,125 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Gyrfalcon Jetbike Sodality" hidden="false" id="5494-8bdd-6978-8d32">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Gyrfalcon Agamatus" hidden="false" id="5436-c673-abd7-c08b">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="0676-aec8-527e-f5b9" includeChildSelections="false"/>
+            <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="99a7-d2f5-1bff-4c39" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="55"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="4381-ed35-c3fa-a225" id="fbed-ddce-447c-b021" primary="false" name="Loyalist"/>
+            <categoryLink targetId="b212-4a7f-ac9f-ba01" id="1b09-80fb-d713-2e2d" primary="false" name="Legio Custodes"/>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="a111-79c9-9ecb-3885" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="f4ba-00e5-3d2e-eaac" id="2d6e-6e0f-4606-23b0" primary="false" name="Light Model Sub-Type"/>
+            <categoryLink targetId="c504-9dfa-35d3-c98f" id="8e5d-d9a6-21a8-0ac9" primary="false" name="Antigrav Model Sub-Type"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="This Model may have its Kinetic destroyer and Tarsus buckler exchanged for:" id="01fb-b47c-a4e3-fe49" hidden="false" defaultSelectionEntryId="b011-6be3-4d1d-9826" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4dfc-3133-1344-8209" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1ea-2643-49fb-29b1" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Venatari lance" hidden="false" id="1601-634d-e4e4-e005" type="selectionEntry" targetId="eaa3-83c1-501a-d615"/>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Kinetic destroyer and Tarsus buckler" hidden="false" id="f3cc-4a1e-970f-6ceb">
+                  <entryLinks>
+                    <entryLink import="true" name="Kinetic destroyer" hidden="false" id="e057-9e1c-363f-26b0" type="selectionEntry" targetId="2f8b-e409-6a0c-896f">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6caa-f73b-d1ec-bbab-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6caa-f73b-d1ec-bbab-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Tarsus buckler" hidden="false" id="5110-a7cc-74c6-c240">
+                      <rules>
+                        <rule name="Tarsus Buckler" id="530e-0d48-22c3-e45a" hidden="false">
+                          <description>The Ranged Strength of attacks made as part of a Volley Attack or Overwatch Reaction are modified by -1 when resolving Wound Tests against a Unit that includes one or more Models with a tarsus buckler.</description>
+                        </rule>
+                      </rules>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d16-c255-bdea-b474-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d16-c255-bdea-b474-max" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Misericordia" hidden="false" id="521a-f0e5-32ac-529d" type="selectionEntry" targetId="e15c-465c-8a7a-7e34" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0eae-910e-6fd8-b236" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c8f-b980-ab1c-fec0" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Bulky (X)" id="98f0-6745-8ee0-0a99" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+              <modifiers>
+                <modifier type="set" value="Bulky (3)" field="name"/>
+              </modifiers>
+              <comment>3</comment>
+            </infoLink>
+            <infoLink name="Eternal Warrior (X)" id="f7bf-dacd-0e8b-86a9" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
+              <modifiers>
+                <modifier type="set" value="Eternal Warrior (1)" field="name"/>
+              </modifiers>
+              <comment>1</comment>
+            </infoLink>
+            <infoLink name="Vanguard (X)" id="1771-40e9-c6ba-9a58" hidden="false" type="rule" targetId="530f-b733-993c-ec84">
+              <modifiers>
+                <modifier type="set" value="Vanguard (3)" field="name"/>
+              </modifiers>
+              <comment>3</comment>
+            </infoLink>
+            <infoLink name="Outflank" id="8e04-9039-0a2f-da33" hidden="false" type="rule" targetId="92d2-cc57-1ef6-a712"/>
+            <infoLink name="Deep Strike" id="cac4-af91-819d-1d22" hidden="false" type="rule" targetId="0553-d06b-52b9-34db"/>
+            <infoLink name="Firestorm" id="7b78-b1fc-646a-13fe" hidden="false" type="rule" targetId="3ed1-c5b3-a98d-1b12"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Venatari" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="fc95-3edd-4409-aad5">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Light, Antigrav)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">14</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">5</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">5</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">2</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">10</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">10</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">8</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">8</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="Assets" id="a7ae-76e9-e4bf-5759" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Special Rules" id="8ca8-471c-e2d4-8c7b" targetId="106b-693b-99f2-00c3"/>
     <catalogueLink type="catalogue" name="Weapons" id="fee6-8d15-91d1-45ea" targetId="a22d-4dd0-c59d-57d3"/>
     <catalogueLink type="catalogue" name="Wargear" id="a34b-36eb-a760-25a2" targetId="fcc7-4319-bb04-2c25"/>
     <catalogueLink type="catalogue" name="Traits" id="7271-ea78-f26a-04f4" targetId="df17-7a05-0826-6e22"/>
+    <catalogueLink type="catalogue" name="Assets" id="9599-c890-d77f-a83f" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
   </catalogueLinks>
   <sharedRules>
     <rule name="Only In Death" id="707b-6c1b-2067-1150" hidden="false">
@@ -2570,6 +2712,11 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
         <categoryLink targetId="2b65-a3f2-620a-dc58" id="2e78-27e4-fc2f-1cfe" primary="true" name="Recon"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Gyrfalcon Jetbike Sodality" hidden="false" id="044d-bbe4-377b-2684" type="selectionEntry" targetId="5494-8bdd-6978-8d32">
+      <categoryLinks>
+        <categoryLink targetId="cf96-8891-3f9a-8921" id="97b2-9f38-9ffb-57f2" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <categoryEntries>
     <categoryEntry name="Golden Exemplar" id="6da5-a1b8-41c0-b6fc" hidden="false"/>
@@ -2600,4 +2747,153 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
       </infoLinks>
     </categoryEntry>
   </categoryEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Prime Benefits" id="6f4b-388a-b001-abde" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Master Sergeant" hidden="true" id="f9d7-e9ff-6631-7e27">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ab8-3b8c-8cb3-15cf"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="38b9-55af-d01d-0ad8" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Combat Veterans" hidden="false" id="e698-8ba8-84d0-f63c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e97d-ceba-2731-08f1" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b54e-86b6-e819-d26c" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d9a6-9b5f-b18a-4d63" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Paragon of Battle" hidden="true" id="b96c-927f-5064-9737">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed55-3b92-53ae-43e0"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dbf-654a-f06f-2d69" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Special Assignment" hidden="true" id="2ab9-e5b6-ff3d-190f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3561-67f1-e712-67a5" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e171-067e-0f71-e778" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Prime Command" hidden="false" id="0a8f-bf1a-ecf9-db9d" targetId="c85c-2963-658f-1bb9" primary="false"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d9a6-9b5f-b18a-4d63" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Logistical Benefit" hidden="false" id="dd5c-0843-2818-fa3c">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Logistical Benefit" id="8919-9c4f-18af-0cdb" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="LB - Armour" hidden="false" id="2585-b40f-f1ce-ae88" sortIndex="9">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5f9f-25cb-f848-d4ae" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78eb-3faa-81d0-10d9" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="LB - Retinue" hidden="false" id="eddc-c543-ee3d-f559" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9e65-4497-18da-ecfb" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="796e-8978-3551-55d0" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="LB - Elites" hidden="false" id="0bb4-dec9-95aa-24c0" sortIndex="2">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="967a-4cda-ad7d-5553" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4d0-a2eb-163f-4e2a" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="LB - Support" hidden="false" id="55f4-5025-7943-6a6e" sortIndex="5">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9bae-db72-feb7-0e95" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f35-6c4d-da17-b518" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="LB - Recon" hidden="false" id="eb87-9515-b3bd-e30b" sortIndex="10">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3ca5-55d8-fca7-7f58" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ace3-c006-8e18-5255" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="LB - Transport" hidden="false" id="5b5c-72ed-8a63-649d" sortIndex="6">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7a26-79e0-e092-cf3d" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6be-9a72-dd50-8c03" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="LB - Troops" hidden="false" id="6480-6197-d571-7f09" sortIndex="4">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4f23-eb9c-31f8-fbba" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e166-e94d-c441-bf39" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="LB - War-engine" hidden="false" id="b5a8-2a3f-41ed-b347" sortIndex="3">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="32da-b43b-07fa-60a7" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4671-5076-ebbc-3358" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="LB - Heavy Transport" hidden="false" id="d1b4-d38f-f023-81b2" sortIndex="8">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="720f-4015-9c8b-9178" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c6d-59f9-130a-5fa6" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="LB - Fast Attack" hidden="false" id="4414-7523-af54-dd10" sortIndex="11">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fae8-3cd1-c656-ebdd" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee80-1246-3391-072a" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="LB - Heavy Assault" hidden="false" id="4057-310a-fd01-c889" sortIndex="7">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ae13-a8c9-1445-9ebc" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2efa-73db-2292-4ac5" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="af61-6000-1e4c-c9c6" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="033b-a760-578e-f2e9" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e24-686b-b82d-49b5" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7bba-f6a3-5fc8-7c44" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d9a6-9b5f-b18a-4d63" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
