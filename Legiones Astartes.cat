@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="9" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="10" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <profiles>
@@ -8741,11 +8741,31 @@
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Replace combi-bolter with:" id="d7eb-ab4a-ab7f-f6a5" hidden="false" defaultSelectionEntryId="cd27-ef14-bc23-593c">
                       <entryLinks>
-                        <entryLink import="true" name="Heavy flamer" hidden="false" id="e4f7-5de0-ed69-c9e6" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86"/>
-                        <entryLink import="true" name="Plasma blaster" hidden="false" id="3551-541e-f7c5-25c0" type="selectionEntry" targetId="3787-3dca-b6c9-f9e3"/>
-                        <entryLink import="true" name="Graviton gun" hidden="false" id="d37f-3508-ef35-2d63" type="selectionEntry" targetId="4a06-c55e-a06f-bd0c"/>
-                        <entryLink import="true" name="Meltagun" hidden="false" id="6d6c-eb34-96d5-b0ba" type="selectionEntry" targetId="b1e1-e164-5877-6734"/>
-                        <entryLink import="true" name="Combi-bolter" hidden="false" id="cd27-ef14-bc23-593c" type="selectionEntry" targetId="042d-9e60-db9e-c147"/>
+                        <entryLink import="true" name="Heavy flamer" hidden="false" id="e4f7-5de0-ed69-c9e6" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86">
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Plasma blaster" hidden="false" id="3551-541e-f7c5-25c0" type="selectionEntry" targetId="3787-3dca-b6c9-f9e3">
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Graviton gun" hidden="false" id="d37f-3508-ef35-2d63" type="selectionEntry" targetId="4a06-c55e-a06f-bd0c">
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Meltagun" hidden="false" id="6d6c-eb34-96d5-b0ba" type="selectionEntry" targetId="b1e1-e164-5877-6734">
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Combi-bolter" hidden="false" id="cd27-ef14-bc23-593c" type="selectionEntry" targetId="042d-9e60-db9e-c147">
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+                          </costs>
+                        </entryLink>
                       </entryLinks>
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="17e4-8eb5-96a6-559d"/>
@@ -8753,6 +8773,13 @@
                       </constraints>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                    <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Gravis chain fist and combi-bolter" hidden="false" id="9688-8a02-6033-f0a7" sortIndex="2">
                   <selectionEntryGroups>
@@ -8778,17 +8805,56 @@
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                    <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink import="true" name="Gravis bolt cannon" hidden="false" id="83b0-1291-0535-07db" type="selectionEntry" targetId="50d5-02d3-0be6-9143" sortIndex="3"/>
-                <entryLink import="true" name="Gravis melta cannon" hidden="false" id="c4fb-f885-0036-62e0" type="selectionEntry" targetId="5a5a-1d32-2fcd-e5e3" sortIndex="4"/>
-                <entryLink import="true" name="Gravis autocannon" hidden="false" id="1e29-6283-e5e5-c18a" type="selectionEntry" targetId="4e51-460b-4f29-8257" sortIndex="5"/>
-                <entryLink import="true" name="Gravis plasma cannon" hidden="false" id="889b-ac2d-36b5-6227" type="selectionEntry" targetId="e457-5209-91f7-734f" sortIndex="6"/>
-                <entryLink import="true" name="Conversion beam cannon" hidden="false" id="6dbb-a8ac-0b0d-fa1a" type="selectionEntry" targetId="e650-5178-1a9b-696e" sortIndex="7"/>
-                <entryLink import="true" name="Twin volkite culverin" hidden="false" id="aff5-46b4-2d41-1315" type="selectionEntry" targetId="65a5-f5bd-1ecb-0c22" sortIndex="8"/>
-                <entryLink import="true" name="Kheres assault cannon" hidden="false" id="40e4-e6b9-91e6-e303" type="selectionEntry" targetId="11a5-70a9-9b14-10d3" sortIndex="9"/>
-                <entryLink import="true" name="Twin lascannon" hidden="false" id="cdbb-e093-6628-f633" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a" sortIndex="10"/>
+                <entryLink import="true" name="Gravis bolt cannon" hidden="false" id="83b0-1291-0535-07db" type="selectionEntry" targetId="50d5-02d3-0be6-9143" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Gravis melta cannon" hidden="false" id="c4fb-f885-0036-62e0" type="selectionEntry" targetId="5a5a-1d32-2fcd-e5e3" sortIndex="4">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Gravis autocannon" hidden="false" id="1e29-6283-e5e5-c18a" type="selectionEntry" targetId="4e51-460b-4f29-8257" sortIndex="5">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Gravis plasma cannon" hidden="false" id="889b-ac2d-36b5-6227" type="selectionEntry" targetId="e457-5209-91f7-734f" sortIndex="6">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Conversion beam cannon" hidden="false" id="6dbb-a8ac-0b0d-fa1a" type="selectionEntry" targetId="e650-5178-1a9b-696e" sortIndex="7">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin volkite culverin" hidden="false" id="aff5-46b4-2d41-1315" type="selectionEntry" targetId="65a5-f5bd-1ecb-0c22" sortIndex="8">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Kheres assault cannon" hidden="false" id="40e4-e6b9-91e6-e303" type="selectionEntry" targetId="11a5-70a9-9b14-10d3" sortIndex="9">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin lascannon" hidden="false" id="cdbb-e093-6628-f633" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a" sortIndex="10">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
