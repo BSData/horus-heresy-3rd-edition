@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="10" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="11" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -4922,6 +4922,38 @@
         </categoryLink>
       </categoryLinks>
       <comment>For detachments with primes: copy these categories.</comment>
+    </forceEntry>
+    <forceEntry name="Unrestricted/Collection" id="fe60-2ef4-3e1a-b6c1" hidden="true">
+      <categoryLinks>
+        <categoryLink name="High Command" hidden="false" id="f3d7-72b0-f1bd-ec17" targetId="d9a6-9b5f-b18a-4d63"/>
+        <categoryLink name="Prime High Command" hidden="false" id="2de3-d05c-7f02-3ef8" targetId="3568-ad75-b452-3137"/>
+        <categoryLink name="Command" hidden="false" id="d30f-015c-505b-cda2" targetId="6dbf-654a-f06f-2d69"/>
+        <categoryLink name="Prime Command" hidden="false" id="d041-f3c8-ee5c-3758" targetId="c85c-2963-658f-1bb9"/>
+        <categoryLink name="Retinue" hidden="false" id="2988-e87d-28f4-0952" targetId="a38e-50ff-310f-f19e"/>
+        <categoryLink name="Prime Retinue" hidden="false" id="3651-8b3a-998e-5f27" targetId="c66b-ef39-b20f-725b"/>
+        <categoryLink name="Elites" hidden="false" id="d943-ebe0-e8be-8a5a" targetId="5d5e-958f-e388-50b5"/>
+        <categoryLink name="Prime Elites" hidden="false" id="acd7-f30b-4ac6-dd59" targetId="276f-7a07-a56c-affd"/>
+        <categoryLink name="War-engine" hidden="false" id="ea80-a738-93cd-a5de" targetId="2499-7239-685f-8465"/>
+        <categoryLink name="Prime War-engine" hidden="false" id="4e5d-fe5e-cf1c-ad97" targetId="9699-67c9-2c0b-e64b"/>
+        <categoryLink name="Troops" hidden="false" id="b6b2-f3e3-4057-43ff" targetId="88e6-d373-4152-0dd8"/>
+        <categoryLink name="Prime Troops" hidden="false" id="7be5-cb12-3cef-a6e3" targetId="c3f9-a7f3-984b-3fda"/>
+        <categoryLink name="Support" hidden="false" id="e7c8-ccb2-903c-7705" targetId="345f-9ba6-9b02-ed5c"/>
+        <categoryLink name="Prime Support" hidden="false" id="8fa5-c62b-6987-7799" targetId="1c79-ecdf-9a64-84c9"/>
+        <categoryLink name="Transport" hidden="false" id="d715-1952-2717-d888" targetId="d162-4711-5d60-0a48"/>
+        <categoryLink name="Prime Transport" hidden="false" id="fe8c-63f0-bee8-be30" targetId="fc27-1a48-84ae-aa7b"/>
+        <categoryLink name="Heavy Assault" hidden="false" id="93bd-2a55-4f98-64a3" targetId="3235-bd79-e9b1-60fa"/>
+        <categoryLink name="Prime Heavy Assault" hidden="false" id="583b-b085-d749-c5d2" targetId="1e95-35f0-1353-ffa1"/>
+        <categoryLink name="Heavy Transport" hidden="false" id="6622-10da-e7c1-5a59" targetId="52d0-8b78-439e-18e5"/>
+        <categoryLink name="Prime Heavy Transport" hidden="false" id="332c-fd7f-e4ea-af5e" targetId="abff-3686-c39a-9a24"/>
+        <categoryLink name="Armour" hidden="false" id="1126-c0f0-3745-cf89" targetId="643a-1012-bd51-6537"/>
+        <categoryLink name="Prime Armour" hidden="false" id="c75e-44be-8e8f-0978" targetId="4460-7bc1-4d80-aecb"/>
+        <categoryLink name="Recon" hidden="false" id="3c9c-29f7-656d-814c" targetId="2b65-a3f2-620a-dc58"/>
+        <categoryLink name="Prime Recon" hidden="false" id="09be-3d94-c69b-5fd2" targetId="6348-ecd0-714d-042a"/>
+        <categoryLink name="Fast Attack" hidden="false" id="3ee2-229e-9dcc-487a" targetId="cf96-8891-3f9a-8921"/>
+        <categoryLink name="Prime Fast Attack" hidden="false" id="ed24-0e72-92b0-baae" targetId="c291-144b-3da6-37ed"/>
+        <categoryLink name="Lord of War" hidden="false" id="e480-805a-cba5-0102" targetId="a46f-a465-0ead-d6b8"/>
+        <categoryLink name="Warlord" hidden="false" id="a9f0-0981-4d0f-a835" targetId="22ee-7208-4089-b005" type="categoryEntry"/>
+      </categoryLinks>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
