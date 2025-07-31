@@ -2368,6 +2368,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="4fb9-56cc-7f64-9143" primary="false" name="Antigrav Model Sub-Type"/>
             <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="7f18-1443-6336-042b" primary="false" name="Transport Model Sub-Type"/>
             <categoryLink targetId="4381-ed35-c3fa-a225" id="1c83-f424-3ab4-592c" primary="false" name="Loyalist"/>
+            <categoryLink targetId="b212-4a7f-ac9f-ba01" id="1688-16e4-a2ba-0b55" primary="false" name="Legio Custodes"/>
           </categoryLinks>
           <entryLinks>
             <entryLink import="true" name="Twin Lastrum bolt cannon" hidden="false" id="872b-3c4b-0556-2c11" type="selectionEntry" targetId="41e7-8ad3-5676-e8fc" sortIndex="2">
@@ -2631,9 +2632,9 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a0e-86d0-92a2-16e9" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="Coronus Grav-Carrier" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="94f9-ba54-0ddc-d01c">
+            <profile name="Pallas Grav-Attack" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="94f9-ba54-0ddc-d01c">
               <characteristics>
-                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Antigrav, Transport)</characteristic>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Antigrav, Rapid)</characteristic>
                 <characteristic name="M" typeId="d624-72fe-0205-4443">16</characteristic>
                 <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">5</characteristic>
                 <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">12</characteristic>
@@ -2650,6 +2651,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="b92b-2582-e608-602b" primary="false" name="Antigrav Model Sub-Type"/>
             <categoryLink targetId="4381-ed35-c3fa-a225" id="f124-dc8c-05e4-6bda" primary="false" name="Loyalist"/>
             <categoryLink targetId="a5c6-b359-cecb-e0b1" id="aed7-c5b0-64aa-a15a" primary="false" name="Rapid Sub-Type"/>
+            <categoryLink targetId="b212-4a7f-ac9f-ba01" id="82a2-868d-070e-8851" primary="false" name="Legio Custodes"/>
           </categoryLinks>
           <entryLinks>
             <entryLink import="true" name="Twin Arachnus blaze cannon" hidden="false" id="5ef8-e53d-aff6-6e41" type="selectionEntry" targetId="0a09-48e6-5e80-519d" sortIndex="1">
@@ -2678,6 +2680,236 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
       </selectionEntries>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="110"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Caladius Grav-Tank" hidden="false" id="3cc2-9a68-9bc0-b695">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Caladius Grav-Tank" hidden="false" id="56b7-fa66-4add-af69">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b03-1cc5-958d-a59a" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d8e-b5ca-24ef-1f5e" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Caladius Grav-Tank" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="b63e-a102-fba7-f8d5">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Antigrav, Rapid)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">14</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">5</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">13</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">13</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">11</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">7</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="8a46-a3c3-3a2c-dd45" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="c504-9dfa-35d3-c98f" id="b701-4d35-661b-e49e" primary="false" name="Antigrav Model Sub-Type"/>
+            <categoryLink targetId="4381-ed35-c3fa-a225" id="85fb-93c2-dcfe-2f8f" primary="false" name="Loyalist"/>
+            <categoryLink targetId="a5c6-b359-cecb-e0b1" id="9c85-697b-636d-50e1" primary="false" name="Rapid Sub-Type"/>
+            <categoryLink targetId="b212-4a7f-ac9f-ba01" id="0837-e8c1-d99a-0433" primary="false" name="Legio Custodes"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Twin Lastrum bolt cannon" hidden="false" id="4d82-2216-a627-cf39" type="selectionEntry" targetId="41e7-8ad3-5676-e8fc" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="59b5-cdb1-c0fe-421b-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59b5-cdb1-c0fe-421b-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Deep Strike" id="907c-922a-f327-f4b4" hidden="false" type="rule" targetId="0553-d06b-52b9-34db"/>
+            <infoLink name="Auto-Repair (X)" id="1a79-1858-bd70-77fb" hidden="false" type="rule" targetId="3973-ed50-1482-ff4a">
+              <modifiers>
+                <modifier type="set" value="Auto-Repair (3+)" field="name"/>
+              </modifiers>
+              <comment>3+</comment>
+            </infoLink>
+            <infoLink name="Explodes (X)" id="b9ab-7dee-0a80-4399" hidden="false" type="rule" targetId="da5b-b871-20da-3e70">
+              <modifiers>
+                <modifier type="set" value="Explodes (6+)" field="name"/>
+              </modifiers>
+              <comment>6+</comment>
+            </infoLink>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="This Model may have its Twin Iliastus accelerator cannon exchange for:" id="1106-b024-b1b6-ce80" hidden="false" defaultSelectionEntryId="55de-f215-7864-9d6a" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24f0-1013-49fb-64d1" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f1c-00a0-fccc-b6b9" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin Arachnus blaze carronade" hidden="false" id="8e81-9180-add5-f0ed" type="selectionEntry" targetId="04a1-a76a-7aa8-e604" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin Iliastus accelerator cannon" hidden="false" id="55de-f215-7864-9d6a" type="selectionEntry" targetId="5e1d-d2cf-aa7d-77da" sortIndex="1"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="225"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Orion Assault Dropship" hidden="false" id="0c29-b45c-d6e4-6a18">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Orion Assault Dropship" hidden="false" id="8954-6589-d463-6184">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1df2-ad09-cb9d-1e3c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b67-23af-3440-84e2" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Orion Assault Dropship" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="7ab7-c323-48ed-5581">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Transport, Super-heavy, Flyer)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">18</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">5</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">13</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">13</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">11</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">12</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">24</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">Rear Facing</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="6966-599f-72df-4514" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="793a-af51-7069-619c" primary="false" name="Transport Model Sub-Type"/>
+            <categoryLink targetId="4381-ed35-c3fa-a225" id="4c58-49c6-2503-53fd" primary="false" name="Loyalist"/>
+            <categoryLink targetId="42a3-02e9-e0e4-8292" id="bf78-c9d5-aa02-03a7" primary="false" name="Flyer Model Sub-Type"/>
+            <categoryLink targetId="4d42-b711-7946-8e15" id="110a-a343-d86e-8078" primary="false" name="Super-heavy Model Sub-Type"/>
+            <categoryLink targetId="b212-4a7f-ac9f-ba01" id="bf4c-5d65-cf9b-5d6f" primary="false" name="Legio Custodes"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Twin Lastrum bolt cannon" hidden="false" id="89c6-7d09-9027-d686" type="selectionEntry" targetId="41e7-8ad3-5676-e8fc" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="b129-d88d-400d-85aa" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e629-617c-8c13-a288" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Twin Arachnus blaze carronade" hidden="false" id="e212-822a-acd8-1c3e" type="selectionEntry" targetId="04a1-a76a-7aa8-e604" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a34b-bb11-eeb4-4a25" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5755-3269-de02-9767" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Spiculus heavy missile pod" hidden="false" id="2a3c-c532-af99-cc7d" type="selectionEntry" targetId="1859-643e-e1fa-7fa4" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="cdc6-78ea-7405-00aa" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="99a7-98c0-1ab7-ea02" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Twin Lastrum bolt cannon" hidden="false" id="e0ce-7770-7553-ebb6" type="selectionEntry" targetId="41e7-8ad3-5676-e8fc" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="a782-c5d9-314b-304c" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0eaa-8668-0a58-e355" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Spiculus heavy missile pod" hidden="false" id="9284-66f0-4412-1d55" type="selectionEntry" targetId="1859-643e-e1fa-7fa4" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="8d13-ac18-9be6-bd4b" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="48a5-1144-1974-6d1d" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Eclipse Shield" hidden="false" id="9d69-9869-33c2-092f" type="selectionEntry" targetId="dfba-51d7-a4cd-a1fe" sortIndex="6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a11-6b41-a5be-e943" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa30-b311-255f-fb4f" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Assault Vehicle" id="6dd7-5ed3-f345-f2d3" hidden="false" type="rule" targetId="150c-16e6-1212-9f75"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="600"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ares Gunship" hidden="false" id="0c44-ab22-006f-ebf3">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Ares Gunship" hidden="false" id="4445-1fba-cbeb-b837">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a78f-b705-9384-756e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ed3-b3db-a92e-a769" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Ares Gunship" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="b29a-331a-9f40-29bc">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Transport, Super-heavy, Flyer)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">18</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">5</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">13</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">13</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">10</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">12</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="e297-e213-fa23-0b1e" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="4381-ed35-c3fa-a225" id="d82a-b7a6-592d-ad73" primary="false" name="Loyalist"/>
+            <categoryLink targetId="42a3-02e9-e0e4-8292" id="1feb-148e-eeb6-f167" primary="false" name="Flyer Model Sub-Type"/>
+            <categoryLink targetId="4d42-b711-7946-8e15" id="661e-6f62-2f20-11fe" primary="false" name="Super-heavy Model Sub-Type"/>
+            <categoryLink targetId="b212-4a7f-ac9f-ba01" id="7cf0-8bce-f478-5968" primary="false" name="Legio Custodes"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Arachnus magna-blaze cannon" hidden="false" id="fb4e-055f-f689-81ab" type="selectionEntry" targetId="6df8-7d2b-4ee2-14b2" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="a436-c7b4-0f36-c7a2" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="dbb6-a4c4-c66d-9132" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Twin Arachnus storm carronade" hidden="false" id="4e0e-d26d-2dce-add7" type="selectionEntry" targetId="e836-2eb6-8a77-ced2" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3560-291f-e418-c548" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="038d-f9f1-b220-cf67" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Infernus firebomb clusters" hidden="false" id="368a-1f06-f58d-1d70" type="selectionEntry" targetId="ecac-ed33-b524-0aca" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="022b-0def-de86-58ea" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ac48-f3c3-b238-5447" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Infernus firebomb clusters" hidden="false" id="c7f1-54c6-c930-55e5" type="selectionEntry" targetId="ecac-ed33-b524-0aca" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="042b-ff6f-5dbd-e386" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="01c5-4395-7bc2-1146" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Eclipse Shield" hidden="false" id="f61d-98dd-31e2-7d95" type="selectionEntry" targetId="dfba-51d7-a4cd-a1fe" sortIndex="6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc00-bc17-7907-cd1f" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7141-a424-bcde-0872" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="650"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -2732,9 +2964,9 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
         <categoryLink targetId="88e6-d373-4152-0dd8" id="17f9-c009-0ca2-11f1" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Coronus Grav-Carrier" hidden="false" id="2a34-6b03-52f0-4452" type="selectionEntry" targetId="40df-cbd0-f144-ccdb">
+    <entryLink import="true" name="Caladius Grav-Tank" hidden="false" id="2a34-6b03-52f0-4452" type="selectionEntry" targetId="3cc2-9a68-9bc0-b695">
       <categoryLinks>
-        <categoryLink targetId="52d0-8b78-439e-18e5" id="9af0-a692-1d1d-780b" primary="true" name="Heavy Transport"/>
+        <categoryLink targetId="643a-1012-bd51-6537" id="8875-3ef5-525d-999b" primary="true" name="Armour"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Shield Captain" hidden="false" id="0a02-950d-607b-a0d8" type="selectionEntry" targetId="ead9-2ff9-9301-8c60">
@@ -2762,14 +2994,31 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
         <categoryLink targetId="2b65-a3f2-620a-dc58" id="2e78-27e4-fc2f-1cfe" primary="true" name="Recon"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Gyrfalcon Jetbike Sodality" hidden="false" id="044d-bbe4-377b-2684" type="selectionEntry" targetId="5494-8bdd-6978-8d32">
+    <entryLink import="true" name="Pallas Grav-Attack" hidden="false" id="044d-bbe4-377b-2684" type="selectionEntry" targetId="cdf4-0738-9331-095c">
       <categoryLinks>
         <categoryLink targetId="cf96-8891-3f9a-8921" id="97b2-9f38-9ffb-57f2" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Pallas Grav-Attack" hidden="false" id="044d-bbe4-377b-2684" type="selectionEntry" targetId="cdf4-0738-9331-095c">
+    <entryLink import="true" name="Gyrfalcon Jetbike Sodality" hidden="false" id="505b-2031-2089-59f4" type="selectionEntry" targetId="5494-8bdd-6978-8d32">
       <categoryLinks>
-        <categoryLink targetId="cf96-8891-3f9a-8921" id="97b2-9f38-9ffb-57f2" primary="true" name="Fast Attack"/>
+        <categoryLink targetId="cf96-8891-3f9a-8921" id="9405-4efa-bb76-1158" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Coronus Grav-Carrier" hidden="false" id="8181-60fd-d6eb-3a92" type="selectionEntry" targetId="40df-cbd0-f144-ccdb">
+      <categoryLinks>
+        <categoryLink targetId="52d0-8b78-439e-18e5" id="ca97-d9f5-7a97-04ca" primary="true" name="Heavy Transport"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Orion Assault Dropship" hidden="false" id="baae-c2d4-3028-7c1c" type="selectionEntry" targetId="0c29-b45c-d6e4-6a18">
+      <categoryLinks>
+        <categoryLink targetId="88e6-d373-4152-0dd8" id="aaff-1423-ac91-cb56" primary="false" name="Troops"/>
+        <categoryLink targetId="a46f-a465-0ead-d6b8" id="5b46-6027-c9eb-5060" primary="true" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Ares Gunship" hidden="false" id="c5e2-c9ab-a62d-2c5f" type="selectionEntry" targetId="0c44-ab22-006f-ebf3">
+      <categoryLinks>
+        <categoryLink targetId="88e6-d373-4152-0dd8" id="976d-0087-92f3-0ecf" primary="false" name="Troops"/>
+        <categoryLink targetId="a46f-a465-0ead-d6b8" id="4663-d0bb-f257-4f77" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
