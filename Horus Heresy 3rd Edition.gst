@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="9" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="10" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -3875,6 +3875,13 @@
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3705-3489-5318-793a"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="2" field="3705-3489-5318-793a">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="276f-7a07-a56c-affd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
             <categoryLink name="Support" hidden="false" id="0fda-8123-feae-9342" targetId="345f-9ba6-9b02-ed5c">
               <constraints>
@@ -3949,13 +3956,20 @@
           <categoryLinks>
             <categoryLink name="Prime Troops" hidden="false" id="6f1e-54be-753a-3ddf" targetId="c3f9-a7f3-984b-3fda">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9f6-ed6e-3b97-2c59"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3ab-da50-e5e0-666c" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
             <categoryLink name="Troops" hidden="false" id="a5ca-8d0c-d999-6477" targetId="88e6-d373-4152-0dd8">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b47-a597-d110-0bf2"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b47-a597-d110-0bf2" includeChildSelections="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="2" field="9b47-a597-d110-0bf2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="c3f9-a7f3-984b-3fda" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
             <categoryLink name="Recon" hidden="false" id="3a1c-fa26-069f-c3d8" targetId="2b65-a3f2-620a-dc58">
               <constraints>
