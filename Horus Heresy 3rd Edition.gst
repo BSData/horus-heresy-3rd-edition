@@ -5214,7 +5214,7 @@
           </modifiers>
           <comment>SA Only</comment>
         </forceEntry>
-        <forceEntry name="Chogorian Warband" id="0f6e-3db8-8b6f-74e1" hidden="true" publicationId="b905-0414-1057-bb34" page="147" sortIndex="56">
+        <forceEntry name="Auxiliary - Chogorian Warband" id="0f6e-3db8-8b6f-74e1" hidden="true" publicationId="b905-0414-1057-bb34" page="147" sortIndex="56">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="54cc-e754-3644-660e" targetId="1a65-8b23-419b-b30f"/>
           </categoryLinks>
@@ -5267,6 +5267,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5741-f879-0eec-5ad9"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="5866-7374-495e-6757" targetId="1a65-8b23-419b-b30f"/>
           </categoryLinks>
           <constraints>
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="06ca-d5c5-58f1-f184"/>
@@ -5327,6 +5328,7 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f90b-a16b-db8d-1300"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Apex Detachment" hidden="false" id="114f-73c0-6b53-4e12" targetId="6b46-02bb-c8aa-142d"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -5396,6 +5398,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="618e-4e4f-1675-ca81" targetId="1a65-8b23-419b-b30f"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -5429,6 +5432,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="306d-42d8-ef52-c726"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="2d58-316e-79d5-2034" targetId="1a65-8b23-419b-b30f"/>
           </categoryLinks>
           <comment>WE - Need to set constraints</comment>
           <modifiers>
@@ -5481,6 +5485,7 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ede2-484b-c8ad-0654"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="ffe5-1e65-907d-9b83" targetId="1a65-8b23-419b-b30f"/>
           </categoryLinks>
           <comment>BA Auxiliary; Needs Mechanics</comment>
           <modifiers>
@@ -5509,6 +5514,7 @@
                 <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="4e96-bf2a-2ed0-1f7e"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="44f1-1e68-30b9-2b6a" targetId="1a65-8b23-419b-b30f"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -5554,6 +5560,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba8c-497c-0bf2-7ea7"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="397b-95e4-2d0b-9598" targetId="1a65-8b23-419b-b30f"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -5587,6 +5594,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84a5-959c-6e92-f406"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="61c8-0a14-7098-1526" targetId="1a65-8b23-419b-b30f"/>
           </categoryLinks>
           <comment>SoH</comment>
         </forceEntry>
@@ -5782,6 +5790,9 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="9e45-da32-e845-85db" targetId="1a65-8b23-419b-b30f"/>
+          </categoryLinks>
         </forceEntry>
         <forceEntry name="Auxiliary - Exalted Conclave" id="c961-7007-0142-5d07" hidden="false" sortIndex="80" publicationId="e54c-7040-0f35-d85d" page="273">
           <comment>WB</comment>
@@ -5798,6 +5809,9 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="b051-562e-890e-d4a4" targetId="1a65-8b23-419b-b30f"/>
+          </categoryLinks>
         </forceEntry>
         <forceEntry name="Auxiliary - Headhunter Leviathal" id="74f4-a9d0-a2be-b4bd" hidden="false" sortIndex="81" publicationId="e54c-7040-0f35-d85d" page="295">
           <comment>AL</comment>
@@ -5814,6 +5828,9 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="0e92-d177-5376-cb00" targetId="1a65-8b23-419b-b30f"/>
+          </categoryLinks>
         </forceEntry>
         <forceEntry name="Auxiliary - Daemonic Manifestation" id="0078-217d-19d4-a354" hidden="true" sortIndex="40" publicationId="e54c-7040-0f35-d85d" page="16">
           <comment>Traitor Legions Only, Esoterist</comment>
@@ -5962,6 +5979,9 @@
               <comment>Legions</comment>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="bc87-f9cb-3b79-c52b" targetId="1a65-8b23-419b-b30f"/>
+          </categoryLinks>
         </forceEntry>
         <forceEntry name="Auxiliary - Veteran Cadre" id="1834-a10c-a732-d989" hidden="true" sortIndex="41" publicationId="e54c-7040-0f35-d85d" page="16">
           <comment>Legions - Champion</comment>
@@ -6110,6 +6130,9 @@
               <comment>Legions</comment>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="544b-a557-7a7f-8a42" targetId="1a65-8b23-419b-b30f"/>
+          </categoryLinks>
         </forceEntry>
         <forceEntry name="Auxiliary - Apothecarion Delegation" id="41f6-7dfc-4eb9-f6ef" hidden="true" sortIndex="42" publicationId="e54c-7040-0f35-d85d" page="16">
           <comment>Legions</comment>
@@ -6258,6 +6281,9 @@
               <comment>Legions</comment>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="10bd-1900-4f7f-5d76" targetId="1a65-8b23-419b-b30f"/>
+          </categoryLinks>
         </forceEntry>
         <forceEntry name="Auxiliary - Techmarine Covenant" id="7993-0219-c614-f612" hidden="true" sortIndex="43" publicationId="e54c-7040-0f35-d85d" page="17">
           <comment>Legions</comment>
@@ -6406,6 +6432,9 @@
               <comment>Legions</comment>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="35ee-fc2a-6a9b-4a93" targetId="1a65-8b23-419b-b30f"/>
+          </categoryLinks>
         </forceEntry>
         <forceEntry name="Auxiliary - Storm Battery" id="d089-8cc7-96a7-903f" hidden="true" sortIndex="44" publicationId="e54c-7040-0f35-d85d" page="17">
           <comment>Legions</comment>
@@ -6554,6 +6583,9 @@
               <comment>Legions</comment>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="b8dc-4a0d-8e24-ea29" targetId="1a65-8b23-419b-b30f"/>
+          </categoryLinks>
         </forceEntry>
         <forceEntry name="Auxiliary - Recon Demi-Company" id="38f7-2240-f8ee-6cce" hidden="true" sortIndex="43" publicationId="e54c-7040-0f35-d85d" page="17">
           <comment>Legions</comment>
@@ -6702,6 +6734,9 @@
               <comment>Legions</comment>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="5d9b-7994-2000-e107" targetId="1a65-8b23-419b-b30f"/>
+          </categoryLinks>
         </forceEntry>
       </forceEntries>
       <constraints>
