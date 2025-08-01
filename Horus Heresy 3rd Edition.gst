@@ -5666,6 +5666,24 @@
         <forceEntry name="Auxiliary - Headhunter Leviathal" id="74f4-a9d0-a2be-b4bd" hidden="false" sortIndex="81" publicationId="e54c-7040-0f35-d85d" page="295">
           <comment>AL</comment>
         </forceEntry>
+        <forceEntry name="Auxiliary - Daemonic Manifestation" id="0078-217d-19d4-a354" hidden="false" sortIndex="40" publicationId="e54c-7040-0f35-d85d" page="16">
+          <comment>Traitor Legions Only, Esoterist</comment>
+        </forceEntry>
+        <forceEntry name="Auxiliary - Veteran Cadre" id="1834-a10c-a732-d989" hidden="false" sortIndex="41" publicationId="e54c-7040-0f35-d85d" page="16">
+          <comment>Legions - Champion</comment>
+        </forceEntry>
+        <forceEntry name="Auxiliary - Apothecarion Delegation" id="41f6-7dfc-4eb9-f6ef" hidden="false" sortIndex="42" publicationId="e54c-7040-0f35-d85d" page="16">
+          <comment>Legions</comment>
+        </forceEntry>
+        <forceEntry name="Auxiliary - Techmarine Covenant" id="7993-0219-c614-f612" hidden="false" sortIndex="43" publicationId="e54c-7040-0f35-d85d" page="17">
+          <comment>Legions</comment>
+        </forceEntry>
+        <forceEntry name="Auxiliary - Storm Battery" id="d089-8cc7-96a7-903f" hidden="false" sortIndex="44" publicationId="e54c-7040-0f35-d85d" page="17">
+          <comment>Legions</comment>
+        </forceEntry>
+        <forceEntry name="Auxiliary - Recon Demi-Company" id="38f7-2240-f8ee-6cce" hidden="false" sortIndex="43" publicationId="e54c-7040-0f35-d85d" page="17">
+          <comment>Legions</comment>
+        </forceEntry>
       </forceEntries>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="dae8-8a74-0984-6332" includeChildSelections="false"/>
