@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="12" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="13" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -5230,7 +5230,7 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3cd4-1efc-c9a1-b1ef" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Army Configuration" hidden="false" id="fac8-8790-489d-f551" targetId="abfa-86ab-1726-077a" type="categoryEntry"/>
+        <categoryLink name="Army Configuration" hidden="false" id="fac8-8790-489d-f551" targetId="abfa-86ab-1726-077a"/>
       </categoryLinks>
       <modifiers>
         <modifier type="decrement" value="1" field="0ab6-91a0-792e-4068">
@@ -6371,6 +6371,6 @@ All Models in any of these Units have their Faction Trait replaced with &apos;Al
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Army Configuration" hidden="false" id="5370-2415-f349-02e0" type="selectionEntry" targetId="a827-ee7f-fe7d-9e0e"/>
+    <entryLink import="true" name="Army Configuration" hidden="true" id="5370-2415-f349-02e0" type="selectionEntry" targetId="a827-ee7f-fe7d-9e0e"/>
   </entryLinks>
 </gameSystem>
