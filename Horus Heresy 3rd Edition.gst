@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="11" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="12" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -324,6 +324,18 @@
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a1b-bae6-7bea-4a8a" includeChildSelections="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="4" field="5a1b-bae6-7bea-4a8a">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="2516-2347-2ca5-af1d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="8f12-c30a-6c20-6296" childId="7b69-a372-a803-9c6f" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="8f12-c30a-6c20-6296" childId="470d-5d41-cc59-b85b" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="8f12-c30a-6c20-6296" childId="b564-8809-1bcf-d8b3" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+                  </conditions>
+                  <comment>DA Lion</comment>
+                </modifier>
+              </modifiers>
             </categoryLink>
             <categoryLink name="Support" hidden="false" id="26de-5f98-2e27-9554" targetId="345f-9ba6-9b02-ed5c">
               <constraints>
@@ -3471,7 +3483,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01b3-450e-6e90-b041" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Apex Detachment" hidden="false" id="bcef-974a-de97-c3d7" targetId="6b46-02bb-c8aa-142d" type="categoryEntry"/>
+            <categoryLink name="Apex Detachment" hidden="false" id="bcef-974a-de97-c3d7" targetId="6b46-02bb-c8aa-142d"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -4012,6 +4024,18 @@
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="40e2-3f1b-bcc1-96f7"/>
               </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="8e95-747d-01c5-d9a0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e6e4-964a-5852-9c07" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="8e95-747d-01c5-d9a0">
+                  <conditions>
+                    <condition type="equalTo" value="2" field="selections" scope="force" childId="e6e4-964a-5852-9c07" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
             <categoryLink name="War-engine" hidden="false" id="10d7-7755-4470-ea79" targetId="2499-7239-685f-8465">
               <constraints>
@@ -4713,266 +4737,13 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7fe5-6dd7-3b0b-1e6a"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Prime Command" hidden="false" id="9e63-ed35-17c1-5132" targetId="c85c-2963-658f-1bb9" type="categoryEntry">
+            <categoryLink name="Prime Command" hidden="false" id="9e63-ed35-17c1-5132" targetId="c85c-2963-658f-1bb9">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b697-d463-64a5-0141"/>
               </constraints>
             </categoryLink>
           </categoryLinks>
           <comment>UM Only</comment>
-        </forceEntry>
-        <forceEntry name="Auxiliary Detachment - Veletaris Tercio" id="e1a1-2699-4681-47ab" hidden="true">
-          <categoryLinks>
-            <categoryLink name="Prime Elites" hidden="false" id="a875-dae8-de74-dfe4" targetId="276f-7a07-a56c-affd">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cdc-fc44-fe03-f97d" includeChildSelections="true"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Elites" hidden="false" id="998e-7ea3-b716-9ae4" targetId="5d5e-958f-e388-50b5">
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3705-3489-5318-793a"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Support" hidden="false" id="0fda-8123-feae-9342" targetId="345f-9ba6-9b02-ed5c">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab1e-36b5-697e-34e3"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Heavy Transport" hidden="false" id="ec9b-9d16-995a-d239" targetId="52d0-8b78-439e-18e5">
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2526-9a96-beb3-4ab2"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="High Command" hidden="false" id="cc72-1948-26cc-64b2" targetId="d9a6-9b5f-b18a-4d63">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bc08-8af4-ec72-8eeb"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Prime High Command" hidden="false" id="c1f9-f2fc-2c7e-87c0" targetId="3568-ad75-b452-3137">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7106-9b23-0662-eada"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Command" hidden="false" id="9514-7423-7dff-e497" targetId="6dbf-654a-f06f-2d69">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="601e-8b3e-51d8-64db"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Prime Command" hidden="false" id="ee20-0f55-d799-2da6" targetId="c85c-2963-658f-1bb9">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6cee-5e76-b9d1-e0e0" includeChildSelections="true"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Retinue" hidden="false" id="ce3d-8ce3-0407-354a" targetId="a38e-50ff-310f-f19e">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="79b8-c658-c7d2-6c7f"/>
-              </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="79b8-c658-c7d2-6c7f">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </categoryLink>
-            <categoryLink name="Prime Retinue" hidden="false" id="8959-f6ec-9d70-bda4" targetId="c66b-ef39-b20f-725b">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="17f9-19b9-8583-3feb"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="War-engine" hidden="false" id="a1c0-d1c1-2527-f4b8" targetId="2499-7239-685f-8465">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3805-0021-e6f3-a45c"/>
-              </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="3805-0021-e6f3-a45c">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </categoryLink>
-            <categoryLink name="Prime War-engine" hidden="false" id="0125-eefc-6eab-6f53" targetId="9699-67c9-2c0b-e64b">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5c42-6505-7ef5-1529"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Troops" hidden="false" id="59de-1163-47f0-ef2c" targetId="88e6-d373-4152-0dd8">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9ef9-4163-ad8b-ed4d"/>
-              </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="9ef9-4163-ad8b-ed4d">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </categoryLink>
-            <categoryLink name="Prime Troops" hidden="false" id="ff24-8bf1-0346-b18f" targetId="c3f9-a7f3-984b-3fda">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1dea-2115-7c1b-08e2" includeChildSelections="true"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Prime Support" hidden="false" id="2b1f-73f8-3361-79d0" targetId="1c79-ecdf-9a64-84c9">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8f01-8b5b-ed43-53b1"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Transport" hidden="false" id="950b-b957-58ef-8c30" targetId="d162-4711-5d60-0a48">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="fb64-85e7-0742-d7b3"/>
-              </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="fb64-85e7-0742-d7b3">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </categoryLink>
-            <categoryLink name="Prime Transport" hidden="false" id="effe-f577-4edf-f982" targetId="fc27-1a48-84ae-aa7b">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2a9e-55dd-5e1d-48ba"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Heavy Assault" hidden="false" id="de6e-cccf-0c6c-a910" targetId="3235-bd79-e9b1-60fa">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0402-ee4b-056c-ef3c"/>
-              </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="0402-ee4b-056c-ef3c">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </categoryLink>
-            <categoryLink name="Prime Heavy Assault" hidden="false" id="cbb4-c029-8e8c-d2cb" targetId="1e95-35f0-1353-ffa1">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a09d-4c59-e6a1-88ad"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Prime Heavy Transport" hidden="false" id="7adb-bb84-db3a-9c25" targetId="abff-3686-c39a-9a24">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5e31-7840-c9b6-bb50"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Armour" hidden="false" id="5900-df7f-8ce5-f829" targetId="643a-1012-bd51-6537">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0165-b975-21a2-e6bc"/>
-              </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="0165-b975-21a2-e6bc">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </categoryLink>
-            <categoryLink name="Prime Armour" hidden="false" id="4890-724e-d9a2-8fb7" targetId="4460-7bc1-4d80-aecb">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2059-52b9-d5d3-a6c5"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Recon" hidden="false" id="17fb-cfed-71e1-4d3a" targetId="2b65-a3f2-620a-dc58">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="121a-6edc-c8fa-99e7"/>
-              </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="121a-6edc-c8fa-99e7">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </categoryLink>
-            <categoryLink name="Prime Recon" hidden="false" id="612c-f746-6f3a-2868" targetId="6348-ecd0-714d-042a">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="54a7-a789-061e-8bdd"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Fast Attack" hidden="false" id="82d5-270c-3206-fdbf" targetId="cf96-8891-3f9a-8921">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4023-4741-317e-2704"/>
-              </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="4023-4741-317e-2704">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </categoryLink>
-            <categoryLink name="Prime Fast Attack" hidden="false" id="d7f7-c027-6cce-b9e8" targetId="c291-144b-3da6-37ed">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="03ed-0267-edcf-0a93"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="55a1-8512-405b-8905" targetId="1a65-8b23-419b-b30f"/>
-          </categoryLinks>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7851-69ac-f701-034e" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7851-69ac-f701-034e" shared="true"/>
-                  </conditions>
-                  <comment>Solar Auxilia</comment>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <comment>SA Only</comment>
-        </forceEntry>
-        <forceEntry name="Auxiliary Detachment - Armour Tercio" id="6aff-b91d-02bb-7461" hidden="true">
-          <categoryLinks>
-            <categoryLink name="Armour" hidden="false" id="f360-c3d4-9443-eb28" targetId="643a-1012-bd51-6537">
-              <constraints>
-                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e63e-7101-ee0c-825b"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="880f-e609-7151-ee38" targetId="1a65-8b23-419b-b30f"/>
-          </categoryLinks>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7851-69ac-f701-034e" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7851-69ac-f701-034e" shared="true"/>
-                  </conditions>
-                  <comment>Solar Auxilia</comment>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <comment>SA Only</comment>
-        </forceEntry>
-        <forceEntry name="Auxiliary Detachment - Artillery Tercio" id="371d-e9ef-7bf9-47de" hidden="true">
-          <categoryLinks>
-            <categoryLink name="Support" hidden="false" id="0dd8-e083-c8d5-f6cc" targetId="345f-9ba6-9b02-ed5c">
-              <constraints>
-                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3a15-2aaa-7be7-b63e"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="8dec-bd47-6453-908b" targetId="1a65-8b23-419b-b30f"/>
-          </categoryLinks>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7851-69ac-f701-034e" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7851-69ac-f701-034e" shared="true"/>
-                  </conditions>
-                  <comment>Solar Auxilia</comment>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <comment>SA Only</comment>
         </forceEntry>
         <forceEntry name="Auxiliary Detachment - Infantry Tercio" id="243b-4ffd-9808-11d8" hidden="true">
           <categoryLinks>
@@ -5169,10 +4940,10 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7851-69ac-f701-034e" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7851-69ac-f701-034e" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="0a35-fce3-188c-b3aa" shared="true"/>
                   </conditions>
-                  <comment>Solar Auxilia</comment>
+                  <comment>DA</comment>
                 </conditionGroup>
               </conditionGroups>
               <comment>Solar Auxilia</comment>
@@ -5182,14 +4953,14 @@
         </forceEntry>
         <forceEntry name="Auxiliary Detachment - Scout Tercio" id="551a-23a1-7758-2688" hidden="true">
           <categoryLinks>
-            <categoryLink name="Recon" hidden="false" id="c03a-18b4-2893-0f8b" targetId="2b65-a3f2-620a-dc58">
+            <categoryLink name="Prime Troops" hidden="false" id="94e9-aa1b-f765-30b9" targetId="c3f9-a7f3-984b-3fda">
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a2d1-1899-30ed-b88f"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7485-c042-065d-3c73" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="War-engine" hidden="false" id="3e94-ab56-d9c7-7cfe" targetId="2499-7239-685f-8465">
+            <categoryLink name="Transport" hidden="false" id="12fc-ab6b-2853-b8e3" targetId="d162-4711-5d60-0a48">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="744f-12da-093f-e8db"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7f59-88d5-92e4-d183" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="7fc3-b32d-cdda-e42f" targetId="1a65-8b23-419b-b30f"/>
@@ -5208,6 +4979,283 @@
             </modifier>
           </modifiers>
           <comment>SA Only</comment>
+        </forceEntry>
+        <forceEntry name="Auxiliary - Deathwing Conclave" id="beab-ecac-9ec5-4c7b" hidden="true" sortIndex="32">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                  </conditions>
+                  <comment>DA</comment>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Dark Angels only</comment>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Prime Retinue" hidden="false" id="07ab-e9d8-7231-1256" targetId="c66b-ef39-b20f-725b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e908-92b6-1812-627b" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Elites" hidden="false" id="ec14-b91f-9298-97c8" targetId="5d5e-958f-e388-50b5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c668-0725-a2ea-9b20" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Heavy Assault" hidden="false" id="2ffc-a5a6-061d-25bf" targetId="3235-bd79-e9b1-60fa">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e0b-f24b-fb46-08ce" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Retinue" hidden="false" id="25fe-0f64-1e7c-122d" targetId="a38e-50ff-310f-f19e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1711-40bf-a0bf-dd94" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="f67e-e26b-c0a3-71b4" targetId="1a65-8b23-419b-b30f"/>
+            <categoryLink name="Prime Elites" hidden="false" id="68b4-0e1b-f608-1288" targetId="276f-7a07-a56c-affd">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8378-a814-c6cf-4258" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Heavy Assault" hidden="false" id="8e4e-d8fd-0b1f-c9f2" targetId="1e95-35f0-1353-ffa1">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3d24-cf22-cfe5-2a32" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <comment>DA only</comment>
+        </forceEntry>
+        <forceEntry name="Auxiliary - Dreadwing Cadre" id="00a1-8ee6-cf9a-2026" hidden="true" sortIndex="29">
+          <categoryLinks>
+            <categoryLink name="Support" hidden="false" id="eed6-6a89-3623-a61e" targetId="345f-9ba6-9b02-ed5c">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a9fa-66ff-d067-22ee" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="a9fa-66ff-d067-22ee">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="d788-b46c-c9f2-0aa9" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" value="1" field="a9fa-66ff-d067-22ee">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="5e1a-86ac-b637-daf2" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="ceil" value="3" field="a9fa-66ff-d067-22ee"/>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="Prime Support" hidden="false" id="11a9-522c-6e92-10bd" targetId="1c79-ecdf-9a64-84c9">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="93da-e7d2-0f2f-1aa2" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="93da-e7d2-0f2f-1aa2">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="d788-b46c-c9f2-0aa9" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" value="1" field="93da-e7d2-0f2f-1aa2">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="5e1a-86ac-b637-daf2" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="ceil" value="1" field="93da-e7d2-0f2f-1aa2"/>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="1960-9ea5-0af3-43af" targetId="1a65-8b23-419b-b30f"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                  </conditions>
+                  <comment>DA</comment>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Dark Angels only</comment>
+            </modifier>
+          </modifiers>
+          <comment>DA only</comment>
+        </forceEntry>
+        <forceEntry name="Auxiliary - Firewing Echelon" id="95b1-93c1-a733-37ac" hidden="true" sortIndex="33">
+          <categoryLinks>
+            <categoryLink name="Recon" hidden="false" id="6a88-cbbf-0b8b-3220" targetId="2b65-a3f2-620a-dc58">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9bc0-4514-a304-bfbb" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Recon" hidden="false" id="d29f-01c4-1036-f3a9" targetId="6348-ecd0-714d-042a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80e5-7643-3d30-6866" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Elites" hidden="false" id="1f9c-5b03-5aa7-840d" targetId="5d5e-958f-e388-50b5">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c38c-a107-e3d1-bb8e" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="c38c-a107-e3d1-bb8e">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="f1c4-6d65-d660-f16f" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="ceil" value="2" field="c38c-a107-e3d1-bb8e"/>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="7c2c-2244-5a97-956e" targetId="1a65-8b23-419b-b30f"/>
+            <categoryLink name="Prime Elites" hidden="false" id="ce12-189c-8d83-da7a" targetId="276f-7a07-a56c-affd">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="26f1-4635-881f-f3ed" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                  </conditions>
+                  <comment>DA</comment>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Dark Angels only</comment>
+            </modifier>
+          </modifiers>
+          <comment>DA only</comment>
+        </forceEntry>
+        <forceEntry name="Auxiliary - Ironwing Gauntlet" id="6017-b8be-1141-788b" hidden="true" sortIndex="28">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                  </conditions>
+                  <comment>DA</comment>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Dark Angels only</comment>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Heavy Transport" hidden="false" id="00a5-f411-abc8-6193" targetId="52d0-8b78-439e-18e5">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9ddc-79bb-1739-c518" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Armour" hidden="false" id="43a5-0c78-76af-cc58" targetId="643a-1012-bd51-6537">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2246-557a-d7ba-ca74" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="c515-5974-067a-5dff" targetId="1a65-8b23-419b-b30f"/>
+            <categoryLink name="Prime Heavy Transport" hidden="false" id="3ee1-c228-9e26-db11" targetId="abff-3686-c39a-9a24">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="16b8-59d5-c139-de63" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Armour" hidden="false" id="a004-5b44-329a-614a" targetId="4460-7bc1-4d80-aecb" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="78df-01b0-821b-44fa" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <comment>DA only</comment>
+        </forceEntry>
+        <forceEntry name="Auxiliary - Ravenwing Lance" id="9d54-d23d-68dd-739c" hidden="true" sortIndex="31">
+          <categoryLinks>
+            <categoryLink name="Recon" hidden="false" id="1f66-4d68-6e5d-e637" targetId="2b65-a3f2-620a-dc58">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d567-e552-cddd-2656" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="d567-e552-cddd-2656">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="512e-6a63-1bd3-8a22" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="ceil" value="2" field="d567-e552-cddd-2656"/>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="Fast Attack" hidden="false" id="729b-ad17-512f-4975" targetId="cf96-8891-3f9a-8921">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f492-8896-78e4-c97a" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Fast Attack" hidden="false" id="04db-b265-0736-1c3c" targetId="c291-144b-3da6-37ed">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a81f-97f9-4ed0-6103" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="132c-f4fc-3e9a-377a" targetId="1a65-8b23-419b-b30f"/>
+            <categoryLink name="Prime Recon" hidden="false" id="bc73-e531-7905-4160" targetId="6348-ecd0-714d-042a">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="99ef-53af-5747-92cb" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                  </conditions>
+                  <comment>DA</comment>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Dark Angels only</comment>
+            </modifier>
+          </modifiers>
+          <comment>DA only</comment>
+        </forceEntry>
+        <forceEntry name="Auxiliary - Stormwing Muster" id="b720-dcf5-2b58-75fb" hidden="true" sortIndex="30">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                  </conditions>
+                  <comment>DA</comment>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Dark Angels only</comment>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Prime Troops" hidden="false" id="975b-e2fb-e0da-3681" targetId="c3f9-a7f3-984b-3fda">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d11c-5e16-a123-7a54" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Transport" hidden="false" id="262a-e67b-fc80-0bac" targetId="d162-4711-5d60-0a48">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="baaa-b50b-a3a1-8519" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Troops" hidden="false" id="a3a4-bde1-0559-3d5f" targetId="88e6-d373-4152-0dd8">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="19eb-31be-0872-4945" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="f01f-9be1-74a6-e448" targetId="1a65-8b23-419b-b30f"/>
+          </categoryLinks>
+          <comment>DA only</comment>
         </forceEntry>
       </forceEntries>
       <constraints>
@@ -5479,6 +5527,15 @@
           </categoryLinks>
         </forceEntry>
       </forceEntries>
+      <forceEntryLinks>
+        <forceEntryLink name="Auxiliary - Armoured Fist" id="76af-d532-e112-ff57" hidden="false" targetId="cc51-fdce-8a34-dbcf" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Tactical Support" id="54c6-81f4-7126-dd91" hidden="false" targetId="2965-5682-3cbc-8b47" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Armoured Support" id="fdbd-49bd-6f7c-d052" hidden="false" targetId="4a2f-ac9e-195e-77cf" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Heavy Support" id="42ce-6cce-94d2-2cde" hidden="false" targetId="bd1f-82a0-abd4-cd56" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Combat Pioneer" id="24dd-2954-d377-e2b9" hidden="false" targetId="edf5-6891-81d8-6309" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Shock Assault" id="90c4-0f1d-4e55-79ee" hidden="false" targetId="c9a5-3069-920b-32f1" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - First Strike" id="4c21-1d24-6a77-3187" hidden="false" targetId="c444-8242-d3fc-b5b0" type="forceEntry"/>
+      </forceEntryLinks>
       <modifiers>
         <modifier type="decrement" value="1" field="4823-b27b-f750-5a63">
           <conditions>
@@ -5839,7 +5896,7 @@
         <categoryLink name="Fast Attack" hidden="false" id="3ee2-229e-9dcc-487a" targetId="cf96-8891-3f9a-8921"/>
         <categoryLink name="Prime Fast Attack" hidden="false" id="ed24-0e72-92b0-baae" targetId="c291-144b-3da6-37ed"/>
         <categoryLink name="Lord of War" hidden="false" id="e480-805a-cba5-0102" targetId="a46f-a465-0ead-d6b8"/>
-        <categoryLink name="Warlord" hidden="false" id="a9f0-0981-4d0f-a835" targetId="22ee-7208-4089-b005" type="categoryEntry"/>
+        <categoryLink name="Warlord" hidden="false" id="a9f0-0981-4d0f-a835" targetId="22ee-7208-4089-b005"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -5868,13 +5925,16 @@
     <selectionEntry type="upgrade" import="true" name="DON&apos;T SUBMIT BUGS FOR NOT IMPLEMENTED FUNCTIONALITY. See export for list." hidden="false" id="cd4a-d335-2d3a-91e0" defaultAmount="1">
       <rules>
         <rule name="Things that aren&apos;t implemented" id="10ac-cafa-6c21-0fa3" hidden="false">
-          <description>- Knights
-- Solar Aux detachment validation (use your brain)
-- A lot of detachment validation beyond the basic ones.
-- Legion primes and legion wargear.
-- A ton of other small stuff.
+          <description>Knights
+Solar Aux
+A lot of detachment validation beyond the basic ones.
+Legion primes and legion wargear.
 
-Please don&apos;t submit bug reports for any of these things. Please only submit bug reports for errors/broken functionality.</description>
+
+A ton of other small stuff.
+
+
+Please don&apos;t submit bug reports for any of these things</description>
         </rule>
       </rules>
       <categoryLinks>
