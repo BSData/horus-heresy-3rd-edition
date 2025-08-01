@@ -310,6 +310,18 @@
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a1b-bae6-7bea-4a8a" includeChildSelections="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="4" field="5a1b-bae6-7bea-4a8a">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="2516-2347-2ca5-af1d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="8f12-c30a-6c20-6296" childId="7b69-a372-a803-9c6f" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="8f12-c30a-6c20-6296" childId="470d-5d41-cc59-b85b" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="8f12-c30a-6c20-6296" childId="b564-8809-1bcf-d8b3" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+                  </conditions>
+                  <comment>DA Lion</comment>
+                </modifier>
+              </modifiers>
             </categoryLink>
             <categoryLink name="Support" hidden="false" id="26de-5f98-2e27-9554" targetId="345f-9ba6-9b02-ed5c">
               <constraints>
@@ -4980,7 +4992,7 @@
             </categoryLink>
             <categoryLink name="Heavy Assault" hidden="false" id="2ffc-a5a6-061d-25bf" targetId="3235-bd79-e9b1-60fa">
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2e0b-f24b-fb46-08ce" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e0b-f24b-fb46-08ce" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
             <categoryLink name="Retinue" hidden="false" id="25fe-0f64-1e7c-122d" targetId="a38e-50ff-310f-f19e">
@@ -5088,14 +5100,6 @@
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="26f1-4635-881f-f3ed" includeChildSelections="true"/>
               </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="26f1-4635-881f-f3ed">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="f1c4-6d65-d660-f16f" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-                <modifier type="ceil" value="1" field="26f1-4635-881f-f3ed"/>
-              </modifiers>
             </categoryLink>
           </categoryLinks>
           <modifiers>
@@ -5144,6 +5148,11 @@
             <categoryLink name="Prime Heavy Transport" hidden="false" id="3ee1-c228-9e26-db11" targetId="abff-3686-c39a-9a24">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="16b8-59d5-c139-de63" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Armour" hidden="false" id="a004-5b44-329a-614a" targetId="4460-7bc1-4d80-aecb" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="78df-01b0-821b-44fa" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
           </categoryLinks>
