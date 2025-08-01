@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="a956-190d-3b47-6258" name="                        XII - World Eaters" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="4" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="a956-190d-3b47-6258" name="                        XII - World Eaters" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="5" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Angron" hidden="false" id="af62-d4a0-c800-712e">
       <selectionEntries>
@@ -697,6 +697,13 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
           <description>Angron Transfigured cannot be included in the same Army as Angron.</description>
         </rule>
       </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kharn the Bloody" hidden="false" id="19c9-b57d-a308-b655">
       <categoryLinks>
@@ -867,6 +874,18 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="0797-1862-f00c-9f92">
+      <categoryLinks>
+        <categoryLink name="Army Configuration" hidden="false" id="d350-15f2-57f6-8530" targetId="abfa-86ab-1726-077a" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Rite of War" hidden="false" id="cf3f-3fb5-2d7a-f3d6" type="selectionEntryGroup" targetId="1455-b8d9-311a-e3f6"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0714-6abe-5ada-250e"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6e1-5095-9699-0572"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="ac5c-9c2b-185d-f926" importRootEntries="true" targetId="9b32-f350-6aa9-9c09"/>
@@ -980,7 +999,6 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="RoW: Legiones Hereticus World Eaters" hidden="false" id="a095-2238-5c9e-0576">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe25-a6bc-ce7a-7031"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="079c-1e93-eb2e-8bed"/>
           </constraints>
           <selectionEntries>
@@ -1017,6 +1035,10 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6640-e6aa-22c5-e2ff"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d84e-b8fa-8d7e-bfce"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <modifiers>
@@ -1064,14 +1086,21 @@ On any Turn in which they made a Charge Move, Models with this Special Rule modi
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a697-8d6f-a712-1a0d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3dc8-1969-b798-5b8a"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3636-a9f8-f569-55e4"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbb9-fbb9-426e-2885"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f87e-27e1-d2b0-1f53"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f32-3141-2444-0309"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="World Eater Prime Benefits" id="9bf2-761f-9cb9-ae63" hidden="false">
       <selectionEntries>
@@ -1098,6 +1127,7 @@ On any Turn in which they made a Charge Move, Models with this Special Rule modi
     <entryLink import="true" name="Angron Transfigured" hidden="false" id="ccc1-bba6-cf7c-cfa8" type="selectionEntry" targetId="eb31-de9c-e5ef-a9ac"/>
     <entryLink import="true" name="Lotara Sarrin" hidden="false" id="cfd9-ce39-c208-7dc0" type="selectionEntry" targetId="e628-409b-5f93-170a"/>
     <entryLink import="true" name="Kharn the Bloody" hidden="false" id="e0d5-8405-aba7-628b" type="selectionEntry" targetId="19c9-b57d-a308-b655"/>
+    <entryLink import="true" name="Rite of War" hidden="false" id="1ce9-43c5-ef27-ef7f" type="selectionEntry" targetId="0797-1862-f00c-9f92"/>
   </entryLinks>
   <forceEntries>
     <forceEntry name="Auxiliary Detachment - Berserker Cadre" id="bda6-c5d3-eafc-4eb5" hidden="true">
