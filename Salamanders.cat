@@ -190,7 +190,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             </infoLink>
           </infoLinks>
           <categoryLinks>
-            <categoryLink targetId="7799-e1d6-762b-700b" id="0b38-1615-24a5-0525" primary="false" name="Paragon Model Type"/>
+            <categoryLink targetId="7799-e1d6-762b-700b" id="0b38-1615-24a5-0525" primary="true" name="Paragon Model Type"/>
             <categoryLink targetId="b980-187b-2b17-d635" id="e82e-c7c9-f42f-990e" primary="false" name="Unique Model Sub-Type"/>
             <categoryLink targetId="f6fe-18f5-7b4d-b57a" id="c842-f902-cc99-60b3" primary="false" name="Salamanders"/>
             <categoryLink targetId="4381-ed35-c3fa-a225" id="fc07-69ad-871e-a74f" primary="false" name="Loyalist"/>
@@ -220,6 +220,11 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3ed6-4961-a06e-33be" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink targetId="22ee-7208-4089-b005" id="ae7b-b3b7-6aa3-5279" primary="true" name="Warlord"/>
+        <categoryLink targetId="f6fe-18f5-7b4d-b57a" id="e726-99ad-7f2f-0f45" primary="false" name="Salamanders"/>
+        <categoryLink targetId="4381-ed35-c3fa-a225" id="aaf6-452e-c5b6-ffee" primary="false" name="Loyalist"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Firedrake Terminator Squad" hidden="false" id="09a9-6c68-9b0b-f24f" sortIndex="2">
       <selectionEntries>
@@ -424,7 +429,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
           <selectionEntryGroups>
             <selectionEntryGroup name="May select one of the following options" id="d865-6456-fc41-2ea4" hidden="false" sortIndex="7">
               <entryLinks>
-                <entryLink import="true" name="Power fist" hidden="false" id="844e-d220-dd84-3f39" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="3">
+                <entryLink import="true" name="Power fist" hidden="false" id="844e-d220-dd84-3f39" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="2">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
                   </costs>
@@ -432,7 +437,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4fd-1346-b65f-c2c4" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Thunder hammer" hidden="false" id="6170-2453-e542-3d46" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="5">
+                <entryLink import="true" name="Thunder hammer" hidden="false" id="6170-2453-e542-3d46" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="4">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
                   </costs>
@@ -445,12 +450,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f281-332f-2be0-4864" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Forge-crafted Power Weapon" hidden="false" id="2c15-2e76-cd3a-3da1" type="selectionEntryGroup" targetId="e23d-cde9-fa4f-52f5" sortIndex="2">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d248-60c9-304f-dffa" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Forge-crafted power fist" hidden="false" id="06d2-b9e5-20cd-9d09" type="selectionEntry" targetId="8146-abba-1612-3d0f" sortIndex="4">
+                <entryLink import="true" name="Forge-crafted power fist" hidden="false" id="06d2-b9e5-20cd-9d09" type="selectionEntry" targetId="8146-abba-1612-3d0f" sortIndex="3">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
                   </costs>
@@ -464,8 +464,8 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink name="Elites" hidden="false" id="ea63-dc82-9dfb-c3dc" targetId="5d5e-958f-e388-50b5" primary="true"/>
         <categoryLink targetId="f6fe-18f5-7b4d-b57a" id="3fd7-23fc-65f5-2db4" primary="false" name="Salamanders"/>
+        <categoryLink targetId="88e6-d373-4152-0dd8" id="b6d4-2ac4-8a35-e527" primary="true" name="Troops"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="6245-5f05-7f15-8937" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -539,15 +539,15 @@ A Unit made up entirely of Models with this Special Rule is unaffected by any va
         </categoryLink>
         <categoryLink name="Armour" hidden="false" id="b77f-3ac7-6ec7-2253" targetId="643a-1012-bd51-6537">
           <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2d62-0b2c-d09d-ea07"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d62-0b2c-d09d-ea07"/>
           </constraints>
           <modifiers>
             <modifier type="increment" value="1" field="2d62-0b2c-d09d-ea07">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="b0ba-83cb-f3bf-bf2e" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="5cb0-777c-bc90-f31a" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="b0ba-83cb-f3bf-bf2e" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5cb0-777c-bc90-f31a" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -564,9 +564,10 @@ A Unit made up entirely of Models with this Special Rule is unaffected by any va
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f148-a6e4-5a8c-3aeb" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f148-a6e4-5a8c-3aeb" shared="true"/>
               </conditions>
-              <comment>Salamanders</comment>
+              <comment>SL</comment>
             </conditionGroup>
           </conditionGroups>
+          <comment>SL Only</comment>
         </modifier>
       </modifiers>
     </forceEntry>
