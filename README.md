@@ -57,6 +57,32 @@ All Auxilia units should have the following Traits at the root level of the unit
 ## Questoris Household Units
 All Auxilia units should have the following Traits at the root level of the unit (Add Link -> Profile -> Search for them):
 - \[Allegiance]
+
+# 4: Forces
+## 4.1: Location
+Auxiliary and Apex detachments belong in the GST, specifically as children of the crusade chart. 
+The allied detachment can then link all the auxiliary detachments. 
+Force Links requires New Recruit Editor 1.3.19 or higher.
+There are some exceptional detachments which could be in other places, 
+namely the emperor's children one that replaces the warlord detachment.
+## 4.2: Hiding
+Child detachments which need to be hidden in any one catalogue should be set hidden as default and 
+then unhidden in any force that can take it.
+We then set a "set hidden false" constraint with the appropriate "primary catalogue and force" constraint, 
+as well as any other factors (such as the presence of a character)
+
+## 4.3: Prime restrictions
+When adding what categories are allowed in a detachment, first check if there are any primes. 
+If so, keep in mind that logistical benefit adds a slot of (nearly) any type, and for that you'll need
+a set 0 primes of that slot type. It's simplest to just copy the example detachment and adjust min-max in that.
+
+## 4.4: Restricting a slot to a particular entry.
+Make a category called "Armour - Whatever thing only" 
+Add a modifier on that unit to "set primary category if ancestor is name of force"
+(Note that I need to confirm this is working and that it handles the restriction on prime slots properly, 
+since we use "set if category" on prime slots. I expect it will though)
+
+
 ---
 
 [BSData.net]: https://www.bsdata.net/
