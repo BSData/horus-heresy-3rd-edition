@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="11" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="12" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -3436,10 +3436,10 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapon Options" id="9471-b387-8e1b-4b5a" hidden="false" sortIndex="2">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Two options from the following list:" id="d25e-85ec-02d5-cf19" hidden="false" sortIndex="1" defaultSelectionEntryId="b2b0-557f-985e-ab0c">
+            <selectionEntryGroup name="Two options from the following list:" id="d25e-85ec-02d5-cf19" hidden="false" sortIndex="1" defaultSelectionEntryId="none">
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="70a0-1f8e-4227-bc32"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6e3e-81dd-b734-8957"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="54e1-e647-cd52-aed7"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8e32-2b06-3162-7dbc"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Leviathan siege claw and one meltagun" hidden="false" id="b2b0-557f-985e-ab0c" sortIndex="1">
@@ -3473,30 +3473,49 @@
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                    <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink import="true" name="Grav-flux bombard" hidden="false" id="d9e7-7edb-1311-c574" type="selectionEntry" targetId="da74-2cf9-db7a-419e" sortIndex="3"/>
-                <entryLink import="true" name="Leviathan storm cannon" hidden="false" id="4424-293a-e2cd-59cf" type="selectionEntry" targetId="878c-94f6-0685-0d7a" sortIndex="4"/>
-                <entryLink import="true" name="Cyclonic melta lance" hidden="false" id="8102-7bec-b5f2-d747" type="selectionEntry" targetId="b567-d6ca-225a-31d8" sortIndex="5"/>
+                <entryLink import="true" name="Grav-flux bombard" hidden="false" id="d9e7-7edb-1311-c574" type="selectionEntry" targetId="da74-2cf9-db7a-419e" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Leviathan storm cannon" hidden="false" id="4424-293a-e2cd-59cf" type="selectionEntry" targetId="878c-94f6-0685-0d7a" sortIndex="4">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Cyclonic melta lance" hidden="false" id="8102-7bec-b5f2-d747" type="selectionEntry" targetId="b567-d6ca-225a-31d8" sortIndex="5">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
               <modifiers>
-                <modifier type="set" value="0" field="70a0-1f8e-4227-bc32">
+                <modifier type="set" value="0" field="54e1-e647-cd52-aed7">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="b2b0-557f-985e-ab0c" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="b7ea-377b-438e-f1ab" shared="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="d949-5b9f-f2dd-a0e4" shared="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="1a93-0e7a-66c4-01c2" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
-                <modifier type="set" value="0" field="6e3e-81dd-b734-8957">
+                <modifier type="set" value="0" field="8e32-2b06-3162-7dbc">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="b2b0-557f-985e-ab0c" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="b7ea-377b-438e-f1ab" shared="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="d949-5b9f-f2dd-a0e4" shared="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="1a93-0e7a-66c4-01c2" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3507,17 +3526,57 @@
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Paired Leviathan siege claws and two meltaguns" hidden="false" id="d949-5b9f-f2dd-a0e4" sortIndex="6">
               <entryLinks>
-                <entryLink import="true" name="Paired Leviathan siege claws" hidden="false" id="d743-6479-90b0-f8c2" type="selectionEntry" targetId="0d5c-0630-689b-ae6f" sortIndex="1"/>
-                <entryLink import="true" name="Meltagun" hidden="false" id="270e-0f00-b647-f5dc" type="selectionEntry" targetId="b1e1-e164-5877-6734"/>
+                <entryLink import="true" name="Paired Leviathan siege claws" hidden="false" id="d743-6479-90b0-f8c2" type="selectionEntry" targetId="0d5c-0630-689b-ae6f" sortIndex="1" defaultAmount="2"/>
+                <entryLink import="true" name="Meltagun" hidden="false" id="270e-0f00-b647-f5dc" type="selectionEntry" targetId="b1e1-e164-5877-6734" defaultAmount="2"/>
               </entryLinks>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Paired Leviathan siege drills and two meltaguns" hidden="false" id="1a93-0e7a-66c4-01c2" sortIndex="7">
               <entryLinks>
-                <entryLink import="true" name="Paired Leviathan siege drills" hidden="false" id="2224-9bfa-dc55-dc21" type="selectionEntry" targetId="f1d4-d297-2484-deb1" sortIndex="1"/>
-                <entryLink import="true" name="Meltagun" hidden="false" id="e93c-fced-1399-5674" type="selectionEntry" targetId="b1e1-e164-5877-6734"/>
+                <entryLink import="true" name="Paired Leviathan siege drills" hidden="false" id="2224-9bfa-dc55-dc21" type="selectionEntry" targetId="f1d4-d297-2484-deb1" sortIndex="1" defaultAmount="2"/>
+                <entryLink import="true" name="Meltagun" hidden="false" id="e93c-fced-1399-5674" type="selectionEntry" targetId="b1e1-e164-5877-6734" defaultAmount="2"/>
               </entryLinks>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9e25-a1ea-5471-9995"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9d10-a1e1-664a-3662"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="9e25-a1ea-5471-9995">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="d949-5b9f-f2dd-a0e4" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="1a93-0e7a-66c4-01c2" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="9d10-a1e1-664a-3662">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="d949-5b9f-f2dd-a0e4" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="1a93-0e7a-66c4-01c2" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="May exchange it&apos;s two heavy flamers for:" id="8e43-cf94-01a8-3793" hidden="false" defaultSelectionEntryId="ca31-9576-d967-e694" sortIndex="3">
           <entryLinks>
