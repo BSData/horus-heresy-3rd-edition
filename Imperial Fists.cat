@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d186-cffc-0950-f632" name="                         VII - Imperial Fists" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="3" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="Arkangelmark5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d186-cffc-0950-f632" name="                         VII - Imperial Fists" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="5" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="Arkangelmark5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="4314-0fbc-731a-fa14" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="5470-c826-a822-2caa" targetId="9b32-f350-6aa9-9c09" importRootEntries="true"/>
@@ -493,9 +493,9 @@ Prepared Defenses: Until the end of the first Battle Turn of the Battle, all Mod
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Phalanx Warder-Squad" hidden="false" id="7ee4-7278-0ad7-4c29">
+    <selectionEntry type="unit" import="true" name="Phalanx Warder-Squad" hidden="false" id="7ee4-7278-0ad7-4c29">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Warder Sergeant" hidden="false" id="d99f-8c4b-e50d-698d" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Warder Sergeant" hidden="false" id="d99f-8c4b-e50d-698d" sortIndex="1">
           <entryLinks>
             <entryLink import="true" name="Allegiance Traits" hidden="false" id="ea17-79ec-6fa6-c9ed" type="selectionEntryGroup" targetId="edd3-9763-97ca-0323" sortIndex="5"/>
             <entryLink import="true" name="Legiones Astartes Trait" hidden="false" id="06c0-a821-d13e-a206" type="selectionEntryGroup" targetId="3014-5f25-bc3b-4675" sortIndex="6"/>
@@ -567,7 +567,7 @@ Prepared Defenses: Until the end of the first Battle Turn of the Battle, all Mod
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e58e-36a6-55d7-2b26-max" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Phalanx Warder " hidden="false" id="cb0b-fe46-94f9-947c" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Phalanx Warder " hidden="false" id="cb0b-fe46-94f9-947c" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Allegiance Traits" hidden="false" id="8f16-f1b9-764a-d009" type="selectionEntryGroup" targetId="edd3-9763-97ca-0323" sortIndex="5"/>
             <entryLink import="true" name="Legiones Astartes Trait" hidden="false" id="504b-2750-632f-7e93" type="selectionEntryGroup" targetId="3014-5f25-bc3b-4675" sortIndex="6"/>
@@ -593,11 +593,11 @@ Prepared Defenses: Until the end of the first Battle Turn of the Battle, all Mod
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
                 <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
                 <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
-                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">2</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">1</characteristic>
                 <characteristic name="I" typeId="af9d-7db8-dc95-71c1">4</characteristic>
-                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">2</characteristic>
                 <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">7</characteristic>
-                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f"/>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">7</characteristic>
                 <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
                 <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
@@ -639,8 +639,8 @@ Prepared Defenses: Until the end of the first Battle Turn of the Battle, all Mod
             </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="07a7-0714-125e-4c48" includeChildSelections="false"/>
-            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="fa18-b247-07ff-7c46" includeChildSelections="false"/>
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="07a7-0714-125e-4c48" includeChildSelections="false"/>
+            <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="fa18-b247-07ff-7c46" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="18"/>
@@ -697,9 +697,11 @@ Prepared Defenses: Until the end of the first Battle Turn of the Battle, all Mod
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="128"/>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Camba Diaz" hidden="false" id="0511-25f6-aaef-e1dd">
@@ -944,9 +946,9 @@ Prepared Defenses: Until the end of the first Battle Turn of the Battle, all Mod
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Templar Brethren" hidden="false" id="0096-62da-55d8-3912">
+    <selectionEntry type="unit" import="true" name="Templar Brethren" hidden="false" id="0096-62da-55d8-3912">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Templar Champion" hidden="false" id="3dea-ebed-aa39-0389" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Templar Champion" hidden="false" id="3dea-ebed-aa39-0389" sortIndex="1">
           <entryLinks>
             <entryLink import="true" name="Allegiance Traits" hidden="false" id="0fbc-2c03-e8fa-8f7c" type="selectionEntryGroup" targetId="edd3-9763-97ca-0323" sortIndex="5"/>
             <entryLink import="true" name="Legiones Astartes Trait" hidden="false" id="c178-9087-0b40-91fd" type="selectionEntryGroup" targetId="3014-5f25-bc3b-4675" sortIndex="6"/>
@@ -1027,7 +1029,7 @@ Prepared Defenses: Until the end of the first Battle Turn of the Battle, all Mod
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0aab-34cb-ed0e-72b4-max" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Templar Brethren" hidden="false" id="78de-a30b-05a4-1c6a" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Templar Brethren" hidden="false" id="78de-a30b-05a4-1c6a" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Allegiance Traits" hidden="false" id="5eea-97b2-77b9-ddf9" type="selectionEntryGroup" targetId="edd3-9763-97ca-0323" sortIndex="7"/>
             <entryLink import="true" name="Legiones Astartes Trait" hidden="false" id="85a4-19c9-82ff-5a2c" type="selectionEntryGroup" targetId="3014-5f25-bc3b-4675" sortIndex="8"/>
@@ -1167,6 +1169,142 @@ Prepared Defenses: Until the end of the first Battle Turn of the Battle, all Mod
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Fafnir Rann" hidden="false" id="21f3-6129-c7dd-8749">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Fafnir Rann " hidden="false" id="03ba-d84b-babd-2bda">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad88-bbcd-72c5-7fa7" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b312-10cf-c4dc-38e3" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="The Headsman and the Hunter" hidden="false" id="4399-a4a4-6d20-d7b4" sortIndex="1">
+              <profiles>
+                <profile name="Subjugator" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="c862-7be0-6573-ad12">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (4+)</characteristic>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7759-4c35-0aee-8795" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68f7-208c-e658-6c9d" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Breaching (X)" id="c4df-cb68-dacc-614a" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+                  <comment>4+</comment>
+                  <modifiers>
+                    <modifier type="set" value="Breaching (4+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Executioner’s Tax " typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="a65f-d00b-da48-05ac">
+              <characteristics>
+                <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">Fafnir Rann may suffer a negative modifier to the Focus Roll in exchange for improved attacks</characteristic>
+                <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">When this Gambit is selected, the Controlling Player must roll a additional Dice in the Focus Step and must discard the highest result. Attacks made in the following Strike Phase gain the Critical Hit (6+) Special Rule</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Fafnir Rann" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="ef22-33ee-09c0-262f">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Unique, Command, Heavy)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">6</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">4</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">4</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">9</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">8</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">8</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Critical Hit (X)" id="f4e2-b338-f7a9-26ce" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
+              <comment>6+</comment>
+              <modifiers>
+                <modifier type="set" value="Critical Hit (6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Fire Discipline" id="fada-7459-0b35-7434" hidden="false" type="rule" targetId="43fe-8703-9ddf-686c"/>
+            <infoLink name="Impact (X)" id="3fa7-506a-d4e2-8e1f" hidden="false" type="rule" targetId="6ead-c31c-ab09-2f8c">
+              <comment>A</comment>
+              <modifiers>
+                <modifier type="set" value="Impact (A)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="1345-291e-866b-216c" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="b980-187b-2b17-d635" id="8d1c-8182-644e-29e4" primary="false" name="Unique Model Sub-Type"/>
+            <categoryLink targetId="9871-cb62-5283-2216" id="db94-d5a4-865c-8c23" primary="false" name="Command Model Sub-type"/>
+            <categoryLink targetId="1e7d-9066-28d2-97a0" id="2048-8788-a41a-3e07" primary="false" name="Heavy Model Sub-Type"/>
+            <categoryLink targetId="450e-112d-a64a-ef6e" id="df3d-c584-c737-7bfc" primary="false" name="Imperial Fists"/>
+            <categoryLink targetId="4381-ed35-c3fa-a225" id="f288-18d1-3f48-07af" primary="false" name="Loyalist"/>
+            <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="6138-cb14-b87b-525c" primary="false" name="Master of the Legion"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Krak grenades" hidden="false" id="51fa-e4e7-fc5a-d50d" type="selectionEntry" targetId="0c9b-a32b-87e2-fc3e" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="78e2-bd6d-1923-15c2-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78e2-bd6d-1923-15c2-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="39c7-3461-672a-d08a" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4868-da54-9963-ec04-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4868-da54-9963-ec04-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Boarding shield" hidden="false" id="4969-6ae8-f48f-72af" type="selectionEntry" targetId="01e9-334c-80cb-f1c6" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f0a3-27c4-9875-9fba-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0a3-27c4-9875-9fba-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Frag grenades" hidden="false" id="5d13-5738-6062-0239" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ef7-7547-45cf-2ed5-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ef7-7547-45cf-2ed5-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <rules>
+            <rule name="Shield Master" id="f1b6-08c8-73c3-9bbc" hidden="false">
+              <description>Fafnir Rann suffers no penalty in a Challenge for carrying a shield
+The Controlling Player of a Model with this Special Rule does not suffer a penalty of -1 to Focus Rolls for this Model having the Heavy Sub-Type.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="175"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Fire Discipline" id="43fe-8703-9ddf-686c" hidden="true">
@@ -1203,17 +1341,22 @@ Prepared Defenses: Until the end of the first Battle Turn of the Battle, all Mod
     </entryLink>
     <entryLink import="true" name="Camba Diaz" hidden="false" id="7242-e10f-2d56-32dc" type="selectionEntry" targetId="0511-25f6-aaef-e1dd">
       <categoryLinks>
-        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="ac27-6422-aae6-3c21" primary="true" name="High Command"/>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="b923-31ea-b8b2-7648" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Alexis Polux" hidden="false" id="35e1-315a-450b-2299" type="selectionEntry" targetId="bb94-88c3-c9b8-c117">
       <categoryLinks>
-        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="db86-e2af-04c9-7cbc" primary="true" name="High Command"/>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="d670-287a-31d6-0aaa" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Phalanx Warder-Squad" hidden="false" id="0f66-b753-ed91-e9b5" type="selectionEntry" targetId="7ee4-7278-0ad7-4c29">
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="682d-74c0-381e-23af" primary="true" name="Heavy Assault"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Fafnir Rann" hidden="false" id="e66c-b812-712c-1a8f" type="selectionEntry" targetId="21f3-6129-c7dd-8749">
+      <categoryLinks>
+        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="a290-4f34-0537-133d" primary="true" name="High Command"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
