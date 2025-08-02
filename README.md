@@ -87,10 +87,10 @@ If so, keep in mind that logistical benefit adds a slot of (nearly) any type, an
 a set 0 primes of that slot type. It's simplest to just copy the example detachment and adjust min-max in that.
 
 ## 4.5: Restricting a slot to a particular entry.
-Make a category called "Armour - Whatever thing only" 
+Make a category called "Slot name - Whatever thing only" 
 Add a modifier on that unit to "set primary category if ancestor is name of force"
-(Note that I need to confirm this is working and that it handles the restriction on prime slots properly, 
-since we use "set if category" on prime slots. I expect it will though)
+Replace whatever category in your copy of the template with your new category. 
+Be sure to copy over the logistical benefit addition to your restricted category as the slot is still restricted.
 
 
 ---
