@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="1" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="3" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Anacharis Scoria" hidden="false" id="10f5-dae8-f081-d82f" sortIndex="29">
       <infoLinks>
@@ -329,16 +329,11 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Special Assignment" hidden="false" id="adf5-e9c0-1a49-82df" type="selectionEntry" targetId="c857-47bd-6a4f-fcf8" sortIndex="15">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="5b9f-3491-1b56-8599" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="14">
+          <entryLinks>
+            <entryLink import="true" name="Special Assignment" hidden="false" id="adf5-e9c0-1a49-82df" type="selectionEntry" targetId="c857-47bd-6a4f-fcf8"/>
+          </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="5b9f-3491-1b56-8599" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="14"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="c7ec-ff15-15fb-fcc7" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -606,16 +601,11 @@
           </costs>
         </entryLink>
         <entryLink import="true" name="Heterodoxist" hidden="false" id="d774-6881-ee14-02d1" type="selectionEntry" targetId="7a1e-e035-4b60-0b35" sortIndex="3"/>
-        <entryLink import="true" name="Special Assignment" hidden="false" id="db3e-4fee-b298-2e11" type="selectionEntry" targetId="c857-47bd-6a4f-fcf8" sortIndex="15">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="6552-3cd8-1b54-9606" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="14">
+          <entryLinks>
+            <entryLink import="true" name="Special Assignment" hidden="false" id="db3e-4fee-b298-2e11" type="selectionEntry" targetId="c857-47bd-6a4f-fcf8"/>
+          </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="6552-3cd8-1b54-9606" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="14"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="9871-cb62-5283-2216" id="64a5-22ff-daf6-921c" primary="false" name="Command Model Sub-type"/>
@@ -798,8 +788,11 @@
         <entryLink import="true" name="Mechanicum - Sub-faction" hidden="false" id="40b6-5935-2a4f-f5eb" type="selectionEntryGroup" targetId="ce61-2d74-5519-70bf" sortIndex="2"/>
         <entryLink import="true" name="Arcana Benefice:" hidden="false" id="b23a-3936-6431-374e" type="selectionEntry" targetId="f7b9-dc9c-2c8b-0c92" sortIndex="10"/>
         <entryLink import="true" name="Heterodoxist" hidden="false" id="3584-b2ee-6065-d0ed" type="selectionEntry" targetId="7a1e-e035-4b60-0b35" sortIndex="3"/>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="2da5-37c0-d6e3-ea11" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="13"/>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="9fd7-b9e1-0828-7e07" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="12"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="9fd7-b9e1-0828-7e07" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="12">
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="2da5-37c0-d6e3-ea11" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="594d-fa82-13cb-a345" id="0654-92ae-5e92-ef4d" primary="false" name="Infantry Model Type"/>
@@ -955,8 +948,11 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Mechanicum - Sub-faction" hidden="false" id="3f36-ef37-6adb-409e" type="selectionEntryGroup" targetId="ce61-2d74-5519-70bf" sortIndex="2"/>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="b908-cc3a-f91b-c9f0" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="6"/>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="6b81-88e9-8630-aa72" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="6b81-88e9-8630-aa72" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5">
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="b908-cc3a-f91b-c9f0" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="5833-5e86-26bc-0916" id="1895-6200-3feb-50e9" primary="false" name="Automata Model Type"/>
@@ -1082,8 +1078,11 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Arcana Benefice:" hidden="false" id="4d1e-0afa-099f-7e20" type="selectionEntry" targetId="f7b9-dc9c-2c8b-0c92" sortIndex="10"/>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="c339-6218-8921-c0a2" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="13"/>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="0438-a547-ec52-44e2" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="12"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="0438-a547-ec52-44e2" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="12">
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="c339-6218-8921-c0a2" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Arcuitor" hidden="false" id="6441-1541-3a3f-0d94" sortIndex="1">
@@ -1187,8 +1186,11 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Mechanicum - Sub-faction" hidden="false" id="fee7-bc64-5422-4317" type="selectionEntryGroup" targetId="ce61-2d74-5519-70bf" sortIndex="2"/>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="ea94-751e-0d74-6c95" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="5"/>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="be84-5769-5633-c637" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="4"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="be84-5769-5633-c637" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="4">
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="ea94-751e-0d74-6c95" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="5833-5e86-26bc-0916" id="2665-75d8-dcf8-d7b9" primary="false" name="Automata Model Type"/>
@@ -1373,7 +1375,6 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9a6-99d2-8506-3515"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="f7bd-69d0-8993-bd24" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="6"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="b377-f86e-6cd7-e128" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5">
           <modifiers>
             <modifier type="set" value="1" field="881f-5dbe-10fd-ec48">
@@ -1382,6 +1383,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="f7bd-69d0-8993-bd24" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -1510,8 +1514,11 @@
         <entryLink import="true" name="Mechanicum - Sub-faction" hidden="false" id="1f26-8829-0310-fcff" type="selectionEntryGroup" targetId="ce61-2d74-5519-70bf" sortIndex="2"/>
         <entryLink import="true" name="Arcana Benefice:" hidden="false" id="ae59-b0fb-2120-a6e1" type="selectionEntry" targetId="f7b9-dc9c-2c8b-0c92" sortIndex="10"/>
         <entryLink import="true" name="Heterodoxist" hidden="false" id="69e6-5473-8108-c999" type="selectionEntry" targetId="7a1e-e035-4b60-0b35" sortIndex="3"/>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="16b6-a516-622c-62a0" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="13"/>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="7455-4f65-7384-7264" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="12"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="7455-4f65-7384-7264" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="12">
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="16b6-a516-622c-62a0" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="130"/>
@@ -1741,9 +1748,11 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="55"/>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="60"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
       <entryLinks>
         <entryLink import="true" name="Frag grenades" hidden="false" id="1905-7e32-0655-8033" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="5">
@@ -1764,8 +1773,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee0e-70a3-fb77-f7c3"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="74b8-4066-d2f5-3681" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="7"/>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="e239-2ab4-21bc-0172" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="6"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="e239-2ab4-21bc-0172" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="6">
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="74b8-4066-d2f5-3681" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Myrmidon Destructor Host" hidden="false" id="229c-7b38-1dac-de3e" sortIndex="10">
@@ -1947,9 +1959,11 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="55"/>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="60"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
       <entryLinks>
         <entryLink import="true" name="Frag grenades" hidden="false" id="dfe0-d517-4349-32f6" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="5">
@@ -1970,8 +1984,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c7d-9105-64ce-e8fa"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="a4ff-d32c-f0ff-2482" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="7"/>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="bfb6-5371-b018-913c" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="6"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="bfb6-5371-b018-913c" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="6">
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="a4ff-d32c-f0ff-2482" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tech-Thrall Covenant" hidden="false" id="6369-b3b1-0ce1-64f8" sortIndex="14">
@@ -2041,8 +2058,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af53-938d-664b-72cf"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="df59-054b-7567-e7c1" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="5"/>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="8c63-7ba2-16d4-7980" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="4"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="8c63-7ba2-16d4-7980" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="4">
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="df59-054b-7567-e7c1" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Castellax Destructor Maniple" hidden="false" id="112f-1168-d07c-7f8f" sortIndex="11">
@@ -2204,8 +2224,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e74-a7bf-d90a-d62b"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="2add-3992-0734-9159" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="4"/>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="0121-094d-bbac-806b" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="3"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="0121-094d-bbac-806b" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="2add-3992-0734-9159" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ursarax Cohort" hidden="false" id="4d8f-5e38-5902-0947" sortIndex="12">
@@ -2376,7 +2399,6 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a858-d236-117c-bac8"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="bd36-4cf3-185d-54b6" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="6"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="9c31-160e-a770-bd89" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5">
           <modifiers>
             <modifier type="set" value="1" field="881f-5dbe-10fd-ec48">
@@ -2385,6 +2407,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="bd36-4cf3-185d-54b6" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -2484,7 +2509,6 @@
         <entryLink import="true" name="Mechanicum - Sub-faction" hidden="false" id="884b-f6af-9a40-7ff1" type="selectionEntryGroup" targetId="ce61-2d74-5519-70bf" sortIndex="2"/>
         <entryLink import="true" name="Arcana Benefice:" hidden="false" id="68f5-a35d-51e6-3b32" type="selectionEntry" targetId="f7b9-dc9c-2c8b-0c92" sortIndex="8"/>
         <entryLink import="true" name="Heterodoxist" hidden="false" id="0f57-500a-c9a3-4a36" type="selectionEntry" targetId="7a1e-e035-4b60-0b35" sortIndex="3"/>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="4944-5f01-5980-a80d" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="11"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="5b37-3c5a-052f-f590" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="10">
           <modifiers>
             <modifier type="set" value="1" field="881f-5dbe-10fd-ec48">
@@ -2497,8 +2521,27 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" value="true" field="hidden"/>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="4944-5f01-5980-a80d" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f">
+              <entryLinks>
+                <entryLink import="true" name="Combat Veterans" hidden="false" id="9fc4-11ff-3d85-b85e" type="selectionEntry" targetId="8cf8-9be5-91d6-c96d">
+                  <modifiers>
+                    <modifier type="set" value="1" field="3b6f-8c9d-27b5-9f5d">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0594-4b9b-675b-f633" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bc86-4606-7fce-1866" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
         </entryLink>
       </entryLinks>
       <categoryLinks>
@@ -2711,8 +2754,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5252-5933-f57d-44e0"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="175f-df59-3cbe-ce59" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="6"/>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="15ee-84b3-0c6d-2087" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="15ee-84b3-0c6d-2087" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5">
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="175f-df59-3cbe-ce59" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Armiger Moirax" hidden="false" id="1777-db1a-0cd5-6a89" sortIndex="18">
@@ -2931,7 +2977,6 @@
       </costs>
       <entryLinks>
         <entryLink import="true" name="Mechanicum - Sub-faction" hidden="false" id="d1c2-ce59-a6f4-9191" type="selectionEntryGroup" targetId="ce61-2d74-5519-70bf" sortIndex="2"/>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="898b-4591-1759-52e9" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="4"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="5338-ba8d-a3b8-4e94" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="3">
           <modifiers>
             <modifier type="set" value="1" field="881f-5dbe-10fd-ec48">
@@ -2940,6 +2985,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="898b-4591-1759-52e9" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
         </entryLink>
       </entryLinks>
       <modifierGroups>
@@ -3083,7 +3131,6 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d504-8497-5718-4c25"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="f87b-760f-5b44-e00c" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="7"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="1cf3-2329-6452-494b" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="6">
           <modifiers>
             <modifier type="set" value="1" field="881f-5dbe-10fd-ec48">
@@ -3092,6 +3139,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="f87b-760f-5b44-e00c" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
@@ -3229,7 +3279,6 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Mechanicum - Sub-faction" hidden="false" id="6516-bee0-56b2-0965" type="selectionEntryGroup" targetId="ce61-2d74-5519-70bf" sortIndex="2"/>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="4113-df1a-1b6a-8edd" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="9"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="b4b1-4982-7100-2392" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="8">
           <modifiers>
             <modifier type="set" value="1" field="881f-5dbe-10fd-ec48">
@@ -3238,6 +3287,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="4113-df1a-1b6a-8edd" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
@@ -3449,7 +3501,6 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b362-7434-2002-3d72"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="89c3-e386-201c-227b" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="5"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="f0bf-fcb1-3cee-5d06" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="4">
           <modifiers>
             <modifier type="set" value="1" field="881f-5dbe-10fd-ec48">
@@ -3458,6 +3509,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="89c3-e386-201c-227b" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -3587,8 +3641,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1b0-c36b-896a-98aa"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="440a-bcbb-f6ae-54ab" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="6"/>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="74da-ed32-b735-0799" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="74da-ed32-b735-0799" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5">
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="440a-bcbb-f6ae-54ab" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Vultarax Stratos Squadron" hidden="false" id="710e-f1ea-0061-d3cb" sortIndex="21">
@@ -3759,8 +3816,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a46b-96e8-6f15-1046"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="6d2f-5545-0f2d-c5d1" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="6"/>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="d7c8-a204-8c6d-6f67" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="d7c8-a204-8c6d-6f67" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5">
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="6d2f-5545-0f2d-c5d1" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="100"/>
@@ -3916,8 +3976,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="720d-7c8b-2f39-d145"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="8a53-b7f2-7e82-040c" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="5"/>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="72c7-c9cc-ba49-bab1" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="4"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="72c7-c9cc-ba49-bab1" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="4">
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="8a53-b7f2-7e82-040c" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Karacnos Assault Tank" hidden="false" id="ce4c-753d-aaf1-b4ab" sortIndex="22">
@@ -4020,7 +4083,6 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bcb9-3c5d-3995-352b"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="1be1-f186-85bb-52a0" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="8"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="c670-7126-8a54-8325" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="7">
           <modifiers>
             <modifier type="set" value="1" field="881f-5dbe-10fd-ec48">
@@ -4029,6 +4091,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="1be1-f186-85bb-52a0" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
         </entryLink>
       </entryLinks>
       <costs>
@@ -4145,7 +4210,6 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fc5-5c7b-3b14-1f31"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="dce4-45ed-862f-7b33" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="6"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="7832-6b3a-bd5a-f9b5" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5">
           <modifiers>
             <modifier type="set" value="1" field="881f-5dbe-10fd-ec48">
@@ -4154,6 +4218,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="dce4-45ed-862f-7b33" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -4363,8 +4430,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cde7-d157-0722-e982"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="cd3f-f7e0-af84-2110" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="6"/>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="ae13-7a65-99a6-f28e" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="ae13-7a65-99a6-f28e" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5">
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="cd3f-f7e0-af84-2110" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Krios Venator" hidden="false" id="b444-b85f-85f8-e6f3" sortIndex="24">
@@ -4427,7 +4497,6 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6494-97d1-a0b3-0763"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="8f56-c7ae-4144-abd5" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f" sortIndex="6"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="c011-9a59-eede-6c1e" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5">
           <modifiers>
             <modifier type="set" value="1" field="881f-5dbe-10fd-ec48">
@@ -4436,6 +4505,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="8f56-c7ae-4144-abd5" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
@@ -5506,6 +5578,22 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="602d-bb49-aa21-072e"/>
           </constraints>
+          <profiles>
+            <profile name="Overcharge Reactors" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="e6a2-a08c-5eb9-b63d">
+              <characteristics>
+                <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">2</characteristic>
+                <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">12&quot;</characteristic>
+                <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a friendly Unit that is not Locked in Combat and includes only Models with the Automata or Vehicle Types or the Cybertheugist Trait. This Cybertheugic Rite may not target a Unit that includes any Models with the Super-heavy or Knight Sub-Types.</characteristic>
+                <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When Invoked this Cybertheugic Rite grants all Models in the Target Unit one of the following Cybertheugic Statuses, chosen by the Controlling Player (all Models must be granted the same Status): Quicken, Fortify or Guide.</characteristic>
+                <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">The Cybertheugic Status granted by this Cybertheugic Rite is automatically removed in the Controlling Player&apos;s next Start Phase and after the Cybertheugic Status is removed the Target Unit suffers Cybertheugic Feedback.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Cybertheugic Status: Fortify" id="96be-ec54-67a3-8f5b" hidden="false" type="rule" targetId="5367-7f24-be5e-447f"/>
+            <infoLink name="Cybertheugic Status: Guide" id="6191-35e8-7e5a-3848" hidden="false" type="rule" targetId="14b4-336f-014d-f462"/>
+            <infoLink name="Cybertheugic Status: Quicken" id="3069-9174-8b60-74d3" hidden="false" type="rule" targetId="1160-e8ac-393e-f60c"/>
+          </infoLinks>
         </entryLink>
         <entryLink import="true" name="Cogitator Purge" hidden="false" id="925f-8053-dc6d-6beb" type="selectionEntry" targetId="cee5-60ce-2035-8a9b" sortIndex="2">
           <costs>
@@ -5514,6 +5602,17 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c440-634c-25ec-d508"/>
           </constraints>
+          <profiles>
+            <profile name="Cogitator Purge" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="1c4b-d973-d23b-2bba">
+              <characteristics>
+                <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">3</characteristic>
+                <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">12&quot;</characteristic>
+                <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be an enemy Unit that is not Locked in Combat and includes only Models with the Automata, Walker or Vehicle Types or the Cybertheugist Trait.</characteristic>
+                <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When this Cybertheugic Rite is Invoked, all Models in the Target Unit immediately lose all Cybertheugic Statuses they have. If any Cybertheugic Statuses are removed due to the use of this Cybertheugic Rite, then the Target Unit suffers Cybertheugic Feedback and if more than one Cybertheugic Status is removed then the number of wounds inflicted on the Unit by Cybertheugic Feedback is increased to 2 Wounds for each Model in that Unit.</characteristic>
+                <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">This Cybertheugic Rite is resolved immediately.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </entryLink>
         <entryLink import="true" name="Chastise the Machine Spirit" hidden="false" id="c4bf-a0b3-da76-8a9f" type="selectionEntry" targetId="278c-1202-727f-f6bd" sortIndex="3">
           <costs>
@@ -5522,6 +5621,17 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2778-436f-4a5f-0702"/>
           </constraints>
+          <profiles>
+            <profile name="Chastise the Machine Spirit" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="4a37-ebc8-9b6f-df5a">
+              <characteristics>
+                <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">4</characteristic>
+                <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">18&quot;</characteristic>
+                <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be an enemy Unit that is not Locked in Combat. This Cybertheugic Rite may not target a Unit that includes any Models with the Paragon Type or Super-heavy Sub-Type.</characteristic>
+                <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When this Cybertheugic Rite is Invoked, all Models in the Target Unit gain one of the following Tactical Statuses: Stunned or Suppressed (All Models in the Unit must gain the same Tactical Status, chosen by the Player that Invoked this Cybertheugic Rite). If this Cybertheugic Rite is unsuccessfully Invoked then the Unit that includes the Focus suffers Cybertheugic Feedback.</characteristic>
+                <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">This Cybertheugic Rite is resolved immediately.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </entryLink>
         <entryLink import="true" name="Programming Interrupt" hidden="false" id="2b96-73f0-8441-de44" type="selectionEntry" targetId="6820-76b3-ae10-23e5" sortIndex="4">
           <costs>
@@ -5530,6 +5640,22 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="914e-9449-79f8-1d28"/>
           </constraints>
+          <profiles>
+            <profile name="Programming Interrupt" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="4900-dcb6-2158-2113">
+              <characteristics>
+                <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">4</characteristic>
+                <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">18&quot;</characteristic>
+                <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a friendly Unit that is not Locked in Combat and includes only Models with the Automata or Vehicle Types or the Cybertheugist Trait. This Cybertheugic Rite may not target a Unit that includes any Models with the Super-heavy or Knight Sub-Types.</characteristic>
+                <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When Invoked, this Cybertheugic Rite grants all Models in the Target Unit one of the following Cybertheurgic Statuses, chosen by the Controlling Player (all Models must be granted the same Status): Quicken, Fortify or Guide. If the Target Unit makes a Reaction in the Controlling Player&apos;s next Tuirn as the Reactive Player following a successful Invocation of this Cybertheugic Rate it does not cost a point of that Players Reaction Allotment, but instead the Cybertheugic Status granted by this Cybertheugic Rite is removed.</characteristic>
+                <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">If the Cybertheugic Status granted by this Cybertheugic Rite is not removed in order to make a Reaction, then it is automatically removed in the Controlling Player&apos;s next Start Phase. Immediately after the Cybertheugic Status granted by this Cybertheugic Rite is removed the Target Unit suffers Cybertheugic Feedback.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Cybertheugic Status: Fortify" id="8a07-4ed7-6460-3810" hidden="false" type="rule" targetId="5367-7f24-be5e-447f"/>
+            <infoLink name="Cybertheugic Status: Guide" id="f899-c44f-23c7-8071" hidden="false" type="rule" targetId="14b4-336f-014d-f462"/>
+            <infoLink name="Cybertheugic Status: Quicken" id="ef99-fdd5-e7c7-d524" hidden="false" type="rule" targetId="1160-e8ac-393e-f60c"/>
+          </infoLinks>
         </entryLink>
         <entryLink import="true" name="Flesh-knit Protocols" hidden="false" id="bb72-7910-6e8e-2e72" type="selectionEntry" targetId="13c3-5795-9d9d-b27a" sortIndex="5">
           <costs>
@@ -5545,6 +5671,21 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6119-5593-44e0-b835"/>
           </constraints>
+          <profiles>
+            <profile name="Flesh-knit Protocols" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="8f66-df85-497e-78a8">
+              <characteristics>
+                <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">2</characteristic>
+                <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">12&quot;</characteristic>
+                <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a Friendly Unit that is not Locked in Combat and includes only Models with the Lacrymaerta Trait.</characteristic>
+                <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When Invoked, this Cybertheugic Rite grants all Models in the Target Unit one of the following Cybertheugic Statuses, chosen by the Controlling Player (all Models must be granted the same Status): Quicken or Fortify.</characteristic>
+                <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">The Cybertheugic Status granted by this Cybertheugic Rite is automatically removed in the Controlling Player&apos;s next Start Phase and after the Cybertheugic Status is removed the Target Unit suffers Cybertheugic Feedback.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Cybertheugic Status: Fortify" id="fd72-4143-7fa1-3d9f" hidden="false" type="rule" targetId="5367-7f24-be5e-447f"/>
+            <infoLink name="Cybertheugic Status: Quicken" id="d0e5-1c2a-27e8-4289" hidden="false" type="rule" targetId="1160-e8ac-393e-f60c"/>
+          </infoLinks>
         </entryLink>
         <entryLink import="true" name="Omega Protocols" hidden="false" id="3deb-7061-7cc5-2994" type="selectionEntry" targetId="a3d1-9e66-4b2b-2fe9" sortIndex="6">
           <costs>
@@ -5560,6 +5701,17 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16ed-c185-c47b-2267"/>
           </constraints>
+          <profiles>
+            <profile name="Omega Protocols" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="5b69-b44e-2e1e-4565">
+              <characteristics>
+                <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">4</characteristic>
+                <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">12&quot;</characteristic>
+                <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a friendly Unit that includes only Models with the Lacrymaerta Trait, is affected by at least one Cybertheugic Status and that is Locked in Combat with one or more enemy Units.</characteristic>
+                <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When this Cybertheugic Rite is Invoked, all Models in the Target Unit immediately lose all Cybertheugic Statuses they have. If any Cybertheugic Statuses are removed then the Target Unit suffers Cybertheugic Feedback - if any Models in the Target Unit are Removed as Casualties then all other Units in the same Combat (friendly or enemy) suffer two Hits at Strength 6, with an AP of 5 and Damage of 1 for each Model Removed as a Casualty in the Target Unit. Models Removed as Casualties due to this Rite are not counted for the purpose of Combat Resolution.</characteristic>
+                <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">This Cybertheugic Rite is resolved immediately</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </entryLink>
         <entryLink import="true" name="Deactivate Limiters" hidden="false" id="9d35-4b89-6cc6-625f" type="selectionEntry" targetId="e2c5-56ee-8e1e-44b0" sortIndex="7">
           <costs>
@@ -5575,6 +5727,22 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b80f-26ec-926e-03ec"/>
           </constraints>
+          <profiles>
+            <profile name="Deactivate Limiters" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="98ca-1ca5-096f-dfa1">
+              <characteristics>
+                <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">3</characteristic>
+                <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">24&quot;</characteristic>
+                <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a friendly Unit that is not Locked in Combat and includes only Models with the Reductor Trait.</characteristic>
+                <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When this Cybertheugic Rite Invoked it grants all Models in the target Unit one of the following Cybertheugic Statuses, chosen by the Controlling Player (all Models must be granted the same Status): Quicken, Fortify or Guide.</characteristic>
+                <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">The Cybertheugic Status granted by this Cybertheugic Rite is automatically removed in the Controlling Player&apos;s next Start Phase and after the Cybertheugic Status is removed the Target Unit suffers Cybertheugic Feedback.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Cybertheugic Status: Fortify" id="4b67-12a7-e4d3-4f8c" hidden="false" type="rule" targetId="5367-7f24-be5e-447f"/>
+            <infoLink name="Cybertheugic Status: Guide" id="f811-78ea-4d54-0f9c" hidden="false" type="rule" targetId="14b4-336f-014d-f462"/>
+            <infoLink name="Cybertheugic Status: Quicken" id="ff54-3a7a-9bfd-965c" hidden="false" type="rule" targetId="1160-e8ac-393e-f60c"/>
+          </infoLinks>
         </entryLink>
         <entryLink import="true" name="Unseal the Portal" hidden="false" id="3907-0134-2b73-1bf6" type="selectionEntry" targetId="2135-5fc2-c64b-8d10" sortIndex="8">
           <costs>
@@ -5590,6 +5758,17 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac99-ade6-1451-4fb4"/>
           </constraints>
+          <profiles>
+            <profile name="Unseal the Portal" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="e8a1-5542-b687-d3d4">
+              <characteristics>
+                <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">3</characteristic>
+                <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">6&quot;</characteristic>
+                <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a Building, Fortification or a Unit that is not Locked in Combat and is composed of a single Model with the Vehicle Type.</characteristic>
+                <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When Invoked, all Models Embarked on the Target Unit must immediately make an Emergency Disembarkation and the Target Unit suffers Cybertheugic Feedback.</characteristic>
+                <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">This Cybertheugic Rite is resolved immediately.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </entryLink>
         <entryLink import="true" name="Fury of Ages" hidden="false" id="f3c2-1baf-0d8f-b638" type="selectionEntry" targetId="4d4f-b784-ae17-7096" sortIndex="9">
           <costs>
@@ -5605,6 +5784,21 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50a6-240f-2c1b-c201"/>
           </constraints>
+          <profiles>
+            <profile name="Fury of Ages" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="481d-6978-e878-2dad">
+              <characteristics>
+                <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">2</characteristic>
+                <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">6&quot;</characteristic>
+                <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a Friendly Unit that includes only Models with the Myrmidax Trait. This Cybertheugic Rite may target Units that are Locked in Combat.</characteristic>
+                <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When this Cybertheugic Rite is Invoked, it grants all Models in the Target Unit one of the following Cybertheugic Statuses, chosen by the Controlling Player (all Models must be granted the same Status): Fortify or Guide.</characteristic>
+                <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">The Cybertheugic Status granted by this Cybertheugic Rite is automatically removed in the Controlling Player&apos;s next Start Phase and after the Cybertheugic Status is removed the Target Unit suffers Cybertheugic Feedback.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Cybertheugic Status: Fortify" id="f6f7-81d6-9c19-3b3f" hidden="false" type="rule" targetId="5367-7f24-be5e-447f"/>
+            <infoLink name="Cybertheugic Status: Guide" id="a618-40a9-c1b8-2223" hidden="false" type="rule" targetId="14b4-336f-014d-f462"/>
+          </infoLinks>
         </entryLink>
         <entryLink import="true" name="Ætheric Amplification" hidden="false" id="28c0-db28-ae45-e24a" type="selectionEntry" targetId="a52b-0c1f-e653-7d77" sortIndex="10">
           <costs>
@@ -5620,6 +5814,22 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e5e-60d1-fffc-9cc9"/>
           </constraints>
+          <profiles>
+            <profile name="Ætheric Amplification" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="9140-72da-00b9-ab4b">
+              <characteristics>
+                <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">2</characteristic>
+                <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">6&quot;</characteristic>
+                <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a Friendly Unit that includes only Models with the Malefic Sub-Type. The Target Unit may be Locked in Combat.</characteristic>
+                <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When this Cybertheugic Rite is Invoked, all Models with the Malefic Sub-Type in the Target Unit gain one of the following Cybertheugic Statuses, chosen by the Controlling Player (all Models must be granted the same Status): Quicken Fortify or Guide.</characteristic>
+                <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">The Cybertheugic Status granted by this Cybertheugic Rite is automatically removed in the Target Unit&apos;s Controlling Player&apos;s next Start Phase and after the Cybertheugic Status is removed the Target Unit suffers Cybertheugic Feedback.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Cybertheugic Status: Quicken" id="c702-ca44-7a37-3f58" hidden="false" type="rule" targetId="1160-e8ac-393e-f60c"/>
+            <infoLink name="Cybertheugic Status: Fortify" id="5ca9-cb61-6f37-282c" hidden="false" type="rule" targetId="5367-7f24-be5e-447f"/>
+            <infoLink name="Cybertheugic Status: Guide" id="485a-021d-61aa-b058" hidden="false" type="rule" targetId="14b4-336f-014d-f462"/>
+          </infoLinks>
         </entryLink>
         <entryLink import="true" name="Scrap-code Infection" hidden="false" id="b0c5-7a97-a7ed-7771" type="selectionEntry" targetId="c8fa-a317-bc53-8764" sortIndex="11">
           <costs>
@@ -5635,6 +5845,20 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a5a-250c-a743-dfae"/>
           </constraints>
+          <profiles>
+            <profile name="Scrap-code Infection" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="654a-b7f3-c9de-7fcf">
+              <characteristics>
+                <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">3</characteristic>
+                <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">18&quot;</characteristic>
+                <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be an enemy Unit that includes at least one Model with a Cybertheugic Status other than Null and that is not Locked in Combat.</characteristic>
+                <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When this Cybertheugic Rite is Invoked, all Models in the Target Unit gain the Null Cybertheugic Status.</characteristic>
+                <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">The Cybertheugic Status granted by this Cybertheugic Rite is automatically removed in the Target Unit&apos;s Controlling Player&apos;s next Statuses Sub-phase. If the Cybertheugic Status is removed during the Statuses Sub-Phase, rather than due to the effects of the Null Cybertheugic Status, then the Target Unit suffers Cybertheugic Feedback in the Statuses Sub-Phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Cybertheugic Status: Null" id="4cb1-d3dd-1da5-150e" hidden="false" type="rule" targetId="d010-07c3-50a8-4002"/>
+          </infoLinks>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -5681,7 +5905,7 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="df10-4634-c1aa-f6e0" shared="true" includeChildSelections="true"/>
-                    <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="5833-5e86-26bc-0916" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -5885,56 +6109,12 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         <entryLink import="true" name="Prime Specimens" hidden="false" id="3d61-54d8-f3e6-c097" type="selectionEntry" targetId="a533-4a75-9434-4595" sortIndex="7"/>
         <entryLink import="true" name="Prime Conveyor" hidden="false" id="8855-4255-3c14-bc68" type="selectionEntry" targetId="5e61-75cf-5a52-a94d" sortIndex="8"/>
         <entryLink import="true" name="Thallaxi Principe" hidden="false" id="6c45-965d-4aef-3d33" type="selectionEntry" targetId="a3af-b73f-4a1b-efd1" sortIndex="9"/>
-        <entryLink import="true" name="Combat Veterans" hidden="false" id="521d-139d-0ad1-0943" type="selectionEntry" targetId="8cf8-9be5-91d6-c96d" sortIndex="2">
-          <modifiers>
-            <modifier type="set" value="1" field="3b6f-8c9d-27b5-9f5d">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0594-4b9b-675b-f633" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bc86-4606-7fce-1866" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Master Sergeant" hidden="false" id="3f78-e5d6-b285-dcb1" type="selectionEntry" targetId="2c90-1d52-7075-59d3" sortIndex="1">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0594-4b9b-675b-f633" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bc86-4606-7fce-1866" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Paragon of Battle" hidden="false" id="8b45-ddb4-143a-0ab0" type="selectionEntry" targetId="20cb-4eec-0844-8a97" sortIndex="3">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="9871-cb62-5283-2216" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Logistical Benefit" hidden="false" id="3cbc-73cd-2206-f8a9" type="selectionEntryGroup" targetId="52ae-1a80-a764-d4fd" sortIndex="5"/>
+        <entryLink import="true" name="Common Prime Benefits" hidden="false" id="4b45-404f-dec7-194d" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true" sortIndex="1"/>
       </entryLinks>
       <constraints>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b90f-06f9-942e-4930"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95f1-3a26-9e4b-0a26"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <entryLinks>
@@ -6027,6 +6207,13 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="f34b-c6c6-d147-5dbe" primary="true" name="Heavy Assault"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d5e2-3162-f591-6a81" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Ursarax Cohort" hidden="false" id="a8e1-7ca7-b17e-8f51" type="selectionEntry" targetId="4d8f-5e38-5902-0947" sortIndex="12">
       <categoryLinks>
@@ -6088,6 +6275,13 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
       <categoryLinks>
         <categoryLink targetId="2499-7239-685f-8465" id="5ed8-70f1-5983-ce5a" primary="true" name="War-engine"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="dbe3-9946-d4de-dc73" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Triaros Armoured Conveyor" hidden="false" id="b0a1-0f87-385f-4239" type="selectionEntry" targetId="0896-07f4-8844-9542" sortIndex="19">
       <categoryLinks>
@@ -6237,4 +6431,18 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
       </categoryLinks>
     </entryLink>
   </entryLinks>
+  <rules>
+    <rule name="Cybertheugic Status: Null" id="d010-07c3-50a8-4002" hidden="false">
+      <description>A Model under the effect of this Cybertheugic Status gains no bonuses or penalties - but when Null is applied to any Model in a Unit then all other Cybertheugic Statuses on all Models in that Unit are discarded and the Unit suffers Cybertheugic Feeback immediately regardless of whether any Cybertheugic Statuses are discarded. If a Model in a Unit would gain another Cybertheugic Status while any Models in that Unit have the Null Cybertheugic Status (other than another instance of Null) then it does not gain that Cybertheugic Status, all Models in the Unit discard Null and the Unit suffers Cybertheugic Feedback.</description>
+    </rule>
+    <rule name="Cybertheugic Status: Quicken" id="1160-e8ac-393e-f60c" hidden="false">
+      <description>A Model under the effects of this Cybertheugic Status gains a bonus of +1 to its Movement and Initiative Characteristics. If a Model under the effect of this Cybertheugic Status does not have an Initiative Characteristic then it instead increases its Movement Charactertistic by +3. If a Model has a Base Movement Characteristic of 0 or &apos;-&apos;, then this Cybertheugic Status has no effect on it and it gains no bonuses to any Characteristic from it.</description>
+    </rule>
+    <rule name="Cybertheugic Status: Fortify" id="5367-7f24-be5e-447f" hidden="false">
+      <description>A Model under the effects of this Cybertheugic Status gains a bonus of +1 to its Strength and Toughness Characteristics. If a Model under the effect of this Cybertheugic Status does not have a Strength or Toughness Characteristic then it gains no bonus. If, instead of a Toughness Characteristic, a Model under the effect of this Cybertheugic Status has an Armour Characteristic then instead increase the Armour Value of any one facing, chosen by the Controlling Player, by +1 - this may not increase any Armour Value of the target Model to more than 14.</description>
+    </rule>
+    <rule name="Cybertheugic Status: Guide" id="14b4-336f-014d-f462" hidden="false">
+      <description>A Model under the effects of this Cybertheugic Status gains a bonus of +1 to its Ballistic Skill and Weapon Skill Characteristics. If a Model has a Base Weapon Skill or Base Ballistic Skill of 0, then this Cybertheugic Status has no effect on it and it gains no bonuses to any Characteristic from it.</description>
+    </rule>
+  </rules>
 </catalogue>

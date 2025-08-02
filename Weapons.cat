@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="a22d-4dd0-c59d-57d3" name="Weapons" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="2" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue library="true" id="a22d-4dd0-c59d-57d3" name="Weapons" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="4" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="2942-f783-d627-33c5">
       <profiles>
@@ -1454,7 +1454,7 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hand flamer" hidden="false" id="9322-09ed-abec-6e13">
       <profiles>
-        <profile name="Flamer" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="6c82-0dd5-e850-83dd">
+        <profile name="Hand Flamer" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="6c82-0dd5-e850-83dd">
           <characteristics>
             <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
             <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
@@ -5316,6 +5316,817 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Raven&apos;s Talons" hidden="false" id="8682-12f8-dccc-c0e2">
+      <profiles>
+        <profile name="Raven&apos;s Talons" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="2d0f-6dd9-a8a9-e2b7">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Impact (IM), Rending (6+), Breaching (6+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Impact (X)" id="c048-b007-d758-e65a" hidden="false" type="rule" targetId="6ead-c31c-ab09-2f8c">
+          <modifiers>
+            <modifier type="set" value="Impact (IM)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Rending (X)" id="01d4-7249-dd94-30b9" hidden="false" type="rule" targetId="167f-2a64-6e61-505b">
+          <modifiers>
+            <modifier type="set" value="Rending (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Breaching (X)" id="126e-164c-473b-5b58" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pair of Raven&apos;s Talons" hidden="false" id="ab57-e7ca-3fc7-b256">
+      <profiles>
+        <profile name="Raven&apos;s Talons" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="d2af-1668-4298-8c2b">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">+2</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Impact (IM), Rending (6+), Breaching (6+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="88b5-d721-13e6-709a" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Impact (X)" id="149c-b576-c5ed-cf79" hidden="false" type="rule" targetId="6ead-c31c-ab09-2f8c">
+          <modifiers>
+            <modifier type="set" value="Impact (IM)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Rending (X)" id="65cd-5090-aa39-d905" hidden="false" type="rule" targetId="167f-2a64-6e61-505b">
+          <modifiers>
+            <modifier type="set" value="Rending (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Inferno Pistol" hidden="false" id="0a98-b701-5f6c-1fc1">
+      <profiles>
+        <profile name="Inferno Pistol" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="338a-4406-71b6-1c00">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">6</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">8</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Pistol, Melta (3)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Assault, Melta</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Melta (X)" id="e384-8fa1-63ae-abda" hidden="false" type="rule" targetId="8ef6-917e-93da-43c3">
+          <modifiers>
+            <modifier type="set" value="Melta (3)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Pistol" id="bd76-f96b-6aab-30d1" hidden="false" type="rule" targetId="2bf6-55c8-6810-a71c"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7221-b7a7-c76c-4053" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a11-8451-c7bb-462c" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Blade of Perdition" hidden="false" id="a3a1-84f7-4e23-3ed6">
+      <profiles>
+        <profile name="Blade of Perdition" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="1c7c-3a1a-db73-5556">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+), Aflame (1)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power, Flame</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="f162-b888-97f6-63a3" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Aflame (X)" id="2df8-4c91-6275-9af2" hidden="false" type="rule" targetId="fdc7-d2a1-338f-df11">
+          <modifiers>
+            <modifier type="set" value="Aflame (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Axe of Perdition" hidden="false" id="81b3-438e-041a-35ee">
+      <profiles>
+        <profile name="Axe of Perdition" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="40fc-777e-2ee0-c10a">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">-1</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+1</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+), Aflame (1)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power, Flame</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="f707-02fd-3288-b2a0" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Aflame (X)" id="ebea-aee6-1a57-c1bf" hidden="false" type="rule" targetId="fdc7-d2a1-338f-df11">
+          <modifiers>
+            <modifier type="set" value="Aflame (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Maul of Perdition" hidden="false" id="5cd6-6c5c-b464-4b27">
+      <profiles>
+        <profile name="Maul of Perdition" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="9507-c79b-406d-bf37">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">-1</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+), Aflame (1)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power, Flame</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="88c8-9e13-502e-127a" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Aflame (X)" id="5405-f689-86cd-a9d9" hidden="false" type="rule" targetId="fdc7-d2a1-338f-df11">
+          <modifiers>
+            <modifier type="set" value="Aflame (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Spear of Perdition" hidden="false" id="9aca-66f6-501e-d86d">
+      <profiles>
+        <profile name="Spear of Perdition" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="34be-be22-5317-21de">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">+1</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+), Aflame (1)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power, Flame</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="6aa4-36e2-9995-c870" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Aflame (X)" id="41df-ebfc-f208-8d5b" hidden="false" type="rule" targetId="fdc7-d2a1-338f-df11">
+          <modifiers>
+            <modifier type="set" value="Aflame (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Iliastus Assault Cannon" hidden="false" id="f38b-8af1-17b8-30fe">
+      <profiles>
+        <profile name="Iliastus Assault Cannon - Sustained Fire" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="6efd-8a54-82b4-dff5">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">24</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">3</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (FP), Breaching (6+)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Auto</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Iliastus Assault Cannon - Maximal Fire" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="68c4-6f8a-a867-5ea6">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">24</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">5</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (FP), Breaching (6+), Overload (1)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Auto</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Heavy (X)" id="d2b6-20f0-4320-542d" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
+          <modifiers>
+            <modifier type="set" value="Heavy (FP)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Breaching (X)" id="f07a-ffc0-055e-a657" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Overload (X)" id="9e6f-9e99-1e97-32ed" hidden="false" type="rule" targetId="1d3a-d1e2-871a-63ae">
+          <modifiers>
+            <modifier type="set" value="Overload (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin Iliastus Assault Cannon" hidden="false" id="66cf-47f9-0494-c9e1">
+      <profiles>
+        <profile name="Twin Iliastus A.C. - Sustained Fire" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="4162-07da-39be-f88d">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">24</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">6</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (FP), Breaching (6+)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Auto</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Twin Iliastus A.C. - Maximal Fire" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="1af7-0c7e-c16a-a62d">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">24</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">8</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (FP), Breaching (6+), Overload (1)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Auto</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Heavy (X)" id="5c22-f04c-c90c-56d8" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
+          <modifiers>
+            <modifier type="set" value="Heavy (FP)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Breaching (X)" id="def7-712a-47b5-4257" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Overload (X)" id="7cee-9652-6e3c-d37e" hidden="false" type="rule" targetId="1d3a-d1e2-871a-63ae">
+          <modifiers>
+            <modifier type="set" value="Overload (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Banestrike combi-bolter" hidden="false" id="2442-f324-4b1a-ac63">
+      <profiles>
+        <profile name="Banestrike combi-bolter" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="d592-6926-970e-d1a1">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">18</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">4</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">4</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Breaching (6+)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Bolt</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="ec3f-b7cb-3012-d7dd" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <comment>6+</comment>
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Banestrike shotgun" hidden="false" id="50e4-181b-9bd5-61f3">
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="faa3-b02c-a166-937a" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <comment>6+</comment>
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shred (X)" id="bc8d-1a41-cbfa-dfa8" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
+          <comment>6+</comment>
+          <modifiers>
+            <modifier type="set" value="Shred (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Stun (X)" id="d402-68ca-419d-96fa" hidden="false" type="rule" targetId="c7c1-bbc9-f852-6f71">
+          <comment>0</comment>
+          <modifiers>
+            <modifier type="set" value="Stun (0)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="Banestrike shotgun" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="0ccd-f987-e730-fcfa">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">12</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">4</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Breaching (6+), Shred (6+), Stun (0)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Assault</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Power Dagger" hidden="false" id="d8d4-f400-7730-792a">
+      <profiles>
+        <profile name="Power Dagger" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="acd7-604a-124e-bef9">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">+2</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">-1</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="eae3-ece8-6551-da36" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
+          </modifiers>
+          <comment>5+</comment>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Venom Sphere" hidden="false" id="81e7-7cd6-752a-09a5">
+      <profiles>
+        <profile name="Venom Sphere" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="ab1c-b430-1182-3326">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">8</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">1</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">-</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Blast (3&quot;), Poisoned (4+)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Assault</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast (X)" id="cc31-9993-c0d0-4c61" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+          <comment>3&quot;</comment>
+          <modifiers>
+            <modifier type="set" value="Blast (3&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Poisoned (X)" id="d60b-128a-6a35-ce12" hidden="false" type="rule" targetId="076f-2c91-c58b-71b3">
+          <comment>4+</comment>
+          <modifiers>
+            <modifier type="set" value="Poisoned (4+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Forge-crafted flamer" hidden="true" id="ec31-ff7d-cdad-233a">
+      <profiles>
+        <profile name="Forge-crafted flamer" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="cb68-2441-dcfd-7b6b">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">4</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">5</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Panic (1)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Flame</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Template" id="9044-78b6-7aa9-b1ef" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a"/>
+        <infoLink name="Panic (X)" id="03f2-f147-a40d-8976" hidden="false" type="rule" targetId="82a7-f471-3fda-6ca1">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="set" value="Panic (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+              </conditions>
+              <comment>SL+Sgt Only</comment>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>SL+Sgt Only</comment>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Forge-crafted hand flamer" hidden="true" id="fe39-b979-bb90-117f">
+      <profiles>
+        <profile name="Forge-crafted hand flamer" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="3576-6af4-2d83-80d3">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">3</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">-</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Pistol</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Assault, Flame</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Template" id="7cc4-1855-b29f-2295" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a"/>
+        <infoLink name="Pistol" id="5344-80d5-291b-03f6" hidden="false" type="rule" targetId="2bf6-55c8-6810-a71c"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+              </conditions>
+              <comment>SL+Sgt Only</comment>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>SL+Sgt Only</comment>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Forge-crafted heavy flamer" hidden="true" id="6d3e-3152-c52f-1d66">
+      <profiles>
+        <profile name="Forge-crafted heavy flamer" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="7bdf-faa6-af1d-eaa4">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">5</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">5</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Panic (2)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Flame</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Template" id="0a4e-2fbd-3ca8-057e" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a"/>
+        <infoLink name="Panic (X)" id="65e2-7ed4-d703-5489" hidden="false" type="rule" targetId="82a7-f471-3fda-6ca1">
+          <comment>2</comment>
+          <modifiers>
+            <modifier type="set" value="Panic (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+              </conditions>
+              <comment>SL+Sgt Only</comment>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>SL+Sgt Only</comment>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Forge-crafted power axe" hidden="true" id="a739-415d-c0fa-880d">
+      <profiles>
+        <profile name="Forge-crafted power axe" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="5711-a7d3-34cb-903a">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">-1</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">+1</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+1</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="e3c4-8fc2-cb0f-af2d" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>SL</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>SL+Sgt/Cmd/Spec/Champ Only</comment>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Forge-crafted power fist" hidden="true" id="8146-abba-1612-3d0f">
+      <profiles>
+        <profile name="Forge-crafted Power Fist" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="8c7e-450d-bfac-d787">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">-3</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+4</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">3</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e"/>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>SL</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>SL+Sgt/Cmd/Spec/Champ Only</comment>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Forge-crafted power lance" hidden="true" id="9348-bf2f-0ff1-2f75">
+      <profiles>
+        <profile name="Forge-crafted power lance" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="9ce4-89e0-50cc-1bae">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">1</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">+1</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Precision (6+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Precision (X)" id="61fa-99dd-2f20-81f4" hidden="false" type="rule" targetId="4fbd-e0bc-8f72-6e3f">
+          <modifiers>
+            <modifier type="set" value="Precision (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>SL</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>SL+Sgt/Cmd/Spec/Champ Only</comment>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Forge-crafted power maul" hidden="true" id="9ff1-2ac7-67f6-bbcc">
+      <profiles>
+        <profile name="Forge-crafted power maul" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="7204-86a7-eb03-d277">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">-1</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">+1</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="fcbb-52e8-5bca-eff8" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>SL</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>SL+Sgt/Cmd/Spec/Champ Only</comment>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Forge-crafted power sword" hidden="true" id="513c-3e81-47f5-5b95">
+      <profiles>
+        <profile name="Forge-crafted power sword" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="dabe-0a66-bacd-dc05">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">1</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">+1</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="e1f7-4837-6d17-9bd2" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>SL</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>SL+Sgt/Cmd/Spec/Champ Only</comment>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Forge-crafted thunder hammer" hidden="true" id="d08b-34be-c6b9-8494">
+      <profiles>
+        <profile name="Forge-crafted thunder hammer" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="225d-be9d-52d2-7a9a">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">-2</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">+1</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+3</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e"/>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>SL</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+          <comment>SL+Cmd/Spec/Champ Only</comment>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pyroclast Flame Projector" hidden="false" id="087a-e7b6-26df-b2c9">
+      <profiles>
+        <profile name="Pyroclast Flame Projector (Dispersed)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="b1d0-80be-f4a6-340f" noindex="false">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Panic (1)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Flame, Melta</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Pyroclast Flame Projector (Focussed)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="53dc-74d2-3eda-0adb">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">12</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">8</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Melta (6)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Flame, Melta</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Panic (X)" id="7b9f-84ce-5bd4-47eb" hidden="false" type="rule" targetId="82a7-f471-3fda-6ca1">
+          <comment>1 (Dispersed)</comment>
+          <modifiers>
+            <modifier type="set" value="Panic (1) (Dispersed)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Template" id="e1f5-33b6-8b24-2566" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a">
+          <comment>(Dispersed)</comment>
+          <modifiers>
+            <modifier type="set" value="Template (Dispersed)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Melta (X)" id="7350-eeae-2283-5338" hidden="false" type="rule" targetId="8ef6-917e-93da-43c3">
+          <comment>6 (Focussed)</comment>
+          <modifiers>
+            <modifier type="set" value="Melta (6) (Focussed)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Power Weapon" id="d23f-b4f0-0127-9394" hidden="false" collapsible="true" flatten="true">
@@ -5389,6 +6200,62 @@
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Forge-crafted power sword" hidden="true" id="0bcd-2729-80ff-2228" type="selectionEntry" targetId="513c-3e81-47f5-5b95" sortIndex="8">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="5" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Forge-crafted power axe" hidden="true" id="aa85-dd75-9d3e-edfb" type="selectionEntry" targetId="a739-415d-c0fa-880d" sortIndex="5">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="5" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Forge-crafted power maul" hidden="true" id="822a-5bc7-c2cc-f66b" type="selectionEntry" targetId="9ff1-2ac7-67f6-bbcc" sortIndex="7">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="5" field="9893-c379-920b-8982">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Forge-crafted power lance" hidden="true" id="5918-48a0-1380-b481" type="selectionEntry" targetId="9348-bf2f-0ff1-2f75" sortIndex="6">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="5" field="9893-c379-920b-8982">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Force Weapon" id="89e6-2502-2486-71f4" hidden="false" defaultSelectionEntryId="970d-7af0-0052-e25c">
@@ -5397,6 +6264,70 @@
         <entryLink import="true" name="Force axe" hidden="false" id="0c55-a1b3-64e0-c34f" type="selectionEntry" targetId="ec9a-091c-cb38-671f" sortIndex="2"/>
         <entryLink import="true" name="Force maul" hidden="false" id="929c-be19-2772-ebe8" type="selectionEntry" targetId="ea89-55b3-2d6a-705a" sortIndex="3"/>
         <entryLink import="true" name="Force staff" hidden="false" id="dc03-cf9f-b8c0-95d8" type="selectionEntry" targetId="968c-969b-bf56-8bde" sortIndex="4"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Perdition Weapons" id="6a6b-1cda-b6a4-8b3e" hidden="false" defaultSelectionEntryId="none">
+      <entryLinks>
+        <entryLink import="true" name="Blade of Perdition" hidden="false" id="7d13-ed02-8de8-7853" type="selectionEntry" targetId="a3a1-84f7-4e23-3ed6" sortIndex="1">
+          <modifiers>
+            <modifier type="set" value="5" field="9893-c379-920b-8982">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="defaultAmount">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Axe of Perdition" hidden="false" id="3608-c39d-08d1-c393" type="selectionEntry" targetId="81b3-438e-041a-35ee" sortIndex="2">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="5" field="9893-c379-920b-8982">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Maul of Perdition" hidden="false" id="1ccc-b6f7-5cc8-a4af" type="selectionEntry" targetId="5cd6-6c5c-b464-4b27" sortIndex="3">
+          <modifiers>
+            <modifier type="set" value="5" field="9893-c379-920b-8982">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Spear of Perdition" hidden="false" id="b344-91e6-879f-d3a1" type="selectionEntry" targetId="9aca-66f6-501e-d86d" sortIndex="4">
+          <modifiers>
+            <modifier type="set" value="5" field="9893-c379-920b-8982">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
