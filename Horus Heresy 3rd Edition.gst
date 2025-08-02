@@ -6364,13 +6364,13 @@ All Models in any of these Units have their Faction Trait replaced with &apos;Al
         <modifier type="set" value="false" field="hidden"/>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Army Configuration" hidden="false" id="a827-ee7f-fe7d-9e0e">
+    <selectionEntry type="upgrade" import="true" name="Army Configuration" hidden="true" id="a827-ee7f-fe7d-9e0e">
       <categoryLinks>
         <categoryLink targetId="abfa-86ab-1726-077a" id="87b3-ba6b-73e5-7936" primary="true" name="Army Configuration"/>
       </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Army Configuration" hidden="true" id="5370-2415-f349-02e0" type="selectionEntry" targetId="a827-ee7f-fe7d-9e0e"/>
+    <entryLink import="true" name="Army Configuration" hidden="false" id="5370-2415-f349-02e0" type="selectionEntry" targetId="a827-ee7f-fe7d-9e0e"/>
   </entryLinks>
 </gameSystem>
