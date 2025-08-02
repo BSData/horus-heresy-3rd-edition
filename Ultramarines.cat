@@ -110,14 +110,12 @@
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="dd2e-821c-4798-464d" includeChildSelections="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="New Group" id="6fd8-dd70-1476-5da1" hidden="false">
-              <selectionEntryGroups>
-                <selectionEntryGroup name="2 in 5 may exchange their bolt pistol for:" id="ded0-8c97-e606-3a66" hidden="false">
-                  <entryLinks>
-                    <entryLink import="true" name="Plasma pistol" hidden="false" id="8f8f-373c-7483-17c4" type="selectionEntry" targetId="659f-d52e-1515-2912"/>
-                  </entryLinks>
+            <selectionEntryGroup name="2 in 5 may exchange their bolt pistol for:" id="6fd8-dd70-1476-5da1" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="8ee1-9e0f-7848-f9f9" type="selectionEntry" targetId="2942-f783-d627-33c5"/>
+                <entryLink import="true" name="Plasma pistol" hidden="false" id="8f8f-373c-7483-17c4" type="selectionEntry" targetId="659f-d52e-1515-2912">
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="dfc2-41b3-398e-bbb6" includeChildSelections="true"/>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="false" id="dfc2-41b3-398e-bbb6" includeChildSelections="true"/>
                   </constraints>
                   <modifiers>
                     <modifier type="increment" value="2" field="dfc2-41b3-398e-bbb6">
@@ -126,16 +124,11 @@
                       </repeats>
                     </modifier>
                   </modifiers>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink import="true" name="Bolt pistol" hidden="false" id="8ee1-9e0f-7848-f9f9" type="selectionEntry" targetId="2942-f783-d627-33c5">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6db1-ca02-7733-af76-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6db1-ca02-7733-af76-max" includeChildSelections="false"/>
-                  </constraints>
                 </entryLink>
               </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c697-8ba4-0104-c3cb" includeChildSelections="false"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
