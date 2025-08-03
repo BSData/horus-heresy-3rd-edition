@@ -2204,7 +2204,7 @@
             </modifier>
           </modifiers>
         </forceEntry>
-        <forceEntry name="Apex - Combat Retinue" id="7203-426e-7a82-0b01" hidden="true" sortIndex="10">
+        <forceEntry name="Apex - Combat Retinue" id="7203-426e-7a82-0b01" hidden="true" sortIndex="16">
           <categoryLinks>
             <categoryLink name="Apex Detachment" hidden="false" id="9b24-8662-0565-34a0" targetId="6b46-02bb-c8aa-142d"/>
             <categoryLink name="High Command" hidden="false" id="4011-a31f-7c9d-d41e" targetId="d9a6-9b5f-b18a-4d63">
@@ -2588,7 +2588,7 @@
             </modifier>
           </modifiers>
         </forceEntry>
-        <forceEntry name="Apex - Officer Cadre" id="90b7-c0fa-a9e1-6765" hidden="true" sortIndex="11">
+        <forceEntry name="Apex - Officer Cadre" id="90b7-c0fa-a9e1-6765" hidden="true" sortIndex="18">
           <categoryLinks>
             <categoryLink name="Apex Detachment" hidden="false" id="bb23-9795-e5fe-fc4f" targetId="6b46-02bb-c8aa-142d"/>
             <categoryLink name="High Command" hidden="false" id="e4a5-903c-7e56-7234" targetId="d9a6-9b5f-b18a-4d63">
@@ -2973,7 +2973,7 @@
             </modifier>
           </modifiers>
         </forceEntry>
-        <forceEntry name="Apex - Army Vanguard" id="0690-c05e-c301-f595" hidden="true" sortIndex="12">
+        <forceEntry name="Apex - Army Vanguard" id="0690-c05e-c301-f595" hidden="true" sortIndex="19">
           <categoryLinks>
             <categoryLink name="Apex Detachment" hidden="false" id="8950-5774-cc6a-db66" targetId="6b46-02bb-c8aa-142d"/>
             <categoryLink name="High Command" hidden="false" id="9efb-f99f-bde9-902d" targetId="d9a6-9b5f-b18a-4d63">
@@ -3357,7 +3357,7 @@
             </modifier>
           </modifiers>
         </forceEntry>
-        <forceEntry name="Auxiliary - Primacy Wing" id="b86b-981d-9aab-5675" hidden="true" sortIndex="25">
+        <forceEntry name="Auxiliary - Primacy Wing" id="b86b-981d-9aab-5675" hidden="true" sortIndex="10">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -3391,7 +3391,7 @@
           </categoryLinks>
           <comment>EC Only</comment>
         </forceEntry>
-        <forceEntry name="Auxiliary - Tagmata Cohort" id="59b8-2183-4bab-b91c" hidden="true" sortIndex="13">
+        <forceEntry name="Auxiliary - Tagmata Cohort" id="59b8-2183-4bab-b91c" hidden="true" sortIndex="11">
           <categoryLinks>
             <categoryLink name="Support" hidden="false" id="aaf9-4c82-2830-47b6" targetId="345f-9ba6-9b02-ed5c">
               <constraints>
@@ -3420,7 +3420,7 @@
           </modifiers>
           <comment>Mechanicum only</comment>
         </forceEntry>
-        <forceEntry name="Auxiliary - Apprentice Cadre" id="6e73-e03d-9ae7-fd33" hidden="true" sortIndex="14">
+        <forceEntry name="Auxiliary - Apprentice Cadre" id="6e73-e03d-9ae7-fd33" hidden="true" sortIndex="15">
           <categoryLinks>
             <categoryLink name="Troops" hidden="false" id="b964-d2eb-562c-17b1" targetId="88e6-d373-4152-0dd8">
               <constraints>
@@ -3454,7 +3454,7 @@
           </modifiers>
           <comment>Mechanicum only</comment>
         </forceEntry>
-        <forceEntry name="Apex - The Hearth of Power" id="0594-4b9b-675b-f633" hidden="true" sortIndex="15">
+        <forceEntry name="Apex - The Hearth of Power" id="0594-4b9b-675b-f633" hidden="true" sortIndex="21">
           <categoryLinks>
             <categoryLink name="Retinue" hidden="false" id="c224-b95f-a73a-ea18" targetId="a38e-50ff-310f-f19e">
               <constraints>
@@ -3498,7 +3498,7 @@
           </modifiers>
           <comment>Mechanicum only</comment>
         </forceEntry>
-        <forceEntry name="Apex - Command Maniple" id="dbe3-9946-d4de-dc73" hidden="true" sortIndex="16">
+        <forceEntry name="Apex - Command Maniple" id="dbe3-9946-d4de-dc73" hidden="true" sortIndex="20">
           <categoryLinks>
             <categoryLink name="Elites" hidden="false" id="0ed6-de35-f804-23a7" targetId="5d5e-958f-e388-50b5">
               <constraints>
@@ -3551,7 +3551,7 @@
           </modifiers>
           <comment>Mechanicum only</comment>
         </forceEntry>
-        <forceEntry name="Apex - The Panoply of Cruelty" id="d5e2-3162-f591-6a81" hidden="true" sortIndex="17">
+        <forceEntry name="Apex - The Panoply of Cruelty" id="d5e2-3162-f591-6a81" hidden="true" sortIndex="24">
           <categoryLinks>
             <categoryLink name="Heavy Assault" hidden="false" id="b6ee-4b0b-f3f4-d9f4" targetId="3235-bd79-e9b1-60fa">
               <constraints>
@@ -3585,7 +3585,7 @@
           </modifiers>
           <comment>Mechanicum only</comment>
         </forceEntry>
-        <forceEntry name="Apex - The Host of Destruction" id="1db9-6dc0-7da5-e517" hidden="true" sortIndex="18">
+        <forceEntry name="Apex - The Host of Destruction" id="1db9-6dc0-7da5-e517" hidden="true" sortIndex="26">
           <categoryLinks>
             <categoryLink name="Elites" hidden="false" id="81bd-4c80-78a2-86cc" targetId="5d5e-958f-e388-50b5">
               <constraints>
@@ -3619,7 +3619,7 @@
           </modifiers>
           <comment>Mechanicum only</comment>
         </forceEntry>
-        <forceEntry name="Apex - Crux of Judgement" id="4f19-3023-0077-1049" hidden="true" sortIndex="19">
+        <forceEntry name="Apex - Crux of Judgement" id="4f19-3023-0077-1049" hidden="true" sortIndex="22">
           <categoryLinks>
             <categoryLink name="Command" hidden="false" id="7023-93dc-4fda-c76a" targetId="6dbf-654a-f06f-2d69">
               <constraints>
@@ -3648,7 +3648,7 @@
           </modifiers>
           <comment>Mechanicum only</comment>
         </forceEntry>
-        <forceEntry name="Apex - Iron Phalanx" id="a782-7985-325b-1840" hidden="true" sortIndex="20">
+        <forceEntry name="Apex - Iron Phalanx" id="a782-7985-325b-1840" hidden="true" sortIndex="25">
           <categoryLinks>
             <categoryLink name="Armour" hidden="false" id="08ab-b51f-53b5-8bdb" targetId="643a-1012-bd51-6537">
               <constraints>
@@ -3971,7 +3971,7 @@
           </modifiers>
           <comment>IW Only</comment>
         </forceEntry>
-        <forceEntry name="Auxiliary - The Ironfire Cohort" id="5bc5-5224-c751-d437" hidden="true" sortIndex="24">
+        <forceEntry name="Auxiliary - The Ironfire Cohort" id="5bc5-5224-c751-d437" hidden="true" sortIndex="12">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="4769-6a17-b205-fb4a" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Retinue" hidden="false" id="7059-cc91-4efe-ec58" targetId="a38e-50ff-310f-f19e">
@@ -4223,7 +4223,7 @@
           </modifiers>
           <comment>IW Only</comment>
         </forceEntry>
-        <forceEntry name="Auxiliary - Reaping Host" id="3b60-24c1-dccc-23db" hidden="true" sortIndex="27">
+        <forceEntry name="Auxiliary - Reaping Host" id="3b60-24c1-dccc-23db" hidden="true" sortIndex="13">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="515c-a4b9-bad0-df67" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Retinue" hidden="false" id="d8c2-ba60-ce7e-86dc" targetId="a38e-50ff-310f-f19e">
@@ -5214,21 +5214,21 @@
           </modifiers>
           <comment>SA Only</comment>
         </forceEntry>
-        <forceEntry name="Auxiliary - Immolation Covenant" id="0b37-02e8-3bfc-cb2b" hidden="true">
+        <forceEntry name="Auxiliary - Immolation Covenant" id="0b37-02e8-3bfc-cb2b" hidden="true" sortIndex="14">
           <categoryLinks>
-            <categoryLink name="Prime Support" hidden="false" id="b0ef-21e5-906b-382e" targetId="1c79-ecdf-9a64-84c9">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3ca-759b-7f85-b2b9"/>
-              </constraints>
-            </categoryLink>
             <categoryLink name="Support" hidden="false" id="824a-4d82-df9d-8157" targetId="345f-9ba6-9b02-ed5c">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7ba-910c-37aa-c29e"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d7ba-910c-37aa-c29e"/>
               </constraints>
             </categoryLink>
             <categoryLink name="Armour" hidden="false" id="b77f-3ac7-6ec7-2253" targetId="643a-1012-bd51-6537">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2d62-0b2c-d09d-ea07"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Support" hidden="false" id="fb8a-4163-fe0e-5dfa" targetId="1c79-ecdf-9a64-84c9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d778-a0c6-349a-064b"/>
               </constraints>
             </categoryLink>
           </categoryLinks>
@@ -5240,9 +5240,6 @@
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="2a78-9cbb-00ba-4523"/>
-          </constraints>
           <comment>SL Only</comment>
         </forceEntry>
       </forceEntries>
