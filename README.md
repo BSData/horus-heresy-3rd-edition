@@ -57,6 +57,67 @@ All Auxilia units should have the following Traits at the root level of the unit
 ## Questoris Household Units
 All Auxilia units should have the following Traits at the root level of the unit (Add Link -> Profile -> Search for them):
 - \[Allegiance]
+
+# 4: Forces
+## 4.1: Location
+Auxiliary and Apex detachments belong in the GST, specifically as children of the crusade chart. 
+The allied detachment can then link all the auxiliary detachments. 
+Force Links requires New Recruit Editor 1.3.19 or higher.
+There are some exceptional detachments which could be in other places, 
+namely the emperor's children one that replaces the warlord detachment.
+## 4.2: Sorting by blocks
+We're using the sort order to vaguely make it easier to find the detachments in the data files.
+Starting at each number is a block of entries
+- 1 Core rulebook
+- 13-21 are mechanicum (consider moving in order)
+- 30 Solar Aux
+- 40 Marine Generic
+- 50 Liber Astartes
+- 70 Liber Hereticus
+
+## 4.3: Hiding
+Child detachments which need to be hidden in any one catalogue should be set hidden as default and 
+then unhidden in any force that can take it.
+We then set a "set hidden false" constraint with the appropriate "primary catalogue and force" constraint, 
+as well as any other factors (such as the presence of a character)
+
+## 4.4: Prime restrictions
+When adding what categories are allowed in a detachment, first check if there are any primes. 
+If so, keep in mind that logistical benefit adds a slot of (nearly) any type, and for that you'll need
+a set 0 primes of that slot type. It's simplest to just copy the example detachment and adjust min-max in that.
+
+## 4.5: Restricting a slot to a particular entry.
+Make a category called "Slot name - Whatever thing only" 
+Add a modifier on that unit to "set primary category if ancestor is name of force"
+Replace whatever category in your copy of the template with your new category. 
+Be sure to copy over the logistical benefit addition to your restricted category as the slot is still restricted.
+
+On the unit place a modifier of setting the primary category based on the force. Note a bug in 
+the editor may change "force" to "roster" when you click into the constraint if you use instance of force in force. 
+Instead, instance of selection in ancestor works. 
+```json
+{
+  "parentKey": "modifiers",
+  "conditions": [
+    {
+      "type": "instanceOf",
+      "value": 1,
+      "field": "selections",
+      "scope": "ancestor",
+      "childId": "9bfb-c160-31df-9108",
+      "shared": true,
+      "includeChildSelections": false,
+      "includeChildForces": false
+    }
+  ],
+  "type": "set-primary",
+  "value": "4a48-9154-40d8-d6b7",
+  "field": "category"
+}
+```
+
+If instead that slot is "may not be used to take" (ex reaping host from death guard) simply set a hide modifier 
+on the appropriate unit
 ---
 
 [BSData.net]: https://www.bsdata.net/
