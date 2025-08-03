@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="12" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="13" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -160,7 +160,11 @@
     </categoryEntry>
     <categoryEntry name="Automata Model Type" id="5833-5e86-26bc-0916" hidden="false" publicationId="7d63-5df4-c656-52de" page="175">
       <rules>
-        <rule name="New Rule" id="a7d3-aaa8-8179-33d1" hidden="false"/>
+        <rule name="Automata Model Type" id="a7d3-aaa8-8179-33d1" hidden="false" publicationId="09c6-1c1d-03a7-9556" page="175">
+          <description>- Models with the Automata Type cannot gain any Tactical Statuses and are considered to automatically pass any Check made to avoid gaining a Tactical Status.
+- When targeting a Unit that includes any Models with the Automata Type, the effects of the Poisoned (X) Special Rule only trigger on the Wound Test with a result of a &apos;6&apos; before modifiers are applied, regardless of the value of X for that variant of the Special Rule.
+- A Unit that includes one of more Models with the Automata Type may not make Reactions.</description>
+        </rule>
       </rules>
     </categoryEntry>
     <categoryEntry name="Prime High Command" id="3568-ad75-b452-3137" hidden="false"/>
@@ -5230,7 +5234,7 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3cd4-1efc-c9a1-b1ef" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Army Configuration" hidden="false" id="fac8-8790-489d-f551" targetId="abfa-86ab-1726-077a" type="categoryEntry"/>
+        <categoryLink name="Army Configuration" hidden="false" id="fac8-8790-489d-f551" targetId="abfa-86ab-1726-077a"/>
       </categoryLinks>
       <modifiers>
         <modifier type="decrement" value="1" field="0ab6-91a0-792e-4068">
