@@ -7217,7 +7217,7 @@
           </modifiers>
           <comment>IH</comment>
         </forceEntry>
-        <forceEntry name="Auxiliary - Supremecy Cadre" id="2436-a714-22cc-fd31" hidden="false" sortIndex="79" page="249" publicationId="e54c-7040-0f35-d85d">
+        <forceEntry name="Auxiliary - Supremecy Cadre" id="2436-a714-22cc-fd31" hidden="true" sortIndex="79" page="249" publicationId="e54c-7040-0f35-d85d">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="61c8-0a14-7098-1526" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Retinue" hidden="false" id="098e-08d1-0f5d-4aa0" targetId="a38e-50ff-310f-f19e">
@@ -9319,7 +9319,7 @@
           </modifiers>
           <comment>RG</comment>
         </forceEntry>
-        <forceEntry name="Auxiliary - Prosperine Convocation" id="450b-0ca8-0beb-ff89" hidden="false" sortIndex="78" publicationId="e54c-7040-0f35-d85d" page="225">
+        <forceEntry name="Auxiliary - Prosperine Convocation" id="450b-0ca8-0beb-ff89" hidden="true" sortIndex="78" publicationId="e54c-7040-0f35-d85d" page="225">
           <comment>TS</comment>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -9565,7 +9565,7 @@
             </categoryLink>
           </categoryLinks>
         </forceEntry>
-        <forceEntry name="Auxiliary - Exalted Conclave" id="c961-7007-0142-5d07" hidden="false" sortIndex="80" publicationId="e54c-7040-0f35-d85d" page="273">
+        <forceEntry name="Auxiliary - Exalted Conclave" id="c961-7007-0142-5d07" hidden="true" sortIndex="80" publicationId="e54c-7040-0f35-d85d" page="273">
           <comment>WB - No LB Prime</comment>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -9604,7 +9604,7 @@
             </categoryLink>
           </categoryLinks>
         </forceEntry>
-        <forceEntry name="Auxiliary - Headhunter Leviathal" id="74f4-a9d0-a2be-b4bd" hidden="false" sortIndex="81" publicationId="e54c-7040-0f35-d85d" page="295">
+        <forceEntry name="Auxiliary - Headhunter Leviathal" id="74f4-a9d0-a2be-b4bd" hidden="true" sortIndex="81" publicationId="e54c-7040-0f35-d85d" page="295">
           <comment>AL</comment>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
