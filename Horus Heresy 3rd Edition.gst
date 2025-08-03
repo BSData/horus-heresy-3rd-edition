@@ -9110,6 +9110,233 @@
           </modifiers>
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="9e45-da32-e845-85db" targetId="1a65-8b23-419b-b30f"/>
+            <categoryLink name="Retinue" hidden="false" id="ce47-2c7f-d94c-1e3c" targetId="a38e-50ff-310f-f19e">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bc7f-e7cb-b26b-abd5"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="bc7f-e7cb-b26b-abd5">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="Prime Retinue" hidden="false" id="0dd0-d77b-98c1-c131" targetId="c66b-ef39-b20f-725b">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="24bd-005b-bd2b-b9c5"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Elites" hidden="false" id="908a-ba6a-bb26-654c" targetId="5d5e-958f-e388-50b5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35d3-d89f-7e50-1aae"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="35d3-d89f-7e50-1aae">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="Prime Elites" hidden="false" id="6cde-230a-b2d4-29d8" targetId="276f-7a07-a56c-affd">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e606-dec2-013a-0737"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="War-engine" hidden="false" id="c865-84e3-3581-1283" targetId="2499-7239-685f-8465">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f027-756d-0c88-0ee0"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="f027-756d-0c88-0ee0">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="Prime War-engine" hidden="false" id="4f23-e4fb-7d2a-dea3" targetId="9699-67c9-2c0b-e64b">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d3ec-554c-347d-ff33"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Troops" hidden="false" id="cc93-932b-f43d-0da0" targetId="88e6-d373-4152-0dd8">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="636e-efcd-be15-02e9"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="636e-efcd-be15-02e9">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="Prime Troops" hidden="false" id="7847-51ba-1f30-005c" targetId="c3f9-a7f3-984b-3fda">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4608-72a7-189a-46f3" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Support" hidden="false" id="a33a-2265-0eea-6955" targetId="345f-9ba6-9b02-ed5c">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b8c2-801e-ee3e-ed43"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="b8c2-801e-ee3e-ed43">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="Prime Support" hidden="false" id="12f4-5328-bc65-8bcc" targetId="1c79-ecdf-9a64-84c9">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ebd2-cc86-cdb8-e9ac"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Transport" hidden="false" id="7e0b-754f-d624-2351" targetId="d162-4711-5d60-0a48">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d397-4a72-7d27-d3c2"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="d397-4a72-7d27-d3c2">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="Prime Transport" hidden="false" id="e490-345d-316e-79e9" targetId="fc27-1a48-84ae-aa7b">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="dfdf-3ee7-532d-9e94"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Heavy Assault" hidden="false" id="58c8-4326-5b53-8fb1" targetId="3235-bd79-e9b1-60fa">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c64f-ac7f-195b-916e"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="c64f-ac7f-195b-916e">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3235-bd79-e9b1-60fa" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="Prime Heavy Assault" hidden="false" id="f1c6-3c00-bbae-5683" targetId="1e95-35f0-1353-ffa1">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d20c-84e7-2f66-5355"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Heavy Transport" hidden="false" id="d5cb-8fe7-9e3d-3973" targetId="52d0-8b78-439e-18e5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e53c-5ccb-4fe4-533f"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="e53c-5ccb-4fe4-533f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="ad55-0e60-66fe-a7a9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="Prime Heavy Transport" hidden="false" id="4413-731a-e991-48aa" targetId="abff-3686-c39a-9a24">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1bee-0238-6a8c-a5ec"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Armour" hidden="false" id="28b2-80b5-c7c8-8fd4" targetId="643a-1012-bd51-6537">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4037-4021-8f08-0985"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="4037-4021-8f08-0985">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="Prime Armour" hidden="false" id="91dd-b570-c720-d937" targetId="4460-7bc1-4d80-aecb">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="103e-e214-f5a0-bbfe"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Recon" hidden="false" id="67a8-5fed-3b7a-c326" targetId="2b65-a3f2-620a-dc58">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e580-0c24-2a93-e4b6"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="e580-0c24-2a93-e4b6">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="Prime Recon" hidden="false" id="1c1f-3e2d-c724-4d57" targetId="6348-ecd0-714d-042a">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="df8a-1820-59f2-0f22"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Fast Attack" hidden="false" id="33c7-d845-073f-6422" targetId="cf96-8891-3f9a-8921">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="be2c-84ab-1363-da6b"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="be2c-84ab-1363-da6b">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="Prime Fast Attack" hidden="false" id="dbe3-d0b4-54d6-492e" targetId="c291-144b-3da6-37ed">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bffe-a37d-7912-c6d7"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
         </forceEntry>
         <forceEntry name="Auxiliary - Exalted Conclave" id="c961-7007-0142-5d07" hidden="false" sortIndex="80" publicationId="e54c-7040-0f35-d85d" page="273">
