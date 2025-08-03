@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d995-cb33-be41-ecf8" name="                         VI - Space Wolves" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="4" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d995-cb33-be41-ecf8" name="                         VI - Space Wolves" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="5" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="db71-05b7-0cff-28d1" importRootEntries="true" targetId="5334-5605-242c-d75e"/>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="17f0-6633-7613-e326" importRootEntries="true" targetId="9b32-f350-6aa9-9c09"/>
@@ -1343,7 +1343,15 @@ Head-taker: If this Gambit is selected, the Opposing Player may not claim an Out
     <entryLink import="true" name="Deathsworn Pack" hidden="false" id="b0bd-300f-59df-f92e" type="selectionEntry" targetId="cb82-a73f-b30f-c30f"/>
     <entryLink import="true" name="Caster of Runes" hidden="false" id="ba33-40ec-d766-6408" type="selectionEntry" targetId="0fe3-fde9-4086-e3ab"/>
     <entryLink import="true" name="Geigor Fell-Hand" hidden="false" id="48ab-ffac-313a-7708" type="selectionEntry" targetId="8280-b241-c837-f3ca"/>
-    <entryLink import="true" name="Grey Slayer Pack" hidden="false" id="0171-c81f-3045-617e" type="selectionEntry" targetId="9a43-13b5-bd92-d8be"/>
+    <entryLink import="true" name="Grey Slayer Pack" hidden="false" id="0171-c81f-3045-617e" type="selectionEntry" targetId="9a43-13b5-bd92-d8be">
+      <modifiers>
+        <modifier type="set-primary" value="a4aa-d941-3aab-a81b" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="06b3-c35d-da74-de37" shared="true" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
     <entryLink import="true" name="Hvarl Red-Blade" hidden="false" id="1c16-1b01-9abd-5cb9" type="selectionEntry" targetId="a681-0e72-a7fa-7bdd"/>
     <entryLink import="true" name="Leman Russ" hidden="false" id="816c-fff9-b834-bec8" type="selectionEntry" targetId="e308-c9ee-3be5-0f71"/>
     <entryLink import="true" name="Varagyr Wolf Guard Terminators" hidden="false" id="874a-10f5-f218-8df0" type="selectionEntry" targetId="efd1-c611-841f-0cbb"/>
@@ -1555,52 +1563,4 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
-  <forceEntries>
-    <forceEntry name="Auxiliary - Bloodied Claw" id="06b3-c35d-da74-de37" hidden="true">
-      <categoryLinks>
-        <categoryLink name="Prime Troops" hidden="false" id="0f4f-d63a-cbd9-f4ea" targetId="c3f9-a7f3-984b-3fda">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="fc0d-263a-4b11-33b0"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="1" field="fc0d-263a-4b11-33b0">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="9a43-13b5-bd92-d8be" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-        <categoryLink name="Troops" hidden="false" id="abab-bf8f-2c9d-b892" targetId="88e6-d373-4152-0dd8">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7e9d-6be2-6c7e-d847"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="1" field="7e9d-6be2-6c7e-d847">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="9a43-13b5-bd92-d8be" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-        <categoryLink name="Heavy Assault" hidden="false" id="9716-fe46-bd6d-a375" targetId="3235-bd79-e9b1-60fa">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ba97-4a80-6f04-60e5"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d995-cb33-be41-ecf8" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="d995-cb33-be41-ecf8" shared="true"/>
-              </conditions>
-              <comment>Space Wolves</comment>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </forceEntry>
-  </forceEntries>
 </catalogue>
