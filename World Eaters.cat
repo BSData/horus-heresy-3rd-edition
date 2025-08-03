@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="a956-190d-3b47-6258" name="                        XII - World Eaters" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="5" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="a956-190d-3b47-6258" name="                        XII - World Eaters" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="6" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Angron" hidden="false" id="af62-d4a0-c800-712e">
       <selectionEntries>
@@ -243,13 +243,13 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Frag grenades" hidden="false" id="49c6-84b3-056f-b941" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+        <entryLink import="true" name="Frag grenades" hidden="false" id="49c6-84b3-056f-b941" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="4">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="faab-9e2c-e5da-5274"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbaf-0eb2-1a30-df87"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Krak grenades" hidden="false" id="4142-f424-6178-884c" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+        <entryLink import="true" name="Krak grenades" hidden="false" id="4142-f424-6178-884c" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="5">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="264d-9982-9187-9d0d"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e995-280c-cbeb-f0b8"/>
@@ -265,6 +265,35 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
       <categoryLinks>
         <categoryLink targetId="594d-fa82-13cb-a345" id="43cd-b20f-0742-854b" primary="false" name="Infantry Model Type"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="World Eater Prime Benefits" id="d6d6-1475-b360-3ea2" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Chain-bonded" hidden="false" id="8d77-3c72-1048-f389">
+              <rules>
+                <rule name="Chain-brothers" id="e079-9c6f-8698-8f9e" hidden="false">
+                  <description>While a Model with this Special Rule is within Unit Coherency of the other Model from your Army with this Special Rule, that Model gains a bonus of +1 to Hit Tests made in the Assault Phase. If a Model that is engaged in a Challenge is in the same Combat as the other Model from your Army with this Special Rule, that Model is treated as being in Unit Coherency  with that other Model for the purposes of this Special Rule.</description>
+                </rule>
+                <rule name="Chain-bonded" id="8c3c-b0a7-748a-b70b" hidden="false">
+                  <description>This Prime Advantage can only be selected once per Army. When this Prime Advantage is selected, the Controlling Player must select another Unit which only includes Models with the World Eaters Trait that has the Command Battlefield Role from their Army. One Model in the selected Unit and one Model in the Unit selected to fill a Prime Force Organisation Slot with this Prime Advantage both gain the Chain-brothers Special Rule.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3a0d-2463-4f90-1ab8" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="ff85-4875-22aa-6f22" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Red Butchers" hidden="false" id="e149-7a3c-d62c-e941">
       <selectionEntries>
@@ -450,6 +479,35 @@ Any Hit Tests made in the Assault Phase that target a Unit that includes one or 
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="9084-a3e6-6ef2-69ce" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2"/>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="World Eater Prime Benefits" id="d902-90a9-cf24-727d" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Chain-bonded" hidden="false" id="7849-8a7b-3834-073f">
+              <rules>
+                <rule name="Chain-brothers" id="66f3-5908-9506-5fb9" hidden="false">
+                  <description>While a Model with this Special Rule is within Unit Coherency of the other Model from your Army with this Special Rule, that Model gains a bonus of +1 to Hit Tests made in the Assault Phase. If a Model that is engaged in a Challenge is in the same Combat as the other Model from your Army with this Special Rule, that Model is treated as being in Unit Coherency  with that other Model for the purposes of this Special Rule.</description>
+                </rule>
+                <rule name="Chain-bonded" id="7ecf-8ab8-2b2e-1e30" hidden="false">
+                  <description>This Prime Advantage can only be selected once per Army. When this Prime Advantage is selected, the Controlling Player must select another Unit which only includes Models with the World Eaters Trait that has the Command Battlefield Role from their Army. One Model in the selected Unit and one Model in the Unit selected to fill a Prime Force Organisation Slot with this Prime Advantage both gain the Chain-brothers Special Rule.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8a73-82b9-c620-269f" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="9c15-bd2d-a3ab-f7b3" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lotara Sarrin" hidden="false" id="e628-409b-5f93-170a">
       <categoryLinks>
@@ -576,6 +634,35 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ff60-7216-1402-9a91" includeChildSelections="true"/>
       </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="World Eater Prime Benefits" id="2a67-2962-0197-0f5c" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Chain-bonded" hidden="false" id="4881-d967-9c49-453d">
+              <rules>
+                <rule name="Chain-brothers" id="4b8c-a212-3d46-cea0" hidden="false">
+                  <description>While a Model with this Special Rule is within Unit Coherency of the other Model from your Army with this Special Rule, that Model gains a bonus of +1 to Hit Tests made in the Assault Phase. If a Model that is engaged in a Challenge is in the same Combat as the other Model from your Army with this Special Rule, that Model is treated as being in Unit Coherency  with that other Model for the purposes of this Special Rule.</description>
+                </rule>
+                <rule name="Chain-bonded" id="5eb2-52ba-c8be-5c84" hidden="false">
+                  <description>This Prime Advantage can only be selected once per Army. When this Prime Advantage is selected, the Controlling Player must select another Unit which only includes Models with the World Eaters Trait that has the Command Battlefield Role from their Army. One Model in the selected Unit and one Model in the Unit selected to fill a Prime Force Organisation Slot with this Prime Advantage both gain the Chain-brothers Special Rule.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="aa0c-d99d-5bb7-ebe4" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="a14d-71e7-8881-95dc" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Angron Transfigured" hidden="false" id="eb31-de9c-e5ef-a9ac">
       <costs>
@@ -855,6 +942,33 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a89-4f19-582b-bb99"/>
           </constraints>
         </selectionEntryGroup>
+        <selectionEntryGroup name="World Eater Prime Benefits" id="6a66-5039-1553-0b71" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Chain-bonded" hidden="false" id="70d5-078d-7ade-001e">
+              <rules>
+                <rule name="Chain-brothers" id="781d-9aa5-72fc-42e7" hidden="false">
+                  <description>While a Model with this Special Rule is within Unit Coherency of the other Model from your Army with this Special Rule, that Model gains a bonus of +1 to Hit Tests made in the Assault Phase. If a Model that is engaged in a Challenge is in the same Combat as the other Model from your Army with this Special Rule, that Model is treated as being in Unit Coherency  with that other Model for the purposes of this Special Rule.</description>
+                </rule>
+                <rule name="Chain-bonded" id="25ad-1ab4-b33a-9391" hidden="false">
+                  <description>This Prime Advantage can only be selected once per Army. When this Prime Advantage is selected, the Controlling Player must select another Unit which only includes Models with the World Eaters Trait that has the Command Battlefield Role from their Army. One Model in the selected Unit and one Model in the Unit selected to fill a Prime Force Organisation Slot with this Prime Advantage both gain the Chain-brothers Special Rule.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d758-8a34-e93b-b5af" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="b497-ab75-d905-7f94" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -1108,6 +1222,9 @@ On any Turn in which they made a Charge Move, Models with this Special Rule modi
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Common Prime Benefits" hidden="false" id="890b-a44b-1b21-b3e6" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <entryLinks>
