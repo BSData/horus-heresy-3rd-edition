@@ -237,6 +237,7 @@
     <categoryEntry name="Command - Praevian Only" id="7c8e-52bb-951b-9c7f" hidden="false"/>
     <categoryEntry name="Heavy Transport - Land Raider Carrier or Spartan Only" id="6b8d-15cd-2d41-9709" hidden="false"/>
     <categoryEntry name="Armour - Predator or Vindicator Only" id="bde9-c2c4-611e-7fb7" hidden="false"/>
+    <categoryEntry name="Elites - Veteran Assault Squads or Dark Fury Squads Only" id="2e9d-4d50-d9f1-0fcf" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -8365,6 +8366,26 @@
         <forceEntry name="Auxiliary - Decapitation Cadre" id="27bf-3e6b-587c-74bb" hidden="true" publicationId="b905-0414-1057-bb34" sortIndex="64" page="265">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="be42-9976-9746-7d26" targetId="1a65-8b23-419b-b30f"/>
+            <categoryLink name="Recon - Reconnaissance Squad Only" hidden="false" id="a25f-674d-d2e3-f98c" targetId="f8c3-f44e-569f-4418" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2cac-063e-c4b0-e09c"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Elites - Veteran Assault Squads or Dark Fury Squads Only" hidden="false" id="7326-9bc1-56dd-df83" targetId="2e9d-4d50-d9f1-0fcf" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2136-0ff9-77cc-a3da"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Recon" hidden="false" id="017b-6c9a-fed1-4eb2" targetId="6348-ecd0-714d-042a">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2c84-286f-31f9-a63e"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Elites" hidden="false" id="caf0-d2f3-f28a-2038" targetId="276f-7a07-a56c-affd">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0813-8b8a-2c0f-a3f3"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
