@@ -4599,11 +4599,6 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
         <selectionEntryGroup name="Hull Weapon" id="50bb-c057-0987-978f" hidden="false" defaultSelectionEntryId="6193-6501-3f7d-063f" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Auxilia Hull Weapons" hidden="false" id="ff5c-bca6-5c4e-ced5" type="selectionEntryGroup" targetId="9a19-6f6d-abea-d053"/>
-            <entryLink import="true" name="Heavy bolter" hidden="false" id="6193-6501-3f7d-063f" type="selectionEntry" targetId="bc40-b14a-978e-0232">
-              <modifiers>
-                <modifier type="set" value="Hull Mounted (Front) heavy bolter" field="name"/>
-              </modifiers>
-            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc53-f5e8-2134-bcca"/>
@@ -4761,11 +4756,6 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
         <selectionEntryGroup name="Hull Weapon" id="3222-a5c8-1414-a1fa" hidden="false" defaultSelectionEntryId="f7c0-ccae-9a2c-5bf7" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Auxilia Hull Weapons" hidden="false" id="63e8-a085-37d5-0ed6" type="selectionEntryGroup" targetId="9a19-6f6d-abea-d053"/>
-            <entryLink import="true" name="Heavy bolter" hidden="false" id="f7c0-ccae-9a2c-5bf7" type="selectionEntry" targetId="bc40-b14a-978e-0232">
-              <modifiers>
-                <modifier type="set" value="Hull Mounted (Front) heavy bolter" field="name"/>
-              </modifiers>
-            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="16eb-d7fd-e4f9-4734"/>
@@ -4925,11 +4915,6 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
         <selectionEntryGroup name="May exchange both of it&apos;s Sponson Mounted multi-lasers for:" id="01c6-94b5-c8f5-d566" hidden="false" sortIndex="4" defaultSelectionEntryId="6e02-0314-07eb-dbb3">
           <entryLinks>
             <entryLink import="true" name="Auxillia Sponson Weapons" hidden="false" id="1e78-e9e1-a95a-f817" type="selectionEntryGroup" targetId="605c-71a7-a6b3-2a1e"/>
-            <entryLink import="true" name="Multi-laser" hidden="false" id="075b-c795-c4d0-60eb" type="selectionEntry" targetId="247d-a71c-d493-790b">
-              <modifiers>
-                <modifier type="set" value="Two Sponson Mounted Multi-lasers" field="name"/>
-              </modifiers>
-            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="42fa-30fe-57ea-dc1b"/>
@@ -6041,7 +6026,7 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back M
     </selectionEntryGroup>
     <selectionEntryGroup name="Auxilia Hull Weapons" id="9a19-6f6d-abea-d053" hidden="false" defaultSelectionEntryId="1888-42bd-6055-9169">
       <entryLinks>
-        <entryLink import="true" name="Heavy bolter" hidden="false" id="1888-42bd-6055-9169" type="selectionEntry" targetId="bc40-b14a-978e-0232" sortIndex="1" defaultAmount="1">
+        <entryLink import="true" name="Heavy bolter" hidden="false" id="1888-42bd-6055-9169" type="selectionEntry" targetId="bc40-b14a-978e-0232" sortIndex="1" defaultAmount="">
           <modifiers>
             <modifier type="set" value="Hull Mounted (Front) heavy bolter" field="name"/>
           </modifiers>
@@ -6073,20 +6058,24 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back M
           </costs>
         </entryLink>
       </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="280c-462d-c17a-7f07"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b7c8-9f4b-c7df-6322"/>
+      </constraints>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Auxillia Sponson Weapons" id="605c-71a7-a6b3-2a1e" hidden="false">
+    <selectionEntryGroup name="Auxillia Sponson Weapons" id="605c-71a7-a6b3-2a1e" hidden="false" defaultSelectionEntryId="91b2-72e2-0b07-481f">
       <entryLinks>
-        <entryLink import="true" name="Heavy bolter" hidden="false" id="1960-676c-b67d-ff96" type="selectionEntry" targetId="bc40-b14a-978e-0232" sortIndex="1">
+        <entryLink import="true" name="Heavy bolter" hidden="false" id="1960-676c-b67d-ff96" type="selectionEntry" targetId="bc40-b14a-978e-0232" sortIndex="2">
           <modifiers>
             <modifier type="set" value="Two sponson Mounted heavy bolter" field="name"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Heavy flamer" hidden="false" id="a52e-08db-6294-fb2e" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="2">
+        <entryLink import="true" name="Heavy flamer" hidden="false" id="a52e-08db-6294-fb2e" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="3">
           <modifiers>
             <modifier type="set" value="Two sponson Mounted heavy flamer" field="name"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Multi-laser" hidden="false" id="91b2-72e2-0b07-481f" type="selectionEntry" targetId="247d-a71c-d493-790b" sortIndex="3">
+        <entryLink import="true" name="Multi-laser" hidden="false" id="91b2-72e2-0b07-481f" type="selectionEntry" targetId="247d-a71c-d493-790b" sortIndex="1" defaultAmount="">
           <modifiers>
             <modifier type="set" value="Two sponson Mounted multi-laser" field="name"/>
           </modifiers>
@@ -6108,6 +6097,10 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back M
           </costs>
         </entryLink>
       </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4063-cbf3-5084-43cf"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="137c-c04a-963c-4b1e"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Auxilia Pintle Weapons" id="0266-b015-86e4-8953" hidden="false">
       <entryLinks>
@@ -6119,7 +6112,7 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back M
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8c7-cfe8-cd69-f584"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b8c7-cfe8-cd69-f584"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Heavy flamer" hidden="false" id="7e53-2b0d-5649-67ee" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="2">
@@ -6130,7 +6123,7 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back M
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9019-584b-283c-4b31"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9019-584b-283c-4b31"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Multi-laser" hidden="false" id="0397-f575-d57c-2ba9" type="selectionEntry" targetId="247d-a71c-d493-790b" sortIndex="3">
@@ -6141,7 +6134,7 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back M
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1149-8312-82b0-719d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1149-8312-82b0-719d"/>
           </constraints>
         </entryLink>
       </entryLinks>
