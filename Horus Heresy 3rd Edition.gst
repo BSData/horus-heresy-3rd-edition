@@ -3405,8 +3405,64 @@
               </constraints>
             </categoryLink>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="e4d7-bb42-395a-0309" targetId="1a65-8b23-419b-b30f"/>
+            <categoryLink name="Prime Retinue" hidden="false" id="6bfb-d0bc-89e2-afdf" targetId="c66b-ef39-b20f-725b">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e57d-ff06-36a1-372f"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Elites" hidden="false" id="3555-1efb-b024-d32e" targetId="276f-7a07-a56c-affd">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7bc1-997f-d3c8-e742"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Fast Attack" hidden="false" id="ada2-024b-c585-9a79" targetId="c291-144b-3da6-37ed">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="117b-8da9-9668-7ea9"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <comment>EC Only</comment>
+          <forceEntries>
+            <forceEntry name="Auxiliary - Primacy Wing" id="fb6b-392c-4812-d06b" hidden="true">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9a22-d01f-ab5c-ec07" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9a22-d01f-ab5c-ec07" shared="true"/>
+                      </conditions>
+                      <comment>EC</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Retinue" hidden="false" id="50de-9322-6427-d007" targetId="a38e-50ff-310f-f19e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b0e-a8f0-172b-eea1"/>
+                  </constraints>
+                </categoryLink>
+                <categoryLink name="Elites" hidden="false" id="00f0-eb4c-3d40-be03" targetId="5d5e-958f-e388-50b5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f5b-f8ef-a342-118e"/>
+                  </constraints>
+                </categoryLink>
+                <categoryLink name="Fast Attack" hidden="false" id="3b77-48c0-72c0-f530" targetId="cf96-8891-3f9a-8921">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a365-8f18-7b3e-4294"/>
+                  </constraints>
+                </categoryLink>
+                <categoryLink name="Auxiliary Detachment" hidden="false" id="97e8-0753-cc5e-252f" targetId="1a65-8b23-419b-b30f"/>
+                <categoryLink name="Prime Retinue" hidden="false" id="a775-60b5-69fc-80ee" targetId="c66b-ef39-b20f-725b">
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="aec1-de84-7d56-d1fd"/>
+                  </constraints>
+                </categoryLink>
+              </categoryLinks>
+              <comment>EC Only</comment>
+            </forceEntry>
+          </forceEntries>
         </forceEntry>
         <forceEntry name="Auxiliary - Tagmata Cohort" id="59b8-2183-4bab-b91c" hidden="true" sortIndex="13">
           <categoryLinks>
