@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="14" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="15" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -4050,7 +4050,7 @@
         <forceEntry name="Auxiliary - The Ironfire Cohort" id="5bc5-5224-c751-d437" hidden="true" sortIndex="71">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="4769-6a17-b205-fb4a" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Armour - Arquitor Bombard Only" hidden="false" id="2ba5-198c-9b80-1720" targetId="b58f-c88f-6b2e-02b1" type="categoryEntry">
+            <categoryLink name="Armour - Arquitor Bombard Only" hidden="false" id="2ba5-198c-9b80-1720" targetId="b58f-c88f-6b2e-02b1">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="07cc-06c4-b48e-51f2"/>
               </constraints>
@@ -5298,7 +5298,7 @@
         <forceEntry name="Auxiliary - Chogorian Warband" id="0f6e-3db8-8b6f-74e1" hidden="true" publicationId="b905-0414-1057-bb34" page="147" sortIndex="56">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="54cc-e754-3644-660e" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Fast Attack - Scimitar Jetbike Squadrons only" hidden="false" id="118a-8a04-7902-9a00" targetId="eaec-7669-f5ba-3ad9" type="categoryEntry">
+            <categoryLink name="Fast Attack - Scimitar Jetbike Squadrons only" hidden="false" id="118a-8a04-7902-9a00" targetId="eaec-7669-f5ba-3ad9">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ccb3-72e4-b500-232d"/>
               </constraints>
@@ -5315,7 +5315,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e415-41dd-53e1-66b8"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Recon - Outrider Squads Only" hidden="false" id="b016-d320-a1d9-4f3b" targetId="a8bc-a4af-e5b3-2684" type="categoryEntry">
+            <categoryLink name="Recon - Outrider Squads Only" hidden="false" id="b016-d320-a1d9-4f3b" targetId="a8bc-a4af-e5b3-2684">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7908-5850-8cc8-328e"/>
               </constraints>
@@ -5591,7 +5591,7 @@
         <forceEntry name="Apex - Medusan Vanguard" id="7ff8-9e2c-e68a-573f" hidden="true" sortIndex="61" publicationId="b905-0414-1057-bb34" page="231">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="5866-7374-495e-6757" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Command - Praevian Only" hidden="false" id="7af5-6fff-edb0-8932" targetId="7c8e-52bb-951b-9c7f" type="categoryEntry">
+            <categoryLink name="Command - Praevian Only" hidden="false" id="7af5-6fff-edb0-8932" targetId="7c8e-52bb-951b-9c7f">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2487-c5ff-80ac-19a3" includeChildSelections="true"/>
               </constraints>
@@ -5860,7 +5860,7 @@
         <forceEntry name="Auxiliary - Terror Assault" id="8fe1-7b62-49cf-479b" hidden="true" sortIndex="73">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="dc5c-c763-789b-6b73" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Troops - Terror Squads Only" hidden="false" id="0f3a-d373-9df5-93fb" targetId="6e0b-c31d-739b-d9cc" type="categoryEntry">
+            <categoryLink name="Troops - Terror Squads Only" hidden="false" id="0f3a-d373-9df5-93fb" targetId="6e0b-c31d-739b-d9cc">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6537-4339-f77e-ea81"/>
               </constraints>
@@ -6115,12 +6115,12 @@
         </forceEntry>
         <forceEntry name="Apex - Atramentar Hunt " id="dbbe-886f-3ce1-13c0" hidden="true" sortIndex="74">
           <categoryLinks>
-            <categoryLink name="Retinue - Cataphractii or Tartaros Command Squads Only" hidden="false" id="478c-8c25-0b78-22df" targetId="637c-2d13-1879-9655" type="categoryEntry">
+            <categoryLink name="Retinue - Cataphractii or Tartaros Command Squads Only" hidden="false" id="478c-8c25-0b78-22df" targetId="637c-2d13-1879-9655">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79da-63d5-3543-f5ab"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Heavy Assault - Cataphractii or Tartaros Only" hidden="false" id="6887-ef58-c512-0b16" targetId="6cc6-9558-dd27-949f" type="categoryEntry">
+            <categoryLink name="Heavy Assault - Cataphractii or Tartaros Only" hidden="false" id="6887-ef58-c512-0b16" targetId="6cc6-9558-dd27-949f">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2093-43ed-9f14-4f69"/>
               </constraints>
@@ -6154,7 +6154,7 @@
         <forceEntry name="Auxiliary - Berserker Cadre" id="bda6-c5d3-eafc-4eb5" hidden="true" sortIndex="75">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="2d58-316e-79d5-2034" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Heavy Assault - Rampager Squads Only" hidden="false" id="b686-b285-d2bd-e8e2" targetId="91f0-1b91-0a9a-c542" type="categoryEntry">
+            <categoryLink name="Heavy Assault - Rampager Squads Only" hidden="false" id="b686-b285-d2bd-e8e2" targetId="91f0-1b91-0a9a-c542">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1242-7e4c-5871-ede3"/>
               </constraints>
@@ -6410,7 +6410,7 @@
         <forceEntry name="Auxiliary - Bloodied Claw" id="06b3-c35d-da74-de37" hidden="true" publicationId="b905-0414-1057-bb34" sortIndex="57" page="167">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="85fe-c763-8c05-317e" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Troops - Grey Slayer Packs Only" hidden="false" id="aa62-7956-a2d2-fec4" targetId="a4aa-d941-3aab-a81b" type="categoryEntry">
+            <categoryLink name="Troops - Grey Slayer Packs Only" hidden="false" id="aa62-7956-a2d2-fec4" targetId="a4aa-d941-3aab-a81b">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c184-fb15-bb63-2022"/>
               </constraints>
@@ -6661,7 +6661,7 @@
         <forceEntry name="Auxiliary - Revelation Host" id="edb0-a5d8-84f1-4eee" hidden="true" sortIndex="59" publicationId="b905-0414-1057-bb34" page="211">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="ffe5-1e65-907d-9b83" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Troops - Assault Squad Only" hidden="false" id="9de0-e8ca-656a-5fbb" targetId="5091-8467-38f9-a6fb" type="categoryEntry">
+            <categoryLink name="Troops - Assault Squads Only" hidden="false" id="9de0-e8ca-656a-5fbb" targetId="5091-8467-38f9-a6fb">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="71e9-f4d1-4a4d-af43"/>
               </constraints>
@@ -6673,7 +6673,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="Elites - Dawnbreaker Cohorts or Veteran Assault Squads Only" hidden="false" id="1339-011e-ba47-8333" targetId="97b0-7a9b-b549-18b4" type="categoryEntry">
+            <categoryLink name="Elites - Dawnbreaker Cohorts or Veteran Assault Squads Only" hidden="false" id="1339-011e-ba47-8333" targetId="97b0-7a9b-b549-18b4">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4fdf-8a68-fc2d-058d"/>
               </constraints>
@@ -6912,7 +6912,7 @@
         <forceEntry name="Auxiliary - Sons of Bodt" id="9bfb-c160-31df-9108" hidden="true" sortIndex="76">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="44f1-1e68-30b9-2b6a" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Support - Apothecary Only" hidden="false" id="cccd-5667-9e16-e4d4" targetId="4a48-9154-40d8-d6b7" type="categoryEntry">
+            <categoryLink name="Support - Apothecary Only" hidden="false" id="cccd-5667-9e16-e4d4" targetId="4a48-9154-40d8-d6b7">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cab4-0a45-b17d-8a36"/>
               </constraints>
@@ -7168,7 +7168,7 @@
         <forceEntry name="Auxiliary - Spearhead Phalanx" id="4737-e73a-394e-433f" hidden="true" sortIndex="60" publicationId="b905-0414-1057-bb34" page="231">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="397b-95e4-2d0b-9598" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Heavy Transport - Land Raider Carrier or Spartan" hidden="false" id="34cc-c81a-e963-0919" targetId="6b8d-15cd-2d41-9709" type="categoryEntry">
+            <categoryLink name="Heavy Transport - Land Raider Carrier or Spartan Only" hidden="false" id="34cc-c81a-e963-0919" targetId="6b8d-15cd-2d41-9709">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce6c-ced0-b1af-830c"/>
               </constraints>
@@ -7962,7 +7962,7 @@
         <forceEntry name="Auxiliary - Ravenwing Lance" id="466d-8e42-0890-721a" hidden="true" sortIndex="54" publicationId="b905-0414-1057-bb34" page="128">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="4b62-f5fd-eaa6-8166" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Recon - Outrider Squads Only" hidden="false" id="d5a5-e528-301f-e1b8" targetId="a8bc-a4af-e5b3-2684" type="categoryEntry">
+            <categoryLink name="Recon - Outrider Squads Only" hidden="false" id="d5a5-e528-301f-e1b8" targetId="a8bc-a4af-e5b3-2684">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fc02-d575-3ed8-8c9d"/>
               </constraints>
@@ -8234,7 +8234,7 @@
         <forceEntry name="Auxiliary - Firewing Echelon" id="3e2f-4f99-d366-7a95" hidden="true" sortIndex="55" publicationId="b905-0414-1057-bb34" page="128">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="bbcd-2619-f109-b29b" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Elites - Seeker Squads Only" hidden="false" id="9ef4-28d6-7a6a-290b" targetId="6ab9-f648-a6de-e2e8" type="categoryEntry">
+            <categoryLink name="Elites - Seeker Squads Only" hidden="false" id="9ef4-28d6-7a6a-290b" targetId="6ab9-f648-a6de-e2e8">
               <modifiers>
                 <modifier type="increment" value="1" field="246b-e4ed-56da-769b">
                   <conditions>
@@ -8526,7 +8526,7 @@
         <forceEntry name="Auxiliary - Dreadwing Cadre" id="4df8-3a15-6b77-1b80" hidden="true" sortIndex="51" publicationId="b905-0414-1057-bb34" page="127">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="eb0a-40cc-536b-d751" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Support - Dreadwing or Rapier Only" hidden="false" id="7843-04fb-71c7-c434" targetId="d52d-47c6-e17a-9e35" type="categoryEntry">
+            <categoryLink name="Support - Dreadwing or Rapier Only" hidden="false" id="7843-04fb-71c7-c434" targetId="d52d-47c6-e17a-9e35">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7550-bb36-9d75-0601"/>
               </constraints>
@@ -8783,7 +8783,7 @@
         <forceEntry name="Auxiliary - Siege Gauntlet" id="1581-346d-51c6-4739" hidden="true" publicationId="b905-0414-1057-bb34" sortIndex="58" page="187">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="c9dd-280d-6c74-28c8" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Troops - Breacher Squads Only" hidden="false" id="ee65-4faf-127b-8c50" targetId="2b63-c3cd-b88c-a465" type="categoryEntry">
+            <categoryLink name="Troops - Breacher Squads Only" hidden="false" id="ee65-4faf-127b-8c50" targetId="2b63-c3cd-b88c-a465">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e90a-b85f-1e6e-b9f8"/>
               </constraints>
@@ -9029,7 +9029,7 @@
         <forceEntry name="Auxiliary - Immolation Covenant" id="04d2-0a69-061e-75fe" hidden="true" publicationId="b905-0414-1057-bb34" sortIndex="63" page="265">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="8432-3f6c-3d45-2cb6" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Armour - Predator or Vindicator Only" hidden="false" id="3719-db31-cc33-da3d" targetId="bde9-c2c4-611e-7fb7" type="categoryEntry">
+            <categoryLink name="Armour - Predator or Vindicator Only" hidden="false" id="3719-db31-cc33-da3d" targetId="bde9-c2c4-611e-7fb7">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4f40-8800-1727-562f"/>
               </constraints>
@@ -9280,12 +9280,12 @@
         <forceEntry name="Auxiliary - Decapitation Cadre" id="27bf-3e6b-587c-74bb" hidden="true" publicationId="b905-0414-1057-bb34" sortIndex="64" page="265">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="be42-9976-9746-7d26" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Recon - Reconnaissance Squad Only" hidden="false" id="a25f-674d-d2e3-f98c" targetId="f8c3-f44e-569f-4418" type="categoryEntry">
+            <categoryLink name="Recon - Reconnaissance Squad Only" hidden="false" id="a25f-674d-d2e3-f98c" targetId="f8c3-f44e-569f-4418">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2cac-063e-c4b0-e09c"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Elites - Veteran Assault Squads or Dark Fury Squads Only" hidden="false" id="7326-9bc1-56dd-df83" targetId="2e9d-4d50-d9f1-0fcf" type="categoryEntry">
+            <categoryLink name="Elites - Veteran Assault Squads or Dark Fury Squads Only" hidden="false" id="7326-9bc1-56dd-df83" targetId="2e9d-4d50-d9f1-0fcf">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2136-0ff9-77cc-a3da"/>
               </constraints>
@@ -9618,7 +9618,7 @@
           </modifiers>
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="0e92-d177-5376-cb00" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Elites - Seeker Squads or Headhunter Kill Teams" hidden="false" id="832a-df38-fd99-3ca0" targetId="5c0d-4d49-44e2-0a99" type="categoryEntry">
+            <categoryLink name="Elites - Seeker Squads or Headhunter Kill Teams Only" hidden="false" id="832a-df38-fd99-3ca0" targetId="5c0d-4d49-44e2-0a99">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ddb5-036a-fe48-d088"/>
               </constraints>
@@ -12214,15 +12214,16 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
     </selectionEntry>
   </selectionEntries>
   <publications>
-    <publication name="Horus Heresy - 3rd Edition Core Rulebook" id="7d63-5df4-c656-52de" hidden="false" shortName="CRB 3.0" publisher="Horus Heresy - 3rd Edition Core Rulebook"/>
-    <publication name="Horus Heresy - Liber Astartes 3rd Edition" id="b905-0414-1057-bb34" hidden="false" shortName="LA 3.0" publisher="Horus Heresy - Liber Astartes 3rd Edition"/>
-    <publication name="Horus Heresy - Liber Hereticus 3rd Edition" id="e54c-7040-0f35-d85d" hidden="false" shortName="LH 3.0" publisher="Horus Heresy - Liber Hereticus 3rd Edition"/>
-    <publication name="Horus Heresy - Liber Auxilia 3rd Edition" id="adda-966f-f129-ed26" hidden="false" shortName="LX 3.0" publisher="Horus Heresy - Liber Auxilia 3rd Edition"/>
-    <publication name="Horus Heresy - Liber Questoris 3rd Edition" id="5a4b-8b0e-caa6-c7ed" hidden="false" shortName="LQ 3.0" publisher="Horus Heresy - Liber Questoris 3rd Edition"/>
-    <publication name="Journal Tactica - The Isstvan V Dropsite Massacre (Part One)" id="10e2-87c7-4862-2cc4" hidden="false" shortName="JT - Isstvan V pt.1" publisher="Journal Tactica - The Isstvan V Dropsite Massacre (Part One)"/>
+    <publication name="Horus Heresy - 3rd Edition Core Rulebook" id="7d63-5df4-c656-52de" hidden="false" shortName="CRB 3.0" publisher="Horus Heresy - 3rd Edition Core Rulebook" publicationDate="July 26, 2025"/>
+    <publication name="Horus Heresy - Liber Astartes 3rd Edition" id="b905-0414-1057-bb34" hidden="false" shortName="LA 3.0" publisher="Horus Heresy - Liber Astartes 3rd Edition" publicationDate="July 26, 2025"/>
+    <publication name="Horus Heresy - Liber Hereticus 3rd Edition" id="e54c-7040-0f35-d85d" hidden="false" shortName="LH 3.0" publisher="Horus Heresy - Liber Hereticus 3rd Edition" publicationDate="July 26, 2025"/>
+    <publication name="Horus Heresy - Liber Auxilia 3rd Edition" id="adda-966f-f129-ed26" hidden="false" shortName="LX 3.0" publisher="Horus Heresy - Liber Auxilia 3rd Edition" publicationDate="July 26, 2025"/>
+    <publication name="Horus Heresy - Liber Questoris 3rd Edition" id="5a4b-8b0e-caa6-c7ed" hidden="false" shortName="LQ 3.0" publisher="Horus Heresy - Liber Questoris 3rd Edition" publicationDate="July 26, 2025"/>
+    <publication name="Journal Tactica - The Isstvan V Dropsite Massacre (Part One)" id="10e2-87c7-4862-2cc4" hidden="false" shortName="JT - Isstvan V pt.1" publisher="Journal Tactica - The Isstvan V Dropsite Massacre (Part One)" publicationDate="July 26, 2025"/>
     <publication name="Legacies of the Age of Darkness - 3rd Edition" id="5469-14da-d0a1-6092" hidden="false" shortName="LAoD 3.0" publisher="Legacies of the Age of Darkness 3rd Edition"/>
-    <publication name="Horus Heresy - Talons of the Emperor 3rd Edition" id="09c6-1c1d-03a7-9556" hidden="false" shortName="TE 3.0" publisher="Horus Heresy - Talons of the Emperor 3rd Edition"/>
+    <publication name="Horus Heresy - Talons of the Emperor 3rd Edition" id="09c6-1c1d-03a7-9556" hidden="false" shortName="TE 3.0" publisher="Horus Heresy - Talons of the Emperor 3rd Edition" publicationDate="July 25, 2025"/>
     <publication name="Github" id="e0e7-6fcd-7ee7-448d" hidden="false" publisherUrl="https://github.com/BSData/horus-heresy-3rd-edition" shortName="Github"/>
+    <publication name="Horus Heresy - Liber Mechanicum 3rd Edition" id="4dc3-3347-238d-99b5" hidden="false" shortName="LM 3.0" publicationDate="July 26, 2025"/>
   </publications>
   <costTypes>
     <costType name="Point(s)" id="9893-c379-920b-8982" defaultCostLimit="-1"/>
