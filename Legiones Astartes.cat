@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="14" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="15" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -12711,7 +12711,7 @@
       <modifiers>
         <modifier type="set-primary" value="ee42-a241-c364-489d" field="category">
           <conditions>
-            <condition type="atLeast" value="1" field="forces" scope="roster" childId="1da1-f220-0bad-5f78" shared="true" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="1da1-f220-0bad-5f78" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -13006,6 +13006,18 @@
       <categoryLinks>
         <categoryLink targetId="643a-1012-bd51-6537" id="e01f-e543-a5a0-4439" primary="true" name="Armour"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="b58f-c88f-6b2e-02b1" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="5bc5-5224-c751-d437" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set-primary" value="eb97-692e-8c90-1622" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="d089-8cc7-96a7-903f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Cerberus Heavy Tank Destroyer" hidden="false" id="92b5-9340-df96-6375" type="selectionEntry" targetId="a7a8-9dd5-69b2-a598" sortIndex="71">
       <categoryLinks>

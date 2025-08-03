@@ -92,6 +92,28 @@ Add a modifier on that unit to "set primary category if ancestor is name of forc
 Replace whatever category in your copy of the template with your new category. 
 Be sure to copy over the logistical benefit addition to your restricted category as the slot is still restricted.
 
+On the unit place a modifier of setting the primary category based on the force. Note a bug in 
+the editor may change "force" to "roster" when you click into the constraint.
+```json
+{
+  "parentKey": "modifiers",
+  "conditions": [
+    {
+      "type": "instanceOf",
+      "value": 1,
+      "field": "forces",
+      "scope": "force",
+      "childId": "1da1-f220-0bad-5f78",
+      "shared": true,
+      "includeChildSelections": true
+    }
+  ],
+  "type": "set-primary",
+  "value": "ee42-a241-c364-489d",
+  "field": "category"
+}
+```
+
 If instead that slot is "may not be used to take" (ex reaping host from death guard) simply set a hide modifier 
 on the appropriate unit
 ---
