@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="13" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="14" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -5213,6 +5213,37 @@
             </modifier>
           </modifiers>
           <comment>SA Only</comment>
+        </forceEntry>
+        <forceEntry name="Auxiliary - Immolation Covenant" id="0b37-02e8-3bfc-cb2b" hidden="true">
+          <categoryLinks>
+            <categoryLink name="Prime Support" hidden="false" id="b0ef-21e5-906b-382e" targetId="1c79-ecdf-9a64-84c9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3ca-759b-7f85-b2b9"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Support" hidden="false" id="824a-4d82-df9d-8157" targetId="345f-9ba6-9b02-ed5c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7ba-910c-37aa-c29e"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Armour" hidden="false" id="b77f-3ac7-6ec7-2253" targetId="643a-1012-bd51-6537">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2d62-0b2c-d09d-ea07"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <comment>SL Only</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="2a78-9cbb-00ba-4523"/>
+          </constraints>
+          <comment>SL Only</comment>
         </forceEntry>
       </forceEntries>
       <constraints>
