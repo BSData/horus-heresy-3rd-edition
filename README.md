@@ -92,7 +92,8 @@ Add a modifier on that unit to "set primary category if ancestor is name of forc
 Replace whatever category in your copy of the template with your new category. 
 Be sure to copy over the logistical benefit addition to your restricted category as the slot is still restricted.
 
-
+If instead that slot is "may not be used to take" (ex reaping host from death guard) simply set a hide modifier 
+on the appropriate unit
 ---
 
 [BSData.net]: https://www.bsdata.net/
