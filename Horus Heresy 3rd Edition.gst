@@ -9565,7 +9565,7 @@
           </categoryLinks>
         </forceEntry>
         <forceEntry name="Auxiliary - Exalted Conclave" id="c961-7007-0142-5d07" hidden="false" sortIndex="80" publicationId="e54c-7040-0f35-d85d" page="273">
-          <comment>WB</comment>
+          <comment>WB - No LB Prime</comment>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -9581,6 +9581,26 @@
           </modifiers>
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="b051-562e-890e-d4a4" targetId="1a65-8b23-419b-b30f"/>
+            <categoryLink name="Troops" hidden="false" id="b3b2-bd18-c654-d809" targetId="88e6-d373-4152-0dd8">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8a82-537e-c44d-bcf9"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Troops" hidden="false" id="7147-d08d-4d61-5b78" targetId="c3f9-a7f3-984b-3fda">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e21b-019b-8bdc-613d" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Elites" hidden="false" id="8416-75f5-3e71-2c12" targetId="5d5e-958f-e388-50b5">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="70d7-7588-f1be-a7af"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Elites" hidden="false" id="b25a-fa2c-8a3f-f906" targetId="276f-7a07-a56c-affd">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="60c5-7fae-1961-177c"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
         </forceEntry>
         <forceEntry name="Auxiliary - Headhunter Leviathal" id="74f4-a9d0-a2be-b4bd" hidden="false" sortIndex="81" publicationId="e54c-7040-0f35-d85d" page="295">
