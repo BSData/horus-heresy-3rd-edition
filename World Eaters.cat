@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="a956-190d-3b47-6258" name="                        XII - World Eaters" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="4" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="a956-190d-3b47-6258" name="                        XII - World Eaters" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="6" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Angron" hidden="false" id="af62-d4a0-c800-712e">
       <selectionEntries>
@@ -577,6 +577,9 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="fc0c-4f2b-f51f-a41c" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ff60-7216-1402-9a91" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Angron Transfigured" hidden="false" id="eb31-de9c-e5ef-a9ac">
       <costs>
@@ -697,6 +700,23 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
           <description>Angron Transfigured cannot be included in the same Army as Angron.</description>
         </rule>
       </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="b6b1-0411-ad86-dee9">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="2385-2519-105f-fc50" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f2a-b34d-3a94-9cdf"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b6b1-0411-ad86-dee9" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="563f-7a31-28c9-7cc7" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kharn the Bloody" hidden="false" id="19c9-b57d-a308-b655">
       <categoryLinks>
@@ -866,6 +886,9 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="cfb3-2167-5bee-0140" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
@@ -1093,72 +1116,18 @@ On any Turn in which they made a Charge Move, Models with this Special Rule modi
   </sharedSelectionEntryGroups>
   <entryLinks>
     <entryLink import="true" name="Angron" hidden="false" id="2385-2519-105f-fc50" type="selectionEntry" targetId="af62-d4a0-c800-712e"/>
-    <entryLink import="true" name="Rampager Squad" hidden="false" id="6ab4-9770-dcb2-8b0b" type="selectionEntry" targetId="c660-c7ad-70b0-5318"/>
+    <entryLink import="true" name="Rampager Squad" hidden="false" id="6ab4-9770-dcb2-8b0b" type="selectionEntry" targetId="c660-c7ad-70b0-5318">
+      <modifiers>
+        <modifier type="set-primary" value="91f0-1b91-0a9a-c542" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="bda6-c5d3-eafc-4eb5" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
     <entryLink import="true" name="Red Butchers" hidden="false" id="542f-ad6f-ca67-8e34" type="selectionEntry" targetId="e149-7a3c-d62c-e941"/>
     <entryLink import="true" name="Angron Transfigured" hidden="false" id="ccc1-bba6-cf7c-cfa8" type="selectionEntry" targetId="eb31-de9c-e5ef-a9ac"/>
     <entryLink import="true" name="Lotara Sarrin" hidden="false" id="cfd9-ce39-c208-7dc0" type="selectionEntry" targetId="e628-409b-5f93-170a"/>
     <entryLink import="true" name="Kharn the Bloody" hidden="false" id="e0d5-8405-aba7-628b" type="selectionEntry" targetId="19c9-b57d-a308-b655"/>
   </entryLinks>
-  <forceEntries>
-    <forceEntry name="Auxiliary Detachment - Berserker Cadre" id="bda6-c5d3-eafc-4eb5" hidden="true">
-      <categoryLinks>
-        <categoryLink name="Prime Heavy Assault" hidden="false" id="bd12-1650-bf1a-e19c" targetId="1e95-35f0-1353-ffa1">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb50-f24e-7444-9d43"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Heavy Assault" hidden="false" id="ed75-c1e4-47c0-af3f" targetId="3235-bd79-e9b1-60fa">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7193-2b1c-1938-61ae"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Elites" hidden="false" id="e9ad-aa99-a589-92cf" targetId="5d5e-958f-e388-50b5">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="306d-42d8-ef52-c726"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <comment>Need to set constraints</comment>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a956-190d-3b47-6258" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="a956-190d-3b47-6258" shared="true"/>
-              </conditions>
-              <comment>World Eaters</comment>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </forceEntry>
-    <forceEntry name="Auxiliary Detachment - Sons of Bodt" id="9bfb-c160-31df-9108" hidden="true">
-      <categoryLinks>
-        <categoryLink name="Prime Support" hidden="false" id="261c-10f1-b1bd-994f" targetId="1c79-ecdf-9a64-84c9">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4f62-e0d0-4242-c305"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Troops" hidden="false" id="f5e1-8893-18e5-afd2" targetId="88e6-d373-4152-0dd8">
-          <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="4e96-bf2a-2ed0-1f7e"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a956-190d-3b47-6258" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="a956-190d-3b47-6258" shared="true"/>
-              </conditions>
-              <comment>World Eaters</comment>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </forceEntry>
-  </forceEntries>
 </catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="8813-5298-c368-ee16" name="                       XX - Alpha Legion" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="3" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="8813-5298-c368-ee16" name="                       XX - Alpha Legion" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="5" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Armillus Dynat" hidden="false" id="df2e-ee83-e5e5-c333" sortIndex="2">
       <selectionEntries>
@@ -1512,6 +1512,13 @@ A Model with this Special Rule is always considered to be 2&quot; further away t
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="8fb9-3ca1-8cfd-7340" primary="true" name="Elites"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="5c0d-4d49-44e2-0a99" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="74f4-a9d0-a2be-b4bd" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Exodus" hidden="false" id="652f-4031-cc31-ed0b" type="selectionEntry" targetId="9258-8867-220d-429f" sortIndex="5">
       <categoryLinks>
@@ -1721,6 +1728,16 @@ A Model with this Special Rule is always considered to be 2&quot; further away t
     <entryLink import="true" name="Contemptor-Incaendius Dreadnought" hidden="false" id="e204-8dc5-6b36-3bcf" type="selectionEntry" targetId="83ae-08c8-bdf1-ccaa" sortIndex="904">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="2e12-fbea-64a3-6a5e" targetId="fe7f-1287-4162-a65d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Firedrake Terminator Squad" hidden="false" id="257b-902d-9037-7245" type="selectionEntry" targetId="09a9-6c68-9b0b-f24f" sortIndex="1801">
+      <categoryLinks>
+        <categoryLink name="Rewards of Treachery" hidden="false" id="d653-05c8-afeb-cc9b" targetId="fe7f-1287-4162-a65d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Pyroclast Squad" hidden="false" id="fe5d-55bb-40fb-3bfe" type="selectionEntry" targetId="fbbe-aa8c-d645-7970" sortIndex="1802">
+      <categoryLinks>
+        <categoryLink name="Rewards of Treachery" hidden="false" id="3ba7-d01f-f429-7545" targetId="fe7f-1287-4162-a65d" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
