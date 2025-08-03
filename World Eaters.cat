@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="a956-190d-3b47-6258" name="                        XII - World Eaters" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="5" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="a956-190d-3b47-6258" name="                        XII - World Eaters" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="6" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Angron" hidden="false" id="af62-d4a0-c800-712e">
       <selectionEntries>
@@ -143,7 +143,6 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="22ee-7208-4089-b005" id="a9fd-179b-185f-3a7b" primary="true" name="Warlord"/>
         <categoryLink targetId="7799-e1d6-762b-700b" id="270b-06a9-0360-6441" primary="false" name="Paragon Model Type"/>
         <categoryLink targetId="b980-187b-2b17-d635" id="ef57-07f8-f508-09fc" primary="false" name="Unique Model Sub-Type"/>
       </categoryLinks>
@@ -244,13 +243,13 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Frag grenades" hidden="false" id="49c6-84b3-056f-b941" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+        <entryLink import="true" name="Frag grenades" hidden="false" id="49c6-84b3-056f-b941" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="4">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="faab-9e2c-e5da-5274"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbaf-0eb2-1a30-df87"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Krak grenades" hidden="false" id="4142-f424-6178-884c" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+        <entryLink import="true" name="Krak grenades" hidden="false" id="4142-f424-6178-884c" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="5">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="264d-9982-9187-9d0d"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e995-280c-cbeb-f0b8"/>
@@ -264,9 +263,37 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="3235-bd79-e9b1-60fa" id="6301-4ba6-09ce-973c" primary="true" name="Heavy Assault"/>
         <categoryLink targetId="594d-fa82-13cb-a345" id="43cd-b20f-0742-854b" primary="false" name="Infantry Model Type"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="World Eater Prime Benefits" id="d6d6-1475-b360-3ea2" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Chain-bonded" hidden="false" id="8d77-3c72-1048-f389">
+              <rules>
+                <rule name="Chain-brothers" id="e079-9c6f-8698-8f9e" hidden="false">
+                  <description>While a Model with this Special Rule is within Unit Coherency of the other Model from your Army with this Special Rule, that Model gains a bonus of +1 to Hit Tests made in the Assault Phase. If a Model that is engaged in a Challenge is in the same Combat as the other Model from your Army with this Special Rule, that Model is treated as being in Unit Coherency  with that other Model for the purposes of this Special Rule.</description>
+                </rule>
+                <rule name="Chain-bonded" id="8c3c-b0a7-748a-b70b" hidden="false">
+                  <description>This Prime Advantage can only be selected once per Army. When this Prime Advantage is selected, the Controlling Player must select another Unit which only includes Models with the World Eaters Trait that has the Command Battlefield Role from their Army. One Model in the selected Unit and one Model in the Unit selected to fill a Prime Force Organisation Slot with this Prime Advantage both gain the Chain-brothers Special Rule.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3a0d-2463-4f90-1ab8" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="ff85-4875-22aa-6f22" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Red Butchers" hidden="false" id="e149-7a3c-d62c-e941">
       <selectionEntries>
@@ -431,7 +458,6 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="5d5e-958f-e388-50b5" id="520e-e4f7-1d56-72b8" primary="true" name="Elites"/>
         <categoryLink targetId="1e7d-9066-28d2-97a0" id="09da-4735-b341-b040" primary="false" name="Heavy Model Sub-Type"/>
         <categoryLink targetId="594d-fa82-13cb-a345" id="d06f-0282-ad04-d361" primary="false" name="Infantry Model Type"/>
       </categoryLinks>
@@ -453,10 +479,38 @@ Any Hit Tests made in the Assault Phase that target a Unit that includes one or 
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="9084-a3e6-6ef2-69ce" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2"/>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="World Eater Prime Benefits" id="d902-90a9-cf24-727d" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Chain-bonded" hidden="false" id="7849-8a7b-3834-073f">
+              <rules>
+                <rule name="Chain-brothers" id="66f3-5908-9506-5fb9" hidden="false">
+                  <description>While a Model with this Special Rule is within Unit Coherency of the other Model from your Army with this Special Rule, that Model gains a bonus of +1 to Hit Tests made in the Assault Phase. If a Model that is engaged in a Challenge is in the same Combat as the other Model from your Army with this Special Rule, that Model is treated as being in Unit Coherency  with that other Model for the purposes of this Special Rule.</description>
+                </rule>
+                <rule name="Chain-bonded" id="7ecf-8ab8-2b2e-1e30" hidden="false">
+                  <description>This Prime Advantage can only be selected once per Army. When this Prime Advantage is selected, the Controlling Player must select another Unit which only includes Models with the World Eaters Trait that has the Command Battlefield Role from their Army. One Model in the selected Unit and one Model in the Unit selected to fill a Prime Force Organisation Slot with this Prime Advantage both gain the Chain-brothers Special Rule.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8a73-82b9-c620-269f" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="9c15-bd2d-a3ab-f7b3" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lotara Sarrin" hidden="false" id="e628-409b-5f93-170a">
       <categoryLinks>
-        <categoryLink targetId="6dbf-654a-f06f-2d69" id="9604-2cdc-dd61-abb6" primary="true" name="Command"/>
         <categoryLink targetId="594d-fa82-13cb-a345" id="8f85-1207-2016-ba6e" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="8045-89a4-76d4-fcef" id="7bfd-f836-df32-fad9" primary="false" name="Sergeant Model Sub-Type"/>
         <categoryLink targetId="af7d-af64-6b7d-da9d" id="c9b7-59a4-33fd-9293" primary="false" name="Specialist Model Sub-Type"/>
@@ -580,6 +634,35 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ff60-7216-1402-9a91" includeChildSelections="true"/>
       </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="World Eater Prime Benefits" id="2a67-2962-0197-0f5c" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Chain-bonded" hidden="false" id="4881-d967-9c49-453d">
+              <rules>
+                <rule name="Chain-brothers" id="4b8c-a212-3d46-cea0" hidden="false">
+                  <description>While a Model with this Special Rule is within Unit Coherency of the other Model from your Army with this Special Rule, that Model gains a bonus of +1 to Hit Tests made in the Assault Phase. If a Model that is engaged in a Challenge is in the same Combat as the other Model from your Army with this Special Rule, that Model is treated as being in Unit Coherency  with that other Model for the purposes of this Special Rule.</description>
+                </rule>
+                <rule name="Chain-bonded" id="5eb2-52ba-c8be-5c84" hidden="false">
+                  <description>This Prime Advantage can only be selected once per Army. When this Prime Advantage is selected, the Controlling Player must select another Unit which only includes Models with the World Eaters Trait that has the Command Battlefield Role from their Army. One Model in the selected Unit and one Model in the Unit selected to fill a Prime Force Organisation Slot with this Prime Advantage both gain the Chain-brothers Special Rule.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="aa0c-d99d-5bb7-ebe4" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="a14d-71e7-8881-95dc" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Angron Transfigured" hidden="false" id="eb31-de9c-e5ef-a9ac">
       <costs>
@@ -588,7 +671,6 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="22ee-7208-4089-b005" id="de60-c3e9-c509-794d" primary="true" name="Warlord"/>
         <categoryLink targetId="7799-e1d6-762b-700b" id="8ae4-a4cc-5240-9ec7" primary="false" name="Paragon Model Type"/>
         <categoryLink targetId="c504-9dfa-35d3-c98f" id="1ea7-cfa8-1de9-7c41" primary="false" name="Antigrav Model Sub-Type"/>
         <categoryLink targetId="2de1-ddd6-ebb4-10df" id="2659-cdc6-2a46-fecc" primary="false" name="Malefic"/>
@@ -700,27 +782,9 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
           <description>Angron Transfigured cannot be included in the same Army as Angron.</description>
         </rule>
       </rules>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="0" field="b6b1-0411-ad86-dee9">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="2385-2519-105f-fc50" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f2a-b34d-3a94-9cdf"/>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b6b1-0411-ad86-dee9" includeChildSelections="true"/>
-        <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="563f-7a31-28c9-7cc7" includeChildSelections="true"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kharn the Bloody" hidden="false" id="19c9-b57d-a308-b655">
       <categoryLinks>
-        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="cada-312d-8a55-b4c0" primary="true" name="High Command"/>
         <categoryLink targetId="594d-fa82-13cb-a345" id="15cb-892a-687b-bc7b" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="b980-187b-2b17-d635" id="47d4-b06e-537f-1b9d" primary="false" name="Unique Model Sub-Type"/>
         <categoryLink targetId="9871-cb62-5283-2216" id="095b-37a9-d949-e528" primary="false" name="Command Model Sub-type"/>
@@ -878,6 +942,33 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a89-4f19-582b-bb99"/>
           </constraints>
         </selectionEntryGroup>
+        <selectionEntryGroup name="World Eater Prime Benefits" id="6a66-5039-1553-0b71" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Chain-bonded" hidden="false" id="70d5-078d-7ade-001e">
+              <rules>
+                <rule name="Chain-brothers" id="781d-9aa5-72fc-42e7" hidden="false">
+                  <description>While a Model with this Special Rule is within Unit Coherency of the other Model from your Army with this Special Rule, that Model gains a bonus of +1 to Hit Tests made in the Assault Phase. If a Model that is engaged in a Challenge is in the same Combat as the other Model from your Army with this Special Rule, that Model is treated as being in Unit Coherency  with that other Model for the purposes of this Special Rule.</description>
+                </rule>
+                <rule name="Chain-bonded" id="25ad-1ab4-b33a-9391" hidden="false">
+                  <description>This Prime Advantage can only be selected once per Army. When this Prime Advantage is selected, the Controlling Player must select another Unit which only includes Models with the World Eaters Trait that has the Command Battlefield Role from their Army. One Model in the selected Unit and one Model in the Unit selected to fill a Prime Force Organisation Slot with this Prime Advantage both gain the Chain-brothers Special Rule.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d758-8a34-e93b-b5af" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="b497-ab75-d905-7f94" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -888,6 +979,15 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
       </modifiers>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="cfb3-2167-5bee-0140" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="0797-1862-f00c-9f92">
+      <entryLinks>
+        <entryLink import="true" name="Rite of War" hidden="false" id="cf3f-3fb5-2d7a-f3d6" type="selectionEntryGroup" targetId="1455-b8d9-311a-e3f6"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0714-6abe-5ada-250e"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6e1-5095-9699-0572"/>
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -1003,7 +1103,6 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="RoW: Legiones Hereticus World Eaters" hidden="false" id="a095-2238-5c9e-0576">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe25-a6bc-ce7a-7031"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="079c-1e93-eb2e-8bed"/>
           </constraints>
           <selectionEntries>
@@ -1040,6 +1139,10 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6640-e6aa-22c5-e2ff"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d84e-b8fa-8d7e-bfce"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <modifiers>
@@ -1087,14 +1190,21 @@ On any Turn in which they made a Charge Move, Models with this Special Rule modi
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a697-8d6f-a712-1a0d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3dc8-1969-b798-5b8a"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3636-a9f8-f569-55e4"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbb9-fbb9-426e-2885"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f87e-27e1-d2b0-1f53"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f32-3141-2444-0309"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="World Eater Prime Benefits" id="9bf2-761f-9cb9-ae63" hidden="false">
       <selectionEntries>
@@ -1112,76 +1222,53 @@ On any Turn in which they made a Charge Move, Models with this Special Rule modi
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Common Prime Benefits" hidden="false" id="890b-a44b-1b21-b3e6" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <entryLinks>
-    <entryLink import="true" name="Angron" hidden="false" id="2385-2519-105f-fc50" type="selectionEntry" targetId="af62-d4a0-c800-712e"/>
-    <entryLink import="true" name="Rampager Squad" hidden="false" id="6ab4-9770-dcb2-8b0b" type="selectionEntry" targetId="c660-c7ad-70b0-5318"/>
-    <entryLink import="true" name="Red Butchers" hidden="false" id="542f-ad6f-ca67-8e34" type="selectionEntry" targetId="e149-7a3c-d62c-e941"/>
-    <entryLink import="true" name="Angron Transfigured" hidden="false" id="ccc1-bba6-cf7c-cfa8" type="selectionEntry" targetId="eb31-de9c-e5ef-a9ac"/>
-    <entryLink import="true" name="Lotara Sarrin" hidden="false" id="cfd9-ce39-c208-7dc0" type="selectionEntry" targetId="e628-409b-5f93-170a"/>
-    <entryLink import="true" name="Kharn the Bloody" hidden="false" id="e0d5-8405-aba7-628b" type="selectionEntry" targetId="19c9-b57d-a308-b655"/>
+    <entryLink import="true" name="Angron" hidden="false" id="2385-2519-105f-fc50" type="selectionEntry" targetId="af62-d4a0-c800-712e">
+      <categoryLinks>
+        <categoryLink targetId="22ee-7208-4089-b005" id="f18e-f7d2-3c90-64ca" primary="true" name="Warlord"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Rampager Squad" hidden="false" id="6ab4-9770-dcb2-8b0b" type="selectionEntry" targetId="c660-c7ad-70b0-5318">
+      <categoryLinks>
+        <categoryLink targetId="3235-bd79-e9b1-60fa" id="1e40-c776-4d95-3799" primary="true" name="Heavy Assault"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="91f0-1b91-0a9a-c542" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="bda6-c5d3-eafc-4eb5" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Red Butchers" hidden="false" id="542f-ad6f-ca67-8e34" type="selectionEntry" targetId="e149-7a3c-d62c-e941">
+      <categoryLinks>
+        <categoryLink targetId="5d5e-958f-e388-50b5" id="1c2f-c622-90a0-13f9" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Angron Transfigured" hidden="false" id="ccc1-bba6-cf7c-cfa8" type="selectionEntry" targetId="eb31-de9c-e5ef-a9ac">
+      <categoryLinks>
+        <categoryLink targetId="22ee-7208-4089-b005" id="8261-7fd3-5c9a-59d6" primary="true" name="Warlord"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Lotara Sarrin" hidden="false" id="cfd9-ce39-c208-7dc0" type="selectionEntry" targetId="e628-409b-5f93-170a">
+      <categoryLinks>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="b94d-d8dc-424f-0be9" primary="true" name="Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Kharn the Bloody" hidden="false" id="e0d5-8405-aba7-628b" type="selectionEntry" targetId="19c9-b57d-a308-b655">
+      <categoryLinks>
+        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="769c-7d94-776c-0445" primary="true" name="High Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Rite of War" hidden="false" id="1ce9-43c5-ef27-ef7f" type="selectionEntry" targetId="0797-1862-f00c-9f92">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="2f33-dc81-6c6f-aabb" primary="true" name="Army Configuration"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
-  <forceEntries>
-    <forceEntry name="Auxiliary Detachment - Berserker Cadre" id="bda6-c5d3-eafc-4eb5" hidden="true">
-      <categoryLinks>
-        <categoryLink name="Prime Heavy Assault" hidden="false" id="bd12-1650-bf1a-e19c" targetId="1e95-35f0-1353-ffa1">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb50-f24e-7444-9d43"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Heavy Assault" hidden="false" id="ed75-c1e4-47c0-af3f" targetId="3235-bd79-e9b1-60fa">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7193-2b1c-1938-61ae"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Elites" hidden="false" id="e9ad-aa99-a589-92cf" targetId="5d5e-958f-e388-50b5">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="306d-42d8-ef52-c726"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <comment>Need to set constraints</comment>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a956-190d-3b47-6258" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="a956-190d-3b47-6258" shared="true"/>
-              </conditions>
-              <comment>World Eaters</comment>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </forceEntry>
-    <forceEntry name="Auxiliary Detachment - Sons of Bodt" id="9bfb-c160-31df-9108" hidden="true">
-      <categoryLinks>
-        <categoryLink name="Prime Support" hidden="false" id="261c-10f1-b1bd-994f" targetId="1c79-ecdf-9a64-84c9">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4f62-e0d0-4242-c305"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Troops" hidden="false" id="f5e1-8893-18e5-afd2" targetId="88e6-d373-4152-0dd8">
-          <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="4e96-bf2a-2ed0-1f7e"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a956-190d-3b47-6258" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="a956-190d-3b47-6258" shared="true"/>
-              </conditions>
-              <comment>World Eaters</comment>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </forceEntry>
-  </forceEntries>
 </catalogue>
