@@ -720,6 +720,13 @@ Once per Battle, if a Unit with this Special Rule remains Stationary in the prev
         <categoryLink targetId="5d5e-958f-e388-50b5" id="82f4-82c8-7c08-e9d6" primary="true" name="Elites"/>
         <categoryLink targetId="4346-67d5-360d-89fa" id="a1a8-75b8-cce1-e601" primary="false" name="Raven Guard"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="2e9d-4d50-d9f1-0fcf" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="27bf-3e6b-587c-74bb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
   </entryLinks>
   <sharedRules>
@@ -729,23 +736,6 @@ Once per Battle, if a Unit with this Special Rule remains Stationary in the prev
 When a Unit that includes only Models with this Special Rule is the target of a Shooting Attack, all attacks must be made as Snap Shots when the distance between the closest Model in the attacking Unit and the Target Unit is 18&quot; or greater.</description>
     </rule>
   </sharedRules>
-  <forceEntries>
-    <forceEntry name="Decapitation Cadre" id="0f6b-6347-03d5-8404" hidden="false">
-      <categoryLinks>
-        <categoryLink name="Recon" hidden="false" id="869e-e26f-4787-ef38" targetId="2b65-a3f2-620a-dc58">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6a0f-7daf-09ee-d05a"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Elites" hidden="false" id="180e-edd8-1900-d01a" targetId="5d5e-958f-e388-50b5">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b8a8-3438-4f05-c9b2"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <comment>RG - Needs Mechanics &amp; Validation</comment>
-    </forceEntry>
-  </forceEntries>
   <sharedProfiles>
     <profile name="Decapitation Strike" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="0307-e161-ca95-b0a2">
       <characteristics>

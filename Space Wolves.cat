@@ -1343,7 +1343,15 @@ Head-taker: If this Gambit is selected, the Opposing Player may not claim an Out
     <entryLink import="true" name="Deathsworn Pack" hidden="false" id="b0bd-300f-59df-f92e" type="selectionEntry" targetId="cb82-a73f-b30f-c30f"/>
     <entryLink import="true" name="Caster of Runes" hidden="false" id="ba33-40ec-d766-6408" type="selectionEntry" targetId="0fe3-fde9-4086-e3ab"/>
     <entryLink import="true" name="Geigor Fell-Hand" hidden="false" id="48ab-ffac-313a-7708" type="selectionEntry" targetId="8280-b241-c837-f3ca"/>
-    <entryLink import="true" name="Grey Slayer Pack" hidden="false" id="0171-c81f-3045-617e" type="selectionEntry" targetId="9a43-13b5-bd92-d8be"/>
+    <entryLink import="true" name="Grey Slayer Pack" hidden="false" id="0171-c81f-3045-617e" type="selectionEntry" targetId="9a43-13b5-bd92-d8be">
+      <modifiers>
+        <modifier type="set-primary" value="a4aa-d941-3aab-a81b" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="06b3-c35d-da74-de37" shared="true" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
     <entryLink import="true" name="Hvarl Red-Blade" hidden="false" id="1c16-1b01-9abd-5cb9" type="selectionEntry" targetId="a681-0e72-a7fa-7bdd"/>
     <entryLink import="true" name="Leman Russ" hidden="false" id="816c-fff9-b834-bec8" type="selectionEntry" targetId="e308-c9ee-3be5-0f71"/>
     <entryLink import="true" name="Varagyr Wolf Guard Terminators" hidden="false" id="874a-10f5-f218-8df0" type="selectionEntry" targetId="efd1-c611-841f-0cbb"/>

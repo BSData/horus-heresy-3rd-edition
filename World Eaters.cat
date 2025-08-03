@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="a956-190d-3b47-6258" name="                        XII - World Eaters" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="5" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="a956-190d-3b47-6258" name="                        XII - World Eaters" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="6" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Angron" hidden="false" id="af62-d4a0-c800-712e">
       <selectionEntries>
@@ -1116,7 +1116,15 @@ On any Turn in which they made a Charge Move, Models with this Special Rule modi
   </sharedSelectionEntryGroups>
   <entryLinks>
     <entryLink import="true" name="Angron" hidden="false" id="2385-2519-105f-fc50" type="selectionEntry" targetId="af62-d4a0-c800-712e"/>
-    <entryLink import="true" name="Rampager Squad" hidden="false" id="6ab4-9770-dcb2-8b0b" type="selectionEntry" targetId="c660-c7ad-70b0-5318"/>
+    <entryLink import="true" name="Rampager Squad" hidden="false" id="6ab4-9770-dcb2-8b0b" type="selectionEntry" targetId="c660-c7ad-70b0-5318">
+      <modifiers>
+        <modifier type="set-primary" value="91f0-1b91-0a9a-c542" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="bda6-c5d3-eafc-4eb5" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
     <entryLink import="true" name="Red Butchers" hidden="false" id="542f-ad6f-ca67-8e34" type="selectionEntry" targetId="e149-7a3c-d62c-e941"/>
     <entryLink import="true" name="Angron Transfigured" hidden="false" id="ccc1-bba6-cf7c-cfa8" type="selectionEntry" targetId="eb31-de9c-e5ef-a9ac"/>
     <entryLink import="true" name="Lotara Sarrin" hidden="false" id="cfd9-ce39-c208-7dc0" type="selectionEntry" targetId="e628-409b-5f93-170a"/>

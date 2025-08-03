@@ -93,7 +93,8 @@ Replace whatever category in your copy of the template with your new category.
 Be sure to copy over the logistical benefit addition to your restricted category as the slot is still restricted.
 
 On the unit place a modifier of setting the primary category based on the force. Note a bug in 
-the editor may change "force" to "roster" when you click into the constraint.
+the editor may change "force" to "roster" when you click into the constraint if you use instance of force in force. 
+Instead, instance of selection in ancestor works. 
 ```json
 {
   "parentKey": "modifiers",
@@ -101,15 +102,16 @@ the editor may change "force" to "roster" when you click into the constraint.
     {
       "type": "instanceOf",
       "value": 1,
-      "field": "forces",
-      "scope": "force",
-      "childId": "1da1-f220-0bad-5f78",
+      "field": "selections",
+      "scope": "ancestor",
+      "childId": "9bfb-c160-31df-9108",
       "shared": true,
-      "includeChildSelections": true
+      "includeChildSelections": false,
+      "includeChildForces": false
     }
   ],
   "type": "set-primary",
-  "value": "ee42-a241-c364-489d",
+  "value": "4a48-9154-40d8-d6b7",
   "field": "category"
 }
 ```
