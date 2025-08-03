@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<<<<<<< HEAD
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="14" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
-=======
 <gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="15" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
->>>>>>> main
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -222,7 +218,6 @@
       </constraints>
     </categoryEntry>
     <categoryEntry name="Army Configuration" id="abfa-86ab-1726-077a" hidden="false"/>
-<<<<<<< HEAD
     <categoryEntry name="Veletaris Tercio Unlock" id="67d3-556b-b619-28e2" hidden="false">
       <comment>SA</comment>
     </categoryEntry>
@@ -245,7 +240,6 @@
     <categoryEntry name="Cohort Doctrine: Siege Pattern Cohort" id="c9ef-b204-e951-6b7e" hidden="false"/>
     <categoryEntry name="Cohort Doctrine: Iron Pattern Cohort" id="28ba-8660-5266-8674" hidden="false"/>
     <categoryEntry name="Iron Tercio Unlock" id="deba-d402-8204-1d13" hidden="false"/>
-=======
     <categoryEntry name="Support - Apothecary Only" id="4a48-9154-40d8-d6b7" hidden="false"/>
     <categoryEntry name="Support - Techmarine Only" id="103f-d00d-f8cf-52de" hidden="false"/>
     <categoryEntry name="Recon - Reconnaissance Squad Only" id="f8c3-f44e-569f-4418" hidden="false"/>
@@ -269,7 +263,6 @@
     <categoryEntry name="Heavy Assault - Cataphractii or Tartaros Only" id="6cc6-9558-dd27-949f" hidden="false"/>
     <categoryEntry name="Heavy Assault - Rampager Squads Only" id="91f0-1b91-0a9a-c542" hidden="false"/>
     <categoryEntry name="Elites - Seeker Squads or Headhunter Kill Teams Only" id="5c0d-4d49-44e2-0a99" hidden="false"/>
->>>>>>> main
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -5415,52 +5408,6 @@
             </modifier>
           </modifiers>
           <comment>SA Only</comment>
-          <constraints>
-            <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="7eb3-c163-f197-2aed"/>
-          </constraints>
-        </forceEntry>
-        <forceEntry name="Auxiliary Detachment - Iron Tercio" id="9a10-a2d9-5a87-a5a9" hidden="true">
-          <categoryLinks>
-            <categoryLink name="Troops" hidden="false" id="13dd-708a-30bc-4c72" targetId="88e6-d373-4152-0dd8">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b57b-c01a-64d4-dd3c" includeChildSelections="false"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="9939-ad32-7608-7ad1" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Support" hidden="false" id="84a6-92e2-1afd-8497" targetId="345f-9ba6-9b02-ed5c">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7143-e998-ba72-8b90"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Heavy Assault" hidden="false" id="828a-d1ae-eaee-d2b7" targetId="3235-bd79-e9b1-60fa">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c24e-c0f6-4c76-42e0"/>
-              </constraints>
-            </categoryLink>
-          </categoryLinks>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7851-69ac-f701-034e" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7851-69ac-f701-034e" shared="true"/>
-                  </conditions>
-                  <comment>Solar Auxilia</comment>
-                </conditionGroup>
-              </conditionGroups>
-              <comment>Solar Auxilia</comment>
-            </modifier>
-            <modifier type="increment" value="1" field="f66f-803d-5433-bb35">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="28ba-8660-5266-8674" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <comment>SA Only</comment>
-          <constraints>
-            <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="f66f-803d-5433-bb35" includeChildSelections="true"/>
-          </constraints>
         </forceEntry>
         <forceEntry name="Auxiliary - Chogorian Warband" id="0f6e-3db8-8b6f-74e1" hidden="true" publicationId="b905-0414-1057-bb34" page="147" sortIndex="56">
           <categoryLinks>
