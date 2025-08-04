@@ -12410,6 +12410,11 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c80-9611-b710-0ca4" includeChildSelections="false"/>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3b6f-8c9d-27b5-9f5d" includeChildSelections="false"/>
           </constraints>
+          <rules>
+            <rule name="Combat Veterans" id="0e33-ff98-7868-268c" hidden="false">
+              <description>All Models in the Unit selected to fill the Prime Slot gain a bonus of +1 to their Leadership, Cool, Intelligence and Willpower Characteristics to a maximum of 10 (this includes only Models selected as part of the Unit, not Models that later join the Unit either before or during Battle).</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Special Assignment" hidden="false" id="c857-47bd-6a4f-fcf8" sortIndex="4">
           <constraints>
@@ -12419,6 +12424,11 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
           <categoryLinks>
             <categoryLink targetId="c85c-2963-658f-1bb9" id="c1dc-0919-397c-4986" primary="false" name="Prime Command"/>
           </categoryLinks>
+          <rules>
+            <rule name="Special Assignment" id="e08d-ad7a-0fc3-10d3" hidden="false">
+              <description>This Prime Advantage may only be selected for a Command Slot. A Command Slot for which this Prime Advantage is selected may be filled by a High Command Unit, but remains a Command Slot. Moreover, no additional Detachment of any kind may be selected due to this Slot regardless of their Battlefield Role or any Special Rule that the Unit selected to fill the Slot may have.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Master Sergeant" hidden="false" id="2c90-1d52-7075-59d3" sortIndex="1">
           <constraints>
@@ -12434,6 +12444,11 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efed-cc57-2cf2-5b68"/>
           </constraints>
+          <rules>
+            <rule name="Paragon of Battle" id="7206-9470-836d-e518" hidden="false">
+              <description>One Model in the Unit selected to fill the Prime Slot that has the Command Sub-Type gains a bonus of +1 to its Attacks, Weapon Skill and Ballistic Skill Characteristics.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Logistical Benefit" hidden="false" id="6a03-452b-5657-bda4" sortIndex="5">
           <selectionEntryGroups>
@@ -12516,6 +12531,11 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ec7-6715-cde1-92cc" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d574-1fa6-b963-dd84" includeChildSelections="true"/>
           </constraints>
+          <rules>
+            <rule name="Logistical Benefit" id="9963-e24a-3c5e-511d" hidden="false">
+              <description>Add one additional Force Organisation Slot to the Detachment that includes the Prime Slot, this Slot may be any Battlefield Role other than High Command, Command, Warlord or Lord of War. This Advantage may only be selected once per Detachment.</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
