@@ -1035,11 +1035,16 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="33f3-b1d3-7b30-e5ea">
       <entryLinks>
-        <entryLink import="true" name="Rite of War" hidden="false" id="be01-b528-4c4b-b474" type="selectionEntryGroup" targetId="c77a-0590-5795-58a6"/>
+        <entryLink import="true" name="Rite of War" hidden="false" id="be01-b528-4c4b-b474" type="selectionEntryGroup" targetId="c77a-0590-5795-58a6">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6707-c62c-5f28-1449"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="849a-b744-d189-65af"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d632-1e1e-c8a2-9fec"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c1d-9283-bd3d-07f3"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9433-8656-2d67-d404"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec64-9f3e-c224-783d"/>
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -1146,10 +1151,6 @@ If selected, at the Start of the Focus Step, this Model&apos;s Controlling Playe
               </constraints>
             </selectionEntry>
           </selectionEntries>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a662-c928-f989-9d17"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d509-d424-b67b-4a73"/>
-          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
