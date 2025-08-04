@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d995-cb33-be41-ecf8" name="                         VI - Space Wolves" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="5" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d995-cb33-be41-ecf8" name="                         VI - Space Wolves" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="6" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="db71-05b7-0cff-28d1" importRootEntries="true" targetId="5334-5605-242c-d75e"/>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="17f0-6633-7613-e326" importRootEntries="true" targetId="9b32-f350-6aa9-9c09"/>
@@ -463,7 +463,7 @@ Howl of the Death Wolf: Once this Gambit is selected and until it&apos;s effects
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b12-a130-29d3-b9f6"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="May have their Bolt Pistol exchanged for:" id="ed33-944d-5626-d7af" hidden="false" collapsible="true" defaultSelectionEntryId="0e26-8941-40d3-a1b0">
+            <selectionEntryGroup name="May have their Bolt Pistol exchanged for:" id="ed33-944d-5626-d7af" hidden="false" collapsible="false" defaultSelectionEntryId="0e26-8941-40d3-a1b0">
               <entryLinks>
                 <entryLink import="true" name="Bolt pistol" hidden="false" id="0e26-8941-40d3-a1b0" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1"/>
                 <entryLink import="true" name="Legion Pistols" hidden="false" id="a02a-8987-7570-ce4c" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" flatten="true" sortIndex="2"/>
@@ -569,151 +569,131 @@ Howl of the Death Wolf: Once this Gambit is selected and until it&apos;s effects
                 </profile>
               </profiles>
               <selectionEntryGroups>
-                <selectionEntryGroup name="May exchange combat shield for:" id="008e-973a-d74c-e448" hidden="false" defaultSelectionEntryId="b494-4b3b-fc7a-422f" sortIndex="1">
-                  <entryLinks>
-                    <entryLink import="true" name="Bolter" hidden="false" id="2115-cbb2-aa99-e0e4" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="2"/>
-                    <entryLink import="true" name="Combat shield" hidden="false" id="b494-4b3b-fc7a-422f" type="selectionEntry" targetId="5606-f0ad-360b-fe5b" sortIndex="1"/>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="214f-3ba2-cbe4-1668"/>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1bb2-6297-29db-d67d"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="214f-3ba2-cbe4-1668">
-                      <repeats>
-                        <repeat value="1" repeats="1" field="selections" scope="e54a-5079-256a-104b" childId="model" shared="true" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                    <modifier type="increment" value="1" field="1bb2-6297-29db-d67d">
-                      <repeats>
-                        <repeat value="1" repeats="1" field="selections" scope="e54a-5079-256a-104b" childId="model" shared="true" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Bolter w/ Bayonet" hidden="false" id="0b28-f69f-93ba-15fb" sortIndex="3">
-                      <entryLinks>
-                        <entryLink import="true" name="Bayonet" hidden="false" id="0344-613a-9b11-cb9e" type="selectionEntry" targetId="3484-1bd3-cb74-7abe">
-                          <constraints>
-                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c87-e0fe-629b-c97f"/>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cd3-5303-6aa8-326e"/>
-                          </constraints>
-                        </entryLink>
-                        <entryLink import="true" name="Bolter" hidden="false" id="aad5-8248-3656-542b" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e">
-                          <constraints>
-                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc9c-ff3b-34fb-9330"/>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ade-124a-4668-256e"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Bolter w/ Chain Bayonet" hidden="false" id="e03f-f5f4-866e-1b2d" sortIndex="4">
-                      <entryLinks>
-                        <entryLink import="true" name="Chain bayonet" hidden="false" id="8d83-0659-9ae7-2e59" type="selectionEntry" targetId="e410-d998-bd3e-c0ea">
-                          <constraints>
-                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="860b-c558-222e-cc32"/>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cd7-0d62-93d5-29f5"/>
-                          </constraints>
-                        </entryLink>
-                        <entryLink import="true" name="Bolter" hidden="false" id="1f0c-e1a2-b896-41f2" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e">
-                          <constraints>
-                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d1d5-937d-d8a1-26ea"/>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edd5-a358-0647-adf2"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Melee Weapon:" id="c6af-b05f-324c-198e" hidden="false" defaultSelectionEntryId="8938-d1f8-9c71-5ae5" collective="false" sortIndex="3">
-                  <entryLinks>
-                    <entryLink import="true" name="Fenrisian axe" hidden="false" id="8938-d1f8-9c71-5ae5" type="selectionEntry" targetId="09de-d3c1-4bfc-7862"/>
-                    <entryLink import="true" name="Power Weapon" hidden="false" id="10a2-d943-16e1-66a7" type="selectionEntryGroup" targetId="2bda-39f9-7585-a46d"/>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="bdb0-e25f-8eb2-0682"/>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6eb2-f6cd-7571-eff8"/>
-                  </constraints>
+                <selectionEntryGroup name="Options" id="e899-4985-7ad4-e4b6" hidden="false" sortIndex="1">
                   <selectionEntryGroups>
-                    <selectionEntryGroup name="1 in 5 may take:" id="9fb9-4977-a5eb-973e" hidden="false">
+                    <selectionEntryGroup name="1 in 5 may replace it&apos;s bolt pistol for:" id="1470-3ed2-e9ce-860a" hidden="false" defaultSelectionEntryId="cef5-7c6d-507e-a0ed" sortIndex="3">
                       <entryLinks>
-                        <entryLink import="true" name="Heavy chainsword" hidden="false" id="cd0a-d69f-b345-da97" type="selectionEntry" targetId="e175-3b00-8885-b321">
-                          <modifiers>
-                            <modifier type="set" value="2" field="9893-c379-920b-8982"/>
-                          </modifiers>
+                        <entryLink import="true" name="Bolt pistol" hidden="false" id="cef5-7c6d-507e-a0ed" type="selectionEntry" targetId="2942-f783-d627-33c5">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa35-b5e3-15a5-8e61"/>
+                          </constraints>
                         </entryLink>
-                        <entryLink import="true" name="Power fist" hidden="false" id="10bd-d17b-e326-574c" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55">
+                      </entryLinks>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Pistols" id="70e9-7503-5755-e5c1" hidden="false">
+                          <entryLinks>
+                            <entryLink import="true" name="Plasma pistol" hidden="false" id="e3f5-fc88-f26d-cd2b" type="selectionEntry" targetId="659f-d52e-1515-2912">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="016f-0029-1645-8009"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="Hand flamer" hidden="false" id="1f1d-1a1f-a823-9df3" type="selectionEntry" targetId="9322-09ed-abec-6e13">
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d95e-9e86-9c9b-3830"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="Volkite serpenta" hidden="false" id="e72e-1869-839d-d138" type="selectionEntry" targetId="b7c3-1de1-087c-3d6e"/>
+                          </entryLinks>
+                          <constraints>
+                            <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="d6ba-a6b9-87b8-28ff" includeChildSelections="true"/>
+                          </constraints>
                           <modifiers>
-                            <modifier type="set" value="20" field="9893-c379-920b-8982"/>
+                            <modifier type="increment" value="1" field="d6ba-a6b9-87b8-28ff">
+                              <repeats>
+                                <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                              </repeats>
+                            </modifier>
                           </modifiers>
-                        </entryLink>
-                        <entryLink import="true" name="Lightning claw" hidden="false" id="c93a-e804-61cf-796a" type="selectionEntry" targetId="cbf0-9b29-9a16-28b2">
-                          <modifiers>
-                            <modifier type="set" value="10" field="9893-c379-920b-8982"/>
-                          </modifiers>
-                        </entryLink>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="aeec-36f2-74ef-6fcc"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="May exchange combat shield for:" id="008e-973a-d74c-e448" hidden="false" defaultSelectionEntryId="b494-4b3b-fc7a-422f" sortIndex="1">
+                      <entryLinks>
+                        <entryLink import="true" name="Bolter" hidden="false" id="2115-cbb2-aa99-e0e4" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="2"/>
+                        <entryLink import="true" name="Combat shield" hidden="false" id="b494-4b3b-fc7a-422f" type="selectionEntry" targetId="5606-f0ad-360b-fe5b" sortIndex="1" defaultAmount="0"/>
                       </entryLinks>
                       <constraints>
-                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="01fe-9c73-3aed-7ada"/>
-                        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="de47-bf51-0487-278d"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bb2-6297-29db-d67d"/>
                       </constraints>
-                      <modifiers>
-                        <modifier type="increment" value="1" field="de47-bf51-0487-278d">
-                          <repeats>
-                            <repeat value="5" repeats="1" field="selections" scope="9a43-13b5-bd92-d8be" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-                          </repeats>
-                        </modifier>
-                      </modifiers>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Bolter w/ Bayonet" hidden="false" id="0b28-f69f-93ba-15fb" sortIndex="3">
+                          <entryLinks>
+                            <entryLink import="true" name="Bayonet" hidden="false" id="0344-613a-9b11-cb9e" type="selectionEntry" targetId="3484-1bd3-cb74-7abe">
+                              <constraints>
+                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c87-e0fe-629b-c97f"/>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cd3-5303-6aa8-326e"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="Bolter" hidden="false" id="aad5-8248-3656-542b" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e">
+                              <constraints>
+                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc9c-ff3b-34fb-9330"/>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ade-124a-4668-256e"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Bolter w/ Chain Bayonet" hidden="false" id="e03f-f5f4-866e-1b2d" sortIndex="4">
+                          <entryLinks>
+                            <entryLink import="true" name="Chain bayonet" hidden="false" id="8d83-0659-9ae7-2e59" type="selectionEntry" targetId="e410-d998-bd3e-c0ea">
+                              <constraints>
+                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="860b-c558-222e-cc32"/>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cd7-0d62-93d5-29f5"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink import="true" name="Bolter" hidden="false" id="1f0c-e1a2-b896-41f2" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e">
+                              <constraints>
+                                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d1d5-937d-d8a1-26ea"/>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edd5-a358-0647-adf2"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="May exchange Fenrisian axe for:" id="c6af-b05f-324c-198e" hidden="false" defaultSelectionEntryId="8938-d1f8-9c71-5ae5" collective="false" sortIndex="2">
+                      <entryLinks>
+                        <entryLink import="true" name="Fenrisian axe" hidden="false" id="8938-d1f8-9c71-5ae5" type="selectionEntry" targetId="09de-d3c1-4bfc-7862" sortIndex="1"/>
+                        <entryLink import="true" name="Power Weapon" hidden="false" id="10a2-d943-16e1-66a7" type="selectionEntryGroup" targetId="2bda-39f9-7585-a46d" sortIndex="2"/>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6eb2-f6cd-7571-eff8"/>
+                      </constraints>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="1 in 5 may take:" id="9fb9-4977-a5eb-973e" hidden="false" flatten="false" sortIndex="3">
+                          <entryLinks>
+                            <entryLink import="true" name="Heavy chainsword" hidden="false" id="cd0a-d69f-b345-da97" type="selectionEntry" targetId="e175-3b00-8885-b321">
+                              <modifiers>
+                                <modifier type="set" value="2" field="9893-c379-920b-8982"/>
+                              </modifiers>
+                            </entryLink>
+                            <entryLink import="true" name="Power fist" hidden="false" id="10bd-d17b-e326-574c" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55">
+                              <modifiers>
+                                <modifier type="set" value="20" field="9893-c379-920b-8982"/>
+                              </modifiers>
+                            </entryLink>
+                            <entryLink import="true" name="Lightning claw" hidden="false" id="c93a-e804-61cf-796a" type="selectionEntry" targetId="cbf0-9b29-9a16-28b2">
+                              <modifiers>
+                                <modifier type="set" value="10" field="9893-c379-920b-8982"/>
+                              </modifiers>
+                            </entryLink>
+                          </entryLinks>
+                          <constraints>
+                            <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="de47-bf51-0487-278d" includeChildSelections="true"/>
+                          </constraints>
+                          <modifiers>
+                            <modifier type="increment" value="1" field="de47-bf51-0487-278d">
+                              <repeats>
+                                <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                              </repeats>
+                            </modifier>
+                          </modifiers>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="6eb2-f6cd-7571-eff8">
-                      <repeats>
-                        <repeat value="1" repeats="1" field="selections" scope="e54a-5079-256a-104b" childId="model" shared="true" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                    <modifier type="increment" value="1" field="bdb0-e25f-8eb2-0682">
-                      <repeats>
-                        <repeat value="1" repeats="1" field="selections" scope="e54a-5079-256a-104b" childId="model" shared="true" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="1 in 5 may replace it&apos;s bolt pistol for one of:" id="7fd4-13a0-9802-46b7" hidden="false" defaultSelectionEntryId="5eaf-f633-b31e-08b7" sortIndex="2">
-                  <entryLinks>
-                    <entryLink import="true" name="Legion Pistols" hidden="false" id="987c-f4e6-30d0-3fba" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf">
-                      <constraints>
-                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="bb40-3d95-db41-f393"/>
-                        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="de4f-7089-7b52-ae65"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier type="increment" value="1" field="de4f-7089-7b52-ae65">
-                          <repeats>
-                            <repeat value="5" repeats="1" field="selections" scope="9a43-13b5-bd92-d8be" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-                          </repeats>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="5eaf-f633-b31e-08b7" type="selectionEntry" targetId="2942-f783-d627-33c5"/>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4080-8360-1ba6-168a"/>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5841-537d-38c9-992d"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="5841-537d-38c9-992d">
-                      <repeats>
-                        <repeat value="1" repeats="1" field="selections" scope="e54a-5079-256a-104b" childId="model" shared="true" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                    <modifier type="increment" value="1" field="4080-8360-1ba6-168a">
-                      <repeats>
-                        <repeat value="1" repeats="1" field="selections" scope="e54a-5079-256a-104b" childId="model" shared="true" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Option" id="65ba-8277-1c75-eccd" hidden="false">
                   <entryLinks>
                     <entryLink import="true" name="Vexilla" hidden="false" id="94c4-215e-4140-7d0f" type="selectionEntry" targetId="dfcd-0669-ad43-28aa">
                       <costs>
