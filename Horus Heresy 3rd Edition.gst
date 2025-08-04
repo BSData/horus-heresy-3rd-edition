@@ -12424,6 +12424,11 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6282-9945-7fff-a114"/>
           </constraints>
+          <rules>
+            <rule name="Master Sergeant" id="60d2-8f14-14b0-e595" hidden="false">
+              <description>One Model in the Unit selected to fill the Prime Slot that has the Sergeant Sub-Type gains +1 to its Attacks, Weapon Skill and Leadership Characteristics and the Champion Sub-Type (if it already has the Champion Sub-Type it instead increases its Leadership by an additional +1). This advantage may only be selected once per Detachment.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Paragon of Battle" hidden="false" id="20cb-4eec-0844-8a97" sortIndex="3">
           <constraints>
