@@ -3,9 +3,12 @@ import sys
 import os
 
 # Temp until we have a pip module
+print(os.getcwd())
 print(sys.path)
-print(os.curdir)
+
 sys.path.insert(1, "BSCopy")
+print(sys.path)
+
 
 from BSCopy.system.system import System
 
