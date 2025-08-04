@@ -1,6 +1,10 @@
+import os
 import sys
+import os
 
 # Temp until we have a pip module
+print(sys.path)
+print(os.curdir)
 sys.path.insert(1, "BSCopy")
 
 from BSCopy.system.system import System
