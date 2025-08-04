@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0a35-fce3-188c-b3aa" name="                         I - Dark Angels" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="4" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0a35-fce3-188c-b3aa" name="                         I - Dark Angels" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="5" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="a476-c36f-b43d-3fd8" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Special Rules" id="9620-2bdb-4589-56f8" targetId="106b-693b-99f2-00c3"/>
@@ -22,6 +22,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Shield" id="b393-3ee4-f401-3b91" hidden="false" type="profile" targetId="1af7-07d5-7558-0b64"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma burner" hidden="false" id="e2ee-052e-163c-6e65">
       <profiles>
@@ -224,7 +227,10 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink name="High Command" hidden="false" id="053c-f313-3e85-7de4" targetId="d9a6-9b5f-b18a-4d63" primary="true"/>
+        <categoryLink targetId="9871-cb62-5283-2216" id="d21f-7fce-252e-3335" primary="false" name="Command Model Sub-type"/>
+        <categoryLink targetId="b980-187b-2b17-d635" id="ff21-1fe9-358e-4ccd" primary="false" name="Unique Model Sub-Type"/>
+        <categoryLink targetId="594d-fa82-13cb-a345" id="6733-b906-4a61-ba99" primary="false" name="Infantry Model Type"/>
+        <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="1a0b-532d-c547-940d" primary="false" name="Master of the Legion"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Bolter" hidden="false" id="7797-4238-4aae-543c" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="1">
@@ -341,7 +347,6 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink name="High Command" hidden="false" id="103e-bb5e-dfe9-a862" targetId="d9a6-9b5f-b18a-4d63" primary="true"/>
         <categoryLink name="Unique Model Sub-Type" hidden="false" id="eda0-0406-4e9e-5c5d" targetId="b980-187b-2b17-d635" primary="false"/>
         <categoryLink name="Command Model Sub-type" hidden="false" id="ffde-a0ef-dfc5-e571" targetId="9871-cb62-5283-2216" primary="false"/>
         <categoryLink name="Heavy Model Sub-Type" hidden="false" id="f2e3-4d86-3386-ceb9" targetId="1e7d-9066-28d2-97a0" primary="false"/>
@@ -529,7 +534,8 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink name="Warlord" hidden="false" id="b583-afc3-bdba-8a6c" targetId="22ee-7208-4089-b005" primary="true"/>
+        <categoryLink targetId="b980-187b-2b17-d635" id="6142-a94e-5b5f-ce91" primary="false" name="Unique Model Sub-Type"/>
+        <categoryLink targetId="7799-e1d6-762b-700b" id="ddc0-5000-c361-9369" primary="false" name="Paragon Model Type"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d227-b968-e4ac-1342" includeChildSelections="true"/>
@@ -861,7 +867,7 @@ The Lion&apos;s Choler: If this Gambit is selected, the Model for which this Gam
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink name="Retinue" hidden="false" id="fab7-8a90-3e34-6e68" targetId="a38e-50ff-310f-f19e" primary="true"/>
+        <categoryLink targetId="594d-fa82-13cb-a345" id="a385-e029-ffbf-99d4" primary="false" name="Infantry Model Type"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="[Legiones Astartes]" id="355c-d451-dd5d-575f" hidden="false" type="profile" targetId="641c-ca0a-7093-4525">
@@ -930,7 +936,7 @@ The Lion&apos;s Choler: If this Gambit is selected, the Model for which this Gam
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink name="Support" hidden="false" id="3a87-b675-0e12-57e5" targetId="345f-9ba6-9b02-ed5c" primary="true"/>
+        <categoryLink targetId="594d-fa82-13cb-a345" id="02d0-9baf-6715-f2b0" primary="false" name="Infantry Model Type"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Bolt pistol" hidden="false" id="9450-39e7-dbee-41d1" type="selectionEntry" targetId="2942-f783-d627-33c5">
@@ -1081,6 +1087,7 @@ The Lion&apos;s Choler: If this Gambit is selected, the Model for which this Gam
           <modifiers>
             <modifier type="set" value="Support Unit (1)" field="name"/>
           </modifiers>
+          <comment>1</comment>
         </infoLink>
         <infoLink name="[Legiones Astartes]" id="6eb1-47b8-8a72-24ac" hidden="false" type="profile" targetId="641c-ca0a-7093-4525">
           <modifiers>
@@ -1105,9 +1112,6 @@ The Lion&apos;s Choler: If this Gambit is selected, the Model for which this Gam
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
-          <categoryLinks>
-            <categoryLink name="Heavy Model Sub-Type" hidden="false" id="b0e4-130b-2c63-a868" targetId="1e7d-9066-28d2-97a0" primary="false"/>
-          </categoryLinks>
           <profiles>
             <profile name="Order Cenobites" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="f02a-ca40-76e4-8ee3">
               <characteristics>
@@ -1140,7 +1144,6 @@ The Lion&apos;s Choler: If this Gambit is selected, the Model for which this Gam
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
           <categoryLinks>
-            <categoryLink name="Heavy Model Sub-Type" hidden="false" id="e64c-ae8a-22f1-284e" targetId="1e7d-9066-28d2-97a0" primary="false"/>
             <categoryLink name="Sergeant Model Sub-Type" hidden="false" id="fcf7-fd55-a5cf-c8ff" targetId="8045-89a4-76d4-fcef" primary="false"/>
           </categoryLinks>
           <profiles>
@@ -1184,7 +1187,8 @@ The Lion&apos;s Choler: If this Gambit is selected, the Model for which this Gam
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink name="Elites" hidden="false" id="f9f9-6c1c-3e24-01dc" targetId="5d5e-958f-e388-50b5" primary="true"/>
+        <categoryLink targetId="1e7d-9066-28d2-97a0" id="cbeb-4b3e-4704-ddf4" primary="false" name="Heavy Model Sub-Type"/>
+        <categoryLink targetId="594d-fa82-13cb-a345" id="93a1-c8eb-ac28-deb2" primary="false" name="Infantry Model Type"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Bulky (X)" id="9a33-917f-d864-65af" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
@@ -1240,12 +1244,43 @@ The Lion&apos;s Choler: If this Gambit is selected, the Model for which this Gam
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Corswain" hidden="false" id="7c9b-42e2-1c81-3e57" type="selectionEntry" targetId="1d4a-09de-2638-e9e0"/>
-    <entryLink import="true" name="Lion El&apos;Johnson" hidden="false" id="e463-3f44-a9ae-6386" type="selectionEntry" targetId="2516-2347-2ca5-af1d"/>
-    <entryLink import="true" name="Marduk Sedras" hidden="false" id="3b39-6a5f-307d-2152" type="selectionEntry" targetId="34d0-7b32-5875-8d5a"/>
-    <entryLink import="true" name="Deathwing Companion Detachment" hidden="false" id="9601-52bb-0c27-df5f" type="selectionEntry" targetId="1e9c-6b93-a335-43c4"/>
-    <entryLink import="true" name="Inner Circle Knights Cenobium" hidden="false" id="e377-3039-fed2-b525" type="selectionEntry" targetId="e033-118d-4b07-5cd1"/>
-    <entryLink import="true" name="Dreadwing Interemptor Squad" hidden="false" id="fbd4-c7ab-dfef-cc42" type="selectionEntry" targetId="d788-b46c-c9f2-0aa9"/>
+    <entryLink import="true" name="Corswain" hidden="false" id="7c9b-42e2-1c81-3e57" type="selectionEntry" targetId="1d4a-09de-2638-e9e0">
+      <categoryLinks>
+        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="d8a0-2f2c-1900-223d" primary="true" name="High Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Lion El&apos;Johnson" hidden="false" id="e463-3f44-a9ae-6386" type="selectionEntry" targetId="2516-2347-2ca5-af1d">
+      <categoryLinks>
+        <categoryLink targetId="22ee-7208-4089-b005" id="742a-b916-bad8-9196" primary="true" name="Warlord"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Marduk Sedras" hidden="false" id="3b39-6a5f-307d-2152" type="selectionEntry" targetId="34d0-7b32-5875-8d5a">
+      <categoryLinks>
+        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="0264-ee51-0899-1480" primary="true" name="High Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Deathwing Companion Detachment" hidden="false" id="9601-52bb-0c27-df5f" type="selectionEntry" targetId="1e9c-6b93-a335-43c4">
+      <categoryLinks>
+        <categoryLink targetId="a38e-50ff-310f-f19e" id="da42-abcd-9be6-27df" primary="true" name="Retinue"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inner Circle Knights Cenobium" hidden="false" id="e377-3039-fed2-b525" type="selectionEntry" targetId="e033-118d-4b07-5cd1">
+      <categoryLinks>
+        <categoryLink targetId="5d5e-958f-e388-50b5" id="abc4-6cd2-0e8c-b918" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Dreadwing Interemptor Squad" hidden="false" id="fbd4-c7ab-dfef-cc42" type="selectionEntry" targetId="d788-b46c-c9f2-0aa9">
+      <categoryLinks>
+        <categoryLink targetId="345f-9ba6-9b02-ed5c" id="4b0c-13d2-5917-1b1f" primary="true" name="Support"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="d52d-47c6-e17a-9e35" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4df8-3a15-6b77-1b80" shared="true" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Rite of War" id="c88e-6f40-10d5-e336" hidden="false">
