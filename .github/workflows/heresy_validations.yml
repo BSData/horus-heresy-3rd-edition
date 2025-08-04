@@ -1,0 +1,23 @@
+name: Heresy Validations
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out game system to horus-heresy
+        uses: actions/checkout@v4
+        with:
+          path: horus-heresy-3rd-edition
+      - name: Setting up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Run tests
+        run: python3 validatehh3.py
+        working-directory: horus-heresy-3rd-edition/tests/
+        env:
+          DEFAULT_DATA_DIRECTORY: ${{ github.workspace }}
