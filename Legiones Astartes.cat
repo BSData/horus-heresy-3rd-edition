@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="15" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="16" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -12919,8 +12919,20 @@
         <categoryLink targetId="9871-cb62-5283-2216" id="8272-118c-94b6-cbb9" primary="true" name="Command Model Sub-type"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Decurion Locus" hidden="false" id="54fc-a999-6373-5164"/>
-    <selectionEntry type="upgrade" import="true" name="Decurion Defensor" hidden="false" id="99b1-fccd-7389-fdec"/>
+    <selectionEntry type="upgrade" import="true" name="Decurion Locus" hidden="false" id="54fc-a999-6373-5164">
+      <rules>
+        <rule name="Locus Strike" id="bd58-c37f-597f-8057" hidden="false">
+          <description>When making a Return Fire Reaction for a Model with this Special Rule, any Turret Mounted Weapons are treated as Defensive Weapons regardless of their Characteristics. If the Turret Mounted Weapon on a Model with this Special Rule is already a Defensive Weapon, the Controlling Player of that Model can instead add +1 to Hit Tests made for that Weapons Fire Group when making that Reaction.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Decurion Defensor" hidden="false" id="99b1-fccd-7389-fdec">
+      <rules>
+        <rule name="Point Defence" id="4add-017a-caa3-babd" hidden="false">
+          <description>When a Model with this Special Rule is the Target of a Charge, during Step 4 of the Charge Procedure, a Model with this Special Rule may make an additional Volley Attack. This additional Volley Attack is made as a separate Shooting Attack after resolving its first Volley Attack and the Controlling Player must select only one Pintle Mounted Weapon to make attacks as part of this second Volley Attack. If any Models are Removed as a Casualty as a result of this Model&apos;s Shooting Attacks as part of this Volley Attack, the Charging Unit subtracts 1 from the result of any Charge Rolls made during this Phase.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Praetor in Saturnine Terminator Armour" hidden="false" id="723a-caa1-9f03-13f9" type="selectionEntry" targetId="2a5a-8ab8-be4d-6fa7" sortIndex="3">

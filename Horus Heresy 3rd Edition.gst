@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="15" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="16" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -401,7 +401,7 @@
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3235-bd79-e9b1-60fa" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -499,7 +499,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d1d0-2db5-32ec-522e"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Rewards of Treachery" hidden="false" id="2a0d-9fee-9c25-8560" targetId="fe7f-1287-4162-a65d" type="categoryEntry"/>
+            <categoryLink name="Rewards of Treachery" hidden="false" id="2a0d-9fee-9c25-8560" targetId="fe7f-1287-4162-a65d"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="5611-db49-9e64-44c6-min" includeChildSelections="true"/>
@@ -9180,7 +9180,7 @@
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3235-bd79-e9b1-60fa" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -11524,7 +11524,7 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3cd4-1efc-c9a1-b1ef" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Army Configuration" hidden="false" id="b95b-50d4-2dea-049a" targetId="abfa-86ab-1726-077a" type="categoryEntry"/>
+        <categoryLink name="Army Configuration" hidden="false" id="b95b-50d4-2dea-049a" targetId="abfa-86ab-1726-077a"/>
       </categoryLinks>
       <modifiers>
         <modifier type="decrement" value="1" field="0ab6-91a0-792e-4068">
