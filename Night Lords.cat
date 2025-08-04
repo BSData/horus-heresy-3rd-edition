@@ -1033,6 +1033,15 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="33f3-b1d3-7b30-e5ea">
+      <entryLinks>
+        <entryLink import="true" name="Rite of War" hidden="false" id="be01-b528-4c4b-b474" type="selectionEntryGroup" targetId="c77a-0590-5795-58a6"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d632-1e1e-c8a2-9fec"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c1d-9283-bd3d-07f3"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="b75d-483c-74cd-bbe1" targetId="9b32-f350-6aa9-9c09" importRootEntries="true"/>
@@ -1075,6 +1084,11 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="8dda-b541-96f6-06bc" primary="true" name="High Command"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Rite of War" hidden="false" id="bcae-e46d-5ae7-82de" type="selectionEntry" targetId="33f3-b1d3-7b30-e5ea">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="5a1b-ea78-7f03-d50a" primary="true" name="Army Configuration"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Rite of War" id="c77a-0590-5795-58a6" hidden="false" defaultSelectionEntryId="6355-8b46-f913-f808">
@@ -1085,7 +1099,6 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
               <rules>
                 <rule name="A Talent for Murder" id="aa79-e448-8b39-344f" hidden="false">
                   <description>&quot;Night Lords have an improved Weapon Skill Characteristic when fighting Units that have Tactical Statuses&quot;
-
 
 When Locked in Combat with any Units which contain at least one Model which has any Tactical Statuses, Models in that Combat with this Special Rule gain an additional modifier of +1 to their Weapon Skill Characteristic until the end of the Phase.</description>
                 </rule>
@@ -1100,7 +1113,8 @@ When Locked in Combat with any Units which contain at least one Model which has 
                 <profile name="Nostraman Courage" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="dbeb-7353-d4ab-52a6">
                   <characteristics>
                     <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows the Controlling Player to switch the Model that fights in a Challenge.</characteristic>
-                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a"/>
+                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">This Gambit may only be selected once per Challenge.
+If selected, at the Start of the Focus Step, this Model&apos;s Controlling Player may immediately return the Model to their Unit as if it was the Resolution Sub-Phase. If the Controlling Player chooses to do this, they must select another Model from this Unit (this can be a Model that is not normally eligible to take part in a Challenge). That Model is removed from the Unit and becomes the Challenger or Challenged Model in place of the original Challenger or Challenged Model that was returned to the Unit.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1113,7 +1127,16 @@ When Locked in Combat with any Units which contain at least one Model which has 
               <profiles>
                 <profile name="Better Part of Valour" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="72cd-05f2-b454-cbd1">
                   <characteristics>
-                    <characteristic name="Description" typeId="5d02-0e54-0f6a-0f0b"/>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows a Unit to Fall Back when it is the Target of a Charge.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Better Part of Valour Advanced Reaction during Step 4 of the Charge process of any Charge declared by the Active Player that targets a Unit which only includes Models with the Night Lords Trait.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Better Part of Valour Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Charge triggered the Reaction. The Reacting Unit is always the Unit that was declared as the target of the Charge that triggered this Reaction.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once this Reaction is declared, the Reacting Unit must immediately make a Fall Back Move as if it was affected by the Routed Tactical Status.
+
+
+2. Once this Fall Back Move is completed, the Reacting Unit does not gain the Routed Tactical Status.
+
+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1123,6 +1146,10 @@ When Locked in Combat with any Units which contain at least one Model which has 
               </constraints>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a662-c928-f989-9d17"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d509-d424-b67b-4a73"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
