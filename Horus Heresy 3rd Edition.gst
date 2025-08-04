@@ -8003,26 +8003,6 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a745-b684-6607-206d" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="High Command" hidden="false" id="a4cc-4d73-0e28-ca25" targetId="d9a6-9b5f-b18a-4d63">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="201b-2d30-f0c7-1c38"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Prime High Command" hidden="false" id="d06a-b5c7-0060-fcff" targetId="3568-ad75-b452-3137">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6069-eb2a-4004-9b30"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Command" hidden="false" id="ce07-19a2-6f89-22a2" targetId="6dbf-654a-f06f-2d69">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e71c-38ec-134d-ca8a"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Prime Command" hidden="false" id="c046-7124-74ea-3626" targetId="c85c-2963-658f-1bb9">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="18fc-b303-e254-bdd2" includeChildSelections="true"/>
-              </constraints>
-            </categoryLink>
             <categoryLink name="Retinue" hidden="false" id="b54b-d966-6e32-4622" targetId="a38e-50ff-310f-f19e">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4dcb-aeeb-167a-744c"/>
