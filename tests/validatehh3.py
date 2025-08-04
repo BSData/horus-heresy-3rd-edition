@@ -4,9 +4,8 @@ import os
 
 # Temp until we have a pip module
 print(os.getcwd())
-print(sys.path)
 
-sys.path.insert(1, "BSCopy")
+sys.path.insert(1, os.getcwd()+"/BSCopy")
 print(sys.path)
 
 
