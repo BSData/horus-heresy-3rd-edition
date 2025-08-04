@@ -9520,17 +9520,12 @@
             </categoryLink>
             <categoryLink name="Fast Attack" hidden="false" id="33c7-d845-073f-6422" targetId="cf96-8891-3f9a-8921">
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="be2c-84ab-1363-da6b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be2c-84ab-1363-da6b"/>
               </constraints>
               <modifiers>
                 <modifier type="increment" value="1" field="be2c-84ab-1363-da6b">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
