@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7851-69ac-f701-034e" name="Solar Auxilia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="8" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7851-69ac-f701-034e" name="Solar Auxilia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="9" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Legatine Command Section" hidden="false" id="8641-1dd0-7e76-de7d">
       <categoryLinks>
@@ -249,6 +249,7 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="381a-c826-e7b2-e505" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2"/>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="bd48-8f06-824a-260a" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Line (X)" id="4ca8-f71e-7ba4-81a8" hidden="false" type="rule" targetId="1b5d-ceec-802a-c611">
@@ -586,6 +587,7 @@
       <categoryLinks>
         <categoryLink targetId="594d-fa82-13cb-a345" id="ef26-0330-2289-5503" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="847c-d351-32a7-cc2a" id="4686-b7ef-e522-6efd" primary="false" name="Infantry Tercio Unlock"/>
+        <categoryLink targetId="27e8-88b4-d3c8-d63f" id="fdcd-cd9e-a1ef-bacb" primary="false" name="Cohort Additional Detachment"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Troop Master" hidden="false" id="3b35-940c-5f39-b55b" sortIndex="1">
@@ -892,6 +894,7 @@
       <categoryLinks>
         <categoryLink targetId="594d-fa82-13cb-a345" id="1a58-a45d-104d-6e12" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="67d3-556b-b619-28e2" id="3334-9e7a-7b9e-5dcb" primary="false" name="Veletaris Tercio Unlock"/>
+        <categoryLink targetId="27e8-88b4-d3c8-d63f" id="0b7f-348d-d476-01b8" primary="false" name="Cohort Additional Detachment"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="First Prime" hidden="false" id="41f2-b11e-6a6e-a1c7" sortIndex="1">
@@ -1171,6 +1174,7 @@
         <categoryLink targetId="a073-2d4a-5bed-123e" id="dc64-10c5-13ba-4141" primary="false" name="Cavalry Model Type"/>
         <categoryLink targetId="f4ba-00e5-3d2e-eaac" id="5352-158a-e9a0-c0aa" primary="false" name="Light Model Sub-Type"/>
         <categoryLink targetId="3bba-e8bb-7463-b0b2" id="12c6-455b-8885-c917" primary="false" name="Scout Tercio Unlock"/>
+        <categoryLink targetId="27e8-88b4-d3c8-d63f" id="d582-6fe4-b453-4cce" primary="false" name="Cohort Additional Detachment"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Hermes Lead" hidden="false" id="ffde-524f-3179-76a8" sortIndex="1">
@@ -1361,6 +1365,7 @@
       <categoryLinks>
         <categoryLink targetId="594d-fa82-13cb-a345" id="e7c9-6ae8-36fc-0fcd" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="2a0c-b2b2-0f48-2e90" id="5f78-a662-696e-f5f1" primary="false" name="Artillery Tercio Unlock"/>
+        <categoryLink targetId="27e8-88b4-d3c8-d63f" id="36e8-b96c-3a31-382b" primary="false" name="Cohort Additional Detachment"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Ordnance Master" hidden="false" id="7b90-c809-7792-10b5" sortIndex="1">
@@ -1669,6 +1674,7 @@
       <categoryLinks>
         <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="725d-ae0a-7669-c86c" primary="false" name="Vehicle Model Type"/>
         <categoryLink targetId="390f-d9dc-10d8-56aa" id="31dd-800c-470f-9f47" primary="false" name="Armour Tercio Unlock"/>
+        <categoryLink targetId="27e8-88b4-d3c8-d63f" id="2edd-50c9-56d9-2e53" primary="false" name="Cohort Additional Detachment"/>
       </categoryLinks>
       <profiles>
         <profile name="Solar Auxilia" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="e678-ce42-91de-edfc">
@@ -6239,24 +6245,6 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back M
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Cohort Doctrine: Iron Pattern Cohort" hidden="false" id="ae7f-98e2-62de-05b3">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Cohort Tactica: Ceaseless Bombardment" hidden="false" id="9190-f642-1aad-afb1">
-              <rules>
-                <rule name="Ceaseless Bombardment" id="b851-f8f8-c9c6-5326" hidden="false">
-                  <description>&quot;Models with Special Rule improve the value of the Pinning (x) Special Rule on any Barrage Weapons they have by +1.&quot;</description>
-                </rule>
-              </rules>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae63-0fc6-787b-bb4e"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b91-b3ac-e50d-bb80"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-          <categoryLinks>
-            <categoryLink targetId="28ba-8660-5266-8674" id="64a9-d2b0-aad5-3fb5" primary="false" name="Cohort Doctrine: Iron Pattern Cohort"/>
-          </categoryLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Cohort Doctrine: Siege Pattern Cohort" hidden="false" id="3579-30ed-c676-40af">
-          <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Cohort Tactica: Iron over Flesh" hidden="false" id="3d57-fc74-0e8c-2c28">
               <rules>
                 <rule name="Iron over Flesh" id="328d-fb74-d871-8210" hidden="false">
@@ -6266,6 +6254,24 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back M
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34e6-d712-6885-fe1e"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="61cc-986b-f387-f966"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="28ba-8660-5266-8674" id="64a9-d2b0-aad5-3fb5" primary="false" name="Cohort Doctrine: Iron Pattern Cohort"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Cohort Doctrine: Siege Pattern Cohort" hidden="false" id="3579-30ed-c676-40af">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Cohort Tactica: Ceaseless Bombardment" hidden="false" id="9190-f642-1aad-afb1">
+              <rules>
+                <rule name="Ceaseless Bombardment" id="b851-f8f8-c9c6-5326" hidden="false">
+                  <description>&quot;Models with Special Rule improve the value of the Pinning (x) Special Rule on any Barrage Weapons they have by +1.&quot;</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae63-0fc6-787b-bb4e"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b91-b3ac-e50d-bb80"/>
               </constraints>
             </selectionEntry>
           </selectionEntries>
