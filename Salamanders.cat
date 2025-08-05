@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="f148-a6e4-5a8c-3aeb" name="                        XVIII - Salamanders" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="2" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="f148-a6e4-5a8c-3aeb" name="                        XVIII - Salamanders" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="3" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Firedrake Terminator Squad" hidden="false" id="09a9-6c68-9b0b-f24f" sortIndex="2">
       <selectionEntries>
@@ -117,6 +117,11 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="17ce-e21b-da1a-68f2" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf22-35ed-ee58-d0e0" includeChildSelections="false"/>
           </constraints>
+        </entryLink>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="5099-c7ee-ec18-9823" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="3be4-badb-923a-07b0" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -453,7 +458,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
       </selectionEntries>
       <categoryLinks>
         <categoryLink name="Salamanders" hidden="false" id="3fd7-23fc-65f5-2db4" targetId="f6fe-18f5-7b4d-b57a" primary="false"/>
-        <categoryLink name="Troops" hidden="false" id="b6d4-2ac4-8a35-e527" targetId="88e6-d373-4152-0dd8" primary="true"/>
+        <categoryLink targetId="3235-bd79-e9b1-60fa" id="fdf8-84dc-c2a1-8789" primary="true" name="Heavy Assault"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="6245-5f05-7f15-8937" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -468,7 +473,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Pyroclast Flame Projector" hidden="false" id="7e53-6eea-955a-37a6" type="selectionEntry" targetId="087a-e7b6-26df-b2c9">
+        <entryLink import="true" name="Pyroclast flame projector" hidden="false" id="7e53-6eea-955a-37a6" type="selectionEntry" targetId="087a-e7b6-26df-b2c9">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="785b-bd21-14da-4fab" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3065-69e2-97c7-1ca1" includeChildSelections="false"/>
@@ -550,56 +555,8 @@ A Unit made up entirely of Models with this Special Rule is unaffected by any va
       </characteristics>
     </profile>
   </sharedProfiles>
-  <forceEntries>
-    <forceEntry name="Auxiliary - Immolation Covenant" id="0b37-02e8-3bfc-cb2b" hidden="true">
-      <categoryLinks>
-        <categoryLink name="Prime Support" hidden="false" id="b0ef-21e5-906b-382e" targetId="1c79-ecdf-9a64-84c9">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3ca-759b-7f85-b2b9"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Support" hidden="false" id="824a-4d82-df9d-8157" targetId="345f-9ba6-9b02-ed5c">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7ba-910c-37aa-c29e"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Armour" hidden="false" id="b77f-3ac7-6ec7-2253" targetId="643a-1012-bd51-6537">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d62-0b2c-d09d-ea07"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="1" field="2d62-0b2c-d09d-ea07">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="b0ba-83cb-f3bf-bf2e" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5cb0-777c-bc90-f31a" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="ceil" value="2" field="2d62-0b2c-d09d-ea07"/>
-          </modifiers>
-        </categoryLink>
-      </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f148-a6e4-5a8c-3aeb" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f148-a6e4-5a8c-3aeb" shared="true"/>
-              </conditions>
-              <comment>SL</comment>
-            </conditionGroup>
-          </conditionGroups>
-          <comment>SL Only</comment>
-        </modifier>
-      </modifiers>
-    </forceEntry>
-  </forceEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Salamanders Prime Benefit" id="5d56-0dd4-a6c3-2f12" hidden="false">
+    <selectionEntryGroup name="Salamanders Prime Benefit" id="5d56-0dd4-a6c3-2f12" hidden="true">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Duty Before Death" hidden="false" id="2c92-cdf3-719d-446c">
           <rules>

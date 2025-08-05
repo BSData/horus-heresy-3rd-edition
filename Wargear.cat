@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="fcc7-4319-bb04-2c25" name="Wargear" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="6" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue library="true" id="fcc7-4319-bb04-2c25" name="Wargear" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="8" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Strato-vox" hidden="false" id="e3dd-d327-3f0b-265f">
       <profiles>
@@ -61,9 +61,7 @@
         </profile>
       </profiles>
       <rules>
-        <rule name="Saturnine Teleportation Transponder" id="d906-a1a1-33cb-a866" hidden="false">
-          <description/>
-        </rule>
+        <rule name="Saturnine Teleportation Transponder" id="d906-a1a1-33cb-a866" hidden="false"/>
       </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Augury scanner" hidden="false" id="fede-99f5-4c76-4659">
@@ -268,12 +266,12 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
         <profile name="Rad furnace" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="0c55-0abd-a85c-9e0b">
           <characteristics>
             <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">&quot;A Model with a rad furnace reduces the enemy&apos;s Toughness while Locked in Combat.&quot;</characteristic>
-            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">Any model, friendly or enemy, that is part of a Combat that includes one of more Models with a rad furnace must reduce its Toughness Characteristic by 1 while a part of that Combat in the Fight Sub-Phase. This reduction is not cumulative with the effects of the Phase (X) Special Rule. Models with a rad furnace, the Automata Type or Cybernetica Trait are unaffected and do not reduce their Toughness Characteristic. Additionally, a Unit that is composed of a majority of Models with rad furnaces does not reduce any Characteristics due to the effects of the Phase (X) Special Rule.</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">Any model, friendly or enemy, that is part of a Combat that includes one of more Models with a rad furnace must reduce its Toughness Characteristic by 1 while a part of that Combat in the Fight Sub-Phase. This reduction is not cumulative with the effects of the Phage (X) Special Rule. Models with a rad furnace, the Automata Type or Cybernetica Trait are unaffected and do not reduce their Toughness Characteristic. Additionally, a Unit that is composed of a majority of Models with rad furnaces does not reduce any Characteristics due to the effects of the Phage (X) Special Rule.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec7f-b557-491a-4c2a"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec7f-b557-491a-4c2a-max"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Arae-shrike" hidden="false" id="bd7b-1511-997a-f275">
@@ -361,8 +359,7 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
             <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">&quot;lonic flare shields provide a different Invulnerable Save against Shooting Attacks made against a Model&apos;s Front and Rear Facings, including against Glancing Hits, and nullify the effect of the Armourbane Special Rule on any Shooting Attacks made against the Model.&quot;</characteristic>
             <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">When making Armour Penetration Tests against a Model with an ionic flare shield, no Weapon may make use of the Armourbane Special Rule.
 
-A Model with an ionic flare shield has a 5+ Invulnerable Save against Shooting Attacks made against its Front Facing and a 6+ Invulnerable Save against Shooting Attacks made against its Rear Facing. Additionally, a Model with an ionic flare shield may have Invulnerable Saves made for it against any Glancing Hits it has suffered in Step 11 of a Shooting Attack, before any rolls on the Vehicle Damage Chart are made, discarding a single Glancing Hit for each successful save.
-</characteristic>
+A Model with an ionic flare shield has a 5+ Invulnerable Save against Shooting Attacks made against its Front Facing and a 6+ Invulnerable Save against Shooting Attacks made against its Rear Facing. Additionally, a Model with an ionic flare shield may have Invulnerable Saves made for it against any Glancing Hits it has suffered in Step 11 of a Shooting Attack, before any rolls on the Vehicle Damage Chart are made, discarding a single Glancing Hit for each successful save.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -481,7 +478,7 @@ A Model with an ionic flare shield has a 5+ Invulnerable Save against Shooting A
       </infoLinks>
       <comment>Bulky (3) Included</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Drakenscale" hidden="true" id="b021-e506-1ecd-b3c5">
+    <selectionEntry type="upgrade" import="true" name="Drakenscale" hidden="false" id="b021-e506-1ecd-b3c5">
       <profiles>
         <profile name="Drakenscale" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="47b8-caba-85e8-3e19">
           <characteristics>
@@ -490,27 +487,6 @@ A Model with an ionic flare shield has a 5+ Invulnerable Save against Shooting A
           </characteristics>
         </profile>
       </profiles>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <comment>SL</comment>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-          <comment>SL+Cmd/Champ Only</comment>
-        </modifier>
-      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>

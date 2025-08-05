@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="486f-b32a-ac87-73dd" name="                         VIII - Night Lords" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="5" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="486f-b32a-ac87-73dd" name="                         VIII - Night Lords" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="6" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Konrad Kurze" hidden="false" id="f5fd-f425-c610-4a94">
       <selectionEntries>
@@ -138,7 +138,6 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
         </infoLink>
       </infoLinks>
       <categoryLinks>
-        <categoryLink targetId="22ee-7208-4089-b005" id="65ff-d88e-d017-47d9" primary="true" name="Warlord"/>
         <categoryLink targetId="7799-e1d6-762b-700b" id="12e4-2d1d-57a7-4717" primary="false" name="Paragon Model Type"/>
         <categoryLink targetId="b980-187b-2b17-d635" id="da6b-ec07-3647-97ab" primary="false" name="Unique Model Sub-Type"/>
       </categoryLinks>
@@ -307,7 +306,6 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
         <infoLink name="[Legiones Astartes]" id="d72b-5f70-fa8b-56b9" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink targetId="5d5e-958f-e388-50b5" id="59ba-0151-0f24-4e78" primary="true" name="Elites"/>
         <categoryLink targetId="594d-fa82-13cb-a345" id="e3a5-b7c4-c290-71dd" primary="false" name="Infantry Model Type"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -498,7 +496,6 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
         <infoLink name="[Legiones Astartes]" id="9271-a1f4-6c84-ad96" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink targetId="cf96-8891-3f9a-8921" id="82e8-2052-961a-92cb" primary="true" name="Fast Attack"/>
         <categoryLink targetId="594d-fa82-13cb-a345" id="0aad-668a-4e7c-bbd0" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="c504-9dfa-35d3-c98f" id="37c3-eb71-26be-09fb" primary="false" name="Antigrav Model Sub-Type"/>
       </categoryLinks>
@@ -814,7 +811,6 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="88e6-d373-4152-0dd8" id="6055-78b6-94ce-a6aa" primary="true" name="Troops"/>
         <categoryLink targetId="594d-fa82-13cb-a345" id="0a3f-df65-56d2-6609" primary="false" name="Infantry Model Type"/>
       </categoryLinks>
       <infoLinks>
@@ -980,7 +976,6 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
       <categoryLinks>
         <categoryLink targetId="594d-fa82-13cb-a345" id="3515-78f7-214f-b6c6" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="b980-187b-2b17-d635" id="ff93-6618-5e9f-1ef0" primary="false" name="Unique Model Sub-Type"/>
-        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="d9e2-bc12-3074-b52a" primary="true" name="High Command"/>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="d8ef-9eb1-7313-dda7" primary="false" name="Command"/>
       </categoryLinks>
       <entryLinks>
@@ -1038,6 +1033,20 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="33f3-b1d3-7b30-e5ea">
+      <entryLinks>
+        <entryLink import="true" name="Rite of War" hidden="false" id="be01-b528-4c4b-b474" type="selectionEntryGroup" targetId="c77a-0590-5795-58a6">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6707-c62c-5f28-1449"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="849a-b744-d189-65af"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9433-8656-2d67-d404"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec64-9f3e-c224-783d"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="b75d-483c-74cd-bbe1" targetId="9b32-f350-6aa9-9c09" importRootEntries="true"/>
@@ -1048,9 +1057,21 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
     <catalogueLink type="catalogue" name="Weapons" id="c5c1-714a-f90e-e319" targetId="a22d-4dd0-c59d-57d3"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="Contekar Terminator Squad" hidden="false" id="d84c-210c-2494-136a" type="selectionEntry" targetId="baca-aa73-5db0-17fa"/>
-    <entryLink import="true" name="Konrad Kurze" hidden="false" id="15d6-a1f4-4e9c-40c4" type="selectionEntry" targetId="f5fd-f425-c610-4a94"/>
-    <entryLink import="true" name="Night Raptor Squad" hidden="false" id="d958-12a2-ec35-ac8f" type="selectionEntry" targetId="2090-3883-5cff-e344"/>
+    <entryLink import="true" name="Contekar Terminator Squad" hidden="false" id="d84c-210c-2494-136a" type="selectionEntry" targetId="baca-aa73-5db0-17fa">
+      <categoryLinks>
+        <categoryLink targetId="5d5e-958f-e388-50b5" id="7967-1f53-e431-028f" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Konrad Kurze" hidden="false" id="15d6-a1f4-4e9c-40c4" type="selectionEntry" targetId="f5fd-f425-c610-4a94">
+      <categoryLinks>
+        <categoryLink targetId="22ee-7208-4089-b005" id="9b47-0648-01c7-250d" primary="true" name="Warlord"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Night Raptor Squad" hidden="false" id="d958-12a2-ec35-ac8f" type="selectionEntry" targetId="2090-3883-5cff-e344">
+      <categoryLinks>
+        <categoryLink targetId="cf96-8891-3f9a-8921" id="8f7f-0978-b6f6-7b7f" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Terror Squad" hidden="false" id="1601-d678-e09f-042a" type="selectionEntry" targetId="d1bc-17f7-b3d7-ca84">
       <modifiers>
         <modifier type="set-primary" value="6e0b-c31d-739b-d9cc" field="category">
@@ -1059,8 +1080,20 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="88e6-d373-4152-0dd8" id="3895-612c-b9ba-a74c" primary="true" name="Troops"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Sevatar" hidden="false" id="250f-e956-e1d3-c2c9" type="selectionEntry" targetId="b970-48ad-c8ff-86ca"/>
+    <entryLink import="true" name="Sevatar" hidden="false" id="250f-e956-e1d3-c2c9" type="selectionEntry" targetId="b970-48ad-c8ff-86ca">
+      <categoryLinks>
+        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="8dda-b541-96f6-06bc" primary="true" name="High Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Rite of War" hidden="false" id="bcae-e46d-5ae7-82de" type="selectionEntry" targetId="33f3-b1d3-7b30-e5ea">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="5a1b-ea78-7f03-d50a" primary="true" name="Army Configuration"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Rite of War" id="c77a-0590-5795-58a6" hidden="false" defaultSelectionEntryId="6355-8b46-f913-f808">
@@ -1071,7 +1104,6 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
               <rules>
                 <rule name="A Talent for Murder" id="aa79-e448-8b39-344f" hidden="false">
                   <description>&quot;Night Lords have an improved Weapon Skill Characteristic when fighting Units that have Tactical Statuses&quot;
-
 
 When Locked in Combat with any Units which contain at least one Model which has any Tactical Statuses, Models in that Combat with this Special Rule gain an additional modifier of +1 to their Weapon Skill Characteristic until the end of the Phase.</description>
                 </rule>
@@ -1086,7 +1118,8 @@ When Locked in Combat with any Units which contain at least one Model which has 
                 <profile name="Nostraman Courage" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="dbeb-7353-d4ab-52a6">
                   <characteristics>
                     <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows the Controlling Player to switch the Model that fights in a Challenge.</characteristic>
-                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a"/>
+                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">This Gambit may only be selected once per Challenge.
+If selected, at the Start of the Focus Step, this Model&apos;s Controlling Player may immediately return the Model to their Unit as if it was the Resolution Sub-Phase. If the Controlling Player chooses to do this, they must select another Model from this Unit (this can be a Model that is not normally eligible to take part in a Challenge). That Model is removed from the Unit and becomes the Challenger or Challenged Model in place of the original Challenger or Challenged Model that was returned to the Unit.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1099,7 +1132,16 @@ When Locked in Combat with any Units which contain at least one Model which has 
               <profiles>
                 <profile name="Better Part of Valour" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="72cd-05f2-b454-cbd1">
                   <characteristics>
-                    <characteristic name="Description" typeId="5d02-0e54-0f6a-0f0b"/>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows a Unit to Fall Back when it is the Target of a Charge.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Better Part of Valour Advanced Reaction during Step 4 of the Charge process of any Charge declared by the Active Player that targets a Unit which only includes Models with the Night Lords Trait.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Better Part of Valour Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Charge triggered the Reaction. The Reacting Unit is always the Unit that was declared as the target of the Charge that triggered this Reaction.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once this Reaction is declared, the Reacting Unit must immediately make a Fall Back Move as if it was affected by the Routed Tactical Status.
+
+
+2. Once this Fall Back Move is completed, the Reacting Unit does not gain the Routed Tactical Status.
+
+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
