@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e7b4-2c1c-7d85-a4e3" name="Anathema Psykana" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="9" revision="1" authorName="Arkangelmark5" battleScribeVersion="2.03" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e7b4-2c1c-7d85-a4e3" name="Anathema Psykana" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="9" revision="2" authorName="Arkangelmark5" battleScribeVersion="2.03" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="52f8-7724-64ba-a25f" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Special Rules" id="62b6-f5a3-bf1c-8f49" targetId="106b-693b-99f2-00c3"/>
@@ -7,4 +7,403 @@
     <catalogueLink type="catalogue" name="Wargear" id="9215-99a1-09b7-4a78" targetId="fcc7-4319-bb04-2c25"/>
     <catalogueLink type="catalogue" name="Weapons" id="f5c6-d073-c349-835c" targetId="a22d-4dd0-c59d-57d3"/>
   </catalogueLinks>
+  <categoryEntries>
+    <categoryEntry name="Anathema Psykana" id="60e8-05b4-0f73-a45a" hidden="false">
+      <infoLinks>
+        <infoLink name="Anathema" id="672c-38be-a96b-e4ad" hidden="false" type="rule" targetId="9ca0-a776-be65-b2b7">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="aa5a-c9fd-1eb1-7a45" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry name="Investigatus-Militant" id="6445-be01-196a-928f" hidden="false"/>
+  </categoryEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Prime Benefits" id="5f88-9f8a-5fef-2a71" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Master Sergeant" hidden="true" id="ce4b-7f8a-d4bc-639d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="862e-73e6-842c-f2b9"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="11ec-a223-7f5b-de42" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Combat Veterans" hidden="false" id="24e3-f024-898e-5310">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e88-5c4e-b877-53cb" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4d5a-b445-a4ef-b423" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d9a6-9b5f-b18a-4d63" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Paragon of Battle" hidden="true" id="6bf2-c647-640c-1890">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="002c-2097-5620-316c"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dbf-654a-f06f-2d69" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Special Assignment" hidden="true" id="2604-ecdf-dbd2-2481">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6ab-36f4-1ff0-ccab" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9016-a7e8-41d7-6205" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Prime Command" hidden="false" id="b9a6-ce26-d390-7bd5" targetId="c85c-2963-658f-1bb9" primary="false"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d9a6-9b5f-b18a-4d63" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Logistical Benefit" hidden="false" id="4274-7ed4-c3cb-dc47">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Logistical Benefit" id="bbbf-8a57-4843-ac7f" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="LB - Armour" hidden="false" id="90ca-ddf2-b53b-53de" sortIndex="9">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="111a-7022-1248-a558" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37da-2285-4aa5-e28e" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="LB - Retinue" hidden="false" id="661e-cf95-1e36-eae9" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d9f5-1400-7f29-ed39" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e771-f633-2847-1230" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="LB - Elites" hidden="false" id="1327-9084-7932-8be2" sortIndex="2">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="27e1-6810-1775-bb36" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6eb1-e79c-80ba-ab84" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="LB - Support" hidden="false" id="8e9a-e7b7-5ecd-b0ca" sortIndex="5">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="40b8-607a-5e70-9058" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d6d-d4fc-b3d7-9efc" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="LB - Recon" hidden="false" id="31db-ef89-e168-e099" sortIndex="10">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2286-2caf-ec0b-45bf" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4dbe-05e0-071b-8ec1" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="LB - Transport" hidden="false" id="db26-8fe2-1cd9-4d76" sortIndex="6">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="69be-4fa4-8141-24dc" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75fd-5fda-0aab-c7ac" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="LB - Troops" hidden="false" id="2105-344c-3194-078a" sortIndex="4">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0b70-55d5-0e59-7b4b" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="583c-62f9-4f85-9052" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="LB - War-engine" hidden="false" id="d868-1839-c44c-4357" sortIndex="3">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1089-7837-0e0e-1b53" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="841a-db4a-2490-0fd6" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="LB - Heavy Transport" hidden="false" id="de44-c2e1-001c-828b" sortIndex="8">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="da4d-aa7f-fbd1-7cb7" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e5a-dfa0-723c-3696" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="LB - Fast Attack" hidden="false" id="a84e-1a4b-5bde-a3c9" sortIndex="11">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f383-dc5a-2f05-683f" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2522-ce5a-6cff-bb5c" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="LB - Heavy Assault" hidden="false" id="df3d-9e07-44cf-5e4a" sortIndex="7">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="aa33-a904-63aa-2d92" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7598-df87-464b-0b50" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9de9-8446-3457-61b2" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf98-f0aa-6f4a-d498" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f0e-daae-f374-8865" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="385e-8c66-028c-28be" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d9a6-9b5f-b18a-4d63" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Jenetia Krole" hidden="false" id="578c-1407-0ada-3c52">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Jenetia Krole" hidden="false" id="aae7-f76c-81ea-a228">
+          <categoryLinks>
+            <categoryLink targetId="60e8-05b4-0f73-a45a" id="b803-2fc1-4aee-af6b" primary="false" name="Anathema Psykana"/>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="0121-84e7-fe16-0913" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="b980-187b-2b17-d635" id="7e75-dd76-1398-0373" primary="false" name="Unique Model Sub-Type"/>
+            <categoryLink targetId="f4ba-00e5-3d2e-eaac" id="8ed2-ead9-2ca7-35d2" primary="false" name="Light Model Sub-Type"/>
+            <categoryLink targetId="9871-cb62-5283-2216" id="8b2c-b812-26e7-462f" primary="false" name="Command Model Sub-type"/>
+            <categoryLink targetId="4381-ed35-c3fa-a225" id="c3f0-85a2-78a0-3dba" primary="false" name="Loyalist"/>
+            <categoryLink targetId="af7f-ce65-7fad-6d0e" id="148f-3514-7848-d5c8" primary="false" name="Talons of the Emperor"/>
+            <categoryLink targetId="6445-be01-196a-928f" id="7c57-d9b2-edd9-b089" primary="false" name="Investigatus-Militant"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Jenetia Krole" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="906d-4adc-65a0-eb43">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Unique, Command, Light)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">6</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">3</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">3</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">4</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">5</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">10</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">10</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">12</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">10</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Abyssal Strike" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="2258-7e46-ebe0-764e">
+              <characteristics>
+                <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows the Controlling Player to apply a modifier to their Focus Roll equal to the difference between Krole’s and the Enemy Model’s Willpower Characteristics.</characteristic>
+                <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">When this Gambit is selected, the Controlling Player gains a positive modifier to their Focus Roll equal to Jenetia Krole’s Base Willpower Characteristic minus the current Willpower Characteristic of the opposing Model in the Challenge.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="The Sword of Oblivion" hidden="false" id="743a-e10f-ad3a-ff18" sortIndex="1">
+              <profiles>
+                <profile name="The Sword of Oblivion" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="070c-20ba-a134-c0df">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Critical Hit (6+), Duellist’s Edge (2)</characteristic>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Duellist&apos;s Edge (X)" id="dd81-8ea6-9353-01e6" hidden="false" type="rule" targetId="94bc-c69f-99b6-8ba0">
+                  <modifiers>
+                    <modifier type="set" value="Duellist&apos;s Edge (2)" field="name"/>
+                  </modifiers>
+                  <comment>2</comment>
+                </infoLink>
+                <infoLink name="Critical Hit (X)" id="74fc-249c-2c86-1e12" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
+                  <modifiers>
+                    <modifier type="set" value="Critical Hit (6+)" field="name"/>
+                  </modifiers>
+                  <comment>6+</comment>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Archeotech pistol" hidden="false" id="e752-6096-739b-0a58" type="selectionEntry" targetId="0600-3af1-d080-abf7" sortIndex="2"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Precision (X)" id="08bb-ebb8-7a82-69f3" hidden="false" type="rule" targetId="4fbd-e0bc-8f72-6e3f">
+              <modifiers>
+                <modifier type="set" value="Precision (5+)" field="name"/>
+              </modifiers>
+              <comment>5</comment>
+            </infoLink>
+            <infoLink name="Eternal Warrior (X)" id="d2ee-cc83-6f89-a3c8" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
+              <modifiers>
+                <modifier type="set" value="Eternal Warrior (1)" field="name"/>
+              </modifiers>
+              <comment>1</comment>
+            </infoLink>
+            <infoLink name="Fear (X)" id="f451-3078-c22b-c8f0" hidden="false" type="rule" targetId="0ebc-0c92-2209-6393">
+              <modifiers>
+                <modifier type="set" value="Fear (1)" field="name"/>
+              </modifiers>
+              <comment>1</comment>
+            </infoLink>
+            <infoLink name="Ex Oblivio" id="17d4-7a85-049f-3768" hidden="false" type="rule" targetId="2bbf-2408-efc0-8789"/>
+          </infoLinks>
+          <rules>
+            <rule name="The Soulless Queen" id="ad45-65be-f637-41c1" hidden="false">
+              <description>While a Model with this Special Rule is in a Challenge, its Controlling Player can select the following Gambit: Abyssal Strike</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="125"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Knight-Centura" hidden="false" id="aaf8-a9e7-8c56-2dac">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Knight-Centura" hidden="false" id="1c95-188b-7f7a-8b85">
+          <categoryLinks>
+            <categoryLink targetId="60e8-05b4-0f73-a45a" id="d866-717f-f985-9ffd" primary="false" name="Anathema Psykana"/>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="4a1b-4694-842a-7a53" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="b980-187b-2b17-d635" id="1c2b-6fcd-7bef-0185" primary="false" name="Unique Model Sub-Type"/>
+            <categoryLink targetId="f4ba-00e5-3d2e-eaac" id="5bc2-9593-c7fa-30c5" primary="false" name="Light Model Sub-Type"/>
+            <categoryLink targetId="9871-cb62-5283-2216" id="d8db-00ee-696d-9c39" primary="false" name="Command Model Sub-type"/>
+            <categoryLink targetId="4381-ed35-c3fa-a225" id="d0a4-23a8-5b80-bc98" primary="false" name="Loyalist"/>
+            <categoryLink targetId="af7f-ce65-7fad-6d0e" id="d44a-73bd-020b-3f80" primary="false" name="Talons of the Emperor"/>
+            <categoryLink targetId="6445-be01-196a-928f" id="8951-b4db-4fef-affb" primary="false" name="Investigatus-Militant"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Jenetia Krole" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="2436-dd26-b828-a2a1">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Unique, Command, Light)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">6</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">3</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">3</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">4</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">5</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">10</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">10</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">12</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">10</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Abyssal Strike" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="9501-519e-6b94-9813">
+              <characteristics>
+                <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows the Controlling Player to apply a modifier to their Focus Roll equal to the difference between Krole’s and the Enemy Model’s Willpower Characteristics.</characteristic>
+                <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">When this Gambit is selected, the Controlling Player gains a positive modifier to their Focus Roll equal to Jenetia Krole’s Base Willpower Characteristic minus the current Willpower Characteristic of the opposing Model in the Challenge.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="The Sword of Oblivion" hidden="false" id="66f8-3f64-df01-f596" sortIndex="1">
+              <profiles>
+                <profile name="The Sword of Oblivion" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="e28f-db71-1f2c-b074">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Critical Hit (6+), Duellist’s Edge (2)</characteristic>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Duellist&apos;s Edge (X)" id="cbe0-d806-b9aa-1baa" hidden="false" type="rule" targetId="94bc-c69f-99b6-8ba0">
+                  <modifiers>
+                    <modifier type="set" value="Duellist&apos;s Edge (2)" field="name"/>
+                  </modifiers>
+                  <comment>2</comment>
+                </infoLink>
+                <infoLink name="Critical Hit (X)" id="e858-a484-a880-c706" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
+                  <modifiers>
+                    <modifier type="set" value="Critical Hit (6+)" field="name"/>
+                  </modifiers>
+                  <comment>6+</comment>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Archeotech pistol" hidden="false" id="e54d-514d-f932-62d6" type="selectionEntry" targetId="0600-3af1-d080-abf7" sortIndex="2"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Precision (X)" id="b707-355a-9c81-6c2c" hidden="false" type="rule" targetId="4fbd-e0bc-8f72-6e3f">
+              <modifiers>
+                <modifier type="set" value="Precision (5+)" field="name"/>
+              </modifiers>
+              <comment>5</comment>
+            </infoLink>
+            <infoLink name="Eternal Warrior (X)" id="0bb7-ac2e-b004-8e18" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
+              <modifiers>
+                <modifier type="set" value="Eternal Warrior (1)" field="name"/>
+              </modifiers>
+              <comment>1</comment>
+            </infoLink>
+            <infoLink name="Fear (X)" id="e695-7afe-7d8d-6539" hidden="false" type="rule" targetId="0ebc-0c92-2209-6393">
+              <modifiers>
+                <modifier type="set" value="Fear (1)" field="name"/>
+              </modifiers>
+              <comment>1</comment>
+            </infoLink>
+            <infoLink name="Ex Oblivio" id="0664-0c49-1dbf-6c64" hidden="false" type="rule" targetId="2bbf-2408-efc0-8789"/>
+          </infoLinks>
+          <rules>
+            <rule name="The Soulless Queen" id="196d-34de-606b-36a1" hidden="false">
+              <description>While a Model with this Special Rule is in a Challenge, its Controlling Player can select the following Gambit: Abyssal Strike</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="125"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Jenetia Krole" hidden="false" id="5f19-2fda-5599-d3d3" type="selectionEntry" targetId="578c-1407-0ada-3c52">
+      <categoryLinks>
+        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="4be1-213b-d8e1-a266" primary="true" name="High Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Knight-Centura" hidden="false" id="79c2-ebfb-f42d-0442" type="selectionEntry" targetId="aaf8-a9e7-8c56-2dac">
+      <categoryLinks>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="3e1d-936d-30d1-c6f8" primary="false" name="Command"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
 </catalogue>
