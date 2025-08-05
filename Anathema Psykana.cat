@@ -569,6 +569,135 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Kharon Pattern Acquisitor" hidden="false" id="076f-4533-fb5b-8a3e">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Kharon Pattern Acquisitor" hidden="false" id="e594-369e-6f9f-e166">
+          <profiles>
+            <profile name="Kharon Pattern Acquisitor" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="eca0-478b-8934-73db">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Antigrav, Transport)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">12</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">13</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">12</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">11</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">5</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">12</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">Front</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="10d7-c13f-220b-5c74" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="c504-9dfa-35d3-c98f" id="b84b-1e78-45bd-8c07" primary="false" name="Antigrav Model Sub-Type"/>
+            <categoryLink targetId="4381-ed35-c3fa-a225" id="6edb-8dbb-f9e0-f58b" primary="false" name="Loyalist"/>
+            <categoryLink targetId="60e8-05b4-0f73-a45a" id="74ba-6e57-e683-a370" primary="false" name="Anathema Psykana"/>
+            <categoryLink targetId="af7f-ce65-7fad-6d0e" id="615d-c5e8-7d68-7c06" primary="false" name="Talons of the Emperor"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ae0-e483-700a-446b-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ae0-e483-700a-446b-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Hellion heavy cannon array" hidden="false" id="f2d5-5e8a-d04e-cc96" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5528-d349-7a98-14f2-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5528-d349-7a98-14f2-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Hellion heavy cannon array" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="eb92-cfa2-8978-e316">
+                  <characteristics>
+                    <characteristic name="R" typeId="cdb0-8654-6840-1037">24</characteristic>
+                    <characteristic name="FP" typeId="5037-1f27-1790-e355">6</characteristic>
+                    <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">7</characteristic>
+                    <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+                    <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Suppressive (1)</characteristic>
+                    <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Auto</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Suppressive (X)" id="2769-a48f-336e-77f4" hidden="false" type="rule" targetId="001f-53f3-4d87-4b43">
+                  <comment>1</comment>
+                  <modifiers>
+                    <modifier type="set" value="Suppressive (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Outflank" id="cd19-3a6e-8347-a370" hidden="false" type="rule" targetId="92d2-cc57-1ef6-a712"/>
+            <infoLink name="Assault Vehicle" id="511c-eeb4-f4b7-4e1f" hidden="false" type="rule" targetId="150c-16e6-1212-9f75"/>
+            <infoLink name="Light Transport" id="c3cf-39bc-54bb-7b81" hidden="false" type="rule" targetId="d451-f7f3-fc8f-db23"/>
+            <infoLink name="Shrouded (X)" id="fbe6-74fd-0e8a-cfc3" hidden="false" type="rule" targetId="c7e7-3bad-3de0-d6cc">
+              <modifiers>
+                <modifier type="set" value="Shrouded (5+)" field="name"/>
+              </modifiers>
+              <comment>5+</comment>
+            </infoLink>
+            <infoLink name="Fear (X)" id="1e2e-e473-fbfb-df9a" hidden="false" type="rule" targetId="0ebc-0c92-2209-6393">
+              <modifiers>
+                <modifier type="set" value="Fear (1)" field="name"/>
+              </modifiers>
+              <comment>1</comment>
+            </infoLink>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Vratine heavy missiles" hidden="false" id="51ad-60ff-8054-9b14" type="selectionEntry" targetId="efef-9b82-8679-f9fa" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="57e0-f483-a664-05b0-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="57e0-f483-a664-05b0-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Vratine heavy missiles" hidden="false" id="4410-23f1-83a8-6075" type="selectionEntry" targetId="efef-9b82-8679-f9fa" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="ea57-c26a-fb85-ec28-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ea57-c26a-fb85-ec28-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="120"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vratine heavy missiles" hidden="false" id="efef-9b82-8679-f9fa">
+      <profiles>
+        <profile name="Vratine heavy missiles" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="5fb1-d9e4-e9c9-1add">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">48</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">4</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">5</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Blast (3&quot;), Panic (1), Psy-Shock, Limited (1)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Missile</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast (X)" id="df51-db3b-be0f-8df8" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+          <comment>3&quot;</comment>
+          <modifiers>
+            <modifier type="set" value="Blast (3&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Psy-Shock" id="b78a-ead8-af6c-85e2" hidden="false" type="rule" targetId="e808-01eb-eddc-cec7"/>
+        <infoLink name="Panic (X)" id="e413-f960-3a07-ede8" hidden="false" type="rule" targetId="82a7-f471-3fda-6ca1">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="set" value="Panic (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Jenetia Krole" hidden="false" id="5f19-2fda-5599-d3d3" type="selectionEntry" targetId="578c-1407-0ada-3c52">
@@ -581,9 +710,14 @@
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="3e1d-936d-30d1-c6f8" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Anathema Cadre" hidden="false" id="a938-2983-d059-4b19" type="selectionEntry" targetId="70fb-de8a-7d80-b232">
+    <entryLink import="true" name="Kharon Pattern Acquisitor" hidden="false" id="a938-2983-d059-4b19" type="selectionEntry" targetId="076f-4533-fb5b-8a3e">
       <categoryLinks>
-        <categoryLink targetId="88e6-d373-4152-0dd8" id="ae00-92df-947d-5f6a" primary="true" name="Troops"/>
+        <categoryLink targetId="d162-4711-5d60-0a48" id="74c8-4ece-fede-c745" primary="true" name="Transport"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Anathema Cadre" hidden="false" id="d0f0-7547-8d35-473a" type="selectionEntry" targetId="70fb-de8a-7d80-b232">
+      <categoryLinks>
+        <categoryLink targetId="88e6-d373-4152-0dd8" id="48cf-967d-8490-3fa8" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
