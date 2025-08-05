@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="106b-693b-99f2-00c3" name="Special Rules" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue library="true" id="106b-693b-99f2-00c3" name="Special Rules" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedRules>
-    <rule name="Interdiction Cadres" id="a752-1dc3-403e-9336" hidden="false"/>
-    <rule name="Concealed Positions" id="3595-4991-0833-7b8b" hidden="false"/>
+    <rule name="Interdiction Cadres" id="a752-1dc3-403e-9336" hidden="false">
+      <description>All Models in a Unit selected to fill a Prime Force Organization with this Prime Advantage gain the Concealed Positions and Expendable(1) Special Rules.</description>
+    </rule>
+    <rule name="Concealed Positions" id="3595-4991-0833-7b8b" hidden="false">
+      <description>&quot;This Special Rule allows Models to use an Advanced Reaction to arrive from Reserve in close proximity to an enemy Unit.&quot; 
+
+
+The Controlling Player of a Unit that only contains Models with this Special Rule can use the Concealed Ambush Advanced Reaction.</description>
+    </rule>
     <rule name="Expendable (X)" id="c4d4-e053-9564-540b" hidden="false" publicationId="b905-0414-1057-bb34" page="298">
       <description>&quot;A Player scores less Victory Points when they destroy a Unit that includes only Models with this Special Rule.&quot;
 The number of Victory Points scored by the opponent when a Unit that includes only Models with this Special Rule is entirely Removed as Casualties, for example, as part of the Vanguard (X) Special Rule, First Strike (X) or Slay the Warlord (X) Mission Special Rule, is reduced by the value of X, to a minimum of 1. If a Unit includes Models with different variants of this Special Rule, then the lowest value of X that was present on any Model in that Unit at the start of the Player Turn in which the last Model in the Unit is Removed as a Casualty is used to determine the effect of this Special Rule on that Unit.
@@ -13,7 +20,11 @@ Note that, if, at the start of the Player Turn a Unit includes any Models that d
       <description>&quot;Attacks made with the Shred (X) Special Rule can sometimes inflict an extra point of Damage&quot;
 When any Wound Test is made for an attack with the Shred (X) Special Rule, if the result of the Dice roll, before any modifiers are applied, is equal to or greater than the value of X attached to this variant of the Shred (X) Special Rule, then if a wound is inflicted by that Wound Test , the Damage of that wound is increased by 1. Note that the Shred (X) Special Rule may only be triggered by a Wound Test and has no effect when making an Armour Penetration Test.</description>
     </rule>
-    <rule name="Battlefield Coordinators" id="35dd-79de-75f5-f2c8" hidden="false"/>
+    <rule name="Battlefield Coordinators" id="35dd-79de-75f5-f2c8" hidden="false">
+      <description>&quot;This Special Rule allows the Controlling Player to reduce the Reaction Point cost of a Reaction once per Turn.&quot;
+
+Once per Turn, if a Unit that contains any Model with this Special Rule is within 18&quot; of a Unit that makes a Reaction, the Controlling Player can make an Intelligence Check for this Unit. If a Model from the Unit with this Special Rule has Line of Sight to a Model in the Reacting Unit, the Controlling Player can modify the result of that Check by -1. If the Check is successful, that Reaction costs one fewer Reaction Points (to a minimum of 0).</description>
+    </rule>
     <rule name="Support Unit (X)" id="313f-7ed6-3833-e97c" hidden="false" publicationId="b905-0414-1057-bb34" page="309">
       <description>&quot;A Unit that contains Models with this Special Rule scores fewer Victory Points for Controlling Objective Markers.&quot;
 A Unit that includes any Models with the Support Unit (X) Special Rule may only ever score a maximum number of Victory Points equal to the value of X for Controlling an Objective, regardless of the Value of that Objective, or any other Special Rules Models in that Unit might have (such as the Line (X) Special Rule).</description>
@@ -247,8 +258,16 @@ When any Model from a Unit is within 12&quot; of an enemy Model with the Fear (X
       <description>&quot;A Model with this Special Rule must take part in a Challenge if able.&quot;
 During the Challenge Sub-Phase, if a Model with this Special Rule is eligible, it must be declared as the Challenger or to accept a Challenge. If more than one Model with this Special Rule is eligible to be the Challenger or to accept a Challenge, the Controlling Player may select which one will be declared as the Challenger or to accept a Challenge.</description>
     </rule>
-    <rule name="Master of Descent" id="b04c-3f1f-9fac-cd25" hidden="false"/>
-    <rule name="Tip of the Spear" id="96e2-c6ab-8084-c1d2" hidden="false"/>
+    <rule name="Master of Descent" id="b04c-3f1f-9fac-cd25" hidden="false">
+      <description>&quot;A Model with this Special Rule can arrive by Deep Strike in the first Battle Turn.&quot;
+If a Model with this Special Rule is in Reserves, if that Model and every other Model in the same Unit have the Infantry Type and the Antigrav Sub-Type, that Model&apos;s Unit can make use of the Depp Strike Special Rule to enter play during the first Battle Turn. Only one Unit from the Army can make use of this Special Rule during the same Battle Turn.</description>
+    </rule>
+    <rule name="Tip of the Spear" id="96e2-c6ab-8084-c1d2" hidden="false">
+      <description>An Army whose Primary Detachment includes a Model with this Special Rule may select the Planetfall Speartip Auxiliary Detachment once per Army, following all the normal Rules for selecting Auxiliary Detachments.
+
+
+The Planetfall Speartip Auxiliary Detachments consists of one Retinue Slot which may only be used to select Praetorian Command Squad with Jump Packs Units, and two Prime Elite Slots which may only be used to select Veteran Assault Squad Units.</description>
+    </rule>
     <rule name="Master of Auxilia" id="da1d-168c-c688-80cb" hidden="false">
       <description>&quot;Overseers can join some Allied Units without penalty to some Characteristics.&quot;
 If a Model with this Special Rule joins a Unit with the Solar Auxilia Trait, the Leadership and Cool Characteristics of Models in that Unit are not reduced as a results of this, but may be modified by other rules as normal.</description>
@@ -270,7 +289,7 @@ If the Check is failed there is no further effect, but if the Check is passed th
 Activating the Battlesmith (X) Special Rule does not limit the Acting Model or the Target Model when moving or attacking in the same Turn.&quot;</description>
     </rule>
     <rule name="Master of Automata" id="3ad7-36d0-16cc-4995" hidden="false" page="37" publicationId="e54c-7040-0f35-d85d">
-      <description>This Special Rule allows a Praevian to be accompanied by a Unit of Battle-Automata.
+      <description>&quot;This Special Rule allows a Praevian to be accompanied by a Unit of Battle-Automata.&quot;
 When a Model with this Special Rule is included in a Detachment, one additional Force Organization Slot is added to that Detachment. This Slot can only be filled with one Castellax Battle Maniple or Castellax Destructor Maniple Unit selected from Liber Mechanicum. When such a Unit is included in this way, its Cybernetica Trait is replaced with &apos;Bonded Automata&apos;, and this Unit can be included even thought it does not have the same Faction Trait as the other Units in that Detachment. In addition, a Model with this Special Rule may join a Friendly Unit that includes Models with the Automata Type. If a Model with this Special Rule joins a Unit with the Automata Type, the Leadership and Cool Characteristics of Models in that Unit are not reduced as a results of this, but may be modified by other rules as normal.</description>
     </rule>
     <rule name="Infiltrate (X)" id="f330-254e-1a98-798a" hidden="false" page="301" publicationId="b905-0414-1057-bb34">
@@ -335,7 +354,6 @@ Note that a Unit Embarked on a Model with the Outflank Special Rule does not nee
     </rule>
     <rule name="Shrouded (X)" id="c7e7-3bad-3de0-d6cc" hidden="false" publicationId="7d63-5df4-c656-52de" page="337">
       <description>&quot;Shrouded (X) is a Damage Mitigation Test that may be taken in addition to a Saving Throw.&quot;
-
 A model with the Shrouded (X) Special Rule gains a Shrouded Damage Mitigation Test that may be used in Step 9 of the Shooting Attack process to discard Wounds allocated to the Model. A Damage Mitigation Test may be made after and in addition to a Saving Throw. The Target Number for a Shrouded Damage Mitigation Test is the value of X attached to the specific variant of the Special Rule. A Shrouded Damage Mitigation Test may not be made against wounds inflicted by a Melee Weapon.</description>
     </rule>
     <rule name="Vanguard (X)" id="530f-b733-993c-ec84" hidden="false" publicationId="7d63-5df4-c656-52de" page="339">
@@ -387,10 +405,6 @@ Activating the Repair Crew (X) Special Rule does not limit the Model with that S
     <rule name="Shield-breaker (X)" id="28ce-8329-623c-e1a5" hidden="false" page="103" publicationId="5a4b-8b0e-caa6-c7ed">
       <description>&quot;A Weapon with this Special Rule ca collapse more than one Void Shield with a single attack.&quot;
 A Weapon with this Special Rule that successfully collapses a void shield (either from the Void Shields (X) or Titan Void Shield Array (X) Special Rules), collapses a number of void shields equal to the value of X attached to the specific variant of this Special Rule that it has instead of just 1.</description>
-    </rule>
-    <rule name="Rite of Pure Thought" id="816e-ff94-ceb4-bcac" hidden="false" page="96">
-      <description>&quot;A Model with this Special Rule may not make Reactions or Volley Attacks and suffers other limitations.&quot;
-A Model with this Special Rule may never make Reactions of any kind, make Volley Attacks or select an options other than Hold, Fall Back or Consolidate in the Resolution Sub-Phase. A Unit composed of a majority of Models with this Special Rule does not take Leadership Checks due to Models lost to a Shooting Attack, but does still make Checks due to the Panic (X) Special Rule. Furthermore, when Locked in Combat, no Combat Resolution Points are scored by any Player when a Model with this Special Rule is Removed as a Casualty.</description>
     </rule>
     <rule name="Titan War Horn (X)" id="2cd4-62d3-b63c-c117" hidden="false" publicationId="5a4b-8b0e-caa6-c7ed" page="107">
       <description>&quot;Models Near Model that activates the Titan War Horn (X) Special Rule must reduce their Advanced Characteristics&quot;
@@ -458,7 +472,17 @@ Instead of one of the Units that would normally be eligible to Embark within a M
       <description>&quot;Dreadnought Drop Pods transport dreadnoughts to the Battlefield.&quot;
 Only one Model may be Embarked on a Model with this Special Rule, and the Embarking Model must have the Walker Type. The Embarked Model cannot have the Bulky (X) Special Rule with a value of greater than Bulky (7).</description>
     </rule>
-    <rule name="Impact Reactive Doors" id="a919-02f3-60f7-ab99" hidden="false"/>
+    <rule name="Impact Reactive Doors" id="a919-02f3-60f7-ab99" hidden="false" publicationId="b905-0414-1057-bb34" page="301">
+      <description>&quot;A Model with this Special Rule must be deployed with its doors open.&quot;
+
+When a Model with this Special Rule is Deployed, any doors on the Model must be opened to their full extent. Any Unit Embarked upon a Model with this Special Rule must Disembark in the Move Sub-Phase immediately following the Reserves Sub-Phase in which it was Deployed. Any Model that cannot Disembark from the Model with this Special Rule in that Move Sub-Phase is Removed as a Casualty. 
+
+
+Furthermore, once a Unit has Disembarked from a Model with this Special Rule, no Models may Embark upon that Model with this Special Rule for the duration of the Battle. 
+
+
+Ranges or Line of Sight from this Model must be measured from the central hull, including for Disembarkation. The doors are ignored for all purposes.</description>
+    </rule>
     <rule name="Orbital Assault Vehicle" id="d3d7-2241-0ce5-f2b6" hidden="false" publicationId="b905-0414-1057-bb34" page="303">
       <description>&quot;A Model with this Special Rule must Deep Strike.&quot; 
 A Model with this Special Rule must be Deployed onto the Battlefield using the Deep Strike Special Rule and is treated as though it has that Special Rule. It may never be deployed without using the Deep Strike Special Rule, regardless of any other Rule or Mission, and if forced to do so it is immediately reduced to 0 Hull Points.</description>
@@ -481,7 +505,7 @@ A Model with this Special Rule has a number of void shields equal to the value o
     </rule>
     <rule name="Medic (X)" id="93b3-c23d-7263-e013" hidden="false">
       <description>&quot;This Special Rule determines the difficulty of any Recovery Tests made due to other Reactions or Special Rules.&quot;
-&quot;If a Unit includes one or more Models with the Medic (X) Special Rule, then certain other Special Rules, Reactions or Gambits may allow the Controlling Player to make Recovery Tests for other Models in the same Unit. Note that the Medic (X) Special Rule does not allow Recovery Tests to be made, but simply establishes the Target Number for such Tests - Recovery Tests may only be made if another Special Rule, Reaction or Gambit allows them (see, for example, the Medic! Advanced Reaction).
+If a Unit includes one or more Models with the Medic (X) Special Rule, then certain other Special Rules, Reactions or Gambits may allow the Controlling Player to make Recovery Tests for other Models in the same Unit. Note that the Medic (X) Special Rule does not allow Recovery Tests to be made, but simply establishes the Target Number for such Tests - Recovery Tests may only be made if another Special Rule, Reaction or Gambit allows them (see, for example, the Medic! Advanced Reaction).
 
 *Recovery Tests*
 A Recovery Test is made when one or more Unsaved Wounds are allocated to a Model, and is resolved by rolling a Dice and comparing the results to the value of &apos;X&apos; in the variant of the Medic (X) Special Rule present in a Unit, then the Controlling Player chooses which is used to determine the Target Number. If the Recovery Test is successful then a single Unsaved Wound allocated to the Model has its Damage reduced by 1 (to a minimum of 0). If a Recovery Test is failed, then any Unsaved Wounds allocated to the Model are resolved as normal.&quot;</description>
@@ -537,18 +561,15 @@ If Models with multiple variants of this Special Rule are part of the same Unit,
 A Unit that includes any Models with this Special Rule that does not also include a Model with the Command Sub-Type or Sergeant Sub-Type, may not move in the Movement Phase, making Shooting Attacks in the Shooting Phase or Charge in the Assault Phase - but fights as normal if charged or part of an ongoing Combat.</description>
     </rule>
     <rule name="Master of Machines" id="9470-0220-efcc-1c3d" hidden="false">
-      <description>A Model with this Special Rule can join Units of Automata.
-
+      <description>&quot;A Model with this Special Rule can join Units of Automata.&quot;
 A Model with this Special Rule may join a Friendly Unit that includes Models with the Automata Type.</description>
     </rule>
     <rule name="Phased Refractor Shields" id="a3a3-a3e8-da13-56c1" hidden="false">
-      <description>A Model with this Special Rule improves their Invulnerable Save against Shooting Attacks.
-
+      <description>&quot;A Model with this Special Rule improves their Invulnerable Save against Shooting Attacks.&quot;
 When the Controlling Player of a Model with this Special Rule chooses to make an Invulnerable Save for that Model against a wound generated by a Shooting Attack, that Invulnerable Save is improved by one step. For example, a Model with a 6+ Invulnerable Save Characteristic and this Special Rule that makes an Invulnerable saving throw against a wound inflicted by a Shooting Attack would have its Invulnerable Save Characteristic improved to a 5+ for that roll.</description>
     </rule>
     <rule name="Repair Automata" id="1394-90c6-4f63-e2ed" hidden="false">
-      <description>A Unit that includes Models with this Special Rule may attempt to repair certain Models as if it was a single Model with the Battlesmith (X) Special Rule.
-
+      <description>&quot;A Unit that includes Models with this Special Rule may attempt to repair certain Models as if it was a single Model with the Battlesmith (X) Special Rule.&quot;
 A Unit that includes one of more Models with this Special Rule may be used to activate the Battlesmith (X) Special Rule as if it was a single Model with that Special Rule. When activating the Battlesmith (X) Special Rule for a Unit that includes one of more Models with the Repair Automata Special Rule, select one Model in the Unit with the Repair Automata Special Rule to be the Acting Model and determine the value of X for this use of the Battlesmith (X) Special Rule based on the number of Models in the Unit with the Repair Automata Special Rule using the table below:
 
 Number of Models = Value of X
@@ -557,13 +578,11 @@ Number of Models = Value of X
 9-12 = 3</description>
     </rule>
     <rule name="Rite of Pure Thought" id="b587-c418-b46f-e5f8" hidden="false">
-      <description>A Model with this Special Rule may not make Reactions of Volley Attacks and suffers other limitations.
-
+      <description>&quot;A Model with this Special Rule may not make Reactions of Volley Attacks and suffers other limitations.&quot;
 A Model with this Special Rule may never make Reactions of any kind, make Volley Attacks or select any options other than Hold, Fall Back or Consolidate in the Resolution Sub-Phase. A Unit composed of a majority of Models with this Special Rule does not take Leadership Checks due to Models lost to a Shooting Attack, but does still make Checks due to the Panic (X) Special Rule. Furthermore, when Locked in Combat, no Combat Resolution Points are scored by any Player when a Model with this Special Rule is Removed as a Casualty.</description>
     </rule>
     <rule name="Shock Ram" id="7581-8ef0-5cd9-4b0e" hidden="false">
-      <description>A Vehicle with this Special Rule inflicts more damage when it moves thought enemy Units.
-
+      <description>&quot;A Vehicle with this Special Rule inflicts more damage when it moves thought enemy Units.&quot;
 When the Model with this Special Rule and the Vehicle Type moves through an enemy Unit, the number of Hits inflicted is increased from D6 to D6+3. Furthermore, if the Reactive Player declares a Death or Glory Reacting with a Vehicle that has this Special Rule as the target, then the Vehicle with this Special Rule gains a 6+ Invulnerable save against all Hits inflicted as part of that Reaction.</description>
     </rule>
     <rule name="Duty Before Death" id="e20b-fd1b-6229-eac2" hidden="false">
