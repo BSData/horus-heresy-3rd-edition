@@ -262,6 +262,7 @@
     <categoryEntry name="Heavy Assault - Cataphractii or Tartaros Only" id="6cc6-9558-dd27-949f" hidden="false"/>
     <categoryEntry name="Heavy Assault - Rampager Squads Only" id="91f0-1b91-0a9a-c542" hidden="false"/>
     <categoryEntry name="Elites - Seeker Squads or Headhunter Kill Teams Only" id="5c0d-4d49-44e2-0a99" hidden="false"/>
+    <categoryEntry name="Medusan Vanguard Unlock" id="fc09-911b-ee8c-7967" hidden="true"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -4040,7 +4041,7 @@
             </categoryLink>
           </categoryLinks>
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="increment" value="1" field="cbbf-a5c7-0527-b306">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
@@ -4053,8 +4054,22 @@
               </conditionGroups>
               <comment>IW Only</comment>
             </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="21c0-18db-03dd-ae07" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="21c0-18db-03dd-ae07" shared="true"/>
+                  </conditions>
+                  <comment>IW</comment>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <comment>IW Only</comment>
+          <constraints>
+            <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="cbbf-a5c7-0527-b306"/>
+          </constraints>
         </forceEntry>
         <forceEntry name="Auxiliary - The Ironfire Cohort" id="5bc5-5224-c751-d437" hidden="true" sortIndex="71">
           <categoryLinks>
@@ -5939,11 +5954,13 @@
           <modifiers>
             <modifier type="increment" value="1" field="06ca-d5c5-58f1-f184">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="6827-05e8-73ff-ead8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="0dbe-8971-9089-37e4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="736e-3967-e72b-e3ac" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="736e-3967-e72b-e3ac" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="fc09-911b-ee8c-7967" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                  <comment>IW</comment>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -12838,6 +12855,23 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98f0-4cab-2f85-12db-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98f0-4cab-2f85-12db-max" includeChildSelections="false"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="98f0-4cab-2f85-12db-min">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="98f0-4cab-2f85-12db-max">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rewards of Treachery" hidden="true" id="7c64-0321-e098-fd0e">
       <rules>
