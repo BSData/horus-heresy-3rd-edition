@@ -29,6 +29,7 @@ class GameTests(unittest.TestCase):
                                      )
                 if category_count == 1:
                     link = child.get_child(tag='categoryLink')
+                    print(link)
                     pass  # TODO: Check that it's primary
 
 
