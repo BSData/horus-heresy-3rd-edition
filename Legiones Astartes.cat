@@ -9758,7 +9758,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Outrider Squadron" hidden="false" id="512e-6a63-1bd3-8a22" sortIndex="55">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Outrider Sergeant" hidden="false" id="01c7-6624-9476-cf7b" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Outrider Sergeant" hidden="false" id="01c7-6624-9476-cf7b" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85ea-7eed-f3f3-18e4"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41c4-0193-f337-5292"/>
@@ -9798,7 +9798,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Outrider" hidden="false" id="4a6d-b7c3-e5f6-97e9" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Outrider" hidden="false" id="4a6d-b7c3-e5f6-97e9" sortIndex="2">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c898-3a70-deac-c870"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="8cd3-7d2b-15a9-1d1a"/>
@@ -9900,7 +9900,11 @@
             <entryLink import="true" name="Twin bolter" hidden="false" id="3f5c-0f24-a1f2-45b4" type="selectionEntry" targetId="222f-82cb-05a2-f8f1"/>
             <entryLink import="true" name="Twin plasma gun" hidden="false" id="46b5-0652-0990-6be1" type="selectionEntry" targetId="1603-43c6-8860-d57e">
               <modifiers>
-                <modifier type="set" value="15" field="9893-c379-920b-8982"/>
+                <modifier type="increment" value="15" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
               </modifiers>
             </entryLink>
           </entryLinks>
