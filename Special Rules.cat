@@ -589,5 +589,84 @@ When the Model with this Special Rule and the Vehicle Type moves through an enem
         <entryLink import="true" name="Telepathy" hidden="false" id="8247-4933-421b-e36b" type="selectionEntry" targetId="e09e-1438-3205-2a57" sortIndex="6"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Orders of the Hekatonystika" id="e496-aa6c-6f2a-f90b" hidden="false" defaultSelectionEntryId="1172-efa0-0197-8a78">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Augurs of Weakness" hidden="false" id="1172-efa0-0197-8a78">
+          <rules>
+            <rule name="Augurs of Weakness" id="62bd-cf97-c2e4-10e5" hidden="false">
+              <description>When making attacks targeting a Unit that includes one or more Models with the Vehicle Type, Models with the Order Exemplars Special rule gain the Armourbane Special Rule.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Armourbane" id="f874-f165-7fb6-fd6d" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c88b-a717-302d-843d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Breakers of Witches" hidden="false" id="fac3-dcb1-ded6-5ee9">
+          <rules>
+            <rule name="Breakers of Witches" id="d699-7990-6845-f9c0" hidden="false">
+              <description>Whilst part of a Unit that is Locked in Combat with an enemy Unit that has one or more Models with the Malefic Sub-Type or Psyker Trait, Hit and Wound Tests made for Models with the Order Exemplars Special Rule in that Combat are modified by +1.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebf0-a3e9-d0f3-5640" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hunters of Beasts" hidden="false" id="ae95-f80c-ff02-50bc">
+          <rules>
+            <rule name="Hunters of Beasts" id="377c-9049-0341-22f2" hidden="false">
+              <description>Whilst part of a Unit that is Locked in Combat with an enemy Unit that includes one or more Models with Toughness Characteristic of 6 or higher, the Damage Characteristic of Wounds caused by a Model with this Special Rule is modified by +1.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fae-5380-8928-aaef" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Icons of Resolve" hidden="false" id="5937-1273-050e-5183">
+          <rules>
+            <rule name="Icons of Resolve" id="afa4-498e-a4b6-dba5" hidden="false">
+              <description>When part of a Unit that is successfully Charged by an enemy Unit, Models with the Order Exemplars Special Rule set their Leadership Characteristic to 10 for the duration of the current Assault Phase.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7b3-51f9-43a2-ec00" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Reaper of Hosts" hidden="false" id="5c94-8639-f7eb-3f83">
+          <rules>
+            <rule name="Reaper of Hosts" id="d613-6787-0367-5561" hidden="false">
+              <description>Whilst part of a Unit that is Locked in Combat with one or more enemy Units that outnumbers it, then all Models in that Unit with the Order Exemplars Special Rule modify their Attacks Characteristic by +1.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d81-737f-974c-2dba" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Slayers of Kings" hidden="false" id="c1b6-85fd-8284-cea1">
+          <rules>
+            <rule name="Slayers of Kings" id="cb9d-c4a7-e054-f75b" hidden="false">
+              <description>Whilst part of a Unit that is Locked in Combat with an enemy Unit that includes at least one Model with a Weapon Skill Characteristic of 6 or higher, the Attack Characteristic of Models with the Order Exemplars Special Rule may be set to 1. If this option is used then the Terranic greatswords those Models have gain the Critical Hit (6+) Special Rule until the Combat ends.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Critical Hit (X)" id="0989-0bbd-2c94-7d24" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
+              <modifiers>
+                <modifier type="set" value="Critical Hit (6+)" field="name"/>
+              </modifiers>
+              <comment>6+</comment>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="236b-fb3a-31c5-8dc1" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0f2e-9882-059e-ec40" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ad4-ebd6-f8e7-9e38" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
