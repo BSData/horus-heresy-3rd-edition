@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="be98-aa9d-64ef-f62c" name="                        XIV - Death Guard" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="1" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="be98-aa9d-64ef-f62c" name="                        XIV - Death Guard" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="2" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Mortarion" hidden="false" id="1e3b-2a3b-c76d-6f98" sortIndex="1">
       <selectionEntries>
@@ -115,6 +115,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         <categoryLink targetId="7799-e1d6-762b-700b" id="5dda-8381-575e-17e9" primary="false" name="Paragon Model Type"/>
         <categoryLink targetId="b980-187b-2b17-d635" id="be85-312c-affc-3072" primary="false" name="Unique Model Sub-Type"/>
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="5887-575e-32fd-678d" primary="false" name="Master of the Legion"/>
+        <categoryLink targetId="d251-944b-3c3b-0579" id="b8f3-79cc-d246-5782" primary="false" name="Traitor"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Bulky (X)" id="72c1-76a0-e18d-55e2" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
@@ -322,6 +323,7 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
         <categoryLink targetId="1e7d-9066-28d2-97a0" id="9c87-84f1-5ee1-0c9a" primary="false" name="Heavy Model Sub-Type"/>
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="6752-1a25-ab46-a275" primary="false" name="Master of the Legion"/>
         <categoryLink targetId="9254-b1e9-98b2-6101" id="75b6-318a-5300-f979" primary="false" name="Psyker"/>
+        <categoryLink targetId="d251-944b-3c3b-0579" id="61b7-0dcb-6e57-cf3c" primary="false" name="Traitor"/>
       </categoryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="200"/>
@@ -349,6 +351,9 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
         <infoLink name="Slow and Purposeful" id="d142-826a-bce9-5bc1" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e"/>
         <infoLink name="Death Cloud" id="ebae-bd7e-8be0-1f63" hidden="false" type="rule" targetId="6dab-86ee-afbd-94b8"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="c588-84f0-75e6-286e" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Deathshroud Terminator Squad" hidden="false" id="11a2-0875-ae7a-3da2" sortIndex="3">
       <selectionEntries>
@@ -465,7 +470,7 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="03fb-7ed6-4593-3fe4" includeChildSelections="true"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Assault Grenade Launcher" hidden="false" id="fa74-989c-1dfd-b717" type="selectionEntry" targetId="1662-bcaf-58de-c84a" sortIndex="1"/>
+                    <entryLink import="true" name="Assault grenade launcher" hidden="false" id="fa74-989c-1dfd-b717" type="selectionEntry" targetId="1662-bcaf-58de-c84a" sortIndex="1"/>
                     <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="9c91-27f6-a055-e2ee" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" sortIndex="2" flatten="true"/>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -523,8 +528,8 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d973-a4bb-df1b-829b" includeChildSelections="true"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Assault Grenade Launcher" hidden="false" id="7e5b-d26f-82ef-775f" type="selectionEntry" targetId="1662-bcaf-58de-c84a" sortIndex="1"/>
-                    <entryLink import="true" name="Heavy Alchem Flamer" hidden="false" id="daa5-633a-1a6f-5600" type="selectionEntry" targetId="b21e-8390-ce83-0b6a" sortIndex="2">
+                    <entryLink import="true" name="Assault grenade launcher" hidden="false" id="7e5b-d26f-82ef-775f" type="selectionEntry" targetId="1662-bcaf-58de-c84a" sortIndex="1"/>
+                    <entryLink import="true" name="Heavy alchem flamer" hidden="false" id="daa5-633a-1a6f-5600" type="selectionEntry" targetId="b21e-8390-ce83-0b6a" sortIndex="2">
                       <constraints>
                         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a953-d743-e86f-5d26"/>
                       </constraints>
@@ -721,6 +726,7 @@ Process
     <entryLink import="true" name="Mortarion" hidden="false" id="9043-addf-3b9f-47f5" type="selectionEntry" targetId="1e3b-2a3b-c76d-6f98" sortIndex="1">
       <categoryLinks>
         <categoryLink targetId="22ee-7208-4089-b005" id="6b63-0d0e-dacc-87ff" primary="true" name="Warlord"/>
+        <categoryLink targetId="2399-482f-47f3-add5" id="7d3a-044d-dac0-5ffd" primary="false" name="Death Guard"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -738,6 +744,7 @@ Process
     <entryLink import="true" name="Calas Typhon" hidden="false" id="e362-6664-464c-55c4" type="selectionEntry" targetId="f182-d709-298f-5154" sortIndex="2">
       <categoryLinks>
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="1e79-9054-cbd5-8d3c" primary="true" name="High Command"/>
+        <categoryLink targetId="2399-482f-47f3-add5" id="26ba-be23-2230-481b" primary="false" name="Death Guard"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -755,11 +762,13 @@ Process
     <entryLink import="true" name="Deathshroud Terminator Squad" hidden="false" id="676f-c38c-9f8a-99e2" type="selectionEntry" targetId="11a2-0875-ae7a-3da2" sortIndex="3">
       <categoryLinks>
         <categoryLink targetId="a38e-50ff-310f-f19e" id="afa0-d79d-08b6-5830" primary="true" name="Retinue"/>
+        <categoryLink targetId="2399-482f-47f3-add5" id="be35-f95a-3d68-ea1a" primary="false" name="Death Guard"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Grave Warden Terminator Squad" hidden="false" id="15d4-c494-15d8-91ae" type="selectionEntry" targetId="adff-529b-2bd1-c87f" sortIndex="4">
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="c892-1393-02e4-f6dd" primary="true" name="Heavy Assault"/>
+        <categoryLink targetId="2399-482f-47f3-add5" id="90bc-ba3f-d0b5-0774" primary="false" name="Death Guard"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

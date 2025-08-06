@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="16" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="17" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -262,6 +262,7 @@
     <categoryEntry name="Heavy Assault - Cataphractii or Tartaros Only" id="6cc6-9558-dd27-949f" hidden="false"/>
     <categoryEntry name="Heavy Assault - Rampager Squads Only" id="91f0-1b91-0a9a-c542" hidden="false"/>
     <categoryEntry name="Elites - Seeker Squads or Headhunter Kill Teams Only" id="5c0d-4d49-44e2-0a99" hidden="false"/>
+    <categoryEntry name="Medusan Vanguard Unlock" id="fc09-911b-ee8c-7967" hidden="true"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -4052,7 +4053,7 @@
             </categoryLink>
           </categoryLinks>
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="increment" value="1" field="cbbf-a5c7-0527-b306">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
@@ -4065,8 +4066,22 @@
               </conditionGroups>
               <comment>IW Only</comment>
             </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="21c0-18db-03dd-ae07" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="21c0-18db-03dd-ae07" shared="true"/>
+                  </conditions>
+                  <comment>IW</comment>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <comment>IW Only</comment>
+          <constraints>
+            <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="cbbf-a5c7-0527-b306"/>
+          </constraints>
         </forceEntry>
         <forceEntry name="Auxiliary - The Ironfire Cohort" id="5bc5-5224-c751-d437" hidden="true" sortIndex="71">
           <categoryLinks>
@@ -5963,11 +5978,13 @@
           <modifiers>
             <modifier type="increment" value="1" field="06ca-d5c5-58f1-f184">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="6827-05e8-73ff-ead8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="0dbe-8971-9089-37e4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="736e-3967-e72b-e3ac" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="736e-3967-e72b-e3ac" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="fc09-911b-ee8c-7967" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                  <comment>IW</comment>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -12746,7 +12763,9 @@ Please don&apos;t submit bug reports for any of these things</description>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="258b-97fb-2366-7344" shared="true" includeChildForces="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true" includeChildForces="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -12874,6 +12893,23 @@ Please don&apos;t submit bug reports for any of these things</description>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98f0-4cab-2f85-12db-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98f0-4cab-2f85-12db-max" includeChildSelections="false"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="98f0-4cab-2f85-12db-min">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="98f0-4cab-2f85-12db-max">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rewards of Treachery" hidden="true" id="7c64-0321-e098-fd0e">
       <rules>

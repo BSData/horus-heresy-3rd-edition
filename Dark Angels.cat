@@ -315,6 +315,35 @@
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Armour of the Forest" hidden="false" id="8270-2e77-6a5d-4f0b" sortIndex="4">
+      </selectionEntries>
+      <profiles>
+        <profile name="Armour of the Forest" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="55dd-63ea-8d31-d53f" publicationId="b905-0414-1057-bb34">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">This Wargear reduces the amount of Damage suffered from any wound inflicted in a Challenge.</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">When a Model with this Special Rule is engaged in a Challenge, the Damage Characteristic of any wound inflicted on that Model is reduced by 1, to a minimum of 1.�</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d657-8e1f-0ee5-31af" includeChildSelections="true"/>
+      </constraints>
+      <comment>High Command</comment>
+      <categoryLinks>
+        <categoryLink targetId="594d-fa82-13cb-a345" id="fa27-2192-bcbd-f7ab" primary="false" name="Infantry Model Type"/>
+        <categoryLink targetId="b980-187b-2b17-d635" id="945f-1a7d-3c4c-d993" primary="false" name="Unique Model Sub-Type"/>
+        <categoryLink targetId="9871-cb62-5283-2216" id="6ae3-f881-b19d-b231" primary="false" name="Command Model Sub-type"/>
+        <categoryLink targetId="4381-ed35-c3fa-a225" id="f5ae-857b-13e5-1986" primary="false" name="Loyalist"/>
+        <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="2369-5f1b-e0e3-a779" primary="false" name="Master of the Legion"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="false" name="Deathwing Companion Detachment" hidden="false" id="1e9c-6b93-a335-43c4">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Deathwing Companion" hidden="false" id="4808-791f-8ebd-4027" collective="true">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+          </costs>
           <profiles>
             <profile name="Armour of the Forest" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="55dd-63ea-8d31-d53f" publicationId="b905-0414-1057-bb34">
               <characteristics>
@@ -339,6 +368,45 @@
         <infoLink name="Master of the Legion" id="6338-4de0-4716-78b3" hidden="false" type="profile" targetId="6cd2-96be-b703-6d57"/>
         <infoLink name="The Angels of Death" id="78cb-cf17-42e6-3545" hidden="false" type="rule" targetId="7fd2-c16b-0e15-9de7"/>
       </infoLinks>
+      <rules>
+        <rule name="Companions" id="4eb9-60cd-a4ac-a7f5" hidden="false">
+          <description>While a Model with both the Dark Angels Trait and either the Paragon Type or Command Sub-Type is part of a Unit that includes any Models with this Special Rule, Precision Wound caused as part of a Shooting Attack cannot be allocated to that Model.</description>
+        </rule>
+      </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="All models may take:" id="ff11-52e4-52cb-ea04" hidden="false" collective="false" import="true" defaultSelectionEntryId="none">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="false" id="4ee0-6036-e508-4831" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4b26-c30f-b681-f353" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Melta bombs" hidden="false" id="c292-3f86-eeab-7aa2" type="selectionEntry" targetId="2eb4-687e-a515-ee3d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Frag grenades" hidden="false" id="19d6-8b72-a7a2-aeed" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6afc-9dfb-8134-a67c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99e0-fd10-2285-9077" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak grenades" hidden="false" id="8e0f-fb73-9e8b-8e31" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b25d-bdef-d23e-39dd" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d333-5443-2db2-f082" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="8d8e-94ec-f857-c8b1" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2"/>
+      </entryLinks>
+      <comment>Retinue</comment>
+      <categoryLinks>
+        <categoryLink targetId="594d-fa82-13cb-a345" id="5562-be08-5927-bacd" primary="false" name="Infantry Model Type"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Marduk Sedras" hidden="false" id="34d0-7b32-5875-8d5a">
       <costs>
@@ -388,6 +456,39 @@
           </profiles>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Marduk Sedras" hidden="false" id="8e82-13e7-cba4-a6a9">
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Support Unit (X)" id="7284-fe8e-1f3a-50d3" hidden="false" type="rule" targetId="313f-7ed6-3833-e97c">
+          <modifiers>
+            <modifier type="set" value="Support Unit (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="[Legiones Astartes]" id="6eb1-47b8-8a72-24ac" hidden="false" type="profile" targetId="641c-ca0a-7093-4525">
+          <modifiers>
+            <modifier type="set" value="Dark Angels" field="name">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="[Allegiance]" id="ffb7-81fd-e565-f839" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Bitter Duty" id="7865-76cd-d116-a3c2" hidden="false" type="rule" targetId="5d6f-552a-f409-cad5"/>
+        <infoLink name="The Angels of Death" id="5f90-3677-32b9-2e1c" hidden="false" type="rule" targetId="7fd2-c16b-0e15-9de7"/>
+      </infoLinks>
+      <comment>Support</comment>
+      <categoryLinks>
+        <categoryLink targetId="594d-fa82-13cb-a345" id="0ae5-d891-ba59-8a57" primary="false" name="Infantry Model Type"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Inner Circle Knights Cenobium" hidden="false" id="e033-118d-4b07-5cd1">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Order Cenobites" hidden="false" id="8a6b-255c-5771-b471">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="50"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+          </costs>
           <profiles>
             <profile name="Marduk Sedras" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="03cf-486a-0bef-4c02">
               <characteristics>
@@ -428,6 +529,36 @@
               <comment>Traitor</comment>
             </infoLink>
           </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Order Preceptor" hidden="false" id="020f-37dd-726f-1888">
+          <costs>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Sergeant Model Sub-Type" hidden="false" id="fcf7-fd55-a5cf-c8ff" targetId="8045-89a4-76d4-fcef" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Order Preceptor" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="d285-c93a-d184-358c">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant, Heavy)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">6</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">5</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">2</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">4</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">9</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5db8-ef7c-d8a4-cb13" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="956b-30ef-5147-5853" includeChildSelections="false"/>
@@ -453,6 +584,40 @@
         <infoLink name="Slow and Purposeful" id="be28-dbe5-9b77-dd6b" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e"/>
         <infoLink name="The Angels of Death" id="6676-3944-6317-a19e" hidden="false" type="rule" targetId="7fd2-c16b-0e15-9de7"/>
       </infoLinks>
+      <rules>
+        <rule name="Order Exemplars" id="09de-0ab3-2a9f-0b6d" hidden="false" publicationId="b905-0414-1057-bb34">
+          <description>When a Unit that includes any Models with this Special Rule is selected as part of a Detachment, during Army selection, a single option from the Orders of the Hekatonystika presented below must selected for all Models in that Unit.</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink import="true" name="Terranic greatsword" hidden="false" id="7270-62d6-4196-442a" type="selectionEntry" targetId="2d61-d9b4-dc3c-4dda">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d12f-0c61-f2e0-b307" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14ef-8ed2-1bde-f7aa" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Plasma caster" hidden="false" id="c1f9-3dc6-65d0-3016" type="selectionEntry" targetId="509f-0a58-f6e8-c8f5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="07a7-9cc4-a9db-3512" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f430-7d07-a9f9-832e" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Template" id="c2d9-57f7-1b1f-4ab7" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a"/>
+          </infoLinks>
+        </entryLink>
+        <entryLink import="true" name="Orders of the Hekatonystika" hidden="false" id="9120-8b58-f50f-944a" type="selectionEntryGroup" targetId="c54f-856a-49cf-3fde">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72ea-1207-9431-272c" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0472-f871-f6b5-80a9" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="4edf-74d7-ceb9-d5e2" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2"/>
+      </entryLinks>
+      <comment>Elite</comment>
+      <categoryLinks>
+        <categoryLink targetId="594d-fa82-13cb-a345" id="5de8-4f08-68e5-def2" primary="false" name="Infantry Model Type"/>
+        <categoryLink targetId="1e7d-9066-28d2-97a0" id="00f9-71ef-1025-7f20" primary="false" name="Heavy Model Sub-Type"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lion El&apos;Johnson" hidden="false" id="2516-2347-2ca5-af1d">
       <selectionEntries>
@@ -616,6 +781,207 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <comment>Warlord</comment>
+      <categoryLinks>
+        <categoryLink targetId="7799-e1d6-762b-700b" id="0ba6-de00-a697-f095" primary="false" name="Paragon Model Type"/>
+        <categoryLink targetId="b980-187b-2b17-d635" id="7009-be9f-2b7d-37ee" primary="false" name="Unique Model Sub-Type"/>
+        <categoryLink targetId="4381-ed35-c3fa-a225" id="79bb-bb4f-2998-a8b9" primary="false" name="Loyalist"/>
+        <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="b3ba-213a-3ccd-b6a2" primary="false" name="Master of the Legion"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Marduk Sedras" hidden="false" id="34d0-7b32-5875-8d5a">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="225"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Unique Model Sub-Type" hidden="false" id="eda0-0406-4e9e-5c5d" targetId="b980-187b-2b17-d635" primary="false"/>
+        <categoryLink name="Command Model Sub-type" hidden="false" id="ffde-a0ef-dfc5-e571" targetId="9871-cb62-5283-2216" primary="false"/>
+        <categoryLink name="Heavy Model Sub-Type" hidden="false" id="f2e3-4d86-3386-ceb9" targetId="1e7d-9066-28d2-97a0" primary="false"/>
+        <categoryLink targetId="594d-fa82-13cb-a345" id="dfde-1b6c-aafd-d7b2" primary="false" name="Infantry Model Type"/>
+        <categoryLink targetId="4381-ed35-c3fa-a225" id="435a-be62-a02b-a397" primary="false" name="Loyalist"/>
+        <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="e838-637f-22b1-40cb" primary="false" name="Master of the Legion"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Phosphex bombs" hidden="false" id="00b1-d389-28be-b163" type="selectionEntry" targetId="5ad2-c3b4-f5eb-5b10">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="04ab-3d0d-dac5-1285" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93ad-2b70-eb37-8a38" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Plasma burner" hidden="false" id="5884-db2a-3d84-c50a" type="selectionEntry" targetId="e2ee-052e-163c-6e65">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7fbc-ceda-98fd-f6af" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8161-023f-734d-3315" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="c938-a09a-6aaa-a19a" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="The Death of Worlds" hidden="false" id="aaaa-0f3f-1b3e-75bb">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9b7d-3a60-b854-88f6" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0bcf-a337-8887-7498" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="The Death of Worlds" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="8c0b-1435-0d77-8f5d">
+              <characteristics>
+                <characteristic name="IM" typeId="6eec-4093-f946-1014">-2</characteristic>
+                <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+5</characteristic>
+                <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+                <characteristic name="D" typeId="6a9d-4feb-065a-33e7">3</characteristic>
+                <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">-</characteristic>
+                <characteristic name="Traits" typeId="76e3-c188-bc65-3467">None</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Marduk Sedras" hidden="false" id="8e82-13e7-cba4-a6a9">
+          <infoLinks>
+            <infoLink name="[Allegiance]" id="ef37-5d66-4776-513d" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+            <infoLink name="[Legiones Astartes]" id="311b-5ff0-cc0d-8b4b" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+            <infoLink name="Master of the Legion" id="7a90-d562-3135-d7be" hidden="false" type="profile" targetId="6cd2-96be-b703-6d57"/>
+            <infoLink name="Bulky (X)" id="e443-1f06-9162-6ae2" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+              <modifiers>
+                <modifier type="set" value="Bulky (2)" field="name"/>
+              </modifiers>
+              <comment>2</comment>
+            </infoLink>
+            <infoLink name="Heavy Unit Sub-type" id="8a49-43c2-2026-0ccc" hidden="false" type="rule" targetId="7d35-4d6f-c4fe-4aac"/>
+            <infoLink name="Implacable Advance" id="0c0f-e8e0-89dd-ed09" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
+            <infoLink name="Slow and Purposeful" id="be28-dbe5-9b77-dd6b" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e"/>
+            <infoLink name="The Angels of Death" id="6676-3944-6317-a19e" hidden="false" type="rule" targetId="7fd2-c16b-0e15-9de7"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Marduk Sedras" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="03cf-486a-0bef-4c02">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Unique, Command, Heavy)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">6</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">5</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">5</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">5</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">10</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">9</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">9</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">9</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Ancient of War" id="460d-7e6b-54d2-8bbe" hidden="false">
+              <description>While Marduk is part of a Unit that includes only Models with the Dark Angels Trait, all Models in that Unit gain the Hatred(Traitor) Special Rule.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c75c-266c-50ab-dad2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af9c-8f94-0dc0-31d6" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fc1e-552d-b522-df57" includeChildSelections="true"/>
+      </constraints>
+      <comment>High Command</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Augurs of Weakness" hidden="false" id="63d5-6f66-9496-4767">
+      <rules>
+        <rule name="Augurs of Weakness" id="e00e-9c6e-4ce1-f9f1" hidden="false">
+          <description>When making attacks targeting a Unit that includes one or more Models with the Vehicle Type, Models with the Order Exemplars Special rule gain the Armourbane Special Rule.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Armourbane" id="d8e0-6164-cbbf-6e29" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Breakers of Witches" hidden="false" id="8f60-8576-9399-9bc6">
+      <rules>
+        <rule name="Breakers of Witches" id="f4ff-52e1-410b-3547" hidden="false">
+          <description>Whilst part of a Unit that is Locked in Combat with an enemy Unit that has one or more Models with the Malefic Sub-Type or Psyker Trait, Hit and Wound Tests made for Models with the Order Exemplars Special Rule in that Combat are modified by +1.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hunters of Beasts" hidden="false" id="fdb2-bced-1de2-6c7d">
+      <rules>
+        <rule name="Hunters of Beasts" id="55be-6625-0ecd-520b" hidden="false">
+          <description>Whilst part of a Unit that is Locked in Combat with an enemy Unit that includes one or more Models with Toughness Characteristic of 6 or higher, the Damage Characteristic of Wounds caused by a Model with this Special Rule is modified by +1.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Icons of Resolve" hidden="false" id="c916-a632-7555-117f">
+      <rules>
+        <rule name="Icons of Resolve" id="fe5f-f0a0-d6b7-e222" hidden="false">
+          <description>When part of a Unit that is successfully Charged by an enemy Unit, Models with the Order Exemplars Special Rule set their Leadership Characteristic to 10 for the duration of the current Assault Phase.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Slayers of Kings" hidden="false" id="ca2f-3a1c-6e9e-59d2">
+      <rules>
+        <rule name="Slayers of Kings" id="5be0-45d7-94e1-0259" hidden="false">
+          <description>Whilst part of a Unit that is Locked in Combat with an enemy Unit that includes at least one Model with a Weapon Skill Characteristic of 6 or higher, the Attack Characteristic of Models with the Order Exemplars Special Rule may be set to 1. If this option is used then the Terranic greatswords those Models have gain the Critical Hit (6+) Special Rule until the Combat ends.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Critical Hit (X)" id="7e63-7b26-7506-4eb8" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
+          <modifiers>
+            <modifier type="set" value="Critical Hit (6+)" field="name"/>
+          </modifiers>
+          <comment>6+</comment>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reaper of Hosts" hidden="false" id="d5fe-6f66-458e-73b6">
+      <rules>
+        <rule name="Reaper of Hosts" id="8293-3d95-cf71-2b82" hidden="false">
+          <description>Whilst part of a Unit that is Locked in Combat with one or more enemy Units that outnumbers it, then all Models in that Unit with the Order Exemplars Special Rule modify their Attacks Characteristic by +1.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cytheron pattern aegis" hidden="false" id="e5a9-b2ba-1f96-478d">
+      <costs>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Cytheron pattern aegis" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="7fef-74ce-92f3-65bb" publicationId="b905-0414-1057-bb34">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c"/>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">A Model with a Cytheron pattern aegis has a 5+ Invulnerable Save and gains the Shield Trait. In addition, the Controlling Player of a Unit that includes any Models with a Cytheron pattern aegis may declare the Shieldwall! Advanced Reaction for that Unit. This is an exception to the normal Rules for the Shieldwall! Advanced Reaction.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Plasma burner" hidden="false" id="e2ee-052e-163c-6e65">
+      <profiles>
+        <profile name="Plasma burner (Sustained)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="5c21-b963-f546-c8b5">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">5</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Breaching (6+)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Plasma</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Plasma burner (Maximal)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="3645-1391-89db-af30">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Breaching (5+), Overload (1)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Plasma</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <infoLinks>
         <infoLink name="[Allegiance]" id="a9a3-fb77-cdf6-6e98" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="23fa-8638-3a29-fd50" hidden="false" type="profile" targetId="641c-ca0a-7093-4525">
@@ -1248,31 +1614,37 @@ The Lion&apos;s Choler: If this Gambit is selected, the Model for which this Gam
     <entryLink import="true" name="Corswain" hidden="false" id="7c9b-42e2-1c81-3e57" type="selectionEntry" targetId="1d4a-09de-2638-e9e0">
       <categoryLinks>
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="d8a0-2f2c-1900-223d" primary="true" name="High Command"/>
+        <categoryLink targetId="9776-4805-2e0b-1f0f" id="a887-6642-4173-270c" primary="false" name="Dark Angels"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Lion El&apos;Johnson" hidden="false" id="e463-3f44-a9ae-6386" type="selectionEntry" targetId="2516-2347-2ca5-af1d">
       <categoryLinks>
         <categoryLink targetId="22ee-7208-4089-b005" id="742a-b916-bad8-9196" primary="true" name="Warlord"/>
+        <categoryLink targetId="9776-4805-2e0b-1f0f" id="9d72-a0a3-65a3-55cd" primary="false" name="Dark Angels"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Marduk Sedras" hidden="false" id="3b39-6a5f-307d-2152" type="selectionEntry" targetId="34d0-7b32-5875-8d5a">
       <categoryLinks>
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="0264-ee51-0899-1480" primary="true" name="High Command"/>
+        <categoryLink targetId="9776-4805-2e0b-1f0f" id="9e7d-31e8-5961-7a69" primary="false" name="Dark Angels"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Deathwing Companion Detachment" hidden="false" id="9601-52bb-0c27-df5f" type="selectionEntry" targetId="1e9c-6b93-a335-43c4">
       <categoryLinks>
         <categoryLink targetId="a38e-50ff-310f-f19e" id="da42-abcd-9be6-27df" primary="true" name="Retinue"/>
+        <categoryLink targetId="9776-4805-2e0b-1f0f" id="12ce-ce5d-d8c4-1dbb" primary="false" name="Dark Angels"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Inner Circle Knights Cenobium" hidden="false" id="e377-3039-fed2-b525" type="selectionEntry" targetId="e033-118d-4b07-5cd1">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="abc4-6cd2-0e8c-b918" primary="true" name="Elites"/>
+        <categoryLink targetId="9776-4805-2e0b-1f0f" id="9166-1e9a-ea91-e46f" primary="false" name="Dark Angels"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Dreadwing Interemptor Squad" hidden="false" id="fbd4-c7ab-dfef-cc42" type="selectionEntry" targetId="d788-b46c-c9f2-0aa9">
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="4b0c-13d2-5917-1b1f" primary="true" name="Support"/>
+        <categoryLink targetId="9776-4805-2e0b-1f0f" id="dc91-6e50-a203-0d23" primary="false" name="Dark Angels"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set-primary" value="d52d-47c6-e17a-9e35" field="category">
