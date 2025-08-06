@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="16" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="17" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -416,6 +416,12 @@
                     <condition type="equalTo" value="1" field="selections" scope="unit" childId="302b-12a7-4445-89aa" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="6" field="253c-d694-4695-c89e">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="0514-f4bc-494f-5816" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>DA Paladin</comment>
+                </modifier>
               </modifiers>
             </profile>
           </profiles>
@@ -448,6 +454,13 @@
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c632-d3e7-c645-4df0" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="0514-f4bc-494f-5816" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
           <constraints>
@@ -481,6 +494,25 @@
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
                   </costs>
+                </entryLink>
+                <entryLink import="true" name="Terranic greatsword" hidden="true" id="7039-23c5-1f8c-621a" type="selectionEntry" targetId="800e-2f42-8c1f-f7c6">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15b5-833d-3da9-ffce" includeChildSelections="false"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c081-1595-53ca-7f48" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="0514-f4bc-494f-5816" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="1" field="c081-1595-53ca-7f48">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="0514-f4bc-494f-5816" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <comment>DA Paladin</comment>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -530,6 +562,13 @@
                   </entryLinks>
                 </selectionEntry>
               </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="0514-f4bc-494f-5816" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
             <selectionEntryGroup name="May exchange bolt pistol for:" id="603b-4824-ba0a-2aea" hidden="false" collapsible="true">
               <selectionEntries>
@@ -675,6 +714,15 @@
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
+        </entryLink>
+        <entryLink import="true" name="Orders of the Hekatonystika" hidden="true" id="ab50-fb5e-741a-b6c8" type="selectionEntryGroup" targetId="e496-aa6c-6f2a-f90b">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="0514-f4bc-494f-5816" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <infoLinks>
@@ -2393,6 +2441,7 @@
                 <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">14</characteristic>
                 <characteristic name="HP" typeId="8735-4497-1f8a-4dda">10</characteristic>
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">26</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">Front, Sides</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4674,6 +4723,7 @@
                 <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">10</characteristic>
                 <characteristic name="HP" typeId="8735-4497-1f8a-4dda">5</characteristic>
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">6</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">Sides, Rear</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5723,6 +5773,81 @@
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
+                </entryLink>
+                <entryLink import="true" name="Calibanite warblade" hidden="true" id="6090-5abe-360f-48ea" type="selectionEntry" targetId="cfba-5c0b-796b-0897">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9871-cb62-5283-2216" shared="true"/>
+                              </conditions>
+                              <comment>Command</comment>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                              </conditions>
+                              <comment>Champion</comment>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="8045-89a4-76d4-fcef" shared="true"/>
+                              </conditions>
+                              <comment>Sergeant</comment>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <comment>DA Sergeant, Command and Champion only</comment>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b791-d387-35d8-827e" includeChildSelections="false"/>
+                  </constraints>
+                  <comment>DA only</comment>
+                </entryLink>
+                <entryLink import="true" name="Terranic greatsword" hidden="true" id="e323-a325-5869-8a48" type="selectionEntry" targetId="800e-2f42-8c1f-f7c6">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9871-cb62-5283-2216" shared="true"/>
+                              </conditions>
+                              <comment>Command</comment>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                              </conditions>
+                              <comment>Champion</comment>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <comment>DA Command and Champion only</comment>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a67-0b2d-f503-5a0c" includeChildSelections="false"/>
+                  </constraints>
+                  <comment>DA only</comment>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -9383,6 +9508,7 @@
                 <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">10</characteristic>
                 <characteristic name="HP" typeId="8735-4497-1f8a-4dda">5</characteristic>
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">12</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">Both Sides</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9466,6 +9592,7 @@
                 <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">12</characteristic>
                 <characteristic name="HP" typeId="8735-4497-1f8a-4dda">4</characteristic>
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">10</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">All Facings</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9549,6 +9676,7 @@
                 <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">14</characteristic>
                 <characteristic name="HP" typeId="8735-4497-1f8a-4dda">8</characteristic>
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">12</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">Front, Sides</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9614,6 +9742,7 @@
                 <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">12</characteristic>
                 <characteristic name="HP" typeId="8735-4497-1f8a-4dda">5</characteristic>
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">7</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">All Facings</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9663,6 +9792,7 @@
                 <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">12</characteristic>
                 <characteristic name="HP" typeId="8735-4497-1f8a-4dda">8</characteristic>
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">22</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">All Facings</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9712,6 +9842,7 @@
                 <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">12</characteristic>
                 <characteristic name="HP" typeId="8735-4497-1f8a-4dda">5</characteristic>
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">12</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">All Facings</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10297,6 +10428,7 @@
                 <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">14</characteristic>
                 <characteristic name="HP" typeId="8735-4497-1f8a-4dda">8</characteristic>
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">6</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">Both Sides</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10696,6 +10828,7 @@
                 <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">12</characteristic>
                 <characteristic name="HP" typeId="8735-4497-1f8a-4dda">6</characteristic>
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">16</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">All Facings</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -12399,6 +12532,7 @@
                 <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">13</characteristic>
                 <characteristic name="HP" typeId="8735-4497-1f8a-4dda">18</characteristic>
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">32</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">All Facings</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -12479,6 +12613,7 @@
                 <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">14</characteristic>
                 <characteristic name="HP" typeId="8735-4497-1f8a-4dda">20</characteristic>
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">42</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">Front, Rear</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -12622,6 +12757,7 @@
                 <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">14</characteristic>
                 <characteristic name="HP" typeId="8735-4497-1f8a-4dda">22</characteristic>
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">52</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">All Facings</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13715,6 +13851,73 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
         </entryLink>
+        <entryLink import="true" name="Calibanite warblade" hidden="true" id="6eec-51d8-1fe1-0b8f" type="selectionEntry" targetId="cfba-5c0b-796b-0897" sortIndex="16">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9871-cb62-5283-2216" shared="true"/>
+                      </conditions>
+                      <comment>Command</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                      </conditions>
+                      <comment>Champion</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="8045-89a4-76d4-fcef" shared="true"/>
+                      </conditions>
+                      <comment>Sergeant</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>DA Sergeant, Command and Champion only</comment>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Terranic greatsword" hidden="true" id="f939-1f37-061b-2f6e" type="selectionEntry" targetId="800e-2f42-8c1f-f7c6" sortIndex="17">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9871-cb62-5283-2216" shared="true"/>
+                      </conditions>
+                      <comment>Command</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                      </conditions>
+                      <comment>Champion</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>DA Command and Champion only</comment>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Legion Equipment" id="0e69-ccf1-cde7-acaf" hidden="false" sortIndex="7" collapsible="true">
@@ -13814,6 +14017,81 @@
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Calibanite warblade" hidden="true" id="6090-5abe-360f-48ea" type="selectionEntry" targetId="cfba-5c0b-796b-0897">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9871-cb62-5283-2216" shared="true"/>
+                      </conditions>
+                      <comment>Command</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                      </conditions>
+                      <comment>Champion</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="8045-89a4-76d4-fcef" shared="true"/>
+                      </conditions>
+                      <comment>Sergeant</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>DA Sergeant, Command and Champion only</comment>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b791-d387-35d8-827e" includeChildSelections="false"/>
+          </constraints>
+          <comment>DA only</comment>
+        </entryLink>
+        <entryLink import="true" name="Terranic greatsword" hidden="true" id="e323-a325-5869-8a48" type="selectionEntry" targetId="800e-2f42-8c1f-f7c6">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9871-cb62-5283-2216" shared="true"/>
+                      </conditions>
+                      <comment>Command</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                      </conditions>
+                      <comment>Champion</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>DA Command and Champion only</comment>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a67-0b2d-f503-5a0c" includeChildSelections="false"/>
+          </constraints>
+          <comment>DA only</comment>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Legion Sergeant Melee Weapons" id="b8d7-8ff0-721e-a963" hidden="false" sortIndex="3" collapsible="true" defaultSelectionEntryId="9994-4d65-a0b5-bef0">
@@ -13844,6 +14122,73 @@
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
+        </entryLink>
+        <entryLink import="true" name="Calibanite warblade" hidden="true" id="8148-5c94-550d-16e6" type="selectionEntry" targetId="cfba-5c0b-796b-0897" sortIndex="8">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9871-cb62-5283-2216" shared="true"/>
+                      </conditions>
+                      <comment>Command</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                      </conditions>
+                      <comment>Champion</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="8045-89a4-76d4-fcef" shared="true"/>
+                      </conditions>
+                      <comment>Sergeant</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>DA Sergeant, Command and Champion only</comment>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Terranic greatsword" hidden="true" id="82ef-f981-8a8f-bc37" type="selectionEntry" targetId="800e-2f42-8c1f-f7c6" sortIndex="9">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true"/>
+                      </conditions>
+                      <comment>Command</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                      </conditions>
+                      <comment>Champion</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>DA Command and Champion only</comment>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -14136,7 +14481,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efa6-a5d5-5bb3-8292" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Not Yet Implemented: gain a trainsport or heavy transport and modify it&apos;s transport capacity by +2" hidden="false" id="26ee-caef-70fd-274b"/>
+            <selectionEntry type="upgrade" import="true" name="Not Yet Implemente2_gain a trainsport or heavy transport and modify it&apos;s transport capacity by +" hidden="false" id="26ee-caef-70fd-274b"/>
           </selectionEntries>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Wraiths" hidden="true" id="1e67-d4ea-b59b-b9ff">
@@ -14178,7 +14523,37 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Prime Benefits" id="a396-b846-c263-6767" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Legion Prime Benefits" hidden="false" id="305a-ba33-df73-b67d" type="selectionEntryGroup" targetId="d3a2-e7f2-9da7-fd3c" sortIndex="2" flatten="false"/>
+        <entryLink import="true" name="Legion Prime Benefits" hidden="false" id="305a-ba33-df73-b67d" type="selectionEntryGroup" targetId="d3a2-e7f2-9da7-fd3c" sortIndex="2" flatten="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Paladin of the Hekatonystika" hidden="true" id="0514-f4bc-494f-5816">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <comment>DA Centurion only</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="unit" childId="3392-e93d-79bc-d648" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0564-2a04-da41-2415" includeChildSelections="false"/>
+              </constraints>
+              <rules>
+                <rule name="Paladin of the Hekatonystika" id="371d-6ed5-551e-cbe6" hidden="false">
+                  <description>If a Centurion or Centurion wit the Jump Pack that has the Dark Angels Trait is selected to fill a Prime Force Organisation Slot, the following Prime Advantage can be selected:
+
+Paladin of the Hekatonystika
+This Prime Advantage can only be selected once per Army. One model in the Unit selected to fill a Prime Force Organisation Slot wit this Prime Advantage gains the following benefits:
+
+- Has its Base Weapon Skill Characteristic modified by +1.
+- Must have its bolter exchanged for a Terranic greatsword for Free.
+- Gains the Orders of the Hekatonystika Special Rule (see page 137).</description>
+                </rule>
+              </rules>
+              <comment>DA</comment>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
         <entryLink import="true" name="Common Prime Benefits" hidden="false" id="c115-438b-4395-1eb7" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" sortIndex="1" flatten="false"/>
       </entryLinks>
       <constraints>

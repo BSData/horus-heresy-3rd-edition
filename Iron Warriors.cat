@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="21c0-18db-03dd-ae07" name="                         IV - Iron Warriors" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="1" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="21c0-18db-03dd-ae07" name="                         IV - Iron Warriors" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="2" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="93f1-4e60-f6d6-bf11" importRootEntries="true" targetId="5334-5605-242c-d75e"/>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="e254-e9ad-1ae7-e52a" importRootEntries="true" targetId="9b32-f350-6aa9-9c09"/>
@@ -179,6 +179,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         <categoryLink targetId="b980-187b-2b17-d635" id="f6d5-6d4d-95b9-d574" primary="false" name="Unique Model Sub-Type"/>
         <categoryLink targetId="b7c9-7d2d-fb56-5486" id="5891-40c7-e5b2-3c51" primary="false" name="The Hammer of Olympia Unlock"/>
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="d3a5-7e83-41dc-2a27" primary="false" name="Master of the Legion"/>
+        <categoryLink targetId="d251-944b-3c3b-0579" id="abe6-2dde-c40f-0e4f" primary="false" name="Traitor"/>
       </categoryLinks>
       <profiles>
         <profile name="The Breaker" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="be3f-8d26-fcae-7561" page="151" publicationId="e54c-7040-0f35-d85d">
@@ -229,8 +230,7 @@ While a Model with this special rule is in a Challenge, its Controlling Player c
     <selectionEntry type="upgrade" import="true" name="Legion Tactica: IW" hidden="false" id="c4ef-5251-66c7-1059" publicationId="e54c-7040-0f35-d85d">
       <rules>
         <rule name="The Bitter End" id="cd26-01e1-0284-9fc9" hidden="false" publicationId="e54c-7040-0f35-d85d" page="148">
-          <description>If the Controlling Player is making a Leadership Check or Cool Check for a Unit that includes a majority of Models with this Special Rule, they may ignore negative modifiers applied by the Panic (X), Pinning (X), Stun (X) or Suppressive (X) Special Rules.
-</description>
+          <description>If the Controlling Player is making a Leadership Check or Cool Check for a Unit that includes a majority of Models with this Special Rule, they may ignore negative modifiers applied by the Panic (X), Pinning (X), Stun (X) or Suppressive (X) Special Rules.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -380,6 +380,7 @@ While a Model with this special rule is in a Challenge, its Controlling Player c
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7e8-26c2-e706-a45e"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="69e8-ddbf-ea18-8187" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tyrant Siege Terminator Squad" hidden="false" id="83b4-239a-806b-33e5" sortIndex="3">
@@ -743,6 +744,7 @@ Process.
     <entryLink import="true" name="Perturabo" hidden="false" id="06e0-8a81-4a75-4787" type="selectionEntry" targetId="2ff4-482b-a2b2-f853" sortIndex="1">
       <categoryLinks>
         <categoryLink targetId="22ee-7208-4089-b005" id="69c3-cff4-ac1b-8d54" primary="true" name="Warlord"/>
+        <categoryLink targetId="b5d8-c965-7970-673f" id="bf6f-f048-17d4-6681" primary="false" name="Iron Warriors"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -760,16 +762,19 @@ Process.
     <entryLink import="true" name="Warsmith" hidden="false" id="b201-c904-7a3d-efdc" type="selectionEntry" targetId="5e76-088c-91c5-2d4d" sortIndex="2">
       <categoryLinks>
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="d10c-750c-d061-b7d6" primary="true" name="High Command"/>
+        <categoryLink targetId="b5d8-c965-7970-673f" id="3ecb-9947-8273-6e64" primary="false" name="Iron Warriors"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Tyrant Siege Terminator Squad" hidden="false" id="8406-59c8-611c-2ff8" type="selectionEntry" targetId="83b4-239a-806b-33e5" sortIndex="3">
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="498c-288d-9d94-935f" primary="true" name="Heavy Assault"/>
+        <categoryLink targetId="b5d8-c965-7970-673f" id="fcc9-a2ab-cecb-ab05" primary="false" name="Iron Warriors"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Iron Circle Maniple" hidden="false" id="23e1-7c35-c3b7-ae24" type="selectionEntry" targetId="a0e7-1d1c-2d3e-d46d" sortIndex="4">
       <categoryLinks>
         <categoryLink targetId="a38e-50ff-310f-f19e" id="9c37-18c3-9583-bdf4" primary="true" name="Retinue"/>
+        <categoryLink targetId="b5d8-c965-7970-673f" id="d4e6-3f81-7f8f-c543" primary="false" name="Iron Warriors"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

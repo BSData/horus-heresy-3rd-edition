@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="ac06-fcec-b634-5bd9" name="                        XVI - Sons of Horus" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="3" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="ac06-fcec-b634-5bd9" name="                        XVI - Sons of Horus" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="4" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Horus Lupercal" hidden="false" id="c0a2-76a5-6a6f-82bc">
       <selectionEntries>
@@ -144,9 +144,10 @@ The Controlling Player of an Army that includes a Model with this Special Rule h
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="22ee-7208-4089-b005" id="8015-088e-b803-528a" primary="true" name="Warlord"/>
         <categoryLink targetId="7799-e1d6-762b-700b" id="2a7a-cdc2-df42-89cd" primary="false" name="Paragon Model Type"/>
         <categoryLink targetId="b980-187b-2b17-d635" id="0ca5-8b26-0260-ed09" primary="false" name="Unique Model Sub-Type"/>
+        <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="198b-55ba-f3bb-994d" primary="false" name="Master of the Legion"/>
+        <categoryLink targetId="d251-944b-3c3b-0579" id="9299-b9e5-3027-100b" primary="false" name="Traitor"/>
       </categoryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="530"/>
@@ -223,11 +224,12 @@ The Controlling Player of an Army that includes a Model with this Special Rule h
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="473c-0403-69a9-b1b8" primary="true" name="High Command"/>
         <categoryLink targetId="594d-fa82-13cb-a345" id="d6a8-a423-d15c-3d23" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="b980-187b-2b17-d635" id="21dc-331b-52e1-b501" primary="false" name="Unique Model Sub-Type"/>
         <categoryLink targetId="9871-cb62-5283-2216" id="3c00-2109-ef62-192c" primary="false" name="Command Model Sub-type"/>
         <categoryLink targetId="1e7d-9066-28d2-97a0" id="60da-1153-946d-3d08" primary="false" name="Heavy Model Sub-Type"/>
+        <categoryLink targetId="d251-944b-3c3b-0579" id="f87c-7a61-d980-0617" primary="false" name="Traitor"/>
+        <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="119e-b9f6-178b-21c4" primary="false" name="Master of the Legion"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="14be-cfa9-ce98-953b" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -261,6 +263,7 @@ The Controlling Player of an Army that includes a Model with this Special Rule h
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6b2-e573-bd63-4ce4"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="daa6-1684-5345-5c54" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
       </entryLinks>
       <rules>
         <rule name="Master of the Justaerin" id="d225-97fb-d027-0786" hidden="false">
@@ -333,10 +336,10 @@ If a Model with this Special Rule joins a Justaerin Terminator Squad Unit in Res
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="6dbf-654a-f06f-2d69" id="cbe3-b5a9-a485-c2a3" primary="true" name="Command"/>
         <categoryLink targetId="594d-fa82-13cb-a345" id="9a70-c0f2-cf5e-fb95" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="b980-187b-2b17-d635" id="b9fa-ab5d-caa5-07a5" primary="false" name="Unique Model Sub-Type"/>
         <categoryLink targetId="9871-cb62-5283-2216" id="347d-1ef4-ed1d-3a33" primary="false" name="Command Model Sub-type"/>
+        <categoryLink targetId="d251-944b-3c3b-0579" id="13a0-b86a-655d-0c90" primary="false" name="Traitor"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Frag grenades" hidden="false" id="33c8-56e5-70bc-b502" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="4">
@@ -464,10 +467,11 @@ If a Model with this Special Rule joins a Justaerin Terminator Squad Unit in Res
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="02d2-a8f8-7647-5a97" primary="true" name="High Command"/>
         <categoryLink targetId="594d-fa82-13cb-a345" id="c509-49d8-20dd-483f" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="b980-187b-2b17-d635" id="16e7-4c94-34d6-ee80" primary="false" name="Unique Model Sub-Type"/>
         <categoryLink targetId="9871-cb62-5283-2216" id="0db1-28a3-11a4-18c5" primary="false" name="Command Model Sub-type"/>
+        <categoryLink targetId="d251-944b-3c3b-0579" id="7c6d-9cfc-a6b2-0530" primary="false" name="Traitor"/>
+        <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="1847-66a9-6c01-88f3" primary="false" name="Master of the Legion"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Frag grenades" hidden="false" id="ec12-df4e-8edb-64af" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="5">
@@ -489,6 +493,7 @@ If a Model with this Special Rule joins a Justaerin Terminator Squad Unit in Res
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ba2-e85e-7e35-c668"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="f459-273a-86e4-b6ef" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="b9ff-f911-e1fc-cfc5" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -648,9 +653,10 @@ A Model with this Special Rule can join Units with the Malefic Sub-Type as if it
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="22ee-7208-4089-b005" id="d647-70cd-cf93-966b" primary="true" name="Warlord"/>
         <categoryLink targetId="7799-e1d6-762b-700b" id="df2d-efea-6a66-8dfa" primary="false" name="Paragon Model Type"/>
         <categoryLink targetId="b980-187b-2b17-d635" id="be25-38a7-b78d-bce5" primary="false" name="Unique Model Sub-Type"/>
+        <categoryLink targetId="d251-944b-3c3b-0579" id="661c-abf6-869b-96b1" primary="false" name="Traitor"/>
+        <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="3f27-7f65-d05e-8cb0" primary="false" name="Master of the Legion"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="6b46-217a-6a8a-5ce3" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2"/>
@@ -860,7 +866,6 @@ A Model with this Special Rule can join Units with the Malefic Sub-Type as if it
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="5d5e-958f-e388-50b5" id="2f4d-b0e7-ab84-5a87" primary="true" name="Elites"/>
         <categoryLink targetId="594d-fa82-13cb-a345" id="727e-8a42-ddad-19d4" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="1e7d-9066-28d2-97a0" id="3279-cce2-8176-924d" primary="false" name="Heavy Model Sub-Type"/>
       </categoryLinks>
@@ -946,10 +951,12 @@ A Model with this Special Rule can join Units with the Malefic Sub-Type as if it
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="6d48-4c17-0a15-6f51" primary="true" name="High Command"/>
         <categoryLink targetId="594d-fa82-13cb-a345" id="46c9-1575-a9f7-360c" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="b980-187b-2b17-d635" id="f874-7edb-6b6a-e57f" primary="false" name="Unique Model Sub-Type"/>
         <categoryLink targetId="9871-cb62-5283-2216" id="0acd-0d7a-7092-6989" primary="false" name="Command Model Sub-type"/>
+        <categoryLink targetId="d251-944b-3c3b-0579" id="e608-15cf-1622-6255" primary="false" name="Traitor"/>
+        <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="50cc-1435-027e-bdc9" primary="false" name="Master of the Legion"/>
+        <categoryLink targetId="26c6-e05c-0f72-7852" id="1cd0-ab9d-fa5a-af56" primary="false" name="Shield"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="418d-7fcf-8f75-b96e" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="6"/>
@@ -977,6 +984,7 @@ A Model with this Special Rule can join Units with the Malefic Sub-Type as if it
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2da2-8083-4bb0-0529"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="aba6-05bc-a00b-28c7" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="ae25-efc1-18ce-78e6" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -1041,10 +1049,11 @@ The Controlling Player of a Model with this Special Rule gains 2 Victory Points 
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="4e8f-159f-eeb2-5587" primary="true" name="High Command"/>
         <categoryLink targetId="594d-fa82-13cb-a345" id="e94b-325f-14d2-549a" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="b980-187b-2b17-d635" id="cf38-6cd2-7301-49a9" primary="false" name="Unique Model Sub-Type"/>
         <categoryLink targetId="9871-cb62-5283-2216" id="5c31-01ec-950b-a4df" primary="false" name="Command Model Sub-type"/>
+        <categoryLink targetId="4381-ed35-c3fa-a225" id="4d8b-b0dd-3563-66f1" primary="false" name="Loyalist"/>
+        <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="e679-2f1d-54c9-d9f2" primary="false" name="Master of the Legion"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Bolt pistol" hidden="false" id="7540-a159-265a-7d42" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="3">
@@ -1072,6 +1081,7 @@ The Controlling Player of a Model with this Special Rule gains 2 Victory Points 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc38-2020-97ad-4404"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="e7d4-3ce0-0fbb-5acc" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="8611-02e2-7a3d-c88f" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -1171,10 +1181,11 @@ If the Wounds Characteristic of a Model with this Special Rule is reduced to 0 o
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="ebe7-f9fd-141e-bfe1" primary="true" name="High Command"/>
         <categoryLink targetId="594d-fa82-13cb-a345" id="78df-6b64-5a26-34a9" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="b980-187b-2b17-d635" id="a6b2-008b-1f31-35f2" primary="false" name="Unique Model Sub-Type"/>
         <categoryLink targetId="9871-cb62-5283-2216" id="8286-88a9-352e-ed8f" primary="false" name="Command Model Sub-type"/>
+        <categoryLink targetId="d251-944b-3c3b-0579" id="a40c-7bef-d30f-cd17" primary="false" name="Traitor"/>
+        <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="3ebd-3a80-da43-0fea" primary="false" name="Master of the Legion"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Banestrike bolter" hidden="false" id="2135-86af-8945-6bc7" type="selectionEntry" targetId="e031-bf89-67b6-744a" sortIndex="3">
@@ -1202,6 +1213,7 @@ If the Wounds Characteristic of a Model with this Special Rule is reduced to 0 o
           </constraints>
         </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="4261-7ccb-7dc1-0344" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="7"/>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="c77a-815c-4b65-b846" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="3de9-d582-58fe-5939" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -1392,7 +1404,6 @@ If the Wounds Characteristic of a Model with this Special Rule is reduced to 0 o
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="3235-bd79-e9b1-60fa" id="a156-c4fa-034d-ea8a" primary="true" name="Heavy Assault"/>
         <categoryLink targetId="594d-fa82-13cb-a345" id="c074-abb7-8379-4f96" primary="false" name="Infantry Model Type"/>
       </categoryLinks>
       <entryLinks>
@@ -1481,10 +1492,10 @@ If the Wounds Characteristic of a Model with this Special Rule is reduced to 0 o
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="6dbf-654a-f06f-2d69" id="f6a8-a847-c3e5-fbc9" primary="true" name="Command"/>
         <categoryLink targetId="594d-fa82-13cb-a345" id="c7b0-fc83-1ab6-7e0f" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="b980-187b-2b17-d635" id="dbd7-47bc-8b35-47d0" primary="false" name="Unique Model Sub-Type"/>
         <categoryLink targetId="9871-cb62-5283-2216" id="9391-ca3c-4d8c-7b10" primary="false" name="Command Model Sub-type"/>
+        <categoryLink targetId="d251-944b-3c3b-0579" id="6731-ad62-cb39-b57e" primary="false" name="Traitor"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Banestrike bolter" hidden="false" id="847a-b45a-6019-b584" type="selectionEntry" targetId="e031-bf89-67b6-744a" sortIndex="3">
@@ -1743,16 +1754,71 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <entryLinks>
-    <entryLink import="true" name="Reaver Attack Squad" hidden="false" id="e1d7-8ba7-ade1-fc04" type="selectionEntry" targetId="8010-21cf-b606-b491"/>
-    <entryLink import="true" name="Justaerin Terminator Squad" hidden="false" id="b39e-86ad-438b-2875" type="selectionEntry" targetId="3866-f18c-3b7c-3a7e"/>
-    <entryLink import="true" name="&apos;Little&apos; Horus Aximand " hidden="false" id="3fae-2625-dafe-c987" type="selectionEntry" targetId="f9ac-f2fc-fbb3-cc37"/>
-    <entryLink import="true" name="Garviel Loken" hidden="false" id="6986-13bd-e529-305e" type="selectionEntry" targetId="ed21-80f8-e842-c972"/>
-    <entryLink import="true" name="Maloghurst the Twisted" hidden="false" id="2a53-ef08-5077-60df" type="selectionEntry" targetId="cdbb-e9d2-1c14-4a15"/>
-    <entryLink import="true" name="Tybalt Marr" hidden="false" id="34f6-b392-fd1e-e99b" type="selectionEntry" targetId="df11-d2e3-cfd8-a189"/>
-    <entryLink import="true" name="Ezekyle Abbadon" hidden="false" id="a14b-f575-14ae-c66d" type="selectionEntry" targetId="aa7d-73fa-eaac-d951"/>
-    <entryLink import="true" name="Vheren Ashurhaddon" hidden="false" id="0ea6-7c14-563b-f3b3" type="selectionEntry" targetId="6b99-8ee6-accb-c1e3"/>
-    <entryLink import="true" name="Dark Emmissary" hidden="false" id="0517-aa86-94c6-43b6" type="selectionEntry" targetId="ac51-dccb-d5ff-3d20"/>
-    <entryLink import="true" name="Horus Lupercal" hidden="false" id="4572-993b-6949-aa65" type="selectionEntry" targetId="c0a2-76a5-6a6f-82bc"/>
-    <entryLink import="true" name="Horus Ascended" hidden="false" id="0ffe-e209-c9f2-8791" type="selectionEntry" targetId="79f3-7312-bae4-da6c"/>
+    <entryLink import="true" name="Reaver Attack Squad" hidden="false" id="e1d7-8ba7-ade1-fc04" type="selectionEntry" targetId="8010-21cf-b606-b491">
+      <categoryLinks>
+        <categoryLink targetId="3b0c-6e3a-f5cd-02cd" id="2126-896e-69a0-83dc" primary="false" name="Sons of Horus"/>
+        <categoryLink targetId="3235-bd79-e9b1-60fa" id="502a-7fb9-f86f-dcd5" primary="true" name="Heavy Assault"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Justaerin Terminator Squad" hidden="false" id="b39e-86ad-438b-2875" type="selectionEntry" targetId="3866-f18c-3b7c-3a7e">
+      <categoryLinks>
+        <categoryLink targetId="3b0c-6e3a-f5cd-02cd" id="fa52-c149-f62d-4fd3" primary="false" name="Sons of Horus"/>
+        <categoryLink targetId="5d5e-958f-e388-50b5" id="f25a-cc76-6b69-1420" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="&apos;Little&apos; Horus Aximand " hidden="false" id="3fae-2625-dafe-c987" type="selectionEntry" targetId="f9ac-f2fc-fbb3-cc37">
+      <categoryLinks>
+        <categoryLink targetId="3b0c-6e3a-f5cd-02cd" id="ddb7-af06-cd00-2241" primary="false" name="Sons of Horus"/>
+        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="dc04-174e-fc7c-1dc9" primary="true" name="High Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Garviel Loken" hidden="false" id="6986-13bd-e529-305e" type="selectionEntry" targetId="ed21-80f8-e842-c972">
+      <categoryLinks>
+        <categoryLink targetId="3b0c-6e3a-f5cd-02cd" id="cbd7-0989-19cf-890b" primary="false" name="Sons of Horus"/>
+        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="8f9f-8c1e-f8be-ae83" primary="true" name="High Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Maloghurst the Twisted" hidden="false" id="2a53-ef08-5077-60df" type="selectionEntry" targetId="cdbb-e9d2-1c14-4a15">
+      <categoryLinks>
+        <categoryLink targetId="3b0c-6e3a-f5cd-02cd" id="2531-922d-0812-737a" primary="false" name="Sons of Horus"/>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="7a7e-7d88-c7e5-8a04" primary="true" name="Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Tybalt Marr" hidden="false" id="34f6-b392-fd1e-e99b" type="selectionEntry" targetId="df11-d2e3-cfd8-a189">
+      <categoryLinks>
+        <categoryLink targetId="3b0c-6e3a-f5cd-02cd" id="92ee-0bb6-6278-562f" primary="false" name="Sons of Horus"/>
+        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="fe19-9aba-b0e6-3c33" primary="true" name="High Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Ezekyle Abbadon" hidden="false" id="a14b-f575-14ae-c66d" type="selectionEntry" targetId="aa7d-73fa-eaac-d951">
+      <categoryLinks>
+        <categoryLink targetId="3b0c-6e3a-f5cd-02cd" id="d15b-0a85-7f76-e1b4" primary="false" name="Sons of Horus"/>
+        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="a074-8d4b-fc76-9d31" primary="true" name="High Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Vheren Ashurhaddon" hidden="false" id="0ea6-7c14-563b-f3b3" type="selectionEntry" targetId="6b99-8ee6-accb-c1e3">
+      <categoryLinks>
+        <categoryLink targetId="3b0c-6e3a-f5cd-02cd" id="2dc4-ee58-c3cf-6cff" primary="false" name="Sons of Horus"/>
+        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="1240-9cdb-4ead-7897" primary="true" name="High Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Dark Emmissary" hidden="false" id="0517-aa86-94c6-43b6" type="selectionEntry" targetId="ac51-dccb-d5ff-3d20">
+      <categoryLinks>
+        <categoryLink targetId="3b0c-6e3a-f5cd-02cd" id="646a-aad8-718d-f7e5" primary="false" name="Sons of Horus"/>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="678b-1f1e-1747-aafb" primary="true" name="Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Horus Lupercal" hidden="false" id="4572-993b-6949-aa65" type="selectionEntry" targetId="c0a2-76a5-6a6f-82bc">
+      <categoryLinks>
+        <categoryLink targetId="3b0c-6e3a-f5cd-02cd" id="aca8-6fbc-7868-6868" primary="false" name="Sons of Horus"/>
+        <categoryLink targetId="22ee-7208-4089-b005" id="4339-265e-3409-c575" primary="true" name="Warlord"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Horus Ascended" hidden="false" id="0ffe-e209-c9f2-8791" type="selectionEntry" targetId="79f3-7312-bae4-da6c">
+      <categoryLinks>
+        <categoryLink targetId="3b0c-6e3a-f5cd-02cd" id="1101-87f7-dc67-0533" primary="false" name="Sons of Horus"/>
+        <categoryLink targetId="22ee-7208-4089-b005" id="a973-6798-77aa-e9a3" primary="true" name="Warlord"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
 </catalogue>
