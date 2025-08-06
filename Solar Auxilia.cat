@@ -125,11 +125,20 @@
               <selectionEntryGroups>
                 <selectionEntryGroup name="Melee" id="5f07-3fd6-15a9-0a23" hidden="false" defaultSelectionEntryId="e956-c79f-7cf8-5d6c">
                   <entryLinks>
-                    <entryLink import="true" name="Charnabal sabre" hidden="false" id="e956-c79f-7cf8-5d6c" type="selectionEntry" targetId="e85f-734a-c587-e88b"/>
-                    <entryLink import="true" name="Auxilia Melee Weapons" hidden="false" id="3e0c-0dbd-9058-279a" type="selectionEntryGroup" targetId="012b-9848-784b-3663"/>
+                    <entryLink import="true" name="Charnabal sabre" hidden="false" id="e956-c79f-7cf8-5d6c" type="selectionEntry" targetId="e85f-734a-c587-e88b" sortIndex="1"/>
+                    <entryLink import="true" name="Power sword" hidden="false" id="c389-8630-7709-c37f" type="selectionEntry" targetId="59a9-57c1-fff9-ca75" sortIndex="2">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Power fist" hidden="false" id="2b20-932f-7f91-60f7" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="3">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5278-54a6-326f-f870"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fbc-b880-bc9f-0ae0"/>
                   </constraints>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Pistol" id="3a00-4da4-2c85-f94f" hidden="false" defaultSelectionEntryId="8ab7-17c8-9e82-1a94">
@@ -138,48 +147,48 @@
                     <entryLink import="true" name="Auxilia Pistols" hidden="false" id="ab8e-613f-43fc-190b" type="selectionEntryGroup" targetId="22a3-5b09-13b0-2624"/>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6677-a6a6-7c01-e331"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad49-8d56-6532-9d7f"/>
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink import="true" name="Lasrifle" hidden="false" id="a3c7-4575-dbb9-3bd5" type="selectionEntry" targetId="40e8-fcb7-9e0e-1582" sortIndex="1">
+                <entryLink import="true" name="Lasrifle" hidden="false" id="a3c7-4575-dbb9-3bd5" type="selectionEntry" targetId="40e8-fcb7-9e0e-1582" sortIndex="1" defaultAmount="1">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d597-9a45-5dd7-3f42"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab4e-e9b1-1314-7607"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="set" value="0" field="d597-9a45-5dd7-3f42">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="a77a-561c-ad71-d586" childId="5f07-3fd6-15a9-0a23" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="a77a-561c-ad71-d586" childId="3a00-4da4-2c85-f94f" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Lasrifle w/ Bayonet" hidden="false" id="4569-77d1-88ae-057c" type="selectionEntry" targetId="b6df-71e1-3e57-1b94" sortIndex="2"/>
-                <entryLink import="true" name="Lasrifle w/ Blast-charger" hidden="false" id="66e8-0a78-49a3-7f0c" type="selectionEntry" targetId="e45f-08ba-dbc1-2867" sortIndex="3"/>
-                <entryLink import="true" name="Lasrifle w/ Bayonet &amp; Blast-charger" hidden="false" id="0ccf-ec0f-9263-61c8" type="selectionEntry" targetId="b23d-b264-90cc-b6a7" sortIndex="4"/>
+                <entryLink import="true" name="Lasrifle w/ Bayonet" hidden="false" id="4569-77d1-88ae-057c" type="selectionEntry" targetId="b6df-71e1-3e57-1b94" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="927a-d1a0-1815-b5bd"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Lasrifle w/ Blast-charger" hidden="false" id="66e8-0a78-49a3-7f0c" type="selectionEntry" targetId="e45f-08ba-dbc1-2867" sortIndex="3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad50-3135-8749-41bc"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Lasrifle w/ Bayonet &amp; Blast-charger" hidden="false" id="0ccf-ec0f-9263-61c8" type="selectionEntry" targetId="b23d-b264-90cc-b6a7" sortIndex="4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c54-7b98-dc27-cc3d"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a663-4ca8-62fb-6030"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1589-46ae-20b6-924c"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1589-46ae-20b6-924c"/>
               </constraints>
               <modifiers>
-                <modifier type="increment" value="1" field="a663-4ca8-62fb-6030">
+                <modifier type="set" value="1" field="1589-46ae-20b6-924c">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="a77a-561c-ad71-d586" childId="5f07-3fd6-15a9-0a23" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="a77a-561c-ad71-d586" childId="3a00-4da4-2c85-f94f" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="40e8-fcb7-9e0e-1582" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="4569-77d1-88ae-057c" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="e45f-08ba-dbc1-2867" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="b23d-b264-90cc-b6a7" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
-                <modifier type="increment" value="1" field="1589-46ae-20b6-924c"/>
               </modifiers>
             </selectionEntryGroup>
             <selectionEntryGroup name="Options" id="701b-a0b2-c43d-157f" hidden="false">
@@ -416,67 +425,6 @@
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May exchange Lasrifle for:" id="3659-276d-8c9b-699a" hidden="false" defaultSelectionEntryId="41e5-e2f8-5232-72e9">
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Melee" id="775b-81bc-5dbd-e119" hidden="false" defaultSelectionEntryId="f295-763c-c4c7-9557">
-                  <entryLinks>
-                    <entryLink import="true" name="Charnabal sabre" hidden="false" id="f295-763c-c4c7-9557" type="selectionEntry" targetId="e85f-734a-c587-e88b"/>
-                    <entryLink import="true" name="Auxilia Melee Weapons" hidden="false" id="f33f-1cd7-9100-f702" type="selectionEntryGroup" targetId="012b-9848-784b-3663"/>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf45-bdf0-39d3-93ef"/>
-                  </constraints>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Pistol" id="e60f-3afc-fad6-8383" hidden="false" defaultSelectionEntryId="74da-4cc5-3e67-b4bd">
-                  <entryLinks>
-                    <entryLink import="true" name="Laspistol" hidden="false" id="74da-4cc5-3e67-b4bd" type="selectionEntry" targetId="70e6-52c9-86b9-604c"/>
-                    <entryLink import="true" name="Auxilia Pistols" hidden="false" id="0074-5b6c-373a-ca4d" type="selectionEntryGroup" targetId="22a3-5b09-13b0-2624"/>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b06f-ed71-f1ad-2b67"/>
-                  </constraints>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink import="true" name="Lasrifle" hidden="false" id="41e5-e2f8-5232-72e9" type="selectionEntry" targetId="40e8-fcb7-9e0e-1582" sortIndex="1">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f90-3fd2-3a3a-5990"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="0" field="2f90-3fd2-3a3a-5990">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="db89-66b5-a0dd-5e0b" childId="775b-81bc-5dbd-e119" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="db89-66b5-a0dd-5e0b" childId="e60f-3afc-fad6-8383" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink import="true" name="Lasrifle w/ Bayonet" hidden="false" id="9f40-9819-b539-2932" type="selectionEntry" targetId="b6df-71e1-3e57-1b94" sortIndex="2"/>
-                <entryLink import="true" name="Lasrifle w/ Blast-charger" hidden="false" id="c78f-0677-f7e3-bea6" type="selectionEntry" targetId="e45f-08ba-dbc1-2867" sortIndex="3"/>
-                <entryLink import="true" name="Lasrifle w/ Bayonet &amp; Blast-charger" hidden="false" id="0a6d-6987-2434-b6b9" type="selectionEntry" targetId="b23d-b264-90cc-b6a7" sortIndex="4"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8529-ca57-ebec-7b58"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6757-b0c1-2737-a9e7"/>
-              </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="8529-ca57-ebec-7b58">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="db89-66b5-a0dd-5e0b" childId="775b-81bc-5dbd-e119" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="db89-66b5-a0dd-5e0b" childId="e60f-3afc-fad6-8383" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="increment" value="1" field="6757-b0c1-2737-a9e7"/>
-              </modifiers>
-            </selectionEntryGroup>
             <selectionEntryGroup name="Options" id="b6a3-096c-7799-1192" hidden="false">
               <entryLinks>
                 <entryLink import="true" name="Augury scanner" hidden="false" id="9fa8-8d79-0118-0651" type="selectionEntry" targetId="fede-99f5-4c76-4659">
@@ -521,6 +469,76 @@
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="May exchange Lasrifle for:" id="d724-9a4b-6a53-a2c3" hidden="false" defaultSelectionEntryId="a4fe-b84e-dab9-8c6b">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Melee" id="2005-9da4-a44c-eaf5" hidden="false" defaultSelectionEntryId="e956-c79f-7cf8-5d6c">
+                  <entryLinks>
+                    <entryLink import="true" name="Charnabal sabre" hidden="false" id="b055-474e-e204-c660" type="selectionEntry" targetId="e85f-734a-c587-e88b" sortIndex="1"/>
+                    <entryLink import="true" name="Power sword" hidden="false" id="f207-4925-2389-c264" type="selectionEntry" targetId="59a9-57c1-fff9-ca75" sortIndex="2">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Power fist" hidden="false" id="dcdb-0063-d328-9b77" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="3">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a824-729e-637d-8a92"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Pistol" id="5631-f598-0bc3-3bd4" hidden="false" defaultSelectionEntryId="8ab7-17c8-9e82-1a94">
+                  <entryLinks>
+                    <entryLink import="true" name="Laspistol" hidden="false" id="fe5e-578b-ec0a-7d94" type="selectionEntry" targetId="70e6-52c9-86b9-604c"/>
+                    <entryLink import="true" name="Auxilia Pistols" hidden="false" id="929f-8d9a-835b-61d2" type="selectionEntryGroup" targetId="22a3-5b09-13b0-2624"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3d7-8375-a16e-02cb"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Lasrifle" hidden="false" id="a4fe-b84e-dab9-8c6b" type="selectionEntry" targetId="40e8-fcb7-9e0e-1582" sortIndex="1" defaultAmount="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45e9-475a-6119-6931"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Lasrifle w/ Bayonet" hidden="false" id="016b-b14b-b68b-cc89" type="selectionEntry" targetId="b6df-71e1-3e57-1b94" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8374-da42-f6db-b720"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Lasrifle w/ Blast-charger" hidden="false" id="8a85-df7e-9321-2a29" type="selectionEntry" targetId="e45f-08ba-dbc1-2867" sortIndex="3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e157-dff2-abda-6c56"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Lasrifle w/ Bayonet &amp; Blast-charger" hidden="false" id="5a93-e5e1-cc9b-a106" type="selectionEntry" targetId="b23d-b264-90cc-b6a7" sortIndex="4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="482f-1a36-3c1a-d065"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="644b-7076-3b45-3cbd"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="644b-7076-3b45-3cbd">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="40e8-fcb7-9e0e-1582" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="016b-b14b-b68b-cc89" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="e45f-08ba-dbc1-2867" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="b23d-b264-90cc-b6a7" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
@@ -630,70 +648,74 @@
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May exchange Lasrifle for:" id="a02e-645e-0594-37b5" hidden="false" defaultSelectionEntryId="e854-b41f-ea8a-9a24">
+            <selectionEntryGroup name="May exchange Lasrifle for:" id="a50b-fbe6-fe86-850e" hidden="false" defaultSelectionEntryId="c58f-3003-115a-6632">
               <selectionEntryGroups>
-                <selectionEntryGroup name="Melee" id="9bfb-6943-a97f-fd1e" hidden="false" defaultSelectionEntryId="5533-973d-c9a1-f40b">
+                <selectionEntryGroup name="Melee" id="a046-7c57-6f77-6b8b" hidden="false" defaultSelectionEntryId="e956-c79f-7cf8-5d6c">
                   <entryLinks>
-                    <entryLink import="true" name="Charnabal sabre" hidden="false" id="5533-973d-c9a1-f40b" type="selectionEntry" targetId="e85f-734a-c587-e88b"/>
-                    <entryLink import="true" name="Auxilia Melee Weapons" hidden="false" id="ec60-91b5-08b2-c137" type="selectionEntryGroup" targetId="012b-9848-784b-3663"/>
-                    <entryLink import="true" name="Thunder hammer" hidden="false" id="39ec-f8cd-29d5-7b2d" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d">
-                      <modifiers>
-                        <modifier type="set" value="10" field="9893-c379-920b-8982"/>
-                      </modifiers>
+                    <entryLink import="true" name="Charnabal sabre" hidden="false" id="70f7-e911-6580-a5f1" type="selectionEntry" targetId="e85f-734a-c587-e88b" sortIndex="1"/>
+                    <entryLink import="true" name="Power sword" hidden="false" id="8434-8593-fe90-9fc7" type="selectionEntry" targetId="59a9-57c1-fff9-ca75" sortIndex="2">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Power fist" hidden="false" id="0498-e174-b867-d6df" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="3">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2212-f3c6-7519-53fc"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b95f-1440-52ac-18b7"/>
                   </constraints>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Pistol" id="a0e2-8730-5106-fbbd" hidden="false" defaultSelectionEntryId="15df-099b-511c-8a89">
+                <selectionEntryGroup name="Pistol" id="56bb-892f-0c3c-4518" hidden="false" defaultSelectionEntryId="8ab7-17c8-9e82-1a94">
                   <entryLinks>
-                    <entryLink import="true" name="Laspistol" hidden="false" id="15df-099b-511c-8a89" type="selectionEntry" targetId="70e6-52c9-86b9-604c"/>
-                    <entryLink import="true" name="Auxilia Pistols" hidden="false" id="e15b-0f3c-a22d-2abb" type="selectionEntryGroup" targetId="22a3-5b09-13b0-2624"/>
+                    <entryLink import="true" name="Laspistol" hidden="false" id="726f-6f41-406a-3025" type="selectionEntry" targetId="70e6-52c9-86b9-604c"/>
+                    <entryLink import="true" name="Auxilia Pistols" hidden="false" id="a081-8e77-8ee8-b13f" type="selectionEntryGroup" targetId="22a3-5b09-13b0-2624"/>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3141-d5ac-f2aa-7be7"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23a0-2814-2f52-98d7"/>
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink import="true" name="Lasrifle" hidden="false" id="e854-b41f-ea8a-9a24" type="selectionEntry" targetId="40e8-fcb7-9e0e-1582" sortIndex="1">
+                <entryLink import="true" name="Lasrifle" hidden="false" id="c58f-3003-115a-6632" type="selectionEntry" targetId="40e8-fcb7-9e0e-1582" sortIndex="1" defaultAmount="1">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6aaa-936a-10ad-18ff"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c09-e2aa-9381-210d"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="set" value="0" field="6aaa-936a-10ad-18ff">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="3b35-940c-5f39-b55b" childId="9bfb-6943-a97f-fd1e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="3b35-940c-5f39-b55b" childId="a0e2-8730-5106-fbbd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Lasrifle w/ Bayonet" hidden="false" id="3df5-3802-ec49-0660" type="selectionEntry" targetId="b6df-71e1-3e57-1b94" sortIndex="2"/>
-                <entryLink import="true" name="Lasrifle w/ Blast-charger" hidden="false" id="95db-a52f-530f-5505" type="selectionEntry" targetId="e45f-08ba-dbc1-2867" sortIndex="3"/>
-                <entryLink import="true" name="Lasrifle w/ Bayonet &amp; Blast-charger" hidden="false" id="eae6-4d68-0666-be17" type="selectionEntry" targetId="b23d-b264-90cc-b6a7" sortIndex="4"/>
+                <entryLink import="true" name="Lasrifle w/ Bayonet" hidden="false" id="1cad-25cf-b27d-884e" type="selectionEntry" targetId="b6df-71e1-3e57-1b94" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fd9-c72a-ffcd-1c5a"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Lasrifle w/ Blast-charger" hidden="false" id="1059-2a21-a720-9cdb" type="selectionEntry" targetId="e45f-08ba-dbc1-2867" sortIndex="3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d590-251c-10e4-956c"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Lasrifle w/ Bayonet &amp; Blast-charger" hidden="false" id="9441-02f5-cfaf-6888" type="selectionEntry" targetId="b23d-b264-90cc-b6a7" sortIndex="4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b2e-d4e1-4292-3fa7"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="126d-95b3-8c86-932d"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5a9-26d5-496b-3d4a"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e013-8f2d-ad7c-bcb5"/>
               </constraints>
               <modifiers>
-                <modifier type="increment" value="1" field="126d-95b3-8c86-932d">
+                <modifier type="set" value="1" field="e013-8f2d-ad7c-bcb5">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="3b35-940c-5f39-b55b" childId="9bfb-6943-a97f-fd1e" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="3b35-940c-5f39-b55b" childId="a0e2-8730-5106-fbbd" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="40e8-fcb7-9e0e-1582" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="1cad-25cf-b27d-884e" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="e45f-08ba-dbc1-2867" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="b23d-b264-90cc-b6a7" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
-                <modifier type="increment" value="1" field="d5a9-26d5-496b-3d4a"/>
               </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -772,65 +794,74 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="May exchange Lasrifle for:" id="1c6f-f705-04c1-bede" hidden="false" defaultSelectionEntryId="1672-4f06-2513-24d9">
+            <selectionEntryGroup name="May exchange Lasrifle for:" id="35a2-9d9e-143e-d730" hidden="false" defaultSelectionEntryId="a3c7-4575-dbb9-3bd5">
               <selectionEntryGroups>
-                <selectionEntryGroup name="Melee" id="9735-8d34-c203-3c49" hidden="false" defaultSelectionEntryId="f295-763c-c4c7-9557">
+                <selectionEntryGroup name="Melee" id="0102-1104-b122-88ec" hidden="false" defaultSelectionEntryId="e956-c79f-7cf8-5d6c">
                   <entryLinks>
-                    <entryLink import="true" name="Charnabal sabre" hidden="false" id="e5c9-0d84-3f07-cfe0" type="selectionEntry" targetId="e85f-734a-c587-e88b"/>
-                    <entryLink import="true" name="Auxilia Melee Weapons" hidden="false" id="5f57-bfd9-42f2-0712" type="selectionEntryGroup" targetId="012b-9848-784b-3663"/>
+                    <entryLink import="true" name="Charnabal sabre" hidden="false" id="ea6a-3c18-edb0-0768" type="selectionEntry" targetId="e85f-734a-c587-e88b" sortIndex="1"/>
+                    <entryLink import="true" name="Power sword" hidden="false" id="b2bb-8d8b-b204-8819" type="selectionEntry" targetId="59a9-57c1-fff9-ca75" sortIndex="2">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Power fist" hidden="false" id="deaf-7f30-147f-cab9" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="3">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90f1-ee47-bc3e-f35c"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7f3-c260-899d-be0a"/>
                   </constraints>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Pistol" id="1076-25dc-26c4-4d9e" hidden="false" defaultSelectionEntryId="74da-4cc5-3e67-b4bd">
+                <selectionEntryGroup name="Pistol" id="0555-6e1c-3f5d-78fc" hidden="false" defaultSelectionEntryId="8ab7-17c8-9e82-1a94">
                   <entryLinks>
-                    <entryLink import="true" name="Laspistol" hidden="false" id="4049-20dc-999a-a5b5" type="selectionEntry" targetId="70e6-52c9-86b9-604c"/>
-                    <entryLink import="true" name="Auxilia Pistols" hidden="false" id="451c-1b6a-97b2-8720" type="selectionEntryGroup" targetId="22a3-5b09-13b0-2624"/>
+                    <entryLink import="true" name="Laspistol" hidden="false" id="e761-2510-63fd-a668" type="selectionEntry" targetId="70e6-52c9-86b9-604c"/>
+                    <entryLink import="true" name="Auxilia Pistols" hidden="false" id="363b-0cd7-032b-8328" type="selectionEntryGroup" targetId="22a3-5b09-13b0-2624"/>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c55c-fc61-2642-2660"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1967-0026-6a77-6c01"/>
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink import="true" name="Lasrifle" hidden="false" id="1672-4f06-2513-24d9" type="selectionEntry" targetId="40e8-fcb7-9e0e-1582" sortIndex="1">
+                <entryLink import="true" name="Lasrifle" hidden="false" id="a55b-82bd-e487-6efc" type="selectionEntry" targetId="40e8-fcb7-9e0e-1582" sortIndex="1" defaultAmount="1">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9213-756b-0bb5-68b8"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a9d-88cc-6c4a-65bc"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="set" value="0" field="9213-756b-0bb5-68b8">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="17ff-ed9b-2351-cddb" childId="9735-8d34-c203-3c49" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="17ff-ed9b-2351-cddb" childId="1076-25dc-26c4-4d9e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Lasrifle w/ Bayonet" hidden="false" id="3300-de67-84f3-9cb9" type="selectionEntry" targetId="b6df-71e1-3e57-1b94" sortIndex="2"/>
-                <entryLink import="true" name="Lasrifle w/ Blast-charger" hidden="false" id="30e6-58f1-f81a-b583" type="selectionEntry" targetId="e45f-08ba-dbc1-2867" sortIndex="3"/>
-                <entryLink import="true" name="Lasrifle w/ Bayonet &amp; Blast-charger" hidden="false" id="b873-d201-dd7e-5aed" type="selectionEntry" targetId="b23d-b264-90cc-b6a7" sortIndex="4"/>
+                <entryLink import="true" name="Lasrifle w/ Bayonet" hidden="false" id="d31c-2a2a-2b88-0867" type="selectionEntry" targetId="b6df-71e1-3e57-1b94" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04a5-4180-1a60-4198"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Lasrifle w/ Blast-charger" hidden="false" id="fb02-17ee-00d4-7bca" type="selectionEntry" targetId="e45f-08ba-dbc1-2867" sortIndex="3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ec4-9f58-b0f9-7484"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Lasrifle w/ Bayonet &amp; Blast-charger" hidden="false" id="6e76-33d3-c42e-baeb" type="selectionEntry" targetId="b23d-b264-90cc-b6a7" sortIndex="4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9366-8c73-eeed-ee48"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="74c6-7ffd-1610-4b68"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e35-bf1b-567f-a109"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1643-c0ff-8cc5-6d9a"/>
               </constraints>
               <modifiers>
-                <modifier type="increment" value="1" field="74c6-7ffd-1610-4b68">
+                <modifier type="set" value="1" field="1643-c0ff-8cc5-6d9a">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="17ff-ed9b-2351-cddb" childId="9735-8d34-c203-3c49" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="17ff-ed9b-2351-cddb" childId="1076-25dc-26c4-4d9e" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="40e8-fcb7-9e0e-1582" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="d31c-2a2a-2b88-0867" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="e45f-08ba-dbc1-2867" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="b23d-b264-90cc-b6a7" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
-                <modifier type="increment" value="1" field="2e35-bf1b-567f-a109"/>
               </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -899,8 +930,8 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="First Prime" hidden="false" id="41f2-b11e-6a6e-a1c7" sortIndex="1">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2253-886b-d068-8205"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe88-9d30-4810-f578"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="556a-0c4a-7bdd-1db9"/>
           </constraints>
           <profiles>
             <profile name="First Prime" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="7c37-2e51-cf89-e5f8">
@@ -970,7 +1001,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink import="true" name="Volkite charger" hidden="false" id="165f-aaf9-a0b7-33a1" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="1">
+                <entryLink import="true" name="Volkite charger" hidden="false" id="165f-aaf9-a0b7-33a1" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="1" defaultAmount="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4a5-1242-76d7-7347"/>
                   </constraints>
@@ -995,7 +1026,6 @@
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81e8-3654-4a6c-4ff4"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a847-b48a-04f1-b29f"/>
               </constraints>
               <modifiers>
                 <modifier type="increment" value="1" field="81e8-3654-4a6c-4ff4">
@@ -1089,20 +1119,11 @@
             </selectionEntryGroup>
             <selectionEntryGroup name="May exchange Volkite Charger for:" id="b327-0ec6-0314-8761" hidden="false" defaultSelectionEntryId="128d-aa34-3963-f72e">
               <entryLinks>
-                <entryLink import="true" name="Volkite charger" hidden="false" id="128d-aa34-3963-f72e" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="1">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d16e-d350-98c3-bee7"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Storm Axe" hidden="false" id="f3a9-f2b3-5754-c9ad" type="selectionEntry" targetId="3d0f-b25b-a56b-9b47">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13c4-c89f-4650-2b0d"/>
-                  </constraints>
-                </entryLink>
+                <entryLink import="true" name="Volkite charger" hidden="false" id="128d-aa34-3963-f72e" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="1" defaultAmount="1"/>
+                <entryLink import="true" name="Storm Axe" hidden="false" id="f3a9-f2b3-5754-c9ad" type="selectionEntry" targetId="3d0f-b25b-a56b-9b47"/>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a6b-c9e0-1e3d-a15f"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="127b-84a8-a384-ff30"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -1395,7 +1416,7 @@
             </profile>
           </profiles>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Precision Bombardment" hidden="false" id="2bf0-2551-097f-c155">
+            <selectionEntry type="upgrade" import="true" name="Precision Bombardment" hidden="false" id="2bf0-2551-097f-c155" sortIndex="2">
               <rules>
                 <rule name="Precision Bombardment" id="a1f3-aa60-4c92-d483" hidden="false">
                   <description>&quot;Models with this Special Rule decreate the Scatter distance of Shooting Attacks made by nearby Models with the Artillery Tercio Trait.&quot;</description>
@@ -1408,70 +1429,74 @@
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May exchange Lasrifle for:" id="90fc-eee2-7264-5a98" hidden="false" defaultSelectionEntryId="2d17-cf5b-3a68-9c2f">
+            <selectionEntryGroup name="May exchange Lasrifle for:" id="f6c1-5df7-9e6f-6434" hidden="false" defaultSelectionEntryId="a3c7-4575-dbb9-3bd5" sortIndex="1">
               <selectionEntryGroups>
-                <selectionEntryGroup name="Melee" id="8ea2-057d-c155-00a9" hidden="false" defaultSelectionEntryId="1a5e-450e-e795-cd68">
+                <selectionEntryGroup name="Melee" id="8b55-195e-0a98-3ee3" hidden="false" defaultSelectionEntryId="e956-c79f-7cf8-5d6c">
                   <entryLinks>
-                    <entryLink import="true" name="Charnabal sabre" hidden="false" id="1a5e-450e-e795-cd68" type="selectionEntry" targetId="e85f-734a-c587-e88b"/>
-                    <entryLink import="true" name="Auxilia Melee Weapons" hidden="false" id="cb77-8172-f587-de86" type="selectionEntryGroup" targetId="012b-9848-784b-3663"/>
-                    <entryLink import="true" name="Thunder hammer" hidden="false" id="9dca-9135-bc7c-b480" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d">
-                      <modifiers>
-                        <modifier type="set" value="10" field="9893-c379-920b-8982"/>
-                      </modifiers>
+                    <entryLink import="true" name="Charnabal sabre" hidden="false" id="a171-f92f-2e85-0cb5" type="selectionEntry" targetId="e85f-734a-c587-e88b" sortIndex="1"/>
+                    <entryLink import="true" name="Power sword" hidden="false" id="eff5-ede8-a1fd-582e" type="selectionEntry" targetId="59a9-57c1-fff9-ca75" sortIndex="2">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Power fist" hidden="false" id="03a6-7c23-a93b-6ec2" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="3">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c7c-632a-980e-e800"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2905-3b22-c173-1910"/>
                   </constraints>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Pistol" id="df03-e4b4-57b3-5843" hidden="false" defaultSelectionEntryId="2dc0-4a45-8f1f-ad8c">
+                <selectionEntryGroup name="Pistol" id="4b93-2a58-8832-c1ed" hidden="false" defaultSelectionEntryId="8ab7-17c8-9e82-1a94">
                   <entryLinks>
-                    <entryLink import="true" name="Laspistol" hidden="false" id="2dc0-4a45-8f1f-ad8c" type="selectionEntry" targetId="70e6-52c9-86b9-604c"/>
-                    <entryLink import="true" name="Auxilia Pistols" hidden="false" id="f0bb-983a-d08d-e1bb" type="selectionEntryGroup" targetId="22a3-5b09-13b0-2624"/>
+                    <entryLink import="true" name="Laspistol" hidden="false" id="d680-7142-0cf2-9a25" type="selectionEntry" targetId="70e6-52c9-86b9-604c"/>
+                    <entryLink import="true" name="Auxilia Pistols" hidden="false" id="8403-8d39-def6-48c2" type="selectionEntryGroup" targetId="22a3-5b09-13b0-2624"/>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16de-6627-61fe-ba62"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8300-ba94-50e6-e2bb"/>
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink import="true" name="Lasrifle" hidden="false" id="2d17-cf5b-3a68-9c2f" type="selectionEntry" targetId="40e8-fcb7-9e0e-1582" sortIndex="1">
+                <entryLink import="true" name="Lasrifle" hidden="false" id="3c12-2adc-443f-2c53" type="selectionEntry" targetId="40e8-fcb7-9e0e-1582" sortIndex="1" defaultAmount="1">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ddfc-7976-959d-5886"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bfc-82e7-a239-9b01"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="set" value="0" field="ddfc-7976-959d-5886">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="7b90-c809-7792-10b5" childId="8ea2-057d-c155-00a9" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="7b90-c809-7792-10b5" childId="df03-e4b4-57b3-5843" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Lasrifle w/ Bayonet" hidden="false" id="7aab-24db-591a-bf77" type="selectionEntry" targetId="b6df-71e1-3e57-1b94" sortIndex="2"/>
-                <entryLink import="true" name="Lasrifle w/ Blast-charger" hidden="false" id="99f2-569b-176c-62e3" type="selectionEntry" targetId="e45f-08ba-dbc1-2867" sortIndex="3"/>
-                <entryLink import="true" name="Lasrifle w/ Bayonet &amp; Blast-charger" hidden="false" id="51c2-a08f-7b7c-4708" type="selectionEntry" targetId="b23d-b264-90cc-b6a7" sortIndex="4"/>
+                <entryLink import="true" name="Lasrifle w/ Bayonet" hidden="false" id="ca3f-bf32-84ea-8a1c" type="selectionEntry" targetId="b6df-71e1-3e57-1b94" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a97-5e8e-0cca-44bc"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Lasrifle w/ Blast-charger" hidden="false" id="3698-8525-c68c-4dd4" type="selectionEntry" targetId="e45f-08ba-dbc1-2867" sortIndex="3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10f5-dff0-c3b3-39e3"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Lasrifle w/ Bayonet &amp; Blast-charger" hidden="false" id="49a5-f763-798f-4a3f" type="selectionEntry" targetId="b23d-b264-90cc-b6a7" sortIndex="4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6a9-d724-5515-7070"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f50b-2285-5cb5-3dc5"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f53-c728-6cf0-cc50"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cf82-659a-8a34-1a41"/>
               </constraints>
               <modifiers>
-                <modifier type="increment" value="1" field="f50b-2285-5cb5-3dc5">
+                <modifier type="set" value="1" field="cf82-659a-8a34-1a41">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="7b90-c809-7792-10b5" childId="8ea2-057d-c155-00a9" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="7b90-c809-7792-10b5" childId="df03-e4b4-57b3-5843" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="40e8-fcb7-9e0e-1582" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="ca3f-bf32-84ea-8a1c" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="e45f-08ba-dbc1-2867" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="b23d-b264-90cc-b6a7" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
-                <modifier type="increment" value="1" field="8f53-c728-6cf0-cc50"/>
               </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -1511,68 +1536,7 @@
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May exchange Lasrifle for:" id="d96e-01b8-a38a-72ab" hidden="false" defaultSelectionEntryId="4f0a-bcbb-1992-b909">
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Melee" id="ba50-560b-ce6b-8019" hidden="false" defaultSelectionEntryId="f295-763c-c4c7-9557">
-                  <entryLinks>
-                    <entryLink import="true" name="Charnabal sabre" hidden="false" id="bbc7-169e-3621-2151" type="selectionEntry" targetId="e85f-734a-c587-e88b"/>
-                    <entryLink import="true" name="Auxilia Melee Weapons" hidden="false" id="4fb9-0667-debd-1cca" type="selectionEntryGroup" targetId="012b-9848-784b-3663"/>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a24a-3a8f-eb0b-2cb5"/>
-                  </constraints>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Pistol" id="80c0-2922-d7f4-d331" hidden="false" defaultSelectionEntryId="74da-4cc5-3e67-b4bd">
-                  <entryLinks>
-                    <entryLink import="true" name="Laspistol" hidden="false" id="5ea5-1e88-c617-ebdd" type="selectionEntry" targetId="70e6-52c9-86b9-604c"/>
-                    <entryLink import="true" name="Auxilia Pistols" hidden="false" id="37fc-73ec-8745-3fae" type="selectionEntryGroup" targetId="22a3-5b09-13b0-2624"/>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf46-ebd4-42a6-2789"/>
-                  </constraints>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink import="true" name="Lasrifle" hidden="false" id="4f0a-bcbb-1992-b909" type="selectionEntry" targetId="40e8-fcb7-9e0e-1582" sortIndex="1">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9406-420c-77ba-5cd3"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="0" field="9406-420c-77ba-5cd3">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="18b2-4858-5c21-bd0c" childId="ba50-560b-ce6b-8019" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="18b2-4858-5c21-bd0c" childId="80c0-2922-d7f4-d331" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink import="true" name="Lasrifle w/ Bayonet" hidden="false" id="2b2f-d341-1a2e-c7b8" type="selectionEntry" targetId="b6df-71e1-3e57-1b94" sortIndex="2"/>
-                <entryLink import="true" name="Lasrifle w/ Blast-charger" hidden="false" id="61f8-e0e7-b2d7-e818" type="selectionEntry" targetId="e45f-08ba-dbc1-2867" sortIndex="3"/>
-                <entryLink import="true" name="Lasrifle w/ Bayonet &amp; Blast-charger" hidden="false" id="68e5-5e17-a3ec-b264" type="selectionEntry" targetId="b23d-b264-90cc-b6a7" sortIndex="4"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="94a7-5b77-6bca-4e43"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b20e-e059-51b6-e128"/>
-              </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="94a7-5b77-6bca-4e43">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="18b2-4858-5c21-bd0c" childId="ba50-560b-ce6b-8019" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="18b2-4858-5c21-bd0c" childId="80c0-2922-d7f4-d331" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="increment" value="1" field="b20e-e059-51b6-e128"/>
-              </modifiers>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Options" id="0ea6-2a7f-bdf4-e8f6" hidden="false">
+            <selectionEntryGroup name="Options" id="0ea6-2a7f-bdf4-e8f6" hidden="false" sortIndex="2">
               <entryLinks>
                 <entryLink import="true" name="Augury scanner" hidden="false" id="909a-c1e7-13da-1d08" type="selectionEntry" targetId="fede-99f5-4c76-4659" sortIndex="2">
                   <constraints>
@@ -1610,6 +1574,76 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="May exchange Lasrifle for:" id="82b6-4d6d-a274-e89b" hidden="false" defaultSelectionEntryId="d6b1-396b-2358-523a" sortIndex="1">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Melee" id="03dc-4999-2caa-a09b" hidden="false" defaultSelectionEntryId="e956-c79f-7cf8-5d6c">
+                  <entryLinks>
+                    <entryLink import="true" name="Charnabal sabre" hidden="false" id="cda8-c954-84e7-12dc" type="selectionEntry" targetId="e85f-734a-c587-e88b" sortIndex="1"/>
+                    <entryLink import="true" name="Power sword" hidden="false" id="12c8-6d22-f0bc-f4a8" type="selectionEntry" targetId="59a9-57c1-fff9-ca75" sortIndex="2">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Power fist" hidden="false" id="3e0c-4c0b-6bea-b627" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="3">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ec2-f751-6368-2dea"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Pistol" id="c2f6-716e-34df-7a11" hidden="false" defaultSelectionEntryId="8ab7-17c8-9e82-1a94">
+                  <entryLinks>
+                    <entryLink import="true" name="Laspistol" hidden="false" id="d1bc-ecfc-907f-7634" type="selectionEntry" targetId="70e6-52c9-86b9-604c"/>
+                    <entryLink import="true" name="Auxilia Pistols" hidden="false" id="3f3c-6364-7da2-88ee" type="selectionEntryGroup" targetId="22a3-5b09-13b0-2624"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4eb-b000-8187-e27b"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Lasrifle" hidden="false" id="d6b1-396b-2358-523a" type="selectionEntry" targetId="40e8-fcb7-9e0e-1582" sortIndex="1" defaultAmount="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ada-d2fd-f351-cf1c"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Lasrifle w/ Bayonet" hidden="false" id="1fa4-2d3f-ca93-a295" type="selectionEntry" targetId="b6df-71e1-3e57-1b94" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f43-7ac1-0ad5-0ddb"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Lasrifle w/ Blast-charger" hidden="false" id="6600-fdd7-e279-c6a7" type="selectionEntry" targetId="e45f-08ba-dbc1-2867" sortIndex="3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="429a-3790-c0c6-c374"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Lasrifle w/ Bayonet &amp; Blast-charger" hidden="false" id="7fa4-08c2-3b27-8509" type="selectionEntry" targetId="b23d-b264-90cc-b6a7" sortIndex="4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5436-ad3a-f263-9321"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="62d0-fd3d-6993-b7a7"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="62d0-fd3d-6993-b7a7">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="40e8-fcb7-9e0e-1582" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="1fa4-2d3f-ca93-a295" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="e45f-08ba-dbc1-2867" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="b23d-b264-90cc-b6a7" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
@@ -2020,16 +2054,8 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="May exchange Volkite Charger for:" id="9694-ff95-3cd8-5a51" hidden="false" defaultSelectionEntryId="805f-e9d0-bfb0-3d5f">
               <entryLinks>
-                <entryLink import="true" name="Volkite charger" hidden="false" id="805f-e9d0-bfb0-3d5f" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="1">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4e2-6f66-d237-4713"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Storm Axe" hidden="false" id="520b-9f0a-166e-d02c" type="selectionEntry" targetId="3d0f-b25b-a56b-9b47">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4104-6624-f855-c230"/>
-                  </constraints>
-                </entryLink>
+                <entryLink import="true" name="Volkite charger" hidden="false" id="805f-e9d0-bfb0-3d5f" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="1"/>
+                <entryLink import="true" name="Storm Axe" hidden="false" id="520b-9f0a-166e-d02c" type="selectionEntry" targetId="3d0f-b25b-a56b-9b47"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="30c3-5fae-8e05-0e74"/>
@@ -2508,7 +2534,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d546-3c48-9567-e9fc"/>
                   </constraints>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Pistol" id="fd59-21b4-39b3-d44d" hidden="false" defaultSelectionEntryId="8ab7-17c8-9e82-1a94">
+                <selectionEntryGroup name="Pistol" id="fd59-21b4-39b3-d44d" hidden="false">
                   <entryLinks>
                     <entryLink import="true" name="Laspistol" hidden="false" id="2986-59a6-0463-4ba0" type="selectionEntry" targetId="70e6-52c9-86b9-604c"/>
                     <entryLink import="true" name="Auxilia Pistols" hidden="false" id="9d79-0b0c-0cef-f177" type="selectionEntryGroup" targetId="22a3-5b09-13b0-2624"/>
@@ -2521,46 +2547,37 @@
               <entryLinks>
                 <entryLink import="true" name="Lasrifle" hidden="false" id="a814-9585-d180-fcf1" type="selectionEntry" targetId="40e8-fcb7-9e0e-1582" sortIndex="1">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f5f5-c49b-8de3-f918"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="385c-6afb-3cba-93a6"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="set" value="0" field="f5f5-c49b-8de3-f918">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="0d08-b4f3-0721-f37c" childId="d2ea-b520-72ad-9a18" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="0d08-b4f3-0721-f37c" childId="fd59-21b4-39b3-d44d" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Lasrifle w/ Bayonet" hidden="false" id="026f-2868-3d18-da06" type="selectionEntry" targetId="b6df-71e1-3e57-1b94" sortIndex="2"/>
-                <entryLink import="true" name="Lasrifle w/ Blast-charger" hidden="false" id="4ad7-c1ad-3a73-ceed" type="selectionEntry" targetId="e45f-08ba-dbc1-2867" sortIndex="3"/>
-                <entryLink import="true" name="Lasrifle w/ Bayonet &amp; Blast-charger" hidden="false" id="7423-6bcf-10b2-e990" type="selectionEntry" targetId="b23d-b264-90cc-b6a7" sortIndex="4"/>
+                <entryLink import="true" name="Lasrifle w/ Bayonet" hidden="false" id="026f-2868-3d18-da06" type="selectionEntry" targetId="b6df-71e1-3e57-1b94" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96f5-f76f-2b52-6f00"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Lasrifle w/ Blast-charger" hidden="false" id="4ad7-c1ad-3a73-ceed" type="selectionEntry" targetId="e45f-08ba-dbc1-2867" sortIndex="3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6361-819e-2c36-cfbb"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Lasrifle w/ Bayonet &amp; Blast-charger" hidden="false" id="7423-6bcf-10b2-e990" type="selectionEntry" targetId="b23d-b264-90cc-b6a7" sortIndex="4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb7a-641f-2a05-df06"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a23-cad9-fb38-98ba"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8168-3dea-3311-c9f4"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8168-3dea-3311-c9f4"/>
               </constraints>
               <modifiers>
-                <modifier type="increment" value="1" field="6a23-cad9-fb38-98ba">
+                <modifier type="set" value="1" field="8168-3dea-3311-c9f4">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="0d08-b4f3-0721-f37c" childId="d2ea-b520-72ad-9a18" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="0d08-b4f3-0721-f37c" childId="fd59-21b4-39b3-d44d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="increment" value="1" field="8168-3dea-3311-c9f4">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="0d08-b4f3-0721-f37c" childId="d2ea-b520-72ad-9a18" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="0d08-b4f3-0721-f37c" childId="fd59-21b4-39b3-d44d" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="40e8-fcb7-9e0e-1582" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="4569-77d1-88ae-057c" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="e45f-08ba-dbc1-2867" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="b23d-b264-90cc-b6a7" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -5540,9 +5557,6 @@ If this Shooting Attack would cause the enemy Model in the Challenge to be Remov
           </modifiers>
         </entryLink>
       </entryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4651-09ee-8133-3a86"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lasrifle w/ Blast-charger" hidden="false" id="e45f-08ba-dbc1-2867">
       <entryLinks>
@@ -5562,9 +5576,6 @@ If this Shooting Attack would cause the enemy Model in the Challenge to be Remov
           </modifiers>
         </entryLink>
       </entryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="550b-1de6-f450-11ad"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lasrifle w/ Bayonet &amp; Blast-charger" hidden="false" id="b23d-b264-90cc-b6a7">
       <entryLinks>
@@ -5593,9 +5604,6 @@ If this Shooting Attack would cause the enemy Model in the Challenge to be Remov
           </modifiers>
         </entryLink>
       </entryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4053-4b8d-2310-1da9"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Legiones Auxilia designation:" hidden="false" id="0dd9-0876-e32b-2519">
       <constraints>
@@ -6014,27 +6022,49 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back M
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Auxilia Pistols" id="22a3-5b09-13b0-2624" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Volkite serpenta" hidden="false" id="2ee2-fb22-8a3b-eb56" type="selectionEntry" targetId="b7c3-1de1-087c-3d6e"/>
-        <entryLink import="true" name="Hand flamer" hidden="false" id="0927-6294-b589-7554" type="selectionEntry" targetId="9322-09ed-abec-6e13"/>
-        <entryLink import="true" name="Plasma pistol" hidden="false" id="0add-bc15-3507-d6e9" type="selectionEntry" targetId="659f-d52e-1515-2912"/>
+        <entryLink import="true" name="Volkite serpenta" hidden="false" id="2ee2-fb22-8a3b-eb56" type="selectionEntry" targetId="b7c3-1de1-087c-3d6e" sortIndex="3">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Hand flamer" hidden="false" id="0927-6294-b589-7554" type="selectionEntry" targetId="9322-09ed-abec-6e13" sortIndex="4">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Plasma pistol" hidden="false" id="0add-bc15-3507-d6e9" type="selectionEntry" targetId="659f-d52e-1515-2912" sortIndex="5">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Blast Pistol" hidden="false" id="d9aa-7332-d24c-7ba2" type="selectionEntry" targetId="a3d6-71df-6482-30a0" sortIndex="1">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="3"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Needle Pistol" hidden="false" id="a4c2-b5fe-ef16-85bb" type="selectionEntry" targetId="c252-4716-b30f-9a01" sortIndex="2">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Auxilia Melee Weapons" id="012b-9848-784b-3663" hidden="false">
       <entryLinks>
         <entryLink import="true" name="Charnabal sabre" hidden="false" id="873d-10fb-0341-93cf" type="selectionEntry" targetId="e85f-734a-c587-e88b" sortIndex="1">
-          <modifiers>
-            <modifier type="set" value="3" field="9893-c379-920b-8982"/>
-          </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="3"/>
+          </costs>
         </entryLink>
         <entryLink import="true" name="Power sword" hidden="false" id="dacf-6650-bfe0-d2f0" type="selectionEntry" targetId="59a9-57c1-fff9-ca75" sortIndex="2">
-          <modifiers>
-            <modifier type="set" value="10" field="9893-c379-920b-8982"/>
-          </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+          </costs>
         </entryLink>
         <entryLink import="true" name="Power fist" hidden="false" id="1e24-e088-71d6-d153" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="3">
-          <modifiers>
-            <modifier type="set" value="5" field="9893-c379-920b-8982"/>
-          </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
