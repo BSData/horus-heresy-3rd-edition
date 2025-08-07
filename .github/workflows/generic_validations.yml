@@ -1,13 +1,13 @@
 # This action continuously checks all pushes and Pull requests
 # for validity, integrity and bugs in datafiles.
 # For details, visit https://github.com/BSData/check-datafiles
-#name: Generic Datafile validations
-#on: [ push, pull_request ]
-#jobs:
-#  build:
-#    runs-on: ubuntu-latest
-#    steps:
-#    - uses: actions/checkout@v3
+name: Generic Datafile validations
+on: [ push, pull_request ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
 #
 #    - uses: BSData/check-datafiles@v1
 #      id: check
