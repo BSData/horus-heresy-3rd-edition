@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="f148-a6e4-5a8c-3aeb" name="                        XVIII - Salamanders" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="3" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="f148-a6e4-5a8c-3aeb" name="                        XVIII - Salamanders" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="4" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Firedrake Terminator Squad" hidden="false" id="09a9-6c68-9b0b-f24f" sortIndex="2">
       <selectionEntries>
@@ -25,12 +25,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <categoryLinks>
-            <categoryLink name="Infantry Model Type" hidden="false" id="80f3-51e8-4e2c-b5ef" targetId="594d-fa82-13cb-a345" primary="true"/>
-            <categoryLink name="Heavy Model Sub-Type" hidden="false" id="379b-6347-83b6-c63d" targetId="1e7d-9066-28d2-97a0" primary="false"/>
-            <categoryLink name="Salamanders" hidden="false" id="37ee-c070-f956-55c8" targetId="f6fe-18f5-7b4d-b57a" primary="false"/>
-            <categoryLink name="Shield" hidden="false" id="3bac-b474-c90e-4b8d" targetId="26c6-e05c-0f72-7852" primary="false"/>
-          </categoryLinks>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="45"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -66,11 +60,7 @@
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink name="Infantry Model Type" hidden="false" id="81bf-f50b-298e-1b79" targetId="594d-fa82-13cb-a345" primary="true"/>
             <categoryLink name="Sergeant Model Sub-Type" hidden="false" id="a25b-be75-f4cc-78ea" targetId="8045-89a4-76d4-fcef" primary="false"/>
-            <categoryLink name="Heavy Model Sub-Type" hidden="false" id="1f0e-627d-27f8-fe49" targetId="1e7d-9066-28d2-97a0" primary="false"/>
-            <categoryLink name="Salamanders" hidden="false" id="d84b-91b2-4ac2-b1cd" targetId="f6fe-18f5-7b4d-b57a" primary="false"/>
-            <categoryLink name="Shield" hidden="false" id="ec27-f863-62e3-103d" targetId="26c6-e05c-0f72-7852" primary="false"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8168-3156-31be-c3b2" includeChildSelections="false"/>
@@ -79,8 +69,9 @@
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink name="Elites" hidden="false" id="56de-e93e-5f15-86f6" targetId="5d5e-958f-e388-50b5" primary="true"/>
-        <categoryLink name="Salamanders" hidden="false" id="a6cd-b4de-886f-ecde" targetId="f6fe-18f5-7b4d-b57a" primary="false"/>
+        <categoryLink targetId="594d-fa82-13cb-a345" id="ceb5-f9a9-60d7-152f" primary="false" name="Infantry Model Type"/>
+        <categoryLink targetId="1e7d-9066-28d2-97a0" id="aadb-95bd-e71f-74a4" primary="false" name="Heavy Model Sub-Type"/>
+        <categoryLink targetId="26c6-e05c-0f72-7852" id="473e-745e-c84b-e047" primary="false" name="Shield"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="7b96-c4b2-5a5d-4284" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -311,13 +302,6 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
               </modifiers>
             </infoLink>
           </infoLinks>
-          <categoryLinks>
-            <categoryLink name="Paragon Model Type" hidden="false" id="0b38-1615-24a5-0525" targetId="7799-e1d6-762b-700b" primary="true"/>
-            <categoryLink name="Unique Model Sub-Type" hidden="false" id="e82e-c7c9-f42f-990e" targetId="b980-187b-2b17-d635" primary="false"/>
-            <categoryLink name="Salamanders" hidden="false" id="c842-f902-cc99-60b3" targetId="f6fe-18f5-7b4d-b57a" primary="false"/>
-            <categoryLink name="Loyalist" hidden="false" id="fc07-69ad-871e-a74f" targetId="4381-ed35-c3fa-a225" primary="false"/>
-            <categoryLink name="Master of the Legion" hidden="false" id="6b7c-1862-e8f8-7c6a" targetId="e3cd-7a38-34d7-9cbf" primary="false"/>
-          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -343,9 +327,10 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3ed6-4961-a06e-33be" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <categoryLinks>
-        <categoryLink name="Warlord" hidden="false" id="ae7b-b3b7-6aa3-5279" targetId="22ee-7208-4089-b005" primary="true"/>
-        <categoryLink name="Salamanders" hidden="false" id="e726-99ad-7f2f-0f45" targetId="f6fe-18f5-7b4d-b57a" primary="false"/>
         <categoryLink name="Loyalist" hidden="false" id="aaf6-452e-c5b6-ffee" targetId="4381-ed35-c3fa-a225" primary="false"/>
+        <categoryLink targetId="7799-e1d6-762b-700b" id="b513-7ac3-49cb-e828" primary="false" name="Paragon Model Type"/>
+        <categoryLink targetId="b980-187b-2b17-d635" id="a5e2-ba39-5b51-0bde" primary="false" name="Unique Model Sub-Type"/>
+        <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="f322-b988-1519-b77f" primary="false" name="Master of the Legion"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Pyroclast Squad" hidden="false" id="fbbe-aa8c-d645-7970" sortIndex="3">
@@ -372,10 +357,6 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
               </characteristics>
             </profile>
           </profiles>
-          <categoryLinks>
-            <categoryLink name="Infantry Model Type" hidden="false" id="2bb1-43d8-c559-94f1" targetId="594d-fa82-13cb-a345" primary="true"/>
-            <categoryLink name="Salamanders" hidden="false" id="604c-b688-ae6f-d0e3" targetId="f6fe-18f5-7b4d-b57a" primary="false"/>
-          </categoryLinks>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -411,9 +392,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink name="Infantry Model Type" hidden="false" id="104d-f276-b8dc-561c" targetId="594d-fa82-13cb-a345" primary="true"/>
-            <categoryLink name="Sergeant Model Sub-Type" hidden="false" id="f365-4362-4bff-f3e7" targetId="8045-89a4-76d4-fcef" primary="false"/>
-            <categoryLink name="Salamanders" hidden="false" id="cc15-f91a-9645-1699" targetId="f6fe-18f5-7b4d-b57a" primary="false"/>
+            <categoryLink targetId="8045-89a4-76d4-fcef" id="18c9-b720-7075-4f23" primary="false" name="Sergeant Model Sub-Type"/>
           </categoryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d9c-f010-ed2f-7048" includeChildSelections="false"/>
@@ -457,8 +436,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink name="Salamanders" hidden="false" id="3fd7-23fc-65f5-2db4" targetId="f6fe-18f5-7b4d-b57a" primary="false"/>
-        <categoryLink targetId="3235-bd79-e9b1-60fa" id="fdf8-84dc-c2a1-8789" primary="true" name="Heavy Assault"/>
+        <categoryLink targetId="594d-fa82-13cb-a345" id="ef40-da74-40b5-4b1d" primary="false" name="Infantry Model Type"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="6245-5f05-7f15-8937" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -521,9 +499,23 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
     <catalogueLink type="catalogue" name="Weapons" id="ee7a-856f-787a-e488" targetId="a22d-4dd0-c59d-57d3"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="Vulkan" hidden="false" id="0c0e-fb2f-fb1e-d771" type="selectionEntry" targetId="29d9-3ea2-0c2b-5c36" sortIndex="1"/>
-    <entryLink import="true" name="Firedrake Terminator Squad" hidden="false" id="e255-98b6-88b6-d0f0" type="selectionEntry" targetId="09a9-6c68-9b0b-f24f" sortIndex="2"/>
-    <entryLink import="true" name="Pyroclast Squad" hidden="false" id="7bf1-9ac3-d0ea-6229" type="selectionEntry" targetId="fbbe-aa8c-d645-7970" sortIndex="3"/>
+    <entryLink import="true" name="Vulkan" hidden="false" id="0c0e-fb2f-fb1e-d771" type="selectionEntry" targetId="29d9-3ea2-0c2b-5c36" sortIndex="1">
+      <categoryLinks>
+        <categoryLink targetId="f6fe-18f5-7b4d-b57a" id="49a9-d580-3926-71ad" primary="false" name="Salamanders"/>
+        <categoryLink targetId="22ee-7208-4089-b005" id="f5d9-e339-c9a1-e1a9" primary="true" name="Warlord"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Firedrake Terminator Squad" hidden="false" id="e255-98b6-88b6-d0f0" type="selectionEntry" targetId="09a9-6c68-9b0b-f24f" sortIndex="2">
+      <categoryLinks>
+        <categoryLink targetId="5d5e-958f-e388-50b5" id="b488-45a8-2441-ef04" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Pyroclast Squad" hidden="false" id="7bf1-9ac3-d0ea-6229" type="selectionEntry" targetId="fbbe-aa8c-d645-7970" sortIndex="3">
+      <categoryLinks>
+        <categoryLink targetId="f6fe-18f5-7b4d-b57a" id="f1e0-ac2c-49b2-949a" primary="false" name="Salamanders"/>
+        <categoryLink targetId="3235-bd79-e9b1-60fa" id="70e5-2d20-c481-ba6b" primary="true" name="Heavy Assault"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedRules>
     <rule name="Promethean Endurance" id="381f-10db-0c78-f16e" hidden="false">

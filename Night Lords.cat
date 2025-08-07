@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="486f-b32a-ac87-73dd" name="                         VIII - Night Lords" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="6" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="486f-b32a-ac87-73dd" name="                         VIII - Night Lords" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="7" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
-    <selectionEntry type="unit" import="true" name="Konrad Kurze" hidden="false" id="f5fd-f425-c610-4a94">
+    <selectionEntry type="unit" import="true" name="Konrad Curze" hidden="false" id="f5fd-f425-c610-4a94">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Konrad Kurze" hidden="false" id="e47b-d8f0-a85c-71a9" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Konrad Curze" hidden="false" id="e47b-d8f0-a85c-71a9" sortIndex="1">
           <profiles>
             <profile name="Konrad Kurze" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="a6fc-e95a-426b-2aa8">
               <characteristics>
@@ -140,6 +140,8 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
       <categoryLinks>
         <categoryLink targetId="7799-e1d6-762b-700b" id="12e4-2d1d-57a7-4717" primary="false" name="Paragon Model Type"/>
         <categoryLink targetId="b980-187b-2b17-d635" id="da6b-ec07-3647-97ab" primary="false" name="Unique Model Sub-Type"/>
+        <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="47c4-7941-49b4-fe74" primary="false" name="Master of the Legion"/>
+        <categoryLink targetId="d251-944b-3c3b-0579" id="6386-75c5-d172-5669" primary="false" name="Traitor"/>
       </categoryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="450"/>
@@ -976,7 +978,9 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
       <categoryLinks>
         <categoryLink targetId="594d-fa82-13cb-a345" id="3515-78f7-214f-b6c6" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="b980-187b-2b17-d635" id="ff93-6618-5e9f-1ef0" primary="false" name="Unique Model Sub-Type"/>
-        <categoryLink targetId="6dbf-654a-f06f-2d69" id="d8ef-9eb1-7313-dda7" primary="false" name="Command"/>
+        <categoryLink targetId="d251-944b-3c3b-0579" id="a62d-1bc3-a76f-43aa" primary="false" name="Traitor"/>
+        <categoryLink targetId="9871-cb62-5283-2216" id="711d-d965-1843-2387" primary="false" name="Command Model Sub-type"/>
+        <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="bdc6-e680-52b6-c03a" primary="false" name="Master of the Legion"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Bolt pistol" hidden="false" id="a6ce-dc34-64c1-13cb" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="3">
@@ -997,6 +1001,7 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76d9-3dd6-5328-e040"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="41c6-23a8-8d20-59f7" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="675b-41f3-12f6-bd6b" includeChildSelections="true"/>
@@ -1060,16 +1065,19 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
     <entryLink import="true" name="Contekar Terminator Squad" hidden="false" id="d84c-210c-2494-136a" type="selectionEntry" targetId="baca-aa73-5db0-17fa">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="7967-1f53-e431-028f" primary="true" name="Elites"/>
+        <categoryLink targetId="9c9d-4e53-09d5-8748" id="34a1-f579-b5e2-d6cc" primary="false" name="Night Lords"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Konrad Kurze" hidden="false" id="15d6-a1f4-4e9c-40c4" type="selectionEntry" targetId="f5fd-f425-c610-4a94">
       <categoryLinks>
         <categoryLink targetId="22ee-7208-4089-b005" id="9b47-0648-01c7-250d" primary="true" name="Warlord"/>
+        <categoryLink targetId="9c9d-4e53-09d5-8748" id="240f-410b-adc0-0c87" primary="false" name="Night Lords"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Night Raptor Squad" hidden="false" id="d958-12a2-ec35-ac8f" type="selectionEntry" targetId="2090-3883-5cff-e344">
       <categoryLinks>
         <categoryLink targetId="cf96-8891-3f9a-8921" id="8f7f-0978-b6f6-7b7f" primary="true" name="Fast Attack"/>
+        <categoryLink targetId="9c9d-4e53-09d5-8748" id="f724-5479-4e7d-a75d" primary="false" name="Night Lords"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Terror Squad" hidden="false" id="1601-d678-e09f-042a" type="selectionEntry" targetId="d1bc-17f7-b3d7-ca84">
@@ -1082,11 +1090,13 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="88e6-d373-4152-0dd8" id="3895-612c-b9ba-a74c" primary="true" name="Troops"/>
+        <categoryLink targetId="9c9d-4e53-09d5-8748" id="7abe-8ee5-ed6a-2150" primary="false" name="Night Lords"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Sevatar" hidden="false" id="250f-e956-e1d3-c2c9" type="selectionEntry" targetId="b970-48ad-c8ff-86ca">
       <categoryLinks>
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="8dda-b541-96f6-06bc" primary="true" name="High Command"/>
+        <categoryLink targetId="9c9d-4e53-09d5-8748" id="f0b2-8856-8b9e-e086" primary="false" name="Night Lords"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Rite of War" hidden="false" id="bcae-e46d-5ae7-82de" type="selectionEntry" targetId="33f3-b1d3-7b30-e5ea">
@@ -1139,9 +1149,7 @@ If selected, at the Start of the Focus Step, this Model&apos;s Controlling Playe
                     <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once this Reaction is declared, the Reacting Unit must immediately make a Fall Back Move as if it was affected by the Routed Tactical Status.
 
 
-2. Once this Fall Back Move is completed, the Reacting Unit does not gain the Routed Tactical Status.
-
-</characteristic>
+2. Once this Fall Back Move is completed, the Reacting Unit does not gain the Routed Tactical Status.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>

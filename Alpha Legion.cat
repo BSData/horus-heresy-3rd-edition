@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="8813-5298-c368-ee16" name="                       XX - Alpha Legion" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="5" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="8813-5298-c368-ee16" name="                       XX - Alpha Legion" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="6" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Armillus Dynat" hidden="false" id="df2e-ee83-e5e5-c333" sortIndex="2">
       <selectionEntries>
@@ -138,6 +138,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6755-33bf-06b7-1817" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="73b0-39b0-ceab-04a1" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
       </entryLinks>
       <rules>
         <rule name="Harrowmaster" id="f5c7-7a20-8a79-1ea2" hidden="false">
@@ -1243,274 +1244,41 @@ A Model with this Special Rule is always considered to be 2&quot; further away t
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
-  <forceEntries>
-    <forceEntry name="Auxiliary - Headhunter Leviathal" id="aaea-8b65-0abf-c91b" hidden="false">
-      <categoryLinks>
-        <categoryLink name="Elites" hidden="false" id="ab5a-8e09-2588-dd81" targetId="5d5e-958f-e388-50b5">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9a16-25f6-a70a-02f9"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="1" field="9a16-25f6-a70a-02f9">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-        <categoryLink name="Prime Elites" hidden="false" id="64de-1603-65ec-5796" targetId="276f-7a07-a56c-affd">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="802b-5333-d4c0-e8b4"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Recon" hidden="false" id="4f78-7b00-e5b5-b920" targetId="2b65-a3f2-620a-dc58">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5d91-48d7-6907-8a29"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="1" field="5d91-48d7-6907-8a29">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-        <categoryLink name="Prime Recon" hidden="false" id="afca-af3b-7c0c-58e3" targetId="6348-ecd0-714d-042a">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="60df-59f0-4164-e147"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Retinue" hidden="false" id="76a5-0c1c-264e-c540" targetId="a38e-50ff-310f-f19e">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9ce2-e832-5e64-92ea"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="1" field="9ce2-e832-5e64-92ea">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-        <categoryLink name="Prime Retinue" hidden="false" id="ec12-2c96-b767-b9e4" targetId="c66b-ef39-b20f-725b">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c629-ce85-60fc-95d3"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="War-engine" hidden="false" id="ed9b-d79a-7cb3-c5fb" targetId="2499-7239-685f-8465">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7908-9cbe-a8d5-ccc7"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="1" field="7908-9cbe-a8d5-ccc7">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-        <categoryLink name="Prime War-engine" hidden="false" id="c182-4c5b-2b1b-2104" targetId="9699-67c9-2c0b-e64b">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="cda4-0317-d0d9-0c14"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Troops" hidden="false" id="0afe-6667-6442-68ba" targetId="88e6-d373-4152-0dd8">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="554e-8170-8bde-63e7"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="1" field="554e-8170-8bde-63e7">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-        <categoryLink name="Prime Troops" hidden="false" id="3e49-f8fd-1677-ca68" targetId="c3f9-a7f3-984b-3fda">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68c4-b129-7ec5-b635" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Support" hidden="false" id="4888-a2cf-f6db-aefd" targetId="345f-9ba6-9b02-ed5c">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="da1a-f2e6-2a5c-39cc"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="1" field="da1a-f2e6-2a5c-39cc">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-        <categoryLink name="Prime Support" hidden="false" id="dd02-0c9e-ef0c-380b" targetId="1c79-ecdf-9a64-84c9">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7880-ea44-e477-8c26"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Transport" hidden="false" id="b081-7aa9-b562-2c2b" targetId="d162-4711-5d60-0a48">
-          <constraints>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="541e-9e98-0298-2f58"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="1" field="541e-9e98-0298-2f58">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-        <categoryLink name="Prime Transport" hidden="false" id="a2d0-304e-f447-399a" targetId="fc27-1a48-84ae-aa7b">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6e23-9e80-f676-f1d9"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Heavy Assault" hidden="false" id="1bf7-b93a-c7fb-0560" targetId="3235-bd79-e9b1-60fa">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="97d7-6267-f7e0-98cf"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="1" field="97d7-6267-f7e0-98cf">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-        <categoryLink name="Prime Heavy Assault" hidden="false" id="e170-b556-3c2e-738f" targetId="1e95-35f0-1353-ffa1">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="26b1-3c84-02fa-b45a"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Heavy Transport" hidden="false" id="a939-9033-697d-b8bd" targetId="52d0-8b78-439e-18e5">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d633-ed1a-d8fb-ee41"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="1" field="d633-ed1a-d8fb-ee41">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="ad55-0e60-66fe-a7a9" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="ad55-0e60-66fe-a7a9" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-        <categoryLink name="Prime Heavy Transport" hidden="false" id="bd41-74d9-f1d9-8c93" targetId="abff-3686-c39a-9a24">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="cb72-00d3-283a-f4e8"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Armour" hidden="false" id="53c4-0636-1f2d-45f9" targetId="643a-1012-bd51-6537">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="128c-2afb-54ea-6015"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="1" field="128c-2afb-54ea-6015">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-        <categoryLink name="Prime Armour" hidden="false" id="267b-5261-405d-f831" targetId="4460-7bc1-4d80-aecb">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1b52-70d5-1ea3-8eb1"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Fast Attack" hidden="false" id="b3b6-57db-c19d-27f7" targetId="cf96-8891-3f9a-8921">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6f80-95e9-4cb7-2aa2"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="1" field="6f80-95e9-4cb7-2aa2">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-        <categoryLink name="Prime Fast Attack" hidden="false" id="2760-dcb0-1721-f119" targetId="c291-144b-3da6-37ed">
-          <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1993-1788-f7cf-73ca"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-      <comment>Needs restrictions for Seeker and Headhunter put in</comment>
-    </forceEntry>
-  </forceEntries>
   <entryLinks>
     <entryLink import="true" name="Deathwing Companion Detachment" hidden="false" id="7041-97a7-ff41-0d8b" type="selectionEntry" targetId="1e9c-6b93-a335-43c4" sortIndex="101">
       <categoryLinks>
         <categoryLink targetId="fe7f-1287-4162-a65d" id="601c-aa25-c822-448a" primary="true" name="Rewards of Treachery"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="2c12-83ba-6a93-f08f" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Inner Circle Knights Cenobium" hidden="false" id="e233-b1f5-c3d1-d731" type="selectionEntry" targetId="e033-118d-4b07-5cd1" sortIndex="103">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="4186-996b-3a05-fe85" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="34ce-cfbd-235d-69b9" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Dreadwing Interemptor Squad" hidden="false" id="ff8c-a2a6-c317-74ca" type="selectionEntry" targetId="d788-b46c-c9f2-0aa9" sortIndex="102">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="a0b8-66e0-e0d8-d844" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="e560-6bf2-3495-d6dd" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Alpharius" hidden="false" id="50a4-4e13-d1e0-3724" type="selectionEntry" targetId="7b1d-a83b-ffc8-aad4" sortIndex="1">
       <categoryLinks>
         <categoryLink targetId="22ee-7208-4089-b005" id="0c05-ca42-bfef-b3d5" primary="true" name="Warlord"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="49f9-60aa-68ba-8666" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Armillus Dynat" hidden="false" id="5d9b-0cf2-5004-6661" type="selectionEntry" targetId="df2e-ee83-e5e5-c333" sortIndex="2">
       <categoryLinks>
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="f8f6-5052-e272-aedb" primary="true" name="High Command"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="c0aa-027b-ef90-573d" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Headhunter Kill Team" hidden="false" id="d9c4-2b4e-b466-6a6c" type="selectionEntry" targetId="db52-3de0-a5cf-d943" sortIndex="4">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="8fb9-3ca1-8cfd-7340" primary="true" name="Elites"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="0395-f71e-aae7-3e7b" primary="false" name="Alpha Legion"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set-primary" value="5c0d-4d49-44e2-0a99" field="category">
@@ -1523,221 +1291,265 @@ A Model with this Special Rule is always considered to be 2&quot; further away t
     <entryLink import="true" name="Exodus" hidden="false" id="652f-4031-cc31-ed0b" type="selectionEntry" targetId="9258-8867-220d-429f" sortIndex="5">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="b616-0939-c10f-36d1" primary="true" name="Elites"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="7762-e4a6-d4ee-dc15" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Lernaean Terminator Squad" hidden="false" id="1956-ecc4-3d33-e1c5" type="selectionEntry" targetId="e730-6b3b-7f60-fea0" sortIndex="6">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="c830-926d-4233-727e" primary="true" name="Elites"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="87b6-722b-7f61-2a70" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Saboteur" hidden="false" id="06bd-4447-53c1-638d" type="selectionEntry" targetId="66a2-0979-688a-b47e" sortIndex="3">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="ce2d-ac84-1c4e-8ca1" primary="true" name="Command"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="b149-957e-1ae2-e871" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Golden Keshing" hidden="false" id="f09a-29ea-bb35-73dd" type="selectionEntry" targetId="fa6f-2652-34c9-2ea2" sortIndex="501">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="065d-43ba-d874-f748" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="1bbb-9e0b-1f2d-b07a" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Ebon Keshig" hidden="false" id="17e8-f624-7de6-b661" type="selectionEntry" targetId="9f57-6829-5ec9-4d69" sortIndex="502">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="a935-60b5-333f-9330" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="2185-ed82-f734-0045" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Kyzagan Assault Speeder" hidden="false" id="d5c4-bc44-b8bc-bd79" type="selectionEntry" targetId="6efd-34c7-2212-1474" sortIndex="503">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="1db2-94ab-0c4e-51b3" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="cf1b-6af0-3e3c-5f58" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Varagyr Wolf Guard Terminators" hidden="false" id="5619-ddc7-4d6a-bbf5" type="selectionEntry" targetId="efd1-c611-841f-0cbb" sortIndex="601">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="438a-693b-8713-33d4" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="37cf-c317-04d9-281e" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Deathsworn Pack" hidden="false" id="9b5e-42f5-8dc1-ac8b" type="selectionEntry" targetId="cb82-a73f-b30f-c30f" sortIndex="602">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="ddc5-a274-df29-cc45" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="9e5d-066f-f703-8a1a" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Grey Slayer Pack" hidden="false" id="9395-0d2e-97d9-3850" type="selectionEntry" targetId="9a43-13b5-bd92-d8be" sortIndex="603">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="f97e-5588-454e-e0dd" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="a10e-c7bb-de2b-138d" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Templar Brethren" hidden="false" id="35d2-7047-d5fd-e80b" type="selectionEntry" targetId="0096-62da-55d8-3912" sortIndex="701">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="b43b-1d11-4ecd-d073" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="531e-6ec1-e52f-e76b" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Phalanx Warder-Squad" hidden="false" id="ed19-fda2-2fc9-bee4" type="selectionEntry" targetId="7ee4-7278-0ad7-4c29" sortIndex="702">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="dc17-6c87-20ee-0652" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="862a-2654-93ac-9915" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Gorgon Terminator Squad" hidden="false" id="579c-48b2-5412-1eb8" type="selectionEntry" targetId="6545-a621-619e-4757" sortIndex="1001">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="d7ab-c5fe-f0b3-8209" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="2f70-5caf-260f-7854" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Medusan Immortals Squad" hidden="false" id="7155-c97e-d6bc-7193" type="selectionEntry" targetId="c54a-6c98-0f74-d45c" sortIndex="1002">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="7f20-93ea-6efc-2f2e" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="4c05-c6fc-0d26-005a" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Invictus Suzerain Squad" hidden="false" id="57ab-0246-a6de-f8c5" type="selectionEntry" targetId="3a11-d72b-2f04-cc62" sortIndex="1301">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="0a7e-0241-6232-cc5b" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="3a1b-66a7-451a-9a8e" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Praetorian Breacher Squad" hidden="false" id="2cef-e544-d639-17cf" type="selectionEntry" targetId="f115-4466-aa86-b446" sortIndex="1302">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="12a0-5f72-93e7-a0fa" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="f5aa-c6af-354e-d77e" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Mor Deythan Squad" hidden="false" id="32d1-d3a5-652b-c679" type="selectionEntry" targetId="4bb8-d53e-23a8-64da" sortIndex="1901">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="7ed8-3862-ae09-5ea6" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="f128-b5ba-f6d3-5868" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Dark Fury Squad" hidden="false" id="53e3-556b-3428-f7a6" type="selectionEntry" targetId="8487-ac3b-d0ec-6d08" sortIndex="1902">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="d19e-492f-ef05-4c28" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="4435-dc26-18f7-37e2" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Phoenix Terminator Squad" hidden="false" id="3075-d904-8fd0-37ef" type="selectionEntry" targetId="e547-ac83-3328-4d31" sortIndex="301">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="08e2-05df-0667-c572" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="bf08-19c9-ed6c-7606" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Palatine Blade Squad" hidden="false" id="1ad2-65c6-b020-2f6a" type="selectionEntry" targetId="8f1b-e5a5-5607-612c" sortIndex="302">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="ff33-1731-a2e9-6082" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="c851-778b-84b9-14e2" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Kakophoni Squad" hidden="false" id="5ef8-1afe-21bc-c2b3" type="selectionEntry" targetId="4ac4-b32a-6840-a91e" sortIndex="303">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="69f0-2238-42d8-27f1" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="d98a-5a69-a22c-aafd" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Tyrant Siege Terminator Squad" hidden="false" id="8f89-8483-d1bc-797f" type="selectionEntry" targetId="83b4-239a-806b-33e5" sortIndex="401">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="bb97-6301-e809-b167" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="0029-a6ce-32ed-fd2e" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Iron Circle Maniple" hidden="false" id="69b6-f54e-63ec-7ad4" type="selectionEntry" targetId="a0e7-1d1c-2d3e-d46d" sortIndex="402">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="8a0e-aca1-c693-a9d2" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="b896-107c-a9a5-0d56" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Contekar Terminator Squad" hidden="false" id="d51d-e5bd-6aca-694f" type="selectionEntry" targetId="baca-aa73-5db0-17fa" sortIndex="801">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="e881-7066-1f98-b2f0" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="2005-0719-cf72-01c2" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Terror Squad" hidden="false" id="2050-ee8a-6308-396e" type="selectionEntry" targetId="d1bc-17f7-b3d7-ca84" sortIndex="802">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="c416-36e4-3093-9391" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="73fd-0ce2-1e04-3280" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Night Raptor Squad" hidden="false" id="43ad-5da3-5b44-c2e0" type="selectionEntry" targetId="2090-3883-5cff-e344" sortIndex="803">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="02ef-426e-387c-695b" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="1d92-dd0f-1129-95ad" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Red Butchers" hidden="false" id="a303-bc62-8d6a-1f11" type="selectionEntry" targetId="e149-7a3c-d62c-e941" sortIndex="1201">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="e749-2396-eff4-0319" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="da2b-3f16-aa12-cefd" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Rampager Squad" hidden="false" id="eb40-7916-1b27-b491" type="selectionEntry" targetId="c660-c7ad-70b0-5318" sortIndex="1202">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="ce71-1a59-3a8a-b62b" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="a0cc-7dc3-ae90-c4be" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Deathshroud Terminator Squad" hidden="false" id="f369-60ca-b8da-d276" type="selectionEntry" targetId="11a2-0875-ae7a-3da2" sortIndex="1401">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="03d0-06eb-2ada-7a95" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="e4b6-5c39-d472-94c2" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Grave Warden Terminator Squad" hidden="false" id="ab50-1a71-93d6-a253" type="selectionEntry" targetId="adff-529b-2bd1-c87f" sortIndex="1402">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="2e99-b418-ac43-9917" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="f7f0-80a5-0998-8e2c" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Sekhmet Terminator Cabal" hidden="false" id="51bc-9508-f427-061d" type="selectionEntry" targetId="c5a4-8dfe-5b4c-eef2" sortIndex="1501">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="5783-1f29-cf57-5638" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="87f2-346c-e890-2605" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Khenetai Occult Cabal" hidden="false" id="fb59-6262-344d-53e1" type="selectionEntry" targetId="3f0f-9a7b-bd90-8fd3" sortIndex="1502">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="d578-cca3-1f8c-c9b6" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="0a29-7aa7-8249-4483" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Castellax-Achea Automata" hidden="false" id="ea92-2ed1-da76-a859" type="selectionEntry" targetId="8372-11b0-af24-4996" sortIndex="1503">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="a6e5-827f-c451-5709" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="e805-5096-868b-d243" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Contemptor-Osiron Dreadnought" hidden="false" id="772e-93f6-cd9c-4bd3" type="selectionEntry" targetId="6580-3281-36a9-564a" sortIndex="1504">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="57e8-ebdc-a2ee-172f" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="124b-2c4a-f5eb-9cae" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Justaerin Terminator Squad" hidden="false" id="83b4-37a3-ea86-daf8" type="selectionEntry" targetId="3866-f18c-3b7c-3a7e" sortIndex="1601">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="d6fa-a6f7-8956-703f" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="672f-dd9e-9cae-1f93" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Reaver Attack Squad" hidden="false" id="2d7d-7084-a3f3-4755" type="selectionEntry" targetId="8010-21cf-b606-b491" sortIndex="1602">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="238c-d52c-48eb-dcd3" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="8fef-a104-8aaa-3046" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Gal Vorbak" hidden="false" id="29d7-1057-a404-365b" type="selectionEntry" targetId="bb3e-f926-23ec-c561" sortIndex="1701">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="fec8-2d8e-bfd8-8575" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="9091-912a-6576-45e9" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Mhara Gal Dreadnought" hidden="false" id="f6e6-9088-e03f-0cae" type="selectionEntry" targetId="87ac-c2df-6bd9-33e3" sortIndex="1702">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="1fe0-5adc-3022-0964" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="17b9-0799-f369-3471" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Ashen Circle" hidden="false" id="bd0f-bbe3-c21b-3d0f" type="selectionEntry" targetId="9290-f8f4-ff78-b09c" sortIndex="1703">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="9f32-c515-7c26-c947" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="e7b7-e63e-041e-212b" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Crimson Paladins" hidden="false" id="1d0d-5979-6e89-ba31" type="selectionEntry" targetId="80bb-caf1-d1fc-0e26" sortIndex="901">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="12d3-178d-7003-37d5" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="2fac-dd27-a8e7-6b64" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Dawnbreaker Cohort" hidden="false" id="d8a0-bc62-310b-9408" type="selectionEntry" targetId="410b-50c3-4f12-1c67" sortIndex="902">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="2867-abb2-ac7e-6b93" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="6794-d532-afc0-b0e9" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="The Angel&apos;s Tears" hidden="false" id="a631-3a91-3dbb-0831" type="selectionEntry" targetId="06d5-d1b3-de1f-7564" sortIndex="903">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="fd79-b34b-96f4-f4d8" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="f844-9032-2241-d851" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Contemptor-Incaendius Dreadnought" hidden="false" id="e204-8dc5-6b36-3bcf" type="selectionEntry" targetId="83ae-08c8-bdf1-ccaa" sortIndex="904">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="2e12-fbea-64a3-6a5e" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="956f-b0be-d33a-6c13" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Firedrake Terminator Squad" hidden="false" id="257b-902d-9037-7245" type="selectionEntry" targetId="09a9-6c68-9b0b-f24f" sortIndex="1801">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="d653-05c8-afeb-cc9b" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="3f04-029d-cfb0-8233" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Pyroclast Squad" hidden="false" id="fe5d-55bb-40fb-3bfe" type="selectionEntry" targetId="fbbe-aa8c-d645-7970" sortIndex="1802">
       <categoryLinks>
         <categoryLink name="Rewards of Treachery" hidden="false" id="3ba7-d01f-f429-7545" targetId="fe7f-1287-4162-a65d" primary="true"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="e96c-cbf5-b7f9-afe1" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
