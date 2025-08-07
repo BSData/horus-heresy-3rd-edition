@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="17" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="18" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -7438,7 +7438,7 @@
             </categoryLink>
             <categoryLink name="Prime Troops" hidden="false" id="01d0-2c71-843a-3b3c" targetId="c3f9-a7f3-984b-3fda">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f597-12cc-62ce-e9a2" includeChildSelections="true"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f597-12cc-62ce-e9a2" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
             <categoryLink name="Support" hidden="false" id="a8b7-9d01-976f-1195" targetId="345f-9ba6-9b02-ed5c">
