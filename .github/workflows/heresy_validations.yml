@@ -10,8 +10,11 @@ jobs:
     steps:
       - name: Checking out game system to horus-heresy
         uses: actions/checkout@v4
+      - name: Checking out BSCopy
+        uses: actions/checkout@v4
         with:
-          submodules: true
+          repository: 'nstephenh/bscopy'
+          path: 'tests/BSCopy'
       - name: Setting up Python
         uses: actions/setup-python@v4
         with:

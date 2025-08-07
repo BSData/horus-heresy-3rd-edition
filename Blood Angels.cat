@@ -64,14 +64,17 @@
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4b0-ebd3-da8a-33db-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4b0-ebd3-da8a-33db-max"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May exchange &quot;The Blade Encarmine&quot; for:" id="a533-5f83-9cbd-5e72" hidden="false" defaultSelectionEntryId="7ea1-4f9b-6ce1-9371" sortIndex="2">
+            <selectionEntryGroup name="May exchange :" id="a533-5f83-9cbd-5e72" hidden="false" defaultSelectionEntryId="7ea1-4f9b-6ce1-9371" sortIndex="2">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="The Blade Encarmine" hidden="false" id="7ea1-4f9b-6ce1-9371" sortIndex="1">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba2c-bddf-d366-e04a" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b683-57fe-bd38-4f2d" includeChildSelections="false"/>
                   </constraints>
                   <profiles>
@@ -101,65 +104,46 @@
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Spear of Telesto and Moonsilver Blade" hidden="false" id="4922-639a-6d21-2e5d" sortIndex="2">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Spear of Telesto" hidden="false" id="91e8-f1ad-ee34-6b6a" sortIndex="1">
-                      <profiles>
-                        <profile name="Spear of Telesto" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="ebe5-520c-6f72-347d">
-                          <characteristics>
-                            <characteristic name="IM" typeId="6eec-4093-f946-1014">-1</characteristic>
-                            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">-2</characteristic>
-                            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+3</characteristic>
-                            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
-                            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
-                            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Armourbane, Shock (Suppressed)</characteristic>
-                            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Armourbane" id="000f-3bcd-b755-8f90" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
-                        <infoLink name="Shock (X)" id="c8a5-7cce-6ba5-636f" hidden="false" type="rule" targetId="c6fd-28d0-3f80-672c">
-                          <modifiers>
-                            <modifier type="set" value="Shocked (Suppressed)" field="name"/>
-                          </modifiers>
-                        </infoLink>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a8d1-82bc-a044-772a" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e902-4558-d4bb-8f0d" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Moonsilver Blade" hidden="false" id="db48-332a-de4d-9137" sortIndex="2">
-                      <profiles>
-                        <profile name="Moonsilver Blade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="2f14-4171-eda1-3b7b">
-                          <characteristics>
-                            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
-                            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
-                            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
-                            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-                            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
-                            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Duellist&apos;s Edge (1)</characteristic>
-                            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Duellist&apos;s Edge (X)" id="5763-ea29-8eb9-5f1e" hidden="false" type="rule" targetId="94bc-c69f-99b6-8ba0">
-                          <modifiers>
-                            <modifier type="set" value="Duellist&apos;s Edge (1)" field="name"/>
-                          </modifiers>
-                        </infoLink>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a0b-7bc7-215a-296f" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0be-e29d-69e2-d116" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                  </selectionEntries>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="10fa-f0b0-4a45-2ada" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0662-3c67-2a73-486d" includeChildSelections="false"/>
                   </constraints>
+                  <profiles>
+                    <profile name="Spear of Telesto" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="ebe5-520c-6f72-347d">
+                      <characteristics>
+                        <characteristic name="IM" typeId="6eec-4093-f946-1014">-1</characteristic>
+                        <characteristic name="AM" typeId="03d0-6094-84f0-e27e">-2</characteristic>
+                        <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+3</characteristic>
+                        <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+                        <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+                        <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Armourbane, Shock (Suppressed)</characteristic>
+                        <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Moonsilver Blade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="2f14-4171-eda1-3b7b">
+                      <characteristics>
+                        <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+                        <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                        <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+                        <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+                        <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+                        <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Duellist&apos;s Edge (1)</characteristic>
+                        <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Shock (X)" id="c8a5-7cce-6ba5-636f" hidden="false" type="rule" targetId="c6fd-28d0-3f80-672c">
+                      <modifiers>
+                        <modifier type="set" value="Shocked (Suppressed)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Armourbane" id="000f-3bcd-b755-8f90" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+                    <infoLink name="Duellist&apos;s Edge (X)" id="5763-ea29-8eb9-5f1e" hidden="false" type="rule" targetId="94bc-c69f-99b6-8ba0">
+                      <modifiers>
+                        <modifier type="set" value="Duellist&apos;s Edge (1)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
