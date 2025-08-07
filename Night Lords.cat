@@ -599,25 +599,65 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
             <selectionEntryGroup name="Exchange chainsword for:" id="7dfc-9eac-d171-f2ed" hidden="false" defaultSelectionEntryId="db65-7241-cf9c-6c47">
               <entryLinks>
                 <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="60a2-4128-a80d-660e" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963"/>
-                <entryLink import="true" name="Chainsword" hidden="false" id="db65-7241-cf9c-6c47" type="selectionEntry" targetId="78f4-4967-2896-c3a5"/>
-                <entryLink import="true" name="Chainglave" hidden="false" id="7442-b158-e0fc-58c7" type="selectionEntry" targetId="fabe-1fd4-0f6f-fb52">
-                  <modifiers>
-                    <modifier type="set" value="15" field="9893-c379-920b-8982"/>
-                  </modifiers>
+                <entryLink import="true" name="Chainsword" hidden="false" id="db65-7241-cf9c-6c47" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="984d-a657-3b2f-97a7"/>
+                  </constraints>
                 </entryLink>
-                <entryLink import="true" name="Bolter" hidden="false" id="a108-6c39-d324-5f0c" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e"/>
+                <entryLink import="true" name="Chainglave" hidden="false" id="7442-b158-e0fc-58c7" type="selectionEntry" targetId="fabe-1fd4-0f6f-fb52" sortIndex="9">
+                  <modifiers>
+                    <modifier type="set" value="5" field="9893-c379-920b-8982"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a908-a69d-6e67-4c8b"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Bolter" hidden="false" id="a108-6c39-d324-5f0c" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b06e-2536-9773-26bf"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Volkite charger" hidden="false" id="fe69-566a-47f3-afe3" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="6">
+                  <modifiers>
+                    <modifier type="set" value="2" field="9893-c379-920b-8982"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d903-76d2-d065-c581"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Flamer" hidden="false" id="5725-221d-84d7-b426" type="selectionEntry" targetId="9a45-35cd-3806-2303" sortIndex="5">
+                  <modifiers>
+                    <modifier type="set" value="5" field="9893-c379-920b-8982"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b08-d84d-f4e0-eda1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Rotor cannon" hidden="false" id="1ae4-f656-4a9e-efd4" type="selectionEntry" targetId="05bf-af5e-be67-36a2" sortIndex="7">
+                  <modifiers>
+                    <modifier type="set" value="5" field="9893-c379-920b-8982"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15ee-6257-445c-c8b1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Chainaxe" hidden="false" id="b95a-d8ee-ba62-b038" type="selectionEntry" targetId="31a4-f8de-de6d-1fd9" sortIndex="8">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3bfc-8bc2-26c8-01b5"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="25a2-7aa4-27e5-49f2"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3940-34a4-92fb-d4fa"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Bolter w/ bayonet" hidden="false" id="c0f6-2663-0095-bf88">
+                <selectionEntry type="upgrade" import="true" name="Bolter w/ bayonet" hidden="false" id="c0f6-2663-0095-bf88" sortIndex="3">
                   <entryLinks>
                     <entryLink import="true" name="Bolter" hidden="false" id="e80c-3721-c86a-7b63" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e">
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e30f-d99e-ff9f-ef9a"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ec7-056f-9968-74c5"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3e9c-7953-2dee-122a"/>
                       </constraints>
                     </entryLink>
                     <entryLink import="true" name="Bayonet" hidden="false" id="b725-7f34-fcb8-f780" type="selectionEntry" targetId="3484-1bd3-cb74-7abe" sortIndex="1">
@@ -627,8 +667,14 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="1" field="9893-c379-920b-8982"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97f4-5025-2866-db31"/>
+                  </constraints>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Bolter w/ chain bayonet" hidden="false" id="7491-cd39-5471-124b">
+                <selectionEntry type="upgrade" import="true" name="Bolter w/ chain bayonet" hidden="false" id="7491-cd39-5471-124b" sortIndex="4">
                   <entryLinks>
                     <entryLink import="true" name="Chain bayonet" hidden="false" id="b4b1-e8b6-6414-85fc" type="selectionEntry" targetId="e410-d998-bd3e-c0ea">
                       <constraints>
@@ -643,6 +689,12 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="2" field="9893-c379-920b-8982"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="258c-04f3-a8a2-0bc0"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -705,7 +757,7 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4263-1501-3afb-8ccd"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Volkite charger" hidden="false" id="f82a-1384-c91b-e816" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="5">
+                <entryLink import="true" name="Volkite charger" hidden="false" id="f82a-1384-c91b-e816" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="6">
                   <modifiers>
                     <modifier type="set" value="2" field="9893-c379-920b-8982"/>
                   </modifiers>
@@ -713,7 +765,7 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed38-4f04-6ad1-9509"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Rotor cannon" hidden="false" id="320a-d657-cbbe-0cb9" type="selectionEntry" targetId="05bf-af5e-be67-36a2" sortIndex="6">
+                <entryLink import="true" name="Rotor cannon" hidden="false" id="320a-d657-cbbe-0cb9" type="selectionEntry" targetId="05bf-af5e-be67-36a2" sortIndex="7">
                   <modifiers>
                     <modifier type="set" value="5" field="9893-c379-920b-8982"/>
                   </modifiers>
@@ -729,12 +781,12 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d9d-60df-9288-ffef"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Chainaxe" hidden="false" id="8cf4-09c5-fdac-126b" type="selectionEntry" targetId="31a4-f8de-de6d-1fd9" sortIndex="7">
+                <entryLink import="true" name="Chainaxe" hidden="false" id="8cf4-09c5-fdac-126b" type="selectionEntry" targetId="31a4-f8de-de6d-1fd9" sortIndex="8">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0d8-4d1a-ed9c-814f"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Chainglave" hidden="false" id="4131-2a79-2dc2-68d3" type="selectionEntry" targetId="fabe-1fd4-0f6f-fb52" sortIndex="8">
+                <entryLink import="true" name="Chainglave" hidden="false" id="4131-2a79-2dc2-68d3" type="selectionEntry" targetId="fabe-1fd4-0f6f-fb52" sortIndex="9">
                   <modifiers>
                     <modifier type="set" value="5" field="9893-c379-920b-8982"/>
                   </modifiers>
@@ -766,6 +818,9 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb93-f831-f7c4-db5f"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="1" field="9893-c379-920b-8982"/>
+                  </modifiers>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Bolter w/ chain bayonet" hidden="false" id="f76c-94b6-76fb-0843" sortIndex="4">
                   <entryLinks>
@@ -785,6 +840,9 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ceeb-6dfd-e6e8-55c9"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="2" field="9893-c379-920b-8982"/>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
