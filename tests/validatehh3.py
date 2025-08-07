@@ -21,6 +21,7 @@ class GameTests(unittest.TestCase):
     def test_root_link_categories(self):
         expected_primaries = Heresy3e.BATTLEFIELD_ROLES.copy()
         expected_primaries += ['Army Configuration', 'Rewards of Treachery']
+        expected_secondaries = Heresy3e.FACTIONS.copy()
         for file in self.system.files:
             entry_links_node = file.root_node.get_child(tag='entryLinks')
             if entry_links_node is None:
@@ -35,6 +36,12 @@ class GameTests(unittest.TestCase):
                     self.assertIn(primary_cat.target_name, expected_primaries,
                                   f"(The link's primary category) is a battlefield role: "
                                   )
+                    for other_link in category_links.children:
+                        if other_link.id == primary_cat.id:
+                            continue  # Skip the primary we've already checked.
+                        self.assertIn(other_link.target_name, expected_secondaries,
+                                      f"(The link's primary category) is a faction: "
+                                      )
 
     if __name__ == '__main__':
         unittest.main()
