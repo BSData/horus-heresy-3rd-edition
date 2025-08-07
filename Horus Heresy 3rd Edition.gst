@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="17" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="18" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -6207,11 +6207,6 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Fast Attack" hidden="false" id="97e8-2163-0909-fe83" targetId="c291-144b-3da6-37ed">
@@ -7414,7 +7409,7 @@
             </categoryLink>
             <categoryLink name="Prime Troops" hidden="false" id="01d0-2c71-843a-3b3c" targetId="c3f9-a7f3-984b-3fda">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f597-12cc-62ce-e9a2" includeChildSelections="true"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f597-12cc-62ce-e9a2" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
             <categoryLink name="Support" hidden="false" id="a8b7-9d01-976f-1195" targetId="345f-9ba6-9b02-ed5c">
@@ -9717,7 +9712,7 @@
             <categoryLink name="Auxiliary Detachment" hidden="false" id="0e92-d177-5376-cb00" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Elites - Seeker Squads or Headhunter Kill Teams Only" hidden="false" id="832a-df38-fd99-3ca0" targetId="5c0d-4d49-44e2-0a99">
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ddb5-036a-fe48-d088"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ddb5-036a-fe48-d088"/>
               </constraints>
               <modifiers>
                 <modifier type="increment" value="1" field="ddb5-036a-fe48-d088">

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="17" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="18" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
-        <selectionEntry type="unit" import="true" name="Rapier Crew" hidden="false" id="e089-b99c-4813-20b4" collective="false" flatten="false" sortIndex="1">
+        <selectionEntry type="unit" import="true" name="Rapier Crew" hidden="false" id="e089-b99c-4813-20b4" collective="false" flatten="false" sortIndex="1" subType="unit-group">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Legionary" hidden="false" id="20f6-f04f-2bdd-0e90" sortIndex="1" flatten="false">
               <profiles>
@@ -120,22 +120,95 @@
                 </entryLink>
                 <entryLink import="true" name="Quad launcher" hidden="false" id="1e36-18fd-6d28-28e1" type="selectionEntry" targetId="feb2-84a7-0b35-8f1b" sortIndex="4">
                   <modifiers>
-                    <modifier type="set" value="Quad Launcher (with frag and shatter shells)" field="name"/>
+                    <modifier type="set" value="Quad Launcher - (Frag) (Shatter)" field="name"/>
                     <modifier type="set" value="20" field="9893-c379-920b-8982"/>
                   </modifiers>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Phosphex canister shot (req. Siege Breaker)" hidden="false" id="8e1a-b3e0-a8de-76a4">
+                    <selectionEntry type="upgrade" import="true" name="Phosphex Canister Shot" hidden="true" id="8e1a-b3e0-a8de-76a4" flatten="false">
                       <modifiers>
                         <modifier type="set" value="15" field="9893-c379-920b-8982"/>
-                        <modifier type="set" value="1" field="20f6-b3fa-3e01-dec7">
+                        <modifier type="set" value="false" field="hidden">
                           <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="bd9b-8e97-b137-105d" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="8128-2ba6-b677-eb81" shared="true" includeChildSelections="true" includeChildForces="true"/>
                           </conditions>
                         </modifier>
                       </modifiers>
                       <constraints>
-                        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="20f6-b3fa-3e01-dec7"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="20f6-b3fa-3e01-dec7"/>
                       </constraints>
+                      <profiles>
+                        <profile name="Phosphex Canister Shot" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="true" id="cc77-38f6-40d5-1cdd">
+                          <characteristics>
+                            <characteristic name="R" typeId="cdb0-8654-6840-1037">24</characteristic>
+                            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+                            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">5</characteristic>
+                            <characteristic name="AP" typeId="7a23-0248-2b94-5951">3</characteristic>
+                            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+                            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Blast (3&quot;), Barrage (1), Poisoned (3+), Panic (3), Breaching (5+)</characteristic>
+                            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Phosphex</characteristic>
+                          </characteristics>
+                          <modifiers>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8128-2ba6-b677-eb81" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Poisoned (X)" id="f060-21cb-4051-21dc" hidden="true" type="rule" targetId="076f-2c91-c58b-71b3">
+                          <comment>3+ (Phosphex canister shot)</comment>
+                          <modifiers>
+                            <modifier type="set" value="Poisoned (3+)" field="name"/>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8128-2ba6-b677-eb81" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </infoLink>
+                        <infoLink name="Barrage (X)" id="fc9e-5a4d-a0a8-15b2" hidden="true" type="rule" targetId="85f5-3a91-69f4-c3b7">
+                          <modifiers>
+                            <modifier type="set" value="Barrage (1)" field="name"/>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8128-2ba6-b677-eb81" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                          <comment>1 (Phosphex canister shot)</comment>
+                        </infoLink>
+                        <infoLink name="Breaching (X)" id="2406-543b-9672-92f6" hidden="true" type="rule" targetId="b094-0b64-eb57-aed6">
+                          <modifiers>
+                            <modifier type="set" value="Breaching (5+)" field="name"/>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8128-2ba6-b677-eb81" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                          <comment>5+ (Phosphex canister shot)</comment>
+                        </infoLink>
+                        <infoLink name="Panic (X)" id="acbd-fc5f-576d-9b24" hidden="true" type="rule" targetId="82a7-f471-3fda-6ca1">
+                          <comment>3 (Phosphex canister shot)</comment>
+                          <modifiers>
+                            <modifier type="set" value="Panic (3)" field="name"/>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8128-2ba6-b677-eb81" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </infoLink>
+                      </infoLinks>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                      </costs>
                     </selectionEntry>
                   </selectionEntries>
                 </entryLink>
@@ -165,7 +238,16 @@
       </infoLinks>
       <rules>
         <rule name="Rapier Crew" id="bb6b-cfc9-84ba-da88" hidden="false">
-          <description>&quot;The Characteristics of different Models with this Special Rule are used in different situations&quot;</description>
+          <description>&quot;The Characteristics of different Models with this Special Rule are used in different situations&quot;
+
+
+Each time Wound Tests are made for a Fire Group that targets a Unit that includes any Models with this Special Rule, if any Rapier Carrier Models are in this Unit, the Toughness Characteristic of the Rapier Carrier is treated as being the majority. If any wounds are generated by these Wound Tests, the Target Model selected must be a Rapier Carrier Model if possible.
+
+
+Each time Wound Tests are made for a Strike Group targetting this Unit, the Toughness Characteristic of the Legionary Models are treated as being the majority. If any wounds are generated by these Wound Tests, the Target Model selected must be a Legionary Model, if possible.
+
+
+If at any point there are only Rapier Carrier Models remaining in this Unit, those Models are immediately Removed as Casualties.</description>
         </rule>
       </rules>
       <categoryLinks>
