@@ -43,5 +43,5 @@ class GameTests(unittest.TestCase):
                                       f"(The link's primary category) is a faction: "
                                       )
 
-    if __name__ == '__main__':
-        unittest.main()
+if __name__ == '__main__':
+    unittest.main()
