@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="18" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="19" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -11919,7 +11919,7 @@
             <categoryLink name="Rewards of Treachery" hidden="false" id="f2b2-8c74-65bf-19e4" targetId="fe7f-1287-4162-a65d"/>
           </categoryLinks>
         </forceEntry>
-        <forceEntry name="Unrestricted Temporarily before we link all the forces" id="2432-e5a1-76d4-0bb6" hidden="true">
+        <forceEntry name="Unrestricted Temporarily before we link all the forces" id="2432-e5a1-76d4-0bb6" hidden="false">
           <categoryLinks>
             <categoryLink name="High Command" hidden="false" id="e9a4-1580-6053-02d7" targetId="d9a6-9b5f-b18a-4d63"/>
             <categoryLink name="Prime High Command" hidden="false" id="178f-29b8-c0d6-333c" targetId="3568-ad75-b452-3137"/>
