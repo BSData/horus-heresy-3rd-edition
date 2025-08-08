@@ -14308,36 +14308,11 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Combat shield" hidden="false" id="3e10-365b-c98e-a35b" type="selectionEntry" targetId="5606-f0ad-360b-fe5b" sortIndex="14">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d186-cffc-0950-f632" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
+        <entryLink import="true" name="Combat shield" hidden="false" id="3e10-365b-c98e-a35b" type="selectionEntry" targetId="5606-f0ad-360b-fe5b" sortIndex="14"/>
         <entryLink import="true" name="Boarding shield" hidden="false" id="85b1-0089-f754-c9a6" type="selectionEntry" targetId="01e9-334c-80cb-f1c6" sortIndex="15">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d186-cffc-0950-f632" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
         </entryLink>
         <entryLink import="true" name="Charnabal sabre" hidden="false" id="7634-d6fc-c76f-2b8f" type="selectionEntry" targetId="e85f-734a-c587-e88b" sortIndex="9">
           <costs>
@@ -14357,9 +14332,10 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
         </entryLink>
-      </entryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Shield" id="a2ea-0e33-c0bf-297c" hidden="true" sortIndex="16">
+        <entryLink import="true" name="Vigil Pattern Storm Shield" hidden="true" id="5ed9-9aa8-19a6-067b" type="selectionEntry" targetId="5a0f-6c10-fa26-5171" sortIndex="16">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+          </costs>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -14372,35 +14348,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </conditionGroups>
             </modifier>
           </modifiers>
-          <entryLinks>
-            <entryLink import="true" name="Combat shield" hidden="false" id="d179-c468-c3f2-da98" type="selectionEntry" targetId="5606-f0ad-360b-fe5b">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3af0-b781-95f4-a978"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Boarding shield" hidden="false" id="8d3c-ecaf-e157-8351" type="selectionEntry" targetId="01e9-334c-80cb-f1c6">
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14f0-89e6-de96-0081"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Vigil Pattern Storm Shield" hidden="false" id="5ed9-9aa8-19a6-067b" type="selectionEntry" targetId="5a0f-6c10-fa26-5171">
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6572-d1a2-c22b-5b01"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="493b-b29d-f32c-7d82"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d4f-d07a-c9b8-fa18"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Legion Equipment" id="0e69-ccf1-cde7-acaf" hidden="false" sortIndex="7" collapsible="true">
       <entryLinks>
