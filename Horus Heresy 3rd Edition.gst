@@ -12334,7 +12334,7 @@
         <categoryLink targetId="c5ac-45c2-a8a9-e32c" id="634b-1cfa-5d38-8e47" primary="true" name="Open Beta Release"/>
       </categoryLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e075-1f6c-ff36-8e11" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e075-1f6c-ff36-8e11" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="DON&apos;T SUBMIT BUGS FOR NOT IMPLEMENTED FUNCTIONALITY. See export for list." hidden="false" id="cd4a-d335-2d3a-91e0" defaultAmount="1">
@@ -12353,7 +12353,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <categoryLink targetId="c5ac-45c2-a8a9-e32c" id="c2fc-1eaf-255b-2b13" primary="true" name="Open Beta Release"/>
       </categoryLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="27a5-7dd1-f626-57f9" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27a5-7dd1-f626-57f9" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Auxilary Detachment" hidden="false" id="f96f-02f1-599b-9fc5">
@@ -12392,7 +12392,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <categoryLink targetId="c5ac-45c2-a8a9-e32c" id="dd6f-133a-bce9-47c6" primary="true" name="Open Beta Release"/>
       </categoryLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3d64-6d20-68af-83f1" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d64-6d20-68af-83f1" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
   </selectionEntries>
