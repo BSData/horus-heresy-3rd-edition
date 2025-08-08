@@ -11914,7 +11914,7 @@
             <categoryLink name="Rewards of Treachery" hidden="false" id="f2b2-8c74-65bf-19e4" targetId="fe7f-1287-4162-a65d"/>
           </categoryLinks>
         </forceEntry>
-        <forceEntry name="Unrestricted Temporarily before we link all the forces" id="2432-e5a1-76d4-0bb6" hidden="true">
+        <forceEntry name="Unrestricted Temporarily before we link all the forces" id="2432-e5a1-76d4-0bb6" hidden="false">
           <categoryLinks>
             <categoryLink name="High Command" hidden="false" id="e9a4-1580-6053-02d7" targetId="d9a6-9b5f-b18a-4d63"/>
             <categoryLink name="Prime High Command" hidden="false" id="178f-29b8-c0d6-333c" targetId="3568-ad75-b452-3137"/>
