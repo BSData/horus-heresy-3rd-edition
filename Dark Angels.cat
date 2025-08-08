@@ -235,7 +235,7 @@
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="1a0b-532d-c547-940d" primary="false" name="Master of the Legion"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="The Blade" hidden="false" id="cb76-bb4b-7531-63f4" sortIndex="3">
+        <selectionEntry type="upgrade" import="true" name="The Blade" hidden="false" id="cb76-bb4b-7531-63f4">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6864-23ff-7a13-cbb0" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="696c-2fc0-aad5-07ed" includeChildSelections="false"/>
@@ -284,6 +284,12 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink name="[Legiones Astartes]" id="d5e7-981c-30ec-51ec" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+            <infoLink name="[Allegiance]" id="12ce-f039-5d6b-6b97" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+            <infoLink name="Master of the Legion" id="6338-4de0-4716-78b3" hidden="false" type="profile" targetId="6cd2-96be-b703-6d57"/>
+            <infoLink name="The Angels of Death" id="78cb-cf17-42e6-3545" hidden="false" type="rule" targetId="7fd2-c16b-0e15-9de7"/>
+          </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f289-cd73-d2fb-2e26" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3d5-f654-6b0c-67e7" includeChildSelections="false"/>
@@ -1089,12 +1095,15 @@ Models with this Special Rule may never have their Leadership Characteristic mod
         <infoLink name="[Allegiance]" id="a9a3-fb77-cdf6-6e98" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="23fa-8638-3a29-fd50" hidden="false" type="profile" targetId="641c-ca0a-7093-4525">
           <modifiers>
-            <modifier type="set" value="Dark Angels" field="name">
-              <conditions>
-                <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
-              </conditions>
-            </modifier>
+            <modifier type="set" value="Breaching (5+) (Maximal)" field="name"/>
           </modifiers>
+          <comment>5+ (Maximal)</comment>
+        </infoLink>
+        <infoLink name="Overload (X)" id="6d71-9ac2-0df7-520d" hidden="false" type="rule" targetId="1d3a-d1e2-871a-63ae">
+          <modifiers>
+            <modifier type="set" value="Overload (1)" field="name"/>
+          </modifiers>
+          <comment>1 (Maximal)</comment>
         </infoLink>
         <infoLink name="Master of the Legion" id="bbfc-a11e-f625-adc3" hidden="false" type="profile" targetId="6cd2-96be-b703-6d57"/>
         <infoLink name="Bulky (X)" id="feba-3717-9e84-88d3" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
@@ -1238,9 +1247,8 @@ The Lion&apos;s Choler: If this Gambit is selected, the Model for which this Gam
         <infoLink name="Master of the Legion" id="7a90-d562-3135-d7be" hidden="false" type="profile" targetId="6cd2-96be-b703-6d57"/>
         <infoLink name="Bulky (X)" id="e443-1f06-9162-6ae2" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
           <modifiers>
-            <modifier type="set" value="Bulky (2)" field="name"/>
+            <modifier type="set" value="Poisoned (2+)" field="name"/>
           </modifiers>
-          <comment>2</comment>
         </infoLink>
         <infoLink name="Heavy Unit Sub-type" id="8a49-43c2-2026-0ccc" hidden="false" type="rule" targetId="7d35-4d6f-c4fe-4aac"/>
         <infoLink name="Implacable Advance" id="0c0f-e8e0-89dd-ed09" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>

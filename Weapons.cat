@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="a22d-4dd0-c59d-57d3" name="Weapons" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="6" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue library="true" id="a22d-4dd0-c59d-57d3" name="Weapons" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="7" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="2942-f783-d627-33c5">
       <profiles>
@@ -135,7 +135,7 @@
         <profile name="Bolter" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="1ec7-f2ae-0123-5766">
           <characteristics>
             <characteristic name="R" typeId="cdb0-8654-6840-1037">24</characteristic>
-            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
             <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">4</characteristic>
             <characteristic name="AP" typeId="7a23-0248-2b94-5951">5</characteristic>
             <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
@@ -5402,10 +5402,6 @@
         </infoLink>
         <infoLink name="Pistol" id="bd76-f96b-6aab-30d1" hidden="false" type="rule" targetId="2bf6-55c8-6810-a71c"/>
       </infoLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7221-b7a7-c76c-4053" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a11-8451-c7bb-462c" includeChildSelections="false"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Blade of Perdition" hidden="false" id="a3a1-84f7-4e23-3ed6">
       <profiles>
@@ -5945,52 +5941,6 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Terranic greatsword" hidden="false" id="800e-2f42-8c1f-f7c6">
-      <profiles>
-        <profile name="Terranic greatsword" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="59dd-7d42-f862-3cde" publicationId="b905-0414-1057-bb34">
-          <characteristics>
-            <characteristic name="IM" typeId="6eec-4093-f946-1014">-1</characteristic>
-            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
-            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
-            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
-            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+)</characteristic>
-            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Sword of the Order</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Breaching (X)" id="431e-96a7-67b5-e53b" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
-          <modifiers>
-            <modifier type="set" value="Breaching (5+)" field="name"/>
-          </modifiers>
-          <comment>5+</comment>
-        </infoLink>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Calibanite warblade" hidden="false" id="cfba-5c0b-796b-0897">
-      <profiles>
-        <profile name="Calibanite warblade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="ec74-9fbc-08f7-9336" publicationId="b905-0414-1057-bb34">
-          <characteristics>
-            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
-            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
-            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+1</characteristic>
-            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
-            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+)</characteristic>
-            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Sword of the Order</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Breaching (X)" id="a8e8-4789-4a0a-a2eb" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
-          <modifiers>
-            <modifier type="set" value="Breaching (5+)" field="name"/>
-          </modifiers>
-          <comment>5+</comment>
-        </infoLink>
-      </infoLinks>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Power Weapon" id="d23f-b4f0-0127-9394" hidden="false" collapsible="true" flatten="true">
@@ -6086,7 +6036,6 @@
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
                       </conditions>
                     </conditionGroup>
@@ -6203,6 +6152,134 @@
               <comment>SL+Sgt/Cmd/Spec/Champ Only</comment>
             </modifier>
           </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Blade of Perdition" hidden="true" id="e85b-1978-15b8-1cfd" type="selectionEntry" targetId="a3a1-84f7-4e23-3ed6" sortIndex="9">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>BA</comment>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>BA+Sgt/Cmd/Spec/Champ Only</comment>
+            </modifier>
+            <modifier type="set" value="5" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Axe of Perdition" hidden="true" id="c4e8-755b-5727-3a3c" type="selectionEntry" targetId="81b3-438e-041a-35ee" sortIndex="10">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>BA</comment>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>BA+Sgt/Cmd/Spec/Champ Only</comment>
+            </modifier>
+            <modifier type="set" value="5" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Maul of Perdition" hidden="true" id="c4d3-1708-eb29-a941" type="selectionEntry" targetId="5cd6-6c5c-b464-4b27" sortIndex="11">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>BA</comment>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>BA+Sgt/Cmd/Spec/Champ Only</comment>
+            </modifier>
+            <modifier type="set" value="5" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Spear of Perdition" hidden="true" id="15c6-f510-d0b9-89ad" type="selectionEntry" targetId="9aca-66f6-501e-d86d" sortIndex="12">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>BA</comment>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>BA+Sgt/Cmd/Spec/Champ Only</comment>
+            </modifier>
+            <modifier type="set" value="5" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
