@@ -1,2 +1,193 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="258b-97fb-2366-7344" name="Agents of the Divisio Assassinorum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="9" revision="1" authorName="Arkangelmark5" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema"/>
+<catalogue library="false" id="258b-97fb-2366-7344" name="Agents of the Divisio Assassinorum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="9" revision="2" authorName="Arkangelmark5" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Weapons" id="e095-86bd-1d10-de08" targetId="a22d-4dd0-c59d-57d3"/>
+    <catalogueLink type="catalogue" name="Assets" id="ba6b-2738-9cab-26e4" targetId="5334-5605-242c-d75e"/>
+    <catalogueLink type="catalogue" name="Special Rules" id="be5f-b343-387b-6699" targetId="106b-693b-99f2-00c3"/>
+    <catalogueLink type="catalogue" name="Traits" id="85ff-73e2-4dd2-e6ab" targetId="df17-7a05-0826-6e22"/>
+    <catalogueLink type="catalogue" name="Wargear" id="fbac-7671-b08a-a225" targetId="fcc7-4319-bb04-2c25"/>
+  </catalogueLinks>
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Vindicare Assassin" hidden="false" id="04c4-a7e6-0ba9-1959">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Vindicare Assassin" hidden="false" id="aaee-54f7-81f3-f154">
+          <profiles>
+            <profile name="Vindicare Assassin" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="ecfa-565d-f479-4672">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Light)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">8</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">7</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">3</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">2</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">10</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">10</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">4+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="724b-bae0-83e7-599f" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="f4ba-00e5-3d2e-eaac" id="2324-2930-71dc-351d" primary="false" name="Light Model Sub-Type"/>
+            <categoryLink targetId="af7f-ce65-7fad-6d0e" id="06c8-aae9-619a-4cce" primary="false" name="Talons of the Emperor"/>
+            <categoryLink targetId="4381-ed35-c3fa-a225" id="9894-2a40-fc83-bf1f" primary="false" name="Loyalist"/>
+            <categoryLink targetId="dd45-f18a-a4c2-1ff0" id="dd5f-b8bf-17a3-fb7c" primary="false" name="Divisio Assassinorum"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Exitus rifle" hidden="false" id="05a8-3db1-0a65-7110" sortIndex="1">
+              <profiles>
+                <profile name="Exitus rifle" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="5cb8-e606-9dc6-c57d">
+                  <characteristics>
+                    <characteristic name="R" typeId="cdb0-8654-6840-1037">100</characteristic>
+                    <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+                    <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">7</characteristic>
+                    <characteristic name="AP" typeId="7a23-0248-2b94-5951">-</characteristic>
+                    <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
+                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Ordnance (AP), Precision (2+), Pinning (1)</characteristic>
+                    <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Pinning (X)" id="2a25-8607-52cc-1e4c" hidden="false" type="rule" targetId="88b6-6493-e4d7-1805">
+                  <modifiers>
+                    <modifier type="set" value="Pinning (1)" field="name"/>
+                  </modifiers>
+                  <comment>1</comment>
+                </infoLink>
+                <infoLink name="Ordnance (X)" id="95b8-b35e-7211-1257" hidden="false" type="rule" targetId="b6b3-909a-b78a-3dbf">
+                  <modifiers>
+                    <modifier type="set" value="Ordnance (AP)" field="name"/>
+                  </modifiers>
+                  <comment>AP</comment>
+                </infoLink>
+                <infoLink name="Precision (X)" id="1bf4-5b04-3538-dbf0" hidden="false" type="rule" targetId="4fbd-e0bc-8f72-6e3f">
+                  <modifiers>
+                    <modifier type="set" value="Precision (2+)" field="name"/>
+                  </modifiers>
+                  <comment>2+</comment>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Assassin’s blade" hidden="false" id="5dea-b266-c20b-78b2" sortIndex="3">
+              <profiles>
+                <profile name="Assassin’s blade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="462f-0d0e-c2ca-d0e4">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+)</characteristic>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Breaching (X)" id="2a41-cb5b-f84a-74a1" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+                  <modifiers>
+                    <modifier type="set" value="Breaching (6+)" field="name"/>
+                  </modifiers>
+                  <comment>6+</comment>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Exitus pistol" hidden="false" id="74a2-4df0-2dc2-cf5f" sortIndex="2">
+              <profiles>
+                <profile name="Exitus pistol" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="982a-b128-f64e-3cf8">
+                  <characteristics>
+                    <characteristic name="R" typeId="cdb0-8654-6840-1037">12</characteristic>
+                    <characteristic name="FP" typeId="5037-1f27-1790-e355">3</characteristic>
+                    <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+                    <characteristic name="AP" typeId="7a23-0248-2b94-5951">3</characteristic>
+                    <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Pistol, Precision (4+)</characteristic>
+                    <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Assault</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Pistol" id="1ae9-3622-28f0-b1aa" hidden="false" type="rule" targetId="2bf6-55c8-6810-a71c"/>
+                <infoLink name="Precision (X)" id="dbab-b30d-dcc2-a31b" hidden="false" type="rule" targetId="4fbd-e0bc-8f72-6e3f">
+                  <modifiers>
+                    <modifier type="set" value="Precision (4+)" field="name"/>
+                  </modifiers>
+                  <comment>4+</comment>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Shock (X)" id="5364-0b12-3861-7868" hidden="false" type="rule" targetId="c6fd-28d0-3f80-672c">
+              <modifiers>
+                <modifier type="set" value="Shock (Pinned, Suppressed)" field="name"/>
+              </modifiers>
+              <comment>Pinned, Suppressed</comment>
+            </infoLink>
+            <infoLink name="Murderous (X)" id="0993-0ca8-f25d-3a29" hidden="false" type="rule" targetId="9831-ebe0-b010-dc51">
+              <modifiers>
+                <modifier type="set" value="Murderous (5+)_" field="name"/>
+              </modifiers>
+              <comment>5+</comment>
+            </infoLink>
+            <infoLink name="Heedless" id="d8cc-4900-d7fe-eaa8" hidden="false" type="rule" targetId="a3f3-72c6-7e01-6cab"/>
+            <infoLink name="Move Through Cover" id="d0c5-0e1f-51d8-4078" hidden="false" type="rule" targetId="44d9-f20d-00bf-dc98"/>
+            <infoLink name="Infiltrate (X)" id="145b-0241-2fb1-9247" hidden="false" type="rule" targetId="f330-254e-1a98-798a">
+              <modifiers>
+                <modifier type="set" value="Infiltrate (9)" field="name"/>
+              </modifiers>
+              <comment>9</comment>
+            </infoLink>
+            <infoLink name="Shrouded (X)" id="f373-d365-7470-4485" hidden="false" type="rule" targetId="c7e7-3bad-3de0-d6cc">
+              <modifiers>
+                <modifier type="set" value="Shrouded (5+)" field="name"/>
+              </modifiers>
+              <comment>5+</comment>
+            </infoLink>
+            <infoLink name="Shred (X)" id="b86e-e766-b98e-898d" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
+              <modifiers>
+                <modifier type="set" value="Shred (5+)" field="name"/>
+              </modifiers>
+              <comment>5+</comment>
+            </infoLink>
+          </infoLinks>
+          <rules>
+            <rule name="Deadshot" id="f324-cfdc-cdd0-eef3" hidden="false">
+              <description>Models with this Special Rule ignore Shrouded (X) Damage Mitigation Saves and never have to make Snap Shots if they remain Stationary, and gain one optional additional Special Rule when making a Shooting Attack.
+
+
+When a Shooting Attack is made for a Model with this Special Rule in the Controlling Player’s Shooting Phase, if that Model remained Stationary during the Controlling Player’s previous Movement Phase, that Shooting Attack never has to be made as Snap Shots and Shrouded (X) Damage Mitigation Rolls may never be made against Hits inflicted as part of that Shooting Attack.
+
+
+Additionally, when a Shooting Attack is made for a Model with this Special Rule, at the start of Step 3 of the Shooting Attack procedure, the Attacking Player can select one of the following Special Rules to apply to all Weapons that Model has for the duration of that Shooting Attack:
+• Murderous (5+)
+• Shred (5+)
+• Shock (Pinned, Suppressed)</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <categoryEntries>
+    <categoryEntry name="Divisio Assassinorum" id="dd45-f18a-a4c2-1ff0" hidden="false">
+      <infoLinks>
+        <infoLink name="Nemesis" id="6b37-effc-fe14-1432" hidden="false" type="rule" targetId="7aee-7482-4d18-afad"/>
+      </infoLinks>
+    </categoryEntry>
+  </categoryEntries>
+  <sharedRules>
+    <rule name="Nemesis" id="7aee-7482-4d18-afad" hidden="false" publicationId="09c6-1c1d-03a7-9556">
+      <description>Unless it is the closest enemy Model, Shooting Attacks which target a Model with this Special Rule are always made as Snap Shots.
+
+
+When a Unit that includes only Models with this Special Rule is the target of a Shooting Attack, all attacks made as part of that Shooting Attack must be made as Snap Shots, unless that Unit is the closest enemy Unit to the Unit making the Shooting Attack. This Special Rule has no effect on Volley Attacks and attacks made with the Precision (X) Special Rule</description>
+    </rule>
+  </sharedRules>
+</catalogue>
