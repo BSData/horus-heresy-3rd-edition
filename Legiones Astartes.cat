@@ -11852,34 +11852,36 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May exchange cyclone missile launcher for:" id="fc82-2177-9a0c-2010" hidden="false" sortIndex="1">
-              <infoLinks>
-                <infoLink name="Lascannon" id="88be-6763-9a75-487f" hidden="false" type="selectionEntry" targetId="b6d5-4be2-c37e-2197" sortIndex="4">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                  </costs>
-                </infoLink>
-                <infoLink name="Heavy flamer" id="3925-bccb-33e6-7412" hidden="false" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="2">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-                  </costs>
-                </infoLink>
-                <infoLink name="Heavy bolter" id="98ef-7a9d-a40c-b44b" hidden="false" type="selectionEntry" targetId="bc40-b14a-978e-0232" defaultAmount="2" sortIndex="3">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-                  </costs>
-                </infoLink>
-                <infoLink name="Volkite culverin" id="9142-45c5-f92b-83a1" hidden="false" type="selectionEntry" targetId="fcf0-9c1b-d51e-6bc7" sortIndex="5">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                  </costs>
-                </infoLink>
-                <infoLink name="Cyclone missile launcher" id="8a7a-cd98-a6e2-8b3e" hidden="false" type="selectionEntry" targetId="b341-159d-9dfb-ff31" sortIndex="1">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-                  </costs>
-                </infoLink>
-              </infoLinks>
+            <selectionEntryGroup name="May exchange cyclone missile launcher for:" id="fc82-2177-9a0c-2010" hidden="false" sortIndex="1" defaultSelectionEntryId="c357-41d9-a1b2-2104">
+              <entryLinks>
+                <entryLink import="true" name="Cyclone missile launcher" hidden="false" id="c357-41d9-a1b2-2104" type="selectionEntry" targetId="b341-159d-9dfb-ff31" sortIndex="1" defaultAmount="1"/>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="00ab-2091-0394-0825" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="3">
+                  <modifiers>
+                    <modifier type="set" value="Two Heavy Flamers" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Lascannon" hidden="false" id="e05d-b780-1c55-3bb2" type="selectionEntry" targetId="b6d5-4be2-c37e-2197" sortIndex="4">
+                  <modifiers>
+                    <modifier type="set" value="5" field="9893-c379-920b-8982"/>
+                    <modifier type="set" value="Two Lascannon" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="a096-7d95-304d-985d" type="selectionEntry" targetId="bc40-b14a-978e-0232" sortIndex="2">
+                  <modifiers>
+                    <modifier type="set" value="Two Heavy Bolters" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Volkite culverin" hidden="false" id="cf9e-375b-8561-ac8c" type="selectionEntry" targetId="fcf0-9c1b-d51e-6bc7" sortIndex="5">
+                  <modifiers>
+                    <modifier type="set" value="5" field="9893-c379-920b-8982"/>
+                    <modifier type="set" value="Two Volkite culverin" field="name"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e1cf-cace-bd40-7eca"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7f9-fc0e-9cef-ac10"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <infoLinks>
@@ -11888,7 +11890,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="cf96-8891-3f9a-8921" id="0f65-5063-27e0-d544" primary="false" name="Fast Attack"/>
+        <categoryLink targetId="cf96-8891-3f9a-8921" id="0f65-5063-27e0-d544" primary="true" name="Fast Attack"/>
         <categoryLink targetId="a073-2d4a-5bed-123e" id="eaa3-8ae1-fb68-c185" primary="false" name="Cavalry Model Type"/>
         <categoryLink targetId="c504-9dfa-35d3-c98f" id="b739-103f-6616-50f6" primary="false" name="Antigrav Model Sub-Type"/>
       </categoryLinks>
@@ -11901,6 +11903,17 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       <infoLinks>
         <infoLink name="[Allegiance]" id="c76c-f1d9-1efc-81c5" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="cc38-b82a-6383-5972" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Bulky (X)" id="5d24-a6b2-9919-f764" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+          <modifiers>
+            <modifier type="set" value="5" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deep Strike" id="8629-7f1e-fc70-96b7" hidden="false" type="rule" targetId="0553-d06b-52b9-34db"/>
+        <infoLink name="Firing Protocols (X)" id="15b0-868c-0022-eb5e" hidden="false" type="rule" targetId="84f2-5a93-c2eb-826f">
+          <modifiers>
+            <modifier type="set" value="3" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="c3fc-4f07-8ce4-025e" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
