@@ -66,6 +66,23 @@ class GameTests(unittest.TestCase):
 
                         self.assertIn("includeChildSelections", constraint.attrib.keys())
 
+    def test_all_allied_detachments_linked(self):
+        crusade = self.system.get_node_by_id("8562-592c-8d4b-a1f0")
+        allied_links = self.system.get_node_by_id("256b-b8a8-017a-75e9").get_child("forceEntryLinks")
+        for child_force in crusade.get_child("forceEntries").children:
+            print("\t", child_force)
+            if not child_force.name.startswith("Auxiliary - "):
+                continue
+            with self.subTest(f"{child_force.name} should be linked in the Allied Detachment"):
+                self.assertIsNotNone(allied_links.get_child("forceEntryLink", attrib={"targetId": child_force.id}))
+
+
+
+
+
+
+
+
 
 if __name__ == '__main__':
     unittest.main()
