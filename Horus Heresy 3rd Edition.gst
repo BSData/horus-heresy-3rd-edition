@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="20" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="21" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -277,7 +277,7 @@
             </categoryLink>
             <categoryLink name="Prime High Command" hidden="false" id="7059-de36-1c8a-18d6" targetId="3568-ad75-b452-3137">
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2ba3-e70b-19f4-bb22"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2ba3-e70b-19f4-bb22" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
             <categoryLink name="Command" hidden="false" id="139b-622f-8ad2-dc95" targetId="6dbf-654a-f06f-2d69">
@@ -3436,47 +3436,6 @@
             </categoryLink>
           </categoryLinks>
           <comment>EC Only</comment>
-          <forceEntries>
-            <forceEntry name="Auxiliary - Primacy Wing" id="fb6b-392c-4812-d06b" hidden="true">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9a22-d01f-ab5c-ec07" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9a22-d01f-ab5c-ec07" shared="true"/>
-                      </conditions>
-                      <comment>EC</comment>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <categoryLinks>
-                <categoryLink name="Retinue" hidden="false" id="50de-9322-6427-d007" targetId="a38e-50ff-310f-f19e">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b0e-a8f0-172b-eea1"/>
-                  </constraints>
-                </categoryLink>
-                <categoryLink name="Elites" hidden="false" id="00f0-eb4c-3d40-be03" targetId="5d5e-958f-e388-50b5">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f5b-f8ef-a342-118e"/>
-                  </constraints>
-                </categoryLink>
-                <categoryLink name="Fast Attack" hidden="false" id="3b77-48c0-72c0-f530" targetId="cf96-8891-3f9a-8921">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a365-8f18-7b3e-4294"/>
-                  </constraints>
-                </categoryLink>
-                <categoryLink name="Auxiliary Detachment" hidden="false" id="97e8-0753-cc5e-252f" targetId="1a65-8b23-419b-b30f"/>
-                <categoryLink name="Prime Retinue" hidden="false" id="a775-60b5-69fc-80ee" targetId="c66b-ef39-b20f-725b">
-                  <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="aec1-de84-7d56-d1fd"/>
-                  </constraints>
-                </categoryLink>
-              </categoryLinks>
-              <comment>EC Only</comment>
-            </forceEntry>
-          </forceEntries>
         </forceEntry>
         <forceEntry name="Auxiliary - Tagmata Cohort" id="59b8-2183-4bab-b91c" hidden="true" sortIndex="13">
           <categoryLinks>
