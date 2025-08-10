@@ -43,5 +43,29 @@ class GameTests(unittest.TestCase):
                                       f"(The link's primary category) is a faction: "
                                       )
 
+    def test_forces_all_restrict_primes(self):
+        for parent_force in self.system.gst.root_node.get_child("forceEntries").children:
+            print(parent_force)
+            if parent_force.get_child("forceEntries") is None:
+                continue
+            for child_force in parent_force.get_child("forceEntries").children:
+                print("\t", child_force)
+                if child_force.get_child("categoryLinks") is None:
+                    continue
+                for category_link in child_force.get_child("categoryLinks").children:
+                    print("\t", "\t", category_link)
+                    if not category_link.target_name.startswith("Prime "):
+                        continue
+                    with self.subTest(f"{category_link.target_name} on {child_force}"):
+
+                        constraints = category_link.get_child("constraints")
+                        self.assertIsNotNone(constraints)
+                        self.assertEqual(len(constraints.children), 1,
+                                         "Expected exactly one constraint")
+                        constraint = constraints.children[0]
+
+                        self.assertIn("includeChildSelections", constraint.attrib.keys())
+
+
 if __name__ == '__main__':
     unittest.main()
