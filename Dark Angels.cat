@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="0a35-fce3-188c-b3aa" name="                         I - Dark Angels" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="5" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="0a35-fce3-188c-b3aa" name="                         I - Dark Angels" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="6" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="a476-c36f-b43d-3fd8" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Special Rules" id="9620-2bdb-4589-56f8" targetId="106b-693b-99f2-00c3"/>
@@ -222,7 +222,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3da1-5139-d4da-1916" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Terranic greatsword" hidden="false" id="fbdf-03c8-c373-d75b" type="selectionEntry" targetId="2d61-d9b4-dc3c-4dda">
+                <entryLink import="true" name="Terranic greatsword" hidden="false" id="fbdf-03c8-c373-d75b" type="selectionEntry" targetId="f1aa-3d18-caac-a960">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
@@ -230,7 +230,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2a7-275e-3fc4-4dea" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Calibanite Warblade" hidden="false" id="0924-0a8e-3238-1e77" type="selectionEntry" targetId="5216-b787-133e-71ef">
+                <entryLink import="true" name="Calibanite Warblade" hidden="false" id="0924-0a8e-3238-1e77" type="selectionEntry" targetId="65da-539f-9e31-5a40">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5e9-cc35-b2d4-c69e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f6aa-8b0b-1989-6f16" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
@@ -302,12 +302,12 @@
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Terranic greatsword" hidden="false" id="1969-fe29-607d-2c2f" type="selectionEntry" targetId="2d61-d9b4-dc3c-4dda">
+                <entryLink import="true" name="Terranic greatsword" hidden="false" id="1969-fe29-607d-2c2f" type="selectionEntry" targetId="f1aa-3d18-caac-a960">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Calibanite Warblade" hidden="false" id="1ea2-77a4-69e3-a645" type="selectionEntry" targetId="5216-b787-133e-71ef"/>
+                <entryLink import="true" name="Calibanite Warblade" hidden="false" id="1ea2-77a4-69e3-a645" type="selectionEntry" targetId="65da-539f-9e31-5a40"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="May exhange its bolt pistol for:" id="5f09-09b2-6042-45f6" hidden="false" collective="false" import="true" defaultSelectionEntryId="59a8-5580-149e-ddb5">
@@ -671,7 +671,7 @@
         </rule>
       </rules>
       <entryLinks>
-        <entryLink import="true" name="Terranic greatsword" hidden="false" id="7270-62d6-4196-442a" type="selectionEntry" targetId="2d61-d9b4-dc3c-4dda">
+        <entryLink import="true" name="Terranic greatsword" hidden="false" id="7270-62d6-4196-442a" type="selectionEntry" targetId="f1aa-3d18-caac-a960">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d12f-0c61-f2e0-b307" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14ef-8ed2-1bde-f7aa" includeChildSelections="false"/>
@@ -1213,52 +1213,6 @@ The Lion&apos;s Choler: If this Gambit is selected, the Model for which this Gam
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Calibanite Warblade" hidden="false" id="5216-b787-133e-71ef">
-      <profiles>
-        <profile name="Calibanite Warblade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="0c55-d8f1-dbcc-88a6" publicationId="b905-0414-1057-bb34">
-          <characteristics>
-            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
-            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
-            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+1</characteristic>
-            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
-            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+)</characteristic>
-            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Sword of the Order</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Breaching (X)" id="2901-2703-548a-544b" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
-          <modifiers>
-            <modifier type="set" value="Breaching (5+)" field="name"/>
-          </modifiers>
-          <comment>5+</comment>
-        </infoLink>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Terranic greatsword" hidden="false" id="2d61-d9b4-dc3c-4dda">
-      <profiles>
-        <profile name="Terranic greatsword" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="2a54-63f5-9266-2568" publicationId="b905-0414-1057-bb34">
-          <characteristics>
-            <characteristic name="IM" typeId="6eec-4093-f946-1014">-1</characteristic>
-            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
-            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
-            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
-            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+)</characteristic>
-            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Sword of the Order</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Breaching (X)" id="e553-0f4f-37c2-3a5b" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
-          <modifiers>
-            <modifier type="set" value="Breaching (5+)" field="name"/>
-          </modifiers>
-          <comment>5+</comment>
-        </infoLink>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Destroyer missile launcher with rad missiles and stasis missiles" hidden="false" id="1109-8c89-3feb-323f">
       <costs>
