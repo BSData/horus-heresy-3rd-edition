@@ -2383,7 +2383,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
               </modifiers>
               <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39b6-cced-077d-3939" includeChildSelections="false"/>
@@ -3717,8 +3717,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Paired Leviathan siege claws and two meltaguns" hidden="false" id="d949-5b9f-f2dd-a0e4" sortIndex="6">
               <entryLinks>
-                <entryLink import="true" name="Paired Leviathan siege claws" hidden="false" id="d743-6479-90b0-f8c2" type="selectionEntry" targetId="0d5c-0630-689b-ae6f" sortIndex="1" defaultAmount="2"/>
-                <entryLink import="true" name="Meltagun" hidden="false" id="270e-0f00-b647-f5dc" type="selectionEntry" targetId="b1e1-e164-5877-6734" defaultAmount="2"/>
+                <entryLink import="true" name="Paired Leviathan siege claws" hidden="false" id="d743-6479-90b0-f8c2" type="selectionEntry" targetId="0d5c-0630-689b-ae6f" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0dee-f74b-297d-5594"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ad4-a664-42bb-d95c"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Meltagun" hidden="false" id="270e-0f00-b647-f5dc" type="selectionEntry" targetId="b1e1-e164-5877-6734" defaultAmount="2">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2bea-85fd-059e-8c96"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b2d4-80ff-f569-46a8"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
@@ -3730,8 +3740,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Paired Leviathan siege drills and two meltaguns" hidden="false" id="1a93-0e7a-66c4-01c2" sortIndex="7">
               <entryLinks>
-                <entryLink import="true" name="Paired Leviathan siege drills" hidden="false" id="2224-9bfa-dc55-dc21" type="selectionEntry" targetId="f1d4-d297-2484-deb1" sortIndex="1" defaultAmount="2"/>
-                <entryLink import="true" name="Meltagun" hidden="false" id="e93c-fced-1399-5674" type="selectionEntry" targetId="b1e1-e164-5877-6734" defaultAmount="2"/>
+                <entryLink import="true" name="Paired Leviathan siege drills" hidden="false" id="2224-9bfa-dc55-dc21" type="selectionEntry" targetId="f1d4-d297-2484-deb1" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b93-9eb6-7a64-b5c6"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29be-e3de-3450-1e6c"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Meltagun" hidden="false" id="e93c-fced-1399-5674" type="selectionEntry" targetId="b1e1-e164-5877-6734" defaultAmount="2">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="41c4-1906-9934-44d8"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b953-d60c-a1e5-285c"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
@@ -3742,32 +3762,32 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9e25-a1ea-5471-9995"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9d10-a1e1-664a-3662"/>
-          </constraints>
           <modifiers>
-            <modifier type="set" value="1" field="9e25-a1ea-5471-9995">
+            <modifier type="set" value="1" field="4575-f901-8749-e844">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="d949-5b9f-f2dd-a0e4" shared="true"/>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="1a93-0e7a-66c4-01c2" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="d949-5b9f-f2dd-a0e4" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="1a93-0e7a-66c4-01c2" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" value="1" field="9d10-a1e1-664a-3662">
+            <modifier type="set" value="1" field="acc4-9585-42c8-1e79">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="d949-5b9f-f2dd-a0e4" shared="true"/>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="1a93-0e7a-66c4-01c2" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="d949-5b9f-f2dd-a0e4" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="1a93-0e7a-66c4-01c2" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4575-f901-8749-e844"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="acc4-9585-42c8-1e79"/>
+          </constraints>
         </selectionEntryGroup>
         <selectionEntryGroup name="May exchange it&apos;s two heavy flamers for:" id="8e43-cf94-01a8-3793" hidden="false" defaultSelectionEntryId="ca31-9576-d967-e694" sortIndex="3">
           <entryLinks>
@@ -11652,8 +11672,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </selectionEntryGroup>
             <selectionEntryGroup name="Hull (Front, Right) and Hull (Front, Left)" id="b326-bbda-9e72-0b20" hidden="false" sortIndex="3" defaultSelectionEntryId="1c38-e1f5-4125-0aa8">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b619-253e-0f1a-a00c" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc66-0dd6-0e58-22f2" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="b619-253e-0f1a-a00c" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="fc66-0dd6-0e58-22f2" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Heavy bolter" hidden="false" id="1c38-e1f5-4125-0aa8" type="selectionEntry" targetId="bc40-b14a-978e-0232" sortIndex="1"/>
@@ -11712,8 +11732,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       <entryLinks>
         <entryLink import="true" name="Autocannon" hidden="false" id="7c7f-e369-1fa5-d1de" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93" sortIndex="3">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba2e-8763-5953-2b0b" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc7a-932d-279a-11f1" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="ba2e-8763-5953-2b0b" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="bc7a-932d-279a-11f1" includeChildSelections="false"/>
           </constraints>
           <modifiers>
             <modifier type="prepend" value="Co-axial" field="name"/>
