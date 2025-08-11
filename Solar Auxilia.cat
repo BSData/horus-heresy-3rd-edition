@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7851-69ac-f701-034e" name="Solar Auxilia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="10" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7851-69ac-f701-034e" name="Solar Auxilia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="11" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Legatine Command Section" hidden="false" id="8641-1dd0-7e76-de7d">
       <categoryLinks>
@@ -2929,7 +2929,7 @@
         <categoryLink targetId="594d-fa82-13cb-a345" id="640b-a42f-1aa2-dc90" primary="false" name="Infantry Model Type"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Rapier Crew" hidden="false" id="b61d-cda1-3891-2dae" collective="false" flatten="false" sortIndex="1">
+        <selectionEntry type="unit" import="true" name="Rapier Crew" hidden="false" id="b61d-cda1-3891-2dae" collective="false" flatten="false" sortIndex="1" subType="unit-group">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Rapier Gunner" hidden="false" id="507a-8b48-898b-719b" sortIndex="1">
               <profiles>
@@ -3010,6 +3010,97 @@
               <infoLinks>
                 <infoLink name="Bulky (X)" id="9b9a-542e-db2d-59ac" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25"/>
               </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Exchange multi-laser array for:" id="b214-50d6-1702-41cf" hidden="false" defaultSelectionEntryId="c9a5-e5ea-cda1-6071">
+                  <entryLinks>
+                    <entryLink import="true" name="Gravis heavy bolter battery" hidden="false" id="ce8a-7c70-c777-6450" type="selectionEntry" targetId="5c0e-33c5-afb1-fed5" sortIndex="2">
+                      <modifiers>
+                        <modifier type="set" value="5" field="9893-c379-920b-8982"/>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Laser destroyer" hidden="false" id="6d71-363a-738c-4a1a" type="selectionEntry" targetId="e160-234f-e94c-bab6" sortIndex="3">
+                      <modifiers>
+                        <modifier type="set" value="25" field="9893-c379-920b-8982"/>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Gravis multi-laser array" hidden="false" id="c9a5-e5ea-cda1-6071" type="selectionEntry" targetId="c8d4-5315-fcd1-1794" sortIndex="1"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="47fa-bfd2-430f-fd8b"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="368a-681e-b036-63c9"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Quad launcher" hidden="false" id="cd05-603e-9f69-0a15" sortIndex="4">
+                      <profiles>
+                        <profile name="Quad launcher (Frag)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="ebe0-8634-b411-0b08" noindex="false">
+                          <characteristics>
+                            <characteristic name="R" typeId="cdb0-8654-6840-1037">60</characteristic>
+                            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+                            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">5</characteristic>
+                            <characteristic name="AP" typeId="7a23-0248-2b94-5951">5</characteristic>
+                            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+                            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (FP), Blast (5&quot;), Barrage (2)</characteristic>
+                            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03"/>
+                          </characteristics>
+                        </profile>
+                        <profile name="Quad launcher (Shatter)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="cfe4-2830-b425-bdc9">
+                          <characteristics>
+                            <characteristic name="R" typeId="cdb0-8654-6840-1037">36</characteristic>
+                            <characteristic name="FP" typeId="5037-1f27-1790-e355">4</characteristic>
+                            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">7</characteristic>
+                            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+                            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+                            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (D), Armourbane</characteristic>
+                            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03"/>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Blast (X)" id="ec42-f987-9bc7-e7c2" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+                          <modifiers>
+                            <modifier type="set" value="Blast (5&quot;) (Frag)" field="name"/>
+                          </modifiers>
+                          <comment>5&quot; (Frag)</comment>
+                        </infoLink>
+                        <infoLink name="Heavy (X)" id="815c-5823-e57b-b879" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
+                          <comment>(FP) (Frag)</comment>
+                          <modifiers>
+                            <modifier type="set" value="Heavy (FP) (Frag)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                        <infoLink name="Heavy (X)" id="8e97-a250-4374-745f" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
+                          <comment>(D) (Shatter)</comment>
+                          <modifiers>
+                            <modifier type="set" value="Heavy (D) (Shatter)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                        <infoLink name="Barrage (X)" id="d854-ae33-5d01-f41b" hidden="false" type="rule" targetId="85f5-3a91-69f4-c3b7">
+                          <modifiers>
+                            <modifier type="set" value="Barrage (1) (Phosphex canister shot)" field="name"/>
+                          </modifiers>
+                          <comment>2 (Frag)</comment>
+                        </infoLink>
+                        <infoLink name="Armourbane" id="34b8-aadb-4905-0997" hidden="false" type="rule" targetId="36ee-4c54-bced-a696">
+                          <comment>Shatter</comment>
+                          <modifiers>
+                            <modifier type="set" value="Armourbane (Shatter)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                      </infoLinks>
+                      <modifiers>
+                        <modifier type="append" value="with frag and shatter shells" field="name"/>
+                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
           <costs>
@@ -3045,31 +3136,6 @@
         <entryLink import="true" name="Prime Unit" hidden="false" id="0652-1985-4270-9233" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2"/>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Exchange multi-laser array for:" id="b214-50d6-1702-41cf" hidden="false" defaultSelectionEntryId="c9a5-e5ea-cda1-6071" sortIndex="2">
-          <entryLinks>
-            <entryLink import="true" name="Gravis heavy bolter battery" hidden="false" id="ce8a-7c70-c777-6450" type="selectionEntry" targetId="5c0e-33c5-afb1-fed5" sortIndex="2">
-              <modifiers>
-                <modifier type="set" value="5" field="9893-c379-920b-8982"/>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Laser destroyer" hidden="false" id="6d71-363a-738c-4a1a" type="selectionEntry" targetId="e160-234f-e94c-bab6" sortIndex="3">
-              <modifiers>
-                <modifier type="set" value="25" field="9893-c379-920b-8982"/>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Quad launcher" hidden="false" id="1df5-7aa0-bc8d-d2e7" type="selectionEntry" targetId="feb2-84a7-0b35-8f1b" sortIndex="4">
-              <modifiers>
-                <modifier type="set" value="Quad Launcher (with frag and shatter shells)" field="name"/>
-                <modifier type="set" value="20" field="9893-c379-920b-8982"/>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Gravis multi-laser array" hidden="false" id="c9a5-e5ea-cda1-6071" type="selectionEntry" targetId="c8d4-5315-fcd1-1794" sortIndex="1"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="47fa-bfd2-430f-fd8b"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="368a-681e-b036-63c9"/>
-          </constraints>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Solar Auxilia Prime Benefits" id="a905-54ab-f7c0-de05" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Common Prime Benefits" hidden="false" id="47f1-92c9-508a-56fd" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true"/>
@@ -4207,7 +4273,7 @@ Additionally, when at least one Model in a Unit entirely composed of Models with
           <characteristics>
             <characteristic name="R" typeId="cdb0-8654-6840-1037">72</characteristic>
             <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
-            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">9</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">10</characteristic>
             <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
             <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">3</characteristic>
             <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (D), Critical Hit (6+)</characteristic>
@@ -4706,9 +4772,9 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
         <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="fffd-8505-4a92-41cf" primary="false" name="Vehicle Model Type"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Leman Russ Strike Tank" hidden="false" id="3d63-4299-d15f-b3ba">
+    <selectionEntry type="unit" import="true" name="Leman Russ Strike Tank" hidden="false" id="3d63-4299-d15f-b3ba">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Leman Russ Strike Tank" hidden="false" id="340b-ef1b-20fa-490a" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Leman Russ Strike Tank" hidden="false" id="340b-ef1b-20fa-490a" sortIndex="1">
           <profiles>
             <profile name="Leman Russ Strike Tank" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="8974-5d41-88c6-5a8b">
               <characteristics>
@@ -4932,12 +4998,12 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
         </selectionEntryGroup>
         <selectionEntryGroup name="May exchange it&apos;s Hull (Front) Mounted heavy bolter for:" id="7964-e7b3-7cfc-ec06" hidden="false" sortIndex="3" defaultSelectionEntryId="3a33-d80c-713b-674b">
           <entryLinks>
-            <entryLink import="true" name="Heavy bolter" hidden="false" id="904e-d0b2-ba20-257f" type="selectionEntry" targetId="bc40-b14a-978e-0232" sortIndex="1"/>
             <entryLink import="true" name="Demolisher cannon" hidden="false" id="b3eb-ab0b-c932-3214" type="selectionEntry" targetId="4514-8e18-77b4-a141" sortIndex="2">
               <modifiers>
                 <modifier type="set" value="40" field="9893-c379-920b-8982"/>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Auxilia Hull Weapons" hidden="false" id="ecf0-b327-6e07-7eab" type="selectionEntryGroup" targetId="9a19-6f6d-abea-d053" sortIndex="1"/>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="745d-b82e-6371-01f3"/>
@@ -6074,7 +6140,7 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
     </selectionEntryGroup>
     <selectionEntryGroup name="Auxilia Hull Weapons" id="9a19-6f6d-abea-d053" hidden="false" defaultSelectionEntryId="1888-42bd-6055-9169">
       <entryLinks>
-        <entryLink import="true" name="Heavy bolter" hidden="false" id="1888-42bd-6055-9169" type="selectionEntry" targetId="bc40-b14a-978e-0232" sortIndex="1">
+        <entryLink import="true" name="Heavy bolter" hidden="false" id="1888-42bd-6055-9169" type="selectionEntry" targetId="bc40-b14a-978e-0232" sortIndex="1" defaultAmount="1">
           <modifiers>
             <modifier type="set" value="Hull Mounted (Front) heavy bolter" field="name"/>
           </modifiers>
@@ -6194,11 +6260,73 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
       <constraints>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5b42-a937-a6ff-dd20"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb2f-57ed-a94c-ff74"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68ae-a828-9d75-4536"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f6b8-ff9f-dd0f-510f"/>
       </constraints>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="c85c-2963-658f-1bb9" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dbf-654a-f06f-2d69" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="276f-7a07-a56c-affd" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5d5e-958f-e388-50b5" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="c66b-ef39-b20f-725b" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a38e-50ff-310f-f19e" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="c3f9-a7f3-984b-3fda" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="88e6-d373-4152-0dd8" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="9699-67c9-2c0b-e64b" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2499-7239-685f-8465" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="1c79-ecdf-9a64-84c9" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="345f-9ba6-9b02-ed5c" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="fc27-1a48-84ae-aa7b" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d162-4711-5d60-0a48" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="1e95-35f0-1353-ffa1" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3235-bd79-e9b1-60fa" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="abff-3686-c39a-9a24" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="52d0-8b78-439e-18e5" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="4460-7bc1-4d80-aecb" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="643a-1012-bd51-6537" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="6348-ecd0-714d-042a" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2b65-a3f2-620a-dc58" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="c291-144b-3da6-37ed" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cf96-8891-3f9a-8921" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
