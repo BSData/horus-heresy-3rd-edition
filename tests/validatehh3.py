@@ -76,12 +76,33 @@ class GameTests(unittest.TestCase):
             with self.subTest(f"{child_force.name} should be linked in the Allied Detachment"):
                 self.assertIsNotNone(allied_links.get_child("forceEntryLink", attrib={"targetId": child_force.id}))
 
+    def test_all_units_have_prime(self):
+        battlefield_roles = Heresy3e.BATTLEFIELD_ROLES.copy()
 
+        # Warlords aren't ever prime? High command can be in EC.
+        battlefield_roles.remove("Warlord")
+        # Lords of war are only prime in knights, make a separate test for this.
+        battlefield_roles.remove("Lord of War")
 
-
-
-
-
+        # First, get all units
+        unit_ids = []
+        for file in self.system.files:
+            entry_links_node = file.root_node.get_child(tag='entryLinks')
+            if entry_links_node is None:
+                continue
+            for child in entry_links_node.children:
+                category_links = child.get_child(tag='categoryLinks')
+                primary_cat = category_links.get_child(tag='categoryLink', attrib={"primary": "true"})
+                if primary_cat.target_name in battlefield_roles:
+                    unit_ids.append(child.target_id)
+        for unit_id in unit_ids:
+            unit = self.system.get_node_by_id(unit_id)
+            with self.subTest(f"{unit} should have a link to 'Prime Unit'"):
+                entry_links = unit.get_child("entryLinks")
+                self.assertIsNotNone(entry_links, "Should have entry links")
+                prime_link = entry_links.get_child(tag='entryLink',
+                                                   attrib={'targetId': '3fa2-78b1-637f-7fb2'})  # Prime Unit ID
+                self.assertIsNotNone(prime_link)
 
 
 if __name__ == '__main__':
