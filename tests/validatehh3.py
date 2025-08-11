@@ -18,6 +18,20 @@ class GameTests(unittest.TestCase):
                              },
                              )
 
+        # Get a list of all units that tests may want to share.
+        self.unit_ids = []
+        battlefield_roles = Heresy3e.BATTLEFIELD_ROLES.copy()
+
+        for file in self.system.files:
+            entry_links_node = file.root_node.get_child(tag='entryLinks')
+            if entry_links_node is None:
+                continue
+            for child in entry_links_node.children:
+                category_links = child.get_child(tag='categoryLinks')
+                primary_cat = category_links.get_child(tag='categoryLink', attrib={"primary": "true"})
+                if primary_cat.target_name in battlefield_roles:
+                    self.unit_ids.append(child.target_id)
+
     def test_root_link_categories(self):
         expected_primaries = Heresy3e.BATTLEFIELD_ROLES.copy()
         expected_primaries += ['Army Configuration', 'Rewards of Treachery']
@@ -125,6 +139,27 @@ class GameTests(unittest.TestCase):
                         # Could have a unique prime that must be chosen?
 
                     self.assertGreaterEqual(prime_options_total, 1, "There should be at least one prime option")
+
+    def test_all_units_are_units(self):
+        total_model_count = 0
+        for unit_id in self.unit_ids:
+            unit = self.system.get_node_by_id(unit_id)
+            with self.subTest(f"{unit} should have be of type 'unit'"):
+                self.assertEqual(unit.attrib["type"], "unit")
+            with self.subTest(f"{unit} should have contain models"):
+                entries = unit.get_child("selectionEntries")
+                self.assertIsNotNone(entries, "Should have entries")
+                model_count = 0
+                for potential_model in entries.children:
+                    if not potential_model.attrib["type"] == "model":
+                        continue
+                    model_count += 1
+                    total_model_count += 1
+                    with self.subTest(f"{potential_model} should have a profile"):
+                        self.assertIsNotNone(potential_model.get_profile_node(None),
+                                             f"There should be a profile on {potential_model}")
+                self.assertGreaterEqual(model_count, 1, "There should be at least one model in the unit")
+        print(f"There are {len(self.unit_ids)} Units, containing {total_model_count} models")
 
 
 if __name__ == '__main__':
