@@ -103,6 +103,28 @@ class GameTests(unittest.TestCase):
                 prime_link = entry_links.get_child(tag='entryLink',
                                                    attrib={'targetId': '3fa2-78b1-637f-7fb2'})  # Prime Unit ID
                 self.assertIsNotNone(prime_link)
+                with self.subTest(f"prime link {prime_link} should contain an option"):
+                    prime_options_total = 0
+
+                    prime_benefit_links = prime_link.get_child("entryLinks")
+                    if prime_benefit_links is not None:
+                        prime_options_total += len(prime_benefit_links.children)
+                        gst_benefits_list = prime_benefit_links.get_child(tag='entryLink',
+                                                                          attrib={  # GST Prime Benefits
+                                                                              'targetId': '90f8-0e89-acff-a748'
+                                                                          })
+                        if gst_benefits_list is None:
+                            print(
+                                f"Not linking the GST prime benefits, may be ok if we're linking something else. {prime_link}")
+
+                    prime_benefit_entries = prime_link.get_child("selectionEntries")
+                    if prime_benefit_entries is not None:
+                        pass  # Uncomment the next line iff we find a unit
+                        #  that can only have one prime trait ever and that prime trait is unique to itself
+                        # prime_options_total += len(prime_benefit_entries.children)
+                        # Could have a unique prime that must be chosen?
+
+                    self.assertGreaterEqual(prime_options_total, 1, "There should be at least one prime option")
 
 
 if __name__ == '__main__':
