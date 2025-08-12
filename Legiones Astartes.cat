@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="19" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="20" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -1630,15 +1630,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <categoryLink name="Vehicle Model Type" hidden="false" id="e53a-94ee-10b7-a96a" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
           </categoryLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Atomantic Pavise" hidden="false" id="6ae4-c54d-a5f2-fea6" sortIndex="2">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4020-8c71-5f57-ab8d" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f07-3d44-2136-cf7a" includeChildSelections="false"/>
-          </constraints>
-          <rules>
-            <rule name="Atomantic Pavise" id="91b4-b389-9460-54a9" hidden="false"/>
-          </rules>
-        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Quad accelerator autocannon" hidden="false" id="e239-524c-c83c-ed06" type="selectionEntry" targetId="dda7-91e5-90a0-cc4f" sortIndex="3">
@@ -1646,11 +1637,21 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <modifiers>
             <modifier type="set" value="Turret Mounted Quad accelerator autocannon" field="name"/>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf04-eb82-da79-5cd2"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9cad-a03f-44f9-5d1e"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="90f2-2d5e-eca1-6957" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="4">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="fb12-0d6b-91d4-b9b6" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Atomantic Pavise" hidden="false" id="1a2b-64c8-cdd8-dc3e" type="selectionEntry" targetId="b755-a344-e9ca-5e2d" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c2f2-aa09-61bc-6670"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="195d-e422-e293-1d7d"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <infoLinks>
@@ -1892,12 +1893,12 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               <entryLinks>
                 <entryLink import="true" name="Twin heavy bolter" hidden="false" id="4520-fe0a-1373-5752" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75" sortIndex="1">
                   <modifiers>
-                    <modifier type="prepend" value="Hull (Front)" field="name" join=" "/>
+                    <modifier type="prepend" value="Hull (Front)" field="name" join=" "/>
                   </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Twin heavy flamer" hidden="false" id="9e10-7ecc-0049-797e" type="selectionEntry" targetId="f797-93eb-d6fe-586a" sortIndex="2">
                   <modifiers>
-                    <modifier type="prepend" value="Hull (Front)" field="name" join=" "/>
+                    <modifier type="prepend" value="Hull (Front)" field="name" join=" "/>
                   </modifiers>
                 </entryLink>
               </entryLinks>
@@ -11553,8 +11554,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <modifier type="set" value="Hull (Front) Mounted heavy bolter" field="name"/>
           </modifiers>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7822-56fd-af88-64f3"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="241a-fbc4-fca8-ab65"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="7822-56fd-af88-64f3"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="241a-fbc4-fca8-ab65"/>
           </constraints>
         </entryLink>
       </entryLinks>
