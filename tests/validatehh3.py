@@ -5,6 +5,7 @@ import unittest
 # Temp until we have a pip module
 sys.path.insert(1, os.getcwd() + "/BSCopy")
 from BSCopy.system.system import System
+from BSCopy.system.node import Node
 from BSCopy.system.constants import SystemSettingsKeys, GameImportSpecs
 from BSCopy.system.game.heresy3e import Heresy3e
 
@@ -110,7 +111,8 @@ class GameTests(unittest.TestCase):
                 if primary_cat.target_name in battlefield_roles:
                     unit_ids.append(child.target_id)
         for unit_id in unit_ids:
-            unit = self.system.get_node_by_id(unit_id)
+            unit: Node = self.system.get_node_by_id(unit_id)
+            prime_selector_id = Heresy3e().get_prime_selector(unit.system_file.faction)
             with self.subTest(f"{unit} should have a link to 'Prime Unit'"):
                 entry_links = unit.get_child("entryLinks")
                 self.assertIsNotNone(entry_links, "Should have entry links")
@@ -123,13 +125,13 @@ class GameTests(unittest.TestCase):
                     prime_benefit_links = prime_link.get_child("entryLinks")
                     if prime_benefit_links is not None:
                         prime_options_total += len(prime_benefit_links.children)
-                        gst_benefits_list = prime_benefit_links.get_child(tag='entryLink',
-                                                                          attrib={  # GST Prime Benefits
-                                                                              'targetId': '90f8-0e89-acff-a748'
-                                                                          })
-                        if gst_benefits_list is None:
-                            print(
-                                f"Not linking the GST prime benefits, may be ok if we're linking something else. {prime_link}")
+                        if prime_selector_id:
+                            faction_benefits_list = prime_benefit_links.get_child(tag='entryLink',
+                                                                                  attrib={
+                                                                                      'targetId': prime_selector_id
+                                                                                  })
+                            if faction_benefits_list is None:  # Not a full error at this time
+                                print(f"Not linking the expected benefits: {prime_link}")
 
                     prime_benefit_entries = prime_link.get_child("selectionEntries")
                     if prime_benefit_entries is not None:
