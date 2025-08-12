@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9a22-d01f-ab5c-ec07" name="                         III - Emperor&apos;s Children" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="5" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="9a22-d01f-ab5c-ec07" name="                         III - Emperor&apos;s Children" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="5" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="2589-ec0f-809a-8660" targetId="9b32-f350-6aa9-9c09" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Assets" id="a2a4-0123-e538-6ae9" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
@@ -81,6 +81,10 @@
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink name="Paragon Model Type" hidden="false" id="cde6-2e94-299c-e903" targetId="7799-e1d6-762b-700b" primary="false"/>
+            <categoryLink name="Unique Model Sub-Type" hidden="false" id="41fd-425d-8983-ed58" targetId="b980-187b-2b17-d635" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -123,6 +127,12 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink name="Paragon Model Type" hidden="false" id="851b-05d1-e29c-b0d4" targetId="7799-e1d6-762b-700b" primary="false"/>
+            <categoryLink name="Unique Model Sub-Type" hidden="false" id="d9b9-9624-8ef9-ba33" targetId="b980-187b-2b17-d635" primary="false"/>
+            <categoryLink name="Antigrav Model Sub-Type" hidden="false" id="5e5f-a20e-0b4d-6d2d" targetId="c504-9dfa-35d3-c98f" primary="false"/>
+            <categoryLink name="Malefic" hidden="false" id="e121-9f4d-3374-52e4" targetId="2de1-ddd6-ebb4-10df" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -154,6 +164,48 @@
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Lord Commander Eidolon" hidden="false" id="cfbb-2dde-952d-50a5" publicationId="e54c-7040-0f35-d85d" page="134">
+          <categoryLinks>
+            <categoryLink name="Infantry Model Type" hidden="false" id="e466-31a6-3052-07d2" targetId="594d-fa82-13cb-a345" primary="false"/>
+            <categoryLink name="Unique Model Sub-Type" hidden="false" id="cce7-831e-2d67-a9be" targetId="b980-187b-2b17-d635" primary="false"/>
+            <categoryLink name="Command Model Sub-type" hidden="false" id="93ad-428b-1f00-0259" targetId="9871-cb62-5283-2216" primary="false"/>
+            <categoryLink name="Antigrav Model Sub-Type" hidden="false" id="201d-ceaa-fa60-f04a" targetId="c504-9dfa-35d3-c98f" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Lord Commander Eidolon" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="2e05-5c4b-7709-f403" publicationId="e54c-7040-0f35-d85d" page="134">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Unique, Command, Antigrav)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">12</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">6</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">4</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">5</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">10</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">9</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">9</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">9</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f7b0-6646-a086-bca4-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7b0-6646-a086-bca4-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="7c6a-1bb4-4b84-bae7" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="4658-8fde-4f2b-b315" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Captain Lucius" hidden="false" id="2621-860f-a513-e11e" publicationId="e54c-7040-0f35-d85d" page="135">
       <costs>
@@ -176,7 +228,46 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ca2-c979-1638-8870" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="5be8-7421-4bc2-b3f1" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="e787-aec8-4dde-a5a6" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Captain Lucius" hidden="false" id="f10e-f832-12c9-f9fe" publicationId="e54c-7040-0f35-d85d" page="135">
+          <categoryLinks>
+            <categoryLink name="Infantry Model Type" hidden="false" id="6460-de15-26bd-6cc9" targetId="594d-fa82-13cb-a345" primary="false"/>
+            <categoryLink name="Unique Model Sub-Type" hidden="false" id="469f-2a86-a53f-9d9d" targetId="b980-187b-2b17-d635" primary="false"/>
+            <categoryLink name="Command Model Sub-type" hidden="false" id="2f79-7017-f787-642f" targetId="9871-cb62-5283-2216" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Captain Lucius" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="af4c-24fd-ddee-fb6f" publicationId="e54c-7040-0f35-d85d" page="135">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Unique, Command)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">7</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">3</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">6</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">5</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">9</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">8</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff82-8d2f-4e03-83fb-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff82-8d2f-4e03-83fb-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Saul Tarvitz" hidden="false" id="fb9a-2484-6aee-fa59" page="136" publicationId="e54c-7040-0f35-d85d">
       <costs>
@@ -192,6 +283,47 @@
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="7aa7-aa0d-19b4-2149" primary="false" name="Master of the Legion"/>
         <categoryLink targetId="4381-ed35-c3fa-a225" id="0485-5d16-dc7a-021a" primary="false" name="Loyalist"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Captain Lucius" hidden="false" id="b418-a666-9bce-3ce1" publicationId="e54c-7040-0f35-d85d" page="136">
+          <categoryLinks>
+            <categoryLink name="Infantry Model Type" hidden="false" id="1674-dfe9-8459-b0e8" targetId="594d-fa82-13cb-a345" primary="false"/>
+            <categoryLink name="Unique Model Sub-Type" hidden="false" id="0591-0232-1eb8-59ad" targetId="b980-187b-2b17-d635" primary="false"/>
+            <categoryLink name="Command Model Sub-type" hidden="false" id="48a3-a0e7-02ff-c3e1" targetId="9871-cb62-5283-2216" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Captain Lucius" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="d835-c427-ed6b-a6c9" publicationId="e54c-7040-0f35-d85d" page="136">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Unique, Command)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">6</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">3</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">4</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">10</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">9</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">9</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">9</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec83-1eaa-02e3-5cf2-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec83-1eaa-02e3-5cf2-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="b50e-e5e4-48ff-bd81" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="b1d0-f547-430b-91f6" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Phoenix Terminator Squad" hidden="false" id="e547-ac83-3328-4d31" publicationId="e54c-7040-0f35-d85d" page="137">
       <selectionEntries>
@@ -207,7 +339,29 @@
           <categoryLinks>
             <categoryLink targetId="5a95-e564-96b2-8dc9" id="3610-9e08-49c8-6ba5" primary="false" name="Champion Model Sub-Type"/>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="08da-460f-6512-c080" primary="false" name="Sergeant Model Sub-Type"/>
+            <categoryLink name="Infantry Model Type" hidden="false" id="d019-2688-f9a4-e019" targetId="594d-fa82-13cb-a345" primary="false"/>
           </categoryLinks>
+          <profiles>
+            <profile name="Phoenix Champion" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="cefa-ef41-726b-e392" publicationId="e54c-7040-0f35-d85d" page="137">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Sergeant)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">5</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">2</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">4</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">9</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">9</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Phoenix Terminator" hidden="false" id="98e4-4290-bc76-63b1" sortIndex="2" publicationId="e54c-7040-0f35-d85d" page="137" defaultAmount="4">
           <costs>
@@ -219,6 +373,30 @@
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="ab8f-6eb7-a27a-60a4" includeChildSelections="false"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="34cc-7396-2eea-8776" includeChildSelections="false"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Infantry Model Type" hidden="false" id="da2a-153e-ee0d-1b6b" targetId="594d-fa82-13cb-a345" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Phoenix Terminator" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="36ff-f0a8-dd16-a309" publicationId="e54c-7040-0f35-d85d" page="137">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">5</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">2</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">4</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">2</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">8</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -230,10 +408,11 @@
         <categoryLink targetId="594d-fa82-13cb-a345" id="bd69-86ea-6dff-d398" primary="false" name="Infantry Model Type"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink targetId="f209-fb82-7d6d-2672" id="5f26-d958-57a4-33ec" type="selectionEntryGroup" name="Legion Specific Upgrades" hidden="false">
-          <modifiers>
-            <modifier type="set" value="Surgical Augments (All models in a Traitor unit may be given the same):" field="name"/>
-          </modifiers>
+        <entryLink targetId="ab39-af3b-58c2-8d9b" id="5f26-d958-57a4-33ec" type="selectionEntryGroup" name="Surgical Augments (All models in a Traitor unit may be given the same):" hidden="false"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="09e3-f4cd-405a-9923" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="e3c9-a0bf-441c-87d2" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -291,7 +470,7 @@
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink import="true" name="Phoenix power spear" hidden="false" id="5259-1445-0cc3-5d39" type="selectionEntry" targetId="c057-3eb7-ae01-58c4" sortIndex="2">
+                <entryLink import="true" name="Phoenix power spear" hidden="false" id="5259-1445-0cc3-5d39" type="selectionEntry" targetId="41b7-f368-f337-d940" sortIndex="2">
                   <infoLinks>
                     <infoLink name="Breaching (X)" id="37ba-dfca-8469-e085" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
                       <modifiers>
@@ -315,7 +494,29 @@
           <categoryLinks>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="7b3c-23c6-3ba8-bdc0" primary="false" name="Sergeant Model Sub-Type"/>
             <categoryLink targetId="5a95-e564-96b2-8dc9" id="d175-803c-12ba-bca1" primary="false" name="Champion Model Sub-Type"/>
+            <categoryLink name="Infantry Model Type" hidden="false" id="9cd5-a13a-69df-9610" targetId="594d-fa82-13cb-a345" primary="false"/>
           </categoryLinks>
+          <profiles>
+            <profile name="Palatine Prefector" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="91e2-7add-645f-a612" publicationId="e54c-7040-0f35-d85d" page="138">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Sergeant)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">2</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">4</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">8</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Palatine Warrior" hidden="false" id="34df-3bf1-75f0-8ee0" sortIndex="2" page="138" publicationId="e54c-7040-0f35-d85d" defaultAmount="4">
           <costs>
@@ -330,21 +531,46 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="May exchange Palantine blade for:" id="ba2d-8783-66d8-183b" hidden="false">
               <entryLinks>
-                <entryLink import="true" name="Phoenix power spear" hidden="false" id="c751-6c1b-906f-8ffa" type="selectionEntry" targetId="c057-3eb7-ae01-58c4" sortIndex="2"/>
+                <entryLink import="true" name="Phoenix power spear" hidden="false" id="c751-6c1b-906f-8ffa" type="selectionEntry" targetId="41b7-f368-f337-d940" sortIndex="2"/>
                 <entryLink import="true" name="Palatine blade" hidden="false" id="f7d3-21b1-5afa-662d" type="selectionEntry" targetId="841a-f81a-904e-fd14" sortIndex="1"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <profiles>
+            <profile name="Palatine Warrior" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="23c4-f6e7-5261-e202" publicationId="e54c-7040-0f35-d85d" page="138">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">2</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">4</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">8</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Infantry Model Type" hidden="false" id="5069-4635-fdda-fcac" targetId="594d-fa82-13cb-a345" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="594d-fa82-13cb-a345" id="3dfd-53bc-489b-e997" primary="false" name="Infantry Model Type"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Legion Specific Upgrades" hidden="false" id="c9dc-ebe1-fd50-c5d0" targetId="f209-fb82-7d6d-2672" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" value="Surgical Augments (All models in a Traitor unit may be given the same):" field="name"/>
-          </modifiers>
+        <entryLink import="true" name="Surgical Augments (All models in a Traitor unit may be given the same):" hidden="false" id="c9dc-ebe1-fd50-c5d0" targetId="ab39-af3b-58c2-8d9b" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="44da-4f46-49ce-8fe9" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="153a-258c-41dc-b4cc" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -362,7 +588,29 @@
           </constraints>
           <categoryLinks>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="982f-67a9-316b-a728" primary="false" name="Sergeant Model Sub-Type"/>
+            <categoryLink name="Infantry Model Type" hidden="false" id="58cd-0792-0572-30cc" targetId="594d-fa82-13cb-a345" primary="false"/>
           </categoryLinks>
+          <profiles>
+            <profile name="Orchestrator" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="5ea4-4bf2-982f-d24a" publicationId="e54c-7040-0f35-d85d" page="139">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">1</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">4</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">1</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">10</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">9</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Chora" hidden="false" id="d66a-a50b-2dc9-756a" sortIndex="2" page="139" publicationId="e54c-7040-0f35-d85d" defaultAmount="4">
           <costs>
@@ -374,27 +622,76 @@
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="c6b1-e546-80cc-1c09" includeChildSelections="false"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="56b5-4f85-0ffa-af37" includeChildSelections="false"/>
           </constraints>
+          <profiles>
+            <profile name="Chora" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="47d7-231a-6601-7ce1" publicationId="e54c-7040-0f35-d85d" page="139">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">1</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">4</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">1</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">9</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Infantry Model Type" hidden="false" id="4d38-0c1a-b71a-3beb" targetId="594d-fa82-13cb-a345" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="594d-fa82-13cb-a345" id="1bcf-c1e2-6ddf-5ca6" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="d251-944b-3c3b-0579" id="2c16-4956-ae03-3895" primary="false" name="Traitor"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="300d-7f32-4f6e-907a" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="c045-e724-4dbc-b693" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Phoenix power spear" hidden="false" id="c057-3eb7-ae01-58c4" page="125" publicationId="e54c-7040-0f35-d85d">
+    <selectionEntry type="upgrade" import="true" name="Sonic shriekers" hidden="false" id="5ec5-2a18-42d2-2e54" publicationId="e54c-7040-0f35-d85d" page="125">
       <profiles>
-        <profile name="Phoenix power spear" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="81c6-a991-a802-0483" publicationId="e54c-7040-0f35-d85d" page="125">
+        <profile name="Sonic shriekers" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="22ea-8d00-14e9-1d8d" publicationId="e54c-7040-0f35-d85d" page="125">
           <characteristics>
-            <characteristic name="IM" typeId="6eec-4093-f946-1014">+1</characteristic>
-            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
-            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+1</characteristic>
-            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
-            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Impact (D), Breaching (6+)</characteristic>
-            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c"/>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">When a Unit that includes any Models with sonic shriekers makes a Charge Move, the Target Unit of that Charge cannot be selected to make Reactions until the Charge Procedure has been completed.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sonic lance" hidden="false" id="a2c1-8ba9-566a-a282" publicationId="e54c-7040-0f35-d85d" page="125">
+      <profiles>
+        <profile name="Sonic lance" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="7e51-8e64-dac9-610e" publicationId="e54c-7040-0f35-d85d" page="125">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">2</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">5</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Breaching (6+)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Sonic, Assault</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Template" id="4846-dd76-5790-64b5" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a"/>
+        <infoLink name="Breaching (X)" id="819a-1e68-3f0d-8126" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>

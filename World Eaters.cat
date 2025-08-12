@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="a956-190d-3b47-6258" name="                        XII - World Eaters" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="8" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="a956-190d-3b47-6258" name="                        XII - World Eaters" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="9" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Angron" hidden="false" id="af62-d4a0-c800-712e">
       <selectionEntries>
@@ -36,10 +36,10 @@
               <description>If a Model with this Special Rule is part of an Army, then the Controlling Player may apply the following additional Special Rules to all Auxiliary, Apex and Primary Detachments that have the same Faction Trait as the Model with this Special Rule:
 
 
-• If four or more Troops Battlefield Role Slots in the Primary Detachment of this Army are filled with Assault Squad and/or Despoiler Squad Units, then all Force Organisation Slots with the Troops Battlefield Role in the Primary Detachment are considered Prime Slots. 
+• If four or more Troops Battlefield Role Slots in the Primary Detachment of this Army are filled with Assault Squad and/or Despoiler Squad Units, then all Force Organisation Slots with the Troops Battlefield Role in the Primary Detachment are considered Prime Slots.
 
 
-Furthermore, if a Model with this Special Rule is part of an Army, then the following Special Rules are granted to all Models with the Infantry and Primarch Type with the Space Wolves Trait in the same Army:
+Furthermore, if a Model with this Special Rule is part of an Army, then the following Special Rules are granted to all Models with the Infantry and Paragon Type with the World Eaters Trait in the same Army:
 
 
 • Until the end of the first Battle Turn of the Battle, all Models in this Army with the Infantry or Paragon Type and the World Eaters Trait have the Fast (2) Special Rule.</description>
@@ -802,6 +802,11 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
           </constraints>
         </entryLink>
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="2c3f-6e64-30e3-2be8" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="7888-b09c-49fd-a07d" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="0739-43c6-450f-8821" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="If Angron is not in this Army, Kharn may replace The Cutter with:" id="35df-180b-2bdf-81eb" hidden="false" defaultSelectionEntryId="7b2e-a185-35c1-6af3">
@@ -869,6 +874,13 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                   </conditionGroups>
                 </modifier>
               </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1000,9 +1012,9 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="barb-hook lash" hidden="false" id="dc05-c0cf-935f-2c7f">
+        <selectionEntry type="upgrade" import="true" name="Barb-hook lash" hidden="false" id="dc05-c0cf-935f-2c7f" sortIndex="4">
           <profiles>
-            <profile name="barb-hook lash" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="25f2-eb9d-fc87-babb">
+            <profile name="Barb-hook lash" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="25f2-eb9d-fc87-babb">
               <characteristics>
                 <characteristic name="IM" typeId="6eec-4093-f946-1014">+1</characteristic>
                 <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
