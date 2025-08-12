@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="486f-b32a-ac87-73dd" name="                         VIII - Night Lords" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="7" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="486f-b32a-ac87-73dd" name="                         VIII - Night Lords" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="8" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Konrad Curze" hidden="false" id="f5fd-f425-c610-4a94">
       <selectionEntries>
@@ -90,7 +90,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             <profile name="A death Long Forseen" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="3919-c1e7-3f05-a432">
               <characteristics>
                 <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">If the Controlling Player succeeds at a Dice Roll, they may select this Gambit instead of any others normally available.</characteristic>
-                <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">When selecting Gambits for a Model with this Special Rule, it&apos;s Controlling Player can roll one Dice. On a 5+, this Gambit is available to the Controlling Player to be selected for that Model. 
+                <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">When selecting Gambits for a Model with this Special Rule, it&apos;s Controlling Player can roll one Dice. On a 5+, this Gambit is available to the Controlling Player to be selected for that Model. 
 
 
 When this Gambit is selected, the Controlling Player can make one Willpower Check for each of the following benefits. If the Willpower Check is successful, the corresponding effect applies until the start of the next Face-Off Step:
@@ -356,12 +356,10 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="f40e-8b68-2954-bf3f" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2"/>
-        <entryLink import="true" name="Night Lords Prime Benefits" hidden="false" id="7a8c-820b-bc73-f86b" type="selectionEntryGroup" targetId="d548-58a0-b896-ab48">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="25f1-62e4-3f26-9e21"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a142-0599-38d7-22b3"/>
-          </constraints>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="b666-20f1-f933-9db6" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="2ef5-9edc-9eed-3464" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -507,7 +505,6 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="98eb-ce8f-31db-69ca" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="6"/>
         <entryLink import="true" name="Bolt pistol" hidden="false" id="eaa3-dc90-90d6-677d" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c825-9787-9f54-6d8b"/>
@@ -526,11 +523,10 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b97-4651-e6a8-f0d3"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Night Lords Prime Benefits" hidden="false" id="ecde-15ee-639e-1605" type="selectionEntryGroup" targetId="d548-58a0-b896-ab48">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5dec-791a-589a-9b95"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3401-aaf9-cccb-42b8"/>
-          </constraints>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="4da6-9eff-b6e8-a2d8" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="ac69-50af-302f-a175" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -904,7 +900,6 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="cd32-9cd7-7a10-cbd7" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="4"/>
         <entryLink import="true" name="Bolt pistol" hidden="false" id="ef89-9725-5f50-63b7" type="selectionEntry" targetId="2942-f783-d627-33c5">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1642-0dbc-6778-db80"/>
@@ -923,11 +918,10 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6546-e47d-e4ba-3d61"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Night Lords Prime Benefits" hidden="false" id="f490-141a-eb61-0d60" type="selectionEntryGroup" targetId="d548-58a0-b896-ab48">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0fe0-dd9e-a344-e09a"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9673-e3da-c02e-554c"/>
-          </constraints>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="6284-4960-5085-10d3" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="9f06-57e4-12a8-c9c8" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -1126,7 +1120,7 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
         <categoryLink targetId="9c9d-4e53-09d5-8748" id="34a1-f579-b5e2-d6cc" primary="false" name="Night Lords"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Konrad Kurze" hidden="false" id="15d6-a1f4-4e9c-40c4" type="selectionEntry" targetId="f5fd-f425-c610-4a94">
+    <entryLink import="true" name="Konrad Curze" hidden="false" id="15d6-a1f4-4e9c-40c4" type="selectionEntry" targetId="f5fd-f425-c610-4a94">
       <categoryLinks>
         <categoryLink targetId="22ee-7208-4089-b005" id="9b47-0648-01c7-250d" primary="true" name="Warlord"/>
         <categoryLink targetId="9c9d-4e53-09d5-8748" id="240f-410b-adc0-0c87" primary="false" name="Night Lords"/>
@@ -1187,7 +1181,7 @@ When Locked in Combat with any Units which contain at least one Model which has 
                   <characteristics>
                     <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows the Controlling Player to switch the Model that fights in a Challenge.</characteristic>
                     <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">This Gambit may only be selected once per Challenge.
-If selected, at the Start of the Focus Step, this Model&apos;s Controlling Player may immediately return the Model to their Unit as if it was the Resolution Sub-Phase. If the Controlling Player chooses to do this, they must select another Model from this Unit (this can be a Model that is not normally eligible to take part in a Challenge). That Model is removed from the Unit and becomes the Challenger or Challenged Model in place of the original Challenger or Challenged Model that was returned to the Unit.</characteristic>
+If selected, at the Start of the Focus Step, this Model&apos;s Controlling Player may immediately return the Model to their Unit as if it was the Resolution Sub-Phase. If the Controlling Player chooses to do this, they must select another Model from this Unit (this can be a Model that is not normally eligible to take part in a Challenge). That Model is removed from the Unit and becomes the Challenger or Challenged Model in place of the original Challenger or Challenged Model that was returned to the Unit.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1207,7 +1201,7 @@ If selected, at the Start of the Focus Step, this Model&apos;s Controlling Playe
                     <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once this Reaction is declared, the Reacting Unit must immediately make a Fall Back Move as if it was affected by the Routed Tactical Status.
 
 
-2. Once this Fall Back Move is completed, the Reacting Unit does not gain the Routed Tactical Status.</characteristic>
+2. Once this Fall Back Move is completed, the Reacting Unit does not gain the Routed Tactical Status.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
