@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7851-69ac-f701-034e" name="Solar Auxilia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="11" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7851-69ac-f701-034e" name="Solar Auxilia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="12" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Legatine Command Section" hidden="false" id="8641-1dd0-7e76-de7d">
       <categoryLinks>
@@ -257,7 +257,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22ab-ca0c-3a50-3b96"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="381a-c826-e7b2-e505" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="381a-c826-e7b2-e505" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="6cd1-35bd-1375-a8b5" targetId="8180-ce7c-accf-f232" type="selectionEntryGroup"/>
+          </entryLinks>
+        </entryLink>
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="bd48-8f06-824a-260a" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
       </entryLinks>
       <infoLinks>
@@ -275,22 +279,6 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2292-3fa0-5ef0-9147"/>
           </constraints>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Solar Auxilia Prime Benefits" id="8180-ce7c-accf-f232" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="7df8-61e6-2926-fe91" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1952-dfc3-8cdb-640a"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcf8-a9b8-c52a-a3aa"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -582,24 +570,6 @@
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Solar Auxilia Prime Benefits" id="b6fb-da70-be04-fa79" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="d045-21b9-6da0-44ad" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b658-8e75-e4af-84bd"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9e1-ff5e-2165-27ce"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Line Command Section" hidden="false" id="6c3c-1e9a-6f16-8554">
       <categoryLinks>
@@ -902,24 +872,6 @@
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Solar Auxilia Prime Benefits" id="491d-dcc2-7506-09a4" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="8004-97ef-ce9b-40ad" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="64b9-89b2-001e-7cd4"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cd9-707e-8cbf-e88f"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Veletaris Command Section" hidden="false" id="d9f6-af42-40a5-2636">
       <categoryLinks>
@@ -1171,24 +1123,6 @@
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Solar Auxilia Prime Benefits" id="6f2d-6ddd-076d-eda9" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="c468-8468-c543-fc4c" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ccd3-99ae-01dc-ee07"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3889-f759-e386-cf86"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Hermes Command Section" hidden="false" id="95e2-9c56-ae1c-923b">
       <categoryLinks>
@@ -2126,24 +2060,6 @@
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Solar Auxilia Prime Benefits" id="afed-04ab-a7f7-59dd" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="332f-eb83-958d-9fb9" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0a2d-f8bc-5ec4-069d"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3214-d518-77ea-bf30"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Veletaris Vanguard Section" hidden="false" id="595b-fbac-e14c-3156">
       <categoryLinks>
@@ -2354,24 +2270,6 @@
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Solar Auxilia Prime Benefits" id="7b2b-18b7-463e-6337" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="a95f-d2f1-b6cd-9b70" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="25bf-d7aa-1e8d-6ad9"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9738-41f8-1b0c-b706"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Charonite Ogryn Section" hidden="false" id="bc99-f75e-c0b6-6c0f">
       <categoryLinks>
@@ -2890,22 +2788,6 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Solar Auxilia Prime Benefits" id="b963-2033-9e2b-c9cb" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="0029-0c98-a5b4-bdb7" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d905-e136-8502-6935"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23a1-125b-30d7-4a55"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="[Allegiance]" id="495e-1286-cee2-8eb2" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -3135,24 +3017,6 @@
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="0652-1985-4270-9233" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2"/>
       </entryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Solar Auxilia Prime Benefits" id="a905-54ab-f7c0-de05" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="47f1-92c9-508a-56fd" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5e12-97c8-3206-46fb"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae32-847b-0a85-9fbc"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <rules>
         <rule name="Rapier Section" id="e98f-b76f-6f64-759f" hidden="false">
           <description>&quot;Models with this special Rule resolve Shooting Attacks and Attacks made in Combat against different Toughness Characteristics from their Unit.&quot;</description>
@@ -3867,24 +3731,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Solar Auxilia Prime Benefits" id="47ca-abc7-4714-de43" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="04ec-2052-d8a5-93b6" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2fce-6c4c-5d02-db33"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b355-d536-4894-dd1f"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Thunderbolt Heavy Fighter" hidden="false" id="ce19-e401-0408-a06a">
       <categoryLinks>
@@ -3949,24 +3795,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Solar Auxilia Prime Benefits" id="c729-6f3f-23fa-9e0b" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="602f-c464-8423-b50f" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5faa-0e93-277a-783c"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ad3-6eee-edf1-e784"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lasrifle" hidden="false" id="40e8-fcb7-9e0e-1582">
       <profiles>
@@ -4619,22 +4447,6 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Solar Auxilia Prime Benefits" id="496f-8d65-4127-8154" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="c0db-398c-2a9b-80b6" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a7fd-a90c-8ca1-76ad"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3bc8-6f51-c96c-97be"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="de52-5751-ba55-fdad" primary="false" name="Vehicle Model Type"/>
@@ -4731,22 +4543,6 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
               </constraints>
             </entryLink>
           </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Solar Auxilia Prime Benefits" id="293e-cf8d-a2e0-5c56" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="bd8e-8245-3cf7-a615" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fe69-bf96-3d8b-a7de"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ed7-2a94-2458-01b2"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -4888,22 +4684,6 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
               </constraints>
             </entryLink>
           </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Solar Auxilia Prime Benefits" id="b41f-2c00-9355-1300" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="826b-0f48-8600-4570" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e2af-25aa-7e53-b17c"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74a9-8691-c594-b7f5"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -5055,22 +4835,6 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
               </modifiers>
             </entryLink>
           </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Solar Auxilia Prime Benefits" id="8978-cd88-6c4a-82c6" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="34ec-5056-319a-9097" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="196a-bc97-0511-cb70"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0691-58fb-b550-83dd"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
@@ -5228,22 +4992,6 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Solar Auxilia Prime Benefits" id="eace-2880-febe-debc" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="0b44-8047-3ebd-6c96" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4590-3f85-356c-7af6"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="097d-01eb-24b7-a798"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="1d42-a242-a3b6-764e" primary="false" name="Vehicle Model Type"/>
@@ -5390,22 +5138,6 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2521-372e-4d03-c78b"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbb8-da25-a92b-4643"/>
           </constraints>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Solar Auxilia Prime Benefits" id="6dab-d2a0-3e8f-37cf" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="1b89-52e6-43cd-4a41" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8a07-3685-1dfb-a333"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="597e-6858-b5c3-4210"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <profiles>
@@ -6253,84 +5985,6 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Solar Auxilia Prime Benefits" id="7a0b-ef74-6d6d-d78d" hidden="false">
-      <entryLinks>
-        <entryLink import="true" name="Common Prime Benefits" hidden="false" id="b7a0-3352-84b2-52af" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true"/>
-      </entryLinks>
-      <constraints>
-        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5b42-a937-a6ff-dd20"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb2f-57ed-a94c-ff74"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68ae-a828-9d75-4536"/>
-        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f6b8-ff9f-dd0f-510f"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="0" field="selections" scope="parent" childId="3fa2-78b1-637f-7fb2" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" value="c85c-2963-658f-1bb9" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dbf-654a-f06f-2d69" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" value="276f-7a07-a56c-affd" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5d5e-958f-e388-50b5" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" value="c66b-ef39-b20f-725b" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a38e-50ff-310f-f19e" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" value="c3f9-a7f3-984b-3fda" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="88e6-d373-4152-0dd8" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" value="9699-67c9-2c0b-e64b" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2499-7239-685f-8465" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" value="1c79-ecdf-9a64-84c9" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="345f-9ba6-9b02-ed5c" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" value="fc27-1a48-84ae-aa7b" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d162-4711-5d60-0a48" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" value="1e95-35f0-1353-ffa1" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3235-bd79-e9b1-60fa" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" value="abff-3686-c39a-9a24" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="52d0-8b78-439e-18e5" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" value="4460-7bc1-4d80-aecb" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="643a-1012-bd51-6537" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" value="6348-ecd0-714d-042a" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2b65-a3f2-620a-dc58" shared="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" value="c291-144b-3da6-37ed" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cf96-8891-3f9a-8921" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </selectionEntryGroup>
     <selectionEntryGroup name="Cohort Doctrine" id="cacc-ab7b-f2b1-d1c4" hidden="false">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Cohort Doctrine: Ultima Pattern Cohort" hidden="false" id="cc7a-b052-c052-32b2">
@@ -6445,6 +6099,15 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
       <constraints>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0d2b-c93f-3fbb-b9b9"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ab2-9963-65e7-8d10"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Prime Benefits" id="8180-ce7c-accf-f232" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Common Prime Benefits" hidden="false" id="7df8-61e6-2926-fe91" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1952-dfc3-8cdb-640a"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcf8-a9b8-c52a-a3aa"/>
       </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>

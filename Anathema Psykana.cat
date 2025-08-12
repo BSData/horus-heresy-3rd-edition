@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="e7b4-2c1c-7d85-a4e3" name="Anathema Psykana" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="9" revision="2" authorName="Arkangelmark5" battleScribeVersion="2.03" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="e7b4-2c1c-7d85-a4e3" name="Anathema Psykana" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="9" revision="3" authorName="Arkangelmark5" battleScribeVersion="2.03" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="52f8-7724-64ba-a25f" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Special Rules" id="62b6-f5a3-bf1c-8f49" targetId="106b-693b-99f2-00c3"/>
@@ -25,151 +25,9 @@
   </categoryEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Prime Benefits" id="5f88-9f8a-5fef-2a71" hidden="false">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Master Sergeant" hidden="true" id="ce4b-7f8a-d4bc-639d">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="862e-73e6-842c-f2b9"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="11ec-a223-7f5b-de42" includeChildSelections="true"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Combat Veterans" hidden="false" id="24e3-f024-898e-5310">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e88-5c4e-b877-53cb" includeChildSelections="false"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4d5a-b445-a4ef-b423" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d9a6-9b5f-b18a-4d63" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Paragon of Battle" hidden="true" id="6bf2-c647-640c-1890">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="002c-2097-5620-316c"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dbf-654a-f06f-2d69" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Special Assignment" hidden="true" id="2604-ecdf-dbd2-2481">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6ab-36f4-1ff0-ccab" includeChildSelections="false"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9016-a7e8-41d7-6205" includeChildSelections="false"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink name="Prime Command" hidden="false" id="b9a6-ce26-d390-7bd5" targetId="c85c-2963-658f-1bb9" primary="false"/>
-          </categoryLinks>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d9a6-9b5f-b18a-4d63" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Logistical Benefit" hidden="false" id="4274-7ed4-c3cb-dc47">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Logistical Benefit" id="bbbf-8a57-4843-ac7f" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="LB - Armour" hidden="false" id="90ca-ddf2-b53b-53de" sortIndex="9">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="111a-7022-1248-a558" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37da-2285-4aa5-e28e" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="LB - Retinue" hidden="false" id="661e-cf95-1e36-eae9" sortIndex="1">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d9f5-1400-7f29-ed39" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e771-f633-2847-1230" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="LB - Elites" hidden="false" id="1327-9084-7932-8be2" sortIndex="2">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="27e1-6810-1775-bb36" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6eb1-e79c-80ba-ab84" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="LB - Support" hidden="false" id="8e9a-e7b7-5ecd-b0ca" sortIndex="5">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="40b8-607a-5e70-9058" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d6d-d4fc-b3d7-9efc" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="LB - Recon" hidden="false" id="31db-ef89-e168-e099" sortIndex="10">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2286-2caf-ec0b-45bf" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4dbe-05e0-071b-8ec1" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="LB - Transport" hidden="false" id="db26-8fe2-1cd9-4d76" sortIndex="6">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="69be-4fa4-8141-24dc" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75fd-5fda-0aab-c7ac" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="LB - Troops" hidden="false" id="2105-344c-3194-078a" sortIndex="4">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0b70-55d5-0e59-7b4b" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="583c-62f9-4f85-9052" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="LB - War-engine" hidden="false" id="d868-1839-c44c-4357" sortIndex="3">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1089-7837-0e0e-1b53" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="841a-db4a-2490-0fd6" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="LB - Heavy Transport" hidden="false" id="de44-c2e1-001c-828b" sortIndex="8">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="da4d-aa7f-fbd1-7cb7" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e5a-dfa0-723c-3696" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="LB - Fast Attack" hidden="false" id="a84e-1a4b-5bde-a3c9" sortIndex="11">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f383-dc5a-2f05-683f" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2522-ce5a-6cff-bb5c" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="LB - Heavy Assault" hidden="false" id="df3d-9e07-44cf-5e4a" sortIndex="7">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="aa33-a904-63aa-2d92" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7598-df87-464b-0b50" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9de9-8446-3457-61b2" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf98-f0aa-6f4a-d498" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f0e-daae-f374-8865" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="385e-8c66-028c-28be" includeChildSelections="true"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d9a6-9b5f-b18a-4d63" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Common Prime Benefits" hidden="false" id="5c9a-e305-5cc7-d605" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedSelectionEntries>
@@ -235,7 +93,7 @@
                   </modifiers>
                   <comment>2</comment>
                 </infoLink>
-                <infoLink name="" id="74fc-249c-2c86-1e12" hidden="false" type="rule" targetId="0612-95d5-46ae-c5ee">
+                <infoLink id="74fc-249c-2c86-1e12" hidden="false" type="rule" targetId="0612-95d5-46ae-c5ee" name="Hatred (X)">
                   <modifiers>
                     <modifier type="set" value="Hatred (Psyker, Malefic)" field="name"/>
                   </modifiers>
