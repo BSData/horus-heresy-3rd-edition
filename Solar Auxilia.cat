@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7851-69ac-f701-034e" name="Solar Auxilia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="11" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7851-69ac-f701-034e" name="Solar Auxilia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="12" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Legatine Command Section" hidden="false" id="8641-1dd0-7e76-de7d">
       <categoryLinks>
@@ -6458,6 +6458,27 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
       <categoryLinks>
         <categoryLink targetId="88e6-d373-4152-0dd8" id="39ad-8168-d304-2b5b" primary="true" name="Troops"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="f006-dd7c-6753-f732" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="243b-4ffd-9808-11d8" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Infantry Tercio" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="true" id="1030-04ed-8840-a24f">
+          <characteristics>
+            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="243b-4ffd-9808-11d8" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
     </entryLink>
     <entryLink import="true" name="Tactical Command Section" hidden="false" id="d29b-6522-569f-7d18" type="selectionEntry" targetId="d20e-4cb8-54be-015d">
       <categoryLinks>
@@ -6488,11 +6509,53 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="70ae-a3db-7562-4719" primary="true" name="Elites"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="8dce-eb64-ec33-0b51" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e1a1-2699-4681-47ab" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Veletarias Tercio" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="true" id="a119-9f49-e402-2a37">
+          <characteristics>
+            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e1a1-2699-4681-47ab" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
     </entryLink>
     <entryLink import="true" name="Veletaris Vanguard Section" hidden="false" id="b9d5-aa77-5c27-a52f" type="selectionEntry" targetId="595b-fbac-e14c-3156">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="421e-3432-c297-ed40" primary="true" name="Elites"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="8dce-eb64-ec33-0b51" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e1a1-2699-4681-47ab" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Veletarias Tercio" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="true" id="63ba-4dc2-fca9-d558">
+          <characteristics>
+            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e1a1-2699-4681-47ab" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
     </entryLink>
     <entryLink import="true" name="Charonite Ogryn Section" hidden="false" id="bf1c-1029-d4ab-4db6" type="selectionEntry" targetId="bc99-f75e-c0b6-6c0f">
       <categoryLinks>
@@ -6503,26 +6566,143 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="c5c7-86af-ae26-50ba" primary="true" name="Support"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="ada1-aac4-9802-9c3d" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="371d-e9ef-7bf9-47de" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Artillery Tercio" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="true" id="09f8-8de7-5cff-e100">
+          <characteristics>
+            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="371d-e9ef-7bf9-47de" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
     </entryLink>
     <entryLink import="true" name="Medusa Artillery Tank" hidden="false" id="2ceb-9daf-1ed7-70e5" type="selectionEntry" targetId="f15b-8333-252f-b85b">
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="9555-1c14-f1c4-516d" primary="true" name="Support"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="ada1-aac4-9802-9c3d" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="371d-e9ef-7bf9-47de" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Artillery Tercio" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="true" id="3766-7c8c-c5db-20fa">
+          <characteristics>
+            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="371d-e9ef-7bf9-47de" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
     </entryLink>
     <entryLink import="true" name="Hermes Veletaris Squadron" hidden="false" id="61db-f02b-f101-3a2c" type="selectionEntry" targetId="473a-0dcd-6dd3-746d">
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="7591-ba0b-a734-3729" primary="true" name="Support"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="c480-7340-9da9-d9ac" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e1a1-2699-4681-47ab" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Veletaris Tercio" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="true" id="d3a4-12d3-ad71-3dc8">
+          <characteristics>
+            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e1a1-2699-4681-47ab" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Veletarias Tercio" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="true" id="d0f3-31d9-31a8-5797">
+          <characteristics>
+            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e1a1-2699-4681-47ab" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
     </entryLink>
     <entryLink import="true" name="Aethon Heavy Sentinel Squadron" hidden="false" id="50d0-0eac-5b4b-e17b" type="selectionEntry" targetId="ab2e-5984-a5b1-5253">
       <categoryLinks>
         <categoryLink targetId="2499-7239-685f-8465" id="a775-25f4-6f12-6d0a" primary="true" name="War-engine"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="5ee3-236d-c224-67aa" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="551a-23a1-7758-2688" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Scout Tercio" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="true" id="e79c-9d37-4edb-d979">
+          <characteristics>
+            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="551a-23a1-7758-2688" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
     </entryLink>
     <entryLink import="true" name="Rapier Section" hidden="false" id="b436-755a-0acb-4522" type="selectionEntry" targetId="1af7-7d6c-9c0d-1204">
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="660e-1acd-d275-a590" primary="true" name="Support"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="ada1-aac4-9802-9c3d" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="371d-e9ef-7bf9-47de" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Artillery Tercio" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="true" id="0687-89f5-d8cf-410d">
+          <characteristics>
+            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="371d-e9ef-7bf9-47de" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
     </entryLink>
     <entryLink import="true" name="Arvus Lighter" hidden="false" id="ef25-2e8d-ed64-5798" type="selectionEntry" targetId="b42c-4380-99ba-1a9e">
       <categoryLinks>
@@ -6533,11 +6713,75 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
       <categoryLinks>
         <categoryLink targetId="52d0-8b78-439e-18e5" id="887d-0526-fd90-a6c0" primary="true" name="Heavy Transport"/>
       </categoryLinks>
+      <profiles>
+        <profile name="Veletarias Tercio" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="true" id="ee6a-903f-72e8-ec06">
+          <characteristics>
+            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e1a1-2699-4681-47ab" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Infantry Tercio" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="true" id="65be-ac66-b6fe-7568">
+          <characteristics>
+            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="243b-4ffd-9808-11d8" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
     </entryLink>
     <entryLink import="true" name="Hermes Light Sentinel Squadron" hidden="false" id="4dff-5407-0194-d487" type="selectionEntry" targetId="5139-b21c-fb38-c365">
       <categoryLinks>
         <categoryLink targetId="2b65-a3f2-620a-dc58" id="f1c2-f864-c28f-478f" primary="true" name="Recon"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="b367-e724-5450-9e45" field="category">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="243b-4ffd-9808-11d8" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="551a-23a1-7758-2688" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Infantry Tercio" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="true" id="3d6b-93d7-eb56-b75f">
+          <characteristics>
+            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="243b-4ffd-9808-11d8" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Scout Tercio" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="true" id="3604-27a6-fd78-b42c">
+          <characteristics>
+            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="551a-23a1-7758-2688" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
     </entryLink>
     <entryLink import="true" name="Primaris-Lightning Strike Fighter" hidden="false" id="b413-02fe-fc6e-e9ba" type="selectionEntry" targetId="578c-f52b-7f8d-0499">
       <categoryLinks>
@@ -6553,16 +6797,79 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
       <categoryLinks>
         <categoryLink targetId="643a-1012-bd51-6537" id="d6cd-5c74-7a6d-5f5e" primary="true" name="Armour"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="5725-7f8c-f02e-4df6" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6aff-b91d-02bb-7461" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Armour Tercio" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="true" id="ed11-81e4-fa94-152a">
+          <characteristics>
+            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6aff-b91d-02bb-7461" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
     </entryLink>
     <entryLink import="true" name="Leman Russ Assault Tank" hidden="false" id="9e06-5ed1-969c-0688" type="selectionEntry" targetId="cd74-812f-c0a2-5d41">
       <categoryLinks>
         <categoryLink targetId="643a-1012-bd51-6537" id="89bd-3465-3948-034b" primary="true" name="Armour"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="5725-7f8c-f02e-4df6" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6aff-b91d-02bb-7461" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Armour Tercio" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="true" id="8371-0634-bf90-5d42">
+          <characteristics>
+            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6aff-b91d-02bb-7461" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
     </entryLink>
     <entryLink import="true" name="Leman Russ Strike Tank" hidden="false" id="fcb0-c89e-f064-69fa" type="selectionEntry" targetId="3d63-4299-d15f-b3ba">
       <categoryLinks>
         <categoryLink targetId="643a-1012-bd51-6537" id="9909-60c6-eb66-cb12" primary="true" name="Armour"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="5725-7f8c-f02e-4df6" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6aff-b91d-02bb-7461" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Armour Tercio" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="true" id="8587-7d8c-84d5-8113">
+          <characteristics>
+            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6aff-b91d-02bb-7461" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
     </entryLink>
     <entryLink import="true" name="Malcador Infernus Special Weapon Tank" hidden="false" id="b2da-fd3d-9318-1c94" type="selectionEntry" targetId="2cfd-fcf4-ce27-87f3">
       <categoryLinks>
