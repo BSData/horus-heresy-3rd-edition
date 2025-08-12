@@ -151,6 +151,16 @@ class GameTests(unittest.TestCase):
                 self.assertIsNotNone(entries, "Should have entries")
                 model_count = 0
                 for potential_model in entries.children:
+                    if potential_model.attrib.get("subType") == "unit-group":  # Rapier type unit
+                        for potential_sub_model in potential_model.get_child("selectionEntries").children:
+                            if not potential_sub_model.attrib["type"] == "model":
+                                continue
+                            model_count += 1
+                            total_model_count += 1
+                            with self.subTest(f"{potential_sub_model} should have a profile"):
+                                self.assertIsNotNone(potential_sub_model.get_profile_node(None),
+                                                     f"There should be a profile on {potential_sub_model}")
+
                     if not potential_model.attrib["type"] == "model":
                         continue
                     model_count += 1
