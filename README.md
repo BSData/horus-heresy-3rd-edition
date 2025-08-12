@@ -42,19 +42,32 @@ Copy what is printed in the books.
 - If the book has something as Upper Upper, eg "Legion Officer Wargear" then capitalise every word.
 - If the book does not capitalise something, eg "Any model may exchange their *bolter*..." then it does not need to be capitalised unless it is the first owrd in a string/sentence/label.
 
-# 3: Default Inclusions on Units
-## 3.1: Astartes Units
+# 3: Making Units
+All units should be made as shared selection entries
+
+Then each unit should have a link to that shared selection entry in its catalogue.
+For the legions, they import the root selection entries from the LA cat. 
+
+## 3.1: Default Inclusions on Units
+
+Each link should have the battlefield role on the force org slot. [x] Checked by the unit tests
+
+###  Astartes Units
 All Astartes units should have the following Traits at the root level of the unit (Add Link -> Profile -> Search for them):
 - \[Allegiance]
 - \[Legiones Astartes]
-## Mechanicum Units
+
+The legion specific units should not have the legion trait category set on the shared selection entry, 
+and instead it should be set on the link. This is so alpha legion can import them without this trait [x] These are the only traits allowed other than the battlefield roles by the unit tests.
+
+### Mechanicum Units
 All Mechanicum units should have the following Traits at the root level of the unit (Add Link -> Profile -> Search for them):
 - \[Allegiance]
-## Solar Auxilia Units
+### Solar Auxilia Units
 All Auxilia units should have the following Traits at the root level of the unit (Add Link -> Profile -> Search for them):
 - \[Allegiance]
 -  Solar Auxilia
-## Questoris Household Units
+### Questoris Household Units
 All Auxilia units should have the following Traits at the root level of the unit (Add Link -> Profile -> Search for them):
 - \[Allegiance]
 
