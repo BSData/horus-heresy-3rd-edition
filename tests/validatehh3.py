@@ -119,7 +119,7 @@ class GameTests(unittest.TestCase):
                 prime_link = entry_links.get_child(tag='entryLink',
                                                    attrib={'targetId': '3fa2-78b1-637f-7fb2'})  # Prime Unit ID
                 self.assertIsNotNone(prime_link)
-                with self.subTest(f"prime link {prime_link} should contain an option"):
+                with self.subTest(f"Benefits on {prime_link}"):
                     prime_options_total = 0
 
                     prime_benefit_links = prime_link.get_child("entryLinks")
