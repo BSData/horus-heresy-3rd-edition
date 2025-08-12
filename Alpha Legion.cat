@@ -310,7 +310,7 @@ When an enemy Unit finishes a Move within 6&quot; of a Model with this Special R
             <categoryLink targetId="8045-89a4-76d4-fcef" id="8977-022d-a445-1644" primary="false" name="Sergeant Model Sub-Type"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May replace power dagger with:" id="3697-e1a9-d701-23a5" hidden="false" defaultSelectionEntryId="50c8-5b2b-67c0-c92e" sortIndex="1">
+            <selectionEntryGroup name="May replace power dagger with:" id="3697-e1a9-d701-23a5" hidden="false" defaultSelectionEntryId="50c8-5b2b-67c0-c92e" sortIndex="2">
               <entryLinks>
                 <entryLink import="true" name="Power Dagger" hidden="false" id="50c8-5b2b-67c0-c92e" type="selectionEntry" targetId="d8d4-f400-7730-792a">
                   <constraints>
@@ -328,7 +328,7 @@ When an enemy Unit finishes a Move within 6&quot; of a Model with this Special R
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1e0-1eb9-9f1f-89b8"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="May replace bolt pistol with:" id="94c5-2fc2-ca27-6850" hidden="false" defaultSelectionEntryId="28d3-a2d6-4a96-a347" sortIndex="2">
+            <selectionEntryGroup name="May replace bolt pistol with:" id="94c5-2fc2-ca27-6850" hidden="false" defaultSelectionEntryId="28d3-a2d6-4a96-a347" sortIndex="3">
               <entryLinks>
                 <entryLink import="true" name="Bolt pistol" hidden="false" id="28d3-a2d6-4a96-a347" type="selectionEntry" targetId="2942-f783-d627-33c5"/>
                 <entryLink import="true" name="Legion Pistols" hidden="false" id="a6f6-dc30-9e92-0147" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf">
@@ -343,6 +343,14 @@ When an enemy Unit finishes a Move within 6&quot; of a Model with this Special R
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Banestrike combi-bolter" hidden="false" id="1859-3e0b-dc75-03f8" type="selectionEntry" targetId="2442-f324-4b1a-ac63" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4680-996f-4b51-c966"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c21d-cddb-f466-340c"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Headhunter" hidden="false" id="b8ac-3017-94f9-d523" sortIndex="2">
           <profiles>
@@ -688,9 +696,9 @@ When an enemy Unit finishes a Move within 6&quot; of a Model with this Special R
           <selectionEntryGroups>
             <selectionEntryGroup name="Options" id="8e7e-8170-82d2-f225" hidden="false" sortIndex="1">
               <selectionEntryGroups>
-                <selectionEntryGroup name="May exchange power axe for:" id="1c99-376d-7145-5f26" hidden="false" sortIndex="2" defaultSelectionEntryId="d7a4-8e70-127b-9a32">
+                <selectionEntryGroup name="May exchange power axe for:" id="1c99-376d-7145-5f26" hidden="false" sortIndex="2" defaultSelectionEntryId="247b-993b-35b8-ae0f">
                   <entryLinks>
-                    <entryLink import="true" name="Power axe" hidden="false" id="d7a4-8e70-127b-9a32" type="selectionEntry" targetId="4861-b77a-620c-f0d6" sortIndex="1" defaultAmount="1"/>
+                    <entryLink import="true" name="Power axe" hidden="false" id="d7a4-8e70-127b-9a32" type="selectionEntry" targetId="4861-b77a-620c-f0d6" sortIndex="1"/>
                     <entryLink import="true" name="Power maul" hidden="false" id="fb60-a0e9-2362-0f27" type="selectionEntry" targetId="c4fa-659d-bf4b-bad1" sortIndex="2"/>
                     <entryLink import="true" name="Lightning claw" hidden="false" id="e8bf-17b7-3bf4-dfb6" type="selectionEntry" targetId="cbf0-9b29-9a16-28b2" sortIndex="3">
                       <costs>
@@ -724,7 +732,7 @@ When an enemy Unit finishes a Move within 6&quot; of a Model with this Special R
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="May exchange volkite charger for:" id="939b-19f5-c802-39ab" hidden="false" collapsible="false" defaultSelectionEntryId="5e2f-ea0e-8868-c51b" sortIndex="1">
+                <selectionEntryGroup name="May exchange volkite charger for:" id="939b-19f5-c802-39ab" hidden="false" collapsible="false" defaultSelectionEntryId="e6c9-e05e-9b8e-13a4" sortIndex="1">
                   <entryLinks>
                     <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="3b30-67f6-8067-8b2d" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" flatten="true" sortIndex="3"/>
                     <entryLink import="true" name="Combi-bolter" hidden="false" id="9e58-905f-28fa-c52d" type="selectionEntry" targetId="042d-9e60-db9e-c147" sortIndex="2"/>
@@ -743,7 +751,7 @@ When an enemy Unit finishes a Move within 6&quot; of a Model with this Special R
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink import="true" name="Pair of lightning claws" hidden="false" id="32de-abeb-37a2-fa4d" type="selectionEntry" targetId="6754-24dd-5be0-26ff" sortIndex="3" defaultAmount="0">
+                <entryLink import="true" name="Pair of lightning claws" hidden="false" id="32de-abeb-37a2-fa4d" type="selectionEntry" targetId="6754-24dd-5be0-26ff" sortIndex="3">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
@@ -819,7 +827,7 @@ When an enemy Unit finishes a Move within 6&quot; of a Model with this Special R
               <selectionEntryGroups>
                 <selectionEntryGroup name="May exchange power axe for:" id="2bbb-95ec-f855-c8fa" hidden="false" sortIndex="2" defaultSelectionEntryId="247b-993b-35b8-ae0f">
                   <entryLinks>
-                    <entryLink import="true" name="Power axe" hidden="false" id="247b-993b-35b8-ae0f" type="selectionEntry" targetId="4861-b77a-620c-f0d6" sortIndex="1" defaultAmount="1"/>
+                    <entryLink import="true" name="Power axe" hidden="false" id="247b-993b-35b8-ae0f" type="selectionEntry" targetId="4861-b77a-620c-f0d6" sortIndex="1"/>
                     <entryLink import="true" name="Power maul" hidden="false" id="f6c5-8bfd-b911-d820" type="selectionEntry" targetId="c4fa-659d-bf4b-bad1" sortIndex="2"/>
                     <entryLink import="true" name="Lightning claw" hidden="false" id="2b71-1560-ef5a-cc26" type="selectionEntry" targetId="cbf0-9b29-9a16-28b2" sortIndex="3">
                       <costs>
@@ -908,7 +916,7 @@ When an enemy Unit finishes a Move within 6&quot; of a Model with this Special R
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink import="true" name="Pair of lightning claws" hidden="false" id="550c-3b95-3385-1a50" type="selectionEntry" targetId="6754-24dd-5be0-26ff" sortIndex="3" defaultAmount="0">
+                <entryLink import="true" name="Pair of lightning claws" hidden="false" id="550c-3b95-3385-1a50" type="selectionEntry" targetId="6754-24dd-5be0-26ff" sortIndex="3">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
