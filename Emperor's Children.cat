@@ -168,7 +168,7 @@
         <categoryLink targetId="d251-944b-3c3b-0579" id="d614-11f5-edda-0847" primary="false" name="Traitor"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Sonic shriekers" hidden="false" id="0ceb-677a-17a6-9abb" type="selectionEntry" targetId="5ec5-2a18-42d2-2e54">
+        <entryLink import="true" name="Sonic shriekers" hidden="false" id="0ceb-677a-17a6-9abb" type="selectionEntry" targetId="40b9-94df-1b96-4e93">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
@@ -230,7 +230,11 @@
         <categoryLink targetId="594d-fa82-13cb-a345" id="bd69-86ea-6dff-d398" primary="false" name="Infantry Model Type"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink targetId="ab39-af3b-58c2-8d9b" id="5f26-d958-57a4-33ec" type="selectionEntryGroup" name="Surgical Augments (All models in a Traitor unit may be given the same):" hidden="false"/>
+        <entryLink targetId="f209-fb82-7d6d-2672" id="5f26-d958-57a4-33ec" type="selectionEntryGroup" name="Legion Specific Upgrades" hidden="false">
+          <modifiers>
+            <modifier type="set" value="Surgical Augments (All models in a Traitor unit may be given the same):" field="name"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Palatine Blade Squad" hidden="false" id="8f1b-e5a5-5607-612c" publicationId="e54c-7040-0f35-d85d" page="138">
@@ -337,7 +341,11 @@
         <categoryLink targetId="594d-fa82-13cb-a345" id="3dfd-53bc-489b-e997" primary="false" name="Infantry Model Type"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Surgical Augments (All models in a Traitor unit may be given the same):" hidden="false" id="c9dc-ebe1-fd50-c5d0" targetId="ab39-af3b-58c2-8d9b" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Legion Specific Upgrades" hidden="false" id="c9dc-ebe1-fd50-c5d0" targetId="f209-fb82-7d6d-2672" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" value="Surgical Augments (All models in a Traitor unit may be given the same):" field="name"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kakophoni Squad" hidden="false" id="4ac4-b32a-6840-a91e" publicationId="e54c-7040-0f35-d85d" page="139">
@@ -372,39 +380,6 @@
         <categoryLink targetId="594d-fa82-13cb-a345" id="1bcf-c1e2-6ddf-5ca6" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="d251-944b-3c3b-0579" id="2c16-4956-ae03-3895" primary="false" name="Traitor"/>
       </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Sonic shriekers" hidden="false" id="5ec5-2a18-42d2-2e54" publicationId="e54c-7040-0f35-d85d" page="125">
-      <profiles>
-        <profile name="Sonic shriekers" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="22ea-8d00-14e9-1d8d" publicationId="e54c-7040-0f35-d85d" page="125">
-          <characteristics>
-            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c"/>
-            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">When a Unit that includes any Models with sonic shriekers makes a Charge Move, the Target Unit of that Charge cannot be selected to make Reactions until the Charge Procedure has been completed.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Sonic lance" hidden="false" id="a2c1-8ba9-566a-a282" publicationId="e54c-7040-0f35-d85d" page="125">
-      <profiles>
-        <profile name="Sonic lance" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="7e51-8e64-dac9-610e" publicationId="e54c-7040-0f35-d85d" page="125">
-          <characteristics>
-            <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
-            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
-            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">2</characteristic>
-            <characteristic name="AP" typeId="7a23-0248-2b94-5951">5</characteristic>
-            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
-            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Breaching (6+)</characteristic>
-            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Sonic, Assault</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Template" id="4846-dd76-5790-64b5" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a"/>
-        <infoLink name="Breaching (X)" id="819a-1e68-3f0d-8126" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
-          <modifiers>
-            <modifier type="set" value="Breaching (6+)" field="name"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Phoenix power spear" hidden="false" id="c057-3eb7-ae01-58c4" page="125" publicationId="e54c-7040-0f35-d85d">
       <profiles>
@@ -473,39 +448,6 @@
     </entryLink>
   </entryLinks>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Surgical Augments (All models in a Traitor unit may be given the same):" id="ab39-af3b-58c2-8d9b" hidden="false">
-      <entryLinks>
-        <entryLink import="true" name="Sonic shriekers" hidden="false" id="5315-fbff-23e3-e045" type="selectionEntry" targetId="5ec5-2a18-42d2-2e54" sortIndex="1">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8344-6b97-8bb6-58cf" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="5" field="9893-c379-920b-8982">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Sonic lance" hidden="false" id="6aa3-3c98-6079-3bcc" type="selectionEntry" targetId="a2c1-8ba9-566a-a282" sortIndex="2">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="278b-9a5b-443d-c850" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="5" field="9893-c379-920b-8982">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee0a-6fa3-eb69-ceb7" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65e9-a0bb-7c52-8722" includeChildSelections="false"/>
-      </constraints>
-      <comment>Unit Version</comment>
-    </selectionEntryGroup>
     <selectionEntryGroup name="Emperor&apos;s Children Rite of War" id="67f2-6d7f-9c35-9774" hidden="false">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Legiones Astartes Emperor&apos;s Children" hidden="false" id="6666-33b0-8206-5094"/>
