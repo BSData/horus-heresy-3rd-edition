@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="21" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="22" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -2656,7 +2656,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b977-c931-5922-bc5f" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Bolter" hidden="false" id="da83-e154-a03d-52be" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="1"/>
+                <entryLink import="true" name="Bolter" hidden="false" id="da83-e154-a03d-52be" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="1" defaultAmount="1"/>
                 <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="d0a5-304e-2d36-d0e3" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" sortIndex="2"/>
                 <entryLink import="true" name="Astartes shotgun" hidden="false" id="7eef-9340-6fce-dd26" type="selectionEntry" targetId="6068-d203-27e6-318a" sortIndex="5">
                   <costs>
@@ -2719,18 +2719,20 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 </selectionEntry>
               </selectionEntries>
               <selectionEntryGroups>
-                <selectionEntryGroup name="1-5 may exchange their bolter for:" id="f05a-255e-55ac-e190" hidden="false" flatten="true">
+                <selectionEntryGroup name="1-5 may exchange their bolter for:" id="f05a-255e-55ac-e190" hidden="false" flatten="false">
                   <entryLinks>
-                    <entryLink import="true" name="Disintegrator blaster" hidden="false" id="6657-4510-132c-282f" type="selectionEntry" targetId="0c29-e0e1-525b-4182" sortIndex="2">
+                    <entryLink import="true" name="Disintegrator blaster" hidden="false" id="6657-4510-132c-282f" type="selectionEntry" targetId="0c29-e0e1-525b-4182" sortIndex="3">
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Heavy disintegrator" hidden="false" id="ae74-8ab4-4893-459a" type="selectionEntry" targetId="5359-13c1-29ff-9d3c" sortIndex="3">
+                    <entryLink import="true" name="Heavy disintegrator" hidden="false" id="ae74-8ab4-4893-459a" type="selectionEntry" targetId="5359-13c1-29ff-9d3c" sortIndex="4">
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
                       </costs>
                     </entryLink>
+                    <entryLink import="true" name="Legion Special Weapons List" hidden="false" id="67ba-8e26-a57c-4a27" type="selectionEntryGroup" targetId="8e2d-acd9-be67-36f2" sortIndex="1"/>
+                    <entryLink import="true" name="Legion Heavy Weapons" hidden="false" id="a888-4a3c-dcf9-8f2d" type="selectionEntryGroup" targetId="9f99-7e2a-4899-4066" sortIndex="2"/>
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="5b2a-b892-c1cb-1eb6" includeChildSelections="true"/>
@@ -2742,52 +2744,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                       </repeats>
                     </modifier>
                   </modifiers>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup name="Heavy Weapons" id="8dfd-a01d-1548-e05c" hidden="false">
-                      <entryLinks>
-                        <entryLink import="true" name="Heavy bolter" hidden="false" id="4a02-6ae5-216b-7440" type="selectionEntry" targetId="bc40-b14a-978e-0232" sortIndex="1">
-                          <costs>
-                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink import="true" name="Heavy flamer" hidden="false" id="d21e-5799-e385-f2c4" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="2">
-                          <costs>
-                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink import="true" name="Autocannon" hidden="false" id="7b92-b082-1ef3-0ff8" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93" sortIndex="3">
-                          <costs>
-                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink import="true" name="Missile launcher" hidden="false" id="88bc-497c-dc2b-92a2" type="selectionEntry" targetId="f391-c3f5-d98c-dd26" sortIndex="4">
-                          <costs>
-                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink import="true" name="Multi-melta" hidden="false" id="b43e-7b66-de0a-2d4b" type="selectionEntry" targetId="0135-12f0-d86f-ced9" sortIndex="5">
-                          <costs>
-                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink import="true" name="Plasma cannon" hidden="false" id="7f89-2791-26f8-7893" type="selectionEntry" targetId="f8b8-96c8-ba31-faf8" sortIndex="6">
-                          <costs>
-                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink import="true" name="Volkite culverin" hidden="false" id="b964-294f-f369-710c" type="selectionEntry" targetId="fcf0-9c1b-d51e-6bc7" sortIndex="7">
-                          <costs>
-                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink import="true" name="Lascannon" hidden="false" id="3d85-a55c-503e-3544" type="selectionEntry" targetId="b6d5-4be2-c37e-2197" sortIndex="8">
-                          <costs>
-                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
-                          </costs>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntryGroup>
@@ -13852,7 +13808,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="604f-daac-a0c4-e542" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cfc-7543-f018-185c" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
@@ -14186,7 +14141,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8037-c7e7-b097-8194" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="179e-5002-6ffa-7103" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
