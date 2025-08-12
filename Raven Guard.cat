@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-
 <catalogue library="false" id="340c-1d4f-1f31-fb70" name="                       XIX - Raven Guard" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="5" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Corvus Corax" hidden="false" id="e0a6-5800-3e64-4163" sortIndex="1">
       <selectionEntries>
@@ -528,7 +526,7 @@ Once per Battle, if a Unit with this Special Rule remains Stationary in the prev
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Dark Fury" hidden="false" id="c88e-ddfb-6f84-acd8" sortIndex="2">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b51d-5520-4eaa-8a54" includeChildSelections="false"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="b51d-5520-4eaa-8a54" includeChildSelections="false"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="4446-9c47-58a0-f440" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
@@ -565,7 +563,7 @@ Once per Battle, if a Unit with this Special Rule remains Stationary in the prev
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Chooser of the Slain" hidden="false" id="9b5f-3411-f1b0-f87d" sortIndex="1">
+        <selectionEntry type="upgrade" import="true" name="Chooser of the Slain" hidden="false" id="9b5f-3411-f1b0-f87d" sortIndex="1" collective="false">
           <categoryLinks>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="6604-8694-4b2d-c434" primary="false" name="Sergeant Model Sub-Type"/>
           </categoryLinks>
@@ -605,7 +603,7 @@ Once per Battle, if a Unit with this Special Rule remains Stationary in the prev
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
               </costs>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18d2-4e85-23d6-5745" includeChildSelections="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="18d2-4e85-23d6-5745" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="078a-4216-b559-e1b6" includeChildSelections="false"/>
               </constraints>
             </entryLink>
@@ -613,7 +611,7 @@ Once per Battle, if a Unit with this Special Rule remains Stationary in the prev
           <modifiers>
             <modifier type="set" value="2" field="d18e-6cfa-4868-86a4">
               <conditions>
-                <condition type="atLeast" value="9" field="selections" scope="8487-ac3b-d0ec-6d08" childId="model" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="equalTo" value="8" field="selections" scope="unit" childId="c88e-ddfb-6f84-acd8" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
