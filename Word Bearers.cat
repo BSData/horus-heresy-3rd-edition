@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="4935-1832-63f7-91aa" name="                        XVII - Word Bearers" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="6" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="Arkangelmark5" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="4935-1832-63f7-91aa" name="                        XVII - Word Bearers" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="7" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="Arkangelmark5" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Lorgar Aurelian" hidden="false" id="a763-c205-9fe6-46c1">
       <selectionEntries>
@@ -241,9 +241,21 @@
           </infoLinks>
           <rules>
             <rule name="Dark Oratory" id="898b-36fe-df6b-50a3" hidden="false">
-              <description>A Model with this Special Rule can join Units with the Malefic Sub-Type as if it had that Sub-Type and while part of such a Unit, is treated as having that Sub-Type</description>
+              <description>&quot;Kor Phaeron&apos;s Controlling Player may apply additional Special Rules to friendly Units in the Effects Sub-Phase.&quot;
+
+
+In this Model&apos;s Controlling Player&apos;s Effects Sub-Phase, this Model&apos;s Controlling Player can select one friendly Unit which only includes Models with the Word Bearers Trait within 6&quot; of this Model, then select one of the following effects.
+
+
+- Cruel Invective: Until the start of the Controlling Player&apos;s next Effects Sub-Phase, all Models in the selected Unit gain the Hatred (Loyalist) Special Rule.
+- Threatening Entreaties: Until the start of the Controlling Player&apos;s next Effects Sub-Phase, modify the Leadership and Cool Characteristics of all Models in the selected Unit by +2.</description>
             </rule>
-            <rule name="Jealous Command" id="ee29-139a-6af2-f75d" hidden="false"/>
+            <rule name="Jealous Command" id="ee29-139a-6af2-f75d" hidden="false">
+              <description>&quot;Kor Phaeron&apos;s Characteristics increase if he is the only Unique Model in the Army.
+
+
+If this Model is the only Model with the Unique Sub-Type in your Army, modify this Model&apos;s Wounds and Leadership Characteristics by +1.</description>
+            </rule>
           </rules>
           <entryLinks>
             <entryLink import="true" name="Burning Lore" hidden="false" id="8402-950e-ca6a-7438" type="selectionEntry" targetId="5e68-1411-2656-464f" sortIndex="3">
@@ -351,18 +363,6 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="b980-187b-2b17-d635" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="b980-187b-2b17-d635" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </profile>
           </profiles>
           <constraints>
@@ -599,18 +599,6 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="b980-187b-2b17-d635" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="b980-187b-2b17-d635" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </profile>
             <profile name="Soul Binding" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="7243-d558-cf07-696a">
               <characteristics>
@@ -1397,16 +1385,6 @@
     <catalogueLink type="catalogue" name="Psychic" id="be0b-47af-7f19-3fba" targetId="1b2d-2038-39a7-f387" importRootEntries="false"/>
   </catalogueLinks>
   <sharedRules>
-    <rule name="Burning Lore" id="b80b-792f-03c9-612b" hidden="true">
-      <description>Any Model with the High Command Battlefield Role and Word Bearers Trait may be given the Psyker Trait and the Anathemata Psychic Discipline (see page 35) for +40 Points per Model.</description>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4935-1832-63f7-91aa" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </rule>
     <rule name="Unwavering Conviction" id="fe99-0874-2c10-cba5" hidden="true">
       <alias>When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, score 1 Combat Resolution point if any friendly Models in that Combat have the Word Bearers Trait.</alias>
       <modifiers>
