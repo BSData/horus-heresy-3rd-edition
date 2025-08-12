@@ -802,6 +802,11 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
           </constraints>
         </entryLink>
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="2c3f-6e64-30e3-2be8" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="7888-b09c-49fd-a07d" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="0739-43c6-450f-8821" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="If Angron is not in this Army, Kharn may replace The Cutter with:" id="35df-180b-2bdf-81eb" hidden="false" defaultSelectionEntryId="7b2e-a185-35c1-6af3">
@@ -869,6 +874,13 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                   </conditionGroups>
                 </modifier>
               </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1000,9 +1012,9 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="barb-hook lash" hidden="false" id="dc05-c0cf-935f-2c7f">
+        <selectionEntry type="upgrade" import="true" name="Barb-hook lash" hidden="false" id="dc05-c0cf-935f-2c7f" sortIndex="4">
           <profiles>
-            <profile name="barb-hook lash" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="25f2-eb9d-fc87-babb">
+            <profile name="Barb-hook lash" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="25f2-eb9d-fc87-babb">
               <characteristics>
                 <characteristic name="IM" typeId="6eec-4093-f946-1014">+1</characteristic>
                 <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>

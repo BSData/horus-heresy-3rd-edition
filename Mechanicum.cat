@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="6" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="7" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Anacharis Scoria" hidden="false" id="10f5-dae8-f081-d82f" sortIndex="29">
       <infoLinks>
@@ -204,6 +204,11 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="5c0b-63d3-f852-b1f9" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="c2e5-e390-450e-8515" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="5da2-e16a-4358-9f82" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="410"/>
@@ -333,6 +338,7 @@
         <entryLink import="true" name="Prime Unit" hidden="false" id="5b9f-3491-1b56-8599" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="14">
           <entryLinks>
             <entryLink import="true" name="Special Assignment" hidden="false" id="adf5-e9c0-1a49-82df" type="selectionEntry" targetId="c857-47bd-6a4f-fcf8"/>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="b4bb-8af8-4c52-bbbe" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
@@ -608,6 +614,7 @@
         <entryLink import="true" name="Prime Unit" hidden="false" id="6552-3cd8-1b54-9606" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="14">
           <entryLinks>
             <entryLink import="true" name="Special Assignment" hidden="false" id="db3e-4fee-b298-2e11" type="selectionEntry" targetId="c857-47bd-6a4f-fcf8"/>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="3b76-a493-49b6-9b1d" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
           </entryLinks>
         </entryLink>
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="fb74-adac-7d09-2b54" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
@@ -2041,7 +2048,7 @@
           </profiles>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="d3be-3caf-f87c-2ae0"/>
-            <constraint type="max" value="30" field="selections" scope="parent" shared="true" id="60d2-40f9-da31-8126"/>
+            <constraint type="max" value="40" field="selections" scope="parent" shared="true" id="60d2-40f9-da31-8126"/>
           </constraints>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
@@ -4847,7 +4854,7 @@
         <infoLink name="Heterodoxists" id="8095-3da3-e5fe-aa64" hidden="false" type="profile" targetId="c6ad-7327-3690-9219"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Archmagos Draykavac" hidden="false" id="0a50-5745-5db4-64af" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Archmagos Draykavac" hidden="false" id="0a50-5745-5db4-64af" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a61e-5494-97b4-45e1"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="614f-4d1b-4db5-b465"/>
@@ -5082,6 +5089,11 @@ If the check is successful, then the Model with this Special Rule is immediately
           </constraints>
         </entryLink>
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="1e88-910f-6bf2-7c0e" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="fa49-588e-472c-9168" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="5f37-2c79-4725-a040" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="a660-a2a5-eef3-2fbc" id="27b6-1d05-a732-e38a" primary="false" name="Heterodoxists"/>
