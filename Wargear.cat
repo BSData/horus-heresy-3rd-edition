@@ -538,13 +538,44 @@ A Model with an ionic flare shield has a 5+ Invulnerable Save against Shooting A
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Burning Lore" hidden="false" id="1ca4-3804-949f-8ddd">
+      <modifiers>
+        <modifier type="add" value="9254-b1e9-98b2-6101" field="category" scope="parent"/>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Anathemata" hidden="false" id="4c1d-8511-6390-b414" type="selectionEntry" targetId="091a-56c9-7eba-9fa7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6603-e7c8-1b40-373f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4321-0055-f899-ffa6" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="40"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8c08-f0f8-ca7e-24b4" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f2d2-cfc0-e663-4261" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Burning Lore" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="88a3-3c18-838e-d7b0">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">&quot;Word Bearers Models may gain the Psyker Trait and a specific Psychic Discipline.&quot;</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">Any Model with the High Command Battlefield Role and Word Bearers Trait may be given the Psyker Trait and the Anathemata Psychic Discipline.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Special Rules" id="a167-1d9f-99b4-830c" targetId="106b-693b-99f2-00c3" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Traits" id="f337-6ccb-bbe3-657c" importRootEntries="false" targetId="df17-7a05-0826-6e22"/>
+    <catalogueLink type="catalogue" name="Psychic" id="50ce-dc5a-06c4-bd38" targetId="1b2d-2038-39a7-f387"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Legion Specific Upgrade" id="ef74-faa7-0d36-762b" hidden="false" page="">
+    <selectionEntryGroup name="Legion Specific Upgrade" id="ef74-faa7-0d36-762b" hidden="false">
       <entryLinks>
         <entryLink import="true" name="Drakenscale" hidden="true" id="42c5-b7c0-0038-df52" type="selectionEntry" targetId="b021-e506-1ecd-b3c5">
           <modifiers>
@@ -601,6 +632,29 @@ A Model with an ionic flare shield has a 5+ Invulnerable Save against Shooting A
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
+        </entryLink>
+        <entryLink import="true" name="Burning Lore" hidden="true" id="03b0-db9e-1abd-57f9" type="selectionEntry" targetId="1ca4-3804-949f-8ddd">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="40"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d9a6-9b5f-b18a-4d63" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="4935-1832-63f7-91aa" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
