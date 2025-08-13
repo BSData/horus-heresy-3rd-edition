@@ -108,8 +108,12 @@ class GameTests(unittest.TestCase):
             for child in entry_links_node.children:
                 category_links = child.get_child(tag='categoryLinks')
                 primary_cat = category_links.get_child(tag='categoryLink', attrib={"primary": "true"})
-                if primary_cat.target_name in battlefield_roles:
+                if file.name == "Questoris Household.cat":
+                    if primary_cat.target_name == "Lord of War":
+                        unit_ids.append(child.target_id)
+                elif primary_cat.target_name in battlefield_roles:
                     unit_ids.append(child.target_id)
+
         for unit_id in unit_ids:
             unit: Node = self.system.get_node_by_id(unit_id)
             prime_selector_id = Heresy3e().get_prime_selector(unit.system_file.faction)
