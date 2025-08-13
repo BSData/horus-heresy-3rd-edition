@@ -521,6 +521,23 @@ A Model with an ionic flare shield has a 5+ Invulnerable Save against Shooting A
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Trophies of Judgement" hidden="false" id="e48f-c377-59c5-35a7">
+      <profiles>
+        <profile name="Trophies of Judgement" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="84db-d6db-4cfb-0982">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">A Model with Trophies of Judgement has the Fear (1) Special Rule</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Fear (X)" id="8fb3-e3d4-9c24-c0fe" hidden="false" type="rule" targetId="0ebc-0c92-2209-6393">
+          <modifiers>
+            <modifier type="set" value="Fear (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Special Rules" id="a167-1d9f-99b4-830c" targetId="106b-693b-99f2-00c3" importRootEntries="true"/>
@@ -552,6 +569,34 @@ A Model with an ionic flare shield has a 5+ Invulnerable Save against Shooting A
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e8da-a1e1-5b1e-20e7"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d1f-06ad-28bf-8eec"/>
+          </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Trophies of Judgement" hidden="true" id="012a-bf6c-66e6-06e0" type="selectionEntry" targetId="e48f-c377-59c5-35a7">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="486f-b32a-ac87-73dd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3662-93b8-118c-7452"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1236-4161-b63d-f08d"/>
           </constraints>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
