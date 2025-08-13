@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="25" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="26" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -268,6 +268,11 @@
     <categoryEntry name="Elites - Seeker Squads or Headhunter Kill Teams Only" id="5c0d-4d49-44e2-0a99" hidden="false"/>
     <categoryEntry name="Cohort Additional Detachment" id="27e8-88b4-d3c8-d63f" hidden="false"/>
     <categoryEntry name="Medusan Vanguard Unlock" id="fc09-911b-ee8c-7967" hidden="true"/>
+    <categoryEntry name="Tartaros Centurion" id="86d7-7e47-a0d7-6041" hidden="false">
+      <comment>Emperors Children prime check</comment>
+    </categoryEntry>
+    <categoryEntry name="Jump Pack Centurion" id="294e-d64c-39dc-f687" hidden="false"/>
+    <categoryEntry name="Cataphractii Centurion" id="fdce-834f-ead1-31c3" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
