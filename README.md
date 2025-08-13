@@ -50,7 +50,12 @@ For the legions, they import the root selection entries from the LA cat.
 
 ## 3.1: Default Inclusions on Units
 
-Each link should have the battlefield role on the force org slot. [x] Checked by the unit tests
+Each link should have the battlefield role on the force org slot. :robot: Checked by the unit tests
+
+### Prime Checkbox and Benefits
+All units should include a link to the GST's "Prime Unit" selection entry. :robot: Checked by the unit tests
+
+Inside that link, you should link to your faction's list of "Prime Benefits" selection entry group. :robot: Checked by the unit tests
 
 ###  Astartes Units
 All Astartes units should have the following Traits at the root level of the unit (Add Link -> Profile -> Search for them):
@@ -58,7 +63,7 @@ All Astartes units should have the following Traits at the root level of the uni
 - \[Legiones Astartes]
 
 The legion specific units should not have the legion trait category set on the shared selection entry, 
-and instead it should be set on the link. This is so alpha legion can import them without this trait [x] These are the only traits allowed other than the battlefield roles by the unit tests.
+and instead it should be set on the link. This is so alpha legion can import them without this trait. :robot: These are the only traits allowed other than the battlefield roles by the unit tests.
 
 ### Mechanicum Units
 All Mechanicum units should have the following Traits at the root level of the unit (Add Link -> Profile -> Search for them):

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="f148-a6e4-5a8c-3aeb" name="                        XVIII - Salamanders" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="4" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="f148-a6e4-5a8c-3aeb" name="                        XVIII - Salamanders" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="5" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Firedrake Terminator Squad" hidden="false" id="09a9-6c68-9b0b-f24f" sortIndex="2">
+    <selectionEntry type="unit" import="true" name="Firedrake Terminator Squad" hidden="false" id="09a9-6c68-9b0b-f24f" sortIndex="2">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Firedrake" hidden="false" id="1f0a-53e1-910a-a3b1" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Firedrake" hidden="false" id="1f0a-53e1-910a-a3b1" sortIndex="2">
           <profiles>
             <profile name="Firedrake" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="0a6f-4ea6-a07f-6c6e">
               <characteristics>
@@ -37,7 +37,7 @@
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="3403-f0a6-8f2d-0322" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Firedrake Master" hidden="false" id="6f99-6a87-8ad6-8467" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Firedrake Master" hidden="false" id="6f99-6a87-8ad6-8467" sortIndex="1">
           <profiles>
             <profile name="Firedrake Master" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="61a4-aebf-86fe-2df0">
               <characteristics>
@@ -333,9 +333,9 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="f322-b988-1519-b77f" primary="false" name="Master of the Legion"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Pyroclast Squad" hidden="false" id="fbbe-aa8c-d645-7970" sortIndex="3">
+    <selectionEntry type="unit" import="true" name="Pyroclast Squad" hidden="false" id="fbbe-aa8c-d645-7970" sortIndex="3">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Pyroclast" hidden="false" id="bad9-4086-bbcb-0941" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Pyroclast" hidden="false" id="bad9-4086-bbcb-0941" sortIndex="2">
           <profiles>
             <profile name="Pyroclast" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="6529-a162-1db3-2928">
               <characteristics>
@@ -369,7 +369,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="7de5-9d26-8645-59a5" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Pyroclast Warden" hidden="false" id="3d2e-0b99-086d-027f" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Pyroclast Warden" hidden="false" id="3d2e-0b99-086d-027f" sortIndex="1">
           <profiles>
             <profile name="Pyroclast Warden" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="bb66-8e47-d215-e499">
               <characteristics>
@@ -486,6 +486,11 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9e0e-98df-afe7-715f" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1eb4-f2e7-7169-a353" includeChildSelections="false"/>
           </constraints>
+        </entryLink>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="9e00-10d5-49a9-b63a" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="5da1-c80a-4238-9333" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>
