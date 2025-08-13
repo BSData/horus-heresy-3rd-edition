@@ -142,6 +142,11 @@ Death&apos;s Champion: If this Gambit is selected, attacks made by this Model in
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="3e52-ac4d-dd26-8fc1" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="d438-33f3-42dd-b853" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="c4e9-0503-4537-86fa" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rogal Dorn" hidden="false" id="7067-3938-a4ea-112c">
@@ -494,6 +499,11 @@ Prepared Defenses: Until the end of the first Battle Turn of the Battle, all Mod
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="d290-5b8d-76f4-790f" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="8aa4-43c0-480e-8182" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="84ed-1260-48e3-bd2a" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Phalanx Warder-Squad" hidden="false" id="7ee4-7278-0ad7-4c29">
@@ -531,12 +541,12 @@ Prepared Defenses: Until the end of the first Battle Turn of the Battle, all Mod
             <selectionEntryGroup name="The Warder Sergeant may exchanged its power axe for one of the following::" id="68b5-3a82-acaf-57da" hidden="false" defaultSelectionEntryId="7e32-6cec-e103-8d52" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Power axe" hidden="false" id="7e32-6cec-e103-8d52" type="selectionEntry" targetId="4861-b77a-620c-f0d6" sortIndex="1"/>
-                <entryLink import="true" name="Thunder hammer" hidden="false" id="97f9-fe74-e6d8-f2ef" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="3">
+                <entryLink import="true" name="Thunder hammer" hidden="false" id="97f9-fe74-e6d8-f2ef" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="2">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Solarite Power Gauntlet" hidden="false" id="579d-3116-5051-57bb" type="selectionEntry" targetId="3b91-56eb-e1fc-7567" sortIndex="2">
+                <entryLink import="true" name="Solarite Power Gauntlet" hidden="false" id="4003-2ce8-9dc3-9053" type="selectionEntry" targetId="ddcb-01e9-18af-c8f6" sortIndex="3">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
@@ -690,6 +700,11 @@ Prepared Defenses: Until the end of the first Battle Turn of the Battle, all Mod
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95d0-05f7-624f-4f07" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="1112-8ac2-4e87-b42c" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="2f1f-0bec-49bd-a0a3" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="38"/>
@@ -818,6 +833,13 @@ Prepared Defenses: Until the end of the first Battle Turn of the Battle, all Mod
         <categoryLink targetId="9871-cb62-5283-2216" id="97c5-eda1-5bc0-9ba6" primary="false" name="Command Model Sub-type"/>
         <categoryLink targetId="901a-6b71-7a29-4597" id="ba6d-5b69-3596-b1ac" primary="false" name="Officer of the Line (2)"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="82ea-16b8-4a8e-84d4" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="cc60-a1f7-4ff0-b8a6" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Alexis Polux" hidden="false" id="bb94-88c3-c9b8-c117">
       <selectionEntries>
@@ -892,12 +914,6 @@ Prepared Defenses: Until the end of the first Battle Turn of the Battle, all Mod
             </rule>
           </rules>
           <entryLinks>
-            <entryLink import="true" name="Solarite Power Gauntlet" hidden="false" id="303d-f5c6-6517-f7e4" type="selectionEntry" targetId="3b91-56eb-e1fc-7567" sortIndex="1">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0589-2eaa-e77e-3548" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7036-77b3-5fd0-f4fe" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
             <entryLink import="true" name="Frag grenades" hidden="false" id="cef9-1789-c5e6-4717" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f23b-57b8-b5cb-6e70" includeChildSelections="false"/>
@@ -920,6 +936,12 @@ Prepared Defenses: Until the end of the first Battle Turn of the Battle, all Mod
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b288-aab0-9eb9-385e" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3274-122b-9c7f-aa2c" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Solarite Power Gauntlet" hidden="false" id="2fe0-9962-b891-6f2a" type="selectionEntry" targetId="ddcb-01e9-18af-c8f6" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ad9-b45d-4d05-4a60"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc82-cee5-e072-0359"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -946,6 +968,13 @@ Prepared Defenses: Until the end of the first Battle Turn of the Battle, all Mod
         <categoryLink targetId="1e7d-9066-28d2-97a0" id="0388-9289-bc82-b143" primary="false" name="Heavy Model Sub-Type"/>
         <categoryLink targetId="26c6-e05c-0f72-7852" id="8515-1ceb-c7f8-b3e5" primary="false" name="Shield"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="e725-9436-4a59-a125" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="0aa8-6c2a-4c2a-8c2a" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Templar Brethren" hidden="false" id="0096-62da-55d8-3912">
       <selectionEntries>
@@ -988,7 +1017,7 @@ Prepared Defenses: Until the end of the first Battle Turn of the Battle, all Mod
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Solarite Power Gauntlet" hidden="false" id="1291-770b-4a0f-293a" type="selectionEntry" targetId="3b91-56eb-e1fc-7567" sortIndex="2">
+                <entryLink import="true" name="Solarite Power Gauntlet" hidden="false" id="0fc8-5465-41ab-548e" type="selectionEntry" targetId="ddcb-01e9-18af-c8f6" sortIndex="2">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
                   </costs>
@@ -1159,6 +1188,11 @@ Prepared Defenses: Until the end of the first Battle Turn of the Battle, all Mod
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3936-80fa-9966-b713" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="e0ca-69dd-4859-a76e" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="b202-59ef-440d-8aa1" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="52"/>
@@ -1306,6 +1340,11 @@ The Controlling Player of a Model with this Special Rule does not suffer a penal
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="2558-921a-b7a7-78d3" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="9462-cdff-4c5d-80db" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="5073-bb71-47f7-a648" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>

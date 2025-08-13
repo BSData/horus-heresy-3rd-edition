@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="23" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="25" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -4148,11 +4148,6 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Support" hidden="false" id="b697-094a-f8fd-df29" targetId="1c79-ecdf-9a64-84c9">
@@ -5383,7 +5378,7 @@
             <categoryLink name="Auxiliary Detachment" hidden="false" id="54cc-e754-3644-660e" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Fast Attack - Scimitar Jetbike Squadrons only" hidden="false" id="118a-8a04-7902-9a00" targetId="eaec-7669-f5ba-3ad9">
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ccb3-72e4-b500-232d"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ccb3-72e4-b500-232d"/>
               </constraints>
               <modifiers>
                 <modifier type="increment" value="1" field="ccb3-72e4-b500-232d">
@@ -5395,12 +5390,12 @@
             </categoryLink>
             <categoryLink name="Prime Fast Attack" hidden="false" id="7fa5-b8cf-dbe5-648a" targetId="c291-144b-3da6-37ed">
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e415-41dd-53e1-66b8" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e415-41dd-53e1-66b8" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
             <categoryLink name="Recon - Outrider Squads Only" hidden="false" id="b016-d320-a1d9-4f3b" targetId="a8bc-a4af-e5b3-2684">
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7908-5850-8cc8-328e"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7908-5850-8cc8-328e"/>
               </constraints>
               <modifiers>
                 <modifier type="increment" value="1" field="7908-5850-8cc8-328e">
@@ -5649,11 +5644,6 @@
                   </conditions>
                 </modifier>
               </modifiers>
-            </categoryLink>
-            <categoryLink name="Prime Fast Attack" hidden="false" id="1963-1c35-0c00-b907" targetId="c291-144b-3da6-37ed">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ad2d-5c90-82d1-21f6" includeChildSelections="true"/>
-              </constraints>
             </categoryLink>
           </categoryLinks>
           <comment>WS</comment>
@@ -11543,11 +11533,6 @@
                 <modifier type="increment" value="1" field="178d-b1d4-6f0a-1fba">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
