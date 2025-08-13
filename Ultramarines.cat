@@ -46,6 +46,83 @@
         <categoryLink targetId="b980-187b-2b17-d635" id="8786-16be-7ac2-a5a8" primary="false" name="Unique Model Sub-Type"/>
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="817a-12ae-5c8e-6615" primary="false" name="Master of the Legion"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="The Arbitrator" hidden="false" id="3972-799f-b51a-2582" type="selectionEntry" targetId="af83-7257-970c-c60c" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec38-b136-f43f-96bc"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3aeb-84dd-444b-d96b"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="The Gladius Incandor" hidden="false" id="e807-49f3-d56d-e310" type="selectionEntry" targetId="9613-3645-91fe-b8c8" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b1c-3025-4a0d-500b"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="721d-590a-885d-6c8f"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="The Hand of Dominion" hidden="false" id="4e25-d791-996a-54e0" type="selectionEntry" targetId="a388-f5c7-24f2-a26d" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="00be-c2da-bc39-21b7"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89e4-cb75-a726-e407"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Frag grenades" hidden="false" id="c563-df53-09ae-297a" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f34a-cc54-75e9-0312"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cab-c95d-1f89-3bba"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak grenades" hidden="false" id="a7fe-0ab7-3cec-1af6" type="selectionEntry" targetId="0c9b-a32b-87e2-fc3e" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8347-87f4-c34c-7c00"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4aef-6fc9-13ee-f3cf"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="71fc-d4e4-f902-7d48" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Master of the Legion" id="fd18-0f15-2cc3-ca4d" hidden="false" type="profile" targetId="6cd2-96be-b703-6d57"/>
+        <infoLink name="Bulky (X)" id="0016-94e0-27a1-8e22" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+          <modifiers>
+            <modifier type="set" value="Bulky (4)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Eternal Warrior (X)" id="489c-09f1-99f0-6199" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
+          <modifiers>
+            <modifier type="set" value="Eternal Warrior (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="[Legiones Astartes]" id="d8d1-c24a-f3d5-e98a" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+      </infoLinks>
+      <rules>
+        <rule name="Calculating Swordsman" id="6632-7df5-ab7f-5077" hidden="false">
+          <description>&quot;Guilliman gains a bonus to the Focus Roll based on the Battle Turn number.&quot;
+
+
+While a Model with this Special Rule is engaged in a Challenge, its Controlling Player can select the followith Gambit for that Model:
+
+
+Calculating Swordsman: If this Gambit is selected, this Model&apos;s Controlling Player gains a positive modifier to the Focus Roll corresponding to the number of the current Battle Turn to a maximum of +4.</description>
+        </rule>
+        <rule name="Sire of the Ultramarines" id="720b-ef86-bb5d-a4e0" hidden="false">
+          <description>If a Model with this Special Rule is part of an Army, then the Controlling Player may apply the following additional Special Rules to all Auxilliary, Apex and Primary Detachments that have the same Faction Trait as the Model with this Special Rule:
+
+
+- If four or more Troops Battlefield Role Slots in the Primary Detachment of this Army are filled, including at least two Assault Squad Units and at least two Tactical Squad Units, then all Force Organization Slots with the Troops Battlefield Role in the Primary Detachment are considered Prime Slots.
+
+
+Furthermore, if a Model with this Special Rule is part of an Army, then the following Special Rules are granted to all Models with the Infantry Type and the Ultramarines Trait in the same Army:
+
+
+- Until the end of the first Battle Turn of the Battle all Models in this Army with the Infantry Type and the Ultramarines Trait may Hold, Claim and Contest Objectives even if they are under the effects of a Tactical Status.</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Reman Ventanus" hidden="false" id="997b-95c4-dc66-a5f8">
       <costs>
@@ -100,7 +177,65 @@
             <entryLink import="true" name="Prime Benefits" hidden="false" id="b7fe-ba5a-4033-adc6" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Phaeton" hidden="false" id="30ad-ea45-5ce5-ffaf" type="selectionEntry" targetId="9483-f4ce-7479-ebf9" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa55-2e90-8937-ca98"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3a9-c0bb-9fa4-c435"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Icon of Calth" hidden="false" id="5734-1abf-c514-9bbc" type="selectionEntry" targetId="ff71-8945-c670-ad09" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a271-6e6a-2266-e4f2"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c40-e4b7-e4ef-329c"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Vox-interlink" hidden="false" id="e9c7-b2e0-7f39-7c51" type="selectionEntry" targetId="7285-41f1-7b7e-6d35" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d552-4f17-3a55-d4bc"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38c5-49ec-0695-1af0"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Bolt pistol" hidden="false" id="3d70-f1eb-ffd4-4f9d" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e212-7560-eb98-65ac"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eab7-3037-1a21-fdb6"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Melta bombs" hidden="false" id="408d-bc63-cd76-1115" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0fba-df05-e392-2252"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3150-474f-d2ef-beb4"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Frag grenades" hidden="false" id="790e-cc4a-260b-481b" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad0f-d858-3e70-1cc3"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a109-b155-96d8-f279"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak grenades" hidden="false" id="42dd-1b01-e6c8-41ef" type="selectionEntry" targetId="0c9b-a32b-87e2-fc3e" sortIndex="7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="58d7-9189-1a15-fc46"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac27-f0ac-17e8-3cc0"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="4291-b7ee-237f-4ba2" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="c3fc-d362-be3a-a825" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Officer of the Line (X)" id="55cf-df63-258e-d9f1" hidden="false" type="rule" targetId="7779-47c8-99a8-b935">
+          <modifiers>
+            <modifier type="set" value="Officer of the Line (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Invictus Suzerain Squad" hidden="false" id="3a11-d72b-2f04-cc62">
       <costs>
@@ -120,11 +255,15 @@
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="dd2e-821c-4798-464d" includeChildSelections="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Ranged weapon:" id="6fd8-dd70-1476-5da1" hidden="false">
+            <selectionEntryGroup name="Ranged weapon:" id="6fd8-dd70-1476-5da1" hidden="false" sortIndex="2" defaultSelectionEntryId="8ee1-9e0f-7848-f9f9">
               <selectionEntryGroups>
                 <selectionEntryGroup name="2 in 5 may exchange their bolt pistol for:" id="ded0-8c97-e606-3a66" hidden="false">
                   <entryLinks>
-                    <entryLink import="true" name="Plasma pistol" hidden="false" id="8f8f-373c-7483-17c4" type="selectionEntry" targetId="659f-d52e-1515-2912"/>
+                    <entryLink import="true" name="Plasma pistol" hidden="false" id="8f8f-373c-7483-17c4" type="selectionEntry" targetId="659f-d52e-1515-2912">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="dfc2-41b3-398e-bbb6" includeChildSelections="true"/>
@@ -139,9 +278,8 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink import="true" name="Bolt pistol" hidden="false" id="8ee1-9e0f-7848-f9f9" type="selectionEntry" targetId="2942-f783-d627-33c5">
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="8ee1-9e0f-7848-f9f9" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="2" defaultAmount="1">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6db1-ca02-7733-af76-min" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6db1-ca02-7733-af76-max" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
@@ -173,6 +311,32 @@
             <categoryLink name="Infantry Model Type" hidden="false" id="71d6-21e1-c463-28f0" targetId="594d-fa82-13cb-a345" primary="false"/>
             <categoryLink name="Heavy Model Sub-Type" hidden="false" id="31ba-8a9f-b769-8826" targetId="1e7d-9066-28d2-97a0" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Legatine axe" hidden="false" id="8f43-ed4d-7898-1a79" type="selectionEntry" targetId="46f0-ca50-4e6e-e49f" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ab6-9b64-188f-b458"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f23-abc6-ff5c-bcbc"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Argyrum pattern boarding shield" hidden="false" id="597f-3d42-00c0-a1ac" type="selectionEntry" targetId="037b-c5b5-d24f-b624" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="29e2-6877-7d76-e00d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d772-b695-4b19-36e2"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Frag grenades" hidden="false" id="a394-7b18-bb21-7661" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="218c-8f41-a3a5-86da"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e36-41a3-2e53-6cf8"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Krak grenades" hidden="false" id="0502-06e9-2597-15cc" type="selectionEntry" targetId="0c9b-a32b-87e2-fc3e" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a7bf-54cf-441d-419d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e34-75c6-47e0-4794"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -187,16 +351,29 @@
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="0c36-4391-120e-20c1" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="d3e9-6267-477d-12ac" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Shield" id="786a-a427-37dd-4f17" hidden="false" type="profile" targetId="1af7-07d5-7558-0b64"/>
+      </infoLinks>
+      <rules>
+        <rule name="Lords of Ultramar" id="fa2f-c377-c3f1-4fc0" hidden="false">
+          <description>&quot;Friendly Models in range may use this Model&apos;s Characteristics when recovering from a Tactical Status.&quot;
+
+
+During the Statuses Sub-Phase, any friendly Unit that does not include a Model with the Vehicle Type, with one or mode Models within 12&quot; of a Model with this Special Rule, that is not itself under the effect of any Tactical Status may use the unmodified Characteristic of a Model with this Special Rule when making Checks to remove Tactical Statuses.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Praetorian Breacher Squad" hidden="false" id="f115-4466-aa86-b446">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Praetorian Primus" hidden="false" id="d8da-2e7b-77ac-dc40" sortIndex="1" publicationId="b905-0414-1057-bb34" page="253">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d1a-2b4e-3601-c9d2-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d1a-2b4e-3601-c9d2-max" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4475-ae9c-c164-b556"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1123-c313-78a3-50d1"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May exchange power sword for:" id="f9fb-05c7-3726-6a27" hidden="false">
+            <selectionEntryGroup name="May exchange power sword for:" id="f9fb-05c7-3726-6a27" hidden="false" sortIndex="1" defaultSelectionEntryId="59a0-004d-96e5-7473">
               <entryLinks>
                 <entryLink import="true" name="Power sword" hidden="false" id="59a0-004d-96e5-7473" type="selectionEntry" targetId="59a9-57c1-fff9-ca75" defaultAmount="1" sortIndex="1">
                   <constraints>
@@ -225,7 +402,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c442-198a-540e-d6b6" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="May exchange bolt pistol for:" id="e571-6efe-edf2-f7d3" hidden="false">
+            <selectionEntryGroup name="May exchange bolt pistol for:" id="e571-6efe-edf2-f7d3" hidden="false" sortIndex="2" defaultSelectionEntryId="845c-0643-12ab-ac32">
               <entryLinks>
                 <entryLink import="true" name="Bolt pistol" hidden="false" id="845c-0643-12ab-ac32" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1">
                   <constraints>
@@ -273,6 +450,14 @@
             <categoryLink name="Sergeant Model Sub-Type" hidden="false" id="628b-c424-5f4e-adb8" targetId="8045-89a4-76d4-fcef" primary="false"/>
             <categoryLink name="Heavy Model Sub-Type" hidden="false" id="e448-c785-7dab-e0b2" targetId="1e7d-9066-28d2-97a0" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Boarding shield" hidden="false" id="58b2-3277-bec5-29a6" type="selectionEntry" targetId="01e9-334c-80cb-f1c6" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5e9-c124-7346-afc2"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88d8-4acc-f249-9dfe"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Praetorian" hidden="false" id="ee11-4138-eeda-58f7" sortIndex="2" page="253" publicationId="b905-0414-1057-bb34">
           <constraints>
@@ -299,6 +484,24 @@
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
               </costs>
+            </entryLink>
+            <entryLink import="true" name="Power sword" hidden="false" id="2e0f-7974-8f94-c663" type="selectionEntry" targetId="59a9-57c1-fff9-ca75" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b07-f994-ce8a-5d47"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5297-0c8f-a7e2-c14e"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="3512-b9e7-0988-59f9" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f4d4-657c-dfc6-ed7e"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ded9-088d-26e3-dbcf"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Boarding shield" hidden="false" id="4994-b05c-c771-8b2e" type="selectionEntry" targetId="01e9-334c-80cb-f1c6" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec07-a5e3-95ca-ed3c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7267-3ea4-5cab-ac16"/>
+              </constraints>
             </entryLink>
           </entryLinks>
           <profiles>
@@ -344,7 +547,140 @@
             <entryLink import="true" name="Prime Benefits" hidden="false" id="b694-1111-49eb-8560" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Frag grenades" hidden="false" id="84fb-a48d-91c6-9adc" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7706-80a3-4d52-b607"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f3c-f6dc-3398-a376"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak grenades" hidden="false" id="dd81-1147-64f5-a208" type="selectionEntry" targetId="0c9b-a32b-87e2-fc3e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5101-37df-669e-2262"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b7f-a1c3-59a3-3fa8"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="c75c-988d-0e44-b3bf" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Shield" id="09c7-9bdf-7d03-8579" hidden="false" type="profile" targetId="1af7-07d5-7558-0b64"/>
+        <infoLink name="[Legiones Astartes]" id="67c5-099d-739c-3879" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Arbitrator" hidden="false" id="af83-7257-970c-c60c">
+      <profiles>
+        <profile name="The Arbitrator" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="5a63-fa06-0178-6a7d">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">18</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">3</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Breaching (5+)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Bolt, Assault</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="9c98-f0e3-ab0b-6fbe" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Gladius Incandor" hidden="false" id="9613-3645-91fe-b8c8">
+      <profiles>
+        <profile name="The Gladius Incandor" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="552c-4e2d-cc3e-13dd">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+), Duellist&apos;s Edge (1)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="c6a4-863a-63d8-3c9a" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (5+)
+
+" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Duellist&apos;s Edge (X)" id="1555-6b18-ad5c-cc07" hidden="false" type="rule" targetId="94bc-c69f-99b6-8ba0">
+          <modifiers>
+            <modifier type="set" value="Duellist&apos;s Edge (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Hand of Dominion" hidden="false" id="a388-f5c7-24f2-a26d">
+      <profiles>
+        <profile name="The Hand of Dominion" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="a0e2-834d-d2fe-0014">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">-3</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+4</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Armourbane</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Armourbane" id="335c-b082-8306-ed74" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Phaeton" hidden="false" id="9483-f4ce-7479-ebf9">
+      <profiles>
+        <profile name="Phaeton" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="3a7a-c53c-14f1-26dc">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">+1</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+), Duellist&apos;s Edge (1)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="3250-223f-1e5e-8757" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Duellist&apos;s Edge (X)" id="9984-297d-f911-4850" hidden="false" type="rule" targetId="94bc-c69f-99b6-8ba0">
+          <modifiers>
+            <modifier type="set" value="Duellist&apos;s Edge (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Icon of Calth" hidden="false" id="ff71-8945-c670-ad09">
+      <profiles>
+        <profile name="Icon of Calth" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="ad65-31e4-7959-060f">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">The Tactical Strength of Models with the Ultramarines Trait in a Unit that includes any Models with an Icon of Calth is modified by +1</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vox-interlink" hidden="false" id="7285-41f1-7b7e-6d35">
+      <profiles>
+        <profile name="Vox-interlink" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="a839-09fa-53f9-a8db">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">This Wargear item improves the Controlling Player&apos;s Reserves Tests.</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">While a Model with a vox-interlink is on the Battlefield, the Controlling Player can add +1 to the result of their Reserves Tests (including those made for Aerial Reserves).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
