@@ -622,6 +622,20 @@ A Model with an ionic flare shield has a 5+ Invulnerable Save against Shooting A
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0f42-d3af-e3b7-99e4"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Argyrum pattern boarding shield" hidden="false" id="08d0-c612-7007-103d">
+      <profiles>
+        <profile name="Argyrum pattern boarding shield" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="8fe1-9ce0-eb3c-16ae" publicationId="b905-0414-1057-bb34" page="245">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">This Wargear provides an enhanced save against attacks made in close combat</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">A model with a Argyrum pattern boarding shiled has a 5+ Invulnerable Save, increasing to a 4+ Invulnerable Save against Wounds inflicted by Melee Weapons. In addition, it gains the Shield Trait and the Heavy Sub-Type.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="add" value="1e7d-9066-28d2-97a0" field="category" scope="parent"/>
+        <modifier type="add" value="26c6-e05c-0f72-7852" field="category" scope="parent"/>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Special Rules" id="a167-1d9f-99b4-830c" targetId="106b-693b-99f2-00c3" importRootEntries="true"/>
@@ -756,6 +770,30 @@ A Model with an ionic flare shield has a 5+ Invulnerable Save against Shooting A
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
+        </entryLink>
+        <entryLink import="true" name="Argyrum pattern boarding shield" hidden="true" id="b70c-1065-bab7-fa87" type="selectionEntry" targetId="08d0-c612-7007-103d">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="656a-07b6-d4fd-57af" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
