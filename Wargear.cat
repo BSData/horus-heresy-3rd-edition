@@ -488,6 +488,39 @@ A Model with an ionic flare shield has a 5+ Invulnerable Save against Shooting A
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sonic lance" hidden="false" id="5767-7e75-a9ce-d25b" publicationId="e54c-7040-0f35-d85d" page="125">
+      <profiles>
+        <profile name="Sonic lance" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="4039-7b75-fcef-f699" publicationId="e54c-7040-0f35-d85d" page="125">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">2</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">5</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Breaching (6+)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Sonic, Assault</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Template" id="002a-854c-7e47-a760" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a"/>
+        <infoLink name="Breaching (X)" id="6685-0cd5-37f0-5b54" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sonic shriekers" hidden="false" id="f7a1-d5a3-c294-7ebd" publicationId="e54c-7040-0f35-d85d" page="125">
+      <profiles>
+        <profile name="Sonic shriekers" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="b32f-d02f-ffad-3381" publicationId="e54c-7040-0f35-d85d" page="125">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c"/>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">When a Unit that includes any Models with sonic shriekers makes a Charge Move, the Target Unit of that Charge cannot be selected to make Reactions until the Charge Procedure has been completed.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Special Rules" id="a167-1d9f-99b4-830c" targetId="106b-693b-99f2-00c3" importRootEntries="true"/>
@@ -525,6 +558,50 @@ A Model with an ionic flare shield has a 5+ Invulnerable Save against Shooting A
           </costs>
         </entryLink>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Surgical Augments" id="608c-d466-92d6-91ea" hidden="true">
+          <entryLinks>
+            <entryLink import="true" name="Sonic shriekers" hidden="false" id="9802-e612-b8dc-f38f" type="selectionEntry" targetId="f7a1-d5a3-c294-7ebd" sortIndex="1">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5583-57c3-167b-0697" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Sonic lance" hidden="false" id="2ba6-8324-13d5-86dd" type="selectionEntry" targetId="5767-7e75-a9ce-d25b" sortIndex="2">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e85-2098-dc70-eb1a" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7115-cf38-eb8f-6afd" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a22-d01f-ab5c-ec07" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
