@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7851-69ac-f701-034e" name="Solar Auxilia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="12" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7851-69ac-f701-034e" name="Solar Auxilia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="13" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Legatine Command Section" hidden="false" id="8641-1dd0-7e76-de7d">
       <categoryLinks>
@@ -982,6 +982,9 @@
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4ad-96db-0db3-d036"/>
                   </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="3"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -1080,7 +1083,11 @@
             <selectionEntryGroup name="May exchange Volkite Charger for:" id="b327-0ec6-0314-8761" hidden="false" defaultSelectionEntryId="128d-aa34-3963-f72e">
               <entryLinks>
                 <entryLink import="true" name="Volkite charger" hidden="false" id="128d-aa34-3963-f72e" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="1" defaultAmount="1"/>
-                <entryLink import="true" name="Storm Axe" hidden="false" id="f3a9-f2b3-5754-c9ad" type="selectionEntry" targetId="3d0f-b25b-a56b-9b47"/>
+                <entryLink import="true" name="Storm Axe" hidden="false" id="f3a9-f2b3-5754-c9ad" type="selectionEntry" targetId="3d0f-b25b-a56b-9b47">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="3"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a6b-c9e0-1e3d-a15f"/>
@@ -1928,6 +1935,9 @@
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75de-21b8-0de6-0bf7"/>
                   </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="3"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -1997,7 +2007,11 @@
             <selectionEntryGroup name="May exchange Volkite Charger for:" id="9694-ff95-3cd8-5a51" hidden="false" defaultSelectionEntryId="805f-e9d0-bfb0-3d5f">
               <entryLinks>
                 <entryLink import="true" name="Volkite charger" hidden="false" id="805f-e9d0-bfb0-3d5f" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="1"/>
-                <entryLink import="true" name="Storm Axe" hidden="false" id="520b-9f0a-166e-d02c" type="selectionEntry" targetId="3d0f-b25b-a56b-9b47"/>
+                <entryLink import="true" name="Storm Axe" hidden="false" id="520b-9f0a-166e-d02c" type="selectionEntry" targetId="3d0f-b25b-a56b-9b47">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="3"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="30c3-5fae-8e05-0e74"/>
@@ -3073,7 +3087,7 @@
             <profile name="Hermes Veletaris Sentinel" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="87c8-77ba-852e-fd7a">
               <characteristics>
                 <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Calvary</characteristic>
-                <characteristic name="M" typeId="a106-a779-d272-5e93">10</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">8</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
                 <characteristic name="S" typeId="498f-dce1-59fd-d8d7">5</characteristic>
@@ -3409,24 +3423,46 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8dfb-94bc-ba48-ff68"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0b4-a71e-07da-a6c0"/>
           </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Flare Launchers" hidden="false" id="1763-ef4f-fdba-a179" sortIndex="3">
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-          </costs>
-          <profiles>
-            <profile name="Flare Launchers" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="7dc6-6eee-836c-16c1">
-              <characteristics>
-                <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">Flare launchers provide an Invulnerable Saving Roll against the Interceptor Reacion</characteristic>
-                <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">A model with flare launchers gains a 5+ Invulnerable Save against any Hits inflicted as part of an Interception Reaction.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6b9-3479-dd03-f495"/>
-          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" id="9696-656f-70bb-919a" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Multi-laser" hidden="false" id="93a3-99fd-515c-aceb" type="selectionEntry" targetId="247d-a71c-d493-790b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a21e-d2ff-932e-54a7"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="Hull (Rear) Mounted multi-laser" field="name"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="040f-18ab-4f8d-6c64"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Flare Launchers" hidden="false" id="1763-ef4f-fdba-a179">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Flare Launchers" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="7dc6-6eee-836c-16c1">
+                      <characteristics>
+                        <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">Flare launchers provide an Invulnerable Saving Roll against the Interceptor Reacion</characteristic>
+                        <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">A model with flare launchers gains a 5+ Invulnerable Save against any Hits inflicted as part of an Interception Reaction.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6b9-3479-dd03-f495"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4965,9 +5001,10 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
                 <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">3</characteristic>
                 <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">13</characteristic>
                 <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">13</characteristic>
-                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">10</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">11</characteristic>
                 <characteristic name="HP" typeId="8735-4497-1f8a-4dda">7</characteristic>
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d"/>
               </characteristics>
             </profile>
           </profiles>
@@ -5028,13 +5065,38 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="May exchange both of it&apos;s Sponson Mounted multi-lasers for:" id="1270-c252-5f1e-e177" hidden="false" sortIndex="3" defaultSelectionEntryId="6e02-0314-07eb-dbb3">
+        <selectionEntryGroup name="May exchange both of it&apos;s Sponson (Right) Mounted multi-laser for:" id="1270-c252-5f1e-e177" hidden="false" sortIndex="3" defaultSelectionEntryId="ab14-8758-b895-7795">
           <entryLinks>
-            <entryLink import="true" name="Auxillia Sponson Weapons" hidden="false" id="9b7a-172c-a494-b0fe" type="selectionEntryGroup" targetId="605c-71a7-a6b3-2a1e"/>
-            <entryLink import="true" name="Multi-laser" hidden="false" id="ab14-8758-b895-7795" type="selectionEntry" targetId="247d-a71c-d493-790b">
+            <entryLink import="true" name="Multi-laser" hidden="false" id="ab14-8758-b895-7795" type="selectionEntry" targetId="247d-a71c-d493-790b" sortIndex="1">
               <modifiers>
-                <modifier type="set" value="Two Sponson Mounted Multi-lasers" field="name"/>
+                <modifier type="prepend" value="Sponson (Right) Mounted" field="name"/>
               </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Heavy bolter" hidden="false" id="fef1-5c4a-7047-95e8" type="selectionEntry" targetId="bc40-b14a-978e-0232" sortIndex="2">
+              <modifiers>
+                <modifier type="prepend" value="Sponson (Right) Mounted" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Heavy flamer" hidden="false" id="8a11-0c6e-1b00-8c30" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="3">
+              <modifiers>
+                <modifier type="prepend" value="Sponson (Right) Mounted" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Autocannon" hidden="false" id="7bdd-17ad-dd77-41d6" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93" sortIndex="4">
+              <modifiers>
+                <modifier type="prepend" value="Sponson (Right) Mounted" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Lascannon" hidden="false" id="e02c-384d-5c7f-eb71" type="selectionEntry" targetId="b6d5-4be2-c37e-2197" sortIndex="5">
+              <modifiers>
+                <modifier type="prepend" value="Sponson (Right) Mounted" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
             </entryLink>
           </entryLinks>
           <constraints>
@@ -5992,7 +6054,6 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="280c-462d-c17a-7f07"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b7c8-9f4b-c7df-6322"/>
       </constraints>
     </selectionEntryGroup>
