@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="22" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="23" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -228,6 +228,7 @@
             <entryLink import="true" name="Prime Benefits" hidden="false" id="7e80-d3f0-4b3f-a177" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="a63f-fc3f-b619-049a" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="951e-35bd-6e6e-e22a" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -453,6 +454,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="6a6f-8404-6809-deac" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="1919-f38a-998a-e7b4" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Centurion" hidden="false" id="3392-e93d-79bc-d648" sortIndex="4">
@@ -489,17 +491,32 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               <modifiers>
                 <modifier type="set" value="12" field="a106-a779-d272-5e93">
                   <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="302b-12a7-4445-89aa" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="9e29-3097-e7b7-8f26" shared="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="Centurion with Jump Pack" field="name">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="302b-12a7-4445-89aa" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="9e29-3097-e7b7-8f26" shared="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="set" value="Infantry (Command, Antigrav)" field="50fc-9241-d4a2-045b">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="9e29-3097-e7b7-8f26" shared="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="14" field="a106-a779-d272-5e93">
                   <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="302b-12a7-4445-89aa" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -507,9 +524,14 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </profiles>
           <modifiers>
             <modifier type="set" value="Centurion with Jump Pack" field="name">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="unit" childId="302b-12a7-4445-89aa" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="9e29-3097-e7b7-8f26" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -577,22 +599,67 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <modifier type="set" value="0" field="c6dc-8a79-cc0a-3479"/>
                   </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Volkite charger" hidden="false" id="86d1-a8d5-c18c-a877" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="6">
+                <entryLink import="true" name="Volkite charger" hidden="false" id="86d1-a8d5-c18c-a877" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="7">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Astartes shotgun" hidden="false" id="17fc-1c47-21a2-c5cb" type="selectionEntry" targetId="6068-d203-27e6-318a" sortIndex="5">
+                <entryLink import="true" name="Astartes shotgun" hidden="false" id="17fc-1c47-21a2-c5cb" type="selectionEntry" targetId="6068-d203-27e6-318a" sortIndex="6">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
                   </costs>
+                </entryLink>
+                <entryLink import="true" name="Banestrike bolter w/ Bayonet" hidden="false" id="81a9-ce8f-3922-05e2" type="selectionEntry" targetId="b2c9-7ceb-417d-7e4d" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="6"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8cb-f6c5-7f6d-ca2c"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Banestrike bolter w/ Chain bayonet" hidden="false" id="d800-e05d-1dc5-e44a" type="selectionEntry" targetId="dcc7-6fd9-e976-f4f2" sortIndex="5">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="7"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef3e-257d-1090-0cf2"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Banestrike bolter" hidden="true" id="608b-ae87-2157-beed" type="selectionEntry" targetId="69de-4883-efd2-b876" sortIndex="1">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <comment>SH</comment>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <comment>SH+Cmd/Champ Only</comment>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f466-92e3-e175-8d54"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4b81-0ea1-5c3e-737f" includeChildSelections="false"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Bolter w/ Bayonet" hidden="false" id="3440-77e6-70a8-6c26" sortIndex="1">
+                <selectionEntry type="upgrade" import="true" name="Bolter w/ Bayonet" hidden="false" id="3440-77e6-70a8-6c26" sortIndex="2">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="1"/>
                     <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -613,7 +680,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     </entryLink>
                   </entryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Bolter w/ Chain bayonet" hidden="false" id="f89f-a243-e6da-e7d2" sortIndex="3">
+                <selectionEntry type="upgrade" import="true" name="Bolter w/ Chain bayonet" hidden="false" id="f89f-a243-e6da-e7d2" sortIndex="4">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
                     <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -633,74 +700,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                       </constraints>
                     </entryLink>
                   </entryLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Banestrike bolter w/. Bayonet" hidden="true" id="c882-902f-dd51-67f5" sortIndex="2">
-                  <entryLinks>
-                    <entryLink import="true" name="Banestrike bolter" hidden="false" id="e5b2-6575-fadd-5adf" type="selectionEntry" targetId="69de-4883-efd2-b876"/>
-                    <entryLink import="true" name="Bayonet" hidden="false" id="ffb9-7529-ad34-f148" type="selectionEntry" targetId="3484-1bd3-cb74-7abe"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="6"/>
-                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-                    <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
-                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                          <comment>SH</comment>
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </conditionGroup>
-                      </conditionGroups>
-                      <comment>SH+Cmd/Champ Only</comment>
-                    </modifier>
-                  </modifiers>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Banestrike bolter w/ Chain bayonet" hidden="true" id="d0b5-85cc-fd27-9bc4" sortIndex="4">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="7"/>
-                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-                    <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
-                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
-                  </costs>
-                  <entryLinks>
-                    <entryLink import="true" name="Banestrike bolter" hidden="false" id="6564-eacb-bc93-88fc" type="selectionEntry" targetId="69de-4883-efd2-b876"/>
-                    <entryLink import="true" name="Chain bayonet" hidden="false" id="7072-86b9-0a16-f287" type="selectionEntry" targetId="e410-d998-bd3e-c0ea"/>
-                  </entryLinks>
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                          <comment>SH</comment>
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </conditionGroup>
-                      </conditionGroups>
-                      <comment>SH+Cmd/Champ Only</comment>
-                    </modifier>
-                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -781,6 +780,34 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Jump Pack" id="6f78-21cb-8853-b980" hidden="false" flatten="true" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Corvid Pattern Jump Pack" hidden="true" id="7cf6-a10b-c94e-0559" type="selectionEntry" targetId="3f94-3ed7-02ee-0c1b" sortIndex="2">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="340c-1d4f-1f31-fb70" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Jump Pack" hidden="false" id="ebe2-88e3-d933-65a4" sortIndex="1">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f30-8075-ca27-30a3" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Vexilla" hidden="false" id="aa08-a8e0-57a1-25c7" type="selectionEntry" targetId="dfcd-0669-ad43-28aa" sortIndex="5">
@@ -789,9 +816,14 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </costs>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="unit" childId="302b-12a7-4445-89aa" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="ebe2-88e3-d933-65a4" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -807,9 +839,14 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </constraints>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="unit" childId="302b-12a7-4445-89aa" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="ebe2-88e3-d933-65a4" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -838,22 +875,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="90f8-0e89-acff-a748" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="18b4-eeda-eed8-0d3e" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="7">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="719b-4a9a-cc71-155a"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d38c-527e-f5bb-c3cc"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="c143-d02b-b70a-445a" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="7"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="0b5d-d2e7-1d99-e361" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -863,18 +885,28 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <modifiers>
             <modifier type="set" value="Bulky (2)" field="name"/>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="unit" childId="302b-12a7-4445-89aa" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="ebe2-88e3-d933-65a4" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="Deep Strike" id="b468-b660-5588-3f97" hidden="true" type="rule" targetId="0553-d06b-52b9-34db">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="unit" childId="302b-12a7-4445-89aa" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="ebe2-88e3-d933-65a4" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -1437,6 +1469,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ff0-ab05-85ee-4953" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="f65d-665e-8e67-224c" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="81bb-3774-5033-549a" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -1506,6 +1539,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93cb-7eb1-8a98-b346" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="8d73-0084-f7e4-97d7" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Sergeant" hidden="false" id="5809-c342-b9e6-740a" defaultAmount="1" sortIndex="1">
@@ -1908,6 +1942,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="8cd2-bd3a-4ad0-84c8" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="670f-745d-764c-abe5" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="b664-2c88-4125-eee5" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -1980,6 +2015,11 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b2e7-53cc-21b5-9462-min"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2e7-53cc-21b5-9462-max"/>
               </constraints>
+            </entryLink>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="ef3f-8573-2072-6d18" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntry>
@@ -2091,26 +2131,71 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Bolter" hidden="false" id="b63f-f577-a8a1-194d" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="1"/>
-                    <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="0459-b8e1-d635-d985" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="9" flatten="true"/>
-                    <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="593f-0069-0e06-41aa" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" sortIndex="4" flatten="true"/>
-                    <entryLink import="true" name="Astartes shotgun" hidden="false" id="c8b7-d27f-a4af-568d" type="selectionEntry" targetId="6068-d203-27e6-318a" sortIndex="5">
+                    <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="0459-b8e1-d635-d985" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="12" flatten="true"/>
+                    <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="593f-0069-0e06-41aa" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" sortIndex="8" flatten="true"/>
+                    <entryLink import="true" name="Astartes shotgun" hidden="false" id="c8b7-d27f-a4af-568d" type="selectionEntry" targetId="6068-d203-27e6-318a" sortIndex="9">
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Disintegrator rifle" hidden="false" id="ce52-98c1-c1fc-8e7e" type="selectionEntry" targetId="4273-9b82-0a75-92bb" sortIndex="6">
+                    <entryLink import="true" name="Disintegrator rifle" hidden="false" id="ce52-98c1-c1fc-8e7e" type="selectionEntry" targetId="4273-9b82-0a75-92bb" sortIndex="10">
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Volkite charger" hidden="false" id="61d7-6535-8f99-2bca" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="7">
+                    <entryLink import="true" name="Volkite charger" hidden="false" id="61d7-6535-8f99-2bca" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="11">
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
                       </costs>
                     </entryLink>
+                    <entryLink import="true" name="Banestrike bolter" hidden="true" id="622c-0af1-892f-912e" type="selectionEntry" targetId="69de-4883-efd2-b876" sortIndex="2">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>SH</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <comment>SH+Cmd/Champ Only</comment>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a225-59de-1af7-6d8f"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Banestrike bolter w/ Bayonet" hidden="true" id="39a8-780a-2498-fddf" type="selectionEntry" targetId="b2c9-7ceb-417d-7e4d" sortIndex="4">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="6"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8467-0139-0ef6-02c5"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Banestrike bolter w/ Chain bayonet" hidden="true" id="0eba-327b-2140-eaea" type="selectionEntry" targetId="dcc7-6fd9-e976-f4f2" sortIndex="7">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="7"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0831-e934-e8e4-4340"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Bolter w/ Bayonet" hidden="false" id="f196-60c5-1ab8-3fdc" sortIndex="2">
+                    <selectionEntry type="upgrade" import="true" name="Bolter w/ Bayonet" hidden="false" id="f196-60c5-1ab8-3fdc" sortIndex="3">
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="1"/>
                         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -2131,7 +2216,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                         </entryLink>
                       </entryLinks>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Bolter w/ Chain bayonet" hidden="false" id="0bde-5cc6-3184-350b" sortIndex="3">
+                    <selectionEntry type="upgrade" import="true" name="Bolter w/ Chain bayonet" hidden="false" id="0bde-5cc6-3184-350b" sortIndex="6">
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
                         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -2240,22 +2325,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Drakenscale" hidden="true" id="5645-4c33-89dd-26f2" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="2">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b5b8-5b05-5dfd-e0fd"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acf1-6181-7839-9602"/>
-              </constraints>
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-              </costs>
-            </entryLink>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="2a22-d162-3679-7e14" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="2"/>
           </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Chosen" hidden="false" id="21fc-71c6-05d9-80ca" sortIndex="2">
@@ -2461,6 +2531,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="5792-ae2b-89ca-c8e9" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="6bb8-fd9b-2f17-5485" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50" sortIndex=""/>
       </entryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="50"/>
@@ -2500,6 +2571,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <categoryLink name="Vehicle Model Type" hidden="false" id="8d44-4d91-2a30-64d0" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
             <categoryLink name="Transport Model Sub-Type" hidden="false" id="f978-5f0f-c79f-61da" targetId="2e6d-36f6-eeca-8e0c" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="5e71-4dc1-992f-1e51" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -2622,6 +2700,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a79-96c3-f542-3afd" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="282e-805e-b7d6-a6c5" includeChildSelections="false"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="60e5-4ef9-d4d9-0b5c" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -3055,6 +3140,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="c863-f544-ed5d-c5dc" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="7329-57ce-10c2-4c0b" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
@@ -3221,7 +3307,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aab9-ea56-e3ec-be7b"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Options" id="a8ee-be02-e926-e779" hidden="false">
+            <selectionEntryGroup name="Options" id="a8ee-be02-e926-e779" hidden="false" sortIndex="1">
               <selectionEntryGroups>
                 <selectionEntryGroup name="May exchange bolt pistol for:" id="7780-4ef2-4b84-4999" hidden="false" defaultSelectionEntryId="38ad-3258-60c4-072e" sortIndex="2">
                   <entryLinks>
@@ -3271,14 +3357,19 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5956-92c8-764e-ebe8" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Melta bombs" hidden="false" id="32da-6b81-52ca-9f53" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="4">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Melta bombs" hidden="false" id="32da-6b81-52ca-9f53" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="2">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="087d-cd09-333c-d877"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3299,6 +3390,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92fd-983b-5f52-f0cd" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="63ca-dc78-45c8-9071" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="32"/>
@@ -3562,6 +3654,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="a98f-89df-6c9f-1f17" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="36cd-be62-0f8c-19c7" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Line (X)" id="e24e-5c1c-81dd-fdee" hidden="false" type="rule" targetId="1b5d-ceec-802a-c611">
@@ -3644,6 +3737,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="f3a1-79b7-e0f8-bc05" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="155b-0047-db69-53d5" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="May exchange anvilus autocannon battery" id="c6c1-d3eb-7bdf-0e58" hidden="false" defaultSelectionEntryId="5f77-6850-58d7-65c2" sortIndex="2">
@@ -3737,6 +3831,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <modifier type="set" value="20" field="9893-c379-920b-8982"/>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="9e7d-2345-2160-3bc8" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="8f8b-544e-d186-b4cf" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -4008,16 +4103,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Jump Pack" hidden="false" id="9e29-3097-e7b7-8f26" sortIndex="1">
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
-            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8201-5bc5-5716-265f" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Melta bombs" hidden="false" id="8f0a-e21d-a905-e21b" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="3">
@@ -4044,22 +4129,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </modifiers>
         </entryLink>
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="56fa-651a-1042-052d" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="08cc-3fdb-926c-7d44" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="5">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a4d8-4eab-45f7-3b6e"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56b4-5df5-e0fa-3fcd"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="408d-db4a-41f1-94d8" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="5c2c-c897-4f46-b9eb" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
@@ -4248,80 +4317,28 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                         </entryLink>
                       </entryLinks>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Banestrike bolter w/. Bayonet" hidden="true" id="5df5-c503-f2a6-f018" sortIndex="3">
-                      <entryLinks>
-                        <entryLink import="true" name="Banestrike bolter" hidden="false" id="b86c-acd1-56c7-b26c" type="selectionEntry" targetId="69de-4883-efd2-b876"/>
-                        <entryLink import="true" name="Bayonet" hidden="false" id="9a7c-138b-1656-13f6" type="selectionEntry" targetId="3484-1bd3-cb74-7abe"/>
-                      </entryLinks>
-                      <costs>
-                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="6"/>
-                        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-                        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-                        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
-                        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="false" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                              <comment>SH</comment>
-                              <conditionGroups>
-                                <conditionGroup type="or">
-                                  <conditions>
-                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
-                                  </conditions>
-                                </conditionGroup>
-                              </conditionGroups>
-                            </conditionGroup>
-                          </conditionGroups>
-                          <comment>SH+Cmd/Champ Only</comment>
-                        </modifier>
-                      </modifiers>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Banestrike bolter w/ Chain bayonet" hidden="true" id="1f4c-553c-3853-2476" sortIndex="5">
-                      <costs>
-                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="7"/>
-                        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-                        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-                        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
-                        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
-                      </costs>
-                      <entryLinks>
-                        <entryLink import="true" name="Banestrike bolter" hidden="false" id="6dfc-d404-674d-3f30" type="selectionEntry" targetId="69de-4883-efd2-b876"/>
-                        <entryLink import="true" name="Chain bayonet" hidden="false" id="bcd0-e47e-2292-6ab3" type="selectionEntry" targetId="e410-d998-bd3e-c0ea"/>
-                      </entryLinks>
-                      <modifiers>
-                        <modifier type="set" value="false" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                              <comment>SH</comment>
-                              <conditionGroups>
-                                <conditionGroup type="or">
-                                  <conditions>
-                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
-                                  </conditions>
-                                </conditionGroup>
-                              </conditionGroups>
-                            </conditionGroup>
-                          </conditionGroups>
-                          <comment>SH+Cmd/Champ Only</comment>
-                        </modifier>
-                      </modifiers>
-                    </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
                     <entryLink import="true" name="Bolter" hidden="false" id="30ee-f2b7-c5b6-dbed" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="1" defaultAmount="1">
                       <modifiers>
                         <modifier type="set" value="Bolter (default)" field="name"/>
                       </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Banestrike bolter w/ Bayonet" hidden="false" id="5a4e-93fc-4a25-0642" type="selectionEntry" targetId="b2c9-7ceb-417d-7e4d" sortIndex="3">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="6"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d06-65c0-27b5-f225"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Banestrike bolter w/ Chain bayonet" hidden="false" id="b1e9-1602-cd59-1a11" type="selectionEntry" targetId="dcc7-6fd9-e976-f4f2" sortIndex="5">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="7"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b67a-6316-5aff-3de6"/>
+                      </constraints>
                     </entryLink>
                   </entryLinks>
                   <comment>Exchange bolter for</comment>
@@ -4360,6 +4377,34 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </conditions>
             </modifier>
           </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Jump Pack" id="899a-215e-b92c-e068" hidden="false" sortIndex="1" flatten="true">
+          <entryLinks>
+            <entryLink import="true" name="Corvid Pattern Jump Pack" hidden="true" id="20c1-90d3-5850-726d" type="selectionEntry" targetId="3f94-3ed7-02ee-0c1b" sortIndex="2">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="340c-1d4f-1f31-fb70" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Jump Pack" hidden="false" id="9e29-3097-e7b7-8f26" sortIndex="1">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8201-5bc5-5716-265f" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
@@ -4572,22 +4617,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="2090-2827-7a71-d541" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="3565-4ea0-93f6-7b8c" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="2">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4b25-08cc-c12f-b68b"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a520-13eb-daed-143f"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="bc59-528d-4fe6-8573" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="9064-ad16-4ca4-aa5b" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
@@ -4652,33 +4681,33 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <modifiers>
             <modifier type="set" value="Bulky (2)" field="name"/>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="unit" childId="4aec-f1bd-9755-cf92" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="ebe2-88e3-d933-65a4" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="Deep Strike" id="7b83-d32e-d28f-aa47" hidden="true" type="rule" targetId="0553-d06b-52b9-34db">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="unit" childId="4aec-f1bd-9755-cf92" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="ebe2-88e3-d933-65a4" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Jump Pack" hidden="false" id="4aec-f1bd-9755-cf92" sortIndex="1">
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
-            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0766-dbf2-c33c-9abd" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
         <selectionEntry type="model" import="true" name="Optae" hidden="false" id="6f56-499d-5e99-ac34">
           <profiles>
             <profile name="Optae" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="ee93-1662-c9db-ffa5">
@@ -4702,12 +4731,22 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               <modifiers>
                 <modifier type="set" value="12" field="a106-a779-d272-5e93">
                   <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4aec-f1bd-9755-cf92" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="ebe2-88e3-d933-65a4" shared="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="Infantry (Command, Antigrav)" field="50fc-9241-d4a2-045b">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="ebe2-88e3-d933-65a4" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="14" field="a106-a779-d272-5e93">
                   <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4aec-f1bd-9755-cf92" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="7cf6-a10b-c94e-0559" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4805,6 +4844,22 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
                 </entryLink>
+                <entryLink import="true" name="Banestrike bolter w/ Bayonet" hidden="false" id="0d8f-46e6-b035-1331" type="selectionEntry" targetId="b2c9-7ceb-417d-7e4d" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="6"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c0c-6f14-6bb5-f80b"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Banestrike bolter w/ Chain bayonet" hidden="false" id="28e2-704a-e845-cb07" type="selectionEntry" targetId="dcc7-6fd9-e976-f4f2" sortIndex="5">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="7"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8eaa-f06c-3015-a83c"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="da36-9131-a8ff-8586" includeChildSelections="false"/>
@@ -4852,74 +4907,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     </entryLink>
                   </entryLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Banestrike bolter w/. Bayonet" hidden="true" id="d934-b946-acf9-9c10" sortIndex="3">
-                  <entryLinks>
-                    <entryLink import="true" name="Banestrike bolter" hidden="false" id="34f0-c2a8-3384-02a2" type="selectionEntry" targetId="69de-4883-efd2-b876"/>
-                    <entryLink import="true" name="Bayonet" hidden="false" id="52fa-1dd6-a649-9611" type="selectionEntry" targetId="3484-1bd3-cb74-7abe"/>
-                  </entryLinks>
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="6"/>
-                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-                    <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
-                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                          <comment>SH</comment>
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </conditionGroup>
-                      </conditionGroups>
-                      <comment>SH+Cmd/Champ Only</comment>
-                    </modifier>
-                  </modifiers>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Banestrike bolter w/ Chain bayonet" hidden="true" id="a364-697e-1aa3-6672" sortIndex="5">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="7"/>
-                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-                    <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
-                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
-                  </costs>
-                  <entryLinks>
-                    <entryLink import="true" name="Banestrike bolter" hidden="false" id="c607-b2d9-001c-f324" type="selectionEntry" targetId="69de-4883-efd2-b876"/>
-                    <entryLink import="true" name="Chain bayonet" hidden="false" id="9d02-d2c2-22c7-141e" type="selectionEntry" targetId="e410-d998-bd3e-c0ea"/>
-                  </entryLinks>
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                          <comment>SH</comment>
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </conditionGroup>
-                      </conditionGroups>
-                      <comment>SH+Cmd/Champ Only</comment>
-                    </modifier>
-                  </modifiers>
-                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="May exchange bolt pistol for:" id="b6ec-6e78-3609-c426" hidden="false" collapsible="true" defaultSelectionEntryId="ba7a-5f18-8283-d35c">
@@ -4962,15 +4949,48 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Jump Pack" id="57ce-8dd6-ab9e-8ea7" hidden="false" flatten="true" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Corvid Pattern Jump Pack" hidden="true" id="f62d-55f3-bce1-b923" type="selectionEntry" targetId="3f94-3ed7-02ee-0c1b" sortIndex="2">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="340c-1d4f-1f31-fb70" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Jump Pack" hidden="false" id="892f-17e7-95d2-75b3" sortIndex="1">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4be8-8888-0317-2214" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="9871-cb62-5283-2216" id="5410-b46a-5cc1-4716" primary="false" name="Command Model Sub-type"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="c504-9dfa-35d3-c98f" field="category">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="unit" childId="4aec-f1bd-9755-cf92" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="unit" childId="ebe2-88e3-d933-65a4" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -5369,7 +5389,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Options" id="41c1-b2ee-9287-47b6" hidden="false" sortIndex="3">
+        <selectionEntryGroup name="Options" id="41c1-b2ee-9287-47b6" hidden="false" sortIndex="2">
           <selectionEntryGroups>
             <selectionEntryGroup name="May exchange bolt pistol for:" id="bb1f-a9b8-5fda-d54a" hidden="false" defaultSelectionEntryId="8248-cdf8-bd84-eeb3">
               <entryLinks>
@@ -5604,25 +5624,25 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </infoLink>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Krak grenades" hidden="false" id="4684-fa11-0709-afcc" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+        <entryLink import="true" name="Krak grenades" hidden="false" id="4684-fa11-0709-afcc" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="4">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea1c-40c7-dc2d-e5fc" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c059-4cc9-7c82-c53e" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Frag grenades" hidden="false" id="a747-690d-d286-11f2" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+        <entryLink import="true" name="Frag grenades" hidden="false" id="a747-690d-d286-11f2" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9423-60d4-0b45-5912" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b44-d845-5f3d-3c2f" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Bolt pistol" hidden="false" id="d222-ee7a-f91e-209d" type="selectionEntry" targetId="2942-f783-d627-33c5">
+        <entryLink import="true" name="Bolt pistol" hidden="false" id="d222-ee7a-f91e-209d" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="592d-6498-55e2-d09c" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae2b-6187-84cf-c07b" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Nemesis rifle" hidden="false" id="421d-9f05-2fdb-e722" type="selectionEntry" targetId="6643-6be5-c3cb-c5e1">
+        <entryLink import="true" name="Nemesis rifle" hidden="false" id="421d-9f05-2fdb-e722" type="selectionEntry" targetId="6643-6be5-c3cb-c5e1" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="31df-a561-34ed-e59b" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="538d-7acf-89c9-1b0e" includeChildSelections="false"/>
@@ -5694,25 +5714,25 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <infoLink name="Anathemata Discipline" id="693d-d370-e6a6-11e4" hidden="false" type="rule" targetId="f260-e43b-e300-79a6"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Force Weapon" hidden="false" id="b9b7-0707-5a1f-8fb1" type="selectionEntryGroup" targetId="89e6-2502-2486-71f4">
+        <entryLink import="true" name="Force Weapon" hidden="false" id="b9b7-0707-5a1f-8fb1" type="selectionEntryGroup" targetId="89e6-2502-2486-71f4" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df4f-9663-cec1-97da" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86d5-ba58-1f90-c948" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Archeotech pistol" hidden="false" id="fc82-f1e0-47f8-c74c" type="selectionEntry" targetId="0600-3af1-d080-abf7">
+        <entryLink import="true" name="Archeotech pistol" hidden="false" id="fc82-f1e0-47f8-c74c" type="selectionEntry" targetId="0600-3af1-d080-abf7" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1eeb-0d74-04c8-8cce" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ff7-3729-3334-4b0b" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Frag grenades" hidden="false" id="b418-4d5f-4adb-0e26" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+        <entryLink import="true" name="Frag grenades" hidden="false" id="b418-4d5f-4adb-0e26" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3d2e-63b9-ff8f-2aa2" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0b2-0889-69df-4ad4" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Krak grenades" hidden="false" id="ee2b-5dcc-0929-bc99" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+        <entryLink import="true" name="Krak grenades" hidden="false" id="ee2b-5dcc-0929-bc99" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="4">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c5b-90d5-5b73-774b" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73ea-e29d-9c66-b195" includeChildSelections="false"/>
@@ -5751,19 +5771,19 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Frag grenades" hidden="false" id="9320-03b1-9330-28e6" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+        <entryLink import="true" name="Frag grenades" hidden="false" id="9320-03b1-9330-28e6" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="efcb-7a0b-b279-7c4e" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36fa-b209-999e-a4ad" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Krak grenades" hidden="false" id="aa3b-c901-a977-15af" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+        <entryLink import="true" name="Krak grenades" hidden="false" id="aa3b-c901-a977-15af" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ac45-9147-1301-81fc" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d704-d756-304f-23c3" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Command vox relay" hidden="false" id="4d73-abcc-ac37-73e2" type="selectionEntry" targetId="2012-4b76-43b0-c7dd">
+        <entryLink import="true" name="Command vox relay" hidden="false" id="4d73-abcc-ac37-73e2" type="selectionEntry" targetId="2012-4b76-43b0-c7dd" sortIndex="4">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b94e-6ebf-6499-9559" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60cb-1e7d-7956-b15c" includeChildSelections="false"/>
@@ -5880,31 +5900,31 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Frag grenades" hidden="false" id="96f0-32a4-61be-a9b8" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+        <entryLink import="true" name="Frag grenades" hidden="false" id="96f0-32a4-61be-a9b8" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a730-8a10-383e-6efb" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e6b-8fe2-db0c-1c30" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Krak grenades" hidden="false" id="6619-a095-13bd-228e" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+        <entryLink import="true" name="Krak grenades" hidden="false" id="6619-a095-13bd-228e" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="68f6-6234-29e6-a4f8" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f54-884a-5b96-9f7f" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Cortex controller" hidden="false" id="13d3-3d74-a05a-1b46" type="selectionEntry" targetId="e1c7-e5c2-8a4c-1e79">
+        <entryLink import="true" name="Cortex controller" hidden="false" id="13d3-3d74-a05a-1b46" type="selectionEntry" targetId="e1c7-e5c2-8a4c-1e79" sortIndex="4">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ca6d-df2c-e0e4-9f0b" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a97c-a1ae-65bb-94ce" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Cyber-familiar" hidden="false" id="f1da-a84d-f153-84ab" type="selectionEntry" targetId="a545-36ec-d50e-2ae4">
+        <entryLink import="true" name="Cyber-familiar" hidden="false" id="f1da-a84d-f153-84ab" type="selectionEntry" targetId="a545-36ec-d50e-2ae4" sortIndex="5">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a042-ef80-0782-9483" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16a9-a9b6-a257-2389" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Melta bombs" hidden="false" id="c211-f73e-2b1a-b3d4" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="1">
+        <entryLink import="true" name="Melta bombs" hidden="false" id="c211-f73e-2b1a-b3d4" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="6">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
@@ -5952,7 +5972,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <infoLink name="Master of Automata" id="8d15-5f6c-1edd-d9d6" hidden="false" type="rule" targetId="3ad7-36d0-16cc-4995"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Options" id="0b3d-819b-6b7d-8107" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Options" id="0b3d-819b-6b7d-8107" hidden="false" sortIndex="1">
           <selectionEntryGroups>
             <selectionEntryGroup name="May exchange bolt pistol for:" id="7e4f-e30a-1df2-d0b7" hidden="false" defaultSelectionEntryId="8248-cdf8-bd84-eeb3" sortIndex="2">
               <entryLinks>
@@ -6003,24 +6023,31 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="14" field="a106-a779-d272-5e93">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="7cf6-a10b-c94e-0559" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Frag grenades" hidden="false" id="10d0-e94a-9c6a-4bec" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+        <entryLink import="true" name="Frag grenades" hidden="false" id="10d0-e94a-9c6a-4bec" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3aca-1fc4-1888-7797" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f535-2535-32e2-3f78" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Krak grenades" hidden="false" id="ef00-9929-9336-e8c4" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+        <entryLink import="true" name="Krak grenades" hidden="false" id="ef00-9929-9336-e8c4" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f0f-5a0f-b485-a7f5" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40d2-618d-a7c1-bb98" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Melta bombs" hidden="false" id="2019-155b-35f3-8b1e" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="1">
+        <entryLink import="true" name="Melta bombs" hidden="false" id="2019-155b-35f3-8b1e" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="5">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
@@ -6028,7 +6055,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c967-4e66-2708-f77d" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Rad grenades" hidden="false" id="c733-6faf-0d6b-c0ac" type="selectionEntry" targetId="cd5f-1eff-df69-6bd2">
+        <entryLink import="true" name="Rad grenades" hidden="false" id="c733-6faf-0d6b-c0ac" type="selectionEntry" targetId="cd5f-1eff-df69-6bd2" sortIndex="4">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dbed-e68a-1315-103d" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bad7-1ba2-56de-5224" includeChildSelections="false"/>
@@ -6043,9 +6070,21 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       <infoLinks>
         <infoLink name="[Allegiance]" id="b01e-114a-47d0-e7e0" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="4026-50c6-3740-009f" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Bulky (X)" id="defc-51f5-21a1-fc81" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+          <modifiers>
+            <modifier type="set" value="Bulky (2)" field="name"/>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="unit" childId="7cf6-a10b-c94e-0559" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deep Strike" id="63e9-1d8e-9dfd-3189" hidden="false" type="rule" targetId="0553-d06b-52b9-34db"/>
+        <infoLink name="Firestorm" id="fcc4-23a9-37fa-a8db" hidden="false" type="rule" targetId="3ed1-c5b3-a98d-1b12"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Ranged weapons" id="349a-9cf9-3e27-b734" hidden="false" sortIndex="2" defaultSelectionEntryId="4db9-5306-45be-8065">
+        <selectionEntryGroup name="Ranged weapons" id="349a-9cf9-3e27-b734" hidden="false" sortIndex="1" defaultSelectionEntryId="4db9-5306-45be-8065">
           <entryLinks>
             <entryLink import="true" name="Overcharged volkite serpenta" hidden="false" id="4db9-5306-45be-8065" type="selectionEntry" targetId="a3f7-f435-8ad8-05f9" sortIndex="1">
               <modifiers>
@@ -6066,6 +6105,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       <categoryLinks>
         <categoryLink targetId="af7d-af64-6b7d-da9d" id="0e26-a79b-b9dc-b713" primary="false" name="Specialist Model Sub-Type"/>
         <categoryLink targetId="c504-9dfa-35d3-c98f" id="42cc-e3fc-9c48-b7d4" primary="false" name="Antigrav Model Sub-Type"/>
+        <categoryLink targetId="594d-fa82-13cb-a345" id="d6f9-eeb8-d279-93ce" primary="false" name="Infantry Model Type"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Siege Breaker" hidden="false" id="8128-2ba6-b677-eb81" sortIndex="15">
@@ -6102,7 +6142,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4304-9686-b657-c61e" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Thunder hammer" hidden="false" id="8c50-b7bb-9bc1-9bf8" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="1">
+            <entryLink import="true" name="Thunder hammer" hidden="false" id="8c50-b7bb-9bc1-9bf8" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d44-f8b4-4470-51a4" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38a7-e3a8-b681-94ee" includeChildSelections="false"/>
@@ -6120,13 +6160,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fefb-3dfd-eace-ecde" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Phosphex bombs" hidden="false" id="4c05-adc6-93c2-d4ad" type="selectionEntry" targetId="5ad2-c3b4-f5eb-5b10" sortIndex="6">
+            <entryLink import="true" name="Phosphex bombs" hidden="false" id="4c05-adc6-93c2-d4ad" type="selectionEntry" targetId="5ad2-c3b4-f5eb-5b10" sortIndex="5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ff1-9adf-8597-754c" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8dc-3981-5331-3ce9" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Melta bombs" hidden="false" id="283d-7fa6-9afb-fab5" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="5">
+            <entryLink import="true" name="Melta bombs" hidden="false" id="283d-7fa6-9afb-fab5" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="8">
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
               </costs>
@@ -6140,7 +6180,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca4d-9b08-ab4f-902e" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Cognis-signum" hidden="false" id="d2ef-9042-b306-0cf3" type="selectionEntry" targetId="268f-5e98-166a-6f01" sortIndex="8">
+            <entryLink import="true" name="Cognis-signum" hidden="false" id="d2ef-9042-b306-0cf3" type="selectionEntry" targetId="268f-5e98-166a-6f01" sortIndex="6">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c85-0327-9804-9998" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="926d-7f83-1f88-f96f" includeChildSelections="false"/>
@@ -6164,7 +6204,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May exchange bolt pistol for:" id="936d-ae02-5b4c-fb2b" hidden="false" defaultSelectionEntryId="20b3-3f38-2825-efa7" sortIndex="2">
+            <selectionEntryGroup name="May exchange bolt pistol for:" id="936d-ae02-5b4c-fb2b" hidden="false" defaultSelectionEntryId="20b3-3f38-2825-efa7" sortIndex="1">
               <entryLinks>
                 <entryLink import="true" name="Legion Pistols" hidden="false" id="9b27-9567-6322-3d02" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" sortIndex="3"/>
                 <entryLink import="true" name="Bolt pistol" hidden="false" id="20b3-3f38-2825-efa7" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1"/>
@@ -6234,7 +6274,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Options" id="fc3f-1430-ff97-8c43" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Options" id="fc3f-1430-ff97-8c43" hidden="false" sortIndex="1">
           <entryLinks>
             <entryLink import="true" name="Power Weapon" hidden="false" id="b88f-3dea-35ea-4903" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394">
               <modifiers>
@@ -6281,7 +6321,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Melta bombs" hidden="false" id="1ba2-e735-d90d-2109" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="1">
+        <entryLink import="true" name="Melta bombs" hidden="false" id="1ba2-e735-d90d-2109" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="6">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
@@ -6289,25 +6329,25 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e28-de42-e9e0-5833" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Bolt pistol" hidden="false" id="6c56-41f9-d835-be2d" type="selectionEntry" targetId="2942-f783-d627-33c5">
+        <entryLink import="true" name="Bolt pistol" hidden="false" id="6c56-41f9-d835-be2d" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="65de-7a8b-e399-928e" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be91-5012-a12e-08e6" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Frag grenades" hidden="false" id="d082-01a0-f738-4daa" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+        <entryLink import="true" name="Frag grenades" hidden="false" id="d082-01a0-f738-4daa" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d6a2-a0c8-7839-3857" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6263-4f37-e79c-8947" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Krak grenades" hidden="false" id="bb55-71a7-08df-dc47" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+        <entryLink import="true" name="Krak grenades" hidden="false" id="bb55-71a7-08df-dc47" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="4">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a8a-18bc-0d91-93bd" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65a9-2196-cbe6-b5d7" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Icon of Allegiance" hidden="false" id="c935-6837-4d05-e7f6" type="selectionEntry" targetId="b808-6eaa-6396-6ce3">
+        <entryLink import="true" name="Icon of Allegiance" hidden="false" id="c935-6837-4d05-e7f6" type="selectionEntry" targetId="b808-6eaa-6396-6ce3" sortIndex="5">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4441-0c91-a7c3-2edf" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66b3-4a9f-1a57-5784" includeChildSelections="false"/>
@@ -6386,25 +6426,25 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Crozius arcanum" hidden="false" id="976c-f538-d3f1-0530" type="selectionEntry" targetId="4da8-c2aa-1380-9825">
+        <entryLink import="true" name="Crozius arcanum" hidden="false" id="976c-f538-d3f1-0530" type="selectionEntry" targetId="4da8-c2aa-1380-9825" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f8b4-e017-be19-9b99" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33d7-5a9b-dd10-0c8b" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Frag grenades" hidden="false" id="e771-e3be-4945-76f2" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+        <entryLink import="true" name="Frag grenades" hidden="false" id="e771-e3be-4945-76f2" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d2a9-c375-dd5a-fcf8" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="573b-34bd-d13c-3216" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Krak grenades" hidden="false" id="cf56-b05a-466b-d422" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+        <entryLink import="true" name="Krak grenades" hidden="false" id="cf56-b05a-466b-d422" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="4">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44af-9e0f-528c-5099" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1341-dbce-6efe-41e0" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Melta bombs" hidden="false" id="4e02-b104-585b-ae02" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="1">
+        <entryLink import="true" name="Melta bombs" hidden="false" id="4e02-b104-585b-ae02" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="5">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
@@ -6435,7 +6475,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Options" id="265f-5c58-0294-dfa9" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Options" id="265f-5c58-0294-dfa9" hidden="false" sortIndex="1">
           <selectionEntryGroups>
             <selectionEntryGroup name="May exchange bolt pistol for:" id="9983-47c4-d91c-26d8" hidden="false" defaultSelectionEntryId="8248-cdf8-bd84-eeb3">
               <entryLinks>
@@ -6500,22 +6540,67 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Bolter" hidden="false" id="f52e-7334-8d1e-544e" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="1"/>
-                    <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="7182-39f4-ab9d-9ef8" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="9" flatten="true"/>
-                    <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="f864-b2fc-3346-5112" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" sortIndex="4" flatten="true"/>
-                    <entryLink import="true" name="Astartes shotgun" hidden="false" id="ffcf-d4a3-9615-050b" type="selectionEntry" targetId="6068-d203-27e6-318a" sortIndex="5">
+                    <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="7182-39f4-ab9d-9ef8" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="12" flatten="true"/>
+                    <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="f864-b2fc-3346-5112" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" sortIndex="8" flatten="true"/>
+                    <entryLink import="true" name="Astartes shotgun" hidden="false" id="ffcf-d4a3-9615-050b" type="selectionEntry" targetId="6068-d203-27e6-318a" sortIndex="9">
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Disintegrator rifle" hidden="false" id="ccb0-9c9b-2a8e-3d1f" type="selectionEntry" targetId="4273-9b82-0a75-92bb" sortIndex="6">
+                    <entryLink import="true" name="Disintegrator rifle" hidden="false" id="ccb0-9c9b-2a8e-3d1f" type="selectionEntry" targetId="4273-9b82-0a75-92bb" sortIndex="10">
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Volkite charger" hidden="false" id="6a7f-e17b-4639-3484" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="7">
+                    <entryLink import="true" name="Volkite charger" hidden="false" id="6a7f-e17b-4639-3484" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="11">
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
                       </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Banestrike bolter" hidden="true" id="f793-61be-6d6b-d353" type="selectionEntry" targetId="69de-4883-efd2-b876" sortIndex="2">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>SH</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <comment>SH+Cmd/Champ Only</comment>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffee-4294-be3c-9255"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Banestrike bolter w/ Bayonet" hidden="false" id="4ad4-0d72-e045-0a46" type="selectionEntry" targetId="b2c9-7ceb-417d-7e4d" sortIndex="3">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="6"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd88-9d48-c79c-9946"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Banestrike bolter w/ Chain bayonet" hidden="false" id="4fc5-bd0a-f6f4-8e86" type="selectionEntry" targetId="dcc7-6fd9-e976-f4f2" sortIndex="5">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="7"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ce5-b238-fed1-9119"/>
+                      </constraints>
                     </entryLink>
                   </entryLinks>
                   <selectionEntries>
@@ -6540,7 +6625,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                         </entryLink>
                       </entryLinks>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Bolter w/ Chain bayonet" hidden="false" id="3080-1026-aa6d-e4e2" sortIndex="3">
+                    <selectionEntry type="upgrade" import="true" name="Bolter w/ Chain bayonet" hidden="false" id="3080-1026-aa6d-e4e2" sortIndex="4">
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
                         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -6649,22 +6734,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Drakenscale" hidden="true" id="0a60-6b44-1464-205b" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="2">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1fa4-489f-6e06-0fe2"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="506a-6752-e79e-3781"/>
-              </constraints>
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-              </costs>
-            </entryLink>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="5ebb-b248-7154-0eba" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="2"/>
           </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Chosen w/Jump Pack" hidden="false" id="7a9f-f090-6da8-fc8a" sortIndex="2">
@@ -6870,6 +6940,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="8c42-ac26-1d89-9950" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="3aee-7cf9-9498-f1fd" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="60"/>
@@ -6892,6 +6963,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="11bd-f489-3aa3-97d7" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="7138-7174-e84a-ffd4" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Veteran Champion" hidden="false" id="3dc3-9ea3-a9de-6f25" sortIndex="1">
@@ -6934,26 +7006,71 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Bolter" hidden="false" id="c631-9211-8f06-4a9a" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="1"/>
-                    <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="d125-98d4-df44-625a" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="9" flatten="true"/>
-                    <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="552d-eebb-4bf9-9b90" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" sortIndex="4" flatten="true"/>
-                    <entryLink import="true" name="Astartes shotgun" hidden="false" id="83f7-b328-a69b-4784" type="selectionEntry" targetId="6068-d203-27e6-318a" sortIndex="5">
+                    <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="d125-98d4-df44-625a" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="12" flatten="true"/>
+                    <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="552d-eebb-4bf9-9b90" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" sortIndex="8" flatten="true"/>
+                    <entryLink import="true" name="Astartes shotgun" hidden="false" id="83f7-b328-a69b-4784" type="selectionEntry" targetId="6068-d203-27e6-318a" sortIndex="9">
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Disintegrator rifle" hidden="false" id="33ef-e932-b9d0-603d" type="selectionEntry" targetId="4273-9b82-0a75-92bb" sortIndex="6">
+                    <entryLink import="true" name="Disintegrator rifle" hidden="false" id="33ef-e932-b9d0-603d" type="selectionEntry" targetId="4273-9b82-0a75-92bb" sortIndex="10">
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Volkite charger" hidden="false" id="1985-708a-ae8e-5ce5" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="7">
+                    <entryLink import="true" name="Volkite charger" hidden="false" id="1985-708a-ae8e-5ce5" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="11">
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
                       </costs>
                     </entryLink>
+                    <entryLink import="true" name="Banestrike bolter" hidden="true" id="2dbb-1ea5-5be2-92aa" type="selectionEntry" targetId="69de-4883-efd2-b876" sortIndex="2">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>SH</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <comment>SH+Cmd/Champ Only</comment>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3550-c311-9b49-2e5d"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Banestrike bolter w/ Bayonet" hidden="false" id="45cf-5760-50e1-abbf" type="selectionEntry" targetId="b2c9-7ceb-417d-7e4d" sortIndex="4">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="6"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd00-c107-4d1c-5a92"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Banestrike bolter w/ Chain bayonet" hidden="false" id="a592-cec1-95af-8698" type="selectionEntry" targetId="dcc7-6fd9-e976-f4f2" sortIndex="6">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="7"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52a2-b3ad-c463-9a74"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Bolter w/ Bayonet" hidden="false" id="978a-8815-4869-a4d1" sortIndex="2">
+                    <selectionEntry type="upgrade" import="true" name="Bolter w/ Bayonet" hidden="false" id="978a-8815-4869-a4d1" sortIndex="3">
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="1"/>
                         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -6974,7 +7091,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                         </entryLink>
                       </entryLinks>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Bolter w/ Chain bayonet" hidden="false" id="3f3c-76a5-6fe7-8a8a" sortIndex="3">
+                    <selectionEntry type="upgrade" import="true" name="Bolter w/ Chain bayonet" hidden="false" id="3f3c-76a5-6fe7-8a8a" sortIndex="5">
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
                         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -7233,13 +7350,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     </modifier>
                   </modifiers>
                   <selectionEntryGroups>
-                    <selectionEntryGroup name="1-5 may exchange their bolter for:" id="367c-1556-77bd-119e" hidden="false" flatten="true" sortIndex="10">
+                    <selectionEntryGroup name="1-5 may exchange their bolter for:" id="367c-1556-77bd-119e" hidden="false" flatten="false" sortIndex="10">
                       <entryLinks>
                         <entryLink import="true" name="Legion Heavy Weapons" hidden="false" id="5526-ecd1-ff99-764d" type="selectionEntryGroup" targetId="9f99-7e2a-4899-4066" sortIndex="2"/>
                         <entryLink import="true" name="Legion Special Weapons List" hidden="false" id="6503-a70b-d580-23d2" type="selectionEntryGroup" targetId="8e2d-acd9-be67-36f2" sortIndex="1"/>
                       </entryLinks>
                       <constraints>
-                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b8db-0c2b-3367-f906"/>
+                        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b8db-0c2b-3367-f906"/>
                       </constraints>
                       <modifiers>
                         <modifier type="set" value="1" field="b8db-0c2b-3367-f906">
@@ -7341,6 +7458,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="4a49-fe89-b315-2872" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="7c9c-5c2f-a7d5-5565" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Tartaros Chosen" hidden="false" id="a224-6817-4f91-8ecb" sortIndex="2">
@@ -7553,22 +7671,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Drakenscale" hidden="true" id="9fb9-61db-4905-5154" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="3">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="15af-28a6-b720-262a"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51b2-c6e1-40b4-a4eb"/>
-              </constraints>
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-              </costs>
-            </entryLink>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="724a-5807-f464-a554" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="3"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -7600,6 +7703,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="1b48-0181-d640-09a1" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="444e-7ecd-d81b-1705" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Cataphractii Terminator" hidden="false" id="f106-8e40-a38f-427c" sortIndex="2">
@@ -7896,6 +8000,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="083c-fd40-e0b2-9c2a" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="9397-a285-59a4-54b6" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Seeker" hidden="false" id="f9c6-e107-4e90-5504" sortIndex="2">
@@ -8180,6 +8285,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="6f8d-69ad-9541-64b4" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="82f8-86b9-b0c6-1fbb" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Tartaros Terminator" hidden="false" id="66c8-c209-2f95-c4e8" sortIndex="2">
@@ -8679,22 +8785,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Drakenscale" hidden="true" id="1cdc-4648-6415-06dc" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="3">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="065b-e8c0-9f59-120d"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71f0-5b4e-29a8-74dd"/>
-              </constraints>
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-              </costs>
-            </entryLink>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="236e-80a5-a927-078b" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="3"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -8709,6 +8800,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="2b49-57e4-2175-f6f5" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="5318-9db0-630a-9353" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="594d-fa82-13cb-a345" id="3792-fb77-5653-bc28" primary="false" name="Infantry Model Type"/>
@@ -8747,6 +8839,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="baee-914d-bd20-168b" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="6f10-268e-a29d-3d35" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Legionary" hidden="false" id="9de3-15fa-986b-500a" sortIndex="2">
@@ -9201,6 +9294,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6135-5a9b-f71a-368f" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="c405-8326-3187-4028" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="9eea-baa3-681d-b174" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -9431,6 +9525,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29f2-c5cd-8c46-974e" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="1269-9bdd-92ac-93fc" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Legion Heavy Weapons List" id="f3e8-47d6-ac92-2b66" hidden="false" collapsible="true" flatten="false" defaultSelectionEntryId="cf76-c4c7-8a9a-0beb" sortIndex="4">
@@ -9586,6 +9681,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="dc2c-561f-ec97-50df" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="b5aa-c79b-d747-f443" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Legiones Astartes]" id="9b70-4c5c-0bb2-aa66" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
@@ -9748,6 +9844,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="0ccc-b717-eb01-806f" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="5700-d124-40aa-c610" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -9873,6 +9970,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <modifier type="set" value="5" field="9893-c379-920b-8982"/>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="ef1a-edcb-8e80-ffbb" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="97d8-faab-3b68-5553" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -10069,6 +10167,17 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b8ac-03b5-4120-1b85" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84a0-f0c1-4217-c4b1" includeChildSelections="false"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="93c4-aff8-d24d-4d9a" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="7974-1ebe-7255-c229" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="938c-dfcb-24f7-6470" primary="false" name="Transport Model Sub-Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -10157,6 +10266,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <categoryLink name="Vehicle Model Type" hidden="false" id="82d8-7375-b7b8-8cb8" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
             <categoryLink name="Transport Model Sub-Type" hidden="false" id="dc1d-909f-f8c0-d191" targetId="2e6d-36f6-eeca-8e0c" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="d19e-f106-0570-7a18" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -10241,6 +10357,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <categoryLink name="Vehicle Model Type" hidden="false" id="9bf8-b583-6a9d-7a5c" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
             <categoryLink name="Transport Model Sub-Type" hidden="false" id="0665-aaca-f536-db33" targetId="2e6d-36f6-eeca-8e0c" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="553e-90db-c8b8-d570" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -10279,7 +10402,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dreadnought Drop Pod" hidden="false" id="e004-bc89-4e2f-c59d" sortIndex="50">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Dreadnought Drop Pod" hidden="false" id="9c53-7d3d-6786-8d1a">
+        <selectionEntry type="model" import="true" name="Dreadnought Drop Pod" hidden="false" id="9c53-7d3d-6786-8d1a" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc59-48cc-31c1-98fa" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5e9-fe16-6cac-3278" includeChildSelections="false"/>
@@ -10303,6 +10426,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <categoryLink name="Vehicle Model Type" hidden="false" id="7c1f-4143-7417-d139" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
             <categoryLink name="Transport Model Sub-Type" hidden="false" id="ee18-ad12-59c8-54bf" targetId="2e6d-36f6-eeca-8e0c" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="23f5-d9cf-f52f-6efd" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -10329,7 +10459,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kharybdis Assault Claw" hidden="false" id="ed0b-f07b-ed2f-b510" sortIndex="52">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Kharybdis Assault Claw" hidden="false" id="2a79-56e7-eb3f-85de">
+        <selectionEntry type="model" import="true" name="Kharybdis Assault Claw" hidden="false" id="2a79-56e7-eb3f-85de" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ad2-ba5c-f044-dd6e" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="184a-8974-60e4-c655" includeChildSelections="false"/>
@@ -10353,10 +10483,17 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <categoryLink name="Vehicle Model Type" hidden="false" id="6f3b-0de3-6302-6584" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
             <categoryLink name="Transport Model Sub-Type" hidden="false" id="38ec-6422-9328-05ff" targetId="2e6d-36f6-eeca-8e0c" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="ef59-da2a-e7e3-f5c5" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Kharybdis missile launcher" hidden="false" id="2023-49ca-0e60-7a69" type="selectionEntry" targetId="a6fd-3d58-c22e-1887">
+        <entryLink import="true" name="Kharybdis missile launcher" hidden="false" id="2023-49ca-0e60-7a69" type="selectionEntry" targetId="a6fd-3d58-c22e-1887" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="393f-fb28-cc0f-c234" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="591d-a072-878e-5362" includeChildSelections="false"/>
@@ -10383,7 +10520,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dreadclaw Drop Pod" hidden="false" id="2438-805f-7a19-3295" sortIndex="51">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Dreadclaw Drop Pod" hidden="false" id="eb28-a342-ded6-61fa">
+        <selectionEntry type="model" import="true" name="Dreadclaw Drop Pod" hidden="false" id="eb28-a342-ded6-61fa" sortIndex="1">
           <profiles>
             <profile name="Dreadclaw Drop Pod" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="df68-7b86-ffca-dd24">
               <characteristics>
@@ -10406,6 +10543,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <categoryLinks>
             <categoryLink name="Vehicle Model Type" hidden="false" id="40c0-11cb-9a5d-4212" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="db75-f829-50eb-19b9" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -10609,6 +10753,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="7015-c30f-f062-353e" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="63dc-8c1b-468d-2569" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="77b0-8e50-7e5b-bf4a" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -10833,6 +10978,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d21c-df9a-10a8-d07d" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="d00b-181e-0c96-d727" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="130c-24bd-a055-4001" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -10947,6 +11093,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <categoryLink name="Vehicle Model Type" hidden="false" id="345e-9240-852a-ba20" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
             <categoryLink name="Rapid Sub-Type" hidden="false" id="fe64-2b87-27a7-98df" targetId="a5c6-b359-cecb-e0b1" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="ff8b-907c-c294-a6ef" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -11067,6 +11220,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <categoryLink name="Vehicle Model Type" hidden="false" id="f5dd-d5f3-ddb8-b6dc" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
             <categoryLink name="Transport Model Sub-Type" hidden="false" id="ad18-7b75-fe29-4a19" targetId="2e6d-36f6-eeca-8e0c" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="df15-5b0e-3969-7df1" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -11153,6 +11313,16 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="a76d-8fa4-9b7c-fbc5" primary="false" name="Vehicle Model Type"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="4620-8399-002e-6282" type="selectionEntry" targetId="bb42-fb24-9e5c-061d" sortIndex="2">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -11212,6 +11382,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54b0-06e2-843a-75e5" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="38f7-9218-224b-9d6a" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Scimitar Sergeant" hidden="false" id="9011-92da-37e3-f605" sortIndex="1">
@@ -11424,6 +11595,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc2e-7502-38ec-95ff" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c53-a7d2-cc94-4730" includeChildSelections="false"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="87fc-377d-9b56-addd" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -11459,6 +11637,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </characteristics>
             </profile>
           </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="f6d1-82f3-a278-00ec" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -11575,6 +11760,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <categoryLinks>
             <categoryLink name="Vehicle Model Type" hidden="false" id="17bc-2d6b-9a75-4891" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="4b14-d95a-cdf2-109e" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -11740,6 +11932,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="e21f-a453-b4f4-77a7" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="61b4-4f2d-cc27-d029" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Predator" hidden="false" id="b0ba-83cb-f3bf-bf2e" sortIndex="64">
@@ -11771,6 +11964,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <categoryLinks>
             <categoryLink name="Vehicle Model Type" hidden="false" id="13fd-6d01-b8d0-9bbe" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="7096-8458-eed7-6823" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -11900,6 +12100,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="6dbc-04d5-b089-4b90" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="e821-f090-5e6d-2496" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Land Speeder" hidden="false" id="1f3c-e351-b888-61ef" sortIndex="1">
@@ -12043,6 +12244,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7712-24f8-3a17-bf22" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3ef-8dfc-3736-fd8b" includeChildSelections="false"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="88b5-9a16-49de-402b" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -12185,6 +12393,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d06-4339-9b75-9881" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2daa-dc5f-4a44-6bfb" includeChildSelections="false"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="72c1-3a99-81a2-8a56" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -12363,6 +12578,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <categoryLinks>
             <categoryLink name="Vehicle Model Type" hidden="false" id="2018-0762-1133-6bbf" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="4a00-156a-dc27-3f0c" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -12462,6 +12684,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8d90-1485-bdea-6287" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2be1-6c6c-3b78-a005" includeChildSelections="false"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="e58e-6cbb-fe47-7c62" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -12563,6 +12792,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <categoryLinks>
             <categoryLink name="Vehicle Model Type" hidden="false" id="3e8e-26dc-728f-415e" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="f867-e8d4-d28d-2715" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -12746,6 +12982,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <categoryLinks>
             <categoryLink name="Vehicle Model Type" hidden="false" id="7702-6006-de23-a87a" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="2fb4-2d28-8c33-f839" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -12822,6 +13065,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <categoryLinks>
             <categoryLink name="Vehicle Model Type" hidden="false" id="7850-985b-470b-4f18" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="34b3-9e82-75e6-4839" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -12891,6 +13141,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <categoryLinks>
             <categoryLink name="Vehicle Model Type" hidden="false" id="a188-2894-70ce-e36c" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="167e-95c2-98c1-2558" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -12966,6 +13223,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <categoryLinks>
             <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="4674-2474-8598-ed94" primary="false" name="Vehicle Model Type"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="666c-c192-73bb-494b" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -13073,6 +13337,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <categoryLinks>
             <categoryLink name="Vehicle Model Type" hidden="false" id="a0bf-f6d5-6cdd-a058" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="a129-294d-ccf3-9d9f" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -13180,6 +13451,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <categoryLink name="Vehicle Model Type" hidden="false" id="340a-4600-e452-d8ef" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
             <categoryLink name="Transport Model Sub-Type" hidden="false" id="ef1c-213c-dab0-fe2e" targetId="2e6d-36f6-eeca-8e0c" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="5c56-1196-029a-3c82" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -13257,6 +13535,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7aa6-f4f7-3f1c-e623" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="004c-a459-c853-c513" includeChildSelections="false"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="7134-51f4-b14f-f6a6" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -13405,6 +13690,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <categoryLink name="Vehicle Model Type" hidden="false" id="5519-46ae-7f97-2183" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
             <categoryLink name="Transport Model Sub-Type" hidden="false" id="12a9-5dee-a37b-90c6" targetId="2e6d-36f6-eeca-8e0c" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="7e55-a56b-ca0e-a1cd" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -13462,19 +13754,19 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Krak grenades" hidden="false" id="1345-1a90-7952-ba90" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+        <entryLink import="true" name="Krak grenades" hidden="false" id="1345-1a90-7952-ba90" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e24-2767-7070-529a" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a41c-37c4-04dd-40ae" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Frag grenades" hidden="false" id="4ce5-40fc-2306-8091" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+        <entryLink import="true" name="Frag grenades" hidden="false" id="4ce5-40fc-2306-8091" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cffb-1a50-cacd-f648" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cc6-8395-2fe8-013b" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Melta bombs" hidden="false" id="d7c0-6f78-469b-afdd" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="1">
+        <entryLink import="true" name="Melta bombs" hidden="false" id="d7c0-6f78-469b-afdd" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="4">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
@@ -13518,7 +13810,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <infoLink name="Tip of the Spear" id="155e-0d2f-1522-fbdb" hidden="false" type="rule" targetId="96e2-c6ab-8084-c1d2"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Options" id="6129-f30d-6942-4d83" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Options" id="6129-f30d-6942-4d83" hidden="false" sortIndex="1">
           <entryLinks>
             <entryLink import="true" name="Legion Officer Wargear" hidden="false" id="f468-16e5-d4d0-5d88" type="selectionEntryGroup" targetId="f955-8b22-9362-31c0" sortIndex="1">
               <modifiers>
@@ -13593,7 +13885,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Melta bombs" hidden="false" id="20c3-91c3-315c-7e76" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="1">
+        <entryLink import="true" name="Melta bombs" hidden="false" id="20c3-91c3-315c-7e76" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="4">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
@@ -13607,22 +13899,27 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </costs>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="unit" childId="302b-12a7-4445-89aa" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="ebe2-88e3-d933-65a4" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0180-70f7-2a00-8a85" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Frag grenades" hidden="false" id="2654-ba5a-479c-5909" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+        <entryLink import="true" name="Frag grenades" hidden="false" id="2654-ba5a-479c-5909" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2624-c2f0-c812-ff2b" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d6f-4c38-5ef2-edc5" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Krak grenades" hidden="false" id="4c29-9e8f-a316-ef6b" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+        <entryLink import="true" name="Krak grenades" hidden="false" id="4c29-9e8f-a316-ef6b" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a4a-0dec-254b-ec3d" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1534-5e2d-c739-4344" includeChildSelections="false"/>
@@ -13651,9 +13948,9 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Options" id="02af-aba0-5bd7-6bd2" hidden="false" sortIndex="3">
+        <selectionEntryGroup name="Options" id="02af-aba0-5bd7-6bd2" hidden="false" sortIndex="1">
           <selectionEntryGroups>
-            <selectionEntryGroup name="May exchange bolt pistol for:" id="75f6-52f0-6919-8c72" hidden="false" defaultSelectionEntryId="8248-cdf8-bd84-eeb3" sortIndex="2">
+            <selectionEntryGroup name="May exchange bolt pistol for:" id="75f6-52f0-6919-8c72" hidden="false" defaultSelectionEntryId="8248-cdf8-bd84-eeb3" sortIndex="1">
               <entryLinks>
                 <entryLink import="true" name="Legion Pistols" hidden="false" id="9146-2791-1207-66cd" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf"/>
                 <entryLink import="true" name="Bolt pistol" hidden="false" id="ae72-4575-d3cc-823b" type="selectionEntry" targetId="2942-f783-d627-33c5"/>
@@ -13663,7 +13960,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d63f-9a71-179b-22b1" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="May exchange power lash for:" id="9df3-5bdc-e080-9033" hidden="false" sortIndex="1" defaultSelectionEntryId="cea8-d31e-b534-c092">
+            <selectionEntryGroup name="May exchange power lash for:" id="9df3-5bdc-e080-9033" hidden="false" sortIndex="2" defaultSelectionEntryId="cea8-d31e-b534-c092">
               <entryLinks>
                 <entryLink import="true" name="Power lash" hidden="false" id="cea8-d31e-b534-c092" type="selectionEntry" targetId="2198-1efb-d4ef-5907"/>
                 <entryLink import="true" name="Power maul" hidden="false" id="6f62-d6ea-d786-55f2" type="selectionEntry" targetId="c4fa-659d-bf4b-bad1"/>
@@ -14457,7 +14754,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="604f-daac-a0c4-e542" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cfc-7543-f018-185c" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
@@ -14565,59 +14861,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="0a30-dcba-4755-88fd" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="15">
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>SL</comment>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-              <comment>SL+Cmd/Spec/Champ Only</comment>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Banestrike bolter" hidden="true" id="9cf0-88ca-6930-730f" type="selectionEntry" targetId="69de-4883-efd2-b876" sortIndex="4">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>SH</comment>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-              <comment>SH+Cmd/Champ Only</comment>
-            </modifier>
-          </modifiers>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Solarite Power Gauntlet" hidden="true" id="d930-e96d-982c-0646" type="selectionEntry" targetId="ddcb-01e9-18af-c8f6" sortIndex="15">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -14674,7 +14917,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </entryLink>
         <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="c9d1-2999-6494-b8a0" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="21">
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
           </costs>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -14813,6 +15056,29 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
+        </entryLink>
+        <entryLink import="true" name="Vigil Pattern Storm Shield" hidden="true" id="a105-f071-dde3-f2d4" type="selectionEntry" targetId="b672-10f1-20c8-c724" sortIndex="24">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d186-cffc-0950-f632" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -15291,6 +15557,46 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Vigil Pattern Storm Shield" hidden="true" id="54ec-d9b3-87ff-361b" type="selectionEntry" targetId="b672-10f1-20c8-c724" sortIndex="10">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="unit" childId="3139-1aa9-4b77-da26" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="unit" childId="50fb-f90a-70ec-7649" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="unit" childId="e9a1-490f-8679-fc4e" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="unit" childId="b703-f7ab-dac5-0ae4" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d186-cffc-0950-f632" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="5" field="9893-c379-920b-8982">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="unit" childId="3139-1aa9-4b77-da26" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="unit" childId="50fb-f90a-70ec-7649" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Legion Heavy Weapons" id="9f99-7e2a-4899-4066" hidden="false" sortIndex="8" collapsible="true">
@@ -15368,7 +15674,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8037-c7e7-b097-8194" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="179e-5002-6ffa-7103" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
@@ -16017,6 +16322,244 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a343-787f-a2c7-66cd" includeChildSelections="false"/>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2666-2315-4da3-8043" includeChildSelections="false"/>
       </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Prosperine Arcana" id="eafe-beb3-8d27-ec50" hidden="true" collapsible="true" sortIndex="7">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Athanaean" hidden="false" id="fc42-7d7b-e1ba-8946">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Clarity" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="7e8a-247e-9bc2-7bd0" publicationId="e54c-7040-0f35-d85d">
+              <characteristics>
+                <characteristic name="Summary" typeId="981f-bb86-6a74-9b20">This Psychic Power allows the Controlling Player to remove a Tactical Status from the Unit.</characteristic>
+                <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e">The Active Player may choose to Manifest the Clarity Psychic Power in the Effects Sub-Phase of the Start Phase.</characteristic>
+                <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86">The Focus of the Power must be a Model with the Athanaean Trait and under the Active Player&apos;s control.</characteristic>
+                <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770">The Target Unit must be a Unit under the Active Player&apos;s control, must have at least one Model within 18&quot;and with Line of Sight to the Focus, and must only include models with the Thousand Sons Trait.</characteristic>
+                <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4">If successfully Manifested, the effects of this Psychic Power are resolved immediately.</characteristic>
+                <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0">1. Once the Focus and Target Unit have been decided, the Controlling Player of the Focus must make a Manifestation Check.
+2. lf the Manifestation Check is successful, the Controlling Player may select a single Tactical Status any Model in the Target Unit has. This Tactical Status is immediately removed from every Model in the Target Unit.
+3. f the Manifestation Check fails then there is no further effect.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Emanation of Dread" typeId="7d31-7144-3b28-c850" typeName="Psychic Ranged Weapon" hidden="false" id="c129-33fb-09a4-158e" publicationId="e54c-7040-0f35-d85d">
+              <characteristics>
+                <characteristic name="R" typeId="6d86-f7c6-c184-8bf4">24</characteristic>
+                <characteristic name="FP" typeId="99a5-a4b9-8862-5092">3</characteristic>
+                <characteristic name="RS" typeId="ff4a-ab25-1be8-4545">4</characteristic>
+                <characteristic name="AP" typeId="c8d6-d2ec-1344-07e3">-</characteristic>
+                <characteristic name="D" typeId="e840-f63c-5bc4-27b3">1</characteristic>
+                <characteristic name="Special Rules" typeId="e87b-e7a3-5562-a456">Panic (1)</characteristic>
+                <characteristic name="Traits" typeId="a229-21ce-4177-c4b1">Psychic</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Panic (X)" id="41cb-2f68-868c-bc1c" hidden="false" type="rule" targetId="82a7-f471-3fda-6ca1">
+              <modifiers>
+                <modifier type="set" value="Panic (1)" field="name"/>
+              </modifiers>
+              <comment>1</comment>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Corvidae" hidden="false" id="cff7-56bc-7e47-1c7d">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Paths of Consequence" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="05e6-9cfb-4643-aef4">
+              <characteristics>
+                <characteristic name="Summary" typeId="981f-bb86-6a74-9b20">This Power is used in the Start Phase and reduces the target&apos;s Movement as well as causing it to suffer Dangerous Terrain Tests.</characteristic>
+                <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e">The Active Player may choose to Manifest the Paths of Consequence Psychic Power in the Effects Sub Phase of the Start Phase.</characteristic>
+                <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86">The Focus of the Power must be a Model with the Corvidae Trait and must be controlled by the Active Player.</characteristic>
+                <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770">The Target Unit must be a Unit under the control of the Reactive Player with at least one Model within 18 of the Focus and with Line of Sight to the Focus.</characteristic>
+                <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4">If successfully Manifested, the effects of this Psychic Curse last until the start of the Active Player&apos;s next Turn.</characteristic>
+                <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0">1. Once the Focus and Target Unit have been decided, the Controlling Player of the Focus must make a Manifestation Check.
+2. If the Manifestation Check is successful, then all Models in the Target Unit suffer a penalty of -2 to their Movement Characteristic, to a minimum of 0. Furthermore, the first time a Model in the Target Unit Moves in a given Phase, it must take a Dangerous Terrain Test.
+3. If the Manifestation Check fails then there is no further effect.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Fated Shots" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="4bcd-8d44-c215-dcae">
+              <characteristics>
+                <characteristic name="Summary" typeId="981f-bb86-6a74-9b20">This Psychic Power improves the effectiveness of Ranged Attacks made by the Unit.</characteristic>
+                <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e">The Active Player may choose to Manifest the Fated Shots Psychic Power in the Shooting Phase, at the start of Step 4 of any Shooting Attack made by a Unit that includes at least one Model with the Corvidae Trait controlled by the Active Player.</characteristic>
+                <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86">The Focus of the Power must be a Model with the Corvidae Trait that is part of the Unit making the Shooting Attack.</characteristic>
+                <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770">The Target Unit must be the Unit that the Focus is part of, and must only include models with the Thousand Sons Trait.</characteristic>
+                <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4">If successfully Manifested, the effects of this Psychic Power last until the end of the Shooting Attack being resolved.</characteristic>
+                <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0">1. Once the Focus and Target Unit have been decided, the Controlling Player of the Focus must make a Manifestation Check.
+2. If the Manifestation Check is successful, then all ranged Weapons Models in the Target Unit have (excluding Weapons with the Blast (X) Special Rule) gain the Rending (5+) Special Rule.
+3. If the Manifestation Check fails then there is no further effect.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Pavoni" hidden="false" id="ef46-38e5-0b94-41c1">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Stoneform" typeId="d59e-df4b-630f-f185" typeName="Psychic Reaction" hidden="false" id="0e87-fe08-ef7c-fa67">
+              <characteristics>
+                <characteristic name="Summary" typeId="c8a8-29f2-605b-5969">This Psychic Reaction boosts the Toughness Characteristic of the Reacting Unit.</characteristic>
+                <characteristic name="Trigger" typeId="4e6b-ebca-53df-fcf7">The Reactive Player may choose to declare a Stoneform Psychic Reaction at the start of Step 3 of a Shooting Attack made by the Active Player that targets a Unitwith at least one Model with the Pavoni Trait.</characteristic>
+                <characteristic name="Cost" typeId="f25a-9ced-eb9b-4587">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Stoneform Psychic Reaction.This cost is paid if the Willpower Check is successful. If the Willpower Check fails, the cost is not paid.</characteristic>
+                <characteristic name="Focus" typeId="0b45-591a-ee11-488e">The Focus of this Psychic Reaction must be a Model with the Pavoni Trait under the Reactive Player&apos;s control, and must be a part of the Unit targeted by the Shooting Attack that triggered this Psychic Reaction.</characteristic>
+                <characteristic name="Target" typeId="cf1d-e201-caac-3d45">The Target Unit must be the Unit that the Focus is part of, and must only include models with the Thousand Sons Trait.</characteristic>
+                <characteristic name="Duration" typeId="daae-40ac-68e2-fa78">If successfully Manifested, the effects of this Pychic Reaction last until the end of the Sub-Phase in which it was declared.</characteristic>
+                <characteristic name="Process" typeId="8d43-934e-e511-0cfd">1. Once the Focus and Target Unit have been decided, the Controlling Player of the Focus must make a Manifestation Check.
+2. If the Manifestation Check is successful, then all Models in the Unit that is the target of the Blessing gain a bonus of +2 to their Toughness Characterisic.
+3. If the Manifestation Check fails then there is no further effect</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Bloodboil" typeId="7d31-7144-3b28-c850" typeName="Psychic Ranged Weapon" hidden="false" id="19a5-f8c9-01a8-0815">
+              <characteristics>
+                <characteristic name="R" typeId="6d86-f7c6-c184-8bf4">12</characteristic>
+                <characteristic name="FP" typeId="99a5-a4b9-8862-5092">1</characteristic>
+                <characteristic name="RS" typeId="ff4a-ab25-1be8-4545">4</characteristic>
+                <characteristic name="AP" typeId="c8d6-d2ec-1344-07e3">2</characteristic>
+                <characteristic name="D" typeId="e840-f63c-5bc4-27b3">2</characteristic>
+                <characteristic name="Special Rules" typeId="e87b-e7a3-5562-a456">Poisoned (2+)</characteristic>
+                <characteristic name="Traits" typeId="a229-21ce-4177-c4b1">Psychic</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Poisoned (X)" id="fc8e-fa0a-0e27-740f" hidden="false" type="rule" targetId="076f-2c91-c58b-71b3">
+              <modifiers>
+                <modifier type="set" value="Poisoned (2+)" field="name"/>
+              </modifiers>
+              <comment>2+</comment>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Pyrae" hidden="false" id="6c08-592d-ebee-6003">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Inferno Shield" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="2d94-c111-3b1e-3939">
+              <characteristics>
+                <characteristic name="Summary" typeId="981f-bb86-6a74-9b20">This Psychic Power allows a Unit to inflict automatic hits onto a Unit that makes Melee Attacks against them.</characteristic>
+                <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e">The Active Player may choose to Manifest the Inferno Shield Psychic Power at the end of the Declare Weapons and Set Initiative Steps Step of a Combat.</characteristic>
+                <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86">The Focus of the Power must be a Model with the Pyrae Trait and under the Active Player&apos;s control, and must be part of a Unit in that Combat.</characteristic>
+                <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770">The Target Unit must be the Unit that the Focus is part of, and must only include models with the Thousand Sons Trait.</characteristic>
+                <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4">If successfully Manifested, the effects of this Psychic Power last until the Combat is resolved.</characteristic>
+                <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0">1. Once the Controlling the Focus and Target Unit have been decided, Player of the Focus must make a Manifestation Check.
+2. If this Psychic Power is successfully Manifested, then all Models in the Target Unit gain the Inferno Shield Special Rule.
+3. If the Manifestation Check fails then there is no further effect.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Burning Grasp" typeId="f553-2eab-e909-ee56" typeName="Psychic Melee Weapon" hidden="false" id="edb9-a11c-a6f4-a6c6">
+              <characteristics>
+                <characteristic name="IM" typeId="079b-2c1c-979b-1fe0">I</characteristic>
+                <characteristic name="AM" typeId="c6d4-d31f-a563-78f8">1</characteristic>
+                <characteristic name="SM" typeId="562d-ec0b-83ee-541c">8</characteristic>
+                <characteristic name="AP" typeId="46ac-d3d4-36f0-6a1e">3</characteristic>
+                <characteristic name="D" typeId="cca6-168c-5576-e0ee">2</characteristic>
+                <characteristic name="Special Rules" typeId="0da4-845e-b008-2d17">Critical Hit (6+), Breaching (5+), Armourbane</characteristic>
+                <characteristic name="Traits" typeId="dbf5-ab06-5eb4-7d00">Psychic</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Critical Hit (X)" id="5e2b-1d84-6940-26ba" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
+              <modifiers>
+                <modifier type="set" value="Critical Hit (6+)" field="name"/>
+              </modifiers>
+              <comment>6+</comment>
+            </infoLink>
+            <infoLink name="Armourbane" id="9887-507f-0f48-9bf8" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+            <infoLink name="Breaching (X)" id="b490-ff2b-c47a-d5c9" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+              <modifiers>
+                <modifier type="set" value="Breaching (5+)" field="name"/>
+              </modifiers>
+              <comment>5+</comment>
+            </infoLink>
+          </infoLinks>
+          <rules>
+            <rule name="Inferno Shield" id="f48e-1cf8-7995-ec35" hidden="false">
+              <description>At the end of each Initiative Step, each Unit that scored any Hits against a Unit that contains any Models with this Special Rule suffers D6 Hits with a Strength of 4, an AP of &apos;-&apos; and a Damage of 1, allocated by that Unit&apos;s Controlling Player.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Raptora" hidden="false" id="ba0e-77b7-36be-8a4e">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Armourbane" id="9af6-4f57-b54b-53f3" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+            <infoLink name="Shrouded (X)" id="9dc2-ca19-8045-f911" hidden="false" type="rule" targetId="c7e7-3bad-3de0-d6cc">
+              <modifiers>
+                <modifier type="set" value="Shrouded (4+)" field="name"/>
+              </modifiers>
+              <comment>4+</comment>
+            </infoLink>
+            <infoLink name="Force (X)" id="6d0f-3f07-c6f9-a62d" hidden="false" type="rule" targetId="25cd-60d0-a0a4-6b18">
+              <modifiers>
+                <modifier type="set" value="Force (D)" field="name"/>
+              </modifiers>
+              <comment>D</comment>
+            </infoLink>
+          </infoLinks>
+          <profiles>
+            <profile name="Kine Shield" typeId="d59e-df4b-630f-f185" typeName="Psychic Reaction" hidden="false" id="b999-2724-8a1e-421a">
+              <characteristics>
+                <characteristic name="Summary" typeId="c8a8-29f2-605b-5969">This Psychic Reaction allows a Unit to gain a Shrouded Damage Mitigation Roll.</characteristic>
+                <characteristic name="Trigger" typeId="4e6b-ebca-53df-fcf7">The Reactive Player may choose to declare a Kine Shield Psychic Reaction at the start of Step 3 of a Shooting Attack made by the Active Player that targets a Unit that includes at least one Model with the Raptora Trait.</characteristic>
+                <characteristic name="Cost" typeId="f25a-9ced-eb9b-4587">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Kine Shield Psychic Reaction. This cost is paid if the Willpower Check is successful. If the Willpower Check fails, the cost is not paid.</characteristic>
+                <characteristic name="Focus" typeId="0b45-591a-ee11-488e">The Focus of this Psychic Reaction must be a Model with the Raptora Trait under the Reactive Player&apos;s control, and must be a part of the Unit targeted by the Shooting Attack that triggered this Psychic Reaction.</characteristic>
+                <characteristic name="Target" typeId="cf1d-e201-caac-3d45">The Target Unit must be the Unit that the Focus is part of, that is the target of the Shooting Attack that triggered the Reaction and must include only Models with the Thousand Sons Trait.</characteristic>
+                <characteristic name="Duration" typeId="daae-40ac-68e2-fa78">lf successfully Manifested the effects of this Psychic Reaction last until the end of the Sub-Phase in which it was declared.</characteristic>
+                <characteristic name="Process" typeId="8d43-934e-e511-0cfd">1. Once the Focus and Target Unit have been decided, the Controlling Player of the Focus must make a Manifestation Check.
+2. If the Manifestation Check is successful, then all Models in the Target Unit gain a 4+ Shrouded Damage Mitigation Roll against any wounds inflicted.
+3. If the Manifestation Check fails then there is no further effect.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Crushing Force" typeId="7d31-7144-3b28-c850" typeName="Psychic Ranged Weapon" hidden="false" id="6839-ed41-6a24-3f0d">
+              <characteristics>
+                <characteristic name="R" typeId="6d86-f7c6-c184-8bf4">24</characteristic>
+                <characteristic name="FP" typeId="99a5-a4b9-8862-5092">3</characteristic>
+                <characteristic name="RS" typeId="ff4a-ab25-1be8-4545">4</characteristic>
+                <characteristic name="AP" typeId="c8d6-d2ec-1344-07e3">-</characteristic>
+                <characteristic name="D" typeId="e840-f63c-5bc4-27b3">1</characteristic>
+                <characteristic name="Special Rules" typeId="e87b-e7a3-5562-a456">Armourbane, Force (D)</characteristic>
+                <characteristic name="Traits" typeId="a229-21ce-4177-c4b1">Psychic</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6aa3-a02d-239a-3975"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <infoLinks>

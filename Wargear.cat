@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="fcc7-4319-bb04-2c25" name="Wargear" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="8" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="fcc7-4319-bb04-2c25" name="Wargear" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="10" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Strato-vox" hidden="false" id="e3dd-d327-3f0b-265f">
       <profiles>
@@ -466,7 +466,7 @@ A Model with an ionic flare shield has a 5+ Invulnerable Save against Shooting A
         </profile>
       </profiles>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9b70-28b7-db50-8336" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9b70-28b7-db50-8336" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61a8-09af-e753-34fd" includeChildSelections="false"/>
       </constraints>
       <infoLinks>
@@ -488,9 +488,346 @@ A Model with an ionic flare shield has a 5+ Invulnerable Save against Shooting A
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sonic lance" hidden="false" id="5767-7e75-a9ce-d25b" publicationId="e54c-7040-0f35-d85d" page="125">
+      <profiles>
+        <profile name="Sonic lance" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="4039-7b75-fcef-f699" publicationId="e54c-7040-0f35-d85d" page="125">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">2</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">5</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Breaching (6+)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Sonic, Assault</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Template" id="002a-854c-7e47-a760" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a"/>
+        <infoLink name="Breaching (X)" id="6685-0cd5-37f0-5b54" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sonic shriekers" hidden="false" id="f7a1-d5a3-c294-7ebd" publicationId="e54c-7040-0f35-d85d" page="125">
+      <profiles>
+        <profile name="Sonic shriekers" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="b32f-d02f-ffad-3381" publicationId="e54c-7040-0f35-d85d" page="125">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c"/>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">When a Unit that includes any Models with sonic shriekers makes a Charge Move, the Target Unit of that Charge cannot be selected to make Reactions until the Charge Procedure has been completed.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Trophies of Judgement" hidden="false" id="e48f-c377-59c5-35a7">
+      <profiles>
+        <profile name="Trophies of Judgement" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="84db-d6db-4cfb-0982">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">A Model with Trophies of Judgement has the Fear (1) Special Rule</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Fear (X)" id="8fb3-e3d4-9c24-c0fe" hidden="false" type="rule" targetId="0ebc-0c92-2209-6393">
+          <modifiers>
+            <modifier type="set" value="Fear (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Burning Lore" hidden="false" id="1ca4-3804-949f-8ddd">
+      <modifiers>
+        <modifier type="add" value="9254-b1e9-98b2-6101" field="category" scope="parent"/>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Anathemata" hidden="false" id="4c1d-8511-6390-b414" type="selectionEntry" targetId="091a-56c9-7eba-9fa7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6603-e7c8-1b40-373f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4321-0055-f899-ffa6" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8c08-f0f8-ca7e-24b4" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f2d2-cfc0-e663-4261" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Burning Lore" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="88a3-3c18-838e-d7b0">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">&quot;Word Bearers Models may gain the Psyker Trait and a specific Psychic Discipline.&quot;</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">Any Model with the High Command Battlefield Role and Word Bearers Trait may be given the Psyker Trait and the Anathemata Psychic Discipline.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vigil Pattern Storm Shield" hidden="false" id="b672-10f1-20c8-c724">
+      <modifiers>
+        <modifier type="add" value="1e7d-9066-28d2-97a0" field="category" scope="parent"/>
+        <modifier type="add" value="26c6-e05c-0f72-7852" field="category" scope="parent"/>
+      </modifiers>
+      <profiles>
+        <profile name="Vigil Pattern Storm Shield" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="a2f8-eb80-1ef1-6e5e">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">A Model with a Vigil pattern storm shield has a 4+ invulnerable Save. In addition, it gains the Shield Trait and teh Heavy Sub-Type.</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Armatus Necrotechnika" hidden="false" id="bb42-fb24-9e5c-061d">
+      <profiles>
+        <profile name="Armatus Necrotechnika" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="7ad2-cbc3-0b7a-5842">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">&quot;Vehicles may decrease the Target Number of Repair Tests if Models were Removed as Casualties from nearby Units.&quot;</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">A Model with Armatus Necrotechnika gains the Auto-Repair (5+) Special Rule. Additionally, if any Model were Removed as Casualties from a Unit that has any Model within 6&quot; of a Model with Armatus Necrotechnika during the same Turn as a Repair Role is made for that Model, the Controlling Player can add 1 to the result of the Repair Roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Auto-Repair (X)" id="2311-30b6-aec8-b33d" hidden="false" type="rule" targetId="3973-ed50-1482-ff4a">
+          <modifiers>
+            <modifier type="set" value="Auto-Repair (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="aa5a-c9fd-1eb1-7a45" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="736e-3967-e72b-e3ac" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2e7-9667-5283-4a05"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0f42-d3af-e3b7-99e4"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Argyrum pattern boarding shield" hidden="false" id="08d0-c612-7007-103d">
+      <profiles>
+        <profile name="Argyrum pattern boarding shield" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="8fe1-9ce0-eb3c-16ae" publicationId="b905-0414-1057-bb34" page="245">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">This Wargear provides an enhanced save against attacks made in close combat</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">A model with a Argyrum pattern boarding shiled has a 5+ Invulnerable Save, increasing to a 4+ Invulnerable Save against Wounds inflicted by Melee Weapons. In addition, it gains the Shield Trait and the Heavy Sub-Type.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="add" value="1e7d-9066-28d2-97a0" field="category" scope="parent"/>
+        <modifier type="add" value="26c6-e05c-0f72-7852" field="category" scope="parent"/>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Special Rules" id="a167-1d9f-99b4-830c" targetId="106b-693b-99f2-00c3" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Traits" id="f337-6ccb-bbe3-657c" importRootEntries="false" targetId="df17-7a05-0826-6e22"/>
+    <catalogueLink type="catalogue" name="Psychic" id="50ce-dc5a-06c4-bd38" targetId="1b2d-2038-39a7-f387"/>
   </catalogueLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Legion Specific Upgrade" id="ef74-faa7-0d36-762b" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Drakenscale" hidden="true" id="42c5-b7c0-0038-df52" type="selectionEntry" targetId="b021-e506-1ecd-b3c5">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e8da-a1e1-5b1e-20e7"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d1f-06ad-28bf-8eec"/>
+          </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Trophies of Judgement" hidden="true" id="012a-bf6c-66e6-06e0" type="selectionEntry" targetId="e48f-c377-59c5-35a7">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="486f-b32a-ac87-73dd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3662-93b8-118c-7452"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1236-4161-b63d-f08d"/>
+          </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Burning Lore" hidden="true" id="03b0-db9e-1abd-57f9" type="selectionEntry" targetId="1ca4-3804-949f-8ddd">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="40"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="4935-1832-63f7-91aa" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d9a6-9b5f-b18a-4d63" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Venom Sphere" hidden="true" id="3667-5bd9-3d05-30fc" type="selectionEntry" targetId="81e7-7cd6-752a-09a5">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="8813-5298-c368-ee16" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Cyber-hawk" hidden="true" id="fe42-7662-a4aa-6f40" type="selectionEntry" targetId="b596-2b99-fbf4-d536">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f7b4-2531-0962-1379" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Argyrum pattern boarding shield" hidden="true" id="b70c-1065-bab7-fa87" type="selectionEntry" targetId="08d0-c612-7007-103d">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="656a-07b6-d4fd-57af" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Surgical Augments" id="608c-d466-92d6-91ea" hidden="true">
+          <entryLinks>
+            <entryLink import="true" name="Sonic shriekers" hidden="false" id="9802-e612-b8dc-f38f" type="selectionEntry" targetId="f7a1-d5a3-c294-7ebd" sortIndex="1">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5583-57c3-167b-0697" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Sonic lance" hidden="false" id="2ba6-8324-13d5-86dd" type="selectionEntry" targetId="5767-7e75-a9ce-d25b" sortIndex="2">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e85-2098-dc70-eb1a" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7115-cf38-eb8f-6afd" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a22-d01f-ab5c-ec07" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
