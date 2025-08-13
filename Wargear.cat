@@ -551,9 +551,10 @@ A Model with an ionic flare shield has a 5+ Invulnerable Save against Shooting A
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="40"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
       <constraints>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8c08-f0f8-ca7e-24b4" includeChildSelections="false"/>
@@ -679,6 +680,29 @@ A Model with an ionic flare shield has a 5+ Invulnerable Save against Shooting A
               </conditionGroups>
             </modifier>
           </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Cyber-hawk" hidden="true" id="fe42-7662-a4aa-6f40" type="selectionEntry" targetId="b596-2b99-fbf4-d536">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f7b4-2531-0962-1379" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+          </costs>
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
