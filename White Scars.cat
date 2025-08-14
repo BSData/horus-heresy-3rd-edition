@@ -648,9 +648,9 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Golden Keshing" hidden="false" id="fa6f-2652-34c9-2ea2" sortIndex="5">
+    <selectionEntry type="unit" import="true" name="Golden Keshig" hidden="false" id="fa6f-2652-34c9-2ea2" sortIndex="5">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Keshing Rider" hidden="false" id="3c80-c6ab-8fbb-79f1" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Keshig Rider" hidden="false" id="3c80-c6ab-8fbb-79f1" sortIndex="2">
           <profiles>
             <profile name="Keshing Rider" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="919c-d310-11d1-e872" publicationId="b905-0414-1057-bb34">
               <characteristics>
@@ -693,23 +693,43 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May have their Power Sword exchanged for:" id="dd7c-b285-b54d-533c" hidden="false" sortIndex="2" defaultSelectionEntryId="16c1-643e-bea3-d706">
+            <selectionEntryGroup name="May have their Power Sword exchanged for:" id="f036-ea9b-0df5-1fb0" hidden="false" defaultSelectionEntryId="44df-7add-7e5c-4f65" collapsible="true" sortIndex="2">
               <entryLinks>
-                <entryLink import="true" name="Power sword" hidden="false" id="16c1-643e-bea3-d706" type="selectionEntry" targetId="59a9-57c1-fff9-ca75">
+                <entryLink import="true" name="Power sword" hidden="false" id="8962-7ea7-faac-0527" type="selectionEntry" targetId="59a9-57c1-fff9-ca75" sortIndex="1">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Power axe" hidden="false" id="c709-96b3-5c55-ec55" type="selectionEntry" targetId="4861-b77a-620c-f0d6">
+                <entryLink import="true" name="Power axe" hidden="false" id="6c6c-7910-01ec-68e2" type="selectionEntry" targetId="4861-b77a-620c-f0d6" sortIndex="2">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Thunder hammer" hidden="false" id="8dae-1cd8-10bf-30ba" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="6">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Power lance" hidden="false" id="b1ab-2c91-a812-e466" type="selectionEntry" targetId="f56f-c410-b47c-58d9" sortIndex="3"/>
+                <entryLink import="true" name="Power maul" hidden="false" id="51c5-095f-5122-1bad" type="selectionEntry" targetId="c4fa-659d-bf4b-bad1" sortIndex="4"/>
+                <entryLink import="true" name="Charnabal sabre" hidden="false" id="d7dc-5ab8-2c50-a587" type="selectionEntry" targetId="e85f-734a-c587-e88b" sortIndex="5"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7828-5bdc-a97f-67ce" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27d7-7589-1b9a-cc35" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Additional Wargear" id="4dd9-c5e1-fb23-7ab8" hidden="false" sortIndex="5" collapsible="true">
+              <entryLinks>
+                <entryLink import="true" name="Vexilla" hidden="false" id="915c-7a09-7ce4-8883" type="selectionEntry" targetId="dfcd-0669-ad43-28aa">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="fa6f-2652-34c9-2ea2" shared="true" id="ee45-0ad5-087a-3d63" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
                 </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7873-9900-b1bd-c72c" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22e7-980f-ba88-e01f" includeChildSelections="false"/>
-              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
@@ -726,7 +746,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="80c7-0bef-4b9e-a9d6" primary="false" name="Antigrav Model Sub-Type"/>
           </categoryLinks>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Keshing Champion" hidden="false" id="6b0c-85a5-88ab-dc44" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Keshig Champion" hidden="false" id="6b0c-85a5-88ab-dc44" sortIndex="1">
           <profiles>
             <profile name="Keshing Champion" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="7f55-3404-9203-6454" publicationId="b905-0414-1057-bb34">
               <characteristics>
@@ -774,23 +794,26 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May have their Power Sword exchanged for:" id="43b5-60ae-ca09-6e89" hidden="false" defaultSelectionEntryId="44df-7add-7e5c-4f65" sortIndex="2">
+            <selectionEntryGroup name="May have their Power Sword exchanged for:" id="43b5-60ae-ca09-6e89" hidden="false" defaultSelectionEntryId="44df-7add-7e5c-4f65" sortIndex="2" collapsible="true">
               <entryLinks>
-                <entryLink import="true" name="Power sword" hidden="false" id="44df-7add-7e5c-4f65" type="selectionEntry" targetId="59a9-57c1-fff9-ca75">
+                <entryLink import="true" name="Power sword" hidden="false" id="44df-7add-7e5c-4f65" type="selectionEntry" targetId="59a9-57c1-fff9-ca75" sortIndex="1">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Power axe" hidden="false" id="e726-3257-3c73-d775" type="selectionEntry" targetId="4861-b77a-620c-f0d6">
+                <entryLink import="true" name="Power axe" hidden="false" id="e726-3257-3c73-d775" type="selectionEntry" targetId="4861-b77a-620c-f0d6" sortIndex="2">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Thunder hammer" hidden="false" id="b4ca-b2c1-ee6a-a76f" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d">
+                <entryLink import="true" name="Thunder hammer" hidden="false" id="b4ca-b2c1-ee6a-a76f" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="6">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
                 </entryLink>
+                <entryLink import="true" name="Power lance" hidden="false" id="89c6-75ff-e011-badd" type="selectionEntry" targetId="f56f-c410-b47c-58d9" sortIndex="3"/>
+                <entryLink import="true" name="Power maul" hidden="false" id="0543-c2c0-de91-4419" type="selectionEntry" targetId="c4fa-659d-bf4b-bad1" sortIndex="4"/>
+                <entryLink import="true" name="Charnabal sabre" hidden="false" id="2eb6-816c-0010-1c26" type="selectionEntry" targetId="e85f-734a-c587-e88b" sortIndex="5"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be97-5e10-3345-4e1d" includeChildSelections="false"/>
