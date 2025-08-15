@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="25" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="26" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -519,6 +519,16 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="6" field="253c-d694-4695-c89e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="b824-c0ad-804e-0026" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="4" field="f5cc-79a3-d302-cc1d">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="73c6-526b-63cf-a6a9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </profile>
           </profiles>
@@ -535,19 +545,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Jump Pack" hidden="false" id="302b-12a7-4445-89aa" sortIndex="2">
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
-            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3d9-b00b-4a4a-5739" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="add" value="294e-d64c-39dc-f687" field="category"/>
-          </modifiers>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" id="d6e1-87c8-3d1f-45a4" hidden="false" sortIndex="6">
@@ -559,6 +556,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c632-d3e7-c645-4df0" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="da17-ab73-7d33-c76f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink import="true" name="Pair of Raven&apos;s Talons" hidden="true" id="5652-55c9-c007-9c0f" type="selectionEntry" targetId="ab57-e7ca-3fc7-b256" sortIndex="2">
               <modifiers>
@@ -654,6 +658,23 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f466-92e3-e175-8d54"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Terranic greatsword" hidden="true" id="9037-1e61-a87d-afef" type="selectionEntry" targetId="f1aa-3d18-caac-a960">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ed10-e59a-a7fe-88ef"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="1" field="ed10-e59a-a7fe-88ef">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="b824-c0ad-804e-0026" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="b824-c0ad-804e-0026" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4b81-0ea1-5c3e-737f" includeChildSelections="false"/>
@@ -702,6 +723,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   </entryLinks>
                 </selectionEntry>
               </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="da17-ab73-7d33-c76f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
             <selectionEntryGroup name="May exchange bolt pistol for:" id="603b-4824-ba0a-2aea" hidden="false" collapsible="true">
               <selectionEntries>
@@ -765,6 +793,31 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="681e-edc8-6e07-e480" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="da17-ab73-7d33-c76f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Heavy Weapons" id="c9f5-b1a3-b8c4-cee9" hidden="true">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="da17-ab73-7d33-c76f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>Imperial Fist Castellan options</comment>
+              <entryLinks>
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="dd41-6429-c170-3b2f" type="selectionEntry" targetId="bc40-b14a-978e-0232"/>
+                <entryLink import="true" name="Autocannon" hidden="false" id="dd0f-2e0d-6c37-a242" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93"/>
+                <entryLink import="true" name="Iliastus Assault Cannon" hidden="false" id="e9bf-8128-9423-b67c" type="selectionEntry" targetId="f38b-8af1-17b8-30fe"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a63-6b06-fb5a-9e1b"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <modifiers>
@@ -807,6 +860,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </constraints>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="da17-ab73-7d33-c76f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -821,6 +881,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
                     <condition type="equalTo" value="1" field="selections" scope="unit" childId="ebe2-88e3-d933-65a4" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="da17-ab73-7d33-c76f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -844,6 +905,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
                     <condition type="equalTo" value="1" field="selections" scope="unit" childId="ebe2-88e3-d933-65a4" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="da17-ab73-7d33-c76f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -857,6 +919,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="febc-3bad-e6e0-b7f0" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="da17-ab73-7d33-c76f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Frag grenades" hidden="false" id="a24f-980a-79e3-d168" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
           <constraints>
@@ -877,6 +946,15 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </entryLink>
         <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="c143-d02b-b70a-445a" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="7"/>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="e4f9-dc27-a48f-ede6" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Orders of the Hekatonystika" hidden="true" id="fa4c-0a67-8154-9632" type="selectionEntryGroup" targetId="cde4-adad-2cca-0f9f">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b824-c0ad-804e-0026" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="0b5d-d2e7-1d99-e361" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -4639,7 +4717,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Melta bombs" hidden="false" id="08ee-7921-18f9-57fd" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="2">
+        <entryLink import="true" name="Melta bombs" hidden="false" id="08ee-7921-18f9-57fd" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="5">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
@@ -4664,7 +4742,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="72cd-4a42-726e-3eb1" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="24c6-6a2f-9782-7a06" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="4">
+        <entryLink import="true" name="Drakenscale" hidden="true" id="24c6-6a2f-9782-7a06" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="3">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -4717,7 +4795,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </infoLink>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Optae" hidden="false" id="6f56-499d-5e99-ac34">
+        <selectionEntry type="model" import="true" name="Optae" hidden="false" id="6f56-499d-5e99-ac34" sortIndex="1">
           <profiles>
             <profile name="Optae" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="ee93-1662-c9db-ffa5">
               <characteristics>
@@ -4758,6 +4836,11 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <condition type="equalTo" value="1" field="selections" scope="unit" childId="7cf6-a10b-c94e-0559" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="6" field="253c-d694-4695-c89e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2a84-8986-b83f-6ba8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </profile>
           </profiles>
@@ -4768,7 +4851,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Options" id="2ae0-df8c-2afb-3d84" hidden="false" sortIndex="3">
+        <selectionEntryGroup name="Options" id="2ae0-df8c-2afb-3d84" hidden="false" sortIndex="4">
           <entryLinks>
             <entryLink import="true" name="Pair of lightning claws" hidden="false" id="699a-6716-d37b-9fe1" type="selectionEntry" targetId="6754-24dd-5be0-26ff" sortIndex="1">
               <costs>
@@ -4958,7 +5041,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Jump Pack" id="57ce-8dd6-ab9e-8ea7" hidden="false" flatten="true" sortIndex="1">
+        <selectionEntryGroup name="Jump Pack" id="57ce-8dd6-ab9e-8ea7" hidden="false" flatten="true" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Corvid Pattern Jump Pack" hidden="true" id="f62d-55f3-bce1-b923" type="selectionEntry" targetId="3f94-3ed7-02ee-0c1b" sortIndex="2">
               <modifiers>
@@ -5010,7 +5093,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Centurion in Terminator Armour" hidden="false" id="f94b-2b62-48ed-4679">
+        <selectionEntry type="model" import="true" name="Centurion in Terminator Armour" hidden="false" id="f94b-2b62-48ed-4679" sortIndex="1">
           <profiles>
             <profile name="Centurion in Terminator Armour" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="8ed4-1b4d-61e0-1380">
               <characteristics>
@@ -5044,6 +5127,16 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <modifier type="set" value="5+" field="a951-a772-7ce0-0b64">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="unit" childId="d4a4-a3f7-f634-4632" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="6" field="253c-d694-4695-c89e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="b824-c0ad-804e-0026" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5" field="f5cc-79a3-d302-cc1d">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="73c6-526b-63cf-a6a9" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5080,9 +5173,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </modifiers>
         </infoLink>
         <infoLink name="Implacable Advance" id="ae43-df8e-4cf4-02e8" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
+        <infoLink name="Skill Unmatched" id="ff26-2003-1bd3-c99f" hidden="true" type="rule" targetId="5146-8045-2596-06f3">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="eb48-9812-af4c-6912" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Terminator Armour" id="babb-6a3c-da26-f5d3" hidden="false" sortIndex="1">
+        <selectionEntryGroup name="Terminator Armour" id="babb-6a3c-da26-f5d3" hidden="false" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Cataphractii" hidden="false" id="2724-c83c-4226-523b">
               <modifiers>
@@ -5095,9 +5197,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
                 <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
               </costs>
-              <modifiers>
-                <modifier type="add" value="86d7-7e47-a0d7-6041" field="category"/>
-              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -5105,12 +5204,29 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6faf-741b-901c-b3bb" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Options" id="32df-0b1c-8590-a832" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Options" id="32df-0b1c-8590-a832" hidden="false" sortIndex="3">
           <selectionEntryGroups>
             <selectionEntryGroup name="May exchange power weapon for:" id="cd39-9dca-726a-f330" hidden="false">
               <entryLinks>
                 <entryLink import="true" name="Legion Terminator Melee Weapons" hidden="false" id="e493-cec5-db91-30a6" type="selectionEntryGroup" targetId="0523-46e6-6df1-a4c0" sortIndex="2"/>
                 <entryLink import="true" name="Power Weapon" hidden="false" id="9a33-3148-1a2c-0d76" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" sortIndex="1" collapsible="true"/>
+                <entryLink import="true" name="Terranic greatsword" hidden="true" id="cac4-a42c-6661-7f62" type="selectionEntry" targetId="f1aa-3d18-caac-a960" sortIndex="3">
+                  <modifiers>
+                    <modifier type="set" value="1" field="698c-aa79-78a6-bda2">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="b824-c0ad-804e-0026" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="b824-c0ad-804e-0026" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="698c-aa79-78a6-bda2"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="12a7-2136-d1df-d59a" includeChildSelections="false"/>
@@ -5155,15 +5271,38 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b153-0b23-c605-924b"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Phoenix power spear" hidden="true" id="3015-dd0d-c5b3-6780" type="selectionEntry" targetId="41b7-f368-f337-d940" sortIndex="3">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="eb48-9812-af4c-6912" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="e0d0-3d13-0c71-14f9">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="eb48-9812-af4c-6912" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e0d0-3d13-0c71-14f9"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5021-b7ce-a97f-4f04"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9ef8-f0f4-9149-ea74" includeChildSelections="false"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="1" field="9ef8-f0f4-9149-ea74">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="unit" childId="6754-24dd-5be0-26ff" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="6754-24dd-5be0-26ff" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="eb48-9812-af4c-6912" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
@@ -5187,7 +5326,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="7906-cbaa-cc6a-a203" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="cc14-f17f-eed3-d384" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="3">
+        <entryLink import="true" name="Drakenscale" hidden="true" id="cc14-f17f-eed3-d384" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="4">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -5204,6 +5343,15 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </costs>
         </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="5b89-0eec-1218-2a42" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Orders of the Hekatonystika" hidden="true" id="51d3-9cb1-5e8e-9421" type="selectionEntryGroup" targetId="cde4-adad-2cca-0f9f">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="b824-c0ad-804e-0026" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Damocles Command Rhino" hidden="false" id="f214-aeb9-0dd6-9071" sortIndex="7">
@@ -14564,7 +14712,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Javelin Squadron" hidden="false" id="5e2b-dc62-44d4-247a" type="selectionEntry" targetId="50f3-fca2-49ab-6de4" sortIndex="62">
+    <entryLink import="true" name="Javelin Speeder Squadron" hidden="false" id="5e2b-dc62-44d4-247a" type="selectionEntry" targetId="50f3-fca2-49ab-6de4" sortIndex="62">
       <categoryLinks>
         <categoryLink targetId="cf96-8891-3f9a-8921" id="d9f3-1076-2c5a-01ad" primary="true" name="Fast Attack"/>
       </categoryLinks>
@@ -16011,14 +16159,6 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
               </conditions>
             </modifier>
           </modifiers>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Not Yet Implemented: Model gains A +1 WS +1 and may exchange power weapon for Frost sword or axe. Frost claw for 5pts." hidden="false" id="b761-e749-c8c4-7600">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="10ec-facb-e7e8-1f78"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff8d-86c6-24e1-5464"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Chain-bonded" hidden="true" id="bd04-aeac-9dd3-d77a">
           <rules>
@@ -16105,22 +16245,21 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
             <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="0a35-fce3-188c-b3aa" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f613-76c6-e58e-f286" shared="true" includeChildSelections="false"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5dd5-d00c-b150-34b9" shared="true" includeChildSelections="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f613-76c6-e58e-f286" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fe8-9bf9-3081-b789"/>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4e71-0ea3-5d82-156b" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Not Yet Implemented: WS +1, Bolter exchanged for Terranic Greatsword, Gains Orders of the Hekatonystika." hidden="false" id="6e21-400e-e8cc-e3e5">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="553b-fafa-1f04-27b5"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4e3-205b-51a8-fd58"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Revenants" hidden="true" id="d5af-128d-2051-644d">
           <comment>Blood Angels</comment>
@@ -16155,14 +16294,6 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
               </conditions>
             </modifier>
           </modifiers>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Not Yet Implemented: Cannot select any centurion options. Must exchange bolter for Heavy bolter, autocannon, Iliastus assault cannon." hidden="false" id="9517-b0ea-a7ad-959a">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b06-8748-0e75-1fd5"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="809e-c586-3e9c-33de"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
           <entryLinks>
             <entryLink import="true" name="Augury scanner" hidden="false" id="a706-9f88-a48e-c0a7" type="selectionEntry" targetId="fede-99f5-4c76-4659">
               <constraints>
@@ -16250,17 +16381,10 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a22-d01f-ab5c-ec07" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5dd5-d00c-b150-34b9" shared="true" includeChildSelections="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="unit" childId="d4a4-a3f7-f634-4632" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Not Yet Implemented: Tartaros only. Replace combi-bolter and power weapon with Phoenix power spear. Gains Skill unmatched rule." hidden="false" id="feec-6740-2800-2eb0">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb02-cea7-9dc0-84ec"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cbf9-1bea-e156-8a1f"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Unnatural Resilience" hidden="true" id="73c6-526b-63cf-a6a9">
           <constraints>
@@ -16274,10 +16398,20 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
               </conditions>
               <conditionGroups>
                 <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f613-76c6-e58e-f286" shared="true" includeChildSelections="false"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5dd5-d00c-b150-34b9" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5dd5-d00c-b150-34b9" shared="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="2724-c83c-4226-523b" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f613-76c6-e58e-f286" shared="true" includeChildSelections="false"/>
+                        <condition type="equalTo" value="0" field="selections" scope="unit" childId="ebe2-88e3-d933-65a4" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -16289,14 +16423,6 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
               </modifiers>
             </infoLink>
           </infoLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Not Yet Implemented: +1 Wound" hidden="false" id="c7e8-81b9-93c0-8d35">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8563-7c46-255f-2669"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23a4-782c-47fb-f04d"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
           <comment>Death Guard</comment>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Telekine Shift" hidden="true" id="3176-6983-2172-fc33">
