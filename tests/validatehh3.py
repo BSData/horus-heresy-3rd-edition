@@ -189,7 +189,7 @@ class GameTests(unittest.TestCase):
                 self.assertIsNotNone(profile_node, f"Profile should be set on {model_node}")
                 profile_dict = profile_node.get_profile_dict()
                 unit_type_text = profile_dict.get("Type")
-                self.assertIsNotNone(unit_type_text, f"'Type' attribute should be set on: {model_node}")
+                self.assertIsNotNone(unit_type_text, f"'Type' attribute should be set on {profile_node}")
                 type_and_subtypes = read_type_and_subtypes(unit_type_text)
                 raw_model = RawModel(None, model_node.name, None, None, None)
                 raw_model.type_and_subtypes = type_and_subtypes
