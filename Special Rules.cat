@@ -584,6 +584,19 @@ When the Model with this Special Rule and the Vehicle Type moves through an enem
     <rule name="Duty Before Death" id="e20b-fd1b-6229-eac2" hidden="false">
       <description>Models in a Unit selected to fill a Prime Force Organisation Slot with this Prime Advantage gain the Feel No Pain (6+) Special Rule.</description>
     </rule>
+    <rule name="Skill Unmatched" id="5146-8045-2596-06f3" hidden="false" publicationId="e54c-7040-0f35-d85d" page="137">
+      <comment>(Emperor&apos;s Children)</comment>
+      <description>&quot;When Locked in Combat, this Unit may select an additional Special Rule to apply until the end of the Phase.&quot;
+
+
+At the End of the Charge Sub-Phase, if a Unit that includes any Models with this Special Rule is Locked in Combat with any enemy Units, this Unit&apos;s Controlling Player can select one of the following effects:
+
+
+• The Perfect Strike - If this effect is selected, until the end of this Phase, the Weapon Skill Characteristic of each Model in this Unit with this Special Rule is considered to be one point higher than normal when determining the score that Model needs to Hit its opponent in the Strike Step of the Challenge Sub-Phase or the Make Hit Tests Step of the Resolving an Initiative Step Step (this does not modify the Weapon Skill Characteristic of each Model in this Unit for the purposes of Hit Tests made for opposing Models).
+
+
+• The Perfect Guard - If this effect is selected, until the end of this Phase, the Weapon Skill Characteristic of each Model in this Unit with this Special Rule is considered to be one point higher than normal when determining the score an opposing Model needs to Hit this Model in the Strike Step of the Challenge Sub-Phase or the Make Hit Tests Step of the Resolving an Initiative Step Step (this does not modify the Weapon Skill Characteristic of each Model in this Unit for the purposes of Hit Tests made for their own attacks).</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Telepathy" hidden="false" id="e09e-1438-3205-2a57"/>
@@ -592,5 +605,58 @@ When the Model with this Special Rule and the Vehicle Type moves through an enem
     <selectionEntry type="upgrade" import="true" name="Divination" hidden="false" id="9934-8bea-0a00-2ec8"/>
     <selectionEntry type="upgrade" import="true" name="Biomancy" hidden="false" id="d821-8e11-a0be-8327"/>
     <selectionEntry type="upgrade" import="true" name="Thaumaturgy" hidden="false" id="6822-29f6-efad-7b57"/>
+    <selectionEntry type="upgrade" import="true" name="Augurs of Weakness" hidden="false" id="b370-978f-fa67-7f47">
+      <rules>
+        <rule name="Augurs of Weakness" id="82b0-6411-2b56-f429" hidden="false">
+          <description>When making attacks targeting a Unit that includes one or more Models with the Vehicle Type, Models with the Order Exemplars Special rule gain the Armourbane Special Rule.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Armourbane" id="5df2-a5ea-8d10-1ca2" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Breakers of Witches" hidden="false" id="5a14-5035-07f7-9dd5">
+      <rules>
+        <rule name="Breakers of Witches" id="5824-3158-112b-02c6" hidden="false">
+          <description>Whilst part of a Unit that is Locked in Combat with an enemy Unit that has one or more Models with the Malefic Sub-Type or Psyker Trait, Hit and Wound Tests made for Models with the Order Exemplars Special Rule in that Combat are modified by +1.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hunters of Beasts" hidden="false" id="6bbf-b716-13d3-b070">
+      <rules>
+        <rule name="Hunters of Beasts" id="019d-0b52-c8ee-dae4" hidden="false">
+          <description>Whilst part of a Unit that is Locked in Combat with an enemy Unit that includes one or more Models with Toughness Characteristic of 6 or higher, the Damage Characteristic of Wounds caused by a Model with this Special Rule is modified by +1.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Icons of Resolve" hidden="false" id="e773-5c25-fb9e-57ed">
+      <rules>
+        <rule name="Icons of Resolve" id="a931-e25a-ca2f-5b4d" hidden="false">
+          <description>When part of a Unit that is successfully Charged by an enemy Unit, Models with the Order Exemplars Special Rule set their Leadership Characteristic to 10 for the duration of the current Assault Phase.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reaper of Hosts" hidden="false" id="12d1-cfb4-6bc9-3c4f">
+      <rules>
+        <rule name="Reaper of Hosts" id="1855-7e6f-f103-271c" hidden="false">
+          <description>Whilst part of a Unit that is Locked in Combat with one or more enemy Units that outnumbers it, then all Models in that Unit with the Order Exemplars Special Rule modify their Attacks Characteristic by +1.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Slayers of Kings" hidden="false" id="16a5-0057-ea1b-e6bf">
+      <rules>
+        <rule name="Slayers of Kings" id="1c57-5d1f-7e47-e6cd" hidden="false">
+          <description>Whilst part of a Unit that is Locked in Combat with an enemy Unit that includes at least one Model with a Weapon Skill Characteristic of 6 or higher, the Attack Characteristic of Models with the Order Exemplars Special Rule may be set to 1. If this option is used then the Terranic greatswords those Models have gain the Critical Hit (6+) Special Rule until the Combat ends.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Critical Hit (X)" id="b8ce-aa62-c042-c768" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
+          <modifiers>
+            <modifier type="set" value="Critical Hit (6+)" field="name"/>
+          </modifiers>
+          <comment>6+</comment>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>

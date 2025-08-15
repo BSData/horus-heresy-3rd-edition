@@ -269,9 +269,6 @@
     <categoryEntry name="Elites - Seeker Squads or Headhunter Kill Teams Only" id="5c0d-4d49-44e2-0a99" hidden="false"/>
     <categoryEntry name="Cohort Additional Detachment" id="27e8-88b4-d3c8-d63f" hidden="false"/>
     <categoryEntry name="Medusan Vanguard Unlock" id="fc09-911b-ee8c-7967" hidden="true"/>
-    <categoryEntry name="Tartaros Centurion" id="86d7-7e47-a0d7-6041" hidden="false">
-      <comment>Emperors Children prime check</comment>
-    </categoryEntry>
     <categoryEntry name="Jump Pack Centurion" id="294e-d64c-39dc-f687" hidden="false"/>
     <categoryEntry name="Cataphractii Centurion" id="fdce-834f-ead1-31c3" hidden="false"/>
     <categoryEntry name="Elites - Veletaris Storm or Veletaris Vanguard units only" id="8dce-eb64-ec33-0b51" hidden="false"/>
