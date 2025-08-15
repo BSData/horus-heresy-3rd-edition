@@ -64,15 +64,15 @@ class GameTests(unittest.TestCase):
 
     def test_forces_all_restrict_primes(self):
         for parent_force in self.system.gst.root_node.get_child("forceEntries").children:
-            print(parent_force)
+            # print(parent_force)
             if parent_force.get_child("forceEntries") is None:
                 continue
             for child_force in parent_force.get_child("forceEntries").children:
-                print("\t", child_force)
+                # print("\t", child_force)
                 if child_force.get_child("categoryLinks") is None:
                     continue
                 for category_link in child_force.get_child("categoryLinks").children:
-                    print("\t", "\t", category_link)
+                    # print("\t", "\t", category_link)
                     if not category_link.target_name.startswith("Prime "):
                         continue
                     with self.subTest(f"{category_link.target_name} on {child_force}"):
@@ -89,7 +89,7 @@ class GameTests(unittest.TestCase):
         crusade = self.system.get_node_by_id("8562-592c-8d4b-a1f0")
         allied_links = self.system.get_node_by_id("256b-b8a8-017a-75e9").get_child("forceEntryLinks")
         for child_force in crusade.get_child("forceEntries").children:
-            print("\t", child_force)
+            # print("\t", child_force)
             if not child_force.name.startswith("Auxiliary - "):
                 continue
             with self.subTest(f"{child_force.name} should be linked in the Allied Detachment"):
