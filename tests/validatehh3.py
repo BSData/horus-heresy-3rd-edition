@@ -2,12 +2,16 @@ import os
 import sys
 import unittest
 
+
 # Temp until we have a pip module
 sys.path.insert(1, os.getcwd() + "/BSCopy")
 from BSCopy.system.system import System
 from BSCopy.system.node import Node
 from BSCopy.system.constants import SystemSettingsKeys, GameImportSpecs
 from BSCopy.system.game.heresy3e import Heresy3e
+from BSCopy.util.text_utils import read_type_and_subtypes
+from BSCopy.book_reader.raw_entry import RawModel
+
 
 
 class GameTests(unittest.TestCase):
@@ -176,6 +180,20 @@ class GameTests(unittest.TestCase):
                                              f"There should be a profile on {potential_model}")
                 self.assertGreaterEqual(model_count, 1, "There should be at least one model in the unit")
         print(f"There are {len(self.unit_ids)} Units, containing {total_model_count} models")
+
+    def test_categories_match_type_line(self):
+        system = self.system
+        for model_node in system.nodes_with_ids.filter(lambda x: x.type == "selectionEntry:model"):
+            with self.subTest(f"Types and Subtypes for {model_node}"):
+                profile_node = model_node.get_profile_node()
+                self.assertIsNotNone(profile_node, f"Profile should be set on {model_node}")
+                profile_dict = profile_node.get_profile_dict()
+                unit_type_text = profile_dict.get("Type")
+                self.assertIsNotNone(unit_type_text, f"'Type' attribute should be set on: {model_node}")
+                type_and_subtypes = read_type_and_subtypes(unit_type_text)
+                raw_model = RawModel(None, model_node.name, None, None, None)
+                raw_model.type_and_subtypes = type_and_subtypes
+                model_node.check_types_and_subtypes(raw_model)
 
 
 if __name__ == '__main__':
