@@ -280,6 +280,34 @@
     <categoryEntry name="Support - Rapier Section, Basilisk Artillery Tank or Medusa Artillery tank units only" id="ada1-aac4-9802-9c3d" hidden="false"/>
     <categoryEntry name="Armour - Leman Russ Strike, Leman Russ Assault or Malcador Heavy tank units only" id="5725-7f8c-f02e-4df6" hidden="false"/>
     <categoryEntry name="War-engine - Aethon Heavy Sentinel Squadron units only" id="5ee3-236d-c224-67aa" hidden="false"/>
+    <categoryEntry name="Fortification" id="ae5b-4e74-db76-fa25" hidden="false"/>
+    <categoryEntry name="Emplacement Sub-Type" id="d1e7-50c0-0764-9de5" hidden="false">
+      <rules>
+        <rule name="Emplacement Sub-Type" id="4e4e-7b92-cb21-86de" hidden="false">
+          <description>The following Rules apply to all Models with the Emplacement Sub-Type:
+• A Model with the Emplacement Sub-Type has a Ballistic Skill Characteristic and can make Shooting Attacks.
+• A Model with the Emplacement Sub-Type can have the Return Fire and Interceptor Reactions made for it</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Bunker Sub-Type" id="7caa-3c9a-875c-5bca" hidden="false">
+      <rules>
+        <rule name="Bunker Sub-Type" id="894b-4c1c-9e09-0ffc" hidden="false">
+          <description>The following Rules apply to all Models with the Bunker Sub-Type:
+• A Model with the Bunker Sub-Type has a Transport Capacity Characteristic.
+• Only Models with the Infantry Type that have no variant of the Bulky (X) Special Rule may Embark on a Model with the Bunker Sub-Type.
+• A Model with the Bunker Sub-Type can be Captured </description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Structure Sub-Type" id="2893-a655-1074-9831" hidden="false">
+      <rules>
+        <rule name="Structure Sub-Type" id="c363-0bc3-7cb7-6d63" hidden="false">
+          <description>The following Rules apply to all Models with the Structure Sub-Type:
+• A Model with the Structure Sub-Type can be Captured</description>
+        </rule>
+      </rules>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -12634,6 +12662,15 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <characteristicType name="Restrictions:" id="d3e5-69ce-a8d9-97db"/>
         <characteristicType name="Effect:" id="dae4-c869-d27c-9025"/>
         <characteristicType name="Duration:" id="7c83-ff4d-0f5a-55b3"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Battlefield fortification" id="f47c-65e0-5690-738e" hidden="false" sortIndex="21">
+      <characteristicTypes>
+        <characteristicType name="Armour" id="5be5-04db-c14c-12be"/>
+        <characteristicType name="HP" id="4501-2c2a-d089-210e"/>
+        <characteristicType name="BS" id="e2af-22db-e8a2-5ebc"/>
+        <characteristicType name="Transport Capacity" id="ca35-9ed8-337e-cb3e"/>
+        <characteristicType name="Type" id="869d-8fb8-f39f-4575"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
