@@ -193,7 +193,9 @@ class GameTests(unittest.TestCase):
                 type_and_subtypes = read_type_and_subtypes(unit_type_text)
                 raw_model = RawModel(None, model_node.name, None, None, None)
                 raw_model.type_and_subtypes = type_and_subtypes
-                model_node.check_types_and_subtypes(raw_model)
+                errors = model_node.check_types_and_subtypes(raw_model)
+                self.assertEqual(len(errors), 0, f"{errors} on {model_node}")
+
 
 
 if __name__ == '__main__':
