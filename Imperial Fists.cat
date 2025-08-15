@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d186-cffc-0950-f632" name="                         VII - Imperial Fists" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="9" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="Arkangelmark5" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d186-cffc-0950-f632" name="                         VII - Imperial Fists" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="10" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="Arkangelmark5" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="4314-0fbc-731a-fa14" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="5470-c826-a822-2caa" targetId="9b32-f350-6aa9-9c09" importRootEntries="true"/>
@@ -1232,14 +1232,22 @@ Prepared Defenses: Until the end of the first Battle Turn of the Battle, all Mod
                 </infoLink>
               </infoLinks>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Executioner’s Tax " hidden="false" id="d090-9761-32d3-6495">
+              <profiles>
+                <profile name="Executioner’s Tax " typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="a65f-d00b-da48-05ac">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">Fafnir Rann may suffer a negative modifier to the Focus Roll in exchange for improved attacks</characteristic>
+                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">When this Gambit is selected, the Controlling Player must roll a additional Dice in the Focus Step and must discard the highest result. Attacks made in the following Strike Phase gain the Critical Hit (6+) Special Rule</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e00c-95a6-3e21-379c-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e00c-95a6-3e21-379c-max"/>
+              </constraints>
+            </selectionEntry>
           </selectionEntries>
           <profiles>
-            <profile name="Executioner’s Tax " typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="a65f-d00b-da48-05ac">
-              <characteristics>
-                <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">Fafnir Rann may suffer a negative modifier to the Focus Roll in exchange for improved attacks</characteristic>
-                <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">When this Gambit is selected, the Controlling Player must roll a additional Dice in the Focus Step and must discard the highest result. Attacks made in the following Strike Phase gain the Critical Hit (6+) Special Rule</characteristic>
-              </characteristics>
-            </profile>
             <profile name="Fafnir Rann" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="ef22-33ee-09c0-262f">
               <characteristics>
                 <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Unique, Command, Heavy)</characteristic>
