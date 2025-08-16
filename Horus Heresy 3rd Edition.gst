@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="26" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="27" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -12484,7 +12484,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
   <profileTypes>
     <profileType name="Profile" id="a76f-8e23-8c3e-166d" hidden="false" sortIndex="1">
       <characteristicTypes>
-        <characteristicType name="Unit Type" id="50fc-9241-d4a2-045b"/>
+        <characteristicType name="Type" id="50fc-9241-d4a2-045b"/>
         <characteristicType name="M" id="a106-a779-d272-5e93"/>
         <characteristicType name="WS" id="253c-d694-4695-c89e"/>
         <characteristicType name="BS" id="0cd5-b269-e3bc-028b"/>
@@ -12579,6 +12579,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <characteristicType name="I" id="f93c-1749-e2e9-3ab1"/>
         <characteristicType name="A" id="2903-ca70-471c-2741"/>
         <characteristicType name="HP" id="c427-cd22-b0d1-4db7"/>
+        <characteristicType name="Type" id="9aef-15c8-8a1e-e4eb"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Titan Head" id="2e7a-2e4d-dfb2-6b7a" hidden="false" sortIndex="4">
