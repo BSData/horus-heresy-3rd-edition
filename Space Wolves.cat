@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d995-cb33-be41-ecf8" name="                         VI - Space Wolves" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="8" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d995-cb33-be41-ecf8" name="                         VI - Space Wolves" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="9" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="db71-05b7-0cff-28d1" importRootEntries="true" targetId="5334-5605-242c-d75e"/>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="17f0-6633-7613-e326" importRootEntries="true" targetId="9b32-f350-6aa9-9c09"/>
@@ -16,7 +16,7 @@
           <profiles>
             <profile name="Leman Russ" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="56db-f2f2-0b75-33ca">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Paragon (unique)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Paragon (unique)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">8</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">8</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">6</characteristic>
@@ -191,7 +191,7 @@ Howl of the Death Wolf: Once this Gambit is selected and until it&apos;s effects
           <profiles>
             <profile name="Deathsworn" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="9632-b977-8572-c46d">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -299,7 +299,7 @@ Howl of the Death Wolf: Once this Gambit is selected and until it&apos;s effects
           <profiles>
             <profile name="Geigor Fell-Hand" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="d005-ae99-9b77-3dab">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Unique, Command)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Unique, Command)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -527,7 +527,7 @@ Howl of the Death Wolf: Once this Gambit is selected and until it&apos;s effects
           <profiles>
             <profile name="Huscarl" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="a367-8f65-ffae-217b">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -558,7 +558,7 @@ Howl of the Death Wolf: Once this Gambit is selected and until it&apos;s effects
           <profiles>
             <profile name="Grey Slayer" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="9ebe-f963-0acf-22e4">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -749,6 +749,12 @@ Howl of the Death Wolf: Once this Gambit is selected and until it&apos;s effects
       <infoLinks>
         <infoLink name="[Allegiance]" id="30a4-6255-1c8c-dcbf" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="4247-6ad8-a90c-9b01" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Line (X)" id="1b66-b737-46d9-b872" hidden="false" type="rule" targetId="1b5d-ceec-802a-c611">
+          <comment>2</comment>
+          <modifiers>
+            <modifier type="set" value="Line (2)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Hvarl Red-Blade" hidden="false" id="a681-0e72-a7fa-7bdd" publicationId="b905-0414-1057-bb34" page="170">
@@ -769,7 +775,7 @@ Howl of the Death Wolf: Once this Gambit is selected and until it&apos;s effects
           <profiles>
             <profile name="Hvarl Red-Blade" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="2419-5d73-8631-f262">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Unique, Command)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Unique, Command)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">6</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -870,7 +876,7 @@ Head-taker: If this Gambit is selected, the Opposing Player may not claim an Out
           <profiles>
             <profile name="Thegn" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="adc7-d8a6-a230-1fa2">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Sergeant, Heavy)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Sergeant, Heavy)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -906,7 +912,7 @@ Head-taker: If this Gambit is selected, the Opposing Player may not claim an Out
           <profiles>
             <profile name="Varagyr" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="cee3-190b-618a-6ee8">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Heavy)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Heavy)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -1006,7 +1012,7 @@ Head-taker: If this Gambit is selected, the Opposing Player may not claim an Out
           <profiles>
             <profile name="Freki" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="fd1e-c9b0-1e05-202d">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Unique)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Unique)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">10</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">-</characteristic>
@@ -1033,7 +1039,7 @@ Head-taker: If this Gambit is selected, the Opposing Player may not claim an Out
           <profiles>
             <profile name="Geri" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="c6de-9186-32f3-6529">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Unique)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Unique)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">10</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">7</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">-</characteristic>
@@ -1142,7 +1148,7 @@ Head-taker: If this Gambit is selected, the Opposing Player may not claim an Out
           <profiles>
             <profile name="Caster of Runes" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="72df-ed67-ed1d-4aa9" publicationId="b905-0414-1057-bb34" page="172">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
