@@ -948,13 +948,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="Thermal Diffraction Field" hidden="false" id="3a50-2adf-1972-4538" type="selectionEntry" targetId="ae43-8418-ecb1-ef6e">
+            <entryLink import="true" name="Thermal Diffraction Field" hidden="false" id="3a50-2adf-1972-4538" type="selectionEntry" targetId="ae43-8418-ecb1-ef6e" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff5d-fe4e-c653-e830" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="12ec-8a8f-47ea-224e" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Saturnine teleportation transponder" hidden="false" id="3333-b8dd-3c2d-ec82" type="selectionEntry" targetId="b347-5137-3d53-53ab">
+            <entryLink import="true" name="Saturnine teleportation transponder" hidden="false" id="3333-b8dd-3c2d-ec82" type="selectionEntry" targetId="b347-5137-3d53-53ab" sortIndex="4">
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="60"/>
               </costs>
@@ -962,7 +962,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1803-1fa2-7fe4-7cce" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Plasma blaster" hidden="false" id="5703-310b-02cf-6222" type="selectionEntry" targetId="3787-3dca-b6c9-f9e3">
+            <entryLink import="true" name="Plasma blaster" hidden="false" id="5703-310b-02cf-6222" type="selectionEntry" targetId="3787-3dca-b6c9-f9e3" sortIndex="3">
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
               </costs>
@@ -970,33 +970,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cd6-0593-ca82-07bf" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Drakenscale" hidden="true" id="d790-cea6-51c8-c38a" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="0">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f50d-2920-7558-92f1"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed67-7d16-0dc3-7492"/>
-              </constraints>
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Prosperine Arcana" hidden="false" id="afde-bd65-6eb5-18b8" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Prosperine Arcana" hidden="false" id="afde-bd65-6eb5-18b8" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50" sortIndex="6"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="81e0-c9a5-79d4-99dc" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="5"/>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Melee Weapons:" id="3204-79db-bbc4-2000" hidden="false">
+            <selectionEntryGroup name="Melee Weapons:" id="3204-79db-bbc4-2000" hidden="false" sortIndex="1">
               <entryLinks>
-                <entryLink import="true" name="Saturnine disruption fist" hidden="false" id="7ba6-70ba-7af4-493a" type="selectionEntry" targetId="487c-7be9-48db-e02a" sortIndex="1">
+                <entryLink import="true" name="Saturnine disruption fist" hidden="false" id="7ba6-70ba-7af4-493a" type="selectionEntry" targetId="487c-7be9-48db-e02a" sortIndex="1" defaultAmount="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32f9-ab76-e8b1-1907" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Saturnine war axe" hidden="false" id="348d-05b8-1b3b-a99a" type="selectionEntry" targetId="2c38-5c75-ae96-1391" sortIndex="2">
+                <entryLink import="true" name="Saturnine war axe" hidden="false" id="348d-05b8-1b3b-a99a" type="selectionEntry" targetId="2c38-5c75-ae96-1391" sortIndex="2" defaultAmount="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="035a-eb81-74b3-6c1f" includeChildSelections="false"/>
                   </constraints>
@@ -1053,7 +1038,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="7ed7-0182-49eb-959c" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="81e0-c9a5-79d4-99dc" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="1"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Assault Squad" hidden="false" id="470d-5d41-cc59-b85b" sortIndex="32">
@@ -3157,6 +3141,11 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       <infoLinks>
         <infoLink name="[Allegiance]" id="daed-36a4-8d3e-d72b" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="19c2-43dc-c7bd-d9bf" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Line (X)" id="dacc-a759-ca92-dba3" hidden="false" type="rule" targetId="1b5d-ceec-802a-c611">
+          <modifiers>
+            <modifier type="set" value="Line (1)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Veteran Assault Squad" hidden="false" id="a119-c2a7-ff1a-399c" sortIndex="25">

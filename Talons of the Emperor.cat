@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="acc1-f897-a117-9b4a" name="Legio Custodes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="8" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="Arkangelmark5" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="acc1-f897-a117-9b4a" name="Legio Custodes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="9" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="Arkangelmark5" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Constantin Valdor" hidden="false" id="9cbb-0abc-5c93-2afd">
       <selectionEntries>
@@ -2282,20 +2282,14 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
               <entryLinks>
                 <entryLink import="true" name="Proteus plasma projector" hidden="false" id="8fa7-9804-c4a2-3421" type="selectionEntry" targetId="1dde-e1b2-6899-314f" collective="false">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="76b7-f11d-edbb-da68-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="76b7-f11d-edbb-da68-max" includeChildSelections="false"/>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="76b7-f11d-edbb-da68-min" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="76b7-f11d-edbb-da68-max" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Paired Telemon caestus" hidden="false" id="295a-8af3-250f-3b24" type="selectionEntry" targetId="4685-46ef-fb97-9f66">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b48b-df0f-1357-4c23-min" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b48b-df0f-1357-4c23-max" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Proteus plasma projector" hidden="false" id="66a3-8ed3-daa1-2278" type="selectionEntry" targetId="1dde-e1b2-6899-314f">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="5c92-e108-4353-9e89-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5c92-e108-4353-9e89-max" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -2310,16 +2304,31 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
                   </conditions>
                 </modifier>
               </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model can have two options from the following list:" id="0980-35ef-20c3-dcbc" hidden="false" defaultSelectionEntryId="none" sortIndex="2" collapsible="true">
               <entryLinks>
-                <entryLink import="true" name="Arachnus storm cannon" hidden="false" id="2deb-9a2a-48be-4f3d" type="selectionEntry" targetId="45de-bc45-6cd8-fd54"/>
-                <entryLink import="true" name="Iliastus accelerator culverin" hidden="false" id="b0d5-22bc-d53d-d6e5" type="selectionEntry" targetId="6621-ec29-60aa-7e96"/>
+                <entryLink import="true" name="Arachnus storm cannon" hidden="false" id="2deb-9a2a-48be-4f3d" type="selectionEntry" targetId="45de-bc45-6cd8-fd54" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Iliastus accelerator culverin" hidden="false" id="b0d5-22bc-d53d-d6e5" type="selectionEntry" targetId="6621-ec29-60aa-7e96" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Telemon caestus and one proteus plasma projector" hidden="false" id="62c3-404e-3011-1441">
+                <selectionEntry type="upgrade" import="true" name="Telemon caestus and one proteus plasma projector" hidden="false" id="62c3-404e-3011-1441" sortIndex="1" defaultAmount="">
                   <entryLinks>
                     <entryLink import="true" name="Proteus plasma projector" hidden="false" id="cc49-d9d8-fac8-956f" type="selectionEntry" targetId="1dde-e1b2-6899-314f">
                       <constraints>
