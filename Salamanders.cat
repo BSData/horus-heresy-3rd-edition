@@ -543,6 +543,10 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e83a-18d4-3792-704c" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cbbd-2471-c55e-c5fc" includeChildSelections="false"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
@@ -750,7 +754,7 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
             <categoryLink name="Sergeant Model Sub-Type" hidden="false" id="2192-7569-c220-4b6b" targetId="8045-89a4-76d4-fcef" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Options" id="0517-5e9b-5873-521e" hidden="false" sortIndex="">
+            <selectionEntryGroup name="Options" id="0517-5e9b-5873-521e" hidden="false">
               <entryLinks>
                 <entryLink import="true" name="Melta bombs" hidden="false" id="e5a7-e958-1095-70c6" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="2">
                   <costs>
@@ -769,6 +773,14 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Combi-flamer" hidden="false" id="3819-0f37-b776-31dc" type="selectionEntry" targetId="4be6-cb80-d54b-f156">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c1a-64ca-501d-bf7a" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b30-5120-0380-f78e" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Adherent" hidden="false" id="8a28-2d25-a523-c78e" sortIndex="2">
           <profiles>
@@ -799,13 +811,13 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
           <selectionEntryGroups>
             <selectionEntryGroup name="Options" id="4473-54cd-8b85-bff8" hidden="false">
               <entryLinks>
-                <entryLink import="true" name="Legion Equipment" hidden="false" id="21fd-cce6-d629-b695" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf">
+                <entryLink import="true" name="Legion Equipment" hidden="false" id="21fd-cce6-d629-b695" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf" sortIndex="3">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66db-ade8-ad1a-1906" includeChildSelections="false"/>
                     <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="8cd5-7bd9-cb46-d09b" includeChildSelections="true"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Vexilla" hidden="false" id="5c25-9662-7498-4a8b" type="selectionEntry" targetId="dfcd-0669-ad43-28aa">
+                <entryLink import="true" name="Vexilla" hidden="false" id="5c25-9662-7498-4a8b" type="selectionEntry" targetId="dfcd-0669-ad43-28aa" sortIndex="2">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6bb-372e-446b-56e7" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="6c47-81dc-23cb-e8bb" includeChildSelections="true"/>
@@ -816,24 +828,42 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
                 </entryLink>
               </entryLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="1-5 may exchange combi-flamer for:" id="ca84-dc4c-e91f-e8aa" hidden="false" flatten="false">
+                <selectionEntryGroup name="Combi-flamer" id="80a0-4828-5c4d-ab1f" hidden="false" sortIndex="1">
                   <entryLinks>
-                    <entryLink import="true" name="Forge-crafted heavy flamer" hidden="false" id="bc34-59dc-e3fd-d58f" type="selectionEntry" targetId="6d3e-3152-c52f-1d66">
-                      <costs>
-                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                      </costs>
+                    <entryLink import="true" name="Combi-flamer" hidden="false" id="5354-f063-a575-e42b" type="selectionEntry" targetId="4be6-cb80-d54b-f156" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2912-b354-f58e-3151" includeChildSelections="false"/>
+                      </constraints>
                     </entryLink>
                   </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="1-5 may exchange combi-flamer for:" id="ca84-dc4c-e91f-e8aa" hidden="false" flatten="false" sortIndex="2">
+                      <entryLinks>
+                        <entryLink import="true" name="Forge-crafted heavy flamer" hidden="false" id="bc34-59dc-e3fd-d58f" type="selectionEntry" targetId="6d3e-3152-c52f-1d66">
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                          </costs>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="443d-b033-dbc4-024f" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="f48a-d498-8f2a-f828" includeChildSelections="true"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="f48a-d498-8f2a-f828">
+                          <repeats>
+                            <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6749-a1b7-5790-524f"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c7fc-1e12-a4b6-fc6f"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a25d-82a4-1858-c47d"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="6749-a1b7-5790-524f">
-                      <repeats>
-                        <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntryGroup>
@@ -848,26 +878,30 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Frag grenades" hidden="false" id="1250-23ea-5dc7-7f62" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="6">
+        <entryLink import="true" name="Frag grenades" hidden="false" id="1250-23ea-5dc7-7f62" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="5">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b1b-0696-717e-9193" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7ec-1a2a-7b96-3097" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Krak grenades" hidden="false" id="cddf-1e23-8431-68ef" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="7">
+        <entryLink import="true" name="Krak grenades" hidden="false" id="cddf-1e23-8431-68ef" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="6">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="87f5-e743-9947-7e5a" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f793-05fc-9c0f-25e7" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="9a57-3eac-54f1-59eb" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="8">
+        <entryLink import="true" name="Prime Unit" hidden="false" id="9a57-3eac-54f1-59eb" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="7">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="5d0d-884a-918d-e243" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Chainsword" hidden="false" id="1778-6e87-1c86-0504" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="5"/>
-        <entryLink import="true" name="Combi-flamer" hidden="false" id="3819-0f37-b776-31dc" type="selectionEntry" targetId="4be6-cb80-d54b-f156" sortIndex="3"/>
-        <entryLink import="true" name="Bolt pistol" hidden="false" id="4902-1488-8111-1525" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="4">
+        <entryLink import="true" name="Chainsword" hidden="false" id="1778-6e87-1c86-0504" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a0d-c2d8-1b53-6ff8" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c3c-4e79-fb2f-5e8f" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Bolt pistol" hidden="false" id="4902-1488-8111-1525" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c46-f9e1-92ce-f255" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="884c-4e51-c9be-498e" includeChildSelections="false"/>
@@ -1275,7 +1309,7 @@ effects of the Limited (X) Special Rule when making Volley Attacks.</description
             <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">3</characteristic>
             <characteristic name="AP" typeId="7a23-0248-2b94-5951">-</characteristic>
             <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
-            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (FP), Suppressive (1) </characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (FP), Suppressive (1)</characteristic>
             <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Auto</characteristic>
           </characteristics>
         </profile>
