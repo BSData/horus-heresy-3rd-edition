@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="fd9b-d04e-362d-8e5d" name="Questoris Household" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="2" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issue" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="fd9b-d04e-362d-8e5d" name="Questoris Household" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="5" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issue" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Knight Questoris" hidden="false" id="6fbb-fa07-52b9-d350" sortIndex="4">
       <selectionEntries>
@@ -16,6 +16,7 @@
                 <characteristic name="I" typeId="f93c-1749-e2e9-3ab1">4</characteristic>
                 <characteristic name="A" typeId="2903-ca70-471c-2741">4</characteristic>
                 <characteristic name="HP" typeId="c427-cd22-b0d1-4db7">10</characteristic>
+                <characteristic typeId="9aef-15c8-8a1e-e4eb" name="Type"/>
               </characteristics>
             </profile>
           </profiles>
@@ -278,7 +279,7 @@
           <profiles>
             <profile name="Armiger Helverin" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="6280-1a56-2694-e585">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Walker</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Walker</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">10</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -427,7 +428,7 @@ Additionally, an Army with the Mechanicum Vassals Household Paradigm is not subj
           <profiles>
             <profile name="Armiger Warglaive" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="ad78-db6c-f0f5-ff87">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Walker</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Walker</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">10</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -573,7 +574,7 @@ Additionally, an Army with the Mechanicum Vassals Household Paradigm is not subj
           <profiles>
             <profile name="Armiger Moirax" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="6ce4-9a25-7d42-a396">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Walker</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Walker</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">8</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -1127,7 +1128,7 @@ Additionally, an Army with the Mechanicum Vassals Household Paradigm is not subj
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Las-impulsor" hidden="false" id="db5a-eaf8-5c35-dbe3">
       <profiles>
-        <profile name="Las-impulsor" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="8ed0-900d-6412-43bd">
+        <profile name="Las-impulsor (ranged)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="8ed0-900d-6412-43bd">
           <characteristics>
             <characteristic name="R" typeId="cdb0-8654-6840-1037">8</characteristic>
             <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
@@ -1136,6 +1137,17 @@ Additionally, an Army with the Mechanicum Vassals Household Paradigm is not subj
             <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">4</characteristic>
             <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Ordnance (D), Armourbane</characteristic>
             <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Las</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Las-impulsor (melee)" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="5b60-57f8-d2d1-3d9b">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">-3</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">-1</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">10</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">5</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Armourbane</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Las</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1274,6 +1286,7 @@ Additionally, an Army with the Mechanicum Vassals Household Paradigm is not subj
                 <characteristic name="I" typeId="f93c-1749-e2e9-3ab1">3</characteristic>
                 <characteristic name="A" typeId="2903-ca70-471c-2741">4</characteristic>
                 <characteristic name="HP" typeId="c427-cd22-b0d1-4db7">10</characteristic>
+                <characteristic typeId="9aef-15c8-8a1e-e4eb" name="Type"/>
               </characteristics>
             </profile>
           </profiles>
@@ -1512,6 +1525,7 @@ Additionally, an Army with the Mechanicum Vassals Household Paradigm is not subj
                 <characteristic name="I" typeId="f93c-1749-e2e9-3ab1">3</characteristic>
                 <characteristic name="A" typeId="2903-ca70-471c-2741">4</characteristic>
                 <characteristic name="HP" typeId="c427-cd22-b0d1-4db7">10</characteristic>
+                <characteristic typeId="9aef-15c8-8a1e-e4eb" name="Type"/>
               </characteristics>
             </profile>
           </profiles>
@@ -1653,6 +1667,7 @@ Additionally, an Army with the Mechanicum Vassals Household Paradigm is not subj
                 <characteristic name="I" typeId="f93c-1749-e2e9-3ab1">4</characteristic>
                 <characteristic name="A" typeId="2903-ca70-471c-2741">4</characteristic>
                 <characteristic name="HP" typeId="c427-cd22-b0d1-4db7">12</characteristic>
+                <characteristic typeId="9aef-15c8-8a1e-e4eb" name="Type"/>
               </characteristics>
             </profile>
           </profiles>
@@ -1744,6 +1759,7 @@ Additionally, an Army with the Mechanicum Vassals Household Paradigm is not subj
                 <characteristic name="I" typeId="f93c-1749-e2e9-3ab1">4</characteristic>
                 <characteristic name="A" typeId="2903-ca70-471c-2741">4</characteristic>
                 <characteristic name="HP" typeId="c427-cd22-b0d1-4db7">12</characteristic>
+                <characteristic typeId="9aef-15c8-8a1e-e4eb" name="Type"/>
               </characteristics>
             </profile>
           </profiles>
@@ -1844,6 +1860,7 @@ Additionally, an Army with the Mechanicum Vassals Household Paradigm is not subj
                 <characteristic name="I" typeId="f93c-1749-e2e9-3ab1">4</characteristic>
                 <characteristic name="A" typeId="2903-ca70-471c-2741">4</characteristic>
                 <characteristic name="HP" typeId="c427-cd22-b0d1-4db7">12</characteristic>
+                <characteristic typeId="9aef-15c8-8a1e-e4eb" name="Type"/>
               </characteristics>
             </profile>
           </profiles>
@@ -1935,6 +1952,7 @@ Additionally, an Army with the Mechanicum Vassals Household Paradigm is not subj
                 <characteristic name="I" typeId="f93c-1749-e2e9-3ab1">4</characteristic>
                 <characteristic name="A" typeId="2903-ca70-471c-2741">4</characteristic>
                 <characteristic name="HP" typeId="c427-cd22-b0d1-4db7">12</characteristic>
+                <characteristic typeId="9aef-15c8-8a1e-e4eb" name="Type"/>
               </characteristics>
             </profile>
           </profiles>
@@ -2188,7 +2206,7 @@ A Model with an ion gauntlet shield has a 5+ Invulnerable Save against Penetrati
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Atropos phasecutter" hidden="false" id="e920-dbb1-c371-64c8">
       <profiles>
-        <profile name="Atropos phasecutter" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="9d07-6942-de44-935d">
+        <profile name="Atropos phasecutter (ranged)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="9d07-6942-de44-935d">
           <characteristics>
             <characteristic name="R" typeId="cdb0-8654-6840-1037">12</characteristic>
             <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
@@ -2197,6 +2215,17 @@ A Model with an ion gauntlet shield has a 5+ Invulnerable Save against Penetrati
             <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">6</characteristic>
             <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Ordnance (D), Armourbane</characteristic>
             <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Las</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Atropos phasecutter (melee)" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="6935-43d7-a18f-cf11">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">-2</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">-1</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">12</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">6</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Armourbane</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Las</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2224,6 +2253,7 @@ A Model with an ion gauntlet shield has a 5+ Invulnerable Save against Penetrati
                 <characteristic name="I" typeId="f93c-1749-e2e9-3ab1">2</characteristic>
                 <characteristic name="A" typeId="2903-ca70-471c-2741">3</characteristic>
                 <characteristic name="HP" typeId="c427-cd22-b0d1-4db7">18</characteristic>
+                <characteristic typeId="9aef-15c8-8a1e-e4eb" name="Type"/>
               </characteristics>
             </profile>
           </profiles>
@@ -2375,6 +2405,7 @@ A Model with an ion gauntlet shield has a 5+ Invulnerable Save against Penetrati
                 <characteristic name="I" typeId="f93c-1749-e2e9-3ab1">2</characteristic>
                 <characteristic name="A" typeId="2903-ca70-471c-2741">3</characteristic>
                 <characteristic name="HP" typeId="c427-cd22-b0d1-4db7">18</characteristic>
+                <characteristic typeId="9aef-15c8-8a1e-e4eb" name="Type"/>
               </characteristics>
             </profile>
           </profiles>
@@ -2613,7 +2644,7 @@ A Model with an ion gauntlet shield has a 5+ Invulnerable Save against Penetrati
     </selectionEntry>
   </sharedSelectionEntries>
   <forceEntries>
-    <forceEntry name="Knight Households Crusade" id="65c4-7995-ac71-b6f9" hidden="true">
+    <forceEntry name="Knight Households Crusade" id="65c4-7995-ac71-b6f9" hidden="false" sortIndex="0">
       <forceEntries>
         <forceEntry name="Additional - Armiger Talon" id="cc42-7db1-7735-ec34" hidden="true" sortIndex="2">
           <categoryLinks>
@@ -2689,7 +2720,7 @@ A Model with an ion gauntlet shield has a 5+ Invulnerable Save against Penetrati
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0925-6f0f-4ded-2e8c"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Lord of War" hidden="false" id="5e43-e278-4be8-c7f2" targetId="a46f-a465-0ead-d6b8" type="categoryEntry">
+            <categoryLink name="Lord of War" hidden="false" id="5e43-e278-4be8-c7f2" targetId="a46f-a465-0ead-d6b8">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a9a8-a89e-2c48-d6dc"/>
               </constraints>
@@ -2751,7 +2782,7 @@ A Model with an ion gauntlet shield has a 5+ Invulnerable Save against Penetrati
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="37f8-688e-c716-832d"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Lord of War" hidden="false" id="a973-ab11-969a-ab23" targetId="a46f-a465-0ead-d6b8" type="categoryEntry">
+            <categoryLink name="Lord of War" hidden="false" id="a973-ab11-969a-ab23" targetId="a46f-a465-0ead-d6b8">
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="4d05-1e44-816f-8603"/>
               </constraints>
@@ -2772,16 +2803,8 @@ A Model with an ion gauntlet shield has a 5+ Invulnerable Save against Penetrati
           </constraints>
         </forceEntry>
       </forceEntries>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <comment>Questoris Household and Scion Aspirant PA</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <categoryLinks>
-        <categoryLink name="Army Configuration" hidden="false" id="732f-6dec-4642-8282" targetId="abfa-86ab-1726-077a" type="categoryEntry"/>
+        <categoryLink name="Army Configuration" hidden="false" id="732f-6dec-4642-8282" targetId="abfa-86ab-1726-077a"/>
         <categoryLink name="Allegiance" hidden="false" id="9402-b736-533e-c2d3" targetId="c408-52f1-b632-4c82">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1664-eb9a-c3a2-0750" includeChildSelections="true"/>

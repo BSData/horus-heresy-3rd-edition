@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="25" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="27" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -268,6 +268,11 @@
     <categoryEntry name="Elites - Seeker Squads or Headhunter Kill Teams Only" id="5c0d-4d49-44e2-0a99" hidden="false"/>
     <categoryEntry name="Cohort Additional Detachment" id="27e8-88b4-d3c8-d63f" hidden="false"/>
     <categoryEntry name="Medusan Vanguard Unlock" id="fc09-911b-ee8c-7967" hidden="true"/>
+    <categoryEntry name="Tartaros Centurion" id="86d7-7e47-a0d7-6041" hidden="false">
+      <comment>Emperors Children prime check</comment>
+    </categoryEntry>
+    <categoryEntry name="Jump Pack Centurion" id="294e-d64c-39dc-f687" hidden="false"/>
+    <categoryEntry name="Cataphractii Centurion" id="fdce-834f-ead1-31c3" hidden="false"/>
     <categoryEntry name="Elites - Veletaris Storm or Veletaris Vanguard units only" id="8dce-eb64-ec33-0b51" hidden="false"/>
     <categoryEntry name="Support - Hermes Veletaris units only" id="c480-7340-9da9-d9ac" hidden="false"/>
     <categoryEntry name="Troops - Lasrifle Section Units only" id="f006-dd7c-6753-f732" hidden="false"/>
@@ -4800,7 +4805,7 @@
         <forceEntry name="Auxiliary - Veletaris Tercio" id="e1a1-2699-4681-47ab" hidden="true" sortIndex="30">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="55a1-8512-405b-8905" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Elites - Veletaris Storm or Veletaris Vanguard units only" hidden="false" id="710a-9bde-a37e-3661" targetId="8dce-eb64-ec33-0b51" type="categoryEntry">
+            <categoryLink name="Elites - Veletaris Storm or Veletaris Vanguard units only" hidden="false" id="710a-9bde-a37e-3661" targetId="8dce-eb64-ec33-0b51">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0cbe-df78-5aa1-886c"/>
               </constraints>
@@ -4812,7 +4817,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="Support - Hermes Veletaris units only" hidden="false" id="3821-2b49-3d7e-6f18" targetId="c480-7340-9da9-d9ac" type="categoryEntry">
+            <categoryLink name="Support - Hermes Veletaris units only" hidden="false" id="3821-2b49-3d7e-6f18" targetId="c480-7340-9da9-d9ac">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fc4-b367-183f-a2cc"/>
               </constraints>
@@ -5003,7 +5008,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="Troops" hidden="false" id="c12d-2c85-a227-0b86" targetId="88e6-d373-4152-0dd8" type="categoryEntry">
+            <categoryLink name="Troops" hidden="false" id="c12d-2c85-a227-0b86" targetId="88e6-d373-4152-0dd8">
               <modifiers>
                 <modifier type="increment" value="1" field="aa68-7c65-5d9f-280f">
                   <conditions>
@@ -5058,7 +5063,7 @@
         <forceEntry name="Auxiliary - Armour Tercio" id="6aff-b91d-02bb-7461" hidden="true" sortIndex="31">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="880f-e609-7151-ee38" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Armour - Leman Russ Strike, Leman Russ Assault or Malcador Heavy tank units only" hidden="false" id="0bee-0d7e-0466-e2cb" targetId="5725-7f8c-f02e-4df6" type="categoryEntry">
+            <categoryLink name="Armour - Leman Russ Strike, Leman Russ Assault or Malcador Heavy tank units only" hidden="false" id="0bee-0d7e-0466-e2cb" targetId="5725-7f8c-f02e-4df6">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e63e-7101-ee0c-825b"/>
               </constraints>
@@ -5111,7 +5116,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="69ec-fb9b-4ad6-bf96" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Support - Rapier Section, Basilisk Artillery Tank or Medusa Artillery tank units only" hidden="false" id="9be5-2fdf-195d-448c" targetId="ada1-aac4-9802-9c3d" type="categoryEntry">
+            <categoryLink name="Support - Rapier Section, Basilisk Artillery Tank or Medusa Artillery tank units only" hidden="false" id="9be5-2fdf-195d-448c" targetId="ada1-aac4-9802-9c3d">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3a15-2aaa-7be7-b63e"/>
               </constraints>
@@ -5159,7 +5164,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3ab-da50-e5e0-666c" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Troops - Lasrifle Section Units only" hidden="false" id="5b44-72e9-776a-c15c" targetId="f006-dd7c-6753-f732" type="categoryEntry">
+            <categoryLink name="Troops - Lasrifle Section Units only" hidden="false" id="5b44-72e9-776a-c15c" targetId="f006-dd7c-6753-f732">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9b47-a597-d110-0bf2" includeChildSelections="false"/>
               </constraints>
@@ -5171,7 +5176,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="Recon - Hermes Light Sentinel Squadron units only" hidden="false" id="594e-63ee-a073-3fb5" targetId="b367-e724-5450-9e45" type="categoryEntry">
+            <categoryLink name="Recon - Hermes Light Sentinel Squadron units only" hidden="false" id="594e-63ee-a073-3fb5" targetId="b367-e724-5450-9e45">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cc3-afb1-35ca-ebac"/>
               </constraints>
@@ -5403,12 +5408,12 @@
         <forceEntry name="Auxiliary - Scout Tercio" id="551a-23a1-7758-2688" hidden="true" sortIndex="34">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="7fc3-b32d-cdda-e42f" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Recon - Hermes Light Sentinel Squadron units only" hidden="false" id="4b81-7b2e-792e-003a" targetId="b367-e724-5450-9e45" type="categoryEntry">
+            <categoryLink name="Recon - Hermes Light Sentinel Squadron units only" hidden="false" id="4b81-7b2e-792e-003a" targetId="b367-e724-5450-9e45">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a2d1-1899-30ed-b88f"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="War-engine - Aethon Heavy Sentinel Squadron units only" hidden="false" id="9caf-684c-aa64-c23c" targetId="5ee3-236d-c224-67aa" type="categoryEntry">
+            <categoryLink name="War-engine - Aethon Heavy Sentinel Squadron units only" hidden="false" id="9caf-684c-aa64-c23c" targetId="5ee3-236d-c224-67aa">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="744f-12da-093f-e8db"/>
               </constraints>
@@ -12479,7 +12484,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
   <profileTypes>
     <profileType name="Profile" id="a76f-8e23-8c3e-166d" hidden="false" sortIndex="1">
       <characteristicTypes>
-        <characteristicType name="Unit Type" id="50fc-9241-d4a2-045b"/>
+        <characteristicType name="Type" id="50fc-9241-d4a2-045b"/>
         <characteristicType name="M" id="a106-a779-d272-5e93"/>
         <characteristicType name="WS" id="253c-d694-4695-c89e"/>
         <characteristicType name="BS" id="0cd5-b269-e3bc-028b"/>
@@ -12574,6 +12579,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <characteristicType name="I" id="f93c-1749-e2e9-3ab1"/>
         <characteristicType name="A" id="2903-ca70-471c-2741"/>
         <characteristicType name="HP" id="c427-cd22-b0d1-4db7"/>
+        <characteristicType name="Type" id="9aef-15c8-8a1e-e4eb"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Titan Head" id="2e7a-2e4d-dfb2-6b7a" hidden="false" sortIndex="4">
@@ -12645,6 +12651,13 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
               <description>All Models in the Unit selected to fill the Prime Slot gain a bonus of +1 to their Leadership, Cool, Intelligence and Willpower Characteristics to a maximum of 10 (this includes only Models selected as part of the Unit, not Models that later join the Unit either before or during Battle).</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b980-187b-2b17-d635" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Special Assignment" hidden="false" id="c857-47bd-6a4f-fcf8" sortIndex="4">
           <constraints>
@@ -12659,6 +12672,13 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
               <description>This Prime Advantage may only be selected for a Command Slot. A Command Slot for which this Prime Advantage is selected may be filled by a High Command Unit, but remains a Command Slot. Moreover, no additional Detachment of any kind may be selected due to this Slot regardless of their Battlefield Role or any Special Rule that the Unit selected to fill the Slot may have.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b980-187b-2b17-d635" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Master Sergeant" hidden="false" id="2c90-1d52-7075-59d3" sortIndex="1">
           <constraints>
@@ -12669,6 +12689,13 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
               <description>One Model in the Unit selected to fill the Prime Slot that has the Sergeant Sub-Type gains +1 to its Attacks, Weapon Skill and Leadership Characteristics and the Champion Sub-Type (if it already has the Champion Sub-Type it instead increases its Leadership by an additional +1). This advantage may only be selected once per Detachment.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b980-187b-2b17-d635" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Paragon of Battle" hidden="false" id="20cb-4eec-0844-8a97" sortIndex="3">
           <constraints>
@@ -12679,6 +12706,13 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
               <description>One Model in the Unit selected to fill the Prime Slot that has the Command Sub-Type gains a bonus of +1 to its Attacks, Weapon Skill and Ballistic Skill Characteristics.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b980-187b-2b17-d635" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Logistical Benefit" hidden="false" id="6a03-452b-5657-bda4" sortIndex="5">
           <selectionEntryGroups>

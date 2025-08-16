@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="25" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="27" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -9,7 +9,7 @@
               <profiles>
                 <profile name="Legionary" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="f4d7-47cd-3915-8ddf">
                   <characteristics>
-                    <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
+                    <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
                     <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                     <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                     <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -65,7 +65,7 @@
               <profiles>
                 <profile name="Rapier Carrier" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="220d-a25a-fd27-54a1">
                   <characteristics>
-                    <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                    <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
                     <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                     <characteristic name="WS" typeId="253c-d694-4695-c89e">1</characteristic>
                     <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -275,7 +275,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Saturnine Terminator" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="7a00-4d27-27c7-7fb5">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Heavy)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Heavy)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">5</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -346,7 +346,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Saturnine Terminator Sergeant" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="f36d-6211-0d23-2c56">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant, Heavy)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant, Heavy)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">5</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -464,7 +464,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Centurion" hidden="false" id="6a17-9220-006e-1cab">
+        <selectionEntry type="model" import="true" name="Centurion" hidden="false" id="6a17-9220-006e-1cab" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d7b-e590-91a1-bc28" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0428-a892-801d-2273" includeChildSelections="false"/>
@@ -472,7 +472,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Centurion" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="68a5-6198-8a6e-7d3a">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -533,6 +533,19 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Jump Pack" hidden="false" id="302b-12a7-4445-89aa" sortIndex="2">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3d9-b00b-4a4a-5739" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="add" value="294e-d64c-39dc-f687" field="category"/>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
@@ -916,7 +929,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Saturnine Praetor" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="bb05-5cc6-b512-1692">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command, Heavy)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command, Heavy)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">5</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">6</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -935,13 +948,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="Thermal Diffraction Field" hidden="false" id="3a50-2adf-1972-4538" type="selectionEntry" targetId="ae43-8418-ecb1-ef6e">
+            <entryLink import="true" name="Thermal Diffraction Field" hidden="false" id="3a50-2adf-1972-4538" type="selectionEntry" targetId="ae43-8418-ecb1-ef6e" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff5d-fe4e-c653-e830" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="12ec-8a8f-47ea-224e" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Saturnine teleportation transponder" hidden="false" id="3333-b8dd-3c2d-ec82" type="selectionEntry" targetId="b347-5137-3d53-53ab">
+            <entryLink import="true" name="Saturnine teleportation transponder" hidden="false" id="3333-b8dd-3c2d-ec82" type="selectionEntry" targetId="b347-5137-3d53-53ab" sortIndex="4">
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="60"/>
               </costs>
@@ -949,7 +962,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1803-1fa2-7fe4-7cce" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Plasma blaster" hidden="false" id="5703-310b-02cf-6222" type="selectionEntry" targetId="3787-3dca-b6c9-f9e3">
+            <entryLink import="true" name="Plasma blaster" hidden="false" id="5703-310b-02cf-6222" type="selectionEntry" targetId="3787-3dca-b6c9-f9e3" sortIndex="3">
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
               </costs>
@@ -957,33 +970,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cd6-0593-ca82-07bf" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Drakenscale" hidden="true" id="d790-cea6-51c8-c38a" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="0">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f50d-2920-7558-92f1"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed67-7d16-0dc3-7492"/>
-              </constraints>
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink import="true" name="Prosperine Arcana" hidden="false" id="afde-bd65-6eb5-18b8" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Prosperine Arcana" hidden="false" id="afde-bd65-6eb5-18b8" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50" sortIndex="6"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="81e0-c9a5-79d4-99dc" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="5"/>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Melee Weapons:" id="3204-79db-bbc4-2000" hidden="false">
+            <selectionEntryGroup name="Melee Weapons:" id="3204-79db-bbc4-2000" hidden="false" sortIndex="1">
               <entryLinks>
-                <entryLink import="true" name="Saturnine disruption fist" hidden="false" id="7ba6-70ba-7af4-493a" type="selectionEntry" targetId="487c-7be9-48db-e02a" sortIndex="1">
+                <entryLink import="true" name="Saturnine disruption fist" hidden="false" id="7ba6-70ba-7af4-493a" type="selectionEntry" targetId="487c-7be9-48db-e02a" sortIndex="1" defaultAmount="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32f9-ab76-e8b1-1907" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Saturnine war axe" hidden="false" id="348d-05b8-1b3b-a99a" type="selectionEntry" targetId="2c38-5c75-ae96-1391" sortIndex="2">
+                <entryLink import="true" name="Saturnine war axe" hidden="false" id="348d-05b8-1b3b-a99a" type="selectionEntry" targetId="2c38-5c75-ae96-1391" sortIndex="2" defaultAmount="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="035a-eb81-74b3-6c1f" includeChildSelections="false"/>
                   </constraints>
@@ -1040,7 +1038,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="7ed7-0182-49eb-959c" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="81e0-c9a5-79d4-99dc" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="1"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Assault Squad" hidden="false" id="470d-5d41-cc59-b85b" sortIndex="32">
@@ -1059,7 +1056,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Assault Legionary" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="add7-e9dc-9076-1469">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Antigrav)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Antigrav)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">12</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -1265,7 +1262,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Assault Sergeant" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="0b6c-790b-9073-fa33">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant, Antigrav)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant, Antigrav)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">12</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -1536,7 +1533,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Breacher Sergeant" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="dfd4-9125-a52d-b903">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant, Heavy)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant, Heavy)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -1619,7 +1616,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Breacher Legionary" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="f349-e714-ec2e-c90a">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Heavy)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Heavy)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -1819,7 +1816,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Saturnine Dreadnought" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="1d79-c4d4-ac14-dc8f">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Walker (Heavy)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Walker (Heavy)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -1956,7 +1953,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       <profiles>
         <profile name="Saturnine Dreadnought" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="0ed6-a9f5-c64b-c0c7">
           <characteristics>
-            <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Walker (Heavy)</characteristic>
+            <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Walker (Heavy)</characteristic>
             <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
             <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
             <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -2085,7 +2082,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Chosen Champion" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="53c0-fc8b-5872-4fb7">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Sergeant)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Sergeant)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -2322,7 +2319,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Chosen" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="2867-4edf-0313-1ca5">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -2778,7 +2775,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Veteran Legionary" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="e737-c6bf-71e7-f2e2">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -2980,7 +2977,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Veteran Sergeant" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="d2f8-e0fa-a0ec-90b2">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -3144,6 +3141,11 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       <infoLinks>
         <infoLink name="[Allegiance]" id="daed-36a4-8d3e-d72b" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="19c2-43dc-c7bd-d9bf" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Line (X)" id="dacc-a759-ca92-dba3" hidden="false" type="rule" targetId="1b5d-ceec-802a-c611">
+          <modifiers>
+            <modifier type="set" value="Line (1)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Veteran Assault Squad" hidden="false" id="a119-c2a7-ff1a-399c" sortIndex="25">
@@ -3152,7 +3154,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Veteran Legionary" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="4db0-5c43-9bc7-82e0">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Antigrav)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Antigrav)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">12</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -3272,7 +3274,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Veteran Sergeant" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="06ae-4d19-1703-6580">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant, Antigrav)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant, Antigrav)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">12</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -3416,7 +3418,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Legionary" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="1335-5f58-6ff2-8cdd">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -3510,7 +3512,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Sergeant" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="a26c-477f-0baa-20b6">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -3677,7 +3679,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Deredeo Dreadnought" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="607c-5b94-f491-22b9">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Walker</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Walker</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -3779,7 +3781,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Leviathan Dreadnought" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="0630-53fc-023c-3072">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Walker</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Walker</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -4052,7 +4054,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Praetor" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="778f-7cd8-3172-9e70">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">6</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -4436,7 +4438,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Praetor in Terminator Armour" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="a5d8-ad4b-bf2c-cb23">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command, Heavy)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command, Heavy)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">6</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -4651,23 +4653,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="72cd-4a42-726e-3eb1" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="24c6-6a2f-9782-7a06" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="4">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dd81-45ec-ed0c-6029"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dff0-014d-fc31-5e54"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="642d-e273-f878-edb1" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="618a-dc66-7c84-e874" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="4"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="3a39-a492-a76c-eca3" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -4708,7 +4695,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Optae" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="ee93-1662-c9db-ffa5">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -5001,7 +4988,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Centurion in Terminator Armour" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="8ed4-1b4d-61e0-1380">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command, Heavy)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command, Heavy)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -5036,6 +5023,10 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </modifiers>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="037f-e9b7-748f-2387"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d481-ca9f-fac3-600c"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -5067,13 +5058,20 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       <selectionEntryGroups>
         <selectionEntryGroup name="Terminator Armour" id="babb-6a3c-da26-f5d3" hidden="false" sortIndex="1">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Cataphractii" hidden="false" id="2724-c83c-4226-523b"/>
+            <selectionEntry type="upgrade" import="true" name="Cataphractii" hidden="false" id="2724-c83c-4226-523b">
+              <modifiers>
+                <modifier type="add" value="fdce-834f-ead1-31c3" field="category"/>
+              </modifiers>
+            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Tartaros" hidden="false" id="d4a4-a3f7-f634-4632">
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
                 <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
                 <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="add" value="86d7-7e47-a0d7-6041" field="category"/>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -5163,23 +5161,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="7906-cbaa-cc6a-a203" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="cc14-f17f-eed3-d384" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="3">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="79ff-3d8b-9bdd-963e"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5dd4-076d-f966-01dd"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="5b89-0eec-1218-2a42" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="9c02-179d-ff5c-84c6" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Damocles Command Rhino" hidden="false" id="f214-aeb9-0dd6-9071" sortIndex="7">
@@ -5328,30 +5311,15 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="2cec-e9e5-5442-7228" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="b26c-73e7-fcb2-3611" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="4">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="57f8-6893-52f7-ccff"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c75b-d32a-65c8-a285"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="d2ac-2e5a-9d09-eafa" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="db94-a4fe-3a9e-1e15" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="3"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Librarian" hidden="false" id="c0e4-eabd-4f0a-23ca">
           <profiles>
             <profile name="Librarian" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="430f-9109-0fc4-4823">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -5490,23 +5458,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="867e-9671-a2c8-3298" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="d1d4-7084-90b5-a203" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="2">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="be5a-b0ac-9740-0404"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="493d-27ea-9c61-bb9a"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="9d42-3a8a-a947-09bd" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="8ef7-7e18-02bc-b5fa" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="2"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="6a0a-f0fe-c889-8a8a" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -5522,7 +5475,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Legion Champion" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="676d-46b5-fc7a-0e01">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">6</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -5577,7 +5530,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Vigilator" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="6583-4291-5772-f9b2">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">7</characteristic>
@@ -5641,23 +5594,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="1a41-b7d3-d827-d60e" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="8f29-7813-07d2-503f" type="selectionEntry" targetId="b021-e506-1ecd-b3c5">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a450-25e0-ffe5-5637"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c6b-3146-05eb-5ff3"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="dc4d-d2e6-f755-12da" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="8efe-861a-d1fd-23ca" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="5"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Esoterist" hidden="false" id="868f-f32d-d5ef-8021" sortIndex="11">
@@ -5671,7 +5609,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Esoterist" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="1d8a-ecd6-c916-8dd5">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -5732,23 +5670,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="0579-9294-22c2-04bd" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="eff9-55dc-a216-133f" type="selectionEntry" targetId="b021-e506-1ecd-b3c5">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5b71-f72b-ae4b-3ca1"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e26-477e-ac4a-a4a1"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="f5f5-76c2-907d-2dd0" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="cd92-09af-5605-9c32" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="5"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="9871-cb62-5283-2216" id="7092-2474-59a0-6090" primary="false" name="Command Model Sub-type"/>
@@ -5784,23 +5707,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="3a55-d621-af76-7651" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="380d-2a00-ec0f-b464" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="2">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="28e0-3fe4-7313-c1ab"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6b0-8d82-1610-ef7f"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="c336-56cd-9107-7201" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="c204-eaec-8d5f-7e86" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="5"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Master of Signals" hidden="false" id="f985-ac79-b28b-f341">
@@ -5811,7 +5719,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Master of Signals" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="501b-d998-9c84-c0fd">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -5866,7 +5774,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Praevian" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="9f88-7b15-eace-4b42">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -5928,23 +5836,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="2e0c-0719-4705-f195" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="a433-03b9-bae6-6f7a" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="3">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2f15-4070-bda8-d99f"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11ff-f8f4-c343-a6fb"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="06fb-09e1-891c-9602" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="e090-d77f-ad45-d22f" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="7"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="f17a-8cab-ca53-bba3" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -5999,7 +5892,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Moritat" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="4569-e4ee-cc43-56e1">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Specialist, Antigrav)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Specialist, Antigrav)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">12</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">6</characteristic>
@@ -6059,6 +5952,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </entryLinks>
         </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="7684-62ef-251f-fc12" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="9de9-5f17-c2e9-d10e" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="6"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="b01e-114a-47d0-e7e0" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -6112,7 +6006,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Siege Breaker" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="c134-47b6-e069-4d52">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command, Heavy)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command, Heavy)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -6222,6 +6116,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </entryLinks>
         </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="3cf7-be3a-ac2e-57a7" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="a132-7070-7e03-46c1" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="fce6-d23c-c7dd-862f" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -6243,7 +6138,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Herald" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="a7a3-f701-bc4e-e04e">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -6352,23 +6247,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="d7f7-f676-e0e9-a950" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="449d-908e-9430-0b8a" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="3">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="69f3-30e0-d789-28a8"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c39-ede1-e9dd-2c46"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="4423-103e-ebe5-95f7" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="67b0-b445-8457-b5ec" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="7"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="363d-cd4e-6c14-9ef1" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -6396,7 +6276,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Chaplain" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="3387-8bf6-0a1f-9222">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -6452,23 +6332,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="ec66-1c28-87ea-fd73" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="8bcd-d904-0e2f-eb84" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="3">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ded0-b905-de1c-f939"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="565b-a905-3e10-b9a6"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="e852-3890-82fd-05a0" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="eb74-80e7-7818-bc7d" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="6"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" id="265f-5c58-0294-dfa9" hidden="false" sortIndex="1">
@@ -6500,7 +6365,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Chosen Champion w/Jump Pack" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="8bea-9bbd-18e1-7686">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Antigrav, Sergeant)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Antigrav, Sergeant)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">12</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -6737,7 +6602,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Chosen w/Jump Pack" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="e322-5781-2049-6ce6">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Antigrav)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Antigrav)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">12</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -6970,7 +6835,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Veteran Champion" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="39a2-3088-79ef-bc67">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Sergeant)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Sergeant)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -7195,6 +7060,9 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="7e70-c361-11d5-a713" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="2"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Veteran" hidden="false" id="d6b9-4937-3679-0529" sortIndex="2">
           <costs>
@@ -7205,7 +7073,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Veteran" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="0d57-d2df-eae5-3137">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -7466,7 +7334,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Tartaros Chosen" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="cdee-b4cc-e7b1-23a3">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -7571,7 +7439,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Tartaros Chosen Champion" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="62c0-2148-1dc2-e188">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Sergeant)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Sergeant)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -7711,7 +7579,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Cataphractii Terminator" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="b09e-63c0-b8de-4b52">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Heavy)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Heavy)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -7849,7 +7717,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Cataphractii Terminator Sergeant" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="2e07-d211-4eac-4b22">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant, Heavy)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant, Heavy)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -8008,7 +7876,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Seeker" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="01c6-c5ec-1619-9951">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Skirmish)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Skirmish)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -8121,7 +7989,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Seeker Sergeant" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="6dc9-6b8a-c2bc-c17c">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant, Skirmish)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant, Skirmish)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -8293,7 +8161,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="2b73-70a5-c306-72b3">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b"/>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b"/>
                 <characteristic name="M" typeId="a106-a779-d272-5e93"/>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e"/>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b"/>
@@ -8312,7 +8180,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </profile>
             <profile name="Tartaros Terminator" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="5814-6358-7b63-6007">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -8438,7 +8306,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Tartaros Terminator Sergeant" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="c22b-e7a4-9426-8bdf">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -8579,7 +8447,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Cataphractii Chosen" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="5ae4-c54c-ffce-8855">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Heavy)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Heavy)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -8689,7 +8557,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Tartaros Chosen Champion" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="ecec-39f5-fba3-3b28">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Sergeant, Heavy)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Sergeant, Heavy)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -8842,7 +8710,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Despoiler Legionary" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="f5ca-0752-fac9-b8c2">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -9004,7 +8872,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Despoiler Sergeant" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="7f32-b05f-47fd-3560">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -9151,7 +9019,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Sergeant" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="c597-7e02-9326-1594">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -9203,12 +9071,37 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Forge-crafted flamer" hidden="true" id="f184-4cf1-8ab3-2994" type="selectionEntry" targetId="ec31-ff7d-cdad-233a">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+                      </conditions>
+                      <comment>SL</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <comment>SL+Sgt Only</comment>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c2ca-d6b6-e4b1-6ee4"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f30-8dda-babe-4e78"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Legionary" hidden="false" id="1208-1781-18dd-a3a0" sortIndex="2">
           <profiles>
             <profile name="Legionary" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="808e-63b2-2be3-2095">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -9383,6 +9276,9 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="594d-fa82-13cb-a345" id="41f5-b138-5e8b-5915" primary="false" name="Infantry Model Type"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Heavy Support Squad" hidden="false" id="1734-8863-96bf-f052" sortIndex="35">
       <selectionEntries>
@@ -9390,7 +9286,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Sergeant" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="1a17-e28a-bcba-6f41">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -9434,12 +9330,37 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Forge-crafted heavy flamer" hidden="true" id="598a-9779-3510-b956" type="selectionEntry" targetId="6d3e-3152-c52f-1d66">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+                      </conditions>
+                      <comment>SL</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <comment>SL+Sgt Only</comment>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6ea0-96f5-0ace-b413"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8878-d740-9ec3-933c"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Legionary" hidden="false" id="f3f7-54e9-44d3-af78" sortIndex="2">
           <profiles>
             <profile name="Legionary" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="7b35-9c2e-4c06-bf77">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -9622,6 +9543,9 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="594d-fa82-13cb-a345" id="f409-48da-0f50-d3e5" primary="false" name="Infantry Model Type"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Apothecary" hidden="false" id="b7fe-ba65-00d2-57f0" sortIndex="37">
       <selectionEntries>
@@ -9633,7 +9557,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Apothecary" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="3ac3-5b9a-fe4e-dbdd">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Specialist)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Specialist)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -9725,6 +9649,10 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="af7d-af64-6b7d-da9d" id="bbed-0347-9a6a-9cd9" primary="false" name="Specialist Model Sub-Type"/>
+        <categoryLink targetId="594d-fa82-13cb-a345" id="001e-c94e-db7e-f227" primary="false" name="Infantry Model Type"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Techmarine" hidden="false" id="6cac-d5d2-dda7-ea8f" sortIndex="38">
       <selectionEntryGroups>
@@ -9770,7 +9698,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Techmarine" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="7db5-c340-71a3-889e">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Specialist)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Specialist)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -9858,6 +9786,10 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="594d-fa82-13cb-a345" id="dba1-08a2-14d2-bd8d" primary="false" name="Infantry Model Type"/>
+        <categoryLink targetId="af7d-af64-6b7d-da9d" id="b598-ecf1-20f5-dc97" primary="false" name="Specialist Model Sub-Type"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Deathstorm Drop Pod" hidden="false" id="84cd-c790-5886-8814" sortIndex="39">
       <selectionEntries>
@@ -9927,7 +9859,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Contemptor Dreadnought" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="09cc-04a1-362a-7cfd">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Walker</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Walker</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">8</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -10612,7 +10544,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Outrider Sergeant" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="ff81-a685-0d86-86cc">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Cavalry (Sergeant)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Cavalry (Sergeant)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">14</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -10706,7 +10638,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Outrider" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="a3ad-5eec-1d90-29df">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Cavalry</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Cavalry</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">14</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -10803,7 +10735,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Recon Sergeant" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="8c57-ce95-cf20-2539">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant, Skirmish)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant, Skirmish)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -10883,7 +10815,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Recon Legionary" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="5f5b-8466-7747-6f6f">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -11384,7 +11316,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Scimitar Sergeant" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="41bc-006f-8e95-9d0c">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Cavalry (Sergeant, Antigrav)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Cavalry (Sergeant, Antigrav)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">16</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -11460,7 +11392,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Scimitar Hunter" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="d9bb-0751-caba-2b9d">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">16</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">16</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">4</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -11840,7 +11772,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Javelin Speeder" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="252d-4948-967b-a247" publicationId="b905-0414-1057-bb34" page="101">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Cavalary (Skirmish, Antigrav)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Cavalary (Skirmish, Antigrav)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">14</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -12206,7 +12138,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Land Speeder" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="8b50-82d6-aded-cf10">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">10</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">10</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">4</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -13756,7 +13688,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Master of Descent" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="a294-fbdc-f303-f485">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command, Antigrav)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command, Antigrav)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">12</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -13806,23 +13738,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="9ef0-4c4f-7136-a229" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="b881-f3e8-b498-b289" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="3">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f61f-57e1-456c-63f0"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f65-5d50-bed4-432a"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="aa56-d04e-c2e0-ea57" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="00ba-1e18-db70-b1fa" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="5"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="e4cd-e660-606b-9c70" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -13888,7 +13805,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <profiles>
             <profile name="Overseer" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="7836-42bd-2afe-6be8">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -13958,23 +13875,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="2fd9-a1a4-57f2-caba" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="e633-e654-15d7-2c7e" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="4">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c553-c1ff-22a4-3ed1"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1b3-6aa3-61c9-e83c"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="5c10-a253-29c4-7ce6" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="9e96-13b7-4367-47c7" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="5"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" id="02af-aba0-5bd7-6bd2" hidden="false" sortIndex="1">
@@ -14540,7 +14442,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Javelin Squadron" hidden="false" id="5e2b-dc62-44d4-247a" type="selectionEntry" targetId="50f3-fca2-49ab-6de4" sortIndex="62">
+    <entryLink import="true" name="Javelin Speeder Squadron" hidden="false" id="5e2b-dc62-44d4-247a" type="selectionEntry" targetId="50f3-fca2-49ab-6de4" sortIndex="62">
       <categoryLinks>
         <categoryLink targetId="cf96-8891-3f9a-8921" id="d9f3-1076-2c5a-01ad" primary="true" name="Fast Attack"/>
       </categoryLinks>
@@ -14672,7 +14574,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </entryLink>
         <entryLink import="true" name="Forge-crafted hand flamer" hidden="true" id="9e95-2783-b09a-92f5" type="selectionEntry" targetId="fe39-b979-bb90-117f" sortIndex="4">
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -14890,33 +14792,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="0a30-dcba-4755-88fd" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="15">
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>SL</comment>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-              <comment>SL+Cmd/Spec/Champ Only</comment>
-            </modifier>
-          </modifiers>
-        </entryLink>
         <entryLink import="true" name="Solarite Power Gauntlet" hidden="true" id="d930-e96d-982c-0646" type="selectionEntry" targetId="ddcb-01e9-18af-c8f6" sortIndex="15">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -14945,7 +14820,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </entryLink>
         <entryLink import="true" name="Forge-crafted power fist" hidden="true" id="ce4e-8881-1528-02bd" type="selectionEntry" targetId="8146-abba-1612-3d0f" sortIndex="14">
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
           </costs>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -14973,7 +14848,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </entryLink>
         <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="c9d1-2999-6494-b8a0" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="21">
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
           </costs>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -15374,22 +15249,22 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </costs>
         </entryLink>
         <entryLink import="true" name="Power Weapon" hidden="false" id="3689-7ad7-4b0c-c565" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" sortIndex="5" flatten="true"/>
-        <entryLink import="true" name="Thunder hammer" hidden="false" id="f0c7-c0f4-9ef0-3753" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="5">
+        <entryLink import="true" name="Thunder hammer" hidden="false" id="f0c7-c0f4-9ef0-3753" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="6">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Power fist" hidden="false" id="cdaa-5781-7782-add7" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="7">
+        <entryLink import="true" name="Power fist" hidden="false" id="cdaa-5781-7782-add7" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="9">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Lightning claw" hidden="false" id="a13b-6dfa-42ae-e9e5" type="selectionEntry" targetId="cbf0-9b29-9a16-28b2" sortIndex="10">
+        <entryLink import="true" name="Lightning claw" hidden="false" id="a13b-6dfa-42ae-e9e5" type="selectionEntry" targetId="cbf0-9b29-9a16-28b2" sortIndex="13">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Solarite Power Gauntlet" hidden="true" id="0f30-c237-62a0-3d4e" type="selectionEntry" targetId="ddcb-01e9-18af-c8f6" sortIndex="8">
+        <entryLink import="true" name="Solarite Power Gauntlet" hidden="true" id="0f30-c237-62a0-3d4e" type="selectionEntry" targetId="ddcb-01e9-18af-c8f6" sortIndex="10">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -15412,10 +15287,10 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </modifier>
           </modifiers>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Terranic greatsword" hidden="true" id="e5e7-051d-5c26-a513" type="selectionEntry" targetId="f1aa-3d18-caac-a960" sortIndex="9">
+        <entryLink import="true" name="Terranic greatsword" hidden="true" id="e5e7-051d-5c26-a513" type="selectionEntry" targetId="f1aa-3d18-caac-a960" sortIndex="12">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -15459,7 +15334,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Frost claw" hidden="true" id="e718-6fb8-998f-7ff9" type="selectionEntry" targetId="e14f-7600-8fdd-65ce" sortIndex="11">
+        <entryLink import="true" name="Frost claw" hidden="true" id="e718-6fb8-998f-7ff9" type="selectionEntry" targetId="e14f-7600-8fdd-65ce" sortIndex="14">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
@@ -15485,7 +15360,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Raven&apos;s Talons" hidden="true" id="358c-dd82-a637-92ba" type="selectionEntry" targetId="8682-12f8-dccc-c0e2" sortIndex="12">
+        <entryLink import="true" name="Raven&apos;s Talons" hidden="true" id="358c-dd82-a637-92ba" type="selectionEntry" targetId="8682-12f8-dccc-c0e2" sortIndex="15">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -15504,7 +15379,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Graviton crusher" hidden="true" id="d981-d31d-2a52-f0d3" type="selectionEntry" targetId="78f1-345c-81d8-1cb1" sortIndex="6">
+        <entryLink import="true" name="Graviton crusher" hidden="true" id="d981-d31d-2a52-f0d3" type="selectionEntry" targetId="78f1-345c-81d8-1cb1" sortIndex="7">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -15529,6 +15404,61 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
+        </entryLink>
+        <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="9251-1a16-60b0-d8d3" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="8">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>SL</comment>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>SL+Cmd/Spec/Champ Only</comment>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Forge-crafted power fist" hidden="true" id="b23d-e3b0-b833-bea5" type="selectionEntry" targetId="8146-abba-1612-3d0f" sortIndex="11">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>SL</comment>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>SL+Sgt/Cmd/Spec/Champ Only</comment>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -15884,6 +15814,14 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f7b4-2531-0962-1379" shared="true"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="594d-fa82-13cb-a345" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a073-2d4a-5bed-123e" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <categoryLinks>
@@ -15896,6 +15834,10 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </modifiers>
             </infoLink>
           </infoLinks>
+          <comment>White Scars</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="983f-8e6f-23e4-4086"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Logisticae" hidden="true" id="907a-ba1b-84ae-b725" publicationId="b905-0414-1057-bb34" page="245">
           <comment>Ultramarines</comment>
@@ -15903,6 +15845,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="656a-07b6-d4fd-57af" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dbf-654a-f06f-2d69" shared="true" includeChildSelections="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -15910,7 +15853,12 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efa6-a5d5-5bb3-8292" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Not Yet Implemented: gain a trainsport or heavy transport and modify it&apos;s transport capacity by +2" hidden="false" id="26ee-caef-70fd-274b"/>
+            <selectionEntry type="upgrade" import="true" name="Not Yet Implemented: gain a trainsport or heavy transport and modify it&apos;s transport capacity by +2" hidden="false" id="26ee-caef-70fd-274b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="875c-af99-5a2f-bc96"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ced0-7cac-35da-405b"/>
+              </constraints>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Wraiths" hidden="true" id="1e67-d4ea-b59b-b9ff">
@@ -15918,12 +15866,14 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="340c-1d4f-1f31-fb70" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="88e6-d373-4152-0dd8" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
           <infoLinks>
             <infoLink name="Wraiths" id="bc1b-f834-1d47-0f21" hidden="false" type="rule" targetId="84fd-366e-517d-e228"/>
           </infoLinks>
+          <comment>Raven Guard</comment>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Duty Before Death" hidden="true" id="7d10-f293-cc6d-7aea">
           <modifiers>
@@ -15931,12 +15881,10 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="8f12-c30a-6c20-6296" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="88e6-d373-4152-0dd8" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
-          <entryLinks>
-            <entryLink import="true" name="Duty Before Death" hidden="false" id="3051-a40e-1673-294e" type="rule" targetId="e20b-fd1b-6229-eac2"/>
-          </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="91b4-9fab-da60-4523"/>
           </constraints>
@@ -15946,7 +15894,335 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <modifier type="set" value="Feel No Pain (6+)" field="name"/>
               </modifiers>
             </infoLink>
+            <infoLink name="Duty Before Death" id="9565-b07b-b9c2-168a" hidden="false" type="rule" targetId="e20b-fd1b-6229-eac2"/>
           </infoLinks>
+          <comment>Salamanders</comment>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Pack Thegn" hidden="true" id="2a84-8986-b83f-6ba8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cee-d4a0-b0e9-5345"/>
+          </constraints>
+          <rules>
+            <rule name="Pack Thegn" id="6f8f-beff-6ab3-36bf" hidden="false">
+              <description>Has it&apos;s Base Attacks and Weapon Skill Characteristics modified by +1
+May have it&apos;s power sword exchanged with one frost sword or frost axe for Free, or with one frost claw for +5 Points</description>
+            </rule>
+          </rules>
+          <comment>Space Wolves</comment>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="03f3-e7ae-13b0-47c3" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Not Yet Implemented: Model gains A +1 WS +1 and may exchange power weapon for Frost sword or axe. Frost claw for 5pts." hidden="false" id="b761-e749-c8c4-7600">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="10ec-facb-e7e8-1f78"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff8d-86c6-24e1-5464"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Chain-bonded" hidden="true" id="bd04-aeac-9dd3-d77a">
+          <rules>
+            <rule name="Chain-brothers" id="35fd-5174-6893-be56" hidden="false">
+              <description>While a Model with this Special Rule is within Unit Coherency of the other Model from your Army with this Special Rule, that Model gains a bonus of +1 to Hit Tests made in the Assault Phase. If a Model that is engaged in a Challenge is in the same Combat as the other Model from your Army with this Special Rule, that Model is treated as being in Unit Coherency  with that other Model for the purposes of this Special Rule.</description>
+            </rule>
+            <rule name="Chain-bonded" id="9fea-f2f7-72b0-919d" hidden="false">
+              <description>This Prime Advantage can only be selected once per Army. When this Prime Advantage is selected, the Controlling Player must select another Unit which only includes Models with the World Eaters Trait that has the Command Battlefield Role from their Army. One Model in the selected Unit and one Model in the Unit selected to fill a Prime Force Organisation Slot with this Prime Advantage both gain the Chain-brothers Special Rule.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="6eb4-822a-6b14-5c87" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="a956-190d-3b47-6258" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dbf-654a-f06f-2d69" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>World Eaters</comment>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Atramentar " hidden="true" id="0543-a0b7-e28b-a488">
+          <infoLinks>
+            <infoLink name="Deep Strike" id="7c32-667f-ff79-bad3" hidden="false" type="rule" targetId="0553-d06b-52b9-34db"/>
+            <infoLink name="Impact (X)" id="410b-9bb2-b542-fc38" hidden="false" type="rule" targetId="6ead-c31c-ab09-2f8c">
+              <modifiers>
+                <modifier type="set" value="Impact (I)" field="name"/>
+              </modifiers>
+              <comment>I</comment>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="486f-b32a-ac87-73dd" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c795-6de9-030e-e480" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5dd5-d00c-b150-34b9" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f8c9-8c04-ae18-e7ea" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bcb4-ccd6-7eb6-0afb" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8105-97e4-8327-c826" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <comment>Night Lords</comment>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="The Iron-clad" hidden="true" id="176e-7ae1-a65d-636c">
+          <rules>
+            <rule name="The Iron-clad" id="1211-b3d7-bebf-2e38" hidden="false">
+              <description>This Prime Advantage can only be selected once per Army. Add one additional War Engine Battlefield Role Slot to the Detachment that includes the Prime Force Organisation Slot with this Prime Advantage. A Unit that is selected to fill that Slot gains the Champion Sub-Type if it did not already have it.</description>
+            </rule>
+          </rules>
+          <comment>Iron Hands</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2a25-0565-a4af-3cc7" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="736e-3967-e72b-e3ac" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dbf-654a-f06f-2d69" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Not Yet Implemented: Gain War Engine slot that gives that unit Champion Sub-type" hidden="false" id="940b-b5da-3b26-d03d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f4b-64aa-3c20-d6eb"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="471a-1de4-d3f3-ef56"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Paladin of the Hekatonystika" hidden="true" id="b824-c0ad-804e-0026">
+          <comment>Dark Angels</comment>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="0a35-fce3-188c-b3aa" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f613-76c6-e58e-f286" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fe8-9bf9-3081-b789"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4e71-0ea3-5d82-156b" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Not Yet Implemented: WS +1, Bolter exchanged for Terranic Greatsword, Gains Orders of the Hekatonystika." hidden="false" id="6e21-400e-e8cc-e3e5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="553b-fafa-1f04-27b5"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4e3-205b-51a8-fd58"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Revenants" hidden="true" id="d5af-128d-2051-644d">
+          <comment>Blood Angels</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7618-c3a3-abaf-5e07"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Fear (X)" id="6cb9-32a5-2cdf-27ba" hidden="false" type="rule" targetId="0ebc-0c92-2209-6393">
+              <modifiers>
+                <modifier type="set" value="Fear (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Castellan" hidden="true" id="da17-ab73-7d33-c76f">
+          <comment>Imperial Fists</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d33-5534-7020-e485"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d186-cffc-0950-f632" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f613-76c6-e58e-f286" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Not Yet Implemented: Cannot select any centurion options. Must exchange bolter for Heavy bolter, autocannon, Iliastus assault cannon." hidden="false" id="9517-b0ea-a7ad-959a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b06-8748-0e75-1fd5"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="809e-c586-3e9c-33de"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Augury scanner" hidden="false" id="a706-9f88-a48e-c0a7" type="selectionEntry" targetId="fede-99f5-4c76-4659">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="28ee-f717-a7f0-611d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68c8-3724-946c-5097"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="The Unfavoured" hidden="true" id="ab3a-c6ca-9981-2b89">
+          <comment>Iron Warriors</comment>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cdb-5355-3a57-79c6"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Expendable (X)" id="3a9d-195e-031e-fe40" hidden="false" type="rule" targetId="c4d4-e053-9564-540b">
+              <modifiers>
+                <modifier type="set" value="Expendable (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Martial Supremecy" hidden="true" id="2d54-e82c-85eb-0f9e">
+          <comment>Sons of Horus</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb33-8b56-0d22-a6c0"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5d5e-958f-e388-50b5" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Martial Supremacy" id="4335-fd54-4bc4-f802" hidden="false">
+              <description>One Model in the Unit selected to ill a Prime Force Organization Slot with this Prime Advantage gains the Champion Sub-type and the Duellist&apos;s Edge (1) special rule.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Duellist&apos;s Edge (X)" id="f822-c356-2fac-e7b5" hidden="false" type="rule" targetId="94bc-c69f-99b6-8ba0">
+              <modifiers>
+                <modifier type="set" value="Duellist&apos;s Edge (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Zealous Assault" hidden="true" id="089d-9641-6aea-483b">
+          <comment>Word Bearers</comment>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4935-1832-63f7-91aa" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a85-51a9-79ff-b54c"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Impact (X)" id="da1f-8f6a-ccea-f213" hidden="false" type="rule" targetId="6ead-c31c-ab09-2f8c">
+              <modifiers>
+                <modifier type="set" value="Impact (S)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Phoenix Warden" hidden="true" id="eb48-9812-af4c-6912">
+          <comment>Emperor&apos;s Children</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6508-e806-4be5-6e92"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a22-d01f-ab5c-ec07" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5dd5-d00c-b150-34b9" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Not Yet Implemented: Tartaros only. Replace combi-bolter and power weapon with Phoenix power spear. Gains Skill unmatched rule." hidden="false" id="feec-6740-2800-2eb0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb02-cea7-9dc0-84ec"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cbf9-1bea-e156-8a1f"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Unnatural Resilience" hidden="true" id="73c6-526b-63cf-a6a9">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73af-0018-bcc6-47e6"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9ed1-df93-1c0f-ceaf" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="be98-aa9d-64ef-f62c" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f613-76c6-e58e-f286" shared="true" includeChildSelections="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5dd5-d00c-b150-34b9" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Eternal Warrior (X)" id="9a31-c95b-5d72-0f49" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
+              <modifiers>
+                <modifier type="set" value="Eternal Warrior (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Not Yet Implemented: +1 Wound" hidden="false" id="c7e8-81b9-93c0-8d35">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8563-7c46-255f-2669"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23a4-782c-47fb-f04d"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <comment>Death Guard</comment>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Telekine Shift" hidden="true" id="3176-6983-2172-fc33">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24a3-8732-84c2-526d"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Telekine Shift" id="3aa8-e3ad-265b-03c7" hidden="false">
+              <description>When the Controlling Player chooses to make a Rush Move with a Unit made of Models with this Special Rule, they may also choose to make a Willpower Check for that Unit. If the Willpower Check is successful, the Unit gains the Antigrav Sub-Type and the Move Through Cover Special Rule until the end of the current Movement Phase. If the Willpower Check is failed, the selected Unit may not Move during the current Movement Phase.</description>
+            </rule>
+          </rules>
+          <comment>Thousand Sons</comment>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -15964,8 +16240,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed5b-611f-b5c0-b3dd"/>
+          </constraints>
         </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b980-187b-2b17-d635" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup name="Prime Benefits" id="a396-b846-c263-6767" hidden="false">
       <entryLinks>
