@@ -199,9 +199,9 @@
       <rules>
         <rule name="Malefic" id="56af-aee5-210b-7093" hidden="false" publicationId="e54c-7040-0f35-d85d" page="18">
           <description>The following Rules apply to all Models with the Malefic Sub-Type:
-• When a Unit composed entirely of Models with the Malefic Sub-Type would gain a Tactical Status of any kind, that Tactical Status is not applied to the Models in the Unit, but instead the Unit suffers D3 automatic wounds with an AP of 2 and a Damage Characteristic of 1 against which no Saving Throws of any kind may be made. Once these wounds are resolved, no Tactical Status is applied to any Model in the Unit.
-• Models with the Malefic Sub-Type are not affected by Special Rules that negatively modify their Leadership, Cool, Willpower or Intelligence Characteristics.
-• No Model that does not also have the Malefic Sub-Type may join or be joined by a Unit that includes one or more Models with the Malefic Sub-Type. </description>
+• When a Unit composed entirely of Models with the Malefic Sub-Type would gain a Tactical Status of any kind, that Tactical Status is not applied to the Models in the Unit, but instead the Unit suffers D3 automatic wounds with an AP of 2 and a Damage Characteristic of 1 against which no Saving Throws of any kind may be made. Once these wounds are resolved, no Tactical Status is applied to any Model in the Unit.
+• Models with the Malefic Sub-Type are not affected by Special Rules that negatively modify their Leadership, Cool, Willpower or Intelligence Characteristics.
+• No Model that does not also have the Malefic Sub-Type may join or be joined by a Unit that includes one or more Models with the Malefic Sub-Type. </description>
         </rule>
       </rules>
     </categoryEntry>
