@@ -12447,14 +12447,12 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e075-1f6c-ff36-8e11" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="DON&apos;T SUBMIT BUGS FOR NOT IMPLEMENTED FUNCTIONALITY. See export for list." hidden="false" id="cd4a-d335-2d3a-91e0" defaultAmount="1">
+    <selectionEntry type="upgrade" import="true" name="DON&apos;T SUBMIT BUGS FOR NOT IMPLEMENTED FUNCTIONALITY. Currently Titans and Legacies" hidden="false" id="cd4a-d335-2d3a-91e0" defaultAmount="1">
       <rules>
         <rule name="Things that aren&apos;t implemented" id="10ac-cafa-6c21-0fa3" hidden="false">
-          <description>- Knights
-- Solar Aux detachment validation (use your brain)
-- A lot of detachment validation beyond the basic ones.
-- Legion primes and legion wargear.
-- A ton of other small stuff.
+          <description>- Titans
+
+- Legacies (except fortifications)
 
 Please don&apos;t submit bug reports for any of these things. Please only submit bug reports for errors/broken functionality.</description>
         </rule>
