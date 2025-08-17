@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="fd9b-d04e-362d-8e5d" name="Questoris Household" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="5" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issue" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="fd9b-d04e-362d-8e5d" name="Questoris Household" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="6" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issue" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Knight Questoris" hidden="false" id="6fbb-fa07-52b9-d350" sortIndex="4">
       <selectionEntries>
@@ -2787,6 +2787,7 @@ A Model with an ion gauntlet shield has a 5+ Invulnerable Save against Penetrati
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="4d05-1e44-816f-8603"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="13e6-5056-a7a6-ef02" targetId="335a-5a90-3b7c-c034"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -2993,6 +2994,17 @@ Special Rule and modify the value of X on any version of the Auto-repair (X) Spe
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="fdb3-979e-70aa-1641"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Clade Operative" hidden="true" id="ad6a-c2f4-cf50-ccd9" type="selectionEntry" targetId="f26c-9918-9644-80f7" sortIndex="11">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Household Paradigms" id="5a46-d9a6-d191-6441" hidden="false">
       <categoryLinks>
@@ -3193,6 +3205,7 @@ Special Rule and modify the value of X on any version of the Auto-repair (X) Spe
     <catalogueLink type="catalogue" name="Traits" id="8f47-11e9-e332-a72d" targetId="df17-7a05-0826-6e22" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Wargear" id="68d3-b34f-88d1-ec88" targetId="fcc7-4319-bb04-2c25" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Weapons" id="ca9b-0046-f500-08d3" targetId="a22d-4dd0-c59d-57d3" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Agents of the Divisio Assassinorum" id="df50-53f3-acf3-6fcd" targetId="258b-97fb-2366-7344"/>
   </catalogueLinks>
   <sharedProfiles>
     <profile name="[Questoris Familia]" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="32ec-1c1a-df63-3253">
@@ -3346,6 +3359,62 @@ Once the cost has been paid, the Reactive Player must select one Unit under thei
       <categoryLinks>
         <categoryLink name="Lord of War" hidden="false" id="b7ab-a2e5-dccb-0a10" targetId="a46f-a465-0ead-d6b8" primary="true"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Vindicare Assassin" hidden="false" id="9cab-00af-c5af-aa66" type="selectionEntry" targetId="04c4-a7e6-0ba9-1959" sortIndex="901">
+      <categoryLinks>
+        <categoryLink name="Support" hidden="false" id="44c0-9f2b-9107-4aef" targetId="345f-9ba6-9b02-ed5c" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="335a-5a90-3b7c-c034" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Eversor Assassin" hidden="false" id="b20e-ef69-f527-4eac" type="selectionEntry" targetId="338d-2f4d-f7c6-8f5b" sortIndex="902">
+      <categoryLinks>
+        <categoryLink name="Support" hidden="false" id="eaa1-a32d-7c3e-ac2d" targetId="345f-9ba6-9b02-ed5c" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="335a-5a90-3b7c-c034" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Callidus Assassin" hidden="false" id="d9a5-4b0b-c491-4929" type="selectionEntry" targetId="29bc-487d-42cb-b139" sortIndex="903">
+      <categoryLinks>
+        <categoryLink name="Support" hidden="false" id="80af-0a45-a957-e16e" targetId="345f-9ba6-9b02-ed5c" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="335a-5a90-3b7c-c034" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Culexus Assassin" hidden="false" id="dc9f-9c86-eb95-3f42" type="selectionEntry" targetId="e43f-df95-094c-2e7d" sortIndex="904">
+      <categoryLinks>
+        <categoryLink name="Support" hidden="false" id="966e-fd1d-047d-973b" targetId="345f-9ba6-9b02-ed5c" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="335a-5a90-3b7c-c034" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Adamus Assassin" hidden="false" id="8d26-7d9f-19bf-8afc" type="selectionEntry" targetId="839f-c075-ca71-5c18" sortIndex="905">
+      <categoryLinks>
+        <categoryLink name="Support" hidden="false" id="caaa-0e6a-7bc1-aba4" targetId="345f-9ba6-9b02-ed5c" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="335a-5a90-3b7c-c034" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Venenum Assassin" hidden="false" id="9c93-ac35-1b1a-4e0b" type="selectionEntry" targetId="3858-f098-b947-3b91" sortIndex="906">
+      <categoryLinks>
+        <categoryLink name="Support" hidden="false" id="b2f8-efc5-f886-c4c0" targetId="345f-9ba6-9b02-ed5c" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="335a-5a90-3b7c-c034" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Vanus Infocyte Assassin" hidden="false" id="fdd1-6c77-b20a-1c43" type="selectionEntry" targetId="ac7a-3b38-f106-d2bc" sortIndex="907">
+      <categoryLinks>
+        <categoryLink name="Support" hidden="false" id="7ae1-5fce-1e85-111f" targetId="345f-9ba6-9b02-ed5c" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="335a-5a90-3b7c-c034" field="category"/>
+      </modifiers>
     </entryLink>
   </entryLinks>
   <sharedRules>
