@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="486f-b32a-ac87-73dd" name="                         VIII - Night Lords" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="10" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="486f-b32a-ac87-73dd" name="                         VIII - Night Lords" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="11" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Konrad Curze" hidden="false" id="f5fd-f425-c610-4a94">
       <selectionEntries>
@@ -210,16 +210,24 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                   <profiles>
                     <profile name="Escaton power claw" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="b2c9-981a-82d8-04ed">
                       <characteristics>
-                        <characteristic name="IM" typeId="6eec-4093-f946-1014"/>
-                        <characteristic name="AM" typeId="03d0-6094-84f0-e27e"/>
-                        <characteristic name="SM" typeId="4505-de6f-d4ae-6280"/>
-                        <characteristic name="AP" typeId="a014-126b-3b7b-27e8"/>
-                        <characteristic name="D" typeId="6a9d-4feb-065a-33e7"/>
-                        <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e"/>
-                        <characteristic name="Traits" typeId="76e3-c188-bc65-3467"/>
+                        <characteristic name="IM" typeId="6eec-4093-f946-1014">-2</characteristic>
+                        <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                        <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+3</characteristic>
+                        <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+                        <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+                        <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Shred (6+)</characteristic>
+                        <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
+                  <infoLinks>
+                    <infoLink name="Shred (X)" id="e87d-b0b9-ffa1-ff0b" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
+                      <comment>6+</comment>
+                      <modifiers>
+                        <modifier type="set" value="Shred (6+)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -267,25 +275,27 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="72b6-82be-4c94-ab91" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Chainblade" hidden="false" id="ff1b-4210-e8fc-5458">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b98c-0dae-df62-584a"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b18b-fe9d-4e75-b4f4"/>
-          </constraints>
-          <profiles>
-            <profile name="Chainblade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="bcbf-0a6f-d1f0-aa9a">
-              <characteristics>
-                <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
-                <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
-                <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+1</characteristic>
-                <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-                <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
-                <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+), Shred (6+)</characteristic>
-                <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Chain</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Chainblade" hidden="false" id="ff1b-4210-e8fc-5458">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b98c-0dae-df62-584a"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b18b-fe9d-4e75-b4f4"/>
+              </constraints>
+              <profiles>
+                <profile name="Chainblade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="bcbf-0a6f-d1f0-aa9a">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+1</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+), Shred (6+)</characteristic>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Chain</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
