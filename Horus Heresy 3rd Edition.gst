@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="29" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="30" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -305,47 +305,6 @@
         </modifier>
       </modifiers>
     </categoryEntry>
-    <categoryEntry name="Fortification Model Type" id="ae5b-4e74-db76-fa25" hidden="false">
-      <rules>
-        <rule name="Fortification" id="1498-b800-3984-286c" hidden="false">
-          <description>The following Rules apply to all Models with the Fortification Type:
-• A Model with the Fortification Type can never be moved by any Rule or effect after it has been Deployed.
-• A Model with the Fortification Type can never be placed into Reserves and must always be deployed at the start of a Battle.
-• A Model with the Fortification Type may never Hold, Control or Contest an Objective Marker of any kind.
-• A Model with the Fortification Type can never be affected by any kind of Status, including both Tactical Statuses and Cybertheurgic Statuses. However, such a Model can be affected by Cybertheurgic Rites that do not apply a Cybertheurgic Status.
-• A Unit that includes a Model with the Fortification Type may never be joined by any other Models of any Type.
-• A Model with the Fortification Type cannot make Reactions of any kind, unless a specific Sub-Type states otherwise.</description>
-        </rule>
-      </rules>
-    </categoryEntry>
-    <categoryEntry name="Emplacement Model Sub-Type" id="d1e7-50c0-0764-9de5" hidden="false">
-      <rules>
-        <rule name="Emplacement Sub-Type" id="4e4e-7b92-cb21-86de" hidden="false">
-          <description>The following Rules apply to all Models with the Emplacement Sub-Type:
-• A Model with the Emplacement Sub-Type has a Ballistic Skill Characteristic and can make Shooting Attacks.
-• A Model with the Emplacement Sub-Type can have the Return Fire and Interceptor Reactions made for it</description>
-        </rule>
-      </rules>
-    </categoryEntry>
-    <categoryEntry name="Bunker Model Sub-Type" id="7caa-3c9a-875c-5bca" hidden="false">
-      <rules>
-        <rule name="Bunker Sub-Type" id="894b-4c1c-9e09-0ffc" hidden="false">
-          <description>The following Rules apply to all Models with the Bunker Sub-Type:
-• A Model with the Bunker Sub-Type has a Transport Capacity Characteristic.
-• Only Models with the Infantry Type that have no variant of the Bulky (X) Special Rule may Embark on a Model with the Bunker Sub-Type.
-• A Model with the Bunker Sub-Type can be Captured</description>
-        </rule>
-      </rules>
-    </categoryEntry>
-    <categoryEntry name="Structure Model Sub-Type" id="2893-a655-1074-9831" hidden="false">
-      <rules>
-        <rule name="Structure Sub-Type" id="c363-0bc3-7cb7-6d63" hidden="false">
-          <description>The following Rules apply to all Models with the Structure Sub-Type:
-• A Model with the Structure Sub-Type can be Captured</description>
-        </rule>
-      </rules>
-    </categoryEntry>
-    <categoryEntry name="Fortification" id="7e2f-62cf-4e42-9e13" hidden="false"/>
     <categoryEntry name="Fortification Model Type" id="ae5b-4e74-db76-fa25" hidden="false">
       <rules>
         <rule name="Fortification" id="1498-b800-3984-286c" hidden="false">
@@ -12463,7 +12422,7 @@
         <categoryLink name="Prime Fast Attack" hidden="false" id="ed24-0e72-92b0-baae" targetId="c291-144b-3da6-37ed"/>
         <categoryLink name="Lord of War" hidden="false" id="e480-805a-cba5-0102" targetId="a46f-a465-0ead-d6b8"/>
         <categoryLink name="Warlord" hidden="false" id="a9f0-0981-4d0f-a835" targetId="22ee-7208-4089-b005"/>
-        <categoryLink name="Fortification" hidden="false" id="8261-22fc-c75e-2df6" targetId="7e2f-62cf-4e42-9e13" type="categoryEntry"/>
+        <categoryLink name="Fortification" hidden="false" id="8261-22fc-c75e-2df6" targetId="7e2f-62cf-4e42-9e13"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
