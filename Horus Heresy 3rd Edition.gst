@@ -13001,12 +13001,15 @@ All Models in any of these Units have their Faction Trait replaced with &apos;Al
       </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Army Configuration" hidden="true" id="a827-ee7f-fe7d-9e0e"/>
-    <selectionEntry type="upgrade" import="true" name="Clade Operative" hidden="false" id="f26c-9918-9644-80f7">
+    <selectionEntry type="upgrade" import="true" name="Clade Operative" hidden="true" id="f26c-9918-9644-80f7">
       <rules>
         <rule name="Clade Operative" id="be0c-7465-c500-8e2e" hidden="false">
           <description>Add three additional Support Force Organisation Slots to the Detachment that includes the Prime Slot with this Prime Advantage. These Force Organisation Slots may only be filled by Units selected from the Divisio Assassinorum Army List. This Prime Advantage may only be selected for a single Force Organisation Slot in an Army’s Primary Detachment.</description>
         </rule>
       </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="08f7-fb5e-031d-d378" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
