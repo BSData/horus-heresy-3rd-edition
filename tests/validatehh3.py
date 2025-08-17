@@ -109,7 +109,7 @@ class GameTests(unittest.TestCase):
                         constraint = constraints.children[0]
 
                         self.assertIn("includeChildSelections", constraint.attrib.keys())
-                        self.assertEquals(constraint.attrib["includeChildSelections"], "true")
+                        self.assertEqual(constraint.attrib["includeChildSelections"], "true")
 
     def test_forces_all_hide_if_no_LB(self):
         for parent_force in self.system.gst.root_node.get_child("forceEntries").children:
