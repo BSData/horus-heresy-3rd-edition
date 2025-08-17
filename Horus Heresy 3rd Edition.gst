@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="29" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="29" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -283,6 +284,51 @@
     <categoryEntry name="Support - Rapier Section, Basilisk Artillery Tank or Medusa Artillery tank units only" id="ada1-aac4-9802-9c3d" hidden="false"/>
     <categoryEntry name="Armour - Leman Russ Strike, Leman Russ Assault or Malcador Heavy tank units only" id="5725-7f8c-f02e-4df6" hidden="false"/>
     <categoryEntry name="War-engine - Aethon Heavy Sentinel Squadron units only" id="5ee3-236d-c224-67aa" hidden="false"/>
+    <categoryEntry name="Elites - Domitar Battle Maniple Only" id="826c-7b05-0f62-8b16" hidden="false"/>
+    <categoryEntry name="Support - Castellax Battle Maniple Only" id="61eb-11e2-1592-3161" hidden="false"/>
+    <categoryEntry name="Recon - Vorax Attack Maniple Only" id="0fb1-2125-2a33-b094" hidden="false"/>
+    <categoryEntry name="Fast Attack - Vulturax Stratos Squadron Only" id="7db9-74d1-6ba1-061e" hidden="false"/>
+    <categoryEntry name="Fortification Model Type" id="ae5b-4e74-db76-fa25" hidden="false">
+      <rules>
+        <rule name="Fortification" id="1498-b800-3984-286c" hidden="false">
+          <description>The following Rules apply to all Models with the Fortification Type:
+• A Model with the Fortification Type can never be moved by any Rule or effect after it has been Deployed.
+• A Model with the Fortification Type can never be placed into Reserves and must always be deployed at the start of a Battle.
+• A Model with the Fortification Type may never Hold, Control or Contest an Objective Marker of any kind.
+• A Model with the Fortification Type can never be affected by any kind of Status, including both Tactical Statuses and Cybertheurgic Statuses. However, such a Model can be affected by Cybertheurgic Rites that do not apply a Cybertheurgic Status.
+• A Unit that includes a Model with the Fortification Type may never be joined by any other Models of any Type.
+• A Model with the Fortification Type cannot make Reactions of any kind, unless a specific Sub-Type states otherwise.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Emplacement Model Sub-Type" id="d1e7-50c0-0764-9de5" hidden="false">
+      <rules>
+        <rule name="Emplacement Sub-Type" id="4e4e-7b92-cb21-86de" hidden="false">
+          <description>The following Rules apply to all Models with the Emplacement Sub-Type:
+• A Model with the Emplacement Sub-Type has a Ballistic Skill Characteristic and can make Shooting Attacks.
+• A Model with the Emplacement Sub-Type can have the Return Fire and Interceptor Reactions made for it</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Bunker Model Sub-Type" id="7caa-3c9a-875c-5bca" hidden="false">
+      <rules>
+        <rule name="Bunker Sub-Type" id="894b-4c1c-9e09-0ffc" hidden="false">
+          <description>The following Rules apply to all Models with the Bunker Sub-Type:
+• A Model with the Bunker Sub-Type has a Transport Capacity Characteristic.
+• Only Models with the Infantry Type that have no variant of the Bulky (X) Special Rule may Embark on a Model with the Bunker Sub-Type.
+• A Model with the Bunker Sub-Type can be Captured</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Structure Model Sub-Type" id="2893-a655-1074-9831" hidden="false">
+      <rules>
+        <rule name="Structure Sub-Type" id="c363-0bc3-7cb7-6d63" hidden="false">
+          <description>The following Rules apply to all Models with the Structure Sub-Type:
+• A Model with the Structure Sub-Type can be Captured</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Fortification" id="7e2f-62cf-4e42-9e13" hidden="false"/>
     <categoryEntry name="Fortification Model Type" id="ae5b-4e74-db76-fa25" hidden="false">
       <rules>
         <rule name="Fortification" id="1498-b800-3984-286c" hidden="false">
@@ -11724,7 +11770,6 @@
       </forceEntries>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="dae8-8a74-0984-6332" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="7842-421d-37b3-8ed4"/>
         <constraint type="max" value="0" field="3e8e-05ee-be52-12d6" scope="self" shared="false" id="0ab6-91a0-792e-4068" includeChildSelections="true" includeChildForces="true"/>
         <constraint type="max" value="0" field="159d-855c-533d-f592" scope="self" shared="false" id="22e2-3454-8828-04e6" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
