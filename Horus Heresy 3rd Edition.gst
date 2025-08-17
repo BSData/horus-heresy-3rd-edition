@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="27" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="28" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -195,10 +195,13 @@
     <categoryEntry name="Open Beta Release" id="c5ac-45c2-a8a9-e32c" hidden="false"/>
     <categoryEntry name="Command - Optae Only" id="ee42-a241-c364-489d" hidden="false"/>
     <categoryEntry name="The Hammer of Olympia Unlock" id="b7c9-7d2d-fb56-5486" hidden="true"/>
-    <categoryEntry name="Malefic" id="2de1-ddd6-ebb4-10df" hidden="false">
+    <categoryEntry name="Malefic Sub-type" id="2de1-ddd6-ebb4-10df" hidden="false" publicationId="e54c-7040-0f35-d85d" page="18">
       <rules>
-        <rule name="Malefic" id="56af-aee5-210b-7093" hidden="false">
-          <description>Malefic Rule</description>
+        <rule name="Malefic" id="56af-aee5-210b-7093" hidden="false" publicationId="e54c-7040-0f35-d85d" page="18">
+          <description>The following Rules apply to all Models with the Malefic Sub-Type:
+• When a Unit composed entirely of Models with the Malefic Sub-Type would gain a Tactical Status of any kind, that Tactical Status is not applied to the Models in the Unit, but instead the Unit suffers D3 automatic wounds with an AP of 2 and a Damage Characteristic of 1 against which no Saving Throws of any kind may be made. Once these wounds are resolved, no Tactical Status is applied to any Model in the Unit.
+• Models with the Malefic Sub-Type are not affected by Special Rules that negatively modify their Leadership, Cool, Willpower or Intelligence Characteristics.
+• No Model that does not also have the Malefic Sub-Type may join or be joined by a Unit that includes one or more Models with the Malefic Sub-Type. </description>
         </rule>
       </rules>
     </categoryEntry>
