@@ -11,16 +11,16 @@
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="true" id="f728-aae8-bedc-5a0c" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Prime Benefits" id="e5d1-992e-9efa-3c87" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Dummy Prime Benefit" hidden="false" id="1ee2-ab7a-9ca7-9002"/>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2aeb-7b4c-519c-3ef1"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="add" value="1c79-ecdf-9a64-84c9" field="category">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="345f-9ba6-9b02-ed5c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="43ad-1a96-172a-4051" type="selectionEntryGroup" targetId="e5d1-992e-9efa-3c87"/>
+          </entryLinks>
         </entryLink>
       </entryLinks>
       <infoLinks>
@@ -170,4 +170,24 @@ Osmeotic Regeneration: When this Gambit is selected, this Model’s Controlling 
       </categoryLinks>
     </entryLink>
   </entryLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Prime Benefits" id="e5d1-992e-9efa-3c87" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Dummy Prime Benefit" hidden="false" id="1ee2-ab7a-9ca7-9002">
+          <rules>
+            <rule name="Dummy Prime rule" id="b05f-eb26-4e29-6b09" hidden="false">
+              <description>blah blah blah</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="dad5-87fc-07ca-adaa" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7c0-abd7-dac5-e588"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2aeb-7b4c-519c-3ef1"/>
+      </constraints>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
