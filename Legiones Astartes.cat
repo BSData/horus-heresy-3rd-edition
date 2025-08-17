@@ -5936,6 +5936,12 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="06fb-09e1-891c-9602" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
         <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="e090-d77f-ad45-d22f" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="7"/>
+        <entryLink import="true" name="Master of Automata" hidden="false" id="23ff-fd90-cb25-0030" type="selectionEntry" targetId="abf3-3d0e-d457-3a59">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ba8-283c-d509-dd3c-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ba8-283c-d509-dd3c-max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="f17a-8cab-ca53-bba3" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -5952,7 +5958,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <modifier type="set" value="Battlesmith (1)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Master of Automata" id="8d15-5f6c-1edd-d9d6" hidden="false" type="rule" targetId="3ad7-36d0-16cc-4995"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" id="0b3d-819b-6b7d-8107" hidden="false" sortIndex="1">
@@ -14753,6 +14758,32 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="a384-f3cf-50b3-8d8f" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Castellax Battle Maniple" hidden="false" id="566a-34b5-2a7c-ccd0" type="selectionEntry" targetId="e8d6-2ba5-d10d-d617" sortIndex="301">
+      <categoryLinks>
+        <categoryLink name="Master of Automata" hidden="false" id="f9bf-fbf9-9ef2-3050" targetId="43f5-bc69-29b9-2286" primary="true"/>
+        <categoryLink name="Support" hidden="false" id="d3c6-9bf3-58ec-9d68" targetId="345f-9ba6-9b02-ed5c" primary="false"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7f03-c1a3-d883-8a98" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Castellax Destructor Maniple" hidden="false" id="7d8b-19ed-f91a-4905" type="selectionEntry" targetId="112f-1168-d07c-7f8f" sortIndex="302">
+      <categoryLinks>
+        <categoryLink name="Master of Automata" hidden="false" id="23ba-1c57-a1b9-8008" targetId="43f5-bc69-29b9-2286" primary="true"/>
+        <categoryLink name="Heavy Assault" hidden="false" id="ab42-dd4d-02f5-af47" targetId="3235-bd79-e9b1-60fa" primary="false"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d5e2-3162-f591-6a81" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Weapons" id="32ee-d63c-aa09-89f0" targetId="a22d-4dd0-c59d-57d3"/>
@@ -14760,6 +14791,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
     <catalogueLink type="catalogue" name="Special Rules" id="99a1-1a68-a0f8-0f8a" targetId="106b-693b-99f2-00c3"/>
     <catalogueLink type="catalogue" name="Assets" id="8f14-066d-cbec-7241" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Traits" id="3af5-5c5e-ab5a-134c" targetId="df17-7a05-0826-6e22" importRootEntries="false"/>
+    <catalogueLink type="catalogue" name="Mechanicum" id="9fc2-c3af-ae83-4d18" targetId="2f57-6e9d-8a7b-5c2e"/>
+    <catalogueLink type="catalogue" name="Mech Library" id="9f3b-f9bc-82a8-32b6" targetId="a159-1624-dbac-7af8"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Legion Pistols" id="4041-7fad-77cd-f9cf" hidden="false" sortIndex="4" collapsible="true">
