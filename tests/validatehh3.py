@@ -153,9 +153,9 @@ class GameTests(unittest.TestCase):
         total_model_count = 0
         for unit_id in self.unit_ids:
             unit = self.system.get_node_by_id(unit_id)
-            with self.subTest(f"{unit} should have be of type 'unit'"):
+            with self.subTest(f"{unit} should be of type 'unit'"):
                 self.assertEqual(unit.attrib["type"], "unit")
-            with self.subTest(f"{unit} should have contain models"):
+            with self.subTest(f"{unit} should contain models"):
                 entries = unit.get_child("selectionEntries")
                 self.assertIsNotNone(entries, "Should have entries")
                 model_count = 0
