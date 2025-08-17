@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="27" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="29" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -280,6 +280,18 @@
     <categoryEntry name="Support - Rapier Section, Basilisk Artillery Tank or Medusa Artillery tank units only" id="ada1-aac4-9802-9c3d" hidden="false"/>
     <categoryEntry name="Armour - Leman Russ Strike, Leman Russ Assault or Malcador Heavy tank units only" id="5725-7f8c-f02e-4df6" hidden="false"/>
     <categoryEntry name="War-engine - Aethon Heavy Sentinel Squadron units only" id="5ee3-236d-c224-67aa" hidden="false"/>
+    <categoryEntry name="Cult Operative" id="7225-3be0-fbfe-6473" hidden="true">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="031d-c827-1f33-97e5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f9c-27de-79b2-e67f"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -538,7 +550,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d1d0-2db5-32ec-522e" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Rewards of Treachery" hidden="false" id="2a0d-9fee-9c25-8560" targetId="fe7f-1287-4162-a65d"/>
+            <categoryLink name="Cult Operative" hidden="false" id="2a0d-9fee-9c25-8560" targetId="7225-3be0-fbfe-6473"/>
+            <categoryLink name="Rewards of Treachery" hidden="false" id="98cb-44e6-103b-4f50" targetId="fe7f-1287-4162-a65d"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="5611-db49-9e64-44c6-min" includeChildSelections="true"/>
@@ -12802,6 +12815,17 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
           </rules>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Cult Operative" hidden="true" id="d18a-a5b5-bd41-7111" type="selectionEntry" targetId="031d-c827-1f33-97e5" sortIndex="7">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Allegiance" id="9fa8-cbae-ef5e-4b7c" hidden="false">
       <selectionEntries>
@@ -12973,6 +12997,13 @@ All Models in any of these Units have their Faction Trait replaced with &apos;Al
       </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Army Configuration" hidden="true" id="a827-ee7f-fe7d-9e0e"/>
+    <selectionEntry type="upgrade" import="true" name="Cult Operative" hidden="false" id="031d-c827-1f33-97e5">
+      <rules>
+        <rule name="Cult Operative" id="0f81-c681-25aa-213f" hidden="false">
+          <description>Add one additional Support Force Organisation Slot to the Detachment that includes the Prime Slot with this Prime Advantage. This Force Organisation Slot may only be filled by a Unit selected from the Cults Abominatio Army List. This Prime Advantage may only be selected for a single Force Organisation Slot in an Army’s Primary Detachment.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Army Configuration" hidden="false" id="e528-702e-f73e-5890" type="selectionEntry" targetId="a827-ee7f-fe7d-9e0e">
