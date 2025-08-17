@@ -59,7 +59,7 @@ class GameTests(unittest.TestCase):
                         if other_link.id == primary_cat.id:
                             continue  # Skip the primary we've already checked.
                         self.assertIn(other_link.target_name, expected_secondaries,
-                                      f"(The link's primary category) is a faction: "
+                                      "The other categories may only be faction categories"
                                       )
 
     def test_forces_all_restrict_primes(self):
