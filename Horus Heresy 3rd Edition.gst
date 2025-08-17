@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="29" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="29" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -288,6 +287,24 @@
     <categoryEntry name="Support - Castellax Battle Maniple Only" id="61eb-11e2-1592-3161" hidden="false"/>
     <categoryEntry name="Recon - Vorax Attack Maniple Only" id="0fb1-2125-2a33-b094" hidden="false"/>
     <categoryEntry name="Fast Attack - Vulturax Stratos Squadron Only" id="7db9-74d1-6ba1-061e" hidden="false"/>
+    <categoryEntry name="Master of Automata" id="43f5-bc69-29b9-2286" hidden="true">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3fc2-eb91-c0cf-1c8c"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="058e-61f0-0bb1-a728"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="abf3-3d0e-d457-3a59" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="058e-61f0-0bb1-a728">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="abf3-3d0e-d457-3a59" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
     <categoryEntry name="Fortification Model Type" id="ae5b-4e74-db76-fa25" hidden="false">
       <rules>
         <rule name="Fortification" id="1498-b800-3984-286c" hidden="false">
@@ -629,6 +646,7 @@
               </constraints>
             </categoryLink>
             <categoryLink name="Rewards of Treachery" hidden="false" id="2a0d-9fee-9c25-8560" targetId="fe7f-1287-4162-a65d"/>
+            <categoryLink name="Master of Automata" hidden="false" id="c260-2ecb-3a86-a859" targetId="43f5-bc69-29b9-2286"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="5611-db49-9e64-44c6-min" includeChildSelections="true"/>
@@ -6448,11 +6466,6 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Elites" hidden="false" id="b46b-e1f5-8f77-f27e" targetId="276f-7a07-a56c-affd">
@@ -6490,11 +6503,6 @@
                 <modifier type="increment" value="1" field="294b-50f5-12d2-ad5d">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -12039,6 +12047,7 @@
               </constraints>
             </categoryLink>
             <categoryLink name="Rewards of Treachery" hidden="false" id="f2b2-8c74-65bf-19e4" targetId="fe7f-1287-4162-a65d"/>
+            <categoryLink name="Master of Automata" hidden="false" id="79b1-e748-f637-ff0d" targetId="43f5-bc69-29b9-2286"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -13072,6 +13081,14 @@ All Models in any of these Units have their Faction Trait replaced with &apos;Al
       </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Army Configuration" hidden="true" id="a827-ee7f-fe7d-9e0e"/>
+    <selectionEntry type="upgrade" import="true" name="Master of Automata" hidden="false" id="abf3-3d0e-d457-3a59">
+      <rules>
+        <rule name="Master of Automata" id="eb57-ecb6-05e0-ddef" hidden="false" page="37" publicationId="e54c-7040-0f35-d85d">
+          <description>&quot;This Special Rule allows a Praevian to be accompanied by a Unit of Battle-Automata.&quot;
+When a Model with this Special Rule is included in a Detachment, one additional Force Organization Slot is added to that Detachment. This Slot can only be filled with one Castellax Battle Maniple or Castellax Destructor Maniple Unit selected from Liber Mechanicum. When such a Unit is included in this way, its Cybernetica Trait is replaced with &apos;Bonded Automata&apos;, and this Unit can be included even thought it does not have the same Faction Trait as the other Units in that Detachment. In addition, a Model with this Special Rule may join a Friendly Unit that includes Models with the Automata Type. If a Model with this Special Rule joins a Unit with the Automata Type, the Leadership and Cool Characteristics of Models in that Unit are not reduced as a results of this, but may be modified by other rules as normal.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Army Configuration" hidden="false" id="e528-702e-f73e-5890" type="selectionEntry" targetId="a827-ee7f-fe7d-9e0e">

@@ -37,7 +37,7 @@ class GameTests(unittest.TestCase):
 
     def test_root_link_categories(self):
         expected_primaries = Heresy3e.BATTLEFIELD_ROLES.copy()
-        expected_primaries += ['Army Configuration', 'Rewards of Treachery']
+        expected_primaries += ['Army Configuration', 'Rewards of Treachery', "Master of Automata"]
         expected_secondaries = Heresy3e.FACTIONS.copy()
         for file in self.system.files:
             entry_links_node = file.root_node.get_child(tag='entryLinks')
@@ -57,7 +57,7 @@ class GameTests(unittest.TestCase):
                         if other_link.id == primary_cat.id:
                             continue  # Skip the primary we've already checked.
                         self.assertIn(other_link.target_name, expected_secondaries,
-                                      f"(The link's primary category) is a faction: "
+                                      "The other categories may only be faction categories"
                                       )
 
     def test_forces_all_restrict_primes(self):

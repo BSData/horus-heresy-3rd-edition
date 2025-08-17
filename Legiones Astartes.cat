@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="29" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="30" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -501,7 +501,32 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               <modifiers>
                 <modifier type="set" value="12" field="a106-a779-d272-5e93">
                   <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="9e29-3097-e7b7-8f26" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="ebe2-88e3-d933-65a4" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Centurion with Jump Pack" field="name">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="ebe2-88e3-d933-65a4" shared="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="Infantry (Command, Antigrav)" field="50fc-9241-d4a2-045b">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="ebe2-88e3-d933-65a4" shared="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="14" field="a106-a779-d272-5e93">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="Centurion with Jump Pack" field="name">
@@ -514,53 +539,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
-                <modifier type="set" value="Infantry (Command, Antigrav)" field="50fc-9241-d4a2-045b">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="9e29-3097-e7b7-8f26" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="14" field="a106-a779-d272-5e93">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
-                  </conditions>
-                </modifier>
               </modifiers>
             </profile>
           </profiles>
-          <modifiers>
-            <modifier type="set" value="Centurion with Jump Pack" field="name">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="9e29-3097-e7b7-8f26" shared="true"/>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="bd0c-2020-4e97-bf5f" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="9871-cb62-5283-2216" id="7d33-919e-4084-a326" primary="false" name="Command Model Sub-type"/>
           </categoryLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Jump Pack" hidden="false" id="302b-12a7-4445-89aa" sortIndex="2">
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
-            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3d9-b00b-4a4a-5739" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="add" value="294e-d64c-39dc-f687" field="category"/>
-          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -803,6 +788,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <condition type="instanceOf" value="1" field="selections" scope="force" childId="340c-1d4f-1f31-fb70" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="add" value="294e-d64c-39dc-f687" field="category"/>
               </modifiers>
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
@@ -819,6 +805,9 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f30-8075-ca27-30a3" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="add" value="294e-d64c-39dc-f687" field="category"/>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -5971,6 +5960,12 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="06fb-09e1-891c-9602" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
         <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="e090-d77f-ad45-d22f" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="7"/>
+        <entryLink import="true" name="Master of Automata" hidden="false" id="23ff-fd90-cb25-0030" type="selectionEntry" targetId="abf3-3d0e-d457-3a59">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ba8-283c-d509-dd3c-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ba8-283c-d509-dd3c-max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="f17a-8cab-ca53-bba3" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -5987,7 +5982,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <modifier type="set" value="Battlesmith (1)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Master of Automata" id="8d15-5f6c-1edd-d9d6" hidden="false" type="rule" targetId="3ad7-36d0-16cc-4995"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" id="0b3d-819b-6b7d-8107" hidden="false" sortIndex="1">
@@ -14796,6 +14790,16 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="a384-f3cf-50b3-8d8f" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Castellax Battle Maniple" hidden="false" id="566a-34b5-2a7c-ccd0" type="selectionEntry" targetId="e8d6-2ba5-d10d-d617" sortIndex="301">
+      <categoryLinks>
+        <categoryLink name="Master of Automata" hidden="false" id="f9bf-fbf9-9ef2-3050" targetId="43f5-bc69-29b9-2286" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Castellax Destructor Maniple" hidden="false" id="7d8b-19ed-f91a-4905" type="selectionEntry" targetId="112f-1168-d07c-7f8f" sortIndex="302">
+      <categoryLinks>
+        <categoryLink name="Master of Automata" hidden="false" id="23ba-1c57-a1b9-8008" targetId="43f5-bc69-29b9-2286" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Weapons" id="32ee-d63c-aa09-89f0" targetId="a22d-4dd0-c59d-57d3"/>
@@ -14803,6 +14807,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
     <catalogueLink type="catalogue" name="Special Rules" id="99a1-1a68-a0f8-0f8a" targetId="106b-693b-99f2-00c3"/>
     <catalogueLink type="catalogue" name="Assets" id="8f14-066d-cbec-7241" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Traits" id="3af5-5c5e-ab5a-134c" targetId="df17-7a05-0826-6e22" importRootEntries="false"/>
+    <catalogueLink type="catalogue" name="Mechanicum" id="9fc2-c3af-ae83-4d18" targetId="2f57-6e9d-8a7b-5c2e"/>
+    <catalogueLink type="catalogue" name="Mech Library" id="9f3b-f9bc-82a8-32b6" targetId="a159-1624-dbac-7af8"/>
     <catalogueLink type="catalogue" name="Battlefield Fortifications" id="3f7f-50ec-1f52-d1b3" targetId="258b-97fb-2366-7344"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
