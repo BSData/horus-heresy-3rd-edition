@@ -201,7 +201,7 @@
           <description>The following Rules apply to all Models with the Malefic Sub-Type:
 • When a Unit composed entirely of Models with the Malefic Sub-Type would gain a Tactical Status of any kind, that Tactical Status is not applied to the Models in the Unit, but instead the Unit suffers D3 automatic wounds with an AP of 2 and a Damage Characteristic of 1 against which no Saving Throws of any kind may be made. Once these wounds are resolved, no Tactical Status is applied to any Model in the Unit.
 • Models with the Malefic Sub-Type are not affected by Special Rules that negatively modify their Leadership, Cool, Willpower or Intelligence Characteristics.
-• No Model that does not also have the Malefic Sub-Type may join or be joined by a Unit that includes one or more Models with the Malefic Sub-Type. </description>
+• No Model that does not also have the Malefic Sub-Type may join or be joined by a Unit that includes one or more Models with the Malefic Sub-Type.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -726,7 +726,14 @@
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="acc1-f897-a117-9b4a" shared="true"/>
                       </conditions>
-                      <comment>Talons</comment>
+                      <comment>Custodes</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                      </conditions>
+                      <comment>Sisters</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -1128,6 +1135,13 @@
                       </conditions>
                       <comment>Talons</comment>
                     </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                      </conditions>
+                      <comment>Sisters</comment>
+                    </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
@@ -1324,6 +1338,13 @@
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="acc1-f897-a117-9b4a" shared="true"/>
                       </conditions>
                       <comment>Talons</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                      </conditions>
+                      <comment>Sisters</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -3028,6 +3049,13 @@
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="acc1-f897-a117-9b4a" shared="true"/>
                       </conditions>
                       <comment>Talons</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                      </conditions>
+                      <comment>Sisters</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -12381,6 +12409,7 @@
         <categoryLink name="Prime Fast Attack" hidden="false" id="ed24-0e72-92b0-baae" targetId="c291-144b-3da6-37ed"/>
         <categoryLink name="Lord of War" hidden="false" id="e480-805a-cba5-0102" targetId="a46f-a465-0ead-d6b8"/>
         <categoryLink name="Warlord" hidden="false" id="a9f0-0981-4d0f-a835" targetId="22ee-7208-4089-b005"/>
+        <categoryLink name="Clade Operative" hidden="false" id="0f22-af59-a81b-bcff" targetId="335a-5a90-3b7c-c034"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
