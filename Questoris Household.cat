@@ -2692,7 +2692,7 @@ A Model with an ion gauntlet shield has a 5+ Invulnerable Save against Penetrati
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="6465-1296-c54b-3c7a"/>
           </constraints>
         </forceEntry>
-        <forceEntry name="Additional - Automata Talon - Coming Soon" id="1ace-97ad-6d7a-fa81" hidden="true" sortIndex="4">
+        <forceEntry name="Additional - Automata Talon" id="1ace-97ad-6d7a-fa81" hidden="true" sortIndex="4">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -2708,10 +2708,95 @@ A Model with an ion gauntlet shield has a 5+ Invulnerable Save against Penetrati
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="increment" value="1" field="aeb6-37bc-34e4-5636">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f601-43c9-4fe5-b455" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="aeb6-37bc-34e4-5636">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f601-43c9-4fe5-b455" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="aeb6-37bc-34e4-5636">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="efcf-d588-f077-98e4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="aeb6-37bc-34e4-5636"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Elites - Domitar Battle Maniple Only" hidden="false" id="1a5f-5559-6304-d681" targetId="826c-7b05-0f62-8b16">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="932c-f369-c2e0-189f"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="932c-f369-c2e0-189f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="Prime Elites" hidden="false" id="c7ce-fd51-3c0d-4ae6" targetId="276f-7a07-a56c-affd">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4d34-dfe4-db8a-600b" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Support - Castellax Battle Maniple Only" hidden="false" id="c9bc-94a0-f819-8296" targetId="61eb-11e2-1592-3161">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e49-c324-f754-6186"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="5e49-c324-f754-6186">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="Prime Support" hidden="false" id="f5b6-1052-df84-b5da" targetId="1c79-ecdf-9a64-84c9">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="47d9-c3c3-90ea-1584" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Recon - Vorax Attack Maniple Only" hidden="false" id="7100-f7f8-9196-4cb5" targetId="0fb1-2125-2a33-b094">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5d0-ff12-e976-33d5"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="b5d0-ff12-e976-33d5">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="Prime Recon" hidden="false" id="6b52-44c6-8249-1fc9" targetId="6348-ecd0-714d-042a">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1d70-9967-5455-497c" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Fast Attack" hidden="false" id="e7fb-9921-5d49-50eb" targetId="c291-144b-3da6-37ed">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f94f-5bcf-3ac4-c913" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Fast Attack - Vulturax Stratos Squadron Only" hidden="false" id="745b-2478-87fc-7461" targetId="7db9-74d1-6ba1-061e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e65-7eb7-0bc5-871f"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="6e65-7eb7-0bc5-871f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+          </categoryLinks>
         </forceEntry>
         <forceEntry name="Additional - Support Banner" id="4e1e-944f-a1c1-a9a8" hidden="true" sortIndex="3">
           <categoryLinks>
@@ -3205,6 +3290,7 @@ Special Rule and modify the value of X on any version of the Auto-repair (X) Spe
     <catalogueLink type="catalogue" name="Traits" id="8f47-11e9-e332-a72d" targetId="df17-7a05-0826-6e22" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Wargear" id="68d3-b34f-88d1-ec88" targetId="fcc7-4319-bb04-2c25" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Weapons" id="ca9b-0046-f500-08d3" targetId="a22d-4dd0-c59d-57d3" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Mechanicum" id="ce8b-ffe8-e082-4c6a" targetId="2f57-6e9d-8a7b-5c2e"/>
     <catalogueLink type="catalogue" name="Agents of the Divisio Assassinorum" id="df50-53f3-acf3-6fcd" targetId="258b-97fb-2366-7344"/>
   </catalogueLinks>
   <sharedProfiles>
@@ -3359,6 +3445,50 @@ Once the cost has been paid, the Reactive Player must select one Unit under thei
       <categoryLinks>
         <categoryLink name="Lord of War" hidden="false" id="b7ab-a2e5-dccb-0a10" targetId="a46f-a465-0ead-d6b8" primary="true"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Domitar Battle Maniple" hidden="false" id="7230-61cc-805d-656e" type="selectionEntry" targetId="cefd-9aca-871d-3263">
+      <categoryLinks>
+        <categoryLink targetId="5d5e-958f-e388-50b5" id="5698-693f-7cd1-b06d" primary="true" name="Elites"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="[Questoris Familia]" id="5291-2499-63db-6942" hidden="false" type="profile" targetId="32ec-1c1a-df63-3253"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set-primary" value="826c-7b05-0f62-8b16" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Castellax Battle Maniple" hidden="false" id="ce0e-2124-78c2-b1c0" type="selectionEntry" targetId="e8d6-2ba5-d10d-d617">
+      <categoryLinks>
+        <categoryLink targetId="345f-9ba6-9b02-ed5c" id="a74f-09b4-97b3-a130" primary="true" name="Support"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="[Questoris Familia]" id="a50f-46d2-0e7e-a769" hidden="false" type="profile" targetId="32ec-1c1a-df63-3253"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set-primary" value="61eb-11e2-1592-3161" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Vorax Attack Maniple" hidden="false" id="b668-14af-31af-66e2" type="selectionEntry" targetId="de2e-f9b5-abe6-b8b5">
+      <categoryLinks>
+        <categoryLink targetId="2b65-a3f2-620a-dc58" id="2f4f-b339-a675-62eb" primary="true" name="Recon"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="[Questoris Familia]" id="4a34-d006-7d62-09ba" hidden="false" type="profile" targetId="32ec-1c1a-df63-3253"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set-primary" value="0fb1-2125-2a33-b094" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Vultarax Stratos Squadron" hidden="false" id="8711-9a83-b33a-9638" type="selectionEntry" targetId="710e-f1ea-0061-d3cb">
+      <categoryLinks>
+        <categoryLink targetId="cf96-8891-3f9a-8921" id="b8c7-2d89-1945-b924" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="[Questoris Familia]" id="fd76-d4c2-a14a-ea39" hidden="false" type="profile" targetId="32ec-1c1a-df63-3253"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set-primary" value="7db9-74d1-6ba1-061e" field="category"/>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Vindicare Assassin" hidden="false" id="9cab-00af-c5af-aa66" type="selectionEntry" targetId="04c4-a7e6-0ba9-1959" sortIndex="901">
       <categoryLinks>

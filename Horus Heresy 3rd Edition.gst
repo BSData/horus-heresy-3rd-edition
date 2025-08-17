@@ -283,6 +283,28 @@
     <categoryEntry name="Support - Rapier Section, Basilisk Artillery Tank or Medusa Artillery tank units only" id="ada1-aac4-9802-9c3d" hidden="false"/>
     <categoryEntry name="Armour - Leman Russ Strike, Leman Russ Assault or Malcador Heavy tank units only" id="5725-7f8c-f02e-4df6" hidden="false"/>
     <categoryEntry name="War-engine - Aethon Heavy Sentinel Squadron units only" id="5ee3-236d-c224-67aa" hidden="false"/>
+    <categoryEntry name="Elites - Domitar Battle Maniple Only" id="826c-7b05-0f62-8b16" hidden="false"/>
+    <categoryEntry name="Support - Castellax Battle Maniple Only" id="61eb-11e2-1592-3161" hidden="false"/>
+    <categoryEntry name="Recon - Vorax Attack Maniple Only" id="0fb1-2125-2a33-b094" hidden="false"/>
+    <categoryEntry name="Fast Attack - Vulturax Stratos Squadron Only" id="7db9-74d1-6ba1-061e" hidden="false"/>
+    <categoryEntry name="Master of Automata" id="43f5-bc69-29b9-2286" hidden="true">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3fc2-eb91-c0cf-1c8c"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="058e-61f0-0bb1-a728"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="abf3-3d0e-d457-3a59" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="058e-61f0-0bb1-a728">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="abf3-3d0e-d457-3a59" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
     <categoryEntry name="Clade Operative" id="335a-5a90-3b7c-c034" hidden="true">
       <constraints>
         <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="64ba-8bb0-fd85-8292"/>
@@ -554,6 +576,7 @@
               </constraints>
             </categoryLink>
             <categoryLink name="Rewards of Treachery" hidden="false" id="2a0d-9fee-9c25-8560" targetId="fe7f-1287-4162-a65d"/>
+            <categoryLink name="Master of Automata" hidden="false" id="c260-2ecb-3a86-a859" targetId="43f5-bc69-29b9-2286"/>
             <categoryLink name="Clade Operative" hidden="false" id="2a0d-9fee-9c25-8560" targetId="335a-5a90-3b7c-c034"/>
           </categoryLinks>
           <constraints>
@@ -6402,11 +6425,6 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Elites" hidden="false" id="b46b-e1f5-8f77-f27e" targetId="276f-7a07-a56c-affd">
@@ -6444,11 +6462,6 @@
                 <modifier type="increment" value="1" field="294b-50f5-12d2-ad5d">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -11724,7 +11737,6 @@
       </forceEntries>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="dae8-8a74-0984-6332" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="7842-421d-37b3-8ed4"/>
         <constraint type="max" value="0" field="3e8e-05ee-be52-12d6" scope="self" shared="false" id="0ab6-91a0-792e-4068" includeChildSelections="true" includeChildForces="true"/>
         <constraint type="max" value="0" field="159d-855c-533d-f592" scope="self" shared="false" id="22e2-3454-8828-04e6" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
@@ -11994,6 +12006,7 @@
               </constraints>
             </categoryLink>
             <categoryLink name="Rewards of Treachery" hidden="false" id="f2b2-8c74-65bf-19e4" targetId="fe7f-1287-4162-a65d"/>
+            <categoryLink name="Master of Automata" hidden="false" id="79b1-e748-f637-ff0d" targetId="43f5-bc69-29b9-2286"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -13030,6 +13043,14 @@ All Models in any of these Units have their Faction Trait replaced with &apos;Al
       </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Army Configuration" hidden="true" id="a827-ee7f-fe7d-9e0e"/>
+    <selectionEntry type="upgrade" import="true" name="Master of Automata" hidden="false" id="abf3-3d0e-d457-3a59">
+      <rules>
+        <rule name="Master of Automata" id="eb57-ecb6-05e0-ddef" hidden="false" page="37" publicationId="e54c-7040-0f35-d85d">
+          <description>&quot;This Special Rule allows a Praevian to be accompanied by a Unit of Battle-Automata.&quot;
+When a Model with this Special Rule is included in a Detachment, one additional Force Organization Slot is added to that Detachment. This Slot can only be filled with one Castellax Battle Maniple or Castellax Destructor Maniple Unit selected from Liber Mechanicum. When such a Unit is included in this way, its Cybernetica Trait is replaced with &apos;Bonded Automata&apos;, and this Unit can be included even thought it does not have the same Faction Trait as the other Units in that Detachment. In addition, a Model with this Special Rule may join a Friendly Unit that includes Models with the Automata Type. If a Model with this Special Rule joins a Unit with the Automata Type, the Leadership and Cool Characteristics of Models in that Unit are not reduced as a results of this, but may be modified by other rules as normal.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Clade Operative" hidden="true" id="f26c-9918-9644-80f7">
       <rules>
         <rule name="Clade Operative" id="be0c-7465-c500-8e2e" hidden="false">
