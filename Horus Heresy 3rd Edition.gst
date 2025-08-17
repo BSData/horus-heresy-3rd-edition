@@ -12455,7 +12455,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <categoryLink name="Apex Detachment" hidden="false" id="bf3e-2861-1eb5-3a48" targetId="6b46-02bb-c8aa-142d" primary="true"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="How to change wargear: For models with individual options, use the split stack (![Img](/assets/icons/split-off.png)) button to customize each group individually" hidden="false" id="eb57-d57d-1cc4-6e8e" defaultAmount="1">
+    <selectionEntry type="upgrade" import="true" name="How to change wargear: For models with individual options, use the two overlapping squares with the plus to split the stack and customize each group individually" hidden="false" id="eb57-d57d-1cc4-6e8e" defaultAmount="1">
       <categoryLinks>
         <categoryLink targetId="c5ac-45c2-a8a9-e32c" id="dd6f-133a-bce9-47c6" primary="true" name="Open Beta Release"/>
       </categoryLinks>
