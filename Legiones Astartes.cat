@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="32" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="33" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -1920,7 +1920,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="2499-7239-685f-8465" id="1936-f697-49a2-d0f4" primary="true" name="War-engine"/>
         <categoryLink targetId="38d4-d720-8009-acd3" id="f666-3e6e-fcb9-a919" primary="false" name="Walker Model Type"/>
         <categoryLink targetId="1e7d-9066-28d2-97a0" id="35a1-0cf5-293d-7497" primary="false" name="Heavy Model Sub-Type"/>
       </categoryLinks>
@@ -3803,7 +3802,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       <categoryLinks>
         <categoryLink targetId="38d4-d720-8009-acd3" id="020e-be04-005a-2d98" primary="false" name="Walker Model Type"/>
         <categoryLink targetId="1e7d-9066-28d2-97a0" id="b4e9-abd9-e754-e27d" primary="false" name="Heavy Model Sub-Type"/>
-        <categoryLink targetId="2499-7239-685f-8465" id="5fca-88dd-d94d-6f3f" primary="true" name="War-engine"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Bulky (X)" id="ea97-9842-0a80-f18c" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
@@ -10136,7 +10134,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <infoLink name="Implacable Advance" id="da52-7b30-ceac-362d" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink targetId="2499-7239-685f-8465" id="c70a-f25f-9e39-cf1c" primary="true" name="War-engine"/>
         <categoryLink targetId="38d4-d720-8009-acd3" id="e827-5f42-18f3-30e9" primary="false" name="Walker Model Type"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -14606,6 +14603,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       <categoryLinks>
         <categoryLink targetId="2499-7239-685f-8465" id="d92a-fb67-4edc-ad3f" primary="true" name="War-engine"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set-primary" value="d00a-e269-2ed3-8fc4" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="parent" childId="d00a-e269-2ed3-8fc4" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Saturnine Dreadnought" hidden="false" id="cf93-8bbf-ceb2-b76a" type="selectionEntry" targetId="b26e-1244-2dbc-2b6d" sortIndex="44">
       <categoryLinks>
@@ -14834,41 +14843,45 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <categoryLink name="Master of Automata" hidden="false" id="23ba-1c57-a1b9-8008" targetId="43f5-bc69-29b9-2286" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Contemptor Dreadnought" hidden="false" id="3709-fba1-2d6f-fe59" type="selectionEntry" targetId="3337-0b90-6ead-cba1">
-      <categoryLinks>
-        <categoryLink name="War-engine" hidden="false" id="2d17-abaf-8013-4466" targetId="2499-7239-685f-8465" primary="false"/>
-        <categoryLink targetId="d00a-e269-2ed3-8fc4" id="f54c-afec-2c12-ec18" primary="true" name="The Iron-clad"/>
-      </categoryLinks>
-      <modifiers>
-        <modifier type="add" value="5a95-e564-96b2-8dc9" field="category"/>
-      </modifiers>
-    </entryLink>
     <entryLink import="true" name="Deredeo Dreadnought" hidden="false" id="94c0-c163-06b7-11be" type="selectionEntry" targetId="10ad-8abc-c6ef-97ad">
       <categoryLinks>
         <categoryLink name="War-engine" hidden="false" id="4f14-fda1-2f90-bf1c" targetId="2499-7239-685f-8465" primary="false"/>
-        <categoryLink targetId="d00a-e269-2ed3-8fc4" id="e64c-94b0-5dc3-c609" primary="true" name="The Iron-clad"/>
+        <categoryLink targetId="d00a-e269-2ed3-8fc4" id="4caa-c906-90b6-68b5" primary="true" name="The Iron-clad"/>
       </categoryLinks>
       <comment>War-engine</comment>
       <modifiers>
         <modifier type="add" value="5a95-e564-96b2-8dc9" field="category"/>
+        <modifier type="set-primary" value="d00a-e269-2ed3-8fc4" field="category"/>
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Leviathan Dreadnought" hidden="false" id="e81a-462b-1037-010a" type="selectionEntry" targetId="9d6f-298d-743c-da5d">
       <categoryLinks>
         <categoryLink name="War-engine" hidden="false" id="282a-dec1-12ba-9bc5" targetId="2499-7239-685f-8465" primary="false"/>
-        <categoryLink targetId="d00a-e269-2ed3-8fc4" id="2136-8603-5fdd-300e" primary="true" name="The Iron-clad"/>
+        <categoryLink targetId="d00a-e269-2ed3-8fc4" id="19c7-edaa-dfed-1e05" primary="true" name="The Iron-clad"/>
       </categoryLinks>
       <comment>War-engine</comment>
       <modifiers>
         <modifier type="add" value="5a95-e564-96b2-8dc9" field="category"/>
+        <modifier type="set-primary" value="d00a-e269-2ed3-8fc4" field="category"/>
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Saturnine Dreadnought" hidden="false" id="6a85-018e-2545-3b43" type="selectionEntry" targetId="b26e-1244-2dbc-2b6d">
       <categoryLinks>
         <categoryLink name="War-engine" hidden="false" id="9ead-5951-7fb9-1ec8" targetId="2499-7239-685f-8465" primary="false"/>
-        <categoryLink targetId="d00a-e269-2ed3-8fc4" id="f1f5-f87a-491b-cfe4" primary="true" name="The Iron-clad"/>
+        <categoryLink targetId="d00a-e269-2ed3-8fc4" id="d155-a9a9-1735-5268" primary="true" name="The Iron-clad"/>
       </categoryLinks>
       <modifiers>
+        <modifier type="add" value="5a95-e564-96b2-8dc9" field="category"/>
+        <modifier type="set-primary" value="d00a-e269-2ed3-8fc4" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Contemptor Dreadnought" hidden="false" id="a171-22b3-803d-10fa" type="selectionEntry" targetId="3337-0b90-6ead-cba1">
+      <categoryLinks>
+        <categoryLink targetId="2499-7239-685f-8465" id="725c-5642-a2dd-d611" primary="false" name="War-engine"/>
+        <categoryLink targetId="d00a-e269-2ed3-8fc4" id="61bf-ca19-3cde-b47d" primary="true" name="The Iron-clad"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="d00a-e269-2ed3-8fc4" field="category"/>
         <modifier type="add" value="5a95-e564-96b2-8dc9" field="category"/>
       </modifiers>
     </entryLink>
