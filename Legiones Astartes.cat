@@ -1902,6 +1902,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="Walker (Heavy, Champion)" field="50fc-9241-d4a2-045b">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <constraints>
@@ -1912,6 +1919,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <categoryLink targetId="38d4-d720-8009-acd3" id="d7a4-158c-414c-aafc" primary="false" name="Walker Model Type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="4c9c-944b-42f9-b6f1" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -3790,11 +3804,25 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="Walker (Champion)" field="50fc-9241-d4a2-045b">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <categoryLinks>
             <categoryLink targetId="38d4-d720-8009-acd3" id="8fdf-d5ae-4aa5-9421" primary="false" name="Walker Model Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -3897,6 +3925,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="Walker (Champion)" field="50fc-9241-d4a2-045b">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <constraints>
@@ -3906,6 +3941,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <categoryLinks>
             <categoryLink targetId="38d4-d720-8009-acd3" id="f848-2dc8-430d-9e0b" primary="false" name="Walker Model Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -10158,11 +10200,25 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="Walker (Champion)" field="50fc-9241-d4a2-045b">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <categoryLinks>
             <categoryLink targetId="38d4-d720-8009-acd3" id="81ff-efe4-4b38-9d85" primary="false" name="Walker Model Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -14921,35 +14977,23 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <categoryLink targetId="d00a-e269-2ed3-8fc4" id="4caa-c906-90b6-68b5" primary="true" name="The Iron-clad"/>
       </categoryLinks>
       <comment>Iron Hands - The Iron-clad</comment>
-      <modifiers>
-        <modifier type="add" value="5a95-e564-96b2-8dc9" field="category"/>
-      </modifiers>
     </entryLink>
     <entryLink import="true" name="Leviathan Dreadnought" hidden="false" id="e81a-462b-1037-010a" type="selectionEntry" targetId="9d6f-298d-743c-da5d">
       <categoryLinks>
         <categoryLink targetId="d00a-e269-2ed3-8fc4" id="19c7-edaa-dfed-1e05" primary="true" name="The Iron-clad"/>
       </categoryLinks>
       <comment>Iron Hands - The Iron-clad</comment>
-      <modifiers>
-        <modifier type="add" value="5a95-e564-96b2-8dc9" field="category"/>
-      </modifiers>
     </entryLink>
     <entryLink import="true" name="Saturnine Dreadnought" hidden="false" id="6a85-018e-2545-3b43" type="selectionEntry" targetId="b26e-1244-2dbc-2b6d">
       <categoryLinks>
         <categoryLink targetId="d00a-e269-2ed3-8fc4" id="d155-a9a9-1735-5268" primary="true" name="The Iron-clad"/>
       </categoryLinks>
-      <modifiers>
-        <modifier type="add" value="5a95-e564-96b2-8dc9" field="category"/>
-      </modifiers>
       <comment>Iron Hands - The Iron-clad</comment>
     </entryLink>
     <entryLink import="true" name="Contemptor Dreadnought" hidden="false" id="a171-22b3-803d-10fa" type="selectionEntry" targetId="3337-0b90-6ead-cba1">
       <categoryLinks>
         <categoryLink targetId="d00a-e269-2ed3-8fc4" id="61bf-ca19-3cde-b47d" primary="true" name="The Iron-clad"/>
       </categoryLinks>
-      <modifiers>
-        <modifier type="add" value="5a95-e564-96b2-8dc9" field="category"/>
-      </modifiers>
       <comment>Iron Hands - The Iron-clad</comment>
     </entryLink>
   </entryLinks>
