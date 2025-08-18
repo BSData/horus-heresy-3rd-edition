@@ -151,6 +151,22 @@ class GameTests(unittest.TestCase):
 
                     self.assertGreaterEqual(prime_options_total, 1, "There should be at least one prime option")
 
+    def test_all_high_command_have_detachment_choice(self):
+        high_command_id = self.system.categories["High Command"].id
+        for category_link in self.system.all_nodes.filter(lambda x: x.target_id == high_command_id):
+            print(category_link.parent.parent)
+            unit_link = category_link.parent.parent
+            if not unit_link.is_link():
+                continue # Skip over things that aren't unit links.
+            unit = unit_link.target
+            with self.subTest(f"{unit} should have a link to 'High Command Detachment Choice'"):
+                entry_links = unit.get_child("entryLinks")
+                self.assertIsNotNone(entry_links, "Should have entry links")
+                high_command_detachment_choice_link = entry_links.get_child(tag='entryLink',
+                                                                            attrib={'targetId': '31c4-c9d1-fdba-4b21'})
+                self.assertIsNotNone(high_command_detachment_choice_link,
+                                     "Should have a link to 'High Command Detachment Choice'")
+
     def test_all_units_are_units(self):
         total_model_count = 0
         for unit_id in self.unit_ids:
