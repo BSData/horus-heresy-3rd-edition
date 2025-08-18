@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="31" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="33" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -1882,7 +1882,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Saturnine Dreadnought" hidden="false" id="b26e-1244-2dbc-2b6d" sortIndex="44">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Saturnine Dreadnought" hidden="false" id="5893-7ec0-df11-7329">
+        <selectionEntry type="model" import="true" name="Saturnine Dreadnought" hidden="false" id="5893-7ec0-df11-7329" sortIndex="1">
           <profiles>
             <profile name="Saturnine Dreadnought" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="1d79-c4d4-ac14-dc8f">
               <characteristics>
@@ -1902,6 +1902,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="Walker (Heavy, Champion)" field="50fc-9241-d4a2-045b">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <constraints>
@@ -1912,6 +1919,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <categoryLink targetId="38d4-d720-8009-acd3" id="d7a4-158c-414c-aafc" primary="false" name="Walker Model Type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="4c9c-944b-42f9-b6f1" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -1919,13 +1933,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="2499-7239-685f-8465" id="1936-f697-49a2-d0f4" primary="true" name="War-engine"/>
-        <categoryLink targetId="38d4-d720-8009-acd3" id="f666-3e6e-fcb9-a919" primary="false" name="Walker Model Type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="35a1-0cf5-293d-7497" primary="false" name="Heavy Model Sub-Type"/>
-      </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="This Model may have its heavy plasma bombard exchanged for one of the following:" id="695c-8a3b-da24-1a01" hidden="false" defaultSelectionEntryId="81cc-d504-fec1-c1c6">
+        <selectionEntryGroup name="This Model may have its heavy plasma bombard exchanged for one of the following:" id="695c-8a3b-da24-1a01" hidden="false" defaultSelectionEntryId="81cc-d504-fec1-c1c6" sortIndex="5">
           <entryLinks>
             <entryLink import="true" name="Heavy plasma bombard" hidden="false" id="81cc-d504-fec1-c1c6" type="selectionEntry" targetId="ae1d-6f32-be87-b3c0" sortIndex="1"/>
             <entryLink import="true" name="Disintegrator cannon" hidden="false" id="4b91-1646-8803-b0a9" type="selectionEntry" targetId="4da0-ea75-bac1-5951" sortIndex="2">
@@ -1949,7 +1958,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93e9-71af-c863-49f4" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="This Model may have its disintegrator exchanged for one of the following:" id="6785-194f-2868-736a" hidden="false" defaultSelectionEntryId="d00f-bab9-ece5-bfbc">
+        <selectionEntryGroup name="This Model may have its disintegrator exchanged for one of the following:" id="6785-194f-2868-736a" hidden="false" defaultSelectionEntryId="d00f-bab9-ece5-bfbc" sortIndex="4">
           <entryLinks>
             <entryLink import="true" name="Disintegrator cannon" hidden="false" id="d00f-bab9-ece5-bfbc" type="selectionEntry" targetId="4da0-ea75-bac1-5951" sortIndex="1"/>
             <entryLink import="true" name="Heavy plasma bombard" hidden="false" id="94d1-aad1-b93b-df8f" type="selectionEntry" targetId="ae1d-6f32-be87-b3c0" sortIndex="2"/>
@@ -1961,7 +1970,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa0a-311e-5d30-11dc" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Both of this Model&apos;s photonic incinerators may be exchanged for one of the following:" id="717a-95ae-5034-04a4" hidden="false" defaultSelectionEntryId="2d32-b642-f57d-024b">
+        <selectionEntryGroup name="Both of this Model&apos;s photonic incinerators may be exchanged for one of the following:" id="717a-95ae-5034-04a4" hidden="false" defaultSelectionEntryId="2d32-b642-f57d-024b" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Photonic incinerator" hidden="false" id="2d32-b642-f57d-024b" type="selectionEntry" targetId="51f6-0820-9443-77e0" sortIndex="1">
               <modifiers>
@@ -1992,7 +2001,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Thermal Diffraction Field" hidden="false" id="bc5c-71ac-19d0-1187" type="selectionEntry" targetId="ae43-8418-ecb1-ef6e">
+        <entryLink import="true" name="Thermal Diffraction Field" hidden="false" id="bc5c-71ac-19d0-1187" type="selectionEntry" targetId="ae43-8418-ecb1-ef6e" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e57-891d-094e-5bca" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6894-e8e8-736c-26a8" includeChildSelections="false"/>
@@ -2002,6 +2011,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="8cd2-bd3a-4ad0-84c8" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="670f-745d-764c-abe5" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
@@ -3788,11 +3804,25 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="Walker (Champion)" field="50fc-9241-d4a2-045b">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <categoryLinks>
             <categoryLink targetId="38d4-d720-8009-acd3" id="8fdf-d5ae-4aa5-9421" primary="false" name="Walker Model Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -3800,11 +3830,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="38d4-d720-8009-acd3" id="020e-be04-005a-2d98" primary="false" name="Walker Model Type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="b4e9-abd9-e754-e27d" primary="false" name="Heavy Model Sub-Type"/>
-        <categoryLink targetId="2499-7239-685f-8465" id="5fca-88dd-d94d-6f3f" primary="true" name="War-engine"/>
-      </categoryLinks>
       <infoLinks>
         <infoLink name="Bulky (X)" id="ea97-9842-0a80-f18c" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
           <modifiers>
@@ -3825,6 +3850,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="f3a1-79b7-e0f8-bc05" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="155b-0047-db69-53d5" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
@@ -3893,6 +3925,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="Walker (Champion)" field="50fc-9241-d4a2-045b">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <constraints>
@@ -3902,6 +3941,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <categoryLinks>
             <categoryLink targetId="38d4-d720-8009-acd3" id="f848-2dc8-430d-9e0b" primary="false" name="Walker Model Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -3914,6 +3960,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="0a5d-514c-138e-8da2" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Phosphex discharger" hidden="false" id="a45b-f38a-1f3b-1747" type="selectionEntry" targetId="f78a-8994-5cb1-5341">
           <constraints>
@@ -3941,10 +3994,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </infoLink>
         <infoLink name="Implacable Advance" id="f85c-9cb9-bc0f-5a6e" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="38d4-d720-8009-acd3" id="5e91-9aeb-c6d9-c08e" primary="false" name="Walker Model Type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="c245-28c9-ba9f-0119" primary="false" name="Heavy Model Sub-Type"/>
-      </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapon Options" id="9471-b387-8e1b-4b5a" hidden="false" sortIndex="2" defaultSelectionEntryId="d949-5b9f-f2dd-a0e4">
           <selectionEntryGroups>
@@ -4427,7 +4476,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </selectionEntryGroup>
             <selectionEntryGroup name="May exchange Bolt pistol for:" id="2165-7d66-56a4-9a2e" hidden="false" defaultSelectionEntryId="43d6-a430-ef8f-774d" sortIndex="0">
               <entryLinks>
-                <entryLink import="true" name="Bolt pistol" hidden="false" id="43d6-a430-ef8f-774d" type="selectionEntry" targetId="2942-f783-d627-33c5" defaultAmount="" sortIndex="1">
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="43d6-a430-ef8f-774d" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
                   </costs>
@@ -10151,11 +10200,25 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="Walker (Champion)" field="50fc-9241-d4a2-045b">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <categoryLinks>
             <categoryLink targetId="38d4-d720-8009-acd3" id="81ff-efe4-4b38-9d85" primary="false" name="Walker Model Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -10168,6 +10231,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="152e-2998-c579-a42f" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Havoc launcher" hidden="false" id="ee18-c108-0a84-3500" type="selectionEntry" targetId="0295-e35d-2ed6-f28a" sortIndex="3">
           <constraints>
@@ -10195,10 +10265,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </infoLink>
         <infoLink name="Implacable Advance" id="da52-7b30-ceac-362d" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="2499-7239-685f-8465" id="c70a-f25f-9e39-cf1c" primary="true" name="War-engine"/>
-        <categoryLink targetId="38d4-d720-8009-acd3" id="e827-5f42-18f3-30e9" primary="false" name="Walker Model Type"/>
-      </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapon Options" id="88e3-e79c-c369-6dc7" hidden="false" sortIndex="2">
           <selectionEntryGroups>
@@ -14666,6 +14732,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       <categoryLinks>
         <categoryLink targetId="2499-7239-685f-8465" id="d92a-fb67-4edc-ad3f" primary="true" name="War-engine"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set-primary" value="d00a-e269-2ed3-8fc4" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="parent" childId="d00a-e269-2ed3-8fc4" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Saturnine Dreadnought" hidden="false" id="cf93-8bbf-ceb2-b76a" type="selectionEntry" targetId="b26e-1244-2dbc-2b6d" sortIndex="44">
       <categoryLinks>
@@ -14894,6 +14972,30 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <categoryLink name="Master of Automata" hidden="false" id="23ba-1c57-a1b9-8008" targetId="43f5-bc69-29b9-2286" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Deredeo Dreadnought" hidden="false" id="94c0-c163-06b7-11be" type="selectionEntry" targetId="10ad-8abc-c6ef-97ad" sortIndex="402">
+      <categoryLinks>
+        <categoryLink targetId="d00a-e269-2ed3-8fc4" id="4caa-c906-90b6-68b5" primary="true" name="War-engine - Upgraded by The Iron-clad"/>
+      </categoryLinks>
+      <comment>Iron Hands - The Iron-clad</comment>
+    </entryLink>
+    <entryLink import="true" name="Leviathan Dreadnought" hidden="false" id="e81a-462b-1037-010a" type="selectionEntry" targetId="9d6f-298d-743c-da5d" sortIndex="403">
+      <categoryLinks>
+        <categoryLink targetId="d00a-e269-2ed3-8fc4" id="19c7-edaa-dfed-1e05" primary="true" name="War-engine - Upgraded by The Iron-clad"/>
+      </categoryLinks>
+      <comment>Iron Hands - The Iron-clad</comment>
+    </entryLink>
+    <entryLink import="true" name="Saturnine Dreadnought" hidden="false" id="6a85-018e-2545-3b43" type="selectionEntry" targetId="b26e-1244-2dbc-2b6d" sortIndex="404">
+      <categoryLinks>
+        <categoryLink targetId="d00a-e269-2ed3-8fc4" id="d155-a9a9-1735-5268" primary="true" name="War-engine - Upgraded by The Iron-clad"/>
+      </categoryLinks>
+      <comment>Iron Hands - The Iron-clad</comment>
+    </entryLink>
+    <entryLink import="true" name="Contemptor Dreadnought" hidden="false" id="a171-22b3-803d-10fa" type="selectionEntry" targetId="3337-0b90-6ead-cba1" sortIndex="401">
+      <categoryLinks>
+        <categoryLink targetId="d00a-e269-2ed3-8fc4" id="61bf-ca19-3cde-b47d" primary="true" name="War-engine - Upgraded by The Iron-clad"/>
+      </categoryLinks>
+      <comment>Iron Hands - The Iron-clad</comment>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Weapons" id="32ee-d63c-aa09-89f0" targetId="a22d-4dd0-c59d-57d3"/>
@@ -14903,7 +15005,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
     <catalogueLink type="catalogue" name="Traits" id="3af5-5c5e-ab5a-134c" targetId="df17-7a05-0826-6e22" importRootEntries="false"/>
     <catalogueLink type="catalogue" name="Mechanicum" id="9fc2-c3af-ae83-4d18" targetId="2f57-6e9d-8a7b-5c2e"/>
     <catalogueLink type="catalogue" name="Mech Library" id="9f3b-f9bc-82a8-32b6" targetId="a159-1624-dbac-7af8"/>
-    <catalogueLink type="catalogue" name="Battlefield Fortifications" id="3f7f-50ec-1f52-d1b3" targetId="258b-97fb-2366-7344"/>
+    <catalogueLink type="catalogue" name="Agents of the Divisio Assassinorum" id="3f7f-50ec-1f52-d1b3" targetId="258b-97fb-2366-7344"/>
     <catalogueLink type="catalogue" name="Agents of the Divisio Assassinorum" id="1d5f-251b-26e0-1a12" targetId="258b-97fb-2366-7344" importRootEntries="true"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
@@ -16345,11 +16447,6 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
           <comment>Night Lords</comment>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="The Iron-clad" hidden="true" id="176e-7ae1-a65d-636c">
-          <rules>
-            <rule name="The Iron-clad" id="1211-b3d7-bebf-2e38" hidden="false">
-              <description>This Prime Advantage can only be selected once per Army. Add one additional War Engine Battlefield Role Slot to the Detachment that includes the Prime Force Organisation Slot with this Prime Advantage. A Unit that is selected to fill that Slot gains the Champion Sub-Type if it did not already have it.</description>
-            </rule>
-          </rules>
           <comment>Iron Hands</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2a25-0565-a4af-3cc7" includeChildSelections="true" includeChildForces="true"/>
@@ -16362,14 +16459,14 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
               </conditions>
             </modifier>
           </modifiers>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Not Yet Implemented: Gain War Engine slot that gives that unit Champion Sub-type" hidden="false" id="940b-b5da-3b26-d03d">
+          <entryLinks>
+            <entryLink import="true" name="The Iron-clad" hidden="false" id="e1fa-45fa-333a-78f1" type="selectionEntry" targetId="0d32-12ae-3831-a4d6">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f4b-64aa-3c20-d6eb"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="471a-1de4-d3f3-ef56"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="380f-1799-5d1d-57c6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a57-be0c-3a96-210b"/>
               </constraints>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Paladin of the Hekatonystika" hidden="true" id="b824-c0ad-804e-0026">
           <comment>Dark Angels</comment>
@@ -16387,7 +16484,7 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
           </constraints>
           <rules>
             <rule name="Paladin of the Hekatonystika" id="4f22-da6c-0ce3-8aba" hidden="false">
-              <description>This Prime Advantage can only be selected once per Army. One Model in the Unit selected to fill a Prime Force Organisation Slot with this Prime Advantage gains the following benefits:
+              <description>This Prime Advantage can only be selected once per Army. One Model in the Unit selected to fill a Prime Force Organisation Slot with this Prime Advantage gains the following benefits:
 
 
 • Has its Base Weapon Skill Characteristic modified by +1.
@@ -16899,11 +16996,11 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
             </profile>
             <profile name="Crushing Force" typeId="7d31-7144-3b28-c850" typeName="Psychic Ranged Weapon" hidden="false" id="6839-ed41-6a24-3f0d">
               <characteristics>
-                <characteristic name="R" typeId="6d86-f7c6-c184-8bf4">24</characteristic>
-                <characteristic name="FP" typeId="99a5-a4b9-8862-5092">3</characteristic>
-                <characteristic name="RS" typeId="ff4a-ab25-1be8-4545">4</characteristic>
-                <characteristic name="AP" typeId="c8d6-d2ec-1344-07e3">-</characteristic>
-                <characteristic name="D" typeId="e840-f63c-5bc4-27b3">1</characteristic>
+                <characteristic name="R" typeId="6d86-f7c6-c184-8bf4">12</characteristic>
+                <characteristic name="FP" typeId="99a5-a4b9-8862-5092">1</characteristic>
+                <characteristic name="RS" typeId="ff4a-ab25-1be8-4545">9</characteristic>
+                <characteristic name="AP" typeId="c8d6-d2ec-1344-07e3">4</characteristic>
+                <characteristic name="D" typeId="e840-f63c-5bc4-27b3">2</characteristic>
                 <characteristic name="Special Rules" typeId="e87b-e7a3-5562-a456">Armourbane, Force (D)</characteristic>
                 <characteristic name="Traits" typeId="a229-21ce-4177-c4b1">Psychic</characteristic>
               </characteristics>
