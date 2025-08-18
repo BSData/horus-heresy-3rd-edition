@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="33" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="34" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -13310,6 +13310,25 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
               <description>Add one additional Force Organisation Slot to the Detachment that includes the Prime Slot, this Slot may be any Battlefield Role other than High Command, Command, Warlord or Lord of War. This Advantage may only be selected once per Detachment.</description>
             </rule>
           </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Interdiction Cadres" hidden="true" id="ef90-dc9f-fc38-6b5d" sortIndex="8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f02e-fdea-3bdf-3270"/>
+          </constraints>
+          <comment># Tactical + Despoiler squad only</comment>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7b69-a372-a803-9c6f" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="44bd-10de-2055-40f6" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment># Tactical + Despoiler squad only</comment>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="33" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="34" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -16257,25 +16257,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
     </selectionEntryGroup>
     <selectionEntryGroup name="Legion Prime Benefits" id="d3a2-e7f2-9da7-fd3c" hidden="false" sortIndex="11">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Interdiction Cadres" hidden="true" id="ef90-dc9f-fc38-6b5d">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f02e-fdea-3bdf-3270"/>
-          </constraints>
-          <comment># Tactical + Despoiler squad only</comment>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7b69-a372-a803-9c6f" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="44bd-10de-2055-40f6" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-              <comment># Tactical + Despoiler squad only</comment>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Sagyar Mazan" hidden="true" id="3e87-9001-c142-6487">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
