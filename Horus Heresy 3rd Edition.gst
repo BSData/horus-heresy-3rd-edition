@@ -448,6 +448,13 @@
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cd1-9b97-f2e4-f29a" includeChildSelections="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="4cd1-9b97-f2e4-f29a">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
             <categoryLink name="Retinue" hidden="false" id="f43b-bfc9-2115-97d7" targetId="a38e-50ff-310f-f19e">
               <constraints>
@@ -2902,6 +2909,13 @@
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6ac-cfd0-4b4e-00b3" includeChildSelections="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="d6ac-cfd0-4b4e-00b3">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
             <categoryLink name="Retinue" hidden="false" id="3d7b-8a45-1d12-3b8e" targetId="a38e-50ff-310f-f19e">
               <constraints>
@@ -13630,6 +13644,13 @@
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60ca-4b4f-c056-648d" includeChildSelections="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="60ca-4b4f-c056-648d">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
             <categoryLink name="Retinue" hidden="false" id="d7b4-10ad-b290-13eb" targetId="a38e-50ff-310f-f19e">
               <constraints>
@@ -14576,6 +14597,8 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b980-187b-2b17-d635" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="remove" value="d9a6-9b5f-b18a-4d63" field="category" scope="unit"/>
+            <modifier type="set-primary" value="6dbf-654a-f06f-2d69" field="category" scope="unit"/>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Master Sergeant" hidden="false" id="2c90-1d52-7075-59d3" sortIndex="1">
@@ -14829,7 +14852,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="One Apex Detachment" hidden="false" id="0889-888b-e3fe-1d5b" defaultAmount="1" publicationId="7d63-5df4-c656-52de" page="280">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b9c-073f-d1cd-a405" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b9c-073f-d1cd-a405" includeChildSelections="false" automatic="true"/>
               </constraints>
               <categoryLinks>
                 <categoryLink name="+1 Apex from High Command" hidden="false" id="1c95-9290-e696-b447" targetId="8a97-1585-93e7-c561" primary="false"/>
@@ -14847,23 +14870,23 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98f0-4cab-2f85-12db-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98f0-4cab-2f85-12db-max" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98f0-4cab-2f85-12db-max" includeChildSelections="false" automatic="true"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c6c-bd23-0596-2c52" automatic="true"/>
       </constraints>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="parent" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="0" field="98f0-4cab-2f85-12db-min">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="parent" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+            <condition type="equalTo" value="1" field="selections" scope="unit" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
         <modifier type="set" value="0" field="98f0-4cab-2f85-12db-max">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="parent" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+            <condition type="equalTo" value="1" field="selections" scope="unit" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="5c6c-bd23-0596-2c52">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="unit" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
