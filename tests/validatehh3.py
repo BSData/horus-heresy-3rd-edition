@@ -35,6 +35,14 @@ class GameTests(unittest.TestCase):
                 if primary_cat.target_name in battlefield_roles:
                     self.unit_ids.append(child.target_id)
 
+        self.battlefield_roles_that_can_be_prime = Heresy3e.BATTLEFIELD_ROLES.copy()
+
+        # Warlords aren't ever prime? High command can be in EC.
+        self.battlefield_roles_that_can_be_prime.remove("Warlord")
+        # Lords of war are only prime in knights, make a separate test for this.
+        self.battlefield_roles_that_can_be_prime.remove("Lord of War")
+        self.battlefield_roles_that_can_be_prime.remove("Fortification")
+
     def test_root_link_categories(self):
         expected_primaries = Heresy3e.BATTLEFIELD_ROLES.copy()
         expected_primaries += ['Army Configuration', 'Rewards of Treachery', "Master of Automata",
@@ -71,6 +79,26 @@ class GameTests(unittest.TestCase):
                 # print("\t", child_force)
                 if child_force.get_child("categoryLinks") is None:
                     continue
+
+                # First check that for each of the referenced slots, that slot is restricting primes.
+                slots_in_detachment: [str] = []
+                prime_restrictions_in_detachment: [str] = []
+                for category_link in child_force.get_child("categoryLinks").children:
+                    if category_link.target_name.startswith("Prime "):
+                        prime_restrictions_in_detachment.append(category_link.target_name)
+                    else:
+                        slots_in_detachment.append(category_link.target_name)
+                slot_name: str
+                for slot_name in slots_in_detachment:
+                    # If this is a special version of the slot, get the regular name.
+                    slot = slot_name.partition(" - ")[0]
+                    if slot not in self.battlefield_roles_that_can_be_prime:
+                        continue
+                    with self.subTest(f"Prime restriction on {slot} because of {slot_name} in {child_force}"):
+                        self.assertIn("Prime " + slot, prime_restrictions_in_detachment,
+                                      f"Expected 'Prime {slot}' because of '{slot_name}'")
+
+                # Then check each prime restriction is set appropriately.
                 for category_link in child_force.get_child("categoryLinks").children:
                     # print("\t", "\t", category_link)
                     if not category_link.target_name.startswith("Prime "):
@@ -148,13 +176,7 @@ class GameTests(unittest.TestCase):
                 self.assertIsNotNone(allied_links.get_child("forceEntryLink", attrib={"targetId": child_force.id}))
 
     def test_all_units_have_prime(self):
-        battlefield_roles = Heresy3e.BATTLEFIELD_ROLES.copy()
 
-        # Warlords aren't ever prime? High command can be in EC.
-        battlefield_roles.remove("Warlord")
-        # Lords of war are only prime in knights, make a separate test for this.
-        battlefield_roles.remove("Lord of War")
-        battlefield_roles.remove("Fortification")
 
         # First, get all units
         unit_ids = []
@@ -168,7 +190,7 @@ class GameTests(unittest.TestCase):
                 if file.name == "Questoris Household.cat":
                     if primary_cat.target_name == "Lord of War":
                         unit_ids.append(child.target_id)
-                elif primary_cat.target_name in battlefield_roles:
+                elif primary_cat.target_name in self.battlefield_roles_that_can_be_prime:
                     unit_ids.append(child.target_id)
 
         for unit_id in unit_ids:
