@@ -3692,7 +3692,7 @@
           </modifiers>
           <comment>Mechanicum only</comment>
         </forceEntry>
-        <forceEntry name="Apex - The Hearth of Power" id="0594-4b9b-675b-f633" hidden="true" sortIndex="15">
+        <forceEntry name="Apex - The Heart of Power" id="0594-4b9b-675b-f633" hidden="true" sortIndex="15">
           <categoryLinks>
             <categoryLink name="Retinue" hidden="false" id="c224-b95f-a73a-ea18" targetId="a38e-50ff-310f-f19e">
               <constraints>
