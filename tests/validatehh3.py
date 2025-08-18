@@ -85,6 +85,38 @@ class GameTests(unittest.TestCase):
 
                         self.assertIn("includeChildSelections", constraint.attrib.keys())
 
+    def test_forces_all_hide_if_no_LB(self):
+        for parent_force in self.system.gst.root_node.get_child("forceEntries").children:
+            # print(parent_force)
+            if parent_force.get_child("forceEntries") is None:
+                continue
+            for child_force in parent_force.get_child("forceEntries").children:
+                # print("\t", child_force)
+                if child_force.get_child("categoryLinks") is None:
+                    continue
+                for category_link in child_force.get_child("categoryLinks").children:
+                    # print("\t", "\t", category_link)
+                    if category_link.target_name not in Heresy3e.BATTLEFIELD_ROLES:
+                        continue
+                    with self.subTest(f"{category_link.target_name} on {child_force}"):
+                        constraints = category_link.get_child("constraints")
+                        self.assertIsNotNone(constraints, "All force org slots should have constraints")
+                        max_constraint = constraints.get_child("constraint", {"type": "max"})
+                        self.assertIsNotNone(max_constraint, "All force org slots should have a max constraint")
+                        if max_constraint.attrib["value"] != '0':
+                            continue  # Not actually a relevant category link
+                        # At this point we have a slot with max 0
+                        modifiers = category_link.get_child("modifiers")
+                        self.assertIsNotNone(modifiers, "All force org slots that are max 0 should have modifiers")
+                        modify_max_constraint = modifiers.get_child("modifier", {"field": max_constraint.id})
+                        self.assertIsNotNone(modify_max_constraint, "Should have a modifier to max")
+                        # Not actually checking that we have the stuff for LB set on that max modifier,
+                        # just checking it exists.
+                        modify_hidden = modifiers.get_child("modifier",
+                                                            {"type": "set", "field": "hidden", "value": "true"})
+                        self.assertIsNotNone(modify_hidden,
+                                             "Should have a modifier for hidden as well as increment max constraint")
+
     def test_all_allied_detachments_linked(self):
         crusade = self.system.get_node_by_id("8562-592c-8d4b-a1f0")
         allied_links = self.system.get_node_by_id("256b-b8a8-017a-75e9").get_child("forceEntryLinks")
@@ -157,7 +189,7 @@ class GameTests(unittest.TestCase):
             print(category_link.parent.parent)
             unit_link = category_link.parent.parent
             if not unit_link.is_link():
-                continue # Skip over things that aren't unit links.
+                continue  # Skip over things that aren't unit links.
             unit = unit_link.target
             with self.subTest(f"{unit} should have a link to 'High Command Detachment Choice'"):
                 entry_links = unit.get_child("entryLinks")
