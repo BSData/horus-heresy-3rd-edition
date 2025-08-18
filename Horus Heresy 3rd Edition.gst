@@ -305,6 +305,55 @@
         </modifier>
       </modifiers>
     </categoryEntry>
+    <categoryEntry name="Heavy Assault - Castellax Destructor Maniple only " id="d49e-048b-a8e2-ba52" hidden="false">
+      <comment>Solar Auxilia - Iron Tercio</comment>
+    </categoryEntry>
+    <categoryEntry name="Troops - Tech-Priest unit only" id="3fda-dd8a-a6d5-b782" hidden="false">
+      <comment>Solar Auxilia - Iron Tercio</comment>
+    </categoryEntry>
+    <categoryEntry name="Support - Castellax Battle Maniple or Thallax Cohort Unit only" id="0fd5-6d2d-e2cc-d22a" hidden="false">
+      <comment>Solar Auxilia - Iron Tercio</comment>
+    </categoryEntry>
+    <categoryEntry name="Heavy Assault - Castellax Destructor Maniple only " id="d49e-048b-a8e2-ba52" hidden="false">
+      <comment>Solar Auxilia - Iron Tercio</comment>
+    </categoryEntry>
+    <categoryEntry name="Troops - Tech-Priest unit only" id="3fda-dd8a-a6d5-b782" hidden="false">
+      <comment>Solar Auxilia - Iron Tercio</comment>
+    </categoryEntry>
+    <categoryEntry name="Support - Castellax Battle Maniple or Thallax Cohort Unit only" id="0fd5-6d2d-e2cc-d22a" hidden="false">
+      <comment>Solar Auxilia - Iron Tercio</comment>
+    </categoryEntry>
+    <categoryEntry name="Elites - Domitar Battle Maniple Only" id="826c-7b05-0f62-8b16" hidden="false"/>
+    <categoryEntry name="Support - Castellax Battle Maniple Only" id="61eb-11e2-1592-3161" hidden="false"/>
+    <categoryEntry name="Recon - Vorax Attack Maniple Only" id="0fb1-2125-2a33-b094" hidden="false"/>
+    <categoryEntry name="Fast Attack - Vulturax Stratos Squadron Only" id="7db9-74d1-6ba1-061e" hidden="false"/>
+    <categoryEntry name="Master of Automata" id="43f5-bc69-29b9-2286" hidden="true">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3fc2-eb91-c0cf-1c8c"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="058e-61f0-0bb1-a728"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="abf3-3d0e-d457-3a59" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="058e-61f0-0bb1-a728">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="abf3-3d0e-d457-3a59" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Heavy Assault - Castellax Destructor Maniple only " id="d49e-048b-a8e2-ba52" hidden="false">
+      <comment>Solar Auxilia - Iron Tercio</comment>
+    </categoryEntry>
+    <categoryEntry name="Troops - Tech-Priest unit only" id="3fda-dd8a-a6d5-b782" hidden="false">
+      <comment>Solar Auxilia - Iron Tercio</comment>
+    </categoryEntry>
+    <categoryEntry name="Support - Castellax Battle Maniple or Thallax Cohort Unit only" id="0fd5-6d2d-e2cc-d22a" hidden="false">
+      <comment>Solar Auxilia - Iron Tercio</comment>
+    </categoryEntry>
     <categoryEntry name="Fortification Model Type" id="ae5b-4e74-db76-fa25" hidden="false">
       <rules>
         <rule name="Fortification" id="1498-b800-3984-286c" hidden="false">
@@ -346,6 +395,18 @@
       </rules>
     </categoryEntry>
     <categoryEntry name="Fortification" id="7e2f-62cf-4e42-9e13" hidden="false"/>
+    <categoryEntry name="Clade Operative" id="335a-5a90-3b7c-c034" hidden="true">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="64ba-8bb0-fd85-8292"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f26c-9918-9644-80f7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
     <categoryEntry name="Cult Operative" id="7225-3be0-fbfe-6473" hidden="true">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -619,6 +680,7 @@
             <categoryLink name="Cult Operative" hidden="false" id="2a0d-9fee-9c25-8560" targetId="7225-3be0-fbfe-6473"/>
             <categoryLink name="Rewards of Treachery" hidden="false" id="98cb-44e6-103b-4f50" targetId="fe7f-1287-4162-a65d"/>
             <categoryLink name="Master of Automata" hidden="false" id="c260-2ecb-3a86-a859" targetId="43f5-bc69-29b9-2286"/>
+            <categoryLink name="Clade Operative" hidden="false" id="2a0d-9fee-9c25-8560" targetId="335a-5a90-3b7c-c034"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="5611-db49-9e64-44c6-min" includeChildSelections="true"/>
@@ -790,7 +852,14 @@
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="acc1-f897-a117-9b4a" shared="true"/>
                       </conditions>
-                      <comment>Talons</comment>
+                      <comment>Custodes</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                      </conditions>
+                      <comment>Sisters</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -1192,6 +1261,13 @@
                       </conditions>
                       <comment>Talons</comment>
                     </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                      </conditions>
+                      <comment>Sisters</comment>
+                    </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
@@ -1388,6 +1464,13 @@
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="acc1-f897-a117-9b4a" shared="true"/>
                       </conditions>
                       <comment>Talons</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                      </conditions>
+                      <comment>Sisters</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -3063,6 +3146,13 @@
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="acc1-f897-a117-9b4a" shared="true"/>
                       </conditions>
                       <comment>Talons</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                      </conditions>
+                      <comment>Sisters</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -12256,20 +12346,35 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Iron Tercio" id="9a10-a2d9-5a87-a5a9" hidden="true" sortIndex="35">
           <categoryLinks>
-            <categoryLink name="Troops" hidden="false" id="13dd-708a-30bc-4c72" targetId="88e6-d373-4152-0dd8">
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="9939-ad32-7608-7ad1" targetId="1a65-8b23-419b-b30f"/>
+            <categoryLink name="Troops - Tech-Priest unit only" hidden="false" id="c907-0af7-cce9-9ba8" targetId="3fda-dd8a-a6d5-b782">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b57b-c01a-64d4-dd3c" includeChildSelections="false"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="9939-ad32-7608-7ad1" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Support" hidden="false" id="84a6-92e2-1afd-8497" targetId="345f-9ba6-9b02-ed5c">
+            <categoryLink name="Support - Castellax Battle Maniple or Thallax Cohort Unit only" hidden="false" id="0599-b368-516c-e9d6" targetId="0fd5-6d2d-e2cc-d22a">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7143-e998-ba72-8b90"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Heavy Assault" hidden="false" id="828a-d1ae-eaee-d2b7" targetId="3235-bd79-e9b1-60fa">
+            <categoryLink name="Heavy Assault - Castellax Destructor Maniple only " hidden="false" id="5f2c-c81c-7da0-c8cd" targetId="d49e-048b-a8e2-ba52">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c24e-c0f6-4c76-42e0"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Troops" hidden="false" id="6df7-ca21-0d63-a85a" targetId="c3f9-a7f3-984b-3fda">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="fe83-d6de-9a98-6510" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Support" hidden="false" id="2ec2-5dbd-13e8-c33e" targetId="1c79-ecdf-9a64-84c9">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="24ba-3983-841f-90ea" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Heavy Assault" hidden="false" id="7f5c-1af0-93d2-8fb2" targetId="1e95-35f0-1353-ffa1">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="31e1-e18e-dde5-9b16" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
           </categoryLinks>
@@ -12286,7 +12391,7 @@
               </conditionGroups>
               <comment>Solar Auxilia</comment>
             </modifier>
-            <modifier type="increment" value="1" field="f66f-803d-5433-bb35">
+            <modifier type="increment" value="10" field="f66f-803d-5433-bb35">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="28ba-8660-5266-8674" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
@@ -12296,6 +12401,11 @@
           <constraints>
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="f66f-803d-5433-bb35" includeChildSelections="true"/>
           </constraints>
+          <rules>
+            <rule name="Iron Tercio" id="d67e-d02f-4598-ed8a" hidden="false">
+              <description>Units selected as part of this Detachment which contains both one or more Tech-priests and one or more Models with the Automata Type may Hold, Control and Contest Objectives.</description>
+            </rule>
+          </rules>
         </forceEntry>
       </forceEntries>
       <constraints>
@@ -12986,6 +13096,7 @@
         <categoryLink name="Lord of War" hidden="false" id="e480-805a-cba5-0102" targetId="a46f-a465-0ead-d6b8"/>
         <categoryLink name="Warlord" hidden="false" id="a9f0-0981-4d0f-a835" targetId="22ee-7208-4089-b005"/>
         <categoryLink name="Fortification" hidden="false" id="8261-22fc-c75e-2df6" targetId="7e2f-62cf-4e42-9e13"/>
+        <categoryLink name="Clade Operative" hidden="false" id="0f22-af59-a81b-bcff" targetId="335a-5a90-3b7c-c034"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -13431,6 +13542,18 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
+        <entryLink import="true" name="Clade Operative" hidden="true" id="8d32-7962-99e2-166a" type="selectionEntry" targetId="f26c-9918-9644-80f7" sortIndex="6">
+          <comment>Assassins</comment>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <entryLinks>
         <entryLink import="true" name="Cult Operative" hidden="true" id="d18a-a5b5-bd41-7111" type="selectionEntry" targetId="031d-c827-1f33-97e5" sortIndex="7">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -13619,6 +13742,16 @@ All Models in any of these Units have their Faction Trait replaced with &apos;Al
 When a Model with this Special Rule is included in a Detachment, one additional Force Organization Slot is added to that Detachment. This Slot can only be filled with one Castellax Battle Maniple or Castellax Destructor Maniple Unit selected from Liber Mechanicum. When such a Unit is included in this way, its Cybernetica Trait is replaced with &apos;Bonded Automata&apos;, and this Unit can be included even thought it does not have the same Faction Trait as the other Units in that Detachment. In addition, a Model with this Special Rule may join a Friendly Unit that includes Models with the Automata Type. If a Model with this Special Rule joins a Unit with the Automata Type, the Leadership and Cool Characteristics of Models in that Unit are not reduced as a results of this, but may be modified by other rules as normal.</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Clade Operative" hidden="true" id="f26c-9918-9644-80f7">
+      <rules>
+        <rule name="Clade Operative" id="be0c-7465-c500-8e2e" hidden="false">
+          <description>Add three additional Support Force Organisation Slots to the Detachment that includes the Prime Slot with this Prime Advantage. These Force Organisation Slots may only be filled by Units selected from the Divisio Assassinorum Army List. This Prime Advantage may only be selected for a single Force Organisation Slot in an Army’s Primary Detachment.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="08f7-fb5e-031d-d378" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cult Operative" hidden="false" id="031d-c827-1f33-97e5">
       <rules>
