@@ -3,10 +3,8 @@
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
-    <categoryEntry name="Apex Detachment" id="6b46-02bb-c8aa-142d" hidden="false"/>
     <categoryEntry name="Armour" id="643a-1012-bd51-6537" hidden="false"/>
     <categoryEntry name="Asset" id="b720-ea51-7339-6a08" hidden="false"/>
-    <categoryEntry name="Auxiliary Detachment" id="1a65-8b23-419b-b30f" hidden="false"/>
     <categoryEntry name="Command" id="6dbf-654a-f06f-2d69" hidden="false"/>
     <categoryEntry name="Elites" id="5d5e-958f-e388-50b5" hidden="false"/>
     <categoryEntry name="Fast Attack" id="cf96-8891-3f9a-8921" hidden="false"/>
@@ -1299,7 +1297,6 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c86b-d088-efd3-0e86"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="7ce0-f95c-8fee-df61" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Prime Troops" hidden="false" id="613d-dad1-4746-5c74" targetId="c3f9-a7f3-984b-3fda">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9c86-e88f-16b7-b9b8" includeChildSelections="true"/>
@@ -1505,7 +1502,6 @@
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="55ad-034f-09fb-344b"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="a56d-c59f-397f-c1eb" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Prime Armour" hidden="false" id="c38b-2801-da19-2cd1" targetId="4460-7bc1-4d80-aecb">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0b7c-566a-8311-703d" includeChildSelections="true"/>
@@ -1699,7 +1695,6 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aaae-9981-1e16-13b2"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="b245-2dca-7278-f7a1" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Prime War-engine" hidden="false" id="beec-b88f-6137-23e5" targetId="9699-67c9-2c0b-e64b">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1fe7-5114-3d7d-e501" includeChildSelections="true"/>
@@ -1893,7 +1888,6 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="56c4-65a1-7083-3041"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="ed74-5a30-58f6-3a94" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Prime Recon" hidden="false" id="cc09-a724-add5-8dce" targetId="6348-ecd0-714d-042a">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f4fd-d341-0f65-784b" includeChildSelections="true"/>
@@ -2087,7 +2081,6 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5279-0e0a-763f-7aec"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="fb62-562a-78b2-f800" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Prime Heavy Assault" hidden="false" id="e69d-01d0-1f83-768c" targetId="1e95-35f0-1353-ffa1">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0dc3-2e75-42a7-ef00" includeChildSelections="true"/>
@@ -2281,7 +2274,6 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9723-874b-5bbf-14cc"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="f026-67a5-0d0e-ee8d" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Prime Fast Attack" hidden="false" id="9713-0512-a699-1e8e" targetId="c291-144b-3da6-37ed">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0764-c4bb-2d59-a5d0" includeChildSelections="true"/>
@@ -2470,7 +2462,6 @@
         </forceEntry>
         <forceEntry name="Apex - Combat Retinue" id="7203-426e-7a82-0b01" hidden="true" sortIndex="10">
           <categoryLinks>
-            <categoryLink name="Apex Detachment" hidden="false" id="9b24-8662-0565-34a0" targetId="6b46-02bb-c8aa-142d"/>
             <categoryLink name="High Command" hidden="false" id="4011-a31f-7c9d-d41e" targetId="d9a6-9b5f-b18a-4d63">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="823a-d3ea-26a0-664d"/>
@@ -2861,7 +2852,6 @@
         </forceEntry>
         <forceEntry name="Apex - Officer Cadre" id="90b7-c0fa-a9e1-6765" hidden="true" sortIndex="11">
           <categoryLinks>
-            <categoryLink name="Apex Detachment" hidden="false" id="bb23-9795-e5fe-fc4f" targetId="6b46-02bb-c8aa-142d"/>
             <categoryLink name="High Command" hidden="false" id="e4a5-903c-7e56-7234" targetId="d9a6-9b5f-b18a-4d63">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="512e-0705-7a37-3fc8"/>
@@ -3260,7 +3250,6 @@
         </forceEntry>
         <forceEntry name="Apex - Army Vanguard" id="0690-c05e-c301-f595" hidden="true" sortIndex="12">
           <categoryLinks>
-            <categoryLink name="Apex Detachment" hidden="false" id="8950-5774-cc6a-db66" targetId="6b46-02bb-c8aa-142d"/>
             <categoryLink name="High Command" hidden="false" id="9efb-f99f-bde9-902d" targetId="d9a6-9b5f-b18a-4d63">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a025-4389-44ec-3c06"/>
@@ -3679,7 +3668,6 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1941-e677-3709-8d3d"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="e4d7-bb42-395a-0309" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Prime Retinue" hidden="false" id="6bfb-d0bc-89e2-afdf" targetId="c66b-ef39-b20f-725b">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e57d-ff06-36a1-372f" includeChildSelections="true"/>
@@ -3712,7 +3700,6 @@
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="ec08-2ba4-b38c-8746" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="4396-a118-d91e-7a80" targetId="1a65-8b23-419b-b30f"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -3753,7 +3740,6 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b649-61e8-62cb-a4b0" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="19ff-5e45-8c20-36b3" targetId="1a65-8b23-419b-b30f"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -3804,7 +3790,6 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01b3-450e-6e90-b041" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Apex Detachment" hidden="false" id="bcef-974a-de97-c3d7" targetId="6b46-02bb-c8aa-142d"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -3905,7 +3890,6 @@
                 <constraint type="max" value="3" field="selections" scope="force" shared="true" id="b327-c9e2-cbd8-c6dd" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Apex Detachment" hidden="false" id="585c-4143-adee-6533" targetId="6b46-02bb-c8aa-142d"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -3946,7 +3930,6 @@
                 <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f3db-6a01-37c5-5b27" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Apex Detachment" hidden="false" id="c6bd-0dcb-53e1-5654" targetId="6b46-02bb-c8aa-142d"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -3982,7 +3965,6 @@
                 <constraint type="max" value="3" field="selections" scope="force" shared="true" id="83c4-a1e7-c38c-e164" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Apex Detachment" hidden="false" id="ba0d-dd1d-7a6e-b90b" targetId="6b46-02bb-c8aa-142d"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -4033,7 +4015,6 @@
                 <constraint type="max" value="3" field="selections" scope="force" shared="true" id="e480-9bfa-a46f-c224" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Apex Detachment" hidden="false" id="b994-409d-271c-f7ab" targetId="6b46-02bb-c8aa-142d"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -4071,7 +4052,6 @@
                 <constraint type="max" value="3" field="selections" scope="force" shared="true" id="eec6-e569-ed5c-2fb5" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Apex Detachment" hidden="false" id="2097-8356-96ea-7100" targetId="6b46-02bb-c8aa-142d"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -4102,7 +4082,6 @@
         </forceEntry>
         <forceEntry name="Apex - The Hammer of Olympia" id="1d3d-a6b8-94d8-443b" hidden="true" sortIndex="72">
           <categoryLinks>
-            <categoryLink name="Apex Detachment" hidden="false" id="1482-f3fe-58dd-e575" targetId="6b46-02bb-c8aa-142d"/>
             <categoryLink name="Retinue" hidden="false" id="9f88-7ba6-dc34-0074" targetId="a38e-50ff-310f-f19e">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bb04-941d-dabe-3b36"/>
@@ -4371,7 +4350,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - The Ironfire Cohort" id="5bc5-5224-c751-d437" hidden="true" sortIndex="71">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="4769-6a17-b205-fb4a" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Armour - Arquitor Bombard Only" hidden="false" id="2ba5-198c-9b80-1720" targetId="b58f-c88f-6b2e-02b1">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="07cc-06c4-b48e-51f2"/>
@@ -4630,7 +4608,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Reaping Host" id="3b60-24c1-dccc-23db" hidden="true" sortIndex="77">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="515c-a4b9-bad0-df67" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Retinue" hidden="false" id="d8c2-ba60-ce7e-86dc" targetId="a38e-50ff-310f-f19e">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d943-5817-f82d-76de"/>
@@ -4902,7 +4879,6 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5b4-12a7-164c-df56"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="79d4-74fa-cc87-03a5" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Retinue" hidden="false" id="8d19-f52c-d56c-f742" targetId="a38e-50ff-310f-f19e">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="41a1-ff71-3b52-ada7"/>
@@ -5147,7 +5123,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Veletaris Tercio" id="e1a1-2699-4681-47ab" hidden="true" sortIndex="30">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="55a1-8512-405b-8905" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Elites - Veletaris Storm or Veletaris Vanguard units only" hidden="false" id="710a-9bde-a37e-3661" targetId="8dce-eb64-ec33-0b51">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0cbe-df78-5aa1-886c"/>
@@ -5412,7 +5387,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Armour Tercio" id="6aff-b91d-02bb-7461" hidden="true" sortIndex="31">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="880f-e609-7151-ee38" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Armour - Leman Russ Strike, Leman Russ Assault or Malcador Heavy tank units only" hidden="false" id="0bee-0d7e-0466-e2cb" targetId="5725-7f8c-f02e-4df6">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e63e-7101-ee0c-825b"/>
@@ -5467,7 +5441,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Artillery Tercio" id="371d-e9ef-7bf9-47de" hidden="true" sortIndex="32">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="8dec-bd47-6453-908b" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Prime Support" hidden="false" id="0d04-d559-7cd8-7f60" targetId="1c79-ecdf-9a64-84c9">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="69ec-fb9b-4ad6-bf96" includeChildSelections="true"/>
@@ -5522,7 +5495,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Infantry Tercio" id="243b-4ffd-9808-11d8" hidden="true" sortIndex="33">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="3d8a-ec45-1eea-203b" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Prime Troops" hidden="false" id="6f1e-54be-753a-3ddf" targetId="c3f9-a7f3-984b-3fda">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3ab-da50-e5e0-666c" includeChildSelections="true"/>
@@ -5778,7 +5750,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Scout Tercio" id="551a-23a1-7758-2688" hidden="true" sortIndex="34">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="7fc3-b32d-cdda-e42f" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Recon - Hermes Light Sentinel Squadron units only" hidden="false" id="4b81-7b2e-792e-003a" targetId="b367-e724-5450-9e45">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a2d1-1899-30ed-b88f"/>
@@ -5843,7 +5814,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Chogorian Warband" id="0f6e-3db8-8b6f-74e1" hidden="true" publicationId="b905-0414-1057-bb34" page="147" sortIndex="56">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="54cc-e754-3644-660e" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Fast Attack - Scimitar Jetbike Squadrons only" hidden="false" id="118a-8a04-7902-9a00" targetId="eaec-7669-f5ba-3ad9">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ccb3-72e4-b500-232d"/>
@@ -6138,7 +6108,6 @@
         </forceEntry>
         <forceEntry name="Apex - Medusan Vanguard" id="7ff8-9e2c-e68a-573f" hidden="true" sortIndex="61" publicationId="b905-0414-1057-bb34" page="231">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="5866-7374-495e-6757" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Command - Praevian Only" hidden="false" id="7af5-6fff-edb0-8932" targetId="7c8e-52bb-951b-9c7f">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2487-c5ff-80ac-19a3" includeChildSelections="true"/>
@@ -6416,7 +6385,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Terror Assault" id="8fe1-7b62-49cf-479b" hidden="true" sortIndex="73">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="dc5c-c763-789b-6b73" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Troops - Terror Squads Only" hidden="false" id="0f3a-d373-9df5-93fb" targetId="6e0b-c31d-739b-d9cc">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6537-4339-f77e-ea81"/>
@@ -6719,7 +6687,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Berserker Cadre" id="bda6-c5d3-eafc-4eb5" hidden="true" sortIndex="75">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="2d58-316e-79d5-2034" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Heavy Assault - Rampager Squads Only" hidden="false" id="b686-b285-d2bd-e8e2" targetId="91f0-1b91-0a9a-c542">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1242-7e4c-5871-ede3"/>
@@ -6972,7 +6939,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Bloodied Claw" id="06b3-c35d-da74-de37" hidden="true" publicationId="b905-0414-1057-bb34" sortIndex="57" page="167">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="85fe-c763-8c05-317e" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Troops - Grey Slayer Packs Only" hidden="false" id="aa62-7956-a2d2-fec4" targetId="a4aa-d941-3aab-a81b">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c184-fb15-bb63-2022"/>
@@ -7230,7 +7196,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Revelation Host" id="edb0-a5d8-84f1-4eee" hidden="true" sortIndex="59" publicationId="b905-0414-1057-bb34" page="211">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="ffe5-1e65-907d-9b83" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Troops - Assault Squads Only" hidden="false" id="9de0-e8ca-656a-5fbb" targetId="5091-8467-38f9-a6fb">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="71e9-f4d1-4a4d-af43"/>
@@ -7488,7 +7453,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Sons of Bodt" id="9bfb-c160-31df-9108" hidden="true" sortIndex="76">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="44f1-1e68-30b9-2b6a" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Support - Apothecary Only" hidden="false" id="cccd-5667-9e16-e4d4" targetId="4a48-9154-40d8-d6b7">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cab4-0a45-b17d-8a36"/>
@@ -7751,7 +7715,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Spearhead Phalanx" id="4737-e73a-394e-433f" hidden="true" sortIndex="60" publicationId="b905-0414-1057-bb34" page="231">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="397b-95e4-2d0b-9598" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Heavy Transport - Land Raider Carrier or Spartan Only" hidden="false" id="34cc-c81a-e963-0919" targetId="6b8d-15cd-2d41-9709">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce6c-ced0-b1af-830c"/>
@@ -7807,7 +7770,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Supremecy Cadre" id="2436-a714-22cc-fd31" hidden="true" sortIndex="79" page="249" publicationId="e54c-7040-0f35-d85d">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="61c8-0a14-7098-1526" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Retinue" hidden="false" id="098e-08d1-0f5d-4aa0" targetId="a38e-50ff-310f-f19e">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7f60-2d58-56dc-5742"/>
@@ -8060,7 +8022,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Stormwing Moster" id="bdf9-3781-2927-bc55" hidden="true" sortIndex="52" page="128" publicationId="b905-0414-1057-bb34">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="db7c-ce9f-043a-09bf" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Retinue" hidden="false" id="826e-f0bb-f6e6-840d" targetId="a38e-50ff-310f-f19e">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6cb7-7a22-5eea-8f05"/>
@@ -8319,7 +8280,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Deathwing Conclave" id="9b6c-2a18-7b8a-1aab" hidden="true" sortIndex="53" page="128" publicationId="b905-0414-1057-bb34">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="7b95-952e-a35e-95a1" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Retinue" hidden="false" id="f13c-d2e0-2616-7a6a" targetId="a38e-50ff-310f-f19e">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acfa-a1a4-1e07-ffb6"/>
@@ -8573,7 +8533,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Ravenwing Lance" id="466d-8e42-0890-721a" hidden="true" sortIndex="54" publicationId="b905-0414-1057-bb34" page="128">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="4b62-f5fd-eaa6-8166" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Recon - Outrider Squads Only" hidden="false" id="d5a5-e528-301f-e1b8" targetId="a8bc-a4af-e5b3-2684">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fc02-d575-3ed8-8c9d"/>
@@ -8832,7 +8791,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Firewing Echelon" id="3e2f-4f99-d366-7a95" hidden="true" sortIndex="55" publicationId="b905-0414-1057-bb34" page="128">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="bbcd-2619-f109-b29b" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Elites - Seeker Squads Only" hidden="false" id="9ef4-28d6-7a6a-290b" targetId="6ab9-f648-a6de-e2e8">
               <modifiers>
                 <modifier type="increment" value="1" field="246b-e4ed-56da-769b">
@@ -9091,7 +9049,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Ironwing Gauntlet" id="cb64-b547-1144-fd70" hidden="true" sortIndex="50" publicationId="b905-0414-1057-bb34" page="127">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="9233-837f-e44e-8177" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Heavy Transport" hidden="false" id="5b6e-8b8d-0fd3-9ed3" targetId="52d0-8b78-439e-18e5">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="161c-2566-a5fc-41e3"/>
@@ -9138,7 +9095,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Dreadwing Cadre" id="4df8-3a15-6b77-1b80" hidden="true" sortIndex="51" publicationId="b905-0414-1057-bb34" page="127">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="eb0a-40cc-536b-d751" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Support - Dreadwing or Rapier Only" hidden="false" id="7843-04fb-71c7-c434" targetId="d52d-47c6-e17a-9e35">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7550-bb36-9d75-0601"/>
@@ -9402,7 +9358,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Siege Gauntlet" id="1581-346d-51c6-4739" hidden="true" publicationId="b905-0414-1057-bb34" sortIndex="58" page="187">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="c9dd-280d-6c74-28c8" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Troops - Breacher Squads Only" hidden="false" id="ee65-4faf-127b-8c50" targetId="2b63-c3cd-b88c-a465">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e90a-b85f-1e6e-b9f8"/>
@@ -9655,7 +9610,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Immolation Covenant" id="04d2-0a69-061e-75fe" hidden="true" publicationId="b905-0414-1057-bb34" sortIndex="63" page="265">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="8432-3f6c-3d45-2cb6" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Armour - Predator or Vindicator Only" hidden="false" id="3719-db31-cc33-da3d" targetId="bde9-c2c4-611e-7fb7">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4f40-8800-1727-562f"/>
@@ -9913,7 +9867,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Decapitation Cadre" id="27bf-3e6b-587c-74bb" hidden="true" publicationId="b905-0414-1057-bb34" sortIndex="64" page="265">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="be42-9976-9746-7d26" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Recon - Reconnaissance Squad Only" hidden="false" id="a25f-674d-d2e3-f98c" targetId="f8c3-f44e-569f-4418">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2cac-063e-c4b0-e09c"/>
@@ -9973,7 +9926,6 @@
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="9e45-da32-e845-85db" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Retinue" hidden="false" id="ce47-2c7f-d94c-1e3c" targetId="a38e-50ff-310f-f19e">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bc7f-e7cb-b26b-abd5"/>
@@ -10221,7 +10173,6 @@
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink name="Apex Detachment" hidden="false" id="7df6-a08b-9c78-907d" targetId="6b46-02bb-c8aa-142d"/>
             <categoryLink name="Troops" hidden="false" id="b3b2-bd18-c654-d809" targetId="88e6-d373-4152-0dd8">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8a82-537e-c44d-bcf9"/>
@@ -10267,7 +10218,6 @@
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="0e92-d177-5376-cb00" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Elites - Seeker Squads or Headhunter Kill Teams Only" hidden="false" id="832a-df38-fd99-3ca0" targetId="5c0d-4d49-44e2-0a99">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ddb5-036a-fe48-d088"/>
@@ -10656,9 +10606,6 @@
               <comment>Legions</comment>
             </modifier>
           </modifiers>
-          <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="bc87-f9cb-3b79-c52b" targetId="1a65-8b23-419b-b30f"/>
-          </categoryLinks>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -10815,7 +10762,6 @@
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="544b-a557-7a7f-8a42" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Retinue" hidden="false" id="e3d0-30db-2723-5ac2" targetId="a38e-50ff-310f-f19e">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="273b-ae30-fbc1-5d7a" includeChildSelections="true"/>
@@ -10988,7 +10934,6 @@
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="10bd-1900-4f7f-5d76" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Support - Apothecary Only" hidden="false" id="d378-d558-8199-1aef" targetId="4a48-9154-40d8-d6b7">
               <constraints>
                 <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="399a-151b-e3cc-3930" includeChildSelections="true"/>
@@ -11383,7 +11328,6 @@
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="35ee-fc2a-6a9b-4a93" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Support - Techmarine Only" hidden="false" id="7c32-fc69-8436-734b" targetId="103f-d00d-f8cf-52de">
               <constraints>
                 <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="7ca5-a0b5-47a5-8387" includeChildSelections="true"/>
@@ -11778,7 +11722,6 @@
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="b8dc-4a0d-8e24-ea29" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Support - Rapier Battery Only" hidden="false" id="933f-a441-79bd-56e3" targetId="b59d-a86f-b951-9f06">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e585-7d87-7007-e091" includeChildSelections="true"/>
@@ -11956,7 +11899,6 @@
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="5d9b-7994-2000-e107" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Recon - Reconnaissance Squad Only" hidden="false" id="7ce6-438b-4534-48c2" targetId="f8c3-f44e-569f-4418">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="85de-faa2-8303-a76b"/>
@@ -12200,7 +12142,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Iron Tercio" id="9a10-a2d9-5a87-a5a9" hidden="true" sortIndex="35">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="9939-ad32-7608-7ad1" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Troops - Tech-Priest unit only" hidden="false" id="c907-0af7-cce9-9ba8" targetId="3fda-dd8a-a6d5-b782">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b57b-c01a-64d4-dd3c" includeChildSelections="false"/>
