@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="0a35-fce3-188c-b3aa" name="                         I - Dark Angels" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="8" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="0a35-fce3-188c-b3aa" name="                         I - Dark Angels" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="9" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="a476-c36f-b43d-3fd8" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Special Rules" id="9620-2bdb-4589-56f8" targetId="106b-693b-99f2-00c3"/>
@@ -718,12 +718,7 @@
             <infoLink name="Template" id="c2d9-57f7-1b1f-4ab7" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a"/>
           </infoLinks>
         </entryLink>
-        <entryLink import="true" name="Orders of the Hekatonystika" hidden="false" id="9120-8b58-f50f-944a" type="selectionEntryGroup" targetId="c54f-856a-49cf-3fde">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72ea-1207-9431-272c" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0472-f871-f6b5-80a9" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
+        <entryLink import="true" name="Orders of the Hekatonystika" hidden="false" id="9120-8b58-f50f-944a" type="selectionEntryGroup" targetId="9035-6bbe-3431-876d"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="4edf-74d7-ceb9-d5e2" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="0c28-d249-40c7-a8b6" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
@@ -1052,59 +1047,6 @@ The Lion&apos;s Choler: If this Gambit is selected, the Model for which this Gam
       </constraints>
       <comment>High Command</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Augurs of Weakness" hidden="false" id="63d5-6f66-9496-4767">
-      <rules>
-        <rule name="Augurs of Weakness" id="e00e-9c6e-4ce1-f9f1" hidden="false">
-          <description>When making attacks targeting a Unit that includes one or more Models with the Vehicle Type, Models with the Order Exemplars Special rule gain the Armourbane Special Rule.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink name="Armourbane" id="d8e0-6164-cbbf-6e29" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Breakers of Witches" hidden="false" id="8f60-8576-9399-9bc6">
-      <rules>
-        <rule name="Breakers of Witches" id="f4ff-52e1-410b-3547" hidden="false">
-          <description>Whilst part of a Unit that is Locked in Combat with an enemy Unit that has one or more Models with the Malefic Sub-Type or Psyker Trait, Hit and Wound Tests made for Models with the Order Exemplars Special Rule in that Combat are modified by +1.</description>
-        </rule>
-      </rules>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Hunters of Beasts" hidden="false" id="fdb2-bced-1de2-6c7d">
-      <rules>
-        <rule name="Hunters of Beasts" id="55be-6625-0ecd-520b" hidden="false">
-          <description>Whilst part of a Unit that is Locked in Combat with an enemy Unit that includes one or more Models with Toughness Characteristic of 6 or higher, the Damage Characteristic of Wounds caused by a Model with this Special Rule is modified by +1.</description>
-        </rule>
-      </rules>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Icons of Resolve" hidden="false" id="c916-a632-7555-117f">
-      <rules>
-        <rule name="Icons of Resolve" id="fe5f-f0a0-d6b7-e222" hidden="false">
-          <description>When part of a Unit that is successfully Charged by an enemy Unit, Models with the Order Exemplars Special Rule set their Leadership Characteristic to 10 for the duration of the current Assault Phase.</description>
-        </rule>
-      </rules>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Slayers of Kings" hidden="false" id="ca2f-3a1c-6e9e-59d2">
-      <rules>
-        <rule name="Slayers of Kings" id="5be0-45d7-94e1-0259" hidden="false">
-          <description>Whilst part of a Unit that is Locked in Combat with an enemy Unit that includes at least one Model with a Weapon Skill Characteristic of 6 or higher, the Attack Characteristic of Models with the Order Exemplars Special Rule may be set to 1. If this option is used then the Terranic greatswords those Models have gain the Critical Hit (6+) Special Rule until the Combat ends.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink name="Critical Hit (X)" id="7e63-7b26-7506-4eb8" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
-          <modifiers>
-            <modifier type="set" value="Critical Hit (6+)" field="name"/>
-          </modifiers>
-          <comment>6+</comment>
-        </infoLink>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Reaper of Hosts" hidden="false" id="d5fe-6f66-458e-73b6">
-      <rules>
-        <rule name="Reaper of Hosts" id="8293-3d95-cf71-2b82" hidden="false">
-          <description>Whilst part of a Unit that is Locked in Combat with one or more enemy Units that outnumbers it, then all Models in that Unit with the Order Exemplars Special Rule modify their Attacks Characteristic by +1.</description>
-        </rule>
-      </rules>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cytheron pattern aegis" hidden="false" id="e5a9-b2ba-1f96-478d">
       <costs>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -1359,18 +1301,6 @@ The Lion&apos;s Choler: If this Gambit is selected, the Model for which this Gam
       </modifiers>
     </entryLink>
   </entryLinks>
-  <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Orders of the Hekatonystika" id="c54f-856a-49cf-3fde" hidden="false">
-      <entryLinks>
-        <entryLink import="true" name="Augurs of Weakness" hidden="false" id="6056-005d-0a91-571b" type="selectionEntry" targetId="63d5-6f66-9496-4767"/>
-        <entryLink import="true" name="Breakers of Witches" hidden="false" id="6611-be43-629d-982a" type="selectionEntry" targetId="8f60-8576-9399-9bc6"/>
-        <entryLink import="true" name="Hunters of Beasts" hidden="false" id="ee4d-f67e-ffa8-51d6" type="selectionEntry" targetId="fdb2-bced-1de2-6c7d"/>
-        <entryLink import="true" name="Icons of Resolve" hidden="false" id="6898-a3eb-3942-5d6f" type="selectionEntry" targetId="c916-a632-7555-117f"/>
-        <entryLink import="true" name="Reaper of Hosts" hidden="false" id="d629-3fad-1256-3741" type="selectionEntry" targetId="d5fe-6f66-458e-73b6"/>
-        <entryLink import="true" name="Slayers of Kings" hidden="false" id="cfc0-6723-ce84-3ab6" type="selectionEntry" targetId="ca2f-3a1c-6e9e-59d2"/>
-      </entryLinks>
-    </selectionEntryGroup>
-  </sharedSelectionEntryGroups>
   <sharedRules>
     <rule name="The Angels of Death" id="7fd2-c16b-0e15-9de7" hidden="false">
       <description>&quot;Negative modifiers to Dark Angels&apos; Leadership, Willpower, Cool and Intelligence are limited.&quot;

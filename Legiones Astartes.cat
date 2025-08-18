@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="30" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="31" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -539,6 +539,12 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
+                <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="b824-c0ad-804e-0026" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>DA Paladin</comment>
+                </modifier>
               </modifiers>
             </profile>
           </profiles>
@@ -652,6 +658,25 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f466-92e3-e175-8d54"/>
                   </constraints>
+                </entryLink>
+                <entryLink import="true" name="Terranic greatsword" hidden="true" id="5b84-ba7c-af89-bd3e" type="selectionEntry" targetId="f1aa-3d18-caac-a960">
+                  <comment>DA Paladin</comment>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="86ac-e916-5776-130c" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2873-32ec-aaa5-a5a2" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="b824-c0ad-804e-0026" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="1" field="86ac-e916-5776-130c">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="b824-c0ad-804e-0026" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -887,6 +912,15 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6819-7e13-adc5-abae"/>
           </constraints>
+        </entryLink>
+        <entryLink import="true" name="Orders of the Hekatonystika" hidden="true" id="110f-698b-dc8c-ca58" type="selectionEntryGroup" targetId="9035-6bbe-3431-876d">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b824-c0ad-804e-0026" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <infoLinks>
@@ -16276,14 +16310,16 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fe8-9bf9-3081-b789"/>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4e71-0ea3-5d82-156b" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Not Yet Implemented: WS +1, Bolter exchanged for Terranic Greatsword, Gains Orders of the Hekatonystika." hidden="false" id="6e21-400e-e8cc-e3e5">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="553b-fafa-1f04-27b5"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4e3-205b-51a8-fd58"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
+          <rules>
+            <rule name="Paladin of the Hekatonystika" id="4f22-da6c-0ce3-8aba" hidden="false">
+              <description>This Prime Advantage can only be selected once per Army. One Model in the Unit selected to fill a Prime Force Organisation Slot with this Prime Advantage gains the following benefits:
+
+
+• Has its Base Weapon Skill Characteristic modified by +1.
+• Must have its bolter exchanged for a Terranic greatsword for Free.
+• Gains the Orders of the Hekatonystika Special Rule (see page 137).</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Revenants" hidden="true" id="d5af-128d-2051-644d">
           <comment>Blood Angels</comment>
@@ -16810,6 +16846,85 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Orders of the Hekatonystika" id="9035-6bbe-3431-876d" hidden="false" import="true">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Augurs of Weakness" hidden="false" id="e0e2-4f18-b1fb-ce5d" sortIndex="1">
+          <infoLinks>
+            <infoLink name="Armourbane" id="cc7a-25df-d2f0-45c0" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+          </infoLinks>
+          <rules>
+            <rule name="Augurs of Weakness" id="c51d-6538-2afb-3f8c" hidden="false">
+              <description>When making attacks targeting a Unit that includes one or more Models with the Vehicle Type, Models with the Order Exemplars Special rule gain the Armourbane Special Rule.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f716-1766-4f1a-bf4c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Icons of Resolve" hidden="false" id="2076-317e-fde7-3719" sortIndex="2">
+          <rules>
+            <rule name="Icons of Resolve" id="dd6a-62bc-85e5-ed45" hidden="false">
+              <description>When part of a Unit that is successfully Charged by an enemy Unit, Models with the Order Exemplars Special Rule set their Leadership Characteristic to 10 for the duration of the current Assault Phase.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f2b8-53f6-0e02-fb26" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Slayers of Kings" hidden="false" id="40d0-3a06-d5aa-6778" sortIndex="3">
+          <rules>
+            <rule name="Slayers of Kings" id="d81e-74ac-25ab-8993" hidden="false">
+              <description>Whilst part of a Unit that is Locked in Combat with an enemy Unit that includes at least one Model with a Weapon Skill Characteristic of 6 or higher, the Attack Characteristic of Models with the Order Exemplars Special Rule may be set to 1. If this option is used then the Terranic greatswords those Models have gain the Critical Hit (6+) Special Rule until the Combat ends.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Critical Hit (X)" id="a0b4-e165-fea7-52ed" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
+              <comment>6+</comment>
+              <modifiers>
+                <modifier type="set" value="Critical Hit (6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1baf-8475-47f0-ca8f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hunters of Beasts" hidden="false" id="34a5-14ce-fed1-a77c" sortIndex="4">
+          <rules>
+            <rule name="Hunters of Beasts" id="706f-a632-3701-09b2" hidden="false">
+              <description>Whilst part of a Unit that is Locked in Combat with an enemy Unit that includes one or more Models with Toughness Characteristic of 6 or higher, the Damage Characteristic of Wounds caused by a Model with this Special Rule is modified by +1.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8fbb-7673-010c-9b5f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Reaper of Hosts" hidden="false" id="a7d8-6970-9d1f-4987" sortIndex="5">
+          <rules>
+            <rule name="Reaper of Hosts" id="a25b-5b49-2cd9-a862" hidden="false">
+              <description>Whilst part of a Unit that is Locked in Combat with one or more enemy Units that outnumbers it, then all Models in that Unit with the Order Exemplars Special Rule modify their Attacks Characteristic by +1.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="922c-3a4d-2118-1a62" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Breakers of Witches" hidden="false" id="7c8e-5823-9c23-2c85" sortIndex="6">
+          <rules>
+            <rule name="Breakers of Witches" id="f6d6-92bd-94ca-3704" hidden="false">
+              <description>Whilst part of a Unit that is Locked in Combat with an enemy Unit that has one or more Models with the Malefic Sub-Type or Psyker Trait, Hit and Wound Tests made for Models with the Order Exemplars Special Rule in that Combat are modified by +1.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b776-698f-adb5-90f5" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1150-ab29-db16-7436" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a4e-e25a-a979-c751" includeChildSelections="false"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <infoLinks>
