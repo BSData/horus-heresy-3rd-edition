@@ -2,6 +2,7 @@ import os
 import sys
 import unittest
 
+
 # Temp until we have a pip module
 sys.path.insert(1, os.getcwd() + "/BSCopy")
 from BSCopy.system.system import System
@@ -10,6 +11,7 @@ from BSCopy.system.constants import SystemSettingsKeys, GameImportSpecs
 from BSCopy.system.game.heresy3e import Heresy3e
 from BSCopy.util.text_utils import read_type_and_subtypes
 from BSCopy.book_reader.raw_entry import RawModel
+
 
 
 class GameTests(unittest.TestCase):
@@ -100,7 +102,6 @@ class GameTests(unittest.TestCase):
         battlefield_roles.remove("Warlord")
         # Lords of war are only prime in knights, make a separate test for this.
         battlefield_roles.remove("Lord of War")
-        battlefield_roles.remove("Fortification")
 
         # First, get all units
         unit_ids = []
@@ -153,9 +154,9 @@ class GameTests(unittest.TestCase):
         total_model_count = 0
         for unit_id in self.unit_ids:
             unit = self.system.get_node_by_id(unit_id)
-            with self.subTest(f"{unit} should be of type 'unit'"):
+            with self.subTest(f"{unit} should have be of type 'unit'"):
                 self.assertEqual(unit.attrib["type"], "unit")
-            with self.subTest(f"{unit} should contain models"):
+            with self.subTest(f"{unit} should have contain models"):
                 entries = unit.get_child("selectionEntries")
                 self.assertIsNotNone(entries, "Should have entries")
                 model_count = 0
@@ -194,6 +195,7 @@ class GameTests(unittest.TestCase):
                 raw_model.type_and_subtypes = type_and_subtypes
                 errors = model_node.check_types_and_subtypes(raw_model)
                 self.assertEqual(len(errors), 0, f"{errors} on {model_node}")
+
 
 
 if __name__ == '__main__':
