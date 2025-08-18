@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="9a22-d01f-ab5c-ec07" name="                         III - Emperor&apos;s Children" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="7" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="9a22-d01f-ab5c-ec07" name="                         III - Emperor&apos;s Children" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="9" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="2589-ec0f-809a-8660" targetId="9b32-f350-6aa9-9c09" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Assets" id="a2a4-0123-e538-6ae9" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
@@ -56,6 +56,14 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink name="Duellist&apos;s Edge (X)" id="7668-284e-7799-96d9" hidden="false" type="rule" targetId="94bc-c69f-99b6-8ba0">
+                  <comment>1</comment>
+                  <modifiers>
+                    <modifier type="set" value="Duelist&apos;s Edge (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Firebrand" hidden="false" id="f5b9-b00c-10dc-c07c" sortIndex="2">
               <constraints>
@@ -75,6 +83,20 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink name="Shred (X)" id="5ac0-0ea4-481d-cb8c" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
+                  <comment>5+</comment>
+                  <modifiers>
+                    <modifier type="set" value="Shred (5+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Deflagrate (X)" id="289b-58c5-74c1-f99d" hidden="false" type="rule" targetId="f4a0-f206-0dba-7d81">
+                  <comment>6</comment>
+                  <modifiers>
+                    <modifier type="set" value="Deflagrate (6)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <costs>
@@ -85,6 +107,40 @@
             <categoryLink name="Paragon Model Type" hidden="false" id="cde6-2e94-299c-e903" targetId="7799-e1d6-762b-700b" primary="false"/>
             <categoryLink name="Unique Model Sub-Type" hidden="false" id="41fd-425d-8983-ed58" targetId="b980-187b-2b17-d635" primary="false"/>
           </categoryLinks>
+          <rules>
+            <rule name="Sublime Swordsman" id="6d26-1565-3692-ebe1" hidden="false">
+              <description>&quot;In a Challenge, Fulgrim&apos;s Attacks Characteristic is modified if his Initiative Characteristic is higher than his opponent&apos;s.&quot;
+
+
+While a Model with this Special Rule is taking part in a Vhallenge, if its Controlling Player has Challenge Advantage, modify the Attacks Characteristic of the Model with this Special Rule by +1 for each point that its Base Initiative Characteristic is higher than its opponent&apos;s Bas Initiative Characteristic.</description>
+            </rule>
+            <rule name="Sire of the Emperor&apos;s Children" id="f112-30ce-d5cc-6abf" hidden="false">
+              <description>If a Model with this Special Rule is part of an Army, then the Controlling Player may apply the following additional Special Rules to all Auxiliary, Apex and Primary Detachments that have the same Faction Trait as the Model with this Special Rule:
+
+• If four or more Troops Battlefield Role Slots in the Primary Detachment of this Army are filled with Tactical Squad Units and/or Assault Squad Units, then all Force Organisation Slots with the Troops Battlefield Role in the Primary Detachment are considered Prime Slots.
+
+Furthermore, if a Model with this Special Rule is part of an Army, then the following Special Rules are granted to all Models with the Emperor&apos;s Children Trait in the same Army:
+
+• A Unit that includes only Models with the Emperor&apos;s Children Trait gains an additional +1 Combat Resolution Point if all Models in that Unit are not within the Controlling Player&apos;s Deployment Zone during the Resolution Sub-Phase. If the Mission being played does not define Deployment Zones, the Controlling Player gains this bonus when not within 12&quot; of their Battlefield Edge, or if no Battlefield Edge is specified, a Battlefield Edge that is selected prior to the First Turn.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Bulky (X)" id="3d16-f0e9-d25d-f9f3" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+              <comment>4</comment>
+              <modifiers>
+                <modifier type="set" value="Bulky (4)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Eternal Warrior (X)" id="d658-169e-9f62-7169" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
+              <comment>2</comment>
+              <modifiers>
+                <modifier type="set" value="Eternal Warrior (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Master of the Legion" id="71e9-7669-8eab-783f" hidden="false" type="profile" targetId="6cd2-96be-b703-6d57"/>
+            <infoLink name="[Legiones Astartes]" id="ed41-82b7-28a9-a78e" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+            <infoLink name="[Allegiance]" id="66db-122b-ee38-d652" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -98,6 +154,18 @@
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="5ca1-8cac-0ae6-8cc7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fulgrim Transfigured" hidden="false" id="7db2-c826-ebc5-1918">
       <selectionEntries>
@@ -131,8 +199,88 @@
             <categoryLink name="Paragon Model Type" hidden="false" id="851b-05d1-e29c-b0d4" targetId="7799-e1d6-762b-700b" primary="false"/>
             <categoryLink name="Unique Model Sub-Type" hidden="false" id="d9b9-9624-8ef9-ba33" targetId="b980-187b-2b17-d635" primary="false"/>
             <categoryLink name="Antigrav Model Sub-Type" hidden="false" id="5e5f-a20e-0b4d-6d2d" targetId="c504-9dfa-35d3-c98f" primary="false"/>
-            <categoryLink name="Malefic" hidden="false" id="e121-9f4d-3374-52e4" targetId="2de1-ddd6-ebb4-10df" primary="false"/>
+            <categoryLink name="Malefic Sub-type" hidden="false" id="e121-9f4d-3374-52e4" targetId="2de1-ddd6-ebb4-10df" primary="false"/>
           </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Blades of the Phoenician" hidden="false" id="4839-b73a-20e6-c5ed">
+              <profiles>
+                <profile name="Decapitating Slashes" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="c37e-7146-981e-c19e">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Critical Hit (6+), Duelist&apos;s Edge (1)</characteristic>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Sundering Blows" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="956f-2b6c-b75b-59d3">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">-2</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">3</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+5</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">4</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">-</characteristic>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Critical Hit (X)" id="a40a-f0bf-1b93-139e" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
+                  <comment>6+</comment>
+                  <modifiers>
+                    <modifier type="set" value="Critical Hit (6+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Duellist&apos;s Edge (X)" id="8be7-53a1-a81b-e5bf" hidden="false" type="rule" targetId="94bc-c69f-99b6-8ba0">
+                  <comment>1</comment>
+                  <modifiers>
+                    <modifier type="set" value="Duelist&apos;s Edge (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c79d-f995-a90e-cf24-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c79d-f995-a90e-cf24-max"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Bulky (X)" id="1c68-3fd6-6a2a-409a" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+              <comment>7</comment>
+              <modifiers>
+                <modifier type="set" value="Bulky (7)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Deep Strike" id="fefa-70ca-e320-2806" hidden="false" type="rule" targetId="0553-d06b-52b9-34db"/>
+            <infoLink name="Fear (X)" id="ba98-8b58-37c2-beb7" hidden="false" type="rule" targetId="0ebc-0c92-2209-6393">
+              <comment>2</comment>
+              <modifiers>
+                <modifier type="set" value="Fear (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Eternal Warrior (X)" id="c1e0-047a-7486-3714" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
+              <comment>2</comment>
+              <modifiers>
+                <modifier type="set" value="Eternal Warrior (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Master of the Legion" id="d411-50a7-f027-bbbc" hidden="false" type="profile" targetId="6cd2-96be-b703-6d57"/>
+            <infoLink name="[Legiones Astartes]" id="a6c2-250a-722f-9e5c" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+            <infoLink name="[Allegiance]" id="c592-6874-5930-fb36" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+          </infoLinks>
+          <rules>
+            <rule name="Scion of Corruption" id="4813-5921-d51d-8697" hidden="false">
+              <description>Fulgrim Transfigured cannot be included in the same Army as Fulgrim</description>
+            </rule>
+            <rule name="Avatar of Perfection" id="a157-73e8-6253-a4eb" hidden="false">
+              <description>Fulgrim Transfigured must have a Challenge declared for him and may use the Heroic Intervention Reaction without expending a Reaction Point.
+
+In the Controlling Player&apos;s Challenge Sub-Phase, if a Model with this Special Rule is eligible to have a Challenge declared for it, the Controlling Player must do so. In addition, if the Controlling Player of a Model with this Special Rule declares that they will use the Heroic Intervention Advanced Reaction, and selects a Model with this Special Rule, they are not required to spend any points from their Reaction Allotment to do so.</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -142,13 +290,21 @@
       </costs>
       <categoryLinks>
         <categoryLink name="Required Fulgrim Transformed" hidden="false" id="b5a8-bde1-7cdb-1ec4" targetId="634b-596b-118f-80b6" primary="false"/>
-        <categoryLink targetId="b980-187b-2b17-d635" id="0e55-2eea-61dc-4103" primary="false" name="Unique Model Sub-Type"/>
-        <categoryLink targetId="7799-e1d6-762b-700b" id="48c8-1116-0198-964e" primary="false" name="Paragon Model Type"/>
-        <categoryLink targetId="c504-9dfa-35d3-c98f" id="0f4a-4094-4e9c-e1b5" primary="false" name="Antigrav Model Sub-Type"/>
-        <categoryLink targetId="2de1-ddd6-ebb4-10df" id="bc52-2c63-69b3-0941" primary="false" name="Malefic"/>
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="a097-c16d-2334-9db4" primary="false" name="Master of the Legion"/>
         <categoryLink targetId="d251-944b-3c3b-0579" id="5004-2de8-de50-4e30" primary="false" name="Traitor"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d09-afed-def4-7636" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lord Commander Eidolon" hidden="false" id="fee3-dc10-99d3-37aa" page="134" publicationId="e54c-7040-0f35-d85d">
       <categoryLinks>
@@ -197,6 +353,113 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f7b0-6646-a086-bca4-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7b0-6646-a086-bca4-max" includeChildSelections="false"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Glory Aeterna" hidden="false" id="1680-b80f-7bc6-12cd" sortIndex="1">
+              <profiles>
+                <profile name="Glory Aeterna" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="b8a0-e2db-94ab-c596">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">-2</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Critical Hit (6+)</characteristic>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Critical Hit (X)" id="7355-1ecb-97ed-2f96" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
+                  <comment>6+</comment>
+                  <modifiers>
+                    <modifier type="set" value="Critical Hit (6+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e1d-97f7-f60c-7280-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e1d-97f7-f60c-7280-max"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Death Scream" hidden="false" id="bdc0-b59c-8f10-4286" sortIndex="4">
+              <profiles>
+                <profile name="Death Scream" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="4a50-a5cc-dad8-ff2a">
+                  <characteristics>
+                    <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
+                    <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+                    <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">3</characteristic>
+                    <characteristic name="AP" typeId="7a23-0248-2b94-5951">5</characteristic>
+                    <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Breaching (6+), Pinning(0)</characteristic>
+                    <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Sonic, Assault</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Template" id="2ab4-54d8-afc0-b284" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a"/>
+                <infoLink name="Breaching (X)" id="b87a-4ab4-17e1-4bbe" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+                  <comment>6+</comment>
+                  <modifiers>
+                    <modifier type="set" value="Breaching (6+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Pinning (X)" id="2874-2e34-3575-8214" hidden="false" type="rule" targetId="88b6-6493-e4d7-1805">
+                  <comment>0</comment>
+                  <modifiers>
+                    <modifier type="set" value="Pinning (0)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc7c-3e8b-53a4-1d3e-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc7c-3e8b-53a4-1d3e-max"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Archeotech pistol" hidden="false" id="c35a-24eb-ec4a-2493" type="selectionEntry" targetId="0600-3af1-d080-abf7" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="040d-1454-c5ec-dde2-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="040d-1454-c5ec-dde2-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Sonic shriekers" hidden="false" id="4c8d-9fde-3813-31d5" type="selectionEntry" targetId="f7a1-d5a3-c294-7ebd" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b1e6-f463-1aa4-edb1-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1e6-f463-1aa4-edb1-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Frag grenades" hidden="false" id="b392-500d-ad28-6870" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f45-a0ce-07af-9df2-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f45-a0ce-07af-9df2-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Krak grenades" hidden="false" id="ffdd-14a2-d5a3-5021" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1cc4-7e6b-3fc4-c0eb-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cc4-7e6b-3fc4-c0eb-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Impact (X)" id="9f9f-cc6d-4e47-bb48" hidden="false" type="rule" targetId="6ead-c31c-ab09-2f8c">
+              <comment>A</comment>
+              <modifiers>
+                <modifier type="set" value="Impact (A)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Bulky (X)" id="8893-98bb-657f-67d6" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+              <comment>2</comment>
+              <modifiers>
+                <modifier type="set" value="Bulky (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Deep Strike" id="a6c7-9a52-33ee-2fd7" hidden="false" type="rule" targetId="0553-d06b-52b9-34db"/>
+            <infoLink name="Master of the Legion" id="1965-bd8f-f74a-7d8b" hidden="false" type="profile" targetId="6cd2-96be-b703-6d57"/>
+            <infoLink name="[Legiones Astartes]" id="f525-83c9-dead-c491" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+            <infoLink name="[Allegiance]" id="dd1f-b4e1-b61c-08e8" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -206,6 +469,13 @@
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Captain Lucius" hidden="false" id="2621-860f-a513-e11e" publicationId="e54c-7040-0f35-d85d" page="135">
       <costs>
@@ -220,14 +490,6 @@
         <categoryLink targetId="d251-944b-3c3b-0579" id="d614-11f5-edda-0847" primary="false" name="Traitor"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Sonic shriekers" hidden="false" id="0ceb-677a-17a6-9abb" type="selectionEntry" targetId="f7a1-d5a3-c294-7ebd">
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ca2-c979-1638-8870" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="5be8-7421-4bc2-b3f1" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="e787-aec8-4dde-a5a6" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
@@ -266,8 +528,85 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff82-8d2f-4e03-83fb-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff82-8d2f-4e03-83fb-max" includeChildSelections="false"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="[Allegiance]" id="d40a-7b8e-f8e7-f5b5" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+            <infoLink name="[Legiones Astartes]" id="9cf9-875b-5e3f-aa59" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+            <infoLink name="Master of the Legion" id="5b48-cd33-9e07-98d5" hidden="false" type="profile" targetId="6cd2-96be-b703-6d57"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Blades of Lucius" hidden="false" id="bda4-08ca-e6cf-8611" sortIndex="1">
+              <profiles>
+                <profile name="Blades of Lucius" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="be98-84d9-0773-cbf1">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Duellist&apos;s Edge (1)</characteristic>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Duellist&apos;s Edge (X)" id="5014-9cbe-77fb-d10a" hidden="false" type="rule" targetId="94bc-c69f-99b6-8ba0">
+                  <comment>1</comment>
+                  <modifiers>
+                    <modifier type="set" value="Duellist&apos;s Edge (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed9a-0964-e2ae-73be-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed9a-0964-e2ae-73be-max"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="a733-3630-e314-4082" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="af2d-74d7-fd1c-cbcf-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af2d-74d7-fd1c-cbcf-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Frag grenades" hidden="false" id="deec-280a-2f22-0b97" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ffb6-1f72-2ccb-4e90-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffb6-1f72-2ccb-4e90-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Krak grenades" hidden="false" id="929d-4010-052f-425b" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf7d-8f84-3741-c4b5-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf7d-8f84-3741-c4b5-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Sonic shriekers" hidden="false" id="0ceb-677a-17a6-9abb" type="selectionEntry" targetId="f7a1-d5a3-c294-7ebd" sortIndex="5">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ca2-c979-1638-8870" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <rules>
+            <rule name="The Faultless Blade" id="0630-bd2c-4ef8-d46f" hidden="false">
+              <description>&quot;Lucius gains an increased benefit from the Paragon of Excellence Gambit.&quot;
+
+
+If the Paragon of Excellence Gambit is selected for a Model with this Special Rule, add a +4 modifier to the Focus Roll instead of +2.</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Saul Tarvitz" hidden="false" id="fb9a-2484-6aee-fa59" page="136" publicationId="e54c-7040-0f35-d85d">
       <costs>
@@ -277,21 +616,14 @@
       </costs>
       <categoryLinks>
         <categoryLink targetId="901a-6b71-7a29-4597" id="a287-41e8-ef65-6c3b" primary="false" name="Officer of the Line (2)"/>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="2dcf-ac15-8a82-f05b" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="b980-187b-2b17-d635" id="7f8a-8b58-a3ab-555a" primary="false" name="Unique Model Sub-Type"/>
-        <categoryLink targetId="9871-cb62-5283-2216" id="0127-5b1d-4edf-fa57" primary="false" name="Command Model Sub-type"/>
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="7aa7-aa0d-19b4-2149" primary="false" name="Master of the Legion"/>
         <categoryLink targetId="4381-ed35-c3fa-a225" id="0485-5d16-dc7a-021a" primary="false" name="Loyalist"/>
+        <categoryLink targetId="a364-a983-c2b2-cbc7" id="c3a9-9b38-10a1-d372" primary="false" name="Emperor&apos;s Children"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Captain Lucius" hidden="false" id="b418-a666-9bce-3ce1" publicationId="e54c-7040-0f35-d85d" page="136">
-          <categoryLinks>
-            <categoryLink name="Infantry Model Type" hidden="false" id="1674-dfe9-8459-b0e8" targetId="594d-fa82-13cb-a345" primary="false"/>
-            <categoryLink name="Unique Model Sub-Type" hidden="false" id="0591-0232-1eb8-59ad" targetId="b980-187b-2b17-d635" primary="false"/>
-            <categoryLink name="Command Model Sub-type" hidden="false" id="48a3-a0e7-02ff-c3e1" targetId="9871-cb62-5283-2216" primary="false"/>
-          </categoryLinks>
+        <selectionEntry type="model" import="true" name="Saul Tarvitz" hidden="false" id="81fc-3acd-af65-763a" sortIndex="1">
           <profiles>
-            <profile name="Captain Lucius" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="d835-c427-ed6b-a6c9" publicationId="e54c-7040-0f35-d85d" page="136">
+            <profile name="Saul Tarvitz" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="c6ff-e38a-5bbc-ca8d">
               <characteristics>
                 <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Unique, Command)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
@@ -311,10 +643,104 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink name="[Legiones Astartes]" id="b24a-86eb-1281-510c" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+            <infoLink name="Master of the Legion" id="3486-3188-65e0-6de9" hidden="false" type="profile" targetId="6cd2-96be-b703-6d57"/>
+            <infoLink name="Hatred (X)" id="c2ba-e0aa-4d56-2bf9" hidden="false" type="rule" targetId="0612-95d5-46ae-c5ee">
+              <comment>Traitors</comment>
+              <modifiers>
+                <modifier type="set" value="Hatred (Traitors)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Officer of the Line (X)" id="69ed-2fe6-692b-f41e" hidden="false" type="rule" targetId="7779-47c8-99a8-b935">
+              <comment>2</comment>
+              <modifiers>
+                <modifier type="set" value="Officer of the Line (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="[Allegiance]" id="57c3-34db-7ca5-e02e" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Charnabal broadsword" hidden="false" id="8d91-22f2-15ed-f4ff" sortIndex="1">
+              <profiles>
+                <profile name="Charnabal broadsword" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="d953-5296-efc8-f010">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">-</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+), Duellist&apos;s Edge (1)</characteristic>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Charnabal</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Breaching (X)" id="4f77-258b-8cc3-a411" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+                  <comment>5+</comment>
+                  <modifiers>
+                    <modifier type="set" value="Breaching (5+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Duellist&apos;s Edge (X)" id="36eb-63e7-e459-4d19" hidden="false" type="rule" targetId="94bc-c69f-99b6-8ba0">
+                  <comment>1</comment>
+                  <modifiers>
+                    <modifier type="set" value="Duellist&apos;s Edge (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="75dd-e158-0c7c-0482-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75dd-e158-0c7c-0482-max"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Nemesis bolter" hidden="false" id="6423-e3c6-426a-a3e9" type="selectionEntry" targetId="96e3-031c-2139-1335" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0555-c368-f7d1-59d6-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0555-c368-f7d1-59d6-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="7363-176d-ce38-cedf" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c013-b0ad-583c-c83f-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c013-b0ad-583c-c83f-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Frag grenades" hidden="false" id="ce01-a9ab-428a-ae80" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c76b-d119-1f20-a235-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c76b-d119-1f20-a235-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Krak grenades" hidden="false" id="e5a3-d33c-223e-8f35" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="87c2-4873-5e70-ac32-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87c2-4873-5e70-ac32-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <rules>
+            <rule name="A Brother Betrayed" id="65b3-d1e0-2056-54a2" hidden="false">
+              <description>&quot;This Gambitallows Saul Tarvitz to gain benefits when fighting specific opponents.&quot;
+
+
+While a Model with this Special Rule is in a Challenge with an enemy Model with the Emperor&apos;s Children, World Eaters, Sons of Horus, or Death Guard Traits, its Controlling Player can select the following Gambit:
+
+
+Bite of the Betrayed: This Gambit can only be selected during the first Face-Off Step of a Challenge. If this Gambit is selected, until this Challenge ends, modify this Model&apos;s Weapon Skill, Strength, and Toughness Characteristics by +1.</description>
+            </rule>
+          </rules>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec83-1eaa-02e3-5cf2-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec83-1eaa-02e3-5cf2-max" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="41b7-c1fa-4564-e115-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41b7-c1fa-4564-e115-max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="8d3d-e7e7-45f1-b9c6" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="b980-187b-2b17-d635" id="02c6-ff19-4119-bc6b" primary="false" name="Unique Model Sub-Type"/>
+            <categoryLink targetId="9871-cb62-5283-2216" id="8553-d37a-4450-9607" primary="false" name="Command Model Sub-type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -324,6 +750,13 @@
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Phoenix Terminator Squad" hidden="false" id="e547-ac83-3328-4d31" publicationId="e54c-7040-0f35-d85d" page="137">
       <selectionEntries>
@@ -362,6 +795,14 @@
               </characteristics>
             </profile>
           </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Phoenix power spear" hidden="false" id="a859-bd2c-c780-3ee3" type="selectionEntry" targetId="41b7-f368-f337-d940">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c9a-9f1b-cbdd-313c-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c9a-9f1b-cbdd-313c-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Phoenix Terminator" hidden="false" id="98e4-4290-bc76-63b1" sortIndex="2" publicationId="e54c-7040-0f35-d85d" page="137" defaultAmount="4">
           <costs>
@@ -397,6 +838,14 @@
               </characteristics>
             </profile>
           </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Phoenix power spear" hidden="false" id="0a0e-661e-5a00-d149" type="selectionEntry" targetId="41b7-f368-f337-d940">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f5d4-3311-6523-3da2-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f5d4-3311-6523-3da2-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -408,13 +857,42 @@
         <categoryLink targetId="594d-fa82-13cb-a345" id="bd69-86ea-6dff-d398" primary="false" name="Infantry Model Type"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink targetId="ab39-af3b-58c2-8d9b" id="5f26-d958-57a4-33ec" type="selectionEntryGroup" name="Surgical Augments (All models in a Traitor unit may be given the same):" hidden="false"/>
+        <entryLink targetId="ab39-af3b-58c2-8d9b" id="5f26-d958-57a4-33ec" type="selectionEntryGroup" name="Surgical Augments:" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="09e3-f4cd-405a-9923" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="e3c9-a0bf-441c-87d2" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="f817-1086-38c0-93d1" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Bulky (X)" id="a87e-1e03-6b31-c871" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+          <comment>2</comment>
+          <modifiers>
+            <modifier type="set" value="Bulky (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <rules>
+        <rule name="Skill Unmatched" id="e718-cb14-7cb2-3599" hidden="false">
+          <description>&quot;When Locked in Combat, this Unit may select an additional Special Rule to apply until the end of the Phase.&quot;
+
+At the End of the Charge Sub-Phase, if a Unit that includes any Models with this Special Rule is Locked in Combat with any enemy Units, this Unit&apos;s Controlling Player can select one of the following effects:
+
+• The Perfect Strike - If this effect is selected, until the end of this Phase, the Weapon Skill Characteristic of each Model in this Unit with this Special Rule is considered to be one point higher than normal when determining the score that Model needs to Hit it opponent in the Strike Step of the Challenge Sub-Phase or the Make Hit Tests Step of the Resolving an Initiative Step Step (this does not modify the Weapon Skill Characteristic of each Model in this Unit for the purposes of Hit Tests made for opposing Models).
+
+
+• The Perfect Guard - If this effect is selected, until the end of this Phase, the Weapon Skill Characteristic of each Model in this Unit with this Special Rule is considered to be one point higher than normal when determining the score an opposing Model needs to Hit this Model in the Strike Step of the Challenge Sub-Phase or the Make Hit Tests Step of the Resolving an Initiative Step Step (this does not modify the Weapon Skill Characteristics of each Model in this Unit for the purposes of Hit Tests made for their own attacks).</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Palatine Blade Squad" hidden="false" id="8f1b-e5a5-5607-612c" publicationId="e54c-7040-0f35-d85d" page="138">
       <costs>
@@ -460,11 +938,13 @@
                       <modifiers>
                         <modifier type="set" value="Breaching (5+)" field="name"/>
                       </modifiers>
+                      <comment>5+</comment>
                     </infoLink>
                     <infoLink name="Duellist&apos;s Edge (X)" id="8c37-8f60-fe2a-dbbe" hidden="false" type="rule" targetId="94bc-c69f-99b6-8ba0">
                       <modifiers>
                         <modifier type="set" value="Duellist&apos;s Edge (1)" field="name"/>
                       </modifiers>
+                      <comment>1</comment>
                     </infoLink>
                   </infoLinks>
                 </selectionEntry>
@@ -531,9 +1011,21 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="May exchange Palantine blade for:" id="ba2d-8783-66d8-183b" hidden="false">
               <entryLinks>
-                <entryLink import="true" name="Phoenix power spear" hidden="false" id="c751-6c1b-906f-8ffa" type="selectionEntry" targetId="41b7-f368-f337-d940" sortIndex="2"/>
-                <entryLink import="true" name="Palatine blade" hidden="false" id="f7d3-21b1-5afa-662d" type="selectionEntry" targetId="841a-f81a-904e-fd14" sortIndex="1"/>
+                <entryLink import="true" name="Phoenix power spear" hidden="false" id="c751-6c1b-906f-8ffa" type="selectionEntry" targetId="41b7-f368-f337-d940" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e08-2183-bf86-f2fc"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Palatine blade" hidden="false" id="f7d3-21b1-5afa-662d" type="selectionEntry" targetId="841a-f81a-904e-fd14" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="feed-a264-ac53-6e92"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9b9a-4086-fb68-cfb7"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="803a-3082-86f4-2b44"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <profiles>
@@ -566,13 +1058,42 @@
         <categoryLink targetId="594d-fa82-13cb-a345" id="3dfd-53bc-489b-e997" primary="false" name="Infantry Model Type"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Surgical Augments (All models in a Traitor unit may be given the same):" hidden="false" id="c9dc-ebe1-fd50-c5d0" targetId="ab39-af3b-58c2-8d9b" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Surgical Augments:" hidden="true" id="c9dc-ebe1-fd50-c5d0" targetId="ab39-af3b-58c2-8d9b" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="44da-4f46-49ce-8fe9" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="153a-258c-41dc-b4cc" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Frag grenades" hidden="false" id="e3e3-5e8d-0e09-c000" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4bac-44c2-a74d-2a3a-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bac-44c2-a74d-2a3a-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak grenades" hidden="false" id="56d6-1d86-c89f-7773" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd4a-b6ff-e4b7-6ab0-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd4a-b6ff-e4b7-6ab0-max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="1242-8539-ef64-b363" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Vanguard (X)" id="3f5a-90f1-bd3f-e370" hidden="false" type="rule" targetId="530f-b733-993c-ec84">
+          <comment>3</comment>
+          <modifiers>
+            <modifier type="set" value="Vanguard (3)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kakophoni Squad" hidden="false" id="4ac4-b32a-6840-a91e" publicationId="e54c-7040-0f35-d85d" page="139">
       <costs>
@@ -611,6 +1132,38 @@
               </characteristics>
             </profile>
           </profiles>
+          <entryLinks>
+            <entryLink import="true" name="The Cacophony" hidden="false" id="7e5a-4b8c-7f11-4875" type="selectionEntry" targetId="fd41-0990-f336-1f64" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a98-329c-ac1a-2bb0-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a98-329c-ac1a-2bb0-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Sonic shriekers" hidden="false" id="2c2a-d71a-4c94-0ab5" type="selectionEntry" targetId="f7a1-d5a3-c294-7ebd" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="266f-952d-f70a-a693-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="266f-952d-f70a-a693-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="382b-c18e-6510-3bf9" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc58-b657-b67a-0e39-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc58-b657-b67a-0e39-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Frag grenades" hidden="false" id="42aa-d635-1415-b3f5" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d9e6-a048-4571-27f1-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9e6-a048-4571-27f1-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Krak grenades" hidden="false" id="9694-3228-fdad-61a9" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d57b-9397-a99d-7a9a-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d57b-9397-a99d-7a9a-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Chora" hidden="false" id="d66a-a50b-2dc9-756a" sortIndex="2" page="139" publicationId="e54c-7040-0f35-d85d" defaultAmount="4">
           <costs>
@@ -646,6 +1199,38 @@
           <categoryLinks>
             <categoryLink name="Infantry Model Type" hidden="false" id="4d38-0c1a-b71a-3beb" targetId="594d-fa82-13cb-a345" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="The Cacophony" hidden="false" id="b724-f038-56d2-a8e7" type="selectionEntry" targetId="fd41-0990-f336-1f64" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5674-e007-69a8-2d77-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5674-e007-69a8-2d77-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Sonic shriekers" hidden="false" id="0a0d-50bc-4a62-c1b2" type="selectionEntry" targetId="f7a1-d5a3-c294-7ebd" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4324-4eef-cf3b-bf9e-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4324-4eef-cf3b-bf9e-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="3b2c-ee33-fc55-eca4" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="75a8-8c66-ba4f-6627-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75a8-8c66-ba4f-6627-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Frag grenades" hidden="false" id="32f5-ab38-b1c9-b135" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b7c-21fc-e4fc-7661-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b7c-21fc-e4fc-7661-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Krak grenades" hidden="false" id="508a-0194-19e8-5106" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3635-8928-68e6-bfae-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3635-8928-68e6-bfae-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -660,6 +1245,41 @@
         </entryLink>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Cacophony" hidden="false" id="fd41-0990-f336-1f64">
+      <profiles>
+        <profile name="The Cacophony" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="68e9-ee5b-694e-be33">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">36</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">3</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">5</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Overload (1), Stun (2), Critical Hit (6+)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Sonic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Overload (X)" id="dd79-35ba-e87a-0896" hidden="false" type="rule" targetId="1d3a-d1e2-871a-63ae">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="set" value="Overload (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Stun (X)" id="ca2f-01a3-bb98-4cc6" hidden="false" type="rule" targetId="c7c1-bbc9-f852-6f71">
+          <comment>2</comment>
+          <modifiers>
+            <modifier type="set" value="Stun (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Critical Hit (X)" id="5bd3-55c9-5e49-cebf" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
+          <comment>6+</comment>
+          <modifiers>
+            <modifier type="set" value="Critical Hit (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Captain Lucius" hidden="false" id="79f7-e68d-59dd-0a4c" targetId="2621-860f-a513-e11e" type="selectionEntry">
@@ -671,13 +1291,13 @@
     <entryLink import="true" name="Fulgrim" hidden="false" id="0d09-afed-def4-7636" targetId="9ba1-40c2-edd5-8bd7" type="selectionEntry">
       <categoryLinks>
         <categoryLink targetId="22ee-7208-4089-b005" id="15d2-f042-f960-94c0" primary="true" name="Warlord"/>
-        <categoryLink targetId="a364-a983-c2b2-cbc7" id="d700-d299-564c-1d28" primary="false" name="Emperor&apos;s Children"/>
+        <categoryLink targetId="a364-a983-c2b2-cbc7" id="826b-158d-2054-238b" primary="false" name="Emperor&apos;s Children"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Fulgrim Transfigured" hidden="false" id="5ca1-8cac-0ae6-8cc7" targetId="7db2-c826-ebc5-1918" type="selectionEntry">
       <categoryLinks>
         <categoryLink targetId="22ee-7208-4089-b005" id="5cfa-7863-963d-ebf7" primary="true" name="Warlord"/>
-        <categoryLink targetId="a364-a983-c2b2-cbc7" id="1366-e5e8-82ac-e352" primary="false" name="Emperor&apos;s Children"/>
+        <categoryLink targetId="a364-a983-c2b2-cbc7" id="4f53-0e7e-b7ff-a8dd" primary="false" name="Emperor&apos;s Children"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Kakophoni Squad" hidden="false" id="facc-ac40-1968-b4c4" targetId="4ac4-b32a-6840-a91e" type="selectionEntry">
@@ -712,31 +1332,7 @@
     </entryLink>
   </entryLinks>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Surgical Augments" id="bcb8-3151-6aff-5203" hidden="false">
-      <entryLinks>
-        <entryLink import="true" name="Sonic shriekers" hidden="false" id="e4fa-77f7-9dab-c889" type="selectionEntry" targetId="f7a1-d5a3-c294-7ebd" sortIndex="1">
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c21d-d702-f17e-d0f3" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Sonic lance" hidden="false" id="3633-16f9-0e91-59fa" type="selectionEntry" targetId="5767-7e75-a9ce-d25b" sortIndex="2">
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="355d-b139-24bb-6623" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6a1-e360-9321-01cf" includeChildSelections="false"/>
-      </constraints>
-      <comment>Character version</comment>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Surgical Augments (All models in a Traitor unit may be given the same):" id="ab39-af3b-58c2-8d9b" hidden="false">
+    <selectionEntryGroup name="Surgical Augments:" id="ab39-af3b-58c2-8d9b" hidden="false">
       <entryLinks>
         <entryLink import="true" name="Sonic shriekers" hidden="false" id="5315-fbff-23e3-e045" type="selectionEntry" targetId="f7a1-d5a3-c294-7ebd" sortIndex="1">
           <constraints>

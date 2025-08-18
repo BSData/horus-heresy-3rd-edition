@@ -8,6 +8,8 @@ from BSCopy.system.system import System
 from BSCopy.system.node import Node
 from BSCopy.system.constants import SystemSettingsKeys, GameImportSpecs
 from BSCopy.system.game.heresy3e import Heresy3e
+from BSCopy.util.text_utils import read_type_and_subtypes
+from BSCopy.book_reader.raw_entry import RawModel
 
 
 class GameTests(unittest.TestCase):
@@ -35,7 +37,7 @@ class GameTests(unittest.TestCase):
 
     def test_root_link_categories(self):
         expected_primaries = Heresy3e.BATTLEFIELD_ROLES.copy()
-        expected_primaries += ['Army Configuration', 'Rewards of Treachery']
+        expected_primaries += ['Army Configuration', 'Rewards of Treachery', "Master of Automata"]
         expected_secondaries = Heresy3e.FACTIONS.copy()
         for file in self.system.files:
             entry_links_node = file.root_node.get_child(tag='entryLinks')
@@ -55,20 +57,20 @@ class GameTests(unittest.TestCase):
                         if other_link.id == primary_cat.id:
                             continue  # Skip the primary we've already checked.
                         self.assertIn(other_link.target_name, expected_secondaries,
-                                      f"(The link's primary category) is a faction: "
+                                      "The other categories may only be faction categories"
                                       )
 
     def test_forces_all_restrict_primes(self):
         for parent_force in self.system.gst.root_node.get_child("forceEntries").children:
-            print(parent_force)
+            # print(parent_force)
             if parent_force.get_child("forceEntries") is None:
                 continue
             for child_force in parent_force.get_child("forceEntries").children:
-                print("\t", child_force)
+                # print("\t", child_force)
                 if child_force.get_child("categoryLinks") is None:
                     continue
                 for category_link in child_force.get_child("categoryLinks").children:
-                    print("\t", "\t", category_link)
+                    # print("\t", "\t", category_link)
                     if not category_link.target_name.startswith("Prime "):
                         continue
                     with self.subTest(f"{category_link.target_name} on {child_force}"):
@@ -85,7 +87,7 @@ class GameTests(unittest.TestCase):
         crusade = self.system.get_node_by_id("8562-592c-8d4b-a1f0")
         allied_links = self.system.get_node_by_id("256b-b8a8-017a-75e9").get_child("forceEntryLinks")
         for child_force in crusade.get_child("forceEntries").children:
-            print("\t", child_force)
+            # print("\t", child_force)
             if not child_force.name.startswith("Auxiliary - "):
                 continue
             with self.subTest(f"{child_force.name} should be linked in the Allied Detachment"):
@@ -98,6 +100,7 @@ class GameTests(unittest.TestCase):
         battlefield_roles.remove("Warlord")
         # Lords of war are only prime in knights, make a separate test for this.
         battlefield_roles.remove("Lord of War")
+        battlefield_roles.remove("Fortification")
 
         # First, get all units
         unit_ids = []
@@ -150,9 +153,9 @@ class GameTests(unittest.TestCase):
         total_model_count = 0
         for unit_id in self.unit_ids:
             unit = self.system.get_node_by_id(unit_id)
-            with self.subTest(f"{unit} should have be of type 'unit'"):
+            with self.subTest(f"{unit} should be of type 'unit'"):
                 self.assertEqual(unit.attrib["type"], "unit")
-            with self.subTest(f"{unit} should have contain models"):
+            with self.subTest(f"{unit} should contain models"):
                 entries = unit.get_child("selectionEntries")
                 self.assertIsNotNone(entries, "Should have entries")
                 model_count = 0
@@ -176,6 +179,21 @@ class GameTests(unittest.TestCase):
                                              f"There should be a profile on {potential_model}")
                 self.assertGreaterEqual(model_count, 1, "There should be at least one model in the unit")
         print(f"There are {len(self.unit_ids)} Units, containing {total_model_count} models")
+
+    def test_categories_match_type_line(self):
+        system = self.system
+        for model_node in system.nodes_with_ids.filter(lambda x: x.type == "selectionEntry:model"):
+            with self.subTest(f"Types and Subtypes for {model_node}"):
+                profile_node = model_node.get_profile_node()
+                self.assertIsNotNone(profile_node, f"Profile should be set on {model_node}")
+                profile_dict = profile_node.get_profile_dict()
+                unit_type_text = profile_dict.get("Type")
+                self.assertIsNotNone(unit_type_text, f"'Type' attribute should be set on {profile_node}")
+                type_and_subtypes = read_type_and_subtypes(unit_type_text)
+                raw_model = RawModel(None, model_node.name, None, None, None)
+                raw_model.type_and_subtypes = type_and_subtypes
+                errors = model_node.check_types_and_subtypes(raw_model)
+                self.assertEqual(len(errors), 0, f"{errors} on {model_node}")
 
 
 if __name__ == '__main__':

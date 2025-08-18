@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="736e-3967-e72b-e3ac" name="                        X - Iron Hands" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="8" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="736e-3967-e72b-e3ac" name="                        X - Iron Hands" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="9" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Ferrus Manus" hidden="false" id="667d-97c2-e1ea-8fa6">
       <selectionEntries>
@@ -29,6 +29,10 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8014-3d00-ef46-9437" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b20-d480-3853-f09c" includeChildSelections="false"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink targetId="7799-e1d6-762b-700b" id="753d-64ac-47e1-bc94" primary="false" name="Paragon Model Type"/>
+            <categoryLink targetId="b980-187b-2b17-d635" id="f22a-eff9-4d3d-a614" primary="false" name="Unique Model Sub-Type"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Forgebreaker" hidden="false" id="f144-c060-425f-64d5" sortIndex="1">
           <constraints>
@@ -267,6 +271,11 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="c849-a22c-4e2d-bdcd" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="9871-cb62-5283-2216" id="ae1c-7182-4f01-9868" primary="false" name="Command Model Sub-type"/>
+            <categoryLink targetId="1e7d-9066-28d2-97a0" id="f1c3-9dfb-47c9-9e2d" primary="false" name="Heavy Model Sub-Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -398,6 +407,14 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e672-805b-7f44-a8f7"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Breacher Charges" hidden="false" id="26f5-a21e-e598-a521" type="selectionEntry" targetId="01bd-4377-904c-6625">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64c2-056a-516b-6380"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="May exchange bolter for:" id="1da5-2f04-fde5-7cdb" hidden="false" defaultSelectionEntryId="1e85-deea-50fe-22a4">
@@ -424,6 +441,8 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="414f-fd53-fd6c-9d78" primary="false" name="Sergeant Model Sub-Type"/>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="4ce0-e870-4853-ab10" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="1e7d-9066-28d2-97a0" id="53cf-7b39-4890-b01c" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Immortal" hidden="false" id="de2c-ac8f-4ed3-47d2" sortIndex="2">
@@ -494,6 +513,10 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="b67e-d020-4e13-8ed3" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="1e7d-9066-28d2-97a0" id="ce0a-29b9-43c8-9d94" primary="false" name="Heavy Model Sub-Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -514,7 +537,7 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
         <infoLink name="[Legiones Astartes]" id="cadc-8c7b-a530-556a" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Boarding shield" hidden="false" id="1612-6d39-de01-fec0" type="selectionEntry" targetId="01e9-334c-80cb-f1c6">
+        <entryLink import="true" name="Boarding shield" hidden="false" id="1612-6d39-de01-fec0" type="selectionEntry" targetId="01e9-334c-80cb-f1c6" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="396b-5495-1b87-85e5"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2b4-f4d5-0ab4-9b8b"/>
@@ -577,6 +600,11 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="04e0-d5c9-a637-b43e"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5772-579d-321d-ed63"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="9fc5-75ca-447f-b5a2" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="b980-187b-2b17-d635" id="cc38-9830-4b24-9ea5" primary="false" name="Unique Model Sub-Type"/>
+            <categoryLink targetId="9871-cb62-5283-2216" id="855b-1544-4a21-8213" primary="false" name="Command Model Sub-type"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Storm&apos;s Wrath" hidden="false" id="673e-2d29-6502-f8a3" sortIndex="2">
           <constraints>
@@ -728,6 +756,8 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
           </profiles>
           <categoryLinks>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="0dca-f794-98d0-23a1" primary="false" name="Sergeant Model Sub-Type"/>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="a02e-c69d-4512-bbed" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="1e7d-9066-28d2-97a0" id="17ea-7964-400b-96f6" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Gorgon Terminator" hidden="false" id="e227-99b9-e7a8-99f7" sortIndex="2">
@@ -769,6 +799,10 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="547f-0c83-4fa3-8608" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="1e7d-9066-28d2-97a0" id="07d4-955b-41ad-a158" primary="false" name="Heavy Model Sub-Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <profiles>

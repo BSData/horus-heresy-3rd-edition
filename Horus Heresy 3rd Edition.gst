@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="27" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="30" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -195,10 +195,13 @@
     <categoryEntry name="Open Beta Release" id="c5ac-45c2-a8a9-e32c" hidden="false"/>
     <categoryEntry name="Command - Optae Only" id="ee42-a241-c364-489d" hidden="false"/>
     <categoryEntry name="The Hammer of Olympia Unlock" id="b7c9-7d2d-fb56-5486" hidden="true"/>
-    <categoryEntry name="Malefic" id="2de1-ddd6-ebb4-10df" hidden="false">
+    <categoryEntry name="Malefic Sub-type" id="2de1-ddd6-ebb4-10df" hidden="false" publicationId="e54c-7040-0f35-d85d" page="18">
       <rules>
-        <rule name="Malefic" id="56af-aee5-210b-7093" hidden="false">
-          <description>Malefic Rule</description>
+        <rule name="Malefic" id="56af-aee5-210b-7093" hidden="false" publicationId="e54c-7040-0f35-d85d" page="18">
+          <description>The following Rules apply to all Models with the Malefic Sub-Type:
+• When a Unit composed entirely of Models with the Malefic Sub-Type would gain a Tactical Status of any kind, that Tactical Status is not applied to the Models in the Unit, but instead the Unit suffers D3 automatic wounds with an AP of 2 and a Damage Characteristic of 1 against which no Saving Throws of any kind may be made. Once these wounds are resolved, no Tactical Status is applied to any Model in the Unit.
+• Models with the Malefic Sub-Type are not affected by Special Rules that negatively modify their Leadership, Cool, Willpower or Intelligence Characteristics.
+• No Model that does not also have the Malefic Sub-Type may join or be joined by a Unit that includes one or more Models with the Malefic Sub-Type.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -280,6 +283,69 @@
     <categoryEntry name="Support - Rapier Section, Basilisk Artillery Tank or Medusa Artillery tank units only" id="ada1-aac4-9802-9c3d" hidden="false"/>
     <categoryEntry name="Armour - Leman Russ Strike, Leman Russ Assault or Malcador Heavy tank units only" id="5725-7f8c-f02e-4df6" hidden="false"/>
     <categoryEntry name="War-engine - Aethon Heavy Sentinel Squadron units only" id="5ee3-236d-c224-67aa" hidden="false"/>
+    <categoryEntry name="Elites - Domitar Battle Maniple Only" id="826c-7b05-0f62-8b16" hidden="false"/>
+    <categoryEntry name="Support - Castellax Battle Maniple Only" id="61eb-11e2-1592-3161" hidden="false"/>
+    <categoryEntry name="Recon - Vorax Attack Maniple Only" id="0fb1-2125-2a33-b094" hidden="false"/>
+    <categoryEntry name="Fast Attack - Vulturax Stratos Squadron Only" id="7db9-74d1-6ba1-061e" hidden="false"/>
+    <categoryEntry name="Master of Automata" id="43f5-bc69-29b9-2286" hidden="true">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3fc2-eb91-c0cf-1c8c"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="058e-61f0-0bb1-a728"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="abf3-3d0e-d457-3a59" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="058e-61f0-0bb1-a728">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="abf3-3d0e-d457-3a59" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Fortification Model Type" id="ae5b-4e74-db76-fa25" hidden="false">
+      <rules>
+        <rule name="Fortification" id="1498-b800-3984-286c" hidden="false">
+          <description>The following Rules apply to all Models with the Fortification Type:
+• A Model with the Fortification Type can never be moved by any Rule or effect after it has been Deployed.
+• A Model with the Fortification Type can never be placed into Reserves and must always be deployed at the start of a Battle.
+• A Model with the Fortification Type may never Hold, Control or Contest an Objective Marker of any kind.
+• A Model with the Fortification Type can never be affected by any kind of Status, including both Tactical Statuses and Cybertheurgic Statuses. However, such a Model can be affected by Cybertheurgic Rites that do not apply a Cybertheurgic Status.
+• A Unit that includes a Model with the Fortification Type may never be joined by any other Models of any Type.
+• A Model with the Fortification Type cannot make Reactions of any kind, unless a specific Sub-Type states otherwise.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Emplacement Model Sub-Type" id="d1e7-50c0-0764-9de5" hidden="false">
+      <rules>
+        <rule name="Emplacement Sub-Type" id="4e4e-7b92-cb21-86de" hidden="false">
+          <description>The following Rules apply to all Models with the Emplacement Sub-Type:
+• A Model with the Emplacement Sub-Type has a Ballistic Skill Characteristic and can make Shooting Attacks.
+• A Model with the Emplacement Sub-Type can have the Return Fire and Interceptor Reactions made for it</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Bunker Model Sub-Type" id="7caa-3c9a-875c-5bca" hidden="false">
+      <rules>
+        <rule name="Bunker Sub-Type" id="894b-4c1c-9e09-0ffc" hidden="false">
+          <description>The following Rules apply to all Models with the Bunker Sub-Type:
+• A Model with the Bunker Sub-Type has a Transport Capacity Characteristic.
+• Only Models with the Infantry Type that have no variant of the Bulky (X) Special Rule may Embark on a Model with the Bunker Sub-Type.
+• A Model with the Bunker Sub-Type can be Captured</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Structure Model Sub-Type" id="2893-a655-1074-9831" hidden="false">
+      <rules>
+        <rule name="Structure Sub-Type" id="c363-0bc3-7cb7-6d63" hidden="false">
+          <description>The following Rules apply to all Models with the Structure Sub-Type:
+• A Model with the Structure Sub-Type can be Captured</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Fortification" id="7e2f-62cf-4e42-9e13" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -539,6 +605,7 @@
               </constraints>
             </categoryLink>
             <categoryLink name="Rewards of Treachery" hidden="false" id="2a0d-9fee-9c25-8560" targetId="fe7f-1287-4162-a65d"/>
+            <categoryLink name="Master of Automata" hidden="false" id="c260-2ecb-3a86-a859" targetId="43f5-bc69-29b9-2286"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="5611-db49-9e64-44c6-min" includeChildSelections="true"/>
@@ -6358,11 +6425,6 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Elites" hidden="false" id="b46b-e1f5-8f77-f27e" targetId="276f-7a07-a56c-affd">
@@ -6400,11 +6462,6 @@
                 <modifier type="increment" value="1" field="294b-50f5-12d2-ad5d">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -11680,7 +11737,6 @@
       </forceEntries>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="dae8-8a74-0984-6332" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="7842-421d-37b3-8ed4"/>
         <constraint type="max" value="0" field="3e8e-05ee-be52-12d6" scope="self" shared="false" id="0ab6-91a0-792e-4068" includeChildSelections="true" includeChildForces="true"/>
         <constraint type="max" value="0" field="159d-855c-533d-f592" scope="self" shared="false" id="22e2-3454-8828-04e6" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
@@ -11950,6 +12006,7 @@
               </constraints>
             </categoryLink>
             <categoryLink name="Rewards of Treachery" hidden="false" id="f2b2-8c74-65bf-19e4" targetId="fe7f-1287-4162-a65d"/>
+            <categoryLink name="Master of Automata" hidden="false" id="79b1-e748-f637-ff0d" targetId="43f5-bc69-29b9-2286"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -12365,6 +12422,7 @@
         <categoryLink name="Prime Fast Attack" hidden="false" id="ed24-0e72-92b0-baae" targetId="c291-144b-3da6-37ed"/>
         <categoryLink name="Lord of War" hidden="false" id="e480-805a-cba5-0102" targetId="a46f-a465-0ead-d6b8"/>
         <categoryLink name="Warlord" hidden="false" id="a9f0-0981-4d0f-a835" targetId="22ee-7208-4089-b005"/>
+        <categoryLink name="Fortification" hidden="false" id="8261-22fc-c75e-2df6" targetId="7e2f-62cf-4e42-9e13"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -12389,14 +12447,12 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e075-1f6c-ff36-8e11" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="DON&apos;T SUBMIT BUGS FOR NOT IMPLEMENTED FUNCTIONALITY. See export for list." hidden="false" id="cd4a-d335-2d3a-91e0" defaultAmount="1">
+    <selectionEntry type="upgrade" import="true" name="DON&apos;T SUBMIT BUGS FOR NOT IMPLEMENTED FUNCTIONALITY. Currently Titans and Legacies" hidden="false" id="cd4a-d335-2d3a-91e0" defaultAmount="1">
       <rules>
         <rule name="Things that aren&apos;t implemented" id="10ac-cafa-6c21-0fa3" hidden="false">
-          <description>- Knights
-- Solar Aux detachment validation (use your brain)
-- A lot of detachment validation beyond the basic ones.
-- Legion primes and legion wargear.
-- A ton of other small stuff.
+          <description>- Titans
+
+- Legacies (except fortifications)
 
 Please don&apos;t submit bug reports for any of these things. Please only submit bug reports for errors/broken functionality.</description>
         </rule>
@@ -12635,6 +12691,15 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <characteristicType name="Restrictions:" id="d3e5-69ce-a8d9-97db"/>
         <characteristicType name="Effect:" id="dae4-c869-d27c-9025"/>
         <characteristicType name="Duration:" id="7c83-ff4d-0f5a-55b3"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Battlefield fortification" id="f47c-65e0-5690-738e" hidden="false" sortIndex="21">
+      <characteristicTypes>
+        <characteristicType name="Armour" id="5be5-04db-c14c-12be"/>
+        <characteristicType name="HP" id="4501-2c2a-d089-210e"/>
+        <characteristicType name="BS" id="e2af-22db-e8a2-5ebc"/>
+        <characteristicType name="Transport Capacity" id="ca35-9ed8-337e-cb3e"/>
+        <characteristicType name="Type" id="869d-8fb8-f39f-4575"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -12973,6 +13038,14 @@ All Models in any of these Units have their Faction Trait replaced with &apos;Al
       </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Army Configuration" hidden="true" id="a827-ee7f-fe7d-9e0e"/>
+    <selectionEntry type="upgrade" import="true" name="Master of Automata" hidden="false" id="abf3-3d0e-d457-3a59">
+      <rules>
+        <rule name="Master of Automata" id="eb57-ecb6-05e0-ddef" hidden="false" page="37" publicationId="e54c-7040-0f35-d85d">
+          <description>&quot;This Special Rule allows a Praevian to be accompanied by a Unit of Battle-Automata.&quot;
+When a Model with this Special Rule is included in a Detachment, one additional Force Organization Slot is added to that Detachment. This Slot can only be filled with one Castellax Battle Maniple or Castellax Destructor Maniple Unit selected from Liber Mechanicum. When such a Unit is included in this way, its Cybernetica Trait is replaced with &apos;Bonded Automata&apos;, and this Unit can be included even thought it does not have the same Faction Trait as the other Units in that Detachment. In addition, a Model with this Special Rule may join a Friendly Unit that includes Models with the Automata Type. If a Model with this Special Rule joins a Unit with the Automata Type, the Leadership and Cool Characteristics of Models in that Unit are not reduced as a results of this, but may be modified by other rules as normal.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Army Configuration" hidden="false" id="e528-702e-f73e-5890" type="selectionEntry" targetId="a827-ee7f-fe7d-9e0e">
