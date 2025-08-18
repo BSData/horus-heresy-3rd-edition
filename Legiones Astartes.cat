@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="33" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
-
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -1883,7 +1882,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Saturnine Dreadnought" hidden="false" id="b26e-1244-2dbc-2b6d" sortIndex="44">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Saturnine Dreadnought" hidden="false" id="5893-7ec0-df11-7329">
+        <selectionEntry type="model" import="true" name="Saturnine Dreadnought" hidden="false" id="5893-7ec0-df11-7329" sortIndex="1">
           <profiles>
             <profile name="Saturnine Dreadnought" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="1d79-c4d4-ac14-dc8f">
               <characteristics>
@@ -1925,7 +1924,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <categoryLink targetId="1e7d-9066-28d2-97a0" id="35a1-0cf5-293d-7497" primary="false" name="Heavy Model Sub-Type"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="This Model may have its heavy plasma bombard exchanged for one of the following:" id="695c-8a3b-da24-1a01" hidden="false" defaultSelectionEntryId="81cc-d504-fec1-c1c6">
+        <selectionEntryGroup name="This Model may have its heavy plasma bombard exchanged for one of the following:" id="695c-8a3b-da24-1a01" hidden="false" defaultSelectionEntryId="81cc-d504-fec1-c1c6" sortIndex="5">
           <entryLinks>
             <entryLink import="true" name="Heavy plasma bombard" hidden="false" id="81cc-d504-fec1-c1c6" type="selectionEntry" targetId="ae1d-6f32-be87-b3c0" sortIndex="1"/>
             <entryLink import="true" name="Disintegrator cannon" hidden="false" id="4b91-1646-8803-b0a9" type="selectionEntry" targetId="4da0-ea75-bac1-5951" sortIndex="2">
@@ -1949,7 +1948,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93e9-71af-c863-49f4" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="This Model may have its disintegrator exchanged for one of the following:" id="6785-194f-2868-736a" hidden="false" defaultSelectionEntryId="d00f-bab9-ece5-bfbc">
+        <selectionEntryGroup name="This Model may have its disintegrator exchanged for one of the following:" id="6785-194f-2868-736a" hidden="false" defaultSelectionEntryId="d00f-bab9-ece5-bfbc" sortIndex="4">
           <entryLinks>
             <entryLink import="true" name="Disintegrator cannon" hidden="false" id="d00f-bab9-ece5-bfbc" type="selectionEntry" targetId="4da0-ea75-bac1-5951" sortIndex="1"/>
             <entryLink import="true" name="Heavy plasma bombard" hidden="false" id="94d1-aad1-b93b-df8f" type="selectionEntry" targetId="ae1d-6f32-be87-b3c0" sortIndex="2"/>
@@ -1961,7 +1960,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa0a-311e-5d30-11dc" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Both of this Model&apos;s photonic incinerators may be exchanged for one of the following:" id="717a-95ae-5034-04a4" hidden="false" defaultSelectionEntryId="2d32-b642-f57d-024b">
+        <selectionEntryGroup name="Both of this Model&apos;s photonic incinerators may be exchanged for one of the following:" id="717a-95ae-5034-04a4" hidden="false" defaultSelectionEntryId="2d32-b642-f57d-024b" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Photonic incinerator" hidden="false" id="2d32-b642-f57d-024b" type="selectionEntry" targetId="51f6-0820-9443-77e0" sortIndex="1">
               <modifiers>
@@ -1992,7 +1991,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Thermal Diffraction Field" hidden="false" id="bc5c-71ac-19d0-1187" type="selectionEntry" targetId="ae43-8418-ecb1-ef6e">
+        <entryLink import="true" name="Thermal Diffraction Field" hidden="false" id="bc5c-71ac-19d0-1187" type="selectionEntry" targetId="ae43-8418-ecb1-ef6e" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e57-891d-094e-5bca" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6894-e8e8-736c-26a8" includeChildSelections="false"/>
@@ -2002,6 +2001,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="8cd2-bd3a-4ad0-84c8" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="670f-745d-764c-abe5" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
@@ -3824,6 +3830,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="f3a1-79b7-e0f8-bc05" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="155b-0047-db69-53d5" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
@@ -3913,6 +3926,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="0a5d-514c-138e-8da2" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Phosphex discharger" hidden="false" id="a45b-f38a-1f3b-1747" type="selectionEntry" targetId="f78a-8994-5cb1-5341">
           <constraints>
@@ -10167,6 +10187,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="152e-2998-c579-a42f" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Havoc launcher" hidden="false" id="ee18-c108-0a84-3500" type="selectionEntry" targetId="0295-e35d-2ed6-f28a" sortIndex="3">
           <constraints>
