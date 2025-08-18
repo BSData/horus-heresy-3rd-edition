@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="31" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="32" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -14834,6 +14834,44 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <categoryLink name="Master of Automata" hidden="false" id="23ba-1c57-a1b9-8008" targetId="43f5-bc69-29b9-2286" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Contemptor Dreadnought" hidden="false" id="3709-fba1-2d6f-fe59" type="selectionEntry" targetId="3337-0b90-6ead-cba1">
+      <categoryLinks>
+        <categoryLink name="War-engine" hidden="false" id="2d17-abaf-8013-4466" targetId="2499-7239-685f-8465" primary="false"/>
+        <categoryLink targetId="d00a-e269-2ed3-8fc4" id="f54c-afec-2c12-ec18" primary="true" name="The Iron-clad"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="5a95-e564-96b2-8dc9" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Deredeo Dreadnought" hidden="false" id="94c0-c163-06b7-11be" type="selectionEntry" targetId="10ad-8abc-c6ef-97ad">
+      <categoryLinks>
+        <categoryLink name="War-engine" hidden="false" id="4f14-fda1-2f90-bf1c" targetId="2499-7239-685f-8465" primary="false"/>
+        <categoryLink targetId="d00a-e269-2ed3-8fc4" id="e64c-94b0-5dc3-c609" primary="true" name="The Iron-clad"/>
+      </categoryLinks>
+      <comment>War-engine</comment>
+      <modifiers>
+        <modifier type="add" value="5a95-e564-96b2-8dc9" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Leviathan Dreadnought" hidden="false" id="e81a-462b-1037-010a" type="selectionEntry" targetId="9d6f-298d-743c-da5d">
+      <categoryLinks>
+        <categoryLink name="War-engine" hidden="false" id="282a-dec1-12ba-9bc5" targetId="2499-7239-685f-8465" primary="false"/>
+        <categoryLink targetId="d00a-e269-2ed3-8fc4" id="2136-8603-5fdd-300e" primary="true" name="The Iron-clad"/>
+      </categoryLinks>
+      <comment>War-engine</comment>
+      <modifiers>
+        <modifier type="add" value="5a95-e564-96b2-8dc9" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Saturnine Dreadnought" hidden="false" id="6a85-018e-2545-3b43" type="selectionEntry" targetId="b26e-1244-2dbc-2b6d">
+      <categoryLinks>
+        <categoryLink name="War-engine" hidden="false" id="9ead-5951-7fb9-1ec8" targetId="2499-7239-685f-8465" primary="false"/>
+        <categoryLink targetId="d00a-e269-2ed3-8fc4" id="f1f5-f87a-491b-cfe4" primary="true" name="The Iron-clad"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="5a95-e564-96b2-8dc9" field="category"/>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Weapons" id="32ee-d63c-aa09-89f0" targetId="a22d-4dd0-c59d-57d3"/>
@@ -16285,11 +16323,6 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
           <comment>Night Lords</comment>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="The Iron-clad" hidden="true" id="176e-7ae1-a65d-636c">
-          <rules>
-            <rule name="The Iron-clad" id="1211-b3d7-bebf-2e38" hidden="false">
-              <description>This Prime Advantage can only be selected once per Army. Add one additional War Engine Battlefield Role Slot to the Detachment that includes the Prime Force Organisation Slot with this Prime Advantage. A Unit that is selected to fill that Slot gains the Champion Sub-Type if it did not already have it.</description>
-            </rule>
-          </rules>
           <comment>Iron Hands</comment>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2a25-0565-a4af-3cc7" includeChildSelections="true" includeChildForces="true"/>
@@ -16302,14 +16335,14 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
               </conditions>
             </modifier>
           </modifiers>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Not Yet Implemented: Gain War Engine slot that gives that unit Champion Sub-type" hidden="false" id="940b-b5da-3b26-d03d">
+          <entryLinks>
+            <entryLink import="true" name="The Iron-Clad" hidden="false" id="e1fa-45fa-333a-78f1" type="selectionEntry" targetId="0d32-12ae-3831-a4d6">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f4b-64aa-3c20-d6eb"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="471a-1de4-d3f3-ef56"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="380f-1799-5d1d-57c6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a57-be0c-3a96-210b"/>
               </constraints>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Paladin of the Hekatonystika" hidden="true" id="b824-c0ad-804e-0026">
           <comment>Dark Angels</comment>
