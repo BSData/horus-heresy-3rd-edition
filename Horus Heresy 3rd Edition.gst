@@ -13443,24 +13443,6 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
             </rule>
           </rules>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="True Believers" hidden="true" id="be72-56b6-53de-6239" sortIndex="8">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5bf-56d8-f9b6-ad94"/>
-          </constraints>
-          <rules>
-            <rule name="True Believers" id="a33a-8552-323c-e8be" hidden="false">
-              <description>All Models in the Unit selected to fill the Prime Slot gain the Malefic Sub-Type.</description>
-            </rule>
-          </rules>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="add" value="2de1-ddd6-ebb4-10df" field="category"/>
-          </modifiers>
-        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Clade Operative" hidden="true" id="8d32-7962-99e2-166a" type="selectionEntry" targetId="f26c-9918-9644-80f7" sortIndex="6">

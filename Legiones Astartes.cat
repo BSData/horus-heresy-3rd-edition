@@ -16689,6 +16689,24 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
           </rules>
           <comment>Thousand Sons</comment>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="True Believers" hidden="true" id="be72-56b6-53de-6239">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5bf-56d8-f9b6-ad94"/>
+          </constraints>
+          <rules>
+            <rule name="True Believers" id="a33a-8552-323c-e8be" hidden="false">
+              <description>All Models in the Unit selected to fill the Prime Slot gain the Malefic Sub-Type.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2de1-ddd6-ebb4-10df" field="category"/>
+          </modifiers>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Rewards of Treachery" hidden="true" id="5d76-3474-3afa-e6e2" type="selectionEntry" targetId="7c64-0321-e098-fd0e">
