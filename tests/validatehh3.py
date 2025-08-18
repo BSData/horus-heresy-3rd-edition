@@ -38,7 +38,7 @@ class GameTests(unittest.TestCase):
     def test_root_link_categories(self):
         expected_primaries = Heresy3e.BATTLEFIELD_ROLES.copy()
         expected_primaries += ['Army Configuration', 'Rewards of Treachery', "Master of Automata",
-                               "Clade Operative", "The Iron-clad",
+                               "Clade Operative", "War-engine - Upgraded by The Iron-clad",
                                ]
         expected_secondaries = Heresy3e.FACTIONS.copy()
         for file in self.system.files:

@@ -407,7 +407,7 @@
         </modifier>
       </modifiers>
     </categoryEntry>
-    <categoryEntry name="The Iron-clad" id="d00a-e269-2ed3-8fc4" hidden="true">
+    <categoryEntry name="War-engine - Upgraded by The Iron-clad" id="d00a-e269-2ed3-8fc4" hidden="true">
       <constraints>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="da1a-c79a-6c94-bcae"/>
         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="594f-a798-4982-f901"/>
@@ -13198,7 +13198,7 @@ When a Model with this Special Rule is included in a Detachment, one additional 
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="08f7-fb5e-031d-d378" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="The Iron-Clad" hidden="false" id="0d32-12ae-3831-a4d6">
+    <selectionEntry type="upgrade" import="true" name="The Iron-clad" hidden="false" id="0d32-12ae-3831-a4d6">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="30f5-3300-a36a-9a11" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
