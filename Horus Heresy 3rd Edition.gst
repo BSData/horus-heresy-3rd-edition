@@ -357,31 +357,31 @@
     <categoryEntry name="Fortification Model Type" id="ae5b-4e74-db76-fa25" hidden="false">
       <rules>
         <rule name="Fortification" id="1498-b800-3984-286c" hidden="false">
-          <description>The following Rules apply to all Models with the Fortification Type:
-• A Model with the Fortification Type can never be moved by any Rule or effect after it has been Deployed.
-• A Model with the Fortification Type can never be placed into Reserves and must always be deployed at the start of a Battle.
-• A Model with the Fortification Type may never Hold, Control or Contest an Objective Marker of any kind.
-• A Model with the Fortification Type can never be affected by any kind of Status, including both Tactical Statuses and Cybertheurgic Statuses. However, such a Model can be affected by Cybertheurgic Rites that do not apply a Cybertheurgic Status.
-• A Unit that includes a Model with the Fortification Type may never be joined by any other Models of any Type.
-• A Model with the Fortification Type cannot make Reactions of any kind, unless a specific Sub-Type states otherwise.</description>
+          <description>The following Rules apply to all Models with the Fortification Type:
+• A Model with the Fortification Type can never be moved by any Rule or effect after it has been Deployed.
+• A Model with the Fortification Type can never be placed into Reserves and must always be deployed at the start of a Battle.
+• A Model with the Fortification Type may never Hold, Control or Contest an Objective Marker of any kind.
+• A Model with the Fortification Type can never be affected by any kind of Status, including both Tactical Statuses and Cybertheurgic Statuses. However, such a Model can be affected by Cybertheurgic Rites that do not apply a Cybertheurgic Status.
+• A Unit that includes a Model with the Fortification Type may never be joined by any other Models of any Type.
+• A Model with the Fortification Type cannot make Reactions of any kind, unless a specific Sub-Type states otherwise.</description>
         </rule>
       </rules>
     </categoryEntry>
     <categoryEntry name="Emplacement Model Sub-Type" id="d1e7-50c0-0764-9de5" hidden="false">
       <rules>
         <rule name="Emplacement Sub-Type" id="4e4e-7b92-cb21-86de" hidden="false">
-          <description>The following Rules apply to all Models with the Emplacement Sub-Type:
-• A Model with the Emplacement Sub-Type has a Ballistic Skill Characteristic and can make Shooting Attacks.
-• A Model with the Emplacement Sub-Type can have the Return Fire and Interceptor Reactions made for it</description>
+          <description>The following Rules apply to all Models with the Emplacement Sub-Type:
+• A Model with the Emplacement Sub-Type has a Ballistic Skill Characteristic and can make Shooting Attacks.
+• A Model with the Emplacement Sub-Type can have the Return Fire and Interceptor Reactions made for it</description>
         </rule>
       </rules>
     </categoryEntry>
     <categoryEntry name="Bunker Model Sub-Type" id="7caa-3c9a-875c-5bca" hidden="false">
       <rules>
         <rule name="Bunker Sub-Type" id="894b-4c1c-9e09-0ffc" hidden="false">
-          <description>The following Rules apply to all Models with the Bunker Sub-Type:
-• A Model with the Bunker Sub-Type has a Transport Capacity Characteristic.
-• Only Models with the Infantry Type that have no variant of the Bulky (X) Special Rule may Embark on a Model with the Bunker Sub-Type.
+          <description>The following Rules apply to all Models with the Bunker Sub-Type:
+• A Model with the Bunker Sub-Type has a Transport Capacity Characteristic.
+• Only Models with the Infantry Type that have no variant of the Bulky (X) Special Rule may Embark on a Model with the Bunker Sub-Type.
 • A Model with the Bunker Sub-Type can be Captured</description>
         </rule>
       </rules>
@@ -389,7 +389,7 @@
     <categoryEntry name="Structure Model Sub-Type" id="2893-a655-1074-9831" hidden="false">
       <rules>
         <rule name="Structure Sub-Type" id="c363-0bc3-7cb7-6d63" hidden="false">
-          <description>The following Rules apply to all Models with the Structure Sub-Type:
+          <description>The following Rules apply to all Models with the Structure Sub-Type:
 • A Model with the Structure Sub-Type can be Captured</description>
         </rule>
       </rules>
@@ -13191,7 +13191,7 @@ When a Model with this Special Rule is included in a Detachment, one additional 
     <selectionEntry type="upgrade" import="true" name="Clade Operative" hidden="true" id="f26c-9918-9644-80f7">
       <rules>
         <rule name="Clade Operative" id="be0c-7465-c500-8e2e" hidden="false">
-          <description>Add three additional Support Force Organisation Slots to the Detachment that includes the Prime Slot with this Prime Advantage. These Force Organisation Slots may only be filled by Units selected from the Divisio Assassinorum Army List. This Prime Advantage may only be selected for a single Force Organisation Slot in an Army’s Primary Detachment.</description>
+          <description>Add three additional Support Force Organisation Slots to the Detachment that includes the Prime Slot with this Prime Advantage. These Force Organisation Slots may only be filled by Units selected from the Divisio Assassinorum Army List. This Prime Advantage may only be selected for a single Force Organisation Slot in an Army’s Primary Detachment.</description>
         </rule>
       </rules>
       <constraints>
