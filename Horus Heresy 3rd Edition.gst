@@ -423,6 +423,7 @@
         </modifier>
       </modifiers>
     </categoryEntry>
+    <categoryEntry name="Bonded Automata" id="9fb1-5f74-53af-e34c" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">

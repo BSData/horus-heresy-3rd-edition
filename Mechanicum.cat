@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="11" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="12" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Anacharis Scoria" hidden="false" id="10f5-dae8-f081-d82f" sortIndex="29">
       <infoLinks>
@@ -2284,16 +2284,33 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Cybernetica" hidden="false" id="53b7-cf12-5065-b921" type="selectionEntry" targetId="403d-7806-215e-7676" sortIndex="2">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c241-4f28-54f4-b887"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e74-a7bf-d90a-d62b"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="0121-094d-bbac-806b" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="2add-3992-0734-9159" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
           </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Cybernetica" hidden="false" id="a92a-c17d-f444-9e5b" type="selectionEntry" targetId="403d-7806-215e-7676" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="171b-4fed-bceb-6075" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b7d-36e3-9fab-e3fb" automatic="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="171b-4fed-bceb-6075">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="3b7d-36e3-9fab-e3fb">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -3598,9 +3615,26 @@
         </entryLink>
         <entryLink import="true" name="Cybernetica" hidden="false" id="2b49-5e7b-9f4b-2f4f" type="selectionEntry" targetId="403d-7806-215e-7676" sortIndex="2">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5927-3261-82b4-ffca"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b362-7434-2002-3d72"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5927-3261-82b4-ffca" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b362-7434-2002-3d72" automatic="true"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="5927-3261-82b4-ffca">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="b362-7434-2002-3d72">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="f0bf-fcb1-3cee-5d06" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="4">
           <modifiers>
