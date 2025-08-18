@@ -110,12 +110,32 @@ class GameTests(unittest.TestCase):
                         self.assertIsNotNone(modifiers, "All force org slots that are max 0 should have modifiers")
                         modify_max_constraint = modifiers.get_child("modifier", {"field": max_constraint.id})
                         self.assertIsNotNone(modify_max_constraint, "Should have a modifier to max")
-                        # Not actually checking that we have the stuff for LB set on that max modifier,
-                        # just checking it exists.
+                        self.check_for_condition_of_lb_slot(modify_max_constraint, category_link.target_name, 1)
+
                         modify_hidden = modifiers.get_child("modifier",
                                                             {"type": "set", "field": "hidden", "value": "true"})
+                        self.check_for_condition_of_lb_slot(modify_hidden, category_link.target_name, 0)
+
                         self.assertIsNotNone(modify_hidden,
                                              "Should have a modifier for hidden as well as increment max constraint")
+
+    def check_for_condition_of_lb_slot(self, node: Node, slot, expected_qty):
+        conditions = node.get_child("conditions")
+        self.assertIsNotNone(conditions, "Should have conditions set")
+        self.assertEqual(len(conditions.children), 1, "Should have one condition")
+        condition = conditions.get_child("condition")
+        self.assertEqual(condition.target_name, "LB - " + slot)
+        expected_attribs = {
+            "type": "equalTo",
+            "value": str(expected_qty),
+            "field": "selections",
+            "scope": "force",
+            "shared": "true",
+            "includeChildSelections": "true",
+        }
+        attribs = condition.attrib.copy()
+        attribs.pop("childId")  #Ignore child ID since we checked that earlier
+        self.assertDictEqual(attribs, expected_attribs)
 
     def test_all_allied_detachments_linked(self):
         crusade = self.system.get_node_by_id("8562-592c-8d4b-a1f0")
