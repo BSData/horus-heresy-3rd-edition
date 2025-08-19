@@ -27,7 +27,7 @@ jobs:
           MERGE_BASE=$(git merge-base ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }})
           echo $MERGE_BASE
           python3 BSCopy/reporting_scripts/diff_test.py -merge_base $MERGE_BASE
-          echo 'SUMMARY<<EOF' > $GITHUB_OUTPUT
+          echo 'SUMMARY<<EOF' >> $GITHUB_OUTPUT
           cat diff_result.txt >> $GITHUB_OUTPUT
           echo 'EOF' >> $GITHUB_OUTPUT
         working-directory: 'tests'
