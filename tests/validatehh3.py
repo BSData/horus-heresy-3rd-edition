@@ -130,6 +130,13 @@ class GameTests(unittest.TestCase):
                         max_constraint = constraints.get_child("constraint", {"type": "max"})
                         self.assertIsNotNone(max_constraint, "All force org slots should have a max constraint")
                         if max_constraint.attrib["value"] != '0':
+                            modifiers = category_link.get_child("modifiers")
+                            if modifiers is None:
+                                continue  # There can be modifiers but there should not be a hidden modifier
+                            modify_hidden = modifiers.get_child("modifier",
+                                                                {"type": "set", "field": "hidden", "value": "true"})
+                            self.assertIsNone(modify_hidden,
+                                              "Should not have a modifier for hidden")
                             continue  # Not actually a relevant category link
                         # At this point we have a slot with max 0
                         modifiers = category_link.get_child("modifiers")
@@ -160,7 +167,7 @@ class GameTests(unittest.TestCase):
             "includeChildSelections": "true",
         }
         attribs = condition.attrib.copy()
-        attribs.pop("childId")  #Ignore child ID since we checked that earlier
+        attribs.pop("childId")  # Ignore child ID since we checked that earlier
         self.assertDictEqual(attribs, expected_attribs)
 
     def test_all_allied_detachments_linked(self):
@@ -174,7 +181,6 @@ class GameTests(unittest.TestCase):
                 self.assertIsNotNone(allied_links.get_child("forceEntryLink", attrib={"targetId": child_force.id}))
 
     def test_all_units_have_prime(self):
-
 
         # First, get all units
         unit_ids = []
