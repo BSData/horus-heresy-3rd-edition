@@ -28,7 +28,7 @@ jobs:
           echo $MERGE_BASE
           python3 BSCopy/reporting_scripts/diff_test.py -merge_base $MERGE_BASE
           echo 'SUMMARY<<EOF' >> $GITHUB_OUTPUT
-          cat diff_result.txt >> $GITHUB_OUTPUT
+          ehco 'this will eventually be the content of diff_result.txt' >> $GITHUB_OUTPUT
           echo 'EOF' >> $GITHUB_OUTPUT
         working-directory: 'tests'
         env:
