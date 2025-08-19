@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="34" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="35" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -1095,6 +1095,16 @@
             <categoryLink name="Heavy Transport" hidden="false" id="d433-141d-baf3-6d7a" targetId="52d0-8b78-439e-18e5">
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="5f94-2b1f-582e-f027"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Transport" hidden="false" id="2530-de81-c953-f47d" targetId="fc27-1a48-84ae-aa7b">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="aadd-6985-c329-e156" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Heavy Transport" hidden="false" id="b89f-1dc8-0b04-f97f" targetId="abff-3686-c39a-9a24">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2796-15f4-0561-d11b" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
           </categoryLinks>
@@ -3812,6 +3822,11 @@
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="ec08-2ba4-b38c-8746" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Prime Support" hidden="false" id="4ffc-b6b5-72a0-b7ae" targetId="1c79-ecdf-9a64-84c9" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b97e-e506-b3e0-1a22" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -4075,6 +4090,11 @@
             <categoryLink name="Command" hidden="false" id="7023-93dc-4fda-c76a" targetId="6dbf-654a-f06f-2d69">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="force" shared="true" id="83c4-a1e7-c38c-e164" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Command" hidden="false" id="9a0d-a107-8ece-c576" targetId="c85c-2963-658f-1bb9" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f015-623b-6deb-1ccb" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
           </categoryLinks>
@@ -10867,6 +10887,21 @@
             <categoryLink name="Heavy Transport" hidden="false" id="79c2-28e0-0793-dfb4" targetId="52d0-8b78-439e-18e5">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef2a-3dd1-1b5c-8dc0" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Retinue" hidden="false" id="3346-5750-ce80-ad22" targetId="c66b-ef39-b20f-725b" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="aecf-057e-51d1-57fc" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Elites" hidden="false" id="f79e-5d5f-2bf7-7742" targetId="276f-7a07-a56c-affd" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9f0d-4bb0-c1d5-c0b2" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Heavy Transport" hidden="false" id="a1c5-9dd3-ce69-70bb" targetId="abff-3686-c39a-9a24" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e705-c4b0-9fa3-ead3" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
           </categoryLinks>
