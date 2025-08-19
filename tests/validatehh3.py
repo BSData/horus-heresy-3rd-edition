@@ -35,6 +35,14 @@ class GameTests(unittest.TestCase):
                 if primary_cat.target_name in battlefield_roles:
                     self.unit_ids.append(child.target_id)
 
+        self.battlefield_roles_that_can_be_prime = Heresy3e.BATTLEFIELD_ROLES.copy()
+
+        # Warlords aren't ever prime? High command can be in EC.
+        self.battlefield_roles_that_can_be_prime.remove("Warlord")
+        # Lords of war are only prime in knights, make a separate test for this.
+        self.battlefield_roles_that_can_be_prime.remove("Lord of War")
+        self.battlefield_roles_that_can_be_prime.remove("Fortification")
+
     def test_root_link_categories(self):
         expected_primaries = Heresy3e.BATTLEFIELD_ROLES.copy()
         expected_primaries += ['Army Configuration', 'Rewards of Treachery', "Master of Automata",
@@ -64,15 +72,32 @@ class GameTests(unittest.TestCase):
 
     def test_forces_all_restrict_primes(self):
         for parent_force in self.system.gst.root_node.get_child("forceEntries").children:
-            # print(parent_force)
             if parent_force.get_child("forceEntries") is None:
                 continue
             for child_force in parent_force.get_child("forceEntries").children:
-                # print("\t", child_force)
                 if child_force.get_child("categoryLinks") is None:
                     continue
+
+                # First check that for each of the referenced slots, that slot is restricting primes.
+                slots_in_detachment: [str] = []
+                prime_restrictions_in_detachment: [str] = []
                 for category_link in child_force.get_child("categoryLinks").children:
-                    # print("\t", "\t", category_link)
+                    if category_link.target_name.startswith("Prime "):
+                        prime_restrictions_in_detachment.append(category_link.target_name)
+                    else:
+                        slots_in_detachment.append(category_link.target_name)
+                slot_name: str
+                for slot_name in slots_in_detachment:
+                    # If this is a special version of the slot, get the regular name.
+                    slot = slot_name.partition(" - ")[0]
+                    if slot not in self.battlefield_roles_that_can_be_prime:
+                        continue
+                    with self.subTest(f"Prime restriction on {slot} because of {slot_name} in {child_force}"):
+                        self.assertIn("Prime " + slot, prime_restrictions_in_detachment,
+                                      f"Expected 'Prime {slot}' because of '{slot_name}'")
+
+                # Then check each prime restriction is set appropriately.
+                for category_link in child_force.get_child("categoryLinks").children:
                     if not category_link.target_name.startswith("Prime "):
                         continue
                     with self.subTest(f"{category_link.target_name} on {child_force}"):
@@ -84,6 +109,7 @@ class GameTests(unittest.TestCase):
                         constraint = constraints.children[0]
 
                         self.assertIn("includeChildSelections", constraint.attrib.keys())
+                        self.assertEquals(constraint.attrib["includeChildSelections"], "true")
 
     def test_forces_all_hide_if_no_LB(self):
         for parent_force in self.system.gst.root_node.get_child("forceEntries").children:
@@ -104,6 +130,13 @@ class GameTests(unittest.TestCase):
                         max_constraint = constraints.get_child("constraint", {"type": "max"})
                         self.assertIsNotNone(max_constraint, "All force org slots should have a max constraint")
                         if max_constraint.attrib["value"] != '0':
+                            modifiers = category_link.get_child("modifiers")
+                            if modifiers is None:
+                                continue  # There can be modifiers but there should not be a hidden modifier
+                            modify_hidden = modifiers.get_child("modifier",
+                                                                {"type": "set", "field": "hidden", "value": "true"})
+                            self.assertIsNone(modify_hidden,
+                                              "Should not have a modifier for hidden")
                             continue  # Not actually a relevant category link
                         # At this point we have a slot with max 0
                         modifiers = category_link.get_child("modifiers")
@@ -134,7 +167,7 @@ class GameTests(unittest.TestCase):
             "includeChildSelections": "true",
         }
         attribs = condition.attrib.copy()
-        attribs.pop("childId")  #Ignore child ID since we checked that earlier
+        attribs.pop("childId")  # Ignore child ID since we checked that earlier
         self.assertDictEqual(attribs, expected_attribs)
 
     def test_all_allied_detachments_linked(self):
@@ -148,13 +181,6 @@ class GameTests(unittest.TestCase):
                 self.assertIsNotNone(allied_links.get_child("forceEntryLink", attrib={"targetId": child_force.id}))
 
     def test_all_units_have_prime(self):
-        battlefield_roles = Heresy3e.BATTLEFIELD_ROLES.copy()
-
-        # Warlords aren't ever prime? High command can be in EC.
-        battlefield_roles.remove("Warlord")
-        # Lords of war are only prime in knights, make a separate test for this.
-        battlefield_roles.remove("Lord of War")
-        battlefield_roles.remove("Fortification")
 
         # First, get all units
         unit_ids = []
@@ -168,7 +194,7 @@ class GameTests(unittest.TestCase):
                 if file.name == "Questoris Household.cat":
                     if primary_cat.target_name == "Lord of War":
                         unit_ids.append(child.target_id)
-                elif primary_cat.target_name in battlefield_roles:
+                elif primary_cat.target_name in self.battlefield_roles_that_can_be_prime:
                     unit_ids.append(child.target_id)
 
         for unit_id in unit_ids:
