@@ -78,28 +78,34 @@ class GameTests(unittest.TestCase):
                 if child_force.get_child("categoryLinks") is None:
                     continue
 
-                # First check that for each of the referenced slots, that slot is restricting primes.
-                slots_in_detachment: [str] = []
                 prime_restrictions_in_detachment: [str] = []
                 for category_link in child_force.get_child("categoryLinks").children:
                     if category_link.target_name.startswith("Prime "):
                         prime_restrictions_in_detachment.append(category_link.target_name)
-                    else:
-                        slots_in_detachment.append(category_link.target_name)
-                slot_name: str
-                for slot_name in slots_in_detachment:
-                    # If this is a special version of the slot, get the regular name.
-                    slot = slot_name.partition(" - ")[0]
-                    if slot not in self.battlefield_roles_that_can_be_prime:
-                        continue
-                    with self.subTest(f"Prime restriction on {slot} because of {slot_name} in {child_force}"):
-                        self.assertIn("Prime " + slot, prime_restrictions_in_detachment,
-                                      f"Expected 'Prime {slot}' because of '{slot_name}'")
 
-                # Then check each prime restriction is set appropriately.
                 for category_link in child_force.get_child("categoryLinks").children:
-                    if not category_link.target_name.startswith("Prime "):
+                    slot_name = category_link.target_name
+                    # First check that for each of the referenced slots, that slot is restricting primes.
+                    if not slot_name.startswith("Prime "):
+                        # If this is a special version of the slot, get the regular name.
+                        slot = slot_name.partition(" - ")[0]
+                        if slot not in self.battlefield_roles_that_can_be_prime:
+                            continue
+                        if slot == "High Command":
+                            with self.subTest(f"Does High Command not need a prime restriction in {child_force}"):
+                                constraints = category_link.get_child("constraints")
+                                self.assertIsNotNone(constraints, "All force org slots should have constraints")
+                                max_constraint = constraints.get_child("constraint", {"type": "max"})
+                                self.assertIsNotNone(max_constraint, "Should have a max constraint")
+                                if max_constraint.attrib["value"] == '0':
+                                    continue  # If the max constraint is 0, this is here solely for special assignment
+
+                        with self.subTest(f"Prime restriction on {slot} because of {slot_name} in {child_force}"):
+                            self.assertIn("Prime " + slot, prime_restrictions_in_detachment,
+                                          f"Expected 'Prime {slot}' because of '{slot_name}'")
                         continue
+
+                    # Then check each prime restriction is set appropriately.
                     with self.subTest(f"{category_link.target_name} on {child_force}"):
 
                         constraints = category_link.get_child("constraints")
