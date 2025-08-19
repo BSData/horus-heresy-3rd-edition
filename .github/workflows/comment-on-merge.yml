@@ -1,7 +1,7 @@
 name: comment-on-merge.yml
 on: pull_request
 jobs:
-  list_commits:
+  Summarize:
     runs-on: ubuntu-latest
     steps:
       - name: Checking out game system
@@ -26,9 +26,11 @@ jobs:
           echo $MERGE_BASE
           python3 BSCopy/reporting_scripts/diff_test.py -merge_base $MERGE_BASE
           EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
-          echo 'SUMMARY<<$EOF' >> $GITHUB_OUTPUT
-          cat diff_result.txt >> $GITHUB_OUTPUT
-          echo '$EOF' >> $GITHUB_OUTPUT
+          {
+            echo 'SUMMARY<<$EOF'
+            cat diff_result.txt
+            echo $EOF
+          } >> $GITHUB_OUTPUT
         working-directory: 'tests'
         env:
           DEFAULT_DATA_DIRECTORY: ${{ github.workspace }}/..
