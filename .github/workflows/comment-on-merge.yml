@@ -28,7 +28,7 @@ jobs:
           ls
           EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
           echo 'SUMMARY<<$EOF' >> $GITHUB_OUTPUT
-          ehco 'this will eventually be the content of diff_result.txt' >> $GITHUB_OUTPUT
+          echo 'this will eventually be the content of diff_result.txt' >> $GITHUB_OUTPUT
           echo '$EOF' >> $GITHUB_OUTPUT
         working-directory: 'tests'
         env:
