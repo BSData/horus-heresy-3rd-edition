@@ -38,7 +38,7 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           env:
-            GITHUB_OUTPUT: steps.summarize.outputs.SUMMARY
+            GITHUB_OUTPUT: ${{steps.summarize.outputs.SUMMARY}}
           script: |
             github.rest.issues.createComment({
               issue_number: context.issue.number,
