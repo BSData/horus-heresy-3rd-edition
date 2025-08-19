@@ -7,7 +7,7 @@ jobs:
       - name: Checking out game system
         uses: actions/checkout@v4
         with:
-          fetch-depth: '0'
+          fetch-depth: 0
       - name: Setting up Python
         uses: actions/setup-python@v4
         with:
@@ -24,6 +24,7 @@ jobs:
           ls
           pwd
           MERGE_BASE=$(git merge-base ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }})
+          echo $MERGE_BASE
           python3 reporting_scripts/diff_test.py $MERGE_BASE
         working-directory: 'tests/BSCopy'
         env:
