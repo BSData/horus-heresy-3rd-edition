@@ -14871,7 +14871,6 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
       </selectionEntryGroups>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98f0-4cab-2f85-12db-max" includeChildSelections="false" automatic="true"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c6c-bd23-0596-2c52" automatic="true"/>
       </constraints>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -14880,11 +14879,6 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
           </conditions>
         </modifier>
         <modifier type="set" value="0" field="98f0-4cab-2f85-12db-max">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="unit" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="0" field="5c6c-bd23-0596-2c52">
           <conditions>
             <condition type="equalTo" value="1" field="selections" scope="unit" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
           </conditions>
