@@ -240,7 +240,7 @@ class GameTests(unittest.TestCase):
     def test_all_high_command_have_detachment_choice(self):
         high_command_id = self.system.categories["High Command"].id
         for category_link in self.system.all_nodes.filter(lambda x: x.target_id == high_command_id):
-            print(category_link.parent.parent)
+            # print(category_link.parent.parent)
             unit_link = category_link.parent.parent
             if not unit_link.is_link():
                 continue  # Skip over things that aren't unit links.
