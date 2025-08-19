@@ -42,9 +42,11 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
+            let result = `${{env.GITHUB_OUTPUT}}`;
+            console.log(result);
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `${{env.GITHUB_OUTPUT}}`
+              body: result
             })
