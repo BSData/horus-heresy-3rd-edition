@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="fd9b-d04e-362d-8e5d" name="Questoris Household" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="6" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issue" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="fd9b-d04e-362d-8e5d" name="Questoris Household" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="7" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issue" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Knight Questoris" hidden="false" id="6fbb-fa07-52b9-d350" sortIndex="4">
       <selectionEntries>
@@ -2889,6 +2889,7 @@ A Model with an ion gauntlet shield has a 5+ Invulnerable Save against Penetrati
               </constraints>
             </categoryLink>
             <categoryLink name="Clade Operative" hidden="false" id="13e6-5056-a7a6-ef02" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="eb7a-fdb3-d078-7bd6" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -3105,6 +3106,15 @@ Special Rule and modify the value of X on any version of the Auto-repair (X) Spe
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Cult Operative" hidden="true" id="4da8-ac7a-e4c5-c42c" type="selectionEntry" targetId="ff9d-7ed0-c90f-1eca" sortIndex="12">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Household Paradigms" id="5a46-d9a6-d191-6441" hidden="false">
@@ -3308,6 +3318,7 @@ Special Rule and modify the value of X on any version of the Auto-repair (X) Spe
     <catalogueLink type="catalogue" name="Weapons" id="ca9b-0046-f500-08d3" targetId="a22d-4dd0-c59d-57d3" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Mechanicum" id="ce8b-ffe8-e082-4c6a" targetId="2f57-6e9d-8a7b-5c2e"/>
     <catalogueLink type="catalogue" name="Agents of the Divisio Assassinorum" id="df50-53f3-acf3-6fcd" targetId="258b-97fb-2366-7344" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Cults Abominatio" id="5782-1b6c-1520-8b89" targetId="258b-97fb-2366-7348" importRootEntries="true"/>
   </catalogueLinks>
   <sharedProfiles>
     <profile name="[Questoris Familia]" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="32ec-1c1a-df63-3253">
