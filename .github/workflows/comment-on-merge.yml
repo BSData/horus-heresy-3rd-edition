@@ -14,5 +14,13 @@ jobs:
           python-version: '3.11'
       - name: Install GitPython
         run: pip install GitPython
-      - name: Run git diff
-        run: git diff HEAD origin/main
+      - name: Checking out BSCopy
+        uses: actions/checkout@v4
+        with:
+          repository: 'nstephenh/bscopy'
+          path: 'tests/BSCopy'
+      - name: Summarize changes
+        run: python3 reporting_scripts/diff_test.py
+        working-directory: tests/BSCopy/
+        env:
+          DEFAULT_DATA_DIRECTORY: ${{ github.workspace }}/..
