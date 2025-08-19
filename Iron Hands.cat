@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="736e-3967-e72b-e3ac" name="                        X - Iron Hands" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="9" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="736e-3967-e72b-e3ac" name="                        X - Iron Hands" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="10" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Ferrus Manus" hidden="false" id="667d-97c2-e1ea-8fa6">
       <selectionEntries>
@@ -312,9 +312,6 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
         <categoryLink targetId="fc09-911b-ee8c-7967" id="7f3b-787c-0f2a-00e6" primary="false" name="Medusan Vanguard Unlock"/>
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="57d6-8f89-f8ce-9c07" primary="false" name="Master of the Legion"/>
       </categoryLinks>
-      <rules>
-        <rule name="Lord of Automata" id="8e20-4195-d824-af90" hidden="false"/>
-      </rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="May exchange Volkite Charger for:" id="8203-126e-924a-66e2" hidden="false" defaultSelectionEntryId="1e07-6855-1edf-0b78">
           <entryLinks>
@@ -362,6 +359,12 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
           </entryLinks>
         </entryLink>
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="bd48-8f06-824a-260a" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
+        <entryLink import="true" name="Lord of Automata" hidden="false" id="0510-31ec-43df-2947" type="selectionEntry" targetId="0f18-54e0-f92c-e4fb">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9996-6e8a-2dbf-9340"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf90-03c9-ce44-1070"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="175"/>
@@ -878,6 +881,7 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
     <catalogueLink type="catalogue" name="Wargear" id="c8cf-6e45-4135-c897" targetId="fcc7-4319-bb04-2c25"/>
     <catalogueLink type="catalogue" name="Traits" id="a5ba-91b6-3191-5f62" targetId="df17-7a05-0826-6e22"/>
     <catalogueLink type="catalogue" name="Special Rules" id="c845-0785-0a45-92ac" targetId="106b-693b-99f2-00c3"/>
+    <catalogueLink type="catalogue" name="Mechanicum" id="2d1d-ca45-feed-83ad" targetId="2f57-6e9d-8a7b-5c2e"/>
   </catalogueLinks>
   <entryLinks>
     <entryLink import="true" name="Gorgon Terminator Squad" hidden="false" id="7f58-f601-545f-35d5" type="selectionEntry" targetId="6545-a621-619e-4757">
@@ -913,6 +917,20 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
     <entryLink import="true" name="Rite of War" hidden="false" id="fe89-4aba-284d-0f89" type="selectionEntry" targetId="6909-3cb7-c511-da4b">
       <categoryLinks>
         <categoryLink targetId="abfa-86ab-1726-077a" id="83f1-c48e-5d2c-2e9c" primary="true" name="Army Configuration"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Castellax Battle Maniple" hidden="true" id="3c19-634b-5bc1-cd24" type="selectionEntry" targetId="e8d6-2ba5-d10d-d617">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f18-54e0-f92c-e4fb" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set-primary" value="3e59-3bcf-4bf8-d404" field="category"/>
+        <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="345f-9ba6-9b02-ed5c" id="64fc-1a40-591e-c1f0" primary="true" name="Support"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

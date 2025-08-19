@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="34" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="37" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -423,6 +423,24 @@
         </modifier>
       </modifiers>
     </categoryEntry>
+    <categoryEntry name="Lord of Automata" id="3e59-3bcf-4bf8-d404" hidden="true">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6b9d-62b3-8851-c55b"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="fdb5-3428-1f22-764e"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f18-54e0-f92c-e4fb" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="fdb5-3428-1f22-764e">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="0f18-54e0-f92c-e4fb" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -685,6 +703,7 @@
             <categoryLink name="Master of Automata" hidden="false" id="c260-2ecb-3a86-a859" targetId="43f5-bc69-29b9-2286"/>
             <categoryLink name="Clade Operative" hidden="false" id="2a0d-9fee-9c25-8560" targetId="335a-5a90-3b7c-c034"/>
             <categoryLink name="War-engine - Upgraded by The Iron-clad" hidden="false" id="0ef7-249a-c847-6970" targetId="d00a-e269-2ed3-8fc4"/>
+            <categoryLink name="Lord of Automata" hidden="false" id="baa0-d32b-ce6d-4b86" targetId="3e59-3bcf-4bf8-d404" type="categoryEntry"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="5611-db49-9e64-44c6-min" includeChildSelections="true"/>
@@ -13649,6 +13668,16 @@ When a Model with this Special Rule is included in a Detachment, one additional 
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="30f5-3300-a36a-9a11" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lord of Automata" hidden="false" id="0f18-54e0-f92c-e4fb">
+      <rules>
+        <rule name="Lord of Automata" id="8e20-4195-d824-af90" hidden="false">
+          <description>&quot;This Special Rule allows an Iron Father to be accompanied by a Unit of Battle-automata.&quot;
+
+
+When a Model with this Special Rule is included in a Detachment, one additional Support Force Organization Slot is added to that Detachment. This Slot can only be filled with one Castellax Battle-automata Maniple selected from Liber Mechanicum. When such a Unit is included in this way, its Cybernetica Trait is replaced with &apos;Bonded Automata&apos;, and this Unit can be included even though it does not have the same Faction Trait as the other Units in that Detachment. In addition, a Model with this Special Rule may join a Friendly Unit that includes Models with the Automata Type. If a Model with bthis Special Rule joins a Unit with the Automata Type, the Leadership and Cool Characteristics or Models in that unit are not reduced.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
