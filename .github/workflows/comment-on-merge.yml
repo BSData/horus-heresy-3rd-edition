@@ -1,0 +1,10 @@
+name: comment-on-merge.yml
+on: pull_request
+jobs:
+  list_commits:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out game system
+        uses: actions/checkout@v4
+      - name: Run git diff
+        run: 
