@@ -72,11 +72,9 @@ class GameTests(unittest.TestCase):
 
     def test_forces_all_restrict_primes(self):
         for parent_force in self.system.gst.root_node.get_child("forceEntries").children:
-            # print(parent_force)
             if parent_force.get_child("forceEntries") is None:
                 continue
             for child_force in parent_force.get_child("forceEntries").children:
-                # print("\t", child_force)
                 if child_force.get_child("categoryLinks") is None:
                     continue
 
@@ -100,7 +98,6 @@ class GameTests(unittest.TestCase):
 
                 # Then check each prime restriction is set appropriately.
                 for category_link in child_force.get_child("categoryLinks").children:
-                    # print("\t", "\t", category_link)
                     if not category_link.target_name.startswith("Prime "):
                         continue
                     with self.subTest(f"{category_link.target_name} on {child_force}"):
@@ -112,6 +109,7 @@ class GameTests(unittest.TestCase):
                         constraint = constraints.children[0]
 
                         self.assertIn("includeChildSelections", constraint.attrib.keys())
+                        self.assertEquals(constraint.attrib["includeChildSelections"], "true")
 
     def test_forces_all_hide_if_no_LB(self):
         for parent_force in self.system.gst.root_node.get_child("forceEntries").children:
