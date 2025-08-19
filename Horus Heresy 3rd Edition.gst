@@ -3160,6 +3160,11 @@
               </constraints>
             </categoryLink>
             <categoryLink name="Rewards of Treachery" hidden="false" id="d380-16f1-b016-5c87" targetId="fe7f-1287-4162-a65d"/>
+            <categoryLink name="High Command" hidden="false" id="ba71-3bc8-fbf9-b695" targetId="d9a6-9b5f-b18a-4d63">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a9f8-7517-de0a-4edb"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -4359,6 +4364,11 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0ba4-e22f-a834-5f65" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="High Command" hidden="false" id="615d-f7a2-7e56-040e" targetId="d9a6-9b5f-b18a-4d63">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d61e-e676-82ac-1939"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -4919,6 +4929,11 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f015-623b-6deb-1ccb" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="High Command" hidden="false" id="87f5-c563-4a9a-67d8" targetId="d9a6-9b5f-b18a-4d63">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6ffa-3a2a-e53a-f6f1"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -5422,6 +5437,11 @@
             <categoryLink name="Prime Fast Attack" hidden="false" id="268d-8b97-b153-dad4" targetId="c291-144b-3da6-37ed">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e32c-fb47-a074-3d3d" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="High Command" hidden="false" id="eefa-95be-a7e4-de84" targetId="d9a6-9b5f-b18a-4d63">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="78e7-c1f2-2455-dc63"/>
               </constraints>
             </categoryLink>
           </categoryLinks>
@@ -13891,6 +13911,11 @@
             </categoryLink>
             <categoryLink name="Rewards of Treachery" hidden="false" id="f2b2-8c74-65bf-19e4" targetId="fe7f-1287-4162-a65d"/>
             <categoryLink name="Master of Automata" hidden="false" id="79b1-e748-f637-ff0d" targetId="43f5-bc69-29b9-2286"/>
+            <categoryLink name="High Command" hidden="false" id="44a3-2cf6-a2b0-4adc" targetId="d9a6-9b5f-b18a-4d63">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1a22-fc74-00f4-4341"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -14842,7 +14867,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="881f-5dbe-10fd-ec48"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="High Command Detachment Choice" hidden="false" id="31c4-c9d1-fdba-4b21" publicationId="7d63-5df4-c656-52de" page="280" defaultAmount="">
+    <selectionEntry type="upgrade" import="true" name="High Command Detachment Choice" hidden="false" id="31c4-c9d1-fdba-4b21" publicationId="7d63-5df4-c656-52de" page="280">
       <selectionEntryGroups>
         <selectionEntryGroup name="High Command Detachment Choice" id="969e-8b5b-1410-cfc6" hidden="false" publicationId="7d63-5df4-c656-52de" page="280" defaultSelectionEntryId="0889-888b-e3fe-1d5b">
           <constraints>
