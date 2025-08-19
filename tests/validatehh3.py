@@ -146,6 +146,8 @@ class GameTests(unittest.TestCase):
                             continue  # Not actually a relevant category link
                         # At this point we have a slot with max 0
                         modifiers = category_link.get_child("modifiers")
+                        if modifiers is None and category_link.target_name == "High Command":
+                            continue  # High Command can be 0 with mo modifiers, for Special Assignment.
                         self.assertIsNotNone(modifiers, "All force org slots that are max 0 should have modifiers")
                         modify_max_constraint = modifiers.get_child("modifier", {"field": max_constraint.id})
                         self.assertIsNotNone(modify_max_constraint, "Should have a modifier to max")
