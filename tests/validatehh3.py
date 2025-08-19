@@ -39,21 +39,23 @@ class GameTests(unittest.TestCase):
 
     def test_root_link_categories(self):
         expected_primaries = Heresy3e.BATTLEFIELD_ROLES.copy()
-        expected_primaries += ['Army Configuration', 'Rewards of Treachery', "Master of Automata"]
+        expected_primaries += ['Army Configuration', 'Rewards of Treachery', "Master of Automata",
+                               "Clade Operative", "War-engine - Upgraded by The Iron-clad",
+                               ]
         expected_secondaries = Heresy3e.FACTIONS.copy()
         for file in self.system.files:
             entry_links_node = file.root_node.get_child(tag='entryLinks')
             if entry_links_node is None:
                 continue
             for child in entry_links_node.children:
-                with self.subTest(f"Root link {child}'s primary category should be a battlefield role"):
+                with self.subTest(f"Categories on {child}"):
                     category_links = child.get_child(tag='categoryLinks')
                     primary_cat = category_links.get_child(tag='categoryLink', attrib={"primary": "true"})
                     self.assertIsNotNone(primary_cat,
                                          f"There should be a primary category"
                                          )
                     self.assertIn(primary_cat.target_name, expected_primaries,
-                                  f"(The link's primary category) is a battlefield role: "
+                                  f"The link's primary category should be a battlefield role or special slot"
                                   )
                     for other_link in category_links.children:
                         if other_link.id == primary_cat.id:
@@ -84,6 +86,58 @@ class GameTests(unittest.TestCase):
                         constraint = constraints.children[0]
 
                         self.assertIn("includeChildSelections", constraint.attrib.keys())
+
+    def test_forces_all_hide_if_no_LB(self):
+        for parent_force in self.system.gst.root_node.get_child("forceEntries").children:
+            # print(parent_force)
+            if parent_force.get_child("forceEntries") is None:
+                continue
+            for child_force in parent_force.get_child("forceEntries").children:
+                # print("\t", child_force)
+                if child_force.get_child("categoryLinks") is None:
+                    continue
+                for category_link in child_force.get_child("categoryLinks").children:
+                    # print("\t", "\t", category_link)
+                    if category_link.target_name not in Heresy3e.BATTLEFIELD_ROLES:
+                        continue
+                    with self.subTest(f"{category_link.target_name} on {child_force}"):
+                        constraints = category_link.get_child("constraints")
+                        self.assertIsNotNone(constraints, "All force org slots should have constraints")
+                        max_constraint = constraints.get_child("constraint", {"type": "max"})
+                        self.assertIsNotNone(max_constraint, "All force org slots should have a max constraint")
+                        if max_constraint.attrib["value"] != '0':
+                            continue  # Not actually a relevant category link
+                        # At this point we have a slot with max 0
+                        modifiers = category_link.get_child("modifiers")
+                        self.assertIsNotNone(modifiers, "All force org slots that are max 0 should have modifiers")
+                        modify_max_constraint = modifiers.get_child("modifier", {"field": max_constraint.id})
+                        self.assertIsNotNone(modify_max_constraint, "Should have a modifier to max")
+                        self.check_for_condition_of_lb_slot(modify_max_constraint, category_link.target_name, 1)
+
+                        modify_hidden = modifiers.get_child("modifier",
+                                                            {"type": "set", "field": "hidden", "value": "true"})
+                        self.check_for_condition_of_lb_slot(modify_hidden, category_link.target_name, 0)
+
+                        self.assertIsNotNone(modify_hidden,
+                                             "Should have a modifier for hidden as well as increment max constraint")
+
+    def check_for_condition_of_lb_slot(self, node: Node, slot, expected_qty):
+        conditions = node.get_child("conditions")
+        self.assertIsNotNone(conditions, "Should have conditions set")
+        self.assertEqual(len(conditions.children), 1, "Should have one condition")
+        condition = conditions.get_child("condition")
+        self.assertEqual(condition.target_name, "LB - " + slot)
+        expected_attribs = {
+            "type": "equalTo",
+            "value": str(expected_qty),
+            "field": "selections",
+            "scope": "force",
+            "shared": "true",
+            "includeChildSelections": "true",
+        }
+        attribs = condition.attrib.copy()
+        attribs.pop("childId")  #Ignore child ID since we checked that earlier
+        self.assertDictEqual(attribs, expected_attribs)
 
     def test_all_allied_detachments_linked(self):
         crusade = self.system.get_node_by_id("8562-592c-8d4b-a1f0")
@@ -150,6 +204,22 @@ class GameTests(unittest.TestCase):
 
                     self.assertGreaterEqual(prime_options_total, 1, "There should be at least one prime option")
 
+    def test_all_high_command_have_detachment_choice(self):
+        high_command_id = self.system.categories["High Command"].id
+        for category_link in self.system.all_nodes.filter(lambda x: x.target_id == high_command_id):
+            print(category_link.parent.parent)
+            unit_link = category_link.parent.parent
+            if not unit_link.is_link():
+                continue  # Skip over things that aren't unit links.
+            unit = unit_link.target
+            with self.subTest(f"{unit} should have a link to 'High Command Detachment Choice'"):
+                entry_links = unit.get_child("entryLinks")
+                self.assertIsNotNone(entry_links, "Should have entry links")
+                high_command_detachment_choice_link = entry_links.get_child(tag='entryLink',
+                                                                            attrib={'targetId': '31c4-c9d1-fdba-4b21'})
+                self.assertIsNotNone(high_command_detachment_choice_link,
+                                     "Should have a link to 'High Command Detachment Choice'")
+
     def test_all_units_are_units(self):
         total_model_count = 0
         for unit_id in self.unit_ids:
@@ -195,6 +265,34 @@ class GameTests(unittest.TestCase):
                 raw_model.type_and_subtypes = type_and_subtypes
                 errors = model_node.check_types_and_subtypes(raw_model)
                 self.assertEqual(len(errors), 0, f"{errors} on {model_node}")
+
+    def test_specific_upgrade_slots_LA(self):
+        system_file = next(filter(lambda sf: sf.name == "Legiones Astartes.cat", self.system.files), None)
+        slots_and_upgrades = {
+            "War-engine": [
+                "War-engine - Upgraded by The Iron-clad"
+            ],
+        }
+        # First sort all the units in the cat by slot
+        entry_links_node = system_file.root_node.get_child(tag='entryLinks')
+        units_by_slot = {}
+        for child in entry_links_node.children:
+            category_links = child.get_child(tag='categoryLinks')
+            primary_cat = category_links.get_child(tag='categoryLink', attrib={"primary": "true"})
+            if primary_cat is None:
+                continue  # This will be caught by other tests
+            slot = primary_cat.target_name
+            if slot not in units_by_slot.keys():
+                units_by_slot[slot] = {}
+            units_by_slot[slot][child.target_id] = child.target_name
+
+        # Then tests
+        for base_slot in slots_and_upgrades.keys():
+            for upgrade_slot in slots_and_upgrades[base_slot]:
+                with self.subTest(f"All {base_slot} units have a second link for {upgrade_slot}"):
+                    for unit_id, name in units_by_slot[base_slot].items():
+                        self.assertIsNotNone(units_by_slot[upgrade_slot].get(unit_id),
+                                             f"{name} should have a second link with primary category {upgrade_slot}")
 
 
 

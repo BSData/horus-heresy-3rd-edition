@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="8141-aaa2-f54b-f7ec" name="Battlefield Fortifications" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="9" revision="2" authorName="m455954" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" type="catalogue">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Special Rules" id="55e2-2d6f-02fc-67e5" targetId="106b-693b-99f2-00c3"/>
+    <catalogueLink type="catalogue" name="Weapons" id="1d5a-736d-bba4-8965" targetId="a22d-4dd0-c59d-57d3"/>
+  </catalogueLinks>
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Hammerfall Bunker" hidden="false" id="0f33-97d6-6636-b953" sortIndex="2">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="150"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Hammerfall Bunker" hidden="false" id="63ed-4139-3f09-1382">
+          <costs>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Hyperios missile launcher" hidden="false" id="4732-7f66-21aa-a705" type="selectionEntry" targetId="a4e2-e284-30e1-f05a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c982-cf98-ad8d-882a"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d26-b733-7445-f7e3"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Turret Mounted Hyperios missile launcher" field="name"/>
+              </modifiers>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Hull mount" id="5840-e06f-5413-2886" hidden="false" defaultSelectionEntryId="723c-931b-d7b6-b080">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c0b-e38f-1aa3-6054"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ecea-17fd-23d9-0545"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Heavy bolter array" hidden="false" id="723c-931b-d7b6-b080" type="selectionEntry" targetId="8f95-bf03-083b-5a7e" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aeeb-21b3-49fe-e1d2"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="Hull Mounted Heavy bolter array" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy flamer array" hidden="false" id="c38a-6587-8a3a-e03d" type="selectionEntry" targetId="75f1-8fb3-1fc1-3839" sortIndex="2">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9780-f779-60bf-4589"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="Hull Mounted Heavy flamer array" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Hull mount" id="ed2f-bfb7-92a8-2081" hidden="false" defaultSelectionEntryId="723c-931b-d7b6-b080">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f8c2-13d3-5073-40c4"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7a8-1206-3b3d-41da"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Heavy bolter array" hidden="false" id="9c6f-5be6-26e9-733f" type="selectionEntry" targetId="8f95-bf03-083b-5a7e" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26c9-237d-ae8e-267f"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="Hull Mounted Heavy bolter array" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Heavy flamer array" hidden="false" id="df59-82f2-6a6d-af10" type="selectionEntry" targetId="75f1-8fb3-1fc1-3839" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e234-f334-672d-821b"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="Hull Mounted Heavy flamer array" field="name"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <profiles>
+            <profile name="Hammerfall Bunker" typeId="f47c-65e0-5690-738e" typeName="Battlefield fortification" hidden="false" id="0830-2a90-58ff-ff33">
+              <characteristics>
+                <characteristic name="Armour" typeId="5be5-04db-c14c-12be">11</characteristic>
+                <characteristic name="HP" typeId="4501-2c2a-d089-210e">6</characteristic>
+                <characteristic name="BS" typeId="e2af-22db-e8a2-5ebc">2</characteristic>
+                <characteristic name="Transport Capacity" typeId="ca35-9ed8-337e-cb3e">-</characteristic>
+                <characteristic name="Type" typeId="869d-8fb8-f39f-4575">Fortification (Emplacement)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Forward Deployment" id="4aeb-9d11-f975-dd5c" hidden="false" type="rule" targetId="c343-1439-994e-862e"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink targetId="ae5b-4e74-db76-fa25" id="7731-538b-9c10-13d4" primary="false" name="Fortification Model Type"/>
+            <categoryLink targetId="d1e7-50c0-0764-9de5" id="1e29-56fd-4fd1-04f6" primary="false" name="Emplacement Model Sub-Type"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c893-e6fa-098e-7394-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c893-e6fa-098e-7394-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Void shield generator" hidden="false" id="313a-da54-3bd2-45f5">
+      <profiles>
+        <profile name="Void shield generator" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="2941-2dc0-4b75-d3c5">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">A Model with a Void Shield Generator can project a shield to protect nearby Models at some risk.</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">The Controlling Player of a Model with a void shield generator may choose to activate it in the Effects Sub-Phase of their Start Phase. When a Model with this Special Rule is activated, roll a Dice and add the number of times the Model has previously been activated in the same Battle to the result of that roll, before comparing the final result to the table below:
+
+
+* 1-3 :Warp Field Ignition: The Model for which this roll was made and all other Models with the Infantry, Automata, Walker or Paragon Types within 6&quot; of any point of the Model with this Special Rule, gain a 6+ Invulnerable Save against Hits inflicted as part of a Shooting Attack until the start of the Controlling Player’s next Turn as the Active Player.
+
+
+* 4-6 Partial Warp Field Ignition: The Model for which this roll was made and all other Models with the Infantry, Automata, Walker or Paragon Types within 3&quot; of any point of the Model with this Special Rule, gain a 6+ Invulnerable Save against Hits inflicted as part of a Shooting Attack until the start of the Controlling Player’s next Turn as the Active Player.
+
+
+* 7 Burnout: The Model for which this roll was made may no longer have the Void Shield Generator Special Rule activated for it. 
+
+
+* 8+ Atomantic Implosion: Immediately place a 10&quot; Blast Marker centred over the Model for which this roll was made. Resolve a Hit against each Model under the Blast Marker that does not have this Special Rule, these Hits have a Strength of 6, AP of - and a Damage of 1. Once all of these Hits have been resolved, remove the Model for which this roll was made from play as a Casualty.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Aquila macro-cannon" hidden="false" id="9766-66f7-011e-a689">
+      <costs>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Aquila Macro Cannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="45c5-5150-066f-b01d">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">216</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">12</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">3</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Blast (7&quot;), Barrage (3), Stun (3), Minimum Range (24), Macro</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast (X)" id="1210-cd39-f0a4-daff" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+          <modifiers>
+            <modifier type="set" value="Blast (7&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Barrage (X)" id="1f24-1e04-ec4d-8821" hidden="false" type="rule" targetId="85f5-3a91-69f4-c3b7">
+          <modifiers>
+            <modifier type="set" value="Barrage (3)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Stun (X)" id="8e06-9c1b-fd31-5401" hidden="false" type="rule" targetId="c7c1-bbc9-f852-6f71">
+          <modifiers>
+            <modifier type="set" value="Stun (3)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Macro" id="2708-5557-65b7-0bce" hidden="false" type="rule" targetId="5bd4-e5a6-81d5-b652"/>
+      </infoLinks>
+      <rules>
+        <rule name="Minimum Range (X)" id="7259-0f03-d857-36ab" hidden="false">
+          <description>A Model with this Special Rule may only be used to attack an enemy Unit that is at a range equal to or greater than the value of X attached to the specific variant of this Special Rule that it has.</description>
+          <modifiers>
+            <modifier type="set" value="Minimum Range (24)" field="name"/>
+          </modifiers>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Primus turbo laster" hidden="false" id="7e2a-b3cf-ae02-4b8c">
+      <profiles>
+        <profile name="Primus turbo laster" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="647f-cd54-c4bf-eb14">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">96</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">12</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">4</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Blast (3&quot;), Armourbane, Macro</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Las</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Macro" id="1402-11b9-b7cd-15cb" hidden="false" type="rule" targetId="5bd4-e5a6-81d5-b652"/>
+        <infoLink name="Blast (X)" id="129c-db41-b6bd-458b" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+          <modifiers>
+            <modifier type="set" value="Blast (3&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Armourbane" id="38a6-3de1-8846-fbe5" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vengeance battlecannon" hidden="false" id="ea0f-6006-df88-9587">
+      <profiles>
+        <profile name="Vengeance battlecannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="b0c9-54e3-d515-47a9">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">36</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">5</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">3</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Blast (3&quot;), Pinning (1)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Auto</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast (X)" id="41e4-c940-8fde-ac8c" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+          <modifiers>
+            <modifier type="set" value="Blast (3&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Pinning (X)" id="92dd-9bed-3f46-ca5a" hidden="false" type="rule" targetId="88b6-6493-e4d7-1805">
+          <modifiers>
+            <modifier type="set" value="Pinning (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Avenger bolt cannon" hidden="false" id="1347-aa5a-79ca-f102">
+      <profiles>
+        <profile name="Avenger bolt cannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="bf8b-534a-307e-bb1f">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">36</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">5</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">3</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Suppressive (1)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Auto</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Suppressive (X)" id="2a94-03cd-4776-6eea" hidden="false" type="rule" targetId="001f-53f3-4d87-4b43">
+          <modifiers>
+            <modifier type="set" value="Suppressive (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy bolter array" hidden="false" id="8f95-bf03-083b-5a7e">
+      <profiles>
+        <profile name="Heavy bolter array" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="1769-27c8-d5b5-58ef">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">36</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">6</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">5</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">3</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (FP), Weapons Array</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Bolt</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Heavy (X)" id="ffd8-9f11-4455-8fe1" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
+          <modifiers>
+            <modifier type="set" value="Heavy (FP)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Weapons Array" id="4986-3657-28ee-209a" hidden="false" type="rule" targetId="770d-05ec-12b7-6d51"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy flamer array" hidden="false" id="75f1-8fb3-1fc1-3839">
+      <profiles>
+        <profile name="Heavy flamer array" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="db93-e95e-1095-1a40">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">5</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Panic (2), Weapons Array</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Flame</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Template" id="4156-6b57-ddbe-0d51" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a"/>
+        <infoLink name="Panic (X)" id="294f-9b0b-8d87-456a" hidden="false" type="rule" targetId="82a7-f471-3fda-6ca1">
+          <modifiers>
+            <modifier type="set" value="Panic (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Weapons Array" id="c69b-7514-0a37-d855" hidden="false" type="rule" targetId="770d-05ec-12b7-6d51"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Icarus lascannon array" hidden="false" id="dc75-57f4-7f72-53a5">
+      <profiles>
+        <profile name="Icarus lascannon array" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="1252-122b-ccd7-e470">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">48</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">9</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Skyfire, Armourbane</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Las</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Skyfire" id="a5dc-3725-00a4-1d8c" hidden="false" type="rule" targetId="8ff3-b6fe-c75b-1d52"/>
+        <infoLink name="Armourbane" id="0bbd-27ab-fbbf-ec5c" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin Icarus lascannon" hidden="false" id="9f11-d4c3-5927-fa66">
+      <profiles>
+        <profile name="Twin Icarus lascannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="f5b6-a758-a1c1-43f7">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">48</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">9</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Skyfire, Armourbane</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Fortification (Emplacement, Bunker)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Skyfire" id="6eff-2ee8-6ee4-2278" hidden="false" type="rule" targetId="8ff3-b6fe-c75b-1d52"/>
+        <infoLink name="Armourbane" id="2285-c0de-ed2d-17a7" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Vengeance Weapon Battery" hidden="false" id="37a2-9e86-679e-2f47" sortIndex="1">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Vengeance Weapon Battery" hidden="false" id="efbf-9956-4b22-b5e0">
+          <profiles>
+            <profile name="Vengeance Weapon Battery" typeId="f47c-65e0-5690-738e" typeName="Battlefield fortification" hidden="false" id="9d0d-1800-f3de-0e2d">
+              <characteristics>
+                <characteristic name="Armour" typeId="5be5-04db-c14c-12be">11</characteristic>
+                <characteristic name="HP" typeId="4501-2c2a-d089-210e">6</characteristic>
+                <characteristic name="BS" typeId="e2af-22db-e8a2-5ebc">2</characteristic>
+                <characteristic name="Transport Capacity" typeId="ca35-9ed8-337e-cb3e">-</characteristic>
+                <characteristic name="Type" typeId="869d-8fb8-f39f-4575">Fortification (Emplacement)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Turret Mounted Weapon" id="ac52-69d3-a746-8732" hidden="false" defaultSelectionEntryId="aeac-d3dc-42aa-dc61">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b866-53f9-d18d-6bf4"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3923-d068-be9d-5863"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Vengeance battlecannon" hidden="false" id="aeac-d3dc-42aa-dc61" type="selectionEntry" targetId="ea0f-6006-df88-9587" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7407-a9dc-bb0a-58cf"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="Turret Mounted Vengeance battlecannon" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Avenger bolt cannon" hidden="false" id="b589-eed0-8bf9-2dd7" type="selectionEntry" targetId="1347-aa5a-79ca-f102" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="161a-9940-2b7b-7bcc"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="Turret Mounted Avenger bolt cannon" field="name"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="ae5b-4e74-db76-fa25" id="5eef-39e6-319a-7016" primary="false" name="Fortification Model Type"/>
+            <categoryLink targetId="d1e7-50c0-0764-9de5" id="5d22-3b08-5614-438f" primary="false" name="Emplacement Model Sub-Type"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4453-5a92-8aad-1f67-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4453-5a92-8aad-1f67-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="100"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Void Shield Generator" hidden="false" id="a291-a04b-2aa9-9cc1" sortIndex="3">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Void Shield Generator" hidden="false" id="5bb7-e9ec-727d-6878">
+          <profiles>
+            <profile name="Void Shield Generator" typeId="f47c-65e0-5690-738e" typeName="Battlefield fortification" hidden="false" id="3dfd-a5a5-821c-5812">
+              <characteristics>
+                <characteristic name="Armour" typeId="5be5-04db-c14c-12be">11</characteristic>
+                <characteristic name="HP" typeId="4501-2c2a-d089-210e">8</characteristic>
+                <characteristic name="BS" typeId="e2af-22db-e8a2-5ebc">-</characteristic>
+                <characteristic name="Transport Capacity" typeId="ca35-9ed8-337e-cb3e">-</characteristic>
+                <characteristic name="Type" typeId="869d-8fb8-f39f-4575">Fortification (Structure)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Structure Model Sub-Type" hidden="false" id="db2e-16ca-9a10-ee1f" targetId="2893-a655-1074-9831" primary="false"/>
+            <categoryLink targetId="ae5b-4e74-db76-fa25" id="6fdc-0621-89b7-3548" primary="false" name="Fortification Model Type"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Void shield generator" hidden="false" id="2599-5cbc-771b-1905" type="selectionEntry" targetId="313a-da54-3bd2-45f5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="54fb-9fc3-d6d0-a87d-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54fb-9fc3-d6d0-a87d-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d6c-2be9-a125-d3b1-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d6c-2be9-a125-d3b1-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="120"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Skyshield Landing Pad" hidden="false" id="3644-c337-5b5a-0989" sortIndex="4">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Skyshield Landing Pad" hidden="false" id="347f-15c6-a08f-2f83">
+          <profiles>
+            <profile name="Skyshield Landing Pad" typeId="f47c-65e0-5690-738e" typeName="Battlefield fortification" hidden="false" id="d576-588d-fbc9-cdbf">
+              <characteristics>
+                <characteristic name="Armour" typeId="5be5-04db-c14c-12be">11</characteristic>
+                <characteristic name="HP" typeId="4501-2c2a-d089-210e">6</characteristic>
+                <characteristic name="BS" typeId="e2af-22db-e8a2-5ebc">-</characteristic>
+                <characteristic name="Transport Capacity" typeId="ca35-9ed8-337e-cb3e">-</characteristic>
+                <characteristic name="Type" typeId="869d-8fb8-f39f-4575">Fortification (Structure)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Structure Model Sub-Type" hidden="false" id="1990-fb9f-a698-bcf3" targetId="2893-a655-1074-9831" primary="false"/>
+            <categoryLink targetId="ae5b-4e74-db76-fa25" id="b0b4-1e86-b463-19fe" primary="false" name="Fortification Model Type"/>
+          </categoryLinks>
+          <rules>
+            <rule name="Platform" id="1a3c-2b94-e02b-2846" hidden="false">
+              <description>&quot;Models can be placed on top of this Model as if it were an Area of Terrain.&quot;
+Models can move over and end a move on top of this Model, treating it as if it were an area of Light Area Terrain. However, unlike other Areas of Terrain, protrusions and other parts of the Model do block Line of Sight.</description>
+            </rule>
+            <rule name="Landing Pad" id="5176-19cc-02f0-cb81" hidden="false">
+              <description>If a Model with the Flyer Sub-Type that is assigned a Drop Mission ends a Move made as part of that Mission within 3&quot; of a Model with this Special Rule, the Controlling Player may choose to deploy any disembarking Models onto any point on the Model with this Special Rule instead of in Base Contact with the Flyer Model they were Embarked upon.
+
+
+Likewise, if a Model with the Flyer Sub-Type that has been assigned an Extraction Mission ends a Move made as part of that Mission within 3&quot; of a Model with this Special Rule, then any friendly Unit that has all of its Models in base contact with the Model with this Special Rule may immediately be Embarked on the Model with the Flyer Sub-Type.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Forward Deployment" id="21b5-c233-a0b5-7fb8" hidden="false" type="rule" targetId="c343-1439-994e-862e"/>
+          </infoLinks>
+          <costs>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6121-3579-ddf8-0395-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6121-3579-ddf8-0395-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="100"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Aegis Defense Line" hidden="false" id="3392-062b-5d07-f582" sortIndex="5">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="6713-ea99-9d61-198e">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="70"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Aegis Defence Line" typeId="f47c-65e0-5690-738e" typeName="Battlefield fortification" hidden="false" id="01b3-ee46-9647-f7e7">
+              <characteristics>
+                <characteristic name="Armour" typeId="5be5-04db-c14c-12be">11</characteristic>
+                <characteristic name="HP" typeId="4501-2c2a-d089-210e">3</characteristic>
+                <characteristic name="BS" typeId="e2af-22db-e8a2-5ebc">-</characteristic>
+                <characteristic name="Transport Capacity" typeId="ca35-9ed8-337e-cb3e">-</characteristic>
+                <characteristic name="Type" typeId="869d-8fb8-f39f-4575">Fortification (Structure)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Armoured Platform" id="53cd-6b49-70bb-8004" hidden="false">
+              <description>&quot;Models can be placed on top of this Model as if it were an Area of Terrain.&quot;
+Models can move over and end a move on top of this Model, treating it as if it were an area of Terrain that grants a 5+ Cover Save to all Models on it. This Area of Terrain allows Line of Sight to be drawn into and out of its zone, but a Model outside that zone cannot draw a Line of Sight through the Area of Terrain to Models on the other side</description>
+            </rule>
+            <rule name="Aegis Barricade" id="3c44-336c-1356-33e2" hidden="false">
+              <description>&quot;Any Model with the Infantry or Paragon Types that is in base contact with an Aegis Barricade gains a 5+ Cover Save.&quot;
+Aegis Defence Line Barricades do not have any Characteristics and cannot be targeted, attacked, damaged or otherwise affected by any Rule or Weapon. Models can move through an Aegis Barricade and if they do move through such a Barricade must reduce the maximum distance that can be moved in that Move by 2&quot; as if it was Difficult Terrain. Aegis Barricades do not block a Line of Sight drawn through them. Aegis Barricades must be Deployed so that at least one part of each Barricade is in contact with an Aegis Defence Line Core Platform or another Barricade – as long as one Barricade in any chain of Barricades is itself in contact with a Core Platform. All Models with the Infantry or Paragon Types that are in contact with a Barricade gains a 5+ Cover Save. The destruction of linked Aegis Core Platforms has no effect on Aegis Barricades, which remain in place.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Structure Model Sub-Type" hidden="false" id="3108-a84d-5dd8-a115" targetId="2893-a655-1074-9831" primary="false"/>
+            <categoryLink name="Fortification Model Type" hidden="false" id="afcd-869e-1242-d64a" targetId="ae5b-4e74-db76-fa25" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b98-8308-2269-1af8-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b98-8308-2269-1af8-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="70"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Firestorm Redoubt" hidden="false" id="678d-c2e3-37db-e237" sortIndex="6">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Firestorm Redoubt" hidden="false" id="364f-44c9-2704-e2ce">
+          <costs>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Firestorm Redoubt" typeId="f47c-65e0-5690-738e" typeName="Battlefield fortification" hidden="false" id="efe2-f321-3878-a567">
+              <characteristics>
+                <characteristic name="Armour" typeId="5be5-04db-c14c-12be">12</characteristic>
+                <characteristic name="HP" typeId="4501-2c2a-d089-210e">8</characteristic>
+                <characteristic name="BS" typeId="e2af-22db-e8a2-5ebc">2</characteristic>
+                <characteristic name="Transport Capacity" typeId="ca35-9ed8-337e-cb3e">10</characteristic>
+                <characteristic name="Type" typeId="869d-8fb8-f39f-4575">Fortification (Emplacement, Bunker)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Icarus lascannon array" hidden="false" id="42a5-ee28-b730-d54d" type="selectionEntry" targetId="dc75-57f4-7f72-53a5">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a5db-5db0-6248-ed09-min"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a5db-5db0-6248-ed09-max"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Turret Mounted Icarus lascannon array" field="name"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Firing Point (X)" id="0866-cdb6-2bdb-2408" hidden="false" type="rule" targetId="2972-b461-0893-9b0d">
+              <modifiers>
+                <modifier type="set" value="Firing Point (3)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Battlements" id="22b7-e240-0a2c-0624" hidden="false" type="rule" targetId="93ef-cbc4-214e-b44a"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Emplacement Model Sub-Type" hidden="false" id="ab77-1f18-ad9d-0ab8" targetId="d1e7-50c0-0764-9de5" primary="false"/>
+            <categoryLink name="Bunker Model Sub-Type" hidden="false" id="acea-0c9e-2bb2-751e" targetId="7caa-3c9a-875c-5bca" primary="false"/>
+            <categoryLink targetId="ae5b-4e74-db76-fa25" id="43be-30c4-4b81-23cd" primary="false" name="Fortification Model Type"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d185-c82e-a12a-2f6a-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d185-c82e-a12a-2f6a-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="200"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Fortress of Redemption" hidden="false" id="c0a4-0923-d916-65e9" sortIndex="7">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Fortress of Redemption" hidden="false" id="a927-9091-fd21-f1dd">
+          <profiles>
+            <profile name="Fortress of Redemption" typeId="f47c-65e0-5690-738e" typeName="Battlefield fortification" hidden="false" id="31d3-b397-ac18-3c71">
+              <characteristics>
+                <characteristic name="Armour" typeId="5be5-04db-c14c-12be">12</characteristic>
+                <characteristic name="HP" typeId="4501-2c2a-d089-210e">10</characteristic>
+                <characteristic name="BS" typeId="e2af-22db-e8a2-5ebc">2</characteristic>
+                <characteristic name="Transport Capacity" typeId="ca35-9ed8-337e-cb3e">22</characteristic>
+                <characteristic name="Type" typeId="869d-8fb8-f39f-4575">Fortification (Emplacement, Bunker)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Emplacement Model Sub-Type" hidden="false" id="53c5-123f-3fc1-ac53" targetId="d1e7-50c0-0764-9de5" primary="false"/>
+            <categoryLink name="Bunker Model Sub-Type" hidden="false" id="05a4-26d2-09d9-0364" targetId="7caa-3c9a-875c-5bca" primary="false"/>
+            <categoryLink targetId="ae5b-4e74-db76-fa25" id="57e9-e53d-c8c2-930f" primary="false" name="Fortification Model Type"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Orbital Defence" id="ea84-011f-992c-19ec" hidden="false" type="rule" targetId="2622-fa77-aad6-c649"/>
+            <infoLink name="Battlements" id="8ce9-db63-b71a-e97d" hidden="false" type="rule" targetId="93ef-cbc4-214e-b44a"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Twin Icarus lascannon" hidden="false" id="adc0-65fa-09ae-aaed" type="selectionEntry" targetId="9f11-d4c3-5927-fa66">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4ef-8f75-0280-cd7e-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4ef-8f75-0280-cd7e-max"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Turret Mounted twin Icarus lascannon" field="name"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b6c-fbde-b7e6-d796-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b6c-fbde-b7e6-d796-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="300"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Aquila Strongpoint" hidden="false" id="d951-9ca5-8382-07bd" sortIndex="8">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Aquila Strongpoint" hidden="false" id="f621-3c9b-de9b-2721">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Strongpoint weapon" id="af49-8b3b-c366-4222" hidden="false" defaultSelectionEntryId="cc43-b33e-180d-e9b0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd51-d403-0128-4110"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Void Missile Silo" hidden="false" id="cc43-b33e-180d-e9b0" sortIndex="1">
+                  <infoLinks>
+                    <infoLink name="Orbital Defence" id="dc2a-2d60-14d0-b0c3" hidden="false" type="rule" targetId="2622-fa77-aad6-c649"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b15d-e361-ad25-91c2"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="100"/>
+                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                    <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Aquila macro-cannon" hidden="false" id="5ba0-409c-9360-316d" type="selectionEntry" targetId="9766-66f7-011e-a689" sortIndex="2">
+                  <modifiers>
+                    <modifier type="set" value="Turret Mounted Aquila macro-cannon" field="name"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="200"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1551-81a7-53e7-df32"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Battlements" id="5c4f-003b-d7ab-dc44" hidden="false" type="rule" targetId="93ef-cbc4-214e-b44a"/>
+            <infoLink name="Firing Point (X)" id="2ca0-5ca0-71ba-bd1d" hidden="false" type="rule" targetId="2972-b461-0893-9b0d">
+              <modifiers>
+                <modifier type="set" value="Firing Point (3)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Emplacement Model Sub-Type" hidden="false" id="d077-0987-b89b-67be" targetId="d1e7-50c0-0764-9de5" primary="false"/>
+            <categoryLink name="Bunker Model Sub-Type" hidden="false" id="9019-2e99-3de4-61f3" targetId="7caa-3c9a-875c-5bca" primary="false"/>
+            <categoryLink targetId="ae5b-4e74-db76-fa25" id="fa3d-a078-2661-394c" primary="false" name="Fortification Model Type"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c09f-6749-ca61-af80-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c09f-6749-ca61-af80-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Aquila Strongpoint" typeId="f47c-65e0-5690-738e" typeName="Battlefield fortification" hidden="false" id="c868-0454-b5ad-f300">
+              <characteristics>
+                <characteristic name="Armour" typeId="5be5-04db-c14c-12be">12</characteristic>
+                <characteristic name="HP" typeId="4501-2c2a-d089-210e">8</characteristic>
+                <characteristic name="BS" typeId="e2af-22db-e8a2-5ebc">2</characteristic>
+                <characteristic name="Transport Capacity" typeId="ca35-9ed8-337e-cb3e">17</characteristic>
+                <characteristic name="Type" typeId="869d-8fb8-f39f-4575">Fortification (Emplacement, Bunker)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="100"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Primus Redoubt" hidden="false" id="6b30-ad4c-7736-5aa8" sortIndex="9">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Primus Redoubt" hidden="false" id="d486-b397-2842-195f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d12e-7c38-554b-8067" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c25-3d37-6d4e-5faf-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c25-3d37-6d4e-5faf-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Primus Redoubt" typeId="f47c-65e0-5690-738e" typeName="Battlefield fortification" hidden="false" id="0dc4-066e-fcb8-8683">
+              <characteristics>
+                <characteristic name="Armour" typeId="5be5-04db-c14c-12be">14</characteristic>
+                <characteristic name="HP" typeId="4501-2c2a-d089-210e">8</characteristic>
+                <characteristic name="BS" typeId="e2af-22db-e8a2-5ebc">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="ca35-9ed8-337e-cb3e">12</characteristic>
+                <characteristic name="Type" typeId="869d-8fb8-f39f-4575">Fortification (Emplacement, Bunker)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Primus turbo laster" hidden="false" id="57ba-d94c-a124-b47b" type="selectionEntry" targetId="7e2a-b3cf-ae02-4b8c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4c9-88ec-8e6f-5bc0-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4c9-88ec-8e6f-5bc0-max"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Turret Mounted Primus turbo laser" field="name"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Battlements" id="2549-fc70-8238-1d88" hidden="false" type="rule" targetId="93ef-cbc4-214e-b44a"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Emplacement Model Sub-Type" hidden="false" id="8bdc-7bcb-171e-3535" targetId="d1e7-50c0-0764-9de5" primary="false"/>
+            <categoryLink name="Bunker Model Sub-Type" hidden="false" id="0866-39fb-ae0a-fe57" targetId="7caa-3c9a-875c-5bca" primary="false"/>
+            <categoryLink targetId="ae5b-4e74-db76-fa25" id="296e-c78e-be77-b757" primary="false" name="Fortification Model Type"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="400"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedRules>
+    <rule name="Weapons Array" id="770d-05ec-12b7-6d51" hidden="false">
+      <description>&quot;Weapons with this Special Rule may make Shooting Attacks into multiple Firing Arcs.&quot;
+When making a Shooting Attack with a Weapon that has this Special Rule, the Weapon may be used to attack once into all four Firing Arcs (Front, Left, Right and Rear). This does count as making multiple Shooting Attacks, but do not need to be made as Snap Shots.</description>
+    </rule>
+    <rule name="Forward Deployment" id="c343-1439-994e-862e" hidden="false">
+      <description>A Model with this Special Rule can be deployed anywhere on the Battlefield that is at least 12&quot; from any point within the opposing Player’s Deployment Zone</description>
+    </rule>
+    <rule name="Firing Point (X)" id="2972-b461-0893-9b0d" hidden="false">
+      <description>&quot;A Model with this Special Rule can make extra attacks equal to the value of X with the Weapons of Embarked Models.&quot;
+In the Shooting Phase, a Model with this Special Rule that has a Unit Embarked on it may have an additional Shooting Attack made for it. This additional Shooting Attack may target a different enemy Unit than its normal Shooting Attack and must be made as Snap Shots. The attack may use up to a number of Weapons equal to the value of X attached to this variant of the Firing Point (X) Special Rule, or the number of Embarked Models, whichever is lower. These Weapons are chosen from any Weapons that a Unit Embarked on the attacking Model has, but no Weapon with any variant of the Overload (X) Special Rule or any other Special Rule that can inflict Hits or Statuses on the attacking Unit on any of its profiles may be selected. This attack is made using the majority Ballistic Skill of the Unit Embarked on the attacking Model.</description>
+    </rule>
+    <rule name="Orbital Defence" id="2622-fa77-aad6-c649" hidden="false">
+      <description>&quot;Enemy Drop Pods that deploy within 18&quot; of a Model with this Special Rule suffer automatic Hits.&quot;
+If an enemy Model with the Orbital Assault Vehicle Special Rule enters play using the Deep Strike Special Rule and is deployed anywhere within 12&quot; of any point on a Model with this Special Rule, then once such a Model has been placed on the Battlefield, but before any Models are disembarked, then each such enemy Model suffers one Hit with a Strength of 8, an AP of - and a Damage of 4</description>
+    </rule>
+    <rule name="Battlements" id="93ef-cbc4-214e-b44a" hidden="false">
+      <description>The area on top of this fortification is treated as an area of Battlements. Models may only move onto this area of Battlements when Disembarking from the same Fortress of Redemption, and may only leave it by Embarking onto the Fortress of Redemption – or by simply moving off if they also have the Antigrav Sub-Type</description>
+    </rule>
+    <rule name="Macro" id="5bd4-e5a6-81d5-b652" hidden="false">
+      <description>A Weapon with this Special Rule may only be used to attack an enemy Unit that fulfils one of the following conditions:
+• The target Unit includes at least one Model with the Vehicle Type.
+• The target Unit includes at least one Model with the Paragon Type.
+• The target Unit includes at least one Model with a Base Wounds Characteristic of 10 or more.
+
+
+Further, a Weapon with this Special Rule may never be used to make any Reaction.</description>
+    </rule>
+  </sharedRules>
+  <forceEntries>
+    <forceEntry name="Battlefield Fortifications Detachment" id="8c3a-eede-6e3a-2761" hidden="false" sortIndex="0">
+      <categoryLinks>
+        <categoryLink name="Fortification" hidden="false" id="a650-e68d-cae9-d6e8" targetId="7e2f-62cf-4e42-9e13">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ee93-5b3e-2e3b-34cc"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="9b21-d233-152b-0297"/>
+      </constraints>
+    </forceEntry>
+  </forceEntries>
+  <entryLinks>
+    <entryLink import="true" name="Vengeance Weapon Battery" hidden="false" id="0e36-dca6-fe63-090a" type="selectionEntry" targetId="37a2-9e86-679e-2f47" sortIndex="1">
+      <categoryLinks>
+        <categoryLink targetId="7e2f-62cf-4e42-9e13" id="7118-e9b9-4e46-a787" primary="true" name="Fortification"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Hammerfall Bunker" hidden="false" id="0633-fad8-7256-c0cb" type="selectionEntry" targetId="0f33-97d6-6636-b953" sortIndex="2">
+      <categoryLinks>
+        <categoryLink targetId="7e2f-62cf-4e42-9e13" id="0623-bf1f-e4bf-86d8" primary="true" name="Fortification"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Void Shield Generator" hidden="false" id="7f2a-d995-5938-7ebb" type="selectionEntry" targetId="a291-a04b-2aa9-9cc1" sortIndex="3">
+      <categoryLinks>
+        <categoryLink targetId="7e2f-62cf-4e42-9e13" id="23d2-8bd2-6bec-34c9" primary="true" name="Fortification"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Skyshield Landing Pad" hidden="false" id="cdc6-1663-3d5f-5e25" type="selectionEntry" targetId="3644-c337-5b5a-0989" sortIndex="4">
+      <categoryLinks>
+        <categoryLink targetId="7e2f-62cf-4e42-9e13" id="4727-27b8-d7f6-e59a" primary="true" name="Fortification"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Aegis Defense Line" hidden="false" id="b4e0-e7ec-8199-c788" type="selectionEntry" targetId="3392-062b-5d07-f582" sortIndex="5">
+      <categoryLinks>
+        <categoryLink targetId="7e2f-62cf-4e42-9e13" id="b9a4-f469-07a5-958f" primary="true" name="Fortification"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Firestorm Redoubt" hidden="false" id="743a-c080-871b-49be" type="selectionEntry" targetId="678d-c2e3-37db-e237" sortIndex="6">
+      <categoryLinks>
+        <categoryLink targetId="7e2f-62cf-4e42-9e13" id="1152-28cb-9fcd-6d46" primary="true" name="Fortification"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Fortress of Redemption" hidden="false" id="54b2-0a81-967f-481d" type="selectionEntry" targetId="c0a4-0923-d916-65e9" sortIndex="7">
+      <categoryLinks>
+        <categoryLink targetId="7e2f-62cf-4e42-9e13" id="1ab5-c9ec-f0e6-7a8e" primary="true" name="Fortification"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Aquila Strongpoint" hidden="false" id="a699-f6f4-df46-976f" type="selectionEntry" targetId="d951-9ca5-8382-07bd" sortIndex="8">
+      <categoryLinks>
+        <categoryLink targetId="7e2f-62cf-4e42-9e13" id="c2bf-bcb5-6a36-1a0c" primary="true" name="Fortification"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Primus Redoubt" hidden="false" id="e6fd-06da-13a0-bcd5" type="selectionEntry" targetId="6b30-ad4c-7736-5aa8" sortIndex="9">
+      <categoryLinks>
+        <categoryLink targetId="7e2f-62cf-4e42-9e13" id="4443-a6e4-856b-f5ec" primary="true" name="Fortification"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+</catalogue>
