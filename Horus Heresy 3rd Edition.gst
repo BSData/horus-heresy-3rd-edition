@@ -14842,9 +14842,9 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="881f-5dbe-10fd-ec48"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="High Command Detachment Choice" hidden="false" id="31c4-c9d1-fdba-4b21" publicationId="7d63-5df4-c656-52de" page="280">
+    <selectionEntry type="upgrade" import="true" name="High Command Detachment Choice" hidden="false" id="31c4-c9d1-fdba-4b21" publicationId="7d63-5df4-c656-52de" page="280" defaultAmount="">
       <selectionEntryGroups>
-        <selectionEntryGroup name="High Command Detachment Choice" id="969e-8b5b-1410-cfc6" hidden="false" publicationId="7d63-5df4-c656-52de" page="280">
+        <selectionEntryGroup name="High Command Detachment Choice" id="969e-8b5b-1410-cfc6" hidden="false" publicationId="7d63-5df4-c656-52de" page="280" defaultSelectionEntryId="0889-888b-e3fe-1d5b">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b065-5f7d-781c-9ac3-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b065-5f7d-781c-9ac3-max" includeChildSelections="false"/>
@@ -14871,6 +14871,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
       </selectionEntryGroups>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98f0-4cab-2f85-12db-max" includeChildSelections="false" automatic="true"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="80b8-4e4c-207a-19d8" automatic="true"/>
       </constraints>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -14879,6 +14880,11 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
           </conditions>
         </modifier>
         <modifier type="set" value="0" field="98f0-4cab-2f85-12db-max">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="unit" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="80b8-4e4c-207a-19d8">
           <conditions>
             <condition type="equalTo" value="1" field="selections" scope="unit" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
           </conditions>
