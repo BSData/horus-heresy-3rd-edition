@@ -18,8 +18,11 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: 'nstephenh/bscopy'
+          path: 'tests/BSCopy'
       - name: Summarize changes
-        run: python3 reporting_scripts/diff_test.py
-        working-directory: ${{ github.workspace }}/..
+        run: |
+          MERGE_BASE=$(git merge-base ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }})
+          python3 reporting_scripts/diff_test.py $MERGE_BASE
+        working-directory: 'tests/BSCopy'
         env:
           DEFAULT_DATA_DIRECTORY: ${{ github.workspace }}/..
