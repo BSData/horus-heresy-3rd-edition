@@ -27,9 +27,14 @@ jobs:
           python3 BSCopy/reporting_scripts/diff_test.py -merge_base $MERGE_BASE
           EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
           echo $GITHUB_OUTPUT
+          echo "Result of Cat"
+          cat diff_result.txt
+          echo "end result of Cat"
+          echo '$(<diff_result.txt)'
+          echo "end result of echo attempt"
           {
             echo "SUMMARY<<${EOF}"
-            cat diff_result.txt
+            echo '$(<diff_result.txt)'
             echo "${EOF}"
           } >> $GITHUB_OUTPUT
         working-directory: 'tests'
