@@ -29,7 +29,7 @@ jobs:
           {
             echo 'SUMMARY<<$EOF'
             cat diff_result.txt
-            echo $EOF
+            echo '$EOF'
           } >> $GITHUB_OUTPUT
         working-directory: 'tests'
         env:
