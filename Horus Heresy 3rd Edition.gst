@@ -3993,7 +3993,7 @@
             </categoryLink>
             <categoryLink name="Prime Support" hidden="false" id="893a-2e46-a427-f245" targetId="1c79-ecdf-9a64-84c9">
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3f5c-7712-a9e1-c264"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3f5c-7712-a9e1-c264" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
             <categoryLink name="Transport" hidden="false" id="3f52-b90b-2826-2017" targetId="d162-4711-5d60-0a48">
@@ -4516,7 +4516,7 @@
             </categoryLink>
             <categoryLink name="Prime Support" hidden="false" id="0fd0-2ad6-5139-14a1" targetId="1c79-ecdf-9a64-84c9">
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5797-9b1f-0de2-4609"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5797-9b1f-0de2-4609" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
             <categoryLink name="Transport" hidden="false" id="7dea-b281-fcd7-9b58" targetId="d162-4711-5d60-0a48">
@@ -4754,7 +4754,7 @@
             </categoryLink>
             <categoryLink name="Prime Support" hidden="false" id="e37f-fb4f-6759-2e29" targetId="1c79-ecdf-9a64-84c9">
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="be25-bf74-4097-4ae9"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="be25-bf74-4097-4ae9" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
             <categoryLink name="Transport" hidden="false" id="826b-c9d4-4541-58d2" targetId="d162-4711-5d60-0a48">
@@ -5091,7 +5091,7 @@
             </categoryLink>
             <categoryLink name="Prime Support" hidden="false" id="5986-5eb6-3263-706c" targetId="1c79-ecdf-9a64-84c9">
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f110-8da8-1340-6589"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f110-8da8-1340-6589" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
             <categoryLink name="Transport" hidden="false" id="736d-c779-5051-f4d2" targetId="d162-4711-5d60-0a48">
@@ -14163,7 +14163,7 @@
         </categoryLink>
         <categoryLink name="Prime Support" hidden="false" id="49b4-b894-e6d8-af42" targetId="1c79-ecdf-9a64-84c9">
           <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1783-b3f0-7d7a-d749"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1783-b3f0-7d7a-d749" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Transport" hidden="false" id="e143-b007-3b76-ca7c" targetId="d162-4711-5d60-0a48">
