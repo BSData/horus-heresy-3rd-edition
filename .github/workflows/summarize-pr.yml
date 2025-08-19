@@ -1,0 +1,37 @@
+name: Summarize PR
+on: pull_request
+jobs:
+  Summarize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out game system
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setting up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install GitPython
+        run: pip install GitPython
+      - name: Checking out BSCopy
+        uses: actions/checkout@v4
+        with:
+          repository: 'nstephenh/bscopy'
+          path: 'tests/BSCopy'
+      - name: Summarize changes
+        id: summarize
+        run: |
+          MERGE_BASE=$(git merge-base ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }})
+          echo $MERGE_BASE
+          python3 BSCopy/reporting_scripts/diff_test.py -merge_base $MERGE_BASE
+        working-directory: 'tests'
+        env:
+          DEFAULT_DATA_DIRECTORY: ${{ github.workspace }}/..
+      - name: PR comment with file
+        uses: thollander/actions-comment-pull-request@v3
+        with:
+          file-path: tests/diff_result.txt
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          comment-tag: diff_results
+
