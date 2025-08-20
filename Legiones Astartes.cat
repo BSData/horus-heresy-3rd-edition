@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="35" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="36" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -10267,7 +10267,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Havoc launcher" hidden="false" id="ee18-c108-0a84-3500" type="selectionEntry" targetId="0295-e35d-2ed6-f28a" sortIndex="3">
+        <entryLink import="true" name="Havoc launcher" hidden="false" id="ee18-c108-0a84-3500" type="selectionEntry" targetId="0295-e35d-2ed6-f28a" sortIndex="6">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb33-d174-c763-2d50"/>
           </constraints>
@@ -10294,159 +10294,256 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <infoLink name="Implacable Advance" id="da52-7b30-ceac-362d" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapon Options" id="88e3-e79c-c369-6dc7" hidden="false" sortIndex="2">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Two options from the following list:" id="fb58-9bb6-e1cf-cdf0" hidden="false">
+        <selectionEntryGroup name="1) Weapon Option 1" id="cf7f-2d94-519d-4289" hidden="false" sortIndex="1" collapsible="true" defaultSelectionEntryId="none">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f4a-0836-12df-79fb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37f7-0cb1-6460-61fe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Gravis bolt cannon" hidden="false" id="cd73-cd83-d8f7-2b55" type="selectionEntry" targetId="50d5-02d3-0be6-9143">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Gravis melta cannon" hidden="false" id="0279-0466-919f-fdcb" type="selectionEntry" targetId="5a5a-1d32-2fcd-e5e3">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Gravis autocannon" hidden="false" id="d070-525a-2983-1ddd" type="selectionEntry" targetId="4e51-460b-4f29-8257">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Gravis plasma cannon" hidden="false" id="6d64-bc93-c063-d70a" type="selectionEntry" targetId="e457-5209-91f7-734f">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Conversion beam cannon" hidden="false" id="8dbb-c460-4957-520c" type="selectionEntry" targetId="e650-5178-1a9b-696e">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Twin volkite culverin" hidden="false" id="ac63-f2e0-6031-5b11" type="selectionEntry" targetId="65a5-f5bd-1ecb-0c22">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Kheres assault cannon" hidden="false" id="a918-4148-5646-be84" type="selectionEntry" targetId="11a5-70a9-9b14-10d3">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Twin lascannon" hidden="false" id="687a-5d08-a474-7952" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Gravis chainfist" hidden="false" id="6154-b432-426f-9d17" type="selectionEntry" targetId="dd60-1a48-6cc0-b8a6">
+              <modifiers>
+                <modifier type="append" value="with in-built ranged weapon" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Gravis power fist" hidden="false" id="de70-a94e-42a6-f177" type="selectionEntry" targetId="ea00-ac16-4ae6-87d3">
+              <modifiers>
+                <modifier type="append" value="with in-built ranged weapon" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="decrement" value="1" field="2f4a-0836-12df-79fb">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="6028-bb7c-5d28-431e" shared="true" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="86e9-33a5-033c-6e3f" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="37f7-0cb1-6460-61fe">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="6028-bb7c-5d28-431e" shared="true" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="86e9-33a5-033c-6e3f" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="3) May replace an in-built combi-bolter with one of the following:" id="df40-c5aa-f77d-3091" hidden="false" sortIndex="5" defaultSelectionEntryId="11b4-2870-bf2d-1398" collapsible="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dfbc-e43b-eaed-c60f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="efbd-6ba1-57ba-2dd3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="dfbc-e43b-eaed-c60f"/>
+            <modifier type="increment" value="1" field="efbd-6ba1-57ba-2dd3">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="ea00-ac16-4ae6-87d3" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="dd60-1a48-6cc0-b8a6" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="2" field="selections" scope="parent" childId="6028-bb7c-5d28-431e" shared="true" roundUp="false"/>
+                <repeat value="1" repeats="2" field="selections" scope="parent" childId="86e9-33a5-033c-6e3f" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="dfbc-e43b-eaed-c60f">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="ea00-ac16-4ae6-87d3" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="dd60-1a48-6cc0-b8a6" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <repeat value="1" repeats="2" field="selections" scope="parent" childId="6028-bb7c-5d28-431e" shared="true" roundUp="false"/>
+                <repeat value="1" repeats="2" field="selections" scope="parent" childId="86e9-33a5-033c-6e3f" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="ea00-ac16-4ae6-87d3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="dd60-1a48-6cc0-b8a6" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="6028-bb7c-5d28-431e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="86e9-33a5-033c-6e3f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Plasma blaster" hidden="false" id="0f6b-f81f-bb70-2373" type="selectionEntry" targetId="3787-3dca-b6c9-f9e3">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Combi-bolter" hidden="false" id="11b4-2870-bf2d-1398" type="selectionEntry" targetId="042d-9e60-db9e-c147">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Graviton gun" hidden="false" id="1ffa-0ba5-09a0-7775" type="selectionEntry" targetId="4a06-c55e-a06f-bd0c">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Heavy flamer" hidden="false" id="739b-f556-ed1d-fe79" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Meltagun" hidden="false" id="59e3-8278-015a-9cd7" type="selectionEntry" targetId="b1e1-e164-5877-6734">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="2) Weapon Option 2" id="2eab-b247-9786-3106" hidden="false" sortIndex="2" collapsible="true" defaultSelectionEntryId="none">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1ad-5006-88ba-83e6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f63-aa71-e2e3-aa1d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Gravis bolt cannon" hidden="false" id="9689-9000-131f-1b43" type="selectionEntry" targetId="50d5-02d3-0be6-9143">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Gravis melta cannon" hidden="false" id="b835-2e44-e9ac-6136" type="selectionEntry" targetId="5a5a-1d32-2fcd-e5e3">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Gravis autocannon" hidden="false" id="0f5a-674e-b2ec-eff8" type="selectionEntry" targetId="4e51-460b-4f29-8257">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Gravis plasma cannon" hidden="false" id="8244-64d8-4a0f-d08f" type="selectionEntry" targetId="e457-5209-91f7-734f">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Conversion beam cannon" hidden="false" id="b1b6-6f55-3463-55d2" type="selectionEntry" targetId="e650-5178-1a9b-696e">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Twin volkite culverin" hidden="false" id="3cb1-5ef7-02c9-5560" type="selectionEntry" targetId="65a5-f5bd-1ecb-0c22">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Kheres assault cannon" hidden="false" id="353b-cca7-a884-7bbc" type="selectionEntry" targetId="11a5-70a9-9b14-10d3">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Twin lascannon" hidden="false" id="0c51-186f-b9eb-6caf" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Gravis chainfist" hidden="false" id="8618-d023-877d-65a5" type="selectionEntry" targetId="dd60-1a48-6cc0-b8a6">
+              <modifiers>
+                <modifier type="append" value="with in-built ranged weapon" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Gravis power fist" hidden="false" id="2967-e9dc-d59a-6669" type="selectionEntry" targetId="ea00-ac16-4ae6-87d3">
+              <modifiers>
+                <modifier type="append" value="with in-built ranged weapon" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="decrement" value="1" field="8f63-aa71-e2e3-aa1d">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="6028-bb7c-5d28-431e" shared="true" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="86e9-33a5-033c-6e3f" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="f1ad-5006-88ba-83e6">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="6028-bb7c-5d28-431e" shared="true" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="86e9-33a5-033c-6e3f" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Paired Weapons" id="ac13-2ff6-5dc7-aaaa" hidden="false" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Paired Gravis power fists" hidden="false" id="86e9-33a5-033c-6e3f" type="selectionEntry" targetId="0400-0700-57cd-bbcf">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1c0e-e9b0-f114-1e55"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e18f-2d78-ba10-1562"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c69-ce78-978a-e368"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Gravis power fist and combi-bolter" hidden="false" id="c098-fce2-354c-0a0f" sortIndex="1">
-                  <entryLinks>
-                    <entryLink import="true" name="Gravis power fist" hidden="false" id="9b97-0c94-7740-f94b" type="selectionEntry" targetId="ea00-ac16-4ae6-87d3">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b8f-afa7-92f9-70c4"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6af1-7410-678f-012f"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup name="Replace combi-bolter with:" id="d7eb-ab4a-ab7f-f6a5" hidden="false" defaultSelectionEntryId="cd27-ef14-bc23-593c">
-                      <entryLinks>
-                        <entryLink import="true" name="Heavy flamer" hidden="false" id="e4f7-5de0-ed69-c9e6" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86">
-                          <costs>
-                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink import="true" name="Plasma blaster" hidden="false" id="3551-541e-f7c5-25c0" type="selectionEntry" targetId="3787-3dca-b6c9-f9e3">
-                          <costs>
-                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink import="true" name="Graviton gun" hidden="false" id="d37f-3508-ef35-2d63" type="selectionEntry" targetId="4a06-c55e-a06f-bd0c">
-                          <costs>
-                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink import="true" name="Meltagun" hidden="false" id="6d6c-eb34-96d5-b0ba" type="selectionEntry" targetId="b1e1-e164-5877-6734">
-                          <costs>
-                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink import="true" name="Combi-bolter" hidden="false" id="cd27-ef14-bc23-593c" type="selectionEntry" targetId="042d-9e60-db9e-c147">
-                          <costs>
-                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-                          </costs>
-                        </entryLink>
-                      </entryLinks>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="17e4-8eb5-96a6-559d"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e716-2d1d-24e2-e950"/>
-                      </constraints>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-                    <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
-                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Gravis chain fist and combi-bolter" hidden="false" id="9688-8a02-6033-f0a7" sortIndex="2">
-                  <selectionEntryGroups>
-                    <selectionEntryGroup name="Replace combi-bolter with:" id="b537-0d12-ad83-5fb0" hidden="false" defaultSelectionEntryId="cd27-ef14-bc23-593c">
-                      <entryLinks>
-                        <entryLink import="true" name="Combi-bolter" hidden="false" id="3899-f795-193d-be77" type="selectionEntry" targetId="042d-9e60-db9e-c147"/>
-                        <entryLink import="true" name="Graviton gun" hidden="false" id="ca6c-5b05-9ad0-066d" type="selectionEntry" targetId="4a06-c55e-a06f-bd0c">
-                          <costs>
-                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink import="true" name="Heavy flamer" hidden="false" id="2613-fdf5-144e-55ec" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86">
-                          <costs>
-                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink import="true" name="Meltagun" hidden="false" id="25c5-562d-eb30-59ca" type="selectionEntry" targetId="b1e1-e164-5877-6734">
-                          <costs>
-                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink import="true" name="Plasma blaster" hidden="false" id="3977-2ec4-bf05-cef2" type="selectionEntry" targetId="3787-3dca-b6c9-f9e3">
-                          <costs>
-                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                          </costs>
-                        </entryLink>
-                      </entryLinks>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6156-f402-292c-b6b1"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f570-9aad-44a3-cd96"/>
-                      </constraints>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
-                  <entryLinks>
-                    <entryLink import="true" name="Gravis chainfist" hidden="false" id="ad5f-778d-f4e1-1414" type="selectionEntry" targetId="dd60-1a48-6cc0-b8a6">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c220-d6a0-6ef3-135b"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0cf-c0f0-657e-35e2"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-                    <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
-                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink import="true" name="Gravis bolt cannon" hidden="false" id="83b0-1291-0535-07db" type="selectionEntry" targetId="50d5-02d3-0be6-9143" sortIndex="3">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Gravis melta cannon" hidden="false" id="c4fb-f885-0036-62e0" type="selectionEntry" targetId="5a5a-1d32-2fcd-e5e3" sortIndex="4">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Gravis autocannon" hidden="false" id="1e29-6283-e5e5-c18a" type="selectionEntry" targetId="4e51-460b-4f29-8257" sortIndex="5">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Gravis plasma cannon" hidden="false" id="889b-ac2d-36b5-6227" type="selectionEntry" targetId="e457-5209-91f7-734f" sortIndex="6">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Conversion beam cannon" hidden="false" id="6dbb-a8ac-0b0d-fa1a" type="selectionEntry" targetId="e650-5178-1a9b-696e" sortIndex="7">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Twin volkite culverin" hidden="false" id="aff5-46b4-2d41-1315" type="selectionEntry" targetId="65a5-f5bd-1ecb-0c22" sortIndex="8">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Kheres assault cannon" hidden="false" id="40e4-e6b9-91e6-e303" type="selectionEntry" targetId="11a5-70a9-9b14-10d3" sortIndex="9">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Twin lascannon" hidden="false" id="cdbb-e093-6628-f633" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a" sortIndex="10">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+            </entryLink>
+            <entryLink import="true" name="Paired Gravis chainfists" hidden="false" id="6028-bb7c-5d28-431e" type="selectionEntry" targetId="1a8a-b668-65a2-7d55">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40b2-e79f-2606-e63d"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f63a-a0ae-f524-ee45" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="f63a-a0ae-f524-ee45">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="cf7f-2d94-519d-4289" shared="true" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="2eab-b247-9786-3106" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
