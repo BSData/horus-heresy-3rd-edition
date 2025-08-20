@@ -18615,8 +18615,8 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
     <publication name="Horus Heresy - Liber Auxilia 3rd Edition" id="adda-966f-f129-ed26" hidden="false" shortName="LX 3.0" publisher="Horus Heresy - Liber Auxilia 3rd Edition" publicationDate="July 26, 2025"/>
     <publication name="Horus Heresy - Liber Questoris 3rd Edition" id="5a4b-8b0e-caa6-c7ed" hidden="false" shortName="LQ 3.0" publisher="Horus Heresy - Liber Questoris 3rd Edition" publicationDate="July 26, 2025"/>
     <publication name="Journal Tactica - The Isstvan V Dropsite Massacre (Part One)" id="10e2-87c7-4862-2cc4" hidden="false" shortName="JT - Isstvan V pt.1" publisher="Journal Tactica - The Isstvan V Dropsite Massacre (Part One)" publicationDate="July 26, 2025"/>
-    <publication name="Legacies of the Age of Darkness - 3rd Edition" id="5469-14da-d0a1-6092" hidden="false" shortName="LAoD 3.0" publisher="Legacies of the Age of Darkness 3rd Edition"/>
-    <publication name="Horus Heresy - Talons of the Emperor 3rd Edition" id="09c6-1c1d-03a7-9556" hidden="false" shortName="TE 3.0" publisher="Horus Heresy - Talons of the Emperor 3rd Edition" publicationDate="July 25, 2025"/>
+    <publication name="Legacies of the Age of Darkness" id="5469-14da-d0a1-6092" hidden="false" shortName="LAoD 3.0" publisher="Warhammer Community" publisherUrl="https://www.warhammer-community.com/en-gb/downloads/warhammer-the-horus-heresy/" publicationDate="August 4, 2025"/>
+    <publication name="Legacies of the Age of Darkness: Talons of the Emperor" id="09c6-1c1d-03a7-9556" hidden="false" shortName="TE: Legacies" publisher="Warhammer Community" publicationDate="July 25, 2025" publisherUrl="https://www.warhammer-community.com/en-gb/downloads/warhammer-the-horus-heresy/"/>
     <publication name="Github" id="e0e7-6fcd-7ee7-448d" hidden="false" publisherUrl="https://github.com/BSData/horus-heresy-3rd-edition" shortName="Github"/>
     <publication name="Horus Heresy - Liber Mechanicum 3rd Edition" id="4dc3-3347-238d-99b5" hidden="false" shortName="LM 3.0" publicationDate="July 26, 2025"/>
   </publications>
