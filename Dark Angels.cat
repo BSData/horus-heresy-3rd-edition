@@ -2811,6 +2811,18 @@ the Order</characteristic>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="408a-2c9b-7774-1454" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="021b-d78e-3f24-202a" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="590a-8993-643a-8016" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="4f78-abfd-627a-b008" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
