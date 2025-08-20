@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="a22d-4dd0-c59d-57d3" name="Weapons" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="14" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="a22d-4dd0-c59d-57d3" name="Weapons" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="15" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="2942-f783-d627-33c5">
       <profiles>
@@ -5935,7 +5935,7 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Graviton crusher" hidden="false" id="78f1-345c-81d8-1cb1">
       <profiles>
-        <profile name="Graviton crusher" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="9d1c-c10a-30ac-eb02" page="">
+        <profile name="Graviton crusher" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="9d1c-c10a-30ac-eb02">
           <characteristics>
             <characteristic name="IM" typeId="6eec-4093-f946-1014">-2</characteristic>
             <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
@@ -6586,7 +6586,7 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Phoenix rapier" hidden="false" id="3882-1da8-e0e4-2c84" page="">
+    <selectionEntry type="upgrade" import="true" name="Phoenix rapier" hidden="false" id="3882-1da8-e0e4-2c84">
       <profiles>
         <profile name="Phoenix rapier" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="350c-7ecd-fb8a-33fc" publicationId="e54c-7040-0f35-d85d" page="125">
           <characteristics>
@@ -6786,7 +6786,7 @@
             <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">4</characteristic>
             <characteristic name="AP" typeId="7a23-0248-2b94-5951">5</characteristic>
             <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
-            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Poisoned (2+), Limited (1), Combi </characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Poisoned (2+), Limited (1), Combi</characteristic>
             <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">-</characteristic>
           </characteristics>
         </profile>
@@ -7450,6 +7450,11 @@
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="10" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b2de-94e6-6bde-ed24" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
@@ -7479,6 +7484,11 @@
             <modifier type="set" value="5" field="9893-c379-920b-8982">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="10" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b2de-94e6-6bde-ed24" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
