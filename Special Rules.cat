@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="106b-693b-99f2-00c3" name="Special Rules" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="10" battleScribeVersion="2.03" type="catalogue" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="106b-693b-99f2-00c3" name="Special Rules" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="13" battleScribeVersion="2.03" type="catalogue" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedRules>
     <rule name="Interdiction Cadres" id="a752-1dc3-403e-9336" hidden="false">
       <description>All Models in a Unit selected to fill a Prime Force Organization with this Prime Advantage gain the Concealed Positions and Expendable(1) Special Rules.</description>
@@ -149,7 +149,7 @@ If a Shooting Attack made for a Weapon or Model with this Special Rule inflicts 
     </rule>
     <rule name="Panic (X)" id="82a7-f471-3fda-6ca1" hidden="false" page="305" publicationId="b905-0414-1057-bb34">
       <description>&quot;Weapons and other attacks that have the Panic (X) Special Rule have a chance of inflicting the Routed Status on the Target Unit.&quot;
-If a Shooting Attack made for a Weapon or Model with this Special Rule inflicts one or more Hits on a Target Unit, that Target Unit must make a Leadership Check in the Morale Sub-Phase of the same Player Turn. If this Check is failed then all Models in the Unit gain the Routed Status, if the Check is passed then there is no further effect. The value of X attached to this Special Rule is applied as a negative modifier to the Leadership Characteristics of Models in the Target Unit when making Checks caused by an attack with this Special Rule. If the attack includes multiple Weapons with different variations of this Special Rule the modifiers do not stack - use only the greatest modifier.</description>
+If a Shooting Attack made for a Weapon or Model with this Special Rule inflicts one or more wounds on a Target Unit, regardless of whether any Damage is inflicted, that Target Unit must make a Leadership Check in the Morale Sub-Phase of the same Player Turn. If this Check is failed then all Models in the Unit gain the Routed Status, if the Check is passed then there is no further effect. The value of X attached to this Special Rule is applied as a negative modifier to the Leadership Characteristics of Models in the Target Unit when making Checks caused by an attack with this Special Rule. If the attack includes multiple Weapons with different variations of this Special Rule the modifiers do not stack - use only the greatest modifier.</description>
     </rule>
     <rule name="Poisoned (X)" id="076f-2c91-c58b-71b3" hidden="false" page="306" publicationId="b905-0414-1057-bb34">
       <description>&quot;A Weapon with the Poisoned (X) Special Rule has a chance to cause a wound regardless of the target&apos;s Toughness Characteristic.&quot;
@@ -287,10 +287,6 @@ If the Check is failed there is no further effect, but if the Check is passed th
 - Restore - A number of Statuses equal to the value of X in the Battlesmith (X) Special Rule variant possessed by the Acting Model may be removed from the Target Model.
 
 Activating the Battlesmith (X) Special Rule does not limit the Acting Model or the Target Model when moving or attacking in the same Turn.&quot;</description>
-    </rule>
-    <rule name="Master of Automata" id="3ad7-36d0-16cc-4995" hidden="false" page="37" publicationId="e54c-7040-0f35-d85d">
-      <description>&quot;This Special Rule allows a Praevian to be accompanied by a Unit of Battle-Automata.&quot;
-When a Model with this Special Rule is included in a Detachment, one additional Force Organization Slot is added to that Detachment. This Slot can only be filled with one Castellax Battle Maniple or Castellax Destructor Maniple Unit selected from Liber Mechanicum. When such a Unit is included in this way, its Cybernetica Trait is replaced with &apos;Bonded Automata&apos;, and this Unit can be included even thought it does not have the same Faction Trait as the other Units in that Detachment. In addition, a Model with this Special Rule may join a Friendly Unit that includes Models with the Automata Type. If a Model with this Special Rule joins a Unit with the Automata Type, the Leadership and Cool Characteristics of Models in that Unit are not reduced as a results of this, but may be modified by other rules as normal.</description>
     </rule>
     <rule name="Infiltrate (X)" id="f330-254e-1a98-798a" hidden="false" page="301" publicationId="b905-0414-1057-bb34">
       <description>&quot;Models with the Infiltrate (X) Special Rule can deploy outside of their Deployment Zone.&quot; 
@@ -597,16 +593,4 @@ When the Model with this Special Rule and the Vehicle Type moves through an enem
     <selectionEntry type="upgrade" import="true" name="Biomancy" hidden="false" id="d821-8e11-a0be-8327"/>
     <selectionEntry type="upgrade" import="true" name="Thaumaturgy" hidden="false" id="6822-29f6-efad-7b57"/>
   </sharedSelectionEntries>
-  <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Psychic Disciplines" id="92bc-8632-a062-ee7d" hidden="false">
-      <entryLinks>
-        <entryLink import="true" name="Biomancy" hidden="false" id="5767-e06e-5a34-e4fb" type="selectionEntry" targetId="d821-8e11-a0be-8327" sortIndex="1"/>
-        <entryLink import="true" name="Pyromancy" hidden="false" id="c540-f45c-5816-a5b7" type="selectionEntry" targetId="27b2-de8f-1d2c-bd83" sortIndex="2"/>
-        <entryLink import="true" name="Telekinesis" hidden="false" id="4d00-e8a2-dc32-a3ee" type="selectionEntry" targetId="a81f-1a6b-8a71-4dd6" sortIndex="3"/>
-        <entryLink import="true" name="Divination" hidden="false" id="ef98-e21c-9ed5-b73d" type="selectionEntry" targetId="9934-8bea-0a00-2ec8" sortIndex="4"/>
-        <entryLink import="true" name="Thaumaturgy" hidden="false" id="4baf-fedd-c963-32d5" type="selectionEntry" targetId="6822-29f6-efad-7b57" sortIndex="5"/>
-        <entryLink import="true" name="Telepathy" hidden="false" id="8247-4933-421b-e36b" type="selectionEntry" targetId="e09e-1438-3205-2a57" sortIndex="6"/>
-      </entryLinks>
-    </selectionEntryGroup>
-  </sharedSelectionEntryGroups>
 </catalogue>

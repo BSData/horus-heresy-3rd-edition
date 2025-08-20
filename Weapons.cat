@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="a22d-4dd0-c59d-57d3" name="Weapons" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="12" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="a22d-4dd0-c59d-57d3" name="Weapons" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="14" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="2942-f783-d627-33c5">
       <profiles>
@@ -4346,18 +4346,18 @@
       <profiles>
         <profile name="Twin plasma gun (Maximal)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="5d3e-b379-c25d-65f4">
           <characteristics>
-            <characteristic name="R" typeId="cdb0-8654-6840-1037">18</characteristic>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">24</characteristic>
             <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
             <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">7</characteristic>
             <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
             <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
-            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Breaching (5+), Overload (1)</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Breaching (4+), Overload (1)</characteristic>
             <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Plasma</characteristic>
           </characteristics>
         </profile>
         <profile name="Twin plasma gun (Sustained)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="a4d8-b21f-c748-010c" noindex="false">
           <characteristics>
-            <characteristic name="R" typeId="cdb0-8654-6840-1037">18</characteristic>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">24</characteristic>
             <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
             <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
             <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
@@ -4523,7 +4523,7 @@
             <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
             <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">8</characteristic>
             <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
-            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
             <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Blast (5&quot;), Breaching (4+), Overload (1)</characteristic>
             <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Plasma</characteristic>
           </characteristics>
@@ -7388,7 +7388,7 @@
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
-              <comment>DA+Sgt/Cmd/Spec/Champ Only</comment>
+              <comment>DA+Sgt/Cmd/Champ Only</comment>
             </modifier>
             <modifier type="set" value="5" field="9893-c379-920b-8982">
               <conditions>
@@ -7539,6 +7539,11 @@
               </conditionGroups>
               <comment>UM+Sgt/Cmd/Spec/Champ Only</comment>
             </modifier>
+            <modifier type="set" value="5" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
@@ -7601,6 +7606,11 @@
               </conditionGroups>
               <comment>NL+Sgt/Cmd/Champ Only</comment>
             </modifier>
+            <modifier type="set" value="5" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Headsman&apos;s axe" hidden="true" id="eccd-12f4-eeec-91ae" type="selectionEntry" targetId="b03c-0b65-5e0c-156a" sortIndex="15">
@@ -7616,6 +7626,11 @@
                 </conditionGroup>
               </conditionGroups>
               <comment>NL+Cmd Only</comment>
+            </modifier>
+            <modifier type="set" value="10" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <costs>
@@ -7645,6 +7660,11 @@
               </conditionGroups>
               <comment>DG+Sgt/Cmd/Champ/Spec Only</comment>
             </modifier>
+            <modifier type="set" value="10" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
@@ -7671,6 +7691,11 @@
               </conditionGroups>
               <comment>TS+Cmd/Champ Only</comment>
             </modifier>
+            <modifier type="set" value="5" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
@@ -7687,6 +7712,11 @@
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="5" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Carsoran power tabar" hidden="true" id="3e4d-9e2c-4f48-0edc" type="selectionEntry" targetId="8fde-41bb-9695-74b1" sortIndex="19">
@@ -7698,6 +7728,11 @@
               <comment>SH</comment>
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="10" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7726,6 +7761,11 @@
                 </conditionGroup>
               </conditionGroups>
               <comment>AL+Sgt/Cmd/ChampOnly</comment>
+            </modifier>
+            <modifier type="set" value="0" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </entryLink>

@@ -138,5 +138,27 @@ If instead that slot is "may not be used to take" (ex reaping host from death gu
 on the appropriate unit
 ---
 
+## 4.6 Add a slot that gains a benefit advantage.
+For example, "The Iron-clad" in LA or "Clade Operative" assassins.
+* Create a new category for this slot. Ideal naming convention "Slot name - Upgraded by Prime Benefit"
+* Add this new category to every relevant detachment (any detachment with primes). :robot: TODO: Check with tests
+* Create a new root entry link linking to that unit, with your new category as the primary (and only) category
+* * Or, use an "add primary category, remove category" modifier. 
+* * Not listing the original category is useful because this unit should not be able to select a prime.
+* Set modifiers on the unit to apply the upgrades.
+* Set the prime option to hidden on the unit if the ancestor is this type of slot.
+
+
+Whenever you do this, you will need to update the tests. Search in validate3.py for test_root_link_categories 
+and add your new category to the list of expected primaries. Case matters.
+```python
+        expected_primaries += ['Army Configuration', 'Rewards of Treachery', "Master of Automata", 
+                               "etc", "Your new one"
+                               ]
+```
+
+
+
+
 [BSData.net]: https://www.bsdata.net/
 [bug report]: https://github.com/BSData/TemplateDataRepo/issues/new/choose

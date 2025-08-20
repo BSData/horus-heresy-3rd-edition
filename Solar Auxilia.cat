@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7851-69ac-f701-034e" name="Solar Auxilia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="14" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7851-69ac-f701-034e" name="Solar Auxilia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="17" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Legatine Command Section" hidden="false" id="8641-1dd0-7e76-de7d">
       <categoryLinks>
@@ -14,7 +14,7 @@
           <profiles>
             <profile name="Legate Marshall" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="91af-c018-9c49-b5ca">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -87,6 +87,7 @@
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="9871-cb62-5283-2216" id="e21e-5dbf-4dfc-2845" primary="false" name="Command Model Sub-type"/>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="0658-e0ba-4765-89cc" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Lifeward" hidden="false" id="a77a-561c-ad71-d586" sortIndex="2">
@@ -97,7 +98,7 @@
           <profiles>
             <profile name="Lifeward" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="d81d-96a6-c5c7-d471">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -242,6 +243,9 @@
               </selectionEntryGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="e279-5db7-4e41-806b" primary="false" name="Infantry Model Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -301,7 +305,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tactical Command Section" hidden="false" id="d20e-4cb8-54be-015d">
       <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="8142-70c7-1369-bf52" primary="false" name="Infantry Model Type"/>
+        <categoryLink name="Officer of the Line (2)" hidden="false" id="c206-68d6-0d78-e332" targetId="901a-6b71-7a29-4597" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Auxilia Captain" hidden="false" id="9423-3848-d1ac-09f9" sortIndex="1">
@@ -312,7 +316,7 @@
           <profiles>
             <profile name="Auxilia Captain" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="e457-1269-aa39-69c4">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -378,7 +382,7 @@
           </infoLinks>
           <categoryLinks>
             <categoryLink targetId="9871-cb62-5283-2216" id="8ecb-cfc4-b577-aa44" primary="false" name="Command Model Sub-type"/>
-            <categoryLink targetId="901a-6b71-7a29-4597" id="c206-68d6-0d78-e332" primary="false" name="Officer of the Line (2)"/>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="8f16-5413-4273-9116" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Companion" hidden="false" id="db89-66b5-a0dd-5e0b" sortIndex="2">
@@ -389,7 +393,7 @@
           <profiles>
             <profile name="Companion" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="59f5-e40b-aa43-6790">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -529,6 +533,9 @@
               </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="fd08-01ba-42a8-8d79" primary="false" name="Infantry Model Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -590,7 +597,7 @@
           <profiles>
             <profile name="Troop Master" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="03c6-c26a-d824-60ed">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -695,6 +702,7 @@
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="0607-50b5-29dd-a246" primary="false" name="Sergeant Model Sub-Type"/>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="36ef-8eb7-43b4-aeb5" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Veteran" hidden="false" id="17ff-ed9b-2351-cddb" sortIndex="2">
@@ -705,7 +713,7 @@
           <profiles>
             <profile name="Veteran" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="e08f-62bb-eb8a-5577">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">3</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -839,6 +847,9 @@
               </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="15f5-579e-4b2a-834b" primary="false" name="Infantry Model Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -896,7 +907,7 @@
           <profiles>
             <profile name="First Prime" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="7c37-2e51-cf89-e5f8">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Sergeant)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Sergeant)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -1007,6 +1018,7 @@
           <categoryLinks>
             <categoryLink targetId="5a95-e564-96b2-8dc9" id="07d1-4178-4739-75e2" primary="false" name="Champion Model Sub-Type"/>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="f04e-64a5-00ae-e384" primary="false" name="Sergeant Model Sub-Type"/>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="5130-b78e-41b4-bcae" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Veletarii" hidden="false" id="e317-c9e2-a0ef-2940" sortIndex="2">
@@ -1017,7 +1029,7 @@
           <profiles>
             <profile name="Veletarii" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="4d87-3bc1-fd54-d269">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -1094,6 +1106,9 @@
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="034b-0a03-4966-8320" primary="false" name="Infantry Model Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -1159,7 +1174,7 @@
           <profiles>
             <profile name="Hermes Lead" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="aed7-86c8-f53f-16b3">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Calvary (Sergeant, Light)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Cavalry (Sergeant, Light)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">10</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -1214,6 +1229,8 @@
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="0e7d-44cb-cf4f-a1c8" primary="false" name="Sergeant Model Sub-Type"/>
+            <categoryLink targetId="f4ba-00e5-3d2e-eaac" id="bda3-1a39-4290-8333" primary="false" name="Light Model Sub-Type"/>
+            <categoryLink name="Cavalry Model Type" hidden="false" id="926f-a71e-4758-b896" targetId="a073-2d4a-5bed-123e" primary="false"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Hermes Pathfinder" hidden="false" id="4896-b45e-2ba3-8dc5" sortIndex="1">
@@ -1224,7 +1241,7 @@
           <profiles>
             <profile name="Hermes Pathfinder" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="01f5-6d5e-2718-5f6b">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Calvary (Light)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Cavalry (Light)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">10</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">3</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -1269,6 +1286,10 @@
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="f4ba-00e5-3d2e-eaac" id="81bf-4e4a-494c-8bf0" primary="false" name="Light Model Sub-Type"/>
+            <categoryLink name="Cavalry Model Type" hidden="false" id="4c20-b7e0-a1e6-30db" targetId="a073-2d4a-5bed-123e" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -1354,7 +1375,7 @@
           <profiles>
             <profile name="Ordnance Master" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="90ed-b8f0-7758-57ff">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -1459,6 +1480,7 @@
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="449d-ce05-9b40-c8b2" primary="false" name="Sergeant Model Sub-Type"/>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="486c-c89b-4044-91bc" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Veteran" hidden="false" id="18b2-4858-5c21-bd0c" sortIndex="1">
@@ -1469,7 +1491,7 @@
           <profiles>
             <profile name="Veteran" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="ad8c-cb25-6d4b-5c15">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">3</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -1603,6 +1625,9 @@
               </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="a31f-d8e7-4a98-8244" primary="false" name="Infantry Model Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -1721,6 +1746,9 @@
               </rules>
             </selectionEntry>
           </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="f6c6-afd8-4a40-a458" primary="false" name="Vehicle Model Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1873,7 +1901,7 @@
           <profiles>
             <profile name="Veletarii Prime" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="11d4-5d9e-6758-b0ee">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Sergeant)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Sergeant)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -1970,6 +1998,8 @@
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="b6cd-f0fa-a10c-e5ae" primary="false" name="Sergeant Model Sub-Type"/>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="fbf8-0c73-4032-b045" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="5a95-e564-96b2-8dc9" id="6837-5d87-46a4-a403" primary="false" name="Champion Model Sub-Type"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Veletarii" hidden="false" id="0c47-2db4-b26c-3058" sortIndex="2">
@@ -1980,7 +2010,7 @@
           <profiles>
             <profile name="Veletarii" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="6954-6685-bdb7-44d9">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -2041,6 +2071,9 @@
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="1d5f-b362-48ca-bda1" primary="false" name="Infantry Model Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -2100,7 +2133,7 @@
           <profiles>
             <profile name="Veletarii Prime" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="9a7e-1ae7-904d-561a">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Sergeant)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Sergeant)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -2189,6 +2222,8 @@
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="f0b6-bb43-41e9-42cc" primary="false" name="Sergeant Model Sub-Type"/>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="f660-1465-4327-bf63" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="5a95-e564-96b2-8dc9" id="a84c-1ee2-48e5-bffa" primary="false" name="Champion Model Sub-Type"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Veletarii" hidden="false" id="4fa8-c9aa-dc5c-b189" sortIndex="2">
@@ -2199,7 +2234,7 @@
           <profiles>
             <profile name="Veletarii" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="37c8-d571-1d68-ddd4">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -2254,6 +2289,9 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="8434-2f5d-4a57-b267" primary="false" name="Infantry Model Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -2316,7 +2354,7 @@
           <profiles>
             <profile name="Charonite ogryn" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="8739-f535-a73c-eddc">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Skirmish)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Skirmish)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">2</characteristic>
@@ -2346,6 +2384,10 @@
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="bd1b-9070-fef2-e9fd"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="ecb9-e5fd-728c-909d"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="cdfa-f95f-4a7e-bfad" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="d2d6-5a84-672b-2833" id="b070-1b39-466e-bd1f" primary="false" name="Skirmish Model Sub-Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -2425,7 +2467,7 @@
           <profiles>
             <profile name="Auxilia Sergeant" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="209c-1285-0855-e3a9">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">3</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">3</characteristic>
@@ -2519,6 +2561,7 @@
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="59f6-829b-6d73-f413" primary="false" name="Sergeant Model Sub-Type"/>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="8c2a-1b66-4a5d-b350" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Auxiliary" hidden="false" id="0f7c-bc28-b2b6-0657" sortIndex="2">
@@ -2529,7 +2572,7 @@
           <profiles>
             <profile name="Auxilia" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="824b-e1c4-fe0b-c93e">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">3</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">3</characteristic>
@@ -2592,6 +2635,9 @@
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="4362-3b0c-440c-bda2" primary="false" name="Infantry Model Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -2678,6 +2724,9 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4753-6509-fe63-cbb4"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c2d-f3fc-a47a-89bd"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="8613-7f71-460a-91c6" primary="false" name="Vehicle Model Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -2785,6 +2834,9 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="574b-aad4-eaa7-3672"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98b0-cbf3-5231-f93f"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="864a-461f-41be-a95d" primary="false" name="Vehicle Model Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -2863,7 +2915,7 @@
               <profiles>
                 <profile name="Rapier Gunner" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="ca9c-fe35-f084-37ed">
                   <characteristics>
-                    <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
+                    <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
                     <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                     <characteristic name="WS" typeId="253c-d694-4695-c89e">3</characteristic>
                     <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">3</characteristic>
@@ -2907,13 +2959,14 @@
               </constraints>
               <categoryLinks>
                 <categoryLink targetId="8045-89a4-76d4-fcef" id="3b18-4779-fd05-0785" primary="false" name="Sergeant Model Sub-Type"/>
+                <categoryLink targetId="594d-fa82-13cb-a345" id="c382-111e-4e0b-98b9" primary="false" name="Infantry Model Type"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Rapier Carrier" hidden="false" id="3ed3-0194-5d37-9fd5" sortIndex="2">
               <profiles>
                 <profile name="Rapier Carrier" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="16a8-1150-14f6-48f6">
                   <characteristics>
-                    <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                    <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
                     <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                     <characteristic name="WS" typeId="253c-d694-4695-c89e">1</characteristic>
                     <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">3</characteristic>
@@ -3029,6 +3082,9 @@
                   </selectionEntries>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink targetId="594d-fa82-13cb-a345" id="9510-90be-477f-8ae4" primary="false" name="Infantry Model Type"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <costs>
@@ -3086,7 +3142,7 @@
           <profiles>
             <profile name="Hermes Veletaris Sentinel" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="87c8-77ba-852e-fd7a">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Calvary</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Cavalry</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">8</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -3125,6 +3181,9 @@
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink name="Cavalry Model Type" hidden="false" id="52e2-4607-6ec0-6a2d" targetId="a073-2d4a-5bed-123e" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3199,7 +3258,7 @@
           <profiles>
             <profile name="Aethon Heavy Sentinel" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="d847-29d1-035d-463c">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Walker (Skirmish)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Walker (Skirmish)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">3</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">3</characteristic>
@@ -3347,6 +3406,10 @@
           <entryLinks>
             <entryLink import="true" name="Prime Unit" hidden="false" id="396b-a702-2c49-ef90" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="3"/>
           </entryLinks>
+          <categoryLinks>
+            <categoryLink targetId="38d4-d720-8009-acd3" id="c559-ce7a-4740-a0a7" primary="false" name="Walker Model Type"/>
+            <categoryLink targetId="d2d6-5a84-672b-2833" id="3740-dca9-49cf-baf2" primary="false" name="Skirmish Model Sub-Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -3463,6 +3526,10 @@
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="937a-cf9d-4c29-8823" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="cb40-d3a1-469b-be43" primary="false" name="Transport Model Sub-Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3539,6 +3606,10 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="25dc-146f-4ce2-9f88" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="2619-379d-4de7-8a02" primary="false" name="Transport Model Sub-Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -3659,7 +3730,7 @@
           <profiles>
             <profile name="Hermes Light Sentinel" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="d3f2-8912-1a6b-78ee">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Calvary (Light)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Cavalry (Light)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">10</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">3</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">3</characteristic>
@@ -3698,6 +3769,10 @@
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="f4ba-00e5-3d2e-eaac" id="8ed7-01c2-4a3c-8e59" primary="false" name="Light Model Sub-Type"/>
+            <categoryLink name="Cavalry Model Type" hidden="false" id="4a16-319e-469a-6647" targetId="a073-2d4a-5bed-123e" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3788,6 +3863,10 @@
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="d31b-862f-43ff-817b" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="42a3-02e9-e0e4-8292" id="db68-664c-4767-9eb3" primary="false" name="Flyer Model Sub-Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3861,6 +3940,10 @@
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="4453-a624-4319-8e73" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="42a3-02e9-e0e4-8292" id="9337-cb8a-42b9-818c" primary="false" name="Flyer Model Sub-Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4457,6 +4540,9 @@ Additionally, when at least one Model in a Unit entirely composed of Models with
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="8665-ec76-4302-b5c7" primary="false" name="Vehicle Model Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -4577,6 +4663,9 @@ Additionally, when at least one Model in a Unit entirely composed of Models with
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="b749-ab6a-431d-a683" primary="false" name="Vehicle Model Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4697,6 +4786,9 @@ Additionally, when at least one Model in a Unit entirely composed of Models with
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="3752-0a3d-4948-9f24" primary="false" name="Vehicle Model Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4842,6 +4934,9 @@ Additionally, when at least one Model in a Unit entirely composed of Models with
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="da15-9299-4aa0-ab2c" primary="false" name="Vehicle Model Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <rules>
@@ -5011,6 +5106,9 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="66ce-6ed6-43db-a516" primary="false" name="Vehicle Model Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -5156,6 +5254,10 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="5aa5-8307-45c1-b0c5" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="4d42-b711-7946-8e15" id="74fc-8f6b-436e-ac9d" primary="false" name="Super-heavy Model Sub-Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -5953,6 +6055,8 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
     <catalogueLink type="catalogue" name="Assets" id="b5e6-724c-cef8-8313" targetId="5334-5605-242c-d75e"/>
     <catalogueLink type="catalogue" name="Wargear" id="acc0-5e1b-7a02-ecb9" targetId="fcc7-4319-bb04-2c25"/>
     <catalogueLink type="catalogue" name="Weapons" id="9a74-63aa-a3e1-2932" targetId="a22d-4dd0-c59d-57d3"/>
+    <catalogueLink type="catalogue" name="Mechanicum" id="201c-843f-13db-028e" targetId="2f57-6e9d-8a7b-5c2e"/>
+    <catalogueLink type="catalogue" name="Agents of the Divisio Assassinorum" id="3942-5e6d-3cd3-513e" targetId="258b-97fb-2366-7344" importRootEntries="true"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Auxilia Pistols" id="22a3-5b09-13b0-2624" hidden="false">
@@ -6705,5 +6809,63 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
         <categoryLink targetId="abfa-86ab-1726-077a" id="1691-badf-2b47-e042" primary="true" name="Army Configuration"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Castellax Destructor Maniple" hidden="false" id="a092-1535-541e-22e8" type="selectionEntry" targetId="112f-1168-d07c-7f8f">
+      <categoryLinks>
+        <categoryLink targetId="3235-bd79-e9b1-60fa" id="96a9-a9b8-a06a-b6ea" primary="true" name="Heavy Assault"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Iron Tercio" id="1091-dc9e-7845-6b2b" hidden="false" type="profile" targetId="0c69-af93-68ac-7aa6"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set-primary" value="d49e-048b-a8e2-ba52" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Tech-Priest" hidden="false" id="2961-1167-7a69-c00b" type="selectionEntry" targetId="bc86-4606-7fce-1866">
+      <categoryLinks>
+        <categoryLink targetId="88e6-d373-4152-0dd8" id="5cbe-001a-b4cd-92bd" primary="true" name="Troops"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Iron Tercio" id="7cd1-4fad-3bbb-91da" hidden="false" type="profile" targetId="0c69-af93-68ac-7aa6"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set-primary" value="3fda-dd8a-a6d5-b782" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Castellax Battle Maniple" hidden="false" id="a54f-f940-8383-207d" type="selectionEntry" targetId="e8d6-2ba5-d10d-d617">
+      <categoryLinks>
+        <categoryLink targetId="345f-9ba6-9b02-ed5c" id="5e54-5bf2-00fd-20ad" primary="true" name="Support"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Iron Tercio" id="f25b-0cc8-7e9c-071c" hidden="false" type="profile" targetId="0c69-af93-68ac-7aa6"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set-primary" value="0fd5-6d2d-e2cc-d22a" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Thallax Cohort" hidden="false" id="9417-4cb5-a16c-86b9" type="selectionEntry" targetId="a4ad-1b49-0303-59b3">
+      <categoryLinks>
+        <categoryLink targetId="345f-9ba6-9b02-ed5c" id="3acc-69fc-ac86-e802" primary="true" name="Support"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Iron Tercio" id="bb63-99e3-8620-9719" hidden="false" type="profile" targetId="0c69-af93-68ac-7aa6"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set-primary" value="0fd5-6d2d-e2cc-d22a" field="category"/>
+      </modifiers>
+    </entryLink>
   </entryLinks>
+  <sharedProfiles>
+    <profile name="Iron Tercio" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="0c69-af93-68ac-7aa6">
+      <characteristics>
+        <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedProfiles>
+    <profile name="Iron Tercio" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="0c69-af93-68ac-7aa6">
+      <characteristics>
+        <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>
