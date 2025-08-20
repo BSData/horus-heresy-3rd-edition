@@ -1,13 +1,17 @@
 name: Heresy Validations
 on:
   push:
-  pull_request:
+    branches:
+      - main
+  pull_request_target:
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - name: Checking out game system to horus-heresy
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
       - name: Checking out BSCopy
         uses: actions/checkout@v4
         with:
