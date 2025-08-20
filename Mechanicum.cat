@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="12" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="13" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Anacharis Scoria" hidden="false" id="10f5-dae8-f081-d82f" sortIndex="29">
       <infoLinks>
@@ -377,6 +377,35 @@
           <comment>2</comment>
         </infoLink>
         <infoLink name="Master of Machines" id="f5a3-bdec-b060-00b0" hidden="false" type="rule" targetId="9470-0220-efcc-1c3d"/>
+        <infoLink name="Bulky (X)" id="3008-db4a-c128-e93c" hidden="true" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+          <modifiers>
+            <modifier type="set" value="Bulky (3)" field="name"/>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>3</comment>
+        </infoLink>
+        <infoLink name="Battle Meditation" id="7fe8-1056-6260-17df" hidden="true" type="rule" targetId="853e-e83f-4e01-5609">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Implacable Advance" id="7dce-6dcc-4de9-9c5a" hidden="true" type="rule" targetId="3898-aafb-35e0-141b">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Archmagos" hidden="false" id="b996-334f-9f55-f896" sortIndex="1">
@@ -399,6 +428,23 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <constraints>
@@ -409,6 +455,13 @@
             <categoryLink targetId="594d-fa82-13cb-a345" id="282b-621d-494e-99e6" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="9871-cb62-5283-2216" id="a1e0-f707-482a-9216" primary="false" name="Command Model Sub-type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="1e7d-9066-28d2-97a0" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="20af-27a5-9296-e90f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -497,7 +550,16 @@
         </infoLink>
         <infoLink name="Bulky (X)" id="dace-08c7-146a-e19c" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
           <modifiers>
-            <modifier type="set" value="Bulky (7)" field="name"/>
+            <modifier type="set" value="Bulky (7)" field="name">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Bulky (10)" field="name">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <comment>7</comment>
         </infoLink>
@@ -528,6 +590,15 @@
         </infoLink>
         <infoLink name="Implacable Advance" id="8eb6-0fba-13b4-adfe" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
         <infoLink name="Master of Machines" id="4b8a-4dd6-f9c2-603c" hidden="false" type="rule" targetId="9470-0220-efcc-1c3d"/>
+        <infoLink name="Battle Meditation" id="0581-af1e-c333-a643" hidden="true" type="rule" targetId="853e-e83f-4e01-5609">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Archmagos on Abeyant" hidden="false" id="b71a-f6da-e0f6-b570" sortIndex="1">
@@ -550,6 +621,23 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <constraints>
@@ -733,6 +821,35 @@
             <modifier type="set" value="Officer of the Line (2)" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Bulky (X)" id="6547-056d-fea7-f3b2" hidden="true" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+          <modifiers>
+            <modifier type="set" value="Bulky (3)" field="name"/>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>3</comment>
+        </infoLink>
+        <infoLink name="Battle Meditation" id="cdd2-e94f-2902-1388" hidden="true" type="rule" targetId="853e-e83f-4e01-5609">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Implacable Advance" id="1ae1-1cd7-2ebd-8e2a" hidden="true" type="rule" targetId="3898-aafb-35e0-141b">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Magos" hidden="false" id="5778-8418-15ae-f9e9" sortIndex="1">
@@ -755,6 +872,23 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <constraints>
@@ -765,6 +899,13 @@
             <categoryLink targetId="594d-fa82-13cb-a345" id="56d0-43df-406b-a5e2" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="9871-cb62-5283-2216" id="c505-ae75-4612-962b" primary="false" name="Command Model Sub-type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="1e7d-9066-28d2-97a0" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="20af-27a5-9296-e90f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -1442,12 +1583,6 @@
           </modifiers>
           <comment>4</comment>
         </infoLink>
-        <infoLink name="Bulky (X)" id="2f60-540f-055f-2727" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
-          <modifiers>
-            <modifier type="set" value="Bulky (7)" field="name"/>
-          </modifiers>
-          <comment>7</comment>
-        </infoLink>
         <infoLink name="Command Throne" id="5a4b-2276-b1c6-da94" hidden="false" type="rule" targetId="7de3-19ab-bd3b-cf37"/>
         <infoLink name="Comptroller (X)" id="9b32-c192-80b3-931c" hidden="false" type="rule" targetId="4f9a-f2b3-093e-da11">
           <modifiers>
@@ -1481,6 +1616,30 @@
           </modifiers>
           <comment>2</comment>
         </infoLink>
+        <infoLink name="Bulky (X)" id="4408-800a-4e89-d782" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+          <modifiers>
+            <modifier type="set" value="Bulky (7)" field="name">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Bulky (10)" field="name">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>7</comment>
+        </infoLink>
+        <infoLink name="Battle Meditation" id="c2dc-ce07-8cf8-fae7" hidden="true" type="rule" targetId="853e-e83f-4e01-5609">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Magos on Abeyant" hidden="false" id="c181-555b-ac73-6303" sortIndex="1">
@@ -1503,6 +1662,23 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <constraints>
@@ -2530,6 +2706,35 @@
           <comment>2</comment>
         </infoLink>
         <infoLink name="Master of Machines" id="a413-9910-f418-7b9f" hidden="false" type="rule" targetId="9470-0220-efcc-1c3d"/>
+        <infoLink name="Bulky (X)" id="950c-f05c-b96d-11dd" hidden="true" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Bulky (3)" field="name"/>
+          </modifiers>
+          <comment>3</comment>
+        </infoLink>
+        <infoLink name="Battle Meditation" id="031a-bf08-64b1-17d2" hidden="true" type="rule" targetId="853e-e83f-4e01-5609">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Implacable Advance" id="fd1a-1e2d-f64b-daca" hidden="true" type="rule" targetId="3898-aafb-35e0-141b">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Tech-Priest" hidden="false" id="070f-3f50-6fe0-19e6" sortIndex="1">
@@ -2552,6 +2757,28 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Infantry (Champion, Heavy, Sergeant, Specialist)" field="50fc-9241-d4a2-045b">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <constraints>
@@ -2568,6 +2795,18 @@
             <categoryLink targetId="8045-89a4-76d4-fcef" id="0f57-cfe0-46aa-b3e5" primary="false" name="Sergeant Model Sub-Type"/>
             <categoryLink targetId="af7d-af64-6b7d-da9d" id="89a6-d52c-4911-ae62" primary="false" name="Specialist Model Sub-Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="1e7d-9066-28d2-97a0" field="category">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
