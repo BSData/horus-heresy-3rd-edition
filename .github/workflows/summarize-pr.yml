@@ -19,6 +19,7 @@ jobs:
         with:
           repository: 'nstephenh/bscopy'
           path: 'tests/BSCopy'
+          ref: ${{ github.event.pull_request.head.sha }}
       - name: Summarize changes
         id: summarize
         run: |
