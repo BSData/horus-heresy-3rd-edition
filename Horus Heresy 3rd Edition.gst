@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="38" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="39" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -6736,6 +6736,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="aa68-7c65-5d9f-280f"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Cohort Doctrine: Solar Pattern Cohort" hidden="false" id="833b-b51d-5db3-570a" targetId="f2be-abfe-311c-afe2" type="categoryEntry"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -6759,11 +6760,16 @@
             </modifier>
             <modifier type="increment" value="2" field="0cdf-ec44-4886-b292">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f2be-abfe-311c-afe2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f2be-abfe-311c-afe2" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="roster" childId="67d3-556b-b619-28e2" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
               </repeats>
+            </modifier>
+            <modifier type="set" value="0.5" field="3e8e-05ee-be52-12d6">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f2be-abfe-311c-afe2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <comment>SA Only</comment>
@@ -6819,6 +6825,11 @@
                 <repeat value="1" repeats="1" field="selections" scope="roster" childId="390f-d9dc-10d8-56aa" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
               </repeats>
             </modifier>
+            <modifier type="set" value="0.5" field="3e8e-05ee-be52-12d6">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="1d7a-eb2d-5d0f-0fa4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <comment>SA Only</comment>
           <constraints>
@@ -6872,6 +6883,11 @@
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="roster" childId="2a0c-b2b2-0f48-2e90" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
               </repeats>
+            </modifier>
+            <modifier type="set" value="0.5" field="3e8e-05ee-be52-12d6">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="c9ef-b204-e951-6b7e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <comment>SA Only</comment>
@@ -7128,6 +7144,11 @@
                 <repeat value="1" repeats="1" field="selections" scope="roster" childId="847c-d351-32a7-cc2a" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
               </repeats>
             </modifier>
+            <modifier type="set" value="0.5" field="3e8e-05ee-be52-12d6">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="1241-4ccd-80b8-8ff2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <comment>SA Only</comment>
           <constraints>
@@ -7191,6 +7212,11 @@
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="roster" childId="3bba-e8bb-7463-b0b2" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
               </repeats>
+            </modifier>
+            <modifier type="set" value="0.5" field="3e8e-05ee-be52-12d6">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="7f98-e8eb-f86e-180d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <comment>SA Only</comment>
@@ -13643,11 +13669,6 @@
         <modifier type="increment" value="1" field="0ab6-91a0-792e-4068">
           <repeats>
             <repeat value="1" repeats="1" field="selections" scope="force" childId="ff44-f49f-732b-c3a7" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-          </repeats>
-        </modifier>
-        <modifier type="increment" value="1" field="0ab6-91a0-792e-4068">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="force" childId="27e8-88b4-d3c8-d63f" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
