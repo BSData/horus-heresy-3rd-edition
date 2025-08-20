@@ -199,7 +199,7 @@ class GameTests(unittest.TestCase):
             for child in entry_links_node.children:
                 category_links = child.get_child(tag='categoryLinks')
                 primary_cat = category_links.get_child(tag='categoryLink', attrib={"primary": "true"})
-                if file.name == "Questoris Household.cat":
+                if file.name == "Questoris Familia.cat":
                     if primary_cat.target_name == "Lord of War":
                         unit_ids.append(child.target_id)
                 elif primary_cat.target_name in self.battlefield_roles_that_can_be_prime:
