@@ -14993,7 +14993,7 @@ When a Model with this Special Rule is included in a Detachment, one additional 
       </constraints>
       <rules>
         <rule name="Cult Operative" id="9fe3-11a3-64da-a83e" hidden="false">
-          <description>Add one additional Support Force Organisation Slot to the Detachment that includes the Prime Slot with this Prime Advantage. This Force Organisation Slot may only be filled by a Unit selected from the Cults Abominatio Army List. This Prime Advantage may only be selected for a single Force Organisation Slot in an Army’s Primary Detachment.</description>
+          <description>Add one additional Support Force Organisation Slot to the Detachment that includes the Prime Slot with this Prime Advantage. This Force Organisation Slot may only be filled by a Unit selected from the Cults Abominatio Army List. This Prime Advantage may only be selected for a single Force Organisation Slot in an Army’s Primary Detachment.</description>
         </rule>
       </rules>
     </selectionEntry>
