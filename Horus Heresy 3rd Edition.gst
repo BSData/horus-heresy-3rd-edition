@@ -428,6 +428,18 @@
       <comment>Space Wolf only</comment>
     </categoryEntry>
     <categoryEntry name="Castellan" id="d8c8-fea0-afc1-5438" hidden="false"/>
+    <categoryEntry name="Cult Operative" id="4f71-897f-8ae1-303b" hidden="true">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="ff9d-7ed0-c90f-1eca" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9c3-7fe5-8de1-69df"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -698,6 +710,7 @@
             <categoryLink name="Clade Operative" hidden="false" id="2a0d-9fee-9c25-8560" targetId="335a-5a90-3b7c-c034"/>
             <categoryLink name="War-engine - Upgraded by The Iron-clad" hidden="false" id="0ef7-249a-c847-6970" targetId="d00a-e269-2ed3-8fc4"/>
             <categoryLink name="Lord of Automata" hidden="false" id="baa0-d32b-ce6d-4b86" targetId="3e59-3bcf-4bf8-d404"/>
+            <categoryLink name="Cult Operative" hidden="false" id="5ae6-f873-2faf-1da0" targetId="4f71-897f-8ae1-303b" type="categoryEntry"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="5611-db49-9e64-44c6-min" includeChildSelections="true"/>
@@ -14764,6 +14777,15 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Cult Operative" hidden="true" id="0f85-cb87-5656-095e" type="selectionEntry" targetId="ff9d-7ed0-c90f-1eca" sortIndex="7">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Allegiance" id="9fa8-cbae-ef5e-4b7c" hidden="false">
@@ -14966,6 +14988,16 @@ When a Model with this Special Rule is included in a Detachment, one additional 
 
 
 When a Model with this Special Rule is included in a Detachment, one additional Support Force Organization Slot is added to that Detachment. This Slot can only be filled with one Castellax Battle-automata Maniple selected from Liber Mechanicum. When such a Unit is included in this way, its Cybernetica Trait is replaced with &apos;Bonded Automata&apos;, and this Unit can be included even though it does not have the same Faction Trait as the other Units in that Detachment. In addition, a Model with this Special Rule may join a Friendly Unit that includes Models with the Automata Type. If a Model with bthis Special Rule joins a Unit with the Automata Type, the Leadership and Cool Characteristics or Models in that unit are not reduced.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cult Operative" hidden="false" id="ff9d-7ed0-c90f-1eca">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="81a1-4ca1-7677-2d29" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <rules>
+        <rule name="Cult Operative" id="9fe3-11a3-64da-a83e" hidden="false">
+          <description>Add one additional Support Force Organisation Slot to the Detachment that includes the Prime Slot with this Prime Advantage. This Force Organisation Slot may only be filled by a Unit selected from the Cults Abominatio Army List. This Prime Advantage may only be selected for a single Force Organisation Slot in an Army’s Primary Detachment.</description>
         </rule>
       </rules>
     </selectionEntry>
