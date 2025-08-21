@@ -65,6 +65,8 @@ All Astartes units should have the following Traits at the root level of the uni
 The legion specific units should not have the legion trait category set on the shared selection entry, 
 and instead it should be set on the link. This is so alpha legion can import them without this trait. :robot: These are the only traits allowed other than the battlefield roles by the unit tests.
 
+Any Astartes Unit or Model that has a Chainsword by default and can swap that for an entry in the Legion Sergeant Melee List must be given the 'Default Chainsword' category
+
 ### Mechanicum Units
 All Mechanicum units should have the following Traits at the root level of the unit (Add Link -> Profile -> Search for them):
 - \[Allegiance]
