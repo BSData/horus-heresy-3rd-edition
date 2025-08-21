@@ -7282,9 +7282,9 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
         <categoryLink name="Vehicle Model Type" hidden="false" id="3323-f5f4-6897-d733" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Cyclops Demolition Vehicle" hidden="false" id="1825-ab2a-2a6f-08c2">
+    <selectionEntry type="unit" import="true" name="Cyclops Demolition Vehicle" hidden="false" id="1825-ab2a-2a6f-08c2">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Cyclops" hidden="false" id="577c-5011-9791-03ac">
+        <selectionEntry type="model" import="true" name="Cyclops" hidden="false" id="577c-5011-9791-03ac">
           <profiles>
             <profile name="Cyclops" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="9b65-6da6-7087-bcf8">
               <characteristics>
@@ -7364,9 +7364,9 @@ A Model with this Special Rule and the Vehicle Type may have Charges declared fo
         </rule>
       </rules>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Davinite Lodge Priest" hidden="false" id="3f66-368a-d385-a1de">
+    <selectionEntry type="unit" import="true" name="Davinite Lodge Priest" hidden="false" id="3f66-368a-d385-a1de">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Davinite Lodge Priest" hidden="false" id="e530-5541-e8d4-3ab6">
+        <selectionEntry type="model" import="true" name="Davinite Lodge Priest" hidden="false" id="e530-5541-e8d4-3ab6">
           <profiles>
             <profile name="Davinite Lodge Priest" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="97da-bc02-0d6e-9d87">
               <characteristics>
@@ -7629,7 +7629,7 @@ Mounted
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Expeditionary Navigator" hidden="false" id="0ed7-ac1b-5603-f5d0">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Expeditionary Navigator" hidden="false" id="6557-9665-b11f-0896" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Expeditionary Navigator" hidden="false" id="6557-9665-b11f-0896" sortIndex="1">
           <profiles>
             <profile name="Expeditionary Navigator" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="e4c3-6d2c-e386-7e19">
               <characteristics>
@@ -9076,184 +9076,6 @@ Mounted
         <categoryLink name="Vehicle Model Type" hidden="false" id="d560-74bc-0d41-ecb2" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Stormhammer cannon" hidden="false" id="fe84-e787-b53d-d52d">
-      <profiles>
-        <profile name="Stormhammer cannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="c332-fbcb-16c2-5aba">
-          <characteristics>
-            <characteristic name="R" typeId="cdb0-8654-6840-1037">72</characteristic>
-            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
-            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">9</characteristic>
-            <characteristic name="AP" typeId="7a23-0248-2b94-5951">3</characteristic>
-            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">3</characteristic>
-            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Blast (5&quot;), Stun (2)</characteristic>
-            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Auto</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink name="Vehicle Model Type" hidden="false" id="4686-48b9-724d-e77c" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
-      </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Stormhammer Super-Heavy Assault Tank" hidden="false" id="41ef-3fcb-8a1f-ad82">
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Stormhammer" hidden="false" id="b2d1-074a-a215-1203" sortIndex="1">
-          <profiles>
-            <profile name="Stormhammer" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="26a8-cda8-df3b-9199">
-              <characteristics>
-                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Super-heavy)</characteristic>
-                <characteristic name="M" typeId="d624-72fe-0205-4443">10</characteristic>
-                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">3</characteristic>
-                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">14</characteristic>
-                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">13</characteristic>
-                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">12</characteristic>
-                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">16</characteristic>
-                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
-                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa91-1a9b-28d6-f40b"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69dc-8377-89b5-9f10"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="500"/>
-            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-          </costs>
-          <categoryLinks>
-            <categoryLink name="Vehicle Model Type" hidden="false" id="8522-0f36-dcce-25e9" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
-            <categoryLink name="Super-heavy Model Sub-Type" hidden="false" id="3c76-a21a-51bd-c74f" targetId="4d42-b711-7946-8e15" primary="false"/>
-          </categoryLinks>
-        </selectionEntry>
-      </selectionEntries>
-      <infoLinks>
-        <infoLink name="[Allegiance]" id="3fd4-d756-726e-7ba1" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
-        <infoLink name="Smokescreen" id="0d34-3fed-4fdb-1fe3" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="d830-450d-125e-a33c" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="8"/>
-        <entryLink import="true" name="Auxilia Pintle Weapons" hidden="false" id="295f-6421-c0dd-3b3c" type="selectionEntryGroup" targetId="0266-b015-86e4-8953" sortIndex="6">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="547f-c9c6-0243-1059"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Stormhammer cannon" hidden="false" id="9d98-e1cf-0f79-fc9a" type="selectionEntry" targetId="dea2-e2ca-1ffb-a90c" sortIndex="2">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="712c-02c7-dac6-7db2"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38d9-3097-c6ee-9c56"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="Turret Mounted Stormhammer cannon" field="name"/>
-          </modifiers>
-          <entryLinks>
-            <entryLink import="true" name="Multi-laser" hidden="false" id="9528-9b95-e27b-c624" type="selectionEntry" targetId="247d-a71c-d493-790b">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="90df-36fe-820d-298f"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c28-d2ca-48b5-1ed0"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="Co-axial (Stormhammer cannon) Mounted multi-laser" field="name"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-        </entryLink>
-        <entryLink import="true" name="Twin Battlecannon" hidden="false" id="a65f-d08a-fe61-d093" type="selectionEntry" targetId="b28b-44d6-5cc0-75fa" sortIndex="3">
-          <modifiers>
-            <modifier type="set" value="Hull (Front) Mounted Twin Battlecannon" field="name"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce2e-60ab-99fd-3fa8"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81d4-9e7b-9327-93d1"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Options" id="ed34-8aaf-809b-84c3" hidden="false" sortIndex="7">
-          <entryLinks>
-            <entryLink import="true" name="Hunter-killer missile" hidden="false" id="e8d4-fdfd-59d1-a1e9" type="selectionEntry" targetId="b9b7-8297-35b5-74ad">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89b3-2c3b-b12a-0564"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="5" field="9893-c379-920b-8982"/>
-                <modifier type="set" value="Turret Mounted hunter-killer missile" field="name"/>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Searchlight" hidden="false" id="6d21-3cd1-30f6-5c66" type="selectionEntry" targetId="5a85-bf28-f790-7bf0">
-              <modifiers>
-                <modifier type="set" value="5" field="9893-c379-920b-8982"/>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0aef-b674-8487-9adc"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Flare Shield" hidden="false" id="9a21-b04e-f6c6-f352" type="selectionEntry" targetId="988f-36eb-7aa2-9ef4">
-              <modifiers>
-                <modifier type="set" value="20" field="9893-c379-920b-8982"/>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5235-557c-798a-6370"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="May exchange Hull (Front) Mounted multi-laser for:" id="d938-e265-0e9f-fd21" hidden="false" defaultSelectionEntryId="aed7-0580-06a4-6f56" sortIndex="4">
-          <entryLinks>
-            <entryLink import="true" name="Multi-laser" hidden="false" id="d052-15f4-7723-3688" type="selectionEntry" targetId="247d-a71c-d493-790b" sortIndex="1"/>
-            <entryLink import="true" name="Lascannon" hidden="false" id="6a2b-26db-9cb6-20c4" type="selectionEntry" targetId="b6d5-4be2-c37e-2197">
-              <modifiers>
-                <modifier type="set" value="10" field="9893-c379-920b-8982"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6180-147a-f94c-317f"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45fb-b192-6483-8b6f"/>
-          </constraints>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="May exchange it&apos;s 3 Hull (Left) and 3 Hull (Right) multi-lasers for:" id="a2c8-a874-52a2-4d57" hidden="false" defaultSelectionEntryId="250d-a5c4-1b25-998f" sortIndex="5">
-          <entryLinks>
-            <entryLink import="true" name="Multi-laser" hidden="false" id="0ce2-3f39-9def-111c" type="selectionEntry" targetId="247d-a71c-d493-790b" sortIndex="1">
-              <modifiers>
-                <modifier type="set" value="3 Hull (Left) and 3 Hull (Right) multi-lasers" field="name"/>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Heavy bolter" hidden="false" id="16ef-3f97-0b35-44e2" type="selectionEntry" targetId="bc40-b14a-978e-0232" sortIndex="2">
-              <modifiers>
-                <modifier type="set" value="3 Hull (Left) and 3 Hull (Right) heavy bolters" field="name"/>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Heavy flamer" hidden="false" id="e32e-c205-265a-a095" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="3">
-              <modifiers>
-                <modifier type="set" value="3 Hull (Left) and 3 Hull (Right) heavy flamers" field="name"/>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Lascannon" hidden="false" id="ea7a-a228-04c8-66d9" type="selectionEntry" targetId="b6d5-4be2-c37e-2197" sortIndex="4">
-              <modifiers>
-                <modifier type="set" value="3 Hull (Left) and 3 Hull (Right) lascannons" field="name"/>
-                <modifier type="set" value="50" field="9893-c379-920b-8982"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec3c-ea5e-8d4d-4209"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cbfa-7473-9f32-431e"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <profiles>
-        <profile name="Solar Auxilia" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="d884-71f4-bfad-c8c6">
-          <characteristics>
-            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink name="Super-heavy Model Sub-Type" hidden="false" id="2f0a-c307-740d-d5f5" targetId="4d42-b711-7946-8e15" primary="false"/>
-        <categoryLink name="Vehicle Model Type" hidden="false" id="cf89-2f7b-748d-f8d1" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
-      </categoryLinks>
-    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Stormlord Super-heavy Assault Tank" hidden="false" id="f42e-3ca8-5500-7184">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Stormlord " hidden="false" id="a6bd-7409-6f70-101a" sortIndex="1">
@@ -10082,44 +9904,6 @@ Mounted
         <infoLink name="Suppressive (X)" id="8bd6-7e84-8bf1-857e" hidden="false" type="rule" targetId="001f-53f3-4d87-4b43">
           <modifiers>
             <modifier type="set" value="Suppressive (2)" field="name"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Twin Battlecannon" hidden="false" id="25fa-fa92-3e41-575c">
-      <profiles>
-        <profile name="Twin Battlecannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="147a-0491-df29-c241">
-          <characteristics>
-            <characteristic name="R" typeId="cdb0-8654-6840-1037">48</characteristic>
-            <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
-            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">8</characteristic>
-            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
-            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
-            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (AP), Blast (3&quot;), Pinning (1)</characteristic>
-            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Blast (X)" id="158e-20b3-54cd-8308" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
-          <modifiers>
-            <modifier type="set" value="Blast (3&quot;)" field="name">
-              <comment>3</comment>
-            </modifier>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Heavy (X)" id="d724-9138-556d-b2c0" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
-          <modifiers>
-            <modifier type="set" value="Heavy (AP)" field="name">
-              <comment>AP</comment>
-            </modifier>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Pinning (X)" id="f6f7-fc18-1a88-0758" hidden="false" type="rule" targetId="88b6-6493-e4d7-1805">
-          <modifiers>
-            <modifier type="set" value="Pinning (1)" field="name">
-              <comment>1</comment>
-            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -11166,11 +10950,6 @@ Mounted
     <entryLink import="true" name="Stormblade Super-heavy Tank" hidden="false" id="86ff-9ced-6be4-12bd" type="selectionEntry" targetId="5748-1ede-dead-c0e7">
       <categoryLinks>
         <categoryLink name="Lord of War" hidden="false" id="41f8-f882-0be1-2efc" targetId="a46f-a465-0ead-d6b8" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Stormhammer Super-Heavy Assault Tank" hidden="false" id="3fd8-0dd1-0de0-6b3a" type="selectionEntry" targetId="6c9f-9379-6ce7-5a2d">
-      <categoryLinks>
-        <categoryLink name="Lord of War" hidden="false" id="f2da-c4fb-fa79-8ca7" targetId="a46f-a465-0ead-d6b8" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Stormlord Super-heavy Assault Tank" hidden="false" id="dd79-db04-a0d4-dae2" type="selectionEntry" targetId="f42e-3ca8-5500-7184">
