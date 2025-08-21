@@ -2077,7 +2077,15 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="49ab-1bf0-2cd0-23bb" primary="true" name="Infantry Model Type"/>
             <categoryLink targetId="9871-cb62-5283-2216" id="97dd-4be6-a265-8415" primary="false" name="Command Model Sub-type"/>
+            <categoryLink targetId="1e7d-9066-28d2-97a0" id="4793-7174-41f1-f3b2" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="unit" childId="5c30-4b9a-9f71-b0f1" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -2125,13 +2133,6 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         <categoryLink targetId="9254-b1e9-98b2-6101" id="c085-6e01-0978-fd1d" primary="false" name="Psyker"/>
         <categoryLink targetId="594d-fa82-13cb-a345" id="796a-37fb-00e3-5b4a" primary="false" name="Infantry Model Type"/>
       </categoryLinks>
-      <modifiers>
-        <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="unit" childId="5c30-4b9a-9f71-b0f1" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="af05-fe2c-6236-976b" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="3">
           <entryLinks>
