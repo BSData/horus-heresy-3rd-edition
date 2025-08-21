@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="39" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="40" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -443,6 +443,7 @@
     <categoryEntry name="Archmagos is Malagra" id="3006-172b-ba54-4d75" hidden="false"/>
     <categoryEntry name="Archmagos is Reductor" id="be35-75c1-1217-2fdb" hidden="false"/>
     <categoryEntry name="Archmagos is Macrotek" id="b25e-e5d1-1044-ea7c" hidden="false"/>
+    <categoryEntry name="Default Chainsword" id="afd9-2b52-9cdd-30f2" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -7076,7 +7077,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="aa68-7c65-5d9f-280f"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Cohort Doctrine: Solar Pattern Cohort" hidden="false" id="833b-b51d-5db3-570a" targetId="f2be-abfe-311c-afe2" type="categoryEntry"/>
+            <categoryLink name="Cohort Doctrine: Solar Pattern Cohort" hidden="false" id="833b-b51d-5db3-570a" targetId="f2be-abfe-311c-afe2"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">

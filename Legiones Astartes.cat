@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="36" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="37" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -1435,6 +1435,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <categoryLink targetId="8045-89a4-76d4-fcef" id="f74e-5031-0cb9-08e9" primary="false" name="Sergeant Model Sub-Type"/>
             <categoryLink targetId="594d-fa82-13cb-a345" id="4661-08ad-4996-8371" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="1a8b-ea0f-4d09-a6b0" primary="false" name="Antigrav Model Sub-Type"/>
+            <categoryLink targetId="afd9-2b52-9cdd-30f2" id="8037-65b8-e453-dfd4" primary="false" name="Default Chainsword"/>
           </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Options" id="5e36-4942-9daa-9458" hidden="false">
@@ -1455,12 +1456,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8ea8-5627-fab7-1585" includeChildSelections="true"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="fbef-6ef8-79fd-88f7" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="3" flatten="true"/>
-                    <entryLink import="true" name="Chainsword" hidden="false" id="77b6-74e3-c078-00fc" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f3c2-4bb6-ad6c-c76d"/>
-                      </constraints>
-                    </entryLink>
+                    <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="fbef-6ef8-79fd-88f7" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="1" flatten="true"/>
                     <entryLink import="true" name="Chainaxe" hidden="true" id="0768-82a5-4f4d-3a48" type="selectionEntry" targetId="31a4-f8de-de6d-1fd9" sortIndex="2">
                       <modifiers>
                         <modifier type="set" value="false" field="hidden">
@@ -3421,7 +3417,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                         </modifier>
                       </modifiers>
                     </entryLink>
-                    <entryLink import="true" name="Chainsword" hidden="false" id="17ff-1420-5397-3cca" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1"/>
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebe3-cf36-689c-bbd1" includeChildSelections="false"/>
@@ -3454,6 +3449,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="aaa0-a929-4636-a53f" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="b31b-bb0e-4030-90e4" primary="false" name="Antigrav Model Sub-Type"/>
+            <categoryLink targetId="afd9-2b52-9cdd-30f2" id="38a0-82ff-7002-675f" primary="false" name="Default Chainsword"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Veteran Sergeant" hidden="false" id="d026-be22-fbc5-ee36" sortIndex="1">
@@ -3482,6 +3478,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <categoryLink targetId="8045-89a4-76d4-fcef" id="9d64-452a-77c2-3817" primary="false" name="Sergeant Model Sub-Type"/>
             <categoryLink targetId="594d-fa82-13cb-a345" id="573e-f6c4-4d82-ac58" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="cbae-3794-496f-b7a4" primary="false" name="Antigrav Model Sub-Type"/>
+            <categoryLink targetId="afd9-2b52-9cdd-30f2" id="fe98-5b7a-36d0-46cf" primary="false" name="Default Chainsword"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="86cd-7755-3ddf-f408"/>
@@ -3509,7 +3506,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <selectionEntryGroup name="May exchange chainsword for:" id="760f-9ff1-2dc1-23fb" hidden="false" defaultSelectionEntryId="f638-99df-94f4-e49a" sortIndex="3">
                   <entryLinks>
                     <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="0164-c146-98ff-8f27" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" flatten="true" sortIndex="2"/>
-                    <entryLink import="true" name="Chainsword" hidden="false" id="f638-99df-94f4-e49a" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1"/>
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5789-cc21-b011-d314" includeChildSelections="false"/>
@@ -9367,6 +9363,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <categoryLinks>
             <categoryLink name="Sergeant Model Sub-Type" hidden="false" id="afdb-3a92-094c-19ab" targetId="8045-89a4-76d4-fcef" primary="false"/>
             <categoryLink targetId="594d-fa82-13cb-a345" id="1fab-362f-4176-b980" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="afd9-2b52-9cdd-30f2" id="ce23-3296-dc90-f34b" primary="false" name="Default Chainsword"/>
           </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Options" id="34a3-0e57-371d-6986" hidden="false">
@@ -9388,11 +9385,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="c1f2-5e6a-521b-8d64" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="2" flatten="true"/>
-                    <entryLink import="true" name="Chainsword" hidden="false" id="48bb-e102-e0c0-092c" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="200b-23da-9eda-793f"/>
-                      </constraints>
-                    </entryLink>
                   </entryLinks>
                   <modifiers>
                     <modifier type="set" value="0" field="71d4-7dd7-9f8b-401d">
@@ -10108,7 +10100,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <modifier type="set" value="9994-4d65-a0b5-bef0" field="defaultSelectionEntryId"/>
                   </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Chainsword" hidden="false" id="9e24-b4e3-321e-83eb" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="84c9-72a3-b5e7-4578" includeChildSelections="false"/>
@@ -10128,6 +10119,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       <categoryLinks>
         <categoryLink targetId="af7d-af64-6b7d-da9d" id="bbed-0347-9a6a-9cd9" primary="false" name="Specialist Model Sub-Type"/>
         <categoryLink targetId="594d-fa82-13cb-a345" id="001e-c94e-db7e-f227" primary="false" name="Infantry Model Type"/>
+        <categoryLink targetId="afd9-2b52-9cdd-30f2" id="a9bc-cfc9-8062-3f8b" primary="false" name="Default Chainsword"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Techmarine" hidden="false" id="6cac-d5d2-dda7-ea8f" sortIndex="38">
@@ -11126,6 +11118,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <categoryLinks>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="cc77-29f0-1160-98ed" primary="false" name="Sergeant Model Sub-Type"/>
             <categoryLink targetId="a073-2d4a-5bed-123e" id="1e8f-a4cf-4e75-ab5d" primary="false" name="Cavalry Model Type"/>
+            <categoryLink targetId="afd9-2b52-9cdd-30f2" id="c725-bdff-f5fa-a5a7" primary="false" name="Default Chainsword"/>
           </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="May exchange bolt pistol for:" id="97d0-99da-0482-f8cf" hidden="false" defaultSelectionEntryId="27e6-b7b9-b268-da37" sortIndex="1">
@@ -11144,12 +11137,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </selectionEntryGroup>
             <selectionEntryGroup name="May exchange chainsword for:" id="06c7-82e5-bfa5-9893" hidden="false" defaultSelectionEntryId="54dd-69e3-2538-777a" sortIndex="2">
               <entryLinks>
-                <entryLink import="true" name="Chainsword" hidden="false" id="54dd-69e3-2538-777a" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1cd-2524-fac9-f05b"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="bb63-ab94-cac9-5a17" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="3"/>
+                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="bb63-ab94-cac9-5a17" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="1"/>
                 <entryLink import="true" name="Astartes shotgun" hidden="false" id="3374-d797-829d-9f76" type="selectionEntry" targetId="6068-d203-27e6-318a" sortIndex="2"/>
               </entryLinks>
               <constraints>
@@ -11967,6 +11955,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <categoryLink targetId="8045-89a4-76d4-fcef" id="0853-2b1f-4025-32d8" primary="false" name="Sergeant Model Sub-Type"/>
             <categoryLink targetId="a073-2d4a-5bed-123e" id="6774-e5a3-4e46-b510" primary="false" name="Cavalry Model Type"/>
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="8914-c1f9-4788-8e78" primary="false" name="Antigrav Model Sub-Type"/>
+            <categoryLink targetId="afd9-2b52-9cdd-30f2" id="ba10-6a5f-e299-da23" primary="false" name="Default Chainsword"/>
           </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Exchange heavy bolter for:" id="4992-0518-8687-279f" hidden="false" defaultSelectionEntryId="8cab-eb7d-7845-c092" sortIndex="3">
@@ -12005,7 +11994,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </selectionEntryGroup>
             <selectionEntryGroup name="Exchange chainsword for:" id="f779-1c66-4c51-62d7" hidden="false" defaultSelectionEntryId="756f-88ee-36d4-b9f8" sortIndex="1">
               <entryLinks>
-                <entryLink import="true" name="Chainsword" hidden="false" id="756f-88ee-36d4-b9f8" type="selectionEntry" targetId="78f4-4967-2896-c3a5"/>
                 <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="ca49-6ad0-7369-b6bd" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963"/>
               </entryLinks>
               <constraints>
@@ -15971,13 +15959,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
           </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="78f4-4967-2896-c3a5" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </entryLink>
         <entryLink import="true" name="Chainaxe" hidden="false" id="b1eb-a53d-47a9-86af" type="selectionEntry" targetId="31a4-f8de-de6d-1fd9" sortIndex="3"/>
         <entryLink import="true" name="Charnabal sabre" hidden="false" id="4f5e-b694-4bd2-26e1" type="selectionEntry" targetId="e85f-734a-c587-e88b" sortIndex="4">
@@ -16198,6 +16179,21 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </modifiers>
         </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="9994-4d65-a0b5-bef0" field="defaultSelectionEntryId">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="afd9-2b52-9cdd-30f2" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="6a16-0b8c-6417-70cc">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="afd9-2b52-9cdd-30f2" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6a16-0b8c-6417-70cc" automatic="true"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Legion Combi-weapons" id="f335-622e-6b0a-6b08" hidden="false" sortIndex="5" defaultSelectionEntryId="none" collapsible="true">
       <entryLinks>
