@@ -78,28 +78,34 @@ class GameTests(unittest.TestCase):
                 if child_force.get_child("categoryLinks") is None:
                     continue
 
-                # First check that for each of the referenced slots, that slot is restricting primes.
-                slots_in_detachment: [str] = []
                 prime_restrictions_in_detachment: [str] = []
                 for category_link in child_force.get_child("categoryLinks").children:
                     if category_link.target_name.startswith("Prime "):
                         prime_restrictions_in_detachment.append(category_link.target_name)
-                    else:
-                        slots_in_detachment.append(category_link.target_name)
-                slot_name: str
-                for slot_name in slots_in_detachment:
-                    # If this is a special version of the slot, get the regular name.
-                    slot = slot_name.partition(" - ")[0]
-                    if slot not in self.battlefield_roles_that_can_be_prime:
-                        continue
-                    with self.subTest(f"Prime restriction on {slot} because of {slot_name} in {child_force}"):
-                        self.assertIn("Prime " + slot, prime_restrictions_in_detachment,
-                                      f"Expected 'Prime {slot}' because of '{slot_name}'")
 
-                # Then check each prime restriction is set appropriately.
                 for category_link in child_force.get_child("categoryLinks").children:
-                    if not category_link.target_name.startswith("Prime "):
+                    slot_name = category_link.target_name
+                    # First check that for each of the referenced slots, that slot is restricting primes.
+                    if not slot_name.startswith("Prime "):
+                        # If this is a special version of the slot, get the regular name.
+                        slot = slot_name.partition(" - ")[0]
+                        if slot not in self.battlefield_roles_that_can_be_prime:
+                            continue
+                        if slot == "High Command":
+                            with self.subTest(f"Does High Command not need a prime restriction in {child_force}"):
+                                constraints = category_link.get_child("constraints")
+                                self.assertIsNotNone(constraints, "All force org slots should have constraints")
+                                max_constraint = constraints.get_child("constraint", {"type": "max"})
+                                self.assertIsNotNone(max_constraint, "Should have a max constraint")
+                                if max_constraint.attrib["value"] == '0':
+                                    continue  # If the max constraint is 0, this is here solely for special assignment
+
+                        with self.subTest(f"Prime restriction on {slot} because of {slot_name} in {child_force}"):
+                            self.assertIn("Prime " + slot, prime_restrictions_in_detachment,
+                                          f"Expected 'Prime {slot}' because of '{slot_name}'")
                         continue
+
+                    # Then check each prime restriction is set appropriately.
                     with self.subTest(f"{category_link.target_name} on {child_force}"):
 
                         constraints = category_link.get_child("constraints")
@@ -109,7 +115,7 @@ class GameTests(unittest.TestCase):
                         constraint = constraints.children[0]
 
                         self.assertIn("includeChildSelections", constraint.attrib.keys())
-                        self.assertEquals(constraint.attrib["includeChildSelections"], "true")
+                        self.assertEqual(constraint.attrib["includeChildSelections"], "true")
 
     def test_forces_all_hide_if_no_LB(self):
         for parent_force in self.system.gst.root_node.get_child("forceEntries").children:
@@ -140,6 +146,8 @@ class GameTests(unittest.TestCase):
                             continue  # Not actually a relevant category link
                         # At this point we have a slot with max 0
                         modifiers = category_link.get_child("modifiers")
+                        if modifiers is None and category_link.target_name == "High Command":
+                            continue  # High Command can be 0 with mo modifiers, for Special Assignment.
                         self.assertIsNotNone(modifiers, "All force org slots that are max 0 should have modifiers")
                         modify_max_constraint = modifiers.get_child("modifier", {"field": max_constraint.id})
                         self.assertIsNotNone(modify_max_constraint, "Should have a modifier to max")
@@ -191,7 +199,7 @@ class GameTests(unittest.TestCase):
             for child in entry_links_node.children:
                 category_links = child.get_child(tag='categoryLinks')
                 primary_cat = category_links.get_child(tag='categoryLink', attrib={"primary": "true"})
-                if file.name == "Questoris Household.cat":
+                if file.name == "Questoris Familia.cat":
                     if primary_cat.target_name == "Lord of War":
                         unit_ids.append(child.target_id)
                 elif primary_cat.target_name in self.battlefield_roles_that_can_be_prime:
@@ -232,7 +240,7 @@ class GameTests(unittest.TestCase):
     def test_all_high_command_have_detachment_choice(self):
         high_command_id = self.system.categories["High Command"].id
         for category_link in self.system.all_nodes.filter(lambda x: x.target_id == high_command_id):
-            print(category_link.parent.parent)
+            # print(category_link.parent.parent)
             unit_link = category_link.parent.parent
             if not unit_link.is_link():
                 continue  # Skip over things that aren't unit links.
