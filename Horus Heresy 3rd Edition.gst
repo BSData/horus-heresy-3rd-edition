@@ -444,6 +444,7 @@
     <categoryEntry name="Archmagos is Reductor" id="be35-75c1-1217-2fdb" hidden="false"/>
     <categoryEntry name="Archmagos is Macrotek" id="b25e-e5d1-1044-ea7c" hidden="false"/>
     <categoryEntry name="Default Chainsword" id="afd9-2b52-9cdd-30f2" hidden="false"/>
+    <categoryEntry name="Legion Champion" id="1baf-b200-9e02-844d" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -8085,6 +8086,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5a3b-ebb7-4e2b-6728" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Master of Automata" hidden="false" id="89dd-fa0f-af89-c7b5" targetId="43f5-bc69-29b9-2286"/>
           </categoryLinks>
           <constraints>
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="06ca-d5c5-58f1-f184"/>
@@ -12495,6 +12497,11 @@
               </conditionGroups>
               <comment>Legions</comment>
             </modifier>
+            <modifier type="increment" value="1" field="6f31-a14e-e22b-ad94">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="1baf-b200-9e02-844d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <categoryLinks>
             <categoryLink name="Retinue" hidden="false" id="e3d0-30db-2723-5ac2" targetId="a38e-50ff-310f-f19e">
@@ -12535,6 +12542,9 @@
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="6f31-a14e-e22b-ad94"/>
+          </constraints>
         </forceEntry>
         <forceEntry name="Auxiliary - Apothecarion Delegation" id="41f6-7dfc-4eb9-f6ef" hidden="true" sortIndex="42" publicationId="e54c-7040-0f35-d85d" page="16">
           <comment>Legions</comment>

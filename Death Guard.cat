@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="be98-aa9d-64ef-f62c" name="                        XIV - Death Guard" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="4" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="be98-aa9d-64ef-f62c" name="                        XIV - Death Guard" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="5" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Mortarion" hidden="false" id="1e3b-2a3b-c76d-6f98" sortIndex="1">
       <selectionEntries>
@@ -270,6 +270,76 @@ A Model with this Special Rule that has moved no more than 4&quot; in the Moveme
             <categoryLink targetId="9871-cb62-5283-2216" id="109e-06fe-494e-acea" primary="false" name="Command Model Sub-type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="2dbd-ebe5-481f-b8f1" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Lakrimae" hidden="false" id="348e-4811-c5b0-c99c" sortIndex="1">
+              <profiles>
+                <profile name="Lakrimae" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="6160-59ad-e2eb-38a5">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">-1</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Reaping Blow (3), Poisoned (3+)</characteristic>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Reaping Blow (X)" id="0fd7-6987-514b-09d5" hidden="false" type="rule" targetId="951f-eee4-02b7-b014">
+                  <comment>3</comment>
+                  <modifiers>
+                    <modifier type="set" value="Reaping Blow (3)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Poisoned (X)" id="72c4-c3d5-8c92-2776" hidden="false" type="rule" targetId="076f-2c91-c58b-71b3">
+                  <comment>3+</comment>
+                  <modifiers>
+                    <modifier type="set" value="Poisoned (3+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="459b-d0d3-6eba-3066-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="459b-d0d3-6eba-3066-max"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Slaker" hidden="false" id="a8bc-e03e-b598-9475" sortIndex="2">
+              <profiles>
+                <profile name="Slaker" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="8247-85aa-0673-14d0">
+                  <characteristics>
+                    <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
+                    <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+                    <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">3</characteristic>
+                    <characteristic name="AP" typeId="7a23-0248-2b94-5951">-</characteristic>
+                    <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Pistol, Poisoned (2+), Panic (1)</characteristic>
+                    <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Assault</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Template" id="8e52-81a1-b082-34a7" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a"/>
+                <infoLink name="Pistol" id="fd19-69af-1ae8-a883" hidden="false" type="rule" targetId="2bf6-55c8-6810-a71c"/>
+                <infoLink name="Poisoned (X)" id="a8fd-25bc-c26a-4a74" hidden="false" type="rule" targetId="076f-2c91-c58b-71b3">
+                  <comment>2+</comment>
+                  <modifiers>
+                    <modifier type="set" value="Poisoned (2+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Panic (X)" id="3d65-9298-3057-c4cc" hidden="false" type="rule" targetId="82a7-f471-3fda-6ca1">
+                  <comment>1</comment>
+                  <modifiers>
+                    <modifier type="set" value="Panic (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6373-c966-12a6-c8cc-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6373-c966-12a6-c8cc-max"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Witchblood" hidden="false" id="b7fc-188d-b246-68c5">
           <rules>
