@@ -4,11 +4,16 @@
 name: Generic Datafile validations
 on:
   push:
+    branches:
+      - main
+  pull_request_target:
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+      with:
+        ref: ${{ github.event.pull_request.head.sha }}
 #
 #    - uses: BSData/check-datafiles@v1
 #      id: check
