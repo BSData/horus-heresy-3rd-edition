@@ -883,14 +883,6 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
-          <entryLinks>
-            <entryLink import="true" name="Power Glaive" hidden="false" id="debb-4bd2-55be-1b74" type="selectionEntry" targetId="ac01-88cb-3832-1ef8">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe02-dae2-26b5-9a2b" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d03f-c7dd-eae5-b440" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="1d58-0b96-3fb1-de07" includeChildSelections="false"/>
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="4d29-b83e-140c-7a52" includeChildSelections="false"/>
@@ -898,6 +890,96 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="7879-3eb4-4f81-8f67" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Additional Wargear" id="a003-756a-be29-1068" hidden="false" collapsible="true" defaultSelectionEntryId="none">
+              <entryLinks>
+                <entryLink import="true" name="Vexilla" hidden="false" id="1e4f-f6d0-20ab-3673" type="selectionEntry" targetId="dfcd-0669-ad43-28aa" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="9f57-6829-5ec9-4d69" shared="true" id="c175-e529-520d-5490" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Grenade harness" hidden="false" id="01b8-c279-87ae-a025" type="selectionEntry" targetId="a766-856c-52bd-d30a" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="291d-eef1-a3d2-584a" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="May exchange its power glaive for one of the following." id="d428-7b77-8e7d-fa6c" hidden="false" sortIndex="1" defaultSelectionEntryId="debb-4bd2-55be-1b74">
+              <entryLinks>
+                <entryLink import="true" name="Power Glaive" hidden="false" id="debb-4bd2-55be-1b74" type="selectionEntry" targetId="ac01-88cb-3832-1ef8" sortIndex="1"/>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Additional Weapon Options" hidden="false" id="e52e-56d4-4ece-8f24" sortIndex="2" flatten="false">
+                  <categoryLinks>
+                    <categoryLink targetId="647c-faca-3c98-c203" id="f4bf-19b6-b6bc-0f1b" primary="false" name="Free Power Weapon"/>
+                  </categoryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Melee Option" id="a3a9-3584-c2e4-e0d7" hidden="false" defaultSelectionEntryId="178e-e2ae-d22e-7a37" sortIndex="2">
+                      <entryLinks>
+                        <entryLink import="true" name="Power sword" hidden="false" id="178e-e2ae-d22e-7a37" type="selectionEntry" targetId="59a9-57c1-fff9-ca75" sortIndex="1">
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Power fist" hidden="false" id="4cfe-7045-11b3-80b1" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="5">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d018-5e8a-1775-52e2" includeChildSelections="false"/>
+                          </constraints>
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Power axe" hidden="false" id="64d6-6081-6880-1347" type="selectionEntry" targetId="4861-b77a-620c-f0d6" sortIndex="2">
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Power maul" hidden="false" id="7499-8109-2578-c82f" type="selectionEntry" targetId="c4fa-659d-bf4b-bad1" sortIndex="3">
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Power lance" hidden="false" id="d29b-21c4-14a1-d331" type="selectionEntry" targetId="f56f-c410-b47c-58d9" sortIndex="4">
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd69-0499-3dc0-7fe9" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ae5-a99b-d6b7-8287" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="Ranged Option" id="f108-8143-a149-351b" hidden="false" sortIndex="1">
+                      <entryLinks>
+                        <entryLink import="true" name="Volkite charger" hidden="false" id="58a5-c121-6b48-0380" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="2"/>
+                        <entryLink import="true" name="Combi-bolter" hidden="false" id="8b2e-943d-6641-0cfb" type="selectionEntry" targetId="042d-9e60-db9e-c147" sortIndex="1"/>
+                        <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="bdab-c065-b651-837c" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" flatten="false"/>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="52f2-fc8a-2e86-3dc0" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0675-7dab-b7eb-9bcd" includeChildSelections="false"/>
+                      </constraints>
+                      <categoryLinks>
+                        <categoryLink targetId="e734-034b-8652-ffca" id="9247-f7d9-fd73-b77d" primary="false" name="Free Combi-bolter"/>
+                      </categoryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b338-78b4-a663-17d3" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="977c-426c-f7fa-1c2d" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1038,7 +1120,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770">The Target Unit must be a Unit under the control of the Active Player with at least one Model within 12&quot; of the Focus and with Line of Sight to the Focus, including the Unit that the Focus is part of, and must only include Models with the White Scars Trait. The Target may not be a Unit that is Locked in Combat, or otherwise ineligible to Move normally, for example, it is under the effects of the Routed Status, and may not include any Models with the Vehicle Type.</characteristic>
             <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4">If successfully Manifested, the effects of this Psychic Power are resolved immediately.</characteristic>
             <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0">1) Once the Focus and Target Unit have been decided, make a Manifestation Check.
-2) If this Psychic Power is successfully Manifested, until the end of the Phase, the Target Unit cannot Rush, but the Movement Characteristic of each Model in the Target Unit is modified by a value equal to that Model&apos;s Initiative Characteristic. 
+2) If this Psychic Power is successfully Manifested, until the end of the Phase, the Target Unit cannot Rush, but the Movement Characteristic of each Model in the Target Unit is modified by a value equal to that Model&apos;s Initiative Characteristic.
 3) If the Manifestation Check fails then there is no further effect to the Target Unit.</characteristic>
           </characteristics>
         </profile>
