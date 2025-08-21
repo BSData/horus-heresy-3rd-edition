@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="f7b4-2531-0962-1379" name="                         V - White Scars" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="6" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="f7b4-2531-0962-1379" name="                         V - White Scars" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="7" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Jaghatai Khan" hidden="false" id="8192-47ac-99f9-73e9" sortIndex="1">
       <selectionEntries>
@@ -1177,7 +1177,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
           <profiles>
             <profile name="Falcon&apos;s Claw Champion" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="ade6-d260-9a17-c759">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant, Light)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant, Light)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -1306,7 +1306,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
           <profiles>
             <profile name="Falcon&apos;s Claw" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="b426-5948-8431-18ff">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Light)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Light)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -1412,7 +1412,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
           <profiles>
             <profile name="Stormseer with Jump Pack" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="f736-7ee8-0832-5006" publicationId="5469-14da-d0a1-6092">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command, Antigrav)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command, Antigrav)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">12</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -1529,6 +1529,11 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="9871-cb62-5283-2216" id="79c8-77e5-196e-a188" primary="false" name="Command Model Sub-type"/>
+            <categoryLink targetId="c504-9dfa-35d3-c98f" id="1b07-48ba-f733-74d9" primary="false" name="Antigrav Model Sub-Type"/>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="3f2b-6d97-c223-12c4" primary="true" name="Infantry Model Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -1569,7 +1574,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
           <profiles>
             <profile name="Outrider Stormseer" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="c183-c4fe-0bf6-1fc0" publicationId="5469-14da-d0a1-6092">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Cavalry (Command)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Cavalry (Command)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">14</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -1700,6 +1705,10 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="a073-2d4a-5bed-123e" id="b9a2-c0dc-ce6d-d687" primary="false" name="Cavalry Model Type"/>
+            <categoryLink targetId="9871-cb62-5283-2216" id="c827-da71-3156-0226" primary="false" name="Command Model Sub-type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -1741,7 +1750,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
           <profiles>
             <profile name="Stormseer on Scimitar Jetbike" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="087b-3018-fc76-387c" publicationId="5469-14da-d0a1-6092">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Cavalry (Command, Antigrav)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Cavalry (Command, Antigrav)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">16</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -1882,6 +1891,11 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="a073-2d4a-5bed-123e" id="7caf-6624-3924-895d" primary="true" name="Cavalry Model Type"/>
+            <categoryLink targetId="9871-cb62-5283-2216" id="078f-5333-591d-06d5" primary="false" name="Command Model Sub-type"/>
+            <categoryLink targetId="c504-9dfa-35d3-c98f" id="9b22-1b37-b57a-9c72" primary="false" name="Antigrav Model Sub-Type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -1929,7 +1943,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
           <profiles>
             <profile name="Stormseer in Terminator Armour" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="ee00-cb00-284d-5165">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Command, Heavy)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command, Heavy)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
@@ -2060,6 +2074,10 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
               </constraints>
             </entryLink>
           </entryLinks>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="49ab-1bf0-2cd0-23bb" primary="true" name="Infantry Model Type"/>
+            <categoryLink targetId="9871-cb62-5283-2216" id="97dd-4be6-a265-8415" primary="false" name="Command Model Sub-type"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -2128,7 +2146,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
           <profiles>
             <profile name="Dark Son" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="62af-5ac8-0fe2-8555">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Antigrav)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Antigrav)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">12</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -2246,7 +2264,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
           <profiles>
             <profile name="Death&apos;s Champion" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="2086-534a-9209-a3d4">
               <characteristics>
-                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant, Antigrav)</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant, Antigrav)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">12</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
@@ -2468,7 +2486,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         <rule name="Invocation of the Razing Tempest" id="47ba-ec7d-9761-6876" hidden="false">
           <description>&quot;A Unit that includes any Models with this Special Rule can be more easily selected as the target of the Call of the
 Wind Psychic Power.&quot;
-A Unit that includes any Models with this Special Rule may be selected as the target of the Call of the Wind Psychic Power from the Stormcalling Discipline while it has at least one Model within 24&quot; of the Focus instead of 12&quot;. In addition, a Unit that includes any Models with this Special Rule may be selected as the Target of that Psychic Power even if no Models in that Unit have Line of Sight to the Focus. </description>
+A Unit that includes any Models with this Special Rule may be selected as the target of the Call of the Wind Psychic Power from the Stormcalling Discipline while it has at least one Model within 24&quot; of the Focus instead of 12&quot;. In addition, a Unit that includes any Models with this Special Rule may be selected as the Target of that Psychic Power even if no Models in that Unit have Line of Sight to the Focus.</description>
         </rule>
       </rules>
     </selectionEntry>
