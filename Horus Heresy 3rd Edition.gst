@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="43" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="44" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -14926,7 +14926,7 @@
         <forceEntryLink name="Auxiliary - Sons of Bodt" id="18ab-ac91-4235-8c84" hidden="true" targetId="9bfb-c160-31df-9108" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Spearhead Phalanx" id="928f-1a3e-42de-8f77" hidden="true" targetId="4737-e73a-394e-433f" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Supremecy Cadre" id="ca99-8902-46b2-b4a2" hidden="true" targetId="2436-a714-22cc-fd31" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Stormwing Moster" id="23c5-b8c8-4024-b5f1" hidden="true" targetId="bdf9-3781-2927-bc55" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Stormwing Muster" id="23c5-b8c8-4024-b5f1" hidden="true" targetId="bdf9-3781-2927-bc55" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Deathwing Conclave" id="da5f-542c-4a2f-86be" hidden="true" targetId="9b6c-2a18-7b8a-1aab" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Ravenwing Lance" id="3d86-c93e-485b-b392" hidden="true" targetId="466d-8e42-0890-721a" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Firewing Echelon" id="7d8a-a61b-4825-ba4c" hidden="true" targetId="3e2f-4f99-d366-7a95" type="forceEntry"/>
@@ -15708,17 +15708,66 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Allegiance" id="9fa8-cbae-ef5e-4b7c" hidden="false">
+    <selectionEntryGroup name="Allegiance" id="9fa8-cbae-ef5e-4b7c" hidden="false" defaultSelectionEntryId="none">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Loyalist" hidden="false" id="e1e1-a344-d3e2-0b91"/>
+        <selectionEntry type="upgrade" import="true" name="Loyalist" hidden="false" id="e1e1-a344-d3e2-0b91">
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f7b4-2531-0962-1379" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d995-cb33-be41-ecf8" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d186-cffc-0950-f632" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9cff-ac34-56ca-260f" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="736e-3967-e72b-e3ac" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="656a-07b6-d4fd-57af" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f148-a6e4-5a8c-3aeb" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="340c-1d4f-1f31-fb70" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="258b-97fb-2366-7344" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="258b-97fb-2366-7348" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Traitor" hidden="false" id="597e-83d8-32e1-8eaa">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="258b-97fb-2366-7344" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true" includeChildForces="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="258b-97fb-2366-7344" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="defaultAmount">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9a22-d01f-ab5c-ec07" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="21c0-18db-03dd-ae07" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="486f-b32a-ac87-73dd" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a956-190d-3b47-6258" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="be98-aa9d-64ef-f62c" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ac06-fcec-b634-5bd9" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a956-190d-3b47-6258" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="8813-5298-c368-ee16" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
