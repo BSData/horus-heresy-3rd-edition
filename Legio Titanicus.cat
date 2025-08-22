@@ -286,6 +286,11 @@
         </modifier>
       </modifiers>
     </profile>
+    <profile name="Light Battle" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="57d8-908c-59af-e3e0">
+      <characteristics>
+        <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Secutarii Axiarch" hidden="false" id="8860-ab47-2327-3635">
@@ -694,12 +699,12 @@
               <modifiers>
                 <modifier type="set" value="4" field="082d-2db1-c27a-ec76">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="36f5-782f-1b4d-5b14" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="10d8-417a-09ab-e9f9" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="5" field="082d-2db1-c27a-ec76">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="3ee6-65c8-9dbb-a2fb" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cc6-93ba-c8af-de72" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -775,9 +780,37 @@
           </modifiers>
         </infoLink>
       </infoLinks>
-      <entryLinks>
-        <entryLink import="true" name="[Crew]" hidden="false" id="30c9-fe6f-205f-c9a8" type="selectionEntryGroup" targetId="8548-f044-d923-b785"/>
-      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="[Crew]" id="1bad-875e-9ec7-9dc6" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="504f-feb4-5cc1-e939"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fcf-d734-487f-6f21"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Minoris" hidden="false" id="f490-938f-7a59-3cea" type="selectionEntry" targetId="cf0a-5a49-43f4-58d6" sortIndex="1">
+              <categoryLinks>
+                <categoryLink targetId="c771-fac1-0bda-44da" id="81c2-96a0-7354-06e1" primary="false" name="Minoris Crew"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink import="true" name="Senioris" hidden="false" id="4862-2ee9-51bb-65ae" type="selectionEntry" targetId="b770-df60-4a57-79df" sortIndex="2">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="50"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink targetId="9517-f191-ecb8-128f" id="e417-548e-e257-902a" primary="false" name="Senioris Crew"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink import="true" name="Majoris" hidden="false" id="adc0-b6b0-621e-f500" type="selectionEntry" targetId="50f4-e37d-7540-1938" sortIndex="3">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="100"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink targetId="901e-87f3-be7f-c3ed" id="2f4d-6430-f58a-dc38" primary="false" name="Majoris Crew"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Vulcan mega-bolter" hidden="false" id="bdab-7645-227b-1efb">
       <profiles>
@@ -896,6 +929,344 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Reaver Titan" hidden="false" id="d18b-f29e-3b40-036d">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="1500"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Reaver Titan" hidden="false" id="d3c3-38c4-49d5-f98a">
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="d749-c82d-b67f-7c8d" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="84f5-eca2-af75-193a" id="2dec-45ca-4d86-79ac" primary="false" name="Titan Model Sub-Type"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="767d-ceeb-3a42-2918-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="767d-ceeb-3a42-2918-max"/>
+          </constraints>
+          <profiles>
+            <profile name="  Head" typeId="2e7a-2e4d-dfb2-6b7a" typeName="Titan Head" hidden="false" id="e30b-b6b3-ee19-c328">
+              <characteristics>
+                <characteristic name="M" typeId="2166-88df-f710-af3f">-</characteristic>
+                <characteristic name="BS" typeId="c495-b16a-f24d-b6a5">-</characteristic>
+                <characteristic name="Primary Armour" typeId="ca2b-9e3d-6d2b-50bb">14</characteristic>
+                <characteristic name="Exposed Armour" typeId="8a30-5814-b7f7-9bcd">12</characteristic>
+                <characteristic name="HP" typeId="2446-14c8-bcb4-40fd">10</characteristic>
+                <characteristic name="Transport Capacity" typeId="f02f-a705-84f7-21c6">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name=" Carapace" typeId="427a-1e14-5a35-588b" typeName="Titan Carapace" hidden="false" id="5476-0c55-bf57-1125">
+              <characteristics>
+                <characteristic name="M" typeId="da45-6b40-46b7-6fe0">-</characteristic>
+                <characteristic name="BS" typeId="7ecd-00b1-f94c-ae3c">3</characteristic>
+                <characteristic name="Primary Armour" typeId="d9bf-1a6a-e602-86ef">15</characteristic>
+                <characteristic name="Exposed Armour" typeId="f2a7-27bd-8ae2-8768">14</characteristic>
+                <characteristic name="HP" typeId="fb1e-e851-064a-b34d">12</characteristic>
+                <characteristic name="Transport Capacity" typeId="33b6-b172-e137-87f3">-</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="4" field="7ecd-00b1-f94c-ae3c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="10d8-417a-09ab-e9f9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5" field="7ecd-00b1-f94c-ae3c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cc6-93ba-c8af-de72" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Arms" typeId="90d7-6d94-1c6a-fe28" typeName="Titan Arms" hidden="false" id="21c4-5962-2669-6ddf">
+              <characteristics>
+                <characteristic name="M" typeId="db3f-53ef-08a8-c0fb">-</characteristic>
+                <characteristic name="BS" typeId="082d-2db1-c27a-ec76">3</characteristic>
+                <characteristic name="Primary Armour" typeId="cde4-2cb6-25ce-18e3">14</characteristic>
+                <characteristic name="Exposed Armour" typeId="4a56-a48e-e6db-05b4">12</characteristic>
+                <characteristic name="HP" typeId="5f7d-4f9b-8d00-8dd7">10</characteristic>
+                <characteristic name="Transport Capacity" typeId="7df3-dabd-eed0-50bf">-</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="4" field="082d-2db1-c27a-ec76">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="10d8-417a-09ab-e9f9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="5" field="082d-2db1-c27a-ec76">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cc6-93ba-c8af-de72" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+            <profile name="Legs" typeId="196d-8bef-a3cc-336f" typeName="Titan Legs" hidden="false" id="d360-b853-31ca-bde0">
+              <characteristics>
+                <characteristic name="M" typeId="b47b-b784-9940-5202">15</characteristic>
+                <characteristic name="BS" typeId="006d-8179-3295-e411">-</characteristic>
+                <characteristic name="Primary Armour" typeId="faaa-3813-1265-a640">15</characteristic>
+                <characteristic name="Exposed Armour" typeId="3c60-53f6-a92f-dd4c">14</characteristic>
+                <characteristic name="HP" typeId="553f-359d-d3b0-f561">12</characteristic>
+                <characteristic name="Transport Capacity" typeId="acd3-8efe-0a62-70f8">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Apocalypse missile launcher" hidden="false" id="7ac9-87af-ce22-3406" type="selectionEntry" targetId="c1f5-3fbd-f38f-fff1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e02-cc38-8fe3-33ce-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e02-cc38-8fe3-33ce-max"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Carapace Mounted Apocalypse missile launcher" field="name"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Two of" id="6f57-70e7-db51-c104" hidden="false">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="22d1-9fc8-e96d-efae" automatic="true"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ee25-a6ed-df70-f69c" automatic="true"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Titan gatling blaster" hidden="false" id="3b8f-0b5d-3498-3931" type="selectionEntry" targetId="0bb5-80a7-b5ac-4069" sortIndex="1"/>
+                <entryLink import="true" name="Titan laster blaster" hidden="false" id="53b1-a5e7-dc35-550c" type="selectionEntry" targetId="c233-2b1b-b720-91d5" sortIndex="2"/>
+                <entryLink import="true" name="Titan melta cannon" hidden="false" id="dbb1-941b-406f-e0c4" type="selectionEntry" targetId="28a6-49bd-0e4a-4482" sortIndex="3"/>
+                <entryLink import="true" name="Titan poer fist" hidden="false" id="ca16-8d45-34b6-0942" type="selectionEntry" targetId="cc0d-37a0-c199-500f" sortIndex="4"/>
+                <entryLink import="true" name="Titan volcano cannon" hidden="false" id="6c8b-0a4a-2b90-aee6" type="selectionEntry" targetId="b474-6804-9c13-6e44"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="47aa-4b44-a462-34a5" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Legio Titanicus" id="9a4d-5ad4-9ad9-acb2" hidden="false" type="profile" targetId="5ee0-9a82-ab5f-1bb0"/>
+        <infoLink name="[Crew]" id="cea9-9f27-7294-63f1" hidden="false" type="profile" targetId="7751-2cdd-2ad5-a98e"/>
+        <infoLink name="Light Battle" id="5be0-a540-2590-953a" hidden="false" type="profile" targetId="57d8-908c-59af-e3e0"/>
+        <infoLink name="Titan War Horn (X)" id="8ab8-6e3a-3884-86fb" hidden="false" type="rule" targetId="2cd4-62d3-b63c-c117">
+          <comment>2</comment>
+          <modifiers>
+            <modifier type="set" value="Titan War Horn (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Repair Crew (X)" id="d564-cb10-354c-f3d2" hidden="false" type="rule" targetId="e60a-ee69-a386-7b11">
+          <comment>D3+1</comment>
+          <modifiers>
+            <modifier type="set" value="Repair Crew (D3+1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Titan Void Shield Array (X)" id="43e1-3080-46fa-9051" hidden="false" type="rule" targetId="c18d-dd21-3760-8a3d">
+          <comment>4</comment>
+          <modifiers>
+            <modifier type="set" value="Titan Void Shield Array (4)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Reinforced Structure (X)" id="839f-0928-dbbb-a9da" hidden="false" type="rule" targetId="3efb-ad77-5402-1507">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="set" value="Reinforced Structure (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="[Crew]" id="d488-c78e-1391-9610" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2c8-c9cc-4414-8d40"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7098-db76-1b10-845d"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Minoris" hidden="false" id="d93a-43a8-ceef-4fbc" type="selectionEntry" targetId="cf0a-5a49-43f4-58d6" sortIndex="1">
+              <categoryLinks>
+                <categoryLink targetId="c771-fac1-0bda-44da" id="83ad-3454-da56-1f40" primary="false" name="Minoris Crew"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink import="true" name="Senioris" hidden="false" id="10d8-417a-09ab-e9f9" type="selectionEntry" targetId="b770-df60-4a57-79df" sortIndex="2">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="100"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink targetId="9517-f191-ecb8-128f" id="3d26-8d9c-9953-a6fe" primary="false" name="Senioris Crew"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink import="true" name="Majoris" hidden="false" id="8cc6-93ba-c8af-de72" type="selectionEntry" targetId="50f4-e37d-7540-1938" sortIndex="3">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="200"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink targetId="901e-87f3-be7f-c3ed" id="56e5-8f65-e684-a8c8" primary="false" name="Majoris Crew"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Minoris" hidden="false" id="cf0a-5a49-43f4-58d6">
+      <categoryLinks>
+        <categoryLink name="Minoris Crew" hidden="false" id="9a18-871a-73a7-6f66" targetId="c771-fac1-0bda-44da" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Senioris" hidden="false" id="b770-df60-4a57-79df">
+      <costs>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Senioris Crew" hidden="false" id="0d25-18ba-ab5b-2775" targetId="9517-f191-ecb8-128f" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Majoris" hidden="false" id="50f4-e37d-7540-1938">
+      <costs>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Majoris Crew" hidden="false" id="5f6a-4473-9883-1266" targetId="901e-87f3-be7f-c3ed" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Apocalypse missile launcher" hidden="false" id="c1f5-3fbd-f38f-fff1">
+      <profiles>
+        <profile name="Apocalypse missile launcher" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="5fd3-a483-c592-af12">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">150</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">9</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">3</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">4</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Blast (10&quot;), Shield-breaker (3)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Missile, Strategic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shield-breaker (X)" id="07e4-5236-40f8-7101" hidden="false" type="rule" targetId="28ce-8329-623c-e1a5">
+          <modifiers>
+            <modifier type="set" value="Shield-breaker (3)" field="name"/>
+          </modifiers>
+          <comment>3</comment>
+        </infoLink>
+        <infoLink name="Blast (X)" id="ad4b-0b9b-7a21-2d54" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+          <comment>10&quot;</comment>
+          <modifiers>
+            <modifier type="set" value="Blast (10&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Titan gatling blaster" hidden="false" id="0bb5-80a7-b5ac-4069">
+      <profiles>
+        <profile name="Titan gatling blaster" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="fc80-1515-34ee-e8d4">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">82</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">5</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">9</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">4</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Armourbane</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Auto, Strategic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Armourbane" id="7001-365e-88dc-e18f" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Titan laster blaster" hidden="false" id="c233-2b1b-b720-91d5">
+      <profiles>
+        <profile name="Titan laster blaster" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="f142-a90a-35a2-b99d">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">82</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">3</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">10</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">5</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Armourbane</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Las, Strategic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Armourbane" id="c930-943c-747a-a611" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Titan melta cannon" hidden="false" id="28a6-49bd-0e4a-4482">
+      <profiles>
+        <profile name="Titan melta cannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="a0e4-bfed-9fbc-0f75">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">60</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">12</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">8</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Blast (5&quot;), Melta(48)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Melta, Strategic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast (X)" id="96fb-a00c-4fc8-3d4c" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+          <comment>5&quot;</comment>
+          <modifiers>
+            <modifier type="set" value="Blast (5&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Melta (X)" id="0bae-9ab7-f64f-3b4a" hidden="false" type="rule" targetId="8ef6-917e-93da-43c3">
+          <comment>48</comment>
+          <modifiers>
+            <modifier type="set" value="Melta (48)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Titan power fist" hidden="false" id="cc0d-37a0-c199-500f">
+      <profiles>
+        <profile name="Titan power fist" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="df6a-de28-325c-0dd0">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">6</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">12</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">10</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Armourbane</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Strike</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Armourbane" id="0be5-29f9-85b2-819b" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Titan volcano cannon" hidden="false" id="b474-6804-9c13-6e44">
+      <profiles>
+        <profile name="Titan volcano cannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="eec4-c39f-49da-aa29">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">120</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">13</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">12</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Blast (3&quot;), Power Hungry, Macro-auspex</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Las, Strategic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast (X)" id="c201-3fbd-dc83-524c" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+          <comment>3&quot;</comment>
+          <modifiers>
+            <modifier type="set" value="Blast (3&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Power Hungry" id="0679-f43a-2de8-27bc" hidden="false" type="rule" targetId="a20d-f2db-43ea-5829"/>
+        <infoLink name="Macro-Auspex" id="a4e2-4e3a-868f-eb07" hidden="false" type="rule" targetId="8120-65ac-c2d4-a555"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Traits" id="e57d-9a73-79c6-dcd0" targetId="df17-7a05-0826-6e22"/>
@@ -926,6 +1297,11 @@
     <entryLink import="true" name="Warhound Titan" hidden="false" id="1856-b592-1e1a-494f" type="selectionEntry" targetId="de13-dda8-5d1a-89d0">
       <categoryLinks>
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="4243-10af-7b40-9439" primary="true" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Reaver Titan" hidden="false" id="617a-c547-7f65-a1d0" type="selectionEntry" targetId="d18b-f29e-3b40-036d">
+      <categoryLinks>
+        <categoryLink targetId="a46f-a465-0ead-d6b8" id="a48c-506f-596e-35e9" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
