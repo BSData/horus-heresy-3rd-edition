@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="486f-b32a-ac87-73dd" name="                         VIII - Night Lords" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="11" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="486f-b32a-ac87-73dd" name="                         VIII - Night Lords" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="12" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Konrad Curze" hidden="false" id="f5fd-f425-c610-4a94">
       <selectionEntries>
@@ -413,17 +413,17 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
             <categoryLink targetId="8045-89a4-76d4-fcef" id="4c04-61f5-cd29-fca6" primary="false" name="Sergeant Model Sub-Type"/>
             <categoryLink targetId="594d-fa82-13cb-a345" id="ead3-f49a-4ab2-8c3e" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="c6c0-e196-44e6-aee9" primary="false" name="Antigrav Model Sub-Type"/>
+            <categoryLink targetId="afd9-2b52-9cdd-30f2" id="637c-face-4171-dbd7" primary="false" name="Default Chainsword"/>
           </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="May replace it&apos;s chainsword with:" id="f240-8d6d-eac6-f708" hidden="false" defaultSelectionEntryId="7e42-c96c-86e3-8b8b">
               <entryLinks>
-                <entryLink import="true" name="Chainsword" hidden="false" id="fdd9-2e37-2f94-8d1b" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1"/>
                 <entryLink import="true" name="Chainglave" hidden="false" id="becf-34fc-0b4a-a0a5" type="selectionEntry" targetId="3708-b181-5f26-4387" sortIndex="2">
                   <modifiers>
                     <modifier type="set" value="5" field="9893-c379-920b-8982"/>
                   </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="374b-ce5c-299d-f8fc" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="3"/>
+                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="374b-ce5c-299d-f8fc" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="1" flatten="true"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ea9-b042-5ce9-4f82"/>
@@ -466,13 +466,12 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
           <selectionEntryGroups>
             <selectionEntryGroup name="Any Model in this Unit may replace it&apos;s chainsword with:" id="1cee-1725-3357-5f9b" hidden="false" defaultSelectionEntryId="7e42-c96c-86e3-8b8b">
               <entryLinks>
-                <entryLink import="true" name="Chainsword" hidden="false" id="7e42-c96c-86e3-8b8b" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1"/>
                 <entryLink import="true" name="Chainglave" hidden="false" id="5ce9-746c-c445-5232" type="selectionEntry" targetId="3708-b181-5f26-4387" sortIndex="2">
                   <modifiers>
                     <modifier type="set" value="5" field="9893-c379-920b-8982"/>
                   </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="3d28-6bc0-05dc-e307" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="3"/>
+                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="3d28-6bc0-05dc-e307" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="1"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ede7-4f0e-eb35-d023"/>
@@ -483,6 +482,7 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="5614-1e93-4d4e-80d7" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="69ba-9600-44dc-a207" primary="false" name="Antigrav Model Sub-Type"/>
+            <categoryLink targetId="afd9-2b52-9cdd-30f2" id="d753-5772-637e-50f1" primary="false" name="Default Chainsword"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -591,12 +591,7 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
           <selectionEntryGroups>
             <selectionEntryGroup name="Exchange chainsword for:" id="7dfc-9eac-d171-f2ed" hidden="false" defaultSelectionEntryId="db65-7241-cf9c-6c47">
               <entryLinks>
-                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="60a2-4128-a80d-660e" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963"/>
-                <entryLink import="true" name="Chainsword" hidden="false" id="db65-7241-cf9c-6c47" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="984d-a657-3b2f-97a7"/>
-                  </constraints>
-                </entryLink>
+                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="60a2-4128-a80d-660e" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="1"/>
                 <entryLink import="true" name="Chainglave" hidden="false" id="7442-b158-e0fc-58c7" type="selectionEntry" targetId="3708-b181-5f26-4387" sortIndex="9">
                   <modifiers>
                     <modifier type="set" value="5" field="9893-c379-920b-8982"/>
@@ -710,6 +705,7 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
           <categoryLinks>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="5e08-6e72-bbf8-54c0" primary="false" name="Sergeant Model Sub-Type"/>
             <categoryLink targetId="594d-fa82-13cb-a345" id="8597-e0c7-4da1-a00f" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="afd9-2b52-9cdd-30f2" id="9111-d1ab-b6f9-e7b5" primary="false" name="Default Chainsword"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Executioner" hidden="false" id="2fc1-8f08-e3ee-fb5b" sortIndex="2" publicationId="e54c-7040-0f35-d85d" page="172">
