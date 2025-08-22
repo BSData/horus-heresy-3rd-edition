@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="43" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="44" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -443,6 +443,7 @@
     <categoryEntry name="Archmagos is Malagra" id="3006-172b-ba54-4d75" hidden="false"/>
     <categoryEntry name="Archmagos is Reductor" id="be35-75c1-1217-2fdb" hidden="false"/>
     <categoryEntry name="Archmagos is Macrotek" id="b25e-e5d1-1044-ea7c" hidden="false"/>
+    <categoryEntry name="Default Chainsword" id="afd9-2b52-9cdd-30f2" hidden="false"/>
     <categoryEntry name="Legion Champion" id="1baf-b200-9e02-844d" hidden="false"/>
     <categoryEntry name="Tip of the Spear" id="ea11-0241-9a96-06a5" hidden="false"/>
     <categoryEntry name="Decurion Sagittar" id="5498-66fa-1f62-7244" hidden="false"/>
@@ -878,13 +879,6 @@
                     </conditionGroup>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                      </conditions>
-                      <comment>Questoris</comment>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="acc1-f897-a117-9b4a" shared="true"/>
                       </conditions>
@@ -1098,17 +1092,17 @@
                     </conditionGroup>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                      </conditions>
-                      <comment>Questoris</comment>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="acc1-f897-a117-9b4a" shared="true"/>
                       </conditions>
                       <comment>Talons</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                      </conditions>
+                      <comment>Sisters</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -1291,13 +1285,6 @@
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
                       </conditions>
                       <comment>Mechanicum</comment>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                      </conditions>
-                      <comment>Questoris</comment>
                     </conditionGroup>
                     <conditionGroup type="and">
                       <conditions>
@@ -1504,13 +1491,6 @@
                     </conditionGroup>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                      </conditions>
-                      <comment>Questoris</comment>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="acc1-f897-a117-9b4a" shared="true"/>
                       </conditions>
@@ -1704,17 +1684,17 @@
                     </conditionGroup>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                      </conditions>
-                      <comment>Questoris</comment>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="acc1-f897-a117-9b4a" shared="true"/>
                       </conditions>
                       <comment>Talons</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                      </conditions>
+                      <comment>Sisters</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -1897,17 +1877,17 @@
                     </conditionGroup>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                      </conditions>
-                      <comment>Questoris</comment>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="acc1-f897-a117-9b4a" shared="true"/>
                       </conditions>
                       <comment>Talons</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                      </conditions>
+                      <comment>Sisters</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -2090,17 +2070,17 @@
                     </conditionGroup>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                      </conditions>
-                      <comment>Questoris</comment>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="acc1-f897-a117-9b4a" shared="true"/>
                       </conditions>
                       <comment>Talons</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                      </conditions>
+                      <comment>Sisters</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -2283,17 +2263,17 @@
                     </conditionGroup>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                      </conditions>
-                      <comment>Questoris</comment>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="acc1-f897-a117-9b4a" shared="true"/>
                       </conditions>
                       <comment>Talons</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                      </conditions>
+                      <comment>Sisters</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -2476,17 +2456,17 @@
                     </conditionGroup>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                      </conditions>
-                      <comment>Questoris</comment>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="acc1-f897-a117-9b4a" shared="true"/>
                       </conditions>
                       <comment>Talons</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                      </conditions>
+                      <comment>Sisters</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -2896,17 +2876,17 @@
                     </conditionGroup>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                      </conditions>
-                      <comment>Questoris</comment>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="acc1-f897-a117-9b4a" shared="true"/>
                       </conditions>
                       <comment>Talons</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                      </conditions>
+                      <comment>Sisters</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -3344,13 +3324,6 @@
                     </conditionGroup>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                      </conditions>
-                      <comment>Questoris</comment>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="acc1-f897-a117-9b4a" shared="true"/>
                       </conditions>
@@ -3771,17 +3744,17 @@
                     </conditionGroup>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-                      </conditions>
-                      <comment>Questoris</comment>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="acc1-f897-a117-9b4a" shared="true"/>
                       </conditions>
                       <comment>Talons</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                      </conditions>
+                      <comment>Sisters</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -9775,7 +9748,7 @@
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
-        <forceEntry name="Auxiliary - Stormwing Moster" id="bdf9-3781-2927-bc55" hidden="true" sortIndex="52" page="128" publicationId="b905-0414-1057-bb34">
+        <forceEntry name="Auxiliary - Stormwing Muster" id="bdf9-3781-2927-bc55" hidden="true" sortIndex="52" page="128" publicationId="b905-0414-1057-bb34">
           <categoryLinks>
             <categoryLink name="Retinue" hidden="false" id="826e-f0bb-f6e6-840d" targetId="a38e-50ff-310f-f19e">
               <constraints>
@@ -14441,7 +14414,7 @@
     </forceEntry>
     <forceEntry name="Allied Detachment and its Auxiliary" id="256b-b8a8-017a-75e9" hidden="false" childForcesLabel="Detachments" sortIndex="2">
       <forceEntries>
-        <forceEntry name="Allied Detachment " id="7469-bbd2-a2ad-f8a8" hidden="false" sortIndex="1">
+        <forceEntry name="Allied Detachment " id="7469-bbd2-a2ad-f8a8" hidden="true" sortIndex="1">
           <categoryLinks>
             <categoryLink name="Command" hidden="false" id="7866-0c42-0336-a2c9" targetId="6dbf-654a-f06f-2d69">
               <constraints>
@@ -14705,6 +14678,178 @@
               </constraints>
             </categoryLink>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                      </conditions>
+                      <comment>DA</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9a22-d01f-ab5c-ec07" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9a22-d01f-ab5c-ec07" shared="true"/>
+                      </conditions>
+                      <comment>EC</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="21c0-18db-03dd-ae07" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="21c0-18db-03dd-ae07" shared="true"/>
+                      </conditions>
+                      <comment>IW</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f7b4-2531-0962-1379" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f7b4-2531-0962-1379" shared="true"/>
+                      </conditions>
+                      <comment>WS</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d995-cb33-be41-ecf8" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="d995-cb33-be41-ecf8" shared="true"/>
+                      </conditions>
+                      <comment>SW</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f7b4-2531-0962-1379" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f7b4-2531-0962-1379" shared="true"/>
+                      </conditions>
+                      <comment>WS</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d186-cffc-0950-f632" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="d186-cffc-0950-f632" shared="true"/>
+                      </conditions>
+                      <comment>IF</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="486f-b32a-ac87-73dd" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="486f-b32a-ac87-73dd" shared="true"/>
+                      </conditions>
+                      <comment>NL</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9cff-ac34-56ca-260f" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9cff-ac34-56ca-260f" shared="true"/>
+                      </conditions>
+                      <comment>BA</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="736e-3967-e72b-e3ac" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="736e-3967-e72b-e3ac" shared="true"/>
+                      </conditions>
+                      <comment>IH</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a956-190d-3b47-6258" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="a956-190d-3b47-6258" shared="true"/>
+                      </conditions>
+                      <comment>WE</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="656a-07b6-d4fd-57af" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="656a-07b6-d4fd-57af" shared="true"/>
+                      </conditions>
+                      <comment>UM</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="be98-aa9d-64ef-f62c" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="be98-aa9d-64ef-f62c" shared="true"/>
+                      </conditions>
+                      <comment>DG</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="2496-21e2-1870-e9b8" shared="true"/>
+                      </conditions>
+                      <comment>TS</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ac06-fcec-b634-5bd9" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="ac06-fcec-b634-5bd9" shared="true"/>
+                      </conditions>
+                      <comment>SH</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4935-1832-63f7-91aa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="4935-1832-63f7-91aa" shared="true"/>
+                      </conditions>
+                      <comment>WB</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f148-a6e4-5a8c-3aeb" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f148-a6e4-5a8c-3aeb" shared="true"/>
+                      </conditions>
+                      <comment>SL</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="340c-1d4f-1f31-fb70" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="340c-1d4f-1f31-fb70" shared="true"/>
+                      </conditions>
+                      <comment>RG</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="8813-5298-c368-ee16" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="8813-5298-c368-ee16" shared="true"/>
+                      </conditions>
+                      <comment>AL</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7851-69ac-f701-034e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7851-69ac-f701-034e" shared="true"/>
+                      </conditions>
+                      <comment>Auxilia</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                      </conditions>
+                      <comment>Mechanicum</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="acc1-f897-a117-9b4a" shared="true"/>
+                      </conditions>
+                      <comment>Custodes</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                      </conditions>
+                      <comment>Sisters</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Visible to all factions</comment>
+            </modifier>
+          </modifiers>
         </forceEntry>
       </forceEntries>
       <modifiers>
@@ -14756,50 +14901,51 @@
         <constraint type="max" value="0" field="9893-c379-920b-8982" scope="roster" shared="true" id="3fef-ac67-de89-249f"/>
       </constraints>
       <forceEntryLinks>
-        <forceEntryLink name="Auxiliary - Armoured Fist" id="4bc4-a3a6-5f09-21a3" hidden="false" targetId="cc51-fdce-8a34-dbcf" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Tactical Support" id="1005-5fbc-4e0f-b526" hidden="false" targetId="2965-5682-3cbc-8b47" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Armoured Support" id="4182-3f45-4a7c-af4f" hidden="false" targetId="4a2f-ac9e-195e-77cf" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Heavy Support" id="4ebe-ef99-44e3-982b" hidden="false" targetId="bd1f-82a0-abd4-cd56" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Combat Pioneer" id="930c-edcd-4fee-a827" hidden="false" targetId="edf5-6891-81d8-6309" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Shock Assault" id="a4f6-bf0e-4d74-93f2" hidden="false" targetId="c9a5-3069-920b-32f1" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - First Strike" id="2705-eba9-40f2-8830" hidden="false" targetId="c444-8242-d3fc-b5b0" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Primacy Wing" id="9d42-ce89-40ba-b75b" hidden="false" targetId="b86b-981d-9aab-5675" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Tagmata Cohort" id="982b-e777-4d71-b5cd" hidden="false" targetId="59b8-2183-4bab-b91c" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Apprentice Cadre" id="d3da-a89a-48fb-a84b" hidden="false" targetId="6e73-e03d-9ae7-fd33" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - The Ironfire Cohort" id="9631-12a4-4369-ab93" hidden="false" targetId="5bc5-5224-c751-d437" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Reaping Host" id="6118-60f5-4b2a-9bd8" hidden="false" targetId="3b60-24c1-dccc-23db" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Primus Demi-Company" id="f022-da02-4c56-8987" hidden="false" targetId="1da1-f220-0bad-5f78" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Veletaris Tercio" id="ec81-9fed-48ec-b267" hidden="false" targetId="e1a1-2699-4681-47ab" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Armour Tercio" id="184f-9e8c-4e5a-b2ec" hidden="false" targetId="6aff-b91d-02bb-7461" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Artillery Tercio" id="b95f-5a46-4ea8-8e07" hidden="false" targetId="371d-e9ef-7bf9-47de" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Infantry Tercio" id="a689-f421-449d-babb" hidden="false" targetId="243b-4ffd-9808-11d8" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Scout Tercio" id="284d-ffbb-43f0-8b62" hidden="false" targetId="551a-23a1-7758-2688" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Chogorian Warband" id="e550-3a10-4bd2-b8e4" hidden="false" targetId="0f6e-3db8-8b6f-74e1" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Terror Assault" id="9a9b-676b-4f7e-89e4" hidden="false" targetId="8fe1-7b62-49cf-479b" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Berserker Cadre" id="adad-7da5-4498-8c29" hidden="false" targetId="bda6-c5d3-eafc-4eb5" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Bloodied Claw" id="9567-7bf9-48b6-bd42" hidden="false" targetId="06b3-c35d-da74-de37" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Revelation Host" id="ab8a-2fd7-4557-a39e" hidden="false" targetId="edb0-a5d8-84f1-4eee" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Sons of Bodt" id="18ab-ac91-4235-8c84" hidden="false" targetId="9bfb-c160-31df-9108" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Spearhead Phalanx" id="928f-1a3e-42de-8f77" hidden="false" targetId="4737-e73a-394e-433f" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Supremecy Cadre" id="ca99-8902-46b2-b4a2" hidden="false" targetId="2436-a714-22cc-fd31" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Stormwing Moster" id="23c5-b8c8-4024-b5f1" hidden="false" targetId="bdf9-3781-2927-bc55" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Deathwing Conclave" id="da5f-542c-4a2f-86be" hidden="false" targetId="9b6c-2a18-7b8a-1aab" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Ravenwing Lance" id="3d86-c93e-485b-b392" hidden="false" targetId="466d-8e42-0890-721a" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Firewing Echelon" id="7d8a-a61b-4825-ba4c" hidden="false" targetId="3e2f-4f99-d366-7a95" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Ironwing Gauntlet" id="4cb4-0358-4d3d-b3db" hidden="false" targetId="cb64-b547-1144-fd70" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Dreadwing Cadre" id="3dfd-8884-43d2-b59b" hidden="false" targetId="4df8-3a15-6b77-1b80" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Siege Gauntlet" id="91fb-36b7-4937-8d72" hidden="false" targetId="1581-346d-51c6-4739" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Immolation Covenant" id="5875-92d3-403b-8708" hidden="false" targetId="04d2-0a69-061e-75fe" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Decapitation Cadre" id="462a-d727-437a-b75b" hidden="false" targetId="27bf-3e6b-587c-74bb" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Prosperine Convocation" id="f563-8352-406e-a7c7" hidden="false" targetId="450b-0ca8-0beb-ff89" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Headhunter Leviathal" id="0afa-9247-4d3a-8464" hidden="false" targetId="74f4-a9d0-a2be-b4bd" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Daemonic Manifestation" id="ad3a-ba8e-4a34-aff8" hidden="false" targetId="0078-217d-19d4-a354" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Veteran Cadre" id="bb21-6a0d-49a8-98ce" hidden="false" targetId="1834-a10c-a732-d989" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Apothecarion Delegation" id="2fef-2712-4d36-8f7a" hidden="false" targetId="41f6-7dfc-4eb9-f6ef" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Techmarine Covenant" id="d478-ad3d-4af7-9ef7" hidden="false" targetId="7993-0219-c614-f612" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Storm Battery" id="d970-aac1-4559-8540" hidden="false" targetId="d089-8cc7-96a7-903f" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Recon Demi-Company" id="039a-b6c4-4ef2-b686" hidden="false" targetId="38f7-2240-f8ee-6cce" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Iron Tercio" id="de8f-bbd0-46b9-9743" hidden="false" targetId="9a10-a2d9-5a87-a5a9" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Armoured Fist" id="4bc4-a3a6-5f09-21a3" hidden="true" targetId="cc51-fdce-8a34-dbcf" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Tactical Support" id="1005-5fbc-4e0f-b526" hidden="true" targetId="2965-5682-3cbc-8b47" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Armoured Support" id="4182-3f45-4a7c-af4f" hidden="true" targetId="4a2f-ac9e-195e-77cf" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Heavy Support" id="4ebe-ef99-44e3-982b" hidden="true" targetId="bd1f-82a0-abd4-cd56" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Combat Pioneer" id="930c-edcd-4fee-a827" hidden="true" targetId="edf5-6891-81d8-6309" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Shock Assault" id="a4f6-bf0e-4d74-93f2" hidden="true" targetId="c9a5-3069-920b-32f1" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - First Strike" id="2705-eba9-40f2-8830" hidden="true" targetId="c444-8242-d3fc-b5b0" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Primacy Wing" id="9d42-ce89-40ba-b75b" hidden="true" targetId="b86b-981d-9aab-5675" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Tagmata Cohort" id="982b-e777-4d71-b5cd" hidden="true" targetId="59b8-2183-4bab-b91c" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Apprentice Cadre" id="d3da-a89a-48fb-a84b" hidden="true" targetId="6e73-e03d-9ae7-fd33" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - The Ironfire Cohort" id="9631-12a4-4369-ab93" hidden="true" targetId="5bc5-5224-c751-d437" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Reaping Host" id="6118-60f5-4b2a-9bd8" hidden="true" targetId="3b60-24c1-dccc-23db" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Primus Demi-Company" id="f022-da02-4c56-8987" hidden="true" targetId="1da1-f220-0bad-5f78" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Veletaris Tercio" id="ec81-9fed-48ec-b267" hidden="true" targetId="e1a1-2699-4681-47ab" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Armour Tercio" id="184f-9e8c-4e5a-b2ec" hidden="true" targetId="6aff-b91d-02bb-7461" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Artillery Tercio" id="b95f-5a46-4ea8-8e07" hidden="true" targetId="371d-e9ef-7bf9-47de" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Infantry Tercio" id="a689-f421-449d-babb" hidden="true" targetId="243b-4ffd-9808-11d8" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Scout Tercio" id="284d-ffbb-43f0-8b62" hidden="true" targetId="551a-23a1-7758-2688" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Chogorian Warband" id="e550-3a10-4bd2-b8e4" hidden="true" targetId="0f6e-3db8-8b6f-74e1" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Terror Assault" id="9a9b-676b-4f7e-89e4" hidden="true" targetId="8fe1-7b62-49cf-479b" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Berserker Cadre" id="adad-7da5-4498-8c29" hidden="true" targetId="bda6-c5d3-eafc-4eb5" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Bloodied Claw" id="9567-7bf9-48b6-bd42" hidden="true" targetId="06b3-c35d-da74-de37" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Revelation Host" id="ab8a-2fd7-4557-a39e" hidden="true" targetId="edb0-a5d8-84f1-4eee" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Sons of Bodt" id="18ab-ac91-4235-8c84" hidden="true" targetId="9bfb-c160-31df-9108" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Spearhead Phalanx" id="928f-1a3e-42de-8f77" hidden="true" targetId="4737-e73a-394e-433f" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Supremecy Cadre" id="ca99-8902-46b2-b4a2" hidden="true" targetId="2436-a714-22cc-fd31" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Stormwing Muster" id="23c5-b8c8-4024-b5f1" hidden="true" targetId="bdf9-3781-2927-bc55" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Deathwing Conclave" id="da5f-542c-4a2f-86be" hidden="true" targetId="9b6c-2a18-7b8a-1aab" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Ravenwing Lance" id="3d86-c93e-485b-b392" hidden="true" targetId="466d-8e42-0890-721a" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Firewing Echelon" id="7d8a-a61b-4825-ba4c" hidden="true" targetId="3e2f-4f99-d366-7a95" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Ironwing Gauntlet" id="4cb4-0358-4d3d-b3db" hidden="true" targetId="cb64-b547-1144-fd70" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Dreadwing Cadre" id="3dfd-8884-43d2-b59b" hidden="true" targetId="4df8-3a15-6b77-1b80" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Siege Gauntlet" id="91fb-36b7-4937-8d72" hidden="true" targetId="1581-346d-51c6-4739" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Immolation Covenant" id="5875-92d3-403b-8708" hidden="true" targetId="04d2-0a69-061e-75fe" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Decapitation Cadre" id="462a-d727-437a-b75b" hidden="true" targetId="27bf-3e6b-587c-74bb" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Prosperine Convocation" id="f563-8352-406e-a7c7" hidden="true" targetId="450b-0ca8-0beb-ff89" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Headhunter Leviathal" id="0afa-9247-4d3a-8464" hidden="true" targetId="74f4-a9d0-a2be-b4bd" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Daemonic Manifestation" id="ad3a-ba8e-4a34-aff8" hidden="true" targetId="0078-217d-19d4-a354" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Veteran Cadre" id="bb21-6a0d-49a8-98ce" hidden="true" targetId="1834-a10c-a732-d989" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Apothecarion Delegation" id="2fef-2712-4d36-8f7a" hidden="true" targetId="41f6-7dfc-4eb9-f6ef" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Techmarine Covenant" id="d478-ad3d-4af7-9ef7" hidden="true" targetId="7993-0219-c614-f612" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Storm Battery" id="d970-aac1-4559-8540" hidden="true" targetId="d089-8cc7-96a7-903f" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Recon Demi-Company" id="039a-b6c4-4ef2-b686" hidden="true" targetId="38f7-2240-f8ee-6cce" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Iron Tercio" id="de8f-bbd0-46b9-9743" hidden="true" targetId="9a10-a2d9-5a87-a5a9" type="forceEntry"/>
+        <forceEntryLink name="Auxilliary - Planetfall Speartip" id="f263-08d1-5547-8666" hidden="false" targetId="2e50-319d-ae62-a50c" type="forceEntry"/>
       </forceEntryLinks>
     </forceEntry>
     <forceEntry name="Lord of War Detachment" id="b7a1-629f-9d60-c2a9" hidden="false" sortIndex="3">
@@ -15563,17 +15709,66 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Allegiance" id="9fa8-cbae-ef5e-4b7c" hidden="false">
+    <selectionEntryGroup name="Allegiance" id="9fa8-cbae-ef5e-4b7c" hidden="false" defaultSelectionEntryId="none">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Loyalist" hidden="false" id="e1e1-a344-d3e2-0b91"/>
+        <selectionEntry type="upgrade" import="true" name="Loyalist" hidden="false" id="e1e1-a344-d3e2-0b91">
+          <modifiers>
+            <modifier type="set" value="1" field="defaultAmount">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f7b4-2531-0962-1379" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d995-cb33-be41-ecf8" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d186-cffc-0950-f632" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9cff-ac34-56ca-260f" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="736e-3967-e72b-e3ac" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="656a-07b6-d4fd-57af" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f148-a6e4-5a8c-3aeb" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="340c-1d4f-1f31-fb70" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="258b-97fb-2366-7344" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="258b-97fb-2366-7348" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Traitor" hidden="false" id="597e-83d8-32e1-8eaa">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="258b-97fb-2366-7344" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true" includeChildForces="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="258b-97fb-2366-7344" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="defaultAmount">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9a22-d01f-ab5c-ec07" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="21c0-18db-03dd-ae07" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="486f-b32a-ac87-73dd" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a956-190d-3b47-6258" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="be98-aa9d-64ef-f62c" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ac06-fcec-b634-5bd9" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a956-190d-3b47-6258" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="8813-5298-c368-ee16" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
