@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="39" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="40" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -16669,6 +16669,35 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               <comment># Tactical + Despoiler squad only</comment>
             </modifier>
           </modifiers>
+          <infoLinks>
+            <infoLink name="Expendable (X)" id="dd4c-338a-8287-7d9a" hidden="false" type="rule" targetId="c4d4-e053-9564-540b">
+              <modifiers>
+                <modifier type="set" value="Expendable (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <rules>
+            <rule name="Concealed Positions" id="1d63-2f66-d366-3a2a" hidden="false">
+              <description>&quot;This Special Rule allows Models to use an Advanced Reaction to arrive from Reserves in close proximity to an enemy Unit.&quot;
+
+
+The Controlling Player of a Unit that only contains Models with this Special Rule can use the Concealed Ambush Advanced Reaction.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Concealed Ambush Advanced Reaction" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="5139-b026-7fc8-0cb7">
+              <characteristics>
+                <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b"/>
+                <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare the Concealed Ambush Advanced Reaction in Step 2 of the Move Sub-Phase process after an enemy Unit ends a Move.</characteristic>
+                <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Concealed Ambush Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9"> The Target Unit is always the Unit whose Move triggered the Reaction. The Reactive Player must select one Unit under their control that only includes Models with the Concealed Positions Special Rule that is in Reserves. That Unit is the Reacting Unit.</characteristic>
+                <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. The Reactive Player must select one Model from the Reacting Unit and place it anywhere on the Battlefield that is not within their Opponent&apos;s Deployment Zone, within 6&quot; of the Unit that triggered this Reaction and at least 5&quot; away from any enemy Model and 1&quot; from any Battlefield Edge or piece of Impassable Terrain. Once this first Model has been placed, the remaining Models in the Unit must be placed within Unit Coherency with at least one other Model in the same Unit and within 6&quot; of the first Model placed. No Models may be placed within 5&quot; of an enemy Model, or within 1&quot; of any Battlefield Edge or a piece of Impassable Terrain or within their Opponent&apos;s Deployment Zone. Any Models that cannot be placed using these Rules must be Removed as a Casualty immediately.
+
+
+2. Once the Reacting Unit has been set up, the Reacting Player can either make a Shooting Attack with the Reacting Unit against the Unit that triggered this Reaction, but any attacks are made as Snap Shots, or make a Disordered Charge for the Reacting</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Sagyar Mazan" hidden="true" id="3e87-9001-c142-6487">
           <modifiers>
