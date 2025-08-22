@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="39" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="40" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -4122,8 +4122,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <selectionEntryGroups>
             <selectionEntryGroup name="Two options from the following list:" id="d25e-85ec-02d5-cf19" hidden="false" sortIndex="1" defaultSelectionEntryId="none">
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="54e1-e647-cd52-aed7"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8e32-2b06-3162-7dbc"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="54e1-e647-cd52-aed7" automatic="true"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8e32-2b06-3162-7dbc" automatic="true"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Leviathan siege claw and one meltagun" hidden="false" id="b2b0-557f-985e-ab0c" sortIndex="1">
@@ -4141,6 +4141,9 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8526-e79f-d76f-d539"/>
+                  </constraints>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Leviathan siege drill and one meltagun" hidden="false" id="b7ea-377b-438e-f1ab" sortIndex="2">
                   <entryLinks>
@@ -4164,6 +4167,9 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
                     <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
                   </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5207-4d07-b3af-aca1"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -4208,7 +4214,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </selectionEntryGroup>
           </selectionEntryGroups>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Paired Leviathan siege claws and two meltaguns" hidden="false" id="d949-5b9f-f2dd-a0e4" sortIndex="6">
+            <selectionEntry type="upgrade" import="true" name="Paired Leviathan siege claws and two meltaguns" hidden="false" id="d949-5b9f-f2dd-a0e4">
               <entryLinks>
                 <entryLink import="true" name="Paired Leviathan siege claws" hidden="false" id="d743-6479-90b0-f8c2" type="selectionEntry" targetId="0d5c-0630-689b-ae6f" sortIndex="1">
                   <constraints>
@@ -4230,8 +4236,11 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
                 <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a607-8a39-eaba-3e7d"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Paired Leviathan siege drills and two meltaguns" hidden="false" id="1a93-0e7a-66c4-01c2" sortIndex="7">
+            <selectionEntry type="upgrade" import="true" name="Paired Leviathan siege drills and two meltaguns" hidden="false" id="1a93-0e7a-66c4-01c2">
               <entryLinks>
                 <entryLink import="true" name="Paired Leviathan siege drills" hidden="false" id="2224-9bfa-dc55-dc21" type="selectionEntry" targetId="f1d4-d297-2484-deb1" sortIndex="1">
                   <constraints>
@@ -4253,33 +4262,36 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
                 <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2707-c242-878b-3423"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <modifiers>
-            <modifier type="set" value="1" field="4575-f901-8749-e844">
+            <modifier type="set" value="1" field="c2ee-a68d-021c-abd7">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="d949-5b9f-f2dd-a0e4" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="1a93-0e7a-66c4-01c2" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="d949-5b9f-f2dd-a0e4" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="1a93-0e7a-66c4-01c2" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" value="1" field="acc4-9585-42c8-1e79">
+            <modifier type="set" value="1" field="d98a-e7a9-3892-0dfe">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="d949-5b9f-f2dd-a0e4" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="1a93-0e7a-66c4-01c2" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="d949-5b9f-f2dd-a0e4" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="1a93-0e7a-66c4-01c2" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4575-f901-8749-e844"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="acc4-9585-42c8-1e79"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d98a-e7a9-3892-0dfe"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c2ee-a68d-021c-abd7"/>
           </constraints>
         </selectionEntryGroup>
         <selectionEntryGroup name="May exchange it&apos;s two heavy flamers for:" id="8e43-cf94-01a8-3793" hidden="false" defaultSelectionEntryId="ca31-9576-d967-e694" sortIndex="3">
