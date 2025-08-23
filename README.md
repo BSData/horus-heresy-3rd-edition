@@ -57,6 +57,8 @@ All units should include a link to the GST's "Prime Unit" selection entry. :robo
 
 Inside that link, you should link to your faction's list of "Prime Benefits" selection entry group. :robot: Checked by the unit tests
 
+For all Units that use the standard Profile, but not High Command or Unique - add the Combat Veterans Modifier Group to the profile - see existing profiles for implementation.
+
 ###  Astartes Units
 All Astartes units should have the following Traits at the root level of the unit (Add Link -> Profile -> Search for them):
 - \[Allegiance]
