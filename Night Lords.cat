@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="486f-b32a-ac87-73dd" name="                         VIII - Night Lords" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="13" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="486f-b32a-ac87-73dd" name="                         VIII - Night Lords" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="14" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Konrad Curze" hidden="false" id="f5fd-f425-c610-4a94">
       <selectionEntries>
@@ -206,41 +206,18 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                     </profile>
                   </profiles>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Escaton power claw" hidden="false" id="3cb3-5f5c-a06d-e500">
-                  <profiles>
-                    <profile name="Escaton power claw" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="b2c9-981a-82d8-04ed">
-                      <characteristics>
-                        <characteristic name="IM" typeId="6eec-4093-f946-1014">-2</characteristic>
-                        <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
-                        <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+3</characteristic>
-                        <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
-                        <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
-                        <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Shred (6+)</characteristic>
-                        <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Shred (X)" id="e87d-b0b9-ffa1-ff0b" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
-                      <comment>6+</comment>
-                      <modifiers>
-                        <modifier type="set" value="Shred (6+)" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-                    <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
-                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
-                  </costs>
-                </selectionEntry>
               </selectionEntries>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="226e-b4e5-805c-e258"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae1f-ef23-1ee3-7f2b"/>
               </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Escaton power claw" hidden="false" id="f568-01eb-87e8-1591" type="selectionEntry" targetId="a284-2bc5-12da-ec8a">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -282,27 +259,14 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="72b6-82be-4c94-ab91" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Chainblade" hidden="false" id="ff1b-4210-e8fc-5458">
+          <entryLinks>
+            <entryLink import="true" name="Chainblade" hidden="false" id="67b2-7f1a-e8da-55aa" type="selectionEntry" targetId="c771-887d-bb22-6a27">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b98c-0dae-df62-584a"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b18b-fe9d-4e75-b4f4"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a312-28fe-0fbc-36d3"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32a3-ff03-02d5-9e29"/>
               </constraints>
-              <profiles>
-                <profile name="Chainblade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="bcbf-0a6f-d1f0-aa9a">
-                  <characteristics>
-                    <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
-                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
-                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+1</characteristic>
-                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
-                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+), Shred (6+)</characteristic>
-                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Chain</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -423,14 +387,79 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
             <categoryLink targetId="afd9-2b52-9cdd-30f2" id="637c-face-4171-dbd7" primary="false" name="Default Chainsword"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May replace it&apos;s chainsword with:" id="f240-8d6d-eac6-f708" hidden="false" defaultSelectionEntryId="7e42-c96c-86e3-8b8b">
-              <entryLinks>
-                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="374b-ce5c-299d-f8fc" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="1" flatten="true"/>
-              </entryLinks>
+            <selectionEntryGroup name="Options" id="51fb-0aa0-5b0c-5094" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="May exchange chainsword for:" id="d844-7543-e70a-bd6d" hidden="false" defaultSelectionEntryId="none" sortIndex="3" flatten="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="d83d-81c6-9481-dde5" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" flatten="true" sortIndex="2">
+                      <modifiers>
+                        <modifier type="set" value="9994-4d65-a0b5-bef0" field="defaultSelectionEntryId">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="afd9-2b52-9cdd-30f2" shared="true" includeChildSelections="true"/>
+                            <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="1" field="6a16-0b8c-6417-70cc">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="afd9-2b52-9cdd-30f2" shared="true" includeChildSelections="true"/>
+                            <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <entryLinks>
+                        <entryLink import="true" name="Chainblade" hidden="false" id="b8c3-de5c-c2fe-f22f" type="selectionEntry" targetId="c771-887d-bb22-6a27"/>
+                      </entryLinks>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="20e0-f592-2e2f-2d6f" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a1d-8605-1022-6611" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="9a1d-8605-1022-6611">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="bolt pistol" id="9479-b1ed-b46f-fae3" hidden="false" defaultSelectionEntryId="e314-f5bf-dc6d-7683">
+                  <entryLinks>
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="e314-f5bf-dc6d-7683" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="caa6-1f94-dea9-e14f" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5335-b678-590b-8f2c" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="5335-b678-590b-8f2c">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ea9-b042-5ce9-4f82"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85ae-5388-d501-82c3"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a73f-2a8b-d59d-ba2c" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="a73f-2a8b-d59d-ba2c">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <entryLinks>
+                <entryLink import="true" name="Pair of lightning claws" hidden="false" id="227a-8cc8-8c6e-7237" type="selectionEntry" targetId="6754-24dd-5be0-26ff" sortIndex="1">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b584-06ba-e65e-bfea" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
@@ -466,14 +495,120 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Any Model in this Unit may replace it&apos;s chainsword with:" id="1cee-1725-3357-5f9b" hidden="false" defaultSelectionEntryId="7e42-c96c-86e3-8b8b">
-              <entryLinks>
-                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="3d28-6bc0-05dc-e307" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="1"/>
-              </entryLinks>
+            <selectionEntryGroup name="Options" id="9a82-9edc-4cee-13d6" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="May exchange bolt pistol for:" id="9ac5-b489-c4b9-2c88" hidden="false" defaultSelectionEntryId="38ad-3258-60c4-072e" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="4f33-34e7-aa59-19d9" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bc5-4ce3-765e-19ee" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad97-327d-d938-a9df" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="ad97-327d-d938-a9df">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="1 in 5 may replace bolt pistol with:" id="54bd-8cd5-4bb0-ec3f" hidden="false" collapsible="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Flamer" hidden="false" id="2423-a4c9-f923-c081" type="selectionEntry" targetId="9a45-35cd-3806-2303">
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Meltagun" hidden="false" id="aabd-0552-abda-9d3f" type="selectionEntry" targetId="b1e1-e164-5877-6734">
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Plasma gun" hidden="false" id="e162-eb89-95cf-ddc4" type="selectionEntry" targetId="433d-56e0-9878-dea1">
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Plasma pistol" hidden="false" id="94ea-b6cf-a52c-2a28" type="selectionEntry" targetId="659f-d52e-1515-2912">
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Volkite serpenta" hidden="false" id="28b2-6f81-a975-fc48" type="selectionEntry" targetId="b7c3-1de1-087c-3d6e">
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="d2bd-3a84-5191-afa8">
+                          <repeats>
+                            <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="d2bd-3a84-5191-afa8" includeChildSelections="true"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="May exchange chainsword for:" id="2313-654c-8f4c-db12" hidden="false" defaultSelectionEntryId="none" sortIndex="3" flatten="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="9a85-4f16-edbb-ee40" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" flatten="true" sortIndex="2">
+                      <modifiers>
+                        <modifier type="set" value="9994-4d65-a0b5-bef0" field="defaultSelectionEntryId">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="afd9-2b52-9cdd-30f2" shared="true" includeChildSelections="true"/>
+                            <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="1" field="6a16-0b8c-6417-70cc">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="afd9-2b52-9cdd-30f2" shared="true" includeChildSelections="true"/>
+                            <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <entryLinks>
+                        <entryLink import="true" name="Chainblade" hidden="false" id="c7c5-402a-8562-d371" type="selectionEntry" targetId="c771-887d-bb22-6a27"/>
+                      </entryLinks>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41ca-df66-e3cc-d87f" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a5da-81ba-5a29-9cdc" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="a5da-81ba-5a29-9cdc">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ede7-4f0e-eb35-d023"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc05-5b32-e0da-da10"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b8e4-7f33-8282-3185" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="b8e4-7f33-8282-3185">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <entryLinks>
+                <entryLink import="true" name="Pair of lightning claws" hidden="false" id="e6e1-1477-fc83-d4b4" type="selectionEntry" targetId="6754-24dd-5be0-26ff" sortIndex="1">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2228-6e62-3d2e-502a" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -527,12 +662,6 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Bolt pistol" hidden="false" id="eaa3-dc90-90d6-677d" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="3">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c825-9787-9f54-6d8b"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74ca-4f09-8fa0-e1fd"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Frag grenades" hidden="false" id="c233-47bd-46b3-5754" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="4">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e127-0cc5-670d-5a75"/>
@@ -631,6 +760,14 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3bfc-8bc2-26c8-01b5"/>
                   </constraints>
+                </entryLink>
+                <entryLink import="true" name="Chainblade" hidden="false" id="c31f-e43a-d377-410e" type="selectionEntry" targetId="c771-887d-bb22-6a27" sortIndex="10">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60bb-4429-fd7f-d116"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -781,6 +918,14 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8183-50c9-2161-d6a1"/>
                   </constraints>
+                </entryLink>
+                <entryLink import="true" name="Chainblade" hidden="false" id="4c4e-19f7-632f-92a9" type="selectionEntry" targetId="c771-887d-bb22-6a27" sortIndex="10">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7243-8ea8-91f2-2171"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -1087,6 +1232,33 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9433-8656-2d67-d404"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec64-9f3e-c224-783d"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chainblade" hidden="false" id="c771-887d-bb22-6a27">
+      <profiles>
+        <profile name="Chainblade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="4c77-beec-928f-7859">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+1</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+), Shred (6+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Chain</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="91e8-0a09-1561-2b40" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shred (X)" id="8185-70b4-388d-dd07" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
+          <modifiers>
+            <modifier type="set" value="Shred (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>

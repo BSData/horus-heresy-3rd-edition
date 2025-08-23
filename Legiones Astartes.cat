@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="42" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="43" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -3425,30 +3425,32 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                       <modifiers>
                         <modifier type="set" value="9994-4d65-a0b5-bef0" field="defaultSelectionEntryId"/>
                       </modifiers>
-                    </entryLink>
-                    <entryLink import="true" name="Heavy chainsword" hidden="false" id="cb56-031f-1f5e-d648" type="selectionEntry" targetId="e175-3b00-8885-b321" sortIndex="4">
-                      <constraints>
-                        <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="eac0-72ae-9e33-bfab"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier type="increment" value="2" field="eac0-72ae-9e33-bfab">
-                          <repeats>
-                            <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false"/>
-                          </repeats>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink import="true" name="Heavy chainaxe" hidden="false" id="e56a-a208-fc54-433c" type="selectionEntry" targetId="3a14-74ac-8634-c204" sortIndex="3">
-                      <constraints>
-                        <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="32c1-ca4e-54d3-2c2c"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier type="increment" value="2" field="32c1-ca4e-54d3-2c2c">
-                          <repeats>
-                            <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false"/>
-                          </repeats>
-                        </modifier>
-                      </modifiers>
+                      <entryLinks>
+                        <entryLink import="true" name="Heavy chainaxe" hidden="false" id="e56a-a208-fc54-433c" type="selectionEntry" targetId="3a14-74ac-8634-c204" sortIndex="16">
+                          <constraints>
+                            <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="32c1-ca4e-54d3-2c2c"/>
+                          </constraints>
+                          <modifiers>
+                            <modifier type="increment" value="2" field="32c1-ca4e-54d3-2c2c">
+                              <repeats>
+                                <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false"/>
+                              </repeats>
+                            </modifier>
+                          </modifiers>
+                        </entryLink>
+                        <entryLink import="true" name="Heavy chainsword" hidden="false" id="cb56-031f-1f5e-d648" type="selectionEntry" targetId="e175-3b00-8885-b321" sortIndex="17">
+                          <constraints>
+                            <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="eac0-72ae-9e33-bfab"/>
+                          </constraints>
+                          <modifiers>
+                            <modifier type="increment" value="2" field="eac0-72ae-9e33-bfab">
+                              <repeats>
+                                <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false"/>
+                              </repeats>
+                            </modifier>
+                          </modifiers>
+                        </entryLink>
+                      </entryLinks>
                     </entryLink>
                   </entryLinks>
                   <constraints>
@@ -16211,6 +16213,24 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Escaton power claw" hidden="true" id="c0b1-8efb-c14a-d982" type="selectionEntry" targetId="a284-2bc5-12da-ec8a" sortIndex="25">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="486f-b32a-ac87-73dd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>NL</comment>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>NL+Cmd Only</comment>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Legion Equipment" id="0e69-ccf1-cde7-acaf" hidden="false" sortIndex="7" collapsible="true">
@@ -16665,11 +16685,13 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <modifier type="set" value="9994-4d65-a0b5-bef0" field="defaultSelectionEntryId">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="afd9-2b52-9cdd-30f2" shared="true" includeChildSelections="true"/>
+            <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
           </conditions>
         </modifier>
         <modifier type="set" value="1" field="6a16-0b8c-6417-70cc">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="afd9-2b52-9cdd-30f2" shared="true" includeChildSelections="true"/>
+            <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
