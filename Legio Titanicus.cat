@@ -377,7 +377,11 @@
         <infoLink name="Legio Armsmen" id="1311-89d9-4e6e-8065" hidden="false" type="rule" targetId="2f9d-aa76-f8e2-48b0"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Prime Unit" hidden="true" id="8f98-415f-ccb1-4a44" type="selectionEntry" targetId="4be4-9f11-d29f-692a"/>
+        <entryLink import="true" name="Prime Unit" hidden="true" id="8f98-415f-ccb1-4a44" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="9c3c-e6b3-efa5-063f" type="selectionEntryGroup" targetId="9fd7-6bf8-6de7-761f"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Arc lance" hidden="false" id="6f7e-431e-6b00-fb41">
@@ -597,7 +601,11 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Prime Unit" hidden="true" id="44d3-7a8f-b031-997f" type="selectionEntry" targetId="4be4-9f11-d29f-692a"/>
+        <entryLink import="true" name="Prime Unit" hidden="true" id="90ab-ae2a-7fb0-0d4a" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="8018-f22b-af89-b775" type="selectionEntryGroup" targetId="9fd7-6bf8-6de7-761f"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Legio Armsmen" id="1d9c-7485-6caa-7e83" hidden="false" type="rule" targetId="2f9d-aa76-f8e2-48b0"/>
@@ -822,9 +830,6 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Prime Unit" hidden="true" id="6e6e-7915-044a-3adc" type="selectionEntry" targetId="4be4-9f11-d29f-692a"/>
-      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Vulcan mega-bolter" hidden="false" id="bdab-7645-227b-1efb">
       <profiles>
@@ -1139,9 +1144,6 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Prime Unit" hidden="true" id="4c78-7f31-3f9e-a70b" type="selectionEntry" targetId="4be4-9f11-d29f-692a"/>
-      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Minoris" hidden="false" id="cf0a-5a49-43f4-58d6">
       <categoryLinks>
@@ -1536,9 +1538,6 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Prime Unit" hidden="true" id="4d1c-0b15-1418-2eb4" type="selectionEntry" targetId="4be4-9f11-d29f-692a"/>
-      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Nemesis quake cannon" hidden="false" id="f206-166d-c2bc-f5f8">
       <profiles>
@@ -1896,9 +1895,6 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="Prime Unit" hidden="true" id="3ce4-c2f9-f581-78ef" type="selectionEntry" targetId="4be4-9f11-d29f-692a"/>
-      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Mori quake cannon" hidden="false" id="0038-bcf2-098d-e4da">
       <profiles>
@@ -2101,10 +2097,17 @@
     <categoryEntry name="Majoris Crew" id="901e-87f3-be7f-c3ed" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Prime Benefits" id="9fd7-6bf8-6de7-761f" hidden="true">
+    <selectionEntryGroup name="Prime Benefits" id="9fd7-6bf8-6de7-761f" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="None" hidden="false" id="6d3f-eef2-15c9-41af"/>
+        <selectionEntry type="upgrade" import="true" name="None" hidden="true" id="6d3f-eef2-15c9-41af">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34dd-f0a3-f689-bd77"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23a6-d182-7bd4-3267"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
