@@ -151,12 +151,26 @@ For example, "The Iron-clad" in LA or "Clade Operative" assassins.
 * Set the prime option to hidden on the unit if the ancestor is this type of slot.
 
 
-Whenever you do this, you will need to update the tests. Search in validate3.py for test_root_link_categories 
-and add your new category to the list of expected primaries. Case matters.
+Whenever you do this, you will need to update the tests. Update the lists at the top of validatehh3.py for test_root_link_categories 
+and add your new category to the appropriate list, with the name matching exactly.
 ```python
-        expected_primaries += ['Army Configuration', 'Rewards of Treachery', "Master of Automata", 
-                               "etc", "Your new one"
-                               ]
+
+PRIME_ADVANTAGE_SLOTS = ["Rewards of Treachery",
+                         "Master of Automata",
+                         "Clade Operative",
+                         ]
+
+LA_PRIME_BENEFIT_SLOT_UPGRADES = {
+    "Battlefield role": [
+        "New Version"
+    ],
+    "Transport": [
+        "Transport - Logisticae"
+    ],
+    "Heavy Transport": [
+        "Heavy Transport - Logisticae"
+    ],
+}
 ```
 
 

@@ -11,6 +11,23 @@ from BSCopy.system.game.heresy3e import Heresy3e
 from BSCopy.util.text_utils import read_type_and_subtypes
 from BSCopy.book_reader.raw_entry import RawModel
 
+PRIME_ADVANTAGE_SLOTS = ["Rewards of Treachery",
+                         "Master of Automata",
+                         "Clade Operative",
+                         ]
+
+LA_PRIME_BENEFIT_SLOT_UPGRADES = {
+    "War-engine": [
+        "War-engine - Upgraded by The Iron-clad",
+    ],
+    "Transport": [
+        "Transport - Logisticae",
+    ],
+    "Heavy Transport": [
+        "Heavy Transport - Logisticae",
+    ],
+}
+
 
 class GameTests(unittest.TestCase):
 
@@ -45,9 +62,9 @@ class GameTests(unittest.TestCase):
 
     def test_root_link_categories(self):
         expected_primaries = Heresy3e.BATTLEFIELD_ROLES.copy()
-        expected_primaries += ['Army Configuration', 'Rewards of Treachery', "Master of Automata",
-                               "Clade Operative", "War-engine - Upgraded by The Iron-clad",
-                               ]
+        expected_primaries += ['Army Configuration'] + PRIME_ADVANTAGE_SLOTS
+        for upgraded_slot_list in LA_PRIME_BENEFIT_SLOT_UPGRADES.values():
+            expected_primaries += upgraded_slot_list
         expected_secondaries = Heresy3e.FACTIONS.copy()
         for file in self.system.files:
             entry_links_node = file.root_node.get_child(tag='entryLinks')
@@ -301,11 +318,7 @@ class GameTests(unittest.TestCase):
 
     def test_specific_upgrade_slots_LA(self):
         system_file = next(filter(lambda sf: sf.name == "Legiones Astartes.cat", self.system.files), None)
-        slots_and_upgrades = {
-            "War-engine": [
-                "War-engine - Upgraded by The Iron-clad"
-            ],
-        }
+        slots_and_upgrades = LA_PRIME_BENEFIT_SLOT_UPGRADES
         # First sort all the units in the cat by slot
         entry_links_node = system_file.root_node.get_child(tag='entryLinks')
         units_by_slot = {}

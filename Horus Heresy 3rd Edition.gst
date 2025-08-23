@@ -447,6 +447,12 @@
     <categoryEntry name="Legion Champion" id="1baf-b200-9e02-844d" hidden="false"/>
     <categoryEntry name="Tip of the Spear" id="ea11-0241-9a96-06a5" hidden="false"/>
     <categoryEntry name="Decurion Sagittar" id="5498-66fa-1f62-7244" hidden="false"/>
+    <categoryEntry name="Transport - Logisticae" id="f34d-c79d-b3a4-f01c" hidden="true">
+      <comment>Ultramarine Logisticae</comment>
+    </categoryEntry>
+    <categoryEntry name="Heavy Transport - Logisticae" id="6fc0-917e-44a4-a4da" hidden="true">
+      <comment>Ultramarines Logisticae</comment>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -718,6 +724,62 @@
             <categoryLink name="War-engine - Upgraded by The Iron-clad" hidden="false" id="0ef7-249a-c847-6970" targetId="d00a-e269-2ed3-8fc4"/>
             <categoryLink name="Lord of Automata" hidden="false" id="baa0-d32b-ce6d-4b86" targetId="3e59-3bcf-4bf8-d404"/>
             <categoryLink name="Cult Operative" hidden="false" id="5ae6-f873-2faf-1da0" targetId="4f71-897f-8ae1-303b"/>
+            <categoryLink name="Heavy Transport - Logisticae" hidden="false" id="fc74-c0e3-6a4f-a268" targetId="6fc0-917e-44a4-a4da">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="3ad6-a0b5-ef5b-a479" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="a9a0-40db-2b34-b92e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" value="1" field="9cf7-a98b-d7c4-485d">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="a9a0-40db-2b34-b92e" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="3ad6-a0b5-ef5b-a479" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6113-9428-f62e-640f"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9cf7-a98b-d7c4-485d"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Transport - Logisticae" hidden="false" id="7e90-91de-25eb-2fcb" targetId="f34d-c79d-b3a4-f01c">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="3ad6-a0b5-ef5b-a479" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="8128-c5ca-d658-c475" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" value="1" field="b5f6-283d-e1bc-26cf">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="8128-c5ca-d658-c475" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="3ad6-a0b5-ef5b-a479" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="40fb-bd83-ef61-3ef5"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b5f6-283d-e1bc-26cf"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="5611-db49-9e64-44c6-min" includeChildSelections="true"/>
@@ -3169,6 +3231,63 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a9f8-7517-de0a-4edb"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Heavy Transport - Logisticae" hidden="false" id="0740-36be-9d63-2f8e" targetId="6fc0-917e-44a4-a4da">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="3ad6-a0b5-ef5b-a479" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="a9a0-40db-2b34-b92e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" value="1" field="e112-f871-9cc7-d47e">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="a9a0-40db-2b34-b92e" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="3ad6-a0b5-ef5b-a479" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="192c-d747-c788-1803"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e112-f871-9cc7-d47e"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Transport - Logisticae" hidden="false" id="51b1-9687-4485-288b" targetId="f34d-c79d-b3a4-f01c">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="3ad6-a0b5-ef5b-a479" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="8128-c5ca-d658-c475" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" value="1" field="7bd6-ed64-f139-97c2">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="8128-c5ca-d658-c475" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="3ad6-a0b5-ef5b-a479" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="46cd-98ef-313c-9c6f"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7bd6-ed64-f139-97c2"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="War-engine - Upgraded by The Iron-clad" hidden="false" id="30ad-fba2-e85d-2b0a" targetId="d00a-e269-2ed3-8fc4"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -6818,6 +6937,62 @@
             <categoryLink name="Prime Command" hidden="false" id="9e63-ed35-17c1-5132" targetId="c85c-2963-658f-1bb9">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b697-d463-64a5-0141" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Heavy Transport - Logisticae" hidden="false" id="e142-dae4-393a-00ce" targetId="6fc0-917e-44a4-a4da">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="3ad6-a0b5-ef5b-a479" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="a9a0-40db-2b34-b92e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" value="1" field="895f-4b4c-e1b7-1c38">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="a9a0-40db-2b34-b92e" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3ad6-a0b5-ef5b-a479" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e2ab-3866-63f1-67b6"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="895f-4b4c-e1b7-1c38"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Transport - Logisticae" hidden="false" id="15d4-fe7b-7e6e-d6c4" targetId="f34d-c79d-b3a4-f01c">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="3ad6-a0b5-ef5b-a479" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="8128-c5ca-d658-c475" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" value="1" field="8b7c-df80-3fad-fced">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="8128-c5ca-d658-c475" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="3ad6-a0b5-ef5b-a479" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="93de-2d24-822b-cc3e"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8b7c-df80-3fad-fced"/>
               </constraints>
             </categoryLink>
           </categoryLinks>
@@ -14677,6 +14852,63 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1a22-fc74-00f4-4341"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Heavy Transport - Logisticae" hidden="false" id="6ed7-57ed-0857-8622" targetId="6fc0-917e-44a4-a4da">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3ad6-a0b5-ef5b-a479" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="a9a0-40db-2b34-b92e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" value="1" field="397d-ac30-2e82-1d14">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="a9a0-40db-2b34-b92e" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3ad6-a0b5-ef5b-a479" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="36b8-55d4-c854-f64e"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="397d-ac30-2e82-1d14"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Transport - Logisticae" hidden="false" id="ec20-933f-18d7-1466" targetId="f34d-c79d-b3a4-f01c">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3ad6-a0b5-ef5b-a479" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8128-c5ca-d658-c475" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" value="1" field="266d-122e-d857-0856">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="roster" childId="8128-c5ca-d658-c475" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                  </repeats>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="3ad6-a0b5-ef5b-a479" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ba9d-71fa-a264-44b4"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="266d-122e-d857-0856"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="War-engine - Upgraded by The Iron-clad" hidden="false" id="5c3a-61f8-facc-1735" targetId="d00a-e269-2ed3-8fc4"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -15970,6 +16202,31 @@ When a Model with this Special Rule is included in a Detachment, one additional 
           <description>Add one additional Support Force Organisation Slot to the Detachment that includes the Prime Slot with this Prime Advantage. This Force Organisation Slot may only be filled by a Unit selected from the Cults Abominatio Army List. This Prime Advantage may only be selected for a single Force Organisation Slot in an Army’s Primary Detachment.</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Logisticae" hidden="true" id="3ad6-a0b5-ef5b-a479">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Pick One" id="e7f6-b8cf-b0fa-232c" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Transport" hidden="false" id="8128-c5ca-d658-c475"/>
+            <selectionEntry type="upgrade" import="true" name="Heavy Transport" hidden="false" id="a9a0-40db-2b34-b92e"/>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a039-364b-cde3-17f4"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50d7-d8e1-b300-8100"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="656a-07b6-d4fd-57af" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dbf-654a-f06f-2d69" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <comment>Ultramarines</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
