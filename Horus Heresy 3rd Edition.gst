@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="44" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="45" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -15691,6 +15691,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <characteristicType name="Exposed Armour" id="8a30-5814-b7f7-9bcd"/>
         <characteristicType name="HP" id="2446-14c8-bcb4-40fd"/>
         <characteristicType name="Transport Capacity" id="f02f-a705-84f7-21c6"/>
+        <characteristicType name="Type" id="727e-7b88-94fc-76f6"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Titan Carapace" id="427a-1e14-5a35-588b" hidden="false" sortIndex="5">
