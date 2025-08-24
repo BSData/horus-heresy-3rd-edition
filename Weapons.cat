@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="a22d-4dd0-c59d-57d3" name="Weapons" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="18" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="a22d-4dd0-c59d-57d3" name="Weapons" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="19" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="2942-f783-d627-33c5">
       <profiles>
@@ -7058,6 +7058,101 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Meteor hammer" hidden="false" id="586b-810a-cc59-6867">
+      <profiles>
+        <profile name="Meteor hammer" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="6431-c22d-bb2c-43da">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">1</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">-1</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Impact (IM)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Impact (X)" id="0d8a-96cc-ade2-51bf" hidden="false" type="rule" targetId="6ead-c31c-ab09-2f8c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Excoriator chainaxe" hidden="false" id="4ca9-a785-ec48-ab23">
+      <profiles>
+        <profile name="Excoriator chainaxe" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="3317-e9f5-1ae1-2ba6">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">-2</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+), Shred (6+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Chain</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="eb23-56cf-6787-0b0b" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name">
+              <comment>6</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shred (X)" id="52cf-cb31-71ec-7940" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
+          <modifiers>
+            <modifier type="set" value="Shred (6+)" field="name">
+              <comment>6</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Paired falax blades" hidden="false" id="1a7d-1854-29f2-0466">
+      <profiles>
+        <profile name="Paired falax blades" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="f8e4-82a7-3b5f-8a9d">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e"/>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Barb-hook lash" hidden="false" id="3096-0988-511f-84fd">
+      <profiles>
+        <profile name="Barb-hook lash" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="a9e4-b505-b309-8c80">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">+1</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Critical Hit (6+), Phage (S)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Critical Hit (X)" id="81b0-9747-976a-66ce" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
+          <modifiers>
+            <modifier type="set" value="Critical Hit (6+)" field="name">
+              <comment>6</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Phage (X)" id="4518-8a6a-ec08-c21b" hidden="false" type="rule" targetId="3e26-d357-69d6-1341">
+          <modifiers>
+            <modifier type="set" value="Phage (S)" field="name">
+              <comment>S</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Power Weapon" id="d23f-b4f0-0127-9394" hidden="false" collapsible="true" flatten="true">
@@ -7792,6 +7887,162 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="a956-190d-3b47-6258" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>WE</comment>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>WE+Sgt/Cmd/ChampOnly</comment>
+            </modifier>
+            <modifier type="set" value="10" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Caedere Weapons" id="a3d9-04dd-ad86-3f94" hidden="true" sortIndex="21">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Meteor hammer" hidden="false" id="e109-fda5-648d-26fe" sortIndex="1">
+              <profiles>
+                <profile name="Meteor hammer" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="f804-df9f-8f15-913b">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">1</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">-1</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Impact (IM)</characteristic>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Impact (X)" id="3035-27f2-e8d0-3c74" hidden="false" type="rule" targetId="6ead-c31c-ab09-2f8c"/>
+              </infoLinks>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Excoriator chainaxe" hidden="false" id="fd97-ad69-195c-f35d" sortIndex="2">
+              <profiles>
+                <profile name="Excoriator chainaxe" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="ce28-5f2c-58b6-cec9">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">-2</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+), Shred (6+)</characteristic>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Chain</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Breaching (X)" id="fa73-5ead-3762-7e66" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+                  <modifiers>
+                    <modifier type="set" value="Breaching (6+)" field="name">
+                      <comment>6</comment>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Shred (X)" id="5a5d-c3e7-1273-c065" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
+                  <modifiers>
+                    <modifier type="set" value="Shred (6+)" field="name">
+                      <comment>6</comment>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Paired falax blades" hidden="false" id="067a-7956-a818-438a" sortIndex="3">
+              <profiles>
+                <profile name="Paired falax blades" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="6e27-d4ee-ae50-2332">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e"/>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Barb-hook lash" hidden="false" id="c800-8aad-56c2-d3c1" sortIndex="4">
+              <profiles>
+                <profile name="Barb-hook lash" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="f3a4-205e-2d84-d2b9">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">+1</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Critical Hit (6+), Phage (S)</characteristic>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Critical Hit (X)" id="f467-16f0-8c1e-5d97" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
+                  <modifiers>
+                    <modifier type="set" value="Critical Hit (6+)" field="name">
+                      <comment>6</comment>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Phage (X)" id="c9c5-14b1-58d6-3682" hidden="false" type="rule" targetId="3e26-d357-69d6-1341">
+                  <modifiers>
+                    <modifier type="set" value="Phage (S)" field="name">
+                      <comment>S</comment>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="force" childId="8813-5298-c368-ee16" shared="true" includeChildSelections="true"/>
                   </conditions>
                   <comment>AL</comment>
@@ -7808,14 +8059,12 @@
               </conditionGroups>
               <comment>AL+Sgt/Cmd/ChampOnly</comment>
             </modifier>
-            <modifier type="set" value="0" field="9893-c379-920b-8982">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
-              </conditions>
-            </modifier>
           </modifiers>
-        </entryLink>
-      </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dff7-c2b0-baa9-c6d6"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
     <selectionEntryGroup name="Force Weapon" id="89e6-2502-2486-71f4" hidden="false" defaultSelectionEntryId="970d-7af0-0052-e25c">
       <entryLinks>
