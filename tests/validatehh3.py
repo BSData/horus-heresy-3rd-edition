@@ -77,6 +77,9 @@ class GameTests(unittest.TestCase):
             for child in entry_links_node.children:
                 with self.subTest(f"Categories on {child}"):
                     category_links = child.get_child(tag='categoryLinks')
+                    self.assertIsNotNone(category_links,
+                                         f"There should be categories on all root links"
+                                         )
                     primary_cat = category_links.get_child(tag='categoryLink', attrib={"primary": "true"})
                     self.assertIsNotNone(primary_cat,
                                          f"There should be a primary category"
