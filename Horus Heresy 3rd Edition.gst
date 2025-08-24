@@ -15694,6 +15694,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <characteristicType name="Exposed Armour" id="8a30-5814-b7f7-9bcd"/>
         <characteristicType name="HP" id="2446-14c8-bcb4-40fd"/>
         <characteristicType name="Transport Capacity" id="f02f-a705-84f7-21c6"/>
+        <characteristicType name="Type" id="727e-7b88-94fc-76f6"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Titan Carapace" id="427a-1e14-5a35-588b" hidden="false" sortIndex="5">
@@ -16033,18 +16034,34 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <selectionEntry type="upgrade" import="true" name="One Apex Detachment" hidden="false" id="0889-888b-e3fe-1d5b" defaultAmount="1" publicationId="7d63-5df4-c656-52de" page="280">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b9c-073f-d1cd-a405" includeChildSelections="false" automatic="true"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9801-3eee-690a-9009"/>
           </constraints>
           <categoryLinks>
             <categoryLink name="+1 Apex from High Command" hidden="false" id="1c95-9290-e696-b447" targetId="8a97-1585-93e7-c561" primary="false"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="0" field="6b9c-073f-d1cd-a405">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="unit" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="One Auxiliary Detachment" hidden="false" id="4ad5-105a-9b10-57dd" publicationId="7d63-5df4-c656-52de" page="280">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0d5-0859-d4c3-84ac" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0d5-0859-d4c3-84ac" includeChildSelections="false" automatic="true"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2e53-c1b2-7d7e-621b"/>
           </constraints>
           <categoryLinks>
             <categoryLink name="+1 Auxiliary from High Command" hidden="false" id="55d6-f46a-077c-dc61" targetId="ff44-f49f-732b-c3a7" primary="false"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="0" field="b0d5-0859-d4c3-84ac">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="unit" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
