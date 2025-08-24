@@ -280,19 +280,15 @@ class GameTests(unittest.TestCase):
                     mod_groups = profile.get_child("modifierGroups")
                     self.assertIsNotNone(mod_groups, "Expected modifiers for prime benefits")
                     combat_veterans_group = None
+                    paragon_of_battle_group = None
                     for mod_group in mod_groups.children:
                         if mod_group.does_descendent_exist(lambda x: x.text == "Combat Veterans"):
                             combat_veterans_group = mod_group
+                        if mod_group.does_descendent_exist(lambda x: x.text == "Paragon of Battle"):
+                            paragon_of_battle_group = mod_group
 
                     with self.subTest(f"Combat Veterans for {profile}"):
-                        mod_group = combat_veterans_group
-                        self.assertIsNotNone(mod_group)
-
-                        self.assertEqual(mod_group.type, "modifierGroup:and")
-                        actual_mods = []
-                        for mod in mod_group.get_child("modifiers").children:
-                            actual_mods.append(mod.attrib)
-                        expected_mods = [
+                        self.check_mods_and_conditions(combat_veterans_group, expected_mods=[
                             {"type": "increment", "value": "1", "field": "02ad-ebe6-86e7-9fd6"},
                             {"type": "increment", "value": "1", "field": "9cd1-0e7c-2cd6-5f2f"},
                             {"type": "increment", "value": "1", "field": "f714-1726-37d3-44df"},
@@ -301,12 +297,7 @@ class GameTests(unittest.TestCase):
                             {"type": "ceil", "value": "10", "field": "9cd1-0e7c-2cd6-5f2f"},
                             {"type": "ceil", "value": "10", "field": "f714-1726-37d3-44df"},
                             {"type": "ceil", "value": "10", "field": "29c5-925d-5b1d-1e77"},
-                        ]
-                        self.assertCountEqual(actual_mods, expected_mods)
-                        actual_conditions = []
-                        for condition in mod_group.get_child("conditions").children:
-                            actual_conditions.append(condition.attrib)
-                        expected_conditions = [{
+                        ], expected_conditions=[{
                             "type": "atLeast",
                             "value": "1",
                             "field": "selections",
@@ -315,7 +306,22 @@ class GameTests(unittest.TestCase):
                             "shared": "true",
                             "includeChildSelections": "true"
                         }]
-                        self.assertCountEqual(actual_conditions, expected_conditions)
+                                                       )
+
+    def check_mods_and_conditions(self, mod_group, expected_mods, expected_conditions):
+        self.assertIsNotNone(mod_group)
+
+        self.assertEqual(mod_group.type, "modifierGroup:and")
+        actual_mods = []
+        for mod in mod_group.get_child("modifiers").children:
+            actual_mods.append(mod.attrib)
+
+        self.assertCountEqual(actual_mods, expected_mods)
+        actual_conditions = []
+        for condition in mod_group.get_child("conditions").children:
+            actual_conditions.append(condition.attrib)
+
+        self.assertCountEqual(actual_conditions, expected_conditions)
 
     def test_all_high_command_have_detachment_choice(self):
         high_command_id = self.system.categories["High Command"].id
