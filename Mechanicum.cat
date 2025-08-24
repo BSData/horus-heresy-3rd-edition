@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="16" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="18" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Anacharis Scoria" hidden="false" id="10f5-dae8-f081-d82f" sortIndex="29">
       <infoLinks>
@@ -1142,9 +1142,9 @@
         <infoLink name="Phased Refractor Shields" id="b414-a4e4-c1cf-e6e7" hidden="false" type="rule" targetId="a3a3-a3e8-da13-56c1"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Scyllax" hidden="false" id="3178-fa28-726a-a41d" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Scyllax (Paragon of Metal)" hidden="true" id="3178-fa28-726a-a41d" sortIndex="1">
           <profiles>
-            <profile name="Scyllax" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="6ef1-1279-499e-6edd">
+            <profile name="Scyllax (Paragon of Metal)" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="6ef1-1279-499e-6edd">
               <characteristics>
                 <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Automata</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
@@ -1162,11 +1162,27 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Metal</comment>
+                  <modifiers>
+                    <modifier type="increment" value="4" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="4" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="4" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="increment" value="1" field="af9d-7db8-dc95-71c1"/>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="set" value="Automata (Sergeant)" field="50fc-9241-d4a2-045b"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="7964-f54e-2481-069e"/>
-            <constraint type="max" value="16" field="selections" scope="parent" shared="true" id="6683-c987-41e3-f741"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7964-f54e-2481-069e" automatic="true"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6683-c987-41e3-f741" automatic="true"/>
           </constraints>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
@@ -1182,12 +1198,35 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b98-25cf-32ed-f132"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Arcana Benefice:" hidden="false" id="4dd5-2c77-5f66-8433" type="selectionEntry" targetId="f7b9-dc9c-2c8b-0c92"/>
           </entryLinks>
           <categoryLinks>
             <categoryLink targetId="5833-5e86-26bc-0916" id="f1c4-85f2-4aec-8bae" primary="false" name="Automata Model Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="7964-f54e-2481-069e">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="6683-c987-41e3-f741">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8045-89a4-76d4-fcef" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Scyllax combat array" hidden="false" id="6668-e7b9-b720-e5a9" collective="false" sortIndex="4">
+        <selectionEntry type="upgrade" import="true" name="Scyllax combat array" hidden="false" id="6668-e7b9-b720-e5a9" collective="false" sortIndex="5">
           <profiles>
             <profile name="Scyllax combat array" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="38cc-880d-ecaa-9a36">
               <characteristics>
@@ -1214,15 +1253,72 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6484-309c-763f-8f69"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Scyllax" hidden="false" id="a6dd-7eec-58ab-0bcd" sortIndex="2">
+          <profiles>
+            <profile name="Scyllax" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="1966-333c-549c-c9e1">
+              <characteristics>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Automata</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">5</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">5</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">2</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">3</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">8</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">12</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">4</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">4</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="0c5e-e0aa-a753-7d74"/>
+            <constraint type="max" value="16" field="selections" scope="parent" shared="true" id="bfb2-dee3-5f4a-9aea"/>
+          </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Bolter" hidden="false" id="d5e4-2190-9635-ef80" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="1">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c93b-907c-6b89-9b36"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink name="Automata Model Type" hidden="false" id="45db-7055-55a5-b529" targetId="5833-5e86-26bc-0916" primary="false"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="3" field="0c5e-e0aa-a753-7d74">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="15" field="bfb2-dee3-5f4a-9aea">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Rad furnace" hidden="false" id="695e-1dd4-98e1-ad3e" type="selectionEntry" targetId="e269-7996-f41f-b892" sortIndex="3">
+        <entryLink import="true" name="Rad furnace" hidden="false" id="695e-1dd4-98e1-ad3e" type="selectionEntry" targetId="e269-7996-f41f-b892" sortIndex="4">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cb21-c81c-a732-d428"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Mechanicum - Sub-faction" hidden="false" id="3f36-ef37-6adb-409e" type="selectionEntryGroup" targetId="ce61-2d74-5519-70bf" sortIndex="2"/>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="6b81-88e9-8630-aa72" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5">
+        <entryLink import="true" name="Mechanicum - Sub-faction" hidden="false" id="3f36-ef37-6adb-409e" type="selectionEntryGroup" targetId="ce61-2d74-5519-70bf" sortIndex="3"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="6b81-88e9-8630-aa72" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="6">
           <entryLinks>
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="b908-cc3a-f91b-c9f0" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
           </entryLinks>
@@ -1432,9 +1528,93 @@
         <infoLink name="Limited Autonomy" id="a01f-7688-a815-c544" hidden="false" type="rule" targetId="0127-9c75-45c7-9b42"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Echidnax" hidden="false" id="3500-158d-3ef0-ac7a" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Echidnax (Paragon of Metal)" hidden="true" id="3500-158d-3ef0-ac7a" sortIndex="1">
           <profiles>
-            <profile name="Echidnax" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="b752-b300-3be0-16f1">
+            <profile name="Echidnax (Paragon of Metal)" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="b752-b300-3be0-16f1">
+              <characteristics>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Automata</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">3</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">3</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">5</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">5</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">2</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">3</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">2</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">7</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">12</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">4</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">4</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Metal</comment>
+                  <modifiers>
+                    <modifier type="increment" value="4" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="4" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="4" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="increment" value="1" field="af9d-7db8-dc95-71c1"/>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="set" value="Automata (Sergeant)" field="50fc-9241-d4a2-045b"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="70df-769c-9644-a906" automatic="true"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4f31-d1be-0fb5-bcee" automatic="true"/>
+          </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Bolter" hidden="false" id="6fc5-9f9a-2429-e841" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="1">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbd0-fec0-e9a1-202f"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Arcana Benefice:" hidden="false" id="f67b-5a4a-01bf-956d" type="selectionEntry" targetId="f7b9-dc9c-2c8b-0c92" sortIndex="2"/>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink targetId="5833-5e86-26bc-0916" id="240d-eee4-4d80-bbde" primary="false" name="Automata Model Type"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="70df-769c-9644-a906">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="4f31-d1be-0fb5-bcee">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8045-89a4-76d4-fcef" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Echidnax" hidden="false" id="30b6-7817-41dc-17de" sortIndex="2">
+          <profiles>
+            <profile name="Echidnax" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="e0ac-9163-722d-c1df">
               <characteristics>
                 <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Automata</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
@@ -1455,8 +1635,8 @@
             </profile>
           </profiles>
           <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="70df-769c-9644-a906"/>
-            <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="4f31-d1be-0fb5-bcee"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="b309-13c7-9eab-615c" automatic="true"/>
+            <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="4529-6d12-60e7-8d24" automatic="true"/>
           </constraints>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
@@ -1464,29 +1644,41 @@
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
           <entryLinks>
-            <entryLink import="true" name="Bolter" hidden="false" id="6fc5-9f9a-2429-e841" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e">
+            <entryLink import="true" name="Bolter" hidden="false" id="3a89-b8b9-044e-f1ed" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e">
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
               </costs>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbd0-fec0-e9a1-202f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb2d-a5c9-1854-d033"/>
               </constraints>
             </entryLink>
           </entryLinks>
           <categoryLinks>
-            <categoryLink targetId="5833-5e86-26bc-0916" id="240d-eee4-4d80-bbde" primary="false" name="Automata Model Type"/>
+            <categoryLink name="Automata Model Type" hidden="false" id="22e4-ad34-8597-e525" targetId="5833-5e86-26bc-0916" primary="false"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="3" field="b309-13c7-9eab-615c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="11" field="4529-6d12-60e7-8d24">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Servo-harness" hidden="false" id="f2a3-6675-fa16-47c7" type="selectionEntry" targetId="a71c-d284-cb63-869e" sortIndex="3">
+        <entryLink import="true" name="Servo-harness" hidden="false" id="f2a3-6675-fa16-47c7" type="selectionEntry" targetId="a71c-d284-cb63-869e" sortIndex="4">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e73d-78fe-b1a8-6850"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9922-0487-e5a2-7708"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Mechanicum - Sub-faction" hidden="false" id="fee7-bc64-5422-4317" type="selectionEntryGroup" targetId="ce61-2d74-5519-70bf" sortIndex="2"/>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="be84-5769-5633-c637" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="4">
+        <entryLink import="true" name="Mechanicum - Sub-faction" hidden="false" id="fee7-bc64-5422-4317" type="selectionEntryGroup" targetId="ce61-2d74-5519-70bf" sortIndex="3"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="be84-5769-5633-c637" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5">
           <entryLinks>
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="ea94-751e-0d74-6c95" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
           </entryLinks>
@@ -1596,7 +1788,7 @@
         <categoryLink targetId="5833-5e86-26bc-0916" id="d37d-74e7-6ff9-8081" primary="false" name="Automata Model Type"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Domitar" hidden="false" id="e8f4-acac-c459-7d6b" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Domitar" hidden="false" id="e8f4-acac-c459-7d6b" sortIndex="2">
           <profiles>
             <profile name="Domitar" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="d344-8f43-9553-1910">
               <characteristics>
@@ -1619,8 +1811,8 @@
             </profile>
           </profiles>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f54d-c04f-a3e2-6867"/>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="4478-1ad3-6e5f-5923"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f54d-c04f-a3e2-6867" automatic="true"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="4478-1ad3-6e5f-5923" automatic="true"/>
           </constraints>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="100"/>
@@ -1630,8 +1822,20 @@
           <categoryLinks>
             <categoryLink targetId="5833-5e86-26bc-0916" id="f744-ab4d-418c-bbe7" primary="false" name="Automata Model Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="0" field="f54d-c04f-a3e2-6867">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="3" field="4478-1ad3-6e5f-5923">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Domitar fists" hidden="false" id="d399-d1a3-0440-dbb8" sortIndex="4">
+        <selectionEntry type="upgrade" import="true" name="Domitar fists" hidden="false" id="d399-d1a3-0440-dbb8" sortIndex="5">
           <profiles>
             <profile name="Domitar fists" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="148f-4600-4d27-5121">
               <characteristics>
@@ -1658,27 +1862,102 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f62-c9e0-004d-2dff"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Domitar (Paragon of Metal)" hidden="true" id="0a4a-9eac-49c1-569e" sortIndex="1">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="100"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Domitar (Paragon of Metal)" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="7d61-934c-d048-d421">
+              <characteristics>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Automata</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">7</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">7</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">4</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">3</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">8</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">12</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">4</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">4</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Metal</comment>
+                  <modifiers>
+                    <modifier type="increment" value="4" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="4" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="4" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="increment" value="1" field="af9d-7db8-dc95-71c1"/>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="set" value="Automata (Sergeant)" field="50fc-9241-d4a2-045b"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="6bed-4bd0-df9d-d783">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="dce9-a287-c6f1-3d76">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8045-89a4-76d4-fcef" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6bed-4bd0-df9d-d783" automatic="true"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="dce9-a287-c6f1-3d76" automatic="true"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Arcana Benefice:" hidden="false" id="5b90-9aa1-039f-6a32" type="selectionEntry" targetId="f7b9-dc9c-2c8b-0c92"/>
+          </entryLinks>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Cyclone missile launcher" hidden="false" id="c037-028a-8ad1-ecf1" type="selectionEntry" targetId="b341-159d-9dfb-ff31" sortIndex="2">
+        <entryLink import="true" name="Cyclone missile launcher" hidden="false" id="c037-028a-8ad1-ecf1" type="selectionEntry" targetId="b341-159d-9dfb-ff31" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a3b-bc37-0ae2-36ac"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d3e-2c72-7b8d-2978"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Graviton hammers" hidden="false" id="998d-5c50-fafa-b052" type="selectionEntry" targetId="39bd-daf2-8118-1611" sortIndex="3">
+        <entryLink import="true" name="Graviton hammers" hidden="false" id="998d-5c50-fafa-b052" type="selectionEntry" targetId="39bd-daf2-8118-1611" sortIndex="4">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="92ab-a13d-f49a-0ff5"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46ec-8e65-c985-a3cc"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Cybernetica" hidden="false" id="c4a3-8ded-261d-6c7d" type="selectionEntry" targetId="403d-7806-215e-7676" sortIndex="2">
+        <entryLink import="true" name="Cybernetica" hidden="false" id="c4a3-8ded-261d-6c7d" type="selectionEntry" targetId="403d-7806-215e-7676" sortIndex="6">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="144d-674c-6204-f517"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9a6-99d2-8506-3515"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="b377-f86e-6cd7-e128" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5">
+        <entryLink import="true" name="Prime Unit" hidden="false" id="b377-f86e-6cd7-e128" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="7">
           <entryLinks>
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="f7bd-69d0-8993-bd24" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
           </entryLinks>
@@ -3584,6 +3863,23 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Metal</comment>
+                  <modifiers>
+                    <modifier type="increment" value="4" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="4" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="4" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="increment" value="1" field="af9d-7db8-dc95-71c1"/>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="set" value="Automata (Sergeant, Heavy)" field="50fc-9241-d4a2-045b"/>
+                    <modifier type="set" value="Thanatar (Paragon of Metal)" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -3599,6 +3895,18 @@
             <categoryLink targetId="5833-5e86-26bc-0916" id="725f-8766-4ecc-8588" primary="false" name="Automata Model Type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="866a-cc70-4d89-8b7e" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="8045-89a4-76d4-fcef" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Thanatar (Paragon of Metal)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3620,10 +3928,29 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d504-8497-5718-4c25"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="1cf3-2329-6452-494b" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="6">
+        <entryLink import="true" name="Prime Unit" hidden="false" id="1cf3-2329-6452-494b" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="7">
           <entryLinks>
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="f87b-760f-5b44-e00c" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
           </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Arcana Benefice:" hidden="false" id="7080-9b2b-2347-816c" type="selectionEntry" targetId="f7b9-dc9c-2c8b-0c92" sortIndex="6">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="fba6-4204-c34b-3f8f">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="b6eb-8d3b-a744-c9e0">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
@@ -3904,9 +4231,9 @@
         <categoryLink targetId="5833-5e86-26bc-0916" id="812f-09b3-cdfb-5584" primary="false" name="Automata Model Type"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Castellax" hidden="false" id="61ae-2955-4177-a4df" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Castellax (Paragon of Metal)" hidden="true" id="61ae-2955-4177-a4df" sortIndex="1">
           <profiles>
-            <profile name="Castellax" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="6641-d6ea-e3eb-8ee1">
+            <profile name="Castellax (Paragon of Metal)" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="6641-d6ea-e3eb-8ee1">
               <characteristics>
                 <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Automata</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
@@ -3924,11 +4251,27 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Metal</comment>
+                  <modifiers>
+                    <modifier type="increment" value="4" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="4" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="4" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="increment" value="1" field="af9d-7db8-dc95-71c1"/>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="set" value="Automata (Sergeant)" field="50fc-9241-d4a2-045b"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="396a-98bb-e5e4-4ed6"/>
-            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="4cdf-8844-883c-a486"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="396a-98bb-e5e4-4ed6" automatic="true"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4cdf-8844-883c-a486" automatic="true"/>
           </constraints>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="50"/>
@@ -3981,18 +4324,141 @@
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="738d-4fd9-f3c5-9a42"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2af4-f1b3-9b61-a8bd"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="738d-4fd9-f3c5-9a42" automatic="true"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2af4-f1b3-9b61-a8bd" automatic="true"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="5833-5e86-26bc-0916" id="a5a1-36c8-428a-8a25" primary="false" name="Automata Model Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8045-89a4-76d4-fcef" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="396a-98bb-e5e4-4ed6">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="4cdf-8844-883c-a486">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Arcana Benefice:" hidden="false" id="66e0-e77e-9d6e-6301" type="selectionEntry" targetId="f7b9-dc9c-2c8b-0c92"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Castellax" hidden="false" id="6d1b-0e66-a950-f0ea" sortIndex="2">
+          <profiles>
+            <profile name="Castellax" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="ae78-60ff-b8a0-b835">
+              <characteristics>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Automata</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">3</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">3</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">6</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">6</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">4</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">3</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">2</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">7</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">12</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">4</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">4</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9d6e-d8f8-3d51-04f0" automatic="true"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="b66b-f95f-9d0e-344e" automatic="true"/>
+          </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="50"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+          </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee weapon:" id="0f15-ade9-42bf-8eb7" hidden="false" sortIndex="1" defaultSelectionEntryId="d737-d2d2-d671-78ed">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aafe-c9ed-6d1a-37fa"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e47-f88d-3442-af77"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Shock chargers" hidden="false" id="7f17-ee9e-8cfb-4e5e" type="selectionEntry" targetId="9f0d-5e6b-1a6e-0546" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1954-2abe-c78a-9775"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Pair of power blades" hidden="false" id="84cb-afa9-3656-6c79" type="selectionEntry" targetId="b6de-1568-2981-de20" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a746-e7b3-6b85-5324"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Ranged weapon:" id="762a-0f39-afd1-1f0c" hidden="false" defaultSelectionEntryId="8606-def5-7473-defb" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Bolter" hidden="false" id="94da-d659-4db3-d979" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d9de-d331-d04d-5b03"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a8f3-c60d-a60e-d8a0"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="decrement" value="2" field="d9de-d331-d04d-5b03"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Flamer" hidden="false" id="76ad-eebe-a2fc-b772" type="selectionEntry" targetId="9a45-35cd-3806-2303">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5d54-6103-b340-1583"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d8a9-ec84-1945-4265" automatic="true"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6443-c0ff-0d82-efae" automatic="true"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink name="Automata Model Type" hidden="false" id="6585-152c-feed-8d4c" targetId="5833-5e86-26bc-0916" primary="false"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="9" field="b66b-f95f-9d0e-344e">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="9d6e-d8f8-3d51-04f0">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Mauler bolt cannon" hidden="false" id="27d1-a226-320d-2999" type="selectionEntry" targetId="ec2c-185f-3e9e-7ccd" sortIndex="3">
+        <entryLink import="true" name="Mauler bolt cannon" hidden="false" id="27d1-a226-320d-2999" type="selectionEntry" targetId="ec2c-185f-3e9e-7ccd" sortIndex="4">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
           </costs>
@@ -4001,7 +4467,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32dc-090e-5452-8da5"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Cybernetica" hidden="false" id="2b49-5e7b-9f4b-2f4f" type="selectionEntry" targetId="403d-7806-215e-7676" sortIndex="2">
+        <entryLink import="true" name="Cybernetica" hidden="false" id="2b49-5e7b-9f4b-2f4f" type="selectionEntry" targetId="403d-7806-215e-7676" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5927-3261-82b4-ffca" automatic="true"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b362-7434-2002-3d72" automatic="true"/>
@@ -4024,7 +4490,7 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="f0bf-fcb1-3cee-5d06" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="4">
+        <entryLink import="true" name="Prime Unit" hidden="false" id="f0bf-fcb1-3cee-5d06" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5">
           <entryLinks>
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="89c3-e386-201c-227b" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
           </entryLinks>
@@ -4814,41 +5280,6 @@
         <categoryLink targetId="2de1-ddd6-ebb4-10df" id="dae5-e8e4-5322-8e9b" primary="false" name="Malefic Sub-type"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Decimator" hidden="false" id="8c01-dd32-58a3-c9bf" sortIndex="1">
-          <profiles>
-            <profile name="Decimator" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="9d12-727f-7508-eed0">
-              <characteristics>
-                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Automata (Malefic)</characteristic>
-                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
-                <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
-                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
-                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">7</characteristic>
-                <characteristic name="T" typeId="3120-8275-e537-ecd2">7</characteristic>
-                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">5</characteristic>
-                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">3</characteristic>
-                <characteristic name="A" typeId="024e-bdb1-7982-25a0">4</characteristic>
-                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">8</characteristic>
-                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">12</characteristic>
-                <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
-                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">4</characteristic>
-                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
-                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c0c-2319-02ba-35af"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57eb-259f-05b9-bcdd"/>
-          </constraints>
-          <costs>
-            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-          </costs>
-          <categoryLinks>
-            <categoryLink targetId="5833-5e86-26bc-0916" id="fd9a-31da-499c-bc01" primary="false" name="Automata Model Type"/>
-            <categoryLink targetId="2de1-ddd6-ebb4-10df" id="b4eb-970a-4326-81bc" primary="false" name="Malefic Sub-type"/>
-          </categoryLinks>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Decimator claw w/ Heavy Flamer" hidden="false" id="e99c-fb1f-382f-98e8" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Heavy flamer" hidden="false" id="171f-defd-4da2-6900" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="2">
@@ -4867,6 +5298,63 @@
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="b1e7-85fa-99da-1843"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d4ec-e5f3-2b05-7c31"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Decimator " hidden="false" id="5d38-5ed9-f018-126b" sortIndex="1">
+          <costs>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Decimator" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="38e1-a2a9-57d3-b612">
+              <characteristics>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Automata (Malefic)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">7</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">7</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">5</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">3</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">4</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">8</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">12</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">4</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Metal</comment>
+                  <modifiers>
+                    <modifier type="increment" value="4" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="4" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="4" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="increment" value="1" field="af9d-7db8-dc95-71c1"/>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="set" value="Automata (Sergeant, Malefic)" field="50fc-9241-d4a2-045b"/>
+                    <modifier type="set" value="Decimator (Paragon of Metal)" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="add" value="8045-89a4-76d4-fcef" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d9ad-d85a-265d-a7e2" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c41-031f-14de-c28a" automatic="true"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
@@ -4982,10 +5470,29 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cde7-d157-0722-e982"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="ae13-7a65-99a6-f28e" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5">
+        <entryLink import="true" name="Prime Unit" hidden="false" id="ae13-7a65-99a6-f28e" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="6">
           <entryLinks>
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="cd3f-f7e0-af84-2110" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
           </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Arcana Benefice:" hidden="false" id="56b8-c8bd-d1dd-af5a" type="selectionEntry" targetId="f7b9-dc9c-2c8b-0c92" sortIndex="5">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="fba6-4204-c34b-3f8f">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="b6eb-8d3b-a744-c9e0">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="e6ba-320e-f91f-d533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -5874,8 +6381,8 @@ If the check is successful, then the Model with this Special Rule is immediately
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Arcana Benefice:" hidden="false" id="f7b9-dc9c-2c8b-0c92">
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fba6-4204-c34b-3f8f"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6eb-8d3b-a744-c9e0"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fba6-4204-c34b-3f8f" automatic="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6eb-8d3b-a744-c9e0" automatic="true"/>
       </constraints>
       <rules>
         <rule name="An Endless Servitude" id="1c52-0be8-bf23-f341" hidden="false">
@@ -6845,6 +7352,13 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="5186-5e36-c55e-67d9" primary="true" name="Support"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="dbe3-9946-d4de-dc73" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Thallax Cohort" hidden="false" id="44ac-38f8-633f-9bfd" type="selectionEntry" targetId="a4ad-1b49-0303-59b3" sortIndex="15">
       <categoryLinks>
