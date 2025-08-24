@@ -189,6 +189,46 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             <categoryLink targetId="5a95-e564-96b2-8dc9" id="cf04-b94d-d7e2-6e1e" primary="false" name="Champion Model Sub-Type"/>
             <categoryLink targetId="594d-fa82-13cb-a345" id="b17b-3f80-4e33-a490" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" id="cb5c-6109-959e-43e3" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Pair of lightning claws" hidden="false" id="3107-dce7-8751-c598" type="selectionEntry" targetId="6754-24dd-5be0-26ff" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a396-fddd-c828-cf47" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Caedere Weapons" hidden="false" id="2bc2-d4d8-3c17-1546" type="selectionEntryGroup" targetId="f18f-e86f-e13e-4a48" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4740-2dbd-a411-cb31"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Power fist" hidden="false" id="631a-dcbf-5da6-e450" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="618d-16e4-67aa-25e0"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="May take a pistol" id="b17e-5de7-533f-539d" hidden="false" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="25dd-72df-ca17-4f1c" type="selectionEntry" targetId="2942-f783-d627-33c5"/>
+                <entryLink import="true" name="Plasma pistol" hidden="false" id="bbd6-507c-71d9-5aec" type="selectionEntry" targetId="659f-d52e-1515-2912">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03ea-9eac-668e-6872"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Rampager" hidden="false" id="821a-4497-0743-9777" sortIndex="2">
           <profiles>
@@ -224,6 +264,24 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="295d-b7fa-4af7-8f7e" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Caedere Weapons" hidden="false" id="3ee1-dc34-0734-d740" type="selectionEntryGroup" targetId="f18f-e86f-e13e-4a48">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="680e-9ac8-0fe9-4189"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40c6-0504-30ce-57f7"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="May take a pistol" id="ae6e-1cdd-f3a7-f877" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="d7a0-852b-28f5-476a" type="selectionEntry" targetId="2942-f783-d627-33c5"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5ae-40f3-cf81-be77"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -233,24 +291,6 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         <infoLink name="[Legiones Astartes]" id="1a96-78fa-5dec-1d3c" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Caedere Weapons" hidden="false" id="3ee1-dc34-0734-d740" type="selectionEntryGroup" targetId="f18f-e86f-e13e-4a48" sortIndex="3">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="680e-9ac8-0fe9-4189"/>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="40c6-0504-30ce-57f7"/>
-          </constraints>
-          <modifiers>
-            <modifier type="increment" value="1" field="680e-9ac8-0fe9-4189">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="c660-c7ad-70b0-5318" childId="model" shared="true" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" value="1" field="40c6-0504-30ce-57f7">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="c660-c7ad-70b0-5318" childId="model" shared="true" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </entryLink>
         <entryLink import="true" name="Frag grenades" hidden="false" id="49c6-84b3-056f-b941" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="4">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="faab-9e2c-e5da-5274"/>
@@ -304,9 +344,9 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May exchange Butcher power axes for:" id="7556-3c97-055d-316c" hidden="false" defaultSelectionEntryId="fbc3-c82c-1582-7b9e">
+            <selectionEntryGroup name="May exchange Butcher power axes for:" id="7556-3c97-055d-316c" hidden="false" defaultSelectionEntryId="fbc3-c82c-1582-7b9e" sortIndex="1">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Butcher power axes" hidden="false" id="fbc3-c82c-1582-7b9e">
+                <selectionEntry type="upgrade" import="true" name="Butcher power axes" hidden="false" id="fbc3-c82c-1582-7b9e" sortIndex="1" defaultAmount="1">
                   <profiles>
                     <profile name="Butcher power axes" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="1fe5-6d9f-a544-a75f">
                       <characteristics>
@@ -329,8 +369,11 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                       </modifiers>
                     </infoLink>
                   </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca02-2b47-27da-b541" includeChildSelections="false"/>
+                  </constraints>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Butcher Chainfists" hidden="false" id="7ad6-d711-ddc0-0975">
+                <selectionEntry type="upgrade" import="true" name="Butcher Chainfists" hidden="false" id="7ad6-d711-ddc0-0975" sortIndex="2" defaultAmount="">
                   <profiles>
                     <profile name="Butcher Chainfists" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="5cf1-a077-ddfb-2486">
                       <characteristics>
@@ -359,12 +402,114 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                     <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
                     <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
                   </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da1e-23e4-6c96-19fc" includeChildSelections="false"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1965-cbae-9c9a-1928"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfbf-79f0-8222-4a9e"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8093-939e-ec8e-c4e4" automatic="true"/>
               </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Pair of lightning claws" hidden="false" id="00fa-bdc7-0bea-1bac" type="selectionEntry" targetId="6754-24dd-5be0-26ff" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a1f-da76-6434-af66" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Replace butcher power axes with :" id="5d34-8687-651e-5869" hidden="false" defaultSelectionEntryId="44bb-6dec-0fcd-4a2b" sortIndex="4">
+                  <entryLinks>
+                    <entryLink import="true" name="Power axe" hidden="false" id="ba91-dffc-8cb2-2c2a" type="selectionEntry" targetId="4861-b77a-620c-f0d6" sortIndex="1"/>
+                    <entryLink import="true" name="Power fist" hidden="false" id="4cf6-06f0-3cd8-2732" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="2">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Chainfist" hidden="false" id="d8bb-4a81-d087-3ae4" type="selectionEntry" targetId="8322-1eca-e855-2683" sortIndex="3">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Thunder hammer" hidden="false" id="b11d-6b86-107f-7927" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="4">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f6f-9e64-3def-dea7"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7dc4-d2cf-c674-c4e3" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="7dc4-d2cf-c674-c4e3">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="fbc3-c82c-1582-7b9e" shared="true"/>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="7ad6-d711-ddc0-0975" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Replace butcher power axes with:" id="445c-55d2-3fc8-05c4" hidden="false" defaultSelectionEntryId="b180-0e1f-c7a9-fac4" sortIndex="5">
+                  <entryLinks>
+                    <entryLink import="true" name="Combi-bolter" hidden="false" id="dbb8-d19b-b379-651a" type="selectionEntry" targetId="042d-9e60-db9e-c147" sortIndex="1"/>
+                    <entryLink import="true" name="Power fist" hidden="false" id="e201-04ac-3fab-e64b" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="2">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Chainfist" hidden="false" id="76bd-f921-d9a2-a7c4" type="selectionEntry" targetId="8322-1eca-e855-2683" sortIndex="3">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Thunder hammer" hidden="false" id="a43f-47a5-8087-4fbe" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="4">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="5e56-a4a9-f051-d6ad" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" sortIndex="5"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="634a-600b-c12e-74b7"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="71b7-6749-2e1d-82a9" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="71b7-6749-2e1d-82a9">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="fbc3-c82c-1582-7b9e" shared="true"/>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="7ad6-d711-ddc0-0975" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <modifiers>
+                <modifier type="set" value="1" field="8093-939e-ec8e-c4e4">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="fbc3-c82c-1582-7b9e" shared="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="7ad6-d711-ddc0-0975" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -372,6 +517,16 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             <categoryLink targetId="594d-fa82-13cb-a345" id="3682-e28e-4e2e-9b05" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="4973-68a6-4d56-b951" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Grenade harness" hidden="false" id="e4e4-65e6-7516-e8ef" type="selectionEntry" targetId="a766-856c-52bd-d30a">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4829-0590-9da0-f447"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Red Butcher" hidden="false" id="08a3-46d5-a3ce-0b30" sortIndex="2">
           <constraints>
@@ -408,34 +563,139 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             <categoryLink targetId="594d-fa82-13cb-a345" id="73e6-fff2-4130-b01e" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="bd6d-651c-4909-8223" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Butcher power axes" hidden="false" id="b952-3be6-d55d-092d">
-          <profiles>
-            <profile name="Butcher power axes" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="a605-8b83-ad46-8d00">
-              <characteristics>
-                <characteristic name="IM" typeId="6eec-4093-f946-1014">-1</characteristic>
-                <characteristic name="AM" typeId="03d0-6094-84f0-e27e">+1</characteristic>
-                <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+1</characteristic>
-                <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-                <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
-                <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (4+)</characteristic>
-                <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Breaching (X)" id="c3b4-1a89-71c2-fe61" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" id="12e8-815e-1526-b23d" hidden="false" defaultSelectionEntryId="b952-3be6-d55d-092d">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Replace butcher power axes with:" id="2a29-91a4-d938-00a0" hidden="false" defaultSelectionEntryId="b180-0e1f-c7a9-fac4" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="Combi-bolter" hidden="false" id="b180-0e1f-c7a9-fac4" type="selectionEntry" targetId="042d-9e60-db9e-c147" sortIndex="1"/>
+                    <entryLink import="true" name="Power fist" hidden="false" id="b7c9-5f54-bfcc-7e2e" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="2">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Chainfist" hidden="false" id="9248-bcff-6640-ecb3" type="selectionEntry" targetId="8322-1eca-e855-2683" sortIndex="3">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Thunder hammer" hidden="false" id="e420-e4eb-66df-fdae" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="4">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="76a6-0eac-7a07-f0c4" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" sortIndex="5"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5db-5b07-71b6-8a5b"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0716-ff9a-aa0c-f24a" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="0716-ff9a-aa0c-f24a">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="b952-3be6-d55d-092d" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Replace butcher power axes with :" id="eaea-bf6f-b477-0fd2" hidden="false" defaultSelectionEntryId="44bb-6dec-0fcd-4a2b" sortIndex="4">
+                  <entryLinks>
+                    <entryLink import="true" name="Power axe" hidden="false" id="44bb-6dec-0fcd-4a2b" type="selectionEntry" targetId="4861-b77a-620c-f0d6" sortIndex="1"/>
+                    <entryLink import="true" name="Power fist" hidden="false" id="22d6-05e9-00b5-85fc" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="2">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Chainfist" hidden="false" id="48af-cce7-b907-492e" type="selectionEntry" targetId="8322-1eca-e855-2683" sortIndex="3">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Thunder hammer" hidden="false" id="ba84-9b38-f514-96df" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="4">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a35-5a14-c71c-9eaa"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="65db-3e8a-80dd-7377" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="65db-3e8a-80dd-7377">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="b952-3be6-d55d-092d" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Butcher power axes" hidden="false" id="b952-3be6-d55d-092d" sortIndex="1" defaultAmount="1">
+                  <profiles>
+                    <profile name="Butcher power axes" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="a605-8b83-ad46-8d00">
+                      <characteristics>
+                        <characteristic name="IM" typeId="6eec-4093-f946-1014">-1</characteristic>
+                        <characteristic name="AM" typeId="03d0-6094-84f0-e27e">+1</characteristic>
+                        <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+1</characteristic>
+                        <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+                        <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+                        <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (4+)</characteristic>
+                        <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Breaching (X)" id="c3b4-1a89-71c2-fe61" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+                      <modifiers>
+                        <modifier type="set" value="Breaching (4+)" field="name">
+                          <comment>4</comment>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be56-338d-147e-7ae0"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Pair of lightning claws" hidden="false" id="7099-a8a5-795e-2e1a" type="selectionEntry" targetId="6754-24dd-5be0-26ff" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d29-561d-9020-9e8b" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7dc8-517c-e3b0-ef84"/>
+              </constraints>
               <modifiers>
-                <modifier type="set" value="Breaching (4+)" field="name">
-                  <comment>4</comment>
+                <modifier type="set" value="1" field="7dc8-517c-e3b0-ef84">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="b952-3be6-d55d-092d" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
-            </infoLink>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b161-2fda-4e10-6713"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be56-338d-147e-7ae0"/>
-          </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <costs>
