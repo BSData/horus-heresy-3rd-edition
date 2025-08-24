@@ -45,8 +45,19 @@ class GameTests(unittest.TestCase):
                              },
                              )
 
+
+
+        self.battlefield_roles_that_can_be_prime = Heresy3e.BATTLEFIELD_ROLES.copy()
+
+        # Warlords aren't ever prime? High command can be in EC.
+        self.battlefield_roles_that_can_be_prime.remove("Warlord")
+        # Lords of war are only prime in knights, make a separate test for this.
+        self.battlefield_roles_that_can_be_prime.remove("Lord of War")
+        self.battlefield_roles_that_can_be_prime.remove("Fortification")
+        
+    def get_all_unit_ids(self):
         # Get a list of all units that tests may want to share.
-        self.unit_ids = []
+        unit_ids = []
         battlefield_roles = Heresy3e.BATTLEFIELD_ROLES.copy()
 
         for file in self.system.files:
@@ -57,15 +68,8 @@ class GameTests(unittest.TestCase):
                 category_links = child.get_child(tag='categoryLinks')
                 primary_cat = category_links.get_child(tag='categoryLink', attrib={"primary": "true"})
                 if primary_cat.target_name in battlefield_roles:
-                    self.unit_ids.append(child.target_id)
-
-        self.battlefield_roles_that_can_be_prime = Heresy3e.BATTLEFIELD_ROLES.copy()
-
-        # Warlords aren't ever prime? High command can be in EC.
-        self.battlefield_roles_that_can_be_prime.remove("Warlord")
-        # Lords of war are only prime in knights, make a separate test for this.
-        self.battlefield_roles_that_can_be_prime.remove("Lord of War")
-        self.battlefield_roles_that_can_be_prime.remove("Fortification")
+                    unit_ids.append(child.target_id)
+        return unit_ids
 
     def test_root_link_categories(self):
         expected_primaries = Heresy3e.BATTLEFIELD_ROLES.copy()
@@ -80,6 +84,9 @@ class GameTests(unittest.TestCase):
             for child in entry_links_node.children:
                 with self.subTest(f"Categories on {child}"):
                     category_links = child.get_child(tag='categoryLinks')
+                    self.assertIsNotNone(category_links,
+                                         f"There should be categories on all root links"
+                                         )
                     primary_cat = category_links.get_child(tag='categoryLink', attrib={"primary": "true"})
                     self.assertIsNotNone(primary_cat,
                                          f"There should be a primary category"
@@ -331,7 +338,7 @@ class GameTests(unittest.TestCase):
 
     def test_all_units_are_units(self):
         total_model_count = 0
-        for unit_id in self.unit_ids:
+        for unit_id in self.get_all_unit_ids():
             unit = self.system.get_node_by_id(unit_id)
             with self.subTest(f"{unit} should be of type 'unit'"):
                 self.assertEqual(unit.attrib["type"], "unit")
@@ -358,7 +365,7 @@ class GameTests(unittest.TestCase):
                         self.assertIsNotNone(potential_model.get_profile_node(None),
                                              f"There should be a profile on {potential_model}")
                 self.assertGreaterEqual(model_count, 1, "There should be at least one model in the unit")
-        print(f"There are {len(self.unit_ids)} Units, containing {total_model_count} models")
+        print(f"There are {len(self.get_all_unit_ids())} Units, containing {total_model_count} models")
 
     def test_categories_match_type_line(self):
         system = self.system
