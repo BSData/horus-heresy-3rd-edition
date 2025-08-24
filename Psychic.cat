@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="1b2d-2038-39a7-f387" name="Psychic" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorName="Arkangelmark5" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="1b2d-2038-39a7-f387" name="Psychic" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorName="Arkangelmark5" type="catalogue">
   <profileTypes>
     <profileType name="Psychic Power" id="9dfb-2fa3-00e7-8cfd" hidden="false" sortIndex="18">
       <characteristicTypes>
@@ -382,10 +382,11 @@ any Model in the Target Unit makes attacks with a Weapon that has the Psychic Tr
       <characteristics>
         <characteristic name="Summary" typeId="981f-bb86-6a74-9b20"/>
         <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e">The Active Player may choose to Manifest the Breach the Veil Psychic Power at the start of the Reserves Sub-Phase of their Movement Phase.</characteristic>
-        <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86"/>
-        <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770"/>
-        <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4"/>
-        <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0"/>
+        <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86">The Focus of the Power must be a Model with the Anathemata Trait and under the Active Player&apos;s control.</characteristic>
+        <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770">This Psychic Power does not have a Target.</characteristic>
+        <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4">If successfully Manifested, the effects of this Psychic Power last until the end of the Reserves Sub-Phase.</characteristic>
+        <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0">1. Once the Focus has been decided, make a Manifestation Check.
+2. If the Manifestation Check is successful, the Active Player can select one Unit from a Demonic Manifestation Detachment from the same Army as the Focus that is in Reserves.Reserve Rolls made for that Unit are automatically successful for the duration of this Psychic Power.</characteristic>
       </characteristics>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -402,8 +403,9 @@ any Model in the Target Unit makes attacks with a Weapon that has the Psychic Tr
         <characteristic name="Cost" typeId="f25a-9ced-eb9b-4587">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Seal the Veil Psychic Reaction, this cost paid as soon as the declaration is made.</characteristic>
         <characteristic name="Focus" typeId="0b45-591a-ee11-488e">The Focus of this Psychic Reaction must be a Model with the Anathemata Trait and under the Reactive Player&apos;s Control, and must be a part of the Unit targeted by the Charge that triggers this Psychic Reaction.</characteristic>
         <characteristic name="Target" typeId="cf1d-e201-caac-3d45">The Target Unit must be the Unit that is making the Charge that triggered the Reaction.</characteristic>
-        <characteristic name="Duration" typeId="daae-40ac-68e2-fa78"/>
-        <characteristic name="Process" typeId="8d43-934e-e511-0cfd"/>
+        <characteristic name="Duration" typeId="daae-40ac-68e2-fa78">If successfully Manifested, the effects of this Psychic Reaction are resolved immediately.</characteristic>
+        <characteristic name="Process" typeId="8d43-934e-e511-0cfd">1. Once the Focus and Target Unit have been decided, make a Manifestation Check.
+2. If the Manifestation Check is successful, then the Target Unit cannot make a Set-Up Move of more than 1&quot;, and when a Charge Roll is made for that Unit in Step 5 of the Charge Procedure, the Highest Dice is discarded instead of the lowest.</characteristic>
       </characteristics>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
