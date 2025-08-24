@@ -60,6 +60,8 @@ Inside that link, you should link to your faction's list of "Prime Benefits" sel
 Models  need to include the Charactaristic modifications for Prime Benefits that mod them
 - For Models with the Command Sub-Type - Paragon of Battle - Increment WS, BS & A by 1 if Parent contains Paragon of Battle (Copy from existing unit profile)
 
+- For Models with the Sergeant Sub-Type ensure that the Master Sergeant Modification group is copied from an existing Sergeant Model - if the Model also has teh Champion Sub-Type remove the Type replace line and change the LD mofifier to +2
+
 ###  Astartes Units
 All Astartes units should have the following Traits at the root level of the unit (Add Link -> Profile -> Search for them):
 - \[Allegiance]
