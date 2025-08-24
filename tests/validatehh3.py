@@ -28,6 +28,13 @@ LA_PRIME_BENEFIT_SLOT_UPGRADES = {
     ],
 }
 
+CATS_WITH_NO_PRIMES = [
+    "Cults Abominatio.cat",
+    "Divisio Assassinorum.cat",
+    "Legio Titanicus.cat",
+    # KNights have primes but they're special, handled separately
+]
+
 
 class GameTests(unittest.TestCase):
 
@@ -38,8 +45,17 @@ class GameTests(unittest.TestCase):
                              },
                              )
 
+        self.battlefield_roles_that_can_be_prime = Heresy3e.BATTLEFIELD_ROLES.copy()
+
+        # Warlords aren't ever prime? High command can be in EC.
+        self.battlefield_roles_that_can_be_prime.remove("Warlord")
+        # Lords of war are only prime in knights, make a separate test for this.
+        self.battlefield_roles_that_can_be_prime.remove("Lord of War")
+        self.battlefield_roles_that_can_be_prime.remove("Fortification")
+
+    def get_all_unit_ids(self):
         # Get a list of all units that tests may want to share.
-        self.unit_ids = []
+        unit_ids = []
         battlefield_roles = Heresy3e.BATTLEFIELD_ROLES.copy()
 
         for file in self.system.files:
@@ -50,15 +66,8 @@ class GameTests(unittest.TestCase):
                 category_links = child.get_child(tag='categoryLinks')
                 primary_cat = category_links.get_child(tag='categoryLink', attrib={"primary": "true"})
                 if primary_cat.target_name in battlefield_roles:
-                    self.unit_ids.append(child.target_id)
-
-        self.battlefield_roles_that_can_be_prime = Heresy3e.BATTLEFIELD_ROLES.copy()
-
-        # Warlords aren't ever prime? High command can be in EC.
-        self.battlefield_roles_that_can_be_prime.remove("Warlord")
-        # Lords of war are only prime in knights, make a separate test for this.
-        self.battlefield_roles_that_can_be_prime.remove("Lord of War")
-        self.battlefield_roles_that_can_be_prime.remove("Fortification")
+                    unit_ids.append(child.target_id)
+        return unit_ids
 
     def test_root_link_categories(self):
         expected_primaries = Heresy3e.BATTLEFIELD_ROLES.copy()
@@ -73,6 +82,9 @@ class GameTests(unittest.TestCase):
             for child in entry_links_node.children:
                 with self.subTest(f"Categories on {child}"):
                     category_links = child.get_child(tag='categoryLinks')
+                    self.assertIsNotNone(category_links,
+                                         f"There should be categories on all root links"
+                                         )
                     primary_cat = category_links.get_child(tag='categoryLink', attrib={"primary": "true"})
                     self.assertIsNotNone(primary_cat,
                                          f"There should be a primary category"
@@ -206,10 +218,11 @@ class GameTests(unittest.TestCase):
                 self.assertIsNotNone(allied_links.get_child("forceEntryLink", attrib={"targetId": child_force.id}))
 
     def test_all_units_have_prime(self):
-
         # First, get all units
         unit_ids = []
         for file in self.system.files:
+            if file.name in CATS_WITH_NO_PRIMES:
+                continue
             entry_links_node = file.root_node.get_child(tag='entryLinks')
             if entry_links_node is None:
                 continue
@@ -218,6 +231,10 @@ class GameTests(unittest.TestCase):
                 primary_cat = category_links.get_child(tag='categoryLink', attrib={"primary": "true"})
                 if file.name == "Questoris Familia.cat":
                     if primary_cat.target_name == "Lord of War":
+                        unit_ids.append(child.target_id)
+                elif primary_cat.target_name == "High Command":
+                    # Only include high command if it's generic astartes or EC, due to the EC detachment.
+                    if file.name in ["Legiones Astartes.cat", "Emperor's Children.cat"]:
                         unit_ids.append(child.target_id)
                 elif primary_cat.target_name in self.battlefield_roles_that_can_be_prime:
                     unit_ids.append(child.target_id)
@@ -254,6 +271,95 @@ class GameTests(unittest.TestCase):
 
                     self.assertGreaterEqual(prime_options_total, 1, "There should be at least one prime option")
 
+    def test_prime_benefit_modifiers(self):
+        self.maxDiff = None
+        unit_ids = []
+        for file in self.system.files:
+            # While questoris can have primes, they can't have any of these.
+            if file.name in CATS_WITH_NO_PRIMES + ["Questoris Familia.cat"]:
+                continue
+            entry_links_node = file.root_node.get_child(tag='entryLinks')
+            if entry_links_node is None:
+                continue
+            for child in entry_links_node.children:
+                category_links = child.get_child(tag='categoryLinks')
+                primary_cat = category_links.get_child(tag='categoryLink', attrib={"primary": "true"})
+                if primary_cat.target_name == "High Command":
+                    # Only include high command if it's generic astartes or EC, due to the EC detachment.
+                    if file.name in ["Legiones Astartes.cat", "Emperor's Children.cat"]:
+                        unit_ids.append(child.target_id)
+                elif primary_cat.target_name in self.battlefield_roles_that_can_be_prime:
+                    unit_ids.append(child.target_id)
+
+        for unit_id in unit_ids:
+            unit: Node = self.system.get_node_by_id(unit_id)
+            for profile in unit.get_descendants_with(lambda x: x.type == "profile:Profile"):
+                # print(profile)
+                if "Unique" in profile.get_profile_dict()["Type"]:
+                    continue
+                with self.subTest(f"Prime modifiers for {profile}"):
+                    mod_groups = profile.get_child("modifierGroups")
+                    self.assertIsNotNone(mod_groups, "Expected modifiers for prime benefits")
+                    combat_veterans_group = None
+                    paragon_of_battle_group = None
+                    for mod_group in mod_groups.children:
+                        if mod_group.does_descendent_exist(lambda x: x.text == "Combat Veterans"):
+                            combat_veterans_group = mod_group
+                        if mod_group.does_descendent_exist(lambda x: x.text == "Paragon of Battle"):
+                            paragon_of_battle_group = mod_group
+
+                    with self.subTest(f"Combat Veterans for {profile}"):
+                        self.check_mods_and_conditions(combat_veterans_group, expected_mods=[
+                            {"type": "increment", "value": "1", "field": "02ad-ebe6-86e7-9fd6"},
+                            {"type": "increment", "value": "1", "field": "9cd1-0e7c-2cd6-5f2f"},
+                            {"type": "increment", "value": "1", "field": "f714-1726-37d3-44df"},
+                            {"type": "increment", "value": "1", "field": "29c5-925d-5b1d-1e77"},
+                            {"type": "ceil", "value": "10", "field": "02ad-ebe6-86e7-9fd6"},
+                            {"type": "ceil", "value": "10", "field": "9cd1-0e7c-2cd6-5f2f"},
+                            {"type": "ceil", "value": "10", "field": "f714-1726-37d3-44df"},
+                            {"type": "ceil", "value": "10", "field": "29c5-925d-5b1d-1e77"},
+                        ], expected_conditions=[{
+                            "type": "atLeast",
+                            "value": "1",
+                            "field": "selections",
+                            "scope": "parent",
+                            "childId": "8cf8-9be5-91d6-c96d",
+                            "shared": "true",
+                            "includeChildSelections": "true"
+                        }]
+                                                       )
+                    if "Command" in profile.get_profile_dict()["Type"]:
+                        with self.subTest(f"Paragon of Battle for {profile}"):
+                            self.check_mods_and_conditions(paragon_of_battle_group, expected_mods=[
+                                {"type": "increment", "value": "1", "field": "253c-d694-4695-c89e"},
+                                {"type": "increment", "value": "1", "field": "0cd5-b269-e3bc-028b"},
+                                {"type": "increment", "value": "1", "field": "024e-bdb1-7982-25a0"},
+                            ], expected_conditions=[{
+                                "type": "atLeast",
+                                "value": "1",
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "20cb-4eec-0844-8a97",
+                                "shared": "true",
+                                "includeChildSelections": "true"
+                            }]
+                                                           )
+
+    def check_mods_and_conditions(self, mod_group, expected_mods, expected_conditions):
+        self.assertIsNotNone(mod_group)
+
+        self.assertEqual(mod_group.type, "modifierGroup:and")
+        actual_mods = []
+        for mod in mod_group.get_child("modifiers").children:
+            actual_mods.append(mod.attrib)
+
+        self.assertCountEqual(actual_mods, expected_mods)
+        actual_conditions = []
+        for condition in mod_group.get_child("conditions").children:
+            actual_conditions.append(condition.attrib)
+
+        self.assertCountEqual(actual_conditions, expected_conditions)
+
     def test_all_high_command_have_detachment_choice(self):
         high_command_id = self.system.categories["High Command"].id
         for category_link in self.system.all_nodes.filter(lambda x: x.target_id == high_command_id):
@@ -266,13 +372,14 @@ class GameTests(unittest.TestCase):
                 entry_links = unit.get_child("entryLinks")
                 self.assertIsNotNone(entry_links, "Should have entry links")
                 high_command_detachment_choice_link = entry_links.get_child(tag='entryLink',
-                                                                            attrib={'targetId': '969e-8b5b-1410-cfc6'})
+                                                                            attrib={
+                                                                                'targetId': '969e-8b5b-1410-cfc6'})
                 self.assertIsNotNone(high_command_detachment_choice_link,
                                      "Should have a link to 'High Command Detachment Choice'")
 
     def test_all_units_are_units(self):
         total_model_count = 0
-        for unit_id in self.unit_ids:
+        for unit_id in self.get_all_unit_ids():
             unit = self.system.get_node_by_id(unit_id)
             with self.subTest(f"{unit} should be of type 'unit'"):
                 self.assertEqual(unit.attrib["type"], "unit")
@@ -299,7 +406,7 @@ class GameTests(unittest.TestCase):
                         self.assertIsNotNone(potential_model.get_profile_node(None),
                                              f"There should be a profile on {potential_model}")
                 self.assertGreaterEqual(model_count, 1, "There should be at least one model in the unit")
-        print(f"There are {len(self.unit_ids)} Units, containing {total_model_count} models")
+        print(f"There are {len(self.get_all_unit_ids())} Units, containing {total_model_count} models")
 
     def test_categories_match_type_line(self):
         system = self.system
