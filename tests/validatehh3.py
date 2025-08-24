@@ -28,6 +28,13 @@ LA_PRIME_BENEFIT_SLOT_UPGRADES = {
     ],
 }
 
+CATS_WITH_NO_PRIMES = [
+    "Cults Abominatio.cat",
+    "Divisio Assassinorum.cat",
+    "Legio Titanicus.cat",
+    # KNights have primes but they're special, handled separately
+]
+
 
 class GameTests(unittest.TestCase):
 
@@ -206,7 +213,6 @@ class GameTests(unittest.TestCase):
                 self.assertIsNotNone(allied_links.get_child("forceEntryLink", attrib={"targetId": child_force.id}))
 
     def test_all_units_have_prime(self):
-
         # First, get all units
         unit_ids = []
         for file in self.system.files:
@@ -254,6 +260,52 @@ class GameTests(unittest.TestCase):
 
                     self.assertGreaterEqual(prime_options_total, 1, "There should be at least one prime option")
 
+    def test_prime_benefit_modifiers(self):
+        self.maxDiff = None
+        # Get all units referencing the prime selector. If a unit should have the prime selector, another test will find it.
+        for category_link in self.system.all_nodes.filter(lambda x: x.target_id == '3fa2-78b1-637f-7fb2'):
+            if category_link.system_file.name in CATS_WITH_NO_PRIMES:
+                continue
+            unit = category_link.parent.parent
+            for profile in unit.get_descendants_with(lambda x: x.type == "profile:Profile"):
+                print(profile)
+                if "Unique" in profile.get_profile_dict()["Type"]:
+                    continue
+                with self.subTest(f"Prime modifiers for {profile}"):
+                    mod_groups = profile.get_child("modifierGroups")
+                    self.assertIsNotNone(mod_groups, "Expected modifiers for prime benefits")
+                    for mod_group in mod_groups.children:
+                        if mod_group.does_descendent_exist(lambda x: x.text == "Combat Veterans"):
+                            with self.subTest(f"Combat Veterans for {profile}"):
+                                self.assertEqual(mod_group.type, "modifierGroup:and")
+                                actual_mods = []
+                                for mod in mod_group.get_child("modifiers").children:
+                                    actual_mods.append(mod.attrib)
+                                expected_mods = [
+                                    {"type": "increment", "value": "1", "field": "02ad-ebe6-86e7-9fd6"},
+                                    {"type": "increment", "value": "1", "field": "9cd1-0e7c-2cd6-5f2f"},
+                                    {"type": "increment", "value": "1", "field": "f714-1726-37d3-44df"},
+                                    {"type": "increment", "value": "1", "field": "29c5-925d-5b1d-1e77"},
+                                    {"type": "ceil", "value": "10", "field": "02ad-ebe6-86e7-9fd6"},
+                                    {"type": "ceil", "value": "10", "field": "9cd1-0e7c-2cd6-5f2f"},
+                                    {"type": "ceil", "value": "10", "field": "f714-1726-37d3-44df"},
+                                    {"type": "ceil", "value": "10", "field": "29c5-925d-5b1d-1e77"},
+                                ]
+                                self.assertCountEqual(actual_mods, expected_mods)
+                                actual_conditions = []
+                                for condition in mod_group.get_child("conditions").children:
+                                    actual_conditions.append(condition.attrib)
+                                expected_conditions = [{
+                                    "type": "atLeast",
+                                    "value": "1",
+                                    "field": "selections",
+                                    "scope": "parent",
+                                    "childId": "8cf8-9be5-91d6-c96d",
+                                    "shared": "true",
+                                    "includeChildSelections": "true"
+                                }]
+                                self.assertCountEqual(actual_conditions, expected_conditions)
+
     def test_all_high_command_have_detachment_choice(self):
         high_command_id = self.system.categories["High Command"].id
         for category_link in self.system.all_nodes.filter(lambda x: x.target_id == high_command_id):
@@ -266,7 +318,8 @@ class GameTests(unittest.TestCase):
                 entry_links = unit.get_child("entryLinks")
                 self.assertIsNotNone(entry_links, "Should have entry links")
                 high_command_detachment_choice_link = entry_links.get_child(tag='entryLink',
-                                                                            attrib={'targetId': '31c4-c9d1-fdba-4b21'})
+                                                                            attrib={
+                                                                                'targetId': '31c4-c9d1-fdba-4b21'})
                 self.assertIsNotNone(high_command_detachment_choice_link,
                                      "Should have a link to 'High Command Detachment Choice'")
 
