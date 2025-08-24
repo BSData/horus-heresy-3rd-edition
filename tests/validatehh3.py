@@ -275,7 +275,7 @@ class GameTests(unittest.TestCase):
                 continue
             unit = category_link.parent.parent
             for profile in unit.get_descendants_with(lambda x: x.type == "profile:Profile"):
-                print(profile)
+                # print(profile)
                 if "Unique" in profile.get_profile_dict()["Type"]:
                     continue
                 with self.subTest(f"Prime modifiers for {profile}"):
