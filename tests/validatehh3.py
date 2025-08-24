@@ -332,7 +332,7 @@ class GameTests(unittest.TestCase):
                 self.assertIsNotNone(entry_links, "Should have entry links")
                 high_command_detachment_choice_link = entry_links.get_child(tag='entryLink',
                                                                             attrib={
-                                                                                'targetId': '31c4-c9d1-fdba-4b21'})
+                                                                                'targetId': '969e-8b5b-1410-cfc6'})
                 self.assertIsNotNone(high_command_detachment_choice_link,
                                      "Should have a link to 'High Command Detachment Choice'")
 
