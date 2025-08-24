@@ -221,6 +221,8 @@ class GameTests(unittest.TestCase):
         # First, get all units
         unit_ids = []
         for file in self.system.files:
+            if file.name in CATS_WITH_NO_PRIMES:
+                continue
             entry_links_node = file.root_node.get_child(tag='entryLinks')
             if entry_links_node is None:
                 continue
@@ -229,6 +231,10 @@ class GameTests(unittest.TestCase):
                 primary_cat = category_links.get_child(tag='categoryLink', attrib={"primary": "true"})
                 if file.name == "Questoris Familia.cat":
                     if primary_cat.target_name == "Lord of War":
+                        unit_ids.append(child.target_id)
+                elif primary_cat.target_name == "High Command":
+                    # Only include high command if it's generic astartes or EC, due to the EC detachment.
+                    if file.name in ["Legiones Astartes.cat", "Emperor's Children.cat"]:
                         unit_ids.append(child.target_id)
                 elif primary_cat.target_name in self.battlefield_roles_that_can_be_prime:
                     unit_ids.append(child.target_id)
@@ -267,12 +273,26 @@ class GameTests(unittest.TestCase):
 
     def test_prime_benefit_modifiers(self):
         self.maxDiff = None
-        # Get all units referencing the prime selector.
-        # If a unit should have the prime selector, another test will find it.
-        for category_link in self.system.all_nodes.filter(lambda x: x.target_id == '3fa2-78b1-637f-7fb2'):
-            if category_link.system_file.name in CATS_WITH_NO_PRIMES:
+        unit_ids = []
+        for file in self.system.files:
+            # While questoris can have primes, they can't have any of these.
+            if file.name in CATS_WITH_NO_PRIMES + ["Questoris Familia.cat"]:
                 continue
-            unit = category_link.parent.parent
+            entry_links_node = file.root_node.get_child(tag='entryLinks')
+            if entry_links_node is None:
+                continue
+            for child in entry_links_node.children:
+                category_links = child.get_child(tag='categoryLinks')
+                primary_cat = category_links.get_child(tag='categoryLink', attrib={"primary": "true"})
+                if primary_cat.target_name == "High Command":
+                    # Only include high command if it's generic astartes or EC, due to the EC detachment.
+                    if file.name in ["Legiones Astartes.cat", "Emperor's Children.cat"]:
+                        unit_ids.append(child.target_id)
+                elif primary_cat.target_name in self.battlefield_roles_that_can_be_prime:
+                    unit_ids.append(child.target_id)
+
+        for unit_id in unit_ids:
+            unit: Node = self.system.get_node_by_id(unit_id)
             for profile in unit.get_descendants_with(lambda x: x.type == "profile:Profile"):
                 # print(profile)
                 if "Unique" in profile.get_profile_dict()["Type"]:
