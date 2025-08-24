@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="43" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="44" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -1114,7 +1114,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <categoryLink targetId="1e7d-9066-28d2-97a0" id="ce21-b38d-b224-0409" primary="false" name="Heavy Model Sub-Type"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="8628-b96d-975a-abbe" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="943f-e958-461a-bb23" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="7ed7-0182-49eb-959c" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
@@ -1144,6 +1143,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </entryLink>
         <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="81e0-c9a5-79d4-99dc" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="5"/>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="afde-bd65-6eb5-18b8" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50" sortIndex="6"/>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="24f5-3a4a-7266-6951" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="7"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Master of the Legion" id="a4f6-bab7-47e9-a8b0" hidden="false" type="profile" targetId="6cd2-96be-b703-6d57"/>
@@ -1480,7 +1480,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="691c-9084-b60d-3b72" includeChildSelections="true"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="691c-9084-b60d-3b72" includeChildSelections="true" automatic="true"/>
                   </constraints>
                   <selectionEntryGroups>
                     <selectionEntryGroup name="May exchange Bolt pistol for:" id="2da1-6f3c-e1f4-3537" hidden="false" defaultSelectionEntryId="29a9-66f3-d0b9-2cfa" sortIndex="1">
@@ -1585,6 +1585,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                       </modifiers>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
+                  <modifiers>
+                    <modifier type="set" value="1" field="691c-9084-b60d-3b72">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntryGroup>
@@ -4449,7 +4456,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="56fa-651a-1042-052d" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="408d-db4a-41f1-94d8" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="5c2c-c897-4f46-b9eb" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
@@ -4465,6 +4471,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </constraints>
         </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="true" id="ef28-f458-e409-7f30" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="e966-8af9-6e75-09a8" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="7"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" id="d3ff-0c94-ec92-9fd3" hidden="false" sortIndex="2">
@@ -5010,7 +5017,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="2090-2827-7a71-d541" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="bc59-528d-4fe6-8573" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="9064-ad16-4ca4-aa5b" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
@@ -5018,6 +5024,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </entryLink>
         <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="5a03-b6ea-16aa-c722" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="3"/>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="8dc8-c5af-5e57-91ce" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="be9d-d140-21d1-0f59" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="4"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Optae" hidden="false" id="1653-8dfd-2881-8cec" sortIndex="6">
