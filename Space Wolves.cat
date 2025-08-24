@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d995-cb33-be41-ecf8" name="                         VI - Space Wolves" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="10" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d995-cb33-be41-ecf8" name="                         VI - Space Wolves" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="11" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="db71-05b7-0cff-28d1" importRootEntries="true" targetId="5334-5605-242c-d75e"/>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="17f0-6633-7613-e326" importRootEntries="true" targetId="9b32-f350-6aa9-9c09"/>
@@ -678,34 +678,20 @@ Howl of the Death Wolf: Once this Gambit is selected and until it&apos;s effects
                 <entryLink import="true" name="Bolt pistol" hidden="false" id="cef5-7c6d-507e-a0ed" type="selectionEntry" targetId="2942-f783-d627-33c5" defaultAmount="1"/>
               </entryLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="1 in 5 may replace their bolt pistol with:" id="0ea8-15e3-f8ca-dc27" hidden="false" flatten="true">
-                  <selectionEntryGroups>
-                    <selectionEntryGroup name="Pistols" id="70e9-7503-5755-e5c1" hidden="false" flatten="false">
-                      <entryLinks>
-                        <entryLink import="true" name="Plasma pistol" hidden="false" id="e3f5-fc88-f26d-cd2b" type="selectionEntry" targetId="659f-d52e-1515-2912">
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="016f-0029-1645-8009"/>
-                          </constraints>
-                        </entryLink>
-                        <entryLink import="true" name="Hand flamer" hidden="false" id="1f1d-1a1f-a823-9df3" type="selectionEntry" targetId="9322-09ed-abec-6e13">
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d95e-9e86-9c9b-3830"/>
-                          </constraints>
-                        </entryLink>
-                        <entryLink import="true" name="Volkite serpenta" hidden="false" id="e72e-1869-839d-d138" type="selectionEntry" targetId="b7c3-1de1-087c-3d6e"/>
-                      </entryLinks>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
+                <selectionEntryGroup name="1 in 5 may replace their bolt pistol with:" id="0ea8-15e3-f8ca-dc27" hidden="false" flatten="false">
                   <constraints>
                     <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="698a-25a1-9ce3-fedf" includeChildSelections="true"/>
                   </constraints>
                   <modifiers>
                     <modifier type="increment" value="1" field="698a-25a1-9ce3-fedf">
                       <repeats>
-                        <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                        <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
                       </repeats>
                     </modifier>
                   </modifiers>
+                  <entryLinks>
+                    <entryLink import="true" name="Legion Pistols" hidden="false" id="c3a8-16ae-da5a-3ad4" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf"/>
+                  </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <constraints>

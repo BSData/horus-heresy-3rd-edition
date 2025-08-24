@@ -57,6 +57,9 @@ All units should include a link to the GST's "Prime Unit" selection entry. :robo
 
 Inside that link, you should link to your faction's list of "Prime Benefits" selection entry group. :robot: Checked by the unit tests
 
+Models  need to include the Charactaristic modifications for Prime Benefits that mod them
+- For Models with the Command Sub-Type - Paragon of Battle - Increment WS, BS & A by 1 if Parent contains Paragon of Battle (Copy from existing unit profile)
+
 ###  Astartes Units
 All Astartes units should have the following Traits at the root level of the unit (Add Link -> Profile -> Search for them):
 - \[Allegiance]

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="486f-b32a-ac87-73dd" name="                         VIII - Night Lords" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="13" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="486f-b32a-ac87-73dd" name="                         VIII - Night Lords" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="14" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Konrad Curze" hidden="false" id="f5fd-f425-c610-4a94">
       <selectionEntries>
@@ -420,12 +420,12 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
             <categoryLink targetId="8045-89a4-76d4-fcef" id="4c04-61f5-cd29-fca6" primary="false" name="Sergeant Model Sub-Type"/>
             <categoryLink targetId="594d-fa82-13cb-a345" id="ead3-f49a-4ab2-8c3e" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="c6c0-e196-44e6-aee9" primary="false" name="Antigrav Model Sub-Type"/>
-            <categoryLink targetId="afd9-2b52-9cdd-30f2" id="637c-face-4171-dbd7" primary="false" name="Default Chainsword"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May replace it&apos;s chainsword with:" id="f240-8d6d-eac6-f708" hidden="false" defaultSelectionEntryId="7e42-c96c-86e3-8b8b">
+            <selectionEntryGroup name="May replace it&apos;s chainsword with:" id="f240-8d6d-eac6-f708" hidden="false" defaultSelectionEntryId="1891-bce9-5194-9973">
               <entryLinks>
-                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="374b-ce5c-299d-f8fc" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="1" flatten="true"/>
+                <entryLink import="true" name="Legion Sergeant Melee Weapons (no chainsword)" hidden="false" id="374b-ce5c-299d-f8fc" type="selectionEntryGroup" targetId="c7ca-8933-a703-7301" sortIndex="2" flatten="true"/>
+                <entryLink import="true" name="Chainsword" hidden="false" id="1891-bce9-5194-9973" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ea9-b042-5ce9-4f82"/>
@@ -466,9 +466,10 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Any Model in this Unit may replace it&apos;s chainsword with:" id="1cee-1725-3357-5f9b" hidden="false" defaultSelectionEntryId="7e42-c96c-86e3-8b8b">
+            <selectionEntryGroup name="Any Model in this Unit may replace it&apos;s chainsword with:" id="1cee-1725-3357-5f9b" hidden="false" defaultSelectionEntryId="5b46-66e9-fa3a-61a0">
               <entryLinks>
-                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="3d28-6bc0-05dc-e307" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="1"/>
+                <entryLink import="true" name="Legion Sergeant Melee Weapons (no chainsword)" hidden="false" id="3d28-6bc0-05dc-e307" type="selectionEntryGroup" targetId="c7ca-8933-a703-7301" sortIndex="2" flatten="true"/>
+                <entryLink import="true" name="Chainsword" hidden="false" id="5b46-66e9-fa3a-61a0" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ede7-4f0e-eb35-d023"/>
@@ -479,7 +480,6 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="5614-1e93-4d4e-80d7" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="69ba-9600-44dc-a207" primary="false" name="Antigrav Model Sub-Type"/>
-            <categoryLink targetId="afd9-2b52-9cdd-30f2" id="d753-5772-637e-50f1" primary="false" name="Default Chainsword"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -589,8 +589,8 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
           <selectionEntryGroups>
             <selectionEntryGroup name="Exchange chainsword for:" id="7dfc-9eac-d171-f2ed" hidden="false" defaultSelectionEntryId="db65-7241-cf9c-6c47">
               <entryLinks>
-                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="60a2-4128-a80d-660e" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="1"/>
-                <entryLink import="true" name="Chainglave" hidden="false" id="7442-b158-e0fc-58c7" type="selectionEntry" targetId="3708-b181-5f26-4387" sortIndex="9">
+                <entryLink import="true" name="Legion Sergeant Melee Weapons (no chainsword)" hidden="false" id="60a2-4128-a80d-660e" type="selectionEntryGroup" targetId="c7ca-8933-a703-7301" sortIndex="2" flatten="false"/>
+                <entryLink import="true" name="Chainglave" hidden="false" id="7442-b158-e0fc-58c7" type="selectionEntry" targetId="3708-b181-5f26-4387" sortIndex="10">
                   <modifiers>
                     <modifier type="set" value="5" field="9893-c379-920b-8982"/>
                   </modifiers>
@@ -598,12 +598,12 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a908-a69d-6e67-4c8b"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Bolter" hidden="false" id="a108-6c39-d324-5f0c" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="2">
+                <entryLink import="true" name="Bolter" hidden="false" id="a108-6c39-d324-5f0c" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="3">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b06e-2536-9773-26bf"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Volkite charger" hidden="false" id="fe69-566a-47f3-afe3" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="6">
+                <entryLink import="true" name="Volkite charger" hidden="false" id="fe69-566a-47f3-afe3" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="7">
                   <modifiers>
                     <modifier type="set" value="2" field="9893-c379-920b-8982"/>
                   </modifiers>
@@ -611,7 +611,7 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d903-76d2-d065-c581"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Flamer" hidden="false" id="5725-221d-84d7-b426" type="selectionEntry" targetId="9a45-35cd-3806-2303" sortIndex="5">
+                <entryLink import="true" name="Flamer" hidden="false" id="5725-221d-84d7-b426" type="selectionEntry" targetId="9a45-35cd-3806-2303" sortIndex="6">
                   <modifiers>
                     <modifier type="set" value="5" field="9893-c379-920b-8982"/>
                   </modifiers>
@@ -619,7 +619,7 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b08-d84d-f4e0-eda1"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Rotor cannon" hidden="false" id="1ae4-f656-4a9e-efd4" type="selectionEntry" targetId="05bf-af5e-be67-36a2" sortIndex="7">
+                <entryLink import="true" name="Rotor cannon" hidden="false" id="1ae4-f656-4a9e-efd4" type="selectionEntry" targetId="05bf-af5e-be67-36a2" sortIndex="8">
                   <modifiers>
                     <modifier type="set" value="5" field="9893-c379-920b-8982"/>
                   </modifiers>
@@ -627,18 +627,19 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15ee-6257-445c-c8b1"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Chainaxe" hidden="false" id="b95a-d8ee-ba62-b038" type="selectionEntry" targetId="31a4-f8de-de6d-1fd9" sortIndex="8">
+                <entryLink import="true" name="Chainaxe" hidden="false" id="b95a-d8ee-ba62-b038" type="selectionEntry" targetId="31a4-f8de-de6d-1fd9" sortIndex="9">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3bfc-8bc2-26c8-01b5"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Chainsword" hidden="false" id="29e5-796a-62cf-b037" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="25a2-7aa4-27e5-49f2"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3940-34a4-92fb-d4fa"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Bolter w/ bayonet" hidden="false" id="c0f6-2663-0095-bf88" sortIndex="3">
+                <selectionEntry type="upgrade" import="true" name="Bolter w/ bayonet" hidden="false" id="c0f6-2663-0095-bf88" sortIndex="4">
                   <entryLinks>
                     <entryLink import="true" name="Bolter" hidden="false" id="e80c-3721-c86a-7b63" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e">
                       <constraints>
@@ -660,7 +661,7 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97f4-5025-2866-db31"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Bolter w/ chain bayonet" hidden="false" id="7491-cd39-5471-124b" sortIndex="4">
+                <selectionEntry type="upgrade" import="true" name="Bolter w/ chain bayonet" hidden="false" id="7491-cd39-5471-124b" sortIndex="5">
                   <entryLinks>
                     <entryLink import="true" name="Chain bayonet" hidden="false" id="b4b1-e8b6-6414-85fc" type="selectionEntry" targetId="e410-d998-bd3e-c0ea">
                       <constraints>
@@ -703,7 +704,6 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
           <categoryLinks>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="5e08-6e72-bbf8-54c0" primary="false" name="Sergeant Model Sub-Type"/>
             <categoryLink targetId="594d-fa82-13cb-a345" id="8597-e0c7-4da1-a00f" primary="false" name="Infantry Model Type"/>
-            <categoryLink targetId="afd9-2b52-9cdd-30f2" id="9111-d1ab-b6f9-e7b5" primary="false" name="Default Chainsword"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Executioner" hidden="false" id="2fc1-8f08-e3ee-fb5b" sortIndex="2" publicationId="e54c-7040-0f35-d85d" page="172">
