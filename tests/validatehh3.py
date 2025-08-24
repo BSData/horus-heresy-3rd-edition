@@ -267,7 +267,8 @@ class GameTests(unittest.TestCase):
 
     def test_prime_benefit_modifiers(self):
         self.maxDiff = None
-        # Get all units referencing the prime selector. If a unit should have the prime selector, another test will find it.
+        # Get all units referencing the prime selector.
+        # If a unit should have the prime selector, another test will find it.
         for category_link in self.system.all_nodes.filter(lambda x: x.target_id == '3fa2-78b1-637f-7fb2'):
             if category_link.system_file.name in CATS_WITH_NO_PRIMES:
                 continue
@@ -307,6 +308,22 @@ class GameTests(unittest.TestCase):
                             "includeChildSelections": "true"
                         }]
                                                        )
+                    if "Command" in profile.get_profile_dict()["Type"]:
+                        with self.subTest(f"Paragon of Battle for {profile}"):
+                            self.check_mods_and_conditions(paragon_of_battle_group, expected_mods=[
+                                {"type": "increment", "value": "1", "field": "253c-d694-4695-c89e"},
+                                {"type": "increment", "value": "1", "field": "0cd5-b269-e3bc-028b"},
+                                {"type": "increment", "value": "1", "field": "024e-bdb1-7982-25a0"},
+                            ], expected_conditions=[{
+                                "type": "atLeast",
+                                "value": "1",
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "20cb-4eec-0844-8a97",
+                                "shared": "true",
+                                "includeChildSelections": "true"
+                            }]
+                                                           )
 
     def check_mods_and_conditions(self, mod_group, expected_mods, expected_conditions):
         self.assertIsNotNone(mod_group)
