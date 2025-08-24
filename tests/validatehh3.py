@@ -45,8 +45,6 @@ class GameTests(unittest.TestCase):
                              },
                              )
 
-
-
         self.battlefield_roles_that_can_be_prime = Heresy3e.BATTLEFIELD_ROLES.copy()
 
         # Warlords aren't ever prime? High command can be in EC.
@@ -54,7 +52,7 @@ class GameTests(unittest.TestCase):
         # Lords of war are only prime in knights, make a separate test for this.
         self.battlefield_roles_that_can_be_prime.remove("Lord of War")
         self.battlefield_roles_that_can_be_prime.remove("Fortification")
-        
+
     def get_all_unit_ids(self):
         # Get a list of all units that tests may want to share.
         unit_ids = []
