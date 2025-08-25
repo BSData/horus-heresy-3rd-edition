@@ -15747,6 +15747,27 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <characteristicType name="Type" id="869d-8fb8-f39f-4575"/>
       </characteristicTypes>
     </profileType>
+    <profileType name="Ordinatus Carriage" id="d2eb-6505-121b-e2fd" hidden="false" sortIndex="22">
+      <characteristicTypes>
+        <characteristicType name="Type" id="3aa1-c4e0-580b-3ea8"/>
+        <characteristicType name="M" id="ca8f-3459-76a5-341a"/>
+        <characteristicType name="BS" id="4916-23f6-e8ae-e0a6"/>
+        <characteristicType name="Primary" id="3b6d-41c6-7dfc-687a"/>
+        <characteristicType name="Exposed" id="bacb-0550-4ce0-c9f6"/>
+        <characteristicType name="HP" id="4a6e-ba4c-efad-8147"/>
+        <characteristicType name="Transport" id="2460-f99d-ca7c-c0eb"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Ordinatus Gun" id="4422-b6dd-055c-7cf5" hidden="false" sortIndex="23">
+      <characteristicTypes>
+        <characteristicType name="M" id="b0c3-d1d1-6290-b699"/>
+        <characteristicType name="BS" id="84ea-9f8a-3a99-d275"/>
+        <characteristicType name="Primary" id="3af3-42b1-8029-403a"/>
+        <characteristicType name="Exposed" id="4de0-6b05-f85d-20ca"/>
+        <characteristicType name="HP" id="40fb-a328-7da1-c507"/>
+        <characteristicType name="Transport" id="2815-6bab-2f63-5f71"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Common Prime Benefits" id="93f7-d7db-d7f0-2146" hidden="false">
