@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="14" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="18" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Anacharis Scoria" hidden="false" id="10f5-dae8-f081-d82f" sortIndex="29">
       <infoLinks>
@@ -6622,6 +6622,280 @@ When a Model with this Special Rule and the Vehicle Type moves through an enemy 
         </entryLink>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mechanicum Ordinatus Ulator" hidden="false" id="0eec-dfde-0a0f-4440" sortIndex="36">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="750"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Ordinatus Ulator" hidden="false" id="4b98-9da0-bc0e-74ae">
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="9ba7-bcfd-4e78-4f5a" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="f7f7-cdd5-a9fd-aa7a" id="5a61-5d47-98ad-0955" primary="false" name="Ordinatus Sub-Type"/>
+            <categoryLink targetId="1ec3-1433-658a-f04e" id="374c-830a-db2f-cfa3" primary="false" name="Macrotek"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8548-1231-950f-ae47-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8548-1231-950f-ae47-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Carriage" typeId="d2eb-6505-121b-e2fd" typeName="Ordinatus Carriage" hidden="false" id="fef8-6deb-9ff0-e9e6">
+              <characteristics>
+                <characteristic name="Type" typeId="3aa1-c4e0-580b-3ea8">Vehicle (Ordinatus)</characteristic>
+                <characteristic name="M" typeId="ca8f-3459-76a5-341a">10</characteristic>
+                <characteristic name="BS" typeId="4916-23f6-e8ae-e0a6">4</characteristic>
+                <characteristic name="Primary" typeId="3b6d-41c6-7dfc-687a">14</characteristic>
+                <characteristic name="Exposed" typeId="bacb-0550-4ce0-c9f6">10</characteristic>
+                <characteristic name="HP" typeId="4a6e-ba4c-efad-8147">14</characteristic>
+                <characteristic name="Transport" typeId="2460-f99d-ca7c-c0eb">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Gun" typeId="4422-b6dd-055c-7cf5" typeName="Ordinatus Gun" hidden="false" id="c7d3-2d35-caf7-e522">
+              <characteristics>
+                <characteristic name="M" typeId="b0c3-d1d1-6290-b699">-</characteristic>
+                <characteristic name="BS" typeId="84ea-9f8a-3a99-d275">4</characteristic>
+                <characteristic name="Primary" typeId="3af3-42b1-8029-403a">13</characteristic>
+                <characteristic name="Exposed" typeId="4de0-6b05-f85d-20ca">10</characteristic>
+                <characteristic name="HP" typeId="40fb-a328-7da1-c507">12</characteristic>
+                <characteristic name="Transport" typeId="2815-6bab-2f63-5f71">-</characteristic>
+                <characteristic typeId="58e0-a986-de89-68ec" name="Access Points"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Ordinatus volkite culverin" hidden="false" id="daa8-284d-6cda-201d" type="selectionEntry" targetId="ee25-2ea5-c44d-2bcd" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="cc91-726c-1812-78de-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="cc91-726c-1812-78de-max"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Rear Mounted Ordinatus volkite culverin" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Ordinatus volkite culverin" hidden="false" id="d7a9-c58d-30dc-f782" type="selectionEntry" targetId="ee25-2ea5-c44d-2bcd" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="4654-d2d8-c71e-d006-min"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="4654-d2d8-c71e-d006-max"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Front Mounted Ordinatus volkite culverin" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Sonic destructor" hidden="false" id="ad59-20cd-87b3-815e" type="selectionEntry" targetId="95b7-92a0-cdb9-8ecd" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e3b2-8b07-020e-b51c-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e3b2-8b07-020e-b51c-max"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Boresight Mounted sonic destructor" field="name"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Repair Crew (X)" id="1aa5-6cf9-7a7c-067d" hidden="false" type="rule" targetId="e60a-ee69-a386-7b11">
+              <comment>D3</comment>
+              <modifiers>
+                <modifier type="set" value="Repair Crew (D3)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Dispersal Field" id="39d2-0292-4ccf-195e" hidden="false" type="rule" targetId="f50c-2bd5-3de1-4695"/>
+            <infoLink name="Dispersal" id="7af4-f013-4cee-89e1" hidden="false" type="profile" targetId="8c00-4a0c-86e2-ca65"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="3a0e-9154-da80-dc40" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Mechanicum]" id="4894-fc33-231f-a65f" hidden="false" type="profile" targetId="7aca-c779-952f-fcac"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="1ec3-1433-658a-f04e" id="f2a6-4a91-217a-abce" primary="false" name="Macrotek"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mechanicum Ordinatus Sagittar" hidden="false" id="85ac-f5f9-5099-e423" sortIndex="37">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="800"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1ec3-1433-658a-f04e" id="a7d9-c618-ec0f-b95b" primary="false" name="Macrotek"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Ordinatus Sagittar" hidden="false" id="c66d-b286-67a6-96d5">
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="0467-b6dc-0af6-7be0" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="f7f7-cdd5-a9fd-aa7a" id="bcab-b82b-9ea4-1de5" primary="false" name="Ordinatus Sub-Type"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f7cc-1d4b-c0ea-5919-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7cc-1d4b-c0ea-5919-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Carriage" typeId="d2eb-6505-121b-e2fd" typeName="Ordinatus Carriage" hidden="false" id="2d50-490f-6151-82ac">
+              <characteristics>
+                <characteristic name="Type" typeId="3aa1-c4e0-580b-3ea8">Vehicle (Ordinatus)</characteristic>
+                <characteristic name="M" typeId="ca8f-3459-76a5-341a">10</characteristic>
+                <characteristic name="BS" typeId="4916-23f6-e8ae-e0a6">4</characteristic>
+                <characteristic name="Primary" typeId="3b6d-41c6-7dfc-687a">14</characteristic>
+                <characteristic name="Exposed" typeId="bacb-0550-4ce0-c9f6">10</characteristic>
+                <characteristic name="HP" typeId="4a6e-ba4c-efad-8147">14</characteristic>
+                <characteristic name="Transport" typeId="2460-f99d-ca7c-c0eb">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Gun" typeId="4422-b6dd-055c-7cf5" typeName="Ordinatus Gun" hidden="false" id="8d30-7085-9833-a73e">
+              <characteristics>
+                <characteristic name="M" typeId="b0c3-d1d1-6290-b699">-</characteristic>
+                <characteristic name="BS" typeId="84ea-9f8a-3a99-d275">4</characteristic>
+                <characteristic name="Primary" typeId="3af3-42b1-8029-403a">13</characteristic>
+                <characteristic name="Exposed" typeId="4de0-6b05-f85d-20ca">10</characteristic>
+                <characteristic name="HP" typeId="40fb-a328-7da1-c507">12</characteristic>
+                <characteristic name="Transport" typeId="2815-6bab-2f63-5f71">-</characteristic>
+                <characteristic typeId="58e0-a986-de89-68ec" name="Access Points"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Ordinatus volkite culverin" hidden="false" id="66ff-0c4a-d154-2f6b" type="selectionEntry" targetId="ee25-2ea5-c44d-2bcd" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="be32-51a5-085d-a982-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="be32-51a5-085d-a982-max"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Rear Mounted Ordinatus volkite culverin" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Ordinatus volkite culverin" hidden="false" id="3cbe-5a9f-5004-08ac" type="selectionEntry" targetId="ee25-2ea5-c44d-2bcd" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="1a64-aae0-9b84-40cb-min"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="1a64-aae0-9b84-40cb-max"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Front Mounted Ordinatus volkite culverin" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Belicosa volcano cannon" hidden="false" id="7548-7d92-3542-d3ee" type="selectionEntry" targetId="8173-e259-7de6-163b" sortIndex="3">
+              <modifiers>
+                <modifier type="set" value="Boresight Mounted Belicosa volcano cannon" field="name"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4652-b2f5-0f56-7a64-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4652-b2f5-0f56-7a64-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Dispersal Field" id="ca9d-6d8f-2d40-8656" hidden="false" type="rule" targetId="f50c-2bd5-3de1-4695"/>
+            <infoLink name="Repair Crew (X)" id="8540-416b-8681-ee59" hidden="false" type="rule" targetId="e60a-ee69-a386-7b11">
+              <comment>D3</comment>
+              <modifiers>
+                <modifier type="set" value="Repair Crew (D3)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="55a3-0938-7fb2-7033" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Mechanicum]" id="47bf-c161-728a-650f" hidden="false" type="profile" targetId="7aca-c779-952f-fcac"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mechanicum Ordinatus Aktaeus" hidden="false" id="9111-1de6-ec9d-526a" sortIndex="38">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="900"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1ec3-1433-658a-f04e" id="21d3-84ae-cc79-e29c" primary="false" name="Macrotek"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Ordinatus Aktaeus" hidden="false" id="3901-c2dd-012a-9072">
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="d78b-1f4e-80f6-7a54" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="f7f7-cdd5-a9fd-aa7a" id="74ca-e4bf-dde8-3f6d" primary="false" name="Ordinatus Sub-Type"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="101b-4036-682d-32bd-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="101b-4036-682d-32bd-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Carriage" typeId="d2eb-6505-121b-e2fd" typeName="Ordinatus Carriage" hidden="false" id="903e-6928-c1ca-a0fd">
+              <characteristics>
+                <characteristic name="Type" typeId="3aa1-c4e0-580b-3ea8">Vehicle (Ordinatus)</characteristic>
+                <characteristic name="M" typeId="ca8f-3459-76a5-341a">10</characteristic>
+                <characteristic name="BS" typeId="4916-23f6-e8ae-e0a6">4</characteristic>
+                <characteristic name="Primary" typeId="3b6d-41c6-7dfc-687a">14</characteristic>
+                <characteristic name="Exposed" typeId="bacb-0550-4ce0-c9f6">10</characteristic>
+                <characteristic name="HP" typeId="4a6e-ba4c-efad-8147">14</characteristic>
+                <characteristic name="Transport" typeId="2460-f99d-ca7c-c0eb">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Gun" typeId="4422-b6dd-055c-7cf5" typeName="Ordinatus Gun" hidden="false" id="c956-cb5f-ba19-1f5d">
+              <characteristics>
+                <characteristic name="M" typeId="b0c3-d1d1-6290-b699">-</characteristic>
+                <characteristic name="BS" typeId="84ea-9f8a-3a99-d275">4</characteristic>
+                <characteristic name="Primary" typeId="3af3-42b1-8029-403a">13</characteristic>
+                <characteristic name="Exposed" typeId="4de0-6b05-f85d-20ca">10</characteristic>
+                <characteristic name="HP" typeId="40fb-a328-7da1-c507">12</characteristic>
+                <characteristic name="Transport" typeId="2815-6bab-2f63-5f71">42</characteristic>
+                <characteristic name="Access Points" typeId="58e0-a986-de89-68ec">This Model has Access Points on both Side Facings.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Ordinatus volkite culverin" hidden="false" id="6c2b-a8c4-900f-84aa" type="selectionEntry" targetId="ee25-2ea5-c44d-2bcd" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="4ed6-8596-710b-406c-min"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="4ed6-8596-710b-406c-max"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Front Mounted Ordinatus volkite culverin" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Seismic macro-drill" hidden="false" id="046e-d73c-cd35-dad7" type="selectionEntry" targetId="9fff-a0a4-03d0-2777" sortIndex="2">
+              <modifiers>
+                <modifier type="set" value="Boresight Mounted seismic macro-drill" field="name"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf01-3c8a-2778-450c-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf01-3c8a-2778-450c-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Dispersal Field" id="4533-d30c-2360-d023" hidden="false" type="rule" targetId="f50c-2bd5-3de1-4695"/>
+            <infoLink name="Repair Crew (X)" id="64ed-d9a2-56c2-9322" hidden="false" type="rule" targetId="e60a-ee69-a386-7b11">
+              <comment>D3</comment>
+              <modifiers>
+                <modifier type="set" value="Repair Crew (D3)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <rules>
+            <rule name="Macro-drill Transport Bay" id="fdd8-6984-7cfc-9e58" hidden="false">
+              <description>A Model with this Special Rule and the Transport Sub-Type may have Models Embark upon it as per the normal Rules – however Models of any Type other than Vehicle may Embark upon it, and more than one Unit may Embark at the same time. Only 4 Models may be Embarked that do not have the Paragon or Infantry Type, and Models with a variant of the Bulky (X) Special Rule with a value of X greater than 6, or Models with a Base Wounds Characteristic of 10 or more, may not Embark at all. 
+
+
+Further, Models may only Embark or Disembark from a Model with this Special Rule if it has not yet made an attack with the seismic macro-drill. Once an attack has been made with that Weapon then no Models may Embark or Disembark from this Model.
+
+
+If the seismic macro-drill on a Model with this Special Rule is destroyed or otherwise rendered inoperable, then all Models Embarked on the Model suffer one Strength 8, AP3, Damage 4 Hit. Any Models that are not Removed as Casualties must then make an Emergency Disembarkation.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="67f3-e65a-4e84-0bc2" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Mechanicum]" id="1d7f-a1e0-990c-2f4a" hidden="false" type="profile" targetId="7aca-c779-952f-fcac"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="d1c5-abf5-3aa9-f0b1" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
@@ -7718,6 +7992,21 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         <categoryLink targetId="52d0-8b78-439e-18e5" id="318e-ddd9-cf9b-e545" primary="true" name="Heavy Transport"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Mechanicum Ordinatus Ulator" hidden="false" id="b034-e2bd-25a8-2c4d" type="selectionEntry" targetId="0eec-dfde-0a0f-4440" sortIndex="36">
+      <categoryLinks>
+        <categoryLink targetId="a46f-a465-0ead-d6b8" id="1080-1562-271b-7926" primary="true" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Mechanicum Ordinatus Sagittar" hidden="false" id="6b53-b01e-6a76-760e" type="selectionEntry" targetId="85ac-f5f9-5099-e423" sortIndex="37">
+      <categoryLinks>
+        <categoryLink targetId="a46f-a465-0ead-d6b8" id="04bc-e728-4055-3a03" primary="true" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Mechanicum Ordinatus Aktaeus" hidden="false" id="429d-4826-3d9b-8673" type="selectionEntry" targetId="9111-1de6-ec9d-526a" sortIndex="38">
+      <categoryLinks>
+        <categoryLink targetId="a46f-a465-0ead-d6b8" id="90a5-0234-747e-097e" primary="true" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule name="Cybertheugic Status: Null" id="d010-07c3-50a8-4002" hidden="false">
@@ -7733,4 +8022,23 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
       <description>A Model under the effects of this Cybertheugic Status gains a bonus of +1 to its Ballistic Skill and Weapon Skill Characteristics. If a Model has a Base Weapon Skill or Base Ballistic Skill of 0, then this Cybertheugic Status has no effect on it and it gains no bonuses to any Characteristic from it.</description>
     </rule>
   </rules>
+  <sharedRules>
+    <rule name="Dispersal Field" id="f50c-2bd5-3de1-4695" hidden="false">
+      <description>A Model with this Special Rule may have the Dispersal Advanced Reaction made for it:</description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
+    <profile name="Dispersal" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="8c00-4a0c-86e2-ca65">
+      <characteristics>
+        <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reactive Player to reduce the Damage of all Hits in one Fire Group to 1</characteristic>
+        <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Dispersal Reaction whenever a Model with the Dispersal Field Special Rule is the target of a Shooting Attack. The declaration is made after Step 3 of the Shooting Attack, once the Weapons to be used have been declared.</characteristic>
+        <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Dispersal Reaction – this cost is paid as soon as the declaration is made.</characteristic>
+        <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Unit that is making the Shooting Attack that triggered this Reaction is the Attacking Unit, the Unit that is the Target of the Shooting Attack is the Reacting Unit.</characteristic>
+        <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once a Dispersal Reaction has been declared, the Active Player must resolve all remaining steps of the Shooting Attack Process as normal, up to the start of Step 5.
+2. In Step 5, the Controlling Player of the Reacting Unit may choose to reduce the Damage of all Hits in a Fire Group to 1.
+3. If the Reacting Player chooses not to reduce the Damage of Hits in the selected Fire Group then the Shooting Attack continues as normal, but the Reacting Player may make the same choice with each following Fire Group in that Shooting Attack.
+4. Once the Reacting Player has chosen to reduce the Damage of Hits in a single Fire Group, they may not affect any further Fire Groups and the Shooting Attack is resolved as normal</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>

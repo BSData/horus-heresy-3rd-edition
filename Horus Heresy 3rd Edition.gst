@@ -15784,6 +15784,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <characteristicType name="Exposed" id="4de0-6b05-f85d-20ca"/>
         <characteristicType name="HP" id="40fb-a328-7da1-c507"/>
         <characteristicType name="Transport" id="2815-6bab-2f63-5f71"/>
+        <characteristicType name="Access Points" id="58e0-a986-de89-68ec"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
