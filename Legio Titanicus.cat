@@ -3,7 +3,7 @@
   <forceEntries>
     <forceEntry name="Legio Titanicus" id="c547-2614-91aa-456d" hidden="false">
       <forceEntries>
-        <forceEntry name="Titan Ordinal Primary Detachment" id="3290-f32c-c54a-2cc9" hidden="false">
+        <forceEntry name="Titan Ordinal Primary Detachment" id="3290-f32c-c54a-2cc9" hidden="true">
           <categoryLinks>
             <categoryLink name="High Command" hidden="false" id="5cac-3275-a7d0-93fb" targetId="d9a6-9b5f-b18a-4d63">
               <constraints>
@@ -249,8 +249,25 @@
               </constraints>
             </categoryLink>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <comment>Legio Titanicus</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="69c0-2783-c191-e6a2" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="69c0-2783-c191-e6a2" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </forceEntry>
       </forceEntries>
+      <categoryLinks>
+        <categoryLink name="Allegiance" hidden="false" id="02e7-042c-1f5c-0927" targetId="c408-52f1-b632-4c82">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="63ed-319d-6add-e22c" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08a3-8322-a996-8878"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
     </forceEntry>
   </forceEntries>
   <sharedProfiles>
@@ -2035,17 +2052,17 @@
     <catalogueLink type="catalogue" name="Mechanicum" id="de0f-b2fc-464c-5803" targetId="2f57-6e9d-8a7b-5c2e"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="Secutarii Axiarch" hidden="false" id="40df-780a-8b01-b143" type="selectionEntry" targetId="8860-ab47-2327-3635" sortIndex="1">
+    <entryLink import="true" name="Secutarii Axiarch" hidden="false" id="40df-780a-8b01-b143" type="selectionEntry" targetId="8860-ab47-2327-3635" sortIndex="2">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="8d3f-097e-e6c5-8eb2" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Secutarii Cohort" hidden="false" id="06b3-7342-2a99-acac" type="selectionEntry" targetId="6789-527d-9ed4-c0bc" sortIndex="2">
+    <entryLink import="true" name="Secutarii Cohort" hidden="false" id="06b3-7342-2a99-acac" type="selectionEntry" targetId="6789-527d-9ed4-c0bc" sortIndex="3">
       <categoryLinks>
         <categoryLink targetId="88e6-d373-4152-0dd8" id="232c-a5d7-fdd1-4a14" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Triaros Armoured Conveyor" hidden="false" id="085f-8cdc-cb7a-98cb" type="selectionEntry" targetId="0896-07f4-8844-9542" sortIndex="3">
+    <entryLink import="true" name="Triaros Armoured Conveyor" hidden="false" id="085f-8cdc-cb7a-98cb" type="selectionEntry" targetId="0896-07f4-8844-9542" sortIndex="4">
       <categoryLinks>
         <categoryLink targetId="d162-4711-5d60-0a48" id="f31d-7ecd-7ce4-7480" primary="true" name="Transport"/>
       </categoryLinks>
@@ -2053,22 +2070,22 @@
         <infoLink name="Legio Titanicus" id="a670-4378-31be-49ef" hidden="false" type="profile" targetId="5ee0-9a82-ab5f-1bb0"/>
       </infoLinks>
     </entryLink>
-    <entryLink import="true" name="Warhound Titan" hidden="false" id="1856-b592-1e1a-494f" type="selectionEntry" targetId="de13-dda8-5d1a-89d0" sortIndex="4">
+    <entryLink import="true" name="Warhound Titan" hidden="false" id="1856-b592-1e1a-494f" type="selectionEntry" targetId="de13-dda8-5d1a-89d0" sortIndex="5">
       <categoryLinks>
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="4243-10af-7b40-9439" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Reaver Titan" hidden="false" id="617a-c547-7f65-a1d0" type="selectionEntry" targetId="d18b-f29e-3b40-036d" sortIndex="5">
+    <entryLink import="true" name="Reaver Titan" hidden="false" id="617a-c547-7f65-a1d0" type="selectionEntry" targetId="d18b-f29e-3b40-036d" sortIndex="6">
       <categoryLinks>
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="a48c-506f-596e-35e9" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Warbringer Nemesis Titan" hidden="false" id="7cd6-74a7-d368-f65d" type="selectionEntry" targetId="49e8-a500-95a5-a08c" sortIndex="6">
+    <entryLink import="true" name="Warbringer Nemesis Titan" hidden="false" id="7cd6-74a7-d368-f65d" type="selectionEntry" targetId="49e8-a500-95a5-a08c" sortIndex="7">
       <categoryLinks>
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="0afc-0156-17e2-6d02" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Warlord Titan" hidden="false" id="d669-926b-7e61-8ec1" type="selectionEntry" targetId="0a00-037f-69a7-bb8c" sortIndex="7">
+    <entryLink import="true" name="Warlord Titan" hidden="false" id="d669-926b-7e61-8ec1" type="selectionEntry" targetId="0a00-037f-69a7-bb8c" sortIndex="8">
       <categoryLinks>
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="57de-5e57-8935-7894" primary="true" name="Lord of War"/>
       </categoryLinks>
