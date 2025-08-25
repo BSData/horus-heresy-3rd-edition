@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="44" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="48" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -452,6 +452,24 @@
     </categoryEntry>
     <categoryEntry name="Heavy Transport - Logisticae" id="6fc0-917e-44a4-a4da" hidden="true">
       <comment>Ultramarines Logisticae</comment>
+    </categoryEntry>
+    <categoryEntry name="Ordinatus Sub-Type" id="f7f7-cdd5-a9fd-aa7a" hidden="false">
+      <rules>
+        <rule name="Ordinatus Sub-Type" id="4888-0346-c11f-ad8d" hidden="false">
+          <description>&quot;The following Rules apply to all Models with the Ordinatus Sub-Type:
+
+
+• Models with this Sub-Type are not affected in any way by Difficult Terrain or Dangerous Terrain, and may pass through Impassable Terrain as long as they do not end a Move on or within an area of Impassable Terrain.
+• When making multiple Shooting Attacks in the same Shooting Phase, a Model with this Sub-Type does not have to make all attacks as Snap Shots.
+• A Model with this Sub-Type is limited on when and which Reactions may be made for it.
+• The Rules for applying Damage to a Model with this Sub-Type vary from those used with other Models with the Vehicle Type.
+• The Rules for Shooting Attacks and Combats that involve Ordinatus are changed as noted in this addendum.
+• If a Model with this Sub-Type has a Transport Capacity, then it may transport any number of Units, so long as the number of Models in the transported Units does not exceed the Vehicle’s Transport Capacity.
+• A Model with this Sub-Type cannot gain any Tactical Statuses or Cybertheurgic Statuses.
+• A Model with this Sub-Type cannot be affected by any Psychic Weapon, Psychic Reaction or Psychic Power.
+• A Model with this Sub-Type may not be targeted by the Battlesmith (X) Special Rule.</description>
+        </rule>
+      </rules>
     </categoryEntry>
   </categoryEntries>
   <forceEntries>
