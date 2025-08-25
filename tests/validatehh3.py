@@ -26,9 +26,6 @@ LA_PRIME_BENEFIT_SLOT_UPGRADES = {
     "Heavy Transport": [
         "Heavy Transport - Logisticae",
     ],
-        "Recon": [
-        "Recon - Land Raider Explorator Only",
-    ],
 }
 
 CATS_WITH_NO_PRIMES = [
