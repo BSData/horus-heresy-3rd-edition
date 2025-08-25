@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="14" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="18" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Anacharis Scoria" hidden="false" id="10f5-dae8-f081-d82f" sortIndex="29">
       <infoLinks>
@@ -209,12 +209,12 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd55-3b29-f3a0-1f6d"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="5c0b-63d3-f852-b1f9" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="c2e5-e390-450e-8515" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="5da2-e16a-4358-9f82" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="4677-5ebc-8319-8799" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="9"/>
       </entryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="410"/>
@@ -343,11 +343,10 @@
         </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="5b9f-3491-1b56-8599" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="14">
           <entryLinks>
-            <entryLink import="true" name="Special Assignment" hidden="false" id="adf5-e9c0-1a49-82df" type="selectionEntry" targetId="c857-47bd-6a4f-fcf8"/>
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="b4bb-8af8-4c52-bbbe" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="0a24-7e1b-1970-b23c" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="d3cb-436c-4a35-03a6" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="c7ec-ff15-15fb-fcc7" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -451,6 +450,24 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -679,6 +696,24 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -753,13 +788,12 @@
           </costs>
         </entryLink>
         <entryLink import="true" name="Heterodoxist" hidden="false" id="d774-6881-ee14-02d1" type="selectionEntry" targetId="7a1e-e035-4b60-0b35" sortIndex="3"/>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="6552-3cd8-1b54-9606" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="14">
+        <entryLink import="true" name="Prime Unit" hidden="false" id="6552-3cd8-1b54-9606" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="15">
           <entryLinks>
-            <entryLink import="true" name="Special Assignment" hidden="false" id="db3e-4fee-b298-2e11" type="selectionEntry" targetId="c857-47bd-6a4f-fcf8"/>
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="3b76-a493-49b6-9b1d" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="fb74-adac-7d09-2b54" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="61f5-f46a-fadf-cb58" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="14"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="9871-cb62-5283-2216" id="64a5-22ff-daf6-921c" primary="false" name="Command Model Sub-type"/>
@@ -991,6 +1025,22 @@
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -1164,6 +1214,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -1399,6 +1467,22 @@
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -1454,6 +1538,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -1618,6 +1720,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -1815,6 +1935,22 @@
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -1989,6 +2125,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -2059,6 +2213,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -2190,6 +2362,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -2268,6 +2458,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -2405,6 +2613,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">6+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64"/>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -2497,6 +2723,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -2669,6 +2913,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -2755,6 +3017,24 @@
                     <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                     <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Combat Veterans</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                        <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                        <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                        <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <constraints>
@@ -2909,6 +3189,24 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -3084,6 +3382,24 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -3168,6 +3484,24 @@
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Combat Veterans</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                        <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                        <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                        <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <categoryLinks>
@@ -3260,6 +3594,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -3586,6 +3938,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -3926,6 +4296,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -4096,6 +4484,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -4220,6 +4626,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -4409,6 +4833,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -4430,7 +4872,7 @@
                     <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
                     <characteristic name="AP" typeId="7a23-0248-2b94-5951">3</characteristic>
                     <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
-                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Phage (T)</characteristic>
+                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Phage (I)</characteristic>
                     <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Assault</characteristic>
                   </characteristics>
                 </profile>
@@ -4438,9 +4880,9 @@
               <infoLinks>
                 <infoLink name="Phage (X)" id="a1a5-0060-61c2-af4b" hidden="false" type="rule" targetId="3e26-d357-69d6-1341">
                   <modifiers>
-                    <modifier type="set" value="Phage (T)" field="name"/>
+                    <modifier type="set" value="Phage (I)" field="name"/>
                   </modifiers>
-                  <comment>T</comment>
+                  <comment>I</comment>
                 </infoLink>
               </infoLinks>
               <costs>
@@ -4461,19 +4903,6 @@
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Slaughterer blades" hidden="false" id="fc42-a690-b96d-2d8b" type="selectionEntry" targetId="a0b4-c592-01f4-c5a7" sortIndex="3">
-          <profiles>
-            <profile name="Slaughterer blades" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="df7f-4bf0-d3eb-3c59">
-              <characteristics>
-                <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
-                <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
-                <characteristic name="SM" typeId="4505-de6f-d4ae-6280">D</characteristic>
-                <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-                <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
-                <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Shred (5+), Breaching (5+), Reaping blow (1)</characteristic>
-                <characteristic name="Traits" typeId="76e3-c188-bc65-3467">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a74d-3663-25fa-fce1"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="488d-c5d2-ca00-6161"/>
@@ -4849,6 +5278,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -5427,7 +5874,7 @@
           <profiles>
             <profile name="Archmagos Draykavac" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="d8a8-ada2-33d4-d888">
               <characteristics>
-                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command, Unique)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">6</characteristic>
@@ -5446,12 +5893,14 @@
               <modifierGroups>
                 <modifierGroup type="and">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="3563-badf-5bdb-cdfe" childId="d391-110d-bdfb-5b4b" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="3563-badf-5bdb-cdfe" childId="d391-110d-bdfb-5b4b" shared="true" includeChildSelections="true"/>
                   </conditions>
                   <modifiers>
-                    <modifier type="append" value="(Command, Unique)" field="50fc-9241-d4a2-045b"/>
-                    <modifier type="add" value="9871-cb62-5283-2216" field="category"/>
-                    <modifier type="add" value="b980-187b-2b17-d635" field="category"/>
+                    <modifier type="increment" value="1" field="3120-8275-e537-ecd2"/>
+                    <modifier type="increment" value="-1" field="af9d-7db8-dc95-71c1"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="add" value="c504-9dfa-35d3-c98f" field="category"/>
+                    <modifier type="replace" value=", Antigrav)" field="50fc-9241-d4a2-045b" arg=")"/>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
@@ -5459,23 +5908,9 @@
           </profiles>
           <categoryLinks>
             <categoryLink name="Infantry Model Type" hidden="false" id="9e9d-374f-2909-3b06" targetId="594d-fa82-13cb-a345" primary="false"/>
+            <categoryLink targetId="b980-187b-2b17-d635" id="77ad-b946-2644-9bf7" primary="false" name="Unique Model Sub-Type"/>
+            <categoryLink targetId="9871-cb62-5283-2216" id="477f-04a5-fdae-3c9f" primary="false" name="Command Model Sub-type"/>
           </categoryLinks>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="3563-badf-5bdb-cdfe" childId="d391-110d-bdfb-5b4b" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="increment" value="1" field="3120-8275-e537-ecd2"/>
-                <modifier type="increment" value="-1" field="af9d-7db8-dc95-71c1"/>
-                <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                <modifier type="add" value="9871-cb62-5283-2216" field="category"/>
-                <modifier type="append" value="(Command, Unique, Antigrav)" field="50fc-9241-d4a2-045b"/>
-                <modifier type="add" value="b980-187b-2b17-d635" field="category"/>
-                <modifier type="add" value="c504-9dfa-35d3-c98f" field="category"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Abeyant" hidden="false" id="d391-110d-bdfb-5b4b" sortIndex="2">
           <constraints>
@@ -5525,8 +5960,7 @@ While a Model with this Special Rule is engaged in a Challenge, its Controlling 
           <entryLinks>
             <entryLink import="true" name="Graviton gun" hidden="false" id="509e-1115-189b-fa3a" type="selectionEntry" targetId="4a06-c55e-a06f-bd0c">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe0c-d4a7-d65f-f5b3"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe43-0e2c-d6d5-7a5d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="fe43-0e2c-d6d5-7a5d"/>
               </constraints>
             </entryLink>
             <entryLink import="true" name="Rotor cannon" hidden="false" id="4a1e-6df0-2059-a01c" type="selectionEntry" targetId="05bf-af5e-be67-36a2">
@@ -5546,8 +5980,8 @@ While a Model with this Special Rule is engaged in a Challenge, its Controlling 
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="332f-cdb1-aa69-ae24"/>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0973-abe5-99b1-77b9"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="332f-cdb1-aa69-ae24" automatic="true"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0973-abe5-99b1-77b9" automatic="true"/>
           </constraints>
           <modifiers>
             <modifier type="increment" value="1" field="332f-cdb1-aa69-ae24">
@@ -5628,8 +6062,8 @@ If the check is successful, then the Model with this Special Rule is immediately
         </entryLink>
         <entryLink import="true" name="Graviton gun" hidden="false" id="8aec-25cd-4de8-b4e7" type="selectionEntry" targetId="4a06-c55e-a06f-bd0c" sortIndex="9">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f78a-9163-c9c3-d8ae"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce13-6b0a-8315-4524"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="f78a-9163-c9c3-d8ae"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ce13-6b0a-8315-4524"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Cortex controller" hidden="false" id="bcb1-aa18-507b-6eae" type="selectionEntry" targetId="e1c7-e5c2-8a4c-1e79" sortIndex="10">
@@ -5657,16 +6091,17 @@ If the check is successful, then the Model with this Special Rule is immediately
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a45-c30f-ae60-c934"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="1e88-910f-6bf2-7c0e" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="fa49-588e-472c-9168" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="5f37-2c79-4725-a040" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="aa31-a3f7-490d-0381" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="13"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="a660-a2a5-eef3-2fbc" id="27b6-1d05-a732-e38a" primary="false" name="Heterodoxists"/>
         <categoryLink targetId="9892-3b91-8a3b-51e8" id="8888-9230-8a45-fef7" primary="false" name="Archmagos is Archimandrite"/>
+        <categoryLink targetId="3252-003d-1181-0f99" id="cd05-6303-9da8-6fe8" primary="false" name="Archimandrite"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="c504-9dfa-35d3-c98f" field="category">
@@ -5970,6 +6405,1050 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
           </modifiers>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tech Thrall Defence Covenant" hidden="false" id="e8d5-df1b-30f8-8887" sortIndex="31">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Tech-Thrall" hidden="false" id="f3c7-322f-6b46-5960" sortIndex="1">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="d968-8144-27e6-a38c" primary="false" name="Infantry Model Type"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mitra-lock" hidden="false" id="fff3-9650-eca0-1a1c" sortIndex="3">
+              <profiles>
+                <profile name="Mitra-lock" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="8b1c-7655-87a7-0935">
+                  <characteristics>
+                    <characteristic name="R" typeId="cdb0-8654-6840-1037">10</characteristic>
+                    <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
+                    <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">4</characteristic>
+                    <characteristic name="AP" typeId="7a23-0248-2b94-5951">-</characteristic>
+                    <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Stun (0)</characteristic>
+                    <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Assault, Las</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Stun (X)" id="0687-22ae-7195-c6ab" hidden="false" type="rule" targetId="c7c1-bbc9-f852-6f71">
+                  <modifiers>
+                    <modifier type="set" value="Stun (0)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="855a-e37a-5910-189c-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="855a-e37a-5910-189c-max"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="[Allegiance]" id="f72a-b25a-a273-440e" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+            <infoLink name="[Mechanicum]" id="b760-3c0c-1cf4-b778" hidden="false" type="profile" targetId="7aca-c779-952f-fcac"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="8c28-0440-d1ea-87ac"/>
+            <constraint type="max" value="40" field="selections" scope="parent" shared="true" id="c26d-1a5c-915c-3d5e"/>
+          </constraints>
+          <profiles>
+            <profile name="Tech-Thrall" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="d863-d100-242c-c210">
+              <characteristics>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">5</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">2</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">2</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">3</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">5</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">1</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">2</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">1</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">4</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">12</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">4</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">4</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">6+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Lacrymaerta" hidden="false" id="0ce5-6d9e-81ed-5f54" type="selectionEntry" targetId="0d7c-dc0a-3942-b4eb" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2fb-899e-d2b1-6f87"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b7f-7b86-b6fb-61bb"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="01c0-5fc6-3c5d-195f" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="13bf-c814-c9b9-ed1a" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Expendable (X)" id="57fb-34b8-f9a7-cb9f" hidden="false" type="rule" targetId="c4d4-e053-9564-540b">
+          <modifiers>
+            <modifier type="set" value="Expendable (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Feel No Pain (X)" id="965e-7567-858c-8594" hidden="false" type="rule" targetId="89b5-7320-db15-fd60">
+          <modifiers>
+            <modifier type="set" value="Feel No Pain (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Rite of Pure Thought" id="f712-9897-bc55-06bb" hidden="false" type="rule" targetId="b587-c418-b46f-e5f8"/>
+        <infoLink name="[Allegiance]" id="de9d-e5a3-9c05-a314" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Mechanicum]" id="d8a6-16bc-2a4a-7e8c" hidden="false" type="profile" targetId="7aca-c779-952f-fcac"/>
+      </infoLinks>
+      <rules>
+        <rule name="Tech-thralls" id="bbb2-cd22-71fc-3e9a" hidden="false">
+          <description>A Unit that contains Models with this Special Rule is considered to be a Tech-thrall Covenant Unit for the purposes of the Arcana Benefice: An Endless Servitude.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink targetId="594d-fa82-13cb-a345" id="1f12-ae6f-ab87-82e3" primary="false" name="Infantry Model Type"/>
+        <categoryLink targetId="8268-aa48-f4dc-0506" id="c8f5-606b-21ed-2ea4" primary="false" name="Lacrymaerta"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Arlatax Battle Maniple" hidden="false" id="88e3-4c5f-d4b7-b300" sortIndex="32">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Arlatax" hidden="false" id="8c96-ac34-ecde-d02e">
+          <profiles>
+            <profile name="Arlatax" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="c19c-7426-4e54-f1da">
+              <characteristics>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Automata (Antigrav)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">10</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">7</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">7</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">4</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">3</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">8</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">12</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">4</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">4</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="5833-5e86-26bc-0916" id="68a2-f044-32dd-5524" primary="false" name="Automata Model Type"/>
+            <categoryLink targetId="c504-9dfa-35d3-c98f" id="ac86-4cba-e532-e8fd" primary="false" name="Antigrav Model Sub-Type"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="120"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="47ce-d864-bdb6-e97e"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="0a92-54bf-c1cf-006f"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Plasma cannon" hidden="false" id="1d4d-fe18-3cc8-2298" type="selectionEntry" targetId="f8b8-96c8-ba31-faf8">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1361-cff4-0dbd-e30d-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1361-cff4-0dbd-e30d-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Must select one of" id="9eea-ea7c-c577-c55f" hidden="false" defaultSelectionEntryId="a840-d54c-cf25-25fc">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Pair of Power blades and Paired light autocannons " hidden="false" id="a840-d54c-cf25-25fc" sortIndex="1" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Pair of power blades" hidden="false" id="de78-2012-9f46-b574" type="selectionEntry" targetId="b6de-1568-2981-de20">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f332-7fb0-2dff-ddf3-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f332-7fb0-2dff-ddf3-max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Paired light autocannons" hidden="false" id="453f-9491-f967-cd54">
+                      <profiles>
+                        <profile name="Paired light autocannons" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="234d-b792-2da6-b1bc">
+                          <characteristics>
+                            <characteristic name="R" typeId="cdb0-8654-6840-1037">36</characteristic>
+                            <characteristic name="FP" typeId="5037-1f27-1790-e355">4</characteristic>
+                            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+                            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+                            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+                            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Breaching (6+)</characteristic>
+                            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Auto</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Breaching (X)" id="2302-e57d-8898-64c4" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+                          <comment>6+</comment>
+                          <modifiers>
+                            <modifier type="set" value="Breaching (6+)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2318-0dbf-b611-88f2-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2318-0dbf-b611-88f2-max"/>
+                      </constraints>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Pair of Arc scourges" hidden="false" id="2e9d-6a7e-a18c-fae4" sortIndex="2">
+                  <profiles>
+                    <profile name="Pair of Arc scourges" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="a328-e8da-348a-5222">
+                      <characteristics>
+                        <characteristic name="IM" typeId="6eec-4093-f946-1014">-</characteristic>
+                        <characteristic name="AM" typeId="03d0-6094-84f0-e27e">+1</characteristic>
+                        <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
+                        <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+                        <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+                        <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Shock (Suppressed)</characteristic>
+                        <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Arc</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d2c-6b6b-e4a0-5f6d"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed22-d736-337c-b643"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e332-b556-7dd7-1376"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <infoLinks>
+            <infoLink name="Bulky (X)" id="6704-1e1d-1fac-7144" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+              <comment>6</comment>
+              <modifiers>
+                <modifier type="set" value="Bulky (6)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Deep Strike" id="90d9-7db1-3c71-201c" hidden="false" type="rule" targetId="0553-d06b-52b9-34db"/>
+            <infoLink name="Explodes (X)" id="43ba-a0d0-2bb6-885f" hidden="false" type="rule" targetId="da5b-b871-20da-3e70">
+              <comment>6+</comment>
+              <modifiers>
+                <modifier type="set" value="Explodes (6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Implacable Advance" id="4292-7d61-34c2-617c" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
+            <infoLink name="Impact (X)" id="b7d1-0d55-e475-93ee" hidden="false" type="rule" targetId="6ead-c31c-ab09-2f8c">
+              <modifiers>
+                <modifier type="set" value="Impact (A)" field="name"/>
+              </modifiers>
+              <comment>A</comment>
+            </infoLink>
+            <infoLink name="Vanguard (X)" id="7b18-3b04-61f5-70e8" hidden="false" type="rule" targetId="530f-b733-993c-ec84">
+              <comment>2</comment>
+              <modifiers>
+                <modifier type="set" value="Vanguard (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Firing Protocols (X)" id="8c2a-d60e-121a-62b2" hidden="false" type="rule" targetId="84f2-5a93-c2eb-826f">
+              <comment>2</comment>
+              <modifiers>
+                <modifier type="set" value="Firing Protocols (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Firestorm" id="2756-2e9d-27b3-d0cb" hidden="false" type="rule" targetId="3ed1-c5b3-a98d-1b12"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="5833-5e86-26bc-0916" id="9449-0485-f436-d8a9" primary="false" name="Automata Model Type"/>
+        <categoryLink targetId="c504-9dfa-35d3-c98f" id="8d2f-acc6-1273-1571" primary="false" name="Antigrav Model Sub-Type"/>
+        <categoryLink targetId="df10-4634-c1aa-f6e0" id="43f3-601b-91f7-a3e2" primary="false" name="Cybernetica"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="[Mechanicum]" id="4384-1236-4b5c-259b" hidden="false" type="profile" targetId="7aca-c779-952f-fcac"/>
+        <infoLink name="[Allegiance]" id="9028-b5f4-b2ec-900d" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="a19b-e169-376d-3768" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="14d3-b61f-6f8c-03cd" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mechanicum Termite" hidden="false" id="2943-f3ad-5b26-1377" sortIndex="33">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="80"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="868c-8fba-1ac0-7b14" primary="false" name="Vehicle Model Type"/>
+        <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="e3a7-ec8b-1248-d3fb" primary="false" name="Transport Model Sub-Type"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Mechanicum Termite" hidden="false" id="8034-007e-f146-979c">
+          <profiles>
+            <profile name="Mechanicum Termite" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="b3fc-b41a-206d-03ca">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Transport)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">6</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">12</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">12</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">10</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">5</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">12</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">This Model has Access Points on both Side Facings.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="50c6-18a1-ca6b-26e8" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="869e-ed4d-8524-7349" primary="false" name="Transport Model Sub-Type"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Melta cutters" hidden="false" id="b498-baa8-73da-83c1" type="selectionEntry" targetId="030a-72a9-a2b0-e92b" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d28-c590-1687-2a42-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d28-c590-1687-2a42-max"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Centreline Mounted melta cutters" field="name"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="May exchange:" id="84f3-637d-8bdb-3c85" hidden="false" defaultSelectionEntryId="a5e2-23a1-5340-d2c2" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Combi-bolter" hidden="false" id="a5e2-23a1-5340-d2c2" type="selectionEntry" targetId="042d-9e60-db9e-c147" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5513-7b33-1ee3-c2d1"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="Two Pintle Mounted combi-bolters" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="864f-0b60-1f8b-b5f9" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1ed-97d8-d055-8e6b"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="Two Pintle Mounted heavy flamers" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Twin volkite charger" hidden="false" id="2ec9-a73b-5400-fc3d" type="selectionEntry" targetId="af81-2c71-7fe0-16bd" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb19-be6a-ac06-cefe"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="Two Pintle Mounted twin volkite chargers" field="name"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dcfd-d381-e693-71e1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a7b-7ed2-7c5e-ecd1"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <infoLinks>
+            <infoLink name="Light Transport" id="e12e-be4c-367f-89c1" hidden="false" type="rule" targetId="d451-f7f3-fc8f-db23"/>
+            <infoLink name="Deep Strike" id="112f-c863-cb48-b6b4" hidden="false" type="rule" targetId="0553-d06b-52b9-34db"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bb9-4454-5bc9-7d32-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bb9-4454-5bc9-7d32-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="d631-09d5-c68c-fa71" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Mechanicum]" id="806f-e12e-9044-54cc" hidden="false" type="profile" targetId="7aca-c779-952f-fcac"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="0560-cce5-68f9-e68b" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="2377-6f7a-9f19-63aa" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mechanicum Tarantula Battery" hidden="false" id="02c3-37ea-5d20-8291" sortIndex="34">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="45"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Mechanicum Tarantula Sentry Gun" hidden="false" id="eb78-9d86-2120-9137">
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="1914-53ef-a62c-e715" primary="false" name="Vehicle Model Type"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Mechanicum Tarantula Sentry Gun" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="1e6c-f519-0843-2564">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">-</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">10</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">10</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">10</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">2</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="May exchange for:" id="1dbe-d358-d0d0-3198" hidden="false" defaultSelectionEntryId="897c-f088-301b-5d87">
+              <entryLinks>
+                <entryLink import="true" name="Twin heavy bolter" hidden="false" id="897c-f088-301b-5d87" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d472-e9ac-a82b-25b5"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="Turret Mounted twin heavy bolter" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Twin lascannon" hidden="false" id="98c5-67c0-01f9-4beb" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd7a-0116-5d53-115f"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="Turret Mounted twin lascannon" field="name"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Twin volkite culverin" hidden="false" id="0a13-3496-51ce-fe9a" type="selectionEntry" targetId="65a5-f5bd-1ecb-0c22" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adc0-0234-ef89-fd11"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="Turret Mounted twin volkite culverin" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Sentry melta array" hidden="false" id="f8bd-f7db-9485-7632" type="selectionEntry" targetId="31e3-04f7-7ed9-44f6" sortIndex="4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8fc9-0ffd-a603-2bd4"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="Turret Mounted sentry melta array" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Hyperios missile launcher" hidden="false" id="d672-e2a5-99f8-abf5" type="selectionEntry" targetId="a4e2-e284-30e1-f05a" sortIndex="5">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="595a-ceb4-d13d-07fa"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="Turret Mounted Hyperios missile launcher" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Orias frag missile" hidden="false" id="7d88-ecef-67a4-c41d" type="selectionEntry" targetId="ed11-42af-1450-5e8b" sortIndex="6">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c788-51e2-32d4-c4e2"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="Two Turret Mounted Orias frag missiles" field="name"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fec6-447a-05ca-d15b-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fec6-447a-05ca-d15b-max"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="17dd-f49e-fc65-3ba5"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0797-c603-367d-694e"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Expendable (X)" id="fdaa-e1f4-c762-9f5e" hidden="false" type="rule" targetId="c4d4-e053-9564-540b">
+              <comment>2</comment>
+              <modifiers>
+                <modifier type="set" value="Expendable (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Infiltrate (X)" id="8000-9f69-1794-b170" hidden="false" type="rule" targetId="f330-254e-1a98-798a">
+              <comment>9</comment>
+              <modifiers>
+                <modifier type="set" value="Infiltrate (9)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Automated Fire Protocols" id="9cb9-4ff5-b386-a29e" hidden="false" type="rule" targetId="bbf2-c529-d30b-b6b1"/>
+            <infoLink name="Independent Sentries" id="45db-5499-4916-e6b8" hidden="false" type="rule" targetId="7444-aeba-2958-ee0d"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="6026-271e-2253-7374" primary="false" name="Vehicle Model Type"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="[Mechanicum]" id="2c71-9fdd-d5cc-5769" hidden="false" type="profile" targetId="7aca-c779-952f-fcac"/>
+        <infoLink name="[Allegiance]" id="f88a-a637-2d0d-94c0" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="f184-6ba1-813c-f5a3" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="9f63-18bb-cfbb-c1b8" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mechanicum Macrocarid Explorator" hidden="false" id="360a-d28e-99bb-fae5" sortIndex="35">
+      <categoryLinks>
+        <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="d68c-bffa-a2df-18bd" primary="false" name="Vehicle Model Type"/>
+        <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="394e-888b-4fe1-1896" primary="false" name="Transport Model Sub-Type"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Macrocarid Explorator" hidden="false" id="fa83-8f31-56c8-f35d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="59d3-df6c-40ff-82b3-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59d3-df6c-40ff-82b3-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Macrocarid Explorator" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="8a05-4b87-b4b0-b32e">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Transport)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">10</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">14</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">14</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">14</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">9</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">12</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">Not specified!</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="May have one of the following:" id="f9b8-0265-9feb-7ff6" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Lascannon" hidden="false" id="ea67-22af-4089-79dd" type="selectionEntry" targetId="b6d5-4be2-c37e-2197" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="209d-174c-ff65-4ec6"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="Two Hull (Front) Mounted lascannons" field="name"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="35"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Twin irad-cleanser" hidden="false" id="4eb7-e5fc-a120-9d3e" sortIndex="1">
+                  <profiles>
+                    <profile name="Twin irad-cleanser" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="8b17-6a1c-238f-ffca">
+                      <characteristics>
+                        <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
+                        <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+                        <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">2</characteristic>
+                        <characteristic name="AP" typeId="7a23-0248-2b94-5951">5</characteristic>
+                        <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
+                        <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Phage (T), Poisoned (2+), Panic (1)</characteristic>
+                        <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Rad</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Template" id="5403-4cb2-e4ea-e610" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a"/>
+                    <infoLink name="Phage (X)" id="2a0e-f6c0-7691-7873" hidden="false" type="rule" targetId="3e26-d357-69d6-1341">
+                      <comment>T</comment>
+                      <modifiers>
+                        <modifier type="set" value="Phage (T)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Poisoned (X)" id="465f-492f-d07b-9eea" hidden="false" type="rule" targetId="076f-2c91-c58b-71b3">
+                      <comment>2+</comment>
+                      <modifiers>
+                        <modifier type="set" value="Poisoned (2+)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Panic (X)" id="1e77-09fc-b257-5471" hidden="false" type="rule" targetId="82a7-f471-3fda-6ca1">
+                      <comment>1</comment>
+                      <modifiers>
+                        <modifier type="set" value="Panic (1)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7b1-9ac2-3b6b-3fcb"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="Two Hull (Front) Mounted twin irad-cleansers" field="name"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                    <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cc6-a67e-89a9-57fa"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="May exchange:" id="64b8-2e1f-94ce-0b2d" hidden="false" sortIndex="2" defaultSelectionEntryId="555c-1275-87d9-70c4">
+              <entryLinks>
+                <entryLink import="true" name="Mauler bolt cannon" hidden="false" id="555c-1275-87d9-70c4" type="selectionEntry" targetId="ec2c-185f-3e9e-7ccd" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="681c-4d36-19bc-a6c9"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="Turret Mounted mauler bolt cannon" field="name"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c3e-52bc-c424-fa5a-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c3e-52bc-c424-fa5a-max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Graviton imploder" hidden="false" id="bd9e-e9db-f7d1-f91e" sortIndex="2">
+                  <profiles>
+                    <profile name="Graviton imploder" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="257b-7ccc-0c63-017d">
+                      <characteristics>
+                        <characteristic name="R" typeId="cdb0-8654-6840-1037">18</characteristic>
+                        <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+                        <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">9</characteristic>
+                        <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+                        <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">3</characteristic>
+                        <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Shock (Pinned), Pinning (3)</characteristic>
+                        <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Graviton</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Shock (X)" id="12da-6d57-158f-e26e" hidden="false" type="rule" targetId="c6fd-28d0-3f80-672c">
+                      <comment>Pinned</comment>
+                      <modifiers>
+                        <modifier type="set" value="Shock (Pinned)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Pinning (X)" id="c9e1-5321-7426-e700" hidden="false" type="rule" targetId="88b6-6493-e4d7-1805">
+                      <comment>3</comment>
+                      <modifiers>
+                        <modifier type="set" value="Pinning (3)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="35"/>
+                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                    <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3870-4241-1bbc-0b7a"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="Turret Mounted graviton imploder" field="name"/>
+                  </modifiers>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Hunter-killer missile" hidden="false" id="8b39-516c-6368-01f6" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fb3-88f8-b484-d2c3"/>
+              </constraints>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Searchlight" hidden="false" id="2205-fc7f-7fe7-7dce" type="selectionEntry" targetId="5a85-bf28-f790-7bf0" sortIndex="4">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4036-a65e-add8-6ac7"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <rules>
+            <rule name="Anbaric Claw" id="59fc-d7d2-4321-4eb3" hidden="false">
+              <description>&quot;A Vehicle with this Special Rule inflicts more Damage when it moves through enemy Units.&quot;
+
+
+When a Model with this Special Rule and the Vehicle Type moves through an enemy Unit, the number of Hits inflicted is increased from D6 to D3+3. These Hits have the Stun (1) Special Rule. Furthermore, if the Reactive Player declares a Death or Glory Reaction with a Vehicle with this Special Rule as the target, then the Vehicle with this Special Rule gains a 6+ Invulnerable Save against all Hits inflicted as part of the Death or Glory Reaction.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Auto-Repair (X)" id="748e-11fd-5223-e456" hidden="false" type="rule" targetId="3973-ed50-1482-ff4a">
+              <comment>3+</comment>
+              <modifiers>
+                <modifier type="set" value="Auto-repair (3+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Move Through Cover" id="18fe-0557-2b36-f1b2" hidden="false" type="rule" targetId="44d9-f20d-00bf-dc98"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="8f6b-7421-f625-cefd" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="c73a-17c1-29f9-2061" primary="false" name="Transport Model Sub-Type"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="200"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="1c98-4a83-d6f3-4193" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="897c-4043-668d-27a2" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mechanicum Ordinatus Ulator" hidden="false" id="0eec-dfde-0a0f-4440" sortIndex="36">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="750"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Ordinatus Ulator" hidden="false" id="4b98-9da0-bc0e-74ae">
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="9ba7-bcfd-4e78-4f5a" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="f7f7-cdd5-a9fd-aa7a" id="5a61-5d47-98ad-0955" primary="false" name="Ordinatus Sub-Type"/>
+            <categoryLink targetId="1ec3-1433-658a-f04e" id="374c-830a-db2f-cfa3" primary="false" name="Macrotek"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8548-1231-950f-ae47-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8548-1231-950f-ae47-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Carriage" typeId="d2eb-6505-121b-e2fd" typeName="Ordinatus Carriage" hidden="false" id="fef8-6deb-9ff0-e9e6">
+              <characteristics>
+                <characteristic name="Type" typeId="3aa1-c4e0-580b-3ea8">Vehicle (Ordinatus)</characteristic>
+                <characteristic name="M" typeId="ca8f-3459-76a5-341a">10</characteristic>
+                <characteristic name="BS" typeId="4916-23f6-e8ae-e0a6">4</characteristic>
+                <characteristic name="Primary" typeId="3b6d-41c6-7dfc-687a">14</characteristic>
+                <characteristic name="Exposed" typeId="bacb-0550-4ce0-c9f6">10</characteristic>
+                <characteristic name="HP" typeId="4a6e-ba4c-efad-8147">14</characteristic>
+                <characteristic name="Transport" typeId="2460-f99d-ca7c-c0eb">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Gun" typeId="4422-b6dd-055c-7cf5" typeName="Ordinatus Gun" hidden="false" id="c7d3-2d35-caf7-e522">
+              <characteristics>
+                <characteristic name="M" typeId="b0c3-d1d1-6290-b699">-</characteristic>
+                <characteristic name="BS" typeId="84ea-9f8a-3a99-d275">4</characteristic>
+                <characteristic name="Primary" typeId="3af3-42b1-8029-403a">13</characteristic>
+                <characteristic name="Exposed" typeId="4de0-6b05-f85d-20ca">10</characteristic>
+                <characteristic name="HP" typeId="40fb-a328-7da1-c507">12</characteristic>
+                <characteristic name="Transport" typeId="2815-6bab-2f63-5f71">-</characteristic>
+                <characteristic typeId="58e0-a986-de89-68ec" name="Access Points"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Ordinatus volkite culverin" hidden="false" id="daa8-284d-6cda-201d" type="selectionEntry" targetId="ee25-2ea5-c44d-2bcd" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="cc91-726c-1812-78de-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="cc91-726c-1812-78de-max"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Rear Mounted Ordinatus volkite culverin" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Ordinatus volkite culverin" hidden="false" id="d7a9-c58d-30dc-f782" type="selectionEntry" targetId="ee25-2ea5-c44d-2bcd" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="4654-d2d8-c71e-d006-min"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="4654-d2d8-c71e-d006-max"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Front Mounted Ordinatus volkite culverin" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Sonic destructor" hidden="false" id="ad59-20cd-87b3-815e" type="selectionEntry" targetId="95b7-92a0-cdb9-8ecd" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e3b2-8b07-020e-b51c-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e3b2-8b07-020e-b51c-max"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Boresight Mounted sonic destructor" field="name"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Repair Crew (X)" id="1aa5-6cf9-7a7c-067d" hidden="false" type="rule" targetId="e60a-ee69-a386-7b11">
+              <comment>D3</comment>
+              <modifiers>
+                <modifier type="set" value="Repair Crew (D3)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Dispersal Field" id="39d2-0292-4ccf-195e" hidden="false" type="rule" targetId="f50c-2bd5-3de1-4695"/>
+            <infoLink name="Dispersal" id="7af4-f013-4cee-89e1" hidden="false" type="profile" targetId="8c00-4a0c-86e2-ca65"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="3a0e-9154-da80-dc40" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Mechanicum]" id="4894-fc33-231f-a65f" hidden="false" type="profile" targetId="7aca-c779-952f-fcac"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="1ec3-1433-658a-f04e" id="f2a6-4a91-217a-abce" primary="false" name="Macrotek"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mechanicum Ordinatus Sagittar" hidden="false" id="85ac-f5f9-5099-e423" sortIndex="37">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="800"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1ec3-1433-658a-f04e" id="a7d9-c618-ec0f-b95b" primary="false" name="Macrotek"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Ordinatus Sagittar" hidden="false" id="c66d-b286-67a6-96d5">
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="0467-b6dc-0af6-7be0" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="f7f7-cdd5-a9fd-aa7a" id="bcab-b82b-9ea4-1de5" primary="false" name="Ordinatus Sub-Type"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f7cc-1d4b-c0ea-5919-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7cc-1d4b-c0ea-5919-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Carriage" typeId="d2eb-6505-121b-e2fd" typeName="Ordinatus Carriage" hidden="false" id="2d50-490f-6151-82ac">
+              <characteristics>
+                <characteristic name="Type" typeId="3aa1-c4e0-580b-3ea8">Vehicle (Ordinatus)</characteristic>
+                <characteristic name="M" typeId="ca8f-3459-76a5-341a">10</characteristic>
+                <characteristic name="BS" typeId="4916-23f6-e8ae-e0a6">4</characteristic>
+                <characteristic name="Primary" typeId="3b6d-41c6-7dfc-687a">14</characteristic>
+                <characteristic name="Exposed" typeId="bacb-0550-4ce0-c9f6">10</characteristic>
+                <characteristic name="HP" typeId="4a6e-ba4c-efad-8147">14</characteristic>
+                <characteristic name="Transport" typeId="2460-f99d-ca7c-c0eb">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Gun" typeId="4422-b6dd-055c-7cf5" typeName="Ordinatus Gun" hidden="false" id="8d30-7085-9833-a73e">
+              <characteristics>
+                <characteristic name="M" typeId="b0c3-d1d1-6290-b699">-</characteristic>
+                <characteristic name="BS" typeId="84ea-9f8a-3a99-d275">4</characteristic>
+                <characteristic name="Primary" typeId="3af3-42b1-8029-403a">13</characteristic>
+                <characteristic name="Exposed" typeId="4de0-6b05-f85d-20ca">10</characteristic>
+                <characteristic name="HP" typeId="40fb-a328-7da1-c507">12</characteristic>
+                <characteristic name="Transport" typeId="2815-6bab-2f63-5f71">-</characteristic>
+                <characteristic typeId="58e0-a986-de89-68ec" name="Access Points"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Ordinatus volkite culverin" hidden="false" id="66ff-0c4a-d154-2f6b" type="selectionEntry" targetId="ee25-2ea5-c44d-2bcd" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="be32-51a5-085d-a982-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="be32-51a5-085d-a982-max"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Rear Mounted Ordinatus volkite culverin" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Ordinatus volkite culverin" hidden="false" id="3cbe-5a9f-5004-08ac" type="selectionEntry" targetId="ee25-2ea5-c44d-2bcd" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="1a64-aae0-9b84-40cb-min"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="1a64-aae0-9b84-40cb-max"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Front Mounted Ordinatus volkite culverin" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Belicosa volcano cannon" hidden="false" id="7548-7d92-3542-d3ee" type="selectionEntry" targetId="8173-e259-7de6-163b" sortIndex="3">
+              <modifiers>
+                <modifier type="set" value="Boresight Mounted Belicosa volcano cannon" field="name"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4652-b2f5-0f56-7a64-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4652-b2f5-0f56-7a64-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Dispersal Field" id="ca9d-6d8f-2d40-8656" hidden="false" type="rule" targetId="f50c-2bd5-3de1-4695"/>
+            <infoLink name="Repair Crew (X)" id="8540-416b-8681-ee59" hidden="false" type="rule" targetId="e60a-ee69-a386-7b11">
+              <comment>D3</comment>
+              <modifiers>
+                <modifier type="set" value="Repair Crew (D3)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Dispersal" id="e86a-4cf9-6f5e-b827" hidden="false" type="profile" targetId="8c00-4a0c-86e2-ca65"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="55a3-0938-7fb2-7033" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Mechanicum]" id="47bf-c161-728a-650f" hidden="false" type="profile" targetId="7aca-c779-952f-fcac"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mechanicum Ordinatus Aktaeus" hidden="false" id="9111-1de6-ec9d-526a" sortIndex="38">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="900"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1ec3-1433-658a-f04e" id="21d3-84ae-cc79-e29c" primary="false" name="Macrotek"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Ordinatus Aktaeus" hidden="false" id="3901-c2dd-012a-9072">
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="d78b-1f4e-80f6-7a54" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="f7f7-cdd5-a9fd-aa7a" id="74ca-e4bf-dde8-3f6d" primary="false" name="Ordinatus Sub-Type"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="101b-4036-682d-32bd-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="101b-4036-682d-32bd-max"/>
+          </constraints>
+          <profiles>
+            <profile name="Carriage" typeId="d2eb-6505-121b-e2fd" typeName="Ordinatus Carriage" hidden="false" id="903e-6928-c1ca-a0fd">
+              <characteristics>
+                <characteristic name="Type" typeId="3aa1-c4e0-580b-3ea8">Vehicle (Ordinatus)</characteristic>
+                <characteristic name="M" typeId="ca8f-3459-76a5-341a">10</characteristic>
+                <characteristic name="BS" typeId="4916-23f6-e8ae-e0a6">4</characteristic>
+                <characteristic name="Primary" typeId="3b6d-41c6-7dfc-687a">14</characteristic>
+                <characteristic name="Exposed" typeId="bacb-0550-4ce0-c9f6">10</characteristic>
+                <characteristic name="HP" typeId="4a6e-ba4c-efad-8147">14</characteristic>
+                <characteristic name="Transport" typeId="2460-f99d-ca7c-c0eb">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Gun" typeId="4422-b6dd-055c-7cf5" typeName="Ordinatus Gun" hidden="false" id="c956-cb5f-ba19-1f5d">
+              <characteristics>
+                <characteristic name="M" typeId="b0c3-d1d1-6290-b699">-</characteristic>
+                <characteristic name="BS" typeId="84ea-9f8a-3a99-d275">4</characteristic>
+                <characteristic name="Primary" typeId="3af3-42b1-8029-403a">13</characteristic>
+                <characteristic name="Exposed" typeId="4de0-6b05-f85d-20ca">10</characteristic>
+                <characteristic name="HP" typeId="40fb-a328-7da1-c507">12</characteristic>
+                <characteristic name="Transport" typeId="2815-6bab-2f63-5f71">42</characteristic>
+                <characteristic name="Access Points" typeId="58e0-a986-de89-68ec">This Model has Access Points on both Side Facings.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Ordinatus volkite culverin" hidden="false" id="6c2b-a8c4-900f-84aa" type="selectionEntry" targetId="ee25-2ea5-c44d-2bcd" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="4ed6-8596-710b-406c-min"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="4ed6-8596-710b-406c-max"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Front Mounted Ordinatus volkite culverin" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Seismic macro-drill" hidden="false" id="046e-d73c-cd35-dad7" type="selectionEntry" targetId="9fff-a0a4-03d0-2777" sortIndex="2">
+              <modifiers>
+                <modifier type="set" value="Boresight Mounted seismic macro-drill" field="name"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf01-3c8a-2778-450c-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf01-3c8a-2778-450c-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Dispersal Field" id="4533-d30c-2360-d023" hidden="false" type="rule" targetId="f50c-2bd5-3de1-4695"/>
+            <infoLink name="Repair Crew (X)" id="64ed-d9a2-56c2-9322" hidden="false" type="rule" targetId="e60a-ee69-a386-7b11">
+              <comment>D3</comment>
+              <modifiers>
+                <modifier type="set" value="Repair Crew (D3)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Dispersal" id="37bf-55e5-c2c9-0a76" hidden="false" type="profile" targetId="8c00-4a0c-86e2-ca65"/>
+          </infoLinks>
+          <rules>
+            <rule name="Macro-drill Transport Bay" id="fdd8-6984-7cfc-9e58" hidden="false">
+              <description>A Model with this Special Rule and the Transport Sub-Type may have Models Embark upon it as per the normal Rules – however Models of any Type other than Vehicle may Embark upon it, and more than one Unit may Embark at the same time. Only 4 Models may be Embarked that do not have the Paragon or Infantry Type, and Models with a variant of the Bulky (X) Special Rule with a value of X greater than 6, or Models with a Base Wounds Characteristic of 10 or more, may not Embark at all. 
+
+
+Further, Models may only Embark or Disembark from a Model with this Special Rule if it has not yet made an attack with the seismic macro-drill. Once an attack has been made with that Weapon then no Models may Embark or Disembark from this Model.
+
+
+If the seismic macro-drill on a Model with this Special Rule is destroyed or otherwise rendered inoperable, then all Models Embarked on the Model suffer one Strength 8, AP3, Damage 4 Hit. Any Models that are not Removed as Casualties must then make an Emergency Disembarkation.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="67f3-e65a-4e84-0bc2" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Mechanicum]" id="1d7f-a1e0-990c-2f4a" hidden="false" type="profile" targetId="7aca-c779-952f-fcac"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
@@ -7049,6 +8528,46 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="97fa-10c3-436c-ee6c" primary="true" name="High Command"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Tech Thrall Defence Covenant" hidden="false" id="da4d-3651-6c7c-c5fa" type="selectionEntry" targetId="e8d5-df1b-30f8-8887" sortIndex="31">
+      <categoryLinks>
+        <categoryLink targetId="345f-9ba6-9b02-ed5c" id="35c0-70f3-6fe9-65ba" primary="true" name="Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Arlatax Battle Maniple" hidden="false" id="559c-8bc6-9f46-c7ad" type="selectionEntry" targetId="88e3-4c5f-d4b7-b300" sortIndex="32">
+      <categoryLinks>
+        <categoryLink targetId="5d5e-958f-e388-50b5" id="2a7b-ba74-da7b-62e9" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Mechanicum Termite" hidden="false" id="5d4e-4320-cb37-0e82" type="selectionEntry" targetId="2943-f3ad-5b26-1377" sortIndex="33">
+      <categoryLinks>
+        <categoryLink targetId="d162-4711-5d60-0a48" id="8253-9d7a-8bf1-77a8" primary="true" name="Transport"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Mechanicum Tarantula Battery" hidden="false" id="84c9-6d52-fba4-1508" type="selectionEntry" targetId="02c3-37ea-5d20-8291" sortIndex="34">
+      <categoryLinks>
+        <categoryLink targetId="2b65-a3f2-620a-dc58" id="68c7-de1d-f4f8-ba63" primary="true" name="Recon"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Mechanicum Macrocarid Explorator" hidden="false" id="6f44-47e2-8a63-fb5f" type="selectionEntry" targetId="360a-d28e-99bb-fae5" sortIndex="35">
+      <categoryLinks>
+        <categoryLink targetId="52d0-8b78-439e-18e5" id="318e-ddd9-cf9b-e545" primary="true" name="Heavy Transport"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Mechanicum Ordinatus Ulator" hidden="false" id="b034-e2bd-25a8-2c4d" type="selectionEntry" targetId="0eec-dfde-0a0f-4440" sortIndex="36">
+      <categoryLinks>
+        <categoryLink targetId="a46f-a465-0ead-d6b8" id="1080-1562-271b-7926" primary="true" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Mechanicum Ordinatus Sagittar" hidden="false" id="6b53-b01e-6a76-760e" type="selectionEntry" targetId="85ac-f5f9-5099-e423" sortIndex="37">
+      <categoryLinks>
+        <categoryLink targetId="a46f-a465-0ead-d6b8" id="04bc-e728-4055-3a03" primary="true" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Mechanicum Ordinatus Aktaeus" hidden="false" id="429d-4826-3d9b-8673" type="selectionEntry" targetId="9111-1de6-ec9d-526a" sortIndex="38">
+      <categoryLinks>
+        <categoryLink targetId="a46f-a465-0ead-d6b8" id="90a5-0234-747e-097e" primary="true" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule name="Cybertheugic Status: Null" id="d010-07c3-50a8-4002" hidden="false">
@@ -7064,4 +8583,23 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
       <description>A Model under the effects of this Cybertheugic Status gains a bonus of +1 to its Ballistic Skill and Weapon Skill Characteristics. If a Model has a Base Weapon Skill or Base Ballistic Skill of 0, then this Cybertheugic Status has no effect on it and it gains no bonuses to any Characteristic from it.</description>
     </rule>
   </rules>
+  <sharedRules>
+    <rule name="Dispersal Field" id="f50c-2bd5-3de1-4695" hidden="false">
+      <description>A Model with this Special Rule may have the Dispersal Advanced Reaction made for it:</description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
+    <profile name="Dispersal" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="8c00-4a0c-86e2-ca65">
+      <characteristics>
+        <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reactive Player to reduce the Damage of all Hits in one Fire Group to 1</characteristic>
+        <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Dispersal Reaction whenever a Model with the Dispersal Field Special Rule is the target of a Shooting Attack. The declaration is made after Step 3 of the Shooting Attack, once the Weapons to be used have been declared.</characteristic>
+        <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Dispersal Reaction – this cost is paid as soon as the declaration is made.</characteristic>
+        <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Unit that is making the Shooting Attack that triggered this Reaction is the Attacking Unit, the Unit that is the Target of the Shooting Attack is the Reacting Unit.</characteristic>
+        <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once a Dispersal Reaction has been declared, the Active Player must resolve all remaining steps of the Shooting Attack Process as normal, up to the start of Step 5.
+2. In Step 5, the Controlling Player of the Reacting Unit may choose to reduce the Damage of all Hits in a Fire Group to 1.
+3. If the Reacting Player chooses not to reduce the Damage of Hits in the selected Fire Group then the Shooting Attack continues as normal, but the Reacting Player may make the same choice with each following Fire Group in that Shooting Attack.
+4. Once the Reacting Player has chosen to reduce the Damage of Hits in a single Fire Group, they may not affect any further Fire Groups and the Shooting Attack is resolved as normal</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>

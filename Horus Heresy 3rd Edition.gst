@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="45" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="48" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -455,6 +455,24 @@
     <categoryEntry name="Night Raptor Squad" id="3edc-0325-4190-a414" hidden="false"/>
     <categoryEntry name="Elites - Veteran Assault Squads Only" id="2fed-0e3c-cc68-e4d4" hidden="false"/>
     <categoryEntry name="Retinue - Praetorian Command Squad with Jump Packs Only" id="af7b-1fc6-d5b1-0841" hidden="false"/>
+    <categoryEntry name="Ordinatus Sub-Type" id="f7f7-cdd5-a9fd-aa7a" hidden="false">
+      <rules>
+        <rule name="Ordinatus Sub-Type" id="4888-0346-c11f-ad8d" hidden="false">
+          <description>&quot;The following Rules apply to all Models with the Ordinatus Sub-Type:
+
+
+• Models with this Sub-Type are not affected in any way by Difficult Terrain or Dangerous Terrain, and may pass through Impassable Terrain as long as they do not end a Move on or within an area of Impassable Terrain.
+• When making multiple Shooting Attacks in the same Shooting Phase, a Model with this Sub-Type does not have to make all attacks as Snap Shots.
+• A Model with this Sub-Type is limited on when and which Reactions may be made for it.
+• The Rules for applying Damage to a Model with this Sub-Type vary from those used with other Models with the Vehicle Type.
+• The Rules for Shooting Attacks and Combats that involve Ordinatus are changed as noted in this addendum.
+• If a Model with this Sub-Type has a Transport Capacity, then it may transport any number of Units, so long as the number of Models in the transported Units does not exceed the Vehicle’s Transport Capacity.
+• A Model with this Sub-Type cannot gain any Tactical Statuses or Cybertheurgic Statuses.
+• A Model with this Sub-Type cannot be affected by any Psychic Weapon, Psychic Reaction or Psychic Power.
+• A Model with this Sub-Type may not be targeted by the Battlesmith (X) Special Rule.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -14348,7 +14366,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f820-8b49-8029-6e88" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Elites - Veteran Assault Squads Only" hidden="false" id="453e-4c0b-3c13-417b" targetId="2fed-0e3c-cc68-e4d4" type="categoryEntry">
+            <categoryLink name="Elites - Veteran Assault Squads Only" hidden="false" id="453e-4c0b-3c13-417b" targetId="2fed-0e3c-cc68-e4d4">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b99f-94f2-d9af-9ebc"/>
               </constraints>
@@ -14360,7 +14378,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="Retinue - Praetorian Command Squad with Jump Packs Only" hidden="false" id="7d0f-4b59-bd7a-0b69" targetId="af7b-1fc6-d5b1-0841" type="categoryEntry">
+            <categoryLink name="Retinue - Praetorian Command Squad with Jump Packs Only" hidden="false" id="7d0f-4b59-bd7a-0b69" targetId="af7b-1fc6-d5b1-0841">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88e9-39ad-3087-8f8e"/>
               </constraints>
@@ -15180,7 +15198,7 @@
         <forceEntryLink name="Auxiliary - Storm Battery" id="d970-aac1-4559-8540" hidden="true" targetId="d089-8cc7-96a7-903f" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Recon Demi-Company" id="039a-b6c4-4ef2-b686" hidden="true" targetId="38f7-2240-f8ee-6cce" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Iron Tercio" id="de8f-bbd0-46b9-9743" hidden="true" targetId="9a10-a2d9-5a87-a5a9" type="forceEntry"/>
-        <forceEntryLink name="Auxilliary - Planetfall Speartip" id="f263-08d1-5547-8666" hidden="false" targetId="2e50-319d-ae62-a50c" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Planetfall Speartip" id="f263-08d1-5547-8666" hidden="false" targetId="2e50-319d-ae62-a50c" type="forceEntry"/>
       </forceEntryLinks>
     </forceEntry>
     <forceEntry name="Lord of War Detachment" id="b7a1-629f-9d60-c2a9" hidden="false" sortIndex="3">
@@ -15751,6 +15769,28 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <characteristicType name="Type" id="869d-8fb8-f39f-4575"/>
       </characteristicTypes>
     </profileType>
+    <profileType name="Ordinatus Carriage" id="d2eb-6505-121b-e2fd" hidden="false" sortIndex="22">
+      <characteristicTypes>
+        <characteristicType name="Type" id="3aa1-c4e0-580b-3ea8"/>
+        <characteristicType name="M" id="ca8f-3459-76a5-341a"/>
+        <characteristicType name="BS" id="4916-23f6-e8ae-e0a6"/>
+        <characteristicType name="Primary" id="3b6d-41c6-7dfc-687a"/>
+        <characteristicType name="Exposed" id="bacb-0550-4ce0-c9f6"/>
+        <characteristicType name="HP" id="4a6e-ba4c-efad-8147"/>
+        <characteristicType name="Transport" id="2460-f99d-ca7c-c0eb"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Ordinatus Gun" id="4422-b6dd-055c-7cf5" hidden="false" sortIndex="23">
+      <characteristicTypes>
+        <characteristicType name="M" id="b0c3-d1d1-6290-b699"/>
+        <characteristicType name="BS" id="84ea-9f8a-3a99-d275"/>
+        <characteristicType name="Primary" id="3af3-42b1-8029-403a"/>
+        <characteristicType name="Exposed" id="4de0-6b05-f85d-20ca"/>
+        <characteristicType name="HP" id="40fb-a328-7da1-c507"/>
+        <characteristicType name="Transport" id="2815-6bab-2f63-5f71"/>
+        <characteristicType name="Access Points" id="58e0-a986-de89-68ec"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Common Prime Benefits" id="93f7-d7db-d7f0-2146" hidden="false">
@@ -16025,6 +16065,63 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9e2-2b29-1e6c-e10c" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
+    <selectionEntryGroup name="High Command Detachment Choice" id="969e-8b5b-1410-cfc6" hidden="false" publicationId="7d63-5df4-c656-52de" page="280" defaultSelectionEntryId="0889-888b-e3fe-1d5b">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b065-5f7d-781c-9ac3-min" includeChildSelections="false" automatic="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b065-5f7d-781c-9ac3-max" includeChildSelections="false" automatic="true"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="One Apex Detachment" hidden="false" id="0889-888b-e3fe-1d5b" defaultAmount="1" publicationId="7d63-5df4-c656-52de" page="280">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b9c-073f-d1cd-a405" includeChildSelections="false" automatic="true"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9801-3eee-690a-9009"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="+1 Apex from High Command" hidden="false" id="1c95-9290-e696-b447" targetId="8a97-1585-93e7-c561" primary="false"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="0" field="6b9c-073f-d1cd-a405">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="unit" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="One Auxiliary Detachment" hidden="false" id="4ad5-105a-9b10-57dd" publicationId="7d63-5df4-c656-52de" page="280">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0d5-0859-d4c3-84ac" includeChildSelections="false" automatic="true"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2e53-c1b2-7d7e-621b"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="+1 Auxiliary from High Command" hidden="false" id="55d6-f46a-077c-dc61" targetId="ff44-f49f-732b-c3a7" primary="false"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="0" field="b0d5-0859-d4c3-84ac">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="unit" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="unit" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="b065-5f7d-781c-9ac3-min">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="unit" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="b065-5f7d-781c-9ac3-max">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="unit" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule name="Infantry Unit Type" id="d518-ea26-a708-e6a1" hidden="false"/>
@@ -16110,55 +16207,6 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="358b-c4f7-9bf0-406b"/>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="881f-5dbe-10fd-ec48"/>
       </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="High Command Detachment Choice" hidden="false" id="31c4-c9d1-fdba-4b21" publicationId="7d63-5df4-c656-52de" page="280">
-      <selectionEntryGroups>
-        <selectionEntryGroup name="High Command Detachment Choice" id="969e-8b5b-1410-cfc6" hidden="false" publicationId="7d63-5df4-c656-52de" page="280" defaultSelectionEntryId="0889-888b-e3fe-1d5b">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b065-5f7d-781c-9ac3-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b065-5f7d-781c-9ac3-max" includeChildSelections="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="One Apex Detachment" hidden="false" id="0889-888b-e3fe-1d5b" defaultAmount="1" publicationId="7d63-5df4-c656-52de" page="280">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b9c-073f-d1cd-a405" includeChildSelections="false" automatic="true"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink name="+1 Apex from High Command" hidden="false" id="1c95-9290-e696-b447" targetId="8a97-1585-93e7-c561" primary="false"/>
-              </categoryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="One Auxiliary Detachment" hidden="false" id="4ad5-105a-9b10-57dd" publicationId="7d63-5df4-c656-52de" page="280">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0d5-0859-d4c3-84ac" includeChildSelections="false"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink name="+1 Auxiliary from High Command" hidden="false" id="55d6-f46a-077c-dc61" targetId="ff44-f49f-732b-c3a7" primary="false"/>
-              </categoryLinks>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98f0-4cab-2f85-12db-max" includeChildSelections="false" automatic="true"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="80b8-4e4c-207a-19d8" automatic="true"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="unit" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="0" field="98f0-4cab-2f85-12db-max">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="unit" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="0" field="80b8-4e4c-207a-19d8">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="unit" childId="c857-47bd-6a4f-fcf8" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rewards of Treachery" hidden="true" id="7c64-0321-e098-fd0e">
       <rules>

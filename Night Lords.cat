@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="486f-b32a-ac87-73dd" name="                         VIII - Night Lords" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="14" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="486f-b32a-ac87-73dd" name="                         VIII - Night Lords" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="16" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Konrad Curze" hidden="false" id="f5fd-f425-c610-4a94">
       <selectionEntries>
@@ -142,8 +142,6 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
         </infoLink>
       </infoLinks>
       <categoryLinks>
-        <categoryLink targetId="7799-e1d6-762b-700b" id="12e4-2d1d-57a7-4717" primary="false" name="Paragon Model Type"/>
-        <categoryLink targetId="b980-187b-2b17-d635" id="da6b-ec07-3647-97ab" primary="false" name="Unique Model Sub-Type"/>
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="47c4-7941-49b4-fe74" primary="false" name="Master of the Legion"/>
         <categoryLink targetId="d251-944b-3c3b-0579" id="6386-75c5-d172-5669" primary="false" name="Traitor"/>
       </categoryLinks>
@@ -182,6 +180,24 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -206,41 +222,18 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                     </profile>
                   </profiles>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Escaton power claw" hidden="false" id="3cb3-5f5c-a06d-e500">
-                  <profiles>
-                    <profile name="Escaton power claw" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="b2c9-981a-82d8-04ed">
-                      <characteristics>
-                        <characteristic name="IM" typeId="6eec-4093-f946-1014">-2</characteristic>
-                        <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
-                        <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+3</characteristic>
-                        <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
-                        <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
-                        <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Shred (6+)</characteristic>
-                        <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Shred (X)" id="e87d-b0b9-ffa1-ff0b" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
-                      <comment>6+</comment>
-                      <modifiers>
-                        <modifier type="set" value="Shred (6+)" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-                    <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
-                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
-                  </costs>
-                </selectionEntry>
               </selectionEntries>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="226e-b4e5-805c-e258"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae1f-ef23-1ee3-7f2b"/>
               </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Escaton power claw" hidden="false" id="f568-01eb-87e8-1591" type="selectionEntry" targetId="a284-2bc5-12da-ec8a">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -268,6 +261,24 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -282,27 +293,14 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="72b6-82be-4c94-ab91" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Chainblade" hidden="false" id="ff1b-4210-e8fc-5458">
+          <entryLinks>
+            <entryLink import="true" name="Chainblade" hidden="false" id="67b2-7f1a-e8da-55aa" type="selectionEntry" targetId="c771-887d-bb22-6a27">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b98c-0dae-df62-584a"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b18b-fe9d-4e75-b4f4"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a312-28fe-0fbc-36d3"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32a3-ff03-02d5-9e29"/>
               </constraints>
-              <profiles>
-                <profile name="Chainblade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="bcbf-0a6f-d1f0-aa9a">
-                  <characteristics>
-                    <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
-                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
-                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+1</characteristic>
-                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
-                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+), Shred (6+)</characteristic>
-                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Chain</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -332,9 +330,6 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
         <infoLink name="[Allegiance]" id="7ee7-9734-c86f-a6ae" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="d72b-5f70-fa8b-56b9" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="e3a5-b7c4-c290-71dd" primary="false" name="Infantry Model Type"/>
-      </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Any model may replace it&apos;s volkite cavitor for:" id="66b8-ad28-1fe7-e54d" hidden="false" defaultSelectionEntryId="1eaa-8926-77c2-a4d3">
           <selectionEntries>
@@ -410,6 +405,24 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -433,6 +446,14 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="497b-dced-8358-5d60" type="selectionEntry" targetId="2942-f783-d627-33c5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e78-5c8f-e2b2-9396"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="570c-b9bf-841e-6383"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Night Raptor" hidden="false" id="2cf7-d782-bfc5-d3cf" sortIndex="2">
           <profiles>
@@ -454,6 +475,24 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -466,15 +505,88 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Any Model in this Unit may replace it&apos;s chainsword with:" id="1cee-1725-3357-5f9b" hidden="false" defaultSelectionEntryId="5b46-66e9-fa3a-61a0">
+            <selectionEntryGroup name="Options" id="7463-cdea-1474-9049" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Any Model in this Unit may replace it&apos;s chainsword with:" id="1cee-1725-3357-5f9b" hidden="false" defaultSelectionEntryId="5b46-66e9-fa3a-61a0">
+                  <entryLinks>
+                    <entryLink import="true" name="Legion Sergeant Melee Weapons (no chainsword)" hidden="false" id="3d28-6bc0-05dc-e307" type="selectionEntryGroup" targetId="c7ca-8933-a703-7301" sortIndex="2" flatten="true"/>
+                    <entryLink import="true" name="Chainsword" hidden="false" id="5b46-66e9-fa3a-61a0" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1"/>
+                    <entryLink import="true" name="Chainblade" hidden="false" id="11c0-7a2f-bde8-3f79" type="selectionEntry" targetId="c771-887d-bb22-6a27">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ede7-4f0e-eb35-d023" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc05-5b32-e0da-da10"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="ede7-4f0e-eb35-d023">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Bolt Pistol" id="b694-8377-e4f9-02fb" hidden="false" defaultSelectionEntryId="018c-4e6d-9eb7-710a">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="1-5 may exchange their bolt pistol for:" id="73d7-8d7a-5855-9442" hidden="false" flatten="false">
+                      <entryLinks>
+                        <entryLink import="true" name="Flamer" hidden="false" id="d841-d0f7-2ebe-39fc" type="selectionEntry" targetId="9a45-35cd-3806-2303" sortIndex="1"/>
+                        <entryLink import="true" name="Meltagun" hidden="false" id="74b8-2464-8feb-49b5" type="selectionEntry" targetId="b1e1-e164-5877-6734" sortIndex="2"/>
+                        <entryLink import="true" name="Plasma gun" hidden="false" id="1710-f2c6-adcb-52a4" type="selectionEntry" targetId="433d-56e0-9878-dea1" sortIndex="3"/>
+                        <entryLink import="true" name="Plasma pistol" hidden="false" id="8993-0d6f-9c86-1608" type="selectionEntry" targetId="659f-d52e-1515-2912" sortIndex="4"/>
+                        <entryLink import="true" name="Volkite serpenta" hidden="false" id="1199-6ddb-9682-e9db" type="selectionEntry" targetId="b7c3-1de1-087c-3d6e" sortIndex="5"/>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="394e-9ef3-69fa-5aff" includeChildSelections="true"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="394e-9ef3-69fa-5aff">
+                          <repeats>
+                            <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <entryLinks>
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="018c-4e6d-9eb7-710a" type="selectionEntry" targetId="2942-f783-d627-33c5"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35c3-317b-3413-c1a4"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="712d-f854-c2e9-0246" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="712d-f854-c2e9-0246">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
-                <entryLink import="true" name="Legion Sergeant Melee Weapons (no chainsword)" hidden="false" id="3d28-6bc0-05dc-e307" type="selectionEntryGroup" targetId="c7ca-8933-a703-7301" sortIndex="2" flatten="true"/>
-                <entryLink import="true" name="Chainsword" hidden="false" id="5b46-66e9-fa3a-61a0" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1"/>
+                <entryLink import="true" name="Pair of lightning claws" hidden="false" id="b879-e321-0849-2fb7" type="selectionEntry" targetId="6754-24dd-5be0-26ff">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28a2-04c1-e571-d717" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ede7-4f0e-eb35-d023"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc05-5b32-e0da-da10"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d624-1a06-ebf9-e6b4"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="d624-1a06-ebf9-e6b4">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -517,8 +629,6 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
         <infoLink name="[Legiones Astartes]" id="9271-a1f4-6c84-ad96" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="0aad-668a-4e7c-bbd0" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="c504-9dfa-35d3-c98f" id="37c3-eb71-26be-09fb" primary="false" name="Antigrav Model Sub-Type"/>
         <categoryLink targetId="3edc-0325-4190-a414" id="383b-73fb-7083-9ff0" primary="false" name="Night Raptor Squad"/>
       </categoryLinks>
       <costs>
@@ -527,12 +637,6 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Bolt pistol" hidden="false" id="eaa3-dc90-90d6-677d" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="3">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c825-9787-9f54-6d8b"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74ca-4f09-8fa0-e1fd"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Frag grenades" hidden="false" id="c233-47bd-46b3-5754" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="4">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e127-0cc5-670d-5a75"/>
@@ -574,6 +678,24 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -633,6 +755,14 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Chainsword" hidden="false" id="29e5-796a-62cf-b037" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1"/>
+                <entryLink import="true" name="Chainblade" hidden="false" id="c31f-e43a-d377-410e" type="selectionEntry" targetId="c771-887d-bb22-6a27" sortIndex="10">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60bb-4429-fd7f-d116"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="25a2-7aa4-27e5-49f2"/>
@@ -726,6 +856,24 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -781,6 +929,14 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8183-50c9-2161-d6a1"/>
                   </constraints>
+                </entryLink>
+                <entryLink import="true" name="Chainblade" hidden="false" id="4c4e-19f7-632f-92a9" type="selectionEntry" targetId="c771-887d-bb22-6a27" sortIndex="10">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7243-8ea8-91f2-2171"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -864,9 +1020,6 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="0a3f-df65-56d2-6609" primary="false" name="Infantry Model Type"/>
-      </categoryLinks>
       <infoLinks>
         <infoLink name="Hatred (X)" id="94ec-c1a7-85db-d23c" hidden="false" type="rule" targetId="0612-95d5-46ae-c5ee">
           <modifiers>
@@ -1031,10 +1184,7 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
         <infoLink name="Master of the Legion" id="bc39-6ac6-e61e-e9d0" hidden="false" type="profile" targetId="6cd2-96be-b703-6d57"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="3515-78f7-214f-b6c6" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="b980-187b-2b17-d635" id="ff93-6618-5e9f-1ef0" primary="false" name="Unique Model Sub-Type"/>
         <categoryLink targetId="d251-944b-3c3b-0579" id="a62d-1bc3-a76f-43aa" primary="false" name="Traitor"/>
-        <categoryLink targetId="9871-cb62-5283-2216" id="711d-d965-1843-2387" primary="false" name="Command Model Sub-type"/>
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="bdc6-e680-52b6-c03a" primary="false" name="Master of the Legion"/>
       </categoryLinks>
       <entryLinks>
@@ -1056,12 +1206,12 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76d9-3dd6-5328-e040"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="41c6-23a8-8d20-59f7" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="9867-805b-47f7-a6b8" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="cd56-fe72-484e-8658" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="f603-864e-2f7f-983f" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="6"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="675b-41f3-12f6-bd6b" includeChildSelections="true"/>
@@ -1075,18 +1225,95 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="33f3-b1d3-7b30-e5ea">
-      <entryLinks>
-        <entryLink import="true" name="Rite of War" hidden="false" id="be01-b528-4c4b-b474" type="selectionEntryGroup" targetId="c77a-0590-5795-58a6">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6707-c62c-5f28-1449"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="849a-b744-d189-65af"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9433-8656-2d67-d404"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec64-9f3e-c224-783d"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="RoW: Legiones Astartes Night Lords" hidden="false" id="6355-8b46-f913-f808">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Legion Tactica: NL" hidden="false" id="7861-a713-23d3-0d2b">
+              <rules>
+                <rule name="A Talent for Murder" id="aa79-e448-8b39-344f" hidden="false">
+                  <description>&quot;Night Lords have an improved Weapon Skill Characteristic when fighting Units that have Tactical Statuses&quot;
+
+When Locked in Combat with any Units which contain at least one Model which has any Tactical Statuses, Models in that Combat with this Special Rule gain an additional modifier of +1 to their Weapon Skill Characteristic until the end of the Phase.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="324a-0781-f65e-c6b5"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3bf6-075a-c768-c712"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gambit: Nostraman Courage" hidden="false" id="109d-d443-f40b-cf9b">
+              <profiles>
+                <profile name="Nostraman Courage" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="dbeb-7353-d4ab-52a6">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows the Controlling Player to switch the Model that fights in a Challenge.</characteristic>
+                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">This Gambit may only be selected once per Challenge.
+If selected, at the Start of the Focus Step, this Model&apos;s Controlling Player may immediately return the Model to their Unit as if it was the Resolution Sub-Phase. If the Controlling Player chooses to do this, they must select another Model from this Unit (this can be a Model that is not normally eligible to take part in a Challenge). That Model is removed from the Unit and becomes the Challenger or Challenged Model in place of the original Challenger or Challenged Model that was returned to the Unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="206f-a441-df0e-9c0a"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32fe-8637-5933-85dd"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Advanced Reaction - Better Part of Valour" hidden="false" id="53cf-362d-d6f9-dbbd">
+              <profiles>
+                <profile name="Better Part of Valour" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="72cd-05f2-b454-cbd1">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows a Unit to Fall Back when it is the Target of a Charge.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Better Part of Valour Advanced Reaction during Step 4 of the Charge process of any Charge declared by the Active Player that targets a Unit which only includes Models with the Night Lords Trait.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Better Part of Valour Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Charge triggered the Reaction. The Reacting Unit is always the Unit that was declared as the target of the Charge that triggered this Reaction.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once this Reaction is declared, the Reacting Unit must immediately make a Fall Back Move as if it was affected by the Routed Tactical Status.
+
+
+2. Once this Fall Back Move is completed, the Reacting Unit does not gain the Routed Tactical Status.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="230d-b956-1a87-5e68"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a47-a02e-8beb-da8c"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd69-2c00-938c-9658"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8082-e9e0-1ff2-1cba"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chainblade" hidden="false" id="c771-887d-bb22-6a27">
+      <profiles>
+        <profile name="Chainblade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="4c77-beec-928f-7859">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+1</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+), Shred (6+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Chain</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="91e8-0a09-1561-2b40" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shred (X)" id="8185-70b4-388d-dd07" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
+          <modifiers>
+            <modifier type="set" value="Shred (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
@@ -1142,62 +1369,7 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
     </entryLink>
   </entryLinks>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Rite of War" id="c77a-0590-5795-58a6" hidden="false" defaultSelectionEntryId="6355-8b46-f913-f808">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="RoW: Legiones Astartes Night Lords" hidden="false" id="6355-8b46-f913-f808">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Legion Tactica: NL" hidden="false" id="7861-a713-23d3-0d2b">
-              <rules>
-                <rule name="A Talent for Murder" id="aa79-e448-8b39-344f" hidden="false">
-                  <description>&quot;Night Lords have an improved Weapon Skill Characteristic when fighting Units that have Tactical Statuses&quot;
-
-When Locked in Combat with any Units which contain at least one Model which has any Tactical Statuses, Models in that Combat with this Special Rule gain an additional modifier of +1 to their Weapon Skill Characteristic until the end of the Phase.</description>
-                </rule>
-              </rules>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="324a-0781-f65e-c6b5"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3bf6-075a-c768-c712"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Gambit: Nostraman Courage" hidden="false" id="109d-d443-f40b-cf9b">
-              <profiles>
-                <profile name="Nostraman Courage" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="dbeb-7353-d4ab-52a6">
-                  <characteristics>
-                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows the Controlling Player to switch the Model that fights in a Challenge.</characteristic>
-                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">This Gambit may only be selected once per Challenge.
-If selected, at the Start of the Focus Step, this Model&apos;s Controlling Player may immediately return the Model to their Unit as if it was the Resolution Sub-Phase. If the Controlling Player chooses to do this, they must select another Model from this Unit (this can be a Model that is not normally eligible to take part in a Challenge). That Model is removed from the Unit and becomes the Challenger or Challenged Model in place of the original Challenger or Challenged Model that was returned to the Unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="206f-a441-df0e-9c0a"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32fe-8637-5933-85dd"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Advanced Reaction - Better Part of Valour" hidden="false" id="53cf-362d-d6f9-dbbd">
-              <profiles>
-                <profile name="Better Part of Valour" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="72cd-05f2-b454-cbd1">
-                  <characteristics>
-                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows a Unit to Fall Back when it is the Target of a Charge.</characteristic>
-                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Better Part of Valour Advanced Reaction during Step 4 of the Charge process of any Charge declared by the Active Player that targets a Unit which only includes Models with the Night Lords Trait.</characteristic>
-                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Better Part of Valour Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
-                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Charge triggered the Reaction. The Reacting Unit is always the Unit that was declared as the target of the Charge that triggered this Reaction.</characteristic>
-                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once this Reaction is declared, the Reacting Unit must immediately make a Fall Back Move as if it was affected by the Routed Tactical Status.
-
-
-2. Once this Fall Back Move is completed, the Reacting Unit does not gain the Routed Tactical Status.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="230d-b956-1a87-5e68"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a47-a02e-8beb-da8c"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
+    <selectionEntryGroup name="Rite of War" id="c77a-0590-5795-58a6" hidden="false" defaultSelectionEntryId="6355-8b46-f913-f808"/>
     <selectionEntryGroup name="Night Lords Prime Benefits" id="d548-58a0-b896-ab48" hidden="false">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Atramentar " hidden="false" id="8506-b863-94b4-314a" sortIndex="1">

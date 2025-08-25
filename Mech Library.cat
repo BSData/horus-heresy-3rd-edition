@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="a159-1624-dbac-7af8" name="Mech Library" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="a159-1624-dbac-7af8" name="Mech Library" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="2" revision="5" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Maxima bolter" hidden="false" id="350a-3713-d175-ab09">
       <profiles>
@@ -1150,6 +1150,156 @@
         </infoLink>
         <infoLink name="Armourbane" id="74de-47b7-2758-17c3" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sonic destructor" hidden="false" id="95b7-92a0-cdb9-8ecd">
+      <profiles>
+        <profile name="Sonic destructor (Dispersed)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="773d-f2f9-dfe2-94f7">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">72</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">7</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">3</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Blast (7&quot;), Shred (4+), Panic (4), Breaching (5+)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Strategic</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sonic destructor (Focussed)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="a977-ec54-cde2-03d8">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">72</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">10</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">8</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Macro-auspex, Armourbane, Panic (4)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Strategic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast (X)" id="3bfe-62ae-bc3c-c2be" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+          <comment>7&quot;</comment>
+          <modifiers>
+            <modifier type="set" value="Blast (7&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shred (X)" id="1342-321b-21bb-7609" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
+          <comment>4+</comment>
+          <modifiers>
+            <modifier type="set" value="Shred (4+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Breaching (X)" id="3a26-0252-307a-df05" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <comment>5+</comment>
+          <modifiers>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Panic (X)" id="60cc-914d-d20c-f849" hidden="false" type="rule" targetId="82a7-f471-3fda-6ca1">
+          <comment>4</comment>
+          <modifiers>
+            <modifier type="set" value="Panic (4)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Macro-Auspex" id="8086-75e4-a6b4-f077" hidden="false" type="rule" targetId="8120-65ac-c2d4-a555"/>
+        <infoLink name="Armourbane" id="7573-cedd-7f4d-22a9" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ordinatus volkite culverin" hidden="false" id="ee25-2ea5-c44d-2bcd">
+      <profiles>
+        <profile name="Ordinatus volkite culverin" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="6a7e-32c8-03f4-9ea7">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">45</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">3</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">5</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (FP), Deflagrate (6)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Volkite, Tactical</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Heavy (X)" id="3dc2-3bd7-c770-f939" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
+          <comment>FP</comment>
+          <modifiers>
+            <modifier type="set" value="Heavy (FP)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deflagrate (X)" id="54d5-4916-aed1-7ea2" hidden="false" type="rule" targetId="f4a0-f206-0dba-7d81">
+          <comment>6</comment>
+          <modifiers>
+            <modifier type="set" value="Deflagrate (6)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Belicosa volcano cannon" hidden="false" id="8173-e259-7de6-163b">
+      <profiles>
+        <profile name="Belicosa volcano cannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="47c4-5082-a71c-38d9">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">150</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">13</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">12</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Blast (3&quot;), Macro-auspex</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Las, Strategic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast (X)" id="2434-a399-3aa2-0341" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+          <comment>3&quot;</comment>
+        </infoLink>
+        <infoLink name="Macro-Auspex" id="a2ee-0ff1-9428-6e0b" hidden="false" type="rule" targetId="8120-65ac-c2d4-a555"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Seismic macro-drill" hidden="false" id="9fff-a0a4-03d0-2777">
+      <profiles>
+        <profile name="Seismic macro-drill" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="746e-b8c2-e6df-1659">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">36</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">-</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">-</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">-</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Blast (5&quot;), Barrage, Seismic Macro-drill, Limited (1)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Strategic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast (X)" id="fc37-2d85-2a15-8d85" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+          <comment>5&quot;</comment>
+          <modifiers>
+            <modifier type="set" value="Blast (5&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Barrage (X)" id="73ff-be61-21a9-8785" hidden="false" type="rule" targetId="85f5-3a91-69f4-c3b7">
+          <modifiers>
+            <modifier type="set" value="Barrage" field="name"/>
+          </modifiers>
+          <comment>?</comment>
+        </infoLink>
+      </infoLinks>
+      <rules>
+        <rule name="Seismic Macro-drill" id="1f93-7720-c765-1256" hidden="false">
+          <description>When a Weapon with this Special Rule is used to make a Shooting Attack, the Player making the attack may choose to target any point on the Battlefield within range, ignoring Line of Sight and without the need to target an enemy Model. The Hit Test is made as normal, but once the final position of the Blast Marker is determined the Attacking Player does not resolve any Hits, regardless of whether there are Models under the Blast Marker or not, and must instead choose one of the following two options: Emerge or Tunnel.
+
+
+If the Attacking Player chooses to Tunnel, then the Blast Marker is left in place, but no Hits are resolved and the Marker has no effect on Line of Sight, Movement or any other feature of play – it simply marks the position of the macro-drill deep underground. At the start of the Controlling Player’s next Shooting Phase, the Player must again choose to either Tunnel or Emerge. If they choose to Tunnel again, then the Blast Marker may be moved up to 36&quot; in any direction and is once more left in place until the Controlling Player’s next Shooting Phase.
+
+
+Emerge may only be chosen if no part of the Blast Marker is touching Impassable Terrain. Once selected, all enemy Models covered fully or partially by the Template suffer one wound with an AP of 2 and a Damage of 1 and all enemy Models not covered by the Marker, but within 2&quot; of any point on its edge, suffer one Strength 6 Hit with an AP of 4 and a Damage of 1. If any Unit suffers one or more Casualties from either of these two effects, then a Cool Check must be made for that Unit and if the Check is failed then all Models in that Unit gain the Stunned Status. 
+
+
+Once all Hits and wounds have been fully resolved, any enemy Models fully or partially covered by the Blast Marker are moved by their Controlling Player the shortest distance possible so that they are no longer covered by the Marker. The Controlling Player of the seismic macro-drill may then choose to Disembark any or all Units Embarked on the seismic macro-drill using any point on the Blast Marker as an Access Point. Models deployed in this fashion may be placed onto the Marker. The Blast Marker is left in place and any Models still Embarked on the seismic macro-drill may Disembark from the Marker in later Movement Phases as normal, but may not Embark again. The Marker is left in place until all Models have Disembarked from the seismic macro-drill and does not block Line of Sight or impede Movement, nor is it counted as any type of Terrain. 
+
+
+Despite being a Strategic Weapon, a Weapon with this Special Rule may not be used to target Strategic Objectives</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
