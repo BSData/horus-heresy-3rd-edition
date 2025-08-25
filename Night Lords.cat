@@ -41,7 +41,7 @@
 
 • If four or more Troops Battlefield Role Slots in the Primary Detachment of this Army are filled with Terror Squad and/or Assault Squads, then all Force Organisation Slots with the Troops Battlefield Role in the Primary Detachment are considered Prime Slots.
 
-Furthermore, if a Model with this Special Rule is part of an Army, then the following Special Rules are granted to all Models with the Infantry Type and the Iron Warriors Trait in the same Army:
+Furthermore, if a Model with this Special Rule is part of an Army, then the following Special Rules are granted to all Models with the Infantry Type and the Night Lords Trait in the same Army:
 
 • All Models in Terror Squad Units in this Army gain the Infiltrate (12) Special Rule.</description>
             </rule>
@@ -1083,6 +1083,17 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
         </infoLink>
         <infoLink name="[Allegiance]" id="912e-cce1-3660-3d34" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="7b42-8595-8edb-0d7d" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Infiltrate (X)" id="83fe-a42f-d6ff-622e" hidden="false" type="rule" targetId="f330-254e-1a98-798a">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="1ad5-c601-409d-73bd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Infiltrate (12)" field="name"/>
+          </modifiers>
+          <comment>12</comment>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="43"/>
