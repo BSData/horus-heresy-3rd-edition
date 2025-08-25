@@ -295,18 +295,24 @@ class GameTests(unittest.TestCase):
             unit: Node = self.system.get_node_by_id(unit_id)
             for profile in unit.get_descendants_with(lambda x: x.type == "profile:Profile"):
                 # print(profile)
-                if "Unique" in profile.get_profile_dict()["Type"]:
+                profile_type = profile.get_profile_dict()["Type"]
+                if "Unique" in profile_type:
                     continue
                 with self.subTest(f"Prime modifiers for {profile}"):
                     mod_groups = profile.get_child("modifierGroups")
                     self.assertIsNotNone(mod_groups, "Expected modifiers for prime benefits")
                     combat_veterans_group = None
                     paragon_of_battle_group = None
+                    master_sgt_group = None
                     for mod_group in mod_groups.children:
                         if mod_group.does_descendent_exist(lambda x: x.text == "Combat Veterans"):
                             combat_veterans_group = mod_group
                         if mod_group.does_descendent_exist(lambda x: x.text == "Paragon of Battle"):
                             paragon_of_battle_group = mod_group
+                        if mod_group.does_descendent_exist(lambda x: x.text == "Master Sergeant"):
+                            master_sgt_group = mod_group
+                        elif mod_group.does_descendent_exist(lambda x: x.text == "Master Sergeant - Existing Champion"):
+                            master_sgt_group = mod_group
 
                     with self.subTest(f"Combat Veterans for {profile}"):
                         self.check_mods_and_conditions(combat_veterans_group, expected_mods=[
@@ -318,34 +324,46 @@ class GameTests(unittest.TestCase):
                             {"type": "ceil", "value": "10", "field": "9cd1-0e7c-2cd6-5f2f"},
                             {"type": "ceil", "value": "10", "field": "f714-1726-37d3-44df"},
                             {"type": "ceil", "value": "10", "field": "29c5-925d-5b1d-1e77"},
-                        ], expected_conditions=[{
-                            "type": "atLeast",
-                            "value": "1",
-                            "field": "selections",
-                            "scope": "parent",
-                            "childId": "8cf8-9be5-91d6-c96d",
-                            "shared": "true",
-                            "includeChildSelections": "true"
-                        }]
-                                                       )
-                    if "Command" in profile.get_profile_dict()["Type"]:
+                        ], expected_condition_child_id="8cf8-9be5-91d6-c96d")
+                    if "Command" in profile_type:
                         with self.subTest(f"Paragon of Battle for {profile}"):
                             self.check_mods_and_conditions(paragon_of_battle_group, expected_mods=[
                                 {"type": "increment", "value": "1", "field": "253c-d694-4695-c89e"},
                                 {"type": "increment", "value": "1", "field": "0cd5-b269-e3bc-028b"},
                                 {"type": "increment", "value": "1", "field": "024e-bdb1-7982-25a0"},
-                            ], expected_conditions=[{
-                                "type": "atLeast",
-                                "value": "1",
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "20cb-4eec-0844-8a97",
-                                "shared": "true",
-                                "includeChildSelections": "true"
-                            }]
-                                                           )
+                            ], expected_condition_child_id="20cb-4eec-0844-8a97")
+                    if "Sergeant" in profile_type:
+                        with self.subTest(f"Master Sergeant for {profile}"):
+                            self.assertIsNotNone(master_sgt_group)
+                            if "Champion" in profile_type:
+                                self.assertTrue(master_sgt_group.does_descendent_exist(
+                                    lambda x: x.text == "Master Sergeant - Existing Champion"),
+                                    "Should have 'Master Sergeant - Existing Champion'")
+                                self.assertFalse(master_sgt_group.does_descendent_exist(
+                                    lambda x: x.text == "Master Sergeant"),
+                                    "Should have 'Master Sergeant - Existing Champion' instead of 'Master Sergeant'")
+                                self.check_mods_and_conditions(master_sgt_group, expected_mods=[
+                                    {"type": "increment", "value": "1", "field": "253c-d694-4695-c89e"},
+                                    {"type": "increment", "value": "1", "field": "024e-bdb1-7982-25a0"},
+                                    {"type": "increment", "value": "2", "field": "02ad-ebe6-86e7-9fd6"},
+                                ], expected_condition_child_id="2c90-1d52-7075-59d3")
+                            else:
+                                self.assertTrue(master_sgt_group.does_descendent_exist(
+                                    lambda x: x.text == "Master Sergeant"),
+                                    "Should have 'Master Sergeant'")
+                                self.assertFalse(master_sgt_group.does_descendent_exist(
+                                    lambda x: x.text == "Master Sergeant - Existing Champion"),
+                                    "Should have 'Master Sergeant' instead of 'Master Sergeant - Existing Champion'")
+                                self.check_mods_and_conditions(master_sgt_group, expected_mods=[
+                                    {"type": "increment", "value": "1", "field": "253c-d694-4695-c89e"},
+                                    {"type": "increment", "value": "1", "field": "024e-bdb1-7982-25a0"},
+                                    {"type": "increment", "value": "1", "field": "02ad-ebe6-86e7-9fd6"},
+                                    {"type": "replace", "value": "Sergeant, Champion",
+                                     "field": "50fc-9241-d4a2-045b", "arg": "Sergeant"},
 
-    def check_mods_and_conditions(self, mod_group, expected_mods, expected_conditions):
+                                ], expected_condition_child_id="2c90-1d52-7075-59d3")
+
+    def check_mods_and_conditions(self, mod_group, expected_mods, expected_condition_child_id):
         self.assertIsNotNone(mod_group)
 
         self.assertEqual(mod_group.type, "modifierGroup:and")
@@ -356,8 +374,20 @@ class GameTests(unittest.TestCase):
         self.assertCountEqual(actual_mods, expected_mods)
         actual_conditions = []
         for condition in mod_group.get_child("conditions").children:
-            actual_conditions.append(condition.attrib)
-
+            attrib = condition.attrib.copy()
+            if "includeChildForces" not in attrib.keys():
+                attrib["includeChildForces"] = "false"
+            actual_conditions.append(attrib)
+        expected_conditions = [{
+            "type": "atLeast",
+            "value": "1",
+            "field": "selections",
+            "scope": "parent",
+            "childId": expected_condition_child_id,
+            "shared": "true",
+            "includeChildForces": "false",
+            "includeChildSelections": "true"
+        }]
         self.assertCountEqual(actual_conditions, expected_conditions)
 
     def test_all_high_command_have_detachment_choice(self):
