@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="736e-3967-e72b-e3ac" name="                        X - Iron Hands" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="12" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="736e-3967-e72b-e3ac" name="                        X - Iron Hands" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="13" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Ferrus Manus" hidden="false" id="667d-97c2-e1ea-8fa6">
       <selectionEntries>
@@ -265,6 +265,41 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -313,7 +348,7 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="57d6-8f89-f8ce-9c07" primary="false" name="Master of the Legion"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="May exchange Volkite Charger for:" id="8203-126e-924a-66e2" hidden="false" defaultSelectionEntryId="1e07-6855-1edf-0b78">
+        <selectionEntryGroup name="May exchange Volkite Charger for:" id="8203-126e-924a-66e2" hidden="false" defaultSelectionEntryId="1e07-6855-1edf-0b78" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="6195-5fb5-f96d-f6d4" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08"/>
             <entryLink import="true" name="Volkite charger" hidden="false" id="1e07-6855-1edf-0b78" type="selectionEntry" targetId="93e7-6a83-1e9e-204a"/>
@@ -323,7 +358,7 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d80-cc7b-b7ae-3259"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="May exchange artificer power axe for:" id="6c25-dcb1-f312-fdc5" hidden="false" defaultSelectionEntryId="45c7-f237-6dc1-ec15">
+        <selectionEntryGroup name="May exchange artificer power axe for:" id="6c25-dcb1-f312-fdc5" hidden="false" defaultSelectionEntryId="45c7-f237-6dc1-ec15" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Artificer Power Axe" hidden="false" id="45c7-f237-6dc1-ec15" type="selectionEntry" targetId="68e3-de15-d977-3c36"/>
             <entryLink import="true" name="Thunder hammer" hidden="false" id="0839-93a2-b218-adb6" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d">
@@ -344,7 +379,7 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Cyber-familiar" hidden="false" id="bd7c-d5f4-5813-626c" type="selectionEntry" targetId="a545-36ec-d50e-2ae4">
+        <entryLink import="true" name="Cyber-familiar" hidden="false" id="bd7c-d5f4-5813-626c" type="selectionEntry" targetId="a545-36ec-d50e-2ae4" sortIndex="5">
           <modifiers>
             <modifier type="set" value="10" field="9893-c379-920b-8982"/>
           </modifiers>
@@ -364,7 +399,15 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf90-03c9-ce44-1070"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="de46-aba0-846f-022b" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="2"/>
+        <entryLink import="true" name="Gorgon Terminator Armour" hidden="false" id="5d68-3757-032a-7316" type="selectionEntry" targetId="a2ba-c8fc-f381-7d22" sortIndex="4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3041-8127-4cee-6cb0"/>
+          </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="de46-aba0-846f-022b" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="6"/>
       </entryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="175"/>
@@ -394,6 +437,37 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Master Sergeant</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -401,7 +475,7 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b45b-4df1-627f-491e"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Melta bombs" hidden="false" id="500c-200c-c731-ab5c" type="selectionEntry" targetId="2eb4-687e-a515-ee3d">
+            <entryLink import="true" name="Melta bombs" hidden="false" id="500c-200c-c731-ab5c" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="4">
               <modifiers>
                 <modifier type="set" value="10" field="9893-c379-920b-8982"/>
               </modifiers>
@@ -410,7 +484,7 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e672-805b-7f44-a8f7"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Breacher Charges" hidden="false" id="26f5-a21e-e598-a521" type="selectionEntry" targetId="01bd-4377-904c-6625">
+            <entryLink import="true" name="Breacher Charges" hidden="false" id="26f5-a21e-e598-a521" type="selectionEntry" targetId="01bd-4377-904c-6625" sortIndex="3">
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
               </costs>
@@ -420,18 +494,24 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May exchange bolter for:" id="1da5-2f04-fde5-7cdb" hidden="false" defaultSelectionEntryId="1e85-deea-50fe-22a4">
+            <selectionEntryGroup name="May exchange bolter for:" id="1da5-2f04-fde5-7cdb" hidden="false" defaultSelectionEntryId="1e85-deea-50fe-22a4" sortIndex="1">
               <entryLinks>
                 <entryLink import="true" name="Bolter" hidden="false" id="1e85-deea-50fe-22a4" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e"/>
                 <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="106b-59dc-af16-93a7" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08"/>
                 <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="3c64-d575-b74f-881e" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963"/>
+                <entryLink import="true" name="Chainsword" hidden="false" id="a3b9-9fbd-c881-8f19" type="selectionEntry" targetId="78f4-4967-2896-c3a5"/>
+                <entryLink import="true" name="Volkite charger" hidden="false" id="a06f-7779-e3bc-ac45" type="selectionEntry" targetId="93e7-6a83-1e9e-204a">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="123d-b802-37c0-3f6d"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="737a-4009-2125-3156"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="May exchange bolt pistol for:" id="d9e1-a10e-a9c5-90ef" hidden="false" defaultSelectionEntryId="bde9-6804-aa2b-edc7">
+            <selectionEntryGroup name="May exchange bolt pistol for:" id="d9e1-a10e-a9c5-90ef" hidden="false" defaultSelectionEntryId="bde9-6804-aa2b-edc7" sortIndex="2">
               <entryLinks>
                 <entryLink import="true" name="Bolt pistol" hidden="false" id="bde9-6804-aa2b-edc7" type="selectionEntry" targetId="2942-f783-d627-33c5"/>
                 <entryLink import="true" name="Legion Pistols" hidden="false" id="c56a-662c-9c30-5756" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf"/>
@@ -468,6 +548,24 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -478,19 +576,40 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
             <selectionEntryGroup name="May exchange bolter for:" id="1162-bffd-ae11-1cd5" hidden="false" defaultSelectionEntryId="dce1-5479-53fe-6f5e">
               <entryLinks>
                 <entryLink import="true" name="Bolter" hidden="false" id="dce1-5479-53fe-6f5e" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e"/>
+                <entryLink import="true" name="Chainsword" hidden="false" id="3a97-30b9-a7a7-e430" type="selectionEntry" targetId="78f4-4967-2896-c3a5"/>
+                <entryLink import="true" name="Volkite charger" hidden="false" id="599c-ec67-3d94-a054" type="selectionEntry" targetId="93e7-6a83-1e9e-204a">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="1 in 5 may exchange bolter for:" id="82be-72a5-327e-ef87" hidden="false">
                   <entryLinks>
-                    <entryLink import="true" name="Graviton gun" hidden="false" id="6448-3195-c52a-8994" type="selectionEntry" targetId="4a06-c55e-a06f-bd0c">
-                      <modifiers>
-                        <modifier type="set" value="10" field="9893-c379-920b-8982"/>
-                      </modifiers>
+                    <entryLink import="true" name="Graviton gun" hidden="false" id="6448-3195-c52a-8994" type="selectionEntry" targetId="4a06-c55e-a06f-bd0c" sortIndex="2">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
                     </entryLink>
-                    <entryLink import="true" name="Lascutter" hidden="false" id="ea62-5f3b-ead4-41fe" type="selectionEntry" targetId="6838-5e12-03bb-d500">
-                      <modifiers>
-                        <modifier type="set" value="10" field="9893-c379-920b-8982"/>
-                      </modifiers>
+                    <entryLink import="true" name="Lascutter" hidden="false" id="ea62-5f3b-ead4-41fe" type="selectionEntry" targetId="6838-5e12-03bb-d500" sortIndex="4">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Flamer" hidden="false" id="2107-793a-1a9a-b043" type="selectionEntry" targetId="9a45-35cd-3806-2303" sortIndex="1">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Graviton shredder" hidden="false" id="97d4-b32f-6931-4d45" type="selectionEntry" targetId="5921-7ef7-197a-ef9f" sortIndex="3">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Meltagun" hidden="false" id="5eda-b180-0925-bfd0" type="selectionEntry" targetId="b1e1-e164-5877-6734" sortIndex="5">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                      </costs>
                     </entryLink>
                   </entryLinks>
                   <constraints>
@@ -755,6 +874,37 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Master Sergeant</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <categoryLinks>
@@ -762,14 +912,29 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
             <categoryLink targetId="594d-fa82-13cb-a345" id="a02e-c69d-4512-bbed" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="17ea-7964-400b-96f6" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange combi-bolter for:" id="0b4b-db27-c3f1-2062" hidden="false" defaultSelectionEntryId="7881-face-4b30-63df">
+              <entryLinks>
+                <entryLink import="true" name="Combi-bolter" hidden="false" id="7881-face-4b30-63df" type="selectionEntry" targetId="042d-9e60-db9e-c147"/>
+                <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="3b7c-3bd3-4090-3724" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e062-df8f-aeb6-9d99"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bde-7a6f-6412-30bf"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Gorgon Terminator" hidden="false" id="e227-99b9-e7a8-99f7" sortIndex="2">
           <entryLinks>
-            <entryLink import="true" name="Artificer Power Axe" hidden="false" id="0ca5-5726-fe15-2ba8" type="selectionEntry" targetId="68e3-de15-d977-3c36">
+            <entryLink import="true" name="Vexilla" hidden="false" id="2ea7-94f2-a7dd-27f3" type="selectionEntry" targetId="dfcd-0669-ad43-28aa">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8d46-9be1-867d-0bb9"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef88-3730-81e0-1da2"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b7b-ec7b-d8f0-07d3" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="9293-e444-5203-79f6" includeChildSelections="true"/>
               </constraints>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
             </entryLink>
           </entryLinks>
           <constraints>
@@ -795,6 +960,24 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -806,6 +989,101 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
             <categoryLink targetId="594d-fa82-13cb-a345" id="547f-0c83-4fa3-8608" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="07d4-955b-41ad-a158" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" id="564b-79f8-9ffd-08af" hidden="false" sortIndex="1">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Exchange Artificer power axe for:" id="3356-44d1-7848-5d1f" hidden="false" defaultSelectionEntryId="0ca5-5726-fe15-2ba8" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Artificer Power Axe" hidden="false" id="0ca5-5726-fe15-2ba8" type="selectionEntry" targetId="68e3-de15-d977-3c36" sortIndex="1"/>
+                    <entryLink import="true" name="Lightning claw" hidden="false" id="6852-6f4e-fd5f-61ee" type="selectionEntry" targetId="cbf0-9b29-9a16-28b2" sortIndex="2">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Power fist" hidden="false" id="b82f-05b7-17de-78ed" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="3">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Chainfist" hidden="false" id="9b34-a0af-0f14-828c" type="selectionEntry" targetId="8322-1eca-e855-2683" sortIndex="4">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f561-e886-fded-391f"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc02-8f08-edf8-18ff"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="bc02-8f08-edf8-18ff">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Exchange combi-bolter for:" id="4226-6808-ee6e-4593" hidden="false" defaultSelectionEntryId="1273-7e9e-b70b-534f" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Combi-bolter" hidden="false" id="1273-7e9e-b70b-534f" type="selectionEntry" targetId="042d-9e60-db9e-c147"/>
+                    <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="7bc3-02eb-5d5f-8243" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="052c-d16a-bf91-d2f9"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c958-1c12-80f9-4155"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="052c-d16a-bf91-d2f9">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="1-3 may exchange their combi-bolter for:" id="dd30-a71e-a63b-312b" hidden="false" flatten="false">
+                      <entryLinks>
+                        <entryLink import="true" name="Heavy flamer" hidden="false" id="a391-74f9-d729-2a73" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="1"/>
+                        <entryLink import="true" name="Graviton gun" hidden="false" id="2e22-a959-3016-cb05" type="selectionEntry" targetId="4a06-c55e-a06f-bd0c" sortIndex="2"/>
+                        <entryLink import="true" name="Graviton shredder" hidden="false" id="d1cb-6a91-37ba-4cb0" type="selectionEntry" targetId="5921-7ef7-197a-ef9f" sortIndex="3"/>
+                        <entryLink import="true" name="Plasma blaster" hidden="false" id="077e-4900-361d-7620" type="selectionEntry" targetId="3787-3dca-b6c9-f9e3" sortIndex="4"/>
+                        <entryLink import="true" name="Reaper autocannon" hidden="false" id="8403-f65f-0e0e-82d5" type="selectionEntry" targetId="196d-a0ea-a851-d09e" sortIndex="5"/>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="02eb-f2ea-4e4b-982d" includeChildSelections="true"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="02eb-f2ea-4e4b-982d">
+                          <repeats>
+                            <repeat value="3" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Pair of lightning claws" hidden="false" id="931b-fcbe-6589-aecd" type="selectionEntry" targetId="6754-24dd-5be0-26ff" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1aa-f0a3-26b6-c9c1" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="46e7-cd33-ce0c-8dce"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="46e7-cd33-ce0c-8dce">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <profiles>

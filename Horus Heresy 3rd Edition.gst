@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="47" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="48" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -158,7 +158,14 @@
     </categoryEntry>
     <categoryEntry name="Automata Model Type" id="5833-5e86-26bc-0916" hidden="false" publicationId="7d63-5df4-c656-52de" page="175">
       <rules>
-        <rule name="New Rule" id="a7d3-aaa8-8179-33d1" hidden="false"/>
+        <rule name="Automata Type" id="a7d3-aaa8-8179-33d1" hidden="false">
+          <description>The following Rules apply to all Models with the Automata Type:
+
+
+- Models with the Automata Type cannot gain any Tactical Statuses and are considered to automatically pass any Check made to avoid gaining a Tactical Status.
+- When targeting a Unit that includes any Models with the Automata Type, the effects of the Poisoned (X) Special Rule only trigger on a Wound Test with a result of a &apos;6&apos; before modifiers are applied, regardless of the value of X for that variant of the Special Rule.
+- A Unit that includes one or more Models with the Automata Type may not make Reactions.</description>
+        </rule>
       </rules>
     </categoryEntry>
     <categoryEntry name="Prime High Command" id="3568-ad75-b452-3137" hidden="false"/>
@@ -455,6 +462,24 @@
     <categoryEntry name="Night Raptor Squad" id="3edc-0325-4190-a414" hidden="false"/>
     <categoryEntry name="Elites - Veteran Assault Squads Only" id="2fed-0e3c-cc68-e4d4" hidden="false"/>
     <categoryEntry name="Retinue - Praetorian Command Squad with Jump Packs Only" id="af7b-1fc6-d5b1-0841" hidden="false"/>
+    <categoryEntry name="Ordinatus Sub-Type" id="f7f7-cdd5-a9fd-aa7a" hidden="false">
+      <rules>
+        <rule name="Ordinatus Sub-Type" id="4888-0346-c11f-ad8d" hidden="false">
+          <description>&quot;The following Rules apply to all Models with the Ordinatus Sub-Type:
+
+
+• Models with this Sub-Type are not affected in any way by Difficult Terrain or Dangerous Terrain, and may pass through Impassable Terrain as long as they do not end a Move on or within an area of Impassable Terrain.
+• When making multiple Shooting Attacks in the same Shooting Phase, a Model with this Sub-Type does not have to make all attacks as Snap Shots.
+• A Model with this Sub-Type is limited on when and which Reactions may be made for it.
+• The Rules for applying Damage to a Model with this Sub-Type vary from those used with other Models with the Vehicle Type.
+• The Rules for Shooting Attacks and Combats that involve Ordinatus are changed as noted in this addendum.
+• If a Model with this Sub-Type has a Transport Capacity, then it may transport any number of Units, so long as the number of Models in the transported Units does not exceed the Vehicle’s Transport Capacity.
+• A Model with this Sub-Type cannot gain any Tactical Statuses or Cybertheurgic Statuses.
+• A Model with this Sub-Type cannot be affected by any Psychic Weapon, Psychic Reaction or Psychic Power.
+• A Model with this Sub-Type may not be targeted by the Battlesmith (X) Special Rule.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -15751,6 +15776,28 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <characteristicType name="Type" id="869d-8fb8-f39f-4575"/>
       </characteristicTypes>
     </profileType>
+    <profileType name="Ordinatus Carriage" id="d2eb-6505-121b-e2fd" hidden="false" sortIndex="22">
+      <characteristicTypes>
+        <characteristicType name="Type" id="3aa1-c4e0-580b-3ea8"/>
+        <characteristicType name="M" id="ca8f-3459-76a5-341a"/>
+        <characteristicType name="BS" id="4916-23f6-e8ae-e0a6"/>
+        <characteristicType name="Primary" id="3b6d-41c6-7dfc-687a"/>
+        <characteristicType name="Exposed" id="bacb-0550-4ce0-c9f6"/>
+        <characteristicType name="HP" id="4a6e-ba4c-efad-8147"/>
+        <characteristicType name="Transport" id="2460-f99d-ca7c-c0eb"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Ordinatus Gun" id="4422-b6dd-055c-7cf5" hidden="false" sortIndex="23">
+      <characteristicTypes>
+        <characteristicType name="M" id="b0c3-d1d1-6290-b699"/>
+        <characteristicType name="BS" id="84ea-9f8a-3a99-d275"/>
+        <characteristicType name="Primary" id="3af3-42b1-8029-403a"/>
+        <characteristicType name="Exposed" id="4de0-6b05-f85d-20ca"/>
+        <characteristicType name="HP" id="40fb-a328-7da1-c507"/>
+        <characteristicType name="Transport" id="2815-6bab-2f63-5f71"/>
+        <characteristicType name="Access Points" id="58e0-a986-de89-68ec"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Common Prime Benefits" id="93f7-d7db-d7f0-2146" hidden="false">
@@ -15821,6 +15868,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b980-187b-2b17-d635" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category"/>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Paragon of Battle" hidden="false" id="20cb-4eec-0844-8a97" sortIndex="3">
