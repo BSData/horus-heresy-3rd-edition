@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7851-69ac-f701-034e" name="Solar Auxilia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="25" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7851-69ac-f701-034e" name="Solar Auxilia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="26" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Legatine Command Section" hidden="false" id="8641-1dd0-7e76-de7d">
       <selectionEntries>
@@ -3166,6 +3166,16 @@
           </modifiers>
         </infoLink>
         <infoLink name="[Allegiance]" id="2973-d44f-4d9f-c0ad" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Expendable (X)" id="b3de-6512-4960-744b" hidden="true" type="rule" targetId="c4d4-e053-9564-540b">
+          <modifiers>
+            <modifier type="set" value="Expendable (1)" field="name"/>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="28ba-8660-5266-8674" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Krak grenades" hidden="false" id="c42d-e1bc-38e1-868d" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="4">
@@ -5181,6 +5191,13 @@ Additionally, when at least one Model in a Unit entirely composed of Models with
             <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Ordnance (RS), Blast (5&quot;), Barrage (2), Breaching (6+), Pinning (1)</characteristic>
             <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03"/>
           </characteristics>
+          <modifiers>
+            <modifier type="replace" value="Pinning (2)" field="5aad-137a-8ee2-63fd" arg="Pinning (1)">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c9ef-b204-e951-6b7e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -5216,6 +5233,14 @@ Additionally, when at least one Model in a Unit entirely composed of Models with
           <modifiers>
             <modifier type="set" value="Pinning (1)" field="name">
               <comment>1</comment>
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="c9ef-b204-e951-6b7e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Pinning (2)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c9ef-b204-e951-6b7e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </infoLink>
@@ -5233,6 +5258,13 @@ Additionally, when at least one Model in a Unit entirely composed of Models with
             <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Ordnance (RS), Blast (5&quot;), Barrage (2), Breaching (5+), Pinning (2)</characteristic>
             <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03"/>
           </characteristics>
+          <modifiers>
+            <modifier type="replace" value="Pinning (3)" field="5aad-137a-8ee2-63fd" arg="Pinning (2)">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c9ef-b204-e951-6b7e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -5268,6 +5300,14 @@ Additionally, when at least one Model in a Unit entirely composed of Models with
           <modifiers>
             <modifier type="set" value="Pinning (2)" field="name">
               <comment>2</comment>
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="c9ef-b204-e951-6b7e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Pinning (3)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c9ef-b204-e951-6b7e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </infoLink>
@@ -9469,6 +9509,13 @@ Although included in an Army as a Unit that includes multiple Models, each Model
                 <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Ordnance (RS), Blast (5&quot;), Barrage (2), Breaching (6+), Pinning (1)</characteristic>
                 <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">-</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="replace" value="Pinning (2)" field="5aad-137a-8ee2-63fd" arg="Pinning (1)">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c9ef-b204-e951-6b7e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <constraints>
@@ -9478,6 +9525,47 @@ Although included in an Army as a Unit that includes multiple Models, each Model
           <modifiers>
             <modifier type="prepend" value="Centreline (Rear) Mounted" field="name"/>
           </modifiers>
+          <infoLinks>
+            <infoLink name="Ordnance (X)" id="16ac-86d4-abe7-c6b3" hidden="false" type="rule" targetId="b6b3-909a-b78a-3dbf">
+              <modifiers>
+                <modifier type="set" value="Ordinance (RS)" field="name"/>
+              </modifiers>
+              <comment>RS</comment>
+            </infoLink>
+            <infoLink name="Blast (X)" id="c7b2-f21d-5ef1-e159" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+              <comment>5&quot;</comment>
+              <modifiers>
+                <modifier type="set" value="Blast (5&quot;)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Barrage (X)" id="5e31-fc1a-794d-b6eb" hidden="false" type="rule" targetId="85f5-3a91-69f4-c3b7">
+              <comment>2</comment>
+              <modifiers>
+                <modifier type="set" value="Barrage (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Breaching (X)" id="d93a-1882-8274-9e13" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+              <comment>6+</comment>
+              <modifiers>
+                <modifier type="set" value="Breaching (6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Pinning (X)" id="c210-8a3f-8de1-3ba8" hidden="false" type="rule" targetId="88b6-6493-e4d7-1805">
+              <comment>1</comment>
+              <modifiers>
+                <modifier type="set" value="Pinning 1" field="name">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="c9ef-b204-e951-6b7e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Pinning (2)" field="name">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="c9ef-b204-e951-6b7e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
