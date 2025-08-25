@@ -488,6 +488,7 @@
     <categoryEntry name="Terror Squad" id="22ae-fd5c-00ec-474a" hidden="false"/>
     <categoryEntry name="Prosperine Arcana" id="9c50-6271-7418-82a5" hidden="false"/>
     <categoryEntry name="Forge Crafted Weapon in Unit" id="f9f6-d169-cb95-6285" hidden="false"/>
+    <categoryEntry name="Recon - Land Raider Explorator Only" id="1bc1-e6ff-d62e-398e" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -919,6 +920,11 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="decrement" value="1" field="5146-47d5-c98c-0d62">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="1bc1-e6ff-d62e-398e" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Transport" hidden="false" id="e33f-6b66-6f27-680b" targetId="fc27-1a48-84ae-aa7b">
@@ -1011,7 +1017,7 @@
             </categoryLink>
             <categoryLink name="Prime Recon" hidden="false" id="c98e-8e87-ac5e-5b32" targetId="6348-ecd0-714d-042a">
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="328c-f041-91b1-f08d" includeChildSelections="true"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="328c-f041-91b1-f08d" includeChildSelections="true" automatic="false"/>
               </constraints>
             </categoryLink>
             <categoryLink name="Fast Attack" hidden="false" id="51ec-8aed-80de-45c5" targetId="cf96-8891-3f9a-8921">
@@ -1097,6 +1103,53 @@
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="40fb-bd83-ef61-3ef5"/>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b5f6-283d-e1bc-26cf"/>
               </constraints>
+            </categoryLink>
+            <categoryLink name="Recon - Land Raider Exploretor Only" hidden="false" id="cca3-27cf-d951-b2a6" targetId="1bc1-e6ff-d62e-398e" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d1f3-d313-de87-02c3" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7373-60ae-f5fd-0a60"/>
+              </constraints>
+              <modifiers>
+                <modifier type="decrement" value="1" field="d1f3-d313-de87-02c3">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="d162-4711-5d60-0a48" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="f7b4-2531-0962-1379" shared="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="f7b4-2531-0962-1379" shared="true"/>
+                        <condition type="atMost" value="3" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="roster" childId="22ee-7208-4089-b005" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                      <comment>WS</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="4" field="d1f3-d313-de87-02c3"/>
+                    <modifier type="set" value="false" field="hidden">
+                      <comment>Sire of the White Scars</comment>
+                    </modifier>
+                  </modifiers>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f7b4-2531-0962-1379" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f7b4-2531-0962-1379" shared="true"/>
+                        <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="22ee-7208-4089-b005" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                      <comment>WS</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifierGroup>
+              </modifierGroups>
             </categoryLink>
           </categoryLinks>
           <constraints>
