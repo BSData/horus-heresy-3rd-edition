@@ -462,6 +462,24 @@
     <categoryEntry name="Night Raptor Squad" id="3edc-0325-4190-a414" hidden="false"/>
     <categoryEntry name="Elites - Veteran Assault Squads Only" id="2fed-0e3c-cc68-e4d4" hidden="false"/>
     <categoryEntry name="Retinue - Praetorian Command Squad with Jump Packs Only" id="af7b-1fc6-d5b1-0841" hidden="false"/>
+    <categoryEntry name="Ordinatus Sub-Type" id="f7f7-cdd5-a9fd-aa7a" hidden="false">
+      <rules>
+        <rule name="Ordinatus Sub-Type" id="4888-0346-c11f-ad8d" hidden="false">
+          <description>&quot;The following Rules apply to all Models with the Ordinatus Sub-Type:
+
+
+• Models with this Sub-Type are not affected in any way by Difficult Terrain or Dangerous Terrain, and may pass through Impassable Terrain as long as they do not end a Move on or within an area of Impassable Terrain.
+• When making multiple Shooting Attacks in the same Shooting Phase, a Model with this Sub-Type does not have to make all attacks as Snap Shots.
+• A Model with this Sub-Type is limited on when and which Reactions may be made for it.
+• The Rules for applying Damage to a Model with this Sub-Type vary from those used with other Models with the Vehicle Type.
+• The Rules for Shooting Attacks and Combats that involve Ordinatus are changed as noted in this addendum.
+• If a Model with this Sub-Type has a Transport Capacity, then it may transport any number of Units, so long as the number of Models in the transported Units does not exceed the Vehicle’s Transport Capacity.
+• A Model with this Sub-Type cannot gain any Tactical Statuses or Cybertheurgic Statuses.
+• A Model with this Sub-Type cannot be affected by any Psychic Weapon, Psychic Reaction or Psychic Power.
+• A Model with this Sub-Type may not be targeted by the Battlesmith (X) Special Rule.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -15756,6 +15774,28 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <characteristicType name="BS" id="e2af-22db-e8a2-5ebc"/>
         <characteristicType name="Transport Capacity" id="ca35-9ed8-337e-cb3e"/>
         <characteristicType name="Type" id="869d-8fb8-f39f-4575"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Ordinatus Carriage" id="d2eb-6505-121b-e2fd" hidden="false" sortIndex="22">
+      <characteristicTypes>
+        <characteristicType name="Type" id="3aa1-c4e0-580b-3ea8"/>
+        <characteristicType name="M" id="ca8f-3459-76a5-341a"/>
+        <characteristicType name="BS" id="4916-23f6-e8ae-e0a6"/>
+        <characteristicType name="Primary" id="3b6d-41c6-7dfc-687a"/>
+        <characteristicType name="Exposed" id="bacb-0550-4ce0-c9f6"/>
+        <characteristicType name="HP" id="4a6e-ba4c-efad-8147"/>
+        <characteristicType name="Transport" id="2460-f99d-ca7c-c0eb"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Ordinatus Gun" id="4422-b6dd-055c-7cf5" hidden="false" sortIndex="23">
+      <characteristicTypes>
+        <characteristicType name="M" id="b0c3-d1d1-6290-b699"/>
+        <characteristicType name="BS" id="84ea-9f8a-3a99-d275"/>
+        <characteristicType name="Primary" id="3af3-42b1-8029-403a"/>
+        <characteristicType name="Exposed" id="4de0-6b05-f85d-20ca"/>
+        <characteristicType name="HP" id="40fb-a328-7da1-c507"/>
+        <characteristicType name="Transport" id="2815-6bab-2f63-5f71"/>
+        <characteristicType name="Access Points" id="58e0-a986-de89-68ec"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>

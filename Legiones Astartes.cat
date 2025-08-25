@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="45" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="46" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -1271,8 +1271,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <modifier type="set" value="Bulky (4)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Command Unit Sub-type" id="0c1a-4c66-e3c9-a5a7" hidden="false" type="rule" targetId="7b6d-2e0d-8659-252d"/>
-        <infoLink name="Heavy Unit Sub-type" id="28f5-7bff-3a79-96de" hidden="false" type="rule" targetId="7d35-4d6f-c4fe-4aac"/>
         <infoLink name="Implacable Advance" id="3b22-41a7-1b11-db34" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
         <infoLink name="Infantry Unit Type" id="12a0-7dca-8a47-c4e1" hidden="false" type="rule" targetId="d518-ea26-a708-e6a1"/>
         <infoLink name="Slow and Purposeful" id="884d-c920-88e9-d201" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e"/>
@@ -10690,7 +10688,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <categoryLink targetId="594d-fa82-13cb-a345" id="1fab-362f-4176-b980" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Options" id="d98a-e621-31c2-8412" hidden="false">
+            <selectionEntryGroup name="Options" id="d98a-e621-31c2-8412" hidden="false" sortIndex="1">
               <selectionEntryGroups>
                 <selectionEntryGroup name="May exchange bolt pistol for:" id="3c6a-b972-dc3d-e50d" hidden="false" defaultSelectionEntryId="980d-77c5-4ea9-4661" sortIndex="1">
                   <entryLinks>
@@ -10699,11 +10697,16 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="64f2-3e60-194a-deb3" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" flatten="true" sortIndex="3"/>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efd4-761c-6e63-f72c" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efd4-761c-6e63-f72c" includeChildSelections="false" automatic="true"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ab38-92c5-8525-1ae4" automatic="true"/>
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="0" field="ab38-92c5-8525-1ae4">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="efd4-761c-6e63-f72c">
                       <conditions>
                         <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
                       </conditions>
@@ -10752,17 +10755,19 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca25-2479-8884-9098" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Melta bombs" hidden="false" id="7f97-de03-27f2-7b4f" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="4">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9d39-9b67-38eb-80a3"/>
-                  </constraints>
-                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Melta bombs" hidden="false" id="7f97-de03-27f2-7b4f" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="2">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9d39-9b67-38eb-80a3"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -15779,7 +15784,12 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <infoLink name="Smokescreen" id="f2fe-9f62-1bf1-b9f3" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
       </infoLinks>
       <rules>
-        <rule name="Mastodon Transport Bay" id="e072-e4f5-b964-a208" hidden="false"/>
+        <rule name="Mastodon Transport Bay" id="e072-e4f5-b964-a208" hidden="false">
+          <description>&quot; A Mastodon Super-heavy Assault Transport can transport larger Models as well as infantry.&quot;
+
+
+Models of any Type other than Vehicle may Embark on a Model with this Special Rule, however only 4 Models may be Embarked that do not have the Infantry or Paragon Type, and such a Model may not have any variant of the Bulky (X) Special Rule where the value of X is greater than 6.</description>
+        </rule>
       </rules>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="600"/>
