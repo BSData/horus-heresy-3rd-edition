@@ -10690,7 +10690,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <categoryLink targetId="594d-fa82-13cb-a345" id="1fab-362f-4176-b980" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Options" id="d98a-e621-31c2-8412" hidden="false">
+            <selectionEntryGroup name="Options" id="d98a-e621-31c2-8412" hidden="false" sortIndex="1">
               <selectionEntryGroups>
                 <selectionEntryGroup name="May exchange bolt pistol for:" id="3c6a-b972-dc3d-e50d" hidden="false" defaultSelectionEntryId="980d-77c5-4ea9-4661" sortIndex="1">
                   <entryLinks>
@@ -10752,17 +10752,19 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca25-2479-8884-9098" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Melta bombs" hidden="false" id="7f97-de03-27f2-7b4f" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="4">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9d39-9b67-38eb-80a3"/>
-                  </constraints>
-                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Melta bombs" hidden="false" id="7f97-de03-27f2-7b4f" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="2">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9d39-9b67-38eb-80a3"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
