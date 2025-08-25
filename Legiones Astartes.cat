@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="47" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="48" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -311,6 +311,18 @@
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                        <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                        <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                      </conditions>
+                      <comment>Master Sergeant</comment>
                     </modifierGroup>
                   </modifierGroups>
                 </profile>
@@ -2188,6 +2200,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       <categoryLinks>
         <categoryLink targetId="594d-fa82-13cb-a345" id="e25e-5d0d-ee2d-70e6" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="c504-9dfa-35d3-c98f" id="7802-f028-e306-be10" primary="false" name="Antigrav Model Sub-Type"/>
+        <categoryLink targetId="1fb4-7ef8-2442-2e70" id="b52b-6d8f-01ba-5019" primary="false" name="Assault Squad"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Every Model in this unit may have its Bolt pistol exchanged for a combat shield:" id="d6d2-abfc-e09b-2752" hidden="false" sortIndex="4">
@@ -2512,6 +2525,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       <categoryLinks>
         <categoryLink targetId="594d-fa82-13cb-a345" id="41ee-8a08-201f-8367" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="1e7d-9066-28d2-97a0" id="ca29-8d73-fd0a-7cad" primary="false" name="Heavy Model Sub-Type"/>
+        <categoryLink targetId="157f-952c-13bb-41bf" id="872b-8180-5289-fbbc" primary="false" name="Breacher Squad"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Araknae Quad Accelerator Platform" hidden="false" id="acef-2a3d-3434-7583" sortIndex="40">
@@ -4728,6 +4742,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       </costs>
       <categoryLinks>
         <categoryLink targetId="594d-fa82-13cb-a345" id="3568-1845-c0d8-1b08" primary="false" name="Infantry Model Type"/>
+        <categoryLink targetId="2c0e-cb21-17b4-8870" id="57ce-cecd-2fba-5786" primary="false" name="Tactical Squad"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Deredeo Dreadnought" hidden="false" id="10ad-8abc-c6ef-97ad" sortIndex="42">
@@ -11337,6 +11352,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       </costs>
       <categoryLinks>
         <categoryLink targetId="594d-fa82-13cb-a345" id="c637-a2e0-08c2-aae1" primary="false" name="Infantry Model Type"/>
+        <categoryLink targetId="eeb7-2c0c-9882-f27d" id="986e-da45-b627-ea85" primary="false" name="Despoiler Squad"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tactical Support Squad" hidden="false" id="2f96-9d5c-5c94-58db" sortIndex="34">
@@ -19841,6 +19857,7 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="9c50-6271-7418-82a5" field="category"/>
       </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup name="Orders of the Hekatonystika" id="9035-6bbe-3431-876d" hidden="false" import="true">
