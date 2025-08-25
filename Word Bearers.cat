@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="4935-1832-63f7-91aa" name="                        XVII - Word Bearers" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="11" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="Arkangelmark5" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="4935-1832-63f7-91aa" name="                        XVII - Word Bearers" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="14" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="Arkangelmark5" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Lorgar Aurelian" hidden="false" id="a763-c205-9fe6-46c1">
       <selectionEntries>
@@ -54,7 +54,18 @@
             <rule name="The Power of the Word" id="3f98-81ce-1608-51fc" hidden="false">
               <description>A Model with this Special Rule can join Units with the Malefic Sub-Type as if it had that Sub-Type and while part of such a Unit, is treated as having that Sub-Type</description>
             </rule>
-            <rule name="Sire of the Word Bearers" id="25e7-a4a9-887a-d8ed" hidden="false"/>
+            <rule name="Sire of the Word Bearers" id="25e7-a4a9-887a-d8ed" hidden="false">
+              <description>If a Model with this Speical Rule is part of an Army, then the Controlling Player may apply the following additional Special Rules to all Auxiliary, Apex and Primary Detachments that have the same Faction Trait as the Model with this Special Rule:
+
+
+- If four or more Troops Battlefield Role Slots in the Primary Detachment of this Army are filled with Despoiler Squad Units and/or Tactical Squad Units, then all Force Organisation Slots with Troops Battlefield Role in the Primary Detachment are considered Prime Slots.
+
+
+Furthermore, if a Model with this Special Rule is part of an Army, then the following Special Rules are granted to all Models with the Word Bearers Trait in the same Army:
+
+
+- Until the end of the first Battle Turn of the Battle, each time the Controlling Player of a Model with this Special Rule is required to make a Leadership Check for a Unit that includes only Models with the Word Bearers Trait, that Leadership Check is automatically passed.</description>
+            </rule>
           </rules>
           <entryLinks>
             <entryLink import="true" name="Anathemata" hidden="false" id="0395-0f54-79c8-2cd3" type="selectionEntry" targetId="091a-56c9-7eba-9fa7" sortIndex="4">
@@ -173,7 +184,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kor Phaeron " hidden="false" id="81d5-3d0d-6447-d52b">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Kor Phaeron" hidden="false" id="40f7-d15f-35db-9a03">
+        <selectionEntry type="model" import="true" name="Kor Phaeron" hidden="false" id="40f7-d15f-35db-9a03" sortIndex="1">
           <profiles>
             <profile name="Kor Phaeron " typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="25c6-0801-572c-bec7">
               <characteristics>
@@ -325,17 +336,17 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="4562-0417-57ff-5c91" primary="false" name="Master of the Legion"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="fe87-9193-6dc1-ee4a" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="40e7-827c-4668-960b" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="a360-8f33-41b7-941c" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="03e6-4809-dc67-0208" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="2"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Erebus" hidden="false" id="f075-69f8-c356-a63a">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Erebus" hidden="false" id="ff4b-26d3-f350-d063">
+        <selectionEntry type="model" import="true" name="Erebus" hidden="false" id="ff4b-26d3-f350-d063" sortIndex="1">
           <profiles>
             <profile name="Erebus" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="4621-1f18-e3f9-ef71">
               <characteristics>
@@ -453,17 +464,17 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
         <categoryLink targetId="8e24-2d8b-26e7-d7aa" id="b474-3d31-f289-5ff2" primary="false" name="Anathemata"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="6f01-9c9b-c1cb-1c5e" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="3305-a296-49c0-9ad3" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="0564-6726-4d34-ace0" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="c80a-d7b1-cac6-fe44" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="2"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Argel Tal" hidden="false" id="185b-76ba-116a-7ad7">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Argel Tal" hidden="false" id="f5a8-4c94-c8f3-cfb2">
+        <selectionEntry type="model" import="true" name="Argel Tal" hidden="false" id="f5a8-4c94-c8f3-cfb2" sortIndex="1">
           <profiles>
             <profile name="Argel Tal" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="5d5f-5b09-968a-06e4">
               <characteristics>
@@ -583,12 +594,12 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="3786-6770-2991-b84a" primary="false" name="Master of the Legion"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="ed3e-48b3-3d6e-551a" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="9813-d760-47f7-91eb" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="6522-0599-462f-95a2" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="bf6e-7b9b-570a-a6fd" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="2"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Zardu Layak" hidden="false" id="dab8-484b-f682-a29d">
@@ -771,6 +782,24 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <categoryLinks>
@@ -894,6 +923,24 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <selectionEntries>
@@ -1016,6 +1063,24 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <infoLinks>
@@ -1204,6 +1269,24 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <entryLinks>
@@ -1256,6 +1339,24 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <entryLinks>
@@ -1443,7 +1544,6 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
   </catalogueLinks>
   <sharedRules>
     <rule name="Unwavering Conviction" id="fe99-0874-2c10-cba5" hidden="true">
-      <alias>When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, score 1 Combat Resolution point if any friendly Models in that Combat have the Word Bearers Trait.</alias>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditions>
@@ -1451,6 +1551,7 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
           </conditions>
         </modifier>
       </modifiers>
+      <description>When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, score 1 Combat Resolution point if any friendly Models in that Combat have the Word Bearers Trait.</description>
     </rule>
   </sharedRules>
   <entryLinks>

@@ -209,12 +209,12 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd55-3b29-f3a0-1f6d"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="5c0b-63d3-f852-b1f9" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="c2e5-e390-450e-8515" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="5da2-e16a-4358-9f82" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="4677-5ebc-8319-8799" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="9"/>
       </entryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="410"/>
@@ -343,11 +343,10 @@
         </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="5b9f-3491-1b56-8599" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="14">
           <entryLinks>
-            <entryLink import="true" name="Special Assignment" hidden="false" id="adf5-e9c0-1a49-82df" type="selectionEntry" targetId="c857-47bd-6a4f-fcf8"/>
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="b4bb-8af8-4c52-bbbe" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="0a24-7e1b-1970-b23c" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="d3cb-436c-4a35-03a6" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="c7ec-ff15-15fb-fcc7" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -451,6 +450,24 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -679,6 +696,24 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -753,13 +788,12 @@
           </costs>
         </entryLink>
         <entryLink import="true" name="Heterodoxist" hidden="false" id="d774-6881-ee14-02d1" type="selectionEntry" targetId="7a1e-e035-4b60-0b35" sortIndex="3"/>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="6552-3cd8-1b54-9606" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="14">
+        <entryLink import="true" name="Prime Unit" hidden="false" id="6552-3cd8-1b54-9606" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="15">
           <entryLinks>
-            <entryLink import="true" name="Special Assignment" hidden="false" id="db3e-4fee-b298-2e11" type="selectionEntry" targetId="c857-47bd-6a4f-fcf8"/>
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="3b76-a493-49b6-9b1d" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="fb74-adac-7d09-2b54" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="61f5-f46a-fadf-cb58" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="14"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="9871-cb62-5283-2216" id="64a5-22ff-daf6-921c" primary="false" name="Command Model Sub-type"/>
@@ -953,16 +987,19 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
                   </conditions>
+                  <comment>Archimandrite</comment>
                 </modifier>
                 <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
                   </conditions>
+                  <comment>Archimandrite</comment>
                 </modifier>
                 <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
                   </conditions>
+                  <comment>Myrmidax</comment>
                 </modifier>
                 <modifier type="set" value="Infantry (Command, Heavy)" field="50fc-9241-d4a2-045b">
                   <conditions>
@@ -970,6 +1007,41 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -1142,6 +1214,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -1359,6 +1449,41 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -1413,6 +1538,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -1577,6 +1720,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -1741,18 +1902,56 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
                   </conditions>
+                  <comment>Archimandrite</comment>
                 </modifier>
                 <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
                   </conditions>
+                  <comment>Archimandrite</comment>
                 </modifier>
                 <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
                   </conditions>
+                  <comment>Myrmidax</comment>
                 </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -1926,6 +2125,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -1996,6 +2213,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -2127,6 +2362,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -2205,6 +2458,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -2342,6 +2613,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">6+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64"/>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -2434,6 +2723,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -2606,6 +2913,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -2692,6 +3017,24 @@
                     <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                     <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
                   </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Combat Veterans</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                        <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                        <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                        <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <constraints>
@@ -2846,6 +3189,24 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -3021,6 +3382,24 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -3105,6 +3484,24 @@
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Combat Veterans</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                        <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                        <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                        <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
                 </profile>
               </profiles>
               <categoryLinks>
@@ -3197,6 +3594,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -3208,55 +3623,36 @@
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Must have one of the following options" id="4b86-e546-c577-5527" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Weapon Options" id="da21-875e-9764-ee15" hidden="false" defaultSelectionEntryId="d949-5b9f-f2dd-a0e4" sortIndex="2">
               <selectionEntryGroups>
-                <selectionEntryGroup name="Two options from the following:" id="4fd8-0cd0-ead7-1b81" hidden="false" sortIndex="1">
-                  <entryLinks>
-                    <entryLink import="true" name="Volkite veuglaire" hidden="false" id="eb2c-7500-298e-6f94" type="selectionEntry" targetId="fd48-6c5b-4ac5-2a8f" sortIndex="2">
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="083f-db6b-e9b1-0abd"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Lightning lock" hidden="false" id="3d25-f09c-4211-6988" type="selectionEntry" targetId="d22a-d9bc-ed06-1a7f" sortIndex="3">
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2b37-d8d9-f794-702d"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Graviton pulsar" hidden="false" id="7be6-c0ad-6975-64a7" type="selectionEntry" targetId="bc2f-0d66-62c3-9494" sortIndex="4">
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2563-140c-8343-7eec"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
+                <selectionEntryGroup name="Two options from the following list:" id="7d45-d7d2-00ef-6c0f" hidden="false" sortIndex="1" defaultSelectionEntryId="none">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="079a-d8f6-8017-86d6" automatic="true"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ddc1-34ba-1d99-91ae" automatic="true"/>
+                  </constraints>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Gyges siege claw and one Irad-cleanser" hidden="false" id="362a-7ecd-2684-87c6" sortIndex="1">
+                    <selectionEntry type="upgrade" import="true" name="Gyges siege claw and one Irad-cleanser" hidden="false" id="7739-8123-d0eb-a8fa" sortIndex="1">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="760c-5f53-dc8f-edd9"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7270-03f1-4d89-7a05"/>
                       </constraints>
                       <entryLinks>
-                        <entryLink import="true" name="Irad-cleanser" hidden="false" id="b514-64d9-c78a-7d8c" type="selectionEntry" targetId="910e-3579-4968-44af">
+                        <entryLink import="true" name="Irad-cleanser" hidden="false" id="79e6-e72b-6f3e-2027" type="selectionEntry" targetId="910e-3579-4968-44af">
                           <constraints>
-                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24fe-4c62-c122-023d"/>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b93-98e2-1838-d23a"/>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1103-dedb-aed5-4f6f"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7341-901d-2c22-4129"/>
                           </constraints>
                         </entryLink>
-                        <entryLink import="true" name="Gyges siege claws" hidden="false" id="a2e5-e84d-4785-d835" type="selectionEntry" targetId="8026-777a-5e74-7952">
+                        <entryLink import="true" name="Gyges siege claws" hidden="false" id="45c1-84e7-1aba-3ade" type="selectionEntry" targetId="8026-777a-5e74-7952">
                           <constraints>
-                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e482-8d62-707f-b7ea"/>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31ee-4be3-e373-d11b"/>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0b9-9c33-7a8f-7136"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b598-dd6d-5c78-3028"/>
                           </constraints>
                         </entryLink>
                       </entryLinks>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Moirax conversion beamer" hidden="false" id="63bc-df52-e94e-6acf" sortIndex="5">
+                    <selectionEntry type="upgrade" import="true" name="Moirax conversion beamer" hidden="false" id="4c08-1af7-eeab-1a1d" sortIndex="5">
                       <profiles>
-                        <profile name="2) Moirax conversion beamer &lt;15" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="5dc7-e30a-81a3-994b">
+                        <profile name="2) Moirax conversion beamer &lt;15" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="322f-ee89-4a44-ace2">
                           <characteristics>
                             <characteristic name="R" typeId="cdb0-8654-6840-1037">&lt;15</characteristic>
                             <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
@@ -3267,7 +3663,7 @@
                             <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Conversion</characteristic>
                           </characteristics>
                         </profile>
-                        <profile name="1) Moirax conversion beamer 15-30" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="7924-445d-0b5a-2ea7">
+                        <profile name="1) Moirax conversion beamer 15-30" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="a342-3f18-e3bb-bac4">
                           <characteristics>
                             <characteristic name="R" typeId="cdb0-8654-6840-1037">15-30</characteristic>
                             <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
@@ -3278,7 +3674,7 @@
                             <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Conversion</characteristic>
                           </characteristics>
                         </profile>
-                        <profile name="3) Moirax conversion beamer &gt;30-45" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="6ea2-6cb6-2e09-234d">
+                        <profile name="3) Moirax conversion beamer &gt;30-45" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="fb5c-b594-9b14-a4d2">
                           <characteristics>
                             <characteristic name="R" typeId="cdb0-8654-6840-1037">&gt;30-45</characteristic>
                             <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
@@ -3291,19 +3687,19 @@
                         </profile>
                       </profiles>
                       <infoLinks>
-                        <infoLink name="Blast (X)" id="1aeb-6a6b-5cd6-86f1" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+                        <infoLink name="Blast (X)" id="b17d-ae45-25dc-49c3" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
                           <modifiers>
                             <modifier type="set" value="Blast (3&quot;)" field="name"/>
                           </modifiers>
                           <comment>3&quot;</comment>
                         </infoLink>
-                        <infoLink name="Heavy (X)" id="6c15-218b-b947-11f6" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
+                        <infoLink name="Heavy (X)" id="7a88-1d32-dcc5-821d" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
                           <modifiers>
                             <modifier type="set" value="Heavy (RS)" field="name"/>
                           </modifiers>
                           <comment>RS</comment>
                         </infoLink>
-                        <infoLink name="Suppressive (X)" id="90c6-356a-b09a-1798" hidden="false" type="rule" targetId="001f-53f3-4d87-4b43">
+                        <infoLink name="Suppressive (X)" id="98c1-ece4-6a24-dde9" hidden="false" type="rule" targetId="001f-53f3-4d87-4b43">
                           <modifiers>
                             <modifier type="set" value="Suppressive (1)" field="name"/>
                           </modifiers>
@@ -3316,49 +3712,86 @@
                         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
                       </costs>
                       <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b94e-fb13-dea5-ab1b"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e901-79e9-3b63-7b7a"/>
                       </constraints>
                     </selectionEntry>
                   </selectionEntries>
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="fa42-f182-5312-0445"/>
-                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Volkite veuglaire" hidden="false" id="1f23-c72e-f128-b875" type="selectionEntry" targetId="fd48-6c5b-4ac5-2a8f" sortIndex="2">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4eba-cdd2-bb6c-d3e2"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Lightning lock" hidden="false" id="6eb0-9a58-ef2f-a80f" type="selectionEntry" targetId="d22a-d9bc-ed06-1a7f" sortIndex="3">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="eee1-8f38-5fa3-4a60"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Graviton pulsar" hidden="false" id="2e5d-fd0e-75b3-5f2d" type="selectionEntry" targetId="bc2f-0d66-62c3-9494" sortIndex="4">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="00cc-8c40-4cd2-d881"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="0" field="079a-d8f6-8017-86d6">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="5f9a-1df9-bcb6-86ad" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="0" field="ddc1-34ba-1d99-91ae">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="5f9a-1df9-bcb6-86ad" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Paired Gyges siege claws and two Irad-cleansers" hidden="false" id="e07a-a363-54f2-a504" sortIndex="2">
+                <selectionEntry type="upgrade" import="true" name="Paired Gyges siege claws and two Irad-cleansers" hidden="false" id="5f9a-1df9-bcb6-86ad">
                   <entryLinks>
-                    <entryLink import="true" name="Paired Gyges siege claws" hidden="false" id="6903-6428-0037-14d8" type="selectionEntry" targetId="9406-f4d1-d2ac-c664">
+                    <entryLink import="true" name="Paired Gyges siege claws" hidden="false" id="d21d-fbcd-c2f1-c691" type="selectionEntry" targetId="9406-f4d1-d2ac-c664" sortIndex="1">
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="623a-6072-0687-9ac5"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a73a-2ccc-4fac-392c"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="aa79-ba4f-3e65-e6eb"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5165-c55f-8f4a-91d4"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Irad-cleanser" hidden="false" id="58c3-c497-55bd-c503" type="selectionEntry" targetId="910e-3579-4968-44af">
+                    <entryLink import="true" name="Irad-cleanser" hidden="false" id="9bea-42d9-4937-e771" type="selectionEntry" targetId="910e-3579-4968-44af">
                       <constraints>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e9fa-179f-7b21-4bb9"/>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6aaa-2c58-3c4a-c176"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="b43b-2844-8741-8de7"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="2e01-29e9-47ed-9345"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf94-19e0-f086-0f12"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc12-b26d-1a3c-dd7e"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="beb0-28a4-d354-b9ef"/>
-              </constraints>
               <modifiers>
-                <modifier type="decrement" value="1" field="beb0-28a4-d354-b9ef">
+                <modifier type="set" value="1" field="b775-60e6-4820-ff23">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="3d84-fd67-3560-2968" childId="e07a-a363-54f2-a504" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="fc12-b26d-1a3c-dd7e">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="3d84-fd67-3560-2968" childId="4fd8-0cd0-ead7-1b81" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="5f9a-1df9-bcb6-86ad" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b775-60e6-4820-ff23" automatic="true"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
@@ -3505,6 +3938,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -3845,6 +4296,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -4015,6 +4484,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -4139,6 +4626,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -4328,6 +4833,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -4349,7 +4872,7 @@
                     <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
                     <characteristic name="AP" typeId="7a23-0248-2b94-5951">3</characteristic>
                     <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
-                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Phage (T)</characteristic>
+                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Phage (I)</characteristic>
                     <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Assault</characteristic>
                   </characteristics>
                 </profile>
@@ -4357,9 +4880,9 @@
               <infoLinks>
                 <infoLink name="Phage (X)" id="a1a5-0060-61c2-af4b" hidden="false" type="rule" targetId="3e26-d357-69d6-1341">
                   <modifiers>
-                    <modifier type="set" value="Phage (T)" field="name"/>
+                    <modifier type="set" value="Phage (I)" field="name"/>
                   </modifiers>
-                  <comment>T</comment>
+                  <comment>I</comment>
                 </infoLink>
               </infoLinks>
               <costs>
@@ -4380,19 +4903,6 @@
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Slaughterer blades" hidden="false" id="fc42-a690-b96d-2d8b" type="selectionEntry" targetId="a0b4-c592-01f4-c5a7" sortIndex="3">
-          <profiles>
-            <profile name="Slaughterer blades" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="df7f-4bf0-d3eb-3c59">
-              <characteristics>
-                <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
-                <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
-                <characteristic name="SM" typeId="4505-de6f-d4ae-6280">D</characteristic>
-                <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-                <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
-                <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Shred (5+), Breaching (5+), Reaping blow (1)</characteristic>
-                <characteristic name="Traits" typeId="76e3-c188-bc65-3467">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a74d-3663-25fa-fce1"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="488d-c5d2-ca00-6161"/>
@@ -4768,6 +5278,24 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -5346,7 +5874,7 @@
           <profiles>
             <profile name="Archmagos Draykavac" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="d8a8-ada2-33d4-d888">
               <characteristics>
-                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command, Unique)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
                 <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">6</characteristic>
@@ -5365,12 +5893,14 @@
               <modifierGroups>
                 <modifierGroup type="and">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="3563-badf-5bdb-cdfe" childId="d391-110d-bdfb-5b4b" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="3563-badf-5bdb-cdfe" childId="d391-110d-bdfb-5b4b" shared="true" includeChildSelections="true"/>
                   </conditions>
                   <modifiers>
-                    <modifier type="append" value="(Command, Unique)" field="50fc-9241-d4a2-045b"/>
-                    <modifier type="add" value="9871-cb62-5283-2216" field="category"/>
-                    <modifier type="add" value="b980-187b-2b17-d635" field="category"/>
+                    <modifier type="increment" value="1" field="3120-8275-e537-ecd2"/>
+                    <modifier type="increment" value="-1" field="af9d-7db8-dc95-71c1"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="add" value="c504-9dfa-35d3-c98f" field="category"/>
+                    <modifier type="replace" value=", Antigrav)" field="50fc-9241-d4a2-045b" arg=")"/>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
@@ -5378,23 +5908,9 @@
           </profiles>
           <categoryLinks>
             <categoryLink name="Infantry Model Type" hidden="false" id="9e9d-374f-2909-3b06" targetId="594d-fa82-13cb-a345" primary="false"/>
+            <categoryLink targetId="b980-187b-2b17-d635" id="77ad-b946-2644-9bf7" primary="false" name="Unique Model Sub-Type"/>
+            <categoryLink targetId="9871-cb62-5283-2216" id="477f-04a5-fdae-3c9f" primary="false" name="Command Model Sub-type"/>
           </categoryLinks>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="3563-badf-5bdb-cdfe" childId="d391-110d-bdfb-5b4b" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <modifiers>
-                <modifier type="increment" value="1" field="3120-8275-e537-ecd2"/>
-                <modifier type="increment" value="-1" field="af9d-7db8-dc95-71c1"/>
-                <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                <modifier type="add" value="9871-cb62-5283-2216" field="category"/>
-                <modifier type="append" value="(Command, Unique, Antigrav)" field="50fc-9241-d4a2-045b"/>
-                <modifier type="add" value="b980-187b-2b17-d635" field="category"/>
-                <modifier type="add" value="c504-9dfa-35d3-c98f" field="category"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Abeyant" hidden="false" id="d391-110d-bdfb-5b4b" sortIndex="2">
           <constraints>
@@ -5444,8 +5960,7 @@ While a Model with this Special Rule is engaged in a Challenge, its Controlling 
           <entryLinks>
             <entryLink import="true" name="Graviton gun" hidden="false" id="509e-1115-189b-fa3a" type="selectionEntry" targetId="4a06-c55e-a06f-bd0c">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe0c-d4a7-d65f-f5b3"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe43-0e2c-d6d5-7a5d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="fe43-0e2c-d6d5-7a5d"/>
               </constraints>
             </entryLink>
             <entryLink import="true" name="Rotor cannon" hidden="false" id="4a1e-6df0-2059-a01c" type="selectionEntry" targetId="05bf-af5e-be67-36a2">
@@ -5465,8 +5980,8 @@ While a Model with this Special Rule is engaged in a Challenge, its Controlling 
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="332f-cdb1-aa69-ae24"/>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0973-abe5-99b1-77b9"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="332f-cdb1-aa69-ae24" automatic="true"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0973-abe5-99b1-77b9" automatic="true"/>
           </constraints>
           <modifiers>
             <modifier type="increment" value="1" field="332f-cdb1-aa69-ae24">
@@ -5547,8 +6062,8 @@ If the check is successful, then the Model with this Special Rule is immediately
         </entryLink>
         <entryLink import="true" name="Graviton gun" hidden="false" id="8aec-25cd-4de8-b4e7" type="selectionEntry" targetId="4a06-c55e-a06f-bd0c" sortIndex="9">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f78a-9163-c9c3-d8ae"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce13-6b0a-8315-4524"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="f78a-9163-c9c3-d8ae"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ce13-6b0a-8315-4524"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Cortex controller" hidden="false" id="bcb1-aa18-507b-6eae" type="selectionEntry" targetId="e1c7-e5c2-8a4c-1e79" sortIndex="10">
@@ -5576,16 +6091,17 @@ If the check is successful, then the Model with this Special Rule is immediately
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a45-c30f-ae60-c934"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="1e88-910f-6bf2-7c0e" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="fa49-588e-472c-9168" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="5f37-2c79-4725-a040" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="aa31-a3f7-490d-0381" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="13"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="a660-a2a5-eef3-2fbc" id="27b6-1d05-a732-e38a" primary="false" name="Heterodoxists"/>
         <categoryLink targetId="9892-3b91-8a3b-51e8" id="8888-9230-8a45-fef7" primary="false" name="Archmagos is Archimandrite"/>
+        <categoryLink targetId="3252-003d-1181-0f99" id="cd05-6303-9da8-6fe8" primary="false" name="Archimandrite"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="c504-9dfa-35d3-c98f" field="category">
