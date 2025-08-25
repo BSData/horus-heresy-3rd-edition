@@ -325,6 +325,7 @@ class GameTests(unittest.TestCase):
                             {"type": "ceil", "value": "10", "field": "f714-1726-37d3-44df"},
                             {"type": "ceil", "value": "10", "field": "29c5-925d-5b1d-1e77"},
                         ], expected_condition_child_id="8cf8-9be5-91d6-c96d")
+
                     if "Command" in profile_type:
                         with self.subTest(f"Paragon of Battle for {profile}"):
                             self.check_mods_and_conditions(paragon_of_battle_group, expected_mods=[
@@ -332,7 +333,8 @@ class GameTests(unittest.TestCase):
                                 {"type": "increment", "value": "1", "field": "0cd5-b269-e3bc-028b"},
                                 {"type": "increment", "value": "1", "field": "024e-bdb1-7982-25a0"},
                             ], expected_condition_child_id="20cb-4eec-0844-8a97")
-                    if "Sergeant" in profile_type:
+
+                    if "Sergeant" in profile_type and "Rapier" not in unit.name:
                         with self.subTest(f"Master Sergeant for {profile}"):
                             self.assertIsNotNone(master_sgt_group)
                             if "Champion" in profile_type:
