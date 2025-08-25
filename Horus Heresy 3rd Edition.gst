@@ -465,18 +465,18 @@
     <categoryEntry name="Ordinatus Sub-Type" id="f7f7-cdd5-a9fd-aa7a" hidden="false">
       <rules>
         <rule name="Ordinatus Sub-Type" id="4888-0346-c11f-ad8d" hidden="false">
-          <description>&quot;The following Rules apply to all Models with the Ordinatus Sub-Type:
+          <description>&quot;The following Rules apply to all Models with the Ordinatus Sub-Type:
 
 
-• Models with this Sub-Type are not affected in any way by Difficult Terrain or Dangerous Terrain, and may pass through Impassable Terrain as long as they do not end a Move on or within an area of Impassable Terrain.
-• When making multiple Shooting Attacks in the same Shooting Phase, a Model with this Sub-Type does not have to make all attacks as Snap Shots.
-• A Model with this Sub-Type is limited on when and which Reactions may be made for it.
-• The Rules for applying Damage to a Model with this Sub-Type vary from those used with other Models with the Vehicle Type.
-• The Rules for Shooting Attacks and Combats that involve Ordinatus are changed as noted in this addendum.
-• If a Model with this Sub-Type has a Transport Capacity, then it may transport any number of Units, so long as the number of Models in the transported Units does not exceed the Vehicle’s Transport Capacity.
-• A Model with this Sub-Type cannot gain any Tactical Statuses or Cybertheurgic Statuses.
-• A Model with this Sub-Type cannot be affected by any Psychic Weapon, Psychic Reaction or Psychic Power.
-• A Model with this Sub-Type may not be targeted by the Battlesmith (X) Special Rule.</description>
+• Models with this Sub-Type are not affected in any way by Difficult Terrain or Dangerous Terrain, and may pass through Impassable Terrain as long as they do not end a Move on or within an area of Impassable Terrain.
+• When making multiple Shooting Attacks in the same Shooting Phase, a Model with this Sub-Type does not have to make all attacks as Snap Shots.
+• A Model with this Sub-Type is limited on when and which Reactions may be made for it.
+• The Rules for applying Damage to a Model with this Sub-Type vary from those used with other Models with the Vehicle Type.
+• The Rules for Shooting Attacks and Combats that involve Ordinatus are changed as noted in this addendum.
+• If a Model with this Sub-Type has a Transport Capacity, then it may transport any number of Units, so long as the number of Models in the transported Units does not exceed the Vehicle’s Transport Capacity.
+• A Model with this Sub-Type cannot gain any Tactical Statuses or Cybertheurgic Statuses.
+• A Model with this Sub-Type cannot be affected by any Psychic Weapon, Psychic Reaction or Psychic Power.
+• A Model with this Sub-Type may not be targeted by the Battlesmith (X) Special Rule.</description>
         </rule>
       </rules>
     </categoryEntry>
