@@ -3784,6 +3784,13 @@
           <entryLinks>
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="4944-5f01-5980-a80d" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="1" field="881f-5dbe-10fd-ec48">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0594-4b9b-675b-f633" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <modifierGroups>
@@ -8058,7 +8065,6 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
       <categoryLinks>
         <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="d68c-bffa-a2df-18bd" primary="false" name="Vehicle Model Type"/>
         <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="394e-888b-4fe1-1896" primary="false" name="Transport Model Sub-Type"/>
-        <categoryLink targetId="1ec3-1433-658a-f04e" id="e6e7-a1bc-ab8d-7f7c" primary="false" name="Macrotek"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Macrocarid Explorator" hidden="false" id="fa83-8f31-56c8-f35d">
@@ -9351,6 +9357,18 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b90f-06f9-942e-4930"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95f1-3a26-9e4b-0a26"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Logistical Benefit (Mech)" hidden="false" id="5616-61ec-fafd-dfd2" sortIndex="5">
+          <categoryLinks>
+            <categoryLink targetId="7e6f-65f7-7535-9ffc" id="31e1-1313-c149-a19d" primary="false" name="Mechanicum Logistical Benefit"/>
+          </categoryLinks>
+          <rules>
+            <rule name="Logistical Benefit" id="daab-592c-9d4f-32d0" hidden="false">
+              <description>Add one additional Force Organisation Slot to the Detachment that includes the Prime Slot, this Slot may be any Battlefield Role other than High Command, Command, Warlord or Lord of War. This Advantage may only be selected once per Detachment.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <entryLinks>
