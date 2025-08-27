@@ -17300,6 +17300,11 @@
               </conditionGroups>
               <comment>Mechanicum only</comment>
             </modifier>
+            <modifier type="set" value="1" field="8613-3ef7-c5b4-4ccb">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7e6f-65f7-7535-9ffc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <categoryLinks>
             <categoryLink name="Retinue" hidden="false" id="8f30-df6d-17b4-c916" targetId="a38e-50ff-310f-f19e">
@@ -17590,7 +17595,7 @@
             </categoryLink>
           </categoryLinks>
           <constraints>
-            <constraint type="min" value="1" field="forces" scope="parent" shared="true" id="8613-3ef7-c5b4-4ccb" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="forces" scope="parent" shared="true" id="8613-3ef7-c5b4-4ccb" includeChildSelections="false"/>
             <constraint type="max" value="1" field="forces" scope="parent" shared="true" id="5df5-5821-ea4c-d0e1" includeChildSelections="false"/>
           </constraints>
         </forceEntry>
