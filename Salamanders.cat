@@ -58,6 +58,119 @@
             <categoryLink targetId="594d-fa82-13cb-a345" id="b4f3-1ed9-4681-b08c" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="c37d-bb1a-4d8e-aace" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" id="0efc-92be-708e-fd3a" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Forge-crafted thunder hammer" id="880f-ecf5-af86-4441" hidden="false" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Forge-crafted thunder hammer" hidden="false" id="9783-61b0-d7b1-aae4" type="selectionEntry" targetId="d08b-34be-c6b9-8494" defaultAmount="1" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b3af-ac1a-025b-4c2e" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e029-2c98-deb7-a2ae" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Power Weapon" hidden="false" id="fc96-9715-1356-b550" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" sortIndex="2">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a84d-9e9f-5227-62a7" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b07-7e94-2d28-cd4a" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Power fist" hidden="false" id="754d-380e-a9eb-3f7b" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="3">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c8c2-b41c-7bed-a7ee" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0aa7-5a79-76ae-93d4" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Forge-crafted power fist" hidden="true" id="1a7d-fb82-71b8-8c29" type="selectionEntry" targetId="8146-abba-1612-3d0f" sortIndex="4">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="72e5-e338-58af-1bbe" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a646-f550-b69c-5a23" includeChildSelections="false"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>SL</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <comment>SL+Sgt/Cmd/Spec/Champ Only</comment>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Chainfist" hidden="false" id="ceab-cd49-aa83-3c63" type="selectionEntry" targetId="8322-1eca-e855-2683" sortIndex="5">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a3fd-1334-ccac-45da" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8ed-269c-a31a-7c74" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ec5-715e-edcc-1f47" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4907-338b-81af-d2f1" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Drakenscale" id="a274-ce72-fdca-f29c" hidden="false" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Drakenscale" hidden="false" id="0912-a280-fab5-47a0" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" defaultAmount="1" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1c21-968a-b84c-b0a8" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25a8-2e2d-34ec-c464" includeChildSelections="false"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="add" value="26c6-e05c-0f72-7852" field="category" scope="model"/>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Combi-bolter" hidden="false" id="d6c5-e0de-14c1-33eb" type="selectionEntry" targetId="042d-9e60-db9e-c147" sortIndex="2">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="498f-92a2-ef4f-778e" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9fc-715a-1abd-6140" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="729d-c224-be53-308d" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" sortIndex="3">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2076-4cc0-d2b0-0022" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="916b-dfca-b49b-0ec7" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="04a0-ca39-12df-4e6c" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff8c-bfd0-c7d3-582f" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="1 model may exchange Drakenscale for:" id="5d0a-4119-94cb-8327" hidden="false" flatten="false" sortIndex="4">
+                      <entryLinks>
+                        <entryLink import="true" name="Forge-crafted heavy flamer" hidden="false" id="8275-2161-8ecd-96f6" type="selectionEntry" targetId="6d3e-3152-c52f-1d66">
+                          <constraints>
+                            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="27ab-a819-bc7e-2832" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7787-efd6-1d77-b4a0" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="c189-fcbf-ab86-9b60" includeChildSelections="true"/>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2294-80ed-2516-7d79" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e5e1-5a4d-5e9a-8195" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Firedrake Master" hidden="false" id="6f99-6a87-8ad6-8467" sortIndex="1">
           <profiles>
@@ -127,6 +240,119 @@
               </conditions>
             </modifier>
           </modifiers>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" id="ac5d-99bb-3acd-e960" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Forge-crafted thunder hammer" id="d573-b96e-0b79-245c" hidden="false" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Forge-crafted thunder hammer" hidden="false" id="38b4-3cb0-53e6-e8f4" type="selectionEntry" targetId="d08b-34be-c6b9-8494" defaultAmount="1" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d531-8d0c-c6e7-46fc" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93c7-6355-fd36-8074" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Power Weapon" hidden="false" id="0253-ad3d-7d15-ee06" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" sortIndex="2">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7c86-5295-5584-4a34" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a97-d942-4103-a6e8" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Power fist" hidden="false" id="9426-91b0-5ea0-0852" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="3">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e68d-6c64-e7c2-dbba" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b0c-13f9-17eb-ce22" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Forge-crafted power fist" hidden="true" id="184f-acc3-384a-2456" type="selectionEntry" targetId="8146-abba-1612-3d0f" sortIndex="4">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0c61-f161-5b03-bfc7" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ff0-f1e8-2274-6170" includeChildSelections="false"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>SL</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <comment>SL+Sgt/Cmd/Spec/Champ Only</comment>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Chainfist" hidden="false" id="c302-f73a-ca36-e5cb" type="selectionEntry" targetId="8322-1eca-e855-2683" sortIndex="5">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0038-073e-786c-0657" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01b3-45be-f734-0a21" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f82c-6e71-ce16-76be" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="450c-319f-d0d6-f969" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Drakenscale" id="58a6-5b26-cd9f-26a9" hidden="false" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Drakenscale" hidden="false" id="2f75-e87a-ca04-5321" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" defaultAmount="1" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0aa8-d03b-8378-7362" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e52-83ed-488c-6b36" includeChildSelections="false"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="add" value="26c6-e05c-0f72-7852" field="category" scope="model"/>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Combi-bolter" hidden="false" id="278f-cd9e-55a5-d96e" type="selectionEntry" targetId="042d-9e60-db9e-c147" sortIndex="2">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="069e-0b0b-0207-841e" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7963-752f-3297-08e3" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="6790-641f-2344-b683" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" sortIndex="3">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0d03-ad80-9cca-c189" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="575b-6432-22c0-8790" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc56-65c6-c2ed-d149" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7da7-b9b9-6545-15f0" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="1 model may exchange Drakenscale for:" id="2ffd-8158-acdb-9516" hidden="false" flatten="false" sortIndex="4">
+                      <entryLinks>
+                        <entryLink import="true" name="Forge-crafted heavy flamer" hidden="false" id="80e6-0617-080c-d9c6" type="selectionEntry" targetId="6d3e-3152-c52f-1d66">
+                          <constraints>
+                            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6415-9164-bb86-f74a" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b734-1952-69cb-5422" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="837e-302a-56ac-0b78" includeChildSelections="true"/>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ac56-c454-6ea1-e2dc" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fd7-6b4f-c2c7-2657" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
