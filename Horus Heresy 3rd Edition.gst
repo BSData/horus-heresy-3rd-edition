@@ -17286,7 +17286,7 @@
             </modifier>
           </modifiers>
         </forceEntry>
-        <forceEntry name="Mech - Logistical Benefits Detachment" id="8c2c-1dac-5e49-d2e5" hidden="false" sortIndex="83">
+        <forceEntry name="Mech - Logistical Benefits Detachment" id="8c2c-1dac-5e49-d2e5" hidden="true" sortIndex="83">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
