@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="19" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="20" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Anacharis Scoria" hidden="false" id="10f5-dae8-f081-d82f" sortIndex="29">
       <infoLinks>
@@ -4606,6 +4606,22 @@
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">22</characteristic>
                 <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">Both Sides</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="6536-e73d-4a74-c675"/>
+                    <modifier type="increment" value="1" field="f03a-18a7-8586-273d"/>
+                    <modifier type="ceil" value="14" field="6536-e73d-4a74-c675"/>
+                    <modifier type="ceil" value="14" field="f03a-18a7-8586-273d"/>
+                    <modifier type="increment" value="2" field="8735-4497-1f8a-4dda"/>
+                    <modifier type="increment" value="2" field="a82e-858c-9aa9-2b43"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5e61-75cf-5a52-a94d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Prime Conveyor</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -5660,6 +5676,22 @@
                 <characteristic name="HP" typeId="8735-4497-1f8a-4dda">7</characteristic>
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="6536-e73d-4a74-c675"/>
+                    <modifier type="increment" value="1" field="f03a-18a7-8586-273d"/>
+                    <modifier type="ceil" value="14" field="6536-e73d-4a74-c675"/>
+                    <modifier type="ceil" value="14" field="f03a-18a7-8586-273d"/>
+                    <modifier type="increment" value="2" field="8735-4497-1f8a-4dda"/>
+                    <modifier type="increment" value="2" field="a82e-858c-9aa9-2b43"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5e61-75cf-5a52-a94d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Prime Conveyor</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -5789,6 +5821,22 @@
                 <characteristic name="HP" typeId="8735-4497-1f8a-4dda">5</characteristic>
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="6536-e73d-4a74-c675"/>
+                    <modifier type="increment" value="1" field="f03a-18a7-8586-273d"/>
+                    <modifier type="ceil" value="14" field="6536-e73d-4a74-c675"/>
+                    <modifier type="ceil" value="14" field="f03a-18a7-8586-273d"/>
+                    <modifier type="increment" value="2" field="8735-4497-1f8a-4dda"/>
+                    <modifier type="increment" value="2" field="a82e-858c-9aa9-2b43"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5e61-75cf-5a52-a94d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Prime Conveyor</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -6190,7 +6238,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Krios" hidden="false" id="4684-1eb3-81a9-48ba" sortIndex="1">
           <profiles>
-            <profile name="Krios" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="81b3-7da2-f71b-b562">
+            <profile name="Krios Venator" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="81b3-7da2-f71b-b562">
               <characteristics>
                 <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Rapid)</characteristic>
                 <characteristic name="M" typeId="d624-72fe-0205-4443">14</characteristic>
@@ -6201,6 +6249,22 @@
                 <characteristic name="HP" typeId="8735-4497-1f8a-4dda">5</characteristic>
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="6536-e73d-4a74-c675"/>
+                    <modifier type="increment" value="1" field="f03a-18a7-8586-273d"/>
+                    <modifier type="ceil" value="14" field="6536-e73d-4a74-c675"/>
+                    <modifier type="ceil" value="14" field="f03a-18a7-8586-273d"/>
+                    <modifier type="increment" value="2" field="8735-4497-1f8a-4dda"/>
+                    <modifier type="increment" value="2" field="a82e-858c-9aa9-2b43"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5e61-75cf-5a52-a94d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Prime Conveyor</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -7906,6 +7970,7 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
       <categoryLinks>
         <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="d68c-bffa-a2df-18bd" primary="false" name="Vehicle Model Type"/>
         <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="394e-888b-4fe1-1896" primary="false" name="Transport Model Sub-Type"/>
+        <categoryLink targetId="1ec3-1433-658a-f04e" id="6b86-6301-abdf-fa46" primary="false" name="Macrotek"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Macrocarid Explorator" hidden="false" id="fa83-8f31-56c8-f35d">
@@ -7926,6 +7991,22 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">12</characteristic>
                 <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">Not specified!</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="6536-e73d-4a74-c675"/>
+                    <modifier type="increment" value="1" field="f03a-18a7-8586-273d"/>
+                    <modifier type="ceil" value="14" field="6536-e73d-4a74-c675"/>
+                    <modifier type="ceil" value="14" field="f03a-18a7-8586-273d"/>
+                    <modifier type="increment" value="2" field="8735-4497-1f8a-4dda"/>
+                    <modifier type="increment" value="2" field="a82e-858c-9aa9-2b43"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5e61-75cf-5a52-a94d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Prime Conveyor</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <selectionEntryGroups>
@@ -8110,8 +8191,23 @@ When a Model with this Special Rule and the Vehicle Type moves through an enemy 
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="1c98-4a83-d6f3-4193" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
-            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="897c-4043-668d-27a2" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="897c-4043-668d-27a2" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f">
+              <modifiers>
+                <modifier type="set" value="8855-4255-3c14-bc68" field="defaultSelectionEntryId">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a782-7985-325b-1840" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="1" field="881f-5dbe-10fd-ec48">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a782-7985-325b-1840" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -9160,7 +9256,19 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         <entryLink import="true" name="Prime Specimens" hidden="false" id="3d61-54d8-f3e6-c097" type="selectionEntry" targetId="a533-4a75-9434-4595" sortIndex="7"/>
         <entryLink import="true" name="Prime Conveyor" hidden="false" id="8855-4255-3c14-bc68" type="selectionEntry" targetId="5e61-75cf-5a52-a94d" sortIndex="8"/>
         <entryLink import="true" name="Thallaxi Principe" hidden="false" id="6c45-965d-4aef-3d33" type="selectionEntry" targetId="a3af-b73f-4a1b-efd1" sortIndex="9"/>
-        <entryLink import="true" name="Common Prime Benefits" hidden="false" id="4b45-404f-dec7-194d" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true" sortIndex="1"/>
+        <entryLink import="true" name="Common Prime Benefits" hidden="false" id="4b45-404f-dec7-194d" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true" sortIndex="1">
+          <modifiers>
+            <modifier type="set" value="0" field="c235-892b-27fb-2993">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="5e61-75cf-5a52-a94d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c235-892b-27fb-2993" automatic="true"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ec85-4050-9117-a9f4" automatic="true"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b90f-06f9-942e-4930"/>
