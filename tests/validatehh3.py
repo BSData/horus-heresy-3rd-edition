@@ -152,7 +152,7 @@ class GameTests(unittest.TestCase):
             if parent_force.get_child("forceEntries") is None:
                 continue
             for child_force in parent_force.get_child("forceEntries").children:
-                if child_force.name == "Mech - Logistical Benefit Detachment":
+                if child_force.name == "Mech - Logistical Benefits Detachment":
                     continue  # Skip LB detachment forces entirely if Mech LB detachment
                 # print("\t", child_force)
                 if child_force.get_child("categoryLinks") is None:
