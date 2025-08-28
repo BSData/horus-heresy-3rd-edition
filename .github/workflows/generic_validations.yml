@@ -34,6 +34,8 @@ jobs:
         ls $DEFAULT_DATA_DIRECTORY
         cd $DEFAULT_DATA_DIRECTORY
         echo "pwd:      is $(pwd)"
+        cd ${{ github.workspace }}/${{ github.repository }}
+        echo "Contents of checked out folder:"
         ls
       env:
         DEFAULT_DATA_DIRECTORY: ${{ github.workspace }}/${{ github.repository }}/../
