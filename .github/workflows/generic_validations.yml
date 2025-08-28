@@ -11,35 +11,31 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - name: Checking out BSCopy
-      uses: actions/checkout@v4
-      with:
-        repository: 'nstephenh/bscopy'
     - name: Checking out game system
       uses: actions/checkout@v4
       with:
         ref: ${{ github.event.pull_request.head.sha }}
-        path: ${{ github.workspace }}/${{ github.repository }}/
     - name: Setting up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.11'
-    - name: Get game system name from repo name
-      run: |
-        SYSTEM_NAME=$(basename "${{ github.repository }}")
-        echo "System Name: $SYSTEM_NAME"
-        echo "SYSTEM_NAME=$SYSTEM_NAME" >> $GITHUB_ENV
-      env:
-        DEFAULT_DATA_DIRECTORY: ${{ github.workspace }}/${{ github.repository }}/../
-    - name: set pythonpath
-      run: |
-        echo "PYTHONPATH=." >> $GITHUB_ENV
+    - name: Checking out BSCopy
+      uses: actions/checkout@v4
+      with:
+        repository: 'nstephenh/bscopy'
+        path: 'tests/BSCopy'
     - name: Run basic validity
       id: validity
       run: |      
+        SYSTEM_NAME=$(echo "${{ github.repository }}" | cut -d '/' -f 2)
+        echo $SYSTEM_NAME
+        echo $PYTHONPATH
+        PYTHONPATH=$PYTHONPATH:$(pwd)
+        echo $PYTHONPATH
         python3 system/tests/basic_system_checks.py
+      working-directory: 'tests/BSCopy'
       env:
-        DEFAULT_DATA_DIRECTORY: ${{ github.workspace }}/${{ github.repository }}/../
+        DEFAULT_DATA_DIRECTORY: ${{ github.workspace }}/..
 
 
 #    - uses: BSData/check-datafiles@v1
