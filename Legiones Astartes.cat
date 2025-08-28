@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="48" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="47" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -2754,6 +2754,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <modifier type="set" value="Explodes (4+)" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Heavy Unit Sub-type" id="7984-1bec-a1a7-61c0" hidden="false" type="rule" targetId="7d35-4d6f-c4fe-4aac"/>
+        <infoLink name="Walker Unit Type" id="b420-0334-fce6-b917" hidden="false" type="rule" targetId="a4d9-6b9e-822f-d40b"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fellblade Super-Heavy Battle Tank" hidden="false" id="ca07-1c1d-3788-c9e5" sortIndex="74">
@@ -5701,12 +5703,12 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               <modifiers>
                 <modifier type="set" value="Infantry (Command)" field="50fc-9241-d4a2-045b">
                   <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="8a69-56e2-c8dd-aade" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="1a57-febb-4a60-14fc" shared="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="7" field="a106-a779-d272-5e93">
                   <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="8a69-56e2-c8dd-aade" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="1a57-febb-4a60-14fc" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5777,6 +5779,22 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
+        <selectionEntryGroup name="Terminator Armour" id="e31b-54e3-39ce-9aa9" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Cataphractii" hidden="false" id="6d79-9362-f4b8-039c"/>
+            <selectionEntry type="upgrade" import="true" name="Tartaros" hidden="false" id="1a57-febb-4a60-14fc">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a31f-fe07-6467-50c5" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d29e-5fe6-5452-05e4" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
         <selectionEntryGroup name="Options" id="d9a1-0647-971e-242b" hidden="false" flatten="false" sortIndex="3">
           <selectionEntryGroups>
             <selectionEntryGroup name="May exchange power weapon for:" id="6b11-ddfd-7cac-077b" hidden="false" flatten="false">
@@ -5870,7 +5888,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="unit" childId="8a69-56e2-c8dd-aade" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="unit" childId="1a57-febb-4a60-14fc" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5892,7 +5910,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       <modifiers>
         <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="unit" childId="8a69-56e2-c8dd-aade" shared="true"/>
+            <condition type="equalTo" value="1" field="selections" scope="unit" childId="1a57-febb-4a60-14fc" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5909,7 +5927,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="force" childId="736e-3967-e72b-e3ac" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8a69-56e2-c8dd-aade" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="1a57-febb-4a60-14fc" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5921,7 +5939,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="8dc8-c5af-5e57-91ce" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="be9d-d140-21d1-0f59" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="4"/>
-        <entryLink import="true" name="Terminator Armour" hidden="false" id="930a-ca1e-4cb0-6dc4" type="selectionEntryGroup" targetId="29d2-653e-915c-04ce" sortIndex="2"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Optae" hidden="false" id="1653-8dfd-2881-8cec" sortIndex="6">
@@ -6365,19 +6382,19 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               <modifiers>
                 <modifier type="set" value="Infantry (Command)" field="50fc-9241-d4a2-045b">
                   <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="8a69-56e2-c8dd-aade" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="d4a4-a3f7-f634-4632" shared="true"/>
                   </conditions>
                   <comment>Tartaros</comment>
                 </modifier>
                 <modifier type="set" value="7" field="a106-a779-d272-5e93">
                   <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="8a69-56e2-c8dd-aade" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="d4a4-a3f7-f634-4632" shared="true"/>
                   </conditions>
                   <comment>Tartaros</comment>
                 </modifier>
                 <modifier type="set" value="5+" field="a951-a772-7ce0-0b64">
                   <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="8a69-56e2-c8dd-aade" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="d4a4-a3f7-f634-4632" shared="true"/>
                   </conditions>
                   <comment>Tartaros</comment>
                 </modifier>
@@ -6454,7 +6471,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="unit" childId="8a69-56e2-c8dd-aade" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="unit" childId="d4a4-a3f7-f634-4632" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6471,6 +6488,29 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </infoLink>
       </infoLinks>
       <selectionEntryGroups>
+        <selectionEntryGroup name="Terminator Armour" id="babb-6a3c-da26-f5d3" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Cataphractii" hidden="false" id="2724-c83c-4226-523b">
+              <modifiers>
+                <modifier type="add" value="fdce-834f-ead1-31c3" field="category"/>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tartaros" hidden="false" id="d4a4-a3f7-f634-4632">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="add" value="86d7-7e47-a0d7-6041" field="category"/>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b85-21b2-80ee-c693" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6faf-741b-901c-b3bb" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
         <selectionEntryGroup name="Options" id="32df-0b1c-8590-a832" hidden="false" sortIndex="3">
           <selectionEntryGroups>
             <selectionEntryGroup name="May exchange power weapon for:" id="cd39-9dca-726a-f330" hidden="false">
@@ -6566,7 +6606,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       <modifiers>
         <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="unit" childId="8a69-56e2-c8dd-aade" shared="true"/>
+            <condition type="equalTo" value="1" field="selections" scope="unit" childId="d4a4-a3f7-f634-4632" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -6584,7 +6624,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="force" childId="736e-3967-e72b-e3ac" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8a69-56e2-c8dd-aade" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="1a57-febb-4a60-14fc" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6594,7 +6634,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </entryLink>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Terminator Armour" hidden="false" id="dc15-f9bb-aa81-296f" type="selectionEntryGroup" targetId="29d2-653e-915c-04ce" sortIndex="2"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Damocles Command Rhino" hidden="false" id="f214-aeb9-0dd6-9071" sortIndex="7">
@@ -18753,15 +18792,18 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="1857-d5ec-78ba-886a" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="8a69-56e2-c8dd-aade" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="50fb-f90a-70ec-7649" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3139-1aa9-4b77-da26" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b703-f7ab-dac5-0ae4" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e9a1-490f-8679-fc4e" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                    <conditionGroup type="and">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="unit" childId="3139-1aa9-4b77-da26" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="unit" childId="50fb-f90a-70ec-7649" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="unit" childId="e9a1-490f-8679-fc4e" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="unit" childId="b703-f7ab-dac5-0ae4" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="unit" childId="23ee-bc64-aea6-5272" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                   <conditions>
@@ -18774,25 +18816,15 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="50fb-f90a-70ec-7649" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3139-1aa9-4b77-da26" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="0" field="9893-c379-920b-8982">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b703-f7ab-dac5-0ae4" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e9a1-490f-8679-fc4e" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="unit" childId="3139-1aa9-4b77-da26" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="unit" childId="50fb-f90a-70ec-7649" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -19384,7 +19416,7 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a22-d01f-ab5c-ec07" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5dd5-d00c-b150-34b9" shared="true" includeChildSelections="false"/>
-                <condition type="equalTo" value="1" field="selections" scope="unit" childId="8a69-56e2-c8dd-aade" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="unit" childId="d4a4-a3f7-f634-4632" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
