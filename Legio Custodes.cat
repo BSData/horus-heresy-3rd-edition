@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="acc1-f897-a117-9b4a" name="Legio Custodes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="20" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="Arkangelmark5" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
-    <selectionEntry type="unit" import="true" name="Constantin Valdor" hidden="false" id="9cbb-0abc-5c93-2afd" sortIndex="1">
+    <selectionEntry type="unit" import="true" name="Constantin Valdor" hidden="false" id="9cbb-0abc-5c93-2afd" sortIndex="1" page="5" publicationId="09c6-1c1d-03a7-9556">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Constantin Valdor" hidden="false" id="21e8-524a-2f12-1d95" publicationId="09c6-1c1d-03a7-9556" page="5">
           <categoryLinks>
@@ -100,6 +100,18 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab52-abeb-22ad-ae05-max" includeChildSelections="false"/>
               </constraints>
             </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="f728-6dc8-8feb-ff45" id="c830-86b8-4af3-b557" name="Misericordia">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c43a-34a1-4404-bcae"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bdc-5839-46ef-ac3d"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="bd7b-1511-997a-f275" id="78ef-1a7a-455c-bd2c" name="Arae-shrike">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="21ce-9750-494c-ac42"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb19-756d-4912-9260"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="184b-99f1-2d66-24d2-min" includeChildSelections="false"/>
@@ -139,10 +151,16 @@ Furthermore, if a Model with this Special Rule is part of an Army, then once per
               <comment>3</comment>
             </infoLink>
           </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <comment>warning: !BSC 20250828-1757
+Could not find wargear The Apollonian Spear
+	 Checked under The Apollonian Spear</comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="400"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="400"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -152,6 +170,29 @@ Furthermore, if a Model with this Special Rule is part of an Army, then once per
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dff5-0b48-9001-c96a" includeChildSelections="false" includeChildForces="true"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0a1-1f71-54ff-462f" includeChildSelections="false"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="d13e-bbc2-4c5e-9b9d">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (4)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Eternal Warrior (X)" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3" id="41e6-6c74-4c2a-b16c">
+          <modifiers>
+            <modifier type="set" field="name" value="Eternal Warrior (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Hatred (X)" hidden="false" type="rule" targetId="0612-95d5-46ae-c5ee" id="40f3-9137-4e01-ad25">
+          <modifiers>
+            <modifier type="set" field="name" value="Hatred (Paragon)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Master of the Golden Legion" hidden="false" type="rule" targetId="e26b-8a00-4b2f-112a" id="e32b-9a77-4bc0-b56b"/>
+        <infoLink name="Vanguard (X)" hidden="false" type="rule" targetId="530f-b733-993c-ec84" id="83b5-3d10-4f16-8096">
+          <modifiers>
+            <modifier type="set" field="name" value="Vanguard (3)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Misericordia" hidden="false" id="e15c-465c-8a7a-7e34">
       <profiles>
@@ -1318,7 +1359,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
         <infoLink name="Template" id="66a0-f12a-f23a-0346" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Tribune" hidden="false" id="2aca-4d81-bede-c87f" sortIndex="2">
+    <selectionEntry type="unit" import="true" name="Tribune" hidden="false" id="2aca-4d81-bede-c87f" sortIndex="2" page="6" publicationId="09c6-1c1d-03a7-9556">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Tribune" hidden="false" id="f7ac-ac2f-568c-4d41" publicationId="09c6-1c1d-03a7-9556" page="6" sortIndex="1">
           <constraints>
@@ -1394,6 +1435,62 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6647-3814-0649-0c12" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have its sentinel warblade exchanged for one of the following:" id="57e4-1496-4058-a1f3">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="e50e-bfd0-7701-9a40" id="4877-0055-4d8a-ba95" name="Sentinel warblade">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c67-a83b-4a95-b181"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="2198-40e9-0a3f-00fd" id="0080-10c2-406b-a472" name="Paragon spear">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="783a-252b-43e5-85ee"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="e494-975f-f50d-86b3" id="833b-7396-4877-89c1" name="Adrasite spear">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df2d-5a5c-4847-85a5"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="faf5-156a-102d-5074" id="a484-e80f-4d13-aad4" name="Pyrithite spear">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4980-5185-4186-b01b"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="1881-a2b5-fc58-4270" id="b172-f89a-4c00-9883" name="Paragon blade">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5785-0cb2-40ed-a92c"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="20ad-2317-4d8e-bd92"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have one Praesidium shield selected for it for +5 Points." id="836e-c9eb-404e-92ea">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="90fb-50b1-d149-f233" id="e68f-eaaa-463c-9177" name="Praesidium Shield">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78d7-dfa2-484f-b9e1"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0aa7-96c9-4b27-8b4f"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Praesidium Shield" hidden="false" id="6be8-6f59-9ffe-142d" type="selectionEntry" targetId="7148-e1ac-796f-b6f8" sortIndex="2">
@@ -1415,6 +1512,18 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="33c8-0272-4f46-772a-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33c8-0272-4f46-772a-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="f728-6dc8-8feb-ff45" id="356a-f8cb-4458-a410" name="Misericordia">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3273-ed33-4042-b7dd"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96ee-f1ec-4fe4-885c"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="bd7b-1511-997a-f275" id="425c-04b0-477a-9a50" name="Arae-shrike">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="54c2-acf6-4d1f-94fc"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2da-6f95-41b7-af49"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -1439,6 +1548,9 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
             </infoLink>
             <infoLink name="Lightning Blows" id="457c-9d05-b81e-9165" hidden="false" type="rule" targetId="9f68-a519-8e29-cb44"/>
           </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
@@ -1449,7 +1561,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
         </modifier>
       </modifiers>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="250"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="250"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
@@ -1461,10 +1573,28 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
         </entryLink>
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="e19f-3fe3-9672-801a" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="2"/>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="6140-e0ab-4348-a16f">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Eternal Warrior (X)" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3" id="faca-ea3c-4f18-a70a">
+          <modifiers>
+            <modifier type="set" field="name" value="Eternal Warrior (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Lightning Blows" hidden="false" type="rule" targetId="9f68-a519-8e29-cb44" id="9f07-57f8-452c-9a19"/>
+        <infoLink name="Vanguard (X)" hidden="false" type="rule" targetId="530f-b733-993c-ec84" id="72ea-5263-4070-9859">
+          <modifiers>
+            <modifier type="set" field="name" value="Vanguard (3)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Shield Captain" hidden="false" id="ead9-2ff9-9301-8c60" sortIndex="3">
+    <selectionEntry type="unit" import="true" name="Shield Captain" hidden="false" id="ead9-2ff9-9301-8c60">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Shield Captain" hidden="false" id="38a6-4b0b-0b3a-c32e" publicationId="09c6-1c1d-03a7-9556" page="6" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Shield Captain" hidden="false" id="38a6-4b0b-0b3a-c32e" publicationId="09c6-1c1d-03a7-9556" page="7" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1bba-c165-0f7e-92f6" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="025c-ac98-dfc8-05b9" includeChildSelections="false"/>
@@ -1478,7 +1608,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
                 <characteristic name="S" typeId="498f-dce1-59fd-d8d7">5</characteristic>
                 <characteristic name="T" typeId="3120-8275-e537-ecd2">5</characteristic>
-                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">5</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">3</characteristic>
                 <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
                 <characteristic name="A" typeId="024e-bdb1-7982-25a0">4</characteristic>
                 <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">10</characteristic>
@@ -1555,6 +1685,77 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb25-4f41-b313-1edb" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have its sentinel warblade exchanged for one of the following:" id="844c-dd38-4523-aed4">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="e50e-bfd0-7701-9a40" id="629e-cd98-41c5-9c56" name="Sentinel warblade">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd00-b113-44cc-9786"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="2198-40e9-0a3f-00fd" id="6ba6-651e-4c5a-8e81" name="Paragon spear">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f426-0b10-4a7a-893c"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="e494-975f-f50d-86b3" id="2a16-c7cd-43af-8e9d" name="Adrasite spear">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f375-c150-48dc-8c92"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="faf5-156a-102d-5074" id="708f-215f-474f-8c21" name="Pyrithite spear">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3326-2dfb-4cff-b64a"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="1881-a2b5-fc58-4270" id="0eb6-1b6f-4e34-ae3f" name="Paragon blade">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e41-60f7-4331-b6cd"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="536b-aac5-4f4a-a71d"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have one Praesidium shield selected for it for +5 Points." id="2a24-35de-4ff0-8512">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="90fb-50b1-d149-f233" id="2adb-a928-4715-a6fc" name="Praesidium Shield">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da7f-98a7-4940-b5fa"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fe9-eeb0-4013-bfcc"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have one arae-shrike selected for it for +50 Points." id="5265-7b97-4ccb-a05f">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="bd7b-1511-997a-f275" id="b624-23a6-45d7-9420" name="Arae-shrike">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d9b-f715-46af-9caa"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7dba-ce1e-4f68-98f7"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Arae-shrike" hidden="false" id="e177-c1a9-4db7-ef28" type="selectionEntry" targetId="76f5-a747-71df-6d54" sortIndex="4">
@@ -1579,6 +1780,12 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dbb0-a09c-434f-d734-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbb0-a09c-434f-d734-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="f728-6dc8-8feb-ff45" id="a7c2-61c6-4402-8be1" name="Misericordia">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0f48-1a11-4b72-8219"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af11-4a67-4f31-adfc"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -1609,10 +1816,13 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
               <comment>2</comment>
             </infoLink>
           </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="175"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="175"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -1628,16 +1838,39 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
       <categoryLinks>
         <categoryLink targetId="901a-6b71-7a29-4597" id="c522-20d7-bdf8-c420" primary="false" name="Officer of the Line (2)"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Officer of the Line (X)" hidden="false" type="rule" targetId="7779-47c8-99a8-b935" id="0fcd-c83d-443f-82fb">
+          <modifiers>
+            <modifier type="set" field="name" value="Officer of the Line (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="076d-fe73-429d-a83b">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Eternal Warrior (X)" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3" id="207f-8e1a-4ea5-a97a">
+          <modifiers>
+            <modifier type="set" field="name" value="Eternal Warrior (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Lightning Blows" hidden="false" type="rule" targetId="9f68-a519-8e29-cb44" id="0359-225c-4fad-ba68"/>
+        <infoLink name="Vanguard (X)" hidden="false" type="rule" targetId="530f-b733-993c-ec84" id="6dca-cb42-4adb-ad1e">
+          <modifiers>
+            <modifier type="set" field="name" value="Vanguard (3)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Aquilon Terminator Sodality" hidden="false" id="656a-8563-512a-01bd" sortIndex="4">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Aquilon Terminator" hidden="false" id="0a9c-4de9-e5a2-a87d">
+        <selectionEntry type="model" import="true" name="Aquilon Terminator" hidden="false" id="0a9c-4de9-e5a2-a87d" page="8" publicationId="09c6-1c1d-03a7-9556">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="2463-54ba-5753-32be" includeChildSelections="false"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="bd07-a397-ea03-f0ba" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="85"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -1677,12 +1910,64 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
                 <entryLink import="true" name="Solarite power talon" hidden="false" id="9bb2-824f-acdd-c9f9" type="selectionEntry" targetId="1a8f-2c53-ca51-f9fc" sortIndex="1"/>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Any Model in this Unit may have its infernus firepike exchanged for one of the following:" id="d872-e630-4d34-b5b2">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="7643-da68-4206-a565" id="8faf-a5d6-4479-9d6a" name="Infernus firepike">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dac2-9dc9-487f-ba40"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="6aa4-c192-4e50-959e" id="6393-1903-4f6e-99aa" name="Lastrum storm bolter">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90e3-bf1c-493d-9615"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="4a8b-616c-4b82-a9af" id="5ba8-feef-49eb-bc74" name="Adrathic combi-destructor">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="534c-3c82-4b27-abfb"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b8f-60d4-4e24-b980"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Any Model in this Unit may have its Solarite power talon exchanged for " id="3c65-7bef-47fd-9b26">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="7a9c-19a5-4312-8362" id="b019-ea29-4dd5-a95b" name="Solarite power talon">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f56-ea23-4e12-a30f"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="0391-fc26-407d-ba74" id="3e07-5878-42a7-bf79" name="Solarite power gauntlet">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb2d-548a-49ca-b1d7"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a27f-8b94-4e76-94cd"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e3a-aec2-4465-8c7b"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Misericordia" hidden="false" id="ae8b-921c-bbff-22a0" type="selectionEntry" targetId="e15c-465c-8a7a-7e34" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ec4-be0e-e5e4-a066-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ec4-be0e-e5e4-a066-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="f728-6dc8-8feb-ff45" id="07fc-31e7-496a-8015" name="Misericordia">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d0d1-6ca1-4437-94b0"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd1c-226f-445f-be58"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -1755,6 +2040,27 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="eac9-ba78-464b-8af2">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (3)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Eternal Warrior (X)" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3" id="5b3a-6775-49f9-91b8">
+          <modifiers>
+            <modifier type="set" field="name" value="Eternal Warrior (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="d85b-9124-41a9-b50a"/>
+        <infoLink name="Vanguard (X)" hidden="false" type="rule" targetId="530f-b733-993c-ec84" id="918e-556a-4d90-92f5">
+          <modifiers>
+            <modifier type="set" field="name" value="Vanguard (3)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Custodian Guard Sodality" hidden="false" id="3125-22d7-c723-2737" sortIndex="5">
       <selectionEntries>
@@ -1764,7 +2070,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
             <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="ca7a-da42-160d-45b6" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="45"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -1799,12 +2105,58 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Any Model in this Unit may have its guardian spear exchanged for one of the following:" id="e4b3-f843-4977-a106">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="f11a-9969-7f94-2ea8" id="b836-9b68-4bbe-8d47" name="Guardian spear">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a0b-c81f-484f-8273"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="e494-975f-f50d-86b3" id="5fc7-d0ca-48f2-baed" name="Adrasite spear">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e34-b524-4bee-8b3b"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="faf5-156a-102d-5074" id="ee27-ecbf-4350-84d5" name="Pyrithite spear">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a852-5200-44b4-bf2b"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="163a-f70b-4c25-952f"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="One Custodian Guard in this Unit may have its guardian spear exchanged for " id="0c41-3caf-4d14-bf2d">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="55d9-d0c9-37bb-eeb2" id="4891-92d9-4c1e-aac7" name="Magisterium Vexilla">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4823-8f0b-4f4c-816d"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dedc-e9c8-4217-9c3b"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Misericordia" hidden="false" id="ac35-2762-500a-662c" type="selectionEntry" targetId="e15c-465c-8a7a-7e34" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eee4-ea66-f439-6c96-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eee4-ea66-f439-6c96-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="f728-6dc8-8feb-ff45" id="2d73-02e1-45a9-8d5d" name="Misericordia">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e30c-4484-4fe5-bdce"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3d1-28fd-4f6a-98b4"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -1877,6 +2229,31 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="8507-224b-4b51-b71a">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Eternal Warrior (X)" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3" id="f46c-e704-411b-8e9f">
+          <modifiers>
+            <modifier type="set" field="name" value="Eternal Warrior (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Lightning Blows" hidden="false" type="rule" targetId="9f68-a519-8e29-cb44" id="502b-0686-4991-80bb"/>
+        <infoLink name="Vanguard (X)" hidden="false" type="rule" targetId="530f-b733-993c-ec84" id="dd1b-5cad-4563-8ba0">
+          <modifiers>
+            <modifier type="set" field="name" value="Vanguard (2)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <comment>warning: !BSC 20250828-1757
+Shared on model level not yet implemented for One Custodian Guard in this Unit may have its guardian spear exchanged for
+Guardian spear is in two option lists for Custodian Guard, you will need to combine them by hand.
+Exchange was not applied on One Custodian Guard in this Unit may have its guardian spear exchanged for </comment>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sagittarum Guard Sodality" hidden="false" id="80ef-8ed2-2cc2-262f" sortIndex="7">
       <selectionEntries>
@@ -1886,7 +2263,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
             <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="b5fc-52bb-5f57-fa12" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="40"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -1911,12 +2288,36 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup name="One Sagittarum Guard in this Unit may have its Adrastus bolt caliver exchanged for " id="0620-dde4-4968-83df">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="a84d-b59a-b5c0-d286" id="297a-e2aa-4022-a0ab" name="Adrastus bolt caliver">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11d1-087f-4e8e-a80d"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="55d9-d0c9-37bb-eeb2" id="6d02-3e75-4a4d-bd14" name="Magisterium Vexilla">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d27e-7d6b-462c-8fcb"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d5f9-a709-45f8-9daa"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6da9-9882-4e7f-8c46"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Misericordia" hidden="false" id="b6ac-73b1-9c49-47d2" type="selectionEntry" targetId="e15c-465c-8a7a-7e34" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d273-0063-570c-17da-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d273-0063-570c-17da-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="f728-6dc8-8feb-ff45" id="3470-b613-4d58-a324" name="Misericordia">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3e08-b026-4019-986a"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5081-ed38-4050-bd19"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -1951,7 +2352,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
                 <characteristic name="T" typeId="3120-8275-e537-ecd2">5</characteristic>
                 <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">2</characteristic>
                 <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
-                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">2</characteristic>
                 <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">10</characteristic>
                 <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">10</characteristic>
                 <characteristic name="WP" typeId="f714-1726-37d3-44df">8</characteristic>
@@ -1988,6 +2389,28 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="b6b7-7a03-4fc9-a4bb">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Eternal Warrior (X)" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3" id="2fc9-3559-496f-bcba">
+          <modifiers>
+            <modifier type="set" field="name" value="Eternal Warrior (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Vanguard (X)" hidden="false" type="rule" targetId="530f-b733-993c-ec84" id="02c8-4060-4fdd-a24e">
+          <modifiers>
+            <modifier type="set" field="name" value="Vanguard (2)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <comment>warning: !BSC 20250828-1757
+Shared on model level not yet implemented for One Sagittarum Guard in this Unit may have its Adrastus bolt caliver exchanged for </comment>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sentinel Guard Sodality" hidden="false" id="29e3-59e0-53e7-a5db" sortIndex="6">
       <selectionEntries>
@@ -1997,7 +2420,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
             <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="cb9a-eb25-4971-4649" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="40"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -2022,6 +2445,24 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup name="One Sentinel Guard in this Unit may have its sentinel warblade exchanged for " id="115a-11d6-4f18-9519">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="e50e-bfd0-7701-9a40" id="f5da-7cd9-4402-8d15" name="Sentinel warblade">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc22-79ec-4700-ba78"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="55d9-d0c9-37bb-eeb2" id="6442-93a4-43a5-b69c" name="Magisterium Vexilla">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="743a-a87c-4399-a46c"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="96e7-c054-4fa7-b3b2"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc8f-825d-4fba-97ae"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Praesidium Shield" hidden="false" id="21cf-3592-7d89-660e" type="selectionEntry" targetId="7148-e1ac-796f-b6f8" sortIndex="3">
@@ -2034,6 +2475,18 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3452-d3de-a407-bc44-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3452-d3de-a407-bc44-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="f728-6dc8-8feb-ff45" id="58c5-cf00-428a-847a" name="Misericordia">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a625-d936-4d2e-94f8"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="728c-70e0-4a41-8a85"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="90fb-50b1-d149-f233" id="17ad-1ef5-4439-bb6e" name="Praesidium Shield">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e28-3a12-459f-a427"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a2f-9296-48e7-8ccf"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -2106,6 +2559,29 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="855e-c0e5-47aa-953a">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Eternal Warrior (X)" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3" id="e205-b0ec-46ed-a79e">
+          <modifiers>
+            <modifier type="set" field="name" value="Eternal Warrior (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Lightning Blows" hidden="false" type="rule" targetId="9f68-a519-8e29-cb44" id="6528-0074-4f61-91db"/>
+        <infoLink name="Vanguard (X)" hidden="false" type="rule" targetId="530f-b733-993c-ec84" id="ac1e-11df-471e-96ed">
+          <modifiers>
+            <modifier type="set" field="name" value="Vanguard (2)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <comment>warning: !BSC 20250828-1757
+Shared on model level not yet implemented for One Sentinel Guard in this Unit may have its sentinel warblade exchanged for </comment>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Contemptor-Achillus Dreadnought" hidden="false" id="350c-637d-71de-9760" sortIndex="8">
       <selectionEntries>
@@ -2210,9 +2686,78 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e0f-03a3-a42b-3c41-max" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="model" name="Contemptor-Achillus" id="844d-ab89-420b-b1e2" page="12" publicationId="09c6-1c1d-03a7-9556">
+          <profiles>
+            <profile id="33ff-e9d5-4191-887e" name="Contemptor-Achillus" typeId="a76f-8e23-8c3e-166d">
+              <characteristics>
+                <characteristic typeId="a106-a779-d272-5e93" name="M">8</characteristic>
+                <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
+                <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">5</characteristic>
+                <characteristic typeId="498f-dce1-59fd-d8d7" name="S">8</characteristic>
+                <characteristic typeId="3120-8275-e537-ecd2" name="T">7</characteristic>
+                <characteristic typeId="f5cc-79a3-d302-cc1d" name="W">6</characteristic>
+                <characteristic typeId="af9d-7db8-dc95-71c1" name="I">4</characteristic>
+                <characteristic typeId="024e-bdb1-7982-25a0" name="A">5</characteristic>
+                <characteristic typeId="02ad-ebe6-86e7-9fd6" name="LD">12</characteristic>
+                <characteristic typeId="9cd1-0e7c-2cd6-5f2f" name="CL">10</characteristic>
+                <characteristic typeId="f714-1726-37d3-44df" name="WP">9</characteristic>
+                <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">5</characteristic>
+                <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">2+</characteristic>
+                <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
+                <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Walker</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <constraints/>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="abba-4813-fb87-e597" id="0a37-7360-4ecc-8d97" name="Achillus dreadspear">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="22f5-33a0-401b-a774"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f414-f96b-4849-836a"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="41f3-2c27-499a-be4b" id="0ab0-3703-4758-82ca" name="Infernus incinerator">
+              <modifiers>
+                <modifier type="set" field="name" value="Two infernus incinerators"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="70b6-6ca9-45c3-a205"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f77-ecc9-498e-86dc"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Each of this Model’s infernus incinerators may be exchanged for one of the following:" id="0186-2e5a-4d57-9d37">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="6aa4-c192-4e50-959e" id="6a92-5ac1-4556-a8db" name="Lastrum storm bolter">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7502-30b5-4a32-a23f"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="4a8b-616c-4b82-a9af" id="bf7d-5ecb-4c69-bafc" name="Adrathic combi-destructor">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbe0-da1e-4b42-8025"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f420-7cd7-4266-9ee1"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="38d4-d720-8009-acd3" id="a7c8-7776-4f89-85bd" primary="false" name="Walker Model Type"/>
+          </categoryLinks>
+        </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="250"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="250"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -2227,8 +2772,34 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
       </entryLinks>
       <infoLinks>
         <infoLink name="Smokescreen" id="fa42-8767-e2bf-ca1f" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
-        <infoLink name="Smokescreen" id="2122-12ea-1137-ca62" hidden="false" type="profile" targetId="999b-689a-4ee7-8901"/>
+        <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="4654-6587-4912-99cc">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (6)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Eternal Warrior (X)" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3" id="4d60-303c-479b-80a0">
+          <modifiers>
+            <modifier type="set" field="name" value="Eternal Warrior (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Explodes (X)" hidden="false" type="rule" targetId="da5b-b871-20da-3e70" id="9986-8592-44e0-a754">
+          <modifiers>
+            <modifier type="set" field="name" value="Explodes (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="87d7-4a58-412a-be77"/>
+        <infoLink name="Lightning Blows" hidden="false" type="rule" targetId="9f68-a519-8e29-cb44" id="9872-33db-4723-8f55"/>
+        <infoLink name="Vanguard (X)" hidden="false" type="rule" targetId="530f-b733-993c-ec84" id="93da-8a89-463a-b31e">
+          <modifiers>
+            <modifier type="set" field="name" value="Vanguard (2)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
+      <comment>warning: !BSC 20250828-1757
+Could not find profile for Contemptor-Achillus Dreadnought in [&apos;Contemptor-Achillus&apos;]
+
+The option &apos;Lastrum storm bolter&apos; may need a &apos;multiply by number of models&apos; modifier
+The option &apos;Adrathic combi-destructor&apos; may need a &apos;multiply by number of models&apos; modifier</comment>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Contemptor-Galatus Dreadnought" hidden="false" id="5c1e-b656-3a3f-5014" sortIndex="9">
       <selectionEntries>
@@ -2336,9 +2907,53 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
+        <selectionEntry type="model" name="Contemptor-Galatus" id="2708-2b91-4c99-9210" page="13" publicationId="09c6-1c1d-03a7-9556">
+          <profiles>
+            <profile id="a245-b0be-424c-ab69" name="Contemptor-Galatus" typeId="a76f-8e23-8c3e-166d">
+              <characteristics>
+                <characteristic typeId="a106-a779-d272-5e93" name="M">8</characteristic>
+                <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
+                <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">5</characteristic>
+                <characteristic typeId="498f-dce1-59fd-d8d7" name="S">8</characteristic>
+                <characteristic typeId="3120-8275-e537-ecd2" name="T">7</characteristic>
+                <characteristic typeId="f5cc-79a3-d302-cc1d" name="W">6</characteristic>
+                <characteristic typeId="af9d-7db8-dc95-71c1" name="I">4</characteristic>
+                <characteristic typeId="024e-bdb1-7982-25a0" name="A">5</characteristic>
+                <characteristic typeId="02ad-ebe6-86e7-9fd6" name="LD">12</characteristic>
+                <characteristic typeId="9cd1-0e7c-2cd6-5f2f" name="CL">10</characteristic>
+                <characteristic typeId="f714-1726-37d3-44df" name="WP">9</characteristic>
+                <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">5</characteristic>
+                <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">2+</characteristic>
+                <characteristic typeId="a951-a772-7ce0-0b64" name="INV">4+</characteristic>
+                <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Walker</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <constraints/>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="3f3c-a971-6355-8329" id="ad48-429e-4887-9d22" name="Galatus warblade">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a2e-7cc7-4358-9b1a"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9da-45b1-4ffe-91f3"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="3e44-2761-9835-05cc" id="4712-44dd-4312-bed0" name="Gravis Praesidium Shield">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e05-7f54-4bbd-b969"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bb2-1fc7-49f5-b106"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink targetId="38d4-d720-8009-acd3" id="158a-6a0f-4fd7-ae17" primary="false" name="Walker Model Type"/>
+          </categoryLinks>
+        </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="225"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="225"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -2353,10 +2968,34 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
       </entryLinks>
       <infoLinks>
         <infoLink name="Smokescreen" id="c56d-ab3d-5666-5a99" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
-        <infoLink name="Smokescreen" id="55eb-65c8-cfaf-00d8" hidden="false" type="profile" targetId="999b-689a-4ee7-8901"/>
         <infoLink name="Shield" id="6a21-9c60-5d3d-9b44" hidden="false" type="profile" targetId="1af7-07d5-7558-0b64"/>
         <infoLink name="Shieldwall!" id="e644-56f1-0408-8a14" hidden="false" type="profile" targetId="e70e-0849-1ca6-81d6"/>
+        <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="6ac6-27a2-45eb-a590">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (6)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Eternal Warrior (X)" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3" id="5871-9536-4fb5-b703">
+          <modifiers>
+            <modifier type="set" field="name" value="Eternal Warrior (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Explodes (X)" hidden="false" type="rule" targetId="da5b-b871-20da-3e70" id="54fe-8913-40cd-a103">
+          <modifiers>
+            <modifier type="set" field="name" value="Explodes (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="5fef-acfe-4600-8c2b"/>
+        <infoLink name="Lightning Blows" hidden="false" type="rule" targetId="9f68-a519-8e29-cb44" id="d1a5-f85b-445a-be6b"/>
+        <infoLink name="Vanguard (X)" hidden="false" type="rule" targetId="530f-b733-993c-ec84" id="86bb-18b4-402a-b9bc">
+          <modifiers>
+            <modifier type="set" field="name" value="Vanguard (2)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
+      <comment>warning: !BSC 20250828-1757
+Could not find profile for Contemptor-Galatus Dreadnought in [&apos;Contemptor-Galatus&apos;]
+</comment>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Telemon Heavy Dreadnought" hidden="false" id="6132-aa94-be29-dedb" sortIndex="10">
       <selectionEntries>
@@ -2529,9 +3168,55 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
+        <selectionEntry type="model" name="Telemon" id="35cc-35be-446d-ad3c" page="14" publicationId="09c6-1c1d-03a7-9556">
+          <profiles>
+            <profile id="722e-0a8a-4b92-9870" name="Telemon" typeId="a76f-8e23-8c3e-166d">
+              <characteristics>
+                <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
+                <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
+                <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">5</characteristic>
+                <characteristic typeId="498f-dce1-59fd-d8d7" name="S">9</characteristic>
+                <characteristic typeId="3120-8275-e537-ecd2" name="T">8</characteristic>
+                <characteristic typeId="f5cc-79a3-d302-cc1d" name="W">8</characteristic>
+                <characteristic typeId="af9d-7db8-dc95-71c1" name="I">3</characteristic>
+                <characteristic typeId="024e-bdb1-7982-25a0" name="A">3</characteristic>
+                <characteristic typeId="02ad-ebe6-86e7-9fd6" name="LD">12</characteristic>
+                <characteristic typeId="9cd1-0e7c-2cd6-5f2f" name="CL">10</characteristic>
+                <characteristic typeId="f714-1726-37d3-44df" name="WP">9</characteristic>
+                <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">3</characteristic>
+                <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">2+</characteristic>
+                <characteristic typeId="a951-a772-7ce0-0b64" name="INV">4+</characteristic>
+                <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Walker (Heavy)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <constraints/>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="d56f-d2d4-4be9-9a72" id="f50e-0c99-49cd-b7da" name="Spiculus missile launcher">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d6b5-9921-4a6c-9949"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2534-5203-4c00-a57c"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="This Model must have one of the following options selected for it:" id="f4a0-fe20-41ae-83a2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22e4-8f2e-4e5e-8011"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="38d4-d720-8009-acd3" id="e889-55dc-42ee-9234" primary="false" name="Walker Model Type"/>
+            <categoryLink targetId="1e7d-9066-28d2-97a0" id="b335-de7e-4fb4-bdb4" primary="false" name="Heavy Model Sub-Type"/>
+          </categoryLinks>
+        </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="360"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="360"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -2546,7 +3231,65 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
       </entryLinks>
       <infoLinks>
         <infoLink name="Smokescreen" id="2583-4453-e185-d6c1" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
-        <infoLink name="Smokescreen" id="a35b-ac0f-7d52-9927" hidden="false" type="profile" targetId="999b-689a-4ee7-8901"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Two options from the following list:" id="04a0-e285-4599-ab25">
+          <comment>warning: !BSC 20250828-1757
+Could not find wargear Telemon caestus and one proteus plasma projector
+	 Checked under Telemon caestus and one proteus plasma projector</comment>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="45de-bc45-6cd8-fd54" id="03fc-19c3-4491-8f97" name="Arachnus storm cannon">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="875a-b2b6-4577-9849"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="6621-ec29-60aa-7e96" id="22be-5122-4097-836f" name="Iliastus accelerator culverin">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad0d-6bb8-4b93-ad64"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c9c-304b-49bb-bfb6"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <comment>warning: !BSC 20250828-1757
+Could not find wargear in Two options from the following list:
+Could not find profile for Telemon Heavy Dreadnought in [&apos;Telemon&apos;]
+
+The option &apos;Telemon caestus and one proteus plasma projector&apos; may need a &apos;multiply by number of models&apos; modifier
+The option &apos;Arachnus storm cannon&apos; may need a &apos;multiply by number of models&apos; modifier
+The option &apos;Iliastus accelerator culverin&apos; may need a &apos;multiply by number of models&apos; modifier
+Could not process option &apos;Paired Telemon caestus and two proteus plasma projectors �������������������������� +10 Points&apos;.</comment>
+      <infoLinks>
+        <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="8294-1ddd-4fd1-b0c2">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (8)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Eternal Warrior (X)" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3" id="5654-d246-4220-95db">
+          <modifiers>
+            <modifier type="set" field="name" value="Eternal Warrior (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Explodes (X)" hidden="false" type="rule" targetId="da5b-b871-20da-3e70" id="7bba-2217-490a-9b9e">
+          <modifiers>
+            <modifier type="set" field="name" value="Explodes (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="7a04-b131-47fe-808b"/>
+        <infoLink name="Vanguard (X)" hidden="false" type="rule" targetId="530f-b733-993c-ec84" id="0f58-4e96-4780-83d8">
+          <modifiers>
+            <modifier type="set" field="name" value="Vanguard (2)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Coronus Grav-Carrier" hidden="false" id="40df-cbd0-f144-ccdb" sortIndex="11">
@@ -2607,9 +3350,54 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
             </infoLink>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="model" name="Coronus Grav-carrier" id="487f-da7f-4694-b6dc" page="15" publicationId="09c6-1c1d-03a7-9556">
+          <profiles>
+            <profile id="a849-bc67-4aa5-88cc" name="Coronus Grav-carrier" typeId="2a80-eec8-a736-2fe3">
+              <characteristics>
+                <characteristic typeId="d624-72fe-0205-4443" name="M">12</characteristic>
+                <characteristic typeId="a17e-8e7d-d21f-c138" name="BS">5</characteristic>
+                <characteristic typeId="6536-e73d-4a74-c675" name="Front Armour">13</characteristic>
+                <characteristic typeId="f03a-18a7-8586-273d" name="Side Armour">13</characteristic>
+                <characteristic typeId="ec84-1f5d-1bb3-6826" name="Rear Armour">11</characteristic>
+                <characteristic typeId="8735-4497-1f8a-4dda" name="HP">8</characteristic>
+                <characteristic typeId="a82e-858c-9aa9-2b43" name="Transport Capacity">12</characteristic>
+                <characteristic typeId="827f-9ce2-2118-e134" name="Type">Vehicle (Antigrav, Transport)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <constraints/>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="0a09-48e6-5e80-519d" id="b003-7c16-49cc-8f17" name="Twin Arachnus blaze cannon">
+              <modifiers>
+                <modifier type="set" field="name" value="Turret Mounted twin Arachnus blaze cannon"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2786-8af5-4aab-9547"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f06-6b22-46ab-8ef0"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="f533-e022-4e51-aa4e" id="1aa8-9379-4ddc-bba4" name="Twin Lastrum bolt cannon">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Front) Mounted twin Lastrum bolt cannon"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e79a-2706-420b-a3b3"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9666-efcc-4502-9d9c"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="fbd5-e303-4f46-810a" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="c504-9dfa-35d3-c98f" id="800e-6f60-4350-b7da" primary="false" name="Antigrav Model Sub-Type"/>
+            <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="3add-f113-4446-a5de" primary="false" name="Transport Model Sub-Type"/>
+          </categoryLinks>
+        </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="180"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="180"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -2622,6 +3410,23 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Assault Vehicle" hidden="false" type="rule" targetId="150c-16e6-1212-9f75" id="6ce3-444f-412d-9d16"/>
+        <infoLink name="Auto-Repair (X)" hidden="false" type="rule" targetId="3973-ed50-1482-ff4a" id="43ad-460c-45ed-aa67">
+          <modifiers>
+            <modifier type="set" field="name" value="Auto-repair (3+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deep Strike" hidden="false" type="rule" targetId="0553-d06b-52b9-34db" id="7b80-ecb2-42da-a836"/>
+        <infoLink name="Explodes (X)" hidden="false" type="rule" targetId="da5b-b871-20da-3e70" id="6f09-9085-4087-910f">
+          <modifiers>
+            <modifier type="set" field="name" value="Explodes (6+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <comment>warning: !BSC 20250828-1757
+Could not find profile for Coronus Grav-Carrier in [&apos;Coronus Grav-carrier&apos;]
+</comment>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Venatari Sodality" hidden="false" id="6387-bce6-8417-20fa" sortIndex="12">
       <selectionEntries>
@@ -2631,7 +3436,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="011b-c923-8a7a-3ef7" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="55"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -2677,12 +3482,41 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Any Model in this Unit may have its kinetic destroyer and tarsus buckler exchanged for " id="f751-4c80-4bc8-ab90">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="c9e4-4394-ee06-867c" id="8a36-0bab-400a-8117" name="Tarsus Buckler">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1b4-4a88-425d-9a4c"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="199c-e5b7-4cb6-b458" id="3fbd-0cc9-46be-802a" name="Kinetic destroyer">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f21-ac6f-466b-ad78"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="eaa3-83c1-501a-d615" id="e152-af6a-4206-ac60" name="Venatari lance">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4284-9050-49a0-9ccb"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aeea-c11a-4d13-a9c1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92ae-b8b2-485a-a5ce"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Misericordia" hidden="false" id="748b-09cd-aa67-9752" type="selectionEntry" targetId="e15c-465c-8a7a-7e34" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5281-0503-36d5-ca67" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23ca-2857-a59e-b228" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="f728-6dc8-8feb-ff45" id="2de8-bdd4-416e-8ee6" name="Misericordia">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82b0-7f43-4c0d-937c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f941-4e35-49d0-990b"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -2757,16 +3591,39 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="067b-3f07-4da0-b902">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (3)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deep Strike" hidden="false" type="rule" targetId="0553-d06b-52b9-34db" id="cd33-1c4a-4ab1-8152"/>
+        <infoLink name="Eternal Warrior (X)" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3" id="f450-312b-4565-a1c7">
+          <modifiers>
+            <modifier type="set" field="name" value="Eternal Warrior (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Firestorm" hidden="false" type="rule" targetId="3ed1-c5b3-a98d-1b12" id="1bcf-a6c6-4d7f-b3ce"/>
+        <infoLink name="Outflank" hidden="false" type="rule" targetId="92d2-cc57-1ef6-a712" id="6012-189a-472f-b223"/>
+        <infoLink name="Vanguard (X)" hidden="false" type="rule" targetId="530f-b733-993c-ec84" id="fced-59f1-4fd7-84b7">
+          <modifiers>
+            <modifier type="set" field="name" value="Vanguard (3)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Gyrfalcon Jetbike Sodality" hidden="false" id="5494-8bdd-6978-8d32" sortIndex="13">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Gyrfalcon Agamatus" hidden="false" id="5436-c673-abd7-c08b">
+        <selectionEntry type="model" import="true" name="Gyrfalcon Agamatus" hidden="false" id="5436-c673-abd7-c08b" page="17" publicationId="09c6-1c1d-03a7-9556">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="0676-aec8-527e-f5b9" includeChildSelections="false"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="99a7-d2f5-1bff-4c39" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="70"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -2796,12 +3653,46 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
                 <entryLink import="true" name="Lastrum bolt cannon" hidden="false" id="5e27-6de5-c561-688b" type="selectionEntry" targetId="5256-456a-6818-29d1" sortIndex="1"/>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Any model in this Unit may have its lastrum bolt cannon exchanged for one of the following:" id="0d52-cb38-4de3-86c9">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="1cdd-d4a3-4cec-8827" id="f519-a8b0-4fa4-bd28" name="Lastrum bolt cannon">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aaae-a4eb-4186-8435"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="df83-a8a2-41aa-b293" id="06ef-8430-473f-8963" name="Adrathic devastator">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46cb-1177-46d4-abde"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="d391-845a-4e28-ac58" id="d969-a816-4af6-904f" name="Twin Corvae las-pulser">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f704-76ac-4bde-801d"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dcd0-6154-428f-aaec"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Solarite power lance" hidden="false" id="521a-f0e5-32ac-529d" type="selectionEntry" targetId="1de9-1b06-e9a4-9d44" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0eae-910e-6fd8-b236" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c8f-b980-ab1c-fec0" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="f728-6dc8-8feb-ff45" id="0398-6e1b-4195-9cfb" name="Misericordia">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f51d-4819-4901-ba73"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7018-9c49-40dc-a0d2"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -2837,7 +3728,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
                 <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
                 <characteristic name="S" typeId="498f-dce1-59fd-d8d7">5</characteristic>
                 <characteristic name="T" typeId="3120-8275-e537-ecd2">5</characteristic>
-                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">2</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">3</characteristic>
                 <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
                 <characteristic name="A" typeId="024e-bdb1-7982-25a0">2</characteristic>
                 <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">10</characteristic>
@@ -2876,6 +3767,29 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="f8d1-0a1c-49e8-8d89">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (5)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deep Strike" hidden="false" type="rule" targetId="0553-d06b-52b9-34db" id="ef48-cabe-4e11-8b3a"/>
+        <infoLink name="Eternal Warrior (X)" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3" id="dbc1-34cc-451b-80bb">
+          <modifiers>
+            <modifier type="set" field="name" value="Eternal Warrior (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="c0d8-30ef-4085-a4c4"/>
+        <infoLink name="Outflank" hidden="false" type="rule" targetId="92d2-cc57-1ef6-a712" id="572e-1586-4b1b-9ea9"/>
+        <infoLink name="Vanguard (X)" hidden="false" type="rule" targetId="530f-b733-993c-ec84" id="aeb1-6ff8-4eea-ae11">
+          <modifiers>
+            <modifier type="set" field="name" value="Vanguard (3)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Pallas Grav-Attack" hidden="false" id="cdf4-0738-9331-095c" sortIndex="14">
       <selectionEntries>
@@ -2928,9 +3842,45 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
             </infoLink>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="model" name="Pallas Grav-attack" id="6e74-fddc-414f-938a" page="18" publicationId="09c6-1c1d-03a7-9556">
+          <profiles>
+            <profile id="b6d6-4bce-40e4-b6bc" name="Pallas Grav-attack" typeId="2a80-eec8-a736-2fe3">
+              <characteristics>
+                <characteristic typeId="d624-72fe-0205-4443" name="M">16</characteristic>
+                <characteristic typeId="a17e-8e7d-d21f-c138" name="BS">5</characteristic>
+                <characteristic typeId="6536-e73d-4a74-c675" name="Front Armour">12</characteristic>
+                <characteristic typeId="f03a-18a7-8586-273d" name="Side Armour">11</characteristic>
+                <characteristic typeId="ec84-1f5d-1bb3-6826" name="Rear Armour">11</characteristic>
+                <characteristic typeId="8735-4497-1f8a-4dda" name="HP">4</characteristic>
+                <characteristic typeId="a82e-858c-9aa9-2b43" name="Transport Capacity">-</characteristic>
+                <characteristic typeId="827f-9ce2-2118-e134" name="Type">Vehicle (Antigrav, Rapid)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <constraints/>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="0a09-48e6-5e80-519d" id="c599-0492-4e31-a6ce" name="Twin Arachnus blaze cannon">
+              <modifiers>
+                <modifier type="set" field="name" value="Centreline Mounted twin Arachnus blaze cannon"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a80f-a8bd-46f9-85d3"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8381-12fa-4424-aa40"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="b56e-e143-4d07-83ba" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="c504-9dfa-35d3-c98f" id="13d0-650f-4f06-8a4a" primary="false" name="Antigrav Model Sub-Type"/>
+            <categoryLink targetId="a5c6-b359-cecb-e0b1" id="f4a1-f72d-4509-9df3" primary="false" name="Rapid Sub-Type"/>
+          </categoryLinks>
+        </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="110"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="110"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -2943,6 +3893,22 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Auto-Repair (X)" hidden="false" type="rule" targetId="3973-ed50-1482-ff4a" id="e7e0-415e-4991-955d">
+          <modifiers>
+            <modifier type="set" field="name" value="Auto-repair (3+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deep Strike" hidden="false" type="rule" targetId="0553-d06b-52b9-34db" id="dc53-7f6e-4137-a248"/>
+        <infoLink name="Explodes (X)" hidden="false" type="rule" targetId="da5b-b871-20da-3e70" id="db1c-2712-4226-90e3">
+          <modifiers>
+            <modifier type="set" field="name" value="Explodes (6+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <comment>warning: !BSC 20250828-1757
+Could not find profile for Pallas Grav-Attack in [&apos;Pallas Grav-attack&apos;]
+</comment>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Caladius Grav-Tank" hidden="false" id="3cc2-9a68-9bc0-b695" sortIndex="15">
       <selectionEntries>
@@ -3011,9 +3977,74 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
+        <selectionEntry type="model" name="Caladius Grav-tank" id="d6c2-2a52-43f8-9c03" page="19" publicationId="09c6-1c1d-03a7-9556">
+          <profiles>
+            <profile id="8486-9e28-41b4-be96" name="Caladius Grav-tank" typeId="2a80-eec8-a736-2fe3">
+              <characteristics>
+                <characteristic typeId="d624-72fe-0205-4443" name="M">14</characteristic>
+                <characteristic typeId="a17e-8e7d-d21f-c138" name="BS">5</characteristic>
+                <characteristic typeId="6536-e73d-4a74-c675" name="Front Armour">13</characteristic>
+                <characteristic typeId="f03a-18a7-8586-273d" name="Side Armour">13</characteristic>
+                <characteristic typeId="ec84-1f5d-1bb3-6826" name="Rear Armour">11</characteristic>
+                <characteristic typeId="8735-4497-1f8a-4dda" name="HP">7</characteristic>
+                <characteristic typeId="a82e-858c-9aa9-2b43" name="Transport Capacity">-</characteristic>
+                <characteristic typeId="827f-9ce2-2118-e134" name="Type">Vehicle (Antigrav, Rapid)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <constraints/>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="f533-e022-4e51-aa4e" id="a98e-a347-407c-a3bb" name="Twin Lastrum bolt cannon">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Front) Mounted twin lastrum bolt cannon"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="057e-e722-40dd-8bca"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8df6-3b2a-4fd4-9ca4"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="This Model may have its Turret Mounted twin Iliastus accelerator cannon exchanged for " id="0ee1-1fbd-4b97-9d90">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="5e1d-d2cf-aa7d-77da" id="6427-9c71-4cba-b759" name="Twin Iliastus accelerator cannon">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted twin Iliastus accelerator cannon"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1395-24e3-4894-90f6"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="04a1-a76a-7aa8-e604" id="b729-23e6-4a2f-ba3f" name="Twin Arachnus blaze carronade">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted twin Arachnus blaze carronade"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2956-6714-4234-8a39"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a12b-7c9e-4a3a-a139"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02e2-aeb2-4479-9400"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="e542-422a-4527-9d35" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="c504-9dfa-35d3-c98f" id="3326-4302-475c-8697" primary="false" name="Antigrav Model Sub-Type"/>
+            <categoryLink targetId="a5c6-b359-cecb-e0b1" id="cf09-72a1-4127-a5a2" primary="false" name="Rapid Sub-Type"/>
+          </categoryLinks>
+        </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="225"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="225"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -3026,10 +4057,26 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Auto-Repair (X)" hidden="false" type="rule" targetId="3973-ed50-1482-ff4a" id="470a-0fc1-473c-b35d">
+          <modifiers>
+            <modifier type="set" field="name" value="Auto-repair (3+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deep Strike" hidden="false" type="rule" targetId="0553-d06b-52b9-34db" id="030b-76bf-41e0-9eaf"/>
+        <infoLink name="Explodes (X)" hidden="false" type="rule" targetId="da5b-b871-20da-3e70" id="0afd-2a59-43ce-82d8">
+          <modifiers>
+            <modifier type="set" field="name" value="Explodes (6+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <comment>warning: !BSC 20250828-1757
+Could not find profile for Caladius Grav-Tank in [&apos;Caladius Grav-tank&apos;]
+</comment>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Orion Assault Dropship" hidden="false" id="0c29-b45c-d6e4-6a18" sortIndex="15">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Orion Assault Dropship" hidden="false" id="8954-6589-d463-6184">
+        <selectionEntry type="model" import="true" name="Orion Assault Dropship" hidden="false" id="8954-6589-d463-6184" page="20" publicationId="09c6-1c1d-03a7-9556">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1df2-ad09-cb9d-1e3c" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b67-23af-3440-84e2" includeChildSelections="false"/>
@@ -3067,6 +4114,9 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a34b-bb11-eeb4-4a25" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5755-3269-de02-9767" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" field="name" value="Centreline Mounted twin Arachnus blaze carronade"/>
+              </modifiers>
             </entryLink>
             <entryLink import="true" name="Spiculus heavy missile pod" hidden="false" id="2a3c-c532-af99-cc7d" type="selectionEntry" targetId="1859-643e-e1fa-7fa4" sortIndex="4">
               <constraints>
@@ -3092,23 +4142,53 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa30-b311-255f-fb4f" includeChildSelections="false"/>
               </constraints>
             </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="f533-e022-4e51-aa4e" id="2cc8-6228-49e5-b40a" name="Twin Lastrum bolt cannon">
+              <modifiers>
+                <modifier type="set" field="name" value="Two Hull (Front) Mounted twin lastrum bolt cannon"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c44-0daa-44bb-9fe8"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6a3-0178-4c97-beb2"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="add8-365f-43da-97ef" id="f2f4-5f26-4d97-ac07" name="Spiculus heavy missile pod">
+              <modifiers>
+                <modifier type="set" field="name" value="Two Hull (Front) Mounted spiculus heavy missile pods"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d9e9-214a-4475-a782"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0910-4acb-42ad-9994"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="0a6a-0e6c-887a-e8ed" id="a475-5823-4591-8edf" name="Eclipse Shield">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7182-dac0-4f6e-96e4"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="022c-c7eb-41db-8be0"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <infoLinks>
             <infoLink name="Assault Vehicle" id="6dd7-5ed3-f345-f2d3" hidden="false" type="rule" targetId="150c-16e6-1212-9f75"/>
           </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="600"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="600"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Assault Vehicle" hidden="false" type="rule" targetId="150c-16e6-1212-9f75" id="6b46-9c30-4336-a295"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ares Gunship" hidden="false" id="0c44-ab22-006f-ebf3" sortIndex="16">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Ares Gunship" hidden="false" id="4445-1fba-cbeb-b837">
+        <selectionEntry type="model" import="true" name="Ares Gunship" hidden="false" id="4445-1fba-cbeb-b837" page="21" publicationId="09c6-1c1d-03a7-9556">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a78f-b705-9384-756e" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ed3-b3db-a92e-a769" includeChildSelections="false"/>
@@ -3116,7 +4196,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
           <profiles>
             <profile name="Ares Gunship" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="b29a-331a-9f40-29bc">
               <characteristics>
-                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Transport, Super-heavy, Flyer)</characteristic>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Super-heavy, Flyer)</characteristic>
                 <characteristic name="M" typeId="d624-72fe-0205-4443">18</characteristic>
                 <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">5</characteristic>
                 <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">13</characteristic>
@@ -3139,13 +4219,21 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="a436-c7b4-0f36-c7a2" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="dbb6-a4c4-c66d-9132" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3993-a5cd-4c62-857a"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="052f-f70d-4830-ac4b"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" field="name" value="Centreline Mounted Arachnus magna-blaze cannon"/>
+              </modifiers>
             </entryLink>
             <entryLink import="true" name="Twin Arachnus storm carronade" hidden="false" id="4e0e-d26d-2dce-add7" type="selectionEntry" targetId="e836-2eb6-8a77-ced2" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3560-291f-e418-c548" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="038d-f9f1-b220-cf67" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" field="name" value="Centreline Mounted twin Arachnus storm carronade"/>
+              </modifiers>
             </entryLink>
             <entryLink import="true" name="Infernus firebomb clusters" hidden="false" id="368a-1f06-f58d-1d70" type="selectionEntry" targetId="ecac-ed33-b524-0aca" sortIndex="4">
               <constraints>
@@ -3165,16 +4253,31 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7141-a424-bcde-0872" includeChildSelections="false"/>
               </constraints>
             </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="0a6a-0e6c-887a-e8ed" id="9821-89ce-4f9c-a694" name="Eclipse Shield">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3405-25d0-4951-9588"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0095-42cc-41b3-9763"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <comment>warning: !BSC 20250828-1757
+Could not find wargear Two Centreline (Front, Rear) Mounted infernus firebomb clusters
+	 Checked under infernus firebomb cluster</comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="650"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="650"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
+      <infoLinks/>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: None</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>

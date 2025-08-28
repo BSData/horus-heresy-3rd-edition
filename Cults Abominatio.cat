@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="258b-97fb-2366-7348" name="Cults Abominatio" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="9" revision="2" authorName="m455954" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" type="catalogue">
   <sharedSelectionEntries>
-    <selectionEntry type="unit" import="true" name="Infernus Abomination" hidden="false" id="c66f-ea16-ec49-7a60">
+    <selectionEntry type="unit" import="true" name="Infernus Abomination" hidden="false" id="c66f-ea16-ec49-7a60" page="206" publicationId="5469-14da-d0a1-6092">
       <profiles>
         <profile name="Cults Abominatio" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="b193-839b-e642-afe4">
           <characteristics>
@@ -25,6 +25,23 @@
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="26ea-ee4b-b139-0e53" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Infiltrate (X)" hidden="false" type="rule" targetId="f330-254e-1a98-798a" id="bd1a-0944-4d67-956a">
+          <modifiers>
+            <modifier type="set" field="name" value="Infiltrate (9)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heedless" hidden="false" type="rule" targetId="a3f3-72c6-7e01-6cab" id="bb43-f19b-4424-b5ab"/>
+        <infoLink name="Move Through Cover" hidden="false" type="rule" targetId="44d9-f20d-00bf-dc98" id="a045-a151-4892-88b7"/>
+        <infoLink name="Shrouded (X)" hidden="false" type="rule" targetId="c7e7-3bad-3de0-d6cc" id="65a0-dca7-404d-ae77">
+          <modifiers>
+            <modifier type="set" field="name" value="Shrouded (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Fear (X)" hidden="false" type="rule" targetId="0ebc-0c92-2209-6393" id="572a-204f-42b3-a0cb">
+          <modifiers>
+            <modifier type="set" field="name" value="Fear (1)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -34,7 +51,7 @@
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Infernus Abomination" hidden="false" id="d54e-c919-0fe3-b4b2">
+        <selectionEntry type="model" import="true" name="Infernus Abomination" hidden="false" id="d54e-c919-0fe3-b4b2" page="206" publicationId="5469-14da-d0a1-6092">
           <profiles>
             <profile name="Infernus Abomination" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="9102-ecc1-b0f6-b3c0">
               <characteristics>
@@ -154,15 +171,25 @@ Osmeotic Regeneration: When this Gambit is selected, this Model’s Controlling 
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="061c-d0ec-f015-769e-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="061c-d0ec-f015-769e-max"/>
           </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <comment>warning: !BSC 20250828-1757
+Could not find wargear Boneshard spitter
+	 Checked under Boneshard spitter
+Could not find wargear Transmutative claw
+	 Checked under Transmutative claw</comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="120"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="120"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: Osmeotic Regeneration</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
