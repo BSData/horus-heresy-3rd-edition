@@ -298,16 +298,6 @@
     <categoryEntry name="Support - Castellax Battle Maniple or Thallax Cohort Unit only" id="0fd5-6d2d-e2cc-d22a" hidden="false">
       <comment>Solar Auxilia - Iron Tercio</comment>
     </categoryEntry>
-    <categoryEntry name="Troops - Tech-Priest unit only" id="3fda-dd8a-a6d5-b782" hidden="false">
-      <comment>Solar Auxilia - Iron Tercio</comment>
-    </categoryEntry>
-    <categoryEntry name="Support - Castellax Battle Maniple or Thallax Cohort Unit only" id="0fd5-6d2d-e2cc-d22a" hidden="false">
-      <comment>Solar Auxilia - Iron Tercio</comment>
-    </categoryEntry>
-    <categoryEntry name="Elites - Domitar Battle Maniple Only" id="826c-7b05-0f62-8b16" hidden="false"/>
-    <categoryEntry name="Support - Castellax Battle Maniple Only" id="61eb-11e2-1592-3161" hidden="false"/>
-    <categoryEntry name="Recon - Vorax Attack Maniple Only" id="0fb1-2125-2a33-b094" hidden="false"/>
-    <categoryEntry name="Fast Attack - Vulturax Stratos Squadron Only" id="7db9-74d1-6ba1-061e" hidden="false"/>
     <categoryEntry name="Master of Automata" id="43f5-bc69-29b9-2286" hidden="true">
       <constraints>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3fc2-eb91-c0cf-1c8c"/>
@@ -327,12 +317,6 @@
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Heavy Assault - Castellax Destructor Maniple only " id="d49e-048b-a8e2-ba52" hidden="false">
-      <comment>Solar Auxilia - Iron Tercio</comment>
-    </categoryEntry>
-    <categoryEntry name="Troops - Tech-Priest unit only" id="3fda-dd8a-a6d5-b782" hidden="false">
-      <comment>Solar Auxilia - Iron Tercio</comment>
-    </categoryEntry>
-    <categoryEntry name="Support - Castellax Battle Maniple or Thallax Cohort Unit only" id="0fd5-6d2d-e2cc-d22a" hidden="false">
       <comment>Solar Auxilia - Iron Tercio</comment>
     </categoryEntry>
     <categoryEntry name="Fortification Model Type" id="ae5b-4e74-db76-fa25" hidden="false">
@@ -756,7 +740,6 @@
             </categoryLink>
             <categoryLink name="Rewards of Treachery" hidden="false" id="2a0d-9fee-9c25-8560" targetId="fe7f-1287-4162-a65d"/>
             <categoryLink name="Master of Automata" hidden="false" id="c260-2ecb-3a86-a859" targetId="43f5-bc69-29b9-2286"/>
-            <categoryLink name="Clade Operative" hidden="false" id="2a0d-9fee-9c25-8560" targetId="335a-5a90-3b7c-c034"/>
             <categoryLink name="War-engine - Upgraded by The Iron-clad" hidden="false" id="0ef7-249a-c847-6970" targetId="d00a-e269-2ed3-8fc4"/>
             <categoryLink name="Lord of Automata" hidden="false" id="baa0-d32b-ce6d-4b86" targetId="3e59-3bcf-4bf8-d404"/>
             <categoryLink name="Cult Operative" hidden="false" id="5ae6-f873-2faf-1da0" targetId="4f71-897f-8ae1-303b"/>
@@ -17300,7 +17283,7 @@
               </conditionGroups>
               <comment>Mechanicum only</comment>
             </modifier>
-            <modifier type="set" value="1" field="8613-3ef7-c5b4-4ccb">
+            <modifier type="set" value="1" field="0d54-af57-44fa-bce3">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="7e6f-65f7-7535-9ffc" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
@@ -17595,8 +17578,8 @@
             </categoryLink>
           </categoryLinks>
           <constraints>
-            <constraint type="min" value="0" field="forces" scope="parent" shared="true" id="8613-3ef7-c5b4-4ccb" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="forces" scope="parent" shared="true" id="5df5-5821-ea4c-d0e1" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="forces" scope="parent" shared="true" id="0d54-af57-44fa-bce3" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="5df5-5821-ea4c-d0e2" includeChildSelections="false"/>
           </constraints>
         </forceEntry>
       </forceEntries>
@@ -19220,22 +19203,22 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
     </profile>
     <profile name="Shieldwall!" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="e70e-0849-1ca6-81d6">
       <characteristics>
-        <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reactive Player to gain a bonus to the Toughness Characteristic of Models in a Unit targeted by a Shooting Attack or Volley Attack if the majority of those Models have the Shield Trait.</characteristic>
-        <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Shieldwall! Reaction in the Shooting Phase, at the start of Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player, or at the start of Step 4 of a Charge declared by the Active Player.</characteristic>
-        <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Shieldwall! Reaction, this cost paid as soon as the declaration is made.</characteristic>
-        <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the target of the Shooting Attack or Charge that triggered the Reaction. This Unit must include a majority of Models with the ‘Shield’ Trait at the point when the Reaction is declared.</characteristic>
-        <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. The Active Player continues to resolve this Shooting Attack as normal.
-2. All Models in the Unit for which this Advanced Reaction is declared have their Toughness Characteristic modified by +1 for the duration of the Phase in which this Reaction was declared</characteristic>
+        <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reactive Player to gain a bonus to the Toughness Characteristic of Models in a Unit targeted by a Shooting Attack or Volley Attack if the majority of those Models have the Shield Trait.</characteristic>
+        <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Shieldwall! Reaction in the Shooting Phase, at the start of Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player, or at the start of Step 4 of a Charge declared by the Active Player.</characteristic>
+        <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Shieldwall! Reaction, this cost paid as soon as the declaration is made.</characteristic>
+        <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For a Shieldwall! Reaction, the Reacting Unit is always the Unit that was the target of the Shooting Attack or Charge that triggered the Reaction. This Unit must include a majority of Models with the ‘Shield’ Trait at the point when the Reaction is declared.</characteristic>
+        <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. The Active Player continues to resolve this Shooting Attack as normal.
+2. All Models in the Unit for which this Advanced Reaction is declared have their Toughness Characteristic modified by +1 for the duration of the Phase in which this Reaction was declared</characteristic>
       </characteristics>
     </profile>
     <profile name="Smokescreen" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="999b-689a-4ee7-8901">
       <characteristics>
-        <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reactive Player to gain Shrouded Damage Mitigation Rolls for a Model with the Smokescreen Trait.</characteristic>
-        <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Smokescreen Advanced Reaction in the Shooting Phase, at the start of Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player.</characteristic>
-        <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Smokescreen Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
-        <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For a Smokescreen Advanced Reaction, the Reacting Unit is always the Unit that was the target of the Shooting Attack that triggered the Advanced Reaction. This Unit must include a majority of Models with the Smokescreen Trait at the point where the Advanced Reaction is declared.</characteristic>
-        <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. The Active Player continues to resolve this Shooting Attack as normal.
-2. All Models in the Unit for which this Reaction was declared gain a 5+ Shrouded Damage Mitigation Test against any wounds, Penetrating Hits or Glancing Hits inflicted during any Shooting Attack made in the same Phase in which this Reaction was declared.</characteristic>
+        <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reactive Player to gain Shrouded Damage Mitigation Rolls for a Model with the Smokescreen Trait.</characteristic>
+        <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Smokescreen Advanced Reaction in the Shooting Phase, at the start of Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player.</characteristic>
+        <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Smokescreen Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+        <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For a Smokescreen Advanced Reaction, the Reacting Unit is always the Unit that was the target of the Shooting Attack that triggered the Advanced Reaction. This Unit must include a majority of Models with the Smokescreen Trait at the point where the Advanced Reaction is declared.</characteristic>
+        <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. The Active Player continues to resolve this Shooting Attack as normal.
+2. All Models in the Unit for which this Reaction was declared gain a 5+ Shrouded Damage Mitigation Test against any wounds, Penetrating Hits or Glancing Hits inflicted during any Shooting Attack made in the same Phase in which this Reaction was declared.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
