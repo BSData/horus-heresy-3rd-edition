@@ -6584,7 +6584,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0ba4-e22f-a834-5f65" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Elites - Cybernetica Only" hidden="false" id="9224-19ca-80a7-e010" targetId="51e9-3e9e-3e09-f4c7" type="categoryEntry">
+            <categoryLink name="Elites - Cybernetica Only" hidden="false" id="9224-19ca-80a7-e010" targetId="51e9-3e9e-3e09-f4c7">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b8e-2c6e-7930-733e" includeChildSelections="false"/>
               </constraints>
@@ -6596,7 +6596,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="Support - Cybernetica Only" hidden="false" id="639a-df2c-8203-f491" targetId="6670-8971-59cb-b440" type="categoryEntry">
+            <categoryLink name="Support - Cybernetica Only" hidden="false" id="639a-df2c-8203-f491" targetId="6670-8971-59cb-b440">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68f2-1777-ac43-88ed" includeChildSelections="false"/>
               </constraints>
@@ -6608,7 +6608,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="War-Engine - Cybernetica Only" hidden="false" id="a81c-64d7-3fce-e184" targetId="a212-e7c6-7b8c-f480" type="categoryEntry">
+            <categoryLink name="War-Engine - Cybernetica Only" hidden="false" id="a81c-64d7-3fce-e184" targetId="a212-e7c6-7b8c-f480">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="487b-d91d-5d23-8bd7" includeChildSelections="false"/>
               </constraints>
@@ -7444,7 +7444,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4ae1-654e-fe03-027f" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Elites - Myrmidons Only" hidden="false" id="eb31-1915-77c4-b4ef" targetId="cd91-8631-13b1-59d5" type="categoryEntry">
+            <categoryLink name="Elites - Myrmidax Only" hidden="false" id="e254-1805-e51b-b3d6" targetId="cd91-8631-13b1-59d5" type="categoryEntry">
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2311-a998-db88-c206" includeChildSelections="false"/>
               </constraints>
@@ -7642,7 +7642,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f015-623b-6deb-1ccb" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Command - Arcuitor Magesterium Only" hidden="false" id="6855-3ac0-c1e3-a011" targetId="d798-77b3-0f8e-d492" type="categoryEntry">
+            <categoryLink name="Command - Arcuitor Magesterium Only" hidden="false" id="6855-3ac0-c1e3-a011" targetId="d798-77b3-0f8e-d492">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="force" shared="true" id="83c4-a1e7-c38c-e164" includeChildSelections="true"/>
               </constraints>
