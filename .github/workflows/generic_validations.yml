@@ -20,7 +20,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         ref: ${{ github.event.pull_request.head.sha }}
-        path: ${{ github.workspace }}/${{ github.repository }}/../
+        path: ${{ github.workspace }}/${{ github.repository }}/
     - name: Setting up Python
       uses: actions/setup-python@v4
       with:
@@ -32,6 +32,9 @@ jobs:
         echo "Repo path is ${{ github.workspace }}/${{ github.repository }}"
         echo "Data path is $DEFAULT_DATA_DIRECTORY"
         ls $DEFAULT_DATA_DIRECTORY
+        cd $DEFAULT_DATA_DIRECTORY
+        echo "pwd:      is $(pwd)"
+        ls
       env:
         DEFAULT_DATA_DIRECTORY: ${{ github.workspace }}/${{ github.repository }}/../
     - name: set pythonpath
