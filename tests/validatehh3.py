@@ -479,6 +479,16 @@ class GameTests(unittest.TestCase):
                         self.assertIsNotNone(units_by_slot[upgrade_slot].get(unit_id),
                                              f"{name} should have a second link with primary category {upgrade_slot}")
 
+    def test_model_types_not_on_non_models(self):
+        for type_category in self.system.model_types_and_subtypes.values():
+            with self.subTest(f"links to {type_category} should be of on SEs of type 'model'"):
+                for type_link in self.system.nodes_with_ids.filter(lambda x: x.target_id == type_category.id):
+                    se = type_link.parent.parent
+                    with self.subTest(f"link on {se} means it is a model"):
+                        self.assertEqual(se.type, "selectionEntry:model",
+                                         f"{type_category.name} should not be linked on {se}")
+
+
 
 if __name__ == '__main__':
     unittest.main()
