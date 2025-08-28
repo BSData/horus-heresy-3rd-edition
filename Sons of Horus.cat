@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="ac06-fcec-b634-5bd9" name="                        XVI - Sons of Horus" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="9" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="ac06-fcec-b634-5bd9" name="                        XVI - Sons of Horus" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="10" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Horus Lupercal" hidden="false" id="c0a2-76a5-6a6f-82bc">
       <selectionEntries>
@@ -1577,6 +1577,14 @@ If the Wounds Characteristic of a Model with this Special Rule is reduced to 0 o
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="e5c9-2619-45e3-bc46" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Legion Equipment" hidden="false" id="0233-127b-a969-347a" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84c9-4fa7-2924-1e46"/>
+                <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="14e5-dec1-6480-a76a" includeChildSelections="true"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -1599,12 +1607,6 @@ If the Wounds Characteristic of a Model with this Special Rule is reduced to 0 o
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="d734-5818-416f-a257" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
-        </entryLink>
-        <entryLink import="true" name="Legion Equipment" hidden="false" id="0233-127b-a969-347a" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf" sortIndex="5">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="84c9-4fa7-2924-1e46"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="14e5-dec1-6480-a76a"/>
-          </constraints>
         </entryLink>
       </entryLinks>
       <infoLinks>
