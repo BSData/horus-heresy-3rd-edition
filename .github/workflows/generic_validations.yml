@@ -29,8 +29,9 @@ jobs:
       run: |      
         SYSTEM_NAME=$(echo "${{ github.repository }}" | cut -d '/' -f 2)
         echo $SYSTEM_NAME
+        echo $PYTHONPATH
         PYTHONPATH=$PYTHONPATH:$(pwd)
-        echo %PYTHONPATH%
+        echo $PYTHONPATH
         python3 system/tests/basic_system_checks.py
       working-directory: 'tests/BSCopy'
       env:
