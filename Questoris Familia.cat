@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="fd9b-d04e-362d-8e5d" name="Questoris Familia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="9" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issue" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="fd9b-d04e-362d-8e5d" name="Questoris Familia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="10" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issue" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Knight Questoris" hidden="false" id="6fbb-fa07-52b9-d350" sortIndex="4">
       <selectionEntries>
@@ -2753,6 +2753,15 @@ A Model with an ion gauntlet shield has a 5+ Invulnerable Save against Penetrati
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Advanced Reactions" hidden="false" id="d747-bc59-f614-03b8">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f8b2-befe-a1db-094e-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8b2-befe-a1db-094e-max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Questoris Advanced Reactions" hidden="false" id="81a7-40bd-749f-ac6b" type="selectionEntryGroup" targetId="3f02-d062-0d02-f83d"/>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <forceEntries>
     <forceEntry name="Knight Households Crusade" id="65c4-7995-ac71-b6f9" hidden="false" sortIndex="0">
@@ -3359,6 +3368,38 @@ Special Rule and modify the value of X on any version of the Auto-repair (X) Spe
       </constraints>
       <comment>Need to sort out hidden rules for prime choices. Can&apos;t figure out how to reference the correct selection.</comment>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Questoris Advanced Reactions" id="3f02-d062-0d02-f83d" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Stomp" hidden="false" id="bfd7-9c54-7ea6-13d0" defaultAmount="1">
+          <infoLinks>
+            <infoLink name="Stomp" id="b7a7-7573-cca8-c27d" hidden="false" type="profile" targetId="6b32-da22-e1f1-933d"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4429-e8be-1c8a-e36e"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Joust!" hidden="false" id="06ab-0a93-1765-ec55" defaultAmount="1">
+          <infoLinks>
+            <infoLink name="Joust!" id="1340-8590-3b20-f709" hidden="false" type="profile" targetId="1d2f-02a9-f14b-e916"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5975-39be-d99d-a413"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Rotate Ion Shields" hidden="false" id="353a-1c27-e16e-2308" defaultAmount="1">
+          <infoLinks>
+            <infoLink name="Rotate Ion Shields" id="f3ea-dfaa-c8c0-2a2c" hidden="false" type="profile" targetId="449d-63da-9341-8d41"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a0f-cb9e-8d11-509f"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="1d2b-3c85-f35c-6029"/>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a8a4-8337-0a8b-0afd"/>
+      </constraints>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="2b02-4c76-5130-c33b" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
@@ -3457,7 +3498,7 @@ Once the cost has been paid, the Reactive Player must select one Unit under thei
     </profile>
   </sharedProfiles>
   <entryLinks>
-    <entryLink import="true" name="Household Paradigms" hidden="false" id="c0cd-7f53-2f56-2015" type="selectionEntry" targetId="bc35-fa07-3e87-a42c" sortIndex="0">
+    <entryLink import="true" name="Household Paradigms" hidden="false" id="c0cd-7f53-2f56-2015" type="selectionEntry" targetId="bc35-fa07-3e87-a42c" sortIndex="-1">
       <categoryLinks>
         <categoryLink targetId="abfa-86ab-1726-077a" id="cd65-124d-5bac-41b7" primary="true" name="Army Configuration"/>
       </categoryLinks>
@@ -3594,6 +3635,11 @@ Once the cost has been paid, the Reactive Player must select one Unit under thei
     <entryLink import="true" name="Dracosan Armoured Transport" hidden="false" id="8e69-7e7b-4b35-5c11" type="selectionEntry" targetId="4c67-eea6-b446-a908" sortIndex="206">
       <categoryLinks>
         <categoryLink targetId="52d0-8b78-439e-18e5" id="56b6-7244-79c8-5761" primary="true" name="Heavy Transport"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Advanced Reactions" hidden="false" id="98e8-37ee-0754-bb6e" type="selectionEntry" targetId="d747-bc59-f614-03b8" sortIndex="0" defaultAmount="1">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="2827-b38a-03ab-4ac3" primary="true" name="Army Configuration"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
