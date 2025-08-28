@@ -24,14 +24,18 @@ jobs:
       with:
         repository: 'nstephenh/bscopy'
         path: 'tests/BSCopy'
+    - name: Get game system name from repo name
+      run: |
+        SYSTEM_NAME=$(echo "${{ github.repository }}" | cut -d '/' -f 2)
+        echo $SYSTEM_NAME
+        echo "SYSTEM_NAME=$(SYSTEM_NAME)" >> $GITHUB_ENV
+        echo $GITHUB_ENV
+    - name: set pythonpath
+      run: |  
+        echo "PYTHONPATH=${{ github.workspace }}/tests/BSCopy" >> $GITHUB_ENV
     - name: Run basic validity
       id: validity
       run: |      
-        SYSTEM_NAME=$(echo "${{ github.repository }}" | cut -d '/' -f 2)
-        echo $SYSTEM_NAME
-        echo $PYTHONPATH
-        PYTHONPATH=$PYTHONPATH:$(pwd)
-        echo $PYTHONPATH
         python3 system/tests/basic_system_checks.py
       working-directory: 'tests/BSCopy'
       env:
