@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="20" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="21" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Anacharis Scoria" hidden="false" id="10f5-dae8-f081-d82f" sortIndex="29">
       <infoLinks>
@@ -4278,9 +4278,11 @@
                         </infoLink>
                       </infoLinks>
                       <costs>
-                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
                         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
                         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
                       </costs>
                       <constraints>
                         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e901-79e9-3b63-7b7a"/>
@@ -4708,6 +4710,7 @@
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="5e61-75cf-5a52-a94d" shared="true" includeChildSelections="true"/>
                   </conditions>
+                  <comment>Prime Conveyor</comment>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -5769,14 +5772,15 @@
                   <modifiers>
                     <modifier type="increment" value="1" field="6536-e73d-4a74-c675"/>
                     <modifier type="increment" value="1" field="f03a-18a7-8586-273d"/>
-                    <modifier type="increment" value="2" field="8735-4497-1f8a-4dda"/>
-                    <modifier type="increment" value="2" field="a82e-858c-9aa9-2b43"/>
                     <modifier type="ceil" value="14" field="6536-e73d-4a74-c675"/>
                     <modifier type="ceil" value="14" field="f03a-18a7-8586-273d"/>
+                    <modifier type="increment" value="2" field="8735-4497-1f8a-4dda"/>
+                    <modifier type="increment" value="2" field="a82e-858c-9aa9-2b43"/>
                   </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="5e61-75cf-5a52-a94d" shared="true" includeChildSelections="true"/>
                   </conditions>
+                  <comment>Prime Conveyor</comment>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -5913,14 +5917,15 @@
                   <modifiers>
                     <modifier type="increment" value="1" field="6536-e73d-4a74-c675"/>
                     <modifier type="increment" value="1" field="f03a-18a7-8586-273d"/>
-                    <modifier type="increment" value="2" field="8735-4497-1f8a-4dda"/>
-                    <modifier type="increment" value="2" field="a82e-858c-9aa9-2b43"/>
                     <modifier type="ceil" value="14" field="6536-e73d-4a74-c675"/>
                     <modifier type="ceil" value="14" field="f03a-18a7-8586-273d"/>
+                    <modifier type="increment" value="2" field="8735-4497-1f8a-4dda"/>
+                    <modifier type="increment" value="2" field="a82e-858c-9aa9-2b43"/>
                   </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="5e61-75cf-5a52-a94d" shared="true" includeChildSelections="true"/>
                   </conditions>
+                  <comment>Prime Conveyor</comment>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -6348,6 +6353,7 @@
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="5e61-75cf-5a52-a94d" shared="true" includeChildSelections="true"/>
                   </conditions>
+                  <comment>Prime Conveyor</comment>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -7419,7 +7425,7 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
         <categoryLink targetId="8268-aa48-f4dc-0506" id="c8f5-606b-21ed-2ea4" primary="false" name="Lacrymaerta"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Arlatax Battle Maniple" hidden="false" id="88e3-4c5f-d4b7-b300" sortIndex="32">
+    <selectionEntry type="unit" import="true" name="Arlatax Battle Maniple" hidden="false" id="88e3-4c5f-d4b7-b300" sortIndex="32" page="177" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Arlatax (Paragon of Metal)" hidden="true" id="8c96-ac34-ecde-d02e" sortIndex="1">
           <profiles>
@@ -7624,7 +7630,7 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Arlatax" hidden="false" id="f202-2ad1-7237-0bae" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Arlatax" hidden="false" id="f202-2ad1-7237-0bae" sortIndex="2" page="177" publicationId="5469-14da-d0a1-6092">
           <profiles>
             <profile name="Arlatax" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="938b-c985-ab04-1362">
               <characteristics>
@@ -7669,7 +7675,7 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
             <categoryLink name="Antigrav Model Sub-Type" hidden="false" id="b382-95ff-4bf9-9e4e" targetId="c504-9dfa-35d3-c98f" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="120"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="120"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -7753,6 +7759,23 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7286-b84f-8b8a-b94b"/>
               </constraints>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Any Model in the Unit may have its pair of power blades and paired light autocannon both exchanged for:" id="a29a-56ea-42fe-82be">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="b6de-1568-2981-de20" id="7906-6ee1-41a3-80e8" name="Pair of power blades">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5677-b394-4954-b74c"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f45-6ca0-43d9-9d5e"/>
+              </constraints>
+              <comment>warning: !BSC 20250828-1757
+Could not find wargear Paired light autocannon
+	 Checked under Paired light autocannon
+Could not find wargear One pair of arc scourges
+	 Checked under One pair of arc scourges</comment>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <infoLinks>
             <infoLink name="Bulky (X)" id="0154-bf98-99d9-b72b" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
@@ -7801,6 +7824,9 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
               </conditions>
             </modifier>
           </modifiers>
+          <comment>warning: !BSC 20250828-1757
+Could not find wargear in Any Model in the Unit may have its pair of power blades and paired light autocannon both exchanged for:
+Could not find wargear in Any Model in the Unit may have its pair of power blades and paired light autocannon both exchanged for:</comment>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -7811,6 +7837,34 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
       <infoLinks>
         <infoLink name="[Mechanicum]" id="4384-1236-4b5c-259b" hidden="false" type="profile" targetId="7aca-c779-952f-fcac"/>
         <infoLink name="[Allegiance]" id="9028-b5f4-b2ec-900d" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="5d59-ed3a-4f78-afd8">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (6)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deep Strike" hidden="false" type="rule" targetId="0553-d06b-52b9-34db" id="d6e4-134c-4d56-aa7a"/>
+        <infoLink name="Explodes (X)" hidden="false" type="rule" targetId="da5b-b871-20da-3e70" id="e0ba-805d-48c5-810d">
+          <modifiers>
+            <modifier type="set" field="name" value="Explodes (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="4ae0-46ec-4c0f-894d"/>
+        <infoLink name="Impact (X)" hidden="false" type="rule" targetId="6ead-c31c-ab09-2f8c" id="69da-e8ab-4672-b657">
+          <modifiers>
+            <modifier type="set" field="name" value="Impact (A)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Vanguard (X)" hidden="false" type="rule" targetId="530f-b733-993c-ec84" id="9665-3417-4ae5-926e">
+          <modifiers>
+            <modifier type="set" field="name" value="Vanguard (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Firing Protocols (X)" hidden="false" type="rule" targetId="84f2-5a93-c2eb-826f" id="9ef9-d4a2-4e66-b363">
+          <modifiers>
+            <modifier type="set" field="name" value="Firing Protocols (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Firestorm" hidden="false" type="rule" targetId="3ed1-c5b3-a98d-1b12" id="5838-e692-4b2c-97ec"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="a19b-e169-376d-3768" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
@@ -7819,10 +7873,13 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
           </entryLinks>
         </entryLink>
       </entryLinks>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Mechanicum Termite" hidden="false" id="2943-f3ad-5b26-1377" sortIndex="33">
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="80"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mechanicum Termite" hidden="false" id="2943-f3ad-5b26-1377" sortIndex="33" page="178" publicationId="5469-14da-d0a1-6092">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="80"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -7833,7 +7890,7 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
         <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="e3a7-ec8b-1248-d3fb" primary="false" name="Transport Model Sub-Type"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Mechanicum Termite" hidden="false" id="8034-007e-f146-979c">
+        <selectionEntry type="model" import="true" name="Mechanicum Termite" hidden="false" id="8034-007e-f146-979c" page="178" publicationId="5469-14da-d0a1-6092">
           <profiles>
             <profile name="Mechanicum Termite" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="b3fc-b41a-206d-03ca">
               <characteristics>
@@ -7862,6 +7919,15 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
               <modifiers>
                 <modifier type="set" value="Centreline Mounted melta cutters" field="name"/>
               </modifiers>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="ede5-77be-4b89-9894" name="Combi-bolter">
+              <modifiers>
+                <modifier type="set" field="name" value="Two Pintle Mounted combi-bolters"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad00-ee0c-45fb-bb52"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="635f-1f2f-4f1e-8872"/>
+              </constraints>
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
@@ -7903,6 +7969,35 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a7b-7ed2-7c5e-ecd1"/>
               </constraints>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Both of this Model&apos;s combi-bolters may be exchanged for one of the following options:" id="2ec1-d72b-4d4c-ae46">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="af81-2c71-7fe0-16bd" id="e345-0bf2-41c4-a851" name="Twin volkite charger">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Two Pintle Mounted twin volkite chargers"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="58b8-c61e-4c61-a46d"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" id="d7f9-76df-4abe-ba1e" name="Heavy flamer">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Two Pintle Mounted heavy flamers"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0371-1d2d-4f26-8e4f"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a600-bfcb-4c46-8a0d"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <infoLinks>
             <infoLink name="Light Transport" id="e12e-be4c-367f-89c1" hidden="false" type="rule" targetId="d451-f7f3-fc8f-db23"/>
@@ -7912,11 +8007,16 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bb9-4454-5bc9-7d32-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bb9-4454-5bc9-7d32-max"/>
           </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
         <infoLink name="[Allegiance]" id="d631-09d5-c68c-fa71" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Mechanicum]" id="806f-e12e-9044-54cc" hidden="false" type="profile" targetId="7aca-c779-952f-fcac"/>
+        <infoLink name="Light Transport" hidden="false" type="rule" targetId="d451-f7f3-fc8f-db23" id="bdbd-03ec-4fe2-8abc"/>
+        <infoLink name="Deep Strike" hidden="false" type="rule" targetId="0553-d06b-52b9-34db" id="e2c0-95c2-4c01-bcea"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="0560-cce5-68f9-e68b" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
@@ -7978,9 +8078,9 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Mechanicum Tarantula Battery" hidden="false" id="02c3-37ea-5d20-8291" sortIndex="34">
+    <selectionEntry type="unit" import="true" name="Mechanicum Tarantula Battery" hidden="false" id="02c3-37ea-5d20-8291" sortIndex="34" page="179" publicationId="5469-14da-d0a1-6092">
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="45"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -8097,6 +8197,101 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
             <infoLink name="Independent Sentries" id="45db-5499-4916-e6b8" hidden="false" type="rule" targetId="7444-aeba-2958-ee0d"/>
           </infoLinks>
         </selectionEntry>
+        <selectionEntry type="model" name="Mechanicum Sentry Gun" id="beb8-62c7-48ce-af59" page="179" publicationId="5469-14da-d0a1-6092">
+          <profiles>
+            <profile id="bda1-5250-4635-b6a6" name="Mechanicum Sentry Gun" typeId="2a80-eec8-a736-2fe3">
+              <characteristics>
+                <characteristic typeId="d624-72fe-0205-4443" name="M">-</characteristic>
+                <characteristic typeId="a17e-8e7d-d21f-c138" name="BS">4</characteristic>
+                <characteristic typeId="6536-e73d-4a74-c675" name="Front Armour">10</characteristic>
+                <characteristic typeId="f03a-18a7-8586-273d" name="Side Armour">10</characteristic>
+                <characteristic typeId="ec84-1f5d-1bb3-6826" name="Rear Armour">10</characteristic>
+                <characteristic typeId="8735-4497-1f8a-4dda" name="HP">2</characteristic>
+                <characteristic typeId="a82e-858c-9aa9-2b43" name="Transport Capacity">-</characteristic>
+                <characteristic typeId="827f-9ce2-2118-e134" name="Type">Vehicle</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <constraints/>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Any Model in this Unit may have its Turret Mounted twin heavy bolter exchanged for one of the following:" id="3a01-797f-4b0b-a010">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75" id="f54b-bbe1-4292-9a1c" name="Twin heavy bolter">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted twin heavy bolter"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92e9-5e1a-465c-950b"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a" id="fbad-4bb1-4e11-8781" name="Twin lascannon">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted twin lascannon"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5c6-0624-4d36-9ca0"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="65a5-f5bd-1ecb-0c22" id="51eb-0123-4bb3-8a31" name="Twin volkite culverin">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted twin volkite culverin"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d1a-3a71-421b-832a"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="31e3-04f7-7ed9-44f6" id="3796-b808-4106-9418" name="Sentry melta array">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted sentry melta array"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c212-ab29-41cd-b4a0"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="a4e2-e284-30e1-f05a" id="372d-0fc3-4633-acec" name="Hyperios missile launcher">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted Hyperios missile launcher"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41cb-fc8a-4883-900e"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="ed11-42af-1450-5e8b" id="4c3f-7b2d-4fce-8bf3" name="Orias frag missile">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Two Turret Mounted Orias frag missiles"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="192a-f730-4083-9a3a"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fc1-2acb-4791-a55a"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="5afc-2866-4aca-af79" primary="false" name="Vehicle Model Type"/>
+          </categoryLinks>
+        </selectionEntry>
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="6026-271e-2253-7374" primary="false" name="Vehicle Model Type"/>
@@ -8104,6 +8299,18 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
       <infoLinks>
         <infoLink name="[Mechanicum]" id="2c71-9fdd-d5cc-5769" hidden="false" type="profile" targetId="7aca-c779-952f-fcac"/>
         <infoLink name="[Allegiance]" id="f88a-a637-2d0d-94c0" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Expendable (X)" hidden="false" type="rule" targetId="c4d4-e053-9564-540b" id="944d-c709-4357-8c67">
+          <modifiers>
+            <modifier type="set" field="name" value="Expendable (3)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Infiltrate (X)" hidden="false" type="rule" targetId="f330-254e-1a98-798a" id="b728-8bc4-43ef-b4f9">
+          <modifiers>
+            <modifier type="set" field="name" value="Infiltrate (9)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Automated Fire Protocols" hidden="false" type="rule" targetId="bbf2-c529-d30b-b6b1" id="82a6-d3ec-45ca-849c"/>
+        <infoLink name="Independent Sentries" hidden="false" type="rule" targetId="7444-aeba-2958-ee0d" id="b7cf-c362-42d0-838d"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="f184-6ba1-813c-f5a3" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
@@ -8164,14 +8371,18 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <comment>warning: !BSC 20250828-1757
+Could not find profile for Mechanicum Tarantula Sentry Guns in [&apos;Mechanicum Sentry Gun&apos;] 
+</comment>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Mechanicum Macrocarid Explorator" hidden="false" id="360a-d28e-99bb-fae5" sortIndex="35">
+    <selectionEntry type="unit" import="true" name="Mechanicum Macrocarid Explorator" hidden="false" id="360a-d28e-99bb-fae5" sortIndex="35" page="181" publicationId="5469-14da-d0a1-6092">
       <categoryLinks>
         <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="d68c-bffa-a2df-18bd" primary="false" name="Vehicle Model Type"/>
         <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="394e-888b-4fe1-1896" primary="false" name="Transport Model Sub-Type"/>
+        <categoryLink targetId="1ec3-1433-658a-f04e" id="6b86-6301-abdf-fa46" primary="false" name="Macrotek"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Macrocarid Explorator" hidden="false" id="fa83-8f31-56c8-f35d">
+        <selectionEntry type="model" import="true" name="Macrocarid Explorator" hidden="false" id="fa83-8f31-56c8-f35d" page="181" publicationId="5469-14da-d0a1-6092">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="59d3-df6c-40ff-82b3-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59d3-df6c-40ff-82b3-max"/>
@@ -8202,6 +8413,7 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="5e61-75cf-5a52-a94d" shared="true" includeChildSelections="true"/>
                   </conditions>
+                  <comment>Prime Conveyor</comment>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -8336,6 +8548,72 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have one of the following selected for it:" id="823e-4cee-46d1-b395">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="b6d5-4be2-c37e-2197" id="f4b8-e1ca-4e78-a046" name="Lascannon">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Two Hull (Front) Mounted lascannon"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04ee-f789-4c33-8dc9"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef5b-5919-44ff-8c45"/>
+              </constraints>
+              <comment>warning: !BSC 20250828-1757
+Could not find wargear Two Hull (Front) Mounted twin irad-cleansers
+	 Checked under twin irad-cleanser</comment>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have its Turret Mounted mauler bolt cannon exchanged for " id="0170-1a6b-4583-902a">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="ec2c-185f-3e9e-7ccd" id="5099-ca40-4f4d-8336" name="Mauler bolt cannon">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted mauler bolt cannon"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb29-998d-48f2-9e17"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="186c-4b07-4675-83f6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7ca-73f4-42a9-9e08"/>
+              </constraints>
+              <comment>warning: !BSC 20250828-1757
+Could not find wargear Turret Mounted graviton imploder
+	 Checked under graviton imploder</comment>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have one of each of the following selected for it:" id="8e14-047b-4186-9992">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" id="a23a-c123-45a8-81ac" name="Hunter-killer missile">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Hull (Front) Mounted hunter-killer missile"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c47-40c9-4546-b8f7"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="efcc-f336-4f87-b01a" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e90b-258d-4ea1-a19c"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7471-a10a-4ef9-920b"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Hunter-killer missile" hidden="false" id="8b39-516c-6368-01f6" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" sortIndex="3">
@@ -8352,6 +8630,12 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4036-a65e-add8-6ac7"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="988f-36eb-7aa2-9ef4" id="35f6-5517-42e1-bbd8" name="Flare Shield">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f6db-f748-4a74-a39a"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4f2-00e2-4479-a11d"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -8376,10 +8660,16 @@ When a Model with this Special Rule and the Vehicle Type moves through an enemy 
             <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="8f6b-7421-f625-cefd" primary="false" name="Vehicle Model Type"/>
             <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="c73a-17c1-29f9-2061" primary="false" name="Transport Model Sub-Type"/>
           </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <comment>warning: !BSC 20250828-1759
+Could not find wargear in This Model may have one of the following selected for it:
+Could not find wargear in This Model may have its Turret Mounted mauler bolt cannon exchanged for </comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="200"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -8388,7 +8678,15 @@ When a Model with this Special Rule and the Vehicle Type moves through an enemy 
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="1c98-4a83-d6f3-4193" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
-            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="897c-4043-668d-27a2" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="897c-4043-668d-27a2" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f">
+              <modifiers>
+                <modifier type="set" value="8855-4255-3c14-bc68" field="defaultSelectionEntryId">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a782-7985-325b-1840" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <modifiers>
             <modifier type="set" value="1" field="881f-5dbe-10fd-ec48">
@@ -8408,7 +8706,15 @@ When a Model with this Special Rule and the Vehicle Type moves through an enemy 
       <infoLinks>
         <infoLink name="[Mechanicum]" id="1733-fcfd-3ac9-0fac" hidden="false" type="profile" targetId="7aca-c779-952f-fcac"/>
         <infoLink name="[Allegiance]" id="9981-a568-d9ed-2f2a" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Auto-Repair (X)" hidden="false" type="rule" targetId="3973-ed50-1482-ff4a" id="e12d-4db1-43a5-a112">
+          <modifiers>
+            <modifier type="set" field="name" value="Auto-repair (3+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Move Through Cover" hidden="false" type="rule" targetId="44d9-f20d-00bf-dc98" id="7b88-1081-4906-835a"/>
       </infoLinks>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: Anbaric Claw</comment>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Mechanicum Ordinatus Ulator" hidden="false" id="0eec-dfde-0a0f-4440" sortIndex="36">
       <costs>
@@ -8685,6 +8991,49 @@ If the seismic macro-drill on a Model with this Special Rule is destroyed or oth
         <infoLink name="[Allegiance]" id="67f3-e65a-4e84-0bc2" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Mechanicum]" id="1d7f-a1e0-990c-2f4a" hidden="false" type="profile" targetId="7aca-c779-952f-fcac"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Tech-Thrall Defence Covenant" type="unit" id="2cf6-e466-45c0-87d5" sortIndex="39" page="176" publicationId="5469-14da-d0a1-6092">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" name="Tech-thrall" id="2800-14a8-4727-ac94" page="176" publicationId="5469-14da-d0a1-6092">
+          <profiles>
+            <profile id="6b2d-6872-425a-a8e0" name="Tech-thrall" typeId="a76f-8e23-8c3e-166d">
+              <characteristics>
+                <characteristic typeId="a106-a779-d272-5e93" name="M">5</characteristic>
+                <characteristic typeId="253c-d694-4695-c89e" name="WS">2</characteristic>
+                <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">2</characteristic>
+                <characteristic typeId="498f-dce1-59fd-d8d7" name="S">3</characteristic>
+                <characteristic typeId="3120-8275-e537-ecd2" name="T">5</characteristic>
+                <characteristic typeId="f5cc-79a3-d302-cc1d" name="W">1</characteristic>
+                <characteristic typeId="af9d-7db8-dc95-71c1" name="I">2</characteristic>
+                <characteristic typeId="024e-bdb1-7982-25a0" name="A">1</characteristic>
+                <characteristic typeId="02ad-ebe6-86e7-9fd6" name="LD">4</characteristic>
+                <characteristic typeId="9cd1-0e7c-2cd6-5f2f" name="CL">12</characteristic>
+                <characteristic typeId="f714-1726-37d3-44df" name="WP">4</characteristic>
+                <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">4</characteristic>
+                <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">6+</characteristic>
+                <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
+                <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="76a9-efd8-41bf-a55d"/>
+            <constraint type="max" value="40" field="selections" scope="parent" shared="true" id="b203-3f68-4fcc-a0c7"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="a2cd-d008-4525-9dc3" primary="false" name="Infantry Model Type"/>
+          </categoryLinks>
+          <comment>warning: !BSC 20250828-1757
+Could not find wargear Mitra-lock
+	 Checked under Mitra-lock</comment>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
@@ -9455,7 +9804,19 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         <entryLink import="true" name="Prime Specimens" hidden="false" id="3d61-54d8-f3e6-c097" type="selectionEntry" targetId="a533-4a75-9434-4595" sortIndex="7"/>
         <entryLink import="true" name="Prime Conveyor" hidden="false" id="8855-4255-3c14-bc68" type="selectionEntry" targetId="5e61-75cf-5a52-a94d" sortIndex="8"/>
         <entryLink import="true" name="Thallaxi Principe" hidden="false" id="6c45-965d-4aef-3d33" type="selectionEntry" targetId="a3af-b73f-4a1b-efd1" sortIndex="9"/>
-        <entryLink import="true" name="Common Prime Benefits" hidden="false" id="4b45-404f-dec7-194d" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true" sortIndex="1"/>
+        <entryLink import="true" name="Common Prime Benefits" hidden="false" id="4b45-404f-dec7-194d" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true" sortIndex="1">
+          <modifiers>
+            <modifier type="set" value="0" field="c235-892b-27fb-2993">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="5e61-75cf-5a52-a94d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c235-892b-27fb-2993" automatic="true"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ec85-4050-9117-a9f4" automatic="true"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b90f-06f9-942e-4930"/>

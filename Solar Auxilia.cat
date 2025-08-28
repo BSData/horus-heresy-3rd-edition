@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7851-69ac-f701-034e" name="Solar Auxilia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="26" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7851-69ac-f701-034e" name="Solar Auxilia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="27" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Legatine Command Section" hidden="false" id="8641-1dd0-7e76-de7d">
       <selectionEntries>
@@ -270,7 +270,7 @@
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc48-b80b-81f7-11d8"/>
-                    <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="77c4-d55b-3135-0721" includeChildSelections="true"/>
+                    <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="5034-37ed-48c4-b170" includeChildSelections="true"/>
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1611,6 +1611,9 @@
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="3bba-e8bb-7463-b0b2" id="1fe8-38ae-b078-2069" primary="false" name="Scout Tercio Unlock"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Artillery Command Section" hidden="false" id="4986-b408-cbfe-2d2f">
       <categoryLinks>
@@ -4161,9 +4164,6 @@
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <entryLinks>
-            <entryLink import="true" name="Prime Unit" hidden="false" id="396b-a702-2c49-ef90" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="3"/>
-          </entryLinks>
           <categoryLinks>
             <categoryLink targetId="38d4-d720-8009-acd3" id="c559-ce7a-4740-a0a7" primary="false" name="Walker Model Type"/>
             <categoryLink targetId="d2d6-5a84-672b-2833" id="3740-dca9-49cf-baf2" primary="false" name="Skirmish Model Sub-Type"/>
@@ -6751,7 +6751,7 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Aurox Transport" hidden="false" id="92ca-fc8c-db1a-a5e1">
+    <selectionEntry type="unit" import="true" name="Aurox Transport" hidden="false" id="92ca-fc8c-db1a-a5e1" page="154" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Aurox Transport" hidden="false" id="2ecb-d303-0be9-d846" sortIndex="1">
           <constraints>
@@ -6786,6 +6786,71 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="model" name="Aurox" id="216b-a238-439d-be81" page="154" publicationId="5469-14da-d0a1-6092">
+          <profiles>
+            <profile id="7589-47b7-4800-9a25" name="Aurox" typeId="2a80-eec8-a736-2fe3">
+              <characteristics>
+                <characteristic typeId="d624-72fe-0205-4443" name="M">12</characteristic>
+                <characteristic typeId="a17e-8e7d-d21f-c138" name="BS">3</characteristic>
+                <characteristic typeId="6536-e73d-4a74-c675" name="Front Armour">12</characteristic>
+                <characteristic typeId="f03a-18a7-8586-273d" name="Side Armour">11</characteristic>
+                <characteristic typeId="ec84-1f5d-1bb3-6826" name="Rear Armour">10</characteristic>
+                <characteristic typeId="8735-4497-1f8a-4dda" name="HP">4</characteristic>
+                <characteristic typeId="a82e-858c-9aa9-2b43" name="Transport Capacity">10</characteristic>
+                <characteristic typeId="827f-9ce2-2118-e134" name="Type">Vehicle (Rapid, Transport)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <constraints/>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="6756-4d96-4461-a012">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="0266-b015-86e4-8953" id="0db9-dcf7-4c6a-8114" name="Auxilia Pintle Weapons">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c0c-949c-4266-bd30"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39ff-8777-4013-b5b7"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have one Hull (Front) Mounted hunter-killer missile selected for it for +5 Points." id="dfcc-6d64-45bb-8567">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" id="6f31-70f0-49f6-9a67" name="Hunter-killer missile">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Hull (Front) Mounted hunter-killer missile"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1cc-71b6-47ff-8dac"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="967e-4472-43bf-ab1b"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="ba3a-8fce-4bcf-8fb2" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="a5c6-b359-cecb-e0b1" id="5ec5-a328-4297-b1e8" primary="false" name="Rapid Sub-Type"/>
+            <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="ef43-c9cd-4d38-97b1" primary="false" name="Transport Model Sub-Type"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="dc32-c927-45b7-886f" name="Searchlights">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4241-d495-4b93-865e"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7be7-3074-4e1b-8e0d"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" id="bc28-fe4e-627b-cf7c" hidden="false" sortIndex="2">
@@ -6814,7 +6879,7 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
         <infoLink name="[Allegiance]" id="4f7a-4f26-e738-43d5" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
       </infoLinks>
       <costs>
-        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
@@ -6833,6 +6898,9 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
           </characteristics>
         </profile>
       </profiles>
+      <comment>warning: !BSC 20250828-1757
+Could not find profile for Aurox Transport in [&apos;Aurox&apos;] 
+</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Avenger Bolt Cannon" hidden="false" id="cd85-d512-f025-e680">
       <profiles>
@@ -6858,9 +6926,9 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Avenger Strike Fighter" hidden="false" id="c689-74d5-92eb-c86e">
+    <selectionEntry type="unit" import="true" name="Avenger Strike Fighter" hidden="false" id="c689-74d5-92eb-c86e" page="158" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Avenger Strike Fighter" hidden="false" id="fc90-66b3-5fb6-87ee" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Avenger Strike Fighter" hidden="false" id="fc90-66b3-5fb6-87ee" sortIndex="1" page="158" publicationId="5469-14da-d0a1-6092">
           <profiles>
             <profile name="Avenger Strike Fighter" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="d1c5-18c1-6edd-53c6">
               <characteristics>
@@ -6881,7 +6949,7 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2534-663b-6cf4-a7c6"/>
           </constraints>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="100"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -6891,6 +6959,44 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
             <categoryLink name="Vehicle Model Type" hidden="false" id="d399-0f7c-5e40-41c7" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
             <categoryLink name="Flyer Model Sub-Type" hidden="false" id="8cdd-1070-ee6c-941c" targetId="42a3-02e9-e0e4-8292" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="cd85-d512-f025-e680" id="8254-5025-4417-82aa" name="Avenger Bolt Cannon">
+              <modifiers>
+                <modifier type="set" field="name" value="Centreline Mounted avenger bolt cannon"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2074-4ae1-47e5-a1f8"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a48f-f51e-4c8f-accf"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a" id="a679-7ab6-473f-b966" name="Twin lascannon">
+              <modifiers>
+                <modifier type="set" field="name" value="Centreline Mounted twin lascannon"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="89c7-01bd-4b30-96d2"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5830-c513-4037-b119"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="c53d-622f-fa8a-7570" id="83d8-e0e3-4f1b-ad35" name="Heavy Stubber">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Rear) Mounted heavy stubber"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae94-c0e4-4aaf-b5fd"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b481-048c-49e5-aa59"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="51af-9efb-4c72-90be" id="45d4-1510-48d7-8a6c" name="Heavy stubber">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Rear) Mounted heavy stubber"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7ac6-2db5-4f3e-8cec"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a44-195a-4afd-845d"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -6937,6 +7043,11 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="100"/>
+      </costs>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: None</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Baneblade Cannon" hidden="false" id="3eed-87fe-7ab1-6834">
       <profiles>
@@ -6965,7 +7076,7 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Baneblade Super-heavy Battle Tank" hidden="false" id="3218-07a3-3637-431c">
+    <selectionEntry type="unit" import="true" name="Baneblade Super-heavy Battle Tank" hidden="false" id="3218-07a3-3637-431c" page="165" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Baneblade Super-heavy Battle Tank" hidden="false" id="6895-2203-d122-7b0d" sortIndex="1">
           <profiles>
@@ -6999,9 +7110,136 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="model" name="Baneblade" id="278d-a649-4085-96a7" page="165" publicationId="5469-14da-d0a1-6092">
+          <profiles>
+            <profile id="e65e-79f7-41cf-bcca" name="Baneblade" typeId="2a80-eec8-a736-2fe3">
+              <characteristics>
+                <characteristic typeId="d624-72fe-0205-4443" name="M">10</characteristic>
+                <characteristic typeId="a17e-8e7d-d21f-c138" name="BS">3</characteristic>
+                <characteristic typeId="6536-e73d-4a74-c675" name="Front Armour">14</characteristic>
+                <characteristic typeId="f03a-18a7-8586-273d" name="Side Armour">13</characteristic>
+                <characteristic typeId="ec84-1f5d-1bb3-6826" name="Rear Armour">12</characteristic>
+                <characteristic typeId="8735-4497-1f8a-4dda" name="HP">16</characteristic>
+                <characteristic typeId="a82e-858c-9aa9-2b43" name="Transport Capacity">-</characteristic>
+                <characteristic typeId="827f-9ce2-2118-e134" name="Type">Vehicle (Super-heavy)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="286e-866f-4775-a796"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d34d-8500-4c9c-95c9"/>
+          </constraints>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="3eed-87fe-7ab1-6834" id="0962-fb01-42c5-8cf0" name="Baneblade Cannon">
+              <modifiers>
+                <modifier type="set" field="name" value="Turret Mounted Baneblade cannon"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dde0-fde3-4d0f-9908"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e17-473c-4ec6-919a"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93" id="31d2-d41c-46d2-8183" name="Autocannon">
+              <modifiers>
+                <modifier type="set" field="name" value="Co-axial (Baneblade cannon) Mounted autocannon"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c68b-6728-4622-a485"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="465d-42a5-48b2-99ac"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="4514-8e18-77b4-a141" id="a82b-ba04-46e3-b59c" name="Demolisher cannon">
+              <modifiers>
+                <modifier type="set" field="name" value="Centreline Mounted demolisher cannon"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc92-c46f-4081-9007"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62f1-d476-4777-8d16"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75" id="794f-c408-4238-b3f1" name="Twin heavy bolter">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Front) Mounted twin heavy bolter"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="64a9-522e-421b-9ccc"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2396-b63c-4cf2-8570"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="59bd-244a-4984-a7f0" id="4e66-94cf-4310-a5e0" name="Baneblade cannon">
+              <modifiers>
+                <modifier type="set" field="name" value="Turret Mounted Baneblade cannon"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a93-cd4d-496c-abab"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8d1-11b6-47ea-83d5"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="This Model may have one of the following selected for it:" id="c4a9-41ed-438e-9123">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1003-37d0-4487-bf1d"/>
+              </constraints>
+              <comment>warning: !BSC 20250828-1757
+Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy bolters
+	 Checked under lascannon and two Sponson
+Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy flamers
+	 Checked under lascannon and two Sponson</comment>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="3e9f-786c-4d41-b76e">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="0266-b015-86e4-8953" id="4de8-fc18-4f20-bf6f" name="Auxilia Pintle Weapons">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08c3-d1f8-4902-b629"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbab-844b-4265-ade4"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="4a10-44a0-44f4-8b47">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" id="a60e-6306-47c7-9dc3" name="Hunter-killer missile">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="One Turret Mounted hunter-killer missile"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bbc-a81c-4d61-b0cc"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="8c21-e8a3-49cb-adc1" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c31-de2e-4681-b497"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="459e-fa57-4fb0-a747"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="9e1c-094b-4a8d-917a" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="4d42-b711-7946-8e15" id="8e20-8ebe-4ecb-8ceb" primary="false" name="Super-heavy Model Sub-Type"/>
+          </categoryLinks>
+          <comment>warning: !BSC 20250828-1759
+Could not find wargear in This Model may have one of the following selected for it:
+Could not find wargear in This Model may have one of the following selected for it:</comment>
+        </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="520"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
@@ -7148,10 +7386,12 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
           </characteristics>
         </profile>
       </profiles>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: None</comment>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Banehammer Super-heavy Assault Tank" hidden="false" id="6a98-2165-d892-a3e5">
+    <selectionEntry type="unit" import="true" name="Banehammer Super-heavy Assault Tank" hidden="false" id="6a98-2165-d892-a3e5" page="167" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Banehammer" hidden="false" id="11b0-f872-21c1-abc9" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Banehammer" hidden="false" id="11b0-f872-21c1-abc9" sortIndex="1" page="167" publicationId="5469-14da-d0a1-6092">
           <profiles>
             <profile name="Banehammer" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="4a21-4a1c-45a4-d065">
               <characteristics>
@@ -7176,16 +7416,89 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
             <categoryLink name="Super-heavy Model Sub-Type" hidden="false" id="a542-343d-8ef8-0598" targetId="4d42-b711-7946-8e15" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="450"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="e182-6fa3-05c3-7604" id="538a-6929-445c-bc10" name="Tremor cannon">
+              <modifiers>
+                <modifier type="set" field="name" value="Centreline Mounted tremor cannon"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c4a9-4c96-4ed7-af33"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="809a-c4b2-45f3-a53e"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75" id="d2d3-f78f-4c9c-9995" name="Twin heavy bolter">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Front) Mounted twin heavy bolter"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8caa-d967-484c-aa3d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30e6-66e7-479f-8f89"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="This Model may have one of the following selected for it:" id="6783-5f09-4a25-b25d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61e4-ffbe-4ce9-a65b"/>
+              </constraints>
+              <comment>warning: !BSC 20250828-1757
+Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy bolters
+	 Checked under lascannon and two Sponson
+Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy flamers
+	 Checked under lascannon and two Sponson</comment>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="5e13-b2f4-48ed-8098">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="0266-b015-86e4-8953" id="86b6-6735-46f0-8fbe" name="Auxilia Pintle Weapons">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a0a-f6f5-4831-af35"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61fd-a9b6-4a90-9c05"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="7a35-0dba-437d-8942">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" id="fc58-e416-41af-8ea8" name="Hunter-killer missile">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="One Hull (Front) Mounted hunter-killer missile"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0542-b764-40bd-86c1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="86b4-bb2b-48b0-a046" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2075-e591-4768-b724"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6058-963a-4009-9fdd"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <comment>warning: !BSC 20250828-1759
+Could not find wargear in This Model may have one of the following selected for it:
+Could not find wargear in This Model may have one of the following selected for it:</comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="450"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -7324,10 +7637,12 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
           </characteristics>
         </profile>
       </profiles>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: None</comment>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Carnodon Strike Tank" hidden="false" id="c1da-0e87-541c-e51e">
+    <selectionEntry type="unit" import="true" name="Carnodon Strike Tank" hidden="false" id="c1da-0e87-541c-e51e" page="157" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Carnodon Strike Tank" hidden="false" id="3160-0a4a-d3ad-a535" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Carnodon Strike Tank" hidden="false" id="3160-0a4a-d3ad-a535" sortIndex="1" page="157" publicationId="5469-14da-d0a1-6092">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f1cb-1892-ac5e-8622" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c95-c80b-0988-7efa" includeChildSelections="false"/>
@@ -7352,12 +7667,127 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
             <categoryLink targetId="a5c6-b359-cecb-e0b1" id="6daf-fc5a-9f0c-28da" primary="false" name="Rapid Sub-Type"/>
           </categoryLinks>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="80"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="a042-1a69-9052-c59a" id="f828-6286-49c4-9d7d" name="Volkite caliver">
+              <modifiers>
+                <modifier type="set" field="name" value="Two Sponson Mounted volkite calivers"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5085-67a6-4c36-8cc2"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5aa9-88ea-45e9-8645"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="8beb-ac11-46f3-9548" name="Searchlights">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b13-2656-4fce-909f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d56-5a42-4160-a7c4"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="This Model may have its Turret Mounted volkite culverin exchanged for one of the following:" id="621c-e4a4-457b-bb64">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="fcf0-9c1b-d51e-6bc7" id="f5ae-368e-4fb1-bc9c" name="Volkite culverin">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted volkite culverin"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7724-6387-4389-9499"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="418b-4926-5010-c55f" id="6394-54fb-4c57-91e6" name="Twin Multi-laser">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted twin multi-laser"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e83-98c1-4809-bc36"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="4e51-460b-4f29-8257" id="c68f-676b-4382-8e6a" name="Gravis autocannon">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted gravis autocannon"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="91e1-baa4-46d0-b263"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a" id="a9e8-1bcf-435c-ab27" name="Twin lascannon">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted twin lascannon"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8546-636b-40c4-876e"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="4c80-f76f-4a10-80e9" id="cf8d-3127-48e6-abd6" name="Twin multi-laser">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted twin multi-laser"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dff3-bc30-4baa-9d43"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5584-d705-4320-93ac"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have both of its Sponson Mounted volkite calivers exchanged for " id="86c3-603a-46c0-bc1d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c13d-c1b1-4a9d-bc7c"/>
+              </constraints>
+              <comment>warning: !BSC 20250828-1757
+Could not find wargear list &apos;Auxilia Sponson Weapons&apos;</comment>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="235b-536e-4ea2-b09b">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="0266-b015-86e4-8953" id="f726-7a4e-4561-ac5f" name="Auxilia Pintle Weapons">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="910a-2fdb-4727-a34d"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="273e-b634-43b6-9984"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have one Turret Mounted hunter-killer missile selected for it for +5 Points." id="562a-5c38-4015-a758">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" id="fdfa-e70e-4643-bdb8" name="Hunter-killer missile">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted hunter-killer missile"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0814-c31c-4fcd-b91b"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e977-bfe7-41c4-9b47"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -7424,7 +7854,7 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
         <infoLink name="[Allegiance]" id="652a-6581-d6a8-1742" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
       </infoLinks>
       <costs>
-        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="80"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
@@ -7454,10 +7884,13 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
           </characteristics>
         </profile>
       </profiles>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: None
+Exchange was not applied on This Model may have both of its Sponson Mounted volkite calivers exchanged for </comment>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Companion Section" hidden="false" id="607a-4979-f72d-35db">
+    <selectionEntry type="unit" import="true" name="Companion Section" hidden="false" id="607a-4979-f72d-35db" page="150" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Auxilia Adjutant" hidden="false" id="d3f6-584d-1cf9-b7a0" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Auxilia Adjutant" hidden="false" id="d3f6-584d-1cf9-b7a0" sortIndex="1" page="150" publicationId="5469-14da-d0a1-6092">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8cfb-3ef5-5a0f-ca3c"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abb6-3581-16d4-3fb9"/>
@@ -7620,13 +8053,136 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Any Model in this Unit may have its lasrifle exchanged for one laspistol and one charnabal sabre for Free or one of the following:" id="0a48-0d86-4219-9c2d">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="40e8-fcb7-9e0e-1582" id="3c62-efb1-4ec2-bfdf" name="Lasrifle">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e990-97e6-4a19-a27a"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" id="48b3-57a1-46ff-b2db" name="Bolter">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="3"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cefe-647d-459f-aba7"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" id="92bd-9acd-4a51-a1ce" name="Volkite charger">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fb2-5c4a-4943-aeaa"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="9a45-35cd-3806-2303" id="3de4-5c2f-48f4-bc1d" name="Flamer">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="360c-98af-4c5a-8ee2"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="2562-e355-f8e1-4c54" id="f284-beaf-4c0a-8359" name="Grenade launcher">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59f0-82b7-45d8-bfa3"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="433d-56e0-9878-dea1" id="7b2e-08c3-4e7b-a359" name="Plasma gun">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="592e-106b-4b65-9e22"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="05bf-af5e-be67-36a2" id="a4bb-85be-4b44-807c" name="Rotor cannon">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eaba-b538-4343-a66e"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="b1e1-e164-5877-6734" id="4b4c-7868-45d4-84b7" name="Meltagun">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="112e-6ef0-49fe-a607"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9300-5486-451b-b172"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Any Model in this Unit whose lasrifle has been exchanged for " id="a8a2-4b72-4500-87cd">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c45-2d22-4fce-8507"/>
+              </constraints>
+              <comment>warning: !BSC 20250828-1757
+Could not find wargear laspistol and charnabal sabre may have its laspistol
+	 Checked under laspistol and charnabal sabre may have its laspistol
+Could not find wargear laspistol and charnabal sabre may have its charnabal sabre
+	 Checked under laspistol and charnabal sabre may have its charnabal sabre</comment>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Any Model in this Unit with a lasrifle may have any of the following selected for it:" id="4065-8e5e-465f-b8b0">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="3484-1bd3-cb74-7abe" id="359a-f2b7-4d82-b1b1" name="Bayonet">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="787f-5ec3-4539-8fc4"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8861-e13d-4b11-a87f"/>
+              </constraints>
+              <comment>warning: !BSC 20250828-1757
+Could not find wargear Blast-charger
+	 Checked under Blast-charger</comment>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink name="Sergeant Model Sub-Type" hidden="false" id="1e23-1a84-e025-8d05" targetId="8045-89a4-76d4-fcef" primary="false"/>
             <categoryLink name="Infantry Model Type" hidden="false" id="de6b-7dac-7332-eda1" targetId="594d-fa82-13cb-a345" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="c365-2c77-4b36-940e" name="Frag grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d6e-9136-456f-9417"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc4d-fa5b-41bf-a551"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="91bd-5462-48fc-8de4" name="Krak grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e91a-f9a1-4b2f-90d7"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4942-184a-4256-8719"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="ce3d-dced-4262-8dd9" id="f63d-9bf6-4141-8864" name="Frag Grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="087f-c904-4160-bf70"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="628a-1146-4f40-be83"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <comment>warning: !BSC 20250828-1757
+Could not find wargear in Any Model in this Unit whose lasrifle has been exchanged for 
+Could not find wargear in Any Model in this Unit whose lasrifle has been exchanged for 
+Could not find wargear in Any Model in this Unit with a lasrifle may have any of the following selected for it:</comment>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Companion" hidden="false" id="a842-bbb8-f840-15e2" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Companion" hidden="false" id="a842-bbb8-f840-15e2" sortIndex="2" page="150" publicationId="5469-14da-d0a1-6092">
           <constraints>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="8551-2b65-5475-84ba"/>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="81cc-06bf-0e8c-df21"/>
@@ -7671,7 +8227,7 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
             </profile>
           </profiles>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="12"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="12"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -7824,10 +8380,190 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Any Model in this Unit may have its lasrifle exchanged for one laspistol and one charnabal sabre for Free or one of the following:" id="358e-38db-4b21-8dc8">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="40e8-fcb7-9e0e-1582" id="e6dd-2181-4dee-9495" name="Lasrifle">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a538-2cb7-481f-8841"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" id="4a59-661f-46e4-ad51" name="Bolter">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="3"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5ca-f1c4-44f7-936e"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" id="48ea-075b-4718-b809" name="Volkite charger">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fe3-bbc3-4e88-b306"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="9a45-35cd-3806-2303" id="28f6-663e-4037-b6f3" name="Flamer">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0ca-15d9-4220-a38e"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="2562-e355-f8e1-4c54" id="1ad6-c5f1-4206-954f" name="Grenade launcher">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a326-94c3-4a4e-83da"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="433d-56e0-9878-dea1" id="e1df-9772-400a-b628" name="Plasma gun">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="402e-dc73-4722-ba9b"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="05bf-af5e-be67-36a2" id="6445-cb84-4f42-9354" name="Rotor cannon">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc1a-6329-4a6b-b7f7"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="b1e1-e164-5877-6734" id="a308-8d24-437a-9359" name="Meltagun">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e4d-df39-4dae-8f87"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04c8-b58d-4580-98ca"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Any Model in this Unit whose lasrifle has been exchanged for " id="d26f-abbe-45d1-9e33">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f85d-9daf-4b73-beae"/>
+              </constraints>
+              <comment>warning: !BSC 20250828-1757
+Could not find wargear laspistol and charnabal sabre may have its laspistol
+	 Checked under laspistol and charnabal sabre may have its laspistol
+Could not find wargear laspistol and charnabal sabre may have its charnabal sabre
+	 Checked under laspistol and charnabal sabre may have its charnabal sabre</comment>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Any Model in this Unit with a lasrifle may have any of the following selected for it:" id="b3ad-3c25-48a3-9b00">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="3484-1bd3-cb74-7abe" id="83f6-067d-4bda-b89a" name="Bayonet">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4037-f416-4ae9-96fc"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41c2-bcd2-40fd-b828"/>
+              </constraints>
+              <comment>warning: !BSC 20250828-1757
+Could not find wargear Blast-charger
+	 Checked under Blast-charger</comment>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="One Companion in this Unit may have one vox interlock selected for it for +5 Points." id="9634-7722-45f8-82b7">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="6354-0874-486e-7a67" id="54b3-ac49-4d6f-a846" name="Vox interlock">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="daab-4d23-4703-81a9"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c83-3334-4f63-8847"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="One Companion in this Unit may have one auxilia vexilla selected for it for +5 Points." id="9254-a6a4-42a0-a18b">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="abc6-851f-ab12-1ddd" id="d5a8-a0dd-44fb-bb62" name="Auxilia vexilla">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e408-ed0d-4a40-81a6"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb69-b382-4417-920d"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="One Companion in this Unit may have one augury scanner selected for it for +10 Points." id="b65e-347c-4ccc-b732">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="fede-99f5-4c76-4659" id="987f-c37b-48dd-aa14" name="Augury scanner">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3152-3639-4dc7-8813"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b979-8762-4ee3-bfa3"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="One Companion in this Unit may have melta bombs selected for it for +10 Points." id="2d92-7a01-45ba-900e">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" id="290e-dc0c-4e21-b1a0" name="Melta bombs">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ba0-f216-41f4-ac35"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e7e-1260-428f-8a3c"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink name="Infantry Model Type" hidden="false" id="fa86-9046-bed0-cc5f" targetId="594d-fa82-13cb-a345" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="6b80-9f1a-4ade-bb3c" name="Frag grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9292-850a-4d35-b094"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6daa-bc42-40af-aa28"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="30ea-a2b2-4d94-9c00" name="Krak grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="321b-5d78-414a-a460"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e92-a755-4d57-bfc8"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="ce3d-dced-4262-8dd9" id="d4af-25fa-4198-943b" name="Frag Grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a60e-1637-4bb1-978b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="771d-d0b6-4686-a530"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <comment>warning: !BSC 20250828-1757
+Could not find wargear in Any Model in this Unit whose lasrifle has been exchanged for 
+Could not find wargear in Any Model in this Unit whose lasrifle has been exchanged for 
+Could not find wargear in Any Model in this Unit with a lasrifle may have any of the following selected for it:</comment>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -7867,14 +8603,25 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
         </profile>
       </profiles>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="32"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="32"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
+      <comment>warning: !BSC 20250828-1757
+Lasrifle is in two option lists for Companion, you will need to combine them by hand.
+Lasrifle is in two option lists for Auxilia Adjutant, you will need to combine them by hand.
+Exchange was not applied on Any Model in this Unit whose lasrifle has been exchanged for 
+Lasrifle is in two option lists for Companion, you will need to combine them by hand.
+Lasrifle is in two option lists for Auxilia Adjutant, you will need to combine them by hand.
+Exchange was not applied on Any Model in this Unit whose lasrifle has been exchanged for 
+Shared on model level not yet implemented for One Companion in this Unit may have one vox interlock selected for it for +5 Points.
+Shared on model level not yet implemented for One Companion in this Unit may have one auxilia vexilla selected for it for +5 Points.
+Shared on model level not yet implemented for One Companion in this Unit may have one augury scanner selected for it for +10 Points.
+Shared on model level not yet implemented for One Companion in this Unit may have melta bombs selected for it for +10 Points.</comment>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Crassus Armoured Assault Transport" hidden="false" id="a1cb-9cb7-c05a-cc60">
+    <selectionEntry type="unit" import="true" name="Crassus Armoured Assault Transport" hidden="false" id="a1cb-9cb7-c05a-cc60" page="164" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Crassus " hidden="false" id="937f-fc07-4d01-21b3" sortIndex="1">
           <profiles>
@@ -7946,9 +8693,85 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="834c-8873-1f5c-b776"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="model" name="Crassus" id="f661-c212-4eb0-91df" page="164" publicationId="5469-14da-d0a1-6092">
+          <profiles>
+            <profile id="13fc-404f-4ed2-bf99" name="Crassus" typeId="2a80-eec8-a736-2fe3">
+              <characteristics>
+                <characteristic typeId="d624-72fe-0205-4443" name="M">10</characteristic>
+                <characteristic typeId="a17e-8e7d-d21f-c138" name="BS">3</characteristic>
+                <characteristic typeId="6536-e73d-4a74-c675" name="Front Armour">14</characteristic>
+                <characteristic typeId="f03a-18a7-8586-273d" name="Side Armour">13</characteristic>
+                <characteristic typeId="ec84-1f5d-1bb3-6826" name="Rear Armour">12</characteristic>
+                <characteristic typeId="8735-4497-1f8a-4dda" name="HP">12</characteristic>
+                <characteristic typeId="a82e-858c-9aa9-2b43" name="Transport Capacity">35</characteristic>
+                <characteristic typeId="827f-9ce2-2118-e134" name="Type">Vehicle (Super-heavy, Transport)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <constraints/>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="bc40-b14a-978e-0232" id="506e-ed31-4171-b455" name="Heavy bolter">
+              <modifiers>
+                <modifier type="set" field="name" value="Two Sponson Mounted heavy bolters"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b33-c099-4831-abbf"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4dbd-5b5d-495f-a019"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="8165-df21-4cfd-ac9b">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="0266-b015-86e4-8953" id="cd19-e8bb-4839-af3f" name="Auxilia Pintle Weapons">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89b6-8f10-4121-bada"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f85-f851-4e0d-a372"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="90cb-20ef-47fd-a1e9">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" id="d805-377c-49e4-8373" name="Hunter-killer missile">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="One Hull (Front) Mounted hunter-killer missile"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14d7-dbd9-4586-bfb9"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="e5b5-d8db-4ec1-969a" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4490-85d3-4932-a6c7"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae53-fb40-4849-b50d"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="69f1-3ae3-4231-a7c7" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="4d42-b711-7946-8e15" id="7478-9bde-4768-b367" primary="false" name="Super-heavy Model Sub-Type"/>
+            <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="ad9c-33d0-4d4c-9dd9" primary="false" name="Transport Model Sub-Type"/>
+          </categoryLinks>
+        </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="350"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -7998,10 +8821,14 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
           </characteristics>
         </profile>
       </profiles>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: None
+Could not find profile for Crassus Armoured Assault Transport in [&apos;Crassus&apos;] 
+</comment>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Cyclops Demolition Vehicle" hidden="false" id="1825-ab2a-2a6f-08c2">
+    <selectionEntry type="unit" import="true" name="Cyclops Demolition Vehicle" hidden="false" id="1825-ab2a-2a6f-08c2" page="153" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Cyclops" hidden="false" id="577c-5011-9791-03ac">
+        <selectionEntry type="model" import="true" name="Cyclops" hidden="false" id="577c-5011-9791-03ac" page="153" publicationId="5469-14da-d0a1-6092">
           <profiles>
             <profile name="Cyclops" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="9b65-6da6-7087-bcf8">
               <characteristics>
@@ -8022,7 +8849,7 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba60-d184-1781-dfd2"/>
           </constraints>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="50"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -8031,6 +8858,9 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
           <categoryLinks>
             <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="be40-3688-a9fb-43d6" primary="false" name="Vehicle Model Type"/>
           </categoryLinks>
+          <comment>warning: !BSC 20250828-1757
+Could not find wargear None
+	 Checked under None</comment>
         </selectionEntry>
       </selectionEntries>
       <profiles>
@@ -8056,6 +8886,7 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Compact" hidden="false" type="rule" targetId="af84-8623-a6f4-ecdb" id="eb7d-5007-499d-81a1"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="0235-d4e7-b7a2-11d4" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
@@ -8080,10 +8911,17 @@ allow it to interact with other Rules or Special Rules that target or affect the
 A Model with this Special Rule and the Vehicle Type may have Charges declared for it in the Assault Phase. If a Charge Roll made for a Model with this Special Rule and the Vehicle Type is failed, the Model is Removed as a Casualty, but immediately explodes as described in the Explodes (X) Special Rule. If a Charge Roll made for a Model with this Special Rule is successful, then at the end of Step 2 of the Fight Sub-Phase of that Combat, every Unit in that Combat suffers a number of automatic Hits equal to the number of Models in that Unit. Each such Hit has a Strength of 8, an AP of - and a Damage of 2, as well as the Armourbane Special Rule. Once these Hits have been fully resolved, the Model with this Special Rule is immediately Removed as a Casualty, and any version of the Explodes (X) Special Rule it has is ignored.</description>
         </rule>
       </rules>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+      </costs>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: Demolition Vehicle
+Could not find profile for Cyclops Demolition Vehicle in [&apos;Cyclops&apos;] 
+</comment>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Davinite Lodge Priest" hidden="false" id="3f66-368a-d385-a1de">
+    <selectionEntry type="unit" import="true" name="Davinite Lodge Priest" hidden="false" id="3f66-368a-d385-a1de" page="149" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Davinite Lodge Priest" hidden="false" id="e530-5541-e8d4-3ab6">
+        <selectionEntry type="model" import="true" name="Davinite Lodge Priest" hidden="false" id="e530-5541-e8d4-3ab6" page="149" publicationId="5469-14da-d0a1-6092">
           <profiles>
             <profile name="Davinite Lodge Priest" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="97da-bc02-0d6e-9d87">
               <characteristics>
@@ -8198,7 +9036,7 @@ A Model with this Special Rule has the Resurrection Psychic Reaction from the Th
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="60"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -8208,6 +9046,9 @@ A Model with this Special Rule has the Resurrection Psychic Reaction from the Th
             <categoryLink targetId="594d-fa82-13cb-a345" id="2bd7-a0f6-03f6-2410" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="af7d-af64-6b7d-da9d" id="a2d4-89b9-7809-e4b4" primary="false" name="Specialist Model Sub-Type"/>
           </categoryLinks>
+          <comment>warning: !BSC 20250828-1757
+Could not find wargear Davinite blade
+	 Checked under Davinite blade</comment>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -8237,7 +9078,7 @@ A Model with this Special Rule has the Resurrection Psychic Reaction from the Th
         </profile>
       </profiles>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -8250,8 +9091,10 @@ A Model with this Special Rule has the Resurrection Psychic Reaction from the Th
           </conditions>
         </modifier>
       </modifiers>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: Ritual Healing</comment>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Destroyer Tank Hunter" hidden="false" id="61f6-d8c1-36ea-909e">
+    <selectionEntry type="unit" import="true" name="Destroyer Tank Hunter" hidden="false" id="61f6-d8c1-36ea-909e" page="159" publicationId="5469-14da-d0a1-6092">
       <profiles>
         <profile name="Solar Auxilia" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="879c-fd61-6271-b3f7">
           <characteristics>
@@ -8292,7 +9135,7 @@ A Model with this Special Rule has the Resurrection Psychic Reaction from the Th
             </infoLink>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Destroyer Tank Hunter" hidden="false" id="baff-ab9e-1093-fe97" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Destroyer Tank Hunter" hidden="false" id="baff-ab9e-1093-fe97" sortIndex="1" page="159" publicationId="5469-14da-d0a1-6092">
           <profiles>
             <profile name="Destroyer Tank Hunter" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="4d4f-5d96-1ecd-edc2">
               <characteristics>
@@ -8313,7 +9156,7 @@ A Model with this Special Rule has the Resurrection Psychic Reaction from the Th
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5876-62fc-7430-be77"/>
           </constraints>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="130"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -8322,6 +9165,65 @@ A Model with this Special Rule has the Resurrection Psychic Reaction from the Th
           <categoryLinks>
             <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="97d9-6913-33bf-41e9" primary="false" name="Vehicle Model Type"/>
           </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="d2af-56ae-40a9-a2c0">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="0266-b015-86e4-8953" id="95ba-a1d8-4965-beec" name="Auxilia Pintle Weapons">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1b1-c1fa-4bb5-bef3"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cfe-ecab-4792-8113"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="92d3-24f9-42f4-b6da">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" id="1b07-3d0e-4723-80e2" name="Hunter-killer missile">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="One Hull (Front) Mounted hunter-killer missile"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e528-8221-4c67-9e23"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="496e-da18-2afa-b99c" id="0192-f33f-44a5-a399" name="Dozer blade">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5999-d240-48c5-8764"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="5ab7-1428-425f-aa4a" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4ed-f5dc-4d66-8384"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="00a3-9972-4ae8-a603" id="d720-3f39-4317-8b1f" name="Dozer Blade">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ac3-72c3-407f-bab4"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d1d-15d3-4d13-bbcb"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <comment>warning: !BSC 20250828-1759
+Could not find wargear Centreline Mounted Proteus laser destroyer
+	 Checked under Proteus laser destroyer</comment>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -8341,7 +9243,7 @@ A Model with this Special Rule has the Resurrection Psychic Reaction from the Th
         <infoLink name="Smokescreen" id="e95e-155b-8ea3-1a11" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
       </infoLinks>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="130"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -8380,10 +9282,12 @@ A Model with this Special Rule has the Resurrection Psychic Reaction from the Th
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: None</comment>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Expeditionary Navigator" hidden="false" id="0ed7-ac1b-5603-f5d0">
+    <selectionEntry type="unit" import="true" name="Expeditionary Navigator" hidden="false" id="0ed7-ac1b-5603-f5d0" page="148" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Expeditionary Navigator" hidden="false" id="6557-9665-b11f-0896" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Expeditionary Navigator" hidden="false" id="6557-9665-b11f-0896" sortIndex="1" page="148" publicationId="5469-14da-d0a1-6092">
           <profiles>
             <profile name="Expeditionary Navigator" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="e4c3-6d2c-e386-7e19">
               <characteristics>
@@ -8499,9 +9403,15 @@ A Model with this Special Rule has the Resurrection Psychic Reaction from the Th
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93c6-69e6-2dfd-8537"/>
               </constraints>
             </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="3104-0111-4490-bf84" id="ee66-7bc4-4aa8-8dae" name="Laspistol">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="04e9-64fb-46bf-b5c2"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64d5-31cf-4654-892f"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="65"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -8511,6 +9421,9 @@ A Model with this Special Rule has the Resurrection Psychic Reaction from the Th
             <categoryLink targetId="594d-fa82-13cb-a345" id="1b08-f6ea-efb7-4b85" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="af7d-af64-6b7d-da9d" id="4d8c-36b7-9313-0472" primary="false" name="Specialist Model Sub-Type"/>
           </categoryLinks>
+          <comment>warning: !BSC 20250828-1757
+Could not find wargear Ætherlabe staff
+	 Checked under Ætherlabe staff</comment>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -8550,12 +9463,14 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
         </rule>
       </rules>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: Navigator’s Arts</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Gravis autocannon array" hidden="false" id="b92a-f7e8-df28-d2a5">
       <profiles>
@@ -8606,7 +9521,7 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Hellhammer Super-heavy Battle Tank" hidden="false" id="97a6-4e92-7575-e5b0">
+    <selectionEntry type="unit" import="true" name="Hellhammer Super-heavy Battle Tank" hidden="false" id="97a6-4e92-7575-e5b0" page="166" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Hellhammer " hidden="false" id="ba5a-ea25-95e9-86e5" sortIndex="1">
           <profiles>
@@ -8633,9 +9548,127 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
             <categoryLink name="Super-heavy Model Sub-Type" hidden="false" id="23a5-bd87-58fd-23ef" targetId="4d42-b711-7946-8e15" primary="false"/>
           </categoryLinks>
         </selectionEntry>
+        <selectionEntry type="model" name="Hellhammer" id="4cc2-563b-414b-aa4c" page="166" publicationId="5469-14da-d0a1-6092">
+          <profiles>
+            <profile id="176d-6b22-4d26-abc3" name="Hellhammer" typeId="2a80-eec8-a736-2fe3">
+              <characteristics>
+                <characteristic typeId="d624-72fe-0205-4443" name="M">10</characteristic>
+                <characteristic typeId="a17e-8e7d-d21f-c138" name="BS">3</characteristic>
+                <characteristic typeId="6536-e73d-4a74-c675" name="Front Armour">14</characteristic>
+                <characteristic typeId="f03a-18a7-8586-273d" name="Side Armour">13</characteristic>
+                <characteristic typeId="ec84-1f5d-1bb3-6826" name="Rear Armour">12</characteristic>
+                <characteristic typeId="8735-4497-1f8a-4dda" name="HP">16</characteristic>
+                <characteristic typeId="a82e-858c-9aa9-2b43" name="Transport Capacity">-</characteristic>
+                <characteristic typeId="827f-9ce2-2118-e134" name="Type">Vehicle (Super-heavy)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c934-cad4-4c1d-b6e5"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81ca-aef7-4c60-9401"/>
+          </constraints>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="35b6-4478-e903-501a" id="a5fb-7333-4328-9e92" name="Hellhammer Cannon">
+              <modifiers>
+                <modifier type="set" field="name" value="Turret Mounted Hellhammer cannon"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a7f-de21-44d2-bdb5"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b42f-55f1-485a-bd24"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93" id="fd06-1574-4977-83d0" name="Autocannon">
+              <modifiers>
+                <modifier type="set" field="name" value="Co-axial (Hellhammer cannon) Mounted autocannon"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc19-ded2-45e6-afd6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f924-845b-44d9-b4bd"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="4514-8e18-77b4-a141" id="55b9-dec7-4f3c-b375" name="Demolisher cannon">
+              <modifiers>
+                <modifier type="set" field="name" value="Centreline Mounted demolisher cannon"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="05b4-0424-44e8-8130"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9142-be1b-4c01-bc06"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75" id="f248-0f03-4bb9-8611" name="Twin heavy bolter">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Front) Mounted twin heavy bolter"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0950-26df-4471-8a64"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5a1-15ea-4a35-a173"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="This Model may have one of the following selected for it:" id="7584-54ab-40d1-9a58">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2015-11f9-47d4-ab23"/>
+              </constraints>
+              <comment>warning: !BSC 20250828-1757
+Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy bolters
+	 Checked under lascannon and two Sponson
+Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy flamers
+	 Checked under lascannon and two Sponson</comment>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="a9eb-2a5a-4a6a-8518">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="0266-b015-86e4-8953" id="c4a7-b86b-4b70-bca2" name="Auxilia Pintle Weapons">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5f6-2669-4032-a18e"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ac1-b0b7-4010-8f28"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="e125-fbb2-4f29-a8ec">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" id="b7d6-eba7-4954-b4e7" name="Hunter-killer missile">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="One Turret Mounted hunter-killer missile"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f622-22a6-49c0-9fd2"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="6937-8df6-4895-abb4" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5c0-3d15-4055-83b1"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8df8-24b4-457a-b576"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="0bb5-ee2a-4629-af4c" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="4d42-b711-7946-8e15" id="7da7-2db7-45fd-b619" primary="false" name="Super-heavy Model Sub-Type"/>
+          </categoryLinks>
+          <comment>warning: !BSC 20250828-1759
+Could not find wargear in This Model may have one of the following selected for it:
+Could not find wargear in This Model may have one of the following selected for it:</comment>
+        </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="520"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="520"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -8783,10 +9816,12 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
           </characteristics>
         </profile>
       </profiles>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: None</comment>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Macharius Heavy Tank" hidden="false" id="d387-5a08-a8e4-96b2">
+    <selectionEntry type="unit" import="true" name="Macharius Heavy Tank" hidden="false" id="d387-5a08-a8e4-96b2" page="162" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Macharius Heavy Tank" hidden="false" id="da70-0b99-edc5-9dad" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Macharius Heavy Tank" hidden="false" id="da70-0b99-edc5-9dad" sortIndex="1" page="162" publicationId="5469-14da-d0a1-6092">
           <profiles>
             <profile name="Macharius Heavy Tank" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="3315-dab2-bca7-f428">
               <characteristics>
@@ -8811,16 +9846,157 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
             <categoryLink name="Super-heavy Model Sub-Type" hidden="false" id="8203-d207-da35-4e11" targetId="4d42-b711-7946-8e15" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="300"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="61b3-5ea2-e839-03de" id="6fe8-89fd-4fda-8067" name="Twin heavy stubber">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Front) Mounted twin heavy stubber"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad23-dfae-4e02-ac4f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d946-8233-48ca-a7b0"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="c53d-622f-fa8a-7570" id="41cd-39f8-402a-a235" name="Heavy Stubber">
+              <modifiers>
+                <modifier type="set" field="name" value="Two Sponson Mounted heavy stubbers"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f0db-c36d-4a35-8b68"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34de-fb4a-4f0e-8754"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="9027-63f4-4780-b5b1" id="e473-57d6-45a5-a387" name="Twin heavy stubber">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Front) Mounted twin heavy stubber"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="94cd-732a-428a-a9be"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5eae-0957-4491-8d16"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="51af-9efb-4c72-90be" id="a720-fa43-44a5-aabd" name="Heavy stubber">
+              <modifiers>
+                <modifier type="set" field="name" value="Two Sponson Mounted heavy stubbers"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c07-99f8-4124-82aa"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="520a-6fd4-464f-8953"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="This Model may have its Turret Mounted twin battlecannon exchanged for one of the following:" id="f784-afe4-4dc9-a48f">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="b28b-44d6-5cc0-75fa" id="b5aa-8781-43a3-b43f" name="Twin Battlecannon">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted twin battlecannon"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7883-0393-4a02-8e68"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="82bb-5456-f6c4-8334" id="bc6f-3fd4-4838-9cbd" name="Twin avenger bolt cannon">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted twin avenger bolt cannon"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="840e-c589-4b95-8e38"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="3c29-e904-fa76-a6a8" id="a76e-b7b2-4bc6-b744" name="Twin Vanquisher Cannon">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted twin vanquisher cannon"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab4c-97a7-4ee7-93a2"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0632-f163-4174-9e89"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have both of its Sponson Mounted heavy stubbers exchanged for one of the following:" id="0dfd-1236-4379-9975">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="bc40-b14a-978e-0232" id="2533-9ecf-4c4c-9a51" name="Heavy bolter">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Two Sponson Mounted heavy bolters"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="713c-6137-4787-9e3f"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" id="f031-eaca-41fc-adf5" name="Heavy flamer">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Two Sponson Mounted heavy flamers"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2202-5cca-4469-b0a7"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7829-a722-46ba-9d36"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="749b-0bc7-442b-b561">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="0266-b015-86e4-8953" id="abf7-b3d4-422c-9713" name="Auxilia Pintle Weapons">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a658-42bf-4383-a3fc"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b7b-1c44-4537-937f"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="4734-1924-4c6f-abf2">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" id="9cf0-1c12-41ad-9b25" name="Hunter-killer missile">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="One Turret Mounted hunter-killer missile"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d14-d368-4b44-8870"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="64be-c538-40fd-859f" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f17a-03ed-4733-9520"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2512-160b-4a13-a8bf"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="300"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -8946,6 +10122,8 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
           </characteristics>
         </profile>
       </profiles>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: None</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Macro-bomb cluster" hidden="false" id="7174-a5c9-3aa1-8d49">
       <infoLinks>
@@ -8979,9 +10157,9 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Marauder Bomber" hidden="false" id="3b1f-d887-49db-bfb0">
+    <selectionEntry type="unit" import="true" name="Marauder Bomber" hidden="false" id="3b1f-d887-49db-bfb0" page="172" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Marauder Bomber" hidden="false" id="8f30-e678-a55c-18a6" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Marauder Bomber" hidden="false" id="8f30-e678-a55c-18a6" sortIndex="1" page="172" publicationId="5469-14da-d0a1-6092">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b062-ca7e-9bc3-34d2"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24fb-7148-3e14-efa2"/>
@@ -9002,7 +10180,7 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
             </profile>
           </profiles>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="225"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -9013,6 +10191,35 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
             <categoryLink targetId="4d42-b711-7946-8e15" id="3390-c19d-f279-f840" primary="false" name="Super-heavy Model Sub-Type"/>
             <categoryLink targetId="42a3-02e9-e0e4-8292" id="794f-de96-8c4d-4978" primary="false" name="Flyer Model Sub-Type"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75" id="45b5-cd1e-4d12-84a0" name="Twin heavy bolter">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Rear) Mounted twin heavy bolter"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a3e-9dd8-447c-a61c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8a2-6198-455a-80d9"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a" id="441e-2389-4175-8747" name="Twin lascannon">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Front) Mounted twin lascannon"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d35-e0c9-417e-a546"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9049-c811-4dab-90f0"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="7174-a5c9-3aa1-8d49" id="b94c-e160-4f10-a312" name="Macro-bomb cluster">
+              <modifiers>
+                <modifier type="set" field="name" value="One Centreline (Front, Rear) Mounted macro-bomb cluster"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44b2-6c1a-47bc-ad72"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f38-1ccf-428a-96b3"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -9026,7 +10233,7 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
         </profile>
       </profiles>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="225"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -9075,16 +10282,18 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: None</comment>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Marauder Destroyer" hidden="false" id="a4df-4786-ce35-c5e4">
+    <selectionEntry type="unit" import="true" name="Marauder Destroyer" hidden="false" id="a4df-4786-ce35-c5e4" page="173" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Marauder Destroyer" hidden="false" id="f423-a7ac-843f-9583" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Marauder Destroyer" hidden="false" id="f423-a7ac-843f-9583" sortIndex="1" page="173" publicationId="5469-14da-d0a1-6092">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff32-eaa7-6469-2809"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e14a-6c57-5262-2267"/>
           </constraints>
           <profiles>
-            <profile name="Marauder Bomber" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="e008-491a-ce87-f325">
+            <profile name="Marauder Destroyer" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="e008-491a-ce87-f325">
               <characteristics>
                 <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Super-heavy, Flyer)</characteristic>
                 <characteristic name="M" typeId="d624-72fe-0205-4443">18</characteristic>
@@ -9099,7 +10308,7 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
             </profile>
           </profiles>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="245"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -9110,6 +10319,35 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
             <categoryLink targetId="4d42-b711-7946-8e15" id="4df1-3472-78fb-631a" primary="false" name="Super-heavy Model Sub-Type"/>
             <categoryLink targetId="42a3-02e9-e0e4-8292" id="260e-48c1-224a-816e" primary="false" name="Flyer Model Sub-Type"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75" id="df29-b9c0-4f8f-a533" name="Twin heavy bolter">
+              <modifiers>
+                <modifier type="set" field="name" value="Turret Mounted twin heavy bolter"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e273-19b5-4144-8bbf"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbb9-f4af-4bef-9717"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="b92a-f7e8-df28-d2a5" id="3e5b-42c7-4be3-907e" name="Gravis autocannon array">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Front) Mounted Gravis autocannon array"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3461-c0f9-4a73-8c2c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="997a-a08d-47d6-b424"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="85e4-6f40-8ac8-20a6" id="8d29-9aca-4f85-99de" name="Twin rotary defence cannon">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Rear) Mounted twin rotary defence cannon"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="57c9-2a04-45a9-9045"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13ae-ef70-480c-afbc"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -9123,7 +10361,7 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
         </profile>
       </profiles>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="245"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -9163,10 +10401,12 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: None</comment>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Medicae Section" hidden="false" id="b31c-f7ad-49a7-0f31">
+    <selectionEntry type="unit" import="true" name="Medicae Section" hidden="false" id="b31c-f7ad-49a7-0f31" page="152" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Medicae Auxiliary" hidden="false" id="5369-68be-48d7-646e" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Medicae Auxiliary" hidden="false" id="5369-68be-48d7-646e" sortIndex="1" page="152" publicationId="5469-14da-d0a1-6092">
           <profiles>
             <profile name="Medicae Auxiliary" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="2b72-17b4-a123-4dbb">
               <characteristics>
@@ -9211,7 +10451,7 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="a595-64d6-2659-a27a"/>
           </constraints>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -9222,6 +10462,30 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9134-c1ad-101d-4f36"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4629-0f00-282e-9894"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="1214-b315-43c9-8680" name="Frag grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="45ca-4864-44a5-845f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c109-3ef8-406d-8314"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="7116-531d-4af7-8cb5" name="Krak grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a10e-e214-4f1e-8dd2"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47fd-a518-453f-8926"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="c6db-6d65-4256-ad2a" id="b322-9db3-47e5-8434" name="Needle pistol">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef5d-c074-4c67-a47c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d034-8b0a-46b4-8f0d"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="ce3d-dced-4262-8dd9" id="bc3d-f6c6-41c2-8c58" name="Frag Grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f304-9665-4d38-8a3f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fda-ec75-4396-b47f"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -9273,8 +10537,13 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
 Although included in an Army as a Unit that includes multiple Models, each Model with this Special Rule is considered to be a separate Unit for all other purposes, including Deployment and the scoring of Victory Points.</description>
         </rule>
       </rules>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: Medicae Support</comment>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Minotaur Artillery Tank" hidden="false" id="5a51-152a-5508-e2db">
+    <selectionEntry type="unit" import="true" name="Minotaur Artillery Tank" hidden="false" id="5a51-152a-5508-e2db" page="161" publicationId="5469-14da-d0a1-6092">
       <profiles>
         <profile name="Solar Auxilia" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="2a56-0b6b-fe11-f47f">
           <characteristics>
@@ -9283,7 +10552,7 @@ Although included in an Army as a Unit that includes multiple Models, each Model
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Minotaur Artillery Tank" hidden="false" id="e754-bec1-6623-dedd" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Minotaur Artillery Tank" hidden="false" id="e754-bec1-6623-dedd" sortIndex="1" page="161" publicationId="5469-14da-d0a1-6092">
           <profiles>
             <profile name="Minotaur Artillery Tank" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="142c-6ff3-7074-9e91">
               <characteristics>
@@ -9306,6 +10575,40 @@ Although included in an Army as a Unit that includes multiple Models, each Model
           <categoryLinks>
             <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="5678-8743-8399-90ef" primary="false" name="Vehicle Model Type"/>
           </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="cc66-c01a-4119-86f7">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" id="8084-8155-4513-8989" name="Hunter-killer missile">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="One Hull (Rear) Mounted hunter-killer missile"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74fe-e57b-4372-8f91"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="02bc-aaaa-4c34-9372" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d128-07e5-4715-8d08"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d991-6759-4dc2-82a3"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <comment>warning: !BSC 20250828-1759
+Could not find wargear Centreline (Rear) Mounted twin earthshaker cannon
+	 Checked under twin earthshaker cannon</comment>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Twin Earthshaker Cannon" hidden="false" id="6601-a6fb-4d6f-dfae" sortIndex="2">
           <profiles>
@@ -9395,7 +10698,7 @@ Although included in an Army as a Unit that includes multiple Models, each Model
         <infoLink name="Smokescreen" id="da47-b944-1d1d-210f" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
       </infoLinks>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="205"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="205"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -9426,6 +10729,8 @@ Although included in an Army as a Unit that includes multiple Models, each Model
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: None</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma blastgun" hidden="false" id="ca1b-d69c-b76b-d148">
       <profiles>
@@ -9465,9 +10770,9 @@ Although included in an Army as a Unit that includes multiple Models, each Model
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Praetor Armoured Assault Launcher" hidden="false" id="857d-cc46-96d9-4b88">
+    <selectionEntry type="unit" import="true" name="Praetor Armoured Assault Launcher" hidden="false" id="857d-cc46-96d9-4b88" page="163" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Praetor" hidden="false" id="dadc-8b25-abc1-91ef" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Praetor" hidden="false" id="dadc-8b25-abc1-91ef" sortIndex="1" page="163" publicationId="5469-14da-d0a1-6092">
           <profiles>
             <profile name="Praetor" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="6e6d-17e7-1c16-1cf3">
               <characteristics>
@@ -9492,16 +10797,76 @@ Although included in an Army as a Unit that includes multiple Models, each Model
             <categoryLink name="Super-heavy Model Sub-Type" hidden="false" id="b59a-c6e3-192c-6bac" targetId="4d42-b711-7946-8e15" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="300"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="87f7-3aa3-8017-5225" id="8622-dbb3-4be9-8da1" name="Praetor Launcher">
+              <modifiers>
+                <modifier type="set" field="name" value="Centreline Mounted praetor launcher"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0026-c316-4b3a-afd1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7ec-10c9-46ef-95e5"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="bc40-b14a-978e-0232" id="7ca9-7e58-403f-9c33" name="Heavy bolter">
+              <modifiers>
+                <modifier type="set" field="name" value="Two Hull (Front) Mounted heavy bolters"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ee6-9f92-4e5c-85da"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="553d-64f9-46b3-9346"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="6042-f89b-4545-84b7">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="0266-b015-86e4-8953" id="b4c4-1c85-4f83-ac89" name="Auxilia Pintle Weapons">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e98-1597-4ec8-bd2b"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5acd-ae5c-4c67-963f"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="0344-8fa0-43f3-90c6">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" id="af4a-27cb-46e4-87d3" name="Hunter-killer missile">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="One Hull (Front) Mounted hunter-killer missile"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3d5-cda4-494c-9074"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="d31d-22d1-49ca-b949" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1cf-969f-4cb0-adde"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f25e-32f8-4b96-b893"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="300"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -9566,6 +10931,10 @@ Although included in an Army as a Unit that includes multiple Models, each Model
           </characteristics>
         </profile>
       </profiles>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: None
+Could not find profile for Praetor Armoured Assault Launcher in [&apos;Praetor&apos;] 
+</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Praetor Launcher" hidden="false" id="87f7-3aa3-8017-5225">
       <profiles>
@@ -9582,11 +10951,11 @@ Although included in an Army as a Unit that includes multiple Models, each Model
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Shadowsword Super-heavy Tank Destroyer" hidden="false" id="e7d9-8c82-8cb0-055b">
+    <selectionEntry type="unit" import="true" name="Shadowsword Super-heavy Tank Destroyer" hidden="false" id="e7d9-8c82-8cb0-055b" page="170" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Shadowsword" hidden="false" id="e82d-21cf-f4d4-5d2c" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Shadowsword" hidden="false" id="e82d-21cf-f4d4-5d2c" sortIndex="1" page="170" publicationId="5469-14da-d0a1-6092">
           <profiles>
-            <profile name="Shadowsword " typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="dd6e-1dd7-c32b-17c5">
+            <profile name="Shadowsword" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="dd6e-1dd7-c32b-17c5">
               <characteristics>
                 <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Super-heavy)</characteristic>
                 <characteristic name="M" typeId="d624-72fe-0205-4443">10</characteristic>
@@ -9609,16 +10978,89 @@ Although included in an Army as a Unit that includes multiple Models, each Model
             <categoryLink name="Super-heavy Model Sub-Type" hidden="false" id="7cd9-0107-e676-cf23" targetId="4d42-b711-7946-8e15" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="475"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="0e98-d136-eac2-1b83" id="2b1c-7169-4738-a4d8" name="Volcano Cannon">
+              <modifiers>
+                <modifier type="set" field="name" value="Centreline Mounted volcano cannon"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c7f2-de4c-4854-8706"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a069-aed9-4270-b499"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75" id="9f92-b8b4-4382-a5cb" name="Twin heavy bolter">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Front) Mounted twin heavy bolter"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1195-d12f-409f-ab2b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35f1-8970-4ef7-bd86"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="This Model may have one of the following selected for it:" id="bb35-6558-48b9-858e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b51f-f498-4d7d-b600"/>
+              </constraints>
+              <comment>warning: !BSC 20250828-1757
+Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy bolters
+	 Checked under lascannon and two Sponson
+Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy flamers
+	 Checked under lascannon and two Sponson</comment>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="6ad6-aa04-43a4-aff5">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="0266-b015-86e4-8953" id="5750-7bc8-4942-af16" name="Auxilia Pintle Weapons">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c98a-38ff-4ed8-87c6"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a97-90f0-4a06-8022"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="ac4b-9d1c-4820-9409">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" id="a3ac-ee06-44b9-98a2" name="Hunter-killer missile">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="One Hull (Front) Mounted hunter-killer missile"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fca6-39de-4ed1-ae1a"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="88e9-7335-4c3e-b337" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cdb4-a6ec-4ae7-870b"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8cb-806e-48f6-b785"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <comment>warning: !BSC 20250828-1759
+Could not find wargear in This Model may have one of the following selected for it:
+Could not find wargear in This Model may have one of the following selected for it:</comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="475"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -9745,10 +11187,12 @@ Although included in an Army as a Unit that includes multiple Models, each Model
           </characteristics>
         </profile>
       </profiles>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: None</comment>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Stormblade Super-heavy Tank" hidden="false" id="5748-1ede-dead-c0e7">
+    <selectionEntry type="unit" import="true" name="Stormblade Super-heavy Tank" hidden="false" id="5748-1ede-dead-c0e7" page="169" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Stormblade" hidden="false" id="a7d9-2585-9d05-d079" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Stormblade" hidden="false" id="a7d9-2585-9d05-d079" sortIndex="1" page="169" publicationId="5469-14da-d0a1-6092">
           <profiles>
             <profile name="Stormblade" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="3fa9-67e4-27dd-a602">
               <characteristics>
@@ -9773,16 +11217,89 @@ Although included in an Army as a Unit that includes multiple Models, each Model
             <categoryLink name="Super-heavy Model Sub-Type" hidden="false" id="d28d-a86e-02ec-33c1" targetId="4d42-b711-7946-8e15" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="500"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="ca1b-d69c-b76b-d148" id="91ab-b3ef-4570-bbed" name="Plasma blastgun">
+              <modifiers>
+                <modifier type="set" field="name" value="Centreline Mounted plasma blastgun"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="54c8-875d-414d-a87c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e51-cc16-41ec-a4a7"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75" id="52a1-c991-44ba-9bc0" name="Twin heavy bolter">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Front) Mounted twin heavy bolter"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="833e-0341-4bf9-a6aa"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7870-1f4b-42f7-af9d"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="This Model may have one of the following selected for it:" id="57aa-8e6b-4d21-bf03">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9fd0-13a6-4744-ade6"/>
+              </constraints>
+              <comment>warning: !BSC 20250828-1757
+Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy bolters
+	 Checked under lascannon and two Sponson
+Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy flamers
+	 Checked under lascannon and two Sponson</comment>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="2e84-253f-42c8-99c6">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="0266-b015-86e4-8953" id="c7c9-74e7-47c2-8767" name="Auxilia Pintle Weapons">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="513f-ace7-4c4b-bc7b"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2237-67ba-4fcb-86b1"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="b373-c084-4ae9-8a62">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" id="d7a6-c1a5-4969-b5b2" name="Hunter-killer missile">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="One Hull (Front) Mounted hunter-killer missile"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7526-1197-4d52-8887"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="1ea8-3f05-4b34-aca1" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e20d-ef4d-474f-b06a"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e36d-e90b-438c-a20c"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <comment>warning: !BSC 20250828-1759
+Could not find wargear in This Model may have one of the following selected for it:
+Could not find wargear in This Model may have one of the following selected for it:</comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="500"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -9912,8 +11429,10 @@ Although included in an Army as a Unit that includes multiple Models, each Model
           </characteristics>
         </profile>
       </profiles>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: None</comment>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Stormlord Super-heavy Assault Tank" hidden="false" id="f42e-3ca8-5500-7184">
+    <selectionEntry type="unit" import="true" name="Stormlord Super-heavy Assault Tank" hidden="false" id="f42e-3ca8-5500-7184" page="168" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Stormlord " hidden="false" id="a6bd-7409-6f70-101a" sortIndex="1">
           <profiles>
@@ -9948,9 +11467,128 @@ Although included in an Army as a Unit that includes multiple Models, each Model
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="model" name="Stormlord" id="b7aa-6b0a-42e3-8eeb" page="168" publicationId="5469-14da-d0a1-6092">
+          <profiles>
+            <profile id="d114-57e1-4e49-a79d" name="Stormlord" typeId="2a80-eec8-a736-2fe3">
+              <characteristics>
+                <characteristic typeId="d624-72fe-0205-4443" name="M">10</characteristic>
+                <characteristic typeId="a17e-8e7d-d21f-c138" name="BS">3</characteristic>
+                <characteristic typeId="6536-e73d-4a74-c675" name="Front Armour">14</characteristic>
+                <characteristic typeId="f03a-18a7-8586-273d" name="Side Armour">13</characteristic>
+                <characteristic typeId="ec84-1f5d-1bb3-6826" name="Rear Armour">12</characteristic>
+                <characteristic typeId="8735-4497-1f8a-4dda" name="HP">16</characteristic>
+                <characteristic typeId="a82e-858c-9aa9-2b43" name="Transport Capacity">20</characteristic>
+                <characteristic typeId="827f-9ce2-2118-e134" name="Type">Vehicle (Super-heavy, Transport)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a70-e597-4266-8adf"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f65-8a79-4285-ba6c"/>
+          </constraints>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="ca95-0498-ddc0-3b59" id="2766-097f-4966-ae2a" name="Vulcan mega-bolter">
+              <modifiers>
+                <modifier type="set" field="name" value="Centreline Mounted Vulcan mega-bolter"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0cdb-a200-4118-a463"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83cd-055f-4ef4-824f"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75" id="77aa-be32-4435-9397" name="Twin heavy bolter">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Front) Mounted twin heavy bolter"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ee9-a6e7-462a-8168"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3869-d236-46b5-ad9b"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="c53d-622f-fa8a-7570" id="ad6e-52f3-4016-9ab6" name="Heavy Stubber">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Right) Mounted heavy stubber"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a1f-2589-42b8-a135"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="476e-3468-4741-ba39"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="51af-9efb-4c72-90be" id="19cb-49d5-4449-a3fa" name="Heavy stubber">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Right) Mounted heavy stubber"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd2d-f05c-4737-9959"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a824-c7c0-44b7-b043"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="This Model may have one of the following selected for it:" id="d946-5358-4877-ac2b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="757d-2182-4abe-b9a3"/>
+              </constraints>
+              <comment>warning: !BSC 20250828-1757
+Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy bolters
+	 Checked under lascannon and two Sponson
+Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy flamers
+	 Checked under lascannon and two Sponson</comment>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="e6d9-8bf3-4da2-851d">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="0266-b015-86e4-8953" id="f0cf-cbd7-46eb-85d9" name="Auxilia Pintle Weapons">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eeb0-6556-436a-9618"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25f7-5e60-49ef-b00b"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="dca0-9666-4257-b74d">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" id="f9b1-a6a1-4367-a3b3" name="Hunter-killer missile">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="One Hull (Front) Mounted hunter-killer missile"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e13-1e4f-4aaa-9dd7"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="9fd9-1708-49b2-a587" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5920-187f-43e5-92b0"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="488e-651d-4290-84bc"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="eaa2-8367-48a4-8ebc" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="4d42-b711-7946-8e15" id="9e62-fd26-46a7-98fd" primary="false" name="Super-heavy Model Sub-Type"/>
+            <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="bc2e-285b-49f7-b009" primary="false" name="Transport Model Sub-Type"/>
+          </categoryLinks>
+          <comment>warning: !BSC 20250828-1759
+Could not find wargear in This Model may have one of the following selected for it:
+Could not find wargear in This Model may have one of the following selected for it:</comment>
+        </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="500"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -10128,9 +11766,9 @@ Although included in an Army as a Unit that includes multiple Models, each Model
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Stormsword Super-heavy Siege Tank" hidden="false" id="5a4f-f6c0-e700-8142">
+    <selectionEntry type="unit" import="true" name="Stormsword Super-heavy Siege Tank" hidden="false" id="5a4f-f6c0-e700-8142" page="171" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Stormsword" hidden="false" id="f58e-226d-f06a-539b" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Stormsword" hidden="false" id="f58e-226d-f06a-539b" sortIndex="1" page="171" publicationId="5469-14da-d0a1-6092">
           <profiles>
             <profile name="Stormsword" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="0343-f013-8d02-5116">
               <characteristics>
@@ -10155,16 +11793,89 @@ Although included in an Army as a Unit that includes multiple Models, each Model
             <categoryLink name="Super-heavy Model Sub-Type" hidden="false" id="b1f8-0886-1b2e-6271" targetId="4d42-b711-7946-8e15" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="475"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="718e-91ce-e3f6-eb7d" id="1ee5-9137-4487-b26b" name="Stormsword siege cannon">
+              <modifiers>
+                <modifier type="set" field="name" value="Centreline Mounted Stormsword siege cannon"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85c3-4c4e-421c-81a1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2288-9ef5-4bdb-9534"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75" id="f1be-945a-4ca5-b878" name="Twin heavy bolter">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Front) Mounted twin heavy bolter"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c8c3-2d53-4a98-8354"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc58-546e-4e8a-b055"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="This Model may have one of the following selected for it:" id="195b-bde2-4386-95c8">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c87b-bb3e-42e7-8948"/>
+              </constraints>
+              <comment>warning: !BSC 20250828-1757
+Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy bolters
+	 Checked under lascannon and two Sponson
+Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy flamers
+	 Checked under lascannon and two Sponson</comment>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="c398-626e-4df9-9da3">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="0266-b015-86e4-8953" id="9905-5da3-42e1-9f70" name="Auxilia Pintle Weapons">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63ae-68e9-4ae1-8e16"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a992-6318-47d4-8909"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="24d8-14f3-4d70-b436">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" id="d5da-cb2e-4e82-9f45" name="Hunter-killer missile">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="One Hull (Front) Mounted hunter-killer missile"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5656-d70a-4ef7-b489"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="a779-037c-4bcd-8f32" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ace-83ef-4111-b55a"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="501b-f068-4a62-8255"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <comment>warning: !BSC 20250828-1759
+Could not find wargear in This Model may have one of the following selected for it:
+Could not find wargear in This Model may have one of the following selected for it:</comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="475"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -10294,10 +12005,12 @@ Although included in an Army as a Unit that includes multiple Models, each Model
           </characteristics>
         </profile>
       </profiles>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: None</comment>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Surgeon-Primus Aevos Jovan" hidden="false" id="0d9d-d7fb-0222-3846">
+    <selectionEntry type="unit" import="true" name="Surgeon-Primus Aevos Jovan" hidden="false" id="0d9d-d7fb-0222-3846" page="146" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Medicae Orderly" hidden="false" id="b1d8-7703-9e61-5521" sortIndex="3">
+        <selectionEntry type="model" import="true" name="Medicae Orderly" hidden="false" id="b1d8-7703-9e61-5521" sortIndex="3" page="146" publicationId="5469-14da-d0a1-6092">
           <profiles>
             <profile name="Medicae Orderly" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="e62b-029a-c6f9-ff07">
               <characteristics>
@@ -10323,7 +12036,7 @@ Although included in an Army as a Unit that includes multiple Models, each Model
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fd75-4f09-b160-6665"/>
           </constraints>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -10336,6 +12049,24 @@ Although included in an Army as a Unit that includes multiple Models, each Model
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba56-9108-b767-949e"/>
               </constraints>
             </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="d28d-434c-4f2a-aceb" name="Frag grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="45b1-ffa4-45a5-88bc"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e7e-03b2-463b-b7e0"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="c824-3d32-46ac-a751" name="Krak grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0073-7a1a-4c0c-bec4"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cff3-8373-4263-882a"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="ce3d-dced-4262-8dd9" id="4668-1e96-4c09-af10" name="Frag Grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5ea-e02b-4196-a99e"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75f5-9d29-4af8-b588"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="32e7-ab4d-f7a2-c452" primary="false" name="Infantry Model Type"/>
@@ -10343,7 +12074,7 @@ Although included in an Army as a Unit that includes multiple Models, each Model
             <categoryLink targetId="af7d-af64-6b7d-da9d" id="0cf6-111d-e679-edc2" primary="false" name="Specialist Model Sub-Type"/>
           </categoryLinks>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Auto-gurney" hidden="false" id="9bff-5cce-ee7f-ce8f" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Auto-gurney" hidden="false" id="9bff-5cce-ee7f-ce8f" sortIndex="2" page="146" publicationId="5469-14da-d0a1-6092">
           <profiles>
             <profile name="Auto-gurney" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="039e-16c4-0506-82d0">
               <characteristics>
@@ -10374,8 +12105,31 @@ Although included in an Army as a Unit that includes multiple Models, each Model
             <categoryLink targetId="594d-fa82-13cb-a345" id="775b-759d-5260-2768" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="af7d-af64-6b7d-da9d" id="8bf0-9b06-5a89-92ed" primary="false" name="Specialist Model Sub-Type"/>
           </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="e943-9332-4461-a19c" name="Frag grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4894-0c1e-47e9-aae1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65cc-2731-4a95-a388"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="ebaa-83da-4622-af98" name="Krak grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f66-7a7e-4b51-b3fe"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b58-c3ce-46d2-9c34"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="ce3d-dced-4262-8dd9" id="a6e3-53be-4420-a1fa" name="Frag Grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98ac-4f06-4ca5-982c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edf1-4409-4f3b-9c6d"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Aevos Jovan" hidden="false" id="a8d2-dc67-295d-2e26" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Aevos Jovan" hidden="false" id="a8d2-dc67-295d-2e26" sortIndex="1" page="146" publicationId="5469-14da-d0a1-6092">
           <profiles>
             <profile name="Aevos Jovan" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="3160-6d52-5975-2538">
               <characteristics>
@@ -10398,7 +12152,7 @@ Although included in an Army as a Unit that includes multiple Models, each Model
             </profile>
           </profiles>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="50"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -10441,6 +12195,29 @@ Although included in an Army as a Unit that includes multiple Models, each Model
             <categoryLink targetId="af7d-af64-6b7d-da9d" id="ebe6-dd82-a76f-7306" primary="false" name="Specialist Model Sub-Type"/>
             <categoryLink targetId="594d-fa82-13cb-a345" id="c56c-fbf5-0299-bb2f" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="0759-b844-473b-813b" name="Frag grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="715b-75d6-42b0-87b0"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8938-b746-4f51-ba93"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="ce5f-10f6-40b5-9a46" name="Krak grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="72bc-36f2-4a98-870f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd37-1b56-4362-8f3c"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="ce3d-dced-4262-8dd9" id="2213-18d7-413a-8179" name="Frag Grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="286e-b4bf-4097-a70f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b25f-b5fe-45a5-a896"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <comment>warning: !BSC 20250828-1757
+Could not find wargear Phase lancet
+	 Checked under Phase lancet</comment>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -10499,10 +12276,18 @@ While a Unit entirely composed of Models with the Solar Auxilia Trait includes a
       <categoryLinks>
         <categoryLink targetId="b980-187b-2b17-d635" id="a2ff-59eb-e01b-be58" primary="false" name="Unique Model Sub-Type"/>
       </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+      </costs>
+      <comment>warning: !BSC 20250828-1757
+Could not find profile for Aevos Jovan and 1 Auto-gurney in [&apos;Medicae Orderly&apos;, &apos;Auto-gurney&apos;, &apos;Aevos Jovan&apos;] 
+
+Could not find profile for Medicae Orderlies in [&apos;Medicae Orderly&apos;, &apos;Auto-gurney&apos;, &apos;Aevos Jovan&apos;] 
+</comment>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Tarantula Section" hidden="false" id="5c1a-1910-9a09-75cd">
+    <selectionEntry type="unit" import="true" name="Tarantula Section" hidden="false" id="5c1a-1910-9a09-75cd" page="155" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Tarantula Sentry Gun" hidden="false" id="1464-db05-6246-ecbb" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Tarantula Sentry Gun" hidden="false" id="1464-db05-6246-ecbb" sortIndex="1" page="155" publicationId="5469-14da-d0a1-6092">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="965b-477b-3bc0-a64d" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="69f7-17e3-b302-702f" includeChildSelections="false"/>
@@ -10523,7 +12308,7 @@ While a Unit entirely composed of Models with the Solar Auxilia Trait includes a
             </profile>
           </profiles>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="17.5"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -10548,6 +12333,33 @@ While a Unit entirely composed of Models with the Solar Auxilia Trait includes a
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="126d-51bf-858e-4c4f" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Any Model in this Unit may have its Turret Mounted twin heavy bolter exchanged for " id="3e87-53ed-472a-b878">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75" id="94be-8669-4e79-b6f2" name="Twin heavy bolter">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted twin heavy bolter"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="969f-b6f9-4ac0-ac40"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a" id="39b3-54ee-4fea-a6a1" name="Twin lascannon">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted twin lascannon"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38aa-caa5-4e1b-bfc8"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d5f-7e24-4c84-a5e1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3c8-08db-4acc-85c2"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink name="Vehicle Model Type" hidden="false" id="f9b7-8b2f-7ed9-60a5" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
@@ -10570,7 +12382,7 @@ While a Unit entirely composed of Models with the Solar Auxilia Trait includes a
         <infoLink name="[Allegiance]" id="532d-fd88-82b4-3d40" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
       </infoLinks>
       <costs>
-        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <entryLinks>
@@ -10588,7 +12400,7 @@ While a Unit entirely composed of Models with the Solar Auxilia Trait includes a
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Thunderer Siege Tank" hidden="false" id="5f1d-fcf5-c23f-dd55">
+    <selectionEntry type="unit" import="true" name="Thunderer Siege Tank" hidden="false" id="5f1d-fcf5-c23f-dd55" page="160" publicationId="5469-14da-d0a1-6092">
       <profiles>
         <profile name="Solar Auxilia" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="8be0-a97a-bba3-39ed">
           <characteristics>
@@ -10597,7 +12409,7 @@ While a Unit entirely composed of Models with the Solar Auxilia Trait includes a
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Thunderer Siege Tank" hidden="false" id="2aac-90db-4cdf-aa9e" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Thunderer Siege Tank" hidden="false" id="2aac-90db-4cdf-aa9e" sortIndex="1" page="160" publicationId="5469-14da-d0a1-6092">
           <profiles>
             <profile name="Thunderer Siege Tank" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="0c1e-df0d-70d8-ad18">
               <characteristics>
@@ -10620,6 +12432,76 @@ While a Unit entirely composed of Models with the Solar Auxilia Trait includes a
           <categoryLinks>
             <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="17bc-d576-2c8d-a293" primary="false" name="Vehicle Model Type"/>
           </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="4514-8e18-77b4-a141" id="44ac-c360-4129-88e5" name="Demolisher cannon">
+              <modifiers>
+                <modifier type="set" field="name" value="Centreline Mounted demolisher cannon"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85af-e785-40dc-8f2d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1864-fd4d-4caf-b684"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="5d4c-2c95-4e4f-9fed">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="0266-b015-86e4-8953" id="cd16-e5fd-4b07-9c0f" name="Auxilia Pintle Weapons">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c60-82fd-49b2-9d2c"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38f4-878d-4452-ad34"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="af76-f8f4-4bf7-93fa">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" id="e2dd-ed7f-4659-bcd2" name="Hunter-killer missile">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="One Hull (Front) Mounted hunter-killer missile"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcff-1612-4706-80db"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="496e-da18-2afa-b99c" id="d506-c153-48f5-8709" name="Dozer blade">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8889-d01a-4062-a4e0"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="b98f-15db-44f4-9a49" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8faf-76e8-44bb-8338"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="00a3-9972-4ae8-a603" id="8480-000c-4f4c-ac86" name="Dozer Blade">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a12-5f03-4dc8-bf97"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fe0-922b-4550-af67"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -10648,7 +12530,7 @@ While a Unit entirely composed of Models with the Solar Auxilia Trait includes a
         <infoLink name="Smokescreen" id="2f4a-df14-8bbb-cda6" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
       </infoLinks>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="155"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="155"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -10687,6 +12569,8 @@ While a Unit entirely composed of Models with the Solar Auxilia Trait includes a
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: None</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Tremor cannon" hidden="false" id="e182-6fa3-05c3-7604">
       <profiles>
