@@ -1,3 +1,7 @@
+from unittest.util import _count_diff_all_purpose, _count_diff_hashable
+
+import collections
+
 import os
 import sys
 import unittest
@@ -488,6 +492,50 @@ class GameTests(unittest.TestCase):
                         self.assertEqual(se.type, "selectionEntry:model",
                                          f"{type_category.name} should not be linked on {se}")
 
+    def test_unique_models_are_max_1(self):
+        expected_attribs = {
+            "type": "max",
+            "value": "1",
+            "field": "selections",
+            "scope": "roster",
+            "shared": "true",
+            "includeChildSelections": "true",
+            "includeChildForces": "true",
+        }
+        for unique_type_link in self.system.nodes_with_ids.filter(lambda x:
+                                                                  x.tag == "categoryLink"
+                                                                  and x.target_name == "Unique Model Sub-Type"
+                                                                  ):
+            unit = unique_type_link.find_ancestor_with(lambda x: x.type == "selectionEntry:unit")
+            if unit is None:
+                continue
+            with self.subTest(f"max 1 on unique unit {unit}"):
+                constraints = unit.get_child("constraints")
+                self.assertIsNotNone(constraints, "Unique units should have constraints")
+                if len(constraints.children) == 1:
+                    max_constraint = constraints.get_child("constraint", {"type": "max"})
+                    self.assertIsNotNone(max_constraint, "Unique units should have max constraint")
+
+                    attribs = max_constraint.attrib.copy()
+                    attribs.pop("id")  # Ignore id
+                    self.assertCountEqual(attribs, expected_attribs, "Max constraint properties")
+                    continue
+                else:  # Multiple options which could be the max.
+                    found = False
+                    for constraint in constraints.children:
+                        attribs = constraint.attrib.copy()
+                        attribs.pop("id")  # Ignore id
+                        first_seq, second_seq = list(attribs), list(expected_attribs)
+                        try:
+                            first = collections.Counter(first_seq)
+                            second = collections.Counter(second_seq)
+                        except TypeError:
+                            pass  # Unhashable elements
+                        else:
+                            if first == second:
+                                found = True
+                                break
+                    self.assertTrue(found, f"A constraint matching {expected_attribs}")
 
 
 if __name__ == '__main__':

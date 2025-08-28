@@ -204,6 +204,9 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="12a7-d6af-1a32-c299" primary="false" name="Master of the Legion"/>
         <categoryLink targetId="4381-ed35-c3fa-a225" id="b45a-d13a-c404-ae95" primary="false" name="Loyalist"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" id="936d-59a4-4ff9-9469" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Artificer Power Axe" hidden="false" id="68e3-de15-d977-3c36">
       <profiles>
@@ -816,7 +819,7 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="c3e9-2ee6-8aaa-ac4a" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="6"/>
       </entryLinks>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f24a-0a7d-d0a8-77ae" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f24a-0a7d-d0a8-77ae" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <modifiers>
         <modifier type="set" value="true" field="hidden">

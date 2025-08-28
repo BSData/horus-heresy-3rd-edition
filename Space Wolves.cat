@@ -973,7 +973,7 @@ Head-taker: If this Gambit is selected, the Opposing Player may not claim an Out
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="57d5-e479-aade-73c4" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="2"/>
       </entryLinks>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="61b3-f733-f869-87ee" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="61b3-f733-f869-87ee" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -1401,6 +1401,9 @@ Head-taker: If this Gambit is selected, the Opposing Player may not claim an Out
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <constraints>
+        <constraint type="max" id="858c-e203-476e-8127" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Caster of Runes" hidden="false" id="0fe3-fde9-4086-e3ab" publicationId="b905-0414-1057-bb34" page="172">
       <categoryLinks>
