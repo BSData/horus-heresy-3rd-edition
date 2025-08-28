@@ -200,12 +200,13 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="7799-e1d6-762b-700b" id="a605-db02-1e07-f74e" primary="false" name="Paragon Model Type"/>
-        <categoryLink targetId="b980-187b-2b17-d635" id="ab9d-3f6b-950a-aaec" primary="false" name="Unique Model Sub-Type"/>
         <categoryLink targetId="fc09-911b-ee8c-7967" id="5f84-6bf9-420b-2ff2" primary="false" name="Medusan Vanguard Unlock"/>
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="12a7-d6af-1a32-c299" primary="false" name="Master of the Legion"/>
         <categoryLink targetId="4381-ed35-c3fa-a225" id="b45a-d13a-c404-ae95" primary="false" name="Loyalist"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" id="936d-59a4-4ff9-9469" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Artificer Power Axe" hidden="false" id="68e3-de15-d977-3c36">
       <profiles>
@@ -353,9 +354,6 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
         <infoLink name="[Legiones Astartes]" id="afb2-b085-98ed-275d" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="ee11-9bee-a108-1f6d" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="9871-cb62-5283-2216" id="91f0-99cd-d8f5-660c" primary="false" name="Command Model Sub-type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="75fc-559c-2f3d-d4c4" primary="false" name="Heavy Model Sub-Type"/>
         <categoryLink targetId="fc09-911b-ee8c-7967" id="7f3b-787c-0f2a-00e6" primary="false" name="Medusan Vanguard Unlock"/>
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="57d6-8f89-f8ce-9c07" primary="false" name="Master of the Legion"/>
       </categoryLinks>
@@ -683,8 +681,6 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
         </entryLink>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="49b2-dcd2-5148-de73" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="8142-9b7d-040d-cb48" primary="false" name="Heavy Model Sub-Type"/>
         <categoryLink targetId="26c6-e05c-0f72-7852" id="0a83-23d9-7d13-2769" primary="false" name="Shield"/>
       </categoryLinks>
       <costs>
@@ -823,7 +819,7 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="c3e9-2ee6-8aaa-ac4a" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="6"/>
       </entryLinks>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f24a-0a7d-d0a8-77ae" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f24a-0a7d-d0a8-77ae" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -838,9 +834,6 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="4d36-c845-846a-fbb4" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="b980-187b-2b17-d635" id="e4ee-df2c-875f-82e4" primary="false" name="Unique Model Sub-Type"/>
-        <categoryLink targetId="9871-cb62-5283-2216" id="fbdd-098b-e865-5e47" primary="false" name="Command Model Sub-type"/>
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="a0b3-5327-cb3d-c6ce" primary="false" name="Master of the Legion"/>
         <categoryLink targetId="4381-ed35-c3fa-a225" id="d9a4-dc24-9b43-fea8" primary="false" name="Loyalist"/>
       </categoryLinks>
@@ -1104,10 +1097,6 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
           </characteristics>
         </profile>
       </profiles>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="255a-4d25-6bf3-a000" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="348a-fef2-d56f-231f" primary="false" name="Heavy Model Sub-Type"/>
-      </categoryLinks>
       <infoLinks>
         <infoLink name="Bulky (X)" id="ca6c-bd61-b7bf-b05b" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
           <modifiers>
