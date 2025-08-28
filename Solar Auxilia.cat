@@ -6805,9 +6805,6 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
           <constraints/>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear Searchlights
-	 Checked under Searchlights</comment>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="6756-4d96-4461-a012">
               <entryLinks>
@@ -6845,6 +6842,14 @@ Could not find wargear Searchlights
             <categoryLink targetId="a5c6-b359-cecb-e0b1" id="5ec5-a328-4297-b1e8" primary="false" name="Rapid Sub-Type"/>
             <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="ef43-c9cd-4d38-97b1" primary="false" name="Transport Model Sub-Type"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="dc32-c927-45b7-886f" name="Searchlights">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4241-d495-4b93-865e"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7be7-3074-4e1b-8e0d"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -6980,6 +6985,15 @@ Could not find profile for Aurox Transport in [&apos;Aurox&apos;]
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae94-c0e4-4aaf-b5fd"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b481-048c-49e5-aa59"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="51af-9efb-4c72-90be" id="45d4-1510-48d7-8a6c" name="Heavy stubber">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Rear) Mounted heavy stubber"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7ac6-2db5-4f3e-8cec"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a44-195a-4afd-845d"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -7155,17 +7169,26 @@ Could not find rule: None</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2396-b63c-4cf2-8570"/>
               </constraints>
             </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="59bd-244a-4984-a7f0" id="4e66-94cf-4310-a5e0" name="Baneblade cannon">
+              <modifiers>
+                <modifier type="set" field="name" value="Turret Mounted Baneblade cannon"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a93-cd4d-496c-abab"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8d1-11b6-47ea-83d5"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have one of the following selected for it:" id="c4a9-41ed-438e-9123">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1003-37d0-4487-bf1d"/>
+              </constraints>
               <comment>warning: !BSC 20250828-1757
 Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy bolters
 	 Checked under lascannon and two Sponson
 Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy flamers
 	 Checked under lascannon and two Sponson</comment>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1003-37d0-4487-bf1d"/>
-              </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="3e9f-786c-4d41-b76e">
               <entryLinks>
@@ -7192,23 +7215,27 @@ Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twi
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bbc-a81c-4d61-b0cc"/>
                   </constraints>
                 </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="8c21-e8a3-49cb-adc1" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c31-de2e-4681-b497"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Searchlights
-	 Checked under Searchlights</comment>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="459e-fa57-4fb0-a747"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in This Model may have one of the following selected for it:
-Could not find wargear in This Model may have one of the following selected for it:
-Could not find wargear in This Model may have any of the following selected for it:</comment>
           <categoryLinks>
             <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="9e1c-094b-4a8d-917a" primary="false" name="Vehicle Model Type"/>
             <categoryLink targetId="4d42-b711-7946-8e15" id="8e20-8ebe-4ecb-8ceb" primary="false" name="Super-heavy Model Sub-Type"/>
           </categoryLinks>
+          <comment>warning: !BSC 20250828-1759
+Could not find wargear in This Model may have one of the following selected for it:
+Could not find wargear in This Model may have one of the following selected for it:</comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -7417,14 +7444,14 @@ Could not find rule: None</comment>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have one of the following selected for it:" id="6783-5f09-4a25-b25d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61e4-ffbe-4ce9-a65b"/>
+              </constraints>
               <comment>warning: !BSC 20250828-1757
 Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy bolters
 	 Checked under lascannon and two Sponson
 Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy flamers
 	 Checked under lascannon and two Sponson</comment>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61e4-ffbe-4ce9-a65b"/>
-              </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="5e13-b2f4-48ed-8098">
               <entryLinks>
@@ -7451,19 +7478,23 @@ Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twi
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0542-b764-40bd-86c1"/>
                   </constraints>
                 </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="86b4-bb2b-48b0-a046" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2075-e591-4768-b724"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Searchlights
-	 Checked under Searchlights</comment>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6058-963a-4009-9fdd"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <comment>warning: !BSC 20250828-1757
+          <comment>warning: !BSC 20250828-1759
 Could not find wargear in This Model may have one of the following selected for it:
-Could not find wargear in This Model may have one of the following selected for it:
-Could not find wargear in This Model may have any of the following selected for it:</comment>
+Could not find wargear in This Model may have one of the following selected for it:</comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -7652,10 +7683,13 @@ Could not find rule: None</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5aa9-88ea-45e9-8645"/>
               </constraints>
             </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="8beb-ac11-46f3-9548" name="Searchlights">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b13-2656-4fce-909f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d56-5a42-4160-a7c4"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear Searchlights
-	 Checked under Searchlights</comment>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its Turret Mounted volkite culverin exchanged for one of the following:" id="621c-e4a4-457b-bb64">
               <entryLinks>
@@ -7700,17 +7734,28 @@ Could not find wargear Searchlights
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8546-636b-40c4-876e"/>
                   </constraints>
                 </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="4c80-f76f-4a10-80e9" id="cf8d-3127-48e6-abd6" name="Twin multi-laser">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted twin multi-laser"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dff3-bc30-4baa-9d43"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5584-d705-4320-93ac"/>
               </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="This Model may have both of its Sponson Mounted volkite calivers exchanged for " id="86c3-603a-46c0-bc1d">
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear list &apos;Auxilia Sponson Weapons&apos;</comment>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c13d-c1b1-4a9d-bc7c"/>
               </constraints>
+              <comment>warning: !BSC 20250828-1757
+Could not find wargear list &apos;Auxilia Sponson Weapons&apos;</comment>
             </selectionEntryGroup>
             <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="235b-536e-4ea2-b09b">
               <entryLinks>
@@ -8077,14 +8122,14 @@ Exchange was not applied on This Model may have both of its Sponson Mounted volk
               </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="Any Model in this Unit whose lasrifle has been exchanged for " id="a8a2-4b72-4500-87cd">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c45-2d22-4fce-8507"/>
+              </constraints>
               <comment>warning: !BSC 20250828-1757
 Could not find wargear laspistol and charnabal sabre may have its laspistol
 	 Checked under laspistol and charnabal sabre may have its laspistol
 Could not find wargear laspistol and charnabal sabre may have its charnabal sabre
 	 Checked under laspistol and charnabal sabre may have its charnabal sabre</comment>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c45-2d22-4fce-8507"/>
-              </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="Any Model in this Unit with a lasrifle may have any of the following selected for it:" id="4065-8e5e-465f-b8b0">
               <entryLinks>
@@ -8097,12 +8142,12 @@ Could not find wargear laspistol and charnabal sabre may have its charnabal sabr
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Blast-charger
-	 Checked under Blast-charger</comment>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8861-e13d-4b11-a87f"/>
               </constraints>
+              <comment>warning: !BSC 20250828-1757
+Could not find wargear Blast-charger
+	 Checked under Blast-charger</comment>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -8123,6 +8168,12 @@ Could not find wargear Blast-charger
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e91a-f9a1-4b2f-90d7"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4942-184a-4256-8719"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="ce3d-dced-4262-8dd9" id="f63d-9bf6-4141-8864" name="Frag Grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="087f-c904-4160-bf70"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="628a-1146-4f40-be83"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -8398,14 +8449,14 @@ Could not find wargear in Any Model in this Unit with a lasrifle may have any of
               </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="Any Model in this Unit whose lasrifle has been exchanged for " id="d26f-abbe-45d1-9e33">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f85d-9daf-4b73-beae"/>
+              </constraints>
               <comment>warning: !BSC 20250828-1757
 Could not find wargear laspistol and charnabal sabre may have its laspistol
 	 Checked under laspistol and charnabal sabre may have its laspistol
 Could not find wargear laspistol and charnabal sabre may have its charnabal sabre
 	 Checked under laspistol and charnabal sabre may have its charnabal sabre</comment>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f85d-9daf-4b73-beae"/>
-              </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="Any Model in this Unit with a lasrifle may have any of the following selected for it:" id="b3ad-3c25-48a3-9b00">
               <entryLinks>
@@ -8418,12 +8469,12 @@ Could not find wargear laspistol and charnabal sabre may have its charnabal sabr
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Blast-charger
-	 Checked under Blast-charger</comment>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41c2-bcd2-40fd-b828"/>
               </constraints>
+              <comment>warning: !BSC 20250828-1757
+Could not find wargear Blast-charger
+	 Checked under Blast-charger</comment>
             </selectionEntryGroup>
             <selectionEntryGroup name="One Companion in this Unit may have one vox interlock selected for it for +5 Points." id="9634-7722-45f8-82b7">
               <entryLinks>
@@ -8500,6 +8551,12 @@ Could not find wargear Blast-charger
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="321b-5d78-414a-a460"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e92-a755-4d57-bfc8"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="ce3d-dced-4262-8dd9" id="d4af-25fa-4198-943b" name="Frag Grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a60e-1637-4bb1-978b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="771d-d0b6-4686-a530"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -8692,17 +8749,20 @@ Shared on model level not yet implemented for One Companion in this Unit may hav
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14d7-dbd9-4586-bfb9"/>
                   </constraints>
                 </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="e5b5-d8db-4ec1-969a" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4490-85d3-4932-a6c7"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Searchlights
-	 Checked under Searchlights</comment>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae53-fb40-4849-b50d"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in This Model may have any of the following selected for it:</comment>
           <categoryLinks>
             <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="69f1-3ae3-4231-a7c7" primary="false" name="Vehicle Model Type"/>
             <categoryLink targetId="4d42-b711-7946-8e15" id="7478-9bde-4768-b367" primary="false" name="Super-heavy Model Sub-Type"/>
@@ -9105,10 +9165,6 @@ Could not find rule: Ritual Healing</comment>
           <categoryLinks>
             <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="97d9-6913-33bf-41e9" primary="false" name="Vehicle Model Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear Centreline Mounted Proteus laser destroyer
-	 Checked under Proteus laser destroyer
-Could not find wargear in This Model may have any of the following selected for it:</comment>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="d2af-56ae-40a9-a2c0">
               <entryLinks>
@@ -9143,15 +9199,31 @@ Could not find wargear in This Model may have any of the following selected for 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5999-d240-48c5-8764"/>
                   </constraints>
                 </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="5ab7-1428-425f-aa4a" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4ed-f5dc-4d66-8384"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="00a3-9972-4ae8-a603" id="d720-3f39-4317-8b1f" name="Dozer Blade">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ac3-72c3-407f-bab4"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Searchlights
-	 Checked under Searchlights</comment>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d1d-15d3-4d13-bbcb"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <comment>warning: !BSC 20250828-1759
+Could not find wargear Centreline Mounted Proteus laser destroyer
+	 Checked under Proteus laser destroyer</comment>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -9329,6 +9401,12 @@ Could not find rule: None</comment>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="620e-5f0e-1829-6388"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93c6-69e6-2dfd-8537"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="3104-0111-4490-bf84" id="ee66-7bc4-4aa8-8dae" name="Laspistol">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="04e9-64fb-46bf-b5c2"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64d5-31cf-4654-892f"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -9532,14 +9610,14 @@ Could not find rule: Navigator’s Arts</comment>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have one of the following selected for it:" id="7584-54ab-40d1-9a58">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2015-11f9-47d4-ab23"/>
+              </constraints>
               <comment>warning: !BSC 20250828-1757
 Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy bolters
 	 Checked under lascannon and two Sponson
 Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy flamers
 	 Checked under lascannon and two Sponson</comment>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2015-11f9-47d4-ab23"/>
-              </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="a9eb-2a5a-4a6a-8518">
               <entryLinks>
@@ -9566,23 +9644,27 @@ Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twi
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f622-22a6-49c0-9fd2"/>
                   </constraints>
                 </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="6937-8df6-4895-abb4" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5c0-3d15-4055-83b1"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Searchlights
-	 Checked under Searchlights</comment>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8df8-24b4-457a-b576"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in This Model may have one of the following selected for it:
-Could not find wargear in This Model may have one of the following selected for it:
-Could not find wargear in This Model may have any of the following selected for it:</comment>
           <categoryLinks>
             <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="0bb5-ee2a-4629-af4c" primary="false" name="Vehicle Model Type"/>
             <categoryLink targetId="4d42-b711-7946-8e15" id="7da7-2db7-45fd-b619" primary="false" name="Super-heavy Model Sub-Type"/>
           </categoryLinks>
+          <comment>warning: !BSC 20250828-1759
+Could not find wargear in This Model may have one of the following selected for it:
+Could not find wargear in This Model may have one of the following selected for it:</comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -9789,6 +9871,24 @@ Could not find rule: None</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34de-fb4a-4f0e-8754"/>
               </constraints>
             </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="9027-63f4-4780-b5b1" id="e473-57d6-45a5-a387" name="Twin heavy stubber">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Front) Mounted twin heavy stubber"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="94cd-732a-428a-a9be"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5eae-0957-4491-8d16"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="51af-9efb-4c72-90be" id="a720-fa43-44a5-aabd" name="Heavy stubber">
+              <modifiers>
+                <modifier type="set" field="name" value="Two Sponson Mounted heavy stubbers"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c07-99f8-4124-82aa"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="520a-6fd4-464f-8953"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its Turret Mounted twin battlecannon exchanged for one of the following:" id="f784-afe4-4dc9-a48f">
@@ -9879,17 +9979,20 @@ Could not find rule: None</comment>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d14-d368-4b44-8870"/>
                   </constraints>
                 </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="64be-c538-40fd-859f" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f17a-03ed-4733-9520"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Searchlights
-	 Checked under Searchlights</comment>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2512-160b-4a13-a8bf"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in This Model may have any of the following selected for it:</comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -10373,6 +10476,18 @@ Could not find rule: None</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47fd-a518-453f-8926"/>
               </constraints>
             </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="c6db-6d65-4256-ad2a" id="b322-9db3-47e5-8434" name="Needle pistol">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef5d-c074-4c67-a47c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d034-8b0a-46b4-8f0d"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="ce3d-dced-4262-8dd9" id="bc3d-f6c6-41c2-8c58" name="Frag Grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f304-9665-4d38-8a3f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fda-ec75-4396-b47f"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="16c3-9524-e378-336e" primary="false" name="Infantry Model Type"/>
@@ -10463,10 +10578,6 @@ Could not find rule: Medicae Support</comment>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear Centreline (Rear) Mounted twin earthshaker cannon
-	 Checked under twin earthshaker cannon
-Could not find wargear in This Model may have any of the following selected for it:</comment>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have any of the following selected for it:" id="cc66-c01a-4119-86f7">
               <entryLinks>
@@ -10481,15 +10592,23 @@ Could not find wargear in This Model may have any of the following selected for 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74fe-e57b-4372-8f91"/>
                   </constraints>
                 </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="02bc-aaaa-4c34-9372" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d128-07e5-4715-8d08"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Searchlights
-	 Checked under Searchlights</comment>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d991-6759-4dc2-82a3"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <comment>warning: !BSC 20250828-1759
+Could not find wargear Centreline (Rear) Mounted twin earthshaker cannon
+	 Checked under twin earthshaker cannon</comment>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Twin Earthshaker Cannon" hidden="false" id="6601-a6fb-4d6f-dfae" sortIndex="2">
           <profiles>
@@ -10730,17 +10849,20 @@ Could not find rule: None</comment>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3d5-cda4-494c-9074"/>
                   </constraints>
                 </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="d31d-22d1-49ca-b949" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1cf-969f-4cb0-adde"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Searchlights
-	 Checked under Searchlights</comment>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f25e-32f8-4b96-b893"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in This Model may have any of the following selected for it:</comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -10884,14 +11006,14 @@ Could not find profile for Praetor Armoured Assault Launcher in [&apos;Praetor&a
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have one of the following selected for it:" id="bb35-6558-48b9-858e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b51f-f498-4d7d-b600"/>
+              </constraints>
               <comment>warning: !BSC 20250828-1757
 Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy bolters
 	 Checked under lascannon and two Sponson
 Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy flamers
 	 Checked under lascannon and two Sponson</comment>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b51f-f498-4d7d-b600"/>
-              </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="6ad6-aa04-43a4-aff5">
               <entryLinks>
@@ -10918,19 +11040,23 @@ Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twi
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fca6-39de-4ed1-ae1a"/>
                   </constraints>
                 </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="88e9-7335-4c3e-b337" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cdb4-a6ec-4ae7-870b"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Searchlights
-	 Checked under Searchlights</comment>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8cb-806e-48f6-b785"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <comment>warning: !BSC 20250828-1757
+          <comment>warning: !BSC 20250828-1759
 Could not find wargear in This Model may have one of the following selected for it:
-Could not find wargear in This Model may have one of the following selected for it:
-Could not find wargear in This Model may have any of the following selected for it:</comment>
+Could not find wargear in This Model may have one of the following selected for it:</comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -11119,14 +11245,14 @@ Could not find rule: None</comment>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have one of the following selected for it:" id="57aa-8e6b-4d21-bf03">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9fd0-13a6-4744-ade6"/>
+              </constraints>
               <comment>warning: !BSC 20250828-1757
 Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy bolters
 	 Checked under lascannon and two Sponson
 Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy flamers
 	 Checked under lascannon and two Sponson</comment>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9fd0-13a6-4744-ade6"/>
-              </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="2e84-253f-42c8-99c6">
               <entryLinks>
@@ -11153,19 +11279,23 @@ Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twi
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7526-1197-4d52-8887"/>
                   </constraints>
                 </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="1ea8-3f05-4b34-aca1" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e20d-ef4d-474f-b06a"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Searchlights
-	 Checked under Searchlights</comment>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e36d-e90b-438c-a20c"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <comment>warning: !BSC 20250828-1757
+          <comment>warning: !BSC 20250828-1759
 Could not find wargear in This Model may have one of the following selected for it:
-Could not find wargear in This Model may have one of the following selected for it:
-Could not find wargear in This Model may have any of the following selected for it:</comment>
+Could not find wargear in This Model may have one of the following selected for it:</comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -11387,17 +11517,26 @@ Could not find rule: None</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="476e-3468-4741-ba39"/>
               </constraints>
             </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="51af-9efb-4c72-90be" id="19cb-49d5-4449-a3fa" name="Heavy stubber">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Right) Mounted heavy stubber"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd2d-f05c-4737-9959"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a824-c7c0-44b7-b043"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have one of the following selected for it:" id="d946-5358-4877-ac2b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="757d-2182-4abe-b9a3"/>
+              </constraints>
               <comment>warning: !BSC 20250828-1757
 Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy bolters
 	 Checked under lascannon and two Sponson
 Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy flamers
 	 Checked under lascannon and two Sponson</comment>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="757d-2182-4abe-b9a3"/>
-              </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="e6d9-8bf3-4da2-851d">
               <entryLinks>
@@ -11424,24 +11563,28 @@ Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twi
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e13-1e4f-4aaa-9dd7"/>
                   </constraints>
                 </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="9fd9-1708-49b2-a587" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5920-187f-43e5-92b0"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Searchlights
-	 Checked under Searchlights</comment>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="488e-651d-4290-84bc"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in This Model may have one of the following selected for it:
-Could not find wargear in This Model may have one of the following selected for it:
-Could not find wargear in This Model may have any of the following selected for it:</comment>
           <categoryLinks>
             <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="eaa2-8367-48a4-8ebc" primary="false" name="Vehicle Model Type"/>
             <categoryLink targetId="4d42-b711-7946-8e15" id="9e62-fd26-46a7-98fd" primary="false" name="Super-heavy Model Sub-Type"/>
             <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="bc2e-285b-49f7-b009" primary="false" name="Transport Model Sub-Type"/>
           </categoryLinks>
+          <comment>warning: !BSC 20250828-1759
+Could not find wargear in This Model may have one of the following selected for it:
+Could not find wargear in This Model may have one of the following selected for it:</comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -11678,14 +11821,14 @@ Could not find wargear in This Model may have any of the following selected for 
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have one of the following selected for it:" id="195b-bde2-4386-95c8">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c87b-bb3e-42e7-8948"/>
+              </constraints>
               <comment>warning: !BSC 20250828-1757
 Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy bolters
 	 Checked under lascannon and two Sponson
 Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy flamers
 	 Checked under lascannon and two Sponson</comment>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c87b-bb3e-42e7-8948"/>
-              </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="This Model may have one item from the Auxilia Pintle Weapons list selected for it." id="c398-626e-4df9-9da3">
               <entryLinks>
@@ -11712,19 +11855,23 @@ Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twi
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5656-d70a-4ef7-b489"/>
                   </constraints>
                 </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="a779-037c-4bcd-8f32" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ace-83ef-4111-b55a"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Searchlights
-	 Checked under Searchlights</comment>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="501b-f068-4a62-8255"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <comment>warning: !BSC 20250828-1757
+          <comment>warning: !BSC 20250828-1759
 Could not find wargear in This Model may have one of the following selected for it:
-Could not find wargear in This Model may have one of the following selected for it:
-Could not find wargear in This Model may have any of the following selected for it:</comment>
+Could not find wargear in This Model may have one of the following selected for it:</comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -11914,6 +12061,12 @@ Could not find rule: None</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cff3-8373-4263-882a"/>
               </constraints>
             </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="ce3d-dced-4262-8dd9" id="4668-1e96-4c09-af10" name="Frag Grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5ea-e02b-4196-a99e"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75f5-9d29-4af8-b588"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="32e7-ab4d-f7a2-c452" primary="false" name="Infantry Model Type"/>
@@ -11966,6 +12119,12 @@ Could not find rule: None</comment>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f66-7a7e-4b51-b3fe"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b58-c3ce-46d2-9c34"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="ce3d-dced-4262-8dd9" id="a6e3-53be-4420-a1fa" name="Frag Grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98ac-4f06-4ca5-982c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edf1-4409-4f3b-9c6d"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -12036,9 +12195,6 @@ Could not find rule: None</comment>
             <categoryLink targetId="af7d-af64-6b7d-da9d" id="ebe6-dd82-a76f-7306" primary="false" name="Specialist Model Sub-Type"/>
             <categoryLink targetId="594d-fa82-13cb-a345" id="c56c-fbf5-0299-bb2f" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear Phase lancet
-	 Checked under Phase lancet</comment>
           <entryLinks>
             <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="0759-b844-473b-813b" name="Frag grenades">
               <constraints>
@@ -12052,7 +12208,16 @@ Could not find wargear Phase lancet
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd37-1b56-4362-8f3c"/>
               </constraints>
             </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="ce3d-dced-4262-8dd9" id="2213-18d7-413a-8179" name="Frag Grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="286e-b4bf-4097-a70f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b25f-b5fe-45a5-a896"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
+          <comment>warning: !BSC 20250828-1757
+Could not find wargear Phase lancet
+	 Checked under Phase lancet</comment>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -12315,17 +12480,28 @@ Could not find profile for Medicae Orderlies in [&apos;Medicae Orderly&apos;, &a
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8889-d01a-4062-a4e0"/>
                   </constraints>
                 </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="b98f-15db-44f4-9a49" name="Searchlights">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8faf-76e8-44bb-8338"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="00a3-9972-4ae8-a603" id="8480-000c-4f4c-ac86" name="Dozer Blade">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a12-5f03-4dc8-bf97"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Searchlights
-	 Checked under Searchlights</comment>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fe0-922b-4550-af67"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in This Model may have any of the following selected for it:</comment>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>

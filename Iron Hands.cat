@@ -1220,6 +1220,12 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce6a-800e-4df1-b537"/>
               </constraints>
             </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="ce3d-dced-4262-8dd9" id="ea91-3fa8-4693-a806" name="Frag Grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3290-c627-4cd4-97a1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93dd-28f2-4896-b536"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its bolter and/or bolt pistol exchanged for one item from the Legion Officer Wargear list or one of the following:" id="a45e-0927-4c1a-9bef">
@@ -1250,10 +1256,15 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="57da-b99c-430e-acd1"/>
                   </constraints>
                 </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="bbad-642f-4089-9685" id="b9bc-b73d-4cd8-abe6" name="Archaeotech pistol">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e68a-8c48-4f52-bffb"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Archaeotech pistol
-	 Checked under Archaeotech pistol</comment>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8d48-4e84-4e37-82cf"/>
               </constraints>
@@ -1350,8 +1361,6 @@ Could not find wargear Archaeotech pistol
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in This Model may have its bolter and/or bolt pistol exchanged for one item from the Legion Officer Wargear list or one of the following:</comment>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="4dae-6ffa-407b-8a87" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="9871-cb62-5283-2216" id="31ef-5392-406a-a241" primary="false" name="Command Model Sub-type"/>
@@ -1413,9 +1422,6 @@ Exchange was not applied on This Model may have its bolter and bolt pistol excha
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup name="Any Model in this Unit may have its power weapon exchanged for one of the following:" id="a9eb-57d9-41bc-8980">
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Power weapon
-	 Checked under Power weapon</comment>
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="68e3-de15-d977-3c36" id="9c47-8d9e-46c0-9904" name="Artificer Power Axe">
                   <constraints>
@@ -1450,6 +1456,9 @@ Could not find wargear Power weapon
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5474-ef5b-4704-b7e5"/>
               </constraints>
+              <comment>warning: !BSC 20250828-1757
+Could not find wargear Power weapon
+	 Checked under Power weapon</comment>
             </selectionEntryGroup>
             <selectionEntryGroup name="Any Model in this Unit may have its combi-bolter exchanged for one of the following:" id="db90-4e18-49d8-b796">
               <entryLinks>
@@ -1497,12 +1506,12 @@ Could not find wargear Power weapon
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in Any Model in this Unit may have its power weapon exchanged for one of the following:</comment>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="3534-7b8d-40bb-a04e" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="a741-53c0-491e-940d" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
+          <comment>warning: !BSC 20250828-1757
+Could not find wargear in Any Model in this Unit may have its power weapon exchanged for one of the following:</comment>
         </selectionEntry>
         <selectionEntry type="model" name="Augmentor" id="baaf-6454-49e9-a93b" page="116" publicationId="5469-14da-d0a1-6092">
           <profiles>
@@ -1535,9 +1544,6 @@ Could not find wargear in Any Model in this Unit may have its power weapon excha
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup name="Any Model in this Unit may have its power weapon exchanged for one of the following:" id="50c2-b4f4-4a94-a8aa">
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Power weapon
-	 Checked under Power weapon</comment>
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="68e3-de15-d977-3c36" id="e0af-5bd3-4f5d-b38b" name="Artificer Power Axe">
                   <constraints>
@@ -1572,6 +1578,9 @@ Could not find wargear Power weapon
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="514e-cda6-4b14-9f42"/>
               </constraints>
+              <comment>warning: !BSC 20250828-1757
+Could not find wargear Power weapon
+	 Checked under Power weapon</comment>
             </selectionEntryGroup>
             <selectionEntryGroup name="Any Model in this Unit may have its combi-bolter exchanged for one of the following:" id="6be6-e84d-4926-b915">
               <entryLinks>
@@ -1622,13 +1631,13 @@ Could not find wargear Power weapon
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in Any Model in this Unit may have its power weapon exchanged for one of the following:</comment>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="41c6-96ef-4463-bbd7" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="0ea4-3db7-4baa-be57" primary="false" name="Sergeant Model Sub-Type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="71b2-fc28-45d4-96e5" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
+          <comment>warning: !BSC 20250828-1757
+Could not find wargear in Any Model in this Unit may have its power weapon exchanged for one of the following:</comment>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
