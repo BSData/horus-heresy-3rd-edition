@@ -17283,7 +17283,7 @@
               </conditionGroups>
               <comment>Mechanicum only</comment>
             </modifier>
-            <modifier type="set" value="1" field="8613-3ef7-c5b4-4ccb">
+            <modifier type="set" value="1" field="0d54-af57-44fa-bce3">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="7e6f-65f7-7535-9ffc" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
