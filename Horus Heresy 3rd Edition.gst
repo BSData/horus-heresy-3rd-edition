@@ -18625,6 +18625,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
     <publication name="Legacies of the Age of Darkness: Talons of the Emperor" id="09c6-1c1d-03a7-9556" hidden="false" shortName="TE: Legacies" publisher="Warhammer Community" publicationDate="July 25, 2025" publisherUrl="https://www.warhammer-community.com/en-gb/downloads/warhammer-the-horus-heresy/"/>
     <publication name="Github" id="e0e7-6fcd-7ee7-448d" hidden="false" publisherUrl="https://github.com/BSData/horus-heresy-3rd-edition" shortName="Github"/>
     <publication name="Horus Heresy - Liber Mechanicum 3rd Edition" id="4dc3-3347-238d-99b5" hidden="false" shortName="LM 3.0" publicationDate="July 26, 2025"/>
+    <publication name="Legacies of the Age of Darkness: The Imperialis Militia" id="f5e5-c199-d3d4-ccf6" hidden="false" shortName="Militia: Legacies" publicationDate="August 28, 2025" publisher="Warhammer Community" publisherUrl="https://www.warhammer-community.com/en-gb/downloads/warhammer-the-horus-heresy/"/>
   </publications>
   <costTypes>
     <costType name="Point(s)" id="9893-c379-920b-8982" defaultCostLimit="-1"/>
