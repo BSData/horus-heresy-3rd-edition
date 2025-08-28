@@ -30,7 +30,6 @@ jobs:
         SYSTEM_NAME=$(echo "${{ github.repository }}" | cut -d '/' -f 2)
         echo "SYSTEM_NAME=$(SYSTEM_NAME)" >> $GITHUB_ENV
         echo "Repo path is ${{ github.workspace }}/${{ github.repository }}"
-        ls ${{ github.workspace }}/${{ github.repository }}
     - name: set pythonpath
       run: |
         echo "PYTHONPATH=." >> $GITHUB_ENV
@@ -39,7 +38,7 @@ jobs:
       run: |      
         python3 system/tests/basic_system_checks.py
       env:
-        DEFAULT_DATA_DIRECTORY: ${{ github.workspace }}/${{ github.repository }}/..
+        DEFAULT_DATA_DIRECTORY: ${{ github.workspace }}/${{ github.repository }}/../
 
 
 #    - uses: BSData/check-datafiles@v1
