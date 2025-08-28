@@ -28,6 +28,10 @@ jobs:
       id: validity
       run: |      
         SYSTEM_NAME=$(echo "${{ github.repository }}" | cut -d '/' -f 2)
+        echo $SYSTEM_NAME
+        pwd
+        ls 
+        ls BSCopy
         python3 BSCopy/tests/basic_system_checks.py
       working-directory: 'tests'
       env:
