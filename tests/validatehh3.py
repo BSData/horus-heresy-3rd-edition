@@ -525,16 +525,10 @@ class GameTests(unittest.TestCase):
                     for constraint in constraints.children:
                         attribs = constraint.attrib.copy()
                         attribs.pop("id")  # Ignore id
-                        first_seq, second_seq = list(attribs), list(expected_attribs)
-                        try:
-                            first = collections.Counter(first_seq)
-                            second = collections.Counter(second_seq)
-                        except TypeError:
-                            pass  # Unhashable elements
-                        else:
-                            if first == second:
-                                found = True
-                                break
+
+                        if Node.are_attribs_equal(attribs, expected_attribs):
+                            found = True
+                            break
                     self.assertTrue(found, f"A constraint matching {expected_attribs}")
 
 
