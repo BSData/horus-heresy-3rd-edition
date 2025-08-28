@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="20" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="22" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Anacharis Scoria" hidden="false" id="10f5-dae8-f081-d82f" sortIndex="29">
       <infoLinks>
@@ -9183,30 +9183,23 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="b23a-7ef9-fe5e-a554" primary="true" name="Command"/>
       </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4f19-3023-0077-1049" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </entryLink>
     <entryLink import="true" name="Magos on Abeyant" hidden="false" id="945b-b281-c049-2dfc" type="selectionEntry" targetId="0836-d574-9d22-307f" sortIndex="4">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="2686-9224-a74a-9f31" primary="true" name="Command"/>
       </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4f19-3023-0077-1049" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </entryLink>
     <entryLink import="true" name="Arcuitor Magisterium" hidden="false" id="0701-af75-3ed0-5330" type="selectionEntry" targetId="d704-b125-8dc3-7ba2" sortIndex="5">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="c3fc-d446-047f-fdd9" primary="true" name="Command"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="d798-77b3-0f8e-d492" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="4f19-3023-0077-1049" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Scyllax Guardian Maniple" hidden="false" id="7fd7-738d-d9d2-a73c" type="selectionEntry" targetId="deed-12c8-f6e8-d95c" sortIndex="6">
       <categoryLinks>
@@ -9223,9 +9216,9 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         <categoryLink targetId="5d5e-958f-e388-50b5" id="1e66-3777-f90d-7cae" primary="true" name="Elites"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
+        <modifier type="set-primary" value="51e9-3e9e-3e09-f4c7" field="category">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1db9-6dc0-7da5-e517" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="dbe3-9946-d4de-dc73" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -9235,9 +9228,9 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         <categoryLink targetId="5d5e-958f-e388-50b5" id="1e44-1526-878a-f276" primary="true" name="Elites"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
+        <modifier type="set-primary" value="cd91-8631-13b1-59d5" field="category">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="dbe3-9946-d4de-dc73" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1db9-6dc0-7da5-e517" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -9247,9 +9240,9 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         <categoryLink targetId="5d5e-958f-e388-50b5" id="f96f-6dd4-2d80-4ee3" primary="true" name="Elites"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
+        <modifier type="set-primary" value="cd91-8631-13b1-59d5" field="category">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="dbe3-9946-d4de-dc73" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1db9-6dc0-7da5-e517" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -9258,13 +9251,6 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="f34b-c6c6-d147-5dbe" primary="true" name="Heavy Assault"/>
       </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d5e2-3162-f591-6a81" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </entryLink>
     <entryLink import="true" name="Ursarax Cohort" hidden="false" id="a8e1-7ca7-b17e-8f51" type="selectionEntry" targetId="4d8f-5e38-5902-0947" sortIndex="12">
       <categoryLinks>
@@ -9316,23 +9302,30 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="86c2-b257-0377-d201" primary="true" name="Support"/>
       </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Thanatar Siege Maniple" hidden="false" id="d3c4-a71a-85bf-01f2" type="selectionEntry" targetId="3833-2f09-7ec7-b5f5" sortIndex="17">
-      <categoryLinks>
-        <categoryLink targetId="2499-7239-685f-8465" id="eb74-6423-8710-e7da" primary="true" name="War-engine"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Armiger Moirax" hidden="false" id="2646-d42e-7383-0e94" type="selectionEntry" targetId="1777-db1a-0cd5-6a89" sortIndex="18">
-      <categoryLinks>
-        <categoryLink targetId="2499-7239-685f-8465" id="5ed8-70f1-5983-ce5a" primary="true" name="War-engine"/>
-      </categoryLinks>
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
+        <modifier type="set-primary" value="6670-8971-59cb-b440" field="category">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="dbe3-9946-d4de-dc73" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Thanatar Siege Maniple" hidden="false" id="d3c4-a71a-85bf-01f2" type="selectionEntry" targetId="3833-2f09-7ec7-b5f5" sortIndex="17">
+      <categoryLinks>
+        <categoryLink targetId="2499-7239-685f-8465" id="eb74-6423-8710-e7da" primary="true" name="War-engine"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="a212-e7c6-7b8c-f480" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="dbe3-9946-d4de-dc73" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Armiger Moirax" hidden="false" id="2646-d42e-7383-0e94" type="selectionEntry" targetId="1777-db1a-0cd5-6a89" sortIndex="18">
+      <categoryLinks>
+        <categoryLink targetId="2499-7239-685f-8465" id="5ed8-70f1-5983-ce5a" primary="true" name="War-engine"/>
+      </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Triaros Armoured Conveyor" hidden="false" id="b0a1-0f87-385f-4239" type="selectionEntry" targetId="0896-07f4-8844-9542" sortIndex="19">
       <categoryLinks>
