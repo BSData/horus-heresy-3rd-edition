@@ -17596,7 +17596,7 @@
           </categoryLinks>
           <constraints>
             <constraint type="min" value="0" field="forces" scope="parent" shared="true" id="8613-3ef7-c5b4-4ccb" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="forces" scope="parent" shared="true" id="5df5-5821-ea4c-d0e1" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="5df5-5821-ea4c-d0e2" includeChildSelections="false"/>
           </constraints>
         </forceEntry>
       </forceEntries>
