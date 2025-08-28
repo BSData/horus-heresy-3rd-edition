@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="49" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="50" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -19209,6 +19209,16 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
       <characteristics>
         <characteristic name="Difficulty:" typeId="86d3-2d27-fd61-d020"/>
         <characteristic name="Range:" typeId="af46-4595-7eda-1c84"/>
+      </characteristics>
+    </profile>
+    <profile name="Medic!" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="f2f4-a5e4-fc21-805b">
+      <characteristics>
+        <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reactive Player to make Recovery Tests for a Unit that is the target of a Shooting Attack if the Target Unit has a Medic.</characteristic>
+        <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Medic! Advanced Reaction in Step 9 of any Shooting Attack if the Target Unit of the Shooting Attack includes one or more Models with the Medic (X) Special Rule.</characteristic>
+        <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Medic! Reaction, this cost paid as soon as the declaration is made.</characteristic>
+        <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit which is the target of a Shooting Attack that triggered the Reaction. Once the cost has been paid, the Reactive Player must select one eligible Unit under their control that is a target of that Shooting Attack. That Unit is the Reacting Unit.</characteristic>
+        <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once a Medic! Advanced Reaction has been declared, the Active Player continues resolving that Shooting Attack.
+2. In Step 11 of that Shooting Attack, the Reactive Player may make one Recovery Test for each Model in the Target Unit that is allocated an Unsaved Wound - but no more than one Recovery Test may be made for any single Model. However, no Recovery Tests may be made for any Model in the Target Unit that has the Medic (X) Special Rule.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
