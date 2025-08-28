@@ -27,7 +27,7 @@ jobs:
         python-version: '3.11'
     - name: Get game system name from repo name
       run: |
-        SYSTEM_NAME=$(dirname "${{ github.repository }}")
+        SYSTEM_NAME=$(basename "${{ github.repository }}")
         echo "System Name: $SYSTEM_NAME"
         echo "SYSTEM_NAME=$SYSTEM_NAME" >> $GITHUB_ENV
       env:
