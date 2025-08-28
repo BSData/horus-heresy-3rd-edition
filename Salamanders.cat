@@ -608,7 +608,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Cassian Dracos Reborn" hidden="false" id="84e1-2bda-1d5b-2b23" sortIndex="4">
+    <selectionEntry type="unit" import="true" name="Cassian Dracos Reborn" hidden="false" id="84e1-2bda-1d5b-2b23" sortIndex="4" page="136" publicationId="5469-14da-d0a1-6092">
       <categoryLinks>
         <categoryLink targetId="38d4-d720-8009-acd3" id="6551-60db-a4dc-dc4b" primary="false" name="Walker Model Type"/>
         <categoryLink targetId="b980-187b-2b17-d635" id="6fd9-9833-8123-d838" primary="false" name="Unique Model Sub-Type"/>
@@ -692,6 +692,60 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
             <categoryLink targetId="b980-187b-2b17-d635" id="651b-5ca7-449d-b9f6" primary="false" name="Unique Model Sub-Type"/>
           </categoryLinks>
         </selectionEntry>
+        <selectionEntry type="model" name="Cassian Dracos" id="6a72-3aab-4017-bca1" page="136" publicationId="5469-14da-d0a1-6092">
+          <profiles>
+            <profile id="bef5-cf68-417b-a693" name="Cassian Dracos" typeId="a76f-8e23-8c3e-166d">
+              <characteristics>
+                <characteristic typeId="a106-a779-d272-5e93" name="M">6</characteristic>
+                <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
+                <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">5</characteristic>
+                <characteristic typeId="498f-dce1-59fd-d8d7" name="S">7</characteristic>
+                <characteristic typeId="3120-8275-e537-ecd2" name="T">7</characteristic>
+                <characteristic typeId="f5cc-79a3-d302-cc1d" name="W">8</characteristic>
+                <characteristic typeId="af9d-7db8-dc95-71c1" name="I">3</characteristic>
+                <characteristic typeId="024e-bdb1-7982-25a0" name="A">4</characteristic>
+                <characteristic typeId="02ad-ebe6-86e7-9fd6" name="LD">12</characteristic>
+                <characteristic typeId="9cd1-0e7c-2cd6-5f2f" name="CL">12</characteristic>
+                <characteristic typeId="f714-1726-37d3-44df" name="WP">6</characteristic>
+                <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">8</characteristic>
+                <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">2+</characteristic>
+                <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
+                <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Walker (Unique)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a0e-c60b-4cf4-af61"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b74-3bc6-48d6-8bfe"/>
+          </constraints>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="ea00-ac16-4ae6-87d3" id="490d-772d-4476-a9c0" name="Gravis power fist">
+              <modifiers>
+                <modifier type="set" field="name" value="Two Gravis power fists"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="93b0-1bdc-44c4-80d9"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d00d-c86d-45de-ab24"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="6d3e-3152-c52f-1d66" id="dcda-f93c-4491-bed7" name="Forge-crafted heavy flamer">
+              <modifiers>
+                <modifier type="set" field="name" value="Two forge-crafted heavy flamers"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8d1f-2077-40dd-9efd"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0de-2a08-4eb9-b22a"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink targetId="38d4-d720-8009-acd3" id="faf0-e303-448c-8305" primary="false" name="Walker Model Type"/>
+            <categoryLink targetId="b980-187b-2b17-d635" id="bc5f-3368-494e-91eb" primary="false" name="Unique Model Sub-Type"/>
+          </categoryLinks>
+        </selectionEntry>
       </selectionEntries>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9be1-fdbb-0b7a-f721" includeChildSelections="true" includeChildForces="true"/>
@@ -701,6 +755,22 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
         <infoLink name="[Legiones Astartes]" id="b5d7-0d03-40b7-7bb7" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
         <infoLink name="Smokescreen" id="5166-c284-78fe-5ddd" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
         <infoLink name="Cybertheurgist" id="23df-22ba-0da7-a6d1" hidden="false" type="profile" targetId="e4bc-7baa-05c4-6945"/>
+        <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="f005-7137-4495-85d3">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (6)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Explodes (X)" hidden="false" type="rule" targetId="da5b-b871-20da-3e70" id="dce0-a2fd-41bc-a87c">
+          <modifiers>
+            <modifier type="set" field="name" value="Explodes (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="81de-ebbd-443d-b2aa"/>
+        <infoLink name="Battlesmith (X)" hidden="false" type="rule" targetId="c3db-d17c-fd46-eb01" id="ade1-5e27-4e41-ba8d">
+          <modifiers>
+            <modifier type="set" field="name" value="Battlesmith (1)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -710,7 +780,7 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
         </modifier>
       </modifiers>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="220"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="220"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -723,10 +793,13 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: Drakenscale Armour
+Could not find rule: Whispers of Isstvan</comment>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Salamanders Adherents Squad" hidden="false" id="fecf-8e98-157d-e5ae" sortIndex="5">
+    <selectionEntry type="unit" import="true" name="Salamanders Adherents Squad" hidden="false" id="fecf-8e98-157d-e5ae" sortIndex="5" page="137" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Advocate" hidden="false" id="91a8-6553-1938-aae3" defaultAmount="1" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Advocate" hidden="false" id="91a8-6553-1938-aae3" defaultAmount="1" sortIndex="1" page="137" publicationId="5469-14da-d0a1-6092">
           <profiles>
             <profile name="Advocate" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="b4ed-af7f-6c81-77cf">
               <characteristics>
@@ -805,6 +878,39 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup name="The Advocate in this Unit may have its chainsword exchanged for " id="78e1-6d68-4c89-92d0">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="1631-43e3-47c6-a091" name="Chainsword">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3ad-b270-4762-8181"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" id="ac72-932b-4651-bad5" name="Legion Sergeant Melee Weapons">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92e8-6805-4001-8532"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4293-203b-4498-b703"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adbb-d12b-4b6a-965d"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="The Advocate in this Unit may have melta bombs selected for it for +10 Points." id="c21e-df33-41d7-9166">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" id="ca59-abb4-4e2e-93b2" name="Melta bombs">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a93b-926b-43bc-87c9"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d49f-8faf-4b7a-bda2"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Combi-flamer" hidden="false" id="3819-0f37-b776-31dc" type="selectionEntry" targetId="4be6-cb80-d54b-f156">
@@ -813,9 +919,30 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b30-5120-0380-f78e" includeChildSelections="false"/>
               </constraints>
             </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="b5c4-d0fd-4b70-a760" name="Bolt pistol">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d8e-ffb4-4631-9153"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dfe-61a1-43ab-bab6"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="e33a-28fa-42a0-a1b5" name="Frag grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cfed-7ec1-4a57-bb1d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="592e-7f32-4460-a13b"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="0484-544e-4247-beb1" name="Krak grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b2ed-ebc0-4f08-8b36"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d603-d0e4-40c9-b042"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Adherent" hidden="false" id="8a28-2d25-a523-c78e" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Adherent" hidden="false" id="8a28-2d25-a523-c78e" sortIndex="2" page="137" publicationId="5469-14da-d0a1-6092">
           <profiles>
             <profile name="Adherent" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="e188-d283-46be-00ce">
               <characteristics>
@@ -918,9 +1045,50 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntryGroup>
+            <selectionEntryGroup name="For every five models in this Unit, one Adherent in this Unit may have its combi-flamer exchanged for " id="528b-6ab9-4546-b8ec">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="4be6-cb80-d54b-f156" id="ee05-5126-4f52-8d1c" name="Combi-flamer">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f6f-7061-4c2a-b78b"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="6d3e-3152-c52f-1d66" id="0db1-f3d6-489a-87be" name="Forge-crafted heavy flamer">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec35-18fc-49fa-a7e9"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9e8a-9125-460a-91eb"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cabe-bd7d-4782-b1b6"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="One Adherent in this Unit may have one vexilla selected for it for +10 Points." id="192b-e004-4a0b-8c27">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="dfcd-0669-ad43-28aa" id="0fc4-545c-46d9-ab57" name="Vexilla">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db37-cd98-46e4-8bc9"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd64-3d6c-439d-a986"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Up to two Adherents in this Unit may have one item each from the Legion Equipment list selected for them." id="54bc-7b63-44eb-b88d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7316-9468-4be3-b0d9"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -929,6 +1097,32 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="8d99-11d4-4e0e-8101" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="82b6-cbd2-4072-801b" name="Bolt pistol">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7124-76ad-41ab-9175"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3ef-33d7-460b-8a89"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="dd28-6f14-46c0-8b2c" name="Chainsword">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="efd7-03f8-4c51-8a92"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9cd-37aa-4016-9278"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="fe41-9574-411b-92f4" name="Frag grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="83a6-b057-43d9-8a87"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eafe-ead9-4a36-8464"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="ad0a-d722-46de-ac61" name="Krak grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ede8-6340-40fa-b6e0"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0256-1ba2-44ab-a757"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -965,9 +1159,14 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
       <infoLinks>
         <infoLink name="[Allegiance]" id="6b1b-a992-bba3-4b1e" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="2533-28ea-aa7e-4d9a" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Vanguard (X)" hidden="false" type="rule" targetId="530f-b733-993c-ec84" id="c0d8-69a5-45a5-a7c6">
+          <modifiers>
+            <modifier type="set" field="name" value="Vanguard (2)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -985,10 +1184,14 @@ Any weapon with the Flame Trait that a Model with this Special Rule has also gai
 effects of the Limited (X) Special Rule when making Volley Attacks.</description>
         </rule>
       </rules>
+      <comment>warning: !BSC 20250828-1757
+Could not find rule: Creed of Flame
+Shared on model level not yet implemented for One Adherent in this Unit may have one vexilla selected for it for +10 Points.
+Expected &apos;selected for it&apos; in &apos;Up to two Adherents in this Unit may have one item each from the Legion Equipment list selected for them.&apos;</comment>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Salamanders Sanctifier Squad" hidden="false" id="b278-6137-8f37-35f8" sortIndex="6">
+    <selectionEntry type="unit" import="true" name="Salamanders Sanctifier Squad" hidden="false" id="b278-6137-8f37-35f8" sortIndex="6" page="138" publicationId="5469-14da-d0a1-6092">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Consecrator" hidden="false" id="546b-c16b-710b-5eef" defaultAmount="1" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Consecrator" hidden="false" id="546b-c16b-710b-5eef" defaultAmount="1" sortIndex="1" page="138" publicationId="5469-14da-d0a1-6092">
           <profiles>
             <profile name="Consecrator" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="667d-603b-9f9c-2df3">
               <characteristics>
@@ -1150,9 +1353,96 @@ effects of the Limited (X) Special Rule when making Volley Attacks.</description
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Any Model in this Unit may have its bolter and bolt pistol exchanged for one of the following:" id="2a62-965b-4cd1-b006">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="3323-2645-4827-b945" name="Bolt pistol">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d2f-b2a4-463b-b1bc"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Two bolt pistols"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" id="0915-96c5-4e4e-b70d" name="Bolter">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e85a-a436-44df-a80c"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="b7c3-1de1-087c-3d6e" id="66ee-30a2-4525-bd19" name="Volkite serpenta">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Two volkite serpentas"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3507-a778-4454-b64e"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="9322-09ed-abec-6e13" id="c2e2-8f25-4167-9b19" name="Hand flamer">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Two hand flamers"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="359c-814d-4209-9bcf"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d8c-94b3-42c0-97fc"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="The Consecrator in this Unit may have its bolter and bolt pistol exchanged for " id="21f6-842b-4567-98b0">
+              <comment>warning: !BSC 20250828-1757
+Could not find wargear two forge-crafted hand flamers
+	 Checked under two forge-crafted hand flamers</comment>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d08-ba45-44bf-a85b"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="The Consecrator in this Unit may have its chainsword exchanged for " id="7299-c968-4626-be5b">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="3d22-953a-4abb-9cb2" name="Chainsword">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ba2-17f4-4250-b37b"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" id="b54f-62df-4e48-91b8" name="Legion Sergeant Melee Weapons">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64f5-8cf0-4297-865e"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ce2-8883-4f15-b619"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69f9-d63a-4783-922f"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="a5ae-d08e-4260-a483" name="Frag grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c31-ede5-4dfe-ba1a"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c27-ff86-4c60-9237"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="035c-90c2-4a89-9dec" name="Krak grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d995-3f98-4c0f-a516"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2477-091c-446a-a53e"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <comment>warning: !BSC 20250828-1757
+Could not find wargear in The Consecrator in this Unit may have its bolter and bolt pistol exchanged for </comment>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Sanctifier" hidden="false" id="76c7-1092-4bdd-e2c3" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Sanctifier" hidden="false" id="76c7-1092-4bdd-e2c3" sortIndex="2" page="138" publicationId="5469-14da-d0a1-6092">
           <profiles>
             <profile name="Sanctifier" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="7974-f8cf-2219-c7de">
               <characteristics>
@@ -1345,9 +1635,104 @@ effects of the Limited (X) Special Rule when making Volley Attacks.</description
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Any Model in this Unit may have its bolter and bolt pistol exchanged for one of the following:" id="c126-8e61-4eb6-b513">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="0a2a-cada-4ca1-a1d2" name="Bolt pistol">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35c4-46a1-439d-b65b"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Two bolt pistols"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" id="ab10-d251-457d-8acd" name="Bolter">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d5c-212c-4ecd-9e21"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="b7c3-1de1-087c-3d6e" id="b4a0-2cfd-407e-901d" name="Volkite serpenta">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Two volkite serpentas"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fce1-c74a-47a3-befe"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="9322-09ed-abec-6e13" id="28d3-ed6e-4a68-a893" name="Hand flamer">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Two hand flamers"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8273-3a42-4dae-9a1a"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1459-4381-40d7-b17c"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="For every five Models in this Unit, one Sanctifier in this Unit may have its bolter exchanged for " id="1ca5-d302-4931-b76a">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="2599-eee0-7305-493d" id="d156-ba4e-49c7-a389" name="Obsidite Rotor Cannon">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98e9-53da-4d94-b581"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a64-c045-4da9-b6ad"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="For every five models in this Unit, one Sanctifier in this Unit may have its chainsword exchanged for " id="0d01-c23f-413f-aedd">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="94f1-84e8-4c7f-a021" name="Chainsword">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da68-7508-428b-b8d2"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" id="2385-e6ae-46e3-a4b1" name="Legion Sergeant Melee Weapons">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fd9-2958-4e81-b468"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="16b5-0e96-4f0d-a6ed"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5859-cfbd-4993-9dec"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="One Sanctifier in this Unit may have one vexilla selected for it for +10 Points." id="6c28-200b-4ed3-b492">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="dfcd-0669-ad43-28aa" id="3db1-0296-4b67-b021" name="Vexilla">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1715-2439-4e81-b9cb"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d36-e5b5-407f-822a"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Up to two Sanctifiers in this Unit may have one item each from the Legion Equipment list selected for them." id="9640-1371-4962-963d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f673-7ddb-44af-8676"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="16"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="16"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -1356,6 +1741,20 @@ effects of the Limited (X) Special Rule when making Volley Attacks.</description
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="1505-a6e8-41e4-809e" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="bbd9-9840-4ab9-8e6f" name="Frag grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="09e7-de6a-4a81-a8a3"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0072-b8bf-4a9c-8967"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="603b-b683-43a8-abdd" name="Krak grenades">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c02-b811-45e7-b9f0"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d90d-ef30-486f-b1d2"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -1396,7 +1795,7 @@ effects of the Limited (X) Special Rule when making Volley Attacks.</description
         <infoLink name="Firestorm" id="b847-d314-2e49-5b03" hidden="false" type="rule" targetId="3ed1-c5b3-a98d-1b12"/>
       </infoLinks>
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="26"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="26"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -1405,6 +1804,15 @@ effects of the Limited (X) Special Rule when making Volley Attacks.</description
       <categoryLinks>
         <categoryLink targetId="594d-fa82-13cb-a345" id="b704-5162-9a02-27a8" primary="false" name="Infantry Model Type"/>
       </categoryLinks>
+      <comment>warning: !BSC 20250828-1757
+Bolter is in two option lists for Sanctifier, you will need to combine them by hand.
+Exchange was not applied on For every five Models in this Unit, one Sanctifier in this Unit may have its bolter exchanged for 
+Bolter is in two option lists for Consecrator, you will need to combine them by hand.
+Bolt pistol is in two option lists for Consecrator, you will need to combine them by hand.
+Exchange was not applied on The Consecrator in this Unit may have its bolter and bolt pistol exchanged for 
+Shared on model level not yet implemented for One Sanctifier in this Unit may have one vexilla selected for it for +10 Points.
+Expected &apos;selected for it&apos; in &apos;Up to two Sanctifiers in this Unit may have one item each from the Legion Equipment list selected for them.&apos;
+Expected &apos;selected for it&apos; in &apos;Every Model in the Unit may have melta bombs selected for them for +25 Points.&apos;</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
