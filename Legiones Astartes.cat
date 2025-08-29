@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="48" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="49" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -17536,12 +17536,17 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </conditions>
         </modifier>
         <modifier type="add" value="9254-b1e9-98b2-6101" field="category"/>
+        <modifier type="set" value="1" field="d39c-96ff-ccfa-38e5">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink name="Cult Arcana" id="25b1-b1f9-280a-9e72" hidden="false" type="rule" targetId="f622-94c0-3997-9ee5"/>
       </infoLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d39c-96ff-ccfa-38e5"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d39c-96ff-ccfa-38e5" automatic="true"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a9d-100f-f468-bfc2"/>
       </constraints>
     </selectionEntry>
