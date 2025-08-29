@@ -1,3 +1,7 @@
+from unittest.util import _count_diff_all_purpose, _count_diff_hashable
+
+import collections
+
 import os
 import sys
 import unittest
@@ -483,6 +487,54 @@ class GameTests(unittest.TestCase):
                     for unit_id, name in units_by_slot[base_slot].items():
                         self.assertIsNotNone(units_by_slot[upgrade_slot].get(unit_id),
                                              f"{name} should have a second link with primary category {upgrade_slot}")
+
+    def test_model_types_not_on_non_models(self):
+        for type_category in self.system.model_types_and_subtypes.values():
+            with self.subTest(f"links to {type_category} should be of on SEs of type 'model'"):
+                for type_link in self.system.nodes_with_ids.filter(lambda x: x.target_id == type_category.id):
+                    se = type_link.parent.parent
+                    with self.subTest(f"link on {se} means it is a model"):
+                        self.assertEqual(se.type, "selectionEntry:model",
+                                         f"{type_category.name} should not be linked on {se}")
+
+    def test_unique_models_are_max_1(self):
+        expected_attribs = {
+            "type": "max",
+            "value": "1",
+            "field": "selections",
+            "scope": "roster",
+            "shared": "true",
+            "includeChildSelections": "true",
+            "includeChildForces": "true",
+        }
+        for unique_type_link in self.system.nodes_with_ids.filter(lambda x:
+                                                                  x.tag == "categoryLink"
+                                                                  and x.target_name == "Unique Model Sub-Type"
+                                                                  ):
+            unit = unique_type_link.find_ancestor_with(lambda x: x.type == "selectionEntry:unit")
+            if unit is None:
+                continue
+            with self.subTest(f"max 1 on unique unit {unit}"):
+                constraints = unit.get_child("constraints")
+                self.assertIsNotNone(constraints, "Unique units should have constraints")
+                if len(constraints.children) == 1:
+                    max_constraint = constraints.get_child("constraint", {"type": "max"})
+                    self.assertIsNotNone(max_constraint, "Unique units should have max constraint")
+
+                    attribs = max_constraint.attrib.copy()
+                    attribs.pop("id")  # Ignore id
+                    self.assertCountEqual(attribs, expected_attribs, "Max constraint properties")
+                    continue
+                else:  # Multiple options which could be the max.
+                    found = False
+                    for constraint in constraints.children:
+                        attribs = constraint.attrib.copy()
+                        attribs.pop("id")  # Ignore id
+
+                        if Node.are_attribs_equal(attribs, expected_attribs):
+                            found = True
+                            break
+                    self.assertTrue(found, f"A constraint matching {expected_attribs}")
 
 
 if __name__ == '__main__':
