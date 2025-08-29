@@ -666,6 +666,19 @@ A Model that has breacher charges selected as its Weapon always has a Combat Ini
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Artificia Kill-switch" hidden="false" id="65d5-d4b2-ab9b-fb96">
+      <costs>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Artificia Kill-switch" id="de0e-0da2-a814-17cd" hidden="false">
+          <description>The Controlling Player of a Model with an artificia kill-switch may choose to activate it in the Effects Sub-Phase of any End Phase. When activated, that Player may select one friendly Model that has the Artificia Type that is within 12&quot; of the Model with the artificia kill-switch. The selected Model with the Artificia Type suffers D6+2 Unsaved Wounds. If this would cause that Model to be Removed as a Casualty, then if that Model has any version of the Explodes (X) Special Rule, that Special Rule is automatically activated. If a Model is Destroyed and Removed from Play due to the activation of an artificia kill-switch, then no Player may score any Victory Points for that Model being removed from play.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Special Rules" id="a167-1d9f-99b4-830c" targetId="106b-693b-99f2-00c3" importRootEntries="true"/>
@@ -821,6 +834,26 @@ A Model that has breacher charges selected as its Weapon always has a Combat Ini
               </conditionGroups>
             </modifier>
           </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Artificia Kill-switch" hidden="true" id="88ef-455b-0ebc-2160" type="selectionEntry" targetId="65d5-d4b2-ab9b-fb96">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="0a35-fce3-188c-b3aa" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="f369-7a8f-853b-fdc5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="8f12-c30a-6c20-6296" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>DA Command in Primary Detachment, army includes Excindio Battle-automata</comment>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="038b-c593-4ce9-f4e2" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
