@@ -43,24 +43,27 @@ Copy what is printed in the books.
 - If the book does not capitalise something, eg "Any model may exchange their *bolter*..." then it does not need to be capitalised unless it is the first owrd in a string/sentence/label.
 
 # 3: Making Units
-All units should be made as shared selection entries
+All Units must be made as shared selection entries with the Unit type
+Each Unit must have am SSE with the Model type within it - this must have a constraint with the minimum and maximum model count for that unit.
+Add the relevant Profile within the Model
+Select the relevant Model Type and Sub-Type category check boxes against the Model entry.
+Any Weapons/Wargear/Other SSE's must be paced within the Model entry - NOT the Unit entry 
 
-Then each unit should have a link to that shared selection entry in its catalogue.
+Then for each unit create a link in the Root Selection Entries to the shared selection entry.
 For the legions, they import the root selection entries from the LA cat. 
 
 ## 3.1: Default Inclusions on Units
 
-Each link should have the battlefield role on the force org slot. :robot: Checked by the unit tests
+Each link in the root selection entries must have the battlefield role selected as the Primary category. :robot: Checked by the unit tests
 
 ### Prime Checkbox and Benefits
-All units should include a link to the GST's "Prime Unit" selection entry. :robot: Checked by the unit tests
+All units must include a link to the GST's "Prime Unit" selection entry at the Unit level (not the Model level). :robot: Checked by the unit tests
 
 Inside that link, you should link to your faction's list of "Prime Benefits" selection entry group. :robot: Checked by the unit tests
 
 Models  need to include the Characteristic modifications for Prime Benefits that mod them (Copy from existing unit profile where applicable)
 - For Models with the Command Sub-Type - Paragon of Battle - Increment WS, BS & A by 1 if Parent contains Paragon of Battle 
 - For all Units that use the standard Profile, but are not Unique - add the Combat Veterans Modifier Group to the profile (copy it from another unit)
-
 - For Models with the Sergeant Sub-Type ensure that the Master Sergeant Modification group is copied from an existing Sergeant Model - if the Model also has teh Champion Sub-Type remove the Type replace line and change the LD mofifier to +2
 
 ###  Astartes Units
