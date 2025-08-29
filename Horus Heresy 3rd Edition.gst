@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="52" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="53" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -1096,6 +1096,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b5f6-283d-e1bc-26cf"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="b728-3cbe-7716-d0ef" targetId="335a-5a90-3b7c-c034" type="categoryEntry"/>
             <categoryLink name="Recon - Land Raider Explorator Only" hidden="false" id="cca3-27cf-d951-b2a6" targetId="1bc1-e6ff-d62e-398e" type="categoryEntry">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d1f3-d313-de87-02c3" automatic="true"/>
@@ -19399,6 +19400,9 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
           </modifiers>
         </entryLink>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9fd4-dabb-4067-dea3"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Allegiance" id="9fa8-cbae-ef5e-4b7c" hidden="false" defaultSelectionEntryId="none">
       <selectionEntries>
