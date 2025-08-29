@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="0a35-fce3-188c-b3aa" name="                         I - Dark Angels" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="11" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="0a35-fce3-188c-b3aa" name="                         I - Dark Angels" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="12" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="a476-c36f-b43d-3fd8" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Special Rules" id="9620-2bdb-4589-56f8" targetId="106b-693b-99f2-00c3"/>
@@ -2399,7 +2399,7 @@ Whilst a Model with this Special Rule is part of a Unit that is Locked in Combat
               <modifiers>
                 <modifier type="set" value="Walker (Champion)" field="50fc-9241-d4a2-045b">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="d00a-e269-2ed3-8fc4" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2448,7 +2448,7 @@ Whilst a Model with this Special Rule is part of a Unit that is Locked in Combat
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="d00a-e269-2ed3-8fc4" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2918,7 +2918,7 @@ the Order</characteristic>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d00a-e269-2ed3-8fc4" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="d00a-e269-2ed3-8fc4" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2997,7 +2997,7 @@ At the end of the Declare Mission Reserves Step the Controlling Player of any Un
       <modifiers>
         <modifier type="set-primary" value="d52d-47c6-e17a-9e35" field="category">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4df8-3a15-6b77-1b80" shared="true" includeChildSelections="false" includeChildForces="false"/>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="4df8-3a15-6b77-1b80" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
