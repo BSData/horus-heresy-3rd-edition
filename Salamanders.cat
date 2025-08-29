@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="f148-a6e4-5a8c-3aeb" name="                        XVIII - Salamanders" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="10" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="f148-a6e4-5a8c-3aeb" name="                        XVIII - Salamanders" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="11" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Firedrake Terminator Squad" hidden="false" id="09a9-6c68-9b0b-f24f" sortIndex="2">
       <selectionEntries>
@@ -123,8 +123,6 @@
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="ceb5-f9a9-60d7-152f" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="aadb-95bd-e71f-74a4" primary="false" name="Heavy Model Sub-Type"/>
         <categoryLink targetId="26c6-e05c-0f72-7852" id="473e-745e-c84b-e047" primary="false" name="Shield"/>
       </categoryLinks>
       <infoLinks>
@@ -389,8 +387,6 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
       </constraints>
       <categoryLinks>
         <categoryLink name="Loyalist" hidden="false" id="aaf6-452e-c5b6-ffee" targetId="4381-ed35-c3fa-a225" primary="false"/>
-        <categoryLink targetId="7799-e1d6-762b-700b" id="b513-7ac3-49cb-e828" primary="false" name="Paragon Model Type"/>
-        <categoryLink targetId="b980-187b-2b17-d635" id="a5e2-ba39-5b51-0bde" primary="false" name="Unique Model Sub-Type"/>
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="f322-b988-1519-b77f" primary="false" name="Master of the Legion"/>
       </categoryLinks>
     </selectionEntry>
@@ -552,9 +548,6 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
           </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="ef40-da74-40b5-4b1d" primary="false" name="Infantry Model Type"/>
-      </categoryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="6245-5f05-7f15-8937" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="4e6d-73a5-f817-6423" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
@@ -612,10 +605,6 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Cassian Dracos Reborn" hidden="false" id="84e1-2bda-1d5b-2b23" sortIndex="4">
-      <categoryLinks>
-        <categoryLink targetId="38d4-d720-8009-acd3" id="6551-60db-a4dc-dc4b" primary="false" name="Walker Model Type"/>
-        <categoryLink targetId="b980-187b-2b17-d635" id="6fd9-9833-8123-d838" primary="false" name="Unique Model Sub-Type"/>
-      </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Cassian Dracos Reborn" hidden="false" id="dc90-e1e3-4524-9c73">
           <profiles>
@@ -694,6 +683,10 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
             <categoryLink targetId="38d4-d720-8009-acd3" id="fe7b-176a-4263-945c" primary="false" name="Walker Model Type"/>
             <categoryLink targetId="b980-187b-2b17-d635" id="651b-5ca7-449d-b9f6" primary="false" name="Unique Model Sub-Type"/>
           </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2de7-a3c3-2190-8e78"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f099-6809-b26b-f8e1"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -725,6 +718,7 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
             <entryLink import="true" name="Prime Benefits" hidden="false" id="1b2a-f887-2f4b-49a4" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="ef0b-5365-a4cb-9548" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Salamanders Adherents Squad" hidden="false" id="fecf-8e98-157d-e5ae" sortIndex="5">
@@ -976,9 +970,6 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="7bf3-ac62-1b38-ee8f" primary="false" name="Infantry Model Type"/>
-      </categoryLinks>
       <rules>
         <rule name="Creed of Flame" id="56c3-51e8-34f1-8e70" hidden="false">
           <description>Models with this Special Rule can make Volley Attacks with Weapons with the Flame Trait.
@@ -1405,9 +1396,6 @@ effects of the Limited (X) Special Rule when making Volley Attacks.</description
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="b704-5162-9a02-27a8" primary="false" name="Infantry Model Type"/>
-      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
@@ -1439,8 +1427,8 @@ effects of the Limited (X) Special Rule when making Volley Attacks.</description
     </entryLink>
     <entryLink import="true" name="Cassian Dracos Reborn" hidden="false" id="e91f-5cc0-d0d7-d6f0" type="selectionEntry" targetId="84e1-2bda-1d5b-2b23" sortIndex="4">
       <categoryLinks>
-        <categoryLink targetId="2499-7239-685f-8465" id="f3ce-36ba-c150-cf0b" primary="true" name="War-engine"/>
         <categoryLink targetId="f6fe-18f5-7b4d-b57a" id="5149-edff-4a55-439a" primary="false" name="Salamanders"/>
+        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="7381-2829-dbd1-f81d" primary="true" name="High Command"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Salamanders Adherents Squad" hidden="false" id="c6be-bcb9-483e-ca2c" type="selectionEntry" targetId="fecf-8e98-157d-e5ae" sortIndex="5">

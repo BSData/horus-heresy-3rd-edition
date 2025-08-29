@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="19" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="22" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Anacharis Scoria" hidden="false" id="10f5-dae8-f081-d82f" sortIndex="29">
       <infoLinks>
@@ -46,15 +46,12 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="3252-003d-1181-0f99" id="8451-c7ae-1a1c-5a55" primary="false" name="Archimandrite"/>
-        <categoryLink targetId="38d4-d720-8009-acd3" id="824f-08b4-bf61-b4cd" primary="false" name="Walker Model Type"/>
-        <categoryLink targetId="5a95-e564-96b2-8dc9" id="4c39-97a3-7452-c731" primary="false" name="Champion Model Sub-Type"/>
-        <categoryLink targetId="b980-187b-2b17-d635" id="b047-8b57-a336-3a3a" primary="false" name="Unique Model Sub-Type"/>
         <categoryLink targetId="a660-a2a5-eef3-2fbc" id="5e0c-dca7-49b4-4bf0" primary="false" name="Heterodoxists"/>
         <categoryLink targetId="9892-3b91-8a3b-51e8" id="3a72-6216-5755-969f" primary="false" name="Archmagos is Archimandrite"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e45-2aa3-459b-92e5"/>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ebef-6548-aa89-44cc" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ebef-6548-aa89-44cc" includeChildSelections="true" includeChildForces="true"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fd00-5755-cec2-a4cc" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <selectionEntries>
@@ -428,28 +425,6 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="Infantry (Command, Heavy)" field="50fc-9241-d4a2-045b">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
                   <comment>Combat Veterans</comment>
@@ -465,6 +440,38 @@
                   </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>The Engram of Authority</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>The Strength of Ages</comment>
+                  <modifiers>
+                    <modifier type="set" value="Infantry (Command, Heavy)" field="50fc-9241-d4a2-045b"/>
+                    <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d">
+                      <comment>Strength of Ages</comment>
+                    </modifier>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Prime Specimens</comment>
+                  <modifiers>
+                    <modifier type="increment" value="2" field="498f-dce1-59fd-d8d7"/>
+                    <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a533-4a75-9434-4595" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -492,10 +499,6 @@
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="9871-cb62-5283-2216" id="ba0f-2c65-013a-5d5d" primary="false" name="Command Model Sub-type"/>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="f580-eb0f-fbed-6691" primary="false" name="Infantry Model Type"/>
-      </categoryLinks>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
@@ -679,23 +682,6 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
                   <comment>Combat Veterans</comment>
@@ -711,6 +697,37 @@
                   </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>The Engram of Authority</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>The Strength of Ages</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d">
+                      <comment>Strength of Ages</comment>
+                    </modifier>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Prime Specimens</comment>
+                  <modifiers>
+                    <modifier type="increment" value="2" field="498f-dce1-59fd-d8d7"/>
+                    <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a533-4a75-9434-4595" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -795,12 +812,6 @@
         </entryLink>
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="61f5-f46a-fadf-cb58" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="14"/>
       </entryLinks>
-      <categoryLinks>
-        <categoryLink targetId="9871-cb62-5283-2216" id="64a5-22ff-daf6-921c" primary="false" name="Command Model Sub-type"/>
-        <categoryLink targetId="c504-9dfa-35d3-c98f" id="86f5-3e15-e856-5ad3" primary="false" name="Antigrav Model Sub-Type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="340f-9d43-62b8-77f7" primary="false" name="Heavy Model Sub-Type"/>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="1f4b-9baf-0028-8b9e" primary="false" name="Infantry Model Type"/>
-      </categoryLinks>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
@@ -982,31 +993,6 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Archimandrite</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Archimandrite</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Myrmidax</comment>
-                </modifier>
-                <modifier type="set" value="Infantry (Command, Heavy)" field="50fc-9241-d4a2-045b">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
                   <comment>Paragon of Battle</comment>
@@ -1039,6 +1025,38 @@
                   </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>The Engram of Authority</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>The Strength of Ages</comment>
+                  <modifiers>
+                    <modifier type="set" value="Infantry (Command, Heavy)" field="50fc-9241-d4a2-045b"/>
+                    <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d">
+                      <comment>Strength of Ages</comment>
+                    </modifier>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Prime Specimens</comment>
+                  <modifiers>
+                    <modifier type="increment" value="2" field="498f-dce1-59fd-d8d7"/>
+                    <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a533-4a75-9434-4595" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -1118,8 +1136,6 @@
         </entryLink>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="0654-92ae-5e92-ef4d" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="9871-cb62-5283-2216" id="0d92-f049-d71c-ea75" primary="false" name="Command Model Sub-type"/>
         <categoryLink targetId="901a-6b71-7a29-4597" id="87a5-d495-0037-9d50" primary="false" name="Officer of the Line (2)"/>
       </categoryLinks>
       <modifierGroups>
@@ -1411,7 +1427,6 @@
         </entryLink>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="5833-5e86-26bc-0916" id="1895-6200-3feb-50e9" primary="false" name="Automata Model Type"/>
         <categoryLink targetId="a38e-50ff-310f-f19e" id="9e00-57db-8f23-92cf" primary="true" name="Retinue"/>
       </categoryLinks>
       <modifierGroups>
@@ -1499,8 +1514,6 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="eba5-3e47-aa06-65fe" id="b1a1-e07c-1243-d141" primary="false" name="Malagra"/>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="fd30-8302-2105-265d" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="9871-cb62-5283-2216" id="5c63-2c4d-a0ad-929d" primary="false" name="Command Model Sub-type"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Mechanicum Wargear" hidden="false" id="5183-f806-6712-bc1c" type="selectionEntryGroup" targetId="b435-c689-3a61-2f5e" sortIndex="3"/>
@@ -1821,7 +1834,6 @@
         </entryLink>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="5833-5e86-26bc-0916" id="2665-75d8-dcf8-d7b9" primary="false" name="Automata Model Type"/>
         <categoryLink targetId="a38e-50ff-310f-f19e" id="6675-7220-a432-4416" primary="true" name="Retinue"/>
       </categoryLinks>
       <modifierGroups>
@@ -1921,7 +1933,6 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="df10-4634-c1aa-f6e0" id="440e-ef09-6658-8d69" primary="false" name="Cybernetica"/>
-        <categoryLink targetId="5833-5e86-26bc-0916" id="d37d-74e7-6ff9-8081" primary="false" name="Automata Model Type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Domitar" hidden="false" id="e8f4-acac-c459-7d6b" sortIndex="2">
@@ -2227,26 +2238,6 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Archimandrite</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Archimandrite</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Myrmidax</comment>
-                </modifier>
-              </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
                   <comment>Paragon of Battle</comment>
@@ -2279,6 +2270,37 @@
                   </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>The Engram of Authority</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>The Strength of Ages</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d">
+                      <comment>Strength of Ages</comment>
+                    </modifier>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Prime Specimens</comment>
+                  <modifiers>
+                    <modifier type="increment" value="2" field="498f-dce1-59fd-d8d7"/>
+                    <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a533-4a75-9434-4595" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -2353,10 +2375,6 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="edff-abfb-8d51-bdbb" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="9871-cb62-5283-2216" id="da92-08c3-4ed8-f215" primary="false" name="Command Model Sub-type"/>
-        <categoryLink targetId="c504-9dfa-35d3-c98f" id="f644-b6a4-0518-e195" primary="false" name="Antigrav Model Sub-Type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="27f2-5f36-0e70-0ee3" primary="false" name="Heavy Model Sub-Type"/>
         <categoryLink targetId="901a-6b71-7a29-4597" id="242a-208e-8c1e-ae8e" primary="false" name="Officer of the Line (2)"/>
       </categoryLinks>
       <modifierGroups>
@@ -2431,8 +2449,6 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="9e7d-913d-86f0-e05e" id="1660-2ef9-8e40-ddb1" primary="false" name="Myrmidax"/>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="174a-2bcf-c64e-8be8" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="50c8-6f2a-bd2f-c5c9" primary="false" name="Heavy Model Sub-Type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Secutor" hidden="false" id="6f53-a341-72bf-aed8" sortIndex="2">
@@ -2668,8 +2684,6 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="9e7d-913d-86f0-e05e" id="decf-0a17-7f80-778a" primary="false" name="Myrmidax"/>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="c680-dfac-b639-01c5" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="46d0-df18-a828-2366" primary="false" name="Heavy Model Sub-Type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Destructor" hidden="false" id="afbb-38ce-5512-4539" sortIndex="2">
@@ -2920,7 +2934,6 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="8268-aa48-f4dc-0506" id="f13e-7570-f0f9-b8e9" primary="false" name="Lacrymaerta"/>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="494f-844a-35a8-1395" primary="false" name="Infantry Model Type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Tech-Thrall" hidden="false" id="c369-c69d-b029-850b" sortIndex="1">
@@ -2958,6 +2971,16 @@
                   </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Prime Specimens</comment>
+                  <modifiers>
+                    <modifier type="increment" value="2" field="498f-dce1-59fd-d8d7"/>
+                    <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a533-4a75-9434-4595" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -3030,7 +3053,6 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="df10-4634-c1aa-f6e0" id="93ed-86c2-8973-1650" primary="false" name="Cybernetica"/>
-        <categoryLink targetId="5833-5e86-26bc-0916" id="e9fc-6cc9-c3b0-5dd1" primary="false" name="Automata Model Type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Castellax" hidden="false" id="66b7-9883-86f7-a90f" sortIndex="1">
@@ -3255,6 +3277,16 @@
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Prime Specimens</comment>
+                  <modifiers>
+                    <modifier type="increment" value="2" field="498f-dce1-59fd-d8d7"/>
+                    <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a533-4a75-9434-4595" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -3388,6 +3420,16 @@
                   </conditions>
                   <comment>Master Sergeant</comment>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Prime Specimens</comment>
+                  <modifiers>
+                    <modifier type="increment" value="2" field="498f-dce1-59fd-d8d7"/>
+                    <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a533-4a75-9434-4595" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -3499,6 +3541,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="8268-aa48-f4dc-0506" id="ffb1-38cb-1fd7-0541" primary="false" name="Lacrymaerta"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tech-Priest" hidden="false" id="bc86-4606-7fce-1866" sortIndex="13">
       <infoLinks>
@@ -3581,28 +3626,6 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="Infantry (Champion, Heavy, Sergeant, Specialist)" field="50fc-9241-d4a2-045b">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
                   <comment>Combat Veterans</comment>
@@ -3631,6 +3654,38 @@
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
                   </conditions>
                   <comment>Master Sergeant</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>The Engram of Authority</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3252-003d-1181-0f99" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>The Strength of Ages</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d">
+                      <comment>Strength of Ages</comment>
+                    </modifier>
+                    <modifier type="set" value="Infantry (Champion, Heavy, Sergeant, Specialist)" field="50fc-9241-d4a2-045b"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9e7d-913d-86f0-e05e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Prime Specimens</comment>
+                  <modifiers>
+                    <modifier type="increment" value="2" field="498f-dce1-59fd-d8d7"/>
+                    <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a533-4a75-9434-4595" shared="true" includeChildSelections="true"/>
+                  </conditions>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -3698,6 +3753,13 @@
           <entryLinks>
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="4944-5f01-5980-a80d" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="1" field="881f-5dbe-10fd-ec48">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0594-4b9b-675b-f633" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <modifierGroups>
@@ -3795,18 +3857,6 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="set" value="5+" field="a951-a772-7ce0-0b64">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="a3af-b73f-4a1b-efd1" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="a3af-b73f-4a1b-efd1" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
                   <comment>Combat Veterans</comment>
@@ -3835,6 +3885,16 @@
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
                   </conditions>
                   <comment>Master Sergeant</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Thallaxi Principal</comment>
+                  <modifiers>
+                    <modifier type="set" value="5+" field="a951-a772-7ce0-0b64"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="a3af-b73f-4a1b-efd1" shared="true" includeChildSelections="true"/>
+                  </conditions>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -3904,18 +3964,6 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="set" value="5+" field="a951-a772-7ce0-0b64">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="a3af-b73f-4a1b-efd1" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="a3af-b73f-4a1b-efd1" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
                   <comment>Combat Veterans</comment>
@@ -3931,6 +3979,16 @@
                   </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Thallaxi Principal</comment>
+                  <modifiers>
+                    <modifier type="set" value="5+" field="a951-a772-7ce0-0b64"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="a3af-b73f-4a1b-efd1" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -4189,9 +4247,11 @@
                         </infoLink>
                       </infoLinks>
                       <costs>
-                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
                         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
                         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
                       </costs>
                       <constraints>
                         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e901-79e9-3b63-7b7a"/>
@@ -4288,9 +4348,6 @@
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
-      <categoryLinks>
-        <categoryLink targetId="38d4-d720-8009-acd3" id="e0d7-da26-2d98-9ca2" primary="false" name="Walker Model Type"/>
-      </categoryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="165"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -4396,8 +4453,6 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="df10-4634-c1aa-f6e0" id="8c98-f25c-1f4d-e88a" primary="false" name="Cybernetica"/>
-        <categoryLink targetId="5833-5e86-26bc-0916" id="d1da-2ab5-7038-c87b" primary="false" name="Automata Model Type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="8884-cd51-9cde-1cac" primary="false" name="Heavy Model Sub-Type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Thanatar" hidden="false" id="f4d8-5c0c-290e-c9f8" sortIndex="1">
@@ -4606,6 +4661,22 @@
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">22</characteristic>
                 <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">Both Sides</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="6536-e73d-4a74-c675"/>
+                    <modifier type="increment" value="1" field="f03a-18a7-8586-273d"/>
+                    <modifier type="increment" value="2" field="8735-4497-1f8a-4dda"/>
+                    <modifier type="increment" value="2" field="a82e-858c-9aa9-2b43"/>
+                    <modifier type="ceil" value="14" field="6536-e73d-4a74-c675"/>
+                    <modifier type="ceil" value="14" field="f03a-18a7-8586-273d"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5e61-75cf-5a52-a94d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Prime Conveyor</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -4712,10 +4783,6 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <categoryLinks>
-        <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="235d-7853-7eef-9afb" primary="false" name="Transport Model Sub-Type"/>
-        <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="ba1e-699b-7a6e-9008" primary="false" name="Vehicle Model Type"/>
-      </categoryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="200"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -4801,7 +4868,6 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="df10-4634-c1aa-f6e0" id="73f2-a753-0b7c-b627" primary="false" name="Cybernetica"/>
-        <categoryLink targetId="5833-5e86-26bc-0916" id="812f-09b3-cdfb-5584" primary="false" name="Automata Model Type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Castellax (Paragon of Metal)" hidden="true" id="61ae-2955-4177-a4df" sortIndex="1">
@@ -5144,7 +5210,6 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="df10-4634-c1aa-f6e0" id="d525-1e45-f5ef-07fb" primary="false" name="Cybernetica"/>
-        <categoryLink targetId="5833-5e86-26bc-0916" id="b961-ea3e-ee35-f06b" primary="false" name="Automata Model Type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Vorax" hidden="false" id="3fe5-3f4e-c7cb-7ba8" sortIndex="1">
@@ -5285,8 +5350,6 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="df10-4634-c1aa-f6e0" id="3642-c1ef-640e-c6bf" primary="false" name="Cybernetica"/>
-        <categoryLink targetId="5833-5e86-26bc-0916" id="b1e4-7000-685c-e143" primary="false" name="Automata Model Type"/>
-        <categoryLink targetId="c504-9dfa-35d3-c98f" id="4c8e-f45d-a44c-82d4" primary="false" name="Antigrav Model Sub-Type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Vultarax" hidden="false" id="3583-7243-9323-073e" sortIndex="1">
@@ -5492,8 +5555,6 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="df10-4634-c1aa-f6e0" id="f672-f6bd-e9c9-2db8" primary="false" name="Cybernetica"/>
-        <categoryLink targetId="2de1-ddd6-ebb4-10df" id="2db9-6a7a-2bba-d745" primary="false" name="Malefic Sub-type"/>
-        <categoryLink targetId="5833-5e86-26bc-0916" id="675a-ae0d-5123-e028" primary="false" name="Automata Model Type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Blood Slaughterer" hidden="false" id="f9cb-9ddf-083b-2a74" sortIndex="1">
@@ -5644,7 +5705,6 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="1ec3-1433-658a-f04e" id="3987-e395-3463-dc15" primary="false" name="Macrotek"/>
-        <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="ac42-ef6d-9d82-9b1c" primary="false" name="Vehicle Model Type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Karacnos " hidden="false" id="bd29-af9c-378e-28dd" sortIndex="1">
@@ -5660,6 +5720,22 @@
                 <characteristic name="HP" typeId="8735-4497-1f8a-4dda">7</characteristic>
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="6536-e73d-4a74-c675"/>
+                    <modifier type="increment" value="1" field="f03a-18a7-8586-273d"/>
+                    <modifier type="ceil" value="14" field="6536-e73d-4a74-c675"/>
+                    <modifier type="ceil" value="14" field="f03a-18a7-8586-273d"/>
+                    <modifier type="increment" value="2" field="8735-4497-1f8a-4dda"/>
+                    <modifier type="increment" value="2" field="a82e-858c-9aa9-2b43"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5e61-75cf-5a52-a94d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Prime Conveyor</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -5772,8 +5848,6 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="1ec3-1433-658a-f04e" id="aa56-7257-07dd-ca02" primary="false" name="Macrotek"/>
-        <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="63de-dd25-a7a5-44fd" primary="false" name="Vehicle Model Type"/>
-        <categoryLink targetId="a5c6-b359-cecb-e0b1" id="0aa8-bbed-a7d5-e5db" primary="false" name="Rapid Sub-Type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Krios" hidden="false" id="3044-7727-3906-2385" sortIndex="1">
@@ -5789,6 +5863,22 @@
                 <characteristic name="HP" typeId="8735-4497-1f8a-4dda">5</characteristic>
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="6536-e73d-4a74-c675"/>
+                    <modifier type="increment" value="1" field="f03a-18a7-8586-273d"/>
+                    <modifier type="ceil" value="14" field="6536-e73d-4a74-c675"/>
+                    <modifier type="ceil" value="14" field="f03a-18a7-8586-273d"/>
+                    <modifier type="increment" value="2" field="8735-4497-1f8a-4dda"/>
+                    <modifier type="increment" value="2" field="a82e-858c-9aa9-2b43"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5e61-75cf-5a52-a94d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Prime Conveyor</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -5937,8 +6027,6 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="df10-4634-c1aa-f6e0" id="62c5-79bd-7051-4d7c" primary="false" name="Cybernetica"/>
-        <categoryLink targetId="5833-5e86-26bc-0916" id="e9f1-f716-0352-97ca" primary="false" name="Automata Model Type"/>
-        <categoryLink targetId="2de1-ddd6-ebb4-10df" id="dae5-e8e4-5322-8e9b" primary="false" name="Malefic Sub-type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Decimator claw w/ Heavy Flamer" hidden="false" id="e99c-fb1f-382f-98e8" sortIndex="3">
@@ -6184,13 +6272,11 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="1ec3-1433-658a-f04e" id="ac8c-1673-9e62-24e3" primary="false" name="Macrotek"/>
-        <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="d9b6-5586-bf5b-e2d9" primary="false" name="Vehicle Model Type"/>
-        <categoryLink targetId="a5c6-b359-cecb-e0b1" id="7116-83d9-5f81-4c2e" primary="false" name="Rapid Sub-Type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Krios" hidden="false" id="4684-1eb3-81a9-48ba" sortIndex="1">
           <profiles>
-            <profile name="Krios" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="81b3-7da2-f71b-b562">
+            <profile name="Krios Venator" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="81b3-7da2-f71b-b562">
               <characteristics>
                 <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Rapid)</characteristic>
                 <characteristic name="M" typeId="d624-72fe-0205-4443">14</characteristic>
@@ -6201,6 +6287,22 @@
                 <characteristic name="HP" typeId="8735-4497-1f8a-4dda">5</characteristic>
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="6536-e73d-4a74-c675"/>
+                    <modifier type="increment" value="1" field="f03a-18a7-8586-273d"/>
+                    <modifier type="increment" value="2" field="8735-4497-1f8a-4dda"/>
+                    <modifier type="increment" value="2" field="a82e-858c-9aa9-2b43"/>
+                    <modifier type="ceil" value="14" field="6536-e73d-4a74-c675"/>
+                    <modifier type="ceil" value="14" field="f03a-18a7-8586-273d"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5e61-75cf-5a52-a94d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Prime Conveyor</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -6329,10 +6431,6 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="3252-003d-1181-0f99" id="ad76-affa-ec79-25f6" primary="false" name="Archimandrite"/>
-        <categoryLink targetId="2de1-ddd6-ebb4-10df" id="e6ac-30e5-c161-9e6b" primary="false" name="Malefic Sub-type"/>
-        <categoryLink targetId="5833-5e86-26bc-0916" id="eafc-bfec-a91f-c96c" primary="false" name="Automata Model Type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="0544-a818-955b-41d2" primary="false" name="Heavy Model Sub-Type"/>
-        <categoryLink targetId="5555-f37e-8ad0-20c0" id="0303-a6f5-164f-58c1" primary="false" name="Unstoppable Sub-Type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Brass Scorpion" hidden="false" id="675a-e8fa-d577-5f59" sortIndex="1">
@@ -6525,7 +6623,7 @@
     <selectionEntry type="unit" import="true" name="Archmagos Draykavac" hidden="false" id="3563-badf-5bdb-cdfe" sortIndex="30">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb4e-8337-120b-27c2"/>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="af52-3a85-0c8b-a4cc" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="af52-3a85-0c8b-a4cc" includeChildSelections="true" includeChildForces="true"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="bda2-092c-82e4-2b88" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <infoLinks>
@@ -6869,9 +6967,6 @@ If the check is successful, then the Model with this Special Rule is immediately
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="3252-003d-1181-0f99" id="9cfc-c2ac-b59b-4983" primary="false" name="Archimandrite"/>
-        <categoryLink targetId="2de1-ddd6-ebb4-10df" id="456a-b33a-92c3-d638" primary="false" name="Malefic Sub-type"/>
-        <categoryLink targetId="5833-5e86-26bc-0916" id="ea06-f6cc-6be4-117f" primary="false" name="Automata Model Type"/>
-        <categoryLink targetId="5555-f37e-8ad0-20c0" id="cbb7-86a5-22d2-c43c" primary="false" name="Unstoppable Sub-Type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Kytan" hidden="false" id="31e1-e321-9549-de41" sortIndex="1">
@@ -7217,6 +7312,16 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Prime Specimens</comment>
+                  <modifiers>
+                    <modifier type="increment" value="2" field="498f-dce1-59fd-d8d7"/>
+                    <modifier type="increment" value="1" field="f5cc-79a3-d302-cc1d"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a533-4a75-9434-4595" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -7256,7 +7361,6 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="1f12-ae6f-ab87-82e3" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="8268-aa48-f4dc-0506" id="c8f5-606b-21ed-2ea4" primary="false" name="Lacrymaerta"/>
       </categoryLinks>
     </selectionEntry>
@@ -7645,8 +7749,6 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="5833-5e86-26bc-0916" id="9449-0485-f436-d8a9" primary="false" name="Automata Model Type"/>
-        <categoryLink targetId="c504-9dfa-35d3-c98f" id="8d2f-acc6-1273-1571" primary="false" name="Antigrav Model Sub-Type"/>
         <categoryLink targetId="df10-4634-c1aa-f6e0" id="43f3-601b-91f7-a3e2" primary="false" name="Cybernetica"/>
       </categoryLinks>
       <infoLinks>
@@ -7669,10 +7771,6 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="868c-8fba-1ac0-7b14" primary="false" name="Vehicle Model Type"/>
-        <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="e3a7-ec8b-1248-d3fb" primary="false" name="Transport Model Sub-Type"/>
-      </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Mechanicum Termite" hidden="false" id="8034-007e-f146-979c">
           <profiles>
@@ -7765,7 +7863,59 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="2377-6f7a-9f19-63aa" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Mechanicum - Sub-faction" hidden="false" id="a7a8-4f12-691a-dc4b" type="selectionEntryGroup" targetId="ce61-2d74-5519-70bf"/>
       </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="3252-003d-1181-0f99" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="6a01-072d-5f2a-deed" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="df10-4634-c1aa-f6e0" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="403d-7806-215e-7676" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8268-aa48-f4dc-0506" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="0d7c-dc0a-3942-b4eb" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="1ec3-1433-658a-f04e" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="67af-3519-2c95-6da0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="eba5-3e47-aa06-65fe" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="7560-ba42-5273-27fd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9e7d-913d-86f0-e05e" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="20af-27a5-9296-e90f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="e76a-e22d-9fc4-dc1f" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3f59-64f9-43da-d43e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a660-a2a5-eef3-2fbc" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="7a1e-e035-4b60-0b35" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2de1-ddd6-ebb4-10df" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="0613-e7be-a4d9-ebe6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Mechanicum Tarantula Battery" hidden="false" id="02c3-37ea-5d20-8291" sortIndex="34">
       <costs>
@@ -7887,9 +8037,6 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
-      <categoryLinks>
-        <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="6026-271e-2253-7374" primary="false" name="Vehicle Model Type"/>
-      </categoryLinks>
       <infoLinks>
         <infoLink name="[Mechanicum]" id="2c71-9fdd-d5cc-5769" hidden="false" type="profile" targetId="7aca-c779-952f-fcac"/>
         <infoLink name="[Allegiance]" id="f88a-a637-2d0d-94c0" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -7900,12 +8047,63 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="9f63-18bb-cfbb-c1b8" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Mechanicum - Sub-faction" hidden="false" id="f41f-1b33-e5dd-a200" type="selectionEntryGroup" targetId="ce61-2d74-5519-70bf"/>
       </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="3252-003d-1181-0f99" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="6a01-072d-5f2a-deed" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="df10-4634-c1aa-f6e0" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="403d-7806-215e-7676" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8268-aa48-f4dc-0506" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="0d7c-dc0a-3942-b4eb" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="1ec3-1433-658a-f04e" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="67af-3519-2c95-6da0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="eba5-3e47-aa06-65fe" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="7560-ba42-5273-27fd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9e7d-913d-86f0-e05e" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="20af-27a5-9296-e90f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="e76a-e22d-9fc4-dc1f" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="3f59-64f9-43da-d43e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a660-a2a5-eef3-2fbc" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="7a1e-e035-4b60-0b35" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2de1-ddd6-ebb4-10df" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="0613-e7be-a4d9-ebe6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Mechanicum Macrocarid Explorator" hidden="false" id="360a-d28e-99bb-fae5" sortIndex="35">
       <categoryLinks>
-        <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="d68c-bffa-a2df-18bd" primary="false" name="Vehicle Model Type"/>
-        <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="394e-888b-4fe1-1896" primary="false" name="Transport Model Sub-Type"/>
+        <categoryLink targetId="1ec3-1433-658a-f04e" id="6b86-6301-abdf-fa46" primary="false" name="Macrotek"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Macrocarid Explorator" hidden="false" id="fa83-8f31-56c8-f35d">
@@ -7926,6 +8124,22 @@ Reassemble - If this option is selected, then no Target Model is chosen. Instead
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">12</characteristic>
                 <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">Not specified!</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="6536-e73d-4a74-c675"/>
+                    <modifier type="increment" value="1" field="f03a-18a7-8586-273d"/>
+                    <modifier type="increment" value="2" field="8735-4497-1f8a-4dda"/>
+                    <modifier type="increment" value="2" field="a82e-858c-9aa9-2b43"/>
+                    <modifier type="ceil" value="14" field="6536-e73d-4a74-c675"/>
+                    <modifier type="ceil" value="14" field="f03a-18a7-8586-273d"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5e61-75cf-5a52-a94d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Prime Conveyor</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <selectionEntryGroups>
@@ -8110,10 +8324,35 @@ When a Model with this Special Rule and the Vehicle Type moves through an enemy 
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="1c98-4a83-d6f3-4193" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
-            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="897c-4043-668d-27a2" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+            <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="897c-4043-668d-27a2" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f">
+              <modifiers>
+                <modifier type="set" value="8855-4255-3c14-bc68" field="defaultSelectionEntryId">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a782-7985-325b-1840" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="1" field="881f-5dbe-10fd-ec48">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a782-7985-325b-1840" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Macrotek" hidden="false" id="6acb-c466-36da-9499" type="selectionEntry" targetId="67af-3519-2c95-6da0">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc86-17d6-6f6f-369e"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd64-885b-fdd1-4958"/>
+          </constraints>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="[Mechanicum]" id="1733-fcfd-3ac9-0fac" hidden="false" type="profile" targetId="7aca-c779-952f-fcac"/>
+        <infoLink name="[Allegiance]" id="9981-a568-d9ed-2f2a" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Mechanicum Ordinatus Ulator" hidden="false" id="0eec-dfde-0a0f-4440" sortIndex="36">
       <costs>
@@ -8925,7 +9164,7 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="df10-4634-c1aa-f6e0" shared="true" includeChildSelections="true"/>
-                    <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="5833-5e86-26bc-0916" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="5833-5e86-26bc-0916" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -8951,7 +9190,7 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="8268-aa48-f4dc-0506" shared="true" includeChildSelections="true"/>
-                    <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -9030,7 +9269,7 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="1ec3-1433-658a-f04e" shared="true" includeChildSelections="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="aa5a-c9fd-1eb1-7a45" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="aa5a-c9fd-1eb1-7a45" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -9160,12 +9399,36 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         <entryLink import="true" name="Prime Specimens" hidden="false" id="3d61-54d8-f3e6-c097" type="selectionEntry" targetId="a533-4a75-9434-4595" sortIndex="7"/>
         <entryLink import="true" name="Prime Conveyor" hidden="false" id="8855-4255-3c14-bc68" type="selectionEntry" targetId="5e61-75cf-5a52-a94d" sortIndex="8"/>
         <entryLink import="true" name="Thallaxi Principe" hidden="false" id="6c45-965d-4aef-3d33" type="selectionEntry" targetId="a3af-b73f-4a1b-efd1" sortIndex="9"/>
-        <entryLink import="true" name="Common Prime Benefits" hidden="false" id="4b45-404f-dec7-194d" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true" sortIndex="1"/>
+        <entryLink import="true" name="Common Prime Benefits" hidden="false" id="4b45-404f-dec7-194d" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true" sortIndex="1">
+          <modifiers>
+            <modifier type="set" value="0" field="c235-892b-27fb-2993">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="5e61-75cf-5a52-a94d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c235-892b-27fb-2993" automatic="true"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ec85-4050-9117-a9f4" automatic="true"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b90f-06f9-942e-4930"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95f1-3a26-9e4b-0a26"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Logistical Benefit (Mech)" hidden="false" id="5616-61ec-fafd-dfd2" sortIndex="5">
+          <categoryLinks>
+            <categoryLink targetId="7e6f-65f7-7535-9ffc" id="31e1-1313-c149-a19d" primary="false" name="Mechanicum Logistical Benefit"/>
+          </categoryLinks>
+          <rules>
+            <rule name="Logistical Benefit" id="daab-592c-9d4f-32d0" hidden="false">
+              <description>Add one additional Force Organisation Slot to the Detachment that includes the Prime Slot, this Slot may be any Battlefield Role other than High Command, Command, Warlord or Lord of War. This Advantage may only be selected once per Detachment.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <entryLinks>
