@@ -116,8 +116,6 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="7799-e1d6-762b-700b" id="5dda-8381-575e-17e9" primary="false" name="Paragon Model Type"/>
-        <categoryLink targetId="b980-187b-2b17-d635" id="be85-312c-affc-3072" primary="false" name="Unique Model Sub-Type"/>
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="5887-575e-32fd-678d" primary="false" name="Master of the Legion"/>
         <categoryLink targetId="d251-944b-3c3b-0579" id="b8f3-79cc-d246-5782" primary="false" name="Traitor"/>
       </categoryLinks>
@@ -177,7 +175,7 @@ When Engaged in a Challenge, attacks with the Critical Hit (X) Special Rule made
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b28-84a0-7509-3cc5"/>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="0367-be4d-1196-2702" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="0367-be4d-1196-2702" includeChildSelections="true" includeChildForces="true"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4504-e936-888a-f394" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
@@ -368,10 +366,6 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="e393-fe10-45a9-80a5" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="b980-187b-2b17-d635" id="064b-3146-2c0c-51ab" primary="false" name="Unique Model Sub-Type"/>
-        <categoryLink targetId="9871-cb62-5283-2216" id="0615-ba68-4022-4786" primary="false" name="Command Model Sub-type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="9c87-84f1-5ee1-0c9a" primary="false" name="Heavy Model Sub-Type"/>
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="6752-1a25-ab46-a275" primary="false" name="Master of the Legion"/>
         <categoryLink targetId="9254-b1e9-98b2-6101" id="75b6-318a-5300-f979" primary="false" name="Psyker"/>
         <categoryLink targetId="d251-944b-3c3b-0579" id="61b7-0dcb-6e57-cf3c" primary="false" name="Traitor"/>
@@ -410,6 +404,9 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
         </entryLink>
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="e682-abe8-ed85-919b" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="2"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" id="d04f-fc87-4058-bee1" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Deathshroud Terminator Squad" hidden="false" id="11a2-0875-ae7a-3da2" sortIndex="3">
       <selectionEntries>
@@ -467,9 +464,6 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="df66-58f3-4605-ec44" primary="false" name="Infantry Model Type"/>
-      </categoryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -705,10 +699,6 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="37a6-b260-10db-780c" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="e543-bca8-7ed8-8da6" primary="false" name="Heavy Model Sub-Type"/>
-      </categoryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="65"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
