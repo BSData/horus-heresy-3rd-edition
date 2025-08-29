@@ -15,7 +15,7 @@
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="aa5a-c9fd-1eb1-7a45" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="aa5a-c9fd-1eb1-7a45" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -161,7 +161,7 @@
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
       <constraints>
-        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="04f1-3a4d-b854-0d89" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="04f1-3a4d-b854-0d89" includeChildSelections="false" includeChildForces="true"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afa1-d3d6-33f7-37fb" includeChildSelections="false"/>
       </constraints>
       <entryLinks>
@@ -287,11 +287,9 @@
           </constraints>
         </entryLink>
       </entryLinks>
-      <categoryLinks>
-        <categoryLink targetId="af7f-ce65-7fad-6d0e" id="0e3e-01a2-dccb-5e70" primary="false" name="Talons of the Emperor"/>
-        <categoryLink targetId="60e8-05b4-0f73-a45a" id="f3b2-5b8c-aca0-2541" primary="false" name="Anathema Psykana"/>
-        <categoryLink targetId="4381-ed35-c3fa-a225" id="c239-00db-7de2-d90b" primary="false" name="Loyalist"/>
-      </categoryLinks>
+      <constraints>
+        <constraint type="max" id="fcd9-b919-4cea-b736" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Anathema Cadre" hidden="false" id="70fb-de8a-7d80-b232">
       <selectionEntries>

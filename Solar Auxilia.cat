@@ -270,7 +270,7 @@
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc48-b80b-81f7-11d8"/>
-                    <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="77c4-d55b-3135-0721" includeChildSelections="true"/>
+                    <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="5034-37ed-48c4-b170" includeChildSelections="true"/>
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1611,6 +1611,9 @@
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="3bba-e8bb-7463-b0b2" id="1fe8-38ae-b078-2069" primary="false" name="Scout Tercio Unlock"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Artillery Command Section" hidden="false" id="4986-b408-cbfe-2d2f">
       <categoryLinks>
@@ -4164,9 +4167,6 @@
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <entryLinks>
-            <entryLink import="true" name="Prime Unit" hidden="false" id="396b-a702-2c49-ef90" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="3"/>
-          </entryLinks>
           <categoryLinks>
             <categoryLink targetId="38d4-d720-8009-acd3" id="c559-ce7a-4740-a0a7" primary="false" name="Walker Model Type"/>
             <categoryLink targetId="d2d6-5a84-672b-2833" id="3740-dca9-49cf-baf2" primary="false" name="Skirmish Model Sub-Type"/>
@@ -10518,9 +10518,9 @@ While a Unit entirely composed of Models with the Solar Auxilia Trait includes a
           </conditions>
         </modifier>
       </modifiers>
-      <categoryLinks>
-        <categoryLink targetId="b980-187b-2b17-d635" id="a2ff-59eb-e01b-be58" primary="false" name="Unique Model Sub-Type"/>
-      </categoryLinks>
+      <constraints>
+        <constraint type="max" id="d6ab-92c1-4279-a1d3" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tarantula Section" hidden="false" id="5c1a-1910-9a09-75cd">
       <selectionEntries>

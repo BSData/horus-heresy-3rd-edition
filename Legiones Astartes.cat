@@ -671,7 +671,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="b909-69d7-7a95-a88f" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="25e1-1ca1-2069-0816" primary="true" name="Support"/>
       </categoryLinks>
     </selectionEntry>
@@ -896,15 +895,9 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <modifier type="set" value="Explodes (6+)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Heavy Unit Sub-type" id="78d8-9665-f105-6fcd" hidden="false" type="rule" targetId="7d35-4d6f-c4fe-4aac"/>
         <infoLink name="Implacable Advance" id="2045-eb13-b009-9657" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
-        <infoLink name="Infantry Unit Type" id="910d-cea2-8a8e-38a7" hidden="false" type="rule" targetId="d518-ea26-a708-e6a1"/>
         <infoLink name="Slow and Purposeful" id="e410-2493-ad7d-6e51" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e"/>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="92e3-458d-ed85-7cba" primary="false" name="Heavy Model Sub-Type"/>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="c9c0-270f-5432-11b3" primary="false" name="Infantry Model Type"/>
-      </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Occulix targeting auspex" hidden="false" id="e0f1-6d9b-796e-6424" type="selectionEntry" targetId="01d8-92c7-5399-5e2a">
           <constraints>
@@ -1103,9 +1096,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 </entryLink>
                 <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="617b-c564-4ced-b61b" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" flatten="false">
                   <comment>Exchange bolter for</comment>
-                  <modifiers>
-                    <modifier type="set" value="0" field="c6dc-8a79-cc0a-3479"/>
-                  </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Volkite charger" hidden="false" id="86d1-a8d5-c18c-a877" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="7">
                   <costs>
@@ -1148,8 +1138,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="parent" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -1534,7 +1524,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="901a-6b71-7a29-4597" id="f89a-0506-db27-b8b1" primary="false" name="Officer of the Line (2)"/>
-        <categoryLink targetId="9871-cb62-5283-2216" id="afd0-62c1-fe68-8fab" primary="false" name="Command Model Sub-type"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="d8c8-fea0-afc1-5438" field="category">
@@ -1613,10 +1602,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="9871-cb62-5283-2216" id="780e-03a6-53f4-44af" primary="false" name="Command Model Sub-type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="ce21-b38d-b224-0409" primary="false" name="Heavy Model Sub-Type"/>
-      </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="943f-e958-461a-bb23" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
@@ -1659,7 +1644,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </modifiers>
         </infoLink>
         <infoLink name="Implacable Advance" id="3b22-41a7-1b11-db34" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
-        <infoLink name="Infantry Unit Type" id="12a0-7dca-8a47-c4e1" hidden="false" type="rule" targetId="d518-ea26-a708-e6a1"/>
         <infoLink name="Slow and Purposeful" id="884d-c920-88e9-d201" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e"/>
       </infoLinks>
       <selectionEntryGroups>
@@ -2185,10 +2169,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </modifiers>
         </infoLink>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="e25e-5d0d-ee2d-70e6" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="c504-9dfa-35d3-c98f" id="7802-f028-e306-be10" primary="false" name="Antigrav Model Sub-Type"/>
-      </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Every Model in this unit may have its Bolt pistol exchanged for a combat shield:" id="d6d2-abfc-e09b-2752" hidden="false" sortIndex="4">
           <selectionEntries>
@@ -2510,10 +2490,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="41ee-8a08-201f-8367" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="ca29-8d73-fd0a-7cad" primary="false" name="Heavy Model Sub-Type"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Araknae Quad Accelerator Platform" hidden="false" id="acef-2a3d-3434-7583" sortIndex="40">
       <costs>
@@ -2758,9 +2734,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <modifier type="set" value="Explodes (4+)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Heavy Unit Sub-type" id="7984-1bec-a1a7-61c0" hidden="false" type="rule" targetId="7d35-4d6f-c4fe-4aac"/>
-        <infoLink name="Walker Unit Type" id="b420-0334-fce6-b917" hidden="false" type="rule" targetId="a4d9-6b9e-822f-d40b"/>
-        <infoLink name="Smokescreen" id="5769-05ab-b2fd-f273" hidden="false" type="profile" targetId="999b-689a-4ee7-8901"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fellblade Super-Heavy Battle Tank" hidden="false" id="ca07-1c1d-3788-c9e5" sortIndex="74">
@@ -2970,8 +2943,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                               <conditionGroups>
                                 <conditionGroup type="or">
                                   <conditions>
-                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                                   </conditions>
                                 </conditionGroup>
                               </conditionGroups>
@@ -3369,9 +3342,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="e2b0-3a75-d637-f091" primary="false" name="Infantry Model Type"/>
-      </categoryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="6a95-5a01-606f-b582" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="7771-c465-b19d-3cb0" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
@@ -3768,8 +3738,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -3960,8 +3930,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                               <conditionGroups>
                                 <conditionGroup type="or">
                                   <conditions>
-                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                                   </conditions>
                                 </conditionGroup>
                               </conditionGroups>
@@ -4054,9 +4024,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="87f9-7b04-668f-2d72" primary="false" name="Infantry Model Type"/>
-      </categoryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="daed-36a4-8d3e-d72b" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="19c2-43dc-c7bd-d9bf" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
@@ -4148,6 +4115,9 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                           </repeats>
                         </modifier>
                       </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
                     </entryLink>
                   </entryLinks>
                   <constraints>
@@ -4308,7 +4278,11 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Disintegrator pistol" hidden="false" id="8142-d03c-e2db-9a7c" type="selectionEntry" targetId="32d1-2c70-882f-9467" sortIndex="3"/>
+                    <entryLink import="true" name="Disintegrator pistol" hidden="false" id="8142-d03c-e2db-9a7c" type="selectionEntry" targetId="32d1-2c70-882f-9467" sortIndex="3">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c4b-5475-aad1-bd1e" includeChildSelections="false"/>
@@ -4404,10 +4378,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="7d5d-5b99-d04e-3d0e" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="c504-9dfa-35d3-c98f" id="be2c-5962-a390-9598" primary="false" name="Antigrav Model Sub-Type"/>
-      </categoryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="6722-426c-0abc-99d2" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="360d-c06f-f05d-e29a" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
@@ -4731,9 +4701,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="3568-1845-c0d8-1b08" primary="false" name="Infantry Model Type"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Deredeo Dreadnought" hidden="false" id="10ad-8abc-c6ef-97ad" sortIndex="42">
       <selectionEntries>
@@ -5683,10 +5650,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <infoLink name="[Legiones Astartes]" id="491e-97c6-157e-d58e" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
         <infoLink name="[Allegiance]" id="1e34-570c-4197-2062" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="9871-cb62-5283-2216" id="3587-d053-eb55-b518" primary="false" name="Command Model Sub-type"/>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="7b7f-dd14-fe2f-cebd" primary="false" name="Infantry Model Type"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Praetor in Terminator Armour" hidden="false" id="23ee-bc64-aea6-5272" sortIndex="2">
       <selectionEntries>
@@ -5914,8 +5877,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       </costs>
       <categoryLinks>
         <categoryLink targetId="647c-faca-3c98-c203" id="9741-721d-9801-773a" primary="false" name="Free Power Weapon"/>
-        <categoryLink targetId="9871-cb62-5283-2216" id="8164-33cc-22d8-f8c5" primary="false" name="Command Model Sub-type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="5189-84c8-e149-d8e3" primary="false" name="Heavy Model Sub-Type"/>
       </categoryLinks>
       <modifiers>
         <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
@@ -6193,8 +6154,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -6341,9 +6302,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <categoryLinks>
-        <categoryLink targetId="9871-cb62-5283-2216" id="5410-b46a-5cc1-4716" primary="false" name="Command Model Sub-type"/>
-      </categoryLinks>
       <modifiers>
         <modifier type="add" value="c504-9dfa-35d3-c98f" field="category">
           <conditionGroups>
@@ -6610,8 +6568,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       <categoryLinks>
         <categoryLink targetId="647c-faca-3c98-c203" id="dc72-70e2-8cd7-446d" primary="false" name="Free Power Weapon"/>
         <categoryLink targetId="901a-6b71-7a29-4597" id="2220-5980-1c3b-aca5" primary="false" name="Officer of the Line (2)"/>
-        <categoryLink targetId="9871-cb62-5283-2216" id="c0d5-dfe1-63b0-a544" primary="false" name="Command Model Sub-type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="d24a-0549-0696-38cf" primary="false" name="Heavy Model Sub-Type"/>
       </categoryLinks>
       <modifiers>
         <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
@@ -6763,9 +6719,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </entryLinks>
         </entryLink>
       </entryLinks>
-      <categoryLinks>
-        <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="8e07-89d2-67b9-49aa" primary="false" name="Transport Model Sub-Type"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Librarian" hidden="false" id="f06f-4418-b230-9ee7" sortIndex="8">
       <costs>
@@ -6941,9 +6894,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <infoLink name="[Allegiance]" id="c51f-c69e-24f6-cdfd" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="Psyker" id="32c6-c8c6-d8b4-1b5c" hidden="false" type="profile" targetId="0d5a-bf3a-7b46-785a"/>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="9871-cb62-5283-2216" id="d04a-ddb9-2953-ef79" primary="false" name="Command Model Sub-type"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Legion Champion" hidden="false" id="8ab7-6f30-ce10-65df" sortIndex="9">
       <costs>
@@ -7076,7 +7026,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
-        <categoryLink targetId="5a95-e564-96b2-8dc9" id="4157-fb03-9a71-7ed6" primary="false" name="Champion Model Sub-Type"/>
         <categoryLink targetId="1baf-b200-9e02-844d" id="1095-dd85-ad6b-3af6" primary="false" name="Legion Champion"/>
       </categoryLinks>
     </selectionEntry>
@@ -7088,7 +7037,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       </costs>
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="576b-f719-6b95-74da" primary="true" name="Command"/>
-        <categoryLink targetId="9871-cb62-5283-2216" id="675c-f68f-5f5d-9a16" primary="false" name="Command Model Sub-type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Vigilator" hidden="false" id="5c42-de29-fbf8-7ff1">
@@ -7316,9 +7264,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="f5f5-76c2-907d-2dd0" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
         <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="cd92-09af-5605-9c32" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="5"/>
       </entryLinks>
-      <categoryLinks>
-        <categoryLink targetId="9871-cb62-5283-2216" id="7092-2474-59a0-6090" primary="false" name="Command Model Sub-type"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Master of Signals" hidden="false" id="0c1d-e55e-1d4e-ab94" sortIndex="12">
       <costs>
@@ -7441,9 +7386,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <categoryLinks>
-        <categoryLink targetId="9871-cb62-5283-2216" id="7588-f989-5682-42bb" primary="false" name="Command Model Sub-type"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Praevian" hidden="false" id="7bb3-1bf7-ab4b-c34b" sortIndex="13">
       <costs>
@@ -7598,10 +7540,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <categoryLinks>
-        <categoryLink targetId="9871-cb62-5283-2216" id="5208-488b-9f36-0669" primary="false" name="Command Model Sub-type"/>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="d9d6-7ed5-91a2-d824" primary="false" name="Infantry Model Type"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Moritat" hidden="false" id="0c28-19c0-71b2-424e" sortIndex="14">
       <costs>
@@ -7756,11 +7694,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <categoryLinks>
-        <categoryLink targetId="af7d-af64-6b7d-da9d" id="0e26-a79b-b9dc-b713" primary="false" name="Specialist Model Sub-Type"/>
-        <categoryLink targetId="c504-9dfa-35d3-c98f" id="42cc-e3fc-9c48-b7d4" primary="false" name="Antigrav Model Sub-Type"/>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="d6f9-eeb8-d279-93ce" primary="false" name="Infantry Model Type"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Siege Breaker" hidden="false" id="8128-2ba6-b677-eb81" sortIndex="15">
       <costs>
@@ -7929,10 +7862,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <infoLink name="[Allegiance]" id="fce6-d23c-c7dd-862f" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="83f6-e43f-acfa-5871" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="9871-cb62-5283-2216" id="1182-0c8a-c30b-3f9b" primary="false" name="Command Model Sub-type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="4b2c-7ac6-48d1-27cf" primary="false" name="Heavy Model Sub-Type"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Herald" hidden="false" id="388f-1220-df0b-fcc6" sortIndex="17">
       <costs>
@@ -8033,9 +7962,9 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="unit" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -8062,8 +7991,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -8134,7 +8063,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="647c-faca-3c98-c203" id="b288-fb66-00bd-3d8a" primary="false" name="Free Power Weapon"/>
-        <categoryLink targetId="9871-cb62-5283-2216" id="f12f-5078-1f7f-4bd5" primary="false" name="Command Model Sub-type"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Chaplain" hidden="false" id="a6c4-31c4-9e9d-ab03" sortIndex="18">
@@ -8266,9 +8194,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <infoLink name="[Allegiance]" id="6183-f0f5-5372-724d" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="9257-0e74-b3b0-40e7" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="9871-cb62-5283-2216" id="3dfb-8b67-e986-af59" primary="false" name="Command Model Sub-type"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Praetorian Command Squad with Jump Packs" hidden="false" id="bcbf-35a6-91e8-b0b1" sortIndex="20">
       <selectionEntries>
@@ -8375,8 +8300,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                               <conditionGroups>
                                 <conditionGroup type="or">
                                   <conditions>
-                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                                   </conditions>
                                 </conditionGroup>
                               </conditionGroups>
@@ -8772,10 +8697,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="4cbc-c03f-c924-241c" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="c504-9dfa-35d3-c98f" id="d0c5-45ce-1ede-7bf6" primary="false" name="Antigrav Model Sub-Type"/>
-      </categoryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="dc06-b180-5abf-7830" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="9ece-6d43-a4af-f2b0" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
@@ -8893,8 +8814,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                               <conditionGroups>
                                 <conditionGroup type="or">
                                   <conditions>
-                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                                   </conditions>
                                 </conditionGroup>
                               </conditionGroups>
@@ -9322,9 +9243,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="c089-34af-c3d5-dbee" primary="false" name="Infantry Model Type"/>
-      </categoryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="e590-dd10-ce8d-c704" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="09ad-c29f-b564-c90e" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
@@ -9618,7 +9536,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="f621-687d-64ee-483f" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="647c-faca-3c98-c203" id="0e47-979e-5a20-c1f3" primary="false" name="Free Power Weapon"/>
       </categoryLinks>
       <infoLinks>
@@ -9956,8 +9873,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="b3d2-8dda-59a8-92b5" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="2d7d-e032-83b7-6ef6" primary="false" name="Heavy Model Sub-Type"/>
         <categoryLink targetId="647c-faca-3c98-c203" id="39cf-1b00-089b-54e9" primary="false" name="Free Power Weapon"/>
       </categoryLinks>
       <infoLinks>
@@ -10067,8 +9982,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -10217,8 +10132,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -10315,10 +10230,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="5298-2ece-c35f-a9e2" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="d2d6-5a84-672b-2833" id="d19c-c667-d5c3-2c02" primary="false" name="Skirmish Model Sub-Type"/>
-      </categoryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="db56-661d-4e2d-2e4b" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="4e60-5729-54d7-2cca" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
@@ -10639,7 +10550,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="8ef7-ff5f-874e-459d" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="647c-faca-3c98-c203" id="a96e-164d-f441-b7f0" primary="false" name="Free Power Weapon"/>
       </categoryLinks>
       <infoLinks>
@@ -10948,8 +10858,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="5318-9db0-630a-9353" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="3792-fb77-5653-bc28" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="c521-9f82-53ca-06d5" primary="false" name="Heavy Model Sub-Type"/>
         <categoryLink targetId="647c-faca-3c98-c203" id="bd89-199d-0722-bd5c" primary="false" name="Free Power Weapon"/>
       </categoryLinks>
       <infoLinks>
@@ -11343,9 +11251,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="c637-a2e0-08c2-aae1" primary="false" name="Infantry Model Type"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tactical Support Squad" hidden="false" id="2f96-9d5c-5c94-58db" sortIndex="34">
       <selectionEntries>
@@ -11444,7 +11349,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <conditionGroup type="and">
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="8045-89a4-76d4-fcef" shared="true" includeChildSelections="true"/>
                       </conditions>
                       <comment>SL</comment>
                     </conditionGroup>
@@ -11662,9 +11567,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="41f5-b138-5e8b-5915" primary="false" name="Infantry Model Type"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Heavy Support Squad" hidden="false" id="1734-8863-96bf-f052" sortIndex="35">
       <selectionEntries>
@@ -11755,7 +11657,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <conditionGroup type="and">
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="8045-89a4-76d4-fcef" shared="true" includeChildSelections="true"/>
                       </conditions>
                       <comment>SL</comment>
                     </conditionGroup>
@@ -11981,9 +11883,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="f409-48da-0f50-d3e5" primary="false" name="Infantry Model Type"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Apothecary" hidden="false" id="b7fe-ba65-00d2-57f0" sortIndex="37">
       <selectionEntries>
@@ -12112,10 +12011,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="af7d-af64-6b7d-da9d" id="bbed-0347-9a6a-9cd9" primary="false" name="Specialist Model Sub-Type"/>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="001e-c94e-db7e-f227" primary="false" name="Infantry Model Type"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Techmarine" hidden="false" id="6cac-d5d2-dda7-ea8f" sortIndex="38">
       <selectionEntryGroups>
@@ -12271,10 +12166,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="dba1-08a2-14d2-bd8d" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="af7d-af64-6b7d-da9d" id="b598-ecf1-20f5-dc97" primary="false" name="Specialist Model Sub-Type"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Deathstorm Drop Pod" hidden="false" id="84cd-c790-5886-8814" sortIndex="39">
       <selectionEntries>
@@ -13390,7 +13281,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="a073-2d4a-5bed-123e" id="85ae-e571-0d8c-787e" primary="false" name="Cavalry Model Type"/>
         <categoryLink targetId="2b65-a3f2-620a-dc58" id="1036-0df2-310c-82f0" primary="true" name="Recon"/>
       </categoryLinks>
       <entryLinks>
@@ -13710,10 +13600,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <infoLink name="Smokescreen" id="7d05-17df-47d9-133d" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
         <infoLink name="Smokescreen" id="22bc-9c5d-6f8e-47e2" hidden="false" type="profile" targetId="999b-689a-4ee7-8901"/>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="e0e3-66e3-501e-7873" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="d2d6-5a84-672b-2833" id="cea4-7173-5b37-b720" primary="false" name="Skirmish Model Sub-Type"/>
-      </categoryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="42"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -14307,8 +14193,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="a073-2d4a-5bed-123e" id="d54c-5bdd-5570-6bd4" primary="false" name="Cavalry Model Type"/>
-        <categoryLink targetId="c504-9dfa-35d3-c98f" id="86f6-b7aa-3407-71c3" primary="false" name="Antigrav Model Sub-Type"/>
         <categoryLink targetId="cf96-8891-3f9a-8921" id="6f50-3a91-c9e6-00d7" primary="true" name="Fast Attack"/>
       </categoryLinks>
       <costs>
@@ -16762,9 +16646,6 @@ Models of any Type other than Vehicle may Embark on a Model with this Special Ru
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
-        <categoryLink targetId="9871-cb62-5283-2216" id="33d6-ca22-314c-3ef1" primary="false" name="Command Model Sub-type"/>
-        <categoryLink targetId="c504-9dfa-35d3-c98f" id="3818-4e55-2428-f3a2" primary="false" name="Antigrav Model Sub-Type"/>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="cd48-e4ed-155e-77a8" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="ea11-0241-9a96-06a5" id="e21c-b59e-4599-fa6c" primary="false" name="Tip of the Spear"/>
       </categoryLinks>
     </selectionEntry>
@@ -16928,9 +16809,6 @@ Models of any Type other than Vehicle may Embark on a Model with this Special Ru
           </modifiers>
         </infoLink>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="9871-cb62-5283-2216" id="8272-118c-94b6-cbb9" primary="true" name="Command Model Sub-type"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Decurion Locus" hidden="false" id="54fc-a999-6373-5164">
       <rules>
@@ -18029,7 +17907,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8045-89a4-76d4-fcef" shared="true" includeChildSelections="true"/>
                   </conditions>
                   <comment>SL</comment>
                 </conditionGroup>
@@ -18063,8 +17941,8 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -18118,7 +17996,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8045-89a4-76d4-fcef" shared="true" includeChildSelections="true"/>
                   </conditions>
                   <comment>SL</comment>
                 </conditionGroup>
@@ -18251,8 +18129,8 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -18277,9 +18155,9 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -18306,10 +18184,10 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="8045-89a4-76d4-fcef" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -18334,9 +18212,9 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -18358,8 +18236,8 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -18405,8 +18283,8 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -18423,7 +18301,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="force" childId="340c-1d4f-1f31-fb70" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                   </conditions>
                   <comment>RG</comment>
                 </conditionGroup>
@@ -18447,8 +18325,8 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -18472,7 +18350,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -18561,10 +18439,10 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="8045-89a4-76d4-fcef" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -18589,9 +18467,9 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -18613,8 +18491,8 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -18639,9 +18517,9 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -18665,8 +18543,8 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -18694,8 +18572,8 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -18712,7 +18590,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="force" childId="340c-1d4f-1f31-fb70" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                   </conditions>
                   <comment>RG</comment>
                 </conditionGroup>
@@ -18807,8 +18685,8 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -18913,7 +18791,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8045-89a4-76d4-fcef" shared="true" includeChildSelections="true"/>
                   </conditions>
                   <comment>SL</comment>
                 </conditionGroup>
@@ -19143,8 +19021,8 @@ The Controlling Player of a Unit that only contains Models with this Special Rul
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="594d-fa82-13cb-a345" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a073-2d4a-5bed-123e" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="a073-2d4a-5bed-123e" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -19376,7 +19254,7 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
             <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -19554,7 +19432,7 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b980-187b-2b17-d635" shared="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="unit" childId="b980-187b-2b17-d635" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -19987,9 +19865,9 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -20013,8 +19891,8 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -20060,8 +19938,8 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -20078,7 +19956,7 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="force" childId="340c-1d4f-1f31-fb70" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                   </conditions>
                   <comment>RG</comment>
                 </conditionGroup>
@@ -20102,8 +19980,8 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -20131,9 +20009,9 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -20158,10 +20036,10 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="8045-89a4-76d4-fcef" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>

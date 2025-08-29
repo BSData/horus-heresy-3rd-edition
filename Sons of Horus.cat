@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="ac06-fcec-b634-5bd9" name="                        XVI - Sons of Horus" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="9" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="ac06-fcec-b634-5bd9" name="                        XVI - Sons of Horus" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="10" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Horus Lupercal" hidden="false" id="c0a2-76a5-6a6f-82bc">
       <selectionEntries>
@@ -148,8 +148,6 @@ The Controlling Player of an Army that includes a Model with this Special Rule h
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="7799-e1d6-762b-700b" id="2a7a-cdc2-df42-89cd" primary="false" name="Paragon Model Type"/>
-        <categoryLink targetId="b980-187b-2b17-d635" id="0ca5-8b26-0260-ed09" primary="false" name="Unique Model Sub-Type"/>
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="198b-55ba-f3bb-994d" primary="false" name="Master of the Legion"/>
         <categoryLink targetId="d251-944b-3c3b-0579" id="9299-b9e5-3027-100b" primary="false" name="Traitor"/>
       </categoryLinks>
@@ -177,6 +175,9 @@ The Controlling Player of an Army that includes a Model with this Special Rule h
           </modifiers>
         </infoLink>
       </infoLinks>
+      <constraints>
+        <constraint type="max" id="7546-bb27-45a7-9056" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ezekyle Abbadon" hidden="false" id="aa7d-73fa-eaac-d951">
       <selectionEntries>
@@ -234,10 +235,6 @@ The Controlling Player of an Army that includes a Model with this Special Rule h
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="d6a8-a423-d15c-3d23" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="b980-187b-2b17-d635" id="21dc-331b-52e1-b501" primary="false" name="Unique Model Sub-Type"/>
-        <categoryLink targetId="9871-cb62-5283-2216" id="3c00-2109-ef62-192c" primary="false" name="Command Model Sub-type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="60da-1153-946d-3d08" primary="false" name="Heavy Model Sub-Type"/>
         <categoryLink targetId="d251-944b-3c3b-0579" id="f87c-7a61-d980-0617" primary="false" name="Traitor"/>
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="119e-b9f6-178b-21c4" primary="false" name="Master of the Legion"/>
       </categoryLinks>
@@ -292,6 +289,9 @@ If a Model with this Special Rule joins a Justaerin Terminator Squad Unit in Res
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" id="3fe2-d950-412b-bd66" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dark Emmissary" hidden="false" id="ac51-dccb-d5ff-3d20">
       <selectionEntries>
@@ -390,9 +390,6 @@ If a Model with this Special Rule joins a Justaerin Terminator Squad Unit in Res
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="9a70-c0f2-cf5e-fb95" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="b980-187b-2b17-d635" id="b9fa-ab5d-caa5-07a5" primary="false" name="Unique Model Sub-Type"/>
-        <categoryLink targetId="9871-cb62-5283-2216" id="347d-1ef4-ed1d-3a33" primary="false" name="Command Model Sub-type"/>
         <categoryLink targetId="d251-944b-3c3b-0579" id="13a0-b86a-655d-0c90" primary="false" name="Traitor"/>
       </categoryLinks>
       <entryLinks>
@@ -440,6 +437,9 @@ If a Model with this Special Rule joins a Justaerin Terminator Squad Unit in Res
           <description>If this Model with this Special Rule joins a Unit with a different Faction Trait, the Leadership and Cool Characteristics of Models in that Unit are not reduced.</description>
         </rule>
       </rules>
+      <constraints>
+        <constraint type="max" id="cc2c-b141-4b49-ac19" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Vheren Ashurhaddon" hidden="false" id="6b99-8ee6-accb-c1e3">
       <selectionEntries>
@@ -530,9 +530,6 @@ If a Model with this Special Rule joins a Justaerin Terminator Squad Unit in Res
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="c509-49d8-20dd-483f" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="b980-187b-2b17-d635" id="16e7-4c94-34d6-ee80" primary="false" name="Unique Model Sub-Type"/>
-        <categoryLink targetId="9871-cb62-5283-2216" id="0db1-28a3-11a4-18c5" primary="false" name="Command Model Sub-type"/>
         <categoryLink targetId="d251-944b-3c3b-0579" id="7c6d-9cfc-a6b2-0530" primary="false" name="Traitor"/>
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="1847-66a9-6c01-88f3" primary="false" name="Master of the Legion"/>
       </categoryLinks>
@@ -571,6 +568,9 @@ If a Model with this Special Rule joins a Justaerin Terminator Squad Unit in Res
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" id="bb41-57b2-47fd-a178" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Horus Ascended" hidden="false" id="79f3-7312-bae4-da6c">
       <selectionEntries>
@@ -724,8 +724,6 @@ A Model with this Special Rule can join Units with the Malefic Sub-Type as if it
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="7799-e1d6-762b-700b" id="df2d-efea-6a66-8dfa" primary="false" name="Paragon Model Type"/>
-        <categoryLink targetId="b980-187b-2b17-d635" id="be25-38a7-b78d-bce5" primary="false" name="Unique Model Sub-Type"/>
         <categoryLink targetId="d251-944b-3c3b-0579" id="661c-abf6-869b-96b1" primary="false" name="Traitor"/>
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="3f27-7f65-d05e-8cb0" primary="false" name="Master of the Legion"/>
       </categoryLinks>
@@ -763,6 +761,9 @@ A Model with this Special Rule can join Units with the Malefic Sub-Type as if it
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" id="bc4a-93bc-44c0-88e5" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Justaerin Terminator Squad" hidden="false" id="3866-f18c-3b7c-3a7e">
       <selectionEntries>
@@ -958,10 +959,6 @@ A Model with this Special Rule can join Units with the Malefic Sub-Type as if it
           </modifiers>
         </selectionEntry>
       </selectionEntries>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="727e-8a42-ddad-19d4" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="1e7d-9066-28d2-97a0" id="3279-cce2-8176-924d" primary="false" name="Heavy Model Sub-Type"/>
-      </categoryLinks>
       <infoLinks>
         <infoLink name="Bulky (X)" id="075b-cb43-8936-1a68" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
           <modifiers>
@@ -1053,9 +1050,6 @@ A Model with this Special Rule can join Units with the Malefic Sub-Type as if it
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="46c9-1575-a9f7-360c" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="b980-187b-2b17-d635" id="f874-7edb-6b6a-e57f" primary="false" name="Unique Model Sub-Type"/>
-        <categoryLink targetId="9871-cb62-5283-2216" id="0acd-0d7a-7092-6989" primary="false" name="Command Model Sub-type"/>
         <categoryLink targetId="d251-944b-3c3b-0579" id="e608-15cf-1622-6255" primary="false" name="Traitor"/>
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="50cc-1435-027e-bdc9" primary="false" name="Master of the Legion"/>
         <categoryLink targetId="26c6-e05c-0f72-7852" id="1cd0-ab9d-fa5a-af56" primary="false" name="Shield"/>
@@ -1124,6 +1118,9 @@ A Model with this Special Rule can join Units with the Malefic Sub-Type as if it
 The Controlling Player of a Model with this Special Rule gains 2 Victory Points if Garviel Loken is Removed as a Casualty whilst engaged in a Challenge with a Model with this Special Rule.</description>
         </rule>
       </rules>
+      <constraints>
+        <constraint type="max" id="fdbc-5b73-4d0c-8415" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Garviel Loken" hidden="false" id="ed21-80f8-e842-c972">
       <selectionEntries>
@@ -1161,9 +1158,6 @@ The Controlling Player of a Model with this Special Rule gains 2 Victory Points 
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="e94b-325f-14d2-549a" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="b980-187b-2b17-d635" id="cf38-6cd2-7301-49a9" primary="false" name="Unique Model Sub-Type"/>
-        <categoryLink targetId="9871-cb62-5283-2216" id="5c31-01ec-950b-a4df" primary="false" name="Command Model Sub-type"/>
         <categoryLink targetId="4381-ed35-c3fa-a225" id="4d8b-b0dd-3563-66f1" primary="false" name="Loyalist"/>
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="e679-2f1d-54c9-d9f2" primary="false" name="Master of the Legion"/>
       </categoryLinks>
@@ -1212,7 +1206,7 @@ The Controlling Player of a Model with this Special Rule gains 2 Victory Points 
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="c408-52f1-b632-4c82" childId="d251-944b-3c3b-0579" shared="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1229,6 +1223,9 @@ If the Wounds Characteristic of a Model with this Special Rule is reduced to 0 o
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" id="35e2-6a4e-458c-8591" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tybalt Marr" hidden="false" id="df11-d2e3-cfd8-a189">
       <selectionEntries>
@@ -1302,9 +1299,6 @@ If the Wounds Characteristic of a Model with this Special Rule is reduced to 0 o
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="78df-6b64-5a26-34a9" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="b980-187b-2b17-d635" id="a6b2-008b-1f31-35f2" primary="false" name="Unique Model Sub-Type"/>
-        <categoryLink targetId="9871-cb62-5283-2216" id="8286-88a9-352e-ed8f" primary="false" name="Command Model Sub-type"/>
         <categoryLink targetId="d251-944b-3c3b-0579" id="a40c-7bef-d30f-cd17" primary="false" name="Traitor"/>
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="3ebd-3a80-da43-0fea" primary="false" name="Master of the Legion"/>
       </categoryLinks>
@@ -1355,6 +1349,9 @@ If the Wounds Characteristic of a Model with this Special Rule is reduced to 0 o
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" id="090f-0ff4-4812-8318" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Reaver Attack Squad" hidden="false" id="8010-21cf-b606-b491">
       <selectionEntries>
@@ -1578,11 +1575,16 @@ If the Wounds Characteristic of a Model with this Special Rule is reduced to 0 o
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="e5c9-2619-45e3-bc46" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Legion Equipment" hidden="false" id="0233-127b-a969-347a" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84c9-4fa7-2924-1e46"/>
+                <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="14e5-dec1-6480-a76a" includeChildSelections="true"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
-      <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="c074-abb7-8379-4f96" primary="false" name="Infantry Model Type"/>
-      </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Frag grenades" hidden="false" id="23ff-780d-d0a0-6542" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
           <constraints>
@@ -1600,12 +1602,6 @@ If the Wounds Characteristic of a Model with this Special Rule is reduced to 0 o
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="d734-5818-416f-a257" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
-        </entryLink>
-        <entryLink import="true" name="Legion Equipment" hidden="false" id="0233-127b-a969-347a" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf" sortIndex="5">
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="84c9-4fa7-2924-1e46"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="14e5-dec1-6480-a76a"/>
-          </constraints>
         </entryLink>
       </entryLinks>
       <infoLinks>
@@ -1678,9 +1674,6 @@ If the Wounds Characteristic of a Model with this Special Rule is reduced to 0 o
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="594d-fa82-13cb-a345" id="c7b0-fc83-1ab6-7e0f" primary="false" name="Infantry Model Type"/>
-        <categoryLink targetId="b980-187b-2b17-d635" id="dbd7-47bc-8b35-47d0" primary="false" name="Unique Model Sub-Type"/>
-        <categoryLink targetId="9871-cb62-5283-2216" id="9391-ca3c-4d8c-7b10" primary="false" name="Command Model Sub-type"/>
         <categoryLink targetId="d251-944b-3c3b-0579" id="6731-ad62-cb39-b57e" primary="false" name="Traitor"/>
       </categoryLinks>
       <entryLinks>
@@ -1738,6 +1731,9 @@ Each time an enemy Model declares a Challenge, the Controlling Player of a Model
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" id="8d0b-640f-4a85-b1fe" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Decurion Lanius" hidden="false" id="05ea-aecd-f5bc-63ea">
       <entryLinks>

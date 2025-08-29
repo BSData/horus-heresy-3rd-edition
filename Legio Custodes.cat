@@ -149,7 +149,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then once per
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
       <constraints>
-        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dff5-0b48-9001-c96a" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dff5-0b48-9001-c96a" includeChildSelections="false" includeChildForces="true"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0a1-1f71-54ff-462f" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
@@ -2787,7 +2787,6 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Lastrum bolt cannon" hidden="false" id="1601-634d-e4e4-e005" type="selectionEntry" targetId="5256-456a-6818-29d1" sortIndex="1"/>
                 <entryLink import="true" name="Adrathic devastator" hidden="false" id="c1cc-10c2-37ad-39aa" type="selectionEntry" targetId="b12f-541e-cd09-2dbb" sortIndex="2">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
@@ -2798,12 +2797,6 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
           </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Solarite power lance" hidden="false" id="521a-f0e5-32ac-529d" type="selectionEntry" targetId="1de9-1b06-e9a4-9d44" sortIndex="2">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0eae-910e-6fd8-b236" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c8f-b980-ab1c-fec0" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Misericordia" hidden="false" id="521a-f0e5-32ac-529d" type="selectionEntry" targetId="e15c-465c-8a7a-7e34" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0eae-910e-6fd8-b236" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c8f-b980-ab1c-fec0" includeChildSelections="false"/>
@@ -3320,7 +3313,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="aa5a-c9fd-1eb1-7a45" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="aa5a-c9fd-1eb1-7a45" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
