@@ -1096,7 +1096,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b5f6-283d-e1bc-26cf"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Recon - Land Raider Exploretor Only" hidden="false" id="cca3-27cf-d951-b2a6" targetId="1bc1-e6ff-d62e-398e" type="categoryEntry">
+            <categoryLink name="Recon - Land Raider Explorator Only" hidden="false" id="cca3-27cf-d951-b2a6" targetId="1bc1-e6ff-d62e-398e" type="categoryEntry">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d1f3-d313-de87-02c3" automatic="true"/>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7373-60ae-f5fd-0a60"/>
