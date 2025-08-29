@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="51" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="52" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -3704,23 +3704,10 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <entryLink import="true" name="Banestrike bolter" hidden="true" id="b17b-66d3-0158-c37e" type="selectionEntry" targetId="69de-4883-efd2-b876" sortIndex="8">
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                          <comment>SH</comment>
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </conditionGroup>
-                      </conditionGroups>
-                      <comment>SH+Cmd/Champ Only</comment>
+                      <comment>SH Only</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                   <costs>
@@ -3896,27 +3883,14 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <entryLink import="true" name="Banestrike bolter" hidden="true" id="df5e-bdbe-8681-a2a0" type="selectionEntry" targetId="69de-4883-efd2-b876" sortIndex="9">
                       <modifiers>
                         <modifier type="set" value="false" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                              <comment>SH</comment>
-                              <conditionGroups>
-                                <conditionGroup type="or">
-                                  <conditions>
-                                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
-                                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
-                                  </conditions>
-                                </conditionGroup>
-                              </conditionGroups>
-                            </conditionGroup>
-                          </conditionGroups>
-                          <comment>SH+Cmd/Champ Only</comment>
+                          <comment>SH Only</comment>
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                          </conditions>
                         </modifier>
                       </modifiers>
                       <costs>
-                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                       </costs>
                     </entryLink>
                   </entryLinks>
@@ -5355,6 +5329,29 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b67a-6316-5aff-3de6"/>
                           </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Banestrike bolter" hidden="false" id="9939-abbf-26ca-72ae" type="selectionEntry" targetId="69de-4883-efd2-b876" sortIndex="1">
+                          <modifiers>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                  <comment>SH</comment>
+                                  <conditionGroups>
+                                    <conditionGroup type="or">
+                                      <conditions>
+                                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </conditionGroup>
+                              </conditionGroups>
+                              <comment>SH+Cmd/Champ Only</comment>
+                            </modifier>
+                          </modifiers>
                         </entryLink>
                       </entryLinks>
                       <comment>Exchange bolter for</comment>
@@ -9931,23 +9928,10 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <entryLink import="true" name="Banestrike bolter" hidden="true" id="b455-2406-0d2e-2be7" type="selectionEntry" targetId="69de-4883-efd2-b876">
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                          <comment>SH</comment>
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </conditionGroup>
-                      </conditionGroups>
-                      <comment>SH+Cmd/Champ Only</comment>
+                      <comment>SH Only</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -10081,23 +10065,10 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <entryLink import="true" name="Banestrike bolter" hidden="true" id="ba73-8b2c-ff0c-4d42" type="selectionEntry" targetId="69de-4883-efd2-b876">
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                          <comment>SH</comment>
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </conditionGroup>
-                      </conditionGroups>
-                      <comment>SH+Cmd/Champ Only</comment>
+                      <comment>SH Only</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                 </entryLink>
