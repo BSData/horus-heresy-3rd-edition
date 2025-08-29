@@ -109,7 +109,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
       </selectionEntries>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="251b-8b90-833c-f173"/>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bc77-3ae6-8d6e-ce21" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bc77-3ae6-8d6e-ce21" includeChildSelections="true" includeChildForces="true"/>
         <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="8125-0c6d-7d89-35bb" includeChildSelections="true"/>
       </constraints>
       <infoLinks>
@@ -968,7 +968,7 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ff60-7216-1402-9a91" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ff60-7216-1402-9a91" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Angron Transfigured" hidden="false" id="eb31-de9c-e5ef-a9ac">
@@ -1100,6 +1100,9 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint type="max" id="3c97-b646-4db8-944f" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kharn the Bloody" hidden="false" id="19c9-b57d-a308-b655">
       <categoryLinks>
@@ -1313,7 +1316,7 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
         </modifier>
       </modifiers>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="cfb3-2167-5bee-0140" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cfb3-2167-5bee-0140" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="0797-1862-f00c-9f92">
