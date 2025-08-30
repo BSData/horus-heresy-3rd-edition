@@ -184,16 +184,9 @@
                       <modifiers>
                         <modifier type="set" value="15" field="9893-c379-920b-8982"/>
                         <modifier type="set" value="false" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8128-2ba6-b677-eb81" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="5be6-e4e6-4649-9a27" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="36ee-6609-4807-b87b" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="00f7-04e9-4cb3-9092" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="25ad-fbd9-d161-8fd1" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
                         </modifier>
                       </modifiers>
                       <constraints>
@@ -566,7 +559,7 @@
                         <modifier type="set" value="15" field="9893-c379-920b-8982"/>
                         <modifier type="set" value="false" field="hidden">
                           <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="8128-2ba6-b677-eb81" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="25ad-fbd9-d161-8fd1" shared="true" includeChildSelections="true" includeChildForces="true"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -25125,7 +25118,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
       <selectionEntries>
         <selectionEntry type="model" name="Mortificator" id="4f9b-5b2f-4594-8890" page="57" publicationId="5469-14da-d0a1-6092">
           <profiles>
-            <profile id="358d-1733-4e40-8d68" name="Mortificator" typeId="a76f-8e23-8c3e-166d">
+            <profile id="358d-1733-4e40-8d68" name="Mortificator" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
@@ -25143,6 +25136,32 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Specialist)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -25153,25 +25172,25 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad60-a7f8-4e7f-9534"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="38c9-56fb-0a27-4b1a" id="8c2a-33e0-4f54-bfbf" name="Corposant stave">
+            <entryLink hidden="false" type="selectionEntry" targetId="38c9-56fb-0a27-4b1a" id="8c2a-33e0-4f54-bfbf" name="Corposant stave" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe64-ccf4-42dd-a76b"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0461-e851-4869-8e47"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="9902-2d5f-0df2-5cf0" id="45f9-2721-4f21-acca" name="Servo-arm">
+            <entryLink hidden="false" type="selectionEntry" targetId="9902-2d5f-0df2-5cf0" id="45f9-2721-4f21-acca" name="Servo-arm" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0608-f67b-408e-bfd2"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46f9-fe5f-48e4-a4c1"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="7a5a-9fed-4103-ad03" name="Frag grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="7a5a-9fed-4103-ad03" name="Frag grenades" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="deae-e4cd-4707-994a"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4a4-04ef-4d10-92f0"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="5a2d-6b1f-4108-b5fa" name="Krak grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="5a2d-6b1f-4108-b5fa" name="Krak grenades" sortIndex="5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a9a5-b907-48e5-9657"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e46c-e277-4b19-bb17"/>
@@ -25179,14 +25198,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its bolt pistol exchanged for " id="3826-3446-47f6-9362">
+            <selectionEntryGroup name="This Model may have its bolt pistol exchanged for " id="3826-3446-47f6-9362" sortIndex="1">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="c548-e5e6-4fe5-a041" name="Bolt pistol">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1457-efbb-49a1-b400"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" id="40a1-4c33-4d88-877a" name="Legion Pistols">
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" id="40a1-4c33-4d88-877a" name="Legion Pistols" flatten="true">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f98f-51f2-47c2-917c"/>
                   </constraints>
@@ -25211,6 +25230,9 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </modifiers>
         </infoLink>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="4e4f-ab55-68ef-ad63" id="8abe-adef-1ecb-d7af" primary="false" name="Mortificator"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry name="Mortificator In Terminator Armour" type="unit" id="93b0-98f1-4d08-8746" sortIndex="114" page="58" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -29654,6 +29676,7 @@ Could not find rule: Auxiliary Vehicle Bays</comment>
     <entryLink import="true" name="Siege Breaker" hidden="false" id="bd9b-8e97-b137-105d" type="selectionEntry" targetId="8128-2ba6-b677-eb81" sortIndex="15">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="ea5c-5b1a-7e72-f9b9" primary="true" name="Command"/>
+        <categoryLink targetId="25ad-fbd9-d161-8fd1" id="4a1f-7c09-d22e-5a5d" primary="false" name="Siege Breaker"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Vigilator" hidden="false" id="1c13-a301-7104-5cc9" type="selectionEntry" targetId="22fd-89ea-04c6-3f3d" sortIndex="10">
@@ -29854,6 +29877,11 @@ Could not find rule: Auxiliary Vehicle Bays</comment>
         <modifier type="set-primary" value="d00a-e269-2ed3-8fc4" field="category">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="parent" childId="d00a-e269-2ed3-8fc4" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set-primary" value="f817-34d5-598c-d196" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9ffc-1414-bcb2-ca4b" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -30289,16 +30317,19 @@ Could not find rule: Auxiliary Vehicle Bays</comment>
     <entryLink import="true" name="Siege Breaker With Jump Pack" hidden="false" id="ef33-807f-26fa-e1f5" type="selectionEntry" targetId="5be6-e4e6-4649-9a27" sortIndex="98">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="997b-5841-6d2c-632a" primary="true" name="Command"/>
+        <categoryLink targetId="25ad-fbd9-d161-8fd1" id="22a8-c405-a21d-ea88" primary="false" name="Siege Breaker"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Mounted Siege Breaker" hidden="false" id="ddd7-ad93-7a65-7501" type="selectionEntry" targetId="36ee-6609-4807-b87b" sortIndex="99">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="2856-0a67-2edd-8f3a" primary="true" name="Command"/>
+        <categoryLink targetId="25ad-fbd9-d161-8fd1" id="f472-2af6-e41c-517f" primary="false" name="Siege Breaker"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Siege Breaker In Terminator Armour" hidden="false" id="4433-8d9a-41ba-796d" type="selectionEntry" targetId="00f7-04e9-4cb3-9092" sortIndex="100">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="5313-0fb2-c9ec-b953" primary="true" name="Command"/>
+        <categoryLink targetId="25ad-fbd9-d161-8fd1" id="c47e-aacd-f108-649b" primary="false" name="Siege Breaker"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Master Of Signals With Jump Pack" hidden="false" id="e191-cdff-31e0-1b62" type="selectionEntry" targetId="c956-a8ce-452d-99ca" sortIndex="101">
@@ -30368,6 +30399,11 @@ Could not find rule: Auxiliary Vehicle Bays</comment>
     <entryLink import="true" name="Delegatus In Terminator Armour" hidden="false" id="847a-f9d1-0e66-4394" type="selectionEntry" targetId="60f6-7316-4e0a-874b" sortIndex="112">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="795e-2f57-bc8b-f70c" primary="true" name="Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Mortificator" hidden="false" id="9dc6-21a4-0823-55f2" type="selectionEntry" targetId="f48f-ed83-4285-b41c" sortIndex="113">
+      <categoryLinks>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="4d3d-fded-e683-7594" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

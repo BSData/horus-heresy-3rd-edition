@@ -498,6 +498,9 @@
     </categoryEntry>
     <categoryEntry name="Bonded Reductor" id="8685-ffdf-e073-4267" hidden="false"/>
     <categoryEntry name="Apex from Delegatus" id="5034-24c8-3d4c-9013" hidden="false"/>
+    <categoryEntry name="War Engine - Contemptor Dreadnoughts Only" id="f817-34d5-598c-d196" hidden="false"/>
+    <categoryEntry name="Mortificator" id="4e4f-ab55-68ef-ad63" hidden="false"/>
+    <categoryEntry name="Siege Breaker" id="25ad-fbd9-d161-8fd1" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -17607,6 +17610,179 @@
           <constraints>
             <constraint type="min" value="0" field="forces" scope="parent" shared="true" id="0d54-af57-44fa-bce3" includeChildSelections="false"/>
             <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="5df5-5821-ea4c-d0e2" includeChildSelections="false"/>
+          </constraints>
+        </forceEntry>
+        <forceEntry name="Auxilliary - Dreadnought Talon" id="9ffc-1414-bcb2-ca4b" hidden="true" sortIndex="23">
+          <categoryLinks>
+            <categoryLink name="Prime War-engine" hidden="false" id="23ee-69b7-709f-aee9" targetId="9699-67c9-2c0b-e64b">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3910-b600-eda2-36b8" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="War Engine - Contemptor Dreadnoughts Only" hidden="false" id="d306-f087-fb59-da87" targetId="f817-34d5-598c-d196" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d4b3-6409-2ea4-d461"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                      </conditions>
+                      <comment>DA</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9a22-d01f-ab5c-ec07" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9a22-d01f-ab5c-ec07" shared="true"/>
+                      </conditions>
+                      <comment>EC</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="21c0-18db-03dd-ae07" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="21c0-18db-03dd-ae07" shared="true"/>
+                      </conditions>
+                      <comment>IW</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f7b4-2531-0962-1379" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f7b4-2531-0962-1379" shared="true"/>
+                      </conditions>
+                      <comment>WS</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d995-cb33-be41-ecf8" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="d995-cb33-be41-ecf8" shared="true"/>
+                      </conditions>
+                      <comment>SW</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f7b4-2531-0962-1379" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f7b4-2531-0962-1379" shared="true"/>
+                      </conditions>
+                      <comment>WS</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d186-cffc-0950-f632" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="d186-cffc-0950-f632" shared="true"/>
+                      </conditions>
+                      <comment>IF</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="486f-b32a-ac87-73dd" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="486f-b32a-ac87-73dd" shared="true"/>
+                      </conditions>
+                      <comment>NL</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9cff-ac34-56ca-260f" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9cff-ac34-56ca-260f" shared="true"/>
+                      </conditions>
+                      <comment>BA</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="736e-3967-e72b-e3ac" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="736e-3967-e72b-e3ac" shared="true"/>
+                      </conditions>
+                      <comment>IH</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a956-190d-3b47-6258" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="a956-190d-3b47-6258" shared="true"/>
+                      </conditions>
+                      <comment>WE</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="656a-07b6-d4fd-57af" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="656a-07b6-d4fd-57af" shared="true"/>
+                      </conditions>
+                      <comment>UM</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="be98-aa9d-64ef-f62c" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="be98-aa9d-64ef-f62c" shared="true"/>
+                      </conditions>
+                      <comment>DG</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="2496-21e2-1870-e9b8" shared="true"/>
+                      </conditions>
+                      <comment>TS</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ac06-fcec-b634-5bd9" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="ac06-fcec-b634-5bd9" shared="true"/>
+                      </conditions>
+                      <comment>SH</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4935-1832-63f7-91aa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="4935-1832-63f7-91aa" shared="true"/>
+                      </conditions>
+                      <comment>WB</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f148-a6e4-5a8c-3aeb" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f148-a6e4-5a8c-3aeb" shared="true"/>
+                      </conditions>
+                      <comment>SL</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="340c-1d4f-1f31-fb70" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="340c-1d4f-1f31-fb70" shared="true"/>
+                      </conditions>
+                      <comment>RG</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="8813-5298-c368-ee16" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="8813-5298-c368-ee16" shared="true"/>
+                      </conditions>
+                      <comment>AL</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Legions Only</comment>
+            </modifier>
+            <modifier type="increment" value="1" field="4256-c6d3-a3ce-63c8">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="4e4f-ab55-68ef-ad63" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="4256-c6d3-a3ce-63c8"/>
           </constraints>
         </forceEntry>
       </forceEntries>
