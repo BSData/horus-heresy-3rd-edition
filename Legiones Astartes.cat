@@ -21294,9 +21294,9 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="130"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Cataphractii Herald" id="7a99-e467-4c2b-955f" page="40" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Cataphractii Herald" id="7a99-e467-4c2b-955f" page="40" publicationId="5469-14da-d0a1-6092" sortIndex="1">
           <profiles>
-            <profile id="93fa-3fb6-414d-b4bc" name="Cataphractii Herald" typeId="a76f-8e23-8c3e-166d">
+            <profile id="93fa-3fb6-414d-b4bc" name="Cataphractii Herald" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">6</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
@@ -21314,6 +21314,54 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">4+</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Command, Heavy)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Tarteros</comment>
+                  <modifiers>
+                    <modifier type="set" value="Infantry (Command)" field="50fc-9241-d4a2-045b"/>
+                    <modifier type="set" value="7" field="a106-a779-d272-5e93"/>
+                    <modifier type="set" value="Tartaros Herald" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -21321,6 +21369,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c700-7dfe-4905-9ba0"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d17b-514a-14ae-d774"/>
           </constraints>
           <infoLinks>
             <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="ce51-37b8-4c7f-9f74">
@@ -21329,37 +21378,49 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </modifiers>
             </infoLink>
             <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="4ee3-6181-47c5-af10"/>
-            <infoLink name="Slow and Purposeful" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e" id="82e8-a945-4843-a83d"/>
             <infoLink name="Fear (X)" hidden="false" type="rule" targetId="0ebc-0c92-2209-6393" id="ffb4-f501-47c4-89c5">
               <modifiers>
                 <modifier type="set" field="name" value="Fear (1)"/>
               </modifiers>
             </infoLink>
+            <infoLink name="Slow and Purposeful" id="4647-8ef2-2d78-4dee" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="b808-6eaa-6396-6ce3" id="9030-b997-4b2e-9045" name="Icon of Allegiance">
+            <entryLink hidden="false" type="selectionEntry" targetId="b808-6eaa-6396-6ce3" id="9030-b997-4b2e-9045" name="Icon of Allegiance" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b69-9c2a-451d-9fdd"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e23-70c0-4502-a30e"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Terminator Armour" hidden="false" id="6805-d597-d47b-d146" type="selectionEntryGroup" targetId="170b-d9c0-e9d6-b314" sortIndex="1"/>
+            <entryLink import="true" name="Prosperine Arcana" hidden="false" id="be50-b695-1781-986b" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its power weapon exchanged for " id="3a94-9923-4140-9070">
+            <selectionEntryGroup name="This Model may have its power weapon exchanged for " id="3a94-9923-4140-9070" sortIndex="2">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="0523-46e6-6df1-a4c0" id="1c5f-a8f7-4efb-bf3f" name="Legion Terminator Melee Weapons">
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="0523-46e6-6df1-a4c0" id="1c5f-a8f7-4efb-bf3f" name="Legion Terminator Melee Weapons" flatten="true" sortIndex="2">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1759-ce04-428c-a95f"/>
                   </constraints>
+                </entryLink>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="7194-1215-49e1-2442" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" flatten="true" sortIndex="1">
+                  <modifiers>
+                    <modifier type="set" value="807a-4734-959e-9286" field="defaultSelectionEntryId"/>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a18-8916-474f-8edf"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6667-bf68-4776-b003"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Power weapon
-	 Checked under Power weapon</comment>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -21367,86 +21428,35 @@ Could not find wargear Power weapon
             <categoryLink targetId="9871-cb62-5283-2216" id="9c5e-d0c4-4ca9-86ea" primary="false" name="Command Model Sub-type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="d77f-2ef7-448e-adcc" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in This Model may have its power weapon exchanged for</comment>
-        </selectionEntry>
-        <selectionEntry type="model" name="Tartaros Herald" id="0f66-1a04-40bf-afb9" page="40" publicationId="5469-14da-d0a1-6092">
-          <profiles>
-            <profile id="42d6-9439-42a7-a2b4" name="Tartaros Herald" typeId="a76f-8e23-8c3e-166d">
-              <characteristics>
-                <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
-                <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
-                <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">5</characteristic>
-                <characteristic typeId="498f-dce1-59fd-d8d7" name="S">4</characteristic>
-                <characteristic typeId="3120-8275-e537-ecd2" name="T">5</characteristic>
-                <characteristic typeId="f5cc-79a3-d302-cc1d" name="W">4</characteristic>
-                <characteristic typeId="af9d-7db8-dc95-71c1" name="I">5</characteristic>
-                <characteristic typeId="024e-bdb1-7982-25a0" name="A">4</characteristic>
-                <characteristic typeId="02ad-ebe6-86e7-9fd6" name="LD">9</characteristic>
-                <characteristic typeId="9cd1-0e7c-2cd6-5f2f" name="CL">9</characteristic>
-                <characteristic typeId="f714-1726-37d3-44df" name="WP">8</characteristic>
-                <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">8</characteristic>
-                <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">2+</characteristic>
-                <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
-                <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Command)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7706-eef7-482a-b746"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="bfa2-c802-43bf-a98c">
-              <modifiers>
-                <modifier type="set" field="name" value="Bulky (2)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="23db-d38a-40ef-aed7"/>
-            <infoLink name="Fear (X)" hidden="false" type="rule" targetId="0ebc-0c92-2209-6393" id="655c-6e6a-4b0a-8530">
-              <modifiers>
-                <modifier type="set" field="name" value="Fear (1)"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="b808-6eaa-6396-6ce3" id="366a-e376-4577-bf09" name="Icon of Allegiance">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="43ac-63ac-4df9-b1ae"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b31-7d22-4494-b037"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its power weapon exchanged for " id="1466-c964-4dc2-8822">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="0523-46e6-6df1-a4c0" id="2b24-a4cc-40bc-96b1" name="Legion Terminator Melee Weapons">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a7e-c50d-47f9-9cd2"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da1f-e9b3-4657-8c5b"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5887-12ef-4617-87e4"/>
-              </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Power weapon
-	 Checked under Power weapon</comment>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <categoryLinks>
-            <categoryLink targetId="594d-fa82-13cb-a345" id="fff3-ba0e-4f71-81e3" primary="false" name="Infantry Model Type"/>
-            <categoryLink targetId="9871-cb62-5283-2216" id="8719-b80b-432b-888c" primary="false" name="Command Model Sub-type"/>
-          </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in This Model may have its power weapon exchanged for</comment>
+          <modifiers>
+            <modifier type="set" value="Tartaros Herald" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250828-1757
-Needs replace by constraints and default set to Cataphractii Herald</comment>
+      <categoryLinks>
+        <categoryLink targetId="647c-faca-3c98-c203" id="4ca9-86e4-0733-3aaa" primary="false" name="Free Power Weapon"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Cult Arcana" hidden="false" id="4785-c967-2168-4910" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="0e6f-d11f-456f-da43" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="eb89-19e5-2a05-4329" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="943c-96c2-7373-faa4" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="1930-aae0-3881-8c36" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Siege Breaker With Jump Pack" type="unit" id="5be6-e4e6-4649-9a27" sortIndex="98" page="41" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -29974,6 +29984,11 @@ Could not find rule: Auxiliary Vehicle Bays</comment>
     <entryLink import="true" name="Mounted Herald" hidden="false" id="7c3d-16f8-a6ae-2c73" type="selectionEntry" targetId="eb91-e184-4e8a-a0e0" sortIndex="96">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="8c08-0eb5-67bb-add6" primary="true" name="Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Herald In Terminator Armour" hidden="false" id="6058-6f09-9050-f72a" type="selectionEntry" targetId="f0ed-1a89-45ad-8530" sortIndex="97">
+      <categoryLinks>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="8fc8-c8a8-298e-5006" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
