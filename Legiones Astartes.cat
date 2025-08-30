@@ -19452,7 +19452,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -20083,7 +20083,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -20626,9 +20626,9 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="110"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Cataphractii Chaplain" id="8a82-fbba-4c4a-8b09" page="37" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Cataphractii Chaplain" id="8a82-fbba-4c4a-8b09" page="37" publicationId="5469-14da-d0a1-6092" sortIndex="1">
           <profiles>
-            <profile id="5a74-5ca8-484b-8bd3" name="Cataphractii Chaplain" typeId="a76f-8e23-8c3e-166d">
+            <profile id="5a74-5ca8-484b-8bd3" name="Cataphractii Chaplain" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">6</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
@@ -20646,6 +20646,54 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">4+</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Command, Heavy)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Tarteros</comment>
+                  <modifiers>
+                    <modifier type="set" value="Infantry (Command)" field="50fc-9241-d4a2-045b"/>
+                    <modifier type="set" value="7" field="a106-a779-d272-5e93"/>
+                    <modifier type="set" value="Tartaros Chaplain" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -20653,26 +20701,37 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1531-dffa-439c-a8de"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8d4f-ff87-a550-de48"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="4668-8878-4122-a6e0">
+            <infoLink name="Bulky (X)" id="100a-48fc-0fba-413b" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
               <modifiers>
-                <modifier type="set" field="name" value="Bulky (2)"/>
+                <modifier type="set" value="Bulky (2)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="bfa7-effb-481f-b9ed"/>
-            <infoLink name="Slow and Purposeful" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e" id="fb8b-5903-44bf-b379"/>
+            <infoLink name="Implacable Advance" id="ec02-a324-4b06-1e26" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
+            <infoLink name="Slow and Purposeful" id="508a-7497-9f46-eb63" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="4da8-c2aa-1380-9825" id="19d1-949a-41e0-ae0c" name="Crozius arcanum">
+            <entryLink hidden="false" type="selectionEntry" targetId="4da8-c2aa-1380-9825" id="19d1-949a-41e0-ae0c" name="Crozius arcanum" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="75f3-f595-47de-81b6"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72ee-6be8-4087-98e9"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Terminator Armour" hidden="false" id="a1af-d364-a837-e188" type="selectionEntryGroup" targetId="170b-d9c0-e9d6-b314" sortIndex="1"/>
+            <entryLink import="true" name="Prosperine Arcana" hidden="false" id="eb6e-6f15-05dc-0bc7" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="3939-d395-40d9-a768">
+            <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="3939-d395-40d9-a768" sortIndex="2">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="cbd0-7a7b-42d3-a4be" name="Combi-bolter">
                   <constraints>
@@ -20684,7 +20743,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a73-379f-4702-9c2d"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" id="52a4-361d-49b0-b867" name="Legion Combi-weapons">
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" id="52a4-361d-49b0-b867" name="Legion Combi-weapons" flatten="true">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f961-4b05-4d2a-9ca4"/>
                   </constraints>
@@ -20701,84 +20760,32 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <categoryLink targetId="9871-cb62-5283-2216" id="dd41-975b-4068-87f7" primary="false" name="Command Model Sub-type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="4bf1-94f2-4aed-9c63" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
-        </selectionEntry>
-        <selectionEntry type="model" name="Tartaros Chaplain" id="0127-4bf8-404b-bf03" page="37" publicationId="5469-14da-d0a1-6092">
-          <profiles>
-            <profile id="d834-f84f-4d9a-82ad" name="Tartaros Chaplain" typeId="a76f-8e23-8c3e-166d">
-              <characteristics>
-                <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
-                <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
-                <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">4</characteristic>
-                <characteristic typeId="498f-dce1-59fd-d8d7" name="S">4</characteristic>
-                <characteristic typeId="3120-8275-e537-ecd2" name="T">5</characteristic>
-                <characteristic typeId="f5cc-79a3-d302-cc1d" name="W">4</characteristic>
-                <characteristic typeId="af9d-7db8-dc95-71c1" name="I">5</characteristic>
-                <characteristic typeId="024e-bdb1-7982-25a0" name="A">4</characteristic>
-                <characteristic typeId="02ad-ebe6-86e7-9fd6" name="LD">9</characteristic>
-                <characteristic typeId="9cd1-0e7c-2cd6-5f2f" name="CL">10</characteristic>
-                <characteristic typeId="f714-1726-37d3-44df" name="WP">8</characteristic>
-                <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">7</characteristic>
-                <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">2+</characteristic>
-                <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
-                <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Command)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eff7-7259-4489-a487"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="45c2-ab72-4fa5-85ee">
-              <modifiers>
-                <modifier type="set" field="name" value="Bulky (2)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="4a81-008f-45c4-8b26"/>
-          </infoLinks>
-          <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="4da8-c2aa-1380-9825" id="c94f-49f4-49db-b989" name="Crozius arcanum">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="223c-387e-4fa0-84a5"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b839-46c9-4195-8246"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="e51f-8bb9-43ff-a163">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="7da9-6114-43ec-905e" name="Combi-bolter">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba35-0409-48aa-af82"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" id="cedd-9242-4f7e-abcb" name="Volkite charger">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1a7-b8e2-4c29-ac19"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" id="8728-cec2-479b-b0b1" name="Legion Combi-weapons">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dab-7195-4a4d-a385"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c03e-16d7-4d9c-b135"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4de5-9df2-4a82-a22d"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <categoryLinks>
-            <categoryLink targetId="594d-fa82-13cb-a345" id="dbeb-d52d-49c9-8bff" primary="false" name="Infantry Model Type"/>
-            <categoryLink targetId="9871-cb62-5283-2216" id="8897-d59a-4a87-bcc5" primary="false" name="Command Model Sub-type"/>
-          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="Tartaros Chaplain" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250828-1757
-Needs replace by constraints and default set to Cataphractii Chaplain</comment>
+      <entryLinks>
+        <entryLink import="true" name="Cult Arcana" hidden="false" id="5052-fb49-12da-0292" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="b04f-d96c-55f0-9cf4" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="c283-b885-cd8c-6357" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="86d5-28cf-dab8-b411" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="41af-0596-8199-4d1a" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Herald With Jump Pack" type="unit" id="7c0e-025f-41b5-b7d0" sortIndex="95" page="38" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -29858,6 +29865,11 @@ Could not find rule: Auxiliary Vehicle Bays</comment>
     <entryLink import="true" name="Mounted Chaplain" hidden="false" id="aebd-07af-af5a-9319" type="selectionEntry" targetId="6924-162b-45e1-ac5a" sortIndex="93">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="d78a-2abe-47a9-01c2" primary="true" name="Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Chaplain In Terminator Armour" hidden="false" id="3a4d-4253-3c1c-7d28" type="selectionEntry" targetId="d17a-1e84-4207-b627" sortIndex="94">
+      <categoryLinks>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="0318-4b20-75b5-74db" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
