@@ -3818,7 +3818,15 @@
       <infoLinks>
         <infoLink name="[Allegiance]" id="ff86-a341-3b7e-402e" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Mechanicum]" id="1638-3439-fb48-eb54" hidden="false" type="profile" targetId="7aca-c779-952f-fcac"/>
-        <infoLink name="Aegis of Pain" id="17bc-f8bb-f56a-e2c4" hidden="false" type="rule" targetId="2cfa-42a7-e9c8-6000"/>
+        <infoLink name="Aegis of Pain" id="17bc-f8bb-f56a-e2c4" hidden="false" type="rule" targetId="2cfa-42a7-e9c8-6000">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8685-ffdf-e073-4267" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Bulky (X)" id="8cc2-2150-dc62-1a99" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
           <modifiers>
             <modifier type="set" value="Bulky (3)" field="name"/>
@@ -9812,13 +9820,11 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
       </categoryLinks>
     </entryLink>
   </entryLinks>
-  <rules>
-  </rules>
   <sharedRules>
     <rule name="Dispersal Field" id="f50c-2bd5-3de1-4695" hidden="false">
       <description>A Model with this Special Rule may have the Dispersal Advanced Reaction made for it:</description>
     </rule>
-        <rule name="Cybertheugic Status: Null" id="d010-07c3-50a8-4002" hidden="false">
+    <rule name="Cybertheugic Status: Null" id="d010-07c3-50a8-4002" hidden="false">
       <description>A Model under the effect of this Cybertheugic Status gains no bonuses or penalties - but when Null is applied to any Model in a Unit then all other Cybertheugic Statuses on all Models in that Unit are discarded and the Unit suffers Cybertheugic Feeback immediately regardless of whether any Cybertheugic Statuses are discarded. If a Model in a Unit would gain another Cybertheugic Status while any Models in that Unit have the Null Cybertheugic Status (other than another instance of Null) then it does not gain that Cybertheugic Status, all Models in the Unit discard Null and the Unit suffers Cybertheugic Feedback.</description>
     </rule>
     <rule name="Cybertheugic Status: Quicken" id="1160-e8ac-393e-f60c" hidden="false">

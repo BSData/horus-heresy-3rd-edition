@@ -478,6 +478,25 @@
     <categoryEntry name="Support - Cybernetica Only" id="6670-8971-59cb-b440" hidden="false"/>
     <categoryEntry name="War-Engine - Cybernetica Only" id="a212-e7c6-7b8c-f480" hidden="false"/>
     <categoryEntry name="Command - Arcuitor Magesterium Only" id="d798-77b3-0f8e-d492" hidden="false"/>
+    <categoryEntry name="Legiones Thallaxes" id="6f78-9e60-4884-63d2" hidden="true">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f3e8-dd8e-b474-59e2"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7e6a-e3bf-9c73-1574"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="3e37-6d4b-1198-b3fa" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="2" field="7e6a-e3bf-9c73-1574">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="3e37-6d4b-1198-b3fa" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Bonded Reductor" id="8685-ffdf-e073-4267" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -804,7 +823,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b5f6-283d-e1bc-26cf"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Clade Operative" hidden="false" id="b728-3cbe-7716-d0ef" targetId="335a-5a90-3b7c-c034" type="categoryEntry"/>
+            <categoryLink name="Clade Operative" hidden="false" id="b728-3cbe-7716-d0ef" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Legiones Thallaxes" hidden="false" id="ac75-3bc0-f94c-7fac" targetId="6f78-9e60-4884-63d2" type="categoryEntry"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="5611-db49-9e64-44c6-min" includeChildSelections="true"/>
@@ -7445,7 +7465,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4ae1-654e-fe03-027f" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Elites - Myrmidax Only" hidden="false" id="e254-1805-e51b-b3d6" targetId="cd91-8631-13b1-59d5" type="categoryEntry">
+            <categoryLink name="Elites - Myrmidax Only" hidden="false" id="e254-1805-e51b-b3d6" targetId="cd91-8631-13b1-59d5">
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2311-a998-db88-c206" includeChildSelections="false"/>
               </constraints>
@@ -19319,6 +19339,7 @@ All Models in any of these Units have their Faction Trait replaced with &apos;Al
       <rules>
         <rule name="Master of Automata" id="eb57-ecb6-05e0-ddef" hidden="false" page="37" publicationId="e54c-7040-0f35-d85d">
           <description>&quot;This Special Rule allows a Praevian to be accompanied by a Unit of Battle-Automata.&quot;
+
 When a Model with this Special Rule is included in a Detachment, one additional Force Organization Slot is added to that Detachment. This Slot can only be filled with one Castellax Battle Maniple or Castellax Destructor Maniple Unit selected from Liber Mechanicum. When such a Unit is included in this way, its Cybernetica Trait is replaced with &apos;Bonded Automata&apos;, and this Unit can be included even thought it does not have the same Faction Trait as the other Units in that Detachment. In addition, a Model with this Special Rule may join a Friendly Unit that includes Models with the Automata Type. If a Model with this Special Rule joins a Unit with the Automata Type, the Leadership and Cool Characteristics of Models in that Unit are not reduced as a results of this, but may be modified by other rules as normal.</description>
         </rule>
       </rules>
@@ -19342,7 +19363,6 @@ When a Model with this Special Rule is included in a Detachment, one additional 
       <rules>
         <rule name="Lord of Automata" id="8e20-4195-d824-af90" hidden="false">
           <description>&quot;This Special Rule allows an Iron Father to be accompanied by a Unit of Battle-automata.&quot;
-
 
 When a Model with this Special Rule is included in a Detachment, one additional Support Force Organization Slot is added to that Detachment. This Slot can only be filled with one Castellax Battle-automata Maniple selected from Liber Mechanicum. When such a Unit is included in this way, its Cybernetica Trait is replaced with &apos;Bonded Automata&apos;, and this Unit can be included even though it does not have the same Faction Trait as the other Units in that Detachment. In addition, a Model with this Special Rule may join a Friendly Unit that includes Models with the Automata Type. If a Model with bthis Special Rule joins a Unit with the Automata Type, the Leadership and Cool Characteristics or Models in that unit are not reduced.</description>
         </rule>
@@ -19382,6 +19402,15 @@ When a Model with this Special Rule is included in a Detachment, one additional 
         </modifier>
       </modifiers>
       <comment>Ultramarines</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Legiones Thallaxes" hidden="false" id="3e37-6d4b-1198-b3fa">
+      <rules>
+        <rule name="Legiones Thallaxes" id="3763-8cab-f5b5-9bd7" hidden="false">
+          <description>&quot;This Special Rule allows Thallax Units to be selected as part of a Detachment that includes a Forge Lord.&quot;
+
+When a Model with this Special Rule is included in a Detachment, two additional Force Organisation Slots are added to that Detachment. These Slots can only be filled with Thallax Cohort Units selected from Liber Mechanicum. When such a Unit is included in this way, the Reductor Trait is replaced with ‘Bonded Reductor’ on all Models in the Unit, and the Aegis of Pain Special Rule is removed from all Models in the Unit. These Units can be included even though they do not have the same Faction Trait as the other Units in that Detachment.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
