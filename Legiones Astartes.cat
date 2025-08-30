@@ -19548,9 +19548,9 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="135"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Legion Champion with Jump Pack" id="1abd-5a0a-4055-bbac" page="32" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Legion Champion with Jump Pack" id="1abd-5a0a-4055-bbac" page="32" publicationId="5469-14da-d0a1-6092" sortIndex="1">
           <profiles>
-            <profile id="ec3f-0b61-45bb-be94" name="Legion Champion with Jump Pack" typeId="a76f-8e23-8c3e-166d">
+            <profile id="ec3f-0b61-45bb-be94" name="Legion Champion with Jump Pack" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">12</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">6</characteristic>
@@ -19568,6 +19568,49 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Command, Antigrav)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -19578,29 +19621,30 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="921d-4b6d-4186-b4c8"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="1881-a2b5-fc58-4270" id="f591-b43f-43ab-9548" name="Paragon blade">
+            <entryLink hidden="false" type="selectionEntry" targetId="1881-a2b5-fc58-4270" id="f591-b43f-43ab-9548" name="Paragon blade" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0598-203a-4f29-92be"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cf2-5f92-4aed-b3fa"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="7e08-beb9-441a-8ebf" name="Frag grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="7e08-beb9-441a-8ebf" name="Frag grenades" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="03b8-0950-42f7-baff"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ecd-448a-41b1-ad7f"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="d8de-4f39-4b94-b6df" name="Krak grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="d8de-4f39-4b94-b6df" name="Krak grenades" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf20-6fa0-4824-9b11"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e91-6eff-4789-8342"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Prosperine Arcana" hidden="false" id="bb32-1142-7333-f5be" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its volkite serpenta exchanged for " id="6a2d-30b7-4055-8717">
+            <selectionEntryGroup name="This Model may have its volkite serpenta exchanged for " id="6a2d-30b7-4055-8717" sortIndex="1">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="b7c3-1de1-087c-3d6e" id="2ea4-67d6-408e-84c7" name="Volkite serpenta">
+                <entryLink hidden="false" type="selectionEntry" targetId="b7c3-1de1-087c-3d6e" id="2ea4-67d6-408e-84c7" name="Volkite serpenta" sortIndex="1" defaultAmount="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3606-4403-4b9b-8056"/>
                   </constraints>
@@ -19619,7 +19663,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b65-9a7d-4ded-b994"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have melta bombs selected for it for +5 Points." id="e704-25bf-4a74-9b94">
+            <selectionEntryGroup name="This Model may have melta bombs selected for it for +5 Points." id="e704-25bf-4a74-9b94" sortIndex="5">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" id="0b28-624e-42d8-ac74" name="Melta bombs">
                   <costs>
@@ -19640,6 +19684,9 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <categoryLink targetId="9871-cb62-5283-2216" id="7cdf-b6ad-4736-9576" primary="false" name="Command Model Sub-type"/>
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="980e-12ef-4917-a293" primary="false" name="Antigrav Model Sub-Type"/>
           </categoryLinks>
+          <infoLinks>
+            <infoLink name="Never Back Down" id="c78d-6dd3-5805-a250" hidden="false" type="rule" targetId="91a6-7f61-0c0b-a236"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -19649,9 +19696,17 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </modifiers>
         </infoLink>
         <infoLink name="Deep Strike" hidden="false" type="rule" targetId="0553-d06b-52b9-34db" id="c848-34b6-4d78-a72c"/>
+        <infoLink name="[Legiones Astartes]" id="4c1a-a0c8-f081-7756" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="[Allegiance]" id="aeee-7e2d-7c96-a0e7" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
       </infoLinks>
-      <comment>warning: !BSC 20250828-1757
-Could not find rule: Never Back Down (see Liber Astartes/Hereticus, page 32)</comment>
+      <entryLinks>
+        <entryLink import="true" name="Cult Arcana" hidden="false" id="9270-ef24-13cf-03de" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="c10a-5e3d-cdfe-bb11" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="abbb-2358-df75-889f" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Mounted Legion Champion" type="unit" id="81ff-36e6-4de3-a46b" sortIndex="90" page="33" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -29633,6 +29688,11 @@ Could not find rule: Auxiliary Vehicle Bays</comment>
     <entryLink import="true" name="Esoterist In Terminator Armour" hidden="false" id="4b24-f831-bc45-1e53" type="selectionEntry" targetId="f232-220d-4c9d-87f4" sortIndex="88">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="2697-e144-e0df-f9b1" primary="true" name="Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Legion Champion With Jump Pack" hidden="false" id="cb60-d6c9-55ca-f650" type="selectionEntry" targetId="98fc-9124-4534-a3a3" sortIndex="89">
+      <categoryLinks>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="8ce9-198d-8534-6921" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
