@@ -482,6 +482,11 @@
     <categoryEntry name="Prosperine Arcana" id="9c50-6271-7418-82a5" hidden="false"/>
     <categoryEntry name="Forge Crafted Weapon in Unit" id="f9f6-d169-cb95-6285" hidden="false"/>
     <categoryEntry name="Recon - Land Raider Explorator Only" id="1bc1-e6ff-d62e-398e" hidden="false"/>
+    <categoryEntry name="Elites - Myrmidax Only" id="cd91-8631-13b1-59d5" hidden="false"/>
+    <categoryEntry name="Elites - Cybernetica Only" id="51e9-3e9e-3e09-f4c7" hidden="false"/>
+    <categoryEntry name="Support - Cybernetica Only" id="6670-8971-59cb-b440" hidden="false"/>
+    <categoryEntry name="War-Engine - Cybernetica Only" id="a212-e7c6-7b8c-f480" hidden="false"/>
+    <categoryEntry name="Command - Arcuitor Magesterium Only" id="d798-77b3-0f8e-d492" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -6733,46 +6738,10 @@
         </forceEntry>
         <forceEntry name="Apex - Command Maniple" id="dbe3-9946-d4de-dc73" hidden="true" sortIndex="17">
           <categoryLinks>
-            <categoryLink name="Elites" hidden="false" id="0ed6-de35-f804-23a7" targetId="5d5e-958f-e388-50b5">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b8e-2c6e-7930-733e" includeChildSelections="false"/>
-              </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="8b8e-2c6e-7930-733e">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </categoryLink>
             <categoryLink name="Prime Elites" hidden="false" id="3c7c-3630-9acc-562b" targetId="276f-7a07-a56c-affd">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e97e-ebbe-716f-69c7" includeChildSelections="true"/>
               </constraints>
-            </categoryLink>
-            <categoryLink name="Support" hidden="false" id="bbf6-da5f-87f7-a428" targetId="345f-9ba6-9b02-ed5c">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68f2-1777-ac43-88ed" includeChildSelections="false"/>
-              </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="68f2-1777-ac43-88ed">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </categoryLink>
-            <categoryLink name="War-engine" hidden="false" id="08d9-03ab-a94f-20fa" targetId="2499-7239-685f-8465">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="487b-d91d-5d23-8bd7" includeChildSelections="false"/>
-              </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="487b-d91d-5d23-8bd7">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </categoryLink>
             <categoryLink name="Prime Support" hidden="false" id="90ba-7fdf-aa67-9877" targetId="1c79-ecdf-9a64-84c9">
               <constraints>
@@ -6959,6 +6928,42 @@
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0ba4-e22f-a834-5f65" includeChildSelections="true"/>
               </constraints>
+            </categoryLink>
+            <categoryLink name="Elites - Cybernetica Only" hidden="false" id="9224-19ca-80a7-e010" targetId="51e9-3e9e-3e09-f4c7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b8e-2c6e-7930-733e" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="8b8e-2c6e-7930-733e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="Support - Cybernetica Only" hidden="false" id="639a-df2c-8203-f491" targetId="6670-8971-59cb-b440">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68f2-1777-ac43-88ed" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="68f2-1777-ac43-88ed">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="War-Engine - Cybernetica Only" hidden="false" id="a81c-64d7-3fce-e184" targetId="a212-e7c6-7b8c-f480">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="487b-d91d-5d23-8bd7" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="487b-d91d-5d23-8bd7">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
           </categoryLinks>
           <modifiers>
@@ -7559,18 +7564,6 @@
         </forceEntry>
         <forceEntry name="Apex - The Host of Destruction" id="1db9-6dc0-7da5-e517" hidden="true" sortIndex="19">
           <categoryLinks>
-            <categoryLink name="Elites" hidden="false" id="81bd-4c80-78a2-86cc" targetId="5d5e-958f-e388-50b5">
-              <constraints>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="ab72-b6c7-109a-0093" includeChildSelections="false"/>
-              </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="ab72-b6c7-109a-0093">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </categoryLink>
             <categoryLink name="Prime Elites" hidden="false" id="3170-c475-414a-5306" targetId="276f-7a07-a56c-affd">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f3db-6a01-37c5-5b27" includeChildSelections="true"/>
@@ -7796,6 +7789,18 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4ae1-654e-fe03-027f" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Elites - Myrmidax Only" hidden="false" id="e254-1805-e51b-b3d6" targetId="cd91-8631-13b1-59d5" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2311-a998-db88-c206" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="2311-a998-db88-c206">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -7977,14 +7982,14 @@
         </forceEntry>
         <forceEntry name="Apex - Crux of Judgement" id="4f19-3023-0077-1049" hidden="true" sortIndex="20">
           <categoryLinks>
-            <categoryLink name="Command" hidden="false" id="7023-93dc-4fda-c76a" targetId="6dbf-654a-f06f-2d69">
-              <constraints>
-                <constraint type="max" value="3" field="selections" scope="force" shared="true" id="83c4-a1e7-c38c-e164" includeChildSelections="true"/>
-              </constraints>
-            </categoryLink>
             <categoryLink name="Prime Command" hidden="false" id="9a0d-a107-8ece-c576" targetId="c85c-2963-658f-1bb9">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f015-623b-6deb-1ccb" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Command - Arcuitor Magesterium Only" hidden="false" id="6855-3ac0-c1e3-a011" targetId="d798-77b3-0f8e-d492">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="force" shared="true" id="83c4-a1e7-c38c-e164" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
           </categoryLinks>
