@@ -1444,8 +1444,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="9e29-3097-e7b7-8f26" shared="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="9e29-3097-e7b7-8f26" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="da17-ab73-7d33-c76f" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
@@ -1462,8 +1462,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="9e29-3097-e7b7-8f26" shared="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="20c1-90d3-5850-726d" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="9e29-3097-e7b7-8f26" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="da17-ab73-7d33-c76f" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
@@ -12623,11 +12623,11 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       <selectionEntryGroups>
         <selectionEntryGroup name="1) Weapon Option 1" id="cf7f-2d94-519d-4289" hidden="false" sortIndex="1" collapsible="true" defaultSelectionEntryId="none">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f4a-0836-12df-79fb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37f7-0cb1-6460-61fe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f4a-0836-12df-79fb" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37f7-0cb1-6460-61fe" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Gravis bolt cannon" hidden="false" id="cd73-cd83-d8f7-2b55" type="selectionEntry" targetId="50d5-02d3-0be6-9143">
+            <entryLink import="true" name="Gravis bolt cannon" hidden="false" id="cd73-cd83-d8f7-2b55" type="selectionEntry" targetId="50d5-02d3-0be6-9143" sortIndex="1">
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
               </costs>
@@ -12701,11 +12701,10 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </selectionEntryGroup>
         <selectionEntryGroup name="3) May replace an in-built combi-bolter with one of the following:" id="df40-c5aa-f77d-3091" hidden="false" sortIndex="5" defaultSelectionEntryId="11b4-2870-bf2d-1398" collapsible="false">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dfbc-e43b-eaed-c60f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="efbd-6ba1-57ba-2dd3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dfbc-e43b-eaed-c60f" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="efbd-6ba1-57ba-2dd3" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
           </constraints>
           <modifiers>
-            <modifier type="decrement" value="1" field="dfbc-e43b-eaed-c60f"/>
             <modifier type="increment" value="1" field="efbd-6ba1-57ba-2dd3">
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="parent" childId="ea00-ac16-4ae6-87d3" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
@@ -12765,11 +12764,11 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </selectionEntryGroup>
         <selectionEntryGroup name="2) Weapon Option 2" id="2eab-b247-9786-3106" hidden="false" sortIndex="2" collapsible="true" defaultSelectionEntryId="none">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1ad-5006-88ba-83e6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f63-aa71-e2e3-aa1d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1ad-5006-88ba-83e6" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f63-aa71-e2e3-aa1d" percentValue="false" includeChildSelections="false" includeChildForces="false" automatic="true"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Gravis bolt cannon" hidden="false" id="9689-9000-131f-1b43" type="selectionEntry" targetId="50d5-02d3-0be6-9143">
+            <entryLink import="true" name="Gravis bolt cannon" hidden="false" id="9689-9000-131f-1b43" type="selectionEntry" targetId="50d5-02d3-0be6-9143" sortIndex="1">
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
               </costs>
@@ -25221,18 +25220,30 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <categoryLink targetId="594d-fa82-13cb-a345" id="4f3f-4a25-45b7-a5a1" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="af7d-af64-6b7d-da9d" id="e856-68db-4e11-9b68" primary="false" name="Specialist Model Sub-Type"/>
           </categoryLinks>
+          <infoLinks>
+            <infoLink name="Battlesmith (X)" id="ef68-840a-5ffc-ccef" hidden="false" type="rule" targetId="c3db-d17c-fd46-eb01">
+              <modifiers>
+                <modifier type="set" value="Battlesmith (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
-        <infoLink name="Battlesmith (X)" hidden="false" type="rule" targetId="c3db-d17c-fd46-eb01" id="2d32-f757-47f3-ad53">
-          <modifiers>
-            <modifier type="set" field="name" value="Battlesmith (2)"/>
-          </modifiers>
-        </infoLink>
+        <infoLink name="[Allegiance]" id="5200-a0af-a22c-9279" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="f10f-901e-a280-bc4d" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="4e4f-ab55-68ef-ad63" id="8abe-adef-1ecb-d7af" primary="false" name="Mortificator"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Cult Arcana" hidden="false" id="9627-16d3-37c2-2fc5" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="ad0b-eeb6-185d-5642" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="8a41-ced5-62a9-1f5c" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Mortificator In Terminator Armour" type="unit" id="93b0-98f1-4d08-8746" sortIndex="114" page="58" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -25241,7 +25252,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
       <selectionEntries>
         <selectionEntry type="model" name="Cataphractii Mortificator" id="79cb-29be-482a-9a58" page="58" publicationId="5469-14da-d0a1-6092">
           <profiles>
-            <profile id="9134-1b9b-4d8d-abbd" name="Cataphractii Mortificator" typeId="a76f-8e23-8c3e-166d">
+            <profile id="9134-1b9b-4d8d-abbd" name="Cataphractii Mortificator" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">6</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
@@ -25259,6 +25270,54 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">4+</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Specialist, Heavy)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Tarteros</comment>
+                  <modifiers>
+                    <modifier type="set" value="Infantry (Specialist)" field="50fc-9241-d4a2-045b"/>
+                    <modifier type="set" value="7" field="a106-a779-d272-5e93"/>
+                    <modifier type="set" value="Tartaros Mortificator" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -25266,6 +25325,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8df3-bf5b-4a0a-bda5"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd8f-66e8-8fe2-f22b"/>
           </constraints>
           <infoLinks>
             <infoLink name="Battlesmith (X)" hidden="false" type="rule" targetId="c3db-d17c-fd46-eb01" id="77e0-94f1-482e-8c66">
@@ -25273,13 +25333,21 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <modifier type="set" field="name" value="Battlesmith (2)"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="f665-c4db-4805-a8f4">
+            <infoLink name="Bulky (X)" id="7799-a23f-d8a9-7687" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
               <modifiers>
-                <modifier type="set" field="name" value="Bulky (2)"/>
+                <modifier type="set" value="Bulky (2)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="0c78-f66b-4b98-a548"/>
-            <infoLink name="Slow and Purposeful" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e" id="ab9d-8b91-4032-a91d"/>
+            <infoLink name="Implacable Advance" id="c14c-b312-3284-2010" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
+            <infoLink name="Slow and Purposeful" id="3b20-fd6c-cdbc-5f78" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <entryLinks>
             <entryLink hidden="false" type="selectionEntry" targetId="38c9-56fb-0a27-4b1a" id="e882-c08b-4e17-9f07" name="Corposant stave">
@@ -25294,9 +25362,11 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d3b-8fa6-4dec-8a6b"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Terminator Armour" hidden="false" id="835f-c355-88b5-6e53" type="selectionEntryGroup" targetId="170b-d9c0-e9d6-b314"/>
+            <entryLink import="true" name="Prosperine Arcana" hidden="false" id="602f-57bf-2e3f-34eb" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="bbea-b537-4f27-afc7">
+            <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="bbea-b537-4f27-afc7" defaultSelectionEntryId="7526-9d28-4f83-afef">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="7526-9d28-4f83-afef" name="Combi-bolter">
                   <constraints>
@@ -25308,14 +25378,12 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d850-4bdb-42e4-aa00"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="13b9-7f2f-52e6-5b22" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" flatten="true"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6cec-7de0-4bae-b2d6"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4253-f8d5-45c4-b84d"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear for one item from the Legion Combi-weapons list.
-	 Checked under for one item from the Legion Combi-weapons list.</comment>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -25323,97 +25391,35 @@ Could not find wargear for one item from the Legion Combi-weapons list.
             <categoryLink targetId="af7d-af64-6b7d-da9d" id="cb25-3f62-4096-bb90" primary="false" name="Specialist Model Sub-Type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="acbf-c149-4cbd-a206" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in This Model may have its combi-bolter exchanged for</comment>
-        </selectionEntry>
-        <selectionEntry type="model" name="Tartaros Mortificator" id="b96a-d705-4bc0-bd04" page="58" publicationId="5469-14da-d0a1-6092">
-          <profiles>
-            <profile id="b4a5-874d-4f9c-bfd2" name="Tartaros Mortificator" typeId="a76f-8e23-8c3e-166d">
-              <characteristics>
-                <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
-                <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
-                <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">5</characteristic>
-                <characteristic typeId="498f-dce1-59fd-d8d7" name="S">4</characteristic>
-                <characteristic typeId="3120-8275-e537-ecd2" name="T">5</characteristic>
-                <characteristic typeId="f5cc-79a3-d302-cc1d" name="W">4</characteristic>
-                <characteristic typeId="af9d-7db8-dc95-71c1" name="I">5</characteristic>
-                <characteristic typeId="024e-bdb1-7982-25a0" name="A">3</characteristic>
-                <characteristic typeId="02ad-ebe6-86e7-9fd6" name="LD">8</characteristic>
-                <characteristic typeId="9cd1-0e7c-2cd6-5f2f" name="CL">8</characteristic>
-                <characteristic typeId="f714-1726-37d3-44df" name="WP">7</characteristic>
-                <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">9</characteristic>
-                <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">2+</characteristic>
-                <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
-                <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Specialist)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="827b-cc6f-42a4-a364"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Battlesmith (X)" hidden="false" type="rule" targetId="c3db-d17c-fd46-eb01" id="fde4-370f-4ea6-b94d">
-              <modifiers>
-                <modifier type="set" field="name" value="Battlesmith (2)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="04bc-ff2b-43be-99d6">
-              <modifiers>
-                <modifier type="set" field="name" value="Bulky (2)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="c446-25a0-4f89-a93e"/>
-          </infoLinks>
-          <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="38c9-56fb-0a27-4b1a" id="7111-8da7-4c30-b614" name="Corposant stave">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c72c-d27c-4e85-80d3"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f852-3f2d-4a9a-820f"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="9902-2d5f-0df2-5cf0" id="6c0b-84d9-419a-b4ff" name="Servo-arm">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4a3-8a95-42ef-b1c9"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a897-5e8a-4601-a356"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="beab-fdf4-4d40-be07">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="db25-bf7a-4f7f-84a3" name="Combi-bolter">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d39b-a01b-4cd5-bcdf"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" id="1be1-7a89-492c-ac70" name="Volkite charger">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0924-80fa-449f-804f"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="27a7-ee89-458b-b77b"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4d6-9d87-49d9-b62a"/>
-              </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear for one item from the Legion Combi-weapons list.
-	 Checked under for one item from the Legion Combi-weapons list.</comment>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <categoryLinks>
-            <categoryLink targetId="594d-fa82-13cb-a345" id="9c7c-7176-4e6f-bb40" primary="false" name="Infantry Model Type"/>
-            <categoryLink targetId="af7d-af64-6b7d-da9d" id="2691-fdaf-49c4-bff4" primary="false" name="Specialist Model Sub-Type"/>
-          </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in This Model may have its combi-bolter exchanged for</comment>
+          <modifiers>
+            <modifier type="set" value="Tartaros Mortificator" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250828-1757
-Needs replace by constraints and default set to Cataphractii Mortificator</comment>
+      <categoryLinks>
+        <categoryLink targetId="4e4f-ab55-68ef-ad63" id="02fd-635c-288a-1b94" primary="false" name="Mortificator"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Cult Arcana" hidden="false" id="ae7b-167d-d139-b780" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="b800-5b06-66e7-98dc" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="cace-2854-422b-6088" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="5848-67b9-9f03-b7b0" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="bdda-9be7-5cb8-fe84" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Warmonger" type="unit" id="91b5-a2f3-4067-b498" sortIndex="115" page="59" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -25422,7 +25428,7 @@ Needs replace by constraints and default set to Cataphractii Mortificator</comme
       <selectionEntries>
         <selectionEntry type="model" name="Warmonger" id="4b9e-e669-4130-b8b2" page="59" publicationId="5469-14da-d0a1-6092">
           <profiles>
-            <profile id="fc13-aed4-489e-98ce" name="Warmonger" typeId="a76f-8e23-8c3e-166d">
+            <profile id="fc13-aed4-489e-98ce" name="Warmonger" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
@@ -25440,6 +25446,43 @@ Needs replace by constraints and default set to Cataphractii Mortificator</comme
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Command)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -25450,82 +25493,28 @@ Needs replace by constraints and default set to Cataphractii Mortificator</comme
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d275-4843-4cd3-9c72"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="4f2d-8bb9-46a6-9854" name="Frag grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="4f2d-8bb9-46a6-9854" name="Frag grenades" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8170-7aa0-4260-bd07"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="542b-e2a2-4e4b-bd6e"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="b336-c51b-44da-b293" name="Krak grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="b336-c51b-44da-b293" name="Krak grenades" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ecf-364f-43c2-9b64"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc8e-995c-41f6-9c1a"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Ætheric Juncture Splicer" hidden="false" id="f233-b767-504a-b099" type="selectionEntry" targetId="61b1-747d-d563-d7e8" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4db7-0a4c-6a4b-9ecd"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e65f-f09c-6686-0fd7"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Prosperine Arcana" hidden="false" id="8563-13f0-522d-dbfd" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its bolter and/or bolt pistol exchanged for " id="583c-9eb1-4c46-8b75">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="bbd8-b067-465a-b8cd" name="Bolt pistol">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3eb6-37b4-4b81-9361"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" id="76ab-ede7-4698-8fce" name="Bolter">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c8e2-853e-421d-8037"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="f955-8b22-9362-31c0" id="33e9-1e9f-44c2-9e6e" name="Legion Officer Wargear">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="caa1-c44f-43fc-8a93"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1f2b-ef9a-4758-89d0"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e517-06ed-432b-a184"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have its bolter exchanged for one item from the Legion Combi-weapons list or one of the following:" id="3ae3-21bc-43eb-a7e1">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="6068-d203-27e6-318a" id="5ea1-2e3e-4b42-883c" name="Astartes shotgun">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79be-4db0-4cec-a07a"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" id="fb0d-7873-42d4-82d5" name="Volkite charger">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eba2-3889-4719-8ae6"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78a9-bf43-4132-989c"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have its bolter and bolt pistol exchanged for " id="fbe8-457c-4bd6-a827">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="6754-24dd-5be0-26ff" id="afa8-3389-472f-a25e" name="Pair of lightning claws">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c86-ef02-4197-8367"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad69-7a82-42b3-8b2c"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have melta bombs selected for it for +5 Points." id="369d-48dc-4cad-ab67">
+            <selectionEntryGroup name="This Model may have melta bombs selected for it for +5 Points." id="369d-48dc-4cad-ab67" sortIndex="5">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" id="185e-6f65-4ab4-b876" name="Melta bombs">
                   <costs>
@@ -25540,7 +25529,7 @@ Needs replace by constraints and default set to Cataphractii Mortificator</comme
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ebf-e7b2-4377-9b29"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Model with a bolter may have one of the following selected for it:" id="fb30-e302-47f0-8f90">
+            <selectionEntryGroup name="This Model with a bolter may have one of the following selected for it:" id="fb30-e302-47f0-8f90" sortIndex="6" hidden="true">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="3484-1bd3-cb74-7abe" id="e2b5-b0ed-477b-8ac0" name="Bayonet">
                   <costs>
@@ -25562,23 +25551,141 @@ Needs replace by constraints and default set to Cataphractii Mortificator</comme
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e7b-679e-4417-9f72"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="d3f9-b9e6-3ea5-cc8e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" id="b745-da9f-d101-aa29" hidden="false" sortIndex="1">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="This Model may have its bolter exchanged for" id="66cc-4e80-7c50-31bd" hidden="false" defaultSelectionEntryId="2458-89c4-4174-8dea" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Astartes shotgun" hidden="false" id="da64-4f40-19e3-daa6" type="selectionEntry" targetId="6068-d203-27e6-318a" sortIndex="4">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2428-5109-4396-1056"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Volkite charger" hidden="false" id="e864-dc7f-209a-ffae" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="5">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ecbd-6d3e-d307-c664"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Bolter" hidden="false" id="2d50-ea3e-2e54-9c9b" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="78d1-5d6a-c808-f93b"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="0e82-a9a1-b4bb-3c58" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" sortIndex="3" flatten="true"/>
+                    <entryLink import="true" name="Legion Officer Wargear" hidden="false" id="ad84-f574-cda3-df59" type="selectionEntryGroup" targetId="f955-8b22-9362-31c0" flatten="true" sortIndex="2"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27c2-c58e-f812-8855"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6649-b2e7-2062-3f92"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="6649-b2e7-2062-3f92">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="27c2-c58e-f812-8855">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="This Model may have its bolt pistol exchanged for " id="8795-114d-16fc-abe4" hidden="false" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="49a4-edf0-47fe-0e15" type="selectionEntry" targetId="2942-f783-d627-33c5">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3506-7643-d50f-ba6c"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Legion Officer Wargear" hidden="false" id="d894-f9bd-0b94-a720" type="selectionEntryGroup" targetId="f955-8b22-9362-31c0" flatten="true">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e42c-e0fb-666c-96b8"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fda1-141d-40c8-c1f8" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae8a-d61d-1e56-f29c" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="fda1-141d-40c8-c1f8">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="ae8a-d61d-1e56-f29c">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="This Model may have its bolter and bolt pistol exchanged for " id="3034-a72b-9995-a0a8" hidden="false" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Pair of lightning claws" hidden="false" id="570e-6751-e358-f11e" type="selectionEntry" targetId="6754-24dd-5be0-26ff">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4ae-1e96-25a4-4c52"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c67e-b928-331c-ab38"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="96cd-d028-daa6-8db6" automatic="true"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d0a5-2eca-6f9b-d170" automatic="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="96cd-d028-daa6-8db6">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="d0a5-2eca-6f9b-d170">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="b3dc-c767-4b07-968b" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="9871-cb62-5283-2216" id="c0d5-7764-47dd-815f" primary="false" name="Command Model Sub-type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear Ætheric juncture splicer
-	 Checked under Ætheric juncture splicer</comment>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250828-1757
-Could not find rule: None
-Bolter is in two option lists for Warmonger, you will need to combine them by hand.
-Bolter is in two option lists for Warmonger, you will need to combine them by hand.
-Bolt pistol is in two option lists for Warmonger, you will need to combine them by hand.
-Exchange was not applied on This Model may have its bolter and bolt pistol exchanged for</comment>
+      <entryLinks>
+        <entryLink import="true" name="Cult Arcana" hidden="false" id="9f90-0afa-8b21-1c3d" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="3cae-4e27-e5ee-3ab5" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="54f4-6fdc-796a-338b" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="c4c7-75a7-4857-e5de" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="7ecf-2260-6ed6-627d" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Warmonger In Terminator Armour" type="unit" id="f849-279f-4f2b-abca" sortIndex="116" page="60" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -30404,6 +30511,16 @@ Could not find rule: Auxiliary Vehicle Bays</comment>
     <entryLink import="true" name="Mortificator" hidden="false" id="9dc6-21a4-0823-55f2" type="selectionEntry" targetId="f48f-ed83-4285-b41c" sortIndex="113">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="4d3d-fded-e683-7594" primary="true" name="Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Mortificator In Terminator Armour" hidden="false" id="6ad7-936d-e4f5-ff50" type="selectionEntry" targetId="93b0-98f1-4d08-8746" sortIndex="114">
+      <categoryLinks>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="550c-2d19-8e0a-53e4" primary="true" name="Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Warmonger" hidden="false" id="1b17-03e3-3b3b-f9e3" type="selectionEntry" targetId="91b5-a2f3-4067-b498" sortIndex="115">
+      <categoryLinks>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="0a9c-7680-c2be-9613" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
