@@ -20792,9 +20792,9 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="130"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Herald with Jump Pack" id="e773-8378-4a4a-9956" page="38" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Herald with Jump Pack" id="e773-8378-4a4a-9956" page="38" publicationId="5469-14da-d0a1-6092" sortIndex="1">
           <profiles>
-            <profile id="a516-82e2-4d06-8d28" name="Herald with Jump Pack" typeId="a76f-8e23-8c3e-166d">
+            <profile id="a516-82e2-4d06-8d28" name="Herald with Jump Pack" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">12</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
@@ -20812,6 +20812,49 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Command, Antigrav)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -20822,33 +20865,34 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a39-2da6-4ffd-8899"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="812c-10d1-4d1e-bfb1" name="Bolt pistol">
+            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="812c-10d1-4d1e-bfb1" name="Bolt pistol" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf5f-25f1-4b1d-98fb"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea84-4bd7-4fe5-be76"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="67c5-c79b-4af8-b25e" name="Frag grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="67c5-c79b-4af8-b25e" name="Frag grenades" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5bfb-449d-4461-af20"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29ab-6fa1-409b-a499"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="6c8f-e38c-45cb-8c14" name="Krak grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="6c8f-e38c-45cb-8c14" name="Krak grenades" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24fd-40c9-4110-9791"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69da-8ee2-4b8a-bd29"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="b808-6eaa-6396-6ce3" id="5340-76c9-498e-8fab" name="Icon of Allegiance">
+            <entryLink hidden="false" type="selectionEntry" targetId="b808-6eaa-6396-6ce3" id="5340-76c9-498e-8fab" name="Icon of Allegiance" sortIndex="5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6821-b0c1-4f9d-9d58"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d73-270c-48b7-a53b"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Prosperine Arcana" hidden="false" id="eb04-42ef-94a7-7be0" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its power weapon exchanged for " id="e0a5-d1e5-45b5-b05c">
+            <selectionEntryGroup name="This Model may have its power weapon exchanged for " id="e0a5-d1e5-45b5-b05c" sortIndex="1">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" id="7b20-cb91-4de8-870a" name="Power fist">
                   <costs>
@@ -20858,16 +20902,18 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6143-5d3f-4c80-8ac0"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="3332-e537-4239-3d59" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" sortIndex="1">
+                  <modifiers>
+                    <modifier type="set" value="807a-4734-959e-9286" field="defaultSelectionEntryId"/>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a1bb-e267-493c-ada1"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22c4-c14a-4e6f-8833"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a1bb-e267-493c-ada1" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22c4-c14a-4e6f-8833" automatic="true"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Power weapon
-	 Checked under Power weapon</comment>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have melta bombs selected for it for +5 Points." id="a296-3a4c-44ad-b26c">
+            <selectionEntryGroup name="This Model may have melta bombs selected for it for +5 Points." id="a296-3a4c-44ad-b26c" sortIndex="6">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" id="542e-445d-4030-bbb9" name="Melta bombs">
                   <costs>
@@ -20888,8 +20934,6 @@ Could not find wargear Power weapon
             <categoryLink targetId="9871-cb62-5283-2216" id="2c8d-d24e-4c29-ada5" primary="false" name="Command Model Sub-type"/>
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="9224-b997-414b-a417" primary="false" name="Antigrav Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in This Model may have its power weapon exchanged for</comment>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -20904,7 +20948,20 @@ Could not find wargear in This Model may have its power weapon exchanged for</co
             <modifier type="set" field="name" value="Fear (1)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="[Allegiance]" id="df06-bd7d-05e9-9653" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="9efa-ad2e-3210-fcc0" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Cult Arcana" hidden="false" id="8998-9be7-ca28-f9ef" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="1fa8-e2f6-e835-b8f3" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="cae0-c05e-bb90-4524" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="647c-faca-3c98-c203" id="9d17-649a-3703-e36d" primary="false" name="Free Power Weapon"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry name="Mounted Herald" type="unit" id="eb91-e184-4e8a-a0e0" sortIndex="96" page="39" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -29870,6 +29927,11 @@ Could not find rule: Auxiliary Vehicle Bays</comment>
     <entryLink import="true" name="Chaplain In Terminator Armour" hidden="false" id="3a4d-4253-3c1c-7d28" type="selectionEntry" targetId="d17a-1e84-4207-b627" sortIndex="94">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="0318-4b20-75b5-74db" primary="true" name="Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Herald With Jump Pack" hidden="false" id="43f5-e215-ebac-3b92" type="selectionEntry" targetId="7c0e-025f-41b5-b7d0" sortIndex="95">
+      <categoryLinks>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="1589-4d2f-555b-a6f8" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
