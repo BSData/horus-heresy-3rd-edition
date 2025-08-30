@@ -23122,13 +23122,13 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </constraints>
             </entryLink>
             <entryLink import="true" name="Mount" hidden="false" id="3061-a290-2637-5f14" type="selectionEntryGroup" targetId="9089-07e5-3653-84b6" sortIndex="1"/>
-            <entryLink import="true" name="Prosperine Arcana" hidden="false" id="5de4-7daa-7c00-2bb8" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
             <entryLink import="true" name="Legiones Thallaxes" hidden="false" id="0177-e9f5-2c56-dbc1" type="selectionEntry" targetId="3e37-6d4b-1198-b3fa">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9230-a133-f5f7-21c6"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="45d1-a797-c95e-845c"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Prosperine Arcana" hidden="false" id="4f30-ee92-adde-eb97" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="cf2f-e57d-4881-9a4c" sortIndex="4" defaultSelectionEntryId="7089-ffb2-c322-a3af">
@@ -23311,7 +23311,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
       <selectionEntries>
         <selectionEntry type="model" name="Cataphractii Forge Lord" id="49e1-1d97-40f6-b345" page="50" publicationId="5469-14da-d0a1-6092">
           <profiles>
-            <profile id="1681-83e8-4b5f-9098" name="Cataphractii Forge Lord" typeId="a76f-8e23-8c3e-166d">
+            <profile id="1681-83e8-4b5f-9098" name="Cataphractii Forge Lord" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">6</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
@@ -23329,6 +23329,54 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">4+</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Command, Heavy)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Tarteros</comment>
+                  <modifiers>
+                    <modifier type="set" value="Infantry (Command)" field="50fc-9241-d4a2-045b"/>
+                    <modifier type="set" value="7" field="a106-a779-d272-5e93"/>
+                    <modifier type="set" value="Tartaros Forge Lord" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -23336,6 +23384,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7449-6db0-40a9-a604"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4cd6-0590-d274-e2d7"/>
           </constraints>
           <infoLinks>
             <infoLink name="Battlesmith (X)" hidden="false" type="rule" targetId="c3db-d17c-fd46-eb01" id="6a01-3a59-4c77-8f6d">
@@ -23343,24 +23392,40 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <modifier type="set" field="name" value="Battlesmith (2)"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="dad5-8d2c-438e-bd8a">
+            <infoLink name="Bulky (X)" id="12b8-0b37-a06d-3785" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
               <modifiers>
-                <modifier type="set" field="name" value="Bulky (2)"/>
+                <modifier type="set" value="Bulky (2)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="55a0-1e6f-40b3-bf2b"/>
-            <infoLink name="Slow and Purposeful" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e" id="7f7c-40db-4727-8620"/>
+            <infoLink name="Implacable Advance" id="a34b-9854-6107-c0fa" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
+            <infoLink name="Slow and Purposeful" id="af81-4e1b-f070-45ae" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="4453-7c1d-15ff-f22c" id="ae7e-ba24-431f-bfb4" name="Machinator array">
+            <entryLink hidden="false" type="selectionEntry" targetId="4453-7c1d-15ff-f22c" id="ae7e-ba24-431f-bfb4" name="Machinator array" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a0b-e594-455d-a5c1"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a5a-9523-4657-ba41"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Terminator Armour" hidden="false" id="7bb8-89b5-52d6-ea60" type="selectionEntryGroup" targetId="170b-d9c0-e9d6-b314" sortIndex="1"/>
+            <entryLink import="true" name="Legiones Thallaxes" hidden="false" id="88e8-c523-7fc0-a62d" type="selectionEntry" targetId="3e37-6d4b-1198-b3fa">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e83-4db1-283b-6970"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2aca-d5d2-0eb3-3402"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Prosperine Arcana" hidden="false" id="db98-8495-dcc3-fc32" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="28fa-c671-4a68-a38e">
+            <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="28fa-c671-4a68-a38e" sortIndex="3" defaultSelectionEntryId="be51-7b38-4c83-8835">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="be51-7b38-4c83-8835" name="Combi-bolter">
                   <constraints>
@@ -23372,16 +23437,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb2d-c978-4582-ad30"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="a32c-5bc6-9c28-2072" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" flatten="true"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7442-db84-4492-a873"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e0a-e9d4-4f90-82e8"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear for one item from the Legion Combi-weapons list.
-	 Checked under for one item from the Legion Combi-weapons list.</comment>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have its power axe exchanged for " id="666b-436f-41b1-a5ac">
+            <selectionEntryGroup name="This Model may have its power axe exchanged for " id="666b-436f-41b1-a5ac" sortIndex="2">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="4861-b77a-620c-f0d6" id="cd6d-58d1-46be-8b20" name="Power axe">
                   <constraints>
@@ -23402,7 +23465,7 @@ Could not find wargear for one item from the Legion Combi-weapons list.
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df3f-d4a2-4f09-a675"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have a cyber-familiar selected for it for +10 Points." id="0861-0e98-478c-9d10">
+            <selectionEntryGroup name="This Model may have a cyber-familiar selected for it for +10 Points." id="0861-0e98-478c-9d10" sortIndex="5">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="a545-36ec-d50e-2ae4" id="e63b-951d-491a-8f69" name="Cyber-familiar">
                   <costs>
@@ -23423,129 +23486,32 @@ Could not find wargear for one item from the Legion Combi-weapons list.
             <categoryLink targetId="9871-cb62-5283-2216" id="aa8d-b2b2-4f81-9b4c" primary="false" name="Command Model Sub-type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="3855-d324-4a7a-8f8c" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find rule: Legiones Thallaxes
-Could not find wargear in This Model may have its combi-bolter exchanged for</comment>
-        </selectionEntry>
-        <selectionEntry type="model" name="Tartaros Forge Lord" id="ab08-05c8-4969-ae27" page="50" publicationId="5469-14da-d0a1-6092">
-          <profiles>
-            <profile id="b9f0-60d1-45a5-b58b" name="Tartaros Forge Lord" typeId="a76f-8e23-8c3e-166d">
-              <characteristics>
-                <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
-                <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
-                <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">5</characteristic>
-                <characteristic typeId="498f-dce1-59fd-d8d7" name="S">4</characteristic>
-                <characteristic typeId="3120-8275-e537-ecd2" name="T">5</characteristic>
-                <characteristic typeId="f5cc-79a3-d302-cc1d" name="W">4</characteristic>
-                <characteristic typeId="af9d-7db8-dc95-71c1" name="I">5</characteristic>
-                <characteristic typeId="024e-bdb1-7982-25a0" name="A">4</characteristic>
-                <characteristic typeId="02ad-ebe6-86e7-9fd6" name="LD">9</characteristic>
-                <characteristic typeId="9cd1-0e7c-2cd6-5f2f" name="CL">8</characteristic>
-                <characteristic typeId="f714-1726-37d3-44df" name="WP">8</characteristic>
-                <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">10</characteristic>
-                <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">2+</characteristic>
-                <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
-                <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Command)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de8e-968c-4a2f-b779"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Battlesmith (X)" hidden="false" type="rule" targetId="c3db-d17c-fd46-eb01" id="57f0-869e-4939-b040">
-              <modifiers>
-                <modifier type="set" field="name" value="Battlesmith (2)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="ed80-59e7-4981-821e">
-              <modifiers>
-                <modifier type="set" field="name" value="Bulky (2)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="70e8-2b02-4e0b-9b80"/>
-          </infoLinks>
-          <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="4453-7c1d-15ff-f22c" id="4f13-6266-4530-9795" name="Machinator array">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b8c2-4a07-4377-ae9f"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbc4-fa32-4b88-9595"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="13b6-6b82-450a-b440">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="c61e-f882-40c5-9ae7" name="Combi-bolter">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b7a-3500-43ce-b513"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" id="9931-47ad-4e12-ab89" name="Volkite charger">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="221d-350f-4bac-8b89"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0879-5155-4074-abb5"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89be-8033-4af7-b35a"/>
-              </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear for one item from the Legion Combi-weapons list.
-	 Checked under for one item from the Legion Combi-weapons list.</comment>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have its power axe exchanged for " id="3d28-b767-4b5b-afb0">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="4861-b77a-620c-f0d6" id="1336-086d-43d2-954a" name="Power axe">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0431-c097-4196-89b4"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" id="9109-1ef8-4228-aa53" name="Thunder hammer">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb2f-1ea2-4d12-b50c"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9eb8-1af9-4e65-a6cb"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cb3-7284-4bea-bc5d"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have a cyber-familiar selected for it for +10 Points." id="3093-9ab4-411a-b195">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="a545-36ec-d50e-2ae4" id="3a9f-364e-4c36-a03c" name="Cyber-familiar">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb53-a36c-4375-8167"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="495d-2af5-4cc1-af81"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <categoryLinks>
-            <categoryLink targetId="594d-fa82-13cb-a345" id="fc8c-a0bd-4be5-aabd" primary="false" name="Infantry Model Type"/>
-            <categoryLink targetId="9871-cb62-5283-2216" id="915c-a171-425d-bcd3" primary="false" name="Command Model Sub-type"/>
-          </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find rule: Legiones Thallaxes
-Could not find wargear in This Model may have its combi-bolter exchanged for</comment>
+          <modifiers>
+            <modifier type="set" value="Tartaros Forge Lord" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250828-1757
-Needs replace by constraints and default set to Cataphractii Forge Lord</comment>
+      <entryLinks>
+        <entryLink import="true" name="Cult Arcana" hidden="false" id="5d3f-6433-275c-2d5e" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="29ae-1aa9-6bd2-d0e6" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="e862-6483-632b-8265" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="35b8-08f2-ec24-ef0a" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="f7aa-1eb3-35a5-cc0f" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Primus Medicae" type="unit" id="a9d2-eb7c-4e86-8e78" sortIndex="107" page="51" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -30253,6 +30219,11 @@ Could not find rule: Auxiliary Vehicle Bays</comment>
     <entryLink import="true" name="Mounted Forge Lord" hidden="false" id="e17f-35ac-5be7-0c42" type="selectionEntry" targetId="aa14-570e-4a4d-b0ed" sortIndex="105">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="5de0-0f47-d086-22ab" primary="true" name="Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Forge Lord In Terminator Armour" hidden="false" id="510e-fab1-c084-ebe6" type="selectionEntry" targetId="b0e4-3685-4787-a9f9" sortIndex="106">
+      <categoryLinks>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="cf38-f520-3b04-3b42" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
