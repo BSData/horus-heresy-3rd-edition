@@ -25350,23 +25350,23 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </infoLink>
           </infoLinks>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="38c9-56fb-0a27-4b1a" id="e882-c08b-4e17-9f07" name="Corposant stave">
+            <entryLink hidden="false" type="selectionEntry" targetId="38c9-56fb-0a27-4b1a" id="e882-c08b-4e17-9f07" name="Corposant stave" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f7bd-f2cd-4ce9-8958"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41a0-aac2-455c-abe5"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="9902-2d5f-0df2-5cf0" id="ccf7-e41b-4d3e-9f69" name="Servo-arm">
+            <entryLink hidden="false" type="selectionEntry" targetId="9902-2d5f-0df2-5cf0" id="ccf7-e41b-4d3e-9f69" name="Servo-arm" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a1ba-53a3-458a-a244"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d3b-8fa6-4dec-8a6b"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Terminator Armour" hidden="false" id="835f-c355-88b5-6e53" type="selectionEntryGroup" targetId="170b-d9c0-e9d6-b314"/>
+            <entryLink import="true" name="Terminator Armour" hidden="false" id="835f-c355-88b5-6e53" type="selectionEntryGroup" targetId="170b-d9c0-e9d6-b314" sortIndex="1"/>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="602f-57bf-2e3f-34eb" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="bbea-b537-4f27-afc7" defaultSelectionEntryId="7526-9d28-4f83-afef">
+            <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="bbea-b537-4f27-afc7" defaultSelectionEntryId="7526-9d28-4f83-afef" sortIndex="2">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="7526-9d28-4f83-afef" name="Combi-bolter">
                   <constraints>
@@ -25426,7 +25426,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="130"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Warmonger" id="4b9e-e669-4130-b8b2" page="59" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Warmonger" id="4b9e-e669-4130-b8b2" page="59" publicationId="5469-14da-d0a1-6092" sortIndex="1">
           <profiles>
             <profile id="fc13-aed4-489e-98ce" name="Warmonger" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
@@ -25718,7 +25718,8 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c90-c0d5-4f8d-a7a7"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c90-c0d5-4f8d-a7a7" automatic="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="082f-1bc4-01c1-0989" automatic="false"/>
           </constraints>
           <infoLinks>
             <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="8b14-da77-4cb1-8332">
@@ -25730,56 +25731,100 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <infoLink name="Slow and Purposeful" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e" id="622f-5e74-4e59-b3b4"/>
           </infoLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="4ef4-3c8d-4d9d-ac4c">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="0c4f-6d86-4470-80c7" name="Combi-bolter">
+            <selectionEntryGroup name="Options" id="4540-3d77-a473-9a17" hidden="false" sortIndex="2">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="4ef4-3c8d-4d9d-ac4c" hidden="false" sortIndex="1" defaultSelectionEntryId="0c4f-6d86-4470-80c7">
+                  <entryLinks>
+                    <entryLink import="true" name="Combi-bolter" hidden="false" id="0c4f-6d86-4470-80c7" type="selectionEntry" targetId="042d-9e60-db9e-c147">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a9c-e4a3-4357-9414"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Volkite charger" hidden="false" id="b49a-94fd-416e-9743" type="selectionEntry" targetId="93e7-6a83-1e9e-204a">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25a0-3733-44b8-a782"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="9fd7-0bf3-4bec-9eb6" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" flatten="true"/>
+                  </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a9c-e4a3-4357-9414"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b080-4bde-4f88-8a42" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b97-1b27-4d8f-8d07" automatic="true"/>
                   </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" id="b49a-94fd-416e-9743" name="Volkite charger">
+                  <modifiers>
+                    <modifier type="set" value="0" field="b080-4bde-4f88-8a42">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="8b97-1b27-4d8f-8d07">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="This Model may have its power weapon exchanged for " id="a831-5818-42d9-9bd0" hidden="false" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Legion Terminator Melee Weapons" hidden="false" id="6969-6b3e-41a7-b331" type="selectionEntryGroup" targetId="0523-46e6-6df1-a4c0" sortIndex="2" flatten="true">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84c9-de8f-4bab-9ab9"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Power Weapon" hidden="false" id="0247-8b24-207d-9231" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" sortIndex="1" flatten="true">
+                      <modifiers>
+                        <modifier type="set" value="807a-4734-959e-9286" field="defaultSelectionEntryId"/>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25a0-3733-44b8-a782"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="11da-c4a0-4e98-812c" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a408-0b49-49a0-aa15" automatic="true"/>
                   </constraints>
-                </entryLink>
-              </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="0" field="11da-c4a0-4e98-812c">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="a408-0b49-49a0-aa15">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="This Model may have its combi-bolter and power weapon exchanged for " id="d840-118d-459a-bc88" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Pair of lightning claws" hidden="false" id="1d16-ed01-4b91-8e14" type="selectionEntry" targetId="6754-24dd-5be0-26ff">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2110-4300-4b10-a3db"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f235-7950-45a8-a932"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <modifiers>
+                <modifier type="set" value="1" field="8387-edef-a2e4-5750">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="245f-4028-6650-116f">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b080-4bde-4f88-8a42"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b97-1b27-4d8f-8d07"/>
-              </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear for one item from the Legion Combi-weapons list.
-	 Checked under for one item from the Legion Combi-weapons list.</comment>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have its power weapon exchanged for " id="a831-5818-42d9-9bd0">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="0523-46e6-6df1-a4c0" id="6969-6b3e-41a7-b331" name="Legion Terminator Melee Weapons">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84c9-de8f-4bab-9ab9"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="11da-c4a0-4e98-812c"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a408-0b49-49a0-aa15"/>
-              </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Power weapon
-	 Checked under Power weapon</comment>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have its combi-bolter and power weapon exchanged for " id="d840-118d-459a-bc88">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="6754-24dd-5be0-26ff" id="1d16-ed01-4b91-8e14" name="Pair of lightning claws">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2110-4300-4b10-a3db"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f235-7950-45a8-a932"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8387-edef-a2e4-5750" automatic="true"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="245f-4028-6650-116f" automatic="true"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -25788,120 +25833,33 @@ Could not find wargear Power weapon
             <categoryLink targetId="9871-cb62-5283-2216" id="e1ed-434e-4d47-b343" primary="false" name="Command Model Sub-type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="77c5-ae30-40e5-8d4a" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear Ætheric juncture splicer
-	 Checked under Ætheric juncture splicer
-Could not find wargear in This Model may have its combi-bolter exchanged for 
-Could not find wargear in This Model may have its power weapon exchanged for</comment>
-        </selectionEntry>
-        <selectionEntry type="model" name="Tartaros Warmonger" id="030b-1154-44e9-93c8" page="60" publicationId="5469-14da-d0a1-6092">
-          <profiles>
-            <profile id="951b-70b7-49c8-92bb" name="Tartaros Warmonger" typeId="a76f-8e23-8c3e-166d">
-              <characteristics>
-                <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
-                <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
-                <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">5</characteristic>
-                <characteristic typeId="498f-dce1-59fd-d8d7" name="S">4</characteristic>
-                <characteristic typeId="3120-8275-e537-ecd2" name="T">5</characteristic>
-                <characteristic typeId="f5cc-79a3-d302-cc1d" name="W">4</characteristic>
-                <characteristic typeId="af9d-7db8-dc95-71c1" name="I">5</characteristic>
-                <characteristic typeId="024e-bdb1-7982-25a0" name="A">4</characteristic>
-                <characteristic typeId="02ad-ebe6-86e7-9fd6" name="LD">9</characteristic>
-                <characteristic typeId="9cd1-0e7c-2cd6-5f2f" name="CL">8</characteristic>
-                <characteristic typeId="f714-1726-37d3-44df" name="WP">8</characteristic>
-                <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">8</characteristic>
-                <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">2+</characteristic>
-                <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
-                <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Command)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f560-822a-4a32-bdc9"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="6652-c5c7-4cc3-9566">
-              <modifiers>
-                <modifier type="set" field="name" value="Bulky (2)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="bf95-332b-4bb0-997f"/>
-          </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="3641-6efd-40fb-a358">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="1d3e-f5ce-413d-9913" name="Combi-bolter">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bb9-aa57-4256-bb27"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" id="3936-d724-4e8c-8ab6" name="Volkite charger">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f62-5264-4d74-b401"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Terminator Armour" hidden="false" id="fb29-10a7-ec22-f17f" type="selectionEntryGroup" targetId="170b-d9c0-e9d6-b314" sortIndex="1"/>
+            <entryLink import="true" name="Ætheric Juncture Splicer" hidden="false" id="ce41-2b73-d4b8-1804" type="selectionEntry" targetId="61b1-747d-d563-d7e8" sortIndex="3">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="65ac-c666-47d0-8311"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8814-8e0f-4298-a10c"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f28e-c99e-cf84-c4a4"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e232-5f76-7414-ad11"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear for one item from the Legion Combi-weapons list.
-	 Checked under for one item from the Legion Combi-weapons list.</comment>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have its power weapon exchanged for " id="1064-d5a0-473f-98c8">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="0523-46e6-6df1-a4c0" id="2810-3778-4ade-9ac7" name="Legion Terminator Melee Weapons">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08f5-39aa-4517-af7b"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f761-b548-4c4a-b081"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7745-3e40-4868-9b91"/>
-              </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Power weapon
-	 Checked under Power weapon</comment>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have its combi-bolter and power weapon exchanged for " id="f2c7-7b63-493e-b827">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="6754-24dd-5be0-26ff" id="36ff-a6fc-42f7-bf31" name="Pair of lightning claws">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="354a-b218-49ed-978e"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="929c-0c2a-4b01-b094"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <categoryLinks>
-            <categoryLink targetId="594d-fa82-13cb-a345" id="0aa6-1544-4419-89bf" primary="false" name="Infantry Model Type"/>
-            <categoryLink targetId="9871-cb62-5283-2216" id="4e92-e03b-47b0-a37b" primary="false" name="Command Model Sub-type"/>
-          </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear Ætheric juncture splicer
-	 Checked under Ætheric juncture splicer
-Could not find wargear in This Model may have its combi-bolter exchanged for 
-Could not find wargear in This Model may have its power weapon exchanged for</comment>
+            </entryLink>
+            <entryLink import="true" name="Prosperine Arcana" hidden="false" id="6896-61c9-2e29-1eba" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250828-1757
-Needs replace by constraints and default set to Cataphractii Warmonger
-Combi-bolter is in two option lists for Cataphractii Warmonger, you will need to combine them by hand.
-Power weapon is in two option lists for Cataphractii Warmonger, you will need to combine them by hand.
-Combi-bolter is in two option lists for Tartaros Warmonger, you will need to combine them by hand.
-Power weapon is in two option lists for Tartaros Warmonger, you will need to combine them by hand.
-Exchange was not applied on This Model may have its combi-bolter and power weapon exchanged for</comment>
+      <entryLinks>
+        <entryLink import="true" name="Cult Arcana" hidden="false" id="e89a-afb6-5ccf-a9eb" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="dda5-0f1e-3429-3896" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="2a40-c86d-d30a-1d24" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="94b6-854a-d4bc-bd78" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="7d90-0f54-c7f5-3df1" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="647c-faca-3c98-c203" id="c6f9-495f-ab18-b8ac" primary="false" name="Free Power Weapon"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry name="Pathfinder" type="unit" id="5cc3-18f7-4c45-92b0" sortIndex="117" page="61" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -30521,6 +30479,11 @@ Could not find rule: Auxiliary Vehicle Bays</comment>
     <entryLink import="true" name="Warmonger" hidden="false" id="1b17-03e3-3b3b-f9e3" type="selectionEntry" targetId="91b5-a2f3-4067-b498" sortIndex="115">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="0a9c-7680-c2be-9613" primary="true" name="Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Warmonger In Terminator Armour" hidden="false" id="d4d5-8d88-5f93-c317" type="selectionEntry" targetId="f849-279f-4f2b-abca" sortIndex="116">
+      <categoryLinks>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="99e0-3c45-cc9f-0f80" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
