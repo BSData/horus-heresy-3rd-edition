@@ -17547,7 +17547,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   </modifiers>
                   <comment>Scimitar Jetbike</comment>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="81b1-1fec-a45c-27aa" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="81b1-1fec-a45c-27aa" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -17625,6 +17625,16 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </constraints>
             </entryLink>
             <entryLink import="true" name="Mount" hidden="false" id="3bda-c305-23f8-774a" type="selectionEntryGroup" targetId="9089-07e5-3653-84b6" sortIndex="1"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="24c2-405b-a3cf-6a1b" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
+            <entryLink import="true" name="Breacher Charges" hidden="false" id="ce86-f7f7-ebaf-b15b" type="selectionEntry" targetId="01bd-4377-904c-6625">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee8f-53de-8546-866c"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Prosperine Arcana" hidden="true" id="5924-718d-f899-ef24" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its chainsword and/or bolt pistol exchanged for " id="0e1c-ed38-4efe-bf94" sortIndex="2">
@@ -17719,49 +17729,49 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Praetor on Scimitar Jetbike may have its heavy bolter exchanged for one of the following:" id="c0d4-f131-4764-b968" hidden="false" sortIndex="4" defaultSelectionEntryId="c54e-bdf1-4f31-9de4">
+            <selectionEntryGroup name="This Praetor on Scimitar Jetbike may have its heavy bolter exchanged for one of the following:" id="3124-6e2a-8647-9789" hidden="false" sortIndex="4">
               <entryLinks>
-                <entryLink import="true" name="Heavy bolter" hidden="false" id="c54e-bdf1-4f31-9de4" type="selectionEntry" targetId="bc40-b14a-978e-0232">
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="ae14-feba-c845-224a" type="selectionEntry" targetId="bc40-b14a-978e-0232">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0dea-e385-4c35-b14f"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8e3-6f64-4a8e-96d6"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Volkite culverin" hidden="false" id="48e9-856b-43d3-abdf" type="selectionEntry" targetId="fcf0-9c1b-d51e-6bc7">
+                <entryLink import="true" name="Volkite culverin" hidden="false" id="8192-e874-1fdd-9f19" type="selectionEntry" targetId="fcf0-9c1b-d51e-6bc7">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb9c-cf7e-4b5d-a2f7"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c83-20bf-a31a-4629"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Plasma cannon" hidden="false" id="7275-8462-42f1-8935" type="selectionEntry" targetId="f8b8-96c8-ba31-faf8">
+                <entryLink import="true" name="Plasma cannon" hidden="false" id="f403-3ced-a1ff-4608" type="selectionEntry" targetId="f8b8-96c8-ba31-faf8">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="781a-840d-4ca7-9a8b"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2cc-4147-1939-2b3d"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Multi-melta" hidden="false" id="ca82-86cd-41b7-863e" type="selectionEntry" targetId="0135-12f0-d86f-ced9">
+                <entryLink import="true" name="Multi-melta" hidden="false" id="0f2a-58a4-d428-7fa5" type="selectionEntry" targetId="0135-12f0-d86f-ced9">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b74-755a-415b-9086"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88f1-b5ce-c903-1c1f"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8643-2543-4237-ba6b" automatic="true"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb6c-b7a5-4681-2395" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="659f-6b3b-8117-dd47" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="88a5-0f91-2e1d-a518" automatic="true"/>
               </constraints>
               <modifiers>
-                <modifier type="set" value="0" field="8643-2543-4237-ba6b">
+                <modifier type="set" value="0" field="659f-6b3b-8117-dd47">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="model" childId="4f20-9a87-8334-9f26" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="0" field="bb6c-b7a5-4681-2395">
+                <modifier type="set" value="0" field="88a5-0f91-2e1d-a518">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="model" childId="4f20-9a87-8334-9f26" shared="true" includeChildSelections="true"/>
                   </conditions>
@@ -17789,7 +17799,11 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Cult Arcana" hidden="false" id="6a2b-5a0e-c822-9496" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="335c-a159-4e8d-4e47" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="db0c-06d0-8a8a-0b6f" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="52cc-68eb-ce35-a769" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry name="Mounted Centurion" type="unit" id="2fb4-53c3-4e84-b9ec" sortIndex="82" page="25" publicationId="5469-14da-d0a1-6092">
@@ -17797,9 +17811,9 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="110"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Outrider Centurion" id="0c61-a9fb-4a7a-a480" page="25" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Outrider Centurion" id="0c61-a9fb-4a7a-a480" page="25" publicationId="5469-14da-d0a1-6092" sortIndex="1" defaultAmount="">
           <profiles>
-            <profile id="526a-2b4b-4d11-9b6c" name="Outrider Centurion" typeId="a76f-8e23-8c3e-166d">
+            <profile id="526a-2b4b-4d11-9b6c" name="Outrider Centurion" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">14</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
@@ -17817,6 +17831,54 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Cavalry (Command)</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="16" field="a106-a779-d272-5e93"/>
+                    <modifier type="replace" value=", Antigrav)" field="50fc-9241-d4a2-045b" arg=")"/>
+                    <modifier type="set" value="Centurion on Scimitar Jetbike" field="name"/>
+                  </modifiers>
+                  <comment>Scimitar Jetbike</comment>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="81b1-1fec-a45c-27aa" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <costs>
@@ -17824,50 +17886,94 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cde-e3d0-4f97-b3b5"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d6e5-ddb7-d1c7-cb1a"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="e8d8-db43-4491-9d47">
-              <modifiers>
-                <modifier type="set" field="name" value="Bulky (2)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Firestorm" hidden="false" type="rule" targetId="3ed1-c5b3-a98d-1b12" id="080a-3f66-49e6-b23b"/>
-            <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="8e4b-f821-408a-be49"/>
-            <infoLink name="Outflank" hidden="false" type="rule" targetId="92d2-cc57-1ef6-a712" id="3a87-af0a-49d1-861f"/>
             <infoLink name="Officer of the Line (X)" hidden="false" type="rule" targetId="7779-47c8-99a8-b935" id="305b-de01-44ec-a81f">
               <modifiers>
                 <modifier type="set" field="name" value="Officer of the Line (2)"/>
               </modifiers>
             </infoLink>
+            <infoLink name="Bulky (X)" id="9dc7-6205-fd7b-3312" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+              <modifiers>
+                <modifier type="set" value="Bulky (2)" field="name">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="4f20-9a87-8334-9f26" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Bulky (3)" field="name">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="81b1-1fec-a45c-27aa" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Deep Strike" id="27a5-dc54-dfe6-a22d" hidden="false" type="rule" targetId="0553-d06b-52b9-34db">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="4f20-9a87-8334-9f26" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Firestorm" id="6cd6-7527-01ba-f271" hidden="false" type="rule" targetId="3ed1-c5b3-a98d-1b12">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="81b1-1fec-a45c-27aa" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Implacable Advance" id="a89b-a7d8-3a91-045f" hidden="false" type="rule" targetId="3898-aafb-35e0-141b">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="81b1-1fec-a45c-27aa" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Outflank" id="9ff1-f2f3-696f-21a9" hidden="false" type="rule" targetId="92d2-cc57-1ef6-a712">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="81b1-1fec-a45c-27aa" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="b7de-7f07-457f-bbf7" name="Frag grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="b7de-7f07-457f-bbf7" name="Frag grenades" sortIndex="5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="52ea-a672-433f-b5a5"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0144-906c-423a-8bec"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="b89f-b91f-4d9d-b659" name="Krak grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="b89f-b91f-4d9d-b659" name="Krak grenades" sortIndex="6">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1607-99ab-4edb-8ae4"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82ce-e69e-42f8-823b"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Mount" hidden="false" id="9e9c-d577-4bb6-2221" type="selectionEntryGroup" targetId="9089-07e5-3653-84b6" sortIndex="1"/>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its chainsword and/or bolt pistol exchanged for " id="8158-5bac-4c7b-9050">
+            <selectionEntryGroup name="This Model may have its chainsword and/or bolt pistol exchanged for " id="8158-5bac-4c7b-9050" sortIndex="2">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="5b22-10c4-4058-86d7" name="Chainsword">
+                <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="5b22-10c4-4058-86d7" name="Chainsword" defaultAmount="1">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e2ce-39f9-4383-871e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2ce-39f9-4383-871e"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="525d-8074-4aed-9c7f" name="Bolt pistol">
+                <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="525d-8074-4aed-9c7f" name="Bolt pistol" defaultAmount="1">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2012-5b31-46b7-b789"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2012-5b31-46b7-b789"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="f955-8b22-9362-31c0" id="cfd9-e00a-4b55-8322" name="Legion Officer Wargear">
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="f955-8b22-9362-31c0" id="cfd9-e00a-4b55-8322" name="Legion Officer Wargear" flatten="true">
                   <constraints>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a212-41ca-4ed8-8daf"/>
                   </constraints>
@@ -17878,7 +17984,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="01ec-de27-412d-ac04"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have melta bombs selected for it for +5 Points." id="ca4c-ae5a-4a99-ad80">
+            <selectionEntryGroup name="This Model may have melta bombs selected for it for +5 Points." id="ca4c-ae5a-4a99-ad80" sortIndex="7">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" id="b467-571e-4f06-b72f" name="Melta bombs">
                   <costs>
@@ -17893,7 +17999,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="841d-5096-4b0d-b510"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Outrider Centurion may have its twin bolter exchanged for " id="f4bf-ade1-4ec2-9be6">
+            <selectionEntryGroup name="This Outrider Centurion may have its twin bolter exchanged for " id="f4bf-ade1-4ec2-9be6" sortIndex="3">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="222f-82cb-05a2-f8f1" id="229b-3b78-402a-842c" name="Twin bolter">
                   <constraints>
@@ -17910,118 +18016,35 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eeb1-18ac-4822-8f9c"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ce3-393d-4e91-b4a7"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eeb1-18ac-4822-8f9c" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ce3-393d-4e91-b4a7" automatic="true"/>
               </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <categoryLinks>
-            <categoryLink targetId="a073-2d4a-5bed-123e" id="e72f-129a-4e2a-a18b" primary="false" name="Cavalry Model Type"/>
-            <categoryLink targetId="9871-cb62-5283-2216" id="a97f-6c33-4315-8772" primary="false" name="Command Model Sub-type"/>
-          </categoryLinks>
-        </selectionEntry>
-        <selectionEntry type="model" name="Centurion on Scimitar Jetbike" id="3f21-b16c-4ced-9b3a" page="25" publicationId="5469-14da-d0a1-6092">
-          <profiles>
-            <profile id="d0c3-e80a-4f3b-87d8" name="Centurion on Scimitar Jetbike" typeId="a76f-8e23-8c3e-166d">
-              <characteristics>
-                <characteristic typeId="a106-a779-d272-5e93" name="M">16</characteristic>
-                <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
-                <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">5</characteristic>
-                <characteristic typeId="498f-dce1-59fd-d8d7" name="S">4</characteristic>
-                <characteristic typeId="3120-8275-e537-ecd2" name="T">4</characteristic>
-                <characteristic typeId="f5cc-79a3-d302-cc1d" name="W">4</characteristic>
-                <characteristic typeId="af9d-7db8-dc95-71c1" name="I">5</characteristic>
-                <characteristic typeId="024e-bdb1-7982-25a0" name="A">4</characteristic>
-                <characteristic typeId="02ad-ebe6-86e7-9fd6" name="LD">9</characteristic>
-                <characteristic typeId="9cd1-0e7c-2cd6-5f2f" name="CL">8</characteristic>
-                <characteristic typeId="f714-1726-37d3-44df" name="WP">8</characteristic>
-                <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">8</characteristic>
-                <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">2+</characteristic>
-                <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
-                <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Cavalry (Command, Antigrav)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8905-c386-4212-8e03"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="f24c-300a-41e6-8ca6">
               <modifiers>
-                <modifier type="set" field="name" value="Bulky (3)"/>
+                <modifier type="set" value="0" field="eeb1-18ac-4822-8f9c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="81b1-1fec-a45c-27aa" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="8ce3-393d-4e91-b4a7">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="81b1-1fec-a45c-27aa" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="81b1-1fec-a45c-27aa" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
-            </infoLink>
-            <infoLink name="Deep Strike" hidden="false" type="rule" targetId="0553-d06b-52b9-34db" id="0b5f-8952-41e0-b28a"/>
-            <infoLink name="Officer of the Line (X)" hidden="false" type="rule" targetId="7779-47c8-99a8-b935" id="468d-7f64-49c0-9782">
-              <modifiers>
-                <modifier type="set" field="name" value="Officer of the Line (2)"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="424b-c847-49ed-835d" name="Frag grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="173c-ed66-47c0-83da"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f46-f803-4bc7-b2d8"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="bcfe-bdff-4909-8774" name="Krak grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4930-f2c2-49cd-b59a"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f3b-daf1-4e7c-b478"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its chainsword and/or bolt pistol exchanged for " id="3c90-e615-4daf-a283">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="c324-808a-4bac-9ea6" name="Chainsword">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="982e-6d3a-4463-b2b6"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="c76f-8aa5-41f0-967c" name="Bolt pistol">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3437-49c8-4fdc-a607"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="f955-8b22-9362-31c0" id="5f46-f942-4cec-a8c4" name="Legion Officer Wargear">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b6e6-089d-4175-a84b"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8044-0ec3-4cac-a3f4"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f812-4ad7-4ea8-a9fa"/>
-              </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have melta bombs selected for it for +5 Points." id="e311-2a91-4912-b821">
+            <selectionEntryGroup name="This Centurion on Scimitar Jetbike may have its heavy bolter exchanged for one of the following:" id="bd38-6afe-4ac0-94c9" hidden="false" sortIndex="4">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" id="f432-1e94-4d8f-ab03" name="Melta bombs">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7fb-061e-4681-8f43"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b572-a4af-4670-a0ff"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="This Centurion on Scimitar Jetbike may have its heavy bolter exchanged for one of the following:" id="bd38-6afe-4ac0-94c9">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="bc40-b14a-978e-0232" id="7ce5-c698-4051-bd96" name="Heavy bolter">
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="7ce5-c698-4051-bd96" type="selectionEntry" targetId="bc40-b14a-978e-0232">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9231-fbef-4c5e-b806"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="fcf0-9c1b-d51e-6bc7" id="36db-4a68-4352-8a33" name="Volkite culverin">
+                <entryLink import="true" name="Volkite culverin" hidden="false" id="36db-4a68-4352-8a33" type="selectionEntry" targetId="fcf0-9c1b-d51e-6bc7">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
@@ -18029,7 +18052,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7602-3805-4697-b9e0"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="f8b8-96c8-ba31-faf8" id="7e78-3ad9-4f43-9d7b" name="Plasma cannon">
+                <entryLink import="true" name="Plasma cannon" hidden="false" id="7e78-3ad9-4f43-9d7b" type="selectionEntry" targetId="f8b8-96c8-ba31-faf8">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
                   </costs>
@@ -18037,7 +18060,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9be9-beea-4df4-beb1"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="0135-12f0-d86f-ced9" id="3550-f4df-4e0f-b013" name="Multi-melta">
+                <entryLink import="true" name="Multi-melta" hidden="false" id="3550-f4df-4e0f-b013" type="selectionEntry" targetId="0135-12f0-d86f-ced9">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
                   </costs>
@@ -18047,19 +18070,49 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f68c-621d-433d-a1aa"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f68c-621d-433d-a1aa" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="99bb-42c8-1ac2-cee1" automatic="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="f68c-621d-433d-a1aa">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="4f20-9a87-8334-9f26" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="99bb-42c8-1ac2-cee1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="4f20-9a87-8334-9f26" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="4f20-9a87-8334-9f26" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
-            <categoryLink targetId="a073-2d4a-5bed-123e" id="8e8a-9fed-490a-821a" primary="false" name="Cavalry Model Type"/>
-            <categoryLink targetId="9871-cb62-5283-2216" id="7bc7-96b6-4dd5-b936" primary="false" name="Command Model Sub-type"/>
-            <categoryLink targetId="c504-9dfa-35d3-c98f" id="59eb-f628-47d2-83e0" primary="false" name="Antigrav Model Sub-Type"/>
+            <categoryLink targetId="a073-2d4a-5bed-123e" id="e72f-129a-4e2a-a18b" primary="false" name="Cavalry Model Type"/>
+            <categoryLink targetId="9871-cb62-5283-2216" id="a97f-6c33-4315-8772" primary="false" name="Command Model Sub-type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="Centurion on Scimitar Jetbike" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="81b1-1fec-a45c-27aa" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250828-1757
-Needs replace by constraints and default set to Outrider Centurion</comment>
+      <entryLinks>
+        <entryLink import="true" name="Cult Arcana" hidden="false" id="2ad7-2704-1781-36cd" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="34de-3307-d118-19b9" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="5e16-654c-08c2-f1bb" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Librarian With Jump Pack" type="unit" id="bd23-f9fd-4dff-9202" sortIndex="83" page="26" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -29287,6 +29340,11 @@ Could not find rule: Auxiliary Vehicle Bays</comment>
     <entryLink import="true" name="Mounted Praetor" hidden="false" id="b486-4dce-c2a3-2e24" type="selectionEntry" targetId="26d7-23ba-4059-8079" sortIndex="81">
       <categoryLinks>
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="089e-d3e4-6f20-0ea9" primary="true" name="High Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Mounted Centurion" hidden="false" id="1ebd-e929-e5f8-2797" type="selectionEntry" targetId="2fb4-53c3-4e84-b9ec" sortIndex="82">
+      <categoryLinks>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="920c-fe61-12b2-d264" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
