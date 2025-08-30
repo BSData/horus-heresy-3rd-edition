@@ -328,6 +328,18 @@
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifierGroup>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                        <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                        <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                      </conditions>
+                      <comment>Master Sergeant</comment>
+                    </modifierGroup>
                   </modifierGroups>
                   <modifiers>
                     <modifier type="increment" value="1" field="f714-1726-37d3-44df">
@@ -18226,7 +18238,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
       <modifiers>
         <modifier type="set-primary" value="6b8d-15cd-2d41-9709" field="category">
           <conditions>
-            <condition type="instanceOf" value="1" field="forces" scope="force" childId="4737-e73a-394e-433f" shared="true" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="forces" scope="roster" childId="4737-e73a-394e-433f" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -18291,6 +18303,11 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
     <entryLink import="true" name="Termite" hidden="false" id="361d-a25d-61e2-e0d8" type="selectionEntry" targetId="29c3-0b90-216c-b071">
       <categoryLinks>
         <categoryLink targetId="f34d-c79d-b3a4-f01c" id="ea8b-f43b-cf6a-41ad" primary="true" name="Transport - Logisticae"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Explorator" hidden="false" id="4a93-1e5b-2cb0-7875" type="selectionEntry" targetId="5794-faa2-b2c8-ef0a">
+      <categoryLinks>
+        <categoryLink targetId="1bc1-e6ff-d62e-398e" id="8eb3-8d94-64f3-9d6c" primary="true" name="Recon - Land Raider Explorator Only"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -20174,6 +20191,7 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="9c50-6271-7418-82a5" field="category"/>
       </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup name="Orders of the Hekatonystika" id="9035-6bbe-3431-876d" hidden="false" import="true">
