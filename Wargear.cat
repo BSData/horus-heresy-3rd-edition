@@ -920,5 +920,33 @@ A Model that has breacher charges selected as its Weapon always has a Combat Ini
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6eb6-4fa6-4bb5-bc0f" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Mount" id="9089-07e5-3653-84b6" hidden="false" defaultSelectionEntryId="4f20-9a87-8334-9f26">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Outrider" hidden="false" id="4f20-9a87-8334-9f26">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e48-62e1-6476-25df"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Scimitar Jetbike" hidden="false" id="81b1-1fec-a45c-27aa">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3084-522a-8981-60ea"/>
+          </constraints>
+          <modifiers>
+            <modifier type="add" value="c504-9dfa-35d3-c98f" field="category"/>
+          </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66dd-e7b5-5c36-b695"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f29-c2a1-faad-c4bd"/>
+      </constraints>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>

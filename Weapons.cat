@@ -7236,6 +7236,170 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Needle Pistol" hidden="false" id="029b-4556-eef3-e2ad">
+      <profiles>
+        <profile name="Needle Pistol" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="349c-54ea-ea87-de13">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">12</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">2</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">-</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Poisoned (3+), Pistol, Pinning (1)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Assault, Needle</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pistol" id="5a9b-6e0a-4840-4874" hidden="false" type="rule" targetId="2bf6-55c8-6810-a71c"/>
+        <infoLink name="Poisoned (X)" id="90c8-7767-2b07-026f" hidden="false" type="rule" targetId="076f-2c91-c58b-71b3">
+          <comment>3+</comment>
+          <modifiers>
+            <modifier type="set" value="Poisoned (3+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Pinning (X)" id="3e8e-1efc-6ec6-ce3f" hidden="false" type="rule" targetId="88b6-6493-e4d7-1805">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="set" value="Pinning (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Earthshaker cannon" hidden="false" id="8116-4e1b-ccf8-5182">
+      <profiles>
+        <profile name="Earthshaker cannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="b74b-391b-54d0-8a32">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">240</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">5</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Ordnance (RS), Blast (5&quot;), Barrage (2), Breaching (6+), Pinning (1)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="replace" value="Pinning (2)" field="5aad-137a-8ee2-63fd" arg="Pinning (1)">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c9ef-b204-e951-6b7e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ordnance (X)" id="e56c-2777-bd0e-d996" hidden="false" type="rule" targetId="b6b3-909a-b78a-3dbf">
+          <modifiers>
+            <modifier type="set" value="Ordnance (RS)" field="name">
+              <comment>RS</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Blast (X)" id="a2bd-b32e-9e32-39ac" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+          <modifiers>
+            <modifier type="set" value="Blast (5&quot;)" field="name">
+              <comment>5</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Barrage (X)" id="4714-4369-8def-0e25" hidden="false" type="rule" targetId="85f5-3a91-69f4-c3b7">
+          <modifiers>
+            <modifier type="set" value="Barrage (2)" field="name">
+              <comment>2</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Breaching (X)" id="d946-cc43-12bc-ce3f" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name">
+              <comment>6</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Pinning (X)" id="83cb-97a9-4975-81de" hidden="false" type="rule" targetId="88b6-6493-e4d7-1805">
+          <modifiers>
+            <modifier type="set" value="Pinning (1)" field="name">
+              <comment>1</comment>
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="c9ef-b204-e951-6b7e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Pinning (2)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c9ef-b204-e951-6b7e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Medusa mortar" hidden="false" id="5b25-11bf-13b6-173d">
+      <profiles>
+        <profile name="Medusa mortar" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="a537-b9ca-9b60-ac3a">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">36</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">5</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Ordnance (RS), Blast (5&quot;), Barrage (2), Breaching (5+), Pinning (2)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="replace" value="Pinning (3)" field="5aad-137a-8ee2-63fd" arg="Pinning (2)">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c9ef-b204-e951-6b7e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Barrage (X)" id="650b-1622-2961-330d" hidden="false" type="rule" targetId="85f5-3a91-69f4-c3b7">
+          <modifiers>
+            <modifier type="set" value="Barrage (2)" field="name">
+              <comment>2</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Blast (X)" id="2ae1-f220-d005-6239" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+          <modifiers>
+            <modifier type="set" value="Blast (5&quot;)" field="name">
+              <comment>5</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Breaching (X)" id="97a9-bf11-a4b6-e026" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (5+)" field="name">
+              <comment>5</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Ordnance (X)" id="cbb0-cf0c-e9fc-8ce9" hidden="false" type="rule" targetId="b6b3-909a-b78a-3dbf">
+          <modifiers>
+            <modifier type="set" value="Ordnance (RS)" field="name">
+              <comment>RS</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Pinning (X)" id="a408-eb5f-1684-3f71" hidden="false" type="rule" targetId="88b6-6493-e4d7-1805">
+          <modifiers>
+            <modifier type="set" value="Pinning (2)" field="name">
+              <comment>2</comment>
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="c9ef-b204-e951-6b7e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Pinning (3)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c9ef-b204-e951-6b7e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Power Weapon" id="d23f-b4f0-0127-9394" hidden="false" collapsible="true" flatten="true">
@@ -7260,6 +7424,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5679-b783-695b-652d"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Power axe" hidden="false" id="ceae-3f50-6813-067f" type="selectionEntry" targetId="4861-b77a-620c-f0d6" sortIndex="2">
           <costs>
@@ -7276,6 +7443,9 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="330a-8564-dded-6a4f"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Power maul" hidden="false" id="dfa7-687a-dba5-8309" type="selectionEntry" targetId="c4fa-659d-bf4b-bad1" sortIndex="3">
           <costs>
@@ -7292,6 +7462,9 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f112-4182-5572-f847"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Power lance" hidden="false" id="1d0c-b995-d0fb-ef05" type="selectionEntry" targetId="f56f-c410-b47c-58d9" sortIndex="4">
           <costs>
@@ -7308,6 +7481,9 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02c3-0773-e1dc-325e"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Forge-crafted power sword" hidden="true" id="0bcd-2729-80ff-2228" type="selectionEntry" targetId="513c-3e81-47f5-5b95" sortIndex="8">
           <costs>
@@ -7340,6 +7516,9 @@
               <comment>SL+Sgt/Cmd/Spec/Champ Only</comment>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4da9-1ff9-ce82-d22e"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Forge-crafted power axe" hidden="true" id="aa85-dd75-9d3e-edfb" type="selectionEntry" targetId="a739-415d-c0fa-880d" sortIndex="5">
           <costs>
@@ -7373,6 +7552,9 @@
               <comment>SL+Sgt/Cmd/Spec/Champ Only</comment>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d59a-3a40-2635-746a"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Forge-crafted power maul" hidden="true" id="822a-5bc7-c2cc-f66b" type="selectionEntry" targetId="9ff1-2ac7-67f6-bbcc" sortIndex="7">
           <costs>
@@ -7410,6 +7592,9 @@
               <comment>SL+Sgt/Cmd/Spec/Champ Only</comment>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5ee-4e1c-33e3-068f"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Forge-crafted power lance" hidden="true" id="5918-48a0-1380-b481" type="selectionEntry" targetId="9348-bf2f-0ff1-2f75" sortIndex="6">
           <costs>
@@ -7447,6 +7632,9 @@
               <comment>SL+Sgt/Cmd/Spec/Champ Only</comment>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d479-1429-e8ac-1663"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Blade of Perdition" hidden="true" id="e85b-1978-15b8-1cfd" type="selectionEntry" targetId="a3a1-84f7-4e23-3ed6" sortIndex="9">
           <modifiers>
@@ -7479,6 +7667,9 @@
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="250d-e7d3-f7e1-2dd8"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Axe of Perdition" hidden="true" id="c4e8-755b-5727-3a3c" type="selectionEntry" targetId="81b3-438e-041a-35ee" sortIndex="10">
           <modifiers>
@@ -7511,6 +7702,9 @@
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54f4-36bf-3ecc-d30d"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Maul of Perdition" hidden="true" id="c4d3-1708-eb29-a941" type="selectionEntry" targetId="5cd6-6c5c-b464-4b27" sortIndex="11">
           <modifiers>
@@ -7543,6 +7737,9 @@
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f42-339c-ab4c-a0e6"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Spear of Perdition" hidden="true" id="15c6-f510-d0b9-89ad" type="selectionEntry" targetId="9aca-66f6-501e-d86d" sortIndex="12">
           <modifiers>
@@ -7575,6 +7772,9 @@
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1a8-9ce3-3503-3de3"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Calibanite Warblade" hidden="true" id="d781-93bf-358b-03f5" type="selectionEntry" targetId="65da-539f-9e31-5a40" sortIndex="13">
           <modifiers>
@@ -7607,6 +7807,9 @@
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed30-88fc-b7a1-41cf"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Power glaive" hidden="true" id="9fff-db1f-525b-9800" type="selectionEntry" targetId="48c8-9309-97ce-d62c" sortIndex="14">
           <costs>
@@ -7631,6 +7834,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="909b-4c79-d5de-bc46"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Frost axe" hidden="true" id="a533-583b-40d1-2d09" type="selectionEntry" targetId="1deb-afd8-f63d-0fe5" sortIndex="16">
           <modifiers>
@@ -7667,6 +7873,9 @@
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8687-8414-d498-8d89"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Frost sword" hidden="true" id="be15-84a8-0af2-a3da" type="selectionEntry" targetId="82d4-949f-2713-d05b" sortIndex="15">
           <modifiers>
@@ -7703,6 +7912,9 @@
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bba0-1c21-34ea-e9b6"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Great Frost Blade" hidden="true" id="cafd-ecaa-999d-db36" type="selectionEntry" targetId="0346-d2e9-bc7f-0174" sortIndex="17">
           <modifiers>
@@ -7734,6 +7946,9 @@
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5e0-2161-7555-54d9"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Legatine axe" hidden="true" id="0f51-e53e-809f-6251" type="selectionEntry" targetId="46f0-ca50-4e6e-e49f" sortIndex="18">
           <modifiers>
@@ -7766,6 +7981,9 @@
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="534d-e431-632e-9989"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Phoenix power spear" hidden="true" id="ade8-eb5a-5408-7cb4" type="selectionEntry" targetId="41b7-f368-f337-d940" sortIndex="13">
           <costs>
@@ -7798,6 +8016,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b048-8051-51eb-61d3"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Chainglave" hidden="true" id="6158-fe79-eaec-ebcb" type="selectionEntry" targetId="3708-b181-5f26-4387" sortIndex="14">
           <costs>
@@ -7836,6 +8057,9 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94ed-f214-153d-d89b"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Headsman&apos;s axe" hidden="true" id="eccd-12f4-eeec-91ae" type="selectionEntry" targetId="b03c-0b65-5e0c-156a" sortIndex="15">
           <modifiers>
@@ -7860,6 +8084,9 @@
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cd5-ba11-c514-d9e3"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Power scythe" hidden="true" id="79b9-bc31-08d9-04e7" type="selectionEntry" targetId="db0b-0a6f-a228-ebf6" sortIndex="16">
           <modifiers>
@@ -7893,6 +8120,9 @@
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f25-f5fa-0623-abdd"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Achea pattern force sword" hidden="true" id="2632-df21-28c1-8781" type="selectionEntry" targetId="e8b5-34e0-9d9c-9b20" sortIndex="17">
           <modifiers>
@@ -7924,6 +8154,9 @@
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb10-228b-c0ee-b103"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Carsoran power axe" hidden="true" id="a006-2c23-f4af-d3bb" type="selectionEntry" targetId="69bb-c737-b579-c1bd" sortIndex="18">
           <costs>
@@ -7942,6 +8175,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5f4-a8cb-b58d-93d6"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Carsoran power tabar" hidden="true" id="3e4d-9e2c-4f48-0edc" type="selectionEntry" targetId="8fde-41bb-9695-74b1" sortIndex="19">
           <costs>
@@ -7960,6 +8196,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36a5-ece7-206a-1ccc"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Power dagger" hidden="true" id="59c7-2ad8-ce7c-23b1" type="selectionEntry" targetId="d8d4-f400-7730-792a" sortIndex="20">
           <costs>
@@ -7992,6 +8231,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e79-3f13-7d8a-d1f3"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
@@ -8021,6 +8263,9 @@
                 <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
                 <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6997-e085-1742-8d2a"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Excoriator chainaxe" hidden="false" id="fd97-ad69-195c-f35d" sortIndex="2">
               <profiles>
@@ -8059,6 +8304,9 @@
                 <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
                 <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5dd2-c6bf-5197-1c94"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Paired falax blades" hidden="false" id="067a-7956-a818-438a" sortIndex="3">
               <profiles>
@@ -8081,6 +8329,9 @@
                 <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
                 <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="547f-94de-2620-9590"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Barb-hook lash" hidden="false" id="c800-8aad-56c2-d3c1" sortIndex="4">
               <profiles>
@@ -8119,6 +8370,9 @@
                 <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
                 <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e11c-a99e-b22a-06e8"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <modifiers>
