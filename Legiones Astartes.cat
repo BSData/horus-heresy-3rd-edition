@@ -17804,6 +17804,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <entryLink import="true" name="Prime Benefits" hidden="false" id="52cc-68eb-ce35-a769" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="b9e3-ead8-0d4a-4903" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="ce34-cfca-7de7-8ef5" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -17964,6 +17965,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </constraints>
             </entryLink>
             <entryLink import="true" name="Mount" hidden="false" id="9e9c-d577-4bb6-2221" type="selectionEntryGroup" targetId="9089-07e5-3653-84b6" sortIndex="1"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="51cd-cd69-c137-4ad2" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its chainsword and/or bolt pistol exchanged for " id="8158-5bac-4c7b-9050" sortIndex="2">
@@ -18220,6 +18222,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </constraints>
             </entryLink>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="6249-db44-9233-0b16" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="71a0-db3f-0057-8eb9" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its bolt pistol exchanged for " id="1c5a-c926-4146-a562" sortIndex="1" defaultSelectionEntryId="efaa-670b-4abf-8adb">
@@ -18481,6 +18484,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </constraints>
             </entryLink>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="d108-7b01-6c11-de20" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="881b-2c2d-5133-3af5" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its bolt pistol exchanged for " id="6e35-25c8-4fec-bf8a" sortIndex="4">
@@ -18682,7 +18686,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
       <selectionEntries>
         <selectionEntry type="model" name="Cataphractii Librarian" id="deaa-d493-4b77-b9d0" page="28" publicationId="5469-14da-d0a1-6092">
           <profiles>
-            <profile id="6808-be93-4cf3-b00b" name="Cataphractii Librarian" typeId="a76f-8e23-8c3e-166d">
+            <profile id="6808-be93-4cf3-b00b" name="Cataphractii Librarian" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">6</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
@@ -18700,6 +18704,70 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">4+</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Command, Heavy)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Tarteros</comment>
+                  <modifiers>
+                    <modifier type="set" value="Infantry (Command)" field="50fc-9241-d4a2-045b"/>
+                    <modifier type="set" value="7" field="a106-a779-d272-5e93"/>
+                    <modifier type="set" value="Tarteros Librarian" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -18707,6 +18775,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09fb-fbdc-47ee-85b6"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c78-cef7-d466-12f5"/>
           </constraints>
           <infoLinks>
             <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="7427-1f9a-4038-873b">
@@ -18715,10 +18784,19 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </modifiers>
             </infoLink>
             <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="31ba-691c-476f-a6be"/>
-            <infoLink name="Slow and Purposeful" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e" id="dc4c-fe37-421a-af58"/>
+            <infoLink name="Slow and Purposeful" id="91f4-6882-0827-0bcf" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Psyker" id="aa09-b15d-e0c9-7576" hidden="false" type="profile" targetId="0d5a-bf3a-7b46-785a"/>
           </infoLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="db1b-35be-42c0-8973">
+            <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="db1b-35be-42c0-8973" sortIndex="2">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="2a45-6e45-4c58-ad51" name="Combi-bolter">
                   <constraints>
@@ -18730,28 +18808,26 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e3b0-5f19-4430-847f"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="0523-46e6-6df1-a4c0" id="8395-83db-413a-9731" name="Legion Terminator Melee Weapons">
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="0523-46e6-6df1-a4c0" id="8395-83db-413a-9731" name="Legion Terminator Melee Weapons" flatten="true">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2eb-c177-47ba-bb08"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="4d06-6750-8ce9-50fe" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" flatten="true"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="02b7-1b48-4ba8-becd"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c751-ed90-4bc6-844f"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear for one item from the Legion Combi-weapons list
-	 Checked under for one item from the Legion Combi-weapons list</comment>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have up to two of the following Psychic Disciplines selected for it:" id="10a2-bf17-460c-92b1">
+            <selectionEntryGroup name="This Model may have up to two of the following Psychic Disciplines selected for it:" id="10a2-bf17-460c-92b1" sortIndex="4">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="d821-8e11-a0be-8327" id="541b-3e6d-4390-b707" name="Biomancy">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cd66-7623-4f97-a4f8"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd66-7623-4f97-a4f8"/>
                   </constraints>
                 </entryLink>
                 <entryLink hidden="false" type="selectionEntry" targetId="27b2-de8f-1d2c-bd83" id="4599-8458-4c2f-be28" name="Pyromancy">
@@ -18759,7 +18835,7 @@ Could not find wargear for one item from the Legion Combi-weapons list
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f082-775b-4d27-ba35"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f082-775b-4d27-ba35"/>
                   </constraints>
                 </entryLink>
                 <entryLink hidden="false" type="selectionEntry" targetId="a81f-1a6b-8a71-4dd6" id="54a0-5f66-4619-b052" name="Telekinesis">
@@ -18767,7 +18843,7 @@ Could not find wargear for one item from the Legion Combi-weapons list
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9be2-05ac-4e52-b82a"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9be2-05ac-4e52-b82a"/>
                   </constraints>
                 </entryLink>
                 <entryLink hidden="false" type="selectionEntry" targetId="9934-8bea-0a00-2ec8" id="b40c-8cd5-4d3b-b41c" name="Divination">
@@ -18775,7 +18851,7 @@ Could not find wargear for one item from the Legion Combi-weapons list
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="38b7-e0e8-40ea-afb7"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38b7-e0e8-40ea-afb7"/>
                   </constraints>
                 </entryLink>
                 <entryLink hidden="false" type="selectionEntry" targetId="6822-29f6-efad-7b57" id="66f4-1e84-445a-8a5d" name="Thaumaturgy">
@@ -18783,7 +18859,7 @@ Could not find wargear for one item from the Legion Combi-weapons list
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c4ec-c187-4b28-806a"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4ec-c187-4b28-806a"/>
                   </constraints>
                 </entryLink>
                 <entryLink hidden="false" type="selectionEntry" targetId="e09e-1438-3205-2a57" id="ab8e-fed0-47e5-b6fa" name="Telepathy">
@@ -18791,7 +18867,7 @@ Could not find wargear for one item from the Legion Combi-weapons list
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a97c-ee64-42df-8a0c"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a97c-ee64-42df-8a0c"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -18805,142 +18881,37 @@ Could not find wargear for one item from the Legion Combi-weapons list
             <categoryLink targetId="9871-cb62-5283-2216" id="c7de-053d-4b06-9d35" primary="false" name="Command Model Sub-type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="e9ae-1e89-4b6b-a8a2" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear Force weapon
-	 Checked under Force weapon
-Could not find wargear in This Model may have its combi-bolter exchanged for</comment>
-        </selectionEntry>
-        <selectionEntry type="model" name="Tartaros Librarian" id="3765-6a11-4ecd-b9c0" page="28" publicationId="5469-14da-d0a1-6092">
-          <profiles>
-            <profile id="da33-c007-4a7e-8b75" name="Tartaros Librarian" typeId="a76f-8e23-8c3e-166d">
-              <characteristics>
-                <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
-                <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
-                <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">5</characteristic>
-                <characteristic typeId="498f-dce1-59fd-d8d7" name="S">4</characteristic>
-                <characteristic typeId="3120-8275-e537-ecd2" name="T">5</characteristic>
-                <characteristic typeId="f5cc-79a3-d302-cc1d" name="W">4</characteristic>
-                <characteristic typeId="af9d-7db8-dc95-71c1" name="I">5</characteristic>
-                <characteristic typeId="024e-bdb1-7982-25a0" name="A">4</characteristic>
-                <characteristic typeId="02ad-ebe6-86e7-9fd6" name="LD">8</characteristic>
-                <characteristic typeId="9cd1-0e7c-2cd6-5f2f" name="CL">7</characteristic>
-                <characteristic typeId="f714-1726-37d3-44df" name="WP">9</characteristic>
-                <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">8</characteristic>
-                <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">2+</characteristic>
-                <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
-                <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Command)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d88-e962-47e2-8caa"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="aecf-cd8d-4292-a858">
-              <modifiers>
-                <modifier type="set" field="name" value="Bulky (2)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="0605-07eb-4c8b-bac0"/>
-          </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="8066-b18a-4a4b-be35">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="9abc-f4fe-4e76-b993" name="Combi-bolter">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1324-4942-4a40-904b"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" id="a926-7f1d-4ea5-9ef1" name="Volkite charger">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e56a-4ae1-4b75-bbb2"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="0523-46e6-6df1-a4c0" id="35e9-473f-4df6-9f37" name="Legion Terminator Melee Weapons">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57c0-4398-48a8-8a80"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Terminator Armour" hidden="false" id="92e1-edc3-6bea-0b6e" type="selectionEntryGroup" targetId="170b-d9c0-e9d6-b314" sortIndex="1"/>
+            <entryLink import="true" name="Force Weapon" hidden="false" id="7f4c-7851-cacc-ee7f" type="selectionEntryGroup" targetId="89e6-2502-2486-71f4" sortIndex="3">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f28a-df93-495a-a42c"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b25-665f-4992-8ae1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cef-59ee-a00e-a78e" automatic="true"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear for one item from the Legion Combi-weapons list
-	 Checked under for one item from the Legion Combi-weapons list</comment>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have up to two of the following Psychic Disciplines selected for it:" id="6573-1c21-4db9-a505">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="d821-8e11-a0be-8327" id="227e-f518-47e2-adfd" name="Biomancy">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cc49-c20a-40d2-9bc9"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="27b2-de8f-1d2c-bd83" id="ecf8-a27e-4ef2-b256" name="Pyromancy">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="95ae-7864-46a3-a8bf"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="a81f-1a6b-8a71-4dd6" id="21ca-1b69-49ed-b69d" name="Telekinesis">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cf17-7716-4fa3-9aa4"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="9934-8bea-0a00-2ec8" id="1d7f-754b-4566-bc85" name="Divination">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9067-1a6f-418e-a8cb"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="6822-29f6-efad-7b57" id="7b19-0091-49fc-88b8" name="Thaumaturgy">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b8c1-850d-447f-88f1"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="e09e-1438-3205-2a57" id="76a5-1d12-4268-8659" name="Telepathy">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f4ec-8019-4c3f-a9a5"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0659-ec20-4330-81b0"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <categoryLinks>
-            <categoryLink targetId="594d-fa82-13cb-a345" id="8bca-19fd-443b-b066" primary="false" name="Infantry Model Type"/>
-            <categoryLink targetId="9871-cb62-5283-2216" id="803b-e4f7-4970-a197" primary="false" name="Command Model Sub-type"/>
-          </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear Force weapon
-	 Checked under Force weapon
-Could not find wargear in This Model may have its combi-bolter exchanged for</comment>
+            </entryLink>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="637e-d46a-3df2-8ef4" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
+            <entryLink import="true" name="Prosperine Arcana" hidden="false" id="9be9-07e1-b8f0-08fe" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="Tartaros Librarian" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250828-1757
-Needs replace by constraints and default set to Cataphractii Librarian</comment>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="752e-55b7-a02e-7a3b" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="f277-a9fa-3597-311d" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Cult Arcana" hidden="false" id="2815-5f16-c7f7-c5a0" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="54fb-a60f-99d5-3c18" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="aabc-5394-b9da-5f56" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Esoterist With Jump Pack" type="unit" id="3ad9-c7af-4c97-b080" sortIndex="86" page="29" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -29439,6 +29410,11 @@ Could not find rule: Auxiliary Vehicle Bays</comment>
     <entryLink import="true" name="Mounted Librarian" hidden="false" id="010f-4406-3a8e-5fbf" type="selectionEntry" targetId="e9e2-0c90-42f6-8853">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="ac6a-3979-e1a5-febd" primary="true" name="Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Librarian In Terminator Armour" hidden="false" id="f134-7c32-d6b2-82f2" type="selectionEntry" targetId="a427-a107-4dd3-9897" sortIndex="84">
+      <categoryLinks>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="3fcc-8865-1ddf-83c1" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
