@@ -17805,6 +17805,11 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="ce34-cfca-7de7-8ef5" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="d933-8097-452b-b84c" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Master of the Legion" id="41fa-010e-8b9d-9a85" hidden="false" type="profile" targetId="6cd2-96be-b703-6d57"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Mounted Centurion" type="unit" id="2fb4-53c3-4e84-b9ec" sortIndex="82" page="25" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -18113,15 +18118,19 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="70e5-e420-9ed2-4f6d" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="ec29-0272-a634-2ac2" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Librarian With Jump Pack" type="unit" id="bd23-f9fd-4dff-9202" sortIndex="83" page="26" publicationId="5469-14da-d0a1-6092">
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="115"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Librarian with Jump Pack" id="483c-387b-4fcb-ac11" page="26" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Librarian with Jump Pack" id="483c-387b-4fcb-ac11" page="26" publicationId="5469-14da-d0a1-6092" sortIndex="1">
           <profiles>
-            <profile id="17ae-853a-4244-a33e" name="Librarian with Jump Pack" typeId="a76f-8e23-8c3e-166d">
+            <profile id="17ae-853a-4244-a33e" name="Librarian with Jump Pack" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">12</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
@@ -18139,6 +18148,49 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Command, Antigrav)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -18149,28 +18201,34 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2554-84c1-46ed-825d"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="04f0-73c8-40ff-bbec" name="Frag grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="04f0-73c8-40ff-bbec" name="Frag grenades" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c8e-39ff-4f9f-84ef"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c6a-7a1b-410e-98b6"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="eaea-54bd-4cbe-8edc" name="Krak grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="eaea-54bd-4cbe-8edc" name="Krak grenades" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9070-a77f-4e25-939e"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c1c-3054-4c74-9d69"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Force Weapon" hidden="false" id="78d1-8c89-58f2-0057" type="selectionEntryGroup" targetId="89e6-2502-2486-71f4" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e31d-7f7b-5ea4-48a9" automatic="true"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Prosperine Arcana" hidden="false" id="6249-db44-9233-0b16" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its bolt pistol exchanged for " id="1c5a-c926-4146-a562">
+            <selectionEntryGroup name="This Model may have its bolt pistol exchanged for " id="1c5a-c926-4146-a562" sortIndex="1" defaultSelectionEntryId="efaa-670b-4abf-8adb">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="efaa-670b-4abf-8adb" name="Bolt pistol">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6baf-bd7b-44e5-86b4"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" id="c6d8-9e18-4954-bdd2" name="Legion Pistols">
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" id="c6d8-9e18-4954-bdd2" name="Legion Pistols" flatten="true">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d347-c647-468a-91e0"/>
                   </constraints>
@@ -18242,9 +18300,9 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <categoryLink targetId="9871-cb62-5283-2216" id="ad1e-ad39-454b-a07e" primary="false" name="Command Model Sub-type"/>
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="15ae-d992-4a70-9cc1" primary="false" name="Antigrav Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear Force weapon
-	 Checked under Force weapon</comment>
+          <infoLinks>
+            <infoLink name="Psyker" id="695d-5cb9-244d-f5d3" hidden="false" type="profile" targetId="0d5a-bf3a-7b46-785a"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -18254,7 +18312,17 @@ Could not find wargear Force weapon
           </modifiers>
         </infoLink>
         <infoLink name="Deep Strike" hidden="false" type="rule" targetId="0553-d06b-52b9-34db" id="d809-3c8e-487d-b71a"/>
+        <infoLink name="[Allegiance]" id="c1da-cb08-92c6-918c" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="9185-a29a-f8d4-fe6c" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Cult Arcana" hidden="false" id="0a92-4389-2d18-a383" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="050d-6c07-f076-bb7d" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="a0d6-aa91-64ae-12ac" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Mounted Librarian" type="unit" id="e9e2-0c90-42f6-8853" sortIndex="84" page="27" publicationId="5469-14da-d0a1-6092">
       <costs>
