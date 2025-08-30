@@ -5978,7 +5978,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -18789,7 +18789,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -19364,7 +19364,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
       <selectionEntries>
         <selectionEntry type="model" name="Cataphractii Esoterist" id="bc03-384c-4fa0-86f5" page="31" publicationId="5469-14da-d0a1-6092">
           <profiles>
-            <profile id="e59c-5d2e-486b-b9ce" name="Cataphractii Esoterist" typeId="a76f-8e23-8c3e-166d">
+            <profile id="e59c-5d2e-486b-b9ce" name="Cataphractii Esoterist" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">6</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
@@ -19382,6 +19382,70 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">4+</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Command, Heavy)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Tarteros</comment>
+                  <modifiers>
+                    <modifier type="set" value="Infantry (Command)" field="50fc-9241-d4a2-045b"/>
+                    <modifier type="set" value="7" field="a106-a779-d272-5e93"/>
+                    <modifier type="set" value="Tartaros Esoterist" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -19389,6 +19453,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a95b-62d2-4f6a-bbf6"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba04-c917-8840-3f21"/>
           </constraints>
           <infoLinks>
             <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="4742-45bd-4480-ae47">
@@ -19397,10 +19462,20 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </modifiers>
             </infoLink>
             <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="4cb1-632c-41b5-bbca"/>
-            <infoLink name="Slow and Purposeful" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e" id="fda2-1189-4ce6-8ddd"/>
+            <infoLink name="Anathemata" id="d4ed-f61c-948b-a9c9" hidden="false" type="profile" targetId="40b6-d6e2-da71-a384"/>
+            <infoLink name="Psyker" id="8a09-8bee-f66c-bfb0" hidden="false" type="profile" targetId="0d5a-bf3a-7b46-785a"/>
+            <infoLink name="Slow and Purposeful" id="d214-b43e-03b9-fdb4" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notEqualTo" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="5f97-13b9-41f7-a584">
+            <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="5f97-13b9-41f7-a584" sortIndex="2">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="c098-0450-46a2-b294" name="Combi-bolter">
                   <constraints>
@@ -19412,14 +19487,12 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4af7-1f7a-41ee-816f"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="d421-c2ca-d116-6ecf" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" flatten="true"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a168-e90b-4aee-bcca"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af6e-5ac7-4838-b12d"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear for one item from the Legion Combi-weapons list.
-	 Checked under for one item from the Legion Combi-weapons list.</comment>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -19427,84 +19500,48 @@ Could not find wargear for one item from the Legion Combi-weapons list.
             <categoryLink targetId="9871-cb62-5283-2216" id="571a-dbd5-45fd-8647" primary="false" name="Command Model Sub-type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="86a0-421e-4e9e-a645" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find rule: Anathemata Discipline (see Liber Astartes/Hereticus, page 35)
-Could not find wargear Force weapon
-	 Checked under Force weapon
-Could not find wargear in This Model may have its combi-bolter exchanged for</comment>
-        </selectionEntry>
-        <selectionEntry type="model" name="Tartaros Esoterist" id="280e-9229-40b8-b2ac" page="31" publicationId="5469-14da-d0a1-6092">
-          <profiles>
-            <profile id="dc1d-e685-43ff-b92c" name="Tartaros Esoterist" typeId="a76f-8e23-8c3e-166d">
-              <characteristics>
-                <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
-                <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
-                <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">5</characteristic>
-                <characteristic typeId="498f-dce1-59fd-d8d7" name="S">4</characteristic>
-                <characteristic typeId="3120-8275-e537-ecd2" name="T">5</characteristic>
-                <characteristic typeId="f5cc-79a3-d302-cc1d" name="W">4</characteristic>
-                <characteristic typeId="af9d-7db8-dc95-71c1" name="I">5</characteristic>
-                <characteristic typeId="024e-bdb1-7982-25a0" name="A">4</characteristic>
-                <characteristic typeId="02ad-ebe6-86e7-9fd6" name="LD">7</characteristic>
-                <characteristic typeId="9cd1-0e7c-2cd6-5f2f" name="CL">8</characteristic>
-                <characteristic typeId="f714-1726-37d3-44df" name="WP">10</characteristic>
-                <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">8</characteristic>
-                <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">2+</characteristic>
-                <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
-                <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Command)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0e5-669e-4d19-99bf"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="d1cd-1abe-4bfc-9ab2">
-              <modifiers>
-                <modifier type="set" field="name" value="Bulky (2)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="4322-bfc8-43e3-9b0c"/>
-          </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="612b-09d5-4049-9c47">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="1631-68eb-4ac0-bff2" name="Combi-bolter">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4ce-d4ff-4046-8e09"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" id="33a8-90fa-41e3-abdd" name="Volkite charger">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2370-57f7-423f-bc0d"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Anathemata" hidden="false" id="f45c-b423-3ea9-237b" type="selectionEntry" targetId="091a-56c9-7eba-9fa7">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ab8-8e44-42a0-bced"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbce-3174-47b5-9cbc"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="57e0-aa65-290a-4dd9"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a388-f731-5349-d755"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear for one item from the Legion Combi-weapons list.
-	 Checked under for one item from the Legion Combi-weapons list.</comment>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <categoryLinks>
-            <categoryLink targetId="594d-fa82-13cb-a345" id="089a-b9dd-4c5a-a8d1" primary="false" name="Infantry Model Type"/>
-            <categoryLink targetId="9871-cb62-5283-2216" id="b88d-739a-459d-b933" primary="false" name="Command Model Sub-type"/>
-          </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find rule: Anathemata Discipline (see Liber Astartes/Hereticus, page 35)
-Could not find wargear Force weapon
-	 Checked under Force weapon
-Could not find wargear in This Model may have its combi-bolter exchanged for</comment>
+            </entryLink>
+            <entryLink import="true" name="Prosperine Arcana" hidden="false" id="c778-1f4a-09cc-3021" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Terminator Armour" hidden="false" id="d457-9153-879c-d3aa" type="selectionEntryGroup" targetId="170b-d9c0-e9d6-b314" sortIndex="1"/>
+            <entryLink import="true" name="Force Weapon" hidden="false" id="0ada-1b1e-e8f1-1849" type="selectionEntryGroup" targetId="89e6-2502-2486-71f4" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce56-d8d4-5c85-ba55" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd2a-321d-2848-5fd7" automatic="true"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Tartaros Esoterist" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250828-1757
-Needs replace by constraints and default set to Cataphractii Esoterist</comment>
+      <entryLinks>
+        <entryLink import="true" name="Cult Arcana" hidden="false" id="9464-de8f-14b0-7094" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="c3a4-5a01-78b8-6729" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="a817-dd9b-7a62-0332" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="751c-c2eb-0d69-00e7" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="57e5-77ed-bf1d-2346" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Legion Champion With Jump Pack" type="unit" id="98fc-9124-4534-a3a3" sortIndex="89" page="32" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -29591,6 +29628,11 @@ Could not find rule: Auxiliary Vehicle Bays</comment>
     <entryLink import="true" name="Mounted Esoterist" hidden="false" id="644a-79bf-4ff5-c3ba" type="selectionEntry" targetId="7ab5-b907-4fa0-9caa" sortIndex="87">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="73cd-68a6-e37d-fad2" primary="true" name="Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Esoterist In Terminator Armour" hidden="false" id="4b24-f831-bc45-1e53" type="selectionEntry" targetId="f232-220d-4c9d-87f4" sortIndex="88">
+      <categoryLinks>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="2697-e144-e0df-f9b1" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
