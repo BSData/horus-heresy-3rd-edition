@@ -29823,7 +29823,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="280"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Land Raider Achilles" id="6a35-2c9f-4f71-b9ad" page="72" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Land Raider Achilles" id="6a35-2c9f-4f71-b9ad" page="72" publicationId="5469-14da-d0a1-6092" sortIndex="1">
           <profiles>
             <profile id="21e4-7e11-4fe1-80e3" name="Land Raider Achilles" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle">
               <characteristics>
@@ -29938,24 +29938,32 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <infoLink name="Smokescreen" id="4643-dc1a-ac7c-5d57" hidden="false" type="profile" targetId="999b-689a-4ee7-8901"/>
         <infoLink name="Smokescreen" id="06e0-c591-c7a7-26aa" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="0c86-edef-37ee-5ad1" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="ee8c-c3b2-0417-8dc5" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Caestus Assault Ram" type="unit" id="969d-a75a-4363-ae09" sortIndex="129" page="73" publicationId="5469-14da-d0a1-6092">
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="290"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Caestus Assault Ram" id="eba4-b428-4478-962f" page="73" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Caestus Assault Ram" id="eba4-b428-4478-962f" page="73" publicationId="5469-14da-d0a1-6092" sortIndex="1">
           <profiles>
-            <profile id="8516-e396-49af-aed3" name="Caestus Assault Ram" typeId="2a80-eec8-a736-2fe3">
+            <profile id="8516-e396-49af-aed3" name="Caestus Assault Ram" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle">
               <characteristics>
-                <characteristic typeId="d624-72fe-0205-4443" name="M">18</characteristic>
-                <characteristic typeId="a17e-8e7d-d21f-c138" name="BS">4</characteristic>
-                <characteristic typeId="6536-e73d-4a74-c675" name="Front Armour">14</characteristic>
-                <characteristic typeId="f03a-18a7-8586-273d" name="Side Armour">13</characteristic>
-                <characteristic typeId="ec84-1f5d-1bb3-6826" name="Rear Armour">11</characteristic>
-                <characteristic typeId="8735-4497-1f8a-4dda" name="HP">7</characteristic>
-                <characteristic typeId="a82e-858c-9aa9-2b43" name="Transport Capacity">16</characteristic>
-                <characteristic typeId="827f-9ce2-2118-e134" name="Type">Vehicle (Transport, Flyer)</characteristic>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Transport, Flyer)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">18</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">14</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">13</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">11</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">7</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">16</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">If this Model does not have a base, it is considered to have Access Points on all Facings.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -29967,7 +29975,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0736-096f-4122-b615"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="cd2b-e3dd-e31b-73f9" id="e808-070d-4d48-bfd9" name="Magna-melta cannon">
+            <entryLink hidden="false" type="selectionEntry" targetId="cd2b-e3dd-e31b-73f9" id="e808-070d-4d48-bfd9" name="Magna-melta cannon" sortIndex="1">
               <modifiers>
                 <modifier type="set" field="name" value="Centreline Mounted magna-melta cannon"/>
               </modifiers>
@@ -29976,7 +29984,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="708d-7192-4376-84e3"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="b341-159d-9dfb-ff31" id="67c3-062f-4893-8fb6" name="Cyclone missile launcher">
+            <entryLink hidden="false" type="selectionEntry" targetId="b341-159d-9dfb-ff31" id="67c3-062f-4893-8fb6" name="Cyclone missile launcher" sortIndex="2">
               <modifiers>
                 <modifier type="set" field="name" value="Two Centreline Mounted cyclone missile launchers"/>
               </modifiers>
@@ -29995,7 +30003,16 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
       </selectionEntries>
       <infoLinks>
         <infoLink name="Assault Vehicle" hidden="false" type="rule" targetId="150c-16e6-1212-9f75" id="9c21-da15-4d4d-a3c4"/>
+        <infoLink name="[Allegiance]" id="149a-4d1f-e98f-e4c4" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="8ac3-8d45-d223-4c1b" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="ebea-286a-5f91-e739" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="41a1-69ef-c60a-35eb" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Attack Bike Squadron" type="unit" id="b17c-db9a-43b0-82f0" sortIndex="130" page="74" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -31649,6 +31666,11 @@ Could not find rule: Auxiliary Vehicle Bays</comment>
     <entryLink import="true" name="Land Raider Achilles" hidden="false" id="7833-d40c-ce0b-17aa" type="selectionEntry" targetId="e937-c704-4177-ac8d" sortIndex="128">
       <categoryLinks>
         <categoryLink targetId="52d0-8b78-439e-18e5" id="8186-4568-d9f5-6ace" primary="true" name="Heavy Transport"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Caestus Assault Ram" hidden="false" id="374c-7e82-7f3e-6fec" type="selectionEntry" targetId="969d-a75a-4363-ae09" sortIndex="129">
+      <categoryLinks>
+        <categoryLink targetId="52d0-8b78-439e-18e5" id="4f76-71c1-531d-c04b" primary="true" name="Heavy Transport"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
