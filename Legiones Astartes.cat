@@ -27513,15 +27513,25 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="dea9-9feb-40c7-bfef"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="3f8c-2e12-46aa-a8cb" name="Bolt pistol">
+            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="3f8c-2e12-46aa-a8cb" name="Bolt pistol" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="786b-6a80-4c6a-a9b7"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6412-6106-437f-bea6"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Legion Equipment" hidden="false" id="1499-dac0-173d-336d" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b112-bfc0-57df-fbde" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="b34a-4213-f136-46b0" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Up to two Support Veterans in this Unit may each 
+have one item from" field="name"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="One Support Veteran in this Unit may have one vexilla selected for it for +10 Points." id="e109-eed7-4360-897a">
+            <selectionEntryGroup name="One Support Veteran in this Unit may have one vexilla selected for it for +10 Points." id="e109-eed7-4360-897a" sortIndex="2">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="dfcd-0669-ad43-28aa" id="abeb-21c6-43a6-8316" name="Vexilla">
                   <costs>
