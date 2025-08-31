@@ -30625,8 +30625,17 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250828-1757
-Could not find rule: None</comment>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="52cf-0a4d-515b-9b10" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="4218-c035-f6c4-083a" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="bc13-ffa2-163e-e791" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="e022-18b4-6cc9-1a24" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Thunderhawk Transporter" type="unit" id="fb1c-580c-4b36-8fb7" sortIndex="134" page="78" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -30635,16 +30644,17 @@ Could not find rule: None</comment>
       <selectionEntries>
         <selectionEntry type="model" name="Thunderhawk Transporter" id="aff5-975b-4d95-9cdf" page="78" publicationId="5469-14da-d0a1-6092">
           <profiles>
-            <profile id="cf50-c56d-4100-90a9" name="Thunderhawk Transporter" typeId="2a80-eec8-a736-2fe3">
+            <profile id="cf50-c56d-4100-90a9" name="Thunderhawk Transporter" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle">
               <characteristics>
-                <characteristic typeId="d624-72fe-0205-4443" name="M">14</characteristic>
-                <characteristic typeId="a17e-8e7d-d21f-c138" name="BS">4</characteristic>
-                <characteristic typeId="6536-e73d-4a74-c675" name="Front Armour">13</characteristic>
-                <characteristic typeId="f03a-18a7-8586-273d" name="Side Armour">13</characteristic>
-                <characteristic typeId="ec84-1f5d-1bb3-6826" name="Rear Armour">13</characteristic>
-                <characteristic typeId="8735-4497-1f8a-4dda" name="HP">16</characteristic>
-                <characteristic typeId="a82e-858c-9aa9-2b43" name="Transport Capacity">20</characteristic>
-                <characteristic typeId="827f-9ce2-2118-e134" name="Type">Vehicle (Transport, Super-heavy, Flyer)</characteristic>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Transport, Super-heavy, Flyer)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">14</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">13</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">13</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">13</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">16</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">20</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">If this Model does not have a base, it is considered to have Access Points on all Facings.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -30661,13 +30671,22 @@ Could not find rule: None</comment>
             <categoryLink targetId="4d42-b711-7946-8e15" id="45f8-70bc-4850-b04e" primary="false" name="Super-heavy Model Sub-Type"/>
             <categoryLink targetId="42a3-02e9-e0e4-8292" id="bafb-5a01-4019-aa73" primary="false" name="Flyer Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear Four Turret Mounted twin heavy bolters
-	 Checked under twin heavy bolters</comment>
+          <entryLinks>
+            <entryLink import="true" name="Twin heavy bolter" hidden="false" id="95bd-7977-741c-ba9b" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75">
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="cde5-2ee7-812c-e30e"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="8ea1-a653-f4de-0511"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Four Turret Mounted twin heavy bolters" field="name"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250828-1757
-Could not find rule: Auxiliary Vehicle Bays</comment>
+      <infoLinks>
+        <infoLink name="Auxiliary Transport Bays" id="4c3b-b696-b8fa-b064" hidden="false" type="rule" targetId="0408-7152-2a7e-8d2b"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cult Arcana" hidden="true" id="1799-d9ae-6aa7-4ff0">
       <infoLinks>
@@ -31743,6 +31762,16 @@ Could not find rule: Auxiliary Vehicle Bays</comment>
     <entryLink import="true" name="Legion Basilisk" hidden="false" id="96c2-d6a1-b8ef-8a4b" type="selectionEntry" targetId="9423-c3bb-4ae8-b374" sortIndex="132">
       <categoryLinks>
         <categoryLink targetId="643a-1012-bd51-6537" id="c6a1-bfd2-41ce-5f0d" primary="true" name="Armour"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Legion Medusa" hidden="false" id="38d2-2b6d-003a-c200" type="selectionEntry" targetId="3771-340e-4771-ae10" sortIndex="133">
+      <categoryLinks>
+        <categoryLink targetId="643a-1012-bd51-6537" id="876e-9a61-ec34-30dd" primary="true" name="Armour"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Thunderhawk Transporter" hidden="false" id="60b1-64f4-16b7-9895" type="selectionEntry" targetId="fb1c-580c-4b36-8fb7" sortIndex="134">
+      <categoryLinks>
+        <categoryLink targetId="a46f-a465-0ead-d6b8" id="a2ec-3c0c-fbb7-d93d" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
