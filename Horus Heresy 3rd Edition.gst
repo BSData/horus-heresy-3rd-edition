@@ -487,6 +487,29 @@
     <categoryEntry name="Support - Cybernetica Only" id="6670-8971-59cb-b440" hidden="false"/>
     <categoryEntry name="War-Engine - Cybernetica Only" id="a212-e7c6-7b8c-f480" hidden="false"/>
     <categoryEntry name="Command - Arcuitor Magesterium Only" id="d798-77b3-0f8e-d492" hidden="false"/>
+    <categoryEntry name="Legiones Thallaxes" id="6f78-9e60-4884-63d2" hidden="true">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f3e8-dd8e-b474-59e2"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7e6a-e3bf-9c73-1574"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="3e37-6d4b-1198-b3fa" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="2" field="7e6a-e3bf-9c73-1574">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="3e37-6d4b-1198-b3fa" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Bonded Reductor" id="8685-ffdf-e073-4267" hidden="false"/>
+    <categoryEntry name="Apex from Delegatus" id="5034-24c8-3d4c-9013" hidden="false"/>
+    <categoryEntry name="War Engine - Contemptor Dreadnoughts Only" id="f817-34d5-598c-d196" hidden="false"/>
+    <categoryEntry name="Mortificator" id="4e4f-ab55-68ef-ad63" hidden="false"/>
+    <categoryEntry name="Siege Breaker" id="25ad-fbd9-d161-8fd1" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -1101,7 +1124,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b5f6-283d-e1bc-26cf"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Clade Operative" hidden="false" id="b728-3cbe-7716-d0ef" targetId="335a-5a90-3b7c-c034" type="categoryEntry"/>
+            <categoryLink name="Clade Operative" hidden="false" id="b728-3cbe-7716-d0ef" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Legiones Thallaxes" hidden="false" id="ac75-3bc0-f94c-7fac" targetId="6f78-9e60-4884-63d2"/>
             <categoryLink name="Recon - Land Raider Explorator Only" hidden="false" id="cca3-27cf-d951-b2a6" targetId="1bc1-e6ff-d62e-398e" type="categoryEntry">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d1f3-d313-de87-02c3" automatic="true"/>
@@ -1885,7 +1909,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -2231,7 +2255,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -2567,7 +2591,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -2903,7 +2927,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -3239,7 +3263,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -3575,7 +3599,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -3911,7 +3935,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -4474,7 +4498,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
           </costs>
         </forceEntry>
@@ -5122,7 +5146,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
           </costs>
         </forceEntry>
@@ -5685,7 +5709,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
           </costs>
         </forceEntry>
@@ -5740,7 +5764,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -5923,7 +5947,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -6333,7 +6357,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -6729,7 +6753,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
           </costs>
           <constraints>
@@ -7137,7 +7161,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
           </costs>
           <constraints>
@@ -7555,7 +7579,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
           </costs>
           <constraints>
@@ -7789,7 +7813,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4ae1-654e-fe03-027f" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Elites - Myrmidax Only" hidden="false" id="e254-1805-e51b-b3d6" targetId="cd91-8631-13b1-59d5" type="categoryEntry">
+            <categoryLink name="Elites - Myrmidax Only" hidden="false" id="e254-1805-e51b-b3d6" targetId="cd91-8631-13b1-59d5">
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2311-a998-db88-c206" includeChildSelections="false"/>
               </constraints>
@@ -7973,7 +7997,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
           </costs>
           <constraints>
@@ -8164,7 +8188,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
           </costs>
           <constraints>
@@ -8560,7 +8584,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
           </costs>
           <constraints>
@@ -8988,7 +9012,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
           </costs>
           <constraints>
@@ -9259,7 +9283,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
           </costs>
         </forceEntry>
@@ -9517,7 +9541,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -9770,7 +9794,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -10088,7 +10112,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -10358,7 +10382,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -10417,7 +10441,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -10476,7 +10500,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -10753,7 +10777,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -10822,7 +10846,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -11096,7 +11120,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -11374,7 +11398,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
           </costs>
         </forceEntry>
@@ -11631,7 +11655,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -11676,7 +11700,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
           </costs>
         </forceEntry>
@@ -11928,7 +11952,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -12185,7 +12209,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -12442,7 +12466,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -12699,7 +12723,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -12754,7 +12778,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -13006,7 +13030,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -13264,7 +13288,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -13517,7 +13541,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -13775,7 +13799,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -14033,7 +14057,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -14079,7 +14103,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -14342,7 +14366,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -14594,7 +14618,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -14851,7 +14875,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -14896,7 +14920,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -15143,7 +15167,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -15188,7 +15212,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
           </costs>
         </forceEntry>
@@ -15445,7 +15469,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -15600,7 +15624,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -15792,7 +15816,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
           <constraints>
@@ -16189,7 +16213,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -16583,7 +16607,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -16760,7 +16784,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -17149,7 +17173,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -17218,7 +17242,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
@@ -17462,7 +17486,7 @@
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
           <constraints>
@@ -17932,6 +17956,179 @@
             <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="5df5-5821-ea4c-d0e2" includeChildSelections="false"/>
           </constraints>
         </forceEntry>
+        <forceEntry name="Auxiliary - Dreadnought Talon" id="9ffc-1414-bcb2-ca4b" hidden="true" sortIndex="23">
+          <categoryLinks>
+            <categoryLink name="Prime War-engine" hidden="false" id="23ee-69b7-709f-aee9" targetId="9699-67c9-2c0b-e64b">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3910-b600-eda2-36b8" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="War Engine - Contemptor Dreadnoughts Only" hidden="false" id="d306-f087-fb59-da87" targetId="f817-34d5-598c-d196">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d4b3-6409-2ea4-d461"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                      </conditions>
+                      <comment>DA</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9a22-d01f-ab5c-ec07" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9a22-d01f-ab5c-ec07" shared="true"/>
+                      </conditions>
+                      <comment>EC</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="21c0-18db-03dd-ae07" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="21c0-18db-03dd-ae07" shared="true"/>
+                      </conditions>
+                      <comment>IW</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f7b4-2531-0962-1379" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f7b4-2531-0962-1379" shared="true"/>
+                      </conditions>
+                      <comment>WS</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d995-cb33-be41-ecf8" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="d995-cb33-be41-ecf8" shared="true"/>
+                      </conditions>
+                      <comment>SW</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f7b4-2531-0962-1379" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f7b4-2531-0962-1379" shared="true"/>
+                      </conditions>
+                      <comment>WS</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d186-cffc-0950-f632" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="d186-cffc-0950-f632" shared="true"/>
+                      </conditions>
+                      <comment>IF</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="486f-b32a-ac87-73dd" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="486f-b32a-ac87-73dd" shared="true"/>
+                      </conditions>
+                      <comment>NL</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9cff-ac34-56ca-260f" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9cff-ac34-56ca-260f" shared="true"/>
+                      </conditions>
+                      <comment>BA</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="736e-3967-e72b-e3ac" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="736e-3967-e72b-e3ac" shared="true"/>
+                      </conditions>
+                      <comment>IH</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a956-190d-3b47-6258" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="a956-190d-3b47-6258" shared="true"/>
+                      </conditions>
+                      <comment>WE</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="656a-07b6-d4fd-57af" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="656a-07b6-d4fd-57af" shared="true"/>
+                      </conditions>
+                      <comment>UM</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="be98-aa9d-64ef-f62c" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="be98-aa9d-64ef-f62c" shared="true"/>
+                      </conditions>
+                      <comment>DG</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="2496-21e2-1870-e9b8" shared="true"/>
+                      </conditions>
+                      <comment>TS</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ac06-fcec-b634-5bd9" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="ac06-fcec-b634-5bd9" shared="true"/>
+                      </conditions>
+                      <comment>SH</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4935-1832-63f7-91aa" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="4935-1832-63f7-91aa" shared="true"/>
+                      </conditions>
+                      <comment>WB</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f148-a6e4-5a8c-3aeb" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f148-a6e4-5a8c-3aeb" shared="true"/>
+                      </conditions>
+                      <comment>SL</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="340c-1d4f-1f31-fb70" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="340c-1d4f-1f31-fb70" shared="true"/>
+                      </conditions>
+                      <comment>RG</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="8813-5298-c368-ee16" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="8813-5298-c368-ee16" shared="true"/>
+                      </conditions>
+                      <comment>AL</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Legions Only</comment>
+            </modifier>
+            <modifier type="increment" value="1" field="4256-c6d3-a3ce-63c8">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="4e4f-ab55-68ef-ad63" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="4256-c6d3-a3ce-63c8"/>
+          </constraints>
+        </forceEntry>
       </forceEntries>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="dae8-8a74-0984-6332" includeChildSelections="false"/>
@@ -17977,13 +18174,23 @@
         </modifier>
         <modifier type="increment" value="1" field="22e2-3454-8828-04e6">
           <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="roster" childId="8a97-1585-93e7-c561" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="8a97-1585-93e7-c561" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
         <modifier type="increment" value="1" field="0ab6-91a0-792e-4068">
           <repeats>
             <repeat value="1" repeats="1" field="selections" scope="force" childId="ff44-f49f-732b-c3a7" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="22e2-3454-8828-04e6">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5034-24c8-3d4c-9013" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" value="1" field="0ab6-91a0-792e-4068">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5034-24c8-3d4c-9013" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </forceEntry>
@@ -18513,7 +18720,7 @@
         </modifier>
         <modifier type="increment" value="1" field="edd7-83f8-6c5d-15ba">
           <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="roster" childId="8a97-1585-93e7-c561" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="8a97-1585-93e7-c561" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
         <modifier type="increment" value="1" field="3fef-ac67-de89-249f">
@@ -18525,6 +18732,16 @@
           <repeats>
             <repeat value="1" repeats="1" field="selections" scope="force" childId="ff44-f49f-732b-c3a7" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="edd7-83f8-6c5d-15ba">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5034-24c8-3d4c-9013" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" value="1" field="4823-b27b-f750-5a63">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5034-24c8-3d4c-9013" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -18577,8 +18794,16 @@
         <forceEntryLink name="Auxiliary - Storm Battery" id="d970-aac1-4559-8540" hidden="true" targetId="d089-8cc7-96a7-903f" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Recon Demi-Company" id="039a-b6c4-4ef2-b686" hidden="true" targetId="38f7-2240-f8ee-6cce" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Iron Tercio" id="de8f-bbd0-46b9-9743" hidden="true" targetId="9a10-a2d9-5a87-a5a9" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Planetfall Speartip" id="f263-08d1-5547-8666" hidden="false" targetId="2e50-319d-ae62-a50c" type="forceEntry"/>
-        <forceEntryLink name="Mech - Logistical Benefits Detachment" id="1e0e-415c-5eca-b017" hidden="false" targetId="8c2c-1dac-5e49-d2e5" type="forceEntry" sortIndex="2"/>
+        <forceEntryLink name="Auxiliary - Planetfall Speartip" id="f263-08d1-5547-8666" hidden="true" targetId="2e50-319d-ae62-a50c" type="forceEntry"/>
+        <forceEntryLink name="Mech - Logistical Benefits Detachment" id="1e0e-415c-5eca-b017" hidden="true" targetId="8c2c-1dac-5e49-d2e5" type="forceEntry" sortIndex="2"/>
+        <forceEntryLink name="Auxiliary - Dreadnought Talon" id="9d34-d787-9f85-f358" hidden="true" targetId="9ffc-1414-bcb2-ca4b" type="forceEntry"/>
+        <forceEntryLink name="Apex - Combat Retinue" id="5e4d-f169-7c0d-1a56" hidden="true" targetId="7203-426e-7a82-0b01" type="forceEntry"/>
+        <forceEntryLink name="Apex - Officer Cadre" id="9e9e-bf66-ebd3-1ebc" hidden="true" targetId="90b7-c0fa-a9e1-6765" type="forceEntry"/>
+        <forceEntryLink name="Apex - Army Vanguard" id="aa30-a438-f11c-74f2" hidden="true" targetId="0690-c05e-c301-f595" type="forceEntry"/>
+        <forceEntryLink name="Apex - The Hammer of Olympia" id="8190-9944-72c2-8ca1" hidden="true" targetId="1d3d-a6b8-94d8-443b" type="forceEntry"/>
+        <forceEntryLink name="Apex - Medusan Vanguard" id="d34e-10ce-826a-4f5e" hidden="true" targetId="7ff8-9e2c-e68a-573f" type="forceEntry"/>
+        <forceEntryLink name="Apex - Atramentar Hunt " id="77b8-89ca-6e92-12e4" hidden="true" targetId="dbbe-886f-3ce1-13c0" type="forceEntry"/>
+        <forceEntryLink name="Apex - Exalted Conclave" id="5054-c3a2-6e82-5245" hidden="true" targetId="c961-7007-0142-5d07" type="forceEntry"/>
       </forceEntryLinks>
     </forceEntry>
     <forceEntry name="Lord of War Detachment" id="b7a1-629f-9d60-c2a9" hidden="false" sortIndex="3">
@@ -18974,7 +19199,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
     <costType name="Point(s)" id="9893-c379-920b-8982" defaultCostLimit="-1"/>
     <costType name="Asset Point(s)" id="57e3-1031-7d4d-5ae3" defaultCostLimit="-1" hidden="true"/>
     <costType name="Reaction Point(s)" id="c9ba-097e-c47f-ecc2" defaultCostLimit="-1" hidden="true"/>
-    <costType name="Auxilary Detachment(s)" id="3e8e-05ee-be52-12d6" defaultCostLimit="-1" hidden="true">
+    <costType name="Auxiliary Detachment(s)" id="3e8e-05ee-be52-12d6" defaultCostLimit="-1" hidden="true">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <comment>Hidden from new list screen, but displays count</comment>
@@ -19663,6 +19888,7 @@ All Models in any of these Units have their Faction Trait replaced with &apos;Al
       <rules>
         <rule name="Master of Automata" id="eb57-ecb6-05e0-ddef" hidden="false" page="37" publicationId="e54c-7040-0f35-d85d">
           <description>&quot;This Special Rule allows a Praevian to be accompanied by a Unit of Battle-Automata.&quot;
+
 When a Model with this Special Rule is included in a Detachment, one additional Force Organization Slot is added to that Detachment. This Slot can only be filled with one Castellax Battle Maniple or Castellax Destructor Maniple Unit selected from Liber Mechanicum. When such a Unit is included in this way, its Cybernetica Trait is replaced with &apos;Bonded Automata&apos;, and this Unit can be included even thought it does not have the same Faction Trait as the other Units in that Detachment. In addition, a Model with this Special Rule may join a Friendly Unit that includes Models with the Automata Type. If a Model with this Special Rule joins a Unit with the Automata Type, the Leadership and Cool Characteristics of Models in that Unit are not reduced as a results of this, but may be modified by other rules as normal.</description>
         </rule>
       </rules>
@@ -19686,7 +19912,6 @@ When a Model with this Special Rule is included in a Detachment, one additional 
       <rules>
         <rule name="Lord of Automata" id="8e20-4195-d824-af90" hidden="false">
           <description>&quot;This Special Rule allows an Iron Father to be accompanied by a Unit of Battle-automata.&quot;
-
 
 When a Model with this Special Rule is included in a Detachment, one additional Support Force Organization Slot is added to that Detachment. This Slot can only be filled with one Castellax Battle-automata Maniple selected from Liber Mechanicum. When such a Unit is included in this way, its Cybernetica Trait is replaced with &apos;Bonded Automata&apos;, and this Unit can be included even though it does not have the same Faction Trait as the other Units in that Detachment. In addition, a Model with this Special Rule may join a Friendly Unit that includes Models with the Automata Type. If a Model with bthis Special Rule joins a Unit with the Automata Type, the Leadership and Cool Characteristics or Models in that unit are not reduced.</description>
         </rule>
@@ -19726,6 +19951,15 @@ When a Model with this Special Rule is included in a Detachment, one additional 
         </modifier>
       </modifiers>
       <comment>Ultramarines</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Legiones Thallaxes" hidden="false" id="3e37-6d4b-1198-b3fa">
+      <rules>
+        <rule name="Legiones Thallaxes" id="3763-8cab-f5b5-9bd7" hidden="false">
+          <description>&quot;This Special Rule allows Thallax Units to be selected as part of a Detachment that includes a Forge Lord.&quot;
+
+When a Model with this Special Rule is included in a Detachment, two additional Force Organisation Slots are added to that Detachment. These Slots can only be filled with Thallax Cohort Units selected from Liber Mechanicum. When such a Unit is included in this way, the Reductor Trait is replaced with ‘Bonded Reductor’ on all Models in the Unit, and the Aegis of Pain Special Rule is removed from all Models in the Unit. These Units can be included even though they do not have the same Faction Trait as the other Units in that Detachment.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>

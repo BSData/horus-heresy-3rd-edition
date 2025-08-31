@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="fcc7-4319-bb04-2c25" name="Wargear" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="21" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="fcc7-4319-bb04-2c25" name="Wargear" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="22" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Strato-vox" hidden="false" id="e3dd-d327-3f0b-265f">
       <profiles>
@@ -648,7 +648,7 @@ A Model that has breacher charges selected as its Weapon always has a Combat Ini
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Gorgon Terminator Armour" hidden="false" id="a2ba-c8fc-f381-7d22">
+    <selectionEntry type="upgrade" import="true" name="Gorgon Pattern Terminator Armour" hidden="false" id="a2ba-c8fc-f381-7d22">
       <infoLinks>
         <infoLink name="Feel No Pain (X)" id="c6ae-b054-234a-5c8d" hidden="false" type="rule" targetId="89b5-7320-db15-fd60">
           <modifiers>
@@ -683,6 +683,35 @@ A Model that has breacher charges selected as its Weapon always has a Combat Ini
           </modifiers>
         </infoLink>
         <infoLink name="Deep Strike" id="eeaf-068e-63a1-2cca" hidden="false" type="rule" targetId="0553-d06b-52b9-34db"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ætheric Juncture Splicer" hidden="false" id="61b1-747d-d563-d7e8">
+      <profiles>
+        <profile name="Ætheric Juncture Splicer" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="8491-b2cc-d716-3b23">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">A Unit which includes a Model with an ætheric juncture splicer can Deep Strike, but risks becoming Suppressed.</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">A Model with an ætheric juncture splicer has the Deep Strike Special Rule. While such a Model has joined a Unit in Reserves which only contains Models with the [Legiones Astartes] Trait, the Infantry Type and which do not have a version of the Bulky (X) Special Rule where the value of X is greater than 2, all Models in that Unit also gain the Deep Strike Special Rule. 
+
+
+Additionally, when a Unit which contains any Models with an ætheric juncture splicer suffers one or more Unsaved Wounds as a result of the Interceptor Advanced Reaction, that Unit immediately gains the Suppressed Tactical Status.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Proteus Pattern Storm Shield" hidden="false" id="ff9a-9e63-cf28-5d51">
+      <profiles>
+        <profile name="Proteus Pattern Storm Shield" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="3c85-2a9a-c541-d34b">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c"/>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">A Model with a Proteus pattern storm shield gains a 4+ Invulnerable Save. In addition it gains the Shield Trait.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="add" value="26c6-e05c-0f72-7852" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Shield" id="bfa0-52f3-d253-e39b" hidden="false" type="profile" targetId="1af7-07d5-7558-0b64"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -841,6 +870,22 @@ A Model that has breacher charges selected as its Weapon always has a Combat Ini
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Gorgon Pattern Terminator Armour" hidden="true" id="6466-90fc-51be-9aed" type="selectionEntry" targetId="a2ba-c8fc-f381-7d22">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="736e-3967-e72b-e3ac" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f048-bb24-2797-2401"/>
+          </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Surgical Augments" id="608c-d466-92d6-91ea" hidden="true">
@@ -887,6 +932,51 @@ A Model that has breacher charges selected as its Weapon always has a Combat Ini
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Terminator Armour" id="170b-d9c0-e9d6-b314" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Cataphractii" hidden="false" id="38a8-2683-c590-3c4b"/>
+        <selectionEntry type="upgrade" import="true" name="Tartaros" hidden="false" id="4041-105d-29a6-2c22">
+          <costs>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c10-67bb-9945-559c" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6eb6-4fa6-4bb5-bc0f" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Mount" id="9089-07e5-3653-84b6" hidden="false" defaultSelectionEntryId="4f20-9a87-8334-9f26">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Outrider" hidden="false" id="4f20-9a87-8334-9f26">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e48-62e1-6476-25df"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Scimitar Jetbike" hidden="false" id="81b1-1fec-a45c-27aa">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3084-522a-8981-60ea"/>
+          </constraints>
+          <modifiers>
+            <modifier type="add" value="c504-9dfa-35d3-c98f" field="category"/>
+          </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66dd-e7b5-5c36-b695"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f29-c2a1-faad-c4bd"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
