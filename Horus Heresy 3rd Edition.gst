@@ -18450,9 +18450,16 @@
         <forceEntryLink name="Auxiliary - Storm Battery" id="d970-aac1-4559-8540" hidden="true" targetId="d089-8cc7-96a7-903f" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Recon Demi-Company" id="039a-b6c4-4ef2-b686" hidden="true" targetId="38f7-2240-f8ee-6cce" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Iron Tercio" id="de8f-bbd0-46b9-9743" hidden="true" targetId="9a10-a2d9-5a87-a5a9" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Planetfall Speartip" id="f263-08d1-5547-8666" hidden="false" targetId="2e50-319d-ae62-a50c" type="forceEntry"/>
-        <forceEntryLink name="Mech - Logistical Benefits Detachment" id="1e0e-415c-5eca-b017" hidden="false" targetId="8c2c-1dac-5e49-d2e5" type="forceEntry" sortIndex="2"/>
-        <forceEntryLink name="Auxiliary - Dreadnought Talon" id="9d34-d787-9f85-f358" hidden="false" targetId="9ffc-1414-bcb2-ca4b" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Planetfall Speartip" id="f263-08d1-5547-8666" hidden="true" targetId="2e50-319d-ae62-a50c" type="forceEntry"/>
+        <forceEntryLink name="Mech - Logistical Benefits Detachment" id="1e0e-415c-5eca-b017" hidden="true" targetId="8c2c-1dac-5e49-d2e5" type="forceEntry" sortIndex="2"/>
+        <forceEntryLink name="Auxiliary - Dreadnought Talon" id="9d34-d787-9f85-f358" hidden="true" targetId="9ffc-1414-bcb2-ca4b" type="forceEntry"/>
+        <forceEntryLink name="Apex - Combat Retinue" id="5e4d-f169-7c0d-1a56" hidden="true" targetId="7203-426e-7a82-0b01" type="forceEntry"/>
+        <forceEntryLink name="Apex - Officer Cadre" id="9e9e-bf66-ebd3-1ebc" hidden="true" targetId="90b7-c0fa-a9e1-6765" type="forceEntry"/>
+        <forceEntryLink name="Apex - Army Vanguard" id="aa30-a438-f11c-74f2" hidden="true" targetId="0690-c05e-c301-f595" type="forceEntry"/>
+        <forceEntryLink name="Apex - The Hammer of Olympia" id="8190-9944-72c2-8ca1" hidden="true" targetId="1d3d-a6b8-94d8-443b" type="forceEntry"/>
+        <forceEntryLink name="Apex - Medusan Vanguard" id="d34e-10ce-826a-4f5e" hidden="true" targetId="7ff8-9e2c-e68a-573f" type="forceEntry"/>
+        <forceEntryLink name="Apex - Atramentar Hunt " id="77b8-89ca-6e92-12e4" hidden="true" targetId="dbbe-886f-3ce1-13c0" type="forceEntry"/>
+        <forceEntryLink name="Apex - Exalted Conclave" id="5054-c3a2-6e82-5245" hidden="true" targetId="c961-7007-0142-5d07" type="forceEntry"/>
       </forceEntryLinks>
     </forceEntry>
     <forceEntry name="Lord of War Detachment" id="b7a1-629f-9d60-c2a9" hidden="false" sortIndex="3">
