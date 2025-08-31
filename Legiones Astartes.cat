@@ -27615,9 +27615,9 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Tartaros Terminator" id="2798-e074-40c9-9310" page="67" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Tartaros Terminator" id="2798-e074-40c9-9310" page="67" publicationId="5469-14da-d0a1-6092" sortIndex="2">
           <profiles>
-            <profile id="9e88-1393-4b9f-bb9f" name="Tartaros Terminator" typeId="a76f-8e23-8c3e-166d">
+            <profile id="9e88-1393-4b9f-bb9f" name="Tartaros Terminator" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
@@ -27635,6 +27635,32 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -27645,21 +27671,45 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="8a53-1347-430e-8dfd"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Any Model in this Unit may have its combi-bolter exchanged for " id="4f77-0f70-43a3-a322">
+            <selectionEntryGroup name="May have its combi-bolter exchanged for " id="4f77-0f70-43a3-a322" defaultSelectionEntryId="642f-9063-4be5-bf9f" sortIndex="1">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="642f-9063-4be5-bf9f" name="Combi-bolter">
+                <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="642f-9063-4be5-bf9f" name="Combi-bolter" sortIndex="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac39-18c6-4280-848f"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" id="1182-856c-4fdd-a972" name="Volkite charger">
+                <entryLink hidden="false" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" id="1182-856c-4fdd-a972" name="Volkite charger" sortIndex="2">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f4b-52f2-4561-b8e4"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" id="0d3c-6eea-420e-9d2c" name="Legion Combi-weapons">
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" id="0d3c-6eea-420e-9d2c" name="Legion Combi-weapons" sortIndex="3" flatten="true">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7b7-c07b-4031-8f3a"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="4ed6-543e-43b7-8d08" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="4">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="239d-529c-48c5-a73a"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Plasma blaster" hidden="false" id="2e28-3047-408b-ab46" type="selectionEntry" targetId="3787-3dca-b6c9-f9e3" sortIndex="6">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8e7-992c-4903-b2c3"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Reaper autocannon" hidden="false" id="d4be-20e6-4f90-b0c6" type="selectionEntry" targetId="196d-a0ea-a851-d09e" sortIndex="5">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e414-5f3b-4062-9577"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -27668,7 +27718,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="234d-d20c-43a0-bd40"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit may have its power weapon exchanged for " id="7da1-3a39-4228-85e1">
+            <selectionEntryGroup name="May have its power weapon exchanged for " id="7da1-3a39-4228-85e1" sortIndex="2">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="8322-1eca-e855-2683" id="614b-bbcf-4063-973e" name="Chainfist">
                   <costs>
@@ -27678,71 +27728,25 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88b6-a4ea-470c-96bc"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="a0d4-eee2-0b8f-1ee3" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" sortIndex="1" flatten="true">
+                  <modifiers>
+                    <modifier type="set" value="807a-4734-959e-9286" field="defaultSelectionEntryId"/>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d14e-811b-4371-ac95"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d14e-811b-4371-ac95" automatic="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b761-77c9-4a37-9983"/>
-              </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Power weapon
-	 Checked under Power weapon</comment>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit may have its combi-bolter exchanged for one of the following:" id="3db2-61e1-42b9-b5a4">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" id="4ed6-543e-43b7-8d08" name="Heavy flamer">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="239d-529c-48c5-a73a"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="196d-a0ea-a851-d09e" id="d4be-20e6-4f90-b0c6" name="Reaper autocannon">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e414-5f3b-4062-9577"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="3787-3dca-b6c9-f9e3" id="2e28-3047-408b-ab46" name="Plasma blaster">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8e7-992c-4903-b2c3"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee33-eb9a-4f09-aa57"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="The Tartaros Terminator Sergeant in this Unit may have one grenade harness selected for it for +5 Points." id="8172-970c-418d-8790">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="a766-856c-52bd-d30a" id="17fa-e9ea-4847-8d8b" name="Grenade harness">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4277-a96e-46e1-aec9"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e006-b797-4e01-9aa0"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="a542-30a8-44df-9134" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in Any Model in this Unit may have its power weapon exchanged for</comment>
         </selectionEntry>
-        <selectionEntry type="model" name="Tartaros Terminator Sergeant" id="f4ec-7e4f-4faa-bc16" page="67" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Tartaros Terminator Sergeant" id="f4ec-7e4f-4faa-bc16" page="67" publicationId="5469-14da-d0a1-6092" sortIndex="1">
           <profiles>
-            <profile id="911c-6cab-4258-8715" name="Tartaros Terminator Sergeant" typeId="a76f-8e23-8c3e-166d">
+            <profile id="911c-6cab-4258-8715" name="Tartaros Terminator Sergeant" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
@@ -27760,6 +27764,44 @@ Could not find wargear in Any Model in this Unit may have its power weapon excha
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Sergeant)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Master Sergeant</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -27770,80 +27812,7 @@ Could not find wargear in Any Model in this Unit may have its power weapon excha
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e94-44bd-479d-98a2"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Any Model in this Unit may have its combi-bolter exchanged for " id="d965-24fb-4b07-b91c">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="1fc3-7f86-414d-8d45" name="Combi-bolter">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7343-6bd7-4814-9675"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" id="87c7-7dea-4f4c-859c" name="Volkite charger">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1565-43c8-4508-bebb"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" id="d8ad-5735-4cfc-90ed" name="Legion Combi-weapons">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79af-8b6d-4499-ad73"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8af8-04fb-484a-b632"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bcc0-d4a5-4f7f-baf1"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit may have its power weapon exchanged for " id="04e1-d676-44e5-b827">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="8322-1eca-e855-2683" id="422b-8021-461e-8ea0" name="Chainfist">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45fa-5d53-4d01-9a32"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="878c-a37d-42f2-9fea"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8304-40f6-470b-a884"/>
-              </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Power weapon
-	 Checked under Power weapon</comment>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit may have its combi-bolter exchanged for one of the following:" id="0e91-e546-473b-a2f5">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" id="8d0a-b01a-46eb-a98f" name="Heavy flamer">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33c3-75d4-49bc-a99f"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="196d-a0ea-a851-d09e" id="6e83-e016-4411-ad6e" name="Reaper autocannon">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42da-22ed-425a-b483"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="3787-3dca-b6c9-f9e3" id="4488-c0bc-425a-b1a9" name="Plasma blaster">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc81-edf2-499f-80a9"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef75-4a4a-4515-9473"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="The Tartaros Terminator Sergeant in this Unit may have one grenade harness selected for it for +5 Points." id="5523-ffcb-45fd-a042">
+            <selectionEntryGroup name="The Tartaros Terminator Sergeant in this Unit may have one grenade harness selected for it for +5 Points." id="5523-ffcb-45fd-a042" sortIndex="3">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="a766-856c-52bd-d30a" id="f720-9764-4dca-b7ef" name="Grenade harness">
                   <costs>
@@ -27858,29 +27827,86 @@ Could not find wargear Power weapon
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f40-20cc-42b2-b7e8"/>
               </constraints>
             </selectionEntryGroup>
+            <selectionEntryGroup name="May have its combi-bolter exchanged for " id="da47-c41b-4c64-182d" hidden="false" defaultSelectionEntryId="642f-9063-4be5-bf9f" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Combi-bolter" hidden="false" id="ce07-b034-8727-939a" type="selectionEntry" targetId="042d-9e60-db9e-c147" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4536-3179-f99b-373c"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Volkite charger" hidden="false" id="fa12-d8c0-5ede-343e" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0f5-5783-02bb-75b2"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="44c0-8c21-e6ce-cf91" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" sortIndex="3" flatten="true">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="726b-fd7c-5a85-dcf9"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="6315-5189-c68d-54a7" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="4">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37e8-a49c-c317-f88d"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Plasma blaster" hidden="false" id="8638-5482-ca51-5e27" type="selectionEntry" targetId="3787-3dca-b6c9-f9e3" sortIndex="6">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92e0-0293-56ee-7685"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Reaper autocannon" hidden="false" id="caa5-8a15-55d6-6b31" type="selectionEntry" targetId="196d-a0ea-a851-d09e" sortIndex="5">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="672e-0b97-9f53-dad7"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d976-fdd7-a087-0f44"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f407-6c24-586c-b44f"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="May have its power weapon exchanged for " id="80cb-3d71-90cd-649e" hidden="false" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Chainfist" hidden="false" id="99f8-9046-a817-b540" type="selectionEntry" targetId="8322-1eca-e855-2683">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fa5-b3f7-62ae-6a40"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="6fb3-cfa1-fa12-eda1" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" sortIndex="1" flatten="true">
+                  <modifiers>
+                    <modifier type="set" value="807a-4734-959e-9286" field="defaultSelectionEntryId"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Legion Terminator Melee Weapons" hidden="false" id="174e-eefb-480e-837b" type="selectionEntryGroup" targetId="0523-46e6-6df1-a4c0" flatten="true">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3efb-667c-40d5-9d7a"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cae4-105f-a0c4-010d" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ab3-2fd5-65f4-7489"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="f8f0-9753-4c38-8aa3" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="e47b-d87a-46de-96ad" primary="false" name="Sergeant Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in Any Model in this Unit may have its power weapon exchanged for</comment>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="The Terminator Sergeant in this Unit may have its power weapon exchanged for " id="c402-7324-4896-83d6">
-          <entryLinks>
-            <entryLink hidden="false" type="selectionEntryGroup" targetId="0523-46e6-6df1-a4c0" id="174e-eefb-480e-837b" name="Legion Terminator Melee Weapons">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3efb-667c-40d5-9d7a"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a2d4-6bdb-40e7-9f1e"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="7058-c37b-4c17-8666">
           <modifiers>
@@ -27893,11 +27919,21 @@ Could not find wargear in Any Model in this Unit may have its power weapon excha
             <modifier type="set" field="name" value="Vanguard (3)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="[Allegiance]" id="30ab-96ed-e8e4-588e" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="04ae-db92-8ea5-9067" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
-      <comment>warning: !BSC 20250828-1757
-Exchange was not applied on The Terminator Sergeant in this Unit may have its power weapon exchanged for 
-Combi-bolter is in two option lists for Tartaros Terminator, you will need to combine them by hand.
-Combi-bolter is in two option lists for Tartaros Terminator Sergeant, you will need to combine them by hand.</comment>
+      <categoryLinks>
+        <categoryLink targetId="647c-faca-3c98-c203" id="707c-331d-f682-f132" primary="false" name="Free Power Weapon"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="931b-a56f-fb99-3b3b" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="0b3a-efb4-a877-187f" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="54a3-c9f1-3a78-085a" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Cult Arcana" hidden="false" id="7a93-bb0b-0989-f296" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Indomitus Terminator Squad" type="unit" id="cca5-a33d-466a-a3f4" sortIndex="124" page="68" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -30851,6 +30887,11 @@ Could not find rule: Auxiliary Vehicle Bays</comment>
     <entryLink import="true" name="Veteran Heavy Support Squad" hidden="false" id="9319-86bf-c0ed-12d3" type="selectionEntry" targetId="1900-f550-46e0-bc78" sortIndex="122">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="64cb-dea5-5fdb-7c70" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Tartaros Terminator Siege Squad" hidden="false" id="e861-5ef7-7be7-f250" type="selectionEntry" targetId="dace-6eff-4491-b991" sortIndex="123">
+      <categoryLinks>
+        <categoryLink targetId="3235-bd79-e9b1-60fa" id="2658-5a02-9257-9549" primary="true" name="Heavy Assault"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
