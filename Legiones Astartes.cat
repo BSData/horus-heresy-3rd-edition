@@ -27377,9 +27377,9 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="35"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Support Veteran" id="9723-c5f2-4244-943d" page="66" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Support Veteran" id="9723-c5f2-4244-943d" page="66" publicationId="5469-14da-d0a1-6092" sortIndex="2">
           <profiles>
-            <profile id="ad43-4ee4-4f97-b3ec" name="Support Veteran" typeId="a76f-8e23-8c3e-166d">
+            <profile id="ad43-4ee4-4f97-b3ec" name="Support Veteran" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
@@ -27397,6 +27397,32 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -27413,18 +27439,6 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6412-6106-437f-bea6"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="4026-9e05-47bd-b049" name="Frag grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d217-bd68-493c-96bd"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4837-168c-4d10-9d40"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="b5f8-decf-4ce1-8015" name="Krak grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="94b5-f14a-4732-846f"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="683d-f14e-4dc7-9eec"/>
-              </constraints>
-            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="One Support Veteran in this Unit may have one vexilla selected for it for +10 Points." id="e109-eed7-4360-897a">
@@ -27439,7 +27453,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="863b-40de-402b-bb79"/>
+                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="863b-40de-402b-bb79"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -27447,9 +27461,9 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <categoryLink targetId="594d-fa82-13cb-a345" id="9bca-90b4-403b-98a7" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
         </selectionEntry>
-        <selectionEntry type="model" name="Veteran Support Sergeant" id="da8e-8b85-4b60-9a21" page="66" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Veteran Support Sergeant" id="da8e-8b85-4b60-9a21" page="66" publicationId="5469-14da-d0a1-6092" sortIndex="1">
           <profiles>
-            <profile id="9030-5556-4f94-a3be" name="Veteran Support Sergeant" typeId="a76f-8e23-8c3e-166d">
+            <profile id="9030-5556-4f94-a3be" name="Veteran Support Sergeant" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
@@ -27467,6 +27481,44 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Sergeant)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Master Sergeant</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -27483,23 +27535,11 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9880-3349-4bfc-bbf4"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="8e44-2141-4248-beb6" name="Frag grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c0d-58f9-4085-9773"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f74-e5aa-42fd-ba35"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="51fd-bc4b-437a-9a54" name="Krak grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ed2-8f17-4cdf-89df"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87af-2db5-4e4f-8dc4"/>
-              </constraints>
-            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="The Veteran Support Sergeant in this Unit may have one item from the Legion Sergeant Melee Weapons list selected for it." id="a8ae-4213-4595-9a0a">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" id="f0b7-c20b-481e-8b3b" name="Legion Sergeant Melee Weapons">
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" id="f0b7-c20b-481e-8b3b" name="Legion Sergeant Melee Weapons" flatten="true">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0150-ec04-4125-af28"/>
                   </constraints>
@@ -27517,19 +27557,25 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Every Model in this Unit must have one of the following selected for it:" id="75d4-aa74-436c-ac96">
+        <selectionEntryGroup name="Every Model in this Unit must have one of the following selected for it:" id="75d4-aa74-436c-ac96" sortIndex="3">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c67e-9636-4af7-a8b0"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ce8-8e87-fdb3-75f9"/>
           </constraints>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear One item from the Legion Heavy Weapons list
-	 Checked under One item from the Legion Heavy Weapons list
-Could not find wargear One item from the Legion Special Weapons list
-	 Checked under One item from the Legion Special Weapons list
-Could not find wargear One heavy disintegrator
-	 Checked under One heavy disintegrator
-Could not find wargear One disintegrator blaster
-	 Checked under One disintegrator blaster</comment>
+          <entryLinks>
+            <entryLink import="true" name="Legion Heavy Weapons" hidden="false" id="bb79-6e5f-6541-98ea" type="selectionEntryGroup" targetId="9f99-7e2a-4899-4066" flatten="true" sortIndex="1"/>
+            <entryLink import="true" name="Legion Special Weapons List" hidden="false" id="36c5-e7bd-5643-52b7" type="selectionEntryGroup" targetId="8e2d-acd9-be67-36f2" flatten="true" sortIndex="2"/>
+            <entryLink import="true" name="Heavy disintegrator" hidden="false" id="d540-f9de-d50f-c3f9" type="selectionEntry" targetId="5359-13c1-29ff-9d3c" sortIndex="3">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Disintegrator blaster" hidden="false" id="2f3a-528a-fecd-c07c" type="selectionEntry" targetId="0c29-e0e1-525b-4182" sortIndex="4">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
@@ -27539,14 +27585,30 @@ Could not find wargear One disintegrator blaster
             <modifier type="set" field="name" value="Support Unit (1)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="[Allegiance]" id="c78c-5bb2-0c3a-2f59" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="e915-9c24-1abc-6781" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
-      <comment>warning: !BSC 20250828-1757
-Could not find wargear in Every Model in this Unit must have one of the following selected for it:
-Could not find wargear in Every Model in this Unit must have one of the following selected for it:
-Could not find wargear in Every Model in this Unit must have one of the following selected for it:
-Could not find wargear in Every Model in this Unit must have one of the following selected for it:
-Shared on model level not yet implemented for One Support Veteran in this Unit may have one vexilla selected for it for +10 Points.
-Could not process option &apos;Up to two Support Veterans in this Unit may each have one item from the Legion Equipment list selected for them.&apos;.</comment>
+      <entryLinks>
+        <entryLink import="true" name="Frag grenades" hidden="false" id="4026-9e05-47bd-b049" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d217-bd68-493c-96bd"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4837-168c-4d10-9d40"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak grenades" hidden="false" id="b5f8-decf-4ce1-8015" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="94b5-f14a-4732-846f"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="683d-f14e-4dc7-9eec"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cult Arcana" hidden="false" id="0451-41f0-0bdf-eecc" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="0c7e-0a94-b44c-e25c" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="3e97-330d-b5d4-481f" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="2b85-9d63-597e-8588" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Tartaros Terminator Siege Squad" type="unit" id="dace-6eff-4491-b991" sortIndex="123" page="67" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -30784,6 +30846,11 @@ Could not find rule: Auxiliary Vehicle Bays</comment>
     <entryLink import="true" name="Veteran Breacher Squad" hidden="false" id="3a89-3bf3-d3d0-e7a2" type="selectionEntry" targetId="886c-5f0a-404b-8bfc" sortIndex="121">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="2295-cc21-9103-88a5" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Veteran Heavy Support Squad" hidden="false" id="9319-86bf-c0ed-12d3" type="selectionEntry" targetId="1900-f550-46e0-bc78" sortIndex="122">
+      <categoryLinks>
+        <categoryLink targetId="5d5e-958f-e388-50b5" id="64cb-dea5-5fdb-7c70" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
