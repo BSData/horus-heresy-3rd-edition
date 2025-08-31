@@ -26277,9 +26277,9 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="80"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Scimitar Chosen" id="fd3b-18b0-43c0-9a0d" page="63" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Scimitar Chosen" id="fd3b-18b0-43c0-9a0d" page="63" publicationId="5469-14da-d0a1-6092" sortIndex="2">
           <profiles>
-            <profile id="4622-ce47-49eb-809d" name="Scimitar Chosen" typeId="a76f-8e23-8c3e-166d">
+            <profile id="4622-ce47-49eb-809d" name="Scimitar Chosen" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">16</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
@@ -26297,6 +26297,32 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Cavalry (Antigrav)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -26306,22 +26332,8 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7ca4-21ef-4509-b078"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="cccf-0f43-43ca-bb9b"/>
           </constraints>
-          <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="fe8f-9cb7-4ab6-87dd" name="Frag grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0814-96c4-4b9d-82c2"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb56-96ed-4f87-a5b2"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="b94c-3b2a-4978-a853" name="Krak grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b22-12ed-4318-b314"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc52-7131-44a5-88b1"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Any Model in this Unit may have its chainsword exchanged for " id="f1e3-e57c-44cb-b7a1">
+            <selectionEntryGroup name="May have its chainsword exchanged for " id="f1e3-e57c-44cb-b7a1" sortIndex="2">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="be80-6681-482d-83b0" name="Chainsword">
                   <constraints>
@@ -26339,7 +26351,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94b4-c9e6-4e90-861e"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit may have its bolt pistol exchanged for " id="4888-7cca-4aef-9ab7">
+            <selectionEntryGroup name="May have its bolt pistol exchanged for " id="4888-7cca-4aef-9ab7" sortIndex="1">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="99a3-ac79-44b7-bad2" name="Bolt pistol">
                   <constraints>
@@ -26365,22 +26377,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0d0-95f9-450c-8763"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="The Scimitar Chosen Champion may have its bolt pistol exchanged for " id="90b7-940a-4502-8153">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="32d1-2c70-882f-9467" id="929d-e59e-4a4c-a247" name="Disintegrator pistol">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c435-65a6-4a82-8142"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08c6-5333-43d0-97c2"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit may have its heavy bolter exchanged for one of the following:" id="baec-91ee-458d-93ea">
+            <selectionEntryGroup name="May have its heavy bolter exchanged for one of the following:" id="baec-91ee-458d-93ea" sortIndex="3" defaultSelectionEntryId="2dba-2273-4436-9cd8">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="bc40-b14a-978e-0232" id="2dba-2273-4436-9cd8" name="Heavy bolter">
                   <constraints>
@@ -26414,6 +26411,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c10c-af2a-4759-8ab9"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0daa-cc78-3144-6892"/>
               </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="One Scimitar Chosen in this Unit may have one Legion standard selected for it for +20 Points." id="5b6b-80ca-40da-9108">
@@ -26428,7 +26426,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eaef-006b-4cb8-b5de"/>
+                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="eaef-006b-4cb8-b5de"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -26437,9 +26435,9 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="e50c-a8a4-4c63-915b" primary="false" name="Antigrav Model Sub-Type"/>
           </categoryLinks>
         </selectionEntry>
-        <selectionEntry type="model" name="Scimitar Chosen Champion" id="7775-9f85-4474-ad0e" page="63" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Scimitar Chosen Champion" id="7775-9f85-4474-ad0e" page="63" publicationId="5469-14da-d0a1-6092" sortIndex="1">
           <profiles>
-            <profile id="a3b5-0eb6-49e4-a56e" name="Scimitar Chosen Champion" typeId="a76f-8e23-8c3e-166d">
+            <profile id="a3b5-0eb6-49e4-a56e" name="Scimitar Chosen Champion" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">16</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
@@ -26457,6 +26455,43 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Cavalry (Champion, Antigrav)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="2" field="02ad-ebe6-86e7-9fd6"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Master Sergeant - Existing Champion</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -26466,29 +26501,15 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="818a-5a28-4f6e-8783"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f953-8c3f-4b51-a1f2"/>
           </constraints>
-          <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="fbbc-ee20-4a2f-b5a7" name="Frag grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f36e-de97-404c-955b"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e635-61cf-46e6-918c"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="d776-e5cb-4afe-82aa" name="Krak grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a94a-9f4b-4860-acec"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05ba-67f5-4cd7-ad5a"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Any Model in this Unit may have its chainsword exchanged for " id="2260-9432-4e90-945f">
+            <selectionEntryGroup name="May have its chainsword exchanged for " id="2260-9432-4e90-945f" sortIndex="2">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="4eed-a7c7-42ec-a29b" name="Chainsword">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dee-88bc-4b97-844d"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" id="9425-08a8-49ae-899b" name="Legion Sergeant Melee Weapons">
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" id="9425-08a8-49ae-899b" name="Legion Sergeant Melee Weapons" flatten="false">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc2f-bae7-4a40-8d1a"/>
                   </constraints>
@@ -26499,14 +26520,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b53-07de-4778-8d2c"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit may have its bolt pistol exchanged for " id="67ae-f268-46f4-b764">
+            <selectionEntryGroup name="May have its bolt pistol exchanged for " id="67ae-f268-46f4-b764" sortIndex="1" defaultSelectionEntryId="da05-296d-4afe-b458">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="da05-296d-4afe-b458" name="Bolt pistol">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="caaa-6a3c-4ba8-acd3"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" id="612d-9078-4626-a6a2" name="Legion Pistols">
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" id="612d-9078-4626-a6a2" name="Legion Pistols" flatten="false">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14f9-0c33-4f27-a954"/>
                   </constraints>
@@ -26519,15 +26540,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a79-f34e-474e-8b7a"/>
                   </constraints>
                 </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="056c-932d-4a55-b6b1"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="630e-471e-43b7-b4f9"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="The Scimitar Chosen Champion may have its bolt pistol exchanged for " id="a175-2abe-4c9d-8a02">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="32d1-2c70-882f-9467" id="fcc6-57a0-4731-bf67" name="Disintegrator pistol">
+                <entryLink import="true" name="Disintegrator pistol" hidden="false" id="fcc6-57a0-4731-bf67" type="selectionEntry" targetId="32d1-2c70-882f-9467">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
@@ -26537,17 +26550,18 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc94-da07-4f82-9516"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="056c-932d-4a55-b6b1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="630e-471e-43b7-b4f9"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit may have its heavy bolter exchanged for one of the following:" id="0ddd-68c8-47cf-84fd">
+            <selectionEntryGroup name="May have its heavy bolter exchanged for one of the following:" id="0ddd-68c8-47cf-84fd" defaultSelectionEntryId="1e60-bfc1-4461-892a" sortIndex="3">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="bc40-b14a-978e-0232" id="1e60-bfc1-4461-892a" name="Heavy bolter">
+                <entryLink hidden="false" type="selectionEntry" targetId="bc40-b14a-978e-0232" id="1e60-bfc1-4461-892a" name="Heavy bolter" sortIndex="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b06-744d-4767-a50e"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="fcf0-9c1b-d51e-6bc7" id="76dd-1ba5-466c-8009" name="Volkite culverin">
+                <entryLink hidden="false" type="selectionEntry" targetId="fcf0-9c1b-d51e-6bc7" id="76dd-1ba5-466c-8009" name="Volkite culverin" sortIndex="2">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
@@ -26555,7 +26569,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac1b-91a9-4ab8-924c"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="f8b8-96c8-ba31-faf8" id="e9da-7e16-463f-a18a" name="Plasma cannon">
+                <entryLink hidden="false" type="selectionEntry" targetId="f8b8-96c8-ba31-faf8" id="e9da-7e16-463f-a18a" name="Plasma cannon" sortIndex="3">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
@@ -26563,7 +26577,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b851-1025-4ece-9d82"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="0135-12f0-d86f-ced9" id="62e3-3f2b-4cbb-8631" name="Multi-melta">
+                <entryLink hidden="false" type="selectionEntry" targetId="0135-12f0-d86f-ced9" id="62e3-3f2b-4cbb-8631" name="Multi-melta" sortIndex="4">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
                   </costs>
@@ -26574,6 +26588,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad64-800f-4f4d-b5d3"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f5c-35da-9f5e-78f9"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -26591,12 +26606,30 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </modifiers>
         </infoLink>
         <infoLink name="Deep Strike" hidden="false" type="rule" targetId="0553-d06b-52b9-34db" id="5dae-3fa3-41f7-9ad3"/>
+        <infoLink name="[Allegiance]" id="2c02-b0d4-4c37-c42b" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="1750-439f-fa94-0230" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
-      <comment>warning: !BSC 20250828-1757
-Bolt pistol is in two option lists for Scimitar Chosen, you will need to combine them by hand.
-Bolt pistol is in two option lists for Scimitar Chosen Champion, you will need to combine them by hand.
-Exchange was not applied on The Scimitar Chosen Champion may have its bolt pistol exchanged for 
-Shared on model level not yet implemented for One Scimitar Chosen in this Unit may have one Legion standard selected for it for +20 Points.</comment>
+      <entryLinks>
+        <entryLink import="true" name="Frag grenades" hidden="false" id="fe8f-9cb7-4ab6-87dd" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0814-96c4-4b9d-82c2"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb56-96ed-4f87-a5b2"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak grenades" hidden="false" id="b94c-3b2a-4978-a853" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b22-12ed-4318-b314"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc52-7131-44a5-88b1"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cult Arcana" hidden="false" id="1b2e-0a37-59b8-306f" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="154a-c7a3-36ce-e56b" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="1563-5865-2a92-b170" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="04fd-00fb-5d52-d270" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Outrider Praetorian Command Squad" type="unit" id="86dd-250d-494a-b8e4" sortIndex="120" page="64" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -30640,6 +30673,11 @@ Could not find rule: Auxiliary Vehicle Bays</comment>
     <entryLink import="true" name="Armistos" hidden="false" id="6e02-fdff-abe5-cd30" type="selectionEntry" targetId="5d97-c745-4b49-b2f2" sortIndex="118">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="aec3-88ba-774e-72ee" primary="true" name="Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Praetorian Command Squad On Scimitar Jetbikes" hidden="false" id="dc41-0c3b-02c3-65b4" type="selectionEntry" targetId="f28c-5af9-4645-b438" sortIndex="119">
+      <categoryLinks>
+        <categoryLink targetId="a38e-50ff-310f-f19e" id="e128-615c-1b23-9da1" primary="true" name="Retinue"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
