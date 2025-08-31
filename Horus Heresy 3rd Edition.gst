@@ -18452,7 +18452,7 @@
         <forceEntryLink name="Auxiliary - Iron Tercio" id="de8f-bbd0-46b9-9743" hidden="true" targetId="9a10-a2d9-5a87-a5a9" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Planetfall Speartip" id="f263-08d1-5547-8666" hidden="false" targetId="2e50-319d-ae62-a50c" type="forceEntry"/>
         <forceEntryLink name="Mech - Logistical Benefits Detachment" id="1e0e-415c-5eca-b017" hidden="false" targetId="8c2c-1dac-5e49-d2e5" type="forceEntry" sortIndex="2"/>
-        <forceEntryLink name="Auxilliary - Dreadnought Talon" id="9d34-d787-9f85-f358" hidden="false" targetId="9ffc-1414-bcb2-ca4b" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Dreadnought Talon" id="9d34-d787-9f85-f358" hidden="false" targetId="9ffc-1414-bcb2-ca4b" type="forceEntry"/>
       </forceEntryLinks>
     </forceEntry>
     <forceEntry name="Lord of War Detachment" id="b7a1-629f-9d60-c2a9" hidden="false" sortIndex="3">
