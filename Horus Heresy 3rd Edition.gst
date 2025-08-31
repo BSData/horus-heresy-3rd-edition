@@ -510,6 +510,7 @@
     <categoryEntry name="War Engine - Contemptor Dreadnoughts Only" id="f817-34d5-598c-d196" hidden="false"/>
     <categoryEntry name="Mortificator" id="4e4f-ab55-68ef-ad63" hidden="false"/>
     <categoryEntry name="Siege Breaker" id="25ad-fbd9-d161-8fd1" hidden="false"/>
+    <categoryEntry name="Special Assignment" id="12d9-f8dc-4db6-0880" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -1126,7 +1127,7 @@
             </categoryLink>
             <categoryLink name="Clade Operative" hidden="false" id="b728-3cbe-7716-d0ef" targetId="335a-5a90-3b7c-c034"/>
             <categoryLink name="Legiones Thallaxes" hidden="false" id="ac75-3bc0-f94c-7fac" targetId="6f78-9e60-4884-63d2"/>
-            <categoryLink name="Recon - Land Raider Explorator Only" hidden="false" id="cca3-27cf-d951-b2a6" targetId="1bc1-e6ff-d62e-398e" type="categoryEntry">
+            <categoryLink name="Recon - Land Raider Explorator Only" hidden="false" id="cca3-27cf-d951-b2a6" targetId="1bc1-e6ff-d62e-398e">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d1f3-d313-de87-02c3" automatic="true"/>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7373-60ae-f5fd-0a60"/>
@@ -1178,7 +1179,7 @@
             <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="5611-db49-9e64-44c6-min" includeChildSelections="true"/>
             <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="5611-db49-9e64-44c6-max" includeChildSelections="true"/>
             <constraint type="min" value="1" field="forces" scope="parent" shared="true" id="8613-3ef7-c5b4-4ccb" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="forces" scope="parent" shared="true" id="5df5-5821-ea4c-d0e1" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="5df5-5821-ea4c-d0e1" includeChildSelections="false"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -19454,14 +19455,22 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d9a6-9b5f-b18a-4d63" shared="true" includeChildSelections="false"/>
                     <condition type="equalTo" value="0" field="selections" scope="unit" childId="b980-187b-2b17-d635" shared="true" includeChildSelections="true"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d9a6-9b5f-b18a-4d63" shared="true" includeChildSelections="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="12d9-f8dc-4db6-0880" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
             <modifier type="remove" value="d9a6-9b5f-b18a-4d63" field="category" scope="unit"/>
             <modifier type="set-primary" value="6dbf-654a-f06f-2d69" field="category" scope="unit"/>
+            <modifier type="add" value="12d9-f8dc-4db6-0880" field="category"/>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Master Sergeant" hidden="false" id="2c90-1d52-7075-59d3" sortIndex="1">
