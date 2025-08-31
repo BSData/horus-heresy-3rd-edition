@@ -828,7 +828,7 @@
               </constraints>
             </categoryLink>
             <categoryLink name="Clade Operative" hidden="false" id="b728-3cbe-7716-d0ef" targetId="335a-5a90-3b7c-c034"/>
-            <categoryLink name="Legiones Thallaxes" hidden="false" id="ac75-3bc0-f94c-7fac" targetId="6f78-9e60-4884-63d2" type="categoryEntry"/>
+            <categoryLink name="Legiones Thallaxes" hidden="false" id="ac75-3bc0-f94c-7fac" targetId="6f78-9e60-4884-63d2"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="5611-db49-9e64-44c6-min" includeChildSelections="true"/>
@@ -17612,14 +17612,14 @@
             <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="5df5-5821-ea4c-d0e2" includeChildSelections="false"/>
           </constraints>
         </forceEntry>
-        <forceEntry name="Auxilliary - Dreadnought Talon" id="9ffc-1414-bcb2-ca4b" hidden="true" sortIndex="23">
+        <forceEntry name="Auxiliary - Dreadnought Talon" id="9ffc-1414-bcb2-ca4b" hidden="true" sortIndex="23">
           <categoryLinks>
             <categoryLink name="Prime War-engine" hidden="false" id="23ee-69b7-709f-aee9" targetId="9699-67c9-2c0b-e64b">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3910-b600-eda2-36b8" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="War Engine - Contemptor Dreadnoughts Only" hidden="false" id="d306-f087-fb59-da87" targetId="f817-34d5-598c-d196" type="categoryEntry">
+            <categoryLink name="War Engine - Contemptor Dreadnoughts Only" hidden="false" id="d306-f087-fb59-da87" targetId="f817-34d5-598c-d196">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d4b3-6409-2ea4-d461"/>
               </constraints>
@@ -18389,6 +18389,16 @@
             <repeat value="1" repeats="1" field="selections" scope="force" childId="ff44-f49f-732b-c3a7" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
+        <modifier type="increment" value="1" field="edd7-83f8-6c5d-15ba">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="5034-24c8-3d4c-9013" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" value="1" field="4823-b27b-f750-5a63">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="5034-24c8-3d4c-9013" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="0" field="3e8e-05ee-be52-12d6" scope="self" shared="false" id="4823-b27b-f750-5a63" includeChildSelections="true" includeChildForces="true"/>
@@ -18442,6 +18452,7 @@
         <forceEntryLink name="Auxiliary - Iron Tercio" id="de8f-bbd0-46b9-9743" hidden="true" targetId="9a10-a2d9-5a87-a5a9" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Planetfall Speartip" id="f263-08d1-5547-8666" hidden="false" targetId="2e50-319d-ae62-a50c" type="forceEntry"/>
         <forceEntryLink name="Mech - Logistical Benefits Detachment" id="1e0e-415c-5eca-b017" hidden="false" targetId="8c2c-1dac-5e49-d2e5" type="forceEntry" sortIndex="2"/>
+        <forceEntryLink name="Auxilliary - Dreadnought Talon" id="9d34-d787-9f85-f358" hidden="false" targetId="9ffc-1414-bcb2-ca4b" type="forceEntry"/>
       </forceEntryLinks>
     </forceEntry>
     <forceEntry name="Lord of War Detachment" id="b7a1-629f-9d60-c2a9" hidden="false" sortIndex="3">
