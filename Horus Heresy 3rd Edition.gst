@@ -17830,7 +17830,7 @@
         </modifier>
         <modifier type="increment" value="1" field="22e2-3454-8828-04e6">
           <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="roster" childId="8a97-1585-93e7-c561" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="8a97-1585-93e7-c561" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
         <modifier type="increment" value="1" field="0ab6-91a0-792e-4068">
@@ -17840,12 +17840,12 @@
         </modifier>
         <modifier type="increment" value="1" field="22e2-3454-8828-04e6">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="5034-24c8-3d4c-9013" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5034-24c8-3d4c-9013" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
         <modifier type="decrement" value="1" field="0ab6-91a0-792e-4068">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="5034-24c8-3d4c-9013" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5034-24c8-3d4c-9013" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -18376,7 +18376,7 @@
         </modifier>
         <modifier type="increment" value="1" field="edd7-83f8-6c5d-15ba">
           <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="roster" childId="8a97-1585-93e7-c561" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="8a97-1585-93e7-c561" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
         <modifier type="increment" value="1" field="3fef-ac67-de89-249f">
@@ -18391,12 +18391,12 @@
         </modifier>
         <modifier type="increment" value="1" field="edd7-83f8-6c5d-15ba">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="5034-24c8-3d4c-9013" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5034-24c8-3d4c-9013" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
         <modifier type="decrement" value="1" field="4823-b27b-f750-5a63">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="5034-24c8-3d4c-9013" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="5034-24c8-3d4c-9013" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
