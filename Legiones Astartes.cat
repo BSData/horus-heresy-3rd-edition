@@ -27940,9 +27940,9 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="40"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Indomitus Terminator" id="135d-352a-4d89-8f95" page="68" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Indomitus Terminator" id="135d-352a-4d89-8f95" page="68" publicationId="5469-14da-d0a1-6092" sortIndex="2">
           <profiles>
-            <profile id="ec09-1ff2-4440-82bd" name="Indomitus Terminator" typeId="a76f-8e23-8c3e-166d">
+            <profile id="ec09-1ff2-4440-82bd" name="Indomitus Terminator" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">6</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
@@ -27960,6 +27960,32 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Heavy)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -27970,104 +27996,278 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="ec48-1060-4b93-8e64"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Any Model in this Unit may have its combi-bolter exchanged for " id="379d-7ded-4868-a648">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="55ab-92ed-49bd-baf7" name="Combi-bolter">
+            <selectionEntryGroup name="Options" id="6ecf-c749-0ee7-eb9e" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="May have its combi-bolter exchanged for " id="61fa-d2df-cf92-0df0" hidden="false" sortIndex="1" defaultSelectionEntryId="433b-4029-4c05-bdc4">
+                  <entryLinks>
+                    <entryLink import="true" name="Combi-bolter" hidden="false" id="ccac-fb7f-73ac-b635" type="selectionEntry" targetId="042d-9e60-db9e-c147" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7a6-c4e0-b1e6-b0da"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="3bf6-4c4d-bead-22cd" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" flatten="true" sortIndex="3">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f0c-f835-4119-e75c"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Proteus Pattern Storm Shield" hidden="false" id="2fc1-6da4-84b4-21bd" type="selectionEntry" targetId="ff9a-9e63-cf28-5d51" sortIndex="2">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0482-23c7-429c-875e"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6cf3-832d-5946-dc10" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e350-c281-57e6-8cce" automatic="true"/>
                   </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" id="6a38-8e50-450d-bce5" name="Legion Combi-weapons">
+                  <modifiers>
+                    <modifier type="set" value="0" field="6cf3-832d-5946-dc10">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="e350-c281-57e6-8cce">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="For every five Models in this Unit, one Indomitus Terminator in this Unit may have its combi-bolter exchanged for one of the following:" id="3137-98c9-48af-b89f" hidden="false" sortIndex="4">
+                      <entryLinks>
+                        <entryLink import="true" name="Heavy flamer" hidden="false" id="b6fb-d4de-49ed-b56a" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86">
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                          </costs>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a26-6171-471d-b5cc"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Proteus Assault Cannon" hidden="false" id="db17-24ab-1df0-da9f" type="selectionEntry" targetId="dfbb-3165-fdc7-546d">
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                          </costs>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d25c-dbaa-a3b0-8a7e"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="8046-4974-470c-9fdb"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="8046-4974-470c-9fdb">
+                          <repeats>
+                            <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="May have its power fist exchanged for one of the following:" id="4be8-4edc-bc09-efb9" hidden="false" sortIndex="2" defaultSelectionEntryId="593d-8020-a527-e22e">
+                  <entryLinks>
+                    <entryLink import="true" name="Chainfist" hidden="false" id="d81e-44ae-373f-cc75" type="selectionEntry" targetId="8322-1eca-e855-2683" sortIndex="5">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a996-2cb2-0a40-9a07"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Thunder hammer" hidden="false" id="85ce-bba1-0793-9561" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="6">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c007-61c2-bd4d-751f"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Power fist" hidden="false" id="593d-8020-a527-e22e" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="1"/>
+                    <entryLink import="true" name="Solarite Power Gauntlet" hidden="true" id="0493-300d-3b46-2fdb" type="selectionEntry" targetId="ddcb-01e9-18af-c8f6" sortIndex="3">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d186-cffc-0950-f632" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>IF</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Forge-crafted power fist" hidden="true" id="b628-cf15-51fb-190f" type="selectionEntry" targetId="8146-abba-1612-3d0f" sortIndex="2">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>SL</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="8045-89a4-76d4-fcef" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <comment>SL+Sgt/Cmd/Spec/Champ Only</comment>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Terranic greatsword" hidden="true" id="ca81-4c5d-37e4-a81a" type="selectionEntry" targetId="f1aa-3d18-caac-a960" sortIndex="4">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="0a35-fce3-188c-b3aa" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>DA</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <comment>SL+Cmd/Spec/Champ Only</comment>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Graviton crusher" hidden="true" id="cfa3-be0e-30c2-a432" type="selectionEntry" targetId="78f1-345c-81d8-1cb1" sortIndex="8">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>IW</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <comment>IW+Cmd/Champ Only</comment>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="1e2e-bb93-5f07-4afe" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="7">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>SL</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <comment>SL+Cmd/Spec/Champ Only</comment>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="315d-aa73-477f-afa3"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="456b-7f0f-e885-fc50" automatic="true"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="43b9-e535-8036-8913" automatic="true"/>
                   </constraints>
-                </entryLink>
-              </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="0" field="456b-7f0f-e885-fc50">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="43b9-e535-8036-8913">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Any Model in this Unit may have its combi-bolter and power fist exchanged for " id="29c9-f8d2-5619-83a1" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Pair of lightning claws" hidden="false" id="7c09-296d-abfa-bc9f" type="selectionEntry" targetId="6754-24dd-5be0-26ff">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9b4-1e00-00eb-b575"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="924d-4bf3-ebe4-8487"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <modifiers>
+                <modifier type="set" value="1" field="0ece-7553-d141-e2ea">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="12f4-5362-8ebb-31f9">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc27-3eb2-4354-a2c4"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e56b-d5f4-4e40-a60c"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0ece-7553-d141-e2ea" automatic="true"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="12f4-5362-8ebb-31f9" automatic="true"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Proteus pattern storm shield
-	 Checked under Proteus pattern storm shield</comment>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit may have its combi-bolter and power fist exchanged for " id="4668-4665-4c28-95a5">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" id="17c7-798b-433a-821c" name="Power fist">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44fd-d364-4ab1-b01f"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="6754-24dd-5be0-26ff" id="fa50-ec07-4d05-97cc" name="Pair of lightning claws">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1352-5a0e-4865-bd2d"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82a4-5cb7-41df-b7c2"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adc0-bc08-4a9a-b357"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="The Indomitus Terminator Sergeant in this Unit may have its power fist exchanged for " id="86a7-1018-442b-8373">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f9b-9d22-4da5-90a0"/>
-              </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear power weapon
-	 Checked under power weapon</comment>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit may have its power fist exchanged for one of the following:" id="e33c-8d79-41bb-a146">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="8322-1eca-e855-2683" id="ec40-863a-4e03-887c" name="Chainfist">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3ab-a797-4bc9-a8a7"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" id="6512-998a-4ca2-b6d7" name="Thunder hammer">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8fc0-0552-4c2d-9412"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb65-c8b5-4686-a830"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="For every five Models in this Unit, one Indomitus Terminator in this Unit may have its combi-bolter exchanged for one of the following:" id="3137-98c9-48af-b89f">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" id="b6fb-d4de-49ed-b56a" name="Heavy flamer">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a26-6171-471d-b5cc"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8046-4974-470c-9fdb"/>
-              </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Proteus assault cannon
-	 Checked under Proteus assault cannon</comment>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="26f1-18d8-4656-9a95" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="ab8c-3e49-43e7-86bd" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in Any Model in this Unit may have its combi-bolter exchanged for 
-Could not find wargear in The Indomitus Terminator Sergeant in this Unit may have its power fist exchanged for 
-Could not find wargear in For every five Models in this Unit, one Indomitus Terminator in this Unit may have its combi-bolter exchanged for one of the following:</comment>
         </selectionEntry>
-        <selectionEntry type="model" name="Indomitus Terminator Sergeant" id="257d-9880-497c-a17f" page="68" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Indomitus Terminator Sergeant" id="257d-9880-497c-a17f" page="68" publicationId="5469-14da-d0a1-6092" sortIndex="1">
           <profiles>
-            <profile id="3e07-8622-4dc3-a915" name="Indomitus Terminator Sergeant" typeId="a76f-8e23-8c3e-166d">
+            <profile id="3e07-8622-4dc3-a915" name="Indomitus Terminator Sergeant" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">6</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
@@ -28085,6 +28285,44 @@ Could not find wargear in For every five Models in this Unit, one Indomitus Term
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Sergeant, Heavy)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Master Sergeant</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -28095,71 +28333,236 @@ Could not find wargear in For every five Models in this Unit, one Indomitus Term
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b815-d49c-475e-8f71"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Any Model in this Unit may have its combi-bolter exchanged for " id="4f50-330d-477b-b18b">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="433b-4029-4c05-bdc4" name="Combi-bolter">
+            <selectionEntryGroup name="Options" id="dccc-2330-6564-3cb0" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="May have its combi-bolter exchanged for " id="4f50-330d-477b-b18b" hidden="false" sortIndex="1" defaultSelectionEntryId="433b-4029-4c05-bdc4">
+                  <entryLinks>
+                    <entryLink import="true" name="Combi-bolter" hidden="false" id="433b-4029-4c05-bdc4" type="selectionEntry" targetId="042d-9e60-db9e-c147">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c76-cc5a-40af-b325"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="314d-0950-49b4-a24b" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" flatten="true">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5bd-33fc-4ab1-b892"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Proteus Pattern Storm Shield" hidden="false" id="31dc-2272-4dcc-b5f0" type="selectionEntry" targetId="ff9a-9e63-cf28-5d51">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c76-cc5a-40af-b325"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e4d-ad8c-4db7-a5a6" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71fb-0a67-4ba8-9466" automatic="true"/>
                   </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" id="314d-0950-49b4-a24b" name="Legion Combi-weapons">
+                  <modifiers>
+                    <modifier type="set" value="0" field="7e4d-ad8c-4db7-a5a6">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="71fb-0a67-4ba8-9466">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="May have its power fist exchanged for one of the following:" id="c782-7955-4aa6-88fa" hidden="false" sortIndex="2" defaultSelectionEntryId="2661-6cc7-79eb-0b70">
+                  <entryLinks>
+                    <entryLink import="true" name="Chainfist" hidden="false" id="984c-571c-4782-83e2" type="selectionEntry" targetId="8322-1eca-e855-2683" sortIndex="5">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7b7-11e2-4b47-ac48"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Thunder hammer" hidden="false" id="ff6d-a8ea-4dea-879e" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="6">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1e6-d522-4b35-b105"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Power fist" hidden="false" id="2661-6cc7-79eb-0b70" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="1"/>
+                    <entryLink import="true" name="Power Weapon" hidden="false" id="d9f6-89ab-c713-0d4a" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" sortIndex="9" flatten="true"/>
+                    <entryLink import="true" name="Solarite Power Gauntlet" hidden="true" id="baa4-51ae-239a-4b22" type="selectionEntry" targetId="ddcb-01e9-18af-c8f6" sortIndex="3">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d186-cffc-0950-f632" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>IF</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Forge-crafted power fist" hidden="true" id="2afe-cd12-c6b6-1d7a" type="selectionEntry" targetId="8146-abba-1612-3d0f" sortIndex="2">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>SL</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="8045-89a4-76d4-fcef" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <comment>SL+Sgt/Cmd/Spec/Champ Only</comment>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Terranic greatsword" hidden="true" id="30df-a59f-098e-e0c1" type="selectionEntry" targetId="f1aa-3d18-caac-a960" sortIndex="4">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="0a35-fce3-188c-b3aa" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>DA</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <comment>SL+Cmd/Spec/Champ Only</comment>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Graviton crusher" hidden="true" id="2983-194d-fa98-cac3" type="selectionEntry" targetId="78f1-345c-81d8-1cb1" sortIndex="8">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>IW</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <comment>IW+Cmd/Champ Only</comment>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="05c7-e2ac-ae2c-9596" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="7">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>SL</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <comment>SL+Cmd/Spec/Champ Only</comment>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5bd-33fc-4ab1-b892"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6bd-a2d2-4b9b-8dc9" automatic="true"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d81-181b-81e9-05e4" automatic="true"/>
                   </constraints>
-                </entryLink>
-              </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="0" field="c6bd-a2d2-4b9b-8dc9">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="2d81-181b-81e9-05e4">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Any Model in this Unit may have its combi-bolter and power fist exchanged for " id="44c7-f773-410f-9cfb" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Pair of lightning claws" hidden="false" id="5b75-8b47-4e58-b388" type="selectionEntry" targetId="6754-24dd-5be0-26ff">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba43-6944-421c-9af4"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b305-7e1d-4269-8fb7"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <modifiers>
+                <modifier type="set" value="1" field="7ce9-308c-3231-7fe2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="f60f-7dc0-3368-2696">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e4d-ad8c-4db7-a5a6"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71fb-0a67-4ba8-9466"/>
-              </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Proteus pattern storm shield
-	 Checked under Proteus pattern storm shield</comment>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit may have its combi-bolter and power fist exchanged for " id="44c7-f773-410f-9cfb">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" id="7f81-05ba-4762-a5b2" name="Power fist">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae23-dbf4-4c91-8451"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="6754-24dd-5be0-26ff" id="5b75-8b47-4e58-b388" name="Pair of lightning claws">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba43-6944-421c-9af4"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5726-5c05-4c12-8e88"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b305-7e1d-4269-8fb7"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="The Indomitus Terminator Sergeant in this Unit may have its power fist exchanged for " id="bb23-3042-494c-9fea">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e13-1193-45fb-a5f1"/>
-              </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear power weapon
-	 Checked under power weapon</comment>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit may have its power fist exchanged for one of the following:" id="c782-7955-4aa6-88fa">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="8322-1eca-e855-2683" id="984c-571c-4782-83e2" name="Chainfist">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7b7-11e2-4b47-ac48"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" id="ff6d-a8ea-4dea-879e" name="Thunder hammer">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1e6-d522-4b35-b105"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6bd-a2d2-4b9b-8dc9"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7ce9-308c-3231-7fe2" automatic="true"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f60f-7dc0-3368-2696" automatic="true"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -28167,10 +28570,8 @@ Could not find wargear power weapon
             <categoryLink targetId="594d-fa82-13cb-a345" id="5b1b-28fd-44cb-9f5a" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="717a-cd4f-44b8-a31d" primary="false" name="Sergeant Model Sub-Type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="da1f-acd6-42bc-8925" primary="false" name="Heavy Model Sub-Type"/>
+            <categoryLink targetId="647c-faca-3c98-c203" id="e627-ea43-8d91-2275" primary="false" name="Free Power Weapon"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in Any Model in this Unit may have its combi-bolter exchanged for 
-Could not find wargear in The Indomitus Terminator Sergeant in this Unit may have its power fist exchanged for</comment>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -28185,16 +28586,18 @@ Could not find wargear in The Indomitus Terminator Sergeant in this Unit may hav
             <modifier type="set" field="name" value="Vanguard (3)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="[Allegiance]" id="cbe4-798b-0c81-739e" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="5903-c137-5f02-98b5" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
-      <comment>warning: !BSC 20250828-1757
-Combi-bolter is in two option lists for Indomitus Terminator, you will need to combine them by hand.
-Combi-bolter is in two option lists for Indomitus Terminator Sergeant, you will need to combine them by hand.
-Power fist is in two option lists for Indomitus Terminator, you will need to combine them by hand.
-Power fist is in two option lists for Indomitus Terminator Sergeant, you will need to combine them by hand.
-Exchange was not applied on The Indomitus Terminator Sergeant in this Unit may have its power fist exchanged for 
-Power fist is in two option lists for Indomitus Terminator, you will need to combine them by hand.
-Power fist is in two option lists for Indomitus Terminator Sergeant, you will need to combine them by hand.
-Combi-bolter is in two option lists for Indomitus Terminator, you will need to combine them by hand.</comment>
+      <entryLinks>
+        <entryLink import="true" name="Cult Arcana" hidden="false" id="1217-eb41-aa75-e804" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="766d-d9cc-f3fe-c748" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="af0f-5e84-f4cc-e5fe" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="e06f-01a0-f0bb-7490" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Mortalis Destroyer Squad" type="unit" id="7711-26d2-4b83-b2c8" sortIndex="125" page="69" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -30892,6 +31295,11 @@ Could not find rule: Auxiliary Vehicle Bays</comment>
     <entryLink import="true" name="Tartaros Terminator Siege Squad" hidden="false" id="e861-5ef7-7be7-f250" type="selectionEntry" targetId="dace-6eff-4491-b991" sortIndex="123">
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="2658-5a02-9257-9549" primary="true" name="Heavy Assault"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Indomitus Terminator Squad" hidden="false" id="97ac-5bf6-d9d9-c3ec" type="selectionEntry" targetId="cca5-a33d-466a-a3f4" sortIndex="124">
+      <categoryLinks>
+        <categoryLink targetId="3235-bd79-e9b1-60fa" id="d724-e189-8c06-6bd2" primary="true" name="Heavy Assault"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
