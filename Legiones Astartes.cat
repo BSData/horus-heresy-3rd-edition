@@ -28810,6 +28810,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </entryLinks>
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="2933-4a9c-496e-bed9" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b47-9461-d04a-e9de"/>
               </constraints>
               <modifiers>
                 <modifier type="increment" value="1" field="2933-4a9c-496e-bed9">
@@ -29032,9 +29033,9 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="28"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Assault Destroyer" id="2325-d6d0-4a44-b00f" page="70" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Assault Destroyer" id="2325-d6d0-4a44-b00f" page="70" publicationId="5469-14da-d0a1-6092" sortIndex="2">
           <profiles>
-            <profile id="8289-ffff-4b07-9273" name="Assault Destroyer" typeId="a76f-8e23-8c3e-166d">
+            <profile id="8289-ffff-4b07-9273" name="Assault Destroyer" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">12</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
@@ -29052,6 +29053,32 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Antigrav)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -29062,55 +29089,30 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="25bf-a1f0-4eed-a3c4"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="cd5f-1eff-df69-6bd2" id="58cf-bcec-4aa3-8792" name="Rad grenades">
+            <entryLink import="true" name="Chainsword" hidden="false" id="16d6-99fc-77ce-a7c6" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="3">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4150-f1de-4fe9-87fb"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e0b-2749-4dfc-9db7"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="1f0f-5219-436c-8047" name="Frag grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="67ce-54ad-436d-ae55"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cc4-3e88-4ef4-a00e"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="153a-6859-4bbe-a6bf" name="Krak grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7488-7c82-424f-9edf"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e29-3e6c-4a15-b6cb"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acb8-44ba-5413-e625"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="647f-5387-5b72-6b85"/>
               </constraints>
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="The Assault Destroyer Sergeant in this Unit may have its chainsword exchanged for " id="e83c-6b08-4387-8383">
+            <selectionEntryGroup name="May have its two bolt pistols exchanged for one of the following:" id="b5d9-6172-4c0c-b23f" sortIndex="1" defaultSelectionEntryId="ead4-430d-4330-9656">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="9da5-592d-48f5-b2d7" name="Chainsword">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd22-cbc3-4ffe-938b"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="e175-3b00-8885-b321" id="1d17-8d61-4f05-80e1" name="Heavy chainsword">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b84-b2be-4ea4-a313"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="51ad-542c-4960-a1d5"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c3cf-d553-4015-a279"/>
-              </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear for one item from the Legion Sergeant Melee Weapons list.
-	 Checked under for one item from the Legion Sergeant Melee Weapons list.</comment>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit may have its two bolt pistols exchanged for one of the following:" id="b5d9-6172-4c0c-b23f">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="ead4-430d-4330-9656" name="Bolt pistol">
+                <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="ead4-430d-4330-9656" name="Bolt pistol" defaultAmount="1">
                   <modifiers>
-                    <modifier type="set" field="name" value="Two bolt pistols"/>
+                    <modifier type="set" field="name" value="Two bolt pistols">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="model" childId="bcb8-e658-5a0e-0c1a" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="model" childId="4273-9b82-0a75-92bb" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="model" childId="4a06-c55e-a06f-bd0c" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="model" childId="659f-d52e-1515-2912" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="753e-6015-46ef-97a1"/>
@@ -29121,7 +29123,18 @@ Could not find wargear for one item from the Legion Sergeant Melee Weapons list.
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
                   <modifiers>
-                    <modifier type="set" field="name" value="Two volkite serpentas"/>
+                    <modifier type="set" field="name" value="Two volkite serpentas">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="model" childId="bcb8-e658-5a0e-0c1a" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="model" childId="4273-9b82-0a75-92bb" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="model" childId="4a06-c55e-a06f-bd0c" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="model" childId="659f-d52e-1515-2912" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c644-e865-472d-8bf1"/>
@@ -29132,7 +29145,18 @@ Could not find wargear for one item from the Legion Sergeant Melee Weapons list.
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
                   <modifiers>
-                    <modifier type="set" field="name" value="Two hand flamers"/>
+                    <modifier type="set" field="name" value="Two hand flamers">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="model" childId="bcb8-e658-5a0e-0c1a" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="model" childId="4273-9b82-0a75-92bb" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="model" childId="4a06-c55e-a06f-bd0c" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="model" childId="659f-d52e-1515-2912" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7296-0112-4e9f-9796"/>
@@ -29142,8 +29166,22 @@ Could not find wargear for one item from the Legion Sergeant Melee Weapons list.
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b29-8ed8-4764-a0d0"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="May have its bolt pistol exchanged for one of the following:" field="name">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="bcb8-e658-5a0e-0c1a" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="4273-9b82-0a75-92bb" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="4a06-c55e-a06f-bd0c" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="659f-d52e-1515-2912" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="For every five Models in this Unit, one Assault Destroyer in this Unit may have its chainsword exchanged for one of the following:" id="35dc-b253-4884-a42d">
+            <selectionEntryGroup name="For every five Models in this Unit, one Assault Destroyer in this Unit may have its chainsword exchanged for one of the following:" id="35dc-b253-4884-a42d" defaultSelectionEntryId="16d6-99fc-77ce-a7c6" sortIndex="4">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="e85f-734a-c587-e88b" id="240e-0379-4bf8-8d17" name="Charnabal sabre">
                   <costs>
@@ -29153,56 +29191,76 @@ Could not find wargear for one item from the Legion Sergeant Melee Weapons list.
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5325-6b59-4a0d-a90d"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="6784-ecae-e337-14a7" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" flatten="true"/>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3004-dc15-4c99-b5d8"/>
+                <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="3004-dc15-4c99-b5d8" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d8b-9ce2-5b73-1288"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Power weapon
-	 Checked under Power weapon</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="3004-dc15-4c99-b5d8">
+                  <repeats>
+                    <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="The Assault Destroyer Sergeant in this Unit may have melta bombs selected for it for +10 Points." id="6c25-c6e8-4a56-96ff">
+            <selectionEntryGroup name="For every five Models in this Unit, one Mortalis Destroyer in this Unit may have one of its bolt pistols exchanged for one of the following:" id="5ec2-683b-c560-5e2e" hidden="false" sortIndex="2">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" id="7c6a-0e35-49d7-9312" name="Melta bombs">
+                <entryLink import="true" name="Graviton gun" hidden="false" id="7718-cced-b620-8107" type="selectionEntry" targetId="4a06-c55e-a06f-bd0c">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3baa-dd16-4d46-b05d"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa32-7019-1ee5-911a"/>
                   </constraints>
                 </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2ac-403f-4db0-8b0b"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="The Assault Destroyer Sergeant in this Unit may have phosphex bombs selected for it for +10 Points." id="c586-b258-4586-8fdc">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="5ad2-c3b4-f5eb-5b10" id="c227-f8a5-464c-b5b2" name="Phosphex bombs">
+                <entryLink import="true" name="Disintegrator rifle" hidden="false" id="258a-6248-137f-6ff6" type="selectionEntry" targetId="4273-9b82-0a75-92bb">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8a9-b74b-479d-98cd"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e352-7fb7-0e35-b21b"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Plasma pistol" hidden="false" id="9943-11f7-b0c8-f271" type="selectionEntry" targetId="659f-d52e-1515-2912">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c461-a609-b101-fc49"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Destroyer Missile Launcher" hidden="false" id="996e-21ee-4d7b-76f2" type="selectionEntry" targetId="bcb8-e658-5a0e-0c1a">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32b8-b81b-ba60-4fe3"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ca9-169b-41bc-80ee"/>
+                <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="2dd7-159b-1f7c-b740" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a898-f16f-9217-334a"/>
               </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="2dd7-159b-1f7c-b740">
+                  <repeats>
+                    <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="c5ed-8d26-48a8-b600" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="2437-69dd-440c-8867" primary="false" name="Antigrav Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in The Assault Destroyer Sergeant in this Unit may have its chainsword exchanged for 
-Could not find wargear in For every five Models in this Unit, one Assault Destroyer in this Unit may have its chainsword exchanged for one of the following:</comment>
         </selectionEntry>
-        <selectionEntry type="model" name="Assault Destroyer Sergeant" id="9007-dd86-4c66-a845" page="70" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Assault Destroyer Sergeant" id="9007-dd86-4c66-a845" page="70" publicationId="5469-14da-d0a1-6092" sortIndex="1">
           <profiles>
-            <profile id="74ef-9f7c-4aba-ac89" name="Assault Destroyer Sergeant" typeId="a76f-8e23-8c3e-166d">
+            <profile id="74ef-9f7c-4aba-ac89" name="Assault Destroyer Sergeant" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">12</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
@@ -29220,6 +29278,44 @@ Could not find wargear in For every five Models in this Unit, one Assault Destro
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Sergeant, Antigrav)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Master Sergeant</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -29229,28 +29325,8 @@ Could not find wargear in For every five Models in this Unit, one Assault Destro
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="197a-0a89-4b5d-9170"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33fa-5cd0-43a3-8640"/>
           </constraints>
-          <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="cd5f-1eff-df69-6bd2" id="e1dd-401b-4cdd-9e51" name="Rad grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d69f-6aea-4272-b249"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0fe-c6c5-4e13-8206"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="0b00-c5d8-44f9-8ff1" name="Frag grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="641c-0c6b-43a5-8f92"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1dbe-5ae9-464c-9ead"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="1fb1-5843-4e4e-a254" name="Krak grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b21d-939c-4fce-ab42"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89c3-a0d8-4422-9a54"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="The Assault Destroyer Sergeant in this Unit may have its chainsword exchanged for " id="5426-4260-4c99-8191">
+            <selectionEntryGroup name="May have its chainsword exchanged for " id="5426-4260-4c99-8191" sortIndex="2" defaultSelectionEntryId="9906-b6c5-4bbb-b314">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="9906-b6c5-4bbb-b314" name="Chainsword">
                   <constraints>
@@ -29265,18 +29341,16 @@ Could not find wargear in For every five Models in this Unit, one Assault Destro
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7f4-60be-4a76-b2b5"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Legion Sergeant Melee Weapons (no chainsword)" hidden="false" id="760c-7a88-5622-e308" type="selectionEntryGroup" targetId="c7ca-8933-a703-7301" flatten="true"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="890c-96b8-44b0-b209"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2873-7070-4550-a2c2"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear for one item from the Legion Sergeant Melee Weapons list.
-	 Checked under for one item from the Legion Sergeant Melee Weapons list.</comment>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit may have its two bolt pistols exchanged for one of the following:" id="4009-adbf-4afd-b1c6">
+            <selectionEntryGroup name="May have its two bolt pistols exchanged for one of the following:" id="4009-adbf-4afd-b1c6" sortIndex="1" defaultSelectionEntryId="c165-f9e8-4e21-ad71">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="c165-f9e8-4e21-ad71" name="Bolt pistol">
+                <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="c165-f9e8-4e21-ad71" name="Bolt pistol" defaultAmount="1">
                   <modifiers>
                     <modifier type="set" field="name" value="Two bolt pistols"/>
                   </modifiers>
@@ -29311,7 +29385,7 @@ Could not find wargear for one item from the Legion Sergeant Melee Weapons list.
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4492-34fc-417f-a87c"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="The Assault Destroyer Sergeant in this Unit may have melta bombs selected for it for +10 Points." id="b03a-42bb-4225-8a0d">
+            <selectionEntryGroup name="May have melta bombs selected for it for +10 Points." id="b03a-42bb-4225-8a0d" sortIndex="3">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" id="87f0-186a-4e35-8f33" name="Melta bombs">
                   <costs>
@@ -29326,7 +29400,7 @@ Could not find wargear for one item from the Legion Sergeant Melee Weapons list.
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cea-6117-417c-880e"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="The Assault Destroyer Sergeant in this Unit may have phosphex bombs selected for it for +10 Points." id="4e82-8772-4e62-8d77">
+            <selectionEntryGroup name="May have phosphex bombs selected for it for +10 Points." id="4e82-8772-4e62-8d77" sortIndex="4">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="5ad2-c3b4-f5eb-5b10" id="c60a-4ede-4bea-8516" name="Phosphex bombs">
                   <costs>
@@ -29347,30 +29421,8 @@ Could not find wargear for one item from the Legion Sergeant Melee Weapons list.
             <categoryLink targetId="8045-89a4-76d4-fcef" id="7096-42be-4d2c-9f84" primary="false" name="Sergeant Model Sub-Type"/>
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="e919-ac67-4492-854b" primary="false" name="Antigrav Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in The Assault Destroyer Sergeant in this Unit may have its chainsword exchanged for</comment>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="For every five Models in this Unit, one Mortalis Destroyer in this Unit may have one of its bolt pistols exchanged for one of the following:" id="07ed-1f18-4399-97bb">
-          <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="659f-d52e-1515-2912" id="da2b-1a78-43e5-b267" name="Plasma pistol">
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55d1-698a-469d-8f41"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afd7-9202-4c95-9f3c"/>
-          </constraints>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear Destroyer missile launcher with rad missiles
-	 Checked under Destroyer missile launcher with rad missiles</comment>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="2763-7b64-43e2-8694">
           <modifiers>
@@ -29385,10 +29437,36 @@ Could not find wargear Destroyer missile launcher with rad missiles
           </modifiers>
         </infoLink>
         <infoLink name="Bitter Duty" hidden="false" type="rule" targetId="5d6f-552a-f409-cad5" id="11a6-dac9-457b-894b"/>
+        <infoLink name="[Legiones Astartes]" id="f242-6c40-d5c2-01eb" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="[Allegiance]" id="c58d-6380-b1d2-647a" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
       </infoLinks>
-      <comment>warning: !BSC 20250828-1757
-Could not find wargear in For every five Models in this Unit, one Mortalis Destroyer in this Unit may have one of its bolt pistols exchanged for one of the following:
-Chainsword is in two option lists for Assault Destroyer, you will need to combine them by hand.</comment>
+      <entryLinks>
+        <entryLink import="true" name="Frag grenades" hidden="false" id="0b00-c5d8-44f9-8ff1" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="641c-0c6b-43a5-8f92"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1dbe-5ae9-464c-9ead"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak grenades" hidden="false" id="1fb1-5843-4e4e-a254" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b21d-939c-4fce-ab42"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89c3-a0d8-4422-9a54"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Rad grenades" hidden="false" id="e1dd-401b-4cdd-9e51" type="selectionEntry" targetId="cd5f-1eff-df69-6bd2" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d69f-6aea-4272-b249"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0fe-c6c5-4e13-8206"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cult Arcana" hidden="false" id="13be-ec4d-4329-de4f" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="0ec5-9a08-00a6-218b" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="4cc4-cd05-fab1-fa6a" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="dcc8-e5a9-047d-39e5" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Castra Ferrum Dreadnought" type="unit" id="fb5b-af3b-4483-811f" sortIndex="127" page="71" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -31367,6 +31445,11 @@ Could not find rule: Auxiliary Vehicle Bays</comment>
     <entryLink import="true" name="Mortalis Destroyer Squad" hidden="false" id="7972-4464-8d02-c94c" type="selectionEntry" targetId="7711-26d2-4b83-b2c8" sortIndex="125">
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="7261-bfba-f60e-fb95" primary="true" name="Heavy Assault"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Destroyer Assault Squad" hidden="false" id="cf15-edf8-c6cf-733b" type="selectionEntry" targetId="95e2-f176-4750-914e" sortIndex="126">
+      <categoryLinks>
+        <categoryLink targetId="3235-bd79-e9b1-60fa" id="90e0-6f9a-df04-b881" primary="true" name="Heavy Assault"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
