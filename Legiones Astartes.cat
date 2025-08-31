@@ -27639,21 +27639,200 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
       <selectionEntryGroups>
         <selectionEntryGroup name="Every Model in this Unit must have one of the following selected for it:" id="75d4-aa74-436c-ac96" sortIndex="3">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c67e-9636-4af7-a8b0"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ce8-8e87-fdb3-75f9"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c67e-9636-4af7-a8b0" automatic="true"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ce8-8e87-fdb3-75f9" automatic="true"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Legion Heavy Weapons" hidden="false" id="bb79-6e5f-6541-98ea" type="selectionEntryGroup" targetId="9f99-7e2a-4899-4066" flatten="true" sortIndex="1"/>
-            <entryLink import="true" name="Legion Special Weapons List" hidden="false" id="36c5-e7bd-5643-52b7" type="selectionEntryGroup" targetId="8e2d-acd9-be67-36f2" flatten="true" sortIndex="2"/>
-            <entryLink import="true" name="Heavy disintegrator" hidden="false" id="d540-f9de-d50f-c3f9" type="selectionEntry" targetId="5359-13c1-29ff-9d3c" sortIndex="3">
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
-              </costs>
+            <entryLink import="true" name="Heavy disintegrator" hidden="false" id="d540-f9de-d50f-c3f9" type="selectionEntry" targetId="5359-13c1-29ff-9d3c" sortIndex="20">
+              <modifiers>
+                <modifier type="increment" value="15" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
             </entryLink>
-            <entryLink import="true" name="Disintegrator blaster" hidden="false" id="2f3a-528a-fecd-c07c" type="selectionEntry" targetId="0c29-e0e1-525b-4182" sortIndex="4">
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-              </costs>
+            <entryLink import="true" name="Disintegrator blaster" hidden="false" id="2f3a-528a-fecd-c07c" type="selectionEntry" targetId="0c29-e0e1-525b-4182" sortIndex="21">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef15-3b24-adda-0646"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="10" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Heavy bolter" hidden="false" id="d093-9a0c-9cd2-6434" type="selectionEntry" targetId="bc40-b14a-978e-0232" sortIndex="1">
+              <modifiers>
+                <modifier type="increment" value="10" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Heavy flamer" hidden="false" id="b846-7c59-4cc1-aff0" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="2">
+              <modifiers>
+                <modifier type="increment" value="10" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Autocannon" hidden="false" id="ab5b-95e7-b221-ee5f" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93" sortIndex="3">
+              <modifiers>
+                <modifier type="increment" value="20" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Missile launcher" hidden="false" id="cd73-4056-0e74-9f8f" type="selectionEntry" targetId="f391-c3f5-d98c-dd26" sortIndex="4">
+              <modifiers>
+                <modifier type="increment" value="15" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Multi-melta" hidden="false" id="350a-2872-ae96-74fa" type="selectionEntry" targetId="0135-12f0-d86f-ced9" sortIndex="5">
+              <modifiers>
+                <modifier type="increment" value="25" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Plasma cannon" hidden="false" id="28bd-938c-5539-d6be" type="selectionEntry" targetId="f8b8-96c8-ba31-faf8" sortIndex="6">
+              <modifiers>
+                <modifier type="increment" value="20" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Volkite culverin" hidden="false" id="eb29-6941-a9dc-031f" type="selectionEntry" targetId="fcf0-9c1b-d51e-6bc7" sortIndex="7">
+              <modifiers>
+                <modifier type="increment" value="15" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Lascannon" hidden="false" id="bf4f-f1c1-ad74-2394" type="selectionEntry" targetId="b6d5-4be2-c37e-2197" sortIndex="8">
+              <modifiers>
+                <modifier type="increment" value="25" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Iliastus Assault Cannon" hidden="true" id="710f-3225-ebff-9338" type="selectionEntry" targetId="f38b-8af1-17b8-30fe" sortIndex="10">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="20" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Flamer" hidden="false" id="0728-6724-7c22-1af1" type="selectionEntry" targetId="9a45-35cd-3806-2303" sortIndex="11">
+              <modifiers>
+                <modifier type="increment" value="5" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Plasma gun" hidden="false" id="e505-b4a0-3ebd-3d79" type="selectionEntry" targetId="433d-56e0-9878-dea1" sortIndex="12">
+              <modifiers>
+                <modifier type="increment" value="10" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Meltagun" hidden="false" id="25f1-0c9e-db7d-b344" type="selectionEntry" targetId="b1e1-e164-5877-6734" sortIndex="13">
+              <modifiers>
+                <modifier type="increment" value="15" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Volkite charger" hidden="false" id="2eec-73c3-bbd5-2f0d" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="14">
+              <modifiers>
+                <modifier type="increment" value="5" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Volkite caliver" hidden="false" id="b4ad-86c0-930e-a078" type="selectionEntry" targetId="a042-1a69-9052-c59a" sortIndex="15">
+              <modifiers>
+                <modifier type="increment" value="10" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Rotor cannon" hidden="false" id="b691-ce03-e82a-7924" type="selectionEntry" targetId="05bf-af5e-be67-36a2" sortIndex="16">
+              <modifiers>
+                <modifier type="increment" value="10" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Graviton gun" hidden="true" id="c2f8-306e-6de2-20d5" type="selectionEntry" targetId="4a06-c55e-a06f-bd0c" sortIndex="18">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <comment>IH</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="736e-3967-e72b-e3ac" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="10" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Graviton shredder" hidden="true" id="a344-8a83-fa12-8b16" type="selectionEntry" targetId="5921-7ef7-197a-ef9f" sortIndex="19">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <comment>IH</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="736e-3967-e72b-e3ac" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="15" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
