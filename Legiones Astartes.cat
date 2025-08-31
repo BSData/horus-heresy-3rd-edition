@@ -30019,9 +30019,9 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Attack Bike" id="ae47-7a4e-45f5-a55b" page="74" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Attack Bike" id="ae47-7a4e-45f5-a55b" page="74" publicationId="5469-14da-d0a1-6092" sortIndex="1">
           <profiles>
-            <profile id="22ab-3237-4d3a-ae8e" name="Attack Bike" typeId="a76f-8e23-8c3e-166d">
+            <profile id="22ab-3237-4d3a-ae8e" name="Attack Bike" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">14</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
@@ -30039,6 +30039,32 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Cavalry</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -30049,31 +30075,31 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="63a3-fd64-41fc-8dda"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="222f-82cb-05a2-f8f1" id="30e2-31a9-40e5-a7c8" name="Twin bolter">
+            <entryLink hidden="false" type="selectionEntry" targetId="222f-82cb-05a2-f8f1" id="30e2-31a9-40e5-a7c8" name="Twin bolter" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6aea-6f67-4514-9dee"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae1f-8205-4c25-9fae"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="3460-79ab-418a-934d" name="Bolt pistol">
+            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="3460-79ab-418a-934d" name="Bolt pistol" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0380-24fa-4ff0-9e7c"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f154-5772-4ffb-9e6e"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="a2b9-205d-45aa-beb6" name="Chainsword">
+            <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="a2b9-205d-45aa-beb6" name="Chainsword" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9bd6-63e9-4dcc-884c"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d4a-04ff-499f-a8f8"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="4cb1-3eed-4f52-84b7" name="Frag grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="4cb1-3eed-4f52-84b7" name="Frag grenades" sortIndex="5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="02c3-7c58-4750-80c5"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa86-d246-4475-88ca"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="0e72-0b3e-4dae-a70d" name="Krak grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="0e72-0b3e-4dae-a70d" name="Krak grenades" sortIndex="6">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a59c-d75c-4eb9-b91e"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e1a-6f49-4feb-b356"/>
@@ -30081,9 +30107,9 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Any Model in this Unit may have its heavy bolter exchanged for " id="a6d7-679f-4cc2-a8e4">
+            <selectionEntryGroup name="Any Model in this Unit may have its heavy bolter exchanged for " id="a6d7-679f-4cc2-a8e4" sortIndex="2" defaultSelectionEntryId="fa8a-1b9c-4d21-a277">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="bc40-b14a-978e-0232" id="fa8a-1b9c-4d21-a277" name="Heavy bolter">
+                <entryLink hidden="false" type="selectionEntry" targetId="bc40-b14a-978e-0232" id="fa8a-1b9c-4d21-a277" name="Heavy bolter" defaultAmount="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b59f-ea98-46ac-a332"/>
                   </constraints>
@@ -30121,7 +30147,18 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </modifiers>
         </infoLink>
         <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="9ba0-fb19-41d1-a53c"/>
+        <infoLink name="[Allegiance]" id="1b95-6826-1525-d66e" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="4c48-e84c-b712-0610" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Cult Arcana" hidden="false" id="e19c-c1da-484d-83b6" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="3fe0-742c-38ef-32ea" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="1606-d85d-863b-ca95" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="e20d-a4b6-52d5-9535" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Scout Squad" type="unit" id="e787-5b99-4fc2-9b4f" sortIndex="131" page="75" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -31671,6 +31708,11 @@ Could not find rule: Auxiliary Vehicle Bays</comment>
     <entryLink import="true" name="Caestus Assault Ram" hidden="false" id="374c-7e82-7f3e-6fec" type="selectionEntry" targetId="969d-a75a-4363-ae09" sortIndex="129">
       <categoryLinks>
         <categoryLink targetId="52d0-8b78-439e-18e5" id="4f76-71c1-531d-c04b" primary="true" name="Heavy Transport"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Attack Bike Squadron" hidden="false" id="10e3-843f-39e5-df95" type="selectionEntry" targetId="b17c-db9a-43b0-82f0" sortIndex="130">
+      <categoryLinks>
+        <categoryLink targetId="2b65-a3f2-620a-dc58" id="3673-5f38-4d2c-37de" primary="true" name="Recon"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
