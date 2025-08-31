@@ -1641,7 +1641,7 @@ Bite of the Betrayed: This Gambit can only be selected during the first Face-Off
       <selectionEntries>
         <selectionEntry type="model" name="Rylanor" id="197b-624f-4d17-a1d0" page="87" publicationId="5469-14da-d0a1-6092">
           <profiles>
-            <profile id="44f4-bf7c-458a-b3f0" name="Rylanor" typeId="a76f-8e23-8c3e-166d">
+            <profile id="44f4-bf7c-458a-b3f0" name="Rylanor" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">8</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
@@ -1669,10 +1669,22 @@ Bite of the Betrayed: This Gambit can only be selected during the first Face-Off
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a91a-bfab-41e8-b7c1"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="11a5-70a9-9b14-10d3" id="7d4a-da7e-43ea-acdb" name="Kheres assault cannon">
+            <entryLink hidden="false" type="selectionEntry" targetId="11a5-70a9-9b14-10d3" id="7d4a-da7e-43ea-acdb" name="Kheres assault cannon" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="710a-be6f-4e58-9c0a"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="258a-e330-4c7e-a622"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Gravis power fist" hidden="false" id="63c8-9da9-d434-5eb4" type="selectionEntry" targetId="ea00-ac16-4ae6-87d3" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a4b-6aa4-b381-1809-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a4b-6aa4-b381-1809-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Heavy flamer" hidden="false" id="d56d-6035-2438-360a" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1de2-cf4d-ccb8-bd52-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1de2-cf4d-ccb8-bd52-max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -1680,9 +1692,6 @@ Bite of the Betrayed: This Gambit can only be selected during the first Face-Off
             <categoryLink targetId="38d4-d720-8009-acd3" id="d76f-5773-472b-9afb" primary="false" name="Walker Model Type"/>
             <categoryLink targetId="b980-187b-2b17-d635" id="3d9b-9983-4e32-a9bb" primary="false" name="Unique Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear Gravis power fist and one heavy flamer
-	 Checked under Gravis power fist and one heavy flamer</comment>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1697,9 +1706,27 @@ Could not find wargear Gravis power fist and one heavy flamer
           </modifiers>
         </infoLink>
         <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="d809-d3c1-4415-8d60"/>
+        <infoLink name="[Allegiance]" id="4df3-40dd-a3a1-e908" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="831a-2744-e2ad-855c" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Smokescreen" id="1436-dfc1-ed47-b33b" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
+        <infoLink name="Smokescreen" id="7949-dd91-961c-db46" hidden="false" type="profile" targetId="999b-689a-4ee7-8901"/>
       </infoLinks>
-      <comment>warning: !BSC 20250828-1757
-Could not find rule: Vengeful Hate</comment>
+      <rules>
+        <rule name="Vengeful Hate" id="d277-f81b-58d5-9efa" hidden="false">
+          <description>&quot;Rylanor can fight in a Challenge when Fulgrim is the Challenger.&quot;
+If a Model with this Special Rule is Locked in Combat with an enemy Unit that contains Fulgrim or Fulgrim Transfigured, the Model with this Special Rule is considered to be eligible to take part in a Challenge. In such a Challenge, if Fulgrim or Fulgrim Transfigured is the Challenger, Rylanor must be the Challenged. </description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink targetId="4381-ed35-c3fa-a225" id="8352-0bfe-7337-c3a7" primary="false" name="Loyalist"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry name="Emperor’S Children Sun Killer Squad" type="unit" id="91fb-d8a8-411d-8296" page="88" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -1976,6 +2003,11 @@ Could not process option &apos;Up to two Sun Killers in this Unit may each have 
     <entryLink import="true" name="Palatine Blade Aquilae Squad" hidden="false" id="9809-26fd-dc35-bf29" type="selectionEntry" targetId="83e2-188d-4319-a3e4">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="c656-abed-814c-3aa3" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Rylanor The Unyielding" hidden="false" id="d5fb-4e65-3cac-d65d" type="selectionEntry" targetId="8899-5b90-49f3-b137">
+      <categoryLinks>
+        <categoryLink targetId="2499-7239-685f-8465" id="ba2d-37f9-86f1-d636" primary="true" name="War-engine"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
