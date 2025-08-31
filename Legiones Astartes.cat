@@ -27115,11 +27115,21 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="249e-7b30-49ae-9cc3"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="01e9-334c-80cb-f1c6" id="4d6b-e507-4f6e-a1e1" name="Boarding shield">
+            <entryLink hidden="false" type="selectionEntry" targetId="01e9-334c-80cb-f1c6" id="4d6b-e507-4f6e-a1e1" name="Boarding shield" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1804-02d5-46b4-bda9"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9eb2-93b8-4f2f-92bd"/>
               </constraints>
+            </entryLink>
+            <entryLink import="true" name="Legion Equipment" hidden="false" id="28b8-943b-b0d9-47e6" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf" sortIndex="6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b89e-e6ce-0f61-4c2c" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="a4b5-c630-8fc3-a8c2" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Up to two Breacher Veterans in this Unit may each 
+have one item from" field="name"/>
+              </modifiers>
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
@@ -27178,7 +27188,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8277-081f-4b3d-9a3a"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="For every five Models in this Unit, up to two Breacher Veterans in this Unit may each have their bolter exchanged for one of the following:" id="40ff-2a99-443f-b3fd">
+            <selectionEntryGroup name="For every five Models in this Unit, up to two Breacher Veterans in this Unit may each have their bolter exchanged for one of the following:" id="40ff-2a99-443f-b3fd" sortIndex="4">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="9a45-35cd-3806-2303" id="8686-6e2c-4eb7-a21e" name="Flamer">
                   <costs>
@@ -27224,7 +27234,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="One Breacher Veteran in this Unit may have one vexilla selected for it for +10 Points." id="f81f-3e07-459f-b294">
+            <selectionEntryGroup name="One Breacher Veteran in this Unit may have one vexilla selected for it for +10 Points." id="f81f-3e07-459f-b294" sortIndex="5">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="dfcd-0669-ad43-28aa" id="bd02-8174-49fc-8c62" name="Vexilla">
                   <costs>
