@@ -29825,16 +29825,17 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
       <selectionEntries>
         <selectionEntry type="model" name="Land Raider Achilles" id="6a35-2c9f-4f71-b9ad" page="72" publicationId="5469-14da-d0a1-6092">
           <profiles>
-            <profile id="21e4-7e11-4fe1-80e3" name="Land Raider Achilles" typeId="2a80-eec8-a736-2fe3">
+            <profile id="21e4-7e11-4fe1-80e3" name="Land Raider Achilles" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle">
               <characteristics>
-                <characteristic typeId="d624-72fe-0205-4443" name="M">10</characteristic>
-                <characteristic typeId="a17e-8e7d-d21f-c138" name="BS">4</characteristic>
-                <characteristic typeId="6536-e73d-4a74-c675" name="Front Armour">14</characteristic>
-                <characteristic typeId="f03a-18a7-8586-273d" name="Side Armour">14</characteristic>
-                <characteristic typeId="ec84-1f5d-1bb3-6826" name="Rear Armour">14</characteristic>
-                <characteristic typeId="8735-4497-1f8a-4dda" name="HP">10</characteristic>
-                <characteristic typeId="a82e-858c-9aa9-2b43" name="Transport Capacity">6</characteristic>
-                <characteristic typeId="827f-9ce2-2118-e134" name="Type">Vehicle (Transport)</characteristic>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Transport)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">10</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">14</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">14</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">14</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">10</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">6</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">This Model has Access Points on both Side Facings.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -29857,7 +29858,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its two Sponson Mounted twin multi-meltas exchanged for " id="5f35-cf03-402c-a0b2">
+            <selectionEntryGroup name="This Model may have its two Sponson Mounted twin multi-meltas exchanged for " id="5f35-cf03-402c-a0b2" defaultSelectionEntryId="5cf6-e097-46d8-add0">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="0e76-d08b-904e-c8fd" id="5cf6-e097-46d8-add0" name="Twin multi-melta">
                   <modifiers>
@@ -29932,6 +29933,10 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <modifier type="set" field="name" value="Auto-repair (5+)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="[Allegiance]" id="0d5f-25ea-8e45-fc71" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="6c79-db35-f74c-1cf9" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Smokescreen" id="4643-dc1a-ac7c-5d57" hidden="false" type="profile" targetId="999b-689a-4ee7-8901"/>
+        <infoLink name="Smokescreen" id="06e0-c591-c7a7-26aa" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Caestus Assault Ram" type="unit" id="969d-a75a-4363-ae09" sortIndex="129" page="73" publicationId="5469-14da-d0a1-6092">
@@ -31640,6 +31645,11 @@ Could not find rule: Auxiliary Vehicle Bays</comment>
           </conditions>
         </modifier>
       </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Achilles" hidden="false" id="7833-d40c-ce0b-17aa" type="selectionEntry" targetId="e937-c704-4177-ac8d" sortIndex="128">
+      <categoryLinks>
+        <categoryLink targetId="52d0-8b78-439e-18e5" id="8186-4568-d9f5-6ace" primary="true" name="Heavy Transport"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <catalogueLinks>
