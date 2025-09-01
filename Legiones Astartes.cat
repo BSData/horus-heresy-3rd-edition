@@ -7393,39 +7393,85 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <selectionEntryGroups>
             <selectionEntryGroup name="Options" id="32df-0b1c-8590-a832" hidden="false" sortIndex="2">
               <selectionEntryGroups>
-                <selectionEntryGroup name="May exchange power weapon for:" id="cd39-9dca-726a-f330" hidden="false">
+                <selectionEntryGroup name="May exchange power weapon for:" id="cd39-9dca-726a-f330" hidden="false" sortIndex="2">
                   <entryLinks>
                     <entryLink import="true" name="Legion Terminator Melee Weapons" hidden="false" id="e493-cec5-db91-30a6" type="selectionEntryGroup" targetId="0523-46e6-6df1-a4c0" sortIndex="2"/>
                     <entryLink import="true" name="Power Weapon" hidden="false" id="9a33-3148-1a2c-0d76" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" sortIndex="1" collapsible="true"/>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="12a7-2136-d1df-d59a" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="12a7-2136-d1df-d59a" includeChildSelections="false" automatic="true"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9a9-fc4e-38f2-21df" automatic="true"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="12a7-2136-d1df-d59a">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="ab57-e7ca-3fc7-b256" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="0" field="e9a9-fc4e-38f2-21df">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="ab57-e7ca-3fc7-b256" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="May exchange combi-bolter for:" id="45ab-2eb6-97dd-4a71" hidden="false" collapsible="false">
+                <selectionEntryGroup name="May exchange combi-bolter for:" id="45ab-2eb6-97dd-4a71" hidden="false" collapsible="false" sortIndex="1">
                   <entryLinks>
                     <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="9eed-4549-5860-c7f0" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08">
                       <entryLinks>
-                        <entryLink import="true" name="Combi-bolter" hidden="false" id="5133-2aed-17d9-6aa5" type="selectionEntry" targetId="042d-9e60-db9e-c147" defaultAmount="1"/>
-                        <entryLink import="true" name="Volkite charger" hidden="false" id="4c53-a5ad-ddfc-8bc9" type="selectionEntry" targetId="93e7-6a83-1e9e-204a"/>
+                        <entryLink import="true" name="Combi-bolter" hidden="false" id="5133-2aed-17d9-6aa5" type="selectionEntry" targetId="042d-9e60-db9e-c147" defaultAmount="1" sortIndex="0"/>
+                        <entryLink import="true" name="Volkite charger" hidden="false" id="4c53-a5ad-ddfc-8bc9" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="12"/>
                       </entryLinks>
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8177-5acf-0841-08b6" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8177-5acf-0841-08b6" includeChildSelections="false" automatic="true"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ccdf-6aab-2557-ba79" automatic="true"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="8177-5acf-0841-08b6">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="ab57-e7ca-3fc7-b256" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="0" field="ccdf-6aab-2557-ba79">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="ab57-e7ca-3fc7-b256" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink import="true" name="Pair of lightning claws" hidden="false" id="ea06-7c53-2118-f2c4" type="selectionEntry" targetId="6754-24dd-5be0-26ff" sortIndex="1">
+                <entryLink import="true" name="Pair of lightning claws" hidden="false" id="ea06-7c53-2118-f2c4" type="selectionEntry" targetId="6754-24dd-5be0-26ff" sortIndex="3">
                   <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3eaa-2da9-dfd2-1d2f" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3eaa-2da9-dfd2-1d2f" includeChildSelections="false" automatic="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Pair of Raven&apos;s Talons" hidden="true" id="a7b6-e148-cb9e-82d8" type="selectionEntry" targetId="ab57-e7ca-3fc7-b256" sortIndex="2">
+                <entryLink import="true" name="Pair of Raven&apos;s Talons" hidden="true" id="a7b6-e148-cb9e-82d8" type="selectionEntry" targetId="ab57-e7ca-3fc7-b256" sortIndex="4">
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <comment>RG+Cmd Only</comment>
@@ -7435,41 +7481,23 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     </modifier>
                   </modifiers>
                   <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
                   </costs>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b153-0b23-c605-924b"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Phoenix power spear" hidden="true" id="3015-dd0d-c5b3-6780" type="selectionEntry" targetId="41b7-f368-f337-d940" sortIndex="3">
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="eb48-9812-af4c-6912" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="1" field="e0d0-3d13-0c71-14f9">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="eb48-9812-af4c-6912" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e0d0-3d13-0c71-14f9"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5021-b7ce-a97f-4f04"/>
-                  </constraints>
-                </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9ef8-f0f4-9149-ea74" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9ef8-f0f4-9149-ea74" includeChildSelections="false" automatic="true"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="1" field="9ef8-f0f4-9149-ea74">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="6754-24dd-5be0-26ff" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="eb48-9812-af4c-6912" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ab57-e7ca-3fc7-b256" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -35477,7 +35505,7 @@ have one item from" field="name"/>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Banestrike bolter" hidden="true" id="ac5a-bec6-949f-23aa" type="selectionEntry" targetId="69de-4883-efd2-b876">
+        <entryLink import="true" name="Banestrike bolter" hidden="true" id="ac5a-bec6-949f-23aa" type="selectionEntry" targetId="69de-4883-efd2-b876" sortIndex="11">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <comment>AL</comment>
