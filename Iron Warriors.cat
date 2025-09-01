@@ -396,13 +396,21 @@ While a Model with this special rule is in a Challenge, its Controlling Player c
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78ab-f675-0443-9c53"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Omni-scope" hidden="false" id="4c24-9ca5-28c9-d100" type="selectionEntry" targetId="d29e-4f32-734f-4d40">
+            <entryLink import="true" name="Omni-scope" hidden="false" id="4c24-9ca5-28c9-d100" type="selectionEntry" targetId="d29e-4f32-734f-4d40" sortIndex="3">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2b6-88d8-a693-e998"/>
               </constraints>
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
               </costs>
+            </entryLink>
+            <entryLink import="true" name="Grenade harness" hidden="false" id="dcc6-8cb0-d72e-3b47" type="selectionEntry" targetId="a766-856c-52bd-d30a" sortIndex="4">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87c9-1088-8ea8-53a0"/>
+              </constraints>
             </entryLink>
           </entryLinks>
           <profiles>
@@ -462,19 +470,89 @@ While a Model with this special rule is in a Challenge, its Controlling Player c
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="a389-05e8-406f-92be" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May replace Combi-bolter with:" id="6b54-b1d8-98be-d139" hidden="false" defaultSelectionEntryId="500e-e2d7-b1e0-4860">
-              <entryLinks>
-                <entryLink import="true" name="Combi-bolter" hidden="false" id="500e-e2d7-b1e0-4860" type="selectionEntry" targetId="042d-9e60-db9e-c147">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="5f7c-fa7e-dbd0-9d08" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" flatten="true"/>
-              </entryLinks>
+            <selectionEntryGroup name="Options" id="653b-1d80-06a9-527b" hidden="false" sortIndex="1">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="May replace Combi-bolter with:" id="6b54-b1d8-98be-d139" hidden="false" defaultSelectionEntryId="500e-e2d7-b1e0-4860" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Combi-bolter" hidden="false" id="500e-e2d7-b1e0-4860" type="selectionEntry" targetId="042d-9e60-db9e-c147">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="5f7c-fa7e-dbd0-9d08" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" flatten="true"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="a2e3-366d-a664-794a" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="48ca-45d9-cff9-c558" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="a2e3-366d-a664-794a">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="48ca-45d9-cff9-c558">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="May replace power fist with" id="466d-b681-d39c-7e94" hidden="false" sortIndex="2" defaultSelectionEntryId="c889-5170-3794-afc8">
+                  <entryLinks>
+                    <entryLink import="true" name="Power fist" hidden="false" id="c889-5170-3794-afc8" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4800-e313-c80d-533d" automatic="true"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Chainfist" hidden="false" id="76f6-e4b6-24bb-6337" type="selectionEntry" targetId="8322-1eca-e855-2683" sortIndex="2"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1fa1-9bc0-5b1b-6636" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30c3-a3f3-c615-0148" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="1fa1-9bc0-5b1b-6636">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="30c3-a3f3-c615-0148">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="May replace combi-bolter and power fist with" id="e6a4-ec42-9f1e-271e" hidden="false" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="Pair of lightning claws" hidden="false" id="c432-2f9e-3241-1092" type="selectionEntry" targetId="6754-24dd-5be0-26ff">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c797-95d9-3c7b-5bd1"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="a2e3-366d-a664-794a"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="48ca-45d9-cff9-c558"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="35b3-efa4-ebfd-4b6a" automatic="true"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="dc5d-01b1-1d29-e388" automatic="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="35b3-efa4-ebfd-4b6a">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="dc5d-01b1-1d29-e388">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
@@ -528,19 +606,89 @@ While a Model with this special rule is in a Challenge, its Controlling Player c
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May replace Combi-bolter with:" id="3f0f-bbaf-0ff1-0fec" hidden="false" defaultSelectionEntryId="77e7-0e6a-690e-9995">
-              <entryLinks>
-                <entryLink import="true" name="Combi-bolter" hidden="false" id="77e7-0e6a-690e-9995" type="selectionEntry" targetId="042d-9e60-db9e-c147">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="7268-fc29-4c51-6838" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" flatten="true"/>
-              </entryLinks>
+            <selectionEntryGroup name="Options" id="2c95-4ca0-fc49-23a7" hidden="false" sortIndex="1">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="May replace Combi-bolter with:" id="9825-2d35-12ea-0fe1" hidden="false" defaultSelectionEntryId="500e-e2d7-b1e0-4860" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Combi-bolter" hidden="false" id="0c9e-5338-33ff-5fee" type="selectionEntry" targetId="042d-9e60-db9e-c147" defaultAmount="1">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="577b-933d-ec74-3c06" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" flatten="true"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="3ead-f35f-e791-f1b9" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7634-49b3-c3b5-fb37" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="3ead-f35f-e791-f1b9">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="7634-49b3-c3b5-fb37">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="May replace power fist with" id="258b-c52f-bcc1-5c32" hidden="false" sortIndex="2" defaultSelectionEntryId="c889-5170-3794-afc8">
+                  <entryLinks>
+                    <entryLink import="true" name="Power fist" hidden="false" id="163f-2730-fc09-ad30" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="034b-10f3-a860-52bd" automatic="true"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Chainfist" hidden="false" id="21d1-1c2a-b276-7f4c" type="selectionEntry" targetId="8322-1eca-e855-2683" sortIndex="2"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="530e-2243-b6c3-d05e" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c612-a860-2b40-b9ff" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="530e-2243-b6c3-d05e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="c612-a860-2b40-b9ff">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="May replace combi-bolter and power fist with" id="e192-f9cf-6232-db1e" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Pair of lightning claws" hidden="false" id="b3bc-8d31-3d16-c48a" type="selectionEntry" targetId="6754-24dd-5be0-26ff">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2d5-993d-8ef9-4b1d"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="a184-51d2-b6c3-5be1"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="fc62-9cb9-752e-ae76"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7353-cdac-1967-8725" automatic="true"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8465-4d7c-cbdc-7b56" automatic="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="7353-cdac-1967-8725">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="8465-4d7c-cbdc-7b56">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -606,12 +754,6 @@ While a Model with this special rule is in a Challenge, its Controlling Player c
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Power fist" hidden="false" id="c889-5170-3794-afc8" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d5f-845b-5be5-c5a2"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4800-e313-c80d-533d"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="78f1-9c50-4742-88ab" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="f18d-f1e4-47b2-a63b" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
