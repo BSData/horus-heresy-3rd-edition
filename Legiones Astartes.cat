@@ -3289,16 +3289,20 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <categoryLink targetId="4d42-b711-7946-8e15" id="470c-71b6-41e1-b709" primary="false" name="Super-heavy Model Sub-Type"/>
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Fellblade accelerator cannon" hidden="false" id="9283-5d81-b148-e6b1" type="selectionEntry" targetId="7780-6d9e-7c9e-1e29">
+            <entryLink import="true" name="Fellblade accelerator cannon" hidden="false" id="9283-5d81-b148-e6b1" type="selectionEntry" targetId="7780-6d9e-7c9e-1e29" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b2e7-53cc-21b5-9462-min"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2e7-53cc-21b5-9462-max"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="ef3f-8573-2072-6d18" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-              </costs>
+            <entryLink import="true" name="Demolisher cannon" hidden="false" id="2d98-ae4f-11eb-ad5f" type="selectionEntry" targetId="4514-8e18-77b4-a141" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ffeb-b80b-a0e8-4f29"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d884-7f1c-28af-48ec"/>
+              </constraints>
+              <modifiers>
+                <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntry>
@@ -3338,12 +3342,12 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               <entryLinks>
                 <entryLink import="true" name="Twin heavy bolter" hidden="false" id="4520-fe0a-1373-5752" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75" sortIndex="1">
                   <modifiers>
-                    <modifier type="prepend" value="Hull (Front)" field="name" join=" "/>
+                    <modifier type="prepend" value="Hull (Front) Mounted" field="name" join=" "/>
                   </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Twin heavy flamer" hidden="false" id="9e10-7ecc-0049-797e" type="selectionEntry" targetId="f797-93eb-d6fe-586a" sortIndex="2">
                   <modifiers>
-                    <modifier type="prepend" value="Hull (Front)" field="name" join=" "/>
+                    <modifier type="prepend" value="Hull (Front) Mounted" field="name" join=" "/>
                   </modifiers>
                 </entryLink>
               </entryLinks>
@@ -3366,6 +3370,11 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="c722-f7ef-88ab-1421" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="ef3f-8573-2072-6d18" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntry>
