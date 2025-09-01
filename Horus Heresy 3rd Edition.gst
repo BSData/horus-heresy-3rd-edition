@@ -11369,6 +11369,7 @@
               </constraints>
             </categoryLink>
             <categoryLink name="Master of Automata" hidden="false" id="89dd-fa0f-af89-c7b5" targetId="43f5-bc69-29b9-2286"/>
+            <categoryLink name="War-engine - Upgraded by The Iron-clad" hidden="false" id="4ab7-924c-5609-33cc" targetId="d00a-e269-2ed3-8fc4"/>
           </categoryLinks>
           <constraints>
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="06ca-d5c5-58f1-f184"/>
