@@ -1685,16 +1685,17 @@ Cover Saves may not be taken against unsaved wounds caused by a Shooting Attack 
       <selectionEntries>
         <selectionEntry type="model" name="The Tormentor" id="d222-4469-4871-b193" page="93" publicationId="5469-14da-d0a1-6092">
           <profiles>
-            <profile id="a7d0-2747-4e92-ae86" name="The Tormentor" typeId="2a80-eec8-a736-2fe3">
+            <profile id="a7d0-2747-4e92-ae86" name="The Tormentor" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle">
               <characteristics>
-                <characteristic typeId="d624-72fe-0205-4443" name="M">10</characteristic>
-                <characteristic typeId="a17e-8e7d-d21f-c138" name="BS">4</characteristic>
-                <characteristic typeId="6536-e73d-4a74-c675" name="Front Armour">14</characteristic>
-                <characteristic typeId="f03a-18a7-8586-273d" name="Side Armour">13</characteristic>
-                <characteristic typeId="ec84-1f5d-1bb3-6826" name="Rear Armour">12</characteristic>
-                <characteristic typeId="8735-4497-1f8a-4dda" name="HP">16</characteristic>
-                <characteristic typeId="a82e-858c-9aa9-2b43" name="Transport Capacity">14</characteristic>
-                <characteristic typeId="827f-9ce2-2118-e134" name="Type">Vehicle (Unique, Transport, Super-heavy)</characteristic>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Unique, Transport, Super-heavy)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">10</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">4</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">14</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">13</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">12</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">16</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">14</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">This Model has Access Points on the Rear Facing.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1706,7 +1707,7 @@ Cover Saves may not be taken against unsaved wounds caused by a Shooting Attack 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08e5-57d6-47e4-9558"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="c5f4-55af-54bb-2d18" id="0ef6-6fde-4094-bb21" name="Volcano Cannon">
+            <entryLink hidden="false" type="selectionEntry" targetId="c5f4-55af-54bb-2d18" id="0ef6-6fde-4094-bb21" name="Volcano Cannon" sortIndex="1">
               <modifiers>
                 <modifier type="set" field="name" value="Centreline Mounted volcano cannon"/>
               </modifiers>
@@ -1715,7 +1716,7 @@ Cover Saves may not be taken against unsaved wounds caused by a Shooting Attack 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cc4-8c5b-4c6a-8b69"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75" id="1df8-4093-4cda-a378" name="Twin heavy bolter">
+            <entryLink hidden="false" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75" id="1df8-4093-4cda-a378" name="Twin heavy bolter" sortIndex="2">
               <modifiers>
                 <modifier type="set" field="name" value="Hull (Front) Mounted twin heavy bolter"/>
               </modifiers>
@@ -1726,19 +1727,85 @@ Cover Saves may not be taken against unsaved wounds caused by a Shooting Attack 
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have one of the following selected for it:" id="37b2-61e7-43eb-80b1">
+            <selectionEntryGroup name="This Model may have one of the following selected for it:" id="37b2-61e7-43eb-80b1" sortIndex="3">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="20e0-addc-4bd9-aea1"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy bolters
-	 Checked under lascannon and two Sponson
-Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy flamers
-	 Checked under lascannon and two Sponson</comment>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted lascannon and two Sponson Mounted twin heavy bolters" hidden="false" id="8351-33d8-64fc-8aa5" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Twin heavy bolter" hidden="false" id="e5be-6b83-11b5-009a" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5343-ae4e-25b2-dbfb"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a405-a6be-ef70-f6b2"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="Two Sponson Mounted twin heavy bolters" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Lascannon" hidden="false" id="a6b8-a15e-ece4-13f0" type="selectionEntry" targetId="b6d5-4be2-c37e-2197">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b543-d280-a16a-5448"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7b2-e4fb-187c-9cd1"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="Two Sponson Mounted lascannon" field="name">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="any" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a2a-56f5-1f39-a289"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="40"/>
+                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                    <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted lascannon and two Sponson Mounted twin heavy flamers" hidden="false" id="46cc-ed5a-d1ce-2b50" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Lascannon" hidden="false" id="32a0-3345-ac1d-8cb4" type="selectionEntry" targetId="b6d5-4be2-c37e-2197">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e738-8d76-f728-543e"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a102-f38d-ec74-20cc"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="Two Sponson Mounted lascannon" field="name">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="any" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Twin heavy flamer" hidden="false" id="a102-e529-49b2-1a94" type="selectionEntry" targetId="f797-93eb-d6fe-586a">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c861-3cc0-4f4c-7449"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eac8-2dc6-d5d1-8e08"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="Two Sponson Mounted twin heavy flamers" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="40"/>
+                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                    <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have one item from the Legion Pintle Weapons list selected for it." id="dffe-b28e-49e4-9739">
+            <selectionEntryGroup name="This Model may have one item from the Legion Pintle Weapons list selected for it." id="dffe-b28e-49e4-9739" sortIndex="4">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="d625-37d6-d83a-0de3" id="4e53-085b-43d9-87b2" name="Legion Pintle Weapons">
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="d625-37d6-d83a-0de3" id="4e53-085b-43d9-87b2" name="Legion Pintle Weapons" flatten="true">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04ca-2f6f-4100-9c5f"/>
                   </constraints>
@@ -1748,7 +1815,7 @@ Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twi
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1ac-4817-4384-b954"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="949e-039b-4f7b-9d32">
+            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="949e-039b-4f7b-9d32" sortIndex="5">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" id="b029-d9ee-4292-bc97" name="Hunter-killer missile">
                   <costs>
@@ -1771,7 +1838,7 @@ Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twi
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cb3-698c-4704-a604"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2cb3-698c-4704-a604"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -1781,9 +1848,6 @@ Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twi
             <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="6b4c-2dfd-4163-b100" primary="false" name="Transport Model Sub-Type"/>
             <categoryLink targetId="4d42-b711-7946-8e15" id="b319-65dd-45e6-a20e" primary="false" name="Super-heavy Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1759
-Could not find wargear in This Model may have one of the following selected for it:
-Could not find wargear in This Model may have one of the following selected for it:</comment>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1797,9 +1861,19 @@ Could not find wargear in This Model may have one of the following selected for 
             <modifier type="set" field="name" value="Void Shields (1)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="[Allegiance]" id="bc5e-3a5a-5c49-a1f8" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="5719-33f9-e950-2776" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Smokescreen" id="622b-b12c-3778-cd9d" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
+        <infoLink name="Smokescreen" id="74da-4b8c-a9df-d8ab" hidden="false" type="profile" targetId="999b-689a-4ee7-8901"/>
       </infoLinks>
-      <comment>warning: !BSC 20250828-1757
-Could not find rule: Lair of the Iron Tyrant</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="04f0-76e4-d731-5800" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <rules>
+        <rule name="Lair of the Iron Tyrant" id="48b4-d73a-2798-2bca" hidden="false">
+          <description>Only Perturabo or Domitar-ferrum Models may Embark on a Model with this Special Rule.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -1876,6 +1950,11 @@ Process.
     <entryLink import="true" name="Iron Havocs" hidden="false" id="1eb3-3595-8c82-7990" type="selectionEntry" targetId="ed0b-1070-4e20-b597" sortIndex="7">
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="c72e-8d00-936a-c924" primary="true" name="Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="The Tormentor" hidden="false" id="1615-1300-244f-bedf" type="selectionEntry" targetId="6781-8672-4e6e-a47a">
+      <categoryLinks>
+        <categoryLink targetId="a46f-a465-0ead-d6b8" id="5802-9064-28e5-8919" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
