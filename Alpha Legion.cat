@@ -379,15 +379,21 @@ When an enemy Unit finishes a Move within 6&quot; of a Model with this Special R
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ceb5-c451-fb9e-123f"/>
               </constraints>
             </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink import="true" name="Banestrike combi-bolter" hidden="false" id="1859-3e0b-dc75-03f8" type="selectionEntry" targetId="08db-6d95-f0be-cfe0" sortIndex="1">
+            <selectionEntryGroup name="May exchange Banestrike combi-bolter for:" id="6a7e-1e36-1718-96f5" hidden="false" defaultSelectionEntryId="1a1d-8f3e-2e93-f027" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="f2df-245f-fe93-66fd" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08"/>
+                <entryLink import="true" name="Banestrike combi-bolter" hidden="false" id="1a1d-8f3e-2e93-f027" type="selectionEntry" targetId="08db-6d95-f0be-cfe0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f248-e18a-85bb-4e78"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4680-996f-4b51-c966"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c21d-cddb-f466-340c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45ae-f424-346a-e519"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4bf4-5dcc-a5ea-7a12"/>
               </constraints>
-            </entryLink>
-          </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Headhunter" hidden="false" id="b8ac-3017-94f9-d523" sortIndex="2">
           <profiles>
@@ -441,7 +447,6 @@ When an enemy Unit finishes a Move within 6&quot; of a Model with this Special R
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Weapon Options" id="3e31-260a-ad4e-cbe2" hidden="false" defaultSelectionEntryId="b5ce-1660-ae07-8abe" sortIndex="1">
               <selectionEntryGroups>
                 <selectionEntryGroup name="For every five Models in this Unit, one may have its Banestrike combi-bolter exchanged for:" id="ea0d-0e8c-edb9-e61f" hidden="false">
                   <entryLinks>
@@ -457,24 +462,31 @@ When an enemy Unit finishes a Move within 6&quot; of a Model with this Special R
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="63da-f2af-55cb-49a8"/>
+                    <constraint type="max" value="1" field="selections" scope="model" shared="true" id="63da-f2af-55cb-49a8"/>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="6a97-2b23-a638-cfbc" automatic="false" negative="false" percentValue="false" includeChildSelections="true"/>
                   </constraints>
                   <modifiers>
-                    <modifier type="increment" value="1" field="63da-f2af-55cb-49a8">
+                    <modifier type="increment" value="1" field="6a97-2b23-a638-cfbc">
                       <repeats>
                         <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
                       </repeats>
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
+                <selectionEntryGroup name="May exchange Banestrike combi-bolter for:" id="656f-bbfd-adce-95be" hidden="false" defaultSelectionEntryId="c421-dfbc-d3c2-31e7" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="729b-a188-e510-0e44" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08"/>
+                    <entryLink import="true" name="Banestrike combi-bolter" hidden="false" id="c421-dfbc-d3c2-31e7" type="selectionEntry" targetId="08db-6d95-f0be-cfe0">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6581-4e9a-f4fb-1e1d"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="1" field="defaultAmount"/>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
               </selectionEntryGroups>
-              <entryLinks>
-                <entryLink import="true" name="Banestrike combi-bolter" hidden="false" id="b5ce-1660-ae07-8abe" type="selectionEntry" targetId="08db-6d95-f0be-cfe0">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8963-61c2-853b-5a45"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c75-f876-357f-5191"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09fc-58cd-ab84-9f50"/>
