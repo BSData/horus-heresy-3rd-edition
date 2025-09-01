@@ -524,22 +524,6 @@ While a Model with this special rule is in a Challenge, its Controlling Player c
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
-                <modifierGroup type="and">
-                  <comment>Combat Veterans</comment>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
-                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
-                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
-                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
-                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
-                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
-                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
-                  </modifiers>
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -1248,14 +1232,14 @@ Only a Model with the Iron Warriors Trait and the Paragon Type or Command Sub-Ty
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry name="Iron Warriors Dominator Cohort" type="unit" id="d1fa-8392-4117-990d" sortIndex="7" page="91" publicationId="5469-14da-d0a1-6092">
+    <selectionEntry name="Dominator Cohort" type="unit" id="d1fa-8392-4117-990d" sortIndex="7" page="91" publicationId="5469-14da-d0a1-6092">
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" name="Dominator" id="8857-434b-468b-a94e" page="91" publicationId="5469-14da-d0a1-6092">
           <profiles>
-            <profile id="218f-ac92-4c68-a2cf" name="Dominator" typeId="a76f-8e23-8c3e-166d">
+            <profile id="218f-ac92-4c68-a2cf" name="Dominator" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">6</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
@@ -1273,6 +1257,24 @@ Only a Model with the Iron Warriors Trait and the Paragon Type or Command Sub-Ty
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">4+</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Heavy)</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -1283,14 +1285,9 @@ Only a Model with the Iron Warriors Trait and the Paragon Type or Command Sub-Ty
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="9519-4e96-488c-9b03"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="For every five Models in the Unit, one Dominator may have its combi-bolter exchanged for one of the following:" id="4901-082a-4b5d-9016">
+            <selectionEntryGroup name="For every five Models in the Unit, one Dominator may have its combi-bolter exchanged for one of the following:" id="4901-082a-4b5d-9016" sortIndex="3" defaultSelectionEntryId="b3b0-3b95-4af7-9e0a">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="b3b0-3b95-4af7-9e0a" name="Combi-bolter">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="20d5-f490-48a0-919a"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" id="f184-6f9c-4b8c-9d67" name="Heavy flamer">
+                <entryLink hidden="false" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" id="f184-6f9c-4b8c-9d67" name="Heavy flamer" sortIndex="2">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
@@ -1298,7 +1295,7 @@ Only a Model with the Iron Warriors Trait and the Paragon Type or Command Sub-Ty
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee9f-b19a-449f-ba68"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="0135-12f0-d86f-ced9" id="0e29-eb3c-4791-adc0" name="Multi-melta">
+                <entryLink hidden="false" type="selectionEntry" targetId="0135-12f0-d86f-ced9" id="0e29-eb3c-4791-adc0" name="Multi-melta" sortIndex="3">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
                   </costs>
@@ -1306,7 +1303,7 @@ Only a Model with the Iron Warriors Trait and the Paragon Type or Command Sub-Ty
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1ec-7353-4034-a3bc"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="196d-a0ea-a851-d09e" id="5e2f-1d4f-4051-a83c" name="Reaper autocannon">
+                <entryLink hidden="false" type="selectionEntry" targetId="196d-a0ea-a851-d09e" id="5e2f-1d4f-4051-a83c" name="Reaper autocannon" sortIndex="4">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
                   </costs>
@@ -1316,17 +1313,24 @@ Only a Model with the Iron Warriors Trait and the Paragon Type or Command Sub-Ty
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="298e-7a1c-4f5c-9e7a"/>
+                <constraint type="max" value="0" field="selections" scope="unit" shared="false" id="298e-7a1c-4f5c-9e7a" automatic="true" includeChildSelections="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="298e-7a1c-4f5c-9e7a">
+                  <repeats>
+                    <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit may have its thunder hammer exchanged for " id="f1bd-5cee-46a8-bc5c">
+            <selectionEntryGroup name="May have its thunder hammer exchanged for " id="f1bd-5cee-46a8-bc5c" sortIndex="2" defaultSelectionEntryId="e093-4187-4fee-8794">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" id="e093-4187-4fee-8794" name="Thunder hammer">
+                <entryLink hidden="false" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" id="e093-4187-4fee-8794" name="Thunder hammer" sortIndex="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b948-86b4-474a-864e"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="8322-1eca-e855-2683" id="ecfe-15b9-4394-ac62" name="Chainfist">
+                <entryLink hidden="false" type="selectionEntry" targetId="8322-1eca-e855-2683" id="ecfe-15b9-4394-ac62" name="Chainfist" sortIndex="2">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
@@ -1340,28 +1344,50 @@ Only a Model with the Iron Warriors Trait and the Paragon Type or Command Sub-Ty
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b068-a97f-4ca7-9396"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit may have its combi-bolter exchanged for " id="609a-9c82-4dcc-896e">
+            <selectionEntryGroup name="May have its combi-bolter exchanged for " id="609a-9c82-4dcc-896e" defaultSelectionEntryId="ac78-9a43-bb1f-fd9b" sortIndex="1">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" id="0b42-a4ad-4f8c-a48c" name="Volkite charger">
+                <entryLink hidden="false" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" id="0b42-a4ad-4f8c-a48c" name="Volkite charger" sortIndex="2">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b1f-6b74-4d77-a8ce"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Combi-bolter" hidden="false" id="ac78-9a43-bb1f-fd9b" type="selectionEntry" targetId="042d-9e60-db9e-c147" sortIndex="1" defaultAmount="1"/>
+                <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="58bd-5858-a22a-6d6c" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" flatten="true" sortIndex="3"/>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1dd-1c14-474b-a789"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f1dd-1c14-474b-a789" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="af59-740e-0a67-9320" automatic="true"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear for one item from the Legion Combi-weapons list.
-	 Checked under for one item from the Legion Combi-weapons list.</comment>
+              <modifiers>
+                <modifier type="set" value="0" field="f1dd-1c14-474b-a789">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="4fa7-ea45-2a89-ad86" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="0135-12f0-d86f-ced9" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="196d-a0ea-a851-d09e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="af59-740e-0a67-9320">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="4fa7-ea45-2a89-ad86" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="0135-12f0-d86f-ced9" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="196d-a0ea-a851-d09e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="5403-8a0f-42bf-ad4c" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="6f1d-f069-4b9e-8ca7" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in Any Model in this Unit may have its combi-bolter exchanged for</comment>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1382,11 +1408,14 @@ Could not find wargear in Any Model in this Unit may have its combi-bolter excha
             <modifier type="set" field="name" value="Hatred (Automata)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="[Allegiance]" id="fe91-4287-5a09-f0db" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="d5d5-e432-413d-81e3" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
-      <comment>warning: !BSC 20250828-1757
-Could not find rule: Those Once Honoured
-Combi-bolter is in two option lists for Dominator, you will need to combine them by hand.
-Exchange was not applied on Any Model in this Unit may have its combi-bolter exchanged for</comment>
+      <rules>
+        <rule name="Those Once Honoured" id="111b-8183-5b3d-c161" hidden="false">
+          <description>A Unit that includes any Models with this Special Rule can never be joined by a Perturabo Model.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry name="Iron Warriors Iron Havocs" type="unit" id="ed0b-1070-4e20-b597" sortIndex="8" page="92" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -1767,6 +1796,11 @@ Process.
     <entryLink import="true" name="Nârik Dreygur" hidden="false" id="f539-bd38-6f47-45b5" type="selectionEntry" targetId="42ce-6dde-4967-b87a">
       <categoryLinks>
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="2288-48ab-37fe-a686" primary="true" name="High Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Dominator Cohort" hidden="false" id="9f2e-07aa-8ab8-4066" type="selectionEntry" targetId="d1fa-8392-4117-990d">
+      <categoryLinks>
+        <categoryLink targetId="a38e-50ff-310f-f19e" id="f091-9f17-958a-d53e" primary="true" name="Retinue"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
