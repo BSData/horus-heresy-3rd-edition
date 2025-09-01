@@ -1363,8 +1363,11 @@ Only a Model with the Iron Warriors Trait and the Paragon Type or Command Sub-Ty
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="36df-1e7a-89fb-e71b" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="3ad3-c79e-8ad4-9f1c" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="2"/>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="5004-661f-127c-d91f" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="5004-661f-127c-d91f" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="4f90-cc15-fac7-ecb8" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -1823,7 +1826,7 @@ Only a Model with the Iron Warriors Trait and the Paragon Type or Command Sub-Ty
       <rules>
         <rule name="Ferrum Occularis" id="f826-f46a-32b4-33cb" hidden="false">
           <description>&quot;Wounds caused by a Model with this Special Rule may ignore Cover Saves.&quot;
-Cover Saves may not be taken against unsaved wounds caused by a Shooting Attack made by a Model with this Special Rule, if the Model with this Special Rule was part of a Unit that remained Stationary in its Controlling Player’s previous Movement Phase. </description>
+Cover Saves may not be taken against unsaved wounds caused by a Shooting Attack made by a Model with this Special Rule, if the Model with this Special Rule was part of a Unit that remained Stationary in its Controlling Player’s previous Movement Phase.</description>
         </rule>
       </rules>
     </selectionEntry>
