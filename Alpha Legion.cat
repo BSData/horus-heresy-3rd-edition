@@ -379,15 +379,20 @@ When an enemy Unit finishes a Move within 6&quot; of a Model with this Special R
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ceb5-c451-fb9e-123f"/>
               </constraints>
             </selectionEntryGroup>
+            <selectionEntryGroup name="May have its banestrike combi-bolter exchanged for Banestrike combi-bolter:" id="b0fd-fa61-0b74-1d8c" hidden="false" defaultSelectionEntryId="7b92-0472-493f-4a78" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="0cb7-6656-7fc6-20bf" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08"/>
+                <entryLink import="true" name="Banestrike combi-bolter" hidden="false" id="76fd-dd8a-e471-943d" type="selectionEntry" targetId="08db-6d95-f0be-cfe0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="156f-fea3-648b-cc64"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="1" field="defaultAmount"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
-          <entryLinks>
-            <entryLink import="true" name="Banestrike combi-bolter" hidden="false" id="1859-3e0b-dc75-03f8" type="selectionEntry" targetId="08db-6d95-f0be-cfe0" sortIndex="1">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4680-996f-4b51-c966"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c21d-cddb-f466-340c"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Headhunter" hidden="false" id="b8ac-3017-94f9-d523" sortIndex="2">
           <profiles>
@@ -457,24 +462,31 @@ When an enemy Unit finishes a Move within 6&quot; of a Model with this Special R
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="63da-f2af-55cb-49a8"/>
+                    <constraint type="max" value="1" field="selections" scope="model" shared="true" id="63da-f2af-55cb-49a8"/>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="013d-3de2-2465-e407" includeChildSelections="true"/>
                   </constraints>
                   <modifiers>
-                    <modifier type="increment" value="1" field="63da-f2af-55cb-49a8">
+                    <modifier type="increment" value="1" field="013d-3de2-2465-e407">
                       <repeats>
                         <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
                       </repeats>
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
+                <selectionEntryGroup name="May have its banestrike combi-bolter exchanged for Banestrike combi-bolter:" id="de57-432c-5f16-7df5" hidden="false" defaultSelectionEntryId="7b92-0472-493f-4a78" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="d4cf-7f93-ff48-bfaf" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08"/>
+                    <entryLink import="true" name="Banestrike combi-bolter" hidden="false" id="a1af-598e-808f-7222" type="selectionEntry" targetId="08db-6d95-f0be-cfe0">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8ce-939a-5d2b-bb6d"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="1" field="defaultAmount"/>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
               </selectionEntryGroups>
-              <entryLinks>
-                <entryLink import="true" name="Banestrike combi-bolter" hidden="false" id="b5ce-1660-ae07-8abe" type="selectionEntry" targetId="08db-6d95-f0be-cfe0">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8963-61c2-853b-5a45"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c75-f876-357f-5191"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09fc-58cd-ab84-9f50"/>
@@ -1549,9 +1561,7 @@ If the Missing being played has a Deploy Armies Step, at the end of this step, t
                 <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">8</characteristic>
                 <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
                 <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
-                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">8
-
-</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">8</characteristic>
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
               </characteristics>
@@ -2054,7 +2064,7 @@ A Model with this Special Rule is always considered to be 2&quot; further away t
         <categoryLink targetId="a114-fe5b-0a4f-632e" id="e96c-cbf5-b7f9-afe1" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Autilon Skorr" hidden="false" id="3165-0785-c891-3146" type="selectionEntry" targetId="9825-c621-2099-bea6" sortIndex="">
+    <entryLink import="true" name="Autilon Skorr" hidden="false" id="3165-0785-c891-3146" type="selectionEntry" targetId="9825-c621-2099-bea6">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="3414-4349-49bc-6e15" primary="true" name="Command"/>
         <categoryLink targetId="a114-fe5b-0a4f-632e" id="0d8f-9eb8-cc7f-741b" primary="false" name="Alpha Legion"/>
