@@ -16989,36 +16989,36 @@ Models of any Type other than Vehicle may Embark on a Model with this Special Ru
           </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Options" id="6129-f30d-6942-4d83" hidden="false" sortIndex="1">
-              <entryLinks>
-                <entryLink import="true" name="Legion Officer Wargear" hidden="false" id="f468-16e5-d4d0-5d88" type="selectionEntryGroup" targetId="f955-8b22-9362-31c0" sortIndex="1">
-                  <modifiers>
-                    <modifier type="set" value="May exchange chainsword for:" field="name"/>
-                  </modifiers>
-                  <comment>May exchange chainsword for:</comment>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="May exchange chainsword for:" id="71b8-81f8-fd74-8e74" hidden="false" defaultSelectionEntryId="27d7-ca1c-2f2e-a470">
                   <entryLinks>
-                    <entryLink import="true" name="Chainsword" hidden="false" id="066c-003a-c325-5468" type="selectionEntry" targetId="78f4-4967-2896-c3a5" defaultAmount="1">
-                      <modifiers>
-                        <modifier type="set" value="Chainsword (default)" field="name"/>
-                      </modifiers>
-                      <comment>Default</comment>
+                    <entryLink import="true" name="Legion Officer Wargear" hidden="false" id="f468-16e5-d4d0-5d88" type="selectionEntryGroup" targetId="f955-8b22-9362-31c0">
+                      <comment>May exchange chainsword for:</comment>
+                    </entryLink>
+                    <entryLink import="true" name="Chainsword" hidden="false" id="27d7-ca1c-2f2e-a470" type="selectionEntry" targetId="78f4-4967-2896-c3a5" defaultAmount="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4308-998f-fa05-ff5e"/>
+                      </constraints>
                     </entryLink>
                   </entryLinks>
-                </entryLink>
-                <entryLink import="true" name="Legion Officer Wargear" hidden="false" id="923f-31c5-b75f-63da" type="selectionEntryGroup" targetId="f955-8b22-9362-31c0" sortIndex="2">
-                  <modifiers>
-                    <modifier type="set" value="May exchange bolt pistol for:" field="name"/>
-                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="58ba-fa07-be8f-a4f3"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="41c3-d4cb-6598-cdbc"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="May exchange bolt pistol for:" id="9fc1-fdad-e5e4-d378" hidden="false" defaultSelectionEntryId="b773-172b-57aa-fe88">
                   <entryLinks>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="f8c7-364b-abb0-9d2a" type="selectionEntry" targetId="2942-f783-d627-33c5" defaultAmount="1">
-                      <comment>Default</comment>
-                      <modifiers>
-                        <modifier type="set" value="Bolt pistol (default)" field="name"/>
-                      </modifiers>
+                    <entryLink import="true" name="Legion Officer Wargear" hidden="false" id="923f-31c5-b75f-63da" type="selectionEntryGroup" targetId="f955-8b22-9362-31c0">
+                      <comment>May exchange bolt pistol for:</comment>
                     </entryLink>
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="b773-172b-57aa-fe88" type="selectionEntry" targetId="2942-f783-d627-33c5" defaultAmount="1"/>
                   </entryLinks>
-                  <comment>May exchange bolt pistol for:</comment>
-                </entryLink>
-              </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="f88e-149a-d1f5-fe6d"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6ab5-6ae4-7408-52d2"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
@@ -19773,9 +19773,6 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </entryLinks>
         </entryLink>
       </entryLinks>
-      <categoryLinks>
-        <categoryLink targetId="1baf-b200-9e02-844d" id="0aee-3182-35ef-d90b" primary="false" name="Legion Champion"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry name="Mounted Legion Champion" type="unit" id="81ff-36e6-4de3-a46b" sortIndex="90" page="33" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -20074,9 +20071,6 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <infoLink name="[Allegiance]" id="1f19-4d78-86a7-ab57" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="d9c7-e465-6b19-26d7" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="1baf-b200-9e02-844d" id="b0c8-ee91-39d5-5f85" primary="false" name="Legion Champion"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry name="Legion Champion In Terminator Armour" type="unit" id="ba85-4d00-429e-bf29" sortIndex="91" page="34" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -20240,9 +20234,6 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <infoLink name="[Allegiance]" id="fe8f-2ed9-7adc-2f4d" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="b619-2930-3976-0533" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="1baf-b200-9e02-844d" id="56b5-2e1c-e5cc-3a40" primary="false" name="Legion Champion"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry name="Chaplain With Jump Pack" type="unit" id="9bda-87be-40f6-8f53" sortIndex="92" page="35" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -27124,21 +27115,11 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="249e-7b30-49ae-9cc3"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="01e9-334c-80cb-f1c6" id="4d6b-e507-4f6e-a1e1" name="Boarding shield" sortIndex="3">
+            <entryLink hidden="false" type="selectionEntry" targetId="01e9-334c-80cb-f1c6" id="4d6b-e507-4f6e-a1e1" name="Boarding shield">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1804-02d5-46b4-bda9"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9eb2-93b8-4f2f-92bd"/>
               </constraints>
-            </entryLink>
-            <entryLink import="true" name="Legion Equipment" hidden="false" id="28b8-943b-b0d9-47e6" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf" sortIndex="6">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b89e-e6ce-0f61-4c2c" includeChildSelections="false"/>
-                <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="a4b5-c630-8fc3-a8c2" includeChildSelections="true"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="Up to two Breacher Veterans in this Unit may each 
-have one item from" field="name"/>
-              </modifiers>
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
@@ -27197,7 +27178,7 @@ have one item from" field="name"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8277-081f-4b3d-9a3a"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="For every five Models in this Unit, up to two Breacher Veterans in this Unit may each have their bolter exchanged for one of the following:" id="40ff-2a99-443f-b3fd" sortIndex="4">
+            <selectionEntryGroup name="For every five Models in this Unit, up to two Breacher Veterans in this Unit may each have their bolter exchanged for one of the following:" id="40ff-2a99-443f-b3fd">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="9a45-35cd-3806-2303" id="8686-6e2c-4eb7-a21e" name="Flamer">
                   <costs>
@@ -27243,7 +27224,7 @@ have one item from" field="name"/>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="One Breacher Veteran in this Unit may have one vexilla selected for it for +10 Points." id="f81f-3e07-459f-b294" sortIndex="5">
+            <selectionEntryGroup name="One Breacher Veteran in this Unit may have one vexilla selected for it for +10 Points." id="f81f-3e07-459f-b294">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="dfcd-0669-ad43-28aa" id="bd02-8174-49fc-8c62" name="Vexilla">
                   <costs>
@@ -27532,25 +27513,15 @@ have one item from" field="name"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="dea9-9feb-40c7-bfef"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="3f8c-2e12-46aa-a8cb" name="Bolt pistol" sortIndex="1">
+            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="3f8c-2e12-46aa-a8cb" name="Bolt pistol">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="786b-6a80-4c6a-a9b7"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6412-6106-437f-bea6"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Legion Equipment" hidden="false" id="1499-dac0-173d-336d" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf" sortIndex="3">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b112-bfc0-57df-fbde" includeChildSelections="false"/>
-                <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="b34a-4213-f136-46b0" includeChildSelections="true"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="Up to two Support Veterans in this Unit may each 
-have one item from" field="name"/>
-              </modifiers>
-            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="One Support Veteran in this Unit may have one vexilla selected for it for +10 Points." id="e109-eed7-4360-897a" sortIndex="2">
+            <selectionEntryGroup name="One Support Veteran in this Unit may have one vexilla selected for it for +10 Points." id="e109-eed7-4360-897a">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="dfcd-0669-ad43-28aa" id="abeb-21c6-43a6-8316" name="Vexilla">
                   <costs>
@@ -27668,200 +27639,21 @@ have one item from" field="name"/>
       <selectionEntryGroups>
         <selectionEntryGroup name="Every Model in this Unit must have one of the following selected for it:" id="75d4-aa74-436c-ac96" sortIndex="3">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c67e-9636-4af7-a8b0" automatic="true"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ce8-8e87-fdb3-75f9" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c67e-9636-4af7-a8b0"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ce8-8e87-fdb3-75f9"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Heavy disintegrator" hidden="false" id="d540-f9de-d50f-c3f9" type="selectionEntry" targetId="5359-13c1-29ff-9d3c" sortIndex="20">
-              <modifiers>
-                <modifier type="increment" value="15" field="9893-c379-920b-8982">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
+            <entryLink import="true" name="Legion Heavy Weapons" hidden="false" id="bb79-6e5f-6541-98ea" type="selectionEntryGroup" targetId="9f99-7e2a-4899-4066" flatten="true" sortIndex="1"/>
+            <entryLink import="true" name="Legion Special Weapons List" hidden="false" id="36c5-e7bd-5643-52b7" type="selectionEntryGroup" targetId="8e2d-acd9-be67-36f2" flatten="true" sortIndex="2"/>
+            <entryLink import="true" name="Heavy disintegrator" hidden="false" id="d540-f9de-d50f-c3f9" type="selectionEntry" targetId="5359-13c1-29ff-9d3c" sortIndex="3">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+              </costs>
             </entryLink>
-            <entryLink import="true" name="Disintegrator blaster" hidden="false" id="2f3a-528a-fecd-c07c" type="selectionEntry" targetId="0c29-e0e1-525b-4182" sortIndex="21">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef15-3b24-adda-0646"/>
-              </constraints>
-              <modifiers>
-                <modifier type="increment" value="10" field="9893-c379-920b-8982">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Heavy bolter" hidden="false" id="d093-9a0c-9cd2-6434" type="selectionEntry" targetId="bc40-b14a-978e-0232" sortIndex="1">
-              <modifiers>
-                <modifier type="increment" value="10" field="9893-c379-920b-8982">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Heavy flamer" hidden="false" id="b846-7c59-4cc1-aff0" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="2">
-              <modifiers>
-                <modifier type="increment" value="10" field="9893-c379-920b-8982">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Autocannon" hidden="false" id="ab5b-95e7-b221-ee5f" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93" sortIndex="3">
-              <modifiers>
-                <modifier type="increment" value="20" field="9893-c379-920b-8982">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Missile launcher" hidden="false" id="cd73-4056-0e74-9f8f" type="selectionEntry" targetId="f391-c3f5-d98c-dd26" sortIndex="4">
-              <modifiers>
-                <modifier type="increment" value="15" field="9893-c379-920b-8982">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Multi-melta" hidden="false" id="350a-2872-ae96-74fa" type="selectionEntry" targetId="0135-12f0-d86f-ced9" sortIndex="5">
-              <modifiers>
-                <modifier type="increment" value="25" field="9893-c379-920b-8982">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Plasma cannon" hidden="false" id="28bd-938c-5539-d6be" type="selectionEntry" targetId="f8b8-96c8-ba31-faf8" sortIndex="6">
-              <modifiers>
-                <modifier type="increment" value="20" field="9893-c379-920b-8982">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Volkite culverin" hidden="false" id="eb29-6941-a9dc-031f" type="selectionEntry" targetId="fcf0-9c1b-d51e-6bc7" sortIndex="7">
-              <modifiers>
-                <modifier type="increment" value="15" field="9893-c379-920b-8982">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Lascannon" hidden="false" id="bf4f-f1c1-ad74-2394" type="selectionEntry" targetId="b6d5-4be2-c37e-2197" sortIndex="8">
-              <modifiers>
-                <modifier type="increment" value="25" field="9893-c379-920b-8982">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Iliastus Assault Cannon" hidden="true" id="710f-3225-ebff-9338" type="selectionEntry" targetId="f38b-8af1-17b8-30fe" sortIndex="10">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="20" field="9893-c379-920b-8982">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Flamer" hidden="false" id="0728-6724-7c22-1af1" type="selectionEntry" targetId="9a45-35cd-3806-2303" sortIndex="11">
-              <modifiers>
-                <modifier type="increment" value="5" field="9893-c379-920b-8982">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Plasma gun" hidden="false" id="e505-b4a0-3ebd-3d79" type="selectionEntry" targetId="433d-56e0-9878-dea1" sortIndex="12">
-              <modifiers>
-                <modifier type="increment" value="10" field="9893-c379-920b-8982">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Meltagun" hidden="false" id="25f1-0c9e-db7d-b344" type="selectionEntry" targetId="b1e1-e164-5877-6734" sortIndex="13">
-              <modifiers>
-                <modifier type="increment" value="15" field="9893-c379-920b-8982">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Volkite charger" hidden="false" id="2eec-73c3-bbd5-2f0d" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="14">
-              <modifiers>
-                <modifier type="increment" value="5" field="9893-c379-920b-8982">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Volkite caliver" hidden="false" id="b4ad-86c0-930e-a078" type="selectionEntry" targetId="a042-1a69-9052-c59a" sortIndex="15">
-              <modifiers>
-                <modifier type="increment" value="10" field="9893-c379-920b-8982">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Rotor cannon" hidden="false" id="b691-ce03-e82a-7924" type="selectionEntry" targetId="05bf-af5e-be67-36a2" sortIndex="16">
-              <modifiers>
-                <modifier type="increment" value="10" field="9893-c379-920b-8982">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Graviton gun" hidden="true" id="c2f8-306e-6de2-20d5" type="selectionEntry" targetId="4a06-c55e-a06f-bd0c" sortIndex="18">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <comment>IH</comment>
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="736e-3967-e72b-e3ac" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="10" field="9893-c379-920b-8982">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Graviton shredder" hidden="true" id="a344-8a83-fa12-8b16" type="selectionEntry" targetId="5921-7ef7-197a-ef9f" sortIndex="19">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <comment>IH</comment>
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="736e-3967-e72b-e3ac" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="15" field="9893-c379-920b-8982">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
+            <entryLink import="true" name="Disintegrator blaster" hidden="false" id="2f3a-528a-fecd-c07c" type="selectionEntry" targetId="0c29-e0e1-525b-4182" sortIndex="4">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -32261,7 +32053,7 @@ have one item from" field="name"/>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b38a-7059-e464-11dd"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b38a-7059-e464-11dd"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Chainsword" hidden="false" id="ad21-9e3a-cfe3-c47d" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="2">
@@ -32269,7 +32061,7 @@ have one item from" field="name"/>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db15-888f-45ce-fe9f"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="db15-888f-45ce-fe9f"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Bolter" hidden="false" id="65d1-3318-96ed-e379" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="4">
@@ -32277,7 +32069,7 @@ have one item from" field="name"/>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb6f-9e7b-d93c-a279"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="bb6f-9e7b-d93c-a279"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Volkite serpenta" hidden="false" id="69dd-c1ba-15af-7f1c" type="selectionEntry" targetId="b7c3-1de1-087c-3d6e" sortIndex="5">
@@ -32285,7 +32077,7 @@ have one item from" field="name"/>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8511-8b3d-6e22-7ccb"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8511-8b3d-6e22-7ccb"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Plasma pistol" hidden="false" id="c035-de5f-b9b1-e14b" type="selectionEntry" targetId="659f-d52e-1515-2912" sortIndex="7">
@@ -32293,7 +32085,7 @@ have one item from" field="name"/>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a299-6ca6-0029-9868"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a299-6ca6-0029-9868"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Hand flamer" hidden="false" id="f17e-63af-1638-ab25" type="selectionEntry" targetId="9322-09ed-abec-6e13" sortIndex="6">
@@ -32301,7 +32093,7 @@ have one item from" field="name"/>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2499-8a2e-9d2d-7626"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2499-8a2e-9d2d-7626"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Disintegrator pistol" hidden="false" id="3882-d75a-4aee-7482" type="selectionEntry" targetId="32d1-2c70-882f-9467" sortIndex="8">
@@ -32309,12 +32101,12 @@ have one item from" field="name"/>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b22-e801-690b-3852"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3b22-e801-690b-3852"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Chainaxe" hidden="false" id="7a3f-436b-fd22-1cd9" type="selectionEntry" targetId="31a4-f8de-de6d-1fd9" sortIndex="10">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dcb-bc6a-021d-26d9"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9dcb-bc6a-021d-26d9"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Power Weapon" hidden="false" id="d46d-36b4-98f3-7558" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" sortIndex="11" flatten="true"/>
@@ -32323,7 +32115,7 @@ have one item from" field="name"/>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2013-f750-302b-f149"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2013-f750-302b-f149"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Lightning claw" hidden="false" id="0e6a-d5c3-27a5-6e82" type="selectionEntry" targetId="cbf0-9b29-9a16-28b2" sortIndex="17">
@@ -32331,7 +32123,7 @@ have one item from" field="name"/>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e118-ca40-8310-a312"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e118-ca40-8310-a312"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Thunder hammer" hidden="false" id="bc02-d4d3-1f2a-b718" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="20">
@@ -32339,12 +32131,12 @@ have one item from" field="name"/>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10d9-3f01-7923-81ff"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="10d9-3f01-7923-81ff"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Combat shield" hidden="false" id="3e10-365b-c98e-a35b" type="selectionEntry" targetId="5606-f0ad-360b-fe5b" sortIndex="22">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fae-f8ce-0603-75bf"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7fae-f8ce-0603-75bf"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Boarding shield" hidden="false" id="85b1-0089-f754-c9a6" type="selectionEntry" targetId="01e9-334c-80cb-f1c6" sortIndex="23">
@@ -32352,7 +32144,7 @@ have one item from" field="name"/>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bc8-fe1e-ad28-ed9a"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8bc8-fe1e-ad28-ed9a"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Charnabal sabre" hidden="false" id="7634-d6fc-c76f-2b8f" type="selectionEntry" targetId="e85f-734a-c587-e88b" sortIndex="12">
@@ -32360,7 +32152,7 @@ have one item from" field="name"/>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="823a-7c21-8b8b-1ef5"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="823a-7c21-8b8b-1ef5"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Inferno Pistol" hidden="true" id="6b2c-959f-5f73-e0f4" type="selectionEntry" targetId="0a98-b701-5f6c-1fc1" sortIndex="7">
@@ -32376,7 +32168,7 @@ have one item from" field="name"/>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e208-f96e-341b-4e4d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e208-f96e-341b-4e4d"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Graviton crusher" hidden="true" id="fc66-cb12-9d14-4a45" type="selectionEntry" targetId="78f1-345c-81d8-1cb1" sortIndex="16">
@@ -32405,7 +32197,7 @@ have one item from" field="name"/>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78c6-4877-f332-2c1d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="78c6-4877-f332-2c1d"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Solarite Power Gauntlet" hidden="true" id="d930-e96d-982c-0646" type="selectionEntry" targetId="ddcb-01e9-18af-c8f6" sortIndex="15">
@@ -32434,7 +32226,7 @@ have one item from" field="name"/>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7084-799c-b6ba-70c6"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7084-799c-b6ba-70c6"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Forge-crafted power fist" hidden="true" id="ce4e-8881-1528-02bd" type="selectionEntry" targetId="8146-abba-1612-3d0f" sortIndex="14">
@@ -32465,7 +32257,7 @@ have one item from" field="name"/>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e715-8108-6034-414e"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e715-8108-6034-414e"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="c9d1-2999-6494-b8a0" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="21">
@@ -32495,7 +32287,7 @@ have one item from" field="name"/>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09ee-5d9d-21a8-8015"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="09ee-5d9d-21a8-8015"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Terranic greatsword" hidden="true" id="97af-7dc8-7907-3c5f" type="selectionEntry" targetId="f1aa-3d18-caac-a960" sortIndex="16">
@@ -32524,7 +32316,7 @@ have one item from" field="name"/>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af6c-39a4-01a3-bb2f"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="af6c-39a4-01a3-bb2f"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Fenrisian axe" hidden="true" id="38ed-18af-9bdc-c819" type="selectionEntry" targetId="278c-bdcf-2780-d9cf" sortIndex="3">
@@ -32545,7 +32337,7 @@ have one item from" field="name"/>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfe5-554e-c8c4-c1c1"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="cfe5-554e-c8c4-c1c1"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Frost claw" hidden="true" id="9651-f51a-4613-2870" type="selectionEntry" targetId="e14f-7600-8fdd-65ce" sortIndex="18">
@@ -32574,7 +32366,7 @@ have one item from" field="name"/>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="daa3-1435-49d3-b54d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="daa3-1435-49d3-b54d"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Raven&apos;s Talons" hidden="true" id="69d2-f872-ec5f-93fc" type="selectionEntry" targetId="8682-12f8-dccc-c0e2" sortIndex="19">
@@ -32596,7 +32388,7 @@ have one item from" field="name"/>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4dda-cc6d-a060-c6ef"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4dda-cc6d-a060-c6ef"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Graviton pistol" hidden="true" id="a568-dbaf-80f3-4189" type="selectionEntry" targetId="320a-5112-0e89-aad4" sortIndex="8">
@@ -32625,7 +32417,7 @@ have one item from" field="name"/>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a4e-d528-9d96-05a4"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7a4e-d528-9d96-05a4"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Vigil Pattern Storm Shield" hidden="true" id="a105-f071-dde3-f2d4" type="selectionEntry" targetId="b672-10f1-20c8-c724" sortIndex="24">
@@ -32651,7 +32443,7 @@ have one item from" field="name"/>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71ca-01b5-3f5d-be1a"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="71ca-01b5-3f5d-be1a"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Escaton power claw" hidden="true" id="c0b1-8efb-c14a-d982" type="selectionEntry" targetId="a284-2bc5-12da-ec8a" sortIndex="25">
@@ -32672,7 +32464,7 @@ have one item from" field="name"/>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="20d9-0abc-0dc1-75d9"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="20d9-0abc-0dc1-75d9"/>
           </constraints>
         </entryLink>
       </entryLinks>
