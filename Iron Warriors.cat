@@ -1144,9 +1144,9 @@ Only a Model with the Iron Warriors Trait and the Paragon Type or Command Sub-Ty
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="115"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Nârik Dreygur" id="79e9-1649-455c-b748" page="90" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Nârik Dreygur" id="79e9-1649-455c-b748" page="90" publicationId="5469-14da-d0a1-6092" sortIndex="1">
           <profiles>
-            <profile id="65b0-63ac-43b9-aa24" name="Nârik Dreygur" typeId="a76f-8e23-8c3e-166d">
+            <profile id="65b0-63ac-43b9-aa24" name="Nârik Dreygur" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
@@ -1174,28 +1174,40 @@ Only a Model with the Iron Warriors Trait and the Paragon Type or Command Sub-Ty
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3170-ef4c-4b0f-9955"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="e55b-55fd-49ce-8483" name="Bolt pistol">
+            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="e55b-55fd-49ce-8483" name="Bolt pistol" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="516d-917e-436c-9511"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4570-876a-40a2-b16c"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="83f5-dda3-4c9c-bb5f" name="Frag grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="83f5-dda3-4c9c-bb5f" name="Frag grenades" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff98-41b5-4b91-95b9"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f13-447a-41b2-bbc2"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="d5ea-59f5-4f92-a729" name="Krak grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="d5ea-59f5-4f92-a729" name="Krak grenades" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d2db-a8a7-4b08-8f6b"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a158-fb48-42fe-9dd7"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="e1c7-e5c2-8a4c-1e79" id="7e02-e80b-4289-8d95" name="Cortex controller">
+            <entryLink hidden="false" type="selectionEntry" targetId="e1c7-e5c2-8a4c-1e79" id="7e02-e80b-4289-8d95" name="Cortex controller" sortIndex="5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4fdc-1d14-4186-80e7"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e787-07c5-4be6-abc7"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Graviton gauntlet" hidden="false" id="f9b3-4dcc-4a2b-f202" type="selectionEntry" targetId="a3e7-c6b3-0e66-6980" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37eb-da7e-cb1e-4044"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3832-9926-f094-c3da"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Master of Automata" hidden="false" id="087c-d068-624f-252f" type="selectionEntry" targetId="abf3-3d0e-d457-3a59">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a727-c500-cd58-71bd"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e45-223a-726d-d013"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -1205,9 +1217,6 @@ Only a Model with the Iron Warriors Trait and the Paragon Type or Command Sub-Ty
             <categoryLink targetId="9871-cb62-5283-2216" id="a0f7-3929-4402-a5d3" primary="false" name="Command Model Sub-type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="68c2-5783-403f-bf4c" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear Graviton gauntlet
-	 Checked under Graviton gauntlet</comment>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1221,9 +1230,23 @@ Could not find wargear Graviton gauntlet
             <modifier type="set" field="name" value="Feel No Pain (5+)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="[Allegiance]" id="8940-6e82-7c67-ec29" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="7616-edc1-e771-5d16" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
-      <comment>warning: !BSC 20250828-1757
-Could not find rule: Master of Automata (see Liber Hereticus, page 37)</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="36df-1e7a-89fb-e71b" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="3ad3-c79e-8ad4-9f1c" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="2"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="5004-661f-127c-d91f" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry name="Iron Warriors Dominator Cohort" type="unit" id="d1fa-8392-4117-990d" sortIndex="7" page="91" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -1739,6 +1762,11 @@ Process.
     <entryLink import="true" name="Warsmith In Artificer Armour" hidden="false" id="c912-c48f-da79-3d45" type="selectionEntry" targetId="269e-a6c3-41a0-8cc3" sortIndex="5">
       <categoryLinks>
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="130b-4914-8536-c593" primary="true" name="High Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Nârik Dreygur" hidden="false" id="f539-bd38-6f47-45b5" type="selectionEntry" targetId="42ce-6dde-4967-b87a">
+      <categoryLinks>
+        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="2288-48ab-37fe-a686" primary="true" name="High Command"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
