@@ -1451,9 +1451,21 @@ If the Missing being played has a Deploy Armies Step, at the end of this step, t
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="Only one Delegatus allowed in Army" field="error">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d45d-6c54-4dfc-92af" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="69bd-718d-4166-aecb" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="60f6-7316-4e0a-874b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="3834-16b6-01ac-35b1" primary="false" name="Master of the Legion"/>
+        <categoryLink targetId="8a97-1585-93e7-c561" id="aa6d-17dd-7964-998a" primary="false" name="+1 Apex from High Command"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Effrit Disruption Cadre" hidden="false" id="ce42-aa07-7613-a86d" sortIndex="8">
