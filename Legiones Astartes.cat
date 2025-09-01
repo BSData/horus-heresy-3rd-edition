@@ -17208,9 +17208,9 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Vindicator Siege Tank" hidden="false" id="5cb0-777c-bc90-f31a" sortIndex="68">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Options" id="fbd0-ae95-99c9-34cb" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Options" id="fbd0-ae95-99c9-34cb" hidden="false" sortIndex="3">
           <entryLinks>
-            <entryLink import="true" name="Hunter-killer missile" hidden="false" id="fb7e-3a13-4eb9-eec1" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" sortIndex="3">
+            <entryLink import="true" name="Hunter-killer missile" hidden="false" id="fb7e-3a13-4eb9-eec1" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" sortIndex="4">
               <modifiers>
                 <modifier type="set" value="Hull (Front) hunter-killer missile" field="name"/>
               </modifiers>
@@ -17221,7 +17221,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="465c-7085-09b0-addd" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Searchlight" hidden="false" id="3cbf-e3b9-93b3-f5ae" type="selectionEntry" targetId="5a85-bf28-f790-7bf0" sortIndex="4">
+            <entryLink import="true" name="Searchlight" hidden="false" id="3cbf-e3b9-93b3-f5ae" type="selectionEntry" targetId="5a85-bf28-f790-7bf0" sortIndex="5">
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
               </costs>
@@ -17229,7 +17229,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5386-af3d-2c39-9bad" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Dozer blade" hidden="false" id="fa45-a07e-af8a-d95a" type="selectionEntry" targetId="496e-da18-2afa-b99c" sortIndex="5">
+            <entryLink import="true" name="Dozer blade" hidden="false" id="fa45-a07e-af8a-d95a" type="selectionEntry" targetId="496e-da18-2afa-b99c" sortIndex="6">
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
               </costs>
@@ -17237,7 +17237,16 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3726-91fe-c339-8ae7" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Legion Pintle Weapons" hidden="false" id="d958-ce41-dbd1-9962" type="selectionEntryGroup" targetId="d625-37d6-d83a-0de3" sortIndex="2"/>
+            <entryLink import="true" name="Legion Pintle Weapons" hidden="false" id="d958-ce41-dbd1-9962" type="selectionEntryGroup" targetId="d625-37d6-d83a-0de3" sortIndex="3"/>
+            <entryLink import="true" name="Combi-bolter" hidden="false" id="ce83-f9ac-4100-827a" type="selectionEntry" targetId="042d-9e60-db9e-c147" sortIndex="2">
+              <modifiers>
+                <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0971-16f4-98ec-c964"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e3e-6dd8-4f0d-5b85"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Main gun" id="67c6-81be-a42f-397b" hidden="false" defaultSelectionEntryId="5ccc-9f40-dd83-797f" sortIndex="1">
@@ -17258,11 +17267,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Combi-bolter" hidden="false" id="ce83-f9ac-4100-827a" type="selectionEntry" targetId="042d-9e60-db9e-c147" sortIndex="3">
-          <modifiers>
-            <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
-          </modifiers>
-        </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="f03a-aa8d-5f6b-1184" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="e26c-34e9-dfb1-6d55" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
