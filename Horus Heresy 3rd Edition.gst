@@ -19464,8 +19464,8 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d9a6-9b5f-b18a-4d63" shared="true" includeChildSelections="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="12d9-f8dc-4db6-0880" shared="true" includeChildSelections="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="unit" childId="d9a6-9b5f-b18a-4d63" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="unit" childId="12d9-f8dc-4db6-0880" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>

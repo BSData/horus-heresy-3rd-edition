@@ -6559,72 +6559,6 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Banestrike bolter w/ Bayonet" hidden="true" id="b2c9-7ceb-417d-7e4d">
-      <entryLinks>
-        <entryLink import="true" name="Banestrike bolter" hidden="false" id="6fa2-e62d-ec26-d4a7" type="selectionEntry" targetId="69de-4883-efd2-b876"/>
-        <entryLink import="true" name="Bayonet" hidden="false" id="79a3-10da-5f91-3fa9" type="selectionEntry" targetId="3484-1bd3-cb74-7abe"/>
-      </entryLinks>
-      <costs>
-        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
-        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
-      </costs>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <comment>SH</comment>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-          <comment>SH+Cmd/Champ Only</comment>
-        </modifier>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Banestrike bolter w/ Chain bayonet" hidden="true" id="dcc7-6fd9-e976-f4f2">
-      <costs>
-        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
-        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
-      </costs>
-      <entryLinks>
-        <entryLink import="true" name="Banestrike bolter" hidden="false" id="1a25-ef39-1e14-2c1c" type="selectionEntry" targetId="69de-4883-efd2-b876"/>
-        <entryLink import="true" name="Chain bayonet" hidden="false" id="8bd0-6891-dc89-622c" type="selectionEntry" targetId="e410-d998-bd3e-c0ea"/>
-      </entryLinks>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
-              </conditions>
-              <comment>SH</comment>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-          <comment>SH+Cmd/Champ Only</comment>
-        </modifier>
-      </modifiers>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma repeater" hidden="false" id="e61e-cac4-a125-5190">
       <profiles>
         <profile name="Plasma repeater (Maximal)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="3fa7-e160-2ac0-9c46">
@@ -7554,6 +7488,77 @@
           <comment>5&quot;</comment>
           <modifiers>
             <modifier type="set" value="Blast (5&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Volcano Cannon" hidden="false" id="c5f4-55af-54bb-2d18">
+      <profiles>
+        <profile name="Volcano Cannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="8b5d-2370-3f29-8ad6">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">120</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">13</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">12</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Blast (3&quot;), Macro-auspex</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Las</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast (X)" id="5160-fe02-5b10-2104" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+          <comment>3&quot;</comment>
+          <modifiers>
+            <modifier type="set" value="Blast (3&quot;)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Macro-Auspex" id="bc38-ea08-624b-5627" hidden="false" type="rule" targetId="8120-65ac-c2d4-a555"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Graviton gauntlet" hidden="false" id="a3e7-c6b3-0e66-6980">
+      <profiles>
+        <profile name="Graviton gauntlet" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="009f-bd72-d379-4bb2">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">-3</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+3</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Shock (Pinned)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Graviton, Power</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shock (X)" id="3d4e-a0b2-dfc9-58d9" hidden="false" type="rule" targetId="c6fd-28d0-3f80-672c">
+          <comment>Pinned</comment>
+          <modifiers>
+            <modifier type="set" value="Shock (Pinned)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Graviton mace" hidden="false" id="5b4a-2c87-eb0f-37a5">
+      <profiles>
+        <profile name="Graviton mace" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="f69d-772b-0869-8fda">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">-1</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+3</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Armourbane, Shock (Pinned)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Graviton</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Armourbane" id="1978-0606-fca1-782b" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+        <infoLink name="Shock (X)" id="9a69-70d4-7138-3b8f" hidden="false" type="rule" targetId="c6fd-28d0-3f80-672c">
+          <comment>Pinned</comment>
+          <modifiers>
+            <modifier type="set" value="Shock (Pinned)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
