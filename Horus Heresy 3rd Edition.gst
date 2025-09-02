@@ -19971,7 +19971,7 @@ When a Model with this Special Rule is included in a Detachment, one additional 
         <rule name="Legiones Thallaxes" id="3763-8cab-f5b5-9bd7" hidden="false">
           <description>&quot;This Special Rule allows Thallax Units to be selected as part of a Detachment that includes a Forge Lord.&quot;
 
-When a Model with this Special Rule is included in a Detachment, two additional Force Organisation Slots are added to that Detachment. These Slots can only be filled with Thallax Cohort Units selected from Liber Mechanicum. When such a Unit is included in this way, the Reductor Trait is replaced with ‘Bonded Reductor’ on all Models in the Unit, and the Aegis of Pain Special Rule is removed from all Models in the Unit. These Units can be included even though they do not have the same Faction Trait as the other Units in that Detachment.</description>
+When a Model with this Special Rule is included in a Detachment, two additional Force Organisation Slots are added to that Detachment. These Slots can only be filled with Thallax Cohort Units selected from Liber Mechanicum. When such a Unit is included in this way, the Reductor Trait is replaced with ‘Bonded Reductor’ on all Models in the Unit, and the Aegis of Pain Special Rule is removed from all Models in the Unit. These Units can be included even though they do not have the same Faction Trait as the other Units in that Detachment.</description>
         </rule>
       </rules>
     </selectionEntry>
