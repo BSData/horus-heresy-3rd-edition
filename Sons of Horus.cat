@@ -1437,6 +1437,13 @@ If the Wounds Characteristic of a Model with this Special Rule is reduced to 0 o
             <categoryLink targetId="8045-89a4-76d4-fcef" id="9506-7d18-086e-23b8" primary="false" name="Sergeant Model Sub-Type"/>
             <categoryLink targetId="594d-fa82-13cb-a345" id="b1e6-c1d2-424e-b721" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Reaver" hidden="false" id="0d9d-8a8f-b0f0-abeb" sortIndex="2">
           <profiles>

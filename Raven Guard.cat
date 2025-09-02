@@ -554,6 +554,13 @@ A Model with this Special Rule is never forced to make Shooting Attacks as Snap 
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea9d-01dc-52e8-b866" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0938-b54d-874d-469c" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -725,6 +732,11 @@ Once per Battle, if a Unit with this Special Rule remains Stationary in the prev
             <modifier type="set" value="2" field="d18e-6cfa-4868-86a4">
               <conditions>
                 <condition type="equalTo" value="8" field="selections" scope="unit" childId="c88e-ddfb-6f84-acd8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>

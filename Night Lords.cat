@@ -252,6 +252,13 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
             <categoryLink targetId="8045-89a4-76d4-fcef" id="85e0-9228-a029-1b1c" primary="false" name="Sergeant Model Sub-Type"/>
             <categoryLink targetId="594d-fa82-13cb-a345" id="c642-b2c8-4127-81f3" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Contekar" hidden="false" id="8694-d026-1301-a0df" sortIndex="2">
           <profiles>
@@ -478,6 +485,13 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
               </constraints>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Night Raptor" hidden="false" id="2cf7-d782-bfc5-d3cf" sortIndex="2">
           <profiles>
@@ -873,6 +887,11 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
           </categoryLinks>
           <modifiers>
             <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Executioner" hidden="false" id="2fc1-8f08-e3ee-fb5b" sortIndex="2" publicationId="e54c-7040-0f35-d85d" page="172">

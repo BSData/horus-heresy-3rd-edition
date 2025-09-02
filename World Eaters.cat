@@ -450,7 +450,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca02-2b47-27da-b541" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Butcher Chainfists" hidden="false" id="7ad6-d711-ddc0-0975" sortIndex="2" defaultAmount="">
+                <selectionEntry type="upgrade" import="true" name="Butcher Chainfists" hidden="false" id="7ad6-d711-ddc0-0975" sortIndex="2">
                   <profiles>
                     <profile name="Butcher Chainfists" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="5cf1-a077-ddfb-2486">
                       <characteristics>
@@ -604,6 +604,13 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
               </constraints>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Red Butcher" hidden="false" id="08a3-46d5-a3ce-0b30" sortIndex="2">
           <constraints>
