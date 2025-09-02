@@ -1745,7 +1745,7 @@ When a Unit with at least one Model with this Special Rule is deployed via Deep 
       <selectionEntries>
         <selectionEntry type="model" name="Sanguinary Guard" id="7eed-be8c-4d5f-9c7f" page="112" publicationId="5469-14da-d0a1-6092" sortIndex="1">
           <profiles>
-            <profile id="a2af-2c82-4629-8677" name="Sanguinary Guard" typeId="a76f-8e23-8c3e-166d">
+            <profile id="a2af-2c82-4629-8677" name="Sanguinary Guard" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">12</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
@@ -1763,6 +1763,24 @@ When a Unit with at least one Model with this Special Rule is deployed via Deep 
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Antigrav)</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -1903,6 +1921,11 @@ When a Unit with at least one Model with this Special Rule is deployed via Deep 
             <modifier type="prepend" value="Every model in the Unit may have" field="name"/>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="3897-d401-223b-69bc" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="35b9-eae2-7a68-1a1e" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry name="Ofanim Court" type="unit" id="cd4b-8935-4b71-aecd" sortIndex="10" page="113" publicationId="5469-14da-d0a1-6092">
@@ -1912,7 +1935,7 @@ When a Unit with at least one Model with this Special Rule is deployed via Deep 
       <selectionEntries>
         <selectionEntry type="model" name="Ofanim" id="dad2-655b-4500-a0fb" page="113" publicationId="5469-14da-d0a1-6092">
           <profiles>
-            <profile id="7838-19ae-466e-a12d" name="Ofanim" typeId="a76f-8e23-8c3e-166d">
+            <profile id="7838-19ae-466e-a12d" name="Ofanim" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
@@ -1930,6 +1953,24 @@ When a Unit with at least one Model with this Special Rule is deployed via Deep 
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Champion)</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -1940,28 +1981,34 @@ When a Unit with at least one Model with this Special Rule is deployed via Deep 
             <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="222d-79bc-42d3-9f3b"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="adcf-4aa4-4d76-888f" name="Bolt pistol">
+            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="adcf-4aa4-4d76-888f" name="Bolt pistol" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d1c-e833-4e9c-b778"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1c7-f4ca-45f4-a5e1"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="5606-f0ad-360b-fe5b" id="9fb1-52d8-4677-ad31" name="Combat shield">
+            <entryLink hidden="false" type="selectionEntry" targetId="5606-f0ad-360b-fe5b" id="9fb1-52d8-4677-ad31" name="Combat shield" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c629-3d7f-4ab5-9988"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0d4-b0c3-4bca-b1c3"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="401a-7eb8-4321-9a3e" name="Frag grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="401a-7eb8-4321-9a3e" name="Frag grenades" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e703-6f48-45af-b1e7"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a326-b952-44e4-b866"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="7c77-fb9b-42c3-a291" name="Krak grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="7c77-fb9b-42c3-a291" name="Krak grenades" sortIndex="5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a9a-f87a-4115-87c1"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2c4-99c9-4a80-9324"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Blade of Judgement" hidden="false" id="721c-cf3a-5fb7-b2cc" type="selectionEntry" targetId="e9e7-27c2-3728-cf4d" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2522-b640-3850-7622"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7292-ccc5-2cea-89e6"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -1969,14 +2016,23 @@ When a Unit with at least one Model with this Special Rule is deployed via Deep 
             <categoryLink targetId="594d-fa82-13cb-a345" id="ef83-000e-4f60-b57f" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="5a95-e564-96b2-8dc9" id="55ca-4061-4d50-ae60" primary="false" name="Champion Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear Blade of judgement
-	 Checked under Blade of judgement</comment>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250828-1757
-Could not find rule: Shadows of Judgement  SPECIAL RULES
-Could not find rule: Shadows of Judgement</comment>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="45e0-712a-aadc-fe57" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="4a2c-d3de-9402-56f5" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Shadows of Judgement" id="d115-7f0b-f6ce-2686" hidden="false" type="rule" targetId="4849-aaba-9865-c0b1"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="304b-6ebf-b65a-a114" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="edba-f6bb-e5b5-02ea" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="73b2-ef4e-36b0-0732" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry name="Ofanim Court With Jump Packs" type="unit" id="0e97-f032-4f2a-91ac" sortIndex="11" page="114" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -1985,7 +2041,7 @@ Could not find rule: Shadows of Judgement</comment>
       <selectionEntries>
         <selectionEntry type="model" name="Ofanim with Jump Pack" id="7fbb-f90e-465c-a259" page="114" publicationId="5469-14da-d0a1-6092">
           <profiles>
-            <profile id="c5e5-9bec-4adf-8d86" name="Ofanim with Jump Pack" typeId="a76f-8e23-8c3e-166d">
+            <profile id="c5e5-9bec-4adf-8d86" name="Ofanim with Jump Pack" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">12</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
@@ -2003,6 +2059,24 @@ Could not find rule: Shadows of Judgement</comment>
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Champion, Antigrav)</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -2037,15 +2111,18 @@ Could not find rule: Shadows of Judgement</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24fa-8846-4dda-89ca"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Blade of Judgement" hidden="false" id="99c5-2524-cac7-8e8f" type="selectionEntry" targetId="e9e7-27c2-3728-cf4d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c8d-00d5-9333-2aea"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e0d-25e7-48f1-1483"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="51ff-52ff-4460-8884" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="5a95-e564-96b2-8dc9" id="913c-cfbe-4cc7-9d65" primary="false" name="Champion Model Sub-Type"/>
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="ca84-81f1-4a4b-a2de" primary="false" name="Antigrav Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear Blade of judgement
-	 Checked under Blade of judgement</comment>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -2055,10 +2132,49 @@ Could not find wargear Blade of judgement
           </modifiers>
         </infoLink>
         <infoLink name="Deep Strike" hidden="false" type="rule" targetId="0553-d06b-52b9-34db" id="2fca-1e0a-4601-ac01"/>
+        <infoLink name="Shadows of Judgement" id="12c6-7c3c-4f62-1341" hidden="false" type="rule" targetId="4849-aaba-9865-c0b1"/>
+        <infoLink name="[Allegiance]" id="d007-2c6a-5a53-d62f" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="800a-4813-3d80-c243" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
-      <comment>warning: !BSC 20250828-1757
-Could not find rule: Shadows of Judgement  SPECIAL RULES
-Could not find rule: Shadows of Judgement</comment>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="8965-09e1-56f9-90f0" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="b1b1-c2f2-7b3c-65d8" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="27f4-d5ea-6f8f-83ff" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Blade of Judgement" hidden="false" id="e9e7-27c2-3728-cf4d" sortIndex="99">
+      <profiles>
+        <profile name="Blade of Judgement" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="3d51-0cbc-af95-4081">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+), Critical Hit (6+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="1ffa-fb57-6525-1223" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <comment>5+</comment>
+          <modifiers>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Critical Hit (X)" id="69d9-c08f-1667-8eb0" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
+          <comment>6+</comment>
+          <modifiers>
+            <modifier type="set" value="Critical Hit (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -2143,6 +2259,16 @@ Could not find rule: Shadows of Judgement</comment>
     <entryLink import="true" name="Sanguinary Guard" hidden="false" id="8f95-d929-4ae0-cdbf" type="selectionEntry" targetId="b862-722c-4275-8f78" sortIndex="9">
       <categoryLinks>
         <categoryLink targetId="a38e-50ff-310f-f19e" id="7a6d-db68-9210-7439" primary="true" name="Retinue"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Ofanim Court" hidden="false" id="1c25-a035-0b32-43f1" type="selectionEntry" targetId="cd4b-8935-4b71-aecd" sortIndex="10">
+      <categoryLinks>
+        <categoryLink targetId="a38e-50ff-310f-f19e" id="cd01-6f4e-4bd0-73f0" primary="true" name="Retinue"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Ofanim Court With Jump Packs" hidden="false" id="3442-23a4-4db6-0060" type="selectionEntry" targetId="0e97-f032-4f2a-91ac" sortIndex="11">
+      <categoryLinks>
+        <categoryLink targetId="a38e-50ff-310f-f19e" id="68f7-fadd-2c79-d59d" primary="true" name="Retinue"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
