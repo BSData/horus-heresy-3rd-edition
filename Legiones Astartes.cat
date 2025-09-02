@@ -13537,6 +13537,20 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Iliastus Assault Cannon" hidden="true" id="0dc6-9078-29ed-d182" type="selectionEntry" targetId="f38b-8af1-17b8-30fe" sortIndex="9">
+              <modifiers>
+                <modifier type="increment" value="20" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d186-cffc-0950-f632" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4cad-990b-669b-c9ca" includeChildSelections="false"/>
@@ -13599,13 +13613,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="Iliastus Support Squad" field="name">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="unit" childId="f38b-8af1-17b8-30fe" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Apothecary" hidden="false" id="b7fe-ba65-00d2-57f0" sortIndex="37">
       <selectionEntries>
