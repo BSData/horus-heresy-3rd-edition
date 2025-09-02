@@ -1542,53 +1542,63 @@ When a Unit with at least one Model with this Special Rule is deployed via Deep 
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="8291-40d5-e082-10ac" includeChildSelections="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May equip one of the following:" id="48ce-3719-d3f0-cc29" hidden="false" defaultSelectionEntryId="701d-f822-1777-38f2" sortIndex="1">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Two Volkite Serpenta" hidden="false" id="8a9d-26b7-30f7-8f40" sortIndex="1">
-                  <entryLinks>
-                    <entryLink import="true" name="Volkite serpenta" hidden="false" id="530c-2e46-5bca-8dad" type="selectionEntry" targetId="b7c3-1de1-087c-3d6e">
-                      <constraints>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1187-3cdc-0f82-9f77" includeChildSelections="false"/>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1550-f8fb-4e71-24a7" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3736-41f1-d67c-fb8c" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
+            <selectionEntryGroup name="May equip one of the following:" id="0a17-60b0-fcf7-1dc2" hidden="false" defaultSelectionEntryId="dc57-bf10-bfc4-3f09">
               <entryLinks>
-                <entryLink import="true" name="Erelim Grenade Launcher" hidden="false" id="7d4b-9463-174f-f829" type="selectionEntry" targetId="6fe1-72b5-c567-74ba" sortIndex="2">
+                <entryLink import="true" name="Volkite serpenta" hidden="false" id="dc57-bf10-bfc4-3f09" type="selectionEntry" targetId="b7c3-1de1-087c-3d6e" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c0f-55e9-db37-df33" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="Two volkite serpenta" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Heavy chainsword" hidden="false" id="2b55-f6a4-217b-eb83" type="selectionEntry" targetId="e175-3b00-8885-b321" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82c7-605a-2511-bef4"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="f05a-dfdd-e4f8-570c" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1306-c167-d08d-474d"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Rotor cannon" hidden="false" id="41f1-b5e1-e7ac-d59d" type="selectionEntry" targetId="05bf-af5e-be67-36a2" sortIndex="5">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="532c-c29e-f1a7-2876" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e5d2-b572-0b33-1105"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Iliastus Assault Cannon" hidden="false" id="80ba-ee96-fd9c-22df" type="selectionEntry" targetId="f38b-8af1-17b8-30fe" sortIndex="6">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="820c-e859-0cc6-3a74"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Erelim Grenade Launcher" hidden="false" id="c470-4004-637a-5fdd" type="selectionEntry" targetId="6fe1-72b5-c567-74ba" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="410a-f2ff-b8be-4a79" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a6b7-c22f-ffa1-41c4" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4ea-d911-8147-7a01" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e70f-05b8-00f8-3c2e" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a7a-bc2b-4c2a-ae14" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <entryLinks>
-            <entryLink import="true" name="Rad grenades" hidden="false" id="d772-5c55-36d1-c2be" type="selectionEntry" targetId="cd5f-1eff-df69-6bd2" sortIndex="2">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e1f6-a8ae-fecf-605b" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efd1-5c59-0fae-afc3" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="7ab1-556f-c7aa-4818" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c27-b190-4f18-5744" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4112-d5c5-8024-f08d" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Krak grenades" hidden="false" id="6c9b-1a53-dfd7-0b74" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="4"/>
-          </entryLinks>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -1610,23 +1620,91 @@ When a Unit with at least one Model with this Special Rule is deployed via Deep 
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Arch-Erelim" hidden="false" id="ed0b-6ee1-6d21-4d1e" sortIndex="1">
           <selectionEntryGroups>
-            <selectionEntryGroup name="May equip one of the following:" id="0d8f-f51f-0309-26f4" hidden="false" defaultSelectionEntryId="701d-f822-1777-38f2" sortIndex="1">
+            <selectionEntryGroup name="May equip one of the following:" id="0d8f-f51f-0309-26f4" hidden="false" defaultSelectionEntryId="f365-68e2-511a-c93e" sortIndex="1">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Two Volkite Serpenta" hidden="false" id="701d-f822-1777-38f2" sortIndex="1">
+                <selectionEntry type="upgrade" import="true" name="One volkite serpenta and one melee weapon" hidden="false" id="bd14-45eb-b1f7-1b78" sortIndex="8">
                   <entryLinks>
-                    <entryLink import="true" name="Volkite serpenta" hidden="false" id="f365-68e2-511a-c93e" type="selectionEntry" targetId="b7c3-1de1-087c-3d6e">
+                    <entryLink import="true" name="Volkite serpenta" hidden="false" id="f73d-5a15-b1fe-ae30" type="selectionEntry" targetId="b7c3-1de1-087c-3d6e">
                       <constraints>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d3b4-d3af-671d-cc9b" includeChildSelections="false"/>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7381-e8c1-3e52-e5d7" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b198-058b-60eb-c122"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0bcc-fca2-109d-cec2"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="f063-15c1-cbae-3521" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75e2-0030-c4ac-b06f"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6603-8b8b-072d-13bf"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="9994-4d65-a0b5-bef0" field="defaultSelectionEntryId"/>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="885d-cec8-1282-2dd6"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="One volkite serpenta and one plasma pistol" hidden="false" id="928e-1a29-d5bb-2d4e" sortIndex="7">
+                  <entryLinks>
+                    <entryLink import="true" name="Volkite serpenta" hidden="false" id="2ed8-c39a-e21c-f41b" type="selectionEntry" targetId="b7c3-1de1-087c-3d6e">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="978c-6c04-648c-fad3"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="955f-0816-194a-6a7e"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Plasma pistol" hidden="false" id="8617-5b81-3998-0682" type="selectionEntry" targetId="659f-d52e-1515-2912">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1059-9728-7088-67cb"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3c9-7833-be2b-2db7"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e12b-7de2-8b9d-84be" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f6f-d3d4-f8ae-4aaa"/>
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
+                <entryLink import="true" name="Volkite serpenta" hidden="false" id="f365-68e2-511a-c93e" type="selectionEntry" targetId="b7c3-1de1-087c-3d6e" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7381-e8c1-3e52-e5d7" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="Two volkite serpenta" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Heavy chainsword" hidden="false" id="91e6-28b7-b009-ceae" type="selectionEntry" targetId="e175-3b00-8885-b321" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2130-3d47-ff73-20c6"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="6452-2469-9749-9f5f" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b5c-b6ed-0f4f-9825"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Rotor cannon" hidden="false" id="bf7b-2b16-a106-3ee6" type="selectionEntry" targetId="05bf-af5e-be67-36a2" sortIndex="5">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f91-6648-aedd-6a7f"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Iliastus Assault Cannon" hidden="false" id="06bd-e93b-1ed1-7bda" type="selectionEntry" targetId="f38b-8af1-17b8-30fe" sortIndex="6">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bab9-b441-b855-b697"/>
+                  </constraints>
+                </entryLink>
                 <entryLink import="true" name="Erelim Grenade Launcher" hidden="false" id="d51f-c67a-8baa-d538" type="selectionEntry" targetId="6fe1-72b5-c567-74ba" sortIndex="2">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
@@ -1642,21 +1720,6 @@ When a Unit with at least one Model with this Special Rule is deployed via Deep 
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <entryLinks>
-            <entryLink import="true" name="Rad grenades" hidden="false" id="626c-6cdc-e97d-39aa" type="selectionEntry" targetId="cd5f-1eff-df69-6bd2" sortIndex="2">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d669-4915-ea5d-871c" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ce0-03eb-5d70-4e96" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="efc4-9eb8-d1ff-7291" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2dd8-e722-317d-2755" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a84d-812b-c4bb-c4ee" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Krak grenades" hidden="false" id="5fdd-a03f-34e3-909d" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="4"/>
-          </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fb43-acbc-65b5-4e61" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1670-78b9-2889-a13e" includeChildSelections="false"/>
@@ -1757,6 +1820,24 @@ When a Unit with at least one Model with this Special Rule is deployed via Deep 
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="a9bf-5397-49b0-b617" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Frag grenades" hidden="false" id="efc4-9eb8-d1ff-7291" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2dd8-e722-317d-2755" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a84d-812b-c4bb-c4ee" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak grenades" hidden="false" id="5fdd-a03f-34e3-909d" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85cb-b49d-895c-e39e"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f078-14ef-c991-f8ee"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Rad grenades" hidden="false" id="626c-6cdc-e97d-39aa" type="selectionEntry" targetId="cd5f-1eff-df69-6bd2" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d669-4915-ea5d-871c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ce0-03eb-5d70-4e96" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
