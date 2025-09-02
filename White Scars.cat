@@ -2883,6 +2883,20 @@ A Unit that includes any Models with this Special Rule may be selected as the ta
         </rule>
       </rules>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="e4ad-8839-cc53-92e2">
+      <entryLinks>
+        <entryLink import="true" name="Rite of War" hidden="false" id="1923-c19f-6a0c-7add" type="selectionEntryGroup" targetId="ab39-74a9-cbc7-dcf5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a6e-42a8-a037-95a9"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54a0-9811-4257-502d"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="692d-df0b-2783-8b39"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e36d-bfd2-2408-cf90"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="37c5-72c7-2f9f-397b" targetId="9b32-f350-6aa9-9c09" importRootEntries="true"/>
@@ -2981,6 +2995,11 @@ A Unit that includes any Models with this Special Rule may be selected as the ta
         <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="4d91-f746-d9d5-4657" primary="false" name="White Scars"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Rite of War" hidden="false" id="a4dd-4bc2-7ddd-a456" type="selectionEntry" targetId="e4ad-8839-cc53-92e2">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="ccc0-da41-7dbb-e4d1" primary="true" name="Army Configuration"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedRules>
     <rule name="Swift of Action" id="d3e8-b33b-5486-1510" hidden="false">
@@ -2996,4 +3015,60 @@ A Unit that includes any Models with this Special Rule may be selected as the ta
       <comment>WS Unique Gambit</comment>
     </profile>
   </sharedProfiles>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Rite of War" id="ab39-74a9-cbc7-dcf5" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="RoW: Legiones Astartes White Scars" hidden="false" id="1ae5-afc0-ebb1-7fa8">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Legion Tactica" hidden="false" id="a8c0-e248-1cd2-a3b7">
+              <rules>
+                <rule name="Swift of Action" id="7557-938d-f2fb-6cfa" hidden="false">
+                  <description>&quot;The White Scars Player may increase their Model&apos;s Movement Characteristic.&quot;
+
+
+At the start of any of the Controlling Player&apos;s Turns that Player may choose to increase the movement Characteristic of any Model with this Special Rule and a Base Movement Characteristic of at least 1 and apply a modifier of +2 to that Characteristic until the end of that Player Turn.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="03c4-b0be-ce3f-4cb9"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6dd-eaa1-96f6-0278"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gambit" hidden="false" id="888d-4cfa-f24a-caf5">
+              <profiles>
+                <profile name="The Path of the Warrior" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="1a3f-4108-7028-2a53">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">The Controlling Player may take a chance to gain a bonus to the Focus Roll.</characteristic>
+                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">When this Gambit is selected, before making the Focus Roll, the Controlling Player must declare a choice to &apos;Strike Low&apos; (predicting the result of the next Focus Roll, before any modifiers are applied, is 1-3) or to &apos;Strike High&apos; (predicting the result of the next Focus Roll, before any modifiers are applied, is 4-6). If the result of the Focus Roll corresponds with their choice, they may ignore all negative modifiers and only apply positive modifiers to their Focus Roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="97bf-d1df-74ec-84ac"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f029-f430-afdc-8b82"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Advanced Reaction" hidden="false" id="b182-e29b-48bb-e2ad">
+              <profiles>
+                <profile name="Chasing the Wind" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="b75b-25ce-2de8-40fe">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Advanced Reaction allows the Controlling Player to make an additional Move with the Reacting Unit.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Chasing the Wind Advanced Reaction in Step 2 of the Move Sub-Phase process, if an enemy Unit ends a move within 12&quot; and in Line of Sight of a Unit that only includes Models with the White Scars Trait under the Reactive Player&apos;s control.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare the Chasing the Wind Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Move triggered the Advanced Reaction. Once the cost has been paid, the Reactive Player must select one Unit that only includes Models with the White Scars Trait under their control that is within 12&quot; and has Line of Sight to the Target Unit, that Unit is the Reacting Unit.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once the Target Unit has finished its Move, the Reactive Player may make a Move with the Reacting Unit, following the normal Rules for Movement, including applying any modifiers due to Difficult Terrain and making Tests required due to Dangerous Terrain but the Reacting Unit may not Rush.
+2. Once the Reacting Unit has completed this move, the Active Player must then proceed with the remainder of their Movement Phase.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4638-b673-9f51-9cf3"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8f0-9aab-da0b-5a3e"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
