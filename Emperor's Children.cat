@@ -1143,7 +1143,7 @@ Bite of the Betrayed: This Gambit can only be selected during the first Face-Off
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="647c-faca-3c98-c203" id="0544-5d10-a9ef-d5c2" primary="false" name="Free Power Weapon"/>
-        <categoryLink targetId="c431-2701-faba-c39b" id="9d9e-f8ae-cfeb-ee2b" primary="false" name="No default Power Weapon"/>
+        <categoryLink targetId="dd1b-70ef-6015-1291" id="f1ac-a589-26f4-2148" primary="false" name="No default Power Weapon"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kakophoni Squad" hidden="false" id="4ac4-b32a-6840-a91e" publicationId="e54c-7040-0f35-d85d" page="139">
@@ -1259,6 +1259,13 @@ Bite of the Betrayed: This Gambit can only be selected during the first Face-Off
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Chora" hidden="false" id="d66a-a50b-2dc9-756a" sortIndex="2" page="139" publicationId="e54c-7040-0f35-d85d" defaultAmount="4">
           <costs>
@@ -1665,8 +1672,8 @@ Bite of the Betrayed: This Gambit can only be selected during the first Face-Off
         </entryLink>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="c431-2701-faba-c39b" id="a8e0-a9b1-1ca8-64b0" primary="false" name="No default Power Weapon"/>
         <categoryLink targetId="647c-faca-3c98-c203" id="f790-c107-d504-a3b2" primary="false" name="Free Power Weapon"/>
+        <categoryLink targetId="dd1b-70ef-6015-1291" id="9083-0c08-ccd0-ee00" primary="false" name="No default Power Weapon"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry name="Rylanor The Unyielding" type="unit" id="8899-5b90-49f3-b137" page="87" publicationId="5469-14da-d0a1-6092">
@@ -1749,7 +1756,7 @@ Bite of the Betrayed: This Gambit can only be selected during the first Face-Off
       <rules>
         <rule name="Vengeful Hate" id="d277-f81b-58d5-9efa" hidden="false">
           <description>&quot;Rylanor can fight in a Challenge when Fulgrim is the Challenger.&quot;
-If a Model with this Special Rule is Locked in Combat with an enemy Unit that contains Fulgrim or Fulgrim Transfigured, the Model with this Special Rule is considered to be eligible to take part in a Challenge. In such a Challenge, if Fulgrim or Fulgrim Transfigured is the Challenger, Rylanor must be the Challenged.</description>
+If a Model with this Special Rule is Locked in Combat with an enemy Unit that contains Fulgrim or Fulgrim Transfigured, the Model with this Special Rule is considered to be eligible to take part in a Challenge. In such a Challenge, if Fulgrim or Fulgrim Transfigured is the Challenger, Rylanor must be the Challenged.</description>
         </rule>
       </rules>
       <entryLinks>
@@ -1834,8 +1841,7 @@ If a Model with this Special Rule is Locked in Combat with an enemy Unit that co
             </entryLink>
             <entryLink import="true" name="Legion Equipment" hidden="false" id="8f52-be8a-162c-c0eb" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf">
               <modifiers>
-                <modifier type="set" value="Up to two Sun Killers in this Unit may each have one 
-item from" field="name"/>
+                <modifier type="set" value="Up to two Sun Killers in this Unit may each have one  item from" field="name"/>
               </modifiers>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="e594-9b73-d4cc-cfe3" includeChildSelections="true"/>
@@ -2035,7 +2041,7 @@ item from" field="name"/>
       <rules>
         <rule name="Designated Quarry" id="08ac-a817-ea27-5bca" hidden="false">
           <description>&quot;Models with this Special Rule can have their Ballistic Skill improved once per Battle against a specific target.&quot;
-Once per Battle, before making a Shooting Attack in the Controlling Player’s Shooting Phase, the Controlling Player of a Unit with this Special Rule that did not Move in the previous Movement Phase may select an enemy Unit with the Vehicle Type as that Unit’s Designated Quarry. When the Unit with this Special Rule makes a Shooting Attack that targets an enemy Unit that is selected as their Designated Quarry, the Ballistic Skill Characteristic of all Models with this Special Rule in the Unit making the Shooting Attack is modified by +1 for the duration of the current Phase.</description>
+Once per Battle, before making a Shooting Attack in the Controlling Player’s Shooting Phase, the Controlling Player of a Unit with this Special Rule that did not Move in the previous Movement Phase may select an enemy Unit with the Vehicle Type as that Unit’s Designated Quarry. When the Unit with this Special Rule makes a Shooting Attack that targets an enemy Unit that is selected as their Designated Quarry, the Ballistic Skill Characteristic of all Models with this Special Rule in the Unit making the Shooting Attack is modified by +1 for the duration of the current Phase.</description>
         </rule>
       </rules>
     </selectionEntry>

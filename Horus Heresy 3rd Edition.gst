@@ -511,7 +511,7 @@
     <categoryEntry name="Mortificator" id="4e4f-ab55-68ef-ad63" hidden="false"/>
     <categoryEntry name="Siege Breaker" id="25ad-fbd9-d161-8fd1" hidden="false"/>
     <categoryEntry name="Special Assignment" id="12d9-f8dc-4db6-0880" hidden="false"/>
-    <categoryEntry name="No default Power Weapon" id="c431-2701-faba-c39b" hidden="false"/>
+    <categoryEntry name="No default Power Weapon" id="dd1b-70ef-6015-1291" hidden="false" page=""/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -11369,7 +11369,7 @@
               </constraints>
             </categoryLink>
             <categoryLink name="Master of Automata" hidden="false" id="89dd-fa0f-af89-c7b5" targetId="43f5-bc69-29b9-2286"/>
-            <categoryLink name="War-engine - Upgraded by The Iron-clad" hidden="false" id="4ab7-924c-5609-33cc" targetId="d00a-e269-2ed3-8fc4"/>
+            <categoryLink name="War-engine - Upgraded by The Iron-clad" hidden="false" id="a8c5-a9cc-a05c-f290" targetId="d00a-e269-2ed3-8fc4"/>
           </categoryLinks>
           <constraints>
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="06ca-d5c5-58f1-f184"/>
@@ -19498,7 +19498,6 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category"/>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Paragon of Battle" hidden="false" id="20cb-4eec-0844-8a97" sortIndex="3">
@@ -19971,7 +19970,7 @@ When a Model with this Special Rule is included in a Detachment, one additional 
         <rule name="Legiones Thallaxes" id="3763-8cab-f5b5-9bd7" hidden="false">
           <description>&quot;This Special Rule allows Thallax Units to be selected as part of a Detachment that includes a Forge Lord.&quot;
 
-When a Model with this Special Rule is included in a Detachment, two additional Force Organisation Slots are added to that Detachment. These Slots can only be filled with Thallax Cohort Units selected from Liber Mechanicum. When such a Unit is included in this way, the Reductor Trait is replaced with ‘Bonded Reductor’ on all Models in the Unit, and the Aegis of Pain Special Rule is removed from all Models in the Unit. These Units can be included even though they do not have the same Faction Trait as the other Units in that Detachment.</description>
+When a Model with this Special Rule is included in a Detachment, two additional Force Organisation Slots are added to that Detachment. These Slots can only be filled with Thallax Cohort Units selected from Liber Mechanicum. When such a Unit is included in this way, the Reductor Trait is replaced with ‘Bonded Reductor’ on all Models in the Unit, and the Aegis of Pain Special Rule is removed from all Models in the Unit. These Units can be included even though they do not have the same Faction Trait as the other Units in that Detachment.</description>
         </rule>
       </rules>
     </selectionEntry>
