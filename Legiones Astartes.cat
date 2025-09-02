@@ -13599,6 +13599,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="Iliastus Support Squad" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="unit" childId="f38b-8af1-17b8-30fe" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Apothecary" hidden="false" id="b7fe-ba65-00d2-57f0" sortIndex="37">
       <selectionEntries>
@@ -35668,9 +35675,14 @@ have one item from" field="name"/>
         <entryLink import="true" name="Iliastus Assault Cannon" hidden="true" id="54fc-6605-4459-aaf7" type="selectionEntry" targetId="f38b-8af1-17b8-30fe" sortIndex="10">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d186-cffc-0950-f632" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <costs>
@@ -35737,6 +35749,19 @@ have one item from" field="name"/>
           </modifiers>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Iliastus Assault Cannon" hidden="true" id="fc56-c68b-8527-61fb" type="selectionEntry" targetId="f38b-8af1-17b8-30fe" sortIndex="6">
+          <modifiers>
+            <modifier type="set" value="Two Sponson Mounted Iliastus assault cannon" field="name"/>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d186-cffc-0950-f632" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -35831,9 +35856,14 @@ have one item from" field="name"/>
         <entryLink import="true" name="Iliastus Assault Cannon" hidden="true" id="ec2f-c60b-efbd-c7d9" type="selectionEntry" targetId="f38b-8af1-17b8-30fe" sortIndex="10">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d186-cffc-0950-f632" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" value="Pintel Mounted Iliastus assault cannon" field="name"/>
           </modifiers>
