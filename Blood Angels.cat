@@ -946,7 +946,7 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="f4ed-3ad5-4a26-bb5a" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May select one of the following:" id="1375-51ba-cc84-0c2b" hidden="false" defaultSelectionEntryId="6417-2fa9-6c91-a466">
+            <selectionEntryGroup name="May select one of the following:" id="1375-51ba-cc84-0c2b" hidden="false" defaultSelectionEntryId="6417-2fa9-6c91-a466" sortIndex="1">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Power Sword &amp; Coriolis Pattern Power Shield" hidden="false" id="6417-2fa9-6c91-a466" sortIndex="1" flatten="false">
                   <entryLinks>
@@ -967,26 +967,7 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7642-b836-7d3a-d1b6" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Perdition Weapon &amp; Coriolis Pattern Power Shield" hidden="false" id="a659-027b-3faa-16a6" sortIndex="2" flatten="false">
-                  <entryLinks>
-                    <entryLink import="true" name="Coriolis Pattern Power Shield" hidden="false" id="3e01-074d-a939-b815" type="selectionEntry" targetId="cba1-dc5a-e2bf-0ae6">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1002-96ad-5fa0-357b" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="879b-4e50-e59a-2145" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Perdition Weapons" hidden="false" id="0c2e-c1e4-fd11-e0df" type="selectionEntryGroup" targetId="6a6b-1cda-b6a4-8b3e" flatten="false">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b58-ccaa-a44e-1473" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d78e-2702-54d9-4919" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f13-a0b3-03da-90f7" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Single Perdition Weapon (Reduced Cost)" hidden="false" id="c201-26c6-bd82-aa96" sortIndex="3" flatten="true">
+                <selectionEntry type="upgrade" import="true" name="One Perdition Weapon" hidden="false" id="c201-26c6-bd82-aa96" sortIndex="2" flatten="true">
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Perdition Weapons" id="cc93-21af-e299-35ee" hidden="false" flatten="false">
                       <comment>Reduced Cost for Exemplar</comment>
@@ -1010,6 +991,7 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
                       </entryLinks>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c84-7305-8a36-2a36" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6095-695d-6a9a-1932"/>
                       </constraints>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
@@ -1038,6 +1020,16 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Grenade harness" hidden="false" id="369e-cdd9-6a03-3745" type="selectionEntry" targetId="a766-856c-52bd-d30a" sortIndex="5">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b53-d327-6eff-ea9c"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Crimson Paladin" hidden="false" id="9512-6456-9d41-221f" sortIndex="2">
           <entryLinks>
@@ -1045,6 +1037,12 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da93-afc9-23de-a3d2" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4725-0cf8-f640-999d" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Coriolis Pattern Power Shield" hidden="false" id="ded6-d810-2b12-48bf" type="selectionEntry" targetId="cba1-dc5a-e2bf-0ae6" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd01-1475-7936-840c" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d596-cec3-7761-9591"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -1095,41 +1093,48 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
             </infoLink>
             <infoLink name="The Blood is Forever" id="b64d-0a9e-9b0c-73ef" hidden="false" type="rule" targetId="8daf-a58f-2cb6-034d"/>
           </infoLinks>
-          <modifiers>
-            <modifier type="set" value="4" field="defaultAmount"/>
-          </modifiers>
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="2e22-c127-cee9-5827" includeChildSelections="false"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="1f4e-a50b-4f71-7ec3" includeChildSelections="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May equip one of the following:" id="0954-dc66-02a4-51f5" hidden="false" defaultSelectionEntryId="ded6-d810-2b12-48bf">
+            <selectionEntryGroup name="For every five Models in this Unit, one Crimson Paladin may swap Coriolis Pattern Power Shield for" id="0954-dc66-02a4-51f5" hidden="false" defaultSelectionEntryId="ded6-d810-2b12-48bf" sortIndex="4">
               <entryLinks>
-                <entryLink import="true" name="Coriolis Pattern Power Shield" hidden="false" id="ded6-d810-2b12-48bf" type="selectionEntry" targetId="cba1-dc5a-e2bf-0ae6">
+                <entryLink import="true" name="Iliastus Assault Cannon" hidden="false" id="0677-be37-90cc-e969" type="selectionEntry" targetId="f38b-8af1-17b8-30fe" sortIndex="3">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd01-1475-7936-840c" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3df-1107-3a40-ee7f"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="1ca6-b856-a7e4-31fa" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="067e-3b9a-d416-298f"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Iliastus Assault Cannon" hidden="false" id="0677-be37-90cc-e969" type="selectionEntry" targetId="f38b-8af1-17b8-30fe">
-                  <modifiers>
-                    <modifier type="set" value="2" field="cf78-7a12-4ccb-2e81">
-                      <conditions>
-                        <condition type="atLeast" value="6" field="selections" scope="80bb-caf1-d1fc-0e26" childId="model" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="9c1f-d2e5-ac81-f215" shared="false" id="cf78-7a12-4ccb-2e81" includeChildSelections="true"/>
-                  </constraints>
+                <entryLink import="true" name="Plasma blaster" hidden="false" id="8875-71b9-9413-3c70" type="selectionEntry" targetId="3787-3dca-b6c9-f9e3" sortIndex="4">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a09-0c01-ba33-354b"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="73a0-5807-af82-880f" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f0e-e768-9933-775a" includeChildSelections="false"/>
+                <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="7f0e-e768-9933-775a" includeChildSelections="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="7f0e-e768-9933-775a">
+                  <repeats>
+                    <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
@@ -1171,6 +1176,31 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Up to two Crimson Paladins in this Unit may have their power sword exchanged for one of the following:" id="be69-a75d-d61d-272a" hidden="false" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Power fist" hidden="false" id="6cbf-00fb-ea06-bbb5" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e84b-87d3-0e23-6b60"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Chainfist" hidden="false" id="2225-8fb0-b7cf-e1aa" type="selectionEntry" targetId="8322-1eca-e855-2683">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4b66-0ca9-8de7-9398"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ff77-bee5-2d48-f5ff" automatic="true"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dawnbreaker Cohort" hidden="false" id="410b-50c3-4f12-1c67" sortIndex="7">
       <selectionEntries>
