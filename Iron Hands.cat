@@ -1755,6 +1755,8 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
             <modifier type="set" field="name" value="Eternal Warrior (1)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="[Allegiance]" id="290e-bc36-23f3-7aa5" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="8415-4586-8f7a-eec1" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="647c-faca-3c98-c203" id="3aff-c065-a8f0-1856" primary="false" name="Free Power Weapon"/>
@@ -1784,6 +1786,20 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="a936-b56c-3e37-1863" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="d0eb-ba11-19af-882d" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
