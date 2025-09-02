@@ -1259,12 +1259,12 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
           <selectionEntryGroups>
             <selectionEntryGroup name="May select one of the following:" id="d40d-254a-b258-c326" hidden="false" sortIndex="1" page="219" publicationId="b905-0414-1057-bb34" defaultSelectionEntryId="1b27-055a-6a66-9a64">
               <entryLinks>
-                <entryLink import="true" name="Falling-star Power Spear" hidden="false" id="1b27-055a-6a66-9a64" type="selectionEntry" targetId="14d3-fd65-c37e-53e4">
+                <entryLink import="true" name="Falling-star Power Spear" hidden="false" id="1b27-055a-6a66-9a64" type="selectionEntry" targetId="14d3-fd65-c37e-53e4" sortIndex="1" defaultAmount="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47e6-13b1-0060-a464" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Perdition Weapons" hidden="false" id="0a40-66cc-7a7e-e66f" type="selectionEntryGroup" targetId="6a6b-1cda-b6a4-8b3e">
+                <entryLink import="true" name="Perdition Weapons" hidden="false" id="0a40-66cc-7a7e-e66f" type="selectionEntryGroup" targetId="6a6b-1cda-b6a4-8b3e" sortIndex="2">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9928-1046-9a6a-8ac4" includeChildSelections="false"/>
                   </constraints>
@@ -1274,6 +1274,34 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7412-0d9f-f86c-9c33" includeChildSelections="false"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c1f-a47a-70d3-9a38" includeChildSelections="false"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Pair of equinox blades" hidden="false" id="c5b9-11c7-691a-4786" sortIndex="3">
+                  <profiles>
+                    <profile name="Pair of equinox blades" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="9962-5efe-6372-5c33">
+                      <characteristics>
+                        <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+                        <characteristic name="AM" typeId="03d0-6094-84f0-e27e">+1</characteristic>
+                        <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+                        <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+                        <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+                        <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+)</characteristic>
+                        <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Breaching (X)" id="42f2-1a6b-5c5b-bc79" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+                      <comment>6+</comment>
+                      <modifiers>
+                        <modifier type="set" value="Breaching (6+)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1984-d7a4-97b3-b132"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -1367,12 +1395,6 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b207-667d-d985-0817" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Falling-star Power Spear" hidden="false" id="0139-5bbd-8581-10c9" type="selectionEntry" targetId="14d3-fd65-c37e-53e4" sortIndex="1">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4a35-93cc-b98f-cad9" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79a9-ccf8-0aad-9060" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
@@ -1385,6 +1407,49 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
             <categoryLink targetId="594d-fa82-13cb-a345" id="bff5-fe9c-4b08-af88" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="f8ac-7962-42a2-afc5" primary="false" name="Antigrav Model Sub-Type"/>
           </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="May select" id="d133-012d-9ab2-649d" hidden="false" sortIndex="1" defaultSelectionEntryId="0139-5bbd-8581-10c9">
+              <entryLinks>
+                <entryLink import="true" name="Falling-star Power Spear" hidden="false" id="0139-5bbd-8581-10c9" type="selectionEntry" targetId="14d3-fd65-c37e-53e4" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79a9-ccf8-0aad-9060" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c70-8b6c-8e11-0cde"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d533-9123-1897-8018"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Pair of equinox blades" hidden="false" id="f415-25c9-0428-ae53" sortIndex="2">
+                  <profiles>
+                    <profile name="Pair of equinox blades" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="485b-f747-b40f-dbdc">
+                      <characteristics>
+                        <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+                        <characteristic name="AM" typeId="03d0-6094-84f0-e27e">+1</characteristic>
+                        <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+                        <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+                        <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+                        <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+)</characteristic>
+                        <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Breaching (X)" id="8917-eb5f-8ce0-bf00" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+                      <comment>6+</comment>
+                      <modifiers>
+                        <modifier type="set" value="Breaching (6+)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41f2-e388-0a8c-7c8c"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1426,6 +1491,9 @@ When a Unit with at least one Model with this Special Rule is deployed via Deep 
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="dd1b-70ef-6015-1291" id="7f5f-e33f-1421-8916" primary="false" name="No default Power Weapon"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="The Angel&apos;s Tears" hidden="false" id="06d5-d1b3-de1f-7564" sortIndex="8">
       <selectionEntries>
