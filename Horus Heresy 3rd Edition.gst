@@ -15782,7 +15782,7 @@
             </modifier>
             <modifier type="increment" value="1" field="6f31-a14e-e22b-ad94">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="1baf-b200-9e02-844d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="1baf-b200-9e02-844d" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -15826,7 +15826,7 @@
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
           <constraints>
-            <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="6f31-a14e-e22b-ad94"/>
+            <constraint type="max" value="0" field="forces" scope="parent" shared="true" id="6f31-a14e-e22b-ad94" includeChildForces="true"/>
           </constraints>
         </forceEntry>
         <forceEntry name="Auxiliary - Apothecarion Delegation" id="41f6-7dfc-4eb9-f6ef" hidden="true" sortIndex="42" publicationId="e54c-7040-0f35-d85d" page="16">
