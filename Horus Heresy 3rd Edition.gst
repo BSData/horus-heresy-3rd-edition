@@ -511,6 +511,7 @@
     <categoryEntry name="Mortificator" id="4e4f-ab55-68ef-ad63" hidden="false"/>
     <categoryEntry name="Siege Breaker" id="25ad-fbd9-d161-8fd1" hidden="false"/>
     <categoryEntry name="Special Assignment" id="12d9-f8dc-4db6-0880" hidden="false"/>
+    <categoryEntry name="No default Power Weapon" id="dd1b-70ef-6015-1291" hidden="false" page=""/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
