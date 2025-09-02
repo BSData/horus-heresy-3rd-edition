@@ -1841,12 +1841,7 @@ When a Unit with at least one Model with this Special Rule is deployed via Deep 
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="fc41-7533-4020-99a5" primary="false" name="Antigrav Model Sub-Type"/>
           </categoryLinks>
         </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="One Model in this Unit may have its perdition weapon and bolt pistol exchanged for " id="ed55-de16-437e-8c94" sortIndex="3">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="fc0f-7136-4328-a938" includeChildSelections="true"/>
-          </constraints>
+        <selectionEntry type="upgrade" import="true" name="One Model in this Unit may have its perdition weapon and bolt pistol exchanged for " hidden="false" id="07ac-f857-ceab-ad83" sortIndex="3">
           <selectionEntryGroups>
             <selectionEntryGroup name="Legion standard and power weapon" id="3af9-f3e2-52f0-c48f" hidden="false">
               <entryLinks>
@@ -1869,8 +1864,11 @@ When a Unit with at least one Model with this Special Rule is deployed via Deep 
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="fc0f-7136-4328-a938" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
       <infoLinks>
         <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="393c-8aca-464c-b8c3">
           <modifiers>
@@ -1898,6 +1896,12 @@ When a Unit with at least one Model with this Special Rule is deployed via Deep 
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7384-2c3e-4db6-6c52"/>
+          </constraints>
+          <modifiers>
+            <modifier type="prepend" value="Every model in the Unit may have" field="name"/>
+          </modifiers>
         </entryLink>
       </entryLinks>
     </selectionEntry>
@@ -2136,7 +2140,11 @@ Could not find rule: Shadows of Judgement</comment>
         <categoryLink targetId="53b2-d251-a827-8e73" id="7a3e-0062-f3c9-26fe" primary="false" name="Blood Angels"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Sanguinary Guard" hidden="false" id="8f95-d929-4ae0-cdbf" type="selectionEntry" targetId="b862-722c-4275-8f78" sortIndex="9"/>
+    <entryLink import="true" name="Sanguinary Guard" hidden="false" id="8f95-d929-4ae0-cdbf" type="selectionEntry" targetId="b862-722c-4275-8f78" sortIndex="9">
+      <categoryLinks>
+        <categoryLink targetId="a38e-50ff-310f-f19e" id="7a6d-db68-9210-7439" primary="true" name="Retinue"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedRules>
     <rule name="Encarmine Fury" id="2acc-e20b-bef4-a9cc" hidden="false">
