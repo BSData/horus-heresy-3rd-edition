@@ -836,6 +836,8 @@ Any Hit Tests made in the Assault Phase that target a Unit that includes one or 
             <modifier type="set" value="Eternal Warrior (1)" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="[Allegiance]" id="29f3-fb5c-225f-39c0" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="3d8d-6aee-faad-6c5f" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lotara Sarrin" hidden="false" id="e628-409b-5f93-170a">
@@ -1328,12 +1330,12 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6e1-5095-9699-0572"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry name="World Eaters Red Hand Destroyer Mortalis Squad" type="unit" id="a2c1-6aaf-434a-acc3" page="117" publicationId="5469-14da-d0a1-6092">
+    <selectionEntry name="Red Hand Destroyer Mortalis Squad" type="unit" id="a2c1-6aaf-434a-acc3" page="117" publicationId="5469-14da-d0a1-6092">
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Ravager" id="5c18-97c2-498c-bcc9" page="117" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Ravager" id="5c18-97c2-498c-bcc9" page="117" publicationId="5469-14da-d0a1-6092" sortIndex="2">
           <profiles>
             <profile id="2759-d0dd-4ad8-8f59" name="Ravager" typeId="a76f-8e23-8c3e-166d">
               <characteristics>
@@ -1363,7 +1365,7 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
             <constraint type="max" value="14" field="selections" scope="parent" shared="true" id="5c68-fe5e-4677-b70b"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="ad17-9da2-48cc-a817" name="Bolt pistol">
+            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="ad17-9da2-48cc-a817" name="Bolt pistol" sortIndex="1">
               <modifiers>
                 <modifier type="set" field="name" value="Two bolt pistols"/>
               </modifiers>
@@ -1372,45 +1374,25 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e5f-e8c8-419c-b1bf"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="cd5f-1eff-df69-6bd2" id="0741-fa0e-4f9d-abc7" name="Rad grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="55b8-537c-428d-bfd1"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64f4-fd46-427f-a226"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="c9e1-f43f-40a7-846c" name="Frag grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f84-dd24-4260-8a8d"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ef4-a7e7-4fd9-ad2f"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="d274-d9e5-4541-809e" name="Krak grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="347a-ba31-4164-9749"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36c4-2aa5-4099-9552"/>
-              </constraints>
-            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Any Model in this Unit may have its chainsword exchanged for " id="ab9d-0193-46ec-9213">
+            <selectionEntryGroup name="May have its chainsword exchanged for " id="ab9d-0193-46ec-9213" sortIndex="2" defaultSelectionEntryId="a8de-80b6-4988-82f6">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="a8de-80b6-4988-82f6" name="Chainsword">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad61-435b-4b35-801c"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Caedere Weapons" hidden="false" id="2f63-a3a1-d05e-1051" type="selectionEntryGroup" targetId="f18f-e86f-e13e-4a48"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="77df-5af3-44c4-934a"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9723-8540-4a34-ad01"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Caedere weapon
-	 Checked under Caedere weapon</comment>
             </selectionEntryGroup>
-            <selectionEntryGroup name="For every five Models in this Unit, one Ravager may have one bolt pistol exchanged for one of the following options:" id="96d4-b3e6-4214-8b29">
+            <selectionEntryGroup name="For every five Models in this Unit, one Ravager may have one bolt pistol exchanged for " id="96d4-b3e6-4214-8b29" hidden="false" sortIndex="3">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" id="c979-6f56-4a84-93bb" name="Thunder hammer">
+                <entryLink import="true" name="Thunder hammer" hidden="false" id="c979-6f56-4a84-93bb" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="2">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
                   </costs>
@@ -1418,23 +1400,32 @@ Could not find wargear Caedere weapon
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dec5-356d-481e-86be"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Destroyer Missile Launcher" hidden="false" id="ce34-2b4e-32b4-0cfa" type="selectionEntry" targetId="bcb8-e658-5a0e-0c1a" sortIndex="1">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e69-cfcc-2b10-752f"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e25-8451-4913-b971"/>
+                <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="2e25-8451-4913-b971"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Destroyer missile launcher with rad missiles
-	 Checked under Destroyer missile launcher with rad missiles</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="2e25-8451-4913-b971">
+                  <repeats>
+                    <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="e98a-47a8-4b6c-819d" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in Any Model in this Unit may have its chainsword exchanged for 
-Could not find wargear in For every five Models in this Unit, one Ravager may have one bolt pistol exchanged for one of the following options:</comment>
         </selectionEntry>
-        <selectionEntry type="model" name="Blood Bonded" id="6a93-e0c6-49e9-967b" page="117" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Blood Bonded" id="6a93-e0c6-49e9-967b" page="117" publicationId="5469-14da-d0a1-6092" sortIndex="1">
           <profiles>
             <profile id="0897-39ca-4180-8397" name="Blood Bonded" typeId="a76f-8e23-8c3e-166d">
               <characteristics>
@@ -1464,7 +1455,7 @@ Could not find wargear in For every five Models in this Unit, one Ravager may ha
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0980-5f84-40cb-8499"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="5ca2-a6f6-47e4-b247" name="Bolt pistol">
+            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="5ca2-a6f6-47e4-b247" name="Bolt pistol" sortIndex="1">
               <modifiers>
                 <modifier type="set" field="name" value="Two bolt pistols"/>
               </modifiers>
@@ -1473,75 +1464,37 @@ Could not find wargear in For every five Models in this Unit, one Ravager may ha
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51b2-38b6-4c03-8335"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="cd5f-1eff-df69-6bd2" id="c17d-b585-4f47-a9ef" name="Rad grenades">
+            <entryLink import="true" name="Melta bombs" hidden="false" id="4b8c-b996-470d-b14c" type="selectionEntry" targetId="2eb4-687e-a515-ee3d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe9a-5f0c-4ea9-824e"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b02e-8d1f-4f1a-a0ee"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="182a-fbd3-405d-a400"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="8475-4222-4f45-bf65" name="Frag grenades">
+            <entryLink import="true" name="Phosphex bombs" hidden="false" id="2ecc-2032-43d6-ab99" type="selectionEntry" targetId="5ad2-c3b4-f5eb-5b10">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a5b-329b-4d9e-ad9f"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2e3-aac4-4248-86e9"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="dc35-4ebb-4e8a-9c33" name="Krak grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24db-dea6-47eb-9629"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4af6-2f6d-4503-b737"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f422-8446-4367-8340"/>
               </constraints>
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Any Model in this Unit may have its chainsword exchanged for " id="1413-ddc1-4351-9a82">
+            <selectionEntryGroup name="May have its chainsword exchanged for " id="1413-ddc1-4351-9a82" sortIndex="2" defaultSelectionEntryId="9507-587e-4aeb-8f09">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="9507-587e-4aeb-8f09" name="Chainsword">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d213-f8a0-4954-a9b0"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Caedere Weapons" hidden="false" id="e6e0-ef14-7305-e7db" type="selectionEntryGroup" targetId="f18f-e86f-e13e-4a48"/>
+                <entryLink import="true" name="Legion Sergeant Melee Weapons (no chainsword)" hidden="false" id="6854-9333-61d6-e0ba" type="selectionEntryGroup" targetId="c7ca-8933-a703-7301" flatten="true"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c30-3251-4a14-9d6c"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ab6-7e93-4830-ac67"/>
-              </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Caedere weapon
-	 Checked under Caedere weapon</comment>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="The Blood Bonded in this Unit may have its chainsword exchanged for " id="aca7-2a50-437b-bb90">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" id="0281-6a15-4c20-9fc8" name="Legion Sergeant Melee Weapons">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd56-c262-4e87-a83f"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8ed-1ea0-4497-890a"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="The Blood Bonded in this Unit may have any of the following items selected for them:" id="fcc9-eeb7-4f17-bcee">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="5ad2-c3b4-f5eb-5b10" id="2ecc-2032-43d6-ab99" name="Phosphex bombs">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f422-8446-4367-8340"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" id="4b8c-b996-470d-b14c" name="Melta bombs">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="182a-fbd3-405d-a400"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bec-30c3-4d7e-862a"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -1549,18 +1502,44 @@ Could not find wargear Caedere weapon
             <categoryLink targetId="594d-fa82-13cb-a345" id="d9b7-81cc-464d-84ea" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="73c4-b14a-4752-b56c" primary="false" name="Sergeant Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in Any Model in this Unit may have its chainsword exchanged for</comment>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
         <infoLink name="Firestorm" hidden="false" type="rule" targetId="3ed1-c5b3-a98d-1b12" id="a409-1292-4439-b942"/>
         <infoLink name="Bitter Duty" hidden="false" type="rule" targetId="5d6f-552a-f409-cad5" id="9bc4-ac6c-4b2a-b9ee"/>
+        <infoLink name="[Allegiance]" id="9a0d-f7b0-edcd-203d" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="57be-a625-b33e-7cd1" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
-      <comment>warning: !BSC 20250828-1757
-Could not find rule: Bearers of the Blood Hand
-Chainsword is in two option lists for Blood Bonded, you will need to combine them by hand.
-Exchange was not applied on The Blood Bonded in this Unit may have its chainsword exchanged for</comment>
+      <entryLinks>
+        <entryLink import="true" name="Frag grenades" hidden="false" id="8475-4222-4f45-bf65" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a5b-329b-4d9e-ad9f"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2e3-aac4-4248-86e9"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak grenades" hidden="false" id="dc35-4ebb-4e8a-9c33" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24db-dea6-47eb-9629"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4af6-2f6d-4503-b737"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Rad grenades" hidden="false" id="c17d-b585-4f47-a9ef" type="selectionEntry" targetId="cd5f-1eff-df69-6bd2" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe9a-5f0c-4ea9-824e"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b02e-8d1f-4f1a-a0ee"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="cfd0-c637-5638-5ba2" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="b726-0059-c5fb-2a86" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <rules>
+        <rule name="Bearers of the Blood Hand" id="0264-f73a-e487-91eb" hidden="false">
+          <description>When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, the Controlling Player scores 1 Combat Resolution Point for each Unit that includes any Models with this Special Rule.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry name="World Eaters Red Hand Destroyer Assault Squad" type="unit" id="95af-8507-44dc-bcc3" page="118" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -2088,6 +2067,11 @@ On any Turn in which they made a Charge Move, Models with this Special Rule modi
     <entryLink import="true" name="Rite of War" hidden="false" id="1ce9-43c5-ef27-ef7f" type="selectionEntry" targetId="0797-1862-f00c-9f92">
       <categoryLinks>
         <categoryLink targetId="abfa-86ab-1726-077a" id="2f33-dc81-6c6f-aabb" primary="true" name="Army Configuration"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Red Hand Destroyer Mortalis Squad" hidden="false" id="d805-a058-7b00-528c" type="selectionEntry" targetId="a2c1-6aaf-434a-acc3">
+      <categoryLinks>
+        <categoryLink targetId="5d5e-958f-e388-50b5" id="9467-e409-87f4-6345" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
