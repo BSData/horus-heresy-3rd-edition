@@ -2772,7 +2772,7 @@ A Model with an ion gauntlet shield has a 5+ Invulnerable Save against Penetrati
   <forceEntries>
     <forceEntry name="Knight Households Crusade" id="65c4-7995-ac71-b6f9" hidden="false" sortIndex="0">
       <forceEntries>
-        <forceEntry name="Additional - Armiger Talon" id="cc42-7db1-7735-ec34" hidden="false" sortIndex="2">
+        <forceEntry name="Additional - Armiger Talon" id="cc42-7db1-7735-ec34" hidden="true" sortIndex="2">
           <categoryLinks>
             <categoryLink name="War-engine" hidden="false" id="e71f-04a7-1fd8-fd03" targetId="2499-7239-685f-8465">
               <constraints>
@@ -2798,6 +2798,13 @@ A Model with an ion gauntlet shield has a 5+ Invulnerable Save against Penetrati
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="89ae-ac36-aef1-5024" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <comment>Questoris Familia</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="6465-1296-c54b-3c7a"/>
@@ -2810,7 +2817,7 @@ A Model with an ion gauntlet shield has a 5+ Invulnerable Save against Penetrati
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
-        <forceEntry name="Additional - Automata Talon" id="1ace-97ad-6d7a-fa81" hidden="false" sortIndex="4">
+        <forceEntry name="Additional - Automata Talon" id="1ace-97ad-6d7a-fa81" hidden="true" sortIndex="4">
           <modifiers>
             <modifier type="increment" value="1" field="aeb6-37bc-34e4-5636">
               <conditions>
@@ -2824,6 +2831,13 @@ A Model with an ion gauntlet shield has a 5+ Invulnerable Save against Penetrati
               </repeats>
               <comment>per 
 Preceptor</comment>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <comment>Questoris Familia</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -2872,7 +2886,7 @@ Preceptor</comment>
             </categoryLink>
           </categoryLinks>
         </forceEntry>
-        <forceEntry name="Additional - Support Banner" id="4e1e-944f-a1c1-a9a8" hidden="false" sortIndex="3">
+        <forceEntry name="Additional - Support Banner" id="4e1e-944f-a1c1-a9a8" hidden="true" sortIndex="3">
           <categoryLinks>
             <categoryLink name="Prime Lord of War" hidden="false" id="f91a-5b21-e22e-eee7" targetId="ec63-43fc-c5f5-945d">
               <constraints>
@@ -2895,9 +2909,16 @@ Preceptor</comment>
                 <repeat value="1" repeats="1" field="selections" scope="roster" childId="8e45-8d74-1c77-2511" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
               </repeats>
             </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <comment>Questoris Familia</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </forceEntry>
-        <forceEntry name="Additional - Yeomanry Mesnie" id="99e4-c547-dab4-c93a" hidden="false" sortIndex="5">
+        <forceEntry name="Additional - Yeomanry Mesnie" id="99e4-c547-dab4-c93a" hidden="true" sortIndex="5">
           <constraints>
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="2599-e633-63e2-7803"/>
           </constraints>
@@ -2912,6 +2933,13 @@ Preceptor</comment>
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="roster" childId="69db-05e6-85a5-e676" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
               </repeats>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <comment>Questoris Familia</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <categoryLinks>
@@ -2972,7 +3000,7 @@ Preceptor</comment>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <comment>Questoris Household and Scion Aspirant PA</comment>
+              <comment>Questoris Familia</comment>
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
