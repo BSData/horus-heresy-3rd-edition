@@ -1963,6 +1963,20 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
         </entryLink>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="75e6-6851-2416-7c05">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e645-8087-a3d5-6c7c"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cd8-a67f-167a-2cf0"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Rite of War" hidden="false" id="0af7-e22a-5107-b1dd" type="selectionEntryGroup" targetId="faed-3ec2-54ec-118c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="562a-fe22-83bd-410c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b7b-4e91-5456-2139"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="ffad-c920-8bc2-5248" targetId="9b32-f350-6aa9-9c09" importRootEntries="true"/>
@@ -2015,6 +2029,60 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
           </constraints>
         </entryLink>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Rite of War" id="faed-3ec2-54ec-118c" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Legiones Astartes Thousand Sons" hidden="false" id="6087-6962-9b40-3833">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Legion Tactica" hidden="false" id="6332-c5a8-067e-381b">
+              <infoLinks>
+                <infoLink name="Cult Arcana" id="6ca2-e8f4-6af5-1084" hidden="false" type="rule" targetId="f622-94c0-3997-9ee5">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="713f-08bc-f724-6b17"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e256-ca69-3b50-5ee0"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gambit" hidden="false" id="b0ca-c64b-efb6-4e85">
+              <profiles>
+                <profile name="Prophetic Duellist" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="43a7-3c4c-6880-675d">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">When this Gambit is selected, the Controlling Player may use their Model&apos;s Willpower Characteristic instead of the result of the Focus Roll.</characteristic>
+                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">If this Gambit is selected, then immediately after the Controlling Player has made their Focus Roll in the Focus Step, they may choose to replace the result of their Focus Roll (after modifiers) with this Model&apos;s Willpower Characteristic.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3075-3084-7cb4-fd02"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfa0-8417-c628-32ca"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Advanced Reaction" hidden="false" id="4874-2f14-8568-c25a">
+              <profiles>
+                <profile name="Fortress of the Mind" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="19d3-ae79-7c81-b223">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction gives the Reacting Unit an additional Save Test against attacks that Target the Reacting Unit.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">Once per Battle, the Reactive Player may declare the Fortress of the Mind Advanced Reaction during Step 4 of the Shooting Attack process of any Shooting Attack declared by the Active Player that targets a Unit whichonly includes Models with the Thousand Sons Trait and does not contain any Models with the Vehicle Type.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Fortress of the Mind Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Shooting Attack triggered the Reaction. The Reacting Unit is always the Unit that was declared the target of the Shooting Attack that triggered this Reaction.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once a Fortress of the Mind Advanced Reaction has been declared, the Reactive Player must make a Willpower Check for the Reacting Unit.
+2. If the Willpower check is passed, the Reacting Unit gains a 3+ Invulnerable Save against all wounds inflicted as part of the Shooting Attack that triggered the Reaction.
+3. If the Willpower Check is failed, the Reacting Unit gains a 5+ Invulnerable Save against all wounds inflicted as part of the Shooting Attack that triggered the Reaction. Additionally, both the Reacting Unit and the Target Unit suffer the Warp Rupture result from the Perils of the Warp table, resolved immediately after Step 11 of the Shooting Attack.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2895-14a4-a326-5af9"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6b3-898b-1bae-bb4a"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
@@ -2071,6 +2139,11 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
       <categoryLinks>
         <categoryLink targetId="2499-7239-685f-8465" id="f52b-f1b9-b782-5431" primary="true" name="War-engine"/>
         <categoryLink targetId="7c3f-93c7-d5b9-89e3" id="e776-be0c-df58-5e88" primary="false" name="Thousand Sons"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Rite of War" hidden="false" id="a71e-2cb2-9e0f-3d1e" type="selectionEntry" targetId="75e6-6851-2416-7c05">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="a129-5cce-bfac-fc3b" primary="true" name="Army Configuration"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
