@@ -1426,6 +1426,20 @@ effects of the Limited (X) Special Rule when making Volley Attacks.</description
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="ad93-f4bc-58d6-8d71">
+      <entryLinks>
+        <entryLink import="true" name="Rite of War" hidden="false" id="ae5b-5206-47b4-025b" type="selectionEntryGroup" targetId="b72b-c623-c592-0128">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3e02-be68-ee06-cdad"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f95-94df-8643-89a2"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7451-25e7-e816-a104"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15f1-fdb2-6fe2-a69f"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="d382-c20c-501f-2808" targetId="9b32-f350-6aa9-9c09" importRootEntries="true"/>
@@ -1472,6 +1486,11 @@ effects of the Limited (X) Special Rule when making Volley Attacks.</description
         <categoryLink targetId="f6fe-18f5-7b4d-b57a" id="3886-9ecc-4a6d-40d9" primary="false" name="Salamanders"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Rite of War" hidden="false" id="3cb3-5760-3bdc-8870" type="selectionEntry" targetId="ad93-f4bc-58d6-8d71">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="6140-353a-b740-98f2" primary="true" name="Army Configuration"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedRules>
     <rule name="Promethean Endurance" id="381f-10db-0c78-f16e" hidden="false">
@@ -1513,6 +1532,66 @@ A Unit made up entirely of Models with this Special Rule is unaffected by any va
 Special Rule.</description>
             </rule>
           </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Rite of War" id="b72b-c623-c592-0128" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Legiones Astartes Salamanders" hidden="false" id="62ac-be20-2255-ef36">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Legion Tactica" hidden="false" id="6936-1eab-aa39-3f95">
+              <rules>
+                <rule name="Promethean Endurance" id="66e4-08d7-3d6c-235a" hidden="false">
+                  <description>&quot;Wound Tests made against Salamanders fail on the unmodified roll of a 1 or 2.&quot;
+
+
+Wound Tests that have an unmodified result of 1 or 2 that target any Unit that includes only Models with this Special Rule are never successful regardless of the Strength Characteristic of a Hit or any Special Rules that set the Target Number for Wound Tests. This Special Rule has no effect on Armour Penetration Tests.</description>
+                </rule>
+                <rule name="Blood of Fire" id="792f-e75a-1bb2-f36e" hidden="false">
+                  <description>&quot;Units of Salamanders may ignore Tactical Status Checks applied from Flame Weapons.&quot;
+
+
+A Unit made up entirely of Models with this Special Rule is unafected by any variant of the Panic (X) Special Rule on Weapons with the Flame Trait.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26b5-fd14-b6b7-a519"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db4d-26c4-a1d9-cc9c"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gambit" hidden="false" id="1296-4621-7169-0ba7">
+              <profiles>
+                <profile name="Duty is Sacrifice" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="1442-2321-b209-f97b">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows a Player to choose to suffer wounds in return for a bonus to their own Focus Roll.</characteristic>
+                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">If this Gambit is selected, the Controlling Player can add a bonus of 1,2 or 3 to their Focus Roll. In the Apply Damage from Unsaved Wounds Step of the opponent&apos;s Strike Step, the Model this Gambit was selected for suffers a number of wounds, each with an AP Characteristic of 5 and a Damage Characteristic of 1, equal to the bonus to the Focus Roll applied by this Gambit, against which only Armour Saves, Invulnerable Saves and Damage Mitigation rolls can be taken as normal.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2659-b4c6-807f-cd5a"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ba8-d273-ecc5-22e8"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Advanced Reaction" hidden="false" id="59a1-c997-8495-8e64">
+              <profiles>
+                <profile name="Selfless Burden" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="99de-961b-602f-71bc">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reacting Unit to increase certain Characteristics during the Assault Phase.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">Once per Battle, the Reactive Player may declare the Selfless Burden Advanced Reaction at the start of Step 3 of a Charge declared by the Active Player, targeting a Unit under their control which only includes Models with the Salamanders Trait that do not have the Vehicle Type.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Selfless Burden Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For a Selfless Burden Advanced Reaction, the Reacting Unit is always the Unit that is the target of the Charge that triggered this Reaction.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. All Models in the Reacting Unit have their Weapon Skill, Strength and Attacks Characteristics modified by +1 until the end of the current assault Phase.
+2. In the following Statuses Sub-Phase, the Reactive Player must roll a D6 for each Model in the Reacting Unit. For each result of a 1, the Reacting Unit suffers 1 automatic wound with a Damage Characteristic of 1, an AP of -. against which Saving Throws and Damage Mitigation Rolls may be taken.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0884-17f8-0218-9eb1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ced3-5a7d-0d80-44d4"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
