@@ -223,10 +223,27 @@ class GameTests(unittest.TestCase):
         allied_links = self.system.get_node_by_id("256b-b8a8-017a-75e9").get_child("forceEntryLinks")
         for child_force in crusade.get_child("forceEntries").children:
             # print("\t", child_force)
-            if not child_force.name.startswith("Auxiliary - "):
-                continue
             with self.subTest(f"{child_force.name} should be linked in the Allied Detachment"):
                 self.assertIsNotNone(allied_links.get_child("forceEntryLink", attrib={"targetId": child_force.id}))
+
+    def test_all_max_0_detachments_have_a_hide(self):
+        crusade = self.system.get_node_by_id("8562-592c-8d4b-a1f0")
+        for child_force in crusade.get_child("forceEntries").children:
+            constraints = child_force.get_child("constraints")
+            if constraints is None:
+                continue
+            max_0_constraint = constraints.get_child("constraint", {"type": "max", "value": "0"})
+            if max_0_constraint is None:
+                continue
+            with self.subTest(f"{child_force.name} should have a hidden modifier"):
+                modifiers = child_force.get_child("modifiers")
+                self.assertIsNotNone(modifiers, "Should have modifiers")
+                hidden_modifier = modifiers.get_child("modifier", {"type": "set", "field": "hidden", "value": "true"})
+                self.assertIsNotNone(hidden_modifier, "Should have modifiers")
+
+
+
+
 
     def test_all_units_have_prime(self):
         # First, get all units
