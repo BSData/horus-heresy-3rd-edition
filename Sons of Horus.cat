@@ -1755,6 +1755,20 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </rule>
       </rules>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="817a-a3a6-a18f-5fdf">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b703-2a0d-81d6-2db1"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbc5-5628-7f5d-da16"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Rite of War:" hidden="false" id="a030-09b2-826e-7579" type="selectionEntryGroup" targetId="ebd5-242a-8c7c-be02">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a1f2-30ee-70ea-0ed6"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af35-f4ad-ebf1-45ea"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Special Rules" id="8da8-b3f8-8e38-6d83" targetId="106b-693b-99f2-00c3"/>
@@ -1769,7 +1783,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Legiones Astartes Sons of Horus" hidden="false" id="90e3-24ff-0619-e021">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Gambit: A Saga Woven of Glory" hidden="false" id="6236-98d5-4644-d2cb">
+            <selectionEntry type="upgrade" import="true" name="Gambits" hidden="false" id="6236-98d5-4644-d2cb">
               <profiles>
                 <profile name="A Saga Woven of Glory" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="4763-10a7-dca1-f274">
                   <characteristics>
@@ -1777,10 +1791,6 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
                     <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">If a Model with this Gambit selected for it is the winner of the Challenge whilst this Gambit is selected and the opposing Model is Removed as a Casualty, all Models in the same Unit as the Model that this Gambit is selected for gain a modifier of +1 to their Attacks Characteristic in the following Fight Sub-phase.</characteristic>
                   </characteristics>
                 </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Gambit: Merciless Strike" hidden="false" id="33a6-6be3-8b7f-3ca4">
-              <profiles>
                 <profile name="Merciless Strike" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="2af6-bce7-4a13-eb9e">
                   <characteristics>
                     <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7"/>
@@ -1788,6 +1798,10 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e54-3956-6e1f-3d64"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5477-e074-394f-fafc"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Legion Tactica: SH" hidden="false" id="f2df-05ae-4d29-a45c">
               <rules>
@@ -1795,6 +1809,10 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
                   <description>&quot;&quot;</description>
                 </rule>
               </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6292-eba4-7d5c-7cf9"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59b4-d22f-8b01-ea1c"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Advanced Reaction - Warrior Pride" hidden="false" id="4951-13ad-b9e6-754a">
               <profiles>
@@ -1804,6 +1822,10 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aeab-6074-2224-f7c7"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="284d-4db9-4d72-d8c4"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -1891,6 +1913,11 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
       <categoryLinks>
         <categoryLink targetId="3b0c-6e3a-f5cd-02cd" id="1101-87f7-dc67-0533" primary="false" name="Sons of Horus"/>
         <categoryLink targetId="22ee-7208-4089-b005" id="a973-6798-77aa-e9a3" primary="true" name="Warlord"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Rite of War" hidden="false" id="8b79-9226-d0a8-894d" type="selectionEntry" targetId="817a-a3a6-a18f-5fdf">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="a046-484d-96bf-0323" primary="true" name="Army Configuration"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
