@@ -1916,7 +1916,20 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
             <selectionEntry type="upgrade" import="true" name="Legion Tactica: WE" hidden="false" id="76a0-5e6b-d5c1-2c48">
               <rules>
                 <rule name="The Nails&apos; Bite" id="7b8c-068a-9985-9b71" hidden="false">
-                  <description>&quot;&quot;</description>
+                  <description>&quot;The Controlling Player may choose that a World Eaters Unit becomes Lost to the Nails when it fails a Leadership Check&quot;
+When a Unit entirely composed of Models with this Special Rule fails a Leadership Check, that Unit&apos;s Controlling Player can choose for that Unit to become Lost to the Nails.</description>
+                </rule>
+                <rule name="Lost to the Nails" id="b0e3-2944-982a-e8c4" hidden="false">
+                  <description>When a Unit becomes Lost to the Nails, all Tactical Statuses affecting it are removed. In addition, while a Unit is Lost to the Nails:
+
+
+- Models in that Unit may add +1&quot; to the distance of any Set-up Move.
+- Modify the Attacks Characteristic of Models in that Unit by +1.
+- Models in that Unit are considered to have a Leadership, Cool and Willpower Characteristic of 10 (unless it would normally be higher).
+- If at the start of the Controlling Player&apos;s Charge Sub-Phase, the Unit is within 12&quot; of any enemy Models, that Unit must make a Charge Move. If more than one enemy Unit is within 12&quot;, the Controlling Player of this Unit must select the closest enemy Unit as the Target Unit for that Charge.
+
+
+At the start of the Controlling Player&apos;s Charge Sub-Phase, if there are no enemy Units within 12&quot; of a Unit that is Lost to the Nails, that Unit is no longer Lost to the Nails.</description>
                 </rule>
               </rules>
               <constraints>
@@ -1928,8 +1941,8 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
               <profiles>
                 <profile name="Brutal Dimemberment" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="1e68-7b8f-e641-b1cb">
                   <characteristics>
-                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7"/>
-                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a"/>
+                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows the Controlling Player to score additional Combat Resolution Points if they are the winner of a Challenge.</characteristic>
+                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">While this Gambit is selected, if the enemy Model is Removed as a Casualty during the Strike Step, during the subsequent Glory Step, the Controlling Player gains 2 additional Combat Resolution Points.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1942,7 +1955,14 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
               <profiles>
                 <profile name="Furious Charge" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="f42e-f20c-f516-0c50">
                   <characteristics>
-                    <characteristic name="Description" typeId="5d02-0e54-0f6a-0f0b">&quot;This Reaction allows the Reacting Unit to become Lost to the Nails after the Volley Step of a Charge.&quot;</characteristic>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reacting Unit to become Lost to the Nails after the Volley Step of a Charge.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Furious Charge Advanced Reaction at the end of Step 4 of a Charge declared by the Active Player that targets a Unit which only includes Models with the World Eaters Trait if any Models were Removed as Casualties as a result of Volley Attacks.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare the Furious Charge Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Charge triggered the Reaction. The Reacting Unit is always the Unit that was declared as the target for the Charge that triggered this Reaction.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once the Reaction is declared, the Target Unit becomes Lost to the Nails.
+2. The Reactive Player must then make a Charge Ro;; for the Reacting Unit.
+3. If the result of the Charge Roll would be enough to move any Model from the Reacting Unit into Base Contact with a Model from the Target Unit, then a Charge Move is made and the Units are Locked in Combat. Models in the Reacting Unit gain any bonuses for any Special Rules that would apply to that Unit as a result of a successful Charge.
+4. If the result of the Charge Roll would not bring any Model from the Reacting Unit into contact with a Model from the Target Unit, then no Charge Move is made and the Players proceed to Step 5 of the Charge process.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
