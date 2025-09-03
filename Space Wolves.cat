@@ -3419,6 +3419,20 @@ Head-taker: If this Gambit is selected, the Opposing Player may not claim an Out
         <infoLink name="[Legiones Astartes]" id="a804-e347-fd33-7a67" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="75c1-69f7-a379-9dff">
+      <entryLinks>
+        <entryLink import="true" name="Rite of War:" hidden="false" id="ab3b-5376-ecf1-8e16" type="selectionEntryGroup" targetId="eb72-32e7-98d3-32fc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2cdb-6767-2d90-8f71"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9754-d9ff-78f2-d4b5"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c33-96c7-e416-1f6f"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ab4-28de-f08f-3797"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Deathsworn Pack" hidden="false" id="b0bd-300f-59df-f92e" type="selectionEntry" targetId="cb82-a73f-b30f-c30f">
@@ -3515,6 +3529,11 @@ Head-taker: If this Gambit is selected, the Opposing Player may not claim an Out
     <entryLink import="true" name="Mounted Speaker Of The Dead" hidden="false" id="b795-ec81-8e34-fc91" type="selectionEntry" targetId="a4af-75ac-42a8-a904">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="6b27-1584-b42d-092d" primary="true" name="Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Rite of War" hidden="false" id="a040-530c-9f12-0cdd" type="selectionEntry" targetId="75c1-69f7-a379-9dff">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="2c37-1d2a-f912-e802" primary="true" name="Army Configuration"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -3665,7 +3684,7 @@ Head-taker: If this Gambit is selected, the Opposing Player may not claim an Out
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Legiones Astartes Space Wolves" hidden="false" id="badf-1b55-f615-4eb3">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Gambit: A Saga Woven of Glory" hidden="false" id="ddc5-3667-de11-4294">
+            <selectionEntry type="upgrade" import="true" name="Gambits" hidden="false" id="ddc5-3667-de11-4294">
               <profiles>
                 <profile name="A Saga Woven of Glory" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="8438-ffec-236b-88bf">
                   <characteristics>
@@ -3673,10 +3692,6 @@ Head-taker: If this Gambit is selected, the Opposing Player may not claim an Out
                     <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">If a Model with this Gambit selected for it is the winner of the Challenge whilst this Gambit is selected and the opposing Model is Removed as a Casualty, all Models in the same Unit as the Model that this Gambit is selected for gain a modifier of +1 to their Attacks Characteristic in the following Fight Sub-phase.</characteristic>
                   </characteristics>
                 </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Gambit: No Prey Escapes" hidden="false" id="16ab-9305-318c-a9f6">
-              <profiles>
                 <profile name="No Prey Escapes" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="46d0-5ad2-73b0-49b3">
                   <characteristics>
                     <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit means that the Challenge only ends when one or both Models are Removed as Casualties.</characteristic>
@@ -3684,8 +3699,12 @@ Head-taker: If this Gambit is selected, the Opposing Player may not claim an Out
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c969-d9b1-b76d-72fc"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="889e-8c1a-9048-b791"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Legion Tactica: SW" hidden="false" id="df6a-8d1e-b8a7-2a09">
+            <selectionEntry type="upgrade" import="true" name="Legion Tactica" hidden="false" id="df6a-8d1e-b8a7-2a09">
               <rules>
                 <rule name="The Hunter&apos;s Strike" id="d308-069a-4b67-96e1" hidden="false">
                   <description>&quot;Space Wolves make a longer Set-up Move.&quot;
@@ -3693,6 +3712,10 @@ Head-taker: If this Gambit is selected, the Opposing Player may not claim an Out
 Models with this Special Rule must add +2&quot; to the distance of any Set-up Move, to a maximum of 6&quot;.</description>
                 </rule>
               </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0936-26f8-6023-9a44"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7890-fb73-3a61-0c45"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Advanced Reaction - Bestial Savagery" hidden="false" id="5da9-bd52-a8ec-ddba">
               <profiles>
@@ -3702,6 +3725,10 @@ Models with this Special Rule must add +2&quot; to the distance of any Set-up Mo
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bddf-6f3f-0c8f-7146"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea96-78ea-2f28-15f1"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
