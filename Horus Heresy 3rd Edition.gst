@@ -511,7 +511,7 @@
     <categoryEntry name="Mortificator" id="4e4f-ab55-68ef-ad63" hidden="false"/>
     <categoryEntry name="Siege Breaker" id="25ad-fbd9-d161-8fd1" hidden="false"/>
     <categoryEntry name="Special Assignment" id="12d9-f8dc-4db6-0880" hidden="false"/>
-    <categoryEntry name="No default Power Weapon" id="dd1b-70ef-6015-1291" hidden="false" page=""/>
+    <categoryEntry name="No default Power Weapon" id="dd1b-70ef-6015-1291" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -15783,6 +15783,11 @@
             <modifier type="increment" value="1" field="6f31-a14e-e22b-ad94">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="1baf-b200-9e02-844d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="Veteran Cadre requires Legion Champion" field="error">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="1baf-b200-9e02-844d" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
