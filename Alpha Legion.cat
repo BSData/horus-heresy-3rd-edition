@@ -1736,6 +1736,20 @@ If the Missing being played has a Deploy Armies Step, at the end of this step, t
         </entryLink>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="cf31-e71a-06a7-7456">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e4e2-30e3-3e86-c515"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b72-b819-fbe8-e9c1"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Rite of War:" hidden="false" id="ac5b-794d-af2a-38bf" type="selectionEntryGroup" targetId="90fd-1ed0-7954-ca73">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f0da-7679-44c0-d2a3"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a28b-6f07-a7cd-d9b9"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Weapons" id="f517-9095-a031-a8f1" targetId="a22d-4dd0-c59d-57d3"/>
@@ -1776,8 +1790,12 @@ If the Missing being played has a Deploy Armies Step, at the end of this step, t
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe76-f8f4-e7e6-447d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ca3-b70e-18a5-903c"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Legion Tactica: AL" hidden="false" id="ca7f-3dfd-af3c-1d6f">
+            <selectionEntry type="upgrade" import="true" name="Legion Tactica" hidden="false" id="ca7f-3dfd-af3c-1d6f">
               <rules>
                 <rule name="Lies and Obfuscation" id="9601-30ae-d390-7b3f" hidden="false">
                   <description>&quot;Alpha Legion Models count as further away than they actually are.&quot;
@@ -1786,6 +1804,10 @@ If the Missing being played has a Deploy Armies Step, at the end of this step, t
 A Model with this Special Rule is always considered to be 2&quot; further away than it actually is when measuring range to it from any enemy Model for the purpose of resolving a Shooting Attack, Charge or any Reaction declared by an enemy Model or Unit (this is cumulative with any other modifiers to range imposed by Special Rules).</description>
                 </rule>
               </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5345-8414-56d4-8704"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="706e-4543-71a6-8b82"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Advanced Reaction - Smoke and Mirrors" hidden="false" id="227c-d7fb-8413-7c6d">
               <profiles>
@@ -1799,6 +1821,10 @@ A Model with this Special Rule is always considered to be 2&quot; further away t
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a4b8-ada7-4dd4-a5ad"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54dc-c9e3-2433-220b"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -2123,6 +2149,11 @@ A Model with this Special Rule is always considered to be 2&quot; further away t
       <categoryLinks>
         <categoryLink targetId="a114-fe5b-0a4f-632e" id="711e-6c55-a0a0-2a1b" primary="false" name="Alpha Legion"/>
         <categoryLink targetId="2b65-a3f2-620a-dc58" id="fb87-3c21-76ca-26d6" primary="true" name="Recon"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Rite of War" hidden="false" id="fec9-e222-ccd0-ec7e" type="selectionEntry" targetId="cf31-e71a-06a7-7456">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="bbb1-68e4-73e1-4cc4" primary="true" name="Army Configuration"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
