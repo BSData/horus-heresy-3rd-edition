@@ -3023,6 +3023,58 @@ Preceptor</comment>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
+    <forceEntry name="Knight Lord of War" id="3151-38b5-a5ae-d35f" hidden="false" sortIndex="1">
+      <comment>Like Lord of War but allows the additional detachments</comment>
+      <forceEntries>
+        <forceEntry name="Lord of War Detachment" id="3cb9-35bf-4fac-61c0" hidden="true">
+          <categoryLinks>
+            <categoryLink name="Lord of War" hidden="false" id="cc2d-d0db-978d-fa2d" targetId="a46f-a465-0ead-d6b8">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="da62-b2d8-de74-af45"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="d2c9-f57d-1746-17b8" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="0" field="9893-c379-920b-8982" scope="roster" shared="true" id="f23e-0055-7aba-293f" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b73c-dce6-f527-55bb" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="f23e-0055-7aba-293f">
+              <repeats>
+                <repeat value="4" repeats="1" field="9893-c379-920b-8982" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <comment>Questoris Familia</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </forceEntry>
+      </forceEntries>
+      <categoryLinks>
+        <categoryLink name="Army Configuration" hidden="false" id="097b-636f-8584-fa6f" targetId="abfa-86ab-1726-077a"/>
+      </categoryLinks>
+      <forceEntryLinks>
+        <forceEntryLink name="Additional - Armiger Talon" id="2c1b-ae56-c60c-2530" hidden="false" targetId="cc42-7db1-7735-ec34" type="forceEntry"/>
+        <forceEntryLink name="Additional - Support Banner" id="d5ea-4f6e-48cb-13fe" hidden="false" targetId="4e1e-944f-a1c1-a9a8" type="forceEntry"/>
+        <forceEntryLink name="Additional - Automata Talon" id="3445-bd1d-28fd-105a" hidden="false" targetId="1ace-97ad-6d7a-fa81" type="forceEntry"/>
+        <forceEntryLink name="Additional - Yeomanry Mesnie" id="065c-a316-43f3-0083" hidden="false" targetId="99e4-c547-dab4-c93a" type="forceEntry"/>
+      </forceEntryLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="68ea-6bd3-f39b-28c3">
+          <conditions>
+            <condition type="atLeast" value="1" field="forces" scope="roster" childId="b7a1-629f-9d60-c2a9" shared="true" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="68ea-6bd3-f39b-28c3" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </forceEntry>
   </forceEntries>
   <categoryEntries>
     <categoryEntry name="Prime Lord of War" id="ec63-43fc-c5f5-945d" hidden="false"/>
