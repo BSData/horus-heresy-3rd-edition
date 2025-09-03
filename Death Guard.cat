@@ -821,6 +821,20 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
         <infoLink name="Template" id="aed3-7edf-bac0-849e" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="39cc-48a4-7cfe-44de">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b18f-f071-a2a2-a2b0"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f14d-dcdf-38d1-32b2"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Rite of War" hidden="false" id="de78-b703-04ee-331e" type="selectionEntryGroup" targetId="1665-1055-c6b4-1f91">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="992d-6146-47e1-a656"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="096c-dcdc-dcca-fc74"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="22b8-486e-a328-4558" targetId="9b32-f350-6aa9-9c09" importRootEntries="true"/>
@@ -922,5 +936,67 @@ Process
         <categoryLink targetId="2399-482f-47f3-add5" id="90bc-ba3f-d0b5-0774" primary="false" name="Death Guard"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Rite of War" hidden="false" id="7067-6f8b-8fb6-2938" type="selectionEntry" targetId="39cc-48a4-7cfe-44de">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="c65c-7232-d07f-3b9b" primary="true" name="Army Configuration"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Rite of War" id="1665-1055-c6b4-1f91" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Legiones Astartes Death Guard" hidden="false" id="6cec-3a8b-3f33-7da7">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Legion Tactica" hidden="false" id="2c39-d31a-4833-c182">
+              <rules>
+                <rule name="Remorseless Advance" id="b6d9-4f33-1999-d0ff" hidden="false">
+                  <description>&quot;Models with this Special Rule may Move and still benefit from the Heavy (X) Special Rule.&quot;
+
+
+A Model with this Special Rule that has moved no more than 4&quot; in the Movement Phase and did not Rush may still benefit from any variant of the Heavy (X) Special Rule on any Weapons that they have. Additionally, the Controlling Player of a Model with this Special Rule may ignore negative modifiers to the Movement Characteristic of that Model as a result of moving in Difficult Terrain.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2b2-ad85-5ed9-029a"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2822-4cbe-e74b-e381"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gambit" hidden="false" id="a031-64f8-660e-a131">
+              <profiles>
+                <profile name="Gambit" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="222a-4222-0b88-8ca1">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows a Model to increase its Toughness Characteristic.</characteristic>
+                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">If this Gambit is selected, then the Toughness Characteristic of the Model it is selected for is replaced with the Base Weapon Skill Characteristic of the opposing Model for the duration of the following Strike Step.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="167d-b4a0-4c47-dc83"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="106c-f515-acf8-57d6"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Advanced Reaction" hidden="false" id="64f6-01f1-1c07-9fff">
+              <profiles>
+                <profile name="Barbaran Endurance" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="8e90-fbcf-6d4f-acaa">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction grants the Reacting Unit a Damage Mitigation Roll and allows them to recover from Tactical Statuses.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">Once per Battle, the Reactive Player may declare the Barbaran Endurance Advanced Reaction  during Step 4 of any Shooting Attack declared by the Active Player during the Shooting Phase that Targets a Unit which only includes Models with teh Death Guard Trait that do not have the Vehicle Type.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Barbaran Endurance Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Shooting Attack triggered the Reaction. The Reacting Unit is always the Unit that was declared as the target of the Shooting Attack that triggered this Reaction.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. All Models in the Reacting Unit immediately recover from any Tactical Statuses.
+2. For the duration of the current Shooting Phase, all Models in the Reacting Unit gain the Feel No Pain (5+) Special Rule.
+3. For the duration of the current Shooting Phase, the Reacting Player automatically passes any Cool Checks or Leadership Checks made for the Reacting Unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a393-ec1a-e1eb-c8c0"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89fb-3dba-452c-4358"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
