@@ -1954,6 +1954,13 @@ If a Model with this Special Rule is Locked in Combat with an enemy Unit that co
             <categoryLink targetId="594d-fa82-13cb-a345" id="5419-2db2-4411-9b62" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="6f2c-ff9c-4c39-a12f" primary="false" name="Sergeant Model Sub-Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>

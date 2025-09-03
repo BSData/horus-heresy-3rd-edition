@@ -305,7 +305,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Anathema Cadre" hidden="false" id="70fb-de8a-7d80-b232">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Null Sister" hidden="false" id="1892-6a9e-b07c-cee0">
+        <selectionEntry type="model" import="true" name="Null Sister" hidden="false" id="1892-6a9e-b07c-cee0" sortIndex="2">
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="a428-fe72-a58f-6c00" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="f4ba-00e5-3d2e-eaac" id="e6c8-4017-1a7a-9171" primary="false" name="Light Model Sub-Type"/>
@@ -361,7 +361,7 @@
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Null Mistress" hidden="false" id="8c02-3dfa-aa25-65c3" collective="true">
+        <selectionEntry type="model" import="true" name="Null Mistress" hidden="false" id="8c02-3dfa-aa25-65c3" collective="true" sortIndex="1">
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="90bf-2b87-fa57-54a1" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="6ad3-1d09-1ba9-fcf2" primary="false" name="Sergeant Model Sub-Type"/>
@@ -422,6 +422,13 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a44-8601-1134-3873-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a44-8601-1134-3873-max" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -460,7 +467,7 @@
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Every Model in this Unit may have its bolter exchanged for one of the following. If this option is selected, every Model in this Unit must have its bolter exchanged for the same item:" id="6fec-2cf0-d792-8eb3" hidden="false" defaultSelectionEntryId="d70f-cbeb-614d-04c8" collective="true">
+        <selectionEntryGroup name="Every Model in this Unit may have its bolter exchanged for one of the following. If this option is selected, every Model in this Unit must have its bolter exchanged for the same item:" id="6fec-2cf0-d792-8eb3" hidden="false" defaultSelectionEntryId="d70f-cbeb-614d-04c8" collective="true" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Flamer" hidden="false" id="a66d-a2ef-4677-abc5" type="selectionEntry" targetId="9a45-35cd-3806-2303" sortIndex="3">
               <costs>
