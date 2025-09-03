@@ -1998,7 +1998,14 @@ On any Turn in which they made a Charge Move, Models with this Special Rule modi
               <profiles>
                 <profile name="Brutal Tide" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="378d-cd14-1e73-dbf0">
                   <characteristics>
-                    <characteristic name="Description" typeId="5d02-0e54-0f6a-0f0b">&quot;This Reaction allows the Reacting Unit to make a Charge towards a Unit that Targets them with a Shooting Attack.&quot;</characteristic>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reacting Unit to make a Charge towards a Unit that Targets them with a Shooting Attack.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">Once per Battle, the Reactive Player may declare the Brutal Tide Advanced Reaction during Step 4 of a Shooting Attack delivered by the Active Player that targets a Unit which only includes Models with the World Eaters Trait and does not have the Vehicle Type.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare the Brutal Tide Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Shooting Attack triggered the Reaction. The Reacting Unit is always the Unit that was declared as the target of the Shooting Attack that triggered the Reaction.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. For the duration of the current Shooting Phase, all Models in the Reacting Unit gain the Eternal Warrior (1) Special Rule.
+2. Immediately after Step 11 of the Shooting Attack that triggered the Reaction is resolved, the Reactive Player must make a Charge Roll for the Reacting Unit.
+3. If the result of the Charge Roll would be enough to move any Model from the Reacting Unit into Base Contact with a Model from the Target Unit, then a Charge Move is made and the Units are Locked in Combat. Models in the Reacting Unit gain any bonuses for any Special Rules that would apply to that Unit as a result of a successful Charge.
+4. If the result of the Charge Roll would not bring any Model from the Reacting Unit into contact with a Model from the Target Unit, then no Charge Move is made.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
