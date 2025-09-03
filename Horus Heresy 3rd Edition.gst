@@ -18700,6 +18700,9 @@
               <comment>Visible to all factions</comment>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="forces" scope="parent" shared="true" id="c92a-53cf-4b03-3ea2" includeChildSelections="false"/>
+          </constraints>
         </forceEntry>
       </forceEntries>
       <modifiers>
