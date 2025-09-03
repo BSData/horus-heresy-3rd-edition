@@ -817,6 +817,20 @@ Once per Battle, if a Unit with this Special Rule remains Stationary in the prev
         </entryLink>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="607a-9b93-c6a8-09a5">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="662f-638b-9042-8740"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90ea-c3e1-0cd7-329f"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Rite of War" hidden="false" id="cf06-3cc8-19f1-0a35" type="selectionEntryGroup" targetId="6f15-ea9f-a9ea-1e64">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="083a-44a1-982e-5dd6"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7dd6-f1a0-f497-c07e"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="59d5-a49e-5f2a-92b7" targetId="9b32-f350-6aa9-9c09" importRootEntries="true"/>
@@ -858,6 +872,11 @@ Once per Battle, if a Unit with this Special Rule remains Stationary in the prev
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink import="true" name="Rite of War" hidden="false" id="3b5e-7b70-7497-f2f8" type="selectionEntry" targetId="607a-9b93-c6a8-09a5">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="9741-3417-81fa-3b1f" primary="true" name="Army Configuration"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedRules>
     <rule name="Shadow Walkers" id="01bc-3bfe-f526-3be0" hidden="false">
@@ -874,4 +893,60 @@ When a Unit that includes only Models with this Special Rule is the target of a 
       </characteristics>
     </profile>
   </sharedProfiles>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Rite of War" id="6f15-ea9f-a9ea-1e64" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Legiones Astartes Raven Guard" hidden="false" id="7b75-66f6-5a37-ca9a">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Legion Tactica" hidden="false" id="bc79-8da7-47b1-da31">
+              <rules>
+                <rule name="Shadow Walkers" id="230f-0123-360b-48b6" hidden="false">
+                  <description>&quot;Raven Guard Models are harder to hit with Shooting Attacks made at longer range.&quot;
+
+
+When a Unit that includes only Models with this Special Rule is the target of a Shooting Attack, all attacks must be made as Snap Shots when the distance between the closest Model in the attacking Unit and teh Target Unit is 18&quot; or greater.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a511-260e-b5d4-e817"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3142-43f4-9311-8707"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gambit" hidden="false" id="20a4-cda7-7bae-905f">
+              <profiles>
+                <profile name="Decapitation Strike" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="a7a3-a510-c337-d98e">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows the Model to make a single attack first, followed by the remainder of their attacks, if the first is successful.</characteristic>
+                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">This Gambit may be selected once per Challenge. When selected, no Focus Roll is made, instead the Controlling Player of the Model for which this Gambit has been selected makes a single attack at the end of the Focus Step. If the Hit Test and Wound Test made for this attack are both successful (i.e. they meet the required Target Number), the Controlling Player of the Model with this Gambit may then make the remainder of the attacks the Model with this Gambit is eligible to make in the current Strike Step, minus the single attack already made. If either the Hit Test or Wound Test made for the initial attack are not successful, the Model for which this Gambit is selected may make no further attacks during this Strike Step.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d70-6585-f3f4-ea4c"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b2c3-bddb-8a4c-4869"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Advanced Reaction" hidden="false" id="004f-618c-5122-8caf">
+              <profiles>
+                <profile name="Shadow Veil" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="1f9c-47fe-5ace-c7f8">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reacting Unit to make a Move when it is Targeted by a Shooting Attack and gain a Damage Mitigation Roll for the duration of the Shooting Phase.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">Once per Battle, the Reactive Player may declare the Shadow Veil Advanced Reaction when the Active Player targets a Unit under their control which only includes Models with the Raven Guard Trait, that do not have the Vehicle Type, with a Shooting Attack.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Shadow Veil Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For a Shadow Veil Advanced reaction, the reacting Unit is always the Unit that is the target of the Shooting attack that triggered this Reaction.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. All Models in the Reacting Unit may be moved a distance equal to their Initiative Characteristic using the normal Rules for Movement, but may not increase this distance by choosing to Rush. If no Model in the Target Unit is determined to be within Line of Sight and/or Range of any Model in the Attacking Unit once this move is resolved, the Active Player may not select an alternative target for that Attacking Unit during the current Shooting Phase.
+2. Once the Reacting Player has resolved this Move, all Models in the Reacting Unit gain the Shrouded (5+) Special Rule for the remainder of the current Shooting Phase and the Active Player may move to Step 2 of the Shooting Attack sequence.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="22ee-3ede-d27c-26d2"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f53-8d32-b080-8a84"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
