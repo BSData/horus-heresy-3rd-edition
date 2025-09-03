@@ -512,6 +512,8 @@
     <categoryEntry name="Siege Breaker" id="25ad-fbd9-d161-8fd1" hidden="false"/>
     <categoryEntry name="Special Assignment" id="12d9-f8dc-4db6-0880" hidden="false"/>
     <categoryEntry name="No default Power Weapon" id="dd1b-70ef-6015-1291" hidden="false"/>
+    <categoryEntry name="Prime Lord of War" id="ec63-43fc-c5f5-945d" hidden="false"/>
+    <categoryEntry name="Questoris Mechanicum" id="14f8-2fe6-3bde-b735" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -18692,7 +18694,7 @@
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
-              <comment>Visible to all factions</comment>
+              <comment>Visible to all factions - except Knights</comment>
             </modifier>
           </modifiers>
         </forceEntry>
@@ -18812,25 +18814,280 @@
         <forceEntryLink name="Apex - Exalted Conclave" id="5054-c3a2-6e82-5245" hidden="true" targetId="c961-7007-0142-5d07" type="forceEntry"/>
       </forceEntryLinks>
     </forceEntry>
-    <forceEntry name="Lord of War Detachment" id="b7a1-629f-9d60-c2a9" hidden="false" sortIndex="3">
+    <forceEntry name="Lord of War Force" id="b7a1-629f-9d60-c2a9" hidden="false" sortIndex="3">
       <categoryLinks>
-        <categoryLink name="Lord of War" hidden="false" id="3c0a-1455-992a-6156" targetId="a46f-a465-0ead-d6b8">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d94c-54de-ba89-449a"/>
-          </constraints>
+        <categoryLink name="Army Configuration" hidden="false" id="b0b6-d19a-09d6-acac" targetId="abfa-86ab-1726-077a">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
       </categoryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="9507-42c6-32f3-dacf" includeChildSelections="false"/>
-        <constraint type="max" value="0" field="9893-c379-920b-8982" scope="roster" shared="true" id="44b5-c573-a90a-3324" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
-      <modifiers>
-        <modifier type="increment" value="1" field="44b5-c573-a90a-3324">
-          <repeats>
-            <repeat value="4" repeats="1" field="9893-c379-920b-8982" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-          </repeats>
-        </modifier>
-      </modifiers>
+      <forceEntries>
+        <forceEntry name="Additional - Lord of War Detachment" id="f977-1663-1bcd-ecc8" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="9507-42c6-32f3-dacf" includeChildSelections="false"/>
+            <constraint type="max" value="0" field="9893-c379-920b-8982" scope="roster" shared="true" id="44b5-c573-a90a-3324" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="44b5-c573-a90a-3324">
+              <repeats>
+                <repeat value="4" repeats="1" field="9893-c379-920b-8982" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Lord of War" hidden="false" id="3c0a-1455-992a-6156" targetId="a46f-a465-0ead-d6b8">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d94c-54de-ba89-449a"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Lord of War" hidden="false" id="fbf3-3c97-8823-f574" targetId="ec63-43fc-c5f5-945d">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="700c-a03b-c243-3371" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="2" field="700c-a03b-c243-3371">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="89ae-ac36-aef1-5024" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+          </categoryLinks>
+        </forceEntry>
+        <forceEntry name="Additional - Armiger Talon" id="cc42-7db1-7735-ec34" hidden="true">
+          <categoryLinks>
+            <categoryLink name="War-engine" hidden="false" id="e71f-04a7-1fd8-fd03" targetId="2499-7239-685f-8465">
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2169-8f78-d308-eb19"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime War-engine" hidden="false" id="8255-12e4-06e3-dac2" targetId="9699-67c9-2c0b-e64b">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="fc4f-10d6-900e-ccbe" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="increment" value="1" field="6465-1296-c54b-3c7a">
+              <comment>Scion Aspirant PA selected</comment>
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="df1c-c761-9a63-9e61" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="6465-1296-c54b-3c7a">
+              <comment>Mendicant paradigm</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="5c26-801a-709b-f6c8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="roster" childId="65c4-7995-ac71-b6f9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="6465-1296-c54b-3c7a"/>
+          </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+        </forceEntry>
+        <forceEntry name="Additional - Support Banner" id="4e1e-944f-a1c1-a9a8" hidden="true">
+          <categoryLinks>
+            <categoryLink name="Prime Lord of War" hidden="false" id="f91a-5b21-e22e-eee7" targetId="ec63-43fc-c5f5-945d">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0925-6f0f-4ded-2e8c" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Lord of War" hidden="false" id="5e43-e278-4be8-c7f2" targetId="a46f-a465-0ead-d6b8">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a9a8-a89e-2c48-d6dc"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="1e66-77ca-ba4c-d36d"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="1e66-77ca-ba4c-d36d">
+              <comment>Scion Martial PA selected</comment>
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="8e45-8d74-1c77-2511" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <comment>Questoris Household and Scion Aspirant PA</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </forceEntry>
+        <forceEntry name="Additional - Automata Talon" id="1ace-97ad-6d7a-fa81" hidden="true">
+          <modifiers>
+            <modifier type="increment" value="1" field="aeb6-37bc-34e4-5636">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="14f8-2fe6-3bde-b735" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <comment>Questoris Mechanicum</comment>
+            </modifier>
+            <modifier type="increment" value="1" field="aeb6-37bc-34e4-5636">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="f601-43c9-4fe5-b455" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+              <comment>per 
+Preceptor</comment>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <comment>Questoris Household and Scion Aspirant PA</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="aeb6-37bc-34e4-5636"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Elites - Domitar Battle Maniple Only" hidden="false" id="1a5f-5559-6304-d681" targetId="826c-7b05-0f62-8b16">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="932c-f369-c2e0-189f"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Elites" hidden="false" id="c7ce-fd51-3c0d-4ae6" targetId="276f-7a07-a56c-affd">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4d34-dfe4-db8a-600b" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Support - Castellax Battle Maniple Only" hidden="false" id="c9bc-94a0-f819-8296" targetId="61eb-11e2-1592-3161">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e49-c324-f754-6186"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Support" hidden="false" id="f5b6-1052-df84-b5da" targetId="1c79-ecdf-9a64-84c9">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="47d9-c3c3-90ea-1584" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Recon - Vorax Attack Maniple Only" hidden="false" id="7100-f7f8-9196-4cb5" targetId="0fb1-2125-2a33-b094">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5d0-ff12-e976-33d5"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Recon" hidden="false" id="6b52-44c6-8249-1fc9" targetId="6348-ecd0-714d-042a">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1d70-9967-5455-497c" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Fast Attack" hidden="false" id="e7fb-9921-5d49-50eb" targetId="c291-144b-3da6-37ed">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f94f-5bcf-3ac4-c913" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Fast Attack - Vulturax Stratos Squadron Only" hidden="false" id="745b-2478-87fc-7461" targetId="7db9-74d1-6ba1-061e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e65-7eb7-0bc5-871f"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+        </forceEntry>
+        <forceEntry name="Additional - Yeomanry Mesnie" id="99e4-c547-dab4-c93a" hidden="true">
+          <constraints>
+            <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="2599-e633-63e2-7803"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="2599-e633-63e2-7803">
+              <comment>Questor Imperialis</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0544-8dce-3f8a-245d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="2599-e633-63e2-7803">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="69db-05e6-85a5-e676" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <comment>Questoris Household and Scion Aspirant PA</comment>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Elites" hidden="false" id="125b-2f0b-cd1c-372a" targetId="5d5e-958f-e388-50b5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fdee-aba4-dcdf-f6b2"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Elites" hidden="false" id="e7ae-40f7-c36d-f17e" targetId="276f-7a07-a56c-affd">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="26b5-8303-3933-ef7b" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Troops" hidden="false" id="597a-1d6c-390c-c033" targetId="88e6-d373-4152-0dd8">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5a73-b92e-1e80-0ee5"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Troops" hidden="false" id="750b-e41b-4cf8-ec7f" targetId="c3f9-a7f3-984b-3fda">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d5fa-d2f8-dc6c-e84b" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Recon" hidden="false" id="af8b-f761-0477-b66d" targetId="2b65-a3f2-620a-dc58">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd3e-05c4-b41e-f8fa"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Recon" hidden="false" id="f9d2-4612-cdcf-4c16" targetId="6348-ecd0-714d-042a">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c35d-8491-0d69-5a89" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Heavy Transport" hidden="false" id="2255-29d9-04e9-c8ac" targetId="52d0-8b78-439e-18e5">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0577-65ab-732a-0b7b"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Heavy Transport" hidden="false" id="f124-db70-b912-29e1" targetId="abff-3686-c39a-9a24">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ef71-21cd-d4c7-0391" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
     </forceEntry>
     <forceEntry name="Example Detachment" id="dd98-fd79-acb1-14b0" hidden="true">
       <categoryLinks>
@@ -19774,6 +20031,195 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         </modifier>
       </modifiers>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Household Paradigms" id="5a46-d9a6-d191-6441" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Questoris Imperialis" hidden="false" id="1d9a-6b1a-d70b-63ac" type="selectionEntry" targetId="0544-8dce-3f8a-245d"/>
+        <entryLink import="true" name="Questoris Mechanicum" hidden="false" id="efcf-d588-f077-98e4" type="selectionEntry" targetId="2692-0ac9-5eef-5e9f">
+          <categoryLinks>
+            <categoryLink name="Questoris Mechanicum" hidden="false" id="48db-2301-1315-510b" targetId="14f8-2fe6-3bde-b735" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink import="true" name="Questoris Mendicant" hidden="false" id="5c26-801a-709b-f6c8" type="selectionEntry" targetId="89ae-ac36-aef1-5024"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="03a0-5925-78e0-5a1a"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afaa-2a1d-91fb-b05a"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Household Rank Prime Advantages" id="682c-89df-2b40-9302" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Seneschal" hidden="false" id="3234-0466-0c6f-d3d0" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd9f-6915-c73e-01e4" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b8e2-0aba-be9f-9545" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <rules>
+            <rule name="Seneschal" id="e095-6361-3e38-faf5" hidden="false">
+              <description>This Prime Advantage may only be selected for units entirely composed of Models with the Knight Sub-Type. When a Model in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage is allocated a Penetrating Hit, the Damage of the Penetrating Hit is modified by -1, to a minimum of 1. Additionally, a Unit with this Household Rank Prime Advantage counts as being a High Command Choice for the purposes of any version of the Slay the Warlord (X) Secondary Objective.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Lord Scion" hidden="false" id="69db-05e6-85a5-e676" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c667-b371-4e89-8b0c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="346a-f4d8-cbac-c6fc" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <rules>
+            <rule name="Lord Scion" id="2cf3-a1f5-5e1e-9f39" hidden="false">
+              <description>This Prime Advantage may only be selected for units entirely composed of Models with the Knight Sub-Type. All Models in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage may have two Repair Tests made for them by the Active Player in each of their Statuses Sub-Phases, rather than just one.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="-1" field="346a-f4d8-cbac-c6fc">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0544-8dce-3f8a-245d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Scion Arbalester" hidden="false" id="e877-06b9-bb47-0b84" sortIndex="3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de52-6402-60ac-87e2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="33ff-9f6c-13f0-30e4" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <rules>
+            <rule name="Scion Arbalester" id="524c-9053-51ca-b2f8" hidden="false">
+              <description>This Prime Advantage may only be selected for units entirely composed of Models with the Knight Sub-Type. When a Model in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage moves a distance equal to no more than half of its Movement Characteristic in inches in the Movement Phase, it may still benefit from any variant of the Heavy (X) or Ordnance (X) Special Rule on any Weapons it has.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Scion Aspirant" hidden="false" id="df1c-c761-9a63-9e61" sortIndex="4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a36-492a-c7f8-638e" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Scion Aspirant" id="9cbd-ace6-e195-ff86" hidden="false">
+              <description>All Models in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage gain the Expendable (1)
+Special Rule and modify the value of X on any version of the Auto-repair (X) Special Rule they have by -1.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Expendable (X)" id="5617-5547-3202-fff2" hidden="false" type="rule" targetId="c4d4-e053-9564-540b">
+              <modifiers>
+                <modifier type="set" value="Expendable (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Aucteller" hidden="false" id="27e4-d811-9810-90f4" sortIndex="5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6f1-36f6-71a8-aabe" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f505-5e9e-5342-d9cd" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <rules>
+            <rule name="Aucteller" id="67a9-03d0-4602-5525" hidden="false">
+              <description>This Prime Advantage may only be selected for units entirely composed of Models with the Knight Sub-Type. All Models in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage gain the Precision (5+) Special Rule on any Melee Weapons they have. Any Model in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage may not have any Questoris Vow declared for it other than the Vow of Execution.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Precision (X)" id="0fe3-cbe9-16f9-e411" hidden="false" type="rule" targetId="4fbd-e0bc-8f72-6e3f">
+              <modifiers>
+                <modifier type="set" value="Precision (5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Scion Dolorous" hidden="false" id="5cc2-c76d-b9f9-0198" sortIndex="6">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d17-06bd-1afa-3dcd" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2639-ea65-2d9a-bac9" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <rules>
+            <rule name="Scion Dolorous" id="be41-46f5-a7fa-1b0a" hidden="false">
+              <description>This Prime Advantage may only be selected for units entirely composed of Models with the Knight Sub-Type. All Models in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage gain the Fear (2) Special Rule. Any Model in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage may not have any Questoris Vow declared for it other than the Vow of Slaying.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Fear (X)" id="031f-82d3-2830-e121" hidden="false" type="rule" targetId="0ebc-0c92-2209-6393">
+              <modifiers>
+                <modifier type="set" value="Fear (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Scion Implacable" hidden="false" id="f543-47b5-9ab1-3b90" sortIndex="7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e50-d24d-cce8-36f9" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="aa7c-fd00-b75e-5232" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <rules>
+            <rule name="Scion Implacable" id="71b0-2093-1a41-a2e1" hidden="false">
+              <description>This Prime Advantage may only be selected for units entirely composed of Models with the Knight Sub-Type. All Models in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage gain the Firestorm Special Rule. Any Model in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage may not have any Questoris Vow declared for it other than the Vow of Resolve.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Firestorm" id="4fde-dfe2-bb13-2e70" hidden="false" type="rule" targetId="3ed1-c5b3-a98d-1b12"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Scion Martial" hidden="false" id="8e45-8d74-1c77-2511" sortIndex="8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b58-e9c4-5b78-3ee8" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Scion Martial" id="0d73-16ab-2f05-796c" hidden="false">
+              <description>This Prime Advantage may only be selected for units entirely composed of Models with the Knight Sub-Type. The Scions Martial represent the meridian of skill and power on which the Unit Profiles in the Questoris Familia Army List are based, and therefore, the Scion Martial Household Rank Prime Advantage does not modify the profile of any Models in a Unit for which it is selected.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Preceptor" hidden="false" id="f601-43c9-4fe5-b455" sortIndex="9">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5677-9cd9-3922-c1c8" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0cab-25a5-d317-253a" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <rules>
+            <rule name="Preceptor" id="c3ed-fdb1-76ef-44c2" hidden="false">
+              <description>This Prime Advantage may only be selected for units entirely composed of Models with the Knight Sub-Type. All Models in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage gain the Battlesmith (2) Special Rule and count as having an Intelligence Characteristic of 8 when making Intelligence Checks as part of the Battlesmith (X) Special Rule.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Battlesmith (X)" id="2ea0-8cf1-39e5-8ca6" hidden="false" type="rule" targetId="c3db-d17c-fd46-eb01">
+              <modifiers>
+                <modifier type="set" value="Battlesmith (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="-1" field="0cab-25a5-d317-253a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="2692-0ac9-5eef-5e9f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Scion Uhlan" hidden="false" id="dc14-865b-7aea-1cab" sortIndex="10">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b66c-e051-720a-494e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5331-8210-9039-3993" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
+          <rules>
+            <rule name="Scion Uhlan" id="afc9-e09c-3f18-7360" hidden="false">
+              <description>This Prime Advantage may only be selected for units entirely composed of Models with the Knight Sub-Type. All Models in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage gain the Fast (2) and the Impact (A) Special Rules. Any Model in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage may not have any Questoris Vow declared for it other than the Vow of Alacrity.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Fast (X)" id="7d83-4340-fae8-db0b" hidden="false" type="rule" targetId="9ebf-3b90-be22-b9c2">
+              <modifiers>
+                <modifier type="set" value="Fast (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Impact (X)" id="76ae-ae23-7203-756c" hidden="false" type="rule" targetId="6ead-c31c-ab09-2f8c">
+              <modifiers>
+                <modifier type="set" value="Impact (A)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <comment>Need to make these only selectable by models with the knight sub-type</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="fdb3-979e-70aa-1641"/>
+      </constraints>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile name="New Profile" typeId="e7bb-e864-2195-b3f7" typeName="Cybertheurgic Rite" hidden="false" id="bd82-19b9-0923-5da2">
@@ -19810,6 +20256,35 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For a Smokescreen Advanced Reaction, the Reacting Unit is always the Unit that was the target of the Shooting Attack that triggered the Advanced Reaction. This Unit must include a majority of Models with the Smokescreen Trait at the point where the Advanced Reaction is declared.</characteristic>
         <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. The Active Player continues to resolve this Shooting Attack as normal.
 2. All Models in the Unit for which this Reaction was declared gain a 5+ Shrouded Damage Mitigation Test against any wounds, Penetrating Hits or Glancing Hits inflicted during any Shooting Attack made in the same Phase in which this Reaction was declared.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Rallying Cry" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="8b98-cc22-ceed-aba1">
+      <characteristics>
+        <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows all Knights in an Army to make a Repair roll when the Active Player scores Victory Points in their End Phase.</characteristic>
+        <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">Once per Battle, the Reactive Player may declare a Rallying Cry Advanced Reaction in the Victory Sub-Phase of the Active Player&apos;s End Phase, when the Active Player scores 1 or more Victory Points.</characteristic>
+        <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Rallying Cry Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+        <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For a Rallying Cry Advanced Reaction, the Reacting Unit is any Unit under the Reactive Player&apos;s control which contains only Models with the Knight Sub-Type and the Questoris Imperialis Trait.</characteristic>
+        <characteristic name="Process" typeId="57cf-1c68-a020-2529">Once a Rallying Cry Advanced Reaction has been declared, the Reactive Player may make a single Repair Test for all Models under their control with the Knight Sub-Type.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Valorous End" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="5b62-ebec-2331-0f45">
+      <characteristics>
+        <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reacting Player to automatically apply the effects of the Explodes (X) Special Rule when a Knight under their control is Removed as a Casualty.</characteristic>
+        <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Valorous End Advanced Reaction in Step 11 of a Shooting Attack or Step 10 of an Initiative Step in the Active Player&apos;s Turn when a Model under the Reactive Player&apos;s control with the Knight Sub-Type and the Questoris Mendicant Trait would be Removed as a Casualty after losing its last Hull Point.</characteristic>
+        <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Valorous End Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+        <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For a Valorous End Advanced Reaction, the Reacting Model is always the Model with the Knight Sub-Type and the Questoris Mendicant Trait under the Reactive Player&apos;s control which has lost its last Hull Point and would be Removed as a Casualty.</characteristic>
+        <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. The Reactive Player immediately resolves any version of the Explodes (X) Special Rule which the Reacting Model has, but automatically rolls a 6 on the Dice rolled as part of the Special Rule.
+2. After the Explodes (X) Special Rule has been resolved, the Reacting Model is immediately Removed as a Casualty.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Rad Purge" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="5788-b2f2-8afa-dd1b">
+      <characteristics>
+        <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reacting Model to attack every enemy Model in Base Contact.</characteristic>
+        <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare the Rad Purge Advanced Reaction at the end of Step 5 of the Fight Sub-Phase of any Combat which includes at least one Unit under the Reactive Player&apos;s control which contains only Models with the Knight Sub-Type and the Questoris Mechanicum Trait.</characteristic>
+        <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare the Rad Purge Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+        <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Reacting Unit is always a Unit under the Reactive Player&apos;s control which contains only Models with the Knight Sub-Type and the Questoris Mechanicum Trait and which is in a Combat.</characteristic>
+        <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once this Advanced Reaction is declared, each enemy Unit with one or more Models in Base Contact with at least one Model from the Reacting Unit suffers a number of automatic Hits equal to the number of Models from that Unit which are Engaged with at least one Model from the Reacting Unit. Each such Hit has a Strength of 2, an AP of 5 and a Damage of 1, as well as the Phage (T) and Poisoned (2+) Special Rules.
+2. Once these Hits have been resolved and any Casualties inflicted by them have been removed, the Combat Round ends. Note that any Casualties inflicted by this Advanced Reaction should be taken into account in the following Resolution Sub-Phase for the purposes of scoring Combat Resolution Points.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -19874,6 +20349,11 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <modifier type="add" value="c291-144b-3da6-37ed" field="category">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cf96-8891-3f9a-8921" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="ec63-43fc-c5f5-945d" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a46f-a465-0ead-d6b8" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -19974,6 +20454,54 @@ When a Model with this Special Rule is included in a Detachment, two additional 
         </rule>
       </rules>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Questoris Imperialis" hidden="false" id="0544-8dce-3f8a-245d">
+      <rules>
+        <rule name="Baronial Court" id="87b9-6f8a-1d33-d189" hidden="false">
+          <description>A single Yeomanry Mesnie Additional Detachment may be added to an Army with the Imperial House Household Paradigm without requiring a specific corresponding Household Rank Prime Advantage to have been selected for a Unit in that Army. This Additional Detachment is linked to either a Knight Households Primary Detachment or a Lord of War Additional Detachment (chosen by the Player), as long as that Detachment contains at least one Model with the Questoris Imperialis Faction Trait.
+Additionally, an Army with the Imperial House Household Paradigm is not subject to the 0-1 per Army restriction on the Lord Scion Household Rank Prime Advantage.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Rallying Cry" id="6821-3a52-9ddc-6dd4" hidden="false" type="profile" targetId="8b98-cc22-ceed-aba1"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Questoris Mechanicum" hidden="false" id="2692-0ac9-5eef-5e9f">
+      <rules>
+        <rule name="Servants of the Machine" id="8229-a639-cdac-d4b5" hidden="false">
+          <description>A single Automata Talon Additional Detachment may be added to an Army with the Mechanicum Vassals Household Paradigm without requiring a specific corresponding Household Rank Prime Advantage to have been selected for a Unit in that Army. This Additional Detachment is linked to either a Knight Households Primary Detachment or a Lord of War Additional Detachment (chosen by the Player), as long as that Detachment contains at least one Model with the Questoris Mechanicum Faction Trait.
+Additionally, an Army with the Mechanicum Vassals Household Paradigm is not subject to the 0-1 per Army restriction on the Preceptor Household Rank Prime Advantage.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Rad Purge" id="7cdd-31d7-1219-c6cd" hidden="false" type="profile" targetId="5788-b2f2-8afa-dd1b"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Questoris Mendicant" hidden="false" id="89ae-ac36-aef1-5024">
+      <rules>
+        <rule name="Loyal Retainers" id="e9ba-186a-0292-add6" hidden="false">
+          <description>A single Armiger Talon Additional Detachment may be added to an Army with the Freeblade Company Household Paradigm without requiring a specific corresponding Household Rank Prime Advantage to have been selected for a Unit in that Army. This Additional Detachment is linked to either a Knight Households Primary Detachment or a Lord of War Additional Detachment (chosen by the Player), as long as that Detachment contains at least one Model with the Questoris Mendicant Faction Trait.</description>
+        </rule>
+        <rule name="Mendicant Knights" id="4809-08ea-0757-b353" hidden="false">
+          <description>Units selected as part of a Lord of War Detachment in an Army with the Freeblade Company Household Paradigm which are selected from the Questoris Familia Army List may each have a single Household Rank Prime Advantage selected for them as if they had been selected to fill a Prime Force Organisation Slot.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Valorous End" id="160d-42dd-5404-3a62" hidden="false" type="profile" targetId="5b62-ebec-2331-0f45"/>
+      </infoLinks>
+      <comment>Need to modify rules for LoW detachments to add 2 prime LoW slots if Mendicant is selected</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Household Paradigmns" hidden="false" id="994a-5908-17d9-002b">
+      <entryLinks>
+        <entryLink import="true" name="Household Paradigms" hidden="false" id="b9f6-97c8-92c2-ece6" type="selectionEntryGroup" targetId="5a46-d9a6-d191-6441"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a756-1de1-baa3-55dd"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f71-174a-4a62-5a4b"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="0176-09f9-afec-4123" primary="false" name="Army Configuration"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Army Configuration" hidden="false" id="e528-702e-f73e-5890" type="selectionEntry" targetId="a827-ee7f-fe7d-9e0e">
@@ -19982,4 +20510,48 @@ When a Model with this Special Rule is included in a Detachment, two additional 
       </categoryLinks>
     </entryLink>
   </entryLinks>
+  <sharedRules>
+    <rule name="Fast (X)" id="9ebf-3b90-be22-b9c2" hidden="false" publicationId="7d63-5df4-c656-52de" page="330">
+      <description>&quot;A Unit that only includes Models with the Fast (X) Special Rule gain a bonus to Rush and Charge Moves.&quot;
+When the Player controlling a Unit that is composed entirely of Models with the Fast (X) Special Rule elects to have that Unit Rush, add the value of X attached to the specific variant of Fast (X) to the distance the Unit can move. Likewise, when a Unit composed entirely of Models with the Fast (X) Special Rule is required to make a Charge Move, add the value of X attached to the specific variant of the Fast (X) Special Rule as a positive modifier to the Charge Roll. In any situation where a Unit includes Models with two or more variants of the Fast (X) Special Rule, the lowest possible modifier is used.</description>
+    </rule>
+    <rule name="Impact (X)" id="6ead-c31c-ab09-2f8c" hidden="false" page="300" publicationId="b905-0414-1057-bb34">
+      <description>&quot;On a successful Charge, a Model with the Impact (X) Special Rule temporarily increases a Characteristic by 1.&quot;
+If a Unit that includes any Models with the Impact (X) Special Rule or any Models that have any Weapons with the Impact (X) Special Rule, and that Unit makes a successful Charge, then this Special Rule is triggered. Once triggered, until the end of that Assault Phase, when making Melee Attacks for Models in that Unit, each Model or Weapon that is selected for one of those Models, that has a variant of this Special Rule, gains a modifier of +1 to any Characteristics that is the value of X.</description>
+    </rule>
+    <rule name="Battlesmith (X)" id="c3db-d17c-fd46-eb01" hidden="false" publicationId="b905-0414-1057-bb34" page="294">
+      <description>&quot;A model with the Battlesmith (X) Special Rule can repair Vehicles, Automata, and other mechanical Units.&quot;
+&quot;In the Controlling Player&apos;s Movement Phase as the Active Player, when a Model with the Battlesmith (X) Special Rule has been selected, but either before or after it has been moved, the Controlling Player of that Model may activate this Special Rule. Once activated, the Controlling Player of the Model with the Battlesmith (X) Special Rule hereafter referred to as the &apos;Acting Model&apos;, must select one friendly Model within 6&quot;&quot; of the Acting Model. The Model selected must have the Vehicle, Automata, or Walker Type and is hereafter referred to as the &apos;Target Model&apos;. Once a Target Model has been selected, the Player controlling the Acting Model must make an Intelligence Check for the Acting Model.
+
+If the Check is failed there is no further effect, but if the Check is passed then the Player controlling the Acting Model may select one of the following options:
+
+- Repair - The Target Model gains a number of Wounds or Hull Points equal to the value of X in the Battlesmith (X) Special Rule variant possessed by the Acting Model. This cannot increase the Target Model&apos;s Wounds or Hull Points above its Base Value.
+
+- Restore - A number of Statuses equal to the value of X in the Battlesmith (X) Special Rule variant possessed by the Acting Model may be removed from the Target Model.
+
+Activating the Battlesmith (X) Special Rule does not limit the Acting Model or the Target Model when moving or attacking in the same Turn.&quot;</description>
+    </rule>
+    <rule name="Firestorm" id="3ed1-c5b3-a98d-1b12" hidden="false" publicationId="b905-0414-1057-bb34" page="299">
+      <description>&quot;A Model with this Special Rule does not have to make Volley Attacks as Snap Shots&quot;
+When a Model with this Special Rule makes Volley Attacks, it is not required to fire Snap Shots. In addition, after making Volley Attacks in Step 4 of the Charge Procedure, a Unit containing any Models with this Special Rule is not required to make a Charge Roll in Step 5. If the Controlling Player chooses not to make a Charge Roll in Step 5 of the Charge Procedure then the Charge Procedure ends immediately.</description>
+    </rule>
+    <rule name="Fear (X)" id="0ebc-0c92-2209-6393" hidden="false" page="298" publicationId="b905-0414-1057-bb34">
+      <description>&quot;Models near an enemy Model with the Fear (X) Special Rule must reduce their Advanced Characteristics.&quot;
+When any Model from a Unit is within 12&quot; of an enemy Model with the Fear (X) Special Rule, all Models in that Unit must reduce their Leadership, Willpower, Cool, and Intelligence Characteristics by the value of X. This negative modifier is removed as soon as no Models in a given Unit are within 12&quot; of any Model with the Fear (X) Special Rule. If a Unit would be affected by multiple instances of the Fear (X) Special Rule, the value of X is not stacked and instead the single highest value is used as a negative modifier.</description>
+    </rule>
+    <rule name="Precision (X)" id="4fbd-e0bc-8f72-6e3f" hidden="false" page="307" publicationId="b905-0414-1057-bb34">
+      <description>&quot;Attacks made with the Precision (X) Special Rule are allocated by the Attacking Player, not the Defender.&quot;
+When any Hit Test is made for an attack with the Precision (X) Special Rule, if the result of the Dice roll, before any modifiers are applied, is equal to or great than the value of X attached to this variant of the Precision (X) Special Rule, then if a Hit is inflicted by that roll, that Hit becomes a &apos;Precision Hit&apos;.
+
+These Precision Hits must form a separate Fire Group or Strike Group. Wound Tests are made as normal for Precision Hits and cause Precision wounds. In Step 8 of the Shooting Attack process or Step 7 of the Initiative Step sequence, when selecting a Target Model for a Fire Group or Strike Group that is made up of Precision wounds, the Target Model is not selected using the normal Rules. Instead the attacking Player chooses which Model in the Target Unit will be the Target Model, and may select any Model that is a part of that Unit.
+
+Note that Models Engaged in a Challenge cannot use this Special Rule to allocate Hits to any Model other than the enemy Model that is Engaged in the same Challenge and that any attacks which are made as Snap Shots, or for Weapons or attacks that have either the Blast (X) , Barrage (X), Template or Reaping Blow (X) Special Rules, may never trigger the Precision (X) Special Rule no matter what the result of the Hit Test is.</description>
+    </rule>
+    <rule name="Expendable (X)" id="c4d4-e053-9564-540b" hidden="false" publicationId="b905-0414-1057-bb34" page="298">
+      <description>&quot;A Player scores less Victory Points when they destroy a Unit that includes only Models with this Special Rule.&quot;
+The number of Victory Points scored by the opponent when a Unit that includes only Models with this Special Rule is entirely Removed as Casualties, for example, as part of the Vanguard (X) Special Rule, First Strike (X) or Slay the Warlord (X) Mission Special Rule, is reduced by the value of X, to a minimum of 1. If a Unit includes Models with different variants of this Special Rule, then the lowest value of X that was present on any Model in that Unit at the start of the Player Turn in which the last Model in the Unit is Removed as a Casualty is used to determine the effect of this Special Rule on that Unit.
+
+Note that, if, at the start of the Player Turn a Unit includes any Models that do not have this Special Rule, then this Special Rule has no effect on that Unit for the duration of that Player Turn regardless of how many other Models in the Unit may have any variant of this Special Rule.</description>
+    </rule>
+  </sharedRules>
 </gameSystem>
