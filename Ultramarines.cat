@@ -760,6 +760,20 @@ During the Statuses Sub-Phase, any friendly Unit that does not include a Model w
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="31e6-d7e1-30f6-8b4b">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d6e-fd65-4c32-f6d6"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8284-9f7d-74e5-da29"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Rite of War" hidden="false" id="7fad-eecc-2a9b-3fed" type="selectionEntryGroup" targetId="ec51-3014-91b3-8bd9">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dd9f-c34f-d6b7-836a"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9933-b4cb-b7d2-9ca5"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="1aae-0d5f-c523-7fa1" targetId="9b32-f350-6aa9-9c09" importRootEntries="true"/>
@@ -794,5 +808,72 @@ During the Statuses Sub-Phase, any friendly Unit that does not include a Model w
         <categoryLink targetId="7fcf-5885-0a4d-ee31" id="07a1-397c-87db-cd6b" primary="false" name="Ultramarines"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Rite of War" hidden="false" id="c33a-6350-9da5-99fb" type="selectionEntry" targetId="31e6-d7e1-30f6-8b4b">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="34d3-4d63-5b93-6ae7" primary="true" name="Army Configuration"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Rite of War" id="ec51-3014-91b3-8bd9" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Legiones Astartes Ultramarines" hidden="false" id="bc38-27b3-022c-768e">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Legion Tactica" hidden="false" id="70b7-bcbc-27f3-baa5">
+              <rules>
+                <rule name="Tactical Flexibility" id="76ed-8b55-fbb1-7a26" hidden="false">
+                  <description>&quot;An Ultramarines army may reduce the cost of a Reaction each Turn.&quot;
+Once per Turn, when declaring a Reaction for a Unit that only contains Models with this Special Rule, the Controlling Player may choose to activate the Tactical Flexibility Special Rule. When they do, modify the Reaction Point cost of that Reaction by -1, to a minimum of 0.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2702-5cfd-01a9-1728"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4392-08a5-34ce-bb7e"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gambit" hidden="false" id="597b-d9cd-a998-e5a3">
+              <profiles>
+                <profile name="Aegis of Wisdom" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="f026-e96c-4012-5dfe">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows Models to gain additional bonuses to the Focus Roll.</characteristic>
+                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">When this Gambit is selected, the Controlling Player gains no Outside Support bonus to their Focus Roll, but instead adds a +1 modifier to their Focus Roll for every friendly Model with both the Command Sub-Type and the Ultramarines Trait on the Battlefield, excluding the Model for which this Gambit was selected.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a9a0-488c-9a61-00dd"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c5b-5413-1289-594d"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Advanced Reaction" hidden="false" id="3973-d779-2cdb-41c2">
+              <profiles>
+                <profile name="Retribution Strike" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="4164-0ed7-88d1-06fe">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows a Unit to return fire in response to an enemy Shooting Attack directed at a friendly Unit.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">Once per Battle, the Reactive Player may declare the Retribution Strike Advanced Reaction in the Shooting Phase, during Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player that targets a Unit that only includes Models with the Ultramarines Trait.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Retribution Strike of Valour Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For the Retribution Strike Reaction, the Target Unit is always the Unit whose Shooting Attack triggered the Reaction. The Reactive Player can select which Unit is the Reactive Unit, however the Unit must meet the following criteria:
+
+
+- It is not the target of the enemy Shooting Attack that triggered the Reaction.
+- At least one Model in the Unit has Line of Sight to the enemy Unit that triggered this Reaction
+- It is eligible to make a Reaction
+- it is eligible to make a Shooting Attack.
+- It is entirely composed of Models with the Ultramarines Trait.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once the Reacting Unit has been selected, the Active Player must then resolve all remaining Steps of the Shooting Attack process as normal, up to the start of Step 11.
+2. Before resolving Step 11, the Reactive Player makes a Shooting Attack with the Reacting Unit, targeting only the Target Unit.
+3. Once the Shooting Attack has been completely resolved, including removing any Casualties, the Players must then finish resolving Step 11 of the original Shooting Attack that triggered the Reaction.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f7ea-2d83-b98d-b8f5"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd68-46c3-d959-cf0b"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
