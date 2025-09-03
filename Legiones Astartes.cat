@@ -1483,7 +1483,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </selectionEntryGroup>
             <selectionEntryGroup name="Options" id="d6e1-87c8-3d1f-45a4" hidden="false" sortIndex="2">
               <entryLinks>
-                <entryLink import="true" name="Pair of lightning claws" hidden="false" id="cd1e-986e-8224-8902" type="selectionEntry" targetId="6754-24dd-5be0-26ff" sortIndex="1">
+                <entryLink import="true" name="Pair of lightning claws" hidden="false" id="cd1e-986e-8224-8902" type="selectionEntry" targetId="6754-24dd-5be0-26ff" sortIndex="3">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
                   </costs>
@@ -1492,19 +1492,28 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="da17-ab73-7d33-c76f" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="b824-c0ad-804e-0026" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="da17-ab73-7d33-c76f" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="b824-c0ad-804e-0026" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                     <modifier type="set" value="0" field="c632-d3e7-c645-4df0">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="b824-c0ad-804e-0026" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="da17-ab73-7d33-c76f" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="b824-c0ad-804e-0026" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Pair of Raven&apos;s Talons" hidden="true" id="5652-55c9-c007-9c0f" type="selectionEntry" targetId="ab57-e7ca-3fc7-b256" sortIndex="2">
+                <entryLink import="true" name="Pair of Raven&apos;s Talons" hidden="true" id="5652-55c9-c007-9c0f" type="selectionEntry" targetId="ab57-e7ca-3fc7-b256" sortIndex="4">
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <comment>RG+Cmd Only</comment>
@@ -1549,7 +1558,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1e3d-2ca5-1ade-76fe" includeChildSelections="false"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup name="May exchange bolter for:" id="ada7-e558-58a6-8710" hidden="false" sortIndex="4" defaultSelectionEntryId="9421-9be0-5276-f3d7">
+                <selectionEntryGroup name="May exchange bolter for:" id="ada7-e558-58a6-8710" hidden="false" sortIndex="2" defaultSelectionEntryId="9421-9be0-5276-f3d7">
                   <entryLinks>
                     <entryLink import="true" name="Legion Officer Wargear" hidden="false" id="4f6f-c82a-5990-5171" type="selectionEntryGroup" targetId="f955-8b22-9362-31c0" flatten="true" sortIndex="1">
                       <comment>Exchange bolter for</comment>
@@ -1595,6 +1604,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                             <condition type="atLeast" value="1" field="selections" scope="unit" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="unit" childId="ab57-e7ca-3fc7-b256" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="unit" childId="b824-c0ad-804e-0026" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="da17-ab73-7d33-c76f" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -1606,22 +1616,20 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                             <condition type="atLeast" value="1" field="selections" scope="unit" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="unit" childId="ab57-e7ca-3fc7-b256" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="unit" childId="b824-c0ad-804e-0026" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="da17-ab73-7d33-c76f" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="May exchange bolt pistol for:" id="603b-4824-ba0a-2aea" hidden="false" collapsible="true" sortIndex="3">
+                <selectionEntryGroup name="May exchange bolt pistol for:" id="603b-4824-ba0a-2aea" hidden="false" collapsible="true" sortIndex="1" defaultSelectionEntryId="e97c-8d09-5fd4-3cd0">
                   <entryLinks>
-                    <entryLink import="true" name="Legion Officer Wargear" hidden="false" id="88bc-6163-0b4b-c8af" type="selectionEntryGroup" targetId="f955-8b22-9362-31c0" sortIndex="5" flatten="true">
-                      <entryLinks>
-                        <entryLink import="true" name="Bolt pistol" hidden="false" id="4d26-0c47-7591-4f7b" type="selectionEntry" targetId="2942-f783-d627-33c5" defaultAmount="1" sortIndex="1">
-                          <modifiers>
-                            <modifier type="set" value="Bolt Pistol (Default)" field="name"/>
-                          </modifiers>
-                        </entryLink>
-                      </entryLinks>
+                    <entryLink import="true" name="Legion Officer Wargear" hidden="false" id="88bc-6163-0b4b-c8af" type="selectionEntryGroup" targetId="f955-8b22-9362-31c0" sortIndex="5" flatten="true"/>
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="e97c-8d09-5fd4-3cd0" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1">
+                      <modifiers>
+                        <modifier type="set" value="Bolt pistol (default)" field="name"/>
+                      </modifiers>
                     </entryLink>
                   </entryLinks>
                   <constraints>
@@ -1640,6 +1648,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                           <conditions>
                             <condition type="atLeast" value="1" field="selections" scope="unit" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="unit" childId="ab57-e7ca-3fc7-b256" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="da17-ab73-7d33-c76f" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -1650,6 +1659,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                           <conditions>
                             <condition type="atLeast" value="1" field="selections" scope="unit" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="unit" childId="ab57-e7ca-3fc7-b256" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="da17-ab73-7d33-c76f" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -1668,16 +1678,21 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                         <condition type="atLeast" value="1" field="selections" scope="unit" childId="da17-ab73-7d33-c76f" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
+                    <modifier type="set" value="1" field="6a63-6b06-fb5a-9e1b">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="da17-ab73-7d33-c76f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <comment>Imperial Fist Castellan options</comment>
                   <entryLinks>
-                    <entryLink import="true" name="Heavy bolter" hidden="false" id="dd41-6429-c170-3b2f" type="selectionEntry" targetId="bc40-b14a-978e-0232" sortIndex="1"/>
+                    <entryLink import="true" name="Heavy bolter" hidden="false" id="dd41-6429-c170-3b2f" type="selectionEntry" targetId="bc40-b14a-978e-0232" sortIndex="1" defaultAmount="1"/>
                     <entryLink import="true" name="Autocannon" hidden="false" id="dd0f-2e0d-6c37-a242" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93" sortIndex="2"/>
                     <entryLink import="true" name="Iliastus Assault Cannon" hidden="false" id="e9bf-8128-9423-b67c" type="selectionEntry" targetId="f38b-8af1-17b8-30fe" sortIndex="3"/>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a63-6b06-fb5a-9e1b" automatic="true"/>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="bd18-d2ce-8654-aacb"/>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6a63-6b06-fb5a-9e1b" automatic="true"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="bd18-d2ce-8654-aacb" automatic="true"/>
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -6422,31 +6437,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <selectionEntryGroup name="May exchange bolter for:" id="7241-f7af-2c37-bf3b" hidden="false" sortIndex="0" defaultSelectionEntryId="6c81-0bfe-8e5b-d222">
                   <entryLinks>
                     <entryLink import="true" name="Legion Officer Wargear" hidden="false" id="5463-c3ad-7424-738c" type="selectionEntryGroup" targetId="f955-8b22-9362-31c0" sortIndex="5" flatten="true">
-                      <entryLinks>
-                        <entryLink import="true" name="Banestrike bolter" hidden="false" id="9939-abbf-26ca-72ae" type="selectionEntry" targetId="69de-4883-efd2-b876" sortIndex="1">
-                          <modifiers>
-                            <modifier type="set" value="false" field="hidden">
-                              <conditionGroups>
-                                <conditionGroup type="and">
-                                  <conditions>
-                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
-                                  </conditions>
-                                  <comment>SH</comment>
-                                  <conditionGroups>
-                                    <conditionGroup type="or">
-                                      <conditions>
-                                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
-                                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
-                                      </conditions>
-                                    </conditionGroup>
-                                  </conditionGroups>
-                                </conditionGroup>
-                              </conditionGroups>
-                              <comment>SH+Cmd/Champ Only</comment>
-                            </modifier>
-                          </modifiers>
-                        </entryLink>
-                      </entryLinks>
                       <comment>Exchange bolter for</comment>
                     </entryLink>
                     <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="bcec-8244-b1da-3ea6" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08">
@@ -6476,47 +6466,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                       </costs>
                     </entryLink>
                     <entryLink import="true" name="Bolter" hidden="false" id="6c81-0bfe-8e5b-d222" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="1"/>
-                    <entryLink import="true" name="Banestrike bolter" hidden="true" id="b2c4-f84a-b39c-d51d" type="selectionEntry" targetId="69de-4883-efd2-b876" sortIndex="2">
-                      <costs>
-                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="false" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                              <comment>SH</comment>
-                              <conditionGroups>
-                                <conditionGroup type="or">
-                                  <conditions>
-                                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
-                                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
-                                  </conditions>
-                                </conditionGroup>
-                              </conditionGroups>
-                            </conditionGroup>
-                          </conditionGroups>
-                          <comment>SH+Cmd/Champ Only</comment>
-                        </modifier>
-                      </modifiers>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f578-a878-1262-c723"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Shrapnel bolter" hidden="true" id="baea-2d36-cd4a-b6fe" type="selectionEntry" targetId="9532-a693-d2ac-f198" sortIndex="3">
-                      <modifiers>
-                        <modifier type="set" value="false" field="hidden">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <costs>
-                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="8"/>
-                      </costs>
-                    </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3c2d-b890-c128-d87b" includeChildSelections="false"/>
@@ -20929,6 +20878,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="a982-1251-1cab-0d37" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="76cd-50f2-4cf3-2bcc" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="6424-4abe-4fec-86d5" primary="false" name="Infantry Model Type"/>
@@ -21133,6 +21083,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="0d25-230e-5b72-ceca" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="e96a-b6d1-6e35-188f" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Outrider Esoterist may have its twin bolter exchanged for " id="fb55-6889-4688-939c" hidden="false" sortIndex="2">
@@ -21396,6 +21347,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd2a-321d-2848-5fd7" automatic="true"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="5d57-edb6-8472-bba3" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <modifiers>
             <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
@@ -21521,6 +21473,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </constraints>
             </entryLink>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="bb32-1142-7333-f5be" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="d32e-a6f8-afd8-a007" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its volkite serpenta exchanged for " id="6a2d-30b7-4055-8717" sortIndex="1">
@@ -21754,6 +21707,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </entryLink>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="7d6d-d418-791a-c1d9" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
             <entryLink import="true" name="Mount" hidden="false" id="bc46-1a1d-4686-cb35" type="selectionEntryGroup" targetId="9089-07e5-3653-84b6" sortIndex="1"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="254b-a3f6-af06-5aeb" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have melta bombs selected for it for +5 Points." id="a7b2-d960-4117-b0a6" sortIndex="8">
@@ -22000,8 +21954,13 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d35d-2eb9-4726-a09f"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Terminator Armour" hidden="false" id="f0b2-f00d-3602-b87a" type="selectionEntryGroup" targetId="170b-d9c0-e9d6-b314" sortIndex="1"/>
+            <entryLink import="true" name="Terminator Armour" hidden="false" id="f0b2-f00d-3602-b87a" type="selectionEntryGroup" targetId="170b-d9c0-e9d6-b314" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="efd9-1eb1-80ab-604d" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
+              </entryLinks>
+            </entryLink>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="dfec-dfc1-36b3-0621" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="738c-50d5-86de-f760" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="2c40-9771-4ecf-8651" sortIndex="2" defaultSelectionEntryId="cba4-2a51-418f-a95d">
@@ -22156,6 +22115,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </constraints>
             </entryLink>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="bd46-e68f-fac0-e3cb" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="45c2-1af4-e3f7-6b2d" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its bolt pistol exchanged for " id="8be2-272b-41ab-b608" sortIndex="1">
@@ -22385,6 +22345,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </entryLink>
             <entryLink import="true" name="Mount" hidden="false" id="678e-9c9f-85a7-9eea" type="selectionEntryGroup" targetId="9089-07e5-3653-84b6" sortIndex="1"/>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="ba49-fa63-238e-2e1f" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="a480-9b20-a0ea-054b" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its bolt pistol exchanged for " id="379c-b4b2-40b0-be8d" sortIndex="4">
@@ -22659,6 +22620,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </entryLink>
             <entryLink import="true" name="Terminator Armour" hidden="false" id="a1af-d364-a837-e188" type="selectionEntryGroup" targetId="170b-d9c0-e9d6-b314" sortIndex="1"/>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="eb6e-6f15-05dc-0bc7" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="27fa-9ce6-d4dd-44ea" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="3939-d395-40d9-a768" sortIndex="2">
@@ -22837,6 +22799,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="e309-ccfd-8d36-1871" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its power weapon exchanged for " id="e0a5-d1e5-45b5-b05c" sortIndex="1">
@@ -23131,6 +23094,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="3cf3-3dea-fad1-2c3c" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its power weapon exchanged for " id="1a35-16c8-4f19-afab" sortIndex="4">
@@ -23442,6 +23406,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </entryLink>
             <entryLink import="true" name="Terminator Armour" hidden="false" id="6805-d597-d47b-d146" type="selectionEntryGroup" targetId="170b-d9c0-e9d6-b314" sortIndex="1"/>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="be50-b695-1781-986b" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="3ff8-297c-6252-8929" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its power weapon exchanged for " id="3a94-9923-4140-9070" sortIndex="2">
@@ -23613,6 +23578,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </constraints>
             </entryLink>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="560d-3c55-0aed-b2b4" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="990d-e42c-590a-ed24" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its bolt pistol exchanged for " id="50dc-9bf3-490e-b33d" sortIndex="1" defaultSelectionEntryId="39cd-16e2-4b55-b108">
@@ -23872,6 +23838,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </entryLink>
             <entryLink import="true" name="Mount" hidden="false" id="ebed-5ac6-a2a7-19eb" type="selectionEntryGroup" targetId="9089-07e5-3653-84b6" sortIndex="1"/>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="845a-d67f-cc01-8235" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="b54b-3672-cbb3-5161" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its bolt pistol exchanged for " id="dae6-7e27-44cd-af23" sortIndex="4" defaultSelectionEntryId="385c-6c58-4f97-a7a8">
@@ -24170,6 +24137,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </entryLink>
             <entryLink import="true" name="Terminator Armour" hidden="false" id="6cb3-8585-2644-2e60" type="selectionEntryGroup" targetId="170b-d9c0-e9d6-b314" sortIndex="1"/>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="b6b3-6922-af17-62ec" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="7fb8-3f35-819f-9cc5" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="31c9-2aaa-4b51-b53a" defaultSelectionEntryId="3d55-66c3-43e6-826c" sortIndex="2">
@@ -24324,6 +24292,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </constraints>
             </entryLink>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="0d93-17a9-8b2a-2075" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="3803-5056-2ced-cdcb" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its bolt pistol exchanged for " id="09a9-2381-4606-bcee" sortIndex="1">
@@ -24538,6 +24507,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </entryLink>
             <entryLink import="true" name="Mount" hidden="false" id="5eab-c787-bea1-a21e" type="selectionEntryGroup" targetId="9089-07e5-3653-84b6" sortIndex="1"/>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="6a27-2622-35e7-a0e5" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="813a-9f06-ee23-5b2c" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its bolt pistol exchanged for " id="caaa-0236-429b-b500" sortIndex="4">
@@ -24769,6 +24739,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </constraints>
             </entryLink>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="a923-cdd9-1f2c-ee01" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="8465-55b6-e398-1634" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have both its overcharged volkite serpentas exchanged for " id="ec17-e17c-4e2f-918c" defaultSelectionEntryId="6035-5abd-aa2e-cecc" sortIndex="1">
@@ -24970,6 +24941,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </constraints>
             </entryLink>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="b962-9b9b-a68b-1bfe" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="81ad-251d-39e5-186b" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its bolt pistol exchanged for " id="83ab-37ca-4152-b497" sortIndex="3" defaultSelectionEntryId="13fe-7f05-46ce-961b">
@@ -25231,6 +25203,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </constraints>
             </entryLink>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="4f30-ee92-adde-eb97" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="3059-9729-a1af-70cf" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="cf2f-e57d-4881-9a4c" sortIndex="4" defaultSelectionEntryId="7089-ffb2-c322-a3af">
@@ -25525,6 +25498,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </constraints>
             </entryLink>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="db98-8495-dcc3-fc32" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="57b2-06d7-6c0a-f880" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="28fa-c671-4a68-a38e" sortIndex="3" defaultSelectionEntryId="be51-7b38-4c83-8835">
@@ -25749,6 +25723,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </constraints>
             </entryLink>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="dbe3-a8c5-c494-f448" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="dc88-7758-390b-38e8" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its chainsword exchanged for " id="1eb2-62c6-4f7b-941c" defaultSelectionEntryId="4cfe-f08f-4c3d-819e" sortIndex="3">
@@ -26120,6 +26095,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           <entryLinks>
             <entryLink import="true" name="Mount" hidden="false" id="cc2c-4540-a6fe-78ac" type="selectionEntryGroup" targetId="9089-07e5-3653-84b6" sortIndex="1"/>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="557e-6203-6360-66cf" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="4bad-adda-e7af-ba75" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <modifiers>
             <modifier type="set" value="Primus Medicae on Scimitar Jetbike" field="name">
@@ -26257,6 +26233,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </entryLink>
             <entryLink import="true" name="Terminator Armour" hidden="false" id="d11c-0515-2800-1112" type="selectionEntryGroup" targetId="170b-d9c0-e9d6-b314" sortIndex="1"/>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="d1ac-64e1-c27e-9e5c" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="426b-bfd2-67ee-4d37" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="24c0-d537-4e7f-86a9" sortIndex="2">
@@ -26442,6 +26419,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </constraints>
             </entryLink>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="354b-1aaa-b9f4-6e98" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="eab1-b634-38ea-379d" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have melta bombs selected for it for +5 Points." id="8d1e-7a06-497b-a24f" sortIndex="5">
@@ -26693,7 +26671,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="130"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Outrider Delegatus" id="15e7-afdf-4986-8e20" page="55" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Outrider Delegatus" id="15e7-afdf-4986-8e20" page="55" publicationId="5469-14da-d0a1-6092" sortIndex="1">
           <profiles>
             <profile id="24fe-6527-4706-9acf" name="Outrider Delegatus" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
@@ -26838,6 +26816,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </entryLink>
             <entryLink import="true" name="Mount" hidden="false" id="7c63-c652-a045-88a2" type="selectionEntryGroup" targetId="9089-07e5-3653-84b6" sortIndex="1"/>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="ba20-b8c8-e7a4-1903" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="9631-6e2f-1b85-5951" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its chainsword and/or bolt pistol exchanged for " id="9d2e-6452-4861-b134" sortIndex="4">
@@ -27213,6 +27192,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           <entryLinks>
             <entryLink import="true" name="Terminator Armour" hidden="false" id="1438-d687-5311-7a50" type="selectionEntryGroup" targetId="170b-d9c0-e9d6-b314" sortIndex="1"/>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="9c3d-66c4-e377-fba3" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="a4ee-3725-facb-aca9" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <modifiers>
             <modifier type="set" value="Tartaros Delegatus" field="name">
@@ -27342,6 +27322,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e46c-e277-4b19-bb17"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="f3c5-fb8e-3f09-35e9" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its bolt pistol exchanged for " id="3826-3446-47f6-9362" sortIndex="1">
@@ -27523,6 +27504,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </entryLink>
             <entryLink import="true" name="Terminator Armour" hidden="false" id="835f-c355-88b5-6e53" type="selectionEntryGroup" targetId="170b-d9c0-e9d6-b314" sortIndex="1"/>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="602f-57bf-2e3f-34eb" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="1bc6-396a-904f-8037" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="bbea-b537-4f27-afc7" defaultSelectionEntryId="7526-9d28-4f83-afef" sortIndex="2">
@@ -27671,6 +27653,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </constraints>
             </entryLink>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="8563-13f0-522d-dbfd" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="74ab-7641-124e-cbf8" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have melta bombs selected for it for +5 Points." id="369d-48dc-4cad-ab67" sortIndex="5">
@@ -28019,6 +28002,8 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </constraints>
             </entryLink>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="6896-61c9-2e29-1eba" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="c706-b5ac-9091-3cac" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="4"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="4f33-32a0-e58f-ea37" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -28123,6 +28108,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </constraints>
             </entryLink>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="5bfd-9aef-df47-f3ac" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="267d-244f-ac46-6345" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have melta bombs selected for it for +5 Points." id="8b5f-945e-4805-b28c" sortIndex="4">
@@ -28440,6 +28426,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="c250-9609-9b0f-ce92" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have one item from the Legion Sergeant Melee Weapons list selected for it." id="f35f-75b0-4e4c-aeed" sortIndex="6" flatten="false">
@@ -34912,9 +34899,9 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cfc-7543-f018-185c" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Legion Officer Wargear" id="f955-8b22-9362-31c0" hidden="false" sortIndex="1" defaultSelectionEntryId="none" collapsible="true">
+    <selectionEntryGroup name="Legion Officer Wargear" id="f955-8b22-9362-31c0" hidden="false" sortIndex="1" collapsible="true">
       <entryLinks>
-        <entryLink import="true" name="Bolt pistol" hidden="false" id="47a9-bf3a-57bf-dd76" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1">
+        <entryLink import="true" name="Bolt pistol" hidden="false" id="47a9-bf3a-57bf-dd76" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1" defaultAmount="">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
           </costs>
@@ -35714,7 +35701,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         </entryLink>
         <entryLink import="true" name="Banestrike combi-bolter" hidden="true" id="58a5-562c-93ac-b096" type="selectionEntry" targetId="08db-6d95-f0be-cfe0" sortIndex="9">
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -35882,7 +35869,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Shrapnel cannon" hidden="false" id="97c4-8bfc-a496-8963" type="selectionEntry" targetId="9e19-9a01-799a-459e" sortIndex="11">
+        <entryLink import="true" name="Shrapnel cannon" hidden="true" id="97c4-8bfc-a496-8963" type="selectionEntry" targetId="9e19-9a01-799a-459e" sortIndex="11">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>

@@ -483,9 +483,9 @@
     <categoryEntry name="Forge Crafted Weapon in Unit" id="f9f6-d169-cb95-6285" hidden="false"/>
     <categoryEntry name="Recon - Land Raider Explorator Only" id="1bc1-e6ff-d62e-398e" hidden="false"/>
     <categoryEntry name="Elites - Myrmidax Only" id="cd91-8631-13b1-59d5" hidden="false"/>
-    <categoryEntry name="Elites - Cybernetica Only" id="51e9-3e9e-3e09-f4c7" hidden="false"/>
-    <categoryEntry name="Support - Cybernetica Only" id="6670-8971-59cb-b440" hidden="false"/>
-    <categoryEntry name="War-Engine - Cybernetica Only" id="a212-e7c6-7b8c-f480" hidden="false"/>
+    <categoryEntry name="Elites - Automata Only" id="51e9-3e9e-3e09-f4c7" hidden="false"/>
+    <categoryEntry name="Support - Automata Only" id="6670-8971-59cb-b440" hidden="false"/>
+    <categoryEntry name="War-Engine - Automata Only" id="a212-e7c6-7b8c-f480" hidden="false"/>
     <categoryEntry name="Command - Arcuitor Magesterium Only" id="d798-77b3-0f8e-d492" hidden="false"/>
     <categoryEntry name="Legiones Thallaxes" id="6f78-9e60-4884-63d2" hidden="true">
       <constraints>
@@ -511,7 +511,7 @@
     <categoryEntry name="Mortificator" id="4e4f-ab55-68ef-ad63" hidden="false"/>
     <categoryEntry name="Siege Breaker" id="25ad-fbd9-d161-8fd1" hidden="false"/>
     <categoryEntry name="Special Assignment" id="12d9-f8dc-4db6-0880" hidden="false"/>
-    <categoryEntry name="No default Power Weapon" id="dd1b-70ef-6015-1291" hidden="false" page=""/>
+    <categoryEntry name="No default Power Weapon" id="dd1b-70ef-6015-1291" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -6958,7 +6958,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0ba4-e22f-a834-5f65" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Elites - Cybernetica Only" hidden="false" id="9224-19ca-80a7-e010" targetId="51e9-3e9e-3e09-f4c7">
+            <categoryLink name="Elites - Automata Only" hidden="false" id="9224-19ca-80a7-e010" targetId="51e9-3e9e-3e09-f4c7">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b8e-2c6e-7930-733e" includeChildSelections="false"/>
               </constraints>
@@ -6970,7 +6970,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="Support - Cybernetica Only" hidden="false" id="639a-df2c-8203-f491" targetId="6670-8971-59cb-b440">
+            <categoryLink name="Support - Automata Only" hidden="false" id="639a-df2c-8203-f491" targetId="6670-8971-59cb-b440">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68f2-1777-ac43-88ed" includeChildSelections="false"/>
               </constraints>
@@ -6982,7 +6982,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="War-Engine - Cybernetica Only" hidden="false" id="a81c-64d7-3fce-e184" targetId="a212-e7c6-7b8c-f480">
+            <categoryLink name="War-Engine - Automata Only" hidden="false" id="a81c-64d7-3fce-e184" targetId="a212-e7c6-7b8c-f480">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="487b-d91d-5d23-8bd7" includeChildSelections="false"/>
               </constraints>
@@ -15783,6 +15783,11 @@
             <modifier type="increment" value="1" field="6f31-a14e-e22b-ad94">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="1baf-b200-9e02-844d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="Veteran Cadre requires Legion Champion" field="error">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="1baf-b200-9e02-844d" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
