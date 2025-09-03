@@ -405,7 +405,7 @@ class GameTests(unittest.TestCase):
             "type": "atLeast",
             "value": "1",
             "field": "selections",
-            "scope": "parent",
+            "scope": "unit",
             "childId": expected_condition_child_id,
             "shared": "true",
             "includeChildForces": "false",
