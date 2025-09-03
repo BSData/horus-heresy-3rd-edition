@@ -1785,16 +1785,10 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Gambits" hidden="false" id="6236-98d5-4644-d2cb">
               <profiles>
-                <profile name="A Saga Woven of Glory" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="4763-10a7-dca1-f274">
-                  <characteristics>
-                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit increases the Attacks Chracteristic of a Unit that accompanies a Model fighting in a Challenge.</characteristic>
-                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">If a Model with this Gambit selected for it is the winner of the Challenge whilst this Gambit is selected and the opposing Model is Removed as a Casualty, all Models in the same Unit as the Model that this Gambit is selected for gain a modifier of +1 to their Attacks Characteristic in the following Fight Sub-phase.</characteristic>
-                  </characteristics>
-                </profile>
                 <profile name="Merciless Strike" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="2af6-bce7-4a13-eb9e">
                   <characteristics>
-                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7"/>
-                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a"/>
+                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">When this Gambit is selected, the Controlling Player&apos;s Model gains the Phage (T) Special Rule.</characteristic>
+                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">This Gambit can only be selected during the first Face Off Step of a Challenge involving this Model. While this Gambit is selected, any Weapon this Model uses during this Challenge gains the Phage (T) Special Rule for the duration of this Strike Step.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1806,7 +1800,8 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <selectionEntry type="upgrade" import="true" name="Legion Tactica: SH" hidden="false" id="f2df-05ae-4d29-a45c">
               <rules>
                 <rule name="Death Dealers" id="c839-3f77-5885-b209" hidden="false">
-                  <description>&quot;&quot;</description>
+                  <description>&quot;Sons of Horus make Volley Attacks at their full Ballistic Skill Characteristic&quot;
+When a Model with this Special Rule makes Volley Attacks, it is not required to fire Snap Shots.</description>
                 </rule>
               </rules>
               <constraints>
@@ -1818,7 +1813,11 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
               <profiles>
                 <profile name="Warrior Pride" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="4ab0-0960-96d1-672d">
                   <characteristics>
-                    <characteristic name="Description" typeId="5d02-0e54-0f6a-0f0b">&quot;.&quot;</characteristic>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reacting Unit to ignore Challenges from an opponent with a lower Weapon Skill Characteristic.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Warrior Pride Advanced Reaction when a Unit made up of Models with the Sons of Horus Trait is in Combat with an enemy Unit and the Active Player selects a Model to be the Challenger.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare the Warrior Pride Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For a Warrior Pride Advanced Reaction, the Target Unit is always the Unit that includes the enemy Model that is selected as the Challenger. The Reacting Unit is the Unit that includes any Models with the Sons of Horus Trait that could be selected as the Challenged.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">If the Challenger&apos;s Base Weapon Skill Characteristic is lower than the Base Weapon Skill Characteristic of all Models in the Reacting Unit that would be eligible to accept the Challenge, the Reactive Player can choose not to accept the Challenge. If they do the Challenge Sub-Phase ends immediately and that Model does not gain the Disgraced Tactical Status.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
