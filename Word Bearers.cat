@@ -1548,6 +1548,20 @@ When a Model with this Special Rule makes Volley Attacks, modify the Firepower C
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="0175-852c-b596-ad49">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e1a-a602-7f8c-3c29"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6e6-80df-0998-8aad"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Rite of War" hidden="false" id="16d1-1348-44a7-916c" type="selectionEntryGroup" targetId="b1a8-3e12-0130-3dc5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c6b0-19a6-fba7-1f3e"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27f2-de6d-bef3-f30b"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="21bf-a185-39e4-3a85" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
@@ -1567,7 +1581,10 @@ When a Model with this Special Rule makes Volley Attacks, modify the Firepower C
           </conditions>
         </modifier>
       </modifiers>
-      <description>When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, score 1 Combat Resolution point if any friendly Models in that Combat have the Word Bearers Trait.</description>
+      <description>&quot;Word Bearers gain additional Combat Resolution Points.&quot;
+
+
+When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, score 1 Combat Resolution point if any friendly Models in that Combat have the Word Bearers Trait.</description>
     </rule>
   </sharedRules>
   <entryLinks>
@@ -1619,5 +1636,60 @@ When a Model with this Special Rule makes Volley Attacks, modify the Firepower C
         <categoryLink targetId="2aba-8953-ea2f-ce59" id="b1b9-d6eb-557c-b693" primary="false" name="Word Bearers"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Rite of War" hidden="false" id="a2ea-e5b2-9780-fd82" type="selectionEntry" targetId="0175-852c-b596-ad49">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="cfe2-87a7-3289-dff0" primary="true" name="Army Configuration"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Rite of War" id="b1a8-3e12-0130-3dc5" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Legiones Astartes Word Bearers" hidden="false" id="b3f0-12f6-4f7f-731d">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Legion Tactica" hidden="false" id="1da8-0e47-9557-bce0">
+              <infoLinks>
+                <infoLink name="Unwavering Conviction" id="5222-fc5e-f04c-263f" hidden="false" type="rule" targetId="fe99-0874-2c10-cba5"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4829-df8d-0037-dbeb"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a77-51eb-b865-1b5a"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gambit" hidden="false" id="7611-a041-3643-b2ff">
+              <profiles>
+                <profile name="Beseech the Gods" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="f339-be1f-aa01-4475">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows the Controlling Player to make a Willpower Check to modify their Characteristics.</characteristic>
+                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">This Gambit can only be selected during the first face Off Step of a Challenge involving this Model. If this Gambit is selected, then the Controlling Player immediately makes a Willpower Check for this Model. If the Check is passed, until the end of this Challenge Sub-Phase, this Model adds +1 to its Strength and Attacks Characteristics. If the Check is failed, this Model suffers 1 Wound with an AP Characteristic of 2 and a Damage Characteristic of 1. No Saves or Damage Mitigation Roll may be made to discard this wound.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b3a4-0474-d222-7906"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0786-14be-39d9-3a02"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Advanced Reaction" hidden="false" id="9d97-27f9-e0ab-67a9">
+              <profiles>
+                <profile name="Glorious Martyrdom" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="3aac-a25b-64c8-d377">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Controlling Player to allocate all wounds caused by a Fire Group to a single Model of their choosing.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">Once per Battle, the Reactive Player may declare the Glorious Martyrdom Advanced Reaction in the Shooting Phase, during Step 5 of the Shooting Attack sequence of any Shooting Attack made by the Active Player that targets a Unit that includes only Models wit the Word Bearers Trait.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Glorious Martyrdom Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For the Glorious Martyrdom Advanced Reaction, the Reacting Unit is always the Unit that was the target of the Shooting Attack that triggered the Reaction.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">In Step 5 of the Shooting Attack sequence, the Reactive Player must select one Model from the Reacting Unit. Until the current Fire Group and any Fire Groups that split form it have been resolved, only the selected Model can be selected as the Target Model. If that Model is removed as a Casualty, teh remainder of that Fire Group and any additional Fire Groups that have been created from it are discarded and the Active Player moves to Step 10 of that Shooting Attack.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2037-2253-50fa-568b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3da8-ede8-08a4-75df"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
