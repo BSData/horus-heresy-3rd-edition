@@ -6958,7 +6958,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0ba4-e22f-a834-5f65" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Elites - Cybernetica Only" hidden="false" id="9224-19ca-80a7-e010" targetId="51e9-3e9e-3e09-f4c7">
+            <categoryLink name="Elites - Automata Only" hidden="false" id="9224-19ca-80a7-e010" targetId="51e9-3e9e-3e09-f4c7">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b8e-2c6e-7930-733e" includeChildSelections="false"/>
               </constraints>
@@ -6970,7 +6970,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="Support - Cybernetica Only" hidden="false" id="639a-df2c-8203-f491" targetId="6670-8971-59cb-b440">
+            <categoryLink name="Support - Automata Only" hidden="false" id="639a-df2c-8203-f491" targetId="6670-8971-59cb-b440">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68f2-1777-ac43-88ed" includeChildSelections="false"/>
               </constraints>
@@ -6982,7 +6982,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="War-Engine - Cybernetica Only" hidden="false" id="a81c-64d7-3fce-e184" targetId="a212-e7c6-7b8c-f480">
+            <categoryLink name="War-Engine - Automata Only" hidden="false" id="a81c-64d7-3fce-e184" targetId="a212-e7c6-7b8c-f480">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="487b-d91d-5d23-8bd7" includeChildSelections="false"/>
               </constraints>
