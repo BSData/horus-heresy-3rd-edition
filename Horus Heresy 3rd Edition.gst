@@ -18697,6 +18697,9 @@
               <comment>Visible to all factions - except Knights</comment>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="forces" scope="parent" shared="true" id="50b1-bb8a-b5ae-0668" includeChildSelections="false"/>
+          </constraints>
         </forceEntry>
       </forceEntries>
       <modifiers>
@@ -18831,6 +18834,7 @@
           <constraints>
             <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="9507-42c6-32f3-dacf" includeChildSelections="false"/>
             <constraint type="max" value="0" field="9893-c379-920b-8982" scope="roster" shared="true" id="44b5-c573-a90a-3324" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="min" value="1" field="forces" scope="parent" shared="true" id="0cff-6629-4e41-cdbc" includeChildSelections="false"/>
           </constraints>
           <modifiers>
             <modifier type="increment" value="1" field="44b5-c573-a90a-3324">
