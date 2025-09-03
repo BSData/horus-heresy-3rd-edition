@@ -483,9 +483,9 @@
     <categoryEntry name="Forge Crafted Weapon in Unit" id="f9f6-d169-cb95-6285" hidden="false"/>
     <categoryEntry name="Recon - Land Raider Explorator Only" id="1bc1-e6ff-d62e-398e" hidden="false"/>
     <categoryEntry name="Elites - Myrmidax Only" id="cd91-8631-13b1-59d5" hidden="false"/>
-    <categoryEntry name="Elites - Cybernetica Only" id="51e9-3e9e-3e09-f4c7" hidden="false"/>
-    <categoryEntry name="Support - Cybernetica Only" id="6670-8971-59cb-b440" hidden="false"/>
-    <categoryEntry name="War-Engine - Cybernetica Only" id="a212-e7c6-7b8c-f480" hidden="false"/>
+    <categoryEntry name="Elites - Automata Only" id="51e9-3e9e-3e09-f4c7" hidden="false"/>
+    <categoryEntry name="Support - Automata Only" id="6670-8971-59cb-b440" hidden="false"/>
+    <categoryEntry name="War-Engine - Automata Only" id="a212-e7c6-7b8c-f480" hidden="false"/>
     <categoryEntry name="Command - Arcuitor Magesterium Only" id="d798-77b3-0f8e-d492" hidden="false"/>
     <categoryEntry name="Legiones Thallaxes" id="6f78-9e60-4884-63d2" hidden="true">
       <constraints>
@@ -511,7 +511,7 @@
     <categoryEntry name="Mortificator" id="4e4f-ab55-68ef-ad63" hidden="false"/>
     <categoryEntry name="Siege Breaker" id="25ad-fbd9-d161-8fd1" hidden="false"/>
     <categoryEntry name="Special Assignment" id="12d9-f8dc-4db6-0880" hidden="false"/>
-    <categoryEntry name="No default Power Weapon" id="dd1b-70ef-6015-1291" hidden="false" page=""/>
+    <categoryEntry name="No default Power Weapon" id="dd1b-70ef-6015-1291" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
