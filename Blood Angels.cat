@@ -351,6 +351,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         <infoLink name="[Allegiance]" id="f884-49e9-eb80-85f0" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="4ae2-494b-40c2-f92a" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
         <infoLink name="Master of the Legion" id="4183-a6be-1cb0-7f63" hidden="false" type="profile" targetId="6cd2-96be-b703-6d57"/>
+        <infoLink name="Archein of Wisdom" id="fa93-eb32-64e1-6348" hidden="false" type="profile" targetId="486e-4f28-10fc-6480"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4fa9-5632-27a5-5795" includeChildSelections="true" includeChildForces="true"/>
@@ -2372,6 +2373,20 @@ When a Unit with at least one Model with this Special Rule is deployed via Deep 
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="7cd4-dbef-72bd-e815">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1730-7108-f2de-a189"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="917c-0511-457f-e1da"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Rite of War" hidden="false" id="a85d-c12e-e5f3-7d1c" type="selectionEntryGroup" targetId="80cd-db83-44e2-2d3d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="577f-2833-63ab-0a5b"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85f1-556c-447b-9128"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Angelic Descent" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="37ec-4463-ee89-d337">
@@ -2384,12 +2399,6 @@ When a Unit with at least one Model with this Special Rule is deployed via Deep 
       <characteristics>
         <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows Raldoron to benefit from his Opponent&apos;s successful Hit Rolls in a later Strike Step.</characteristic>
         <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">If this Gambit is selected, this Model&apos;s Controlling Player gains a positive modifier to their Focus Roll equal to the number of successful Hit Tests made by their opponent in the previous Strike Step of the current Challenge. Note that this Gambit has no effect if no Strike Step has been resolved in the current Challenge.</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Thrall of the Red Thirst" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="0761-fafc-efc3-d03c">
-      <characteristics>
-        <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Model may ignore negative modifiers for Wounds lost but cannot gain Outside Support.</characteristic>
-        <characteristic name="Description" typeId="2d7d-b1d9-dead-605a"/>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -2467,13 +2476,13 @@ When a Unit with at least one Model with this Special Rule is deployed via Deep 
         <categoryLink targetId="a38e-50ff-310f-f19e" id="68f7-fadd-2c79-d59d" primary="true" name="Retinue"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Rite of War" hidden="false" id="a1ad-b48f-3e35-4b90" type="selectionEntry" targetId="7cd4-dbef-72bd-e815">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="5e6b-1d50-5909-a4ac" primary="true" name="Army Configuration"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedRules>
-    <rule name="Encarmine Fury" id="2acc-e20b-bef4-a9cc" hidden="false">
-      <comment>Legion Tactica</comment>
-      <description>&quot;The strength of their attacks ins increased when Blood Angels successfully Charge.&quot;
-On any Turn in which they made a Charge Move, Models with this Special Rule modify their Strength Characteristic by +1 until the end of the Turn.</description>
-    </rule>
     <rule name="The Blood is Forever" id="8daf-a58f-2cb6-034d" hidden="false">
       <description>&quot;Models with this Special Rule gain a Damage Mitigation Roll when they are outnumbered.&quot;
 While the Unit a Model with this Special Rule is part of is Locked in Combat with an enemy Unit or Units who total number of Models outnumber them, a Model with this Special Rule gains the Feel No Pain (5+) Special Rule. If outnumbered by more than twice their own number, Models with this Special Rule instead gain the Feel No Pain (4+) Special Rule. Any Model that joins a Unit that includes any Models with this Special Rule does not gain this Special Rule and does not count for the purpose of determining when the Unit is outnumbered.</description>
@@ -2483,4 +2492,59 @@ While the Unit a Model with this Special Rule is part of is Locked in Combat wit
       <description>Models in a Unit selected to fill a Prime Force Organization Slot with this Prime Advantage gain the Fear (1) Special Rule</description>
     </rule>
   </sharedRules>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Rite of War" id="80cd-db83-44e2-2d3d" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Legiones Astartes Blood Angels" hidden="false" id="28f0-0677-9a64-92de">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Legion Tactica" hidden="false" id="574a-f88a-6bde-83af">
+              <rules>
+                <rule name="Encarmine Fury" id="2acc-e20b-bef4-a9cc" hidden="false">
+                  <description>&quot;The strength of their attacks ins increased when Blood Angels successfully Charge.&quot;
+On any Turn in which they made a Charge Move, Models with this Special Rule modify their Strength Characteristic by +1 until the end of the Turn.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="308e-8ceb-079a-596a"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d02f-9a14-1ed9-d42b"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gambit" hidden="false" id="cf61-0bc3-dc2e-36df">
+              <profiles>
+                <profile name="Thrall of the Red Thirst" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="0761-fafc-efc3-d03c">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Model may ignore negative modifiers for Wounds lost but cannot gain Outside Support.</characteristic>
+                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">If this Gambit is selected, then the Model it was selected for may ignore any negative Modifiers applied to the Focus Roll for any Wounds lost, and each wound influcted on the opponent has its Damage Characteristic modified by +1. Whilst the Gambit is selected, the Model it was selected for gains no bonus to the Focus Roll for Outside Support.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9675-15fd-dce3-5bdb"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="481f-56c0-70d0-0c70"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Advanced Reaction" hidden="false" id="4c6c-5d04-9d5c-8761">
+              <profiles>
+                <profile name="Wrath of Angels" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="b640-cc3f-2e06-4d05">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reacting Unit to Move towards an Enemy Unit that Targets it with a Shooting Attack.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">Once per Battle, the Reactive Player may declare the Wrath of Angels Advanced Reaction in the Shooting Phase, during Step 4 of the Shooting Attack sequence of any Shooting Attack made by the Active Player that targets a Unit under the Reactive Player&apos;s control that only includes Models with the Blood Angels Trait.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Wrath of Angels Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Shooting Attack triggered the Reaction. The Reacting Unit is always the Unit that was the target of the Shooting Attack that triggered the Reaction.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once the Wrath of Angels Advanced Reaction has been declared, the Active Player must resolve all remaining Steps of the Shooting Attack process as normal, up to the start of step 11.
+2. Immediately after Step 11 of the Shooting Attack that triggered this Reaction is resolved, each Model in the Reacting Unit must move following the procedure for making a normal Move , directly towards the the nearest Model in the Target Unit, moving the maximum distance possible while remaining at least 1&quot; away from any enemy Model.
+3. After resolving this Move, if any Model from the Reacting Unit is within 6&quot; of any Model in the Target Unit, the Controlling Player of teh Target Unit must make a Cool Check for it in the Morale Sub-Phase of the same Player Turn. If this Check is failed then all Models in the Target Unit gain the Pinned Status.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="80f5-be95-5924-5f31"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51df-d39c-9ff9-c5eb"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
