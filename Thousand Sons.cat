@@ -2328,6 +2328,8 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="9621-42a7-4227-8755" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="5a89-d027-4eae-9ede" primary="false" name="Sergeant Model Sub-Type"/>
+            <categoryLink targetId="d269-d26a-cac1-c953" id="7ef5-201e-72ef-66f0" primary="false" name="Telepath"/>
+            <categoryLink targetId="c457-4d05-c6b9-9a82" id="1d19-63b4-8f9f-b653" primary="false" name="Diviner"/>
           </categoryLinks>
           <rules>
             <rule name="Numerologist Order" id="04c9-1c41-17a4-264f" hidden="false">
@@ -2372,14 +2374,14 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
         <categoryLink targetId="dd1b-70ef-6015-1291" id="0f28-36c1-1309-1515" primary="false" name="No default Power Weapon"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry name="Thousand Sons Ammitara Occult Intercession Cabal" type="unit" id="d661-5aa7-4e05-a6e5" page="126" publicationId="5469-14da-d0a1-6092">
+    <selectionEntry name="Ammitara Occult Intercession Cabal" type="unit" id="d661-5aa7-4e05-a6e5" page="126" publicationId="5469-14da-d0a1-6092">
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="37"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Intercessor" id="2507-0dbb-49af-9357" page="126" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Intercessor" id="2507-0dbb-49af-9357" page="126" publicationId="5469-14da-d0a1-6092" sortIndex="2">
           <profiles>
-            <profile id="6030-130e-427f-b075" name="Intercessor" typeId="a76f-8e23-8c3e-166d">
+            <profile id="6030-130e-427f-b075" name="Intercessor" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
@@ -2397,6 +2399,31 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Light, Skirmish)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df" position="0">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -2407,27 +2434,21 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="e0b6-3e5b-4233-82a9"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="6ef1-7193-4ef7-a002" name="Bolt pistol">
+            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="6ef1-7193-4ef7-a002" name="Bolt pistol" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a25-44bf-424a-87a1"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6003-1181-492c-812d"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="f86a-75d8-4243-aa81" name="Frag grenades">
+            <entryLink import="true" name="Nemesis bolter" hidden="false" id="9b09-dc9c-3bf4-3742" type="selectionEntry" targetId="96e3-031c-2139-1335" sortIndex="2">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8792-267f-4cfa-b823"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90fa-aa2f-4849-aa56"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="8757-eca5-40d0-81ee" name="Krak grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1557-1b67-4d32-a449"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="959e-1006-4b2b-91e1"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9d48-c70f-fde2-5ff3"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04b7-7009-0a29-b431"/>
               </constraints>
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="One Intercessor in this Unit may have one nuncio-vox selected for it for +10 Points." id="9d92-e733-45e3-8231">
+            <selectionEntryGroup name="One Intercessor in this Unit may have" id="9d92-e733-45e3-8231" sortIndex="3">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="4d7e-898a-f445-f1d8" id="8e44-f641-4aee-bcfd" name="Nuncio-vox">
                   <costs>
@@ -2439,44 +2460,73 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1fc-4e93-4f26-bd4d"/>
+                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="a1fc-4e93-4f26-bd4d" includeChildSelections="true"/>
               </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="For every five Models in this Unit, up to two Intercessors in this Unit may each have their Nemesis bolter exchanged for one of the following:" id="1b44-6ba9-4b8f-a253">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="96e3-031c-2139-1335" id="1b75-b5bd-4c60-9844" name="Nemesis bolter">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4ab5-e467-4270-b0c4"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="b1e1-e164-5877-6734" id="61a6-f1fc-427a-a532" name="Meltagun">
+                <entryLink hidden="false" type="selectionEntry" targetId="b1e1-e164-5877-6734" id="61a6-f1fc-427a-a532" name="Meltagun" sortIndex="1">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0e45-ec6c-4499-80c3"/>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0e45-ec6c-4499-80c3" automatic="true"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="0e45-ec6c-4499-80c3">
+                      <repeats>
+                        <repeat value="5" repeats="2" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="433d-56e0-9878-dea1" id="09dd-c5f5-48da-8131" name="Plasma gun">
+                <entryLink hidden="false" type="selectionEntry" targetId="433d-56e0-9878-dea1" id="09dd-c5f5-48da-8131" name="Plasma gun" sortIndex="2">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7b1f-5972-4cd1-ae80"/>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7b1f-5972-4cd1-ae80" automatic="true"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="7b1f-5972-4cd1-ae80">
+                      <repeats>
+                        <repeat value="5" repeats="2" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="4ce2-6bd7-eb33-7a8f" id="737c-2ac6-4742-a9b3" name="Æther-fire blaster">
+                <entryLink hidden="false" type="selectionEntry" targetId="4ce2-6bd7-eb33-7a8f" id="737c-2ac6-4742-a9b3" name="Æther-fire blaster" sortIndex="3">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="82f9-ea8a-43a1-b5ee"/>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="82f9-ea8a-43a1-b5ee" automatic="true"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="82f9-ea8a-43a1-b5ee">
+                      <repeats>
+                        <repeat value="5" repeats="2" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3613-df06-4fb2-a702"/>
+                <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="3613-df06-4fb2-a702" automatic="true"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9f4e-9094-2ffe-21fd" automatic="true" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="3613-df06-4fb2-a702">
+                  <repeats>
+                    <repeat value="5" repeats="2" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" value="1" field="9f4e-9094-2ffe-21fd">
+                  <repeats>
+                    <repeat value="5" repeats="2" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -2485,9 +2535,9 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
             <categoryLink targetId="d2d6-5a84-672b-2833" id="9d83-e801-4dcf-bb37" primary="false" name="Skirmish Model Sub-Type"/>
           </categoryLinks>
         </selectionEntry>
-        <selectionEntry type="model" name="Ammitara Fate" id="5bd7-0847-420e-b1f4" page="126" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Ammitara Fate" id="5bd7-0847-420e-b1f4" page="126" publicationId="5469-14da-d0a1-6092" sortIndex="1">
           <profiles>
-            <profile id="8c00-b22b-4998-adbb" name="Ammitara Fate" typeId="a76f-8e23-8c3e-166d">
+            <profile id="8c00-b22b-4998-adbb" name="Ammitara Fate" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
@@ -2505,6 +2555,43 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Sergeant, Light, Skirmish)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df" position="0">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Master Sergeant</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -2515,49 +2602,30 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="615f-be35-4502-be55"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="96e3-031c-2139-1335" id="ecf5-b800-4d97-b959" name="Nemesis bolter">
+            <entryLink hidden="false" type="selectionEntry" targetId="96e3-031c-2139-1335" id="ecf5-b800-4d97-b959" name="Nemesis bolter" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="78b0-e770-40a4-bf7f"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ab8-f12d-461d-9f3d"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="2d47-8713-4e9f-8889" name="Frag grenades">
+            <entryLink import="true" name="Melta bombs" hidden="false" id="ed8f-4eeb-4240-bc3e" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="3">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="88f8-0c3a-4002-ad8f"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f2a-e68f-4ac1-ad62"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="4872-b627-4ee7-b41d" name="Krak grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da2a-a1b4-435c-84c0"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a12-9810-4155-999b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02a3-57f6-40ea-8bc9"/>
               </constraints>
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="The Ammitara Fate in this Unit may have melta bombs selected for it for +10 Points." id="90b9-20fe-4bf7-9104">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" id="ed8f-4eeb-4240-bc3e" name="Melta bombs">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02a3-57f6-40ea-8bc9"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6304-6649-48e2-8d14"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="The Ammitara Fate in this Unit may have its bolt pistol exchanged for " id="523f-eaa6-4382-baec">
+            <selectionEntryGroup name="May have its bolt pistol exchanged for " id="523f-eaa6-4382-baec" sortIndex="1">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="bcfa-c0f6-420a-a96a" name="Bolt pistol">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33e8-9e93-41f8-bda1"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" id="d2e0-2067-4e40-95f5" name="Legion Pistols">
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" id="d2e0-2067-4e40-95f5" name="Legion Pistols" flatten="true">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afce-8fcf-48c8-a1e5"/>
                   </constraints>
@@ -2589,9 +2657,35 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
             <modifier type="set" field="name" value="Support Unit (2)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="[Allegiance]" id="4898-cb98-847e-78ae" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="a627-5c08-ae16-ec33" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Psyker" id="315b-7e8b-daab-fbbd" hidden="false" type="profile" targetId="0d5a-bf3a-7b46-785a"/>
+        <infoLink name="Smokescreen" id="0eb3-e5ef-4147-69ec" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
+        <infoLink name="Smokescreen" id="479c-2961-ce14-d88c" hidden="false" type="profile" targetId="999b-689a-4ee7-8901"/>
+        <infoLink name="Corvidae" id="0371-81b2-4055-6e62" hidden="false" type="profile" targetId="f000-c693-e04f-9822"/>
       </infoLinks>
-      <comment>warning: !BSC 20250828-1757
-Shared on model level not yet implemented for One Intercessor in this Unit may have one nuncio-vox selected for it for +10 Points.</comment>
+      <entryLinks>
+        <entryLink import="true" name="Frag grenades" hidden="false" id="2d47-8713-4e9f-8889" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="88f8-0c3a-4002-ad8f"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f2a-e68f-4ac1-ad62"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak grenades" hidden="false" id="4872-b627-4ee7-b41d" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da2a-a1b4-435c-84c0"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a12-9810-4155-999b"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="b549-9ec5-95f1-1aac" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="4d58-b0be-e19c-b525" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="195c-d66b-8b86-c5ad" id="fecc-2922-40f8-3388" primary="false" name="Corvidae"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
@@ -2707,6 +2801,11 @@ Shared on model level not yet implemented for One Intercessor in this Unit may h
         <characteristic name="Description" typeId="5d02-0e54-0f6a-0f0b"/>
       </characteristics>
     </profile>
+    <profile name="Corvidae" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="f000-c693-e04f-9822">
+      <characteristics>
+        <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <entryLinks>
     <entryLink import="true" name="Magnus the Red" hidden="false" id="2d3f-a65d-edd7-847b" type="selectionEntry" targetId="cf2e-fa27-23ce-7502">
@@ -2765,6 +2864,11 @@ Shared on model level not yet implemented for One Intercessor in this Unit may h
     <entryLink import="true" name="Numerologist Cabal" hidden="false" id="3aa7-5a07-e53e-9cd9" type="selectionEntry" targetId="ccfe-0bd6-4e88-ba89">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="98fa-a2d2-572d-c347" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Ammitara Occult Intercession Cabal" hidden="false" id="72ac-23f1-6eee-988e" type="selectionEntry" targetId="d661-5aa7-4e05-a6e5">
+      <categoryLinks>
+        <categoryLink targetId="2b65-a3f2-620a-dc58" id="acdd-fee4-d3f5-07ff" primary="true" name="Recon"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
