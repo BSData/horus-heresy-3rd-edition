@@ -376,7 +376,7 @@ class GameTests(unittest.TestCase):
                                 ], expected_condition_child_id="2c90-1d52-7075-59d3")
                                 # Now we check that the model gets the champion sub-type
                                 model = profile.parent.parent
-                                print(model.name)
+                                # print(model.name)
                                 model_mods = model.get_child('modifiers')
                                 self.assertIsNotNone(model_mods, "Expected modifiers on model for master sgt")
                                 cat_mod = model_mods.get_child("modifier", {"value": "5a95-e564-96b2-8dc9"})
