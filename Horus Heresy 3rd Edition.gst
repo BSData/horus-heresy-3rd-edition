@@ -2109,6 +2109,13 @@
                       </conditions>
                       <comment>Sisters</comment>
                     </conditionGroup>
+                    <conditionGroup type="and">
+                      <comment>Titans</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="69c0-2783-c191-e6a2" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="69c0-2783-c191-e6a2" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
@@ -18696,6 +18703,13 @@
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
                       </conditions>
                       <comment>Sisters</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <comment>Titans</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="69c0-2783-c191-e6a2" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="69c0-2783-c191-e6a2" shared="true"/>
+                      </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
