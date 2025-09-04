@@ -504,6 +504,22 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
             <entryLink import="true" name="Prime Benefits" hidden="false" id="3340-15f9-4261-b8ce" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Melta bombs" hidden="false" id="7b9e-5aea-0250-1a45" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="4">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e835-b54c-dc2b-977e"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Grenade harness" hidden="false" id="fc37-38b0-7410-19dd" type="selectionEntry" targetId="a766-856c-52bd-d30a" sortIndex="5">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ff9-79e9-e0a3-a3e9"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Grave Warden Terminator Squad" hidden="false" id="adff-529b-2bd1-c87f" sortIndex="4">
@@ -570,7 +586,7 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="162b-49ee-4632-b023" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Options" id="f1be-38ca-3145-73ed" hidden="false">
+            <selectionEntryGroup name="Options" id="f1be-38ca-3145-73ed" hidden="false" sortIndex="1">
               <selectionEntryGroups>
                 <selectionEntryGroup name="May exchange assault grenade launcher for:" id="a141-4b0f-b189-1ab6" hidden="false" defaultSelectionEntryId="fa74-989c-1dfd-b717" sortIndex="1">
                   <constraints>
@@ -606,6 +622,16 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Grenade harness" hidden="false" id="306c-0ff0-7d08-15e1" type="selectionEntry" targetId="a766-856c-52bd-d30a" sortIndex="2">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb39-2392-5ded-7ad6"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Grave Warden" hidden="false" id="3e2a-b8c7-5ffe-0f9d" sortIndex="2">
           <profiles>
@@ -738,31 +764,6 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Alchem caster" hidden="false" id="c7ac-ad11-e90c-592a">
-      <profiles>
-        <profile name="Alchem caster" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="5fae-c049-f3ff-66c2" publicationId="e54c-7040-0f35-d85d" page="207">
-          <characteristics>
-            <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
-            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
-            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">3</characteristic>
-            <characteristic name="AP" typeId="7a23-0248-2b94-5951">-</characteristic>
-            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
-            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Pistol, Poisoned (2+)</characteristic>
-            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Assault</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Template" id="9137-42c5-5043-cbb0" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a"/>
-        <infoLink name="Pistol" id="e7be-eafe-be75-ca40" hidden="false" type="rule" targetId="2bf6-55c8-6810-a71c"/>
-        <infoLink name="Poisoned (X)" id="b195-ad31-5815-228b" hidden="false" type="rule" targetId="076f-2c91-c58b-71b3">
-          <modifiers>
-            <modifier type="set" value="Poisoned (2+)" field="name"/>
-          </modifiers>
-          <comment>2+</comment>
-        </infoLink>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Assault grenade launcher" hidden="false" id="1662-bcaf-58de-c84a">
       <profiles>
         <profile name="Assault grenade launcher - Krak" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="ae3f-878f-75b8-bbca" publicationId="e54c-7040-0f35-d85d" page="209">
@@ -795,30 +796,6 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
           </modifiers>
           <comment>3+</comment>
         </infoLink>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Heavy alchem flamer" hidden="false" id="b21e-8390-ce83-0b6a">
-      <profiles>
-        <profile name="Heavy alchem flamer" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="f719-f0a7-2b35-9b92" publicationId="e54c-7040-0f35-d85d" page="209">
-          <characteristics>
-            <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
-            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
-            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">5</characteristic>
-            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
-            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
-            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Poisoned (2+)</characteristic>
-            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Assault</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Poisoned (X)" id="71dd-e122-706d-5b71" hidden="false" type="rule" targetId="076f-2c91-c58b-71b3">
-          <modifiers>
-            <modifier type="set" value="Poisoned (2+)" field="name"/>
-          </modifiers>
-          <comment>2+</comment>
-        </infoLink>
-        <infoLink name="Template" id="aed3-7edf-bac0-849e" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="39cc-48a4-7cfe-44de">
@@ -1164,7 +1141,7 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a61-515e-40b6-813e"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Power Weapon" hidden="false" id="9b01-04c3-11e3-de9a" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394"/>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="9b01-04c3-11e3-de9a" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" flatten="true"/>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="815b-2fd9-4211-a655"/>
@@ -1208,7 +1185,6 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07a1-7855-46dd-b6ce"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Legion Equipment" hidden="false" id="e714-4c81-18d1-073b" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="34c7-79ce-2399-cb5b" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="ae3c-e7a0-fceb-c3b9" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
@@ -1325,7 +1301,11 @@ Process
         <categoryLink targetId="abfa-86ab-1726-077a" id="c65c-7232-d07f-3b9b" primary="true" name="Army Configuration"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Mortus Poisoner Squad" hidden="false" id="6a01-e55f-212e-d019" type="selectionEntry" targetId="a977-8fbb-462e-9872" sortIndex="5"/>
+    <entryLink import="true" name="Mortus Poisoner Squad" hidden="false" id="6a01-e55f-212e-d019" type="selectionEntry" targetId="a977-8fbb-462e-9872" sortIndex="5">
+      <categoryLinks>
+        <categoryLink targetId="5d5e-958f-e388-50b5" id="ba29-cabf-be8c-d8bf" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Rite of War" id="1665-1055-c6b4-1f91" hidden="false">
