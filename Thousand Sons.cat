@@ -2240,7 +2240,7 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
           <selectionEntryGroups>
             <selectionEntryGroup name="May have its chainsword exchanged for " id="5b2d-8551-452a-9267" sortIndex="2" defaultSelectionEntryId="ce06-5c71-44ef-8e3d">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="ce06-5c71-44ef-8e3d" name="Chainsword" sortIndex="1" defaultAmount="">
+                <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="ce06-5c71-44ef-8e3d" name="Chainsword" sortIndex="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e10-8f83-4b2c-a49e"/>
                   </constraints>
@@ -2665,6 +2665,13 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
             <categoryLink targetId="f4ba-00e5-3d2e-eaac" id="e682-532b-45d5-a5e5" primary="false" name="Light Model Sub-Type"/>
             <categoryLink targetId="d2d6-5a84-672b-2833" id="1ca8-855a-42ff-a543" primary="false" name="Skirmish Model Sub-Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>

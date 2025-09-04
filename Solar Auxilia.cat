@@ -7548,6 +7548,13 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
             <categoryLink name="Sergeant Model Sub-Type" hidden="false" id="1e23-1a84-e025-8d05" targetId="8045-89a4-76d4-fcef" primary="false"/>
             <categoryLink name="Infantry Model Type" hidden="false" id="de6b-7dac-7332-eda1" targetId="594d-fa82-13cb-a345" primary="false"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Companion" hidden="false" id="a842-bbb8-f840-15e2" sortIndex="2">
           <constraints>
