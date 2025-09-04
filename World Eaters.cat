@@ -192,7 +192,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
@@ -202,7 +202,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                     <modifier type="increment" value="2" field="02ad-ebe6-86e7-9fd6"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
                   </conditions>
                   <comment>Master Sergeant - Existing Champion</comment>
                 </modifierGroup>
@@ -297,7 +297,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -406,7 +406,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
@@ -417,7 +417,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                     <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
                   </conditions>
                   <comment>Master Sergeant</comment>
                 </modifierGroup>
@@ -608,6 +608,13 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
               </constraints>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Red Butcher" hidden="false" id="08a3-46d5-a3ce-0b30" sortIndex="2">
           <constraints>
@@ -647,7 +654,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -1305,7 +1312,7 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -1413,7 +1420,7 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
@@ -1424,7 +1431,7 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                     <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
                   </conditions>
                   <comment>Master Sergeant</comment>
                 </modifierGroup>
@@ -1486,6 +1493,13 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
             <categoryLink targetId="594d-fa82-13cb-a345" id="d9b7-81cc-464d-84ea" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="73c4-b14a-4752-b56c" primary="false" name="Sergeant Model Sub-Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1521,7 +1535,7 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
       </entryLinks>
       <rules>
         <rule name="Bearers of the Blood Hand" id="0264-f73a-e487-91eb" hidden="false">
-          <description>When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, the Controlling Player scores 1 Combat Resolution Point for each Unit that includes any Models with this Special Rule.</description>
+          <description>When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, the Controlling Player scores 1 Combat Resolution Point for each Unit that includes any Models with this Special Rule.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -1564,7 +1578,7 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -1673,7 +1687,7 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
@@ -1684,7 +1698,7 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                     <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
                   </conditions>
                   <comment>Master Sergeant</comment>
                 </modifierGroup>
@@ -1697,7 +1711,6 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4370-5a0d-4552-b0a4"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfad-adcf-473f-9ae1"/>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="7a6e-a488-dd62-5eed"/>
           </constraints>
           <entryLinks>
             <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="0186-4cb3-447d-bd43" name="Bolt pistol" sortIndex="1">
@@ -1752,6 +1765,13 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
             <categoryLink targetId="8045-89a4-76d4-fcef" id="b18a-38cf-46f3-8fb4" primary="false" name="Sergeant Model Sub-Type"/>
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="a742-99ae-4c0f-a143" primary="false" name="Antigrav Model Sub-Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1793,7 +1813,7 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
       </entryLinks>
       <rules>
         <rule name="Bearers of the Blood Hand" id="bc60-0902-c013-18ae" hidden="false">
-          <description>When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, the Controlling Player scores 1 Combat Resolution Point for each Unit that includes any Models with this Special Rule.</description>
+          <description>When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, the Controlling Player scores 1 Combat Resolution Point for each Unit that includes any Models with this Special Rule.</description>
         </rule>
       </rules>
     </selectionEntry>
