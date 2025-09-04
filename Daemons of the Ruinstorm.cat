@@ -7,4 +7,941 @@
     <catalogueLink type="catalogue" name="Psychic" id="35e8-ac86-2d19-c3dc" targetId="1b2d-2038-39a7-f387"/>
     <catalogueLink type="catalogue" name="Special Rules" id="d3fb-7301-fdf8-d8b6" targetId="106b-693b-99f2-00c3"/>
   </catalogueLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="[Ætheric Dominion]" id="5b1e-2194-8cb9-592b" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Encroaching Ruin" hidden="false" id="42a2-c87d-c37f-5263" sortIndex="1">
+          <infoLinks>
+            <infoLink name="Deep Strike" id="f3af-cdb8-30b0-0949" hidden="false" type="rule" targetId="0553-d06b-52b9-34db"/>
+            <infoLink name="Desecrators" id="80c3-8582-6194-4774" hidden="false" type="rule" targetId="abbc-74e2-bd52-60fd"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Psychic Disciplines" id="b377-3785-4634-0dd6" hidden="true">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <entryLinks>
+                <entryLink import="true" name="Pyromancy" hidden="false" id="c5b6-6d20-f458-4a3e" type="selectionEntry" targetId="b8f6-c7cb-3596-fb48" sortIndex="1">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd46-5558-bc70-98e1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Telekinesis" hidden="false" id="2e5b-2644-70b4-a9e9" type="selectionEntry" targetId="3a5d-8574-6913-d83c" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="faa9-6ed4-bab3-8a56"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Divination" hidden="false" id="a545-3379-734c-13d5" type="selectionEntry" targetId="5f50-43e2-30a1-01c8" sortIndex="3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a59-4b81-f26a-e377"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f4c9-fd43-a399-722c" automatic="true"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="add" value="9254-b1e9-98b2-6101" field="category">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="5f50-43e2-30a1-01c8" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b8f6-c7cb-3596-fb48" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="3a5d-8574-6913-d83c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heedless Slaughter" hidden="false" id="20f9-9438-2603-5933" sortIndex="2">
+          <infoLinks>
+            <infoLink name="Desecrators" id="727e-12eb-398a-bd43" hidden="false" type="rule" targetId="abbc-74e2-bd52-60fd"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Putrid Corruption" hidden="false" id="66b5-2dea-1838-235b" sortIndex="3">
+          <infoLinks>
+            <infoLink name="Desecrators" id="f7b0-c2f1-cd73-6af7" hidden="false" type="rule" targetId="abbc-74e2-bd52-60fd"/>
+            <infoLink name="Feel No Pain (X)" id="bac1-2f9b-3ef1-9659" hidden="false" type="rule" targetId="89b5-7320-db15-fd60">
+              <comment>6+</comment>
+              <modifiers>
+                <modifier type="replace" value="6+" field="name" arg="X"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Explodes (X)" id="9ab0-32a7-ce93-673c" hidden="true" type="rule" targetId="da5b-b871-20da-3e70">
+              <comment>5+</comment>
+              <modifiers>
+                <modifier type="replace" value="(5+)" field="name" arg="(X)"/>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="1c0c-f10a-c186-4f21" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="add" value="1e7d-9066-28d2-97a0" field="category"/>
+            <modifier type="add" value="9254-b1e9-98b2-6101" field="category">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="7f0b-3a53-fbba-de05" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Psychic Disciplines" id="83f8-24fc-daae-bc4f" hidden="true">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <entryLinks>
+                <entryLink import="true" name="Biomancy" hidden="false" id="5fd2-d314-453c-ddce" type="selectionEntry" targetId="7f0b-3a53-fbba-de05">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32e8-69f3-d8e7-d22f"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0db4-8c9a-208c-2d97"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Rapturous Sensation" hidden="false" id="385d-eae4-002a-6a1f" sortIndex="4">
+          <infoLinks>
+            <infoLink name="Desecrators" id="14b0-8f7d-b395-14b4" hidden="false" type="rule" targetId="abbc-74e2-bd52-60fd"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="unit" childId="1e7d-9066-28d2-97a0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9254-b1e9-98b2-6101" field="category">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="3a5d-8574-6913-d83c" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="13c2-f899-efef-20cb" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Psychic Disciplines" id="dd09-60ae-f876-52bf" hidden="true">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <entryLinks>
+                <entryLink import="true" name="Telekinesis" hidden="false" id="394f-9800-4379-ee91" type="selectionEntry" targetId="3a5d-8574-6913-d83c">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bb3-5ae9-8328-87d2"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Telepathy" hidden="false" id="8f4e-2bec-c204-5f2e" type="selectionEntry" targetId="13c2-f899-efef-20cb">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5406-2e3d-c08f-00fd"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="11ea-4ccf-6c87-be51"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Formless Distortion" hidden="false" id="fa00-4b78-1a07-a953" sortIndex="5">
+          <infoLinks>
+            <infoLink name="Desecrators" id="9989-ac87-cfc2-b815" hidden="false" type="rule" targetId="abbc-74e2-bd52-60fd"/>
+          </infoLinks>
+          <rules>
+            <rule name="Formless Distortion" id="4309-fe7a-fa49-9393" hidden="false">
+              <description>Each time a Unit that contains a Model with this Trait is declared as the Target Unit of a Charge Move, any Set-up Move made by the enemy Charging Unit is reduced by D3&quot;, to a minimum of 1&quot;.</description>
+            </rule>
+          </rules>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Psychic Disciplines" id="77f5-45db-b6d7-f7eb" hidden="true">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <entryLinks>
+                <entryLink import="true" name="Telepathy" hidden="false" id="4890-7f37-8aa3-16c8" type="selectionEntry" targetId="13c2-f899-efef-20cb">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebcc-15e7-b7e7-eb27"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Divination" hidden="false" id="8127-be16-0499-2d42" type="selectionEntry" targetId="5f50-43e2-30a1-01c8">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5241-29a3-6f5b-1a1d"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7571-d888-5ef7-ce6c"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="add" value="9254-b1e9-98b2-6101" field="category">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="5f50-43e2-30a1-01c8" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="13c2-f899-efef-20cb" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Infernal Tempest" hidden="false" id="824b-677c-3657-6573" sortIndex="6">
+          <infoLinks>
+            <infoLink name="Desecrators" id="3840-d867-d24b-8c22" hidden="false" type="rule" targetId="abbc-74e2-bd52-60fd"/>
+            <infoLink name="Aflame (X)" id="d03f-9790-7662-0a40" hidden="false" type="rule" targetId="fdc7-d2a1-338f-df11">
+              <modifiers>
+                <modifier type="replace" value="1" field="name" arg="X"/>
+              </modifiers>
+              <comment>1</comment>
+            </infoLink>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Psychic Disciplines" id="4727-7361-f96c-a4fa" hidden="true">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <entryLinks>
+                <entryLink import="true" name="Pyromancy" hidden="false" id="d8e1-05e5-a39a-fed5" type="selectionEntry" targetId="b8f6-c7cb-3596-fb48">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a602-90fd-16f9-3328"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc3e-15d8-2dc5-3e29"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="add" value="9254-b1e9-98b2-6101" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="b8f6-c7cb-3596-fb48" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ravenous Dissolution" hidden="false" id="6a1d-f46c-222e-c559" sortIndex="7">
+          <infoLinks>
+            <infoLink name="Desecrators" id="f027-f769-f718-668c" hidden="false" type="rule" targetId="abbc-74e2-bd52-60fd"/>
+            <infoLink name="Hatred (X)" id="7aff-d45b-e550-c4ac" hidden="false" type="rule" targetId="0612-95d5-46ae-c5ee">
+              <modifiers>
+                <modifier type="replace" value="Malefic, Psyker" field="name" arg="X"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Psychic Disciplines" id="c1b0-6c35-7345-ef52" hidden="true">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <entryLinks>
+                <entryLink import="true" name="Telekinesis" hidden="false" id="3b95-d78f-3e53-dfe5" type="selectionEntry" targetId="3a5d-8574-6913-d83c" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8573-968b-4dab-6a29"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Divination" hidden="false" id="63b5-e943-99db-70cd" type="selectionEntry" targetId="5f50-43e2-30a1-01c8" sortIndex="3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8df2-31b9-1fa5-d5bb"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Telepathy" hidden="false" id="9f8e-ac3b-6239-c1af" type="selectionEntry" targetId="13c2-f899-efef-20cb">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc7b-0daf-2b85-4f9d"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="06c1-9c46-6144-afc9" automatic="true"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="add" value="9254-b1e9-98b2-6101" field="category">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="5f50-43e2-30a1-01c8" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="13c2-f899-efef-20cb" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="3a5d-8574-6913-d83c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Malevolent Artifice" hidden="false" id="802d-c4b0-b1cf-4be0" sortIndex="8">
+          <infoLinks>
+            <infoLink name="Desecrators" id="d361-547c-223a-1c37" hidden="false" type="rule" targetId="abbc-74e2-bd52-60fd"/>
+            <infoLink name="Armour-Breaker (X)" id="cb58-b82f-44f9-8937" hidden="false" type="rule" targetId="3009-9bbb-a8f6-1b47">
+              <comment>4+</comment>
+              <modifiers>
+                <modifier type="replace" value="4+" field="name" arg="X"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="31f0-744d-d0cb-333e"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5242-0e8a-c347-03e3"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Daemonic Prime Benefit" id="6a33-a28e-9c63-5829" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Paragon of Malevolence" hidden="false" id="28ef-7f7e-fe78-f0dc"/>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule name="Desecrators" id="abbc-74e2-bd52-60fd" hidden="false">
+      <description>&quot;Models with this Special Rule that pass a Willpower Check gain the Line (X) Special Rule.&quot;
+
+
+
+
+At the start of each Victory Sub-Phase, the Controlling Player of a Unit composed entirely of Models with this Special Rule may make a Willpower Check. If the Willpower Check is passed all Models in the Unit gain the Line (X) Special Rule until the end of the current Victory Sub-Phase. The value of X is determined by how much the final result of the Check is less than the Willpower Characteristic used for the Check:
+
+
+0-1           = Line (1)
+2              = Line (2)
+3 or more = Line (3)
+
+
+If the Willpower Check is failed, the Unit suffers Perils of the Warp.</description>
+    </rule>
+    <rule name="Primal Terror" id="44bb-4eee-0299-caba" hidden="false">
+      <description>&quot;Opposing Units must make Leadership Checks when making a Reaction triggered by, or a Charge targeting, a Model with this Special Rule.&quot;
+
+
+
+
+When a Unit with a Model with the Primal Terror Special Rule is declared as the Target Unit of a Charge or as the Target Unit of a Reaction or Advanced Reaction, the Controlling Player of the Unit the Charge or Reaction is declared for must make a Leadership Check. If the Leadership is passed, the Charge or Reaction is resolved as normal. If the Check is failed, the Unit for which the Charge or Reaction was declared for immediately gains the Stunned Status and the Controlling Player may not declare another Charge or Reaction for that Unit during this Phase, but their remaining Reaction Allotment is not reduced.</description>
+    </rule>
+  </sharedRules>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Totem of Dominion" hidden="false" id="1ee5-47ae-e35a-bc86">
+      <profiles>
+        <profile name="Totem of Dominion" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="ac3e-c058-27f7-9eb0">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">Models with the Malefic Type suffer fewer wounds in place of gaining Tactical Status, if the Unit they are part of has this Wargear item.</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">When a Unit composed entirely of Models with the Malefic Sub-Type that contains at least one Model with a Totem of Dominion would gain a Tactical Status of any kind, that Unit suffers 1 automatic wound with a Damage Characteristic of 1, against which no Saving Throws of any kind can be made, instead of D3 as per the Malefic Unit Sub-Type.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vile deluge" hidden="false" id="9905-752e-f9d3-1e07">
+      <profiles>
+        <profile name="Vile deluge" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="f264-d8c2-510c-58bd">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">4</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">5</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (FP)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Assault, Immaterial</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Heavy (X)" id="f23f-b73d-307d-502d" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
+          <comment>FP</comment>
+          <modifiers>
+            <modifier type="replace" value="FP" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Immaterial projectiles" hidden="false" id="8d9e-cf94-0a90-5cc6">
+      <profiles>
+        <profile name="Immaterial projectiles" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="f1c6-9d72-515b-9ee6">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">18</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">4</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">5</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">-</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Assault, Immaterial</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sovereign blade" hidden="false" id="f2f2-5a36-efc3-aa6e">
+      <profiles>
+        <profile name="Sovereign blade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="1d54-0380-f6a3-4cdb">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Phage (S), Reaping Blow (1)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Immaterial</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Phage (X)" id="fa5f-9f66-92f7-5bfa" hidden="false" type="rule" targetId="3e26-d357-69d6-1341">
+          <comment>S</comment>
+          <modifiers>
+            <modifier type="replace" value="S" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Reaping Blow (X)" id="f7e3-c7a2-0917-4e4a" hidden="false" type="rule" targetId="951f-eee4-02b7-b014">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="replace" value="1" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sovereign greatblade" hidden="false" id="da08-57e6-2c20-e7e2">
+      <profiles>
+        <profile name="Sovereign greatblade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="d827-8e66-afbc-1bbf">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">-2</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+3</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">3</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Phage (S), Reaping Blow (2)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Immaterial</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Phage (X)" id="277e-f580-584f-6cda" hidden="false" type="rule" targetId="3e26-d357-69d6-1341">
+          <comment>S</comment>
+          <modifiers>
+            <modifier type="replace" value="S" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Reaping Blow (X)" id="3a97-f5cc-8903-847c" hidden="false" type="rule" targetId="951f-eee4-02b7-b014">
+          <comment>2</comment>
+          <modifiers>
+            <modifier type="replace" value="2" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hierarch blade" hidden="false" id="d933-abe8-a0a9-e765">
+      <profiles>
+        <profile name="Hierarch blade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="c09d-dadd-0d74-7050">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Duellist&apos;s Edge (1), Critical Hit (6+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Immaterial</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Duellist&apos;s Edge (X)" id="9dda-9934-3a39-6a5f" hidden="false" type="rule" targetId="94bc-c69f-99b6-8ba0">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="replace" value="1" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Critical Hit (X)" id="959d-d133-8d06-33c0" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
+          <comment>6+</comment>
+          <modifiers>
+            <modifier type="replace" value="6+" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Harbinger blade" hidden="false" id="58b0-ec53-59c2-2a02">
+      <profiles>
+        <profile name="Harbinger blade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="efb9-e343-2d71-eebd">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+), Shred (6+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Immaterial</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="9dc3-1e4e-36db-7bff" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <comment>5+</comment>
+          <modifiers>
+            <modifier type="replace" value="5+" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shred (X)" id="56fb-e5fe-ccd8-d1cc" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
+          <comment>6+</comment>
+          <modifiers>
+            <modifier type="replace" value="6+" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hierarch greatblade" hidden="false" id="921f-c41b-138d-9418">
+      <profiles>
+        <profile name="Hierarch greatblade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="6295-03f0-658f-9eb5">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">-2</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Critical Hit (5+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Immaterial</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Critical Hit (X)" id="90d7-a018-5aa6-0cee" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
+          <comment>5+</comment>
+          <modifiers>
+            <modifier type="replace" value="5+" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Immaterial Armaments" hidden="false" id="abb9-05fd-a704-fdad">
+      <profiles>
+        <profile name="Immaterial Armaments" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="9c6f-f9b6-5fae-2c07">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Immaterial</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="1e56-a480-5782-1ffb" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <comment>5+</comment>
+          <modifiers>
+            <modifier type="replace" value="5+" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Daemon claws" hidden="false" id="95f7-554d-61d0-e44b">
+      <profiles>
+        <profile name="Daemon claws" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="2928-c9e3-0753-b98a">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">5</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Shred (5+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Immaterial</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shred (X)" id="5346-a450-4c90-e651" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
+          <comment>5+</comment>
+          <modifiers>
+            <modifier type="replace" value="5+" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Infernal blade" hidden="false" id="cc13-5250-0fcb-376d">
+      <profiles>
+        <profile name="Infernal blade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="395d-dce6-59d0-1064">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">-1</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">4</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Immaterial</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="621d-ba44-7759-c787" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <comment>6+</comment>
+          <modifiers>
+            <modifier type="replace" value="6+" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Infernal greatblade" hidden="false" id="0185-4b11-db7a-672c">
+      <profiles>
+        <profile name="Infernal greatblade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="44ae-4697-a613-730f">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">-1</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">-1</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Immaterial</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="725a-09ec-25be-6c67" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <comment>6+</comment>
+          <modifiers>
+            <modifier type="replace" value="6+" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Infernal lance" hidden="false" id="6b40-2189-2043-a8aa">
+      <profiles>
+        <profile name="Infernal lance" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="af21-4ef2-07f7-51b1">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">+1</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">1</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">4</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Immaterial</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="3c46-488c-a3d8-9f01" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <comment>6+</comment>
+          <modifiers>
+            <modifier type="replace" value="6+" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Maw &amp; talon" hidden="false" id="97e6-42f6-e99f-d374">
+      <profiles>
+        <profile name="Maw &amp; talon" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="092b-26f7-dc2d-4dad">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">4</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Immaterial</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="b396-6992-1ab3-9af6" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <comment>6+</comment>
+          <modifiers>
+            <modifier type="replace" value="6+" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Great maw &amp; talon" hidden="false" id="2427-eeee-b457-8e96">
+      <profiles>
+        <profile name="Great maw &amp; talon" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="f862-9ec3-087f-6bef">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">4</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Immaterial</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="a3ba-6074-0be4-dc3a" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <comment>5+</comment>
+          <modifiers>
+            <modifier type="replace" value="5+" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pulverising limbs" hidden="false" id="e30c-19d3-0817-e3e5">
+      <profiles>
+        <profile name="Pulverising limbs" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="aa7e-5775-0163-e404">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">5</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">-</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Immaterial</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Sovereign" hidden="false" id="c734-cb04-128f-4de9" sortIndex="1">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="350"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Sovereign" hidden="false" id="90a6-7a68-6a7d-9be6">
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="ab9d-7201-4c70-85b0" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="5a95-e564-96b2-8dc9" id="8c5e-b290-27b8-2950" primary="false" name="Champion Model Sub-Type"/>
+            <categoryLink targetId="2de1-ddd6-ebb4-10df" id="a6c4-4355-e257-1fcf" primary="false" name="Malefic Sub-type"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Sovereign" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="ac88-8daf-134f-65cf">
+              <characteristics>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Malefic)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">6</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">7</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">6</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">7</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">5</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">9</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">9</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">9</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8d4f-9caf-eaba-c817" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" value="12" field="a106-a779-d272-5e93"/>
+                    <modifier type="append" value="with Wings" field="name"/>
+                    <modifier type="replace" value=", Antigrav)" field="name" arg=")"/>
+                  </modifiers>
+                  <comment>Wings</comment>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="[Ætheric Dominion]" hidden="false" id="5477-3604-61a5-4ec4" type="selectionEntryGroup" targetId="5b1e-2194-8cb9-592b"/>
+            <entryLink import="true" name="Wings" hidden="false" id="9ea3-5e6d-133a-2b8f" type="selectionEntry" targetId="8d4f-9caf-eaba-c817" sortIndex="1"/>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon" id="7886-fc6b-b127-e08b" hidden="false" sortIndex="2" defaultSelectionEntryId="fce7-9b17-3b00-3313">
+              <entryLinks>
+                <entryLink import="true" name="Sovereign blade" hidden="false" id="fce7-9b17-3b00-3313" type="selectionEntry" targetId="f2f2-5a36-efc3-aa6e" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6127-33fa-e721-0785"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Sovereign greatblade" hidden="false" id="2f5a-6297-452e-6d78" type="selectionEntry" targetId="da08-57e6-2c20-e7e2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0166-7e1c-8071-4b43"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e638-b4ed-a00e-a089"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98bc-b2c9-bf53-b51f"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <infoLinks>
+            <infoLink name="Fear (X)" id="1d53-729b-0da5-a923" hidden="false" type="rule" targetId="0ebc-0c92-2209-6393">
+              <comment>1</comment>
+              <modifiers>
+                <modifier type="replace" value="1" field="name" arg="X"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Eternal Warrior (X)" id="9386-9b83-e2f6-23dd" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
+              <comment>1</comment>
+              <modifiers>
+                <modifier type="replace" value="1" field="name" arg="X"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Bulky (X)" id="8a52-2b87-b3bf-d431" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+              <modifiers>
+                <modifier type="replace" value="7" field="name" arg="X">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="8d4f-9caf-eaba-c817" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="replace" value="8" field="name" arg="X">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8d4f-9caf-eaba-c817" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Wings</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="8d4f-9caf-eaba-c817" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <modifiers>
+                <modifier type="append" value="with Wings" field="name"/>
+                <modifier type="add" value="c504-9dfa-35d3-c98f" field="category"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="3d3d-9f29-ac84-02fc" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Champion of the Ruinstorm" id="967a-8a8b-eaf4-1e5e" hidden="false" type="profile" targetId="1ed6-910b-f5cc-f6e9"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="1c0c-f10a-c186-4f21" id="def9-90ec-4c8f-01d9" primary="false" name="has Bulky (X)"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Wings" hidden="false" id="8d4f-9caf-eaba-c817">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="40"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5668-49af-2e6f-e35c"/>
+      </constraints>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <categoryEntries>
+    <categoryEntry name="has Bulky (X)" id="1c0c-f10a-c186-4f21" hidden="false"/>
+  </categoryEntries>
+  <sharedProfiles>
+    <profile name="Champion of the Ruinstorm" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="1ed6-910b-f5cc-f6e9">
+      <characteristics>
+        <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <entryLinks>
+    <entryLink import="true" name="Ruinstorm Daemon Sovereign" hidden="false" id="8f0e-35c5-4ae6-a921" type="selectionEntry" targetId="c734-cb04-128f-4de9">
+      <categoryLinks>
+        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="df31-18cd-2122-79da" primary="true" name="High Command"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
 </catalogue>

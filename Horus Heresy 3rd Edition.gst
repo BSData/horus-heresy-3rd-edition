@@ -514,6 +514,7 @@
     <categoryEntry name="No default Power Weapon" id="dd1b-70ef-6015-1291" hidden="false"/>
     <categoryEntry name="Questoris Mendecant" id="f220-eabc-f1a7-0714" hidden="false"/>
     <categoryEntry name="Knight Lord of War" id="db9a-f420-5ade-5e9d" hidden="false"/>
+    <categoryEntry name="Paragon of Malevolence" id="708b-b2ff-1a14-2901" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
