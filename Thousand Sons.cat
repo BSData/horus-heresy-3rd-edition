@@ -2039,8 +2039,8 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
           <entryLinks>
             <entryLink import="true" name="Bolt pistol" hidden="false" id="66e8-d92e-51fe-bce1" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f063-943b-48ab-711e"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c675-7f29-009f-fe98"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f063-943b-48ab-711e" automatic="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c675-7f29-009f-fe98" automatic="false"/>
               </constraints>
             </entryLink>
             <entryLink import="true" name="Chainsword" hidden="false" id="6fe7-8437-053d-b53f" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="2">
@@ -2070,11 +2070,6 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
             </selectionEntryGroup>
             <selectionEntryGroup name="For every five Models in this Unit, one Life Ward in this Unit may have its bolt pistol exchanged for one of the following:" id="c8bc-adec-40e6-966d">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="6757-95dc-4522-bc60" name="Bolt pistol">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e1d-78b6-4f8e-ad8e"/>
-                  </constraints>
-                </entryLink>
                 <entryLink hidden="false" type="selectionEntry" targetId="a042-1a69-9052-c59a" id="7e0a-f1fa-4f23-b2ad" name="Volkite caliver">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
@@ -2093,8 +2088,16 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b1b-549b-486d-a06b"/>
+                <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="9b1b-549b-486d-a06b" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e2e-af44-6a17-9a80"/>
               </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="9b1b-549b-486d-a06b">
+                  <repeats>
+                    <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
             <selectionEntryGroup name="One Life Ward in this Unit may have " id="bc99-de0f-4819-b566">
               <entryLinks>
@@ -2215,7 +2218,7 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
           <selectionEntryGroups>
             <selectionEntryGroup name="May have its chainsword exchanged for " id="5b2d-8551-452a-9267" sortIndex="2" defaultSelectionEntryId="ce06-5c71-44ef-8e3d">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="ce06-5c71-44ef-8e3d" name="Chainsword" sortIndex="1">
+                <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="ce06-5c71-44ef-8e3d" name="Chainsword" sortIndex="1" defaultAmount="">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e10-8f83-4b2c-a49e"/>
                   </constraints>
@@ -2247,6 +2250,7 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ee9-6e3d-484e-967c"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a67-8533-f474-71c5"/>
               </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="May have its bolt pistol exchanged for " id="ce65-822e-4254-bdf4" sortIndex="1" defaultSelectionEntryId="2fc9-960e-4281-a4fb">
@@ -2317,6 +2321,7 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f16-4d30-466d-9ac0"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="983b-2d6e-2762-8d70"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
