@@ -1591,7 +1591,7 @@ When Locked in Combat with any Units which contain at least one Model which has 
       <selectionEntries>
         <selectionEntry type="model" name="Honoured Telemechrus" id="dcd6-4cb5-407a-a06f" page="122" publicationId="5469-14da-d0a1-6092">
           <profiles>
-            <profile id="cdca-81c5-4d3d-80c6" name="Honoured Telemechrus" typeId="a76f-8e23-8c3e-166d">
+            <profile id="cdca-81c5-4d3d-80c6" name="Honoured Telemechrus" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">8</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
@@ -1619,19 +1619,19 @@ When Locked in Combat with any Units which contain at least one Model which has 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ed3-40d4-4176-9be5"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="11a5-70a9-9b14-10d3" id="0e74-d80a-45c9-9c36" name="Kheres assault cannon">
+            <entryLink hidden="false" type="selectionEntry" targetId="11a5-70a9-9b14-10d3" id="0e74-d80a-45c9-9c36" name="Kheres assault cannon" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c93c-18c4-4e7d-b33e"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c086-f5de-426b-80e3"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="ea00-ac16-4ae6-87d3" id="5156-3df7-4a20-9d98" name="Gravis power fist">
+            <entryLink hidden="false" type="selectionEntry" targetId="ea00-ac16-4ae6-87d3" id="5156-3df7-4a20-9d98" name="Gravis power fist" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ebbf-e4d4-4a69-8a13"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c20-e964-4443-83d5"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="f03b-d6c1-4694-936d" name="Combi-bolter">
+            <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="f03b-d6c1-4694-936d" name="Combi-bolter" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b9a1-60dc-426c-be6d"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf85-87da-4b86-83af"/>
@@ -1661,7 +1661,14 @@ When Locked in Combat with any Units which contain at least one Model which has 
             <modifier type="set" field="name" value="Hatred (Word Bearers)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="[Allegiance]" id="9897-42eb-6f67-e1fa" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="ca7a-662f-5962-7fc5" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Smokescreen" id="af4b-8520-83e1-2949" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
+        <infoLink name="Smokescreen" id="fe18-8fd6-1a88-0e6a" hidden="false" type="profile" targetId="999b-689a-4ee7-8901"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9fbe-4bb0-5c3f-487c" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Argean power sword" hidden="false" id="c532-24e1-4b57-e753">
       <profiles>
@@ -1811,6 +1818,11 @@ When Locked in Combat with any Units which contain at least one Model which has 
     <entryLink import="true" name="Nemesis Destroyer Squad" hidden="false" id="44a3-8385-1955-a76c" type="selectionEntry" targetId="99b9-94e2-4ef2-9cd6">
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="9c61-d561-c825-84e0" primary="true" name="Heavy Assault"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Honoured Telemechrus" hidden="false" id="f0be-253d-5105-5b0e" type="selectionEntry" targetId="1631-0dce-4bfb-9782">
+      <categoryLinks>
+        <categoryLink targetId="2499-7239-685f-8465" id="7ded-d3ca-a1ad-c494" primary="true" name="War-engine"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
