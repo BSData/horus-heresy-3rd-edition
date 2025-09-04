@@ -462,6 +462,36 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
           <categoryLinks>
             <categoryLink name="Infantry Model Type" hidden="false" id="7a80-b556-53f7-4c9d" targetId="594d-fa82-13cb-a345" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Alchem caster" hidden="false" id="1f5d-9c99-10da-52b4" type="selectionEntry" targetId="c7ac-ad11-e90c-592a" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="592c-6bfa-5961-5303" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70ce-f692-3b62-ac6a" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Power scythe" hidden="false" id="5f97-3e07-3e72-ca30" type="selectionEntry" targetId="db0b-0a6f-a228-ebf6" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="baa4-41dc-a536-7e43" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b05-4726-b7d6-c763" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Melta bombs" hidden="false" id="7b9e-5aea-0250-1a45" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="3">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e835-b54c-dc2b-977e"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Grenade harness" hidden="false" id="fc37-38b0-7410-19dd" type="selectionEntry" targetId="a766-856c-52bd-d30a" sortIndex="4">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ff9-79e9-e0a3-a3e9"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -487,38 +517,10 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
         </infoLink>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Power scythe" hidden="false" id="5f97-3e07-3e72-ca30" type="selectionEntry" targetId="db0b-0a6f-a228-ebf6" sortIndex="3">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="baa4-41dc-a536-7e43" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b05-4726-b7d6-c763" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Alchem caster" hidden="false" id="1f5d-9c99-10da-52b4" type="selectionEntry" targetId="c7ac-ad11-e90c-592a" sortIndex="2">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="592c-6bfa-5961-5303" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70ce-f692-3b62-ac6a" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="5d13-d2f5-46e5-844e" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="3340-15f9-4261-b8ce" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
-        </entryLink>
-        <entryLink import="true" name="Melta bombs" hidden="false" id="7b9e-5aea-0250-1a45" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="4">
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e835-b54c-dc2b-977e"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Grenade harness" hidden="false" id="fc37-38b0-7410-19dd" type="selectionEntry" targetId="a766-856c-52bd-d30a" sortIndex="5">
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ff9-79e9-e0a3-a3e9"/>
-          </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntry>
