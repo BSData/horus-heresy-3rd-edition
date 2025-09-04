@@ -2290,7 +2290,6 @@
                               <conditions>
                                 <condition type="equalTo" value="1" field="selections" scope="parent" childId="1023-5cdf-40e2-8708" shared="true"/>
                                 <condition type="equalTo" value="1" field="selections" scope="parent" childId="4d6d-f213-427b-819a" shared="true"/>
-                                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4eb4-e522-a7fa-9ee8" shared="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -4214,7 +4213,11 @@
     </selectionEntry>
     <selectionEntry name="Militia Arvus Lighter" type="unit" id="487c-46f1-4b6e-9300" page="32" publicationId="f5e5-c199-d3d4-ccf6">
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="65"/>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" name="Militia Arvus" id="7368-e8e4-4b44-9a87" page="32" publicationId="f5e5-c199-d3d4-ccf6">
@@ -4234,7 +4237,11 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="65"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c3c4-6a94-4d21-9c0f"/>
@@ -4299,168 +4306,231 @@
     </selectionEntry>
     <selectionEntry name="Militia Utility Hauler" type="unit" id="6987-492c-4cd8-9a42" page="33" publicationId="f5e5-c199-d3d4-ccf6">
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="55"/>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
-      <selectionEntries>
-        <selectionEntry type="model" name="Cargo Hauler" id="fa49-911b-4c07-9a73" page="33" publicationId="f5e5-c199-d3d4-ccf6">
-          <profiles>
-            <profile id="9738-6310-4f4a-8138" name="Cargo Hauler" typeId="2a80-eec8-a736-2fe3">
-              <characteristics>
-                <characteristic typeId="d624-72fe-0205-4443" name="M">12</characteristic>
-                <characteristic typeId="a17e-8e7d-d21f-c138" name="BS">3</characteristic>
-                <characteristic typeId="6536-e73d-4a74-c675" name="Front Armour">10</characteristic>
-                <characteristic typeId="f03a-18a7-8586-273d" name="Side Armour">10</characteristic>
-                <characteristic typeId="ec84-1f5d-1bb3-6826" name="Rear Armour">9</characteristic>
-                <characteristic typeId="8735-4497-1f8a-4dda" name="HP">4</characteristic>
-                <characteristic typeId="a82e-858c-9aa9-2b43" name="Transport Capacity">22</characteristic>
-                <characteristic typeId="827f-9ce2-2118-e134" name="Type">Vehicle (Transport)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-          </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="May take either Cargo Hauler or Armoured Hauler" id="446a-1cdf-7b40-4d62" hidden="false" defaultSelectionEntryId="fa49-911b-4c07-9a73" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Armoured Hauler" hidden="false" id="59c2-f81b-4248-87d1" page="33" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="2">
+              <profiles>
+                <profile name="Armoured Hauler" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="7c58-5a46-4c86-a835">
+                  <characteristics>
+                    <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Transport)</characteristic>
+                    <characteristic name="M" typeId="d624-72fe-0205-4443">10</characteristic>
+                    <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">3</characteristic>
+                    <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">11</characteristic>
+                    <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">10</characteristic>
+                    <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">9</characteristic>
+                    <characteristic name="HP" typeId="8735-4497-1f8a-4dda">5</characteristic>
+                    <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">20</characteristic>
+                    <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">One Access Point on its Rear Facing</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="85"/>
+                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="372c-d118-4de6-9163"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Searchlight" hidden="false" id="43ec-85f4-4ef5-b95c" type="selectionEntry" targetId="5a85-bf28-f790-7bf0" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="96a1-7ebb-4179-96ba"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a47-a5dc-4e68-b9fb"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="May have any of the following selected for it:" id="bd40-90a4-4bc4-9761" hidden="false" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="Hunter-killer missile" hidden="false" id="3d89-8e3b-479e-8cd0" type="selectionEntry" targetId="b9b7-8297-35b5-74ad">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="One Hull (Front) Mounted hunter-killer missile" field="name"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="deb6-6491-4b63-8380"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Dozer blade" hidden="false" id="8b81-4218-4c16-8ebe" type="selectionEntry" targetId="496e-da18-2afa-b99c">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87b2-8ddb-4e9d-bf05"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="331a-9509-4ef8-9696"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="May have three items from:" id="6681-28d0-6ca2-a361" hidden="false" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Combi-bolter" hidden="false" id="6b5c-e238-14a0-e0cf" type="selectionEntry" targetId="042d-9e60-db9e-c147">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="Pintle Mounted combi-bolter" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy stubber" hidden="false" id="6063-98be-d5b2-bac7" type="selectionEntry" targetId="51af-9efb-4c72-90be">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="Pintle Mounted heavy stubber" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Grenade launcher" hidden="false" id="3696-e2d5-aef3-1951" type="selectionEntry" targetId="2562-e355-f8e1-4c54">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="Pintle Mounted grenade launcher" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy flamer" hidden="false" id="88fc-93fc-2239-5301" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="Pintle Mounted heavy flamer" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="43d2-57fe-d764-88b2"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Vehicle Model Type" hidden="false" id="8ff4-a6aa-4d53-a090" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
+                <categoryLink name="Transport Model Sub-Type" hidden="false" id="f0c7-9233-4b3c-9914" targetId="2e6d-36f6-eeca-8e0c" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Cargo Hauler" hidden="false" id="fa49-911b-4c07-9a73" page="33" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="1">
+              <profiles>
+                <profile name="Cargo Hauler" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="9738-6310-4f4a-8138">
+                  <characteristics>
+                    <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Transport)</characteristic>
+                    <characteristic name="M" typeId="d624-72fe-0205-4443">12</characteristic>
+                    <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">3</characteristic>
+                    <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">10</characteristic>
+                    <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">10</characteristic>
+                    <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">9</characteristic>
+                    <characteristic name="HP" typeId="8735-4497-1f8a-4dda">4</characteristic>
+                    <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">22</characteristic>
+                    <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">One Access Point on its Rear Facing</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="55"/>
+                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cd7-e1cc-4a1e-967c"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Searchlight" hidden="false" id="2b21-7e05-4c81-92b6" type="selectionEntry" targetId="5a85-bf28-f790-7bf0" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cee0-abbd-41fd-8c2b"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e78a-f18e-4749-a3be"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="May have one item from:" id="52c6-801a-4518-91cb" hidden="false" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Militia Pintle Weapons" hidden="false" id="289a-8e66-4ce5-8c53" type="selectionEntryGroup" targetId="ea1f-0d70-4ea7-8ec3">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7650-f5e7-4ef0-b03a"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e917-115a-4bd4-8072"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="May have any of the following selected for it:" id="6cf6-3e37-455c-a861" hidden="false" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="Hunter-killer missile" hidden="false" id="4a89-edee-4c05-88e0" type="selectionEntry" targetId="b9b7-8297-35b5-74ad">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="One Hull (Front) Mounted hunter-killer missile" field="name"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9aec-8330-47d9-80a3"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Dozer blade" hidden="false" id="16ca-4135-402f-8b34" type="selectionEntry" targetId="496e-da18-2afa-b99c">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="001e-c87c-4e1e-8660"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dfd-da36-4601-a3e1"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Vehicle Model Type" hidden="false" id="8f2b-6dd1-4ec5-88e6" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
+                <categoryLink name="Transport Model Sub-Type" hidden="false" id="7a2f-da86-4147-878e" targetId="2e6d-36f6-eeca-8e0c" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cd7-e1cc-4a1e-967c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f62-6b43-1f6e-bfb5"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e6d-b59a-fd92-95e3"/>
           </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="4d8a-4671-1636-7e3f" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="2b21-7e05-4c81-92b6" name="Searchlights">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cee0-abbd-41fd-8c2b"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e78a-f18e-4749-a3be"/>
-              </constraints>
-            </entryLink>
+            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="9125-1cf6-81d6-3dac" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
           </entryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="This Cargo Hauler may have one item from the Militia Pintle Weapons list selected for it." id="52c6-801a-4518-91cb">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="ea1f-0d70-4ea7-8ec3" id="289a-8e66-4ce5-8c53" name="Militia Pintle Weapons">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7650-f5e7-4ef0-b03a"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e917-115a-4bd4-8072"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="6cf6-3e37-455c-a861">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" id="4a89-edee-4c05-88e0" name="Hunter-killer missile">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" field="name" value="One Hull (Front) Mounted hunter-killer missile"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9aec-8330-47d9-80a3"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="00a3-9972-4ae8-a603" id="16ca-4135-402f-8b34" name="Dozer Blade">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="001e-c87c-4e1e-8660"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dfd-da36-4601-a3e1"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <categoryLinks>
-            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="8f2b-6dd1-4ec5-88e6" primary="false" name="Vehicle Model Type"/>
-            <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="7a2f-da86-4147-878e" primary="false" name="Transport Model Sub-Type"/>
-          </categoryLinks>
-        </selectionEntry>
-        <selectionEntry type="model" name="Armoured Hauler" id="59c2-f81b-4248-87d1" page="33" publicationId="f5e5-c199-d3d4-ccf6">
-          <profiles>
-            <profile id="7c58-5a46-4c86-a835" name="Armoured Hauler" typeId="2a80-eec8-a736-2fe3">
-              <characteristics>
-                <characteristic typeId="d624-72fe-0205-4443" name="M">10</characteristic>
-                <characteristic typeId="a17e-8e7d-d21f-c138" name="BS">3</characteristic>
-                <characteristic typeId="6536-e73d-4a74-c675" name="Front Armour">11</characteristic>
-                <characteristic typeId="f03a-18a7-8586-273d" name="Side Armour">10</characteristic>
-                <characteristic typeId="ec84-1f5d-1bb3-6826" name="Rear Armour">9</characteristic>
-                <characteristic typeId="8735-4497-1f8a-4dda" name="HP">5</characteristic>
-                <characteristic typeId="a82e-858c-9aa9-2b43" name="Transport Capacity">20</characteristic>
-                <characteristic typeId="827f-9ce2-2118-e134" name="Type">Vehicle (Transport)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="372c-d118-4de6-9163"/>
-          </constraints>
-          <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="43ec-85f4-4ef5-b95c" name="Searchlights">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="96a1-7ebb-4179-96ba"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a47-a5dc-4e68-b9fb"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="This Armoured Hauler may have up to three items from the Militia Pintle Weapons list selected for it." id="69b9-57b0-42e9-aac9">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="597a-5576-4186-a0fb"/>
-              </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear up to three items from the Militia Pintle Weapons list.
-	 Checked under up to three items from the Militia Pintle Weapons list.</comment>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="bd40-90a4-4bc4-9761">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" id="3d89-8e3b-479e-8cd0" name="Hunter-killer missile">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" field="name" value="One Hull (Front) Mounted hunter-killer missile"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="deb6-6491-4b63-8380"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="00a3-9972-4ae8-a603" id="8b81-4218-4c16-8ebe" name="Dozer Blade">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87b2-8ddb-4e9d-bf05"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="331a-9509-4ef8-9696"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <categoryLinks>
-            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="8ff4-a6aa-4d53-a090" primary="false" name="Vehicle Model Type"/>
-            <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="f0c7-9233-4b3c-9914" primary="false" name="Transport Model Sub-Type"/>
-          </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in This Armoured Hauler may have up to three items from the Militia Pintle Weapons list selected for it.</comment>
-        </selectionEntry>
-      </selectionEntries>
-      <comment>warning: !BSC 20250828-1757
-Could not find rule: None
-Needs replace by constraints and default set to Cargo Hauler</comment>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="b3d8-c626-fea4-5bad" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Imperialis Militia" id="71fc-8286-1e67-285b" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Militia Industrial Rig" type="unit" id="272f-595c-49b5-a17f" page="34" publicationId="f5e5-c199-d3d4-ccf6">
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="65"/>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="May take Mining Rig or Explorator Rig" id="d9a9-9743-7c8f-381a" hidden="false" sortIndex="1">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Explorator Rig" hidden="false" id="7283-1033-4c4c-94a5" page="" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="2">
+            <selectionEntry type="model" import="true" name="Explorator Rig" hidden="false" id="7283-1033-4c4c-94a5" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="2">
               <profiles>
                 <profile name="Explorator Rig" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="0f52-e90c-4afe-ac5b">
                   <characteristics>
@@ -4663,26 +4733,34 @@ Needs replace by constraints and default set to Cargo Hauler</comment>
     </selectionEntry>
     <selectionEntry name="Militia Gorgon Transporter" type="unit" id="d356-ea5d-4b86-a9a6" page="35" publicationId="f5e5-c199-d3d4-ccf6">
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="275"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" name="Militia Gorgon" id="258a-99c0-4342-b63b" page="35" publicationId="f5e5-c199-d3d4-ccf6">
           <profiles>
-            <profile id="0e20-2e53-49e7-b17a" name="Militia Gorgon" typeId="2a80-eec8-a736-2fe3">
+            <profile id="0e20-2e53-49e7-b17a" name="Militia Gorgon" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle">
               <characteristics>
-                <characteristic typeId="d624-72fe-0205-4443" name="M">10</characteristic>
-                <characteristic typeId="a17e-8e7d-d21f-c138" name="BS">3</characteristic>
-                <characteristic typeId="6536-e73d-4a74-c675" name="Front Armour">14</characteristic>
-                <characteristic typeId="f03a-18a7-8586-273d" name="Side Armour">13</characteristic>
-                <characteristic typeId="ec84-1f5d-1bb3-6826" name="Rear Armour">11</characteristic>
-                <characteristic typeId="8735-4497-1f8a-4dda" name="HP">10</characteristic>
-                <characteristic typeId="a82e-858c-9aa9-2b43" name="Transport Capacity">45</characteristic>
-                <characteristic typeId="827f-9ce2-2118-e134" name="Type">Vehicle (Super-heavy, Transport)</characteristic>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle (Super-heavy, Transport)</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">10</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">3</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">14</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">13</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">11</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">10</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">45</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">One Access Point on its Front Facing</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="275"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="699f-b084-491e-b14c"/>
@@ -4698,7 +4776,7 @@ Needs replace by constraints and default set to Cargo Hauler</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5dc-0c71-4218-8ab6"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="6559-31ee-4717-9ced" id="f10a-e23c-46d0-b280" name="Smoke Launchers">
+            <entryLink hidden="false" type="selectionEntry" targetId="b94f-e829-064a-9d60" id="f10a-e23c-46d0-b280" name="Smoke Launchers">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5838-2240-48c0-827a"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30da-4491-4eb5-864b"/>
@@ -4706,9 +4784,9 @@ Needs replace by constraints and default set to Cargo Hauler</comment>
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its Hull (Front) Mounted Gorgon mortar battery exchanged for one of the following:" id="6f95-9cdd-4ed6-85d4">
+            <selectionEntryGroup name="May have its Hull (Front) Mounted Gorgon mortar battery exchanged for one of the following:" id="6f95-9cdd-4ed6-85d4">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="f40a-08ec-4dae-b299" id="fd33-6874-4f00-b2fd" name="Gorgon mortar battery">
+                <entryLink hidden="false" type="selectionEntry" targetId="f40a-08ec-4dae-b299" id="fd33-6874-4f00-b2fd" name="Gorgon mortar battery" sortIndex="1">
                   <modifiers>
                     <modifier type="set" field="name" value="Hull (Front) Mounted Gorgon mortar battery"/>
                   </modifiers>
@@ -4716,25 +4794,46 @@ Needs replace by constraints and default set to Cargo Hauler</comment>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ae6-22d5-402e-8794"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="fda7-6fb9-6b9b-461a" type="selectionEntry" targetId="bc40-b14a-978e-0232" sortIndex="4">
+                  <modifiers>
+                    <modifier type="set" value="Four Sponson Mounted heavy bolters" field="name"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Heavy stubber" hidden="false" id="f81f-c11d-d719-dc4a" type="selectionEntry" targetId="51af-9efb-4c72-90be" sortIndex="2">
+                  <modifiers>
+                    <modifier type="set" value="Four Sponson Mounted heavy stubbers" field="name"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="a9b5-b70a-8492-dbc4" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="3">
+                  <modifiers>
+                    <modifier type="set" value="Four Sponson Mounted heavy flamers" field="name"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="141b-bb72-4278-a476"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Four Sponson Mounted heavy stubbers
-	 Checked under heavy stubbers
-Could not find wargear Four Sponson Mounted heavy flamers
-	 Checked under heavy flamers
-Could not find wargear Four Sponson Mounted heavy bolters
-	 Checked under heavy bolters</comment>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have up to two Hull (Front) Mounted hunter-killer missiles selected for it for +5 Points each." id="a117-3d21-42aa-8d92">
+            <selectionEntryGroup name="This Model may have up to two Hull (Front) Mounted hunter-killer missiles." id="a117-3d21-42aa-8d92">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="df92-03f3-4d52-81d0"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear up to two Hull (Front) Mounted hunter-killer missiles
-	 Checked under hunter-killer missiles</comment>
+              <entryLinks>
+                <entryLink import="true" name="Hunter-killer missile" hidden="false" id="7be9-b5c5-5d32-eb08" type="selectionEntry" targetId="b9b7-8297-35b5-74ad">
+                  <modifiers>
+                    <modifier type="set" value="Hull (Front) Mounted hunter-killer missile" field="name"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -4742,28 +4841,29 @@ Could not find wargear up to two Hull (Front) Mounted hunter-killer missiles
             <categoryLink targetId="4d42-b711-7946-8e15" id="ecdf-dc60-4684-9e00" primary="false" name="Super-heavy Model Sub-Type"/>
             <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="0697-48ea-4f46-955c" primary="false" name="Transport Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in This Model may have its Hull (Front) Mounted Gorgon mortar battery exchanged for one of the following:
-Could not find wargear in This Model may have its Hull (Front) Mounted Gorgon mortar battery exchanged for one of the following:
-Could not find wargear in This Model may have its Hull (Front) Mounted Gorgon mortar battery exchanged for one of the following:
-Could not find wargear in This Model may have up to two Hull (Front) Mounted hunter-killer missiles selected for it for +5 Points each.</comment>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
         <infoLink name="Assault Vehicle" hidden="false" type="rule" targetId="150c-16e6-1212-9f75" id="0ddc-77af-4c60-978d"/>
+        <infoLink name="[Allegiance]" id="3552-0b50-cc42-2306" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Imperialis Militia" id="539e-64b1-5772-c49a" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
       </infoLinks>
-      <comment>warning: !BSC 20250828-1757
-Could not find rule: Third-Line
-The option &apos; up to two Hull (Front) Mounted hunter-killer missiles &apos; may need a &apos;multiply by number of models&apos; modifier</comment>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="eb8e-d54b-ab02-4a3a" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="747f-f281-4e65-b6d5" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Reconnaissance Troop" type="unit" id="3f93-6554-46f5-9ece" page="36" publicationId="f5e5-c199-d3d4-ccf6">
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="18"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Scout" id="65c4-cdfd-4397-b85b" page="36" publicationId="f5e5-c199-d3d4-ccf6">
+        <selectionEntry type="model" name="Scout" id="65c4-cdfd-4397-b85b" page="36" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="2">
           <profiles>
-            <profile id="3a61-77bf-4670-86bf" name="Scout" typeId="a76f-8e23-8c3e-166d">
+            <profile id="3a61-77bf-4670-86bf" name="Scout" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">6</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">3</characteristic>
@@ -4781,6 +4881,24 @@ The option &apos; up to two Hull (Front) Mounted hunter-killer missiles &apos; m
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Light)</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -4791,7 +4909,7 @@ The option &apos; up to two Hull (Front) Mounted hunter-killer missiles &apos; m
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="3d19-c282-4eab-99bc"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="ce3d-dced-4262-8dd9" id="026c-4206-48a4-ad5c" name="Frag Grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="026c-4206-48a4-ad5c" name="Frag grenades">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f05c-1f7f-4a96-a5c7"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed86-cb4f-4ce3-9ed3"/>
@@ -4799,53 +4917,46 @@ The option &apos; up to two Hull (Front) Mounted hunter-killer missiles &apos; m
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Any Model in this Unit may have its militia shotgun exchanged for " id="e27b-7356-4c77-8d96">
+            <selectionEntryGroup name="Options" id="9dc5-bf49-5fb5-460f" hidden="false" sortIndex="1">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="f9f5-edc3-4cb3-9fa6" id="07bc-c32b-482a-9947" name="Militia shotgun">
+                <entryLink import="true" name="Militia Vox" hidden="false" id="6ec3-be3f-47c7-2366" type="selectionEntry" targetId="5ffe-ced0-f3b4-f89a">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76ca-afa5-4457-81c3"/>
+                    <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="6f88-2007-d997-b6c2" includeChildSelections="true"/>
                   </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="0718-3e41-4cd9-87ca" id="08d5-9f19-4020-b87c" name="Militia Armaments">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74ae-292e-4597-baa2"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e253-685f-4b7a-883b"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="255c-1234-444a-9e23"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="One Scout in this Unit may have one militia vox selected for it for +10 Points." id="c45c-1265-4f48-9ea5">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="e02a-6860-47bd-ae4c" id="8065-89e6-4e87-b8d5" name="Militia Vox">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a9c-668a-4154-9d4e"/>
-                  </constraints>
                 </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3759-41f4-44ab-b32a"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="The Scout Sergeant in this Unit may have melta bombs selected for it for +10 Points." id="c4d8-b55b-4843-80a5">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" id="b29d-58bf-4526-9ba6" name="Melta bombs">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Any Model in this Unit may have its militia shotgun exchanged for " id="e27b-7356-4c77-8d96" hidden="false" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Militia shotgun" hidden="false" id="07bc-c32b-482a-9947" type="selectionEntry" targetId="f9f5-edc3-4cb3-9fa6" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76ca-afa5-4457-81c3"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Militia Armaments" hidden="false" id="08d5-9f19-4020-b87c" type="selectionEntryGroup" targetId="0718-3e41-4cd9-87ca" sortIndex="2" flatten="true">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74ae-292e-4597-baa2"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Militia longrifle" hidden="false" id="324a-3c66-1b9f-2d2b" type="selectionEntry" targetId="33c4-700f-42c4-b6d3" sortIndex="3">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8f7-0e9c-f97a-94bc"/>
+                        <constraint type="max" value="5" field="selections" scope="unit" shared="true" id="81bd-0944-bf56-c990" includeChildSelections="true"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1582-aef7-4263-a8b1"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e253-685f-4b7a-883b"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="255c-1234-444a-9e23"/>
                   </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8e1-7c48-4c4d-b2c8"/>
-              </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -4853,9 +4964,9 @@ The option &apos; up to two Hull (Front) Mounted hunter-killer missiles &apos; m
             <categoryLink targetId="f4ba-00e5-3d2e-eaac" id="de62-7fa9-4739-94fd" primary="false" name="Light Model Sub-Type"/>
           </categoryLinks>
         </selectionEntry>
-        <selectionEntry type="model" name="Scout Sergeant" id="617c-f641-4142-87b0" page="36" publicationId="f5e5-c199-d3d4-ccf6">
+        <selectionEntry type="model" name="Scout Sergeant" id="617c-f641-4142-87b0" page="36" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="1">
           <profiles>
-            <profile id="84dd-2132-42e0-ac4c" name="Scout Sergeant" typeId="a76f-8e23-8c3e-166d">
+            <profile id="84dd-2132-42e0-ac4c" name="Scout Sergeant" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">6</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">3</characteristic>
@@ -4873,6 +4984,43 @@ The option &apos; up to two Hull (Front) Mounted hunter-killer missiles &apos; m
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Sergeant, Light)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Master Sergeant</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -4883,7 +5031,7 @@ The option &apos; up to two Hull (Front) Mounted hunter-killer missiles &apos; m
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="775a-6350-448f-afc6"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="ce3d-dced-4262-8dd9" id="ff45-ea33-4c02-b0ef" name="Frag Grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="ff45-ea33-4c02-b0ef" name="Frag grenades">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="54eb-550f-4d9f-8f15"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ddf3-0b86-4fed-9622"/>
@@ -4891,16 +5039,25 @@ The option &apos; up to two Hull (Front) Mounted hunter-killer missiles &apos; m
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Any Model in this Unit may have its militia shotgun exchanged for " id="fe1f-61ec-49fc-a0d0">
+            <selectionEntryGroup name="May have its militia shotgun exchanged for " id="fe1f-61ec-49fc-a0d0" sortIndex="1" defaultSelectionEntryId="b175-ef67-4bed-a5fa">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="f9f5-edc3-4cb3-9fa6" id="b175-ef67-4bed-a5fa" name="Militia shotgun">
+                <entryLink hidden="false" type="selectionEntry" targetId="f9f5-edc3-4cb3-9fa6" id="b175-ef67-4bed-a5fa" name="Militia shotgun" sortIndex="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="181a-ffed-4202-85ea"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="0718-3e41-4cd9-87ca" id="b6e1-c3b9-4ed0-8302" name="Militia Armaments">
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="0718-3e41-4cd9-87ca" id="b6e1-c3b9-4ed0-8302" name="Militia Armaments" flatten="true" sortIndex="2">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7369-7b94-420f-900d"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Militia longrifle" hidden="false" id="4bc7-f494-820f-5532" type="selectionEntry" targetId="33c4-700f-42c4-b6d3" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4521-3f71-8ab5-775d"/>
+                    <constraint type="max" value="5" field="selections" scope="unit" shared="true" id="0257-93cc-7178-ad45" includeChildSelections="true"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -4909,7 +5066,7 @@ The option &apos; up to two Hull (Front) Mounted hunter-killer missiles &apos; m
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ba5-4c75-4435-9e94"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="The Scout Sergeant in this Unit may have melta bombs selected for it for +10 Points." id="5b40-6a26-470f-8528">
+            <selectionEntryGroup name="Melta bombs" id="5b40-6a26-470f-8528">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" id="a1b0-5089-4248-bcae" name="Melta bombs">
                   <costs>
@@ -4932,23 +5089,6 @@ The option &apos; up to two Hull (Front) Mounted hunter-killer missiles &apos; m
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Up to five Models in this Unit may have their militia shotgun exchanged for " id="a075-b37b-4859-a2ff">
-          <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="33c4-700f-42c4-b6d3" id="0643-a471-447c-8d53" name="Militia longrifle">
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4be2-87d8-4943-8de8"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d401-ca62-41d0-b16d"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Infiltrate (X)" hidden="false" type="rule" targetId="f330-254e-1a98-798a" id="6f9c-60bb-491e-b05f">
           <modifiers>
@@ -4961,20 +5101,27 @@ The option &apos; up to two Hull (Front) Mounted hunter-killer missiles &apos; m
             <modifier type="set" field="name" value="Support Unit (2)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="[Allegiance]" id="589b-522f-e1c2-c912" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Imperialis Militia" id="e839-e5ef-68ff-6b9a" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
+        <infoLink name="Irregulars" id="c1ad-c1ef-efd6-77eb" hidden="false" type="rule" targetId="2d43-afcd-2393-d1bb"/>
+        <infoLink name="Smokescreen" id="b2fd-d07b-bb49-3d14" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
       </infoLinks>
-      <comment>warning: !BSC 20250828-1757
-Could not find rule: Irregulars
-Exchange was not applied on Up to five Models in this Unit may have their militia shotgun exchanged for 
-Shared on model level not yet implemented for One Scout in this Unit may have one militia vox selected for it for +10 Points.</comment>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="a5bb-fc2a-874f-defc" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="c9fc-6886-569c-ff5d" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Cavalry Troop" type="unit" id="f278-aacc-4285-879e" page="37" publicationId="f5e5-c199-d3d4-ccf6">
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Militia Outrider" id="ae9f-af6b-47c5-8905" page="37" publicationId="f5e5-c199-d3d4-ccf6">
+        <selectionEntry type="model" name="Militia Outrider" id="ae9f-af6b-47c5-8905" page="37" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="2">
           <profiles>
-            <profile id="9bfd-0bf3-4d98-a1a7" name="Militia Outrider" typeId="a76f-8e23-8c3e-166d">
+            <profile id="9bfd-0bf3-4d98-a1a7" name="Militia Outrider" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">12</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">3</characteristic>
@@ -4992,6 +5139,24 @@ Shared on model level not yet implemented for One Scout in this Unit may have on
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Cavalry</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -5002,89 +5167,96 @@ Shared on model level not yet implemented for One Scout in this Unit may have on
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="5220-3871-4c87-84cf"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="ce3d-dced-4262-8dd9" id="8253-2161-4110-ad62" name="Frag Grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="8253-2161-4110-ad62" name="Frag grenades" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c746-ec81-4d55-94f2"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4dd3-671c-4f95-ab61"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Militia pistol" hidden="false" id="7659-7252-8e81-7b94" type="selectionEntry" targetId="7702-e5d6-4f99-96b4" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a84-be45-e33a-3e66"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="084d-8a78-c819-c751"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Any Model in this Unit may have one item from the Militia Melee Weapons list, one item from the Militia Armaments list, or one militia lance selected for it +5 Points per Model." id="3c2e-24c5-498d-a15d">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="01b9-96bd-443f-9756" id="3439-09bd-4d3e-8403" name="Militia Melee Weapons">
+            <selectionEntryGroup name="Options" id="a4fb-26c6-a107-fb7c" hidden="false" sortIndex="3">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Any Model in this Unit may have one item:" id="3c2e-24c5-498d-a15d" hidden="false" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="Militia Melee Weapons" hidden="false" id="3439-09bd-4d3e-8403" type="selectionEntryGroup" targetId="01b9-96bd-443f-9756" sortIndex="1" flatten="true">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4bd-8583-4e82-ab45"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Militia Armaments" hidden="false" id="f486-2788-8b30-0a00" type="selectionEntryGroup" targetId="0718-3e41-4cd9-87ca" sortIndex="2" flatten="true"/>
+                    <entryLink import="true" name="Militia lance" hidden="false" id="5099-3597-1835-67ab" type="selectionEntry" targetId="0f77-ee5f-4484-b423" sortIndex="3">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4bd-8583-4e82-ab45"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f37-b217-4514-9dab"/>
                   </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f37-b217-4514-9dab"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="One Militia Outrider in this Unit which has not had one of the above options selected for it may have one item from the Militia Special Weapons list selected for it." id="a869-986a-4d47-ad5c">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="77d0-78ae-4a2b-b301" id="2efc-2f88-4f8e-a019" name="Militia Special Weapons">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="One Model may take:" id="3555-3621-dd82-488a" hidden="false">
+                      <entryLinks>
+                        <entryLink import="true" name="Militia Special Weapons" hidden="false" id="2efc-2f88-4f8e-a019" type="selectionEntryGroup" targetId="77d0-78ae-4a2b-b301">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f406-851a-45a1-99f5"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="8537-d985-c20c-8049" includeChildSelections="true"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="1 in 5 may take:" id="e333-775c-42ad-8f42" hidden="false" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Melta bombs" hidden="false" id="880f-f1f4-47a5-900c" type="selectionEntry" targetId="2eb4-687e-a515-ee3d">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fa9-c6be-486b-bf05"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f406-851a-45a1-99f5"/>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1e23-5392-48a5-860d"/>
                   </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71a4-ff4f-410f-9bc0"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="For every five Models in this Unit, one Militia Outrider may have melta bombs selected for it for +10 Points per Model." id="e333-775c-42ad-8f42">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="1e23-5392-48a5-860d">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" id="880f-f1f4-47a5-900c" name="Melta bombs">
+                <entryLink import="true" name="Militia Vexilla" hidden="false" id="8a22-54e5-de15-6fb4" type="selectionEntry" targetId="1420-40f4-617b-41bc" sortIndex="3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="2896-cda9-7497-fddf" includeChildSelections="true"/>
+                  </constraints>
                   <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fa9-c6be-486b-bf05"/>
-                  </constraints>
                 </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e23-5392-48a5-860d"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="The Militia Outrider Sergeant in this Unit may have its militia pistol exchanged for " id="44ef-2b68-4642-b9e1">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="7702-e5d6-4f99-96b4" id="5ae7-32c9-4b06-93a5" name="Militia pistol">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd09-42e2-4980-9b8c"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="9edc-fe43-4c9e-bcac" id="49f1-c63a-4fb2-973f" name="Militia Officer Weapons">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14cd-6cf6-4f1c-9c94"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aed2-907c-4554-8fc4"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a568-5b74-44e0-a60c"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="One Militia Outrider in this Unit may have one militia vexilla selected for it for +5 Points." id="290d-84ae-4ecd-a40a">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a329-96b0-4b30-b7f1"/>
-              </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear militia vexilla
-	 Checked under militia vexilla</comment>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="a073-2d4a-5bed-123e" id="fd94-0f17-429d-afba" primary="false" name="Cavalry Model Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in One Militia Outrider in this Unit may have one militia vexilla selected for it for +5 Points.</comment>
         </selectionEntry>
-        <selectionEntry type="model" name="Militia Outrider Sergeant" id="d89f-5528-4c95-a738" page="37" publicationId="f5e5-c199-d3d4-ccf6">
+        <selectionEntry type="model" name="Militia Outrider Sergeant" id="d89f-5528-4c95-a738" page="37" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="1">
           <profiles>
-            <profile id="d766-1d8a-452b-bcbb" name="Militia Outrider Sergeant" typeId="a76f-8e23-8c3e-166d">
+            <profile id="d766-1d8a-452b-bcbb" name="Militia Outrider Sergeant" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">12</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">3</characteristic>
@@ -5102,6 +5274,43 @@ Could not find wargear in One Militia Outrider in this Unit may have one militia
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Cavalry (Sergeant)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Master Sergeant</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -5112,7 +5321,7 @@ Could not find wargear in One Militia Outrider in this Unit may have one militia
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="725f-a904-4c63-87b6"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="ce3d-dced-4262-8dd9" id="7398-fe99-4471-ba13" name="Frag Grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="7398-fe99-4471-ba13" name="Frag grenades">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="785c-7df7-48b3-8f60"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc2f-d5b0-410a-86d2"/>
@@ -5120,35 +5329,77 @@ Could not find wargear in One Militia Outrider in this Unit may have one militia
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Any Model in this Unit may have one item from the Militia Melee Weapons list, one item from the Militia Armaments list, or one militia lance selected for it +5 Points per Model." id="25a6-561f-4fdc-816c">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="01b9-96bd-443f-9756" id="262e-b9d1-4887-9fef" name="Militia Melee Weapons">
+            <selectionEntryGroup name="Options" id="28c9-f84e-3024-167c" hidden="false" sortIndex="1">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="May have its militia pistol exchanged for:" id="d88d-5b23-4adc-8889" hidden="false" sortIndex="1" defaultSelectionEntryId="3e48-7c65-431c-a5dd">
+                  <entryLinks>
+                    <entryLink import="true" name="Militia pistol" hidden="false" id="3e48-7c65-431c-a5dd" type="selectionEntry" targetId="7702-e5d6-4f99-96b4">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b83-dbe8-4703-acb4"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Militia Officer Weapons" hidden="false" id="21ab-0292-432a-bdc0" type="selectionEntryGroup" targetId="9edc-fe43-4c9e-bcac" flatten="true">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3942-1386-4a32-a0e1"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa76-0497-4cf7-ae8c"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1cc4-626d-4b88-9c32"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d10a-7b3e-44ef-9d4d"/>
                   </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f15-4c0b-4c26-ba1c"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="The Militia Outrider Sergeant in this Unit may have its militia pistol exchanged for " id="d88d-5b23-4adc-8889">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="7702-e5d6-4f99-96b4" id="3e48-7c65-431c-a5dd" name="Militia pistol">
+                </selectionEntryGroup>
+                <selectionEntryGroup name="May have one item from the following list:" id="25a6-561f-4fdc-816c" hidden="false" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Militia Melee Weapons" hidden="false" id="262e-b9d1-4887-9fef" type="selectionEntryGroup" targetId="01b9-96bd-443f-9756" sortIndex="1" flatten="true">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa76-0497-4cf7-ae8c"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Militia Armaments" hidden="false" id="0fe7-bb50-7d16-82dd" type="selectionEntryGroup" targetId="0718-3e41-4cd9-87ca" sortIndex="2" flatten="true"/>
+                    <entryLink import="true" name="Militia lance" hidden="false" id="a3d2-788b-bffe-650f" type="selectionEntry" targetId="0f77-ee5f-4484-b423" sortIndex="3">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b83-dbe8-4703-acb4"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f15-4c0b-4c26-ba1c"/>
                   </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="9edc-fe43-4c9e-bcac" id="21ab-0292-432a-bdc0" name="Militia Officer Weapons">
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Any Model in this Unit may have one item:" id="abd6-fbef-c0c0-b31e" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Militia Melee Weapons" hidden="false" id="09f4-f2e5-c327-286c" type="selectionEntryGroup" targetId="01b9-96bd-443f-9756" sortIndex="1" flatten="true">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="557a-3f5c-932d-8a3c"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Militia Armaments" hidden="false" id="cc31-959c-e989-d3cf" type="selectionEntryGroup" targetId="0718-3e41-4cd9-87ca" sortIndex="2" flatten="true"/>
+                    <entryLink import="true" name="Militia lance" hidden="false" id="7c58-519f-c2bf-4183" type="selectionEntry" targetId="0f77-ee5f-4484-b423" sortIndex="3">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3942-1386-4a32-a0e1"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5773-9d07-de2e-d93c"/>
                   </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1cc4-626d-4b88-9c32"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d10a-7b3e-44ef-9d4d"/>
-              </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="One Model may take:" id="ce13-02dc-4e3c-d235" hidden="false">
+                      <entryLinks>
+                        <entryLink import="true" name="Militia Special Weapons" hidden="false" id="417e-b09b-230f-6337" type="selectionEntryGroup" targetId="77d0-78ae-4a2b-b301">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a27-e014-279d-5557"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="c7e1-ae2a-1e77-eef1" includeChildSelections="true"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -5176,176 +5427,21 @@ Could not find wargear in One Militia Outrider in this Unit may have one militia
             <modifier type="set" field="name" value="Vanguard (3)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="[Allegiance]" id="477c-256c-c011-337e" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Imperialis Militia" id="3d1a-0868-17f0-d0ec" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
       </infoLinks>
-      <comment>warning: !BSC 20250828-1757
-Could not find rule: Irregulars
-Shared on model level not yet implemented for One Militia Outrider in this Unit which has not had one of the above options selected for it may have one item from the Militia Special Weapons list selected for it.
-Shared on model level not yet implemented for One Militia Outrider in this Unit may have one militia vexilla selected for it for +5 Points.</comment>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="3560-651f-e53e-001b" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="4ecb-bc44-a6af-3879" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="All-Terrain Patrol" type="unit" id="2e53-2be0-44dd-b9a6" page="38" publicationId="f5e5-c199-d3d4-ccf6">
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
       </costs>
-      <selectionEntries>
-        <selectionEntry type="model" name="Militia Quad" id="19b9-8ac5-4b4d-88e4" page="38" publicationId="f5e5-c199-d3d4-ccf6">
-          <profiles>
-            <profile id="66c7-3569-4825-9df2" name="Militia Quad" typeId="a76f-8e23-8c3e-166d">
-              <characteristics>
-                <characteristic typeId="a106-a779-d272-5e93" name="M">10</characteristic>
-                <characteristic typeId="253c-d694-4695-c89e" name="WS">3</characteristic>
-                <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">3</characteristic>
-                <characteristic typeId="498f-dce1-59fd-d8d7" name="S">3</characteristic>
-                <characteristic typeId="3120-8275-e537-ecd2" name="T">4</characteristic>
-                <characteristic typeId="f5cc-79a3-d302-cc1d" name="W">3</characteristic>
-                <characteristic typeId="af9d-7db8-dc95-71c1" name="I">3</characteristic>
-                <characteristic typeId="024e-bdb1-7982-25a0" name="A">2</characteristic>
-                <characteristic typeId="02ad-ebe6-86e7-9fd6" name="LD">6</characteristic>
-                <characteristic typeId="9cd1-0e7c-2cd6-5f2f" name="CL">7</characteristic>
-                <characteristic typeId="f714-1726-37d3-44df" name="WP">5</characteristic>
-                <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">5</characteristic>
-                <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">5+</characteristic>
-                <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
-                <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Cavalry (Light, Skirmish)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="18"/>
-          </costs>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e442-f5f3-4f52-ba34"/>
-            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="8b21-0f13-42d5-bda8"/>
-          </constraints>
-          <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="7126-16f7-424f-9c96" name="Combi-bolter">
-              <modifiers>
-                <modifier type="set" field="name" value="Two combi-bolters"/>
-              </modifiers>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3eed-2012-4636-b9e8"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a460-0e46-4a2c-9da2"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Any Model in this Unit may have one item from the Militia Melee Weapons list or one item from the Militia Pistols list selected for it." id="57f7-9cf9-40b0-bdc0">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="01b9-96bd-443f-9756" id="6672-72aa-4b65-9e70" name="Militia Melee Weapons">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c97-12b4-40ea-b3d0"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8801-b66a-4b25-8fd7"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <categoryLinks>
-            <categoryLink targetId="a073-2d4a-5bed-123e" id="184b-425b-4f7b-94bd" primary="false" name="Cavalry Model Type"/>
-            <categoryLink targetId="f4ba-00e5-3d2e-eaac" id="cc19-96fc-4e68-a9bd" primary="false" name="Light Model Sub-Type"/>
-            <categoryLink targetId="d2d6-5a84-672b-2833" id="0354-b563-4486-91f3" primary="false" name="Skirmish Model Sub-Type"/>
-          </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear Militia Quad
-Could not find wargear None Militia Trike
-	 Checked under None Militia Trike</comment>
-        </selectionEntry>
-        <selectionEntry type="model" name="Militia Trike" id="200d-ae71-461f-97c6" page="38" publicationId="f5e5-c199-d3d4-ccf6">
-          <profiles>
-            <profile id="21bf-dd40-450c-b99a" name="Militia Trike" typeId="a76f-8e23-8c3e-166d">
-              <characteristics>
-                <characteristic typeId="a106-a779-d272-5e93" name="M">12</characteristic>
-                <characteristic typeId="253c-d694-4695-c89e" name="WS">3</characteristic>
-                <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">3</characteristic>
-                <characteristic typeId="498f-dce1-59fd-d8d7" name="S">3</characteristic>
-                <characteristic typeId="3120-8275-e537-ecd2" name="T">4</characteristic>
-                <characteristic typeId="f5cc-79a3-d302-cc1d" name="W">2</characteristic>
-                <characteristic typeId="af9d-7db8-dc95-71c1" name="I">3</characteristic>
-                <characteristic typeId="024e-bdb1-7982-25a0" name="A">1</characteristic>
-                <characteristic typeId="02ad-ebe6-86e7-9fd6" name="LD">6</characteristic>
-                <characteristic typeId="9cd1-0e7c-2cd6-5f2f" name="CL">6</characteristic>
-                <characteristic typeId="f714-1726-37d3-44df" name="WP">5</characteristic>
-                <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">5</characteristic>
-                <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">4+</characteristic>
-                <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
-                <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Cavalry (Light, Skirmish)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="d2bd-e9d7-42db-ba2c" name="Combi-bolter">
-              <modifiers>
-                <modifier type="set" field="name" value="Two combi-bolters"/>
-              </modifiers>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="02ea-c184-4be8-b0b2"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8fe-0a60-4d8b-8e9f"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Any Militia Trike in this Unit may have both of its combi-bolters exchanged for one of the following:" id="5e71-d9e8-4976-b2b9">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="51af-9efb-4c72-90be" id="7176-f057-4f84-83e2" name="Heavy stubber">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Two heavy stubbers"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e74-3152-4f18-a42e"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ef0-1d91-4761-b4c7"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="One Militia Trike in this Unit may have both of its combi-bolters exchanged for one of the following:" id="ee12-b069-4602-a485">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="b1e1-e164-5877-6734" id="bac2-ca79-4d03-96fb" name="Meltagun">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" field="name" value="Two meltaguns"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c410-04d1-481b-bcf5"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7731-2ff0-4511-81cc"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit may have one item from the Militia Melee Weapons list or one item from the Militia Pistols list selected for it." id="7bc9-efaf-4088-8e9e">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="01b9-96bd-443f-9756" id="d94e-0cd9-4bbe-8e81" name="Militia Melee Weapons">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e3e1-9ccc-4316-89fc"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd28-bfa7-419b-9589"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <categoryLinks>
-            <categoryLink targetId="a073-2d4a-5bed-123e" id="2c2f-e4ae-4649-9788" primary="false" name="Cavalry Model Type"/>
-            <categoryLink targetId="f4ba-00e5-3d2e-eaac" id="88de-1ad2-47d3-aefd" primary="false" name="Light Model Sub-Type"/>
-            <categoryLink targetId="d2d6-5a84-672b-2833" id="ddad-0e6f-40c4-a574" primary="false" name="Skirmish Model Sub-Type"/>
-          </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear Militia Quad
-	 Checked under Militia Quad
-Could not find wargear None Militia Trike
-	 Checked under None Militia Trike</comment>
-        </selectionEntry>
-      </selectionEntries>
       <infoLinks>
         <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="d3f7-64ca-48c0-a40f">
           <modifiers>
@@ -5358,228 +5454,456 @@ Could not find wargear None Militia Trike
           </modifiers>
         </infoLink>
         <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="35e6-0d95-427d-a7c5"/>
+        <infoLink name="[Allegiance]" id="d116-747d-11b1-85b3" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Imperialis Militia" id="b11d-c287-0fce-5e0c" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
+        <infoLink name="Irregulars" id="e037-6f04-5730-8921" hidden="false" type="rule" targetId="2d43-afcd-2393-d1bb"/>
       </infoLinks>
-      <comment>warning: !BSC 20250828-1757
-Could not find rule: Irregulars
-Could not process option &apos;Every Militia Quad in this Unit must have one item from the Militia Special Weapons list or one item from the Militia Heavy Weapons list selected for it.&apos;.
-Shared on model level not yet implemented for One Militia Trike in this Unit may have both of its combi-bolters exchanged for one of the following:</comment>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="2b2a-6e51-c6e4-ab87" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="5a66-3eb8-21da-def3" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="b46f-8ed2-9310-5337" hidden="false" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Militia Quad" hidden="false" id="19b9-8ac5-4b4d-88e4" page="38" publicationId="f5e5-c199-d3d4-ccf6">
+              <profiles>
+                <profile name="Militia Quad" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="66c7-3569-4825-9df2">
+                  <characteristics>
+                    <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Cavalry (Light, Skirmish)</characteristic>
+                    <characteristic typeId="a106-a779-d272-5e93" name="M">10</characteristic>
+                    <characteristic typeId="253c-d694-4695-c89e" name="WS">3</characteristic>
+                    <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">3</characteristic>
+                    <characteristic typeId="498f-dce1-59fd-d8d7" name="S">3</characteristic>
+                    <characteristic typeId="3120-8275-e537-ecd2" name="T">4</characteristic>
+                    <characteristic typeId="f5cc-79a3-d302-cc1d" name="W">3</characteristic>
+                    <characteristic typeId="af9d-7db8-dc95-71c1" name="I">3</characteristic>
+                    <characteristic typeId="024e-bdb1-7982-25a0" name="A">2</characteristic>
+                    <characteristic typeId="02ad-ebe6-86e7-9fd6" name="LD">6</characteristic>
+                    <characteristic typeId="9cd1-0e7c-2cd6-5f2f" name="CL">7</characteristic>
+                    <characteristic typeId="f714-1726-37d3-44df" name="WP">5</characteristic>
+                    <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">5</characteristic>
+                    <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">5+</characteristic>
+                    <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
+                  </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Combat Veterans</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                        <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                        <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                        <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="18"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e442-f5f3-4f52-ba34"/>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="8b21-0f13-42d5-bda8"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Options" id="6d47-01af-4772-cdd5" hidden="false">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Any Model in this Unit may have one:" id="57f7-9cf9-40b0-bdc0" hidden="false" sortIndex="2">
+                      <entryLinks>
+                        <entryLink import="true" name="Militia Melee Weapons" hidden="false" id="6672-72aa-4b65-9e70" type="selectionEntryGroup" targetId="01b9-96bd-443f-9756" sortIndex="1" flatten="true">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c97-12b4-40ea-b3d0"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Militia Pistols" hidden="false" id="aaac-9f82-7bfc-95e5" type="selectionEntryGroup" targetId="4eb1-e777-4926-b5cf" sortIndex="2" flatten="true"/>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8801-b66a-4b25-8fd7"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="Every Model must have one:" id="d202-8d56-6877-f6ed" hidden="false" sortIndex="1">
+                      <entryLinks>
+                        <entryLink import="true" name="Militia Special Weapons" hidden="false" id="9991-22f8-9aa2-d13b" type="selectionEntryGroup" targetId="77d0-78ae-4a2b-b301" sortIndex="1" flatten="true"/>
+                        <entryLink import="true" name="Militia Heavy Weapons" hidden="false" id="61c6-8777-2067-6694" type="selectionEntryGroup" targetId="cf14-e95b-4c69-8187" sortIndex="2" flatten="true"/>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="96a4-f7ee-c942-0fca"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e27b-a43e-04bc-75fd"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Cavalry Model Type" hidden="false" id="184b-425b-4f7b-94bd" targetId="a073-2d4a-5bed-123e" primary="false"/>
+                <categoryLink name="Light Model Sub-Type" hidden="false" id="cc19-96fc-4e68-a9bd" targetId="f4ba-00e5-3d2e-eaac" primary="false"/>
+                <categoryLink name="Skirmish Model Sub-Type" hidden="false" id="0354-b563-4486-91f3" targetId="d2d6-5a84-672b-2833" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Militia Trike" hidden="false" id="200d-ae71-461f-97c6" page="38" publicationId="f5e5-c199-d3d4-ccf6">
+              <profiles>
+                <profile name="Militia Trike" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="21bf-dd40-450c-b99a">
+                  <characteristics>
+                    <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Cavalry (Light, Skirmish)</characteristic>
+                    <characteristic typeId="a106-a779-d272-5e93" name="M">12</characteristic>
+                    <characteristic typeId="253c-d694-4695-c89e" name="WS">3</characteristic>
+                    <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">3</characteristic>
+                    <characteristic typeId="498f-dce1-59fd-d8d7" name="S">3</characteristic>
+                    <characteristic typeId="3120-8275-e537-ecd2" name="T">4</characteristic>
+                    <characteristic typeId="f5cc-79a3-d302-cc1d" name="W">2</characteristic>
+                    <characteristic typeId="af9d-7db8-dc95-71c1" name="I">3</characteristic>
+                    <characteristic typeId="024e-bdb1-7982-25a0" name="A">1</characteristic>
+                    <characteristic typeId="02ad-ebe6-86e7-9fd6" name="LD">6</characteristic>
+                    <characteristic typeId="9cd1-0e7c-2cd6-5f2f" name="CL">6</characteristic>
+                    <characteristic typeId="f714-1726-37d3-44df" name="WP">5</characteristic>
+                    <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">5</characteristic>
+                    <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">4+</characteristic>
+                    <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
+                  </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Combat Veterans</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                        <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                        <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                        <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="23"/>
+                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+              </costs>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Options" id="9e5a-61cc-b1c3-b364" hidden="false">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Any Model in this Unit may have one:" id="e3d8-9747-88b1-b109" hidden="false" sortIndex="2">
+                      <entryLinks>
+                        <entryLink import="true" name="Militia Melee Weapons" hidden="false" id="d606-03a5-5836-1e7b" type="selectionEntryGroup" targetId="01b9-96bd-443f-9756" flatten="true">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86b6-56e6-3a2e-fbc6"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Militia Pistols" hidden="false" id="937c-0808-8952-598c" type="selectionEntryGroup" targetId="4eb1-e777-4926-b5cf" flatten="true"/>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23c8-1b60-66cd-7f48"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="May have both of its combi-bolters exchanged for:" id="5e71-d9e8-4976-b2b9" hidden="false" defaultSelectionEntryId="d2bd-e9d7-42db-ba2c" sortIndex="1">
+                      <entryLinks>
+                        <entryLink import="true" name="Heavy stubber" hidden="false" id="7176-f057-4f84-83e2" type="selectionEntry" targetId="51af-9efb-4c72-90be">
+                          <modifiers>
+                            <modifier type="set" value="Two heavy stubbers" field="name"/>
+                          </modifiers>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e74-3152-4f18-a42e"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Combi-bolter" hidden="false" id="d2bd-e9d7-42db-ba2c" type="selectionEntry" targetId="042d-9e60-db9e-c147">
+                          <modifiers>
+                            <modifier type="set" value="Two combi-bolters" field="name"/>
+                          </modifiers>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8fe-0a60-4d8b-8e9f"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ef0-1d91-4761-b4c7"/>
+                      </constraints>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="One Militia Trike may take:" id="57df-9459-cd8b-8d6f" hidden="false">
+                          <entryLinks>
+                            <entryLink import="true" name="Meltagun" hidden="false" id="f1c5-5e01-0e35-d230" type="selectionEntry" targetId="b1e1-e164-5877-6734">
+                              <costs>
+                                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                              </costs>
+                              <modifiers>
+                                <modifier type="set" value="Two meltaguns" field="name"/>
+                              </modifiers>
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21ba-3d53-b45a-291b"/>
+                                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="c5f4-c5a9-5186-4f83" includeChildSelections="true"/>
+                              </constraints>
+                            </entryLink>
+                          </entryLinks>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Cavalry Model Type" hidden="false" id="2c2f-e4ae-4649-9788" targetId="a073-2d4a-5bed-123e" primary="false"/>
+                <categoryLink name="Light Model Sub-Type" hidden="false" id="88de-1ad2-47d3-aefd" targetId="f4ba-00e5-3d2e-eaac" primary="false"/>
+                <categoryLink name="Skirmish Model Sub-Type" hidden="false" id="ddad-0e6f-40c4-a574" targetId="d2d6-5a84-672b-2833" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a37-5afa-7b58-41a2"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="3f44-7f20-b8bf-8d1c"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Militia Scout Rover" type="unit" id="addd-bda2-437e-ad6d" page="39" publicationId="f5e5-c199-d3d4-ccf6">
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="35"/>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
-      <selectionEntries>
-        <selectionEntry type="model" name="Militia Venator" id="aebb-72a5-45d8-9fc1" page="39" publicationId="f5e5-c199-d3d4-ccf6">
-          <profiles>
-            <profile id="4235-f78d-4eb6-8672" name="Militia Venator" typeId="2a80-eec8-a736-2fe3">
-              <characteristics>
-                <characteristic typeId="d624-72fe-0205-4443" name="M">16</characteristic>
-                <characteristic typeId="a17e-8e7d-d21f-c138" name="BS">3</characteristic>
-                <characteristic typeId="6536-e73d-4a74-c675" name="Front Armour">10</characteristic>
-                <characteristic typeId="f03a-18a7-8586-273d" name="Side Armour">10</characteristic>
-                <characteristic typeId="ec84-1f5d-1bb3-6826" name="Rear Armour">10</characteristic>
-                <characteristic typeId="8735-4497-1f8a-4dda" name="HP">3</characteristic>
-                <characteristic typeId="a82e-858c-9aa9-2b43" name="Transport Capacity">-</characteristic>
-                <characteristic typeId="827f-9ce2-2118-e134" name="Type">Vehicle (Rapid)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48f5-50e4-4560-83e4"/>
-          </constraints>
-          <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="9027-63f4-4780-b5b1" id="4c3d-0ab1-4086-a407" name="Twin heavy stubber">
-              <modifiers>
-                <modifier type="set" field="name" value="Hull (Front) Mounted twin heavy stubber"/>
-              </modifiers>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b0d3-06af-45eb-9f59"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffc8-b007-4047-9ac7"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="6559-31ee-4717-9ced" id="67db-65f3-4bf7-9176" name="Smoke Launchers">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="36fa-3e84-44e6-93ed"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f22-e73e-480a-a137"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="This Militia Venator may have its Pintle Mounted twin heavy stubber exchanged for one of the following:" id="2cda-9c08-4d83-84cb">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="9027-63f4-4780-b5b1" id="dd35-399c-46b4-8c53" name="Twin heavy stubber">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Pintle Mounted twin heavy stubber"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c14a-d315-4cec-9b75"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="4c80-f76f-4a10-80e9" id="aae5-979b-47c5-a3fa" name="Twin multi-laser">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" field="name" value="Pintle Mounted twin multi-laser"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b29a-b58e-4e56-8975"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="9f59-10bb-4bbb-bb13" id="645c-1652-48fe-b3a2" name="Twin seismic cannon">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" field="name" value="Pintle Mounted twin seismic cannon"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a61e-4b30-4c4f-886a"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a" id="8d72-1c46-424c-bcab" name="Twin lascannon">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" field="name" value="Pintle Mounted twin lascannon"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="073f-7bc6-4a6a-a7e0"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c50d-45c0-43f3-978b"/>
-              </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Militia Venator
-	 Checked under Militia Venator</comment>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="ffd5-fdbe-4529-a231">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="28c0-d566-47f2-b161" name="Searchlights">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa3d-c128-4601-b891"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6a6-f47b-4804-aa91"/>
-              </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Up to two Hull (Front) Mounted hunter-killer missiles
-	 Checked under hunter-killer missiles</comment>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <categoryLinks>
-            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="d52e-0551-4ec2-995f" primary="false" name="Vehicle Model Type"/>
-            <categoryLink targetId="a5c6-b359-cecb-e0b1" id="e8d4-67ae-4c22-bd25" primary="false" name="Rapid Sub-Type"/>
-          </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear Smoke launchers Militia Ridgerunner
-	 Checked under Smoke launchers Militia Ridgerunner
-Could not find wargear in This Militia Venator may have its Pintle Mounted twin heavy stubber exchanged for one of the following:
-Could not find wargear in This Model may have any of the following selected for it:</comment>
-        </selectionEntry>
-        <selectionEntry type="model" name="Militia Ridgerunner" id="2407-31c4-4974-84d4" page="39" publicationId="f5e5-c199-d3d4-ccf6">
-          <profiles>
-            <profile id="eed6-0b69-4576-ab02" name="Militia Ridgerunner" typeId="2a80-eec8-a736-2fe3">
-              <characteristics>
-                <characteristic typeId="d624-72fe-0205-4443" name="M">14</characteristic>
-                <characteristic typeId="a17e-8e7d-d21f-c138" name="BS">3</characteristic>
-                <characteristic typeId="6536-e73d-4a74-c675" name="Front Armour">11</characteristic>
-                <characteristic typeId="f03a-18a7-8586-273d" name="Side Armour">10</characteristic>
-                <characteristic typeId="ec84-1f5d-1bb3-6826" name="Rear Armour">10</characteristic>
-                <characteristic typeId="8735-4497-1f8a-4dda" name="HP">3</characteristic>
-                <characteristic typeId="a82e-858c-9aa9-2b43" name="Transport Capacity">-</characteristic>
-                <characteristic typeId="827f-9ce2-2118-e134" name="Type">Vehicle (Rapid)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ab6-2c19-47f0-af8a"/>
-          </constraints>
-          <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="9027-63f4-4780-b5b1" id="ea75-ea74-486b-a31a" name="Twin heavy stubber">
-              <modifiers>
-                <modifier type="set" field="name" value="Hull (Front) Mounted twin heavy stubber"/>
-              </modifiers>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a612-dba2-4f61-80bf"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02c8-c0f9-4ca0-b753"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="6559-31ee-4717-9ced" id="7851-0fdb-4a9c-994b" name="Smoke Launchers">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="77f2-353e-476d-bd0e"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8db4-629f-4dc5-b7e3"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="This Militia Ridgerunner may have one item from the Militia Heavy Weapons list selected for it. Any item selected in this way becomes Pintle Mounted." id="14ea-f4df-4205-b12b">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="cf14-e95b-4c69-8187" id="0f5c-3a41-4ae5-966b" name="Militia Heavy Weapons">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81db-1587-4314-a894"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3245-8316-48d9-bd71"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="38ab-d3a6-4fba-8fda">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="735c-7acd-41c1-b48a" name="Searchlights">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc32-d44d-49ee-bc07"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0dc9-7e47-4735-bc3d"/>
-              </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Up to two Hull (Front) Mounted hunter-killer missiles
-	 Checked under hunter-killer missiles</comment>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <categoryLinks>
-            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="c160-1e24-4522-9a87" primary="false" name="Vehicle Model Type"/>
-            <categoryLink targetId="a5c6-b359-cecb-e0b1" id="37bb-0f88-44ff-980c" primary="false" name="Rapid Sub-Type"/>
-          </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear Militia Venator
-	 Checked under Militia Venator
-Could not find wargear Smoke launchers Militia Ridgerunner
-	 Checked under Smoke launchers Militia Ridgerunner
-Could not find wargear in This Model may have any of the following selected for it:</comment>
-        </selectionEntry>
-      </selectionEntries>
       <infoLinks>
         <infoLink name="Move Through Cover" hidden="false" type="rule" targetId="44d9-f20d-00bf-dc98" id="3e81-5134-44a1-9fef"/>
         <infoLink name="Outflank" hidden="false" type="rule" targetId="92d2-cc57-1ef6-a712" id="837b-5dcd-4ec5-8c8e"/>
+        <infoLink name="Smokescreen" id="ddc1-b70b-ef82-fe9b" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
+        <infoLink name="[Allegiance]" id="6dd5-6987-0823-9668" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Imperialis Militia" id="bf3d-974f-821f-cb75" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
       </infoLinks>
-      <comment>warning: !BSC 20250828-1757
-Needs replace by constraints and default set to Militia Venator</comment>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Option" id="79c5-c494-d2df-229b" hidden="false" defaultSelectionEntryId="aebb-72a5-45d8-9fc1" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Militia Ridgerunner" hidden="false" id="2407-31c4-4974-84d4" page="39" publicationId="f5e5-c199-d3d4-ccf6">
+              <profiles>
+                <profile name="Militia Ridgerunner" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="eed6-0b69-4576-ab02">
+                  <characteristics>
+                    <characteristic typeId="827f-9ce2-2118-e134" name="Type">Vehicle (Rapid)</characteristic>
+                    <characteristic typeId="d624-72fe-0205-4443" name="M">14</characteristic>
+                    <characteristic typeId="a17e-8e7d-d21f-c138" name="BS">3</characteristic>
+                    <characteristic typeId="6536-e73d-4a74-c675" name="Front Armour">11</characteristic>
+                    <characteristic typeId="f03a-18a7-8586-273d" name="Side Armour">10</characteristic>
+                    <characteristic typeId="ec84-1f5d-1bb3-6826" name="Rear Armour">10</characteristic>
+                    <characteristic typeId="8735-4497-1f8a-4dda" name="HP">3</characteristic>
+                    <characteristic typeId="a82e-858c-9aa9-2b43" name="Transport Capacity">-</characteristic>
+                    <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="45"/>
+                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ab6-2c19-47f0-af8a"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin heavy stubber" hidden="false" id="ea75-ea74-486b-a31a" type="selectionEntry" targetId="9027-63f4-4780-b5b1" sortIndex="1">
+                  <modifiers>
+                    <modifier type="set" value="Hull (Front) Mounted twin heavy stubber" field="name"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a612-dba2-4f61-80bf"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02c8-c0f9-4ca0-b753"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Smoke Launchers" hidden="false" id="7851-0fdb-4a9c-994b" type="selectionEntry" targetId="b94f-e829-064a-9d60" sortIndex="2">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="77f2-353e-476d-bd0e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8db4-629f-4dc5-b7e3"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="May take a pintle mounted heavy weapon:" id="14ea-f4df-4205-b12b" hidden="false" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="Militia Heavy Weapons" hidden="false" id="0f5c-3a41-4ae5-966b" type="selectionEntryGroup" targetId="cf14-e95b-4c69-8187">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81db-1587-4314-a894"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3245-8316-48d9-bd71"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="This Model may have any of the following selected for it:" id="38ab-d3a6-4fba-8fda" hidden="false" sortIndex="4">
+                  <entryLinks>
+                    <entryLink import="true" name="Searchlight" hidden="false" id="735c-7acd-41c1-b48a" type="selectionEntry" targetId="5a85-bf28-f790-7bf0">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc32-d44d-49ee-bc07"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Hunter-killer missile" hidden="false" id="a151-f674-42a7-feb8" type="selectionEntry" targetId="b9b7-8297-35b5-74ad">
+                      <modifiers>
+                        <modifier type="append" value="Hull (Front) Mounted" field="name"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3845-d6d9-6dd6-c08c"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Vehicle Model Type" hidden="false" id="c160-1e24-4522-9a87" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
+                <categoryLink name="Rapid Sub-Type" hidden="false" id="37bb-0f88-44ff-980c" targetId="a5c6-b359-cecb-e0b1" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Militia Venator" hidden="false" id="aebb-72a5-45d8-9fc1" page="39" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="1">
+              <profiles>
+                <profile name="Militia Venator" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="4235-f78d-4eb6-8672">
+                  <characteristics>
+                    <characteristic typeId="827f-9ce2-2118-e134" name="Type">Vehicle (Rapid)</characteristic>
+                    <characteristic typeId="d624-72fe-0205-4443" name="M">16</characteristic>
+                    <characteristic typeId="a17e-8e7d-d21f-c138" name="BS">3</characteristic>
+                    <characteristic typeId="6536-e73d-4a74-c675" name="Front Armour">10</characteristic>
+                    <characteristic typeId="f03a-18a7-8586-273d" name="Side Armour">10</characteristic>
+                    <characteristic typeId="ec84-1f5d-1bb3-6826" name="Rear Armour">10</characteristic>
+                    <characteristic typeId="8735-4497-1f8a-4dda" name="HP">3</characteristic>
+                    <characteristic typeId="a82e-858c-9aa9-2b43" name="Transport Capacity">-</characteristic>
+                    <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="35"/>
+                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48f5-50e4-4560-83e4"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Smoke Launchers" hidden="false" id="67db-65f3-4bf7-9176" type="selectionEntry" targetId="b94f-e829-064a-9d60" sortIndex="3">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="36fa-3e84-44e6-93ed"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f22-e73e-480a-a137"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="May have its Pintle Mounted twin heavy stubber exchanged for:" id="2cda-9c08-4d83-84cb" hidden="false" defaultSelectionEntryId="dd35-399c-46b4-8c53" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Twin heavy stubber" hidden="false" id="dd35-399c-46b4-8c53" type="selectionEntry" targetId="9027-63f4-4780-b5b1">
+                      <modifiers>
+                        <modifier type="set" value="Pintle Mounted twin heavy stubber" field="name"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c14a-d315-4cec-9b75"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Twin multi-laser" hidden="false" id="aae5-979b-47c5-a3fa" type="selectionEntry" targetId="4c80-f76f-4a10-80e9">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="Pintle Mounted twin multi-laser" field="name"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b29a-b58e-4e56-8975"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Twin seismic cannon" hidden="false" id="645c-1652-48fe-b3a2" type="selectionEntry" targetId="9f59-10bb-4bbb-bb13">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="Pintle Mounted twin seismic cannon" field="name"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a61e-4b30-4c4f-886a"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Twin lascannon" hidden="false" id="8d72-1c46-424c-bcab" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="Pintle Mounted twin lascannon" field="name"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="073f-7bc6-4a6a-a7e0"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c50d-45c0-43f3-978b"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="This Model may have any of the following selected for it:" id="7a95-a1b6-2f1f-94c1" hidden="false" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Searchlight" hidden="false" id="4c04-6bd9-15f9-ec52" type="selectionEntry" targetId="5a85-bf28-f790-7bf0">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1bb-b44e-6cc9-36ff"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Hunter-killer missile" hidden="false" id="5909-74e2-f7cf-90f6" type="selectionEntry" targetId="b9b7-8297-35b5-74ad">
+                      <modifiers>
+                        <modifier type="append" value="Hull (Front) Mounted" field="name"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8188-b330-c378-f6eb"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Vehicle Model Type" hidden="false" id="d52e-0551-4ec2-995f" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
+                <categoryLink name="Rapid Sub-Type" hidden="false" id="e8d4-67ae-4c22-bd25" targetId="a5c6-b359-cecb-e0b1" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="40e8-eca6-91d9-ec66" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="b2fa-e94a-2065-afe4" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Militia Thunderbolt Heavy Fighter" type="unit" id="f7d5-cc43-41f8-970e" page="40" publicationId="f5e5-c199-d3d4-ccf6">
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="110"/>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" name="Militia Thunderbolt" id="bb2a-c858-4173-82df" page="40" publicationId="f5e5-c199-d3d4-ccf6">
@@ -5598,7 +5922,11 @@ Needs replace by constraints and default set to Militia Venator</comment>
             </profile>
           </profiles>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="110"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5057-cf10-4d73-8fb8"/>
@@ -5645,7 +5973,10 @@ Needs replace by constraints and default set to Militia Venator</comment>
     </selectionEntry>
     <selectionEntry name="Militia Leman Russ Tank" type="unit" id="186a-9905-43e7-92b8" page="41" publicationId="f5e5-c199-d3d4-ccf6">
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="130"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" name="Militia Leman Russ" id="e75e-fce6-4dd0-b99b" page="41" publicationId="f5e5-c199-d3d4-ccf6">
@@ -5664,14 +5995,18 @@ Needs replace by constraints and default set to Militia Venator</comment>
             </profile>
           </profiles>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="130"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a31-d8d8-4f36-a6a3"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f02-499f-4b8b-a04f"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="6559-31ee-4717-9ced" id="77a6-5e88-4734-a86e" name="Smoke Launchers">
+            <entryLink hidden="false" type="selectionEntry" targetId="b94f-e829-064a-9d60" id="77a6-5e88-4734-a86e" name="Smoke Launchers" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="940f-fe3d-4c03-9773"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96dc-9480-4fca-81ff"/>
@@ -5679,9 +6014,9 @@ Needs replace by constraints and default set to Militia Venator</comment>
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its Turret Mounted battlecannon exchanged for one of the following:" id="76df-702b-471e-b386">
+            <selectionEntryGroup name="May have its Turret Mounted battlecannon exchanged for:" id="76df-702b-471e-b386" defaultSelectionEntryId="e9a6-121d-40c4-88c2" sortIndex="1">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="ab04-ce8e-44ea-8d6c" id="e9a6-121d-40c4-88c2" name="Battlecannon">
+                <entryLink hidden="false" type="selectionEntry" targetId="ab04-ce8e-44ea-8d6c" id="e9a6-121d-40c4-88c2" name="Battlecannon" sortIndex="1">
                   <modifiers>
                     <modifier type="set" field="name" value="Turret Mounted battlecannon"/>
                   </modifiers>
@@ -5689,7 +6024,7 @@ Needs replace by constraints and default set to Militia Venator</comment>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47a6-94b4-4d74-beb7"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="4e51-460b-4f29-8257" id="50d6-a752-4735-8523" name="Gravis autocannon">
+                <entryLink hidden="false" type="selectionEntry" targetId="4e51-460b-4f29-8257" id="50d6-a752-4735-8523" name="Gravis autocannon" sortIndex="2">
                   <modifiers>
                     <modifier type="set" field="name" value="Turret Mounted gravis autocannon"/>
                   </modifiers>
@@ -5697,7 +6032,7 @@ Needs replace by constraints and default set to Militia Venator</comment>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d31e-fff1-4219-bbc8"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a" id="757d-5b9d-4c0b-a5fc" name="Twin lascannon">
+                <entryLink hidden="false" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a" id="757d-5b9d-4c0b-a5fc" name="Twin lascannon" sortIndex="3">
                   <modifiers>
                     <modifier type="set" field="name" value="Turret Mounted twin lascannon"/>
                   </modifiers>
@@ -5705,7 +6040,7 @@ Needs replace by constraints and default set to Militia Venator</comment>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="710c-4840-4358-8699"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="7cb4-a7cc-cada-1190" id="c083-5381-49db-bec3" name="Executioner plasma destroyer">
+                <entryLink hidden="false" type="selectionEntry" targetId="7cb4-a7cc-cada-1190" id="c083-5381-49db-bec3" name="Executioner plasma destroyer" sortIndex="5">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
                   </costs>
@@ -5716,7 +6051,7 @@ Needs replace by constraints and default set to Militia Venator</comment>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad83-39a9-4934-98a9"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="4514-8e18-77b4-a141" id="607a-39ef-4ef0-8995" name="Demolisher cannon">
+                <entryLink hidden="false" type="selectionEntry" targetId="4514-8e18-77b4-a141" id="607a-39ef-4ef0-8995" name="Demolisher cannon" sortIndex="6">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
                   </costs>
@@ -5731,13 +6066,43 @@ Needs replace by constraints and default set to Militia Venator</comment>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e2d-38ed-41f5-805e"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Turret Mounted vanquisher cannon and one Co-Axial (vanquisher cannon) Mounted heavy stubber
-	 Checked under vanquisher cannon and one Co-Axial (vanquisher cannon)</comment>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Vanquisher cannon w/ co-axial Heavy stubber" hidden="false" id="53e3-25ee-edb8-a748" sortIndex="4">
+                  <entryLinks>
+                    <entryLink import="true" name="Vanquisher cannon" hidden="false" id="de3a-079e-50d2-e99b" type="selectionEntry" targetId="57e8-1532-48a2-b30c" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa0b-e426-71ec-fe96"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="737b-27c6-484c-0fff"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="append" value="Turret Mounted" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy stubber" hidden="false" id="5777-95d7-38f7-8554" type="selectionEntry" targetId="51af-9efb-4c72-90be" sortIndex="2">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="117f-10d0-7932-3afc"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ba1-1f82-3e07-4d74"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="append" value="Co-Axial (vanquisher cannon)
+Mounted
+" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                    <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have its Hull (Front) Mounted heavy bolter exchanged for one of the following:" id="c3c5-0c1a-44d8-b3df">
+            <selectionEntryGroup name="May have its Hull (Front) Mounted heavy bolter exchanged for:" id="c3c5-0c1a-44d8-b3df" sortIndex="2">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="bc40-b14a-978e-0232" id="f98c-425a-4efa-9d49" name="Heavy bolter">
+                <entryLink hidden="false" type="selectionEntry" targetId="bc40-b14a-978e-0232" id="f98c-425a-4efa-9d49" name="Heavy bolter" sortIndex="1">
                   <modifiers>
                     <modifier type="set" field="name" value="Hull (Front) Mounted heavy bolter"/>
                   </modifiers>
@@ -5745,7 +6110,7 @@ Could not find wargear Turret Mounted vanquisher cannon and one Co-Axial (vanqui
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9426-3930-4773-8b77"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" id="1c8c-7169-45f6-9357" name="Heavy flamer">
+                <entryLink hidden="false" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" id="1c8c-7169-45f6-9357" name="Heavy flamer" sortIndex="2">
                   <modifiers>
                     <modifier type="set" field="name" value="Hull (Front) Mounted heavy flamer"/>
                   </modifiers>
@@ -5753,7 +6118,7 @@ Could not find wargear Turret Mounted vanquisher cannon and one Co-Axial (vanqui
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae6c-1d48-45e7-bb78"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="36e7-212d-449c-b07d" id="4602-6d90-4dac-aefc" name="Multi-laser">
+                <entryLink hidden="false" type="selectionEntry" targetId="36e7-212d-449c-b07d" id="4602-6d90-4dac-aefc" name="Multi-laser" sortIndex="3">
                   <modifiers>
                     <modifier type="set" field="name" value="Hull (Front) Mounted multi-laser"/>
                   </modifiers>
@@ -5761,7 +6126,7 @@ Could not find wargear Turret Mounted vanquisher cannon and one Co-Axial (vanqui
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02c0-e253-46c2-bc31"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93" id="5d57-8ecd-4dbd-bf4a" name="Autocannon">
+                <entryLink hidden="false" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93" id="5d57-8ecd-4dbd-bf4a" name="Autocannon" sortIndex="4">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
@@ -5772,7 +6137,7 @@ Could not find wargear Turret Mounted vanquisher cannon and one Co-Axial (vanqui
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5199-fca7-42b2-bd89"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="b6d5-4be2-c37e-2197" id="3633-34e0-4d21-aaac" name="Lascannon">
+                <entryLink hidden="false" type="selectionEntry" targetId="b6d5-4be2-c37e-2197" id="3633-34e0-4d21-aaac" name="Lascannon" sortIndex="5">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
@@ -5788,7 +6153,7 @@ Could not find wargear Turret Mounted vanquisher cannon and one Co-Axial (vanqui
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f575-ff42-48d2-899d"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have one item from the Militia Pintle Weapons list selected for it." id="1b8f-407e-45dd-93d1">
+            <selectionEntryGroup name="May take pintle weapon:" id="1b8f-407e-45dd-93d1" sortIndex="4">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntryGroup" targetId="ea1f-0d70-4ea7-8ec3" id="354c-cbde-4895-b362" name="Militia Pintle Weapons">
                   <constraints>
@@ -5800,7 +6165,7 @@ Could not find wargear Turret Mounted vanquisher cannon and one Co-Axial (vanqui
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c68-9ed7-4273-b367"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="9113-2d63-47f2-9652">
+            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="9113-2d63-47f2-9652" sortIndex="5">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" id="2d41-588b-444c-95a7" name="Hunter-killer missile">
                   <costs>
@@ -5813,7 +6178,7 @@ Could not find wargear Turret Mounted vanquisher cannon and one Co-Axial (vanqui
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1b7-27d0-4923-af3a"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="00a3-9972-4ae8-a603" id="9484-060f-442f-8d1a" name="Dozer Blade">
+                <entryLink hidden="false" type="selectionEntry" targetId="496e-da18-2afa-b99c" id="9484-060f-442f-8d1a" name="Dozer blade">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
@@ -5821,7 +6186,7 @@ Could not find wargear Turret Mounted vanquisher cannon and one Co-Axial (vanqui
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e8c-d338-484f-880f"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="e2a4-d488-485c-bbdb" name="Searchlights">
+                <entryLink hidden="false" type="selectionEntry" targetId="5a85-bf28-f790-7bf0" id="e2a4-d488-485c-bbdb" name="Searchlight">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
@@ -5838,16 +6203,29 @@ Could not find wargear Turret Mounted vanquisher cannon and one Co-Axial (vanqui
           <categoryLinks>
             <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="4858-ea6c-4e85-9fda" primary="false" name="Vehicle Model Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in This Model may have its Turret Mounted battlecannon exchanged for one of the following:</comment>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250828-1757
-Could not find rule: Third-Line</comment>
+      <infoLinks>
+        <infoLink name="Third-Line" id="404c-e6f4-26ce-3abf" hidden="false" type="rule" targetId="9ac8-527e-1249-8600"/>
+        <infoLink name="[Allegiance]" id="a555-b7c3-5029-3769" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Imperialis Militia" id="5363-d764-a192-de0a" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
+        <infoLink name="Smokescreen" id="0554-bfb1-2f8d-204a" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="479f-5821-9236-813d" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="1593-03e5-a12b-f2d3" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Militia Malcador Heavy Tank" type="unit" id="fde9-47aa-4f8e-91b1" page="42" publicationId="f5e5-c199-d3d4-ccf6">
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="170"/>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" name="Militia Malcador" id="fd43-19c2-4d50-b13d" page="42" publicationId="f5e5-c199-d3d4-ccf6">
@@ -5866,7 +6244,11 @@ Could not find rule: Third-Line</comment>
             </profile>
           </profiles>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="170"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="63ee-1e3b-48a4-8efe"/>
@@ -5882,7 +6264,7 @@ Could not find rule: Third-Line</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea45-2bf1-4ca3-bffc"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="6559-31ee-4717-9ced" id="c2aa-517b-4f9a-a73e" name="Smoke Launchers">
+            <entryLink hidden="false" type="selectionEntry" targetId="b94f-e829-064a-9d60" id="c2aa-517b-4f9a-a73e" name="Smoke Launchers">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef54-9b77-4bef-abc6"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7528-11d8-43b0-b0da"/>
@@ -6058,7 +6440,7 @@ Could not find rule: Third-Line</comment>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f176-8db1-45d4-9291"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="00a3-9972-4ae8-a603" id="09d8-440b-4077-9f0c" name="Dozer Blade">
+                <entryLink hidden="false" type="selectionEntry" targetId="496e-da18-2afa-b99c" id="09d8-440b-4077-9f0c" name="Dozer blade">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
@@ -6066,7 +6448,7 @@ Could not find rule: Third-Line</comment>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="927e-d12f-454b-8cb8"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="5868-6fa1-4fe6-90da" name="Searchlights">
+                <entryLink hidden="false" type="selectionEntry" targetId="5a85-bf28-f790-7bf0" id="5868-6fa1-4fe6-90da" name="Searchlight">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
@@ -6086,17 +6468,20 @@ Could not find rule: Third-Line</comment>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
-        <infoLink name="Independent Fire" hidden="false" type="rule" targetId="5482-aadd-5fe0-a6ab" id="b0f7-f18d-4c95-a179"/>
+        <infoLink name="Independent Fire" hidden="false" type="rule" targetId="f099-f97e-e274-b702" id="b0f7-f18d-4c95-a179"/>
+        <infoLink name="Third-Line" id="795b-3f7a-b727-82c0" hidden="false" type="rule" targetId="9ac8-527e-1249-8600"/>
       </infoLinks>
-      <comment>warning: !BSC 20250828-1757
-Could not find rule: Third-Line</comment>
     </selectionEntry>
     <selectionEntry name="Militia Baneblade Super-Heavy Battle Tank" type="unit" id="8012-1b44-4c2a-9677" page="43" publicationId="f5e5-c199-d3d4-ccf6">
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="500"/>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Militia Baneblade" id="713c-d92c-4535-8703" page="43" publicationId="f5e5-c199-d3d4-ccf6">
+        <selectionEntry type="model" name="Militia Baneblade" id="713c-d92c-4535-8703" page="43" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="1">
           <profiles>
             <profile id="f439-c990-43be-a51c" name="Militia Baneblade" typeId="2a80-eec8-a736-2fe3">
               <characteristics>
@@ -6112,14 +6497,18 @@ Could not find rule: Third-Line</comment>
             </profile>
           </profiles>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="500"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ac35-7b22-471d-96ad"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be11-695c-414c-b5ec"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="59bd-244a-4984-a7f0" id="68ea-f4ad-4a3d-9721" name="Baneblade cannon">
+            <entryLink hidden="false" type="selectionEntry" targetId="59bd-244a-4984-a7f0" id="68ea-f4ad-4a3d-9721" name="Baneblade cannon" sortIndex="1">
               <modifiers>
                 <modifier type="set" field="name" value="Turret Mounted Baneblade cannon"/>
               </modifiers>
@@ -6128,7 +6517,7 @@ Could not find rule: Third-Line</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee16-053b-4279-99f2"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93" id="2025-349c-45ab-b872" name="Autocannon">
+            <entryLink hidden="false" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93" id="2025-349c-45ab-b872" name="Autocannon" sortIndex="2">
               <modifiers>
                 <modifier type="set" field="name" value="Co-axial (Baneblade cannon) Mounted autocannon"/>
               </modifiers>
@@ -6137,7 +6526,7 @@ Could not find rule: Third-Line</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6d2-cf70-4533-89fa"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="4514-8e18-77b4-a141" id="29fc-f575-4cb5-bebd" name="Demolisher cannon">
+            <entryLink hidden="false" type="selectionEntry" targetId="4514-8e18-77b4-a141" id="29fc-f575-4cb5-bebd" name="Demolisher cannon" sortIndex="3">
               <modifiers>
                 <modifier type="set" field="name" value="Centreline Mounted demolisher cannon"/>
               </modifiers>
@@ -6146,7 +6535,7 @@ Could not find rule: Third-Line</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22f5-9314-448b-aea9"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75" id="cc16-7eb4-4201-97e8" name="Twin heavy bolter">
+            <entryLink hidden="false" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75" id="cc16-7eb4-4201-97e8" name="Twin heavy bolter" sortIndex="4">
               <modifiers>
                 <modifier type="set" field="name" value="Hull (Front) Mounted twin heavy bolter"/>
               </modifiers>
@@ -6155,7 +6544,7 @@ Could not find rule: Third-Line</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8450-ee68-49cd-b9fd"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="6559-31ee-4717-9ced" id="1f97-cd76-4b75-ac20" name="Smoke Launchers">
+            <entryLink hidden="false" type="selectionEntry" targetId="b94f-e829-064a-9d60" id="1f97-cd76-4b75-ac20" name="Smoke Launchers" sortIndex="5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ac81-5e8f-4751-ad93"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0775-7f4b-4945-8418"/>
@@ -6163,17 +6552,72 @@ Could not find rule: Third-Line</comment>
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have one of the following selected for it:" id="e8a2-1380-47d8-ae76">
+            <selectionEntryGroup name="This Model may have one of the following selected for it:" id="e8a2-1380-47d8-ae76" sortIndex="6">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e6d-4c21-49f8-98a5"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy bolters
-	 Checked under lascannon and two Sponson
-Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twin heavy flamers
-	 Checked under lascannon and two Sponson</comment>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted lascannon and two Sponson Mounted twin heavy bolters" hidden="false" id="b5ef-396b-36e6-7cf5">
+                  <entryLinks>
+                    <entryLink import="true" name="Twin heavy bolter" hidden="false" id="816c-656f-7ffa-3bf2" type="selectionEntry" targetId="e0bc-e3e1-54e7-bd75">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b8cf-dbfb-eba8-789e"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86ed-e581-1a6c-7dbe"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="prepend" value="Two Sponson Mounted" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Lascannon" hidden="false" id="5fcd-322a-5b2e-16f4" type="selectionEntry" targetId="b6d5-4be2-c37e-2197">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4dbf-ceb9-7bc2-e9d6"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bb1-2b57-93b2-e8dc"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="prepend" value="Two Sponson Mounted" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="40"/>
+                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                    <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted lascannon and two Sponson Mounted twin heavy flamers" hidden="false" id="c767-9ba5-699f-47e0">
+                  <entryLinks>
+                    <entryLink import="true" name="Twin heavy flamer" hidden="false" id="0eb1-b012-a097-c2ca" type="selectionEntry" targetId="f797-93eb-d6fe-586a">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eea8-15c4-6470-8ffd"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef6d-36e3-a1f0-5acc"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="prepend" value="Two Sponson Mounted" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Lascannon" hidden="false" id="319f-305f-caf4-5fc3" type="selectionEntry" targetId="b6d5-4be2-c37e-2197">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7446-da94-8499-e6f8"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a85-490f-6250-4f37"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="prepend" value="Two Sponson Mounted" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="40"/>
+                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                    <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have one item from the Militia Pintle Weapons list selected for it." id="96b2-420b-4841-8c6d">
+            <selectionEntryGroup name="May have one item pintle weapon:" id="96b2-420b-4841-8c6d" sortIndex="7">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntryGroup" targetId="ea1f-0d70-4ea7-8ec3" id="fdfd-e93c-4051-adbe" name="Militia Pintle Weapons">
                   <constraints>
@@ -6185,7 +6629,7 @@ Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twi
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45f5-04fa-4c18-a480"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="9863-2ec0-496a-82bd">
+            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="9863-2ec0-496a-82bd" sortIndex="8">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" id="f990-6241-40f4-bbeb" name="Hunter-killer missile">
                   <costs>
@@ -6198,7 +6642,7 @@ Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twi
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79fc-3ac1-431f-95b8"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="bde7-1b34-46f7-93ae" id="f6c1-32df-414e-8755" name="Searchlights">
+                <entryLink hidden="false" type="selectionEntry" targetId="5a85-bf28-f790-7bf0" id="f6c1-32df-414e-8755" name="Searchlight">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
@@ -6216,13 +6660,21 @@ Could not find wargear Two Sponson Mounted lascannon and two Sponson Mounted twi
             <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="8cd1-6993-4502-9e63" primary="false" name="Vehicle Model Type"/>
             <categoryLink targetId="4d42-b711-7946-8e15" id="9166-4d3d-4c12-b0bd" primary="false" name="Super-heavy Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in This Model may have one of the following selected for it:
-Could not find wargear in This Model may have one of the following selected for it:</comment>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250828-1757
-Could not find rule: Third-Line</comment>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="5384-7d72-fc34-73e6" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="18c1-f332-b978-8512" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="2312-6d27-fad8-a62d" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Imperialis Militia" id="9acc-8200-00d6-8c02" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
+        <infoLink name="Smokescreen" id="6e7a-e1c5-4ce9-bf0c" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
+        <infoLink name="Third-Line" id="848f-a1d3-4115-727a" hidden="false" type="rule" targetId="9ac8-527e-1249-8600"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Officer of the Line" hidden="false" id="9f53-2c25-f72d-00e6">
       <infoLinks>
@@ -6810,5 +7262,56 @@ Could not find rule: Third-Line</comment>
         <categoryLink targetId="d162-4711-5d60-0a48" id="19c7-11fd-b0b8-1f75" primary="true" name="Transport"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Militia Gorgon Transporter" hidden="false" id="78f3-9bd8-df8c-d100" type="selectionEntry" targetId="d356-ea5d-4b86-a9a6">
+      <categoryLinks>
+        <categoryLink targetId="52d0-8b78-439e-18e5" id="3480-29ed-e4da-6e6d" primary="true" name="Heavy Transport"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Reconnaissance Troop" hidden="false" id="c851-0096-44b0-01ea" type="selectionEntry" targetId="3f93-6554-46f5-9ece">
+      <categoryLinks>
+        <categoryLink targetId="2b65-a3f2-620a-dc58" id="f680-3aed-cb38-e578" primary="true" name="Recon"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Cavalry Troop" hidden="false" id="459d-f96b-e736-e71b" type="selectionEntry" targetId="f278-aacc-4285-879e">
+      <categoryLinks>
+        <categoryLink targetId="2b65-a3f2-620a-dc58" id="9656-8183-9083-7ef6" primary="true" name="Recon"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="053a-4e53-7b12-b4ad" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a611-ff21-3714-48e6" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Prime Unit" hidden="false" id="0c5a-0429-f08b-abbf" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+      <entryLinks>
+        <entryLink import="true" name="Common Prime Benefits" hidden="false" id="1448-20e8-1b33-f2be" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="true" name="All-Terrain Patrol" hidden="false" id="73a7-05ac-49ee-2239" type="selectionEntry" targetId="2e53-2be0-44dd-b9a6">
+      <categoryLinks>
+        <categoryLink targetId="cf96-8891-3f9a-8921" id="2ff2-064a-8788-f414" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Militia Scout Rover" hidden="false" id="057b-6044-80a5-91f7" type="selectionEntry" targetId="addd-bda2-437e-ad6d">
+      <categoryLinks>
+        <categoryLink targetId="cf96-8891-3f9a-8921" id="c201-b24e-84d6-e25f" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Militia Utility Hauler" hidden="false" id="eb54-e722-29a5-3257" type="selectionEntry" targetId="6987-492c-4cd8-9a42">
+      <categoryLinks>
+        <categoryLink targetId="d162-4711-5d60-0a48" id="ffd1-d55c-d9db-9cd2" primary="true" name="Transport"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Militia Baneblade Super-Heavy Battle Tank" hidden="false" id="a4ae-575b-453e-bce7" type="selectionEntry" targetId="8012-1b44-4c2a-9677">
+      <categoryLinks>
+        <categoryLink targetId="a46f-a465-0ead-d6b8" id="be6b-0555-5627-c29e" primary="true" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
+  <infoLinks>
+    <infoLink name="[Allegiance]" id="57f7-f46e-fb59-3a1b" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+    <infoLink name="Imperialis Militia" id="2add-cbfd-341c-f892" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
+  </infoLinks>
 </catalogue>

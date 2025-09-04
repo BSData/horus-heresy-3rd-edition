@@ -513,9 +513,16 @@
     <categoryEntry name="Special Assignment" id="12d9-f8dc-4db6-0880" hidden="false"/>
     <categoryEntry name="No default Power Weapon" id="dd1b-70ef-6015-1291" hidden="false"/>
     <categoryEntry name="Support - Militia Medicae Only" id="bd8e-ac40-6016-738e" hidden="false"/>
-    <categoryEntry name="Heavy Assault - Daemon Brute Units Only" id="3997-20e2-b947-ad8d" hidden="false"/>
-    <categoryEntry name="Heavy Assault - Ogryn Brute Troop Units Only" id="6695-be57-c654-cbd3" hidden="false"/>
+    <categoryEntry name="Heavy Assault - Daemon Brute Units Only" id="3997-20e2-b947-ad8d" hidden="false">
+      <comment>Militia</comment>
+    </categoryEntry>
+    <categoryEntry name="Heavy Assault - Ogryn Brute Troop Units Only" id="6695-be57-c654-cbd3" hidden="false">
+      <comment>Militia</comment>
+    </categoryEntry>
     <categoryEntry name="Support - Militia Medicae Not  Allowed" id="1577-85e8-c650-c792" hidden="false"/>
+    <categoryEntry name="Recon - Cavalry Only" id="053a-4e53-7b12-b4ad" hidden="false">
+      <comment>Militia</comment>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
