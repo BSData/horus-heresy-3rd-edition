@@ -2109,6 +2109,13 @@
                       </conditions>
                       <comment>Sisters</comment>
                     </conditionGroup>
+                    <conditionGroup type="and">
+                      <comment>Titans</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="69c0-2783-c191-e6a2" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="69c0-2783-c191-e6a2" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
@@ -18529,6 +18536,7 @@
               </constraints>
             </categoryLink>
             <categoryLink name="War-engine - Upgraded by The Iron-clad" hidden="false" id="5c3a-61f8-facc-1735" targetId="d00a-e269-2ed3-8fc4"/>
+            <categoryLink name="Army Configuration" hidden="false" id="5c8b-9e7e-b8c7-00b4" targetId="abfa-86ab-1726-077a"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -18696,10 +18704,17 @@
                       </conditions>
                       <comment>Sisters</comment>
                     </conditionGroup>
+                    <conditionGroup type="and">
+                      <comment>Titans</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="69c0-2783-c191-e6a2" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="69c0-2783-c191-e6a2" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
-              <comment>Visible to all factions</comment>
+              <comment>Visible to all factions except Knights</comment>
             </modifier>
           </modifiers>
           <constraints>

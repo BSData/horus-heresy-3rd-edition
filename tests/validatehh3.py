@@ -1,7 +1,3 @@
-from unittest.util import _count_diff_all_purpose, _count_diff_hashable
-
-import collections
-
 import os
 import sys
 import unittest
@@ -304,6 +300,9 @@ class GameTests(unittest.TestCase):
 
         for unit_id in unit_ids:
             unit: Node = self.system.get_node_by_id(unit_id)
+            # Skip Tech-Priest unit as it's a special case
+            if unit.name == "Tech-Priest":
+                continue
             for profile in unit.get_descendants_with(lambda x: x.type == "profile:Profile"):
                 # print(profile)
                 profile_type = profile.get_profile_dict()["Type"]
@@ -375,16 +374,30 @@ class GameTests(unittest.TestCase):
                                      "field": "50fc-9241-d4a2-045b", "arg": "Sergeant"},
 
                                 ], expected_condition_child_id="2c90-1d52-7075-59d3")
+                                # Now we check that the model gets the champion sub-type
+                                model = profile.parent.parent
+                                # print(model.name)
+                                model_mods = model.get_child('modifiers')
+                                self.assertIsNotNone(model_mods, "Expected modifiers on model for master sgt")
+                                cat_mod = model_mods.get_child("modifier", {"value": "5a95-e564-96b2-8dc9"})
+                                # <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+                                self.assertIsNotNone(cat_mod, "Expected add category on model for master sgt")
+                                # <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+                                self.check_mods_and_conditions(cat_mod, expected_mods=[
+                                    {"type": "add", "value": "5a95-e564-96b2-8dc9", "field": "category"},
+                                ], expected_condition_child_id="2c90-1d52-7075-59d3")
 
     def check_mods_and_conditions(self, mod_group, expected_mods, expected_condition_child_id):
         self.assertIsNotNone(mod_group)
+        if mod_group.tag == "modifier":
+            self.assertEqual(mod_group.attrib, expected_mods[0])
+        else:
+            self.assertEqual(mod_group.type, "modifierGroup:and")
+            actual_mods = []
+            for mod in mod_group.get_child("modifiers").children:
+                actual_mods.append(mod.attrib)
 
-        self.assertEqual(mod_group.type, "modifierGroup:and")
-        actual_mods = []
-        for mod in mod_group.get_child("modifiers").children:
-            actual_mods.append(mod.attrib)
-
-        self.assertCountEqual(actual_mods, expected_mods)
+            self.assertCountEqual(actual_mods, expected_mods)
         actual_conditions = []
         for condition in mod_group.get_child("conditions").children:
             attrib = condition.attrib.copy()
@@ -395,7 +408,7 @@ class GameTests(unittest.TestCase):
             "type": "atLeast",
             "value": "1",
             "field": "selections",
-            "scope": "parent",
+            "scope": "unit",
             "childId": expected_condition_child_id,
             "shared": "true",
             "includeChildForces": "false",

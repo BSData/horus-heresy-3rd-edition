@@ -444,7 +444,7 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -542,7 +542,7 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
@@ -553,7 +553,7 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
                     <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
                   </conditions>
                   <comment>Master Sergeant</comment>
                 </modifierGroup>
@@ -641,7 +641,7 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -980,7 +980,7 @@ A Model with this Special Rule that has moved no more than 4&quot; in the Moveme
                 <profile name="Barbaran Endurance" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="8e90-fbcf-6d4f-acaa">
                   <characteristics>
                     <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction grants the Reacting Unit a Damage Mitigation Roll and allows them to recover from Tactical Statuses.</characteristic>
-                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">Once per Battle, the Reactive Player may declare the Barbaran Endurance Advanced Reaction  during Step 4 of any Shooting Attack declared by the Active Player during the Shooting Phase that Targets a Unit which only includes Models with teh Death Guard Trait that do not have the Vehicle Type.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">Once per Battle, the Reactive Player may declare the Barbaran Endurance Advanced Reaction  during Step 4 of any Shooting Attack declared by the Active Player during the Shooting Phase that Targets a Unit which only includes Models with the Death Guard Trait that do not have the Vehicle Type.</characteristic>
                     <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Barbaran Endurance Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
                     <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Shooting Attack triggered the Reaction. The Reacting Unit is always the Unit that was declared as the target of the Shooting Attack that triggered this Reaction.</characteristic>
                     <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. All Models in the Reacting Unit immediately recover from any Tactical Statuses.
