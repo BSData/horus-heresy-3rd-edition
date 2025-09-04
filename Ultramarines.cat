@@ -286,6 +286,27 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup name="May have Legatine Axe exchanged for" id="d2ab-5e55-3845-1ba6" hidden="false" sortIndex="1" defaultSelectionEntryId="8f43-ed4d-7898-1a79">
+              <entryLinks>
+                <entryLink import="true" name="Legatine axe" hidden="false" id="8f43-ed4d-7898-1a79" type="selectionEntry" targetId="46f0-ca50-4e6e-e49f">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f23-abc6-ff5c-bcbc"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Thunder hammer" hidden="false" id="7875-940c-106b-4993" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d38d-ee1b-4598-0fdc"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="475b-3678-eff9-7c7b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de11-f323-e834-9004"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <profiles>
             <profile name="Suzerain" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="068a-5c6a-c809-029e" publicationId="b905-0414-1057-bb34" page="252">
@@ -331,12 +352,6 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             <categoryLink name="Heavy Model Sub-Type" hidden="false" id="31ba-8a9f-b769-8826" targetId="1e7d-9066-28d2-97a0" primary="false"/>
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Legatine axe" hidden="false" id="8f43-ed4d-7898-1a79" type="selectionEntry" targetId="46f0-ca50-4e6e-e49f" sortIndex="1">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ab6-9b64-188f-b458"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f23-abc6-ff5c-bcbc"/>
-              </constraints>
-            </entryLink>
             <entryLink import="true" name="Argyrum pattern boarding shield" hidden="false" id="597f-3d42-00c0-a1ac" type="selectionEntry" targetId="08d0-c612-7007-103d" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="29e2-6877-7d76-e00d"/>
@@ -610,6 +625,28 @@ During the Statuses Sub-Phase, any friendly Unit that does not include a Model w
             <categoryLink name="Infantry Model Type" hidden="false" id="6eb6-0c4c-ff84-935b" targetId="594d-fa82-13cb-a345" primary="false"/>
             <categoryLink name="Heavy Model Sub-Type" hidden="false" id="792c-339e-8b33-a34f" targetId="1e7d-9066-28d2-97a0" primary="false"/>
           </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="For every 5 Models in thus Unit, one Praetorian in this Unit may have it&apos;s Power Sword exchanged for" id="d7cc-aa6c-0f9f-1256" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Legatine axe" hidden="false" id="8b8f-675c-c398-acc6" type="selectionEntry" targetId="46f0-ca50-4e6e-e49f">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="b3fb-f925-893b-afd2" includeChildSelections="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="770f-ec7a-e6c8-bd49"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="b3fb-f925-893b-afd2">
+                      <repeats>
+                        <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <costs>
