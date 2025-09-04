@@ -410,18 +410,6 @@ A Model with this Special Rule is never forced to make Shooting Attacks as Snap 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dc1-b4e8-8d07-84f5" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="4582-5a20-6e58-ad67" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="36f5-19d7-5bcc-4e6a" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d46-6cfc-be48-0347" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Krak grenades" hidden="false" id="3b05-7cec-5375-9ee3" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="4">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4a7e-ec77-4ca5-f4f4" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a9f-6dcd-08f0-d7e7" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
             <entryLink import="true" name="Cameleoline" hidden="false" id="2359-0fb9-830f-6a63" type="selectionEntry" targetId="babd-5877-3279-a557">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d931-73e6-38ea-e81c" includeChildSelections="false"/>
@@ -434,11 +422,81 @@ A Model with this Special Rule is never forced to make Shooting Attacks as Snap 
               <entryLinks>
                 <entryLink import="true" name="Nemesis bolter" hidden="false" id="657c-9bb7-89b4-ff29" type="selectionEntry" targetId="96e3-031c-2139-1335" sortIndex="1"/>
                 <entryLink import="true" name="Astartes shotgun" hidden="false" id="6090-e1db-af67-5fa3" type="selectionEntry" targetId="6068-d203-27e6-318a" sortIndex="2"/>
+                <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="389d-3ffe-5955-488c" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" flatten="true"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8361-fcb9-0e55-a9c2" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c53-ac6c-8f14-66b3" includeChildSelections="false"/>
               </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="May take one of" id="3a18-d46d-7e72-6401" hidden="false" sortIndex="3">
+              <entryLinks>
+                <entryLink import="true" name="Charnabal sabre" hidden="false" id="6e7c-1bdb-f5b7-4a46" type="selectionEntry" targetId="e85f-734a-c587-e88b">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="394b-9922-6cec-cbad"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="b595-1689-26ab-51cb" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" flatten="true"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b2c-e18b-3c4b-9b98"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="For every three Models in the Unit, one Model may take one of" id="83a7-acaa-697d-062a" hidden="false" sortIndex="4">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="d1ea-068c-6181-efc7" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="d1ea-068c-6181-efc7">
+                  <repeats>
+                    <repeat value="3" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <entryLinks>
+                <entryLink import="true" name="Plasma pistol" hidden="false" id="95c6-7de9-04ba-ea39" type="selectionEntry" targetId="659f-d52e-1515-2912" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ca6-3984-59f8-b6dd"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Volkite charger" hidden="false" id="e49a-0fc7-fea9-5740" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8ad-a0c6-4b20-5646"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Flamer" hidden="false" id="cac2-73ec-1331-ea1c" type="selectionEntry" targetId="9a45-35cd-3806-2303" sortIndex="3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f4a-011c-6c11-cd3d"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Plasma gun" hidden="false" id="394a-7f41-019c-e33a" type="selectionEntry" targetId="433d-56e0-9878-dea1" sortIndex="4">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f45b-d65c-bbeb-54a4"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Meltagun" hidden="false" id="6a87-1bc3-44ec-5bc0" type="selectionEntry" targetId="b1e1-e164-5877-6734" sortIndex="5">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d610-653d-aab0-5c9c"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Missile launcher" hidden="false" id="2719-556e-1b64-b2e4" type="selectionEntry" targetId="f391-c3f5-d98c-dd26" sortIndex="6">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93e2-fae1-ac9c-34ab"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
@@ -517,10 +575,27 @@ A Model with this Special Rule is never forced to make Shooting Attacks as Snap 
               <entryLinks>
                 <entryLink import="true" name="Nemesis bolter" hidden="false" id="cf25-7d61-f5fb-adb5" type="selectionEntry" targetId="96e3-031c-2139-1335" sortIndex="1"/>
                 <entryLink import="true" name="Astartes shotgun" hidden="false" id="0a82-98f3-cb47-962e" type="selectionEntry" targetId="6068-d203-27e6-318a" sortIndex="2"/>
+                <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="a3f9-f7bc-1fae-c1a7" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" flatten="true"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="13d8-386b-b1b1-5fdc" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="329a-ae2b-2472-3a6a" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="May take one of" id="ace3-1c68-c75b-f307" hidden="false" sortIndex="3">
+              <entryLinks>
+                <entryLink import="true" name="Charnabal sabre" hidden="false" id="f7ad-5d86-2ea7-b307" type="selectionEntry" targetId="e85f-734a-c587-e88b">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8142-086d-ed9c-2ebc"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="7d9a-c3fd-ba75-56d0" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" flatten="true"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ef2-ff86-e55b-3ecc"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -531,22 +606,18 @@ A Model with this Special Rule is never forced to make Shooting Attacks as Snap 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2381-dcdf-76c1-87ef" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="a954-5e65-ae26-f19d" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f742-bdfb-09ee-c931" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f01f-c912-257d-e2be" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Krak grenades" hidden="false" id="496d-9735-8d96-f796" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="4">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c31-7268-3bb0-a2da" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07f4-7195-86cc-ed86" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
             <entryLink import="true" name="Cameleoline" hidden="false" id="cd86-63a2-a1cb-83ca" type="selectionEntry" targetId="babd-5877-3279-a557" sortIndex="5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3845-3f67-23de-3276" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3cd-f6a1-953e-7bb8" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Melta bombs" hidden="false" id="3212-ddd0-8c31-a49d" type="selectionEntry" targetId="2eb4-687e-a515-ee3d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cdd-5f71-1eb1-14ac"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -595,7 +666,22 @@ Once per Battle, if a Unit with this Special Rule remains Stationary in the prev
             <entryLink import="true" name="Prime Benefits" hidden="false" id="8ceb-a533-4111-8088" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Frag grenades" hidden="false" id="a954-5e65-ae26-f19d" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f742-bdfb-09ee-c931" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f01f-c912-257d-e2be" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak grenades" hidden="false" id="496d-9735-8d96-f796" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c31-7268-3bb0-a2da" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07f4-7195-86cc-ed86" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="dd1b-70ef-6015-1291" id="a1b6-8e7e-8d4c-dad8" primary="false" name="No default Power Weapon"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dark Fury Squad" hidden="false" id="8487-ac3b-d0ec-6d08" sortIndex="4">
       <selectionEntries>
