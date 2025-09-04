@@ -1275,14 +1275,14 @@ When Locked in Combat with any Units which contain at least one Model which has 
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry name="Ultramarines Nemesis Destroyer Squad" type="unit" id="99b9-94e2-4ef2-9cd6" page="121" publicationId="5469-14da-d0a1-6092">
+    <selectionEntry name="Nemesis Destroyer Squad" type="unit" id="99b9-94e2-4ef2-9cd6" page="121" publicationId="5469-14da-d0a1-6092">
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" name="Nemesis Destroyer" id="0c90-e569-4600-8ac0" page="121" publicationId="5469-14da-d0a1-6092" sortIndex="2">
           <profiles>
-            <profile id="b7a7-b706-402c-86c3" name="Nemesis Destroyer" typeId="a76f-8e23-8c3e-166d">
+            <profile id="b7a7-b706-402c-86c3" name="Nemesis Destroyer" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
@@ -1300,6 +1300,24 @@ When Locked in Combat with any Units which contain at least one Model which has 
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -1310,84 +1328,33 @@ When Locked in Combat with any Units which contain at least one Model which has 
             <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="81d5-253a-4878-a903"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="f0e5-c2a4-4142-bbba" name="Bolt pistol">
+            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="f0e5-c2a4-4142-bbba" name="Bolt pistol" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c2c8-dad9-40db-b075"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01d5-a61c-4d1d-8041"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="5e6e-1406-47c2-911c" name="Frag grenades">
+            <entryLink import="true" name="Mortifier Bolter" hidden="false" id="7dea-9c6d-3a97-9667" type="selectionEntry" targetId="54a6-c85d-141a-9577" sortIndex="1">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5f6-b1d3-463a-82bb"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d146-44d2-4c74-9c69"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba22-8c66-72fd-935e"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e604-d12f-5500-ab0f"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="f740-15db-4595-9d70" name="Krak grenades">
+            <entryLink import="true" name="Chainsword" hidden="false" id="6e05-8514-5846-ec69" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="3">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f2d3-fa69-46d5-966a"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c0b-0151-488e-a6bc"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="cd5f-1eff-df69-6bd2" id="2608-fdc7-4e20-95d9" name="Rad grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c67-5112-47e5-a213"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd64-8b55-4ffe-9226"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="faf8-ec7c-bf41-4cc2"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fd3-fdd0-eb4f-039e"/>
               </constraints>
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="The Nemesis Destroyer Sergeant may have its chainsword exchanged for " id="55a7-b546-48da-b98d">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="2d0c-bb82-4267-a137" name="Chainsword">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="606e-de8a-435e-b3ab"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" id="35df-f2c9-47a1-8d58" name="Legion Sergeant Melee Weapons">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4655-8c18-435c-b4a1"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="006f-b90c-4b30-8253"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f94f-46d5-4b95-9812"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Up to two Nemesis Destroyers in this Unit may have one item each from the Legion Equipment list selected for them." id="c894-e215-4bbd-9cbe">
+            <selectionEntryGroup name="Up to two Nemesis Destroyers in this Unit may have one item each from" id="c894-e215-4bbd-9cbe" sortIndex="4">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ed1-b521-46db-86fa"/>
               </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="The Nemesis Destroyer Sergeant in this Unit may have melta bombs selected for it for +10 Points." id="3710-7537-4474-a763">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" id="3269-db2b-4690-95cc" name="Melta bombs">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="575a-8f3e-47c4-9d7c"/>
-                  </constraints>
-                </entryLink>
+                <entryLink import="true" name="Legion Equipment" hidden="false" id="ea86-18a9-00fc-a5a3" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf"/>
               </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2358-a1ca-4245-a5d0"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="The Nemesis Destroyer Sergeant in this Unit may have phosphex bombs selected for it for +10 Points." id="1c66-a528-44cf-981b">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="5ad2-c3b4-f5eb-5b10" id="cdaf-1757-408a-a7f2" name="Phosphex bombs">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b0e-5d24-4cb3-881d"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bcc7-7613-446c-8347"/>
-              </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="For every 5 Models in this Unit, one Nemesis Destroyer in this Unit may have its mortifier bolter exchanged for one of the following:" id="ae85-a9c0-4213-8b0a">
               <entryLinks>
@@ -1449,25 +1416,25 @@ When Locked in Combat with any Units which contain at least one Model which has 
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9f1-944e-43a1-812e"/>
+                <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="a9f1-944e-43a1-812e"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be50-2ff3-5b63-4731"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Mortifier bolter
-	 Checked under Mortifier bolter
-Could not find wargear Destroyer missile launcher with rad missiles
-	 Checked under Destroyer missile launcher with rad missiles</comment>
+              <modifiers>
+                <modifier type="increment" value="1" field="a9f1-944e-43a1-812e">
+                  <repeats>
+                    <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="8b49-2844-4cc0-bd62" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in For every 5 Models in this Unit, one Nemesis Destroyer in this Unit may have its mortifier bolter exchanged for one of the following:
-Could not find wargear in For every 5 Models in this Unit, one Nemesis Destroyer in this Unit may have its mortifier bolter exchanged for one of the following:</comment>
         </selectionEntry>
         <selectionEntry type="model" name="Nemesis Destroyer Sergeant" id="8353-e023-4b30-91e6" page="121" publicationId="5469-14da-d0a1-6092" sortIndex="1">
           <profiles>
-            <profile id="e0b3-bbcd-461f-85eb" name="Nemesis Destroyer Sergeant" typeId="a76f-8e23-8c3e-166d">
+            <profile id="e0b3-bbcd-461f-85eb" name="Nemesis Destroyer Sergeant" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
@@ -1485,6 +1452,36 @@ Could not find wargear in For every 5 Models in this Unit, one Nemesis Destroyer
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Sergeant)</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Master Sergeant</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -1495,40 +1492,44 @@ Could not find wargear in For every 5 Models in this Unit, one Nemesis Destroyer
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fbc-9b44-46c7-93ed"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="dc80-16b4-439f-a9cb" name="Bolt pistol">
+            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="dc80-16b4-439f-a9cb" name="Bolt pistol" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="68ed-6810-48ee-a9a1"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="990e-ef2e-4059-88d1"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="b59d-4055-4bed-b1bd" name="Frag grenades">
+            <entryLink import="true" name="Mortifier Bolter" hidden="false" id="4db7-6322-de84-9e84" type="selectionEntry" targetId="54a6-c85d-141a-9577" sortIndex="1">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82a6-96b8-4920-8eac"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5acd-a151-4eed-8b90"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a1a-17ff-a44f-2461"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc73-861f-5219-be3a"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="1a59-63eb-46fa-936e" name="Krak grenades">
+            <entryLink import="true" name="Melta bombs" hidden="false" id="a969-317e-453a-bdcc" type="selectionEntry" targetId="2eb4-687e-a515-ee3d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="162a-0875-43cc-a443"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c059-12d8-4351-bd9a"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed39-d88f-4494-8f9f"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="cd5f-1eff-df69-6bd2" id="04df-825f-4f40-bb82" name="Rad grenades">
+            <entryLink import="true" name="Phosphex bombs" hidden="false" id="f50e-dcc0-4e38-970f" type="selectionEntry" targetId="5ad2-c3b4-f5eb-5b10">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="571f-9241-478f-85f0"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bacb-470e-44bc-9b08"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f6d-bccc-4304-8aaa"/>
               </constraints>
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="The Nemesis Destroyer Sergeant may have its chainsword exchanged for " id="b709-bfe2-4e7b-88f1">
+            <selectionEntryGroup name="May have its chainsword exchanged for " id="b709-bfe2-4e7b-88f1" sortIndex="3" defaultSelectionEntryId="7dc8-2e87-4de5-a85a">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="7dc8-2e87-4de5-a85a" name="Chainsword">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0bfd-aea7-476c-9823"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" id="ce6c-e602-4478-97b8" name="Legion Sergeant Melee Weapons">
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="c7ca-8933-a703-7301" id="ce6c-e602-4478-97b8" name="Legion Sergeant Melee Weapons (no chainsword)" flatten="true">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acf7-f724-46b7-8be3"/>
                   </constraints>
@@ -1539,49 +1540,49 @@ Could not find wargear in For every 5 Models in this Unit, one Nemesis Destroyer
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc38-6250-496f-aa12"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="The Nemesis Destroyer Sergeant in this Unit may have melta bombs selected for it for +10 Points." id="67ff-e769-4ef0-baf0">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" id="a969-317e-453a-bdcc" name="Melta bombs">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed39-d88f-4494-8f9f"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bcc-34f5-455b-9840"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="The Nemesis Destroyer Sergeant in this Unit may have phosphex bombs selected for it for +10 Points." id="9c98-6ef0-4ae7-9ca8">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="5ad2-c3b4-f5eb-5b10" id="f50e-dcc0-4e38-970f" name="Phosphex bombs">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f6d-bccc-4304-8aaa"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de7d-8df1-4f4c-bea8"/>
-              </constraints>
-            </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="646f-e558-4104-ac07" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="f207-1a65-4481-ae84" primary="false" name="Sergeant Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear Mortifier bolter
-	 Checked under Mortifier bolter</comment>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250828-1757
-Could not find rule: None
-Expected &apos;selected for it&apos; in &apos;Up to two Nemesis Destroyers in this Unit may have one item each from the Legion Equipment list selected for them.&apos;</comment>
+      <entryLinks>
+        <entryLink import="true" name="Frag grenades" hidden="false" id="b59d-4055-4bed-b1bd" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82a6-96b8-4920-8eac"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5acd-a151-4eed-8b90"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak grenades" hidden="false" id="1a59-63eb-46fa-936e" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="162a-0875-43cc-a443"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c059-12d8-4351-bd9a"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Rad grenades" hidden="false" id="04df-825f-4f40-bb82" type="selectionEntry" targetId="cd5f-1eff-df69-6bd2" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="571f-9241-478f-85f0"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bacb-470e-44bc-9b08"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="a7e7-b5d5-6bc0-72c1" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="dff6-0cee-dec1-000a" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="d9e1-ea8f-9a5a-29d7" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="1818-617b-74bd-9e65" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Honoured Telemechrus" type="unit" id="1631-0dce-4bfb-9782" page="122" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -1735,6 +1736,29 @@ Expected &apos;selected for it&apos; in &apos;Up to two Nemesis Destroyers in th
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mortifier Bolter" hidden="false" id="54a6-c85d-141a-9577">
+      <profiles>
+        <profile name="Mortifier Bolter" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="d535-f8af-1126-f563">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">18</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">4</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">5</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Panic (1)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Bolt</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Panic (X)" id="af09-373e-63dc-c396" hidden="false" type="rule" targetId="82a7-f471-3fda-6ca1">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="set" value="Panic (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="1aae-0d5f-c523-7fa1" targetId="9b32-f350-6aa9-9c09" importRootEntries="true"/>
@@ -1782,6 +1806,11 @@ Expected &apos;selected for it&apos; in &apos;Up to two Nemesis Destroyers in th
     <entryLink import="true" name="Fulmentarus Terminator Squad" hidden="false" id="55ef-afeb-9594-6fc7" type="selectionEntry" targetId="a02e-5bce-45bd-a1b5">
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="8d5c-6b33-9475-4764" primary="true" name="Heavy Assault"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Nemesis Destroyer Squad" hidden="false" id="44a3-8385-1955-a76c" type="selectionEntry" targetId="99b9-94e2-4ef2-9cd6">
+      <categoryLinks>
+        <categoryLink targetId="3235-bd79-e9b1-60fa" id="9c61-d561-c825-84e0" primary="true" name="Heavy Assault"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
