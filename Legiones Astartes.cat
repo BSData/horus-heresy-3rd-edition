@@ -18263,7 +18263,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Mastodon Super-Heavy Assault Transport" hidden="false" id="d29b-64ce-e91e-75fa" sortIndex="78">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Options" id="7f22-6894-7375-119f" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Options" id="7f22-6894-7375-119f" hidden="false" sortIndex="4">
           <entryLinks>
             <entryLink import="true" name="Legion Sponson Weapons" hidden="false" id="8d57-a26a-b172-7097" type="selectionEntryGroup" targetId="df25-ac22-5bbd-0e44" sortIndex="1">
               <modifiers>
@@ -18315,7 +18315,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">14</characteristic>
                 <characteristic name="HP" typeId="8735-4497-1f8a-4dda">20</characteristic>
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">42</characteristic>
-                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">Front, Rear</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">This Model has one Access Point on the Rear Facing and one Access Point on the Front Facing</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -18323,13 +18323,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7aa6-f4f7-3f1c-e623" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="004c-a459-c853-c513" includeChildSelections="false"/>
           </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="7134-51f4-b14f-f6a6" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -18356,6 +18349,29 @@ Models of any Type other than Vehicle may Embark on a Model with this Special Ru
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="1e72-576c-b48e-2d42" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Armatus Necrotechnika" hidden="true" id="7134-51f4-b14f-f6a6" type="selectionEntry" targetId="bb42-fb24-9e5c-061d">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Siege-melta array" hidden="false" id="3dfb-afc2-4b29-051e" type="selectionEntry" targetId="711a-5744-668b-feb2" sortIndex="2">
+          <modifiers>
+            <modifier type="prepend" value="Centerline Mounted" field="name"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8809-9330-e665-4542"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd77-1c48-52fa-ce71"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Skyreaper battery" hidden="false" id="377c-8098-7dd6-8bb1" type="selectionEntry" targetId="3763-ca65-098f-97d7" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c49e-fa9c-bc45-29c1"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea94-a635-506a-9013"/>
+          </constraints>
+          <modifiers>
+            <modifier type="prepend" value="Turret Mounted" field="name"/>
+          </modifiers>
         </entryLink>
       </entryLinks>
     </selectionEntry>
