@@ -1727,12 +1727,9 @@ When a Model with this Special Rule makes Volley Attacks, modify the Firepower C
               </conditions>
             </modifier>
           </modifiers>
-          <rules>
-            <rule name="Damned" id="75c5-ed45-d74a-8d27" hidden="false">
-              <description>&quot;A Model with this Special Rule can join Units that have the Malefic Sub-Type.&quot;
-A Model with this Special Rule can join Units with the Malefic Sub-Type as if it had that Sub-Type and while part of such a Unit, is treated as having that Sub-Type.</description>
-            </rule>
-          </rules>
+          <infoLinks>
+            <infoLink name="Damned" id="f864-1bec-53e8-ce59" hidden="false" type="rule" targetId="6786-5026-73bb-ee16"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1782,14 +1779,14 @@ A Model with this Special Rule can join Units with the Malefic Sub-Type as if it
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry name="Word Bearers Diabolist In Terminator Armour" type="unit" id="065d-8cb2-40d6-b905" page="132" publicationId="5469-14da-d0a1-6092">
+    <selectionEntry name="Diabolist In Terminator Armour" type="unit" id="065d-8cb2-40d6-b905" page="132" publicationId="5469-14da-d0a1-6092">
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="135"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" name="Cataphractii Diabolist" id="3b3c-42db-4812-b856" page="132" publicationId="5469-14da-d0a1-6092">
           <profiles>
-            <profile id="8078-274f-4814-833b" name="Cataphractii Diabolist" typeId="a76f-8e23-8c3e-166d">
+            <profile id="8078-274f-4814-833b" name="Cataphractii Diabolist" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">6</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
@@ -1807,6 +1804,46 @@ A Model with this Special Rule can join Units with the Malefic Sub-Type as if it
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">4+</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Command, Heavy)</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Tarteros</comment>
+                  <modifiers>
+                    <modifier type="set" value="Infantry (Command)" field="50fc-9241-d4a2-045b"/>
+                    <modifier type="set" value="7" field="a106-a779-d272-5e93"/>
+                    <modifier type="set" value="Tartaros Diabolist" field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -1814,6 +1851,7 @@ A Model with this Special Rule can join Units with the Malefic Sub-Type as if it
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55a0-2f51-41f2-b1f2"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b63-d6f8-6554-c406"/>
           </constraints>
           <infoLinks>
             <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="fa0d-b4f2-4060-9d46">
@@ -1822,10 +1860,19 @@ A Model with this Special Rule can join Units with the Malefic Sub-Type as if it
               </modifiers>
             </infoLink>
             <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="ca82-3085-46dc-bff6"/>
-            <infoLink name="Slow and Purposeful" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e" id="f8c7-0422-40e3-9611"/>
+            <infoLink name="Slow and Purposeful" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e" id="f8c7-0422-40e3-9611">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Damned" id="0c1f-8b76-02ac-abac" hidden="false" type="rule" targetId="6786-5026-73bb-ee16"/>
           </infoLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="3b41-e203-4d7e-9875">
+            <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="3b41-e203-4d7e-9875" sortIndex="2">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="4afc-4177-4ecd-a5b0" name="Combi-bolter">
                   <constraints>
@@ -1837,14 +1884,12 @@ A Model with this Special Rule can join Units with the Malefic Sub-Type as if it
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5253-cccf-435a-bf17"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="999c-6b73-ece2-8a11" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" flatten="true"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8651-541e-41cc-b0e9"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="def2-4bdd-4042-b8cc"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear for one item from the Legion Combi-weapons list.
-	 Checked under for one item from the Legion Combi-weapons list.</comment>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -1852,86 +1897,65 @@ Could not find wargear for one item from the Legion Combi-weapons list.
             <categoryLink targetId="9871-cb62-5283-2216" id="7aa4-7cad-4f5c-81da" primary="false" name="Command Model Sub-type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="4c82-b673-4834-8712" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find rule: Diabolism Discipline
-Could not find rule: Damned
-Could not find wargear Force weapon
-	 Checked under Force weapon
-Could not find wargear in This Model may have its combi-bolter exchanged for</comment>
-        </selectionEntry>
-        <selectionEntry type="model" name="Tartaros Diabolist" id="5f8c-1c78-410e-9678" page="132" publicationId="5469-14da-d0a1-6092">
-          <profiles>
-            <profile id="9fae-5677-43d6-b91d" name="Tartaros Diabolist" typeId="a76f-8e23-8c3e-166d">
-              <characteristics>
-                <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
-                <characteristic typeId="253c-d694-4695-c89e" name="WS">5</characteristic>
-                <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">5</characteristic>
-                <characteristic typeId="498f-dce1-59fd-d8d7" name="S">4</characteristic>
-                <characteristic typeId="3120-8275-e537-ecd2" name="T">5</characteristic>
-                <characteristic typeId="f5cc-79a3-d302-cc1d" name="W">4</characteristic>
-                <characteristic typeId="af9d-7db8-dc95-71c1" name="I">5</characteristic>
-                <characteristic typeId="024e-bdb1-7982-25a0" name="A">4</characteristic>
-                <characteristic typeId="02ad-ebe6-86e7-9fd6" name="LD">7</characteristic>
-                <characteristic typeId="9cd1-0e7c-2cd6-5f2f" name="CL">8</characteristic>
-                <characteristic typeId="f714-1726-37d3-44df" name="WP">10</characteristic>
-                <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">8</characteristic>
-                <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">2+</characteristic>
-                <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
-                <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Command)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b86-34bc-413c-8d59"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Bulky (X)" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25" id="fd3a-675a-4eee-9f80">
-              <modifiers>
-                <modifier type="set" field="name" value="Bulky (2)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Implacable Advance" hidden="false" type="rule" targetId="3898-aafb-35e0-141b" id="6abe-39ab-4df2-82e0"/>
-          </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="1d4c-2c54-450a-9964">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="042d-9e60-db9e-c147" id="50d2-7fac-497d-8e0c" name="Combi-bolter">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af71-889b-4853-b985"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" id="93f3-4bb7-4f2b-952b" name="Volkite charger">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f34f-0e84-4bf8-bda2"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Force Weapon" hidden="false" id="3000-4692-8df5-6267" type="selectionEntryGroup" targetId="89e6-2502-2486-71f4" sortIndex="3">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d735-ab36-4fbc-a36b"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="316b-654f-45db-b28c"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4315-19bb-7813-c6d2" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d5d-5950-662e-4e02"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear for one item from the Legion Combi-weapons list.
-	 Checked under for one item from the Legion Combi-weapons list.</comment>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <categoryLinks>
-            <categoryLink targetId="594d-fa82-13cb-a345" id="c397-4658-401d-8ace" primary="false" name="Infantry Model Type"/>
-            <categoryLink targetId="9871-cb62-5283-2216" id="29c8-ab45-4486-9523" primary="false" name="Command Model Sub-type"/>
-          </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find rule: Diabolism Discipline
-Could not find rule: Damned
-Could not find wargear Force weapon
-	 Checked under Force weapon
-Could not find wargear in This Model may have its combi-bolter exchanged for</comment>
+            </entryLink>
+            <entryLink import="true" name="Terminator Armour" hidden="false" id="7108-389d-b9d5-6545" type="selectionEntryGroup" targetId="170b-d9c0-e9d6-b314" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="f845-4e43-bd4c-fb74" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Diabolism" hidden="false" id="f95c-d343-e2ce-da96" type="selectionEntry" targetId="f6c0-5042-9c80-f993">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8bb8-37bf-e564-79b2"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb89-d755-b914-5e6f"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="Tartaros Diabolist" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250828-1757
-Needs replace by constraints and default set to Cataphractii Diabolist</comment>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="0d4c-b2ec-22e6-feac" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="67f8-320d-3aac-aa3f" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Psyker" id="126f-0d0b-6fca-9570" hidden="false" type="profile" targetId="0d5a-bf3a-7b46-785a"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Diabolist" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="57a9-b400-e34c-a1d5">
+          <characteristics>
+            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="bdf4-8bcb-c7b5-1d22" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="761b-21ee-d42e-783f" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Word Bearers Mounted Diabolist" type="unit" id="ce41-394c-4797-be31" page="133" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -1987,12 +2011,6 @@ Needs replace by constraints and default set to Cataphractii Diabolist</comment>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ccdf-050e-49b9-a462"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8abc-d05b-4d2f-813c"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="ce3d-dced-4262-8dd9" id="bd1a-60f0-4d96-8f3f" name="Frag Grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ffe-3057-4b17-b534"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9fe-2809-4687-83d6"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -2094,12 +2112,6 @@ Could not find wargear Force weapon
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="71ca-7627-41a6-aed8"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28bf-1d63-4dc6-97e3"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="ce3d-dced-4262-8dd9" id="13ba-96ec-4119-a712" name="Frag Grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cfbc-570a-4176-afd0"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bda0-dd45-4090-a886"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -2233,12 +2245,6 @@ Needs replace by constraints and default set to Outrider Diabolist</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb28-b4b1-461f-9960"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="ce3d-dced-4262-8dd9" id="1074-e158-488b-8bf4" name="Frag Grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e205-dec4-4184-9809"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a29-97c7-4116-ab5e"/>
-              </constraints>
-            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="For every five Models in this Unit, one Procurant in this Unit may:" id="ee23-504a-4532-9782">
@@ -2315,12 +2321,6 @@ Could not find wargear in For every five Models in this Unit, one Procurant in t
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fc1-633d-45ba-afc5"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="ce3d-dced-4262-8dd9" id="194c-5269-4c3f-bc2c" name="Frag Grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e87e-df15-4823-9814"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d4a-6881-440c-bddc"/>
-              </constraints>
-            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Any Procurator in this Unit may have its chainsword exchanged for one of the following options:" id="a24c-04db-4d9e-9f7f">
@@ -2363,7 +2363,7 @@ Could not find wargear in Any Procurator in this Unit may have its chainsword ex
       <selectionEntries>
         <selectionEntry type="model" name="Procurant with Jump Pack" id="9179-72f3-43fa-b9b9" page="135" publicationId="5469-14da-d0a1-6092">
           <profiles>
-            <profile id="d68d-891b-452f-bccd" name="Procurant with Jump Pack" typeId="a76f-8e23-8c3e-166d">
+            <profile id="d68d-891b-452f-bccd" name="Procurant with Jump Pack" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">12</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
@@ -2413,12 +2413,6 @@ Could not find wargear in Any Procurator in this Unit may have its chainsword ex
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="75c7-2121-4c1a-942a"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c57b-5bff-4a0e-ac68"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="ce3d-dced-4262-8dd9" id="48a5-7629-4f85-8c3b" name="Frag Grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4804-6caa-4304-9e08"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0057-383d-42ef-9f77"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -2498,12 +2492,6 @@ Could not find wargear in For every five Models in this Unit, one Procurant with
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0be8-efd0-454b-9987"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="ce3d-dced-4262-8dd9" id="2521-d871-4b8e-944e" name="Frag Grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="93b2-2065-48dd-8532"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e61-3571-4860-ac96"/>
-              </constraints>
-            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Any Procurator with Jump Pack in this Unit may have its chainsword exchanged for one of the following options:" id="fc67-2cc9-45a3-a978">
@@ -2564,6 +2552,10 @@ Could not find wargear in Any Procurator with Jump Pack in this Unit may have it
 
 When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, score 1 Combat Resolution point if any friendly Models in that Combat have the Word Bearers Trait.</description>
     </rule>
+    <rule name="Damned" id="6786-5026-73bb-ee16" hidden="false">
+      <description>&quot;A Model with this Special Rule can join Units that have the Malefic Sub-Type.&quot;
+A Model with this Special Rule can join Units with the Malefic Sub-Type as if it had that Sub-Type and while part of such a Unit, is treated as having that Sub-Type.</description>
+    </rule>
   </sharedRules>
   <entryLinks>
     <entryLink import="true" name="Lorgar Aurelian" hidden="false" id="3f74-fcee-ebe7-6daf" type="selectionEntry" targetId="a763-c205-9fe6-46c1">
@@ -2622,6 +2614,11 @@ When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, score 
     <entryLink import="true" name="Diabolist" hidden="false" id="02ec-aba2-1a8e-706a" type="selectionEntry" targetId="1c2d-33b0-4ec7-8802">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="3b8f-8aab-2645-81cd" primary="true" name="Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Diabolist In Terminator Armour" hidden="false" id="a00e-3769-62db-37b7" type="selectionEntry" targetId="065d-8cb2-40d6-b905">
+      <categoryLinks>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="7333-6cc5-df5d-5841" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
