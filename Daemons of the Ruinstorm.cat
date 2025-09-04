@@ -72,12 +72,16 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="add" value="4b4b-eece-366e-8179" field="category"/>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Heedless Slaughter" hidden="false" id="20f9-9438-2603-5933" sortIndex="2">
           <infoLinks>
             <infoLink name="Desecrators" id="727e-12eb-398a-bd43" hidden="false" type="rule" targetId="abbc-74e2-bd52-60fd"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="add" value="d020-b796-e1f0-c2ae" field="category"/>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Putrid Corruption" hidden="false" id="66b5-2dea-1838-235b" sortIndex="3">
           <infoLinks>
@@ -111,6 +115,7 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="add" value="142a-928b-5dc6-5f42" field="category"/>
           </modifiers>
           <selectionEntryGroups>
             <selectionEntryGroup name="Psychic Disciplines" id="83f8-24fc-daae-bc4f" hidden="true">
@@ -162,6 +167,7 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="add" value="6adc-57ec-6ec7-ff4e" field="category"/>
           </modifiers>
           <selectionEntryGroups>
             <selectionEntryGroup name="Psychic Disciplines" id="dd09-60ae-f876-52bf" hidden="true">
@@ -258,6 +264,7 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="add" value="0465-074b-caf8-97d8" field="category"/>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Infernal Tempest" hidden="false" id="824b-677c-3657-6573" sortIndex="6">
@@ -305,6 +312,7 @@
                 <condition type="atLeast" value="1" field="selections" scope="unit" childId="b8f6-c7cb-3596-fb48" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="add" value="e3fe-2521-d1cf-bfcd" field="category"/>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Ravenous Dissolution" hidden="false" id="6a1d-f46c-222e-c559" sortIndex="7">
@@ -373,6 +381,7 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="add" value="6ed5-1d97-3cdd-8dd2" field="category"/>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Malevolent Artifice" hidden="false" id="802d-c4b0-b1cf-4be0" sortIndex="8">
@@ -385,6 +394,9 @@
               </modifiers>
             </infoLink>
           </infoLinks>
+          <modifiers>
+            <modifier type="add" value="b3ac-8527-d0ec-21a7" field="category"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -830,7 +842,7 @@ When a Unit with a Model with the Primal Terror Special Rule is declared as the 
                   <modifiers>
                     <modifier type="set" value="12" field="a106-a779-d272-5e93"/>
                     <modifier type="append" value="with Wings" field="name"/>
-                    <modifier type="replace" value=", Antigrav)" field="name" arg=")"/>
+                    <modifier type="replace" value=", Antigrav)" field="50fc-9241-d4a2-045b" arg=")"/>
                   </modifiers>
                   <comment>Wings</comment>
                 </modifierGroup>
@@ -904,15 +916,74 @@ When a Unit with a Model with the Primal Terror Special Rule is declared as the 
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="16ca-f835-f5a3-8b16"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1644-d4cf-90a1-bc87"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
         <infoLink name="[Allegiance]" id="3d3d-9f29-ac84-02fc" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="Champion of the Ruinstorm" id="967a-8a8b-eaf4-1e5e" hidden="false" type="profile" targetId="1ed6-910b-f5cc-f6e9"/>
+        <infoLink name="[Ætheric Dominion]" id="7950-567c-9aa5-df9e" hidden="false" type="profile" targetId="c01c-bdf6-2859-8435"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="1c0c-f10a-c186-4f21" id="def9-90ec-4c8f-01d9" primary="false" name="has Bulky (X)"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="4b4b-eece-366e-8179" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="42a2-c87d-c37f-5263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="d020-b796-e1f0-c2ae" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="20f9-9438-2603-5933" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="142a-928b-5dc6-5f42" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="66b5-2dea-1838-235b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6adc-57ec-6ec7-ff4e" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="385d-eae4-002a-6a1f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="0465-074b-caf8-97d8" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="fa00-4b78-1a07-a953" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="e3fe-2521-d1cf-bfcd" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="824b-677c-3657-6573" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6ed5-1d97-3cdd-8dd2" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="6a1d-f46c-222e-c559" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="b3ac-8527-d0ec-21a7" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="802d-c4b0-b1cf-4be0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>[Ætheric Dominion] categories</comment>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Wings" hidden="false" id="8d4f-9caf-eaba-c817">
       <costs>
@@ -929,12 +1000,67 @@ When a Unit with a Model with the Primal Terror Special Rule is declared as the 
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="has Bulky (X)" id="1c0c-f10a-c186-4f21" hidden="false"/>
+    <categoryEntry name="Encroaching Ruin" id="4b4b-eece-366e-8179" hidden="false"/>
+    <categoryEntry name="Heedless Slaughter" id="d020-b796-e1f0-c2ae" hidden="false"/>
+    <categoryEntry name="Putrid Corruption" id="142a-928b-5dc6-5f42" hidden="false"/>
+    <categoryEntry name="Rapturous Sensation" id="6adc-57ec-6ec7-ff4e" hidden="false"/>
+    <categoryEntry name="Formless Distortion" id="0465-074b-caf8-97d8" hidden="false"/>
+    <categoryEntry name="Infernal Tempest" id="e3fe-2521-d1cf-bfcd" hidden="false"/>
+    <categoryEntry name="Ravenous Dissolution" id="6ed5-1d97-3cdd-8dd2" hidden="false"/>
+    <categoryEntry name="Malevolent Artifice" id="b3ac-8527-d0ec-21a7" hidden="false"/>
   </categoryEntries>
   <sharedProfiles>
     <profile name="Champion of the Ruinstorm" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="1ed6-910b-f5cc-f6e9">
       <characteristics>
         <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
       </characteristics>
+    </profile>
+    <profile name="[Ætheric Dominion]" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="c01c-bdf6-2859-8435">
+      <characteristics>
+        <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+      </characteristics>
+      <modifiers>
+        <modifier type="set" value="Encroaching Ruin" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Heedless Slaughter" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Putrid Corruption" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Rapturous Sensation" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Formless Distortion" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Infernal Tempest" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Ravenous Dissolution" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Malevolent Artifice" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </profile>
   </sharedProfiles>
   <entryLinks>
