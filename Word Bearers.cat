@@ -2263,14 +2263,14 @@ When a Model with this Special Rule makes Volley Attacks, modify the Firepower C
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry name="Word Bearers Procurators" type="unit" id="bb9d-a1b4-48d5-ac58" page="134" publicationId="5469-14da-d0a1-6092">
+    <selectionEntry name="Procurators" type="unit" id="bb9d-a1b4-48d5-ac58" page="134" publicationId="5469-14da-d0a1-6092">
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Procurant" id="7b76-a23f-4c83-a267" page="134" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Procurant" id="7b76-a23f-4c83-a267" page="134" publicationId="5469-14da-d0a1-6092" sortIndex="2">
           <profiles>
-            <profile id="8ecc-695d-4825-987e" name="Procurant" typeId="a76f-8e23-8c3e-166d">
+            <profile id="8ecc-695d-4825-987e" name="Procurant" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
@@ -2288,38 +2288,44 @@ When a Model with this Special Rule makes Volley Attacks, modify the Firepower C
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
           <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="5404-8948-4ae0-aec4"/>
-            <constraint type="max" value="15" field="selections" scope="parent" shared="true" id="c827-7485-452b-afb7"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="5404-8948-4ae0-aec4" automatic="true"/>
+            <constraint type="max" value="15" field="selections" scope="parent" shared="true" id="c827-7485-452b-afb7" automatic="true"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="d256-e7d0-4abb-9e4e" name="Bolt pistol">
+            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="d256-e7d0-4abb-9e4e" name="Bolt pistol" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="890b-ee07-4bb7-ac11"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd80-ee85-4aae-a0ea"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="211d-38fc-4c51-a58a" name="Chainsword">
+            <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="211d-38fc-4c51-a58a" name="Chainsword" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="649b-73ea-4ceb-8c98"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8c4-5e58-4ede-bed3"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="bf3a-4eb2-4cd2-bde4" name="Frag grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2032-c19e-486d-9946"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9df-a2df-4f00-a241"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="fd25-11fa-4716-ad5e" name="Krak grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9522-2bd3-4907-899f"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb28-b4b1-461f-9960"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -2328,29 +2334,91 @@ When a Model with this Special Rule makes Volley Attacks, modify the Firepower C
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e354-9c11-473c-8d80"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Have its chainsword exchanged for one power fist for +15 Points per Model
-	 Checked under Have its chainsword exchanged for one power fist for +15 Points per Model
-Could not find wargear Have its bolt pistol exchanged for one hand flamer for +10 Points per Model
-	 Checked under Have its bolt pistol exchanged for one hand flamer for +10 Points per Model
-Could not find wargear Have its bolt pistol exchanged for one plasma pistol for +15 Points per Model
-	 Checked under Have its bolt pistol exchanged for one plasma pistol for +15 Points per Model
-Could not find wargear Have its bolt pistol exchanged for a warpfire pistol for +15 Points per Model
-	 Checked under Have its bolt pistol exchanged for a warpfire pistol for +15 Points per Model</comment>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Exchange Bolt Pistol for" id="9ba7-e2ca-2866-012a" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Hand flamer" hidden="false" id="46bf-7278-75bd-4249" type="selectionEntry" targetId="9322-09ed-abec-6e13">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b56-26f7-cf32-9752"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Plasma pistol" hidden="false" id="a337-0764-4034-6e17" type="selectionEntry" targetId="659f-d52e-1515-2912">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9981-1554-7366-e874"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Warpfire pistol" hidden="false" id="aee5-9dd7-5fd9-2ff3" type="selectionEntry" targetId="6c9f-bd82-3658-4e6f">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42eb-faaf-45d1-5eb9"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="7c45-fe77-dae3-d83f" includeChildSelections="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c70-fbc4-49a6-7a8f"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="7c45-fe77-dae3-d83f">
+                      <repeats>
+                        <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Exchange Chainsword for" id="c02d-2f9a-bcf3-773e" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Power fist" hidden="false" id="6a03-ea95-1fb2-3cf6" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c87-ceaa-43eb-4245"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0854-7c6b-9aad-2d78"/>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="3471-b380-f901-d962" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="3471-b380-f901-d962">
+                      <repeats>
+                        <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="6db6-48ca-4b7c-bcfa" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in For every five Models in this Unit, one Procurant in this Unit may:
-Could not find wargear in For every five Models in this Unit, one Procurant in this Unit may:
-Could not find wargear in For every five Models in this Unit, one Procurant in this Unit may:
-Could not find wargear in For every five Models in this Unit, one Procurant in this Unit may:</comment>
+          <modifiers>
+            <modifier type="decrement" value="1" field="5404-8948-4ae0-aec4">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="e1df-5b20-4bbf-9ee2" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" value="1" field="c827-7485-452b-afb7">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="e1df-5b20-4bbf-9ee2" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </selectionEntry>
-        <selectionEntry type="model" name="Procurator" id="e1df-5b20-4bbf-9ee2" page="134" publicationId="5469-14da-d0a1-6092">
+        <selectionEntry type="model" name="Procurator" id="e1df-5b20-4bbf-9ee2" page="134" publicationId="5469-14da-d0a1-6092" sortIndex="1">
           <profiles>
-            <profile id="3e9f-d114-406b-8a2c" name="Procurator" typeId="a76f-8e23-8c3e-166d">
+            <profile id="3e9f-d114-406b-8a2c" name="Procurator" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
@@ -2368,6 +2436,36 @@ Could not find wargear in For every five Models in this Unit, one Procurant in t
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Sergeant)</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Master Sergeant</comment>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -2380,18 +2478,6 @@ Could not find wargear in For every five Models in this Unit, one Procurant in t
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="915e-f3f0-4084-b71a"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="62c7-01c2-46f5-80bc" name="Frag grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="35de-8587-4022-b975"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56fe-ffbb-419d-8cbd"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="b439-78e0-4c85-a68e" name="Krak grenades">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8210-8b9a-40b9-804e"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65bf-d81b-459b-b81e"/>
-              </constraints>
-            </entryLink>
             <entryLink hidden="false" type="selectionEntry" targetId="a7bb-ae7f-3ef2-90d1" id="8266-6192-4058-856f" name="Narthecium">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="249b-272f-4a76-ab49"/>
@@ -2400,7 +2486,7 @@ Could not find wargear in For every five Models in this Unit, one Procurant in t
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Any Procurator in this Unit may have its chainsword exchanged for one of the following options:" id="a24c-04db-4d9e-9f7f">
+            <selectionEntryGroup name="May have its chainsword exchanged for " id="a24c-04db-4d9e-9f7f" defaultSelectionEntryId="b418-6516-425e-8472">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="b418-6516-425e-8472" name="Chainsword">
                   <constraints>
@@ -2415,23 +2501,79 @@ Could not find wargear in For every five Models in this Unit, one Procurant in t
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e44-d67c-474a-ab3d"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="ebcc-533c-656e-182c" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" flatten="true"/>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="174f-6cfb-4be9-9965"/>
               </constraints>
-              <comment>warning: !BSC 20250828-1757
-Could not find wargear Power weapon
-	 Checked under Power weapon</comment>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="daec-bed5-497d-9d99" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="da2f-fb81-49c3-90e7" primary="false" name="Sergeant Model Sub-Type"/>
           </categoryLinks>
-          <comment>warning: !BSC 20250828-1757
-Could not find wargear in Any Procurator in this Unit may have its chainsword exchanged for one of the following options:</comment>
+          <comment>wa</comment>
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="ea7d-0004-535e-efb5" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="ea7d-0004-535e-efb5">
+              <repeats>
+                <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Medic (X)" id="c492-fc38-85d7-1ee5" hidden="false" type="rule" targetId="93b3-c23d-7263-e013">
+              <comment>4+</comment>
+              <modifiers>
+                <modifier type="set" value="Medic (4+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Flesh Harvester" id="3e84-3f3a-7f33-b423" hidden="false" type="rule" targetId="7b46-599c-9ffb-34ff"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Frag grenades" hidden="false" id="62c7-01c2-46f5-80bc" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="35de-8587-4022-b975"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56fe-ffbb-419d-8cbd"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak grenades" hidden="false" id="b439-78e0-4c85-a68e" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8210-8b9a-40b9-804e"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65bf-d81b-459b-b81e"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="0190-5b7e-51c5-522d" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="052f-3062-0c13-1af5" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="dd1b-70ef-6015-1291" id="0286-311f-8fec-0445" primary="false" name="No default Power Weapon"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Bitter Duty" id="f6bd-e6db-f384-12de" hidden="false" type="rule" targetId="5d6f-552a-f409-cad5"/>
+        <infoLink name="Support Unit (X)" id="ea4c-cd2b-9469-2f5d" hidden="false" type="rule" targetId="313f-7ed6-3833-e97c">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="set" value="Support Unit (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="[Allegiance]" id="1781-9253-dfe2-3894" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="8c64-e82a-d1fa-da45" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry name="Word Bearers Procurators With Jump Packs" type="unit" id="de02-6b4b-43b1-bf53" page="135" publicationId="5469-14da-d0a1-6092">
       <costs>
@@ -2633,6 +2775,12 @@ When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, score 
       <description>&quot;A Model with this Special Rule can join Units that have the Malefic Sub-Type.&quot;
 A Model with this Special Rule can join Units with the Malefic Sub-Type as if it had that Sub-Type and while part of such a Unit, is treated as having that Sub-Type.</description>
     </rule>
+    <rule name="Flesh Harvester" id="7b46-599c-9ffb-34ff" hidden="false">
+      <description>A Model with this Special Rule can gain Flesh Harvest Points. A Model with this Special Rule gains 1 Flesh Harvest point each time a Unit that includes that Model is selected to Consolidate, if any enemy Models in that Combat had the Infantry or Cavalry Type. If a Model with the Paragon Type was Removed as a Casualty during that Combat, the Model with this Special Rule gains 2 Flesh Harvest Points instead.
+
+
+If a Model with any Flesh Harvest Points is Removed as a Casualty, any Flesh Harvest Points that Model has are lost. During the Decide Victor Step, at the end of the Battle, the Controlling Player of any Models with the Flesh Harvester Special Rule scores a number of Victory Points equal to the number of Flesh Harvest Points that any one of those Models, selected by the Controlling Player, currently has.</description>
+    </rule>
   </sharedRules>
   <entryLinks>
     <entryLink import="true" name="Lorgar Aurelian" hidden="false" id="3f74-fcee-ebe7-6daf" type="selectionEntry" targetId="a763-c205-9fe6-46c1">
@@ -2701,6 +2849,11 @@ A Model with this Special Rule can join Units with the Malefic Sub-Type as if it
     <entryLink import="true" name="Mounted Diabolist" hidden="false" id="c0bb-c580-fd12-4e7a" type="selectionEntry" targetId="ce41-394c-4797-be31">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="4016-260c-f249-91d4" primary="true" name="Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Procurators" hidden="false" id="4934-5ee3-2d65-7ef3" type="selectionEntry" targetId="bb9d-a1b4-48d5-ac58">
+      <categoryLinks>
+        <categoryLink targetId="5d5e-958f-e388-50b5" id="7694-7336-e380-e03b" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
