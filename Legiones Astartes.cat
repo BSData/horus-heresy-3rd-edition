@@ -34815,6 +34815,21 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
         </entryLink>
+        <entryLink import="true" name="Warpfire pistol" hidden="true" id="51c2-11f5-c602-7740" type="selectionEntry" targetId="6c9f-bd82-3658-4e6f" sortIndex="7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e45-0d86-9ace-5219"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4935-1832-63f7-91aa" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Legion Special Weapons List" id="8e2d-acd9-be67-36f2" hidden="false" sortIndex="6" collapsible="true">
@@ -34894,6 +34909,18 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Warpfire blaster" hidden="true" id="a342-80df-7d20-b55a" type="selectionEntry" targetId="f8cc-565f-4d55-d18a" sortIndex="10">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4935-1832-63f7-91aa" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cfc-7543-f018-185c" includeChildSelections="false"/>
@@ -34901,7 +34928,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
     </selectionEntryGroup>
     <selectionEntryGroup name="Legion Officer Wargear" id="f955-8b22-9362-31c0" hidden="false" sortIndex="1" collapsible="true">
       <entryLinks>
-        <entryLink import="true" name="Bolt pistol" hidden="false" id="47a9-bf3a-57bf-dd76" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1" defaultAmount="">
+        <entryLink import="true" name="Bolt pistol" hidden="false" id="47a9-bf3a-57bf-dd76" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
           </costs>
@@ -35409,6 +35436,36 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
         </entryLink>
+        <entryLink import="true" name="Tainted Weapon" hidden="true" id="72b3-5210-d3f9-5a2b" type="selectionEntry" targetId="a5ab-613f-fffe-4bee" sortIndex="32">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4935-1832-63f7-91aa" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="713f-da5a-7e68-e4ec"/>
+          </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Warpfire pistol" hidden="true" id="4ee6-8821-32b6-2bca" type="selectionEntry" targetId="6c9f-bd82-3658-4e6f" sortIndex="33">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aab3-c2d7-b872-188a"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4935-1832-63f7-91aa" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Legion Equipment" id="0e69-ccf1-cde7-acaf" hidden="false" sortIndex="7" collapsible="true">
@@ -35879,6 +35936,18 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </modifiers>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Warpfire projector" hidden="true" id="cf51-7f65-6919-f465" type="selectionEntry" targetId="cdc1-9674-8d05-4eec" sortIndex="12">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4935-1832-63f7-91aa" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
           </costs>
         </entryLink>
       </entryLinks>

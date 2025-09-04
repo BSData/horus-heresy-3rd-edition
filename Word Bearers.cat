@@ -1015,6 +1015,69 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
             <categoryLink targetId="594d-fa82-13cb-a345" id="6abc-b006-4e80-ac1b" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="2de1-ddd6-ebb4-10df" id="c9d0-49a1-4659-bfab" primary="false" name="Malefic Sub-type"/>
           </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="For every five Models in the Unit, one may exchange its bolter for" id="86a1-5bf4-7d5c-6091" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Flamer" hidden="false" id="5608-6d42-1a6f-81ed" type="selectionEntry" targetId="9a45-35cd-3806-2303">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4868-54b6-759e-ce87"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Meltagun" hidden="false" id="f062-7178-3680-61dc" type="selectionEntry" targetId="b1e1-e164-5877-6734">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a156-ea09-868f-ac0c"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Warpfire blaster" hidden="false" id="7815-73ab-f43c-bba3" type="selectionEntry" targetId="f8cc-565f-4d55-d18a">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3503-734f-05f8-68ce"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="1ab8-9f44-9644-62d7" automatic="true" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="1ab8-9f44-9644-62d7">
+                  <repeats>
+                    <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="For every five Models in the Unit, one may exchange its tainted talons for" id="0280-a331-0db3-5ab9" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="b927-7521-3b3f-d984" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" sortIndex="1" flatten="true"/>
+                <entryLink import="true" name="Power fist" hidden="false" id="52bd-b9ff-29b4-1b26" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ef5-54e9-8962-7952"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="5374-fc57-54f0-927c" automatic="true" includeChildSelections="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="5374-fc57-54f0-927c">
+                  <repeats>
+                    <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
@@ -1026,6 +1089,7 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="d251-944b-3c3b-0579" id="af04-8d89-91fc-1a68" primary="false" name="Traitor"/>
+        <categoryLink targetId="dd1b-70ef-6015-1291" id="93d6-3e61-5fbf-f664" primary="false" name="No default Power Weapon"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="9952-be5a-4881-9d15" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
@@ -1146,51 +1210,6 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
                 </infoLink>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Warpfire Cannon" hidden="false" id="c0b1-473e-cb46-3079" sortIndex="1">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3061-44af-023e-cdac-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3061-44af-023e-cdac-max" includeChildSelections="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Warpfire Cannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="e274-fed6-3ccc-2b04">
-                  <characteristics>
-                    <characteristic name="R" typeId="cdb0-8654-6840-1037">36</characteristic>
-                    <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
-                    <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
-                    <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
-                    <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
-                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (RS), Blast (3&quot;), Breaching (4+), Shred (6+)</characteristic>
-                    <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Plasma</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Heavy (X)" id="9b6b-0100-bbe2-283f" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
-                  <modifiers>
-                    <modifier type="set" value="Heavy (RS)" field="name"/>
-                  </modifiers>
-                  <comment>RS</comment>
-                </infoLink>
-                <infoLink name="Breaching (X)" id="1012-8ea7-6219-3b09" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
-                  <modifiers>
-                    <modifier type="set" value="Breaching (4+)" field="name"/>
-                  </modifiers>
-                  <comment>4+</comment>
-                </infoLink>
-                <infoLink name="Shred (X)" id="9c49-5e3e-8c90-4458" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
-                  <modifiers>
-                    <modifier type="set" value="Shred (6+)" field="name"/>
-                  </modifiers>
-                  <comment>6+</comment>
-                </infoLink>
-                <infoLink name="Blast (X)" id="9d5f-1c8f-47b8-9543" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
-                  <modifiers>
-                    <modifier type="set" value="Blast (3&quot;)" field="name"/>
-                  </modifiers>
-                  <comment>3&quot;</comment>
-                </infoLink>
-              </infoLinks>
-            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Tainted Claw" hidden="false" id="b689-68d4-32e4-695c" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="067e-a97d-bbb6-9e01-min" includeChildSelections="false"/>
@@ -1218,6 +1237,85 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
             <categoryLink targetId="38d4-d720-8009-acd3" id="3778-763f-44f4-94b2" primary="false" name="Walker Model Type"/>
             <categoryLink targetId="2de1-ddd6-ebb4-10df" id="844b-4ac3-4e7e-b1bf" primary="false" name="Malefic Sub-type"/>
           </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="May exchange" id="bacc-1fbf-b150-5be4" hidden="false" sortIndex="1" defaultSelectionEntryId="c0b1-473e-cb46-3079">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Warpfire Cannon" hidden="false" id="c0b1-473e-cb46-3079" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3061-44af-023e-cdac-max" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Warpfire Cannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="e274-fed6-3ccc-2b04">
+                      <characteristics>
+                        <characteristic name="R" typeId="cdb0-8654-6840-1037">36</characteristic>
+                        <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+                        <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+                        <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+                        <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
+                        <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (RS), Blast (3&quot;), Breaching (4+), Shred (6+)</characteristic>
+                        <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Plasma</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Heavy (X)" id="9b6b-0100-bbe2-283f" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
+                      <modifiers>
+                        <modifier type="set" value="Heavy (RS)" field="name"/>
+                      </modifiers>
+                      <comment>RS</comment>
+                    </infoLink>
+                    <infoLink name="Breaching (X)" id="1012-8ea7-6219-3b09" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+                      <modifiers>
+                        <modifier type="set" value="Breaching (4+)" field="name"/>
+                      </modifiers>
+                      <comment>4+</comment>
+                    </infoLink>
+                    <infoLink name="Shred (X)" id="9c49-5e3e-8c90-4458" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
+                      <modifiers>
+                        <modifier type="set" value="Shred (6+)" field="name"/>
+                      </modifiers>
+                      <comment>6+</comment>
+                    </infoLink>
+                    <infoLink name="Blast (X)" id="9d5f-1c8f-47b8-9543" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+                      <modifiers>
+                        <modifier type="set" value="Blast (3&quot;)" field="name"/>
+                      </modifiers>
+                      <comment>3&quot;</comment>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79df-6160-c3f0-bec6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4b8-e220-a3d7-f5db"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Gravis bolt cannon" hidden="false" id="015a-90b0-2ea4-61b3" type="selectionEntry" targetId="50d5-02d3-0be6-9143" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fa5-46a2-e3d2-34aa"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Gravis melta cannon" hidden="false" id="0f7d-7e2c-a9bd-67c9" type="selectionEntry" targetId="5a5a-1d32-2fcd-e5e3" sortIndex="3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5574-411f-cd24-2e01"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Gravis autocannon" hidden="false" id="8f14-542b-c449-9d39" type="selectionEntry" targetId="4e51-460b-4f29-8257" sortIndex="4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="805e-2ce9-696e-3074"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Twin lascannon" hidden="false" id="fa7c-66ef-47a5-dd4b" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a" sortIndex="5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6859-71c3-f1a8-fb64"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
@@ -1396,6 +1494,11 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
               <entryLinks>
                 <entryLink import="true" name="Inferno Pistol " hidden="false" id="e08f-90a7-f523-a2eb" type="selectionEntry" targetId="7b74-a315-ce2e-6ec5" sortIndex="2"/>
                 <entryLink import="true" name="Akkadic hand flamer" hidden="false" id="478a-16dd-2ef0-7e45" type="selectionEntry" targetId="04d0-1f99-ce32-94fc" sortIndex="1"/>
+                <entryLink import="true" name="Plasma pistol" hidden="false" id="96f4-20b1-39db-3764" type="selectionEntry" targetId="659f-d52e-1515-2912" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d947-da27-c37c-ce6c" includeChildSelections="false"/>
