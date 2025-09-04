@@ -400,14 +400,21 @@
         </selectionEntry>
       </selectionEntries>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="31f0-744d-d0cb-333e"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="31f0-744d-d0cb-333e" automatic="true"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5242-0e8a-c347-03e3"/>
       </constraints>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Daemonic Prime Benefit" id="6a33-a28e-9c63-5829" hidden="false">
+    <selectionEntryGroup name="Daemonic Prime Benefits" id="6a33-a28e-9c63-5829" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Paragon of Malevolence" hidden="false" id="28ef-7f7e-fe78-f0dc"/>
+        <selectionEntry type="upgrade" import="true" name="Paragon of Malevolence" hidden="false" id="28ef-7f7e-fe78-f0dc">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="001f-0576-5aa6-043b"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Common Prime Benefits" hidden="false" id="f30b-89a9-690a-f6b3" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" sortIndex="1"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -809,7 +816,7 @@ When a Unit with a Model with the Primal Terror Special Rule is declared as the 
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Sovereign" hidden="false" id="90a6-7a68-6a7d-9be6">
+        <selectionEntry type="model" import="true" name="Sovereign" hidden="false" id="90a6-7a68-6a7d-9be6" sortIndex="1">
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="ab9d-7201-4c70-85b0" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="5a95-e564-96b2-8dc9" id="8c5e-b290-27b8-2950" primary="false" name="Champion Model Sub-Type"/>
@@ -845,6 +852,22 @@ When a Unit with a Model with the Primal Terror Special Rule is declared as the 
                     <modifier type="replace" value=", Antigrav)" field="50fc-9241-d4a2-045b" arg=")"/>
                   </modifiers>
                   <comment>Wings</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -984,6 +1007,14 @@ When a Unit with a Model with the Primal Terror Special Rule is declared as the 
           <comment>[Ætheric Dominion] categories</comment>
         </modifierGroup>
       </modifierGroups>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="6a7f-9e3b-266d-86de" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Daemonic Prime Benefits" hidden="false" id="2b77-b2dc-7338-c6a9" type="selectionEntryGroup" targetId="6a33-a28e-9c63-5829"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="7b6f-60f2-2627-dd48" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Wings" hidden="false" id="8d4f-9caf-eaba-c817">
       <costs>
@@ -996,6 +1027,399 @@ When a Unit with a Model with the Primal Terror Special Rule is declared as the 
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5668-49af-2e6f-e35c"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Hierarch" hidden="false" id="4349-9d21-1af2-dcff" sortIndex="2">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="250"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Hierarch" hidden="false" id="c8a2-9476-5694-48bf">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c27-6f30-1748-c06f"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e396-e734-f9bb-37c5"/>
+          </constraints>
+          <profiles>
+            <profile name="Hierarch" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="2f8a-1823-3ddc-8fdb">
+              <characteristics>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Malefic)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">6</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">5</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">4</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">4</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">8</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">9</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8d4f-9caf-eaba-c817" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="set" value="12" field="a106-a779-d272-5e93"/>
+                    <modifier type="append" value="with Wings" field="name"/>
+                    <modifier type="replace" value=", Antigrav)" field="50fc-9241-d4a2-045b" arg=")"/>
+                  </modifiers>
+                  <comment>Wings</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="91d7-a699-5511-4f13" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="5a95-e564-96b2-8dc9" id="5b3d-ecd6-190c-fc09" primary="false" name="Champion Model Sub-Type"/>
+            <categoryLink targetId="2de1-ddd6-ebb4-10df" id="1f0e-e983-49b0-e2a0" primary="false" name="Malefic Sub-type"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Wings" hidden="false" id="96b9-85f1-bbd7-ab38" type="selectionEntry" targetId="8d4f-9caf-eaba-c817" sortIndex="1">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon" id="1bc5-0cf5-82f8-7ca2" hidden="false" defaultSelectionEntryId="7041-cf04-feef-9187" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42d5-8f9d-646c-7c1c"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b94-956a-5df0-5d86"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Hierarch blade" hidden="false" id="7041-cf04-feef-9187" type="selectionEntry" targetId="d933-abe8-a0a9-e765">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ed6-7b0a-e102-cae4"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Hierarch greatblade" hidden="false" id="389d-6697-d849-a6c3" type="selectionEntry" targetId="921f-c41b-138d-9418">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="227a-2e3c-270f-dbd2"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+            <entryLink import="true" name="[Ætheric Dominion]" hidden="false" id="b5ce-773b-a037-6870" type="selectionEntryGroup" targetId="5b1e-2194-8cb9-592b"/>
+          </entryLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Wings</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="8d4f-9caf-eaba-c817" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <modifiers>
+                <modifier type="append" value="with Wings" field="name"/>
+                <modifier type="add" value="c504-9dfa-35d3-c98f" field="category"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <infoLinks>
+            <infoLink name="Bulky (X)" id="c8d5-355e-54ef-206e" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+              <modifiers>
+                <modifier type="replace" value="5" field="name" arg="X">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="8d4f-9caf-eaba-c817" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="replace" value="6" field="name" arg="X">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8d4f-9caf-eaba-c817" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Eternal Warrior (X)" id="6560-65c9-5e5f-d3e6" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
+              <comment>1</comment>
+              <modifiers>
+                <modifier type="replace" value="1" field="name" arg="X"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Fear (X)" id="757e-2634-98bf-1961" hidden="false" type="rule" targetId="0ebc-0c92-2209-6393">
+              <comment>1</comment>
+              <modifiers>
+                <modifier type="replace" value="1" field="name" arg="X"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <rules>
+            <rule name="Champion of the Dominion" id="8841-ea90-e750-bbd6" hidden="false">
+              <description>During the Challenge Sub-Phase, if a Model with this Special Rule is eligible, it must be declared as the Challenger or to accept a Challenge. If more than on Model with this Special Rule is eligible to be the Challenger or to accept a Challenge, the Controlling Player may select which one will be declared as the Challenger or to accept a Challenge.
+
+
+Additionally, if a Model with this Special Rule would gain the Disgraced Status, it instead suffers automatic wounds as per the Malefic Sub-Type, but these woulnds must be allocated to the Model with this Special Rule, and cannot be allocated to Models in any Unit it may have joined.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="8ba9-185b-de40-eceb" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Daemonic Prime Benefit" hidden="false" id="c5e5-0c01-652b-956e" type="selectionEntryGroup" targetId="6a33-a28e-9c63-5829"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="[Ætheric Dominion]" id="0963-2fbb-1745-ecce" hidden="false" type="profile" targetId="c01c-bdf6-2859-8435"/>
+        <infoLink name="[Allegiance]" id="81cc-6873-9604-53dc" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="4b4b-eece-366e-8179" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="42a2-c87d-c37f-5263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="d020-b796-e1f0-c2ae" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="20f9-9438-2603-5933" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="142a-928b-5dc6-5f42" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="66b5-2dea-1838-235b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6adc-57ec-6ec7-ff4e" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="385d-eae4-002a-6a1f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="0465-074b-caf8-97d8" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="fa00-4b78-1a07-a953" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="e3fe-2521-d1cf-bfcd" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="824b-677c-3657-6573" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6ed5-1d97-3cdd-8dd2" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="6a1d-f46c-222e-c559" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="b3ac-8527-d0ec-21a7" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="802d-c4b0-b1cf-4be0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>[Ætheric Dominion] categories</comment>
+        </modifierGroup>
+      </modifierGroups>
+      <categoryLinks>
+        <categoryLink targetId="1c0c-f10a-c186-4f21" id="9679-8188-e36a-d708" primary="false" name="has Bulky (X)"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Harbinger" hidden="false" id="18c4-6f85-03a3-3288" sortIndex="3">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="135"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Harbinger" hidden="false" id="7f92-e343-c700-7c41">
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="096f-0ed0-831f-b189" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="6dbf-654a-f06f-2d69" id="2ecc-2fad-37cc-cf67" primary="false" name="Command"/>
+            <categoryLink targetId="2de1-ddd6-ebb4-10df" id="9c69-72d4-075a-9238" primary="false" name="Malefic Sub-type"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Harbinger" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="bef9-d4d5-d645-891f">
+              <characteristics>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command, Malefic)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">3</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">5</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">3</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">4</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">8</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">9</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">6</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">4+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Harbinger blade" hidden="false" id="323e-9f80-a7fe-b29e" type="selectionEntry" targetId="58b0-ec53-59c2-2a02" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1753-d738-5869-eb40"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1742-7998-6e87-8ca2"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Totem of Dominion" hidden="false" id="c65f-31b9-d4c0-aeaf" type="selectionEntry" targetId="1ee5-47ae-e35a-bc86" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="36ba-32c6-0f85-4256"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="798a-44d3-77c0-ff14"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="[Ætheric Dominion]" hidden="false" id="5d4c-0319-f646-dd65" type="selectionEntryGroup" targetId="5b1e-2194-8cb9-592b"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Bulky (X)" id="7219-bbc1-7299-82fd" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+              <modifiers>
+                <modifier type="replace" value="3" field="name" arg="X"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Eternal Warrior (X)" id="eec8-63dd-9aa2-33fc" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
+              <comment>1</comment>
+              <modifiers>
+                <modifier type="replace" value="1" field="name" arg="X"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Fear (X)" id="1d99-3826-aae7-e9d9" hidden="false" type="rule" targetId="0ebc-0c92-2209-6393">
+              <comment>1</comment>
+              <modifiers>
+                <modifier type="replace" value="1" field="name" arg="X"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <rules>
+            <rule name="Herald of Unreality" id="395b-8055-cbc3-2642" hidden="false">
+              <description>During the Declare Mission Reserves Step, the Controlling Player may select one other Unit from the Daemons of the Ruinstorm Army List that is part of the Army, for each Model with this Special Rule in an Army. Each Model in each of the selected Units gains the Deep Strike Special Rule and the Warp Rift Trait for the duration of the Battle.
+
+
+
+
+During any of their Reserves Sub-Phases, the Controlling Player of any Model with this Special Rule can select one friendly Model with this Special Rule, that is not Locked in Combat, to open a warp rift. If they do so, they can select one Unit from their Army that is in Reserves that only contains Models with the Warp Rift Trait. Reserve Rolls made for that Unit during this Sub-Phase are automatically successful, and the Unit performs a Deep Strike as normal, with the following exceptions:
+
+
+- The first Model from the Unit must be placed in Base-to-Base Contact with the Model that opened the warp rift.
+- The Unit may have a Charge declared for it in the Charge Sub-Phase of the same Player Turn.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7486-d551-804d-7b78"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc5a-9589-d750-6094"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="5c0b-576c-40d6-bfe7" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Daemonic Prime Benefits" hidden="false" id="4645-f237-3da0-d6b1" type="selectionEntryGroup" targetId="6a33-a28e-9c63-5829"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="[Ætheric Dominion]" id="cfd9-e3ce-dbc8-5e0c" hidden="false" type="profile" targetId="c01c-bdf6-2859-8435"/>
+        <infoLink name="[Allegiance]" id="6bd3-e60e-2dd4-0195" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="4b4b-eece-366e-8179" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="42a2-c87d-c37f-5263" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="d020-b796-e1f0-c2ae" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="20f9-9438-2603-5933" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="142a-928b-5dc6-5f42" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="66b5-2dea-1838-235b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6adc-57ec-6ec7-ff4e" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="385d-eae4-002a-6a1f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="0465-074b-caf8-97d8" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="fa00-4b78-1a07-a953" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="e3fe-2521-d1cf-bfcd" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="824b-677c-3657-6573" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6ed5-1d97-3cdd-8dd2" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="6a1d-f46c-222e-c559" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="b3ac-8527-d0ec-21a7" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="802d-c4b0-b1cf-4be0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>[Ætheric Dominion] categories</comment>
+        </modifierGroup>
+      </modifierGroups>
+      <categoryLinks>
+        <categoryLink targetId="1c0c-f10a-c186-4f21" id="dc45-c497-203b-866b" primary="false" name="has Bulky (X)"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
@@ -1064,9 +1488,19 @@ When a Unit with a Model with the Primal Terror Special Rule is declared as the 
     </profile>
   </sharedProfiles>
   <entryLinks>
-    <entryLink import="true" name="Ruinstorm Daemon Sovereign" hidden="false" id="8f0e-35c5-4ae6-a921" type="selectionEntry" targetId="c734-cb04-128f-4de9">
+    <entryLink import="true" name="Ruinstorm Daemon Sovereign" hidden="false" id="8f0e-35c5-4ae6-a921" type="selectionEntry" targetId="c734-cb04-128f-4de9" sortIndex="1">
       <categoryLinks>
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="df31-18cd-2122-79da" primary="true" name="High Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Ruinstorm Daemon Hierarch" hidden="false" id="bd83-0c28-4421-8b95" type="selectionEntry" targetId="4349-9d21-1af2-dcff" sortIndex="2">
+      <categoryLinks>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="4b36-33e3-2d67-d708" primary="true" name="Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Ruinstorm Daemon Harbinger" hidden="false" id="e605-82e1-4e5d-1946" type="selectionEntry" targetId="18c4-6f85-03a3-3288" sortIndex="3">
+      <categoryLinks>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="8a69-a017-bcb2-28cd" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
