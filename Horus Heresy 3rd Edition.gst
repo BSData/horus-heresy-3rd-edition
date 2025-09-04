@@ -18536,7 +18536,7 @@
               </constraints>
             </categoryLink>
             <categoryLink name="War-engine - Upgraded by The Iron-clad" hidden="false" id="5c3a-61f8-facc-1735" targetId="d00a-e269-2ed3-8fc4"/>
-            <categoryLink name="Army Configuration" hidden="false" id="5c8b-9e7e-b8c7-00b4" targetId="abfa-86ab-1726-077a" type="categoryEntry"/>
+            <categoryLink name="Army Configuration" hidden="false" id="5c8b-9e7e-b8c7-00b4" targetId="abfa-86ab-1726-077a"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -18714,7 +18714,7 @@
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
-              <comment>Visible to all factions except Knights and Titans</comment>
+              <comment>Visible to all factions except Knights</comment>
             </modifier>
           </modifiers>
           <constraints>
