@@ -2981,6 +2981,11 @@ During any of their Reserves Sub-Phases, the Controlling Player of any Model wit
       </constraints>
       <modifiers>
         <modifier type="add" value="d020-b796-e1f0-c2ae" field="category"/>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink name="Bulky (X)" id="6f0d-34b3-fe1e-946b" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
@@ -3004,6 +3009,177 @@ During any of their Reserves Sub-Phases, the Controlling Player of any Model wit
         <infoLink name="[Ætheric Dominion]" id="7594-ab7b-cabf-6608" hidden="false" type="profile" targetId="c01c-bdf6-2859-8435"/>
         <infoLink name="[Allegiance]" id="c787-b9d5-baf5-05fd" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="Champion of the Ruinstorm" id="b215-1be4-ad8c-b12f" hidden="false" type="profile" targetId="1ed6-910b-f5cc-f6e9"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cor&apos;bax Utterblight" hidden="false" id="b813-d57c-9435-147f" sortIndex="13">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="350"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="1c0c-f10a-c186-4f21" id="3767-8e76-d684-589b" primary="false" name="has Bulky (X)"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Cor&apos;bax Untterblight" hidden="false" id="8e3d-af3b-7253-0450">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a40-b47e-6868-c335"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="734c-98d0-440d-6536"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="7799-e1d6-762b-700b" id="4b47-5c2a-37ea-6577" primary="false" name="Paragon Model Type"/>
+            <categoryLink targetId="b980-187b-2b17-d635" id="8fe0-22ad-e222-9213" primary="false" name="Unique Model Sub-Type"/>
+            <categoryLink targetId="1e7d-9066-28d2-97a0" id="a2c4-8a47-ac2d-1366" primary="false" name="Heavy Model Sub-Type"/>
+            <categoryLink targetId="2de1-ddd6-ebb4-10df" id="181b-bdb5-501e-cba1" primary="false" name="Malefic Sub-type"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Cor&apos;bax Untterblight" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="6526-e789-f2c2-939b">
+              <characteristics>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Paragon (Unique, Heavy, Malefic)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">6</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">7</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">7</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">10</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">5</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">12</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">10</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">10</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">6</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Reaping Claws" hidden="false" id="9ee8-1ee2-e46b-1822" sortIndex="1">
+              <profiles>
+                <profile name="Reaping Claws" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="73f7-7273-d5de-c38d">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Reaping Blow (2), Breaching (6+)</characteristic>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Immaterial</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Reaping Blow (X)" id="6790-a5ea-709e-727c" hidden="false" type="rule" targetId="951f-eee4-02b7-b014">
+                  <modifiers>
+                    <modifier type="replace" value="2" field="name" arg="X"/>
+                  </modifiers>
+                  <comment>2</comment>
+                </infoLink>
+                <infoLink name="Breaching (X)" id="2e2c-e3d0-d427-d355" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+                  <comment>6+</comment>
+                  <modifiers>
+                    <modifier type="replace" value="6+" field="name" arg="X"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e9f-e4ba-d63e-dbf0"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ab6-4183-91e5-59f3"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Noxious Vomit" hidden="false" id="fe04-b635-a96b-f4b0" sortIndex="2">
+              <profiles>
+                <profile name="Noxious Vomit" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="881e-49f0-b86f-b98b">
+                  <characteristics>
+                    <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
+                    <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+                    <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">5</characteristic>
+                    <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+                    <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
+                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Poisoned (5+), Panic (1)</characteristic>
+                    <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Assault, Immaterial</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Template" id="9ef3-d56d-a1a0-7235" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a"/>
+                <infoLink name="Poisoned (X)" id="3f95-2fb9-69ed-fedd" hidden="false" type="rule" targetId="076f-2c91-c58b-71b3">
+                  <comment>5+</comment>
+                  <modifiers>
+                    <modifier type="replace" value="5+" field="name" arg="X"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Panic (X)" id="0ca5-dd97-024f-b7db" hidden="false" type="rule" targetId="82a7-f471-3fda-6ca1">
+                  <comment>1</comment>
+                  <modifiers>
+                    <modifier type="replace" value="1" field="name" arg="X"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a84d-3944-93bb-644b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e5f6-3530-5e5f-94f4"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Putrid Corruption" hidden="false" id="be4f-5fac-1a4e-df55" type="selectionEntry" targetId="66b5-2dea-1838-235b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1beb-324a-fb64-2dbf"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4167-a145-3780-bbc0"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="13ac-a9b3-77dd-da55" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="142a-928b-5dc6-5f42" field="category"/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="c57f-b6a8-e4a8-fd5b" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Ætheric Dominion]" id="5df7-c1c3-fe45-c417" hidden="false" type="profile" targetId="c01c-bdf6-2859-8435"/>
+        <infoLink name="Champion of the Ruinstorm" id="7753-dc5f-55d5-8205" hidden="false" type="profile" targetId="1ed6-910b-f5cc-f6e9"/>
+        <infoLink name="Bulky (X)" id="a5b9-5f05-4a53-65ee" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+          <modifiers>
+            <modifier type="replace" value="8" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Eternal Warrior (X)" id="44d2-2a95-a67e-54b1" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
+          <comment>2</comment>
+          <modifiers>
+            <modifier type="replace" value="2" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Fear (X)" id="29eb-a921-2c18-449d" hidden="false" type="rule" targetId="0ebc-0c92-2209-6393">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="replace" value="1" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Primal Terror" id="a30f-cef0-1bd5-4395" hidden="false" type="rule" targetId="44bb-4eee-0299-caba"/>
+        <infoLink name="Explodes (X)" id="373a-7581-22f4-2e59" hidden="false" type="rule" targetId="da5b-b871-20da-3e70">
+          <comment>4+</comment>
+          <modifiers>
+            <modifier type="replace" value="(4+)" field="name" arg="(X)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Feel No Pain (X)" id="a9f7-ab68-227a-4b81" hidden="false" type="rule" targetId="89b5-7320-db15-fd60">
+          <comment>5+</comment>
+          <modifiers>
+            <modifier type="replace" value="5+" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Slow and Purposeful" id="b76d-522b-1f62-7856" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -3123,6 +3299,11 @@ During any of their Reserves Sub-Phases, the Controlling Player of any Model wit
     <entryLink import="true" name="Ka&apos;bandha" hidden="false" id="0eb9-a4f9-8130-05e5" type="selectionEntry" targetId="d16c-7f99-1456-a8bf" sortIndex="12">
       <categoryLinks>
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="965f-094d-dbd8-1929" primary="true" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Cor&apos;bax Utterblight" hidden="false" id="6967-22af-9590-ebc3" type="selectionEntry" targetId="b813-d57c-9435-147f" sortIndex="13">
+      <categoryLinks>
+        <categoryLink targetId="a46f-a465-0ead-d6b8" id="dbef-8566-25ad-d246" primary="false" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
