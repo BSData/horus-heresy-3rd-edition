@@ -1398,191 +1398,6 @@
               </conditionGroups>
               <comment>Visible to all factions</comment>
             </modifier>
-            <modifier type="add" value="Multiple Ætheric Dominions in Detachment" field="error">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9396-cc24-458d-d358" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9396-cc24-458d-d358" shared="true"/>
-                  </conditions>
-                  <comment>Daemons</comment>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
           </modifiers>
         </forceEntry>
         <forceEntry name="Warlord Detachment" id="50c3-ba24-7471-3d32" hidden="true" sortIndex="3">
@@ -2151,191 +1966,6 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="add" value="Multiple Ætheric Dominions in Detachment" field="error">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9396-cc24-458d-d358" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9396-cc24-458d-d358" shared="true"/>
-                  </conditions>
-                  <comment>Daemons</comment>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
           </modifiers>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
@@ -2697,191 +2327,6 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="add" value="Multiple Ætheric Dominions in Detachment" field="error">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9396-cc24-458d-d358" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9396-cc24-458d-d358" shared="true"/>
-                  </conditions>
-                  <comment>Daemons</comment>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
           </modifiers>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
@@ -3218,191 +2663,6 @@
                           <conditions>
                             <condition type="atLeast" value="1" field="selections" scope="force" childId="1ec3-1433-658a-f04e" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="force" childId="e76a-e22d-9fc4-dc1f" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="add" value="Multiple Ætheric Dominions in Detachment" field="error">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9396-cc24-458d-d358" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9396-cc24-458d-d358" shared="true"/>
-                  </conditions>
-                  <comment>Daemons</comment>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -3755,191 +3015,6 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="add" value="Multiple Ætheric Dominions in Detachment" field="error">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9396-cc24-458d-d358" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9396-cc24-458d-d358" shared="true"/>
-                  </conditions>
-                  <comment>Daemons</comment>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
           </modifiers>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
@@ -4276,191 +3351,6 @@
                           <conditions>
                             <condition type="atLeast" value="1" field="selections" scope="force" childId="1ec3-1433-658a-f04e" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="force" childId="e76a-e22d-9fc4-dc1f" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="add" value="Multiple Ætheric Dominions in Detachment" field="error">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9396-cc24-458d-d358" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9396-cc24-458d-d358" shared="true"/>
-                  </conditions>
-                  <comment>Daemons</comment>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -4813,191 +3703,6 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="add" value="Multiple Ætheric Dominions in Detachment" field="error">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9396-cc24-458d-d358" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9396-cc24-458d-d358" shared="true"/>
-                  </conditions>
-                  <comment>Daemons</comment>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
           </modifiers>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
@@ -5334,191 +4039,6 @@
                           <conditions>
                             <condition type="atLeast" value="1" field="selections" scope="force" childId="1ec3-1433-658a-f04e" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="force" childId="e76a-e22d-9fc4-dc1f" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="add" value="Multiple Ætheric Dominions in Detachment" field="error">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9396-cc24-458d-d358" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9396-cc24-458d-d358" shared="true"/>
-                  </conditions>
-                  <comment>Daemons</comment>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -6090,191 +4610,6 @@
                           <conditions>
                             <condition type="atLeast" value="1" field="selections" scope="force" childId="1ec3-1433-658a-f04e" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="force" childId="e76a-e22d-9fc4-dc1f" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="add" value="Multiple Ætheric Dominions in Detachment" field="error">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9396-cc24-458d-d358" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9396-cc24-458d-d358" shared="true"/>
-                  </conditions>
-                  <comment>Daemons</comment>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -6939,191 +5274,6 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="add" value="Multiple Ætheric Dominions in Detachment" field="error">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9396-cc24-458d-d358" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9396-cc24-458d-d358" shared="true"/>
-                  </conditions>
-                  <comment>Daemons</comment>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
           </modifiers>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
@@ -7687,191 +5837,6 @@
                           <conditions>
                             <condition type="atLeast" value="1" field="selections" scope="force" childId="1ec3-1433-658a-f04e" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="force" childId="e76a-e22d-9fc4-dc1f" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="add" value="Multiple Ætheric Dominions in Detachment" field="error">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9396-cc24-458d-d358" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9396-cc24-458d-d358" shared="true"/>
-                  </conditions>
-                  <comment>Daemons</comment>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -20373,6 +18338,186 @@
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="5034-24c8-3d4c-9013" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
+        </modifier>
+        <modifier type="add" value="Multiple Ætheric Dominions in Army" field="error" affects="entries.forces">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="primary-catalogue" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="4b4b-eece-366e-8179" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="d020-b796-e1f0-c2ae" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="142a-928b-5dc6-5f42" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="6adc-57ec-6ec7-ff4e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="0465-074b-caf8-97d8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e3fe-2521-d1cf-bfcd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="6ed5-1d97-3cdd-8dd2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b3ac-8527-d0ec-21a7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </forceEntry>
