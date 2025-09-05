@@ -536,9 +536,14 @@
                 <selectionEntryGroup name="One Companion may have one of the following:" id="7a50-cce2-6fab-78b9" hidden="false">
                   <entryLinks>
                     <entryLink import="true" name="Auxilia vexilla" hidden="false" id="65f3-d538-a2db-23ee" type="selectionEntry" targetId="abc6-851f-ab12-1ddd">
-                      <modifiers>
-                        <modifier type="set" value="5" field="9893-c379-920b-8982"/>
-                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Cohorts vexilla" hidden="false" id="bdfa-aa5c-0f5c-b3b4" type="selectionEntry" targetId="cc8a-e930-719e-4dd1">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                      </costs>
                     </entryLink>
                   </entryLinks>
                   <constraints>
@@ -5731,7 +5736,7 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ac4-df63-f6d1-1d01"/>
           </constraints>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="190"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="225"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
