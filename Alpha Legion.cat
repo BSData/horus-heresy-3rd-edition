@@ -1704,26 +1704,13 @@ If the Missing being played has a Deploy Armies Step, at the end of this step, t
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Melta bombs" hidden="false" id="13a7-1de1-48b0-7311" type="selectionEntry" targetId="2eb4-687e-a515-ee3d">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb93-f1ce-d76c-c392" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="Every Model in this Unit may have melta bombs:" field="name"/>
-            <modifier type="increment" value="5" field="9893-c379-920b-8982">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Frag grenades" hidden="false" id="f7e5-b1a7-952a-5139" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+        <entryLink import="true" name="Frag grenades" hidden="false" id="f7e5-b1a7-952a-5139" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1188-0061-dc56-0db0"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6697-9cd4-b27d-0820"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Krak grenades" hidden="false" id="e05f-bf6b-3cc3-81f2" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+        <entryLink import="true" name="Krak grenades" hidden="false" id="e05f-bf6b-3cc3-81f2" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="4">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0093-d7cd-f1c1-78bf"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e72-3a0c-0f10-334a"/>
@@ -1735,6 +1722,20 @@ If the Missing being played has a Deploy Armies Step, at the end of this step, t
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Every Model in this Unit may have " id="0251-c090-f583-00b3" hidden="false" sortIndex="5">
+          <entryLinks>
+            <entryLink import="true" name="Melta bombs" hidden="false" id="13a7-1de1-48b0-7311" type="selectionEntry" targetId="2eb4-687e-a515-ee3d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb93-f1ce-d76c-c392" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="cf31-e71a-06a7-7456">
       <constraints>
