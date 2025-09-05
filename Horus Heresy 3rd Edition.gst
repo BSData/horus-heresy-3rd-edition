@@ -514,7 +514,7 @@
     <categoryEntry name="No default Power Weapon" id="dd1b-70ef-6015-1291" hidden="false"/>
     <categoryEntry name="Questoris Mendecant" id="f220-eabc-f1a7-0714" hidden="false"/>
     <categoryEntry name="Knight Lord of War" id="db9a-f420-5ade-5e9d" hidden="false"/>
-    <categoryEntry name="Paragon of Malevolence" id="708b-b2ff-1a14-2901" hidden="false"/>
+    <categoryEntry name="Paragon of Malevolence" id="708b-b2ff-1a14-2901" hidden="true"/>
     <categoryEntry name="Encroaching Ruin" id="4b4b-eece-366e-8179" hidden="false"/>
     <categoryEntry name="Formless Distortion" id="0465-074b-caf8-97d8" hidden="false"/>
     <categoryEntry name="Heedless Slaughter" id="d020-b796-e1f0-c2ae" hidden="false"/>
@@ -1189,6 +1189,18 @@
                 </modifierGroup>
               </modifierGroups>
             </categoryLink>
+            <categoryLink name="Paragon of Malevolence" hidden="false" id="31c4-7d41-d1a6-68ba" targetId="708b-b2ff-1a14-2901" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c74-c781-a024-7f2e" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="28ef-7f7e-fe78-f0dc" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="5611-db49-9e64-44c6-min" includeChildSelections="true"/>
@@ -1811,6 +1823,18 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2796-15f4-0561-d11b" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Paragon of Malevolence" hidden="false" id="c8e7-c12f-71cd-5e6c" targetId="708b-b2ff-1a14-2901">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03e4-1867-afff-992f" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="28ef-7f7e-fe78-f0dc" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -2349,6 +2373,18 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="98f8-8860-4dd3-58d7" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Paragon of Malevolence" hidden="false" id="23dd-baa2-c64d-eb74" targetId="708b-b2ff-1a14-2901">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d42-af1e-21c7-4478" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="28ef-7f7e-fe78-f0dc" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -2884,6 +2920,18 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0b7c-566a-8311-703d" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Paragon of Malevolence" hidden="false" id="cf81-3b23-0210-58e2" targetId="708b-b2ff-1a14-2901">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad9d-3537-33b8-0a8a" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="28ef-7f7e-fe78-f0dc" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -3411,6 +3459,18 @@
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1fe7-5114-3d7d-e501" includeChildSelections="true"/>
               </constraints>
+            </categoryLink>
+            <categoryLink name="Paragon of Malevolence" hidden="false" id="a790-45e6-8abb-8727" targetId="708b-b2ff-1a14-2901">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7164-3a7f-8e12-fcca" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="28ef-7f7e-fe78-f0dc" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
           </categoryLinks>
           <modifiers>
@@ -3940,6 +4000,18 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f4fd-d341-0f65-784b" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Paragon of Malevolence" hidden="false" id="d74e-66f2-0b58-f2e6" targetId="708b-b2ff-1a14-2901">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af1f-da1d-8ca9-ef60" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="28ef-7f7e-fe78-f0dc" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -4468,6 +4540,18 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0dc3-2e75-42a7-ef00" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Paragon of Malevolence" hidden="false" id="bbbb-df48-8afe-64ee" targetId="708b-b2ff-1a14-2901">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e03-0fa4-c785-fce7" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="28ef-7f7e-fe78-f0dc" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -4995,6 +5079,18 @@
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0764-c4bb-2d59-a5d0" includeChildSelections="true"/>
               </constraints>
+            </categoryLink>
+            <categoryLink name="Paragon of Malevolence" hidden="false" id="6322-83ef-f10c-e816" targetId="708b-b2ff-1a14-2901">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40a0-23ac-6930-6999" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="28ef-7f7e-fe78-f0dc" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
           </categoryLinks>
           <modifiers>
@@ -5750,6 +5846,18 @@
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ebf0-96b8-70b9-430a" includeChildSelections="true"/>
               </constraints>
+            </categoryLink>
+            <categoryLink name="Paragon of Malevolence" hidden="false" id="5417-efe1-e2e7-143a" targetId="708b-b2ff-1a14-2901">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae92-7a05-e02a-e7f0" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="28ef-7f7e-fe78-f0dc" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
           </categoryLinks>
           <modifiers>
@@ -6591,6 +6699,18 @@
               </constraints>
             </categoryLink>
             <categoryLink name="War-engine - Upgraded by The Iron-clad" hidden="false" id="30ad-fba2-e85d-2b0a" targetId="d00a-e269-2ed3-8fc4"/>
+            <categoryLink name="Paragon of Malevolence" hidden="false" id="a8aa-be0b-527d-6e46" targetId="708b-b2ff-1a14-2901">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1176-7840-e0a6-c1bd" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="28ef-7f7e-fe78-f0dc" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -7345,6 +7465,18 @@
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="84ab-ca06-86a5-8cdb" includeChildSelections="true"/>
               </constraints>
+            </categoryLink>
+            <categoryLink name="Paragon of Malevolence" hidden="false" id="8b66-658e-8871-4114" targetId="708b-b2ff-1a14-2901">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eada-206c-35cc-1468" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="28ef-7f7e-fe78-f0dc" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
           </categoryLinks>
           <modifiers>
@@ -20672,6 +20804,18 @@
             </categoryLink>
             <categoryLink name="War-engine - Upgraded by The Iron-clad" hidden="false" id="5c3a-61f8-facc-1735" targetId="d00a-e269-2ed3-8fc4"/>
             <categoryLink name="Army Configuration" hidden="false" id="5c8b-9e7e-b8c7-00b4" targetId="abfa-86ab-1726-077a"/>
+            <categoryLink name="Paragon of Malevolence" hidden="false" id="7a46-7c80-ebdf-f775" targetId="708b-b2ff-1a14-2901">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a25d-0ee6-e4ad-b38a" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="28ef-7f7e-fe78-f0dc" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -22000,7 +22144,6 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <selectionEntry type="upgrade" import="true" name="Special Assignment" hidden="true" id="c857-47bd-6a4f-fcf8" sortIndex="4">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b7d-6d09-95fd-18ae" includeChildSelections="false"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="97a9-ea67-739b-69bd" includeChildSelections="false"/>
           </constraints>
           <categoryLinks>
             <categoryLink targetId="c85c-2963-658f-1bb9" id="c1dc-0919-397c-4986" primary="false" name="Prime Command"/>
@@ -22028,9 +22171,9 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="remove" value="d9a6-9b5f-b18a-4d63" field="category" scope="unit"/>
             <modifier type="set-primary" value="6dbf-654a-f06f-2d69" field="category" scope="unit"/>
-            <modifier type="add" value="12d9-f8dc-4db6-0880" field="category"/>
+            <modifier type="add" value="12d9-f8dc-4db6-0880" field="category" scope="unit"/>
+            <modifier type="remove" value="d9a6-9b5f-b18a-4d63" field="category" scope="unit"/>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Master Sergeant" hidden="false" id="2c90-1d52-7075-59d3" sortIndex="1">
@@ -22536,6 +22679,37 @@ When a Model with this Special Rule is included in a Detachment, one additional 
           <description>&quot;This Special Rule allows Thallax Units to be selected as part of a Detachment that includes a Forge Lord.&quot;
 
 When a Model with this Special Rule is included in a Detachment, two additional Force Organisation Slots are added to that Detachment. These Slots can only be filled with Thallax Cohort Units selected from Liber Mechanicum. When such a Unit is included in this way, the Reductor Trait is replaced with ‘Bonded Reductor’ on all Models in the Unit, and the Aegis of Pain Special Rule is removed from all Models in the Unit. These Units can be included even though they do not have the same Faction Trait as the other Units in that Detachment.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Paragon of Malevolence" hidden="true" id="28ef-7f7e-fe78-f0dc">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="001f-0576-5aa6-043b" automatic="true"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="a4b8-2c41-7316-cbb9" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c1cd-77fe-6431-ac52" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b3ac-8527-d0ec-21a7" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="001f-0576-5aa6-043b">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6a03-452b-5657-bda4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="c1cd-77fe-6431-ac52">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6a03-452b-5657-bda4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Paragon of Malevolence Prime Advantage" id="a60b-971a-c97d-5d5f" hidden="false">
+          <description>Add one additional Force Organlsation Slot to the Detachment that includes the Prime Slot, this Slot may be of any Battlefield Role other than High Command, Command, Warlord or Lord of War and can only be filled by a Unit selected from the Machina Malefica section of the Mechanicum Taghmata Army List. This Advantage may only be selected once per Detachment.
+ 
+Note that The Paragon of Malevolence Prime Advantage may be selected if the Unit chosen to fill the Prime Slot has the Unique Sub-Type, in the same manner as the Logistical Benefit Prime Advantage. However, the Paragon of Malevolence Prime Advantage can only be selected once per Detachment and cannot be selected if the Logistical Benefit Prime Advantage is also selected for that Detachment.</description>
         </rule>
       </rules>
     </selectionEntry>
