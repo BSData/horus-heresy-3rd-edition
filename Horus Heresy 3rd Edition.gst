@@ -514,6 +514,10 @@
     <categoryEntry name="No default Power Weapon" id="dd1b-70ef-6015-1291" hidden="false"/>
     <categoryEntry name="Questoris Mendecant" id="f220-eabc-f1a7-0714" hidden="false"/>
     <categoryEntry name="Knight Lord of War" id="db9a-f420-5ade-5e9d" hidden="false"/>
+    <categoryEntry name="Esoterist" id="e835-f513-2c3c-9697" hidden="false"/>
+    <categoryEntry name="Harbinger of Chaos" id="ed12-2e38-312e-83e6" hidden="false"/>
+    <categoryEntry name="Heavy Assault - Ruinstorm Daemon Brutes Only" id="82f8-b131-f63b-840c" hidden="false"/>
+    <categoryEntry name="Brutes" id="de38-d988-2b63-8da5" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
@@ -15641,6 +15645,26 @@
               </conditionGroups>
               <comment>Legions</comment>
             </modifier>
+            <modifier type="add" value="Demonic Manifestation Detachment requires an Esoterist" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="e835-f513-2c3c-9697" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="ed12-2e38-312e-83e6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="1" field="b033-24cc-c28a-c279">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="e835-f513-2c3c-9697" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="666" field="b033-24cc-c28a-c279">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ed12-2e38-312e-83e6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
@@ -15649,6 +15673,21 @@
             <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="b033-24cc-c28a-c279"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Prime Heavy Assault" hidden="false" id="ad79-515e-a9b0-ef3a" targetId="1e95-35f0-1353-ffa1">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1315-060f-0e17-d34a" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Heavy Assault - Brutes" hidden="false" id="0bf8-de6c-ab72-7bfe" targetId="82f8-b131-f63b-840c">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7444-afc3-b532-8913"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
         </forceEntry>
         <forceEntry name="Auxiliary - Veteran Cadre" id="1834-a10c-a732-d989" hidden="true" sortIndex="41" publicationId="e54c-7040-0f35-d85d" page="16">
           <comment>Legions - Champion</comment>

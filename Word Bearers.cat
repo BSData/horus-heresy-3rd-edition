@@ -380,7 +380,9 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
             <rule name="Lord of the Blessed" id="ee53-dde6-9800-a3b9" hidden="false">
               <description>A Model with this Special Rule can join Units with the Malefic Sub-Type as if it had that Sub-Type and while part of such a Unit, is treated as having that Sub-Type.</description>
             </rule>
-            <rule name="Harbinger of Chaos" id="6f98-3b19-41a2-58ae" hidden="false"/>
+            <rule name="Harbinger of Chaos" id="6f98-3b19-41a2-58ae" hidden="false">
+              <description>An Army whose Primary Detachment includes a Model with this Special Rule may select Demonic Manifestation Auxiliary Detachments regardless of how many Command Force Organisation Slots are filled with Esoterist Units.</description>
+            </rule>
           </rules>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Crux Malifica " hidden="false" id="9af4-f982-d4b0-390b" sortIndex="1">
@@ -450,6 +452,7 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="ed12-2e38-312e-83e6" field="category"/>
       </modifiers>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="165"/>
