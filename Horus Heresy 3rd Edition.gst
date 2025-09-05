@@ -1209,7 +1209,7 @@
                 </modifierGroup>
               </modifierGroups>
             </categoryLink>
-            <categoryLink name="Paragon of Malevolence" hidden="false" id="31c4-7d41-d1a6-68ba" targetId="708b-b2ff-1a14-2901" type="categoryEntry"/>
+            <categoryLink name="Paragon of Malevolence" hidden="false" id="31c4-7d41-d1a6-68ba" targetId="708b-b2ff-1a14-2901"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="5611-db49-9e64-44c6-min" includeChildSelections="true"/>
@@ -1647,7 +1647,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2796-15f4-0561-d11b" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Paragon of Malevolence" hidden="false" id="cd91-6a7f-907e-52af" targetId="708b-b2ff-1a14-2901" type="categoryEntry"/>
+            <categoryLink name="Paragon of Malevolence" hidden="false" id="cd91-6a7f-907e-52af" targetId="708b-b2ff-1a14-2901"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -15802,7 +15802,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1315-060f-0e17-d34a" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Heavy Assault - Brutes" hidden="false" id="0bf8-de6c-ab72-7bfe" targetId="82f8-b131-f63b-840c">
+            <categoryLink name="Heavy Assault - Ruinstorm Daemon Brutes Only" hidden="false" id="0bf8-de6c-ab72-7bfe" targetId="82f8-b131-f63b-840c">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7444-afc3-b532-8913"/>
               </constraints>
@@ -18555,6 +18555,9 @@
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9396-cc24-458d-d358" shared="true"/>
+              </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
