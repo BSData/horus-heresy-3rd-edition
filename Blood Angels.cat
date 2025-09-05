@@ -968,7 +968,7 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7642-b836-7d3a-d1b6" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="One Perdition Weapon" hidden="false" id="c201-26c6-bd82-aa96" sortIndex="2" flatten="true">
+                <selectionEntry type="upgrade" import="true" name="One Perdition Weapon" hidden="false" id="c201-26c6-bd82-aa96" sortIndex="3" flatten="true">
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Perdition Weapons" id="cc93-21af-e299-35ee" hidden="false" flatten="false">
                       <comment>Reduced Cost for Exemplar</comment>
@@ -999,6 +999,33 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90fe-0307-212f-6358" includeChildSelections="false"/>
                   </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Perdition Weapon &amp; Coriolis Pattern Power Shield" hidden="false" id="52b8-ee0e-9c5d-5655" flatten="false" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Coriolis Pattern Power Shield" hidden="false" id="e867-ad34-d6b9-8736" type="selectionEntry" targetId="cba1-dc5a-e2bf-0ae6">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f668-a46b-f386-6543" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdb1-26b0-2702-f54a" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Perdition Weapons" hidden="false" id="2e3d-c3a6-1259-eb80" type="selectionEntryGroup" targetId="6a6b-1cda-b6a4-8b3e" flatten="true">
+                      <categoryLinks>
+                        <categoryLink targetId="647c-faca-3c98-c203" id="bfc4-d4b3-0811-c3e5" primary="false" name="Free Power Weapon"/>
+                      </categoryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0dba-f191-3bf6-5f4a"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="315f-97e0-31d8-1a9f" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                    <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
