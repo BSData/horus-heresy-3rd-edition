@@ -1395,7 +1395,7 @@ When Locked in Combat with any Units which contain at least one Model which has 
             </selectionEntryGroup>
             <selectionEntryGroup name="For every 5 Models in this Unit, one Nemesis Destroyer in this Unit may have its mortifier bolter exchanged for one of the following:" id="ae85-a9c0-4213-8b0a">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" id="1356-65fc-4868-a82a" name="Volkite charger">
+                <entryLink hidden="false" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" id="1356-65fc-4868-a82a" name="Volkite charger" sortIndex="1">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
@@ -1403,7 +1403,7 @@ When Locked in Combat with any Units which contain at least one Model which has 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="529c-cc7c-41cc-9788"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="9a45-35cd-3806-2303" id="12ff-ee4d-4b71-921e" name="Flamer">
+                <entryLink hidden="false" type="selectionEntry" targetId="9a45-35cd-3806-2303" id="12ff-ee4d-4b71-921e" name="Flamer" sortIndex="2">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
@@ -1411,7 +1411,7 @@ When Locked in Combat with any Units which contain at least one Model which has 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40f7-4d01-4087-86a3"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="433d-56e0-9878-dea1" id="d79f-2353-499a-860b" name="Plasma gun">
+                <entryLink hidden="false" type="selectionEntry" targetId="433d-56e0-9878-dea1" id="d79f-2353-499a-860b" name="Plasma gun" sortIndex="3">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
@@ -1419,7 +1419,7 @@ When Locked in Combat with any Units which contain at least one Model which has 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="872f-412d-4b94-82df"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="b1e1-e164-5877-6734" id="5330-b86e-48c1-8489" name="Meltagun">
+                <entryLink hidden="false" type="selectionEntry" targetId="b1e1-e164-5877-6734" id="5330-b86e-48c1-8489" name="Meltagun" sortIndex="4">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
                   </costs>
@@ -1427,7 +1427,7 @@ When Locked in Combat with any Units which contain at least one Model which has 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14a3-d2c0-45a6-a291"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="4a06-c55e-a06f-bd0c" id="f085-7cfd-4cb7-b578" name="Graviton gun">
+                <entryLink hidden="false" type="selectionEntry" targetId="4a06-c55e-a06f-bd0c" id="f085-7cfd-4cb7-b578" name="Graviton gun" sortIndex="5">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
                   </costs>
@@ -1435,7 +1435,7 @@ When Locked in Combat with any Units which contain at least one Model which has 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="966a-6d22-48f5-92fe"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="6838-5e12-03bb-d500" id="7a2c-3a1c-4edd-a5b7" name="Lascutter">
+                <entryLink hidden="false" type="selectionEntry" targetId="6838-5e12-03bb-d500" id="7a2c-3a1c-4edd-a5b7" name="Lascutter" sortIndex="6">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
                   </costs>
@@ -1443,13 +1443,18 @@ When Locked in Combat with any Units which contain at least one Model which has 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1599-2a70-4115-97ce"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="bc40-b14a-978e-0232" id="16d8-83ec-4824-a351" name="Heavy bolter">
+                <entryLink hidden="false" type="selectionEntry" targetId="bc40-b14a-978e-0232" id="16d8-83ec-4824-a351" name="Heavy bolter" sortIndex="7">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b0d-8eee-4462-84e8"/>
                   </constraints>
+                </entryLink>
+                <entryLink import="true" name="Destroyer Missile Launcher" hidden="false" id="951c-05dd-4c81-07fa" type="selectionEntry" targetId="bcb8-e658-5a0e-0c1a" sortIndex="8">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -1762,7 +1767,7 @@ When Locked in Combat with any Units which contain at least one Model which has 
         </profile>
         <profile name="Fulmentarus Missile Array - Hellfire plasma missiles" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="b092-8237-ce8a-a77a">
           <characteristics>
-            <characteristic name="R" typeId="cdb0-8654-6840-1037">36 </characteristic>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">36</characteristic>
             <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
             <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">7</characteristic>
             <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
