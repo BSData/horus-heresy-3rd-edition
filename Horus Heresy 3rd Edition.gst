@@ -19145,7 +19145,21 @@
         <constraint type="max" value="0" field="9893-c379-920b-8982" scope="roster" shared="true" id="3fef-ac67-de89-249f"/>
       </constraints>
       <forceEntryLinks>
-        <forceEntryLink name="Auxiliary - Armoured Fist" id="4bc4-a3a6-5f09-21a3" hidden="true" targetId="cc51-fdce-8a34-dbcf" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Armoured Fist" id="4bc4-a3a6-5f09-21a3" hidden="true" targetId="cc51-fdce-8a34-dbcf" type="forceEntry">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="69c0-2783-c191-e6a2" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="69c0-2783-c191-e6a2" shared="true"/>
+                  </conditions>
+                  <comment>Titans</comment>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </forceEntryLink>
         <forceEntryLink name="Auxiliary - Tactical Support" id="1005-5fbc-4e0f-b526" hidden="true" targetId="2965-5682-3cbc-8b47" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Armoured Support" id="4182-3f45-4a7c-af4f" hidden="true" targetId="4a2f-ac9e-195e-77cf" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Heavy Support" id="4ebe-ef99-44e3-982b" hidden="true" targetId="bd1f-82a0-abd4-cd56" type="forceEntry"/>
