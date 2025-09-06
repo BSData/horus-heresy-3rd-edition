@@ -13741,11 +13741,107 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Forge-crafted flamer" hidden="true" id="4ae3-7e66-7760-be07" type="selectionEntry" targetId="ec31-ff7d-cdad-233a" sortIndex="7">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="8045-89a4-76d4-fcef" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <comment>SL</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <comment>SL+Sgt Only</comment>
+                </modifier>
+                <modifier type="increment" value="15" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Graviton gun" hidden="true" id="fa3c-146e-8e22-0df1" type="selectionEntry" targetId="4a06-c55e-a06f-bd0c" sortIndex="8">
+              <modifiers>
+                <modifier type="increment" value="10" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <comment>IH</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="736e-3967-e72b-e3ac" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Graviton shredder" hidden="true" id="3544-a4de-1d96-0ff8" type="selectionEntry" targetId="5921-7ef7-197a-ef9f" sortIndex="9">
+              <modifiers>
+                <modifier type="increment" value="15" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <comment>IH</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="736e-3967-e72b-e3ac" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Alchem flamer" hidden="true" id="5d60-ca97-5043-fa92" type="selectionEntry" targetId="67f4-8760-673d-b9ef">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="be98-aa9d-64ef-f62c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="5" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Æther-fire blaster" hidden="true" id="6a20-23f3-9c4d-a374" type="selectionEntry" targetId="4ce2-6bd7-eb33-7a8f" sortIndex="10">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="15" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Warpfire blaster" hidden="true" id="0da6-4447-04bf-753b" type="selectionEntry" targetId="f8cc-565f-4d55-d18a">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="4935-1832-63f7-91aa" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="20" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5557-e6b9-6ca3-96e3" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c174-b3c8-3ca3-0569" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="Every Model in the Unit must take one of" field="name"/>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="May exchange bolt pistol for" id="c7f9-bd84-b5c9-3345" hidden="true" defaultSelectionEntryId="21fa-c62e-49e2-2ef8" sortIndex="5">
           <entryLinks>
@@ -14131,6 +14227,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="force" childId="d186-cffc-0950-f632" shared="true" includeChildSelections="true"/>
                   </conditions>
+                  <comment>IF</comment>
                 </modifier>
               </modifiers>
             </entryLink>
