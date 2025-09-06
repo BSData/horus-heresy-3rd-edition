@@ -232,9 +232,20 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                 <entryLink import="true" name="Caedere Weapons" hidden="false" id="2bc2-d4d8-3c17-1546" type="selectionEntryGroup" targetId="f18f-e86f-e13e-4a48" sortIndex="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4740-2dbd-a411-cb31"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="40f2-700e-a02b-8965" automatic="true"/>
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="5d93-8523-229e-32df" field="defaultSelectionEntryId"/>
+                    <modifier type="set" value="0" field="40f2-700e-a02b-8965">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="2fcc-92a6-d03a-4b55" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
                   </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Power fist" hidden="false" id="631a-dcbf-5da6-e450" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="3">
@@ -1480,7 +1491,6 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d213-f8a0-4954-a9b0"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Caedere Weapons" hidden="false" id="e6e0-ef14-7305-e7db" type="selectionEntryGroup" targetId="f18f-e86f-e13e-4a48"/>
                 <entryLink import="true" name="Legion Sergeant Melee Weapons (no chainsword)" hidden="false" id="6854-9333-61d6-e0ba" type="selectionEntryGroup" targetId="c7ca-8933-a703-7301" flatten="true"/>
               </entryLinks>
               <constraints>
@@ -1747,7 +1757,6 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="834f-6c2e-4ea2-b6b2"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Caedere Weapons" hidden="false" id="6b31-7e84-be71-12c6" type="selectionEntryGroup" targetId="f18f-e86f-e13e-4a48"/>
                 <entryLink import="true" name="Legion Sergeant Melee Weapons (no chainsword)" hidden="false" id="5c70-4f60-45c5-8a00" type="selectionEntryGroup" targetId="c7ca-8933-a703-7301" flatten="true">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0f0-cef8-4885-abc5"/>
@@ -1827,105 +1836,6 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
     <catalogueLink type="catalogue" name="Special Rules" id="c4e7-0fe8-a551-95ff" targetId="106b-693b-99f2-00c3"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Caedere Weapons" id="f18f-e86f-e13e-4a48" hidden="false">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Meteor hammer" hidden="false" id="5d93-8523-229e-32df" sortIndex="1" defaultAmount="1">
-          <profiles>
-            <profile name="Meteor hammer" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="bb48-1756-46f0-3af8">
-              <characteristics>
-                <characteristic name="IM" typeId="6eec-4093-f946-1014">1</characteristic>
-                <characteristic name="AM" typeId="03d0-6094-84f0-e27e">-1</characteristic>
-                <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
-                <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-                <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
-                <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Impact (IM)</characteristic>
-                <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Impact (X)" id="8c9d-da08-fb7c-6823" hidden="false" type="rule" targetId="6ead-c31c-ab09-2f8c"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Excoriator chainaxe" hidden="false" id="a13c-fa7e-22a2-7ca1" sortIndex="2">
-          <profiles>
-            <profile name="Excoriator chainaxe" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="2a3f-8393-bf2d-12f7">
-              <characteristics>
-                <characteristic name="IM" typeId="6eec-4093-f946-1014">-2</characteristic>
-                <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
-                <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
-                <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-                <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
-                <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+), Shred (6+)</characteristic>
-                <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Chain</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Breaching (X)" id="bbdb-f0a2-ff1c-3d31" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
-              <modifiers>
-                <modifier type="set" value="Breaching (6+)" field="name">
-                  <comment>6</comment>
-                </modifier>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Shred (X)" id="6726-3f1a-8ebd-9ac5" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
-              <modifiers>
-                <modifier type="set" value="Shred (6+)" field="name">
-                  <comment>6</comment>
-                </modifier>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Paired falax blades" hidden="false" id="23ac-beeb-dfe5-bed4" sortIndex="3">
-          <profiles>
-            <profile name="Paired falax blades" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="0f8f-b73b-4a75-bc87">
-              <characteristics>
-                <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
-                <characteristic name="AM" typeId="03d0-6094-84f0-e27e">+2</characteristic>
-                <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
-                <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-                <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
-                <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">-</characteristic>
-                <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Barb-hook lash" hidden="false" id="dc05-c0cf-935f-2c7f" sortIndex="4">
-          <profiles>
-            <profile name="Barb-hook lash" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="25f2-eb9d-fc87-babb">
-              <characteristics>
-                <characteristic name="IM" typeId="6eec-4093-f946-1014">+1</characteristic>
-                <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
-                <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
-                <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-                <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
-                <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Critical Hit (6+), Phage (S)</characteristic>
-                <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Critical Hit (X)" id="57c2-c816-1ed4-98c3" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
-              <modifiers>
-                <modifier type="set" value="Critical Hit (6+)" field="name">
-                  <comment>6</comment>
-                </modifier>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Phage (X)" id="d80b-1a56-5910-e008" hidden="false" type="rule" targetId="3e26-d357-69d6-1341">
-              <modifiers>
-                <modifier type="set" value="Phage (S)" field="name">
-                  <comment>S</comment>
-                </modifier>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
     <selectionEntryGroup name="Rite of War" id="1455-b8d9-311a-e3f6" hidden="false" defaultSelectionEntryId="c119-d969-8ad8-a54a">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Legiones Hereticus World Eaters" hidden="false" id="a095-2238-5c9e-0576">
