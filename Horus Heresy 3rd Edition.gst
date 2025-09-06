@@ -20480,6 +20480,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
               <conditions>
                 <condition type="equalTo" value="0" field="selections" scope="roster" childId="f220-eabc-f1a7-0714" shared="true" includeChildSelections="true" includeChildForces="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="db9a-f420-5ade-5e9d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="fd9b-d04e-362d-8e5d" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
