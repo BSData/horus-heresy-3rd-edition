@@ -9383,13 +9383,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4304-9686-b657-c61e" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Thunder hammer" hidden="false" id="8c50-b7bb-9bc1-9bf8" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="2">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d44-f8b4-4470-51a4" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38a7-e3a8-b681-94ee" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="445f-bd88-2761-26a1" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
+            <entryLink import="true" name="Frag grenades" hidden="false" id="445f-bd88-2761-26a1" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d9b9-a74b-2786-523d" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="236d-15f7-c331-adf8" includeChildSelections="false"/>
@@ -9430,6 +9424,44 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="a132-7070-7e03-46c1" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="9"/>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="3cf7-be3a-ac2e-57a7" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50" sortIndex="10"/>
             <entryLink import="true" name="Cult Arcana" hidden="true" id="d3ff-7c12-a471-6c5b" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
+            <entryLink import="true" name="Thunder hammer" hidden="false" id="8aa5-4e94-81fd-c512" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b8ec-88d2-5545-b30d" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce79-8d46-6288-9897" automatic="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="b8ec-88d2-5545-b30d">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="ce79-8d46-6288-9897">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="May exchange bolt pistol for:" id="936d-ae02-5b4c-fb2b" hidden="false" defaultSelectionEntryId="20b3-3f38-2825-efa7" sortIndex="1">
@@ -9470,6 +9502,117 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a5c9-d285-161f-8a75" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b65-f687-7cd7-17fa" includeChildSelections="false"/>
               </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" id="a7a1-50ed-edf2-8765" hidden="true" flatten="false" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Thunder hammer" hidden="false" id="0d92-b5f0-b320-24d6" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e419-a082-363b-e512" automatic="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="2c89-4307-685f-7a2e" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <comment>SL</comment>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <comment>SL+Cmd/Spec/Champ Only</comment>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="148d-9d0b-51fe-eaf2"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Graviton crusher" hidden="true" id="883e-16c2-195a-3603" type="selectionEntry" targetId="78f1-345c-81d8-1cb1" sortIndex="3">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <comment>IW</comment>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <comment>IW+Cmd/Champ Only</comment>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c85f-a704-d40e-3022"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="163d-a09e-7f60-c3c1" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="251d-4c37-9c29-2335" automatic="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="1" field="163d-a09e-7f60-c3c1">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="1" field="251d-4c37-9c29-2335">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0d92-b5f0-b320-24d6" field="defaultSelectionEntryId">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -24446,13 +24589,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="498f-557f-4c2d-bc1f"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" id="e56b-d423-42ef-8e03" name="Thunder hammer" sortIndex="2">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="217d-f099-497d-b631"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6771-78dc-4f67-80cf"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="bf4a-8f85-4366-9782" name="Frag grenades" sortIndex="3">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="bf4a-8f85-4366-9782" name="Frag grenades" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="396b-c905-4cee-92b6"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c888-d30b-4380-9805"/>
@@ -24484,6 +24621,44 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </entryLink>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="560d-3c55-0aed-b2b4" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
             <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="990d-e42c-590a-ed24" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
+            <entryLink import="true" name="Thunder hammer" hidden="false" id="a50d-e9ea-789b-3270" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae1f-7679-b8c6-14f0" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f106-0bad-fe56-7cda" automatic="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="ae1f-7679-b8c6-14f0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="f106-0bad-fe56-7cda">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its bolt pistol exchanged for " id="50dc-9bf3-490e-b33d" sortIndex="1" defaultSelectionEntryId="39cd-16e2-4b55-b108">
@@ -24550,6 +24725,117 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49ae-5239-468a-ba7b"/>
               </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" id="2ea7-df26-2d3a-2bd2" hidden="true" flatten="false" sortIndex="3">
+              <entryLinks>
+                <entryLink import="true" name="Thunder hammer" hidden="false" id="809a-d8cc-bb82-56ba" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="242f-13b5-105d-c109" automatic="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="ad83-8e5d-32a1-2139" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <comment>SL</comment>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <comment>SL+Cmd/Spec/Champ Only</comment>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b335-aa3c-faca-e8a9"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Graviton crusher" hidden="true" id="4a1a-f395-3587-9110" type="selectionEntry" targetId="78f1-345c-81d8-1cb1" sortIndex="3">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <comment>IW</comment>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <comment>IW+Cmd/Champ Only</comment>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="81a9-c84a-9fc5-87d2"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="04d1-a11b-78af-6bd8" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="86e0-1ff8-881e-4d85" automatic="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="1" field="04d1-a11b-78af-6bd8">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="1" field="86e0-1ff8-881e-4d85">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0d92-b5f0-b320-24d6" field="defaultSelectionEntryId">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -24717,13 +25003,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </infoLink>
           </infoLinks>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" id="d545-e055-4c7b-bb83" name="Thunder hammer" sortIndex="5">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0124-aed9-4db3-a137"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70a3-0953-46c4-8b58"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="a96a-f064-47b4-8749" name="Frag grenades" sortIndex="6">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="a96a-f064-47b4-8749" name="Frag grenades" sortIndex="7">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="78ab-76e5-40e7-97c8"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1b0-392f-4bf1-a465"/>
@@ -24756,6 +25036,44 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <entryLink import="true" name="Mount" hidden="false" id="ebed-5ac6-a2a7-19eb" type="selectionEntryGroup" targetId="9089-07e5-3653-84b6" sortIndex="1"/>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="845a-d67f-cc01-8235" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
             <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="b54b-3672-cbb3-5161" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
+            <entryLink import="true" name="Thunder hammer" hidden="false" id="0356-5cf4-33b8-7db3" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d722-3d4f-756c-c6df" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da2c-6ca4-5f2d-9839" automatic="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="d722-3d4f-756c-c6df">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="da2c-6ca4-5f2d-9839">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its bolt pistol exchanged for " id="dae6-7e27-44cd-af23" sortIndex="4" defaultSelectionEntryId="385c-6c58-4f97-a7a8">
@@ -24915,6 +25233,117 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Options" id="fdf3-c1c3-f1b9-0cdf" hidden="true" flatten="false" sortIndex="6">
+              <entryLinks>
+                <entryLink import="true" name="Thunder hammer" hidden="false" id="707b-bdb6-bc1e-5759" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d01-1c79-908f-d2d2" automatic="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="7a5b-d46b-f535-098a" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <comment>SL</comment>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <comment>SL+Cmd/Spec/Champ Only</comment>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b68-1411-29ef-ca83"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Graviton crusher" hidden="true" id="7fad-4ddc-fcf7-b8ad" type="selectionEntry" targetId="78f1-345c-81d8-1cb1" sortIndex="3">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <comment>IW</comment>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <comment>IW+Cmd/Champ Only</comment>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e055-2a39-216f-2a88"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1411-5fd1-32db-07bc" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ac10-0eac-0fd1-65aa" automatic="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="1" field="1411-5fd1-32db-07bc">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="1" field="ac10-0eac-0fd1-65aa">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0d92-b5f0-b320-24d6" field="defaultSelectionEntryId">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="a073-2d4a-5bed-123e" id="8b3e-c3e6-4c2c-b19b" primary="false" name="Cavalry Model Type"/>
@@ -25046,19 +25475,13 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </infoLink>
           </infoLinks>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" id="f5b5-6260-44a8-83a5" name="Thunder hammer" sortIndex="3">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2088-09f2-43cb-b6fb"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a2d-ef64-49b9-a366"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="268f-5e98-166a-6f01" id="10d2-6fae-44be-9379" name="Cognis-signum" sortIndex="4">
+            <entryLink hidden="false" type="selectionEntry" targetId="268f-5e98-166a-6f01" id="10d2-6fae-44be-9379" name="Cognis-signum" sortIndex="5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa48-4922-466f-b087"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="509b-65d4-4e7d-8c1b"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fede-99f5-4c76-4659" id="5870-f3dc-41c6-bbc7" name="Augury scanner" sortIndex="5">
+            <entryLink hidden="false" type="selectionEntry" targetId="fede-99f5-4c76-4659" id="5870-f3dc-41c6-bbc7" name="Augury scanner" sortIndex="6">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4708-5919-497c-b66c"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="463b-60e0-4e46-babe"/>
@@ -25067,6 +25490,44 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <entryLink import="true" name="Terminator Armour" hidden="false" id="6cb3-8585-2644-2e60" type="selectionEntryGroup" targetId="170b-d9c0-e9d6-b314" sortIndex="1"/>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="b6b3-6922-af17-62ec" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
             <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="7fb8-3f35-819f-9cc5" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
+            <entryLink import="true" name="Thunder hammer" hidden="false" id="401d-ad70-bd6d-5bfd" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c32-0bde-be78-34fd" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6b2-5a0a-5766-0e40" automatic="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="5c32-0bde-be78-34fd">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="d6b2-5a0a-5766-0e40">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its combi-bolter exchanged for " id="31c9-2aaa-4b51-b53a" defaultSelectionEntryId="3d55-66c3-43e6-826c" sortIndex="2">
@@ -25087,6 +25548,117 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="237c-e8a4-48bf-a645"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d2d-268b-4c3a-841d"/>
               </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Options" id="eb6f-a47c-442c-bfee" hidden="true" flatten="false" sortIndex="4">
+              <entryLinks>
+                <entryLink import="true" name="Thunder hammer" hidden="false" id="dd66-5654-8abb-b1a7" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a105-9a00-b84b-1bf3" automatic="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="4cec-3301-fa70-7dc5" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <comment>SL</comment>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <comment>SL+Cmd/Spec/Champ Only</comment>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbda-42fe-f736-8391"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Graviton crusher" hidden="true" id="c22d-ca01-46fc-1b92" type="selectionEntry" targetId="78f1-345c-81d8-1cb1" sortIndex="3">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <comment>IW</comment>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <comment>IW+Cmd/Champ Only</comment>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="fdee-9c0c-4a50-e5c8"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="06a8-8a88-edd8-2962" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f36a-6297-59c5-7f3f" automatic="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="1" field="06a8-8a88-edd8-2962">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="1" field="f36a-6297-59c5-7f3f">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0d92-b5f0-b320-24d6" field="defaultSelectionEntryId">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -25941,17 +26513,76 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </selectionEntryGroup>
             <selectionEntryGroup name="This Model may have its power axe exchanged for " id="471f-b2b8-4bcb-a64e" sortIndex="2" defaultSelectionEntryId="7c42-ebc6-4d80-bbc1">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="4861-b77a-620c-f0d6" id="7c42-ebc6-4d80-bbc1" name="Power axe">
+                <entryLink hidden="false" type="selectionEntry" targetId="4861-b77a-620c-f0d6" id="7c42-ebc6-4d80-bbc1" name="Power axe" sortIndex="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a844-185e-48f3-9910"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" id="4aa4-ff3d-4f71-af0d" name="Thunder hammer">
+                <entryLink hidden="false" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" id="4aa4-ff3d-4f71-af0d" name="Thunder hammer" sortIndex="2">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2221-b7ab-4cfe-9430"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Graviton crusher" hidden="true" id="46f9-4400-e33b-ed62" type="selectionEntry" targetId="78f1-345c-81d8-1cb1" sortIndex="3">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <comment>IW</comment>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <comment>IW+Cmd/Champ Only</comment>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="03f8-497d-e67c-4e5b"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="c7c6-55d4-0b67-79bd" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="4">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <comment>SL</comment>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <comment>SL+Cmd/Spec/Champ Only</comment>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="33ed-7197-4bcf-031d"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -26191,17 +26822,76 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </selectionEntryGroup>
             <selectionEntryGroup name="This Model may have its power axe exchanged for " id="b6e2-e44b-4977-b073" sortIndex="5" defaultSelectionEntryId="3820-2697-4eb1-bd26">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="4861-b77a-620c-f0d6" id="3820-2697-4eb1-bd26" name="Power axe">
+                <entryLink hidden="false" type="selectionEntry" targetId="4861-b77a-620c-f0d6" id="3820-2697-4eb1-bd26" name="Power axe" sortIndex="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec2c-ed70-4fc7-953c"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" id="442f-95fc-4ae5-b866" name="Thunder hammer">
+                <entryLink hidden="false" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" id="442f-95fc-4ae5-b866" name="Thunder hammer" sortIndex="2">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3446-518d-46a6-8114"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Graviton crusher" hidden="true" id="c712-3ef2-addb-73f7" type="selectionEntry" targetId="78f1-345c-81d8-1cb1" sortIndex="3">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <comment>IW</comment>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <comment>IW+Cmd/Champ Only</comment>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7622-12af-0394-a998"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="3940-1b7a-e400-642e" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="4">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <comment>SL</comment>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <comment>SL+Cmd/Spec/Champ Only</comment>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1c24-c39c-af60-0a09"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -26487,17 +27177,76 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </selectionEntryGroup>
             <selectionEntryGroup name="This Model may have its power axe exchanged for " id="666b-436f-41b1-a5ac" sortIndex="2">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="4861-b77a-620c-f0d6" id="cd6d-58d1-46be-8b20" name="Power axe">
+                <entryLink hidden="false" type="selectionEntry" targetId="4861-b77a-620c-f0d6" id="cd6d-58d1-46be-8b20" name="Power axe" sortIndex="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f40f-37bc-4c2b-bc46"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" id="8ffe-2a24-47f3-9ab9" name="Thunder hammer">
+                <entryLink hidden="false" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" id="8ffe-2a24-47f3-9ab9" name="Thunder hammer" sortIndex="2">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d587-cc92-4155-9cd8"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Graviton crusher" hidden="true" id="7aa6-b571-742a-8bae" type="selectionEntry" targetId="78f1-345c-81d8-1cb1" sortIndex="3">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <comment>IW</comment>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <comment>IW+Cmd/Champ Only</comment>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ba77-a020-567b-1330"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="ced1-8c54-3887-f3ea" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="4">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <comment>SL</comment>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <comment>SL+Cmd/Spec/Champ Only</comment>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3c54-cbb4-9648-1dac"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
