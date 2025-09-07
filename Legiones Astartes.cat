@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="55" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="56" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -4113,6 +4113,12 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f34d-c79d-b3a4-f01c" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="decrement" value="1" field="a17e-8e7d-d21f-c138">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b3b6-dc52-35dc-24b4" shared="true"/>
+                  </conditions>
+                  <comment>Militia</comment>
+                </modifier>
               </modifiers>
             </profile>
           </profiles>
@@ -4200,7 +4206,15 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="[Allegiance]" id="3c38-a946-45ac-ce09" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
-        <infoLink name="[Legiones Astartes]" id="d3ef-6753-33e2-a5fb" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="[Legiones Astartes]" id="d3ef-6753-33e2-a5fb" hidden="false" type="profile" targetId="641c-ca0a-7093-4525">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f477-a408-5e04-1e5a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Smokescreen" id="6df8-4845-87c1-b11f" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
         <infoLink name="Auto-Repair (X)" id="0c65-9db9-5c8a-8e79" hidden="false" type="rule" targetId="3973-ed50-1482-ff4a">
           <comment>4+</comment>
@@ -14509,6 +14523,12 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f34d-c79d-b3a4-f01c" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="decrement" value="1" field="a17e-8e7d-d21f-c138">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b3b6-dc52-35dc-24b4" shared="true"/>
+                  </conditions>
+                  <comment>Militia</comment>
+                </modifier>
               </modifiers>
             </profile>
           </profiles>
@@ -14562,7 +14582,15 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="[Allegiance]" id="996e-fda6-b66e-4e10" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
-        <infoLink name="[Legiones Astartes]" id="78dc-5d87-1c7a-9960" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="[Legiones Astartes]" id="78dc-5d87-1c7a-9960" hidden="false" type="profile" targetId="641c-ca0a-7093-4525">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f477-a408-5e04-1e5a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Deep Strike" id="52ae-69fb-9725-440f" hidden="false" type="rule" targetId="0553-d06b-52b9-34db"/>
         <infoLink name="Light Transport" id="5ceb-4bb3-6b3a-d4fa" hidden="false" type="rule" targetId="d451-f7f3-fc8f-db23"/>
       </infoLinks>
@@ -14709,6 +14737,12 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6fc0-917e-44a4-a4da" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="decrement" value="1" field="a17e-8e7d-d21f-c138">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b3b6-dc52-35dc-24b4" shared="true"/>
+                  </conditions>
+                  <comment>Militia</comment>
+                </modifier>
               </modifiers>
             </profile>
           </profiles>
@@ -14747,7 +14781,15 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="2923-fe1a-c539-543c" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
-        <infoLink name="[Legiones Astartes]" id="76b6-bcf8-2517-0f4f" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="[Legiones Astartes]" id="76b6-bcf8-2517-0f4f" hidden="false" type="profile" targetId="641c-ca0a-7093-4525">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f477-a408-5e04-1e5a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Smokescreen" id="13f0-d379-7875-ad97" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
         <infoLink name="Auto-Repair (X)" id="5fe7-6bb0-01a6-8edc" hidden="false" type="rule" targetId="3973-ed50-1482-ff4a">
           <comment>5+</comment>

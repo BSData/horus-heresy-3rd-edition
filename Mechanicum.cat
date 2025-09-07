@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="23" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="24" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Anacharis Scoria" hidden="false" id="10f5-dae8-f081-d82f" sortIndex="29">
       <infoLinks>
@@ -4685,6 +4685,14 @@
                   <comment>Prime Conveyor</comment>
                 </modifierGroup>
               </modifierGroups>
+              <modifiers>
+                <modifier type="decrement" value="1" field="a17e-8e7d-d21f-c138">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b3b6-dc52-35dc-24b4" shared="true"/>
+                  </conditions>
+                  <comment>Militia</comment>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <constraints>
@@ -5887,6 +5895,14 @@
                   <comment>Prime Conveyor</comment>
                 </modifierGroup>
               </modifierGroups>
+              <modifiers>
+                <modifier type="decrement" value="1" field="a17e-8e7d-d21f-c138">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+                  </conditions>
+                  <comment>Militia</comment>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <constraints>
@@ -6311,6 +6327,14 @@
                   <comment>Prime Conveyor</comment>
                 </modifierGroup>
               </modifierGroups>
+              <modifiers>
+                <modifier type="decrement" value="1" field="a17e-8e7d-d21f-c138">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+                  </conditions>
+                  <comment>Militia</comment>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <constraints>

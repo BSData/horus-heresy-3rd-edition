@@ -7938,7 +7938,7 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Heavy industrial weapon" hidden="false" id="21a7-2df8-4ed4-b446">
+    <selectionEntry type="upgrade" import="true" name="Heavy industrial weapon" hidden="false" id="21a7-2df8-4ed4-b446" publicationId="a5ca-d2f8-fa5a-c120">
       <profiles>
         <profile name="Heavy industrial weapon" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="3876-86ba-4bd8-b71a" page="56" publicationId="f5e5-c199-d3d4-ccf6">
           <characteristics>
@@ -7952,8 +7952,15 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Armour-Breaker (X)" id="6519-381c-ff3e-ea81" hidden="false" type="rule" targetId="3009-9bbb-a8f6-1b47">
+          <modifiers>
+            <modifier type="set" value="Armour-breaker (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Heavy lascannon" hidden="false" id="8f13-38cd-486a-90d2">
+    <selectionEntry type="upgrade" import="true" name="Heavy lascannon" hidden="false" id="8f13-38cd-486a-90d2" publicationId="a5ca-d2f8-fa5a-c120">
       <profiles>
         <profile name="Heavy lascannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="b439-bc75-4a0c-bed6" page="52" publicationId="f5e5-c199-d3d4-ccf6">
           <characteristics>
@@ -7967,8 +7974,16 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Ordnance (X)" id="7974-e8e5-851d-0e2b" hidden="false" type="rule" targetId="b6b3-909a-b78a-3dbf">
+          <modifiers>
+            <modifier type="set" value="Ordnance (D)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Armourbane" id="eea3-ddd5-e47e-d73f" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+      </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Heavy mining laser" hidden="false" id="77c3-af32-492b-b553">
+    <selectionEntry type="upgrade" import="true" name="Heavy mining laser" hidden="false" id="77c3-af32-492b-b553" publicationId="a5ca-d2f8-fa5a-c120">
       <profiles>
         <profile name="Heavy mining laser" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="68af-1788-44ca-a39f" page="54" publicationId="f5e5-c199-d3d4-ccf6">
           <characteristics>
@@ -7982,6 +7997,13 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Heavy (X)" id="c6ff-a53e-0e08-6c82" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
+          <modifiers>
+            <modifier type="set" value="Heavy (RS)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Stub cannon" hidden="false" id="3b5c-8919-432b-b6bc">
       <profiles>
@@ -8301,6 +8323,180 @@
         <infoLink name="Pinning (X)" id="d8d1-5c5f-7018-68e2" hidden="false" type="rule" targetId="88b6-6493-e4d7-1805">
           <modifiers>
             <modifier type="set" value="Pinning (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Paired close combat weapons" hidden="false" id="bfaf-dc23-7486-5705">
+      <profiles>
+        <profile name="Paired close combat weapons" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="e73d-d305-b214-7e57">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">+1</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">-</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">-</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>Militia</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tainted implements" hidden="false" id="6e95-40c5-6b02-c42e" publicationId="a5ca-d2f8-fa5a-c120" page="57">
+      <profiles>
+        <profile name="Tainted implements" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="1e87-3d32-058c-bf54">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">-</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Rending (6+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rending (X)" id="0435-b576-2562-7ef0" hidden="false" type="rule" targetId="167f-2a64-6e61-505b">
+          <modifiers>
+            <modifier type="set" value="Rending (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <comment>Militia</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shock maul" hidden="false" id="4a85-593f-8cae-9fc1" publicationId="a5ca-d2f8-fa5a-c120" page="57">
+      <profiles>
+        <profile name="Shock maul" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="6aae-ca3a-0ac2-37e2">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">-1</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">-</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Aflame (1)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Aflame (X)" id="9ac7-6662-6999-2f20" hidden="false" type="rule" targetId="fdc7-d2a1-338f-df11">
+          <modifiers>
+            <modifier type="set" value="Aflame (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Arc rifle" hidden="false" id="c038-562d-1f69-d8ba">
+      <profiles>
+        <profile name="Arc rifle" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="2f2f-92b7-a3ee-cd91">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">30</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">5</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">5</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Suppressive (1), Shock (Suppressed)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Arc</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Suppressive (X)" id="cc15-3607-ab47-aefb" hidden="false" type="rule" targetId="001f-53f3-4d87-4b43">
+          <modifiers>
+            <modifier type="set" value="Suppressive (1)" field="name">
+              <comment>1</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shock (X)" id="49cc-6e75-4389-7a99" hidden="false" type="rule" targetId="c6fd-28d0-3f80-672c">
+          <modifiers>
+            <modifier type="set" value="Shock (Suppressed)" field="name">
+              <comment>Suppressed</comment>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Assault needler" hidden="false" id="bc7c-a220-435d-8e78">
+      <profiles>
+        <profile name="Assault needler" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="530b-3fd7-4f1d-b72e" page="54" publicationId="f5e5-c199-d3d4-ccf6">
+          <characteristics>
+            <characteristic typeId="cdb0-8654-6840-1037" name="R">18</characteristic>
+            <characteristic typeId="5037-1f27-1790-e355" name="FP">2</characteristic>
+            <characteristic typeId="b9da-ee13-79f9-fa63" name="RS">2</characteristic>
+            <characteristic typeId="7a23-0248-2b94-5951" name="AP">-</characteristic>
+            <characteristic typeId="88c3-1ca5-7dc1-f291" name="D">1</characteristic>
+            <characteristic typeId="5aad-137a-8ee2-63fd" name="Special Rules">Poisoned (3+), Pinning (1)</characteristic>
+            <characteristic typeId="1247-79d2-6cc1-8a03" name="Traits">Assault, Needle</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Poisoned (X)" id="9312-7d98-4261-9107" hidden="false" type="rule" targetId="076f-2c91-c58b-71b3">
+          <modifiers>
+            <modifier type="set" value="Poisoned (3+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Pinning (X)" id="86d3-bc34-5cb7-4525" hidden="false" type="rule" targetId="88b6-6493-e4d7-1805">
+          <modifiers>
+            <modifier type="set" value="Pinning (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Webber" hidden="false" id="b659-5073-49e0-a6c1">
+      <profiles>
+        <profile name="Webber" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="cf0f-4cb1-4e78-872e" page="55" publicationId="f5e5-c199-d3d4-ccf6">
+          <characteristics>
+            <characteristic typeId="cdb0-8654-6840-1037" name="R">Template</characteristic>
+            <characteristic typeId="5037-1f27-1790-e355" name="FP">1</characteristic>
+            <characteristic typeId="b9da-ee13-79f9-fa63" name="RS">4</characteristic>
+            <characteristic typeId="7a23-0248-2b94-5951" name="AP">-</characteristic>
+            <characteristic typeId="88c3-1ca5-7dc1-f291" name="D">0</characteristic>
+            <characteristic typeId="5aad-137a-8ee2-63fd" name="Special Rules">Pinning (1)</characteristic>
+            <characteristic typeId="1247-79d2-6cc1-8a03" name="Traits">Assault</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pinning (X)" id="5c9f-00af-74c7-5f24" hidden="false" type="rule" targetId="88b6-6493-e4d7-1805">
+          <modifiers>
+            <modifier type="set" value="Pinning (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Seismic cannon" hidden="false" id="2413-ad9a-4489-acbb" publicationId="a5ca-d2f8-fa5a-c120">
+      <profiles>
+        <profile name="Seismic cannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="9921-9dff-45bd-9ad2" page="54" publicationId="f5e5-c199-d3d4-ccf6">
+          <characteristics>
+            <characteristic typeId="cdb0-8654-6840-1037" name="R">Template</characteristic>
+            <characteristic typeId="5037-1f27-1790-e355" name="FP">1</characteristic>
+            <characteristic typeId="b9da-ee13-79f9-fa63" name="RS">6</characteristic>
+            <characteristic typeId="7a23-0248-2b94-5951" name="AP">4</characteristic>
+            <characteristic typeId="88c3-1ca5-7dc1-f291" name="D">2</characteristic>
+            <characteristic typeId="5aad-137a-8ee2-63fd" name="Special Rules">Template, Heavy (RS), Breaching (6+), Stun (1)</characteristic>
+            <characteristic typeId="1247-79d2-6cc1-8a03" name="Traits">Sonic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Template" id="5f9f-4171-be0c-d32d" hidden="false" type="rule" targetId="7df2-9e88-3285-cf6a"/>
+        <infoLink name="Heavy (X)" id="cf9f-869e-6ec2-5601" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
+          <modifiers>
+            <modifier type="set" value="Heavy (RS)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Breaching (X)" id="bf41-24ea-c12a-47c1" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Stun (X)" id="945c-db09-0fe4-04a8" hidden="false" type="rule" targetId="c7c1-bbc9-f852-6f71">
+          <modifiers>
+            <modifier type="set" value="Stun (1)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>

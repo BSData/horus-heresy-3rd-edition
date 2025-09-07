@@ -523,6 +523,18 @@
     <categoryEntry name="Recon - Cavalry Only" id="053a-4e53-7b12-b4ad" hidden="false">
       <comment>Militia</comment>
     </categoryEntry>
+    <categoryEntry name="Planetary Overlord" id="0dc2-c5a4-7770-954d" hidden="false">
+      <comment>Militia</comment>
+    </categoryEntry>
+    <categoryEntry name="Militia" id="b3b6-dc52-35dc-24b4" hidden="false"/>
+    <categoryEntry name="Bulky" id="7f0e-74eb-0683-b34f" hidden="false">
+      <comment>Militia</comment>
+    </categoryEntry>
+    <categoryEntry name="Irregulars" id="3760-2dfb-561a-b603" hidden="false">
+      <comment>Militia</comment>
+    </categoryEntry>
+    <categoryEntry name="Expendable" id="afa3-a012-61dd-ae9c" hidden="false"/>
+    <categoryEntry name="Officer of the Line (3)" id="9f28-9714-ad10-960a" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -19857,6 +19869,17 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="5034-24c8-3d4c-9013" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
+        <modifier type="increment" value="3" field="0ab6-91a0-792e-4068">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="9f28-9714-ad10-960a" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" value="1" field="0ab6-91a0-792e-4068">
+          <comment>Subtract 1 to add 2. Or we could just add 1</comment>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="9f28-9714-ad10-960a" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
       </modifiers>
     </forceEntry>
     <forceEntry name="Allied Detachment and its Auxiliary" id="256b-b8a8-017a-75e9" hidden="false" childForcesLabel="Detachments" sortIndex="2">
@@ -20866,6 +20889,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
     <publication name="Horus Heresy - Talons of the Emperor 3rd Edition" id="09c6-1c1d-03a7-9556" hidden="false" shortName="TE 3.0" publisher="Horus Heresy - Talons of the Emperor 3rd Edition" publicationDate="July 25, 2025"/>
     <publication name="Github" id="e0e7-6fcd-7ee7-448d" hidden="false" publisherUrl="https://github.com/BSData/horus-heresy-3rd-edition" shortName="Github"/>
     <publication name="Horus Heresy - Liber Mechanicum 3rd Edition" id="4dc3-3347-238d-99b5" hidden="false" shortName="LM 3.0" publicationDate="July 26, 2025"/>
+    <publication name="Legacies of the Age of Darkness: The Imperialis Militia" id="a5ca-d2f8-fa5a-c120" hidden="false" shortName="Militia: Legacies" publicationDate="August 28, 2025" publisher="Warhammer Community" publisherUrl="https://www.warhammer-community.com/en-gb/downloads/warhammer-the-horus-heresy/"/>
   </publications>
   <costTypes>
     <costType name="Point(s)" id="9893-c379-920b-8982" defaultCostLimit="-1"/>
