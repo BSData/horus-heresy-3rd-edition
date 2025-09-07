@@ -192,7 +192,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
@@ -202,7 +202,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                     <modifier type="increment" value="2" field="02ad-ebe6-86e7-9fd6"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
                   </conditions>
                   <comment>Master Sergeant - Existing Champion</comment>
                 </modifierGroup>
@@ -232,9 +232,20 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                 <entryLink import="true" name="Caedere Weapons" hidden="false" id="2bc2-d4d8-3c17-1546" type="selectionEntryGroup" targetId="f18f-e86f-e13e-4a48" sortIndex="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4740-2dbd-a411-cb31"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="40f2-700e-a02b-8965" automatic="true"/>
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="5d93-8523-229e-32df" field="defaultSelectionEntryId"/>
+                    <modifier type="set" value="0" field="40f2-700e-a02b-8965">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="2fcc-92a6-d03a-4b55" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
                   </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Power fist" hidden="false" id="631a-dcbf-5da6-e450" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="3">
@@ -297,7 +308,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -406,7 +417,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
@@ -417,7 +428,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                     <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
                   </conditions>
                   <comment>Master Sergeant</comment>
                 </modifierGroup>
@@ -608,6 +619,13 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
               </constraints>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Red Butcher" hidden="false" id="08a3-46d5-a3ce-0b30" sortIndex="2">
           <constraints>
@@ -647,7 +665,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -1305,7 +1323,7 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -1413,7 +1431,7 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
@@ -1424,7 +1442,7 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                     <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
                   </conditions>
                   <comment>Master Sergeant</comment>
                 </modifierGroup>
@@ -1473,7 +1491,6 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d213-f8a0-4954-a9b0"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Caedere Weapons" hidden="false" id="e6e0-ef14-7305-e7db" type="selectionEntryGroup" targetId="f18f-e86f-e13e-4a48"/>
                 <entryLink import="true" name="Legion Sergeant Melee Weapons (no chainsword)" hidden="false" id="6854-9333-61d6-e0ba" type="selectionEntryGroup" targetId="c7ca-8933-a703-7301" flatten="true"/>
               </entryLinks>
               <constraints>
@@ -1486,6 +1503,13 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
             <categoryLink targetId="594d-fa82-13cb-a345" id="d9b7-81cc-464d-84ea" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="73c4-b14a-4752-b56c" primary="false" name="Sergeant Model Sub-Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1521,7 +1545,7 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
       </entryLinks>
       <rules>
         <rule name="Bearers of the Blood Hand" id="0264-f73a-e487-91eb" hidden="false">
-          <description>When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, the Controlling Player scores 1 Combat Resolution Point for each Unit that includes any Models with this Special Rule.</description>
+          <description>When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, the Controlling Player scores 1 Combat Resolution Point for each Unit that includes any Models with this Special Rule.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -1564,7 +1588,7 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -1673,7 +1697,7 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
@@ -1684,7 +1708,7 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                     <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
                   </conditions>
                   <comment>Master Sergeant</comment>
                 </modifierGroup>
@@ -1697,7 +1721,6 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4370-5a0d-4552-b0a4"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfad-adcf-473f-9ae1"/>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="7a6e-a488-dd62-5eed"/>
           </constraints>
           <entryLinks>
             <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="0186-4cb3-447d-bd43" name="Bolt pistol" sortIndex="1">
@@ -1734,7 +1757,6 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="834f-6c2e-4ea2-b6b2"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Caedere Weapons" hidden="false" id="6b31-7e84-be71-12c6" type="selectionEntryGroup" targetId="f18f-e86f-e13e-4a48"/>
                 <entryLink import="true" name="Legion Sergeant Melee Weapons (no chainsword)" hidden="false" id="5c70-4f60-45c5-8a00" type="selectionEntryGroup" targetId="c7ca-8933-a703-7301" flatten="true">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0f0-cef8-4885-abc5"/>
@@ -1752,6 +1774,13 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
             <categoryLink targetId="8045-89a4-76d4-fcef" id="b18a-38cf-46f3-8fb4" primary="false" name="Sergeant Model Sub-Type"/>
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="a742-99ae-4c0f-a143" primary="false" name="Antigrav Model Sub-Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1793,7 +1822,7 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
       </entryLinks>
       <rules>
         <rule name="Bearers of the Blood Hand" id="bc60-0902-c013-18ae" hidden="false">
-          <description>When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, the Controlling Player scores 1 Combat Resolution Point for each Unit that includes any Models with this Special Rule.</description>
+          <description>When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, the Controlling Player scores 1 Combat Resolution Point for each Unit that includes any Models with this Special Rule.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -1807,116 +1836,30 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
     <catalogueLink type="catalogue" name="Special Rules" id="c4e7-0fe8-a551-95ff" targetId="106b-693b-99f2-00c3"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Caedere Weapons" id="f18f-e86f-e13e-4a48" hidden="false">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Meteor hammer" hidden="false" id="5d93-8523-229e-32df" sortIndex="1" defaultAmount="1">
-          <profiles>
-            <profile name="Meteor hammer" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="bb48-1756-46f0-3af8">
-              <characteristics>
-                <characteristic name="IM" typeId="6eec-4093-f946-1014">1</characteristic>
-                <characteristic name="AM" typeId="03d0-6094-84f0-e27e">-1</characteristic>
-                <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
-                <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-                <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
-                <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Impact (IM)</characteristic>
-                <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Impact (X)" id="8c9d-da08-fb7c-6823" hidden="false" type="rule" targetId="6ead-c31c-ab09-2f8c"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Excoriator chainaxe" hidden="false" id="a13c-fa7e-22a2-7ca1" sortIndex="2">
-          <profiles>
-            <profile name="Excoriator chainaxe" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="2a3f-8393-bf2d-12f7">
-              <characteristics>
-                <characteristic name="IM" typeId="6eec-4093-f946-1014">-2</characteristic>
-                <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
-                <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
-                <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-                <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
-                <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+), Shred (6+)</characteristic>
-                <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Chain</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Breaching (X)" id="bbdb-f0a2-ff1c-3d31" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
-              <modifiers>
-                <modifier type="set" value="Breaching (6+)" field="name">
-                  <comment>6</comment>
-                </modifier>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Shred (X)" id="6726-3f1a-8ebd-9ac5" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
-              <modifiers>
-                <modifier type="set" value="Shred (6+)" field="name">
-                  <comment>6</comment>
-                </modifier>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Paired falax blades" hidden="false" id="23ac-beeb-dfe5-bed4" sortIndex="3">
-          <profiles>
-            <profile name="Paired falax blades" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="0f8f-b73b-4a75-bc87">
-              <characteristics>
-                <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
-                <characteristic name="AM" typeId="03d0-6094-84f0-e27e">+2</characteristic>
-                <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
-                <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-                <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
-                <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">-</characteristic>
-                <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Barb-hook lash" hidden="false" id="dc05-c0cf-935f-2c7f" sortIndex="4">
-          <profiles>
-            <profile name="Barb-hook lash" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="25f2-eb9d-fc87-babb">
-              <characteristics>
-                <characteristic name="IM" typeId="6eec-4093-f946-1014">+1</characteristic>
-                <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
-                <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
-                <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-                <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
-                <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Critical Hit (6+), Phage (S)</characteristic>
-                <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Critical Hit (X)" id="57c2-c816-1ed4-98c3" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
-              <modifiers>
-                <modifier type="set" value="Critical Hit (6+)" field="name">
-                  <comment>6</comment>
-                </modifier>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Phage (X)" id="d80b-1a56-5910-e008" hidden="false" type="rule" targetId="3e26-d357-69d6-1341">
-              <modifiers>
-                <modifier type="set" value="Phage (S)" field="name">
-                  <comment>S</comment>
-                </modifier>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
     <selectionEntryGroup name="Rite of War" id="1455-b8d9-311a-e3f6" hidden="false" defaultSelectionEntryId="c119-d969-8ad8-a54a">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="RoW: Legiones Hereticus World Eaters" hidden="false" id="a095-2238-5c9e-0576">
+        <selectionEntry type="upgrade" import="true" name="Legiones Hereticus World Eaters" hidden="false" id="a095-2238-5c9e-0576">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="079c-1e93-eb2e-8bed"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Legion Tactica: WE" hidden="false" id="76a0-5e6b-d5c1-2c48">
+            <selectionEntry type="upgrade" import="true" name="Legion Tactica" hidden="false" id="76a0-5e6b-d5c1-2c48" sortIndex="1">
               <rules>
                 <rule name="The Nails&apos; Bite" id="7b8c-068a-9985-9b71" hidden="false">
-                  <description>&quot;&quot;</description>
+                  <description>&quot;The Controlling Player may choose that a World Eaters Unit becomes Lost to the Nails when it fails a Leadership Check&quot;
+When a Unit entirely composed of Models with this Special Rule fails a Leadership Check, that Unit&apos;s Controlling Player can choose for that Unit to become Lost to the Nails.</description>
+                </rule>
+                <rule name="Lost to the Nails" id="b0e3-2944-982a-e8c4" hidden="false">
+                  <description>When a Unit becomes Lost to the Nails, all Tactical Statuses affecting it are removed. In addition, while a Unit is Lost to the Nails:
+
+
+- Models in that Unit may add +1&quot; to the distance of any Set-up Move.
+- Modify the Attacks Characteristic of Models in that Unit by +1.
+- Models in that Unit are considered to have a Leadership, Cool and Willpower Characteristic of 10 (unless it would normally be higher).
+- If at the start of the Controlling Player&apos;s Charge Sub-Phase, the Unit is within 12&quot; of any enemy Models, that Unit must make a Charge Move. If more than one enemy Unit is within 12&quot;, the Controlling Player of this Unit must select the closest enemy Unit as the Target Unit for that Charge.
+
+
+At the start of the Controlling Player&apos;s Charge Sub-Phase, if there are no enemy Units within 12&quot; of a Unit that is Lost to the Nails, that Unit is no longer Lost to the Nails.</description>
                 </rule>
               </rules>
               <constraints>
@@ -1924,12 +1867,12 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52b3-b36a-90bf-9952"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Gambit: Brutal Dimemberment" hidden="false" id="2032-2088-368f-8e81">
+            <selectionEntry type="upgrade" import="true" name="Gambit" hidden="false" id="2032-2088-368f-8e81" sortIndex="2">
               <profiles>
                 <profile name="Brutal Dimemberment" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="1e68-7b8f-e641-b1cb">
                   <characteristics>
-                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7"/>
-                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a"/>
+                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows the Controlling Player to score additional Combat Resolution Points if they are the winner of a Challenge.</characteristic>
+                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">While this Gambit is selected, if the enemy Model is Removed as a Casualty during the Strike Step, during the subsequent Glory Step, the Controlling Player gains 2 additional Combat Resolution Points.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1938,11 +1881,18 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82ff-8a70-ed85-d996"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Advanced Reaction - Furious Charge" hidden="false" id="3c47-c5a2-e7a4-8906">
+            <selectionEntry type="upgrade" import="true" name="Advanced Reaction" hidden="false" id="3c47-c5a2-e7a4-8906" sortIndex="3">
               <profiles>
                 <profile name="Furious Charge" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="f42e-f20c-f516-0c50">
                   <characteristics>
-                    <characteristic name="Description" typeId="5d02-0e54-0f6a-0f0b">&quot;This Reaction allows the Reacting Unit to become Lost to the Nails after the Volley Step of a Charge.&quot;</characteristic>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reacting Unit to become Lost to the Nails after the Volley Step of a Charge.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Furious Charge Advanced Reaction at the end of Step 4 of a Charge declared by the Active Player that targets a Unit which only includes Models with the World Eaters Trait if any Models were Removed as Casualties as a result of Volley Attacks.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare the Furious Charge Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Charge triggered the Reaction. The Reacting Unit is always the Unit that was declared as the target for the Charge that triggered this Reaction.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once the Reaction is declared, the Target Unit becomes Lost to the Nails.
+2. The Reactive Player must then make a Charge Ro;; for the Reacting Unit.
+3. If the result of the Charge Roll would be enough to move any Model from the Reacting Unit into Base Contact with a Model from the Target Unit, then a Charge Move is made and the Units are Locked in Combat. Models in the Reacting Unit gain any bonuses for any Special Rules that would apply to that Unit as a result of a successful Charge.
+4. If the result of the Charge Roll would not bring any Model from the Reacting Unit into contact with a Model from the Target Unit, then no Charge Move is made and the Players proceed to Step 5 of the Charge process.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1953,16 +1903,21 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
             </selectionEntry>
           </selectionEntries>
           <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+            <modifier type="add" value="Legiones Hereticus can only be selected for an Army with the Traitor Allegiance" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a095-2238-5c9e-0576" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="RoW:Legiones Astartes World Eaters" hidden="false" id="c119-d969-8ad8-a54a">
+        <selectionEntry type="upgrade" import="true" name="Legiones Astartes World Eaters" hidden="false" id="c119-d969-8ad8-a54a">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Legion Tactica: WE" hidden="false" id="4755-a242-4d97-a2cc">
+            <selectionEntry type="upgrade" import="true" name="Legion Tactica" hidden="false" id="4755-a242-4d97-a2cc" sortIndex="1">
               <rules>
                 <rule name="Violence Incarnate" id="b891-bc7e-86a4-203c" hidden="false">
                   <description>&quot;World Eaters gain a +1 to their Attacks Characteristic when they Charge.&quot;
@@ -1975,9 +1930,9 @@ On any Turn in which they made a Charge Move, Models with this Special Rule modi
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c762-e816-be7a-2d55"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Gambit: Violent Overkill" hidden="false" id="edaf-aed6-0e44-c425">
+            <selectionEntry type="upgrade" import="true" name="Gambit" hidden="false" id="edaf-aed6-0e44-c425" sortIndex="2">
               <profiles>
-                <profile name="Gambit: Violent Overkill" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="2fb5-499c-55b2-aa59">
+                <profile name="Violent Overkill" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="2fb5-499c-55b2-aa59">
                   <characteristics>
                     <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows additional wounds to be allocated to enemy Models outside the Challenge when the opponent is Removed as a Casualty</characteristic>
                     <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">If this Gambit is selected, then when this Model makes attacks during the Strike Step, if the other Model involved in the Challenge is Removed as a Casualty, any remaining wounds must instead be allocated to other eligible enemy Models in the same Combat, using the normal Rules.</characteristic>
@@ -1989,11 +1944,18 @@ On any Turn in which they made a Charge Move, Models with this Special Rule modi
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="508b-a2a3-8e4f-820b"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Advanced Reaction - Brutal Tide" hidden="false" id="4a0c-0020-329f-f12e">
+            <selectionEntry type="upgrade" import="true" name="Advanced Reaction" hidden="false" id="4a0c-0020-329f-f12e" sortIndex="3">
               <profiles>
                 <profile name="Brutal Tide" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="378d-cd14-1e73-dbf0">
                   <characteristics>
-                    <characteristic name="Description" typeId="5d02-0e54-0f6a-0f0b">&quot;This Reaction allows the Reacting Unit to make a Charge towards a Unit that Targets them with a Shooting Attack.&quot;</characteristic>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reacting Unit to make a Charge towards a Unit that Targets them with a Shooting Attack.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">Once per Battle, the Reactive Player may declare the Brutal Tide Advanced Reaction during Step 4 of a Shooting Attack delivered by the Active Player that targets a Unit which only includes Models with the World Eaters Trait and does not have the Vehicle Type.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare the Brutal Tide Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Shooting Attack triggered the Reaction. The Reacting Unit is always the Unit that was declared as the target of the Shooting Attack that triggered the Reaction.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. For the duration of the current Shooting Phase, all Models in the Reacting Unit gain the Eternal Warrior (1) Special Rule.
+2. Immediately after Step 11 of the Shooting Attack that triggered the Reaction is resolved, the Reactive Player must make a Charge Roll for the Reacting Unit.
+3. If the result of the Charge Roll would be enough to move any Model from the Reacting Unit into Base Contact with a Model from the Target Unit, then a Charge Move is made and the Units are Locked in Combat. Models in the Reacting Unit gain any bonuses for any Special Rules that would apply to that Unit as a result of a successful Charge.
+4. If the result of the Charge Roll would not bring any Model from the Reacting Unit into contact with a Model from the Target Unit, then no Charge Move is made.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>

@@ -247,7 +247,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">Any Model with the Iron Hands Trait and the Vehicle Type may have Armatus Necrotechnika selected for it for +10 points per Model.
 
 
-A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Additionally, if any Models were Removed as Casualties from a Unit that has any Models within 6&quot; of a Model with Armatus Necrotechnika during the same Turn as a Repair Roll is made for that Model, the Controlling Player can add 1 to the result of the Repair Roll.</characteristic>
+A Model with Armatus Necrotechnika gains the Auto-Repair (5+) Special Rule. Additionally, if any Models were Removed as Casualties from a Unit that has any Models within 6&quot; of a Model with Armatus Necrotechnika during the same Turn as a Repair Roll is made for that Model, the Controlling Player can add 1 to the result of the Repair Roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -292,7 +292,7 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
@@ -309,7 +309,7 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
                     </modifier>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -461,7 +461,7 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
@@ -472,7 +472,7 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
                     <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
                   </conditions>
                   <comment>Master Sergeant</comment>
                 </modifierGroup>
@@ -536,6 +536,13 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
             <categoryLink targetId="594d-fa82-13cb-a345" id="4ce0-e870-4853-ab10" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="53cf-7b39-4890-b01c" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Immortal" hidden="false" id="de2c-ac8f-4ed3-47d2" sortIndex="2">
           <profiles>
@@ -571,7 +578,7 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -892,7 +899,7 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
@@ -903,7 +910,7 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
                     <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
                   </conditions>
                   <comment>Master Sergeant</comment>
                 </modifierGroup>
@@ -927,6 +934,13 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <modifiers>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Gorgon Terminator" hidden="false" id="e227-99b9-e7a8-99f7" sortIndex="2">
           <entryLinks>
@@ -977,7 +991,7 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -1209,7 +1223,7 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
@@ -1226,7 +1240,7 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
                     </modifier>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -1886,13 +1900,18 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
         <categoryLink targetId="a38e-50ff-310f-f19e" id="dec0-1f0b-632e-5c4c" primary="true" name="Retinue"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Gorgon Terminator Squad" hidden="false" id="c171-eaf0-8759-cc3f" type="selectionEntry" targetId="6545-a621-619e-4757">
+      <categoryLinks>
+        <categoryLink targetId="3235-bd79-e9b1-60fa" id="6822-efd5-b41f-35b4" primary="true" name="Heavy Assault"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Rite of War" id="58e9-c71e-5eda-85d1" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="RoW: Legiones Astartes Iron Hands" hidden="false" id="b962-fb13-65d7-d36e">
+        <selectionEntry type="upgrade" import="true" name="Legiones Astartes Iron Hands" hidden="false" id="b962-fb13-65d7-d36e">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Legion Tactica: IH" hidden="false" id="24b7-9ad3-05c1-930b">
+            <selectionEntry type="upgrade" import="true" name="Legion Tactica" hidden="false" id="24b7-9ad3-05c1-930b" sortIndex="1">
               <rules>
                 <rule name="The Gorgon&apos;s Scales" id="eb2b-55d2-bfa4-e1dd" hidden="false">
                   <description>&quot;Shooting Attacks targeting Iron Hands suffer a Strength penalty&quot;
@@ -1905,7 +1924,7 @@ The Ranged Strength of attacks made as a part of a Shooting Attack are modified 
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="235b-79a2-b01a-6cdb"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Gambit: Legion of One" hidden="false" id="d3f9-cfe6-9f73-831e">
+            <selectionEntry type="upgrade" import="true" name="Gambit" hidden="false" id="d3f9-cfe6-9f73-831e" sortIndex="2">
               <profiles>
                 <profile name="Legion of One" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="0972-1245-2cc6-e374">
                   <characteristics>
@@ -1919,9 +1938,9 @@ The Ranged Strength of attacks made as a part of a Shooting Attack are modified 
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e05-799c-61c7-d559"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Advanced Reaction - Spite of the Gorgon" hidden="false" id="820b-2712-8cf9-821f">
+            <selectionEntry type="upgrade" import="true" name="Advanced Reaction" hidden="false" id="820b-2712-8cf9-821f" sortIndex="3">
               <profiles>
-                <profile name="Advanced Reaction - Spite of the Gorgon" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="bdf5-7cf1-05cd-ceab">
+                <profile name="Spite of the Gorgon" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="bdf5-7cf1-05cd-ceab">
                   <characteristics>
                     <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reacting Unit to make a Shooting Attack targeting a Unit that makes a Charge.</characteristic>
                     <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">Once per Battle, the Reactive Player may declare the Spite of the Gorgon Advanced Reaction at the start of Step 3 of the Charge process of any Charge declared by the Active Player that targets a Unit under the Reactive Player&apos;s Control that only includes Models with the Iron Hands Trait.</characteristic>

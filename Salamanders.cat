@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="f148-a6e4-5a8c-3aeb" name="                        XVIII - Salamanders" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="11" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
-    <selectionEntry type="unit" import="true" name="Firedrake Terminator Squad" hidden="false" id="09a9-6c68-9b0b-f24f" sortIndex="2">
+    <selectionEntry type="unit" import="true" name="Firedrake Terminator Squad" hidden="false" id="09a9-6c68-9b0b-f24f" sortIndex="3">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Firedrake" hidden="false" id="1f0a-53e1-910a-a3b1" sortIndex="2">
           <profiles>
@@ -37,7 +37,7 @@
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -58,6 +58,120 @@
             <categoryLink targetId="594d-fa82-13cb-a345" id="b4f3-1ed9-4681-b08c" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="1e7d-9066-28d2-97a0" id="c37d-bb1a-4d8e-aace" primary="false" name="Heavy Model Sub-Type"/>
           </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" id="0efc-92be-708e-fd3a" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Forge-crafted thunder hammer" id="880f-ecf5-af86-4441" hidden="false" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Forge-crafted thunder hammer" hidden="false" id="9783-61b0-d7b1-aae4" type="selectionEntry" targetId="d08b-34be-c6b9-8494" defaultAmount="1" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b3af-ac1a-025b-4c2e" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e029-2c98-deb7-a2ae" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Power Weapon" hidden="false" id="fc96-9715-1356-b550" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" sortIndex="2">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a84d-9e9f-5227-62a7" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b07-7e94-2d28-cd4a" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Power fist" hidden="false" id="754d-380e-a9eb-3f7b" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="3">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c8c2-b41c-7bed-a7ee" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0aa7-5a79-76ae-93d4" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Forge-crafted power fist" hidden="true" id="1a7d-fb82-71b8-8c29" type="selectionEntry" targetId="8146-abba-1612-3d0f" sortIndex="4">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="72e5-e338-58af-1bbe" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a646-f550-b69c-5a23" includeChildSelections="false"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>SL</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <comment>SL+Sgt/Cmd/Spec/Champ Only</comment>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Chainfist" hidden="false" id="ceab-cd49-aa83-3c63" type="selectionEntry" targetId="8322-1eca-e855-2683" sortIndex="5">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a3fd-1334-ccac-45da" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8ed-269c-a31a-7c74" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ec5-715e-edcc-1f47" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4907-338b-81af-d2f1" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Drakenscale" id="a274-ce72-fdca-f29c" hidden="false" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Drakenscale" hidden="false" id="0912-a280-fab5-47a0" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" defaultAmount="1" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1c21-968a-b84c-b0a8" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25a8-2e2d-34ec-c464" includeChildSelections="false"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="add" value="26c6-e05c-0f72-7852" field="category" scope="model"/>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Combi-bolter" hidden="false" id="d6c5-e0de-14c1-33eb" type="selectionEntry" targetId="042d-9e60-db9e-c147" sortIndex="2">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="498f-92a2-ef4f-778e" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9fc-715a-1abd-6140" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="729d-c224-be53-308d" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" sortIndex="3">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2076-4cc0-d2b0-0022" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="916b-dfca-b49b-0ec7" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="04a0-ca39-12df-4e6c" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff8c-bfd0-c7d3-582f" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="1 model may exchange Drakenscale for:" id="5d0a-4119-94cb-8327" hidden="false" flatten="false" sortIndex="4">
+                      <entryLinks>
+                        <entryLink import="true" name="Forge-crafted heavy flamer" hidden="false" id="8275-2161-8ecd-96f6" type="selectionEntry" targetId="6d3e-3152-c52f-1d66">
+                          <constraints>
+                            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="27ab-a819-bc7e-2832" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7787-efd6-1d77-b4a0" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="5a09-4681-117a-ee15" includeChildSelections="true"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="c189-fcbf-ab86-9b60" includeChildSelections="true"/>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2294-80ed-2516-7d79" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e5e1-5a4d-5e9a-8195" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Firedrake Master" hidden="false" id="6f99-6a87-8ad6-8467" sortIndex="1">
           <profiles>
@@ -93,7 +207,7 @@
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
@@ -104,7 +218,7 @@
                     <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
                   </conditions>
                   <comment>Master Sergeant</comment>
                 </modifierGroup>
@@ -127,6 +241,119 @@
               </conditions>
             </modifier>
           </modifiers>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" id="ac5d-99bb-3acd-e960" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Forge-crafted thunder hammer" id="d573-b96e-0b79-245c" hidden="false" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Forge-crafted thunder hammer" hidden="false" id="38b4-3cb0-53e6-e8f4" type="selectionEntry" targetId="d08b-34be-c6b9-8494" defaultAmount="1" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d531-8d0c-c6e7-46fc" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93c7-6355-fd36-8074" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Power Weapon" hidden="false" id="0253-ad3d-7d15-ee06" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" sortIndex="2">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7c86-5295-5584-4a34" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a97-d942-4103-a6e8" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Power fist" hidden="false" id="9426-91b0-5ea0-0852" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="3">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e68d-6c64-e7c2-dbba" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b0c-13f9-17eb-ce22" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Forge-crafted power fist" hidden="true" id="184f-acc3-384a-2456" type="selectionEntry" targetId="8146-abba-1612-3d0f" sortIndex="4">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0c61-f161-5b03-bfc7" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ff0-f1e8-2274-6170" includeChildSelections="false"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>SL</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <comment>SL+Sgt/Cmd/Spec/Champ Only</comment>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Chainfist" hidden="false" id="c302-f73a-ca36-e5cb" type="selectionEntry" targetId="8322-1eca-e855-2683" sortIndex="5">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0038-073e-786c-0657" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01b3-45be-f734-0a21" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f82c-6e71-ce16-76be" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="450c-319f-d0d6-f969" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Drakenscale" id="58a6-5b26-cd9f-26a9" hidden="false" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Drakenscale" hidden="false" id="2f75-e87a-ca04-5321" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" defaultAmount="1" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0aa8-d03b-8378-7362" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e52-83ed-488c-6b36" includeChildSelections="false"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="add" value="26c6-e05c-0f72-7852" field="category" scope="model"/>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Combi-bolter" hidden="false" id="278f-cd9e-55a5-d96e" type="selectionEntry" targetId="042d-9e60-db9e-c147" sortIndex="2">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="069e-0b0b-0207-841e" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7963-752f-3297-08e3" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="6790-641f-2344-b683" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" sortIndex="3">
+                      <constraints>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0d03-ad80-9cca-c189" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="575b-6432-22c0-8790" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc56-65c6-c2ed-d149" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7da7-b9b9-6545-15f0" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="1 model may exchange Drakenscale for:" id="2ffd-8158-acdb-9516" hidden="false" flatten="false" sortIndex="4">
+                      <entryLinks>
+                        <entryLink import="true" name="Forge-crafted heavy flamer" hidden="false" id="80e6-0617-080c-d9c6" type="selectionEntry" targetId="6d3e-3152-c52f-1d66">
+                          <constraints>
+                            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6415-9164-bb86-f74a" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b734-1952-69cb-5422" includeChildSelections="false"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="837e-302a-56ac-0b78" includeChildSelections="true"/>
+                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ac56-c454-6ea1-e2dc" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fd7-6b4f-c2c7-2657" includeChildSelections="false"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -397,7 +624,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         <categoryLink targetId="e3cd-7a38-34d7-9cbf" id="f322-b988-1519-b77f" primary="false" name="Master of the Legion"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Pyroclast Squad" hidden="false" id="fbbe-aa8c-d645-7970" sortIndex="3">
+    <selectionEntry type="unit" import="true" name="Pyroclast Squad" hidden="false" id="fbbe-aa8c-d645-7970" sortIndex="4">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Pyroclast" hidden="false" id="bad9-4086-bbcb-0941" sortIndex="2">
           <profiles>
@@ -433,7 +660,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -488,7 +715,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
@@ -499,7 +726,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                     <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
                   </conditions>
                   <comment>Master Sergeant</comment>
                 </modifierGroup>
@@ -618,7 +845,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Cassian Dracos Reborn" hidden="false" id="84e1-2bda-1d5b-2b23" sortIndex="4">
+    <selectionEntry type="unit" import="true" name="Cassian Dracos Reborn" hidden="false" id="84e1-2bda-1d5b-2b23" sortIndex="2">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Cassian Dracos Reborn" hidden="false" id="dc90-e1e3-4524-9c73">
           <profiles>
@@ -772,7 +999,7 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
@@ -783,7 +1010,7 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
                     <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
                   </conditions>
                   <comment>Master Sergeant</comment>
                 </modifierGroup>
@@ -868,7 +1095,7 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -1038,7 +1265,7 @@ effects of the Limited (X) Special Rule when making Volley Attacks.</description
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
@@ -1049,7 +1276,7 @@ effects of the Limited (X) Special Rule when making Volley Attacks.</description
                     <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
                   </conditions>
                   <comment>Master Sergeant</comment>
                 </modifierGroup>
@@ -1209,7 +1436,7 @@ effects of the Limited (X) Special Rule when making Volley Attacks.</description
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -1426,6 +1653,20 @@ effects of the Limited (X) Special Rule when making Volley Attacks.</description
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="ad93-f4bc-58d6-8d71">
+      <entryLinks>
+        <entryLink import="true" name="Rite of War" hidden="false" id="ae5b-5206-47b4-025b" type="selectionEntryGroup" targetId="b72b-c623-c592-0128">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3e02-be68-ee06-cdad"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f95-94df-8643-89a2"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7451-25e7-e816-a104"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15f1-fdb2-6fe2-a69f"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="d382-c20c-501f-2808" targetId="9b32-f350-6aa9-9c09" importRootEntries="true"/>
@@ -1442,19 +1683,19 @@ effects of the Limited (X) Special Rule when making Volley Attacks.</description
         <categoryLink targetId="22ee-7208-4089-b005" id="f5d9-e339-c9a1-e1a9" primary="true" name="Warlord"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Firedrake Terminator Squad" hidden="false" id="e255-98b6-88b6-d0f0" type="selectionEntry" targetId="09a9-6c68-9b0b-f24f" sortIndex="2">
+    <entryLink import="true" name="Firedrake Terminator Squad" hidden="false" id="e255-98b6-88b6-d0f0" type="selectionEntry" targetId="09a9-6c68-9b0b-f24f" sortIndex="3">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="b488-45a8-2441-ef04" primary="true" name="Elites"/>
         <categoryLink targetId="f6fe-18f5-7b4d-b57a" id="130e-ef00-f85c-d5da" primary="false" name="Salamanders"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Pyroclast Squad" hidden="false" id="7bf1-9ac3-d0ea-6229" type="selectionEntry" targetId="fbbe-aa8c-d645-7970" sortIndex="3">
+    <entryLink import="true" name="Pyroclast Squad" hidden="false" id="7bf1-9ac3-d0ea-6229" type="selectionEntry" targetId="fbbe-aa8c-d645-7970" sortIndex="4">
       <categoryLinks>
         <categoryLink targetId="f6fe-18f5-7b4d-b57a" id="f1e0-ac2c-49b2-949a" primary="false" name="Salamanders"/>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="70e5-2d20-c481-ba6b" primary="true" name="Heavy Assault"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Cassian Dracos Reborn" hidden="false" id="e91f-5cc0-d0d7-d6f0" type="selectionEntry" targetId="84e1-2bda-1d5b-2b23" sortIndex="4">
+    <entryLink import="true" name="Cassian Dracos Reborn" hidden="false" id="e91f-5cc0-d0d7-d6f0" type="selectionEntry" targetId="84e1-2bda-1d5b-2b23" sortIndex="2">
       <categoryLinks>
         <categoryLink targetId="f6fe-18f5-7b4d-b57a" id="5149-edff-4a55-439a" primary="false" name="Salamanders"/>
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="7381-2829-dbd1-f81d" primary="true" name="High Command"/>
@@ -1470,6 +1711,11 @@ effects of the Limited (X) Special Rule when making Volley Attacks.</description
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="513c-05fa-ca76-8992" primary="true" name="Support"/>
         <categoryLink targetId="f6fe-18f5-7b4d-b57a" id="3886-9ecc-4a6d-40d9" primary="false" name="Salamanders"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Rite of War" hidden="false" id="3cb3-5760-3bdc-8870" type="selectionEntry" targetId="ad93-f4bc-58d6-8d71">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="6140-353a-b740-98f2" primary="true" name="Army Configuration"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1513,6 +1759,66 @@ A Unit made up entirely of Models with this Special Rule is unaffected by any va
 Special Rule.</description>
             </rule>
           </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Rite of War" id="b72b-c623-c592-0128" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Legiones Astartes Salamanders" hidden="false" id="62ac-be20-2255-ef36">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Legion Tactica" hidden="false" id="6936-1eab-aa39-3f95" sortIndex="1">
+              <rules>
+                <rule name="Promethean Endurance" id="66e4-08d7-3d6c-235a" hidden="false">
+                  <description>&quot;Wound Tests made against Salamanders fail on the unmodified roll of a 1 or 2.&quot;
+
+
+Wound Tests that have an unmodified result of 1 or 2 that target any Unit that includes only Models with this Special Rule are never successful regardless of the Strength Characteristic of a Hit or any Special Rules that set the Target Number for Wound Tests. This Special Rule has no effect on Armour Penetration Tests.</description>
+                </rule>
+                <rule name="Blood of Fire" id="792f-e75a-1bb2-f36e" hidden="false">
+                  <description>&quot;Units of Salamanders may ignore Tactical Status Checks applied from Flame Weapons.&quot;
+
+
+A Unit made up entirely of Models with this Special Rule is unafected by any variant of the Panic (X) Special Rule on Weapons with the Flame Trait.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26b5-fd14-b6b7-a519"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db4d-26c4-a1d9-cc9c"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gambit" hidden="false" id="1296-4621-7169-0ba7" sortIndex="2">
+              <profiles>
+                <profile name="Duty is Sacrifice" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="1442-2321-b209-f97b">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows a Player to choose to suffer wounds in return for a bonus to their own Focus Roll.</characteristic>
+                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">If this Gambit is selected, the Controlling Player can add a bonus of 1,2 or 3 to their Focus Roll. In the Apply Damage from Unsaved Wounds Step of the opponent&apos;s Strike Step, the Model this Gambit was selected for suffers a number of wounds, each with an AP Characteristic of 5 and a Damage Characteristic of 1, equal to the bonus to the Focus Roll applied by this Gambit, against which only Armour Saves, Invulnerable Saves and Damage Mitigation rolls can be taken as normal.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2659-b4c6-807f-cd5a"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ba8-d273-ecc5-22e8"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Advanced Reaction" hidden="false" id="59a1-c997-8495-8e64" sortIndex="3">
+              <profiles>
+                <profile name="Selfless Burden" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="99de-961b-602f-71bc">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reacting Unit to increase certain Characteristics during the Assault Phase.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">Once per Battle, the Reactive Player may declare the Selfless Burden Advanced Reaction at the start of Step 3 of a Charge declared by the Active Player, targeting a Unit under their control which only includes Models with the Salamanders Trait that do not have the Vehicle Type.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Selfless Burden Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For a Selfless Burden Advanced Reaction, the Reacting Unit is always the Unit that is the target of the Charge that triggered this Reaction.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. All Models in the Reacting Unit have their Weapon Skill, Strength and Attacks Characteristics modified by +1 until the end of the current assault Phase.
+2. In the following Statuses Sub-Phase, the Reactive Player must roll a D6 for each Model in the Reacting Unit. For each result of a 1, the Reacting Unit suffers 1 automatic wound with a Damage Characteristic of 1, an AP of -. against which Saving Throws and Damage Mitigation Rolls may be taken.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0884-17f8-0218-9eb1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ced3-5a7d-0d80-44d4"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
