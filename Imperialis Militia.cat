@@ -10,6 +10,7 @@
     <catalogueLink type="catalogue" name="Mechanicum" id="6364-b137-000d-d755" targetId="2f57-6e9d-8a7b-5c2e"/>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="5e7b-f270-2911-7c6d" targetId="9b32-f350-6aa9-9c09"/>
     <catalogueLink type="catalogue" name="Solar Auxilia" id="d091-a1c5-d7eb-7650" targetId="7851-69ac-f701-034e"/>
+    <catalogueLink type="catalogue" name="Daemons of the Ruinstorm" id="d47d-43db-4fa2-1295" targetId="9396-cc24-458d-d358"/>
   </catalogueLinks>
   <sharedSelectionEntries>
     <selectionEntry name="Force Commander" type="unit" id="5877-4f6a-4887-ab66" page="13" publicationId="f5e5-c199-d3d4-ccf6">
@@ -569,6 +570,174 @@
                         </conditionGroup>
                       </conditionGroups>
                     </modifierGroup>
+                  </modifierGroups>
+                  <modifiers>
+                    <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </profile>
+                <profile name="Paragon Discipline Master" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="true" id="01a6-b768-4834-ac63">
+                  <characteristics>
+                    <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Command)</characteristic>
+                    <characteristic typeId="a106-a779-d272-5e93" name="M">6</characteristic>
+                    <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
+                    <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">3</characteristic>
+                    <characteristic typeId="498f-dce1-59fd-d8d7" name="S">3</characteristic>
+                    <characteristic typeId="3120-8275-e537-ecd2" name="T">3</characteristic>
+                    <characteristic typeId="f5cc-79a3-d302-cc1d" name="W">2</characteristic>
+                    <characteristic typeId="af9d-7db8-dc95-71c1" name="I">3</characteristic>
+                    <characteristic typeId="024e-bdb1-7982-25a0" name="A">2</characteristic>
+                    <characteristic typeId="02ad-ebe6-86e7-9fd6" name="LD">8</characteristic>
+                    <characteristic typeId="9cd1-0e7c-2cd6-5f2f" name="CL">8</characteristic>
+                    <characteristic typeId="f714-1726-37d3-44df" name="WP">7</characteristic>
+                    <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">6</characteristic>
+                    <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">5+</characteristic>
+                    <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
+                  </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Combat Veterans</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                        <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                        <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                        <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <comment>Voidjumpers</comment>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6f0c-cd4f-15fd-a798" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="set" value="10" field="a106-a779-d272-5e93"/>
+                      </modifiers>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="increment" value="1" field="498f-dce1-59fd-d8d7"/>
+                        <modifier type="decrement" value="1" field="0cd5-b269-e3bc-028b"/>
+                      </modifiers>
+                      <comment>Abhuman Muster</comment>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="36e7-0899-8689-0228" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="decrement" value="1" field="03bd-4ecb-351d-143b"/>
+                        <modifier type="floor" value="3" field="03bd-4ecb-351d-143b"/>
+                      </modifiers>
+                      <comment>Armoury of Old Night</comment>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="8cfa-d603-c5e3-995c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <comment>Debased Rabble</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="decrement" value="-1" field="29c5-925d-5b1d-1e77"/>
+                      </modifiers>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="7beb-77c0-3e6e-52a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <comment>Cyber-Augmentics</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                      </modifiers>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="a3c5-5465-34f7-4060" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <comment>Imperialis Provosts</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                      </modifiers>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <comment>Kinfolk Helots</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="3120-8275-e537-ecd2"/>
+                        <modifier type="decrement" value="1" field="a106-a779-d272-5e93"/>
+                        <modifier type="decrement" value="1" field="af9d-7db8-dc95-71c1"/>
+                      </modifiers>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="baca-1393-31e5-6d2b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <comment>Legacy of the Great Crusade</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b"/>
+                      </modifiers>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="afa3-a012-61dd-ae9c" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="7665-bd37-c552-1876" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifierGroup>
                     <modifierGroup type="and">
                       <comment>Paragon of Battle</comment>
                       <modifiers>
@@ -582,9 +751,14 @@
                           <comment>Paragon of Battle</comment>
                         </modifier>
                       </modifiers>
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="af6d-a8eb-5c34-1b8d" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifierGroup>
                   </modifierGroups>
                   <modifiers>
@@ -598,6 +772,11 @@
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="2716-21c9-70ae-443a" shared="true" includeChildSelections="true"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                 </profile>
@@ -684,6 +863,7 @@
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
                       </costs>
                     </entryLink>
+                    <entryLink import="true" name="Paragon" hidden="false" id="2716-21c9-70ae-443a" type="selectionEntry" targetId="af6d-a8eb-5c34-1b8d"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -850,6 +1030,174 @@
                         </conditionGroup>
                       </conditionGroups>
                     </modifierGroup>
+                  </modifierGroups>
+                  <modifiers>
+                    <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </profile>
+                <profile name="Paragon Mounted Discipline Master" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="true" id="3e46-6a2c-7ee3-4f02">
+                  <characteristics>
+                    <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Cavalry (Command)</characteristic>
+                    <characteristic typeId="a106-a779-d272-5e93" name="M">12</characteristic>
+                    <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
+                    <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">3</characteristic>
+                    <characteristic typeId="498f-dce1-59fd-d8d7" name="S">3</characteristic>
+                    <characteristic typeId="3120-8275-e537-ecd2" name="T">3</characteristic>
+                    <characteristic typeId="f5cc-79a3-d302-cc1d" name="W">2</characteristic>
+                    <characteristic typeId="af9d-7db8-dc95-71c1" name="I">3</characteristic>
+                    <characteristic typeId="024e-bdb1-7982-25a0" name="A">2</characteristic>
+                    <characteristic typeId="02ad-ebe6-86e7-9fd6" name="LD">8</characteristic>
+                    <characteristic typeId="9cd1-0e7c-2cd6-5f2f" name="CL">8</characteristic>
+                    <characteristic typeId="f714-1726-37d3-44df" name="WP">7</characteristic>
+                    <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">6</characteristic>
+                    <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">5+</characteristic>
+                    <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
+                  </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Combat Veterans</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                        <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                        <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                        <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <comment>Voidjumpers</comment>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6f0c-cd4f-15fd-a798" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="set" value="10" field="a106-a779-d272-5e93"/>
+                      </modifiers>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="increment" value="1" field="498f-dce1-59fd-d8d7"/>
+                        <modifier type="decrement" value="1" field="0cd5-b269-e3bc-028b"/>
+                      </modifiers>
+                      <comment>Abhuman Muster</comment>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="36e7-0899-8689-0228" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="decrement" value="1" field="03bd-4ecb-351d-143b"/>
+                        <modifier type="floor" value="3" field="03bd-4ecb-351d-143b"/>
+                      </modifiers>
+                      <comment>Armoury of Old Night</comment>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="8cfa-d603-c5e3-995c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <comment>Debased Rabble</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="decrement" value="-1" field="29c5-925d-5b1d-1e77"/>
+                      </modifiers>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="7beb-77c0-3e6e-52a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <comment>Cyber-Augmentics</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                      </modifiers>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="a3c5-5465-34f7-4060" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <comment>Imperialis Provosts</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                      </modifiers>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <comment>Kinfolk Helots</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="3120-8275-e537-ecd2"/>
+                        <modifier type="decrement" value="1" field="a106-a779-d272-5e93"/>
+                        <modifier type="decrement" value="1" field="af9d-7db8-dc95-71c1"/>
+                      </modifiers>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="baca-1393-31e5-6d2b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <comment>Legacy of the Great Crusade</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b"/>
+                      </modifiers>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="afa3-a012-61dd-ae9c" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="7665-bd37-c552-1876" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifierGroup>
                     <modifierGroup type="and">
                       <comment>Paragon of Battle</comment>
                       <modifiers>
@@ -863,9 +1211,14 @@
                           <comment>Paragon of Battle</comment>
                         </modifier>
                       </modifiers>
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="af6d-a8eb-5c34-1b8d" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifierGroup>
                   </modifierGroups>
                   <modifiers>
@@ -879,6 +1232,11 @@
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="7f74-e206-6ccb-458e" shared="true" includeChildSelections="true"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                 </profile>
@@ -968,6 +1326,7 @@
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
                       </costs>
                     </entryLink>
+                    <entryLink import="true" name="Mounted Paragon" hidden="false" id="7f74-e206-6ccb-458e" type="selectionEntry" targetId="35b9-4dc0-f68f-b758"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1014,7 +1373,7 @@
         <infoLink name="[Allegiance]" id="dcce-4bbc-eaca-8091" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="Imperialis Militia" id="a3e3-1a59-c656-1d74" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
       </infoLinks>
-      <comment>Need to figure out Paragon of Battle</comment>
+      <comment>Paragon of Battle is a little messy with multiple command</comment>
     </selectionEntry>
     <selectionEntry name="Command Troop" type="unit" id="7121-62b3-4c69-9b67" page="16" publicationId="f5e5-c199-d3d4-ccf6">
       <costs>
@@ -2548,7 +2907,6 @@
             </infoLink>
           </infoLinks>
           <entryLinks>
-            <entryLink import="true" name="Anathemata" hidden="false" id="78f3-0896-931f-a357" type="selectionEntry" targetId="091a-56c9-7eba-9fa7" sortIndex="3"/>
             <entryLink import="true" name="Rad grenades" hidden="true" id="c1e3-45b1-08cb-1acd" type="selectionEntry" targetId="cd5f-1eff-df69-6bd2">
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
@@ -2919,6 +3277,9 @@
         </entryLink>
         <entryLink import="true" name="Provenance" hidden="false" id="e75c-ee12-af76-7fc8" type="selectionEntryGroup" targetId="681d-491f-d79b-1b81"/>
       </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="d51f-8e7d-91bd-069f" id="3ce6-5055-7174-5946" primary="false" name="Rogue Psyker"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry name="Grenadier Troop" type="unit" id="1c5f-7ae7-4503-92ef" page="20" publicationId="f5e5-c199-d3d4-ccf6">
       <costs>
@@ -4559,7 +4920,6 @@
         <infoLink name="Imperialis Militia" id="e421-6c72-6482-3893" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
         <infoLink name="Heedless" id="6d10-efb6-b474-76e3" hidden="false" type="rule" targetId="a3f3-72c6-7e01-6cab"/>
       </infoLinks>
-      <comment>Veterans?</comment>
     </selectionEntry>
     <selectionEntry name="Infantry Troop" type="unit" id="f328-5cb1-4526-95d2" page="23" publicationId="f5e5-c199-d3d4-ccf6">
       <costs>
@@ -10449,7 +10809,7 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="May have its Turret Mounted battlecannon exchanged for:" id="76df-702b-471e-b386" defaultSelectionEntryId="e9a6-121d-40c4-88c2" sortIndex="1">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="ab04-ce8e-44ea-8d6c" id="e9a6-121d-40c4-88c2" name="Battlecannon" sortIndex="1">
+                <entryLink hidden="false" type="selectionEntry" targetId="ab04-ce8e-44ea-8d6c" id="e9a6-121d-40c4-88c2" name="Battlecannon" sortIndex="1" defaultAmount="1">
                   <modifiers>
                     <modifier type="set" field="name" value="Turret Mounted battlecannon"/>
                   </modifiers>
@@ -10498,6 +10858,7 @@
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e2d-38ed-41f5-805e"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="686f-b077-c035-1aa9"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Vanquisher cannon w/ co-axial Heavy stubber" hidden="false" id="53e3-25ee-edb8-a748" sortIndex="4">
@@ -10533,7 +10894,7 @@ Mounted
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="May have its Hull (Front) Mounted heavy bolter exchanged for:" id="c3c5-0c1a-44d8-b3df" sortIndex="2">
+            <selectionEntryGroup name="May have its Hull (Front) Mounted heavy bolter exchanged for:" id="c3c5-0c1a-44d8-b3df" sortIndex="2" defaultSelectionEntryId="f98c-425a-4efa-9d49">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="bc40-b14a-978e-0232" id="f98c-425a-4efa-9d49" name="Heavy bolter" sortIndex="1">
                   <modifiers>
@@ -10584,6 +10945,7 @@ Mounted
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f575-ff42-48d2-899d"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d73f-7900-7c16-7ca7"/>
               </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="May take pintle weapon:" id="1b8f-407e-45dd-93d1" sortIndex="4">
@@ -10689,16 +11051,7 @@ Mounted
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5644-cc8c-4bdf-a0ba"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="36e7-212d-449c-b07d" id="b281-f362-4ac8-9cd0" name="Multi-laser">
-              <modifiers>
-                <modifier type="set" field="name" value="Two Sponson Mounted multi-lasers"/>
-              </modifiers>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="89c8-8975-4139-94fb"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea45-2bf1-4ca3-bffc"/>
-              </constraints>
-            </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="b94f-e829-064a-9d60" id="c2aa-517b-4f9a-a73e" name="Smoke Launchers">
+            <entryLink hidden="false" type="selectionEntry" targetId="b94f-e829-064a-9d60" id="c2aa-517b-4f9a-a73e" name="Smoke Launchers" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ef54-9b77-4bef-abc6"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7528-11d8-43b0-b0da"/>
@@ -10706,7 +11059,7 @@ Mounted
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its Hull (Front) Mounted battlecannon exchanged for one of the following:" id="d25f-019e-40b7-9c61">
+            <selectionEntryGroup name="This Model may have its Hull (Front) Mounted battlecannon exchanged for one of the following:" id="d25f-019e-40b7-9c61" defaultSelectionEntryId="853b-03c1-4ad9-9667" sortIndex="1">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="ab04-ce8e-44ea-8d6c" id="853b-03c1-4ad9-9667" name="Battlecannon">
                   <modifiers>
@@ -10738,9 +11091,10 @@ Mounted
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bad3-3cc5-43b1-9afb"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ab5-c0dd-59d0-71c8"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have its Hull (Front) Mounted heavy bolter exchanged for one of the following:" id="c63d-232c-4661-9e87">
+            <selectionEntryGroup name="This Model may have its Hull (Front) Mounted heavy bolter exchanged for one of the following:" id="c63d-232c-4661-9e87" sortIndex="2">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="bc40-b14a-978e-0232" id="954f-772b-4c8d-b864" name="Heavy bolter">
                   <modifiers>
@@ -10802,9 +11156,10 @@ Mounted
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d86a-5b35-424f-9960"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0143-4acc-eedc-bb5d"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have both Sponson Mounted multi-lasers exchanged for one of the following:" id="db5e-2b8c-4a07-b6df">
+            <selectionEntryGroup name="This Model may have both Sponson Mounted multi-lasers exchanged for one of the following:" id="db5e-2b8c-4a07-b6df" defaultSelectionEntryId="b281-f362-4ac8-9cd0" sortIndex="3">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" id="d2bc-052c-4982-8654" name="Heavy flamer">
                   <modifiers>
@@ -10844,12 +11199,22 @@ Mounted
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dfe5-4b09-4e40-8c73"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Multi-laser" hidden="false" id="b281-f362-4ac8-9cd0" type="selectionEntry" targetId="36e7-212d-449c-b07d" sortIndex="1">
+                  <modifiers>
+                    <modifier type="set" value="Two Sponson Mounted multi-lasers" field="name"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="89c8-8975-4139-94fb"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea45-2bf1-4ca3-bffc"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4c5-7784-45fc-9d60"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8073-d11d-1ed9-995f"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have one item from the Militia Pintle Weapons list selected for it." id="8597-1838-4ded-ac75">
+            <selectionEntryGroup name="This Model may have one item from the Militia Pintle Weapons list selected for it." id="8597-1838-4ded-ac75" sortIndex="5">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntryGroup" targetId="ea1f-0d70-4ea7-8ec3" id="8a2e-9240-4949-828a" name="Militia Pintle Weapons">
                   <constraints>
@@ -10861,7 +11226,7 @@ Mounted
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c416-217f-4372-9e5c"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="cd98-b4ce-44b2-917e">
+            <selectionEntryGroup name="This Model may have any of the following selected for it:" id="cd98-b4ce-44b2-917e" sortIndex="6">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" id="e60c-b80f-4854-b5a6" name="Hunter-killer missile">
                   <costs>
@@ -11192,6 +11557,32 @@ Mounted
           </modifiers>
         </infoLink>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Paragon" hidden="true" id="af6d-a8eb-5c34-1b8d">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="680a-a983-a63f-e5fb"/>
+        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="80e7-c87e-2c92-3f21" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="unit" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mounted Paragon" hidden="true" id="35b9-4dc0-f68f-b758">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="168c-a8f7-d803-e457"/>
+        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="e23d-01c3-8204-68e3" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="unit" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -12931,6 +13322,24 @@ Rules</description>
         <infoLink name="Third-Line" id="6747-429e-a259-157e" hidden="false" type="rule" targetId="9ac8-527e-1249-8600"/>
         <infoLink name="Imperialis Militia" id="7655-ef46-230c-0885" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
       </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Ruinstorm Daemon Brutes" hidden="false" id="26c1-c3be-dc54-5286" type="selectionEntry" targetId="fe9c-0eae-59a2-3183">
+      <categoryLinks>
+        <categoryLink targetId="3235-bd79-e9b1-60fa" id="a60b-b150-b636-112d" primary="true" name="Heavy Assault"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="3997-20e2-b947-ad8d" field="category"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Militia Leman Russ Tank" hidden="false" id="98da-550f-7546-5a2a" type="selectionEntry" targetId="186a-9905-43e7-92b8">
+      <categoryLinks>
+        <categoryLink targetId="643a-1012-bd51-6537" id="a9be-24e5-7c06-ea89" primary="true" name="Armour"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Militia Malcador Heavy Tank" hidden="false" id="317c-984d-532e-b7de" type="selectionEntry" targetId="fde9-47aa-4f8e-91b1">
+      <categoryLinks>
+        <categoryLink targetId="643a-1012-bd51-6537" id="39e3-ab6f-5706-eb5b" primary="true" name="Armour"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <infoLinks>

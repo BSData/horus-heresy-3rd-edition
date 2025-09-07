@@ -551,6 +551,18 @@
     </categoryEntry>
     <categoryEntry name="Support - Militia Medicae Only" id="bd8e-ac40-6016-738e" hidden="false"/>
     <categoryEntry name="Officer of the Line (3)" id="9f28-9714-ad10-960a" hidden="false"/>
+    <categoryEntry name="Bulky" id="7f0e-74eb-0683-b34f" hidden="false">
+      <comment>Militia</comment>
+    </categoryEntry>
+    <categoryEntry name="Irregulars" id="3760-2dfb-561a-b603" hidden="false">
+      <comment>Militia</comment>
+    </categoryEntry>
+    <categoryEntry name="Planetary Overlord" id="0dc2-c5a4-7770-954d" hidden="false">
+      <comment>Militia</comment>
+    </categoryEntry>
+    <categoryEntry name="Expendable" id="afa3-a012-61dd-ae9c" hidden="false"/>
+    <categoryEntry name="Rogue Psyker" id="d51f-8e7d-91bd-069f" hidden="false"/>
+    <categoryEntry name="Militia" id="b3b6-dc52-35dc-24b4" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
@@ -18400,7 +18412,7 @@
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="4256-c6d3-a3ce-63c8"/>
           </constraints>
         </forceEntry>
-        <forceEntry name="Apex - Grenadier Muster" id="614d-275b-8366-4fff" hidden="true">
+        <forceEntry name="Apex - Grenadier Muster" id="614d-275b-8366-4fff" hidden="true" sortIndex="83">
           <categoryLinks>
             <categoryLink name="Retinue" hidden="false" id="1991-01d4-33ab-a1e1" targetId="a38e-50ff-310f-f19e">
               <constraints>
@@ -18663,7 +18675,7 @@
           </costs>
           <comment>Miltia</comment>
         </forceEntry>
-        <forceEntry name="Apex - Ogryn Auxilia" id="50b1-d374-4295-96cf" hidden="true">
+        <forceEntry name="Apex - Ogryn Auxilia" id="50b1-d374-4295-96cf" hidden="true" sortIndex="84">
           <categoryLinks>
             <categoryLink name="Retinue" hidden="false" id="b61c-e9c9-4bcb-7a50" targetId="a38e-50ff-310f-f19e">
               <constraints>
@@ -18926,7 +18938,7 @@
           </costs>
           <comment>Miltia</comment>
         </forceEntry>
-        <forceEntry name="Apex - Infantry Cohort" id="d109-bc0b-dd89-99a6" hidden="true">
+        <forceEntry name="Apex - Infantry Cohort" id="d109-bc0b-dd89-99a6" hidden="true" sortIndex="85">
           <categoryLinks>
             <categoryLink name="Troops" hidden="false" id="4559-beeb-5eba-e519" targetId="88e6-d373-4152-0dd8">
               <constraints>
@@ -19182,7 +19194,7 @@
           </costs>
           <comment>Militia</comment>
         </forceEntry>
-        <forceEntry name="Apex - Artillery Division" id="860c-8228-4165-d760" hidden="true">
+        <forceEntry name="Apex - Artillery Division" id="860c-8228-4165-d760" hidden="true" sortIndex="86">
           <categoryLinks>
             <categoryLink name="Prime Support" hidden="false" id="cef0-457b-d15c-4cfa" targetId="1c79-ecdf-9a64-84c9">
               <constraints>
@@ -19445,7 +19457,7 @@
             </modifier>
           </modifiers>
         </forceEntry>
-        <forceEntry name="Apex - Cavalry Wing" id="a611-ff21-3714-48e6" hidden="true">
+        <forceEntry name="Apex - Cavalry Wing" id="a611-ff21-3714-48e6" hidden="true" sortIndex="87">
           <categoryLinks>
             <categoryLink name="High Command" hidden="false" id="0083-43db-c70c-3f96" targetId="d9a6-9b5f-b18a-4d63">
               <constraints>
@@ -19733,7 +19745,7 @@
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
           </costs>
         </forceEntry>
-        <forceEntry name="Apex - Armoured Phalanx" id="388d-f480-70ab-8bed" hidden="true">
+        <forceEntry name="Apex - Armoured Phalanx" id="388d-f480-70ab-8bed" hidden="true" sortIndex="88">
           <categoryLinks>
             <categoryLink name="Armour" hidden="false" id="471e-8d2a-95df-a793" targetId="643a-1012-bd51-6537">
               <constraints>
@@ -19769,7 +19781,7 @@
           </costs>
           <comment>Militia</comment>
         </forceEntry>
-        <forceEntry name="Auxiliary - Oversight Delegation" id="2291-5e67-64bd-5edc" hidden="true" publicationId="e54c-7040-0f35-d85d" page="16">
+        <forceEntry name="Auxiliary - Oversight Delegation" id="2291-5e67-64bd-5edc" hidden="true" publicationId="e54c-7040-0f35-d85d" page="16" sortIndex="89">
           <comment>Miltia</comment>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -19815,7 +19827,7 @@
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
-        <forceEntry name="Apex - Storm Cadre" id="36f3-796e-8f6d-3cb8" hidden="true">
+        <forceEntry name="Apex - Storm Cadre" id="36f3-796e-8f6d-3cb8" hidden="true" sortIndex="90">
           <categoryLinks>
             <categoryLink name="Elites" hidden="false" id="eaf9-3900-77f3-6331" targetId="5d5e-958f-e388-50b5">
               <constraints>
@@ -19858,7 +19870,7 @@
           </costs>
           <comment>Militia</comment>
         </forceEntry>
-        <forceEntry name="Auxiliary - Daemonic Manifestation" id="2733-cda6-ff04-1d79" hidden="true">
+        <forceEntry name="Auxiliary - Daemonic Manifestation" id="2733-cda6-ff04-1d79" hidden="true" sortIndex="91">
           <categoryLinks>
             <categoryLink name="Prime Heavy Assault" hidden="false" id="7ad5-90ae-5139-3d10" targetId="1e95-35f0-1353-ffa1">
               <constraints>
@@ -19884,6 +19896,15 @@
               </conditionGroups>
               <comment>Militia</comment>
             </modifier>
+            <modifier type="add" value="Demonic Manifestation Detachment requires an Rogue Psyker" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="d51f-8e7d-91bd-069f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
@@ -19892,7 +19913,7 @@
             <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
-          <comment>Miltia - No Deamons yet</comment>
+          <comment>Miltia </comment>
         </forceEntry>
       </forceEntries>
       <constraints>
