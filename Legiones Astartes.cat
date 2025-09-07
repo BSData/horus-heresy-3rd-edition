@@ -2448,7 +2448,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <entryLink import="true" name="Power Weapon" hidden="false" id="b38f-4153-705e-a047" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" flatten="true" sortIndex="4"/>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7432-1f23-e2a1-64a8"/>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="7432-1f23-e2a1-64a8"/>
                   </constraints>
                   <modifiers>
                     <modifier type="increment" value="1" field="7432-1f23-e2a1-64a8">
@@ -2475,10 +2475,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                       </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5922-85b5-0563-42c7"/>
+                      </constraints>
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e933-03a4-bd4c-968d"/>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="e933-03a4-bd4c-968d"/>
                   </constraints>
                   <modifiers>
                     <modifier type="increment" value="1" field="e933-03a4-bd4c-968d">
@@ -2837,6 +2840,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="1fb4-7ef8-2442-2e70" id="3e24-746e-1ca2-1343" primary="false" name="Assault Squad"/>
+        <categoryLink targetId="dd1b-70ef-6015-1291" id="89e5-6fe6-e20e-6d1e" primary="false" name="No default Power Weapon"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Breacher Squad" hidden="false" id="b564-8809-1bcf-d8b3" sortIndex="33">
