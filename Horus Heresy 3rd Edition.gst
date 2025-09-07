@@ -564,6 +564,9 @@
     <categoryEntry name="Rogue Psyker" id="d51f-8e7d-91bd-069f" hidden="false"/>
     <categoryEntry name="Militia" id="b3b6-dc52-35dc-24b4" hidden="false"/>
     <categoryEntry name="Prime Lord of War" id="2ada-ddf1-73b4-6c19" hidden="false"/>
+    <categoryEntry name="Recon - Cavalry Only" id="053a-4e53-7b12-b4ad" hidden="false">
+      <comment>Militia</comment>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
@@ -18712,7 +18715,7 @@
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -19460,26 +19463,6 @@
         </forceEntry>
         <forceEntry name="Apex - Cavalry Wing" id="a611-ff21-3714-48e6" hidden="true" sortIndex="87">
           <categoryLinks>
-            <categoryLink name="High Command" hidden="false" id="0083-43db-c70c-3f96" targetId="d9a6-9b5f-b18a-4d63">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1776-1896-df27-ca94"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Prime High Command" hidden="false" id="0aef-97dc-1da6-db6f" targetId="3568-ad75-b452-3137">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9229-3e2e-cf20-e4ed" includeChildSelections="true"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Command" hidden="false" id="84ff-e2d9-fcfb-7274" targetId="6dbf-654a-f06f-2d69">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b6ec-c440-f595-9d5a"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Prime Command" hidden="false" id="6786-ff80-c36f-b905" targetId="c85c-2963-658f-1bb9">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="dcb9-57d2-7196-32bd" includeChildSelections="true"/>
-              </constraints>
-            </categoryLink>
             <categoryLink name="Retinue" hidden="false" id="22b8-b3c5-5165-0a6b" targetId="a38e-50ff-310f-f19e">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bed4-4728-5305-8304"/>
@@ -19678,23 +19661,6 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6a0d-b2cc-9b38-d848" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Recon" hidden="false" id="d63f-1e1a-5c45-0f0d" targetId="2b65-a3f2-620a-dc58">
-              <constraints>
-                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="23e2-82f9-1011-374d"/>
-              </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="23e2-82f9-1011-374d">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </categoryLink>
             <categoryLink name="Prime Recon" hidden="false" id="4477-ab45-9d85-699c" targetId="6348-ecd0-714d-042a">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efa9-8928-6930-6923" includeChildSelections="true"/>
@@ -19721,6 +19687,18 @@
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="fb24-7104-c8e0-12f8" includeChildSelections="true"/>
               </constraints>
+            </categoryLink>
+            <categoryLink name="Recon - Cavalry Only" hidden="false" id="688e-d04f-1cd6-00e1" targetId="053a-4e53-7b12-b4ad">
+              <constraints>
+                <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="1f43-a8a6-f70b-5086"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="1f43-a8a6-f70b-5086">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
           </categoryLinks>
           <comment>Militia</comment>
@@ -19839,7 +19817,7 @@
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
-        <forceEntry name="Apex - Storm Cadre" id="36f3-796e-8f6d-3cb8" hidden="true" sortIndex="90">
+        <forceEntry name="Auxiliary - Storm Cadre" id="36f3-796e-8f6d-3cb8" hidden="true" sortIndex="90">
           <categoryLinks>
             <categoryLink name="Elites" hidden="false" id="eaf9-3900-77f3-6331" targetId="5d5e-958f-e388-50b5">
               <constraints>
@@ -20761,6 +20739,17 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="5034-24c8-3d4c-9013" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
+        <modifier type="increment" value="3" field="4823-b27b-f750-5a63">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="9f28-9714-ad10-960a" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" value="1" field="3e8e-05ee-be52-12d6">
+          <comment>Subtract 1 to add 2. Or we could just add 1</comment>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="9f28-9714-ad10-960a" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="0" field="3e8e-05ee-be52-12d6" scope="self" shared="false" id="4823-b27b-f750-5a63" includeChildSelections="true" includeChildForces="true"/>
@@ -20836,6 +20825,9 @@
         <forceEntryLink name="Apex - Medusan Vanguard" id="d34e-10ce-826a-4f5e" hidden="true" targetId="7ff8-9e2c-e68a-573f" type="forceEntry"/>
         <forceEntryLink name="Apex - Atramentar Hunt " id="77b8-89ca-6e92-12e4" hidden="true" targetId="dbbe-886f-3ce1-13c0" type="forceEntry"/>
         <forceEntryLink name="Apex - Exalted Conclave" id="5054-c3a2-6e82-5245" hidden="true" targetId="c961-7007-0142-5d07" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Oversight Delegation" id="085f-0fac-d4cd-75e6" hidden="false" targetId="2291-5e67-64bd-5edc" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Daemonic Manifestation" id="74b0-a8a1-c406-4ecf" hidden="false" targetId="2733-cda6-ff04-1d79" type="forceEntry"/>
+        <forceEntryLink name="Apex - Storm Cadre" id="988e-0784-4009-83fe" hidden="false" targetId="36f3-796e-8f6d-3cb8" type="forceEntry"/>
       </forceEntryLinks>
     </forceEntry>
     <forceEntry name="Lord of War Detachment" id="b7a1-629f-9d60-c2a9" hidden="false" sortIndex="4">
