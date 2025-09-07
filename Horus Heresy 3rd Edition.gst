@@ -543,6 +543,14 @@
     <categoryEntry name="Putrid Corruption" id="142a-928b-5dc6-5f42" hidden="false"/>
     <categoryEntry name="Rapturous Sensation" id="6adc-57ec-6ec7-ff4e" hidden="false"/>
     <categoryEntry name="Ravenous Dissolution" id="6ed5-1d97-3cdd-8dd2" hidden="false"/>
+    <categoryEntry name="Heavy Assault - Ogryn Brute Troop Units Only" id="6695-be57-c654-cbd3" hidden="false">
+      <comment>Militia</comment>
+    </categoryEntry>
+    <categoryEntry name="Heavy Assault - Daemon Brute Units Only" id="3997-20e2-b947-ad8d" hidden="false">
+      <comment>Militia</comment>
+    </categoryEntry>
+    <categoryEntry name="Support - Militia Medicae Only" id="bd8e-ac40-6016-738e" hidden="false"/>
+    <categoryEntry name="Officer of the Line (3)" id="9f28-9714-ad10-960a" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
@@ -1397,6 +1405,13 @@
                       </conditions>
                       <comment>Daemons</comment>
                     </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f477-a408-5e04-1e5a" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f477-a408-5e04-1e5a" shared="true"/>
+                      </conditions>
+                      <comment>Militia</comment>
+                    </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
@@ -1822,6 +1837,13 @@
                       </conditions>
                       <comment>Daemons</comment>
                     </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f477-a408-5e04-1e5a" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f477-a408-5e04-1e5a" shared="true"/>
+                      </conditions>
+                      <comment>Militia</comment>
+                    </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
@@ -2183,6 +2205,13 @@
                       </conditions>
                       <comment>Daemons</comment>
                     </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f477-a408-5e04-1e5a" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f477-a408-5e04-1e5a" shared="true"/>
+                      </conditions>
+                      <comment>Militia</comment>
+                    </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
@@ -2526,6 +2555,13 @@
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9396-cc24-458d-d358" shared="true"/>
                       </conditions>
                       <comment>Daemons</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f477-a408-5e04-1e5a" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f477-a408-5e04-1e5a" shared="true"/>
+                      </conditions>
+                      <comment>Militia</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -2871,6 +2907,13 @@
                       </conditions>
                       <comment>Daemons</comment>
                     </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f477-a408-5e04-1e5a" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f477-a408-5e04-1e5a" shared="true"/>
+                      </conditions>
+                      <comment>Militia</comment>
+                    </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
@@ -3214,6 +3257,13 @@
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9396-cc24-458d-d358" shared="true"/>
                       </conditions>
                       <comment>Daemons</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f477-a408-5e04-1e5a" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f477-a408-5e04-1e5a" shared="true"/>
+                      </conditions>
+                      <comment>Militia</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -3559,6 +3609,13 @@
                       </conditions>
                       <comment>Daemons</comment>
                     </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f477-a408-5e04-1e5a" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f477-a408-5e04-1e5a" shared="true"/>
+                      </conditions>
+                      <comment>Militia</comment>
+                    </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
@@ -3902,6 +3959,13 @@
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9396-cc24-458d-d358" shared="true"/>
                       </conditions>
                       <comment>Daemons</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f477-a408-5e04-1e5a" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f477-a408-5e04-1e5a" shared="true"/>
+                      </conditions>
+                      <comment>Militia</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -4473,6 +4537,13 @@
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9396-cc24-458d-d358" shared="true"/>
                       </conditions>
                       <comment>Daemons</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f477-a408-5e04-1e5a" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f477-a408-5e04-1e5a" shared="true"/>
+                      </conditions>
+                      <comment>Militia</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -5130,6 +5201,13 @@
                       </conditions>
                       <comment>Daemons</comment>
                     </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f477-a408-5e04-1e5a" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f477-a408-5e04-1e5a" shared="true"/>
+                      </conditions>
+                      <comment>Militia</comment>
+                    </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
@@ -5700,6 +5778,13 @@
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9396-cc24-458d-d358" shared="true"/>
                       </conditions>
                       <comment>Daemons</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f477-a408-5e04-1e5a" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f477-a408-5e04-1e5a" shared="true"/>
+                      </conditions>
+                      <comment>Militia</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -20054,6 +20139,17 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="increment" value="3" field="0ab6-91a0-792e-4068">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="9f28-9714-ad10-960a" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" value="1" field="0ab6-91a0-792e-4068">
+          <comment>Subtract 1 to add 2. Or we could just add 1</comment>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="9f28-9714-ad10-960a" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
         </modifier>
       </modifiers>
     </forceEntry>
