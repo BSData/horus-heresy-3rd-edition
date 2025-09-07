@@ -543,6 +543,7 @@
     <categoryEntry name="Putrid Corruption" id="142a-928b-5dc6-5f42" hidden="false"/>
     <categoryEntry name="Rapturous Sensation" id="6adc-57ec-6ec7-ff4e" hidden="false"/>
     <categoryEntry name="Ravenous Dissolution" id="6ed5-1d97-3cdd-8dd2" hidden="false"/>
+    <categoryEntry name="Use a Knight Lord of War force instead" id="f7dd-b6b0-69d0-1a53" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
@@ -19220,6 +19221,19 @@
         <categoryLink name="Lord of War" hidden="false" id="3c0a-1455-992a-6156" targetId="a46f-a465-0ead-d6b8">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d94c-54de-ba89-449a"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Use a Knight Lord of War force instead" hidden="false" id="162a-d5fe-ecab-fa55" targetId="f7dd-b6b0-69d0-1a53" type="categoryEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6df0-68ba-ef78-a73e" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4354-98d5-af84-3ae5" automatic="true"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
