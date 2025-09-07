@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="f477-a408-5e04-1e5a" name="Imperialis Militia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="48" revision="1" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="Assets" id="2366-2491-c1b9-2948" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
-    <catalogueLink type="catalogue" name="Special Rules" id="ffae-a8ec-f8ca-31e1" targetId="106b-693b-99f2-00c3" importRootEntries="false"/>
-    <catalogueLink type="catalogue" name="Weapons" id="941c-1be6-b466-cfbb" targetId="a22d-4dd0-c59d-57d3" importRootEntries="false"/>
-    <catalogueLink type="catalogue" name="Wargear" id="06d1-e255-6955-9274" targetId="fcc7-4319-bb04-2c25" importRootEntries="false"/>
-    <catalogueLink type="catalogue" name="Traits" id="d0e2-cdd3-04c3-5298" targetId="df17-7a05-0826-6e22" importRootEntries="false"/>
+    <catalogueLink type="catalogue" name="Assets" id="1053-e96b-6464-855f" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Special Rules" id="48f3-54d9-93f3-6b73" targetId="106b-693b-99f2-00c3" importRootEntries="false"/>
+    <catalogueLink type="catalogue" name="Weapons" id="2571-3131-64b1-c306" targetId="a22d-4dd0-c59d-57d3" importRootEntries="false"/>
+    <catalogueLink type="catalogue" name="Wargear" id="d479-a83f-4672-394f" targetId="fcc7-4319-bb04-2c25" importRootEntries="false"/>
+    <catalogueLink type="catalogue" name="Traits" id="5232-b96e-9fc1-8f6d" targetId="df17-7a05-0826-6e22" importRootEntries="false"/>
     <catalogueLink type="catalogue" name="Mech Library" id="0e7b-ab6c-1432-0c67" targetId="a159-1624-dbac-7af8"/>
     <catalogueLink type="catalogue" name="Mechanicum" id="6364-b137-000d-d755" targetId="2f57-6e9d-8a7b-5c2e"/>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="5e7b-f270-2911-7c6d" targetId="9b32-f350-6aa9-9c09"/>
@@ -413,7 +413,7 @@
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Option" id="3bad-51f5-2a1f-3eee" hidden="false" defaultSelectionEntryId="c3fe-89e1-4b5f-a120" sortIndex="1">
+        <selectionEntryGroup name="Unit Option" id="3bad-51f5-2a1f-3eee" hidden="false" defaultSelectionEntryId="c3fe-89e1-4b5f-a120" sortIndex="1">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Discipline Master" hidden="false" id="c3fe-89e1-4b5f-a120" page="14" publicationId="f5e5-c199-d3d4-ccf6" defaultAmount="1">
               <profiles>
@@ -4076,7 +4076,7 @@
         <entryLink import="true" name="Provenance" hidden="false" id="1713-d0af-8ae8-6696" type="selectionEntryGroup" targetId="681d-491f-d79b-1b81"/>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Options" id="c9c4-3db9-692c-5519" hidden="false" sortIndex="1">
+        <selectionEntryGroup name="Unit Option" id="c9c4-3db9-692c-5519" hidden="false" sortIndex="1">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Ogryn Boss" hidden="true" id="82dc-e9a0-4cc7-af46" page="21" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="1">
               <profiles>
@@ -4736,7 +4736,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Options" id="a68b-6442-2281-48f2" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Unit Option" id="a68b-6442-2281-48f2" hidden="false" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Militia Caiman" hidden="false" id="5702-a547-4deb-b72d" page="22" publicationId="f5e5-c199-d3d4-ccf6">
               <profiles>
@@ -4815,6 +4815,9 @@
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="594d-fa82-13cb-a345" id="c3e5-6a29-ca27-4a4e" primary="false" name="Infantry Model Type"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Militia Mastiff" hidden="false" id="97ac-5b7e-49f9-b211" page="22" publicationId="f5e5-c199-d3d4-ccf6">
               <profiles>
@@ -4852,6 +4855,9 @@
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="594d-fa82-13cb-a345" id="dc5a-7cb8-bbb5-96df" primary="false" name="Infantry Model Type"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Militia Raptor" hidden="false" id="58da-8bbe-4d75-b151" page="22" publicationId="f5e5-c199-d3d4-ccf6">
               <profiles>
@@ -5580,7 +5586,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afa7-ad61-45bd-bb34"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Option" id="3be0-2c57-bf84-72b9" hidden="false" defaultSelectionEntryId="8c15-d81f-4a50-a651" sortIndex="1">
+        <selectionEntryGroup name="Unit Option" id="3be0-2c57-bf84-72b9" hidden="false" defaultSelectionEntryId="8c15-d81f-4a50-a651" sortIndex="1">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Levy Warden" hidden="false" id="322f-1206-4e6e-b82b" page="24" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="1">
               <profiles>
@@ -7405,7 +7411,7 @@
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="67"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Militia Gunner" id="14a6-3b1d-4730-b02e" page="29" publicationId="f5e5-c199-d3d4-ccf6">
+        <selectionEntry type="model" name="Militia Gunner" id="14a6-3b1d-4730-b02e" page="29" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="1">
           <profiles>
             <profile id="1071-f993-4a36-9f7d" name="Militia Gunner" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
@@ -7656,7 +7662,7 @@
             <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="model" name="Gun Carriage" id="d6bb-64c9-470e-b06b" page="29" publicationId="f5e5-c199-d3d4-ccf6">
+        <selectionEntry type="model" name="Gun Carriage" id="d6bb-64c9-470e-b06b" page="29" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="2">
           <profiles>
             <profile id="f494-f595-42e8-947e" name="Gun Carriage" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
@@ -7914,7 +7920,7 @@
             <entryLink import="true" name="Common Prime Benefits" hidden="false" id="b3ba-c73e-8c8c-839a" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Provenance" hidden="false" id="076e-f3f8-e7da-2196" type="selectionEntryGroup" targetId="681d-491f-d79b-1b81"/>
+        <entryLink import="true" name="Provenance" hidden="false" id="076e-f3f8-e7da-2196" type="selectionEntryGroup" targetId="681d-491f-d79b-1b81" sortIndex="3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry name="Sentinel Patrol" type="unit" id="7ef3-c3f3-4325-bbcc" page="31" publicationId="f5e5-c199-d3d4-ccf6">
@@ -7922,7 +7928,7 @@
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" name="Scout Sentinel" id="a08a-1f48-4e96-b3e9" page="31" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="3">
+        <selectionEntry type="model" name="Scout Sentinel" id="a08a-1f48-4e96-b3e9" page="31" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="2">
           <profiles>
             <profile id="24c8-b706-4b03-8e1d" name="Scout Sentinel" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
@@ -8236,7 +8242,7 @@
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="May take either Cargo Hauler or Armoured Hauler" id="446a-1cdf-7b40-4d62" hidden="false" defaultSelectionEntryId="fa49-911b-4c07-9a73" sortIndex="1">
+        <selectionEntryGroup name="Unit Option" id="446a-1cdf-7b40-4d62" hidden="false" defaultSelectionEntryId="fa49-911b-4c07-9a73" sortIndex="1">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Armoured Hauler" hidden="false" id="59c2-f81b-4248-87d1" page="33" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="2">
               <profiles>
@@ -8452,7 +8458,7 @@
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="May take Mining Rig or Explorator Rig" id="d9a9-9743-7c8f-381a" hidden="false" sortIndex="1">
+        <selectionEntryGroup name="Unit Option" id="d9a9-9743-7c8f-381a" hidden="false" sortIndex="1">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Explorator Rig" hidden="false" id="7283-1033-4c4c-94a5" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="2">
               <profiles>
@@ -9997,7 +10003,7 @@
         <entryLink import="true" name="Provenance" hidden="false" id="3ff4-574e-092d-8a4e" type="selectionEntryGroup" targetId="681d-491f-d79b-1b81"/>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Options" id="b46f-8ed2-9310-5337" hidden="false" sortIndex="1">
+        <selectionEntryGroup name="Unit Option" id="b46f-8ed2-9310-5337" hidden="false" sortIndex="1">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Militia Quad" hidden="false" id="19b9-8ac5-4b4d-88e4" page="38" publicationId="f5e5-c199-d3d4-ccf6">
               <profiles>
@@ -10478,9 +10484,9 @@
         <infoLink name="Imperialis Militia" id="bf3d-974f-821f-cb75" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Option" id="79c5-c494-d2df-229b" hidden="false" defaultSelectionEntryId="aebb-72a5-45d8-9fc1" sortIndex="1">
+        <selectionEntryGroup name="Unit Option" id="79c5-c494-d2df-229b" hidden="false" defaultSelectionEntryId="aebb-72a5-45d8-9fc1" sortIndex="1">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Militia Ridgerunner" hidden="false" id="2407-31c4-4974-84d4" page="39" publicationId="f5e5-c199-d3d4-ccf6">
+            <selectionEntry type="model" import="true" name="Militia Ridgerunner" hidden="false" id="2407-31c4-4974-84d4" page="39" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="2">
               <profiles>
                 <profile name="Militia Ridgerunner" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="eed6-0b69-4576-ab02">
                   <characteristics>

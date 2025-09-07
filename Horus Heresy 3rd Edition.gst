@@ -563,6 +563,7 @@
     <categoryEntry name="Expendable" id="afa3-a012-61dd-ae9c" hidden="false"/>
     <categoryEntry name="Rogue Psyker" id="d51f-8e7d-91bd-069f" hidden="false"/>
     <categoryEntry name="Militia" id="b3b6-dc52-35dc-24b4" hidden="false"/>
+    <categoryEntry name="Prime Lord of War" id="2ada-ddf1-73b4-6c19" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
@@ -19757,6 +19758,17 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7a2d-b92d-b86b-5acf" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Lord of War" hidden="false" id="1b65-c6dc-9a8d-9ef3" targetId="a46f-a465-0ead-d6b8" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a232-5f51-0d5f-52ac"/>
+                <constraint type="max" value="25" field="9893-c379-920b-8982" scope="roster" shared="true" id="4bd1-412f-e5bd-2b21" percentValue="true" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Lord of War" hidden="false" id="fcb1-d790-0ca1-daa8" targetId="2ada-ddf1-73b4-6c19" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5970-2b40-a640-8a74" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -19913,7 +19925,7 @@
             <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
-          <comment>Miltia </comment>
+          <comment>Miltia</comment>
         </forceEntry>
       </forceEntries>
       <constraints>
