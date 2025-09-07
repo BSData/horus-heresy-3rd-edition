@@ -5571,6 +5571,8 @@ Additionally, when at least one Model in a Unit entirely composed of Models with
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="180"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="da15-9299-4aa0-ab2c" primary="false" name="Vehicle Model Type"/>
@@ -5736,7 +5738,7 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ac4-df63-f6d1-1d01"/>
           </constraints>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="225"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="190"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -6520,8 +6522,8 @@ declaration is made.</characteristic>
                     <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once the cost has been paid, the Reactive Player immediately removes the Marker indicating a Panic Check is required of the Reacting Unit in the following Morale Sub-Phase.
 
 
-2. After this Marker has been removed, the Reactive Player makes a Shooting Attack with the Reacting Unit, targeting any enemy Unit to which at least one Model in the Reacting Unit has Line of Sight.
- 
+2. After this Marker has been removed, the Reactive Player makes a Shooting Attack with the Reacting Unit, resolved as Snap Shots and targeting any enemy Unit to which at least one Model in the Reacting Unit has Line of Sight.
+
 3. Once this Shooting Attack has been completely resolved, including removing any Casualties, the Players must then finish resolving Step11of the
 original Shooting Attack that triggered the Reaction.</characteristic>
                   </characteristics>
