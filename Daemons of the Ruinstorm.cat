@@ -1145,29 +1145,9 @@ When a Unit with a Model with the Primal Terror Special Rule is declared as the 
           </categoryLinks>
           <entryLinks>
             <entryLink import="true" name="Wings" hidden="false" id="96b9-85f1-bbd7-ab38" type="selectionEntry" targetId="8d4f-9caf-eaba-c817" sortIndex="1">
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Weapon" id="1bc5-0cf5-82f8-7ca2" hidden="false" defaultSelectionEntryId="7041-cf04-feef-9187" sortIndex="1">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42d5-8f9d-646c-7c1c"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b94-956a-5df0-5d86"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Hierarch blade" hidden="false" id="7041-cf04-feef-9187" type="selectionEntry" targetId="d933-abe8-a0a9-e765">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ed6-7b0a-e102-cae4"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Hierarch greatblade" hidden="false" id="389d-6697-d849-a6c3" type="selectionEntry" targetId="921f-c41b-138d-9418">
-                      <costs>
-                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
-                      </costs>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="227a-2e3c-270f-dbd2"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
+              </costs>
             </entryLink>
             <entryLink import="true" name="[Ætheric Dominion]" hidden="false" id="b5ce-773b-a037-6870" type="selectionEntryGroup" targetId="5b1e-2194-8cb9-592b"/>
           </entryLinks>
@@ -1219,6 +1199,29 @@ When a Unit with a Model with the Primal Terror Special Rule is declared as the 
 Additionally, if a Model with this Special Rule would gain the Disgraced Status, it instead suffers automatic wounds as per the Malefic Sub-Type, but these woulnds must be allocated to the Model with this Special Rule, and cannot be allocated to Models in any Unit it may have joined.</description>
             </rule>
           </rules>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon" id="1bc5-0cf5-82f8-7ca2" hidden="false" defaultSelectionEntryId="7041-cf04-feef-9187" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42d5-8f9d-646c-7c1c"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b94-956a-5df0-5d86"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Hierarch blade" hidden="false" id="7041-cf04-feef-9187" type="selectionEntry" targetId="d933-abe8-a0a9-e765">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ed6-7b0a-e102-cae4"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Hierarch greatblade" hidden="false" id="389d-6697-d849-a6c3" type="selectionEntry" targetId="921f-c41b-138d-9418">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="227a-2e3c-270f-dbd2"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
