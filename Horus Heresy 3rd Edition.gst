@@ -19428,18 +19428,11 @@
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Use a Knight Lord of War force instead" hidden="false" id="162a-d5fe-ecab-fa55" targetId="f7dd-b6b0-69d0-1a53">
+        <categoryLink name="Use a Knight Lord of War force instead" hidden="false" id="162a-d5fe-ecab-fa55" targetId="f7dd-b6b0-69d0-1a53" type="categoryEntry">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6df0-68ba-ef78-a73e" automatic="true"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6df0-68ba-ef78-a73e" automatic="true"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4354-98d5-af84-3ae5" automatic="true"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="1" field="6df0-68ba-ef78-a73e">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </categoryLink>
       </categoryLinks>
       <constraints>
