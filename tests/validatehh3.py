@@ -47,6 +47,7 @@ class GameTests(unittest.TestCase):
                              settings={
                                  SystemSettingsKeys.GAME_IMPORT_SPEC: GameImportSpecs.HERESY3E,
                              },
+                             load_silent=True,
                              )
 
         self.battlefield_roles_that_can_be_prime = Heresy3e.BATTLEFIELD_ROLES.copy()
