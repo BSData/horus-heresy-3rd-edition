@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="f477-a408-5e04-1e5a" name="Imperialis Militia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="48" revision="1" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="f477-a408-5e04-1e5a" name="Imperialis Militia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="48" revision="2" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="1c49-58fd-c1fc-3fc1" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Special Rules" id="357b-0047-1158-8789" targetId="106b-693b-99f2-00c3" importRootEntries="false"/>
@@ -1362,6 +1362,13 @@
         <infoLink name="Imperialis Militia" id="a3e3-1a59-c656-1d74" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
       </infoLinks>
       <comment>Paragon of Battle is a little messy with multiple command</comment>
+      <modifiers>
+        <modifier type="add" value="9f28-9714-ad10-960a" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="bdd6-6165-3349-ad0c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry name="Command Troop" type="unit" id="7121-62b3-4c69-9b67" page="16" publicationId="f5e5-c199-d3d4-ccf6">
       <costs>
