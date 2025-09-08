@@ -21049,7 +21049,7 @@
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Use a Knight Lord of War force instead" hidden="false" id="162a-d5fe-ecab-fa55" targetId="f7dd-b6b0-69d0-1a53" type="categoryEntry">
+        <categoryLink name="Use a Knight Lord of War force instead" hidden="false" id="162a-d5fe-ecab-fa55" targetId="f7dd-b6b0-69d0-1a53">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6df0-68ba-ef78-a73e" automatic="true"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4354-98d5-af84-3ae5" automatic="true"/>
@@ -21587,7 +21587,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e075-1f6c-ff36-8e11" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="DON&apos;T SUBMIT BUGS FOR NOT IMPLEMENTED FUNCTIONALITY. Currently Militia" hidden="false" id="cd4a-d335-2d3a-91e0" defaultAmount="1" sortIndex="2">
+    <selectionEntry type="upgrade" import="true" name="DON&apos;T SUBMIT BUGS FOR NOT IMPLEMENTED FUNCTIONALITY. Up to date including militia on September 8th, 2025" hidden="false" id="cd4a-d335-2d3a-91e0" defaultAmount="1" sortIndex="2">
       <rules>
         <rule name="Things that aren&apos;t implemented" id="10ac-cafa-6c21-0fa3" hidden="false">
           <description>- Titans
