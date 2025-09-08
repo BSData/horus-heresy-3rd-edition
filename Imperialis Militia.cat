@@ -413,7 +413,7 @@
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
       </costs>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Unit Option" id="3bad-51f5-2a1f-3eee" hidden="false" defaultSelectionEntryId="c3fe-89e1-4b5f-a120" sortIndex="1">
+        <selectionEntryGroup name="Unit Options" id="a544-bd85-4407-d410" hidden="false" sortIndex="1">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Discipline Master" hidden="false" id="c3fe-89e1-4b5f-a120" page="14" publicationId="f5e5-c199-d3d4-ccf6" defaultAmount="1">
               <profiles>
@@ -571,19 +571,6 @@
                       </conditionGroups>
                     </modifierGroup>
                   </modifierGroups>
-                  <modifiers>
-                    <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                 </profile>
                 <profile name="Paragon Discipline Master" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="true" id="01a6-b768-4834-ac63">
                   <characteristics>
@@ -873,7 +860,21 @@
               </categoryLinks>
               <modifiers>
                 <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
+                <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
               </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="27fd-e757-c97a-f732"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Mounted Discipline Master" hidden="false" id="e567-503d-4220-9ec3" page="14" publicationId="f5e5-c199-d3d4-ccf6">
               <profiles>
@@ -1031,19 +1032,6 @@
                       </conditionGroups>
                     </modifierGroup>
                   </modifierGroups>
-                  <modifiers>
-                    <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                 </profile>
                 <profile name="Paragon Mounted Discipline Master" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="true" id="3e46-6a2c-7ee3-4f02">
                   <characteristics>
@@ -1222,17 +1210,6 @@
                     </modifierGroup>
                   </modifierGroups>
                   <modifiers>
-                    <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
                     <modifier type="set" value="false" field="hidden">
                       <conditions>
                         <condition type="equalTo" value="1" field="selections" scope="parent" childId="7f74-e206-6ccb-458e" shared="true" includeChildSelections="true"/>
@@ -1349,22 +1326,33 @@
               </infoLinks>
               <modifiers>
                 <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
+                <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
               </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c566-9567-4c02-8086"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="452a-6026-4bc8-a753"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad42-4347-0395-37df"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="699b-6c22-c4a9-5372"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="3fe8-ecda-4ee4-c3ce" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="2">
+        <entryLink import="true" name="Prime Unit" hidden="false" id="3fe8-ecda-4ee4-c3ce" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Common Prime Benefits" hidden="false" id="161e-3731-a55f-436f" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Provenance" hidden="false" id="6fad-191b-a69c-f8bd" type="selectionEntryGroup" targetId="681d-491f-d79b-1b81"/>
+        <entryLink import="true" name="Provenance" hidden="false" id="6fad-191b-a69c-f8bd" type="selectionEntryGroup" targetId="681d-491f-d79b-1b81" sortIndex="2"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Irregulars" id="7027-904d-f4e5-b5f3" hidden="false" type="rule" targetId="2d43-afcd-2393-d1bb"/>
@@ -1546,19 +1534,6 @@
                   </conditionGroups>
                 </modifierGroup>
               </modifierGroups>
-              <modifiers>
-                <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
             </profile>
           </profiles>
           <costs>
@@ -1709,6 +1684,17 @@
               </conditions>
             </modifier>
             <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
+            <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="model" name="Militia Lieutenant" id="0ff1-92ec-49cb-85e1" page="16" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="1">
@@ -1884,19 +1870,6 @@
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
-              <modifiers>
-                <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
             </profile>
           </profiles>
           <costs>
@@ -2050,6 +2023,17 @@
               </conditions>
             </modifier>
             <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
+            <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Upgrade Bodyguard to Grenadier Bodyguard." hidden="false" id="d39a-43d1-3c81-6fc5" sortIndex="3">
@@ -2113,19 +2097,6 @@
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Cavalry</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
                   <comment>Combat Veterans</comment>
@@ -2384,6 +2355,17 @@
           </categoryLinks>
           <modifiers>
             <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
+            <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="model" name="Militia Lancemaster" id="486b-b7dc-4042-8b89" page="17" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="1">
@@ -2406,19 +2388,6 @@
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Cavalry (Command)</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
                   <comment>Combat Veterans</comment>
@@ -2674,6 +2643,17 @@
           </infoLinks>
           <modifiers>
             <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
+            <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
@@ -2872,24 +2852,6 @@
                   </conditionGroups>
                 </modifierGroup>
               </modifierGroups>
-              <modifiers>
-                <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
             </profile>
           </profiles>
           <costs>
@@ -3025,6 +2987,22 @@
               </conditions>
             </modifier>
             <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="model" name="Militia Warden" id="db87-fe06-4852-9014" page="18" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="2">
@@ -3047,19 +3025,6 @@
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
                   <comment>Combat Veterans</comment>
@@ -3248,6 +3213,17 @@
           </categoryLinks>
           <modifiers>
             <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
+            <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
@@ -3667,13 +3643,6 @@
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Sergeant)</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
                   <comment>Combat Veterans</comment>
@@ -3979,6 +3948,11 @@
               </conditionGroups>
             </modifier>
             <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <infoLinks>
             <infoLink name="Battlesmith (X)" id="a9e0-c37d-84f4-cc5c" hidden="true" type="rule" targetId="c3db-d17c-fd46-eb01">
@@ -4293,13 +4267,6 @@
                 <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">5+</characteristic>
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
@@ -4309,7 +4276,7 @@
                     <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
                   </conditions>
                   <comment>Master Sergeant</comment>
                 </modifierGroup>
@@ -4478,6 +4445,11 @@
                 <condition type="atLeast" value="5" field="selections" scope="unit" childId="model" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
@@ -4507,24 +4479,6 @@
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Sergeant)</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
@@ -4718,6 +4672,22 @@
               </conditions>
             </modifier>
             <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <entryLinks>
             <entryLink import="true" name="Rad grenades" hidden="true" id="f1f0-e2e1-eeba-7d42" type="selectionEntry" targetId="cd5f-1eff-df69-6bd2">
@@ -5158,19 +5128,6 @@
                   </conditionGroups>
                 </modifierGroup>
               </modifierGroups>
-              <modifiers>
-                <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
             </profile>
           </profiles>
           <costs>
@@ -5295,6 +5252,17 @@
           </constraints>
           <modifiers>
             <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
+            <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="c1aa-8c27-4ccf-f8a7" primary="false" name="Infantry Model Type"/>
@@ -5320,24 +5288,6 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">5+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
                   <comment>Combat Veterans</comment>
@@ -5576,6 +5526,22 @@
           </selectionEntryGroups>
           <modifiers>
             <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
+            <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="bba8-25d1-b659-5bff" primary="false" name="Infantry Model Type"/>
@@ -5702,24 +5668,6 @@
                 <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">5+</characteristic>
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
                   <comment>Combat Veterans</comment>
@@ -5745,7 +5693,7 @@
                     <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
                   </conditions>
                   <comment>Master Sergeant</comment>
                 </modifierGroup>
@@ -5946,6 +5894,22 @@
           </constraints>
           <modifiers>
             <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
+            <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <entryLinks>
             <entryLink import="true" name="Rad grenades" hidden="true" id="b305-1d2a-8c47-8153" type="selectionEntry" targetId="cd5f-1eff-df69-6bd2">
@@ -5985,19 +5949,6 @@
                 <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">6+</characteristic>
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
                   <comment>Combat Veterans</comment>
@@ -6229,6 +6180,17 @@
           </categoryLinks>
           <modifiers>
             <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
+            <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
@@ -6258,19 +6220,6 @@
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Specialist)</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
                   <comment>Combat Veterans</comment>
@@ -6427,6 +6376,17 @@
           </categoryLinks>
           <modifiers>
             <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
+            <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
@@ -6721,24 +6681,6 @@
                     <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">5+</characteristic>
                     <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                   <modifierGroups>
                     <modifierGroup type="and">
                       <comment>Combat Veterans</comment>
@@ -6942,6 +6884,22 @@
               </infoLinks>
               <modifiers>
                 <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
+                <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Rapier Carrier" hidden="false" id="3e8d-78b3-47c8-9a36" page="27" publicationId="f5e5-c199-d3d4-ccf6">
@@ -6964,19 +6922,6 @@
                     <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">3+</characteristic>
                     <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
                   <modifierGroups>
                     <modifierGroup type="and">
                       <comment>Combat Veterans</comment>
@@ -7200,6 +7145,19 @@
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <modifiers>
+                <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -7659,24 +7617,6 @@
                   <comment>Master Sergeant</comment>
                 </modifierGroup>
               </modifierGroups>
-              <modifiers>
-                <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </profile>
           </profiles>
           <costs>
@@ -7751,6 +7691,22 @@
           </infoLinks>
           <modifiers>
             <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
+            <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="model" name="Gun Carriage" id="d6bb-64c9-470e-b06b" page="29" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="2">
@@ -7915,19 +7871,6 @@
                   </conditionGroups>
                 </modifierGroup>
               </modifierGroups>
-              <modifiers>
-                <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
             </profile>
           </profiles>
           <costs>
@@ -7993,6 +7936,19 @@
               </modifiers>
             </infoLink>
           </infoLinks>
+          <modifiers>
+            <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -8069,7 +8025,7 @@
                     <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -9043,19 +8999,6 @@
                   </conditionGroups>
                 </modifierGroup>
               </modifierGroups>
-              <modifiers>
-                <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
             </profile>
           </profiles>
           <costs>
@@ -9127,6 +9070,17 @@
               </conditions>
             </modifier>
             <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
+            <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="model" name="Scout Sergeant" id="617c-f641-4142-87b0" page="36" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="1">
@@ -9149,24 +9103,6 @@
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Sergeant, Light)</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
                   <comment>Combat Veterans</comment>
@@ -9403,6 +9339,22 @@
               </conditions>
             </modifier>
             <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
@@ -9464,19 +9416,6 @@
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Cavalry</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
                   <comment>Combat Veterans</comment>
@@ -9737,6 +9676,17 @@
           </categoryLinks>
           <modifiers>
             <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
+            <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="model" name="Militia Outrider Sergeant" id="d89f-5528-4c95-a738" page="37" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="1">
@@ -9759,24 +9709,6 @@
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Cavalry (Sergeant)</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
@@ -10028,6 +9960,22 @@
           </categoryLinks>
           <modifiers>
             <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
