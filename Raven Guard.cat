@@ -1037,14 +1037,28 @@ Once per Battle, if a Unit with this Special Rule remains Stationary in the prev
               </constraints>
               <modifiers>
                 <modifier type="set" value="0" field="add1-06e7-4baa-a70f">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="ab57-e7ca-3fc7-b256" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="ab57-e7ca-3fc7-b256" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="0135-12f0-d86f-ced9" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="4fa7-ea45-2a89-ad86" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="196d-a0ea-a851-d09e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="set" value="0" field="7284-a4e7-48f9-9449">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="ab57-e7ca-3fc7-b256" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="ab57-e7ca-3fc7-b256" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="0135-12f0-d86f-ced9" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="4fa7-ea45-2a89-ad86" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="196d-a0ea-a851-d09e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
