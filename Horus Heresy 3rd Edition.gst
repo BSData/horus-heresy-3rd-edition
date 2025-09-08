@@ -275,7 +275,7 @@
     <categoryEntry name="Heavy Assault - Rampager Squads Only" id="91f0-1b91-0a9a-c542" hidden="false"/>
     <categoryEntry name="Elites - Seeker Squads or Headhunter Kill Teams Only" id="5c0d-4d49-44e2-0a99" hidden="false"/>
     <categoryEntry name="Cohort Additional Detachment" id="27e8-88b4-d3c8-d63f" hidden="false"/>
-    <categoryEntry name="Medusan Vanguard Unlock" id="fc09-911b-ee8c-7967" hidden="true"/>
+    <categoryEntry name="Medusan Vanguard Unlock" id="fc09-911b-ee8c-7967" hidden="false"/>
     <categoryEntry name="Tartaros Centurion" id="86d7-7e47-a0d7-6041" hidden="false">
       <comment>Emperors Children prime check</comment>
     </categoryEntry>
@@ -18609,6 +18609,11 @@
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="roster" childId="4e4f-ab55-68ef-ad63" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
               </repeats>
+            </modifier>
+            <modifier type="add" value="Dreadnought Talon requires a Mortificator" field="error">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="4e4f-ab55-68ef-ad63" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>

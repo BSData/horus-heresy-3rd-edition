@@ -39555,6 +39555,21 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
         </entryLink>
+        <entryLink import="true" name="Tainted Weapon" hidden="true" id="e424-5e6c-aa14-4bd3" type="selectionEntry" targetId="a5ab-613f-fffe-4bee" sortIndex="17">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="4935-1832-63f7-91aa" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c1d-c4ed-ced7-fe7a"/>
+          </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="Legion Sergeant Melee Weapons" field="name"/>

@@ -933,6 +933,46 @@ Bite of the Betrayed: This Gambit can only be selected during the first Face-Off
         </infoLink>
         <infoLink name="Skill Unmatched" id="f1ee-9cfd-aebe-b9c1" hidden="false" type="rule" targetId="d8ff-b46c-215c-6976"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="All models may have one of the following: All must have the same." id="2061-8e93-953f-d964" hidden="true">
+          <entryLinks>
+            <entryLink import="true" name="Sonic shriekers" hidden="false" id="731b-c4e3-5b55-fbf3" type="selectionEntry" targetId="f7a1-d5a3-c294-7ebd">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b97-8860-c515-2492"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="5" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Sonic lance" hidden="false" id="97c7-39bf-9f24-33fd" type="selectionEntry" targetId="5767-7e75-a9ce-d25b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0d0-9fab-ed44-860e"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="5" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5dd-981f-f5e3-e6d1"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Palatine Blade Squad" hidden="false" id="8f1b-e5a5-5607-612c" publicationId="e54c-7040-0f35-d85d" page="138">
       <costs>

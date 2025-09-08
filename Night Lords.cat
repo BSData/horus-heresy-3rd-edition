@@ -466,25 +466,74 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
             <categoryLink targetId="c504-9dfa-35d3-c98f" id="c6c0-e196-44e6-aee9" primary="false" name="Antigrav Model Sub-Type"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May replace it&apos;s chainsword with:" id="f240-8d6d-eac6-f708" hidden="false" defaultSelectionEntryId="1891-bce9-5194-9973">
+            <selectionEntryGroup name="Options" id="bd97-6a2a-1b70-bc8e" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Any Model in this Unit may replace it&apos;s chainsword with:" id="1587-41ca-dea5-8e8c" hidden="false" defaultSelectionEntryId="5b46-66e9-fa3a-61a0" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Legion Sergeant Melee Weapons (no chainsword)" hidden="false" id="93d0-a55c-f6f8-44c0" type="selectionEntryGroup" targetId="c7ca-8933-a703-7301" sortIndex="2" flatten="true"/>
+                    <entryLink import="true" name="Chainsword" hidden="false" id="832f-bc8a-3cef-8078" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1"/>
+                    <entryLink import="true" name="Chainblade" hidden="false" id="21f0-8b62-f18d-2a3f" type="selectionEntry" targetId="c771-887d-bb22-6a27">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Chainglave" hidden="false" id="3c6a-754b-295e-5cf0" type="selectionEntry" targetId="3708-b181-5f26-4387">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3eb7-19db-9b88-9621" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75d5-ac8f-2a11-dacb"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="3eb7-19db-9b88-9621">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Bolt Pistol" id="28c8-8f4e-a2f8-dbb8" hidden="false" defaultSelectionEntryId="018c-4e6d-9eb7-710a" sortIndex="2" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="342e-8ef5-60a1-775f" type="selectionEntry" targetId="2942-f783-d627-33c5"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="408d-0913-ee9c-5a9e"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8cac-0f2e-978f-991d" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="8cac-0f2e-978f-991d">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
-                <entryLink import="true" name="Legion Sergeant Melee Weapons (no chainsword)" hidden="false" id="374b-ce5c-299d-f8fc" type="selectionEntryGroup" targetId="c7ca-8933-a703-7301" sortIndex="2" flatten="true"/>
-                <entryLink import="true" name="Chainsword" hidden="false" id="1891-bce9-5194-9973" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1"/>
+                <entryLink import="true" name="Pair of lightning claws" hidden="false" id="9728-4793-0e73-672d" type="selectionEntry" targetId="6754-24dd-5be0-26ff">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78ad-0116-6252-36d8" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ea9-b042-5ce9-4f82"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85ae-5388-d501-82c3"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6bee-8999-b4c4-a490"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="6bee-8999-b4c4-a490">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <entryLinks>
-            <entryLink import="true" name="Bolt pistol" hidden="false" id="497b-dced-8358-5d60" type="selectionEntry" targetId="2942-f783-d627-33c5">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e78-5c8f-e2b2-9396"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="570c-b9bf-841e-6383"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
           <modifiers>
             <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
               <conditions>
@@ -545,11 +594,16 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
           <selectionEntryGroups>
             <selectionEntryGroup name="Options" id="7463-cdea-1474-9049" hidden="false">
               <selectionEntryGroups>
-                <selectionEntryGroup name="Any Model in this Unit may replace it&apos;s chainsword with:" id="1cee-1725-3357-5f9b" hidden="false" defaultSelectionEntryId="5b46-66e9-fa3a-61a0">
+                <selectionEntryGroup name="Any Model in this Unit may replace it&apos;s chainsword with:" id="1cee-1725-3357-5f9b" hidden="false" defaultSelectionEntryId="5b46-66e9-fa3a-61a0" sortIndex="1">
                   <entryLinks>
                     <entryLink import="true" name="Legion Sergeant Melee Weapons (no chainsword)" hidden="false" id="3d28-6bc0-05dc-e307" type="selectionEntryGroup" targetId="c7ca-8933-a703-7301" sortIndex="2" flatten="true"/>
                     <entryLink import="true" name="Chainsword" hidden="false" id="5b46-66e9-fa3a-61a0" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1"/>
                     <entryLink import="true" name="Chainblade" hidden="false" id="11c0-7a2f-bde8-3f79" type="selectionEntry" targetId="c771-887d-bb22-6a27">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Chainglave" hidden="false" id="349a-a4aa-09a4-6688" type="selectionEntry" targetId="3708-b181-5f26-4387">
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                       </costs>
@@ -567,7 +621,7 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Bolt Pistol" id="b694-8377-e4f9-02fb" hidden="false" defaultSelectionEntryId="018c-4e6d-9eb7-710a">
+                <selectionEntryGroup name="Bolt Pistol" id="b694-8377-e4f9-02fb" hidden="false" defaultSelectionEntryId="018c-4e6d-9eb7-710a" sortIndex="2">
                   <selectionEntryGroups>
                     <selectionEntryGroup name="1-5 may exchange their bolt pistol for:" id="73d7-8d7a-5855-9442" hidden="false" flatten="false">
                       <entryLinks>

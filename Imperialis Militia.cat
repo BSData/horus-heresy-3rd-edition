@@ -6645,6 +6645,13 @@
             </modifier>
             <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Militia Heavy Weapons" hidden="false" id="98e4-33be-bb39-e56a" type="selectionEntryGroup" targetId="cf14-e95b-4c69-8187">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a36-f321-0259-e032"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -6663,11 +6670,6 @@
         <infoLink name="Imperialis Militia" id="599c-deca-26d5-22eb" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Militia Heavy Weapons" hidden="false" id="98e4-33be-bb39-e56a" type="selectionEntryGroup" targetId="cf14-e95b-4c69-8187" sortIndex="2">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c4d0-1554-76ae-304c"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="5c3d-34d7-09e1-428a" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Common Prime Benefits" hidden="false" id="e9fa-9c54-95e3-9f45" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
@@ -6849,7 +6851,6 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
                 <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
                 <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
                 <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -8197,7 +8198,11 @@
                 <condition type="equalTo" value="1" field="selections" scope="unit" childId="3b78-6a29-9c23-de6c" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="45" field="9893-c379-920b-8982"/>
+            <modifier type="set" value="45" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="unit" childId="3b78-6a29-9c23-de6c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Replace with Armoured Sentinels" hidden="false" id="3b78-6a29-9c23-de6c" sortIndex="1">
@@ -10557,7 +10562,7 @@
     </selectionEntry>
     <selectionEntry name="Militia Scout Rover" type="unit" id="addd-bda2-437e-ad6d" page="39" publicationId="f5e5-c199-d3d4-ccf6">
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="35"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -10571,94 +10576,9 @@
         <infoLink name="Imperialis Militia" id="bf3d-974f-821f-cb75" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Unit Option" id="79c5-c494-d2df-229b" hidden="false" defaultSelectionEntryId="aebb-72a5-45d8-9fc1" sortIndex="1">
+        <selectionEntryGroup name="Venator or Ridgerunner" id="861b-04d5-01ae-3291" hidden="false" sortIndex="1" flatten="true" defaultSelectionEntryId="aebb-72a5-45d8-9fc1">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Militia Ridgerunner" hidden="false" id="2407-31c4-4974-84d4" page="39" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="2">
-              <profiles>
-                <profile name="Militia Ridgerunner" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="eed6-0b69-4576-ab02">
-                  <characteristics>
-                    <characteristic typeId="827f-9ce2-2118-e134" name="Type">Vehicle (Rapid)</characteristic>
-                    <characteristic typeId="d624-72fe-0205-4443" name="M">14</characteristic>
-                    <characteristic typeId="a17e-8e7d-d21f-c138" name="BS">3</characteristic>
-                    <characteristic typeId="6536-e73d-4a74-c675" name="Front Armour">11</characteristic>
-                    <characteristic typeId="f03a-18a7-8586-273d" name="Side Armour">10</characteristic>
-                    <characteristic typeId="ec84-1f5d-1bb3-6826" name="Rear Armour">10</characteristic>
-                    <characteristic typeId="8735-4497-1f8a-4dda" name="HP">3</characteristic>
-                    <characteristic typeId="a82e-858c-9aa9-2b43" name="Transport Capacity">-</characteristic>
-                    <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="45"/>
-                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-                <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
-                <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ab6-2c19-47f0-af8a"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Twin heavy stubber" hidden="false" id="ea75-ea74-486b-a31a" type="selectionEntry" targetId="9027-63f4-4780-b5b1" sortIndex="1">
-                  <modifiers>
-                    <modifier type="set" value="Hull (Front) Mounted twin heavy stubber" field="name"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a612-dba2-4f61-80bf"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02c8-c0f9-4ca0-b753"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Smoke Launchers" hidden="false" id="7851-0fdb-4a9c-994b" type="selectionEntry" targetId="b94f-e829-064a-9d60" sortIndex="2">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="77f2-353e-476d-bd0e"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8db4-629f-4dc5-b7e3"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="May take a pintle mounted heavy weapon:" id="14ea-f4df-4205-b12b" hidden="false" sortIndex="3">
-                  <entryLinks>
-                    <entryLink import="true" name="Militia Heavy Weapons" hidden="false" id="0f5c-3a41-4ae5-966b" type="selectionEntryGroup" targetId="cf14-e95b-4c69-8187">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81db-1587-4314-a894"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3245-8316-48d9-bd71"/>
-                  </constraints>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="This Model may have any of the following selected for it:" id="38ab-d3a6-4fba-8fda" hidden="false" sortIndex="4">
-                  <entryLinks>
-                    <entryLink import="true" name="Searchlight" hidden="false" id="735c-7acd-41c1-b48a" type="selectionEntry" targetId="5a85-bf28-f790-7bf0">
-                      <costs>
-                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                      </costs>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc32-d44d-49ee-bc07"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Hunter-killer missile" hidden="false" id="a151-f674-42a7-feb8" type="selectionEntry" targetId="b9b7-8297-35b5-74ad">
-                      <modifiers>
-                        <modifier type="append" value="Hull (Front) Mounted" field="name"/>
-                      </modifiers>
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3845-d6d9-6dd6-c08c"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <categoryLinks>
-                <categoryLink name="Vehicle Model Type" hidden="false" id="c160-1e24-4522-9a87" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
-                <categoryLink name="Rapid Sub-Type" hidden="false" id="37bb-0f88-44ff-980c" targetId="a5c6-b359-cecb-e0b1" primary="false"/>
-              </categoryLinks>
-            </selectionEntry>
-            <selectionEntry type="model" import="true" name="Militia Venator" hidden="false" id="aebb-72a5-45d8-9fc1" page="39" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="1">
+            <selectionEntry type="model" import="true" name="Militia Venator" hidden="false" id="aebb-72a5-45d8-9fc1" page="39" publicationId="f5e5-c199-d3d4-ccf6" defaultAmount="1" sortIndex="1">
               <profiles>
                 <profile name="Militia Venator" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="4235-f78d-4eb6-8672">
                   <characteristics>
@@ -10675,14 +10595,13 @@
                 </profile>
               </profiles>
               <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="35"/>
                 <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
                 <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
                 <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
                 <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
               </costs>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48f5-50e4-4560-83e4"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48f5-50e4-4560-83e4" automatic="true"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Smoke Launchers" hidden="false" id="67db-65f3-4bf7-9176" type="selectionEntry" targetId="b94f-e829-064a-9d60" sortIndex="3">
@@ -10770,7 +10689,94 @@
                 <categoryLink name="Rapid Sub-Type" hidden="false" id="e8d4-67ae-4c22-bd25" targetId="a5c6-b359-cecb-e0b1" primary="false"/>
               </categoryLinks>
             </selectionEntry>
+            <selectionEntry type="model" import="true" name="Militia Ridgerunner" hidden="false" id="2407-31c4-4974-84d4" page="39" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="2">
+              <profiles>
+                <profile name="Militia Ridgerunner" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="eed6-0b69-4576-ab02">
+                  <characteristics>
+                    <characteristic typeId="827f-9ce2-2118-e134" name="Type">Vehicle (Rapid)</characteristic>
+                    <characteristic typeId="d624-72fe-0205-4443" name="M">14</characteristic>
+                    <characteristic typeId="a17e-8e7d-d21f-c138" name="BS">3</characteristic>
+                    <characteristic typeId="6536-e73d-4a74-c675" name="Front Armour">11</characteristic>
+                    <characteristic typeId="f03a-18a7-8586-273d" name="Side Armour">10</characteristic>
+                    <characteristic typeId="ec84-1f5d-1bb3-6826" name="Rear Armour">10</characteristic>
+                    <characteristic typeId="8735-4497-1f8a-4dda" name="HP">3</characteristic>
+                    <characteristic typeId="a82e-858c-9aa9-2b43" name="Transport Capacity">-</characteristic>
+                    <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ab6-2c19-47f0-af8a" automatic="true"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin heavy stubber" hidden="false" id="ea75-ea74-486b-a31a" type="selectionEntry" targetId="9027-63f4-4780-b5b1" sortIndex="1">
+                  <modifiers>
+                    <modifier type="set" value="Hull (Front) Mounted twin heavy stubber" field="name"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a612-dba2-4f61-80bf"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02c8-c0f9-4ca0-b753"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Smoke Launchers" hidden="false" id="7851-0fdb-4a9c-994b" type="selectionEntry" targetId="b94f-e829-064a-9d60" sortIndex="2">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="77f2-353e-476d-bd0e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8db4-629f-4dc5-b7e3"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="May take a pintle mounted heavy weapon:" id="14ea-f4df-4205-b12b" hidden="false" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="Militia Heavy Weapons" hidden="false" id="0f5c-3a41-4ae5-966b" type="selectionEntryGroup" targetId="cf14-e95b-4c69-8187">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81db-1587-4314-a894"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3245-8316-48d9-bd71"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="This Model may have any of the following selected for it:" id="38ab-d3a6-4fba-8fda" hidden="false" sortIndex="4">
+                  <entryLinks>
+                    <entryLink import="true" name="Searchlight" hidden="false" id="735c-7acd-41c1-b48a" type="selectionEntry" targetId="5a85-bf28-f790-7bf0">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc32-d44d-49ee-bc07"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Hunter-killer missile" hidden="false" id="a151-f674-42a7-feb8" type="selectionEntry" targetId="b9b7-8297-35b5-74ad">
+                      <modifiers>
+                        <modifier type="append" value="Hull (Front) Mounted" field="name"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3845-d6d9-6dd6-c08c"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <categoryLinks>
+                <categoryLink name="Vehicle Model Type" hidden="false" id="c160-1e24-4522-9a87" targetId="aa5a-c9fd-1eb1-7a45" primary="false"/>
+                <categoryLink name="Rapid Sub-Type" hidden="false" id="37bb-0f88-44ff-980c" targetId="a5c6-b359-cecb-e0b1" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d5a-b5fc-f583-ed2f"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -10781,6 +10787,13 @@
         </entryLink>
         <entryLink import="true" name="Provenance" hidden="false" id="5b26-9f00-5952-8a01" type="selectionEntryGroup" targetId="681d-491f-d79b-1b81"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="45" field="9893-c379-920b-8982">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="2407-31c4-4974-84d4" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry name="Militia Thunderbolt Heavy Fighter" type="unit" id="f7d5-cc43-41f8-970e" page="40" publicationId="f5e5-c199-d3d4-ccf6">
       <costs>
@@ -11185,9 +11198,9 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ab5-c0dd-59d0-71c8"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have its Hull (Front) Mounted heavy bolter exchanged for one of the following:" id="c63d-232c-4661-9e87" sortIndex="2">
+            <selectionEntryGroup name="This Model may have its Hull (Front) Mounted heavy bolter exchanged for one of the following:" id="c63d-232c-4661-9e87" sortIndex="2" defaultSelectionEntryId="954f-772b-4c8d-b864">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="bc40-b14a-978e-0232" id="954f-772b-4c8d-b864" name="Heavy bolter">
+                <entryLink hidden="false" type="selectionEntry" targetId="bc40-b14a-978e-0232" id="954f-772b-4c8d-b864" name="Heavy bolter" sortIndex="1">
                   <modifiers>
                     <modifier type="set" field="name" value="Hull (Front) Mounted heavy bolter"/>
                   </modifiers>
@@ -11195,7 +11208,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="999a-4446-4f42-a439"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" id="45f1-fe1a-40dc-b624" name="Heavy flamer">
+                <entryLink hidden="false" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" id="45f1-fe1a-40dc-b624" name="Heavy flamer" sortIndex="2">
                   <modifiers>
                     <modifier type="set" field="name" value="Hull (Front) Mounted heavy flamer"/>
                   </modifiers>
@@ -11203,7 +11216,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ee9-ced6-4783-9057"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="36e7-212d-449c-b07d" id="3952-550d-4ed7-af06" name="Multi-laser">
+                <entryLink hidden="false" type="selectionEntry" targetId="36e7-212d-449c-b07d" id="3952-550d-4ed7-af06" name="Multi-laser" sortIndex="3">
                   <modifiers>
                     <modifier type="set" field="name" value="Hull (Front) Mounted multi-laser"/>
                   </modifiers>
@@ -11211,7 +11224,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82d4-feb4-4c64-85fa"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93" id="0698-c032-40bf-8db1" name="Autocannon">
+                <entryLink hidden="false" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93" id="0698-c032-40bf-8db1" name="Autocannon" sortIndex="4">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
@@ -11222,7 +11235,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ee8-748e-484d-ae9a"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="b6d5-4be2-c37e-2197" id="9637-bb82-4e65-9694" name="Lascannon">
+                <entryLink hidden="false" type="selectionEntry" targetId="b6d5-4be2-c37e-2197" id="9637-bb82-4e65-9694" name="Lascannon" sortIndex="5">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
@@ -11233,7 +11246,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b22-2b78-45f9-bdfa"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="4514-8e18-77b4-a141" id="35be-4f0e-41ea-8806" name="Demolisher cannon">
+                <entryLink hidden="false" type="selectionEntry" targetId="4514-8e18-77b4-a141" id="35be-4f0e-41ea-8806" name="Demolisher cannon" sortIndex="6">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="40"/>
                   </costs>
@@ -11252,7 +11265,7 @@
             </selectionEntryGroup>
             <selectionEntryGroup name="This Model may have both Sponson Mounted multi-lasers exchanged for one of the following:" id="db5e-2b8c-4a07-b6df" defaultSelectionEntryId="b281-f362-4ac8-9cd0" sortIndex="3">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" id="d2bc-052c-4982-8654" name="Heavy flamer">
+                <entryLink hidden="false" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" id="d2bc-052c-4982-8654" name="Heavy flamer" sortIndex="2">
                   <modifiers>
                     <modifier type="set" field="name" value="Two Sponson Mounted heavy flamers"/>
                   </modifiers>
@@ -11260,7 +11273,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f794-0cb5-451c-96d5"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="bc40-b14a-978e-0232" id="2f45-b537-4554-aaed" name="Heavy bolter">
+                <entryLink hidden="false" type="selectionEntry" targetId="bc40-b14a-978e-0232" id="2f45-b537-4554-aaed" name="Heavy bolter" sortIndex="3">
                   <modifiers>
                     <modifier type="set" field="name" value="Two Sponson Mounted heavy bolters"/>
                   </modifiers>
@@ -11268,7 +11281,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="654f-44ba-4fc1-a4d1"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93" id="e42b-ba5d-4057-a5b0" name="Autocannon">
+                <entryLink hidden="false" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93" id="e42b-ba5d-4057-a5b0" name="Autocannon" sortIndex="4">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
@@ -11279,7 +11292,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6e1-36bb-4a60-9530"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="b6d5-4be2-c37e-2197" id="ef60-0552-416c-91b1" name="Lascannon">
+                <entryLink hidden="false" type="selectionEntry" targetId="b6d5-4be2-c37e-2197" id="ef60-0552-416c-91b1" name="Lascannon" sortIndex="5">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
                   </costs>
@@ -11295,7 +11308,6 @@
                     <modifier type="set" value="Two Sponson Mounted multi-lasers" field="name"/>
                   </modifiers>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="89c8-8975-4139-94fb"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea45-2bf1-4ca3-bffc"/>
                   </constraints>
                 </entryLink>
@@ -11347,9 +11359,6 @@
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f33d-de94-4c0a-b3bf"/>
-              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -12558,8 +12567,8 @@ Rules</description>
                         <condition type="atLeast" value="1" field="selections" scope="unit" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
                         <condition type="notEqualTo" value="1" field="selections" scope="unit" childId="a073-2d4a-5bed-123e" shared="true"/>
                         <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="698d-9fae-4074-af3c" shared="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="a80e-b43a-4e8a-8729" shared="true"/>
                         <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="944f-f9d2-46e4-961b" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
