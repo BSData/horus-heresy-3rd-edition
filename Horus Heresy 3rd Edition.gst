@@ -22442,9 +22442,9 @@ When a Model with this Special Rule is included in a Detachment, two additional 
       </modifiers>
       <rules>
         <rule name="Paragon of Malevolence Prime Advantage" id="a60b-971a-c97d-5d5f" hidden="false">
-          <description>Add one additional Force Organlsation Slot to the Detachment that includes the Prime Slot, this Slot may be of any Battlefield Role other than High Command, Command, Warlord or Lord of War and can only be filled by a Unit selected from the Machina Malefica section of the Mechanicum Taghmata Army List. This Advantage may only be selected once per Detachment.
- 
-Note that The Paragon of Malevolence Prime Advantage may be selected if the Unit chosen to fill the Prime Slot has the Unique Sub-Type, in the same manner as the Logistical Benefit Prime Advantage. However, the Paragon of Malevolence Prime Advantage can only be selected once per Detachment and cannot be selected if the Logistical Benefit Prime Advantage is also selected for that Detachment.</description>
+          <description>Add one additional Force Organlsation Slot to the Detachment that includes the Prime Slot, this Slot may be of any Battlefield Role other than High Command, Command, Warlord or Lord of War and can only be filled by a Unit selected from the Machina Malefica section of the Mechanicum Taghmata Army List. This Advantage may only be selected once per Detachment.
+ 
+Note that The Paragon of Malevolence Prime Advantage may be selected if the Unit chosen to fill the Prime Slot has the Unique Sub-Type, in the same manner as the Logistical Benefit Prime Advantage. However, the Paragon of Malevolence Prime Advantage can only be selected once per Detachment and cannot be selected if the Logistical Benefit Prime Advantage is also selected for that Detachment.</description>
         </rule>
       </rules>
     </selectionEntry>
