@@ -338,7 +338,9 @@ class GameTests(unittest.TestCase):
                             {"type": "ceil", "value": "10", "field": "29c5-925d-5b1d-1e77"},
                         ], expected_condition_child_id="8cf8-9be5-91d6-c96d")
 
-                    if "Command" in profile_type:
+                    if "Command" in profile_type and not unit.name == "Discipline Master Cadre":
+                        # Discipline master special due to being multiple characters,
+                        # only 1 of which can be the paragon of battle.
                         with self.subTest(f"Paragon of Battle for {profile}"):
                             self.check_mods_and_conditions(paragon_of_battle_group, expected_mods=[
                                 {"type": "increment", "value": "1", "field": "253c-d694-4695-c89e"},
