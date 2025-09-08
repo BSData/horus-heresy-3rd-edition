@@ -19736,13 +19736,13 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7a2d-b92d-b86b-5acf" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Lord of War" hidden="false" id="1b65-c6dc-9a8d-9ef3" targetId="a46f-a465-0ead-d6b8" type="categoryEntry">
+            <categoryLink name="Lord of War" hidden="false" id="1b65-c6dc-9a8d-9ef3" targetId="a46f-a465-0ead-d6b8">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a232-5f51-0d5f-52ac"/>
                 <constraint type="max" value="25" field="9893-c379-920b-8982" scope="roster" shared="true" id="4bd1-412f-e5bd-2b21" percentValue="true" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Prime Lord of War" hidden="false" id="fcb1-d790-0ca1-daa8" targetId="2ada-ddf1-73b4-6c19" type="categoryEntry">
+            <categoryLink name="Prime Lord of War" hidden="false" id="fcb1-d790-0ca1-daa8" targetId="2ada-ddf1-73b4-6c19">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5970-2b40-a640-8a74" includeChildSelections="true"/>
               </constraints>
@@ -20825,9 +20825,15 @@
         <forceEntryLink name="Apex - Medusan Vanguard" id="d34e-10ce-826a-4f5e" hidden="true" targetId="7ff8-9e2c-e68a-573f" type="forceEntry"/>
         <forceEntryLink name="Apex - Atramentar Hunt " id="77b8-89ca-6e92-12e4" hidden="true" targetId="dbbe-886f-3ce1-13c0" type="forceEntry"/>
         <forceEntryLink name="Apex - Exalted Conclave" id="5054-c3a2-6e82-5245" hidden="true" targetId="c961-7007-0142-5d07" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Oversight Delegation" id="085f-0fac-d4cd-75e6" hidden="false" targetId="2291-5e67-64bd-5edc" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Daemonic Manifestation" id="74b0-a8a1-c406-4ecf" hidden="false" targetId="2733-cda6-ff04-1d79" type="forceEntry"/>
-        <forceEntryLink name="Apex - Storm Cadre" id="988e-0784-4009-83fe" hidden="false" targetId="36f3-796e-8f6d-3cb8" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Oversight Delegation" id="085f-0fac-d4cd-75e6" hidden="false" targetId="2291-5e67-64bd-5edc" type="forceEntry">
+          <comment>Militia</comment>
+        </forceEntryLink>
+        <forceEntryLink name="Auxiliary - Daemonic Manifestation" id="74b0-a8a1-c406-4ecf" hidden="false" targetId="2733-cda6-ff04-1d79" type="forceEntry">
+          <comment>Miltia</comment>
+        </forceEntryLink>
+        <forceEntryLink name="Auxiliary - Storm Cadre" id="988e-0784-4009-83fe" hidden="false" targetId="36f3-796e-8f6d-3cb8" type="forceEntry">
+          <comment>Militia</comment>
+        </forceEntryLink>
       </forceEntryLinks>
     </forceEntry>
     <forceEntry name="Lord of War Detachment" id="b7a1-629f-9d60-c2a9" hidden="false" sortIndex="4">
