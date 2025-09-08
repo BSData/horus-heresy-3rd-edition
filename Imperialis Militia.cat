@@ -2317,12 +2317,12 @@
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                       </costs>
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbb1-0722-48bf-8be3"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df23-f9ed-9042-9141"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="cd09-128c-4544-95ad"/>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="cd09-128c-4544-95ad"/>
                   </constraints>
                   <modifiers>
                     <modifier type="increment" value="1" field="cd09-128c-4544-95ad">
@@ -4417,8 +4417,8 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="1023-5cdf-40e2-8708" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="4d6d-f213-427b-819a" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="1023-5cdf-40e2-8708" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="a05c-08e0-aa50-f61d" shared="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="e627-d76e-74a9-28de" shared="true"/>
                       </conditions>
                     </conditionGroup>
@@ -7401,6 +7401,7 @@
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44f3-9489-4a99-8e52"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e979-bde2-65b4-86a4"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -7889,7 +7890,7 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="May have its earthshaker cannon exchanged for one of the following:" id="a073-f844-41f1-b6a6" defaultSelectionEntryId="9204-bff1-4067-adfb">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="8116-4e1b-ccf8-5182" id="9204-bff1-4067-adfb" name="Earthshaker cannon" sortIndex="1">
+                <entryLink hidden="false" type="selectionEntry" targetId="8116-4e1b-ccf8-5182" id="9204-bff1-4067-adfb" name="Earthshaker cannon" sortIndex="1" defaultAmount="">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adfa-b6b1-446a-af52"/>
                   </constraints>
@@ -7928,6 +7929,7 @@
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92b1-af10-4880-b11c"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="de94-76a8-9553-4df9"/>
               </constraints>
               <comment>Checked under Heavy quad mortar</comment>
             </selectionEntryGroup>
