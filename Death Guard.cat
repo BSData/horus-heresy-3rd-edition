@@ -889,7 +889,11 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
                 <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="34a0-824b-82c4-0a21" automatic="true"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Heavy alchem flamer" hidden="false" id="ba0d-48dc-e868-7cec" type="selectionEntry" targetId="b21e-8390-ce83-0b6a"/>
+                <entryLink import="true" name="Heavy alchem flamer" hidden="false" id="ba0d-48dc-e868-7cec" type="selectionEntry" targetId="b21e-8390-ce83-0b6a">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
               <modifiers>
                 <modifier type="increment" value="1" field="34a0-824b-82c4-0a21">
@@ -936,9 +940,21 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f52-07a2-e7a5-b492"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c2f-eda0-e09d-08c0"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f52-07a2-e7a5-b492" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c2f-eda0-e09d-08c0" automatic="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="3f52-07a2-e7a5-b492">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="b21e-8390-ce83-0b6a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="1c2f-eda0-e09d-08c0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="b21e-8390-ce83-0b6a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
             <selectionEntryGroup name="May have one of the following selected for it:" id="d8e9-b02a-9e30-47c1" hidden="false" sortIndex="2">
               <entryLinks>
@@ -1257,14 +1273,9 @@ Process
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </entryLink>
@@ -1275,14 +1286,9 @@ Process
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </entryLink>

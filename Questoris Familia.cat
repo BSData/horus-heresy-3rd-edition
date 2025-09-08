@@ -259,6 +259,13 @@
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b7a1-629f-9d60-c2a9" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Household Paradigms" hidden="false" id="bc35-fa07-3e87-a42c">
       <entryLinks>
@@ -1464,6 +1471,13 @@ Additionally, an Army with the Mechanicum Vassals Household Paradigm is not subj
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b7a1-629f-9d60-c2a9" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hekaton siege claw" hidden="false" id="dd03-09c0-3285-68ba">
       <profiles>
@@ -2181,7 +2195,7 @@ Additionally, an Army with the Mechanicum Vassals Household Paradigm is not subj
             <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">7</characteristic>
             <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
             <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
-            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template (Hellstorm), Heavy (AP), Shred *5+), Panic (2)</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template (Hellstorm), Heavy (AP), Shred (5+), Panic (2)</characteristic>
             <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Flame</characteristic>
           </characteristics>
         </profile>
@@ -3805,4 +3819,18 @@ A Model with both the Knight Sub-Type and the Colossus Special Rule is not requi
 When making multiple Shooting Attacks in the same Shooting Phase, a Model with this Special Rule and the Vehicle Type does not have to make all attacks as Snap Shots.</description>
     </rule>
   </sharedRules>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Use a Knight Lord of War force - not this one!" hidden="true" id="5dd4-dad0-d17c-279b">
+      <categoryLinks>
+        <categoryLink targetId="f7dd-b6b0-69d0-1a53" id="d52e-b713-b50c-b435" primary="true" name="Use a Knight Lord of War force instead"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="b7a1-629f-9d60-c2a9" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>
