@@ -715,10 +715,12 @@
                             <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9a22-d01f-ab5c-ec07" shared="true"/>
                             <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="roster" childId="7799-e1d6-762b-700b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="eeb7-2c0c-9882-f27d" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="157f-952c-13bb-41bf" shared="true" includeChildSelections="true"/>
                           </conditions>
                           <comment>EC</comment>
                           <conditionGroups>
-                            <conditionGroup type="and">
+                            <conditionGroup type="or">
                               <conditions>
                                 <condition type="atLeast" value="1" field="selections" scope="force" childId="2c0e-cb21-17b4-8870" shared="true" includeChildSelections="true"/>
                                 <condition type="atLeast" value="1" field="selections" scope="force" childId="1fb4-7ef8-2442-2e70" shared="true" includeChildSelections="true"/>
@@ -732,10 +734,12 @@
                             <condition type="instanceOf" value="1" field="selections" scope="parent" childId="21c0-18db-03dd-ae07" shared="true"/>
                             <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="roster" childId="7799-e1d6-762b-700b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="eeb7-2c0c-9882-f27d" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="1fb4-7ef8-2442-2e70" shared="true" includeChildSelections="true"/>
                           </conditions>
                           <comment>IW</comment>
                           <conditionGroups>
-                            <conditionGroup type="and">
+                            <conditionGroup type="or">
                               <conditions>
                                 <condition type="atLeast" value="1" field="selections" scope="force" childId="2c0e-cb21-17b4-8870" shared="true" includeChildSelections="true"/>
                                 <condition type="atLeast" value="1" field="selections" scope="force" childId="157f-952c-13bb-41bf" shared="true" includeChildSelections="true"/>
@@ -758,10 +762,12 @@
                             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d186-cffc-0950-f632" shared="true"/>
                             <condition type="instanceOf" value="1" field="selections" scope="parent" childId="d186-cffc-0950-f632" shared="true"/>
                             <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="eeb7-2c0c-9882-f27d" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="1fb4-7ef8-2442-2e70" shared="true" includeChildSelections="true"/>
                           </conditions>
                           <comment>IF</comment>
                           <conditionGroups>
-                            <conditionGroup type="and">
+                            <conditionGroup type="or">
                               <conditions>
                                 <condition type="atLeast" value="1" field="selections" scope="force" childId="2c0e-cb21-17b4-8870" shared="true" includeChildSelections="true"/>
                                 <condition type="atLeast" value="1" field="selections" scope="force" childId="157f-952c-13bb-41bf" shared="true" includeChildSelections="true"/>
@@ -811,10 +817,12 @@
                             <condition type="instanceOf" value="1" field="selections" scope="parent" childId="736e-3967-e72b-e3ac" shared="true"/>
                             <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="roster" childId="7799-e1d6-762b-700b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="eeb7-2c0c-9882-f27d" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="1fb4-7ef8-2442-2e70" shared="true" includeChildSelections="true"/>
                           </conditions>
                           <comment>IH</comment>
                           <conditionGroups>
-                            <conditionGroup type="and">
+                            <conditionGroup type="or">
                               <conditions>
                                 <condition type="atLeast" value="1" field="selections" scope="force" childId="2c0e-cb21-17b4-8870" shared="true" includeChildSelections="true"/>
                                 <condition type="atLeast" value="1" field="selections" scope="force" childId="157f-952c-13bb-41bf" shared="true" includeChildSelections="true"/>
@@ -828,10 +836,12 @@
                             <condition type="instanceOf" value="1" field="selections" scope="parent" childId="a956-190d-3b47-6258" shared="true"/>
                             <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="roster" childId="7799-e1d6-762b-700b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="157f-952c-13bb-41bf" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="2c0e-cb21-17b4-8870" shared="true" includeChildSelections="true"/>
                           </conditions>
                           <comment>WE</comment>
                           <conditionGroups>
-                            <conditionGroup type="and">
+                            <conditionGroup type="or">
                               <conditions>
                                 <condition type="atLeast" value="1" field="selections" scope="force" childId="1fb4-7ef8-2442-2e70" shared="true" includeChildSelections="true"/>
                                 <condition type="atLeast" value="1" field="selections" scope="force" childId="eeb7-2c0c-9882-f27d" shared="true" includeChildSelections="true"/>
@@ -894,10 +904,12 @@
                             <condition type="instanceOf" value="1" field="selections" scope="parent" childId="ac06-fcec-b634-5bd9" shared="true"/>
                             <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="roster" childId="7799-e1d6-762b-700b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="157f-952c-13bb-41bf" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="1fb4-7ef8-2442-2e70" shared="true" includeChildSelections="true"/>
                           </conditions>
                           <comment>SH</comment>
                           <conditionGroups>
-                            <conditionGroup type="and">
+                            <conditionGroup type="or">
                               <conditions>
                                 <condition type="atLeast" value="1" field="selections" scope="force" childId="2c0e-cb21-17b4-8870" shared="true" includeChildSelections="true"/>
                                 <condition type="atLeast" value="1" field="selections" scope="force" childId="eeb7-2c0c-9882-f27d" shared="true" includeChildSelections="true"/>
@@ -911,10 +923,12 @@
                             <condition type="instanceOf" value="1" field="selections" scope="parent" childId="4935-1832-63f7-91aa" shared="true"/>
                             <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="roster" childId="7799-e1d6-762b-700b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="157f-952c-13bb-41bf" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="1fb4-7ef8-2442-2e70" shared="true" includeChildSelections="true"/>
                           </conditions>
                           <comment>WB</comment>
                           <conditionGroups>
-                            <conditionGroup type="and">
+                            <conditionGroup type="or">
                               <conditions>
                                 <condition type="atLeast" value="1" field="selections" scope="force" childId="2c0e-cb21-17b4-8870" shared="true" includeChildSelections="true"/>
                                 <condition type="atLeast" value="1" field="selections" scope="force" childId="eeb7-2c0c-9882-f27d" shared="true" includeChildSelections="true"/>
@@ -944,10 +958,12 @@
                             <condition type="instanceOf" value="1" field="selections" scope="parent" childId="340c-1d4f-1f31-fb70" shared="true"/>
                             <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="roster" childId="7799-e1d6-762b-700b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="157f-952c-13bb-41bf" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="eeb7-2c0c-9882-f27d" shared="true" includeChildSelections="true"/>
                           </conditions>
                           <comment>RG</comment>
                           <conditionGroups>
-                            <conditionGroup type="and">
+                            <conditionGroup type="or">
                               <conditions>
                                 <condition type="atLeast" value="1" field="selections" scope="force" childId="2c0e-cb21-17b4-8870" shared="true" includeChildSelections="true"/>
                                 <condition type="atLeast" value="1" field="selections" scope="force" childId="1fb4-7ef8-2442-2e70" shared="true" includeChildSelections="true"/>
@@ -961,10 +977,12 @@
                             <condition type="instanceOf" value="1" field="selections" scope="parent" childId="8813-5298-c368-ee16" shared="true"/>
                             <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="roster" childId="7799-e1d6-762b-700b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="157f-952c-13bb-41bf" shared="true" includeChildSelections="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="eeb7-2c0c-9882-f27d" shared="true" includeChildSelections="true"/>
                           </conditions>
                           <comment>AL</comment>
                           <conditionGroups>
-                            <conditionGroup type="and">
+                            <conditionGroup type="or">
                               <conditions>
                                 <condition type="atLeast" value="1" field="selections" scope="force" childId="2c0e-cb21-17b4-8870" shared="true" includeChildSelections="true"/>
                                 <condition type="atLeast" value="1" field="selections" scope="force" childId="1fb4-7ef8-2442-2e70" shared="true" includeChildSelections="true"/>
