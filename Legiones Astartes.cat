@@ -312,8 +312,17 @@
                 </entryLink>
                 <entryLink import="true" name="Quad launcher" hidden="false" id="1e36-18fd-6d28-28e1" type="selectionEntry" targetId="feb2-84a7-0b35-8f1b" sortIndex="4">
                   <modifiers>
-                    <modifier type="set" value="Quad Launcher - (Frag) (Shatter)" field="name"/>
+                    <modifier type="set" value="Quad Launcher - (Frag) (Shatter)" field="name">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="parent" childId="8e1a-b3e0-a8de-76a4" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
                     <modifier type="set" value="20" field="9893-c379-920b-8982"/>
+                    <modifier type="set" value="Quad Launcher - (Frag) (Shatter) (Phosphex)" field="name">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="8e1a-b3e0-a8de-76a4" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Phosphex Canister Shot" hidden="true" id="8e1a-b3e0-a8de-76a4" flatten="false">
@@ -329,7 +338,7 @@
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="20f6-b3fa-3e01-dec7"/>
                       </constraints>
                       <profiles>
-                        <profile name="Phosphex Canister Shot" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="true" id="cc77-38f6-40d5-1cdd">
+                        <profile name="Quad Launcher (Phosphex Canister Shot)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="true" id="cc77-38f6-40d5-1cdd">
                           <characteristics>
                             <characteristic name="R" typeId="cdb0-8654-6840-1037">24</characteristic>
                             <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
@@ -352,7 +361,7 @@
                         <infoLink name="Poisoned (X)" id="f060-21cb-4051-21dc" hidden="true" type="rule" targetId="076f-2c91-c58b-71b3">
                           <comment>3+ (Phosphex canister shot)</comment>
                           <modifiers>
-                            <modifier type="set" value="Poisoned (3+)" field="name"/>
+                            <modifier type="set" value="Poisoned (3+) (Phosphex canister shot)" field="name"/>
                             <modifier type="set" value="false" field="hidden">
                               <conditions>
                                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="25ad-fbd9-d161-8fd1" shared="true" includeChildSelections="true" includeChildForces="true"/>
@@ -362,7 +371,7 @@
                         </infoLink>
                         <infoLink name="Barrage (X)" id="fc9e-5a4d-a0a8-15b2" hidden="true" type="rule" targetId="85f5-3a91-69f4-c3b7">
                           <modifiers>
-                            <modifier type="set" value="Barrage (1)" field="name"/>
+                            <modifier type="set" value="Barrage (1) (Phosphex canister shot)" field="name"/>
                             <modifier type="set" value="false" field="hidden">
                               <conditions>
                                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="25ad-fbd9-d161-8fd1" shared="true" includeChildSelections="true" includeChildForces="true"/>
@@ -373,7 +382,7 @@
                         </infoLink>
                         <infoLink name="Breaching (X)" id="2406-543b-9672-92f6" hidden="true" type="rule" targetId="b094-0b64-eb57-aed6">
                           <modifiers>
-                            <modifier type="set" value="Breaching (5+)" field="name"/>
+                            <modifier type="set" value="Breaching (5+) (Phosphex canister shot)" field="name"/>
                             <modifier type="set" value="false" field="hidden">
                               <conditions>
                                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="25ad-fbd9-d161-8fd1" shared="true" includeChildSelections="true" includeChildForces="true"/>
@@ -385,7 +394,7 @@
                         <infoLink name="Panic (X)" id="acbd-fc5f-576d-9b24" hidden="true" type="rule" targetId="82a7-f471-3fda-6ca1">
                           <comment>3 (Phosphex canister shot)</comment>
                           <modifiers>
-                            <modifier type="set" value="Panic (3)" field="name"/>
+                            <modifier type="set" value="Panic (3) (Phosphex canister shot)" field="name"/>
                             <modifier type="set" value="false" field="hidden">
                               <conditions>
                                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="25ad-fbd9-d161-8fd1" shared="true" includeChildSelections="true" includeChildForces="true"/>
@@ -34600,6 +34609,13 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">6</characteristic>
                 <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">This Model has Access Points on both Side Facings.</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="2" field="a82e-858c-9aa9-2b43">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6fc0-917e-44a4-a4da" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <costs>
@@ -34728,6 +34744,13 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">16</characteristic>
                 <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">If this Model does not have a base, it is considered to have Access Points on all Facings.</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="2" field="a82e-858c-9aa9-2b43">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6fc0-917e-44a4-a4da" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <costs>
