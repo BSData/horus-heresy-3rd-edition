@@ -14436,6 +14436,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Legion Heavy Weapons" hidden="false" id="a538-b2c1-a71e-7330" type="selectionEntryGroup" targetId="9f99-7e2a-4899-4066"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Legion Heavy Weapons List" id="f3e8-47d6-ac92-2b66" hidden="false" collapsible="true" flatten="false" defaultSelectionEntryId="cf76-c4c7-8a9a-0beb" sortIndex="4">
@@ -14512,18 +14513,99 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Iliastus Assault Cannon" hidden="true" id="0dc6-9078-29ed-d182" type="selectionEntry" targetId="f38b-8af1-17b8-30fe" sortIndex="9">
+            <entryLink import="true" name="Forge-crafted heavy flamer" hidden="true" id="f703-f2fb-5f33-8e21" type="selectionEntry" targetId="6d3e-3152-c52f-1d66">
               <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="8045-89a4-76d4-fcef" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <comment>SL</comment>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <comment>SL+Sgt Only</comment>
+                </modifier>
                 <modifier type="increment" value="20" field="9893-c379-920b-8982">
                   <repeats>
                     <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
                   </repeats>
                 </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Iliastus Assault Cannon" hidden="true" id="8437-f22e-f3ba-2355" type="selectionEntry" targetId="f38b-8af1-17b8-30fe">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="d186-cffc-0950-f632" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" value="20" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Shrapnel cannon" hidden="true" id="c95c-2528-d15a-6c6b" type="selectionEntry" targetId="9e19-9a01-799a-459e">
+              <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d186-cffc-0950-f632" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
                   </conditions>
-                  <comment>IF</comment>
+                </modifier>
+                <modifier type="increment" value="15" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Æther-fire cannon" hidden="true" id="d440-4657-d243-2c88" type="selectionEntry" targetId="47ab-cb37-4ddf-a387">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="20" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Heavy alchem flamer" hidden="true" id="c59d-ec82-5ee2-d470" type="selectionEntry" targetId="b21e-8390-ce83-0b6a">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="be98-aa9d-64ef-f62c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="10" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Warpfire projector" hidden="true" id="7eef-c414-6dc3-8201" type="selectionEntry" targetId="cdc1-9674-8d05-4eec">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="4935-1832-63f7-91aa" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="25" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
                 </modifier>
               </modifiers>
             </entryLink>
