@@ -34600,6 +34600,13 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">6</characteristic>
                 <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">This Model has Access Points on both Side Facings.</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="2" field="a82e-858c-9aa9-2b43">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6fc0-917e-44a4-a4da" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <costs>
@@ -34728,6 +34735,13 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">16</characteristic>
                 <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d">If this Model does not have a base, it is considered to have Access Points on all Facings.</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="2" field="a82e-858c-9aa9-2b43">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6fc0-917e-44a4-a4da" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <costs>
