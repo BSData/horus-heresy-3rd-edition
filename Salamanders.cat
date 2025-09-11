@@ -66,7 +66,7 @@
                     <entryLink import="true" name="Forge-crafted thunder hammer" hidden="false" id="9783-61b0-d7b1-aae4" type="selectionEntry" targetId="d08b-34be-c6b9-8494" defaultAmount="1" sortIndex="1">
                       <constraints>
                         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b3af-ac1a-025b-4c2e" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e029-2c98-deb7-a2ae" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e029-2c98-deb7-a2ae" includeChildSelections="false"/>
                       </constraints>
                     </entryLink>
                     <entryLink import="true" name="Power Weapon" hidden="false" id="fc96-9715-1356-b550" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" sortIndex="2">
@@ -81,44 +81,18 @@
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0aa7-5a79-76ae-93d4" includeChildSelections="false"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Forge-crafted power fist" hidden="true" id="1a7d-fb82-71b8-8c29" type="selectionEntry" targetId="8146-abba-1612-3d0f" sortIndex="4">
-                      <constraints>
-                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="72e5-e338-58af-1bbe" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a646-f550-b69c-5a23" includeChildSelections="false"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier type="set" value="false" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                              <comment>SL</comment>
-                              <conditionGroups>
-                                <conditionGroup type="or">
-                                  <conditions>
-                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
-                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
-                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
-                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
-                                  </conditions>
-                                </conditionGroup>
-                              </conditionGroups>
-                            </conditionGroup>
-                          </conditionGroups>
-                          <comment>SL+Sgt/Cmd/Spec/Champ Only</comment>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
                     <entryLink import="true" name="Chainfist" hidden="false" id="ceab-cd49-aa83-3c63" type="selectionEntry" targetId="8322-1eca-e855-2683" sortIndex="5">
                       <constraints>
                         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a3fd-1334-ccac-45da" includeChildSelections="false"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8ed-269c-a31a-7c74" includeChildSelections="false"/>
                       </constraints>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ec5-715e-edcc-1f47" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="6ec5-715e-edcc-1f47" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4907-338b-81af-d2f1" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntryGroup>
@@ -151,7 +125,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff8c-bfd0-c7d3-582f" includeChildSelections="false"/>
                   </constraints>
                   <selectionEntryGroups>
-                    <selectionEntryGroup name="1 model may exchange Drakenscale for:" id="5d0a-4119-94cb-8327" hidden="false" flatten="false" sortIndex="4">
+                    <selectionEntryGroup name="One model may exchange Drakenscale for:" id="5d0a-4119-94cb-8327" hidden="false" flatten="false" sortIndex="4">
                       <entryLinks>
                         <entryLink import="true" name="Forge-crafted heavy flamer" hidden="false" id="8275-2161-8ecd-96f6" type="selectionEntry" targetId="6d3e-3152-c52f-1d66">
                           <constraints>
@@ -159,6 +133,9 @@
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7787-efd6-1d77-b4a0" includeChildSelections="false"/>
                             <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="5a09-4681-117a-ee15" includeChildSelections="true"/>
                           </constraints>
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                          </costs>
                         </entryLink>
                       </entryLinks>
                       <constraints>
@@ -249,7 +226,7 @@
                     <entryLink import="true" name="Forge-crafted thunder hammer" hidden="false" id="38b4-3cb0-53e6-e8f4" type="selectionEntry" targetId="d08b-34be-c6b9-8494" defaultAmount="1" sortIndex="1">
                       <constraints>
                         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d531-8d0c-c6e7-46fc" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93c7-6355-fd36-8074" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="93c7-6355-fd36-8074" includeChildSelections="false"/>
                       </constraints>
                     </entryLink>
                     <entryLink import="true" name="Power Weapon" hidden="false" id="0253-ad3d-7d15-ee06" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" sortIndex="2">
@@ -292,12 +269,18 @@
                           <comment>SL+Sgt/Cmd/Spec/Champ Only</comment>
                         </modifier>
                       </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
                     </entryLink>
                     <entryLink import="true" name="Chainfist" hidden="false" id="c302-f73a-ca36-e5cb" type="selectionEntry" targetId="8322-1eca-e855-2683" sortIndex="5">
                       <constraints>
                         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0038-073e-786c-0657" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01b3-45be-f734-0a21" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="01b3-45be-f734-0a21" includeChildSelections="false"/>
                       </constraints>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
                     </entryLink>
                   </entryLinks>
                   <constraints>
@@ -333,23 +316,6 @@
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc56-65c6-c2ed-d149" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7da7-b9b9-6545-15f0" includeChildSelections="false"/>
                   </constraints>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup name="1 model may exchange Drakenscale for:" id="2ffd-8158-acdb-9516" hidden="false" flatten="false" sortIndex="4">
-                      <entryLinks>
-                        <entryLink import="true" name="Forge-crafted heavy flamer" hidden="false" id="80e6-0617-080c-d9c6" type="selectionEntry" targetId="6d3e-3152-c52f-1d66">
-                          <constraints>
-                            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6415-9164-bb86-f74a" includeChildSelections="false"/>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b734-1952-69cb-5422" includeChildSelections="false"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="837e-302a-56ac-0b78" includeChildSelections="true"/>
-                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ac56-c454-6ea1-e2dc" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fd7-6b4f-c2c7-2657" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntryGroup>
@@ -357,7 +323,8 @@
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
-        <categoryLink targetId="26c6-e05c-0f72-7852" id="473e-745e-c84b-e047" primary="false" name="Shield"/>
+        <categoryLink targetId="647c-faca-3c98-c203" id="4377-61ba-870d-678d" primary="false" name="Free Power Weapon"/>
+        <categoryLink targetId="dd1b-70ef-6015-1291" id="2df6-19af-5389-aa10" primary="false" name="No default Power Weapon"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="7b96-c4b2-5a5d-4284" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -383,21 +350,6 @@
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Drakenscale" hidden="false" id="0ff7-1797-617e-7133" type="selectionEntry" targetId="b021-e506-1ecd-b3c5">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18f6-e215-a6bc-8e0a" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b6b-2b65-4e3d-b790" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Forge-crafted thunder hammer" hidden="false" id="eb5e-a9e5-7141-8be2" type="selectionEntry" targetId="d08b-34be-c6b9-8494">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="17ce-e21b-da1a-68f2" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf22-35ed-ee58-d0e0" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="add" value="f9f6-d169-cb95-6285" field="category"/>
-          </modifiers>
-        </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="5099-c7ee-ec18-9823" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="3be4-badb-923a-07b0" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
