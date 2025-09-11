@@ -1078,9 +1078,6 @@ Bite of the Betrayed: This Gambit can only be selected during the first Face-Off
               </modifierGroups>
             </profile>
           </profiles>
-          <entryLinks>
-            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="cb5c-2f85-845a-7927" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
-          </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Palatine Warrior" hidden="false" id="34df-3bf1-75f0-8ee0" sortIndex="2" page="138" publicationId="e54c-7040-0f35-d85d" defaultAmount="4">
           <costs>
@@ -1160,13 +1157,13 @@ Bite of the Betrayed: This Gambit can only be selected during the first Face-Off
             <entryLink import="true" name="Prime Benefits" hidden="false" id="153a-258c-41dc-b4cc" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Frag grenades" hidden="false" id="e3e3-5e8d-0e09-c000" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
+        <entryLink import="true" name="Frag grenades" hidden="false" id="e3e3-5e8d-0e09-c000" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="5">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4bac-44c2-a74d-2a3a-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bac-44c2-a74d-2a3a-max"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Krak grenades" hidden="false" id="56d6-1d86-c89f-7773" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="4">
+        <entryLink import="true" name="Krak grenades" hidden="false" id="56d6-1d86-c89f-7773" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="6">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd4a-b6ff-e4b7-6ab0-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd4a-b6ff-e4b7-6ab0-max"/>
@@ -1188,6 +1185,46 @@ Bite of the Betrayed: This Gambit can only be selected during the first Face-Off
         <categoryLink targetId="647c-faca-3c98-c203" id="0544-5d10-a9ef-d5c2" primary="false" name="Free Power Weapon"/>
         <categoryLink targetId="dd1b-70ef-6015-1291" id="f1ac-a589-26f4-2148" primary="false" name="No default Power Weapon"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="All may select one of" id="4214-a1ba-d162-0010" hidden="false" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Sonic shriekers" hidden="false" id="10b4-604e-9ac3-55bd" type="selectionEntry" targetId="f7a1-d5a3-c294-7ebd" sortIndex="1">
+              <modifiers>
+                <modifier type="increment" value="5" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="413e-b1e1-50cd-a197"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Sonic lance" hidden="false" id="f60d-2c88-d5ae-980c" type="selectionEntry" targetId="5767-7e75-a9ce-d25b" sortIndex="2">
+              <modifiers>
+                <modifier type="increment" value="5" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22d1-3261-2efe-328e"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d054-5760-e43d-1238"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kakophoni Squad" hidden="false" id="4ac4-b32a-6840-a91e" publicationId="e54c-7040-0f35-d85d" page="139">
       <costs>
@@ -1677,40 +1714,6 @@ Bite of the Betrayed: This Gambit can only be selected during the first Face-Off
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a2e-adfa-441d-9d95"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Sonic shriekers" hidden="false" id="fd03-d025-9f63-55be" type="selectionEntry" targetId="f7a1-d5a3-c294-7ebd" sortIndex="5">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="5" field="9893-c379-920b-8982">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81e3-aee7-66af-a099"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Sonic lance" hidden="false" id="5050-5c68-a6a9-5a03" type="selectionEntry" targetId="5767-7e75-a9ce-d25b" sortIndex="6">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="5" field="9893-c379-920b-8982">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf37-8874-a2a3-41b0"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="019c-8df4-c84a-fb89" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="e302-e19d-6bfb-b3d1" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
@@ -1721,6 +1724,46 @@ Bite of the Betrayed: This Gambit can only be selected during the first Face-Off
         <categoryLink targetId="647c-faca-3c98-c203" id="f790-c107-d504-a3b2" primary="false" name="Free Power Weapon"/>
         <categoryLink targetId="dd1b-70ef-6015-1291" id="9083-0c08-ccd0-ee00" primary="false" name="No default Power Weapon"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="All may select one of" id="7655-ecd4-4d86-b792" hidden="false" sortIndex="5">
+          <entryLinks>
+            <entryLink import="true" name="Sonic shriekers" hidden="false" id="9412-7602-de8e-0208" type="selectionEntry" targetId="f7a1-d5a3-c294-7ebd" sortIndex="1">
+              <modifiers>
+                <modifier type="increment" value="5" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5519-8ce3-b953-e7a9"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Sonic lance" hidden="false" id="e973-e4b3-92a0-2617" type="selectionEntry" targetId="5767-7e75-a9ce-d25b" sortIndex="2">
+              <modifiers>
+                <modifier type="increment" value="5" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fa8-d568-3f69-c333"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d697-31cc-480c-a144"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Rylanor The Unyielding" type="unit" id="8899-5b90-49f3-b137" page="87" publicationId="5469-14da-d0a1-6092">
       <costs>
