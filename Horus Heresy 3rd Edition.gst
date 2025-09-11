@@ -21790,6 +21790,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
     </profileType>
     <profileType name="Knight" id="f99e-9f4d-2075-5a0a" hidden="false" sortIndex="3">
       <characteristicTypes>
+        <characteristicType name="Type" id="9aef-15c8-8a1e-e4eb"/>
         <characteristicType name="M" id="5c03-7611-0933-bd64"/>
         <characteristicType name="WS" id="dde5-e5bd-3253-000c"/>
         <characteristicType name="BS" id="ba34-f6fb-6bdb-c847"/>
@@ -21799,7 +21800,6 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <characteristicType name="I" id="f93c-1749-e2e9-3ab1"/>
         <characteristicType name="A" id="2903-ca70-471c-2741"/>
         <characteristicType name="HP" id="c427-cd22-b0d1-4db7"/>
-        <characteristicType name="Type" id="9aef-15c8-8a1e-e4eb"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Titan Head" id="2e7a-2e4d-dfb2-6b7a" hidden="false" sortIndex="4">

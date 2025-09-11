@@ -823,6 +823,7 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
           <profiles>
             <profile id="a8ad-c0d8-44ea-986e" name="Mortus Poisoner" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
+                <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry</characteristic>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
                 <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">4</characteristic>
@@ -837,7 +838,6 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
                 <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">7</characteristic>
                 <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">3+</characteristic>
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
-                <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry</characteristic>
               </characteristics>
               <modifierGroups>
                 <modifierGroup type="and">
@@ -1004,6 +1004,7 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
           <profiles>
             <profile id="2d40-9c36-4654-9921" name="Poison-master" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
+                <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Sergeant)</characteristic>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
                 <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">4</characteristic>
@@ -1018,7 +1019,6 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
                 <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">7</characteristic>
                 <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">3+</characteristic>
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
-                <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry (Sergeant)</characteristic>
               </characteristics>
               <modifierGroups>
                 <modifierGroup type="and">
@@ -1233,7 +1233,7 @@ At the start of the Fight Sub-Phase, each enemy Unit that is Locked in Combat wi
   <sharedProfiles>
     <profile name="Advanced Reaction: Barbaran Endurance" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="63e0-1bdd-bc5d-82f4" publicationId="e54c-7040-0f35-d85d" page="203">
       <characteristics>
-        <characteristic name="Description" typeId="5d02-0e54-0f6a-0f0b">This Reaction grants the Reacting Unit a Damage Mitigation Roll and allows them to recover from Tactical Statuses.
+        <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction grants the Reacting Unit a Damage Mitigation Roll and allows them to recover from Tactical Statuses.
 
 
 Trigger: Once per Battle, the Reactive Player may declare the Barbaran Endurance Advanced Reaction during Step 4 of any Shooting Attack declared by the Active Player during the Shooting Phase that Targets a Unit which only includes Model with the Death Guard Trait that do not have the Vehicle Type.
@@ -1249,6 +1249,10 @@ Process
 1. All Models in the Reacting Unit immediately recover from any Tactical Statuses.
 2. For the duration of the current Shooting Phase, all Models in the Reacting Unit gain the Feel No Pain (5+) Special Rule.
 3. For the duration of the current Shooting Phase, the Reacting Player automatically passes any Cool Checks or Leadership Checks made for the Reacting Unit.</characteristic>
+        <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4"/>
+        <characteristic name="Cost" typeId="954a-972f-5c94-2ede"/>
+        <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9"/>
+        <characteristic name="Process" typeId="57cf-1c68-a020-2529"/>
       </characteristics>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
