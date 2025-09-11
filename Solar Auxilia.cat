@@ -6078,18 +6078,17 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
         <entryLink import="true" name="Cohort Doctrine" hidden="false" id="8acf-d130-480c-2ed6" type="selectionEntryGroup" targetId="cacc-ab7b-f2b1-d1c4"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Advanced Reactions" hidden="false" id="8b83-93d0-a1e1-a05a">
+    <selectionEntry type="upgrade" import="true" name="Reactions" hidden="false" id="8b83-93d0-a1e1-a05a">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0648-f101-6e93-c55b"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53af-a2c9-b981-b7e7"/>
       </constraints>
       <categoryLinks>
         <categoryLink targetId="abfa-86ab-1726-077a" id="7eea-cb4d-0602-7401" primary="true" name="Army Configuration"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Core Reactions" id="45d0-a172-d3b7-8b5c" hidden="false">
+        <selectionEntryGroup name="Reactions" id="45d0-a172-d3b7-8b5c" hidden="false" flatten="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Fire Support!" hidden="false" id="1a74-56e9-3b21-5d4d">
+            <selectionEntry type="upgrade" import="true" name="Fire Support!" hidden="false" id="1a74-56e9-3b21-5d4d" defaultAmount="1">
               <profiles>
                 <profile name="Fire Support!" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="fcfb-848c-e2d9-cc45">
                   <characteristics>
@@ -6108,10 +6107,24 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
                 </profile>
               </profiles>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae13-ebce-1f66-c5c6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae13-ebce-1f66-c5c6" automatic="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="ae13-ebce-1f66-c5c6">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="b1ee-f904-ccb0-21cc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5dc-bd5b-1dea-9416" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="4120-0736-0044-f09b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="390c-8dde-6001-d60d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Fix Bayonets!" hidden="false" id="1a61-6db8-fdb8-c89a">
+            <selectionEntry type="upgrade" import="true" name="Fix Bayonets!" hidden="false" id="1a61-6db8-fdb8-c89a" defaultAmount="1">
               <profiles>
                 <profile name="Fix Bayonets!" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="9aac-ba1c-4952-f998">
                   <characteristics>
@@ -6131,10 +6144,22 @@ Resolution Points.</characteristic>
                 </profile>
               </profiles>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f16c-a37f-82dd-142d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f16c-a37f-82dd-142d" automatic="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="f16c-a37f-82dd-142d">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="ae6e-6833-8a60-b503" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="6f81-3f04-e67c-4495" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Form Ranks!" hidden="false" id="0921-f29f-eba5-a0b7">
+            <selectionEntry type="upgrade" import="true" name="Form Ranks!" hidden="false" id="0921-f29f-eba5-a0b7" defaultAmount="1">
               <profiles>
                 <profile name="Form Ranks!" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="a69c-67f6-9c3f-5d0a">
                   <characteristics>
@@ -6153,10 +6178,24 @@ Resolution Points.</characteristic>
                 </profile>
               </profiles>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51d7-a5a9-ae5e-9433"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51d7-a5a9-ae5e-9433" automatic="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="51d7-a5a9-ae5e-9433">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="249d-e9e0-0f80-e72c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="2d16-3107-80e2-93c6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="90b5-0db8-22ee-4cc5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="cb2b-2fd5-dccc-f12c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Smokescreen" hidden="false" id="07dc-9352-654a-add1">
+            <selectionEntry type="upgrade" import="true" name="Smokescreen" hidden="false" id="07dc-9352-654a-add1" defaultAmount="1">
               <profiles>
                 <profile name="smokescreen" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="0f99-f90a-8ed5-d5f1">
                   <characteristics>
@@ -6176,23 +6215,71 @@ Attack as normal.
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b536-7b10-1652-6da0"/>
               </constraints>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Evade" hidden="false" id="f9bf-3736-6bbd-bd6e" defaultAmount="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a81-2b22-1800-a6e7" automatic="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Evade" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="c990-0a89-33cf-1ab1">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Advanced Reaction Allows a Unit to attempt to avoid an enemy Charge by moving.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare an Evade Reaction at the end of Step 4 of a Charge declared by the Active Player that targets a Unit entirely composed of Models with the Light Sub-Type of Cavalry Type.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare an Evade Reaction - this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Unit that is the target of the Charge that triggered this Reaction is the Reacting Unit, while the Unit making y=the Charge is the Charging Unit.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. After all Volley Attacks have been made by both the Reacting Unit and the Charging Unit, the Reactive Player may make a move for each Model in the Reacting Unit.
+2. Each Model in the Reacting Unit may be moved a number of inches equal to its Initiative Characteristic and must end the Move in Unit Coherency with another Model from the same Unit.
+3. If this move would leave all Models in the Reacting Unit outside of the Charging Unit&apos;s maximum possible Charge Range then the Charge has failed and no Combat is resolved. Otherwise the Charge proceeds as normal.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="0" field="4a81-2b22-1800-a6e7">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="f249-a9d9-ddc3-a024" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="1219-2002-a8e8-ed27" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="8da3-8528-5726-95ac" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="3f61-6814-7ce9-1e50" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Reposition" hidden="false" id="7afd-b21b-4b85-c87e" defaultAmount="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="552c-d322-497c-a2fc" automatic="true"/>
+              </constraints>
+              <profiles>
+                <profile name="Reposition" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="1490-f720-7587-2df8">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reactive Player to move a Unit when an enemy Unit ends its move within 12&quot;</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Reposition Reaction in Step 2 of the Move Sub-Phase process. If an enemy Unit ends a move within 12&quot; and in Line of Sight of a Unit under the Reactive Player&apos;s Control.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Reposition Reaction - this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose move triggered the Reaction. Once the cost has been paid, the Reactive Player must select one Unit under their control that is within 12&quot; and has Line of Sight to the Target Unit - that Unit is the Reacting Unit.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once a Reposition Reaction has been declared, the Active Player must completely resolve the Target Unit&apos;s movement.
+2. Once the Target Unit has finished its move, the Reactive Player may move the Reacting Unit. When making this move, each Model in the Reacting Unit may move a number of inches up to the Base Value of its Initiative Characteristic.
+3. Once the Reacting Unit has completed this move, the Movement Phase continues as normal.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="0" field="552c-d322-497c-a2fc">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="77e6-5303-17bd-9571" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="34b5-8f79-e29f-4f1b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="1a7b-25aa-9434-99ec" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="50f1-475d-c1e7-d9ac" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
           </selectionEntries>
-          <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="9a7b-f427-6cbc-ae79"/>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="fa36-c0ff-5727-9d41"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="3" field="9a7b-f427-6cbc-ae79">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="abfa-86ab-1726-077a" childId="c16b-e85a-dafd-7f4b" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="3" field="fa36-c0ff-5727-9d41">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="abfa-86ab-1726-077a" childId="c16b-e85a-dafd-7f4b" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -6327,7 +6414,7 @@ Shooting Phase.</characteristic>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ced8-de77-6160-a0e5"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Selucid Thorakites" hidden="false" id="f249-a9d9-ddc3-a024">
+            <selectionEntry type="upgrade" import="true" name="Seleucid Thorakites" hidden="false" id="f249-a9d9-ddc3-a024">
               <profiles>
                 <profile name="Weather the Storm" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="993e-b155-49ff-4a3d">
                   <characteristics>
@@ -11630,7 +11717,7 @@ While a Unit entirely composed of Models with the Solar Auxilia Trait includes a
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="362f-a00d-8097-8e4c" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Advanced Reactions" hidden="false" id="1827-1718-c1df-e027" type="selectionEntry" targetId="8b83-93d0-a1e1-a05a">
+    <entryLink import="true" name="Allowed Reactions" hidden="false" id="1827-1718-c1df-e027" type="selectionEntry" targetId="8b83-93d0-a1e1-a05a">
       <categoryLinks>
         <categoryLink targetId="abfa-86ab-1726-077a" id="0501-2f99-1c64-a41f" primary="true" name="Army Configuration"/>
       </categoryLinks>
