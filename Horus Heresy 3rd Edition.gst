@@ -5077,6 +5077,11 @@
             </categoryLink>
             <categoryLink name="War-engine - Upgraded by The Iron-clad" hidden="false" id="30ad-fba2-e85d-2b0a" targetId="d00a-e269-2ed3-8fc4"/>
             <categoryLink name="Paragon of Malevolence" hidden="false" id="a8aa-be0b-527d-6e46" targetId="708b-b2ff-1a14-2901"/>
+            <categoryLink name="Prime Rewards of Treachery" hidden="false" id="8d50-4fa5-0077-0dc5" targetId="de4f-4c9e-11bc-1b2a">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="93ac-56a1-01d9-c2be" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -20725,6 +20730,11 @@
             <categoryLink name="War-engine - Upgraded by The Iron-clad" hidden="false" id="5c3a-61f8-facc-1735" targetId="d00a-e269-2ed3-8fc4"/>
             <categoryLink name="Army Configuration" hidden="false" id="5c8b-9e7e-b8c7-00b4" targetId="abfa-86ab-1726-077a"/>
             <categoryLink name="Paragon of Malevolence" hidden="false" id="7a46-7c80-ebdf-f775" targetId="708b-b2ff-1a14-2901"/>
+            <categoryLink name="Prime Rewards of Treachery" hidden="false" id="6bce-4f4c-7948-0c2d" targetId="de4f-4c9e-11bc-1b2a">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="270a-d6a2-b3f0-1421" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
