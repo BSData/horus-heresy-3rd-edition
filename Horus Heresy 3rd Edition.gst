@@ -577,6 +577,7 @@
         </rule>
       </rules>
     </categoryEntry>
+    <categoryEntry name="Prime Rewards of Treachery" id="de4f-4c9e-11bc-1b2a" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
@@ -1262,6 +1263,11 @@
               </modifierGroups>
             </categoryLink>
             <categoryLink name="Paragon of Malevolence" hidden="false" id="31c4-7d41-d1a6-68ba" targetId="708b-b2ff-1a14-2901"/>
+            <categoryLink name="Prime Rewards of Treachery" hidden="false" id="432e-6e73-4a22-14cd" targetId="de4f-4c9e-11bc-1b2a">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d81d-9c96-9a29-e0cf" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="5611-db49-9e64-44c6-min" includeChildSelections="true"/>
@@ -22370,6 +22376,11 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" value="de4f-4c9e-11bc-1b2a" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="fe7f-1287-4162-a65d" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
