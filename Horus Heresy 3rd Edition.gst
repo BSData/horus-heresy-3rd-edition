@@ -4414,6 +4414,8 @@
               </constraints>
             </categoryLink>
             <categoryLink name="Paragon of Malevolence" hidden="false" id="5417-efe1-e2e7-143a" targetId="708b-b2ff-1a14-2901"/>
+            <categoryLink name="Clade Operative" hidden="false" id="0099-ada3-0c54-a813" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="35fc-eb1a-9897-be4f" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -5082,6 +5084,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="93ac-56a1-01d9-c2be" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="32bb-80d9-cb0f-c207" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="9e9e-7712-02a9-180e" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -5660,6 +5664,8 @@
               </constraints>
             </categoryLink>
             <categoryLink name="Paragon of Malevolence" hidden="false" id="8b66-658e-8871-4114" targetId="708b-b2ff-1a14-2901"/>
+            <categoryLink name="Clade Operative" hidden="false" id="bc38-77af-573e-9f52" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="67b6-d6a1-8fea-c775" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -6475,6 +6481,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="fcb3-ccc7-a9f6-0691" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="1adc-a38a-cf92-8529" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="15e6-888e-f673-915b" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -6665,7 +6673,7 @@
             </categoryLink>
             <categoryLink name="Prime Retinue" hidden="false" id="f067-4ed1-baca-a150" targetId="c66b-ef39-b20f-725b">
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="01b3-450e-6e90-b041" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01b3-450e-6e90-b041" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
             <categoryLink name="Elites" hidden="false" id="08c6-358d-8619-b3da" targetId="5d5e-958f-e388-50b5">
@@ -6866,6 +6874,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="cafd-8d3e-d43a-96d0" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="782e-8fb1-b7f8-611c" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="83e7-8a20-3d40-5986" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -7274,6 +7284,8 @@
                 </modifier>
               </modifiers>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="78bc-f89a-8889-fb5d" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="0d89-0292-1190-a3af" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -7692,6 +7704,8 @@
                 </modifier>
               </modifiers>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="9dc3-c3a6-81cf-6a19" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="8140-af70-025a-837f" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -8110,6 +8124,8 @@
                 </modifier>
               </modifiers>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="95a5-8e3e-eed6-42ba" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="eec2-b2a8-8f2c-3cd0" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -8700,6 +8716,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bf3b-107b-54e4-f6f5" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="c226-a47b-31aa-d73a" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="7673-5c73-ad0e-bcc8" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -9125,6 +9143,8 @@
                 <constraint type="max" value="3" field="selections" scope="force" shared="true" id="734c-c4ba-0c47-a75c" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="2c9c-5266-71ff-a5f8" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="b893-fd5f-4ab7-f789" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -9533,6 +9553,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="228d-df24-e8db-a4c0" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="fe3f-12e4-44e7-9f3d" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="feef-02cb-54fb-ae4c" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="increment" value="1" field="cbbf-a5c7-0527-b306">
@@ -9806,6 +9828,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f262-0ebe-4f4b-4ee4" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="e2de-5d4e-b633-6f88" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="e7a6-1a3d-ed2f-855d" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -10059,6 +10083,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="da76-0638-6102-296b" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="ebd7-efca-d360-b88f" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="e06a-caa2-e553-e684" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -10391,6 +10417,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8b7c-df80-3fad-fced"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="002e-81f4-86dc-7ec4" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="7c7e-358b-73f7-8c34" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <comment>UM Only</comment>
           <costs>
@@ -10624,6 +10652,8 @@
               </constraints>
             </categoryLink>
             <categoryLink name="Cohort Doctrine: Solar Pattern Cohort" hidden="false" id="833b-b51d-5db3-570a" targetId="f2be-abfe-311c-afe2"/>
+            <categoryLink name="Clade Operative" hidden="false" id="b2d5-fbd6-0744-e79d" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="3c36-ddf1-5914-18eb" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -11018,6 +11048,8 @@
                 </modifier>
               </modifiers>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="52d0-15ca-8031-07cd" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="be6d-db50-c265-798d" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -11386,6 +11418,8 @@
                 </modifier>
               </modifiers>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="60b1-cfa8-7e64-e8a3" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="a010-e5b3-bd3d-dfa9" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <comment>WS</comment>
           <modifiers>
@@ -11650,6 +11684,8 @@
             </categoryLink>
             <categoryLink name="Master of Automata" hidden="false" id="89dd-fa0f-af89-c7b5" targetId="43f5-bc69-29b9-2286"/>
             <categoryLink name="War-engine - Upgraded by The Iron-clad" hidden="false" id="a8c5-a9cc-a05c-f290" targetId="d00a-e269-2ed3-8fc4"/>
+            <categoryLink name="Clade Operative" hidden="false" id="f5be-2857-0aaf-976a" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="83d7-bbcf-8e02-28f3" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <constraints>
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="06ca-d5c5-58f1-f184"/>
@@ -11922,6 +11958,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="967b-96ba-c6f1-2783" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="d042-08fe-c36f-e748" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="d30a-b594-239d-a5a9" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -12219,6 +12257,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2b6d-076d-864a-6cb1" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="ab1d-b891-9bf3-d5bc" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="adc5-7cbf-777b-8135" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <comment>WE</comment>
           <modifiers>
@@ -12476,6 +12516,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="274b-66f1-8c97-deef" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="5698-3f52-399d-d0de" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="fecf-8b16-40c1-2d25" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -12733,6 +12775,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ff95-bcd2-96a6-54e9" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="c24e-97dd-1789-5671" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="0ed8-7621-0a36-5a49" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <comment>BA</comment>
           <modifiers>
@@ -12990,6 +13034,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="724f-ddcf-bfc1-5d92" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="263a-d08c-95fe-960c" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="b07c-a2ce-a250-1837" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -13297,6 +13343,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bad9-b015-8d19-823f" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="9a9b-694a-4c54-9980" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="4249-de4f-12a6-2ecd" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <comment>SoH</comment>
           <modifiers>
@@ -13554,6 +13602,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bacf-4377-d4e9-3a52" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="ab4b-0300-50ac-7143" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="919b-7a1a-20c8-f66d" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <comment>DA</comment>
           <modifiers>
@@ -13807,6 +13857,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3ef5-bfd7-ecf7-de75" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="5543-aff7-2839-142d" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="8211-f26e-df15-d6e0" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <comment>DA</comment>
           <modifiers>
@@ -14065,6 +14117,8 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee1b-b7dc-9eed-cb17" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="24e0-6ee2-5b8e-974c" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="4abf-bc2a-1268-c6d6" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <comment>DA</comment>
           <modifiers>
@@ -14323,6 +14377,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3376-90d7-4323-a62f" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="6daa-e83d-bc22-61d9" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="61e2-188a-3302-fcd7" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <comment>DA</comment>
           <modifiers>
@@ -14632,6 +14688,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2734-f627-f86e-f452" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="6505-47db-f095-6114" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="c37c-8677-7a47-e621" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <comment>DA</comment>
           <modifiers>
@@ -14885,6 +14943,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e01e-9858-cf29-2c2c" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="21b7-d917-07e6-dd6e" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="c95d-e1f6-7dbb-7776" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -15142,6 +15202,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="35ab-fa89-83fc-b4b1" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="c061-390c-0c08-db85" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="0b24-f11c-e68e-b622" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -15448,6 +15510,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bffe-a37d-7912-c6d7" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="ea8b-1262-3274-aa6a" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="f2a3-6623-7e45-7941" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
@@ -15691,6 +15755,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="834a-8fd9-004d-b898" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="0219-837a-5ce2-b890" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="29eb-c893-7583-130e" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
@@ -15948,6 +16014,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="cd25-05dc-b0d6-d306" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="2db0-70e6-1fd0-f85e" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="6945-83ae-9565-c8fb" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
@@ -16732,6 +16800,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="335e-4eb1-707f-71b5" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="7e39-9a73-ceeb-545b" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="7585-ada2-d894-c7f6" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
@@ -17126,6 +17196,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="84bc-c022-0b83-5016" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="fdbe-ea05-38ee-4dca" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="37c4-5deb-b5f4-b12f" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
@@ -17692,6 +17764,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="defa-548f-88c8-4ca5" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="761c-802d-2f2a-8107" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="f158-3f4e-81a7-c7e5" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
@@ -18004,6 +18078,8 @@
                 </modifier>
               </modifiers>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="2ece-7fe4-a45d-cf3f" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="2eb7-6872-dd8a-d12e" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <comment>Master of Descent only</comment>
           <costs>
@@ -18897,6 +18973,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="52f2-170d-b479-6889" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="6e56-16dd-aab6-65f3" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="942c-db2c-a7a1-a744" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -19160,6 +19238,8 @@
                 </modifier>
               </modifiers>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="540d-d763-827d-3f59" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="86ce-38cb-7570-8404" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -19416,6 +19496,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2384-2160-378d-3b49" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="0663-6033-9e65-d27f" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="6c7f-2cdb-aace-1383" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -19679,6 +19761,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="71ab-f967-7415-d9f1" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="2c18-34c2-2566-9c27" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="22d3-6a97-8636-7168" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
@@ -19942,6 +20026,8 @@
                 </modifier>
               </modifiers>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="c938-8468-4f0a-f09a" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="6cb3-0d75-5ebc-3547" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <comment>Militia</comment>
           <modifiers>
@@ -20735,6 +20821,8 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="270a-d6a2-b3f0-1421" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Clade Operative" hidden="false" id="eb70-ad09-bf82-3b27" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="Cult Operative" hidden="false" id="694b-50ea-fe58-144c" targetId="4f71-897f-8ae1-303b"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -21590,6 +21678,8 @@
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="11b7-7203-38ab-d205" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Clade Operative" hidden="false" id="14b9-9a8c-9271-d199" targetId="335a-5a90-3b7c-c034"/>
+        <categoryLink name="Cult Operative" hidden="false" id="b0c8-401c-f818-0055" targetId="4f71-897f-8ae1-303b"/>
       </categoryLinks>
       <comment>For detachments with primes: copy these categories.</comment>
     </forceEntry>
@@ -21625,6 +21715,8 @@
         <categoryLink name="Warlord" hidden="false" id="a9f0-0981-4d0f-a835" targetId="22ee-7208-4089-b005"/>
         <categoryLink name="Fortification" hidden="false" id="8261-22fc-c75e-2df6" targetId="7e2f-62cf-4e42-9e13"/>
         <categoryLink name="Clade Operative" hidden="false" id="0f22-af59-a81b-bcff" targetId="335a-5a90-3b7c-c034"/>
+        <categoryLink name="Clade Operative" hidden="false" id="98f8-ed44-ed0a-2c50" targetId="335a-5a90-3b7c-c034"/>
+        <categoryLink name="Cult Operative" hidden="false" id="c80d-3c3d-d65a-85af" targetId="4f71-897f-8ae1-303b"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
