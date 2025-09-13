@@ -315,11 +315,20 @@ class GameTests(unittest.TestCase):
                     mod_groups = profile.get_child("modifierGroups")
                     self.assertIsNotNone(mod_groups, "Expected modifiers for prime benefits")
                     combat_veterans_group = None
+                    combat_veterans_group_no_LD = None
+                    combat_veterans_group_no_WP = None
+                    combat_veterans_group_no_CL = None
                     paragon_of_battle_group = None
                     master_sgt_group = None
                     for mod_group in mod_groups.children:
                         if mod_group.does_descendent_exist(lambda x: x.text == "Combat Veterans"):
                             combat_veterans_group = mod_group
+                        if mod_group.does_descendent_exist(lambda x: x.text == "Combat Veterans - no LD mods"):
+                            combat_veterans_group_no_LD = mod_group
+                        if mod_group.does_descendent_exist(lambda x: x.text == "Combat Veterans - no WP mods"):
+                            combat_veterans_group_no_WP = mod_group
+                        if mod_group.does_descendent_exist(lambda x: x.text == "Combat Veterans - no CL mods"):
+                            combat_veterans_group_no_CL = mod_group
                         if mod_group.does_descendent_exist(lambda x: x.text == "Paragon of Battle"):
                             paragon_of_battle_group = mod_group
                         if mod_group.does_descendent_exist(lambda x: x.text == "Master Sergeant"):
@@ -338,6 +347,36 @@ class GameTests(unittest.TestCase):
                             {"type": "ceil", "value": "10", "field": "f714-1726-37d3-44df"},
                             {"type": "ceil", "value": "10", "field": "29c5-925d-5b1d-1e77"},
                         ], expected_condition_child_id="8cf8-9be5-91d6-c96d")
+
+                    with self.subTest(f"Combat Veterans no LD for {profile}"):
+                        self.check_mods_and_conditions(combat_veterans_group_no_LD, expected_mods=[
+                            {"type": "increment", "value": "1", "field": "9cd1-0e7c-2cd6-5f2f"},
+                            {"type": "increment", "value": "1", "field": "f714-1726-37d3-44df"},
+                            {"type": "increment", "value": "1", "field": "29c5-925d-5b1d-1e77"},
+                            {"type": "ceil", "value": "10", "field": "9cd1-0e7c-2cd6-5f2f"},
+                            {"type": "ceil", "value": "10", "field": "f714-1726-37d3-44df"},
+                            {"type": "ceil", "value": "10", "field": "29c5-925d-5b1d-1e77"},
+                        ], expected_condition_child_id="8cf8-9be5-91d6-c96d")
+
+                    with self.subTest(f"Combat Veterans no WP for {profile}"):
+                        self.check_mods_and_conditions(combat_veterans_group_no_WP, expected_mods=[
+                            {"type": "increment", "value": "1", "field": "02ad-ebe6-86e7-9fd6"},
+                            {"type": "increment", "value": "1", "field": "9cd1-0e7c-2cd6-5f2f"},
+                            {"type": "increment", "value": "1", "field": "29c5-925d-5b1d-1e77"},
+                            {"type": "ceil", "value": "10", "field": "02ad-ebe6-86e7-9fd6"},
+                            {"type": "ceil", "value": "10", "field": "9cd1-0e7c-2cd6-5f2f"},
+                            {"type": "ceil", "value": "10", "field": "29c5-925d-5b1d-1e77"},
+                        ], expected_condition_child_id="8cf8-9be5-91d6-c96d")
+
+                    with self.subTest(f"Combat Veterans no CL for {profile}"):
+                        self.check_mods_and_conditions(combat_veterans_group_no_CL, expected_mods=[
+                            {"type": "increment", "value": "1", "field": "02ad-ebe6-86e7-9fd6"},
+                            {"type": "increment", "value": "1", "field": "f714-1726-37d3-44df"},
+                            {"type": "increment", "value": "1", "field": "29c5-925d-5b1d-1e77"},
+                            {"type": "ceil", "value": "10", "field": "02ad-ebe6-86e7-9fd6"},
+                            {"type": "ceil", "value": "10", "field": "f714-1726-37d3-44df"},
+                            {"type": "ceil", "value": "10", "field": "29c5-925d-5b1d-1e77"},
+                        ], expected_condition_child_id="8cf8-9be5-91d6-c96d")                    
 
                     if "Command" in profile_type and not unit.name == "Discipline Master Cadre":
                         # Discipline master special due to being multiple characters,
