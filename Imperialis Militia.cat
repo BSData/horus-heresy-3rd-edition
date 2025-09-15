@@ -38,20 +38,6 @@
                 <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">3+</characteristic>
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">5+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="prepend" value="Mounted" field="name">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="9f18-7e39-c06a-6f99" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Mounted</comment>
-                </modifier>
-                <modifier type="replace" value="Cavalry" field="name" arg="Infantry">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="9f18-7e39-c06a-6f99" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Mounted</comment>
-                </modifier>
-              </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
@@ -59,9 +45,16 @@
                       <comment>Mounted</comment>
                     </modifier>
                     <modifier type="set" value="4" field="f5cc-79a3-d302-cc1d"/>
+                    <modifier type="replace" value="Cavalry" field="name" arg="Infantry">
+                      <comment>Mounted</comment>
+                    </modifier>
+                    <modifier type="prepend" value="Mounted" field="name">
+                      <comment>Mounted</comment>
+                    </modifier>
+                    <modifier type="replace" value="Cavalry" field="50fc-9241-d4a2-045b" arg="Infantry"/>
                   </modifiers>
                   <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="model" childId="9f18-7e39-c06a-6f99" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="9f18-7e39-c06a-6f99" shared="true" includeChildSelections="true"/>
                   </conditions>
                   <comment>Mounted</comment>
                 </modifierGroup>
