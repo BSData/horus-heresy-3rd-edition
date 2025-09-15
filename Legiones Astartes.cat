@@ -2240,6 +2240,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                             <condition type="atLeast" value="1" field="selections" scope="model" childId="fe39-b979-bb90-117f" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="model" childId="320a-5112-0e89-aad4" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="model" childId="3a14-74ac-8634-c204" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -2257,6 +2259,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                             <condition type="atLeast" value="1" field="selections" scope="model" childId="fe39-b979-bb90-117f" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="model" childId="320a-5112-0e89-aad4" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="model" childId="3a14-74ac-8634-c204" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -2274,6 +2277,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                             <condition type="atLeast" value="1" field="selections" scope="model" childId="fe39-b979-bb90-117f" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="model" childId="320a-5112-0e89-aad4" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="model" childId="3a14-74ac-8634-c204" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -2288,6 +2292,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="0b49-5879-e742-c39a" includeChildSelections="true"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9498-8901-a8d5-fec9" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6d7-5b73-10b9-1011" automatic="true"/>
                   </constraints>
                   <modifiers>
                     <modifier type="increment" value="1" field="0b49-5879-e742-c39a">
@@ -2296,6 +2302,16 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                       </repeats>
                     </modifier>
                     <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ef80-aa2a-fc61-ef0e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="9498-8901-a8d5-fec9">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ef80-aa2a-fc61-ef0e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="e6d7-5b73-10b9-1011">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="unit" childId="ef80-aa2a-fc61-ef0e" shared="true" includeChildSelections="true"/>
                       </conditions>
@@ -2322,7 +2338,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                         </modifier>
                       </modifiers>
                     </entryLink>
-                    <entryLink import="true" name="Shrapnel pistol" hidden="false" id="683c-3c4c-fb40-52d8" type="selectionEntry" targetId="d735-44bc-116a-be41">
+                    <entryLink import="true" name="Shrapnel pistol" hidden="true" id="683c-3c4c-fb40-52d8" type="selectionEntry" targetId="d735-44bc-116a-be41">
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
                       </costs>
@@ -2339,6 +2355,11 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                         <modifier type="set" value="0" field="f774-5379-8a47-16d2">
                           <conditions>
                             <condition type="atLeast" value="1" field="selections" scope="parent" childId="ef80-aa2a-fc61-ef0e" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -2361,9 +2382,16 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
                             <condition type="equalTo" value="0" field="selections" scope="unit" childId="ef80-aa2a-fc61-ef0e" shared="true" includeChildSelections="true"/>
                           </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
@@ -2371,9 +2399,16 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
                             <condition type="equalTo" value="0" field="selections" scope="unit" childId="ef80-aa2a-fc61-ef0e" shared="true" includeChildSelections="true"/>
                           </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
@@ -2381,9 +2416,16 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
                             <condition type="equalTo" value="0" field="selections" scope="unit" childId="ef80-aa2a-fc61-ef0e" shared="true" includeChildSelections="true"/>
                           </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
@@ -2410,7 +2452,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="cdf1-272d-d4f4-eba2" childId="65dd-57db-a157-b802" shared="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="cdf1-272d-d4f4-eba2" childId="512f-f1ab-3262-d952" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="ef80-aa2a-fc61-ef0e" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ef80-aa2a-fc61-ef0e" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -2421,7 +2463,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="cdf1-272d-d4f4-eba2" childId="65dd-57db-a157-b802" shared="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="cdf1-272d-d4f4-eba2" childId="512f-f1ab-3262-d952" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="ef80-aa2a-fc61-ef0e" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="ef80-aa2a-fc61-ef0e" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -2789,18 +2831,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="e6df-24b1-0988-ef41" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5">
+        <entryLink import="true" name="Prime Unit" hidden="false" id="e6df-24b1-0988-ef41" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="7">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="2a56-c11b-c134-5477" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Frag grenades" hidden="false" id="65c7-ecdc-611c-06c6" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+        <entryLink import="true" name="Frag grenades" hidden="false" id="65c7-ecdc-611c-06c6" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="5">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="718c-8ba5-41d7-2dd2" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd78-946d-d97b-90cf" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Krak grenades" hidden="false" id="8039-d4e5-535e-b398" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+        <entryLink import="true" name="Krak grenades" hidden="false" id="8039-d4e5-535e-b398" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="6">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a8b-6d24-f2bb-0c6f" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ff0-ab05-85ee-4953" includeChildSelections="false"/>
