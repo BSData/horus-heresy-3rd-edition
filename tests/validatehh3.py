@@ -320,6 +320,12 @@ class GameTests(unittest.TestCase):
                     for mod_group in mod_groups.children:
                         if mod_group.does_descendent_exist(lambda x: x.text == "Combat Veterans"):
                             combat_veterans_group = mod_group
+                        elif mod_group.does_descendent_exist(lambda x: x.text == "Combat Veterans - no CL mod"):
+                            combat_veterans_group = mod_group
+                        elif mod_group.does_descendent_exist(lambda x: x.text == "Combat Veterans - no WP mod"):
+                            combat_veterans_group = mod_group
+                        elif mod_group.does_descendent_exist(lambda x: x.text == "Combat Veterans - no LD mod"):
+                            combat_veterans_group = mod_group
                         if mod_group.does_descendent_exist(lambda x: x.text == "Paragon of Battle"):
                             paragon_of_battle_group = mod_group
                         if mod_group.does_descendent_exist(lambda x: x.text == "Master Sergeant"):
@@ -328,16 +334,29 @@ class GameTests(unittest.TestCase):
                             master_sgt_group = mod_group
 
                     with self.subTest(f"Combat Veterans for {profile}"):
-                        self.check_mods_and_conditions(combat_veterans_group, expected_mods=[
-                            {"type": "increment", "value": "1", "field": "02ad-ebe6-86e7-9fd6"},
-                            {"type": "increment", "value": "1", "field": "9cd1-0e7c-2cd6-5f2f"},
-                            {"type": "increment", "value": "1", "field": "f714-1726-37d3-44df"},
-                            {"type": "increment", "value": "1", "field": "29c5-925d-5b1d-1e77"},
-                            {"type": "ceil", "value": "10", "field": "02ad-ebe6-86e7-9fd6"},
-                            {"type": "ceil", "value": "10", "field": "9cd1-0e7c-2cd6-5f2f"},
-                            {"type": "ceil", "value": "10", "field": "f714-1726-37d3-44df"},
-                            {"type": "ceil", "value": "10", "field": "29c5-925d-5b1d-1e77"},
-                        ], expected_condition_child_id="8cf8-9be5-91d6-c96d")
+                        combat_vet_mods = []
+                        if int(profile.get_profile_dict()['LD']) <= 10:
+                            combat_vet_mods += [
+                                {"type": "increment", "value": "1", "field": "02ad-ebe6-86e7-9fd6"},
+                                {"type": "ceil", "value": "10", "field": "02ad-ebe6-86e7-9fd6"},
+                            ]
+                        if int(profile.get_profile_dict()['CL']) <= 10:
+                            combat_vet_mods += [
+                                {"type": "increment", "value": "1", "field": "9cd1-0e7c-2cd6-5f2f"},
+                                {"type": "ceil", "value": "10", "field": "9cd1-0e7c-2cd6-5f2f"},
+                            ]
+                        if int(profile.get_profile_dict()['WP']) <= 10:
+                            combat_vet_mods += [
+                                {"type": "increment", "value": "1", "field": "f714-1726-37d3-44df"},
+                                {"type": "ceil", "value": "10", "field": "f714-1726-37d3-44df"},
+                            ]
+                        if int(profile.get_profile_dict()['IN']) <= 10:
+                            combat_vet_mods += [
+                                {"type": "increment", "value": "1", "field": "29c5-925d-5b1d-1e77"},
+                                {"type": "ceil", "value": "10", "field": "29c5-925d-5b1d-1e77"},
+                            ]
+                        self.check_mods_and_conditions(combat_veterans_group, expected_mods=combat_vet_mods,
+                                                       expected_condition_child_id="8cf8-9be5-91d6-c96d")
 
                     if "Command" in profile_type and not unit.name == "Discipline Master Cadre":
                         # Discipline master special due to being multiple characters,
