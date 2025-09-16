@@ -199,6 +199,19 @@
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink import="true" name="Banestrike bolter" hidden="true" id="733b-f188-bc94-07f2" type="selectionEntry" targetId="69de-4883-efd2-b876">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <comment>SH Only</comment>
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
@@ -928,6 +941,19 @@
                           </conditions>
                         </modifier>
                       </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Banestrike bolter" hidden="true" id="cf9f-2bc6-cb14-12c6" type="selectionEntry" targetId="69de-4883-efd2-b876">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <comment>SH Only</comment>
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
                     </entryLink>
                   </entryLinks>
                   <modifiers>
@@ -1662,6 +1688,56 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b8e8-13f7-6d23-5770"/>
                       </constraints>
                     </entryLink>
+                    <entryLink import="true" name="Asphyx bolter" hidden="true" id="8727-820e-6e67-f709" type="selectionEntry" targetId="60a8-1455-2c2a-e010">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="3"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Banestrike bolter" hidden="true" id="4c07-8b1b-ee56-3b63" type="selectionEntry" targetId="69de-4883-efd2-b876">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>SH</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <comment>IW+Cmd/Champ Only</comment>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Shrapnel bolter" hidden="true" id="9555-49a4-a816-4696" type="selectionEntry" targetId="9532-a693-d2ac-f198">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="3"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4b81-0ea1-5c3e-737f" includeChildSelections="false" automatic="true"/>
@@ -2342,10 +2418,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                       </modifiers>
                     </entryLink>
                   </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f99-e579-19be-020a" automatic="true"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f450-772f-339d-80ad" automatic="true"/>
-                  </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <constraints>
@@ -2885,6 +2957,19 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                           </conditions>
                         </modifier>
                       </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Banestrike bolter" hidden="true" id="06d1-b4d0-8972-f133" type="selectionEntry" targetId="69de-4883-efd2-b876">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <comment>SH Only</comment>
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -5937,6 +6022,19 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink import="true" name="Banestrike bolter" hidden="true" id="1835-2ed9-1696-91cd" type="selectionEntry" targetId="69de-4883-efd2-b876">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <comment>SH Only</comment>
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="May exchange bolt pistol for:" id="15a8-78ec-6f96-3f4b" hidden="false" defaultSelectionEntryId="d6ef-e031-d18f-df93" sortIndex="2">
@@ -6749,6 +6847,56 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                       </costs>
                     </entryLink>
                     <entryLink import="true" name="Bolter" hidden="false" id="6c81-0bfe-8e5b-d222" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="1"/>
+                    <entryLink import="true" name="Asphyx bolter" hidden="true" id="a78d-82c7-0ef7-58b8" type="selectionEntry" targetId="60a8-1455-2c2a-e010">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="3"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Shrapnel bolter" hidden="true" id="2774-d0f6-bbd6-8b83" type="selectionEntry" targetId="9532-a693-d2ac-f198">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="3"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Banestrike bolter" hidden="true" id="7df6-1e2a-7e4d-e697" type="selectionEntry" targetId="69de-4883-efd2-b876">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>SH</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <comment>IW+Cmd/Champ Only</comment>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3c2d-b890-c128-d87b" includeChildSelections="false"/>
@@ -7063,6 +7211,23 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Terminator Armour</comment>
+                  <modifiers>
+                    <modifier type="set" value="Infantry (Command)" field="50fc-9241-d4a2-045b"/>
+                    <modifier type="set" value="7" field="a106-a779-d272-5e93"/>
+                    <modifier type="replace" value="Tartaros" field="name" arg="Cataphractii"/>
+                    <modifier type="set" value="5+" field="a951-a772-7ce0-0b64"/>
+                  </modifiers>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -7244,6 +7409,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       </costs>
       <categoryLinks>
         <categoryLink targetId="647c-faca-3c98-c203" id="9741-721d-9801-773a" primary="false" name="Free Power Weapon"/>
+        <categoryLink targetId="e734-034b-8652-ffca" id="29f2-a750-16cf-84a3" primary="false" name="Free Combi-bolter"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="bc59-528d-4fe6-8573" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
@@ -12133,6 +12299,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       </costs>
       <categoryLinks>
         <categoryLink targetId="647c-faca-3c98-c203" id="39cf-1b00-089b-54e9" primary="false" name="Free Power Weapon"/>
+        <categoryLink targetId="e734-034b-8652-ffca" id="ffc0-ddec-187b-fc73" primary="false" name="Free Combi-bolter"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="fe6e-332e-8606-a597" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -12856,6 +13023,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       </costs>
       <categoryLinks>
         <categoryLink targetId="647c-faca-3c98-c203" id="a96e-164d-f441-b7f0" primary="false" name="Free Power Weapon"/>
+        <categoryLink targetId="e734-034b-8652-ffca" id="3231-8cf5-5fb5-c76e" primary="false" name="Free Combi-bolter"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Bulky (X)" id="f988-b128-d666-561f" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
@@ -20179,6 +20347,19 @@ Models of any Type other than Vehicle may Embark on a Model with this Special Ru
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d4a1-605b-851f-39fb"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd13-9a46-03c5-b4f8"/>
                   </constraints>
+                </entryLink>
+                <entryLink import="true" name="Banestrike bolter" hidden="true" id="ff9e-87bd-4d98-5997" type="selectionEntry" targetId="69de-4883-efd2-b876">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <comment>SH Only</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -28562,6 +28743,56 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     </entryLink>
                     <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="c961-fa18-5d3c-2f40" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" sortIndex="3" flatten="true"/>
                     <entryLink import="true" name="Legion Officer Wargear" hidden="false" id="c1ae-738d-94c8-bb37" type="selectionEntryGroup" targetId="f955-8b22-9362-31c0" flatten="true" sortIndex="2"/>
+                    <entryLink import="true" name="Asphyx bolter" hidden="true" id="2809-b3be-b647-0a45" type="selectionEntry" targetId="60a8-1455-2c2a-e010">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="3"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Banestrike bolter" hidden="true" id="6edc-33f7-e867-d25e" type="selectionEntry" targetId="69de-4883-efd2-b876">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>SH</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <comment>IW+Cmd/Champ Only</comment>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Shrapnel bolter" hidden="true" id="db18-6797-fcfb-85b5" type="selectionEntry" targetId="9532-a693-d2ac-f198">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="3"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7757-343d-4d43-ace7"/>
@@ -31624,6 +31855,19 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink import="true" name="Banestrike bolter" hidden="true" id="0120-2180-88f9-73de" type="selectionEntry" targetId="69de-4883-efd2-b876">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <comment>SH Only</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8277-081f-4b3d-9a3a"/>
@@ -32007,6 +32251,19 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   </modifiers>
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Banestrike bolter" hidden="true" id="89f0-c4b7-73ea-8e1b" type="selectionEntry" targetId="69de-4883-efd2-b876">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <comment>SH Only</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -35381,6 +35638,19 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink import="true" name="Banestrike bolter" hidden="true" id="fe83-6552-9278-36fe" type="selectionEntry" targetId="69de-4883-efd2-b876">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <comment>SH Only</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cb8-5b62-466f-961b"/>
@@ -35712,6 +35982,19 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   </modifiers>
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Banestrike bolter" hidden="true" id="3c79-faa7-c09d-b9f2" type="selectionEntry" targetId="69de-4883-efd2-b876">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <comment>SH Only</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -38201,7 +38484,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         </entryLink>
         <entryLink import="true" name="Banestrike combi-bolter" hidden="true" id="58a5-562c-93ac-b096" type="selectionEntry" targetId="08db-6d95-f0be-cfe0" sortIndex="9">
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -38230,9 +38513,9 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </conditionGroups>
               <comment>SH+Cmd/Champ Only or AL</comment>
             </modifier>
-            <modifier type="set" value="10" field="9893-c379-920b-8982">
+            <modifier type="set" value="5" field="9893-c379-920b-8982">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="8813-5298-c368-ee16" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e734-034b-8652-ffca" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -38291,7 +38574,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </modifier>
           </modifiers>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
         </entryLink>
         <entryLink import="true" name="Alchem combi-flamer" hidden="true" id="05f3-93bd-b86c-0a20" type="selectionEntry" targetId="99e6-cab2-d3c6-f826" sortIndex="12">
