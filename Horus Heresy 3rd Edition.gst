@@ -21120,36 +21120,13 @@
         <forceEntryLink name="Auxiliary - Combat Pioneer" id="930c-edcd-4fee-a827" hidden="true" targetId="edf5-6891-81d8-6309" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Shock Assault" id="a4f6-bf0e-4d74-93f2" hidden="true" targetId="c9a5-3069-920b-32f1" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - First Strike" id="2705-eba9-40f2-8830" hidden="true" targetId="c444-8242-d3fc-b5b0" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Primacy Wing" id="9d42-ce89-40ba-b75b" hidden="true" targetId="b86b-981d-9aab-5675" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Tagmata Cohort" id="982b-e777-4d71-b5cd" hidden="true" targetId="59b8-2183-4bab-b91c" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Apprentice Cadre" id="d3da-a89a-48fb-a84b" hidden="true" targetId="6e73-e03d-9ae7-fd33" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - The Ironfire Cohort" id="9631-12a4-4369-ab93" hidden="true" targetId="5bc5-5224-c751-d437" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Reaping Host" id="6118-60f5-4b2a-9bd8" hidden="true" targetId="3b60-24c1-dccc-23db" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Primus Demi-Company" id="f022-da02-4c56-8987" hidden="true" targetId="1da1-f220-0bad-5f78" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Veletaris Tercio" id="ec81-9fed-48ec-b267" hidden="true" targetId="e1a1-2699-4681-47ab" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Armour Tercio" id="184f-9e8c-4e5a-b2ec" hidden="true" targetId="6aff-b91d-02bb-7461" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Artillery Tercio" id="b95f-5a46-4ea8-8e07" hidden="true" targetId="371d-e9ef-7bf9-47de" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Infantry Tercio" id="a689-f421-449d-babb" hidden="true" targetId="243b-4ffd-9808-11d8" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Scout Tercio" id="284d-ffbb-43f0-8b62" hidden="true" targetId="551a-23a1-7758-2688" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Chogorian Warband" id="e550-3a10-4bd2-b8e4" hidden="true" targetId="0f6e-3db8-8b6f-74e1" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Terror Assault" id="9a9b-676b-4f7e-89e4" hidden="true" targetId="8fe1-7b62-49cf-479b" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Berserker Cadre" id="adad-7da5-4498-8c29" hidden="true" targetId="bda6-c5d3-eafc-4eb5" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Bloodied Claw" id="9567-7bf9-48b6-bd42" hidden="true" targetId="06b3-c35d-da74-de37" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Revelation Host" id="ab8a-2fd7-4557-a39e" hidden="true" targetId="edb0-a5d8-84f1-4eee" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Sons of Bodt" id="18ab-ac91-4235-8c84" hidden="true" targetId="9bfb-c160-31df-9108" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Spearhead Phalanx" id="928f-1a3e-42de-8f77" hidden="true" targetId="4737-e73a-394e-433f" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Supremecy Cadre" id="ca99-8902-46b2-b4a2" hidden="true" targetId="2436-a714-22cc-fd31" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Stormwing Muster" id="23c5-b8c8-4024-b5f1" hidden="true" targetId="bdf9-3781-2927-bc55" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Deathwing Conclave" id="da5f-542c-4a2f-86be" hidden="true" targetId="9b6c-2a18-7b8a-1aab" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Ravenwing Lance" id="3d86-c93e-485b-b392" hidden="true" targetId="466d-8e42-0890-721a" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Firewing Echelon" id="7d8a-a61b-4825-ba4c" hidden="true" targetId="3e2f-4f99-d366-7a95" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Ironwing Gauntlet" id="4cb4-0358-4d3d-b3db" hidden="true" targetId="cb64-b547-1144-fd70" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Dreadwing Cadre" id="3dfd-8884-43d2-b59b" hidden="true" targetId="4df8-3a15-6b77-1b80" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Siege Gauntlet" id="91fb-36b7-4937-8d72" hidden="true" targetId="1581-346d-51c6-4739" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Immolation Covenant" id="5875-92d3-403b-8708" hidden="true" targetId="04d2-0a69-061e-75fe" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Decapitation Cadre" id="462a-d727-437a-b75b" hidden="true" targetId="27bf-3e6b-587c-74bb" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Prosperine Convocation" id="f563-8352-406e-a7c7" hidden="true" targetId="450b-0ca8-0beb-ff89" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Headhunter Leviathal" id="0afa-9247-4d3a-8464" hidden="true" targetId="74f4-a9d0-a2be-b4bd" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Daemonic Manifestation" id="ad3a-ba8e-4a34-aff8" hidden="true" targetId="0078-217d-19d4-a354" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Veteran Cadre" id="bb21-6a0d-49a8-98ce" hidden="true" targetId="1834-a10c-a732-d989" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Apothecarion Delegation" id="2fef-2712-4d36-8f7a" hidden="true" targetId="41f6-7dfc-4eb9-f6ef" type="forceEntry"/>
@@ -21163,10 +21140,6 @@
         <forceEntryLink name="Apex - Combat Retinue" id="5e4d-f169-7c0d-1a56" hidden="true" targetId="7203-426e-7a82-0b01" type="forceEntry"/>
         <forceEntryLink name="Apex - Officer Cadre" id="9e9e-bf66-ebd3-1ebc" hidden="true" targetId="90b7-c0fa-a9e1-6765" type="forceEntry"/>
         <forceEntryLink name="Apex - Army Vanguard" id="aa30-a438-f11c-74f2" hidden="true" targetId="0690-c05e-c301-f595" type="forceEntry"/>
-        <forceEntryLink name="Apex - The Hammer of Olympia" id="8190-9944-72c2-8ca1" hidden="true" targetId="1d3d-a6b8-94d8-443b" type="forceEntry"/>
-        <forceEntryLink name="Apex - Medusan Vanguard" id="d34e-10ce-826a-4f5e" hidden="true" targetId="7ff8-9e2c-e68a-573f" type="forceEntry"/>
-        <forceEntryLink name="Apex - Atramentar Hunt " id="77b8-89ca-6e92-12e4" hidden="true" targetId="dbbe-886f-3ce1-13c0" type="forceEntry"/>
-        <forceEntryLink name="Apex - Exalted Conclave" id="5054-c3a2-6e82-5245" hidden="true" targetId="c961-7007-0142-5d07" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Oversight Delegation" id="085f-0fac-d4cd-75e6" hidden="false" targetId="2291-5e67-64bd-5edc" type="forceEntry">
           <comment>Militia</comment>
         </forceEntryLink>
