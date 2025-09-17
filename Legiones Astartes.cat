@@ -20143,8 +20143,23 @@ Models of any Type other than Vehicle may Embark on a Model with this Special Ru
                 </selectionEntryGroup>
                 <selectionEntryGroup name="May exchange power lash for:" id="9df3-5bdc-e080-9033" hidden="false" sortIndex="2" defaultSelectionEntryId="cea8-d31e-b534-c092">
                   <entryLinks>
-                    <entryLink import="true" name="Power lash" hidden="false" id="cea8-d31e-b534-c092" type="selectionEntry" targetId="2198-1efb-d4ef-5907"/>
-                    <entryLink import="true" name="Power maul" hidden="false" id="6f62-d6ea-d786-55f2" type="selectionEntry" targetId="c4fa-659d-bf4b-bad1"/>
+                    <entryLink import="true" name="Power lash" hidden="false" id="cea8-d31e-b534-c092" type="selectionEntry" targetId="2198-1efb-d4ef-5907" sortIndex="1"/>
+                    <entryLink import="true" name="Power maul" hidden="false" id="6f62-d6ea-d786-55f2" type="selectionEntry" targetId="c4fa-659d-bf4b-bad1" sortIndex="2"/>
+                    <entryLink import="true" name="Maul of Perdition" hidden="true" id="592d-664b-12cf-837a" type="selectionEntry" targetId="5cd6-6c5c-b464-4b27" sortIndex="3">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a998-ab72-1a7e-d3fe"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="77a7-d73d-bb19-0f7e" includeChildSelections="false"/>
@@ -27186,6 +27201,21 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="33ed-7197-4bcf-031d"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Axe of Perdition" hidden="true" id="fff8-3d18-1bf7-5cf0" type="selectionEntry" targetId="81b3-438e-041a-35ee" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1846-6aae-e119-5831"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9cae-d9b0-49ba-8d85"/>
@@ -27494,6 +27524,21 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1c24-c39c-af60-0a09"/>
                   </constraints>
+                </entryLink>
+                <entryLink import="true" name="Axe of Perdition" hidden="true" id="1fb6-321a-2c4e-7a8e" type="selectionEntry" targetId="81b3-438e-041a-35ee" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94ee-aedf-3bc6-8439"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -27855,6 +27900,21 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3c54-cbb4-9648-1dac"/>
                   </constraints>
+                </entryLink>
+                <entryLink import="true" name="Axe of Perdition" hidden="true" id="cbee-594a-6447-2f64" type="selectionEntry" targetId="81b3-438e-041a-35ee" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a85a-1d04-f2d1-fd4d"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -35356,7 +35416,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9ba-21ca-4611-8152"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e9ba-21ca-4611-8152"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
