@@ -7156,6 +7156,11 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
                   </conditions>
                 </modifier>
+                <modifier type="replace" value="Tartaros" field="name" arg="Cataphractii">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup type="and">
@@ -7246,6 +7251,16 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="10" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="replace" value="Tartaros" field="name" arg="Cataphractii">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
             <modifier type="increment" value="10" field="9893-c379-920b-8982">
               <conditions>
