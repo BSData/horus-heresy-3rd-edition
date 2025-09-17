@@ -7129,9 +7129,9 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Praetor in Terminator Armour" hidden="false" id="23ee-bc64-aea6-5272" sortIndex="2">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Praetor in Terminator Armour" hidden="false" id="925e-21ea-5ece-c5ce" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Cataphractii Praetor" hidden="false" id="925e-21ea-5ece-c5ce" sortIndex="1">
           <profiles>
-            <profile name="Praetor in Terminator Armour" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="a5d8-ad4b-bf2c-cb23">
+            <profile name="Cataphractii Preator" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="a5d8-ad4b-bf2c-cb23">
               <characteristics>
                 <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command, Heavy)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
@@ -7150,16 +7150,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Infantry (Command)" field="50fc-9241-d4a2-045b">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="7" field="a106-a779-d272-5e93">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
                 <modifier type="increment" value="1" field="f714-1726-37d3-44df">
                   <comment>TS - Cult Arcana</comment>
                   <conditions>
@@ -7242,12 +7232,22 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </categoryLinks>
           <modifiers>
             <modifier type="add" value="647c-faca-3c98-c203" field="category"/>
-            <modifier type="add" value="1e7d-9066-28d2-97a0" field="category">
+            <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
-            <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
+            <modifier type="replace" value="Tartaros" field="name" arg="Cataphractii">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="10" field="9893-c379-920b-8982">
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
               </conditions>
@@ -7869,9 +7869,9 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Centurion in Terminator Armour" hidden="false" id="f94b-2b62-48ed-4679" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Cataphractii Centurion" hidden="false" id="f94b-2b62-48ed-4679" sortIndex="1">
           <profiles>
-            <profile name="Centurion in Terminator Armour" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="8ed4-1b4d-61e0-1380">
+            <profile name="Cataphractii Centurion" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="8ed4-1b4d-61e0-1380">
               <characteristics>
                 <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command, Heavy)</characteristic>
                 <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
@@ -7890,29 +7890,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="Infantry (Command)" field="50fc-9241-d4a2-045b">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Tartaros</comment>
-                </modifier>
-                <modifier type="set" value="7" field="a106-a779-d272-5e93">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Tartaros</comment>
-                </modifier>
-                <modifier type="set" value="5+" field="a951-a772-7ce0-0b64">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Tartaros</comment>
-                </modifier>
-                <modifier type="add" value="1e7d-9066-28d2-97a0" field="category">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
                 <modifier type="increment" value="1" field="f714-1726-37d3-44df">
                   <comment>TS - Cult Arcana</comment>
                   <conditions>
@@ -7959,6 +7936,23 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Terminator Armour</comment>
+                  <modifiers>
+                    <modifier type="set" value="Infantry (Command)" field="50fc-9241-d4a2-045b"/>
+                    <modifier type="set" value="7" field="a106-a779-d272-5e93"/>
+                    <modifier type="replace" value="Tartaros" field="name" arg="Cataphractii"/>
+                    <modifier type="set" value="5+" field="a951-a772-7ce0-0b64"/>
+                  </modifiers>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -8137,6 +8131,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </modifiers>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="replace" value="Tartaros" field="name" arg="Cataphractii">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -22003,15 +22009,21 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <comment>Tarteros</comment>
+                  <comment>Terminator Armour</comment>
                   <modifiers>
                     <modifier type="set" value="Infantry (Command)" field="50fc-9241-d4a2-045b"/>
                     <modifier type="set" value="7" field="a106-a779-d272-5e93"/>
-                    <modifier type="set" value="Tartaros Librarian" field="name"/>
+                    <modifier type="replace" value="Tartaros" field="name" arg="Cataphractii"/>
+                    <modifier type="set" value="5+" field="a951-a772-7ce0-0b64"/>
                   </modifiers>
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -22140,9 +22152,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </entryLinks>
           <modifiers>
             <modifier type="set" value="Tartaros Librarian" field="name">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
               <conditions>
@@ -22672,15 +22689,21 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <comment>Tarteros</comment>
+                  <comment>Terminator Armour</comment>
                   <modifiers>
                     <modifier type="set" value="Infantry (Command)" field="50fc-9241-d4a2-045b"/>
                     <modifier type="set" value="7" field="a106-a779-d272-5e93"/>
-                    <modifier type="set" value="Tartaros Esoterist" field="name"/>
+                    <modifier type="replace" value="Tartaros" field="name" arg="Cataphractii"/>
+                    <modifier type="set" value="5+" field="a951-a772-7ce0-0b64"/>
                   </modifiers>
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -22761,9 +22784,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </conditions>
             </modifier>
             <modifier type="set" value="Tartaros Esoterist" field="name">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -23317,15 +23345,21 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <comment>Tarteros</comment>
+                  <comment>Terminator Armour</comment>
                   <modifiers>
                     <modifier type="set" value="Infantry (Command)" field="50fc-9241-d4a2-045b"/>
                     <modifier type="set" value="7" field="a106-a779-d272-5e93"/>
-                    <modifier type="set" value="Tartaros Legion Champion" field="name"/>
+                    <modifier type="replace" value="Tartaros" field="name" arg="Cataphractii"/>
+                    <modifier type="set" value="5+" field="a951-a772-7ce0-0b64"/>
                   </modifiers>
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -23398,9 +23432,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="Tartaros Legion Champion" field="name">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
               <conditions>
@@ -24006,15 +24045,21 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <comment>Tarteros</comment>
+                  <comment>Terminator Armour</comment>
                   <modifiers>
                     <modifier type="set" value="Infantry (Command)" field="50fc-9241-d4a2-045b"/>
                     <modifier type="set" value="7" field="a106-a779-d272-5e93"/>
-                    <modifier type="set" value="Tartaros Chaplain" field="name"/>
+                    <modifier type="replace" value="Tartaros" field="name" arg="Cataphractii"/>
+                    <modifier type="set" value="5+" field="a951-a772-7ce0-0b64"/>
                   </modifiers>
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -24086,9 +24131,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="Tartaros Chaplain" field="name">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
               <conditions>
@@ -24917,15 +24967,21 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <comment>Tarteros</comment>
+                  <comment>Terminator Armour</comment>
                   <modifiers>
                     <modifier type="set" value="Infantry (Command)" field="50fc-9241-d4a2-045b"/>
                     <modifier type="set" value="7" field="a106-a779-d272-5e93"/>
-                    <modifier type="set" value="Tartaros Herald" field="name"/>
+                    <modifier type="replace" value="Tartaros" field="name" arg="Cataphractii"/>
+                    <modifier type="set" value="5+" field="a951-a772-7ce0-0b64"/>
                   </modifiers>
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -24997,9 +25053,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="Tartaros Herald" field="name">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
               <conditions>
@@ -25951,15 +26012,21 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <comment>Tarteros</comment>
+                  <comment>Terminator Armour</comment>
                   <modifiers>
                     <modifier type="set" value="Infantry (Command)" field="50fc-9241-d4a2-045b"/>
                     <modifier type="set" value="7" field="a106-a779-d272-5e93"/>
-                    <modifier type="set" value="Tartaros Siege Breaker" field="name"/>
+                    <modifier type="replace" value="Tartaros" field="name" arg="Cataphractii"/>
+                    <modifier type="set" value="5+" field="a951-a772-7ce0-0b64"/>
                   </modifiers>
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -26182,9 +26249,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="Tartaros Siege Breaker" field="name">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
               <conditions>
@@ -27610,15 +27682,21 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <comment>Tarteros</comment>
+                  <comment>Terminator Armour</comment>
                   <modifiers>
                     <modifier type="set" value="Infantry (Command)" field="50fc-9241-d4a2-045b"/>
                     <modifier type="set" value="7" field="a106-a779-d272-5e93"/>
-                    <modifier type="set" value="Tartaros Forge Lord" field="name"/>
+                    <modifier type="replace" value="Tartaros" field="name" arg="Cataphractii"/>
+                    <modifier type="set" value="5+" field="a951-a772-7ce0-0b64"/>
                   </modifiers>
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -27792,9 +27870,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="Tartaros Forge Lord" field="name">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
               <conditions>
@@ -28421,15 +28504,21 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <comment>Tarteros</comment>
+                  <comment>Terminator Armour</comment>
                   <modifiers>
-                    <modifier type="set" value="Infantry (Command)" field="50fc-9241-d4a2-045b"/>
+                    <modifier type="set" value="Infantry (Specialist)" field="50fc-9241-d4a2-045b"/>
                     <modifier type="set" value="7" field="a106-a779-d272-5e93"/>
-                    <modifier type="set" value="Tartaros Primus Medicae" field="name"/>
+                    <modifier type="replace" value="Tartaros" field="name" arg="Cataphractii"/>
+                    <modifier type="set" value="5+" field="a951-a772-7ce0-0b64"/>
                   </modifiers>
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -28530,9 +28619,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="Tartaros Primus Medicae" field="name">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
               <conditions>
@@ -29355,15 +29449,21 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <comment>Tarteros</comment>
+                  <comment>Terminator Armour</comment>
                   <modifiers>
                     <modifier type="set" value="Infantry (Command)" field="50fc-9241-d4a2-045b"/>
                     <modifier type="set" value="7" field="a106-a779-d272-5e93"/>
-                    <modifier type="set" value="Tartaros Delegatus" field="name"/>
+                    <modifier type="replace" value="Tartaros" field="name" arg="Cataphractii"/>
+                    <modifier type="set" value="5+" field="a951-a772-7ce0-0b64"/>
                   </modifiers>
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -29498,9 +29598,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </entryLinks>
           <modifiers>
             <modifier type="set" value="Tartaros Delegatus" field="name">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
               <conditions>
@@ -29761,15 +29866,21 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <comment>Tarteros</comment>
+                  <comment>Terminator Armour</comment>
                   <modifiers>
                     <modifier type="set" value="Infantry (Specialist)" field="50fc-9241-d4a2-045b"/>
                     <modifier type="set" value="7" field="a106-a779-d272-5e93"/>
-                    <modifier type="set" value="Tartaros Mortificator" field="name"/>
+                    <modifier type="replace" value="Tartaros" field="name" arg="Cataphractii"/>
+                    <modifier type="set" value="5+" field="a951-a772-7ce0-0b64"/>
                   </modifiers>
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -29848,9 +29959,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="Tartaros Mortificator" field="name">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
               <conditions>
@@ -30234,6 +30350,23 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Terminator Armour</comment>
+                  <modifiers>
+                    <modifier type="set" value="Infantry (Command)" field="50fc-9241-d4a2-045b"/>
+                    <modifier type="set" value="7" field="a106-a779-d272-5e93"/>
+                    <modifier type="replace" value="Tartaros" field="name" arg="Cataphractii"/>
+                    <modifier type="set" value="5+" field="a951-a772-7ce0-0b64"/>
+                  </modifiers>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -30368,6 +30501,23 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="c706-b5ac-9091-3cac" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="4"/>
             <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="4f33-32a0-e58f-ea37" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="remove" value="1e7d-9066-28d2-97a0" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Tartaros Warmonger" field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="4041-105d-29a6-2c22" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="a2ba-c8fc-f381-7d22" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
