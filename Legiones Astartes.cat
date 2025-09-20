@@ -36559,6 +36559,32 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef4a-8cb6-8982-5922" automatic="true"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Decurion Lanius" hidden="false" id="05ea-aecd-f5bc-63ea">
+      <entryLinks>
+        <entryLink import="true" name="Banestrike Bolt Cannon" hidden="true" id="7d09-cd03-f758-9a4d" type="selectionEntry" targetId="6c28-9e00-20b3-7963">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2464-f9bb-5732-8742" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8944-313a-0f2f-813e"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="05ea-aecd-f5bc-63ea" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="prepend" value="Pintle Mounted " field="name"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <rules>
+        <rule name="Brutal Enforcement" id="e5b4-9cd5-b310-f6a7" hidden="false">
+          <description>&quot;A Model with this Special Rule may target a friendly Unit with a Shooting Attack and the targeted Unit loses the Routed Tactical Status.&quot;
+
+
+At the start of the Move Sub-Phase, the Controlling Player of a Model with this Special Rule can select one Unit from their Army with the Routed Tactical Status that is within 12&quot; of the Model with this Special Rule. If they do, the Model with this Special Rule immediately makes a Shooting Attack, targeting that Unit, using only it&apos;s Banestrike bolt cannon. This Shooting Attack does not cause any Leadership Checks. Once this Shooting Attack has been resolved, the Target Unit loses the Routed Tactical Status.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Praetor in Saturnine Terminator Armour" hidden="false" id="723a-caa1-9f03-13f9" type="selectionEntry" targetId="2a5a-8ab8-be4d-6fa7" sortIndex="3">
@@ -39179,9 +39205,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
       </constraints>
       <modifiers>
         <modifier type="set" value="0" field="e462-2a64-e0ee-ecd9">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="cccd-963b-fdfa-ab7a" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="05ea-aecd-f5bc-63ea" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="cccd-963b-fdfa-ab7a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntryGroup>
@@ -39715,6 +39746,23 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
           </modifiers>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Decurion Lanius" hidden="true" id="c340-627c-eb00-acd5" type="selectionEntry" targetId="05ea-aecd-f5bc-63ea">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ac06-fcec-b634-5bd9" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="30" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="unit" childId="e3f2-ff0d-f190-ecfd" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
           </costs>
         </entryLink>
       </entryLinks>
