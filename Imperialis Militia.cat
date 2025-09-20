@@ -11969,6 +11969,18 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7628-75dd-79c2-364b"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Lasrifle" hidden="true" id="20ca-c21e-fbee-6aab" type="selectionEntry" targetId="40e8-fcb7-9e0e-1582">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="1"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7665-bd37-c552-1876" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Militia Assault Weapons" id="0fea-c788-4956-a432" hidden="false">
@@ -12191,6 +12203,18 @@
               </conditions>
             </modifier>
           </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Rotor cannon" hidden="true" id="79ed-5264-39a4-eadc" type="selectionEntry" targetId="05bf-af5e-be67-36a2" sortIndex="13">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7665-bd37-c552-1876" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
