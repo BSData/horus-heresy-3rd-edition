@@ -928,8 +928,8 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
             </profile>
           </profiles>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c27-1343-5c48-e990" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aab0-203a-53f4-67ef" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="1c27-1343-5c48-e990" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="aab0-203a-53f4-67ef" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
             <infoLink name="Bulky (X)" id="5f2e-1073-7f63-d952" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
@@ -951,8 +951,8 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
                   <entryLinks>
                     <entryLink import="true" name="Coriolis Pattern Power Shield" hidden="false" id="f451-c6e6-0352-4c72" type="selectionEntry" targetId="cba1-dc5a-e2bf-0ae6">
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37f5-e584-3467-fa62" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be93-80ad-14f3-7dd4" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="37f5-e584-3467-fa62" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="be93-80ad-14f3-7dd4" includeChildSelections="false"/>
                       </constraints>
                     </entryLink>
                     <entryLink import="true" name="Power sword" hidden="false" id="9972-d365-2751-508e" type="selectionEntry" targetId="59a9-57c1-fff9-ca75">
@@ -963,7 +963,7 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7642-b836-7d3a-d1b6" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7642-b836-7d3a-d1b6" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="One Perdition Weapon" hidden="false" id="c201-26c6-bd82-aa96" sortIndex="3" flatten="true">
@@ -1002,8 +1002,8 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
                   <entryLinks>
                     <entryLink import="true" name="Coriolis Pattern Power Shield" hidden="false" id="e867-ad34-d6b9-8736" type="selectionEntry" targetId="cba1-dc5a-e2bf-0ae6">
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f668-a46b-f386-6543" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdb1-26b0-2702-f54a" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="f668-a46b-f386-6543" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="bdb1-26b0-2702-f54a" includeChildSelections="false"/>
                       </constraints>
                     </entryLink>
                     <entryLink import="true" name="Perdition Weapons" hidden="false" id="2e3d-c3a6-1259-eb80" type="selectionEntryGroup" targetId="6a6b-1cda-b6a4-8b3e" flatten="true">
@@ -1016,7 +1016,7 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="315f-97e0-31d8-1a9f" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="315f-97e0-31d8-1a9f" includeChildSelections="false"/>
                   </constraints>
                   <costs>
                     <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -1027,8 +1027,8 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
                 </selectionEntry>
               </selectionEntries>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="189a-2b0f-5fcc-2db3" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b829-0b79-d176-1d31" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="189a-2b0f-5fcc-2db3" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b829-0b79-d176-1d31" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -1065,11 +1065,35 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4725-0cf8-f640-999d" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Coriolis Pattern Power Shield" hidden="false" id="ded6-d810-2b12-48bf" type="selectionEntry" targetId="cba1-dc5a-e2bf-0ae6" sortIndex="3">
+            <entryLink import="true" name="Coriolis Pattern Power Shield" hidden="true" id="abb4-23ad-b002-31ec" type="selectionEntry" targetId="cba1-dc5a-e2bf-0ae6" sortIndex="2">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd01-1475-7936-840c" includeChildSelections="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d596-cec3-7761-9591"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8561-478e-08bf-4efa" automatic="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4a20-8269-208e-12b2"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="parent" childId="4fa7-ea45-2a89-ad86" shared="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="parent" childId="f38b-8af1-17b8-30fe" shared="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="parent" childId="3787-3dca-b6c9-f9e3" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="1" field="4a20-8269-208e-12b2">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="parent" childId="4fa7-ea45-2a89-ad86" shared="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="parent" childId="f38b-8af1-17b8-30fe" shared="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="parent" childId="3787-3dca-b6c9-f9e3" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
           <profiles>
@@ -1153,6 +1177,7 @@ The first time in any battle that a Model with this Special Rule is reduced to 0
               </entryLinks>
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="7f0e-e768-9933-775a" includeChildSelections="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="845e-10e6-3e6a-a12b"/>
               </constraints>
               <modifiers>
                 <modifier type="increment" value="1" field="7f0e-e768-9933-775a">
