@@ -20281,11 +20281,6 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime War-engine" hidden="false" id="204a-3ced-3fda-1040" targetId="9699-67c9-2c0b-e64b">
@@ -20657,11 +20652,6 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime War-engine" hidden="false" id="adae-1359-b516-27c0" targetId="9699-67c9-2c0b-e64b">
@@ -21031,11 +21021,6 @@
                 <modifier type="increment" value="1" field="7b10-c99d-3fe6-906b">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
