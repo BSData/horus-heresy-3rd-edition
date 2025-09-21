@@ -40034,6 +40034,56 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
             </profile>
           </profiles>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Osiraean" hidden="true" id="8cef-b559-1a61-ead7">
+          <profiles>
+            <profile name="Psychometry" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="a0be-2ceb-6200-f1a0">
+              <characteristics>
+                <characteristic name="Summary" typeId="981f-bb86-6a74-9b20">This Psychic Power can be used in the Shooting Phase to decrease the value of the Overload (X) Special Rule on a Unit&apos;s Weapons.</characteristic>
+                <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e">The Active Player may choose to Manifest the Psychometry Psychic Power in the Shooting Phase as the start of Step 3 of any Shooting Attack made by a Unit that includes at least one Model with the Osiraean Trait controlled by the Active Player.</characteristic>
+                <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86">The Focus of the Power must be a Model with the Osiraean Trait that is part of the Unit making the Shooting Attack.</characteristic>
+                <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770">The Target Unit must be the Unit that the Focus is a part of.</characteristic>
+                <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4">If successfully Manifested, the effects of this Psychic Power last until the end of the Shooting Attack being resolved.</characteristic>
+                <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0">1. Once the Focus and Target Unit have been decided, the Controlling Player of the Focus must make a Manifestation Check.
+2. If the Manifestation Check is successful, then the value of X of any version of the Overload (X) Special Rule on any Weapons Models in the Target Unit have is modified by -1 (if this would modify the value of X to 0 then the Overload (X) Special Rule cannot come into effect for that Weapon for the duration of this Power).
+3. If the Manifestation Check fails, then there is no further effect.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Machine Empathy" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="d3b1-69d4-87ed-4dfa">
+              <characteristics>
+                <characteristic name="Summary" typeId="981f-bb86-6a74-9b20">This Psychic Power can be used in the Start Phase to restore a single Wound to a Unit.</characteristic>
+                <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e">The Active Player may choose to Manifest the Machine Empathy Psychic Power in the Effects Sub-Phase of the Start-Phase.</characteristic>
+                <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86">The Focus of the Power must be a Model with the Osiraean Trait and under the Active Player&apos;s control.</characteristic>
+                <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770">The Target Model must be a single Model in the Unit that the Focus is part of.</characteristic>
+                <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4">If successfully Manifested, the effects of this Psychic Power are resolved immediately.</characteristic>
+                <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0">1. Once the Focus and Target Unit have been decided, the Controlling Player of the Focus must make a Manifestation Check.
+2. If the Manifestation check is successful, then the Target Model gains 1 Wound. This cannot increase the Target Model&apos;s Wounds Characteristic above its Base Value.
+3. If the Manifestation Check fails then there is no further effect.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="unit" childId="2a5a-8ab8-be4d-6fa7" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="38d4-d720-8009-acd3" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="unit" childId="2a5a-8ab8-be4d-6fa7" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="unit" childId="2a5a-8ab8-be4d-6fa7" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="unit" childId="2a5a-8ab8-be4d-6fa7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
       </selectionEntries>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6aa3-a02d-239a-3975"/>
