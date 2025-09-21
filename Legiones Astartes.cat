@@ -36596,6 +36596,195 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </rule>
       </rules>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Centurion in Saturnine Terminator Armour" hidden="false" id="aa81-d88f-48fa-e91b" sortIndex="135">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Saturnine Centurion" hidden="false" id="595f-07cc-7270-cfb1" sortIndex="1">
+          <profiles>
+            <profile name="Saturnine Centurion" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="ca0d-74c3-3c4b-3634">
+              <characteristics>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command, Heavy)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">5</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">6</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">5</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">4</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">9</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">8</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">8</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b34f-289a-b9fe-fb67"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="149b-d9a2-33d8-1af2"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Infantry Model Type" hidden="false" id="5239-5cff-db93-2580" targetId="594d-fa82-13cb-a345" primary="false"/>
+            <categoryLink name="Command Model Sub-type" hidden="false" id="19b0-8b5f-db48-cfab" targetId="9871-cb62-5283-2216" primary="false"/>
+            <categoryLink name="Heavy Model Sub-Type" hidden="false" id="5207-7984-c57b-5a60" targetId="1e7d-9066-28d2-97a0" primary="false"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Hand #2" id="cd2c-21cd-7703-a4e9" hidden="false" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Saturnine disruption fist" hidden="false" id="d6f4-e93c-d838-b836" type="selectionEntry" targetId="487c-7be9-48db-e02a" sortIndex="1" defaultAmount="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b656-a5dd-a909-29d7" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="May also take one of" id="837c-150c-1c79-3ac2" hidden="false">
+                      <entryLinks>
+                        <entryLink import="true" name="Plasma blaster" hidden="false" id="faab-4164-a236-ad4d" type="selectionEntry" targetId="3787-3dca-b6c9-f9e3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f101-197a-eb8b-dc2f"/>
+                          </constraints>
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Particle Shredder" hidden="false" id="3f46-ef4b-ca8b-579a" type="selectionEntry" targetId="aacf-f92a-7e0c-8d16">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="659f-96f4-255b-ee4e"/>
+                          </constraints>
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e80-fa2e-9653-39c6"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </entryLink>
+                <entryLink import="true" name="Plasma bombard" hidden="false" id="421e-ab39-a8af-55dc" type="selectionEntry" targetId="9734-6aa8-f0fe-1930" sortIndex="2"/>
+                <entryLink import="true" name="Twin heavy disintegrator" hidden="false" id="5623-70e6-d584-5da8" type="selectionEntry" targetId="7062-e1d6-e14a-c0e7" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8078-5061-8e8f-fcc0" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5377-fa5b-ef30-5ab5" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Hand #1" id="cc30-2d4b-bab0-4244" hidden="false" sortIndex="1" defaultSelectionEntryId="377e-2ef4-2b94-2836">
+              <entryLinks>
+                <entryLink import="true" name="Plasma bombard" hidden="false" id="377e-2ef4-2b94-2836" type="selectionEntry" targetId="9734-6aa8-f0fe-1930"/>
+                <entryLink import="true" name="Twin heavy disintegrator" hidden="false" id="e49a-d6df-82e2-cab5" type="selectionEntry" targetId="7062-e1d6-e14a-c0e7">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5091-e60d-1a98-fe5a"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b5a-2a52-6fba-32cd"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Thermal Diffraction Field" hidden="false" id="3107-409b-c8fa-c04a" type="selectionEntry" targetId="ae43-8418-ecb1-ef6e" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0db8-020c-9622-fe78" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05d0-5a88-e764-63ad" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="a859-e6f2-7277-7a0d" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="6"/>
+            <entryLink import="true" name="Prosperine Arcana" hidden="false" id="6a8c-345d-42e7-22ad" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50" sortIndex="7"/>
+            <entryLink import="true" name="Cult Arcana" hidden="true" id="8ee2-67fc-7ab4-d107" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
+            <entryLink import="true" name="Occulix targeting auspex" hidden="false" id="87b1-8a41-0935-1603" type="selectionEntry" targetId="01d8-92c7-5399-5e2a" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d06-5bf9-7736-9259-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d06-5bf9-7736-9259-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Saturnine Teleport Synchroniser" hidden="false" id="cb8c-a8d3-1bbe-4c1c" type="selectionEntry" targetId="bc43-a3f4-2d34-550a" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad35-31d6-4ffb-a8be-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad35-31d6-4ffb-a8be-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="150"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="fa68-1a7e-7ee3-9403" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="6aa8-b13f-f8f7-cacd" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="d76b-8e42-ca02-b722" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="c6b2-476b-8795-62cf" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Bulky (X)" id="9518-78e3-2582-6c7c" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+          <modifiers>
+            <modifier type="set" value="Bulky (4)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Implacable Advance" id="a195-1021-9f10-dd9a" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
+        <infoLink name="Slow and Purposeful" id="888d-4874-9037-1f85" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e"/>
+        <infoLink name="Explodes (X)" id="aa2e-77aa-f7fa-bd2c" hidden="false" type="rule" targetId="da5b-b871-20da-3e70">
+          <modifiers>
+            <modifier type="set" value="Explodes (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="901a-6b71-7a29-4597" id="0c4e-ac60-4e23-10f4" primary="false" name="Officer of the Line (2)"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Praetor in Saturnine Terminator Armour" hidden="false" id="723a-caa1-9f03-13f9" type="selectionEntry" targetId="2a5a-8ab8-be4d-6fa7" sortIndex="3">
@@ -37726,6 +37915,11 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
     <entryLink import="true" name="Ruinstorm Daemon Brutes" hidden="false" id="8a46-d6b0-1ab9-d999" type="selectionEntry" targetId="fe9c-0eae-59a2-3183" sortIndex="666">
       <categoryLinks>
         <categoryLink targetId="82f8-b131-f63b-840c" id="542f-eb38-8910-2087" primary="true" name="Heavy Assault - Ruinstorm Daemon Brutes Only"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Centurion in Saturnine Terminator Armour" hidden="false" id="d7c4-cf86-bbcd-1bea" type="selectionEntry" targetId="aa81-d88f-48fa-e91b" sortIndex="135">
+      <categoryLinks>
+        <categoryLink targetId="6dbf-654a-f06f-2d69" id="7f54-4c64-9148-8c1d" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -40119,7 +40313,7 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="unit" childId="2a5a-8ab8-be4d-6fa7" shared="true" includeChildSelections="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="38d4-d720-8009-acd3" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="unit" childId="2a5a-8ab8-be4d-6fa7" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="unit" childId="aa81-d88f-48fa-e91b" shared="true" includeChildSelections="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="unit" childId="2a5a-8ab8-be4d-6fa7" shared="true" includeChildSelections="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="unit" childId="2a5a-8ab8-be4d-6fa7" shared="true" includeChildSelections="true"/>
                   </conditions>
