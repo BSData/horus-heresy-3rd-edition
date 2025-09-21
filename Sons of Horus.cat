@@ -262,18 +262,6 @@ The Controlling Player of an Army that includes a Model with this Special Rule h
             <entryLink import="true" name="Prime Benefits" hidden="false" id="6d2f-57c4-47ad-a30f" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Banestrike combi-bolter" hidden="false" id="4a3c-aff7-3790-7dd7" type="selectionEntry" targetId="08db-6d95-f0be-cfe0" sortIndex="2">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6996-4a26-da16-5c39"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1af-24ad-2966-b833"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Grenade harness" hidden="false" id="bcc5-53ca-fff0-fa6b" type="selectionEntry" targetId="a766-856c-52bd-d30a" sortIndex="3">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bfd6-ca11-1e43-cbf5"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6b2-e573-bd63-4ce4"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="8d54-3cb4-6b4e-d7a8" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="5"/>
       </entryLinks>
       <rules>
@@ -292,6 +280,42 @@ If a Model with this Special Rule joins a Justaerin Terminator Squad Unit in Res
       <constraints>
         <constraint type="max" id="3fe2-d950-412b-bd66" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="May Exchange" id="a0d3-dcfb-0cdf-ab11" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Banestrike Combi-Bolter and Grenade Harness" hidden="false" id="f910-8a5b-1084-71c3">
+              <entryLinks>
+                <entryLink import="true" name="Banestrike combi-bolter" hidden="false" id="4a3c-aff7-3790-7dd7" type="selectionEntry" targetId="08db-6d95-f0be-cfe0">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6996-4a26-da16-5c39"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1af-24ad-2966-b833"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Grenade harness" hidden="false" id="bcc5-53ca-fff0-fa6b" type="selectionEntry" targetId="a766-856c-52bd-d30a">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bfd6-ca11-1e43-cbf5"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6b2-e573-bd63-4ce4"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de63-37e0-b407-5014"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Paragon blade" hidden="false" id="63c0-774f-8a77-ceea" type="selectionEntry" targetId="1881-a2b5-fc58-4270">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64c1-ccf5-118c-75b9"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b90-8c4c-a0c8-0f28"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1657-3803-1fa9-314f"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dark Emmissary" hidden="false" id="ac51-dccb-d5ff-3d20">
       <selectionEntries>
