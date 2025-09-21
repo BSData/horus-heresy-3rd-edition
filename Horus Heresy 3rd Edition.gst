@@ -20610,6 +20610,13 @@
               <comment>Legions</comment>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Apex - Linebreaker Echelon (Cataphractii)" id="d7b3-5d00-8524-73fa" hidden="true" sortIndex="93">
           <categoryLinks>
@@ -20979,6 +20986,13 @@
               <comment>Legions</comment>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Apex - Linebreaker Echelon (Tartaros)" id="dd35-dc84-98ac-237d" hidden="true" sortIndex="94">
           <categoryLinks>
@@ -21348,6 +21362,13 @@
               <comment>Legions</comment>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Maelstrom Sentry Battery" id="07f0-6f5f-59f4-f95f" hidden="true" sortIndex="95">
           <categoryLinks>
@@ -21728,6 +21749,13 @@
           <constraints>
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="b4e7-0ef3-6816-22ae"/>
           </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
       </forceEntries>
       <constraints>
