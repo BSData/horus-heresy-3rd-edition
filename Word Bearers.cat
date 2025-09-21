@@ -3036,6 +3036,448 @@ When a Model with this Special Rule makes Volley Attacks, modify the Firepower C
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Phraetus Anointed Conclave" hidden="false" id="56a7-a810-598c-7309">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Phraetus Anointed" hidden="false" id="19e6-bfec-fb21-70b2" defaultAmount="2" sortIndex="2">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="65"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="012a-858d-233f-ee73"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="3f90-0c3a-126e-6c2e" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Phraetus Anointed" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="d98e-333e-8785-a1db">
+              <characteristics>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Heavy, Malefic)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">5</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">6</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">3</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">3</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">8</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">7</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="May exchange Paired Saturnine Disruption Fists for:" id="1f79-65f0-64d2-4bf8" hidden="false" sortIndex="1" defaultSelectionEntryId="c56d-2694-5a23-67fe">
+              <entryLinks>
+                <entryLink import="true" name="Paired Saturnine Disruption Fists" hidden="false" id="ac2f-e06a-e509-10c1" type="selectionEntry" targetId="1595-ae69-52bb-4160" sortIndex="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8486-b684-a569-e3a8" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b2be-7fed-1220-960b"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Plasma bombard and one Saturnine disruption fist" hidden="false" id="2caf-6a8d-e00b-1e44" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Plasma bombard" hidden="false" id="9f63-4f08-a940-2be5" type="selectionEntry" targetId="9734-6aa8-f0fe-1930">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7ce6-48d1-41d5-b96d-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ce6-48d1-41d5-b96d-max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Saturnine disruption fist" hidden="false" id="1698-0e90-4cca-503b" type="selectionEntry" targetId="487c-7be9-48db-e02a">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a680-5ae3-2fc8-fb38-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a680-5ae3-2fc8-fb38-max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b5e-39c8-79c5-c4a2"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                    <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Twin heavy disintegrator and one Saturnine disruption fist" hidden="false" id="e7e9-8e54-a0d7-c235" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="Saturnine disruption fist" hidden="false" id="77d9-4f67-6d27-a44f" type="selectionEntry" targetId="487c-7be9-48db-e02a">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b6d-2381-cca4-87e8-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b6d-2381-cca4-87e8-max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Twin heavy disintegrator" hidden="false" id="6ff1-7623-dd44-ebfb" type="selectionEntry" targetId="7062-e1d6-e14a-c0e7">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a546-4af0-c28d-5e4f-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a546-4af0-c28d-5e4f-max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31cb-78b0-2323-5200"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                    <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Saturnine war axe and one Saturnine disruption fist" hidden="false" id="0604-c6be-63de-490b" sortIndex="4">
+                  <entryLinks>
+                    <entryLink import="true" name="Saturnine disruption fist" hidden="false" id="caca-6a19-8121-ddb8" type="selectionEntry" targetId="487c-7be9-48db-e02a">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e8e-da23-0374-d979-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e8e-da23-0374-d979-max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Saturnine war axe" hidden="false" id="758c-21b3-3d40-a64a" type="selectionEntry" targetId="2c38-5c75-ae96-1391">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b28-23e2-0c42-68a5-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b28-23e2-0c42-68a5-max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                    <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="May also take" id="77ee-0be8-2c79-bbd1" hidden="false" sortIndex="4">
+              <entryLinks>
+                <entryLink import="true" name="Particle Shredder" hidden="false" id="89b9-45a1-8f7e-d24c" type="selectionEntry" targetId="aacf-f92a-7e0c-8d16">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0af4-bd4f-ab3d-eb39"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad88-e31a-2247-f2a4"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink name="Infantry Model Type" hidden="false" id="2387-2d61-6658-6dbc" targetId="594d-fa82-13cb-a345" primary="false"/>
+            <categoryLink name="Heavy Model Sub-Type" hidden="false" id="0548-6bb3-b8b5-ef11" targetId="1e7d-9066-28d2-97a0" primary="false"/>
+            <categoryLink targetId="2de1-ddd6-ebb4-10df" id="4954-a6b6-5cbb-5586" primary="false" name="Malefic Sub-type"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Warpfire Mantle" hidden="false" id="8c60-4e95-18a9-0509" type="selectionEntry" targetId="a7cd-c531-be16-79dc" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f18-a723-b36b-17fe-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f18-a723-b36b-17fe-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Saturnine Teleport Synchroniser" hidden="false" id="01d3-9422-8b27-903d" type="selectionEntry" targetId="bc43-a3f4-2d34-550a" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7fad-6f96-3212-b505-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fad-6f96-3212-b505-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Phraetus Disciple" hidden="false" id="3b02-c677-ca13-ef8d" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd55-09b4-0939-c7b4"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffb9-d990-d320-bb4e"/>
+          </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Sergeant Model Sub-Type" hidden="false" id="3ecf-497f-9d23-1a25" targetId="8045-89a4-76d4-fcef" primary="false"/>
+            <categoryLink name="Champion Model Sub-Type" hidden="false" id="5c71-0b22-e506-1186" targetId="5a95-e564-96b2-8dc9" primary="false"/>
+            <categoryLink name="Infantry Model Type" hidden="false" id="2c00-edfa-7a80-5386" targetId="594d-fa82-13cb-a345" primary="false"/>
+            <categoryLink name="Heavy Model Sub-Type" hidden="false" id="9728-bb52-b30e-3d55" targetId="1e7d-9066-28d2-97a0" primary="false"/>
+            <categoryLink targetId="2de1-ddd6-ebb4-10df" id="903e-f8f4-d45f-3d4f" primary="false" name="Malefic Sub-type"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Phraetus Disciple" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="9564-4aa9-d14c-071e">
+              <characteristics>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Champion, Sergeant, Heavy, Malefic)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">5</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">6</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">3</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">3</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">8</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">8</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="2" field="02ad-ebe6-86e7-9fd6"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Master Sergeant - Existing Champion</comment>
+                </modifierGroup>
+              </modifierGroups>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS - Cult Arcana</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="May exchange Paired Saturnine Disruption Fists for:" id="509c-10b2-7d01-8338" hidden="false" sortIndex="1" defaultSelectionEntryId="974f-c444-1eb2-47d1">
+              <entryLinks>
+                <entryLink import="true" name="Paired Saturnine Disruption Fists" hidden="false" id="ff5d-5e14-086a-2cb8" type="selectionEntry" targetId="1595-ae69-52bb-4160" sortIndex="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="069e-1dcf-6d39-ea67" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a9e4-7ed2-1fd0-461e"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Plasma bombard and one Saturnine disruption fist" hidden="false" id="6bf1-d80a-7ce7-829b" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Plasma bombard" hidden="false" id="ac36-5ff7-3958-665c" type="selectionEntry" targetId="9734-6aa8-f0fe-1930">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="59a6-2464-2f05-c920-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59a6-2464-2f05-c920-max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Saturnine disruption fist" hidden="false" id="cd8b-8fc7-0636-963c" type="selectionEntry" targetId="487c-7be9-48db-e02a">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc7f-d4ec-c8b6-6467-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc7f-d4ec-c8b6-6467-max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1e6-a866-c0fe-983a"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                    <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Twin heavy disintegrator and one Saturnine disruption fist" hidden="false" id="6e47-0fad-1fa9-c275" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="Saturnine disruption fist" hidden="false" id="6f72-2349-54b0-c765" type="selectionEntry" targetId="487c-7be9-48db-e02a">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="60db-6523-305a-ac12-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60db-6523-305a-ac12-max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Twin heavy disintegrator" hidden="false" id="e83d-28de-adc6-ff60" type="selectionEntry" targetId="7062-e1d6-e14a-c0e7">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="29d5-6930-b21d-434e-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29d5-6930-b21d-434e-max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="849b-36a4-1677-9773"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                    <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Saturnine war axe and one Saturnine disruption fist" hidden="false" id="f172-16f3-031d-7f51" sortIndex="4">
+                  <entryLinks>
+                    <entryLink import="true" name="Saturnine disruption fist" hidden="false" id="262e-996c-54de-c714" type="selectionEntry" targetId="487c-7be9-48db-e02a">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ac99-03c3-98ac-db53-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac99-03c3-98ac-db53-max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Saturnine war axe" hidden="false" id="8312-4291-f91e-34c9" type="selectionEntry" targetId="2c38-5c75-ae96-1391">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a198-710e-52ff-09e0-min"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a198-710e-52ff-09e0-max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                    <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="May also take" id="ee2a-ab8a-ac56-500f" hidden="false" sortIndex="4">
+              <entryLinks>
+                <entryLink import="true" name="Particle Shredder" hidden="false" id="a136-8208-3778-1d87" type="selectionEntry" targetId="aacf-f92a-7e0c-8d16">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a63-efbc-4ea1-a84c"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c5e-a07f-d517-56ed"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="ea09-6c76-5a93-cd52" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="6"/>
+            <entryLink import="true" name="Saturnine teleportation transponder" hidden="false" id="31c2-49aa-4c43-6315" type="selectionEntry" targetId="b347-5137-3d53-53ab" sortIndex="5">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="60"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1f3-b18a-41b7-3995"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Saturnine Teleport Synchroniser" hidden="false" id="5d0d-cbb7-1172-6901" type="selectionEntry" targetId="bc43-a3f4-2d34-550a" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3eb2-b79c-54c2-26b8-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3eb2-b79c-54c2-26b8-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warpfire Mantle" hidden="false" id="18b7-e821-408f-b425" type="selectionEntry" targetId="a7cd-c531-be16-79dc" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="01b1-d361-008e-8886-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01b1-d361-008e-8886-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="110"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="3da5-7445-c170-d4c3" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="ef86-f1d3-3b5e-da2e" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="d280-b60c-3346-071c" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="67a9-4ca1-2627-e2b6" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Bulky (X)" id="1a3a-df44-5e3c-2745" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+          <comment>4</comment>
+          <modifiers>
+            <modifier type="set" value="Bulky (4)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Implacable Advance" id="d552-5156-a2ca-3be7" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
+        <infoLink name="Slow and Purposeful" id="baff-1337-0bc7-1be4" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e"/>
+        <infoLink name="Explodes (X)" id="9fa3-5892-0512-5cf7" hidden="false" type="rule" targetId="da5b-b871-20da-3e70">
+          <comment>5+</comment>
+          <modifiers>
+            <modifier type="set" value="Explodes (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Aflame (X)" id="be59-fbc3-ec63-882e" hidden="false" type="rule" targetId="fdc7-d2a1-338f-df11">
+          <comment>2</comment>
+          <modifiers>
+            <modifier type="set" value="Aflame (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Eternal Warrior (X)" id="e3c8-1738-9c82-a208" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="set" value="Eternal Warrior (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warpfire Mantle" hidden="false" id="a7cd-c531-be16-79dc">
+      <profiles>
+        <profile name="Warpfire Mantle" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="0e4c-fae0-ac7a-bf8c">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">Warpfire mantles grant Models the chance to inflict wounds against nearby Units when they are hit by Shooting Attacks.</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">At the end of the Attacks Sub-Phase of any Shooting Phase, if a Unit contains any Models with warpfire mantles which passed at least one Armour or Invulnerable Test against wounds caused by Shooting Attacks in that Shooting Phase, every Unit with at least one Model within 8&quot; of at least one Model in that Unit must make a Toughness Check, unless it contains any Models with a warpfire mantle. A Unit which fails this Toughness Check suffers D3 automatic wounds with a Damage Characteristic of 1 and an AP of 2 against which no Saving Throws of any kind can be made, allocated as if they were inflicted by a Shooting Attack.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="21bf-a185-39e4-3a85" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
@@ -3148,6 +3590,11 @@ If a Model with any Flesh Harvest Points is Removed as a Casualty, any Flesh Har
     <entryLink import="true" name="Procurators with Jump Packs" hidden="false" id="eaa2-3547-72f6-d19c" type="selectionEntry" targetId="fd26-9fa0-4360-ae66">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="d47d-4aa3-af81-f7a6" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Phraetus Anointed Conclave" hidden="false" id="a84a-f4b4-398e-6b43" type="selectionEntry" targetId="56a7-a810-598c-7309">
+      <categoryLinks>
+        <categoryLink targetId="5d5e-958f-e388-50b5" id="74b0-7618-d8be-797d" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
