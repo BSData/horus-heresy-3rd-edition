@@ -4126,36 +4126,6 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc3d-65ae-4256-8702"/>
                   </constraints>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Vexilla" id="7987-3063-c263-2faf" hidden="false">
-                  <entryLinks>
-                    <entryLink import="true" name="Auxilia vexilla" hidden="true" id="f57d-f159-7eee-7208" type="selectionEntry" targetId="abc6-851f-ab12-1ddd">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="2a77-7448-62fa-da16" includeChildSelections="true"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="false" field="hidden">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fbc6-d055-654b-5241" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink import="true" name="Militia Vexilla" hidden="false" id="c048-c050-f48e-ed7e" type="selectionEntry" targetId="1420-40f4-617b-41bc">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="a022-d69f-a9b4-08f9" includeChildSelections="true"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0bbc-25e7-bb33-aa39"/>
-                  </constraints>
-                </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Assault Shield" hidden="true" id="5392-0e30-dd03-cfe2" type="selectionEntry" targetId="6421-5ab9-02f3-e545">
@@ -4217,6 +4187,36 @@
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d5b-5b0a-cc8e-5fa3" automatic="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="837b-49cd-7e08-9043" automatic="true"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Vexilla" id="7987-3063-c263-2faf" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Auxilia vexilla" hidden="true" id="f57d-f159-7eee-7208" type="selectionEntry" targetId="abc6-851f-ab12-1ddd">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="2a77-7448-62fa-da16" includeChildSelections="true"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="fbc6-d055-654b-5241" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Militia Vexilla" hidden="false" id="c048-c050-f48e-ed7e" type="selectionEntry" targetId="1420-40f4-617b-41bc">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="a022-d69f-a9b4-08f9" includeChildSelections="true"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0bbc-25e7-bb33-aa39"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
