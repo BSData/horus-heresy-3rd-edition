@@ -38773,9 +38773,6 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="8813-5298-c368-ee16" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <comment>SH Or AL</comment>
                   <conditionGroups>
                     <conditionGroup type="and">
@@ -38790,6 +38787,12 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="8813-5298-c368-ee16" shared="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="db52-3de0-a5cf-d943" shared="true"/>
+                      </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -38857,7 +38860,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             </modifier>
           </modifiers>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
         </entryLink>
         <entryLink import="true" name="Alchem combi-flamer" hidden="true" id="05f3-93bd-b86c-0a20" type="selectionEntry" targetId="99e6-cab2-d3c6-f826" sortIndex="12">
