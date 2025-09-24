@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d995-cb33-be41-ecf8" name="                         VI - Space Wolves" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="15" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d995-cb33-be41-ecf8" name="                         VI - Space Wolves" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="16" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="db71-05b7-0cff-28d1" importRootEntries="true" targetId="5334-5605-242c-d75e"/>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="17f0-6633-7613-e326" importRootEntries="true" targetId="9b32-f350-6aa9-9c09"/>
@@ -1860,12 +1860,12 @@ Head-taker: If this Gambit is selected, the Opposing Player may not claim an Out
       <profiles>
         <profile name="Wrath of the Death Wolf" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="1e55-1082-b12a-97cb">
           <characteristics>
-            <characteristic name="R" typeId="cdb0-8654-6840-1037">Tempolate</characteristic>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
             <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
             <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
             <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
             <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
-            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Stun (1)l , Force (D)</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Stun (1) , Force (D)</characteristic>
             <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Psychic, Assault</characteristic>
           </characteristics>
         </profile>
@@ -3592,121 +3592,23 @@ Head-taker: If this Gambit is selected, the Opposing Player may not claim an Out
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Frost Blades" id="dd5d-da62-8038-38f1" hidden="false" defaultSelectionEntryId="198c-326a-8b72-2bb9">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Frost sword" hidden="false" id="198c-326a-8b72-2bb9" sortIndex="1">
-          <profiles>
-            <profile name="Frost sword" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="e558-9ecc-84fe-1af3">
-              <characteristics>
-                <characteristic name="IM" typeId="6eec-4093-f946-1014">1</characteristic>
-                <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
-                <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
-                <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-                <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
-                <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (4+), Reaping Blow (1), Shred (6+)</characteristic>
-                <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Breaching (X)" id="f48c-072b-4c4f-0b33" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
-              <modifiers>
-                <modifier type="set" value="Breaching (5+)" field="name">
-                  <comment>5</comment>
-                </modifier>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Reaping Blow (X)" id="4da3-1be4-dc4e-e161" hidden="false" type="rule" targetId="951f-eee4-02b7-b014">
-              <modifiers>
-                <modifier type="set" value="Reaping Blow (1)" field="name">
-                  <comment>1</comment>
-                </modifier>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Frost sword" hidden="false" id="c346-9d34-525a-833d" type="selectionEntry" targetId="82d4-949f-2713-d05b" sortIndex="1">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
-            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Frost axe" hidden="false" id="ae02-fffa-2a71-170e" sortIndex="2">
-          <profiles>
-            <profile name="Frost axe" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="a2a1-4738-2962-453d">
-              <characteristics>
-                <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
-                <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
-                <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
-                <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-                <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
-                <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+), Reaping Blow (1)</characteristic>
-                <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Breaching (X)" id="4fe5-42e7-51ef-2bb4" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
-              <modifiers>
-                <modifier type="set" value="Breaching (4+)" field="name">
-                  <comment>4</comment>
-                </modifier>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Reaping Blow (X)" id="3c2a-9ab6-cb4c-dd33" hidden="false" type="rule" targetId="951f-eee4-02b7-b014">
-              <modifiers>
-                <modifier type="set" value="Reaping Blow (1)" field="name">
-                  <comment>1</comment>
-                </modifier>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
+        </entryLink>
+        <entryLink import="true" name="Frost axe" hidden="false" id="9aa9-7461-cad0-14cf" type="selectionEntry" targetId="1deb-afd8-f63d-0fe5" sortIndex="2">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
-            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Frost claw" hidden="false" id="5d32-65ed-3ce0-01d5" sortIndex="3">
-          <profiles>
-            <profile name="Frost claw" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="8a82-9d2d-3e2c-1eb1">
-              <characteristics>
-                <characteristic name="IM" typeId="6eec-4093-f946-1014">1</characteristic>
-                <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
-                <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
-                <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-                <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
-                <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (4+), Reaping Blow (1)</characteristic>
-                <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Breaching (X)" id="1bf9-3098-27cb-ae9f" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
-              <modifiers>
-                <modifier type="set" value="Breaching (4+)" field="name">
-                  <comment>4</comment>
-                </modifier>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Reaping Blow (X)" id="95fe-1bfc-5c52-cff9" hidden="false" type="rule" targetId="951f-eee4-02b7-b014">
-              <modifiers>
-                <modifier type="set" value="Reaping Blow (1)" field="name">
-                  <comment>1</comment>
-                </modifier>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Shred (X)" id="f8ee-ef4b-cbf4-7774" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
-              <modifiers>
-                <modifier type="set" value="Shred (6+)" field="name"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
+        </entryLink>
+        <entryLink import="true" name="Frost claw" hidden="false" id="692b-13aa-d7c2-8101" type="selectionEntry" targetId="e14f-7600-8fdd-65ce" sortIndex="3">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
-            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
-        </selectionEntry>
-      </selectionEntries>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Power Weapon" id="2bda-39f9-7585-a46d" hidden="false" collapsible="true" flatten="true">
       <entryLinks>
