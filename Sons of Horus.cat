@@ -2691,6 +2691,185 @@ Each time an enemy Model declares a Challenge, the Controlling Player of a Model
         <infoLink name="Shield" id="be47-301c-5306-cf52" hidden="false" type="profile" targetId="1af7-07d5-7558-0b64"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry name="Inductii Squad" type="unit" id="e8b7-bff3-4c22-b342" page="18" publicationId="1cef-cfb8-32c9-a1f4">
+      <costs>
+        <cost typeId="9893-c379-920b-8982" name="Point(s)" value="10"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" name="Inductii" id="0d07-f5a5-4b27-ae2b" page="18" publicationId="1cef-cfb8-32c9-a1f4">
+          <profiles>
+            <profile id="e0e5-b491-411f-b4f4" name="Inductii" typeId="a76f-8e23-8c3e-166d">
+              <characteristics>
+                <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
+                <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
+                <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">4</characteristic>
+                <characteristic typeId="498f-dce1-59fd-d8d7" name="S">4</characteristic>
+                <characteristic typeId="3120-8275-e537-ecd2" name="T">4</characteristic>
+                <characteristic typeId="f5cc-79a3-d302-cc1d" name="W">1</characteristic>
+                <characteristic typeId="af9d-7db8-dc95-71c1" name="I">4</characteristic>
+                <characteristic typeId="024e-bdb1-7982-25a0" name="A">2</characteristic>
+                <characteristic typeId="02ad-ebe6-86e7-9fd6" name="LD">7</characteristic>
+                <characteristic typeId="9cd1-0e7c-2cd6-5f2f" name="CL">7</characteristic>
+                <characteristic typeId="f714-1726-37d3-44df" name="WP">6</characteristic>
+                <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">6</characteristic>
+                <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">3+</characteristic>
+                <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
+                <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost typeId="9893-c379-920b-8982" name="Point(s)" value="9"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="382b-c0fb-4c5c-9c8a"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="b373-0d37-4d26-b645"/>
+          </constraints>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="2694-77e8-47c3-891b" name="Frag grenades" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a488-d67f-476a-abf7"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7c0-0a6e-4a1e-bde8"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="37f2-c0fa-4652-bdd8" name="Krak grenades" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bce1-f279-4c00-90d1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90b3-40fb-4efa-9d1b"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Legion Equipment" hidden="false" id="123f-2f46-8fae-1c08" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf" sortIndex="6">
+              <modifiers>
+                <modifier type="set" value="Up to two Inductii in this Unit may each have one of" field="name"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="One Inductii in this Unit may have " id="6ad7-00b2-4d08-93c6" sortIndex="5">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="dfcd-0669-ad43-28aa" id="fcf0-0563-4900-9174" name="Vexilla">
+                  <costs>
+                    <cost typeId="9893-c379-920b-8982" name="Point(s)" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e76-f11c-46c4-bfc8"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c45-2e4f-4c6e-8b3f"/>
+                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="7200-468f-1d7a-1f55" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Pistol" id="aaff-679c-83db-7405" hidden="false" sortIndex="1" defaultSelectionEntryId="23a7-fe08-4e8e-8b2e">
+              <entryLinks>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="23a7-fe08-4e8e-8b2e" type="selectionEntry" targetId="2942-f783-d627-33c5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8c0-f0cc-4b56-a978"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Legion Pistols" hidden="false" id="c10d-574e-4441-bf81" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="569c-b405-4da8-99d8"/>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="a7fc-6ae6-3041-2c09" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="For every four Models in this Unit, one Inductii in this Unit may have its bolt pistol exchanged for " field="name"/>
+                    <modifier type="increment" value="1" field="a7fc-6ae6-3041-2c09">
+                      <repeats>
+                        <repeat value="4" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ac52-9174-4e87-5c3d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef8a-cc53-1d6d-59d7"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Melee Weapon" id="9f0f-f20b-7539-a431" hidden="false" sortIndex="2" defaultSelectionEntryId="3f26-3c8a-465d-9464">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b02-f113-4eac-12ca"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01e7-df82-9850-debf"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="3f26-3c8a-465d-9464" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0dec-175b-4bc4-a178"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Chainaxe" hidden="false" id="e972-b6ac-49f4-9e00" type="selectionEntry" targetId="31a4-f8de-de6d-1fd9" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b39-e78e-4027-9218"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="For every four Models in this Unit, one Inductii in this Unit may have its chainsword exchanged for" id="e271-4591-4a14-b9f3" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Heavy chainsword" hidden="false" id="deed-8ca4-4550-aa19" type="selectionEntry" targetId="e175-3b00-8885-b321" sortIndex="1">
+                      <costs>
+                        <cost typeId="9893-c379-920b-8982" name="Point(s)" value="5"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31e7-fb8e-454d-a8d8"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Charnabal sabre" hidden="false" id="411e-30a8-4ad7-85ba" type="selectionEntry" targetId="e85f-734a-c587-e88b" sortIndex="3">
+                      <costs>
+                        <cost typeId="9893-c379-920b-8982" name="Point(s)" value="5"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d651-3c0e-4c32-a9ab"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Power Weapon" hidden="false" id="3f7a-e716-ea8d-a2a7" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" sortIndex="2"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf06-2624-4290-954e"/>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="454c-b651-727b-222f" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="454c-b651-727b-222f">
+                      <repeats>
+                        <repeat value="4" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="e5c6-2fd8-4a71-8391" primary="false" name="Infantry Model Type"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Vanguard (X)" id="8904-3db4-7497-ba81" hidden="false" type="rule" targetId="530f-b733-993c-ec84">
+              <comment>2</comment>
+              <modifiers>
+                <modifier type="replace" value="2" field="name" arg="X"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <rules>
+            <rule name="Creed of Brutality" id="6f7c-5db8-17fc-65a5" hidden="false">
+              <description>&quot;If a Unit containing any Models with this Special Rule succeeds on a Leadership Check in the Start Phase, they gain the Impact (S) Special Rule until the end of the Battle Turn.&quot;
+
+
+
+
+In the Effects Sub-Phase of their Start Phase, the Controlling Player of a Unit containing any Models with this Special Rule can make a Leadership Check for that Unit, and if any Model in that Unit is within 6&quot; of a friendly Model with the Sons of Horus Trait and a Weapon Skill Characteristic of 5 or more, that friendly Model’s Leadership Characteristic may be used to resolve this Leadership Check. If that Check is successful, every Model in the Unit gains the Impact (S) Special Rule until the end of that Battle Turn. If the Check is unsuccessful, every Model in that Unit immediately gains the Stunned Tactical Status.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Inductii" id="026b-a944-bb41-b028" hidden="false" type="rule" targetId="9829-1d35-5b26-51ce"/>
+        <infoLink name="[Allegiance]" id="bd7f-0773-534a-9f7c" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="8d39-d917-445b-6eb5" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Special Rules" id="8da8-b3f8-8e38-6d83" targetId="106b-693b-99f2-00c3"/>
@@ -2857,6 +3036,11 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
       <categoryLinks>
         <categoryLink targetId="a38e-50ff-310f-f19e" id="3c35-c93d-33f9-17d0" primary="true" name="Retinue"/>
         <categoryLink targetId="3b0c-6e3a-f5cd-02cd" id="05dc-3906-6dff-0d3e" primary="false" name="Sons of Horus"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="7718-647a-3e24-1126" type="selectionEntry" targetId="e8b7-bff3-4c22-b342">
+      <categoryLinks>
+        <categoryLink targetId="88e6-d373-4152-0dd8" id="5d90-56f6-a5cf-04cf" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

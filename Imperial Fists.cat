@@ -1912,6 +1912,180 @@ The Controlling Player of a Model with this Special Rule does not suffer a penal
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a73-e0cb-ae4f-60e9"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry name="Inductii Squad" type="unit" id="ca87-d173-4967-add6" page="8" publicationId="1cef-cfb8-32c9-a1f4">
+      <costs>
+        <cost typeId="9893-c379-920b-8982" name="Point(s)" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" name="Inductii" id="3192-6742-4af0-a7c0" page="8" publicationId="1cef-cfb8-32c9-a1f4">
+          <profiles>
+            <profile id="b05c-9d30-47a6-8adc" name="Inductii" typeId="a76f-8e23-8c3e-166d">
+              <characteristics>
+                <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
+                <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
+                <characteristic typeId="0cd5-b269-e3bc-028b" name="BS">4</characteristic>
+                <characteristic typeId="498f-dce1-59fd-d8d7" name="S">4</characteristic>
+                <characteristic typeId="3120-8275-e537-ecd2" name="T">4</characteristic>
+                <characteristic typeId="f5cc-79a3-d302-cc1d" name="W">1</characteristic>
+                <characteristic typeId="af9d-7db8-dc95-71c1" name="I">4</characteristic>
+                <characteristic typeId="024e-bdb1-7982-25a0" name="A">1</characteristic>
+                <characteristic typeId="02ad-ebe6-86e7-9fd6" name="LD">7</characteristic>
+                <characteristic typeId="9cd1-0e7c-2cd6-5f2f" name="CL">7</characteristic>
+                <characteristic typeId="f714-1726-37d3-44df" name="WP">6</characteristic>
+                <characteristic typeId="29c5-925d-5b1d-1e77" name="IN">6</characteristic>
+                <characteristic typeId="03bd-4ecb-351d-143b" name="SAV">3+</characteristic>
+                <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
+                <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost typeId="9893-c379-920b-8982" name="Point(s)" value="9"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="a6e3-a751-4d84-9be6"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="2c97-2b8d-4816-a62b"/>
+          </constraints>
+          <entryLinks>
+            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="a6bb-7d39-4de4-a244" name="Bolt pistol" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="13c0-8e9a-491f-b200"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f53-697a-4725-a6d7"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="a135-b814-4dea-a992" name="Frag grenades" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="63c9-0fd2-4833-a757"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="539a-661f-4f58-94e0"/>
+              </constraints>
+            </entryLink>
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="000c-f0e1-48f4-8759" name="Krak grenades" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="59bf-86eb-42ee-b8e5"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f835-b81b-4018-a727"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Legion Equipment" hidden="false" id="50e2-b23c-32b4-a9b2" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf" sortIndex="6">
+              <modifiers>
+                <modifier type="set" value="Up to two Inductii in this Unit may each have one of" field="name"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Ranged Weapon" id="cecc-ba09-497b-a963" sortIndex="1" defaultSelectionEntryId="1340-231d-4509-81bc">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" id="1340-231d-4509-81bc" name="Bolter" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="828c-faad-4d1b-a07b"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3dae-df5b-4280-a2ef"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a6eb-f780-690d-4f3f"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="For every ten Models in this Unit, one Inductii in this Unit may have its bolter exchanged for one of the following:" id="fc73-940e-bf8d-654d" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Autocannon" hidden="false" id="0bc9-2b49-4beb-a504" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93">
+                      <costs>
+                        <cost typeId="9893-c379-920b-8982" name="Point(s)" value="15"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d932-59ee-46c5-955a"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy bolter" hidden="false" id="bcb8-591a-4fea-bc74" type="selectionEntry" targetId="bc40-b14a-978e-0232">
+                      <costs>
+                        <cost typeId="9893-c379-920b-8982" name="Point(s)" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e7b-7c1d-464e-9745"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fc1-2b82-6070-9960"/>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="f67f-92b6-6973-6b1f" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="f67f-92b6-6973-6b1f">
+                      <repeats>
+                        <repeat value="10" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="One Inductii in this Unit may have a vexilla selected for it for +10 Points." id="11e8-7128-460a-8f62" sortIndex="5">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="dfcd-0669-ad43-28aa" id="3492-c39e-46d8-b472" name="Vexilla">
+                  <costs>
+                    <cost typeId="9893-c379-920b-8982" name="Point(s)" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be43-c220-4d19-8295"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb94-cc9d-41c3-8d71"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Any Model in this Unit with a bolter may have one of the following selected for it:" id="4dfe-b725-45f5-9d83" hidden="true">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntry" targetId="3484-1bd3-cb74-7abe" id="2b04-dccb-4143-95ef" name="Bayonet">
+                  <costs>
+                    <cost typeId="9893-c379-920b-8982" name="Point(s)" value="1"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44dc-8c54-426c-b591"/>
+                  </constraints>
+                </entryLink>
+                <entryLink hidden="false" type="selectionEntry" targetId="e410-d998-bd3e-c0ea" id="9468-8848-4eb0-a315" name="Chain bayonet">
+                  <costs>
+                    <cost typeId="9893-c379-920b-8982" name="Point(s)" value="2"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26fc-7fbe-411c-ba5c"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8236-aa88-41ea-b113"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="d3f9-b9e6-3ea5-cc8e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="b65f-1c70-4d1a-b4d6" primary="false" name="Infantry Model Type"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="8e90-2f90-38ee-13c6" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="9356-f9d3-9551-e0ad" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Inductii" id="0a4c-4b59-5e3c-872c" hidden="false" type="rule" targetId="9829-1d35-5b26-51ce"/>
+        <infoLink name="Line (X)" id="c64f-71bf-1ef7-fd66" hidden="false" type="rule" targetId="1b5d-ceec-802a-c611">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="replace" value="1" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <rules>
+        <rule name="Supporting Fire" id="518b-d615-371c-30f4" hidden="false">
+          <description>In the Controlling Player&apos;s Shooting Phase, Shooting Attacks made by Models with this Special Rule which are part of a Unit that remained Stationary in the Controlling Player&apos;s previous Movement Phase gain the Pinning (0) Special Rule.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Fire Discipline" id="43fe-8703-9ddf-686c" hidden="true">
@@ -1987,6 +2161,11 @@ The Controlling Player of a Model with this Special Rule does not suffer a penal
     <entryLink import="true" name="Rite of War" hidden="false" id="0a75-1454-70e9-d90b" type="selectionEntry" targetId="acd3-6cd6-ffdc-0a18">
       <categoryLinks>
         <categoryLink targetId="abfa-86ab-1726-077a" id="b52a-b175-304e-366a" primary="true" name="Army Configuration"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="f042-5dac-5e2d-67df" type="selectionEntry" targetId="ca87-d173-4967-add6">
+      <categoryLinks>
+        <categoryLink targetId="88e6-d373-4152-0dd8" id="7c40-7133-2036-ff0d" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

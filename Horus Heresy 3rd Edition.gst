@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="53" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="54" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -578,6 +578,7 @@
       </rules>
     </categoryEntry>
     <categoryEntry name="Prime Rewards of Treachery" id="de4f-4c9e-11bc-1b2a" hidden="false"/>
+    <categoryEntry name="Apothecary" id="d5e7-88d9-19b4-b7fa" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
@@ -21760,6 +21761,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
     <publication name="Github" id="e0e7-6fcd-7ee7-448d" hidden="false" publisherUrl="https://github.com/BSData/horus-heresy-3rd-edition" shortName="Github"/>
     <publication name="Horus Heresy - Liber Mechanicum 3rd Edition" id="4dc3-3347-238d-99b5" hidden="false" shortName="LM 3.0" publicationDate="July 26, 2025"/>
     <publication name="Legacies of the Age of Darkness: The Imperialis Militia" id="a5ca-d2f8-fa5a-c120" hidden="false" shortName="Militia: Legacies" publicationDate="August 28, 2025" publisher="Warhammer Community" publisherUrl="https://www.warhammer-community.com/en-gb/downloads/warhammer-the-horus-heresy/"/>
+    <publication name="Legacies of the Age of Darkness: The Legiones Inductii" id="1cef-cfb8-32c9-a1f4" hidden="false" shortName="Inductii" publisher="Warhammer Community" publicationDate="September 25th, 2025" publisherUrl="https://www.warhammer-community.com/en-gb/downloads/warhammer-the-horus-heresy/"/>
   </publications>
   <costTypes>
     <costType name="Point(s)" id="9893-c379-920b-8982" defaultCostLimit="-1"/>

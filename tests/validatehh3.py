@@ -251,6 +251,9 @@ class GameTests(unittest.TestCase):
 
         for unit_id in unit_ids:
             unit: Node = self.system.get_node_by_id(unit_id)
+            # Inductii can never be prime
+            if unit.name == "Inductii Squad":
+                continue
             prime_selector_id = Heresy3e().get_prime_selector(unit.system_file.faction)
             with self.subTest(f"{unit} should have a link to 'Prime Unit'"):
                 entry_links = unit.get_child("entryLinks")
@@ -306,6 +309,9 @@ class GameTests(unittest.TestCase):
             # Skip Tech-Priest unit as it's a special case
             if unit.name == "Tech-Priest":
                 continue
+            # Inductii can never be prime
+            if unit.name == "Inductii Squad":
+                continue               
             for profile in unit.get_descendants_with(lambda x: x.type == "profile:Profile"):
                 # print(profile)
                 profile_type = profile.get_profile_dict()["Type"]

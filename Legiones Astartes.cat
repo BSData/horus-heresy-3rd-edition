@@ -2325,7 +2325,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 </selectionEntryGroup>
                 <selectionEntryGroup name="May exchange bolt pistol for" id="193c-e985-25fe-7c5e" hidden="false" sortIndex="1" flatten="true">
                   <entryLinks>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="ddae-79a7-d440-8316" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1" defaultAmount="">
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="ddae-79a7-d440-8316" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98cd-0dcc-56a0-bed0" includeChildSelections="false" automatic="true"/>
                         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e92a-4f41-edb0-248d" automatic="true"/>
@@ -14983,6 +14983,9 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="d5e7-88d9-19b4-b7fa" id="a8cd-cd06-870e-22c9" primary="false" name="Apothecary"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Techmarine" hidden="false" id="6cac-d5d2-dda7-ea8f" sortIndex="38">
       <selectionEntries>
@@ -36724,7 +36727,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <condition type="atLeast" value="1" field="selections" scope="unit" childId="05ea-aecd-f5bc-63ea" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
-            <modifier type="prepend" value="Pintle Mounted " field="name"/>
+            <modifier type="prepend" value="Pintle Mounted " field="name"/>
           </modifiers>
         </entryLink>
       </entryLinks>
@@ -39852,6 +39855,22 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
               </conditionGroups>
             </modifier>
             <modifier type="add" value="2de1-ddd6-ebb4-10df" field="category"/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Butcher Surgeon" hidden="true" id="dc34-d8f6-a366-2e25">
+          <rules>
+            <rule name="Exhortation of Butchery" id="21f3-2111-65c0-20c6" hidden="false">
+              <description> At the start of the Charge Sub-Phase of their Battle Turn, the Controlling Player of a Unit which contains any Models with this Special Rule may elect for that Unit to become Lost to the Nails </description>
+            </rule>
+          </rules>
+          <comment>World Eaters Apothacaries only</comment>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="a956-190d-3b47-6258" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d5e7-88d9-19b4-b7fa" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
