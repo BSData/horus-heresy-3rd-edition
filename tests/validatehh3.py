@@ -233,9 +233,6 @@ class GameTests(unittest.TestCase):
         for file in self.system.files:
             if file.name in CATS_WITH_NO_PRIMES:
                 continue
-            # Inductii can never be prime
-            if unit.name == "Inductii Squad":
-                continue
             entry_links_node = file.root_node.get_child(tag='entryLinks')
             if entry_links_node is None:
                 continue
@@ -254,6 +251,9 @@ class GameTests(unittest.TestCase):
 
         for unit_id in unit_ids:
             unit: Node = self.system.get_node_by_id(unit_id)
+            # Inductii can never be prime
+            if unit.name == "Inductii Squad":
+                continue
             prime_selector_id = Heresy3e().get_prime_selector(unit.system_file.faction)
             with self.subTest(f"{unit} should have a link to 'Prime Unit'"):
                 entry_links = unit.get_child("entryLinks")
