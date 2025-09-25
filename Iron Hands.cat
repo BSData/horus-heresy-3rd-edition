@@ -1890,7 +1890,7 @@ A Model with Armatus Necrotechnika gains the Auto-Repair (5+) Special Rule. Addi
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry name="Iron Hands Inductii Squad" type="unit" id="ee40-8340-4718-90ef" page="11" publicationId="1cef-cfb8-32c9-a1f4">
+    <selectionEntry name="Inductii Squad" type="unit" id="ee40-8340-4718-90ef" page="11" publicationId="1cef-cfb8-32c9-a1f4">
       <costs>
         <cost typeId="9893-c379-920b-8982" name="Point(s)" value="0"/>
       </costs>
@@ -1925,33 +1925,38 @@ A Model with Armatus Necrotechnika gains the Auto-Repair (5+) Special Rule. Addi
             <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="e0c9-4f52-4f25-95ff"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" id="db79-d33c-4b76-8255" name="Bolter">
+            <entryLink hidden="false" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" id="db79-d33c-4b76-8255" name="Bolter" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9fd8-cb12-40d2-b03a"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eaf1-8bf6-4c79-9f74"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="76fa-5d90-436a-b83a" name="Bolt pistol">
+            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="76fa-5d90-436a-b83a" name="Bolt pistol" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d2aa-d29a-4d2f-b430"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef62-484d-4b1f-b140"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="1373-be4d-4987-b861" name="Frag grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="1373-be4d-4987-b861" name="Frag grenades" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9d29-ac30-45dc-84bd"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="365e-b7d1-4ac4-be7d"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="aa07-7a31-470d-b117" name="Krak grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="aa07-7a31-470d-b117" name="Krak grenades" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4a6-c7bc-47b9-9e0f"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0ad-d307-441c-8a40"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Legion Equipment" hidden="false" id="da5b-982e-5171-1d35" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf" sortIndex="7">
+              <modifiers>
+                <modifier type="set" value="Up to two Inductii in this Unit may each have one of" field="name"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="One Inductii in this Unit may have phosphex bombs selected for it for +10 Points." id="01ba-ae1c-4668-8ccd">
+            <selectionEntryGroup name="One Inductii in this Unit may have phosphex bombs selected for it " id="01ba-ae1c-4668-8ccd" sortIndex="5">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="5ad2-c3b4-f5eb-5b10" id="84c2-0847-4555-a95d" name="Phosphex bombs">
                   <costs>
@@ -1964,9 +1969,10 @@ A Model with Armatus Necrotechnika gains the Auto-Repair (5+) Special Rule. Addi
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c095-045a-406d-939c"/>
+                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="2370-3e00-e3a0-692d" includeChildSelections="true"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="One Inductii in this Unit may have one vexilla selected for it for +10 Points." id="7705-77da-41be-9ac0">
+            <selectionEntryGroup name="One Inductii in this Unit may have one vexilla selected for it" id="7705-77da-41be-9ac0" sortIndex="6">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="dfcd-0669-ad43-28aa" id="bd75-59d8-4b29-bf20" name="Vexilla">
                   <costs>
@@ -1979,9 +1985,10 @@ A Model with Armatus Necrotechnika gains the Auto-Repair (5+) Special Rule. Addi
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48db-a4b4-480c-8a89"/>
+                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="c3f8-c2d1-118d-118e" includeChildSelections="true"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit with a bolter may have one of the following selected for it:" id="8b56-ff5c-4c11-bf52">
+            <selectionEntryGroup name="Any Model in this Unit with a bolter may have one of the following selected for it:" id="8b56-ff5c-4c11-bf52" sortIndex="8">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="3484-1bd3-cb74-7abe" id="bcee-118a-4b69-94e7" name="Bayonet">
                   <costs>
@@ -2010,10 +2017,28 @@ A Model with Armatus Necrotechnika gains the Auto-Repair (5+) Special Rule. Addi
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250925-0756
-Shared on model level not yet implemented for One Inductii in this Unit may have phosphex bombs selected for it for +10 Points.
-Shared on model level not yet implemented for One Inductii in this Unit may have one vexilla selected for it for +10 Points.
-Could not process option &apos;Up to two Inductii in this Unit may each have one item from the Legion Equipment list selected for them.&apos;.</comment>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="b811-465f-1351-ce6f" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="a233-4233-44c7-5141" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Inductii" id="662f-5dee-c90b-3632" hidden="false" type="rule" targetId="9829-1d35-5b26-51ce"/>
+        <infoLink name="Line (X)" id="ad44-8a99-6209-33b3" hidden="false" type="rule" targetId="1b5d-ceec-802a-c611">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="replace" value="1" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Implacable Advance" id="3b68-a171-b1c6-8417" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
+      </infoLinks>
+      <rules>
+        <rule name=" Forbidden Augmentations" id="a970-5323-770e-2687" hidden="false">
+          <description>&quot;Medic! Advanced Reactions may be declared for a Unit entirely composed of Models with this Special Rule, for which the Target Number of any resultant Recovery Tests is 5+.&quot;
+
+
+
+
+A Unit containing only Models with this Special Rule is considered to contain one or more Models with the Medic (X) Special Rule for the purposes of declaring the Medic! Advanced Reaction. If a Unit containing only Models with this Special Rule is the Target Unit of a Medic! Advanced Reaction, all Recovery Tests made as part of that Reaction have a Target Number of 5+.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
@@ -2083,6 +2108,11 @@ Could not process option &apos;Up to two Inductii in this Unit may each have one
     <entryLink import="true" name="Gorgon Terminator Squad" hidden="false" id="c171-eaf0-8759-cc3f" type="selectionEntry" targetId="6545-a621-619e-4757">
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="6822-efd5-b41f-35b4" primary="true" name="Heavy Assault"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="46f3-4e83-3db3-f1be" type="selectionEntry" targetId="ee40-8340-4718-90ef">
+      <categoryLinks>
+        <categoryLink targetId="88e6-d373-4152-0dd8" id="ff8b-e9dd-713f-95d3" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
