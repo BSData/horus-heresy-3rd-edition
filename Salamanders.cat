@@ -1619,14 +1619,14 @@ effects of the Limited (X) Special Rule when making Volley Attacks.</description
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15f1-fdb2-6fe2-a69f"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry name="Salamanders Inductii Squad" type="unit" id="1c7f-663a-4039-9d81" sortIndex="7" page="20" publicationId="1cef-cfb8-32c9-a1f4">
+    <selectionEntry name="Inductii Squad" type="unit" id="1c7f-663a-4039-9d81" sortIndex="7" page="20" publicationId="1cef-cfb8-32c9-a1f4">
       <costs>
         <cost typeId="9893-c379-920b-8982" name="Point(s)" value="10"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" name="Inductii" id="0654-0ff3-41ea-bacb" page="20" publicationId="1cef-cfb8-32c9-a1f4">
           <profiles>
-            <profile id="1324-beb7-4b72-b1f4" name="Inductii" typeId="a76f-8e23-8c3e-166d">
+            <profile id="1324-beb7-4b72-b1f4" name="Inductii" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
@@ -1654,32 +1654,27 @@ effects of the Limited (X) Special Rule when making Volley Attacks.</description
             <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="acb3-a611-4350-9e61"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="2075-f41d-4b53-830c" name="Frag grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="2075-f41d-4b53-830c" name="Frag grenades" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="89b9-6af9-4b15-9a2a"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78d5-1121-439c-bf59"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="f6ca-1074-4dbe-b00f" name="Krak grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="f6ca-1074-4dbe-b00f" name="Krak grenades" sortIndex="5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ef2-b4f4-427d-993c"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2902-4460-432d-9831"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Legion Equipment" hidden="false" id="29f5-0f15-313e-5ed6" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf" sortIndex="7">
+              <modifiers>
+                <modifier type="set" value="Up to two Inductii in this Unit may each have one of" field="name"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Any Model in this Unit may have its chainsword and bolt pistol exchanged for " id="83c7-4a16-4848-b7b4">
+            <selectionEntryGroup name="Any Model in this Unit may have its chainsword and bolt pistol exchanged for " id="83c7-4a16-4848-b7b4" sortIndex="3">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="b957-2ace-4b41-a4c6" name="Chainsword">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b67c-e2a6-4838-b007"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="7d9d-6f7b-40f4-bd96" name="Bolt pistol">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f12-8a27-43f3-ab11"/>
-                  </constraints>
-                </entryLink>
                 <entryLink hidden="false" type="selectionEntry" targetId="e175-3b00-8885-b321" id="abf5-c758-42ca-989e" name="Heavy chainsword">
                   <costs>
                     <cost typeId="9893-c379-920b-8982" name="Point(s)" value="5"/>
@@ -1690,54 +1685,10 @@ effects of the Limited (X) Special Rule when making Volley Attacks.</description
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bae3-1245-439e-b1ff"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5dd0-8f4d-42e7-be6e"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="For every five Models in this Unit, one Inductii in this Unit may have its chainsword exchanged for " id="b1b9-b4df-4101-8892">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" id="bbab-cbbb-4089-aa6a" name="Legion Sergeant Melee Weapons">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72fe-ea25-4228-a918"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6ce-d088-4e30-b0e2"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="For every ten Models in this Unit, one Inductii in this Unit may have its chainsword exchanged for one of the following:" id="8d87-414e-4a25-82b2">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="9a45-35cd-3806-2303" id="7fc0-bd51-4905-aa4e" name="Flamer">
-                  <costs>
-                    <cost typeId="9893-c379-920b-8982" name="Point(s)" value="5"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0ff-c0b1-4688-b035"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="b1e1-e164-5877-6734" id="fb08-769c-44d6-af2f" name="Meltagun">
-                  <costs>
-                    <cost typeId="9893-c379-920b-8982" name="Point(s)" value="15"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8874-3b3a-4a41-a035"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="0c29-e0e1-525b-4182" id="920a-ac2c-4c6b-870f" name="Disintegrator blaster">
-                  <costs>
-                    <cost typeId="9893-c379-920b-8982" name="Point(s)" value="10"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d31-7a17-4feb-ae09"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b763-30ee-408d-b777"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="One Inductii in this Unit may have one vexilla selected for it for +10 Points." id="d88d-5701-43a9-b0c6">
+            <selectionEntryGroup name="One Inductii in this Unit may have" id="d88d-5701-43a9-b0c6" sortIndex="6">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="dfcd-0669-ad43-28aa" id="9e5d-1e77-4902-b2aa" name="Vexilla">
                   <costs>
@@ -1750,66 +1701,169 @@ effects of the Limited (X) Special Rule when making Volley Attacks.</description
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e081-2275-4872-86f1"/>
+                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="e39a-883e-dc65-a32c" includeChildSelections="true"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="The Inductii Master in this Unit may have its chainsword and/or bolt pistol exchanged for " id="194f-a89c-4e34-873a">
-              <comment>warning: !BSC 20250925-0756
-Could not find wargear item each from the Legion Sergeant Melee Weapons list.
-	 Checked under item each from the Legion Sergeant Melee Weapons list.</comment>
+            <selectionEntryGroup name="Melee Weapon" id="a97e-f72c-eb16-9d5f" hidden="false" defaultSelectionEntryId="0326-8c79-48c6-bdde" sortIndex="2">
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f308-af89-4ee4-ac39"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4550-1e51-e7bc-0b61" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="72c6-71c2-ef6f-a0a5" automatic="true"/>
               </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="The Inductii Master in this Unit may have its bolt pistol exchanged for " id="aa45-b43a-4997-8647">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" id="81c8-7ddf-468b-b44e" name="Legion Pistols">
+                <entryLink import="true" name="Chainsword" hidden="false" id="5764-b4d1-a654-39da" type="selectionEntry" targetId="78f4-4967-2896-c3a5">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6a7-90b2-4072-bd54"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ac8-088b-fe19-7a6c" automatic="true"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="6ac8-088b-fe19-7a6c">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="e175-3b00-8885-b321" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <modifiers>
+                <modifier type="set" value="0" field="4550-1e51-e7bc-0b61">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="e175-3b00-8885-b321" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="72c6-71c2-ef6f-a0a5">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="e175-3b00-8885-b321" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="For every five Models in this Unit, one Inductii in this Unit may have its chainsword exchanged for " id="b1b9-b4df-4101-8892" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Legion Sergeant Melee Weapons (no chainsword)" hidden="false" id="ecf3-a7fa-46fd-60a4" type="selectionEntryGroup" targetId="c7ca-8933-a703-7301">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5be4-302c-92b8-7380" automatic="true"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="0" field="5be4-302c-92b8-7380">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="e175-3b00-8885-b321" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6ce-d088-4e30-b0e2" automatic="true"/>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="1f3e-a546-0b13-8a96" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="1f3e-a546-0b13-8a96">
+                      <repeats>
+                        <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="set" value="0" field="a6ce-d088-4e30-b0e2">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="e175-3b00-8885-b321" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="For every ten Models in this Unit, one Inductii in this Unit may have its chainsword exchanged for one of the following:" id="8d87-414e-4a25-82b2" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Flamer" hidden="false" id="7fc0-bd51-4905-aa4e" type="selectionEntry" targetId="9a45-35cd-3806-2303">
+                      <costs>
+                        <cost typeId="9893-c379-920b-8982" name="Point(s)" value="5"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0ff-c0b1-4688-b035"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Meltagun" hidden="false" id="fb08-769c-44d6-af2f" type="selectionEntry" targetId="b1e1-e164-5877-6734">
+                      <costs>
+                        <cost typeId="9893-c379-920b-8982" name="Point(s)" value="15"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8874-3b3a-4a41-a035"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Disintegrator blaster" hidden="false" id="920a-ac2c-4c6b-870f" type="selectionEntry" targetId="0c29-e0e1-525b-4182">
+                      <costs>
+                        <cost typeId="9893-c379-920b-8982" name="Point(s)" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d31-7a17-4feb-ae09"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b763-30ee-408d-b777"/>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="da82-f54e-542b-7dd3" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="da82-f54e-542b-7dd3">
+                      <repeats>
+                        <repeat value="10" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Bolt Pistol" id="fe18-ea02-d813-a889" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="e475-1d28-ba81-f5b9" type="selectionEntry" targetId="2942-f783-d627-33c5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c938-2e0b-c157-e5c8" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="c938-2e0b-c157-e5c8">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="e175-3b00-8885-b321" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e99-6987-4b90-b4a4"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6560-67a3-cc3f-6b5b" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="20d2-6ac8-7dfc-653b" automatic="true"/>
               </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="The Inductii Master in this Unit may have its bolt pistol and chainsword exchanged for " id="9949-97f7-4371-ba58">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="6754-24dd-5be0-26ff" id="6e71-885a-4599-8ae8" name="Pair of lightning claws">
-                  <costs>
-                    <cost typeId="9893-c379-920b-8982" name="Point(s)" value="10"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abab-e3aa-45c5-9926"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a2c-7dfd-47bb-97e4"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="The Inductii Master in this Unit may have melta bombs selected for it for +10 Points." id="4afc-2977-406f-80dd">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" id="f5a1-21be-48c5-9e91" name="Melta bombs">
-                  <costs>
-                    <cost typeId="9893-c379-920b-8982" name="Point(s)" value="10"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2e4-f89b-47ed-adfe"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc13-25e4-447f-a538"/>
-              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="6560-67a3-cc3f-6b5b">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="e175-3b00-8885-b321" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="20d2-6ac8-7dfc-653b">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="e175-3b00-8885-b321" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <comment>warning: !BSC 20250925-0756
-Could not find wargear in The Inductii Master in this Unit may have its chainsword and/or bolt pistol exchanged for </comment>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="1064-c2e6-4d0c-973e" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="9" field="e1ac-a501-4199-9aff">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="a700-9542-4cd1-92fe" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="19" field="acb3-a611-4350-9e61">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="a700-9542-4cd1-92fe" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
-        <selectionEntry type="model" name="Inductii Master" id="a700-9542-4cd1-92fe" page="20" publicationId="1cef-cfb8-32c9-a1f4">
+        <selectionEntry type="model" name="Inductii Master" id="a700-9542-4cd1-92fe" page="20" publicationId="1cef-cfb8-32c9-a1f4" sortIndex="1">
           <profiles>
             <profile id="7400-e2b8-44a3-92f6" name="Inductii Master" typeId="a76f-8e23-8c3e-166d">
               <characteristics>
@@ -1832,17 +1886,20 @@ Could not find wargear in The Inductii Master in this Unit may have its chainswo
             </profile>
           </profiles>
           <costs>
-            <cost typeId="9893-c379-920b-8982" name="Point(s)" value="0"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
-          <constraints/>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="c8ff-d2c3-4fe8-9661" name="Frag grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="c8ff-d2c3-4fe8-9661" name="Frag grenades" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d36-578e-4d10-b29c"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6521-223f-417e-8b90"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="d3dd-856d-4ae2-a7a7" name="Krak grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="d3dd-856d-4ae2-a7a7" name="Krak grenades" sortIndex="5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37f4-7688-48d2-b8b6"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1178-a239-4bad-a8a2"/>
@@ -1850,18 +1907,8 @@ Could not find wargear in The Inductii Master in this Unit may have its chainswo
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Any Model in this Unit may have its chainsword and bolt pistol exchanged for " id="5445-29e5-48e8-a8b4">
+            <selectionEntryGroup name="May have its chainsword and bolt pistol exchanged for " id="5445-29e5-48e8-a8b4" sortIndex="3">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="0326-8c79-48c6-bdde" name="Chainsword">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da30-b970-4ec1-a181"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="12b4-3f04-420e-810f" name="Bolt pistol">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="102a-31ce-4b9b-bf30"/>
-                  </constraints>
-                </entryLink>
                 <entryLink hidden="false" type="selectionEntry" targetId="e175-3b00-8885-b321" id="c022-f507-48c2-92f5" name="Heavy chainsword">
                   <costs>
                     <cost typeId="9893-c379-920b-8982" name="Point(s)" value="5"/>
@@ -1870,35 +1917,7 @@ Could not find wargear in The Inductii Master in this Unit may have its chainswo
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0046-2cf1-4f4e-96dd"/>
                   </constraints>
                 </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dba0-edac-4c92-8276"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8703-236c-4df1-9be7"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="The Inductii Master in this Unit may have its chainsword and/or bolt pistol exchanged for " id="7f69-914b-4040-bad4">
-              <comment>warning: !BSC 20250925-0756
-Could not find wargear item each from the Legion Sergeant Melee Weapons list.
-	 Checked under item each from the Legion Sergeant Melee Weapons list.</comment>
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7346-46d7-43aa-84ab"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="The Inductii Master in this Unit may have its bolt pistol exchanged for " id="7cef-0095-4b07-a016">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" id="54ab-85d3-4710-b4a7" name="Legion Pistols">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22df-94b3-4c4c-b26c"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e07-71ce-440c-b557"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="The Inductii Master in this Unit may have its bolt pistol and chainsword exchanged for " id="5b85-c444-4d8e-b2e1">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="6754-24dd-5be0-26ff" id="f4e8-601b-4780-9f3e" name="Pair of lightning claws">
+                <entryLink import="true" name="Pair of lightning claws" hidden="false" id="f4e8-601b-4780-9f3e" type="selectionEntry" targetId="6754-24dd-5be0-26ff">
                   <costs>
                     <cost typeId="9893-c379-920b-8982" name="Point(s)" value="10"/>
                   </costs>
@@ -1908,10 +1927,123 @@ Could not find wargear item each from the Legion Sergeant Melee Weapons list.
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59f9-1a53-4224-bf57"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8703-236c-4df1-9be7"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="The Inductii Master in this Unit may have melta bombs selected for it for +10 Points." id="11e8-81d6-4ab6-a93c">
+            <selectionEntryGroup name="May have its chainsword exchanged for " id="7f69-914b-4040-bad4" sortIndex="2" defaultSelectionEntryId="0326-8c79-48c6-bdde">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7346-46d7-43aa-84ab" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fdb0-710c-8888-5bc7" automatic="true"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="0326-8c79-48c6-bdde" type="selectionEntry" targetId="78f4-4967-2896-c3a5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da30-b970-4ec1-a181" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="da30-b970-4ec1-a181">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="e175-3b00-8885-b321" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Legion Sergeant Melee Weapons (no chainsword)" hidden="false" id="d668-eea1-06f6-6b2a" type="selectionEntryGroup" targetId="c7ca-8933-a703-7301"/>
+              </entryLinks>
+              <modifiers>
+                <modifier type="set" value="0" field="7346-46d7-43aa-84ab">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="e175-3b00-8885-b321" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="fdb0-710c-8888-5bc7">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="e175-3b00-8885-b321" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="May have its bolt pistol exchanged for " id="7cef-0095-4b07-a016" sortIndex="1" defaultSelectionEntryId="12b4-3f04-420e-810f">
+              <entryLinks>
+                <entryLink hidden="false" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" id="54ab-85d3-4710-b4a7" name="Legion Pistols">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22df-94b3-4c4c-b26c" negative="false" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="22df-94b3-4c4c-b26c">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="e175-3b00-8885-b321" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="12b4-3f04-420e-810f" type="selectionEntry" targetId="2942-f783-d627-33c5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="102a-31ce-4b9b-bf30" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="102a-31ce-4b9b-bf30">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="e175-3b00-8885-b321" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="1996-05cb-48d7-998f" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e07-71ce-440c-b557" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="489c-87ba-5566-20e1" automatic="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="4e07-71ce-440c-b557">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="e175-3b00-8885-b321" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="489c-87ba-5566-20e1">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="e175-3b00-8885-b321" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="model" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="May take" id="11e8-81d6-4ab6-a93c" sortIndex="6">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" id="ca4d-c4cd-49e7-841a" name="Melta bombs">
                   <costs>
@@ -1927,32 +2059,35 @@ Could not find wargear item each from the Legion Sergeant Melee Weapons list.
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <comment>warning: !BSC 20250925-0756
-Could not find wargear in The Inductii Master in this Unit may have its chainsword and/or bolt pistol exchanged for </comment>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="767a-9585-482e-bb16" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="316b-450f-a8a2-c63c"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250925-0756
-Chainsword is in two option lists for Inductii, you will need to combine them by hand.
-Exchange was not applied on For every five Models in this Unit, one Inductii in this Unit may have its chainsword exchanged for 
-Chainsword is in two option lists for Inductii, you will need to combine them by hand.
-Shared on model level not yet implemented for One Inductii in this Unit may have one vexilla selected for it for +10 Points.
-Could not process option &apos;Up to two Inductii in this Unit may each have one item from the Legion Equipment list selected for them.&apos;.
-Bolt pistol is in two option lists for Inductii, you will need to combine them by hand.
-Chainsword is in two option lists for Inductii, you will need to combine them by hand.
-Bolt pistol is in two option lists for Inductii Master, you will need to combine them by hand.
-Chainsword is in two option lists for Inductii Master, you will need to combine them by hand.
-Exchange was not applied on The Inductii Master in this Unit may have its chainsword and/or bolt pistol exchanged for 
-Bolt pistol is in two option lists for Inductii, you will need to combine them by hand.
-Bolt pistol is in two option lists for Inductii Master, you will need to combine them by hand.
-Exchange was not applied on The Inductii Master in this Unit may have its bolt pistol exchanged for 
-Bolt pistol is in two option lists for Inductii, you will need to combine them by hand.
-Chainsword is in two option lists for Inductii, you will need to combine them by hand.
-Bolt pistol is in two option lists for Inductii Master, you will need to combine them by hand.
-Chainsword is in two option lists for Inductii Master, you will need to combine them by hand.
-Exchange was not applied on The Inductii Master in this Unit may have its bolt pistol and chainsword exchanged for </comment>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="da78-eba7-fd5d-46a1" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="2185-fade-f753-605b" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Inductii" id="7505-cf20-00ca-a35a" hidden="false" type="rule" targetId="9829-1d35-5b26-51ce"/>
+        <infoLink name="Vanguard (X)" id="9abf-1576-10f0-65f9" hidden="false" type="rule" targetId="530f-b733-993c-ec84">
+          <comment>2</comment>
+          <modifiers>
+            <modifier type="replace" value="2" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <rules>
+        <rule name=" Wargear of Heroes" id="cf68-7286-8f20-52cc" hidden="false">
+          <description>&quot;Models with this Special Rule which inflict any unsaved wounds confer a bonus to Combat Resolution scores.&quot;
+
+
+
+
+When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, the Controlling Player of any Models with this Special Rule which have inflicted at least one unsaved wound in that Combat in the same Turn scores 1 additional Combat Resolution Point.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
@@ -2003,6 +2138,11 @@ Exchange was not applied on The Inductii Master in this Unit may have its bolt p
     <entryLink import="true" name="Rite of War" hidden="false" id="3cb3-5760-3bdc-8870" type="selectionEntry" targetId="ad93-f4bc-58d6-8d71">
       <categoryLinks>
         <categoryLink targetId="abfa-86ab-1726-077a" id="6140-353a-b740-98f2" primary="true" name="Army Configuration"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="6933-a196-b059-edab" type="selectionEntry" targetId="1c7f-663a-4039-9d81">
+      <categoryLinks>
+        <categoryLink targetId="88e6-d373-4152-0dd8" id="9993-1018-66d9-6bd2" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
