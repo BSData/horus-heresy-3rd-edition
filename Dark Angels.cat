@@ -3162,14 +3162,14 @@ At the end of the Declare Mission Reserves Step the Controlling Player of any Un
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c65-fddc-c4e3-803d"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry name="Dark Angels Inductii Squad" type="unit" id="d6b5-9428-48a9-952f" page="3" publicationId="1cef-cfb8-32c9-a1f4">
+    <selectionEntry name="Inductii Squad" type="unit" id="d6b5-9428-48a9-952f" page="3" publicationId="1cef-cfb8-32c9-a1f4">
       <costs>
         <cost typeId="9893-c379-920b-8982" name="Point(s)" value="0"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" name="Inductii" id="192e-33c3-4a63-8669" page="3" publicationId="1cef-cfb8-32c9-a1f4">
           <profiles>
-            <profile id="2bec-1057-42a2-9e88" name="Inductii" typeId="a76f-8e23-8c3e-166d">
+            <profile id="2bec-1057-42a2-9e88" name="Inductii" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
@@ -3187,6 +3187,24 @@ At the end of the Declare Mission Reserves Step the Controlling Player of any Un
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <costs>
@@ -3197,33 +3215,38 @@ At the end of the Declare Mission Reserves Step the Controlling Player of any Un
             <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="0d8b-01d0-4c5d-95bc"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" id="8a08-f954-41d9-bd55" name="Volkite charger">
+            <entryLink hidden="false" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" id="8a08-f954-41d9-bd55" name="Volkite charger" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fa40-81f7-4816-8be6"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="210a-a9c8-4c4a-9cfb"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="8c8b-9ffd-4585-b186" name="Bolt pistol">
+            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="8c8b-9ffd-4585-b186" name="Bolt pistol" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b1a-aab6-4a75-acb0"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe05-42c7-4287-a884"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="7fb5-d566-4ecc-ba0a" name="Frag grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="7fb5-d566-4ecc-ba0a" name="Frag grenades" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fcbb-c11d-4292-b622"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16cd-f4d1-4ceb-83af"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="2130-bea5-4f85-9c3a" name="Krak grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="2130-bea5-4f85-9c3a" name="Krak grenades" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fca0-2414-4bca-8f83"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b7c-c589-4189-88f5"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Legion Equipment" hidden="false" id="1607-ec24-6071-1519" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf">
+              <modifiers>
+                <modifier type="set" value="Up to two Inductii in this Unit may each have one of" field="name"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="One Inductii in this Unit may have a vexilla selected for it for +10 Points." id="34bd-c2d5-4070-b2da">
+            <selectionEntryGroup name="One Inductii in this Unit may have a vexilla selected for it for +10 Points." id="34bd-c2d5-4070-b2da" sortIndex="5">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="dfcd-0669-ad43-28aa" id="0744-2fc4-420c-b33e" name="Vexilla">
                   <costs>
@@ -3231,6 +3254,7 @@ At the end of the Declare Mission Reserves Step the Controlling Player of any Un
                   </costs>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1992-67c8-4bda-af39"/>
+                    <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="239a-b3d7-3782-330d" includeChildSelections="true"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -3244,9 +3268,25 @@ At the end of the Declare Mission Reserves Step the Controlling Player of any Un
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250925-0756
-Shared on model level not yet implemented for One Inductii in this Unit may have a vexilla selected for it for +10 Points.
-Could not process option &apos;Up to two Inductii in this Unit may each have one item from the Legion Equipment list selected for them.&apos;.</comment>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="9229-a084-a9c4-a680" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="36c8-ae11-67b8-7095" hidden="false" type="profile" targetId="641c-ca0a-7093-4525">
+          <modifiers>
+            <modifier type="set" value="Dark Angels" field="name">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Line (X)" id="33db-9174-45e0-11ac" hidden="false" type="rule" targetId="1b5d-ceec-802a-c611">
+          <modifiers>
+            <modifier type="replace" value="1" field="name" arg="X"/>
+          </modifiers>
+          <comment>1</comment>
+        </infoLink>
+        <infoLink name="Inductii" id="345c-ff98-08e3-743b" hidden="false" type="rule" targetId="9829-1d35-5b26-51ce"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -3321,6 +3361,11 @@ Could not process option &apos;Up to two Inductii in this Unit may each have one
     <entryLink import="true" name="Rite of War" hidden="false" id="542a-dde2-5ef4-aca4" type="selectionEntry" targetId="91dc-eddc-4090-1d02">
       <categoryLinks>
         <categoryLink targetId="abfa-86ab-1726-077a" id="6598-353c-b6f5-8b45" primary="true" name="Army Configuration"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="0eef-e7e7-b3da-778e" type="selectionEntry" targetId="d6b5-9428-48a9-952f">
+      <categoryLinks>
+        <categoryLink targetId="88e6-d373-4152-0dd8" id="a3e3-0975-dde5-192f" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
