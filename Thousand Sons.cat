@@ -2712,14 +2712,14 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
         <categoryLink targetId="195c-d66b-8b86-c5ad" id="fecc-2922-40f8-3388" primary="false" name="Corvidae"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry name="Thousand Sons Inductii Squad" type="unit" id="8dfd-8240-4e8d-8e0e" page="16" publicationId="1cef-cfb8-32c9-a1f4">
+    <selectionEntry name="Inductii Squad" type="unit" id="8dfd-8240-4e8d-8e0e" page="16" publicationId="1cef-cfb8-32c9-a1f4">
       <costs>
         <cost typeId="9893-c379-920b-8982" name="Point(s)" value="0"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" name="Inductii" id="ce3a-5a2a-42ae-ab34" page="16" publicationId="1cef-cfb8-32c9-a1f4">
           <profiles>
-            <profile id="caa4-12ac-4a19-b409" name="Inductii" typeId="a76f-8e23-8c3e-166d">
+            <profile id="caa4-12ac-4a19-b409" name="Inductii" typeId="a76f-8e23-8c3e-166d" typeName="Profile">
               <characteristics>
                 <characteristic typeId="a106-a779-d272-5e93" name="M">7</characteristic>
                 <characteristic typeId="253c-d694-4695-c89e" name="WS">4</characteristic>
@@ -2737,6 +2737,14 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
                 <characteristic typeId="a951-a772-7ce0-0b64" name="INV">-</characteristic>
                 <characteristic typeId="50fc-9241-d4a2-045b" name="Type">Infantry</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                  <comment>TS</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <costs>
@@ -2747,48 +2755,32 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
             <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="4bcb-8655-4ed1-b172"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="68e4-6a8a-4faa-b7b5" name="Bolt pistol">
+            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="68e4-6a8a-4faa-b7b5" name="Bolt pistol" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e0d-b8ff-47ff-9dbf"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7af-179e-4674-8190"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="6a36-d0e7-486c-ab32" name="Frag grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="6a36-d0e7-486c-ab32" name="Frag grenades" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="46ad-f7d6-4eb8-b595"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07eb-0293-4d03-8693"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="04ad-ae67-4cce-93c2" name="Krak grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="04ad-ae67-4cce-93c2" name="Krak grenades" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5628-c961-485b-960b"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e83-0528-4650-9321"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Legion Equipment" hidden="false" id="259d-32aa-a9be-26c4" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf" sortIndex="7">
+              <modifiers>
+                <modifier type="set" value="Up to two Inductii in this Unit may each have one of" field="name"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="For every four Models in this Unit, one Inductii in this Unit may have its bolter exchanged for " id="9939-7c8b-42e9-8988">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" id="a46e-dda0-4bb9-baf2" name="Bolter">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17e9-7117-4075-8ebb"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="a042-1a69-9052-c59a" id="84e6-3fee-4b31-a2ec" name="Volkite caliver">
-                  <costs>
-                    <cost typeId="9893-c379-920b-8982" name="Point(s)" value="10"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0aba-4637-4d97-b1c2"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26c4-3239-4559-b9f6"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29ab-212c-41a5-82f7"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="One Inductii in this Unit may have one vexilla selected for it for +10 Points." id="cdfe-c182-4607-ab42">
+            <selectionEntryGroup name="One Inductii in this Unit may have " id="cdfe-c182-4607-ab42" sortIndex="6">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="dfcd-0669-ad43-28aa" id="f042-8e3e-4303-a610" name="Vexilla">
                   <costs>
@@ -2801,9 +2793,10 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a711-90ca-4d8a-9b92"/>
+                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="ac5b-f380-8578-0816" includeChildSelections="true"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit with a bolter may have one of the following selected for it:" id="5bd0-6abf-4c79-bc80">
+            <selectionEntryGroup name="Any Model in this Unit with a bolter may have one of the following selected for it:" id="5bd0-6abf-4c79-bc80" sortIndex="5" hidden="true">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="3484-1bd3-cb74-7abe" id="67ac-356a-453d-a296" name="Bayonet">
                   <costs>
@@ -2825,6 +2818,51 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d272-41d8-42ed-ab39"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="d3f9-b9e6-3ea5-cc8e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Ranged Weapon" id="6fa3-babe-74c3-1452" hidden="false" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d0a7-55de-c153-4e2d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9952-395b-882d-5fdc"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Bolter" hidden="false" id="a46e-dda0-4bb9-baf2" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17e9-7117-4075-8ebb"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="For every four Models in this Unit, one Inductii in this Unit may have" id="9939-7c8b-42e9-8988" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Volkite caliver" hidden="false" id="84e6-3fee-4b31-a2ec" type="selectionEntry" targetId="a042-1a69-9052-c59a">
+                      <costs>
+                        <cost typeId="9893-c379-920b-8982" name="Point(s)" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0aba-4637-4d97-b1c2"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29ab-212c-41a5-82f7"/>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="fd59-9f13-dd15-08d1" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="fd59-9f13-dd15-08d1">
+                      <repeats>
+                        <repeat value="4" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -2832,9 +2870,45 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250925-0756
-Shared on model level not yet implemented for One Inductii in this Unit may have one vexilla selected for it for +10 Points.
-Could not process option &apos;Up to two Inductii in this Unit may each have one item from the Legion Equipment list selected for them.&apos;.</comment>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="84fe-5520-6046-79e6" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="4bcd-f3bd-ded0-838a" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Inductii" id="a879-b2fb-03fe-5133" hidden="false" type="rule" targetId="9829-1d35-5b26-51ce"/>
+        <infoLink name="Line (X)" id="890d-62b2-661a-a5ff" hidden="false" type="rule" targetId="1b5d-ceec-802a-c611">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="replace" value="1" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Psyker" id="3408-6c2b-5f60-493f" hidden="false" type="profile" targetId="0d5a-bf3a-7b46-785a"/>
+        <infoLink name="Cult Arcana" id="0e39-adb2-3594-ae53" hidden="false" type="rule" targetId="f622-94c0-3997-9ee5"/>
+      </infoLinks>
+      <rules>
+        <rule name="Unattuned Practitioners" id="880d-bbc4-b0b9-0109" hidden="false">
+          <description>All Models in a Unit with the Unattuned Prosperine Arcana gain the following benefits:
+ • The Ætheric Guidance Psychic Power
+ • The ‘Unattuned’ Trai</description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="Ætheric Guidance " typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="44f7-7a2d-1ee9-07c6">
+          <characteristics>
+            <characteristic name="Summary" typeId="981f-bb86-6a74-9b20">This Psychic Power improves the effectiveness of Ranged Attacks made by the Unit.</characteristic>
+            <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e"> The Active Player may choose to Manifest the Ætheric Guidance Psychic Power in the Shooting Phase, at the start of Step 4 of any Shooting Attack made by a Unit that includes at least one Model with the Unattuned Trait controlled by the Active Player.</characteristic>
+            <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86">The Focus of the Power must be a Model with the Unattuned Trait that is part of the Unit making the Shooting Attack. </characteristic>
+            <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770"> The Target Unit must be the Unit that the Focus is part of, and must only include Models with the Thousand Sons Trait.</characteristic>
+            <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4"> If successfully Manifested, the effects of this Psychic Power last until the end of the Shooting Attack being resolved. </characteristic>
+            <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0">1. Once the Focus and Target Unit have been decided, the Controlling Player of the Focus must make a Manifestation Check. 
+2. If the Manifestation Check is successful, then all ranged Weapons Models in the Target Unit have (excluding Weapons with the Blast (X) Special Rule) gain the Breaching (6+) Special Rule. 
+3. If the Manifestation Check fails then there is no further effect.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Unattuned" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="0254-5986-d357-da77">
+          <characteristics>
+            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
@@ -3022,6 +3096,11 @@ Could not process option &apos;Up to two Inductii in this Unit may each have one
     <entryLink import="true" name="Ammitara Occult Intercession Cabal" hidden="false" id="72ac-23f1-6eee-988e" type="selectionEntry" targetId="d661-5aa7-4e05-a6e5">
       <categoryLinks>
         <categoryLink targetId="2b65-a3f2-620a-dc58" id="acdd-fee4-d3f5-07ff" primary="true" name="Recon"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="f4f6-a913-a0f2-9666" type="selectionEntry" targetId="8dfd-8240-4e8d-8e0e">
+      <categoryLinks>
+        <categoryLink targetId="88e6-d373-4152-0dd8" id="a646-d1e1-abec-c7fb" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
