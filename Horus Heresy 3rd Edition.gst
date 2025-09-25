@@ -578,6 +578,7 @@
       </rules>
     </categoryEntry>
     <categoryEntry name="Prime Rewards of Treachery" id="de4f-4c9e-11bc-1b2a" hidden="false"/>
+    <categoryEntry name="Apothecary" id="d5e7-88d9-19b4-b7fa" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
