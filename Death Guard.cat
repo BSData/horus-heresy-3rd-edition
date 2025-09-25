@@ -1213,7 +1213,7 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
         <categoryLink targetId="dd1b-70ef-6015-1291" id="73a3-6917-74c3-ac72" primary="false" name="No default Power Weapon"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry name="Death Guard Inductii Squad" type="unit" id="8236-95aa-4580-926a" sortIndex="6" page="15" publicationId="1cef-cfb8-32c9-a1f4">
+    <selectionEntry name="Inductii Squad" type="unit" id="8236-95aa-4580-926a" sortIndex="6" page="15" publicationId="1cef-cfb8-32c9-a1f4">
       <costs>
         <cost typeId="9893-c379-920b-8982" name="Point(s)" value="0"/>
       </costs>
@@ -1248,63 +1248,32 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
             <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="bb36-2f82-4fd2-a450"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="7b7e-2380-49b3-9b5d" name="Bolt pistol">
+            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="7b7e-2380-49b3-9b5d" name="Bolt pistol" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="432b-096a-48a0-80c8"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac14-59a7-4830-a580"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="8734-6798-4b01-ba76" name="Frag grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="8734-6798-4b01-ba76" name="Frag grenades" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d76-cb50-4928-9928"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73a4-6f76-4d16-a679"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="7114-38fe-4111-8861" name="Krak grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="7114-38fe-4111-8861" name="Krak grenades" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a77-2b6c-474b-bdd5"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47fb-227b-49ab-90a9"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Legion Equipment" hidden="false" id="f975-e662-81b6-beb1" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf" sortIndex="7">
+              <modifiers>
+                <modifier type="set" value="Up to two Inductii in this Unit may each have one of" field="name"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="For every five Models in this Unit, one Inductii in this Unit may have its bolter exchanged for one of the following:" id="8799-2d5a-4a2f-9573">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" id="8dc8-7f7e-455f-b219" name="Bolter">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b37-c97f-4db9-9b34"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="9a45-35cd-3806-2303" id="5e01-3fda-4fdb-90f5" name="Flamer">
-                  <costs>
-                    <cost typeId="9893-c379-920b-8982" name="Point(s)" value="5"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10b5-6c3e-4218-a622"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="67f4-8760-673d-b9ef" id="c05c-aa00-4251-a1be" name="Alchem flamer">
-                  <costs>
-                    <cost typeId="9893-c379-920b-8982" name="Point(s)" value="5"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9cdd-5b2b-41d2-a0ae"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="05bf-af5e-be67-36a2" id="75e5-870a-4c5f-8ae4" name="Rotor cannon">
-                  <costs>
-                    <cost typeId="9893-c379-920b-8982" name="Point(s)" value="10"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03f8-bf0e-463f-9fae"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bdf-aa0c-4712-9056"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="One Inductii in this Unit may have one vexilla selected for it for +10 Points." id="a0a4-bb98-4625-9f50">
+            <selectionEntryGroup name="One Inductii in this Unit may have " id="a0a4-bb98-4625-9f50" sortIndex="6">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="dfcd-0669-ad43-28aa" id="66e6-3a97-41cf-ae99" name="Vexilla">
                   <costs>
@@ -1317,9 +1286,10 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f516-8088-481f-86bf"/>
+                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="e2a2-6435-ffca-7d1d" includeChildSelections="true"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit with a bolter may have one of the following selected for it:" id="4504-fb3a-4596-95d5">
+            <selectionEntryGroup name="Any Model in this Unit with a bolter may have one of the following selected for it:" id="4504-fb3a-4596-95d5" hidden="true" sortIndex="5">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="3484-1bd3-cb74-7abe" id="fdd3-59df-4f2b-9cfc" name="Bayonet">
                   <costs>
@@ -1341,6 +1311,67 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a246-8192-4212-82ae"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="d3f9-b9e6-3ea5-cc8e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Ranged Weapon" id="accb-153c-523a-0f92" hidden="false" sortIndex="1" defaultSelectionEntryId="8dc8-7f7e-455f-b219">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="For every five Models in this Unit, one Inductii in this Unit may have its bolter exchanged for one of the following:" id="8799-2d5a-4a2f-9573" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Flamer" hidden="false" id="5e01-3fda-4fdb-90f5" type="selectionEntry" targetId="9a45-35cd-3806-2303">
+                      <costs>
+                        <cost typeId="9893-c379-920b-8982" name="Point(s)" value="5"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10b5-6c3e-4218-a622"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Alchem flamer" hidden="false" id="c05c-aa00-4251-a1be" type="selectionEntry" targetId="67f4-8760-673d-b9ef">
+                      <costs>
+                        <cost typeId="9893-c379-920b-8982" name="Point(s)" value="5"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9cdd-5b2b-41d2-a0ae"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Rotor cannon" hidden="false" id="75e5-870a-4c5f-8ae4" type="selectionEntry" targetId="05bf-af5e-be67-36a2">
+                      <costs>
+                        <cost typeId="9893-c379-920b-8982" name="Point(s)" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03f8-bf0e-463f-9fae"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bdf-aa0c-4712-9056"/>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="01df-0450-0cd0-54f2" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="01df-0450-0cd0-54f2">
+                      <repeats>
+                        <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Bolter" hidden="false" id="8dc8-7f7e-455f-b219" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b37-c97f-4db9-9b34"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="039a-5378-479c-bd16" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd1b-044d-91e9-e9d7" automatic="true"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -1348,9 +1379,28 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250925-0756
-Shared on model level not yet implemented for One Inductii in this Unit may have one vexilla selected for it for +10 Points.
-Could not process option &apos;Up to two Inductii in this Unit may each have one item from the Legion Equipment list selected for them.&apos;.</comment>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="835a-be6b-3243-34a0" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="b11e-c2df-8cfb-b517" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Line (X)" id="c12c-948b-2250-548f" hidden="false" type="rule" targetId="1b5d-ceec-802a-c611">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="replace" value="1" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Fury of the Legion" id="0afc-9735-a1f3-09af" hidden="false" type="rule" targetId="b49c-d074-165e-ce1b"/>
+        <infoLink name="Inductii" id="4f46-2430-8b1a-f6b3" hidden="false" type="rule" targetId="9829-1d35-5b26-51ce"/>
+      </infoLinks>
+      <rules>
+        <rule name="Barbaran Resilience" id="8ad3-66c1-2cbb-cb4d" hidden="false">
+          <description>&quot;A Unit containing any Models with this Special Rule never gains the Routed Tactical Status due to suffering 25% or more Casualties in the Shooting Phase.&quot;
+
+
+
+
+A Unit containing any Models with this Special Rule is never required to take a Leadership Check in the Morale Sub-Phase to avoid gaining the Routed Tactical Status due to having a certain number of Models removed from that Unit as Casualties from a single Shooting Attack</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
@@ -1455,6 +1505,11 @@ Process
     <entryLink import="true" name="Mortus Poisoner Squad" hidden="false" id="6a01-e55f-212e-d019" type="selectionEntry" targetId="a977-8fbb-462e-9872" sortIndex="5">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="ba29-cabf-be8c-d8bf" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="6427-ced4-f774-4bd2" type="selectionEntry" targetId="8236-95aa-4580-926a">
+      <categoryLinks>
+        <categoryLink targetId="88e6-d373-4152-0dd8" id="0bc6-06ad-26be-4127" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

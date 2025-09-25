@@ -1858,23 +1858,28 @@ When Locked in Combat with any Units which contain at least one Model which has 
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="4f22-4546-4fe6-bee8" automatic="false"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="7704-0ffa-43c9-b45a" name="Bolt pistol">
+            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="7704-0ffa-43c9-b45a" name="Bolt pistol" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5bd4-4df6-405a-9262"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c3d5-5c6f-4383-9b34"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="4b5d-b6bb-4735-b9ed" name="Frag grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="4b5d-b6bb-4735-b9ed" name="Frag grenades" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc3f-73ee-47fb-8872"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d807-05f3-4140-a171"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="2fba-a682-495e-ad62" name="Krak grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="2fba-a682-495e-ad62" name="Krak grenades" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4d6-5478-4565-8cb4"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aaa9-e474-4fae-8beb"/>
               </constraints>
+            </entryLink>
+            <entryLink import="true" name="Legion Equipment" hidden="false" id="7060-ab5c-cbfc-85ca" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf" sortIndex="7">
+              <modifiers>
+                <modifier type="set" value="Up to two Inductii in this Unit may each have one of" field="name"/>
+              </modifiers>
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
@@ -1897,7 +1902,7 @@ When Locked in Combat with any Units which contain at least one Model which has 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="997e-cf8f-4571-831e"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="One Inductii in this Unit may have one vexilla selected for it" id="7bbc-9580-49dc-bb1c">
+            <selectionEntryGroup name="One Inductii in this Unit may have one vexilla selected for it" id="7bbc-9580-49dc-bb1c" sortIndex="6">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="dfcd-0669-ad43-28aa" id="f1f4-1f03-44bc-932c" name="Vexilla">
                   <costs>
@@ -1913,7 +1918,7 @@ When Locked in Combat with any Units which contain at least one Model which has 
                 <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="fb4a-b74b-548e-95d1" includeChildSelections="true"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit with a bolter may have one of the following selected for it:" id="f449-5433-4689-bb44" hidden="true">
+            <selectionEntryGroup name="Any Model in this Unit with a bolter may have one of the following selected for it:" id="f449-5433-4689-bb44" hidden="true" sortIndex="5">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="3484-1bd3-cb74-7abe" id="abff-3534-48f1-be6d" name="Bayonet">
                   <costs>
