@@ -1829,7 +1829,7 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry name="Night Lords Inductii Squad" type="unit" id="a38d-19ab-470a-8e53" page="9" publicationId="1cef-cfb8-32c9-a1f4">
+    <selectionEntry name="Inductii Squad" type="unit" id="a38d-19ab-470a-8e53" page="9" publicationId="1cef-cfb8-32c9-a1f4">
       <costs>
         <cost typeId="9893-c379-920b-8982" name="Point(s)" value="10"/>
       </costs>
@@ -1863,25 +1863,27 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="2c70-4632-4d92-8baa"/>
             <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="bdda-f5d5-472e-98c8"/>
           </constraints>
-          <comment>warning: !BSC 20250925-0756
-Could not find wargear Killer’s blade
-	 Checked under Killer’s blade</comment>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="ff41-ede5-4587-b138" name="Frag grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="ff41-ede5-4587-b138" name="Frag grenades" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="130e-0a32-4022-9996"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65a5-0e2d-4617-9343"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="6802-f141-44c9-aa20" name="Krak grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="6802-f141-44c9-aa20" name="Krak grenades" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b74-5be2-4de0-b8c4"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0474-ac96-425d-bb97"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Legion Equipment" hidden="false" id="5cb5-e8d7-7aea-280b" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf" sortIndex="6">
+              <modifiers>
+                <modifier type="set" value="Up to two Inductii in this Unit may each have one of" field="name"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="For every four Models in this Unit, one Inductii in this Unit may have its bolt pistol exchanged for " id="af4e-2fe2-4fc4-a8a4">
+            <selectionEntryGroup name="Pistol" id="af4e-2fe2-4fc4-a8a4" sortIndex="1">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="7829-2210-431c-af17" name="Bolt pistol">
                   <constraints>
@@ -1891,7 +1893,16 @@ Could not find wargear Killer’s blade
                 <entryLink hidden="false" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" id="92f6-34d1-463e-8875" name="Legion Pistols">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c404-e099-4e5c-bc73"/>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="64c9-c7f4-92d9-899d" includeChildSelections="true"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="For every four Models in this Unit, one Inductii in this Unit may have its bolt pistol exchanged for " field="name"/>
+                    <modifier type="increment" value="1" field="64c9-c7f4-92d9-899d">
+                      <repeats>
+                        <repeat value="4" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -1899,7 +1910,7 @@ Could not find wargear Killer’s blade
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff98-08dd-4d5b-a5d1"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="One Inductii in this Unit may have one vexilla selected for it for +10 Points." id="d21e-e6fd-40e8-9b7f">
+            <selectionEntryGroup name="One Inductii in this Unit may have one vexilla selected for it for +10 Points." id="d21e-e6fd-40e8-9b7f" sortIndex="5">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="dfcd-0669-ad43-28aa" id="6134-1c41-4818-a22d" name="Vexilla">
                   <costs>
@@ -1912,17 +1923,72 @@ Could not find wargear Killer’s blade
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3aa-bfe9-42a6-b5e6"/>
+                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="24b1-dccb-9fc4-5c52" includeChildSelections="true"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="c4f2-0604-4cf3-a95c" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Killer&apos;s blade" hidden="false" id="3b1d-af80-78e9-aaff" sortIndex="2">
+              <profiles>
+                <profile name="Killer&apos;s blade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="8bc1-726c-ab49-fdc1">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">S</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">-</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+), Precision (6+)</characteristic>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Breaching (X)" id="b245-8d73-bd1b-7bea" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+                  <comment>6+</comment>
+                  <modifiers>
+                    <modifier type="replace" value="6+" field="name" arg="X"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Precision (X)" id="e178-a213-94c4-c81b" hidden="false" type="rule" targetId="4fbd-e0bc-8f72-6e3f">
+                  <comment>6+</comment>
+                  <modifiers>
+                    <modifier type="replace" value="6+" field="name" arg="X"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c450-c328-9e7e-a7ab"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="985f-7b26-923c-6181"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250925-0756
-Shared on model level not yet implemented for One Inductii in this Unit may have one vexilla selected for it for +10 Points.
-Could not process option &apos;Up to two Inductii in this Unit may each have one item from the Legion Equipment list selected for them.&apos;.</comment>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="3c1b-b373-a80f-289e" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="48dc-58ad-f02f-2242" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Vanguard (X)" id="f3ce-080a-5c2e-1b42" hidden="false" type="rule" targetId="530f-b733-993c-ec84">
+          <comment>2</comment>
+          <modifiers>
+            <modifier type="replace" value="2" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Inductii" id="4db2-b979-f7a5-cd34" hidden="false" type="rule" targetId="9829-1d35-5b26-51ce"/>
+      </infoLinks>
+      <rules>
+        <rule name="Unscrupulous Murderers" id="1422-57bc-8e89-6bc1" hidden="false">
+          <description>&quot;This Special Rule allows a unique aftermath option to be selected in which every Inductii has a chance to inflict a Precision Hit.&quot;
+
+
+A Unit which contains any Models with this Special Rule may have the Art of Murder aftermath option selected for it in Step 4 of the Resolution Sub-Phase of the Assault Phase for any Combat in which that Unit has won or drawn the Combat.
+
+
+&quot;The Art of Murder&quot; - The Controlling Player rolls a single Dice for every Model in this Unit which has the Unscrupulous Murderers Special Rule. For every unmodified result of &apos;6&apos;, the Controlling Player may allocate a single wound to an enemy Model of their choosing from the selected Combat which has had the Hold, Disengage or Fall Back aftermath option selected for its Unit. These wounds have an Ap of - and a Damage of 1, and are resolved immediately.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
@@ -1979,6 +2045,11 @@ Could not process option &apos;Up to two Inductii in this Unit may each have one
     <entryLink import="true" name="Atramentar Flay-clade" hidden="false" id="3cf5-0b78-6f41-4a8f" type="selectionEntry" targetId="ff9f-4970-7f72-e517">
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="16d1-2c05-da91-2ed4" primary="true" name="Heavy Assault"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="fc77-f59b-d79f-2ead" type="selectionEntry" targetId="a38d-19ab-470a-8e53">
+      <categoryLinks>
+        <categoryLink targetId="88e6-d373-4152-0dd8" id="de3c-a9d0-046e-89c2" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
