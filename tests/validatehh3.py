@@ -233,6 +233,9 @@ class GameTests(unittest.TestCase):
         for file in self.system.files:
             if file.name in CATS_WITH_NO_PRIMES:
                 continue
+            # Inductii can never be prime
+            if unit.name == "Inductii Squad":
+                continue
             entry_links_node = file.root_node.get_child(tag='entryLinks')
             if entry_links_node is None:
                 continue
@@ -306,6 +309,9 @@ class GameTests(unittest.TestCase):
             # Skip Tech-Priest unit as it's a special case
             if unit.name == "Tech-Priest":
                 continue
+            # Inductii can never be prime
+            if unit.name == "Inductii Squad":
+                continue               
             for profile in unit.get_descendants_with(lambda x: x.type == "profile:Profile"):
                 # print(profile)
                 profile_type = profile.get_profile_dict()["Type"]
