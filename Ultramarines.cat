@@ -1823,7 +1823,7 @@ When Locked in Combat with any Units which contain at least one Model which has 
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Ultramarines Inductii Squad" type="unit" id="455f-d06a-45b1-a332" page="14" publicationId="1cef-cfb8-32c9-a1f4">
+    <selectionEntry name="Inductii Squad" type="unit" id="455f-d06a-45b1-a332" page="14" publicationId="1cef-cfb8-32c9-a1f4">
       <costs>
         <cost typeId="9893-c379-920b-8982" name="Point(s)" value="90"/>
       </costs>
@@ -1854,8 +1854,8 @@ When Locked in Combat with any Units which contain at least one Model which has 
             <cost typeId="9893-c379-920b-8982" name="Point(s)" value="0"/>
           </costs>
           <constraints>
-            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="dadd-8b64-4e1e-8642"/>
-            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="4f22-4546-4fe6-bee8"/>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="dadd-8b64-4e1e-8642" automatic="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="4f22-4546-4fe6-bee8" automatic="false"/>
           </constraints>
           <entryLinks>
             <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="7704-0ffa-43c9-b45a" name="Bolt pistol">
@@ -1878,7 +1878,7 @@ When Locked in Combat with any Units which contain at least one Model which has 
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Up to two Inductii in this Unit may each have their bolter exchanged for " id="498d-fa05-47eb-bd61">
+            <selectionEntryGroup name="Up to two Inductii in this Unit may each have their bolter exchanged for " id="498d-fa05-47eb-bd61" sortIndex="1">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" id="8889-2e1c-46b8-961b" name="Bolter">
                   <constraints>
@@ -1887,7 +1887,8 @@ When Locked in Combat with any Units which contain at least one Model which has 
                 </entryLink>
                 <entryLink hidden="false" type="selectionEntryGroup" targetId="8e2d-acd9-be67-36f2" id="b1ae-9934-403f-bc26" name="Legion Special Weapons">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="321e-d480-486f-b50b"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="321e-d480-486f-b50b"/>
+                    <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="e17c-8ae8-2fe8-2fca" includeChildSelections="true"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -1896,7 +1897,7 @@ When Locked in Combat with any Units which contain at least one Model which has 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="997e-cf8f-4571-831e"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="One Inductii in this Unit may have one vexilla selected for it for +10 Points." id="7bbc-9580-49dc-bb1c">
+            <selectionEntryGroup name="One Inductii in this Unit may have one vexilla selected for it" id="7bbc-9580-49dc-bb1c">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="dfcd-0669-ad43-28aa" id="f1f4-1f03-44bc-932c" name="Vexilla">
                   <costs>
@@ -1909,9 +1910,10 @@ When Locked in Combat with any Units which contain at least one Model which has 
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="146e-5640-434b-b56f"/>
+                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="fb4a-b74b-548e-95d1" includeChildSelections="true"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit with a bolter may have one of the following selected for it:" id="f449-5433-4689-bb44">
+            <selectionEntryGroup name="Any Model in this Unit with a bolter may have one of the following selected for it:" id="f449-5433-4689-bb44" hidden="true">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="3484-1bd3-cb74-7abe" id="abff-3534-48f1-be6d" name="Bayonet">
                   <costs>
@@ -1933,11 +1935,30 @@ When Locked in Combat with any Units which contain at least one Model which has 
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c303-0b02-403e-ab9e"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="d3f9-b9e6-3ea5-cc8e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="f59e-bdbe-4c7c-bbc1" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="9" field="dadd-8b64-4e1e-8642">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="0a85-f359-41bc-b251" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="9" field="4f22-4546-4fe6-bee8">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="0a85-f359-41bc-b251" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="model" name="Evocatus Intendant" id="0a85-f359-41bc-b251" page="14" publicationId="1cef-cfb8-32c9-a1f4">
           <profiles>
@@ -1962,9 +1983,12 @@ When Locked in Combat with any Units which contain at least one Model which has 
             </profile>
           </profiles>
           <costs>
-            <cost typeId="9893-c379-920b-8982" name="Point(s)" value="0"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
-          <constraints/>
           <entryLinks>
             <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="8907-fcd0-4df6-adf8" name="Frag grenades">
               <constraints>
@@ -1980,7 +2004,7 @@ When Locked in Combat with any Units which contain at least one Model which has 
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Any Model in this Unit with a bolter may have one of the following selected for it:" id="dd30-2468-47c4-b483">
+            <selectionEntryGroup name="Any Model in this Unit with a bolter may have one of the following selected for it:" id="dd30-2468-47c4-b483" hidden="true">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="3484-1bd3-cb74-7abe" id="9a72-370e-4a33-b737" name="Bayonet">
                   <costs>
@@ -2002,53 +2026,34 @@ When Locked in Combat with any Units which contain at least one Model which has 
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="147e-8534-4201-adb5"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="d3f9-b9e6-3ea5-cc8e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="The Evocatus Intendant in this Unit may have its bolter and/or bolt pistol exchanged for " id="4604-3be0-4fd2-a68b">
+            <selectionEntryGroup name="May have its bolter exchanged for " id="4604-3be0-4fd2-a68b" sortIndex="1" defaultSelectionEntryId="a619-8bbd-4246-bffc">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="bc97-1f4d-444d-a57b" name="Bolt pistol">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4172-ffa8-45c3-a8ea"/>
-                  </constraints>
-                </entryLink>
                 <entryLink hidden="false" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" id="a619-8bbd-4246-bffc" name="Bolter">
                   <constraints>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="96b4-585d-4300-82ae"/>
                   </constraints>
                 </entryLink>
-              </entryLinks>
-              <comment>warning: !BSC 20250925-0756
-Could not find wargear item each from the Legion Sergeant Melee Weapons list.
-	 Checked under item each from the Legion Sergeant Melee Weapons list.</comment>
-              <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="76fe-083e-4925-93e1"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1a31-9d54-4d17-9fb0"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="The Evocatus Intendant in this Unit may have its bolt pistol exchanged for " id="e1ff-677d-474b-bf6a">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" id="73c6-c962-4af8-b88b" name="Legion Pistols">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75c0-d2ed-4358-931e"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acfd-e9dc-4fb6-97b8"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="The Evocatus Intendant in this Unit may have its bolter exchanged for " id="b859-f0be-494c-a9da">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" id="5d85-e555-4352-ac11" name="Legion Combi-weapons">
+                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="9fae-c401-cfb7-4df4" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963"/>
+                <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="5d85-e555-4352-ac11" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbbf-ca63-40dc-9201"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="478f-6871-45e9-83b5"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="76fe-083e-4925-93e1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a31-9d54-4d17-9fb0"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="The Evocatus Intendant in this Unit may have melta bombs selected for it for +10 Points." id="e1d4-a7b1-47c7-80ba">
+            <selectionEntryGroup name="May have melta bombs selected for it" id="e1d4-a7b1-47c7-80ba">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" id="8099-93ca-4c86-8ef6" name="Melta bombs">
                   <costs>
@@ -2063,22 +2068,56 @@ Could not find wargear item each from the Legion Sergeant Melee Weapons list.
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fce1-028f-4996-9c13"/>
               </constraints>
             </selectionEntryGroup>
+            <selectionEntryGroup name="May have its bolt pistol exchanged for " id="70c7-d0eb-818c-0064" hidden="false" sortIndex="2" defaultSelectionEntryId="5b84-2eae-a2c8-c9e4">
+              <entryLinks>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="5b84-2eae-a2c8-c9e4" type="selectionEntry" targetId="2942-f783-d627-33c5">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="868c-b077-018d-6b6b"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="09f8-7885-c882-1c9c" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963"/>
+                <entryLink import="true" name="Legion Pistols" hidden="false" id="73c6-c962-4af8-b88b" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75c0-d2ed-4358-931e"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ecb7-624b-1df2-c381"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0104-8157-745f-2a3b"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
-          <comment>warning: !BSC 20250925-0756
-Could not find wargear in The Evocatus Intendant in this Unit may have its bolter and/or bolt pistol exchanged for </comment>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="a4e1-f0c8-4dc5-ae1a" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="1874-2c36-413e-bdf9" primary="false" name="Sergeant Model Sub-Type"/>
           </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="9352-fad2-3213-6a40" includeChildSelections="true"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250925-0756
-Shared on model level not yet implemented for One Inductii in this Unit may have one vexilla selected for it for +10 Points.
-Could not process option &apos;Up to two Inductii in this Unit may each have one item from the Legion Equipment list selected for them.&apos;.
-Bolt pistol is in two option lists for Evocatus Intendant, you will need to combine them by hand.
-Exchange was not applied on The Evocatus Intendant in this Unit may have its bolt pistol exchanged for 
-Bolter is in two option lists for Evocatus Intendant, you will need to combine them by hand.
-Exchange was not applied on The Evocatus Intendant in this Unit may have its bolter exchanged for </comment>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="c1b4-40ed-098b-c220" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="1d95-48d7-e77a-8e79" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Inductii" id="6540-5d4a-74da-0616" hidden="false" type="rule" targetId="9829-1d35-5b26-51ce"/>
+        <infoLink name="Line (X)" id="c07e-069d-cc6a-aeeb" hidden="false" type="rule" targetId="1b5d-ceec-802a-c611">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="replace" value="1" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <rules>
+        <rule name="Certainty and Resolve" id="23fe-a928-85fd-db1b" hidden="false">
+          <description>&quot;Models with this Special Rule are never removed as Casualties when they Fall Back into a Battlefield Edge, and are more likely to have the Routed Tactical Status removed from them in the End Phase.&quot;
+
+
+
+
+When any Models in a Unit entirely composed of Models with this Special Rule enter contact with a Battlefield Edge within the Controlling Player’s Deployment Zone as part of a Fall Back Move, that Unit automatically loses the Routed Tactical Status and gains the Suppressed Tactical Status. Additionally, when making a Leadership Check in the Statuses Sub-Phase of the End Phase to remove the Routed Tactical Status from a Unit entirely composed of Models with this Special Rule, the Controlling Player may roll an additional Dice, discarding the Dice which, once rolled, has the highest result.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
@@ -2137,6 +2176,11 @@ Exchange was not applied on The Evocatus Intendant in this Unit may have its bol
     <entryLink import="true" name="Honoured Telemechrus" hidden="false" id="f0be-253d-5105-5b0e" type="selectionEntry" targetId="1631-0dce-4bfb-9782">
       <categoryLinks>
         <categoryLink targetId="2499-7239-685f-8465" id="7ded-d3ca-a1ad-c494" primary="true" name="War-engine"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="62c4-dbbe-1738-38c9" type="selectionEntry" targetId="455f-d06a-45b1-a332">
+      <categoryLinks>
+        <categoryLink targetId="88e6-d373-4152-0dd8" id="e68b-afe2-675e-aa36" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
