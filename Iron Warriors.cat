@@ -2053,7 +2053,7 @@ Cover Saves may not be taken against unsaved wounds caused by a Shooting Attack 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4210-d715-5430-5f47"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry name="Iron Warriors Inductii Squad" type="unit" id="bdb6-1c8f-4c24-a156" sortIndex="10" page="5" publicationId="1cef-cfb8-32c9-a1f4">
+    <selectionEntry name="Inductii Squad" type="unit" id="bdb6-1c8f-4c24-a156" sortIndex="10" page="5" publicationId="1cef-cfb8-32c9-a1f4">
       <costs>
         <cost typeId="9893-c379-920b-8982" name="Point(s)" value="0"/>
       </costs>
@@ -2088,34 +2088,39 @@ Cover Saves may not be taken against unsaved wounds caused by a Shooting Attack 
             <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="ae2e-0740-4b19-933f"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="581a-d188-4918-80ae" name="Bolt pistol">
+            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="581a-d188-4918-80ae" name="Bolt pistol" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="add0-b544-4d02-8d41"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a8d-1a1f-4323-9894"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="b07c-4b49-4e80-9ee2" name="Frag grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="b07c-4b49-4e80-9ee2" name="Frag grenades" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8097-63f4-4a54-ab6c"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47e6-4136-4d34-bae7"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="872f-cdc9-4c5a-86dd" name="Krak grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="872f-cdc9-4c5a-86dd" name="Krak grenades" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79c7-acc9-454f-aca2"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c0a-6e68-4f77-912f"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Legion Equipment" hidden="false" id="afcd-3a4b-a223-1725" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf" sortIndex="5">
+              <modifiers>
+                <modifier type="set" value="Up to two Inductii in this Unit may each have one of" field="name"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Any Model in this Unit may have its bolter exchanged for " id="1ca6-de26-417d-bc75">
+            <selectionEntryGroup name="Any Model in this Unit may have its bolter exchanged for " id="1ca6-de26-417d-bc75" sortIndex="1" defaultSelectionEntryId="74d3-fd21-4cd5-86d4">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" id="74d3-fd21-4cd5-86d4" name="Bolter">
+                <entryLink hidden="false" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" id="74d3-fd21-4cd5-86d4" name="Bolter" sortIndex="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7b5-a9b6-4554-9490"/>
                   </constraints>
                 </entryLink>
-                <entryLink hidden="false" type="selectionEntry" targetId="6068-d203-27e6-318a" id="9e71-4b93-4406-9fa6" name="Astartes shotgun">
+                <entryLink hidden="false" type="selectionEntry" targetId="6068-d203-27e6-318a" id="9e71-4b93-4406-9fa6" name="Astartes shotgun" sortIndex="2">
                   <costs>
                     <cost typeId="9893-c379-920b-8982" name="Point(s)" value="2"/>
                   </costs>
@@ -2129,7 +2134,7 @@ Cover Saves may not be taken against unsaved wounds caused by a Shooting Attack 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8fa8-ecbe-4729-94c8"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="One Inductii in this Unit may have one vexilla selected for it for +10 Points." id="aa96-5eff-4308-9212">
+            <selectionEntryGroup name="One Inductii in this Unit may have" id="aa96-5eff-4308-9212" sortIndex="6">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="dfcd-0669-ad43-28aa" id="9b03-931b-4057-84f1" name="Vexilla">
                   <costs>
@@ -2137,6 +2142,7 @@ Cover Saves may not be taken against unsaved wounds caused by a Shooting Attack 
                   </costs>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d3a-b5c4-42df-9da4"/>
+                    <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="a752-b285-6379-0e22" includeChildSelections="true"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -2144,7 +2150,7 @@ Cover Saves may not be taken against unsaved wounds caused by a Shooting Attack 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02b5-e2a1-4e73-ac69"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit with a bolter may have one of the following selected for it:" id="26f5-30b0-46e9-a2e6">
+            <selectionEntryGroup name="Any Model in this Unit with a bolter may have one of the following selected for it:" id="26f5-30b0-46e9-a2e6" hidden="true" sortIndex="7">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="3484-1bd3-cb74-7abe" id="a0c7-19ff-4769-a48f" name="Bayonet">
                   <costs>
@@ -2166,6 +2172,13 @@ Cover Saves may not be taken against unsaved wounds caused by a Shooting Attack 
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="759e-54e8-40f5-a120"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="d3f9-b9e6-3ea5-cc8e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -2173,9 +2186,24 @@ Cover Saves may not be taken against unsaved wounds caused by a Shooting Attack 
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250925-0756
-Shared on model level not yet implemented for One Inductii in this Unit may have one vexilla selected for it for +10 Points.
-Could not process option &apos;Up to two Inductii in this Unit may each have one item from the Legion Equipment list selected for them.&apos;.</comment>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="b871-e30f-8868-4934" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="d0b0-c324-c9ce-1bf8" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Line (X)" id="1af5-6a80-fadf-7390" hidden="false" type="rule" targetId="1b5d-ceec-802a-c611">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="replace" value="1" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Expendable (X)" id="20d2-a8ae-11c9-b546" hidden="false" type="rule" targetId="c4d4-e053-9564-540b">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="replace" value="(1)" field="name" arg="(X)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Implacable Advance" id="55e0-a002-3cc1-4f02" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
+        <infoLink name="Inductii" id="2eff-e7f8-e31c-687d" hidden="false" type="rule" targetId="9829-1d35-5b26-51ce"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -2243,22 +2271,22 @@ Process.
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="130b-4914-8536-c593" primary="true" name="High Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Nârik Dreygur" hidden="false" id="f539-bd38-6f47-45b5" type="selectionEntry" targetId="42ce-6dde-4967-b87a">
+    <entryLink import="true" name="Nârik Dreygur" hidden="false" id="f539-bd38-6f47-45b5" type="selectionEntry" targetId="42ce-6dde-4967-b87a" sortIndex="6">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="39d0-c97a-cf4c-0692" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Dominator Cohort" hidden="false" id="9f2e-07aa-8ab8-4066" type="selectionEntry" targetId="d1fa-8392-4117-990d" sortIndex="6">
+    <entryLink import="true" name="Dominator Cohort" hidden="false" id="9f2e-07aa-8ab8-4066" type="selectionEntry" targetId="d1fa-8392-4117-990d" sortIndex="7">
       <categoryLinks>
         <categoryLink targetId="a38e-50ff-310f-f19e" id="f091-9f17-958a-d53e" primary="true" name="Retinue"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Iron Havocs" hidden="false" id="1eb3-3595-8c82-7990" type="selectionEntry" targetId="ed0b-1070-4e20-b597" sortIndex="7">
+    <entryLink import="true" name="Iron Havocs" hidden="false" id="1eb3-3595-8c82-7990" type="selectionEntry" targetId="ed0b-1070-4e20-b597" sortIndex="8">
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="c72e-8d00-936a-c924" primary="true" name="Support"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="The Tormentor" hidden="false" id="1615-1300-244f-bedf" type="selectionEntry" targetId="6781-8672-4e6e-a47a">
+    <entryLink import="true" name="The Tormentor" hidden="false" id="1615-1300-244f-bedf" type="selectionEntry" targetId="6781-8672-4e6e-a47a" sortIndex="9">
       <categoryLinks>
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="5802-9064-28e5-8919" primary="true" name="Lord of War"/>
       </categoryLinks>
@@ -2266,6 +2294,11 @@ Process.
     <entryLink import="true" name="Rite of War" hidden="false" id="4fc3-9235-e3a7-3be8" type="selectionEntry" targetId="9fcb-2b1d-7c9b-806c">
       <categoryLinks>
         <categoryLink targetId="abfa-86ab-1726-077a" id="c7dc-6449-af9f-fff8" primary="true" name="Army Configuration"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="6849-f47a-78f5-639b" type="selectionEntry" targetId="bdb6-1c8f-4c24-a156" sortIndex="10">
+      <categoryLinks>
+        <categoryLink targetId="88e6-d373-4152-0dd8" id="8853-2c87-5a0d-8e05" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
