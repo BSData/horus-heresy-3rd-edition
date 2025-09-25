@@ -1751,7 +1751,7 @@ If the Missing being played has a Deploy Armies Step, at the end of this step, t
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry name="Alpha Legion Inductii Squad" type="unit" id="ff2e-e3bf-43d7-b046" sortIndex="9" page="22" publicationId="1cef-cfb8-32c9-a1f4">
+    <selectionEntry name="Inductii Squad" type="unit" id="ff2e-e3bf-43d7-b046" sortIndex="9" page="22" publicationId="1cef-cfb8-32c9-a1f4">
       <costs>
         <cost typeId="9893-c379-920b-8982" name="Point(s)" value="0"/>
       </costs>
@@ -1786,45 +1786,32 @@ If the Missing being played has a Deploy Armies Step, at the end of this step, t
             <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="dff8-7f3b-4392-a5bb"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="50cc-96cc-411b-b969" name="Bolt pistol">
+            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="50cc-96cc-411b-b969" name="Bolt pistol" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5d2-14de-47b6-87ec"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d59-bf5b-49d6-9b50"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="f432-3d7e-449a-84fe" name="Frag grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="f432-3d7e-449a-84fe" name="Frag grenades" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5dde-ffc6-45e1-9a79"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a239-ac95-43a7-8de4"/>
               </constraints>
             </entryLink>
-            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="d60a-b6f0-4f26-881e" name="Krak grenades">
+            <entryLink hidden="false" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" id="d60a-b6f0-4f26-881e" name="Krak grenades" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7cdd-1232-4c49-b3db"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2995-ebac-452f-998d"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Legion Equipment" hidden="false" id="5a01-2db0-6159-6e93" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf" sortIndex="7">
+              <modifiers>
+                <modifier type="set" value="Up to two Inductii in this Unit may each have one of" field="name"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="For every five Models in this Unit, one Inductii in this Unit may have its bolter exchanged for " id="3970-99a9-4945-9520">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" id="d781-bf00-43a5-a41b" name="Bolter">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce12-c117-45a1-880a"/>
-                  </constraints>
-                </entryLink>
-                <entryLink hidden="false" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" id="1d93-6ad5-431c-b634" name="Legion Combi-weapons">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f398-5f10-4f05-a75f"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da25-64ac-4367-8fb0"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b359-2148-47a8-965d"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="One Inductii in this Unit may have one vexilla selected for it for +10 Points." id="4e55-b2da-4cda-9f1f">
+            <selectionEntryGroup name="One Inductii in this Unit may have " id="4e55-b2da-4cda-9f1f" sortIndex="6">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="dfcd-0669-ad43-28aa" id="5256-6473-4c31-9271" name="Vexilla">
                   <costs>
@@ -1837,9 +1824,10 @@ If the Missing being played has a Deploy Armies Step, at the end of this step, t
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea38-f15f-4f4b-94a3"/>
+                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="f9ce-a7b8-1853-ac01" includeChildSelections="true"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Any Model in this Unit with a bolter may have one of the following selected for it:" id="a96e-59d6-44db-bb64">
+            <selectionEntryGroup name="Any Model in this Unit with a bolter may have one of the following selected for it:" id="a96e-59d6-44db-bb64" sortIndex="5" hidden="true">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="3484-1bd3-cb74-7abe" id="8ed9-36a9-4ee5-9d9a" name="Bayonet">
                   <costs>
@@ -1861,6 +1849,47 @@ If the Missing being played has a Deploy Armies Step, at the end of this step, t
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="174a-7a66-4783-b568"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="d3f9-b9e6-3ea5-cc8e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Ranged Weapon" id="13a5-df33-adb9-c5b8" hidden="false" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edaa-f78c-7536-1f56"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="For every five Models in this Unit, one Inductii in this Unit may have its bolter exchanged for " id="3970-99a9-4945-9520" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="1d93-6ad5-431c-b634" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" flatten="true">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f398-5f10-4f05-a75f"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b359-2148-47a8-965d"/>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="cfb1-dd95-6e1f-7149" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="cfb1-dd95-6e1f-7149">
+                      <repeats>
+                        <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Bolter" hidden="false" id="d781-bf00-43a5-a41b" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce12-c117-45a1-880a"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -1868,9 +1897,27 @@ If the Missing being played has a Deploy Armies Step, at the end of this step, t
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
-      <comment>warning: !BSC 20250925-0756
-Shared on model level not yet implemented for One Inductii in this Unit may have one vexilla selected for it for +10 Points.
-Could not process option &apos;Up to two Inductii in this Unit may each have one item from the Legion Equipment list selected for them.&apos;.</comment>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="69fb-9b1f-1d4b-e72f" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="4a6f-08b5-54ab-106d" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Inductii" id="edce-bdaf-aeaf-5f09" hidden="false" type="rule" targetId="9829-1d35-5b26-51ce"/>
+        <infoLink name="Line (X)" id="1197-3997-19d1-b939" hidden="false" type="rule" targetId="1b5d-ceec-802a-c611">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="replace" value="1" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <rules>
+        <rule name="Treacherous Lure" id="16e2-acaf-67aa-5d45" hidden="false">
+          <description>&quot;A Unit entirely composed of Models with this Special Rule cannot be targeted by Shooting Attacks during the first Battle Turn.&quot;
+
+
+
+
+A Unit composed entirely of Models with this Special Rule may not be selected as the Target Unit of a Shooting Attack during the first Battle Turn. This Special Rule has no effect on Volley Attacks or Shooting Attacks made as part of a Reaction.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
@@ -2474,6 +2521,164 @@ A Model with this Special Rule is always considered to be 2&quot; further away t
       <categoryLinks>
         <categoryLink targetId="fe7f-1287-4162-a65d" id="8c9f-40d3-236a-5db9" primary="true" name="Rewards of Treachery"/>
         <categoryLink targetId="a114-fe5b-0a4f-632e" id="b63c-17ba-0822-ffe0" primary="false" name="Alpha Legion"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="d4a2-eb12-bf4e-8cc8" type="selectionEntry" targetId="ff2e-e3bf-43d7-b046" sortIndex="9">
+      <categoryLinks>
+        <categoryLink targetId="88e6-d373-4152-0dd8" id="1fa2-4be4-bc4e-68cf" primary="true" name="Troops"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="fc02-9d5c-b052-f837" type="selectionEntry" targetId="d6b5-9428-48a9-952f" sortIndex="108">
+      <modifiers>
+        <modifier type="prepend" value="Dark Angels" field="name"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="fe7f-1287-4162-a65d" id="c977-7b36-ae02-c9ee" primary="true" name="Rewards of Treachery"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="8d2f-1df7-68e3-88cc" primary="false" name="Alpha Legion"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="7371-b8a2-ab17-24e1" type="selectionEntry" targetId="54b6-dc9c-4cd4-884b" sortIndex="306">
+      <modifiers>
+        <modifier type="prepend" value="Emperor&apos;s Children" field="name"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="fe7f-1287-4162-a65d" id="0443-c70d-9ffe-86b8" primary="true" name="Rewards of Treachery"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="c671-597f-a74d-a5e2" primary="false" name="Alpha Legion"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="a370-590a-d0bc-4037" type="selectionEntry" targetId="bdb6-1c8f-4c24-a156" sortIndex="405">
+      <modifiers>
+        <modifier type="prepend" value="Iron Warriors" field="name"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="fe7f-1287-4162-a65d" id="2c8b-8ce7-8e69-a8af" primary="true" name="Rewards of Treachery"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="3f17-0053-8267-bbd9" primary="false" name="Alpha Legion"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="7968-e67b-72b7-2fe9" type="selectionEntry" targetId="5729-fd79-4bf5-a53b" sortIndex="506">
+      <modifiers>
+        <modifier type="prepend" value="White Scars" field="name"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="fe7f-1287-4162-a65d" id="da78-947a-95c5-505e" primary="true" name="Rewards of Treachery"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="b0e3-6dfd-2402-19ea" primary="false" name="Alpha Legion"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="9c0d-8e30-40d3-8099" type="selectionEntry" targetId="3ade-f63f-41e2-9a99" sortIndex="606">
+      <modifiers>
+        <modifier type="prepend" value="Space Wolves" field="name"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="fe7f-1287-4162-a65d" id="ec63-11a4-8de5-c6ae" primary="true" name="Rewards of Treachery"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="fbc0-4615-9f6e-512d" primary="false" name="Alpha Legion"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="5dbe-80dd-317b-695a" type="selectionEntry" targetId="ca87-d173-4967-add6" sortIndex="704">
+      <modifiers>
+        <modifier type="prepend" value="Imperial Fists" field="name"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="fe7f-1287-4162-a65d" id="453f-1827-1477-87e5" primary="true" name="Rewards of Treachery"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="f406-4952-82c8-461d" primary="false" name="Alpha Legion"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="9ef7-6417-e133-a457" type="selectionEntry" targetId="a38d-19ab-470a-8e53" sortIndex="805">
+      <modifiers>
+        <modifier type="prepend" value="Night Lords" field="name"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="fe7f-1287-4162-a65d" id="4ee2-1431-83dd-d3a1" primary="true" name="Rewards of Treachery"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="0ce4-7794-f6ed-1848" primary="false" name="Alpha Legion"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="f18b-b4c3-816d-1d4d" type="selectionEntry" targetId="d534-5849-4506-b269" sortIndex="908">
+      <modifiers>
+        <modifier type="prepend" value="Blood Angels" field="name"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="fe7f-1287-4162-a65d" id="c8f8-650b-765b-bd08" primary="true" name="Rewards of Treachery"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="6867-0485-d4a1-978d" primary="false" name="Alpha Legion"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="12cd-6c5c-db53-30f9" type="selectionEntry" targetId="ee40-8340-4718-90ef" sortIndex="1004">
+      <modifiers>
+        <modifier type="prepend" value="Iron Hands" field="name"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="fe7f-1287-4162-a65d" id="16d4-fe8b-3375-2c04" primary="true" name="Rewards of Treachery"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="1cde-4975-df6e-9fef" primary="false" name="Alpha Legion"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="baca-92d9-df7b-90c0" type="selectionEntry" targetId="b725-0c21-4adf-a683" sortIndex="1205">
+      <modifiers>
+        <modifier type="prepend" value="World Eaters" field="name"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="fe7f-1287-4162-a65d" id="6c44-5e96-9fef-25a6" primary="true" name="Rewards of Treachery"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="61a0-f5fa-33c7-1311" primary="false" name="Alpha Legion"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="6d3e-e343-7794-f6a5" type="selectionEntry" targetId="455f-d06a-45b1-a332" sortIndex="1306">
+      <modifiers>
+        <modifier type="prepend" value="Ultramarines" field="name"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="fe7f-1287-4162-a65d" id="7ad7-4b3f-e114-8bbc" primary="true" name="Rewards of Treachery"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="0786-490d-8cdc-f781" primary="false" name="Alpha Legion"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="4a99-eacd-d248-d948" type="selectionEntry" targetId="8236-95aa-4580-926a" sortIndex="1404">
+      <modifiers>
+        <modifier type="prepend" value="Death Guard" field="name"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="fe7f-1287-4162-a65d" id="9a73-ff9e-847c-8dd5" primary="true" name="Rewards of Treachery"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="9800-2d9f-e103-527d" primary="false" name="Alpha Legion"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="d916-ceb3-eeaa-d447" type="selectionEntry" targetId="8dfd-8240-4e8d-8e0e" sortIndex="1507">
+      <modifiers>
+        <modifier type="prepend" value="Thousand Sons" field="name"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="fe7f-1287-4162-a65d" id="bb79-909d-7e60-aa87" primary="true" name="Rewards of Treachery"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="2b98-20a8-6fd2-ca24" primary="false" name="Alpha Legion"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="ed28-8e47-d346-5d60" type="selectionEntry" targetId="e8b7-bff3-4c22-b342" sortIndex="1605">
+      <modifiers>
+        <modifier type="prepend" value="Sons of Horus" field="name"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="fe7f-1287-4162-a65d" id="a020-b4e5-7969-c740" primary="true" name="Rewards of Treachery"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="d798-e286-5b26-60ac" primary="false" name="Alpha Legion"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="12cf-ba0a-9e0f-aae4" type="selectionEntry" targetId="4755-69ce-4a81-894c" sortIndex="1706">
+      <modifiers>
+        <modifier type="prepend" value="Word Bearers" field="name"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="fe7f-1287-4162-a65d" id="4a48-a5b0-fe9c-5c57" primary="true" name="Rewards of Treachery"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="7a3b-76ef-b609-7fcd" primary="false" name="Alpha Legion"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="dfac-38f8-e37a-294a" type="selectionEntry" targetId="1c7f-663a-4039-9d81" sortIndex="1805">
+      <modifiers>
+        <modifier type="prepend" value="Salamanders" field="name"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="fe7f-1287-4162-a65d" id="88dd-96e5-8238-2561" primary="true" name="Rewards of Treachery"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="787d-5ccf-eb74-768a" primary="false" name="Alpha Legion"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="0b76-a000-b2d9-1748" type="selectionEntry" targetId="a997-c8f0-4906-bf63" sortIndex="1904">
+      <modifiers>
+        <modifier type="prepend" value="Raven Guard" field="name"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="fe7f-1287-4162-a65d" id="2d9c-24e8-2142-1998" primary="true" name="Rewards of Treachery"/>
+        <categoryLink targetId="a114-fe5b-0a4f-632e" id="fb83-49e6-b975-6801" primary="false" name="Alpha Legion"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
