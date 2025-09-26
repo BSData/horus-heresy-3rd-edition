@@ -2088,12 +2088,6 @@ Cover Saves may not be taken against unsaved wounds caused by a Shooting Attack 
             <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="ae2e-0740-4b19-933f"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="581a-d188-4918-80ae" name="Bolt pistol" sortIndex="2">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="add0-b544-4d02-8d41"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a8d-1a1f-4323-9894"/>
-              </constraints>
-            </entryLink>
             <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="b07c-4b49-4e80-9ee2" name="Frag grenades" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8097-63f4-4a54-ab6c"/>
@@ -2126,6 +2120,14 @@ Cover Saves may not be taken against unsaved wounds caused by a Shooting Attack 
                   </costs>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4d8-a02b-4077-8be8"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Shrapnel bolter" hidden="false" id="36d3-64f6-b249-594f" type="selectionEntry" targetId="9532-a693-d2ac-f198" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="3"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed6a-e524-d423-f4b2"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -2179,6 +2181,27 @@ Cover Saves may not be taken against unsaved wounds caused by a Shooting Attack 
                   </conditions>
                 </modifier>
               </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Pistol" id="2cb1-7cda-d2c5-cecf" hidden="false" sortIndex="2" defaultSelectionEntryId="581a-d188-4918-80ae">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aed1-2cc6-82e9-8e2d"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38d6-de3a-37f5-03f0"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="581a-d188-4918-80ae" type="selectionEntry" targetId="2942-f783-d627-33c5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a8d-1a1f-4323-9894"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Shrapnel pistol" hidden="false" id="840a-9f43-9003-6484" type="selectionEntry" targetId="d735-44bc-116a-be41">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="001c-14e6-2bd9-bad9"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
