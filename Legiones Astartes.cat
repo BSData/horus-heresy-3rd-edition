@@ -2310,9 +2310,9 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="May exchange bolt pistol for" id="193c-e985-25fe-7c5e" hidden="false" defaultSelectionEntryId="21fa-c62e-49e2-2ef8" sortIndex="1" flatten="true">
+                <selectionEntryGroup name="May exchange bolt pistol for" id="193c-e985-25fe-7c5e" hidden="false" sortIndex="1" flatten="true">
                   <entryLinks>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="ddae-79a7-d440-8316" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="2">
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="ddae-79a7-d440-8316" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98cd-0dcc-56a0-bed0" includeChildSelections="false" automatic="true"/>
                         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e92a-4f41-edb0-248d" automatic="true"/>
@@ -2387,7 +2387,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9449-b540-2658-980e" automatic="true"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Combat shield" hidden="true" id="c34b-3cda-c1c6-a97e" type="selectionEntry" targetId="5606-f0ad-360b-fe5b" sortIndex="1">
+                    <entryLink import="true" name="Combat shield" hidden="true" id="c34b-3cda-c1c6-a97e" type="selectionEntry" targetId="5606-f0ad-360b-fe5b" sortIndex="2">
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
                       </costs>
@@ -2412,7 +2412,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ab7-37bc-3161-36d8"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ab7-37bc-3161-36d8" automatic="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24e7-0cbf-0ad1-1adf"/>
               </constraints>
             </selectionEntryGroup>
@@ -2424,6 +2424,22 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Chainaxe" hidden="false" id="7922-d1bb-4035-75d2" type="selectionEntry" targetId="31a4-f8de-de6d-1fd9" sortIndex="2"/>
+                <entryLink import="true" name="Fenrisian axe" hidden="true" id="ead6-7607-b3a3-9064" type="selectionEntry" targetId="278c-bdcf-2780-d9cf" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <comment>SW Only</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4344-63f0-f534-d253"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="1-5 may exchange Chainsword for:" id="c7e3-ac4e-111f-be2c" hidden="false" flatten="false">
@@ -13505,21 +13521,16 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     </modifier>
                   </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Fenrisian axe" hidden="true" id="2612-4fc2-a974-e740" type="selectionEntry" targetId="278c-bdcf-2780-d9cf">
+                <entryLink import="true" name="Fenrisian axe" hidden="true" id="2612-4fc2-a974-e740" type="selectionEntry" targetId="278c-bdcf-2780-d9cf" sortIndex="3">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
                   </costs>
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                          <comment>DA</comment>
-                        </conditionGroup>
-                      </conditionGroups>
-                      <comment>SL+Cmd/Spec/Champ Only</comment>
+                      <comment>SW Only</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -14790,7 +14801,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <infoLink name="Support Unit (X)" id="2f7b-9247-e731-66d5" hidden="false" type="rule" targetId="313f-7ed6-3833-e97c">
           <comment>1</comment>
           <modifiers>
-            <modifier type="set" field="name">
+            <modifier type="set" field="name" value="Support Unit (1)">
               <comment>Support Unit (1)</comment>
             </modifier>
           </modifiers>
@@ -14962,6 +14973,9 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="d5e7-88d9-19b4-b7fa" id="a8cd-cd06-870e-22c9" primary="false" name="Apothecary"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Techmarine" hidden="false" id="6cac-d5d2-dda7-ea8f" sortIndex="38">
       <selectionEntries>
@@ -17484,6 +17498,22 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="986b-8788-288d-c877"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80fa-e10d-8886-73e5"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Fenrisian axe" hidden="true" id="aee5-106a-56ad-81e0" type="selectionEntry" targetId="278c-bdcf-2780-d9cf" sortIndex="3">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <comment>SW Only</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7910-287d-7614-423f"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -32098,6 +32128,22 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
                   </costs>
                 </entryLink>
+                <entryLink import="true" name="Fenrisian axe" hidden="true" id="2c7e-7d42-1375-fb41" type="selectionEntry" targetId="278c-bdcf-2780-d9cf" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <comment>SW Only</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="727c-60fc-50dd-3d89"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8277-081f-4b3d-9a3a"/>
@@ -34042,17 +34088,35 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="7cdd-ec11-4c2c-aeb6"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Chainsword" hidden="false" id="0e32-9f64-100e-ded3" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="3">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a99-e0fd-37fe-7ac0"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6aee-ef78-64f7-37cd"/>
-              </constraints>
-            </entryLink>
             <entryLink import="true" name="Legion Equipment" hidden="false" id="8494-6c6d-f772-7f04" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf" sortIndex="5">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef42-dcab-70ed-786a" includeChildSelections="false"/>
                 <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="a47e-bc73-fa47-2c99" includeChildSelections="true"/>
               </constraints>
+            </entryLink>
+            <entryLink import="true" name="Chainsword" hidden="false" id="0b4c-ae8d-bcbb-2965" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a598-3983-037f-88da" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1cdf-4e50-f6c1-cc8b" automatic="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>SW Only</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="a598-3983-037f-88da">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="1cdf-4e50-f6c1-cc8b">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
@@ -34227,6 +34291,35 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   </repeats>
                 </modifier>
               </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Melee" id="eb33-b4fd-0b33-f2fd" hidden="true" defaultSelectionEntryId="16d6-99fc-77ce-a7c6" sortIndex="3">
+              <entryLinks>
+                <entryLink import="true" name="Fenrisian axe" hidden="false" id="592f-004f-23e1-902e" type="selectionEntry" targetId="278c-bdcf-2780-d9cf">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7137-831d-d2b1-daf8"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Chainsword" hidden="false" id="1ee8-e91c-5186-b7bc" type="selectionEntry" targetId="78f4-4967-2896-c3a5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acd6-5a58-f4c0-4bb3"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <comment>SW Only</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0abc-159e-1692-536e"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bf0-af67-d222-ecf2"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -34533,11 +34626,29 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="25bf-a1f0-4eed-a3c4"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Chainsword" hidden="false" id="16d6-99fc-77ce-a7c6" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="3">
+            <entryLink import="true" name="Chainsword" hidden="false" id="f5f9-0cdb-b270-6338" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="3">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acb8-44ba-5413-e625"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="647f-5387-5b72-6b85"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b2c-5e16-9108-a936" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="918d-92ba-1338-3266" automatic="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>SW Only</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="6b2c-5e16-9108-a936">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="918d-92ba-1338-3266">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
@@ -34721,6 +34832,35 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   </repeats>
                 </modifier>
               </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Melee" id="57c7-ddff-1223-f4e4" hidden="true" sortIndex="3" defaultSelectionEntryId="16d6-99fc-77ce-a7c6">
+              <entryLinks>
+                <entryLink import="true" name="Fenrisian axe" hidden="false" id="11d2-804e-3a51-81bb" type="selectionEntry" targetId="278c-bdcf-2780-d9cf">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f63-4df3-156c-5922"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Chainsword" hidden="false" id="16d6-99fc-77ce-a7c6" type="selectionEntry" targetId="78f4-4967-2896-c3a5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acb8-44ba-5413-e625"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <comment>SW Only</comment>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f3c7-fb38-c101-81a6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05b4-298c-5b4a-8874"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -36583,7 +36723,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <condition type="atLeast" value="1" field="selections" scope="unit" childId="05ea-aecd-f5bc-63ea" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
-            <modifier type="prepend" value="Pintle Mounted " field="name"/>
+            <modifier type="prepend" value="Pintle Mounted " field="name"/>
           </modifiers>
         </entryLink>
       </entryLinks>
@@ -38535,7 +38675,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Warpfire pistol" hidden="true" id="51c2-11f5-c602-7740" type="selectionEntry" targetId="6c9f-bd82-3658-4e6f" sortIndex="7">
+        <entryLink import="true" name="Warpfire pistol" hidden="true" id="51c2-11f5-c602-7740" type="selectionEntry" targetId="6c9f-bd82-3658-4e6f" sortIndex="8">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e45-0d86-9ace-5219"/>
           </constraints>
@@ -38549,6 +38689,21 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
+        </entryLink>
+        <entryLink import="true" name="Æther-fire pistol" hidden="true" id="4cd0-9cf7-9d5c-ae8b" type="selectionEntry" targetId="c84a-7c4e-dc74-ab87" sortIndex="9">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4672-9f74-e808-eef6"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -38680,7 +38835,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b38a-7059-e464-11dd"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Chainsword" hidden="false" id="ad21-9e3a-cfe3-c47d" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="3">
+        <entryLink import="true" name="Chainsword" hidden="false" id="ad21-9e3a-cfe3-c47d" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="10">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
           </costs>
@@ -38688,7 +38843,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="db15-888f-45ce-fe9f"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Bolter" hidden="false" id="65d1-3318-96ed-e379" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="5">
+        <entryLink import="true" name="Bolter" hidden="false" id="65d1-3318-96ed-e379" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="20">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
@@ -38696,7 +38851,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="bb6f-9e7b-d93c-a279"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Volkite serpenta" hidden="false" id="69dd-c1ba-15af-7f1c" type="selectionEntry" targetId="b7c3-1de1-087c-3d6e" sortIndex="8">
+        <entryLink import="true" name="Volkite serpenta" hidden="false" id="69dd-c1ba-15af-7f1c" type="selectionEntry" targetId="b7c3-1de1-087c-3d6e" sortIndex="2">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
@@ -38704,7 +38859,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8511-8b3d-6e22-7ccb"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Plasma pistol" hidden="false" id="c035-de5f-b9b1-e14b" type="selectionEntry" targetId="659f-d52e-1515-2912" sortIndex="11">
+        <entryLink import="true" name="Plasma pistol" hidden="false" id="c035-de5f-b9b1-e14b" type="selectionEntry" targetId="659f-d52e-1515-2912" sortIndex="2">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
@@ -38712,7 +38867,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a299-6ca6-0029-9868"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Hand flamer" hidden="false" id="f17e-63af-1638-ab25" type="selectionEntry" targetId="9322-09ed-abec-6e13" sortIndex="9">
+        <entryLink import="true" name="Hand flamer" hidden="false" id="f17e-63af-1638-ab25" type="selectionEntry" targetId="9322-09ed-abec-6e13" sortIndex="2">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
@@ -38720,7 +38875,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2499-8a2e-9d2d-7626"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Disintegrator pistol" hidden="false" id="3882-d75a-4aee-7482" type="selectionEntry" targetId="32d1-2c70-882f-9467" sortIndex="12">
+        <entryLink import="true" name="Disintegrator pistol" hidden="false" id="3882-d75a-4aee-7482" type="selectionEntry" targetId="32d1-2c70-882f-9467" sortIndex="2">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
@@ -38728,13 +38883,13 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3b22-e801-690b-3852"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Chainaxe" hidden="false" id="7a3f-436b-fd22-1cd9" type="selectionEntry" targetId="31a4-f8de-de6d-1fd9" sortIndex="14">
+        <entryLink import="true" name="Chainaxe" hidden="false" id="7a3f-436b-fd22-1cd9" type="selectionEntry" targetId="31a4-f8de-de6d-1fd9" sortIndex="11">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9dcb-bc6a-021d-26d9"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Power Weapon" hidden="false" id="d46d-36b4-98f3-7558" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" sortIndex="15" flatten="true"/>
-        <entryLink import="true" name="Power fist" hidden="false" id="a698-ba7d-db12-21e0" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="17">
+        <entryLink import="true" name="Power Weapon" hidden="false" id="d46d-36b4-98f3-7558" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" sortIndex="17" flatten="true"/>
+        <entryLink import="true" name="Power fist" hidden="false" id="a698-ba7d-db12-21e0" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="30">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
@@ -38742,7 +38897,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2013-f750-302b-f149"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Lightning claw" hidden="false" id="0e6a-d5c3-27a5-6e82" type="selectionEntry" targetId="cbf0-9b29-9a16-28b2" sortIndex="22">
+        <entryLink import="true" name="Lightning claw" hidden="false" id="0e6a-d5c3-27a5-6e82" type="selectionEntry" targetId="cbf0-9b29-9a16-28b2" sortIndex="17">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
@@ -38750,7 +38905,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e118-ca40-8310-a312"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Thunder hammer" hidden="false" id="bc02-d4d3-1f2a-b718" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="25">
+        <entryLink import="true" name="Thunder hammer" hidden="false" id="bc02-d4d3-1f2a-b718" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="33">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
@@ -38758,12 +38913,12 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="10d9-3f01-7923-81ff"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Combat shield" hidden="false" id="3e10-365b-c98e-a35b" type="selectionEntry" targetId="5606-f0ad-360b-fe5b" sortIndex="26">
+        <entryLink import="true" name="Combat shield" hidden="false" id="3e10-365b-c98e-a35b" type="selectionEntry" targetId="5606-f0ad-360b-fe5b" sortIndex="40">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7fae-f8ce-0603-75bf"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Boarding shield" hidden="false" id="85b1-0089-f754-c9a6" type="selectionEntry" targetId="01e9-334c-80cb-f1c6" sortIndex="28">
+        <entryLink import="true" name="Boarding shield" hidden="false" id="85b1-0089-f754-c9a6" type="selectionEntry" targetId="01e9-334c-80cb-f1c6" sortIndex="41">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
@@ -38771,7 +38926,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8bc8-fe1e-ad28-ed9a"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Charnabal sabre" hidden="false" id="7634-d6fc-c76f-2b8f" type="selectionEntry" targetId="e85f-734a-c587-e88b" sortIndex="16">
+        <entryLink import="true" name="Charnabal sabre" hidden="false" id="7634-d6fc-c76f-2b8f" type="selectionEntry" targetId="e85f-734a-c587-e88b" sortIndex="14">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
@@ -38779,7 +38934,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="823a-7c21-8b8b-1ef5"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Inferno Pistol" hidden="true" id="6b2c-959f-5f73-e0f4" type="selectionEntry" targetId="0a98-b701-5f6c-1fc1" sortIndex="10">
+        <entryLink import="true" name="Inferno Pistol" hidden="true" id="6b2c-959f-5f73-e0f4" type="selectionEntry" targetId="0a98-b701-5f6c-1fc1" sortIndex="2">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <comment>Blood Angels only</comment>
@@ -38795,7 +38950,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e208-f96e-341b-4e4d"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Graviton crusher" hidden="true" id="fc66-cb12-9d14-4a45" type="selectionEntry" targetId="78f1-345c-81d8-1cb1" sortIndex="20">
+        <entryLink import="true" name="Graviton crusher" hidden="true" id="fc66-cb12-9d14-4a45" type="selectionEntry" targetId="78f1-345c-81d8-1cb1" sortIndex="34">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -38824,7 +38979,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="78c6-4877-f332-2c1d"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Solarite Power Gauntlet" hidden="true" id="d930-e96d-982c-0646" type="selectionEntry" targetId="ddcb-01e9-18af-c8f6" sortIndex="19">
+        <entryLink import="true" name="Solarite Power Gauntlet" hidden="true" id="d930-e96d-982c-0646" type="selectionEntry" targetId="ddcb-01e9-18af-c8f6" sortIndex="32">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -38853,7 +39008,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7084-799c-b6ba-70c6"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Forge-crafted power fist" hidden="true" id="ce4e-8881-1528-02bd" type="selectionEntry" targetId="8146-abba-1612-3d0f" sortIndex="18">
+        <entryLink import="true" name="Forge-crafted power fist" hidden="true" id="ce4e-8881-1528-02bd" type="selectionEntry" targetId="8146-abba-1612-3d0f" sortIndex="31">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
           </costs>
@@ -38884,7 +39039,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e715-8108-6034-414e"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="c9d1-2999-6494-b8a0" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="27">
+        <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="c9d1-2999-6494-b8a0" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="35">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
           </costs>
@@ -38914,7 +39069,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="09ee-5d9d-21a8-8015"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Terranic greatsword" hidden="true" id="97af-7dc8-7907-3c5f" type="selectionEntry" targetId="f1aa-3d18-caac-a960" sortIndex="21">
+        <entryLink import="true" name="Terranic greatsword" hidden="true" id="97af-7dc8-7907-3c5f" type="selectionEntry" targetId="f1aa-3d18-caac-a960" sortIndex="32">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -38943,7 +39098,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="af6c-39a4-01a3-bb2f"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Fenrisian axe" hidden="true" id="38ed-18af-9bdc-c819" type="selectionEntry" targetId="278c-bdcf-2780-d9cf" sortIndex="4">
+        <entryLink import="true" name="Fenrisian axe" hidden="true" id="38ed-18af-9bdc-c819" type="selectionEntry" targetId="278c-bdcf-2780-d9cf" sortIndex="12">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
           </costs>
@@ -38964,7 +39119,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="cfe5-554e-c8c4-c1c1"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Frost claw" hidden="true" id="9651-f51a-4613-2870" type="selectionEntry" targetId="e14f-7600-8fdd-65ce" sortIndex="23">
+        <entryLink import="true" name="Frost claw" hidden="true" id="9651-f51a-4613-2870" type="selectionEntry" targetId="e14f-7600-8fdd-65ce" sortIndex="18">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
@@ -38993,7 +39148,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="daa3-1435-49d3-b54d"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Raven&apos;s Talons" hidden="true" id="69d2-f872-ec5f-93fc" type="selectionEntry" targetId="8682-12f8-dccc-c0e2" sortIndex="24">
+        <entryLink import="true" name="Raven&apos;s Talons" hidden="true" id="69d2-f872-ec5f-93fc" type="selectionEntry" targetId="8682-12f8-dccc-c0e2" sortIndex="18">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -39015,7 +39170,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4dda-cc6d-a060-c6ef"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Graviton pistol" hidden="true" id="a568-dbaf-80f3-4189" type="selectionEntry" targetId="320a-5112-0e89-aad4" sortIndex="13">
+        <entryLink import="true" name="Graviton pistol" hidden="true" id="a568-dbaf-80f3-4189" type="selectionEntry" targetId="320a-5112-0e89-aad4" sortIndex="2">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -39044,7 +39199,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7a4e-d528-9d96-05a4"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Vigil Pattern Storm Shield" hidden="true" id="a105-f071-dde3-f2d4" type="selectionEntry" targetId="b672-10f1-20c8-c724" sortIndex="29">
+        <entryLink import="true" name="Vigil Pattern Storm Shield" hidden="true" id="a105-f071-dde3-f2d4" type="selectionEntry" targetId="b672-10f1-20c8-c724" sortIndex="42">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
@@ -39070,7 +39225,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="71ca-01b5-3f5d-be1a"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Escaton power claw" hidden="true" id="c0b1-8efb-c14a-d982" type="selectionEntry" targetId="a284-2bc5-12da-ec8a" sortIndex="30">
+        <entryLink import="true" name="Escaton power claw" hidden="true" id="c0b1-8efb-c14a-d982" type="selectionEntry" targetId="a284-2bc5-12da-ec8a" sortIndex="19">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
           </costs>
@@ -39106,7 +39261,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3a8d-7b42-fed4-a6f7"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Shrapnel bolter" hidden="true" id="65d1-60bc-b678-515a" type="selectionEntry" targetId="9532-a693-d2ac-f198" sortIndex="7">
+        <entryLink import="true" name="Shrapnel bolter" hidden="true" id="65d1-60bc-b678-515a" type="selectionEntry" targetId="9532-a693-d2ac-f198" sortIndex="22">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -39121,7 +39276,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a6fa-bb6f-c4a1-6e61"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Banestrike bolter" hidden="true" id="608b-ae87-2157-beed" type="selectionEntry" targetId="69de-4883-efd2-b876" sortIndex="6">
+        <entryLink import="true" name="Banestrike bolter" hidden="true" id="608b-ae87-2157-beed" type="selectionEntry" targetId="69de-4883-efd2-b876" sortIndex="21">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
@@ -39150,7 +39305,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f466-92e3-e175-8d54"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Graviton mace" hidden="true" id="9836-f78e-ab36-c3a0" type="selectionEntry" targetId="20ea-8551-8cb1-f569" sortIndex="31">
+        <entryLink import="true" name="Graviton mace" hidden="true" id="9836-f78e-ab36-c3a0" type="selectionEntry" targetId="20ea-8551-8cb1-f569" sortIndex="16">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -39180,7 +39335,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Alchem caster" hidden="true" id="3012-d916-7e61-7589" type="selectionEntry" targetId="c7ac-ad11-e90c-592a" sortIndex="32">
+        <entryLink import="true" name="Alchem caster" hidden="true" id="3012-d916-7e61-7589" type="selectionEntry" targetId="c7ac-ad11-e90c-592a" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9e4-388d-678e-f165"/>
           </constraints>
@@ -39195,7 +39350,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Tainted Weapon" hidden="true" id="72b3-5210-d3f9-5a2b" type="selectionEntry" targetId="a5ab-613f-fffe-4bee" sortIndex="32">
+        <entryLink import="true" name="Tainted Weapon" hidden="true" id="72b3-5210-d3f9-5a2b" type="selectionEntry" targetId="a5ab-613f-fffe-4bee" sortIndex="15">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -39210,7 +39365,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Warpfire pistol" hidden="true" id="4ee6-8821-32b6-2bca" type="selectionEntry" targetId="6c9f-bd82-3658-4e6f" sortIndex="33">
+        <entryLink import="true" name="Warpfire pistol" hidden="true" id="4ee6-8821-32b6-2bca" type="selectionEntry" targetId="6c9f-bd82-3658-4e6f" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aab3-c2d7-b872-188a"/>
           </constraints>
@@ -39224,6 +39379,21 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
+        </entryLink>
+        <entryLink import="true" name="Æther-fire pistol" hidden="true" id="f811-db45-257a-9a0c" type="selectionEntry" targetId="c84a-7c4e-dc74-ab87" sortIndex="2">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb0f-0319-dbf2-d830"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -39523,9 +39693,6 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="8813-5298-c368-ee16" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <comment>SH Or AL</comment>
                   <conditionGroups>
                     <conditionGroup type="and">
@@ -39540,6 +39707,12 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="8813-5298-c368-ee16" shared="true" includeChildSelections="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="db52-3de0-a5cf-d943" shared="true"/>
+                      </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -39607,7 +39780,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             </modifier>
           </modifiers>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
         </entryLink>
         <entryLink import="true" name="Alchem combi-flamer" hidden="true" id="05f3-93bd-b86c-0a20" type="selectionEntry" targetId="99e6-cab2-d3c6-f826" sortIndex="12">
@@ -40432,6 +40605,22 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
               </conditionGroups>
             </modifier>
             <modifier type="add" value="2de1-ddd6-ebb4-10df" field="category"/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Butcher Surgeon" hidden="true" id="dc34-d8f6-a366-2e25">
+          <rules>
+            <rule name="Exhortation of Butchery" id="21f3-2111-65c0-20c6" hidden="false">
+              <description> At the start of the Charge Sub-Phase of their Battle Turn, the Controlling Player of a Unit which contains any Models with this Special Rule may elect for that Unit to become Lost to the Nails </description>
+            </rule>
+          </rules>
+          <comment>World Eaters Apothacaries only</comment>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="a956-190d-3b47-6258" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d5e7-88d9-19b4-b7fa" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
