@@ -2755,12 +2755,6 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
             <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="4bcb-8655-4ed1-b172"/>
           </constraints>
           <entryLinks>
-            <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="68e4-6a8a-4faa-b7b5" name="Bolt pistol" sortIndex="2">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e0d-b8ff-47ff-9dbf"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7af-179e-4674-8190"/>
-              </constraints>
-            </entryLink>
             <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="6a36-d0e7-486c-ab32" name="Frag grenades" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="46ad-f7d6-4eb8-b595"/>
@@ -2832,10 +2826,15 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9952-395b-882d-5fdc"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Bolter" hidden="false" id="a46e-dda0-4bb9-baf2" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e">
+                <entryLink import="true" name="Bolter" hidden="false" id="a46e-dda0-4bb9-baf2" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17e9-7117-4075-8ebb"/>
                   </constraints>
+                </entryLink>
+                <entryLink import="true" name="Asphyx bolter" hidden="false" id="bdc8-06f0-13d8-8b23" type="selectionEntry" targetId="60a8-1455-2c2a-e010" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="3"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
               <selectionEntryGroups>
@@ -2863,6 +2862,27 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
                   </modifiers>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Pistol" id="62a8-1cb1-b3bd-c022" hidden="false" sortIndex="2" defaultSelectionEntryId="68e4-6a8a-4faa-b7b5">
+              <entryLinks>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="68e4-6a8a-4faa-b7b5" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7af-179e-4674-8190"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Asphyx pistol" hidden="false" id="8670-81a9-d701-6df4" type="selectionEntry" targetId="d293-df49-e8c3-f3bf" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4609-3e47-4d65-5f3e"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c15-6770-176c-813b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e05e-d30d-697a-2034"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -2894,10 +2914,10 @@ the Psychic Power was from a Prosperine Arcana to a Model in this Unit instead. 
         <profile name="Ætheric Guidance " typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="44f7-7a2d-1ee9-07c6">
           <characteristics>
             <characteristic name="Summary" typeId="981f-bb86-6a74-9b20">This Psychic Power improves the effectiveness of Ranged Attacks made by the Unit.</characteristic>
-            <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e"> The Active Player may choose to Manifest the Ætheric Guidance Psychic Power in the Shooting Phase, at the start of Step 4 of any Shooting Attack made by a Unit that includes at least one Model with the Unattuned Trait controlled by the Active Player.</characteristic>
-            <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86">The Focus of the Power must be a Model with the Unattuned Trait that is part of the Unit making the Shooting Attack. </characteristic>
-            <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770"> The Target Unit must be the Unit that the Focus is part of, and must only include Models with the Thousand Sons Trait.</characteristic>
-            <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4"> If successfully Manifested, the effects of this Psychic Power last until the end of the Shooting Attack being resolved. </characteristic>
+            <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e">The Active Player may choose to Manifest the Ætheric Guidance Psychic Power in the Shooting Phase, at the start of Step 4 of any Shooting Attack made by a Unit that includes at least one Model with the Unattuned Trait controlled by the Active Player.</characteristic>
+            <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86">The Focus of the Power must be a Model with the Unattuned Trait that is part of the Unit making the Shooting Attack.</characteristic>
+            <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770">The Target Unit must be the Unit that the Focus is part of, and must only include Models with the Thousand Sons Trait.</characteristic>
+            <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4">If successfully Manifested, the effects of this Psychic Power last until the end of the Shooting Attack being resolved.</characteristic>
             <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0">1. Once the Focus and Target Unit have been decided, the Controlling Player of the Focus must make a Manifestation Check. 
 2. If the Manifestation Check is successful, then all ranged Weapons Models in the Target Unit have (excluding Weapons with the Blast (X) Special Rule) gain the Breaching (6+) Special Rule. 
 3. If the Manifestation Check fails then there is no further effect.</characteristic>
