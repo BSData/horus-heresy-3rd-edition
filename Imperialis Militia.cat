@@ -10512,7 +10512,7 @@
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e74-3152-4f18-a42e"/>
                           </constraints>
                         </entryLink>
-                        <entryLink import="true" name="Combi-bolter" hidden="false" id="d2bd-e9d7-42db-ba2c" type="selectionEntry" targetId="042d-9e60-db9e-c147">
+                        <entryLink import="true" name="Combi-bolter" hidden="false" id="d2bd-e9d7-42db-ba2c" type="selectionEntry" targetId="042d-9e60-db9e-c147" defaultAmount="1">
                           <modifiers>
                             <modifier type="set" value="Two combi-bolters" field="name"/>
                           </modifiers>
@@ -10522,24 +10522,53 @@
                         </entryLink>
                       </entryLinks>
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ef0-1d91-4761-b4c7"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ef0-1d91-4761-b4c7" automatic="true"/>
                       </constraints>
                       <selectionEntryGroups>
                         <selectionEntryGroup name="One Militia Trike may take:" id="57df-9459-cd8b-8d6f" hidden="false">
-                          <entryLinks>
-                            <entryLink import="true" name="Meltagun" hidden="false" id="f1c5-5e01-0e35-d230" type="selectionEntry" targetId="b1e1-e164-5877-6734">
-                              <costs>
-                                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
-                              </costs>
+                          <selectionEntries>
+                            <selectionEntry type="upgrade" import="true" name="Trike Meltagun" hidden="false" id="45b1-eaea-bec4-ffe4">
+                              <comment>Has to be unique in Unit and clashes with Quad Meltagun</comment>
+                              <profiles>
+                                <profile name="Trike Meltagun" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="68c2-0344-06cd-cba4" page="53" publicationId="a5ca-d2f8-fa5a-c120">
+                                  <characteristics>
+                                    <characteristic name="R" typeId="cdb0-8654-6840-1037">12</characteristic>
+                                    <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+                                    <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">8</characteristic>
+                                    <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+                                    <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">3</characteristic>
+                                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Melta (6)</characteristic>
+                                    <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Melta</characteristic>
+                                  </characteristics>
+                                  <modifiers>
+                                    <modifier type="set" value="Meltagun (x2)" field="name"/>
+                                  </modifiers>
+                                </profile>
+                              </profiles>
+                              <infoLinks>
+                                <infoLink name="Melta (X)" id="8dc3-efe6-c175-3c70" hidden="false" type="rule" targetId="8ef6-917e-93da-43c3">
+                                  <modifiers>
+                                    <modifier type="set" value="Melta (6)" field="name"/>
+                                  </modifiers>
+                                  <comment>6</comment>
+                                </infoLink>
+                              </infoLinks>
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4854-3d0a-4816-0148"/>
+                                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="4b8d-31a0-5165-bd99" includeChildSelections="true"/>
+                              </constraints>
                               <modifiers>
                                 <modifier type="set" value="Two meltaguns" field="name"/>
                               </modifiers>
-                              <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21ba-3d53-b45a-291b"/>
-                                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="c5f4-c5a9-5186-4f83" includeChildSelections="true"/>
-                              </constraints>
-                            </entryLink>
-                          </entryLinks>
+                              <costs>
+                                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                                <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                                <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                              </costs>
+                            </selectionEntry>
+                          </selectionEntries>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
                     </selectionEntryGroup>
