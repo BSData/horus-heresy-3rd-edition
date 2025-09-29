@@ -2575,7 +2575,7 @@ After a Shooting Attack that targets a Unit entirely composed of Models with thi
         </modifier>
         <modifier type="add" value="Roster must be at least 3000 points for Brotherhood of the Phoenix" field="error">
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
               <conditions>
                 <condition type="lessThan" value="3000" field="limit::9893-c379-920b-8982" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
                 <condition type="lessThan" value="3000" field="9893-c379-920b-8982" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
