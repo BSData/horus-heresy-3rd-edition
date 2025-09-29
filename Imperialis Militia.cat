@@ -3481,6 +3481,36 @@
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
                       </costs>
                     </entryLink>
+                    <entryLink import="true" name="Heavy industrial weapon" hidden="true" id="e853-f3dd-6191-03f3" type="selectionEntry" targetId="21a7-2df8-4ed4-b446">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="8"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="653a-79c9-a2b8-2f90"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="baca-1393-31e5-6d2b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Pair of industrial weapons" hidden="true" id="3f48-ae2f-686d-5c58" type="selectionEntry" targetId="4c27-1d50-3663-f248">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13a2-0be1-6a83-cfa0"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="baca-1393-31e5-6d2b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2a0-af4d-cc75-05a7" automatic="true"/>
@@ -3857,6 +3887,36 @@
                       </costs>
                     </entryLink>
                     <entryLink import="true" name="Militia Officer Weapons" hidden="false" id="cf74-019d-a828-b6d6" type="selectionEntryGroup" targetId="9edc-fe43-4c9e-bcac" sortIndex="7"/>
+                    <entryLink import="true" name="Heavy industrial weapon" hidden="true" id="df14-1335-4512-eb49" type="selectionEntry" targetId="21a7-2df8-4ed4-b446">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="8"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52f8-7c05-4714-a6b0"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="baca-1393-31e5-6d2b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Pair of industrial weapons" hidden="true" id="e9f1-b171-33d8-7835" type="selectionEntry" targetId="4c27-1d50-3663-f248">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ee0-e42b-a6bd-8a84"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="baca-1393-31e5-6d2b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2179-f10d-49bc-8e2c"/>
@@ -3961,11 +4021,6 @@
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Exo-riggers" hidden="true" id="8a90-71e4-7479-a77f" sortIndex="5">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
             <modifier type="set" value="8" field="9893-c379-920b-8982">
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false"/>
