@@ -2024,6 +2024,26 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3958-530c-21db-e7a4"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Repair Automata" hidden="true" id="072b-c294-e37f-cb23" sortIndex="5">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="a467-44e7-37b7-9bdd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="9893-c379-920b-8982">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df52-37d3-168b-58ab"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Repair Automata" id="4706-fb26-dcbe-c1d7" hidden="false" type="rule" targetId="1394-90c6-4f63-e2ed"/>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="6f42-1dc9-741c-27b3" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
@@ -2031,7 +2051,7 @@
             <entryLink import="true" name="Common Prime Benefits" hidden="false" id="681c-8c49-0e81-c585" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Provenance" hidden="false" id="213a-d41b-9ee7-7831" type="selectionEntryGroup" targetId="681d-491f-d79b-1b81"/>
+        <entryLink import="true" name="Provenance" hidden="false" id="213a-d41b-9ee7-7831" type="selectionEntryGroup" targetId="681d-491f-d79b-1b81" sortIndex="4"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="2b10-f14e-3944-9857" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -3481,6 +3501,36 @@
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
                       </costs>
                     </entryLink>
+                    <entryLink import="true" name="Heavy industrial weapon" hidden="true" id="e853-f3dd-6191-03f3" type="selectionEntry" targetId="21a7-2df8-4ed4-b446">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="8"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="653a-79c9-a2b8-2f90"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="baca-1393-31e5-6d2b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Pair of industrial weapons" hidden="true" id="3f48-ae2f-686d-5c58" type="selectionEntry" targetId="4c27-1d50-3663-f248">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13a2-0be1-6a83-cfa0"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="baca-1393-31e5-6d2b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2a0-af4d-cc75-05a7" automatic="true"/>
@@ -3857,6 +3907,36 @@
                       </costs>
                     </entryLink>
                     <entryLink import="true" name="Militia Officer Weapons" hidden="false" id="cf74-019d-a828-b6d6" type="selectionEntryGroup" targetId="9edc-fe43-4c9e-bcac" sortIndex="7"/>
+                    <entryLink import="true" name="Heavy industrial weapon" hidden="true" id="df14-1335-4512-eb49" type="selectionEntry" targetId="21a7-2df8-4ed4-b446">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="8"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52f8-7c05-4714-a6b0"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="baca-1393-31e5-6d2b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Pair of industrial weapons" hidden="true" id="e9f1-b171-33d8-7835" type="selectionEntry" targetId="4c27-1d50-3663-f248">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ee0-e42b-a6bd-8a84"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="baca-1393-31e5-6d2b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2179-f10d-49bc-8e2c"/>
@@ -3961,11 +4041,6 @@
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Exo-riggers" hidden="true" id="8a90-71e4-7479-a77f" sortIndex="5">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
-            </modifier>
             <modifier type="set" value="8" field="9893-c379-920b-8982">
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false"/>
@@ -10512,7 +10587,7 @@
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e74-3152-4f18-a42e"/>
                           </constraints>
                         </entryLink>
-                        <entryLink import="true" name="Combi-bolter" hidden="false" id="d2bd-e9d7-42db-ba2c" type="selectionEntry" targetId="042d-9e60-db9e-c147">
+                        <entryLink import="true" name="Combi-bolter" hidden="false" id="d2bd-e9d7-42db-ba2c" type="selectionEntry" targetId="042d-9e60-db9e-c147" defaultAmount="1">
                           <modifiers>
                             <modifier type="set" value="Two combi-bolters" field="name"/>
                           </modifiers>
@@ -10522,24 +10597,53 @@
                         </entryLink>
                       </entryLinks>
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ef0-1d91-4761-b4c7"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ef0-1d91-4761-b4c7" automatic="true"/>
                       </constraints>
                       <selectionEntryGroups>
                         <selectionEntryGroup name="One Militia Trike may take:" id="57df-9459-cd8b-8d6f" hidden="false">
-                          <entryLinks>
-                            <entryLink import="true" name="Meltagun" hidden="false" id="f1c5-5e01-0e35-d230" type="selectionEntry" targetId="b1e1-e164-5877-6734">
-                              <costs>
-                                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
-                              </costs>
+                          <selectionEntries>
+                            <selectionEntry type="upgrade" import="true" name="Trike Meltagun" hidden="false" id="45b1-eaea-bec4-ffe4">
+                              <comment>Has to be unique in Unit and clashes with Quad Meltagun</comment>
+                              <profiles>
+                                <profile name="Trike Meltagun" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="68c2-0344-06cd-cba4" page="53" publicationId="a5ca-d2f8-fa5a-c120">
+                                  <characteristics>
+                                    <characteristic name="R" typeId="cdb0-8654-6840-1037">12</characteristic>
+                                    <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+                                    <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">8</characteristic>
+                                    <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+                                    <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">3</characteristic>
+                                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Melta (6)</characteristic>
+                                    <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Melta</characteristic>
+                                  </characteristics>
+                                  <modifiers>
+                                    <modifier type="set" value="Meltagun (x2)" field="name"/>
+                                  </modifiers>
+                                </profile>
+                              </profiles>
+                              <infoLinks>
+                                <infoLink name="Melta (X)" id="8dc3-efe6-c175-3c70" hidden="false" type="rule" targetId="8ef6-917e-93da-43c3">
+                                  <modifiers>
+                                    <modifier type="set" value="Melta (6)" field="name"/>
+                                  </modifiers>
+                                  <comment>6</comment>
+                                </infoLink>
+                              </infoLinks>
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4854-3d0a-4816-0148"/>
+                                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="4b8d-31a0-5165-bd99" includeChildSelections="true"/>
+                              </constraints>
                               <modifiers>
                                 <modifier type="set" value="Two meltaguns" field="name"/>
                               </modifiers>
-                              <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21ba-3d53-b45a-291b"/>
-                                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="c5f4-c5a9-5186-4f83" includeChildSelections="true"/>
-                              </constraints>
-                            </entryLink>
-                          </entryLinks>
+                              <costs>
+                                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                                <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                                <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                              </costs>
+                            </selectionEntry>
+                          </selectionEntries>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
                     </selectionEntryGroup>
