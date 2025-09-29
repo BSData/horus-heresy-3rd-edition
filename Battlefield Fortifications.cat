@@ -512,7 +512,6 @@ Likewise, if a Model with the Flyer Sub-Type that has been assigned an Extractio
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="6713-ea99-9d61-198e">
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="70"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
@@ -547,6 +546,56 @@ Aegis Defence Line Barricades do not have any Characteristics and cannot be targ
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b98-8308-2269-1af8-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b98-8308-2269-1af8-max"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Core Platform" hidden="false" id="4086-a784-c803-1bf9" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f247-f318-8025-72e3" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cb8-180a-89f0-c9d2" automatic="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="2" field="f247-f318-8025-72e3">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="7842-bddd-6705-3254" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2" field="7cb8-180a-89f0-c9d2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="7842-bddd-6705-3254" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Barricades" hidden="false" id="523c-c0dc-9054-1610" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="2c46-6d03-3350-db2a" automatic="true"/>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="2732-ac0f-1ce3-74b6" automatic="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="12" field="2c46-6d03-3350-db2a">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="7842-bddd-6705-3254" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="12" field="2732-ac0f-1ce3-74b6">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="7842-bddd-6705-3254" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Additional Core Platform and 6 more Barricades" hidden="false" id="7842-bddd-6705-3254">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="50"/>
+                <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a1d-aeb0-7ac5-d87d"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <costs>
