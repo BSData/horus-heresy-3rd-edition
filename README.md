@@ -40,7 +40,7 @@ If a unit has an option alongside an SSEG, eg "May take a Volkite Charger or an 
 ## 2.3 Capitalisation
 Copy what is printed in the books.
 - If the book has something as Upper Upper, eg "Legion Officer Wargear" then capitalise every word.
-- If the book does not capitalise something, eg "Any model may exchange their *bolter*..." then it does not need to be capitalised unless it is the first owrd in a string/sentence/label.
+- If the book does not capitalise something, eg "Any model may exchange their *bolter*..." then it does not need to be capitalised unless it is the first word in a string/sentence/label.
 
 # 3: Making Units
 All Units must be made as shared selection entries with the Unit type
@@ -51,6 +51,7 @@ Any Weapons/Wargear/Other SSE's must be paced within the Model entry - NOT the U
 
 Then for each unit create a link in the Root Selection Entries to the shared selection entry.
 For the legions, they import the root selection entries from the LA cat. 
+DO NOT set an order number against a root entry unless there is a specific reason to do so (e.g. Alpha Legion Rewards of Treachery units are sorted by legion number, LA duplicate units for specific upgrades for existing units , e.g. Logisticae) - this makes sure all units are listed alphabetically and remains a consistent and well understood way of searching for unit names in long lists (e.g. LA command choices) and the legion specific units get placed within the list in the right places automatically.
 
 ## 3.1: Default Inclusions on Units
 
