@@ -51,7 +51,7 @@ Any Weapons/Wargear/Other SSE's must be paced within the Model entry - NOT the U
 
 Then for each unit create a link in the Root Selection Entries to the shared selection entry.
 For the legions, they import the root selection entries from the LA cat. 
-DO NOT set an order number against a root entry unless there is a specific reason to do so (e.g. Alpha Legion Rewards of Treachery units are sorted by legion number, LA duplicate units for specific upgrades for existing units , e.g. Logisticae) - this makes sure all units are listed alphabetically and remains a consistent and well understood way of searching for unit names in long lists (e.g. LA command choices) and the legion specific units get placed within the list in the right places automatically.
+DO NOT set an order (Position) number against a root entry unless there is a specific reason to do so (e.g. Alpha Legion Rewards of Treachery units are sorted by legion number, LA duplicate units for specific upgrades for existing units , e.g. Logisticae) - this makes sure all units are listed alphabetically and remains a consistent and well understood way of searching for unit names in long lists (e.g. LA command choices) and the legion specific units get placed within the list in the right places automatically.
 
 ## 3.1: Default Inclusions on Units
 
