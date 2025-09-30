@@ -8953,6 +8953,9 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
               </costs>
+              <modifiers>
+                <modifier type="prepend" value="Turret Mounted" field="name"/>
+              </modifiers>
             </entryLink>
           </entryLinks>
           <constraints>
@@ -8966,7 +8969,6 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
                 <modifier type="prepend" value="Two Sponson Mounted" field="name"/>
               </modifiers>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b22-0eca-03dc-2fdb"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6b9-51ec-2c3a-3682"/>
               </constraints>
             </entryLink>
@@ -8974,11 +8976,17 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
               </costs>
+              <modifiers>
+                <modifier type="prepend" value="Two Sponson Mounted" field="name"/>
+              </modifiers>
             </entryLink>
             <entryLink import="true" name="Heavy flamer" hidden="false" id="5fff-1976-1195-5c9d" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="3">
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
               </costs>
+              <modifiers>
+                <modifier type="prepend" value="Two Sponson Mounted" field="name"/>
+              </modifiers>
             </entryLink>
           </entryLinks>
           <constraints>
