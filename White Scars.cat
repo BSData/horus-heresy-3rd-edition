@@ -1960,19 +1960,97 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7d6b-f4b9-8e4f-7ab4" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="May exchange twin bolter for:" id="06d9-0aa7-0105-6f22" hidden="false" defaultSelectionEntryId="6fb3-de73-68d1-1e8f" sortIndex="4">
+            <selectionEntryGroup name="May have its twin bolter exchanged for " id="d766-e7d7-e781-6016" hidden="false" sortIndex="4" defaultSelectionEntryId="8908-e888-d8c5-7825">
               <entryLinks>
-                <entryLink import="true" name="Twin bolter" hidden="false" id="6fb3-de73-68d1-1e8f" type="selectionEntry" targetId="222f-82cb-05a2-f8f1"/>
-                <entryLink import="true" name="Twin plasma gun" hidden="false" id="5d2b-b7d1-ba3e-0dfe" type="selectionEntry" targetId="1603-43c6-8860-d57e">
+                <entryLink import="true" name="Twin bolter" hidden="false" id="8908-e888-d8c5-7825" type="selectionEntry" targetId="222f-82cb-05a2-f8f1" defaultAmount="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1086-5b37-0ef0-83c5"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Twin plasma gun" hidden="false" id="cc06-8473-fe08-d342" type="selectionEntry" targetId="1603-43c6-8860-d57e">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
                   </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fea-835d-922c-3620"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d40-d5d4-ab78-9aed" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e612-879a-4a7f-2ef2" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6586-3be7-2a2f-009d" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e47-f265-66ab-a89f" automatic="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="6586-3be7-2a2f-009d">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="81b1-1fec-a45c-27aa" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="1e47-f265-66ab-a89f">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="81b1-1fec-a45c-27aa" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="81b1-1fec-a45c-27aa" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="May have its heavy bolter exchanged for one of the following:" id="5e59-6674-2d2d-4546" hidden="false" sortIndex="4" defaultSelectionEntryId="1391-9fa3-5042-dafc">
+              <entryLinks>
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="1391-9fa3-5042-dafc" type="selectionEntry" targetId="bc40-b14a-978e-0232" defaultAmount="1" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="056a-6953-dc5f-91a7"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Volkite culverin" hidden="false" id="d9ce-5223-7857-f731" type="selectionEntry" targetId="fcf0-9c1b-d51e-6bc7" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9e0-0650-5f3c-6476"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Plasma cannon" hidden="false" id="7af6-ab3f-8732-3dc1" type="selectionEntry" targetId="f8b8-96c8-ba31-faf8" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a8e-7a5e-3bc5-c915"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Multi-melta" hidden="false" id="28b7-06a2-e0b9-48a7" type="selectionEntry" targetId="0135-12f0-d86f-ced9" sortIndex="4">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e3b-af84-c616-17c5"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e534-bd13-cd7f-cef5" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed4f-a3d1-4d85-c351" automatic="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e534-bd13-cd7f-cef5">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="4f20-9a87-8334-9f26" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="ed4f-a3d1-4d85-c351">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="4f20-9a87-8334-9f26" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="4f20-9a87-8334-9f26" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -2991,7 +3069,7 @@ For any Strike Group in which the attacking Combatants have a current Weapon Ski
     <catalogueLink type="catalogue" name="Psychic" id="4936-3c5c-ca97-f56f" targetId="1b2d-2038-39a7-f387"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="Jaghatai Khan" hidden="false" id="0fd4-5d93-4678-4064" type="selectionEntry" targetId="8192-47ac-99f9-73e9" sortIndex="">
+    <entryLink import="true" name="Jaghatai Khan" hidden="false" id="0fd4-5d93-4678-4064" type="selectionEntry" targetId="8192-47ac-99f9-73e9">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9b5c-a98c-1e67-4e3d" includeChildSelections="true"/>
       </constraints>
@@ -3000,7 +3078,7 @@ For any Strike Group in which the attacking Combatants have a current Weapon Ski
         <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="5eff-b3c7-fb28-7d06" primary="false" name="White Scars"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Qin Xa" hidden="false" id="aef2-d55a-ceca-ef8e" type="selectionEntry" targetId="0935-9158-92d0-5528" sortIndex="">
+    <entryLink import="true" name="Qin Xa" hidden="false" id="aef2-d55a-ceca-ef8e" type="selectionEntry" targetId="0935-9158-92d0-5528">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="eeb7-a0e0-4968-a34d" includeChildSelections="true"/>
       </constraints>
@@ -3009,7 +3087,7 @@ For any Strike Group in which the attacking Combatants have a current Weapon Ski
         <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="e0b5-9a97-0834-318e" primary="false" name="White Scars"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Hibou Khan" hidden="false" id="237b-ac58-1954-957e" type="selectionEntry" targetId="fd81-80fc-3d80-5f8b" sortIndex="">
+    <entryLink import="true" name="Hibou Khan" hidden="false" id="237b-ac58-1954-957e" type="selectionEntry" targetId="fd81-80fc-3d80-5f8b">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="60e0-1c39-9467-7346" includeChildSelections="true"/>
       </constraints>
@@ -3018,55 +3096,55 @@ For any Strike Group in which the attacking Combatants have a current Weapon Ski
         <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="e4f7-2bcc-930a-6386" primary="false" name="White Scars"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Stormseer" hidden="false" id="613c-ffd0-7238-a10c" type="selectionEntry" targetId="5123-b5ea-c6dc-7bb9" sortIndex="">
+    <entryLink import="true" name="Stormseer" hidden="false" id="613c-ffd0-7238-a10c" type="selectionEntry" targetId="5123-b5ea-c6dc-7bb9">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="aab5-7c38-1ead-1be2" primary="true" name="Command"/>
         <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="a1e8-5995-3ab7-1139" primary="false" name="White Scars"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Golden Keshig" hidden="false" id="37a0-e9fb-e17c-cd83" type="selectionEntry" targetId="fa6f-2652-34c9-2ea2" sortIndex="">
+    <entryLink import="true" name="Golden Keshig" hidden="false" id="37a0-e9fb-e17c-cd83" type="selectionEntry" targetId="fa6f-2652-34c9-2ea2">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="a12d-348a-b767-e62a" primary="true" name="Elites"/>
         <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="d91e-5182-437f-a0eb" primary="false" name="White Scars"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Ebon Keshig" hidden="false" id="795e-893e-346b-2ddb" type="selectionEntry" targetId="9f57-6829-5ec9-4d69" sortIndex="">
+    <entryLink import="true" name="Ebon Keshig" hidden="false" id="795e-893e-346b-2ddb" type="selectionEntry" targetId="9f57-6829-5ec9-4d69">
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="6992-d60a-1ddd-d53d" primary="true" name="Heavy Assault"/>
         <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="f88a-a43e-12b1-2601" primary="false" name="White Scars"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Kyzagan Assault Speeder" hidden="false" id="2755-5fcf-4ecd-79e6" type="selectionEntry" targetId="6efd-34c7-2212-1474" sortIndex="">
+    <entryLink import="true" name="Kyzagan Assault Speeder" hidden="false" id="2755-5fcf-4ecd-79e6" type="selectionEntry" targetId="6efd-34c7-2212-1474">
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="1091-cfaf-cd6e-6b3f" primary="true" name="Support"/>
         <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="ff0e-ed87-bbf0-433a" primary="false" name="White Scars"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Falcon&apos;s Claws" hidden="false" id="e6bb-8795-db5e-95e3" type="selectionEntry" targetId="50ec-3549-586e-6bdd" sortIndex="">
+    <entryLink import="true" name="Falcon&apos;s Claws" hidden="false" id="e6bb-8795-db5e-95e3" type="selectionEntry" targetId="50ec-3549-586e-6bdd">
       <categoryLinks>
         <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="00eb-941f-a592-27a4" primary="false" name="White Scars"/>
         <categoryLink targetId="2b65-a3f2-620a-dc58" id="e6a5-8c09-31aa-04d3" primary="true" name="Recon"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Stormseer with Jump Pack" hidden="false" id="6361-e0e3-65a2-591e" type="selectionEntry" targetId="ebf6-f8fc-a45b-2799" sortIndex="">
+    <entryLink import="true" name="Stormseer with Jump Pack" hidden="false" id="6361-e0e3-65a2-591e" type="selectionEntry" targetId="ebf6-f8fc-a45b-2799">
       <categoryLinks>
         <categoryLink name="Command" hidden="false" id="bfca-988c-b8d3-f6d7" targetId="6dbf-654a-f06f-2d69" primary="true"/>
         <categoryLink name="White Scars" hidden="false" id="1b5b-e5e1-024e-2343" targetId="ad95-5dc4-7b15-8ff3" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Mounted Stormseer" hidden="false" id="6e66-86f5-5467-6b7c" type="selectionEntry" targetId="d929-8371-72d9-8cb4" sortIndex="">
+    <entryLink import="true" name="Mounted Stormseer" hidden="false" id="6e66-86f5-5467-6b7c" type="selectionEntry" targetId="d929-8371-72d9-8cb4">
       <categoryLinks>
         <categoryLink name="Command" hidden="false" id="5deb-2134-783e-7a65" targetId="6dbf-654a-f06f-2d69" primary="true"/>
         <categoryLink name="White Scars" hidden="false" id="a5ca-32b1-acc6-4169" targetId="ad95-5dc4-7b15-8ff3" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Stormseer in Terminator Armour" hidden="false" id="e166-3556-d622-2dcd" type="selectionEntry" targetId="f4d1-2dac-0a5b-c516" sortIndex="" publicationId="5469-14da-d0a1-6092">
+    <entryLink import="true" name="Stormseer in Terminator Armour" hidden="false" id="e166-3556-d622-2dcd" type="selectionEntry" targetId="f4d1-2dac-0a5b-c516" publicationId="5469-14da-d0a1-6092">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="f1d9-7589-2920-fe46" primary="true" name="Command"/>
         <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="721d-f274-9e84-7051" primary="false" name="White Scars"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Dark Sons of Death" hidden="false" id="ec4e-16b6-8313-4ab3" type="selectionEntry" targetId="d002-d1d6-c784-1f15" sortIndex="">
+    <entryLink import="true" name="Dark Sons of Death" hidden="false" id="ec4e-16b6-8313-4ab3" type="selectionEntry" targetId="d002-d1d6-c784-1f15">
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="524f-d61c-7e82-948e" primary="true" name="Heavy Assault"/>
         <categoryLink targetId="ad95-5dc4-7b15-8ff3" id="4d91-f746-d9d5-4657" primary="false" name="White Scars"/>
