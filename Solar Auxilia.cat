@@ -8938,21 +8938,24 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
         </selectionEntryGroup>
         <selectionEntryGroup name="Turret Weapon" id="c418-a99f-61c6-30ce" hidden="false" sortIndex="2" defaultSelectionEntryId="ee53-5099-d6ac-2c01">
           <entryLinks>
-            <entryLink import="true" name="Twin Battlecannon" hidden="false" id="ee53-5099-d6ac-2c01" type="selectionEntry" targetId="b28b-44d6-5cc0-75fa">
-              <modifiers>
-                <modifier type="prepend" value="Turret Mounted" field="name"/>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Twin avenger bolt cannon" hidden="false" id="e341-706c-5a2b-484e" type="selectionEntry" targetId="82bb-5456-f6c4-8334">
+            <entryLink import="true" name="Twin Battlecannon" hidden="false" id="ee53-5099-d6ac-2c01" type="selectionEntry" targetId="b28b-44d6-5cc0-75fa" sortIndex="1">
               <modifiers>
                 <modifier type="prepend" value="Turret Mounted" field="name"/>
                 <modifier type="set" value="1" field="defaultAmount"/>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Twin Vanquisher Cannon" hidden="false" id="39ec-c09a-a8b0-f9e4" type="selectionEntry" targetId="3c29-e904-fa76-a6a8">
+            <entryLink import="true" name="Twin avenger bolt cannon" hidden="false" id="e341-706c-5a2b-484e" type="selectionEntry" targetId="82bb-5456-f6c4-8334">
+              <modifiers>
+                <modifier type="prepend" value="Turret Mounted" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Twin vanquisher Cannon" hidden="false" id="39ec-c09a-a8b0-f9e4" type="selectionEntry" targetId="3c29-e904-fa76-a6a8">
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
               </costs>
+              <modifiers>
+                <modifier type="prepend" value="Turret Mounted" field="name"/>
+              </modifiers>
             </entryLink>
           </entryLinks>
           <constraints>
@@ -8963,10 +8966,9 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
           <entryLinks>
             <entryLink import="true" name="Heavy Stubber" hidden="false" id="0118-0d87-48a8-3776" type="selectionEntry" targetId="c53d-622f-fa8a-7570" sortIndex="1">
               <modifiers>
-                <modifier type="prepend" value="Two Sponson Mounted" field="name"/>
+                <modifier type="set" value="Two Sponson Mounted heavy stubbers" field="name"/>
               </modifiers>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b22-0eca-03dc-2fdb"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6b9-51ec-2c3a-3682"/>
               </constraints>
             </entryLink>
@@ -8974,11 +8976,17 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
               </costs>
+              <modifiers>
+                <modifier type="prepend" value="Two Sponson Mounted" field="name"/>
+              </modifiers>
             </entryLink>
             <entryLink import="true" name="Heavy flamer" hidden="false" id="5fff-1976-1195-5c9d" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="3">
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
               </costs>
+              <modifiers>
+                <modifier type="prepend" value="Two Sponson Mounted" field="name"/>
+              </modifiers>
             </entryLink>
           </entryLinks>
           <constraints>
@@ -8999,24 +9007,6 @@ A Model with this Special Rule has the Navis Astrologis Psychic Discipline, gain
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d0fb-103c-4010-d6aa"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7921-79b6-282a-6dcd"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Autocannon" hidden="false" id="e033-5c36-8484-94b4" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93" sortIndex="3">
-          <modifiers>
-            <modifier type="prepend" value="Co-axial (Baneblade cannon) Mounted" field="name"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5548-2687-bcb3-0a0c"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="224e-5767-a3a3-40cc"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Demolisher cannon" hidden="false" id="98b7-8e9a-a147-e18b" type="selectionEntry" targetId="4514-8e18-77b4-a141" sortIndex="4">
-          <modifiers>
-            <modifier type="prepend" value="Centreline Mounted" field="name"/>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cbe3-0e89-3b3d-55a4"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d25-6dda-3aac-8ba4"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="81e4-8902-3a9e-5854" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
@@ -10906,9 +10896,9 @@ While a Unit entirely composed of Models with the Solar Auxilia Trait includes a
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Twin Vanquisher Cannon" hidden="false" id="3c29-e904-fa76-a6a8">
+    <selectionEntry type="upgrade" import="true" name="Twin vanquisher Cannon" hidden="false" id="3c29-e904-fa76-a6a8">
       <profiles>
-        <profile name="Twin Vanquisher Cannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="9686-962c-36ca-e126">
+        <profile name="Twin vanquisher Cannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="9686-962c-36ca-e126">
           <characteristics>
             <characteristic name="R" typeId="cdb0-8654-6840-1037">72</characteristic>
             <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
