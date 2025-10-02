@@ -14396,6 +14396,20 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Plasma repeater" hidden="true" id="50cf-9838-1f2c-22c5" type="selectionEntry" targetId="e61e-cac4-a125-5190">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="0a35-fce3-188c-b3aa" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="15" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5557-e6b9-6ca3-96e3" includeChildSelections="false"/>
@@ -37698,13 +37712,13 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Praetor in Saturnine Terminator Armour" hidden="false" id="723a-caa1-9f03-13f9" type="selectionEntry" targetId="2a5a-8ab8-be4d-6fa7" sortIndex="">
+    <entryLink import="true" name="Praetor in Saturnine Terminator Armour" hidden="false" id="723a-caa1-9f03-13f9" type="selectionEntry" targetId="2a5a-8ab8-be4d-6fa7">
       <categoryLinks>
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="34e1-5319-47e6-05b0" primary="true" name="High Command"/>
       </categoryLinks>
       <comment>High Command</comment>
     </entryLink>
-    <entryLink import="true" name="Rapier Battery" hidden="false" id="bb96-a49b-4571-78fe" type="selectionEntry" targetId="5e1a-86ac-b637-daf2" sortIndex="">
+    <entryLink import="true" name="Rapier Battery" hidden="false" id="bb96-a49b-4571-78fe" type="selectionEntry" targetId="5e1a-86ac-b637-daf2">
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="fd3d-7e6a-459b-15ec" primary="true" name="Support"/>
       </categoryLinks>
@@ -37722,7 +37736,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Tarantula Battery" hidden="false" id="461e-1075-6f9a-2208" type="selectionEntry" targetId="4ee0-7aae-5319-599f" sortIndex="">
+    <entryLink import="true" name="Tarantula Battery" hidden="false" id="461e-1075-6f9a-2208" type="selectionEntry" targetId="4ee0-7aae-5319-599f">
       <categoryLinks>
         <categoryLink targetId="2b65-a3f2-620a-dc58" id="e9ba-4b72-d383-72c9" primary="true" name="Recon"/>
       </categoryLinks>
@@ -37735,19 +37749,19 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Fellblade Super-Heavy Battle Tank" hidden="false" id="28b1-8f09-464f-d1d5" type="selectionEntry" targetId="ca07-1c1d-3788-c9e5" sortIndex="">
+    <entryLink import="true" name="Fellblade Super-Heavy Battle Tank" hidden="false" id="28b1-8f09-464f-d1d5" type="selectionEntry" targetId="ca07-1c1d-3788-c9e5">
       <comment>Lord of War</comment>
       <categoryLinks>
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="5866-3dad-1713-8d0e" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Veteran Tactical Squad" hidden="false" id="a64b-106b-6f61-ed50" type="selectionEntry" targetId="07f6-349f-046d-bf5e" sortIndex="">
+    <entryLink import="true" name="Veteran Tactical Squad" hidden="false" id="a64b-106b-6f61-ed50" type="selectionEntry" targetId="07f6-349f-046d-bf5e">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="04f3-b32c-70bd-bbcb" primary="true" name="Elites"/>
       </categoryLinks>
       <comment>Elites</comment>
     </entryLink>
-    <entryLink import="true" name="Spartan Assault Tank" hidden="false" id="408b-aa40-5393-f894" type="selectionEntry" targetId="0f37-da12-bb6f-1a2e" sortIndex="">
+    <entryLink import="true" name="Spartan Assault Tank" hidden="false" id="408b-aa40-5393-f894" type="selectionEntry" targetId="0f37-da12-bb6f-1a2e">
       <categoryLinks>
         <categoryLink targetId="52d0-8b78-439e-18e5" id="72b9-de69-c8b0-6311" primary="true" name="Heavy Transport"/>
       </categoryLinks>
@@ -37760,13 +37774,13 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Rhino" hidden="false" id="a221-5810-8800-1f65" type="selectionEntry" targetId="1b41-8597-7168-c326" sortIndex="">
+    <entryLink import="true" name="Rhino" hidden="false" id="a221-5810-8800-1f65" type="selectionEntry" targetId="1b41-8597-7168-c326">
       <categoryLinks>
         <categoryLink targetId="d162-4711-5d60-0a48" id="3355-5afa-f53c-d3f0" primary="true" name="Transport"/>
       </categoryLinks>
       <comment>Transport</comment>
     </entryLink>
-    <entryLink import="true" name="Predator" hidden="false" id="aadc-fe71-f5a1-afcd" type="selectionEntry" targetId="b0ba-83cb-f3bf-bf2e" sortIndex="">
+    <entryLink import="true" name="Predator" hidden="false" id="aadc-fe71-f5a1-afcd" type="selectionEntry" targetId="b0ba-83cb-f3bf-bf2e">
       <categoryLinks>
         <categoryLink name="Armour" hidden="false" id="5fb9-94ac-6be8-4163" targetId="643a-1012-bd51-6537" primary="true"/>
       </categoryLinks>
@@ -37779,19 +37793,19 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Deredeo Dreadnought" hidden="false" id="ed8e-f983-51e3-15ce" type="selectionEntry" targetId="10ad-8abc-c6ef-97ad" sortIndex="">
+    <entryLink import="true" name="Deredeo Dreadnought" hidden="false" id="ed8e-f983-51e3-15ce" type="selectionEntry" targetId="10ad-8abc-c6ef-97ad">
       <categoryLinks>
         <categoryLink targetId="2499-7239-685f-8465" id="2201-17a0-9166-00ce" primary="true" name="War-engine"/>
       </categoryLinks>
       <comment>War-engine</comment>
     </entryLink>
-    <entryLink import="true" name="Leviathan Dreadnought" hidden="false" id="e468-70ee-8012-9b20" type="selectionEntry" targetId="9d6f-298d-743c-da5d" sortIndex="">
+    <entryLink import="true" name="Leviathan Dreadnought" hidden="false" id="e468-70ee-8012-9b20" type="selectionEntry" targetId="9d6f-298d-743c-da5d">
       <categoryLinks>
         <categoryLink targetId="2499-7239-685f-8465" id="7ff7-5775-b987-fc70" primary="true" name="War-engine"/>
       </categoryLinks>
       <comment>War-engine</comment>
     </entryLink>
-    <entryLink import="true" name="Veteran Assault Squad" hidden="false" id="d24c-7b59-b30c-bde7" type="selectionEntry" targetId="a119-c2a7-ff1a-399c" sortIndex="">
+    <entryLink import="true" name="Veteran Assault Squad" hidden="false" id="d24c-7b59-b30c-bde7" type="selectionEntry" targetId="a119-c2a7-ff1a-399c">
       <comment>Elites</comment>
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="86cf-b687-62e9-df53" primary="true" name="Elites"/>
@@ -37814,25 +37828,25 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Praetor" hidden="false" id="26fe-3b8a-0d61-e070" type="selectionEntry" targetId="9ae1-34b8-0b83-f1c5" sortIndex="">
+    <entryLink import="true" name="Praetor" hidden="false" id="26fe-3b8a-0d61-e070" type="selectionEntry" targetId="9ae1-34b8-0b83-f1c5">
       <categoryLinks>
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="4753-3066-5d61-3e66" primary="true" name="High Command"/>
       </categoryLinks>
       <comment>High Command</comment>
     </entryLink>
-    <entryLink import="true" name="Praetor in Terminator Armour" hidden="false" id="e5b5-5476-3c88-141b" type="selectionEntry" targetId="23ee-bc64-aea6-5272" sortIndex="">
+    <entryLink import="true" name="Praetor in Terminator Armour" hidden="false" id="e5b5-5476-3c88-141b" type="selectionEntry" targetId="23ee-bc64-aea6-5272">
       <categoryLinks>
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="6798-31b1-a68b-84ec" primary="true" name="High Command"/>
       </categoryLinks>
       <comment>High Command</comment>
     </entryLink>
-    <entryLink import="true" name="Centurion in Terminator Armour" hidden="false" id="5dd5-d00c-b150-34b9" type="selectionEntry" targetId="976b-2d8a-7e70-e6a7" sortIndex="">
+    <entryLink import="true" name="Centurion in Terminator Armour" hidden="false" id="5dd5-d00c-b150-34b9" type="selectionEntry" targetId="976b-2d8a-7e70-e6a7">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="96d8-65fd-0450-9973" primary="true" name="Command"/>
       </categoryLinks>
       <comment>Command</comment>
     </entryLink>
-    <entryLink import="true" name="Cataphractii Terminator Command Squad" hidden="false" id="c795-6de9-030e-e480" type="selectionEntry" targetId="b703-f7ab-dac5-0ae4" sortIndex="">
+    <entryLink import="true" name="Cataphractii Terminator Command Squad" hidden="false" id="c795-6de9-030e-e480" type="selectionEntry" targetId="b703-f7ab-dac5-0ae4">
       <categoryLinks>
         <categoryLink targetId="a38e-50ff-310f-f19e" id="e4de-fbc7-9b91-c918" primary="true" name="Retinue"/>
       </categoryLinks>
@@ -37850,49 +37864,49 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Chaplain" hidden="false" id="26d7-ccb4-b585-59ff" type="selectionEntry" targetId="a6c4-31c4-9e9d-ab03" sortIndex="">
+    <entryLink import="true" name="Chaplain" hidden="false" id="26d7-ccb4-b585-59ff" type="selectionEntry" targetId="a6c4-31c4-9e9d-ab03">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="829f-0f7b-3890-17d0" primary="true" name="Command"/>
       </categoryLinks>
       <comment>Command</comment>
     </entryLink>
-    <entryLink import="true" name="Centurion" hidden="false" id="f613-76c6-e58e-f286" type="selectionEntry" targetId="3392-e93d-79bc-d648" sortIndex="">
+    <entryLink import="true" name="Centurion" hidden="false" id="f613-76c6-e58e-f286" type="selectionEntry" targetId="3392-e93d-79bc-d648">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="11ac-806e-8290-2f6b" primary="true" name="Command"/>
       </categoryLinks>
       <comment>Command</comment>
     </entryLink>
-    <entryLink import="true" name="Esoterist" hidden="false" id="6fd5-131b-1d38-be86" type="selectionEntry" targetId="868f-f32d-d5ef-8021" sortIndex="">
+    <entryLink import="true" name="Esoterist" hidden="false" id="6fd5-131b-1d38-be86" type="selectionEntry" targetId="868f-f32d-d5ef-8021">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="284c-5bfe-15d6-8a84" primary="true" name="Command"/>
       </categoryLinks>
       <comment>Command</comment>
     </entryLink>
-    <entryLink import="true" name="Herald" hidden="false" id="93d9-93b5-0c39-0fde" type="selectionEntry" targetId="388f-1220-df0b-fcc6" sortIndex="">
+    <entryLink import="true" name="Herald" hidden="false" id="93d9-93b5-0c39-0fde" type="selectionEntry" targetId="388f-1220-df0b-fcc6">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="50a4-4f62-8212-5c0c" primary="true" name="Command"/>
       </categoryLinks>
       <comment>Command</comment>
     </entryLink>
-    <entryLink import="true" name="Legion Champion" hidden="false" id="196e-e469-ec70-e1e3" type="selectionEntry" targetId="8ab7-6f30-ce10-65df" sortIndex="">
+    <entryLink import="true" name="Legion Champion" hidden="false" id="196e-e469-ec70-e1e3" type="selectionEntry" targetId="8ab7-6f30-ce10-65df">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="f5d5-de65-988d-1cbc" primary="true" name="Command"/>
       </categoryLinks>
       <comment>Command</comment>
     </entryLink>
-    <entryLink import="true" name="Librarian" hidden="false" id="1a6e-2c58-9081-7ab4" type="selectionEntry" targetId="f06f-4418-b230-9ee7" sortIndex="">
+    <entryLink import="true" name="Librarian" hidden="false" id="1a6e-2c58-9081-7ab4" type="selectionEntry" targetId="f06f-4418-b230-9ee7">
       <comment>Command</comment>
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="6f2a-d61a-4710-9f17" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Master of Signals" hidden="false" id="a23e-e927-643e-1c43" type="selectionEntry" targetId="0c1d-e55e-1d4e-ab94" sortIndex="">
+    <entryLink import="true" name="Master of Signals" hidden="false" id="a23e-e927-643e-1c43" type="selectionEntry" targetId="0c1d-e55e-1d4e-ab94">
       <comment>Command</comment>
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="9789-e7a5-de1a-26c3" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Optae" hidden="false" id="03f3-e7ae-13b0-47c3" type="selectionEntry" targetId="1653-8dfd-2881-8cec" sortIndex="">
+    <entryLink import="true" name="Optae" hidden="false" id="03f3-e7ae-13b0-47c3" type="selectionEntry" targetId="1653-8dfd-2881-8cec">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="b79f-8403-c36f-bf61" primary="true" name="Command"/>
       </categoryLinks>
@@ -37904,12 +37918,12 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Overseer" hidden="false" id="fb61-fa6d-ea59-b8a4" type="selectionEntry" targetId="d43d-be97-943b-2081" sortIndex="">
+    <entryLink import="true" name="Overseer" hidden="false" id="fb61-fa6d-ea59-b8a4" type="selectionEntry" targetId="d43d-be97-943b-2081">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="bed4-8431-29ca-bcb5" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Praevian" hidden="false" id="43b8-0a02-83dd-d3f2" type="selectionEntry" targetId="7bb3-1bf7-ab4b-c34b" sortIndex="">
+    <entryLink import="true" name="Praevian" hidden="false" id="43b8-0a02-83dd-d3f2" type="selectionEntry" targetId="7bb3-1bf7-ab4b-c34b">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="0159-d713-d4b0-a993" primary="true" name="Command"/>
       </categoryLinks>
@@ -37921,37 +37935,37 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Siege Breaker" hidden="false" id="bd9b-8e97-b137-105d" type="selectionEntry" targetId="8128-2ba6-b677-eb81" sortIndex="">
+    <entryLink import="true" name="Siege Breaker" hidden="false" id="bd9b-8e97-b137-105d" type="selectionEntry" targetId="8128-2ba6-b677-eb81">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="ea5c-5b1a-7e72-f9b9" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Vigilator" hidden="false" id="1c13-a301-7104-5cc9" type="selectionEntry" targetId="22fd-89ea-04c6-3f3d" sortIndex="">
+    <entryLink import="true" name="Vigilator" hidden="false" id="1c13-a301-7104-5cc9" type="selectionEntry" targetId="22fd-89ea-04c6-3f3d">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="f95a-1d3a-bc59-1585" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Damocles Command Rhino" hidden="false" id="fe78-9671-5656-c304" type="selectionEntry" targetId="f214-aeb9-0dd6-9071" sortIndex="">
+    <entryLink import="true" name="Damocles Command Rhino" hidden="false" id="fe78-9671-5656-c304" type="selectionEntry" targetId="f214-aeb9-0dd6-9071">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="e2e2-ebf4-2680-160d" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Moritat" hidden="false" id="3624-91d5-28dd-1a9f" type="selectionEntry" targetId="0c28-19c0-71b2-424e" sortIndex="">
+    <entryLink import="true" name="Moritat" hidden="false" id="3624-91d5-28dd-1a9f" type="selectionEntry" targetId="0c28-19c0-71b2-424e">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="a44b-4a66-359d-fb3f" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Tactical Squad" hidden="false" id="e7dd-3f2d-ab65-9c65" type="selectionEntry" targetId="7b69-a372-a803-9c6f" sortIndex="">
+    <entryLink import="true" name="Tactical Squad" hidden="false" id="e7dd-3f2d-ab65-9c65" type="selectionEntry" targetId="7b69-a372-a803-9c6f">
       <categoryLinks>
         <categoryLink targetId="88e6-d373-4152-0dd8" id="70c4-abe3-0428-3f1e" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Praetorian Command Squad" hidden="false" id="141e-b2ce-23bf-bd0a" type="selectionEntry" targetId="0056-047c-b1f4-2555" sortIndex="">
+    <entryLink import="true" name="Praetorian Command Squad" hidden="false" id="141e-b2ce-23bf-bd0a" type="selectionEntry" targetId="0056-047c-b1f4-2555">
       <categoryLinks>
         <categoryLink targetId="a38e-50ff-310f-f19e" id="2999-00f4-507f-5caa" primary="true" name="Retinue"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Praetorian Command Squad with Jump Packs" hidden="false" id="22b4-e43d-d420-7658" type="selectionEntry" targetId="bcbf-35a6-91e8-b0b1" sortIndex="">
+    <entryLink import="true" name="Praetorian Command Squad with Jump Packs" hidden="false" id="22b4-e43d-d420-7658" type="selectionEntry" targetId="bcbf-35a6-91e8-b0b1">
       <categoryLinks>
         <categoryLink targetId="a38e-50ff-310f-f19e" id="7323-9c77-7237-9490" primary="true" name="Retinue"/>
       </categoryLinks>
@@ -37963,12 +37977,12 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Centurion Command Squad" hidden="false" id="7966-ca20-b5f1-218d" type="selectionEntry" targetId="4985-94a1-4448-a9ff" sortIndex="">
+    <entryLink import="true" name="Centurion Command Squad" hidden="false" id="7966-ca20-b5f1-218d" type="selectionEntry" targetId="4985-94a1-4448-a9ff">
       <categoryLinks>
         <categoryLink targetId="a38e-50ff-310f-f19e" id="76f8-ab49-f43a-2e09" primary="true" name="Retinue"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Tartaros Terminator Command Squad" hidden="false" id="f8c9-8c04-ae18-e7ea" type="selectionEntry" targetId="50fb-f90a-70ec-7649" sortIndex="">
+    <entryLink import="true" name="Tartaros Terminator Command Squad" hidden="false" id="f8c9-8c04-ae18-e7ea" type="selectionEntry" targetId="50fb-f90a-70ec-7649">
       <categoryLinks>
         <categoryLink targetId="a38e-50ff-310f-f19e" id="760f-7a72-f581-24ba" primary="true" name="Retinue"/>
       </categoryLinks>
@@ -37985,7 +37999,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Seeker Squad" hidden="false" id="3487-3ac1-d5c9-a405" type="selectionEntry" targetId="f1c4-6d65-d660-f16f" sortIndex="">
+    <entryLink import="true" name="Seeker Squad" hidden="false" id="3487-3ac1-d5c9-a405" type="selectionEntry" targetId="f1c4-6d65-d660-f16f">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="2ef6-f45e-20ac-9c90" primary="true" name="Elites"/>
       </categoryLinks>
@@ -38002,7 +38016,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Cataphractii Terminator Squad" hidden="false" id="bcb4-ccd6-7eb6-0afb" type="selectionEntry" targetId="e9a1-490f-8679-fc4e" sortIndex="">
+    <entryLink import="true" name="Cataphractii Terminator Squad" hidden="false" id="bcb4-ccd6-7eb6-0afb" type="selectionEntry" targetId="e9a1-490f-8679-fc4e">
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="550f-d50e-f5cd-652a" primary="true" name="Heavy Assault"/>
       </categoryLinks>
@@ -38019,7 +38033,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Tartaros Terminator Squad" hidden="false" id="8105-97e4-8327-c826" type="selectionEntry" targetId="3139-1aa9-4b77-da26" sortIndex="">
+    <entryLink import="true" name="Tartaros Terminator Squad" hidden="false" id="8105-97e4-8327-c826" type="selectionEntry" targetId="3139-1aa9-4b77-da26">
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="53ac-5d3b-01e6-1020" primary="true" name="Heavy Assault"/>
       </categoryLinks>
@@ -38036,7 +38050,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Saturnine Terminator Squad" hidden="false" id="df2d-e23d-dc17-55e6" type="selectionEntry" targetId="8b89-b309-c9bd-9c8a" sortIndex="">
+    <entryLink import="true" name="Saturnine Terminator Squad" hidden="false" id="df2d-e23d-dc17-55e6" type="selectionEntry" targetId="8b89-b309-c9bd-9c8a">
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="0645-a9aa-edb7-1195" primary="true" name="Heavy Assault"/>
       </categoryLinks>
@@ -38048,12 +38062,12 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Despoiler Squad" hidden="false" id="f869-2ab3-b777-0638" type="selectionEntry" targetId="44bd-10de-2055-40f6" sortIndex="">
+    <entryLink import="true" name="Despoiler Squad" hidden="false" id="f869-2ab3-b777-0638" type="selectionEntry" targetId="44bd-10de-2055-40f6">
       <categoryLinks>
         <categoryLink targetId="88e6-d373-4152-0dd8" id="15c8-0561-6647-3204" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Assault Squad" hidden="false" id="7726-d0ba-8b71-d890" type="selectionEntry" targetId="470d-5d41-cc59-b85b" sortIndex="">
+    <entryLink import="true" name="Assault Squad" hidden="false" id="7726-d0ba-8b71-d890" type="selectionEntry" targetId="470d-5d41-cc59-b85b">
       <categoryLinks>
         <categoryLink targetId="88e6-d373-4152-0dd8" id="a7a0-b6c1-beca-6886" primary="true" name="Troops"/>
       </categoryLinks>
@@ -38070,7 +38084,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Breacher Squad" hidden="false" id="182a-8bcd-34d2-fbba" type="selectionEntry" targetId="b564-8809-1bcf-d8b3" sortIndex="">
+    <entryLink import="true" name="Breacher Squad" hidden="false" id="182a-8bcd-34d2-fbba" type="selectionEntry" targetId="b564-8809-1bcf-d8b3">
       <categoryLinks>
         <categoryLink targetId="88e6-d373-4152-0dd8" id="638b-6b79-f750-51da" primary="true" name="Troops"/>
       </categoryLinks>
@@ -38082,17 +38096,17 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Tactical Support Squad" hidden="false" id="39a6-b136-acec-fea4" type="selectionEntry" targetId="2f96-9d5c-5c94-58db" sortIndex="">
+    <entryLink import="true" name="Tactical Support Squad" hidden="false" id="39a6-b136-acec-fea4" type="selectionEntry" targetId="2f96-9d5c-5c94-58db">
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="1d1c-e182-0288-23b2" primary="true" name="Support"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Heavy Support Squad" hidden="false" id="a5be-3984-06b2-449f" type="selectionEntry" targetId="1734-8863-96bf-f052" sortIndex="">
+    <entryLink import="true" name="Heavy Support Squad" hidden="false" id="a5be-3984-06b2-449f" type="selectionEntry" targetId="1734-8863-96bf-f052">
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="b245-46ad-5c7b-a552" primary="true" name="Support"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Apothecary" hidden="false" id="5cc5-ddd8-1477-47c4" type="selectionEntry" targetId="b7fe-ba65-00d2-57f0" sortIndex="">
+    <entryLink import="true" name="Apothecary" hidden="false" id="5cc5-ddd8-1477-47c4" type="selectionEntry" targetId="b7fe-ba65-00d2-57f0">
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="03ca-c0de-4f8a-7c34" primary="true" name="Support"/>
       </categoryLinks>
@@ -38110,7 +38124,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Techmarine" hidden="false" id="ada5-2dea-ee15-f1e9" type="selectionEntry" targetId="6cac-d5d2-dda7-ea8f" sortIndex="">
+    <entryLink import="true" name="Techmarine" hidden="false" id="ada5-2dea-ee15-f1e9" type="selectionEntry" targetId="6cac-d5d2-dda7-ea8f">
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="59fd-f339-cffd-8d94" primary="true" name="Support"/>
       </categoryLinks>
@@ -38123,12 +38137,12 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Deathstorm Drop Pod" hidden="false" id="d3f2-e827-f765-e95b" type="selectionEntry" targetId="84cd-c790-5886-8814" sortIndex="">
+    <entryLink import="true" name="Deathstorm Drop Pod" hidden="false" id="d3f2-e827-f765-e95b" type="selectionEntry" targetId="84cd-c790-5886-8814">
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="25b7-7573-1c25-828d" primary="true" name="Support"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Araknae Quad Accelerator Platform" hidden="false" id="d330-10a7-9c5a-37eb" type="selectionEntry" targetId="acef-2a3d-3434-7583" sortIndex="">
+    <entryLink import="true" name="Araknae Quad Accelerator Platform" hidden="false" id="d330-10a7-9c5a-37eb" type="selectionEntry" targetId="acef-2a3d-3434-7583">
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="fff6-4838-87d1-e943" primary="true" name="Support"/>
       </categoryLinks>
@@ -38140,7 +38154,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Contemptor Dreadnought" hidden="false" id="4f8f-1588-ee1e-789c" type="selectionEntry" targetId="3337-0b90-6ead-cba1" sortIndex="">
+    <entryLink import="true" name="Contemptor Dreadnought" hidden="false" id="4f8f-1588-ee1e-789c" type="selectionEntry" targetId="3337-0b90-6ead-cba1">
       <categoryLinks>
         <categoryLink targetId="2499-7239-685f-8465" id="d92a-fb67-4edc-ad3f" primary="true" name="War-engine"/>
       </categoryLinks>
@@ -38162,22 +38176,22 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Saturnine Dreadnought" hidden="false" id="cf93-8bbf-ceb2-b76a" type="selectionEntry" targetId="b26e-1244-2dbc-2b6d" sortIndex="">
+    <entryLink import="true" name="Saturnine Dreadnought" hidden="false" id="cf93-8bbf-ceb2-b76a" type="selectionEntry" targetId="b26e-1244-2dbc-2b6d">
       <categoryLinks>
         <categoryLink targetId="2499-7239-685f-8465" id="a59d-fa1d-cc92-c7ba" primary="true" name="War-engine"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Drop Pod" hidden="false" id="557f-29a5-eadf-1fef" type="selectionEntry" targetId="2eb3-783d-8dde-733b" sortIndex="">
+    <entryLink import="true" name="Drop Pod" hidden="false" id="557f-29a5-eadf-1fef" type="selectionEntry" targetId="2eb3-783d-8dde-733b">
       <categoryLinks>
         <categoryLink targetId="d162-4711-5d60-0a48" id="55d3-5d55-7368-d9bc" primary="true" name="Transport"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Termite" hidden="false" id="ea3e-96d6-ba5a-2c6c" type="selectionEntry" targetId="29c3-0b90-216c-b071" sortIndex="">
+    <entryLink import="true" name="Termite" hidden="false" id="ea3e-96d6-ba5a-2c6c" type="selectionEntry" targetId="29c3-0b90-216c-b071">
       <categoryLinks>
         <categoryLink targetId="d162-4711-5d60-0a48" id="0add-1a19-39a7-587b" primary="true" name="Transport"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Land Raider Carrier" hidden="false" id="d54f-d8d0-db20-0096" type="selectionEntry" targetId="e0b3-3d67-1299-1eb7" sortIndex="">
+    <entryLink import="true" name="Land Raider Carrier" hidden="false" id="d54f-d8d0-db20-0096" type="selectionEntry" targetId="e0b3-3d67-1299-1eb7">
       <categoryLinks>
         <categoryLink targetId="52d0-8b78-439e-18e5" id="04e2-365a-0e85-6cb8" primary="true" name="Heavy Transport"/>
       </categoryLinks>
@@ -38189,22 +38203,22 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Dreadnought Drop Pod" hidden="false" id="8269-c43e-fe33-64ec" type="selectionEntry" targetId="e004-bc89-4e2f-c59d" sortIndex="">
+    <entryLink import="true" name="Dreadnought Drop Pod" hidden="false" id="8269-c43e-fe33-64ec" type="selectionEntry" targetId="e004-bc89-4e2f-c59d">
       <categoryLinks>
         <categoryLink targetId="52d0-8b78-439e-18e5" id="04a9-6733-0710-7805" primary="true" name="Heavy Transport"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Dreadclaw Drop Pod" hidden="false" id="afda-bea8-56d6-dd0a" type="selectionEntry" targetId="2438-805f-7a19-3295" sortIndex="">
+    <entryLink import="true" name="Dreadclaw Drop Pod" hidden="false" id="afda-bea8-56d6-dd0a" type="selectionEntry" targetId="2438-805f-7a19-3295">
       <categoryLinks>
         <categoryLink targetId="52d0-8b78-439e-18e5" id="433e-fedc-3e2a-bc55" primary="true" name="Heavy Transport"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Kharybdis Assault Claw" hidden="false" id="dbac-c6ec-098c-8607" type="selectionEntry" targetId="ed0b-f07b-ed2f-b510" sortIndex="">
+    <entryLink import="true" name="Kharybdis Assault Claw" hidden="false" id="dbac-c6ec-098c-8607" type="selectionEntry" targetId="ed0b-f07b-ed2f-b510">
       <categoryLinks>
         <categoryLink targetId="52d0-8b78-439e-18e5" id="9691-1e90-3c75-9d3e" primary="true" name="Heavy Transport"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Reconnaissance Squad" hidden="false" id="ad5f-ba5f-3ab7-5a3c" type="selectionEntry" targetId="c89b-1138-0523-4a9f" sortIndex="">
+    <entryLink import="true" name="Reconnaissance Squad" hidden="false" id="ad5f-ba5f-3ab7-5a3c" type="selectionEntry" targetId="c89b-1138-0523-4a9f">
       <categoryLinks>
         <categoryLink targetId="2b65-a3f2-620a-dc58" id="7c58-53b8-bffa-c169" primary="true" name="Recon"/>
       </categoryLinks>
@@ -38221,12 +38235,12 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Sabre" hidden="false" id="b551-0070-bb98-02dd" type="selectionEntry" targetId="e62b-3d98-8678-1f97" sortIndex="">
+    <entryLink import="true" name="Sabre" hidden="false" id="b551-0070-bb98-02dd" type="selectionEntry" targetId="e62b-3d98-8678-1f97">
       <categoryLinks>
         <categoryLink targetId="2b65-a3f2-620a-dc58" id="eb39-f6f6-5024-58c3" primary="true" name="Recon"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Outrider Squadron" hidden="false" id="db0a-b391-932b-3817" type="selectionEntry" targetId="512e-6a63-1bd3-8a22" sortIndex="">
+    <entryLink import="true" name="Outrider Squadron" hidden="false" id="db0a-b391-932b-3817" type="selectionEntry" targetId="512e-6a63-1bd3-8a22">
       <categoryLinks>
         <categoryLink targetId="2b65-a3f2-620a-dc58" id="462f-2f04-a2ed-253c" primary="true" name="Recon"/>
       </categoryLinks>
@@ -38243,27 +38257,27 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Land Raider Explorator" hidden="false" id="ea44-b21f-f424-44fd" type="selectionEntry" targetId="5794-faa2-b2c8-ef0a" sortIndex="">
+    <entryLink import="true" name="Land Raider Explorator" hidden="false" id="ea44-b21f-f424-44fd" type="selectionEntry" targetId="5794-faa2-b2c8-ef0a">
       <categoryLinks>
         <categoryLink targetId="2b65-a3f2-620a-dc58" id="03df-ff68-a13e-06dc" primary="true" name="Recon"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Xiphon Interceptor" hidden="false" id="b1bc-1a7b-5deb-2e6b" type="selectionEntry" targetId="06a4-3ae8-c5d2-aa1d" sortIndex="">
+    <entryLink import="true" name="Xiphon Interceptor" hidden="false" id="b1bc-1a7b-5deb-2e6b" type="selectionEntry" targetId="06a4-3ae8-c5d2-aa1d">
       <categoryLinks>
         <categoryLink targetId="cf96-8891-3f9a-8921" id="d64c-545f-7814-c1ce" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Storm Eagle" hidden="false" id="6c98-3acf-65bb-99b0" type="selectionEntry" targetId="0816-621f-d49d-558c" sortIndex="">
+    <entryLink import="true" name="Storm Eagle" hidden="false" id="6c98-3acf-65bb-99b0" type="selectionEntry" targetId="0816-621f-d49d-558c">
       <categoryLinks>
         <categoryLink targetId="cf96-8891-3f9a-8921" id="598d-3354-d6c6-ce72" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Fire Raptor" hidden="false" id="5fad-0c88-5d9f-f48b" type="selectionEntry" targetId="3b08-d24a-c741-8daa" sortIndex="">
+    <entryLink import="true" name="Fire Raptor" hidden="false" id="5fad-0c88-5d9f-f48b" type="selectionEntry" targetId="3b08-d24a-c741-8daa">
       <categoryLinks>
         <categoryLink targetId="cf96-8891-3f9a-8921" id="99b0-e12f-87d6-ecf1" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Scimitar Jetbike Squadron" hidden="false" id="a8d4-0697-8077-5d6d" type="selectionEntry" targetId="aa3c-45cc-2dfb-a98e" sortIndex="">
+    <entryLink import="true" name="Scimitar Jetbike Squadron" hidden="false" id="a8d4-0697-8077-5d6d" type="selectionEntry" targetId="aa3c-45cc-2dfb-a98e">
       <categoryLinks>
         <categoryLink targetId="cf96-8891-3f9a-8921" id="9a5c-ea33-96c1-968e" primary="true" name="Fast Attack"/>
       </categoryLinks>
@@ -38275,32 +38289,32 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Javelin Speeder Squadron" hidden="false" id="5e2b-dc62-44d4-247a" type="selectionEntry" targetId="50f3-fca2-49ab-6de4" sortIndex="">
+    <entryLink import="true" name="Javelin Speeder Squadron" hidden="false" id="5e2b-dc62-44d4-247a" type="selectionEntry" targetId="50f3-fca2-49ab-6de4">
       <categoryLinks>
         <categoryLink targetId="cf96-8891-3f9a-8921" id="d9f3-1076-2c5a-01ad" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Land Speeder Squadron" hidden="false" id="fab9-d877-d11c-90b7" type="selectionEntry" targetId="7ebb-cdb2-017e-7c51" sortIndex="">
+    <entryLink import="true" name="Land Speeder Squadron" hidden="false" id="fab9-d877-d11c-90b7" type="selectionEntry" targetId="7ebb-cdb2-017e-7c51">
       <categoryLinks>
         <categoryLink targetId="cf96-8891-3f9a-8921" id="d57c-dca8-9b5c-b0ad" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Sicaran" hidden="false" id="f28e-ef2e-f28c-5385" type="selectionEntry" targetId="4d65-cef9-42c6-dd2c" sortIndex="">
+    <entryLink import="true" name="Sicaran" hidden="false" id="f28e-ef2e-f28c-5385" type="selectionEntry" targetId="4d65-cef9-42c6-dd2c">
       <categoryLinks>
         <categoryLink targetId="643a-1012-bd51-6537" id="2f54-7888-1313-6e88" primary="true" name="Armour"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Sicaran Venator" hidden="false" id="e782-806b-997d-257d" type="selectionEntry" targetId="1c8f-840b-c42f-338b" sortIndex="">
+    <entryLink import="true" name="Sicaran Venator" hidden="false" id="e782-806b-997d-257d" type="selectionEntry" targetId="1c8f-840b-c42f-338b">
       <categoryLinks>
         <categoryLink targetId="643a-1012-bd51-6537" id="61f3-2319-8ed7-66b0" primary="true" name="Armour"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Kratos Assault Tank" hidden="false" id="82d0-fe0d-f087-3fff" type="selectionEntry" targetId="e3f2-ff0d-f190-ecfd" sortIndex="">
+    <entryLink import="true" name="Kratos Assault Tank" hidden="false" id="82d0-fe0d-f087-3fff" type="selectionEntry" targetId="e3f2-ff0d-f190-ecfd">
       <categoryLinks>
         <categoryLink targetId="643a-1012-bd51-6537" id="2bc7-1d88-d455-0a91" primary="true" name="Armour"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Vindicator Siege Tank" hidden="false" id="ffb2-67fc-506a-bd6e" type="selectionEntry" targetId="5cb0-777c-bc90-f31a" sortIndex="">
+    <entryLink import="true" name="Vindicator Siege Tank" hidden="false" id="ffb2-67fc-506a-bd6e" type="selectionEntry" targetId="5cb0-777c-bc90-f31a">
       <categoryLinks>
         <categoryLink targetId="643a-1012-bd51-6537" id="e030-db62-5090-6b5c" primary="true" name="Armour"/>
       </categoryLinks>
@@ -38317,12 +38331,12 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Scorpius Missile Tank" hidden="false" id="fd2d-2f7b-803a-c377" type="selectionEntry" targetId="4e75-6c81-f3ac-33f1" sortIndex="">
+    <entryLink import="true" name="Scorpius Missile Tank" hidden="false" id="fd2d-2f7b-803a-c377" type="selectionEntry" targetId="4e75-6c81-f3ac-33f1">
       <categoryLinks>
         <categoryLink targetId="643a-1012-bd51-6537" id="1295-ad32-75d6-7038" primary="true" name="Armour"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Arquitor Bombard" hidden="false" id="08db-017f-44c0-51a4" type="selectionEntry" targetId="e6e4-964a-5852-9c07" sortIndex="">
+    <entryLink import="true" name="Arquitor Bombard" hidden="false" id="08db-017f-44c0-51a4" type="selectionEntry" targetId="e6e4-964a-5852-9c07">
       <categoryLinks>
         <categoryLink targetId="643a-1012-bd51-6537" id="e01f-e543-a5a0-4439" primary="true" name="Armour"/>
       </categoryLinks>
@@ -38339,42 +38353,42 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Cerberus Heavy Tank Destroyer" hidden="false" id="92b5-9340-df96-6375" type="selectionEntry" targetId="a7a8-9dd5-69b2-a598" sortIndex="">
+    <entryLink import="true" name="Cerberus Heavy Tank Destroyer" hidden="false" id="92b5-9340-df96-6375" type="selectionEntry" targetId="a7a8-9dd5-69b2-a598">
       <categoryLinks>
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="4dbb-30c4-024b-ac92" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Typhon Heavy Siege Tank" hidden="false" id="c6aa-db21-1ce7-6b8b" type="selectionEntry" targetId="b3e6-be98-5b83-87b4" sortIndex="">
+    <entryLink import="true" name="Typhon Heavy Siege Tank" hidden="false" id="c6aa-db21-1ce7-6b8b" type="selectionEntry" targetId="b3e6-be98-5b83-87b4">
       <categoryLinks>
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="f007-2df5-cd23-3c54" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Glaive Super-Heavy Special Weapons Tank" hidden="false" id="9ec8-017f-36c4-7b82" type="selectionEntry" targetId="7d7b-1430-d550-9fe6" sortIndex="">
+    <entryLink import="true" name="Glaive Super-Heavy Special Weapons Tank" hidden="false" id="9ec8-017f-36c4-7b82" type="selectionEntry" targetId="7d7b-1430-d550-9fe6">
       <categoryLinks>
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="5711-6a38-c86b-fdd2" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Falchion Super-Heavy Tank Destroyer" hidden="false" id="8590-270a-1a2a-2739" type="selectionEntry" targetId="af99-c4c6-cde2-2ee1" sortIndex="">
+    <entryLink import="true" name="Falchion Super-Heavy Tank Destroyer" hidden="false" id="8590-270a-1a2a-2739" type="selectionEntry" targetId="af99-c4c6-cde2-2ee1">
       <categoryLinks>
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="b1fd-28f5-7563-15b8" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Thunderhawk Gunship" hidden="false" id="5841-1f7e-c03a-ae33" type="selectionEntry" targetId="d1dc-6a65-136b-7d33" sortIndex="">
+    <entryLink import="true" name="Thunderhawk Gunship" hidden="false" id="5841-1f7e-c03a-ae33" type="selectionEntry" targetId="d1dc-6a65-136b-7d33">
       <categoryLinks>
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="ca4b-55c7-d502-a2ae" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Sokar Stormbird" hidden="false" id="8edf-e3e1-0a1b-20a9" type="selectionEntry" targetId="c2de-41c2-f4fa-996c" sortIndex="">
+    <entryLink import="true" name="Sokar Stormbird" hidden="false" id="8edf-e3e1-0a1b-20a9" type="selectionEntry" targetId="c2de-41c2-f4fa-996c">
       <categoryLinks>
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="0033-06d6-b148-2ddc" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Mastodon Super-Heavy Assault Transport" hidden="false" id="0047-b1df-944f-498e" type="selectionEntry" targetId="d29b-64ce-e91e-75fa" sortIndex="">
+    <entryLink import="true" name="Mastodon Super-Heavy Assault Transport" hidden="false" id="0047-b1df-944f-498e" type="selectionEntry" targetId="d29b-64ce-e91e-75fa">
       <categoryLinks>
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="4bf1-eaa2-2035-da7c" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Master of Descent" hidden="false" id="8315-e79b-2408-affa" type="selectionEntry" targetId="4b59-1e3b-022d-c253" sortIndex="">
+    <entryLink import="true" name="Master of Descent" hidden="false" id="8315-e79b-2408-affa" type="selectionEntry" targetId="4b59-1e3b-022d-c253">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="a384-f3cf-50b3-8d8f" primary="true" name="Command"/>
       </categoryLinks>
@@ -38423,12 +38437,12 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
       </categoryLinks>
       <comment>Iron Hands - The Iron-clad</comment>
     </entryLink>
-    <entryLink import="true" name="Augur Command and Control Squad" hidden="false" id="280f-aa99-18b0-e08d" type="selectionEntry" targetId="f44b-9e27-98f0-3578" sortIndex="">
+    <entryLink import="true" name="Augur Command and Control Squad" hidden="false" id="280f-aa99-18b0-e08d" type="selectionEntry" targetId="f44b-9e27-98f0-3578">
       <categoryLinks>
         <categoryLink targetId="a38e-50ff-310f-f19e" id="4f07-3e02-8083-155e" primary="true" name="Retinue"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Hyperios Missile Tank" hidden="false" id="001e-35e4-9d3c-4c46" type="selectionEntry" targetId="5999-0699-9293-04b8" sortIndex="">
+    <entryLink import="true" name="Hyperios Missile Tank" hidden="false" id="001e-35e4-9d3c-4c46" type="selectionEntry" targetId="5999-0699-9293-04b8">
       <categoryLinks>
         <categoryLink targetId="643a-1012-bd51-6537" id="d933-c30a-0cda-f227" primary="true" name="Armour"/>
       </categoryLinks>
@@ -38519,122 +38533,122 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
       </categoryLinks>
       <comment>Logisticae</comment>
     </entryLink>
-    <entryLink import="true" name="Mounted Praetor" hidden="false" id="b486-4dce-c2a3-2e24" type="selectionEntry" targetId="26d7-23ba-4059-8079" sortIndex="">
+    <entryLink import="true" name="Mounted Praetor" hidden="false" id="b486-4dce-c2a3-2e24" type="selectionEntry" targetId="26d7-23ba-4059-8079">
       <categoryLinks>
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="089e-d3e4-6f20-0ea9" primary="true" name="High Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Mounted Centurion" hidden="false" id="1ebd-e929-e5f8-2797" type="selectionEntry" targetId="2fb4-53c3-4e84-b9ec" sortIndex="">
+    <entryLink import="true" name="Mounted Centurion" hidden="false" id="1ebd-e929-e5f8-2797" type="selectionEntry" targetId="2fb4-53c3-4e84-b9ec">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="920c-fe61-12b2-d264" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Librarian With Jump Pack" hidden="false" id="b50d-623f-fdcd-76bf" type="selectionEntry" targetId="bd23-f9fd-4dff-9202" sortIndex="">
+    <entryLink import="true" name="Librarian With Jump Pack" hidden="false" id="b50d-623f-fdcd-76bf" type="selectionEntry" targetId="bd23-f9fd-4dff-9202">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="54f5-7f0b-9ff6-99eb" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Mounted Librarian" hidden="false" id="010f-4406-3a8e-5fbf" type="selectionEntry" targetId="e9e2-0c90-42f6-8853" sortIndex="">
+    <entryLink import="true" name="Mounted Librarian" hidden="false" id="010f-4406-3a8e-5fbf" type="selectionEntry" targetId="e9e2-0c90-42f6-8853">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="ac6a-3979-e1a5-febd" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Librarian In Terminator Armour" hidden="false" id="f134-7c32-d6b2-82f2" type="selectionEntry" targetId="a427-a107-4dd3-9897" sortIndex="">
+    <entryLink import="true" name="Librarian In Terminator Armour" hidden="false" id="f134-7c32-d6b2-82f2" type="selectionEntry" targetId="a427-a107-4dd3-9897">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="3fcc-8865-1ddf-83c1" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Esoterist With Jump Pack" hidden="false" id="1eba-7b11-3c4f-aa60" type="selectionEntry" targetId="3ad9-c7af-4c97-b080" sortIndex="">
+    <entryLink import="true" name="Esoterist With Jump Pack" hidden="false" id="1eba-7b11-3c4f-aa60" type="selectionEntry" targetId="3ad9-c7af-4c97-b080">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="14dc-7ac9-f45a-0e91" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Mounted Esoterist" hidden="false" id="644a-79bf-4ff5-c3ba" type="selectionEntry" targetId="7ab5-b907-4fa0-9caa" sortIndex="">
+    <entryLink import="true" name="Mounted Esoterist" hidden="false" id="644a-79bf-4ff5-c3ba" type="selectionEntry" targetId="7ab5-b907-4fa0-9caa">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="73cd-68a6-e37d-fad2" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Esoterist In Terminator Armour" hidden="false" id="4b24-f831-bc45-1e53" type="selectionEntry" targetId="f232-220d-4c9d-87f4" sortIndex="">
+    <entryLink import="true" name="Esoterist In Terminator Armour" hidden="false" id="4b24-f831-bc45-1e53" type="selectionEntry" targetId="f232-220d-4c9d-87f4">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="2697-e144-e0df-f9b1" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Legion Champion With Jump Pack" hidden="false" id="cb60-d6c9-55ca-f650" type="selectionEntry" targetId="98fc-9124-4534-a3a3" sortIndex="">
+    <entryLink import="true" name="Legion Champion With Jump Pack" hidden="false" id="cb60-d6c9-55ca-f650" type="selectionEntry" targetId="98fc-9124-4534-a3a3">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="8ce9-198d-8534-6921" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Mounted Legion Champion" hidden="false" id="e067-25ea-da8b-ed25" type="selectionEntry" targetId="81ff-36e6-4de3-a46b" sortIndex="">
+    <entryLink import="true" name="Mounted Legion Champion" hidden="false" id="e067-25ea-da8b-ed25" type="selectionEntry" targetId="81ff-36e6-4de3-a46b">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="0f24-fdfd-bf66-8087" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Legion Champion In Terminator Armour" hidden="false" id="b533-04b5-72e1-0083" type="selectionEntry" targetId="ba85-4d00-429e-bf29" sortIndex="">
+    <entryLink import="true" name="Legion Champion In Terminator Armour" hidden="false" id="b533-04b5-72e1-0083" type="selectionEntry" targetId="ba85-4d00-429e-bf29">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="ea9b-400f-a785-995e" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Chaplain With Jump Pack" hidden="false" id="620c-731e-f02e-6294" type="selectionEntry" targetId="9bda-87be-40f6-8f53" sortIndex="">
+    <entryLink import="true" name="Chaplain With Jump Pack" hidden="false" id="620c-731e-f02e-6294" type="selectionEntry" targetId="9bda-87be-40f6-8f53">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="eea7-ba31-a112-60f3" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Mounted Chaplain" hidden="false" id="aebd-07af-af5a-9319" type="selectionEntry" targetId="6924-162b-45e1-ac5a" sortIndex="">
+    <entryLink import="true" name="Mounted Chaplain" hidden="false" id="aebd-07af-af5a-9319" type="selectionEntry" targetId="6924-162b-45e1-ac5a">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="d78a-2abe-47a9-01c2" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Chaplain In Terminator Armour" hidden="false" id="3a4d-4253-3c1c-7d28" type="selectionEntry" targetId="d17a-1e84-4207-b627" sortIndex="">
+    <entryLink import="true" name="Chaplain In Terminator Armour" hidden="false" id="3a4d-4253-3c1c-7d28" type="selectionEntry" targetId="d17a-1e84-4207-b627">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="0318-4b20-75b5-74db" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Herald With Jump Pack" hidden="false" id="43f5-e215-ebac-3b92" type="selectionEntry" targetId="7c0e-025f-41b5-b7d0" sortIndex="">
+    <entryLink import="true" name="Herald With Jump Pack" hidden="false" id="43f5-e215-ebac-3b92" type="selectionEntry" targetId="7c0e-025f-41b5-b7d0">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="1589-4d2f-555b-a6f8" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Mounted Herald" hidden="false" id="7c3d-16f8-a6ae-2c73" type="selectionEntry" targetId="eb91-e184-4e8a-a0e0" sortIndex="">
+    <entryLink import="true" name="Mounted Herald" hidden="false" id="7c3d-16f8-a6ae-2c73" type="selectionEntry" targetId="eb91-e184-4e8a-a0e0">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="8c08-0eb5-67bb-add6" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Herald In Terminator Armour" hidden="false" id="6058-6f09-9050-f72a" type="selectionEntry" targetId="f0ed-1a89-45ad-8530" sortIndex="">
+    <entryLink import="true" name="Herald In Terminator Armour" hidden="false" id="6058-6f09-9050-f72a" type="selectionEntry" targetId="f0ed-1a89-45ad-8530">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="8fc8-c8a8-298e-5006" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Siege Breaker With Jump Pack" hidden="false" id="ef33-807f-26fa-e1f5" type="selectionEntry" targetId="5be6-e4e6-4649-9a27" sortIndex="">
+    <entryLink import="true" name="Siege Breaker With Jump Pack" hidden="false" id="ef33-807f-26fa-e1f5" type="selectionEntry" targetId="5be6-e4e6-4649-9a27">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="997b-5841-6d2c-632a" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Mounted Siege Breaker" hidden="false" id="ddd7-ad93-7a65-7501" type="selectionEntry" targetId="36ee-6609-4807-b87b" sortIndex="">
+    <entryLink import="true" name="Mounted Siege Breaker" hidden="false" id="ddd7-ad93-7a65-7501" type="selectionEntry" targetId="36ee-6609-4807-b87b">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="2856-0a67-2edd-8f3a" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Siege Breaker In Terminator Armour" hidden="false" id="4433-8d9a-41ba-796d" type="selectionEntry" targetId="00f7-04e9-4cb3-9092" sortIndex="">
+    <entryLink import="true" name="Siege Breaker In Terminator Armour" hidden="false" id="4433-8d9a-41ba-796d" type="selectionEntry" targetId="00f7-04e9-4cb3-9092">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="5313-0fb2-c9ec-b953" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Master Of Signals With Jump Pack" hidden="false" id="e191-cdff-31e0-1b62" type="selectionEntry" targetId="c956-a8ce-452d-99ca" sortIndex="">
+    <entryLink import="true" name="Master Of Signals With Jump Pack" hidden="false" id="e191-cdff-31e0-1b62" type="selectionEntry" targetId="c956-a8ce-452d-99ca">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="511e-8ac4-51ec-f3b1" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Mounted Master Of Signals" hidden="false" id="c8d5-4706-df9a-b38c" type="selectionEntry" targetId="5a4f-828b-4fec-bf2e" sortIndex="">
+    <entryLink import="true" name="Mounted Master Of Signals" hidden="false" id="c8d5-4706-df9a-b38c" type="selectionEntry" targetId="5a4f-828b-4fec-bf2e">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="ed79-d4c4-d4bd-b4bf" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Moritat Mortalis" hidden="false" id="3d6b-031a-e986-c0ba" type="selectionEntry" targetId="f244-2933-4c15-a199" sortIndex="">
+    <entryLink import="true" name="Moritat Mortalis" hidden="false" id="3d6b-031a-e986-c0ba" type="selectionEntry" targetId="f244-2933-4c15-a199">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="515e-abaf-e8f7-136c" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Forge Lord" hidden="false" id="5455-3b3b-50ec-a6c3" type="selectionEntry" targetId="eb2a-b29a-4a7c-b01b" sortIndex="">
+    <entryLink import="true" name="Forge Lord" hidden="false" id="5455-3b3b-50ec-a6c3" type="selectionEntry" targetId="eb2a-b29a-4a7c-b01b">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="1812-a85b-aabd-95e2" primary="true" name="Command"/>
       </categoryLinks>
@@ -38649,97 +38663,97 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
       </modifiers>
       <comment>Legiones Thallaxes</comment>
     </entryLink>
-    <entryLink import="true" name="Mounted Forge Lord" hidden="false" id="e17f-35ac-5be7-0c42" type="selectionEntry" targetId="aa14-570e-4a4d-b0ed" sortIndex="">
+    <entryLink import="true" name="Mounted Forge Lord" hidden="false" id="e17f-35ac-5be7-0c42" type="selectionEntry" targetId="aa14-570e-4a4d-b0ed">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="5de0-0f47-d086-22ab" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Forge Lord In Terminator Armour" hidden="false" id="510e-fab1-c084-ebe6" type="selectionEntry" targetId="b0e4-3685-4787-a9f9" sortIndex="">
+    <entryLink import="true" name="Forge Lord In Terminator Armour" hidden="false" id="510e-fab1-c084-ebe6" type="selectionEntry" targetId="b0e4-3685-4787-a9f9">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="cf38-f520-3b04-3b42" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Primus Medicae" hidden="false" id="0992-743b-a4a2-2410" type="selectionEntry" targetId="a9d2-eb7c-4e86-8e78" sortIndex="">
+    <entryLink import="true" name="Primus Medicae" hidden="false" id="0992-743b-a4a2-2410" type="selectionEntry" targetId="a9d2-eb7c-4e86-8e78">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="28db-4673-68d3-a58b" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Mounted Primus Medicae" hidden="false" id="f95b-5fb5-3745-8d83" type="selectionEntry" targetId="5f81-c793-41fb-91dd" sortIndex="">
+    <entryLink import="true" name="Mounted Primus Medicae" hidden="false" id="f95b-5fb5-3745-8d83" type="selectionEntry" targetId="5f81-c793-41fb-91dd">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="2cb5-1c39-2bfa-a267" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Primus Medicae In Terminator Armour" hidden="false" id="4e69-d5f6-81ff-f6fb" type="selectionEntry" targetId="25fa-16d8-4770-9f89" sortIndex="">
+    <entryLink import="true" name="Primus Medicae In Terminator Armour" hidden="false" id="4e69-d5f6-81ff-f6fb" type="selectionEntry" targetId="25fa-16d8-4770-9f89">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="e8ec-073b-dbf2-d76f" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Delegatus" hidden="false" id="b801-845c-5011-bfaa" type="selectionEntry" targetId="d45d-6c54-4dfc-92af" sortIndex="">
+    <entryLink import="true" name="Delegatus" hidden="false" id="b801-845c-5011-bfaa" type="selectionEntry" targetId="d45d-6c54-4dfc-92af">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="1b44-713b-f008-339a" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Mounted Delegatus" hidden="false" id="9549-9e41-8afe-403a" type="selectionEntry" targetId="69bd-718d-4166-aecb" sortIndex="">
+    <entryLink import="true" name="Mounted Delegatus" hidden="false" id="9549-9e41-8afe-403a" type="selectionEntry" targetId="69bd-718d-4166-aecb">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="0e9d-670a-6190-ea29" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Delegatus In Terminator Armour" hidden="false" id="847a-f9d1-0e66-4394" type="selectionEntry" targetId="60f6-7316-4e0a-874b" sortIndex="">
+    <entryLink import="true" name="Delegatus In Terminator Armour" hidden="false" id="847a-f9d1-0e66-4394" type="selectionEntry" targetId="60f6-7316-4e0a-874b">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="795e-2f57-bc8b-f70c" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Mortificator" hidden="false" id="9dc6-21a4-0823-55f2" type="selectionEntry" targetId="f48f-ed83-4285-b41c" sortIndex="">
+    <entryLink import="true" name="Mortificator" hidden="false" id="9dc6-21a4-0823-55f2" type="selectionEntry" targetId="f48f-ed83-4285-b41c">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="4d3d-fded-e683-7594" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Mortificator In Terminator Armour" hidden="false" id="6ad7-936d-e4f5-ff50" type="selectionEntry" targetId="93b0-98f1-4d08-8746" sortIndex="">
+    <entryLink import="true" name="Mortificator In Terminator Armour" hidden="false" id="6ad7-936d-e4f5-ff50" type="selectionEntry" targetId="93b0-98f1-4d08-8746">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="550c-2d19-8e0a-53e4" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Warmonger" hidden="false" id="1b17-03e3-3b3b-f9e3" type="selectionEntry" targetId="91b5-a2f3-4067-b498" sortIndex="">
+    <entryLink import="true" name="Warmonger" hidden="false" id="1b17-03e3-3b3b-f9e3" type="selectionEntry" targetId="91b5-a2f3-4067-b498">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="0a9c-7680-c2be-9613" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Warmonger In Terminator Armour" hidden="false" id="d4d5-8d88-5f93-c317" type="selectionEntry" targetId="f849-279f-4f2b-abca" sortIndex="">
+    <entryLink import="true" name="Warmonger In Terminator Armour" hidden="false" id="d4d5-8d88-5f93-c317" type="selectionEntry" targetId="f849-279f-4f2b-abca">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="99e0-3c45-cc9f-0f80" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Pathfinder" hidden="false" id="dddf-b40d-3be8-6206" type="selectionEntry" targetId="5cc3-18f7-4c45-92b0" sortIndex="">
+    <entryLink import="true" name="Pathfinder" hidden="false" id="dddf-b40d-3be8-6206" type="selectionEntry" targetId="5cc3-18f7-4c45-92b0">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="4558-09aa-4f21-ec2b" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Armistos" hidden="false" id="6e02-fdff-abe5-cd30" type="selectionEntry" targetId="5d97-c745-4b49-b2f2" sortIndex="">
+    <entryLink import="true" name="Armistos" hidden="false" id="6e02-fdff-abe5-cd30" type="selectionEntry" targetId="5d97-c745-4b49-b2f2">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="aec3-88ba-774e-72ee" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Praetorian Command Squad On Scimitar Jetbikes" hidden="false" id="dc41-0c3b-02c3-65b4" type="selectionEntry" targetId="f28c-5af9-4645-b438" sortIndex="">
+    <entryLink import="true" name="Praetorian Command Squad On Scimitar Jetbikes" hidden="false" id="dc41-0c3b-02c3-65b4" type="selectionEntry" targetId="f28c-5af9-4645-b438">
       <categoryLinks>
         <categoryLink targetId="a38e-50ff-310f-f19e" id="e128-615c-1b23-9da1" primary="true" name="Retinue"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Outrider Praetorian Command Squad" hidden="false" id="1690-b914-1a31-9c76" type="selectionEntry" targetId="86dd-250d-494a-b8e4" sortIndex="">
+    <entryLink import="true" name="Outrider Praetorian Command Squad" hidden="false" id="1690-b914-1a31-9c76" type="selectionEntry" targetId="86dd-250d-494a-b8e4">
       <categoryLinks>
         <categoryLink targetId="a38e-50ff-310f-f19e" id="6920-90c7-0c5f-93e3" primary="true" name="Retinue"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Veteran Breacher Squad" hidden="false" id="3a89-3bf3-d3d0-e7a2" type="selectionEntry" targetId="886c-5f0a-404b-8bfc" sortIndex="">
+    <entryLink import="true" name="Veteran Breacher Squad" hidden="false" id="3a89-3bf3-d3d0-e7a2" type="selectionEntry" targetId="886c-5f0a-404b-8bfc">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="2295-cc21-9103-88a5" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Veteran Heavy Support Squad" hidden="false" id="9319-86bf-c0ed-12d3" type="selectionEntry" targetId="1900-f550-46e0-bc78" sortIndex="">
+    <entryLink import="true" name="Veteran Heavy Support Squad" hidden="false" id="9319-86bf-c0ed-12d3" type="selectionEntry" targetId="1900-f550-46e0-bc78">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="64cb-dea5-5fdb-7c70" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Tartaros Terminator Siege Squad" hidden="false" id="e861-5ef7-7be7-f250" type="selectionEntry" targetId="dace-6eff-4491-b991" sortIndex="">
+    <entryLink import="true" name="Tartaros Terminator Siege Squad" hidden="false" id="e861-5ef7-7be7-f250" type="selectionEntry" targetId="dace-6eff-4491-b991">
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="2658-5a02-9257-9549" primary="true" name="Heavy Assault"/>
       </categoryLinks>
@@ -38751,22 +38765,22 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Indomitus Terminator Squad" hidden="false" id="97ac-5bf6-d9d9-c3ec" type="selectionEntry" targetId="cca5-a33d-466a-a3f4" sortIndex="">
+    <entryLink import="true" name="Indomitus Terminator Squad" hidden="false" id="97ac-5bf6-d9d9-c3ec" type="selectionEntry" targetId="cca5-a33d-466a-a3f4">
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="d724-e189-8c06-6bd2" primary="true" name="Heavy Assault"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Mortalis Destroyer Squad" hidden="false" id="7972-4464-8d02-c94c" type="selectionEntry" targetId="7711-26d2-4b83-b2c8" sortIndex="">
+    <entryLink import="true" name="Mortalis Destroyer Squad" hidden="false" id="7972-4464-8d02-c94c" type="selectionEntry" targetId="7711-26d2-4b83-b2c8">
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="7261-bfba-f60e-fb95" primary="true" name="Heavy Assault"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Destroyer Assault Squad" hidden="false" id="cf15-edf8-c6cf-733b" type="selectionEntry" targetId="95e2-f176-4750-914e" sortIndex="">
+    <entryLink import="true" name="Destroyer Assault Squad" hidden="false" id="cf15-edf8-c6cf-733b" type="selectionEntry" targetId="95e2-f176-4750-914e">
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="90e0-6f9a-df04-b881" primary="true" name="Heavy Assault"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Castra Ferrum Dreadnought" hidden="false" id="0365-190b-7181-ec24" type="selectionEntry" targetId="fb5b-af3b-4483-811f" sortIndex="">
+    <entryLink import="true" name="Castra Ferrum Dreadnought" hidden="false" id="0365-190b-7181-ec24" type="selectionEntry" targetId="fb5b-af3b-4483-811f">
       <categoryLinks>
         <categoryLink targetId="2499-7239-685f-8465" id="5e4e-dd40-ebd8-69c5" primary="true" name="War-engine"/>
       </categoryLinks>
@@ -38783,37 +38797,37 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Land Raider Achilles" hidden="false" id="7833-d40c-ce0b-17aa" type="selectionEntry" targetId="e937-c704-4177-ac8d" sortIndex="">
+    <entryLink import="true" name="Land Raider Achilles" hidden="false" id="7833-d40c-ce0b-17aa" type="selectionEntry" targetId="e937-c704-4177-ac8d">
       <categoryLinks>
         <categoryLink targetId="52d0-8b78-439e-18e5" id="8186-4568-d9f5-6ace" primary="true" name="Heavy Transport"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Caestus Assault Ram" hidden="false" id="374c-7e82-7f3e-6fec" type="selectionEntry" targetId="969d-a75a-4363-ae09" sortIndex="">
+    <entryLink import="true" name="Caestus Assault Ram" hidden="false" id="374c-7e82-7f3e-6fec" type="selectionEntry" targetId="969d-a75a-4363-ae09">
       <categoryLinks>
         <categoryLink targetId="52d0-8b78-439e-18e5" id="4f76-71c1-531d-c04b" primary="true" name="Heavy Transport"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Attack Bike Squadron" hidden="false" id="10e3-843f-39e5-df95" type="selectionEntry" targetId="b17c-db9a-43b0-82f0" sortIndex="">
+    <entryLink import="true" name="Attack Bike Squadron" hidden="false" id="10e3-843f-39e5-df95" type="selectionEntry" targetId="b17c-db9a-43b0-82f0">
       <categoryLinks>
         <categoryLink targetId="2b65-a3f2-620a-dc58" id="3673-5f38-4d2c-37de" primary="true" name="Recon"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Scout Squad" hidden="false" id="5f44-fc5b-ffeb-39fa" type="selectionEntry" targetId="e787-5b99-4fc2-9b4f" sortIndex="">
+    <entryLink import="true" name="Scout Squad" hidden="false" id="5f44-fc5b-ffeb-39fa" type="selectionEntry" targetId="e787-5b99-4fc2-9b4f">
       <categoryLinks>
         <categoryLink targetId="2b65-a3f2-620a-dc58" id="751b-7506-5c27-36d0" primary="true" name="Recon"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Legion Basilisk" hidden="false" id="96c2-d6a1-b8ef-8a4b" type="selectionEntry" targetId="9423-c3bb-4ae8-b374" sortIndex="">
+    <entryLink import="true" name="Legion Basilisk" hidden="false" id="96c2-d6a1-b8ef-8a4b" type="selectionEntry" targetId="9423-c3bb-4ae8-b374">
       <categoryLinks>
         <categoryLink targetId="643a-1012-bd51-6537" id="c6a1-bfd2-41ce-5f0d" primary="true" name="Armour"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Legion Medusa" hidden="false" id="38d2-2b6d-003a-c200" type="selectionEntry" targetId="3771-340e-4771-ae10" sortIndex="">
+    <entryLink import="true" name="Legion Medusa" hidden="false" id="38d2-2b6d-003a-c200" type="selectionEntry" targetId="3771-340e-4771-ae10">
       <categoryLinks>
         <categoryLink targetId="643a-1012-bd51-6537" id="876e-9a61-ec34-30dd" primary="true" name="Armour"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Thunderhawk Transporter" hidden="false" id="60b1-64f4-16b7-9895" type="selectionEntry" targetId="fb1c-580c-4b36-8fb7" sortIndex="">
+    <entryLink import="true" name="Thunderhawk Transporter" hidden="false" id="60b1-64f4-16b7-9895" type="selectionEntry" targetId="fb1c-580c-4b36-8fb7">
       <categoryLinks>
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="a2ec-3c0c-fbb7-d93d" primary="true" name="Lord of War"/>
       </categoryLinks>
@@ -39104,6 +39118,18 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
           </costs>
+        </entryLink>
+        <entryLink import="true" name="Plasma repeater" hidden="true" id="8912-6337-997e-0d97" type="selectionEntry" targetId="e61e-cac4-a125-5190" sortIndex="11">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="0a35-fce3-188c-b3aa" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <constraints>
@@ -40907,6 +40933,9 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
               </conditions>
             </modifier>
           </modifiers>
+          <infoLinks>
+            <infoLink name="Ravening Madmen" id="d019-0ed7-c146-f31c" hidden="false" type="rule" targetId="c320-4fba-0a25-15ff"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
