@@ -8140,9 +8140,14 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="0" field="3eaa-2da9-dfd2-1d2f">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="eb48-9812-af4c-6912" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="b824-c0ad-804e-0026" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="unit" childId="eb48-9812-af4c-6912" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -38849,7 +38854,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
       </categoryLinks>
       <comment>Daemonic Manifestation</comment>
     </entryLink>
-    <entryLink import="true" name="Centurion in Saturnine Terminator Armour" hidden="false" id="d7c4-cf86-bbcd-1bea" type="selectionEntry" targetId="aa81-d88f-48fa-e91b" sortIndex="135">
+    <entryLink import="true" name="Centurion in Saturnine Terminator Armour" hidden="false" id="d7c4-cf86-bbcd-1bea" type="selectionEntry" targetId="aa81-d88f-48fa-e91b" sortIndex="">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="7f54-4c64-9148-8c1d" primary="true" name="Command"/>
       </categoryLinks>
@@ -39871,10 +39876,23 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
               </conditionGroups>
               <comment>SL+Cmd/Spec/Champ Only</comment>
             </modifier>
+            <modifier type="set" value="0" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="b824-c0ad-804e-0026" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="3468-42b0-5824-ff55">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="b824-c0ad-804e-0026" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3468-42b0-5824-ff55"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Frost claw" hidden="true" id="6914-b320-966e-d4a8" type="selectionEntry" targetId="e14f-7600-8fdd-65ce" sortIndex="2">
           <costs>
