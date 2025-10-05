@@ -8912,7 +8912,7 @@ If the seismic macro-drill on a Model with this Special Rule is destroyed or oth
             </profile>
           </profiles>
         </entryLink>
-        <entryLink import="true" name="Programming Interrupt" hidden="false" id="2b96-73f0-8441-de44" type="selectionEntry" targetId="6820-76b3-ae10-23e5" sortIndex="4">
+        <entryLink import="true" name="Programming Interrupt" hidden="true" id="2b96-73f0-8441-de44" type="selectionEntry" targetId="6820-76b3-ae10-23e5" sortIndex="4">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
           </costs>
@@ -8935,6 +8935,18 @@ If the seismic macro-drill on a Model with this Special Rule is destroyed or oth
             <infoLink name="Cybertheugic Status: Guide" id="f899-c44f-23c7-8071" hidden="false" type="rule" targetId="14b4-336f-014d-f462"/>
             <infoLink name="Cybertheugic Status: Quicken" id="ef99-fdd5-e7c7-d524" hidden="false" type="rule" targetId="1160-e8ac-393e-f60c"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="unit" childId="b16b-29ee-1239-60c3" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="unit" childId="6512-b1e9-975b-184b" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Flesh-knit Protocols" hidden="false" id="bb72-7910-6e8e-2e72" type="selectionEntry" targetId="13c3-5795-9d9d-b27a" sortIndex="5">
           <costs>
@@ -9472,27 +9484,27 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <entryLinks>
-    <entryLink import="true" name="Archmagos" hidden="false" id="a5e9-209d-9f17-9afd" type="selectionEntry" targetId="b16b-29ee-1239-60c3" sortIndex="">
+    <entryLink import="true" name="Archmagos" hidden="false" id="a5e9-209d-9f17-9afd" type="selectionEntry" targetId="b16b-29ee-1239-60c3">
       <categoryLinks>
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="fb96-760b-cd5e-7f23" primary="true" name="High Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Archmagos on Abeyant" hidden="false" id="a2f9-908e-52aa-046f" type="selectionEntry" targetId="6512-b1e9-975b-184b" sortIndex="">
+    <entryLink import="true" name="Archmagos on Abeyant" hidden="false" id="a2f9-908e-52aa-046f" type="selectionEntry" targetId="6512-b1e9-975b-184b">
       <categoryLinks>
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="3e11-ba4f-ab41-78d1" primary="true" name="High Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Magos" hidden="false" id="59e2-dde7-5e8f-30e2" type="selectionEntry" targetId="0ccf-5e81-b051-6db9" sortIndex="">
+    <entryLink import="true" name="Magos" hidden="false" id="59e2-dde7-5e8f-30e2" type="selectionEntry" targetId="0ccf-5e81-b051-6db9">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="b23a-7ef9-fe5e-a554" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Magos on Abeyant" hidden="false" id="945b-b281-c049-2dfc" type="selectionEntry" targetId="0836-d574-9d22-307f" sortIndex="">
+    <entryLink import="true" name="Magos on Abeyant" hidden="false" id="945b-b281-c049-2dfc" type="selectionEntry" targetId="0836-d574-9d22-307f">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="2686-9224-a74a-9f31" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Arcuitor Magisterium" hidden="false" id="0701-af75-3ed0-5330" type="selectionEntry" targetId="d704-b125-8dc3-7ba2" sortIndex="">
+    <entryLink import="true" name="Arcuitor Magisterium" hidden="false" id="0701-af75-3ed0-5330" type="selectionEntry" targetId="d704-b125-8dc3-7ba2">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="c3fc-d446-047f-fdd9" primary="true" name="Command"/>
       </categoryLinks>
@@ -9504,17 +9516,17 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Scyllax Guardian Maniple" hidden="false" id="7fd7-738d-d9d2-a73c" type="selectionEntry" targetId="deed-12c8-f6e8-d95c" sortIndex="">
+    <entryLink import="true" name="Scyllax Guardian Maniple" hidden="false" id="7fd7-738d-d9d2-a73c" type="selectionEntry" targetId="deed-12c8-f6e8-d95c">
       <categoryLinks>
         <categoryLink targetId="a38e-50ff-310f-f19e" id="0ae5-bb21-781d-6462" primary="true" name="Retinue"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Echidnax Servo Maniple" hidden="false" id="9d21-5f4a-0234-078a" type="selectionEntry" targetId="466e-0da4-2961-6263" sortIndex="">
+    <entryLink import="true" name="Echidnax Servo Maniple" hidden="false" id="9d21-5f4a-0234-078a" type="selectionEntry" targetId="466e-0da4-2961-6263">
       <categoryLinks>
         <categoryLink targetId="a38e-50ff-310f-f19e" id="f7f0-a2bd-ac0e-9196" primary="true" name="Retinue"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Domitar Battle Maniple" hidden="false" id="994a-d2fc-3d52-61cd" type="selectionEntry" targetId="cefd-9aca-871d-3263" sortIndex="">
+    <entryLink import="true" name="Domitar Battle Maniple" hidden="false" id="994a-d2fc-3d52-61cd" type="selectionEntry" targetId="cefd-9aca-871d-3263">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="1e66-3777-f90d-7cae" primary="true" name="Elites"/>
       </categoryLinks>
@@ -9526,7 +9538,7 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Myrmidon Secutor Host" hidden="false" id="444f-f0b2-7106-e2ce" type="selectionEntry" targetId="6947-89b1-0c02-fd17" sortIndex="">
+    <entryLink import="true" name="Myrmidon Secutor Host" hidden="false" id="444f-f0b2-7106-e2ce" type="selectionEntry" targetId="6947-89b1-0c02-fd17">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="1e44-1526-878a-f276" primary="true" name="Elites"/>
       </categoryLinks>
@@ -9538,7 +9550,7 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Myrmidon Destructor Host" hidden="false" id="a105-e91d-fa54-6d05" type="selectionEntry" targetId="229c-7b38-1dac-de3e" sortIndex="">
+    <entryLink import="true" name="Myrmidon Destructor Host" hidden="false" id="a105-e91d-fa54-6d05" type="selectionEntry" targetId="229c-7b38-1dac-de3e">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="f96f-6dd4-2d80-4ee3" primary="true" name="Elites"/>
       </categoryLinks>
@@ -9550,12 +9562,12 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Castellax Destructor Maniple" hidden="false" id="3676-9cda-cbb3-0552" type="selectionEntry" targetId="112f-1168-d07c-7f8f" sortIndex="">
+    <entryLink import="true" name="Castellax Destructor Maniple" hidden="false" id="3676-9cda-cbb3-0552" type="selectionEntry" targetId="112f-1168-d07c-7f8f">
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="f34b-c6c6-d147-5dbe" primary="true" name="Heavy Assault"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Ursarax Cohort" hidden="false" id="a8e1-7ca7-b17e-8f51" type="selectionEntry" targetId="4d8f-5e38-5902-0947" sortIndex="">
+    <entryLink import="true" name="Ursarax Cohort" hidden="false" id="a8e1-7ca7-b17e-8f51" type="selectionEntry" targetId="4d8f-5e38-5902-0947">
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="7cc8-d536-d18c-4875" primary="true" name="Heavy Assault"/>
       </categoryLinks>
@@ -9567,12 +9579,12 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Tech-Priest" hidden="false" id="c778-e1d5-301a-2804" type="selectionEntry" targetId="bc86-4606-7fce-1866" sortIndex="">
+    <entryLink import="true" name="Tech-Priest" hidden="false" id="c778-e1d5-301a-2804" type="selectionEntry" targetId="bc86-4606-7fce-1866">
       <categoryLinks>
         <categoryLink targetId="88e6-d373-4152-0dd8" id="7a9f-81fe-81cc-caa3" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Tech-Thrall Covenant" hidden="false" id="64bb-ed67-2a15-c357" type="selectionEntry" targetId="6369-b3b1-0ce1-64f8" sortIndex="">
+    <entryLink import="true" name="Tech-Thrall Covenant" hidden="false" id="64bb-ed67-2a15-c357" type="selectionEntry" targetId="6369-b3b1-0ce1-64f8">
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="5186-5e36-c55e-67d9" primary="true" name="Support"/>
       </categoryLinks>
@@ -9584,7 +9596,7 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Thallax Cohort" hidden="false" id="44ac-38f8-633f-9bfd" type="selectionEntry" targetId="a4ad-1b49-0303-59b3" sortIndex="">
+    <entryLink import="true" name="Thallax Cohort" hidden="false" id="44ac-38f8-633f-9bfd" type="selectionEntry" targetId="a4ad-1b49-0303-59b3">
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="dcd2-b567-6aea-878f" primary="true" name="Support"/>
       </categoryLinks>
@@ -9601,7 +9613,7 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Castellax Battle Maniple" hidden="false" id="0d8a-be54-5bd2-1d5a" type="selectionEntry" targetId="e8d6-2ba5-d10d-d617" sortIndex="">
+    <entryLink import="true" name="Castellax Battle Maniple" hidden="false" id="0d8a-be54-5bd2-1d5a" type="selectionEntry" targetId="e8d6-2ba5-d10d-d617">
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="86c2-b257-0377-d201" primary="true" name="Support"/>
       </categoryLinks>
@@ -9613,7 +9625,7 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Thanatar Siege Maniple" hidden="false" id="d3c4-a71a-85bf-01f2" type="selectionEntry" targetId="3833-2f09-7ec7-b5f5" sortIndex="">
+    <entryLink import="true" name="Thanatar Siege Maniple" hidden="false" id="d3c4-a71a-85bf-01f2" type="selectionEntry" targetId="3833-2f09-7ec7-b5f5">
       <categoryLinks>
         <categoryLink targetId="2499-7239-685f-8465" id="eb74-6423-8710-e7da" primary="true" name="War-engine"/>
       </categoryLinks>
@@ -9625,42 +9637,42 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Armiger Moirax" hidden="false" id="2646-d42e-7383-0e94" type="selectionEntry" targetId="1777-db1a-0cd5-6a89" sortIndex="">
+    <entryLink import="true" name="Armiger Moirax" hidden="false" id="2646-d42e-7383-0e94" type="selectionEntry" targetId="1777-db1a-0cd5-6a89">
       <categoryLinks>
         <categoryLink targetId="2499-7239-685f-8465" id="5ed8-70f1-5983-ce5a" primary="true" name="War-engine"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Triaros Armoured Conveyor" hidden="false" id="b0a1-0f87-385f-4239" type="selectionEntry" targetId="0896-07f4-8844-9542" sortIndex="">
+    <entryLink import="true" name="Triaros Armoured Conveyor" hidden="false" id="b0a1-0f87-385f-4239" type="selectionEntry" targetId="0896-07f4-8844-9542">
       <categoryLinks>
         <categoryLink targetId="52d0-8b78-439e-18e5" id="ea06-f22e-48d2-b401" primary="true" name="Heavy Transport"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Vorax Attack Maniple" hidden="false" id="3372-0081-54a2-b01d" type="selectionEntry" targetId="de2e-f9b5-abe6-b8b5" sortIndex="">
+    <entryLink import="true" name="Vorax Attack Maniple" hidden="false" id="3372-0081-54a2-b01d" type="selectionEntry" targetId="de2e-f9b5-abe6-b8b5">
       <categoryLinks>
         <categoryLink targetId="2b65-a3f2-620a-dc58" id="79b5-9aec-5cb5-7ae6" primary="true" name="Recon"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Vultarax Stratos Squadron" hidden="false" id="cc63-b49e-c903-0bd4" type="selectionEntry" targetId="710e-f1ea-0061-d3cb" sortIndex="">
+    <entryLink import="true" name="Vultarax Stratos Squadron" hidden="false" id="cc63-b49e-c903-0bd4" type="selectionEntry" targetId="710e-f1ea-0061-d3cb">
       <categoryLinks>
         <categoryLink targetId="cf96-8891-3f9a-8921" id="c176-bdcd-5b13-0296" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Karacnos Assault Tank" hidden="false" id="53b5-c2ff-0816-44b6" type="selectionEntry" targetId="ce4c-753d-aaf1-b4ab" sortIndex="">
+    <entryLink import="true" name="Karacnos Assault Tank" hidden="false" id="53b5-c2ff-0816-44b6" type="selectionEntry" targetId="ce4c-753d-aaf1-b4ab">
       <categoryLinks>
         <categoryLink targetId="643a-1012-bd51-6537" id="c622-08ac-aba0-0c29" primary="true" name="Armour"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Krios Battle Tank" hidden="false" id="d8bb-2984-96f9-2b38" type="selectionEntry" targetId="135f-153c-308a-7a1c" sortIndex="">
+    <entryLink import="true" name="Krios Battle Tank" hidden="false" id="d8bb-2984-96f9-2b38" type="selectionEntry" targetId="135f-153c-308a-7a1c">
       <categoryLinks>
         <categoryLink targetId="643a-1012-bd51-6537" id="9259-cdef-f089-a83d" primary="true" name="Armour"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Krios Venator" hidden="false" id="310a-fd05-ec2e-3c3e" type="selectionEntry" targetId="b444-b85f-85f8-e6f3" sortIndex="">
+    <entryLink import="true" name="Krios Venator" hidden="false" id="310a-fd05-ec2e-3c3e" type="selectionEntry" targetId="b444-b85f-85f8-e6f3">
       <categoryLinks>
         <categoryLink targetId="643a-1012-bd51-6537" id="3ce3-370d-5313-7cfd" primary="true" name="Armour"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Decimator" hidden="false" id="4930-9671-b90d-37ac" type="selectionEntry" targetId="e60b-8b82-11e8-e59c" sortIndex="">
+    <entryLink import="true" name="Decimator" hidden="false" id="4930-9671-b90d-37ac" type="selectionEntry" targetId="e60b-8b82-11e8-e59c">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -9682,7 +9694,7 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         <categoryLink targetId="5d5e-958f-e388-50b5" id="7a25-1c1e-f3ed-c7f3" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Blood Slaughterer" hidden="false" id="7639-3262-6b8b-56b5" type="selectionEntry" targetId="a6c8-1404-1b6f-ced9" sortIndex="">
+    <entryLink import="true" name="Blood Slaughterer" hidden="false" id="7639-3262-6b8b-56b5" type="selectionEntry" targetId="a6c8-1404-1b6f-ced9">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -9704,7 +9716,7 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="8fa9-b0c3-a205-a482" primary="true" name="Heavy Assault"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Brass Scorpion" hidden="false" id="c5c6-ce90-401e-c053" type="selectionEntry" targetId="0264-23b6-0e95-8dfa" sortIndex="">
+    <entryLink import="true" name="Brass Scorpion" hidden="false" id="c5c6-ce90-401e-c053" type="selectionEntry" targetId="0264-23b6-0e95-8dfa">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -9721,7 +9733,7 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="4126-335c-ea7f-1b4d" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Kytan Daemon Engine" hidden="false" id="99f8-4aa6-beab-3f30" type="selectionEntry" targetId="b332-1007-5b23-7467" sortIndex="">
+    <entryLink import="true" name="Kytan Daemon Engine" hidden="false" id="99f8-4aa6-beab-3f30" type="selectionEntry" targetId="b332-1007-5b23-7467">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -9738,7 +9750,7 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="92eb-c55c-af2a-a985" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Anacharis Scoria" hidden="false" id="a580-4729-a18a-f9e0" type="selectionEntry" targetId="10f5-dae8-f081-d82f" sortIndex="">
+    <entryLink import="true" name="Anacharis Scoria" hidden="false" id="a580-4729-a18a-f9e0" type="selectionEntry" targetId="10f5-dae8-f081-d82f">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -9755,7 +9767,7 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="76c6-538e-6047-41dd" primary="true" name="High Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Archmagos Draykavac" hidden="false" id="adca-83e9-b3ad-36eb" type="selectionEntry" targetId="3563-badf-5bdb-cdfe" sortIndex="">
+    <entryLink import="true" name="Archmagos Draykavac" hidden="false" id="adca-83e9-b3ad-36eb" type="selectionEntry" targetId="3563-badf-5bdb-cdfe">
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -9772,7 +9784,7 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="97fa-10c3-436c-ee6c" primary="true" name="High Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Tech Thrall Defence Covenant" hidden="false" id="da4d-3651-6c7c-c5fa" type="selectionEntry" targetId="e8d5-df1b-30f8-8887" sortIndex="">
+    <entryLink import="true" name="Tech Thrall Defence Covenant" hidden="false" id="da4d-3651-6c7c-c5fa" type="selectionEntry" targetId="e8d5-df1b-30f8-8887">
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="35c0-70f3-6fe9-65ba" primary="true" name="Support"/>
       </categoryLinks>
@@ -9784,7 +9796,7 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Arlatax Battle Maniple" hidden="false" id="559c-8bc6-9f46-c7ad" type="selectionEntry" targetId="88e3-4c5f-d4b7-b300" sortIndex="">
+    <entryLink import="true" name="Arlatax Battle Maniple" hidden="false" id="559c-8bc6-9f46-c7ad" type="selectionEntry" targetId="88e3-4c5f-d4b7-b300">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="2a7b-ba74-da7b-62e9" primary="true" name="Elites"/>
       </categoryLinks>
@@ -9796,32 +9808,32 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Mechanicum Termite" hidden="false" id="5d4e-4320-cb37-0e82" type="selectionEntry" targetId="2943-f3ad-5b26-1377" sortIndex="">
+    <entryLink import="true" name="Mechanicum Termite" hidden="false" id="5d4e-4320-cb37-0e82" type="selectionEntry" targetId="2943-f3ad-5b26-1377">
       <categoryLinks>
         <categoryLink targetId="d162-4711-5d60-0a48" id="8253-9d7a-8bf1-77a8" primary="true" name="Transport"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Mechanicum Tarantula Battery" hidden="false" id="84c9-6d52-fba4-1508" type="selectionEntry" targetId="02c3-37ea-5d20-8291" sortIndex="">
+    <entryLink import="true" name="Mechanicum Tarantula Battery" hidden="false" id="84c9-6d52-fba4-1508" type="selectionEntry" targetId="02c3-37ea-5d20-8291">
       <categoryLinks>
         <categoryLink targetId="2b65-a3f2-620a-dc58" id="68c7-de1d-f4f8-ba63" primary="true" name="Recon"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Mechanicum Macrocarid Explorator" hidden="false" id="6f44-47e2-8a63-fb5f" type="selectionEntry" targetId="360a-d28e-99bb-fae5" sortIndex="">
+    <entryLink import="true" name="Mechanicum Macrocarid Explorator" hidden="false" id="6f44-47e2-8a63-fb5f" type="selectionEntry" targetId="360a-d28e-99bb-fae5">
       <categoryLinks>
         <categoryLink targetId="52d0-8b78-439e-18e5" id="318e-ddd9-cf9b-e545" primary="true" name="Heavy Transport"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Mechanicum Ordinatus Ulator" hidden="false" id="b034-e2bd-25a8-2c4d" type="selectionEntry" targetId="0eec-dfde-0a0f-4440" sortIndex="">
+    <entryLink import="true" name="Mechanicum Ordinatus Ulator" hidden="false" id="b034-e2bd-25a8-2c4d" type="selectionEntry" targetId="0eec-dfde-0a0f-4440">
       <categoryLinks>
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="1080-1562-271b-7926" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Mechanicum Ordinatus Sagittar" hidden="false" id="6b53-b01e-6a76-760e" type="selectionEntry" targetId="85ac-f5f9-5099-e423" sortIndex="">
+    <entryLink import="true" name="Mechanicum Ordinatus Sagittar" hidden="false" id="6b53-b01e-6a76-760e" type="selectionEntry" targetId="85ac-f5f9-5099-e423">
       <categoryLinks>
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="04bc-e728-4055-3a03" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Mechanicum Ordinatus Aktaeus" hidden="false" id="429d-4826-3d9b-8673" type="selectionEntry" targetId="9111-1de6-ec9d-526a" sortIndex="">
+    <entryLink import="true" name="Mechanicum Ordinatus Aktaeus" hidden="false" id="429d-4826-3d9b-8673" type="selectionEntry" targetId="9111-1de6-ec9d-526a">
       <categoryLinks>
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="90a5-0234-747e-097e" primary="true" name="Lord of War"/>
       </categoryLinks>
