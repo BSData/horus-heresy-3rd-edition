@@ -2998,6 +2998,7 @@ Preceptor</comment>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ef71-21cd-d4c7-0391" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Army Configuration" hidden="false" id="23b4-e5bc-13ae-fe8b" targetId="abfa-86ab-1726-077a"/>
           </categoryLinks>
         </forceEntry>
         <forceEntry name="Knight Households Primary Detachment" id="9c71-cdfc-f4ae-07cb" hidden="true" sortIndex="1">
@@ -3572,6 +3573,7 @@ Special Rule and modify the value of X on any version of the Auto-repair (X) Spe
     <catalogueLink type="catalogue" name="Mechanicum" id="ce8b-ffe8-e082-4c6a" targetId="2f57-6e9d-8a7b-5c2e"/>
     <catalogueLink type="catalogue" name="Solar Auxilia" id="4bad-ffac-2427-bf34" targetId="7851-69ac-f701-034e" importRootEntries="false"/>
     <catalogueLink type="catalogue" name="Imperialis Militia" id="3152-d9e6-8287-2325" targetId="f477-a408-5e04-1e5a"/>
+    <catalogueLink type="catalogue" name="Mech Library" id="3c2c-b39c-9e7e-bfcf" targetId="a159-1624-dbac-7af8"/>
   </catalogueLinks>
   <sharedProfiles>
     <profile name="[Questoris Familia]" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="32ec-1c1a-df63-3253">
@@ -3665,6 +3667,13 @@ Once the cost has been paid, the Reactive Player must select one Unit under thei
       <categoryLinks>
         <categoryLink targetId="abfa-86ab-1726-077a" id="cd65-124d-5bac-41b7" primary="true" name="Army Configuration"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="99e4-c547-dab4-c93a" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Armiger Helverin" hidden="false" id="c422-2eeb-ba95-e6ef" type="selectionEntry" targetId="c937-b3a4-a9ce-f193">
       <categoryLinks>
@@ -3814,6 +3823,13 @@ Once the cost has been paid, the Reactive Player must select one Unit under thei
       <categoryLinks>
         <categoryLink targetId="abfa-86ab-1726-077a" id="2827-b38a-03ab-4ac3" primary="true" name="Army Configuration"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="99e4-c547-dab4-c93a" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Infantry Troop" hidden="false" id="e321-b6cc-b075-9685" type="selectionEntry" targetId="f328-5cb1-4526-95d2" sortIndex="301">
       <categoryLinks>
@@ -3850,6 +3866,36 @@ Once the cost has been paid, the Reactive Player must select one Unit under thei
         <categoryLink targetId="52d0-8b78-439e-18e5" id="6a7e-1794-7582-373a" primary="true" name="Heavy Transport"/>
       </categoryLinks>
       <comment>Yeomanry Mesnie</comment>
+    </entryLink>
+    <entryLink import="true" name="Provenances of War" hidden="true" id="6b88-4e39-ceea-0327" type="selectionEntry" targetId="4fc7-e43d-4322-5e54">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="d533-8830-e464-95bc" primary="true" name="Army Configuration"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="99e4-c547-dab4-c93a" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Triaros Armoured Conveyor" hidden="true" id="7232-8a24-3874-f3c9" type="selectionEntry" targetId="0896-07f4-8844-9542" sortIndex="307">
+      <infoLinks>
+        <infoLink name="Imperialis Militia" id="18ee-ce8f-c55c-0052" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
+        <infoLink name="Third-Line" id="2839-ed58-3ce8-e9ae" hidden="false" type="rule" targetId="9ac8-527e-1249-8600"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="20bb-9821-a3aa-3ef7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="b3b6-dc52-35dc-24b4" field="category"/>
+        <modifier type="remove" value="901a-6b71-7a29-4597" field="category"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="52d0-8b78-439e-18e5" id="5e7d-4cdd-a8f4-2720" primary="true" name="Heavy Transport"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedRules>
