@@ -36982,23 +36982,23 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="ef4a-8cb6-8982-5922">
+        <modifier type="set" value="1" field="ef4a-8cb6-8982-5922">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="0" field="3b55-e230-2e18-75ad">
+        <modifier type="set" value="1" field="3b55-e230-2e18-75ad">
           <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b55-e230-2e18-75ad" automatic="true"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef4a-8cb6-8982-5922" automatic="true"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3b55-e230-2e18-75ad" automatic="true"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ef4a-8cb6-8982-5922" automatic="true"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Decurion Lanius" hidden="false" id="05ea-aecd-f5bc-63ea">
@@ -38855,7 +38855,7 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
       </categoryLinks>
       <comment>Daemonic Manifestation</comment>
     </entryLink>
-    <entryLink import="true" name="Centurion in Saturnine Terminator Armour" hidden="false" id="d7c4-cf86-bbcd-1bea" type="selectionEntry" targetId="aa81-d88f-48fa-e91b" sortIndex="">
+    <entryLink import="true" name="Centurion in Saturnine Terminator Armour" hidden="false" id="d7c4-cf86-bbcd-1bea" type="selectionEntry" targetId="aa81-d88f-48fa-e91b">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="7f54-4c64-9148-8c1d" primary="true" name="Command"/>
       </categoryLinks>
