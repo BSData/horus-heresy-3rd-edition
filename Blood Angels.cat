@@ -2514,6 +2514,7 @@ When a Unit with at least one Model with this Special Rule is deployed via Deep 
                 <entryLink hidden="false" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" id="8746-f643-4c62-b074" name="Legion Pistols">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0223-4aef-4265-b592" automatic="true"/>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="da6a-4939-999b-fbaa"/>
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="For every four Models in this Unit, one Inductii in this Unit may have its bolt pistol exchanged for " field="name"/>
@@ -2521,6 +2522,11 @@ When a Unit with at least one Model with this Special Rule is deployed via Deep 
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="3a14-74ac-8634-c204" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="da6a-4939-999b-fbaa">
+                      <repeats>
+                        <repeat value="4" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                      </repeats>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -2685,7 +2691,7 @@ In Step 4 of the Resolution Sub-Phase a Player that has won Combat must select t
     </profile>
   </sharedProfiles>
   <entryLinks>
-    <entryLink import="true" name="Sanguinius" hidden="false" id="a7b0-582a-5cb2-ff69" type="selectionEntry" targetId="0fb0-cab6-34dc-b9b0" sortIndex="">
+    <entryLink import="true" name="Sanguinius" hidden="false" id="a7b0-582a-5cb2-ff69" type="selectionEntry" targetId="0fb0-cab6-34dc-b9b0">
       <categoryLinks>
         <categoryLink targetId="22ee-7208-4089-b005" id="775e-64ed-2816-7692" primary="true" name="Warlord"/>
         <categoryLink targetId="53b2-d251-a827-8e73" id="1ac1-5daa-40db-214d" primary="false" name="Blood Angels"/>
@@ -2694,37 +2700,37 @@ In Step 4 of the Resolution Sub-Phase a Player that has won Combat must select t
         <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="d036-bbb6-8fbc-f6ab"/>
       </selectionEntries>
     </entryLink>
-    <entryLink import="true" name="Chapter Master Raldoron" hidden="false" id="89e1-921c-c830-5d45" type="selectionEntry" targetId="fef2-a389-74d3-47c8" sortIndex="">
+    <entryLink import="true" name="Chapter Master Raldoron" hidden="false" id="89e1-921c-c830-5d45" type="selectionEntry" targetId="fef2-a389-74d3-47c8">
       <categoryLinks>
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="dc2a-cef1-dc52-f4a8" primary="true" name="High Command"/>
         <categoryLink targetId="53b2-d251-a827-8e73" id="20c7-5922-7818-0dca" primary="false" name="Blood Angels"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Dominion Zephon" hidden="false" id="4587-5ecf-2497-4c1b" type="selectionEntry" targetId="07c2-3eb9-2ffe-e900" sortIndex="">
+    <entryLink import="true" name="Dominion Zephon" hidden="false" id="4587-5ecf-2497-4c1b" type="selectionEntry" targetId="07c2-3eb9-2ffe-e900">
       <categoryLinks>
         <categoryLink targetId="53b2-d251-a827-8e73" id="130b-47b4-f10f-d616" primary="false" name="Blood Angels"/>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="a751-e988-0467-70e4" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Aster Chrone" hidden="false" id="c822-0582-5290-a9d2" type="selectionEntry" targetId="93c6-02e1-f5e2-5b76" sortIndex="">
+    <entryLink import="true" name="Aster Chrone" hidden="false" id="c822-0582-5290-a9d2" type="selectionEntry" targetId="93c6-02e1-f5e2-5b76">
       <categoryLinks>
         <categoryLink targetId="53b2-d251-a827-8e73" id="e289-5f20-1210-a5ab" primary="false" name="Blood Angels"/>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="ea27-c370-1ecd-aa38" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Contemptor-Incaendius Dreadnought" hidden="false" id="5dc8-3fde-9013-ef36" type="selectionEntry" targetId="83ae-08c8-bdf1-ccaa" sortIndex="">
+    <entryLink import="true" name="Contemptor-Incaendius Dreadnought" hidden="false" id="5dc8-3fde-9013-ef36" type="selectionEntry" targetId="83ae-08c8-bdf1-ccaa">
       <categoryLinks>
         <categoryLink targetId="2499-7239-685f-8465" id="ca20-6c57-c851-b03b" primary="true" name="War-engine"/>
         <categoryLink targetId="53b2-d251-a827-8e73" id="e1d6-5c70-cfcc-063e" primary="false" name="Blood Angels"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Crimson Paladins" hidden="false" id="9c1f-d2e5-ac81-f215" type="selectionEntry" targetId="80bb-caf1-d1fc-0e26" sortIndex="">
+    <entryLink import="true" name="Crimson Paladins" hidden="false" id="9c1f-d2e5-ac81-f215" type="selectionEntry" targetId="80bb-caf1-d1fc-0e26">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="5e09-e90b-ff06-7381" primary="true" name="Elites"/>
         <categoryLink targetId="53b2-d251-a827-8e73" id="c059-2457-4b93-c16f" primary="false" name="Blood Angels"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Dawnbreaker Cohort" hidden="false" id="3f7e-4c81-2320-a8e5" type="selectionEntry" targetId="410b-50c3-4f12-1c67" sortIndex="">
+    <entryLink import="true" name="Dawnbreaker Cohort" hidden="false" id="3f7e-4c81-2320-a8e5" type="selectionEntry" targetId="410b-50c3-4f12-1c67">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="88b3-1cfc-f972-4e85" primary="true" name="Elites"/>
         <categoryLink targetId="53b2-d251-a827-8e73" id="18d2-b0a4-4d5e-e47b" primary="false" name="Blood Angels"/>
@@ -2737,23 +2743,23 @@ In Step 4 of the Resolution Sub-Phase a Player that has won Combat must select t
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="The Angel&apos;s Tears" hidden="false" id="edbe-4d87-ab3d-6f1b" type="selectionEntry" targetId="06d5-d1b3-de1f-7564" sortIndex="">
+    <entryLink import="true" name="The Angel&apos;s Tears" hidden="false" id="edbe-4d87-ab3d-6f1b" type="selectionEntry" targetId="06d5-d1b3-de1f-7564">
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="c726-8919-df63-0e9e" primary="true" name="Heavy Assault"/>
         <categoryLink targetId="53b2-d251-a827-8e73" id="7a3e-0062-f3c9-26fe" primary="false" name="Blood Angels"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Sanguinary Guard" hidden="false" id="8f95-d929-4ae0-cdbf" type="selectionEntry" targetId="b862-722c-4275-8f78" sortIndex="">
+    <entryLink import="true" name="Sanguinary Guard" hidden="false" id="8f95-d929-4ae0-cdbf" type="selectionEntry" targetId="b862-722c-4275-8f78">
       <categoryLinks>
         <categoryLink targetId="a38e-50ff-310f-f19e" id="7a6d-db68-9210-7439" primary="true" name="Retinue"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Ofanim Court" hidden="false" id="1c25-a035-0b32-43f1" type="selectionEntry" targetId="cd4b-8935-4b71-aecd" sortIndex="">
+    <entryLink import="true" name="Ofanim Court" hidden="false" id="1c25-a035-0b32-43f1" type="selectionEntry" targetId="cd4b-8935-4b71-aecd">
       <categoryLinks>
         <categoryLink targetId="a38e-50ff-310f-f19e" id="cd01-6f4e-4bd0-73f0" primary="true" name="Retinue"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Ofanim Court With Jump Packs" hidden="false" id="3442-23a4-4db6-0060" type="selectionEntry" targetId="0e97-f032-4f2a-91ac" sortIndex="">
+    <entryLink import="true" name="Ofanim Court With Jump Packs" hidden="false" id="3442-23a4-4db6-0060" type="selectionEntry" targetId="0e97-f032-4f2a-91ac">
       <categoryLinks>
         <categoryLink targetId="a38e-50ff-310f-f19e" id="68f7-fadd-2c79-d59d" primary="true" name="Retinue"/>
       </categoryLinks>
@@ -2763,7 +2769,7 @@ In Step 4 of the Resolution Sub-Phase a Player that has won Combat must select t
         <categoryLink targetId="abfa-86ab-1726-077a" id="5e6b-1d50-5909-a4ac" primary="true" name="Army Configuration"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Inductii Squad" hidden="false" id="316a-720a-4ef3-1314" type="selectionEntry" targetId="d534-5849-4506-b269" sortIndex="">
+    <entryLink import="true" name="Inductii Squad" hidden="false" id="316a-720a-4ef3-1314" type="selectionEntry" targetId="d534-5849-4506-b269">
       <categoryLinks>
         <categoryLink targetId="88e6-d373-4152-0dd8" id="1e73-5438-58b3-4ecd" primary="true" name="Troops"/>
       </categoryLinks>
