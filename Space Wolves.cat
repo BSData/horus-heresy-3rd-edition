@@ -558,40 +558,6 @@ Howl of the Death Wolf: Once this Gambit is selected and until it&apos;s effects
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="397c-695e-22c4-56cf"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Bolter w/ Bayonet" hidden="false" id="42e7-507d-8f04-7043" sortIndex="3">
-                  <entryLinks>
-                    <entryLink import="true" name="Bayonet" hidden="false" id="6faf-c114-2a72-fc45" type="selectionEntry" targetId="3484-1bd3-cb74-7abe">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d178-57f7-69f1-b2b9"/>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f9ef-67f7-610d-9d5c"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Bolter" hidden="false" id="9136-a8e6-a148-cdf5" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5248-86c7-5950-6de6"/>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d16f-1546-fe3f-24c3"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Bolter w/ Chain Bayonet" hidden="false" id="dfcd-7b95-41b2-aae4" sortIndex="4">
-                  <entryLinks>
-                    <entryLink import="true" name="Chain bayonet" hidden="false" id="d53e-49b9-5a41-7c74" type="selectionEntry" targetId="e410-d998-bd3e-c0ea">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4496-8cd1-a53b-abe4"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5d6-ae33-e847-43c5"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Bolter" hidden="false" id="568f-5739-2f57-afa4" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5427-c5a8-04ca-fab1"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67c2-115f-9721-a2bf"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntry>
-              </selectionEntries>
               <modifiers>
                 <modifier type="set" value="0" field="397c-695e-22c4-56cf">
                   <conditions>
@@ -599,6 +565,43 @@ Howl of the Death Wolf: Once this Gambit is selected and until it&apos;s effects
                   </conditions>
                 </modifier>
               </modifiers>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="May take one of the following:" id="dfd1-3990-bf0b-faca" hidden="false" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="Bayonet" hidden="false" id="cdf1-529b-bc02-0874" type="selectionEntry" targetId="3484-1bd3-cb74-7abe" sortIndex="1">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="1"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Chain bayonet" hidden="false" id="49a1-7f52-40b4-457c" type="selectionEntry" targetId="e410-d998-bd3e-c0ea" sortIndex="2">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="781e-5bea-3565-fa81" includeChildSelections="false"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8a82-1744-2c02-775e"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="model" childId="d3f9-b9e6-3ea5-cc8e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="781e-5bea-3565-fa81">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="model" childId="d3f9-b9e6-3ea5-cc8e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="8a82-1744-2c02-775e">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="model" childId="d3f9-b9e6-3ea5-cc8e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <profiles>
@@ -718,40 +721,43 @@ Howl of the Death Wolf: Once this Gambit is selected and until it&apos;s effects
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bb2-6297-29db-d67d"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Bolter w/ Bayonet" hidden="false" id="0b28-f69f-93ba-15fb" sortIndex="3">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="May take one of the following:" id="c5e4-dbb3-a580-c0c6" hidden="false" sortIndex="3">
                   <entryLinks>
-                    <entryLink import="true" name="Bayonet" hidden="false" id="0344-613a-9b11-cb9e" type="selectionEntry" targetId="3484-1bd3-cb74-7abe">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cd3-5303-6aa8-326e"/>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f5b-cc84-72a6-7b5d"/>
-                      </constraints>
+                    <entryLink import="true" name="Bayonet" hidden="false" id="fe73-1bc6-7522-c596" type="selectionEntry" targetId="3484-1bd3-cb74-7abe" sortIndex="1">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="1"/>
+                      </costs>
                     </entryLink>
-                    <entryLink import="true" name="Bolter" hidden="false" id="aad5-8248-3656-542b" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ade-124a-4668-256e"/>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c430-b258-c0cf-6ccc"/>
-                      </constraints>
+                    <entryLink import="true" name="Chain bayonet" hidden="false" id="42fb-1604-62bd-9b00" type="selectionEntry" targetId="e410-d998-bd3e-c0ea" sortIndex="2">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+                      </costs>
                     </entryLink>
                   </entryLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Bolter w/ Chain Bayonet" hidden="false" id="e03f-f5f4-866e-1b2d" sortIndex="4">
-                  <entryLinks>
-                    <entryLink import="true" name="Chain bayonet" hidden="false" id="8d83-0659-9ae7-2e59" type="selectionEntry" targetId="e410-d998-bd3e-c0ea">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="860b-c558-222e-cc32"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cd7-0d62-93d5-29f5"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Bolter" hidden="false" id="1f0c-e1a2-b896-41f2" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d1d5-937d-d8a1-26ea"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edd5-a358-0647-adf2"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntry>
-              </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e48f-c157-fd29-95fe" includeChildSelections="false"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fac7-1327-0e6c-ca46"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="model" childId="d3f9-b9e6-3ea5-cc8e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="e48f-c157-fd29-95fe">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="model" childId="d3f9-b9e6-3ea5-cc8e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="fac7-1327-0e6c-ca46">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="model" childId="d3f9-b9e6-3ea5-cc8e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntryGroup>
             <selectionEntryGroup name="May exchange Fenrisian axe for:" id="c6af-b05f-324c-198e" hidden="false" defaultSelectionEntryId="8938-d1f8-9c71-5ae5" collective="false" sortIndex="2">
               <entryLinks>
