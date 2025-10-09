@@ -1176,6 +1176,717 @@
             </modifier>
           </modifiers>
         </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Rapier Crew (Petty Warlord)" hidden="true" id="1c6b-1e23-583a-f709" collective="false" flatten="false" subType="unit-group" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Legionary" hidden="false" id="5585-e7b5-98b0-f51d" sortIndex="2" flatten="false">
+              <profiles>
+                <profile name="Legionary" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="f2c4-d1e5-f2ce-07b8">
+                  <characteristics>
+                    <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
+                    <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                    <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
+                    <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                    <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                    <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+                    <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">1</characteristic>
+                    <characteristic name="I" typeId="af9d-7db8-dc95-71c1">4</characteristic>
+                    <characteristic name="A" typeId="024e-bdb1-7982-25a0">1</characteristic>
+                    <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">7</characteristic>
+                    <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
+                    <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+                    <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+                    <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
+                    <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
+                  </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Combat Veterans</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                        <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                        <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                        <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                        <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                        <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                      </conditions>
+                      <comment>Master Sergeant</comment>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <comment>The Flesh is Weak</comment>
+                      <modifiers>
+                        <modifier type="replace" value="Automata" field="50fc-9241-d4a2-045b" arg="Infantry"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                      <comment>TS - Cult Arcana</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Frag grenades" hidden="false" id="3e45-715f-329f-f51d" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" flatten="true" sortIndex="3">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b581-dc63-ef93-d028"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba89-3804-6096-df4e"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Krak grenades" hidden="false" id="8ffc-86af-3bc8-4f52" type="selectionEntry" targetId="0c9b-a32b-87e2-fc3e" flatten="true" sortIndex="4">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5079-7168-2b55-b978"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a29b-c70f-1964-9e5d"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="3945-428b-d4b3-6ad7" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="2">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da00-8336-3c54-8e8c" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b402-780b-7803-51d7" includeChildSelections="false" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="da00-8336-3c54-8e8c">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="b402-780b-7803-51d7">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Bolter" hidden="false" id="0e43-d9e5-ea5f-0c11" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d4a4-c795-581d-329b" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="117f-d432-faff-3256" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="d4a4-c795-581d-329b">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="117f-d432-faff-3256">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1779-7e77-88cb-3287"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9ce-d1c0-4785-b775"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink name="Sergeant Model Sub-Type" hidden="false" id="6969-6938-b48d-76e2" targetId="8045-89a4-76d4-fcef" primary="false"/>
+                <categoryLink name="Infantry Model Type" hidden="false" id="f93a-d9e7-2828-2b72" targetId="594d-fa82-13cb-a345" primary="false"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="May exchange bolt pistol for" id="af21-9adb-86c0-1bdc" hidden="true" defaultSelectionEntryId="21fa-c62e-49e2-2ef8" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="c819-a89d-992e-098a" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6252-348f-98c3-cf09" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Shrapnel pistol" hidden="false" id="b172-f7f8-864d-3d32" type="selectionEntry" targetId="d735-44bc-116a-be41">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="468f-3127-5f0f-15b2" automatic="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Asphyx pistol" hidden="true" id="4960-4a26-c223-7afe" type="selectionEntry" targetId="d293-df49-e8c3-f3bf">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="1" field="2ce8-c8ea-45f4-1263">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="1" field="dbc4-4b3e-173a-fddd">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2ce8-c8ea-45f4-1263" automatic="true"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dbc4-4b3e-173a-fddd" automatic="true"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="May exchange bolter for" id="c531-a931-e769-a772" hidden="true" defaultSelectionEntryId="21fa-c62e-49e2-2ef8" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Bolter" hidden="false" id="01ce-934a-9e89-9283" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b74b-821c-c1c9-4034" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Shrapnel bolter" hidden="false" id="9287-220c-4b08-1e59" type="selectionEntry" targetId="9532-a693-d2ac-f198">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="3"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4697-376d-9c9a-d149" automatic="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Asphyx bolter" hidden="true" id="ae83-888c-5178-8583" type="selectionEntry" targetId="60a8-1455-2c2a-e010">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="3"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="1" field="26d8-2a25-0288-dc50">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="1" field="f2af-bb48-a21e-f450">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="26d8-2a25-0288-dc50" automatic="true"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f2af-bb48-a21e-f450" automatic="true"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Rapier Carrier" hidden="false" id="8fb8-8ad4-e6fa-4fd7" sortIndex="3">
+              <profiles>
+                <profile name="Rapier Carrier" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="5cdd-af91-ca66-79b7">
+                  <characteristics>
+                    <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                    <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                    <characteristic name="WS" typeId="253c-d694-4695-c89e">1</characteristic>
+                    <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                    <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                    <characteristic name="T" typeId="3120-8275-e537-ecd2">6</characteristic>
+                    <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">2</characteristic>
+                    <characteristic name="I" typeId="af9d-7db8-dc95-71c1">1</characteristic>
+                    <characteristic name="A" typeId="024e-bdb1-7982-25a0">-</characteristic>
+                    <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">1</characteristic>
+                    <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">1</characteristic>
+                    <characteristic name="WP" typeId="f714-1726-37d3-44df">1</characteristic>
+                    <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">1</characteristic>
+                    <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
+                    <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
+                  </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Combat Veterans</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                        <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                        <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                        <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <comment>The Flesh is Weak</comment>
+                      <modifiers>
+                        <modifier type="replace" value="Automata" field="50fc-9241-d4a2-045b" arg="Infantry"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bdc-1f08-7264-2441"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fe0-99d0-b178-9b9f"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Bulky (X)" id="e191-de4c-3227-246f" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+                  <modifiers>
+                    <modifier type="set" value="Bulky (3)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Infantry Model Type" hidden="false" id="d26b-e18b-8178-e4a9" targetId="594d-fa82-13cb-a345" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Legionary (Petty Warlord)" hidden="false" id="f036-ae92-854a-51e5" flatten="false" sortIndex="1">
+              <profiles>
+                <profile name="Legionary  (Petty Warlord)" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="ba47-32ed-db25-a505">
+                  <characteristics>
+                    <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant, Champion)</characteristic>
+                    <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                    <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
+                    <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                    <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                    <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+                    <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">1</characteristic>
+                    <characteristic name="I" typeId="af9d-7db8-dc95-71c1">4</characteristic>
+                    <characteristic name="A" typeId="024e-bdb1-7982-25a0">2</characteristic>
+                    <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">8</characteristic>
+                    <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
+                    <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+                    <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+                    <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
+                    <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
+                  </characteristics>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <comment>Combat Veterans</comment>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                        <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                        <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                        <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                        <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                        <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                        <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                        <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                      </conditions>
+                      <comment>Master Sergeant</comment>
+                    </modifierGroup>
+                    <modifierGroup type="and">
+                      <comment>The Flesh is Weak</comment>
+                      <modifiers>
+                        <modifier type="replace" value="Automata" field="50fc-9241-d4a2-045b" arg="Infantry"/>
+                      </modifiers>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifierGroup>
+                  </modifierGroups>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df">
+                      <comment>TS - Cult Arcana</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Frag grenades" hidden="false" id="a47c-cf8c-b44e-6ae7" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" flatten="true" sortIndex="3">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="55f2-e661-65ab-ea7e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b8b-8fa8-e165-238c"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Krak grenades" hidden="false" id="4d80-95fb-e402-d50d" type="selectionEntry" targetId="0c9b-a32b-87e2-fc3e" flatten="true" sortIndex="4">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b060-18c6-2b74-a4a5"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c75-98b1-3bdc-b6a9"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="c737-b7c7-a13d-fd93" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="2">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="993f-c9bd-f4f8-533f" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1e7-bf5d-b0e3-badf" includeChildSelections="false" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="993f-c9bd-f4f8-533f">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="e1e7-bf5d-b0e3-badf">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Bolter" hidden="false" id="1bbf-2ab7-91f5-1f13" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="774c-fba8-f987-f689" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f7e-25f5-956c-de65" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="774c-fba8-f987-f689">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="8f7e-25f5-956c-de65">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="7c50-adf7-7ed0-7c66" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c2f8-9fea-2fe5-24c5"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53b7-95fd-f021-10d4"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink name="Sergeant Model Sub-Type" hidden="false" id="c557-a5d2-8eb1-8048" targetId="8045-89a4-76d4-fcef" primary="false"/>
+                <categoryLink name="Infantry Model Type" hidden="false" id="8d75-eee8-95de-dfe6" targetId="594d-fa82-13cb-a345" primary="false"/>
+                <categoryLink name="Champion Model Sub-Type" hidden="false" id="e21e-6bcc-a91e-3fab" targetId="5a95-e564-96b2-8dc9" primary="false"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="May exchange bolt pistol for" id="5564-26b8-ad83-574b" hidden="true" defaultSelectionEntryId="21fa-c62e-49e2-2ef8" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="4b79-1541-ba43-2f54" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ff4-a9b5-94dc-4ffe" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Shrapnel pistol" hidden="false" id="a3e4-d71f-026e-9f6c" type="selectionEntry" targetId="d735-44bc-116a-be41">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f92-a1dc-d217-5971" automatic="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Asphyx pistol" hidden="true" id="be0a-a62e-7a6b-0d56" type="selectionEntry" targetId="d293-df49-e8c3-f3bf">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="1" field="accd-ba2a-5761-cf19">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="1" field="6542-0b7d-ce9b-af64">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="accd-ba2a-5761-cf19" automatic="true"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6542-0b7d-ce9b-af64" automatic="true"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="May exchange bolter for" id="66d7-5465-0f8c-fada" hidden="true" defaultSelectionEntryId="21fa-c62e-49e2-2ef8" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Bolter" hidden="false" id="d6ec-25cb-6be3-9da9" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9185-f20e-6853-4ab3" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Shrapnel bolter" hidden="false" id="2902-0fb1-0c0c-1bab" type="selectionEntry" targetId="9532-a693-d2ac-f198">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="3"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61ec-cc04-e36e-3f5e" automatic="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Asphyx bolter" hidden="true" id="ccf5-2339-39ab-bb0e" type="selectionEntry" targetId="60a8-1455-2c2a-e010">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="3"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Banestrike bolter" hidden="true" id="7f21-b995-a11a-fa93" type="selectionEntry" targetId="69de-4883-efd2-b876">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <comment>SH Only</comment>
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="1" field="3c75-9ec2-e2aa-fc0e">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="1" field="0f52-6207-4924-7b70">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3c75-9ec2-e2aa-fc0e" automatic="true"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0f52-6207-4924-7b70" automatic="true"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <modifiers>
+                <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="40"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0d1e-a0dd-528e-d06f" automatic="true"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="af66-cfce-0bd1-4ccf" automatic="true"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Exchange gravis heavy bolter battery for:" id="a57b-16e0-cd91-4790" hidden="false" defaultSelectionEntryId="c9a5-e5ea-cda1-6071">
+              <entryLinks>
+                <entryLink import="true" name="Graviton cannon" hidden="false" id="4348-52f8-a57f-847f" type="selectionEntry" targetId="68b3-66f9-a283-1259" sortIndex="2">
+                  <modifiers>
+                    <modifier type="set" value="20" field="9893-c379-920b-8982"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Laser destroyer" hidden="false" id="9b8c-3fb9-f77f-5424" type="selectionEntry" targetId="e160-234f-e94c-bab6" sortIndex="3">
+                  <modifiers>
+                    <modifier type="set" value="25" field="9893-c379-920b-8982"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Quad launcher" hidden="false" id="37c5-ae34-1ab6-f685" type="selectionEntry" targetId="feb2-84a7-0b35-8f1b" sortIndex="4">
+                  <modifiers>
+                    <modifier type="set" value="Quad Launcher - (Frag) (Shatter)" field="name"/>
+                    <modifier type="set" value="20" field="9893-c379-920b-8982"/>
+                  </modifiers>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Phosphex Canister Shot" hidden="true" id="b98c-0bfd-759e-e218" flatten="false">
+                      <modifiers>
+                        <modifier type="set" value="15" field="9893-c379-920b-8982"/>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="25ad-fbd9-d161-8fd1" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d077-22a6-cb59-acf9"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Phosphex Canister Shot" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="true" id="1c2b-25b9-9367-9a47">
+                          <characteristics>
+                            <characteristic name="R" typeId="cdb0-8654-6840-1037">24</characteristic>
+                            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+                            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">5</characteristic>
+                            <characteristic name="AP" typeId="7a23-0248-2b94-5951">3</characteristic>
+                            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+                            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Blast (3&quot;), Barrage (1), Poisoned (3+), Panic (3), Breaching (5+)</characteristic>
+                            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Phosphex</characteristic>
+                          </characteristics>
+                          <modifiers>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="25ad-fbd9-d161-8fd1" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Poisoned (X)" id="f5c9-5947-efc8-bab8" hidden="true" type="rule" targetId="076f-2c91-c58b-71b3">
+                          <comment>3+ (Phosphex canister shot)</comment>
+                          <modifiers>
+                            <modifier type="set" value="Poisoned (3+)" field="name"/>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="25ad-fbd9-d161-8fd1" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </infoLink>
+                        <infoLink name="Barrage (X)" id="3932-6c4c-be4e-b901" hidden="true" type="rule" targetId="85f5-3a91-69f4-c3b7">
+                          <modifiers>
+                            <modifier type="set" value="Barrage (1)" field="name"/>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="25ad-fbd9-d161-8fd1" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                          <comment>1 (Phosphex canister shot)</comment>
+                        </infoLink>
+                        <infoLink name="Breaching (X)" id="11c3-3e42-1ce0-3524" hidden="true" type="rule" targetId="b094-0b64-eb57-aed6">
+                          <modifiers>
+                            <modifier type="set" value="Breaching (5+)" field="name"/>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="25ad-fbd9-d161-8fd1" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                          <comment>5+ (Phosphex canister shot)</comment>
+                        </infoLink>
+                        <infoLink name="Panic (X)" id="43c6-6565-2834-5e91" hidden="true" type="rule" targetId="82a7-f471-3fda-6ca1">
+                          <comment>3 (Phosphex canister shot)</comment>
+                          <modifiers>
+                            <modifier type="set" value="Panic (3)" field="name"/>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="25ad-fbd9-d161-8fd1" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </infoLink>
+                      </infoLinks>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </entryLink>
+                <entryLink import="true" name="Gravis heavy bolter battery" hidden="false" id="0ee4-a19c-18b8-02b4" type="selectionEntry" targetId="5c0e-33c5-afb1-fed5" sortIndex="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cb0a-0311-57ce-ecf3"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7643-22a6-5bd3-cc20"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="af66-cfce-0bd1-4ccf">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="0d1e-a0dd-528e-d06f">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="0830-16a1-9f12-a358" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="3">
@@ -1393,6 +2104,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord</comment>
                 </modifierGroup>
               </modifierGroups>
               <modifiers>
@@ -2693,6 +3416,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord</comment>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -3075,6 +3810,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord</comment>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -3975,6 +4722,17 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="2" field="02ad-ebe6-86e7-9fd6"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord - Existing Champion</comment>
                 </modifierGroup>
               </modifierGroups>
               <modifiers>
@@ -5327,6 +6085,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord</comment>
+                </modifierGroup>
               </modifierGroups>
               <modifiers>
                 <modifier type="increment" value="1" field="f714-1726-37d3-44df">
@@ -5880,6 +6650,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord</comment>
                 </modifierGroup>
               </modifierGroups>
               <modifiers>
@@ -6541,6 +7323,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord</comment>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -11253,6 +12047,17 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="2" field="02ad-ebe6-86e7-9fd6"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord - Existing Champion</comment>
+                </modifierGroup>
               </modifierGroups>
               <modifiers>
                 <modifier type="increment" value="1" field="f714-1726-37d3-44df">
@@ -11920,6 +12725,17 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="2" field="02ad-ebe6-86e7-9fd6"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord - Existing Champion</comment>
                 </modifierGroup>
               </modifierGroups>
               <modifiers>
@@ -12764,6 +13580,17 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="2" field="02ad-ebe6-86e7-9fd6"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord - Existing Champion</comment>
+                </modifierGroup>
               </modifierGroups>
               <modifiers>
                 <modifier type="increment" value="1" field="f714-1726-37d3-44df">
@@ -13165,6 +13992,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord</comment>
+                </modifierGroup>
               </modifierGroups>
               <modifiers>
                 <modifier type="increment" value="1" field="f714-1726-37d3-44df">
@@ -13558,6 +14397,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord</comment>
                 </modifierGroup>
               </modifierGroups>
               <modifiers>
@@ -13993,6 +14844,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord</comment>
+                </modifierGroup>
               </modifierGroups>
               <modifiers>
                 <modifier type="increment" value="1" field="f714-1726-37d3-44df">
@@ -14376,6 +15239,17 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="2" field="02ad-ebe6-86e7-9fd6"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord - Existing Champion</comment>
                 </modifierGroup>
               </modifierGroups>
               <modifiers>
@@ -14841,6 +15715,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord</comment>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -15091,6 +15977,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord</comment>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -15698,6 +16596,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord</comment>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -17590,6 +18500,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   </conditions>
                   <comment>Master Sergeant</comment>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord</comment>
+                </modifierGroup>
               </modifierGroups>
               <modifiers>
                 <modifier type="increment" value="1" field="f714-1726-37d3-44df">
@@ -17963,6 +18885,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord</comment>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -18707,6 +19641,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
                   </conditions>
                   <comment>Master Sergeant</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord</comment>
                 </modifierGroup>
               </modifierGroups>
               <modifiers>
@@ -33299,6 +34245,17 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   </conditions>
                   <comment>Master Sergeant - Existing Champion</comment>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="2" field="02ad-ebe6-86e7-9fd6"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord - Existing Champion</comment>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -33689,6 +34646,17 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
                   </conditions>
                   <comment>Master Sergeant - Existing Champion</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="2" field="02ad-ebe6-86e7-9fd6"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord - Existing Champion</comment>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -34267,6 +35235,18 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord</comment>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -34844,6 +35824,18 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord</comment>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -35250,6 +36242,18 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord</comment>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -35865,6 +36869,18 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord</comment>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -36595,6 +37611,18 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord</comment>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -37219,6 +38247,18 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord</comment>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -38533,6 +39573,18 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="replace" value="Sergeant, Champion" field="50fc-9241-d4a2-045b" arg="Sergeant"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Petty Warlord</comment>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -39576,9 +40628,9 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
                     <modifier type="increment" value="2" field="02ad-ebe6-86e7-9fd6"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4c06-aa1a-eea4-3b54" shared="true" includeChildForces="false" includeChildSelections="true"/>
                   </conditions>
-                  <comment>Master Sergeant - Existing Champion</comment>
+                  <comment>Petty Warlord - Existing Champion</comment>
                 </modifierGroup>
                 <modifierGroup type="and">
                   <comment>The Flesh is Weak</comment>
@@ -39588,6 +40640,17 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                    <modifier type="increment" value="2" field="02ad-ebe6-86e7-9fd6"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildForces="false" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>Master Sergeant - Existing Champion</comment>
                 </modifierGroup>
               </modifierGroups>
               <modifiers>
@@ -43793,9 +44856,14 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
       </entryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="unit" childId="b980-187b-2b17-d635" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="b980-187b-2b17-d635" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntryGroup>
@@ -43807,6 +44875,42 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9175-4a41-5c72-c801" includeChildSelections="true"/>
       </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Petty Warlord" hidden="true" id="4c06-aa1a-eea4-3b54">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="3553-322a-f1b2-5257" field="category">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="8f12-c30a-6c20-6296" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="7469-bbd2-a2ad-f8a8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Petty Warlord" id="e648-3433-03ce-2caf" hidden="false">
+              <description>One Model in the Unit selected to fill the Prime Slot that has the Sergeant Sub-Type gains +1 to its Attacks, Weapon Skill and Leadership Characteristics and the Champion Sub-Type (if it already has the Champion Sub-Type it instead increases its Leadership by an additional +1).
+
+
+Further, if this Prime Advantage is selected for a Unit in a Primary or Allied Detachment, then an Auxiliary Detachment may be attached to that Detachment as if this Unit was a Command Choice. All Slots in Auxiliary Detachments selected using this Prime Advantage become Prime Slots, but the only Prime Advantage that may be selected for any Slot in such a Detachment is Petty Warlord.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Legiones Decurion" id="6dcf-12ac-0f05-f158" hidden="false" sortIndex="12">
       <entryLinks>
@@ -44731,7 +45835,7 @@ However, if in the Effects Sub-Phase of the Controlling Player’s End Phase in
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="In Disgrace all are Equal" hidden="true" id="6ec2-30fd-23d1-3881">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c92-d19d-51f1-597d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c92-d19d-51f1-597d" automatic="true"/>
           </constraints>
           <rules>
             <rule name="In Disgrace all are Equal" id="3cbe-29f7-91dc-3386" hidden="false">
@@ -44741,9 +45845,18 @@ However, if in the Effects Sub-Phase of the Controlling Player’s End Phase in
 A Detachment with this Oath of Moment may not include any Command or High Command Choices. All other Slots in all Detachments with this Oath of Moment become Prime Slots, but the only Prime Advantage that may be selected for any Slot in this Detachment is Petty Warlord. If a Unit is unable to have Petty Warlord selected for it then it may not have a Prime Advantage selected for it.</description>
             </rule>
           </rules>
-          <categoryLinks>
-            <categoryLink name="In Disgrace all are Equal" hidden="false" id="34e2-47bc-c91d-4a5b" targetId="610d-c9b0-ccb0-cba9" primary="false"/>
-          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="6c92-d19d-51f1-597d">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Only in Death does  Duty End" hidden="true" id="9f7e-24bb-e892-9f9c">
           <constraints>
