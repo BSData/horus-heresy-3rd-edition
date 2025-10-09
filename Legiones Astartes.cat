@@ -7534,7 +7534,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="36cd-be62-0f8c-19c7" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
         <entryLink import="true" name="Cult Arcana" hidden="true" id="0869-86ba-6050-7538" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
-        <entryLink import="true" name="Oath of Moment" hidden="true" id="745e-3775-8140-8ff1" type="selectionEntryGroup" targetId="fd0c-8569-5b52-0ce8"/>
+        <entryLink import="true" name="Oath of Moment" hidden="true" id="8324-2008-95f0-7c74" type="selectionEntryGroup" targetId="fd0c-8569-5b52-0ce8"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Line (X)" id="e24e-5c1c-81dd-fdee" hidden="false" type="rule" targetId="1b5d-ceec-802a-c611">
@@ -16460,6 +16460,34 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   <repeats>
                     <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
                   </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Deathlock" hidden="true" id="6bdc-0d59-bcb7-65ce" type="selectionEntry" targetId="4d7d-ec25-a22b-337a">
+              <modifiers>
+                <modifier type="increment" value="15" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="6049-c010-d9b7-8cca" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Doomlock" hidden="true" id="3216-6b00-2f5b-f3b3" type="selectionEntry" targetId="ee7b-a16e-f8de-d51d">
+              <modifiers>
+                <modifier type="increment" value="10" field="9893-c379-920b-8982">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="6049-c010-d9b7-8cca" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
                 </modifier>
               </modifiers>
             </entryLink>
@@ -42444,6 +42472,9 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
               </conditionGroups>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
         </entryLink>
         <entryLink import="true" name="Doomlock" hidden="true" id="6dc7-ee1d-47bf-4d95" type="selectionEntry" targetId="ee7b-a16e-f8de-d51d" sortIndex="13">
           <modifiers>
@@ -42458,6 +42489,9 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
               </conditionGroups>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+          </costs>
         </entryLink>
       </entryLinks>
       <constraints>
@@ -43271,6 +43305,9 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
               </conditionGroups>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -44893,6 +44930,11 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="0" field="fa07-b955-1b9a-6cd8">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <rules>
             <rule name="Petty Warlord" id="e648-3433-03ce-2caf" hidden="false">
@@ -44909,6 +44951,9 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
             <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa07-b955-1b9a-6cd8" automatic="true"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -45860,7 +45905,7 @@ A Detachment with this Oath of Moment may not include any Command or High Comma
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Only in Death does  Duty End" hidden="true" id="9f7e-24bb-e892-9f9c">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fb9-ccb3-14ce-3944"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fb9-ccb3-14ce-3944" automatic="true"/>
           </constraints>
           <rules>
             <rule name="Only in Death does  Duty End" id="e554-56ea-199a-b0b3" hidden="false">
@@ -45876,11 +45921,17 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="8026-d8cc-eea8-cd3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="0fb9-ccb3-14ce-3944">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="8026-d8cc-eea8-cd3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panoply of Old - Alpha Legion" hidden="true" id="173a-4584-c184-72ac" defaultAmount="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b94-2dbd-2d6b-07d7" automatic="true"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1f52-b4c0-5073-2552" automatic="true"/>
           </constraints>
           <infoLinks>
             <infoLink name="Panoply of Old" id="275f-e24e-5896-25cb" hidden="false" type="rule" targetId="c768-6f33-f07c-7b92"/>
@@ -45896,11 +45947,17 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
                 <condition type="equalTo" value="0" field="selections" scope="roster" childId="0e0a-e490-ee7f-7033" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="1" field="1f52-b4c0-5073-2552">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0e0a-e490-ee7f-7033" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panoply of Old - Blood Angels" hidden="true" id="2992-6718-79d1-754d" defaultAmount="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4bd-a359-7aec-9a98" automatic="true"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7c31-08a4-d9ef-a589" automatic="true"/>
           </constraints>
           <infoLinks>
             <infoLink name="Panoply of Old" id="21a0-ded8-9513-8240" hidden="false" type="rule" targetId="c768-6f33-f07c-7b92"/>
@@ -45914,6 +45971,11 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
             <modifier type="set" value="0" field="c4bd-a359-7aec-9a98">
               <conditions>
                 <condition type="equalTo" value="0" field="selections" scope="roster" childId="8ae1-c83b-a225-826f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="7c31-08a4-d9ef-a589">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8ae1-c83b-a225-826f" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -46329,6 +46391,7 @@ This Oath of Moment may not be selected if the Detachment already has the Reape
         <selectionEntry type="upgrade" import="true" name="The Broken Helix" hidden="true" id="4555-1a63-a6de-86ec" defaultAmount="1">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa17-6804-ff49-5d7a" automatic="true"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9cb8-b8a4-4040-05ba" automatic="true"/>
           </constraints>
           <rules>
             <rule name="The Broken Helix" id="10c2-0522-9303-5cc8" hidden="false">
@@ -46382,6 +46445,16 @@ Instead, such Models gain one of the following two Special Rules, chosen by the
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="53f8-ca8c-239c-1d3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="1" field="9cb8-b8a4-4040-05ba">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="53f8-ca8c-239c-1d3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="aa17-6804-ff49-5d7a">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="53f8-ca8c-239c-1d3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="The Eternal Vendetta" hidden="true" id="8b55-8833-8154-61f9">
@@ -46397,12 +46470,17 @@ However, all Units in a Detachment that include any Models with this Oath of Mo
             </rule>
           </rules>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97f2-6f32-6084-d72d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97f2-6f32-6084-d72d" automatic="true"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="fdfa-3e5d-370e-e470" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="97f2-6f32-6084-d72d">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="fdfa-3e5d-370e-e470" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -46579,7 +46657,7 @@ This Oath of Moment may not be selected if the Detachment already has the Reape
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="The Taint of the Xenos" hidden="true" id="90f7-cfb0-dde7-8b5e">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c55b-a6ed-2776-25ed"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c55b-a6ed-2776-25ed" automatic="true"/>
           </constraints>
           <rules>
             <rule name="The Taint of the Xenos" id="ae50-f286-01d1-a8b1" hidden="false">
@@ -46603,6 +46681,18 @@ When selecting Weapons for Models with the Blackshields Trait in a Detachment wi
           <categoryLinks>
             <categoryLink name="The Taint of Xenos" hidden="false" id="8525-6cbe-485e-e346" targetId="6049-c010-d9b7-8cca" primary="false"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="0" field="c55b-a6ed-2776-25ed">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="6049-c010-d9b7-8cca" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="6049-c010-d9b7-8cca" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
@@ -46614,6 +46704,7 @@ When selecting Weapons for Models with the Blackshields Trait in a Detachment wi
       </modifiers>
       <constraints>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9672-9cd6-02d9-8fbd" automatic="true"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f9a3-808b-43aa-eda2" automatic="true"/>
       </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
