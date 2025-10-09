@@ -618,6 +618,9 @@
         <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="61f0-d47a-8087-6964" includeChildSelections="true"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry name="The Broken Helix" id="53f8-ca8c-239c-1d3d" hidden="false"/>
+    <categoryEntry name="Clone" id="9c64-f1ec-a907-35bc" hidden="false"/>
+    <categoryEntry name="Aberrant" id="e4a3-85f7-f6ce-261c" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">

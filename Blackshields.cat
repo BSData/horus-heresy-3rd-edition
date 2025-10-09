@@ -544,30 +544,26 @@ Instead, such Models gain one of the following two Special Rules, chosen by the
             <selectionEntryGroup name="Choose one" id="d2d3-cb90-f5e1-10cf" hidden="false" defaultSelectionEntryId="6ed4-540a-ba23-4968">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Clone" hidden="false" id="b445-5f0e-779e-a2ec">
-                  <rules>
-                    <rule name="Clone" id="16f7-886f-f43b-0e6e" hidden="false">
-                      <description>&quot;Models with this Special Rule must reduce certain Advanced Characteristics, but gain increased resilience.&quot;
-
-
-All Models with this Special Rule that do not also have the Command, Champion, Specialist or Sergeant Sub-Types must reduce their Leadership, Willpower, Intelligence and Cool Characteristics by 1. Furthermore, a Unit that includes any Models with this Special Rule cannot make Reactions or Advanced Reactions, but gains a Damage Mitigation Test of 5+ – known as a Cloned Resilience Damage Mitigation Roll.</description>
-                    </rule>
-                  </rules>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e69-f74f-1e5e-5019"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink name="Clone" id="f158-273f-5610-fde2" hidden="false" type="rule" targetId="16f7-886f-f43b-0e6e"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink targetId="9c64-f1ec-a907-35bc" id="7744-a094-4d83-34eb" primary="false" name="Clone"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Aberrant" hidden="false" id="6ed4-540a-ba23-4968">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3942-d3dc-bfaa-ea8c"/>
                   </constraints>
-                  <rules>
-                    <rule name="Aberrant" id="1a2c-52eb-c28c-55c8" hidden="false">
-                      <description>&quot;Models with this Special Rule must reduce certain Advanced Characteristics, but gain increased combat powers.&quot;
-
-
-All Models with this Special Rule that do not also have the Command, Champion, Specialist or Sergeant Sub-Types must reduce their Leadership, Willpower, Intelligence and Cool Characteristics by 1, but increase their Strength and Attacks Characteristics by 1. Furthermore, a Unit that includes any Models with this Special Rule and begins the Assault Phase with any Model in that Unit within 12&quot; of an enemy Model must declare a Charge targeting the Unit that includes that enemy Model – even if they cannot reach the Target Unit.</description>
-                    </rule>
-                  </rules>
+                  <infoLinks>
+                    <infoLink name="Aberrant" id="0d72-bfbf-3983-bea7" hidden="false" type="rule" targetId="1a2c-52eb-c28c-55c8"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink targetId="e4a3-85f7-f6ce-261c" id="0ad6-591d-ff81-0049" primary="false" name="Aberrant"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -576,6 +572,9 @@ All Models with this Special Rule that do not also have the Command, Champion, 
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="53f8-ca8c-239c-1d3d" id="d798-f710-2beb-c585" primary="false" name="The Broken Helix"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="In Disgrace all are Equal" hidden="false" id="04a5-602d-7853-9555">
           <constraints>

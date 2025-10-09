@@ -2372,6 +2372,32 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="1abc-c093-9e5a-d142" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                  </modifiers>
+                  <comment>Clone</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b395-6603-4965-11f5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="498f-dce1-59fd-d8d7"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <comment>Aberrant</comment>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -2888,9 +2914,14 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <modifiers>
             <modifier type="set" value="Vanguard (2)" field="name"/>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="53f8-ca8c-239c-1d3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -2902,6 +2933,24 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </conditions>
             </modifier>
             <modifier type="replace" value="1.5*" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Aberrant" id="0b98-ac2e-5321-8fe6" hidden="true" type="rule" targetId="1a2c-52eb-c28c-55c8">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e4a3-85f7-f6ce-261c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Clone" id="3c18-ace0-7b98-151b" hidden="true" type="rule" targetId="16f7-886f-f43b-0e6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9c64-f1ec-a907-35bc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -3218,6 +3267,48 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="model" childId="8045-89a4-76d4-fcef" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="1abc-c093-9e5a-d142" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                  </modifiers>
+                  <comment>Clone</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="model" childId="8045-89a4-76d4-fcef" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="b395-6603-4965-11f5" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="498f-dce1-59fd-d8d7"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <comment>Aberrant</comment>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -3404,9 +3495,14 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <modifiers>
             <modifier type="set" value="Line (1)" field="name"/>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="53f8-ca8c-239c-1d3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -3419,6 +3515,24 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </conditions>
             </modifier>
             <modifier type="replace" value="1" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Aberrant" id="0cc0-670a-7878-692c" hidden="true" type="rule" targetId="1a2c-52eb-c28c-55c8">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e4a3-85f7-f6ce-261c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Clone" id="23de-7c61-1be6-0e7d" hidden="true" type="rule" targetId="16f7-886f-f43b-0e6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9c64-f1ec-a907-35bc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -4842,6 +4956,32 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="1abc-c093-9e5a-d142" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                  </modifiers>
+                  <comment>Clone</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b395-6603-4965-11f5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="498f-dce1-59fd-d8d7"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <comment>Aberrant</comment>
+                </modifierGroup>
               </modifierGroups>
               <modifiers>
                 <modifier type="increment" value="1" field="f714-1726-37d3-44df">
@@ -5422,9 +5562,14 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <modifiers>
             <modifier type="set" value="Line (1)" field="name"/>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="53f8-ca8c-239c-1d3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -5436,6 +5581,24 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </conditions>
             </modifier>
             <modifier type="replace" value="1" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Aberrant" id="0d00-875d-3b5e-1f22" hidden="true" type="rule" targetId="1a2c-52eb-c28c-55c8">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e4a3-85f7-f6ce-261c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Clone" id="ad22-d093-6b35-dd5e" hidden="true" type="rule" targetId="16f7-886f-f43b-0e6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9c64-f1ec-a907-35bc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -5494,6 +5657,32 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="1abc-c093-9e5a-d142" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                  </modifiers>
+                  <comment>Clone</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b395-6603-4965-11f5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="498f-dce1-59fd-d8d7"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <comment>Aberrant</comment>
                 </modifierGroup>
               </modifierGroups>
               <modifiers>
@@ -5849,9 +6038,14 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <modifiers>
             <modifier type="set" value="Vanguard (3)" field="name"/>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="53f8-ca8c-239c-1d3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -5863,6 +6057,24 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </conditions>
             </modifier>
             <modifier type="replace" value="1.5*" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Aberrant" id="a73c-89dc-bce2-bd00" hidden="true" type="rule" targetId="1a2c-52eb-c28c-55c8">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e4a3-85f7-f6ce-261c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Clone" id="63f9-b516-4621-f2cc" hidden="true" type="rule" targetId="16f7-886f-f43b-0e6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9c64-f1ec-a907-35bc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -5922,6 +6134,32 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="1abc-c093-9e5a-d142" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                  </modifiers>
+                  <comment>Clone</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b395-6603-4965-11f5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="498f-dce1-59fd-d8d7"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <comment>Aberrant</comment>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -6509,9 +6747,27 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <comment>2</comment>
           <modifiers>
             <modifier type="set" value="Line (2)" field="name"/>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="53f8-ca8c-239c-1d3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </infoLink>
-        <infoLink name="Fury of the Legion" id="fbed-dcca-a519-e864" hidden="false" type="rule" targetId="b49c-d074-165e-ce1b"/>
+        <infoLink name="Fury of the Legion" id="fbed-dcca-a519-e864" hidden="false" type="rule" targetId="b49c-d074-165e-ce1b">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="53f8-ca8c-239c-1d3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="[Allegiance]" id="7142-2718-c3b5-c7cc" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="a9fa-7437-90fb-47d8" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
         <infoLink name="Loot the Dead (X)" id="b680-2fad-acb9-a2a1" hidden="true" type="rule" targetId="e348-c621-0738-cb6e">
@@ -6522,6 +6778,24 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </conditions>
             </modifier>
             <modifier type="replace" value="2" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Aberrant" id="2b62-217b-edd2-7b98" hidden="true" type="rule" targetId="1a2c-52eb-c28c-55c8">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e4a3-85f7-f6ce-261c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Clone" id="d08f-57c9-499b-2794" hidden="true" type="rule" targetId="16f7-886f-f43b-0e6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9c64-f1ec-a907-35bc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -12674,6 +12948,32 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="1abc-c093-9e5a-d142" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                  </modifiers>
+                  <comment>Clone</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b395-6603-4965-11f5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="498f-dce1-59fd-d8d7"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <comment>Aberrant</comment>
+                </modifierGroup>
               </modifierGroups>
               <modifiers>
                 <modifier type="increment" value="1" field="f714-1726-37d3-44df">
@@ -12989,9 +13289,14 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <modifiers>
             <modifier type="set" value="Vanguard (3)" field="name"/>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="53f8-ca8c-239c-1d3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -13004,6 +13309,24 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </conditions>
             </modifier>
             <modifier type="replace" value="1.5*" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Aberrant" id="a811-27af-4404-f830" hidden="true" type="rule" targetId="1a2c-52eb-c28c-55c8">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e4a3-85f7-f6ce-261c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Clone" id="bc54-06e7-c4bf-fb50" hidden="true" type="rule" targetId="16f7-886f-f43b-0e6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9c64-f1ec-a907-35bc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -13467,6 +13790,32 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="1abc-c093-9e5a-d142" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                  </modifiers>
+                  <comment>Clone</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b395-6603-4965-11f5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="498f-dce1-59fd-d8d7"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <comment>Aberrant</comment>
+                </modifierGroup>
               </modifierGroups>
               <modifiers>
                 <modifier type="increment" value="1" field="f714-1726-37d3-44df">
@@ -13766,9 +14115,14 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <modifiers>
             <modifier type="set" value="Vanguard (3)" field="name"/>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="53f8-ca8c-239c-1d3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -13782,6 +14136,24 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </conditions>
             </modifier>
             <modifier type="replace" value="1.5*" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Aberrant" id="2cab-8d26-59ec-c595" hidden="true" type="rule" targetId="1a2c-52eb-c28c-55c8">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e4a3-85f7-f6ce-261c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Clone" id="f6d4-ccae-2c8a-fb46" hidden="true" type="rule" targetId="16f7-886f-f43b-0e6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9c64-f1ec-a907-35bc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -14211,6 +14583,32 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="1abc-c093-9e5a-d142" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                  </modifiers>
+                  <comment>Clone</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b395-6603-4965-11f5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="498f-dce1-59fd-d8d7"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <comment>Aberrant</comment>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -14575,9 +14973,14 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <modifiers>
             <modifier type="set" value="Line (2)" field="name"/>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="53f8-ca8c-239c-1d3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -14591,6 +14994,24 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </conditions>
             </modifier>
             <modifier type="replace" value="2" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Aberrant" id="ed81-1d24-b208-e34b" hidden="true" type="rule" targetId="1a2c-52eb-c28c-55c8">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e4a3-85f7-f6ce-261c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Clone" id="a218-9a99-6220-1018" hidden="true" type="rule" targetId="16f7-886f-f43b-0e6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9c64-f1ec-a907-35bc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -17323,6 +17744,32 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="1abc-c093-9e5a-d142" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                  </modifiers>
+                  <comment>Clone</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b395-6603-4965-11f5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="498f-dce1-59fd-d8d7"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <comment>Aberrant</comment>
+                </modifierGroup>
               </modifierGroups>
               <modifiers>
                 <modifier type="increment" value="1" field="f714-1726-37d3-44df">
@@ -17380,9 +17827,14 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               <comment>1</comment>
             </modifier>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="53f8-ca8c-239c-1d3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -17397,6 +17849,24 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </conditions>
             </modifier>
             <modifier type="replace" value="0.5*" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Clone" id="48ac-c4e7-081f-7261" hidden="true" type="rule" targetId="16f7-886f-f43b-0e6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9c64-f1ec-a907-35bc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Aberrant" id="937f-dbd7-fa8c-ab87" hidden="true" type="rule" targetId="1a2c-52eb-c28c-55c8">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e4a3-85f7-f6ce-261c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -33429,6 +33899,32 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="1abc-c093-9e5a-d142" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                  </modifiers>
+                  <comment>Clone</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b395-6603-4965-11f5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="498f-dce1-59fd-d8d7"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <comment>Aberrant</comment>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -34017,9 +34513,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           <modifiers>
             <modifier type="set" field="name" value="Vanguard (3)"/>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="53f8-ca8c-239c-1d3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -34033,6 +34534,24 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </conditions>
             </modifier>
             <modifier type="replace" value="1.5*" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Clone" id="45ac-c0c5-6be2-c134" hidden="true" type="rule" targetId="16f7-886f-f43b-0e6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9c64-f1ec-a907-35bc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Aberrant" id="7f28-ac26-4d23-ceeb" hidden="true" type="rule" targetId="1a2c-52eb-c28c-55c8">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e4a3-85f7-f6ce-261c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -34556,6 +35075,32 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="1abc-c093-9e5a-d142" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                  </modifiers>
+                  <comment>Clone</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b395-6603-4965-11f5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="498f-dce1-59fd-d8d7"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <comment>Aberrant</comment>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -34833,9 +35378,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           <modifiers>
             <modifier type="set" field="name" value="Vanguard (3)"/>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="53f8-ca8c-239c-1d3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -34849,6 +35399,24 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </conditions>
             </modifier>
             <modifier type="replace" value="1.5*" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Aberrant" id="aef3-908a-ebf1-86e1" hidden="true" type="rule" targetId="1a2c-52eb-c28c-55c8">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e4a3-85f7-f6ce-261c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Clone" id="398e-7458-d07d-ab41" hidden="true" type="rule" targetId="16f7-886f-f43b-0e6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9c64-f1ec-a907-35bc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -34925,6 +35493,32 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="1abc-c093-9e5a-d142" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                  </modifiers>
+                  <comment>Clone</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b395-6603-4965-11f5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="498f-dce1-59fd-d8d7"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <comment>Aberrant</comment>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -35545,9 +36139,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           <modifiers>
             <modifier type="set" field="name" value="Vanguard (3)"/>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="53f8-ca8c-239c-1d3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -35561,6 +36160,24 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </conditions>
             </modifier>
             <modifier type="replace" value="1.5*" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Aberrant" id="12a6-3f5d-e3a8-e82b" hidden="true" type="rule" targetId="1a2c-52eb-c28c-55c8">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e4a3-85f7-f6ce-261c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Clone" id="d807-b9c9-dae2-0cd8" hidden="true" type="rule" targetId="16f7-886f-f43b-0e6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9c64-f1ec-a907-35bc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -35636,6 +36253,32 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="1abc-c093-9e5a-d142" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                  </modifiers>
+                  <comment>Clone</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b395-6603-4965-11f5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="498f-dce1-59fd-d8d7"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <comment>Aberrant</comment>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -36101,9 +36744,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           <modifiers>
             <modifier type="set" field="name" value="Vanguard (2)"/>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="53f8-ca8c-239c-1d3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -36118,6 +36766,24 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               </conditions>
             </modifier>
             <modifier type="replace" value="1" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Clone" id="bea8-fcca-cd6c-909a" hidden="true" type="rule" targetId="16f7-886f-f43b-0e6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9c64-f1ec-a907-35bc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Aberrant" id="93a2-c5b2-caae-5fe5" hidden="true" type="rule" targetId="1a2c-52eb-c28c-55c8">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e4a3-85f7-f6ce-261c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -36208,6 +36874,32 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="1abc-c093-9e5a-d142" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                  </modifiers>
+                  <comment>Clone</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b395-6603-4965-11f5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="decrement" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="decrement" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="decrement" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="498f-dce1-59fd-d8d7"/>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0"/>
+                  </modifiers>
+                  <comment>Aberrant</comment>
                 </modifierGroup>
               </modifierGroups>
             </profile>
@@ -36684,9 +37376,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           <modifiers>
             <modifier type="set" field="name" value="Vanguard (2)"/>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="53f8-ca8c-239c-1d3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -44516,9 +45213,9 @@ This Oath of Moment may not be selected if the Detachment already has the Reape
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="The Broken Helix" hidden="true" id="4555-1a63-a6de-86ec">
+        <selectionEntry type="upgrade" import="true" name="The Broken Helix" hidden="true" id="4555-1a63-a6de-86ec" defaultAmount="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa17-6804-ff49-5d7a"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa17-6804-ff49-5d7a" automatic="true"/>
           </constraints>
           <rules>
             <rule name="The Broken Helix" id="10c2-0522-9303-5cc8" hidden="false">
@@ -44541,41 +45238,38 @@ Instead, such Models gain one of the following two Special Rules, chosen by the
             </rule>
           </rules>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Choose one" id="41d7-0bb1-3179-e1db" hidden="false" defaultSelectionEntryId="6ed4-540a-ba23-4968">
+            <selectionEntryGroup name="Choose one" id="1328-659d-39dd-de62" hidden="false" defaultSelectionEntryId="b395-6603-4965-11f5">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Clone" hidden="false" id="b70b-6523-97c1-1db7">
-                  <rules>
-                    <rule name="Clone" id="e469-b261-dd9d-c1f2" hidden="false">
-                      <description>&quot;Models with this Special Rule must reduce certain Advanced Characteristics, but gain increased resilience.&quot;
-
-
-All Models with this Special Rule that do not also have the Command, Champion, Specialist or Sergeant Sub-Types must reduce their Leadership, Willpower, Intelligence and Cool Characteristics by 1. Furthermore, a Unit that includes any Models with this Special Rule cannot make Reactions or Advanced Reactions, but gains a Damage Mitigation Test of 5+ – known as a Cloned Resilience Damage Mitigation Roll.</description>
-                    </rule>
-                  </rules>
+                <selectionEntry type="upgrade" import="true" name="Clone" hidden="false" id="1abc-c093-9e5a-d142">
+                  <infoLinks>
+                    <infoLink name="Clone" id="7efc-ddf4-f0cc-e1f0" hidden="false" type="rule" targetId="16f7-886f-f43b-0e6e"/>
+                  </infoLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a42f-d027-c365-3e74"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c6d-c12d-eb49-bb65"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Aberrant" hidden="false" id="137b-cc8f-c023-9d02">
+                <selectionEntry type="upgrade" import="true" name="Aberrant" hidden="false" id="b395-6603-4965-11f5">
+                  <infoLinks>
+                    <infoLink name="Aberrant" id="9ec8-e7fa-c8f5-a32d" hidden="false" type="rule" targetId="1a2c-52eb-c28c-55c8"/>
+                  </infoLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="caf1-0029-5ed7-0d4b"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d6d-0941-9f25-e92d"/>
                   </constraints>
-                  <rules>
-                    <rule name="Aberrant" id="898a-d2c7-221e-4a45" hidden="false">
-                      <description>&quot;Models with this Special Rule must reduce certain Advanced Characteristics, but gain increased combat powers.&quot;
-
-
-All Models with this Special Rule that do not also have the Command, Champion, Specialist or Sergeant Sub-Types must reduce their Leadership, Willpower, Intelligence and Cool Characteristics by 1, but increase their Strength and Attacks Characteristics by 1. Furthermore, a Unit that includes any Models with this Special Rule and begins the Assault Phase with any Model in that Unit within 12&quot; of an enemy Model must declare a Charge targeting the Unit that includes that enemy Model – even if they cannot reach the Target Unit.</description>
-                    </rule>
-                  </rules>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b14-0f41-4208-c4e9"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="586a-7a71-bc2e-d715"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cbbd-88cf-b229-f96b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ee0-b6ca-3dec-af81"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="53f8-ca8c-239c-1d3d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="The Eternal Vendetta" hidden="true" id="8b55-8833-8154-61f9">
           <rules>
