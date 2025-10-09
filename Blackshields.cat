@@ -55,8 +55,18 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe95-dd43-2b5e-0a99"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Frag grenades" hidden="false" id="09a5-e5f4-cc2f-44ea" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3"/>
-            <entryLink import="true" name="Krak grenades" hidden="false" id="8a07-5af4-ee25-96e0" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="4"/>
+            <entryLink import="true" name="Frag grenades" hidden="false" id="09a5-e5f4-cc2f-44ea" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="07de-150f-2c5f-cb61"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4c1-148f-d6c6-ffd6"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Krak grenades" hidden="false" id="8a07-5af4-ee25-96e0" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="64d6-04ed-350d-5aae"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3792-83a8-58f5-af73"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Terrawatt-patern power gauntlet" hidden="false" id="aa3f-18f5-8e71-21f6" sortIndex="2">
@@ -73,13 +83,20 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5dc4-4241-5b3b-b8b5"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca02-d865-28c5-8bd9"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b8d-ff94-da09-25e3"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a4f2-5783-e3b2-feab"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ee2f-8e17-c8c5-c719" includeChildSelections="true" includeChildForces="true"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d89a-1610-017f-eb4c"/>
       </constraints>
       <infoLinks>
         <infoLink name="[Allegiance]" id="90eb-1760-d063-1958" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
