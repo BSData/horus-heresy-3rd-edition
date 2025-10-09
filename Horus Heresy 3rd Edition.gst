@@ -609,6 +609,7 @@
     <categoryEntry name="Panoply of Old - Raven Guard" id="754a-10dd-0b2e-1b19" hidden="false"/>
     <categoryEntry name="Panoply of Old - Alpha Legion" id="0e0a-e490-ee7f-7033" hidden="false"/>
     <categoryEntry name="The Eternal Vendetta" id="fdfa-3e5d-370e-e470" hidden="false"/>
+    <categoryEntry name="Only in Death does Duty End" id="8026-d8cc-eea8-cd3d" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
