@@ -2788,6 +2788,21 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <comment>2</comment>
           <modifiers>
             <modifier type="set" value="Vanguard (2)" field="name"/>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Loot the Dead (X)" id="d0f2-f03d-cc9b-f556" hidden="true" type="rule" targetId="e348-c621-0738-cb6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="replace" value="1.5*" field="name" arg="X"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -3271,9 +3286,24 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <comment>1</comment>
           <modifiers>
             <modifier type="set" value="Line (1)" field="name"/>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="Shieldwall!" id="67ce-5428-2677-212f" hidden="false" type="profile" targetId="e70e-0849-1ca6-81d6"/>
+        <infoLink name="Loot the Dead (X)" id="d704-df22-5f15-7683" hidden="true" type="rule" targetId="e348-c621-0738-cb6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="replace" value="1" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="32"/>
@@ -5238,6 +5268,21 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <infoLink name="Line (X)" id="dacc-a759-ca92-dba3" hidden="false" type="rule" targetId="1b5d-ceec-802a-c611">
           <modifiers>
             <modifier type="set" value="Line (1)" field="name"/>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Loot the Dead (X)" id="6fc7-97e0-f648-efd7" hidden="true" type="rule" targetId="e348-c621-0738-cb6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="replace" value="1" field="name" arg="X"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -5632,6 +5677,21 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <comment>3</comment>
           <modifiers>
             <modifier type="set" value="Vanguard (3)" field="name"/>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Loot the Dead (X)" id="f3c4-1542-e339-dc39" hidden="true" type="rule" targetId="e348-c621-0738-cb6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="replace" value="1.5*" field="name" arg="X"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -6265,6 +6325,16 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <infoLink name="Fury of the Legion" id="fbed-dcca-a519-e864" hidden="false" type="rule" targetId="b49c-d074-165e-ce1b"/>
         <infoLink name="[Allegiance]" id="7142-2718-c3b5-c7cc" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="a9fa-7437-90fb-47d8" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Loot the Dead (X)" id="b680-2fad-acb9-a2a1" hidden="true" type="rule" targetId="e348-c621-0738-cb6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="replace" value="2" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
@@ -12531,9 +12601,24 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <comment>3</comment>
           <modifiers>
             <modifier type="set" value="Vanguard (3)" field="name"/>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="Slow and Purposeful" id="1ae6-50e3-812b-162f" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e"/>
+        <infoLink name="Loot the Dead (X)" id="ed02-e849-e46a-8cc2" hidden="true" type="rule" targetId="e348-c621-0738-cb6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="replace" value="1.5*" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Seeker Squad" hidden="false" id="f1c4-6d65-d660-f16f" sortIndex="26">
@@ -13257,10 +13342,25 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <comment>3</comment>
           <modifiers>
             <modifier type="set" value="Vanguard (3)" field="name"/>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="[Allegiance]" id="eab4-8c4f-eac1-a631" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="807d-e7be-fc43-29f9" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Loot the Dead (X)" id="d1aa-64b0-db9b-cbef" hidden="true" type="rule" targetId="e348-c621-0738-cb6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="replace" value="1.5*" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Cataphractii Terminator Command Squad" hidden="false" id="b703-f7ab-dac5-0ae4" sortIndex="23">
@@ -14006,10 +14106,25 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <comment>2</comment>
           <modifiers>
             <modifier type="set" value="Line (2)" field="name"/>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="[Allegiance]" id="2be1-9148-ed5d-85cc" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="9262-ca88-5249-d31f" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Loot the Dead (X)" id="0284-24e2-bc6f-660d" hidden="true" type="rule" targetId="e348-c621-0738-cb6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="replace" value="2" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
@@ -16742,11 +16857,26 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <modifier type="set" value="Vanguard (1)" field="name">
               <comment>1</comment>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="Firestorm" id="e2a1-6ff7-8722-7af1" hidden="false" type="rule" targetId="3ed1-c5b3-a98d-1b12"/>
         <infoLink name="Implacable Advance" id="ffb9-a305-2071-463f" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
         <infoLink name="Outflank" id="6298-2379-d155-c6f0" hidden="false" type="rule" targetId="92d2-cc57-1ef6-a712"/>
+        <infoLink name="Loot the Dead (X)" id="0cec-baef-beac-1067" hidden="true" type="rule" targetId="e348-c621-0738-cb6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="replace" value="0.5*" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="45"/>
@@ -33067,10 +33197,25 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <infoLink name="Vanguard (X)" hidden="false" type="rule" targetId="530f-b733-993c-ec84" id="51ad-e250-4b80-8f07">
           <modifiers>
             <modifier type="set" field="name" value="Vanguard (3)"/>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="[Allegiance]" id="82b9-e838-3573-e8a5" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="7783-c44c-5811-5bb2" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Loot the Dead (X)" id="b12e-41e2-6c67-0771" hidden="true" type="rule" targetId="e348-c621-0738-cb6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="replace" value="1.5*" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Frag grenades" hidden="false" id="f0d2-bb95-4719-ab78" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
@@ -33832,10 +33977,25 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <infoLink name="Vanguard (X)" hidden="false" type="rule" targetId="530f-b733-993c-ec84" id="daac-d028-4ca1-a434">
           <modifiers>
             <modifier type="set" field="name" value="Vanguard (3)"/>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="[Allegiance]" id="30ab-96ed-e8e4-588e" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="04ae-db92-8ea5-9067" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Loot the Dead (X)" id="7701-c199-c1ee-f839" hidden="true" type="rule" targetId="e348-c621-0738-cb6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="replace" value="1.5*" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="647c-faca-3c98-c203" id="707c-331d-f682-f132" primary="false" name="Free Power Weapon"/>
@@ -34511,10 +34671,25 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <infoLink name="Vanguard (X)" hidden="false" type="rule" targetId="530f-b733-993c-ec84" id="e3db-d933-4d21-aab6">
           <modifiers>
             <modifier type="set" field="name" value="Vanguard (3)"/>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="[Allegiance]" id="cbe4-798b-0c81-739e" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="5903-c137-5f02-98b5" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Loot the Dead (X)" id="e507-c2cb-ae00-f6fd" hidden="true" type="rule" targetId="e348-c621-0738-cb6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="replace" value="1.5*" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Cult Arcana" hidden="true" id="1217-eb41-aa75-e804" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
@@ -35034,11 +35209,26 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <infoLink name="Vanguard (X)" hidden="false" type="rule" targetId="530f-b733-993c-ec84" id="ad74-4940-4cd9-9465">
           <modifiers>
             <modifier type="set" field="name" value="Vanguard (2)"/>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="Bitter Duty" hidden="false" type="rule" targetId="5d6f-552a-f409-cad5" id="174f-f29a-4314-adda"/>
         <infoLink name="[Allegiance]" id="a818-8865-54c3-dda3" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="261e-5aaf-949f-863c" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Loot the Dead (X)" id="5d34-a828-2863-c950" hidden="true" type="rule" targetId="e348-c621-0738-cb6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="replace" value="1" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Frag grenades" hidden="false" id="e2bb-cde5-4156-845d" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
@@ -35584,11 +35774,26 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
         <infoLink name="Vanguard (X)" hidden="false" type="rule" targetId="530f-b733-993c-ec84" id="a3ea-dfe0-41e0-8c57">
           <modifiers>
             <modifier type="set" field="name" value="Vanguard (2)"/>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
         <infoLink name="Bitter Duty" hidden="false" type="rule" targetId="5d6f-552a-f409-cad5" id="11a6-dac9-457b-894b"/>
         <infoLink name="[Legiones Astartes]" id="f242-6c40-d5c2-01eb" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
         <infoLink name="[Allegiance]" id="c58d-6380-b1d2-647a" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Loot the Dead (X)" id="4e0a-5bef-ff26-23b4" hidden="true" type="rule" targetId="e348-c621-0738-cb6e">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="49f4-c066-6fe6-fbfd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="replace" value="1" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Frag grenades" hidden="false" id="0b00-c5d8-44f9-8ff1" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
@@ -42899,11 +43104,8 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panoply of Old - Alpha Legion" hidden="true" id="173a-4584-c184-72ac" defaultAmount="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b94-2dbd-2d6b-07d7"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b94-2dbd-2d6b-07d7" automatic="true"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink name="Panoply of Old - Alpha Legion" hidden="false" id="1e3f-9744-8f8d-f813" targetId="0e0a-e490-ee7f-7033" primary="false"/>
-          </categoryLinks>
           <infoLinks>
             <infoLink name="Panoply of Old" id="275f-e24e-5896-25cb" hidden="false" type="rule" targetId="c768-6f33-f07c-7b92"/>
           </infoLinks>
@@ -42913,15 +43115,17 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="0e0a-e490-ee7f-7033" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="6b94-2dbd-2d6b-07d7">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="0e0a-e490-ee7f-7033" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panoply of Old - Blood Angels" hidden="true" id="2992-6718-79d1-754d" defaultAmount="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4bd-a359-7aec-9a98"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4bd-a359-7aec-9a98" automatic="true"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink name="Panoply of Old - Blood Angels" hidden="false" id="618d-adde-cc8d-6b0d" targetId="8ae1-c83b-a225-826f" primary="false"/>
-          </categoryLinks>
           <infoLinks>
             <infoLink name="Panoply of Old" id="21a0-ded8-9513-8240" hidden="false" type="rule" targetId="c768-6f33-f07c-7b92"/>
           </infoLinks>
@@ -42931,15 +43135,17 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="8ae1-c83b-a225-826f" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="c4bd-a359-7aec-9a98">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="8ae1-c83b-a225-826f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panoply of Old - Dark Angels" hidden="true" id="2747-07a4-df58-d1e7" defaultAmount="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e62-f4f3-1f93-f21d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e62-f4f3-1f93-f21d" automatic="true"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink name="Panoply of Old - Dark Angels" hidden="false" id="f521-350d-0b14-726f" targetId="c99b-7cb2-a79c-b632" primary="false"/>
-          </categoryLinks>
           <infoLinks>
             <infoLink name="Panoply of Old" id="d47d-2971-2b07-d29c" hidden="false" type="rule" targetId="c768-6f33-f07c-7b92"/>
           </infoLinks>
@@ -42949,15 +43155,17 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="c99b-7cb2-a79c-b632" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="8e62-f4f3-1f93-f21d">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="c99b-7cb2-a79c-b632" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panoply of Old - Death Guard" hidden="true" id="280a-fd3c-3b30-b950" defaultAmount="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9057-6b31-1a4d-0646"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9057-6b31-1a4d-0646" automatic="true"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink name="Panoply of Old - Death Guard" hidden="false" id="1cd6-a331-9a5a-8cb2" targetId="606f-00c4-a49b-ff1c" primary="false"/>
-          </categoryLinks>
           <infoLinks>
             <infoLink name="Panoply of Old" id="e11b-9dea-f419-8860" hidden="false" type="rule" targetId="c768-6f33-f07c-7b92"/>
           </infoLinks>
@@ -42967,15 +43175,17 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="606f-00c4-a49b-ff1c" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="9057-6b31-1a4d-0646">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="606f-00c4-a49b-ff1c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panoply of Old - Emperor&apos;s Children" hidden="true" id="29f1-33c0-af07-c36c" defaultAmount="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="caa6-0172-2db6-130a"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="caa6-0172-2db6-130a" automatic="true"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink name="Panoply of Old - Emperor&apos;s Children" hidden="false" id="62dd-6418-b59d-1aa3" targetId="fc3a-a4e6-8a2c-01a8" primary="false"/>
-          </categoryLinks>
           <infoLinks>
             <infoLink name="Panoply of Old" id="6c66-7f68-b287-15d0" hidden="false" type="rule" targetId="c768-6f33-f07c-7b92"/>
           </infoLinks>
@@ -42985,15 +43195,17 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="fc3a-a4e6-8a2c-01a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="caa6-0172-2db6-130a">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="fc3a-a4e6-8a2c-01a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panoply of Old - Imperial Fists" hidden="true" id="42c7-03ac-a32b-2979" defaultAmount="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7057-c1c2-10ae-ee6d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7057-c1c2-10ae-ee6d" automatic="true"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink name="Panoply of Old - Imperial Fists" hidden="false" id="63bc-6f2f-cf9c-33ee" targetId="de6f-f206-4bb4-d176" primary="false"/>
-          </categoryLinks>
           <infoLinks>
             <infoLink name="Panoply of Old" id="6126-a643-35b9-8a33" hidden="false" type="rule" targetId="c768-6f33-f07c-7b92"/>
           </infoLinks>
@@ -43003,15 +43215,17 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="de6f-f206-4bb4-d176" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="7057-c1c2-10ae-ee6d">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="de6f-f206-4bb4-d176" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panoply of Old - Iron Hands" hidden="true" id="0361-019b-60d5-e32d" defaultAmount="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98eb-f8ae-a5ad-48a0"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98eb-f8ae-a5ad-48a0" automatic="true"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink name="Panoply of Old - Iron Hands" hidden="false" id="d35d-b42e-de48-0969" targetId="1c05-5fde-9ef6-9807" primary="false"/>
-          </categoryLinks>
           <infoLinks>
             <infoLink name="Panoply of Old" id="d2dc-0d8a-a323-125f" hidden="false" type="rule" targetId="c768-6f33-f07c-7b92"/>
           </infoLinks>
@@ -43021,15 +43235,17 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="1c05-5fde-9ef6-9807" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="98eb-f8ae-a5ad-48a0">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="1c05-5fde-9ef6-9807" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panoply of Old - Iron Warriors" hidden="true" id="b910-0654-7ac9-983c" defaultAmount="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="613f-b075-a578-9cba"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="613f-b075-a578-9cba" automatic="true"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink name="Panoply of Old - Iron Warriors" hidden="false" id="0aff-e598-521a-5d27" targetId="4061-bc47-ebca-dc39" primary="false"/>
-          </categoryLinks>
           <infoLinks>
             <infoLink name="Panoply of Old" id="7beb-1f38-54ff-d909" hidden="false" type="rule" targetId="c768-6f33-f07c-7b92"/>
           </infoLinks>
@@ -43039,15 +43255,17 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="4061-bc47-ebca-dc39" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="613f-b075-a578-9cba">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4061-bc47-ebca-dc39" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panoply of Old - Night Lords" hidden="true" id="6af6-1319-41d1-028b" defaultAmount="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1823-7cc1-ffab-4445"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1823-7cc1-ffab-4445" automatic="true"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink name="Panoply of Old - Night Lords" hidden="false" id="9c03-1448-0b6e-12fe" targetId="d63e-1849-e763-05ee" primary="false"/>
-          </categoryLinks>
           <infoLinks>
             <infoLink name="Panoply of Old" id="36ac-bb83-489c-12ca" hidden="false" type="rule" targetId="c768-6f33-f07c-7b92"/>
           </infoLinks>
@@ -43057,15 +43275,17 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="d63e-1849-e763-05ee" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="1823-7cc1-ffab-4445">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="d63e-1849-e763-05ee" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panoply of Old - Raven Guard" hidden="true" id="8735-ad89-42d1-8662" defaultAmount="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b433-e6c1-340e-d0a3"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b433-e6c1-340e-d0a3" automatic="true"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink name="Panoply of Old - Raven Guard" hidden="false" id="f6bf-d02d-2d1d-071f" targetId="754a-10dd-0b2e-1b19" primary="false"/>
-          </categoryLinks>
           <infoLinks>
             <infoLink name="Panoply of Old" id="0ca2-d246-5bb5-90ac" hidden="false" type="rule" targetId="c768-6f33-f07c-7b92"/>
           </infoLinks>
@@ -43075,15 +43295,17 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="754a-10dd-0b2e-1b19" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="b433-e6c1-340e-d0a3">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="754a-10dd-0b2e-1b19" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panoply of Old - Salamanders" hidden="true" id="02e8-c0b1-8106-e8d5" defaultAmount="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="484b-fac2-3d88-d0a9"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="484b-fac2-3d88-d0a9" automatic="true"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink name="Panoply of Old - Salamanders" hidden="false" id="1e99-d5a7-4d0a-0d89" targetId="fde7-fb71-1ecc-7365" primary="false"/>
-          </categoryLinks>
           <infoLinks>
             <infoLink name="Panoply of Old" id="ee18-b104-bf1f-369d" hidden="false" type="rule" targetId="c768-6f33-f07c-7b92"/>
           </infoLinks>
@@ -43093,15 +43315,17 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="fde7-fb71-1ecc-7365" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="484b-fac2-3d88-d0a9">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="fde7-fb71-1ecc-7365" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panoply of Old - Sons of Horus" hidden="true" id="8ba9-a79a-ed42-f1ef" defaultAmount="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3a7-4c74-176e-2710"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3a7-4c74-176e-2710" automatic="true"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink name="Panoply of Old - Sons of Horus" hidden="false" id="d8da-5b82-03ca-198b" targetId="59b9-6955-2307-aa98" primary="false"/>
-          </categoryLinks>
           <infoLinks>
             <infoLink name="Panoply of Old" id="f324-0db7-d188-3ef4" hidden="false" type="rule" targetId="c768-6f33-f07c-7b92"/>
           </infoLinks>
@@ -43111,15 +43335,17 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="59b9-6955-2307-aa98" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="f3a7-4c74-176e-2710">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="59b9-6955-2307-aa98" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panoply of Old - Space Wolves" hidden="true" id="e432-aade-1274-b448" defaultAmount="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7b8-a0d9-bebe-0def"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7b8-a0d9-bebe-0def" automatic="true"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink name="Panoply of Old - Space Wolves" hidden="false" id="9239-6d45-14f2-1579" targetId="3e12-20bf-607f-c531" primary="false"/>
-          </categoryLinks>
           <infoLinks>
             <infoLink name="Panoply of Old" id="fc9c-c0fb-50e0-264c" hidden="false" type="rule" targetId="c768-6f33-f07c-7b92"/>
           </infoLinks>
@@ -43129,15 +43355,17 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="3e12-20bf-607f-c531" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="b7b8-a0d9-bebe-0def">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="3e12-20bf-607f-c531" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panoply of Old - Thousand Sons" hidden="true" id="14ea-17eb-05ca-5c57" defaultAmount="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1252-69f1-434a-4edc"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1252-69f1-434a-4edc" automatic="true"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink name="Panoply of Old - Thousand Sons" hidden="false" id="0b83-10d5-2891-3c62" targetId="4eec-9111-7656-2023" primary="false"/>
-          </categoryLinks>
           <infoLinks>
             <infoLink name="Panoply of Old" id="1dc9-9890-b115-cade" hidden="false" type="rule" targetId="c768-6f33-f07c-7b92"/>
           </infoLinks>
@@ -43147,15 +43375,17 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="4eec-9111-7656-2023" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="1252-69f1-434a-4edc">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="4eec-9111-7656-2023" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panoply of Old - Ultramarines" hidden="true" id="b9a9-71df-e89d-f638" defaultAmount="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="109c-e19b-4126-6616"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="109c-e19b-4126-6616" automatic="true"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink name="Panoply of Old - Ultramarines" hidden="false" id="7710-c2f0-c98a-ebf6" targetId="147b-ad1e-1848-e5d3" primary="false"/>
-          </categoryLinks>
           <infoLinks>
             <infoLink name="Panoply of Old" id="8faa-e083-145e-6342" hidden="false" type="rule" targetId="c768-6f33-f07c-7b92"/>
           </infoLinks>
@@ -43165,15 +43395,17 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="147b-ad1e-1848-e5d3" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="109c-e19b-4126-6616">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="147b-ad1e-1848-e5d3" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panoply of Old - White Scars" hidden="true" id="bf23-af02-9ac5-d2a1" defaultAmount="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ba0-7fbb-8097-6c6a"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ba0-7fbb-8097-6c6a" automatic="true"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink name="Panoply of Old - White Scars" hidden="false" id="1303-65fd-d86c-648f" targetId="d479-57dc-b494-7f80" primary="false"/>
-          </categoryLinks>
           <infoLinks>
             <infoLink name="Panoply of Old" id="311b-8cba-b4ec-4889" hidden="false" type="rule" targetId="c768-6f33-f07c-7b92"/>
           </infoLinks>
@@ -43183,15 +43415,17 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="d479-57dc-b494-7f80" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="0ba0-7fbb-8097-6c6a">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="d479-57dc-b494-7f80" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panoply of Old - Word Bearers" hidden="true" id="a1f5-95b1-dcf9-3188" defaultAmount="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="402a-d570-8179-da2a"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="402a-d570-8179-da2a" automatic="true"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink name="Panoply of Old - Word Bearers" hidden="false" id="7b19-68d3-f614-9005" targetId="a7b1-f3cb-b648-834a" primary="false"/>
-          </categoryLinks>
           <infoLinks>
             <infoLink name="Panoply of Old" id="3fd3-0a9a-34f8-4bff" hidden="false" type="rule" targetId="c768-6f33-f07c-7b92"/>
           </infoLinks>
@@ -43201,15 +43435,17 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="a7b1-f3cb-b648-834a" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="402a-d570-8179-da2a">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="a7b1-f3cb-b648-834a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panoply of Old - World Eaters" hidden="true" id="a271-6759-d717-5e70" defaultAmount="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb46-16f7-acb5-9b99"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb46-16f7-acb5-9b99" automatic="true"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink name="Panoply of Old - World Eaters" hidden="false" id="7741-e714-6be7-6193" targetId="0d39-355e-7faa-51a0" primary="false"/>
-          </categoryLinks>
           <infoLinks>
             <infoLink name="Panoply of Old" id="4136-c1dc-2683-8217" hidden="false" type="rule" targetId="c768-6f33-f07c-7b92"/>
           </infoLinks>
@@ -43217,6 +43453,11 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
             <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d39-355e-7faa-51a0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="fb46-16f7-acb5-9b99">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="0d39-355e-7faa-51a0" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -43464,7 +43705,10 @@ Models that have lost either the Line (X) or Vanguard (X) Special Rule due to t
  • For Models that have had any variant of Line (X) removed by this Special Rule, the value of X on Loot the Dead is equal to the value of X on the variant of Line (X) that was removed.
 
 
-This Oath of Moment may not be selected if the Detachment already has the Reapers of Lives Oath of Moment</description>
+This Oath of Moment may not be selected if the Detachment already has the Reapers of Lives Oath of Moment
+
+
+*NR Data authors note - there is currently no definitive ruling on rounding up or down for X values in Special Rules in HH v3.0 and we are not in any position to be making a ruling on that. We will update the values if an FAQ is released to address the subject. In the mean time, we advise discussing it with your opponent before you play.&quot;*</description>
             </rule>
           </rules>
           <modifiers>
