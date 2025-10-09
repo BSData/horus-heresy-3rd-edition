@@ -138,6 +138,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="8629-b689-fb42-280d" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="93b0-888c-694e-190f">
       <entryLinks>
@@ -252,6 +255,13 @@ Models that have lost either the Line (X) or Vanguard (X) Special Rule due to t
 This Oath of Moment may not be selected if the Detachment already has the Reapers of Lives Oath of Moment</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="0" field="741d-0fbd-5555-5d6d">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="40ff-d0cc-3254-f83e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="An Eternity of War" hidden="false" id="0174-c909-411e-c107">
           <constraints>
@@ -478,6 +488,18 @@ All Models with the Blackshields Trait in a Detachment that has this Oath of Mo
 This Oath of Moment may not be selected if the Detachment already has the Reapers of Lives or Spoils of Victory Oaths of Moment.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="0" field="cb62-4579-e99e-1d82">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e39d-fff6-6325-47d1" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="40ff-d0cc-3254-f83e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Reapers of Lives" hidden="false" id="40ff-d0cc-3254-f83e">
           <constraints>
@@ -494,6 +516,13 @@ All Models with the Blackshields Trait in a Detachment with this Oath of Moment
 This Oath of Moment may not be selected if the Detachment already has the Spoils of Victory Oath of Moment.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="0" field="2496-3ee4-4c9b-9d85">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e39d-fff6-6325-47d1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Alone and Forgotten" hidden="false" id="9f95-fefa-8065-0094">
           <constraints>
