@@ -613,6 +613,11 @@
     <categoryEntry name="The Spoils of Victory" id="49f4-c066-6fe6-fbfd" hidden="false"/>
     <categoryEntry name="An Eternity of War" id="ac6a-e4c3-b5aa-fe61" hidden="false"/>
     <categoryEntry name="The Flesh is Weak" id="d563-c8da-2cce-aa7d" hidden="false"/>
+    <categoryEntry name="The Legacy of Nikaea" id="d26c-456d-f04d-12d0" hidden="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="61f0-d47a-8087-6964" includeChildSelections="true"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">

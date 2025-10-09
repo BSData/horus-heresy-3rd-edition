@@ -44607,9 +44607,9 @@ However, all Units in a Detachment that include any Models with this Oath of Mo
             </infoLink>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="The Flesh is Weak" hidden="true" id="e5d8-4df8-c3ce-ecd5">
+        <selectionEntry type="upgrade" import="true" name="The Flesh is Weak" hidden="true" id="e5d8-4df8-c3ce-ecd5" defaultAmount="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5ad-809a-3752-2d4d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5ad-809a-3752-2d4d" automatic="true"/>
           </constraints>
           <rules>
             <rule name=" The Flesh is Weak" id="3c41-78dd-292c-f501" hidden="false">
@@ -44654,12 +44654,16 @@ A Model with this Special Rule may only have Models with the Automata Type and 
                 <condition type="atLeast" value="1" field="selections" scope="unit" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
-            <modifier type="remove" value="594d-fa82-13cb-a345" field="category"/>
+            <modifier type="set" value="0" field="b5ad-809a-3752-2d4d">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="d563-c8da-2cce-aa7d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="The Legacy of Nikaea" hidden="true" id="cf63-9e03-0f66-8466">
+        <selectionEntry type="upgrade" import="true" name="The Legacy of Nikaea" hidden="true" id="cf63-9e03-0f66-8466" defaultAmount="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71c5-af70-6584-9d14"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71c5-af70-6584-9d14" automatic="true"/>
           </constraints>
           <rules>
             <rule name="The Legacy of Nikaea" id="efc9-efb1-4795-7313" hidden="false">
@@ -44670,6 +44674,63 @@ Any Model with the Blackshields Trait and the Sergeant, Champion, Specialist or 
 such a Model already has the Psyker Trait and access to other Psychic Disciplines, they retain those in addition to this Psychic Discipline)</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d26c-456d-f04d-12d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="71c5-af70-6584-9d14">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="d26c-456d-f04d-12d0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Malignant" hidden="false" id="beee-7730-64d9-dda7" type="selectionEntry" targetId="7c9f-29fc-0fe6-41ee">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f7a6-e879-4a5e-5485" automatic="true"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1d63-2bf5-79fe-471c" automatic="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="f7a6-e879-4a5e-5485">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="1" field="1d63-2bf5-79fe-471c">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Malignant" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="6aea-1e52-05b6-1ca6">
+                  <characteristics>
+                    <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233">&quot;Models with this Special Rule suffer more harm from Perils of the Warp.&quot;
+
+
+When a Unit that includes any Models with this Special Rule suffers Perils of the Warp and gets a result of Warp Rupture, all Models with this Special Rule in that Unit have their Willpower Characteristic set to 5 while resolving that incident of Perils of the Warp.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Psyker" id="5e1d-f511-c7ca-01c2" hidden="false" type="profile" targetId="0d5a-bf3a-7b46-785a"/>
+              </infoLinks>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="The Spoils of Victory" hidden="true" id="7fe5-d109-03e3-1019" defaultAmount="1">
           <constraints>
