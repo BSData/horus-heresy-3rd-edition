@@ -46,6 +46,17 @@
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>The Flesh is Weak</comment>
+                  <modifiers>
+                    <modifier type="replace" value="Automata" field="50fc-9241-d4a2-045b" arg="Infantry"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <entryLinks>
@@ -67,6 +78,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3792-83a8-58f5-af73"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Oath of Moment" hidden="false" id="4d67-e55d-008d-7579" type="selectionEntryGroup" targetId="fd0c-8569-5b52-0ce8"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Terrawatt-patern power gauntlet" hidden="false" id="aa3f-18f5-8e71-21f6" sortIndex="2">
@@ -450,6 +462,9 @@ When the Controlling Player of any Unit composed entirely of Models with the Bl
 However, if in the Effects Sub-Phase of the Controlling Player’s End Phase in any Battle Turn after Battle Turn One, a Unit affected by this Oath of Moment is not Locked in Combat, then it must have a Cool Check made for it. If this Check is failed then all Models in the Unit gain the Routed Battlefield Status.</description>
             </rule>
           </rules>
+          <categoryLinks>
+            <categoryLink targetId="ac6a-e4c3-b5aa-fe61" id="6faf-c8b6-158d-5bf7" primary="false" name="An Eternity of War"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="The Flesh is Weak" hidden="false" id="cd7d-bd5e-fe39-cf34">
           <constraints>
@@ -480,6 +495,9 @@ Further, any Model with the Transport Sub-Type selected as part of a Detachment
 A Model with this Special Rule may only have Models with the Automata Type and the Blackshields Trait Embark upon it. In addition, a Model with this Special Rule also increases its Transport Capacity by 3.</description>
             </rule>
           </rules>
+          <categoryLinks>
+            <categoryLink targetId="d563-c8da-2cce-aa7d" id="ee94-301d-013e-d7b3" primary="false" name="The Flesh is Weak"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="The Legacy of Nikaea" hidden="false" id="84f9-5c94-cd8b-869b">
           <constraints>

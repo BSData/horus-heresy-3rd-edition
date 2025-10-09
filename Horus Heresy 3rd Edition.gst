@@ -611,6 +611,8 @@
     <categoryEntry name="The Eternal Vendetta" id="fdfa-3e5d-370e-e470" hidden="false"/>
     <categoryEntry name="Only in Death does Duty End" id="8026-d8cc-eea8-cd3d" hidden="false"/>
     <categoryEntry name="The Spoils of Victory" id="49f4-c066-6fe6-fbfd" hidden="false"/>
+    <categoryEntry name="An Eternity of War" id="ac6a-e4c3-b5aa-fe61" hidden="false"/>
+    <categoryEntry name="The Flesh is Weak" id="d563-c8da-2cce-aa7d" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
