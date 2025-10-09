@@ -590,6 +590,24 @@
     <categoryEntry name="Master of Signals" id="984c-7429-a450-2e1a" hidden="false"/>
     <categoryEntry name="In Disgrace all are Equal" id="610d-c9b0-ccb0-cba9" hidden="false"/>
     <categoryEntry name="The Taint of Xenos" id="6049-c010-d9b7-8cca" hidden="false"/>
+    <categoryEntry name="Panoply of Old - Dark Angels" id="c99b-7cb2-a79c-b632" hidden="false"/>
+    <categoryEntry name="Panoply of Old - Emperor&apos;s Children" id="fc3a-a4e6-8a2c-01a8" hidden="false"/>
+    <categoryEntry name="Panoply of Old - Iron Warriors" id="4061-bc47-ebca-dc39" hidden="false"/>
+    <categoryEntry name="Panoply of Old - White Scars" id="d479-57dc-b494-7f80" hidden="false"/>
+    <categoryEntry name="Panoply of Old - Space Wolves" id="3e12-20bf-607f-c531" hidden="false"/>
+    <categoryEntry name="Panoply of Old - Imperial Fists" id="de6f-f206-4bb4-d176" hidden="false"/>
+    <categoryEntry name="Panoply of Old - Night Lords" id="d63e-1849-e763-05ee" hidden="false"/>
+    <categoryEntry name="Panoply of Old - Blood Angels" id="8ae1-c83b-a225-826f" hidden="false"/>
+    <categoryEntry name="Panoply of Old - Iron Hands" id="1c05-5fde-9ef6-9807" hidden="false"/>
+    <categoryEntry name="Panoply of Old - World Eaters" id="0d39-355e-7faa-51a0" hidden="false"/>
+    <categoryEntry name="Panoply of Old - Ultramarines" id="147b-ad1e-1848-e5d3" hidden="false"/>
+    <categoryEntry name="Panoply of Old - Death Guard" id="606f-00c4-a49b-ff1c" hidden="false"/>
+    <categoryEntry name="Panoply of Old - Thousand Sons" id="4eec-9111-7656-2023" hidden="false"/>
+    <categoryEntry name="Panoply of Old - Sons of Horus" id="59b9-6955-2307-aa98" hidden="false"/>
+    <categoryEntry name="Panoply of Old - Word Bearers" id="a7b1-f3cb-b648-834a" hidden="false"/>
+    <categoryEntry name="Panoply of Old - Salamanders" id="fde7-fb71-1ecc-7365" hidden="false"/>
+    <categoryEntry name="Panoply of Old - Raven Guard" id="754a-10dd-0b2e-1b19" hidden="false"/>
+    <categoryEntry name="Panoply of Old - Alpha Legion" id="0e0a-e490-ee7f-7033" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">

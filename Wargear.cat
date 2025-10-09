@@ -878,10 +878,20 @@ Additionally, when a Unit which contains any Models with an ætheric juncture sp
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fde7-fb71-1ecc-7365" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
                   </conditionGroups>
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                  </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -906,10 +916,20 @@ Additionally, when a Unit which contains any Models with an ætheric juncture sp
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="486f-b32a-ac87-73dd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="d63e-1849-e763-05ee" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
                   </conditionGroups>
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="486f-b32a-ac87-73dd" shared="true" includeChildSelections="true"/>
-                  </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -930,9 +950,6 @@ Additionally, when a Unit which contains any Models with an ætheric juncture sp
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="4935-1832-63f7-91aa" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
@@ -940,6 +957,19 @@ Additionally, when a Unit which contains any Models with an ætheric juncture sp
                         <condition type="instanceOf" value="1" field="selections" scope="unit" childId="23ee-bc64-aea6-5272" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="unit" childId="2a5a-8ab8-be4d-6fa7" shared="true"/>
                       </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="4935-1832-63f7-91aa" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="a7b1-f3cb-b648-834a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -965,10 +995,28 @@ Additionally, when a Unit which contains any Models with an ætheric juncture sp
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="8813-5298-c368-ee16" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0e0a-e490-ee7f-7033" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0e0a-e490-ee7f-7033" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
                   </conditionGroups>
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="8813-5298-c368-ee16" shared="true" includeChildSelections="true"/>
-                  </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -983,9 +1031,23 @@ Additionally, when a Unit which contains any Models with an ætheric juncture sp
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f7b4-2531-0962-1379" shared="true" includeChildSelections="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f7b4-2531-0962-1379" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="d479-57dc-b494-7f80" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -1013,10 +1075,20 @@ Additionally, when a Unit which contains any Models with an ætheric juncture sp
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="656a-07b6-d4fd-57af" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="147b-ad1e-1848-e5d3" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
                   </conditionGroups>
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="656a-07b6-d4fd-57af" shared="true" includeChildSelections="true"/>
-                  </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -1031,11 +1103,25 @@ Additionally, when a Unit which contains any Models with an ætheric juncture sp
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="0a35-fce3-188c-b3aa" shared="true" includeChildSelections="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="8dd8-e8e9-3c90-05cb" shared="true" includeChildSelections="true" includeChildForces="true"/>
                     <condition type="atLeast" value="1" field="forces" scope="roster" childId="8f12-c30a-6c20-6296" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="0a35-fce3-188c-b3aa" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c99b-7cb2-a79c-b632" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
               <comment>DA Command in Primary Detachment, army includes Excindio Battle-automata</comment>
@@ -1083,9 +1169,21 @@ Additionally, when a Unit which contains any Models with an ætheric juncture sp
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a22-d01f-ab5c-ec07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fc3a-a4e6-8a2c-01a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
                   </conditionGroups>
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a22-d01f-ab5c-ec07" shared="true" includeChildSelections="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
