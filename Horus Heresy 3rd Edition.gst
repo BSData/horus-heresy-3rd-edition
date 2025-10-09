@@ -588,6 +588,8 @@
     <categoryEntry name="Support - Araknae Quad Accelerator Platform Units Only" id="9a5a-a469-c15d-380d" hidden="false"/>
     <categoryEntry name="Recon - Tarantula Battery Units Only" id="6177-f967-f944-a7bd" hidden="false"/>
     <categoryEntry name="Master of Signals" id="984c-7429-a450-2e1a" hidden="false"/>
+    <categoryEntry name="In Disgrace all are Equal" id="610d-c9b0-ccb0-cba9" hidden="false"/>
+    <categoryEntry name="The Taint of Xenos" id="6049-c010-d9b7-8cca" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">

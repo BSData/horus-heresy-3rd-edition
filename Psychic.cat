@@ -236,6 +236,9 @@ Volley Attack.</characteristic>
           <comment>2</comment>
         </infoLink>
       </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="d337-5da9-5798-b29e" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Telepathy" hidden="false" id="13c2-f899-efef-20cb">
       <categoryLinks>
@@ -418,6 +421,75 @@ any Model in the Target Unit makes attacks with a Weapon that has the Psychic Tr
         <modifier type="add" value="3897-23c5-f4e7-e4a8" field="category"/>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Malignant" hidden="false" id="7c9f-29fc-0fe6-41ee">
+      <rules>
+        <rule name="Malignant" id="d766-1f46-ff67-86de" hidden="false">
+          <description>&quot;Models with this Special Rule suffer more harm from Perils of the Warp.&quot;
+
+
+When a Unit that includes any Models with this Special Rule suffers Perils of the Warp and gets a result of Warp Rupture, all Models with this Special Rule in that Unit have their Willpower Characteristic set to 5 while resolving that incident of Perils of the Warp.</description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="Warp Torrent - Torrent" typeId="7d31-7144-3b28-c850" typeName="Psychic Ranged Weapon" hidden="false" id="bd87-5f4b-23e6-e6c3">
+          <characteristics>
+            <characteristic name="R" typeId="6d86-f7c6-c184-8bf4">12</characteristic>
+            <characteristic name="FP" typeId="99a5-a4b9-8862-5092">4</characteristic>
+            <characteristic name="RS" typeId="ff4a-ab25-1be8-4545">5</characteristic>
+            <characteristic name="AP" typeId="c8d6-d2ec-1344-07e3">4</characteristic>
+            <characteristic name="D" typeId="e840-f63c-5bc4-27b3">1</characteristic>
+            <characteristic name="Special Rules" typeId="e87b-e7a3-5562-a456">Deflagrate (5), Overload (1), Force (FP)</characteristic>
+            <characteristic name="Traits" typeId="a229-21ce-4177-c4b1">Assault</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Warp Torrent - Malignant" typeId="7d31-7144-3b28-c850" typeName="Psychic Ranged Weapon" hidden="false" id="71b8-95dd-6b07-ecf0">
+          <characteristics>
+            <characteristic name="R" typeId="6d86-f7c6-c184-8bf4">12</characteristic>
+            <characteristic name="FP" typeId="99a5-a4b9-8862-5092">1</characteristic>
+            <characteristic name="RS" typeId="ff4a-ab25-1be8-4545">5</characteristic>
+            <characteristic name="AP" typeId="c8d6-d2ec-1344-07e3">2</characteristic>
+            <characteristic name="D" typeId="e840-f63c-5bc4-27b3">2</characteristic>
+            <characteristic name="Special Rules" typeId="e87b-e7a3-5562-a456">Deflagrate (5), Overload (2), Force (RS)</characteristic>
+            <characteristic name="Traits" typeId="a229-21ce-4177-c4b1">Assault</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deflagrate (X)" id="8bd2-acd3-0539-036b" hidden="false" type="rule" targetId="f4a0-f206-0dba-7d81">
+          <comment>5</comment>
+          <modifiers>
+            <modifier type="replace" value="5" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Overload (X)" id="b904-8950-05db-3a00" hidden="false" type="rule" targetId="1d3a-d1e2-871a-63ae">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="replace" value="1" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Force (X)" id="efbd-56c9-c866-0209" hidden="false" type="rule" targetId="25cd-60d0-a0a4-6b18">
+          <comment>FP</comment>
+          <modifiers>
+            <modifier type="replace" value="FP" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Overload (X)" id="4d7e-dd20-0b58-b87f" hidden="false" type="rule" targetId="1d3a-d1e2-871a-63ae">
+          <comment>2</comment>
+          <modifiers>
+            <modifier type="replace" value="2" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Force (X)" id="11f9-2689-e3b3-bc3a" hidden="false" type="rule" targetId="25cd-60d0-a0a4-6b18">
+          <comment>RS</comment>
+          <modifiers>
+            <modifier type="replace" value="RS" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="fd99-2f5a-6c86-3245" id="34aa-5ad0-71ca-8fbc" primary="false" name="Malignant"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Special Rules" id="c361-7259-1878-a576" targetId="106b-693b-99f2-00c3"/>
@@ -433,6 +505,7 @@ any Model in the Target Unit makes attacks with a Weapon that has the Psychic Tr
     <categoryEntry name="Thaumaturge" id="689b-c1f1-9d47-fd2d" hidden="false"/>
     <categoryEntry name="Anathemata" id="8e24-2d8b-26e7-d7aa" hidden="false"/>
     <categoryEntry name="Diabolist" id="3897-23c5-f4e7-e4a8" hidden="false"/>
+    <categoryEntry name="Malignant" id="fd99-2f5a-6c86-3245" hidden="false"/>
   </categoryEntries>
   <sharedProfiles>
     <profile name="Breach the Veil" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="0e6b-31ce-26ee-f05e">

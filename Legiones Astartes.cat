@@ -39130,6 +39130,34 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Deathlock" hidden="true" id="a608-08cb-ab1d-e733" type="selectionEntry" targetId="4d7d-ec25-a22b-337a" sortIndex="12">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="6049-c010-d9b7-8cca" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Doomlock" hidden="true" id="6dc7-ee1d-47bf-4d95" type="selectionEntry" targetId="ee7b-a16e-f8de-d51d" sortIndex="13">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="6049-c010-d9b7-8cca" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cfc-7543-f018-185c" includeChildSelections="false" automatic="true"/>
@@ -39702,6 +39730,20 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
               </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Halo Blade" hidden="true" id="bfe5-f4fa-5822-8755" type="selectionEntry" targetId="2543-5993-1cde-4393" sortIndex="43">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="6049-c010-d9b7-8cca" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -40948,6 +40990,33 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
           <infoLinks>
             <infoLink name="Ravening Madmen" id="d019-0ed7-c146-f31c" hidden="false" type="rule" targetId="c320-4fba-0a25-15ff"/>
           </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Petty Warlord " hidden="true" id="5e67-5590-9d93-038b">
+          <comment>Blackshields - In Disgrace all are equal</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9562-aeb1-be70-56fb"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="d9a6-9b5f-b18a-4d63" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Petty Warlord" id="d79f-ce85-906a-d320" hidden="false">
+              <description>One Model in the Unit selected to fill the Prime Slot that has the Sergeant Sub-Type gains +1 to its Attacks, Weapon Skill and Leadership Characteristics and the Champion Sub-Type (if it already has the Champion Sub-Type it instead increases its Leadership by an additional +1).
+
+
+Further, if this Prime Advantage is selected for a Unit in a Primary or Allied Detachment, then an Auxiliary Detachment may be attached to that Detachment as if this Unit was a Command Choice. All Slots in Auxiliary Detachments selected using this Prime Advantage become Prime Slots, but the only Prime Advantage that may be selected for any Slot in such a Detachment is Petty Warlord.</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
