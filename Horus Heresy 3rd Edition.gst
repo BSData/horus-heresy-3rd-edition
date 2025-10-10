@@ -623,6 +623,7 @@
     <categoryEntry name="Aberrant" id="e4a3-85f7-f6ce-261c" hidden="false"/>
     <categoryEntry name="+1 Aux from Petty Warlord" id="3553-322a-f1b2-5257" hidden="false"/>
     <categoryEntry name="Pride is our Armour" id="f5dc-c13a-5848-f3b8" hidden="false"/>
+    <categoryEntry name="The Weapons of Desperation" id="4d86-d6e9-8bca-0ad5" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
@@ -2184,11 +2185,6 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="0" field="e822-bdc9-a6b4-8196">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
