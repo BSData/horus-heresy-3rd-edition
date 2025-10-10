@@ -622,6 +622,7 @@
     <categoryEntry name="Clone" id="9c64-f1ec-a907-35bc" hidden="false"/>
     <categoryEntry name="Aberrant" id="e4a3-85f7-f6ce-261c" hidden="false"/>
     <categoryEntry name="+1 Aux from Petty Warlord" id="3553-322a-f1b2-5257" hidden="false"/>
+    <categoryEntry name="Pride is our Armour" id="f5dc-c13a-5848-f3b8" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
@@ -709,6 +710,12 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="4" field="7781-66ec-ef3c-5e5f">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -717,6 +724,13 @@
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d641-4561-177f-2149" includeChildSelections="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="d641-4561-177f-2149">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
             <categoryLink name="War-engine" hidden="false" id="853d-01f0-91a8-7759" targetId="2499-7239-685f-8465">
               <constraints>
@@ -748,6 +762,16 @@
                 <modifier type="increment" value="1" field="9494-a1b5-761e-ac60">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="9494-a1b5-761e-ac60">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1062,6 +1086,11 @@
                 <modifier type="set" value="4" field="5a1b-bae6-7bea-4a8a">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="5a1b-bae6-7bea-4a8a">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2153,6 +2182,18 @@
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e822-bdc9-a6b4-8196"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e822-bdc9-a6b4-8196">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
             <categoryLink name="Support" hidden="false" id="3b23-0381-3ee4-b239" targetId="345f-9ba6-9b02-ed5c">
               <constraints>
@@ -22543,6 +22584,12 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="4" field="543d-afbf-acca-d834">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -22582,6 +22629,16 @@
                 <modifier type="increment" value="1" field="01a3-4258-494b-cbea">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="01a3-4258-494b-cbea">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -24166,8 +24223,15 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
                 <selectionEntry type="upgrade" import="true" name="LB - Troops" hidden="false" id="9e8c-63b6-a15a-cd4f" sortIndex="4">
                   <constraints>
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="de1b-0596-8e4b-1bcb" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0ac-3456-a58b-a20e" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0ac-3456-a58b-a20e" includeChildSelections="false" automatic="true"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="f0ac-3456-a58b-a20e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="LB - War-engine" hidden="false" id="fac3-0af2-8be3-20dc" sortIndex="3">
                   <constraints>

@@ -45797,7 +45797,7 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb5e-31fa-24bb-c972"/>
       </constraints>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Oath of Moment" id="fd0c-8569-5b52-0ce8" hidden="true">
+    <selectionEntryGroup name="Oath(s) of Moment" id="fd0c-8569-5b52-0ce8" hidden="true">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="The Weapons of Desperation" hidden="true" id="e603-8108-0a80-6c74">
           <constraints>
@@ -46300,9 +46300,9 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Pride is our Armour" hidden="true" id="9ed1-2361-7f1f-64c3">
+        <selectionEntry type="upgrade" import="true" name="Pride is our Armour" hidden="true" id="9ed1-2361-7f1f-64c3" defaultAmount="1">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b12d-c6d9-9d5b-d9c0"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b12d-c6d9-9d5b-d9c0" automatic="true"/>
           </constraints>
           <rules>
             <rule name="Pride is our Armour" id="b069-60c6-b449-d338" hidden="false">
@@ -46311,6 +46311,18 @@ In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment
 A Primary or Allied Detachment with this Oath of Moment replaces all Troops Slots with Elites Slots. Furthermore, a Detachment with this Oath of Moment may not include any Troops Choices, including in any Auxiliary or Apex Detachment attached to that Detachment.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="b12d-c6d9-9d5b-d9c0">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Reapers of Lives" hidden="true" id="a693-a2d6-bad8-264c">
           <constraints>
@@ -46466,7 +46478,7 @@ Instead, such Models gain one of the following two Special Rules, chosen by the
 When the opposing army includes any Detachment with any variant of the Legiones Astartes Trait, all Models in a Detachment with this Oath gain the Hatred (Legiones Astartes) Special Rule. If the opposing Army includes a Primary Detachment with any variant of the Legiones Astartes Trait, then the effects of the Hatred (X) Special Rule are expanded to include +1 to all Hit Tests made while in a Combat.
 
 
-However, all Units in a Detachment that include any Models with this Oath of Moment that begin the Assault Phase with any Model in that Unit within 12&quot; of an enemy Model with the Legiones Astartes Trait must declare a Charge targeting the Unit that includes that enemy Model – even if they cannot reach that Unit. Units that are not capable of making a Charge, such as Units that include Models with the Vehicle Type, are not affected by this additional requirement. </description>
+However, all Units in a Detachment that include any Models with this Oath of Moment that begin the Assault Phase with any Model in that Unit within 12&quot; of an enemy Model with the Legiones Astartes Trait must declare a Charge targeting the Unit that includes that enemy Model – even if they cannot reach that Unit. Units that are not capable of making a Charge, such as Units that include Models with the Vehicle Type, are not affected by this additional requirement.</description>
             </rule>
           </rules>
           <constraints>

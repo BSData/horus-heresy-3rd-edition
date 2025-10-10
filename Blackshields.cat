@@ -53,7 +53,7 @@
                     <modifier type="replace" value="Automata" field="50fc-9241-d4a2-045b" arg="Infantry"/>
                   </modifiers>
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="d563-c8da-2cce-aa7d" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -79,7 +79,6 @@
               </constraints>
             </entryLink>
             <entryLink import="true" name="Oath of Moment" hidden="false" id="4d67-e55d-008d-7579" type="selectionEntryGroup" targetId="fd0c-8569-5b52-0ce8"/>
-            <entryLink import="true" name="Test Group" hidden="false" id="cbb6-6537-6ac7-ea32" type="selectionEntryGroup" targetId="1d06-07c5-5d9a-ab93"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Terrawatt-patern power gauntlet" hidden="false" id="aa3f-18f5-8e71-21f6" sortIndex="2">
@@ -140,14 +139,14 @@
           <description>If Endryd Haar is selected as the only High Command Choice in a Primary Detachment, then all Units from that Primary Detachment that are composed entirely of Models with the Blackshields Trait, the Infantry Type and that do not have any variant of the Bulky (X) Special Rule gain the Infiltrate (12) Special Rule</description>
         </rule>
         <rule name=" The Riven Hound" id="6864-01df-8848-bc77" hidden="false">
-          <description> While a Model with this Special Rule is engaged in a Challenge, its Controlling Player can select The Riven Hound Gambit:</description>
+          <description>While a Model with this Special Rule is engaged in a Challenge, its Controlling Player can select The Riven Hound Gambit:</description>
         </rule>
       </rules>
       <profiles>
         <profile name="The Riven Hound" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="1ea7-a9ca-18d8-1d46">
           <characteristics>
             <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows Endryd Haar to make a single attack with a higher Strength and that causes more Damage.</characteristic>
-            <characteristic name="Description" typeId="2d7d-b1d9-dead-605a"> If this Gambit is selected, then the Controlling Player may only make a single attack in the Strike Step for the Model this Gambit was selected for, regardless of the value of the Model’s Attacks Characteristic. However, that Model gains a bonus of +4 to their Strength Characteristic and a bonus of +2 to the Damage Characteristic of their selected Weapon, for the single attack made for them in the Strike Step</characteristic>
+            <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">If this Gambit is selected, then the Controlling Player may only make a single attack in the Strike Step for the Model this Gambit was selected for, regardless of the value of the Model’s Attacks Characteristic. However, that Model gains a bonus of +4 to their Strength Characteristic and a bonus of +2 to the Damage Characteristic of their selected Weapon, for the single attack made for them in the Strike Step</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -213,7 +212,7 @@
 When the opposing army includes any Detachment with any variant of the Legiones Astartes Trait, all Models in a Detachment with this Oath gain the Hatred (Legiones Astartes) Special Rule. If the opposing Army includes a Primary Detachment with any variant of the Legiones Astartes Trait, then the effects of the Hatred (X) Special Rule are expanded to include +1 to all Hit Tests made while in a Combat.
 
 
-However, all Units in a Detachment that include any Models with this Oath of Moment that begin the Assault Phase with any Model in that Unit within 12&quot; of an enemy Model with the Legiones Astartes Trait must declare a Charge targeting the Unit that includes that enemy Model – even if they cannot reach that Unit. Units that are not capable of making a Charge, such as Units that include Models with the Vehicle Type, are not affected by this additional requirement. </description>
+However, all Units in a Detachment that include any Models with this Oath of Moment that begin the Assault Phase with any Model in that Unit within 12&quot; of an enemy Model with the Legiones Astartes Trait must declare a Charge targeting the Unit that includes that enemy Model – even if they cannot reach that Unit. Units that are not capable of making a Charge, such as Units that include Models with the Vehicle Type, are not affected by this additional requirement.</description>
             </rule>
           </rules>
           <constraints>
@@ -572,6 +571,9 @@ A Detachment with this Oath of Moment may not include any Command or High Comma
 A Primary or Allied Detachment with this Oath of Moment replaces all Troops Slots with Elites Slots. Furthermore, a Detachment with this Oath of Moment may not include any Troops Choices, including in any Auxiliary or Apex Detachment attached to that Detachment.</description>
             </rule>
           </rules>
+          <categoryLinks>
+            <categoryLink targetId="f5dc-c13a-5848-f3b8" id="00e5-ace7-d6bb-76d4" primary="false" name="Pride is our Armour"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="The Taint of the Xenos" hidden="false" id="e0a5-1eb2-7234-37c3">
           <constraints>
@@ -751,7 +753,7 @@ While affected by any of the Pinned, Suppressed or Stunned Battlefield Statuses
               <profiles>
                 <profile name="Beholden to None" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="6992-fae3-8591-c712">
                   <characteristics>
-                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7"> If slain by the opposing Model, D3 wounds are inflicted on that Model.</characteristic>
+                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">If slain by the opposing Model, D3 wounds are inflicted on that Model.</characteristic>
                     <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">This Gambit may only be selected if the opposing Model in the Challenge has either the Unique Trait or the Paragon Type. If a Model is Removed as a Casualty during the Strike Step when this Gambit has been selected for them, then D3 wounds are automatically inflicted on the opposing Model at the end of the Glory Step that follows. These wounds have the Damage and AP of the Weapon used by the Model for which this Gambit was selected.</characteristic>
                   </characteristics>
                 </profile>
@@ -788,27 +790,6 @@ Note that some Oaths of Moment require that certain Special Rules be removed fr
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="429e-8e2a-fea6-d481-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="429e-8e2a-fea6-d481-max"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Test Group" id="1d06-07c5-5d9a-ab93" hidden="false">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Entry1" hidden="false" id="bf54-2d5a-1097-6a17">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="52ce-0ec2-c50a-b023"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7892-4a28-31c4-ea39"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Entry2" hidden="false" id="f3e7-876f-4b1a-5c9b">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d53-4e92-804f-0d22"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e021-7473-52df-f084"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Entry3" hidden="false" id="dbdd-7572-6f6b-2b40">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0051-79cd-c711-7b48"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
