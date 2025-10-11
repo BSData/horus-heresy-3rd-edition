@@ -126,6 +126,16 @@
             <modifier type="replace" value="1" field="name" arg="X"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Doomed Heroics (X)" id="5777-c7aa-ba1e-36e5" hidden="true" type="rule" targetId="aea9-7451-7b2c-5b40">
+          <modifiers>
+            <modifier type="replace" value="3" field="name" arg="X"/>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4ec2-4dab-205b-36a2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -682,6 +692,9 @@ This Oath of Moment may not be selected if the Detachment already has the Reape
               </conditionGroups>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="4ec2-4dab-205b-36a2" id="0966-7b8b-22f6-8293" primary="false" name="The Blade of the Just"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Reapers of Lives" hidden="false" id="40ff-d0cc-3254-f83e">
           <constraints>

@@ -624,6 +624,7 @@
     <categoryEntry name="+1 Aux from Petty Warlord" id="3553-322a-f1b2-5257" hidden="false"/>
     <categoryEntry name="Pride is our Armour" id="f5dc-c13a-5848-f3b8" hidden="false"/>
     <categoryEntry name="The Weapons of Desperation" id="4d86-d6e9-8bca-0ad5" hidden="false"/>
+    <categoryEntry name="The Blade of the Just" id="4ec2-4dab-205b-36a2" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
