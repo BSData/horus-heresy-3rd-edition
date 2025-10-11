@@ -18,6 +18,7 @@ PRIME_ADVANTAGE_SLOTS = ["Rewards of Treachery",
                          "Recon - Land Raider Explorator Only",
                          "Heavy Assault - Ruinstorm Daemon Brutes Only",
                          "Paragon of Malevolence",
+                         "Command - Centurions Only",
                          ]
 
 LA_PRIME_BENEFIT_SLOT_UPGRADES = {
