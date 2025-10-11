@@ -978,30 +978,39 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
             <categoryLink targetId="594d-fa82-13cb-a345" id="442b-3a0d-405b-b661" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Options" id="0517-5e9b-5873-521e" hidden="false">
+            <selectionEntryGroup name="Options" id="0517-5e9b-5873-521e" hidden="false" defaultSelectionEntryId="2738-5ed6-b0df-3406" sortIndex="3">
               <entryLinks>
-                <entryLink import="true" name="Melta bombs" hidden="false" id="e5a7-e958-1095-70c6" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="2">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
+                <entryLink import="true" name="Legion Sergeant Melee Weapons (no chainsword)" hidden="false" id="5778-52fd-a2e1-c3a5" type="selectionEntryGroup" targetId="c7ca-8933-a703-7301" sortIndex="2"/>
+                <entryLink import="true" name="Chainsword" hidden="false" id="2738-5ed6-b0df-3406" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="631d-0c8e-e065-dc64"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="5e6f-3f96-a93e-83e5" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" sortIndex="1">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adc4-a820-75c9-1741" includeChildSelections="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b25-0732-b370-8e39" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cb4-af19-fb44-8802"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5cc7-be1d-f5dc-2688"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Combi-flamer" hidden="false" id="3819-0f37-b776-31dc" type="selectionEntry" targetId="4be6-cb80-d54b-f156">
+            <entryLink import="true" name="Combi-flamer" hidden="false" id="3819-0f37-b776-31dc" type="selectionEntry" targetId="4be6-cb80-d54b-f156" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c1a-64ca-501d-bf7a" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b30-5120-0380-f78e" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Melta bombs" hidden="false" id="e5a7-e958-1095-70c6" type="selectionEntry" targetId="2eb4-687e-a515-ee3d">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="631d-0c8e-e065-dc64"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="6b24-7923-bf11-d8a8" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="518d-3927-3328-8978"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86b0-0dde-d092-c92b"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -1058,24 +1067,7 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="8fc1-ae7e-38f5-c64b" includeChildSelections="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Options" id="4473-54cd-8b85-bff8" hidden="false">
-              <entryLinks>
-                <entryLink import="true" name="Legion Equipment" hidden="false" id="21fd-cce6-d629-b695" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf" sortIndex="3">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66db-ade8-ad1a-1906" includeChildSelections="false"/>
-                    <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="8cd5-7bd9-cb46-d09b" includeChildSelections="true"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Vexilla" hidden="false" id="5c25-9662-7498-4a8b" type="selectionEntry" targetId="dfcd-0669-ad43-28aa" sortIndex="2">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6bb-372e-446b-56e7" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="6c47-81dc-23cb-e8bb" includeChildSelections="true"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
+            <selectionEntryGroup name="Options" id="4473-54cd-8b85-bff8" hidden="false" sortIndex="1">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Combi-flamer" id="80a0-4828-5c4d-ab1f" hidden="false" sortIndex="1">
                   <entryLinks>
@@ -1127,6 +1119,35 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="8d99-11d4-4e0e-8101" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Vexilla" hidden="false" id="5c25-9662-7498-4a8b" type="selectionEntry" targetId="dfcd-0669-ad43-28aa">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6bb-372e-446b-56e7" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="6c47-81dc-23cb-e8bb" includeChildSelections="true"/>
+              </constraints>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Legion Equipment" hidden="false" id="21fd-cce6-d629-b695" type="selectionEntryGroup" targetId="0e69-ccf1-cde7-acaf">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66db-ade8-ad1a-1906" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="8cd5-7bd9-cb46-d09b" includeChildSelections="true"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="4902-1488-8111-1525" type="selectionEntry" targetId="2942-f783-d627-33c5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c46-f9e1-92ce-f255" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="884c-4e51-c9be-498e" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Chainsword" hidden="false" id="1778-6e87-1c86-0504" type="selectionEntry" targetId="78f4-4967-2896-c3a5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a0d-c2d8-1b53-6ff8" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c3c-4e79-fb2f-5e8f" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -1146,18 +1167,6 @@ counted as having the Heterodox Trait even though he does not have the Traitor T
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="5d0d-884a-918d-e243" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
-        </entryLink>
-        <entryLink import="true" name="Chainsword" hidden="false" id="1778-6e87-1c86-0504" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="4">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a0d-c2d8-1b53-6ff8" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c3c-4e79-fb2f-5e8f" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Bolt pistol" hidden="false" id="4902-1488-8111-1525" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="3">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c46-f9e1-92ce-f255" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="884c-4e51-c9be-498e" includeChildSelections="false"/>
-          </constraints>
         </entryLink>
       </entryLinks>
       <infoLinks>
@@ -2099,37 +2108,37 @@ When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, the Co
     <catalogueLink type="catalogue" name="Weapons" id="ee7a-856f-787a-e488" targetId="a22d-4dd0-c59d-57d3"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="Vulkan" hidden="false" id="0c0e-fb2f-fb1e-d771" type="selectionEntry" targetId="29d9-3ea2-0c2b-5c36" sortIndex="">
+    <entryLink import="true" name="Vulkan" hidden="false" id="0c0e-fb2f-fb1e-d771" type="selectionEntry" targetId="29d9-3ea2-0c2b-5c36">
       <categoryLinks>
         <categoryLink targetId="f6fe-18f5-7b4d-b57a" id="49a9-d580-3926-71ad" primary="false" name="Salamanders"/>
         <categoryLink targetId="22ee-7208-4089-b005" id="f5d9-e339-c9a1-e1a9" primary="true" name="Warlord"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Firedrake Terminator Squad" hidden="false" id="e255-98b6-88b6-d0f0" type="selectionEntry" targetId="09a9-6c68-9b0b-f24f" sortIndex="">
+    <entryLink import="true" name="Firedrake Terminator Squad" hidden="false" id="e255-98b6-88b6-d0f0" type="selectionEntry" targetId="09a9-6c68-9b0b-f24f">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="b488-45a8-2441-ef04" primary="true" name="Elites"/>
         <categoryLink targetId="f6fe-18f5-7b4d-b57a" id="130e-ef00-f85c-d5da" primary="false" name="Salamanders"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Pyroclast Squad" hidden="false" id="7bf1-9ac3-d0ea-6229" type="selectionEntry" targetId="fbbe-aa8c-d645-7970" sortIndex="">
+    <entryLink import="true" name="Pyroclast Squad" hidden="false" id="7bf1-9ac3-d0ea-6229" type="selectionEntry" targetId="fbbe-aa8c-d645-7970">
       <categoryLinks>
         <categoryLink targetId="f6fe-18f5-7b4d-b57a" id="f1e0-ac2c-49b2-949a" primary="false" name="Salamanders"/>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="70e5-2d20-c481-ba6b" primary="true" name="Heavy Assault"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Cassian Dracos Reborn" hidden="false" id="e91f-5cc0-d0d7-d6f0" type="selectionEntry" targetId="84e1-2bda-1d5b-2b23" sortIndex="">
+    <entryLink import="true" name="Cassian Dracos Reborn" hidden="false" id="e91f-5cc0-d0d7-d6f0" type="selectionEntry" targetId="84e1-2bda-1d5b-2b23">
       <categoryLinks>
         <categoryLink targetId="f6fe-18f5-7b4d-b57a" id="5149-edff-4a55-439a" primary="false" name="Salamanders"/>
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="7381-2829-dbd1-f81d" primary="true" name="High Command"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Adherents Squad" hidden="false" id="c6be-bcb9-483e-ca2c" type="selectionEntry" targetId="fecf-8e98-157d-e5ae" sortIndex="">
+    <entryLink import="true" name="Adherents Squad" hidden="false" id="c6be-bcb9-483e-ca2c" type="selectionEntry" targetId="fecf-8e98-157d-e5ae">
       <categoryLinks>
         <categoryLink targetId="88e6-d373-4152-0dd8" id="d831-db87-fd2d-1e7b" primary="true" name="Troops"/>
         <categoryLink targetId="f6fe-18f5-7b4d-b57a" id="480d-bf60-9156-e9ff" primary="false" name="Salamanders"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Sanctifier Squad" hidden="false" id="df71-4618-3ec4-3b9e" type="selectionEntry" targetId="b278-6137-8f37-35f8" sortIndex="">
+    <entryLink import="true" name="Sanctifier Squad" hidden="false" id="df71-4618-3ec4-3b9e" type="selectionEntry" targetId="b278-6137-8f37-35f8">
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="513c-05fa-ca76-8992" primary="true" name="Support"/>
         <categoryLink targetId="f6fe-18f5-7b4d-b57a" id="3886-9ecc-4a6d-40d9" primary="false" name="Salamanders"/>
