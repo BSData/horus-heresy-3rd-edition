@@ -7984,49 +7984,58 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
             <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="1591-b197-2959-dadf" primary="false" name="Transport Model Sub-Type"/>
           </categoryLinks>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="300"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="350"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Two Hull (Front) Mounted Heavy bolter" hidden="false" id="64b4-4a7f-6659-fa6a" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Heavy bolter" hidden="false" id="36dc-f60b-55db-55a1" type="selectionEntry" targetId="bc40-b14a-978e-0232">
               <modifiers>
                 <modifier type="prepend" value="Two Hull (Front) Mounted" field="name"/>
               </modifiers>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="144c-23ad-acbc-67c1"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a384-100c-b412-0812"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="144c-23ad-acbc-67c1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a384-100c-b412-0812"/>
               </constraints>
             </entryLink>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5135-9f47-41be-10b8"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e3f-56ca-21b9-3da0"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted heavy bolters" hidden="false" id="cea2-a349-5cf3-bf91" sortIndex="3">
-          <entryLinks>
             <entryLink import="true" name="Heavy bolter" hidden="false" id="020f-ea9d-a6ac-dc42" type="selectionEntry" targetId="bc40-b14a-978e-0232">
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-              </costs>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ab8b-12a7-6eb3-9517"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef11-2de8-451e-a615"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="ab8b-12a7-6eb3-9517"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ef11-2de8-451e-a615"/>
               </constraints>
               <modifiers>
                 <modifier type="prepend" value="Two Sponson Mounted" field="name"/>
               </modifiers>
             </entryLink>
           </entryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d4cc-5790-b5b5-6571"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="834c-8873-1f5c-b776"/>
-          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" id="ac64-6475-1a7c-4d07" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Auxilia Pintle Weapons" hidden="false" id="71d9-64ef-e498-624e" type="selectionEntryGroup" targetId="0266-b015-86e4-8953" sortIndex="3"/>
+                <entryLink import="true" name="Hunter-killer missile" hidden="false" id="cfb6-1f44-0585-5828" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" sortIndex="4">
+                  <modifiers>
+                    <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8f0-513f-8533-fa99" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Searchlight" hidden="false" id="26c7-f439-6560-501b" type="selectionEntry" targetId="5a85-bf28-f790-7bf0" sortIndex="5">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45f2-0332-d6d4-997c" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -8036,32 +8045,6 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Options" id="ac64-6475-1a7c-4d07" hidden="false" sortIndex="4">
-          <entryLinks>
-            <entryLink import="true" name="Auxilia Pintle Weapons" hidden="false" id="71d9-64ef-e498-624e" type="selectionEntryGroup" targetId="0266-b015-86e4-8953" sortIndex="3"/>
-            <entryLink import="true" name="Hunter-killer missile" hidden="false" id="cfb6-1f44-0585-5828" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" sortIndex="4">
-              <modifiers>
-                <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
-              </modifiers>
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8f0-513f-8533-fa99" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Searchlight" hidden="false" id="26c7-f439-6560-501b" type="selectionEntry" targetId="5a85-bf28-f790-7bf0" sortIndex="5">
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45f2-0332-d6d4-997c" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <infoLinks>
         <infoLink name="[Allegiance]" id="4a05-419d-698a-e36c" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="Smokescreen" id="65c5-07f5-fdfe-5f9d" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
