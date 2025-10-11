@@ -2982,6 +2982,24 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </conditions>
         </modifier>
       </modifiers>
+      <rules>
+        <rule name="To Fight and Die Alone" id="e266-4869-1e97-7e51" hidden="true">
+          <description>&quot;A Model with this Special Rule cannot join Units, but gains bonuses when fighting alone.&quot;
+
+
+A Model with this Special Rule may not join any other Unit, nor may it be joined by another Model. While part of a Combat where this Model is the only Model the Controlling Player controls in that Combat, that player gains a bonus of +4 to their Combat Resolution Score, with a further bonus of +1 Combat Resolution points scored for each Wound lost by that Model in that Combat Round as long as the Model ends the Combat Round with at least one Wound remaining. 
+
+
+If a Model with this Special Rule is Removed as a Casualty during any Initiative Step of any Combat, then the Controlling Player of this Model gains D6+1 Victory Points.</description>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Praetor in Saturnine Terminator Armour" hidden="false" id="2a5a-8ab8-be4d-6fa7" sortIndex="3">
       <selectionEntries>
@@ -10588,6 +10606,24 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </entryLink>
         <entryLink import="true" name="Oath(s) of Moment" hidden="true" id="4afc-b4e7-de7b-e8a5" type="selectionEntryGroup" targetId="fd0c-8569-5b52-0ce8"/>
       </entryLinks>
+      <rules>
+        <rule name="To Fight and Die Alone" id="b5c4-f3a5-9739-e3ae" hidden="true">
+          <description>&quot;A Model with this Special Rule cannot join Units, but gains bonuses when fighting alone.&quot;
+
+
+A Model with this Special Rule may not join any other Unit, nor may it be joined by another Model. While part of a Combat where this Model is the only Model the Controlling Player controls in that Combat, that player gains a bonus of +4 to their Combat Resolution Score, with a further bonus of +1 Combat Resolution points scored for each Wound lost by that Model in that Combat Round as long as the Model ends the Combat Round with at least one Wound remaining. 
+
+
+If a Model with this Special Rule is Removed as a Casualty during any Initiative Step of any Combat, then the Controlling Player of this Model gains D6+1 Victory Points.</description>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Damocles Command Rhino" hidden="false" id="f214-aeb9-0dd6-9071" sortIndex="7">
       <costs>
@@ -46003,6 +46039,18 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink import="true" name="Centurion" hidden="false" id="19fd-7251-94f8-5176" type="selectionEntry" targetId="3392-e93d-79bc-d648" sortIndex="101">
+      <categoryLinks>
+        <categoryLink targetId="1429-f03a-e8a5-478c" id="7145-68f8-989b-810e" primary="true" name="Command - Centurions Only"/>
+      </categoryLinks>
+      <comment>Alone and Forgotten</comment>
+    </entryLink>
+    <entryLink import="true" name="Centurion in Terminator Armour" hidden="false" id="f73b-1c98-abfe-2cd3" type="selectionEntry" targetId="976b-2d8a-7e70-e6a7" sortIndex="102">
+      <comment>Alone and Forgotten</comment>
+      <categoryLinks>
+        <categoryLink targetId="1429-f03a-e8a5-478c" id="8398-cd24-b3d8-eee7" primary="true" name="Command - Centurions Only"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Weapons" id="32ee-d63c-aa09-89f0" targetId="a22d-4dd0-c59d-57d3"/>
@@ -49872,16 +49920,29 @@ A Detachment that has this Oath of Moment may only include Command Choices. All
 
 All Centurions and Centurions in Terminator Armour selected as part of a Detachment with this Oath of Moment gain the To Fight and Die Alone Special Rule</description>
             </rule>
-            <rule name="To Fight and Die Alone" id="e266-4869-1e97-7e51" hidden="false">
-              <description>&quot;A Model with this Special Rule cannot join Units, but gains bonuses when fighting alone.&quot;
-
-
-A Model with this Special Rule may not join any other Unit, nor may it be joined by another Model. While part of a Combat where this Model is the only Model the Controlling Player controls in that Combat, that player gains a bonus of +4 to their Combat Resolution Score, with a further bonus of +1 Combat Resolution points scored for each Wound lost by that Model in that Combat Round as long as the Model ends the Combat Round with at least one Wound remaining. 
-
-
-If a Model with this Special Rule is Removed as a Casualty during any Initiative Step of any Combat, then the Controlling Player of this Model gains D6+1 Victory Points.</description>
-            </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="1" field="9c2a-21ff-2065-dd8c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="b0b4-0bfe-f096-2145">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="9c2a-21ff-2065-dd8c">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="An Eternity of War" hidden="true" id="e4b8-07cb-1f7e-8d3a" defaultAmount="1">
           <constraints>

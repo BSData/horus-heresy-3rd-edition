@@ -626,6 +626,8 @@
     <categoryEntry name="The Weapons of Desperation" id="4d86-d6e9-8bca-0ad5" hidden="false"/>
     <categoryEntry name="The Blade of the Just" id="4ec2-4dab-205b-36a2" hidden="false"/>
     <categoryEntry name="Reapers of Lives" id="90a5-d491-7576-a537" hidden="false"/>
+    <categoryEntry name="Command - Centurions Only" id="1429-f03a-e8a5-478c" hidden="true"/>
+    <categoryEntry name="Alone and Forgotten" id="122b-0eda-4e29-401e" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
@@ -674,6 +676,11 @@
                 <modifier type="set" value="0" field="4cd1-9b97-f2e4-f29a">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" value="1" field="4cd1-9b97-f2e4-f29a">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -768,14 +775,24 @@
                   </conditions>
                 </modifier>
                 <modifier type="set" value="0" field="9494-a1b5-761e-ac60">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -1367,6 +1384,18 @@
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d81d-9c96-9a29-e0cf" includeChildSelections="true"/>
               </constraints>
+            </categoryLink>
+            <categoryLink name="Command - Centurions Only" hidden="false" id="ab27-8132-c95f-e16d" targetId="1429-f03a-e8a5-478c">
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="7c25-0f2e-2ee0-acbe"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
           </categoryLinks>
           <constraints>
@@ -2187,9 +2216,14 @@
               </constraints>
               <modifiers>
                 <modifier type="set" value="0" field="e822-bdc9-a6b4-8196">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -2223,6 +2257,23 @@
               </modifiers>
             </categoryLink>
             <categoryLink name="Paragon of Malevolence" hidden="false" id="23dd-baa2-c64d-eb74" targetId="708b-b2ff-1a14-2901"/>
+            <categoryLink name="Command - Centurions Only" hidden="false" id="5526-4df9-e594-6e32" targetId="1429-f03a-e8a5-478c">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="150d-acad-a8c0-2431"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="Prime Command" hidden="false" id="b167-4f4c-6449-1736" targetId="c85c-2963-658f-1bb9">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="cfc3-19ed-2615-5523" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
