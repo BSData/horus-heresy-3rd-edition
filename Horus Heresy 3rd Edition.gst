@@ -22591,6 +22591,7 @@
           </modifiers>
           <constraints>
             <constraint type="min" value="1" field="forces" scope="parent" shared="true" id="c92a-53cf-4b03-3ea2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="forces" scope="parent" shared="true" id="2ac8-fc7f-da65-5768"/>
           </constraints>
         </forceEntry>
       </forceEntries>
