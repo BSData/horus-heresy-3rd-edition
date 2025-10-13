@@ -37,7 +37,7 @@ CATS_WITH_NO_PRIMES = [
     "Cults Abominatio.cat",
     "Divisio Assassinorum.cat",
     "Legio Titanicus.cat",
-    # KNights have primes but they're special, handled separately
+    # Knights have primes but they're special, handled separately
 ]
 
 
@@ -155,6 +155,13 @@ class GameTests(unittest.TestCase):
                         self.assertIn("includeChildSelections", constraint.attrib.keys())
                         self.assertEqual(constraint.attrib["includeChildSelections"], "true")
 
+    cat_links_with_special_mods = [  # These all have tweaks for Blackshields
+        "ba48-8ddd-02d0-3622",  # Elites on Crusade Primary
+        "e5db-d69e-628f-beb5",  # Troops on Crusade Primary
+        "fd98-ecfd-1d5e-abf8",  # Elites on Allied Primary
+        "a391-e586-d854-ede3",  # Troops on Allied Primary
+    ]
+
     def test_forces_all_hide_if_no_LB(self):
         for parent_force in self.system.gst.root_node.get_child("forceEntries").children:
             # print(parent_force)
@@ -169,6 +176,8 @@ class GameTests(unittest.TestCase):
                 for category_link in child_force.get_child("categoryLinks").children:
                     # print("\t", "\t", category_link)
                     if category_link.target_name not in Heresy3e.BATTLEFIELD_ROLES:
+                        continue
+                    if category_link.id in self.cat_links_with_special_mods:
                         continue
                     with self.subTest(f"{category_link.target_name} on {child_force}"):
                         constraints = category_link.get_child("constraints")
@@ -218,7 +227,7 @@ class GameTests(unittest.TestCase):
         attribs.pop("childId")  # Ignore child ID since we checked that earlier
         self.assertDictEqual(attribs, expected_attribs)
 
-    #def test_all_allied_detachments_linked(self):
+    # def test_all_allied_detachments_linked(self):
     #    crusade = self.system.get_node_by_id("8562-592c-8d4b-a1f0")
     #    allied_links = self.system.get_node_by_id("256b-b8a8-017a-75e9").get_child("forceEntryLinks")
     #    for child_force in crusade.get_child("forceEntries").children:
@@ -312,7 +321,7 @@ class GameTests(unittest.TestCase):
                 continue
             # Inductii can never be prime
             if unit.name == "Inductii Squad":
-                continue               
+                continue
             for profile in unit.get_descendants_with(lambda x: x.type == "profile:Profile"):
                 # print(profile)
                 profile_type = profile.get_profile_dict()["Type"]
