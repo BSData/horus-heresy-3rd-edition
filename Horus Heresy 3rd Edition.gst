@@ -23830,7 +23830,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e075-1f6c-ff36-8e11" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="DON&apos;T SUBMIT BUGS FOR NOT IMPLEMENTED FUNCTIONALITY. Up to date including inductii on September 28th, 2025" hidden="false" id="cd4a-d335-2d3a-91e0" defaultAmount="1" sortIndex="2">
+    <selectionEntry type="upgrade" import="true" name="DON&apos;T SUBMIT BUGS FOR NOT IMPLEMENTED FUNCTIONALITY. Up to date including Blackshields on October 13th, 2025" hidden="false" id="cd4a-d335-2d3a-91e0" defaultAmount="1" sortIndex="2">
       <rules>
         <rule name="Things that aren&apos;t implemented" id="10ac-cafa-6c21-0fa3" hidden="false">
           <description>- Titans
