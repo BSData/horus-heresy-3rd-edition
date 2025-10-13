@@ -3,6 +3,7 @@ import sys
 import unittest
 
 # Temp until we have a pip module
+# test trivial PR
 sys.path.insert(1, os.getcwd() + "/BSCopy")
 from BSCopy.system.system import System
 from BSCopy.system.node import Node
