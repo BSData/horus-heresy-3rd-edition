@@ -20073,6 +20073,7 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
         <infoLink name="[Legiones Astartes]" id="bc5b-2e15-d143-e9d0" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
         <infoLink name="Impact Reactive Doors" id="8508-82cf-73d3-77a0" hidden="false" type="rule" targetId="a919-02f3-60f7-ab99"/>
         <infoLink name="Orbital Assault Vehicle" id="f2cd-a33f-7ec8-7a08" hidden="false" type="rule" targetId="d3d7-2241-0ce5-f2b6"/>
+        <infoLink name="Dreadnought Transport" id="47be-72f0-999a-5aea" hidden="false" type="rule" targetId="ef04-738f-379a-6491"/>
         <infoLink name="Doomed Heroics (X)" id="fc07-bafb-fa6b-c25a" hidden="true" type="rule" targetId="aea9-7451-7b2c-5b40">
           <modifiers>
             <modifier type="replace" value="3" field="name" arg="X"/>
@@ -20084,9 +20085,6 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
           </modifiers>
         </infoLink>
       </infoLinks>
-      <rules>
-        <rule name="Dreadnought Transport" id="fbe3-fc8e-7d03-4a1a" hidden="false"/>
-      </rules>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="100"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -20161,6 +20159,7 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
       <infoLinks>
         <infoLink name="[Allegiance]" id="b4fb-b604-772d-009b" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="fb71-d751-eacf-e63e" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Heavy Drop Transport" id="ed0f-72b5-c8dd-7e92" hidden="false" type="rule" targetId="aabf-caf3-8c57-5bbe"/>
         <infoLink name="Doomed Heroics (X)" id="e1dd-bfd0-b363-ba09" hidden="true" type="rule" targetId="aea9-7451-7b2c-5b40">
           <modifiers>
             <modifier type="replace" value="3" field="name" arg="X"/>
@@ -20172,9 +20171,6 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
           </modifiers>
         </infoLink>
       </infoLinks>
-      <rules>
-        <rule name="Heavy Drop Transport" id="43c7-618a-cdc9-ef2c" hidden="false"/>
-      </rules>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="235"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -20227,6 +20223,7 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
       <infoLinks>
         <infoLink name="[Allegiance]" id="3274-4ca8-de83-2bae" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="8c03-6f6a-735d-a5f5" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Drop Transport" id="e039-c4c4-4428-f26f" hidden="false" type="rule" targetId="ad3b-84cf-3450-cf19"/>
         <infoLink name="Doomed Heroics (X)" id="f8da-c816-67fe-2063" hidden="true" type="rule" targetId="aea9-7451-7b2c-5b40">
           <modifiers>
             <modifier type="replace" value="3" field="name" arg="X"/>
@@ -20238,9 +20235,6 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
           </modifiers>
         </infoLink>
       </infoLinks>
-      <rules>
-        <rule name="Drop Transport" id="cd36-73f2-4a34-be76" hidden="false"/>
-      </rules>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="115"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -34978,15 +34972,17 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </modifiers>
         </selectionEntry>
       </selectionEntries>
-      <categoryLinks>
-        <categoryLink targetId="5034-24c8-3d4c-9013" id="37cb-e566-5100-85ec" primary="false" name="Apex from Delegatus"/>
-      </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Cult Arcana" hidden="true" id="8f1c-40f1-144b-b441" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="5ac1-40c3-1c70-38b6" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="b1a4-9e9a-d091-4f48" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="eb1a-341c-61e3-3718" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6">
+          <modifiers>
+            <modifier type="set" value="Delegatus detachment choice" field="name"/>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Oath(s) of Moment" hidden="true" id="6be6-622c-b268-57dd" type="selectionEntryGroup" targetId="fd0c-8569-5b52-0ce8"/>
       </entryLinks>
@@ -35330,15 +35326,17 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           </modifiers>
         </selectionEntry>
       </selectionEntries>
-      <categoryLinks>
-        <categoryLink targetId="5034-24c8-3d4c-9013" id="c8ab-3cbc-54aa-0790" primary="false" name="Apex from Delegatus"/>
-      </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Cult Arcana" hidden="true" id="028e-6a23-9222-aa77" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="5769-ced7-7f56-e308" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="ba4b-f0aa-7a45-91ff" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="dcf5-1208-e54e-18f1" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6">
+          <modifiers>
+            <modifier type="set" value="Delegatus detachment choice" field="name"/>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Oath(s) of Moment" hidden="true" id="81a3-1b1c-ea46-09ea" type="selectionEntryGroup" targetId="fd0c-8569-5b52-0ce8"/>
       </entryLinks>
@@ -35608,7 +35606,6 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="647c-faca-3c98-c203" id="8e8f-2c59-4e9a-590a" primary="false" name="Free Power Weapon"/>
-        <categoryLink targetId="5034-24c8-3d4c-9013" id="c7b5-8ae6-0f86-a293" primary="false" name="Apex from Delegatus"/>
         <categoryLink targetId="e734-034b-8652-ffca" id="3fa1-6eea-a6bd-da0d" primary="false" name="Free Combi-bolter"/>
       </categoryLinks>
       <entryLinks>
@@ -35617,6 +35614,11 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="0c5b-d166-f6e3-b89d" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="a2b7-41a7-e35f-af6d" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6">
+          <modifiers>
+            <modifier type="set" value="Delegatus detachment choice" field="name"/>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Oath(s) of Moment" hidden="true" id="d94d-2403-a1e0-0a33" type="selectionEntryGroup" targetId="fd0c-8569-5b52-0ce8"/>
       </entryLinks>
@@ -49345,7 +49347,7 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="unit" childId="2a5a-8ab8-be4d-6fa7" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="38d4-d720-8009-acd3" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="38d4-d720-8009-acd3" shared="true" includeChildSelections="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="unit" childId="aa81-d88f-48fa-e91b" shared="true" includeChildSelections="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="unit" childId="5729-6425-d3bf-ad4f" shared="true" includeChildSelections="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="unit" childId="8b89-b309-c9bd-9c8a" shared="true" includeChildSelections="true"/>

@@ -506,7 +506,6 @@
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Bonded Reductor" id="8685-ffdf-e073-4267" hidden="false"/>
-    <categoryEntry name="Apex from Delegatus" id="5034-24c8-3d4c-9013" hidden="false"/>
     <categoryEntry name="War Engine - Contemptor Dreadnoughts Only" id="f817-34d5-598c-d196" hidden="false"/>
     <categoryEntry name="Mortificator" id="4e4f-ab55-68ef-ad63" hidden="false"/>
     <categoryEntry name="Siege Breaker" id="25ad-fbd9-d161-8fd1" hidden="false"/>
@@ -22350,16 +22349,6 @@
             <repeat value="1" repeats="1" field="selections" scope="force" childId="ff44-f49f-732b-c3a7" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
-        <modifier type="increment" value="1" field="22e2-3454-8828-04e6">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="5034-24c8-3d4c-9013" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="decrement" value="1" field="0ab6-91a0-792e-4068">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="5034-24c8-3d4c-9013" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
         <modifier type="add" value="Multiple Ætheric Dominions in Army" field="error" affects="entries.forces">
           <conditionGroups>
             <conditionGroup type="and">
@@ -22927,6 +22916,7 @@
             </categoryLink>
             <categoryLink name="Clade Operative" hidden="false" id="eb70-ad09-bf82-3b27" targetId="335a-5a90-3b7c-c034"/>
             <categoryLink name="Cult Operative" hidden="false" id="694b-50ea-fe58-144c" targetId="4f71-897f-8ae1-303b"/>
+            <categoryLink name="Legiones Thallaxes" hidden="false" id="7772-cdce-8fbd-841f" targetId="6f78-9e60-4884-63d2"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -23137,6 +23127,7 @@
           </modifiers>
           <constraints>
             <constraint type="min" value="1" field="forces" scope="parent" shared="true" id="c92a-53cf-4b03-3ea2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="forces" scope="parent" shared="true" id="2ac8-fc7f-da65-5768"/>
           </constraints>
         </forceEntry>
       </forceEntries>
@@ -23181,16 +23172,6 @@
           <repeats>
             <repeat value="1" repeats="1" field="selections" scope="force" childId="ff44-f49f-732b-c3a7" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
-        </modifier>
-        <modifier type="increment" value="1" field="edd7-83f8-6c5d-15ba">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="5034-24c8-3d4c-9013" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="decrement" value="1" field="4823-b27b-f750-5a63">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="5034-24c8-3d4c-9013" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
         </modifier>
         <modifier type="increment" value="3" field="4823-b27b-f750-5a63">
           <repeats>
