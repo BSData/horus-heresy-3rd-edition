@@ -22377,6 +22377,7 @@
             </categoryLink>
             <categoryLink name="Clade Operative" hidden="false" id="eb70-ad09-bf82-3b27" targetId="335a-5a90-3b7c-c034"/>
             <categoryLink name="Cult Operative" hidden="false" id="694b-50ea-fe58-144c" targetId="4f71-897f-8ae1-303b"/>
+            <categoryLink name="Legiones Thallaxes" hidden="false" id="7772-cdce-8fbd-841f" targetId="6f78-9e60-4884-63d2"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
