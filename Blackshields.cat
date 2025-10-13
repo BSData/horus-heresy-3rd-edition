@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="c195-9a6a-a56b-4634" name="Blackshields" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="54" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Legiones Astartes" id="c2fd-27d7-96c1-290b" targetId="9b32-f350-6aa9-9c09" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Special Rules" id="d16d-3512-4e61-2e6f" targetId="106b-693b-99f2-00c3"/>
+    <catalogueLink type="catalogue" name="Weapons" id="55f9-970b-9a16-bd1d" targetId="a22d-4dd0-c59d-57d3"/>
+    <catalogueLink type="catalogue" name="Wargear" id="1397-7864-8b0a-b3af" targetId="fcc7-4319-bb04-2c25"/>
+    <catalogueLink type="catalogue" name="Traits" id="1aca-0cc9-47e1-f620" targetId="df17-7a05-0826-6e22"/>
+    <catalogueLink type="catalogue" name="Assets" id="f7bd-3025-49c1-a651" targetId="5334-5605-242c-d75e"/>
+  </catalogueLinks>
+  <publications>
+    <publication name=" Legiones Astartes: Blackshields" id="92ae-2411-bd7d-3263" hidden="false" shortName="Blackshields" publisher=" Legiones Astartes: Blackshields" publicationDate="9th Oct 2025" publisherUrl="https://assets.warhammer-community.com/eng_09-10_thehorusheresy_legacies_blackshields-19qd4ghgwp-azrdg7jskx.pdf"/>
+  </publications>
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Endryd Haar" hidden="false" id="e9a1-962f-bc19-7c86">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="165"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Endryd Haar" hidden="false" id="65ac-6a04-dccb-3d20">
+          <categoryLinks>
+            <categoryLink targetId="594d-fa82-13cb-a345" id="11c6-54bc-2fc0-a9d0" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="9871-cb62-5283-2216" id="7dd2-5a30-53bf-74c4" primary="false" name="Command Model Sub-type"/>
+            <categoryLink targetId="b980-187b-2b17-d635" id="b4e2-5403-77c2-275e" primary="false" name="Unique Model Sub-Type"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Endryd Haar" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="c5c8-69ec-7ef9-a696">
+              <characteristics>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry (Command, Unique)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">6</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">5</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">4</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">5</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">10</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">9</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">10</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">8</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>The Flesh is Weak</comment>
+                  <modifiers>
+                    <modifier type="replace" value="Automata" field="50fc-9241-d4a2-045b" arg="Infantry"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="d563-c8da-2cce-aa7d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Archeotech pistol" hidden="false" id="c24c-77f2-e300-6748" type="selectionEntry" targetId="0600-3af1-d080-abf7" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a714-e286-9cc0-6aff"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe95-dd43-2b5e-0a99"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Frag grenades" hidden="false" id="09a5-e5f4-cc2f-44ea" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="07de-150f-2c5f-cb61"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4c1-148f-d6c6-ffd6"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Krak grenades" hidden="false" id="8a07-5af4-ee25-96e0" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="64d6-04ed-350d-5aae"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3792-83a8-58f5-af73"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Oath(s) of Moment" hidden="false" id="4d67-e55d-008d-7579" type="selectionEntryGroup" targetId="fd0c-8569-5b52-0ce8"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Terrawatt-patern power gauntlet" hidden="false" id="aa3f-18f5-8e71-21f6" sortIndex="2">
+              <profiles>
+                <profile name="Terrawatt-patern power gauntlet" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="bc04-768f-5065-3236">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">2</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">-1</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+4</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">3</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">-</characteristic>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5dc4-4241-5b3b-b8b5"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca02-d865-28c5-8bd9"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b8d-ff94-da09-25e3"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a4f2-5783-e3b2-feab"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ee2f-8e17-c8c5-c719" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="90eb-1760-d063-1958" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="05ec-df15-13f3-a523" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Master of the Legion" id="8a0f-59f2-5fd2-3c2e" hidden="false" type="profile" targetId="6cd2-96be-b703-6d57"/>
+        <infoLink name="Hatred (X)" id="2e7e-4f49-2d30-52d0" hidden="false" type="rule" targetId="0612-95d5-46ae-c5ee">
+          <comment>World Eaters</comment>
+          <modifiers>
+            <modifier type="replace" value="World Eaters" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Eternal Warrior (X)" id="9863-fc41-b8ff-661f" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="replace" value="1" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Doomed Heroics (X)" id="5777-c7aa-ba1e-36e5" hidden="true" type="rule" targetId="aea9-7451-7b2c-5b40">
+          <modifiers>
+            <modifier type="replace" value="3" field="name" arg="X"/>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4ec2-4dab-205b-36a2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name=" Fangs of the Emperor " id="bd25-f108-3015-dd31" hidden="false">
+          <description>If Endryd Haar is selected as the only High Command Choice in a Primary Detachment, then all Units from that Primary Detachment that are composed entirely of Models with the Blackshields Trait, the Infantry Type and that do not have any variant of the Bulky (X) Special Rule gain the Infiltrate (12) Special Rule</description>
+        </rule>
+        <rule name=" The Riven Hound" id="6864-01df-8848-bc77" hidden="false">
+          <description>While a Model with this Special Rule is engaged in a Challenge, its Controlling Player can select The Riven Hound Gambit:</description>
+        </rule>
+      </rules>
+      <profiles>
+        <profile name="The Riven Hound" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="1ea7-a9ca-18d8-1d46">
+          <characteristics>
+            <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows Endryd Haar to make a single attack with a higher Strength and that causes more Damage.</characteristic>
+            <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">If this Gambit is selected, then the Controlling Player may only make a single attack in the Strike Step for the Model this Gambit was selected for, regardless of the value of the Model’s Attacks Characteristic. However, that Model gains a bonus of +4 to their Strength Characteristic and a bonus of +2 to the Damage Characteristic of their selected Weapon, for the single attack made for them in the Strike Step</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="8629-b689-fb42-280d" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="93b0-888c-694e-190f">
+      <entryLinks>
+        <entryLink import="true" name="Rite of War" hidden="false" id="65a3-c5ca-4da7-42a0" type="selectionEntryGroup" targetId="e45b-b0b9-a21e-935f"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed1e-2f8c-bf66-2e29"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1571-3878-06df-cecb"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Oaths of Moment" hidden="false" id="b1f1-e5be-cfaa-3df9">
+      <entryLinks>
+        <entryLink import="true" name="Oaths of Moment" hidden="false" id="22df-9003-2119-1185" type="selectionEntryGroup" targetId="e6c2-1fbd-b0b2-555a"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f25a-ba73-1bf7-9516"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="992c-efca-ab6b-bb08"/>
+      </constraints>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Endryd Haar" hidden="false" id="cf9a-dc6b-56c2-1ef4" type="selectionEntry" targetId="e9a1-962f-bc19-7c86">
+      <categoryLinks>
+        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="7944-f1c8-2aa2-9abc" primary="true" name="High Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Rite of War" hidden="false" id="1b10-1916-d98e-8513" type="selectionEntry" targetId="93b0-888c-694e-190f">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="15f7-fa10-ec8e-7dbf" primary="true" name="Army Configuration"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Oaths of Moment" hidden="false" id="5648-22da-ec9e-3d54" type="selectionEntry" targetId="b1f1-e5be-cfaa-3df9">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="82e8-72dc-b031-283f" primary="true" name="Army Configuration"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Oaths of Moment" id="e6c2-1fbd-b0b2-555a" hidden="false">
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="de68-5d1b-843b-939d" automatic="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="de68-5d1b-843b-939d">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="7469-bbd2-a2ad-f8a8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="The Eternal Vendetta" hidden="false" id="bba0-2407-10cc-1ca1">
+          <rules>
+            <rule name="The Eternal Vendetta" id="d6d0-9273-d1d4-b167" hidden="false">
+              <description>&quot;A Unit that includes Models with this Special Rule gains the Hatred (Legiones Astartes) Special Rule, but must always charge enemy Legiones Astartes Units.&quot;
+
+
+When the opposing army includes any Detachment with any variant of the Legiones Astartes Trait, all Models in a Detachment with this Oath gain the Hatred (Legiones Astartes) Special Rule. If the opposing Army includes a Primary Detachment with any variant of the Legiones Astartes Trait, then the effects of the Hatred (X) Special Rule are expanded to include +1 to all Hit Tests made while in a Combat.
+
+
+However, all Units in a Detachment that include any Models with this Oath of Moment that begin the Assault Phase with any Model in that Unit within 12&quot; of an enemy Model with the Legiones Astartes Trait must declare a Charge targeting the Unit that includes that enemy Model – even if they cannot reach that Unit. Units that are not capable of making a Charge, such as Units that include Models with the Vehicle Type, are not affected by this additional requirement.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afc8-df99-7cb2-c0c2"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="fdfa-3e5d-370e-e470" id="8da9-befd-29cb-a2fe" primary="false" name="The Eternal Vendetta"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Panoply of Old" hidden="false" id="96b0-14eb-99a0-fe6c">
+          <rules>
+            <rule name="Panoply of Old" id="e1ec-fcfa-e2b6-719b" hidden="false">
+              <description>&quot;A Unit that includes Models with this Special Rule may make use of Wargear upgrades from a single Legion Armoury.&quot;
+
+
+For each Detachment with this Oath of Moment, the Controlling Player must select a single Legion Trait. All Units in that Detachment may make use of any Armoury of the Legion upgrades. This does not include any Rules or options from the chosen Legion&apos;s Rites of War or any Detachments or Gambits available to that Legion – only Wargear upgrades. No Legion Tactica, Gambits, Advanced Reactions or Additional Detachments may be used from the chosen Armoury. For the purposes of selecting Wargear upgrades only, all Models in the Detachment for which this Oath of Moment is selected are considered to have the Faction Trait of Legion chosen as part of this Oath of Moment.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e5b0-dc1b-c3b2-2288"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Legion" id="7b8c-7d9d-df5f-2655" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="I - Dark Angels" hidden="false" id="0fbf-8ab3-e142-5391" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b176-b6a9-0906-e7ed"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink targetId="c99b-7cb2-a79c-b632" id="721d-9270-10d6-97fc" primary="false" name="Panoply of Old - Dark Angels"/>
+                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="III - Emperor&apos;s Children" hidden="false" id="b354-6ea7-7e37-ed8b" sortIndex="3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40a0-98b7-c484-51d4"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink targetId="fc3a-a4e6-8a2c-01a8" id="a49a-5b82-b786-a6fc" primary="false" name="Panoply of Old - Emperor&apos;s Children"/>
+                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="IV - Iron Warriors" hidden="false" id="bf48-11b5-e966-8074" sortIndex="4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c46b-3aff-de71-13e6"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink targetId="4061-bc47-ebca-dc39" id="a1b4-043e-6c03-5199" primary="false" name="Panoply of Old - Iron Warriors"/>
+                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="V - White Scars" hidden="false" id="6d74-1ee0-ff22-2c60" sortIndex="5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8af3-a67b-a048-3fdf"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink targetId="d479-57dc-b494-7f80" id="4d04-dae6-e80f-1fe8" primary="false" name="Panoply of Old - White Scars"/>
+                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="VI - Space Wolves" hidden="false" id="e97a-c98a-3003-9235" sortIndex="6">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a6d-a4c4-7e52-865a"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink targetId="3e12-20bf-607f-c531" id="8d9b-b597-b71d-b785" primary="false" name="Panoply of Old - Space Wolves"/>
+                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="VII - Imperial Fists" hidden="false" id="03a4-c15d-11b8-001b" sortIndex="7">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ab5-1ec1-3b00-c359"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink targetId="de6f-f206-4bb4-d176" id="2e54-9273-a444-198a" primary="false" name="Panoply of Old - Imperial Fists"/>
+                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="VIII - Night Lords" hidden="false" id="92e4-8349-1218-3d21" sortIndex="8">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1120-1006-e222-029a"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink targetId="d63e-1849-e763-05ee" id="34e7-2f63-3180-8cc1" primary="false" name="Panoply of Old - Night Lords"/>
+                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="IX - Blood Angels" hidden="false" id="e150-3aab-2a98-5efc" sortIndex="9">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09d7-587e-99a1-9bb8"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink targetId="8ae1-c83b-a225-826f" id="37af-d61b-a87e-9933" primary="false" name="Panoply of Old - Blood Angels"/>
+                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="X - Iron Hands" hidden="false" id="c77e-8e2f-f020-81ca" sortIndex="10">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fce-8333-629e-16dc"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink targetId="1c05-5fde-9ef6-9807" id="be49-893d-f5b5-b16c" primary="false" name="Panoply of Old - Iron Hands"/>
+                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XII - World Eaters" hidden="false" id="247c-ce35-b6f0-e666" sortIndex="12">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aeea-905f-5944-06cc"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink targetId="0d39-355e-7faa-51a0" id="26f6-eab0-821f-0831" primary="false" name="Panoply of Old - World Eaters"/>
+                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XIII - Ultramarines" hidden="false" id="e630-ee58-10b5-ac7d" sortIndex="13">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a8d-92d5-3aae-9ac3"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink targetId="147b-ad1e-1848-e5d3" id="09b6-8332-c8fa-25f1" primary="false" name="Panoply of Old - Ultramarines"/>
+                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XIV - Death Guard" hidden="false" id="2b3f-57d2-dccf-4306" sortIndex="14">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3d4-938d-31a8-967c"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink targetId="606f-00c4-a49b-ff1c" id="7fae-5c4e-49c6-2bf8" primary="false" name="Panoply of Old - Death Guard"/>
+                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XV - Thousand Sons" hidden="false" id="ff69-f308-23ed-2118" sortIndex="15">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd1c-b4d9-5ddc-9de0"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink targetId="4eec-9111-7656-2023" id="5b8c-f6bd-ee9a-a739" primary="false" name="Panoply of Old - Thousand Sons"/>
+                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XVI - Sons of Horus" hidden="false" id="91ac-d25c-42e6-0883" sortIndex="16">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="427f-b193-e062-37bb"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink targetId="59b9-6955-2307-aa98" id="3132-107d-c8b7-3f4c" primary="false" name="Panoply of Old - Sons of Horus"/>
+                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XVII - Word Bearers" hidden="false" id="eafd-d734-5a92-2355" sortIndex="17">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d059-0074-64ef-67c9"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink targetId="a7b1-f3cb-b648-834a" id="6a14-190c-3765-6a40" primary="false" name="Panoply of Old - Word Bearers"/>
+                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XVIII - Salamanders" hidden="false" id="3b1f-6699-fe81-eb91" sortIndex="18">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a48-61b8-9cb7-dc4c"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink targetId="fde7-fb71-1ecc-7365" id="e6f2-61ba-5d58-3f2e" primary="false" name="Panoply of Old - Salamanders"/>
+                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XIX - Raven Guard" hidden="false" id="48f5-40ab-49f7-f179" sortIndex="19">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eaef-565d-c139-5549"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink targetId="754a-10dd-0b2e-1b19" id="ac6d-9e1c-60fd-10de" primary="false" name="Panoply of Old - Raven Guard"/>
+                  </categoryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XX - Alpha Legion" hidden="false" id="9655-083a-3165-dcd5" sortIndex="20">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3aa7-623c-dda3-a0ab"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink targetId="0e0a-e490-ee7f-7033" id="a75c-511c-87f1-9081" primary="false" name="Panoply of Old - Alpha Legion"/>
+                  </categoryLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6bd9-d323-543c-af2d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fced-fd2a-b19a-a7d9"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Only in Death does  Duty End" hidden="false" id="dabf-d459-2d9f-d53e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9da-3697-7088-c3d0"/>
+          </constraints>
+          <rules>
+            <rule name="Only in Death does  Duty End" id="58df-6c2a-de82-81a0" hidden="false">
+              <description>&quot;A Unit that includes Models with this Special Rule can have the Routed Status discarded in exchange for taking wounds.&quot;
+
+
+In the End Phase of the Controlling Player’s Turn, any Unit from a Detachment with this Oath of Moment that includes any Models with the Routed Status may have that Battlefield Status discarded immediately. If the Routed Status is removed from any Model in a Unit due to this Oath of Moment, then that Unit suffers 1D3+1 wounds with a Damage of 1 and an AP of -.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink targetId="8026-d8cc-eea8-cd3d" id="4138-995f-8aa2-b59a" primary="false" name="Only in Death does Duty End"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="The Spoils of Victory" hidden="false" id="e39d-fff6-6325-47d1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="741d-0fbd-5555-5d6d" automatic="true"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="394a-fbb4-197d-6c9c" automatic="true"/>
+          </constraints>
+          <rules>
+            <rule name="The Spoils of Victory" id="dd0a-1123-9b03-5ad9" hidden="false">
+              <description>&quot;A Unit that includes Models with this Special Rule can score Victory Points for looting the fallen, but loses the Line (X) or Vanguard (X) Special Rules.&quot;
+
+
+All Models with the Blackshields Trait in a Detachment with this Oath of Moment lose any variants of the Line (X) or Vanguard (X) Special Rule they may have, and may not thereafter gain any version of Line (X) or Vanguard (X) from any source, and a Unit that includes any Models with this Oath of Moment may not Control or Contest any Objective Marker.
+
+
+Models that have lost either the Line (X) or Vanguard (X) Special Rule due to this Oath of Moment instead gain the Loot the Dead (X) Special Rule – the value of X on the Loot the Dead (X) Special Rule depends on the value of X on the Special Rule variants that were removed:
+
+
+ • For Models that have had any variant of Vanguard (X) removed by this Special Rule, the value of X on Loot the Dead is equal to half the value of X on the variant of Vanguard (X) that was removed.
+ • For Models that have had any variant of Line (X) removed by this Special Rule, the value of X on Loot the Dead is equal to the value of X on the variant of Line (X) that was removed.
+
+
+This Oath of Moment may not be selected if the Detachment already has the Reapers of Lives Oath of Moment
+
+
+*NR Data authors note - there is currently no definitive ruling on rounding up or down for X values in Special Rules in HH v3.0 and we are not in any position to be making a ruling on that. We will update the values if an FAQ is released to address the subject. In the mean time, we advise discussing it with your opponent before you play.&quot;*</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="0" field="741d-0fbd-5555-5d6d">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="40ff-d0cc-3254-f83e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="394a-fbb4-197d-6c9c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="40ff-d0cc-3254-f83e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="49f4-c066-6fe6-fbfd" id="a346-ad0f-d00f-b155" primary="false" name="The Spoils of Victory"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="An Eternity of War" hidden="false" id="0174-c909-411e-c107">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d4d-6417-4fed-93f6"/>
+          </constraints>
+          <rules>
+            <rule name="An Eternity of War" id="3e9a-f17a-c60e-dcfa" hidden="false">
+              <description>&quot;A Unit that includes Models with this Special Rule may Fall Back in any direction, but can become Routed when not locked in Combat.&quot;
+
+
+When the Controlling Player of any Unit composed entirely of Models with the Blackshields Trait, and that is part of a Detachment with this Oath of Moment, is called upon to make a Fall Back Move during the Movement Phase, that move may be made in any direction. Models from a Unit affected by this Oath of Moment can be moved into Base Contact with enemy Models as part of a Fall Back Move made during the Movement Phase, and if any Model in such a Unit does so then all Models in that Unit lose the Routed Battlefield Status if they had it.
+
+
+However, if in the Effects Sub-Phase of the Controlling Player’s End Phase in any Battle Turn after Battle Turn One, a Unit affected by this Oath of Moment is not Locked in Combat, then it must have a Cool Check made for it. If this Check is failed then all Models in the Unit gain the Routed Battlefield Status.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink targetId="ac6a-e4c3-b5aa-fe61" id="6faf-c8b6-158d-5bf7" primary="false" name="An Eternity of War"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="The Flesh is Weak" hidden="false" id="cd7d-bd5e-fe39-cf34">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86b9-1768-e8db-2ee4"/>
+          </constraints>
+          <rules>
+            <rule name=" The Flesh is Weak" id="e895-dda1-cacc-5105" hidden="false">
+              <description>&quot;A Model with this Special Rule gains the Automata Type and other Special Rules.&quot;
+
+
+All Models with the Blackshields Trait and the Infantry Type in a Detachment with this Oath of Moment must replace the Infantry Type with the Automata Type. They also replace the Blackshields Tactica Special Rule, Bastard Sons of Fate, with the Linked Cogitator Units Special Rule.</description>
+            </rule>
+            <rule name="Linked Cogitator Units" id="686e-7abe-2bf8-103e" hidden="false">
+              <description>&quot;Models with this Special Rule can Control Objectives, and score bonus Victory Points based on the size of the Unit.&quot;
+
+
+A Model with this Special Rule and the Automata Type can Control and Contest Objectives. However, such Models may not benefit from the Line (X) Special Rule, but instead gain a bonus to the number of Victory Points scored when controlling an Objective based on the number of Models with this Special Rule in the Unit.
+• If the Unit contains four or less Models with this Special Rule then it scores one less Victory Point when Controlling an Objective, to a minimum of 0.
+• If the Unit contains ten or more Models with this Special Rule then it scores one additional Victory Point when Controlling an Objective.
+
+
+Further, any Model with the Transport Sub-Type selected as part of a Detachment that has this Oath of Moment gains the Augmetic Transport Bay Special Rule</description>
+            </rule>
+            <rule name="Augmetic Transport Bay" id="2f28-a6a7-b2eb-5034" hidden="false">
+              <description>Transports can embark Automata and have increased Capacity.
+
+
+A Model with this Special Rule may only have Models with the Automata Type and the Blackshields Trait Embark upon it. In addition, a Model with this Special Rule also increases its Transport Capacity by 3.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink targetId="d563-c8da-2cce-aa7d" id="ee94-301d-013e-d7b3" primary="false" name="The Flesh is Weak"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="The Legacy of Nikaea" hidden="false" id="84f9-5c94-cd8b-869b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="939b-b6f5-3daf-7d8b"/>
+          </constraints>
+          <rules>
+            <rule name="The Legacy of Nikaea" id="4140-2a99-e941-539f" hidden="false">
+              <description>&quot;Models with this Special Rule and specific Traits gain a Psychic Discipline.&quot;
+
+
+Any Model with the Blackshields Trait and the Sergeant, Champion, Specialist or Command Sub-Type in a Detachment with this Oath of Moment gains the Psyker Trait. Furthermore, such Models gain the Malignant Psychic Discipline (if 
+such a Model already has the Psyker Trait and access to other Psychic Disciplines, they retain those in addition to this Psychic Discipline)</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink targetId="d26c-456d-f04d-12d0" id="f36f-af90-d59a-6048" primary="false" name="The Legacy of Nikaea"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="The Broken Helix" hidden="false" id="e379-ff93-c9c3-c67e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="855b-4a59-47d3-d061"/>
+          </constraints>
+          <rules>
+            <rule name="The Broken Helix" id="1a93-fdf9-dd1e-3df9" hidden="false">
+              <description>&quot;For each Unit that includes any Models with this Special Rule, the Controlling Player must choose from one of two possible options that grant new Special Rules that replace existing ones.&quot;
+
+
+A Model with the Blackshields Trait in a Detachment with this Oath of Moment, loses all variants of the following Special Rules and may not thereafter gain any version of Line (X) or Vanguard (X) from any source:
+
+
+ • Fury of the Legion
+ • Line (X)
+ • Vanguard (X)
+
+
+Instead, such Models gain one of the following two Special Rules, chosen by the Controlling Player – all Models in a Detachment with this Oath of Moment must have the same Special Rule selected for them:
+
+
+ • Clone
+ • Aberrant</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink targetId="53f8-ca8c-239c-1d3d" id="d798-f710-2beb-c585" primary="false" name="The Broken Helix"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="In Disgrace all are Equal" hidden="false" id="04a5-602d-7853-9555">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1615-c401-0072-4380"/>
+          </constraints>
+          <rules>
+            <rule name="In Disgrace all are Equal" id="d35b-fa21-0757-9df7" hidden="false">
+              <description>&quot;A Detachment with this Oath of Moment cannot take Command or High Command Choices, but gains bonus Prime Advantages.&quot;
+
+
+A Detachment with this Oath of Moment may not include any Command or High Command Choices. All other Slots in all Detachments with this Oath of Moment become Prime Slots, but the only Prime Advantage that may be selected for any Slot in this Detachment is Petty Warlord. If a Unit is unable to have Petty Warlord selected for it then it may not have a Prime Advantage selected for it.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink targetId="610d-c9b0-ccb0-cba9" id="6551-a34a-7125-acc3" primary="false" name="In Disgrace all are Equal"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Pride is our Armour" hidden="false" id="c2ee-2f53-1ba9-fd1b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b311-a351-4a2d-d987"/>
+          </constraints>
+          <rules>
+            <rule name="Pride is our Armour" id="6c48-fb06-2b89-ffb1" hidden="false">
+              <description>&quot;Any Detachment with this Special Rule must have all Troops Slots in a Primary or Allied Detachment replaced with Elites Slots.&quot;
+
+A Primary or Allied Detachment with this Oath of Moment replaces all Troops Slots with Elites Slots. Furthermore, a Detachment with this Oath of Moment may not include any Troops Choices, including in any Auxiliary or Apex Detachment attached to that Detachment.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink targetId="f5dc-c13a-5848-f3b8" id="00e5-ace7-d6bb-76d4" primary="false" name="Pride is our Armour"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="The Taint of the Xenos" hidden="false" id="e0a5-1eb2-7234-37c3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96ad-2670-5119-d345"/>
+          </constraints>
+          <rules>
+            <rule name="The Taint of the Xenos" id="a8c4-6c76-4105-4e19" hidden="false">
+              <description>&quot;Any Unit that includes Models with this Special Rule may select additional options as part of certain weapons lists.&quot;
+
+
+When selecting Weapons for Models with the Blackshields Trait in a Detachment with this Oath of Moment, the following Weapons are considered part of the Legion Special Weapons list
+
+
+- Deathlock +15 Points 
+- Doomlock +10 Points
+
+
+
+ Likewise, the following Weapons are considered part of the Legion Officer Wargear list
+
+
+- Halo Blade +15 Points</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink targetId="6049-c010-d9b7-8cca" id="4630-6622-813a-73b1" primary="false" name="The Taint of Xenos"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="The Weapons of Desperation" hidden="false" id="32f7-f105-f87e-5c1e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a99-c7e1-12c3-a620"/>
+          </constraints>
+          <rules>
+            <rule name="The Weapons of Desperation" id="49ea-388e-cee3-7053" hidden="false">
+              <description>&quot;A Model with this Special Rule must swap bolters and bolt pistols for other Weapons.&quot;
+
+
+All Models with the Blackshields Trait in a Detachment with this Oath of Moment must exchange all bolters and bolt pistols for a Weapon from the Weapons of Desperation list shown below. All Weapon exchanges required by this Oath of 
+Moment are Free. 
+
+
+Weapons of Desperation
+ • Reclaimed autogun
+ • Reclaimed autopistol
+ • Reclaimed lasgun
+ • Reclaimed laspistol
+ • Reclaimed shotgun
+ • Reclaimed heavy stubber*
+
+
+ *In any Unit only one Model in every three may select this option
+
+
+
+
+*NR data author&apos;s note - As there are no current rules on order of operation when applying this Special Rule we have decided to allow swapping of bolters/bolt pistols for other options as per the unit page in the liber/PDF as well as allow changing to Weapons of Desperation - the only option not allowed is the original bolter or bolt pistol - if this gets FAQ&apos;d later we will update the implementation*</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink targetId="4d86-d6e9-8bca-0ad5" id="7c06-840a-4e55-32fd" primary="false" name="The Weapons of Desperation"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="The Blade of the Just" hidden="false" id="b523-6fb7-45b3-3669">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb62-4579-e99e-1d82" automatic="true"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ac71-f536-996b-0222" automatic="true"/>
+          </constraints>
+          <rules>
+            <rule name="The Blade of the Just" id="1592-e29d-a111-dfef" hidden="false">
+              <description>&quot;A Unit which includes mostly Models with this Special Rule scores additional Victory Points for winning hard combats.&quot;
+
+
+All Models with the Blackshields Trait in a Detachment that has this Oath of Moment lose all variants of the Line (X) or Vanguard (X) Special Rule and may not thereafter gain any version of Line (X) or Vanguard (X) from any source. Such Models gain the Doomed Heroics (X) Special Rule, with the value of X on Doomed Heroics being equal to twice the value of X on the Special Rule lost. Models with the Blackshields Trait in a Detachment that has this Oath of Moment, but that have no variant of either the Line (X) or Vanguard (X) Special Rule gain the Doomed Heroics (3) Special Rule.</description>
+            </rule>
+            <rule name="Doomed Heroics (X)" id="bbb2-651f-2fca-9b0c" hidden="false">
+              <description>Whenever at least one Unit that includes a majority of Models with this Special Rule is on the winning side of a Combat where one or more of the following was true at the start of the Fight Sub-Phase, then the Controlling Player scores a number of Victory Points equal to the value of X (where there are multiple variants of this Special Rule in a Combat, use only the single highest value of X):
+
+
+ • The total number of Models on the enemy side is more than twice the number of Models on the Blackshields side.
+ • The enemy side includes more Models with the Command Trait or any Models with the Paragon Type.
+ • The enemy side includes a majority of Models with a higher Weapon Skill Characteristic than the majority of Models on the Blackshields side.
+
+
+This Oath of Moment may not be selected if the Detachment already has the Reapers of Lives or Spoils of Victory Oaths of Moment.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="0" field="cb62-4579-e99e-1d82">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e39d-fff6-6325-47d1" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="40ff-d0cc-3254-f83e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="0" field="ac71-f536-996b-0222">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e39d-fff6-6325-47d1" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="40ff-d0cc-3254-f83e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="4ec2-4dab-205b-36a2" id="0966-7b8b-22f6-8293" primary="false" name="The Blade of the Just"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Reapers of Lives" hidden="false" id="40ff-d0cc-3254-f83e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2496-3ee4-4c9b-9d85" automatic="true"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4c86-eaae-6086-437b" automatic="true"/>
+          </constraints>
+          <rules>
+            <rule name="Reapers of Lives" id="0b42-1704-ec3c-c821" hidden="false">
+              <description>&quot;Units that include mostly Models with this Special Rule score Victory Points when used to destroy enemy Units.&quot;
+
+
+All Models with the Blackshields Trait in a Detachment with this Oath of Moment lose any variants of the Line (X) or Vanguard (X) Special Rule they may have, and may not thereafter gain any version of Line (X) or Vanguard (X) from any source, and a Unit that includes any Models with this Oath of Moment may not Control or Contest Objectives. Instead the Controlling Player of a Detachment with this Oath of Moment gains D3 Victory Points for each enemy Unit entirely removed as Casualties as part of a Shooting Attack made for any Unit that includes a majority of Models with this Oath of Moment or as part of a Combat which includes any Models with this Oath of Moment under that Player’s Control. If the enemy Unit whose destruction triggers this Special Rule includes any Models with the Expendable (X) Special Rule, then the number of Victory Points scored for this Special Rule is reduced by the value of X on that variant of the Expendable (X) Special Rule, to a minimum of 0.
+
+
+This Oath of Moment may not be selected if the Detachment already has the Spoils of Victory Oath of Moment.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="0" field="2496-3ee4-4c9b-9d85">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e39d-fff6-6325-47d1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="4c86-eaae-6086-437b">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e39d-fff6-6325-47d1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="90a5-d491-7576-a537" id="14a5-10dd-af4d-5be8" primary="false" name="Reapers of Lives"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Alone and Forgotten" hidden="false" id="9f95-fefa-8065-0094">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a72-6a3e-4000-ac74"/>
+          </constraints>
+          <rules>
+            <rule name="Alone and Forgotten" id="1f14-ed97-b397-d409" hidden="false">
+              <description>&quot;A Detachment with this Oath of Moment may only have Command Choices selected for it, but gains bonuses for those Units in Combat.&quot;
+
+
+A Detachment that has this Oath of Moment may only include Command Choices. All Troops Slots in a Primary or Allied Detachment with this Oath of Moment, or any Auxiliary Detachment attached to such a Detachment, are replaced with Command Slots. However, the only Units that may be chosen to fill those Command Slots are Centurions or Centurions in Terminator Armour. All Command Choices selected for a Detachment with this Oath of Moment may have two of the following Characteristic&apos;s Base Values increased by +1: Weapon Skill, Ballistic Skill, Strength, Toughness, Initiative, or Wounds.
+
+
+All Centurions and Centurions in Terminator Armour selected as part of a Detachment with this Oath of Moment gain the To Fight and Die Alone Special Rule</description>
+            </rule>
+            <rule name="To Fight and Die Alone" id="525c-b678-98e7-43ff" hidden="false">
+              <description>&quot;A Model with this Special Rule cannot join Units, but gains bonuses when fighting alone.&quot;
+
+
+A Model with this Special Rule may not join any other Unit, nor may it be joined by another Model. While part of a Combat where this Model is the only Model the Controlling Player controls in that Combat, that player gains a bonus of +4 to their Combat Resolution Score, with a further bonus of +1 Combat Resolution points scored for each Wound lost by that Model in that Combat Round as long as the Model ends the Combat Round with at least one Wound remaining. 
+
+
+If a Model with this Special Rule is Removed as a Casualty during any Initiative Step of any Combat, then the Controlling Player of this Model gains D6+1 Victory Points.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink targetId="122b-0eda-4e29-401e" id="1ba0-cf03-a59a-c36b" primary="false" name="Alone and Forgotten"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Rite of War" id="e45b-b0b9-a21e-935f" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rite of War: Blackshields" hidden="false" id="a959-6650-e35d-3c31">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Blackshields Tactica" hidden="false" id="ebf2-a8f1-00c2-c7d9">
+              <rules>
+                <rule name="Bastard Sons of Fate" id="4351-d554-72bb-7820" hidden="false">
+                  <description>&quot; Blackshields gain bonuses to Toughness and Strength when under the effect of certain Battlefield Statuses.&quot;
+
+
+While affected by any of the Pinned, Suppressed or Stunned Battlefield Statuses, a Model with the Blackshields Trait gains a bonus of +1 to their Toughness and Strength Characteristics. If affected by more than one such Battlefield Status then this bonus is increased to +2.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd75-1e39-0a0f-0fd2-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd75-1e39-0a0f-0fd2-max"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gambit" hidden="false" id="00ba-3187-f889-3bc9">
+              <profiles>
+                <profile name="Beholden to None" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="6992-fae3-8591-c712">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">If slain by the opposing Model, D3 wounds are inflicted on that Model.</characteristic>
+                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">This Gambit may only be selected if the opposing Model in the Challenge has either the Unique Trait or the Paragon Type. If a Model is Removed as a Casualty during the Strike Step when this Gambit has been selected for them, then D3 wounds are automatically inflicted on the opposing Model at the end of the Glory Step that follows. These wounds have the Damage and AP of the Weapon used by the Model for which this Gambit was selected.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="afa3-a09a-c7f0-037f-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afa3-a09a-c7f0-037f-max"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Oaths of Moment" hidden="false" id="7285-1826-9124-0b8a">
+              <rules>
+                <rule name="Oaths of Moment" id="e8c6-3113-c65d-f636" hidden="false">
+                  <description>An Army that includes any Detachments with the Blackshields Faction may select a number of Oaths of Moment for each such Detachment, these are sets of rules that add a number of additional options and Special Rules to Units in that Detachment. The number of Oaths of Moment that may be selected for a Detachment depends on what type of Detachment it is, as shown on the table below:
+ 
+Primary Detachment : 2 
+Allied Detachment : 1
+
+
+Note that any Auxiliary or Apex Detachments attached to a Blackshields Allied or Primary Detachment must use the same Oaths of Moment as the Detachment to which they are attached. Other types of Detachment may not have Oaths of Moment selected for them.
+
+
+Oaths of Moment are selected when a Detachment is added to the Army Roster, and each such Oath of Moment will explain any effects it may have on which Units may be selected for the Detachment. Most Oaths of Moment will also add Special Rules or other effects to some or all Units in the Detachment, this will also be explained by each individual Oath of Moment.
+
+
+Note that some Oaths of Moment require that certain Special Rules be removed from Models and replaced with other Special Rules. In a Detachment that has more than one Oath of Moment, the effects of these are applied one at a time in an order of the Controlling Player&apos;s choice – and if the first Oath of Moment removes a Special Rule it cannot then be affected, modified or removed by the second.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="96d0-b6ad-ec95-5efd-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96d0-b6ad-ec95-5efd-max"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="429e-8e2a-fea6-d481-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="429e-8e2a-fea6-d481-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>
