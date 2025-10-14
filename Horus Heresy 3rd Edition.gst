@@ -22613,6 +22613,7 @@
                 <modifier type="set" value="0" field="390b-521d-badf-8cff">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -22630,6 +22631,7 @@
                 <modifier type="set" value="0" field="60ca-4b4f-c056-648d">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -22667,14 +22669,26 @@
                   </conditions>
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="notInstanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="set" value="4" field="543d-afbf-acca-d834">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -22683,6 +22697,19 @@
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="18c9-c657-1c4a-d640" includeChildSelections="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="18c9-c657-1c4a-d640">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </categoryLink>
             <categoryLink name="War-engine" hidden="false" id="7573-0697-048a-7e90" targetId="2499-7239-685f-8465">
               <constraints>
@@ -22719,11 +22746,13 @@
                 <modifier type="set" value="0" field="01a3-4258-494b-cbea">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -22736,6 +22765,7 @@
                 <modifier type="set" value="4" field="c3e6-9a72-5678-0ea7">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -22968,6 +22998,19 @@
             <categoryLink name="Clade Operative" hidden="false" id="eb70-ad09-bf82-3b27" targetId="335a-5a90-3b7c-c034"/>
             <categoryLink name="Cult Operative" hidden="false" id="694b-50ea-fe58-144c" targetId="4f71-897f-8ae1-303b"/>
             <categoryLink name="Legiones Thallaxes" hidden="false" id="7772-cdce-8fbd-841f" targetId="6f78-9e60-4884-63d2"/>
+            <categoryLink name="Command - Centurions Only" hidden="false" id="5e02-935b-3ae3-4485" targetId="1429-f03a-e8a5-478c">
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="139d-47eb-ef76-744b"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
