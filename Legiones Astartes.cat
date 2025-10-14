@@ -5878,7 +5878,7 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd00-21bd-7def-a39a" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="cd00-21bd-7def-a39a" automatic="true"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Combi-bolter" hidden="false" id="50ec-a94c-d22a-d2ae" type="selectionEntry" targetId="042d-9e60-db9e-c147" sortIndex="4">
@@ -5954,7 +5954,7 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                         </modifier>
                       </modifiers>
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b915-63a3-b28a-9275" automatic="true"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b915-63a3-b28a-9275" automatic="true"/>
                       </constraints>
                     </entryLink>
                     <entryLink import="true" name="Shrapnel bolter" hidden="true" id="d418-31b9-0612-918f" type="selectionEntry" targetId="9532-a693-d2ac-f198">
@@ -10676,7 +10676,7 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                             </modifier>
                           </modifiers>
                           <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35af-bddd-c904-6673" automatic="true"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="35af-bddd-c904-6673" automatic="true"/>
                           </constraints>
                         </entryLink>
                         <entryLink import="true" name="Shrapnel bolter" hidden="true" id="4dfc-33e3-979f-419a" type="selectionEntry" targetId="9532-a693-d2ac-f198">
@@ -10748,7 +10748,7 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                         </modifier>
                       </modifiers>
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbb1-26b1-8ca5-050d" automatic="true"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="bbb1-26b1-8ca5-050d" automatic="true"/>
                       </constraints>
                     </entryLink>
                     <entryLink import="true" name="Combi-bolter" hidden="false" id="a751-db0d-4e57-f10d" type="selectionEntry" targetId="042d-9e60-db9e-c147" sortIndex="4">
@@ -12212,10 +12212,13 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
           <selectionEntryGroups>
             <selectionEntryGroup name="Ranged weapons" id="349a-9cf9-3e27-b734" hidden="false" defaultSelectionEntryId="4db9-5306-45be-8065" sortIndex="1">
               <entryLinks>
-                <entryLink import="true" name="Overcharged volkite serpenta" hidden="false" id="4db9-5306-45be-8065" type="selectionEntry" targetId="a3f7-f435-8ad8-05f9" sortIndex="1">
+                <entryLink import="true" name="Overcharged volkite serpenta" hidden="false" id="4db9-5306-45be-8065" type="selectionEntry" targetId="a3f7-f435-8ad8-05f9" sortIndex="1" defaultAmount="1">
                   <modifiers>
                     <modifier type="set" value="Two overcharged volkite serpentas" field="name"/>
                   </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d58c-3434-9d64-689f"/>
+                  </constraints>
                 </entryLink>
                 <entryLink import="true" name="Overcharged plasma pistol" hidden="false" id="7f33-1f87-8e54-46c1" type="selectionEntry" targetId="6f6b-2628-9aea-2ffb" sortIndex="2">
                   <modifiers>
@@ -12224,8 +12227,15 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5db6-69d5-c4e4-8180"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8db5-34c2-1669-3416"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="796a-ef7d-35ef-201f"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
@@ -23385,7 +23395,7 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa94-1838-9455-6c03" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="aa94-1838-9455-6c03" automatic="true"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Shrapnel bolter" hidden="true" id="f04b-10d5-d0ed-b816" type="selectionEntry" targetId="9532-a693-d2ac-f198">
@@ -23457,7 +23467,7 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2ee-c816-dfed-4c12" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d2ee-c816-dfed-4c12" automatic="true"/>
               </constraints>
             </entryLink>
             <entryLink import="true" name="Combi-bolter" hidden="false" id="2ee9-187c-a857-f452" type="selectionEntry" targetId="042d-9e60-db9e-c147" sortIndex="4">
@@ -25510,7 +25520,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                         </modifier>
                       </modifiers>
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98d7-a11c-d69f-eb02" automatic="true"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="98d7-a11c-d69f-eb02" automatic="true"/>
                       </constraints>
                     </entryLink>
                     <entryLink import="true" name="Shrapnel bolter" hidden="true" id="133a-15b1-8da4-007d" type="selectionEntry" targetId="9532-a693-d2ac-f198">
@@ -25582,7 +25592,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f97-cf59-5e75-72b4" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9f97-cf59-5e75-72b4" automatic="true"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Combi-bolter" hidden="false" id="b948-665b-7109-8f47" type="selectionEntry" targetId="042d-9e60-db9e-c147" sortIndex="4">
@@ -32541,45 +32551,41 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </entryLink>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="a923-cdd9-1f2c-ee01" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
             <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="8465-55b6-e398-1634" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
+            <entryLink import="true" name="Melta bombs" hidden="false" id="9ad9-86d7-4974-b099" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="5">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7de4-1356-4921-a645"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have both its overcharged volkite serpentas exchanged for " id="ec17-e17c-4e2f-918c" defaultSelectionEntryId="6035-5abd-aa2e-cecc" sortIndex="1">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="445b-0ddd-4804-8dc9"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="113a-34cb-5559-adc9"/>
-              </constraints>
+            <selectionEntryGroup name="Ranged weapons" id="5c1c-0e2a-5609-1b0d" hidden="false" defaultSelectionEntryId="4db9-5306-45be-8065" sortIndex="1">
               <entryLinks>
-                <entryLink import="true" name="Overcharged volkite serpenta" hidden="false" id="6035-5abd-aa2e-cecc" type="selectionEntry" targetId="a3f7-f435-8ad8-05f9" sortIndex="1">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da0f-72fa-44ea-7fbc"/>
-                  </constraints>
+                <entryLink import="true" name="Overcharged volkite serpenta" hidden="false" id="ec5f-884a-b17d-a44b" type="selectionEntry" targetId="a3f7-f435-8ad8-05f9" sortIndex="1" defaultAmount="1">
                   <modifiers>
                     <modifier type="set" value="Two overcharged volkite serpentas" field="name"/>
                   </modifiers>
-                </entryLink>
-                <entryLink import="true" name="Overcharged plasma pistol" hidden="false" id="6df2-392e-e05b-6e87" type="selectionEntry" targetId="6f6b-2628-9aea-2ffb">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53a9-8e13-1caf-f780"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed75-08f9-151c-ca03"/>
                   </constraints>
+                </entryLink>
+                <entryLink import="true" name="Overcharged plasma pistol" hidden="false" id="9917-6ad8-4834-d4af" type="selectionEntry" targetId="6f6b-2628-9aea-2ffb" sortIndex="2">
                   <modifiers>
                     <modifier type="set" value="Two overcharged plasma pistols" field="name"/>
                   </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="This Model may have melta bombs selected for it for +5 Points." id="4c2d-6877-4dc2-add6" sortIndex="5">
-              <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" id="9ad9-86d7-4974-b099" name="Melta bombs">
                   <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7de4-1356-4921-a645"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dedc-1f69-5733-c240"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a303-5d54-4732-a95e"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="06c0-0620-d2dc-1ec0"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8598-4f69-151e-34d3"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
