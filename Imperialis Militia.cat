@@ -8741,7 +8741,7 @@
                 <infoLink name="Light Transport" id="0a54-54ad-4ca5-81e5" hidden="false" type="rule" targetId="d451-f7f3-fc8f-db23"/>
               </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="This Mining Rig may have its Turret Mounted twin heavy flamer exchanged for one of the following:" id="a787-d285-4f3d-b559" hidden="false" sortIndex="1">
+                <selectionEntryGroup name="This Mining Rig may have its Turret Mounted twin heavy flamer exchanged for one of the following:" id="a787-d285-4f3d-b559" hidden="false" sortIndex="1" defaultSelectionEntryId="7f6b-9c8a-aae9-5372">
                   <entryLinks>
                     <entryLink import="true" name="Gravis autocannon" hidden="false" id="f2e6-3fe4-4d16-b116" type="selectionEntry" targetId="4e51-460b-4f29-8257">
                       <costs>
@@ -8776,9 +8776,15 @@
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05de-e5a4-41dd-8761"/>
                       </constraints>
                     </entryLink>
+                    <entryLink import="true" name="Twin heavy flamer" hidden="false" id="7f6b-9c8a-aae9-5372" type="selectionEntry" targetId="f797-93eb-d6fe-586a" sortIndex="1">
+                      <modifiers>
+                        <modifier type="prepend" value="Turret Mounted" field="name"/>
+                      </modifiers>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c58-6e88-4a6e-825d"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c53b-83d2-9d34-9f7d" automatic="true"/>
                   </constraints>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="This Mining Rig may have one item from the Militia Pintle Weapons list selected for it." id="3b66-3a9a-4304-8a83" hidden="false">

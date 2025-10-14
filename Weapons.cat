@@ -1091,20 +1091,9 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy conversion beam cannon" hidden="false" id="4c0a-e911-ab85-2286">
       <profiles>
-        <profile name="Heavy conversion beam cannon (Long)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="2e59-2818-48cb-9067">
+        <profile name="Heavy conversion beam cannon (Short)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="1b2a-63ff-58d7-0a99">
           <characteristics>
-            <characteristic name="R" typeId="cdb0-8654-6840-1037">&gt;30-45</characteristic>
-            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
-            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">8</characteristic>
-            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
-            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">3</characteristic>
-            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (RS), Blast (5&quot;)</characteristic>
-            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Conversion</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Heavy conversion beam cannon (Short)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="0b2a-63ff-58d7-0a99">
-          <characteristics>
-            <characteristic name="R" typeId="cdb0-8654-6840-1037">&lt;15</characteristic>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037"> 0-15</characteristic>
             <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
             <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
             <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
@@ -1120,6 +1109,17 @@
             <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">7</characteristic>
             <characteristic name="AP" typeId="7a23-0248-2b94-5951">3</characteristic>
             <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (RS), Blast (5&quot;)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Conversion</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Heavy conversion beam cannon (Long)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="2e59-2818-48cb-9067">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">30-45</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">8</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">3</characteristic>
             <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (RS), Blast (5&quot;)</characteristic>
             <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Conversion</characteristic>
           </characteristics>
@@ -8604,6 +8604,206 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Deathlock" hidden="false" id="4d7d-ec25-a22b-337a">
+      <profiles>
+        <profile name="Deathlock" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="8bef-3047-bcd1-3e24">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">18</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Shred (6+), Overload (2)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Xenos</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shred (X)" id="6468-db93-3272-e8e2" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
+          <comment>6+</comment>
+          <modifiers>
+            <modifier type="replace" value="6+" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Overload (X)" id="8fa1-5fda-56d7-fd55" hidden="false" type="rule" targetId="1d3a-d1e2-871a-63ae">
+          <comment>2</comment>
+          <modifiers>
+            <modifier type="replace" value="2" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Doomlock" hidden="false" id="ee7b-a16e-f8de-d51d">
+      <profiles>
+        <profile name="Doomlock" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="b285-de4f-b8f3-b650">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">9</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Pistol, Shred (6+), Overload (2)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Xenos, Assault</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Overload (X)" id="d3d8-36dc-f987-3e96" hidden="false" type="rule" targetId="1d3a-d1e2-871a-63ae">
+          <comment>2</comment>
+          <modifiers>
+            <modifier type="replace" value="2" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Shred (X)" id="1f56-feed-4959-c551" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
+          <comment>6+</comment>
+          <modifiers>
+            <modifier type="replace" value="6+" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Pistol" id="3247-8d1e-b635-a8e6" hidden="false" type="rule" targetId="2bf6-55c8-6810-a71c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Halo Blade" hidden="false" id="2543-5993-1cde-4393">
+      <profiles>
+        <profile name="Halo Blade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="9ba5-dd36-e921-498a">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Shred (5+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Xenos</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shred (X)" id="857d-fbf0-2339-cd4a" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
+          <comment>5+</comment>
+          <modifiers>
+            <modifier type="replace" value="5+" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reclaimed autogun " hidden="false" id="01ff-112d-a051-0a4b">
+      <profiles>
+        <profile name="Reclaimed autogun " typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="794e-1d58-4dde-ed3c">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">18</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">3</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">3</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">-</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Pistol</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Auto, Assault</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pistol" id="eb15-b636-90da-6eac" hidden="false" type="rule" targetId="2bf6-55c8-6810-a71c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reclaimed autopistol" hidden="false" id="9402-da45-294a-a492">
+      <profiles>
+        <profile name="Reclaimed autopistol" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="9a4c-25d8-ff21-cdf2">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">9</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">3</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">3</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">-</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Pistol</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Auto, Assault</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pistol" id="8025-40cb-aeac-35b3" hidden="false" type="rule" targetId="2bf6-55c8-6810-a71c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reclaimed lasgun" hidden="false" id="d8ff-56b4-e19c-470a">
+      <profiles>
+        <profile name="Reclaimed lasgun" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="bfd1-82af-7df3-a676">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">24</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">3</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">6</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Pistol</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Las, Assault</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pistol" id="29f9-c648-0116-3c83" hidden="false" type="rule" targetId="2bf6-55c8-6810-a71c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reclaimed laspistol" hidden="false" id="be64-7b52-0e84-783e">
+      <profiles>
+        <profile name="Reclaimed laspistol" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="9569-6d4c-f65c-a3d0">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">12</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">3</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">6</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Pistol</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Las, Assault</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pistol" id="faa3-f79b-e7a7-01b2" hidden="false" type="rule" targetId="2bf6-55c8-6810-a71c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reclaimed Shotgun" hidden="false" id="5adb-6065-6f5f-e5bd">
+      <profiles>
+        <profile name="Reclaimed Shotgun" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="5140-e021-5c1e-787e">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">12</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">4</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">-</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Stun (0)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Auto, Assault</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Stun (X)" id="f105-6cc8-1824-2fdc" hidden="false" type="rule" targetId="c7c1-bbc9-f852-6f71">
+          <comment>0</comment>
+          <modifiers>
+            <modifier type="replace" value="0" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reclaimed heavy stubber" hidden="false" id="e530-d06e-0e5a-95be">
+      <profiles>
+        <profile name="Reclaimed heavy stubber" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="4cc3-5bc5-ea5d-9668">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">36</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">5</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">4</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">-</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Suppressive (0)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Auto, Assault</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Suppressive (X)" id="9bf6-5cde-adb2-f416" hidden="false" type="rule" targetId="001f-53f3-4d87-4b43">
+          <comment>0</comment>
+          <modifiers>
+            <modifier type="replace" value="0" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Power Weapon" id="d23f-b4f0-0127-9394" hidden="false" collapsible="true" flatten="true">
@@ -8707,18 +8907,28 @@
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <comment>SL</comment>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="8045-89a4-76d4-fcef" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fde7-fb71-1ecc-7365" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -8743,9 +8953,6 @@
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <comment>SL</comment>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -8755,6 +8962,19 @@
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fde7-fb71-1ecc-7365" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -8783,9 +9003,6 @@
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <comment>SL</comment>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -8795,6 +9012,19 @@
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fde7-fb71-1ecc-7365" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -8823,9 +9053,6 @@
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <comment>SL</comment>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -8835,6 +9062,19 @@
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fde7-fb71-1ecc-7365" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -8851,9 +9091,6 @@
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <comment>BA</comment>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -8862,6 +9099,19 @@
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="8ae1-c83b-a225-826f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -8886,9 +9136,6 @@
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <comment>BA</comment>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -8897,6 +9144,19 @@
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="8ae1-c83b-a225-826f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -8921,9 +9181,6 @@
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <comment>BA</comment>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -8932,6 +9189,19 @@
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="8ae1-c83b-a225-826f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -8956,9 +9226,6 @@
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <comment>BA</comment>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -8967,6 +9234,19 @@
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="8ae1-c83b-a225-826f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -8991,9 +9271,6 @@
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="0a35-fce3-188c-b3aa" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <comment>DA</comment>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -9002,6 +9279,19 @@
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="0a35-fce3-188c-b3aa" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c99b-7cb2-a79c-b632" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -9030,10 +9320,24 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f7b4-2531-0962-1379" shared="true" includeChildSelections="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                   </conditions>
                   <comment>WS</comment>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f7b4-2531-0962-1379" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="d479-57dc-b494-7f80" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
               <comment>WS+Cmd Only</comment>
@@ -9053,9 +9357,6 @@
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <comment>DA</comment>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -9063,6 +9364,19 @@
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="3e12-20bf-607f-c531" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -9092,9 +9406,6 @@
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <comment>DA</comment>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -9102,6 +9413,19 @@
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="3e12-20bf-607f-c531" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -9131,9 +9455,6 @@
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <comment>DA</comment>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -9141,6 +9462,19 @@
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="3e12-20bf-607f-c531" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -9165,9 +9499,6 @@
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="656a-07b6-d4fd-57af" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <comment>UM</comment>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -9176,6 +9507,19 @@
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="656a-07b6-d4fd-57af" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="147b-ad1e-1848-e5d3" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -9203,9 +9547,6 @@
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a22-d01f-ab5c-ec07" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <comment>EC</comment>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -9214,6 +9555,19 @@
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a22-d01f-ab5c-ec07" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fc3a-a4e6-8a2c-01a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -9238,9 +9592,6 @@
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="486f-b32a-ac87-73dd" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <comment>NL</comment>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -9250,6 +9601,19 @@
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="486f-b32a-ac87-73dd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="d63e-1849-e763-05ee" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -9277,10 +9641,24 @@
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="486f-b32a-ac87-73dd" shared="true" includeChildSelections="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                   </conditions>
                   <comment>NL</comment>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="486f-b32a-ac87-73dd" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="d63e-1849-e763-05ee" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
               <comment>NL+Cmd Only</comment>
@@ -9303,9 +9681,6 @@
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="be98-aa9d-64ef-f62c" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <comment>DG</comment>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -9315,6 +9690,19 @@
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="be98-aa9d-64ef-f62c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="606f-00c4-a49b-ff1c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -9339,9 +9727,6 @@
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <comment>EC</comment>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -9349,6 +9734,19 @@
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4eec-9111-7656-2023" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -9375,9 +9773,21 @@
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <comment>SH</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="59b9-6955-2307-aa98" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" value="5" field="9893-c379-920b-8982">
               <conditions>
@@ -9396,9 +9806,21 @@
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <comment>SH</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="ac06-fcec-b634-5bd9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="59b9-6955-2307-aa98" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" value="10" field="9893-c379-920b-8982">
               <conditions>
@@ -9418,9 +9840,6 @@
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="8813-5298-c368-ee16" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <comment>AL</comment>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -9429,6 +9848,19 @@
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="8813-5298-c368-ee16" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0e0a-e490-ee7f-7033" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -9450,9 +9882,6 @@
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="a956-190d-3b47-6258" shared="true" includeChildSelections="true"/>
-                  </conditions>
                   <comment>WE</comment>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -9463,10 +9892,23 @@
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="a956-190d-3b47-6258" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d39-355e-7faa-51a0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
-              <comment>AL+Sgt/Cmd/Champ/Spec Only</comment>
+              <comment>WE+Sgt/Cmd/Champ/Spec Only</comment>
             </modifier>
           </modifiers>
         </entryLink>
@@ -9483,16 +9925,25 @@
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>EC</comment>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="2496-21e2-1870-e9b8" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4eec-9111-7656-2023" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
