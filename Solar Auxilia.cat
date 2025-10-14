@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7851-69ac-f701-034e" name="Solar Auxilia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="30" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7851-69ac-f701-034e" name="Solar Auxilia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="31" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Legatine Command Section" hidden="false" id="8641-1dd0-7e76-de7d">
       <selectionEntries>
@@ -754,8 +754,11 @@
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Close Order" hidden="false" id="dad5-f78a-000f-961c">
               <rules>
-                <rule name="Close Order" id="486d-613c-4439-5354" hidden="false">
-                  <description>&quot;Models with this Special Rule increase the Value of the Line (x) Special Rule for nearby Friendly Models with the Infantry Tercio Trait. &quot;</description>
+                <rule name="Close Order" id="486d-613c-4439-5354" hidden="false" publicationId="adda-966f-f129-ed26" page="23">
+                  <description>&quot;Models with this Special Rule increase the Value of the Line (x) Special Rule for nearby Friendly Models with the Infantry Tercio Trait.&quot;
+
+
+If any Model with the Infantry Tercio Trait and the Infantry Type can draw a Line of Sight to one or more Friendly Models with this Special Rule that are within 18&quot;, then that Model and all other Models in the same Unit add a modifier of +1 to the value of X in any variant of the Line (X) Special Rule they have.</description>
                 </rule>
               </rules>
               <constraints>
@@ -1149,7 +1152,10 @@
               </constraints>
               <rules>
                 <rule name="Hold the Line" id="3b8b-8a74-86fe-c80a" hidden="false">
-                  <description>&quot;Models with this Special Rule provide a Feel No Pain Damage Mitigation Roll to nearby Models with the Veletaris Tercio Trait against Volley and Reaction Attacks.&quot;</description>
+                  <description>&quot;Models with this Special Rule provide a Feel No Pain Damage Mitigation Roll to nearby Models with the Veletaris Tercio Trait against Volley and Reaction Attacks.&quot;
+
+
+Any Model with the Veletaris Tercio Trait, the Vanguard (X) Special Rule and the Infantry Type gains the Feel No Pain (5+) Special Rule against any wounds inflicted by Shooting Attacks made as part of a Reaction or a Volley Attack as long as at least one Model in the same Unit is within 18&quot; of a Friendly Model with this Special Rule.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -1459,8 +1465,11 @@
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Pre-emptive Strike" hidden="false" id="74ac-6c40-7037-afdf">
               <rules>
-                <rule name="Pre-emptive Strike" id="42ec-97bc-7f14-844b" hidden="false">
-                  <description>&quot;Models with this Special Rule confer the Firestorm Special Rule to nearby Models with the Scout Tercio Trait.&quot;</description>
+                <rule name="Pre-emptive Strike" id="42ec-97bc-7f14-844b" hidden="false" publicationId="adda-966f-f129-ed26" page="25">
+                  <description>&quot;Models with this Special Rule confer the Firestorm Special Rule to nearby Models with the Scout Tercio Trait.&quot;
+
+
+Any Model with the Scout Tercio Trait gains the Firestorm Special Rule as long as at least one Model in the same Unit is within 18&quot; of a Friendly Model with this Special Rule.</description>
                 </rule>
               </rules>
               <constraints>
@@ -1716,7 +1725,10 @@
             <selectionEntry type="upgrade" import="true" name="Precision Bombardment" hidden="false" id="2bf0-2551-097f-c155" sortIndex="2">
               <rules>
                 <rule name="Precision Bombardment" id="a1f3-aa60-4c92-d483" hidden="false">
-                  <description>&quot;Models with this Special Rule decreate the Scatter distance of Shooting Attacks made by nearby Models with the Artillery Tercio Trait.&quot;</description>
+                  <description>&quot;Models with this Special Rule decrease the Scatter distance of Shooting Attacks made by nearby Models with the Artillery Tercio Trait.&quot;
+
+
+When making a Shooting Attack for a Model with the Artillery Tercio Trait which is in a Unit containing at least one Model within 18 of one or more Friendly Models with this Special Rule, the Ballistic Skill Characteristic of the attacking Model is subtracted from the total result of the Dice rolled when determining Scatter distance. </description>
                 </rule>
               </rules>
               <constraints>
@@ -7900,6 +7912,13 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Mov
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="5fcd-1c19-a433-0c5f" shared="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="e45f-08ba-dbc1-2867" shared="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="b23d-b264-90cc-b6a7" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="b1e1-e164-5877-6734" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="d3f9-b9e6-3ea5-cc8e" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="93e7-6a83-1e9e-204a" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="9a45-35cd-3806-2303" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="2562-e355-f8e1-4c54" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="433d-56e0-9878-dea1" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="05bf-af5e-be67-36a2" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
