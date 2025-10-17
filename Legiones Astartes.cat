@@ -17179,9 +17179,21 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <comment>IW</comment>
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="a956-190d-3b47-6258" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="a956-190d-3b47-6258" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d39-355e-7faa-51a0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="instanceOf" value="1" field="forces" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -20595,9 +20607,21 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <comment>IW</comment>
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="a956-190d-3b47-6258" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="a956-190d-3b47-6258" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d39-355e-7faa-51a0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="instanceOf" value="1" field="forces" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -22068,6 +22092,30 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7910-287d-7614-423f"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Chainaxe" hidden="true" id="bada-d752-2024-dc6f" type="selectionEntry" targetId="31a4-f8de-de6d-1fd9" sortIndex="3">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="a956-190d-3b47-6258" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d39-355e-7faa-51a0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                            <condition type="instanceOf" value="1" field="forces" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01aa-bd61-5d1e-1858"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -41315,9 +41363,33 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7137-831d-d2b1-daf8"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Chainsword" hidden="false" id="1ee8-e91c-5186-b7bc" type="selectionEntry" targetId="78f4-4967-2896-c3a5">
+                <entryLink import="true" name="Chainsword" hidden="false" id="1ee8-e91c-5186-b7bc" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acd6-5a58-f4c0-4bb3"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Chainaxe" hidden="true" id="5dfd-cbb3-e00b-f732" type="selectionEntry" targetId="31a4-f8de-de6d-1fd9">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="a956-190d-3b47-6258" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d39-355e-7faa-51a0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="instanceOf" value="1" field="forces" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dd0-e01a-1036-d340"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -41430,7 +41502,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           <selectionEntryGroups>
             <selectionEntryGroup name="May have its chainsword exchanged for " id="72e8-0d55-4c25-a41b" defaultSelectionEntryId="a0e8-447a-4d85-93d1" sortIndex="2">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="a0e8-447a-4d85-93d1" name="Chainsword">
+                <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="a0e8-447a-4d85-93d1" name="Chainsword" sortIndex="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77e7-6d1b-4ae5-ab50"/>
                   </constraints>
@@ -41444,6 +41516,30 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Legion Sergeant Melee Weapons (no chainsword)" hidden="false" id="ebe2-e060-fdc6-bae2" type="selectionEntryGroup" targetId="c7ca-8933-a703-7301" flatten="true"/>
+                <entryLink import="true" name="Chainaxe" hidden="true" id="d47d-354c-6a4a-0f74" type="selectionEntry" targetId="31a4-f8de-de6d-1fd9">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="a956-190d-3b47-6258" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d39-355e-7faa-51a0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="instanceOf" value="1" field="forces" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d2f-d76d-3821-9a22"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f1bc-1cdb-4c7b-b010"/>
@@ -42021,9 +42117,33 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f63-4df3-156c-5922"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Chainsword" hidden="false" id="16d6-99fc-77ce-a7c6" type="selectionEntry" targetId="78f4-4967-2896-c3a5">
+                <entryLink import="true" name="Chainsword" hidden="false" id="16d6-99fc-77ce-a7c6" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acb8-44ba-5413-e625"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Chainaxe" hidden="true" id="5cfa-4643-26cd-ec4d" type="selectionEntry" targetId="31a4-f8de-de6d-1fd9">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="a956-190d-3b47-6258" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d39-355e-7faa-51a0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="instanceOf" value="1" field="forces" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a6c-9bea-4a43-6f5f"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -42137,7 +42257,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
           <selectionEntryGroups>
             <selectionEntryGroup name="May have its chainsword exchanged for " id="5426-4260-4c99-8191" sortIndex="2" defaultSelectionEntryId="9906-b6c5-4bbb-b314">
               <entryLinks>
-                <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="9906-b6c5-4bbb-b314" name="Chainsword">
+                <entryLink hidden="false" type="selectionEntry" targetId="78f4-4967-2896-c3a5" id="9906-b6c5-4bbb-b314" name="Chainsword" sortIndex="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5315-23a8-469d-9577"/>
                   </constraints>
@@ -42151,6 +42271,30 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Legion Sergeant Melee Weapons (no chainsword)" hidden="false" id="760c-7a88-5622-e308" type="selectionEntryGroup" targetId="c7ca-8933-a703-7301" flatten="true"/>
+                <entryLink import="true" name="Chainaxe" hidden="true" id="a15e-c4d8-32a8-3123" type="selectionEntry" targetId="31a4-f8de-de6d-1fd9">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="a956-190d-3b47-6258" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d39-355e-7faa-51a0" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="instanceOf" value="1" field="forces" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c70c-f28a-1bc3-f192"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="890c-96b8-44b0-b209"/>
