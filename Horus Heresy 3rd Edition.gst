@@ -623,6 +623,7 @@
     <categoryEntry name="Reapers of Lives" id="90a5-d491-7576-a537" hidden="false"/>
     <categoryEntry name="Command - Centurions Only" id="1429-f03a-e8a5-478c" hidden="true"/>
     <categoryEntry name="Alone and Forgotten" id="122b-0eda-4e29-401e" hidden="false"/>
+    <categoryEntry name="Vigilator" id="694e-f646-5935-6e36" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
@@ -17984,6 +17985,16 @@
               </conditionGroups>
               <comment>Legions</comment>
             </modifier>
+            <modifier type="increment" value="1" field="a910-5bd9-fd64-fa91">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="694e-f646-5935-6e36" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="add" value="Recon Demi-Company requires a Vigilator" field="error">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="694e-f646-5935-6e36" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <categoryLinks>
             <categoryLink name="Recon - Reconnaissance Squad Only" hidden="false" id="7ce6-438b-4534-48c2" targetId="f8c3-f44e-569f-4418">
@@ -18235,6 +18246,9 @@
             <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="a910-5bd9-fd64-fa91" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
         </forceEntry>
         <forceEntry name="Auxiliary - Iron Tercio" id="9a10-a2d9-5a87-a5a9" hidden="true" sortIndex="35">
           <categoryLinks>
