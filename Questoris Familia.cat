@@ -3396,21 +3396,21 @@ Special Rule and modify the value of X on any version of the Auto-repair (X) Spe
             </rule>
           </rules>
           <modifiers>
-            <modifier type="set" value="1" field="2f29-19b1-7982-4ff2">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="dc14-865b-7aea-1cab" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="0" field="2f29-19b1-7982-4ff2">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="dc14-865b-7aea-1cab" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+            <modifier type="set" value="0" field="8374-f039-7789-19c0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="f543-47b5-9ab1-3b90" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="27e4-d811-9810-90f4" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5cc2-c76d-b9f9-0198" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8374-f039-7789-19c0"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8374-f039-7789-19c0" automatic="true"/>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f6e2-5f33-5d58-3167" includeChildSelections="true" includeChildForces="true"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2f29-19b1-7982-4ff2" automatic="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Vow of Belligerence" hidden="false" id="3773-20aa-9912-b47c">
@@ -3424,6 +3424,18 @@ Special Rule and modify the value of X on any version of the Auto-repair (X) Spe
               <conditions>
                 <condition type="equalTo" value="0" field="selections" scope="roster" childId="89ae-ac36-aef1-5024" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="76f6-469b-6cab-9b21">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="f543-47b5-9ab1-3b90" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="27e4-d811-9810-90f4" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5cc2-c76d-b9f9-0198" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="dc14-865b-7aea-1cab" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -3443,9 +3455,21 @@ Special Rule and modify the value of X on any version of the Auto-repair (X) Spe
                 <condition type="equalTo" value="0" field="selections" scope="roster" childId="0544-8dce-3f8a-245d" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="3770-12f3-6d14-66a2">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="f543-47b5-9ab1-3b90" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="27e4-d811-9810-90f4" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5cc2-c76d-b9f9-0198" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="dc14-865b-7aea-1cab" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3770-12f3-6d14-66a2"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3770-12f3-6d14-66a2" automatic="true"/>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4cc1-48d4-92cd-cde7" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
         </selectionEntry>
@@ -3456,15 +3480,20 @@ Special Rule and modify the value of X on any version of the Auto-repair (X) Spe
             </rule>
           </rules>
           <modifiers>
-            <modifier type="set" value="1" field="67b5-a20d-bcfb-c2a6">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="27e4-d811-9810-90f4" shared="true" includeChildSelections="true"/>
-              </conditions>
+            <modifier type="set" value="0" field="40b6-49bd-fbfc-44f7">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="f543-47b5-9ab1-3b90" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5cc2-c76d-b9f9-0198" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="dc14-865b-7aea-1cab" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40b6-49bd-fbfc-44f7"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="67b5-a20d-bcfb-c2a6" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40b6-49bd-fbfc-44f7" automatic="true"/>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a9dd-7036-c6a5-3e40" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
         </selectionEntry>
@@ -3480,9 +3509,21 @@ Special Rule and modify the value of X on any version of the Auto-repair (X) Spe
                 <condition type="equalTo" value="0" field="selections" scope="roster" childId="2692-0ac9-5eef-5e9f" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="de3f-b701-1dc9-3306">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="f543-47b5-9ab1-3b90" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="27e4-d811-9810-90f4" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5cc2-c76d-b9f9-0198" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="dc14-865b-7aea-1cab" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de3f-b701-1dc9-3306"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de3f-b701-1dc9-3306" automatic="true"/>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="baab-9553-9bea-90d8" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
         </selectionEntry>
@@ -3493,16 +3534,21 @@ Special Rule and modify the value of X on any version of the Auto-repair (X) Spe
             </rule>
           </rules>
           <modifiers>
-            <modifier type="set" value="1" field="73ed-fab2-21d2-755b">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="f543-47b5-9ab1-3b90" shared="true" includeChildSelections="true"/>
-              </conditions>
+            <modifier type="set" value="0" field="f8c5-8265-e20b-643d">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="dc14-865b-7aea-1cab" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5cc2-c76d-b9f9-0198" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="27e4-d811-9810-90f4" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8c5-8265-e20b-643d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8c5-8265-e20b-643d" automatic="true"/>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="88ee-3c11-d0bf-df2c" includeChildSelections="true" includeChildForces="true"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="73ed-fab2-21d2-755b" automatic="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Vow of Slaying" hidden="false" id="de4f-faae-6edb-1d22">
@@ -3512,15 +3558,20 @@ Special Rule and modify the value of X on any version of the Auto-repair (X) Spe
             </rule>
           </rules>
           <modifiers>
-            <modifier type="set" value="1" field="458f-bd04-6ca3-85d0">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5cc2-c76d-b9f9-0198" shared="true" includeChildSelections="true"/>
-              </conditions>
+            <modifier type="set" value="0" field="bd1b-8485-bde5-9ec4">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="dc14-865b-7aea-1cab" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="27e4-d811-9810-90f4" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="f543-47b5-9ab1-3b90" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="458f-bd04-6ca3-85d0" automatic="true"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd1b-8485-bde5-9ec4"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd1b-8485-bde5-9ec4" automatic="true"/>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b02e-74ce-86cc-ecf8" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
         </selectionEntry>
