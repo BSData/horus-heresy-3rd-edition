@@ -22387,7 +22387,7 @@
       <modifiers>
         <modifier type="decrement" value="1" field="0ab6-91a0-792e-4068">
           <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="parent" childId="c857-47bd-6a4f-fcf8" shared="true" roundUp="false" includeChildSelections="true"/>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="c857-47bd-6a4f-fcf8" shared="false" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
         <modifier type="decrement" value="1" field="0ab6-91a0-792e-4068">
