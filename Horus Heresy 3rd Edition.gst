@@ -194,7 +194,21 @@
     <categoryEntry name="+1 Apex from High Command" id="8a97-1585-93e7-c561" hidden="true"/>
     <categoryEntry name="+1 Auxiliary from High Command" id="ff44-f49f-732b-c3a7" hidden="true"/>
     <categoryEntry name="Required Fulgrim Transformed" id="634b-596b-118f-80b6" hidden="true"/>
-    <categoryEntry name="Super-heavy Model Sub-Type" id="4d42-b711-7946-8e15" hidden="false"/>
+    <categoryEntry name="Super-heavy Model Sub-Type" id="4d42-b711-7946-8e15" hidden="false">
+      <rules>
+        <rule name="Super-Heavy Sub-Type" id="17e4-e94d-099b-f44b" hidden="false">
+          <description>The following Rules apply to all Models with the Super-Heavy Sub-Type
+
+
+- Models with this Sub-Type are not affected by Difficult Terrain or Dangerous Terrain, but may still neither pass through nor end their move in Impassable Terrain.
+- A Model with this Sub-Type always gains any benefits for having remained Stationary when making Shooting Attacks, regardless of whether the Model moved in the Preceding Movement Phase.
+- When making multiple Shooting Attacks in the same Shooting Phase, a Model with this Sub-Type does not have to make all attacks as Snap Shots.
+- A Model with this Sub-Type may only make Reactions in response to actions undertaken by Units that contain one or more Models with the Paragon Type, Super-Heavy Sub-Type, Knight Sub-Type or Titan Sub-Type.
+- When a player is instructed to roll on the Vehicle Damage Table for a Model with this Sub-Type, no roll is made. Instead , the Model loses a single Hull Point.
+- If a Model with this Sub-Type has a Transport Capacity, then it may transport any number of Units, so long as the number of Models in the transported Units does not exceed the Vehicle&apos;s Transport Capacity.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
     <categoryEntry name="Flyer Model Sub-Type" id="42a3-02e9-e0e4-8292" hidden="false"/>
     <categoryEntry name="Stable Model Sub-Type" id="3753-39e1-22c2-531b" hidden="false"/>
     <categoryEntry name="Open Beta Release" id="c5ac-45c2-a8a9-e32c" hidden="false"/>
