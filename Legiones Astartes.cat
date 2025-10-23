@@ -51089,6 +51089,132 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
             </rule>
           </rules>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Exemplars of the Legions" hidden="true" id="8a46-1f62-6a0f-5f59">
+          <comment>Shattered Legions</comment>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3256-29e9-1d7a-12a7" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dbf-654a-f06f-2d69" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Exemplars of the Legion" id="ee4b-842c-039b-42bb" hidden="false"/>
+          </rules>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="EotL - Retinue" hidden="false" id="028f-24b9-3194-d996">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5642-bbe6-9f57-b93c" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f66e-a76d-75c1-f425" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink targetId="7f18-07b3-98a2-ba62" id="ce8c-e290-2195-647c" primary="false" name="EotL - Retinue"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="EotL - Elites" hidden="false" id="3e18-42df-af68-5a20">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="aa06-c449-e18e-5165" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62bb-1b03-1287-7b93" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink targetId="84a1-8818-844a-c491" id="5d28-101f-21e8-a115" primary="false" name="EotL - Elites"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="EotL - War-engine" hidden="false" id="b34b-7030-bd5a-f622">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3545-a6d8-67ff-17ed" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33f1-ad2f-d279-3c30" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink targetId="fc79-06d6-395a-d7a1" id="96ac-581a-e4d5-301d" primary="false" name="EotL - War-engine"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="EotL - Troops" hidden="false" id="39f7-25bf-f281-31a8">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4939-45e9-8447-7c49" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fa1-5ff8-e6d0-62f9" includeChildSelections="false" automatic="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="2fa1-5ff8-e6d0-62f9">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink targetId="2ce9-a72d-d99f-0b68" id="4c67-0b7c-8a90-b111" primary="false" name="EotL - Troops"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="EotL - Support" hidden="false" id="38d2-fdbf-dddf-0c88">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2e02-22db-6cf6-8657" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bd0-fc33-936b-f5e5" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink targetId="09c9-269c-405b-6d7d" id="d603-cee0-57fd-bc2e" primary="false" name="EotL - Support"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="EotL - Transport" hidden="false" id="41f3-98ed-111c-1b3a">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dfb8-46ea-db9d-bf16" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cca-dbcc-4943-7a23" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink targetId="0d0c-4432-c20c-c81c" id="00a1-5181-8539-d04b" primary="false" name="EotL - Transport"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="EotL - Heavy Assault" hidden="false" id="99d9-55a5-a1f1-78b2">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6601-28a6-7bfc-a3b3" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1962-dd1d-1df2-ebda" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink targetId="a158-08e0-ba57-b8fc" id="8196-2a98-9c1f-bf50" primary="false" name="EotL - Heavy Assault"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="EotL - Heavy Transport" hidden="false" id="a3db-f87e-3887-f5ed">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="aa4f-4a6d-0551-fc31" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf77-217a-c5bf-5582" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink targetId="15f1-6c48-e26f-d3b4" id="0947-5493-a22c-c70b" primary="false" name="EotL - Heavy Transport"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="EotL - Armour" hidden="false" id="2288-885f-ef3f-b11e">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d652-9ca5-fc0e-b6c0" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0661-0cd5-bd65-b9fe" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink targetId="cf42-ed5b-932e-6561" id="0216-37b7-63ec-5661" primary="false" name="EotL - Armour"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="EotL - Recon" hidden="false" id="bf7e-ba73-5e0c-9661">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0fea-27da-e901-9e68" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05d8-a9dc-edf2-0d0c" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink targetId="454d-bfda-d781-6eaa" id="172b-a93c-2ba4-a881" primary="false" name="EotL - Recon"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="EotL - Fast Attack" hidden="false" id="c49e-0bb2-8109-d028">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5406-e9eb-20ae-5cb9" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a23-5708-969a-e762" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink targetId="884c-2022-3e38-854b" id="42c3-dbb4-ea5c-e2c0" primary="false" name="EotL - Fast Attack"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="82cb-74e2-637a-a67c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfef-e855-9fb9-34f2"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Rewards of Treachery" hidden="true" id="5d76-3474-3afa-e6e2" type="selectionEntry" targetId="7c64-0321-e098-fd0e">
