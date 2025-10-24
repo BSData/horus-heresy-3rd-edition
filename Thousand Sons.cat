@@ -1306,7 +1306,12 @@ Immovable Force (Telekinesis Discipline)</description>
             <selectionEntryGroup name="May have their Bolt Pistol exchanged for:" id="33ff-36ed-8eda-ad60" hidden="false" collapsible="true" sortIndex="2" defaultSelectionEntryId="0e26-8941-40d3-a1b0">
               <entryLinks>
                 <entryLink import="true" name="Bolt pistol" hidden="false" id="6f13-c2e9-4e0f-adb1" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1"/>
-                <entryLink import="true" name="Legion Pistols" hidden="false" id="b2f3-aeac-4f40-bd29" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" flatten="true" sortIndex="2"/>
+                <entryLink import="true" name="Legion Pistols" hidden="false" id="b2f3-aeac-4f40-bd29" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" flatten="true" sortIndex="3"/>
+                <entryLink import="true" name="Asphyx pistol" hidden="false" id="eab8-a94c-accb-f573" type="selectionEntry" targetId="d293-df49-e8c3-f3bf" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c7a-d4fd-aa8a-2f23-min" includeChildSelections="false"/>
@@ -1399,12 +1404,6 @@ Immovable Force (Telekinesis Discipline)</description>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b44b-111e-6601-be85-max" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Bolt pistol" hidden="false" id="497d-8cba-0a70-a080" type="selectionEntry" targetId="2942-f783-d627-33c5" defaultAmount="1" sortIndex="2">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b3af-91e3-8083-0ed6-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3af-91e3-8083-0ed6-max" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
             <entryLink import="true" name="Allegiance Traits" hidden="false" id="498a-39a8-dbcc-8a26" type="selectionEntryGroup" targetId="edd3-9763-97ca-0323"/>
             <entryLink import="true" name="Legiones Astartes Trait" hidden="false" id="3268-6b64-72dc-eac6" type="selectionEntryGroup" targetId="3014-5f25-bc3b-4675"/>
           </entryLinks>
@@ -1441,6 +1440,27 @@ Immovable Force (Telekinesis Discipline)</description>
                   </repeats>
                 </modifier>
               </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Pistol" id="7af1-1594-1b9d-ad83" hidden="false" sortIndex="2" defaultSelectionEntryId="497d-8cba-0a70-a080">
+              <entryLinks>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="497d-8cba-0a70-a080" type="selectionEntry" targetId="2942-f783-d627-33c5" defaultAmount="1" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3af-91e3-8083-0ed6-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Asphyx pistol" hidden="false" id="2a17-814b-831e-7a8e" type="selectionEntry" targetId="d293-df49-e8c3-f3bf">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b80f-b62d-f65c-6688"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="475e-e0bb-31d8-27ed"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f530-cabe-f7e8-6762"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
