@@ -246,6 +246,7 @@ Models subject to this Special Rule gain a benefit for each Legion that is sele
                       </selectionEntries>
                       <constraints>
                         <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="5d2f-8c45-2ca6-1d06"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="29d7-2eb2-4127-0203"/>
                       </constraints>
                       <modifiers>
                         <modifier type="set" value="2" field="5d2f-8c45-2ca6-1d06">
@@ -253,9 +254,14 @@ Models subject to this Special Rule gain a benefit for each Legion that is sele
                             <condition type="atLeast" value="1" field="selections" scope="64d0-7e1b-c6ae-bcc8" childId="6432-b18f-1ed1-dac8" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </modifier>
+                        <modifier type="set" value="3" field="29d7-2eb2-4127-0203">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="64d0-7e1b-c6ae-bcc8" childId="6432-b18f-1ed1-dac8" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
                       </modifiers>
                     </selectionEntryGroup>
-                    <selectionEntryGroup name="Number of Legions" id="4a69-9ae6-81e6-9f2b" hidden="false" sortIndex="1">
+                    <selectionEntryGroup name="Number of Legions" id="4a69-9ae6-81e6-9f2b" hidden="false" sortIndex="1" defaultSelectionEntryId="6432-b18f-1ed1-dac8">
                       <selectionEntries>
                         <selectionEntry type="upgrade" import="true" name="Two Legions plus Bound in Blood" hidden="false" id="6432-b18f-1ed1-dac8" sortIndex="1">
                           <constraints>
@@ -320,8 +326,16 @@ Models subject to this Special Rule gain a benefit for each Legion that is sele
               </constraints>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="8ae3-7a9a-4609-ee6a"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="70cd-bbbf-a0aa-011c"/>
+          </constraints>
         </entryLink>
       </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5774-c282-248d-6f10"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ac8-a940-af75-b0cb"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
