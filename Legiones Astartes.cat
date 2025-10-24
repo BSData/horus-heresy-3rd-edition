@@ -38411,6 +38411,17 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5d8-4df8-c3ce-ecd5" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Corvid Pattern Jump Pack</comment>
+                  <modifiers>
+                    <modifier type="set" value="Delegatus with Jump Pack" field="name"/>
+                    <modifier type="set" value="14" field="a106-a779-d272-5e93"/>
+                    <modifier type="replace" value=", Antigrav)" field="50fc-9241-d4a2-045b" arg=")"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="3f94-3ed7-02ee-0c1b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -38432,11 +38443,6 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="356f-a4a6-4f2a-b162"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0150-e5eb-444e-9de7"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Jump Pack" hidden="false" id="cd20-bcc4-761f-6540" type="selectionEntry" targetId="9e29-3097-e7b7-8f26" sortIndex="2">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7a8-88e9-3a4a-8266"/>
               </constraints>
             </entryLink>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="354b-1aaa-b9f4-6e98" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
@@ -38725,6 +38731,33 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   </conditions>
                 </modifier>
               </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Jump Pack" id="d637-336c-cea2-c1ec" hidden="false" flatten="true" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Corvid Pattern Jump Pack" hidden="true" id="3100-56ae-78cb-c6bf" type="selectionEntry" targetId="3f94-3ed7-02ee-0c1b" sortIndex="2">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="340c-1d4f-1f31-fb70" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Jump Pack" hidden="false" id="4d78-65b3-3f22-5d6b" type="selectionEntry" targetId="9e29-3097-e7b7-8f26" sortIndex="1"/>
+              </entryLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="da17-ab73-7d33-c76f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33b5-ba72-1724-9417"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
