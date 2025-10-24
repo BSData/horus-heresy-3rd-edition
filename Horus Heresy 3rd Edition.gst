@@ -657,17 +657,24 @@
     <categoryEntry name="Scions of the Flame" id="60ef-b3af-d4e6-9d6e" hidden="false"/>
     <categoryEntry name="Masters of Obfuscation" id="3381-191a-07f4-0dc3" hidden="false"/>
     <categoryEntry name="Assassination Tactics" id="4f9d-ebc3-b8b1-8991" hidden="false"/>
-    <categoryEntry name="EotL - Armour" id="cf42-ed5b-932e-6561" hidden="false"/>
-    <categoryEntry name="EotL - Elites" id="84a1-8818-844a-c491" hidden="false"/>
-    <categoryEntry name="EotL - Fast Attack" id="884c-2022-3e38-854b" hidden="false"/>
-    <categoryEntry name="EotL - Heavy Assault" id="a158-08e0-ba57-b8fc" hidden="false"/>
-    <categoryEntry name="EotL - Heavy Transport" id="15f1-6c48-e26f-d3b4" hidden="false"/>
-    <categoryEntry name="EotL - Recon" id="454d-bfda-d781-6eaa" hidden="false"/>
-    <categoryEntry name="EotL - Retinue" id="7f18-07b3-98a2-ba62" hidden="false"/>
-    <categoryEntry name="EotL - Support" id="09c9-269c-405b-6d7d" hidden="false"/>
-    <categoryEntry name="EotL - Transport" id="0d0c-4432-c20c-c81c" hidden="false"/>
-    <categoryEntry name="EotL - Troops" id="2ce9-a72d-d99f-0b68" hidden="false"/>
-    <categoryEntry name="EotL - War-engine" id="fc79-06d6-395a-d7a1" hidden="false"/>
+    <categoryEntry name="EotL - Alpha Legion" id="1252-6dc4-22d7-4a8f" hidden="true"/>
+    <categoryEntry name="EotL - Blood Angels" id="d819-0c9d-aad2-4238" hidden="true"/>
+    <categoryEntry name="EotL - Dark Angels" id="6c4f-19ae-d41f-377b" hidden="true"/>
+    <categoryEntry name="EotL - Death Guard" id="f6a9-02e2-ff4f-9583" hidden="true"/>
+    <categoryEntry name="EotL - Emperor&apos;s Children" id="5e33-e0a2-afb4-6fa7" hidden="true"/>
+    <categoryEntry name="EotL - Imperial Fists" id="6d50-f0f1-4c81-4fa5" hidden="true"/>
+    <categoryEntry name="EotL - Iron Hands" id="b8f3-a8cc-4b5f-38c7" hidden="true"/>
+    <categoryEntry name="EotL - Iron Warriors" id="d190-a268-afdd-6e11" hidden="true"/>
+    <categoryEntry name="EotL - Night Lords" id="72cb-1cf8-0e7d-51d2" hidden="true"/>
+    <categoryEntry name="EotL - Raven Guard" id="8fed-36a4-10bd-3fa5" hidden="true"/>
+    <categoryEntry name="EotL - Salamanders" id="acc7-7ab0-1b70-15c2" hidden="true"/>
+    <categoryEntry name="EotL - Sons of Horus" id="20ba-2d32-325b-0f43" hidden="true"/>
+    <categoryEntry name="EotL - Space Wolves" id="34b6-2cfd-313a-0eff" hidden="true"/>
+    <categoryEntry name="EotL - Thousand Sons" id="1992-9042-5894-f2dc" hidden="true"/>
+    <categoryEntry name="EotL - Ultramarines" id="bc4d-0973-2772-9330" hidden="true"/>
+    <categoryEntry name="EotL - White Scars" id="c89e-a6a3-9ac6-1283" hidden="true"/>
+    <categoryEntry name="EotL - Word Bearers" id="7712-7d17-1f9e-bf1f" hidden="true"/>
+    <categoryEntry name="EotL - World Eaters" id="d877-8b72-fd0b-1e4a" hidden="true"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
@@ -738,13 +745,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7f18-07b3-98a2-ba62" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="1282-cca8-1734-ecde">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="7f18-07b3-98a2-ba62" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="false"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -789,15 +790,9 @@
                       </conditionGroups>
                       <conditions>
                         <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
-                        <condition type="equalTo" value="0" field="selections" scope="force" childId="84a1-8818-844a-c491" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
-                </modifier>
-                <modifier type="increment" value="1" field="7781-66ec-ef3c-5e5f">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="84a1-8818-844a-c491" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="false"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -843,13 +838,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="fc79-06d6-395a-d7a1" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="2ee9-f61e-7a6f-b85c">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="fc79-06d6-395a-d7a1" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -893,11 +882,6 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="9494-a1b5-761e-ac60">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="2ce9-a72d-d99f-0b68" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -1235,13 +1219,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="09c9-269c-405b-6d7d" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="ec99-ce5e-9cd7-7fe8">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="09c9-269c-405b-6d7d" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -1265,11 +1243,6 @@
                     <repeat value="1" repeats="1" field="selections" scope="parent" childId="1bc1-e6ff-d62e-398e" shared="true" roundUp="false" includeChildSelections="true"/>
                   </repeats>
                 </modifier>
-                <modifier type="increment" value="1" field="5146-47d5-c98c-0d62">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="0d0c-4432-c20c-c81c" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Transport" hidden="false" id="e33f-6b66-6f27-680b" targetId="fc27-1a48-84ae-aa7b">
@@ -1290,13 +1263,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="a158-08e0-ba57-b8fc" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="165c-46a0-ec96-48a9">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="a158-08e0-ba57-b8fc" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -1318,13 +1285,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="ad55-0e60-66fe-a7a9" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="e0a4-0685-bd34-ae2d">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -1346,13 +1307,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="452c-5f76-e52f-64bb">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -1374,13 +1329,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="454d-bfda-d781-6eaa" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="ec8a-0fc8-7b71-3f68">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="454d-bfda-d781-6eaa" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -1402,13 +1351,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="d178-ad94-f564-d7d7">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -1542,6 +1485,312 @@
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
                     <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - World Eaters" hidden="false" id="f504-3b7d-9ea4-901b" targetId="d877-8b72-fd0b-1e4a">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6a9b-0b3a-c75c-0863"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="6a9b-0b3a-c75c-0863">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="d877-8b72-fd0b-1e4a" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d877-8b72-fd0b-1e4a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Dark Angels" hidden="false" id="cbb2-c0e9-1962-7176" targetId="6c4f-19ae-d41f-377b">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="cb01-9383-62ee-5264"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="cb01-9383-62ee-5264">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="6c4f-19ae-d41f-377b" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6c4f-19ae-d41f-377b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Alpha Legion" hidden="false" id="dae3-5bc3-96c3-5547" targetId="1252-6dc4-22d7-4a8f">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="45e0-4d87-82c2-ccc7"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="45e0-4d87-82c2-ccc7">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="1252-6dc4-22d7-4a8f" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1252-6dc4-22d7-4a8f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Blood Angels" hidden="false" id="ce25-5589-20e2-0e6d" targetId="d819-0c9d-aad2-4238">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3aed-89c6-3325-c78b"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="3aed-89c6-3325-c78b">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="d819-0c9d-aad2-4238" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d819-0c9d-aad2-4238" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Death Guard" hidden="false" id="8144-55f5-dd72-7f5a" targetId="f6a9-02e2-ff4f-9583">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5c7d-4698-d50f-4280"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="5c7d-4698-d50f-4280">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="f6a9-02e2-ff4f-9583" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f6a9-02e2-ff4f-9583" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Emperor&apos;s Children" hidden="false" id="1bc1-92ad-610e-ff77" targetId="5e33-e0a2-afb4-6fa7">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3e3b-d9b3-8737-e923"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="3e3b-d9b3-8737-e923">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="5e33-e0a2-afb4-6fa7" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="5e33-e0a2-afb4-6fa7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Imperial Fists" hidden="false" id="74a6-aca3-b7b4-0e85" targetId="6d50-f0f1-4c81-4fa5">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="206a-f2e9-9a9a-5f69"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="206a-f2e9-9a9a-5f69">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="6d50-f0f1-4c81-4fa5" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6d50-f0f1-4c81-4fa5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Iron Hands" hidden="false" id="dbe4-728e-65fb-6836" targetId="b8f3-a8cc-4b5f-38c7">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1506-64a5-4995-dc3a"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="1506-64a5-4995-dc3a">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="b8f3-a8cc-4b5f-38c7" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="b8f3-a8cc-4b5f-38c7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Iron Warriors" hidden="false" id="6729-dd50-cdd5-1d99" targetId="d190-a268-afdd-6e11">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e917-cd03-6940-ba64"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="e917-cd03-6940-ba64">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="d190-a268-afdd-6e11" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d190-a268-afdd-6e11" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Night Lords" hidden="false" id="2ea8-b323-3b7b-914a" targetId="72cb-1cf8-0e7d-51d2">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7540-303a-7f86-dec9"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="7540-303a-7f86-dec9">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="72cb-1cf8-0e7d-51d2" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="72cb-1cf8-0e7d-51d2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Raven Guard" hidden="false" id="3984-a465-e3c3-a42d" targetId="8fed-36a4-10bd-3fa5">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="82f1-90bb-2129-7599"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="82f1-90bb-2129-7599">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="8fed-36a4-10bd-3fa5" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="8fed-36a4-10bd-3fa5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Salamanders" hidden="false" id="e590-c411-1661-890c" targetId="acc7-7ab0-1b70-15c2">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="20cf-b11c-3f51-fc95"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="20cf-b11c-3f51-fc95">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="acc7-7ab0-1b70-15c2" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="acc7-7ab0-1b70-15c2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Sons of Horus" hidden="false" id="494a-bbc8-911d-d248" targetId="20ba-2d32-325b-0f43">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2b0c-d875-db6e-8361"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="2b0c-d875-db6e-8361">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="20ba-2d32-325b-0f43" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="20ba-2d32-325b-0f43" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Space Wolves" hidden="false" id="da27-5608-cad8-da11" targetId="34b6-2cfd-313a-0eff">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8aa1-35c8-99cc-5929"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="8aa1-35c8-99cc-5929">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="34b6-2cfd-313a-0eff" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="34b6-2cfd-313a-0eff" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Thousand Sons" hidden="false" id="5981-de58-ed51-4eec" targetId="1992-9042-5894-f2dc">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3153-7dfa-b4c9-a44c"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="3153-7dfa-b4c9-a44c">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="1992-9042-5894-f2dc" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1992-9042-5894-f2dc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Ultramarines" hidden="false" id="ef95-4572-a898-1b87" targetId="bc4d-0973-2772-9330">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9f5d-dbe3-c8de-d452"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="9f5d-dbe3-c8de-d452">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="bc4d-0973-2772-9330" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="bc4d-0973-2772-9330" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - White Scars" hidden="false" id="db39-7033-d698-ebaf" targetId="c89e-a6a3-9ac6-1283">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a766-191c-e25e-2f8e"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="a766-191c-e25e-2f8e">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="c89e-a6a3-9ac6-1283" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c89e-a6a3-9ac6-1283" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Word Bearers" hidden="false" id="cee8-2dc5-da80-f5da" targetId="7712-7d17-1f9e-bf1f">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5faf-907d-4629-9f50"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="5faf-907d-4629-9f50">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="7712-7d17-1f9e-bf1f" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="7712-7d17-1f9e-bf1f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4674,11 +4923,6 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" value="1" field="1db1-f89e-9696-63d6">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="7f18-07b3-98a2-ba62" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Retinue" hidden="false" id="3f66-4174-2fab-be6b" targetId="c66b-ef39-b20f-725b">
@@ -4752,13 +4996,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="09c9-269c-405b-6d7d" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="aba2-6e76-2f18-7c10">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="09c9-269c-405b-6d7d" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -4775,13 +5013,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="a158-08e0-ba57-b8fc" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="dceb-8c43-4081-faee">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="a158-08e0-ba57-b8fc" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -4798,13 +5030,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="ad55-0e60-66fe-a7a9" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="b663-b7ab-15bd-47b7">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -4821,13 +5047,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="03f6-b2c3-ed10-dc78">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -4844,13 +5064,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="454d-bfda-d781-6eaa" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="c9bc-f431-3288-f12e">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="454d-bfda-d781-6eaa" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -4867,13 +5081,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="0657-8ac0-078d-92a6">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -4890,13 +5098,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="fc79-06d6-395a-d7a1" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="46ed-923e-06d5-d74a">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="fc79-06d6-395a-d7a1" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -4913,13 +5115,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ce9-a72d-d99f-0b68" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="f220-c6f4-b164-de64">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="2ce9-a72d-d99f-0b68" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -4936,13 +5132,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="84a1-8818-844a-c491" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="eef5-00d2-a6b6-10ef">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="84a1-8818-844a-c491" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -4959,13 +5149,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="0d0c-4432-c20c-c81c" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="cb8d-62a9-761f-bbb0">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="0d0c-4432-c20c-c81c" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -5491,13 +5675,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7f18-07b3-98a2-ba62" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="a230-8c1d-94db-66c9">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="7f18-07b3-98a2-ba62" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -5514,13 +5692,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="09c9-269c-405b-6d7d" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="0e2b-860e-6c15-c7df">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="09c9-269c-405b-6d7d" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -5537,13 +5709,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="a158-08e0-ba57-b8fc" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="843a-418a-bb12-d07a">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="a158-08e0-ba57-b8fc" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -5560,13 +5726,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="ad55-0e60-66fe-a7a9" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="d687-e321-f4e4-701f">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -5583,13 +5743,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="9800-2a6d-f221-4866">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -5606,13 +5760,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="454d-bfda-d781-6eaa" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="510a-d378-76f0-ae12">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="454d-bfda-d781-6eaa" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -5629,13 +5777,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="5ae8-1160-0d18-76a3">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -5652,13 +5794,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="fc79-06d6-395a-d7a1" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="7523-e0a7-6dc9-16bb">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="fc79-06d6-395a-d7a1" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -5675,13 +5811,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ce9-a72d-d99f-0b68" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="7a0b-a519-41d3-c851">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="2ce9-a72d-d99f-0b68" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -5698,13 +5828,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="84a1-8818-844a-c491" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="9f32-0f70-ad71-7de3">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="84a1-8818-844a-c491" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -5721,13 +5845,313 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="0d0c-4432-c20c-c81c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" value="1" field="0dff-e1bc-b516-1aae">
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - World Eaters" hidden="false" id="5851-d8bb-94c1-14bd" targetId="d877-8b72-fd0b-1e4a">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bf85-7d30-9945-06c1"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="bf85-7d30-9945-06c1">
                   <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="0d0c-4432-c20c-c81c" shared="true" roundUp="false" includeChildSelections="true"/>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="d877-8b72-fd0b-1e4a" shared="true" roundUp="false" includeChildSelections="true"/>
                   </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d877-8b72-fd0b-1e4a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Dark Angels" hidden="false" id="07bd-fdda-12d7-2ce5" targetId="6c4f-19ae-d41f-377b">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="607f-8491-8df1-d3d1"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="607f-8491-8df1-d3d1">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="6c4f-19ae-d41f-377b" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6c4f-19ae-d41f-377b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Alpha Legion" hidden="false" id="cc92-1b20-d212-9c08" targetId="1252-6dc4-22d7-4a8f">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1992-054b-1713-ff4e"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="1992-054b-1713-ff4e">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="1252-6dc4-22d7-4a8f" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1252-6dc4-22d7-4a8f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Blood Angels" hidden="false" id="6dbf-2862-c3e1-aa4b" targetId="d819-0c9d-aad2-4238">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7fe8-4012-7d25-c66a"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="7fe8-4012-7d25-c66a">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="d819-0c9d-aad2-4238" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d819-0c9d-aad2-4238" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Death Guard" hidden="false" id="d718-26c3-434f-8ecb" targetId="f6a9-02e2-ff4f-9583">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3bba-91ca-39d9-2f86"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="3bba-91ca-39d9-2f86">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="f6a9-02e2-ff4f-9583" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f6a9-02e2-ff4f-9583" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Emperor&apos;s Children" hidden="false" id="b3af-be4a-8e1c-d094" targetId="5e33-e0a2-afb4-6fa7">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="887b-00c1-8d3b-8d03"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="887b-00c1-8d3b-8d03">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="5e33-e0a2-afb4-6fa7" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="5e33-e0a2-afb4-6fa7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Imperial Fists" hidden="false" id="8795-ec8a-8133-b0bb" targetId="6d50-f0f1-4c81-4fa5">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="58a5-ce20-8bc5-986a"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="58a5-ce20-8bc5-986a">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="6d50-f0f1-4c81-4fa5" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6d50-f0f1-4c81-4fa5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Iron Hands" hidden="false" id="86f3-876e-7f36-e27a" targetId="b8f3-a8cc-4b5f-38c7">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ddd7-3b67-d9fc-d9f9"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="ddd7-3b67-d9fc-d9f9">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="b8f3-a8cc-4b5f-38c7" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="b8f3-a8cc-4b5f-38c7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Iron Warriors" hidden="false" id="ac25-6319-d501-bf75" targetId="d190-a268-afdd-6e11">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1d63-11ec-f874-379d"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="1d63-11ec-f874-379d">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="d190-a268-afdd-6e11" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d190-a268-afdd-6e11" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Night Lords" hidden="false" id="82bd-f4cc-e489-5663" targetId="72cb-1cf8-0e7d-51d2">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a9a1-d54c-7677-0c97"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="a9a1-d54c-7677-0c97">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="72cb-1cf8-0e7d-51d2" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="72cb-1cf8-0e7d-51d2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Raven Guard" hidden="false" id="bd25-0bb8-a00f-67fc" targetId="8fed-36a4-10bd-3fa5">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1cd0-4158-94e3-ef29"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="1cd0-4158-94e3-ef29">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="8fed-36a4-10bd-3fa5" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="8fed-36a4-10bd-3fa5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Salamanders" hidden="false" id="195a-5e61-4865-a3c9" targetId="acc7-7ab0-1b70-15c2">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5a5c-273f-6b39-f19a"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="5a5c-273f-6b39-f19a">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="acc7-7ab0-1b70-15c2" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="acc7-7ab0-1b70-15c2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Sons of Horus" hidden="false" id="99e4-647d-9724-f22a" targetId="20ba-2d32-325b-0f43">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2960-48d6-6cae-73f2"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="2960-48d6-6cae-73f2">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="20ba-2d32-325b-0f43" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="20ba-2d32-325b-0f43" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Space Wolves" hidden="false" id="2f4c-a1af-ed28-eb4b" targetId="34b6-2cfd-313a-0eff">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d274-6c0c-835c-57ff"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="d274-6c0c-835c-57ff">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="34b6-2cfd-313a-0eff" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="34b6-2cfd-313a-0eff" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Thousand Sons" hidden="false" id="3bf9-45c9-0c1a-1126" targetId="1992-9042-5894-f2dc">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f5cc-8f4e-cc83-f78f"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="f5cc-8f4e-cc83-f78f">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="1992-9042-5894-f2dc" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1992-9042-5894-f2dc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Ultramarines" hidden="false" id="f89a-50d6-9bd4-eb46" targetId="bc4d-0973-2772-9330">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="30d6-39b4-f224-453c"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="30d6-39b4-f224-453c">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="bc4d-0973-2772-9330" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="bc4d-0973-2772-9330" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - White Scars" hidden="false" id="b698-7975-b473-ebea" targetId="c89e-a6a3-9ac6-1283">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0aad-e03a-8da9-2b70"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="0aad-e03a-8da9-2b70">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="c89e-a6a3-9ac6-1283" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c89e-a6a3-9ac6-1283" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Word Bearers" hidden="false" id="4c10-33cb-3ab7-2207" targetId="7712-7d17-1f9e-bf1f">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c8a1-0dd0-755e-7954"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="c8a1-0dd0-755e-7954">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="7712-7d17-1f9e-bf1f" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="7712-7d17-1f9e-bf1f" shared="true" includeChildSelections="true"/>
+                  </conditions>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -5918,15 +6342,13 @@
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c195-9a6a-a56b-4634" shared="true"/>
                       </conditions>
                       <comment>Blackshields</comment>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3256-29e9-1d7a-12a7" shared="true"/>
-                            <condition type="instanceOf" value="1" field="selections" scope="parent" childId="3256-29e9-1d7a-12a7" shared="true"/>
-                          </conditions>
-                          <comment>Shattered Legions</comment>
-                        </conditionGroup>
-                      </conditionGroups>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3256-29e9-1d7a-12a7" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="3256-29e9-1d7a-12a7" shared="true"/>
+                      </conditions>
+                      <comment>Shattered Legions</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -6102,11 +6524,6 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" value="1" field="e18d-e184-3839-07de">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="84a1-8818-844a-c491" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Elites" hidden="false" id="0332-775c-4ee8-0f25" targetId="276f-7a07-a56c-affd">
@@ -6175,13 +6592,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7f18-07b3-98a2-ba62" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="52be-9d04-4ad8-2d24">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="7f18-07b3-98a2-ba62" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -6198,13 +6609,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="09c9-269c-405b-6d7d" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="50a0-82aa-db84-94a2">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="09c9-269c-405b-6d7d" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -6221,13 +6626,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="a158-08e0-ba57-b8fc" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="0d17-e0c4-cd2e-481e">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="a158-08e0-ba57-b8fc" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -6244,13 +6643,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="ad55-0e60-66fe-a7a9" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="9d95-e827-c4b6-e844">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -6267,13 +6660,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="cacb-3516-635b-83ef">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -6290,13 +6677,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="454d-bfda-d781-6eaa" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="61bd-4181-ce24-dbc4">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="454d-bfda-d781-6eaa" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -6313,13 +6694,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="4c9e-d629-3312-1ae1">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -6336,13 +6711,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="fc79-06d6-395a-d7a1" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="74c8-9d75-feea-7664">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="fc79-06d6-395a-d7a1" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -6359,13 +6728,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ce9-a72d-d99f-0b68" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="ba21-6370-4fd4-57a7">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="2ce9-a72d-d99f-0b68" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -6382,13 +6745,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="0d0c-4432-c20c-c81c" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="eb79-4c4e-3e7e-f50b">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="0d0c-4432-c20c-c81c" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -17383,11 +17740,6 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" value="1" field="399a-151b-e3cc-3930">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="09c9-269c-405b-6d7d" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Support" hidden="false" id="f5cf-f5a9-8068-5212" targetId="1c79-ecdf-9a64-84c9">
@@ -17467,13 +17819,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7f18-07b3-98a2-ba62" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="9131-3b69-4da9-9d86">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="7f18-07b3-98a2-ba62" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -17490,13 +17836,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="a158-08e0-ba57-b8fc" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="2bd7-5c66-5024-43f2">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="a158-08e0-ba57-b8fc" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -17513,13 +17853,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="ad55-0e60-66fe-a7a9" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="7ba9-10a7-1246-e6a1">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -17536,13 +17870,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="52ee-5108-5a22-a87a">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -17559,13 +17887,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="454d-bfda-d781-6eaa" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="b73f-3c70-ac1d-df93">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="454d-bfda-d781-6eaa" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -17582,13 +17904,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="51e5-b22a-0a14-5e02">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -17605,13 +17921,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="fc79-06d6-395a-d7a1" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="6a36-7007-c4e6-b57a">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="fc79-06d6-395a-d7a1" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -17628,13 +17938,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ce9-a72d-d99f-0b68" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="0154-9099-0d18-4d27">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="2ce9-a72d-d99f-0b68" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -17651,13 +17955,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="84a1-8818-844a-c491" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="53c6-d9a1-9a67-2853">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="84a1-8818-844a-c491" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -17674,13 +17972,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="0d0c-4432-c20c-c81c" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="7a81-3d33-9021-4a69">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="0d0c-4432-c20c-c81c" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -17865,11 +18157,6 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" value="1" field="7ca5-a0b5-47a5-8387">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="09c9-269c-405b-6d7d" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Support" hidden="false" id="09a3-d71b-06d8-d3a9" targetId="1c79-ecdf-9a64-84c9">
@@ -17949,13 +18236,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7f18-07b3-98a2-ba62" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="3fd8-16f7-54c8-5f20">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="7f18-07b3-98a2-ba62" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -17972,13 +18253,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="a158-08e0-ba57-b8fc" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="42b7-7590-2ff0-0565">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="a158-08e0-ba57-b8fc" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -17995,13 +18270,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="ad55-0e60-66fe-a7a9" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="53c5-716e-a7d6-2fa3">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -18018,13 +18287,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="2157-afa8-c081-83ee">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -18041,13 +18304,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="454d-bfda-d781-6eaa" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="c768-09fb-8cfa-9fc0">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="454d-bfda-d781-6eaa" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -18064,13 +18321,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="1834-e447-5f66-2327">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -18087,13 +18338,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="fc79-06d6-395a-d7a1" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="b8d4-a345-0f8d-ac47">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="fc79-06d6-395a-d7a1" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -18110,13 +18355,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ce9-a72d-d99f-0b68" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="0abc-bb08-fdb5-af5c">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="2ce9-a72d-d99f-0b68" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -18133,13 +18372,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="84a1-8818-844a-c491" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="4b8c-ec49-2d8a-45ff">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="84a1-8818-844a-c491" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -18156,13 +18389,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="0d0c-4432-c20c-c81c" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="1e8d-e2a3-1281-2962">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="0d0c-4432-c20c-c81c" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -18562,11 +18789,6 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" value="1" field="85de-faa2-8303-a76b">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="454d-bfda-d781-6eaa" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Retinue" hidden="false" id="f424-4a20-0291-7845" targetId="c66b-ef39-b20f-725b">
@@ -18646,13 +18868,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7f18-07b3-98a2-ba62" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="7d25-3015-9f28-09f4">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="7f18-07b3-98a2-ba62" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -18669,13 +18885,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="a158-08e0-ba57-b8fc" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="6e72-6d94-9b83-46a8">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="a158-08e0-ba57-b8fc" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -18692,13 +18902,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="ad55-0e60-66fe-a7a9" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="6eed-e6f1-5406-9582">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -18715,13 +18919,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="1517-e6e1-c6d9-e356">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -18738,13 +18936,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="e9e2-03bd-0542-1120">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -18761,13 +18953,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="fc79-06d6-395a-d7a1" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="80db-15a4-5ca7-708f">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="fc79-06d6-395a-d7a1" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -18784,13 +18970,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ce9-a72d-d99f-0b68" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="d678-9b38-f2ed-e221">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="2ce9-a72d-d99f-0b68" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -18807,13 +18987,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="84a1-8818-844a-c491" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="6c7f-0ef2-9d12-b651">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="84a1-8818-844a-c491" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -18830,13 +19004,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="0d0c-4432-c20c-c81c" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="973d-22a2-c906-69d4">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="0d0c-4432-c20c-c81c" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -18853,13 +19021,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="09c9-269c-405b-6d7d" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="6dad-e3fa-a38e-93db">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="09c9-269c-405b-6d7d" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -21506,11 +21668,6 @@
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" value="1" field="012f-6fff-4a20-808b">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="a158-08e0-ba57-b8fc" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Retinue - Saturnine Only" hidden="false" id="f1e4-ce6a-7ac1-0965" targetId="4757-3241-ca42-c64c">
@@ -21522,11 +21679,6 @@
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="5987-3968-0d68-5245">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="7f18-07b3-98a2-ba62" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -21543,13 +21695,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="09c9-269c-405b-6d7d" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="d9ef-3c11-543b-57af">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="09c9-269c-405b-6d7d" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -21566,13 +21712,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="ad55-0e60-66fe-a7a9" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="7bda-7a22-9514-4f1c">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -21589,13 +21729,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="4670-9503-a332-8693">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -21612,13 +21746,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="454d-bfda-d781-6eaa" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="5b8c-e55c-301a-1d23">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="454d-bfda-d781-6eaa" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -21635,13 +21763,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="ab4b-2f1f-4b41-eb4b">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -21658,13 +21780,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ce9-a72d-d99f-0b68" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="842f-7c7b-17ac-a285">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="2ce9-a72d-d99f-0b68" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -21681,13 +21797,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="0d0c-4432-c20c-c81c" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="da1b-c761-2d2e-0d33">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="0d0c-4432-c20c-c81c" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -21704,13 +21814,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="84a1-8818-844a-c491" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="3c1e-3e89-ce2f-e753">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="84a1-8818-844a-c491" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -21723,11 +21827,6 @@
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="1232-5d26-3f71-7528">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="fc79-06d6-395a-d7a1" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="false"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -21999,11 +22098,6 @@
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" value="1" field="b059-19ed-d2d0-3f9c">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="a158-08e0-ba57-b8fc" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Retinue - Cataphractii Only" hidden="false" id="b71a-cf47-a216-e5ab" targetId="308f-e6d5-9133-fdc0">
@@ -22015,11 +22109,6 @@
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="0968-6e1c-fe3b-1ae2">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="7f18-07b3-98a2-ba62" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -22036,13 +22125,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="09c9-269c-405b-6d7d" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="e320-e154-f002-d7b2">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="09c9-269c-405b-6d7d" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -22059,13 +22142,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="ad55-0e60-66fe-a7a9" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="8419-640a-5663-7156">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -22082,13 +22159,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="f5ae-d77f-8ddf-2c9f">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -22105,13 +22176,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="454d-bfda-d781-6eaa" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="34d0-2cf6-5965-2c5b">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="454d-bfda-d781-6eaa" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -22128,13 +22193,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="2fd6-7271-0923-4438">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -22151,13 +22210,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ce9-a72d-d99f-0b68" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="b4b1-968e-fafa-722c">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="2ce9-a72d-d99f-0b68" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -22174,13 +22227,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="0d0c-4432-c20c-c81c" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="4cf4-5e8c-9302-fa0a">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="0d0c-4432-c20c-c81c" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -22197,13 +22244,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="84a1-8818-844a-c491" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="48a6-d72b-c668-4239">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="84a1-8818-844a-c491" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -22216,11 +22257,6 @@
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="9628-2fa9-b18e-353c">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="fc79-06d6-395a-d7a1" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="false"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -22475,11 +22511,6 @@
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" value="1" field="fcca-129a-3b18-7393">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="a158-08e0-ba57-b8fc" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Retinue - Tartaros Only" hidden="false" id="6431-a6a9-ebd7-cfd7" targetId="2be1-bf88-59df-0338">
@@ -22491,11 +22522,6 @@
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="db30-7918-0899-daac">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="7f18-07b3-98a2-ba62" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -22512,13 +22538,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="09c9-269c-405b-6d7d" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="3b98-a9ea-27bf-c217">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="09c9-269c-405b-6d7d" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -22535,13 +22555,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="ad55-0e60-66fe-a7a9" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="b810-1a1b-e4c2-3dac">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -22558,13 +22572,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="f117-fba6-4cb4-a004">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -22581,13 +22589,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="454d-bfda-d781-6eaa" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="9b0e-f353-0276-468c">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="454d-bfda-d781-6eaa" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -22604,13 +22606,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="964e-9e9f-a020-d3d0">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -22627,13 +22623,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ce9-a72d-d99f-0b68" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="e226-a64a-c83b-2b1e">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="2ce9-a72d-d99f-0b68" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -22650,13 +22640,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="0d0c-4432-c20c-c81c" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="9f8f-6cd1-f301-c881">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="0d0c-4432-c20c-c81c" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -22673,13 +22657,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="84a1-8818-844a-c491" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="12ee-465d-13ee-2943">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="84a1-8818-844a-c491" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -22692,11 +22670,6 @@
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="6a04-3103-f33f-25e6">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="fc79-06d6-395a-d7a1" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="false"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -22880,11 +22853,6 @@
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" value="1" field="5de9-c8d4-9ee7-d735">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="09c9-269c-405b-6d7d" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Recon - Tarantula Battery Units Only" hidden="false" id="af25-7bfa-307b-c317" targetId="6177-f967-f944-a7bd">
@@ -22896,11 +22864,6 @@
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="18bd-a570-31e2-d4f0">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="454d-bfda-d781-6eaa" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -22986,13 +22949,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="ad55-0e60-66fe-a7a9" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="4f96-1fae-2808-babb">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -23009,13 +22966,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="9322-c3e6-b3a3-2383">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -23032,13 +22983,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="54c6-9f6f-6dd6-819d">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -23055,13 +23000,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="2ce9-a72d-d99f-0b68" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="ff75-d14f-6e67-ebbf">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="2ce9-a72d-d99f-0b68" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -23078,13 +23017,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="0d0c-4432-c20c-c81c" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="617c-4547-198f-d446">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="0d0c-4432-c20c-c81c" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -23101,13 +23034,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="84a1-8818-844a-c491" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="9d0d-08e3-db97-6cca">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="84a1-8818-844a-c491" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -23124,13 +23051,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="a158-08e0-ba57-b8fc" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="271c-d931-4e10-40c8">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="a158-08e0-ba57-b8fc" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -23147,13 +23068,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7f18-07b3-98a2-ba62" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="c7cf-7651-44bb-6257">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="7f18-07b3-98a2-ba62" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -23662,7 +23577,6 @@
                       </conditionGroups>
                       <conditions>
                         <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
-                        <condition type="equalTo" value="0" field="selections" scope="force" childId="84a1-8818-844a-c491" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -23672,11 +23586,6 @@
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
                     <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="543d-afbf-acca-d834">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="84a1-8818-844a-c491" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -23724,11 +23633,6 @@
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
                     <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="01a3-4258-494b-cbea">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="2ce9-a72d-d99f-0b68" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -23880,13 +23784,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="ad55-0e60-66fe-a7a9" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="1ba7-de5e-dcaa-eb2e">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="15f1-6c48-e26f-d3b4" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -23903,13 +23801,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="006d-28fc-459c-b8af">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="cf42-ed5b-932e-6561" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -23926,13 +23818,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="e750-e4d6-396b-65d0">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="884c-2022-3e38-854b" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -23949,13 +23835,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="0d0c-4432-c20c-c81c" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="1224-92a1-4dfb-2883">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="0d0c-4432-c20c-c81c" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -23972,13 +23852,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="a158-08e0-ba57-b8fc" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="3733-f950-a471-131b">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="a158-08e0-ba57-b8fc" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -23995,13 +23869,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="7f18-07b3-98a2-ba62" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="ab92-c3db-da66-d3c7">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="7f18-07b3-98a2-ba62" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -24018,13 +23886,7 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="454d-bfda-d781-6eaa" shared="true" includeChildSelections="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="fb87-7b14-ef44-014b">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="454d-bfda-d781-6eaa" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
                 </modifier>
               </modifiers>
             </categoryLink>
@@ -24041,13 +23903,313 @@
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="09c9-269c-405b-6d7d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" value="1" field="2e05-2c2c-5d19-40a3">
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Dark Angels" hidden="false" id="9b74-7bf6-700c-674f" targetId="6c4f-19ae-d41f-377b">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1aef-f864-317d-aa7d"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="1aef-f864-317d-aa7d">
                   <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="09c9-269c-405b-6d7d" shared="true" roundUp="false" includeChildSelections="true"/>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="6c4f-19ae-d41f-377b" shared="true" roundUp="false" includeChildSelections="true"/>
                   </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6c4f-19ae-d41f-377b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Alpha Legion" hidden="false" id="e836-eb06-882b-5012" targetId="1252-6dc4-22d7-4a8f">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c4c7-8ddb-f65b-413a"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="c4c7-8ddb-f65b-413a">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="1252-6dc4-22d7-4a8f" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1252-6dc4-22d7-4a8f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Blood Angels" hidden="false" id="2b5c-0752-dbf2-cdda" targetId="d819-0c9d-aad2-4238">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f57a-ef88-de41-f3c5"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="f57a-ef88-de41-f3c5">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="d819-0c9d-aad2-4238" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d819-0c9d-aad2-4238" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Death Guard" hidden="false" id="63e0-9248-2aad-4c45" targetId="f6a9-02e2-ff4f-9583">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="56ff-f305-823e-0261"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="56ff-f305-823e-0261">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="f6a9-02e2-ff4f-9583" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="f6a9-02e2-ff4f-9583" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Emperor&apos;s Children" hidden="false" id="4b5b-4c17-4f70-7182" targetId="5e33-e0a2-afb4-6fa7">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0424-9124-26ee-71f8"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="0424-9124-26ee-71f8">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="5e33-e0a2-afb4-6fa7" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="5e33-e0a2-afb4-6fa7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Imperial Fists" hidden="false" id="3bf3-32db-ac77-e5f5" targetId="6d50-f0f1-4c81-4fa5">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1847-61d7-2949-0b14"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="1847-61d7-2949-0b14">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="6d50-f0f1-4c81-4fa5" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="6d50-f0f1-4c81-4fa5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Iron Hands" hidden="false" id="8bdb-ceac-5fbf-aff2" targetId="b8f3-a8cc-4b5f-38c7">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f7df-6399-f77d-8ae2"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="f7df-6399-f77d-8ae2">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="b8f3-a8cc-4b5f-38c7" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="b8f3-a8cc-4b5f-38c7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Iron Warriors" hidden="false" id="a20d-75cb-1d99-8806" targetId="d190-a268-afdd-6e11">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="67f1-4068-a1bb-3950"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="67f1-4068-a1bb-3950">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="d190-a268-afdd-6e11" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d190-a268-afdd-6e11" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Night Lords" hidden="false" id="b27b-e8e1-a471-0115" targetId="72cb-1cf8-0e7d-51d2">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="453d-918d-fa32-ece8"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="453d-918d-fa32-ece8">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="72cb-1cf8-0e7d-51d2" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="72cb-1cf8-0e7d-51d2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Raven Guard" hidden="false" id="b36c-a222-51a3-825e" targetId="8fed-36a4-10bd-3fa5">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f94f-f208-84dd-bcc4"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="f94f-f208-84dd-bcc4">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="8fed-36a4-10bd-3fa5" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="8fed-36a4-10bd-3fa5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Salamanders" hidden="false" id="6d15-880f-9ff8-b184" targetId="acc7-7ab0-1b70-15c2">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8c45-6c96-1205-6e6a"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="8c45-6c96-1205-6e6a">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="acc7-7ab0-1b70-15c2" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="acc7-7ab0-1b70-15c2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Sons of Horus" hidden="false" id="ab63-77eb-ddde-e1a3" targetId="20ba-2d32-325b-0f43">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f107-2728-0251-d3f3"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="f107-2728-0251-d3f3">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="20ba-2d32-325b-0f43" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="20ba-2d32-325b-0f43" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Space Wolves" hidden="false" id="ec72-c931-04df-e804" targetId="34b6-2cfd-313a-0eff">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bb83-15de-c447-bdd3"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="bb83-15de-c447-bdd3">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="34b6-2cfd-313a-0eff" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="34b6-2cfd-313a-0eff" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Thousand Sons" hidden="false" id="5001-7bc3-14f0-33e8" targetId="1992-9042-5894-f2dc">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b334-b38a-f1ae-c5d6"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="b334-b38a-f1ae-c5d6">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="1992-9042-5894-f2dc" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1992-9042-5894-f2dc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Ultramarines" hidden="false" id="920f-2910-af0b-14ed" targetId="bc4d-0973-2772-9330">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4911-5b57-b699-c904"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="4911-5b57-b699-c904">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="bc4d-0973-2772-9330" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="bc4d-0973-2772-9330" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - White Scars" hidden="false" id="6fbc-26b7-2217-534f" targetId="c89e-a6a3-9ac6-1283">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1578-0a6c-6591-8cd1"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="1578-0a6c-6591-8cd1">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="c89e-a6a3-9ac6-1283" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="c89e-a6a3-9ac6-1283" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - Word Bearers" hidden="false" id="11ad-b3d9-4794-60c4" targetId="7712-7d17-1f9e-bf1f">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a244-5324-f4e8-c973"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="a244-5324-f4e8-c973">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="7712-7d17-1f9e-bf1f" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="7712-7d17-1f9e-bf1f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - World Eaters" hidden="false" id="2740-b482-af68-725b" targetId="d877-8b72-fd0b-1e4a">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5cb7-3cab-24d5-2041"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="5cb7-3cab-24d5-2041">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="d877-8b72-fd0b-1e4a" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d877-8b72-fd0b-1e4a" shared="true" includeChildSelections="true"/>
+                  </conditions>
                 </modifier>
               </modifiers>
             </categoryLink>
