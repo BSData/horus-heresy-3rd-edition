@@ -8413,15 +8413,6 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Oath(s) of Moment" hidden="true" id="313e-4ed2-efd7-5dd9" type="selectionEntryGroup" targetId="fd0c-8569-5b52-0ce8"/>
-            <entryLink import="true" name="Shattered Legion Armoury Selection" hidden="true" id="17e3-1bf2-fabe-5d7c" type="selectionEntryGroup" targetId="31b5-9fab-39ba-b1ab" sortIndex="1">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
@@ -8726,15 +8717,6 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
           <entryLinks>
             <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="c0c6-5d34-c8de-248e" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
             <entryLink import="true" name="Oath(s) of Moment" hidden="true" id="8324-2008-95f0-7c74" type="selectionEntryGroup" targetId="fd0c-8569-5b52-0ce8"/>
-            <entryLink import="true" name="Shattered Legion Armoury Selection" hidden="true" id="1e8d-d1fd-8afa-c5dc" type="selectionEntryGroup" targetId="31b5-9fab-39ba-b1ab" sortIndex="1">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -13509,44 +13491,6 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
             <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="a132-7070-7e03-46c1" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="9"/>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="3cf7-be3a-ac2e-57a7" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50" sortIndex="10"/>
             <entryLink import="true" name="Cult Arcana" hidden="true" id="d3ff-7c12-a471-6c5b" type="selectionEntry" targetId="1799-d9ae-6aa7-4ff0"/>
-            <entryLink import="true" name="Thunder hammer" hidden="false" id="8aa5-4e94-81fd-c512" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="3">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b8ec-88d2-5545-b30d" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce79-8d46-6288-9897" automatic="true"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="0" field="b8ec-88d2-5545-b30d">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="0" field="ce79-8d46-6288-9897">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </entryLink>
             <entryLink import="true" name="Shattered Legion Armoury Selection" hidden="true" id="cd72-06d9-b909-8285" type="selectionEntryGroup" targetId="31b5-9fab-39ba-b1ab" sortIndex="1">
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -13617,7 +13561,7 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b65-f687-7cd7-17fa" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Options" id="a7a1-50ed-edf2-8765" hidden="true" flatten="false" sortIndex="3">
+            <selectionEntryGroup name="Options" id="a7a1-50ed-edf2-8765" hidden="false" flatten="true" sortIndex="3" defaultSelectionEntryId="0d92-b5f0-b320-24d6">
               <entryLinks>
                 <entryLink import="true" name="Thunder hammer" hidden="false" id="0d92-b5f0-b320-24d6" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="1">
                   <constraints>
@@ -13632,9 +13576,6 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                     <modifier type="set" value="false" field="hidden">
                       <conditionGroups>
                         <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                          </conditions>
                           <comment>SL</comment>
                           <conditionGroups>
                             <conditionGroup type="or">
@@ -13642,6 +13583,25 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="or">
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="fde7-fb71-1ecc-7365" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="model" childId="0320-4ca9-6d7c-8d3c" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -13659,15 +13619,31 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                     <modifier type="set" value="false" field="hidden">
                       <conditionGroups>
                         <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                          </conditions>
                           <comment>IW</comment>
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="or">
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="4061-bc47-ebca-dc39" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="model" childId="1d11-e616-eb66-a6ce" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -13682,51 +13658,9 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="163d-a09e-7f60-c3c1" automatic="true"/>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="251d-4c37-9c29-2335" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="163d-a09e-7f60-c3c1" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="251d-4c37-9c29-2335" automatic="true"/>
               </constraints>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="1" field="163d-a09e-7f60-c3c1">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="1" field="251d-4c37-9c29-2335">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="0d92-b5f0-b320-24d6" field="defaultSelectionEntryId">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -33886,44 +33820,6 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </entryLink>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="560d-3c55-0aed-b2b4" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
             <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="990d-e42c-590a-ed24" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
-            <entryLink import="true" name="Thunder hammer" hidden="false" id="a50d-e9ea-789b-3270" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="2">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae1f-7679-b8c6-14f0" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f106-0bad-fe56-7cda" automatic="true"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="0" field="ae1f-7679-b8c6-14f0">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="0" field="f106-0bad-fe56-7cda">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </entryLink>
             <entryLink import="true" name="Shattered Legion Armoury Selection" hidden="true" id="9900-08ec-e559-6f2b" type="selectionEntryGroup" targetId="31b5-9fab-39ba-b1ab" sortIndex="1">
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -33935,7 +33831,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have its bolt pistol exchanged for " id="50dc-9bf3-490e-b33d" sortIndex="1" defaultSelectionEntryId="39cd-16e2-4b55-b108">
+            <selectionEntryGroup name="This Model may have its bolt pistol exchanged for " id="50dc-9bf3-490e-b33d" sortIndex="2" defaultSelectionEntryId="39cd-16e2-4b55-b108">
               <entryLinks>
                 <entryLink hidden="false" type="selectionEntry" targetId="2942-f783-d627-33c5" id="39cd-16e2-4b55-b108" name="Bolt pistol" sortIndex="1">
                   <constraints>
@@ -34016,14 +33912,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49ae-5239-468a-ba7b"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Options" id="2ea7-df26-2d3a-2bd2" hidden="true" flatten="false" sortIndex="3">
+            <selectionEntryGroup name="Options" id="a238-ce70-8ee6-1d5a" hidden="false" flatten="true" defaultSelectionEntryId="0d92-b5f0-b320-24d6" sortIndex="3">
               <entryLinks>
-                <entryLink import="true" name="Thunder hammer" hidden="false" id="809a-d8cc-bb82-56ba" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="1">
+                <entryLink import="true" name="Thunder hammer" hidden="false" id="c466-e392-320d-4861" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="1">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="242f-13b5-105d-c109" automatic="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45cb-b75e-e898-9343" automatic="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="ad83-8e5d-32a1-2139" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="2">
+                <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="c351-a840-2d99-bc69" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="2">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
@@ -34031,9 +33927,6 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <modifier type="set" value="false" field="hidden">
                       <conditionGroups>
                         <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                          </conditions>
                           <comment>SL</comment>
                           <conditionGroups>
                             <conditionGroup type="or">
@@ -34043,6 +33936,25 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
+                            <conditionGroup type="or">
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="fde7-fb71-1ecc-7365" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="model" childId="0320-4ca9-6d7c-8d3c" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
                           </conditionGroups>
                         </conditionGroup>
                       </conditionGroups>
@@ -34050,23 +33962,39 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b335-aa3c-faca-e8a9"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1411-ed33-9225-1555"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Graviton crusher" hidden="true" id="4a1a-f395-3587-9110" type="selectionEntry" targetId="78f1-345c-81d8-1cb1" sortIndex="3">
+                <entryLink import="true" name="Graviton crusher" hidden="true" id="d6f4-b05d-80f6-6d4b" type="selectionEntry" targetId="78f1-345c-81d8-1cb1" sortIndex="3">
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <conditionGroups>
                         <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                          </conditions>
                           <comment>IW</comment>
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="or">
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="4061-bc47-ebca-dc39" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="model" childId="1d11-e616-eb66-a6ce" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -34076,56 +34004,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="81a9-c84a-9fc5-87d2"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c626-37e6-ee07-3e27"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="04d1-a11b-78af-6bd8" automatic="true"/>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="86e0-1ff8-881e-4d85" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e55-b855-d22d-cb0a" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be04-01ff-221e-12f7" automatic="true"/>
               </constraints>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="1" field="04d1-a11b-78af-6bd8">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="1" field="86e0-1ff8-881e-4d85">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="0d92-b5f0-b320-24d6" field="defaultSelectionEntryId">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -34382,44 +34268,6 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <entryLink import="true" name="Mount" hidden="false" id="ebed-5ac6-a2a7-19eb" type="selectionEntryGroup" targetId="9089-07e5-3653-84b6" sortIndex="2"/>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="845a-d67f-cc01-8235" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
             <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="b54b-3672-cbb3-5161" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
-            <entryLink import="true" name="Thunder hammer" hidden="false" id="0356-5cf4-33b8-7db3" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="5">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d722-3d4f-756c-c6df" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da2c-6ca4-5f2d-9839" automatic="true"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="0" field="d722-3d4f-756c-c6df">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="0" field="da2c-6ca4-5f2d-9839">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </entryLink>
             <entryLink import="true" name="Shattered Legion Armoury Selection" hidden="true" id="3c92-0c1c-c511-5191" type="selectionEntryGroup" targetId="31b5-9fab-39ba-b1ab" sortIndex="1">
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -34604,14 +34452,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Options" id="fdf3-c1c3-f1b9-0cdf" hidden="true" flatten="false" sortIndex="6">
+            <selectionEntryGroup name="Options" id="9207-1977-c81d-5e16" hidden="false" flatten="true" defaultSelectionEntryId="0d92-b5f0-b320-24d6" sortIndex="5">
               <entryLinks>
-                <entryLink import="true" name="Thunder hammer" hidden="false" id="707b-bdb6-bc1e-5759" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="1">
+                <entryLink import="true" name="Thunder hammer" hidden="false" id="5323-9593-2e57-3096" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="1">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d01-1c79-908f-d2d2" automatic="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6ba-a80d-957a-e2be" automatic="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="7a5b-d46b-f535-098a" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="2">
+                <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="2435-cdf2-f542-6513" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="2">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
@@ -34619,9 +34467,6 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <modifier type="set" value="false" field="hidden">
                       <conditionGroups>
                         <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                          </conditions>
                           <comment>SL</comment>
                           <conditionGroups>
                             <conditionGroup type="or">
@@ -34631,6 +34476,25 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
+                            <conditionGroup type="or">
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="fde7-fb71-1ecc-7365" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="model" childId="0320-4ca9-6d7c-8d3c" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
                           </conditionGroups>
                         </conditionGroup>
                       </conditionGroups>
@@ -34638,23 +34502,39 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b68-1411-29ef-ca83"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49b5-c013-4cb7-e7a8"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Graviton crusher" hidden="true" id="7fad-4ddc-fcf7-b8ad" type="selectionEntry" targetId="78f1-345c-81d8-1cb1" sortIndex="3">
+                <entryLink import="true" name="Graviton crusher" hidden="true" id="ce9d-a498-bd58-5a6b" type="selectionEntry" targetId="78f1-345c-81d8-1cb1" sortIndex="3">
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <conditionGroups>
                         <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                          </conditions>
                           <comment>IW</comment>
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="or">
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="4061-bc47-ebca-dc39" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="model" childId="1d11-e616-eb66-a6ce" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -34664,56 +34544,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e055-2a39-216f-2a88"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="95b9-4839-ee34-33c0"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1411-5fd1-32db-07bc" automatic="true"/>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ac10-0eac-0fd1-65aa" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="942d-fc60-3d23-570e" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="472c-2c5b-8392-cdda" automatic="true"/>
               </constraints>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="1" field="1411-5fd1-32db-07bc">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="1" field="ac10-0eac-0fd1-65aa">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="0d92-b5f0-b320-24d6" field="defaultSelectionEntryId">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -34932,44 +34770,6 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <entryLink import="true" name="Terminator Armour" hidden="false" id="6cb3-8585-2644-2e60" type="selectionEntryGroup" targetId="170b-d9c0-e9d6-b314" sortIndex="1"/>
             <entryLink import="true" name="Prosperine Arcana" hidden="false" id="b6b3-6922-af17-62ec" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
             <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="7fb8-3f35-819f-9cc5" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
-            <entryLink import="true" name="Thunder hammer" hidden="false" id="401d-ad70-bd6d-5bfd" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="3">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c32-0bde-be78-34fd" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6b2-5a0a-5766-0e40" automatic="true"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="0" field="5c32-0bde-be78-34fd">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="0" field="d6b2-5a0a-5766-0e40">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </entryLink>
             <entryLink import="true" name="Shattered Legion Armoury Selection" hidden="true" id="dac6-e98d-39d3-d291" type="selectionEntryGroup" targetId="31b5-9fab-39ba-b1ab" sortIndex="1">
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -35000,14 +34800,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d2d-268b-4c3a-841d"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Options" id="eb6f-a47c-442c-bfee" hidden="true" flatten="false" sortIndex="4">
+            <selectionEntryGroup name="Options" id="39bf-538a-d2ff-0fd8" hidden="false" flatten="true" defaultSelectionEntryId="0d92-b5f0-b320-24d6" sortIndex="4">
               <entryLinks>
-                <entryLink import="true" name="Thunder hammer" hidden="false" id="dd66-5654-8abb-b1a7" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="1">
+                <entryLink import="true" name="Thunder hammer" hidden="false" id="b3e2-83b2-9de7-d2f2" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="1">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a105-9a00-b84b-1bf3" automatic="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd8e-eb0f-5cdb-6160" automatic="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="4cec-3301-fa70-7dc5" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="2">
+                <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="db3a-4e1b-d025-ce18" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="2">
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
@@ -35015,9 +34815,6 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <modifier type="set" value="false" field="hidden">
                       <conditionGroups>
                         <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                          </conditions>
                           <comment>SL</comment>
                           <conditionGroups>
                             <conditionGroup type="or">
@@ -35027,6 +34824,25 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
+                            <conditionGroup type="or">
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="fde7-fb71-1ecc-7365" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="model" childId="0320-4ca9-6d7c-8d3c" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
                           </conditionGroups>
                         </conditionGroup>
                       </conditionGroups>
@@ -35034,23 +34850,39 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbda-42fe-f736-8391"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d7f-891b-8fb9-7a2d"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Graviton crusher" hidden="true" id="c22d-ca01-46fc-1b92" type="selectionEntry" targetId="78f1-345c-81d8-1cb1" sortIndex="3">
+                <entryLink import="true" name="Graviton crusher" hidden="true" id="11e2-8bd0-e685-582e" type="selectionEntry" targetId="78f1-345c-81d8-1cb1" sortIndex="3">
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <conditionGroups>
                         <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                          </conditions>
                           <comment>IW</comment>
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="or">
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="4061-bc47-ebca-dc39" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="model" childId="1d11-e616-eb66-a6ce" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -35060,56 +34892,14 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="fdee-9c0c-4a50-e5c8"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c586-9940-94e3-d325"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="06a8-8a88-edd8-2962" automatic="true"/>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f36a-6297-59c5-7f3f" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61d7-91f1-0112-19f2" automatic="true"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b193-0fa3-4440-c961" automatic="true"/>
               </constraints>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="1" field="06a8-8a88-edd8-2962">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="1" field="f36a-6297-59c5-7f3f">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="0d92-b5f0-b320-24d6" field="defaultSelectionEntryId">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -36327,15 +36117,31 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <modifier type="set" value="false" field="hidden">
                       <conditionGroups>
                         <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                          </conditions>
                           <comment>IW</comment>
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="or">
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="4061-bc47-ebca-dc39" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="model" childId="1d11-e616-eb66-a6ce" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -36359,16 +36165,32 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <modifier type="set" value="false" field="hidden">
                       <conditionGroups>
                         <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                          </conditions>
                           <comment>SL</comment>
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
-                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="or">
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="fde7-fb71-1ecc-7365" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="model" childId="0320-4ca9-6d7c-8d3c" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -36387,9 +36209,27 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8ae1-c83b-a225-826f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="model" childId="f555-f686-a2d1-2f39" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <costs>
@@ -36716,15 +36556,31 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <modifier type="set" value="false" field="hidden">
                       <conditionGroups>
                         <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                          </conditions>
                           <comment>IW</comment>
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="or">
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="4061-bc47-ebca-dc39" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="model" childId="1d11-e616-eb66-a6ce" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -36748,16 +36604,32 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <modifier type="set" value="false" field="hidden">
                       <conditionGroups>
                         <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                          </conditions>
                           <comment>SL</comment>
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
-                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="or">
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="fde7-fb71-1ecc-7365" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="model" childId="0320-4ca9-6d7c-8d3c" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -36776,9 +36648,27 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8ae1-c83b-a225-826f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="model" childId="f555-f686-a2d1-2f39" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <costs>
@@ -37166,15 +37056,31 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <modifier type="set" value="false" field="hidden">
                       <conditionGroups>
                         <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                          </conditions>
                           <comment>IW</comment>
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="or">
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="4061-bc47-ebca-dc39" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="model" childId="1d11-e616-eb66-a6ce" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -37198,16 +37104,32 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                     <modifier type="set" value="false" field="hidden">
                       <conditionGroups>
                         <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                          </conditions>
                           <comment>SL</comment>
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
                                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
-                                <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="or">
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="fde7-fb71-1ecc-7365" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="model" childId="0320-4ca9-6d7c-8d3c" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -37226,9 +37148,27 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8ae1-c83b-a225-826f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="model" childId="f555-f686-a2d1-2f39" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <costs>
@@ -44778,15 +44718,31 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                         <modifier type="set" value="false" field="hidden">
                           <conditionGroups>
                             <conditionGroup type="and">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                              </conditions>
                               <comment>IW</comment>
                               <conditionGroups>
                                 <conditionGroup type="or">
                                   <conditions>
-                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                                <conditionGroup type="or">
+                                  <conditionGroups>
+                                    <conditionGroup type="and">
+                                      <conditions>
+                                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="4061-bc47-ebca-dc39" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                    <conditionGroup type="and">
+                                      <conditions>
+                                        <condition type="atLeast" value="1" field="selections" scope="model" childId="1d11-e616-eb66-a6ce" shared="true" includeChildSelections="true"/>
+                                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
                                   </conditions>
                                 </conditionGroup>
                               </conditionGroups>
@@ -44807,9 +44763,6 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                         <modifier type="set" value="false" field="hidden">
                           <conditionGroups>
                             <conditionGroup type="and">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                              </conditions>
                               <comment>SL</comment>
                               <conditionGroups>
                                 <conditionGroup type="or">
@@ -44817,6 +44770,25 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
                                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                                <conditionGroup type="or">
+                                  <conditionGroups>
+                                    <conditionGroup type="and">
+                                      <conditions>
+                                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="fde7-fb71-1ecc-7365" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                    <conditionGroup type="and">
+                                      <conditions>
+                                        <condition type="atLeast" value="1" field="selections" scope="model" childId="0320-4ca9-6d7c-8d3c" shared="true" includeChildSelections="true"/>
+                                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
                                   </conditions>
                                 </conditionGroup>
                               </conditionGroups>
@@ -45117,15 +45089,31 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                         <modifier type="set" value="false" field="hidden">
                           <conditionGroups>
                             <conditionGroup type="and">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
-                              </conditions>
                               <comment>IW</comment>
                               <conditionGroups>
                                 <conditionGroup type="or">
                                   <conditions>
-                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                                <conditionGroup type="or">
+                                  <conditionGroups>
+                                    <conditionGroup type="and">
+                                      <conditions>
+                                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="4061-bc47-ebca-dc39" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                    <conditionGroup type="and">
+                                      <conditions>
+                                        <condition type="atLeast" value="1" field="selections" scope="model" childId="1d11-e616-eb66-a6ce" shared="true" includeChildSelections="true"/>
+                                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
                                   </conditions>
                                 </conditionGroup>
                               </conditionGroups>
@@ -45146,9 +45134,6 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                         <modifier type="set" value="false" field="hidden">
                           <conditionGroups>
                             <conditionGroup type="and">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-                              </conditions>
                               <comment>SL</comment>
                               <conditionGroups>
                                 <conditionGroup type="or">
@@ -45156,6 +45141,25 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="5a95-e564-96b2-8dc9" shared="true" includeChildSelections="true"/>
                                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="af7d-af64-6b7d-da9d" shared="true" includeChildSelections="true"/>
                                     <condition type="instanceOf" value="1" field="selections" scope="model" childId="9871-cb62-5283-2216" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                                <conditionGroup type="or">
+                                  <conditionGroups>
+                                    <conditionGroup type="and">
+                                      <conditions>
+                                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="fde7-fb71-1ecc-7365" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                    <conditionGroup type="and">
+                                      <conditions>
+                                        <condition type="atLeast" value="1" field="selections" scope="model" childId="0320-4ca9-6d7c-8d3c" shared="true" includeChildSelections="true"/>
+                                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
                                   </conditions>
                                 </conditionGroup>
                               </conditionGroups>
@@ -54048,319 +54052,187 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
               </conditions>
             </modifier>
           </modifiers>
-          <rules>
-            <rule name="Exemplars of the Legions" id="cdb3-b297-9382-780d" hidden="false">
-              <description>If a Unit that has the Command Battlefield Role, and which only includes Models with the Shattered Legions Trait, is selected to fill a Prime Force Organisation Slot, the following Prime Advantage can be selected:
-
-
-Exemplars of the Legion
-
-
-Add one additional Force Organisation Slot to the Detachment that includes the Unit selected to fill a Prime Force Organisation Slot with this Prime Advantage. The Slot added may be of any Battlefield Role other than High Command, Command, Warlord or Lord of War (note that a Detachment may gain more than one additional Force Organisation Slot if this option is selected for multiple Units in the same Detachment).
-
-
-Each Unit selected to fill such a Slot must:
-
-
- • Be from the Legiones Astartes Army List.
- • Not include any Models that have the Unique Sub-Type.
- • Have a Faction Trait that matches the Legion that is represented by the Model that was selected to fill the Battlefield Role Slot with this Prime Advantage.
-
-
-All Models in any of these Units have their Faction Trait replaced with ‘Shattered Legions’ and have the  Legion Specialists Special Rule.</description>
-            </rule>
-          </rules>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="EotL - Iron Hands" hidden="true" id="028f-24b9-3194-d996" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5642-bbe6-9f57-b93c" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f66e-a76d-75c1-f425" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5642-bbe6-9f57-b93c" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f66e-a76d-75c1-f425" includeChildSelections="false"/>
               </constraints>
               <categoryLinks>
-                <categoryLink targetId="4559-bedc-9940-5865" id="6dac-08f7-4272-8613" primary="false" name="EotL-IH"/>
+                <categoryLink targetId="b8f3-a8cc-4b5f-38c7" id="fb36-84fa-9bf8-9572" primary="false" name="EotL - Iron Hands"/>
               </categoryLinks>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="00f5-a974-fd19-84e5" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="1" field="5642-bbe6-9f57-b93c">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="00f5-a974-fd19-84e5" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="0" field="f66e-a76d-75c1-f425">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="00f5-a974-fd19-84e5" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Emperor&apos;s Children" hidden="true" id="3e18-42df-af68-5a20" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="aa06-c449-e18e-5165" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62bb-1b03-1287-7b93" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="aa06-c449-e18e-5165" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62bb-1b03-1287-7b93" includeChildSelections="false"/>
               </constraints>
               <categoryLinks>
-                <categoryLink targetId="1b2e-0c8f-a347-14dd" id="081d-c8e6-7e64-759a" primary="false" name="EotL-EC"/>
+                <categoryLink targetId="5e33-e0a2-afb4-6fa7" id="2d61-f696-37e7-6dd1" primary="false" name="EotL - Emperor&apos;s Children"/>
               </categoryLinks>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="ae44-4fec-1519-7aba" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="1" field="aa06-c449-e18e-5165">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ae44-4fec-1519-7aba" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="0" field="62bb-1b03-1287-7b93">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="ae44-4fec-1519-7aba" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Salamanders" hidden="true" id="b34b-7030-bd5a-f622" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3545-a6d8-67ff-17ed" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33f1-ad2f-d279-3c30" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3545-a6d8-67ff-17ed" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33f1-ad2f-d279-3c30" includeChildSelections="false"/>
               </constraints>
               <categoryLinks>
-                <categoryLink targetId="5b8b-422a-ca19-dd30" id="89d0-3b05-8da4-5856" primary="false" name="EotL-SL"/>
+                <categoryLink targetId="acc7-7ab0-1b70-15c2" id="099d-12e0-90a6-eb05" primary="false" name="EotL - Salamanders"/>
               </categoryLinks>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="0320-4ca9-6d7c-8d3c" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="1" field="3545-a6d8-67ff-17ed">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="0320-4ca9-6d7c-8d3c" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="0" field="33f1-ad2f-d279-3c30">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="0320-4ca9-6d7c-8d3c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Raven Guard" hidden="true" id="39f7-25bf-f281-31a8" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4939-45e9-8447-7c49" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fa1-5ff8-e6d0-62f9" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4939-45e9-8447-7c49" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fa1-5ff8-e6d0-62f9" includeChildSelections="false" automatic="false"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="64ea-1dd9-765b-1a3c" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="1" field="4939-45e9-8447-7c49">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="64ea-1dd9-765b-1a3c" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="0" field="2fa1-5ff8-e6d0-62f9">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="64ea-1dd9-765b-1a3c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink targetId="87f5-76a6-3a9a-2579" id="d45a-8988-b3bf-826e" primary="false" name="EotL-RG"/>
+                <categoryLink targetId="8fed-36a4-10bd-3fa5" id="8cdc-e8dc-f3c0-2761" primary="false" name="EotL - Raven Guard"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Iron Warriors" hidden="true" id="38d2-fdbf-dddf-0c88" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2e02-22db-6cf6-8657" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bd0-fc33-936b-f5e5" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2e02-22db-6cf6-8657" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bd0-fc33-936b-f5e5" includeChildSelections="false"/>
               </constraints>
               <categoryLinks>
-                <categoryLink targetId="5721-3879-8932-15f3" id="d330-ec77-935d-8dd0" primary="false" name="EotL-IW"/>
+                <categoryLink targetId="d190-a268-afdd-6e11" id="df81-2fc2-b226-f43e" primary="false" name="EotL - Iron Warriors"/>
               </categoryLinks>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="1d11-e616-eb66-a6ce" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="1" field="2e02-22db-6cf6-8657">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="1d11-e616-eb66-a6ce" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="0" field="1bd0-fc33-936b-f5e5">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="1d11-e616-eb66-a6ce" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Night Lords" hidden="true" id="41f3-98ed-111c-1b3a" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dfb8-46ea-db9d-bf16" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cca-dbcc-4943-7a23" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dfb8-46ea-db9d-bf16" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cca-dbcc-4943-7a23" includeChildSelections="false"/>
               </constraints>
               <categoryLinks>
-                <categoryLink targetId="af2c-9f21-ea3d-9bcf" id="837b-9546-86f3-3816" primary="false" name="EotL-NL"/>
+                <categoryLink targetId="72cb-1cf8-0e7d-51d2" id="0bdd-3244-dfe0-8326" primary="false" name="EotL - Night Lords"/>
               </categoryLinks>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="e404-e8a8-a085-686d" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="1" field="dfb8-46ea-db9d-bf16">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="e404-e8a8-a085-686d" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="0" field="1cca-dbcc-4943-7a23">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="e404-e8a8-a085-686d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Blood Angels" hidden="true" id="99d9-55a5-a1f1-78b2" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e431-fa6d-f38a-60e6" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f467-6d72-7154-e7bc" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6601-28a6-7bfc-a3b3" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1962-dd1d-1df2-ebda" includeChildSelections="false"/>
               </constraints>
               <categoryLinks>
-                <categoryLink targetId="5f71-ed32-cb07-a7e3" id="f189-dc06-554a-6a71" primary="false" name="EotL-BA"/>
+                <categoryLink targetId="d819-0c9d-aad2-4238" id="c180-bb1e-d8fd-1149" primary="false" name="EotL - Blood Angels"/>
               </categoryLinks>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="f555-f686-a2d1-2f39" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="1" field="e431-fa6d-f38a-60e6">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="f555-f686-a2d1-2f39" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="0" field="f467-6d72-7154-e7bc">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="f555-f686-a2d1-2f39" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Death Guard" hidden="true" id="a3db-f87e-3887-f5ed" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="aa4f-4a6d-0551-fc31" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf77-217a-c5bf-5582" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="aa4f-4a6d-0551-fc31" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf77-217a-c5bf-5582" includeChildSelections="false"/>
               </constraints>
               <categoryLinks>
-                <categoryLink targetId="c494-2873-82da-79f3" id="6722-a6b6-6c32-7ee4" primary="false" name="EotL-DG"/>
+                <categoryLink targetId="f6a9-02e2-ff4f-9583" id="5790-99f6-d413-d70e" primary="false" name="EotL - Death Guard"/>
               </categoryLinks>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="5908-fbe0-934a-6137" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="1" field="aa4f-4a6d-0551-fc31">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="5908-fbe0-934a-6137" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="0" field="bf77-217a-c5bf-5582">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="5908-fbe0-934a-6137" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Dark Angels" hidden="true" id="2288-885f-ef3f-b11e" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d652-9ca5-fc0e-b6c0" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0661-0cd5-bd65-b9fe" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d652-9ca5-fc0e-b6c0" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0661-0cd5-bd65-b9fe" includeChildSelections="false"/>
               </constraints>
               <categoryLinks>
-                <categoryLink targetId="69dd-9a79-6562-14a1" id="b318-7112-e5b7-2408" primary="false" name="EotL-DA"/>
+                <categoryLink targetId="6c4f-19ae-d41f-377b" id="0e46-f5c9-5d4e-bf45" primary="false" name="EotL - Dark Angels"/>
               </categoryLinks>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="5436-0292-e25f-0724" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="1" field="d652-9ca5-fc0e-b6c0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="5436-0292-e25f-0724" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="0" field="0661-0cd5-bd65-b9fe">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="5436-0292-e25f-0724" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Imperial Fists" hidden="true" id="bf7e-ba73-5e0c-9661" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0fea-27da-e901-9e68" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05d8-a9dc-edf2-0d0c" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0fea-27da-e901-9e68" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05d8-a9dc-edf2-0d0c" includeChildSelections="false"/>
               </constraints>
               <categoryLinks>
-                <categoryLink targetId="165b-c1bf-70d0-1614" id="7436-f801-5696-f021" primary="false" name="EotL-IF"/>
+                <categoryLink targetId="6d50-f0f1-4c81-4fa5" id="3e20-53c1-f57a-1d47" primary="false" name="EotL - Imperial Fists"/>
               </categoryLinks>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="ac5c-235d-214a-b519" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="1" field="0fea-27da-e901-9e68">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ac5c-235d-214a-b519" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="0" field="05d8-a9dc-edf2-0d0c">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="ac5c-235d-214a-b519" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Alpha Legion" hidden="true" id="c49e-0bb2-8109-d028" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5406-e9eb-20ae-5cb9" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a23-5708-969a-e762" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5406-e9eb-20ae-5cb9" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a23-5708-969a-e762" includeChildSelections="false"/>
               </constraints>
               <categoryLinks>
-                <categoryLink targetId="7cb8-1117-ebad-69ca" id="853e-404c-ec49-21bd" primary="false" name="EotL-AL"/>
+                <categoryLink targetId="1252-6dc4-22d7-4a8f" id="96dd-6930-927a-078d" primary="false" name="EotL - Alpha Legion"/>
               </categoryLinks>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="b643-acdd-80a2-6a5e" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="1" field="5406-e9eb-20ae-5cb9">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b643-acdd-80a2-6a5e" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="0" field="4a23-5708-969a-e762">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b643-acdd-80a2-6a5e" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Sons of Horus" hidden="true" id="4a79-7c86-7041-7f6c" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="088c-8eed-b398-6786" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adea-2ddd-9eaa-744f" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="088c-8eed-b398-6786" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adea-2ddd-9eaa-744f" includeChildSelections="false"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54368,25 +54240,15 @@ All Models in any of these Units have their Faction Trait replaced with ‘Shat
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="bd13-7b89-7edf-23d9" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="1" field="088c-8eed-b398-6786">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="bd13-7b89-7edf-23d9" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="0" field="adea-2ddd-9eaa-744f">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="bd13-7b89-7edf-23d9" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink targetId="b7fc-56f9-579e-0030" id="ade5-1313-a53c-5eaa" primary="false" name="EotL-SH"/>
+                <categoryLink targetId="20ba-2d32-325b-0f43" id="b8fa-735b-35e4-f7d7" primary="false" name="EotL - Sons of Horus"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Space Wolves" hidden="true" id="6aaf-df3e-4b7d-b58c" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0ef8-24c8-9221-b5be" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8a4-3a15-5d57-f0ad" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0ef8-24c8-9221-b5be" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8a4-3a15-5d57-f0ad" includeChildSelections="false"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54394,25 +54256,15 @@ All Models in any of these Units have their Faction Trait replaced with ‘Shat
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="d56f-9f02-0f4f-13ed" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="1" field="0ef8-24c8-9221-b5be">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="d56f-9f02-0f4f-13ed" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="0" field="c8a4-3a15-5d57-f0ad">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="d56f-9f02-0f4f-13ed" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink targetId="7f85-b2b1-29bd-b5a2" id="7c84-fc9a-ba64-e4c6" primary="false" name="EotL-SW"/>
+                <categoryLink targetId="34b6-2cfd-313a-0eff" id="ef22-cd12-b459-7484" primary="false" name="EotL - Space Wolves"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Thousand Sons" hidden="true" id="9c4c-7907-5851-a808" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="94f2-20c2-3047-40e7" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aff9-a672-9ea5-36cf" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="94f2-20c2-3047-40e7" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aff9-a672-9ea5-36cf" includeChildSelections="false"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54420,25 +54272,15 @@ All Models in any of these Units have their Faction Trait replaced with ‘Shat
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="f16b-151d-008f-72e0" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="1" field="94f2-20c2-3047-40e7">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="f16b-151d-008f-72e0" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="0" field="aff9-a672-9ea5-36cf">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="f16b-151d-008f-72e0" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink targetId="484e-033c-00d8-9715" id="461c-8bcb-3c1b-836b" primary="false" name="EotL-TS"/>
+                <categoryLink targetId="1992-9042-5894-f2dc" id="926c-95a8-b64c-0426" primary="false" name="EotL - Thousand Sons"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Ultramarines" hidden="true" id="5e6d-d0d4-20e1-d410" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="04bd-afa6-c06e-69d2" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10c2-246b-5060-5081" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="04bd-afa6-c06e-69d2" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10c2-246b-5060-5081" includeChildSelections="false"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54446,25 +54288,15 @@ All Models in any of these Units have their Faction Trait replaced with ‘Shat
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="10b7-7510-b40d-3ef0" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="1" field="04bd-afa6-c06e-69d2">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="10b7-7510-b40d-3ef0" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="0" field="10c2-246b-5060-5081">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="10b7-7510-b40d-3ef0" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink targetId="8427-5777-8664-083e" id="ad50-8b8e-4645-c39e" primary="false" name="EotL-UM"/>
+                <categoryLink targetId="bc4d-0973-2772-9330" id="8312-b366-2d59-4f85" primary="false" name="EotL - Ultramarines"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - White Scars" hidden="true" id="ebd1-6db9-a296-8724" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1e38-b593-e38a-78ce" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7c2-e456-323a-631e" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1e38-b593-e38a-78ce" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7c2-e456-323a-631e" includeChildSelections="false"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54472,25 +54304,15 @@ All Models in any of these Units have their Faction Trait replaced with ‘Shat
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="389a-09a0-f4bb-92ae" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="1" field="1e38-b593-e38a-78ce">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="389a-09a0-f4bb-92ae" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="0" field="b7c2-e456-323a-631e">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="389a-09a0-f4bb-92ae" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink targetId="73f7-0054-e5d7-8efb" id="37cc-d139-95d1-3b7f" primary="false" name="EotL-WS"/>
+                <categoryLink targetId="c89e-a6a3-9ac6-1283" id="b1a7-34d9-431b-bd4b" primary="false" name="EotL - White Scars"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Word Bearers" hidden="true" id="05a2-a78b-9c26-9d27" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fe30-dcbf-4df7-772d" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eef8-746b-2f48-119d" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fe30-dcbf-4df7-772d" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eef8-746b-2f48-119d" includeChildSelections="false"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54498,25 +54320,15 @@ All Models in any of these Units have their Faction Trait replaced with ‘Shat
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="a885-8f19-2f49-9c0d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="1" field="fe30-dcbf-4df7-772d">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="a885-8f19-2f49-9c0d" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="0" field="eef8-746b-2f48-119d">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="a885-8f19-2f49-9c0d" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink targetId="b1f7-02a0-e90d-15c7" id="5140-2aeb-5fdd-3c93" primary="false" name="EotL-WB"/>
+                <categoryLink targetId="7712-7d17-1f9e-bf1f" id="1c44-49a0-5194-ff4a" primary="false" name="EotL - Word Bearers"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - World Eaters" hidden="true" id="603c-d219-084e-7a53" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="10df-00c4-7975-23f8" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01dc-94e1-4475-04e5" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="10df-00c4-7975-23f8" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01dc-94e1-4475-04e5" includeChildSelections="false"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54524,19 +54336,9 @@ All Models in any of these Units have their Faction Trait replaced with ‘Shat
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="ad72-2b78-509c-286d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="1" field="10df-00c4-7975-23f8">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ad72-2b78-509c-286d" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="0" field="01dc-94e1-4475-04e5">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="ad72-2b78-509c-286d" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink targetId="67b4-0b06-af17-1321" id="1716-2a59-c5ab-f9b5" primary="false" name="EotL-WE"/>
+                <categoryLink targetId="d877-8b72-fd0b-1e4a" id="e43d-0c5e-cb31-83ac" primary="false" name="EotL - World Eaters"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -56983,7 +56785,7 @@ When selecting Weapons for Models with the Blackshields Trait in a Detachment wi
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="a910-e921-32ae-4f6b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="5bd3-e8ac-e0c9-a60e" shared="true" includeChildSelections="true" includeChildForces="true"/>
                     <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="3256-29e9-1d7a-12a7" shared="true"/>
                   </conditions>
                 </conditionGroup>
