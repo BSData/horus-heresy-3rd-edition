@@ -54030,14 +54030,36 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
               </conditions>
             </modifier>
           </modifiers>
+          <rules>
+            <rule name="Exemplars of the Legions" id="cdb3-b297-9382-780d" hidden="false">
+              <description>If a Unit that has the Command Battlefield Role, and which only includes Models with the Shattered Legions Trait, is selected to fill a Prime Force Organisation Slot, the following Prime Advantage can be selected:
+
+
+Exemplars of the Legion
+
+
+Add one additional Force Organisation Slot to the Detachment that includes the Unit selected to fill a Prime Force Organisation Slot with this Prime Advantage. The Slot added may be of any Battlefield Role other than High Command, Command, Warlord or Lord of War (note that a Detachment may gain more than one additional Force Organisation Slot if this option is selected for multiple Units in the same Detachment).
+
+
+Each Unit selected to fill such a Slot must:
+
+
+ • Be from the Legiones Astartes Army List.
+ • Not include any Models that have the Unique Sub-Type.
+ • Have a Faction Trait that matches the Legion that is represented by the Model that was selected to fill the Battlefield Role Slot with this Prime Advantage.
+
+
+All Models in any of these Units have their Faction Trait replaced with ‘Shattered Legions’ and have the  Legion Specialists Special Rule.</description>
+            </rule>
+          </rules>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="EotL - Iron Hands" hidden="true" id="028f-24b9-3194-d996" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5642-bbe6-9f57-b93c" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f66e-a76d-75c1-f425" includeChildSelections="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5642-bbe6-9f57-b93c" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f66e-a76d-75c1-f425" includeChildSelections="false" automatic="true"/>
               </constraints>
               <categoryLinks>
-                <categoryLink targetId="b8f3-a8cc-4b5f-38c7" id="fb36-84fa-9bf8-9572" primary="false" name="EotL - Iron Hands"/>
+                <categoryLink targetId="4559-bedc-9940-5865" id="6dac-08f7-4272-8613" primary="false" name="EotL-IH"/>
               </categoryLinks>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54045,15 +54067,25 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="00f5-a974-fd19-84e5" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="1" field="5642-bbe6-9f57-b93c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="00f5-a974-fd19-84e5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="f66e-a76d-75c1-f425">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="00f5-a974-fd19-84e5" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Emperor&apos;s Children" hidden="true" id="3e18-42df-af68-5a20" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="aa06-c449-e18e-5165" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62bb-1b03-1287-7b93" includeChildSelections="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="aa06-c449-e18e-5165" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62bb-1b03-1287-7b93" includeChildSelections="false" automatic="true"/>
               </constraints>
               <categoryLinks>
-                <categoryLink targetId="5e33-e0a2-afb4-6fa7" id="2d61-f696-37e7-6dd1" primary="false" name="EotL - Emperor&apos;s Children"/>
+                <categoryLink targetId="1b2e-0c8f-a347-14dd" id="081d-c8e6-7e64-759a" primary="false" name="EotL-EC"/>
               </categoryLinks>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54061,15 +54093,25 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="ae44-4fec-1519-7aba" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="1" field="aa06-c449-e18e-5165">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ae44-4fec-1519-7aba" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="62bb-1b03-1287-7b93">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="ae44-4fec-1519-7aba" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Salamanders" hidden="true" id="b34b-7030-bd5a-f622" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3545-a6d8-67ff-17ed" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33f1-ad2f-d279-3c30" includeChildSelections="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3545-a6d8-67ff-17ed" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33f1-ad2f-d279-3c30" includeChildSelections="false" automatic="true"/>
               </constraints>
               <categoryLinks>
-                <categoryLink targetId="acc7-7ab0-1b70-15c2" id="099d-12e0-90a6-eb05" primary="false" name="EotL - Salamanders"/>
+                <categoryLink targetId="5b8b-422a-ca19-dd30" id="89d0-3b05-8da4-5856" primary="false" name="EotL-SL"/>
               </categoryLinks>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54077,12 +54119,22 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="0320-4ca9-6d7c-8d3c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="1" field="3545-a6d8-67ff-17ed">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="0320-4ca9-6d7c-8d3c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="33f1-ad2f-d279-3c30">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="0320-4ca9-6d7c-8d3c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Raven Guard" hidden="true" id="39f7-25bf-f281-31a8" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4939-45e9-8447-7c49" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fa1-5ff8-e6d0-62f9" includeChildSelections="false" automatic="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4939-45e9-8447-7c49" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fa1-5ff8-e6d0-62f9" includeChildSelections="false" automatic="true"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54090,18 +54142,28 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="64ea-1dd9-765b-1a3c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="1" field="4939-45e9-8447-7c49">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="64ea-1dd9-765b-1a3c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="2fa1-5ff8-e6d0-62f9">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="64ea-1dd9-765b-1a3c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink targetId="8fed-36a4-10bd-3fa5" id="8cdc-e8dc-f3c0-2761" primary="false" name="EotL - Raven Guard"/>
+                <categoryLink targetId="87f5-76a6-3a9a-2579" id="d45a-8988-b3bf-826e" primary="false" name="EotL-RG"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Iron Warriors" hidden="true" id="38d2-fdbf-dddf-0c88" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2e02-22db-6cf6-8657" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bd0-fc33-936b-f5e5" includeChildSelections="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2e02-22db-6cf6-8657" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bd0-fc33-936b-f5e5" includeChildSelections="false" automatic="true"/>
               </constraints>
               <categoryLinks>
-                <categoryLink targetId="d190-a268-afdd-6e11" id="df81-2fc2-b226-f43e" primary="false" name="EotL - Iron Warriors"/>
+                <categoryLink targetId="5721-3879-8932-15f3" id="d330-ec77-935d-8dd0" primary="false" name="EotL-IW"/>
               </categoryLinks>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54109,15 +54171,25 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="1d11-e616-eb66-a6ce" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="1" field="2e02-22db-6cf6-8657">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="1d11-e616-eb66-a6ce" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="1bd0-fc33-936b-f5e5">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="1d11-e616-eb66-a6ce" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Night Lords" hidden="true" id="41f3-98ed-111c-1b3a" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dfb8-46ea-db9d-bf16" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cca-dbcc-4943-7a23" includeChildSelections="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dfb8-46ea-db9d-bf16" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cca-dbcc-4943-7a23" includeChildSelections="false" automatic="true"/>
               </constraints>
               <categoryLinks>
-                <categoryLink targetId="72cb-1cf8-0e7d-51d2" id="0bdd-3244-dfe0-8326" primary="false" name="EotL - Night Lords"/>
+                <categoryLink targetId="af2c-9f21-ea3d-9bcf" id="837b-9546-86f3-3816" primary="false" name="EotL-NL"/>
               </categoryLinks>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54125,15 +54197,25 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="e404-e8a8-a085-686d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="1" field="dfb8-46ea-db9d-bf16">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="e404-e8a8-a085-686d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="1cca-dbcc-4943-7a23">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="e404-e8a8-a085-686d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Blood Angels" hidden="true" id="99d9-55a5-a1f1-78b2" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6601-28a6-7bfc-a3b3" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1962-dd1d-1df2-ebda" includeChildSelections="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e431-fa6d-f38a-60e6" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f467-6d72-7154-e7bc" includeChildSelections="false" automatic="true"/>
               </constraints>
               <categoryLinks>
-                <categoryLink targetId="d819-0c9d-aad2-4238" id="c180-bb1e-d8fd-1149" primary="false" name="EotL - Blood Angels"/>
+                <categoryLink targetId="5f71-ed32-cb07-a7e3" id="f189-dc06-554a-6a71" primary="false" name="EotL-BA"/>
               </categoryLinks>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54141,15 +54223,25 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="f555-f686-a2d1-2f39" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="1" field="e431-fa6d-f38a-60e6">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="f555-f686-a2d1-2f39" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="f467-6d72-7154-e7bc">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="f555-f686-a2d1-2f39" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Death Guard" hidden="true" id="a3db-f87e-3887-f5ed" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="aa4f-4a6d-0551-fc31" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf77-217a-c5bf-5582" includeChildSelections="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="aa4f-4a6d-0551-fc31" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf77-217a-c5bf-5582" includeChildSelections="false" automatic="true"/>
               </constraints>
               <categoryLinks>
-                <categoryLink targetId="f6a9-02e2-ff4f-9583" id="5790-99f6-d413-d70e" primary="false" name="EotL - Death Guard"/>
+                <categoryLink targetId="c494-2873-82da-79f3" id="6722-a6b6-6c32-7ee4" primary="false" name="EotL-DG"/>
               </categoryLinks>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54157,15 +54249,25 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="5908-fbe0-934a-6137" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="1" field="aa4f-4a6d-0551-fc31">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="5908-fbe0-934a-6137" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="bf77-217a-c5bf-5582">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="5908-fbe0-934a-6137" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Dark Angels" hidden="true" id="2288-885f-ef3f-b11e" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d652-9ca5-fc0e-b6c0" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0661-0cd5-bd65-b9fe" includeChildSelections="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d652-9ca5-fc0e-b6c0" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0661-0cd5-bd65-b9fe" includeChildSelections="false" automatic="true"/>
               </constraints>
               <categoryLinks>
-                <categoryLink targetId="6c4f-19ae-d41f-377b" id="0e46-f5c9-5d4e-bf45" primary="false" name="EotL - Dark Angels"/>
+                <categoryLink targetId="69dd-9a79-6562-14a1" id="b318-7112-e5b7-2408" primary="false" name="EotL-DA"/>
               </categoryLinks>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54173,15 +54275,25 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="5436-0292-e25f-0724" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="1" field="d652-9ca5-fc0e-b6c0">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="5436-0292-e25f-0724" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="0661-0cd5-bd65-b9fe">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="5436-0292-e25f-0724" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Imperial Fists" hidden="true" id="bf7e-ba73-5e0c-9661" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0fea-27da-e901-9e68" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05d8-a9dc-edf2-0d0c" includeChildSelections="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0fea-27da-e901-9e68" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05d8-a9dc-edf2-0d0c" includeChildSelections="false" automatic="true"/>
               </constraints>
               <categoryLinks>
-                <categoryLink targetId="6d50-f0f1-4c81-4fa5" id="3e20-53c1-f57a-1d47" primary="false" name="EotL - Imperial Fists"/>
+                <categoryLink targetId="165b-c1bf-70d0-1614" id="7436-f801-5696-f021" primary="false" name="EotL-IF"/>
               </categoryLinks>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54189,15 +54301,25 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="ac5c-235d-214a-b519" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="1" field="0fea-27da-e901-9e68">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ac5c-235d-214a-b519" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="05d8-a9dc-edf2-0d0c">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="ac5c-235d-214a-b519" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Alpha Legion" hidden="true" id="c49e-0bb2-8109-d028" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5406-e9eb-20ae-5cb9" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a23-5708-969a-e762" includeChildSelections="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5406-e9eb-20ae-5cb9" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a23-5708-969a-e762" includeChildSelections="false" automatic="true"/>
               </constraints>
               <categoryLinks>
-                <categoryLink targetId="1252-6dc4-22d7-4a8f" id="96dd-6930-927a-078d" primary="false" name="EotL - Alpha Legion"/>
+                <categoryLink targetId="7cb8-1117-ebad-69ca" id="853e-404c-ec49-21bd" primary="false" name="EotL-AL"/>
               </categoryLinks>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54205,12 +54327,22 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="b643-acdd-80a2-6a5e" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="1" field="5406-e9eb-20ae-5cb9">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b643-acdd-80a2-6a5e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="4a23-5708-969a-e762">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b643-acdd-80a2-6a5e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Sons of Horus" hidden="true" id="4a79-7c86-7041-7f6c" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="088c-8eed-b398-6786" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adea-2ddd-9eaa-744f" includeChildSelections="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="088c-8eed-b398-6786" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adea-2ddd-9eaa-744f" includeChildSelections="false" automatic="true"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54218,15 +54350,25 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="bd13-7b89-7edf-23d9" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="1" field="088c-8eed-b398-6786">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="bd13-7b89-7edf-23d9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="adea-2ddd-9eaa-744f">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="bd13-7b89-7edf-23d9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink targetId="20ba-2d32-325b-0f43" id="b8fa-735b-35e4-f7d7" primary="false" name="EotL - Sons of Horus"/>
+                <categoryLink targetId="b7fc-56f9-579e-0030" id="ade5-1313-a53c-5eaa" primary="false" name="EotL-SH"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Space Wolves" hidden="true" id="6aaf-df3e-4b7d-b58c" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0ef8-24c8-9221-b5be" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8a4-3a15-5d57-f0ad" includeChildSelections="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0ef8-24c8-9221-b5be" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8a4-3a15-5d57-f0ad" includeChildSelections="false" automatic="true"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54234,15 +54376,25 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="d56f-9f02-0f4f-13ed" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="1" field="0ef8-24c8-9221-b5be">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="d56f-9f02-0f4f-13ed" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="c8a4-3a15-5d57-f0ad">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="d56f-9f02-0f4f-13ed" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink targetId="34b6-2cfd-313a-0eff" id="ef22-cd12-b459-7484" primary="false" name="EotL - Space Wolves"/>
+                <categoryLink targetId="7f85-b2b1-29bd-b5a2" id="7c84-fc9a-ba64-e4c6" primary="false" name="EotL-SW"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Thousand Sons" hidden="true" id="9c4c-7907-5851-a808" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="94f2-20c2-3047-40e7" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aff9-a672-9ea5-36cf" includeChildSelections="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="94f2-20c2-3047-40e7" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aff9-a672-9ea5-36cf" includeChildSelections="false" automatic="true"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54250,15 +54402,25 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="f16b-151d-008f-72e0" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="1" field="94f2-20c2-3047-40e7">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="f16b-151d-008f-72e0" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="aff9-a672-9ea5-36cf">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="f16b-151d-008f-72e0" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink targetId="1992-9042-5894-f2dc" id="926c-95a8-b64c-0426" primary="false" name="EotL - Thousand Sons"/>
+                <categoryLink targetId="484e-033c-00d8-9715" id="461c-8bcb-3c1b-836b" primary="false" name="EotL-TS"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Ultramarines" hidden="true" id="5e6d-d0d4-20e1-d410" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="04bd-afa6-c06e-69d2" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10c2-246b-5060-5081" includeChildSelections="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="04bd-afa6-c06e-69d2" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10c2-246b-5060-5081" includeChildSelections="false" automatic="true"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54266,15 +54428,25 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="10b7-7510-b40d-3ef0" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="1" field="04bd-afa6-c06e-69d2">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="10b7-7510-b40d-3ef0" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="10c2-246b-5060-5081">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="10b7-7510-b40d-3ef0" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink targetId="bc4d-0973-2772-9330" id="8312-b366-2d59-4f85" primary="false" name="EotL - Ultramarines"/>
+                <categoryLink targetId="8427-5777-8664-083e" id="ad50-8b8e-4645-c39e" primary="false" name="EotL-UM"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - White Scars" hidden="true" id="ebd1-6db9-a296-8724" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1e38-b593-e38a-78ce" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7c2-e456-323a-631e" includeChildSelections="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1e38-b593-e38a-78ce" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7c2-e456-323a-631e" includeChildSelections="false" automatic="true"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54282,15 +54454,25 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="389a-09a0-f4bb-92ae" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="1" field="1e38-b593-e38a-78ce">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="389a-09a0-f4bb-92ae" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="b7c2-e456-323a-631e">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="389a-09a0-f4bb-92ae" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink targetId="c89e-a6a3-9ac6-1283" id="b1a7-34d9-431b-bd4b" primary="false" name="EotL - White Scars"/>
+                <categoryLink targetId="73f7-0054-e5d7-8efb" id="37cc-d139-95d1-3b7f" primary="false" name="EotL-WS"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - Word Bearers" hidden="true" id="05a2-a78b-9c26-9d27" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fe30-dcbf-4df7-772d" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eef8-746b-2f48-119d" includeChildSelections="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fe30-dcbf-4df7-772d" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eef8-746b-2f48-119d" includeChildSelections="false" automatic="true"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54298,15 +54480,25 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="a885-8f19-2f49-9c0d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="1" field="fe30-dcbf-4df7-772d">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="a885-8f19-2f49-9c0d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="eef8-746b-2f48-119d">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="a885-8f19-2f49-9c0d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink targetId="7712-7d17-1f9e-bf1f" id="1c44-49a0-5194-ff4a" primary="false" name="EotL - Word Bearers"/>
+                <categoryLink targetId="b1f7-02a0-e90d-15c7" id="5140-2aeb-5fdd-3c93" primary="false" name="EotL-WB"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="EotL - World Eaters" hidden="true" id="603c-d219-084e-7a53" defaultAmount="1">
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="10df-00c4-7975-23f8" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01dc-94e1-4475-04e5" includeChildSelections="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="10df-00c4-7975-23f8" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01dc-94e1-4475-04e5" includeChildSelections="false" automatic="true"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -54314,9 +54506,19 @@ Further, if this Prime Advantage is selected for a Unit in a Primary or Allied 
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="ad72-2b78-509c-286d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="1" field="10df-00c4-7975-23f8">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ad72-2b78-509c-286d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="01dc-94e1-4475-04e5">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="ad72-2b78-509c-286d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <categoryLinks>
-                <categoryLink targetId="d877-8b72-fd0b-1e4a" id="e43d-0c5e-cb31-83ac" primary="false" name="EotL - World Eaters"/>
+                <categoryLink targetId="67b4-0b06-af17-1321" id="1716-2a59-c5ab-f9b5" primary="false" name="EotL-WE"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
