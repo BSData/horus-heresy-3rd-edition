@@ -1365,4 +1365,96 @@ Despite being a Strategic Weapon, a Weapon with this Special Rule may not be use
     <catalogueLink type="catalogue" name="Special Rules" id="02c6-8592-a435-b590" targetId="106b-693b-99f2-00c3"/>
     <catalogueLink type="catalogue" name="Weapons" id="9c77-4046-66a1-74aa" targetId="a22d-4dd0-c59d-57d3"/>
   </catalogueLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Power Weapon" id="a5b3-cfaa-eb83-fb25" hidden="false" flatten="true">
+      <entryLinks>
+        <entryLink import="true" name="Power sword" hidden="false" id="9dc3-3c40-cc3f-49d1" type="selectionEntry" targetId="59a9-57c1-fff9-ca75" sortIndex="1">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="0" field="9893-c379-920b-8982">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="defaultAmount">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="dd1b-70ef-6015-1291" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4cc5-9e6b-afc2-ed25"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Power axe" hidden="false" id="5085-e3f1-0239-cdb2" type="selectionEntry" targetId="4861-b77a-620c-f0d6" sortIndex="2">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="0" field="9893-c379-920b-8982">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="fbf2-224c-de97-9e6c"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Power maul" hidden="false" id="6527-d8a1-ce04-4707" type="selectionEntry" targetId="c4fa-659d-bf4b-bad1" sortIndex="3">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="0" field="9893-c379-920b-8982">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5473-cd51-41a8-c268"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Power lance" hidden="false" id="b2b1-ce31-82e7-178a" type="selectionEntry" targetId="f56f-c410-b47c-58d9" sortIndex="4">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="0" field="9893-c379-920b-8982">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9496-7781-39a7-31ec"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
