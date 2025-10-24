@@ -18943,17 +18943,12 @@
             </categoryLink>
             <categoryLink name="Fast Attack" hidden="false" id="56de-f452-920e-f1e2" targetId="cf96-8891-3f9a-8921">
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e9e2-03bd-0542-1120"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9e2-03bd-0542-1120"/>
               </constraints>
               <modifiers>
                 <modifier type="increment" value="1" field="e9e2-03bd-0542-1120">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
