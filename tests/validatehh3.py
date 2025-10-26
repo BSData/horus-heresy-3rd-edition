@@ -229,6 +229,8 @@ class GameTests(unittest.TestCase):
 
     def check_for_condition_of_lb_slot(self, node: Node, slot, expected_qty):
         conditions = node.get_child("conditions")
+        if conditions is None and node.target_name == "High Command":
+            return  # High Command can be 0 with no conditions, for Special Assignment.
         self.assertIsNotNone(conditions, "Should have conditions set")
         self.assertEqual(len(conditions.children), 1, "Should have one condition")
         condition = conditions.get_child("condition")
