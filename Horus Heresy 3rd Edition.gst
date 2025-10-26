@@ -5817,11 +5817,6 @@
                     <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="0" field="a9f8-7517-de0a-4edb">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="6016-95a1-7169-71a0" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Heavy Transport - Logisticae" hidden="false" id="0740-36be-9d63-2f8e" targetId="6fc0-917e-44a4-a4da">
