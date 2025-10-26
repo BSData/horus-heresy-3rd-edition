@@ -723,7 +723,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2ba3-e70b-19f4-bb22" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="     Command - Centurions Only" hidden="false" id="41c2-27b7-d457-0db4" targetId="1429-f03a-e8a5-478c">
+            <categoryLink name="Command - Centurions Only" hidden="false" id="41c2-27b7-d457-0db4" targetId="1429-f03a-e8a5-478c">
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="7c25-0f2e-2ee0-acbe"/>
               </constraints>
