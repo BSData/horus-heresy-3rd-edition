@@ -5819,7 +5819,7 @@
                 </modifier>
                 <modifier type="set" value="0" field="a9f8-7517-de0a-4edb">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6016-95a1-7169-71a0" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="6016-95a1-7169-71a0" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
