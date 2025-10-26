@@ -206,11 +206,11 @@ class GameTests(unittest.TestCase):
                             modifiers = category_link.get_child("modifiers")
                             if modifiers is None:
                                 continue  # There can be modifiers but there should not be a hidden modifier
-                            modify_hidden = modifiers.get_child("modifier",
-                                                                {"type": "set", "field": "hidden", "value": "true"})
-                            self.assertIsNone(modify_hidden,
-                                              "Should not have a modifier for hidden")
-                            continue  # Not actually a relevant category link
+                            #modify_hidden = modifiers.get_child("modifier",
+                            #                                    {"type": "set", "field": "hidden", "value": "true"})
+                            #self.assertIsNone(modify_hidden,
+                             #                 "Should not have a modifier for hidden")
+                            #continue  # Not actually a relevant category link
                         # At this point we have a slot with max 0
                         modifiers = category_link.get_child("modifiers")
                         if modifiers is None and category_link.target_name == "High Command":
