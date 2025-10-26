@@ -693,6 +693,7 @@
     <categoryEntry name="EotL-WS" id="73f7-0054-e5d7-8efb" hidden="false"/>
     <categoryEntry name="EotL-WB" id="b1f7-02a0-e90d-15c7" hidden="false"/>
     <categoryEntry name="EotL-WE" id="67b4-0b06-af17-1321" hidden="false"/>
+    <categoryEntry name="LB - High Command" id="6016-95a1-7169-71a0" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
@@ -5818,7 +5819,7 @@
                 </modifier>
                 <modifier type="set" value="0" field="a9f8-7517-de0a-4edb">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6016-95a1-7169-71a0" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
