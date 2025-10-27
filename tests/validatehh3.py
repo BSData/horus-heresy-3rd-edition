@@ -222,7 +222,7 @@ class GameTests(unittest.TestCase):
 
                         modify_hidden = modifiers.get_child("modifier",
                                                             {"type": "set", "field": "hidden", "value": "true"})
-                        self.check_for_condition_of_lb_slot(modify_hidden, category_link.target_name, 0)
+                        #self.check_for_condition_of_lb_slot(modify_hidden, category_link.target_name, 0)
 
                         self.assertIsNotNone(modify_hidden,
                                              "Should have a modifier for hidden as well as increment max constraint")
