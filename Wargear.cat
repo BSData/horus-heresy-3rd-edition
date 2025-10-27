@@ -606,45 +606,6 @@ A Model with an ionic flare shield has a 5+ Invulnerable Save against Shooting A
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Armatus Necrotechnika" hidden="false" id="bb42-fb24-9e5c-061d">
-      <profiles>
-        <profile name="Armatus Necrotechnika" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="7ad2-cbc3-0b7a-5842">
-          <characteristics>
-            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">&quot;Vehicles may decrease the Target Number of Repair Tests if Models were Removed as Casualties from nearby Units.&quot;</characteristic>
-            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">A Model with Armatus Necrotechnika gains the Auto-Repair (5+) Special Rule. Additionally, if any Model were Removed as Casualties from a Unit that has any Model within 6&quot; of a Model with Armatus Necrotechnika during the same Turn as a Repair Role is made for that Model, the Controlling Player can add 1 to the result of the Repair Roll.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Auto-Repair (X)" id="2311-30b6-aec8-b33d" hidden="false" type="rule" targetId="3973-ed50-1482-ff4a">
-          <modifiers>
-            <modifier type="set" value="Auto-Repair (5+)" field="name"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="aa5a-c9fd-1eb1-7a45" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="736e-3967-e72b-e3ac" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2e7-9667-5283-4a05"/>
-        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0f42-d3af-e3b7-99e4"/>
-      </constraints>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Argyrum pattern boarding shield" hidden="false" id="08d0-c612-7007-103d">
       <profiles>
         <profile name="Argyrum pattern boarding shield" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="8fe1-9ce0-eb3c-16ae" publicationId="b905-0414-1057-bb34" page="245">
