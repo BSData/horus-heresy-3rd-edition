@@ -2602,9 +2602,27 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <comment>RG+Cmd Only</comment>
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="340c-1d4f-1f31-fb70" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="754a-10dd-0b2e-1b19" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="model" childId="64ea-1dd9-765b-1a3c" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="340c-1d4f-1f31-fb70" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <costs>
@@ -2734,8 +2752,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4b81-0ea1-5c3e-737f" includeChildSelections="false" automatic="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="4b5b-dbc6-31f3-8a48" automatic="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4b81-0ea1-5c3e-737f" includeChildSelections="false" automatic="true"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="4b5b-dbc6-31f3-8a48" automatic="true"/>
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
@@ -2801,8 +2819,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="681e-edc8-6e07-e480" includeChildSelections="false" automatic="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="4f9d-87d5-b230-8c41" automatic="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="681e-edc8-6e07-e480" includeChildSelections="false" automatic="true"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="4f9d-87d5-b230-8c41" automatic="true"/>
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
@@ -9543,9 +9561,27 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <comment>RG+Cmd Only</comment>
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="340c-1d4f-1f31-fb70" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="754a-10dd-0b2e-1b19" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="model" childId="64ea-1dd9-765b-1a3c" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="340c-1d4f-1f31-fb70" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <costs>
@@ -10118,7 +10154,7 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a15d-dfde-f09e-c032" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a15d-dfde-f09e-c032" includeChildSelections="false" automatic="true"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="351b-41e0-9cef-c040" includeChildSelections="false" automatic="true"/>
                   </constraints>
                   <modifiers>
@@ -10151,8 +10187,8 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                     <entryLink import="true" name="Volkite charger" hidden="false" id="a124-498d-a206-95f3" type="selectionEntry" targetId="93e7-6a83-1e9e-204a" sortIndex="2"/>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a49-6223-58ba-605c" includeChildSelections="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="58be-f881-bebb-bfbf" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a49-6223-58ba-605c" includeChildSelections="false" automatic="true"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="58be-f881-bebb-bfbf" includeChildSelections="false" automatic="true"/>
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="0" field="58be-f881-bebb-bfbf">
@@ -10191,9 +10227,27 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <comment>RG+Cmd Only</comment>
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="340c-1d4f-1f31-fb70" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="754a-10dd-0b2e-1b19" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="model" childId="64ea-1dd9-765b-1a3c" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="340c-1d4f-1f31-fb70" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <costs>
@@ -10205,7 +10259,7 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4b06-1a70-2757-faf1" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4b06-1a70-2757-faf1" includeChildSelections="false" automatic="true"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="1" field="4b06-1a70-2757-faf1">
@@ -10547,9 +10601,27 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <comment>RG+Cmd Only</comment>
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="340c-1d4f-1f31-fb70" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="754a-10dd-0b2e-1b19" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="model" childId="64ea-1dd9-765b-1a3c" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="340c-1d4f-1f31-fb70" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <costs>
@@ -10561,7 +10633,7 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c52d-4350-e2a7-4f3c" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c52d-4350-e2a7-4f3c" includeChildSelections="false" automatic="true"/>
               </constraints>
               <selectionEntryGroups>
                 <selectionEntryGroup name="May exchange bolter for:" id="efb3-1f57-da4a-e2dd" hidden="false">
@@ -11117,9 +11189,27 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <comment>RG+Cmd Only</comment>
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="340c-1d4f-1f31-fb70" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="754a-10dd-0b2e-1b19" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="model" childId="64ea-1dd9-765b-1a3c" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="340c-1d4f-1f31-fb70" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <costs>
