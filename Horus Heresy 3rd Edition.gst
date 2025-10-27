@@ -24629,7 +24629,7 @@
       <modifiers>
         <modifier type="increment" value="1" field="44b5-c573-a90a-3324">
           <repeats>
-            <repeat value="4" repeats="1" field="9893-c379-920b-8982" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="4" repeats="1" field="limit::9893-c379-920b-8982" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
         <modifier type="add" value="Please use the &quot;Knight Lord of War&quot; Detachment instead" field="error">
