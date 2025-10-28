@@ -3474,9 +3474,27 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                       <modifiers>
                         <modifier type="set" value="false" field="hidden">
                           <comment>SW Only</comment>
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="3e12-20bf-607f-c531" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="model" childId="d56f-9f02-0f4f-13ed" shared="true" includeChildSelections="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                       <constraints>
@@ -18605,7 +18623,7 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                 <entryLink import="true" name="Chainaxe" hidden="true" id="6d54-6d87-3f22-bd3c" type="selectionEntry" targetId="31a4-f8de-de6d-1fd9" sortIndex="2">
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
-                      <comment>IW</comment>
+                      <comment>WE</comment>
                       <conditionGroups>
                         <conditionGroup type="or">
                           <conditions>
@@ -18616,6 +18634,12 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                               <conditions>
                                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d39-355e-7faa-51a0" shared="true" includeChildSelections="true" includeChildForces="true"/>
                                 <condition type="instanceOf" value="1" field="forces" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="model" childId="ad72-2b78-509c-286d" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -18631,9 +18655,27 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <comment>SW Only</comment>
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3e12-20bf-607f-c531" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="model" childId="d56f-9f02-0f4f-13ed" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -22360,7 +22402,7 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                 <entryLink import="true" name="Chainaxe" hidden="true" id="b080-85dd-c98c-e79c" type="selectionEntry" targetId="31a4-f8de-de6d-1fd9" sortIndex="2">
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
-                      <comment>IW</comment>
+                      <comment>WE</comment>
                       <conditionGroups>
                         <conditionGroup type="or">
                           <conditions>
@@ -22371,6 +22413,12 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                               <conditions>
                                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d39-355e-7faa-51a0" shared="true" includeChildSelections="true" includeChildForces="true"/>
                                 <condition type="instanceOf" value="1" field="forces" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="model" childId="ad72-2b78-509c-286d" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -22386,11 +22434,24 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <conditionGroups>
-                        <conditionGroup type="and">
+                        <conditionGroup type="or">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3e12-20bf-607f-c531" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="model" childId="d56f-9f02-0f4f-13ed" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                           <conditions>
                             <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
                           </conditions>
-                          <comment>DA</comment>
                         </conditionGroup>
                       </conditionGroups>
                       <comment>SL+Cmd/Spec/Champ Only</comment>
@@ -23926,9 +23987,27 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <comment>SW Only</comment>
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="3e12-20bf-607f-c531" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="d56f-9f02-0f4f-13ed" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -23948,6 +24027,12 @@ If a Model with this Special Rule is Removed as a Casualty during any Initiativ
                           <conditions>
                             <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d39-355e-7faa-51a0" shared="true" includeChildSelections="true" includeChildForces="true"/>
                             <condition type="instanceOf" value="1" field="forces" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="ad72-2b78-509c-286d" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -43006,9 +43091,27 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <comment>SW Only</comment>
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3e12-20bf-607f-c531" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="model" childId="d56f-9f02-0f4f-13ed" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -45948,6 +46051,12 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                                 <condition type="instanceOf" value="1" field="forces" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="model" childId="ad72-2b78-509c-286d" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
                           </conditionGroups>
                         </conditionGroup>
                       </conditionGroups>
@@ -45961,9 +46070,27 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <comment>SW Only</comment>
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="3e12-20bf-607f-c531" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="d56f-9f02-0f4f-13ed" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -46731,6 +46858,12 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                                 <condition type="instanceOf" value="1" field="forces" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="model" childId="ad72-2b78-509c-286d" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
                           </conditionGroups>
                         </conditionGroup>
                       </conditionGroups>
@@ -46744,9 +46877,27 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <comment>SW Only</comment>
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="3e12-20bf-607f-c531" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="d56f-9f02-0f4f-13ed" shared="true" includeChildSelections="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="force" childId="3256-29e9-1d7a-12a7" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="force" childId="d995-cb33-be41-ecf8" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
