@@ -3196,7 +3196,7 @@ Preceptor</comment>
           <modifiers>
             <modifier type="increment" value="1" field="f23e-0055-7aba-293f">
               <repeats>
-                <repeat value="4" repeats="1" field="9893-c379-920b-8982" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+                <repeat value="4" repeats="1" field="limit::9893-c379-920b-8982" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
               </repeats>
             </modifier>
             <modifier type="set" value="false" field="hidden">
@@ -3205,6 +3205,11 @@ Preceptor</comment>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="parent" childId="fd9b-d04e-362d-8e5d" shared="true"/>
               </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="f23e-0055-7aba-293f">
+              <repeats>
+                <repeat value="1" repeats="1" field="9893-c379-920b-8982" scope="roster" childId="22ee-7208-4089-b005" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
             </modifier>
           </modifiers>
         </forceEntry>
