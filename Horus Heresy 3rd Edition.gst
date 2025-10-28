@@ -693,6 +693,7 @@
     <categoryEntry name="EotL-WS" id="73f7-0054-e5d7-8efb" hidden="false"/>
     <categoryEntry name="EotL-WB" id="b1f7-02a0-e90d-15c7" hidden="false"/>
     <categoryEntry name="EotL-WE" id="67b4-0b06-af17-1321" hidden="false"/>
+    <categoryEntry name="Warlord or Lord of War" id="3420-1652-ccd9-aa8e" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
@@ -23302,6 +23303,7 @@
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="dae8-8a74-0984-6332" includeChildSelections="false"/>
         <constraint type="max" value="0" field="3e8e-05ee-be52-12d6" scope="self" shared="false" id="0ab6-91a0-792e-4068" includeChildSelections="true" includeChildForces="true"/>
         <constraint type="max" value="0" field="159d-855c-533d-f592" scope="self" shared="false" id="22e2-3454-8828-04e6" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="0" field="14bd-cad0-cd3d-8b23" scope="roster" shared="true" id="15b0-a8ce-6469-929a" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <categoryLinks>
         <categoryLink name="Allegiance" hidden="false" id="a1c5-83d9-7485-0c6d" targetId="c408-52f1-b632-4c82">
@@ -23547,6 +23549,16 @@
         <modifier type="increment" value="1" field="0ab6-91a0-792e-4068">
           <repeats>
             <repeat value="1" repeats="1" field="selections" scope="force" childId="3553-322a-f1b2-5257" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="15b0-a8ce-6469-929a">
+          <repeats>
+            <repeat value="4" repeats="1" field="limit::9893-c379-920b-8982" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" value="1" field="15b0-a8ce-6469-929a">
+          <repeats>
+            <repeat value="1" repeats="1" field="9893-c379-920b-8982" scope="roster" childId="3420-1652-ccd9-aa8e" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -24829,6 +24841,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="decrement" value="1" field="44b5-c573-a90a-3324">
+          <repeats>
+            <repeat value="1" repeats="1" field="9893-c379-920b-8982" scope="roster" childId="22ee-7208-4089-b005" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
       </modifiers>
     </forceEntry>
     <forceEntry name="Example Detachment" id="dd98-fd79-acb1-14b0" hidden="true">
@@ -25226,6 +25243,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
       </modifiers>
       <comment>Hidden from new list screen, but displays count</comment>
     </costType>
+    <costType name="Combined Warlord and Lord of War Points" id="14bd-cad0-cd3d-8b23" defaultCostLimit="-1" hidden="true"/>
   </costTypes>
   <profileTypes>
     <profileType name="Profile" id="a76f-8e23-8c3e-166d" hidden="false" sortIndex="1">
