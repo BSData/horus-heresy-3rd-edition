@@ -2071,6 +2071,7 @@
                   <conditions>
                     <condition type="atLeast" value="3000" field="limit::9893-c379-920b-8982" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
                     <condition type="atLeast" value="3000" field="9893-c379-920b-8982" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="equalTo" value="-1" field="limit::9893-c379-920b-8982" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2251,6 +2252,16 @@
                 </conditionGroup>
               </conditionGroups>
               <comment>Visible to all factions</comment>
+            </modifier>
+            <modifier type="add" value="Warlord requires an Army of at least 3000 points" field="warning">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atMost" value="3000" field="limit::9893-c379-920b-8982" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atMost" value="3000" field="9893-c379-920b-8982" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </forceEntry>
@@ -23560,6 +23571,9 @@
           <repeats>
             <repeat value="1" repeats="1" field="9893-c379-920b-8982" scope="roster" childId="3420-1652-ccd9-aa8e" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
+          <conditions>
+            <condition type="notEqualTo" value="-1" field="limit::9893-c379-920b-8982" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </forceEntry>
@@ -24845,6 +24859,9 @@
           <repeats>
             <repeat value="1" repeats="1" field="9893-c379-920b-8982" scope="roster" childId="22ee-7208-4089-b005" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
+          <conditions>
+            <condition type="notEqualTo" value="-1" field="limit::9893-c379-920b-8982" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </forceEntry>
