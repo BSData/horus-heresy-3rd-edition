@@ -206,10 +206,10 @@ class GameTests(unittest.TestCase):
                             modifiers = category_link.get_child("modifiers")
                             if modifiers is None:
                                 continue  # There can be modifiers but there should not be a hidden modifier
-                            #modify_hidden = modifiers.get_child("modifier",
+                            # modify_hidden = modifiers.get_child("modifier",
                             #                                    {"type": "set", "field": "hidden", "value": "true"})
-                            #self.assertIsNone(modify_hidden,
-                             #                 "Should not have a modifier for hidden")
+                            # self.assertIsNone(modify_hidden,
+                            #                 "Should not have a modifier for hidden")
                             continue  # Not actually a relevant category link
                         # At this point we have a slot with max 0
                         modifiers = category_link.get_child("modifiers")
@@ -217,22 +217,22 @@ class GameTests(unittest.TestCase):
                             continue  # High Command can be 0 with mo modifiers, for Special Assignment.
                         self.assertIsNotNone(modifiers, "All force org slots that are max 0 should have modifiers")
                         modify_max_constraint = modifiers.get_child("modifier", {"field": max_constraint.id})
-                        #self.assertIsNotNone(modify_max_constraint, "Should have a modifier to max")
-                        #self.check_for_condition_of_lb_slot(modify_max_constraint, category_link.target_name, 1)
+                        # self.assertIsNotNone(modify_max_constraint, "Should have a modifier to max")
+                        # self.check_for_condition_of_lb_slot(modify_max_constraint, category_link.target_name, 1)
 
                         modify_hidden = modifiers.get_child("modifier",
                                                             {"type": "set", "field": "hidden", "value": "true"})
-                        #self.check_for_condition_of_lb_slot(modify_hidden, category_link.target_name, 0)
+                        # self.check_for_condition_of_lb_slot(modify_hidden, category_link.target_name, 0)
 
                         self.assertIsNotNone(modify_hidden,
                                              "Should have a modifier for hidden as well as increment max constraint")
 
     def check_for_condition_of_lb_slot(self, node: Node, slot, expected_qty):
         conditions = node.get_child("conditions")
-        #self.assertIsNotNone(conditions, "Should have conditions set")
-        #self.assertEqual(len(conditions.children), 1, "Should have one condition")
+        # self.assertIsNotNone(conditions, "Should have conditions set")
+        # self.assertEqual(len(conditions.children), 1, "Should have one condition")
         condition = conditions.get_child("condition")
-        #self.assertEqual(condition.target_name, "LB - " + slot)
+        # self.assertEqual(condition.target_name, "LB - " + slot)
         expected_attribs = {
             "type": "equalTo",
             "value": str(expected_qty),
@@ -243,7 +243,7 @@ class GameTests(unittest.TestCase):
         }
         attribs = condition.attrib.copy()
         attribs.pop("childId")  # Ignore child ID since we checked that earlier
-        #self.assertDictEqual(attribs, expected_attribs)
+        # self.assertDictEqual(attribs, expected_attribs)
 
     # def test_all_allied_detachments_linked(self):
     #    crusade = self.system.get_node_by_id("8562-592c-8d4b-a1f0")
@@ -457,11 +457,13 @@ class GameTests(unittest.TestCase):
 
             self.assertCountEqual(actual_mods, expected_mods)
         actual_conditions = []
-        for condition in mod_group.get_child("conditions").children:
-            attrib = condition.attrib.copy()
-            if "includeChildForces" not in attrib.keys():
-                attrib["includeChildForces"] = "false"
-            actual_conditions.append(attrib)
+        conditions_node = mod_group.get_child("conditions")
+        if conditions_node:
+            for condition in conditions_node.children:
+                attrib = condition.attrib.copy()
+                if "includeChildForces" not in attrib.keys():
+                    attrib["includeChildForces"] = "false"
+                actual_conditions.append(attrib)
         expected_conditions = [{
             "type": "atLeast",
             "value": "1",
