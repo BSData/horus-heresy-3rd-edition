@@ -211,7 +211,7 @@
     </categoryEntry>
     <categoryEntry name="Flyer Model Sub-Type" id="42a3-02e9-e0e4-8292" hidden="false">
       <rules>
-        <rule name="New Rule" id="ff09-959b-1777-c8b9" hidden="false">
+        <rule name="Flyer Sub-Type" id="ff09-959b-1777-c8b9" hidden="false">
           <description>- Whilst on the Battlefield, a Model with the Flyer Sub-Type does not block Line of Sight or the Movement of any Model.
 - When moving a Model with the Flyer Sub-Type, ignore all Terrain effects and Rules. However, a Model with the Flyer Sub-Type may still not end a move in or on Impassable Terrain, a Terrain Feature, or a Building.
 - Models with the Flyer Sub-Type may move through Models with the Vehicle Type, but never inflict Hits on enemy Units they move through and are never eligible to be the Target of the Death or Glory Advanced Reaction.
