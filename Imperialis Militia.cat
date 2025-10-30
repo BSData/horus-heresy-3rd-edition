@@ -99,21 +99,6 @@
                   </conditions>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <comment>Imperialis Provosts</comment>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                  </modifiers>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="6372-e537-5617-fe60" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifierGroup>
-                <modifierGroup type="and">
                   <comment>Kinfolk Helots</comment>
                   <modifiers>
                     <modifier type="increment" value="1" field="3120-8275-e537-ecd2"/>
@@ -402,6 +387,15 @@
         <infoLink name="Irregulars" id="f9a4-e0ed-c13c-fcd6" hidden="false" type="rule" targetId="2d43-afcd-2393-d1bb"/>
         <infoLink name="[Allegiance]" id="5fb7-844f-d685-b8a3" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="Imperialis Militia" id="4deb-afb9-4052-c44b" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
+        <infoLink name="Implacable Advance" id="44dd-2d98-327c-bd7f" hidden="true" type="rule" targetId="3898-aafb-35e0-141b">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20bb-9821-a3aa-3ef7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="1d43-a617-eeb1-7174" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6"/>
@@ -535,21 +529,6 @@
                             <condition type="atLeast" value="1" field="selections" scope="roster" childId="a3c5-5465-34f7-4060" shared="true" includeChildSelections="true" includeChildForces="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifierGroup>
-                    <modifierGroup type="and">
-                      <comment>Imperialis Provosts</comment>
-                      <modifiers>
-                        <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                      </modifiers>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -705,21 +684,6 @@
                             <condition type="atLeast" value="1" field="selections" scope="roster" childId="a3c5-5465-34f7-4060" shared="true" includeChildSelections="true" includeChildForces="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifierGroup>
-                    <modifierGroup type="and">
-                      <comment>Imperialis Provosts</comment>
-                      <modifiers>
-                        <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                      </modifiers>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -1382,6 +1346,15 @@
         <infoLink name="Instil Order" id="3db2-5fdd-1a8f-91c8" hidden="false" type="rule" targetId="1db8-0c91-88d9-0515"/>
         <infoLink name="[Allegiance]" id="dcce-4bbc-eaca-8091" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="Imperialis Militia" id="a3e3-1a59-c656-1d74" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
+        <infoLink name="Implacable Advance" id="22e0-4d7a-9cdc-4aa8" hidden="true" type="rule" targetId="3898-aafb-35e0-141b">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20bb-9821-a3aa-3ef7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <comment>Paragon of Battle is a little messy with multiple command</comment>
       <modifiers>
@@ -1512,21 +1485,6 @@
                         <condition type="atLeast" value="1" field="selections" scope="roster" childId="a3c5-5465-34f7-4060" shared="true" includeChildSelections="true" includeChildForces="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifierGroup>
-                <modifierGroup type="and">
-                  <comment>Imperialis Provosts</comment>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                  </modifiers>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -1844,21 +1802,6 @@
                         <condition type="atLeast" value="1" field="selections" scope="roster" childId="a3c5-5465-34f7-4060" shared="true" includeChildSelections="true" includeChildForces="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifierGroup>
-                <modifierGroup type="and">
-                  <comment>Imperialis Provosts</comment>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                  </modifiers>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -2240,21 +2183,6 @@
                   </conditionGroups>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <comment>Imperialis Provosts</comment>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                  </modifiers>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="6372-e537-5617-fe60" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifierGroup>
-                <modifierGroup type="and">
                   <comment>Kinfolk Helots</comment>
                   <modifiers>
                     <modifier type="increment" value="1" field="3120-8275-e537-ecd2"/>
@@ -2557,21 +2485,6 @@
                         <condition type="atLeast" value="1" field="selections" scope="roster" childId="a3c5-5465-34f7-4060" shared="true" includeChildSelections="true" includeChildForces="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifierGroup>
-                <modifierGroup type="and">
-                  <comment>Imperialis Provosts</comment>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                  </modifiers>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -2912,21 +2825,6 @@
                         <condition type="atLeast" value="1" field="selections" scope="roster" childId="a3c5-5465-34f7-4060" shared="true" includeChildSelections="true" includeChildForces="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifierGroup>
-                <modifierGroup type="and">
-                  <comment>Imperialis Provosts</comment>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                  </modifiers>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3364,6 +3262,15 @@
         </infoLink>
         <infoLink name="Imperialis Militia" id="db44-8628-9023-977c" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
         <infoLink name="[Allegiance]" id="7745-c305-3a9a-8331" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Implacable Advance" id="d2c4-95a2-009f-7b41" hidden="true" type="rule" targetId="3898-aafb-35e0-141b">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20bb-9821-a3aa-3ef7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -3468,21 +3375,6 @@
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="roster" childId="a3c5-5465-34f7-4060" shared="true" includeChildSelections="true" includeChildForces="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifierGroup>
-                <modifierGroup type="and">
-                  <comment>Imperialis Provosts</comment>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                  </modifiers>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="6372-e537-5617-fe60" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
@@ -3888,21 +3780,6 @@
                         <condition type="atLeast" value="1" field="selections" scope="roster" childId="a3c5-5465-34f7-4060" shared="true" includeChildSelections="true" includeChildForces="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifierGroup>
-                <modifierGroup type="and">
-                  <comment>Imperialis Provosts</comment>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                  </modifiers>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -4759,21 +4636,6 @@
                   </conditionGroups>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <comment>Imperialis Provosts</comment>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                  </modifiers>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifierGroup>
-                <modifierGroup type="and">
                   <comment>Kinfolk Helots</comment>
                   <modifiers>
                     <modifier type="increment" value="1" field="3120-8275-e537-ecd2"/>
@@ -4883,6 +4745,15 @@
           </categoryLinks>
           <infoLinks>
             <infoLink name="Irregulars" id="8af5-2dae-dc68-ea01" hidden="false" type="rule" targetId="2d43-afcd-2393-d1bb"/>
+            <infoLink name="Implacable Advance" id="5e7a-7218-27ee-5b21" hidden="true" type="rule" targetId="3898-aafb-35e0-141b">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="20bb-9821-a3aa-3ef7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <modifiers>
             <modifier type="add" value="f4ba-00e5-3d2e-eaac" field="category">
@@ -5287,21 +5158,6 @@
                   </conditionGroups>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <comment>Imperialis Provosts</comment>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                  </modifiers>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="6372-e537-5617-fe60" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifierGroup>
-                <modifierGroup type="and">
                   <comment>Kinfolk Helots</comment>
                   <modifiers>
                     <modifier type="increment" value="1" field="3120-8275-e537-ecd2"/>
@@ -5617,21 +5473,6 @@
                   </conditionGroups>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <comment>Imperialis Provosts</comment>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                  </modifiers>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifierGroup>
-                <modifierGroup type="and">
                   <comment>Kinfolk Helots</comment>
                   <modifiers>
                     <modifier type="increment" value="1" field="3120-8275-e537-ecd2"/>
@@ -5827,6 +5668,15 @@
         <infoLink name="Irregulars" id="d936-e094-815a-dc90" hidden="false" type="rule" targetId="2d43-afcd-2393-d1bb"/>
         <infoLink name="[Allegiance]" id="e4e3-fd62-54ff-c7ca" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="Imperialis Militia" id="0b09-0980-2476-25e1" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
+        <infoLink name="Implacable Advance" id="c37e-f8ea-1b3e-3791" hidden="true" type="rule" targetId="3898-aafb-35e0-141b">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20bb-9821-a3aa-3ef7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="9dea-6556-5ac6-4b86" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="4">
@@ -5890,6 +5740,15 @@
         <infoLink name="Irregulars" id="922e-98de-d031-34f6" hidden="false" type="rule" targetId="2d43-afcd-2393-d1bb"/>
         <infoLink name="Imperialis Militia" id="5807-c9df-797b-0376" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
         <infoLink name="[Allegiance]" id="aca8-3641-06ae-ddd5" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Implacable Advance" id="0faa-ce81-0ea5-1f48" hidden="true" type="rule" targetId="3898-aafb-35e0-141b">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20bb-9821-a3aa-3ef7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <comment>bayonet issue</comment>
       <entryLinks>
@@ -6008,21 +5867,6 @@
                         <condition type="atLeast" value="1" field="selections" scope="roster" childId="a3c5-5465-34f7-4060" shared="true" includeChildSelections="true" includeChildForces="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifierGroup>
-                <modifierGroup type="and">
-                  <comment>Imperialis Provosts</comment>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                  </modifiers>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -6275,21 +6119,6 @@
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="roster" childId="a3c5-5465-34f7-4060" shared="true" includeChildSelections="true" includeChildForces="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifierGroup>
-                <modifierGroup type="and">
-                  <comment>Imperialis Provosts</comment>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                  </modifiers>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="6372-e537-5617-fe60" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
@@ -6584,21 +6413,6 @@
                   </conditionGroups>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <comment>Imperialis Provosts</comment>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                  </modifiers>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="6372-e537-5617-fe60" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifierGroup>
-                <modifierGroup type="and">
                   <comment>Kinfolk Helots</comment>
                   <modifiers>
                     <modifier type="increment" value="1" field="3120-8275-e537-ecd2"/>
@@ -6714,6 +6528,15 @@
         <infoLink name="Irregulars" id="6dd6-c153-44c8-b580" hidden="false" type="rule" targetId="2d43-afcd-2393-d1bb"/>
         <infoLink name="[Allegiance]" id="6d55-01a9-cbb8-67e8" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="Imperialis Militia" id="8b4e-5412-bbec-6781" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
+        <infoLink name="Implacable Advance" id="cd97-7249-3412-07ba" hidden="true" type="rule" targetId="3898-aafb-35e0-141b">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20bb-9821-a3aa-3ef7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="8879-cc61-29ed-07d2" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
@@ -6827,21 +6650,6 @@
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="roster" childId="baca-1393-31e5-6d2b" shared="true" includeChildSelections="true" includeChildForces="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifierGroup>
-                <modifierGroup type="and">
-                  <comment>Imperialis Provosts</comment>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                  </modifiers>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="6372-e537-5617-fe60" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
@@ -7100,21 +6908,6 @@
                       </conditionGroups>
                     </modifierGroup>
                     <modifierGroup type="and">
-                      <comment>Imperialis Provosts</comment>
-                      <modifiers>
-                        <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                      </modifiers>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifierGroup>
-                    <modifierGroup type="and">
                       <comment>Kinfolk Helots</comment>
                       <modifiers>
                         <modifier type="increment" value="1" field="3120-8275-e537-ecd2"/>
@@ -7226,6 +7019,15 @@
               </categoryLinks>
               <infoLinks>
                 <infoLink name="Irregulars" id="e815-fd29-9cd4-88ed" hidden="false" type="rule" targetId="2d43-afcd-2393-d1bb"/>
+                <infoLink name="Implacable Advance" id="892f-e882-a368-47c8" hidden="true" type="rule" targetId="3898-aafb-35e0-141b">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="20bb-9821-a3aa-3ef7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <modifiers>
                 <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
@@ -7325,21 +7127,6 @@
                           <conditions>
                             <condition type="atLeast" value="1" field="selections" scope="roster" childId="a3c5-5465-34f7-4060" shared="true" includeChildSelections="true" includeChildForces="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifierGroup>
-                    <modifierGroup type="and">
-                      <comment>Imperialis Provosts</comment>
-                      <modifiers>
-                        <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                      </modifiers>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="6372-e537-5617-fe60" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
@@ -7495,7 +7282,6 @@
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="ea80-5e0e-df83-c1f6"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Rapier Crew" id="6e14-b47d-040e-7975" hidden="false" type="rule" targetId="6745-08ce-be63-3a62"/>
             <infoLink name="Slow and Purposeful" id="8615-e5b2-f777-be4b" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e"/>
             <infoLink name="Support Unit (X)" id="5eeb-251d-1350-f810" hidden="false" type="rule" targetId="313f-7ed6-3833-e97c">
               <modifiers>
@@ -7510,6 +7296,18 @@
             <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
+          <rules>
+            <rule name="Rapier Crew" id="058b-c5d1-6bd5-02cd" hidden="false">
+              <description>&quot;The Characteristics of different Models with this Special Rule are used in different situations.&quot;
+Each time Wound Tests are made for a Fire Group that targets a Unit that includes any Models with this Special Rule, if any Rapier Carrier Models are in this Unit, the Toughness Characteristic of the Rapier Carriers is treated as being the majority. If any wounds are generated by these Wound Tests, the Target Model selected must be a Rapier Carrier Model if possible.
+
+
+Each time Wound Tests are made for a Strike Group targeting this Unit, the Toughness Characteristic of the Militia Gunner Models is treated as being the majority. If any wounds are generated by these Wound Tests, the Target Model selected must be a Militia Gunner Model, if possible.
+
+
+If at any point there are only Rapier Carrier Models remaining in this Unit, those Models are immediately Removed as Casualties.</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -7625,21 +7423,6 @@
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="roster" childId="baca-1393-31e5-6d2b" shared="true" includeChildSelections="true" includeChildForces="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifierGroup>
-                <modifierGroup type="and">
-                  <comment>Imperialis Provosts</comment>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                  </modifiers>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="6372-e537-5617-fe60" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
@@ -7775,6 +7558,15 @@
         <infoLink name="Imperialis Militia" id="a815-c1a3-27c8-21d7" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
         <infoLink name="Emplaced" id="ab13-9d47-07e4-c22b" hidden="false" type="rule" targetId="8ed3-88a3-5e48-4c1c"/>
         <infoLink name="Irregulars" id="d542-306d-d0d9-9c7c" hidden="false" type="rule" targetId="2d43-afcd-2393-d1bb"/>
+        <infoLink name="Implacable Advance" id="0552-e68f-cc94-5f27" hidden="true" type="rule" targetId="3898-aafb-35e0-141b">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20bb-9821-a3aa-3ef7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="0a77-4f79-f413-90be" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
@@ -7888,21 +7680,6 @@
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="roster" childId="baca-1393-31e5-6d2b" shared="true" includeChildSelections="true" includeChildForces="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifierGroup>
-                <modifierGroup type="and">
-                  <comment>Imperialis Provosts</comment>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                  </modifiers>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="6372-e537-5617-fe60" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
@@ -8038,6 +7815,15 @@
           </categoryLinks>
           <infoLinks>
             <infoLink name="Irregulars" id="695f-9c91-18ae-6b37" hidden="false" type="rule" targetId="2d43-afcd-2393-d1bb"/>
+            <infoLink name="Implacable Advance" id="be3a-cea9-900a-41e4" hidden="true" type="rule" targetId="3898-aafb-35e0-141b">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="20bb-9821-a3aa-3ef7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <modifiers>
             <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
@@ -8139,21 +7925,6 @@
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="roster" childId="baca-1393-31e5-6d2b" shared="true" includeChildSelections="true" includeChildForces="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifierGroup>
-                <modifierGroup type="and">
-                  <comment>Imperialis Provosts</comment>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                  </modifiers>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="6372-e537-5617-fe60" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
@@ -9285,21 +9056,6 @@
                   </conditionGroups>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <comment>Imperialis Provosts</comment>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                  </modifiers>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="6372-e537-5617-fe60" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifierGroup>
-                <modifierGroup type="and">
                   <comment>Kinfolk Helots</comment>
                   <modifiers>
                     <modifier type="increment" value="1" field="3120-8275-e537-ecd2"/>
@@ -9568,21 +9324,6 @@
                   </conditionGroups>
                 </modifierGroup>
                 <modifierGroup type="and">
-                  <comment>Imperialis Provosts</comment>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                  </modifiers>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifierGroup>
-                <modifierGroup type="and">
                   <comment>Kinfolk Helots</comment>
                   <modifiers>
                     <modifier type="increment" value="1" field="3120-8275-e537-ecd2"/>
@@ -9753,6 +9494,15 @@
         <infoLink name="Imperialis Militia" id="e839-e5ef-68ff-6b9a" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
         <infoLink name="Irregulars" id="c1ad-c1ef-efd6-77eb" hidden="false" type="rule" targetId="2d43-afcd-2393-d1bb"/>
         <infoLink name="Smokescreen" id="b2fd-d07b-bb49-3d14" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
+        <infoLink name="Implacable Advance" id="781c-3955-e730-7b08" hidden="true" type="rule" targetId="3898-aafb-35e0-141b">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="20bb-9821-a3aa-3ef7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="a5bb-fc2a-874f-defc" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
@@ -9871,21 +9621,6 @@
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="roster" childId="baca-1393-31e5-6d2b" shared="true" includeChildSelections="true" includeChildForces="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifierGroup>
-                <modifierGroup type="and">
-                  <comment>Imperialis Provosts</comment>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                  </modifiers>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="6372-e537-5617-fe60" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
@@ -10160,21 +9895,6 @@
                         <condition type="atLeast" value="1" field="selections" scope="roster" childId="a3c5-5465-34f7-4060" shared="true" includeChildSelections="true" includeChildForces="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifierGroup>
-                <modifierGroup type="and">
-                  <comment>Imperialis Provosts</comment>
-                  <modifiers>
-                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                  </modifiers>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -10511,21 +10231,6 @@
                       </conditionGroups>
                     </modifierGroup>
                     <modifierGroup type="and">
-                      <comment>Imperialis Provosts</comment>
-                      <modifiers>
-                        <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                      </modifiers>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="6372-e537-5617-fe60" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifierGroup>
-                    <modifierGroup type="and">
                       <comment>Kinfolk Helots</comment>
                       <modifiers>
                         <modifier type="increment" value="1" field="3120-8275-e537-ecd2"/>
@@ -10714,21 +10419,6 @@
                           <conditions>
                             <condition type="atLeast" value="1" field="selections" scope="roster" childId="a3c5-5465-34f7-4060" shared="true" includeChildSelections="true" includeChildForces="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifierGroup>
-                    <modifierGroup type="and">
-                      <comment>Imperialis Provosts</comment>
-                      <modifiers>
-                        <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
-                      </modifiers>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="039c-e091-fc12-b5f1" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="6372-e537-5617-fe60" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="parent" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </conditionGroup>
@@ -12842,6 +12532,7 @@ Every Model in a Unit that only includes Models with the Irregulars Special Rul
           <rules>
             <rule name="Arms of the Omnissiah" id="a06d-eaf1-91bd-6845" hidden="false">
               <description>An Army with this Provenance gains the following benefits:
+ • All Models with the Irregulars Special Rule and the Infantry Type in this Army gain the Implacable Advance Special Rule.
  • The following item is added to the Militia Armaments list:- Las-lock +1 Point
  • The following item is added to the Militia Special Weapons list:- Arc rifle +10 Points
  • Triaros Armoured Conveyor Units from the Mechanicum Taghmata Army List may be selected to fill Heavy Transport Force Organisation Slots in any Imperialis Militia Detachments in this Army and Krios Battle Tank Units from the Mechanicum Taghmata Army List may be selected to fill Armour Force Organisation Slots in any Imperialis Militia Detachments in this Army. Any Models in these Units replace the [Mechanicum] or Macrotek Trait with the Imperialis Militia Trait, gain the Third-Line Special Rule and modify their Ballistic Skill Characteristic by -1.</description>
@@ -12926,7 +12617,7 @@ Every Model in a Unit that only includes Models with the Irregulars Special Rul
           <rules>
             <rule name="Imperialis Provosts" id="c01c-8e23-20dd-51af" hidden="false">
               <description>An Army with this Provenance gains the following benefits:
- • All Models with the Irregulars Special Rule and the Infantry Type in this Army that do not also have the Expendable (X) Special Rule have their Base Cool Characteristic modified by +1.
+• If a Combat includes any Models from this Army with the Irregulars Special Rule but not the Expendable (X) Special Rule, the Controlling Player scores 2 additional Combat Resolution Points if that Combat also includes any enemy Models with one or more Tactical Statuses.
  • The following item is added to the Militia Melee Weapons list and Militia Officer Weapons list:- Shock maul +3 Points
  • The following item is added to the Militia Special Weapons list:- Webber +3 Points</description>
             </rule>

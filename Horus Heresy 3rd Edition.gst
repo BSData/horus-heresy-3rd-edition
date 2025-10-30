@@ -162,7 +162,7 @@
           <description>The following Rules apply to all Models with the Automata Type:
 
 
-- Models with the Automata Type cannot gain any Tactical Statuses and are considered to automatically pass any Check made to avoid gaining a Tactical Status.
+- Models with the Automata Type cannot gain any Tactical Statuses and are considered to automatically pass any Check made to avoid gaining a Tactical Status. However, if a Unit that contains any Models with the Automata Type also includes any Models that do not have the Automata Type, that Check must be made using the Characteristics of one of the Models that does not have the Automata Type and is not automatically passed.
 - When targeting a Unit that includes any Models with the Automata Type, the effects of the Poisoned (X) Special Rule only trigger on a Wound Test with a result of a &apos;6&apos; before modifiers are applied, regardless of the value of X for that variant of the Special Rule.
 - A Unit that includes one or more Models with the Automata Type may not make Reactions.</description>
         </rule>
@@ -209,7 +209,20 @@
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry name="Flyer Model Sub-Type" id="42a3-02e9-e0e4-8292" hidden="false"/>
+    <categoryEntry name="Flyer Model Sub-Type" id="42a3-02e9-e0e4-8292" hidden="false">
+      <rules>
+        <rule name="Flyer Sub-Type" id="ff09-959b-1777-c8b9" hidden="false">
+          <description>- Whilst on the Battlefield, a Model with the Flyer Sub-Type does not block Line of Sight or the Movement of any Model.
+- When moving a Model with the Flyer Sub-Type, ignore all Terrain effects and Rules. However, a Model with the Flyer Sub-Type may still not end a move in or on Impassable Terrain, a Terrain Feature, or a Building.
+- Models with the Flyer Sub-Type may move through Models with the Vehicle Type, but never inflict Hits on enemy Units they move through and are never eligible to be the Target of the Death or Glory Advanced Reaction.
+- No Model of any kind may join a Unit that includes a Model with the Flyer Sub-Type.
+- A Model with the Flyer Sub-Type can never gain any Tactical Statuses and ignores any Rules that would force it to do so.
+- A Model with the Flyer Sub-Type may never be Locked in Combat or attacked in any way during the Assault Phase and may not be targeted by attacks made using a Melee Weapon.
+- A Model with the Flyer Sub-Type may never make a Reaction of any kind, unless that Reaction specifically states it may be made by Models with the Flyer Sub-Type - but can be targeted by Reactions.
+- When a Player is instructed to roll on the Vehicle Damage Table for a Model with this Sub-Type, no roll is made. Instead, the Model loses a single Hull Point.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
     <categoryEntry name="Stable Model Sub-Type" id="3753-39e1-22c2-531b" hidden="false"/>
     <categoryEntry name="Open Beta Release" id="c5ac-45c2-a8a9-e32c" hidden="false"/>
     <categoryEntry name="Command - Optae Only" id="ee42-a241-c364-489d" hidden="false"/>
@@ -25515,18 +25528,11 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
-                <conditionGroup type="and">
+                <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="b980-187b-2b17-d635" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="unit" childId="d9a6-9b5f-b18a-4d63" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="unit" childId="12d9-f8dc-4db6-0880" shared="true" includeChildSelections="true"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="unit" childId="d9a6-9b5f-b18a-4d63" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="unit" childId="12d9-f8dc-4db6-0880" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -26001,13 +26007,6 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
                     <condition type="instanceOf" value="1" field="selections" scope="force" childId="fd9b-d04e-362d-8e5d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b980-187b-2b17-d635" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d9a6-9b5f-b18a-4d63" shared="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cca7-b054-62dc-bec9" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
               </conditionGroups>
             </conditionGroup>
           </conditionGroups>
@@ -26067,7 +26066,7 @@ When a Model with this Special Rule is included in a Detachment, one additional 
         <rule name="Lord of Automata" id="8e20-4195-d824-af90" hidden="false">
           <description>&quot;This Special Rule allows an Iron Father to be accompanied by a Unit of Battle-automata.&quot;
 
-When a Model with this Special Rule is included in a Detachment, one additional Support Force Organization Slot is added to that Detachment. This Slot can only be filled with one Castellax Battle-automata Maniple selected from Liber Mechanicum. When such a Unit is included in this way, its Cybernetica Trait is replaced with &apos;Bonded Automata&apos;, and this Unit can be included even though it does not have the same Faction Trait as the other Units in that Detachment. In addition, a Model with this Special Rule may join a Friendly Unit that includes Models with the Automata Type. If a Model with bthis Special Rule joins a Unit with the Automata Type, the Leadership and Cool Characteristics or Models in that unit are not reduced.</description>
+‘When a Model with this Special Rule is included in a Detachment, one additional Force Organisation Slot is added to that Detachment. This Slot can only be filled with one Castellax Battle Maniple or Castellax Destructor Maniple Unit selected from Liber Mechanicum. When such a Unit is included in this way, its Cybernetica Trait is replaced with &apos;Bonded Automata&apos;, and this Unit can be included even though it does not have the same Faction Trait as the other Units in that Detachment. In addition, a Model with this Special Rule may join a Friendly Unit that includes Models with the Automata Type. If a Model with bthis Special Rule joins a Unit with the Automata Type, the Leadership and Cool Characteristics or Models in that unit are not reduced.</description>
         </rule>
       </rules>
     </selectionEntry>
