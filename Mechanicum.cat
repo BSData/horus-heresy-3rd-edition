@@ -1515,16 +1515,6 @@
         <entryLink import="true" name="Mechanicum Wargear" hidden="false" id="5183-f806-6712-bc1c" type="selectionEntryGroup" targetId="b435-c689-3a61-2f5e" sortIndex="3"/>
         <entryLink import="true" name="Mechanicum Magos Wargear" hidden="false" id="723a-ef79-4fce-bb99" type="selectionEntryGroup" targetId="cee9-35c2-00ce-5f2b" sortIndex="4"/>
         <entryLink import="true" name="Cybertheurgic Rites" hidden="false" id="c042-7042-43ef-cb13" type="selectionEntryGroup" targetId="38bb-f178-1b0c-cd89" sortIndex="5"/>
-        <entryLink import="true" name="Mechanicum Melee Weapons" hidden="false" id="ca6a-c235-c077-bb9b" type="selectionEntryGroup" targetId="dfb0-7a61-5c53-df5b" sortIndex="6">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06f3-abeb-bb9e-b1b8"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Mechanicum Pistols" hidden="false" id="7232-40ab-889e-a57a" type="selectionEntryGroup" targetId="f121-0827-86ac-b86b" sortIndex="7">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb31-2ffe-2eee-8903"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Mechanicum Ranged Weapons" hidden="false" id="be28-150b-24b4-83d6" type="selectionEntryGroup" targetId="b55c-9c17-85ad-89be" sortIndex="8">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="424d-0fa5-59fb-10f9"/>
@@ -1629,6 +1619,34 @@
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Melee Weapon" id="3e6c-22d1-c89d-aeb5" hidden="false" sortIndex="6">
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Melee Weapons" hidden="false" id="ca6a-c235-c077-bb9b" type="selectionEntryGroup" targetId="dfb0-7a61-5c53-df5b" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06f3-abeb-bb9e-b1b8"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Mechanicum Magos Weapons" hidden="false" id="c785-e5a3-6092-acee" type="selectionEntryGroup" targetId="dc6e-8589-d257-c791" sortIndex="2"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6b76-0b93-5648-adf1"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Pistol" id="3658-ff14-17ea-095d" hidden="false" sortIndex="7">
+          <entryLinks>
+            <entryLink import="true" name="Mechanicum Pistols" hidden="false" id="7232-40ab-889e-a57a" type="selectionEntryGroup" targetId="f121-0827-86ac-b86b" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb31-2ffe-2eee-8903"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Mechanicum Magos Weapons" hidden="false" id="705a-e2d2-a0c5-2292" type="selectionEntryGroup" targetId="dc6e-8589-d257-c791" sortIndex="2"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a54c-d6dc-dbdc-2d44"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Echidnax Servo Maniple" hidden="false" id="466e-0da4-2961-6263" sortIndex="7">
       <infoLinks>
