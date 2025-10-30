@@ -25994,13 +25994,6 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
                     <condition type="instanceOf" value="1" field="selections" scope="force" childId="fd9b-d04e-362d-8e5d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b980-187b-2b17-d635" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d9a6-9b5f-b18a-4d63" shared="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cca7-b054-62dc-bec9" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
               </conditionGroups>
             </conditionGroup>
           </conditionGroups>
