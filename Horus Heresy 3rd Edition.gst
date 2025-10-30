@@ -209,7 +209,20 @@
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry name="Flyer Model Sub-Type" id="42a3-02e9-e0e4-8292" hidden="false"/>
+    <categoryEntry name="Flyer Model Sub-Type" id="42a3-02e9-e0e4-8292" hidden="false">
+      <rules>
+        <rule name="New Rule" id="ff09-959b-1777-c8b9" hidden="false">
+          <description>- Whilst on the Battlefield, a Model with the Flyer Sub-Type does not block Line of Sight or the Movement of any Model.
+- When moving a Model with the Flyer Sub-Type, ignore all Terrain effects and Rules. However, a Model with the Flyer Sub-Type may still not end a move in or on Impassable Terrain, a Terrain Feature, or a Building.
+- Models with the Flyer Sub-Type may move through Models with the Vehicle Type, but never inflict Hits on enemy Units they move through and are never eligible to be the Target of the Death or Glory Advanced Reaction.
+- No Model of any kind may join a Unit that includes a Model with the Flyer Sub-Type.
+- A Model with the Flyer Sub-Type can never gain any Tactical Statuses and ignores any Rules that would force it to do so.
+- A Model with the Flyer Sub-Type may never be Locked in Combat or attacked in any way during the Assault Phase and may not be targeted by attacks made using a Melee Weapon.
+- A Model with the Flyer Sub-Type may never make a Reaction of any kind, unless that Reaction specifically states it may be made by Models with the Flyer Sub-Type - but can be targeted by Reactions.
+- When a Player is instructed to roll on the Vehicle Damage Table for a Model with this Sub-Type, no roll is made. Instead, the Model loses a single Hull Point.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
     <categoryEntry name="Stable Model Sub-Type" id="3753-39e1-22c2-531b" hidden="false"/>
     <categoryEntry name="Open Beta Release" id="c5ac-45c2-a8a9-e32c" hidden="false"/>
     <categoryEntry name="Command - Optae Only" id="ee42-a241-c364-489d" hidden="false"/>
