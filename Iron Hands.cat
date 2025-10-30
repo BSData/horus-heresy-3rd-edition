@@ -1645,6 +1645,24 @@ A Model with Armatus Necrotechnika gains the Auto-Repair (5+) Special Rule. Addi
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bda0-4ca2-de89-f6e7"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="659e-633f-fb7d-1489"/>
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="One Morlock in this Unit may exchange its Combi-bolter for" id="a8c1-72c7-450b-92ba" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Legion standard" hidden="false" id="0c46-6c3a-4f36-9355" type="selectionEntry" targetId="df7f-540b-00d5-1d82">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b179-01f2-40b2-88e0"/>
+                        <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="06ff-516f-1e5a-d22f" includeChildSelections="true"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84d5-fdda-4a8d-a7f7"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntryGroup>
             <selectionEntryGroup name="May have its power weapon exchanged for " id="3179-3b62-cb02-9120" hidden="false">
               <entryLinks>
@@ -1870,21 +1888,6 @@ A Model with Armatus Necrotechnika gains the Auto-Repair (5+) Special Rule. Addi
         <categoryLink targetId="647c-faca-3c98-c203" id="3aff-c065-a8f0-1856" primary="false" name="Free Power Weapon"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="One Morlock in this Unit may have one Legion standard selected for it " id="a8c1-72c7-450b-92ba" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Legion standard" hidden="false" id="0c46-6c3a-4f36-9355" type="selectionEntry" targetId="df7f-540b-00d5-1d82">
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b179-01f2-40b2-88e0"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84d5-fdda-4a8d-a7f7"/>
-          </constraints>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Up to two Morlocks in this Unit may have one item each from" id="42a1-744a-4537-8ece" hidden="false">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9cb3-13d8-45a4-9958"/>
