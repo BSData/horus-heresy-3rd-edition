@@ -23990,6 +23990,40 @@
                 </modifier>
               </modifiers>
             </categoryLink>
+            <categoryLink name="War-engine" hidden="false" id="6b5b-7a4d-207d-3e7d" targetId="2499-7239-685f-8465">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3618-19ad-52b4-75c0"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="3618-19ad-52b4-75c0">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="EotL - World Eaters" hidden="false" id="4b1f-d99a-b1f4-dc5a" targetId="d877-8b72-fd0b-1e4a">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="71f7-3722-92ab-91b1"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="71f7-3722-92ab-91b1">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="67b4-0b06-af17-1321" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="67b4-0b06-af17-1321" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
             <categoryLink name="EotL - Dark Angels" hidden="false" id="c8f3-97ea-5299-8608" targetId="6c4f-19ae-d41f-377b">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b935-8d98-5396-eab9"/>
@@ -24275,23 +24309,6 @@
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="b1f7-02a0-e90d-15c7" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </categoryLink>
-            <categoryLink name="EotL - World Eaters" hidden="false" id="4b1f-d99a-b1f4-dc5a" targetId="d877-8b72-fd0b-1e4a">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="71f7-3722-92ab-91b1"/>
-              </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="71f7-3722-92ab-91b1">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="67b4-0b06-af17-1321" shared="true" roundUp="false" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-                <modifier type="set" value="false" field="hidden">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="67b4-0b06-af17-1321" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
