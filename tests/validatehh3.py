@@ -456,15 +456,7 @@ class GameTests(unittest.TestCase):
                 actual_mods.append(mod.attrib)
 
             self.assertCountEqual(actual_mods, expected_mods)
-        actual_conditions = []
-        conditions_node = mod_group.get_child("conditions")
-        if conditions_node:
-            for condition in conditions_node.children:
-                attrib = condition.attrib.copy()
-                if "includeChildForces" not in attrib.keys():
-                    attrib["includeChildForces"] = "false"
-                actual_conditions.append(attrib)
-        expected_conditions = [{
+        expected_condition = {
             "type": "atLeast",
             "value": "1",
             "field": "selections",
@@ -473,8 +465,31 @@ class GameTests(unittest.TestCase):
             "shared": "true",
             "includeChildForces": "false",
             "includeChildSelections": "true"
-        }]
-        self.assertCountEqual(actual_conditions, expected_conditions)
+        }
+        conditions_node = mod_group.get_child("conditions")
+        actual_conditions = []
+        if conditions_node:
+            for condition in conditions_node.children:
+                attrib = condition.attrib.copy()
+                if "includeChildForces" not in attrib.keys():
+                    attrib["includeChildForces"] = "false"
+                actual_conditions.append(attrib)
+            self.assertCountEqual(actual_conditions, [expected_condition])
+            return
+        if not conditions_node:
+            condition_groups = mod_group.get_child("conditionGroups")
+            self.assertIsNotNone(condition_groups, "Expected condition group if no conditions")
+
+            for condition_group in condition_groups.children:
+                self.assertEqual(condition_group.attrib['type'], "or",
+                                 "The test only supports 'or' condition groups")
+                conditions_node = condition_group.get_child("conditions")
+                for condition in conditions_node.children:
+                    attrib = condition.attrib.copy()
+                    if "includeChildForces" not in attrib.keys():
+                        attrib["includeChildForces"] = "false"
+                    actual_conditions.append(attrib)
+            self.assertIn(expected_condition, actual_conditions)
 
     def test_all_high_command_have_detachment_choice(self):
         high_command_id = self.system.categories["High Command"].id
