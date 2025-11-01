@@ -835,35 +835,6 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             <categoryLink targetId="af7d-af64-6b7d-da9d" id="402b-1d1c-41a7-abe9" primary="false" name="Specialist Model Sub-Type"/>
           </categoryLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Shadow of the Conquerer" hidden="false" id="ed01-d48d-51a3-e145">
-          <rules>
-            <rule name="Shadow of the Conquerer" id="2f7a-625e-ad4e-c62c" hidden="false">
-              <description>If a Model with this Special Rule is included in the Primary Detachment of this Army and is on the Battlefield, in the Effects Sub-Phase of the Start Phase, the Controlling Player of the Model with this Special Rule can make an Intelligence Check for that Model. If that Check is successful, the Controlling Player can select one of the Following options:
-
-
-• Coordinate: Once during this Turn, before making a Reserves Test for a Unit in Aerial Reserves, the Controlling Player can modify the result of that Reserves Test by +1.
-• Annihilate: Once during their opponent&apos;s next Movement Phase, the Controlling Player can make the Guns of the Conqueror Advanced Reaction.</description>
-            </rule>
-          </rules>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="71d6-6232-6cbf-8b15"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11a1-abbc-b136-7feb"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Level-headed" hidden="false" id="c03a-3fff-0442-dda7">
-          <rules>
-            <rule name="Level-headed" id="4d8f-2418-1155-ddcd" hidden="false">
-              <description>&quot;A Unit that Lotara Sarrin has joined may use her Characteristics to remove Tactical Statuses.&quot;
-
-
-If a Unit includes a Model with this Special Rule, during the Start Phase of their Turn as the Active Player the Controlling Player may make a Check to remove a single Status from all Model in the Unit that includes the Model with this Special Rule. This Check is made using the Characteristics of the Model with this Special Rule (using Cool, unless attempting to remove Routed, in which case Leadership is used)</description>
-            </rule>
-          </rules>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8cad-0659-6503-65f9"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="653a-44a3-3c3d-2469"/>
-          </constraints>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Fleet service pistol" hidden="false" id="ac3c-2b8c-6b0e-57f4" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e02d-1fff-7772-7750"/>
@@ -902,6 +873,42 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9619-a0a1-2b44-e7d5"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Guns of the Conquerer" hidden="false" id="751d-564f-32c5-7425">
+          <profiles>
+            <profile name="Guns of the Conquerer" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="f71e-9247-8d4d-4b90">
+              <characteristics>
+                <characteristic name="R" typeId="cdb0-8654-6840-1037">24</characteristic>
+                <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+                <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">10</characteristic>
+                <characteristic name="AP" typeId="7a23-0248-2b94-5951">3</characteristic>
+                <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">3</characteristic>
+                <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Barrage (2), Blast (7&quot;), Breaching (5+)</characteristic>
+                <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Assault</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Barrage (X)" id="55a5-e716-5a26-e2e2" hidden="false" type="rule" targetId="85f5-3a91-69f4-c3b7">
+              <modifiers>
+                <modifier type="replace" value="2" field="name" arg="X"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Blast (X)" id="63e8-271b-2013-e81a" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+              <modifiers>
+                <modifier type="replace" value="7&quot;" field="name" arg="X"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Breaching (X)" id="e7a3-878f-2a2a-e205" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+              <modifiers>
+                <modifier type="replace" value="5+" field="name" arg="X"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc3f-682f-687b-2d2c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3ff-52c0-fdc3-a441"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <infoLinks>
         <infoLink name="[Allegiance]" id="cc73-35b3-21bd-346e" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -924,6 +931,34 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ff60-7216-1402-9a91" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
+      <profiles>
+        <profile name="Guns of the Conqueror" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="6554-8cc1-d5d5-a1ce">
+          <characteristics>
+            <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b"/>
+            <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Guns of the Conqueror Advanced Reaction in Step 2 of the Move Sub-Phase process, if an enemy Unit ends a move within 24&quot; and Line of Sight of any Model in a Unit under the Reactive Player&apos;s Control that includes a Model with this Special Rule.</characteristic>
+            <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 3 Points of their Reaction Allotment to declare a Guns of the Conqueror Advanced Reaction. If this Reaction is declared, the Unit that includes the Model with this Special Rule is considered to be the Reacting Unit.</characteristic>
+            <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Move triggered the Reaction.</characteristic>
+            <characteristic name="Process" typeId="57cf-1c68-a020-2529">Once the Guns of the Conqueror Advanced Reaction has been declared, the Reactive Player makes a Shooting Attack targeting the Target Unit, using the Guns of the Conqueror profile. The Hit test for this Shooting attack is automatically unsuccessful.
+
+
+Once the Shooting Attack made as part of this Reaction has been completely resolved, including removing any Casualties, the Active Player must then completely resolve any remaining elements of the Target Unit&apos;s movement.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Level-headed" id="4d8f-2418-1155-ddcd" hidden="false">
+          <description>&quot;A Unit that Lotara Sarrin has joined may use her Characteristics to remove Tactical Statuses.&quot;
+
+If a Unit includes a Model with this Special Rule, during the Start Phase of their Turn as the Active Player the Controlling Player may make a Check to remove a single Status from all Models in the Unit that includes the Model with this Special Rule. This Check is made using the Characteristics of the Model with this Special Rule (using Cool, unless attempting to remove Routed, in which case Leadership is used).</description>
+        </rule>
+        <rule name="Shadow of the Conquerer" id="2f7a-625e-ad4e-c62c" hidden="false">
+          <description>If a Model with this Special Rule is included in the Primary Detachment of this Army and is on the Battlefield, in the Effects Sub-Phase of the Start Phase, the Controlling Player of the Model with this Special Rule can make an Intelligence Check for that Model. If that Check is successful, the Controlling Player can select one of the Following options:
+
+
+• Coordinate: Once during this Turn, before making a Reserves Test for a Unit in Aerial Reserves, the Controlling Player can modify the result of that Reserves Test by +1.
+• Annihilate: Once during their opponent&apos;s next Movement Phase, the Controlling Player can make the Guns of the Conqueror Advanced Reaction.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Angron Transfigured" hidden="false" id="eb31-de9c-e5ef-a9ac">
       <costs>
