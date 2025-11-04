@@ -2137,6 +2137,22 @@ A Unit containing only Models with this Special Rule is considered to contain on
         <categoryLink targetId="88e6-d373-4152-0dd8" id="ff8b-e9dd-713f-95d3" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Castellax Destructor Maniple" hidden="true" id="9b65-cb9d-c0ac-33f9" type="selectionEntry" targetId="112f-1168-d07c-7f8f">
+      <categoryLinks>
+        <categoryLink targetId="3235-bd79-e9b1-60fa" id="15cd-26b2-cb06-fec8" primary="true" name="Heavy Assault"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f18-54e0-f92c-e4fb" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set-primary" value="3e59-3bcf-4bf8-d404" field="category"/>
+        <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+        <modifier type="remove" value="3235-bd79-e9b1-60fa" field="category"/>
+        <modifier type="add" value="9fb1-5f74-53af-e34c" field="category"/>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Rite of War" id="58e9-c71e-5eda-85d1" hidden="false">
