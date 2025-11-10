@@ -23654,6 +23654,11 @@
       <forceEntries>
         <forceEntry name="Allied Detachment " id="7469-bbd2-a2ad-f8a8" hidden="true" sortIndex="1">
           <categoryLinks>
+            <categoryLink name="High Command" hidden="false" id="44a3-2cf6-a2b0-4adc" targetId="d9a6-9b5f-b18a-4d63">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1a22-fc74-00f4-4341"/>
+              </constraints>
+            </categoryLink>
             <categoryLink name="Command" hidden="false" id="7866-0c42-0336-a2c9" targetId="6dbf-654a-f06f-2d69">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="390b-521d-badf-8cff"/>
@@ -23828,12 +23833,6 @@
               </constraints>
             </categoryLink>
             <categoryLink name="Rewards of Treachery" hidden="false" id="f2b2-8c74-65bf-19e4" targetId="fe7f-1287-4162-a65d"/>
-            <categoryLink name="Master of Automata" hidden="false" id="79b1-e748-f637-ff0d" targetId="43f5-bc69-29b9-2286"/>
-            <categoryLink name="High Command" hidden="false" id="44a3-2cf6-a2b0-4adc" targetId="d9a6-9b5f-b18a-4d63">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1a22-fc74-00f4-4341"/>
-              </constraints>
-            </categoryLink>
             <categoryLink name="Heavy Transport - Logisticae" hidden="false" id="6ed7-57ed-0857-8622" targetId="6fc0-917e-44a4-a4da">
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -24373,6 +24372,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
+            <categoryLink name="Master of Automata" hidden="false" id="79b1-e748-f637-ff0d" targetId="43f5-bc69-29b9-2286"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
