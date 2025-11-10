@@ -144,7 +144,12 @@
         </selectionEntry>
       </selectionEntries>
       <rules>
-        <rule name="Archmagos of the Xanan Dominion" id="eda1-590b-6b2d-9bec" hidden="false"/>
+        <rule name="Archmagos of the Xanan Dominion" id="eda1-590b-6b2d-9bec" hidden="false">
+          <description>&quot;Scoria has specific Cybertheurgic Rites.&quot;
+
+
+A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and Scrap-code Infection Cybertheurgic Rites.</description>
+        </rule>
       </rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="Cybertheurgic Rites" id="da2c-9e35-7c84-0607" hidden="false" sortIndex="4">
@@ -225,6 +230,12 @@
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Overcharge Reactors" id="1f25-b027-5edd-0d2a" hidden="false" type="profile" targetId="8f09-1b30-b15b-96f4"/>
+        <infoLink name="Cybertheugic Status: Fortify" id="96be-ec54-67a3-8f5b" hidden="false" type="rule" targetId="5367-7f24-be5e-447f"/>
+        <infoLink name="Cybertheugic Status: Guide" id="6191-35e8-7e5a-3848" hidden="false" type="rule" targetId="14b4-336f-014d-f462"/>
+        <infoLink name="Cybertheugic Status: Quicken" id="3069-9174-8b60-74d3" hidden="false" type="rule" targetId="1160-e8ac-393e-f60c"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cogitator Purge" hidden="false" id="cee5-60ce-2035-8a9b">
       <costs>
@@ -232,6 +243,9 @@
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Cogitator Purge" id="08de-de90-1f48-7bbd" hidden="false" type="profile" targetId="3020-ad6c-3d52-18f2"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chastise the Machine Spirit" hidden="false" id="278c-1202-727f-f6bd">
       <costs>
@@ -239,6 +253,17 @@
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <profiles>
+        <profile name="Chastise the Machine Spirit" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="4a37-ebc8-9b6f-df5a">
+          <characteristics>
+            <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">4</characteristic>
+            <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">18&quot;</characteristic>
+            <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be an enemy Unit that is not Locked in Combat. This Cybertheugic Rite may not target a Unit that includes any Models with the Paragon Type or Super-heavy Sub-Type.</characteristic>
+            <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When this Cybertheugic Rite is Invoked, all Models in the Target Unit gain one of the following Tactical Statuses: Stunned or Suppressed (All Models in the Unit must gain the same Tactical Status, chosen by the Player that Invoked this Cybertheugic Rite). If this Cybertheugic Rite is unsuccessfully Invoked then the Unit that includes the Focus suffers Cybertheugic Feedback.</characteristic>
+            <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">This Cybertheugic Rite is resolved immediately.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Programming Interrupt" hidden="false" id="6820-76b3-ae10-23e5">
       <costs>
@@ -246,6 +271,22 @@
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <profiles>
+        <profile name="Programming Interrupt" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="4900-dcb6-2158-2113">
+          <characteristics>
+            <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">4</characteristic>
+            <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">18&quot;</characteristic>
+            <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a friendly Unit that is not Locked in Combat and includes only Models with the Automata or Vehicle Types or the Cybertheugist Trait. This Cybertheugic Rite may not target a Unit that includes any Models with the Super-heavy or Knight Sub-Types.</characteristic>
+            <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When Invoked, this Cybertheugic Rite grants all Models in the Target Unit one of the following Cybertheurgic Statuses, chosen by the Controlling Player (all Models must be granted the same Status): Quicken, Fortify or Guide. If the Target Unit makes a Reaction in the Controlling Player&apos;s next Tuirn as the Reactive Player following a successful Invocation of this Cybertheugic Rate it does not cost a point of that Players Reaction Allotment, but instead the Cybertheugic Status granted by this Cybertheugic Rite is removed.</characteristic>
+            <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">If the Cybertheugic Status granted by this Cybertheugic Rite is not removed in order to make a Reaction, then it is automatically removed in the Controlling Player&apos;s next Start Phase. Immediately after the Cybertheugic Status granted by this Cybertheugic Rite is removed the Target Unit suffers Cybertheugic Feedback.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Cybertheugic Status: Fortify" id="8a07-4ed7-6460-3810" hidden="false" type="rule" targetId="5367-7f24-be5e-447f"/>
+        <infoLink name="Cybertheugic Status: Guide" id="f899-c44f-23c7-8071" hidden="false" type="rule" targetId="14b4-336f-014d-f462"/>
+        <infoLink name="Cybertheugic Status: Quicken" id="ef99-fdd5-e7c7-d524" hidden="false" type="rule" targetId="1160-e8ac-393e-f60c"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Flesh-knit Protocols" hidden="false" id="13c3-5795-9d9d-b27a">
       <costs>
@@ -253,6 +294,21 @@
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <profiles>
+        <profile name="Flesh-knit Protocols" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="8f66-df85-497e-78a8">
+          <characteristics>
+            <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">2</characteristic>
+            <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">12&quot;</characteristic>
+            <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a Friendly Unit that is not Locked in Combat and includes only Models with the Lacrymaerta Trait.</characteristic>
+            <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When Invoked, this Cybertheugic Rite grants all Models in the Target Unit one of the following Cybertheugic Statuses, chosen by the Controlling Player (all Models must be granted the same Status): Quicken or Fortify.</characteristic>
+            <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">The Cybertheugic Status granted by this Cybertheugic Rite is automatically removed in the Controlling Player&apos;s next Start Phase and after the Cybertheugic Status is removed the Target Unit suffers Cybertheugic Feedback.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Cybertheugic Status: Fortify" id="fd72-4143-7fa1-3d9f" hidden="false" type="rule" targetId="5367-7f24-be5e-447f"/>
+        <infoLink name="Cybertheugic Status: Quicken" id="d0e5-1c2a-27e8-4289" hidden="false" type="rule" targetId="1160-e8ac-393e-f60c"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Omega Protocols" hidden="false" id="a3d1-9e66-4b2b-2fe9">
       <costs>
@@ -260,6 +316,17 @@
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <profiles>
+        <profile name="Omega Protocols" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="5b69-b44e-2e1e-4565">
+          <characteristics>
+            <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">4</characteristic>
+            <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">12&quot;</characteristic>
+            <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a friendly Unit that includes only Models with the Lacrymaerta Trait, is affected by at least one Cybertheugic Status and that is Locked in Combat with one or more enemy Units.</characteristic>
+            <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When this Cybertheugic Rite is Invoked, all Models in the Target Unit immediately lose all Cybertheugic Statuses they have. If any Cybertheugic Statuses are removed then the Target Unit suffers Cybertheugic Feedback - if any Models in the Target Unit are Removed as Casualties then all other Units in the same Combat (friendly or enemy) suffer two Hits at Strength 6, with an AP of 5 and Damage of 1 for each Model Removed as a Casualty in the Target Unit. Models Removed as Casualties due to this Rite are not counted for the purpose of Combat Resolution.</characteristic>
+            <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">This Cybertheugic Rite is resolved immediately</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Deactivate Limiters" hidden="false" id="e2c5-56ee-8e1e-44b0">
       <costs>
@@ -267,6 +334,22 @@
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <profiles>
+        <profile name="Deactivate Limiters" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="98ca-1ca5-096f-dfa1">
+          <characteristics>
+            <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">3</characteristic>
+            <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">24&quot;</characteristic>
+            <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a friendly Unit that is not Locked in Combat and includes only Models with the Reductor Trait.</characteristic>
+            <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When this Cybertheugic Rite Invoked it grants all Models in the target Unit one of the following Cybertheugic Statuses, chosen by the Controlling Player (all Models must be granted the same Status): Quicken, Fortify or Guide.</characteristic>
+            <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">The Cybertheugic Status granted by this Cybertheugic Rite is automatically removed in the Controlling Player&apos;s next Start Phase and after the Cybertheugic Status is removed the Target Unit suffers Cybertheugic Feedback.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Cybertheugic Status: Fortify" id="4b67-12a7-e4d3-4f8c" hidden="false" type="rule" targetId="5367-7f24-be5e-447f"/>
+        <infoLink name="Cybertheugic Status: Guide" id="f811-78ea-4d54-0f9c" hidden="false" type="rule" targetId="14b4-336f-014d-f462"/>
+        <infoLink name="Cybertheugic Status: Quicken" id="ff54-3a7a-9bfd-965c" hidden="false" type="rule" targetId="1160-e8ac-393e-f60c"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Unseal the Portal" hidden="false" id="2135-5fc2-c64b-8d10">
       <costs>
@@ -274,6 +357,17 @@
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <profiles>
+        <profile name="Unseal the Portal" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="e8a1-5542-b687-d3d4">
+          <characteristics>
+            <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">3</characteristic>
+            <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">6&quot;</characteristic>
+            <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a Building, Fortification or a Unit that is not Locked in Combat and is composed of a single Model with the Vehicle Type.</characteristic>
+            <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When Invoked, all Models Embarked on the Target Unit must immediately make an Emergency Disembarkation and the Target Unit suffers Cybertheugic Feedback.</characteristic>
+            <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">This Cybertheugic Rite is resolved immediately.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fury of Ages" hidden="false" id="4d4f-b784-ae17-7096">
       <costs>
@@ -281,6 +375,21 @@
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <profiles>
+        <profile name="Fury of Ages" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="481d-6978-e878-2dad">
+          <characteristics>
+            <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">2</characteristic>
+            <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">6&quot;</characteristic>
+            <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a Friendly Unit that includes only Models with the Myrmidax Trait. This Cybertheugic Rite may target Units that are Locked in Combat.</characteristic>
+            <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When this Cybertheugic Rite is Invoked, it grants all Models in the Target Unit one of the following Cybertheugic Statuses, chosen by the Controlling Player (all Models must be granted the same Status): Fortify or Guide.</characteristic>
+            <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">The Cybertheugic Status granted by this Cybertheugic Rite is automatically removed in the Controlling Player&apos;s next Start Phase and after the Cybertheugic Status is removed the Target Unit suffers Cybertheugic Feedback.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Cybertheugic Status: Fortify" id="f6f7-81d6-9c19-3b3f" hidden="false" type="rule" targetId="5367-7f24-be5e-447f"/>
+        <infoLink name="Cybertheugic Status: Guide" id="a618-40a9-c1b8-2223" hidden="false" type="rule" targetId="14b4-336f-014d-f462"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Archmagos" hidden="false" id="b16b-29ee-1239-60c3" sortIndex="1">
       <entryLinks>
@@ -7132,6 +7241,22 @@ If the check is successful, then the Model with this Special Rule is immediately
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <profiles>
+        <profile name="Ætheric Amplification" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="9140-72da-00b9-ab4b">
+          <characteristics>
+            <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">2</characteristic>
+            <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">6&quot;</characteristic>
+            <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a Friendly Unit that includes only Models with the Malefic Sub-Type. The Target Unit may be Locked in Combat.</characteristic>
+            <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When this Cybertheugic Rite is Invoked, all Models with the Malefic Sub-Type in the Target Unit gain one of the following Cybertheugic Statuses, chosen by the Controlling Player (all Models must be granted the same Status): Quicken Fortify or Guide.</characteristic>
+            <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">The Cybertheugic Status granted by this Cybertheugic Rite is automatically removed in the Target Unit&apos;s Controlling Player&apos;s next Start Phase and after the Cybertheugic Status is removed the Target Unit suffers Cybertheugic Feedback.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Cybertheugic Status: Fortify" id="5ca9-cb61-6f37-282c" hidden="false" type="rule" targetId="5367-7f24-be5e-447f"/>
+        <infoLink name="Cybertheugic Status: Guide" id="485a-021d-61aa-b058" hidden="false" type="rule" targetId="14b4-336f-014d-f462"/>
+        <infoLink name="Cybertheugic Status: Quicken" id="c702-ca44-7a37-3f58" hidden="false" type="rule" targetId="1160-e8ac-393e-f60c"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Scrap-code Infection" hidden="false" id="c8fa-a317-bc53-8764">
       <costs>
@@ -7139,6 +7264,10 @@ If the check is successful, then the Model with this Special Rule is immediately
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Scrap-code Infection" id="e407-aea7-4430-fbd0" hidden="false" type="profile" targetId="e622-32ef-e40e-a8d9"/>
+        <infoLink name="Cybertheugic Status: Null" id="4cb1-d3dd-1da5-150e" hidden="false" type="rule" targetId="d010-07c3-50a8-4002"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heterodoxist" hidden="false" id="7a1e-e035-4b60-0b35">
       <selectionEntries>
@@ -8880,22 +9009,6 @@ If the seismic macro-drill on a Model with this Special Rule is destroyed or oth
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="602d-bb49-aa21-072e"/>
           </constraints>
-          <profiles>
-            <profile name="Overcharge Reactors" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="e6a2-a08c-5eb9-b63d">
-              <characteristics>
-                <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">2</characteristic>
-                <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">12&quot;</characteristic>
-                <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a friendly Unit that is not Locked in Combat and includes only Models with the Automata or Vehicle Types or the Cybertheugist Trait. This Cybertheugic Rite may not target a Unit that includes any Models with the Super-heavy or Knight Sub-Types.</characteristic>
-                <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When Invoked this Cybertheugic Rite grants all Models in the Target Unit one of the following Cybertheugic Statuses, chosen by the Controlling Player (all Models must be granted the same Status): Quicken, Fortify or Guide.</characteristic>
-                <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">The Cybertheugic Status granted by this Cybertheugic Rite is automatically removed in the Controlling Player&apos;s next Start Phase and after the Cybertheugic Status is removed the Target Unit suffers Cybertheugic Feedback.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Cybertheugic Status: Fortify" id="96be-ec54-67a3-8f5b" hidden="false" type="rule" targetId="5367-7f24-be5e-447f"/>
-            <infoLink name="Cybertheugic Status: Guide" id="6191-35e8-7e5a-3848" hidden="false" type="rule" targetId="14b4-336f-014d-f462"/>
-            <infoLink name="Cybertheugic Status: Quicken" id="3069-9174-8b60-74d3" hidden="false" type="rule" targetId="1160-e8ac-393e-f60c"/>
-          </infoLinks>
         </entryLink>
         <entryLink import="true" name="Cogitator Purge" hidden="false" id="925f-8053-dc6d-6beb" type="selectionEntry" targetId="cee5-60ce-2035-8a9b" sortIndex="2">
           <costs>
@@ -8904,17 +9017,6 @@ If the seismic macro-drill on a Model with this Special Rule is destroyed or oth
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c440-634c-25ec-d508"/>
           </constraints>
-          <profiles>
-            <profile name="Cogitator Purge" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="1c4b-d973-d23b-2bba">
-              <characteristics>
-                <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">3</characteristic>
-                <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">12&quot;</characteristic>
-                <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be an enemy Unit that is not Locked in Combat and includes only Models with the Automata, Walker or Vehicle Types or the Cybertheugist Trait.</characteristic>
-                <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When this Cybertheugic Rite is Invoked, all Models in the Target Unit immediately lose all Cybertheugic Statuses they have. If any Cybertheugic Statuses are removed due to the use of this Cybertheugic Rite, then the Target Unit suffers Cybertheugic Feedback and if more than one Cybertheugic Status is removed then the number of wounds inflicted on the Unit by Cybertheugic Feedback is increased to 2 Wounds for each Model in that Unit.</characteristic>
-                <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">This Cybertheugic Rite is resolved immediately.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
         </entryLink>
         <entryLink import="true" name="Chastise the Machine Spirit" hidden="false" id="c4bf-a0b3-da76-8a9f" type="selectionEntry" targetId="278c-1202-727f-f6bd" sortIndex="3">
           <costs>
@@ -8923,17 +9025,6 @@ If the seismic macro-drill on a Model with this Special Rule is destroyed or oth
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2778-436f-4a5f-0702"/>
           </constraints>
-          <profiles>
-            <profile name="Chastise the Machine Spirit" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="4a37-ebc8-9b6f-df5a">
-              <characteristics>
-                <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">4</characteristic>
-                <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">18&quot;</characteristic>
-                <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be an enemy Unit that is not Locked in Combat. This Cybertheugic Rite may not target a Unit that includes any Models with the Paragon Type or Super-heavy Sub-Type.</characteristic>
-                <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When this Cybertheugic Rite is Invoked, all Models in the Target Unit gain one of the following Tactical Statuses: Stunned or Suppressed (All Models in the Unit must gain the same Tactical Status, chosen by the Player that Invoked this Cybertheugic Rite). If this Cybertheugic Rite is unsuccessfully Invoked then the Unit that includes the Focus suffers Cybertheugic Feedback.</characteristic>
-                <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">This Cybertheugic Rite is resolved immediately.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
         </entryLink>
         <entryLink import="true" name="Programming Interrupt" hidden="true" id="2b96-73f0-8441-de44" type="selectionEntry" targetId="6820-76b3-ae10-23e5" sortIndex="4">
           <costs>
@@ -8942,22 +9033,6 @@ If the seismic macro-drill on a Model with this Special Rule is destroyed or oth
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="914e-9449-79f8-1d28"/>
           </constraints>
-          <profiles>
-            <profile name="Programming Interrupt" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="4900-dcb6-2158-2113">
-              <characteristics>
-                <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">4</characteristic>
-                <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">18&quot;</characteristic>
-                <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a friendly Unit that is not Locked in Combat and includes only Models with the Automata or Vehicle Types or the Cybertheugist Trait. This Cybertheugic Rite may not target a Unit that includes any Models with the Super-heavy or Knight Sub-Types.</characteristic>
-                <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When Invoked, this Cybertheugic Rite grants all Models in the Target Unit one of the following Cybertheurgic Statuses, chosen by the Controlling Player (all Models must be granted the same Status): Quicken, Fortify or Guide. If the Target Unit makes a Reaction in the Controlling Player&apos;s next Tuirn as the Reactive Player following a successful Invocation of this Cybertheugic Rate it does not cost a point of that Players Reaction Allotment, but instead the Cybertheugic Status granted by this Cybertheugic Rite is removed.</characteristic>
-                <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">If the Cybertheugic Status granted by this Cybertheugic Rite is not removed in order to make a Reaction, then it is automatically removed in the Controlling Player&apos;s next Start Phase. Immediately after the Cybertheugic Status granted by this Cybertheugic Rite is removed the Target Unit suffers Cybertheugic Feedback.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Cybertheugic Status: Fortify" id="8a07-4ed7-6460-3810" hidden="false" type="rule" targetId="5367-7f24-be5e-447f"/>
-            <infoLink name="Cybertheugic Status: Guide" id="f899-c44f-23c7-8071" hidden="false" type="rule" targetId="14b4-336f-014d-f462"/>
-            <infoLink name="Cybertheugic Status: Quicken" id="ef99-fdd5-e7c7-d524" hidden="false" type="rule" targetId="1160-e8ac-393e-f60c"/>
-          </infoLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -8990,21 +9065,6 @@ If the seismic macro-drill on a Model with this Special Rule is destroyed or oth
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6119-5593-44e0-b835"/>
           </constraints>
-          <profiles>
-            <profile name="Flesh-knit Protocols" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="8f66-df85-497e-78a8">
-              <characteristics>
-                <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">2</characteristic>
-                <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">12&quot;</characteristic>
-                <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a Friendly Unit that is not Locked in Combat and includes only Models with the Lacrymaerta Trait.</characteristic>
-                <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When Invoked, this Cybertheugic Rite grants all Models in the Target Unit one of the following Cybertheugic Statuses, chosen by the Controlling Player (all Models must be granted the same Status): Quicken or Fortify.</characteristic>
-                <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">The Cybertheugic Status granted by this Cybertheugic Rite is automatically removed in the Controlling Player&apos;s next Start Phase and after the Cybertheugic Status is removed the Target Unit suffers Cybertheugic Feedback.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Cybertheugic Status: Fortify" id="fd72-4143-7fa1-3d9f" hidden="false" type="rule" targetId="5367-7f24-be5e-447f"/>
-            <infoLink name="Cybertheugic Status: Quicken" id="d0e5-1c2a-27e8-4289" hidden="false" type="rule" targetId="1160-e8ac-393e-f60c"/>
-          </infoLinks>
         </entryLink>
         <entryLink import="true" name="Omega Protocols" hidden="false" id="3deb-7061-7cc5-2994" type="selectionEntry" targetId="a3d1-9e66-4b2b-2fe9" sortIndex="6">
           <costs>
@@ -9025,17 +9085,6 @@ If the seismic macro-drill on a Model with this Special Rule is destroyed or oth
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16ed-c185-c47b-2267"/>
           </constraints>
-          <profiles>
-            <profile name="Omega Protocols" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="5b69-b44e-2e1e-4565">
-              <characteristics>
-                <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">4</characteristic>
-                <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">12&quot;</characteristic>
-                <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a friendly Unit that includes only Models with the Lacrymaerta Trait, is affected by at least one Cybertheugic Status and that is Locked in Combat with one or more enemy Units.</characteristic>
-                <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When this Cybertheugic Rite is Invoked, all Models in the Target Unit immediately lose all Cybertheugic Statuses they have. If any Cybertheugic Statuses are removed then the Target Unit suffers Cybertheugic Feedback - if any Models in the Target Unit are Removed as Casualties then all other Units in the same Combat (friendly or enemy) suffer two Hits at Strength 6, with an AP of 5 and Damage of 1 for each Model Removed as a Casualty in the Target Unit. Models Removed as Casualties due to this Rite are not counted for the purpose of Combat Resolution.</characteristic>
-                <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">This Cybertheugic Rite is resolved immediately</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
         </entryLink>
         <entryLink import="true" name="Deactivate Limiters" hidden="false" id="9d35-4b89-6cc6-625f" type="selectionEntry" targetId="e2c5-56ee-8e1e-44b0" sortIndex="7">
           <costs>
@@ -9056,22 +9105,6 @@ If the seismic macro-drill on a Model with this Special Rule is destroyed or oth
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b80f-26ec-926e-03ec"/>
           </constraints>
-          <profiles>
-            <profile name="Deactivate Limiters" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="98ca-1ca5-096f-dfa1">
-              <characteristics>
-                <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">3</characteristic>
-                <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">24&quot;</characteristic>
-                <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a friendly Unit that is not Locked in Combat and includes only Models with the Reductor Trait.</characteristic>
-                <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When this Cybertheugic Rite Invoked it grants all Models in the target Unit one of the following Cybertheugic Statuses, chosen by the Controlling Player (all Models must be granted the same Status): Quicken, Fortify or Guide.</characteristic>
-                <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">The Cybertheugic Status granted by this Cybertheugic Rite is automatically removed in the Controlling Player&apos;s next Start Phase and after the Cybertheugic Status is removed the Target Unit suffers Cybertheugic Feedback.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Cybertheugic Status: Fortify" id="4b67-12a7-e4d3-4f8c" hidden="false" type="rule" targetId="5367-7f24-be5e-447f"/>
-            <infoLink name="Cybertheugic Status: Guide" id="f811-78ea-4d54-0f9c" hidden="false" type="rule" targetId="14b4-336f-014d-f462"/>
-            <infoLink name="Cybertheugic Status: Quicken" id="ff54-3a7a-9bfd-965c" hidden="false" type="rule" targetId="1160-e8ac-393e-f60c"/>
-          </infoLinks>
         </entryLink>
         <entryLink import="true" name="Unseal the Portal" hidden="false" id="3907-0134-2b73-1bf6" type="selectionEntry" targetId="2135-5fc2-c64b-8d10" sortIndex="8">
           <costs>
@@ -9092,17 +9125,6 @@ If the seismic macro-drill on a Model with this Special Rule is destroyed or oth
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac99-ade6-1451-4fb4"/>
           </constraints>
-          <profiles>
-            <profile name="Unseal the Portal" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="e8a1-5542-b687-d3d4">
-              <characteristics>
-                <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">3</characteristic>
-                <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">6&quot;</characteristic>
-                <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a Building, Fortification or a Unit that is not Locked in Combat and is composed of a single Model with the Vehicle Type.</characteristic>
-                <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When Invoked, all Models Embarked on the Target Unit must immediately make an Emergency Disembarkation and the Target Unit suffers Cybertheugic Feedback.</characteristic>
-                <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">This Cybertheugic Rite is resolved immediately.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
         </entryLink>
         <entryLink import="true" name="Fury of Ages" hidden="false" id="f3c2-1baf-0d8f-b638" type="selectionEntry" targetId="4d4f-b784-ae17-7096" sortIndex="9">
           <costs>
@@ -9123,21 +9145,6 @@ If the seismic macro-drill on a Model with this Special Rule is destroyed or oth
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50a6-240f-2c1b-c201"/>
           </constraints>
-          <profiles>
-            <profile name="Fury of Ages" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="481d-6978-e878-2dad">
-              <characteristics>
-                <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">2</characteristic>
-                <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">6&quot;</characteristic>
-                <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a Friendly Unit that includes only Models with the Myrmidax Trait. This Cybertheugic Rite may target Units that are Locked in Combat.</characteristic>
-                <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When this Cybertheugic Rite is Invoked, it grants all Models in the Target Unit one of the following Cybertheugic Statuses, chosen by the Controlling Player (all Models must be granted the same Status): Fortify or Guide.</characteristic>
-                <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">The Cybertheugic Status granted by this Cybertheugic Rite is automatically removed in the Controlling Player&apos;s next Start Phase and after the Cybertheugic Status is removed the Target Unit suffers Cybertheugic Feedback.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Cybertheugic Status: Fortify" id="f6f7-81d6-9c19-3b3f" hidden="false" type="rule" targetId="5367-7f24-be5e-447f"/>
-            <infoLink name="Cybertheugic Status: Guide" id="a618-40a9-c1b8-2223" hidden="false" type="rule" targetId="14b4-336f-014d-f462"/>
-          </infoLinks>
         </entryLink>
         <entryLink import="true" name="Ætheric Amplification" hidden="false" id="28c0-db28-ae45-e24a" type="selectionEntry" targetId="a52b-0c1f-e653-7d77" sortIndex="10">
           <costs>
@@ -9153,22 +9160,6 @@ If the seismic macro-drill on a Model with this Special Rule is destroyed or oth
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e5e-60d1-fffc-9cc9"/>
           </constraints>
-          <profiles>
-            <profile name="Ætheric Amplification" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="9140-72da-00b9-ab4b">
-              <characteristics>
-                <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">2</characteristic>
-                <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">6&quot;</characteristic>
-                <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a Friendly Unit that includes only Models with the Malefic Sub-Type. The Target Unit may be Locked in Combat.</characteristic>
-                <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When this Cybertheugic Rite is Invoked, all Models with the Malefic Sub-Type in the Target Unit gain one of the following Cybertheugic Statuses, chosen by the Controlling Player (all Models must be granted the same Status): Quicken Fortify or Guide.</characteristic>
-                <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">The Cybertheugic Status granted by this Cybertheugic Rite is automatically removed in the Target Unit&apos;s Controlling Player&apos;s next Start Phase and after the Cybertheugic Status is removed the Target Unit suffers Cybertheugic Feedback.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Cybertheugic Status: Quicken" id="c702-ca44-7a37-3f58" hidden="false" type="rule" targetId="1160-e8ac-393e-f60c"/>
-            <infoLink name="Cybertheugic Status: Fortify" id="5ca9-cb61-6f37-282c" hidden="false" type="rule" targetId="5367-7f24-be5e-447f"/>
-            <infoLink name="Cybertheugic Status: Guide" id="485a-021d-61aa-b058" hidden="false" type="rule" targetId="14b4-336f-014d-f462"/>
-          </infoLinks>
         </entryLink>
         <entryLink import="true" name="Scrap-code Infection" hidden="false" id="b0c5-7a97-a7ed-7771" type="selectionEntry" targetId="c8fa-a317-bc53-8764" sortIndex="11">
           <costs>
@@ -9184,20 +9175,6 @@ If the seismic macro-drill on a Model with this Special Rule is destroyed or oth
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a5a-250c-a743-dfae"/>
           </constraints>
-          <profiles>
-            <profile name="Scrap-code Infection" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="654a-b7f3-c9de-7fcf">
-              <characteristics>
-                <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">3</characteristic>
-                <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">18&quot;</characteristic>
-                <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be an enemy Unit that includes at least one Model with a Cybertheugic Status other than Null and that is not Locked in Combat.</characteristic>
-                <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When this Cybertheugic Rite is Invoked, all Models in the Target Unit gain the Null Cybertheugic Status.</characteristic>
-                <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">The Cybertheugic Status granted by this Cybertheugic Rite is automatically removed in the Target Unit&apos;s Controlling Player&apos;s next Statuses Sub-phase. If the Cybertheugic Status is removed during the Statuses Sub-Phase, rather than due to the effects of the Null Cybertheugic Status, then the Target Unit suffers Cybertheugic Feedback in the Statuses Sub-Phase.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Cybertheugic Status: Null" id="4cb1-d3dd-1da5-150e" hidden="false" type="rule" targetId="d010-07c3-50a8-4002"/>
-          </infoLinks>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -9870,6 +9847,33 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
 2. In Step 5, the Controlling Player of the Reacting Unit may choose to reduce the Damage of all Hits in a Fire Group to 1.
 3. If the Reacting Player chooses not to reduce the Damage of Hits in the selected Fire Group then the Shooting Attack continues as normal, but the Reacting Player may make the same choice with each following Fire Group in that Shooting Attack.
 4. Once the Reacting Player has chosen to reduce the Damage of Hits in a single Fire Group, they may not affect any further Fire Groups and the Shooting Attack is resolved as normal</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Overcharge Reactors" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="8f09-1b30-b15b-96f4">
+      <characteristics>
+        <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">2</characteristic>
+        <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">12&quot;</characteristic>
+        <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be a friendly Unit that is not Locked in Combat and includes only Models with the Automata or Vehicle Types or the Cybertheugist Trait. This Cybertheugic Rite may not target a Unit that includes any Models with the Super-heavy or Knight Sub-Types.</characteristic>
+        <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When Invoked this Cybertheugic Rite grants all Models in the Target Unit one of the following Cybertheugic Statuses, chosen by the Controlling Player (all Models must be granted the same Status): Quicken, Fortify or Guide.</characteristic>
+        <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">The Cybertheugic Status granted by this Cybertheugic Rite is automatically removed in the Controlling Player&apos;s next Start Phase and after the Cybertheugic Status is removed the Target Unit suffers Cybertheugic Feedback.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cogitator Purge" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="3020-ad6c-3d52-18f2">
+      <characteristics>
+        <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">3</characteristic>
+        <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">12&quot;</characteristic>
+        <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be an enemy Unit that is not Locked in Combat and includes only Models with the Automata, Walker or Vehicle Types or the Cybertheugist Trait.</characteristic>
+        <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When this Cybertheugic Rite is Invoked, all Models in the Target Unit immediately lose all Cybertheugic Statuses they have. If any Cybertheugic Statuses are removed due to the use of this Cybertheugic Rite, then the Target Unit suffers Cybertheugic Feedback and if more than one Cybertheugic Status is removed then the number of wounds inflicted on the Unit by Cybertheugic Feedback is increased to 2 Wounds for each Model in that Unit.</characteristic>
+        <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">This Cybertheugic Rite is resolved immediately.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Scrap-code Infection" typeId="230a-eef9-447d-6623" typeName="Cybertheurgic Rite:" hidden="false" id="e622-32ef-e40e-a8d9">
+      <characteristics>
+        <characteristic name="Difficulty:" typeId="0c1a-8118-86ae-28a7">3</characteristic>
+        <characteristic name="Range:" typeId="b98e-e5fa-6a28-2efe">18&quot;</characteristic>
+        <characteristic name="Restrictions:" typeId="d3e5-69ce-a8d9-97db">The Target Unit for this Cybertheugic Rite must be an enemy Unit that includes at least one Model with a Cybertheugic Status other than Null and that is not Locked in Combat.</characteristic>
+        <characteristic name="Effect:" typeId="dae4-c869-d27c-9025">When this Cybertheugic Rite is Invoked, all Models in the Target Unit gain the Null Cybertheugic Status.</characteristic>
+        <characteristic name="Duration:" typeId="7c83-ff4d-0f5a-55b3">The Cybertheugic Status granted by this Cybertheugic Rite is automatically removed in the Target Unit&apos;s Controlling Player&apos;s next Statuses Sub-phase. If the Cybertheugic Status is removed during the Statuses Sub-Phase, rather than due to the effects of the Null Cybertheugic Status, then the Target Unit suffers Cybertheugic Feedback in the Statuses Sub-Phase.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
