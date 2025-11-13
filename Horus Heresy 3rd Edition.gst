@@ -707,6 +707,7 @@
     <categoryEntry name="EotL-WB" id="b1f7-02a0-e90d-15c7" hidden="false"/>
     <categoryEntry name="EotL-WE" id="67b4-0b06-af17-1321" hidden="false"/>
     <categoryEntry name="Warlord or Lord of War" id="3420-1652-ccd9-aa8e" hidden="false"/>
+    <categoryEntry name="Delegatus" id="a12c-94d0-efed-ea60" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
@@ -23647,6 +23648,11 @@
           <conditions>
             <condition type="notEqualTo" value="-1" field="limit::9893-c379-920b-8982" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
+        </modifier>
+        <modifier type="decrement" value="1" field="0ab6-91a0-792e-4068">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="a12c-94d0-efed-ea60" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
         </modifier>
       </modifiers>
     </forceEntry>
