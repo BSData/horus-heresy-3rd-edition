@@ -6272,6 +6272,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
+            <categoryLink name="Master of Automata" hidden="false" id="e7be-54ff-0352-225a" targetId="43f5-bc69-29b9-2286"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
