@@ -7274,7 +7274,7 @@
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
-        <forceEntry name="Auxiliary - Tagmata Cohort" id="59b8-2183-4bab-b91c" hidden="true" sortIndex="14">
+        <forceEntry name="Auxiliary - Taghmata Cohort" id="59b8-2183-4bab-b91c" hidden="true" sortIndex="14">
           <categoryLinks>
             <categoryLink name="Support" hidden="false" id="aaf9-4c82-2830-47b6" targetId="345f-9ba6-9b02-ed5c">
               <constraints>
@@ -25057,7 +25057,7 @@
         <forceEntryLink name="Auxiliary - Combat Pioneer" id="930c-edcd-4fee-a827" hidden="true" targetId="edf5-6891-81d8-6309" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Shock Assault" id="a4f6-bf0e-4d74-93f2" hidden="true" targetId="c9a5-3069-920b-32f1" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - First Strike" id="2705-eba9-40f2-8830" hidden="true" targetId="c444-8242-d3fc-b5b0" type="forceEntry"/>
-        <forceEntryLink name="Auxiliary - Tagmata Cohort" id="982b-e777-4d71-b5cd" hidden="true" targetId="59b8-2183-4bab-b91c" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Taghmata Cohort" id="982b-e777-4d71-b5cd" hidden="true" targetId="59b8-2183-4bab-b91c" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Apprentice Cadre" id="d3da-a89a-48fb-a84b" hidden="true" targetId="6e73-e03d-9ae7-fd33" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Veletaris Tercio" id="ec81-9fed-48ec-b267" hidden="true" targetId="e1a1-2699-4681-47ab" type="forceEntry"/>
         <forceEntryLink name="Auxiliary - Armour Tercio" id="184f-9e8c-4e5a-b2ec" hidden="true" targetId="6aff-b91d-02bb-7461" type="forceEntry"/>
