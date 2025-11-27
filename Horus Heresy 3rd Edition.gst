@@ -7274,7 +7274,7 @@
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
-        <forceEntry name="Auxiliary - Tagmata Cohort" id="59b8-2183-4bab-b91c" hidden="true" sortIndex="14">
+        <forceEntry name="Auxiliary - Taghmata Cohort" id="59b8-2183-4bab-b91c" hidden="true" sortIndex="14">
           <categoryLinks>
             <categoryLink name="Support" hidden="false" id="aaf9-4c82-2830-47b6" targetId="345f-9ba6-9b02-ed5c">
               <constraints>
