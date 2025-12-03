@@ -26386,6 +26386,16 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
 2. All Models in the Unit for which this Reaction was declared gain a 5+ Shrouded Damage Mitigation Test against any wounds, Penetrating Hits or Glancing Hits inflicted during any Shooting Attack made in the same Phase in which this Reaction was declared.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Automated Fire Advanced Reaction" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="5bf5-0daf-9b62-f835">
+      <characteristics>
+        <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b"/>
+        <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare the Automated Fire Advanced Reaction in Step 2 of the Move Sub-Phase process if an enemy Unit ends a move within 48&quot; of a Unit under the Reactive Player’s Control that only includes Models with the Automated Fire Protocols Special Rule.</characteristic>
+        <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Automated Fire Advanced Reaction has no cost.</characteristic>
+        <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Move triggered this Reaction. The Reactive Player must select one Unit under their control that only includes Models with the Automated Fire Protocols Special Rule that is within 48&quot; of the Target Unit. That Unit is the Reacting Unit.</characteristic>
+        <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once the Automated Fire Advanced Reaction has been declared, the Reactive Player makes a Shooting Attack with the Reacting Unit. This Shooting Attack must target the Target Unit of this Advanced Reaction.
+2. Once the Shooting Attack made as part of this Reaction has been completely resolved, including removing any Casualties, the Active Player must then completely resolve any remaining elements of the Target Unit&apos;s movement.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Prime Unit" hidden="false" id="3fa2-78b1-637f-7fb2">
