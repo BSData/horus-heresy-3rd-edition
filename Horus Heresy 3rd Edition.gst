@@ -31,7 +31,7 @@
           <description>The following Rules apply to all Models with the Command Sub-Type:
 - A Model with the Command Sub-Type may join and leave Units (see page 180).
 - A Model with the Command Sub-Type may Issue and Accept Challenges (see the Rules for Challenges on page 256).
-- The Controlling Player of a Unit that includes on or more Models with the Command Sub-Type may use the Characteristics of one of those Models to resolve any Characteristics Checks made for that Unit.</description>
+- The Controlling Player of a Unit that includes one or more Models with the Command Sub-Type may use the Characteristics of one of those Models to resolve any Characteristics Checks made for that Unit.</description>
         </rule>
       </rules>
     </categoryEntry>
