@@ -5099,7 +5099,7 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Ranged weapon:" id="ff8a-d46f-b8c8-16a9" hidden="false" defaultSelectionEntryId="8606-def5-7473-defb" sortIndex="2">
+            <selectionEntryGroup name="Ranged weapon:" id="ff8a-d46f-b8c8-16a9" hidden="false" defaultSelectionEntryId="8606-def5-7473-defb" sortIndex="3">
               <entryLinks>
                 <entryLink import="true" name="Bolter" hidden="false" id="8606-def5-7473-defb" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e">
                   <costs>
@@ -5155,6 +5155,15 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
           </modifiers>
           <entryLinks>
             <entryLink import="true" name="Arcana Benefice:" hidden="false" id="66e0-e77e-9d6e-6301" type="selectionEntry" targetId="f7b9-dc9c-2c8b-0c92"/>
+            <entryLink import="true" name="Mauler bolt cannon" hidden="false" id="ce29-a75b-7037-2623" type="selectionEntry" targetId="ec2c-185f-3e9e-7ccd" sortIndex="2">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="59f2-d5dd-471f-a92f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e607-e7c8-22c5-6e1f"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Castellax" hidden="false" id="6d1b-0e66-a950-f0ea" sortIndex="2">
@@ -5226,7 +5235,7 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Ranged weapon:" id="762a-0f39-afd1-1f0c" hidden="false" defaultSelectionEntryId="8606-def5-7473-defb" sortIndex="2">
+            <selectionEntryGroup name="Ranged weapon:" id="762a-0f39-afd1-1f0c" hidden="false" defaultSelectionEntryId="8606-def5-7473-defb" sortIndex="3">
               <entryLinks>
                 <entryLink import="true" name="Bolter" hidden="false" id="94da-d659-4db3-d979" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e">
                   <costs>
@@ -5270,18 +5279,20 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Mauler bolt cannon" hidden="false" id="27d1-a226-320d-2999" type="selectionEntry" targetId="ec2c-185f-3e9e-7ccd" sortIndex="2">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d4b-c8f6-2c59-6b7a"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32dc-090e-5452-8da5"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Mauler bolt cannon" hidden="false" id="27d1-a226-320d-2999" type="selectionEntry" targetId="ec2c-185f-3e9e-7ccd" sortIndex="4">
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d4b-c8f6-2c59-6b7a"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32dc-090e-5452-8da5"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Cybernetica" hidden="false" id="2b49-5e7b-9f4b-2f4f" type="selectionEntry" targetId="403d-7806-215e-7676" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5927-3261-82b4-ffca" automatic="true"/>
