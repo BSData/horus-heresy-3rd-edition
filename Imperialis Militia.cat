@@ -4774,7 +4774,18 @@
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="b522-3ee5-c591-5ff6" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
-            <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
+            <modifier type="add" value="3760-2dfb-561a-b603" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="5702-a547-4deb-b72d" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="d759-1cc7-4697-8a9a" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="97ac-5b7e-49f9-b211" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="58da-8bbe-4d75-b151" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="add" value="5a95-e564-96b2-8dc9" field="category">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
