@@ -611,15 +611,6 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Hand flamer" hidden="false" id="ed8f-257b-d5ab-b890" type="selectionEntry" targetId="9322-09ed-abec-6e13" sortIndex="1">
-              <modifiers>
-                <modifier type="set" value="Two Hand Flamers" field="name"/>
-              </modifiers>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="445f-efd1-4af7-30c4" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c6b-d788-7239-fc00" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
             <entryLink import="true" name="Rad grenades" hidden="false" id="5070-bccc-075d-bd79" type="selectionEntry" targetId="cd5f-1eff-df69-6bd2" sortIndex="5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="43ac-40de-fbfb-13c4" includeChildSelections="false"/>
@@ -636,6 +627,15 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="001a-a286-d4fa-cb20" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a51-f039-73f3-ac20" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hand flamer" hidden="false" id="ed8f-257b-d5ab-b890" type="selectionEntry" targetId="9322-09ed-abec-6e13" sortIndex="1">
+              <modifiers>
+                <modifier type="set" value="hand flamers" field="name"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="445f-efd1-4af7-30c4" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="0c6b-d788-7239-fc00" includeChildSelections="false"/>
               </constraints>
             </entryLink>
           </entryLinks>
