@@ -2084,12 +2084,18 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37dc-f9f9-47fd-bfa1" automatic="true"/>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="e7d3-8923-fd35-6b29"/>
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="0" field="37dc-f9f9-47fd-bfa1">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="3a14-74ac-8634-c204" shared="true" includeChildSelections="true"/>
                       </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="e7d3-8923-fd35-6b29">
+                      <repeats>
+                        <repeat value="4" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false"/>
+                      </repeats>
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
