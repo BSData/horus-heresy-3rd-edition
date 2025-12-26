@@ -25632,7 +25632,6 @@
         <categoryLink name="Warlord" hidden="false" id="a9f0-0981-4d0f-a835" targetId="22ee-7208-4089-b005"/>
         <categoryLink name="Fortification" hidden="false" id="8261-22fc-c75e-2df6" targetId="7e2f-62cf-4e42-9e13"/>
         <categoryLink name="Clade Operative" hidden="false" id="0f22-af59-a81b-bcff" targetId="335a-5a90-3b7c-c034"/>
-        <categoryLink name="Clade Operative" hidden="false" id="98f8-ed44-ed0a-2c50" targetId="335a-5a90-3b7c-c034"/>
         <categoryLink name="Cult Operative" hidden="false" id="c80d-3c3d-d65a-85af" targetId="4f71-897f-8ae1-303b"/>
       </categoryLinks>
     </forceEntry>
