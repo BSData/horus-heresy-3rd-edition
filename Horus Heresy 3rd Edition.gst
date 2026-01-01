@@ -25085,6 +25085,7 @@
         <forceEntryLink name="Auxiliary - Storm Cadre" id="988e-0784-4009-83fe" hidden="false" targetId="36f3-796e-8f6d-3cb8" type="forceEntry">
           <comment>Militia</comment>
         </forceEntryLink>
+        <forceEntryLink name="Auxiliary - Maelstrom Sentry Battery" id="7f67-81d6-ea48-df88" hidden="false" targetId="07f0-6f5f-59f4-f95f" type="forceEntry"/>
       </forceEntryLinks>
     </forceEntry>
     <forceEntry name="Lord of War Detachment" id="b7a1-629f-9d60-c2a9" hidden="false" sortIndex="4">
