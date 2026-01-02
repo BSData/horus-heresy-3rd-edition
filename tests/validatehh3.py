@@ -14,6 +14,7 @@ from BSCopy.book_reader.raw_entry import RawModel
 PRIME_ADVANTAGE_SLOTS = ["Rewards of Treachery",
                          "Master of Automata",
                          "Clade Operative",
+                         "Cult Operative",
                          "Legiones Thallaxes",
                          "Recon - Land Raider Explorator Only",
                          "Heavy Assault - Ruinstorm Daemon Brutes Only",
