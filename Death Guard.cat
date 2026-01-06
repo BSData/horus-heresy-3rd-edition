@@ -364,6 +364,31 @@ Additionally, once per Battle, while the Model with this Special Rule is engaged
               </characteristics>
             </profile>
           </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Biomancy" hidden="false" id="79b0-74cf-de8f-5f63" type="selectionEntry" targetId="7f0b-3a53-fbba-de05">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="1e3b-2a3b-c76d-6f98" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="ea59-b3cf-2773-1623">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="1e3b-2a3b-c76d-6f98" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="0d5c-88bf-5100-1c64">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="1e3b-2a3b-c76d-6f98" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea59-b3cf-2773-1623" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d5c-88bf-5100-1c64" automatic="true"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
