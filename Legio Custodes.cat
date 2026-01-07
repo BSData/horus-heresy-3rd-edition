@@ -3261,6 +3261,14 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
         <infoLink name="Legio Custodes" id="ebcf-cf2c-4678-a09e" hidden="false" type="profile" targetId="c717-38ae-cee2-19f7"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Legio Tactica" hidden="false" id="5462-3ea9-6d4b-51e4">
+      <entryLinks>
+        <entryLink import="true" name="Legio Tactica" hidden="false" id="de22-dfd7-ad96-5c91" type="selectionEntryGroup" targetId="05d6-c214-1c60-331b"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0f06-5dcf-a43b-0400"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Special Rules" id="8ca8-471c-e2d4-8c7b" targetId="106b-693b-99f2-00c3"/>
@@ -3364,12 +3372,35 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="4663-d0bb-f257-4f77" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Legio Tactica" hidden="false" id="8f76-26c1-ffbf-9f97" type="selectionEntry" targetId="5462-3ea9-6d4b-51e4" defaultAmount="1">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="8e18-cb89-2a28-e73d" primary="true" name="Army Configuration"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Prime Benefits" id="6f4b-388a-b001-abde" hidden="false">
       <entryLinks>
         <entryLink import="true" name="Common Prime Benefits" hidden="false" id="3b2f-a759-71a1-98c0" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Legio Tactica" id="05d6-c214-1c60-331b" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Legio Tactica" hidden="false" id="6bc3-e10d-ccec-d76d">
+          <rules>
+            <rule name="Only in Death" id="28e4-4dfb-df30-cdee" hidden="false">
+              <description>&quot;Units which only contain Models with this Special Rule become Stunned instead of Routed in Combat and cannot Fall Back or Disengage from a Combat.&quot;
+
+
+Whenever a Model with this Special Rule would gain the Routed Tactical Status in the Make Panic Checks Step of the Resolution Sub-Phase of the Assault Phase, that Model instead gains the Stunned Tactical Status, unless there are any Models without this Special Rule in the same Unit as that Model. Additionally, a Unit which only contains Models with this Special Rule may never have the Disengage or Fall Back aftermath options selected for it, unless it is entirely composed of Models which also have the Antigrav Sub-Type, in which case it may still have the Disengage aftermath option selected for it.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc1d-d3c5-bbd6-e802"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4a7-85f7-ba60-bd0b"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <categoryEntries>
