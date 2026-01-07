@@ -30,6 +30,24 @@
         <entryLink import="true" name="Common Prime Benefits" hidden="false" id="5c9a-e305-5cc7-d605" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Divisio Tactica" id="8d70-b556-14f6-3d27" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Divisio Tactica" hidden="false" id="5b7b-6d2d-c058-56aa">
+          <rules>
+            <rule name="Divisio Tactica" id="848b-ce83-c722-e13a" hidden="false">
+              <description>All Models with the Anathema Psykana Trait (excluding Models with the Vehicle Type) are subject to the Anathema Special Rule..</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Anathema" id="fc29-5e10-86d6-1d32" hidden="false" type="rule" targetId="9ca0-a776-be65-b2b7"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="34b8-4a14-5867-98dd"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57ee-587b-d0d0-419a"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Jenetia Krole" hidden="false" id="578c-1407-0ada-3c52">
@@ -697,6 +715,14 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Divisio Tactica" hidden="false" id="f978-523b-5ef8-84c1">
+      <entryLinks>
+        <entryLink import="true" name="Divisio Tactica" hidden="false" id="0116-cbbf-9757-81c6" type="selectionEntryGroup" targetId="8d70-b556-14f6-3d27"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6180-6460-cee4-119a"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Jenetia Krole" hidden="false" id="5f19-2fda-5599-d3d3" type="selectionEntry" targetId="578c-1407-0ada-3c52">
@@ -717,6 +743,11 @@
     <entryLink import="true" name="Anathema Cadre" hidden="false" id="d0f0-7547-8d35-473a" type="selectionEntry" targetId="70fb-de8a-7d80-b232">
       <categoryLinks>
         <categoryLink targetId="88e6-d373-4152-0dd8" id="48cf-967d-8490-3fa8" primary="true" name="Troops"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Divisio Tactica" hidden="false" id="c52b-6943-1df1-e4da" type="selectionEntry" targetId="f978-523b-5ef8-84c1" defaultAmount="1">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="874a-7e74-0297-c506" primary="true" name="Army Configuration"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
