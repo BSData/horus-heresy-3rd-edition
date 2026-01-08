@@ -4084,6 +4084,23 @@ Once the cost has been paid, the Reactive Player must select one Unit under thei
         <categoryLink targetId="52d0-8b78-439e-18e5" id="5e7d-4cdd-a8f4-2720" primary="true" name="Heavy Transport"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Land Raider Carrier" hidden="true" id="9c1b-d3c8-e559-e0f8" type="selectionEntry" targetId="e0b3-3d67-1299-1eb7" sortIndex="207">
+      <infoLinks>
+        <infoLink name="Imperialis Militia" id="3587-2754-383a-67d7" hidden="false" type="profile" targetId="0ffd-e762-fef0-716d"/>
+        <infoLink name="Third-Line" id="dbf7-6d02-41bb-eff1" hidden="false" type="rule" targetId="9ac8-527e-1249-8600"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="add" value="b3b6-dc52-35dc-24b4" field="category"/>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="2713-f747-17f5-8eb9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="52d0-8b78-439e-18e5" id="3aeb-0faf-fe32-ac12" primary="true" name="Heavy Transport"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedRules>
     <rule name="Colossus" id="1de7-bcf0-4bdd-c70d" hidden="false">
