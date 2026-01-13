@@ -26209,9 +26209,14 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
       </constraints>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntryGroup>
