@@ -651,25 +651,6 @@ Weapons of Desperation
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb62-4579-e99e-1d82" automatic="true"/>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ac71-f536-996b-0222" automatic="true"/>
           </constraints>
-          <rules>
-            <rule name="The Blade of the Just" id="1592-e29d-a111-dfef" hidden="false">
-              <description>&quot;A Unit which includes mostly Models with this Special Rule scores additional Victory Points for winning hard combats.&quot;
-
-
-All Models with the Blackshields Trait in a Detachment that has this Oath of Moment lose all variants of the Line (X) or Vanguard (X) Special Rule and may not thereafter gain any version of Line (X) or Vanguard (X) from any source. Such Models gain the Doomed Heroics (X) Special Rule, with the value of X on Doomed Heroics being equal to twice the value of X on the Special Rule lost. Models with the Blackshields Trait in a Detachment that has this Oath of Moment that do not have the Heedless Special Rule and no variant of either the Line (X) or Vanguard (X) Special Rule gain the Doomed Heroics (3) Special Rule.</description>
-            </rule>
-            <rule name="Doomed Heroics (X)" id="bbb2-651f-2fca-9b0c" hidden="false">
-              <description>Whenever at least one Unit that includes a majority of Models with this Special Rule is on the winning side of a Combat where one or more of the following was true at the start of the Fight Sub-Phase, then the Controlling Player scores a number of Victory Points equal to the value of X (where there are multiple variants of this Special Rule in a Combat, use only the single highest value of X):
-
-
- • The total number of Models on the enemy side is more than twice the number of Models on the Blackshields side.
- • The enemy side includes more Models with the Command Trait or any Models with the Paragon Type.
- • The enemy side includes a majority of Models with a higher Weapon Skill Characteristic than the majority of Models on the Blackshields side.
-
-
-This Oath of Moment may not be selected if the Detachment already has the Reapers of Lives or Spoils of Victory Oaths of Moment.</description>
-            </rule>
-          </rules>
           <modifiers>
             <modifier type="set" value="0" field="cb62-4579-e99e-1d82">
               <conditionGroups>
@@ -695,6 +676,10 @@ This Oath of Moment may not be selected if the Detachment already has the Reape
           <categoryLinks>
             <categoryLink targetId="4ec2-4dab-205b-36a2" id="0966-7b8b-22f6-8293" primary="false" name="The Blade of the Just"/>
           </categoryLinks>
+          <infoLinks>
+            <infoLink name="The Blade of the Just" id="3f31-ffbf-36c0-fc76" hidden="false" type="rule" targetId="1592-e29d-a111-dfef"/>
+            <infoLink name="Doomed Heroics (X)" id="e2b4-9600-1176-64a1" hidden="false" type="rule" targetId="aea9-7451-7b2c-5b40"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Reapers of Lives" hidden="false" id="40ff-d0cc-3254-f83e">
           <constraints>
@@ -736,29 +721,13 @@ This Oath of Moment may not be selected if the Detachment already has the Spoil
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a72-6a3e-4000-ac74"/>
           </constraints>
-          <rules>
-            <rule name="Alone and Forgotten" id="1f14-ed97-b397-d409" hidden="false">
-              <description>&quot;A Detachment with this Oath of Moment may only have Command Choices selected for it, but gains bonuses for those Units in Combat.&quot;
-
-
-A Detachment that has this Oath of Moment may only include Command Choices. All Troops Slots in a Primary or Allied Detachment with this Oath of Moment, or any Auxiliary Detachment attached to such a Detachment, are replaced with Command Slots. However, the only Units that may be chosen to fill those Command Slots are Centurions or Centurions in Terminator Armour. All Command Choices selected for a Detachment with this Oath of Moment may have two of the following Characteristic&apos;s Base Values increased by +1: Weapon Skill, Ballistic Skill, Strength, Toughness, Initiative, or Wounds.
-
-
-All Centurions and Centurions in Terminator Armour selected as part of a Detachment with this Oath of Moment gain the To Fight and Die Alone Special Rule</description>
-            </rule>
-            <rule name="To Fight and Die Alone" id="525c-b678-98e7-43ff" hidden="false">
-              <description>&quot;A Model with this Special Rule cannot join Units, but gains bonuses when fighting alone.&quot;
-
-
-A Model with this Special Rule may not join any other Unit, nor may it be joined by another Model. While part of a Combat where this Model is the only Model the Controlling Player controls in that Combat, that player gains a bonus of +4 to their Combat Resolution Score, with a further bonus of +1 Combat Resolution points scored for each Wound lost by that Model in that Combat Round as long as the Model ends the Combat Round with at least one Wound remaining. 
-
-
-If a Model with this Special Rule is Removed as a Casualty during any Initiative Step of any Combat, then the Controlling Player of this Model gains D6+1 Victory Points.</description>
-            </rule>
-          </rules>
           <categoryLinks>
             <categoryLink targetId="122b-0eda-4e29-401e" id="1ba0-cf03-a59a-c36b" primary="false" name="Alone and Forgotten"/>
           </categoryLinks>
+          <infoLinks>
+            <infoLink name="Alone and Forgotten" id="3329-f10c-48ec-0b33" hidden="false" type="rule" targetId="1f14-ed97-b397-d409"/>
+            <infoLink name="To Fight and Die Alone" id="6ffa-f16c-b2a0-32d0" hidden="false" type="rule" targetId="525c-b678-98e7-43ff"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
