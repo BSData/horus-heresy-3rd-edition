@@ -2051,6 +2051,7 @@
             <categoryLink name="Warlord" hidden="false" id="2a9f-70e6-d060-3978" targetId="22ee-7208-4089-b005">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2267-1d5d-1196-85a3"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aec7-daae-985e-5601"/>
               </constraints>
             </categoryLink>
             <categoryLink name="Retinue" hidden="false" id="98a4-441b-4896-7070" targetId="a38e-50ff-310f-f19e">
