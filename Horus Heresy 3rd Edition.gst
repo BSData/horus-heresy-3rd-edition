@@ -708,6 +708,7 @@
     <categoryEntry name="EotL-WE" id="67b4-0b06-af17-1321" hidden="false"/>
     <categoryEntry name="Warlord or Lord of War" id="3420-1652-ccd9-aa8e" hidden="false"/>
     <categoryEntry name="Delegatus" id="a12c-94d0-efed-ea60" hidden="false"/>
+    <categoryEntry name="Prime Command - Centurions Only" id="afc8-c83d-00a6-936e" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
@@ -721,8 +722,21 @@
               <modifiers>
                 <modifier type="set" value="0" field="9d3d-46cb-6d9d-63c4">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
                     <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -739,8 +753,21 @@
               <modifiers>
                 <modifier type="set" value="0" field="cf3d-bbe9-fcc8-1215">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
                     <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1279,6 +1306,18 @@
                     <repeat value="1" repeats="1" field="selections" scope="parent" childId="1bc1-e6ff-d62e-398e" shared="true" roundUp="false" includeChildSelections="true"/>
                   </repeats>
                 </modifier>
+                <modifier type="set" value="0" field="5146-47d5-c98c-0d62">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Transport" hidden="false" id="e33f-6b66-6f27-680b" targetId="fc27-1a48-84ae-aa7b">
@@ -1514,7 +1553,7 @@
             </categoryLink>
             <categoryLink name="Command - Centurions Only" hidden="false" id="ab27-8132-c95f-e16d" targetId="1429-f03a-e8a5-478c">
               <constraints>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="7c25-0f2e-2ee0-acbe"/>
+                <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="7c25-0f2e-2ee0-acbe"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -1830,6 +1869,19 @@
                   </conditions>
                 </modifier>
               </modifiers>
+            </categoryLink>
+            <categoryLink name="Prime Command - Centurions Only" hidden="false" id="46d5-b68c-4f55-7e46" targetId="afc8-c83d-00a6-936e">
+              <modifiers>
+                <modifier type="set" value="2" field="c42c-54bc-c90f-68f8">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c42c-54bc-c90f-68f8" includeChildSelections="true"/>
+              </constraints>
             </categoryLink>
           </categoryLinks>
           <constraints>
@@ -2285,11 +2337,39 @@
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="6431-8973-1e21-373c"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="6431-8973-1e21-373c">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
             <categoryLink name="Heavy Transport" hidden="false" id="d433-141d-baf3-6d7a" targetId="52d0-8b78-439e-18e5">
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="5f94-2b1f-582e-f027"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="5f94-2b1f-582e-f027">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
             <categoryLink name="Prime Transport" hidden="false" id="2530-de81-c953-f47d" targetId="fc27-1a48-84ae-aa7b">
               <constraints>
@@ -2709,6 +2789,20 @@
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c86b-d088-efd3-0e86"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="c86b-d088-efd3-0e86">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
             <categoryLink name="Prime Troops" hidden="false" id="613d-dad1-4746-5c74" targetId="c3f9-a7f3-984b-3fda">
               <constraints>
@@ -2800,6 +2894,11 @@
             <categoryLink name="Prime Elites" hidden="false" id="f7b1-5c3f-e2f3-1056" targetId="276f-7a07-a56c-affd">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3bd3-f7ab-ac8c-549e" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Command - Centurions Only" hidden="false" id="9bb2-5954-4a4b-01d4" targetId="afc8-c83d-00a6-936e">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="319c-00e2-dcc0-1866" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
           </categoryLinks>
@@ -3167,6 +3266,20 @@
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="55ad-034f-09fb-344b"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="55ad-034f-09fb-344b">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
             <categoryLink name="Prime Armour" hidden="false" id="c38b-2801-da19-2cd1" targetId="4460-7bc1-4d80-aecb">
               <constraints>
@@ -3540,6 +3653,20 @@
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aaae-9981-1e16-13b2"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="aaae-9981-1e16-13b2">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
             <categoryLink name="Prime War-engine" hidden="false" id="beec-b88f-6137-23e5" targetId="9699-67c9-2c0b-e64b">
               <constraints>
@@ -3913,6 +4040,20 @@
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="56c4-65a1-7083-3041"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="56c4-65a1-7083-3041">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
             <categoryLink name="Prime Recon" hidden="false" id="cc09-a724-add5-8dce" targetId="6348-ecd0-714d-042a">
               <constraints>
@@ -4286,6 +4427,20 @@
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5279-0e0a-763f-7aec"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="5279-0e0a-763f-7aec">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
             <categoryLink name="Prime Heavy Assault" hidden="false" id="e69d-01d0-1f83-768c" targetId="1e95-35f0-1353-ffa1">
               <constraints>
@@ -4659,6 +4814,20 @@
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9723-874b-5bbf-14cc"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="9723-874b-5bbf-14cc">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
             <categoryLink name="Prime Fast Attack" hidden="false" id="9713-0512-a699-1e8e" targetId="c291-144b-3da6-37ed">
               <constraints>
@@ -17862,6 +18031,18 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="0" field="399a-151b-e3cc-3930">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Support" hidden="false" id="f5cf-f5a9-8068-5212" targetId="1c79-ecdf-9a64-84c9">
@@ -18280,6 +18461,18 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="0" field="7ca5-a0b5-47a5-8387">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Support" hidden="false" id="09a3-d71b-06d8-d3a9" targetId="1c79-ecdf-9a64-84c9">
@@ -18692,11 +18885,39 @@
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e585-7d87-7007-e091" includeChildSelections="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e585-7d87-7007-e091">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
             <categoryLink name="Armour - Arquitor or Vindicator Only" hidden="false" id="be8e-5119-3ed1-8713" targetId="eb97-692e-8c90-1622">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ccbf-1226-7185-1316" includeChildSelections="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="ccbf-1226-7185-1316">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
             <categoryLink name="Prime Support" hidden="false" id="112c-4e7c-bfde-3240" targetId="1c79-ecdf-9a64-84c9">
               <constraints>
@@ -21794,6 +22015,18 @@
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="0" field="012f-6fff-4a20-808b">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Retinue - Saturnine Only" hidden="false" id="f1e4-ce6a-7ac1-0965" targetId="4757-3241-ca42-c64c">
@@ -21804,6 +22037,18 @@
                 <modifier type="increment" value="1" field="5987-3968-0d68-5245">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="5987-3968-0d68-5245">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -21952,6 +22197,18 @@
                 <modifier type="increment" value="1" field="1232-5d26-3f71-7528">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="1232-5d26-3f71-7528">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -22226,6 +22483,18 @@
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="0" field="b059-19ed-d2d0-3f9c">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Retinue - Cataphractii Only" hidden="false" id="b71a-cf47-a216-e5ab" targetId="308f-e6d5-9133-fdc0">
@@ -22236,6 +22505,18 @@
                 <modifier type="increment" value="1" field="0968-6e1c-fe3b-1ae2">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="0968-6e1c-fe3b-1ae2">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -22384,6 +22665,18 @@
                 <modifier type="increment" value="1" field="9628-2fa9-b18e-353c">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="9628-2fa9-b18e-353c">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -22641,6 +22934,18 @@
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="0" field="fcca-129a-3b18-7393">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Retinue - Tartaros Only" hidden="false" id="6431-a6a9-ebd7-cfd7" targetId="2be1-bf88-59df-0338">
@@ -22651,6 +22956,18 @@
                 <modifier type="increment" value="1" field="db30-7918-0899-daac">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="db30-7918-0899-daac">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -22799,6 +23116,18 @@
                 <modifier type="increment" value="1" field="6a04-3103-f33f-25e6">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="6a04-3103-f33f-25e6">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -22983,6 +23312,12 @@
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Recon - Tarantula Battery Units Only" hidden="false" id="af25-7bfa-307b-c317" targetId="6177-f967-f944-a7bd">
@@ -22993,6 +23328,12 @@
                 <modifier type="increment" value="1" field="18bd-a570-31e2-d4f0">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -23674,7 +24015,20 @@
               <modifiers>
                 <modifier type="set" value="0" field="390b-521d-badf-8cff">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
                     <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                   </conditions>
                 </modifier>
@@ -23780,13 +24134,26 @@
                 </modifier>
                 <modifier type="set" value="0" field="01a3-4258-494b-cbea">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
                     <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="122b-0eda-4e29-401e" shared="true" includeChildSelections="true" includeChildForces="true"/>
                     <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                   </conditions>
                 </modifier>
@@ -23910,7 +24277,7 @@
             <categoryLink name="Legiones Thallaxes" hidden="false" id="7772-cdce-8fbd-841f" targetId="6f78-9e60-4884-63d2"/>
             <categoryLink name="Command - Centurions Only" hidden="false" id="5e02-935b-3ae3-4485" targetId="1429-f03a-e8a5-478c">
               <constraints>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="139d-47eb-ef76-744b"/>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="139d-47eb-ef76-744b"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
@@ -24381,6 +24748,11 @@
               </modifiers>
             </categoryLink>
             <categoryLink name="Master of Automata" hidden="false" id="79b1-e748-f637-ff0d" targetId="43f5-bc69-29b9-2286"/>
+            <categoryLink name="Prime Command - Centurions Only" hidden="false" id="9dff-cea8-05de-908a" targetId="afc8-c83d-00a6-936e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d3f-43cb-01c3-42c4" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -26483,6 +26855,11 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <modifier type="add" value="de4f-4c9e-11bc-1b2a" field="category">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="fe7f-1287-4162-a65d" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="afc8-c83d-00a6-936e" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1429-f03a-e8a5-478c" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
