@@ -462,6 +462,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53e3-d1fc-5fd0-d6dd"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="500f-7835-89ed-3c91" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="fd17-b1d8-3051-f2c1" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -561,6 +566,39 @@
 When a Characteristic Check is taken for a Unit made up of Models with this Special Rule, the Check may be made against the Base Characteristic of any Friendly Model with the Skitarii Trait that does not have the Routed Tactical Status that is part of a Unit that has a Model within 6&quot; and Line of Sight of a Model from the Unit for which the Characteristic Check is made. Note that Modifiers applied to the Unit for which the Characteristic Check is being made, for example from the Pinning (X) Special Rule, are applied to the Characteristic of the Model with the Skitarii Trait that is used for the Check.</description>
         </rule>
       </rules>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="9692-ac69-6a31-b61d" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Common Prime Benefits" hidden="false" id="ad46-da9f-d7e2-35a0" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="1ebf-72a3-b0b3-4944" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="637f-8850-f6f5-6f6a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="ac12-7d1f-98e4-2b58" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="ac1d-bf09-c84a-fce3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="b2d5-2df6-b213-989b" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="70fa-cb14-19c6-a11d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="b819-ac22-c04b-0932" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="979d-4792-94a6-d6b8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
@@ -592,10 +630,14 @@ When a Characteristic Check is taken for a Unit made up of Models with this Spec
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="4185-cbb7-9544-220a" primary="true" name="Support"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Skitarii Sub Factions" hidden="false" id="90af-21a5-e0fd-af39" type="selectionEntryGroup" targetId="cdc4-0bc4-89cb-3689"/>
+      </entryLinks>
     </entryLink>
     <entryLink import="true" name="Vultarax Stratos Squadron" hidden="false" id="7986-c0de-a682-3ccc" type="selectionEntry" targetId="710e-f1ea-0061-d3cb">
       <modifiers>
         <modifier type="set" value="Skitarii Vulturax Stratos-Automata" field="name" join=" "/>
+        <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="cf96-8891-3f9a-8921" id="4fb9-67fe-b998-48f8" primary="true" name="Fast Attack"/>
@@ -603,10 +645,40 @@ When a Characteristic Check is taken for a Unit made up of Models with this Spec
       <infoLinks>
         <infoLink name="[Skitarii]" id="e784-789b-d131-9f5a" hidden="false" type="profile" targetId="e4fa-dbbf-91c1-d396"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Skitarii Sub Factions" hidden="false" id="abd3-c1ac-17be-9d21" type="selectionEntryGroup" targetId="cdc4-0bc4-89cb-3689"/>
+      </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="1ebf-72a3-b0b3-4944" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="637f-8850-f6f5-6f6a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="ac12-7d1f-98e4-2b58" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="ac1d-bf09-c84a-fce3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="b2d5-2df6-b213-989b" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="70fa-cb14-19c6-a11d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="b819-ac22-c04b-0932" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="979d-4792-94a6-d6b8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </entryLink>
     <entryLink import="true" name="Triaros Armoured Conveyor" hidden="false" id="7acc-6115-828f-c94d" type="selectionEntry" targetId="0896-07f4-8844-9542">
       <modifiers>
         <modifier type="prepend" value="Skitarii" field="name" join=" "/>
+        <modifier type="remove" value="1ec3-1433-658a-f04e" field="category"/>
       </modifiers>
       <infoLinks>
         <infoLink name="[Skitarii]" id="ad7b-fee9-9eda-b53e" hidden="false" type="profile" targetId="e4fa-dbbf-91c1-d396"/>
@@ -614,10 +686,40 @@ When a Characteristic Check is taken for a Unit made up of Models with this Spec
       <categoryLinks>
         <categoryLink targetId="52d0-8b78-439e-18e5" id="356f-6727-f8bf-0141" primary="true" name="Heavy Transport"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Skitarii Sub Factions" hidden="false" id="6c23-7e36-20a9-2ff6" type="selectionEntryGroup" targetId="cdc4-0bc4-89cb-3689"/>
+      </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="1ebf-72a3-b0b3-4944" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="637f-8850-f6f5-6f6a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="ac12-7d1f-98e4-2b58" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="ac1d-bf09-c84a-fce3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="b2d5-2df6-b213-989b" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="70fa-cb14-19c6-a11d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="b819-ac22-c04b-0932" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="979d-4792-94a6-d6b8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </entryLink>
     <entryLink import="true" name="Karacnos Assault Tank" hidden="false" id="36d4-66e8-efcc-23bd" type="selectionEntry" targetId="ce4c-753d-aaf1-b4ab">
       <modifiers>
         <modifier type="prepend" value="Skitarii" field="name" join=" "/>
+        <modifier type="remove" value="1ec3-1433-658a-f04e" field="category"/>
       </modifiers>
       <infoLinks>
         <infoLink name="[Skitarii]" id="127c-e3a2-6d42-4e46" hidden="false" type="profile" targetId="e4fa-dbbf-91c1-d396"/>
@@ -625,10 +727,40 @@ When a Characteristic Check is taken for a Unit made up of Models with this Spec
       <categoryLinks>
         <categoryLink targetId="643a-1012-bd51-6537" id="dcf7-4161-c5a7-2a75" primary="true" name="Armour"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Skitarii Sub Factions" hidden="false" id="7530-1594-bf7c-7e1c" type="selectionEntryGroup" targetId="cdc4-0bc4-89cb-3689"/>
+      </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="1ebf-72a3-b0b3-4944" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="637f-8850-f6f5-6f6a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="ac12-7d1f-98e4-2b58" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="ac1d-bf09-c84a-fce3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="b2d5-2df6-b213-989b" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="70fa-cb14-19c6-a11d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="b819-ac22-c04b-0932" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="979d-4792-94a6-d6b8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </entryLink>
     <entryLink import="true" name="Krios Battle Tank" hidden="false" id="8480-0708-1019-3c83" type="selectionEntry" targetId="135f-153c-308a-7a1c">
       <modifiers>
         <modifier type="prepend" value="Skitarii" field="name" join=" "/>
+        <modifier type="remove" value="1ec3-1433-658a-f04e" field="category"/>
       </modifiers>
       <infoLinks>
         <infoLink name="[Skitarii]" id="2534-915e-4e90-59f5" hidden="false" type="profile" targetId="e4fa-dbbf-91c1-d396"/>
@@ -636,15 +768,77 @@ When a Characteristic Check is taken for a Unit made up of Models with this Spec
       <categoryLinks>
         <categoryLink targetId="643a-1012-bd51-6537" id="c6c2-f056-1110-15a4" primary="true" name="Armour"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Skitarii Sub Factions" hidden="false" id="7a35-9046-6d58-d0d9" type="selectionEntryGroup" targetId="cdc4-0bc4-89cb-3689"/>
+      </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="1ebf-72a3-b0b3-4944" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="637f-8850-f6f5-6f6a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="ac12-7d1f-98e4-2b58" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="ac1d-bf09-c84a-fce3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="b2d5-2df6-b213-989b" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="70fa-cb14-19c6-a11d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="b819-ac22-c04b-0932" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="979d-4792-94a6-d6b8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </entryLink>
     <entryLink import="true" name="Krios Venator" hidden="false" id="1267-0dec-49c3-5f88" type="selectionEntry" targetId="b444-b85f-85f8-e6f3">
       <modifiers>
         <modifier type="prepend" value="Skitarii" field="name" join=" "/>
         <modifier type="append" value="Tank Destroyer" field="name" join=" "/>
+        <modifier type="remove" value="1ec3-1433-658a-f04e" field="category"/>
       </modifiers>
       <infoLinks>
         <infoLink name="[Skitarii]" id="9609-3296-30bb-3b41" hidden="false" type="profile" targetId="e4fa-dbbf-91c1-d396"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="643a-1012-bd51-6537" id="cd07-4c7f-d1ef-08d2" primary="true" name="Armour"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Skitarii Sub Factions" hidden="false" id="247a-119f-a332-f30f" type="selectionEntryGroup" targetId="cdc4-0bc4-89cb-3689"/>
+      </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="1ebf-72a3-b0b3-4944" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="637f-8850-f6f5-6f6a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="ac12-7d1f-98e4-2b58" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="ac1d-bf09-c84a-fce3" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="b2d5-2df6-b213-989b" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="70fa-cb14-19c6-a11d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="b819-ac22-c04b-0932" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="979d-4792-94a6-d6b8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </entryLink>
   </entryLinks>
 </catalogue>
