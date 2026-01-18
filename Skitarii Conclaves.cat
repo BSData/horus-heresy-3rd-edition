@@ -490,6 +490,78 @@
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Bonepicker Host" hidden="false" id="2e2e-87d0-2624-eae6">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Bonepicker" hidden="false" id="427d-0aa1-011c-14f6">
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="3542-febb-bfac-4c0d"/>
+            <constraint type="max" value="30" field="selections" scope="parent" shared="true" id="5524-0ea4-b930-da9a"/>
+          </constraints>
+          <profiles>
+            <profile name="Bonepicker" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="55a4-cf9e-4313-593e">
+              <characteristics>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">2</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">2</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">3</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">3</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">1</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">2</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">1</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">4</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">4</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">4</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">4</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">6+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+            <cost name="Combined Warlord and Lord of War Points" typeId="14bd-cad0-cd3d-8b23" value="0"/>
+            <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Las-lock" hidden="false" id="f8ff-6e5e-8dcf-3b26" type="selectionEntry" targetId="f8c0-734c-42a2-ab7b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c1d-066c-547d-6e68"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fff-10a7-565d-c983"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="ff89-ac77-2d8f-a4c2" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Skitarii]" id="d8a8-c041-84d9-dfdd" hidden="false" type="profile" targetId="e4fa-dbbf-91c1-d396"/>
+        <infoLink name="Expendable (X)" id="0a70-6fea-35d6-cdc1" hidden="false" type="rule" targetId="c4d4-e053-9564-540b">
+          <comment>2</comment>
+          <modifiers>
+            <modifier type="replace" value="2" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Support Unit (X)" id="e37c-97ef-d058-cbd9" hidden="false" type="rule" targetId="313f-7ed6-3833-e97c">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="replace" value="1" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <rules>
+        <rule name="Zealous Followers" id="e1a8-6776-5438-47b9" hidden="false">
+          <description>&quot;Bonepickers may use the Characteristics of nearby Skitarii Units when making Characteristic checks&quot;
+
+
+When a Characteristic Check is taken for a Unit made up of Models with this Special Rule, the Check may be made against the Base Characteristic of any Friendly Model with the Skitarii Trait that does not have the Routed Tactical Status that is part of a Unit that has a Model within 6&quot; and Line of Sight of a Model from the Unit for which the Characteristic Check is made. Note that Modifiers applied to the Unit for which the Characteristic Check is being made, for example from the Pinning (X) Special Rule, are applied to the Characteristic of the Model with the Skitarii Trait that is used for the Check.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Advanced Reaction" hidden="false" id="7cd0-2de4-9d96-f998">
@@ -515,6 +587,64 @@
       <categoryLinks>
         <categoryLink targetId="88e6-d373-4152-0dd8" id="1b60-723c-dfbc-0946" primary="true" name="Troops"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Bonepicker Host" hidden="false" id="b6b8-47c2-c0a1-7ca0" type="selectionEntry" targetId="2e2e-87d0-2624-eae6">
+      <categoryLinks>
+        <categoryLink targetId="345f-9ba6-9b02-ed5c" id="4185-cbb7-9544-220a" primary="true" name="Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Vultarax Stratos Squadron" hidden="false" id="7986-c0de-a682-3ccc" type="selectionEntry" targetId="710e-f1ea-0061-d3cb">
+      <modifiers>
+        <modifier type="set" value="Skitarii Vulturax Stratos-Automata" field="name" join=" "/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="cf96-8891-3f9a-8921" id="4fb9-67fe-b998-48f8" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="[Skitarii]" id="e784-789b-d131-9f5a" hidden="false" type="profile" targetId="e4fa-dbbf-91c1-d396"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Triaros Armoured Conveyor" hidden="false" id="7acc-6115-828f-c94d" type="selectionEntry" targetId="0896-07f4-8844-9542">
+      <modifiers>
+        <modifier type="prepend" value="Skitarii" field="name" join=" "/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="[Skitarii]" id="ad7b-fee9-9eda-b53e" hidden="false" type="profile" targetId="e4fa-dbbf-91c1-d396"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="52d0-8b78-439e-18e5" id="356f-6727-f8bf-0141" primary="true" name="Heavy Transport"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Karacnos Assault Tank" hidden="false" id="36d4-66e8-efcc-23bd" type="selectionEntry" targetId="ce4c-753d-aaf1-b4ab">
+      <modifiers>
+        <modifier type="prepend" value="Skitarii" field="name" join=" "/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="[Skitarii]" id="127c-e3a2-6d42-4e46" hidden="false" type="profile" targetId="e4fa-dbbf-91c1-d396"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="643a-1012-bd51-6537" id="dcf7-4161-c5a7-2a75" primary="true" name="Armour"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Krios Battle Tank" hidden="false" id="8480-0708-1019-3c83" type="selectionEntry" targetId="135f-153c-308a-7a1c">
+      <modifiers>
+        <modifier type="prepend" value="Skitarii" field="name" join=" "/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="[Skitarii]" id="2534-915e-4e90-59f5" hidden="false" type="profile" targetId="e4fa-dbbf-91c1-d396"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="643a-1012-bd51-6537" id="c6c2-f056-1110-15a4" primary="true" name="Armour"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Krios Venator" hidden="false" id="1267-0dec-49c3-5f88" type="selectionEntry" targetId="b444-b85f-85f8-e6f3">
+      <modifiers>
+        <modifier type="prepend" value="Skitarii" field="name" join=" "/>
+        <modifier type="append" value="Tank Destroyer" field="name" join=" "/>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="[Skitarii]" id="9609-3296-30bb-3b41" hidden="false" type="profile" targetId="e4fa-dbbf-91c1-d396"/>
+      </infoLinks>
     </entryLink>
   </entryLinks>
 </catalogue>
