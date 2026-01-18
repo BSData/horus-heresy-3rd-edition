@@ -170,6 +170,38 @@
         <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
       </characteristics>
     </profile>
+    <profile name="[Skitarii]" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="e4fa-dbbf-91c1-d396">
+      <characteristics>
+        <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+      </characteristics>
+      <modifiers>
+        <modifier type="set" value="Acquisitor" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1ebf-72a3-b0b3-4944" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Expugator" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ac12-7d1f-98e4-2b58" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Vindictor" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b2d5-2df6-b213-989b" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Scourger" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b819-ac22-c04b-0932" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="079a-11b5-abfa-96da" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </profile>
   </sharedProfiles>
   <categoryEntries>
     <categoryEntry name="Master of the Legion" id="e3cd-7a38-34d7-9cbf" hidden="false"/>
