@@ -8843,6 +8843,13 @@
             <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Pistol, Deflagrate (5)</characteristic>
             <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Volkite, Assault</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="Pistol, Deflagrate (6)" field="5aad-137a-8ee2-63fd">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b2d5-2df6-b213-989b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -8850,7 +8857,16 @@
         <infoLink name="Deflagrate (X)" id="056a-b8c4-3bc3-eec5" hidden="false" type="rule" targetId="f4a0-f206-0dba-7d81">
           <comment>5</comment>
           <modifiers>
-            <modifier type="replace" value="5" field="name" arg="X"/>
+            <modifier type="replace" value="5" field="name" arg="X">
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="b2d5-2df6-b213-989b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="replace" value="6" field="name" arg="X">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b2d5-2df6-b213-989b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -8943,6 +8959,62 @@
           <comment>6+</comment>
           <modifiers>
             <modifier type="replace" value="6+" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Voltlock arquebus" hidden="false" id="e3b6-1a1e-9837-343a">
+      <profiles>
+        <profile name="Voltlock arquebus" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="ffa4-2239-3f26-a899">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">20</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">5</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">5</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Deflagrate (5)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Volkite</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="Deflagrate (6)" field="5aad-137a-8ee2-63fd">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b2d5-2df6-b213-989b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="Voltlock arquebus" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="d000-6be6-5086-26b9">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+1</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">4</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Impact (I)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deflagrate (X)" id="9754-8315-7500-ce49" hidden="false" type="rule" targetId="f4a0-f206-0dba-7d81">
+          <comment>5</comment>
+          <modifiers>
+            <modifier type="replace" value="5" field="name" arg="X">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="b2d5-2df6-b213-989b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="replace" value="6" field="name" arg="X">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b2d5-2df6-b213-989b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Impact (X)" id="e2d9-f164-57f8-b2a3" hidden="false" type="rule" targetId="6ead-c31c-ab09-2f8c">
+          <comment>I</comment>
+          <modifiers>
+            <modifier type="replace" value="I" field="name" arg="X"/>
           </modifiers>
         </infoLink>
       </infoLinks>
