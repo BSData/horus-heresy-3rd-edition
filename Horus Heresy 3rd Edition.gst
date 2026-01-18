@@ -2813,6 +2813,7 @@
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
                     <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2847,53 +2848,6 @@
             <categoryLink name="Prime Command" hidden="false" id="b167-4f4c-6449-1736" targetId="c85c-2963-658f-1bb9">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="cfc3-19ed-2615-5523" includeChildSelections="true"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Elites" hidden="false" id="c07f-a9cb-c3d4-8899" targetId="5d5e-958f-e388-50b5">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8ec6-57ee-d2d0-f14f"/>
-              </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="8ec6-57ee-d2d0-f14f">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="2" field="8ec6-57ee-d2d0-f14f">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                                <condition type="notInstanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                          <conditions>
-                            <condition type="equalTo" value="0" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                      <conditions>
-                        <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </categoryLink>
-            <categoryLink name="Prime Elites" hidden="false" id="f7b1-5c3f-e2f3-1056" targetId="276f-7a07-a56c-affd">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3bd3-f7ab-ac8c-549e" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
             <categoryLink name="Prime Command - Centurions Only" hidden="false" id="9bb2-5954-4a4b-01d4" targetId="afc8-c83d-00a6-936e">
@@ -24110,6 +24064,17 @@
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
                         <condition type="equalTo" value="0" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="4" field="18c9-c657-1c4a-d640">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
                         <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                       </conditions>
                     </conditionGroup>
