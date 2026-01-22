@@ -15,10 +15,12 @@ The Controlling Player of a Unit that only contains Models with this Special Rul
 The number of Victory Points scored by the opponent when a Unit that includes only Models with this Special Rule is entirely Removed as Casualties, for example, as part of the Vanguard (X) Special Rule, First Strike (X) or Slay the Warlord (X) Mission Special Rule, is reduced by the value of X, to a minimum of 1. If a Unit includes Models with different variants of this Special Rule, then the lowest value of X that was present on any Model in that Unit at the start of the Player Turn in which the last Model in the Unit is Removed as a Casualty is used to determine the effect of this Special Rule on that Unit.
 
 Note that, if, at the start of the Player Turn a Unit includes any Models that do not have this Special Rule, then this Special Rule has no effect on that Unit for the duration of that Player Turn regardless of how many other Models in the Unit may have any variant of this Special Rule.</description>
+      <alias>Expendable</alias>
     </rule>
     <rule name="Shred (X)" id="d01e-f96b-b5c1-8fb1" hidden="false" page="308" publicationId="b905-0414-1057-bb34">
       <description>&quot;Attacks made with the Shred (X) Special Rule can sometimes inflict an extra point of Damage&quot;
 When any Wound Test is made for an attack with the Shred (X) Special Rule, if the result of the Dice roll, before any modifiers are applied, is equal to or greater than the value of X attached to this variant of the Shred (X) Special Rule, then if a wound is inflicted by that Wound Test , the Damage of that wound is increased by 1. Note that the Shred (X) Special Rule may only be triggered by a Wound Test and has no effect when making an Armour Penetration Test.</description>
+      <alias>Shred</alias>
     </rule>
     <rule name="Battlefield Coordinators" id="35dd-79de-75f5-f2c8" hidden="false">
       <description>&quot;This Special Rule allows the Controlling Player to reduce the Reaction Point cost of a Reaction once per Turn.&quot;
@@ -28,20 +30,24 @@ Once per Turn, if a Unit that contains any Model with this Special Rule is withi
     <rule name="Support Unit (X)" id="313f-7ed6-3833-e97c" hidden="false" publicationId="b905-0414-1057-bb34" page="309">
       <description>&quot;A Unit that contains Models with this Special Rule scores fewer Victory Points for Controlling Objective Markers.&quot;
 A Unit that includes any Models with the Support Unit (X) Special Rule may only ever score a maximum number of Victory Points equal to the value of X for Controlling an Objective, regardless of the Value of that Objective, or any other Special Rules Models in that Unit might have (such as the Line (X) Special Rule).</description>
+      <alias>Support Unit</alias>
     </rule>
     <rule name="Breaching (X)" id="b094-0b64-eb57-aed6" hidden="false" page="295" publicationId="b905-0414-1057-bb34">
       <description>&quot;With a Weapon that has a Breaching (X) Special Rule there is a chance that a Wound Test may result in the Wound ignoring Armour Saves.&quot;
 When any Wound Test is made for an attack with the Breaching (X) Special Rule, if the result of the Dice roll, before any modifiers are applied, is equal to or greater than the value of X attached to this variant of the Breaching (X) Special Rule, then if a wound is inflicted by that Wound Test, that wound becomes a &apos;Breaching Wound&apos;.
 
 A Breaching Wound is always treated as having an AP of 2 regardless of the Characteristics of the Weapon used to make the attack.</description>
+      <alias>Breaching</alias>
     </rule>
     <rule name="Heavy (X)" id="bc30-3b33-2683-01a2" hidden="false">
       <description>&quot;Weapons with the Heavy (X) Special Rule gain +1 to a Characteristic when Stationary.&quot;
 When making a Shooting Attack with a Weapon that has the Heavy (X) Special Rule, a modifier of +1 is added to a Characteristic if the Model with that Weapon is part of a Unit that remained Stationary in the Controlling Player’s previous Movement Phase. If the Characteristic listed is AP, then instead it improves the AP by one Step. The value of X in the specific variant of the Heavy (X) Special Rule determines which Characteristic gains the +1 modifier.</description>
+      <alias>Heavy</alias>
     </rule>
     <rule name="Ordnance (X)" id="b6b3-909a-b78a-3dbf" hidden="false" page="303" publicationId="b905-0414-1057-bb34">
       <description>&quot;Weapons with the Ordnance (X) Special Rule double the value of a Characteristic when Stationary&quot;
 When making a Shooting Attack with a Weapon that has the Ordnance (X) Special Rule, a modifier of x2 is applied to a Characteristic if the Model with that Weapon is part of a Unit that remained stationary in the Controlling Player&apos;s previous Movement Phase (if that Characteristic is AP, then the AP is instead changed to AP 2). The value of X in the specific variant of the Ordnance (X) Special Rule determines which Characteristics gains the x2 Modifier.</description>
+      <alias>Ordnance</alias>
     </rule>
     <rule name="Blast (X)" id="8687-05f8-7034-412c" hidden="false" publicationId="b905-0414-1057-bb34" page="294">
       <description>&quot;Attacks made with the Blast (X) Special Rule use a Blast Marker to determine how many Hits are caused.&quot;
@@ -51,6 +57,7 @@ When making attacks with a Weapon that has the Blast (X) Special Rule, before an
 If any Models form Units other than the Target Unit are fully or partially covered by the Blast Marker, then a new Fire Group must be created for those Hits and set to one side. Continue resolving the Shooting Attack on the original Target Unit, and once that Shooting Attack has been completely resolved begin a new Shooting Attack to resolve those additional Fire Groups generated for Units other than the original Target Unit.
 
 If the Hit Test is unsuccessful then no Hits are inflicted and the Player making the attack must make a Scatter Roll for the Blast Marker (see the Rules for Scatter in the Warhammer: The Horus Heresy - Age of Darkness Rulebook). Once a Scatter Roll has been made for the Blast Marker and it has been moved, one Hit is inflicted on a Unit for each Model from that Unit that is wholly or partially covered by the Blast Marker.</description>
+      <alias>Blast</alias>
     </rule>
     <rule name="Template" id="7df2-9e88-3285-cf6a" hidden="false" page="310" publicationId="b905-0414-1057-bb34">
       <description>&quot;Weapons and attacks with the Template Special Rule use the Flame Template to determine how many Models they Hit.&quot;
@@ -90,39 +97,47 @@ For each Misfire, the Unit for which the Hit Tests were made suffer a Hit - thes
 Once the current Shooting Attack and any Reactions triggered by it have been fully resolved, the Misfire Group must be resolved. A Misfire Group is resolved in the same way as any other Fire Group or Strike Group, using the Profile of the Weapon used for the Fire Group or Strike Group it was created from. Wounds, Glancing Hits, or Penetrating Hits from this Misfire Group are allocated by the Controlling Player, and must be allocated toa Model that made attacks as part of the Fire Group or Strike Group that generated the Misfire Group. If a Hit from a Misfire Group is generated by an attack made by a Model with the Vehicle Type, then it is resolved against the lowest Armour Value from all of the Model&apos;s facings.
 
 Hits, Wounds, or Casualties inflicted upon a Unit as a result of this Special Rule do not cause Leadership or Cool Checks, and Hits inflicted as part of a Misfire Group do not trigger any Special Rules that take effect as a result of a certain value on a Hit Test.</description>
+      <alias>Overload</alias>
     </rule>
     <rule name="Melta (X)" id="8ef6-917e-93da-43c3" hidden="false" publicationId="b905-0414-1057-bb34" page="303">
       <description>&quot;This Special Rule increases the amount of Damage against Vehicles when Shooting Attacks are made within a specific range.&quot;
 
 If at least one Model in a Unit with the Vehicle Type that is targeted by a Shooting Attack made by a Model using a Weapon with this Special Rule is within a range equal to or less than the value specified by X, that attack has the Armourbane Special Rule and the Damage of Penetrating Hits caused by that attack is doubled.</description>
+      <alias>Melta</alias>
     </rule>
     <rule name="Duellist&apos;s Edge (X)" id="94bc-c69f-99b6-8ba0" hidden="false">
       <description>&quot;A Weapon with the Duellist&apos;s Edge (X) Special Rule grants a bonus to Focus Rolls in Challenges.&quot;
 In Step 3 of the Challenge Sub-Phase, the Focus Step, if a Player has declared that the Model under their control will use a Weapon with the Duellist&apos;s Edge (X) Special Rule or has the Duellist&apos;s Edge (X) Special Rule, then that Player gains a bonus equal to the value of X on the Focus Roll.</description>
+      <alias>Duellist&apos;s Edge</alias>
     </rule>
     <rule name="Impact (X)" id="6ead-c31c-ab09-2f8c" hidden="false" page="300" publicationId="b905-0414-1057-bb34">
       <description>&quot;On a successful Charge, a Model with the Impact (X) Special Rule temporarily increases a Characteristic by 1.&quot;
 If a Unit that includes any Models with the Impact (X) Special Rule or any Models that have any Weapons with the Impact (X) Special Rule, and that Unit makes a successful Charge, then this Special Rule is triggered. Once triggered, until the end of that Assault Phase, when making Melee Attacks for Models in that Unit, each Model or Weapon that is selected for one of those Models, that has a variant of this Special Rule, gains a modifier of +1 to any Characteristics that is the value of X.</description>
+      <alias>Impact</alias>
     </rule>
     <rule name="Critical Hit (X)" id="fe5a-a52a-468f-3f88" hidden="false" page="296" publicationId="b905-0414-1057-bb34">
       <description>&quot;Attacks made with the Critical Hit (X) Special Rule have a chance to automatically cause a wound and inflict 1 extra point of Damage.&quot;
 When any Hit Test is made for an attack with the Critical Hit (X) Special Rule, if the result of the Dice Roll, before any modifiers are applied, is equal to or greater than the value of X attached to this variant of the Critical Hit (X) Special Rule, then if a Hit is inflicted by that Hit Test, that Hit becomes a &apos;Critical Hit&apos;.
 
 A Critical Hit automatically inflicts a wound without any dice being rolled, counting as the roll of a &apos;6&apos; for any variable Special Rules that might be triggered by a Wound Test, and increases the Damage of the Hit by +1.</description>
+      <alias>Critical Hit</alias>
     </rule>
     <rule name="Barrage (X)" id="85f5-3a91-69f4-c3b7" hidden="false" page="293" publicationId="b905-0414-1057-bb34">
       <description>&quot;A Weapon with this Special Rule may be used to attack Target Units out of Line of Sight.&quot;
 If a Unit for which a Shooting attack is made includes any Models with one or more Weapons with this Special Rule, then in Step 2 of the Shooting Attack process they may ignore the restriction on requiring Line of Sight to a Target Unit. If a Player uses this Special Rule to declare a Shooting Attack on a Unit that the attacking Unit cannot draw a Line of Sight to, then in Step 3 of the Shooting Attack process that Player may only declare attacks with Weapons that have this Special Rule.
 
 If a Weapon with this Special Rule and the Blast (X) Special Rule is used to attack a Unit without a Line of Sight to that Unit, then no Hit Test is made and an Indirect Scatter Roll must be made for the Blast Marker placed as part of the attack. If such a Weapon makes more than a single attack then a separate Indirect Scatter Roll is made for each attack. When making an Indirect Scatter Roll for such an attack, the number of Dice rolled alongside the Scatter Dice is determined by the value of X for the Weapon with the Barrage (X) Special Rule, the value of these Dice is then totalled to find the distance the attack Scatters.</description>
+      <alias>Barrage</alias>
     </rule>
     <rule name="Reaping Blow (X)" id="951f-eee4-02b7-b014" hidden="false" page="307" publicationId="b905-0414-1057-bb34">
       <description>&quot;If a Model with this Special Rule is outnumbered, it gains extra attacks.&quot;
 If a Model is outnumbered in Combat and either has this Special Rule or is made to attack with a Weapon that has this Special Rule, then that Model gains a bonus to its Attacks Characteristic equal to the value of X attached to the variant of this Special Rule it has access to. To be considered outnumbered, the total number of friendly Models Locked in Combat in the same Combat must be less than the total number of enemy Models Locked in Combat in the same Combat - Models with the Bulky (X) Special Rule count as a number of Models equal to the value of X in the Variant of the Bulky (X) Special Rule that Model has. This Special Rule has no effect during the Challenge Sub-Phase, and no Model that is Engaged in a Challenge may gain additional Attacks due to this Special Rule.</description>
+      <alias>Reaping Blow</alias>
     </rule>
     <rule name="Bulky (X)" id="50ad-a9a5-1f1d-9a25" hidden="false" publicationId="b905-0414-1057-bb34" page="295">
       <description>Models with the Bulky (X) Special Rule take up more space on Transport Models.&quot;
 A Model with the Bulky (X) Special Rule does not use up 1 Point of Transport Capacity when it Embarks on a Model with the Transport Sub-Type. Instead it uses up a number of points of Transport Capacity equal to the value of X attached to the variant of the Bulky (X) possessed by that Model.</description>
+      <alias>Bulky</alias>
     </rule>
     <rule name="Implacable Advance" id="3898-aafb-35e0-141b" hidden="false" publicationId="b905-0414-1057-bb34" page="301">
       <description>&quot;Models with this Special Rule can make Volley Attacks with other Weapons.&quot;
@@ -135,27 +150,33 @@ In Step 4 of the Resolution Sub-Phase, a Player that has won Combat cannot choos
     <rule name="Explodes (X)" id="da5b-b871-20da-3e70" hidden="false" publicationId="b905-0414-1057-bb34" page="298">
       <description>&quot;A Model with this Special Rule can explode and cause Hits to nearby Models and Units.&quot;
 Before a Model with the Explodes (X) Special Rule is Removed as a Casualty, the Controlling Player must roll a Dice. If the result of that roll equals or exceeds the value of X attached to this variant of the Explodes (X) Special Rule, the Model explodes. Every Unit with one or more models within 6&quot; of an exploding Model suffers a number of Hits equal to the Base Wounds Characteristic of Base Hull Points Characteristic of the exploding Model. Each such Hit has a Strength of 8, an AP of &apos;-&apos;, and a Damage of 1. Once all Hits caused by this Special Rule have been resolved, the Model with the Explodes (X) Special Rule is Removed as a Casualty as normal.</description>
+      <alias>Explodes</alias>
     </rule>
     <rule name="Pinning (X)" id="88b6-6493-e4d7-1805" hidden="false" page="306" publicationId="b905-0414-1057-bb34">
       <description>&quot;Weapons and other attacks that have the Pinning (X) Special Rule have a chance of inflicting the Pinned Status on the Target Unit.&quot;
 If a Shooting Attack made for a Weapon or Model with this Special Rule inflicts one or more wounds on a Target Unit, regardless of whether any Damage is inflicted, that Target Unit must make a Cool Check in the Morale Sub-Phase of the same Player Turn. If this Check is failed then all Models in the Unit gain the Pinned Status, if the Check is passed then there is no further effect. The value of the X attached to this Special Rule is applied as a negative modifier to the Cool Characteristic of Models in the Target Unit when making Checks caused by an attack with this Special Rule, if the attack includes multiple Weapons with different versions of this Special Rule the modifiers do not stack - use only the greatest modifier.</description>
+      <alias>Pinning</alias>
     </rule>
     <rule name="Shock (X)" id="c6fd-28d0-3f80-672c" hidden="false" publicationId="b905-0414-1057-bb34" page="308">
       <description>&quot;Weapons with the Shock (X) Special Rule have a chance of inflicting Statuses on Vehicles even if it does not penetrate their armour.&quot;
 
 When making a Hit Test for a Weapon with this Special Rule against a Target Unit that includes any Models with the Vehicle Type or Walker Type, the result of the Hit Test before any modifiers are applied must be checked. If any Hit Test for a Weapon with the Shock (X) Special Rule results in a &apos;5&apos; or &apos;6&apos; before any modifiers are applied, then all Models with the Vehicle Type or Walker Type in the Target Unit gain a Status at the end of Step 11 of the Shooting Attack process or Step 10 of the Initiative Step process. The Status gained is indicated by the value of X attached to that variant of the Shock (X) Special Rule. If the Model already has the stated Status or the attack would apply the Status multiple times there is no additional effect and this Special Rule never causes a Model to lose Wounds or Hull Points. Hits inflicted by a Weapon with this Special Rule must still have Wound Tests or Armour Penetration Tests made for them, and are not discarded if they trigger this Special Rule.</description>
+      <alias>Shock</alias>
     </rule>
     <rule name="Stun (X)" id="c7c1-bbc9-f852-6f71" hidden="false" publicationId="b905-0414-1057-bb34" page="309">
       <description>&quot;Weapons and other attacks that have the Stun (X) Special Rule have a chance of inflicting the Stunned Status on the Target Unit.&quot;
 If a Shooting Attack made for a Weapon or Model with this Special Rule inflicts one or more Hits on a Target Unit, that Target Unit must make a Cool Check in the Morale Sub-Phase of the same Player Turn. If this Check is failed then all Models in the Unit gain the Stunned Status and if the Check is passed then there is no further effect. The value of X attached to this Rule is applied as a negative modifier to the Cool Characteristic of Models in the Target Unit when making Checks caused by an attack with this Special Rule, if the attack includes multiple Weapons with different versions of this Special Rule the modifiers do not stack - use only the greatest modifier.</description>
+      <alias>Stun</alias>
     </rule>
     <rule name="Panic (X)" id="82a7-f471-3fda-6ca1" hidden="false" page="305" publicationId="b905-0414-1057-bb34">
       <description>&quot;Weapons and other attacks that have the Panic (X) Special Rule have a chance of inflicting the Routed Status on the Target Unit.&quot;
 If a Shooting Attack made for a Weapon or Model with this Special Rule inflicts one or more wounds on a Target Unit, regardless of whether any Damage is inflicted, that Target Unit must make a Leadership Check in the Morale Sub-Phase of the same Player Turn. If this Check is failed then all Models in the Unit gain the Routed Status, if the Check is passed then there is no further effect. The value of X attached to this Special Rule is applied as a negative modifier to the Leadership Characteristics of Models in the Target Unit when making Checks caused by an attack with this Special Rule. If the attack includes multiple Weapons with different variations of this Special Rule the modifiers do not stack - use only the greatest modifier.</description>
+      <alias>Panic</alias>
     </rule>
     <rule name="Poisoned (X)" id="076f-2c91-c58b-71b3" hidden="false" page="306" publicationId="b905-0414-1057-bb34">
       <description>&quot;A Weapon with the Poisoned (X) Special Rule has a chance to cause a wound regardless of the target&apos;s Toughness Characteristic.&quot;
 When making Wound Tests for Hits that have the Poisoned (X) Special Rule, if the result of any Dice rolled is equal to or greater than the value of X attached to the specific variant of this Special Rule then a wound is caused automatically, regardless of the Toughness Characteristic used to determine the Target Number. A Hit that has this Special Rule may still inflict a wound by passing a Wound Test as normal, instead of using this Special Rule, but never inflicts more than 1 wound if it would both pass the Wound Test and trigger the Poisoned (X) Special Rule. Wounds caused using the Poisoned (X) Special Rule retain the AP and Damage Characteristics of the Weapon and Saving Throws and Damage Mitigation Tests may be made to discard them as normal. The Poisoned (X) Special Rule has no effect on Models that have the Vehicle Type, and limited effect on Models with the Automata or Walker Types (See the Rules for Walkers and Automata in the Warhammer: The Horus Heresy - Age of Darkness Rulebook).</description>
+      <alias>Poisoned</alias>
     </rule>
     <rule name="Armourbane" id="36ee-4c54-bced-a696" hidden="false" publicationId="b905-0414-1057-bb34" page="293">
       <description>&quot;A Weapon with the Armourbane Special Rule counts Glancing Hits as Penetrating Hits.&quot;
@@ -172,6 +193,7 @@ A Hit Test made for a Weapon with the Skyfire Special Rule ignores any Rule that
     <rule name="Limited (X)" id="fe57-5bea-a3de-1e60" hidden="false" page="302" publicationId="b905-0414-1057-bb34">
       <description>&quot;A Weapon with the Limited (X) Special Rule can only be used to attack a limited number of times per Battle.&quot;
 A Weapon with the Limited (X) Special Rule may only be used to make attacks as part of a Shooting Attack or Combat a number of times equal to the value of X attached to the specific variant of the Special Rule. Each time is used to make attacks, the Firepower Characteristic or Attacks Modifier Characteristic of the Weapon not modified by this Special Rule, only the number of times it may be selected in a given Battle.</description>
+      <alias>Limited</alias>
     </rule>
     <rule name="Rapid Tracking" id="a3ed-1776-3252-db23" hidden="false" publicationId="b905-0414-1057-bb34" page="307">
       <description>&quot;Weapons with this Special Rule are better able to utilize it for intercepting new arrivals on the Battlefield.&quot;
@@ -180,6 +202,7 @@ Each time a Model makes a Shooting Attack as part of the Intercept Advanced Reac
     <rule name="Suppressive (X)" id="001f-53f3-4d87-4b43" hidden="false" publicationId="b905-0414-1057-bb34" page="309">
       <description>&quot;Weapons and other attacks that have the Suppressive (X) Special Rule have a chance of inflicting the Suppressed Status on the Target Unit.&quot;
 If a Shooting Attack made for a Weapon or Model with this Special Rule inflicts one or more Hits on a Target Unit, that Target Unit must make a Cool Check in the Morale Sub-Phase of the same Player Turn. If this Check is failed then all Models in the Unit gain the Suppressed Status, and if the Check is passed then there is no further effect. The value of X attached to this Rule is applied as a negative modifier to the Cool Characteristic of Models in the Target Unit when making Checks caused by an attack with this Special Rule, if the attack includes multiple Weapons with different versions of this Special Rule the modifiers do not stack - use only the greatest modifier.</description>
+      <alias>Suppressive</alias>
     </rule>
     <rule name="Precision (X)" id="4fbd-e0bc-8f72-6e3f" hidden="false" page="307" publicationId="b905-0414-1057-bb34">
       <description>&quot;Attacks made with the Precision (X) Special Rule are allocated by the Attacking Player, not the Defender.&quot;
@@ -188,6 +211,7 @@ When any Hit Test is made for an attack with the Precision (X) Special Rule, if 
 These Precision Hits must form a separate Fire Group or Strike Group. Wound Tests are made as normal for Precision Hits and cause Precision wounds. In Step 8 of the Shooting Attack process or Step 7 of the Initiative Step sequence, when selecting a Target Model for a Fire Group or Strike Group that is made up of Precision wounds, the Target Model is not selected using the normal Rules. Instead the attacking Player chooses which Model in the Target Unit will be the Target Model, and may select any Model that is a part of that Unit.
 
 Note that Models Engaged in a Challenge cannot use this Special Rule to allocate Hits to any Model other than the enemy Model that is Engaged in the same Challenge and that any attacks which are made as Snap Shots, or for Weapons or attacks that have either the Blast (X) , Barrage (X), Template or Reaping Blow (X) Special Rules, may never trigger the Precision (X) Special Rule no matter what the result of the Hit Test is.</description>
+      <alias>Precision</alias>
     </rule>
     <rule name="Shot Selector" id="1adf-7dde-c1ec-ce70" hidden="false" page="308" publicationId="b905-0414-1057-bb34">
       <description>&quot;Weapons with this Special Rule gain one optional additional Special Rule when used to Attack.&quot;
@@ -204,10 +228,12 @@ Each time a Model makes a Shooting Attack with a Weapon Profile with this Specia
     <rule name="Deflagrate (X)" id="f4a0-f206-0dba-7d81" hidden="false" publicationId="b905-0414-1057-bb34" page="297">
       <description>&quot;Unsaved Wounds inflicted by attacks with the Deflagrate (X) Special Rule can cause additional Hits.&quot;
 At the end of Step 9 of the Shooting Attack process for any Fire Group or Strike Group that includes Weapons with the Deflagrate (X) Special Rule, create a new Fire Group or Strike Group that must then be selected in Step 10 and resolved. This new Fire Group or Strike Group includes a number of Hits equal to the number of Unsaved Wounds caused by the Fire Group or Strike Group that triggered its creation. These Hits all have a Strength equal to the value of X attached to the variant of Deflagrate (X) Special Rule possessed by Weapons in the preceding Fire Group or Strike Group, an AP of &apos;-&apos;, a Damage of 1 and no Special Rules.</description>
+      <alias>Deflagrate</alias>
     </rule>
     <rule name="Phage (X)" id="3e26-d357-69d6-1341" hidden="false" publicationId="b905-0414-1057-bb34" page="305">
       <description>&quot;Unsaved Wounds with the Phage (X) Special Rule reduce a Characteristic by 1.&quot;
 If an attack made for a Weapon or Model with this Special Rule inflicts one or more Unsaved Wounds on a Target Unit, then once the Shooting attack or Initiative Step in which the Unsaved Wound was inflicted has been completely resolved, all remaining Models in the Unit that was the target of the attack must reduce the Characteristic that is the value of X for that variant of the Phage (X) Special Rule, but no individual Characteristic may be reduced by more than 1 by the Phage (X) Special Rule no matter how many Unsaved Wounds with any variant of that Special Rule are allocated to Models in that Unit.</description>
+      <alias>Phage</alias>
     </rule>
     <rule name="Rending (X)" id="167f-2a64-6e61-505b" hidden="false" publicationId="b905-0414-1057-bb34" page="307">
       <description>&quot;With a Weapon that has the Rending (X) Special Rule, there is a chance that a Hit Test may result in an automatic wound.&quot;
@@ -216,6 +242,7 @@ When any Hit Test is made for an attack with the Rending (X) Special Rule, if th
 When required to make a Wound Test for a Rending Hit, no Dice are rolled and the Wound Test succeeds automatically regardless of the Weapon&apos;s Strength or the Target&apos;s Toughness Characteristic. The Wound Test is treated as if the result had been &apos;6&apos; for the purposes of any Rules that would be triggered on certain results of a Wound Test. Wounds caused by a Rending Hit use the AP and Damage Characteristic of the Weapon used to make the attack and retain any Special Rules that Weapon had.
 
 If the Target Unit for an attack made with a Weapon that has this Special Rule includes any Models with the Vehicle Type, then this Special Rule has no effect.</description>
+      <alias>Rending</alias>
     </rule>
     <rule name="Detonation" id="7349-9e80-c051-c22f" hidden="false" publicationId="b905-0414-1057-bb34" page="297">
       <description>&quot;Weapons with this Special Rule can only attack Vehicles and immobile Models&quot;
@@ -226,10 +253,12 @@ A Weapon or other attack with this Special Rule may also be used to make attacks
     <rule name="Force (X)" id="25cd-60d0-a0a4-6b18" hidden="false" publicationId="b905-0414-1057-bb34" page="299">
       <description>&quot;A Weapon with this Special Rule may double a Characteristic with a Willpower Check, but may suffer Perils of the Warp.&quot;
 When selected to be used as part of a Combat or Shooting Attack, a Willpower Check may be made for the Model that will use this Weapon to make attacks. If it is successful then the Characteristic listed as X is doubled (if that Characteristic is AP, then the AP is instead changed to AP 2). If a double is rolled when making this Willpower Check then the Model using the Weapon to make attacks suffers Perils of the Warp.</description>
+      <alias>Force</alias>
     </rule>
     <rule name="Officer of the Line (X)" id="7779-47c8-99a8-b935" hidden="false" page="303" publicationId="b905-0414-1057-bb34">
       <description>&quot;Models with this Special Rule allow more Auxiliary Detachments to be included in an Army.&quot;
 If a Model with this Special Rule is selected to fill a Command Slot in any Detachment in the Crusade Force Organization Chart, then the Controlling Player may select a number of Auxiliary Detachments equal to the value of X in the specific variant of this Special Rule instead of just one.</description>
+      <alias>Officer of the Line</alias>
     </rule>
     <rule name="Light Transport" id="d451-f7f3-fc8f-db23" hidden="false" publicationId="7d63-5df4-c656-52de" page="332">
       <description>&quot;Models with this Special Rule cannot carry Models with the Bulky (X) Special Rule.&quot;
@@ -238,6 +267,7 @@ Models that have any variant of the Bulky (X) Special Rule may not Embark on a M
     <rule name="Auto-Repair (X)" id="3973-ed50-1482-ff4a" hidden="false" publicationId="b905-0414-1057-bb34" page="293">
       <description>&quot;A Model with this Special Rule has a bonus to Repair Tests to remove Statuses.&quot;
 If the Active Player makes a Repair Test in the Statuses Sub-Phase of the End Phase for a Model with the Vehicle Type with this Special Rule, they ignore the usual Target Number of 6. Instead, the value of X attached to the variant of this Special Rule is used as the Target Number for that Repair Test. For example, a Model with the Auto-repair (4+) Special Rule would pass any Repair Tests made for it on the result of a 4 or higher.</description>
+      <alias>Auto-Repair</alias>
     </rule>
     <rule name="Mobile Command Vehicle" id="799f-1773-d0ae-d423" hidden="false">
       <description>&quot;A Model with this Special Rule can use some Characteristics of Embarked Models instead of its own.&quot;
@@ -255,6 +285,7 @@ When a Model with this Special Rule is required to make a Characteristic Check, 
     <rule name="Fear (X)" id="0ebc-0c92-2209-6393" hidden="false" page="298" publicationId="b905-0414-1057-bb34">
       <description>&quot;Models near an enemy Model with the Fear (X) Special Rule must reduce their Advanced Characteristics.&quot;
 When any Model from a Unit is within 12&quot; of an enemy Model with the Fear (X) Special Rule, all Models in that Unit must reduce their Leadership, Willpower, Cool, and Intelligence Characteristics by the value of X. This negative modifier is removed as soon as no Models in a given Unit are within 12&quot; of any Model with the Fear (X) Special Rule. If a Unit would be affected by multiple instances of the Fear (X) Special Rule, the value of X is not stacked and instead the single highest value is used as a negative modifier.</description>
+      <alias>Fear</alias>
     </rule>
     <rule name="Never Back Down" id="91a6-7f61-0c0b-a236" hidden="false">
       <description>&quot;A Model with this Special Rule must take part in a Challenge if able.&quot;
@@ -278,6 +309,7 @@ If a Model with this Special Rule joins a Unit with the Solar Auxilia Trait, the
     <rule name="Feel No Pain (X)" id="89b5-7320-db15-fd60" hidden="false" page="299" publicationId="b905-0414-1057-bb34">
       <description>&quot;Feel No Pain (X) is a Damage Mitigation Test that may be taken in addition to a Saving Throw.&quot;
 A Model with the Feel No Pain (X) Special Rule gains a Feel No Pain Damage Mitigation Test that may be used in Step 9 of the Shooting Attack process or Step 8 of the Initiative Step of the Fight Sub-Phase process to discard wounds allocated to the Model. A Damage Mitigation Test may be made after and in addition to a Saving Throw. The Target Number for a Feel No Pain Damage Mitigation Test is the value of X attached to the specific variant of the Special Rule.</description>
+      <alias>Feel No Pain</alias>
     </rule>
     <rule name="Battlesmith (X)" id="c3db-d17c-fd46-eb01" hidden="false" publicationId="b905-0414-1057-bb34" page="294">
       <description>&quot;A model with the Battlesmith (X) Special Rule can repair Vehicles, Automata, and other mechanical Units.&quot;
@@ -290,12 +322,14 @@ If the Check is failed there is no further effect, but if the Check is passed th
 - Restore - A number of Statuses equal to the value of X in the Battlesmith (X) Special Rule variant possessed by the Acting Model may be removed from the Target Model.
 
 Activating the Battlesmith (X) Special Rule does not limit the Acting Model or the Target Model when moving or attacking in the same Turn.&quot;</description>
+      <alias>Battlesmith</alias>
     </rule>
     <rule name="Infiltrate (X)" id="f330-254e-1a98-798a" hidden="false" page="301" publicationId="b905-0414-1057-bb34">
       <description>&quot;Models with the Infiltrate (X) Special Rule can deploy outside of their Deployment Zone.&quot; 
 At the start of a Mission, when deploying Units, the Controlling Player of a Unit that is composed entirely of Models with the Infiltrate (X) Special Rule may choose to deploy that Unit outside of that Player’s Deployment Zone. That Unit may be deployed anywhere that is either in the Controlling Player’s Deployment Zone or outside of the Opposing Player’s Deployment Zone and is at least a number of inches equal to the highest value of X attached to any variant of the Infiltrate (X) Special Rule in that Unit away from any Enemy Model.
 
 Units deployed using the Infiltrate (X) Special Rule are deployed at the same time as other Units under a Player’s control, unless the specific Rules of a given Mission state otherwise. The Infiltrate (X) Special Rule only has an effect when deploying Units before the start of the First Turn of a Battle, and Units deploying on the Battlefield after the First Turn has begun gain no benefit from this Special Rule. A Unit that is deployed outside of the Controlling Player’s Deployment Zone by means of this Special Rule may not have a Charge declared for in the Firs Battle Turn.</description>
+      <alias>Infiltrate</alias>
     </rule>
     <rule name="Line (X)" id="1b5d-ceec-802a-c611" hidden="false" page="302" publicationId="b905-0414-1057-bb34">
       <description>&quot;A Unit of Models with this Special Rule can control Objectives more easily and scores more Victory Points from controlling an Objective.&quot;
@@ -303,6 +337,7 @@ Units deployed using the Infiltrate (X) Special Rule are deployed at the same ti
 If a Unit that Controls an Objective includes a majority of Models with the Line (X) Special Rule then, whenever the Controlling Player scores Victory Points for Controlling that Objective, an additional number of Victory Points equal to the value of X are scored. For example a Unit of 10 Models of which the majority have the Line (3) Special Rule, hold an Objective worth 1 Victory Point when the Controlling Player scores Victory Points for that Objective, they would score a total of 4 Victory Points.
 
 Furthermore, the value of X is added to the Tactical Strength of the Model that has that Special Rule to determine its ability to Control Objectives (see Core Missions in the Warhammer: The Horus Heresy – Age of Darkness Rulebook).</description>
+      <alias>Line</alias>
     </rule>
     <rule name="Fury of the Legion" id="b49c-d074-165e-ce1b" hidden="false" page="59" publicationId="e54c-7040-0f35-d85d">
       <description>When a Model with this Special Rule makes a Shooting Attack with a bolter, the bolter gains the Heavy (FP) Special Rule until that Shooting Attack is fully resolved.</description>
@@ -310,6 +345,7 @@ Furthermore, the value of X is added to the Tactical Strength of the Model that 
     <rule name="Armour-Breaker (X)" id="3009-9bbb-a8f6-1b47" hidden="false" publicationId="5a4b-8b0e-caa6-c7ed" page="93">
       <description>&quot;Attacks made with the Armour-breaker (x) Special Rule can sometimes inflict an extra point of Damage.&quot;
 When any Armour Penetration Test is made for an Attack or Model with Armour-breaker (X) Special Rule, and it results in a Penetrating Hit - roll a Dice. If the result of that Dice roll is equal to or greater than the value of X attached to this variant of the Armour-breaker (X) Special Rule, then the Damage Characteristic of that Penetrating Hit is increased by 1. Note that the armour-breaker (X) Special Rule may only be triggered by an Armour Penetration Test and has no effect when making a Wound Test.</description>
+      <alias>Armour-Breaker</alias>
     </rule>
     <rule name="Assault Vehicle" id="150c-16e6-1212-9f75" hidden="false" publicationId="7d63-5df4-c656-52de" page="326">
       <description>&quot;A Vehicle with this Special Rule allows Models to Disembark and Charge without penalty.&quot;
@@ -321,10 +357,12 @@ A Unit that is Disembarked from another Model that has the Assault Vehicle Speci
     <rule name="Eternal Warrior (X)" id="15b4-9e4a-f361-c5a3" hidden="false" publicationId="7d63-5df4-c656-52de" page="329">
       <description>&quot;A Model with this Special Rule takes less Damage from attacks.&quot;
 When a Model with the Eternal Warrior (X) Special Rule is allocated an Unsaved Wound, the Damage of the Unsaved Wound is reduced by the value of X attached o the specific variant of the Eternal Warrior (X) Special Rule. The effects of this Special Rule cannot reduce the Damage of an Unsaved Wound to less than 1, regardless of the value of X.</description>
+      <alias>Eternal Warrior</alias>
     </rule>
     <rule name="Fast (X)" id="9ebf-3b90-be22-b9c2" hidden="false" publicationId="7d63-5df4-c656-52de" page="330">
       <description>&quot;A Unit that only includes Models with the Fast (X) Special Rule gain a bonus to Rush and Charge Moves.&quot;
 When the Player controlling a Unit that is composed entirely of Models with the Fast (X) Special Rule elects to have that Unit Rush, add the value of X attached to the specific variant of Fast (X) to the distance the Unit can move. Likewise, when a Unit composed entirely of Models with the Fast (X) Special Rule is required to make a Charge Move, add the value of X attached to the specific variant of the Fast (X) Special Rule as a positive modifier to the Charge Roll. In any situation where a Unit includes Models with two or more variants of the Fast (X) Special Rule, the lowest possible modifier is used.</description>
+      <alias>Fast</alias>
     </rule>
     <rule name="Firestorm" id="3ed1-c5b3-a98d-1b12" hidden="false" publicationId="b905-0414-1057-bb34" page="299">
       <description>&quot;A Model with this Special Rule does not have to make Volley Attacks as Snap Shots&quot;
@@ -333,10 +371,12 @@ When a Model with this Special Rule makes Volley Attacks, it is not required to 
     <rule name="Firing Protocols (X)" id="84f2-5a93-c2eb-826f" hidden="false" publicationId="7d63-5df4-c656-52de" page="331">
       <description>&quot;A Model with the Firing Protocols (X) Special Rule may attack with more than one ranged Weapon.&quot;
 A Model with the Firing Protocols (X) Special Rule that makes attacks as part of a Shooting Attack, may make attacks with a number of Weapons equal to the value of X attached to the specific variant of the Firing Protocols (X) Special Rule. The Model must have more than one Ranged Weapon to make use of this Special Rule and may not use the same Weapon more than once in the same Shooting Attack.</description>
+      <alias>Firing Protocols</alias>
     </rule>
     <rule name="Hatred (X)" id="0612-95d5-46ae-c5ee" hidden="false" publicationId="7d63-5df4-c656-52de" page="331">
       <description>&quot;The Hatred (X) Special Rule grants bonuses against enemies of a specific Faction, Type or Trait.&quot;
 When Locked in Combat, or Engaged in a Challenge, with any enemy Models that have the Type or Trait that is the value of X, then all Models with this variant of the Hatred (X) Special Rule gain a bonus of +1 to all Wound Tests made in that Combat.</description>
+      <alias>Hatred</alias>
     </rule>
     <rule name="Heedless" id="a3f3-72c6-7e01-6cab" hidden="false" publicationId="7d63-5df4-c656-52de" page="332">
       <description>&quot;A Unit that includes any Models with this Special Rule cannot claim Objectives.&quot;
@@ -355,6 +395,7 @@ Note that a Unit Embarked on a Model with the Outflank Special Rule does not nee
     <rule name="Shrouded (X)" id="c7e7-3bad-3de0-d6cc" hidden="false" publicationId="7d63-5df4-c656-52de" page="337">
       <description>&quot;Shrouded (X) is a Damage Mitigation Test that may be taken in addition to a Saving Throw.&quot;
 A model with the Shrouded (X) Special Rule gains a Shrouded Damage Mitigation Test that may be used in Step 9 of the Shooting Attack process to discard Wounds allocated to the Model. A Damage Mitigation Test may be made after and in addition to a Saving Throw. The Target Number for a Shrouded Damage Mitigation Test is the value of X attached to the specific variant of the Special Rule. A Shrouded Damage Mitigation Test may not be made against wounds inflicted by a Melee Weapon.</description>
+      <alias>Shrouded</alias>
     </rule>
     <rule name="Vanguard (X)" id="530f-b733-993c-ec84" hidden="false" publicationId="7d63-5df4-c656-52de" page="339">
       <description>&quot;A Unit that includes Models with this Special Rule scores fewer Victory Points for controlling Objectives, but can score Victory Points destroying enemy Units that hold Objectives.&quot;
@@ -365,10 +406,12 @@ A Unit that includes a majority of Models with the Vanguard (X) Special Rule may
 - If a Unit that includes a majority of Models with the Vanguard (X) Special Rule has at least one attack made for it in a Combat that results in one or more enemy Units that had at least one Model within 3&quot;&quot; of an Objective at the start of that Assault Phase either Falling Back from Combat or being Massacred.
 
 Note that the Vanguard (X) Special Rule may only be used to score Victory Points once per Objective per Player Turn - no matter how many enemy Units were Controlling or Locked in Combat near that Objective.</description>
+      <alias>Vanguard</alias>
     </rule>
     <rule name="Aflame (X)" id="fdc7-d2a1-338f-df11" hidden="false" publicationId="b905-0414-1057-bb34" page="293">
       <description>&quot;A Weapon with this Special Rule causes additional modifiers to a Target&apos;s Leadership Characteristic.&quot; 
 If a Melee Attack made for a Weapon or Model with this Special Rule inflicts one or more wounds on a Target Unit, regardless of whether any Damage is inflicted, until the end of the Phase, that Unit is considered to be &apos;aflame&apos;. If the Controlling Player of a Unit that is aflame is required to make a Leadership Check during that Phase for a Combat that includes that Unit, the value of X on this Special Rule is applied as an additional negative modifier to the Leadership Characteristic being used for that Check.</description>
+      <alias>Aflame</alias>
     </rule>
     <rule name="Psy-Shock" id="e808-01eb-eddc-cec7" hidden="false" publicationId="09c6-1c1d-03a7-9556" page="62">
       <description>&quot;A Unit containing any Models with the Psyker Trait or Malefic Sub-Type which suffers a wound from a Weapon with this Special Rule also suffers Perils of the Warp.&quot;
@@ -401,6 +444,7 @@ In the Controlling Player&apos;s Start Phase, during the Effects Sub-Phase they 
 This Special Rule can restore Hull Points to a Profile that has been Crippled, and if a Profile is restored to one or more Hull Points then it is no longer Crippled.
 
 Activating the Repair Crew (X) Special Rule does not limit the Model with that Special Rule when moving or attacking in the same Turn.</description>
+      <alias>Repair Crew</alias>
     </rule>
     <rule name="Shield-breaker (X)" id="28ce-8329-623c-e1a5" hidden="false" page="103" publicationId="5a4b-8b0e-caa6-c7ed">
       <description>&quot;A Weapon with this Special Rule ca collapse more than one Void Shield with a single attack.&quot;
@@ -409,6 +453,7 @@ A Weapon with this Special Rule that successfully collapses a void shield (eithe
     <rule name="Titan War Horn (X)" id="2cd4-62d3-b63c-c117" hidden="false" publicationId="5a4b-8b0e-caa6-c7ed" page="107">
       <description>&quot;Models Near Model that activates the Titan War Horn (X) Special Rule must reduce their Advanced Characteristics&quot;
 Once per Battle, the Controlling Player of a Model with this Special Rule may choose to activate it in the Effects Sub-Phase of the End Phase of their Turn. When any Model from a Unit is withing 24&quot; of any part of a Model that has activated this Special Rule, all Models in that Unit must reduce their Leadership, Willpower, Cool, and Intelligence Characteristics by the value of X. This negative modifier is removed as soon as no Models in a given Unit are withing 24&quot; of any Model with the Titan War Horn (X) Special Rule. If a Unit would be affected by multiple instances of this Special Rule or Fear (X) Special Rule, the value of X is not stacked and instead the single highest value is used as a negative modifier. Once activated, the effects of this Special Rule last until the Effects Sub-Phase of the Controlling Player&apos;s next Start Phase, or until the Titan is removed from play for any reason.</description>
+      <alias>Titan War Horn</alias>
     </rule>
     <rule name="Titan Void Shield Array (X)" id="c18d-dd21-3760-8a3d" hidden="false" publicationId="5a4b-8b0e-caa6-c7ed" page="107">
       <description>&quot;A Model with this Special Rule gains an extra layer of defense against Shooting Attacks.&quot;
@@ -422,6 +467,7 @@ Minoris: 6
 Senioris: 5+
 Majoris: 4+
 Ultima: 3+</description>
+      <alias>Titan Void Shield Array</alias>
     </rule>
     <rule name="Anathema" id="9ca0-a776-be65-b2b7" hidden="false">
       <description>&quot;Models with this Special Rule ignore the effects of Psychic Abilities and can only be wounded by a Weapon with the Psychic or Immaterial Trait on a 5+.&quot;
@@ -498,6 +544,7 @@ Although included in an army as a Unit that includes multiple Models, each Model
     <rule name="Void Shields (X)" id="86e9-04a5-e7d9-0253" hidden="false">
       <description>&quot;A Model with this Special Rule ignores Penetrating Hits as long as it still has active void shields.&quot;
 A Model with this Special Rule has a number of void shields equal to the value of X. While a Model with this Special Rule still has void shields, each time that Model suffers a Penetrating Hit as a result of a Shooting Attack, reduce the Damage of that Penetrating Hit to &apos;0&apos; and reduce the number of void shields this Model has by 1. If the number of void shields a Model has is reduced to 0, this Special Rule has no further effect during that battle.</description>
+      <alias>Void Shields</alias>
     </rule>
     <rule name="Wraiths" id="84fd-366e-517d-e228" hidden="false">
       <description>After the Controlling Player makes a Rush Move with a Unit that includes only Models with this Special Rule, they may also choose to make a Willpower Check for that Unit. If the Willpower Check is successful, any Charges targeting the selected Unit in the Assault Phase of the following Player Turn are Disordered. If the Willpower Check is failed, the selected Unit instead gains the Stunned Tactical Status.</description>
@@ -509,6 +556,7 @@ If a Unit includes one or more Models with the Medic (X) Special Rule, then cert
 
 *Recovery Tests*
 A Recovery Test is made when one or more Unsaved Wounds are allocated to a Model, and is resolved by rolling a Dice and comparing the results to the value of &apos;X&apos; in the variant of the Medic (X) Special Rule present in a Unit, then the Controlling Player chooses which is used to determine the Target Number. If the Recovery Test is successful then a single Unsaved Wound allocated to the Model has its Damage reduced by 1 (to a minimum of 0). If a Recovery Test is failed, then any Unsaved Wounds allocated to the Model are resolved as normal.&quot;</description>
+      <alias>Medic</alias>
     </rule>
     <rule name="Aegis of Pain" id="2cfa-42a7-e9c8-6000" hidden="false">
       <description>A Unit made up of Models with the Reductor Trait gain bonuses when they have Cybertheurgic Statuses.
@@ -554,6 +602,7 @@ The number of Victory Points scored when a Unit that includes a Model with this 
 
 
 If Models with multiple variants of this Special Rule are part of the same Unit, then the values of X do not stack and only the highest value is used.</description>
+      <alias>Comptroller</alias>
     </rule>
     <rule name="Limited Autonomy" id="0127-9c75-45c7-9b42" hidden="false" page="91">
       <description>Models with this Special Rule need a commander to move or attack.
@@ -680,6 +729,7 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
 
 
  When a Unit that contains any Models with this Special Rule has its last Model Removed as a Casualty, the Controlling Player may choose to roll a D6. On a result equal to or greater than the  value in brackets, a Unit identical to the one that was Removed as Casualties (with all Models  and Wargear listed on the Controlling Player’s Army Roster) is placed into Reserves – and treated as a new Unit. On any other result, the Unit is removed as Casualties with no further effect. Any Victory Points that would be scored for the Unit Removed as Casualties are unaffected and  scored as normal, and any new Unit that enters Reserves may be used to score Victory Points if also Removed as Casualties. Any other Models that have joined a Unit that contains any Models with this Special Rule either during Deployment, in Reserves or during the Battle are not placed into Reserves with the new Unit.</description>
+      <alias>Endless Horde</alias>
     </rule>
     <rule name="Inductii" id="9829-1d35-5b26-51ce" hidden="false" publicationId="1cef-cfb8-32c9-a1f4" page="1">
       <description>&quot;A Unit containing any Models with this Special Rule may never be used to select a Prime Advantage.&quot;
@@ -702,6 +752,7 @@ Loot and Pillage – A Unit that chooses to Loot and Pillage cannot move or mak
 
 
 *NR Data authors note - there is currently no definitive ruling on rounding up or down for X values in Special Rules in HH v3.0 and we are not in any position to be making a ruling on that. We will update the values if an FAQ is released to address the subject. In the mean time, we advise discussing it with your opponent before you play.*</description>
+      <alias>Loot the Dead</alias>
     </rule>
     <rule name="Aberrant" id="1a2c-52eb-c28c-55c8" hidden="false">
       <description>&quot;Models with this Special Rule must reduce certain Advanced Characteristics, but gain increased combat powers.&quot;
@@ -725,6 +776,7 @@ All Models with this Special Rule that do not also have the Command, Champion, 
 
 
 This Oath of Moment may not be selected if the Detachment already has the Reapers of Lives or Spoils of Victory Oaths of Moment.</description>
+      <alias>Doomed Heroics</alias>
     </rule>
     <rule name="Children of Old Night" id="022a-93b0-03f9-e9c2" hidden="false">
       <description>&quot;Models subject to this benefit are only affected by the Fear (X) Special Rule while they are within 6&quot; of a Model with that Special Rule instead of 12&quot;.&quot;
@@ -872,7 +924,7 @@ A Model with this Special Rule may not join any other Unit, nor may it be joine
 
 - The Controlling Player gains a bonus of +1 to their Combat Resolution Score for each wound lost by that Model in that Combat Round.
 - If a Model with this Special Rule issues or accepts a Challenge, its Controlling Player scores 1 Victory Point. 
-- Neither Player may score any Victory Points for this Model being Removed as a Casualty. </description>
+- Neither Player may score any Victory Points for this Model being Removed as a Casualty.</description>
     </rule>
     <rule name="Alone and Forgotten" id="1f14-ed97-b397-d409" hidden="false">
       <description>&quot;A Detachment with this Oath of Moment may only have Command Choices selected for it, but gains bonuses for those Units in Combat.&quot;
@@ -1030,8 +1082,7 @@ Weapons of Desperation
  • Reclaimed heavy stubber*
 
 
- *In any Unit only one Model in every three may select this option
-</description>
+ *In any Unit only one Model in every three may select this option</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
