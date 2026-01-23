@@ -2001,7 +2001,7 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                     <modifier type="set" value="For every four Models in this Unit, one Inductii in this Unit may have its bolt pistol exchanged for " field="name"/>
                     <modifier type="increment" value="1" field="873d-66d9-0603-a5d7">
                       <repeats>
-                        <repeat value="3" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                        <repeat value="4" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
                       </repeats>
                     </modifier>
                     <modifier type="set" value="0" field="07d8-33b1-4a68-a09f">
@@ -2084,7 +2084,7 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37dc-f9f9-47fd-bfa1" automatic="true"/>
-                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="e7d3-8923-fd35-6b29"/>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="e7d3-8923-fd35-6b29" includeChildSelections="true"/>
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="0" field="37dc-f9f9-47fd-bfa1">
@@ -2094,7 +2094,7 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                     </modifier>
                     <modifier type="increment" value="1" field="e7d3-8923-fd35-6b29">
                       <repeats>
-                        <repeat value="4" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false"/>
+                        <repeat value="4" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
                       </repeats>
                     </modifier>
                   </modifiers>
