@@ -586,7 +586,7 @@ Until the end of the first Battle Turn of the Battle, whenever the Controlling P
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Prosperine Sorcerer" hidden="false" id="62bf-2931-3aab-3937">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Prosperine Sorcerer" hidden="false" id="f946-8223-508d-d1c5" publicationId="e54c-7040-0f35-d85d">
+        <selectionEntry type="model" import="true" name="Prosperine Sorcerer" hidden="false" id="f946-8223-508d-d1c5" publicationId="e54c-7040-0f35-d85d" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b82-3d19-64d1-47db-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b82-3d19-64d1-47db-max" includeChildSelections="false"/>
@@ -770,12 +770,6 @@ Immovable Force (Telekinesis Discipline)</description>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Bolt pistol" hidden="false" id="4d1d-1133-ce0a-d1fd" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="2">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4af5-f012-bb7d-6f77-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4af5-f012-bb7d-6f77-max" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
             <entryLink import="true" name="Frag grenades" hidden="false" id="bd7f-77d2-102b-d0a3" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4f23-a562-4a37-7976" includeChildSelections="false"/>
@@ -795,6 +789,22 @@ Immovable Force (Telekinesis Discipline)</description>
             <categoryLink targetId="594d-fa82-13cb-a345" id="3cb0-ce82-4ec4-8e34" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="9871-cb62-5283-2216" id="253d-2dcf-4766-9161" primary="false" name="Command Model Sub-type"/>
           </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Pistol" id="4cfa-1c15-686d-f114" hidden="false" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="4d1d-1133-ce0a-d1fd" type="selectionEntry" targetId="2942-f783-d627-33c5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4af5-f012-bb7d-6f77-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Legion Pistols" hidden="false" id="d5be-2601-3806-fde8" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" flatten="true"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c243-9559-a31f-81a2"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34d2-2c30-6c3a-bf9c"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -812,6 +822,11 @@ Immovable Force (Telekinesis Discipline)</description>
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="dc1c-9e74-e3bb-629a" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="d52b-b263-4c5d-7635" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Psyker" id="59ef-615e-0251-9c86" hidden="false" type="profile" targetId="0d5a-bf3a-7b46-785a"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sekhmet Terminator Cabal" hidden="false" id="c5a4-8dfe-5b4c-eef2">
       <selectionEntries>
