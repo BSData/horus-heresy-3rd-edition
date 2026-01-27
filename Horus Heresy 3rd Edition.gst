@@ -32,6 +32,7 @@
 - A Model with the Command Sub-Type may join and leave Units (see page 180).
 - A Model with the Command Sub-Type may Issue and Accept Challenges (see the Rules for Challenges on page 256).
 - The Controlling Player of a Unit that includes one or more Models with the Command Sub-Type may use the Characteristics of one of those Models to resolve any Characteristics Checks made for that Unit.</description>
+          <alias>Command</alias>
         </rule>
       </rules>
     </categoryEntry>
@@ -41,6 +42,7 @@
           <description>The following Rules apply to all Models with the Unique Sub-Type:
 - An Army may not include more than a single instance of a given Model with this Sub-Type.
 - A Model with the Unique Sub-Type or a Unit composed entirely of Models with the Unique Sub-Type may not have any options other than those included on its Army List Profile selected for them.</description>
+          <alias>Unique</alias>
         </rule>
       </rules>
     </categoryEntry>
@@ -49,6 +51,7 @@
         <rule name="Champion Sub-Type" id="489d-a88d-0153-d5af" hidden="false" publicationId="7d63-5df4-c656-52de" page="176">
           <description>The following Rules apply to all Models with the Champion Sub-Type:
 - A model with the Champion Sub-Type may Issue and Accept Challenges (see the Rules for Challenges on page 256).</description>
+          <alias>Champion</alias>
         </rule>
       </rules>
     </categoryEntry>
@@ -65,6 +68,7 @@
         <rule name="Sergeant Sub-Type" id="3888-5604-8695-720e" hidden="false" publicationId="7d63-5df4-c656-52de" page="177">
           <description>The following Rules apply to all Models with the Sergeant Sub-Type:
 - The Controlling Player of a Unit that includes one or more Models with the Sergeant Sub-Type may use the Characteristics of one of those Models to resolve any Characteristic Check made for that Unit.</description>
+          <alias>Sergeant</alias>
         </rule>
       </rules>
     </categoryEntry>
@@ -75,6 +79,7 @@
 - A Unit that includes only Models with the Heavy Sub-Type gains a bonus of +1 to its Cool Characteristics for Checks to avoid gaining Tactical Statuses.
 - A Unit that includes any Models with the Heavy Sub-Type may not Rush.
 - A Unit that includes any Models with the Heavy Sub-Type only uses its Movement Characteristic to determine how far it moves as part of a Set-up Move, not Movement and Initiative totalled.</description>
+          <alias>Heavy</alias>
         </rule>
       </rules>
     </categoryEntry>
@@ -84,6 +89,7 @@
           <description>The following Rules apply to all Models with the Light Sub-Type:
 - A Unit that includes only Models with the Light Sub-Type gain a +2 modifier to its Initiative when determining how far that Unit may Rush (this bonus stacks with other bonuses to Rush distance).
 - A Unit that includes only Models with the Light Sub-Type may make Shooting Attacks after having Rushed, but makes all such Shooting Attacks as Snap Shots. Models or Weapons that cannot attack as Snap Shots may not make attacks.</description>
+          <alias>Light</alias>
         </rule>
       </rules>
     </categoryEntry>
@@ -92,6 +98,7 @@
         <rule name="Skirmish Sub-Type" id="8745-f111-ed89-1357" hidden="false" publicationId="7d63-5df4-c656-52de" page="178">
           <description>The following Rules apply to all Models with the Skirmish Sub-Type:
 - A Unit that includes only Models with the Skirmish Sub-Type has a Unit Coherency range of 3&quot; rather than 2&quot;.</description>
+          <alias>Skirmish</alias>
         </rule>
       </rules>
     </categoryEntry>
@@ -101,6 +108,7 @@
           <description>The following Rules apply to all Models with the Antigrav Sub-Type:
 - A Unit that includes only Models with the Antigrav Sub-Type may ignore the effects of any and all Terrain it passes over during movement, including passing over Impassable Terrain without penalty or restriction. However, such Units may not begin or end their movement in Impassable Terrain, and if beginning or ending their movement in Dangerous Terrain must take Dangerous Terrain Tests as normal.
 - A Unit that includes only Models with the Antigrav Sub-Type may ignore both friendly and enemy Models and Units when Moving. However,, when moving over a friendly Unit all Models with the Antigrav Sub-Type must end their move at least 1&quot; away from all models that are not part of the same Unit, or if moving over an enemy Unit, must end their move at least 1&quot; away from any enemy Model.</description>
+          <alias>Antigrav</alias>
         </rule>
       </rules>
     </categoryEntry>
@@ -114,6 +122,7 @@
 - A Model with the Transport Sub-Type may only have a single Unit Embarked upon it at any one time (Models with the Specialist Sub-Type, Command Sub-Type, or Paragon Type that have joined a Unit are considered part of that Unit and may Embark alongside it).
 - A Unit may not be partially Embarked on a Model with the Transport Sub-Type - either all Models or no Models in a Unit may be Embarked on a given Model.
 - If a Model with the Transport Sub-Type has a Unit Embarked upon it, the Embarked Unit is not considered part of the same Unit. The two remain separate Units for all purposes.</description>
+          <alias>Transport</alias>
         </rule>
       </rules>
     </categoryEntry>
@@ -121,6 +130,7 @@
       <rules>
         <rule name="Infantry Type" id="6740-4d5b-fca0-ba1f" hidden="false" publicationId="7d63-5df4-c656-52de" page="174">
           <description>Infantry is the most basic Type, and is applied to most Models in the game. A Model with the Infantry Type uses the Core Rules without modification, gaining neither benefit nor penalty. Models with the Infantry Type may Embark and Disembark upon Models with the Transport Sub-Type.</description>
+          <alias>Infantry</alias>
         </rule>
       </rules>
     </categoryEntry>
@@ -130,6 +140,7 @@
           <description>The following Rules apply to all Models with the Cavalry Types:
 - When making a Fall Back Move for a Model with the Cavalry Type, that Model moves a distance equal to the Initiative Characteristic of the Model plus the total of two Dice (IE: 2D6) rolled and added together.
 - Models with the Cavalry Type may not make use of any Cover Save granted by Terrain Features or Areas of Terrain.</description>
+          <alias>Cavalry</alias>
         </rule>
       </rules>
     </categoryEntry>
@@ -140,6 +151,7 @@
 - When targeting a Unit that includes any Models with the Walker Type, the effects of the Poisoned (X) Special Rule only trigger a Wound Test with a result of a &apos;6&apos; before modifiers are applied, regardless of the value of X for that variant of the Special Rule.
 - A Model with the Walker Type may attack with all Weapons they have in each Shooting Attack they make, including as part of a Reaction. Note that this does not allow Weapons that do not have the Assault Trait to be used to attack as part of a Volley Attack.
 - In Step 1 of the Resolution Sub-Phase, when deciding how many Models a Player controls in a Combat, a Model with the Walker Type counts as a number of Models equal to that Model&apos;s Base Wounds Value.</description>
+          <alias>Walker</alias>
         </rule>
       </rules>
     </categoryEntry>
@@ -153,6 +165,7 @@
 - A Model with the Paragon Type may Issue and Accept Challenges (see Rules for Challenges on page 256).
 - The Controlling Player of a Unit that include one or more Models with the Paragon Type may use the Characteristics of one of those Models to resolve any Characteristic Checks made for that Unit.
 - In Step 1 of the Resolution Sub-Phase, when deciding how many Models a Player controls in a Combat, a Model with the Paragon Type counts as a number of Models equal to that Model&apos;s Base Wounds Value.</description>
+          <alias>Paragon</alias>
         </rule>
       </rules>
     </categoryEntry>
@@ -165,6 +178,7 @@
 - Models with the Automata Type cannot gain any Tactical Statuses and are considered to automatically pass any Check made to avoid gaining a Tactical Status. However, if a Unit that contains any Models with the Automata Type also includes any Models that do not have the Automata Type, that Check must be made using the Characteristics of one of the Models that does not have the Automata Type and is not automatically passed.
 - When targeting a Unit that includes any Models with the Automata Type, the effects of the Poisoned (X) Special Rule only trigger on a Wound Test with a result of a &apos;6&apos; before modifiers are applied, regardless of the value of X for that variant of the Special Rule.
 - A Unit that includes one or more Models with the Automata Type may not make Reactions.</description>
+          <alias>Automata</alias>
         </rule>
       </rules>
     </categoryEntry>
@@ -178,7 +192,15 @@
     <categoryEntry name="Prime Recon" id="6348-ecd0-714d-042a" hidden="false"/>
     <categoryEntry name="Prime Fast Attack" id="c291-144b-3da6-37ed" hidden="false"/>
     <categoryEntry name="Vehicle Model Type" id="aa5a-c9fd-1eb1-7a45" hidden="false"/>
-    <categoryEntry name="Rapid Sub-Type" id="a5c6-b359-cecb-e0b1" hidden="false"/>
+    <categoryEntry name="Rapid Sub-Type" id="a5c6-b359-cecb-e0b1" hidden="false">
+      <rules>
+        <rule name="Rapid Sub-Type" id="8872-e95d-dcd2-19d5" hidden="false">
+          <alias>- A Model with this Sub-Type may Rush - however the additional distance moved when Rushing is not determined by an Initiative Characteristic, but is always an additional 6&quot;.</alias>
+          <alias>- When Rushing, a Model with this Sub-Type may make Shooting Attacks, but all Shooting Attacks are made as Snap Shots. A Model with this Sub-Type may not make multiple Shooting Attacks in the same Turn as one where it Rushes.</alias>
+          <alias>- A Model with both this Sub-Type and the Transport Sub-Type, that the Controlling Player chooses to Rush in a Turn, may not Disembark any Models in the same Turn (unless required to make an Emergency Disembarkation by another Rule or Special Rule).</alias>
+        </rule>
+      </rules>
+    </categoryEntry>
     <categoryEntry name="Unstoppable Sub-Type" id="5555-f37e-8ad0-20c0" hidden="false">
       <rules>
         <rule name="Unstoppable Sub-Type" id="263f-be63-a120-1f2f" hidden="false">
@@ -187,6 +209,7 @@
 • A Model with this Sub-Type may move through enemy Models if it began the Movement Phase in Base Contact with one or move enemy Models - but may not end a move in the Movement Phase in Base Contact with an enemy Model.
 • A Model with this Sub-Type may never Embark on a Model with the Transport Sub-Type, even if another Special Rule would allow it to do so.
 • While there are one or more enemy Models in Base Contact with a Model with this Sub-Type, the Model with this Sub-Type may not make Shooting Attacks, even though it does not count as being Locked in Combat.</description>
+          <alias>Unstoppable</alias>
         </rule>
       </rules>
     </categoryEntry>
@@ -206,6 +229,7 @@
 - A Model with this Sub-Type may only make Reactions in response to actions undertaken by Units that contain one or more Models with the Paragon Type, Super-Heavy Sub-Type, Knight Sub-Type or Titan Sub-Type.
 - When a player is instructed to roll on the Vehicle Damage Table for a Model with this Sub-Type, no roll is made. Instead , the Model loses a single Hull Point.
 - If a Model with this Sub-Type has a Transport Capacity, then it may transport any number of Units, so long as the number of Models in the transported Units does not exceed the Vehicle&apos;s Transport Capacity.</description>
+          <alias>Super-Heavy</alias>
         </rule>
       </rules>
     </categoryEntry>
@@ -220,20 +244,30 @@
 - A Model with the Flyer Sub-Type may never be Locked in Combat or attacked in any way during the Assault Phase and may not be targeted by attacks made using a Melee Weapon.
 - A Model with the Flyer Sub-Type may never make a Reaction of any kind, unless that Reaction specifically states it may be made by Models with the Flyer Sub-Type - but can be targeted by Reactions.
 - When a Player is instructed to roll on the Vehicle Damage Table for a Model with this Sub-Type, no roll is made. Instead, the Model loses a single Hull Point.</description>
+          <alias>Flyer</alias>
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry name="Stable Model Sub-Type" id="3753-39e1-22c2-531b" hidden="false"/>
+    <categoryEntry name="Stable Model Sub-Type" id="3753-39e1-22c2-531b" hidden="false">
+      <rules>
+        <rule name="Stable Sub-Type" id="8610-6657-7e74-38fd" hidden="false" publicationId="7d63-5df4-c656-52de" page="223">
+          <description>- A Model with this Sub-Type always gains any benefits for having remained Stationary when making Shooting Attacks, regardless of whether the Model moved in the preceding Movement Phase or the distance moved. This does not count if the Model has Rushed in the preceding Movement Phase.
+- When making multiple Shooting Attacks in the same Shooting Phase, a Model with this Sub-Type does not have to make all attacks as Snap Shots.</description>
+          <alias>Stable</alias>
+        </rule>
+      </rules>
+    </categoryEntry>
     <categoryEntry name="Open Beta Release" id="c5ac-45c2-a8a9-e32c" hidden="false"/>
     <categoryEntry name="Command - Optae Only" id="ee42-a241-c364-489d" hidden="false"/>
     <categoryEntry name="The Hammer of Olympia Unlock" id="b7c9-7d2d-fb56-5486" hidden="true"/>
     <categoryEntry name="Malefic Sub-type" id="2de1-ddd6-ebb4-10df" hidden="false" publicationId="e54c-7040-0f35-d85d" page="18">
       <rules>
-        <rule name="Malefic" id="56af-aee5-210b-7093" hidden="false" publicationId="e54c-7040-0f35-d85d" page="18">
+        <rule name="Malefic Sub-Type" id="56af-aee5-210b-7093" hidden="false" publicationId="e54c-7040-0f35-d85d" page="18">
           <description>The following Rules apply to all Models with the Malefic Sub-Type:
 • When a Unit composed entirely of Models with the Malefic Sub-Type would gain a Tactical Status of any kind, that Tactical Status is not applied to the Models in the Unit, but instead the Unit suffers D3 automatic wounds with an AP of 2 and a Damage Characteristic of 1 against which no Saving Throws of any kind may be made. Once these wounds are resolved, no Tactical Status is applied to any Model in the Unit.
 • Models with the Malefic Sub-Type are not affected by Special Rules that negatively modify their Leadership, Cool, Willpower or Intelligence Characteristics.
 • No Model that does not also have the Malefic Sub-Type may join or be joined by a Unit that includes one or more Models with the Malefic Sub-Type.</description>
+          <alias>Malefic</alias>
         </rule>
       </rules>
     </categoryEntry>
@@ -348,7 +382,7 @@
     </categoryEntry>
     <categoryEntry name="Fortification Model Type" id="ae5b-4e74-db76-fa25" hidden="false">
       <rules>
-        <rule name="Fortification" id="1498-b800-3984-286c" hidden="false">
+        <rule name="Fortification Type" id="1498-b800-3984-286c" hidden="false">
           <description>The following Rules apply to all Models with the Fortification Type:
 • A Model with the Fortification Type can never be moved by any Rule or effect after it has been Deployed.
 • A Model with the Fortification Type can never be placed into Reserves and must always be deployed at the start of a Battle.
@@ -356,6 +390,7 @@
 • A Model with the Fortification Type can never be affected by any kind of Status, including both Tactical Statuses and Cybertheurgic Statuses. However, such a Model can be affected by Cybertheurgic Rites that do not apply a Cybertheurgic Status.
 • A Unit that includes a Model with the Fortification Type may never be joined by any other Models of any Type.
 • A Model with the Fortification Type cannot make Reactions of any kind, unless a specific Sub-Type states otherwise.</description>
+          <alias>Fortification</alias>
         </rule>
       </rules>
     </categoryEntry>
@@ -365,6 +400,7 @@
           <description>The following Rules apply to all Models with the Emplacement Sub-Type:
 • A Model with the Emplacement Sub-Type has a Ballistic Skill Characteristic and can make Shooting Attacks.
 • A Model with the Emplacement Sub-Type can have the Return Fire and Interceptor Reactions made for it</description>
+          <alias>Emplacement</alias>
         </rule>
       </rules>
     </categoryEntry>
@@ -375,6 +411,7 @@
 • A Model with the Bunker Sub-Type has a Transport Capacity Characteristic.
 • Only Models with the Infantry Type that have no variant of the Bulky (X) Special Rule may Embark on a Model with the Bunker Sub-Type.
 • A Model with the Bunker Sub-Type can be Captured</description>
+          <alias>Bunker</alias>
         </rule>
       </rules>
     </categoryEntry>
@@ -383,6 +420,7 @@
         <rule name="Structure Sub-Type" id="c363-0bc3-7cb7-6d63" hidden="false">
           <description>The following Rules apply to all Models with the Structure Sub-Type:
 • A Model with the Structure Sub-Type can be Captured</description>
+          <alias>Structure</alias>
         </rule>
       </rules>
     </categoryEntry>
@@ -488,6 +526,7 @@
 • A Model with this Sub-Type cannot gain any Tactical Statuses or Cybertheurgic Statuses.
 • A Model with this Sub-Type cannot be affected by any Psychic Weapon, Psychic Reaction or Psychic Power.
 • A Model with this Sub-Type may not be targeted by the Battlesmith (X) Special Rule.</description>
+          <alias>Ordinatus</alias>
         </rule>
       </rules>
     </categoryEntry>
@@ -600,6 +639,7 @@
           <description>The following Rules apply to all Models with the Artificia Type:
 • Models with the Artificia Type cannot gain any Cybertheurgic Statuses, but can gain Tactical Statuses or other kinds of Status effects.
 • When targeting a Unit that includes any Models with the Artificia Type, the effects of the Poisoned (X) Special Rule only trigger on a Wound Test with a result of a ‘6’ before modifiers are applied, regardless of the value of X for that variant of the Special Rule.</description>
+          <alias>Artificia</alias>
         </rule>
       </rules>
     </categoryEntry>
@@ -709,6 +749,10 @@
     <categoryEntry name="Warlord or Lord of War" id="3420-1652-ccd9-aa8e" hidden="false"/>
     <categoryEntry name="Delegatus" id="a12c-94d0-efed-ea60" hidden="false"/>
     <categoryEntry name="Prime Command - Centurions Only" id="afc8-c83d-00a6-936e" hidden="false"/>
+    <categoryEntry name="Acquisitor" id="1ebf-72a3-b0b3-4944" hidden="false"/>
+    <categoryEntry name="Expurgator" id="ac12-7d1f-98e4-2b58" hidden="false"/>
+    <categoryEntry name="Vindictor" id="b2d5-2df6-b213-989b" hidden="false"/>
+    <categoryEntry name="Scourger" id="b819-ac22-c04b-0932" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
@@ -2091,6 +2135,13 @@
                       </conditions>
                       <comment>Shattered Legions</comment>
                     </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="079a-11b5-abfa-96da" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="079a-11b5-abfa-96da" shared="true"/>
+                      </conditions>
+                      <comment>Skitarii</comment>
+                    </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
@@ -2593,6 +2644,13 @@
                       </conditions>
                       <comment>Shattered Legions</comment>
                     </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="079a-11b5-abfa-96da" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="079a-11b5-abfa-96da" shared="true"/>
+                      </conditions>
+                      <comment>Skitarii</comment>
+                    </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
@@ -2813,7 +2871,6 @@
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
                     <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2848,6 +2905,53 @@
             <categoryLink name="Prime Command" hidden="false" id="b167-4f4c-6449-1736" targetId="c85c-2963-658f-1bb9">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="cfc3-19ed-2615-5523" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Elites" hidden="false" id="c07f-a9cb-c3d4-8899" targetId="5d5e-958f-e388-50b5">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8ec6-57ee-d2d0-f14f"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="8ec6-57ee-d2d0-f14f">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2" field="8ec6-57ee-d2d0-f14f">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="notInstanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="Prime Elites" hidden="false" id="f7b1-5c3f-e2f3-1056" targetId="276f-7a07-a56c-affd">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3bd3-f7ab-ac8c-549e" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
             <categoryLink name="Prime Command - Centurions Only" hidden="false" id="9bb2-5954-4a4b-01d4" targetId="afc8-c83d-00a6-936e">
@@ -3056,6 +3160,13 @@
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="3256-29e9-1d7a-12a7" shared="true"/>
                       </conditions>
                       <comment>Shattered Legions</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="079a-11b5-abfa-96da" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="079a-11b5-abfa-96da" shared="true"/>
+                      </conditions>
+                      <comment>Skitarii</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -3444,6 +3555,13 @@
                       </conditions>
                       <comment>Shattered Legions</comment>
                     </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="079a-11b5-abfa-96da" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="079a-11b5-abfa-96da" shared="true"/>
+                      </conditions>
+                      <comment>Skitarii</comment>
+                    </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
@@ -3830,6 +3948,13 @@
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="3256-29e9-1d7a-12a7" shared="true"/>
                       </conditions>
                       <comment>Shattered Legions</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="079a-11b5-abfa-96da" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="079a-11b5-abfa-96da" shared="true"/>
+                      </conditions>
+                      <comment>Skitarii</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -4218,6 +4343,13 @@
                       </conditions>
                       <comment>Shattered Legions</comment>
                     </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="079a-11b5-abfa-96da" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="079a-11b5-abfa-96da" shared="true"/>
+                      </conditions>
+                      <comment>Skitarii</comment>
+                    </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
@@ -4605,6 +4737,13 @@
                       </conditions>
                       <comment>Shattered Legions</comment>
                     </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="079a-11b5-abfa-96da" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="079a-11b5-abfa-96da" shared="true"/>
+                      </conditions>
+                      <comment>Skitarii</comment>
+                    </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
@@ -4991,6 +5130,13 @@
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="3256-29e9-1d7a-12a7" shared="true"/>
                       </conditions>
                       <comment>Shattered Legions</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="079a-11b5-abfa-96da" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="079a-11b5-abfa-96da" shared="true"/>
+                      </conditions>
+                      <comment>Skitarii</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -5585,6 +5731,13 @@
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="3256-29e9-1d7a-12a7" shared="true"/>
                       </conditions>
                       <comment>Shattered Legions</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="079a-11b5-abfa-96da" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="079a-11b5-abfa-96da" shared="true"/>
+                      </conditions>
+                      <comment>Skitarii</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -6591,6 +6744,13 @@
                       </conditions>
                       <comment>Shattered Legions</comment>
                     </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="079a-11b5-abfa-96da" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="079a-11b5-abfa-96da" shared="true"/>
+                      </conditions>
+                      <comment>Skitarii</comment>
+                    </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
@@ -7184,6 +7344,13 @@
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="3256-29e9-1d7a-12a7" shared="true"/>
                       </conditions>
                       <comment>Shattered Legions</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="079a-11b5-abfa-96da" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="079a-11b5-abfa-96da" shared="true"/>
+                      </conditions>
+                      <comment>Skitarii</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -24069,17 +24236,6 @@
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
-                <modifier type="set" value="4" field="18c9-c657-1c4a-d640">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime War-engine" hidden="false" id="10b5-c5fe-9ca8-cfaa" targetId="9699-67c9-2c0b-e64b">
@@ -24926,6 +25082,13 @@
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="3256-29e9-1d7a-12a7" shared="true"/>
                       </conditions>
                       <comment>Shattered Legions</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="079a-11b5-abfa-96da" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="079a-11b5-abfa-96da" shared="true"/>
+                      </conditions>
+                      <comment>Skitarii</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
