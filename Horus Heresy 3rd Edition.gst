@@ -25586,6 +25586,9 @@
           <comment>Militia</comment>
         </forceEntryLink>
         <forceEntryLink name="Auxiliary - Maelstrom Sentry Battery" id="7f67-81d6-ea48-df88" hidden="false" targetId="07f0-6f5f-59f4-f95f" type="forceEntry"/>
+        <forceEntryLink name="Apex - Linebreaker Echelon (Saturnine)" id="49ca-8d43-453f-37d2" hidden="false" targetId="aafc-1a40-350a-5434" type="forceEntry"/>
+        <forceEntryLink name="Apex - Linebreaker Echelon (Cataphractii)" id="421c-09a2-16f2-977c" hidden="false" targetId="d7b3-5d00-8524-73fa" type="forceEntry"/>
+        <forceEntryLink name="Apex - Linebreaker Echelon (Tartaros)" id="62a7-bbe8-4b2c-7e04" hidden="false" targetId="dd35-dc84-98ac-237d" type="forceEntry"/>
       </forceEntryLinks>
     </forceEntry>
     <forceEntry name="Lord of War Detachment" id="b7a1-629f-9d60-c2a9" hidden="false" sortIndex="4">
