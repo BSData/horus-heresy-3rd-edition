@@ -9392,6 +9392,13 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
           <rules>
             <rule name="Cybernetica" id="10c3-4cd5-4ad2-2f3b" hidden="false">
               <description>An Archmagos, Archmagos on Abeyant, Magos, Magos on Abeyant or Tech-priest with the Cybernetica Trait gains the Arcana Benifice: The Deus Machina. A Unit composed entirely of Models with both the Automata Type and the Cybernetica Trait in a Prime slot may take the Mechanicum Prime Advantage: Paragon of Metal. If an Army includes a Model with the High Command Battlefield Role and the Cybernetica Trait then they may select the Apex Detachment: Command Maniple. Slots in this Detachment may only be used to select Units that only include Models with the Automata Type.</description>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="forces" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </rule>
           </rules>
         </selectionEntry>
@@ -9417,6 +9424,13 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
           <rules>
             <rule name="Macrotek" id="3e7a-73d1-7e6d-240b" hidden="false">
               <description>An Archmagos, Archmagos on Abeyant, Magos, Magos on Abeyant or Tech-priest with the Macrotek Trait gains the Arcana Benifice: Protector of Iron. Any Unit with the Macrotek Trait composed of a single Model with the Vehicle Type that does not also have the Super-Heavy Type and is taken in a Prime slot may take the Mechanicum Prime Advantage: Prime Conveyor. If an Army includes a Model with the High Command Battlefield Role and the Macrotek Trait then they may select the Apex Detachment: Iron Phalanx. All Models selected in this Detachment must have the Vehicle Type and must have the Prime Conveyor Prime Advantage selected for them.</description>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="forces" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </rule>
           </rules>
         </selectionEntry>
