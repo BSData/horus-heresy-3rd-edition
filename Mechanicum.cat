@@ -3550,6 +3550,8 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+            <cost name="Combined Warlord and Lord of War Points" typeId="14bd-cad0-cd3d-8b23" value="0"/>
+            <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Sergeant Model Sub-Type" hidden="false" id="14f8-09d2-328a-5e9d" targetId="8045-89a4-76d4-fcef" primary="false"/>
@@ -3617,6 +3619,11 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
                 <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="35" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="1d1b-d499-4941-b0ac" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
@@ -3648,13 +3655,6 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
           </entryLinks>
         </entryLink>
       </entryLinks>
-      <modifiers>
-        <modifier type="set" value="25" field="9893-c379-920b-8982">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="1d1b-d499-4941-b0ac" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink targetId="8268-aa48-f4dc-0506" id="ffb1-38cb-1fd7-0541" primary="false" name="Lacrymaerta"/>
       </categoryLinks>
