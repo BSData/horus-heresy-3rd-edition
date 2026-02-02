@@ -24969,7 +24969,6 @@
               </constraints>
             </categoryLink>
             <categoryLink name="War-engine - Upgraded by The Iron-clad" hidden="false" id="5c3a-61f8-facc-1735" targetId="d00a-e269-2ed3-8fc4"/>
-            <categoryLink name="Army Configuration" hidden="false" id="5c8b-9e7e-b8c7-00b4" targetId="abfa-86ab-1726-077a"/>
             <categoryLink name="Paragon of Malevolence" hidden="false" id="7a46-7c80-ebdf-f775" targetId="708b-b2ff-1a14-2901"/>
             <categoryLink name="Prime Rewards of Treachery" hidden="false" id="6bce-4f4c-7948-0c2d" targetId="de4f-4c9e-11bc-1b2a">
               <constraints>
@@ -26226,6 +26225,13 @@
         <forceEntryLink name="Apex - Linebreaker Echelon (Cataphractii)" id="421c-09a2-16f2-977c" hidden="false" targetId="d7b3-5d00-8524-73fa" type="forceEntry"/>
         <forceEntryLink name="Apex - Linebreaker Echelon (Tartaros)" id="62a7-bbe8-4b2c-7e04" hidden="false" targetId="dd35-dc84-98ac-237d" type="forceEntry"/>
       </forceEntryLinks>
+      <categoryLinks>
+        <categoryLink name="Army Configuration" hidden="false" id="5c8b-9e7e-b8c7-00b4" targetId="abfa-86ab-1726-077a">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a65-3c54-1958-0fa6"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
     </forceEntry>
     <forceEntry name="Lord of War Detachment" id="b7a1-629f-9d60-c2a9" hidden="false" sortIndex="4">
       <categoryLinks>
