@@ -753,6 +753,8 @@
     <categoryEntry name="Expurgator" id="ac12-7d1f-98e4-2b58" hidden="false"/>
     <categoryEntry name="Vindictor" id="b2d5-2df6-b213-989b" hidden="false"/>
     <categoryEntry name="Scourger" id="b819-ac22-c04b-0932" hidden="false"/>
+    <categoryEntry name="Legiones Astartes" id="fbf2-aba8-7792-2f7f" hidden="false"/>
+    <categoryEntry name="Legiones Hereticus" id="b684-d314-f80b-ee73" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
@@ -8105,6 +8107,11 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="add" value="Primacy Wing only allowed with Legiones Astartes Rite of War" field="error">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b684-d314-f80b-ee73" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <categoryLinks>
             <categoryLink name="Retinue" hidden="false" id="0519-2a37-5f9e-72de" targetId="a38e-50ff-310f-f19e">
@@ -14361,6 +14368,11 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="add" value="Berserker Cadre only allowed with Legiones Astartes Rite of War" field="error">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b684-d314-f80b-ee73" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
@@ -15136,6 +15148,11 @@
                   <comment>World Eaters</comment>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="add" value="Sons of Bodt only allowed with Legiones Hereticus Rite of War" field="error">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="fbf2-aba8-7792-2f7f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <comment>WE</comment>

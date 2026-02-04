@@ -2472,6 +2472,9 @@ On any Turn in which they made a Charge Move, Models with this Special Rule gain
               </constraints>
             </selectionEntry>
           </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="fbf2-aba8-7792-2f7f" id="cf40-8d3d-bf5b-f3e1" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Legiones Hereticus Emperor&apos;s Children" hidden="false" id="51f4-9244-2a1c-2d7e">
           <constraints>
@@ -2546,6 +2549,9 @@ After a Shooting Attack that targets a Unit entirely composed of Models with thi
               </conditionGroups>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="b684-d314-f80b-ee73" id="d812-36a2-e9d2-b0fc" primary="false" name="Legiones Hereticus"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -2584,6 +2590,11 @@ After a Shooting Attack that targets a Unit entirely composed of Models with thi
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" value="Brotherhood of the Phoenix only allowed with Legiones Hereticus Rite of War" field="error">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fbf2-aba8-7792-2f7f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
