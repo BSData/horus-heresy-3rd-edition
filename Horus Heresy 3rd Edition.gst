@@ -26226,11 +26226,7 @@
         <forceEntryLink name="Apex - Linebreaker Echelon (Tartaros)" id="62a7-bbe8-4b2c-7e04" hidden="false" targetId="dd35-dc84-98ac-237d" type="forceEntry"/>
       </forceEntryLinks>
       <categoryLinks>
-        <categoryLink name="Army Configuration" hidden="false" id="5c8b-9e7e-b8c7-00b4" targetId="abfa-86ab-1726-077a">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a65-3c54-1958-0fa6"/>
-          </constraints>
-        </categoryLink>
+        <categoryLink name="Army Configuration" hidden="false" id="5c8b-9e7e-b8c7-00b4" targetId="abfa-86ab-1726-077a"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Lord of War Detachment" id="b7a1-629f-9d60-c2a9" hidden="false" sortIndex="4">
