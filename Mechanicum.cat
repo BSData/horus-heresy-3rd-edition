@@ -9401,6 +9401,13 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
               </modifiers>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Lacrymaerta" hidden="false" id="0d7c-dc0a-3942-b4eb">
           <rules>
@@ -9418,6 +9425,11 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
             <modifier type="set" value="1" field="f2eb-062f-1782-9b26">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a782-7985-325b-1840" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
