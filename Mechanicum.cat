@@ -3316,19 +3316,34 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
           </constraints>
           <modifiers>
             <modifier type="set" value="0" field="171b-4fed-bceb-6075">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="3e59-3bcf-4bf8-d404" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" value="0" field="3b7d-36e3-9fab-e3fb">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="3e59-3bcf-4bf8-d404" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="3e59-3bcf-4bf8-d404" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -5300,19 +5315,34 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
           </constraints>
           <modifiers>
             <modifier type="set" value="0" field="5927-3261-82b4-ffca">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="3e59-3bcf-4bf8-d404" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" value="0" field="b362-7434-2002-3d72">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="3e59-3bcf-4bf8-d404" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="3e59-3bcf-4bf8-d404" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -9440,13 +9470,6 @@ A Unit that includes a Model with this Special Rule may have two Cybertheurgic R
           <rules>
             <rule name="Cybernetica" id="10c3-4cd5-4ad2-2f3b" hidden="false">
               <description>An Archmagos, Archmagos on Abeyant, Magos, Magos on Abeyant or Tech-priest with the Cybernetica Trait gains the Arcana Benifice: The Deus Machina. A Unit composed entirely of Models with both the Automata Type and the Cybernetica Trait in a Prime slot may take the Mechanicum Prime Advantage: Paragon of Metal. If an Army includes a Model with the High Command Battlefield Role and the Cybernetica Trait then they may select the Apex Detachment: Command Maniple. Slots in this Detachment may only be used to select Units that only include Models with the Automata Type.</description>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="forces" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </rule>
           </rules>
           <modifiers>
