@@ -27599,9 +27599,14 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
           </conditions>
         </modifier>
         <modifier type="add" value="1e95-35f0-1353-ffa1" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3235-bd79-e9b1-60fa" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3235-bd79-e9b1-60fa" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="82f8-b131-f63b-840c" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="add" value="abff-3686-c39a-9a24" field="category">
           <conditions>
