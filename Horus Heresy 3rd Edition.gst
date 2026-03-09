@@ -12542,6 +12542,13 @@
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fc4-b367-183f-a2cc"/>
               </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="0fc4-b367-183f-a2cc">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
             <categoryLink name="Prime Fast Attack" hidden="false" id="c1c7-4a05-bb85-a94f" targetId="c291-144b-3da6-37ed">
               <constraints>
