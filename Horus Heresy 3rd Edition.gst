@@ -26815,47 +26815,6 @@
         <categoryLink name="Allegiance" hidden="false" id="5a4a-744e-eecc-1e4a" targetId="c408-52f1-b632-4c82" primary="true"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Getting Started - Add the crusade primary detachment from the detachments section." hidden="false" id="8343-6431-55a2-fa6e" defaultAmount="1" sortIndex="3">
-      <categoryLinks>
-        <categoryLink targetId="c5ac-45c2-a8a9-e32c" id="634b-1cfa-5d38-8e47" primary="true" name="Open Beta Release"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e075-1f6c-ff36-8e11" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="DON&apos;T SUBMIT BUGS FOR NOT IMPLEMENTED FUNCTIONALITY. Up to date including The Steel Hand of Mars - Jan 31st 2026" hidden="false" id="cd4a-d335-2d3a-91e0" defaultAmount="1" sortIndex="2">
-      <rules>
-        <rule name="Things that aren&apos;t implemented" id="10ac-cafa-6c21-0fa3" hidden="false">
-          <description>- Titans
-
-- Legacies (except fortifications)
-
-Please don&apos;t submit bug reports for any of these things. Please only submit bug reports for errors/broken functionality.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink targetId="c5ac-45c2-a8a9-e32c" id="c2fc-1eaf-255b-2b13" primary="true" name="Open Beta Release"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27a5-7dd1-f626-57f9" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="How to change wargear: For models with individual options, use the two overlapping squares with the plus to split the stack and customize each group individually" hidden="false" id="eb57-d57d-1cc4-6e8e" defaultAmount="1" sortIndex="5">
-      <categoryLinks>
-        <categoryLink targetId="c5ac-45c2-a8a9-e32c" id="dd6f-133a-bce9-47c6" primary="true" name="Open Beta Release"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d64-6d20-68af-83f1" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="For Mech you will also need to add a Mech - Logistical Benefits Detachment" hidden="false" id="5a59-32fd-001d-9651" sortIndex="4" defaultAmount="1">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fcb-8510-62a2-f54a"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink targetId="c5ac-45c2-a8a9-e32c" id="7a4e-c281-4721-f0f8" primary="true" name="Open Beta Release"/>
-      </categoryLinks>
-    </selectionEntry>
   </selectionEntries>
   <publications>
     <publication name="Horus Heresy - 3rd Edition Core Rulebook" id="7d63-5df4-c656-52de" hidden="false" shortName="CRB 3.0" publisher="Horus Heresy - 3rd Edition Core Rulebook" publicationDate="July 26, 2025"/>
