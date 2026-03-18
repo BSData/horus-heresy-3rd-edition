@@ -3369,6 +3369,19 @@
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3bd3-f7ab-ac8c-549e" includeChildSelections="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="2" field="3bd3-f7ab-ac8c-549e">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="610d-c9b0-ccb0-cba9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="f5dc-c13a-5848-f3b8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </categoryLink>
             <categoryLink name="Prime Command - Centurions Only" hidden="false" id="9bb2-5954-4a4b-01d4" targetId="afc8-c83d-00a6-936e">
               <constraints>
