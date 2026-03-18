@@ -1313,6 +1313,314 @@
                     <condition type="instanceOf" value="1" field="forces" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" value="1" field="5a1b-bae6-7bea-4a8a">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="0a35-fce3-188c-b3aa" shared="true"/>
+                                <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="22ee-7208-4089-b005" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="force" childId="2c0e-cb21-17b4-8870" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="force" childId="1fb4-7ef8-2442-2e70" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="force" childId="157f-952c-13bb-41bf" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>DA</comment>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9a22-d01f-ab5c-ec07" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9a22-d01f-ab5c-ec07" shared="true"/>
+                                <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7799-e1d6-762b-700b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="eeb7-2c0c-9882-f27d" shared="true" includeChildSelections="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="157f-952c-13bb-41bf" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>EC</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2c0e-cb21-17b4-8870" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1fb4-7ef8-2442-2e70" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="21c0-18db-03dd-ae07" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="21c0-18db-03dd-ae07" shared="true"/>
+                                <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7799-e1d6-762b-700b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="eeb7-2c0c-9882-f27d" shared="true" includeChildSelections="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="1fb4-7ef8-2442-2e70" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>IW</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2c0e-cb21-17b4-8870" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="157f-952c-13bb-41bf" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d995-cb33-be41-ecf8" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="d995-cb33-be41-ecf8" shared="true"/>
+                                <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="4" field="selections" scope="force" childId="c9fe-41a5-f6c9-881f" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7799-e1d6-762b-700b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                              <comment>SW</comment>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d186-cffc-0950-f632" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="d186-cffc-0950-f632" shared="true"/>
+                                <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="eeb7-2c0c-9882-f27d" shared="true" includeChildSelections="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="1fb4-7ef8-2442-2e70" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>IF</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2c0e-cb21-17b4-8870" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="157f-952c-13bb-41bf" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="486f-b32a-ac87-73dd" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="486f-b32a-ac87-73dd" shared="true"/>
+                                <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7799-e1d6-762b-700b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="2c0e-cb21-17b4-8870" shared="true" includeChildSelections="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="eeb7-2c0c-9882-f27d" shared="true" includeChildSelections="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="157f-952c-13bb-41bf" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>NL</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="22ae-fd5c-00ec-474a" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1fb4-7ef8-2442-2e70" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9cff-ac34-56ca-260f" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9cff-ac34-56ca-260f" shared="true"/>
+                                <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7799-e1d6-762b-700b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                              <comment>BA</comment>
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="atLeast" value="4" field="selections" scope="force" childId="1fb4-7ef8-2442-2e70" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="736e-3967-e72b-e3ac" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="736e-3967-e72b-e3ac" shared="true"/>
+                                <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7799-e1d6-762b-700b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="eeb7-2c0c-9882-f27d" shared="true" includeChildSelections="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="1fb4-7ef8-2442-2e70" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>IH</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2c0e-cb21-17b4-8870" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="157f-952c-13bb-41bf" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a956-190d-3b47-6258" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="a956-190d-3b47-6258" shared="true"/>
+                                <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7799-e1d6-762b-700b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="157f-952c-13bb-41bf" shared="true" includeChildSelections="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="2c0e-cb21-17b4-8870" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>WE</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1fb4-7ef8-2442-2e70" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="eeb7-2c0c-9882-f27d" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="656a-07b6-d4fd-57af" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="656a-07b6-d4fd-57af" shared="true"/>
+                                <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7799-e1d6-762b-700b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                              <comment>UM</comment>
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="atLeast" value="2" field="selections" scope="force" childId="2c0e-cb21-17b4-8870" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="2" field="selections" scope="force" childId="1fb4-7ef8-2442-2e70" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="be98-aa9d-64ef-f62c" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="be98-aa9d-64ef-f62c" shared="true"/>
+                                <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7799-e1d6-762b-700b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                              <comment>DG</comment>
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="atLeast" value="4" field="selections" scope="force" childId="2c0e-cb21-17b4-8870" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2496-21e2-1870-e9b8" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="2496-21e2-1870-e9b8" shared="true"/>
+                                <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7799-e1d6-762b-700b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                              <comment>TS</comment>
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="atLeast" value="4" field="selections" scope="force" childId="9c50-6271-7418-82a5" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ac06-fcec-b634-5bd9" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="ac06-fcec-b634-5bd9" shared="true"/>
+                                <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7799-e1d6-762b-700b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="157f-952c-13bb-41bf" shared="true" includeChildSelections="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="1fb4-7ef8-2442-2e70" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>SH</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2c0e-cb21-17b4-8870" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="eeb7-2c0c-9882-f27d" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4935-1832-63f7-91aa" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="4935-1832-63f7-91aa" shared="true"/>
+                                <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7799-e1d6-762b-700b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="157f-952c-13bb-41bf" shared="true" includeChildSelections="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="1fb4-7ef8-2442-2e70" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>WB</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2c0e-cb21-17b4-8870" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="eeb7-2c0c-9882-f27d" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f148-a6e4-5a8c-3aeb" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f148-a6e4-5a8c-3aeb" shared="true"/>
+                                <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7799-e1d6-762b-700b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                              </conditions>
+                              <comment>SL</comment>
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="atLeast" value="4" field="selections" scope="force" childId="f9f6-d169-cb95-6285" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="340c-1d4f-1f31-fb70" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="340c-1d4f-1f31-fb70" shared="true"/>
+                                <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7799-e1d6-762b-700b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="157f-952c-13bb-41bf" shared="true" includeChildSelections="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="eeb7-2c0c-9882-f27d" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>RG</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2c0e-cb21-17b4-8870" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1fb4-7ef8-2442-2e70" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="8813-5298-c368-ee16" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="8813-5298-c368-ee16" shared="true"/>
+                                <condition type="atLeast" value="4" field="selections" scope="force" childId="88e6-d373-4152-0dd8" shared="true" includeChildSelections="true"/>
+                                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7799-e1d6-762b-700b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="157f-952c-13bb-41bf" shared="true" includeChildSelections="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="eeb7-2c0c-9882-f27d" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                              <comment>AL</comment>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="2c0e-cb21-17b4-8870" shared="true" includeChildSelections="true"/>
+                                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1fb4-7ef8-2442-2e70" shared="true" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Support" hidden="false" id="26de-5f98-2e27-9554" targetId="345f-9ba6-9b02-ed5c">
