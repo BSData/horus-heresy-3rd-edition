@@ -28028,6 +28028,11 @@ When a Model with this Special Rule is included in a Detachment, one additional 
         </modifier>
       </modifiers>
       <comment>Ultramarines</comment>
+      <rules>
+        <rule name="Logisticae" id="aa55-7ce2-3344-0d79" hidden="false">
+          <description>Add one additional Transport or Heavy Transport Battlefield Role Slot to the Detachment that includes the Prime Force Organisation Slot with this Prime Advantage. Modify the Transport Capacity of a Unit that is selected to fill that slot by +2.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Legiones Thallaxes" hidden="false" id="3e37-6d4b-1198-b3fa">
       <rules>
