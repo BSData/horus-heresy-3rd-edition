@@ -3652,7 +3652,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
     </selectionEntryGroup>
     <selectionEntryGroup name="Legio Tactica" id="05d6-c214-1c60-331b" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Legio Tactica" hidden="false" id="6bc3-e10d-ccec-d76d">
+        <selectionEntry type="upgrade" import="true" name="Legio Tactica" hidden="false" id="6bc3-e10d-ccec-d76d" sortIndex="1">
           <rules>
             <rule name="Only in Death" id="28e4-4dfb-df30-cdee" hidden="false">
               <description>&quot;Units which only contain Models with this Special Rule become Stunned instead of Routed in Combat and cannot Fall Back or Disengage from a Combat.&quot;
@@ -3664,6 +3664,27 @@ Whenever a Model with this Special Rule would gain the Routed Tactical Status i
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc1d-d3c5-bbd6-e802"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4a7-85f7-ba60-bd0b"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Gambits" hidden="false" id="a986-2fd8-5d69-16db" sortIndex="2">
+          <infoLinks>
+            <infoLink name="Heaven&apos;s Strike" id="144b-549d-7c06-777c" hidden="false" type="profile" targetId="e420-6f61-30cb-98b0"/>
+            <infoLink name="Raptor&apos;s Surge" id="a55a-a10b-d145-d191" hidden="false" type="profile" targetId="f484-f6c7-0361-fed0"/>
+            <infoLink name="Stone&apos;s Aegis" id="a5bf-9f6b-6e36-c4b2" hidden="false" type="profile" targetId="d7a4-c4a2-dbfc-0f54"/>
+            <infoLink name="World Serpent&apos;s Bane" id="adfa-b81e-adb2-362e" hidden="false" type="profile" targetId="49cc-971f-80f7-e46f"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4ef7-38af-bba9-0692"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bbb-ecf5-9260-bb62"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Advanced Reaction" hidden="false" id="1ddb-a139-4402-a101" sortIndex="3">
+          <infoLinks>
+            <infoLink name="Blade Split" id="d455-4826-9da4-db50" hidden="false" type="profile" targetId="b9c9-67dc-715f-74a7"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dcd4-cb34-81d0-6a2f"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6270-2072-e416-8bb1"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
@@ -3725,7 +3746,7 @@ Whenever a Model with this Special Rule would gain the Routed Tactical Status i
         <characteristic name="Process" typeId="57cf-1c68-a020-2529"/>
       </characteristics>
     </profile>
-    <profile name="Raptor Surge" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="f484-f6c7-0361-fed0">
+    <profile name="Raptor&apos;s Surge" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="f484-f6c7-0361-fed0">
       <characteristics>
         <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7"/>
         <characteristic name="Description" typeId="2d7d-b1d9-dead-605a"/>
@@ -3737,10 +3758,16 @@ Whenever a Model with this Special Rule would gain the Routed Tactical Status i
         <characteristic name="Description" typeId="2d7d-b1d9-dead-605a"/>
       </characteristics>
     </profile>
-    <profile name="Stone Aegis" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="d7a4-c4a2-dbfc-0f54">
+    <profile name="Stone&apos;s Aegis" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="d7a4-c4a2-dbfc-0f54">
       <characteristics>
-        <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7"/>
-        <characteristic name="Description" typeId="2d7d-b1d9-dead-605a"/>
+        <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit modifies a Model&apos;s Toughness by +1 but causes Wound Tests made for it to fail on a 1 or 2.</characteristic>
+        <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">This Gambit may only be selected for a Model with the &apos;Shield&apos; Trait. If this Gambit is selected, then the Model for which it was selected gains a +1 modifier to its Toughness Characteristic for the duration of the Strike Step, but any Wound Tests made for that Model in the same Strike Step automatically fail on a natural result of 1 or 2.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="World Serpent&apos;s Bane" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="49cc-971f-80f7-e46f">
+      <characteristics>
+        <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit limits a Model to one attack but sets that attack&apos;s Damage Characteristic to the Model&apos;s remaining wounds.</characteristic>
+        <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">If this Gambit is selected, the Model for which is was selected may only make a single attack in the following Strike Step regardless of its Attacks Characteristic, but the Damage Characteristic of the Weapon used to make that attack is modified to be equal to the Model&apos;s current Wounds Characteristic while that attack is resolved.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
