@@ -18831,9 +18831,9 @@
               <comment>Legions</comment>
             </modifier>
             <modifier type="increment" value="1" field="6f31-a14e-e22b-ad94">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="1baf-b200-9e02-844d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="1baf-b200-9e02-844d" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
             </modifier>
             <modifier type="add" value="Veteran Cadre requires Legion Champion" field="error">
               <conditions>
