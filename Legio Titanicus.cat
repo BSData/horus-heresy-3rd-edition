@@ -1808,13 +1808,13 @@
                     <modifier type="set" value="Front mounted defensor bolt cannon" field="name"/>
                   </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Defensor bolt cannon" hidden="false" id="ba01-7631-fdb1-5a1f" type="selectionEntry" targetId="ebda-9396-daad-5176">
+                <entryLink import="true" name="Defensor lascannon" hidden="false" id="978b-bcdc-3881-4204" type="selectionEntry" targetId="a623-fdba-2421-d327">
                   <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="6b9d-c8ef-79a4-18db"/>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="fa79-d551-a3dc-c795"/>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b5b5-3f7d-4b1c-5eca"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d79b-64a3-edd7-83ba"/>
                   </constraints>
                   <modifiers>
-                    <modifier type="set" value="Rear Mounted defensor bolt cannon" field="name"/>
+                    <modifier type="prepend" value="Two Rear Mounted " field="name"/>
                   </modifiers>
                 </entryLink>
               </entryLinks>
@@ -2120,6 +2120,24 @@
       <entryLinks>
         <entryLink import="true" name="Prime Benefits" hidden="false" id="283f-7b04-ec98-7c59" type="selectionEntryGroup" targetId="9fd7-6bf8-6de7-761f"/>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Defensor lascannon" hidden="false" id="a623-fdba-2421-d327">
+      <profiles>
+        <profile name="Defensor lascannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="9333-126b-adde-8107">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">48</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">9</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Armourbane</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Las, Tactical</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Armourbane" id="180a-fe9f-8313-e30f" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
