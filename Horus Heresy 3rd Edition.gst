@@ -14114,7 +14114,7 @@
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="06ca-d5c5-58f1-f184"/>
           </constraints>
           <modifiers>
-            <modifier type="increment" value="1" field="06ca-d5c5-58f1-f184">
+            <modifier type="increment" value="2" field="06ca-d5c5-58f1-f184">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
