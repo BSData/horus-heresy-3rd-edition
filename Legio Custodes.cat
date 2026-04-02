@@ -3808,6 +3808,134 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
         <infoLink name="The Sodality" id="0544-6338-e8b3-4188" hidden="false" type="profile" targetId="ec17-9d84-3666-e7c7"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Sagittarum Guard Sodality" hidden="false" id="fdee-e061-c5a7-5f3f" sortIndex="19">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Sagittarum Guard" hidden="false" id="bdc6-1da0-291d-a835" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="875a-ac3f-5057-968c" includeChildSelections="false"/>
+            <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="1f70-ed3c-6b3b-9d1d" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="40"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+            <cost name="Combined Warlord and Lord of War Points" typeId="14bd-cad0-cd3d-8b23" value="0"/>
+            <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Infantry Model Type" hidden="false" id="8517-d621-74c7-6c34" targetId="594d-fa82-13cb-a345" primary="false"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="One Model may have its adrastus bolt caliver exchanged for:" id="7fcf-1ed5-f4af-1506" hidden="false" defaultSelectionEntryId="9bb2-824f-acdd-c9f9" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1cff-dd59-a1e1-c355" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf02-a892-8600-411d" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Adrastus bolt caliver" hidden="false" id="20ba-fe3b-c8af-2a5e" type="selectionEntry" targetId="a84d-b59a-b5c0-d286" sortIndex="1"/>
+                <entryLink import="true" name="Magisterium Vexilla" hidden="false" id="e0a1-fff6-b70c-91d4" type="selectionEntry" targetId="7796-115e-75a1-e686" sortIndex="4">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7c57-703a-b3ba-c002" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="fdee-e061-c5a7-5f3f" shared="true" id="e25a-a5dc-8c4a-7ee6" includeChildSelections="true"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Misericordia" hidden="false" id="9388-937e-dad2-de5b" type="selectionEntry" targetId="e15c-465c-8a7a-7e34" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b295-0cc4-8ee6-1886" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8667-1cd2-2e64-9116" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Bulky (X)" id="c058-4dd4-8693-b7a9" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+              <modifiers>
+                <modifier type="set" value="Bulky (2)" field="name"/>
+              </modifiers>
+              <comment>2</comment>
+            </infoLink>
+            <infoLink name="Vanguard (X)" id="0303-9f14-17ca-96b9" hidden="false" type="rule" targetId="530f-b733-993c-ec84">
+              <modifiers>
+                <modifier type="set" value="Vanguard (2)" field="name"/>
+              </modifiers>
+              <comment>2</comment>
+            </infoLink>
+            <infoLink name="Lightning Blows" id="55b4-2b28-a791-57bb" hidden="false" type="rule" targetId="9f68-a519-8e29-cb44"/>
+            <infoLink name="Eternal Warrior (X)" id="5d80-8025-1adc-c86d" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
+              <modifiers>
+                <modifier type="set" value="Eternal Warrior (1)" field="name">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="680b-53b4-4f4b-551f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Eternal Warrior (2)" field="name">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="680b-53b4-4f4b-551f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>1</comment>
+            </infoLink>
+          </infoLinks>
+          <profiles>
+            <profile name="Sagittarum Guard" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="8fb0-8e2a-97c8-844f">
+              <characteristics>
+                <characteristic name="Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">8</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">5</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">5</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">5</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">2</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">10</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">10</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">8</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">8</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">6+</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Combat Veterans</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="increment" value="1" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="increment" value="1" field="f714-1726-37d3-44df"/>
+                    <modifier type="increment" value="1" field="29c5-925d-5b1d-1e77"/>
+                    <modifier type="ceil" value="10" field="02ad-ebe6-86e7-9fd6"/>
+                    <modifier type="ceil" value="10" field="9cd1-0e7c-2cd6-5f2f"/>
+                    <modifier type="ceil" value="10" field="f714-1726-37d3-44df"/>
+                    <modifier type="ceil" value="10" field="29c5-925d-5b1d-1e77"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="f50b-b5d0-a0f2-4a10" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="498b-a478-333f-7089" type="selectionEntryGroup" targetId="6f4b-388a-b001-abde"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Legio Custodes" id="310f-ca3d-3d0d-bee4" hidden="false" type="profile" targetId="c717-38ae-cee2-19f7"/>
+        <infoLink name="[Allegiance]" id="7b5c-cba5-d68c-334a" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="The Sodality" id="7685-7ec5-ad91-e29a" hidden="false" type="profile" targetId="ec17-9d84-3666-e7c7"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Special Rules" id="8ca8-471c-e2d4-8c7b" targetId="106b-693b-99f2-00c3"/>
@@ -3914,6 +4042,16 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
     <entryLink import="true" name="Adrasite Guard Sodality" hidden="false" id="d618-4263-ddc0-8f28" type="selectionEntry" targetId="4c44-6f8d-bd72-492f">
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="2c22-adb6-6681-84a4" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Pyrithite Guard Sodality" hidden="false" id="5c2d-625c-43fe-58f7" type="selectionEntry" targetId="c852-ce9b-5e8f-97d9">
+      <categoryLinks>
+        <categoryLink targetId="5d5e-958f-e388-50b5" id="6953-3eb3-2c5e-73e0" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Sagittarum Guard Sodality" hidden="false" id="2a04-0733-0d85-155e" type="selectionEntry" targetId="fdee-e061-c5a7-5f3f">
+      <categoryLinks>
+        <categoryLink targetId="345f-9ba6-9b02-ed5c" id="1a86-5bab-51ae-e1f0" primary="true" name="Support"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
