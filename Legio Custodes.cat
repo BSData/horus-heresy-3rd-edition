@@ -1394,7 +1394,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
             <categoryLink targetId="6da5-a1b8-41c0-b6fc" id="2c8a-ea18-5b05-de21" primary="false" name="Golden Exemplar"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have select" id="180e-5f2b-3d31-81e4" hidden="false" defaultSelectionEntryId="332f-3cf7-5b05-925b" sortIndex="1" collapsible="true">
+            <selectionEntryGroup name="This Model may select" id="180e-5f2b-3d31-81e4" hidden="false" defaultSelectionEntryId="332f-3cf7-5b05-925b" sortIndex="1" collapsible="true">
               <entryLinks>
                 <entryLink import="true" name="Eternity Spear" hidden="false" id="df53-811d-d041-cc64" type="selectionEntry" targetId="3a9c-ef21-2819-a66b">
                   <constraints>
@@ -1567,7 +1567,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
             <categoryLink targetId="9871-cb62-5283-2216" id="8261-89ce-44af-a4be" primary="false" name="Command Model Sub-type"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="This Model may have select" id="b54b-7b09-5020-3996" hidden="false" defaultSelectionEntryId="007b-3d2c-c684-90b0" collapsible="true" sortIndex="1">
+            <selectionEntryGroup name="This Model may select" id="b54b-7b09-5020-3996" hidden="false" defaultSelectionEntryId="007b-3d2c-c684-90b0" collapsible="true" sortIndex="1">
               <entryLinks>
                 <entryLink import="true" name="Eternity Spear" hidden="false" id="930a-2da8-49b7-2aaa" type="selectionEntry" targetId="3a9c-ef21-2819-a66b">
                   <constraints>
@@ -2673,11 +2673,14 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e016-ce2e-4406-d413"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2947-d145-dccd-1c5f"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9dcc-97a1-adea-9cf5"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dcc-97a1-adea-9cf5"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -2768,6 +2771,9 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ae4-7945-1d5b-e0ca"/>
+              </constraints>
             </entryLink>
           </entryLinks>
           <infoLinks>
@@ -2849,7 +2855,6 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
             <entryLink import="true" name="Prime Benefits" hidden="false" id="4a77-cce9-438b-9d7c" type="selectionEntryGroup" targetId="6f4b-388a-b001-abde"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Neutron Cascade Mines" hidden="false" id="cdb7-5013-a523-215a" type="selectionEntry" targetId="7dd1-1135-784d-12fc"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="c243-b54f-b322-42e7" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -3183,11 +3188,14 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3973-9224-2dcb-d4c3"/>
                       </constraints>
+                      <modifiers>
+                        <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+                      </modifiers>
                     </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="522b-4900-8c80-c7d8"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d882-d549-8e8f-5c6e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d882-d549-8e8f-5c6e"/>
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -3267,11 +3275,14 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f4d-b602-1cb8-a704"/>
                       </constraints>
+                      <modifiers>
+                        <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+                      </modifiers>
                     </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9732-b4ea-3e8b-102a"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e971-c888-e225-a96d"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e971-c888-e225-a96d"/>
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
