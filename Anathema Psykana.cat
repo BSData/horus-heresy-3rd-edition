@@ -101,7 +101,7 @@
                     <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
                     <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
                     <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Critical Hit (6+), Duellist’s Edge (2)</characteristic>
-                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467"/>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">-</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -111,12 +111,6 @@
                     <modifier type="set" value="Duellist&apos;s Edge (2)" field="name"/>
                   </modifiers>
                   <comment>2</comment>
-                </infoLink>
-                <infoLink id="74fc-249c-2c86-1e12" hidden="false" type="rule" targetId="0612-95d5-46ae-c5ee" name="Hatred (X)">
-                  <modifiers>
-                    <modifier type="set" value="Hatred (Psyker, Malefic)" field="name"/>
-                  </modifiers>
-                  <comment>Psyker, Malefic</comment>
                 </infoLink>
                 <infoLink name="Critical Hit (X)" id="d73e-5bf6-a81d-454c" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
                   <modifiers>
@@ -144,7 +138,7 @@
               <modifiers>
                 <modifier type="set" value="Precision (5+)" field="name"/>
               </modifiers>
-              <comment>5</comment>
+              <comment>5+</comment>
             </infoLink>
             <infoLink name="Eternal Warrior (X)" id="d2ee-cc83-6f89-a3c8" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
               <modifiers>
@@ -159,6 +153,12 @@
               <comment>1</comment>
             </infoLink>
             <infoLink name="Ex Oblivio" id="17d4-7a85-049f-3768" hidden="false" type="rule" targetId="2bbf-2408-efc0-8789"/>
+            <infoLink name="Hatred (X)" id="74fc-249c-2c86-1e12" hidden="false" type="rule" targetId="0612-95d5-46ae-c5ee">
+              <modifiers>
+                <modifier type="set" value="Hatred (Psyker, Malefic)" field="name"/>
+              </modifiers>
+              <comment>Psyker, Malefic</comment>
+            </infoLink>
           </infoLinks>
           <rules>
             <rule name="The Soulless Queen" id="ad45-65be-f637-41c1" hidden="false">
@@ -189,13 +189,13 @@
           </entryLinks>
         </entryLink>
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="a524-abd4-772e-678c" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6" sortIndex="2"/>
-        <entryLink import="true" name="Loyalist" hidden="false" id="7579-440f-0346-48f9" type="selectionEntry" targetId="e1e1-a344-d3e2-0b91">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b6e3-663c-bc97-cc7a-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6e3-663c-bc97-cc7a-max"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="e850-2138-e8e1-8804" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Anathema Psykana" id="3cda-2efb-5b96-dc32" hidden="false" type="profile" targetId="1d5f-1195-1a65-2b59"/>
+        <infoLink name="Talons of the Emperor" id="cd49-a721-b18a-7043" hidden="false" type="profile" targetId="8974-94e5-d261-e4a2"/>
+        <infoLink name="Investigatus-Militant" id="766c-fb6f-7a37-5337" hidden="false" type="profile" targetId="cd3a-8312-e92d-33df"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Knight-Centura" hidden="false" id="aaf8-a9e7-8c56-2dac">
       <selectionEntries>
@@ -264,7 +264,7 @@
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="Paragon blade" hidden="false" id="e54d-514d-f932-62d6" type="selectionEntry" targetId="1881-a2b5-fc58-4270" sortIndex="2">
+            <entryLink import="true" name="Paragon blade" hidden="false" id="e54d-514d-f932-62d6" type="selectionEntry" targetId="1881-a2b5-fc58-4270" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b217-0155-9d3a-0a3f-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b217-0155-9d3a-0a3f-max" includeChildSelections="false"/>
@@ -311,13 +311,13 @@
             <entryLink import="true" name="Prime Benefits" hidden="false" id="0a96-7030-403c-90d5" type="selectionEntryGroup" targetId="5f88-9f8a-5fef-2a71"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Loyalist" hidden="false" id="cd9f-f07c-75da-d34c" type="selectionEntry" targetId="e1e1-a344-d3e2-0b91">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e987-95d0-6097-7e15-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e987-95d0-6097-7e15-max"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="92a6-47ce-0e3e-eac6" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Anathema Psykana" id="5472-e031-00e3-249e" hidden="false" type="profile" targetId="1d5f-1195-1a65-2b59"/>
+        <infoLink name="Talons of the Emperor" id="bcc7-8c64-e145-6fb1" hidden="false" type="profile" targetId="8974-94e5-d261-e4a2"/>
+        <infoLink name="Investigatus-Militant" id="2458-ae6e-e70b-b340" hidden="false" type="profile" targetId="cd3a-8312-e92d-33df"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Anathema Cadre" hidden="false" id="70fb-de8a-7d80-b232">
       <selectionEntries>
@@ -460,19 +460,15 @@
           </modifiers>
           <comment>Psyker, Malefic</comment>
         </infoLink>
+        <infoLink name="[Allegiance]" id="7147-cfea-f2d1-04a2" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Anathema Psykana" id="105c-1051-b8cc-db83" hidden="false" type="profile" targetId="1d5f-1195-1a65-2b59"/>
+        <infoLink name="Talons of the Emperor" id="73c9-d3aa-f561-5211" hidden="false" type="profile" targetId="8974-94e5-d261-e4a2"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Prime Benefits" hidden="false" id="796b-5ace-126e-12d0" type="selectionEntryGroup" targetId="5f88-9f8a-5fef-2a71"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="96f9-a333-4cb3-a013" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="0156-e731-4b42-9efe" type="selectionEntryGroup" targetId="5f88-9f8a-5fef-2a71"/>
           </entryLinks>
-        </entryLink>
-        <entryLink import="true" name="Loyalist" hidden="false" id="11d4-8b78-62ce-619a" type="selectionEntry" targetId="e1e1-a344-d3e2-0b91">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b63a-afb6-273b-f0e5-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b63a-afb6-273b-f0e5-max"/>
-          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -624,6 +620,9 @@
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <modifiers>
+                <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <infoLinks>
@@ -646,15 +645,12 @@
           <entryLinks>
             <entryLink import="true" name="Vratine heavy missiles" hidden="false" id="51ad-60ff-8054-9b14" type="selectionEntry" targetId="efef-9b82-8679-f9fa" sortIndex="2">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="57e0-f483-a664-05b0-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="57e0-f483-a664-05b0-max" includeChildSelections="false"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="57e0-f483-a664-05b0-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="57e0-f483-a664-05b0-max" includeChildSelections="false"/>
               </constraints>
-            </entryLink>
-            <entryLink import="true" name="Vratine heavy missiles" hidden="false" id="4410-23f1-83a8-6075" type="selectionEntry" targetId="efef-9b82-8679-f9fa" sortIndex="3">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="ea57-c26a-fb85-ec28-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ea57-c26a-fb85-ec28-max" includeChildSelections="false"/>
-              </constraints>
+              <modifiers>
+                <modifier type="prepend" value="Centreline Mounted" field="name"/>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntry>
@@ -672,18 +668,17 @@
             <entryLink import="true" name="Prime Benefits" hidden="false" id="d183-7341-474e-89a6" type="selectionEntryGroup" targetId="5f88-9f8a-5fef-2a71"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Loyalist" hidden="false" id="3ee5-fa60-06db-2f7f" type="selectionEntry" targetId="e1e1-a344-d3e2-0b91">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="698a-b7c5-d1ef-cee2-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="698a-b7c5-d1ef-cee2-max"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="4381-ed35-c3fa-a225" id="40ec-f7a6-2ef6-5229" primary="false" name="Loyalist"/>
         <categoryLink targetId="60e8-05b4-0f73-a45a" id="182d-fa57-1ff2-e13a" primary="false" name="Anathema Psykana"/>
         <categoryLink targetId="af7f-ce65-7fad-6d0e" id="47e5-2561-a7b8-b9d0" primary="false" name="Talons of the Emperor"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="e4a6-db5d-8162-d90c" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Anathema Psykana" id="3da0-bbc3-6bd3-05df" hidden="false" type="profile" targetId="1d5f-1195-1a65-2b59"/>
+        <infoLink name="Talons of the Emperor" id="23f7-1b12-9051-6e79" hidden="false" type="profile" targetId="8974-94e5-d261-e4a2"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Vratine heavy missiles" hidden="false" id="efef-9b82-8679-f9fa">
       <profiles>
@@ -751,4 +746,16 @@
       </categoryLinks>
     </entryLink>
   </entryLinks>
+  <sharedProfiles>
+    <profile name="Investigatus-Militant" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="cd3a-8312-e92d-33df">
+      <characteristics>
+        <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+      </characteristics>
+    </profile>
+    <profile name="Anathema Psykana" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="1d5f-1195-1a65-2b59">
+      <characteristics>
+        <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>
