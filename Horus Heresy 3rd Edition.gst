@@ -195,9 +195,9 @@
     <categoryEntry name="Rapid Sub-Type" id="a5c6-b359-cecb-e0b1" hidden="false">
       <rules>
         <rule name="Rapid Sub-Type" id="8872-e95d-dcd2-19d5" hidden="false">
-          <alias>- A Model with this Sub-Type may Rush - however the additional distance moved when Rushing is not determined by an Initiative Characteristic, but is always an additional 6&quot;.</alias>
-          <alias>- When Rushing, a Model with this Sub-Type may make Shooting Attacks, but all Shooting Attacks are made as Snap Shots. A Model with this Sub-Type may not make multiple Shooting Attacks in the same Turn as one where it Rushes.</alias>
-          <alias>- A Model with both this Sub-Type and the Transport Sub-Type, that the Controlling Player chooses to Rush in a Turn, may not Disembark any Models in the same Turn (unless required to make an Emergency Disembarkation by another Rule or Special Rule).</alias>
+          <description>- A Model with this Sub-Type may Rush - however the additional distance moved when Rushing is not determined by an Initiative Characteristic, but is always an additional 6&quot;.
+- When Rushing, a Model with this Sub-Type may make Shooting Attacks, but all Shooting Attacks are made as Snap Shots. A Model with this Sub-Type may not make multiple Shooting Attacks in the same Turn as one where it Rushes.
+- A Model with both this Sub-Type and the Transport Sub-Type, that the Controlling Player chooses to Rush in a Turn, may not Disembark any Models in the same Turn (unless required to make an Emergency Disembarkation by another Rule or Special Rule).</description>
         </rule>
       </rules>
     </categoryEntry>
