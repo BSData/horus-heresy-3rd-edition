@@ -8,7 +8,7 @@
     <catalogueLink type="catalogue" name="Wargear" id="fbac-7671-b08a-a225" targetId="fcc7-4319-bb04-2c25"/>
   </catalogueLinks>
   <sharedSelectionEntries>
-    <selectionEntry type="unit" import="true" name="Vindicare Assassin" hidden="false" id="04c4-a7e6-0ba9-1959" sortIndex="1">
+    <selectionEntry type="unit" import="true" name="Vindicare Assassin" hidden="false" id="04c4-a7e6-0ba9-1959" sortIndex="">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Vindicare Assassin" hidden="false" id="aaee-54f7-81f3-f154" sortIndex="1">
           <profiles>
@@ -161,7 +161,6 @@
             </infoLink>
             <infoLink name="Nemesis" id="184f-568d-fe72-66a3" hidden="false" type="rule" targetId="7aee-7482-4d18-afad"/>
             <infoLink name="Tactical Displacement" id="e145-a8f8-455d-5316" hidden="false" type="profile" targetId="d1b8-a73c-ec72-1da1"/>
-            <infoLink name="[Allegiance]" id="2124-202a-bf6f-25e6" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
           </infoLinks>
           <rules>
             <rule name="Deadshot" id="f324-cfdc-cdd0-eef3" hidden="false">
@@ -214,8 +213,13 @@ When any Wound Test is made for an attack with the Murderous (X) Special Rule, i
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="d88b-7daa-7040-d7fb" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Divisio Assassinorum" id="8cc0-19c8-30e7-4526" hidden="false" type="profile" targetId="ba48-d112-56ef-a783"/>
+        <infoLink name="Talons of the Emperor" id="8a1b-e4a7-231f-133c" hidden="false" type="profile" targetId="8974-94e5-d261-e4a2"/>
+      </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Eversor Assassin" hidden="false" id="338d-2f4d-f7c6-8f5b" sortIndex="2">
+    <selectionEntry type="unit" import="true" name="Eversor Assassin" hidden="false" id="338d-2f4d-f7c6-8f5b" sortIndex="">
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="125"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -243,6 +247,12 @@ When any Wound Test is made for an attack with the Murderous (X) Special Rule, i
                 <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">4+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Biological Overload" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="17a0-a596-3efd-5f50">
+              <characteristics>
+                <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit increases the Eversor Assassin’s Attacks Characteristic and the result of a Focus Roll made for it in a Challenge at the cost of suffering an automatic wound.</characteristic>
+                <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">If this Gambit is selected, the Controlling Player gains a +3 modifier to the Focus Roll in the following Focus Step, and this Model modifies its Attacks Characteristic by +3 for the duration of the following Strike Step. However, for each unmodified Hit Test result of a 1 rolled in the following Strike Step for this Model’s Attacks, the Model suffers a wound, with an AP of 2 and a Damage of 1, allocated at the end of the Strike Step</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -351,14 +361,9 @@ When any Wound Test is made for an attack with the Murderous (X) Special Rule, i
           </entryLinks>
           <rules>
             <rule name="Frenzon Rage" id="b383-d476-9d55-286c" hidden="false">
-              <description>&quot;This Gambit increases the Eversor Assassin’s Attacks Characteristic and the result of a Focus Roll made for it in a Challenge at the cost of suffering an automatic wound.&quot;
-
-
-While a Model with this Special Rule is engaged in a Challenge, its Controlling Player must select the following Gambit – any Special Rule or Gambit that would stop the Controlling Player from selecting this Gambit is ignored 
+              <description>While a Model with this Special Rule is engaged in a Challenge, its Controlling Player must select the Biological Overload Gambit – any Special Rule or Gambit that would stop the Controlling Player from selecting this Gambit is ignored
 and has no effect:
-
-
-Biological Overload: If this Gambit is selected, the Controlling Player gains a +3 modifier to the Focus Roll in the following Focus Step, and this Model modifies its Attacks Characteristic by +3 for the duration of the following Strike Step. However, for each unmodified Hit Test result of a 1 rolled in the following Strike Step for this Model’s Attacks, the Model suffers a wound, with an AP of 2 and a Damage of 1, allocated at the end of the Strike Step</description>
+</description>
             </rule>
           </rules>
           <infoLinks>
@@ -395,7 +400,6 @@ Biological Overload: If this Gambit is selected, the Controlling Player gains a 
               <comment>5+</comment>
             </infoLink>
             <infoLink name="Nemesis" id="4d6b-5fa2-756c-c1c0" hidden="false" type="rule" targetId="7aee-7482-4d18-afad"/>
-            <infoLink name="[Allegiance]" id="51e9-4e87-c68e-fe84" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
             <infoLink name="Tactical Displacement" id="6351-fe9b-93ac-de72" hidden="false" type="profile" targetId="d1b8-a73c-ec72-1da1"/>
           </infoLinks>
         </selectionEntry>
@@ -414,6 +418,11 @@ Biological Overload: If this Gambit is selected, the Controlling Player gains a 
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="c0c9-d177-ff10-c94a" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Divisio Assassinorum" id="eaa4-c8e1-6ddb-d822" hidden="false" type="profile" targetId="ba48-d112-56ef-a783"/>
+        <infoLink name="Talons of the Emperor" id="885f-2896-447d-deec" hidden="false" type="profile" targetId="8974-94e5-d261-e4a2"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bolt pistol (Primary)" hidden="false" id="e8cf-c87f-a5e9-4a7c">
       <profiles>
@@ -434,13 +443,15 @@ Biological Overload: If this Gambit is selected, the Controlling Player gains a 
         <infoLink name="Combi" id="7f1b-98a8-2add-3eba" hidden="false" type="rule" targetId="26a0-aaea-5b18-4de6"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Callidus Assassin" hidden="false" id="29bc-487d-42cb-b139" sortIndex="3">
+    <selectionEntry type="unit" import="true" name="Callidus Assassin" hidden="false" id="29bc-487d-42cb-b139" sortIndex="">
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="100"/>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="125"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+        <cost name="Combined Warlord and Lord of War Points" typeId="14bd-cad0-cd3d-8b23" value="0"/>
+        <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Callidus Assassin" hidden="false" id="4c14-1c3e-943f-fcb3">
@@ -481,8 +492,8 @@ Biological Overload: If this Gambit is selected, the Controlling Player gains a 
                   <characteristics>
                     <characteristic name="R" typeId="cdb0-8654-6840-1037">Template</characteristic>
                     <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
-                    <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">4</characteristic>
-                    <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+                    <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">3</characteristic>
+                    <characteristic name="AP" typeId="7a23-0248-2b94-5951">3</characteristic>
                     <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
                     <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Template, Pinning (3)</characteristic>
                     <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Assault</characteristic>
@@ -627,7 +638,6 @@ The first time in a Battle each Model with this Special Rule has a Charge declar
               <comment>5+</comment>
             </infoLink>
             <infoLink name="Nemesis" id="8faf-9e30-290d-5ba1" hidden="false" type="rule" targetId="7aee-7482-4d18-afad"/>
-            <infoLink name="[Allegiance]" id="fac5-136b-8eb6-7e90" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
             <infoLink name="Tactical Displacement" id="ddba-7d84-62f3-c0f4" hidden="false" type="profile" targetId="d1b8-a73c-ec72-1da1"/>
           </infoLinks>
         </selectionEntry>
@@ -646,8 +656,13 @@ The first time in a Battle each Model with this Special Rule has a Charge declar
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="a34a-5b4b-4fd0-2535" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Divisio Assassinorum" id="73c0-1f39-e701-12f6" hidden="false" type="profile" targetId="ba48-d112-56ef-a783"/>
+        <infoLink name="Talons of the Emperor" id="a522-e1d2-7d0d-cb80" hidden="false" type="profile" targetId="8974-94e5-d261-e4a2"/>
+      </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Culexus Assassin" hidden="false" id="e43f-df95-094c-2e7d" sortIndex="4">
+    <selectionEntry type="unit" import="true" name="Culexus Assassin" hidden="false" id="e43f-df95-094c-2e7d" sortIndex="">
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="140"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -771,7 +786,6 @@ The first time in a Battle each Model with this Special Rule has a Charge declar
                 <modifier type="set" value="Fear (1)" field="name"/>
               </modifiers>
             </infoLink>
-            <infoLink name="Firestorm" id="5f8b-9e66-4be4-fe48" hidden="false" type="rule" targetId="3ed1-c5b3-a98d-1b12"/>
             <infoLink name="Heedless" id="c034-9007-3f44-4ba6" hidden="false" type="rule" targetId="a3f3-72c6-7e01-6cab"/>
             <infoLink name="Infiltrate (X)" id="cdb7-a982-ca10-923f" hidden="false" type="rule" targetId="f330-254e-1a98-798a">
               <modifiers>
@@ -787,8 +801,13 @@ The first time in a Battle each Model with this Special Rule has a Charge declar
               <comment>5+</comment>
             </infoLink>
             <infoLink name="Nemesis" id="e98f-25e5-fb18-7ef3" hidden="false" type="rule" targetId="7aee-7482-4d18-afad"/>
-            <infoLink name="[Allegiance]" id="3a74-b161-ba67-2254" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
             <infoLink name="Tactical Displacement" id="5264-53e7-eff9-615f" hidden="false" type="profile" targetId="d1b8-a73c-ec72-1da1"/>
+            <infoLink name="Hatred (X)" id="0243-c08f-9c03-afb7" hidden="false" type="rule" targetId="0612-95d5-46ae-c5ee">
+              <comment>Psyker</comment>
+              <modifiers>
+                <modifier type="replace" value="Psyker" field="name" arg="X"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -806,8 +825,13 @@ The first time in a Battle each Model with this Special Rule has a Charge declar
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="fc94-4421-b386-af71" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Divisio Assassinorum" id="6abe-4139-b614-2eeb" hidden="false" type="profile" targetId="ba48-d112-56ef-a783"/>
+        <infoLink name="Talons of the Emperor" id="2f5f-5d98-c5f1-5719" hidden="false" type="profile" targetId="8974-94e5-d261-e4a2"/>
+      </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Adamus Assassin" hidden="false" id="839f-c075-ca71-5c18" sortIndex="5">
+    <selectionEntry type="unit" import="true" name="Adamus Assassin" hidden="false" id="839f-c075-ca71-5c18" sortIndex="">
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="125"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -839,6 +863,12 @@ The first time in a Battle each Model with this Special Rule has a Charge declar
                 <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">4+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Mirror-form" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="4096-8485-737f-2790">
+              <characteristics>
+                <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows an Adamus Assassin to Hit on a fixed Target Number in a Challenge and fight in a Strike Step in which it loses its last wound.</characteristic>
+                <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">If this Gambit is selected, Hit Tests made for this Model in the following Strike Step are always successful on a roll of 4+, regardless of the opposing Model’s Weapon Skill Characteristic. Additionally, if the Controlling Player does not have Challenge Advantage in the following Strike Step and this Model’s Wounds Characteristic is reduced to 0 or less, the Controlling Player may still make attacks for this Model in that Strike Step before it is removed as a Casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -960,14 +990,9 @@ The first time in a Battle each Model with this Special Rule has a Charge declar
           </selectionEntries>
           <rules>
             <rule name="Death&apos;s Artisan" id="b692-805e-263b-fb42" hidden="false">
-              <description>&quot;This Gambit allows an Adamus Assassin to Hit on a fixed Target Number in a Challenge and fight in a Strike Step in which it loses its last Wound.&quot;
-
-
-While a Model with this Special Rule is engaged in a Challenge, its Controlling Player must select the following Gambit – any Special Rule or Gambit that would stop the Controlling Player from selecting this Gambit is ignored 
+              <description>While a Model with this Special Rule is engaged in a Challenge, its Controlling Player must select the Mirror-form Gambit – any Special Rule or Gambit that would stop the Controlling Player from selecting this Gambit is ignored
 and has no effect:
-
-
-Mirror-Form: If this Gambit is selected, Hit Tests made for this Model in the following Strike Step are always successful on a roll of 4+, regardless of the opposing Model’s Weapon Skill Characteristic. Additionally, if the Controlling Player does not have Challenge Advantage in the following Strike Step and this Model’s Wounds Characteristic is reduced to 0 or less, the Controlling Player may still make attacks for this Model in that Strike Step before it is removed as a Casualty.</description>
+</description>
             </rule>
           </rules>
           <infoLinks>
@@ -986,7 +1011,6 @@ Mirror-Form: If this Gambit is selected, Hit Tests made for this Model in the fo
               <comment>5+</comment>
             </infoLink>
             <infoLink name="Nemesis" id="6dcc-a41d-ec50-e80f" hidden="false" type="rule" targetId="7aee-7482-4d18-afad"/>
-            <infoLink name="[Allegiance]" id="d1dd-58df-807d-4f4e" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
             <infoLink name="Tactical Displacement" id="c671-1686-6114-60b8" hidden="false" type="profile" targetId="d1b8-a73c-ec72-1da1"/>
           </infoLinks>
         </selectionEntry>
@@ -1005,8 +1029,13 @@ Mirror-Form: If this Gambit is selected, Hit Tests made for this Model in the fo
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Divisio Assassinorum" id="06c9-8c9c-294b-e32b" hidden="false" type="profile" targetId="ba48-d112-56ef-a783"/>
+        <infoLink name="Talons of the Emperor" id="09b6-e4c9-0e48-339e" hidden="false" type="profile" targetId="8974-94e5-d261-e4a2"/>
+        <infoLink name="[Allegiance]" id="d1dd-58df-807d-4f4e" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+      </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Venenum Assassin" hidden="false" id="3858-f098-b947-3b91" sortIndex="6">
+    <selectionEntry type="unit" import="true" name="Venenum Assassin" hidden="false" id="3858-f098-b947-3b91" sortIndex="">
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="125"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -1015,7 +1044,7 @@ Mirror-Form: If this Gambit is selected, Hit Tests made for this Model in the fo
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Venenum Assassin" hidden="false" id="6e03-b2a8-ff2b-3d26">
+        <selectionEntry type="model" import="true" name="Venenum Assassin" hidden="false" id="6e03-b2a8-ff2b-3d26" sortIndex="1">
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="3d8c-eff5-c291-0f4e" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="5a95-e564-96b2-8dc9" id="7d1c-2df6-dd4a-65c9" primary="false" name="Champion Model Sub-Type"/>
@@ -1062,7 +1091,6 @@ Mirror-Form: If this Gambit is selected, Hit Tests made for this Model in the fo
               </modifiers>
               <comment>5+</comment>
             </infoLink>
-            <infoLink name="[Allegiance]" id="2aad-62cd-a19a-d58f" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
             <infoLink name="Tactical Displacement" id="49dc-a33c-3b6f-a4b6" hidden="false" type="profile" targetId="d1b8-a73c-ec72-1da1"/>
           </infoLinks>
           <selectionEntries>
@@ -1212,8 +1240,13 @@ The effects of any variant of the Phage (X) and/or Poisoned (X) Special Rules ar
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="d8dd-0768-a895-db6d" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Divisio Assassinorum" id="4381-9766-22dd-5aaf" hidden="false" type="profile" targetId="ba48-d112-56ef-a783"/>
+        <infoLink name="Talons of the Emperor" id="05e1-919e-4047-a850" hidden="false" type="profile" targetId="8974-94e5-d261-e4a2"/>
+      </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Vanus Infocyte Assassin" hidden="false" id="ac7a-3b38-f106-d2bc" sortIndex="7">
+    <selectionEntry type="unit" import="true" name="Vanus Infocyte Assassin" hidden="false" id="ac7a-3b38-f106-d2bc" sortIndex="">
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="105"/>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -1223,7 +1256,7 @@ The effects of any variant of the Phage (X) and/or Poisoned (X) Special Rules ar
         <cost name="Combined Warlord and Lord of War Points" typeId="14bd-cad0-cd3d-8b23" value="0"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Vanus Infocyte Assassin" hidden="false" id="2bfd-2f6a-5c52-81e0">
+        <selectionEntry type="model" import="true" name="Vanus Infocyte Assassin" hidden="false" id="2bfd-2f6a-5c52-81e0" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7859-949c-a62e-c482-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7859-949c-a62e-c482-max"/>
@@ -1244,7 +1277,6 @@ The effects of any variant of the Phage (X) and/or Poisoned (X) Special Rules ar
               </modifiers>
               <comment>5+</comment>
             </infoLink>
-            <infoLink name="[Allegiance]" id="7a3f-dc4c-f015-5e03" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
             <infoLink name="Tactical Displacement" id="be28-eb02-e38e-4837" hidden="false" type="profile" targetId="d1b8-a73c-ec72-1da1"/>
           </infoLinks>
           <profiles>
@@ -1380,6 +1412,11 @@ The effects of any variant of the Phage (X) and/or Poisoned (X) Special Rules ar
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="bdf1-fcd9-7983-3e03" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Divisio Assassinorum" id="171c-86c9-d24d-a28f" hidden="false" type="profile" targetId="ba48-d112-56ef-a783"/>
+        <infoLink name="Talons of the Emperor" id="e3a4-6892-2382-6452" hidden="false" type="profile" targetId="8974-94e5-d261-e4a2"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
@@ -1406,6 +1443,11 @@ When a Unit that includes only Models with this Special Rule is the target of a 
         <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Shooting Attack triggered the Advanced Reaction. The Reacting Unit is always the Unit that was the target of the Shooting Attack that triggered the Advanced Reaction.</characteristic>
         <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. All Models in the Reacting Unit may be moved by up to a number of inches equal to their Intelligence Characteristic, but may not end the move within 1&quot; of any enemy Models.
 2. Once this move is resolved, if no Model within the Reacting Unit is determined to be within Line of Sight and/or Range of any Model in the Target Unit, the Active Player may select an alternative target for that Attacking Unit during the current Shooting Phase.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Divisio Assassinorum" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="ba48-d112-56ef-a783">
+      <characteristics>
+        <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
       </characteristics>
     </profile>
   </sharedProfiles>
