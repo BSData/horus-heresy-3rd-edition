@@ -1844,8 +1844,8 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Sentinel Guard" hidden="false" id="f516-c585-c15f-8357" sortIndex="1">
           <constraints>
-            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="6e2c-e032-97ea-c1d6" includeChildSelections="false"/>
-            <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="cb9a-eb25-4971-4649" includeChildSelections="false"/>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="6e2c-e032-97ea-c1d6" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="cb9a-eb25-4971-4649" includeChildSelections="false" automatic="true"/>
           </constraints>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="40"/>
@@ -1879,21 +1879,6 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
           </entryLinks>
           <infoLinks>
             <infoLink name="Shield" id="9744-64be-e57a-c153" hidden="false" type="profile" targetId="1af7-07d5-7558-0b64"/>
-            <infoLink name="Eternal Warrior (X)" id="185f-c37a-1a94-bcb7" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
-              <modifiers>
-                <modifier type="set" value="Eternal Warrior (1)" field="name">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="680b-53b4-4f4b-551f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="Eternal Warrior (2)" field="name">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="680b-53b4-4f4b-551f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <comment>1</comment>
-            </infoLink>
             <infoLink name="Shieldwall!" id="5294-7f11-f91e-e87c" hidden="false" type="profile" targetId="e70e-0849-1ca6-81d6"/>
           </infoLinks>
           <profiles>
@@ -1936,14 +1921,14 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
             </profile>
           </profiles>
           <modifiers>
-            <modifier type="decrement" value="1" field="6e2c-e032-97ea-c1d6">
+            <modifier type="set" value="5" field="6e2c-e032-97ea-c1d6">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="e229-4062-c85b-655c" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e229-4062-c85b-655c" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
-            <modifier type="decrement" value="1" field="cb9a-eb25-4971-4649">
+            <modifier type="set" value="11" field="cb9a-eb25-4971-4649">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="unit" childId="e229-4062-c85b-655c" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e229-4062-c85b-655c" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2015,23 +2000,6 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
             <cost name="Combined Warlord and Lord of War Points" typeId="14bd-cad0-cd3d-8b23" value="0"/>
             <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Eternal Warrior (X)" id="0f9e-3355-8b66-cd7f" hidden="false" type="rule" targetId="15b4-9e4a-f361-c5a3">
-              <modifiers>
-                <modifier type="set" value="Eternal Warrior (1)" field="name">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="unit" childId="680b-53b4-4f4b-551f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="Eternal Warrior (2)" field="name">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="680b-53b4-4f4b-551f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <comment>1</comment>
-            </infoLink>
-          </infoLinks>
           <categoryLinks>
             <categoryLink targetId="594d-fa82-13cb-a345" id="a2fe-1ee7-1b43-435f" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
