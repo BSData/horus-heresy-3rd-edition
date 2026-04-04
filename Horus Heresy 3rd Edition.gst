@@ -28477,6 +28477,10 @@
         <forceEntryLink name="Apex - Linebreaker Echelon (Saturnine)" id="49ca-8d43-453f-37d2" hidden="false" targetId="aafc-1a40-350a-5434" type="forceEntry"/>
         <forceEntryLink name="Apex - Linebreaker Echelon (Cataphractii)" id="421c-09a2-16f2-977c" hidden="false" targetId="d7b3-5d00-8524-73fa" type="forceEntry"/>
         <forceEntryLink name="Apex - Linebreaker Echelon (Tartaros)" id="62a7-bbe8-4b2c-7e04" hidden="false" targetId="dd35-dc84-98ac-237d" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Hykanatoi Convocation" id="d5fb-55db-e9db-d1af" hidden="false" targetId="7fdf-9f23-ceee-41cc" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Tharanatoi Convocation" id="685f-cc07-eb1c-8ef5" hidden="false" targetId="6da2-db78-0174-d0b1" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Ephoroi Convocation" id="a711-638a-89bb-5643" hidden="false" targetId="f226-fdc7-a249-e980" type="forceEntry"/>
+        <forceEntryLink name="Auxiliary - Kataphractoi Convocation" id="9ce1-554e-0358-3d4e" hidden="false" targetId="750e-bcb0-0a41-3731" type="forceEntry"/>
       </forceEntryLinks>
       <categoryLinks>
         <categoryLink name="Army Configuration" hidden="false" id="5c8b-9e7e-b8c7-00b4" targetId="abfa-86ab-1726-077a"/>
