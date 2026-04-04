@@ -6030,6 +6030,7 @@
                 <condition type="atLeast" value="1" field="selections" scope="unit" childId="2c90-1d52-7075-59d3" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="add" value="afa3-a012-61dd-ae9c" field="category"/>
           </modifiers>
           <entryLinks>
             <entryLink import="true" name="Rad grenades" hidden="true" id="b305-1d2a-8c47-8153" type="selectionEntry" targetId="cd5f-1eff-df69-6bd2">
@@ -6157,7 +6158,7 @@
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="afa3-a012-61dd-ae9c" shared="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="parent" childId="afa3-a012-61dd-ae9c" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="roster" childId="7665-bd37-c552-1876" shared="true" includeChildSelections="true" includeChildForces="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
                       </conditions>
@@ -6321,6 +6322,7 @@
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="322f-1206-4e6e-b82b" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="add" value="afa3-a012-61dd-ae9c" field="category"/>
           </modifiers>
           <constraints>
             <constraint type="min" value="20" field="selections" scope="parent" shared="true" id="8a1b-7fa4-7514-8e4c" includeChildSelections="false"/>
@@ -6331,9 +6333,6 @@
       <modifiers>
         <modifier type="add" value="3760-2dfb-561a-b603" field="category"/>
       </modifiers>
-      <categoryLinks>
-        <categoryLink targetId="afa3-a012-61dd-ae9c" id="533e-835e-03d8-f3d1" primary="false" name="Expendable"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry name="Militia Medicae" type="unit" id="3955-c7cf-4661-ac25" page="25" publicationId="f5e5-c199-d3d4-ccf6">
       <costs>
@@ -10266,7 +10265,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="afa3-a012-61dd-ae9c" shared="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="afa3-a012-61dd-ae9c" shared="true" includeChildSelections="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="roster" childId="7665-bd37-c552-1876" shared="true" includeChildSelections="true" includeChildForces="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="parent" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
                           </conditions>
