@@ -28395,6 +28395,9 @@
           <repeats>
             <repeat value="2" repeats="1" field="limit::9893-c379-920b-8982" scope="roster" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
+          <conditions>
+            <condition type="notEqualTo" value="-1" field="limit::9893-c379-920b-8982" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifier>
         <modifier type="increment" value="1" field="3e8e-05ee-be52-12d6">
           <repeats>
@@ -28416,6 +28419,14 @@
           <repeats>
             <repeat value="1" repeats="1" field="selections" scope="force" childId="3553-322a-f1b2-5257" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="3fef-ac67-de89-249f">
+          <repeats>
+            <repeat value="2" repeats="1" field="9893-c379-920b-8982" scope="roster" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true" childId="any" childName="any"/>
+          </repeats>
+          <conditions>
+            <condition type="equalTo" value="-1" field="limit::9893-c379-920b-8982" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
