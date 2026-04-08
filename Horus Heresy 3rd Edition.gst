@@ -532,7 +532,7 @@
     </categoryEntry>
     <categoryEntry name="Archimandrite" id="3252-003d-1181-0f99" hidden="false"/>
     <categoryEntry name="Cybernetica" id="df10-4634-c1aa-f6e0" hidden="false"/>
-    <categoryEntry name="Heterodoxists" id="a660-a2a5-eef3-2fbc" hidden="false"/>
+    <categoryEntry name="Heterodox" id="a660-a2a5-eef3-2fbc" hidden="false"/>
     <categoryEntry name="Lacrymaerta" id="8268-aa48-f4dc-0506" hidden="false"/>
     <categoryEntry name="Macrotek" id="1ec3-1433-658a-f04e" hidden="false"/>
     <categoryEntry name="Malagra" id="eba5-3e47-aa06-65fe" hidden="false"/>
