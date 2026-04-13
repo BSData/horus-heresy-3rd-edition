@@ -10441,6 +10441,14 @@ Although included in an Army as a Unit that includes multiple Models, each Model
             <categoryLink targetId="b980-187b-2b17-d635" id="926d-8693-efe3-b43f" primary="false" name="Unique Model Sub-Type"/>
             <categoryLink targetId="af7d-af64-6b7d-da9d" id="0cf6-111d-e679-edc2" primary="false" name="Specialist Model Sub-Type"/>
           </categoryLinks>
+          <rules>
+            <rule name="Triage" id="8fb4-350b-c118-ef76" hidden="false">
+              <description>&quot;Models with this Special Rule can give a version of Expendable (X) to Solar Auxilia Units.&quot;
+
+
+While a Unit entirely composed of Models with the Solar Auxilia Trait includes any Models with this Special Rule, every Model in that Unit has the Expendable (X) Special Rule where the value of X is equal to the number of Models with the Triage Special Rule in the Unit.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Auto-gurney" hidden="false" id="9bff-5cce-ee7f-ce8f" sortIndex="2">
           <profiles>
@@ -10473,6 +10481,17 @@ Although included in an Army as a Unit that includes multiple Models, each Model
             <categoryLink targetId="594d-fa82-13cb-a345" id="775b-759d-5260-2768" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="af7d-af64-6b7d-da9d" id="8bf0-9b06-5a89-92ed" primary="false" name="Specialist Model Sub-Type"/>
           </categoryLinks>
+          <rules>
+            <rule name="Surgical Suite" id="ee4b-80e3-cf3e-7f1d" hidden="false">
+              <description>&quot;A Model with this Special Rule allows Recovery Tests to be made in the Morale Sub-Phase, but is automatically Removed as a Casualty if it is ever the only Model in a Unit.&quot;
+
+
+If a Unit that includes any Models with the Surgical Suite Special Rule is not Locked in Combat, before the Controlling Player makes a Characteristic Check for that Unit during the Morale Sub-Phase, they can make a Recovery Test for that Unit. If that Recovery Test is successful, that Player can subtract -2 from the result of the Characteristic Check. Only one Recovery Test can be made for each Unit in this way during each Morale Sub-Phase. 
+
+
+Additionally, if a Model with this Special Rule is ever the only remaining Model in a Unit, it is immediately Removed as a Casualty.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Aevos Jovan" hidden="false" id="a8d2-dc67-295d-2e26" sortIndex="1">
           <profiles>
@@ -10540,6 +10559,14 @@ Although included in an Army as a Unit that includes multiple Models, each Model
             <categoryLink targetId="af7d-af64-6b7d-da9d" id="ebe6-dd82-a76f-7306" primary="false" name="Specialist Model Sub-Type"/>
             <categoryLink targetId="594d-fa82-13cb-a345" id="c56c-fbf5-0299-bb2f" primary="false" name="Infantry Model Type"/>
           </categoryLinks>
+          <infoLinks>
+            <infoLink name="Medic (X)" id="8167-4ec6-e5bc-d485" hidden="false" type="rule" targetId="93b3-c23d-7263-e013">
+              <comment>4+</comment>
+              <modifiers>
+                <modifier type="replace" value="4+" field="name" arg="X"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -10571,23 +10598,6 @@ Although included in an Army as a Unit that includes multiple Models, each Model
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule name="Surgical Suite" id="ee4b-80e3-cf3e-7f1d" hidden="false">
-          <description>&quot;A Model with this Special Rule allows Recovery Tests to be made in the Morale Sub-Phase, but is automatically Removed as a Casualty if it is ever the only Model in a Unit.&quot;
-
-
-If a Unit that includes any Models with the Surgical Suite Special Rule is not Locked in Combat, before the Controlling Player makes a Characteristic Check for that Unit during the Morale Sub-Phase, they can make a Recovery Test for that Unit. If that Recovery Test is successful, that Player can subtract -2 from the result of the Characteristic Check. Only one Recovery Test can be made for each Unit in this way during each Morale Sub-Phase. 
-
-
-Additionally, if a Model with this Special Rule is ever the only remaining Model in a Unit, it is immediately Removed as a Casualty.</description>
-        </rule>
-        <rule name="Triage" id="8fb4-350b-c118-ef76" hidden="false">
-          <description>&quot;Models with this Special Rule can give a version of Expendable (X) to Solar Auxilia Units.&quot;
-
-
-While a Unit entirely composed of Models with the Solar Auxilia Trait includes any Models with this Special Rule, every Model in that Unit has the Expendable (X) Special Rule where the value of X is equal to the number of Models with the Triage Special Rule in the Unit.</description>
-        </rule>
-      </rules>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
