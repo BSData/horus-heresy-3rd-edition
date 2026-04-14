@@ -28393,7 +28393,7 @@
         </modifier>
         <modifier type="increment" value="1" field="3fef-ac67-de89-249f">
           <repeats>
-            <repeat value="2" repeats="1" field="limit::9893-c379-920b-8982" scope="roster" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+            <repeat value="2" repeats="1" field="limit::9893-c379-920b-8982" scope="roster" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true" childId="any" childName="any"/>
           </repeats>
           <conditions>
             <condition type="notEqualTo" value="-1" field="limit::9893-c379-920b-8982" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
