@@ -3717,6 +3717,13 @@ Special Rule and modify the value of X on any version of the Auto-repair (X) Spe
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af10-162a-b75c-f658"/>
       </constraints>
       <comment>Need to sort out hidden rules for prime choices. Can&apos;t figure out how to reference the correct selection.</comment>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="roster" childId="9c71-cdfc-f4ae-07cb" shared="true" includeChildSelections="true" includeChildForces="true" childName="Knight Households Primary Detachment"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup name="Questoris Advanced Reactions" id="3f02-d062-0d02-f83d" hidden="false">
       <selectionEntries>
