@@ -26954,6 +26954,11 @@
             <repeat value="1" repeats="1" field="selections" scope="force" childId="a12c-94d0-efed-ea60" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
+        <modifier type="increment" value="1" field="15b0-a8ce-6469-929a">
+          <repeats>
+            <repeat value="1" repeats="1" field="9893-c379-920b-8982" scope="force" shared="true" roundUp="false" includeChildSelections="true" childId="d70e-7c57-6788-4adc" childName="Apex - Leviathan Armoured Fist" includeChildForces="true"/>
+          </repeats>
+        </modifier>
       </modifiers>
     </forceEntry>
     <forceEntry name="Allied Detachment and its Auxiliary" id="256b-b8a8-017a-75e9" hidden="false" childForcesLabel="Detachments" sortIndex="3">
