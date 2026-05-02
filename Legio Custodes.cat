@@ -4032,6 +4032,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
     <catalogueLink type="catalogue" name="Traits" id="7271-ea78-f26a-04f4" targetId="df17-7a05-0826-6e22"/>
     <catalogueLink type="catalogue" name="Assets" id="9599-c890-d77f-a83f" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Divisio Assassinorum" id="b19d-6c81-9bb5-b3fc" targetId="258b-97fb-2366-7344" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Mechanicum" id="1623-0818-951a-c7d3" targetId="2f57-6e9d-8a7b-5c2e"/>
   </catalogueLinks>
   <sharedRules>
     <rule name="Master of the Golden Legion" id="e26b-8a00-4b2f-112a" hidden="false">
@@ -4141,6 +4142,96 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
       <categoryLinks>
         <categoryLink targetId="345f-9ba6-9b02-ed5c" id="1a86-5bab-51ae-e1f0" primary="true" name="Support"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Castellax Battle Maniple" hidden="false" id="eedc-c9be-7a66-50f6" type="selectionEntry" targetId="e8d6-2ba5-d10d-d617">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+            <modifier type="set-primary" value="61eb-11e2-1592-3161" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Castellax Destructor Maniple" hidden="false" id="3b72-ccd0-67bb-7805" type="selectionEntry" targetId="112f-1168-d07c-7f8f">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+            <modifier type="set-primary" value="d49e-048b-a8e2-ba52" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Domitar Battle Maniple" hidden="false" id="4743-afcc-1761-4ff9" type="selectionEntry" targetId="cefd-9aca-871d-3263">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+            <modifier type="set-primary" value="826c-7b05-0f62-8b16" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Thanatar Siege Maniple" hidden="false" id="84ca-e530-4214-bcf8" type="selectionEntry" targetId="3833-2f09-7ec7-b5f5">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+            <modifier type="set-primary" value="64d7-855f-726b-803f" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Vorax Attack Maniple" hidden="false" id="d610-c7a0-2f93-94d7" type="selectionEntry" targetId="de2e-f9b5-abe6-b8b5">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+            <modifier type="set-primary" value="0fb1-2125-2a33-b094" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Vultarax Stratos Squadron" hidden="false" id="464b-5d15-8554-04a5" type="selectionEntry" targetId="710e-f1ea-0061-d3cb">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+            <modifier type="set-primary" value="7db9-74d1-6ba1-061e" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntryGroups>
