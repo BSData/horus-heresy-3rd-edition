@@ -3532,29 +3532,38 @@ Any Model with the Armour Tercio Trait gains the Auto-repair (4+) Special Rule a
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51cc-6736-44a2-d44f"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Bulky (X)" id="9b9a-542e-db2d-59ac" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25"/>
+                <infoLink name="Bulky (X)" id="9b9a-542e-db2d-59ac" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+                  <modifiers>
+                    <modifier type="replace" value="4" field="name" arg="X"/>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Exchange multi-laser array for:" id="b214-50d6-1702-41cf" hidden="false" defaultSelectionEntryId="c9a5-e5ea-cda1-6071">
+                <selectionEntryGroup name="Exchange Gravis multi-laser array for:" id="b214-50d6-1702-41cf" hidden="false" defaultSelectionEntryId="c9a5-e5ea-cda1-6071">
                   <entryLinks>
                     <entryLink import="true" name="Gravis heavy bolter battery" hidden="false" id="ce8a-7c70-c777-6450" type="selectionEntry" targetId="5c0e-33c5-afb1-fed5" sortIndex="2">
-                      <modifiers>
-                        <modifier type="set" value="5" field="9893-c379-920b-8982"/>
-                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
                     </entryLink>
                     <entryLink import="true" name="Laser destroyer" hidden="false" id="6d71-363a-738c-4a1a" type="selectionEntry" targetId="e160-234f-e94c-bab6" sortIndex="3">
-                      <modifiers>
-                        <modifier type="set" value="25" field="9893-c379-920b-8982"/>
-                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+                      </costs>
                     </entryLink>
                     <entryLink import="true" name="Gravis multi-laser array" hidden="false" id="c9a5-e5ea-cda1-6071" type="selectionEntry" targetId="c8d4-5315-fcd1-1794" sortIndex="1"/>
+                    <entryLink import="true" name="Mole mortar" hidden="false" id="78d4-ca0d-59f7-610e" type="selectionEntry" targetId="9e9c-1b29-e830-f697" sortIndex="4">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="47fa-bfd2-430f-fd8b"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="368a-681e-b036-63c9"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Quad launcher" hidden="false" id="cd05-603e-9f69-0a15" sortIndex="4">
+                    <selectionEntry type="upgrade" import="true" name="Quad launcher" hidden="false" id="cd05-603e-9f69-0a15" sortIndex="5">
                       <profiles>
                         <profile name="Quad launcher (Frag)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="ebe0-8634-b411-0b08" noindex="false">
                           <characteristics>
@@ -3781,31 +3790,40 @@ Any Model with the Armour Tercio Trait gains the Auto-repair (4+) Special Rule a
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3c3-3cca-eb61-c8e1"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Bulky (X)" id="d876-a508-aaa0-882a" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25"/>
+                <infoLink name="Bulky (X)" id="d876-a508-aaa0-882a" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+                  <modifiers>
+                    <modifier type="replace" value="4" field="name" arg="X"/>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Exchange multi-laser array for:" id="7180-1d1b-d66e-dc91" hidden="false" defaultSelectionEntryId="c9a5-e5ea-cda1-6071">
+                <selectionEntryGroup name="Exchange Gravis multi-laser array for:" id="f289-21f8-a104-5b27" hidden="false" defaultSelectionEntryId="c9a5-e5ea-cda1-6071">
                   <entryLinks>
-                    <entryLink import="true" name="Gravis heavy bolter battery" hidden="false" id="c369-031c-7d4c-7cd8" type="selectionEntry" targetId="5c0e-33c5-afb1-fed5" sortIndex="2">
-                      <modifiers>
-                        <modifier type="set" value="5" field="9893-c379-920b-8982"/>
-                      </modifiers>
+                    <entryLink import="true" name="Gravis heavy bolter battery" hidden="false" id="0c61-ec73-e74e-2c7d" type="selectionEntry" targetId="5c0e-33c5-afb1-fed5" sortIndex="2">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
                     </entryLink>
-                    <entryLink import="true" name="Laser destroyer" hidden="false" id="3f79-f79d-d6fd-aaa0" type="selectionEntry" targetId="e160-234f-e94c-bab6" sortIndex="3">
-                      <modifiers>
-                        <modifier type="set" value="25" field="9893-c379-920b-8982"/>
-                      </modifiers>
+                    <entryLink import="true" name="Laser destroyer" hidden="false" id="8a75-12a8-9b9f-d465" type="selectionEntry" targetId="e160-234f-e94c-bab6" sortIndex="3">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+                      </costs>
                     </entryLink>
-                    <entryLink import="true" name="Gravis multi-laser array" hidden="false" id="2f4a-7fb5-32b8-0666" type="selectionEntry" targetId="c8d4-5315-fcd1-1794" sortIndex="1"/>
+                    <entryLink import="true" name="Gravis multi-laser array" hidden="false" id="3059-6298-1745-d9bc" type="selectionEntry" targetId="c8d4-5315-fcd1-1794" sortIndex="1"/>
+                    <entryLink import="true" name="Mole mortar" hidden="false" id="b074-bc3c-6b10-51c9" type="selectionEntry" targetId="9e9c-1b29-e830-f697" sortIndex="4">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="51de-4aeb-97de-08fb"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40b2-f6c9-fb3c-ac62"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b86f-595b-0ed5-d223"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc95-1734-da60-f85f"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Quad launcher" hidden="false" id="c9de-5955-cd25-3b04" sortIndex="4">
+                    <selectionEntry type="upgrade" import="true" name="Quad launcher" hidden="false" id="0152-d120-9292-2c37" sortIndex="5">
                       <profiles>
-                        <profile name="Quad launcher (Frag)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="89bb-5ce5-7ea3-7f6b" noindex="false">
+                        <profile name="Quad launcher (Frag)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="7f0a-69b4-5cd1-f338" noindex="false">
                           <characteristics>
                             <characteristic name="R" typeId="cdb0-8654-6840-1037">60</characteristic>
                             <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
@@ -3816,7 +3834,7 @@ Any Model with the Armour Tercio Trait gains the Auto-repair (4+) Special Rule a
                             <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03"/>
                           </characteristics>
                         </profile>
-                        <profile name="Quad launcher (Shatter)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="4a80-852f-6a7e-e506">
+                        <profile name="Quad launcher (Shatter)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="61fc-704f-bafb-bde1">
                           <characteristics>
                             <characteristic name="R" typeId="cdb0-8654-6840-1037">36</characteristic>
                             <characteristic name="FP" typeId="5037-1f27-1790-e355">4</characteristic>
@@ -3829,31 +3847,31 @@ Any Model with the Armour Tercio Trait gains the Auto-repair (4+) Special Rule a
                         </profile>
                       </profiles>
                       <infoLinks>
-                        <infoLink name="Blast (X)" id="0c39-f4c1-a8eb-c958" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+                        <infoLink name="Blast (X)" id="d3b4-02e9-be8e-8176" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
                           <modifiers>
                             <modifier type="set" value="Blast (5&quot;) (Frag)" field="name"/>
                           </modifiers>
                           <comment>5&quot; (Frag)</comment>
                         </infoLink>
-                        <infoLink name="Heavy (X)" id="48f1-9d3a-7130-7580" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
+                        <infoLink name="Heavy (X)" id="b1ca-b6f2-1634-b38f" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
                           <comment>(FP) (Frag)</comment>
                           <modifiers>
                             <modifier type="set" value="Heavy (FP) (Frag)" field="name"/>
                           </modifiers>
                         </infoLink>
-                        <infoLink name="Heavy (X)" id="b883-9d8b-4a8d-52f4" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
+                        <infoLink name="Heavy (X)" id="17a2-2979-afa8-8785" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
                           <comment>(D) (Shatter)</comment>
                           <modifiers>
                             <modifier type="set" value="Heavy (D) (Shatter)" field="name"/>
                           </modifiers>
                         </infoLink>
-                        <infoLink name="Barrage (X)" id="3831-6efe-0985-c0e0" hidden="false" type="rule" targetId="85f5-3a91-69f4-c3b7">
+                        <infoLink name="Barrage (X)" id="aabd-2db7-fcac-d1cf" hidden="false" type="rule" targetId="85f5-3a91-69f4-c3b7">
                           <modifiers>
                             <modifier type="set" value="Barrage (1) (Phosphex canister shot)" field="name"/>
                           </modifiers>
                           <comment>2 (Frag)</comment>
                         </infoLink>
-                        <infoLink name="Armourbane" id="5841-921c-66ce-5103" hidden="false" type="rule" targetId="36ee-4c54-bced-a696">
+                        <infoLink name="Armourbane" id="2e4e-6eec-f4c2-860e" hidden="false" type="rule" targetId="36ee-4c54-bced-a696">
                           <comment>Shatter</comment>
                           <modifiers>
                             <modifier type="set" value="Armourbane (Shatter)" field="name"/>
@@ -3916,6 +3934,7 @@ Any Model with the Armour Tercio Trait gains the Auto-repair (4+) Special Rule a
               <comment>1</comment>
             </modifier>
           </modifiers>
+          <comment>1</comment>
         </infoLink>
       </infoLinks>
       <profiles>
@@ -3934,7 +3953,13 @@ Any Model with the Armour Tercio Trait gains the Auto-repair (4+) Special Rule a
       </entryLinks>
       <rules>
         <rule name="Rapier Section" id="e98f-b76f-6f64-759f" hidden="false">
-          <description>&quot;Models with this special Rule resolve Shooting Attacks and Attacks made in Combat against different Toughness Characteristics from their Unit.&quot;</description>
+          <description>&quot;Models with this special Rule resolve Shooting Attacks and Attacks made in Combat against different Toughness Characteristics from their Unit.&quot;
+
+
+Each time Wound Tests are made for a Fire Group that targets a Unit that includes any Models with this Special Rule, if any Rapier Carrier Models are in this Unit, the Toughness Characteristic of the Rapier Carriers is treated as being the majority. If any wounds are generated by these Wound Tests, the Target Model selected must be a Rapier Carrier Model if possible.
+
+
+Each time Wound Tests are made for a Strike Group that targets a Unit that includes any Models with this Special Rule, if any Rapier Gunner Models are in this Unit, the Toughness Characteristic of the Rapier Gunner Models is treated as being the majority. If any wounds are generated by these Wound Tests, the Target Model selected must be a Rapier Gunner Model if possible.</description>
         </rule>
       </rules>
     </selectionEntry>
