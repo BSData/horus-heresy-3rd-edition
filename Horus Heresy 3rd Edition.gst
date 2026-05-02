@@ -29286,7 +29286,7 @@
           <modifiers>
             <modifier type="add" value="Maximum Points limit for Cohorts Vagus Primary is 1500" field="error">
               <conditions>
-                <condition type="atMost" value="1500" field="limit::9893-c379-920b-8982" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="greaterThan" value="1500" field="limit::9893-c379-920b-8982" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
             <modifier type="set" value="false" field="hidden">
