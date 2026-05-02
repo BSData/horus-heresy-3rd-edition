@@ -28729,7 +28729,7 @@
         <categoryLink name="Army Configuration" hidden="false" id="5c8b-9e7e-b8c7-00b4" targetId="abfa-86ab-1726-077a"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry name="Lord of War Detachment" id="b7a1-629f-9d60-c2a9" hidden="false" sortIndex="4">
+    <forceEntry name="Lord of War Detachment" id="b7a1-629f-9d60-c2a9" hidden="false" sortIndex="4" childForcesLabel="Detachments">
       <categoryLinks>
         <categoryLink name="Lord of War" hidden="false" id="3c0a-1455-992a-6156" targetId="a46f-a465-0ead-d6b8">
           <constraints>
@@ -29277,7 +29277,7 @@
         <categoryLink name="Cult Operative" hidden="false" id="c80d-3c3d-d65a-85af" targetId="4f71-897f-8ae1-303b"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry name="Cohorts Vagus : Itinerant Cohorts" id="0a81-480b-fc4c-3dbe" hidden="false">
+    <forceEntry name="Cohorts Vagus : Itinerant Cohorts" id="0a81-480b-fc4c-3dbe" hidden="false" childForcesLabel="Detachments">
       <forceEntryLinks>
         <forceEntryLink name="Cohorts Vagus Detachment" id="bece-d2a3-1d59-7e19" hidden="false" targetId="2dfc-259d-d11b-dc8b" type="forceEntry">
           <constraints>
