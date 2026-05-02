@@ -2086,27 +2086,6 @@ When making a Shooting Attack for a Model with the Artillery Tercio Trait which 
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5dca-21fa-b883-a17a"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c69-472a-8ab7-ca6e"/>
           </constraints>
-          <infoLinks>
-            <infoLink name="Auto-Repair (X)" id="44fe-8469-67f5-eaaf" hidden="false" type="rule" targetId="3973-ed50-1482-ff4a">
-              <modifiers>
-                <modifier type="set" value="Auto-Repair (4+)" field="name"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Armoured Warfare" hidden="false" id="c6e2-cd5e-f266-e656">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a46-a1dd-5112-4fd6"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01bb-db2c-eb1a-dde6"/>
-              </constraints>
-              <rules>
-                <rule name="Armoured Warfare" id="704a-3f40-66bd-a4ee" hidden="false">
-                  <description>&quot;Models with this Special Rule provide the Auto-repair (4+) Special Rule to nearby Units with the Armour Tercio Trait.&quot;
-Any Model with the Armour Tercio Trait gains the Auto-repair (4+) Special Rule as long as it is within 18&quot; of a Friendly Model with this Special Rule.</description>
-                </rule>
-              </rules>
-            </selectionEntry>
-          </selectionEntries>
           <categoryLinks>
             <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="f6c6-afd8-4a40-a458" primary="false" name="Vehicle Model Type"/>
           </categoryLinks>
@@ -2123,6 +2102,12 @@ Any Model with the Armour Tercio Trait gains the Auto-repair (4+) Special Rule a
         <infoLink name="[Allegiance]" id="3676-a18c-e434-9a86" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="Smokescreen" id="ff2d-6473-7a65-9cbb" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
         <infoLink name="Smokescreen" id="c76d-8f7c-a11d-99e6" hidden="false" type="profile" targetId="999b-689a-4ee7-8901"/>
+        <infoLink name="Armoured Warfare" id="e58f-d88d-6254-98c4" hidden="false" type="rule" targetId="704a-3f40-66bd-a4ee"/>
+        <infoLink name="Auto-Repair (X)" id="44fe-8469-67f5-eaaf" hidden="false" type="rule" targetId="3973-ed50-1482-ff4a">
+          <modifiers>
+            <modifier type="set" value="Auto-Repair (4+)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="5c0e-08c7-65a1-cdb0" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="6">
@@ -11181,7 +11166,7 @@ Additionally, if a Model with this Special Rule is ever the only remaining Model
             <modifier type="replace" value="4+" field="name" arg="X"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Armoured Warfare" id="b980-990b-b35c-4cdf" hidden="false" type="rule"/>
+        <infoLink name="Armoured Warfare" id="b980-990b-b35c-4cdf" hidden="false" type="rule" targetId="704a-3f40-66bd-a4ee"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="a55a-ddd6-cb1d-bb31" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
