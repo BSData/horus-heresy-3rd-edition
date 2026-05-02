@@ -310,6 +310,7 @@
           </modifiers>
         </infoLink>
         <infoLink name="[Allegiance]" id="a95c-b4f0-a9dd-36b7" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Cohort Supreme Command" id="de15-e60e-8c81-85c7" hidden="false" type="profile" targetId="8bae-ee3d-3587-a615"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="One Lifeward may have:" id="44d3-5659-bda7-84d7" hidden="false">
@@ -325,11 +326,6 @@
       </costs>
       <profiles>
         <profile name="Solar Auxilia" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="16f2-c293-2782-78c3">
-          <characteristics>
-            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
-          </characteristics>
-        </profile>
-        <profile name="Cohort Supreme Command" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="7db6-6e06-b357-2870">
           <characteristics>
             <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
           </characteristics>
@@ -10995,6 +10991,145 @@ Additionally, if a Model with this Special Rule is ever the only remaining Model
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Dracosan Command Tank" hidden="false" id="10d9-c9b9-3386-427f">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Command Dracosan" hidden="false" id="9e9b-39c4-7ed1-78ec">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e76-7a6e-7886-a583"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e11-2d06-f7b9-ff36"/>
+          </constraints>
+          <profiles>
+            <profile name="Command Dracosan" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="af36-6c54-a866-7069">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">12</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">413</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">13</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">13</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">11</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">9</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" id="bf01-5c8d-b4d4-9923" hidden="false" defaultSelectionEntryId="1e49-2f38-fc6a-b60b" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Twin lascannon" hidden="false" id="1e49-2f38-fc6a-b60b" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a" sortIndex="1">
+                  <modifiers>
+                    <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47c4-d145-3fdb-d47f"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Demolisher cannon" hidden="false" id="05e4-17ae-ee36-1c6f" type="selectionEntry" targetId="4514-8e18-77b4-a141" sortIndex="2">
+                  <modifiers>
+                    <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6704-111c-dfc8-f49a"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="40"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f673-5a70-dcb6-b8fe"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e83-08da-c63d-628c"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Auxilia Pintle Weapons" hidden="false" id="fd41-c784-22f3-cc78" type="selectionEntryGroup" targetId="0266-b015-86e4-8953" sortIndex="4"/>
+            <entryLink import="true" name="Hunter-killer missile" hidden="false" id="9ac3-f694-ee06-8822" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" sortIndex="5">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bce3-0818-a987-982f"/>
+              </constraints>
+              <modifiers>
+                <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Searchlight" hidden="false" id="282d-c28c-491c-c18b" type="selectionEntry" targetId="5a85-bf28-f790-7bf0" sortIndex="6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08a6-8de5-f6c5-b84f"/>
+              </constraints>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Dozer blade" hidden="false" id="50c8-e3e3-c318-4796" type="selectionEntry" targetId="496e-da18-2afa-b99c" sortIndex="7">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4160-14aa-f9f8-46ea"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Flare Shield" hidden="false" id="da0f-4cc6-b9b5-fa54" type="selectionEntry" targetId="988f-36eb-7aa2-9ef4" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df8b-8207-321d-8137"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Smoke Launchers" hidden="false" id="a697-7b4c-82a8-8338" type="selectionEntry" targetId="b94f-e829-064a-9d60" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25a8-4b0e-c93a-2359"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a3fb-f544-6def-e303"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="87c3-9786-873a-6866" primary="false" name="Vehicle Model Type"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="200"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+        <cost name="Combined Warlord and Lord of War Points" typeId="14bd-cad0-cd3d-8b23" value="0"/>
+        <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="3126-b223-a38d-64f7" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Solar Auxilia" id="f031-709c-bd63-e96e" hidden="false" type="profile" targetId="c37a-f37f-860f-78a3"/>
+        <infoLink name="Smokescreen" id="3b1a-138a-0a2f-dea0" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
+        <infoLink name="Cohort Supreme Command" id="6f87-5602-c596-2eed" hidden="false" type="profile" targetId="8bae-ee3d-3587-a615"/>
+        <infoLink name="Command Vehicle (X)" id="6e94-e9d8-55ab-aa94" hidden="false" type="rule" targetId="581c-cbc9-1f23-d892">
+          <comment>9</comment>
+          <modifiers>
+            <modifier type="replace" value="9" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Tank Commander (X)" id="3141-db97-d233-626f" hidden="false" type="rule" targetId="8e22-3f6e-10f3-6e80">
+          <comment>2</comment>
+          <modifiers>
+            <modifier type="replace" value="2" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Auto-Repair (X)" id="8640-326e-7cb6-38d1" hidden="false" type="rule" targetId="3973-ed50-1482-ff4a">
+          <comment>4+</comment>
+          <modifiers>
+            <modifier type="replace" value="4+" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Armoured Warfare" id="b980-990b-b35c-4cdf" hidden="false" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="a55a-ddd6-cb1d-bb31" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="0937-1d14-7e80-75ad" type="selectionEntryGroup" targetId="8180-ce7c-accf-f232"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Special Rules" id="6523-64cb-9da8-764f" targetId="106b-693b-99f2-00c3"/>
@@ -12006,6 +12141,11 @@ Models with the Vehicle Type (but not the Flyer sub-type) and this Special Rule 
           </conditions>
         </modifierGroup>
       </modifierGroups>
+    </entryLink>
+    <entryLink import="true" name="Dracosan Command Tank" hidden="false" id="43d4-03f5-1028-0c3e" type="selectionEntry" targetId="10d9-c9b9-3386-427f">
+      <categoryLinks>
+        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="0b73-8e62-6109-a46a" primary="true" name="High Command"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedProfiles>
