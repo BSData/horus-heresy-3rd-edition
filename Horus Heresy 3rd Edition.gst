@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="54" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="55" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -29050,6 +29050,15 @@
         <categoryLink name="Cult Operative" hidden="false" id="c80d-3c3d-d65a-85af" targetId="4f71-897f-8ae1-303b"/>
       </categoryLinks>
     </forceEntry>
+    <forceEntry name="Battlefield Assets" id="0ed2-1c3d-bb4c-f5f1" hidden="false">
+      <modifiers>
+        <modifier type="increment" value="3" field="57e3-1031-7d4d-5ae3">
+          <conditions>
+            <condition type="greaterThan" value="1500" field="limit::9893-c379-920b-8982" scope="parent" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </forceEntry>
   </forceEntries>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Allegiance" hidden="false" id="f775-2f81-bd18-2777" sortIndex="1">
@@ -29081,7 +29090,13 @@
   </publications>
   <costTypes>
     <costType name="Point(s)" id="9893-c379-920b-8982" defaultCostLimit="-1"/>
-    <costType name="Asset Point(s)" id="57e3-1031-7d4d-5ae3" defaultCostLimit="-1" hidden="true"/>
+    <costType name="Asset Point(s)" id="57e3-1031-7d4d-5ae3" defaultCostLimit="2" hidden="true">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <comment>Hidden from new list screen, but displays count</comment>
+        </modifier>
+      </modifiers>
+    </costType>
     <costType name="Reaction Point(s)" id="c9ba-097e-c47f-ecc2" defaultCostLimit="-1" hidden="true"/>
     <costType name="Auxiliary Detachment(s)" id="3e8e-05ee-be52-12d6" defaultCostLimit="-1" hidden="true">
       <modifiers>
