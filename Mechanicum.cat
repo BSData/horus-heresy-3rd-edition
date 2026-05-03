@@ -2019,7 +2019,16 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
         </infoLink>
         <infoLink name="Explodes (X)" id="0370-67e9-ab72-dc93" hidden="false" type="rule" targetId="da5b-b871-20da-3e70">
           <modifiers>
-            <modifier type="set" value="Explodes (6+)" field="name"/>
+            <modifier type="set" value="Explodes (6+)" field="name">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="b94a-17a4-9b6c-e918" shared="true" includeChildSelections="true" includeChildForces="false" childName="Corrupted Programming"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Explodes (4+)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b94a-17a4-9b6c-e918" shared="true" includeChildSelections="true" includeChildForces="false" childName="Corrupted Programming"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <comment>6+</comment>
         </infoLink>
@@ -2087,6 +2096,29 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
                   </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ca7-d642-39a2-6385" shared="true" includeChildSelections="true" includeChildForces="true" childName="Battlefield Orphans"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="ceil" value="4" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b"/>
+                    <modifier type="ceil" value="4" field="0cd5-b269-e3bc-028b"/>
+                    <modifier type="decrement" value="1" field="3120-8275-e537-ecd2"/>
+                  </modifiers>
+                  <comment>Battlefield Orphans</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Misplaced Reinforcements</comment>
+                  <modifiers>
+                    <modifier type="set" value="2" field="253c-d694-4695-c89e"/>
+                    <modifier type="set" value="2" field="0cd5-b269-e3bc-028b"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ad3e-3112-f8cf-8ba2" shared="true" includeChildSelections="true" includeChildForces="true" childName="Misplaced Reinforcements"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -2252,13 +2284,26 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
         </entryLink>
         <entryLink import="true" name="Cybernetica" hidden="false" id="c4a3-8ded-261d-6c7d" type="selectionEntry" targetId="403d-7806-215e-7676" sortIndex="6">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="144d-674c-6204-f517"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9a6-99d2-8506-3515"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="144d-674c-6204-f517" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9a6-99d2-8506-3515" automatic="true"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="144d-674c-6204-f517">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="true" includeChildForces="true" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="e9a6-99d2-8506-3515">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="true" includeChildForces="true" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="b377-f86e-6cd7-e128" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="7">
           <entryLinks>
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="f7bd-69d0-8993-bd24" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+            <entryLink import="true" name="Vagus Prime Benefits" hidden="false" id="5a20-af64-74ec-708d" type="selectionEntryGroup" targetId="1abc-7dd4-54e7-48e5"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
@@ -3149,12 +3194,6 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
           </modifiers>
           <comment>4</comment>
         </infoLink>
-        <infoLink name="Explodes (X)" id="6708-3daf-a061-f5f9" hidden="false" type="rule" targetId="da5b-b871-20da-3e70">
-          <modifiers>
-            <modifier type="set" value="Explodes (6+)" field="name"/>
-          </modifiers>
-          <comment>6+</comment>
-        </infoLink>
         <infoLink name="Firing Protocols (X)" id="4ac1-27a6-daad-7bf5" hidden="false" type="rule" targetId="84f2-5a93-c2eb-826f">
           <modifiers>
             <modifier type="set" value="Firing Protocols (3)" field="name"/>
@@ -3163,6 +3202,21 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
         </infoLink>
         <infoLink name="Implacable Advance" id="e64c-b0a8-2b12-d845" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
         <infoLink name="Phased Refractor Shields" id="c516-a544-e65d-863a" hidden="false" type="rule" targetId="a3a3-a3e8-da13-56c1"/>
+        <infoLink name="Explodes (X)" id="8775-4be9-113d-f256" hidden="false" type="rule" targetId="da5b-b871-20da-3e70">
+          <modifiers>
+            <modifier type="set" value="Explodes (6+)" field="name">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="b94a-17a4-9b6c-e918" shared="true" includeChildSelections="true" includeChildForces="false" childName="Corrupted Programming"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Explodes (4+)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b94a-17a4-9b6c-e918" shared="true" includeChildSelections="true" includeChildForces="false" childName="Corrupted Programming"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>6+</comment>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="df10-4634-c1aa-f6e0" id="93ed-86c2-8973-1650" primary="false" name="Cybernetica"/>
@@ -3201,6 +3255,29 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
                   </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ca7-d642-39a2-6385" shared="true" includeChildSelections="true" includeChildForces="true" childName="Battlefield Orphans"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="ceil" value="4" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b"/>
+                    <modifier type="ceil" value="4" field="0cd5-b269-e3bc-028b"/>
+                    <modifier type="decrement" value="1" field="3120-8275-e537-ecd2"/>
+                  </modifiers>
+                  <comment>Battlefield Orphans</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Misplaced Reinforcements</comment>
+                  <modifiers>
+                    <modifier type="set" value="2" field="253c-d694-4695-c89e"/>
+                    <modifier type="set" value="2" field="0cd5-b269-e3bc-028b"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ad3e-3112-f8cf-8ba2" shared="true" includeChildSelections="true" includeChildForces="true" childName="Misplaced Reinforcements"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -3307,6 +3384,7 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
         <entryLink import="true" name="Prime Unit" hidden="false" id="0121-094d-bbac-806b" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="2add-3992-0734-9159" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+            <entryLink import="true" name="Vagus Prime Benefits" hidden="false" id="34a0-1bee-1d5f-7758" type="selectionEntryGroup" targetId="1abc-7dd4-54e7-48e5"/>
           </entryLinks>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -3334,6 +3412,7 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="3e59-3bcf-4bf8-d404" shared="true" includeChildSelections="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="28ba-8660-5266-8674" shared="true" childName="Cohort Doctrine: Iron Pattern Cohort" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="true" includeChildForces="true" childName="Cohorts Vagus Detachment"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3345,6 +3424,7 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="3e59-3bcf-4bf8-d404" shared="true" includeChildSelections="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="28ba-8660-5266-8674" shared="true" childName="Cohort Doctrine: Iron Pattern Cohort" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="true" includeChildForces="true" childName="Cohorts Vagus Detachment"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3356,6 +3436,7 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="3e59-3bcf-4bf8-d404" shared="true" includeChildSelections="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="28ba-8660-5266-8674" shared="true" childName="Cohort Doctrine: Iron Pattern Cohort" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="true" includeChildForces="true" childName="Cohorts Vagus Detachment"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4609,7 +4690,16 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
         </infoLink>
         <infoLink name="Explodes (X)" id="d25d-2446-9793-a77c" hidden="false" type="rule" targetId="da5b-b871-20da-3e70">
           <modifiers>
-            <modifier type="set" value="Explodes (6+)" field="name"/>
+            <modifier type="set" value="Explodes (6+)" field="name">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="b94a-17a4-9b6c-e918" shared="true" includeChildSelections="true" includeChildForces="false" childName="Corrupted Programming"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Explodes (4+)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b94a-17a4-9b6c-e918" shared="true" includeChildSelections="true" includeChildForces="false" childName="Corrupted Programming"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <comment>6+</comment>
         </infoLink>
@@ -4682,6 +4772,29 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ca7-d642-39a2-6385" shared="true" includeChildSelections="true" includeChildForces="true" childName="Battlefield Orphans"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="ceil" value="4" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b"/>
+                    <modifier type="ceil" value="4" field="0cd5-b269-e3bc-028b"/>
+                    <modifier type="decrement" value="1" field="3120-8275-e537-ecd2"/>
+                  </modifiers>
+                  <comment>Battlefield Orphans</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Misplaced Reinforcements</comment>
+                  <modifiers>
+                    <modifier type="set" value="2" field="253c-d694-4695-c89e"/>
+                    <modifier type="set" value="2" field="0cd5-b269-e3bc-028b"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ad3e-3112-f8cf-8ba2" shared="true" includeChildSelections="true" includeChildForces="true" childName="Misplaced Reinforcements"/>
+                  </conditions>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -4727,13 +4840,26 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
         </entryLink>
         <entryLink import="true" name="Cybernetica" hidden="false" id="60d6-3379-8896-86d8" type="selectionEntry" targetId="403d-7806-215e-7676" sortIndex="3">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1908-5ddc-86d9-a570"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d504-8497-5718-4c25"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1908-5ddc-86d9-a570" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d504-8497-5718-4c25" automatic="true"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="1908-5ddc-86d9-a570">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="true" includeChildForces="true" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="d504-8497-5718-4c25">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="true" includeChildForces="true" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="1cf3-2329-6452-494b" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="7">
           <entryLinks>
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="f87b-760f-5b44-e00c" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+            <entryLink import="true" name="Vagus Prime Benefits" hidden="false" id="4da8-2deb-a4e7-774e" type="selectionEntryGroup" targetId="1abc-7dd4-54e7-48e5"/>
           </entryLinks>
         </entryLink>
         <entryLink import="true" name="Arcana Benefice:" hidden="false" id="7080-9b2b-2347-816c" type="selectionEntry" targetId="f7b9-dc9c-2c8b-0c92" sortIndex="6">
@@ -5035,7 +5161,16 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
         </infoLink>
         <infoLink name="Explodes (X)" id="dbcd-e341-1263-6aeb" hidden="false" type="rule" targetId="da5b-b871-20da-3e70">
           <modifiers>
-            <modifier type="set" value="Explodes (6+)" field="name"/>
+            <modifier type="set" value="Explodes (6+)" field="name">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="b94a-17a4-9b6c-e918" shared="true" includeChildSelections="true" includeChildForces="false" childName="Corrupted Programming"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Explodes (4+)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b94a-17a4-9b6c-e918" shared="true" includeChildSelections="true" includeChildForces="false" childName="Corrupted Programming"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <comment>6+</comment>
         </infoLink>
@@ -5238,6 +5373,29 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ca7-d642-39a2-6385" shared="true" includeChildSelections="true" includeChildForces="true" childName="Battlefield Orphans"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="ceil" value="4" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b"/>
+                    <modifier type="ceil" value="4" field="0cd5-b269-e3bc-028b"/>
+                    <modifier type="decrement" value="1" field="3120-8275-e537-ecd2"/>
+                  </modifiers>
+                  <comment>Battlefield Orphans</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Misplaced Reinforcements</comment>
+                  <modifiers>
+                    <modifier type="set" value="2" field="253c-d694-4695-c89e"/>
+                    <modifier type="set" value="2" field="0cd5-b269-e3bc-028b"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ad3e-3112-f8cf-8ba2" shared="true" includeChildSelections="true" includeChildForces="true" childName="Misplaced Reinforcements"/>
+                  </conditions>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -5343,6 +5501,7 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="3e59-3bcf-4bf8-d404" shared="true" includeChildSelections="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="28ba-8660-5266-8674" shared="true" childName="Cohort Doctrine: Iron Pattern Cohort" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="true" includeChildForces="true" childName="Cohorts Vagus Detachment"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -5354,6 +5513,7 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="3e59-3bcf-4bf8-d404" shared="true" includeChildSelections="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="28ba-8660-5266-8674" shared="true" childName="Cohort Doctrine: Iron Pattern Cohort" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="true" includeChildForces="true" childName="Cohorts Vagus Detachment"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -5365,6 +5525,7 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="43f5-bc69-29b9-2286" shared="true" includeChildSelections="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="3e59-3bcf-4bf8-d404" shared="true" includeChildSelections="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="28ba-8660-5266-8674" shared="true" childName="Cohort Doctrine: Iron Pattern Cohort" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="true" includeChildForces="true" childName="Cohorts Vagus Detachment"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -5374,6 +5535,7 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
         <entryLink import="true" name="Prime Unit" hidden="false" id="f0bf-fcb1-3cee-5d06" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5">
           <entryLinks>
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="89c3-e386-201c-227b" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+            <entryLink import="true" name="Vagus Prime Benefits" hidden="false" id="ba74-fa42-f195-4dbe" type="selectionEntryGroup" targetId="1abc-7dd4-54e7-48e5"/>
           </entryLinks>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -5402,7 +5564,16 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
         </infoLink>
         <infoLink name="Explodes (X)" id="4510-7ba9-dd3e-8694" hidden="false" type="rule" targetId="da5b-b871-20da-3e70">
           <modifiers>
-            <modifier type="set" value="Explodes (6+)" field="name"/>
+            <modifier type="set" value="Explodes (6+)" field="name">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="b94a-17a4-9b6c-e918" shared="true" includeChildSelections="true" includeChildForces="false" childName="Corrupted Programming"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Explodes (4+)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b94a-17a4-9b6c-e918" shared="true" includeChildSelections="true" includeChildForces="false" childName="Corrupted Programming"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <comment>6+</comment>
         </infoLink>
@@ -5465,6 +5636,29 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
                   </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ca7-d642-39a2-6385" shared="true" includeChildSelections="true" includeChildForces="true" childName="Battlefield Orphans"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="ceil" value="4" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b"/>
+                    <modifier type="ceil" value="4" field="0cd5-b269-e3bc-028b"/>
+                    <modifier type="decrement" value="1" field="3120-8275-e537-ecd2"/>
+                  </modifiers>
+                  <comment>Battlefield Orphans</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Misplaced Reinforcements</comment>
+                  <modifiers>
+                    <modifier type="set" value="2" field="253c-d694-4695-c89e"/>
+                    <modifier type="set" value="2" field="0cd5-b269-e3bc-028b"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ad3e-3112-f8cf-8ba2" shared="true" includeChildSelections="true" includeChildForces="true" childName="Misplaced Reinforcements"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -5530,13 +5724,26 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
         </entryLink>
         <entryLink import="true" name="Cybernetica" hidden="false" id="9a26-ef5e-552f-8248" type="selectionEntry" targetId="403d-7806-215e-7676" sortIndex="2">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9e1a-e766-345a-763c"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1b0-c36b-896a-98aa"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9e1a-e766-345a-763c" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1b0-c36b-896a-98aa" automatic="true"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="9e1a-e766-345a-763c">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="true" includeChildForces="true" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="b1b0-c36b-896a-98aa">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="true" includeChildForces="true" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="74da-ed32-b735-0799" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5">
           <entryLinks>
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="440a-bcbb-f6ae-54ab" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+            <entryLink import="true" name="Vagus Prime Benefits" hidden="false" id="114c-e998-d5b5-06d6" type="selectionEntryGroup" targetId="1abc-7dd4-54e7-48e5"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
@@ -5553,7 +5760,16 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
         </infoLink>
         <infoLink name="Explodes (X)" id="8a10-05cd-047b-fb67" hidden="false" type="rule" targetId="da5b-b871-20da-3e70">
           <modifiers>
-            <modifier type="set" value="Explodes (6+)" field="name"/>
+            <modifier type="set" value="Explodes (6+)" field="name">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="b94a-17a4-9b6c-e918" shared="true" includeChildSelections="true" includeChildForces="false" childName="Corrupted Programming"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Explodes (4+)" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b94a-17a4-9b6c-e918" shared="true" includeChildSelections="true" includeChildForces="false" childName="Corrupted Programming"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <comment>6+</comment>
         </infoLink>
@@ -5603,6 +5819,29 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
                   </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cf8-9be5-91d6-c96d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="2ca7-d642-39a2-6385" shared="true" includeChildSelections="true" includeChildForces="true" childName="Battlefield Orphans"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e"/>
+                    <modifier type="ceil" value="4" field="253c-d694-4695-c89e"/>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b"/>
+                    <modifier type="ceil" value="4" field="0cd5-b269-e3bc-028b"/>
+                    <modifier type="decrement" value="1" field="3120-8275-e537-ecd2"/>
+                  </modifiers>
+                  <comment>Battlefield Orphans</comment>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Misplaced Reinforcements</comment>
+                  <modifiers>
+                    <modifier type="set" value="2" field="253c-d694-4695-c89e"/>
+                    <modifier type="set" value="2" field="0cd5-b269-e3bc-028b"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="ad3e-3112-f8cf-8ba2" shared="true" includeChildSelections="true" includeChildForces="true" childName="Misplaced Reinforcements"/>
                   </conditions>
                 </modifierGroup>
               </modifierGroups>
@@ -5728,20 +5967,31 @@ A Model with this Special Rule has the Overcharge Reactors, Cogitator Purge, and
           </constraints>
           <modifiers>
             <modifier type="set" value="0" field="c390-e666-ae60-5955">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="true" includeChildForces="true" childName="Cohorts Vagus Detachment"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" value="0" field="a46b-96e8-6f15-1046">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="true" includeChildForces="true" childName="Cohorts Vagus Detachment"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="d7c8-a204-8c6d-6f67" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="5">
           <entryLinks>
             <entryLink import="true" name="Mechanicum Prime Benefits" hidden="false" id="6d2f-5545-0f2d-c5d1" type="selectionEntryGroup" targetId="4ae1-f3b2-e1c8-165f"/>
+            <entryLink import="true" name="Vagus Prime Benefits" hidden="false" id="25b7-ec59-193a-4e62" type="selectionEntryGroup" targetId="1abc-7dd4-54e7-48e5"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
@@ -9516,10 +9766,17 @@ No single Characteristic may be increased by more than 2 by this Gambit, but the
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
-                <conditionGroup type="and">
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+                    <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="true" includeChildForces="true" childName="Cohorts Vagus Detachment"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -9648,6 +9905,7 @@ No single Characteristic may be increased by more than 2 by this Gambit, but the
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ec85-4050-9117-a9f4" automatic="true"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Armoured Spearhead Prime Traits" hidden="true" id="3959-0c0c-8213-a4e0" type="selectionEntryGroup" targetId="79f0-9479-4fe9-b4d6"/>
       </entryLinks>
       <constraints>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b90f-06f9-942e-4930"/>
@@ -9675,6 +9933,135 @@ No single Characteristic may be increased by more than 2 by this Gambit, but the
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="true" includeChildForces="true" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Vagus Prime Benefits" id="1abc-7dd4-54e7-48e5" hidden="true">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" shared="true" includeChildSelections="true" includeChildForces="true" childId="2dfc-259d-d11b-dc8b" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Battlefield Orphans" hidden="false" id="2ca7-d642-39a2-6385" sortIndex="1">
+          <rules>
+            <rule name="Battlefield Orphans" id="55bc-6f50-a88c-cb24" hidden="false">
+              <description>All Models in the unit selected to fill the Prime Slot must begin the Battle in Reserves and gain the Cortex Corruption and Expendable(1) Special Rules. When a Unit selected to fill this Prime Slot is deployed on the Battlefield, modify the Base Weapon Skill and Ballistic Skill Characteristics of all Models in the Unit by +, to a maximum of 4, and the Base Toughness Characteristic of all Models in the Unit by -1. At the end of the last turn of a Battle, in the Effects Sub-Phase of the final End Phase, all Models from a Unit selected to fill thus Prime Slot are Removed as Casualties.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Cortex Corruprion" id="e27b-6d07-1479-5e36" hidden="false" type="rule" targetId="c5d7-0d8a-f7b8-7df9"/>
+            <infoLink name="Expendable (X)" id="aa69-987e-9a2d-75ce" hidden="false" type="rule" targetId="c4d4-e053-9564-540b">
+              <modifiers>
+                <modifier type="replace" value="1" field="name" arg="X"/>
+              </modifiers>
+              <comment>1</comment>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1333-d9f7-cae5-fb8b"/>
+          </constraints>
+          <modifiers>
+            <modifier type="add" value="7afa-abab-789d-d59c" field="category"/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Misplaced Reinforcements" hidden="false" id="ad3e-3112-f8cf-8ba2" sortIndex="2">
+          <rules>
+            <rule name="Misplaced Reinforcements" id="0d9b-d47e-6b3f-aa08" hidden="false">
+              <description>All Models in the Unit selected to fill the Prime Slot gain the Cortex Corruption, Expendable (1) and Infiltrate (9) Special Rules, and must be deployed using the Infiltrate (X) Special Rule, or if this is impossible, placed into Reserves. If the Unit selected to fill this Prime Slot is deployed with all of its Models more than 12&quot; from any enemy Model, then all Models in the Unit selected to fill this Prime Slot begin the Battle with one Wound less than their Base Wounds Characteristic. Once the Unit selected to fill this Prime Slot enters play, the Base Weapon Skill and Ballistic Skill Characteristics of all Models in that Unit are set to 2. However, in the Effects Sub-Phase of each Controlling Player&apos;s Start Phase, modify the Base value of the Weapons Skill and Ballistic Skill of all Models in the Unit selected to fill this Prime Slot by +1, to a maximum of 4.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Cortex Corruprion" id="c631-6117-2a8c-a71a" hidden="false" type="rule" targetId="c5d7-0d8a-f7b8-7df9"/>
+            <infoLink name="Expendable (X)" id="8fd0-b218-d40a-69c6" hidden="false" type="rule" targetId="c4d4-e053-9564-540b">
+              <modifiers>
+                <modifier type="replace" value="1" field="name" arg="X"/>
+              </modifiers>
+              <comment>1</comment>
+            </infoLink>
+            <infoLink name="Infiltrate (X)" id="68a8-2ba1-2c2f-619e" hidden="false" type="rule" targetId="f330-254e-1a98-798a">
+              <comment>9</comment>
+              <modifiers>
+                <modifier type="replace" value="9" field="name" arg="X"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba9d-ec0d-a784-37e3"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a688-f841-beda-e10c"/>
+          </constraints>
+          <modifiers>
+            <modifier type="add" value="149d-e060-32eb-e08d" field="category"/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Corrupted Programming" hidden="false" id="b94a-17a4-9b6c-e918" sortIndex="3">
+          <rules>
+            <rule name="Corrupted Programming" id="c79d-82dc-1f2c-ec5e" hidden="false">
+              <description>All Models in the unit selected to fill the Prime Slot gain the Cortex Corruption, Expendable (1) and Fear (1) Special Rules and replace any variant of the Explodes (X) Special Rule they have with the Explodes (4+) Special Rule. In addition, in the Charge Sub-Phase of both Players&apos; Assault Phases, if the Unit that is selected to fill this Prime Slot is not Locked in Combat or has not had a Charge declared for it, then the Unit immediately suffers Cybertheurgic Feedback.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Cortex Corruprion" id="2f96-851e-db9e-b519" hidden="false" type="rule" targetId="c5d7-0d8a-f7b8-7df9"/>
+            <infoLink name="Expendable (X)" id="ea93-4de2-8a33-3246" hidden="false" type="rule" targetId="c4d4-e053-9564-540b">
+              <modifiers>
+                <modifier type="replace" value="1" field="name" arg="X"/>
+              </modifiers>
+              <comment>1</comment>
+            </infoLink>
+            <infoLink name="Fear (X)" id="a6fa-d075-2018-9d67" hidden="false" type="rule" targetId="0ebc-0c92-2209-6393">
+              <comment>1</comment>
+              <modifiers>
+                <modifier type="replace" value="1" field="name" arg="X"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad72-046f-375d-6e99"/>
+          </constraints>
+          <modifiers>
+            <modifier type="add" value="3dea-293c-530c-66c3" field="category"/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Malign Influence" hidden="false" id="624a-111f-61c0-fdec" sortIndex="4">
+          <rules>
+            <rule name="Malign Influence" id="73ae-91ea-d438-f102" hidden="false">
+              <description>All Models in the unit selected to fill the Prime Slot gain the Cortex Corruption, Expendable (1) and Hatred (All Models that do not have the Automata Type) Special Rule. In addition, a Unit selected to fill this Prime Slot can have Shooting Attacks made for it that target Friendly Units. Such attacks are resolved as usual and must use all Weapons available to the Attacking Unit - but the target Unit cannot react and neither Player may score any Victory Points as a result of such attacks. If at the end of any of the Controlling Player&apos;s Turns, a Unit selected to fill this Prime Slot has not made any attacks in either the Shooting Phase or the Assault Phase, then that Unit suffers Cybertheurgic Feedback in the Effects Sub-Phase of the End Phase of that Turn.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Cortex Corruprion" id="32d3-44c3-ff02-52b1" hidden="false" type="rule" targetId="c5d7-0d8a-f7b8-7df9"/>
+            <infoLink name="Expendable (X)" id="f142-e37c-d966-63f1" hidden="false" type="rule" targetId="c4d4-e053-9564-540b">
+              <modifiers>
+                <modifier type="replace" value="1" field="name" arg="X"/>
+              </modifiers>
+              <comment>1</comment>
+            </infoLink>
+            <infoLink name="Hatred (X)" id="b9cc-b5da-94dc-5cc4" hidden="false" type="rule" targetId="0612-95d5-46ae-c5ee">
+              <comment>All Models that do not have the Automata Type</comment>
+              <modifiers>
+                <modifier type="replace" value="All Models that do not have the Automata Type" field="name" arg="X"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2596-871a-1369-6ace"/>
+          </constraints>
+          <modifiers>
+            <modifier type="add" value="7a45-1cb0-3ebd-fb26" field="category"/>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db28-4cc2-8027-ca66"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d3dd-8cda-8b53-3699"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <entryLinks>
@@ -9731,6 +10118,30 @@ No single Characteristic may be increased by more than 2 by this Gambit, but the
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+            <modifier type="set-primary" value="826c-7b05-0f62-8b16" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <infoLinks>
+        <infoLink name="Vagus" id="8266-0445-0530-86b7" hidden="true" type="profile" targetId="b713-a3cb-67da-5bb6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </entryLink>
     <entryLink import="true" name="Myrmidon Secutor Host" hidden="false" id="444f-f0b2-7106-e2ce" type="selectionEntry" targetId="6947-89b1-0c02-fd17">
       <categoryLinks>
@@ -9760,6 +10171,30 @@ No single Characteristic may be increased by more than 2 by this Gambit, but the
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="f34b-c6c6-d147-5dbe" primary="true" name="Heavy Assault"/>
       </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+            <modifier type="set-primary" value="d49e-048b-a8e2-ba52" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <infoLinks>
+        <infoLink name="Vagus" id="e524-ceb1-1a25-cbd0" hidden="true" type="profile" targetId="b713-a3cb-67da-5bb6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </entryLink>
     <entryLink import="true" name="Ursarax Cohort" hidden="false" id="a8e1-7ca7-b17e-8f51" type="selectionEntry" targetId="4d8f-5e38-5902-0947">
       <categoryLinks>
@@ -9818,6 +10253,30 @@ No single Characteristic may be increased by more than 2 by this Gambit, but the
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+            <modifier type="set-primary" value="61eb-11e2-1592-3161" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <infoLinks>
+        <infoLink name="Vagus" id="ba9c-10a1-0697-c4fa" hidden="true" type="profile" targetId="b713-a3cb-67da-5bb6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </entryLink>
     <entryLink import="true" name="Thanatar Siege Maniple" hidden="false" id="d3c4-a71a-85bf-01f2" type="selectionEntry" targetId="3833-2f09-7ec7-b5f5">
       <categoryLinks>
@@ -9830,6 +10289,30 @@ No single Characteristic may be increased by more than 2 by this Gambit, but the
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+            <modifier type="set-primary" value="64d7-855f-726b-803f" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <infoLinks>
+        <infoLink name="Vagus" id="ff34-1b6b-7ea2-9b47" hidden="true" type="profile" targetId="b713-a3cb-67da-5bb6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </entryLink>
     <entryLink import="true" name="Armiger Moirax" hidden="false" id="2646-d42e-7383-0e94" type="selectionEntry" targetId="1777-db1a-0cd5-6a89">
       <categoryLinks>
@@ -9845,11 +10328,59 @@ No single Characteristic may be increased by more than 2 by this Gambit, but the
       <categoryLinks>
         <categoryLink targetId="2b65-a3f2-620a-dc58" id="79b5-9aec-5cb5-7ae6" primary="true" name="Recon"/>
       </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+            <modifier type="set-primary" value="0fb1-2125-2a33-b094" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <infoLinks>
+        <infoLink name="Vagus" id="e444-1a01-5c8d-42bf" hidden="true" type="profile" targetId="b713-a3cb-67da-5bb6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </entryLink>
     <entryLink import="true" name="Vultarax Stratos Squadron" hidden="false" id="cc63-b49e-c903-0bd4" type="selectionEntry" targetId="710e-f1ea-0061-d3cb">
       <categoryLinks>
         <categoryLink targetId="cf96-8891-3f9a-8921" id="c176-bdcd-5b13-0296" primary="true" name="Fast Attack"/>
       </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="set-primary" value="7db9-74d1-6ba1-061e" field="category"/>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <infoLinks>
+        <infoLink name="Vagus" id="c532-cabf-e273-cf5c" hidden="true" type="profile" targetId="b713-a3cb-67da-5bb6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </entryLink>
     <entryLink import="true" name="Karacnos Assault Tank" hidden="false" id="53b5-c2ff-0816-44b6" type="selectionEntry" targetId="ce4c-753d-aaf1-b4ab">
       <categoryLinks>

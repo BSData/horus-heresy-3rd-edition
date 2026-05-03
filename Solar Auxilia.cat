@@ -310,6 +310,7 @@
           </modifiers>
         </infoLink>
         <infoLink name="[Allegiance]" id="a95c-b4f0-a9dd-36b7" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Cohort Supreme Command" id="de15-e60e-8c81-85c7" hidden="false" type="profile" targetId="8bae-ee3d-3587-a615"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="One Lifeward may have:" id="44d3-5659-bda7-84d7" hidden="false">
@@ -325,11 +326,6 @@
       </costs>
       <profiles>
         <profile name="Solar Auxilia" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="16f2-c293-2782-78c3">
-          <characteristics>
-            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
-          </characteristics>
-        </profile>
-        <profile name="Cohort Supreme Command" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="7db6-6e06-b357-2870">
           <characteristics>
             <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
           </characteristics>
@@ -2090,27 +2086,6 @@ When making a Shooting Attack for a Model with the Artillery Tercio Trait which 
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5dca-21fa-b883-a17a"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c69-472a-8ab7-ca6e"/>
           </constraints>
-          <infoLinks>
-            <infoLink name="Auto-Repair (X)" id="44fe-8469-67f5-eaaf" hidden="false" type="rule" targetId="3973-ed50-1482-ff4a">
-              <modifiers>
-                <modifier type="set" value="Auto-Repair (4+)" field="name"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Armoured Warfare" hidden="false" id="c6e2-cd5e-f266-e656">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a46-a1dd-5112-4fd6"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01bb-db2c-eb1a-dde6"/>
-              </constraints>
-              <rules>
-                <rule name="Armoured Warfare" id="704a-3f40-66bd-a4ee" hidden="false">
-                  <description>&quot;Models with this Special Rule provide the Auto-repair (4+) Special Rule to nearby Units with the Armour Tercio Trait.&quot;
-Any Model with the Armour Tercio Trait gains the Auto-repair (4+) Special Rule as long as it is within 18&quot; of a Friendly Model with this Special Rule.</description>
-                </rule>
-              </rules>
-            </selectionEntry>
-          </selectionEntries>
           <categoryLinks>
             <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="f6c6-afd8-4a40-a458" primary="false" name="Vehicle Model Type"/>
           </categoryLinks>
@@ -2127,6 +2102,12 @@ Any Model with the Armour Tercio Trait gains the Auto-repair (4+) Special Rule a
         <infoLink name="[Allegiance]" id="3676-a18c-e434-9a86" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="Smokescreen" id="ff2d-6473-7a65-9cbb" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
         <infoLink name="Smokescreen" id="c76d-8f7c-a11d-99e6" hidden="false" type="profile" targetId="999b-689a-4ee7-8901"/>
+        <infoLink name="Armoured Warfare" id="e58f-d88d-6254-98c4" hidden="false" type="rule" targetId="704a-3f40-66bd-a4ee"/>
+        <infoLink name="Auto-Repair (X)" id="44fe-8469-67f5-eaaf" hidden="false" type="rule" targetId="3973-ed50-1482-ff4a">
+          <modifiers>
+            <modifier type="set" value="Auto-Repair (4+)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Prime Unit" hidden="false" id="5c0e-08c7-65a1-cdb0" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2" sortIndex="6">
@@ -2862,14 +2843,6 @@ Any Model with the Armour Tercio Trait gains the Auto-repair (4+) Special Rule a
               </modifierGroups>
             </profile>
           </profiles>
-          <entryLinks>
-            <entryLink import="true" name="Charonite Claws" hidden="false" id="f10b-da8b-abd2-b9e2" type="selectionEntry" targetId="976f-76e1-20bd-025d">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="63eb-e649-51ee-2b3b"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abd6-0051-aba2-f9de"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="bd1b-9070-fef2-e9fd"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="ecb9-e5fd-728c-909d"/>
@@ -2878,6 +2851,45 @@ Any Model with the Armour Tercio Trait gains the Auto-repair (4+) Special Rule a
             <categoryLink targetId="594d-fa82-13cb-a345" id="cdfa-f95f-4a7e-bfad" primary="false" name="Infantry Model Type"/>
             <categoryLink targetId="d2d6-5a84-672b-2833" id="b070-1b39-466e-bd1f" primary="false" name="Skirmish Model Sub-Type"/>
           </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" id="b1bf-b22e-ff50-856d" hidden="false" defaultSelectionEntryId="f10b-da8b-abd2-b9e2">
+              <entryLinks>
+                <entryLink import="true" name="Charonite claws" hidden="false" id="f10b-da8b-abd2-b9e2" type="selectionEntry" targetId="976f-76e1-20bd-025d" defaultAmount="2" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="abd6-0051-aba2-f9de"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Charonite blade" hidden="false" id="6d19-66c1-f6e7-db20" type="selectionEntry" targetId="d6dd-f3ae-12ae-72a7" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2190-2066-c3d0-d4d4"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Charonite crusher" hidden="false" id="1c26-939d-b68a-01dc" type="selectionEntry" targetId="78c5-7555-e5ad-4e38" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ee5-cbbb-fc83-1a4b"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Charonite shredder" hidden="false" id="4ea3-583a-6622-fed7" type="selectionEntry" targetId="774a-5c5b-36e8-6802">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81ce-b8a8-ba15-a9f2"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a001-799a-b2ff-9c60" automatic="false"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="16f8-66f6-2403-e2f6" automatic="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -2890,6 +2902,7 @@ Any Model with the Armour Tercio Trait gains the Auto-repair (4+) Special Rule a
               <comment>4</comment>
             </modifier>
           </modifiers>
+          <comment>4</comment>
         </infoLink>
         <infoLink name="Expendable (X)" id="4b1e-3625-3e7b-5c31" hidden="false" type="rule" targetId="c4d4-e053-9564-540b">
           <modifiers>
@@ -2897,11 +2910,13 @@ Any Model with the Armour Tercio Trait gains the Auto-repair (4+) Special Rule a
               <comment>2</comment>
             </modifier>
           </modifiers>
+          <comment>2</comment>
         </infoLink>
         <infoLink name="Feel No Pain (X)" id="6ec9-d7c1-00dd-5f08" hidden="false" type="rule" targetId="89b5-7320-db15-fd60">
           <modifiers>
             <modifier type="set" value="Feel No Pain (5+)" field="name"/>
           </modifiers>
+          <comment>5+</comment>
         </infoLink>
         <infoLink name="Impact (X)" id="a815-17ea-6295-9912" hidden="false" type="rule" targetId="6ead-c31c-ab09-2f8c">
           <modifiers>
@@ -2909,6 +2924,7 @@ Any Model with the Armour Tercio Trait gains the Auto-repair (4+) Special Rule a
               <comment>A</comment>
             </modifier>
           </modifiers>
+          <comment>A</comment>
         </infoLink>
       </infoLinks>
       <profiles>
@@ -3536,29 +3552,38 @@ Any Model with the Armour Tercio Trait gains the Auto-repair (4+) Special Rule a
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51cc-6736-44a2-d44f"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Bulky (X)" id="9b9a-542e-db2d-59ac" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25"/>
+                <infoLink name="Bulky (X)" id="9b9a-542e-db2d-59ac" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+                  <modifiers>
+                    <modifier type="replace" value="4" field="name" arg="X"/>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Exchange multi-laser array for:" id="b214-50d6-1702-41cf" hidden="false" defaultSelectionEntryId="c9a5-e5ea-cda1-6071">
+                <selectionEntryGroup name="Exchange Gravis multi-laser array for:" id="b214-50d6-1702-41cf" hidden="false" defaultSelectionEntryId="c9a5-e5ea-cda1-6071">
                   <entryLinks>
                     <entryLink import="true" name="Gravis heavy bolter battery" hidden="false" id="ce8a-7c70-c777-6450" type="selectionEntry" targetId="5c0e-33c5-afb1-fed5" sortIndex="2">
-                      <modifiers>
-                        <modifier type="set" value="5" field="9893-c379-920b-8982"/>
-                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
                     </entryLink>
                     <entryLink import="true" name="Laser destroyer" hidden="false" id="6d71-363a-738c-4a1a" type="selectionEntry" targetId="e160-234f-e94c-bab6" sortIndex="3">
-                      <modifiers>
-                        <modifier type="set" value="25" field="9893-c379-920b-8982"/>
-                      </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+                      </costs>
                     </entryLink>
                     <entryLink import="true" name="Gravis multi-laser array" hidden="false" id="c9a5-e5ea-cda1-6071" type="selectionEntry" targetId="c8d4-5315-fcd1-1794" sortIndex="1"/>
+                    <entryLink import="true" name="Mole mortar" hidden="false" id="78d4-ca0d-59f7-610e" type="selectionEntry" targetId="9e9c-1b29-e830-f697" sortIndex="4">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="47fa-bfd2-430f-fd8b"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="368a-681e-b036-63c9"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Quad launcher" hidden="false" id="cd05-603e-9f69-0a15" sortIndex="4">
+                    <selectionEntry type="upgrade" import="true" name="Quad launcher" hidden="false" id="cd05-603e-9f69-0a15" sortIndex="5">
                       <profiles>
                         <profile name="Quad launcher (Frag)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="ebe0-8634-b411-0b08" noindex="false">
                           <characteristics>
@@ -3785,31 +3810,40 @@ Any Model with the Armour Tercio Trait gains the Auto-repair (4+) Special Rule a
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3c3-3cca-eb61-c8e1"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Bulky (X)" id="d876-a508-aaa0-882a" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25"/>
+                <infoLink name="Bulky (X)" id="d876-a508-aaa0-882a" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+                  <modifiers>
+                    <modifier type="replace" value="4" field="name" arg="X"/>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Exchange multi-laser array for:" id="7180-1d1b-d66e-dc91" hidden="false" defaultSelectionEntryId="c9a5-e5ea-cda1-6071">
+                <selectionEntryGroup name="Exchange Gravis multi-laser array for:" id="f289-21f8-a104-5b27" hidden="false" defaultSelectionEntryId="c9a5-e5ea-cda1-6071">
                   <entryLinks>
-                    <entryLink import="true" name="Gravis heavy bolter battery" hidden="false" id="c369-031c-7d4c-7cd8" type="selectionEntry" targetId="5c0e-33c5-afb1-fed5" sortIndex="2">
-                      <modifiers>
-                        <modifier type="set" value="5" field="9893-c379-920b-8982"/>
-                      </modifiers>
+                    <entryLink import="true" name="Gravis heavy bolter battery" hidden="false" id="0c61-ec73-e74e-2c7d" type="selectionEntry" targetId="5c0e-33c5-afb1-fed5" sortIndex="2">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
                     </entryLink>
-                    <entryLink import="true" name="Laser destroyer" hidden="false" id="3f79-f79d-d6fd-aaa0" type="selectionEntry" targetId="e160-234f-e94c-bab6" sortIndex="3">
-                      <modifiers>
-                        <modifier type="set" value="25" field="9893-c379-920b-8982"/>
-                      </modifiers>
+                    <entryLink import="true" name="Laser destroyer" hidden="false" id="8a75-12a8-9b9f-d465" type="selectionEntry" targetId="e160-234f-e94c-bab6" sortIndex="3">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+                      </costs>
                     </entryLink>
-                    <entryLink import="true" name="Gravis multi-laser array" hidden="false" id="2f4a-7fb5-32b8-0666" type="selectionEntry" targetId="c8d4-5315-fcd1-1794" sortIndex="1"/>
+                    <entryLink import="true" name="Gravis multi-laser array" hidden="false" id="3059-6298-1745-d9bc" type="selectionEntry" targetId="c8d4-5315-fcd1-1794" sortIndex="1"/>
+                    <entryLink import="true" name="Mole mortar" hidden="false" id="b074-bc3c-6b10-51c9" type="selectionEntry" targetId="9e9c-1b29-e830-f697" sortIndex="4">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="51de-4aeb-97de-08fb"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40b2-f6c9-fb3c-ac62"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b86f-595b-0ed5-d223"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc95-1734-da60-f85f"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Quad launcher" hidden="false" id="c9de-5955-cd25-3b04" sortIndex="4">
+                    <selectionEntry type="upgrade" import="true" name="Quad launcher" hidden="false" id="0152-d120-9292-2c37" sortIndex="5">
                       <profiles>
-                        <profile name="Quad launcher (Frag)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="89bb-5ce5-7ea3-7f6b" noindex="false">
+                        <profile name="Quad launcher (Frag)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="7f0a-69b4-5cd1-f338" noindex="false">
                           <characteristics>
                             <characteristic name="R" typeId="cdb0-8654-6840-1037">60</characteristic>
                             <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
@@ -3820,7 +3854,7 @@ Any Model with the Armour Tercio Trait gains the Auto-repair (4+) Special Rule a
                             <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03"/>
                           </characteristics>
                         </profile>
-                        <profile name="Quad launcher (Shatter)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="4a80-852f-6a7e-e506">
+                        <profile name="Quad launcher (Shatter)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="61fc-704f-bafb-bde1">
                           <characteristics>
                             <characteristic name="R" typeId="cdb0-8654-6840-1037">36</characteristic>
                             <characteristic name="FP" typeId="5037-1f27-1790-e355">4</characteristic>
@@ -3833,31 +3867,31 @@ Any Model with the Armour Tercio Trait gains the Auto-repair (4+) Special Rule a
                         </profile>
                       </profiles>
                       <infoLinks>
-                        <infoLink name="Blast (X)" id="0c39-f4c1-a8eb-c958" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+                        <infoLink name="Blast (X)" id="d3b4-02e9-be8e-8176" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
                           <modifiers>
                             <modifier type="set" value="Blast (5&quot;) (Frag)" field="name"/>
                           </modifiers>
                           <comment>5&quot; (Frag)</comment>
                         </infoLink>
-                        <infoLink name="Heavy (X)" id="48f1-9d3a-7130-7580" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
+                        <infoLink name="Heavy (X)" id="b1ca-b6f2-1634-b38f" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
                           <comment>(FP) (Frag)</comment>
                           <modifiers>
                             <modifier type="set" value="Heavy (FP) (Frag)" field="name"/>
                           </modifiers>
                         </infoLink>
-                        <infoLink name="Heavy (X)" id="b883-9d8b-4a8d-52f4" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
+                        <infoLink name="Heavy (X)" id="17a2-2979-afa8-8785" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
                           <comment>(D) (Shatter)</comment>
                           <modifiers>
                             <modifier type="set" value="Heavy (D) (Shatter)" field="name"/>
                           </modifiers>
                         </infoLink>
-                        <infoLink name="Barrage (X)" id="3831-6efe-0985-c0e0" hidden="false" type="rule" targetId="85f5-3a91-69f4-c3b7">
+                        <infoLink name="Barrage (X)" id="aabd-2db7-fcac-d1cf" hidden="false" type="rule" targetId="85f5-3a91-69f4-c3b7">
                           <modifiers>
                             <modifier type="set" value="Barrage (1) (Phosphex canister shot)" field="name"/>
                           </modifiers>
                           <comment>2 (Frag)</comment>
                         </infoLink>
-                        <infoLink name="Armourbane" id="5841-921c-66ce-5103" hidden="false" type="rule" targetId="36ee-4c54-bced-a696">
+                        <infoLink name="Armourbane" id="2e4e-6eec-f4c2-860e" hidden="false" type="rule" targetId="36ee-4c54-bced-a696">
                           <comment>Shatter</comment>
                           <modifiers>
                             <modifier type="set" value="Armourbane (Shatter)" field="name"/>
@@ -3920,6 +3954,7 @@ Any Model with the Armour Tercio Trait gains the Auto-repair (4+) Special Rule a
               <comment>1</comment>
             </modifier>
           </modifiers>
+          <comment>1</comment>
         </infoLink>
       </infoLinks>
       <profiles>
@@ -3938,7 +3973,13 @@ Any Model with the Armour Tercio Trait gains the Auto-repair (4+) Special Rule a
       </entryLinks>
       <rules>
         <rule name="Rapier Section" id="e98f-b76f-6f64-759f" hidden="false">
-          <description>&quot;Models with this special Rule resolve Shooting Attacks and Attacks made in Combat against different Toughness Characteristics from their Unit.&quot;</description>
+          <description>&quot;Models with this special Rule resolve Shooting Attacks and Attacks made in Combat against different Toughness Characteristics from their Unit.&quot;
+
+
+Each time Wound Tests are made for a Fire Group that targets a Unit that includes any Models with this Special Rule, if any Rapier Carrier Models are in this Unit, the Toughness Characteristic of the Rapier Carriers is treated as being the majority. If any wounds are generated by these Wound Tests, the Target Model selected must be a Rapier Carrier Model if possible.
+
+
+Each time Wound Tests are made for a Strike Group that targets a Unit that includes any Models with this Special Rule, if any Rapier Gunner Models are in this Unit, the Toughness Characteristic of the Rapier Gunner Models is treated as being the majority. If any wounds are generated by these Wound Tests, the Target Model selected must be a Rapier Gunner Model if possible.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -4895,9 +4936,9 @@ Additionally, when at least one Model in a Unit entirely composed of Models with
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Charonite Claws" hidden="false" id="976f-76e1-20bd-025d">
+    <selectionEntry type="upgrade" import="true" name="Charonite claws" hidden="false" id="976f-76e1-20bd-025d">
       <profiles>
-        <profile name="Charonite Claws" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="f050-8b66-f2d1-ff56">
+        <profile name="Charonite claws" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="f050-8b66-f2d1-ff56">
           <characteristics>
             <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
             <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
@@ -4914,6 +4955,7 @@ Additionally, when at least one Model in a Unit entirely composed of Models with
           <modifiers>
             <modifier type="set" value="Breaching (5+)" field="name"/>
           </modifiers>
+          <comment>5+</comment>
         </infoLink>
       </infoLinks>
     </selectionEntry>
@@ -10995,6 +11037,227 @@ Additionally, if a Model with this Special Rule is ever the only remaining Model
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Dracosan Command Tank" hidden="false" id="10d9-c9b9-3386-427f">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Command Dracosan" hidden="false" id="9e9b-39c4-7ed1-78ec">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e76-7a6e-7886-a583"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e11-2d06-f7b9-ff36"/>
+          </constraints>
+          <profiles>
+            <profile name="Command Dracosan" typeId="2a80-eec8-a736-2fe3" typeName="Vehicle" hidden="false" id="af36-6c54-a866-7069">
+              <characteristics>
+                <characteristic name="Type" typeId="827f-9ce2-2118-e134">Vehicle</characteristic>
+                <characteristic name="M" typeId="d624-72fe-0205-4443">12</characteristic>
+                <characteristic name="BS" typeId="a17e-8e7d-d21f-c138">413</characteristic>
+                <characteristic name="Front Armour" typeId="6536-e73d-4a74-c675">13</characteristic>
+                <characteristic name="Side Armour" typeId="f03a-18a7-8586-273d">13</characteristic>
+                <characteristic name="Rear Armour" typeId="ec84-1f5d-1bb3-6826">11</characteristic>
+                <characteristic name="HP" typeId="8735-4497-1f8a-4dda">9</characteristic>
+                <characteristic name="Transport Capacity" typeId="a82e-858c-9aa9-2b43">-</characteristic>
+                <characteristic name="Access Points" typeId="ffe7-e997-ea4e-6c2d"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" id="bf01-5c8d-b4d4-9923" hidden="false" defaultSelectionEntryId="1e49-2f38-fc6a-b60b" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Twin lascannon" hidden="false" id="1e49-2f38-fc6a-b60b" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a" sortIndex="1">
+                  <modifiers>
+                    <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47c4-d145-3fdb-d47f"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Demolisher cannon" hidden="false" id="05e4-17ae-ee36-1c6f" type="selectionEntry" targetId="4514-8e18-77b4-a141" sortIndex="2">
+                  <modifiers>
+                    <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6704-111c-dfc8-f49a"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="40"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f673-5a70-dcb6-b8fe"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e83-08da-c63d-628c"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Auxilia Pintle Weapons" hidden="false" id="fd41-c784-22f3-cc78" type="selectionEntryGroup" targetId="0266-b015-86e4-8953" sortIndex="4"/>
+            <entryLink import="true" name="Hunter-killer missile" hidden="false" id="9ac3-f694-ee06-8822" type="selectionEntry" targetId="b9b7-8297-35b5-74ad" sortIndex="5">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bce3-0818-a987-982f"/>
+              </constraints>
+              <modifiers>
+                <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Searchlight" hidden="false" id="282d-c28c-491c-c18b" type="selectionEntry" targetId="5a85-bf28-f790-7bf0" sortIndex="6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08a6-8de5-f6c5-b84f"/>
+              </constraints>
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Dozer blade" hidden="false" id="50c8-e3e3-c318-4796" type="selectionEntry" targetId="496e-da18-2afa-b99c" sortIndex="7">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4160-14aa-f9f8-46ea"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Flare Shield" hidden="false" id="da0f-4cc6-b9b5-fa54" type="selectionEntry" targetId="988f-36eb-7aa2-9ef4" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df8b-8207-321d-8137"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Smoke Launchers" hidden="false" id="a697-7b4c-82a8-8338" type="selectionEntry" targetId="b94f-e829-064a-9d60" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25a8-4b0e-c93a-2359"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a3fb-f544-6def-e303"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="87c3-9786-873a-6866" primary="false" name="Vehicle Model Type"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="200"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+        <cost name="Combined Warlord and Lord of War Points" typeId="14bd-cad0-cd3d-8b23" value="0"/>
+        <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="[Allegiance]" id="3126-b223-a38d-64f7" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Solar Auxilia" id="f031-709c-bd63-e96e" hidden="false" type="profile" targetId="c37a-f37f-860f-78a3"/>
+        <infoLink name="Smokescreen" id="3b1a-138a-0a2f-dea0" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
+        <infoLink name="Cohort Supreme Command" id="6f87-5602-c596-2eed" hidden="false" type="profile" targetId="8bae-ee3d-3587-a615"/>
+        <infoLink name="Command Vehicle (X)" id="6e94-e9d8-55ab-aa94" hidden="false" type="rule" targetId="581c-cbc9-1f23-d892">
+          <comment>9</comment>
+          <modifiers>
+            <modifier type="replace" value="9" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Tank Commander (X)" id="3141-db97-d233-626f" hidden="false" type="rule" targetId="8e22-3f6e-10f3-6e80">
+          <comment>2</comment>
+          <modifiers>
+            <modifier type="replace" value="2" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Auto-Repair (X)" id="8640-326e-7cb6-38d1" hidden="false" type="rule" targetId="3973-ed50-1482-ff4a">
+          <comment>4+</comment>
+          <modifiers>
+            <modifier type="replace" value="4+" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Armoured Warfare" id="b980-990b-b35c-4cdf" hidden="false" type="rule" targetId="704a-3f40-66bd-a4ee"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="a55a-ddd6-cb1d-bb31" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="0937-1d14-7e80-75ad" type="selectionEntryGroup" targetId="8180-ce7c-accf-f232"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="15a8-9fbd-5f14-c29f" type="selectionEntryGroup" targetId="969e-8b5b-1410-cfc6"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Charonite blade" hidden="false" id="d6dd-f3ae-12ae-72a7">
+      <profiles>
+        <profile name="Charonite blade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="89df-1efb-0455-5768">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">5</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (6+), Reaping Blow (2)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="2b48-2a84-8d0a-1de5" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+          <comment>6+</comment>
+        </infoLink>
+        <infoLink name="Reaping Blow (X)" id="cd8e-e922-b382-0d36" hidden="false" type="rule" targetId="951f-eee4-02b7-b014">
+          <comment>2</comment>
+          <modifiers>
+            <modifier type="replace" value="2" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Charonite crusher" hidden="false" id="78c5-7555-e5ad-4e38">
+      <profiles>
+        <profile name="Charonite crusher" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="a53d-d934-831b-e902">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">-1</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">-2</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">10</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Armourbane, Armour-breaker (4+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Armourbane" id="9d8e-6524-c6bf-c36f" hidden="false" type="rule" targetId="36ee-4c54-bced-a696"/>
+        <infoLink name="Armour-Breaker (X)" id="ee68-47d0-e6f5-e0f5" hidden="false" type="rule" targetId="3009-9bbb-a8f6-1b47">
+          <comment>4+</comment>
+          <modifiers>
+            <modifier type="replace" value="4+" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Charonite shredder" hidden="false" id="774a-5c5b-36e8-6802">
+      <profiles>
+        <profile name="Charonite shredder" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="0d3b-a867-7d16-c7b5">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">6</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">4</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Shred (4+), Rending (4+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shred (X)" id="37b9-8415-beb6-82b9" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
+          <comment>4+</comment>
+          <modifiers>
+            <modifier type="replace" value="4+" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Rending (X)" id="7248-6e8c-22cd-d061" hidden="false" type="rule" targetId="167f-2a64-6e61-505b">
+          <modifiers>
+            <modifier type="replace" value="4+" field="name" arg="X"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Special Rules" id="6523-64cb-9da8-764f" targetId="106b-693b-99f2-00c3"/>
@@ -11298,6 +11561,7 @@ Models with the Vehicle Type (but not the Flyer sub-type) and this Special Rule 
     <selectionEntryGroup name="Prime Benefits" id="8180-ce7c-accf-f232" hidden="false">
       <entryLinks>
         <entryLink import="true" name="Common Prime Benefits" hidden="false" id="7df8-61e6-2926-fe91" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" flatten="true"/>
+        <entryLink import="true" name="Armoured Spearhead Prime Traits" hidden="true" id="69d6-2bbd-0d79-e614" type="selectionEntryGroup" targetId="79f0-9479-4fe9-b4d6"/>
       </entryLinks>
       <constraints>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1952-dfc3-8cdb-640a"/>
@@ -11915,6 +12179,185 @@ Models with the Vehicle Type (but not the Flyer sub-type) and this Special Rule 
     <entryLink import="true" name="Stormsword Super-heavy Siege Tank" hidden="false" id="9f8d-49a0-1dcb-8011" type="selectionEntry" targetId="5a4f-f6c0-e700-8142">
       <categoryLinks>
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="fa6b-2616-e822-b6bf" primary="true" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Castellax Battle Maniple" hidden="false" id="be59-2c52-e384-dfcd" type="selectionEntry" targetId="e8d6-2ba5-d10d-d617">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+            <modifier type="set-primary" value="61eb-11e2-1592-3161" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <categoryLinks>
+        <categoryLink targetId="61eb-11e2-1592-3161" id="50d3-d177-d121-340e" primary="true" name="Support - Castellax Battle Maniple Only"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Vagus" id="2ee2-a0e6-3d9e-e86e" hidden="true" type="profile" targetId="b713-a3cb-67da-5bb6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Castellax Destructor Maniple" hidden="false" id="5917-83c4-b80a-4b45" type="selectionEntry" targetId="112f-1168-d07c-7f8f">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+            <modifier type="set-primary" value="d49e-048b-a8e2-ba52" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <categoryLinks>
+        <categoryLink targetId="d49e-048b-a8e2-ba52" id="5f42-0317-bad8-a1ee" primary="true" name="Heavy Assault - Castellax Destructor Maniple only "/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Vagus" id="a1bd-d390-df62-9782" hidden="true" type="profile" targetId="b713-a3cb-67da-5bb6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Domitar Battle Maniple" hidden="false" id="8ce7-1b0b-6922-3f44" type="selectionEntry" targetId="cefd-9aca-871d-3263">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+            <modifier type="set-primary" value="826c-7b05-0f62-8b16" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <categoryLinks>
+        <categoryLink targetId="826c-7b05-0f62-8b16" id="4056-a913-5a66-1f1c" primary="true" name="Elites - Domitar Battle Maniple Only"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Vagus" id="65b0-4e24-098e-da55" hidden="true" type="profile" targetId="b713-a3cb-67da-5bb6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Thanatar Siege Maniple" hidden="false" id="6fec-3fa7-8264-c54c" type="selectionEntry" targetId="3833-2f09-7ec7-b5f5">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+            <modifier type="set-primary" value="64d7-855f-726b-803f" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <categoryLinks>
+        <categoryLink targetId="64d7-855f-726b-803f" id="03ad-8471-4e0e-48f6" primary="true" name="War Engine - Thanatar Siege Maniple only"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Vagus" id="090d-cafe-ba56-9352" hidden="true" type="profile" targetId="b713-a3cb-67da-5bb6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Vorax Attack Maniple" hidden="false" id="782c-0b7e-40ca-80d6" type="selectionEntry" targetId="de2e-f9b5-abe6-b8b5">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+            <modifier type="set-primary" value="0fb1-2125-2a33-b094" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <categoryLinks>
+        <categoryLink targetId="0fb1-2125-2a33-b094" id="c08b-fa8e-bbe1-6318" primary="true" name="Recon - Vorax Attack Maniple Only"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Vagus" id="a8b5-89ce-05d5-4995" hidden="true" type="profile" targetId="b713-a3cb-67da-5bb6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Vultarax Stratos Squadron" hidden="false" id="cbbe-aa27-4002-d5c9" type="selectionEntry" targetId="710e-f1ea-0061-d3cb">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+            <modifier type="set-primary" value="7db9-74d1-6ba1-061e" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <categoryLinks>
+        <categoryLink targetId="7db9-74d1-6ba1-061e" id="6102-387a-c909-143f" primary="true" name="Fast Attack - Vultarax Stratos Squadron Only"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Vagus" id="dfa4-2071-33fb-b4e5" hidden="true" type="profile" targetId="b713-a3cb-67da-5bb6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Dracosan Command Tank" hidden="false" id="43d4-03f5-1028-0c3e" type="selectionEntry" targetId="10d9-c9b9-3386-427f">
+      <categoryLinks>
+        <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="0b73-8e62-6109-a46a" primary="true" name="High Command"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

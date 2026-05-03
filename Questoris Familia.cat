@@ -3170,7 +3170,7 @@ Preceptor</comment>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry name="Knight Lord of War" id="3151-38b5-a5ae-d35f" hidden="false" sortIndex="1">
+    <forceEntry name="Knight Lord of War" id="3151-38b5-a5ae-d35f" hidden="false" sortIndex="1" childForcesLabel="Detachments">
       <comment>Like Lord of War but allows the additional detachments</comment>
       <forceEntries>
         <forceEntry name="Lord of War Detachment" id="3cb9-35bf-4fac-61c0" hidden="true">
@@ -4072,6 +4072,180 @@ Once the cost has been paid, the Reactive Player must select one Unit under thei
           </conditions>
         </modifier>
       </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Castellax Battle Maniple" hidden="false" id="6b41-366e-b332-6865" type="selectionEntry" targetId="e8d6-2ba5-d10d-d617">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+            <modifier type="set-primary" value="61eb-11e2-1592-3161" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <categoryLinks>
+        <categoryLink targetId="61eb-11e2-1592-3161" id="c692-e625-a8ec-3dbe" primary="true" name="Support - Castellax Battle Maniple Only"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Vagus" id="d43e-15b3-2fbd-b0b7" hidden="true" type="profile" targetId="b713-a3cb-67da-5bb6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Castellax Destructor Maniple" hidden="false" id="2468-6b37-e1d7-0eda" type="selectionEntry" targetId="112f-1168-d07c-7f8f">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+            <modifier type="set-primary" value="d49e-048b-a8e2-ba52" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <categoryLinks>
+        <categoryLink targetId="d49e-048b-a8e2-ba52" id="9f56-61c4-5701-5cda" primary="true" name="Heavy Assault - Castellax Destructor Maniple only "/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Vagus" id="24a7-b601-30ab-50c9" hidden="true" type="profile" targetId="b713-a3cb-67da-5bb6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Domitar Battle Maniple" hidden="false" id="3a8d-8afa-4b3e-2ade" type="selectionEntry" targetId="cefd-9aca-871d-3263">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+            <modifier type="set-primary" value="826c-7b05-0f62-8b16" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <categoryLinks>
+        <categoryLink targetId="826c-7b05-0f62-8b16" id="b32c-8de4-6810-662c" primary="true" name="Elites - Domitar Battle Maniple Only"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Vagus" id="ee42-f0df-ea87-3232" hidden="true" type="profile" targetId="b713-a3cb-67da-5bb6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Thanatar Siege Maniple" hidden="false" id="3b34-1361-79b6-7bcc" type="selectionEntry" targetId="3833-2f09-7ec7-b5f5">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+            <modifier type="set-primary" value="64d7-855f-726b-803f" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <categoryLinks>
+        <categoryLink targetId="64d7-855f-726b-803f" id="944e-a5ae-e21b-dec2" primary="true" name="War Engine - Thanatar Siege Maniple only"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Vagus" id="198b-8070-b2fa-8a33" hidden="true" type="profile" targetId="b713-a3cb-67da-5bb6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Vorax Attack Maniple" hidden="false" id="6b50-27ae-5b63-fc55" type="selectionEntry" targetId="de2e-f9b5-abe6-b8b5">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+            <modifier type="set-primary" value="0fb1-2125-2a33-b094" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <categoryLinks>
+        <categoryLink targetId="0fb1-2125-2a33-b094" id="378c-ecee-5eed-c932" primary="true" name="Recon - Vorax Attack Maniple Only"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Vagus" id="c36d-780e-8c6a-f71a" hidden="true" type="profile" targetId="b713-a3cb-67da-5bb6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Vultarax Stratos Squadron" hidden="false" id="29e9-d2aa-99ca-6fca" type="selectionEntry" targetId="710e-f1ea-0061-d3cb">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Vagus</comment>
+          <modifiers>
+            <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
+            <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
+            <modifier type="set-primary" value="7db9-74d1-6ba1-061e" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+      <categoryLinks>
+        <categoryLink targetId="7db9-74d1-6ba1-061e" id="9bdb-b0e9-102c-5814" primary="true" name="Fast Attack - Vultarax Stratos Squadron Only"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Vagus" id="94d4-782e-ccf0-a295" hidden="true" type="profile" targetId="b713-a3cb-67da-5bb6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </entryLink>
   </entryLinks>
   <sharedRules>
