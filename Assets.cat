@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5334-5605-242c-d75e" name="Assets" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="1" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="5334-5605-242c-d75e" name="Assets" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="2" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Forward Ammunition Drop" hidden="false" id="7c64-4927-263b-d803">
       <profiles>
@@ -78,4 +78,45 @@
       </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Attacker/Defender" hidden="false" id="e63d-058e-4fed-6dd5">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="211e-b596-6ae3-7363" primary="true" name="Army Configuration"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Attacker/Defender" id="d254-a2e6-0b71-2345" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Attacker" hidden="false" id="affa-726d-7fee-f272"/>
+            <selectionEntry type="upgrade" import="true" name="Defender" hidden="false" id="81e6-a6ec-25e5-68ff"/>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b48-af13-deec-0872" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17d3-8cbb-0fce-a53d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f04-2f85-3121-77c8" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f3a-1e2e-18fe-a76f" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
+  <forceEntries>
+    <forceEntry name="Battlefield Assets" id="10ac-064d-70cc-cc99" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="a697-3899-b304-6cb9" includeChildSelections="true"/>
+      </constraints>
+      <forceEntries>
+        <forceEntry name="Battlefield Assets" id="f9a4-06a9-29ac-02e7" hidden="false" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="forces" scope="parent" shared="true" id="56e7-aa98-085a-d3a0" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="forces" scope="parent" shared="true" id="b7ae-f82a-34ee-6ced" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Asset" hidden="false" id="5ddf-c70c-c587-b43c" targetId="b720-ea51-7339-6a08"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
+    </forceEntry>
+  </forceEntries>
 </catalogue>

@@ -29058,6 +29058,13 @@
           </conditions>
         </modifier>
       </modifiers>
+      <forceEntries>
+        <forceEntry name="Battlefield Assets" id="7abd-a2ae-2722-40b4" hidden="false">
+          <categoryLinks>
+            <categoryLink name="Asset" hidden="false" id="0194-ed0c-416b-e2a6" targetId="b720-ea51-7339-6a08"/>
+          </categoryLinks>
+        </forceEntry>
+      </forceEntries>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
