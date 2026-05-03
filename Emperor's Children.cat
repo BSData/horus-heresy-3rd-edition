@@ -2596,6 +2596,11 @@ After a Shooting Attack that targets a Unit entirely composed of Models with thi
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="fbf2-aba8-7792-2f7f" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="Brotherhood of the Phoenix is only valid for Emperor&apos;s Children" field="error">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="9a22-d01f-ab5c-ec07" shared="true" childName="                         III - Emperor&apos;s Children"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="2421-aa0b-4f10-6f1a"/>
