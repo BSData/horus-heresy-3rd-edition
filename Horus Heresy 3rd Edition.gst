@@ -26269,6 +26269,7 @@
               </conditionGroups>
               <comment>Legions</comment>
             </modifier>
+            <modifier type="add" value="Leviathan Armoured Fist Detachment is only legal in Leviathan Missions" field="warning"/>
           </modifiers>
           <categoryLinks>
             <categoryLink name="Lord of War" hidden="false" id="3af9-88f3-14f9-4ab8" targetId="a46f-a465-0ead-d6b8">
@@ -26446,6 +26447,7 @@
               </conditionGroups>
               <comment>Legions</comment>
             </modifier>
+            <modifier type="add" value="Leviathan Bastion of Fire Detachment is only legal in Leviathan Missions" field="warning"/>
           </modifiers>
           <categoryLinks>
             <categoryLink name="Retinue" hidden="false" id="9b1a-2818-d805-9ce8" targetId="a38e-50ff-310f-f19e">
@@ -26924,6 +26926,7 @@
               </conditionGroups>
               <comment>Visible to all factions</comment>
             </modifier>
+            <modifier type="add" value="Armoured Command Squadron Detachment is only legal in Armoured Spearhead Missions" field="warning"/>
           </modifiers>
         </forceEntry>
       </forceEntries>
