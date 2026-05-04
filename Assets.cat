@@ -440,7 +440,7 @@
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="a697-3899-b304-6cb9" includeChildSelections="true"/>
         <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="d252-c75b-9e49-d7fc" includeChildSelections="true"/>
-        <constraint type="max" value="2" field="29b4-fb27-da17-1e21" scope="roster" shared="true" id="8009-17d9-2a5c-684f" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="0" field="29b4-fb27-da17-1e21" scope="roster" shared="true" id="8009-17d9-2a5c-684f" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <modifiers>
         <modifier type="add" value="You have exceeded your Asset Point limit" field="error">
@@ -475,19 +475,24 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="increment" value="3" field="8009-17d9-2a5c-684f">
+        <modifier type="increment" value="2" field="8009-17d9-2a5c-684f">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="roster" childId="6c42-8151-9658-9a25" shared="true" includeChildSelections="true" childName="1501-3500" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="6" field="8009-17d9-2a5c-684f">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="roster" childId="e70a-ceeb-e5df-474f" shared="true" includeChildSelections="true" childName="3501-5000" includeChildForces="true"/>
+            <condition type="equalTo" value="1" field="selections" scope="roster" childId="695d-27a5-1c3e-5cb2" shared="true" includeChildSelections="true" childName="0-1500" includeChildForces="true"/>
           </conditions>
         </modifier>
         <modifier type="increment" value="8" field="8009-17d9-2a5c-684f">
           <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="roster" childId="e70a-ceeb-e5df-474f" shared="true" includeChildSelections="true" childName="3501-5000" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="10" field="8009-17d9-2a5c-684f">
+          <conditions>
             <condition type="equalTo" value="1" field="selections" scope="roster" childId="7a51-848e-4e60-d050" shared="true" includeChildSelections="true" childName="5001+" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="5" field="8009-17d9-2a5c-684f">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="roster" childId="6c42-8151-9658-9a25" shared="true" includeChildSelections="true" childName="1501-3500" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
