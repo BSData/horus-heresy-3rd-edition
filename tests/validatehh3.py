@@ -39,6 +39,7 @@ PRIME_ADVANTAGE_SLOTS = ["Rewards of Treachery",
                          "EotL - Raven Guard",
                          "EotL - Iron Hands",
                          "EotL - World Eaters",
+                         "Asset",
                          ]
 
 LA_PRIME_BENEFIT_SLOT_UPGRADES = {
