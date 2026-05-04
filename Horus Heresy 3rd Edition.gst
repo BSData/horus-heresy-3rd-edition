@@ -29189,6 +29189,8 @@
         <characteristicType name="Summary" id="3dcf-9034-fc2d-cd56"/>
         <characteristicType name="Setup" id="e965-60bc-cd79-63e7"/>
         <characteristicType name="Effect" id="bbd3-5482-ed3a-a3b3"/>
+        <characteristicType name="How To Destroy" id="6888-e488-df3f-edcf"/>
+        <characteristicType name="Traits" id="a1e3-4f30-fa22-d127"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Traits" id="d5a9-9164-1e30-7a35" hidden="false" sortIndex="9">
