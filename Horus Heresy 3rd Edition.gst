@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="54" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="55" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -29080,8 +29080,15 @@
     <publication name="Legacies of the Age of Darkness: The Legiones Inductii" id="1cef-cfb8-32c9-a1f4" hidden="false" shortName="Inductii" publisher="Warhammer Community" publicationDate="September 25th, 2025" publisherUrl="https://www.warhammer-community.com/en-gb/downloads/warhammer-the-horus-heresy/"/>
   </publications>
   <costTypes>
-    <costType name="Point(s)" id="9893-c379-920b-8982" defaultCostLimit="-1"/>
-    <costType name="Asset Point(s)" id="57e3-1031-7d4d-5ae3" defaultCostLimit="-1" hidden="true"/>
+    <costType name="Point(s)" id="9893-c379-920b-8982" defaultCostLimit="-1">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" field="selections" scope="parent" childId="5334-5605-242c-d75e" childName="Battlefield Assets"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </costType>
     <costType name="Reaction Point(s)" id="c9ba-097e-c47f-ecc2" defaultCostLimit="-1" hidden="true"/>
     <costType name="Auxiliary Detachment(s)" id="3e8e-05ee-be52-12d6" defaultCostLimit="-1" hidden="true">
       <modifiers>
@@ -29182,6 +29189,8 @@
         <characteristicType name="Summary" id="3dcf-9034-fc2d-cd56"/>
         <characteristicType name="Setup" id="e965-60bc-cd79-63e7"/>
         <characteristicType name="Effect" id="bbd3-5482-ed3a-a3b3"/>
+        <characteristicType name="How To Destroy" id="6888-e488-df3f-edcf"/>
+        <characteristicType name="Traits" id="a1e3-4f30-fa22-d127"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Traits" id="d5a9-9164-1e30-7a35" hidden="false" sortIndex="9">
