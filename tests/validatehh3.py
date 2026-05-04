@@ -58,6 +58,7 @@ CATS_WITH_NO_PRIMES = [
     "Cults Abominatio.cat",
     "Divisio Assassinorum.cat",
     "Legio Titanicus.cat",
+    "Battlefield Assets.cat",
     # Knights have primes but they're special, handled separately
 ]
 
