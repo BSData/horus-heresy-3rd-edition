@@ -29080,8 +29080,15 @@
     <publication name="Legacies of the Age of Darkness: The Legiones Inductii" id="1cef-cfb8-32c9-a1f4" hidden="false" shortName="Inductii" publisher="Warhammer Community" publicationDate="September 25th, 2025" publisherUrl="https://www.warhammer-community.com/en-gb/downloads/warhammer-the-horus-heresy/"/>
   </publications>
   <costTypes>
-    <costType name="Point(s)" id="9893-c379-920b-8982" defaultCostLimit="-1"/>
-    <costType name="Asset Point(s)" id="57e3-1031-7d4d-5ae3" defaultCostLimit="2" hidden="false"/>
+    <costType name="Point(s)" id="9893-c379-920b-8982" defaultCostLimit="-1">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" field="selections" scope="parent" childId="5334-5605-242c-d75e" childName="Battlefield Assets"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </costType>
     <costType name="Reaction Point(s)" id="c9ba-097e-c47f-ecc2" defaultCostLimit="-1" hidden="true"/>
     <costType name="Auxiliary Detachment(s)" id="3e8e-05ee-be52-12d6" defaultCostLimit="-1" hidden="true">
       <modifiers>

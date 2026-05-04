@@ -1,81 +1,378 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="5334-5605-242c-d75e" name="Battlefield Assets" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="2" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Forward Ammunition Drop" hidden="false" id="7c64-4927-263b-d803">
-      <profiles>
-        <profile name="Forward Ammunition Drop" typeId="7ae0-de68-04c6-8d8f" typeName="Asset" hidden="false" id="736d-8b12-034f-b741">
-          <characteristics>
-            <characteristic typeId="3dcf-9034-fc2d-cd56" name="Summary"/>
-            <characteristic typeId="e965-60bc-cd79-63e7" name="Setup"/>
-            <characteristic typeId="bbd3-5482-ed3a-a3b3" name="Effect"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="Points" typeId="9893-c379-920b-8982" value="0"/>
-        <cost name="Asset Points" typeId="57e3-1031-7d4d-5ae3" value="2"/>
-        <cost name="Reaction Points" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="b720-ea51-7339-6a08" id="745e-0fdf-0355-e9bb" primary="true" name="Asset"/>
-      </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Strategic Cogitator Array" hidden="false" id="f397-7bc2-a0c5-b230">
-      <profiles>
-        <profile name="Strategic Cogitator Array" typeId="7ae0-de68-04c6-8d8f" typeName="Asset" hidden="false" id="4e72-9a8e-c84e-3541">
-          <characteristics>
-            <characteristic name="Summary" typeId="3dcf-9034-fc2d-cd56"/>
-            <characteristic name="Setup" typeId="e965-60bc-cd79-63e7"/>
-            <characteristic typeId="bbd3-5482-ed3a-a3b3" name="Effect"/>
-          </characteristics>
-        </profile>
-      </profiles>
+    <selectionEntry type="upgrade" import="true" name="Disruption Emitter Charges" hidden="false" id="9f06-57fd-b80a-1172">
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="1"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+        <cost name="Combined Warlord and Lord of War Points" typeId="14bd-cad0-cd3d-8b23" value="0"/>
+        <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
+        <cost name="Asset Point(s)" typeId="29b4-fb27-da17-1e21" value="3"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="b720-ea51-7339-6a08" id="a7db-34f7-04f7-6b74" primary="true" name="Asset"/>
-      </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Graviton Snares" hidden="false" id="add0-a31f-9c64-db1f">
-      <profiles>
-        <profile name="Graviton Snares" typeId="7ae0-de68-04c6-8d8f" typeName="Asset" hidden="false" id="d099-232c-7c72-c88d">
-          <characteristics>
-            <characteristic name="Summary" typeId="3dcf-9034-fc2d-cd56">Models close to a Graviton Snare risk becoming Pinned.</characteristic>
-            <characteristic name="Setup" typeId="e965-60bc-cd79-63e7">Each Graviton Snare Marker must be set up by the Player that selected it at the end of the Prepare the Battlefield Step of the Mission Sequence.</characteristic>
-            <characteristic name="Effect" typeId="bbd3-5482-ed3a-a3b3">If a Unit is selected to move in the Movement Phase or make a Charge Move while any Models from that Unit are within 6&quot; of the centre of a Graviton Snare Marker, the Controlling Player of that Unit must roll one Dice for each Model from that Unit. On a 1, that Model triggers the snare and the Unit that includes that Model gains the Pinned Tactical Status. and that Graviton Snare Marker is removed from the Battlefield.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="1"/>
-        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="b720-ea51-7339-6a08" id="3a50-b0e8-2623-7dbf" primary="true" name="Asset"/>
-      </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Disruption Emitter Charges" hidden="false" id="e62d-6141-61c3-beee">
       <profiles>
         <profile name="Disruption Emitter Charges" typeId="7ae0-de68-04c6-8d8f" typeName="Asset" hidden="false" id="40a5-a5a5-8ab9-82c7">
           <characteristics>
             <characteristic name="Summary" typeId="3dcf-9034-fc2d-cd56">Disruption Emitters apply a negative modifier to certain characteristics of nearby models.</characteristic>
             <characteristic name="Setup" typeId="e965-60bc-cd79-63e7">Each Disruption Emitter Marker must be set up by the Player that selected it at the start of the Deploy Armies Step. It must be set up with the centre of the Marker anywhere on the Battlefield that is not within their Opponent&apos;s deployment zone.</characteristic>
-            <characteristic name="Effect" typeId="bbd3-5482-ed3a-a3b3">While any Models from a Unit are within 6&quot; of the centre of a Disruption Emitter Marker, modify the Leadership, Cool, Intelligence, and Willpower Characteristics of all Models in that Unit by -1. At the end of each Battle Turn, the player that selected it rolls one Dice for each Disruption Emitter Marker they set up. On a 1, that Disruption Emitter Marker is removed from the Battlefield.</characteristic>
+            <characteristic name="Effect" typeId="bbd3-5482-ed3a-a3b3">While any Models from a Unit are within 6&quot; of the centre of a Disruption Emitter Marker, modify the Leadership, Cool, Intelligence, and Willpower Characteristics of all Models in that Unit by -1. </characteristic>
+            <characteristic name="How To Destroy" typeId="6888-e488-df3f-edcf">At the end of each Battle Turn, the player that selected it rolls one Dice for each Disruption Emitter Marker they set up. On a 1, that Disruption Emitter Marker is removed from the Battlefield.</characteristic>
+            <characteristic name="Traits" typeId="a1e3-4f30-fa22-d127">Attacker</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="81e6-a6ec-25e5-68ff" shared="true" childName="Defender" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Hidden From Defenders</comment>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Forward Ammunition Drop" hidden="false" id="aae5-1bb5-e4c1-595e">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+        <cost name="Combined Warlord and Lord of War Points" typeId="14bd-cad0-cd3d-8b23" value="0"/>
+        <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
+        <cost name="Asset Point(s)" typeId="29b4-fb27-da17-1e21" value="2"/>
+      </costs>
+      <profiles>
+        <profile name="Forward Ammunition Drop" typeId="7ae0-de68-04c6-8d8f" typeName="Asset" hidden="false" id="736d-8b12-034f-b741">
+          <characteristics>
+            <characteristic name="Summary" typeId="3dcf-9034-fc2d-cd56">A Unit near a Forward Ammunition Drop may gain a benefit when making certain Shooting Attacks.</characteristic>
+            <characteristic name="Setup" typeId="e965-60bc-cd79-63e7">Each Forward Ammunition Drop Marker is set up by the Player that selected it at the start of the Deploy Armies Step. It must be set up with the centre of the Marker anywhere on the Battlefield more than 6&quot; away from that Player&apos;s Deployment Zone.</characteristic>
+            <characteristic name="Effect" typeId="bbd3-5482-ed3a-a3b3">When a Unit that has Models within 3&quot; of the centre of a Forward Ammunition Drop Marker is selected to make a Shooting Attack, the Controlling Player of that Unit can declare they will activate that Marker. Only one Forward Ammunition Drop Marker can be utilised per Shooting Attack. When they do, that Player can nominate one Weapon which Models in that Unit have that has a Base Ranged Strength of 5 or less, and does not have the Heavy (X), Ordnance (X), Blast (X), or Template Special Rules. Until that Shooting Attack is resolved, the Firepower Characteristic of each nominated Weapon in that unit is increased by +1.</characteristic>
+            <characteristic name="How To Destroy" typeId="6888-e488-df3f-edcf">After that Shooting Attack has been resolved, the Controlling Player of the Unit making the Shooting Attack rolls one Dice. On a 4+, the Forward Ammunition Drop Marker is removed from the Battlefield.</characteristic>
+            <characteristic name="Traits" typeId="a1e3-4f30-fa22-d127">Explosive</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Graviton Snares" hidden="false" id="0196-e7d7-7a49-8e00">
+      <profiles>
+        <profile name="Graviton Snares" typeId="7ae0-de68-04c6-8d8f" typeName="Asset" hidden="false" id="d099-232c-7c72-c88d">
+          <characteristics>
+            <characteristic name="Summary" typeId="3dcf-9034-fc2d-cd56">Models close to a Graviton Snare risk becoming Pinned.</characteristic>
+            <characteristic name="Setup" typeId="e965-60bc-cd79-63e7">Each Graviton Snare Marker must be set up by the Player that selected it at the end of the Prepare the Battlefield Step of the Mission Sequence.</characteristic>
+            <characteristic name="Effect" typeId="bbd3-5482-ed3a-a3b3">If a Unit is selected to move in the Movement Phase or make a Charge Move while any Models from that Unit are within 6&quot; of the centre of a Graviton Snare Marker, the Controlling Player of that Unit must roll one Dice for each Model from that Unit that is within 6&quot; of the centre of that Graviton Snare Marker. On a 1, that Model triggers the snare and the Unit that includes that Model gains the Pinned Tactical Status, and that Graviton Snare Marker is removed from the Battlefield.</characteristic>
+            <characteristic name="How To Destroy" typeId="6888-e488-df3f-edcf">Removed when triggered (see above).</characteristic>
+            <characteristic name="Traits" typeId="a1e3-4f30-fa22-d127">Defender, Minefield</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="3"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+        <cost name="Combined Warlord and Lord of War Points" typeId="14bd-cad0-cd3d-8b23" value="0"/>
+        <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
+        <cost name="Asset Point(s)" typeId="29b4-fb27-da17-1e21" value="1"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="affa-726d-7fee-f272" shared="true" childName="Attacker" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Hidden From Attackers</comment>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Strategic Cogitator Array" hidden="false" id="a9df-6474-667c-6aee">
+      <profiles>
+        <profile name="Strategic Cogitator Array" typeId="7ae0-de68-04c6-8d8f" typeName="Asset" hidden="false" id="4e72-9a8e-c84e-3541">
+          <characteristics>
+            <characteristic name="Summary" typeId="3dcf-9034-fc2d-cd56">A Strategic Cogitator Array allows a Player to increase the value of a Secondary Objective.</characteristic>
+            <characteristic name="Setup" typeId="e965-60bc-cd79-63e7">Each Strategic Cogitator Array is set up by the Player that selected it at the start of the Deploy Armies Step. It must be set up with the centre of the Marker anywhere within that Player&apos;s Deployment Zone.</characteristic>
+            <characteristic name="Effect" typeId="bbd3-5482-ed3a-a3b3">If the Active Player has a Model with the Command Sub-Type within 3&quot; of the centre of a Strategic Cogitator Array Marker at the end of their Movement Phase, they can request new orders. If they do so, that Player rolls one Dice. If the result is higher than the current Battle Turn number, the request is successful and that Player may select one Secondary Objective in use in that Battle and increate the value of X on that Secondary Objective by 1, and then the Strategic Cogitator Array Marker is removed from the Battlefield. Each Model with the Command Sub-Type can only request new orders once per Turn, and each Secondary Objective can only have its value increased once in this manner</characteristic>
+            <characteristic name="How To Destroy" typeId="6888-e488-df3f-edcf">Removed when used successfully (see above).</characteristic>
+            <characteristic name="Traits" typeId="a1e3-4f30-fa22-d127">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+        <cost name="Combined Warlord and Lord of War Points" typeId="14bd-cad0-cd3d-8b23" value="0"/>
+        <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
+        <cost name="Asset Point(s)" typeId="29b4-fb27-da17-1e21" value="1"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Melta Minefield" hidden="false" id="5244-e331-d959-02db">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+        <cost name="Combined Warlord and Lord of War Points" typeId="14bd-cad0-cd3d-8b23" value="0"/>
+        <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
+        <cost name="Asset Point(s)" typeId="29b4-fb27-da17-1e21" value="2"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="b720-ea51-7339-6a08" id="94ce-eea3-c5de-0495" primary="true" name="Asset"/>
+        <categoryLink targetId="b720-ea51-7339-6a08" id="94b6-3dd7-6b23-8348" primary="true" name="Asset"/>
       </categoryLinks>
+      <profiles>
+        <profile name="Melta Minefield" typeId="7ae0-de68-04c6-8d8f" typeName="Asset" hidden="false" id="f366-6ac2-e3cb-a165">
+          <characteristics>
+            <characteristic name="Summary" typeId="3dcf-9034-fc2d-cd56">Melta Mines may be triggered by larger war machines.</characteristic>
+            <characteristic name="Setup" typeId="e965-60bc-cd79-63e7">Each Melta Minefield Marker must be set up by the Player that selected it at the end of the Prepare the Battlefield Step of the Mission Sequence.</characteristic>
+            <characteristic name="Effect" typeId="bbd3-5482-ed3a-a3b3">If a Unit that contains any Models with the Walker or Vehicle Types ends a move within 6&quot; of the centre of a Melta Minefield Marker, the Controlling Player of that Unit must roll a number of Dice for each Model from that Unit that is within 6&quot; of the centre of that Melta Minefield Marker. The number of Dice rolled for each Model is equal to the Base Wounds or Hull Points Characteristic of that Model. For each mine that is triggered, the Unit suffers a Hit, resolved against the weakest Armour Facing (if the unit has Armour Values) with a Strength of 9, an AP of 2, and a Damage of 2.</characteristic>
+            <characteristic name="How To Destroy" typeId="6888-e488-df3f-edcf">Once these its have been resolved, the Controlling Player of the Unit whose move triggered a mine rolls a Dice. On a 4+, that Melta Minefield Marker is removed from the Battlefield.</characteristic>
+            <characteristic name="Traits" typeId="a1e3-4f30-fa22-d127">Defender, Minefield</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="affa-726d-7fee-f272" shared="true" childName="Attacker" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Hidden From Attackers</comment>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Frag Minefield" hidden="false" id="70c6-7a69-afd3-6044">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+        <cost name="Combined Warlord and Lord of War Points" typeId="14bd-cad0-cd3d-8b23" value="0"/>
+        <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
+        <cost name="Asset Point(s)" typeId="29b4-fb27-da17-1e21" value="2"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="b720-ea51-7339-6a08" id="e779-a38b-6cc9-58df" primary="true" name="Asset"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Frag Minefield" typeId="7ae0-de68-04c6-8d8f" typeName="Asset" hidden="false" id="4668-6653-39a3-1eca">
+          <characteristics>
+            <characteristic name="Summary" typeId="3dcf-9034-fc2d-cd56"/>
+            <characteristic name="Setup" typeId="e965-60bc-cd79-63e7">Each Frag Minefield Marker must be set up by the Player that selected it at the end of the Prepare the Battlefield Step of the Mission Sequence.</characteristic>
+            <characteristic name="Effect" typeId="bbd3-5482-ed3a-a3b3">If a Unit ends a move with one or more Models within 6&quot; of the centre of a Frag Minefield Marker, the Controlling Player of that Unit must roll one Dice for each Model from such a Unit that is within 6&quot; of the centre of that Frag Minefield Marker. On a 1, that Model triggers a mine. Centre a 3&quot; Blast Marker on that Model. Every Unit that has any Models under one of these Blast Markers suffers 1 Hit for each Model from that Unit that is under each Blast Marker. Each such Hit has a Strength of 5, an AP of 5, and a Damage of 1.</characteristic>
+            <characteristic name="How To Destroy" typeId="6888-e488-df3f-edcf">Once these its have been resolved, the Controlling Player of the Moving Unit rolls a Dice. On a 4+, that Frag Minefield Marker is removed from the Battlefield.</characteristic>
+            <characteristic name="Traits" typeId="a1e3-4f30-fa22-d127">Defender, Minefield</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="affa-726d-7fee-f272" shared="true" childName="Attacker" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Hidden From Attackers</comment>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Contingency Device" hidden="false" id="41b1-f4a4-fb8a-cdb7">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+        <cost name="Combined Warlord and Lord of War Points" typeId="14bd-cad0-cd3d-8b23" value="0"/>
+        <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
+        <cost name="Asset Point(s)" typeId="29b4-fb27-da17-1e21" value="2"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="b720-ea51-7339-6a08" id="e10a-f5f2-36c5-84d3" primary="true" name="Asset"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Contingency Device" typeId="7ae0-de68-04c6-8d8f" typeName="Asset" hidden="false" id="f53e-1e54-6adb-8120">
+          <characteristics>
+            <characteristic name="Summary" typeId="3dcf-9034-fc2d-cd56">A Contingency Device may be detonated when a nearby Unit falls back.</characteristic>
+            <characteristic name="Setup" typeId="e965-60bc-cd79-63e7">Each Contingency Device Marker is set up by the Player that selected it at the start of the Deploy Armies Step. It must be set up with the centre of the Marker anywhere within that Payer&apos;s Deployment Zone.</characteristic>
+            <characteristic name="Effect" typeId="bbd3-5482-ed3a-a3b3">If the Player who set up a Contingency Device Marker would make a Panic Check during the Fight Sub-Phase for a Unit with at least one Model within 3&quot; of the centre of a Contingency Device Marker in their Deployment Zone, they can attempt to trigger the device. If they do so, that Player makes an Intelligence Check for that Unit. If the Check is successful, the device is triggered. When the device is triggered, every unit with at least one Model within 6&quot; of the centre of that Contingency Device Marker suffers a number of Hits equal to the number of Models from that Unit that are within 6&quot; of the centre of that Marker. Each such Hit has a Strength of 7, an AP of4, a Damage of 2, and the Breaching (5+) and Shred (6+) Special Rules.</characteristic>
+            <characteristic name="How To Destroy" typeId="6888-e488-df3f-edcf">Once these Hits have been resolved, that Contingency Device Marker is removed from the Battlefield and the Panic Check is made for the Unit as normal.</characteristic>
+            <characteristic name="Traits" typeId="a1e3-4f30-fa22-d127">Defender, Explosive</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="affa-726d-7fee-f272" shared="true" childName="Attacker" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Hidden From Attackers</comment>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tank Traps" hidden="false" id="6a6b-ab2e-2570-ff12">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+        <cost name="Combined Warlord and Lord of War Points" typeId="14bd-cad0-cd3d-8b23" value="0"/>
+        <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
+        <cost name="Asset Point(s)" typeId="29b4-fb27-da17-1e21" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="b720-ea51-7339-6a08" id="3eaf-4045-9bc9-08e3" primary="true" name="Asset"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Tank Traps" typeId="7ae0-de68-04c6-8d8f" typeName="Asset" hidden="false" id="c7d2-412f-f484-04b6">
+          <characteristics>
+            <characteristic name="Summary" typeId="3dcf-9034-fc2d-cd56">Tank Traps block the Movement of Vehicles.</characteristic>
+            <characteristic name="Setup" typeId="e965-60bc-cd79-63e7">Each Tank Traps Marker must be a maximum of 60mm wide and be set up by the Player that selected it at the start of the Deploy Armies Step. It must be set up with the centre of the Marker anywhere on the Battlefield that is not within their Opponent&apos;s Deployment Zone.</characteristic>
+            <characteristic name="Effect" typeId="bbd3-5482-ed3a-a3b3">A Tank Traps Marker is treated as Impassable terrain for Vehicle Models (this is an exception to the Battlefield Asset Markers Rules). </characteristic>
+            <characteristic name="How To Destroy" typeId="6888-e488-df3f-edcf">Each Tank Traps Marker can be selected as the Target of Charges and of Ranged and Melee Attacks, and is treated as a Model with the Vehicle Type with a single Facing with an Armour Value of 14 and a Hull Points Characteristic of 2. A Each Tank Traps Marker cannot gain any Tactical Statuses.</characteristic>
+            <characteristic name="Traits" typeId="a1e3-4f30-fa22-d127">Defender</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="affa-726d-7fee-f272" shared="true" childName="Attacker" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Hidden From Attackers</comment>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shroud Canister" hidden="false" id="02e0-ca11-ac55-0228">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+        <cost name="Combined Warlord and Lord of War Points" typeId="14bd-cad0-cd3d-8b23" value="0"/>
+        <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
+        <cost name="Asset Point(s)" typeId="29b4-fb27-da17-1e21" value="1"/>
+      </costs>
+      <profiles>
+        <profile name="Shroud Canister" typeId="7ae0-de68-04c6-8d8f" typeName="Asset" hidden="false" id="4ddd-5d7c-813f-79b0">
+          <characteristics>
+            <characteristic name="Summary" typeId="3dcf-9034-fc2d-cd56">When triggered, Shroud Canisters can provide the Shrouded (X) Special Rule to Models nearby.</characteristic>
+            <characteristic name="Setup" typeId="e965-60bc-cd79-63e7">Each Shroud Canister Marker must be set up by the Player that selected it at the end of the Prepare the Battlefield Step of the Mission Sequence.</characteristic>
+            <characteristic name="Effect" typeId="bbd3-5482-ed3a-a3b3">In the Effects Sub-Phase of the End Phase of their Player Turn, the Player who set up each Shroud Canister can select to trigger it. If they do, until the Shroud Canister Marker is removed:
+- Models within 3&quot; of the centre of a triggered Shroud Canister Marker have the Shrouded (4+) Special Rule.
+- Models within 6&quot; of the centre of a triggered Shroud Canister Marker have the Shrouded (5+) Special Rule.
+- Models within 9&quot; of the centre of a triggered Shroud Canister Marker have the Shrouded (6+) Special Rule.</characteristic>
+            <characteristic name="How To Destroy" typeId="6888-e488-df3f-edcf">In the Effects Sub-Phase of the End Phase of the next Player Turn, a triggered Shroud Canister is removed from the Battlefield.</characteristic>
+            <characteristic name="Traits" typeId="a1e3-4f30-fa22-d127">Attacker</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="81e6-a6ec-25e5-68ff" shared="true" childName="Defender" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Hidden From Defenders</comment>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Neutron Bomb" hidden="false" id="a74f-010a-42ac-9d13">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+        <cost name="Combined Warlord and Lord of War Points" typeId="14bd-cad0-cd3d-8b23" value="0"/>
+        <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
+        <cost name="Asset Point(s)" typeId="29b4-fb27-da17-1e21" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="b720-ea51-7339-6a08" id="1a65-e6ba-025e-3161" primary="true" name="Asset"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Neutron Bomb" typeId="7ae0-de68-04c6-8d8f" typeName="Asset" hidden="false" id="b616-d64c-7dc9-e233">
+          <characteristics>
+            <characteristic name="Summary" typeId="3dcf-9034-fc2d-cd56">When triggered, Vehicle and Walker Models near a Neutron Bomb may gain the Suppressed Tactical Status.</characteristic>
+            <characteristic name="Setup" typeId="e965-60bc-cd79-63e7">Each Neutron Bomb Marker must be set up by the Player that selected it at the end of the Prepare the Battlefield Step of the Mission Sequence.</characteristic>
+            <characteristic name="Effect" typeId="bbd3-5482-ed3a-a3b3">If a Unit is selected to move in the Movement Phase or make a Charge Move while any Models from that Unit with the Vehicle or Walker Type are within 6&quot; of the centre of a Neutron Bomb Marker, the Controlling Player of that Unit must roll one Dice for each Model from that Unit which is within 6&quot; of the centre of a Neutron Bomb Marker. On a 4+, that Model triggers the Neutron Bomb and the Unit that includes that Model gains the Suppressed Tactical Status, and that Neutron Bomb Marker is removed from the Battlefield.</characteristic>
+            <characteristic name="How To Destroy" typeId="6888-e488-df3f-edcf">Removed when triggered (see above).</characteristic>
+            <characteristic name="Traits" typeId="a1e3-4f30-fa22-d127">Defender, Minefield</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="affa-726d-7fee-f272" shared="true" childName="Attacker" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Hidden From Attackers</comment>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Auto-Repair Servitor Clade" hidden="false" id="2f1a-ca50-8f54-abfb">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+        <cost name="Combined Warlord and Lord of War Points" typeId="14bd-cad0-cd3d-8b23" value="0"/>
+        <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
+        <cost name="Asset Point(s)" typeId="29b4-fb27-da17-1e21" value="2"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="b720-ea51-7339-6a08" id="acf4-e204-704c-120e" primary="true" name="Asset"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Auto-Repair Servitor Clade" typeId="7ae0-de68-04c6-8d8f" typeName="Asset" hidden="false" id="785c-4a10-c618-056e">
+          <characteristics>
+            <characteristic name="Summary" typeId="3dcf-9034-fc2d-cd56">Auto-Repair Servitor Clades can assist in removing Tactical Statuses from friendly Vehicle Models.</characteristic>
+            <characteristic name="Setup" typeId="e965-60bc-cd79-63e7">Each Auto-Repair Servitor Clade Marker is set up by the Player that selected it at the start of the Deploy Armies Step. It must be set up with the centre of the Marker anywhere within that Player&apos;s Deployment Zone.</characteristic>
+            <characteristic name="Effect" typeId="bbd3-5482-ed3a-a3b3">At the start of the Defender&apos;s Statuses Sub-Phase, that Player can select one Model with the Vehicle Type that is within 4&quot; of the centre of the Auto-Repair Servitor Clade Marker they set up. Until the end of that Sub-Phase, that Vehicle has the Auto-Repair (4+) Special Rule.</characteristic>
+            <characteristic name="How To Destroy" typeId="6888-e488-df3f-edcf">If a Blast Marker covers the centre of an Auto-Repair Servitor Clade Marker, then after that Shooting Attack has been resolved, the Controlling Player of the Unit making the Shooting Attack must roll one Dice. On a 4+, that Auto-Repair Servitor Clade Marker is removed.</characteristic>
+            <characteristic name="Traits" typeId="a1e3-4f30-fa22-d127">Defender</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="affa-726d-7fee-f272" shared="true" childName="Attacker" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Hidden From Attackers</comment>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Auto-Repair (X)" id="5477-baa8-6883-0a9a" hidden="false" type="rule" targetId="3973-ed50-1482-ff4a">
+          <modifiers>
+            <modifier type="set" value="Auto-Repair (4+)" field="name"/>
+          </modifiers>
+          <comment>4+</comment>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Wayfinder Device" hidden="false" id="897a-1ca7-ce3c-c361">
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+        <cost name="Combined Warlord and Lord of War Points" typeId="14bd-cad0-cd3d-8b23" value="0"/>
+        <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
+        <cost name="Asset Point(s)" typeId="29b4-fb27-da17-1e21" value="2"/>
+      </costs>
+      <profiles>
+        <profile name="Wayfinder Device" typeId="7ae0-de68-04c6-8d8f" typeName="Asset" hidden="false" id="c4c7-d41f-c118-d2c4">
+          <characteristics>
+            <characteristic name="Summary" typeId="3dcf-9034-fc2d-cd56">A Wayfinder Device can grant nearby Models the Move Through Cover Special Rule.</characteristic>
+            <characteristic name="Setup" typeId="e965-60bc-cd79-63e7">Each Wayfinder Device Marker must be set up by the Player that selected it at the start of the Deploy Armies Step. It must be set up with the centre of the Marker anywhere on the Battlefield that is not within their Opponent&apos;s Deployment Zone.</characteristic>
+            <characteristic name="Effect" typeId="bbd3-5482-ed3a-a3b3">In the Effects Sub-Phase of their Player Turn, the Player who set up a Wayfinder Device can select to trigger it. If they do, they can select one Area of Difficult or Dangerous Terrain that is wholly within 12&quot; of the centre of that Wayfinder Device Marker. Models from that Player&apos;s Army are treated as having the Move Through Cover Special Rule while moving through the selected Area Terrain during that Turn.</characteristic>
+            <characteristic name="How To Destroy" typeId="6888-e488-df3f-edcf">N/A</characteristic>
+            <characteristic name="Traits" typeId="a1e3-4f30-fa22-d127">Attacker</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="81e6-a6ec-25e5-68ff" shared="true" childName="Defender" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <comment>Hidden From Defenders</comment>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
@@ -142,26 +439,60 @@
     <forceEntry name="Battlefield Assets" id="10ac-064d-70cc-cc99" hidden="false">
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="a697-3899-b304-6cb9" includeChildSelections="true"/>
+        <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="d252-c75b-9e49-d7fc" includeChildSelections="true"/>
+        <constraint type="max" value="2" field="limit::29b4-fb27-da17-1e21" scope="roster" shared="true" id="8009-17d9-2a5c-684f" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <modifiers>
-        <modifier type="set" value="2" field="57e3-1031-7d4d-5ae3">
+        <modifier type="add" value="You have exceeded your Asset Point limit" field="error">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="695d-27a5-1c3e-5cb2" shared="true" includeChildSelections="true" childName="0-1500" includeChildForces="true"/>
+                    <condition type="greaterThan" value="2" field="29b4-fb27-da17-1e21" scope="roster" childId="b720-ea51-7339-6a08" shared="true" includeChildSelections="true" includeChildForces="true" childName="Asset"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="e70a-ceeb-e5df-474f" shared="true" includeChildSelections="true" childName="3501-5000" includeChildForces="true"/>
+                    <condition type="greaterThan" value="8" field="29b4-fb27-da17-1e21" scope="roster" childId="b720-ea51-7339-6a08" shared="true" includeChildSelections="true" includeChildForces="true" childName="Asset"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="7a51-848e-4e60-d050" shared="true" includeChildSelections="true" childName="5001+" includeChildForces="true"/>
+                    <condition type="greaterThan" value="10" field="29b4-fb27-da17-1e21" scope="roster" childId="b720-ea51-7339-6a08" shared="true" includeChildSelections="true" includeChildForces="true" childName="Asset"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="6c42-8151-9658-9a25" shared="true" includeChildSelections="true" childName="1501-3500" includeChildForces="true"/>
+                    <condition type="greaterThan" value="5" field="29b4-fb27-da17-1e21" scope="roster" childId="b720-ea51-7339-6a08" shared="true" includeChildSelections="true" includeChildForces="true" childName="Asset"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" value="3" field="8009-17d9-2a5c-684f">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="self" childId="695d-27a5-1c3e-5cb2" shared="true" includeChildSelections="true" includeChildForces="true" childName="0-1500"/>
+            <condition type="equalTo" value="1" field="selections" scope="roster" childId="6c42-8151-9658-9a25" shared="true" includeChildSelections="true" childName="1501-3500" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="5" field="57e3-1031-7d4d-5ae3">
+        <modifier type="increment" value="6" field="8009-17d9-2a5c-684f">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="self" childId="6c42-8151-9658-9a25" shared="true" includeChildSelections="true" includeChildForces="true" childName="1501-3500"/>
+            <condition type="equalTo" value="1" field="selections" scope="roster" childId="e70a-ceeb-e5df-474f" shared="true" includeChildSelections="true" childName="3501-5000" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="8" field="57e3-1031-7d4d-5ae3">
+        <modifier type="increment" value="8" field="8009-17d9-2a5c-684f">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="self" childId="e70a-ceeb-e5df-474f" shared="true" includeChildSelections="true" includeChildForces="true" childName="3501-5000"/>
+            <condition type="equalTo" value="1" field="selections" scope="roster" childId="7a51-848e-4e60-d050" shared="true" includeChildSelections="true" childName="5001+" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="10" field="57e3-1031-7d4d-5ae3">
+        <modifier type="increment" value="3" field="8009-17d9-2a5c-684f">
           <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="self" childId="7a51-848e-4e60-d050" shared="true" includeChildSelections="true" includeChildForces="true" childName="5001+"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6c42-8151-9658-9a25" shared="true" includeChildSelections="true" childName="1501-3500"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -180,17 +511,133 @@
             <categoryLink name="Army Configuration" hidden="false" id="9ad5-bc0f-1944-fee6" targetId="abfa-86ab-1726-077a"/>
             <categoryLink name="Allegiance" hidden="false" id="95b9-8c82-2889-fb8b" targetId="c408-52f1-b632-4c82"/>
           </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="forces" scope="parent" shared="true" id="3513-b756-b04d-ab69" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="forces" scope="parent" shared="true" id="a304-1aec-f10e-4607" includeChildSelections="false"/>
+          </constraints>
         </forceEntry>
       </forceEntries>
     </forceEntry>
   </forceEntries>
   <entryLinks>
-    <entryLink import="true" name="Disruption Emitter Charges" hidden="false" id="ded0-3184-384d-e4d5" type="selectionEntry" targetId="e62d-6141-61c3-beee"/>
-    <entryLink import="true" name="Forward Ammunition Drop" hidden="false" id="01b8-27d8-5aed-5ec2" type="selectionEntry" targetId="7c64-4927-263b-d803"/>
-    <entryLink import="true" name="Graviton Snares" hidden="false" id="3fb2-82c2-0993-f3c9" type="selectionEntry" targetId="add0-a31f-9c64-db1f"/>
-    <entryLink import="true" name="Strategic Cogitator Array" hidden="false" id="5260-79ca-1b5d-3e81" type="selectionEntry" targetId="f397-7bc2-a0c5-b230"/>
+    <entryLink import="true" name="Disruption Emitter Charges" hidden="false" id="ded0-3184-384d-e4d5" type="selectionEntry" targetId="9f06-57fd-b80a-1172">
+      <categoryLinks>
+        <categoryLink targetId="b720-ea51-7339-6a08" id="7e73-4d58-50c9-5a81" primary="true" name="Asset"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="The Attacker Asset Trait" id="047d-9bbf-268a-743e" hidden="false" type="rule" targetId="dcb6-3210-cd5a-9d00"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Strategic Cogitator Array" hidden="false" id="aa98-b6d7-0420-3ae3" type="selectionEntry" targetId="a9df-6474-667c-6aee">
+      <categoryLinks>
+        <categoryLink targetId="b720-ea51-7339-6a08" id="896f-9cd0-cd68-2862" primary="true" name="Asset"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Graviton Snares" hidden="false" id="0118-03b1-4461-33bd" type="selectionEntry" targetId="0196-e7d7-7a49-8e00">
+      <categoryLinks>
+        <categoryLink targetId="b720-ea51-7339-6a08" id="20c4-862b-3b5d-f84d" primary="true" name="Asset"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="The Defender Asset Trait" id="f96d-304a-700d-4b0b" hidden="false" type="rule" targetId="ad11-1191-3191-7509"/>
+        <infoLink name="The Minefield Asset Trait" id="e608-5519-803d-c4a7" hidden="false" type="rule" targetId="1d82-cb03-376e-f062"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Forward Ammunition Drop" hidden="false" id="3f15-785f-15c3-5117" type="selectionEntry" targetId="aae5-1bb5-e4c1-595e">
+      <categoryLinks>
+        <categoryLink targetId="b720-ea51-7339-6a08" id="1596-adb0-c8d9-5b5c" primary="true" name="Asset"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="The Explosive Asset Trait" id="c6d7-717c-a2ae-0129" hidden="false" type="rule" targetId="29af-b990-5cfb-cf20"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Auto-Repair Servitor Clade" hidden="false" id="355e-60d6-ade7-b29a" type="selectionEntry" targetId="2f1a-ca50-8f54-abfb">
+      <categoryLinks>
+        <categoryLink targetId="b720-ea51-7339-6a08" id="e4cb-da99-cb9c-ca41" primary="true" name="Asset"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="The Defender Asset Trait" id="bda5-3c58-5709-2753" hidden="false" type="rule" targetId="ad11-1191-3191-7509"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Contingency Device" hidden="false" id="21b2-f34b-ae9b-ed4e" type="selectionEntry" targetId="41b1-f4a4-fb8a-cdb7">
+      <categoryLinks>
+        <categoryLink targetId="b720-ea51-7339-6a08" id="d6fd-267d-8a3f-6f0a" primary="true" name="Asset"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="The Defender Asset Trait" id="b0d5-9255-f879-7a29" hidden="false" type="rule" targetId="ad11-1191-3191-7509"/>
+        <infoLink name="The Explosive Asset Trait" id="83f0-cd34-dd9c-887d" hidden="false" type="rule" targetId="29af-b990-5cfb-cf20"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Frag Minefield" hidden="false" id="2ca2-6fcc-808f-1e6c" type="selectionEntry" targetId="70c6-7a69-afd3-6044">
+      <categoryLinks>
+        <categoryLink targetId="b720-ea51-7339-6a08" id="c04f-b897-b6f2-b0fb" primary="true" name="Asset"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="The Defender Asset Trait" id="448c-1f7c-7070-5270" hidden="false" type="rule" targetId="ad11-1191-3191-7509"/>
+        <infoLink name="The Minefield Asset Trait" id="987e-e2d0-ec32-0828" hidden="false" type="rule" targetId="1d82-cb03-376e-f062"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Melta Minefield" hidden="false" id="0dd3-b5c3-2b0b-217d" type="selectionEntry" targetId="5244-e331-d959-02db">
+      <infoLinks>
+        <infoLink name="The Defender Asset Trait" id="4c90-1a19-ff08-1bf6" hidden="false" type="rule" targetId="ad11-1191-3191-7509"/>
+        <infoLink name="The Minefield Asset Trait" id="6d63-2c83-b37a-d0ce" hidden="false" type="rule" targetId="1d82-cb03-376e-f062"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Neutron Bomb" hidden="false" id="e08b-45c9-9920-768f" type="selectionEntry" targetId="a74f-010a-42ac-9d13">
+      <categoryLinks>
+        <categoryLink targetId="b720-ea51-7339-6a08" id="0101-2433-7a8c-0f3c" primary="true" name="Asset"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="The Defender Asset Trait" id="4047-963c-726e-e9cd" hidden="false" type="rule" targetId="ad11-1191-3191-7509"/>
+        <infoLink name="The Minefield Asset Trait" id="6516-c9c5-c81a-ab8a" hidden="false" type="rule" targetId="1d82-cb03-376e-f062"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Shroud Canister" hidden="false" id="c7f9-ccf6-01ac-a5ff" type="selectionEntry" targetId="02e0-ca11-ac55-0228">
+      <categoryLinks>
+        <categoryLink targetId="b720-ea51-7339-6a08" id="bff0-ab70-3e90-5cd6" primary="true" name="Asset"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="The Attacker Asset Trait" id="e769-b398-512f-9d59" hidden="false" type="rule" targetId="dcb6-3210-cd5a-9d00"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Tank Traps" hidden="false" id="b6a0-c840-8a65-6d8c" type="selectionEntry" targetId="6a6b-ab2e-2570-ff12">
+      <categoryLinks>
+        <categoryLink targetId="b720-ea51-7339-6a08" id="766b-1041-f97e-d2ee" primary="true" name="Asset"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="The Defender Asset Trait" id="9fde-7ecc-cc6e-5d7b" hidden="false" type="rule" targetId="ad11-1191-3191-7509"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Wayfinder Device" hidden="false" id="195d-5927-ef9f-7e6a" type="selectionEntry" targetId="897a-1ca7-ce3c-c361">
+      <categoryLinks>
+        <categoryLink targetId="b720-ea51-7339-6a08" id="fac0-21df-b488-fba0" primary="true" name="Asset"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="The Attacker Asset Trait" id="234f-893f-c2ff-726d" hidden="false" type="rule" targetId="dcb6-3210-cd5a-9d00"/>
+      </infoLinks>
+    </entryLink>
   </entryLinks>
   <costTypes>
-    <costType name="Asset Point(s)" id="29b4-fb27-da17-1e21" defaultCostLimit="-1"/>
+    <costType name="Asset Point(s)" id="29b4-fb27-da17-1e21" defaultCostLimit="-1" hidden="true">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden"/>
+      </modifiers>
+    </costType>
   </costTypes>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Special Rules" id="b2c2-5ac2-a2af-1f89" targetId="106b-693b-99f2-00c3"/>
+  </catalogueLinks>
+  <sharedRules>
+    <rule name="The Minefield Asset Trait" id="1d82-cb03-376e-f062" hidden="false">
+      <description>A Battlefield Asset with the Minefield Trait must be set up with the centre of the Marker anywhere on the Battlefield that is more than 6&quot; from the centre of any other Battlefield Asset Markers with the Minefield Asset Trait, and not within an opponent&apos;s Deployment Zone.</description>
+    </rule>
+    <rule name="The Explosive Asset Trait" id="29af-b990-5cfb-cf20" hidden="false" publicationId="10e2-87c7-4862-2cc4" page="40">
+      <description>If a Blast Marker covers the centre of a Battlefield Asset Marker with the Explosive Asset Trait, then after that Shooting Attack has been resolved, the Controlling Player of the Unit making the Shooting Attack must roll one Dice. On a 4+, every Unit within 6&quot; of the centre of that Battlefield Asset Marker suffers a number of hits equal to the Asset Points cost of that Marker. Each such hit has a Strength of 8, an AP of &apos;-&apos;, a Damage of 1, and the Breaching (5+) and Shred (5+) Special Rules.</description>
+    </rule>
+    <rule name="The Attacker Asset Trait" id="dcb6-3210-cd5a-9d00" hidden="false">
+      <description>Battlefield Assets with the Attacker Trait may only be selected by the Player taking that role in the Mission being played.</description>
+    </rule>
+    <rule name="The Defender Asset Trait" id="ad11-1191-3191-7509" hidden="false">
+      <description>Battlefield Assets with the Defender Trait may only be selected by the Player taking that role in the Mission being played.</description>
+    </rule>
+  </sharedRules>
 </catalogue>
