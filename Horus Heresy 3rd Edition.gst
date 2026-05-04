@@ -29050,22 +29050,6 @@
         <categoryLink name="Cult Operative" hidden="false" id="c80d-3c3d-d65a-85af" targetId="4f71-897f-8ae1-303b"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry name="Battlefield Assets" id="0ed2-1c3d-bb4c-f5f1" hidden="false">
-      <modifiers>
-        <modifier type="increment" value="3" field="57e3-1031-7d4d-5ae3">
-          <conditions>
-            <condition type="greaterThan" value="1500" field="limit::9893-c379-920b-8982" scope="parent" shared="true" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <forceEntries>
-        <forceEntry name="Battlefield Assets" id="7abd-a2ae-2722-40b4" hidden="false">
-          <categoryLinks>
-            <categoryLink name="Asset" hidden="false" id="0194-ed0c-416b-e2a6" targetId="b720-ea51-7339-6a08"/>
-          </categoryLinks>
-        </forceEntry>
-      </forceEntries>
-    </forceEntry>
   </forceEntries>
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Allegiance" hidden="false" id="f775-2f81-bd18-2777" sortIndex="1">
@@ -29097,13 +29081,7 @@
   </publications>
   <costTypes>
     <costType name="Point(s)" id="9893-c379-920b-8982" defaultCostLimit="-1"/>
-    <costType name="Asset Point(s)" id="57e3-1031-7d4d-5ae3" defaultCostLimit="2" hidden="true">
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <comment>Hidden from new list screen, but displays count</comment>
-        </modifier>
-      </modifiers>
-    </costType>
+    <costType name="Asset Point(s)" id="57e3-1031-7d4d-5ae3" defaultCostLimit="2" hidden="false"/>
     <costType name="Reaction Point(s)" id="c9ba-097e-c47f-ecc2" defaultCostLimit="-1" hidden="true"/>
     <costType name="Auxiliary Detachment(s)" id="3e8e-05ee-be52-12d6" defaultCostLimit="-1" hidden="true">
       <modifiers>
