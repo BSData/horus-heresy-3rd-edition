@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="69c0-2783-c191-e6a2" name="Legio Titanicus" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="42" revision="5" authorName="m455954" battleScribeVersion="2.03" type="catalogue">
   <forceEntries>
-    <forceEntry name="Legio Titanicus" id="c547-2614-91aa-456d" hidden="false">
+    <forceEntry name="Legio Titanicus" id="c547-2614-91aa-456d" hidden="false" childForcesLabel="Detachments">
       <forceEntries>
         <forceEntry name="Titan Ordinal Primary Detachment" id="3290-f32c-c54a-2cc9" hidden="true">
           <categoryLinks>
@@ -801,12 +801,12 @@
               <modifiers>
                 <modifier type="set" value="4" field="082d-2db1-c27a-ec76">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="4862-2ee9-51bb-65ae" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b770-df60-4a57-79df" shared="true" includeChildSelections="true" childName="Senioris"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="5" field="082d-2db1-c27a-ec76">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="adc0-b6b0-621e-f500" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="50f4-e37d-7540-1938" shared="true" includeChildSelections="true" childName="Majoris"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -882,40 +882,12 @@
           </modifiers>
         </infoLink>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="[Crew]" id="1bad-875e-9ec7-9dc6" hidden="false">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="504f-feb4-5cc1-e939"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fcf-d734-487f-6f21"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Minoris" hidden="false" id="f490-938f-7a59-3cea" type="selectionEntry" targetId="cf0a-5a49-43f4-58d6" sortIndex="1">
-              <categoryLinks>
-                <categoryLink targetId="c771-fac1-0bda-44da" id="81c2-96a0-7354-06e1" primary="false" name="Minoris Crew"/>
-              </categoryLinks>
-            </entryLink>
-            <entryLink import="true" name="Senioris" hidden="false" id="4862-2ee9-51bb-65ae" type="selectionEntry" targetId="b770-df60-4a57-79df" sortIndex="2">
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="50"/>
-              </costs>
-              <categoryLinks>
-                <categoryLink targetId="9517-f191-ecb8-128f" id="e417-548e-e257-902a" primary="false" name="Senioris Crew"/>
-              </categoryLinks>
-            </entryLink>
-            <entryLink import="true" name="Majoris" hidden="false" id="adc0-b6b0-621e-f500" type="selectionEntry" targetId="50f4-e37d-7540-1938" sortIndex="3">
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="100"/>
-              </costs>
-              <categoryLinks>
-                <categoryLink targetId="901e-87f3-be7f-c3ed" id="2f4d-6430-f58a-dc38" primary="false" name="Majoris Crew"/>
-              </categoryLinks>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="3420-1652-ccd9-aa8e" id="d444-3b8e-0917-40d2" primary="false" name="Warlord or Lord of War"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="[Crew]" hidden="false" id="ee44-728b-00c3-43bf" type="selectionEntryGroup" targetId="f6b0-7592-d7e8-aaeb"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Vulcan mega-bolter" hidden="false" id="bdab-7645-227b-1efb">
       <profiles>
@@ -1076,12 +1048,12 @@
               <modifiers>
                 <modifier type="set" value="4" field="7ecd-00b1-f94c-ae3c">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="10d8-417a-09ab-e9f9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b770-df60-4a57-79df" shared="true" includeChildSelections="true" childName="Senioris"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="5" field="7ecd-00b1-f94c-ae3c">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cc6-93ba-c8af-de72" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="50f4-e37d-7540-1938" shared="true" includeChildSelections="true" childName="Majoris"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1098,12 +1070,12 @@
               <modifiers>
                 <modifier type="set" value="4" field="082d-2db1-c27a-ec76">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="10d8-417a-09ab-e9f9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b770-df60-4a57-79df" shared="true" includeChildSelections="true" childName="Senioris"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="5" field="082d-2db1-c27a-ec76">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="8cc6-93ba-c8af-de72" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="50f4-e37d-7540-1938" shared="true" includeChildSelections="true" childName="Majoris"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1197,40 +1169,12 @@
           </modifiers>
         </infoLink>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="[Crew]" id="d488-c78e-1391-9610" hidden="false">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2c8-c9cc-4414-8d40"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7098-db76-1b10-845d"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Minoris" hidden="false" id="d93a-43a8-ceef-4fbc" type="selectionEntry" targetId="cf0a-5a49-43f4-58d6" sortIndex="1">
-              <categoryLinks>
-                <categoryLink targetId="c771-fac1-0bda-44da" id="83ad-3454-da56-1f40" primary="false" name="Minoris Crew"/>
-              </categoryLinks>
-            </entryLink>
-            <entryLink import="true" name="Senioris" hidden="false" id="10d8-417a-09ab-e9f9" type="selectionEntry" targetId="b770-df60-4a57-79df" sortIndex="2">
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="100"/>
-              </costs>
-              <categoryLinks>
-                <categoryLink targetId="9517-f191-ecb8-128f" id="3d26-8d9c-9953-a6fe" primary="false" name="Senioris Crew"/>
-              </categoryLinks>
-            </entryLink>
-            <entryLink import="true" name="Majoris" hidden="false" id="8cc6-93ba-c8af-de72" type="selectionEntry" targetId="50f4-e37d-7540-1938" sortIndex="3">
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="200"/>
-              </costs>
-              <categoryLinks>
-                <categoryLink targetId="901e-87f3-be7f-c3ed" id="56e5-8f65-e684-a8c8" primary="false" name="Majoris Crew"/>
-              </categoryLinks>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="3420-1652-ccd9-aa8e" id="e77f-ffb2-da28-bcc4" primary="false" name="Warlord or Lord of War"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="[Crew]" hidden="false" id="8b1b-ddbb-3a80-1c99" type="selectionEntryGroup" targetId="f6b0-7592-d7e8-aaeb"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Minoris" hidden="false" id="cf0a-5a49-43f4-58d6">
       <categoryLinks>
@@ -1438,12 +1382,12 @@
               <modifiers>
                 <modifier type="set" value="4" field="7ecd-00b1-f94c-ae3c">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="f85f-a878-c032-7e9e" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b770-df60-4a57-79df" shared="true" includeChildSelections="true" childName="Senioris"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="5" field="7ecd-00b1-f94c-ae3c">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="89d0-0d94-4a5f-232f" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="50f4-e37d-7540-1938" shared="true" includeChildSelections="true" childName="Majoris"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1460,12 +1404,12 @@
               <modifiers>
                 <modifier type="set" value="4" field="082d-2db1-c27a-ec76">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="f85f-a878-c032-7e9e" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b770-df60-4a57-79df" shared="true" includeChildSelections="true" childName="Senioris"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="5" field="082d-2db1-c27a-ec76">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="89d0-0d94-4a5f-232f" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="50f4-e37d-7540-1938" shared="true" includeChildSelections="true" childName="Majoris"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1594,40 +1538,12 @@
           </modifiers>
         </infoLink>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="[Crew]" id="aacb-8925-093a-ec7f" hidden="false">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="72c6-5a44-599a-e5de"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0284-c52b-c3df-1dee"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Minoris" hidden="false" id="205b-60f1-0100-9651" type="selectionEntry" targetId="cf0a-5a49-43f4-58d6" sortIndex="1">
-              <categoryLinks>
-                <categoryLink name="Minoris Crew" hidden="false" id="d9eb-f4b9-4911-1fc7" targetId="c771-fac1-0bda-44da" primary="false"/>
-              </categoryLinks>
-            </entryLink>
-            <entryLink import="true" name="Senioris" hidden="false" id="f85f-a878-c032-7e9e" type="selectionEntry" targetId="b770-df60-4a57-79df" sortIndex="2">
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="200"/>
-              </costs>
-              <categoryLinks>
-                <categoryLink name="Senioris Crew" hidden="false" id="15f0-f3ae-4d71-d03c" targetId="9517-f191-ecb8-128f" primary="false"/>
-              </categoryLinks>
-            </entryLink>
-            <entryLink import="true" name="Majoris" hidden="false" id="89d0-0d94-4a5f-232f" type="selectionEntry" targetId="50f4-e37d-7540-1938" sortIndex="3">
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="350"/>
-              </costs>
-              <categoryLinks>
-                <categoryLink name="Majoris Crew" hidden="false" id="0edc-ba80-938b-897a" targetId="901e-87f3-be7f-c3ed" primary="false"/>
-              </categoryLinks>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="3420-1652-ccd9-aa8e" id="ecab-0298-96df-faa2" primary="false" name="Warlord or Lord of War"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="[Crew]" hidden="false" id="b178-d4ed-b1db-70d2" type="selectionEntryGroup" targetId="f6b0-7592-d7e8-aaeb"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Nemesis quake cannon" hidden="false" id="f206-166d-c2bc-f5f8">
       <profiles>
@@ -1753,12 +1669,12 @@
               <modifiers>
                 <modifier type="set" value="4" field="7ecd-00b1-f94c-ae3c">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="a5f4-5bdb-6117-b35c" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b770-df60-4a57-79df" shared="true" includeChildSelections="true" childName="Senioris"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="5" field="7ecd-00b1-f94c-ae3c">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="0b10-d1c1-0da2-cc2b" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="50f4-e37d-7540-1938" shared="true" includeChildSelections="true" childName="Majoris"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1775,12 +1691,12 @@
               <modifiers>
                 <modifier type="set" value="4" field="082d-2db1-c27a-ec76">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="a5f4-5bdb-6117-b35c" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="b770-df60-4a57-79df" shared="true" includeChildSelections="true" childName="Senioris"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="5" field="082d-2db1-c27a-ec76">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="0b10-d1c1-0da2-cc2b" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="unit" childId="50f4-e37d-7540-1938" shared="true" includeChildSelections="true" childName="Majoris"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1954,40 +1870,12 @@
           </modifiers>
         </infoLink>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="[Crew]" id="68ec-799f-dfeb-49a4" hidden="false">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="71f2-5a9a-2f4a-4fa8"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3612-a837-bbc9-9be4"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Minoris" hidden="false" id="c426-6474-9f8f-573f" type="selectionEntry" targetId="cf0a-5a49-43f4-58d6" sortIndex="1">
-              <categoryLinks>
-                <categoryLink name="Minoris Crew" hidden="false" id="4d1e-4122-2904-9a67" targetId="c771-fac1-0bda-44da" primary="false"/>
-              </categoryLinks>
-            </entryLink>
-            <entryLink import="true" name="Senioris" hidden="false" id="a5f4-5bdb-6117-b35c" type="selectionEntry" targetId="b770-df60-4a57-79df" sortIndex="2">
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="300"/>
-              </costs>
-              <categoryLinks>
-                <categoryLink name="Senioris Crew" hidden="false" id="fe7d-3de3-8ffd-05f5" targetId="9517-f191-ecb8-128f" primary="false"/>
-              </categoryLinks>
-            </entryLink>
-            <entryLink import="true" name="Majoris" hidden="false" id="0b10-d1c1-0da2-cc2b" type="selectionEntry" targetId="50f4-e37d-7540-1938" sortIndex="3">
-              <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="500"/>
-              </costs>
-              <categoryLinks>
-                <categoryLink name="Majoris Crew" hidden="false" id="b0dd-dba3-bf34-efca" targetId="901e-87f3-be7f-c3ed" primary="false"/>
-              </categoryLinks>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="3420-1652-ccd9-aa8e" id="6a23-82c9-d8ca-7101" primary="false" name="Warlord or Lord of War"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="[Crew]" hidden="false" id="ed93-4d31-2e14-8f48" type="selectionEntryGroup" targetId="f6b0-7592-d7e8-aaeb"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Mori quake cannon" hidden="false" id="0038-bcf2-098d-e4da">
       <profiles>
@@ -2214,6 +2102,98 @@
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Common Prime Benefits" hidden="false" id="4b3d-19f9-ed21-3457" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="[Crew]" id="f6b0-7592-d7e8-aaeb" hidden="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="17cc-1ad3-34ed-7ad1"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9580-3b39-4ab7-52e5"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Minoris" hidden="false" id="aa37-fce9-3ccd-f881" type="selectionEntry" targetId="cf0a-5a49-43f4-58d6" sortIndex="1">
+          <categoryLinks>
+            <categoryLink name="Minoris Crew" hidden="false" id="ce42-e38f-a583-3e49" targetId="c771-fac1-0bda-44da" primary="false"/>
+          </categoryLinks>
+          <rules>
+            <rule name="Minoris" id="e498-058b-f7ab-f88a" hidden="false">
+              <description>Do not increase the BS Characteristic of this Model&apos;s Arms Profile or Carapace Profile</description>
+            </rule>
+          </rules>
+        </entryLink>
+        <entryLink import="true" name="Senioris" hidden="false" id="c374-ec7d-a929-a31e" type="selectionEntry" targetId="b770-df60-4a57-79df" sortIndex="2">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="50"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Senioris Crew" hidden="false" id="7bde-ca21-ed71-5686" targetId="9517-f191-ecb8-128f" primary="false"/>
+          </categoryLinks>
+          <rules>
+            <rule name="Senoris" id="c80b-57c3-e1d3-3511" hidden="false">
+              <description>Increase the BS Characteristic of this Model’s Arms Profile and Carapace Profile to 4</description>
+              <modifiers>
+                <modifier type="set" value="Increase the BS Characteristic of this Model’s Arms Profile to 4" field="description">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="de13-dda8-5d1a-89d0" shared="true" childName="Warhound Titan" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="100" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d18b-f29e-3b40-036d" shared="true" childName="Reaver Titan" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="200" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="49e8-a500-95a5-a08c" shared="true" childName="Warbringer Nemesis Titan" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="300" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0a00-037f-69a7-bb8c" shared="true" childName="Warlord Titan" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Majoris" hidden="false" id="bfca-fb83-3492-8009" type="selectionEntry" targetId="50f4-e37d-7540-1938" sortIndex="3">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="100"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Majoris Crew" hidden="false" id="dafb-c120-b749-9c34" targetId="901e-87f3-be7f-c3ed" primary="false"/>
+          </categoryLinks>
+          <rules>
+            <rule name="Majoris" id="c5d5-dcbf-2d51-adec" hidden="false">
+              <description>Increase the BS Characteristic of this Model’s Arms Profile and Carapace Profile to 5</description>
+              <modifiers>
+                <modifier type="set" value="Increase the BS Characteristic of this Model’s Arms Profile to 5" field="description">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="de13-dda8-5d1a-89d0" shared="true" childName="Warhound Titan" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="200" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d18b-f29e-3b40-036d" shared="true" childName="Reaver Titan" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="350" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="49e8-a500-95a5-a08c" shared="true" childName="Warbringer Nemesis Titan" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="500" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0a00-037f-69a7-bb8c" shared="true" childName="Warlord Titan" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
