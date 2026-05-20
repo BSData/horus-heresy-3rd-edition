@@ -12023,6 +12023,11 @@ Models with the Vehicle Type (but not the Flyer sub-type) and this Special Rule 
       </infoLinks>
       <modifiers>
         <modifier type="set-primary" value="d49e-048b-a8e2-ba52" field="category"/>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Tech-Priest" hidden="false" id="2961-1167-7a69-c00b" type="selectionEntry" targetId="bc86-4606-7fce-1866">
@@ -12212,7 +12217,7 @@ Models with the Vehicle Type (but not the Flyer sub-type) and this Special Rule 
         </infoLink>
       </infoLinks>
     </entryLink>
-    <entryLink import="true" name="Castellax Destructor Maniple" hidden="false" id="5917-83c4-b80a-4b45" type="selectionEntry" targetId="112f-1168-d07c-7f8f">
+    <entryLink import="true" name="Castellax Destructor Maniple" hidden="true" id="5917-83c4-b80a-4b45" type="selectionEntry" targetId="112f-1168-d07c-7f8f">
       <modifierGroups>
         <modifierGroup type="and">
           <comment>Vagus</comment>
@@ -12220,6 +12225,7 @@ Models with the Vehicle Type (but not the Flyer sub-type) and this Special Rule 
             <modifier type="remove" value="df10-4634-c1aa-f6e0" field="category"/>
             <modifier type="add" value="a59f-578b-8e20-efa1" field="category"/>
             <modifier type="set-primary" value="d49e-048b-a8e2-ba52" field="category"/>
+            <modifier type="set" value="false" field="hidden"/>
           </modifiers>
           <conditions>
             <condition type="instanceOf" value="1" field="forces" scope="force" childId="2dfc-259d-d11b-dc8b" shared="true" includeChildSelections="false" childName="Cohorts Vagus Detachment"/>
