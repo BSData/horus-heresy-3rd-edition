@@ -761,6 +761,7 @@
     <categoryEntry name="Corrupted Programming" id="3dea-293c-530c-66c3" hidden="false"/>
     <categoryEntry name="Malign Influence" id="7a45-1cb0-3ebd-fb26" hidden="false"/>
     <categoryEntry name="Vagus" id="a59f-578b-8e20-efa1" hidden="false"/>
+    <categoryEntry name="Iron Tercio" id="6c30-79ee-136f-d340" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
