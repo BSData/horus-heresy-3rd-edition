@@ -175,7 +175,7 @@
           <description>The following Rules apply to all Models with the Automata Type:
 
 
-- Models with the Automata Type cannot gain any Tactical Statuses and are considered to automatically pass any Check made to avoid gaining a Tactical Status. However, if a Unit that contains any Models with the Automata Type also includes any Models that do not have the Automata Type, that Check must be made using the Characteristics of one of the Models that does not have the Automata Type and is not automatically passed.
+- Models with the Automata Type cannot gain any Tactical Statuses and are considered to automatically pass any Check made to avoid gaining a Tactical Status. However, if a Unit that contains any Models with the Automata Type also includes any Models that do not have the Automata Type, that Check must be made using the Characteristics of one of the Models that does not have the Automata Type and is not automatically passed.
 - When targeting a Unit that includes any Models with the Automata Type, the effects of the Poisoned (X) Special Rule only trigger on a Wound Test with a result of a &apos;6&apos; before modifiers are applied, regardless of the value of X for that variant of the Special Rule.
 - A Unit that includes one or more Models with the Automata Type may not make Reactions.</description>
           <alias>Automata</alias>
@@ -30632,11 +30632,11 @@
     <profile name="Automated Fire Advanced Reaction" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="5bf5-0daf-9b62-f835">
       <characteristics>
         <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b"/>
-        <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare the Automated Fire Advanced Reaction in Step 2 of the Move Sub-Phase process if an enemy Unit ends a move within 48&quot; of a Unit under the Reactive Player’s Control that only includes Models with the Automated Fire Protocols Special Rule.</characteristic>
+        <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare the Automated Fire Advanced Reaction in Step 2 of the Move Sub-Phase process if an enemy Unit ends a move within 48&quot; of a Unit under the Reactive Player’s Control that only includes Models with the Automated Fire Protocols Special Rule.</characteristic>
         <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Automated Fire Advanced Reaction has no cost.</characteristic>
-        <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Move triggered this Reaction. The Reactive Player must select one Unit under their control that only includes Models with the Automated Fire Protocols Special Rule that is within 48&quot; of the Target Unit. That Unit is the Reacting Unit.</characteristic>
-        <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once the Automated Fire Advanced Reaction has been declared, the Reactive Player makes a Shooting Attack with the Reacting Unit. This Shooting Attack must target the Target Unit of this Advanced Reaction.
-2. Once the Shooting Attack made as part of this Reaction has been completely resolved, including removing any Casualties, the Active Player must then completely resolve any remaining elements of the Target Unit&apos;s movement.</characteristic>
+        <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Move triggered this Reaction. The Reactive Player must select one Unit under their control that only includes Models with the Automated Fire Protocols Special Rule that is within 48&quot; of the Target Unit. That Unit is the Reacting Unit.</characteristic>
+        <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once the Automated Fire Advanced Reaction has been declared, the Reactive Player makes a Shooting Attack with the Reacting Unit. This Shooting Attack must target the Target Unit of this Advanced Reaction.
+2. Once the Shooting Attack made as part of this Reaction has been completely resolved, including removing any Casualties, the Active Player must then completely resolve any remaining elements of the Target Unit&apos;s movement.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -30788,7 +30788,7 @@ When a Model with this Special Rule is included in a Detachment, one additional 
         <rule name="Lord of Automata" id="8e20-4195-d824-af90" hidden="false">
           <description>&quot;This Special Rule allows an Iron Father to be accompanied by a Unit of Battle-automata.&quot;
 
-‘When a Model with this Special Rule is included in a Detachment, one additional Force Organisation Slot is added to that Detachment. This Slot can only be filled with one Castellax Battle Maniple or Castellax Destructor Maniple Unit selected from Liber Mechanicum. When such a Unit is included in this way, its Cybernetica Trait is replaced with &apos;Bonded Automata&apos;, and this Unit can be included even though it does not have the same Faction Trait as the other Units in that Detachment. In addition, a Model with this Special Rule may join a Friendly Unit that includes Models with the Automata Type. If a Model with bthis Special Rule joins a Unit with the Automata Type, the Leadership and Cool Characteristics or Models in that unit are not reduced.</description>
+‘When a Model with this Special Rule is included in a Detachment, one additional Force Organisation Slot is added to that Detachment. This Slot can only be filled with one Castellax Battle Maniple or Castellax Destructor Maniple Unit selected from Liber Mechanicum. When such a Unit is included in this way, its Cybernetica Trait is replaced with &apos;Bonded Automata&apos;, and this Unit can be included even though it does not have the same Faction Trait as the other Units in that Detachment. In addition, a Model with this Special Rule may join a Friendly Unit that includes Models with the Automata Type. If a Model with bthis Special Rule joins a Unit with the Automata Type, the Leadership and Cool Characteristics or Models in that unit are not reduced.</description>
         </rule>
       </rules>
     </selectionEntry>

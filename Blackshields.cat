@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c195-9a6a-a56b-4634" name="Blackshields" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="54" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="c195-9a6a-a56b-4634" name="Blackshields" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="54" revision="3" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="c2fd-27d7-96c1-290b" targetId="9b32-f350-6aa9-9c09" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Special Rules" id="d16d-3512-4e61-2e6f" targetId="106b-693b-99f2-00c3"/>
@@ -146,17 +146,17 @@
       </modifiers>
       <rules>
         <rule name=" Fangs of the Emperor " id="bd25-f108-3015-dd31" hidden="false">
-          <description>If Endryd Haar is selected as the only High Command Choice in a Primary Detachment, then all Units from that Primary Detachment that are composed entirely of Models with the Blackshields Trait, the Infantry Type and that do not have any variant of the Bulky (X) Special Rule gain the Infiltrate (12) Special Rule</description>
+          <description>If Endryd Haar is selected as the only High Command Choice in a Primary Detachment, then all Units from that Primary Detachment that are composed entirely of Models with the Blackshields Trait, the Infantry Type and that do not have any variant of the Bulky (X) Special Rule gain the Infiltrate (12) Special Rule</description>
         </rule>
         <rule name=" The Riven Hound" id="6864-01df-8848-bc77" hidden="false">
-          <description>While a Model with this Special Rule is engaged in a Challenge, its Controlling Player can select The Riven Hound Gambit:</description>
+          <description>While a Model with this Special Rule is engaged in a Challenge, its Controlling Player can select The Riven Hound Gambit:</description>
         </rule>
       </rules>
       <profiles>
         <profile name="The Riven Hound" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="1ea7-a9ca-18d8-1d46">
           <characteristics>
             <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows Endryd Haar to make a single attack with a higher Strength and that causes more Damage.</characteristic>
-            <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">If this Gambit is selected, then the Controlling Player may only make a single attack in the Strike Step for the Model this Gambit was selected for, regardless of the value of the Model’s Attacks Characteristic. However, that Model gains a bonus of +4 to their Strength Characteristic and a bonus of +2 to the Damage Characteristic of their selected Weapon, for the single attack made for them in the Strike Step</characteristic>
+            <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">If this Gambit is selected, then the Controlling Player may only make a single attack in the Strike Step for the Model this Gambit was selected for, regardless of the value of the Model’s Attacks Characteristic. However, that Model gains a bonus of +4 to their Strength Characteristic and a bonus of +2 to the Damage Characteristic of their selected Weapon, for the single attack made for them in the Strike Step</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -732,10 +732,10 @@
             <selectionEntry type="upgrade" import="true" name="Blackshields Tactica" hidden="false" id="ebf2-a8f1-00c2-c7d9">
               <rules>
                 <rule name="Bastard Sons of Fate" id="4351-d554-72bb-7820" hidden="false">
-                  <description>&quot; Blackshields gain bonuses to Toughness and Strength when under the effect of certain Battlefield Statuses.&quot;
+                  <description>&quot; Blackshields gain bonuses to Toughness and Strength when under the effect of certain Battlefield Statuses.&quot;
 
 
-While affected by any of the Pinned, Suppressed or Stunned Battlefield Statuses, a Model with the Blackshields Trait gains a bonus of +1 to their Toughness and Strength Characteristics. If affected by more than one such Battlefield Status then this bonus is increased to +2.</description>
+While affected by any of the Pinned, Suppressed or Stunned Battlefield Statuses, a Model with the Blackshields Trait gains a bonus of +1 to their Toughness and Strength Characteristics. If affected by more than one such Battlefield Status then this bonus is increased to +2.</description>
                 </rule>
               </rules>
               <constraints>
@@ -747,8 +747,8 @@ While affected by any of the Pinned, Suppressed or Stunned Battlefield Statuses
               <profiles>
                 <profile name="Beholden to None" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="6992-fae3-8591-c712">
                   <characteristics>
-                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">If slain by the opposing Model, D3 wounds are inflicted on that Model.</characteristic>
-                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">This Gambit may only be selected if the opposing Model in the Challenge has either the Unique Trait or the Paragon Type. If a Model is Removed as a Casualty during the Strike Step when this Gambit has been selected for them, then D3 wounds are automatically inflicted on the opposing Model at the end of the Glory Step that follows. These wounds have the Damage and AP of the Weapon used by the Model for which this Gambit was selected.</characteristic>
+                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">If slain by the opposing Model, D3 wounds are inflicted on that Model.</characteristic>
+                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">This Gambit may only be selected if the opposing Model in the Challenge has either the Unique Trait or the Paragon Type. If a Model is Removed as a Casualty during the Strike Step when this Gambit has been selected for them, then D3 wounds are automatically inflicted on the opposing Model at the end of the Glory Step that follows. These wounds have the Damage and AP of the Weapon used by the Model for which this Gambit was selected.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -760,19 +760,19 @@ While affected by any of the Pinned, Suppressed or Stunned Battlefield Statuses
             <selectionEntry type="upgrade" import="true" name="Oaths of Moment" hidden="false" id="7285-1826-9124-0b8a">
               <rules>
                 <rule name="Oaths of Moment" id="e8c6-3113-c65d-f636" hidden="false">
-                  <description>An Army that includes any Detachments with the Blackshields Faction may select a number of Oaths of Moment for each such Detachment, these are sets of rules that add a number of additional options and Special Rules to Units in that Detachment. The number of Oaths of Moment that may be selected for a Detachment depends on what type of Detachment it is, as shown on the table below:
- 
-Primary Detachment : 2 
-Allied Detachment : 1
+                  <description>An Army that includes any Detachments with the Blackshields Faction may select a number of Oaths of Moment for each such Detachment, these are sets of rules that add a number of additional options and Special Rules to Units in that Detachment. The number of Oaths of Moment that may be selected for a Detachment depends on what type of Detachment it is, as shown on the table below:
+ 
+Primary Detachment : 2 
+Allied Detachment : 1
 
 
-Note that any Auxiliary or Apex Detachments attached to a Blackshields Allied or Primary Detachment must use the same Oaths of Moment as the Detachment to which they are attached. Other types of Detachment may not have Oaths of Moment selected for them.
+Note that any Auxiliary or Apex Detachments attached to a Blackshields Allied or Primary Detachment must use the same Oaths of Moment as the Detachment to which they are attached. Other types of Detachment may not have Oaths of Moment selected for them.
 
 
-Oaths of Moment are selected when a Detachment is added to the Army Roster, and each such Oath of Moment will explain any effects it may have on which Units may be selected for the Detachment. Most Oaths of Moment will also add Special Rules or other effects to some or all Units in the Detachment, this will also be explained by each individual Oath of Moment.
+Oaths of Moment are selected when a Detachment is added to the Army Roster, and each such Oath of Moment will explain any effects it may have on which Units may be selected for the Detachment. Most Oaths of Moment will also add Special Rules or other effects to some or all Units in the Detachment, this will also be explained by each individual Oath of Moment.
 
 
-Note that some Oaths of Moment require that certain Special Rules be removed from Models and replaced with other Special Rules. In a Detachment that has more than one Oath of Moment, the effects of these are applied one at a time in an order of the Controlling Player&apos;s choice – and if the first Oath of Moment removes a Special Rule it cannot then be affected, modified or removed by the second.</description>
+Note that some Oaths of Moment require that certain Special Rules be removed from Models and replaced with other Special Rules. In a Detachment that has more than one Oath of Moment, the effects of these are applied one at a time in an order of the Controlling Player&apos;s choice – and if the first Oath of Moment removes a Special Rule it cannot then be affected, modified or removed by the second.</description>
                 </rule>
               </rules>
               <constraints>
