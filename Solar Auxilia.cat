@@ -11678,6 +11678,20 @@ Models with the Vehicle Type (but not the Flyer sub-type) and this Special Rule 
       <categoryLinks>
         <categoryLink targetId="3235-bd79-e9b1-60fa" id="ad11-78ee-41c9-95d3" primary="true" name="Heavy Assault"/>
       </categoryLinks>
+      <profiles>
+        <profile name="Infantry Tercio" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="true" id="be00-0e2c-a65f-0e08">
+          <characteristics>
+            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="243b-4ffd-9808-11d8" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
     </entryLink>
     <entryLink import="true" name="Basilisk Artillery Tank" hidden="false" id="c9f3-c058-0758-2409" type="selectionEntry" targetId="9757-288f-c3cd-bd7f">
       <categoryLinks>
@@ -12094,6 +12108,20 @@ Models with the Vehicle Type (but not the Flyer sub-type) and this Special Rule 
       <categoryLinks>
         <categoryLink name="Fast Attack" hidden="false" id="2389-3b88-46f8-561a" targetId="cf96-8891-3f9a-8921" primary="true"/>
       </categoryLinks>
+      <profiles>
+        <profile name="Infantry Tercio" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="true" id="94ab-89ec-9fd6-31e7">
+          <characteristics>
+            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="243b-4ffd-9808-11d8" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
     </entryLink>
     <entryLink import="true" name="Crassus Armoured Assault Transport" hidden="false" id="5ce2-f2ee-c8dc-14a3" type="selectionEntry" targetId="a1cb-9cb7-c05a-cc60">
       <categoryLinks>
