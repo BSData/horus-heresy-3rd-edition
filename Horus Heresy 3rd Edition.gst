@@ -27175,6 +27175,7 @@
                   </conditionGroups>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="3134-c5e1-b266-d2e0" shared="true" childName="Tank Commander" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="d322-7d84-4ea0-2249" shared="true" childName="Two Tank Detachments" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -27409,6 +27410,7 @@
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7851-69ac-f701-034e" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7851-69ac-f701-034e" shared="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="3134-c5e1-b266-d2e0" shared="true" childName="Tank Commander" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="d322-7d84-4ea0-2249" shared="true" childName="Two Tank Detachments" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                   <comment>Solar Auxilia</comment>
                 </conditionGroup>
