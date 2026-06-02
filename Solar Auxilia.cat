@@ -11179,6 +11179,9 @@ Additionally, if a Model with this Special Rule is ever the only remaining Model
       <categoryLinks>
         <categoryLink targetId="390f-d9dc-10d8-56aa" id="7efa-48d3-eb88-5763" primary="false" name="Armour Tercio Unlock"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="3134-c5e1-b266-d2e0" field="category"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Charonite blade" hidden="false" id="d6dd-f3ae-12ae-72a7">
       <profiles>
@@ -11917,9 +11920,14 @@ Models with the Vehicle Type (but not the Flyer sub-type) and this Special Rule 
       </categoryLinks>
       <modifiers>
         <modifier type="set-primary" value="5725-7f8c-f02e-4df6" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6aff-b91d-02bb-7461" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6aff-b91d-02bb-7461" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="aaa3-8a14-38ef-34e6" shared="true" childName="Auxiliary - Tank Commander Armour Tercio"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <profiles>
@@ -11943,9 +11951,14 @@ Models with the Vehicle Type (but not the Flyer sub-type) and this Special Rule 
       </categoryLinks>
       <modifiers>
         <modifier type="set-primary" value="5725-7f8c-f02e-4df6" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6aff-b91d-02bb-7461" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6aff-b91d-02bb-7461" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="aaa3-8a14-38ef-34e6" shared="true" childName="Auxiliary - Tank Commander Armour Tercio"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <profiles>
@@ -11969,9 +11982,14 @@ Models with the Vehicle Type (but not the Flyer sub-type) and this Special Rule 
       </categoryLinks>
       <modifiers>
         <modifier type="set-primary" value="5725-7f8c-f02e-4df6" field="category">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6aff-b91d-02bb-7461" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6aff-b91d-02bb-7461" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="aaa3-8a14-38ef-34e6" shared="true" childName="Auxiliary - Tank Commander Armour Tercio"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <profiles>
