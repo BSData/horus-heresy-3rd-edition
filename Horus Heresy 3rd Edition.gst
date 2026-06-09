@@ -19936,6 +19936,16 @@
               </conditionGroups>
               <comment>Legions</comment>
             </modifier>
+            <modifier type="add" value="Storm Battery Detachment requires a Siege Breaker" field="error">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="25ad-fbd9-d161-8fd1" shared="true" includeChildSelections="true" includeChildForces="true" childName="Siege Breaker"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="900f-15de-561e-02ce">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="25ad-fbd9-d161-8fd1" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true" childName="Siege Breaker"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <categoryLinks>
             <categoryLink name="Support - Rapier Battery Only" hidden="false" id="933f-a441-79bd-56e3" targetId="b59d-a86f-b951-9f06">
@@ -20010,6 +20020,9 @@
             <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="900f-15de-561e-02ce" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
         </forceEntry>
         <forceEntry name="Auxiliary - Recon Demi-Company" id="38f7-2240-f8ee-6cce" hidden="true" sortIndex="43" publicationId="e54c-7040-0f35-d85d" page="17">
           <comment>Legions</comment>
