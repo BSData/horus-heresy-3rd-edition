@@ -30446,7 +30446,13 @@
     </costType>
     <costType name="Combined Warlord and Lord of War Points" id="14bd-cad0-cd3d-8b23" defaultCostLimit="-1" hidden="true"/>
     <costType name="Mech LB" id="7275-cbe8-a563-7152" defaultCostLimit="-1" hidden="true"/>
-    <costType name="Tank Detachments" id="2cdf-186c-a655-d907" defaultCostLimit="-1" hidden="true"/>
+    <costType name="Tank Detachments" id="2cdf-186c-a655-d907" defaultCostLimit="-1" hidden="true">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <comment>Hidden from new list screen, but displays count</comment>
+        </modifier>
+      </modifiers>
+    </costType>
   </costTypes>
   <profileTypes>
     <profileType name="Profile" id="a76f-8e23-8c3e-166d" hidden="false" sortIndex="1">
