@@ -29395,7 +29395,7 @@
             <condition type="notEqualTo" value="-1" field="limit::9893-c379-920b-8982" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
-        <modifier type="increment" value="1" field="3e8e-05ee-be52-12d6">
+        <modifier type="increment" value="1" field="4823-b27b-f750-5a63">
           <repeats>
             <repeat value="1" repeats="1" field="selections" scope="force" childId="ff44-f49f-732b-c3a7" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
@@ -29423,6 +29423,11 @@
           <conditions>
             <condition type="equalTo" value="-1" field="limit::9893-c379-920b-8982" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
+        </modifier>
+        <modifier type="decrement" value="1" field="4823-b27b-f750-5a63">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="a12c-94d0-efed-ea60" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true" childName="Delegatus"/>
+          </repeats>
         </modifier>
       </modifiers>
       <constraints>
