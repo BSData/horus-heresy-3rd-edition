@@ -26127,6 +26127,7 @@
             <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
           </costs>
           <modifiers>
+            <modifier type="add" value="Leviathan Armoured Fist Detachment is only legal in Leviathan Missions" field="warning"/>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="or">
@@ -26266,6 +26267,48 @@
                     </conditionGroup>
                     <conditionGroup type="and">
                       <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7851-69ac-f701-034e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7851-69ac-f701-034e" shared="true"/>
+                      </conditions>
+                      <comment>Auxilia</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                      </conditions>
+                      <comment>Mechanicum</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="acc1-f897-a117-9b4a" shared="true"/>
+                      </conditions>
+                      <comment>Talons</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                      </conditions>
+                      <comment>Sisters</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9396-cc24-458d-d358" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9396-cc24-458d-d358" shared="true"/>
+                      </conditions>
+                      <comment>Daemons</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f477-a408-5e04-1e5a" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f477-a408-5e04-1e5a" shared="true"/>
+                      </conditions>
+                      <comment>Militia</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c195-9a6a-a56b-4634" shared="true"/>
                       </conditions>
@@ -26278,13 +26321,18 @@
                       </conditions>
                       <comment>Shattered Legions</comment>
                     </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="079a-11b5-abfa-96da" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="079a-11b5-abfa-96da" shared="true"/>
+                      </conditions>
+                      <comment>Skitarii</comment>
+                    </conditionGroup>
                   </conditionGroups>
-                  <comment>Legions</comment>
                 </conditionGroup>
               </conditionGroups>
-              <comment>Legions</comment>
+              <comment>Visible to all factions</comment>
             </modifier>
-            <modifier type="add" value="Leviathan Armoured Fist Detachment is only legal in Leviathan Missions" field="warning"/>
           </modifiers>
           <categoryLinks>
             <categoryLink name="Lord of War" hidden="false" id="3af9-88f3-14f9-4ab8" targetId="a46f-a465-0ead-d6b8">
@@ -26305,6 +26353,7 @@
             <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
           </costs>
           <modifiers>
+            <modifier type="add" value="Leviathan Bastion of Fire Detachment is only legal in Leviathan Missions" field="warning"/>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="or">
@@ -26444,6 +26493,48 @@
                     </conditionGroup>
                     <conditionGroup type="and">
                       <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7851-69ac-f701-034e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7851-69ac-f701-034e" shared="true"/>
+                      </conditions>
+                      <comment>Auxilia</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="2f57-6e9d-8a7b-5c2e" shared="true"/>
+                      </conditions>
+                      <comment>Mechanicum</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="acc1-f897-a117-9b4a" shared="true"/>
+                      </conditions>
+                      <comment>Talons</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                      </conditions>
+                      <comment>Sisters</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9396-cc24-458d-d358" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9396-cc24-458d-d358" shared="true"/>
+                      </conditions>
+                      <comment>Daemons</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f477-a408-5e04-1e5a" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f477-a408-5e04-1e5a" shared="true"/>
+                      </conditions>
+                      <comment>Militia</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="c195-9a6a-a56b-4634" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c195-9a6a-a56b-4634" shared="true"/>
                       </conditions>
@@ -26456,13 +26547,18 @@
                       </conditions>
                       <comment>Shattered Legions</comment>
                     </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="079a-11b5-abfa-96da" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="079a-11b5-abfa-96da" shared="true"/>
+                      </conditions>
+                      <comment>Skitarii</comment>
+                    </conditionGroup>
                   </conditionGroups>
-                  <comment>Legions</comment>
                 </conditionGroup>
               </conditionGroups>
-              <comment>Legions</comment>
+              <comment>Visible to all factions</comment>
             </modifier>
-            <modifier type="add" value="Leviathan Bastion of Fire Detachment is only legal in Leviathan Missions" field="warning"/>
           </modifiers>
           <categoryLinks>
             <categoryLink name="Retinue" hidden="false" id="9b1a-2818-d805-9ce8" targetId="a38e-50ff-310f-f19e">
