@@ -5074,11 +5074,14 @@
     </selectionEntry>
     <selectionEntry name="Infantry Troop" type="unit" id="f328-5cb1-4526-95d2" page="23" publicationId="f5e5-c199-d3d4-ccf6">
       <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="90"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
         <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+        <cost name="Combined Warlord and Lord of War Points" typeId="14bd-cad0-cd3d-8b23" value="0"/>
+        <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
+        <cost name="Tank Detachments" typeId="2cdf-186c-a655-d907" value="0"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" name="Militia Infantry" id="5ab6-4749-45c9-b8ca" page="23" publicationId="f5e5-c199-d3d4-ccf6" sortIndex="2">
@@ -5231,11 +5234,14 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="4.5"/>
-            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+            <cost name="Combined Warlord and Lord of War Points" typeId="14bd-cad0-cd3d-8b23" value="0"/>
+            <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
+            <cost name="Tank Detachments" typeId="2cdf-186c-a655-d907" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
           </costs>
           <entryLinks>
             <entryLink hidden="false" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" id="50b9-8a97-4cff-b460" name="Frag grenades" sortIndex="2">
@@ -5265,18 +5271,13 @@
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85cc-fb94-4e22-82b1"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Militia rifle with bayonet" hidden="false" id="c6c6-2911-dc7a-6312" type="selectionEntry" targetId="5034-9609-c22b-e258" sortIndex="2">
-                      <costs>
-                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="1"/>
-                      </costs>
-                    </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37b7-67be-4048-b807"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c955-9732-4e68-ade2"/>
                   </constraints>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="If has militia pistol may take:" id="e485-1cd3-e379-56dd" hidden="true" sortIndex="2">
+                <selectionEntryGroup name="If has militia pistol may take:" id="e485-1cd3-e379-56dd" hidden="true" sortIndex="3">
                   <entryLinks>
                     <entryLink import="true" name="Militia Melee Weapons" hidden="false" id="4840-e539-cf5e-7128" type="selectionEntryGroup" targetId="01b9-96bd-443f-9756"/>
                   </entryLinks>
@@ -5303,7 +5304,7 @@
                     <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="0fe5-af49-4147-b5ae"/>
                   </constraints>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Vexilla" id="453e-56d3-a793-dd17" hidden="false" sortIndex="3">
+                <selectionEntryGroup name="Vexilla" id="453e-56d3-a793-dd17" hidden="false" sortIndex="4">
                   <entryLinks>
                     <entryLink import="true" name="Auxilia vexilla" hidden="true" id="e736-1965-0b62-b52a" type="selectionEntry" targetId="abc6-851f-ab12-1ddd">
                       <constraints>
@@ -5335,13 +5336,34 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink import="true" name="Militia Vox" hidden="false" id="a9f6-8fe5-88b6-4d46" type="selectionEntry" targetId="5ffe-ced0-f3b4-f89a" sortIndex="4">
+                <entryLink import="true" name="Militia Vox" hidden="false" id="a9f6-8fe5-88b6-4d46" type="selectionEntry" targetId="5ffe-ced0-f3b4-f89a" sortIndex="5">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="2437-044f-dd96-35c1" includeChildSelections="true"/>
                   </constraints>
                   <costs>
                     <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                   </costs>
+                </entryLink>
+                <entryLink import="true" name="Bayonet" hidden="true" id="b922-2085-0c26-f28d" type="selectionEntry" targetId="3484-1bd3-cb74-7abe" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="1"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d77-8e91-7666-774f"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="221a-9945-43f9-baac" shared="true" childName="Militia rifle" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="d3f9-b9e6-3ea5-cc8e" shared="true" childName="Bolter" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="b729-ca62-420a-9f76" shared="true" childName="Lasrifle - Volley" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -5530,11 +5552,14 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="4.5"/>
-            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxiliary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+            <cost name="Combined Warlord and Lord of War Points" typeId="14bd-cad0-cd3d-8b23" value="0"/>
+            <cost name="Mech LB" typeId="7275-cbe8-a563-7152" value="0"/>
+            <cost name="Tank Detachments" typeId="2cdf-186c-a655-d907" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d681-57a6-4790-be4f"/>
@@ -5573,11 +5598,6 @@
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbf9-e697-d5c9-3bc3"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Militia rifle with bayonet" hidden="false" id="efbe-57c2-5b79-e2ca" type="selectionEntry" targetId="5034-9609-c22b-e258" sortIndex="2">
-                      <costs>
-                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="1"/>
-                      </costs>
-                    </entryLink>
                     <entryLink import="true" name="Militia Pistols" hidden="false" id="d124-db91-60e6-4ed9" type="selectionEntryGroup" targetId="4eb1-e777-4926-b5cf" sortIndex="3" flatten="true"/>
                     <entryLink import="true" name="Militia Assault Weapons" hidden="false" id="085c-a9f9-e15e-9af4" type="selectionEntryGroup" targetId="0fea-c788-4956-a432" sortIndex="4" flatten="true"/>
                   </entryLinks>
@@ -5586,7 +5606,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc1d-136f-e52a-174e" automatic="true"/>
                   </constraints>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="If has militia pistol may take:" id="e58f-43b1-8687-5efe" hidden="true" sortIndex="2">
+                <selectionEntryGroup name="If has militia pistol may take:" id="e58f-43b1-8687-5efe" hidden="true" sortIndex="3">
                   <entryLinks>
                     <entryLink import="true" name="Militia Melee Weapons" hidden="false" id="6c6b-9def-3574-7099" type="selectionEntryGroup" targetId="01b9-96bd-443f-9756" sortIndex="1" flatten="true"/>
                     <entryLink import="true" name="Power sword" hidden="false" id="8043-f96e-4e66-a9b1" type="selectionEntry" targetId="59a9-57c1-fff9-ca75" sortIndex="2">
@@ -5622,6 +5642,29 @@
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Bayonet" hidden="true" id="c1e1-1a09-12c3-7beb" type="selectionEntry" targetId="3484-1bd3-cb74-7abe" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="1"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ccf-85d8-341e-57fe"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="221a-9945-43f9-baac" shared="true" childName="Militia rifle" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="d3f9-b9e6-3ea5-cc8e" shared="true" childName="Bolter" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="b729-ca62-420a-9f76" shared="true" childName="Lasrifle - Volley" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <modifiers>
