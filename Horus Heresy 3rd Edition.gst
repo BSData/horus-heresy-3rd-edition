@@ -30144,9 +30144,10 @@
     </forceEntry>
     <forceEntry name="Cohorts Vagus : Itinerant Cohorts" id="0a81-480b-fc4c-3dbe" hidden="false" childForcesLabel="Detachments">
       <forceEntryLinks>
-        <forceEntryLink name="Cohorts Vagus Detachment" id="bece-d2a3-1d59-7e19" hidden="false" targetId="2dfc-259d-d11b-dc8b" type="forceEntry">
+        <forceEntryLink name="Cohorts Vagus Detachment" id="bece-d2a3-1d59-7e19" hidden="false" targetId="2dfc-259d-d11b-dc8b" type="forceEntry" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="be05-8eba-3a80-dca2" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="min" value="1" field="forces" scope="parent" shared="true" id="91ec-4a4a-1e32-a7ee"/>
           </constraints>
           <modifiers>
             <modifier type="add" value="Maximum Points limit for Cohorts Vagus Primary is 1500" field="error">
@@ -30369,6 +30370,9 @@
           </modifiers>
         </forceEntryLink>
       </forceEntryLinks>
+      <categoryLinks>
+        <categoryLink name="Army Configuration" hidden="false" id="cf5e-7eeb-9c6a-5c76" targetId="abfa-86ab-1726-077a"/>
+      </categoryLinks>
     </forceEntry>
     <forceEntry name="Cohorts Vagus Detachment" id="2dfc-259d-d11b-dc8b" hidden="true">
       <costs>
