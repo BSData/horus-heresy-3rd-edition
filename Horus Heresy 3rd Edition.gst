@@ -377,7 +377,7 @@
         </modifier>
       </modifiers>
     </categoryEntry>
-    <categoryEntry name="Heavy Assault - Castellax Destructor Maniple only " id="d49e-048b-a8e2-ba52" hidden="false">
+    <categoryEntry name="Heavy Assault - Castellax Destructor Maniple only" id="d49e-048b-a8e2-ba52" hidden="false">
       <comment>Solar Auxilia - Iron Tercio</comment>
     </categoryEntry>
     <categoryEntry name="Fortification Model Type" id="ae5b-4e74-db76-fa25" hidden="false">
@@ -710,24 +710,24 @@
     <categoryEntry name="Scions of the Flame" id="60ef-b3af-d4e6-9d6e" hidden="false"/>
     <categoryEntry name="Masters of Obfuscation" id="3381-191a-07f4-0dc3" hidden="false"/>
     <categoryEntry name="Assassination Tactics" id="4f9d-ebc3-b8b1-8991" hidden="false"/>
-    <categoryEntry name="EotL - Alpha Legion" id="1252-6dc4-22d7-4a8f" hidden="true"/>
-    <categoryEntry name="EotL - Blood Angels" id="d819-0c9d-aad2-4238" hidden="true"/>
-    <categoryEntry name="EotL - Dark Angels" id="6c4f-19ae-d41f-377b" hidden="true"/>
-    <categoryEntry name="EotL - Death Guard" id="f6a9-02e2-ff4f-9583" hidden="true"/>
-    <categoryEntry name="EotL - Emperor&apos;s Children" id="5e33-e0a2-afb4-6fa7" hidden="true"/>
-    <categoryEntry name="EotL - Imperial Fists" id="6d50-f0f1-4c81-4fa5" hidden="true"/>
-    <categoryEntry name="EotL - Iron Hands" id="b8f3-a8cc-4b5f-38c7" hidden="true"/>
-    <categoryEntry name="EotL - Iron Warriors" id="d190-a268-afdd-6e11" hidden="true"/>
-    <categoryEntry name="EotL - Night Lords" id="72cb-1cf8-0e7d-51d2" hidden="true"/>
-    <categoryEntry name="EotL - Raven Guard" id="8fed-36a4-10bd-3fa5" hidden="true"/>
-    <categoryEntry name="EotL - Salamanders" id="acc7-7ab0-1b70-15c2" hidden="true"/>
-    <categoryEntry name="EotL - Sons of Horus" id="20ba-2d32-325b-0f43" hidden="true"/>
-    <categoryEntry name="EotL - Space Wolves" id="34b6-2cfd-313a-0eff" hidden="true"/>
-    <categoryEntry name="EotL - Thousand Sons" id="1992-9042-5894-f2dc" hidden="true"/>
-    <categoryEntry name="EotL - Ultramarines" id="bc4d-0973-2772-9330" hidden="true"/>
-    <categoryEntry name="EotL - White Scars" id="c89e-a6a3-9ac6-1283" hidden="true"/>
-    <categoryEntry name="EotL - Word Bearers" id="7712-7d17-1f9e-bf1f" hidden="true"/>
-    <categoryEntry name="EotL - World Eaters" id="d877-8b72-fd0b-1e4a" hidden="true"/>
+    <categoryEntry name="Exemplars of the Legion - Alpha Legion" id="1252-6dc4-22d7-4a8f" hidden="true"/>
+    <categoryEntry name="Exemplars of the Legion - Blood Angels" id="d819-0c9d-aad2-4238" hidden="true"/>
+    <categoryEntry name="Exemplars of the Legion - Dark Angels" id="6c4f-19ae-d41f-377b" hidden="true"/>
+    <categoryEntry name="Exemplars of the Legion - Death Guard" id="f6a9-02e2-ff4f-9583" hidden="true"/>
+    <categoryEntry name="Exemplars of the Legion - Emperor&apos;s Children" id="5e33-e0a2-afb4-6fa7" hidden="true"/>
+    <categoryEntry name="Exemplars of the Legion - Imperial Fists" id="6d50-f0f1-4c81-4fa5" hidden="true"/>
+    <categoryEntry name="Exemplars of the Legion - Iron Hands" id="b8f3-a8cc-4b5f-38c7" hidden="true"/>
+    <categoryEntry name="Exemplars of the Legion - Iron Warriors" id="d190-a268-afdd-6e11" hidden="true"/>
+    <categoryEntry name="Exemplars of the Legion - Night Lords" id="72cb-1cf8-0e7d-51d2" hidden="true"/>
+    <categoryEntry name="Exemplars of the Legion - Raven Guard" id="8fed-36a4-10bd-3fa5" hidden="true"/>
+    <categoryEntry name="Exemplars of the Legion - Salamanders" id="acc7-7ab0-1b70-15c2" hidden="true"/>
+    <categoryEntry name="Exemplars of the Legion - Sons of Horus" id="20ba-2d32-325b-0f43" hidden="true"/>
+    <categoryEntry name="Exemplars of the Legion - Space Wolves" id="34b6-2cfd-313a-0eff" hidden="true"/>
+    <categoryEntry name="Exemplars of the Legion - Thousand Sons" id="1992-9042-5894-f2dc" hidden="true"/>
+    <categoryEntry name="Exemplars of the Legion - Ultramarines" id="bc4d-0973-2772-9330" hidden="true"/>
+    <categoryEntry name="Exemplars of the Legion - White Scars" id="c89e-a6a3-9ac6-1283" hidden="true"/>
+    <categoryEntry name="Exemplars of the Legion - Word Bearers" id="7712-7d17-1f9e-bf1f" hidden="true"/>
+    <categoryEntry name="Exemplars of the Legion - World Eaters" id="d877-8b72-fd0b-1e4a" hidden="true"/>
     <categoryEntry name="EotL-AL" id="7cb8-1117-ebad-69ca" hidden="false"/>
     <categoryEntry name="EotL-BA" id="5f71-ed32-cb07-a7e3" hidden="false"/>
     <categoryEntry name="EotL-DA" id="69dd-9a79-6562-14a1" hidden="false"/>
@@ -1926,7 +1926,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Dark Angels" hidden="false" id="cbb2-c0e9-1962-7176" targetId="6c4f-19ae-d41f-377b">
+            <categoryLink name="Exemplars of the Legion - Dark Angels" hidden="false" id="cbb2-c0e9-1962-7176" targetId="6c4f-19ae-d41f-377b">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="cb01-9383-62ee-5264"/>
               </constraints>
@@ -1943,7 +1943,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Alpha Legion" hidden="false" id="dae3-5bc3-96c3-5547" targetId="1252-6dc4-22d7-4a8f">
+            <categoryLink name="Exemplars of the Legion - Alpha Legion" hidden="false" id="dae3-5bc3-96c3-5547" targetId="1252-6dc4-22d7-4a8f">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="45e0-4d87-82c2-ccc7"/>
               </constraints>
@@ -1960,7 +1960,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Blood Angels" hidden="false" id="ce25-5589-20e2-0e6d" targetId="d819-0c9d-aad2-4238">
+            <categoryLink name="Exemplars of the Legion - Blood Angels" hidden="false" id="ce25-5589-20e2-0e6d" targetId="d819-0c9d-aad2-4238">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3aed-89c6-3325-c78b"/>
               </constraints>
@@ -1977,7 +1977,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Death Guard" hidden="false" id="8144-55f5-dd72-7f5a" targetId="f6a9-02e2-ff4f-9583">
+            <categoryLink name="Exemplars of the Legion - Death Guard" hidden="false" id="8144-55f5-dd72-7f5a" targetId="f6a9-02e2-ff4f-9583">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5c7d-4698-d50f-4280"/>
               </constraints>
@@ -1994,7 +1994,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Emperor&apos;s Children" hidden="false" id="1bc1-92ad-610e-ff77" targetId="5e33-e0a2-afb4-6fa7">
+            <categoryLink name="Exemplars of the Legion - Emperor&apos;s Children" hidden="false" id="1bc1-92ad-610e-ff77" targetId="5e33-e0a2-afb4-6fa7">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3e3b-d9b3-8737-e923"/>
               </constraints>
@@ -2011,7 +2011,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Imperial Fists" hidden="false" id="74a6-aca3-b7b4-0e85" targetId="6d50-f0f1-4c81-4fa5">
+            <categoryLink name="Exemplars of the Legion - Imperial Fists" hidden="false" id="74a6-aca3-b7b4-0e85" targetId="6d50-f0f1-4c81-4fa5">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="206a-f2e9-9a9a-5f69"/>
               </constraints>
@@ -2028,7 +2028,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Iron Hands" hidden="false" id="dbe4-728e-65fb-6836" targetId="b8f3-a8cc-4b5f-38c7">
+            <categoryLink name="Exemplars of the Legion - Iron Hands" hidden="false" id="dbe4-728e-65fb-6836" targetId="b8f3-a8cc-4b5f-38c7">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1506-64a5-4995-dc3a"/>
               </constraints>
@@ -2045,7 +2045,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Iron Warriors" hidden="false" id="6729-dd50-cdd5-1d99" targetId="d190-a268-afdd-6e11">
+            <categoryLink name="Exemplars of the Legion - Iron Warriors" hidden="false" id="6729-dd50-cdd5-1d99" targetId="d190-a268-afdd-6e11">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e917-cd03-6940-ba64"/>
               </constraints>
@@ -2062,7 +2062,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Night Lords" hidden="false" id="2ea8-b323-3b7b-914a" targetId="72cb-1cf8-0e7d-51d2">
+            <categoryLink name="Exemplars of the Legion - Night Lords" hidden="false" id="2ea8-b323-3b7b-914a" targetId="72cb-1cf8-0e7d-51d2">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7540-303a-7f86-dec9"/>
               </constraints>
@@ -2079,7 +2079,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Raven Guard" hidden="false" id="3984-a465-e3c3-a42d" targetId="8fed-36a4-10bd-3fa5">
+            <categoryLink name="Exemplars of the Legion - Raven Guard" hidden="false" id="3984-a465-e3c3-a42d" targetId="8fed-36a4-10bd-3fa5">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="82f1-90bb-2129-7599"/>
               </constraints>
@@ -2096,7 +2096,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Salamanders" hidden="false" id="e590-c411-1661-890c" targetId="acc7-7ab0-1b70-15c2">
+            <categoryLink name="Exemplars of the Legion - Salamanders" hidden="false" id="e590-c411-1661-890c" targetId="acc7-7ab0-1b70-15c2">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="20cf-b11c-3f51-fc95"/>
               </constraints>
@@ -2113,7 +2113,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Sons of Horus" hidden="false" id="494a-bbc8-911d-d248" targetId="20ba-2d32-325b-0f43">
+            <categoryLink name="Exemplars of the Legion - Sons of Horus" hidden="false" id="494a-bbc8-911d-d248" targetId="20ba-2d32-325b-0f43">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2b0c-d875-db6e-8361"/>
               </constraints>
@@ -2130,7 +2130,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Space Wolves" hidden="false" id="da27-5608-cad8-da11" targetId="34b6-2cfd-313a-0eff">
+            <categoryLink name="Exemplars of the Legion - Space Wolves" hidden="false" id="da27-5608-cad8-da11" targetId="34b6-2cfd-313a-0eff">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8aa1-35c8-99cc-5929"/>
               </constraints>
@@ -2147,7 +2147,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Thousand Sons" hidden="false" id="5981-de58-ed51-4eec" targetId="1992-9042-5894-f2dc">
+            <categoryLink name="Exemplars of the Legion - Thousand Sons" hidden="false" id="5981-de58-ed51-4eec" targetId="1992-9042-5894-f2dc">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3153-7dfa-b4c9-a44c"/>
               </constraints>
@@ -2164,7 +2164,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Ultramarines" hidden="false" id="ef95-4572-a898-1b87" targetId="bc4d-0973-2772-9330">
+            <categoryLink name="Exemplars of the Legion - Ultramarines" hidden="false" id="ef95-4572-a898-1b87" targetId="bc4d-0973-2772-9330">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9f5d-dbe3-c8de-d452"/>
               </constraints>
@@ -2181,7 +2181,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - White Scars" hidden="false" id="db39-7033-d698-ebaf" targetId="c89e-a6a3-9ac6-1283">
+            <categoryLink name="Exemplars of the Legion - White Scars" hidden="false" id="db39-7033-d698-ebaf" targetId="c89e-a6a3-9ac6-1283">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a766-191c-e25e-2f8e"/>
               </constraints>
@@ -2198,7 +2198,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Word Bearers" hidden="false" id="cee8-2dc5-da80-f5da" targetId="7712-7d17-1f9e-bf1f">
+            <categoryLink name="Exemplars of the Legion - Word Bearers" hidden="false" id="cee8-2dc5-da80-f5da" targetId="7712-7d17-1f9e-bf1f">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5faf-907d-4629-9f50"/>
               </constraints>
@@ -2215,7 +2215,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - World Eaters" hidden="false" id="f504-3b7d-9ea4-901b" targetId="d877-8b72-fd0b-1e4a">
+            <categoryLink name="Exemplars of the Legion - World Eaters" hidden="false" id="f504-3b7d-9ea4-901b" targetId="d877-8b72-fd0b-1e4a">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6a9b-0b3a-c75c-0863"/>
               </constraints>
@@ -7050,7 +7050,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Dark Angels" hidden="false" id="492c-9256-3d94-cc48" targetId="6c4f-19ae-d41f-377b">
+            <categoryLink name="Exemplars of the Legion - Dark Angels" hidden="false" id="492c-9256-3d94-cc48" targetId="6c4f-19ae-d41f-377b">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c894-652d-111e-f4e7"/>
               </constraints>
@@ -7067,7 +7067,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Alpha Legion" hidden="false" id="a051-8a81-1fbb-46af" targetId="1252-6dc4-22d7-4a8f">
+            <categoryLink name="Exemplars of the Legion - Alpha Legion" hidden="false" id="a051-8a81-1fbb-46af" targetId="1252-6dc4-22d7-4a8f">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="fb11-7166-040c-75a9"/>
               </constraints>
@@ -7084,7 +7084,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Blood Angels" hidden="false" id="7b7c-4993-ddad-2e6c" targetId="d819-0c9d-aad2-4238">
+            <categoryLink name="Exemplars of the Legion - Blood Angels" hidden="false" id="7b7c-4993-ddad-2e6c" targetId="d819-0c9d-aad2-4238">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a790-074e-02f0-43b2"/>
               </constraints>
@@ -7101,7 +7101,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Death Guard" hidden="false" id="09b6-a6f0-df82-1d81" targetId="f6a9-02e2-ff4f-9583">
+            <categoryLink name="Exemplars of the Legion - Death Guard" hidden="false" id="09b6-a6f0-df82-1d81" targetId="f6a9-02e2-ff4f-9583">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ffef-e350-32f9-27c4"/>
               </constraints>
@@ -7118,7 +7118,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Emperor&apos;s Children" hidden="false" id="2842-62d7-827a-2644" targetId="5e33-e0a2-afb4-6fa7">
+            <categoryLink name="Exemplars of the Legion - Emperor&apos;s Children" hidden="false" id="2842-62d7-827a-2644" targetId="5e33-e0a2-afb4-6fa7">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="dc7b-de18-9278-bf1b"/>
               </constraints>
@@ -7135,7 +7135,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Imperial Fists" hidden="false" id="0a5a-762c-37c2-8979" targetId="6d50-f0f1-4c81-4fa5">
+            <categoryLink name="Exemplars of the Legion - Imperial Fists" hidden="false" id="0a5a-762c-37c2-8979" targetId="6d50-f0f1-4c81-4fa5">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b711-084b-2af6-b257"/>
               </constraints>
@@ -7152,7 +7152,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Iron Hands" hidden="false" id="795d-78e2-99be-6dd6" targetId="b8f3-a8cc-4b5f-38c7">
+            <categoryLink name="Exemplars of the Legion - Iron Hands" hidden="false" id="795d-78e2-99be-6dd6" targetId="b8f3-a8cc-4b5f-38c7">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e1be-7c5f-9c0a-2ade"/>
               </constraints>
@@ -7169,7 +7169,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Iron Warriors" hidden="false" id="1706-5070-158c-5058" targetId="d190-a268-afdd-6e11">
+            <categoryLink name="Exemplars of the Legion - Iron Warriors" hidden="false" id="1706-5070-158c-5058" targetId="d190-a268-afdd-6e11">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a919-dbb4-cdb5-3d26"/>
               </constraints>
@@ -7186,7 +7186,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Night Lords" hidden="false" id="7695-e2b0-64a1-5aec" targetId="72cb-1cf8-0e7d-51d2">
+            <categoryLink name="Exemplars of the Legion - Night Lords" hidden="false" id="7695-e2b0-64a1-5aec" targetId="72cb-1cf8-0e7d-51d2">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f299-68cb-94bb-bbd2"/>
               </constraints>
@@ -7203,7 +7203,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Raven Guard" hidden="false" id="2abb-8bb2-858c-45b9" targetId="8fed-36a4-10bd-3fa5">
+            <categoryLink name="Exemplars of the Legion - Raven Guard" hidden="false" id="2abb-8bb2-858c-45b9" targetId="8fed-36a4-10bd-3fa5">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7028-0161-dde9-1e07"/>
               </constraints>
@@ -7220,7 +7220,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Salamanders" hidden="false" id="d4a1-6217-94a1-46fe" targetId="acc7-7ab0-1b70-15c2">
+            <categoryLink name="Exemplars of the Legion - Salamanders" hidden="false" id="d4a1-6217-94a1-46fe" targetId="acc7-7ab0-1b70-15c2">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="60c4-435c-6971-04ce"/>
               </constraints>
@@ -7237,7 +7237,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Sons of Horus" hidden="false" id="7291-de67-f5fe-30da" targetId="20ba-2d32-325b-0f43">
+            <categoryLink name="Exemplars of the Legion - Sons of Horus" hidden="false" id="7291-de67-f5fe-30da" targetId="20ba-2d32-325b-0f43">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="37c2-66d3-6de4-5543"/>
               </constraints>
@@ -7254,7 +7254,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Space Wolves" hidden="false" id="3777-0013-798e-41bb" targetId="34b6-2cfd-313a-0eff">
+            <categoryLink name="Exemplars of the Legion - Space Wolves" hidden="false" id="3777-0013-798e-41bb" targetId="34b6-2cfd-313a-0eff">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="173b-364e-e82e-53c8"/>
               </constraints>
@@ -7271,7 +7271,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Thousand Sons" hidden="false" id="7f71-84db-b496-3b24" targetId="1992-9042-5894-f2dc">
+            <categoryLink name="Exemplars of the Legion - Thousand Sons" hidden="false" id="7f71-84db-b496-3b24" targetId="1992-9042-5894-f2dc">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8179-a35e-521e-2e44"/>
               </constraints>
@@ -7288,7 +7288,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Ultramarines" hidden="false" id="f015-be22-98bb-acac" targetId="bc4d-0973-2772-9330">
+            <categoryLink name="Exemplars of the Legion - Ultramarines" hidden="false" id="f015-be22-98bb-acac" targetId="bc4d-0973-2772-9330">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bfb2-667b-a3ae-794a"/>
               </constraints>
@@ -7305,7 +7305,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - White Scars" hidden="false" id="f785-7d73-9cce-d84b" targetId="c89e-a6a3-9ac6-1283">
+            <categoryLink name="Exemplars of the Legion - White Scars" hidden="false" id="f785-7d73-9cce-d84b" targetId="c89e-a6a3-9ac6-1283">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c1f0-00e0-0e1b-6f23"/>
               </constraints>
@@ -7322,7 +7322,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Word Bearers" hidden="false" id="938e-a996-2850-9555" targetId="7712-7d17-1f9e-bf1f">
+            <categoryLink name="Exemplars of the Legion - Word Bearers" hidden="false" id="938e-a996-2850-9555" targetId="7712-7d17-1f9e-bf1f">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="050b-b62a-6bc2-949d"/>
               </constraints>
@@ -7339,7 +7339,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - World Eaters" hidden="false" id="6c44-4a37-3dba-d6c0" targetId="d877-8b72-fd0b-1e4a">
+            <categoryLink name="Exemplars of the Legion - World Eaters" hidden="false" id="6c44-4a37-3dba-d6c0" targetId="d877-8b72-fd0b-1e4a">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2a95-09be-cfc4-561a"/>
               </constraints>
@@ -14414,7 +14414,7 @@
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
-        <forceEntry name="Apex - Atramentar Hunt " id="dbbe-886f-3ce1-13c0" hidden="true" sortIndex="74">
+        <forceEntry name="Apex - Atramentar Hunt" id="dbbe-886f-3ce1-13c0" hidden="true" sortIndex="74">
           <categoryLinks>
             <categoryLink name="Retinue - Cataphractii or Tartaros Command Squads Only" hidden="false" id="478c-8c25-0b78-22df" targetId="637c-2d13-1879-9655">
               <constraints>
@@ -20462,7 +20462,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7143-e998-ba72-8b90"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Heavy Assault - Castellax Destructor Maniple only " hidden="false" id="5f2c-c81c-7da0-c8cd" targetId="d49e-048b-a8e2-ba52">
+            <categoryLink name="Heavy Assault - Castellax Destructor Maniple only" hidden="false" id="5f2c-c81c-7da0-c8cd" targetId="d49e-048b-a8e2-ba52">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c24e-c0f6-4c76-42e0"/>
               </constraints>
@@ -28050,7 +28050,7 @@
     </forceEntry>
     <forceEntry name="Allied Detachment and its Auxiliary" id="256b-b8a8-017a-75e9" hidden="false" childForcesLabel="Detachments" sortIndex="3">
       <forceEntries>
-        <forceEntry name="Allied Detachment " id="7469-bbd2-a2ad-f8a8" hidden="true" sortIndex="1">
+        <forceEntry name="Allied Detachment" id="7469-bbd2-a2ad-f8a8" hidden="true" sortIndex="1">
           <categoryLinks>
             <categoryLink name="High Command" hidden="false" id="44a3-2cf6-a2b0-4adc" targetId="d9a6-9b5f-b18a-4d63">
               <constraints>
@@ -28489,7 +28489,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - World Eaters" hidden="false" id="4b1f-d99a-b1f4-dc5a" targetId="d877-8b72-fd0b-1e4a">
+            <categoryLink name="Exemplars of the Legion - World Eaters" hidden="false" id="4b1f-d99a-b1f4-dc5a" targetId="d877-8b72-fd0b-1e4a">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="71f7-3722-92ab-91b1"/>
               </constraints>
@@ -28506,7 +28506,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Dark Angels" hidden="false" id="c8f3-97ea-5299-8608" targetId="6c4f-19ae-d41f-377b">
+            <categoryLink name="Exemplars of the Legion - Dark Angels" hidden="false" id="c8f3-97ea-5299-8608" targetId="6c4f-19ae-d41f-377b">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b935-8d98-5396-eab9"/>
               </constraints>
@@ -28523,7 +28523,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Alpha Legion" hidden="false" id="3114-1aeb-e2d2-100d" targetId="1252-6dc4-22d7-4a8f">
+            <categoryLink name="Exemplars of the Legion - Alpha Legion" hidden="false" id="3114-1aeb-e2d2-100d" targetId="1252-6dc4-22d7-4a8f">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3847-7f36-49be-38e1"/>
               </constraints>
@@ -28540,7 +28540,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Blood Angels" hidden="false" id="3b7d-2380-111d-96f4" targetId="d819-0c9d-aad2-4238">
+            <categoryLink name="Exemplars of the Legion - Blood Angels" hidden="false" id="3b7d-2380-111d-96f4" targetId="d819-0c9d-aad2-4238">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8816-82cf-919b-f90c"/>
               </constraints>
@@ -28557,7 +28557,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Death Guard" hidden="false" id="4f02-b75a-3a2d-5bb3" targetId="f6a9-02e2-ff4f-9583">
+            <categoryLink name="Exemplars of the Legion - Death Guard" hidden="false" id="4f02-b75a-3a2d-5bb3" targetId="f6a9-02e2-ff4f-9583">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5a85-5961-ac76-b2b3"/>
               </constraints>
@@ -28574,7 +28574,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Emperor&apos;s Children" hidden="false" id="ce1f-fadb-91a5-5bce" targetId="5e33-e0a2-afb4-6fa7">
+            <categoryLink name="Exemplars of the Legion - Emperor&apos;s Children" hidden="false" id="ce1f-fadb-91a5-5bce" targetId="5e33-e0a2-afb4-6fa7">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f33e-b6a2-240b-747a"/>
               </constraints>
@@ -28591,7 +28591,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Imperial Fists" hidden="false" id="c20e-26c3-682e-f2c3" targetId="6d50-f0f1-4c81-4fa5">
+            <categoryLink name="Exemplars of the Legion - Imperial Fists" hidden="false" id="c20e-26c3-682e-f2c3" targetId="6d50-f0f1-4c81-4fa5">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bb37-99b5-6522-f7c9"/>
               </constraints>
@@ -28608,7 +28608,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Iron Hands" hidden="false" id="2fac-dffa-a40a-d810" targetId="b8f3-a8cc-4b5f-38c7">
+            <categoryLink name="Exemplars of the Legion - Iron Hands" hidden="false" id="2fac-dffa-a40a-d810" targetId="b8f3-a8cc-4b5f-38c7">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="dfdd-887a-c318-4cc8"/>
               </constraints>
@@ -28625,7 +28625,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Iron Warriors" hidden="false" id="ce92-cdd0-af03-e348" targetId="d190-a268-afdd-6e11">
+            <categoryLink name="Exemplars of the Legion - Iron Warriors" hidden="false" id="ce92-cdd0-af03-e348" targetId="d190-a268-afdd-6e11">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b34d-535f-880b-8063"/>
               </constraints>
@@ -28642,7 +28642,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Night Lords" hidden="false" id="a4c8-ac51-fe08-c98f" targetId="72cb-1cf8-0e7d-51d2">
+            <categoryLink name="Exemplars of the Legion - Night Lords" hidden="false" id="a4c8-ac51-fe08-c98f" targetId="72cb-1cf8-0e7d-51d2">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="163d-6be4-66f8-c927"/>
               </constraints>
@@ -28659,7 +28659,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Raven Guard" hidden="false" id="ad05-3c94-af11-37d9" targetId="8fed-36a4-10bd-3fa5">
+            <categoryLink name="Exemplars of the Legion - Raven Guard" hidden="false" id="ad05-3c94-af11-37d9" targetId="8fed-36a4-10bd-3fa5">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8597-c5e5-b737-bec0"/>
               </constraints>
@@ -28676,7 +28676,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Salamanders" hidden="false" id="e68b-8eb2-a01d-bfcd" targetId="acc7-7ab0-1b70-15c2">
+            <categoryLink name="Exemplars of the Legion - Salamanders" hidden="false" id="e68b-8eb2-a01d-bfcd" targetId="acc7-7ab0-1b70-15c2">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1bbc-6f8e-a5be-e51b"/>
               </constraints>
@@ -28693,7 +28693,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Sons of Horus" hidden="false" id="6f11-d7cb-fa9c-501f" targetId="20ba-2d32-325b-0f43">
+            <categoryLink name="Exemplars of the Legion - Sons of Horus" hidden="false" id="6f11-d7cb-fa9c-501f" targetId="20ba-2d32-325b-0f43">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a9cb-e561-a0fc-283e"/>
               </constraints>
@@ -28710,7 +28710,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Space Wolves" hidden="false" id="ce47-e9a9-69ba-1b8c" targetId="34b6-2cfd-313a-0eff">
+            <categoryLink name="Exemplars of the Legion - Space Wolves" hidden="false" id="ce47-e9a9-69ba-1b8c" targetId="34b6-2cfd-313a-0eff">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d0a2-2d30-c6a2-93d5"/>
               </constraints>
@@ -28727,7 +28727,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Thousand Sons" hidden="false" id="5e4b-da1e-ac09-0c9d" targetId="1992-9042-5894-f2dc">
+            <categoryLink name="Exemplars of the Legion - Thousand Sons" hidden="false" id="5e4b-da1e-ac09-0c9d" targetId="1992-9042-5894-f2dc">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8a0d-ae1e-182a-76a4"/>
               </constraints>
@@ -28744,7 +28744,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Ultramarines" hidden="false" id="1a42-e074-07b9-75c8" targetId="bc4d-0973-2772-9330">
+            <categoryLink name="Exemplars of the Legion - Ultramarines" hidden="false" id="1a42-e074-07b9-75c8" targetId="bc4d-0973-2772-9330">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d049-4eb8-76c8-9e4c"/>
               </constraints>
@@ -28761,7 +28761,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - White Scars" hidden="false" id="4b9e-6259-7981-5bfe" targetId="c89e-a6a3-9ac6-1283">
+            <categoryLink name="Exemplars of the Legion - White Scars" hidden="false" id="4b9e-6259-7981-5bfe" targetId="c89e-a6a3-9ac6-1283">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b88d-a3b3-b716-e6e0"/>
               </constraints>
@@ -28778,7 +28778,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="EotL - Word Bearers" hidden="false" id="d047-77d2-d808-6481" targetId="7712-7d17-1f9e-bf1f">
+            <categoryLink name="Exemplars of the Legion - Word Bearers" hidden="false" id="d047-77d2-d808-6481" targetId="7712-7d17-1f9e-bf1f">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1392-e759-9bac-867d"/>
               </constraints>
@@ -30415,7 +30415,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fceb-4563-6986-d123" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Heavy Assault - Castellax Destructor Maniple only " hidden="false" id="b0db-ddbe-24f7-006f" targetId="d49e-048b-a8e2-ba52">
+        <categoryLink name="Heavy Assault - Castellax Destructor Maniple only" hidden="false" id="b0db-ddbe-24f7-006f" targetId="d49e-048b-a8e2-ba52">
           <constraints>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="29e0-d2f6-50cf-cc43" includeChildSelections="true"/>
           </constraints>
