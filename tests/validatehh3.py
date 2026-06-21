@@ -21,7 +21,7 @@ PRIME_ADVANTAGE_SLOTS = ["Rewards of Treachery",
                          "Heavy Assault - Ruinstorm Daemon Brutes Only",
                          "Paragon of Malevolence",
                          "Command - Centurions Only",#
-                         "Heavy Assault - Castellax Destructor Maniple only ",
+                         "Heavy Assault - Castellax Destructor Maniple only",
                          "War Engine - Thanatar Siege Maniple only",
                          "Support - Castellax Battle Maniple Only",
                          "Fast Attack - Vultarax Stratos Squadron Only",
