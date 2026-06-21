@@ -9213,6 +9213,35 @@ If the seismic macro-drill on a Model with this Special Rule is destroyed or oth
         <infoLink name="[Mechanicum]" id="1d7f-a1e0-990c-2f4a" hidden="false" type="profile" targetId="7aca-c779-952f-fcac"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Carnage and Pandemonium" hidden="true" id="f750-e8c9-cb56-11d9">
+      <rules>
+        <rule name="Carnage and Pandemonium" id="5696-5c91-8fbc-5183" hidden="false">
+          <description>For Battles whose total Points Limit is 1,500 or less, the Cohorts Vagus Detachment may be used in place of a Primary Detachment. Note that as the Cohorts Vagus Detachment includes no Command Slots or the ability to add them, that such an Army will have no additional Auxiliary or Apex Detachments linked to this alternative Primary Detachment, but may still include Allied Detachments as normal.
+
+
+If this option is used, then the following Secondary Objective is added to the Mission - but may only be scored by the player whose army includes one or more Cohorts Vagus Detachments.
+
+
+**Carnage and Pandemonium** - in the Victory Sub-Phase of the Turn of a Player whose Army includes a Cohorts Vagus Detachment used as a Primary Detachment, if one or more enemy Units had its last Model Removed as a Casualty, then that Player scores 1 Victory Point. If one or more of the Units Removed as a Casualty had any variant of the Line (X) Special Rule then add +2 to the number of Victory Points scored. Note that this Secondary Objective is scored once per Turn, not once per Unit removed, meaning that the maximum number of Victory Points that can be scored for it each turn is 3.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1c06-2f51-23e3-200d" automatic="true"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6bec-7cdd-85c4-be90" automatic="true"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden"/>
+            <modifier type="set" value="1" field="6bec-7cdd-85c4-be90"/>
+            <modifier type="set" value="1" field="1c06-2f51-23e3-200d"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="0a81-480b-fc4c-3dbe" shared="true" includeChildSelections="true" childName="Cohorts Vagus : Itinerant Cohorts" includeChildForces="false"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Special Rules" id="bcc2-7304-c021-7601" targetId="106b-693b-99f2-00c3"/>
@@ -10581,6 +10610,11 @@ No single Characteristic may be increased by more than 2 by this Gambit, but the
     <entryLink import="true" name="Mechanicum Ordinatus Aktaeus" hidden="false" id="429d-4826-3d9b-8673" type="selectionEntry" targetId="9111-1de6-ec9d-526a">
       <categoryLinks>
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="90a5-0234-747e-097e" primary="true" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Carnage and Pandemonium" hidden="false" id="c318-51aa-9586-a5c1" type="selectionEntry" targetId="f750-e8c9-cb56-11d9">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="8ed0-4ea6-8b2e-f89a" primary="true" name="Army Configuration"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
