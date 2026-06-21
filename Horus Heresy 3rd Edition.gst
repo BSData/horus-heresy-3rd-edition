@@ -30147,6 +30147,7 @@
         <forceEntryLink name="Cohorts Vagus Detachment" id="bece-d2a3-1d59-7e19" hidden="false" targetId="2dfc-259d-d11b-dc8b" type="forceEntry" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="be05-8eba-3a80-dca2" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="min" value="1" field="forces" scope="parent" shared="true" id="91ec-4a4a-1e32-a7ee"/>
           </constraints>
           <modifiers>
             <modifier type="add" value="Maximum Points limit for Cohorts Vagus Primary is 1500" field="error">
